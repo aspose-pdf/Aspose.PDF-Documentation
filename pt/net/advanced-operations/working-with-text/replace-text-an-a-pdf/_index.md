@@ -2,34 +2,38 @@
 title: Substituir Texto em PDF
 linktitle: Substituir Texto em PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /pt/net/replace-text-in-pdf/
-description: Saiba mais sobre várias formas de substituir e remover texto da biblioteca Aspose.PDF para .NET.
+description: Saiba mais sobre várias maneiras de substituir e remover texto da biblioteca Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+aliases:
+    - /net/replace-text-in-a-pdf-document/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Substituir Texto em PDF",
-    "alternativeHeadline": "Substituindo e Removendo Texto em Arquivo PDF",
+    "headline": "Replace Text in PDF",
+    "alternativeHeadline": "Efficiently Modify Text Across PDF Pages with Ease",
+    "abstract": "O recurso Substituir Texto em PDF na biblioteca Aspose.PDF for .NET permite que os usuários localizem e substituam eficientemente texto em todo um documento PDF ou dentro de regiões específicas da página. Ele suporta capacidades avançadas, incluindo substituição de texto com base em expressões regulares, rearranjo automático do conteúdo da página após as substituições e a capacidade de remover fontes não utilizadas, melhorando a experiência de edição do documento.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, substituir texto, remover texto",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "wordcount": "2744",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +50,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,13 +75,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/replace-text-in-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Saiba mais sobre várias formas de substituir e remover texto da biblioteca Aspose.PDF para .NET."
+    "dateModified": "2024-11-26",
+    "description": "Saiba mais sobre várias maneiras de substituir e remover texto da biblioteca Aspose.PDF for .NET."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-## Substituir texto em todas as páginas do documento PDF
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+
+## Substituir Texto em todas as páginas do documento PDF
 
 {{% alert color="primary" %}}
 
@@ -85,400 +90,466 @@ Você pode tentar encontrar e substituir o texto no documento usando Aspose.PDF 
 
 {{% /alert %}}
 
-Para substituir o texto em todas as páginas de um documento PDF, você primeiro precisa usar TextFragmentAbsorber para encontrar a frase específica que deseja substituir. Depois disso, você precisa percorrer todos os TextFragments para substituir o texto e alterar quaisquer outros atributos. Depois de fazer isso, você só precisa salvar o PDF de saída usando o método Save do objeto Document. O seguinte trecho de código mostra como substituir texto em todas as páginas do documento PDF.
+Para substituir texto em todas as páginas de um documento PDF, você primeiro precisa usar o TextFragmentAbsorber para encontrar a frase específica que deseja substituir. Depois disso, você precisa percorrer todos os TextFragments para substituir o texto e alterar quaisquer outros atributos. Uma vez feito isso, você só precisa salvar o PDF de saída usando o método Save do objeto Document. O seguinte trecho de código mostra como substituir texto em todas as páginas do documento PDF.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "ReplaceTextAll.pdf");
-
-// Criar objeto TextAbsorber para encontrar todas as instâncias da frase de busca
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("texto");
-
-// Aceitar o absorvedor para todas as páginas
-pdfDocument.Pages.Accept(textFragmentAbsorber);
-
-// Obter os fragmentos de texto extraídos
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// Percorrer os fragmentos
-foreach (TextFragment textFragment in textFragmentCollection)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTextInAllPages()
 {
-    // Atualizar texto e outras propriedades
-    textFragment.Text = "TEXTO";
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-dataDir = dataDir + "ReplaceTextAll_out.pdf";
-// Salvar o documento PDF resultante.
-pdfDocument.Save(dataDir);
-```
-## Substituir texto em uma região específica da página
-
-Para substituir texto em uma região específica da página, primeiro precisamos instanciar o objeto TextFragmentAbsorber, especificar a região da página usando a propriedade TextSearchOptions.Rectangle e depois iterar por todos os TextFragments para substituir o texto. Uma vez que essas operações sejam concluídas, só precisamos salvar o PDF de saída usando o método Save do objeto Document. O seguinte trecho de código mostra como substituir texto em todas as páginas do documento PDF.
-
-```csharp
-// carregar arquivo PDF
-Aspose.PDF.Document pdf  = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
-
-// instanciar objeto TextFragment Absorber
-Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
-
-// buscar texto dentro dos limites da página
-TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
-
-// especificar a região da página para opções de busca de texto
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
-
-// buscar texto da primeira página do arquivo PDF
-pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
-
-// iterar por cada TextFragment individual
-foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
-{
-    // atualizar texto para caracteres em branco
-    tf.Text = "";
-}
-
-// salvar arquivo PDF atualizado após substituição de texto
-pdf.Save("c:/pdftest/TextUpdated.pdf");
-```
-
-## Substituir Texto Baseado em uma Expressão Regular
-
-Se você deseja substituir algumas frases baseadas em expressão regular, primeiro precisa encontrar todas as frases que correspondem a essa expressão regular específica usando TextFragmentAbsorber. Você terá que passar a expressão regular como parâmetro para o construtor do TextFragmentAbsorber. Você também precisa criar um objeto TextSearchOptions que especifica se a expressão regular está sendo usada ou não. Uma vez que você obtém as frases correspondentes em TextFragments, você precisa percorrer todas elas e atualizar conforme necessário. Finalmente, você precisa salvar o PDF atualizado usando o método Save do objeto Document. O seguinte trecho de código mostra como substituir texto baseado em uma expressão regular.
-
-```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionPage.pdf");
-
-// Criar objeto TextAbsorber para encontrar todas as frases que correspondem à expressão regular
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Como 1999-2000
-
-// Definir opção de pesquisa de texto para especificar o uso de expressão regular
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
-
-// Aceitar o absorvedor para uma única página
-pdfDocument.Pages[1].Accept(textFragmentAbsorber);
-
-// Obter os fragmentos de texto extraídos
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// Percorrer os fragmentos
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    // Atualizar texto e outras propriedades
-    textFragment.Text = "Nova Frase";
-    // Definido como uma instância de um objeto.
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
-dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-pdfDocument.Save(dataDir);
-```
-## Substituir fontes em um arquivo PDF existente
-
-Aspose.PDF para .NET suporta a capacidade de substituir texto em um documento PDF. No entanto, às vezes você tem a necessidade de apenas substituir a fonte que está sendo usada dentro do documento PDF. Então, em vez de substituir o texto, apenas a fonte que está sendo usada é substituída. Um dos sobrecarregamentos do construtor TextFragmentAbsorber aceita o objeto TextEditOptions como argumento e podemos usar o valor RemoveUnusedFonts da enumeração TextEditOptions.FontReplace para cumprir nossos requisitos. O seguinte trecho de código mostra como substituir a fonte dentro de um documento PDF.
-
-```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Carregar arquivo PDF fonte
-Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
-// Procurar fragmentos de texto e configurar a opção de edição como remover fontes não utilizadas
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-
-// Aceitar o absorvedor para todas as páginas
-pdfDocument.Pages.Accept(absorber);
-// Percorrer todos os TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    // Se o nome da fonte for ArialMT, substituir o nome da fonte por Arial
-    if (textFragment.TextState.Font.FontName == "Arial,Bold")
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceTextAll.pdf"))
     {
-        textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    }
+        // Create TextAbsorber object to find all instances of the input search phrase
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("text");
 
-}
+        // Accept the absorber for all the pages
+        document.Pages.Accept(absorber);
 
-dataDir = dataDir + "ReplaceFonts_out.pdf";
-// Salvar documento atualizado
-pdfDocument.Save(dataDir);
-```
-## A substituição de texto deve reorganizar automaticamente o conteúdo da página
+        // Get the extracted text fragments
+        var textFragmentCollection = absorber.TextFragments;
 
-Aspose.PDF para .NET suporta o recurso de pesquisar e substituir texto dentro do arquivo PDF. No entanto, recentemente alguns clientes encontraram problemas durante a substituição de texto quando um TextFragment específico é substituído por conteúdos menores e alguns espaços extras são exibidos no PDF resultante ou, caso o TextFragment seja substituído por uma string mais longa, então as palavras se sobrepõem ao conteúdo existente da página. Portanto, a necessidade era introduzir um mecanismo que, uma vez que o texto dentro de um documento PDF é substituído, os conteúdos devem ser reorganizados.
+        // Loop through the fragments
+        foreach (var textFragment in textFragmentCollection)
+        {
+            // Update text and other properties
+            textFragment.Text = "TEXT";
+            textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
+            textFragment.TextState.FontSize = 22;
+            textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
+            textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        }
 
-Para atender aos cenários mencionados acima, Aspose.PDF para .NET foi aprimorado para que nenhum desses problemas apareça ao substituir texto dentro do arquivo PDF. O seguinte trecho de código mostra como substituir texto dentro de um arquivo PDF e o conteúdo da página deve ser reorganizado automaticamente.
-
-```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Carregar arquivo PDF fonte
-Document doc = new Document(dataDir + "ExtractTextPage.pdf");
-// Criar objeto TextFragment Absorber com expressão regular
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-doc.Pages.Accept(textFragmentAbsorber);
-// Substituir cada TextFragment
-foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
-{
-    // Definir a fonte do fragmento de texto sendo substituído
-    textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    // Definir tamanho da fonte
-    textFragment.TextState.FontSize = 12;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
-    // Substituir o texto por uma string maior que o placeholder
-    textFragment.Text = "This is a Larger String for the Testing of this issue";
-}
-dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
-// Salvar o PDF resultante
-doc.Save(dataDir);
-```
-## Renderizando Símbolos Substituíveis durante a criação de PDF
-
-Símbolos substituíveis são símbolos especiais em uma cadeia de texto que podem ser substituídos por conteúdo correspondente em tempo de execução. Os símbolos substituíveis atualmente suportados pelo novo Modelo de Objeto de Documento do namespace Aspose.PDF são `$P`, `$p`, `\n`, `\r`. Os símbolos `$p` e `$P` são usados para lidar com a numeração de páginas em tempo de execução. `$p` é substituído pelo número da página onde a classe Paragraph atual está. `$P` é substituído pelo número total de páginas no documento. Ao adicionar `TextFragment` à coleção de parágrafos dos documentos PDF, não é suportado alimentação de linha dentro do texto. No entanto, para adicionar texto com uma quebra de linha, por favor use `TextFragment` com `TextParagraph`:
-
-- use "\r\n" ou Environment.NewLine em TextFragment em vez de um único "\n";
-- crie um objeto TextParagraph. Ele adicionará texto com divisão de linha;
-- adicione o TextFragment com TextParagraph.AppendLine;
-- adicione o TextParagraph com TextBuilder.AppendParagraph.
-
-```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
-
-// Inicialize um novo TextFragment com texto contendo os marcadores de nova linha necessários
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Nome do Candidato: " + Environment.NewLine + " Joe Smoe");
-
-// Defina as propriedades do fragmento de texto se necessário
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-
-// Crie um objeto TextParagraph
-TextParagraph par = new TextParagraph();
-
-// Adicione o novo TextFragment ao parágrafo
-par.AppendLine(textFragment);
-
-// Defina a posição do parágrafo
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
-
-// Crie um objeto TextBuilder
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// Adicione o TextParagraph usando TextBuilder
-textBuilder.AppendParagraph(par);
-
-dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
-pdfApplicationDoc.Save(dataDir);
-```
-## Símbolos Substituíveis na Área de Cabeçalho/Rodapé
-
-Símbolos substituíveis também podem ser colocados na seção de Cabeçalho/Rodapé de um arquivo PDF. Por favor, veja o seguinte trecho de código para detalhes sobre como adicionar um símbolo substituível na seção do rodapé.
-
-```csharp
-// Para exemplos completos e arquivos de dados, por favor acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-Document doc = new Document();
-Page page = doc.Pages.Add();
-
-MarginInfo marginInfo = new MarginInfo();
-marginInfo.Top = 90;
-marginInfo.Bottom = 50;
-marginInfo.Left = 50;
-marginInfo.Right = 50;
-// Atribua a instância de marginInfo à propriedade Margin de sec1.PageInfo
-page.PageInfo.Margin = marginInfo;
-
-HeaderFooter hfFirst = new HeaderFooter();
-page.Header = hfFirst;
-hfFirst.Margin.Left = 50;
-hfFirst.Margin.Right = 50;
-
-// Instancie um parágrafo de Texto que armazenará o conteúdo a ser mostrado como cabeçalho
-TextFragment t1 = new TextFragment("título do relatório");
-t1.TextState.Font = FontRepository.FindFont("Arial");
-t1.TextState.FontSize = 16;
-t1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t1.TextState.FontStyle = FontStyles.Bold;
-t1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t1.TextState.LineSpacing = 5f;
-hfFirst.Paragraphs.Add(t1);
-
-TextFragment t2 = new TextFragment("Nome_do_Relatório");
-t2.TextState.Font = FontRepository.FindFont("Arial");
-t2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t2.TextState.LineSpacing = 5f;
-t2.TextState.FontSize = 12;
-hfFirst.Paragraphs.Add(t2);
-
-// Crie um objeto HeaderFooter para a seção
-HeaderFooter hfFoot = new HeaderFooter();
-// Defina o objeto HeaderFooter para rodapé ímpar e par
-page.Footer = hfFoot;
-hfFoot.Margin.Left = 50;
-hfFoot.Margin.Right = 50;
-
-// Adicione um parágrafo de texto contendo o número atual da página do total de páginas
-TextFragment t3 = new TextFragment("Gerado na data de teste");
-TextFragment t4 = new TextFragment("nome do relatório ");
-TextFragment t5 = new TextFragment("Página $p de $P");
-
-// Instancie um objeto de tabela
-Table tab2 = new Table();
-
-// Adicione a tabela na coleção de parágrafos da seção desejada
-hfFoot.Paragraphs.Add(tab2);
-
-// Defina as larguras das colunas da tabela
-tab2.ColumnWidths = "165 172 165";
-
-// Crie linhas na tabela e em seguida células nas linhas
-Row row3 = tab2.Rows.Add();
-
-row3.Cells.Add();
-row3.Cells.Add();
-row3.Cells.Add();
-
-// Defina o alinhamento vertical do texto como centralizado
-row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
-row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
-row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
-
-row3.Cells[0].Paragraphs.Add(t3);
-row3.Cells[1].Paragraphs.Add(t4);
-row3.Cells[2].Paragraphs.Add(t5);
-
-Table table = new Table();
-
-table.ColumnWidths = "33% 33% 34%";
-table.DefaultCellPadding = new MarginInfo();
-table.DefaultCellPadding.Top = 10;
-table.DefaultCellPadding.Bottom = 10;
-
-// Adicione a tabela na coleção de parágrafos da seção desejada
-page.Paragraphs.Add(table);
-
-// Defina a borda padrão das células usando o objeto BorderInfo
-table.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.1f);
-
-// Defina a borda da tabela usando outro objeto BorderInfo personalizado
-table.Border = new BorderInfo(BorderSide.All, 1f);
-
-table.RepeatingRowsCount = 1;
-
-// Crie linhas na tabela e em seguida células nas linhas
-Row row1 = table.Rows.Add();
-
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add("col3");
-const string CRLF = "\r\n";
-for (int i = 0; i <= 10; i++)
-{
-    Row row = table.Rows.Add();
-    row.IsRowBroken = true;
-    for (int c = 0; c <= 2; c++)
-    {
-        Cell c1;
-        if (c == 2)
-            c1 = row.Cells.Add("Aspose.Total for Java é uma compilação de todos os componentes Java oferecidos pela Aspose. É compilado diariamente" + CRLF + "para garantir que contém as versões mais atualizadas de cada um dos nossos componentes Java. " + CRLF + "diariamente para garantir que contém as versões mais atualizadas de cada um dos nossos componentes Java. " + CRLF + "Usando Aspose.Total for Java, os desenvolvedores podem criar uma ampla gama de aplicações.");
-        else
-            c1 = row.Cells.Add("item1" + c);
-        c1.Margin = new MarginInfo();
-        c1.Margin.Left = 30;
-        c1.Margin.Top = 10;
-        c1.Margin.Bottom = 10;
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTextInAllPages_out.pdf");
     }
 }
-
-dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
-doc.Save(dataDir);
 ```
-## Remover Fontes Não Utilizadas de Arquivos PDF
 
-Aspose.PDF para .NET suporta a funcionalidade de incorporar fontes ao criar um documento PDF, bem como a capacidade de incorporar fontes em arquivos PDF existentes. A partir do Aspose.PDF para .NET 7.3.0, também permite remover fontes duplicadas ou não utilizadas de documentos PDF.
+## Substituir Texto em uma região específica da página
+
+Para substituir texto em uma região específica da página, primeiro, precisamos instanciar o objeto TextFragmentAbsorber, especificar a região da página usando a propriedade TextSearchOptions.Rectangle e, em seguida, iterar por todos os TextFragments para substituir o texto. Uma vez que essas operações sejam concluídas, precisamos apenas salvar o PDF de saída usando o método Save do objeto Document. O seguinte trecho de código mostra como substituir texto em todas as páginas do documento PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTextInParticularPageRegion()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "programaticallyproducedpdf.pdf"))
+    {
+        // instantiate TextFragment Absorber object
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+
+        // search text within page bound
+        absorber.TextSearchOptions.LimitToPageBounds = true;
+
+        // specify the page region for TextSearch Options
+        absorber.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 100, 200, 200);
+
+        // search text from first page of PDF file
+        document.Pages[1].Accept(absorber);
+
+        // iterate through individual TextFragment
+        foreach (var textFragment in absorber.TextFragments)
+        {
+            // update text to blank characters
+            textFragment.Text = "";
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTextInParticularPageRegion_out.pdf");
+    }
+}
+```
+
+## Substituir Texto com Base em uma Expressão Regular
+
+Se você deseja substituir algumas frases com base em uma expressão regular, primeiro precisa encontrar todas as frases que correspondem a essa expressão regular específica usando o TextFragmentAbsorber. Você terá que passar a expressão regular como um parâmetro para o construtor do TextFragmentAbsorber. Você também precisa criar um objeto TextSearchOptions que especifique se a expressão regular está sendo usada ou não. Uma vez que você obtenha as frases correspondentes nos TextFragments, precisa percorrer todas elas e atualizar conforme necessário. Finalmente, você precisa salvar o PDF atualizado usando o método Save do objeto Document. O seguinte trecho de código mostra como substituir texto com base em uma expressão regular.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTextBasedOnARegularExpression()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SearchRegularExpressionPage.pdf"))
+    {
+
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
+
+        // Set text search option to specify regular expression usage
+        absorber.TextSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(true);
+
+        // Accept the absorber for a single page
+        document.Pages[1].Accept(absorber);
+
+        // Get the extracted text fragments
+        var collection = absorber.TextFragments;
+
+        // Loop through the fragments
+        foreach (var textFragment in collection)
+        {
+            // Update text and other properties
+            textFragment.Text = "New Phrase";
+            // Set to an instance of an object.
+            textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
+            textFragment.TextState.FontSize = 22;
+            textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
+            textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTextonRegularExpression_out.pdf");
+    }
+}
+```
+
+## Substituir fontes em arquivo PDF existente
+
+A biblioteca Aspose.PDF for .NET suporta a capacidade de substituir texto em documentos PDF. No entanto, às vezes você tem a necessidade de substituir apenas a fonte que está sendo usada dentro do documento PDF. Assim, em vez de substituir o texto, apenas a fonte utilizada é substituída. Uma das sobrecargas do construtor do TextFragmentAbsorber aceita o objeto TextEditOptions como argumento e podemos usar o valor RemoveUnusedFonts da enumeração TextEditOptions.FontReplace para atender às nossas necessidades. O seguinte trecho de código mostra como substituir a fonte dentro do documento PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceFonts()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceTextPage.pdf"))
+    {
+        // Create text edit options
+        var options = new Aspose.Pdf.Text.TextEditOptions(Aspose.Pdf.Text.TextEditOptions.FontReplace.RemoveUnusedFonts);
+
+        // Search text fragments and set edit option as remove unused fonts
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber(options);
+
+        // Accept the absorber for all the pages
+        document.Pages.Accept(absorber);
+
+        // Traverse through all the TextFragments
+        foreach (var textFragment in absorber.TextFragments)
+        {
+            // If the font name is ArialMT, replace font name with Arial
+            if (textFragment.TextState.Font.FontName == "Arial,Bold")
+            {
+                textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceFonts_out.pdf");
+    }
+}
+```
+
+## A Substituição de Texto deve reorganizar automaticamente o Conteúdo da Página
+
+A biblioteca Aspose.PDF for .NET suporta o recurso de pesquisar e substituir texto dentro do arquivo PDF. No entanto, recentemente alguns clientes encontraram problemas durante a substituição de texto quando um determinado TextFragment é substituído por conteúdos menores e alguns espaços extras são exibidos no PDF resultante ou, no caso de o TextFragment ser substituído por uma string mais longa, as palavras sobrepõem o conteúdo existente da página. Portanto, a necessidade era introduzir um mecanismo que, uma vez que o texto dentro de um documento PDF é substituído, o conteúdo deve ser reorganizado.
+
+Para atender aos cenários acima mencionados, a biblioteca Aspose.PDF for .NET foi aprimorada para que não apareçam tais problemas ao substituir texto dentro do arquivo PDF. O seguinte trecho de código mostra como substituir texto dentro do arquivo PDF e o conteúdo da página deve ser reorganizado automaticamente.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutomaticallyReArrangePageContents()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextPage.pdf"))
+    {
+        // Create TextFragment Absorber object with regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
+        document.Pages.Accept(absorber);
+
+        // Replace each TextFragment
+        foreach (var textFragment in absorber.TextFragments)
+        {
+            // Set font of text fragment being replaced
+            textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+            // Set font size
+            textFragment.TextState.FontSize = 12;
+            textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
+            // Replace the text with larger string than placeholder
+            textFragment.Text = "This is a Larger String for the Testing of this issue";
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AutomaticallyReArrangePageContents_out.pdf");
+    }
+}
+```
+
+## Renderizando Símbolos Substituíveis durante a criação do PDF
+
+Símbolos substituíveis são símbolos especiais em uma string de texto que podem ser substituídos pelo conteúdo correspondente em tempo de execução. Os símbolos substituíveis atualmente suportados pelo novo Modelo de Objeto de Documento do namespace Aspose.PDF são `$P`, `$p`, `\n`, `\r`. O `$p` e o `$P` são usados para lidar com a numeração das páginas em tempo de execução. O `$p` é substituído pelo número da página onde a classe Paragraph atual está. O `$P` é substituído pelo número total de páginas no documento. Ao adicionar `TextFragment` à coleção de parágrafos dos documentos PDF, não suporta quebra de linha dentro do texto. No entanto, para adicionar texto com uma quebra de linha, use `TextFragment` com `TextParagraph`:
+
+- Use "\r\n" ou Environment.NewLine em TextFragment em vez de um único "\n".
+- Crie um objeto TextParagraph. Ele adicionará texto com divisão de linha.
+- Adicione o TextFragment com TextParagraph.AppendLine.
+- Adicione o TextParagraph com TextBuilder.AppendParagraph.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RenderingReplaceableSymbols()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+
+        // Initialize new TextFragment with text containing required newline markers
+        Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
+
+        // Set text fragment properties if necessary
+        textFragment.TextState.FontSize = 12;
+        textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
+        textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+
+        // Create TextParagraph object
+        var par = new Aspose.Pdf.Text.TextParagraph();
+
+        // Add new TextFragment to paragraph
+        par.AppendLine(textFragment);
+
+        // Set paragraph position
+        par.Position = new Aspose.Pdf.Text.Position(100, 600);
+
+        // Create TextBuilder object
+        var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
+
+        // Add the TextParagraph using TextBuilder
+        textBuilder.AppendParagraph(par);
+
+        // Save PDF document
+        document.Save(dataDir + "RenderingReplaceableSymbols_out.pdf");
+    }
+}
+```
+
+## Símbolos substituíveis na área de Cabeçalho/Rodapé
+
+Símbolos substituíveis também podem ser colocados dentro da seção de Cabeçalho/Rodapé do arquivo PDF. Por favor, dê uma olhada no seguinte trecho de código para detalhes sobre como adicionar um símbolo substituível na seção de rodapé.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceableSymbolsInHeaderOrFooterArea()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+
+        // Create margin info
+        var marginInfo = new Aspose.Pdf.MarginInfo();
+        marginInfo.Top = 90;
+        marginInfo.Bottom = 50;
+        marginInfo.Left = 50;
+        marginInfo.Right = 50;
+        // Assign the marginInfo instance to Margin property of sec1.PageInfo
+        page.PageInfo.Margin = marginInfo;
+
+        var headerFooterFirst = new Aspose.Pdf.HeaderFooter();
+        page.Header = headerFooterFirst;
+        headerFooterFirst.Margin.Left = 50;
+        headerFooterFirst.Margin.Right = 50;
+
+        // Instantiate a Text paragraph that will store the content to show as header
+        var fragment1 = new Aspose.Pdf.Text.TextFragment("report title");
+        fragment1.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        fragment1.TextState.FontSize = 16;
+        fragment1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
+        fragment1.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        fragment1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        fragment1.TextState.LineSpacing = 5f;
+        headerFooterFirst.Paragraphs.Add(fragment1);
+
+        var fragment2 = new Aspose.Pdf.Text.TextFragment("Report_Name");
+        fragment2.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        fragment2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
+        fragment2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        fragment2.TextState.LineSpacing = 5f;
+        fragment2.TextState.FontSize = 12;
+        headerFooterFirst.Paragraphs.Add(fragment2);
+
+        // Create a HeaderFooter object for the section
+        var headerFooterFoot = new Aspose.Pdf.HeaderFooter();
+
+        // Set the HeaderFooter object to odd & even footer
+        page.Footer = headerFooterFoot;
+        headerFooterFoot.Margin.Left = 50;
+        headerFooterFoot.Margin.Right = 50;
+
+        // Add a text paragraph containing current page number of total number of pages
+        var fragment3 = new Aspose.Pdf.Text.TextFragment("Generated on test date");
+        var fragment4 = new Aspose.Pdf.Text.TextFragment("report name ");
+        var fragment5 = new Aspose.Pdf.Text.TextFragment("Page $p of $P");
+
+        // Instantiate a table object
+        var table2 = new Aspose.Pdf.Table();
+
+        // Add the table in paragraphs collection of the desired section
+        headerFooterFoot.Paragraphs.Add(table2);
+
+        // Set with column widths of the table
+        table2.ColumnWidths = "165 172 165";
+
+        // Create rows in the table and then cells in the rows
+        var row3 = table2.Rows.Add();
+
+        row3.Cells.Add();
+        row3.Cells.Add();
+        row3.Cells.Add();
+
+        // Set the vertical allignment of the text as center alligned
+        row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
+        row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+        row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
+
+        row3.Cells[0].Paragraphs.Add(fragment3);
+        row3.Cells[1].Paragraphs.Add(fragment4);
+        row3.Cells[2].Paragraphs.Add(fragment5);
+
+        // Sec1.Paragraphs.Add(New Text("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL"))
+        var table = new Aspose.Pdf.Table();
+
+        table.ColumnWidths = "33% 33% 34%";
+        table.DefaultCellPadding = new Aspose.Pdf.MarginInfo();
+        table.DefaultCellPadding.Top = 10;
+        table.DefaultCellPadding.Bottom = 10;
+
+        // Add the table in paragraphs collection of the desired section
+        page.Paragraphs.Add(table);
+
+        // Set default cell border using BorderInfo object
+        table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1f);
+
+        // Set table border using another customized BorderInfo object
+        table.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1f);
+
+        table.RepeatingRowsCount = 1;
+
+        // Create rows in the table and then cells in the rows
+        var row1 = table.Rows.Add();
+
+        row1.Cells.Add("col1");
+        row1.Cells.Add("col2");
+        row1.Cells.Add("col3");
+        const string CRLF = "\r\n";
+        for (int i = 0; i <= 10; i++)
+        {
+            var row = table.Rows.Add();
+            row.IsRowBroken = true;
+            for (int c = 0; c <= 2; c++)
+            {
+                Aspose.Pdf.Cell c1;
+                if (c == 2)
+                {
+                    c1 = row.Cells.Add("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a" + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "Using Aspose.Total for Java developers can create a wide range of applications.");
+                }
+                else
+                {
+                    c1 = row.Cells.Add("item1" + c);
+                }
+                c1.Margin = new Aspose.Pdf.MarginInfo();
+                c1.Margin.Left = 30;
+                c1.Margin.Top = 10;
+                c1.Margin.Bottom = 10;
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf");
+    }
+}
+```
+
+## Remover Fontes Não Utilizadas do Arquivo PDF
+
+A biblioteca Aspose.PDF for .NET suporta o recurso de incorporar fontes ao criar um documento PDF, bem como a capacidade de incorporar fontes em arquivos PDF existentes. A partir da versão 7.3.0 da biblioteca Aspose.PDF for .NET, também permite remover fontes duplicadas ou não utilizadas de documentos PDF.
 
 Para substituir fontes, use a seguinte abordagem:
 
 1. Chame a classe [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber).
-1. Chame o parâmetro TextFragmentAbsorber da classe TextEditOptions.FontReplace.RemoveUnusedFonts. (Isso remove fontes que se tornaram não utilizadas durante a substituição de fontes).
+1. Chame o parâmetro TextEditOptions.FontReplace.RemoveUnusedFonts da classe TextFragmentAbsorber. (Isso remove fontes que se tornaram não utilizadas durante a substituição de fontes).
 1. Defina a fonte individualmente para cada fragmento de texto.
 
-O seguinte trecho de código substitui a fonte para todos os fragmentos de texto de todas as páginas do documento e remove as fontes não utilizadas.
+O seguinte trecho de código substitui a fonte para todos os fragmentos de texto de todas as páginas do documento e remove fontes não utilizadas.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Carregar o arquivo PDF de origem
-Document doc = new Document(dataDir + "ReplaceTextPage.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-doc.Pages.Accept(absorber);
-
-// Iterar por todos os TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveUnusedFonts()
 {
-    textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
-}
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
-// Salvar o documento atualizado
-doc.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceTextPage.pdf"))
+    {
+        var options = new Aspose.Pdf.Text.TextEditOptions(Aspose.Pdf.Text.TextEditOptions.FontReplace.RemoveUnusedFonts);
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        document.Pages.Accept(absorber);
+
+        // Iterate through all the TextFragments
+        foreach (var textFragment in absorber.TextFragments)
+        {
+            textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial, Bold");
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "RemoveUnusedFonts_out.pdf");
+    }
+}
 ```
-## Remover Todo o Texto de um Documento PDF
 
-### Remover Todo o Texto Usando Operadores
+## Remover Todo o Texto do Documento PDF
 
-Em algumas operações de texto, você precisa remover todo o texto de um documento PDF e, para isso, você precisa definir o texto encontrado como um valor de string vazia, geralmente. O ponto é que alterar o texto para múltiplos fragmentos de texto invoca uma série de operações de verificação e ajuste de posição de texto. Elas são essenciais nos cenários de edição de texto. A dificuldade é que você não pode determinar quantos fragmentos de texto serão removidos no cenário onde eles são processados em um loop.
+### Remover Todo o Texto usando Operadores
 
-Portanto, recomendamos usar outra abordagem para o cenário de remoção de todo o texto das páginas PDF. Considere o seguinte trecho de código que funciona muito rápido.
+Em algumas operações de texto, você precisa remover todo o texto do documento PDF e, para isso, precisa definir o texto encontrado como um valor de string vazio, geralmente. O ponto é que mudar o texto para uma infinidade de fragmentos de texto invoca uma série de verificações e operações de ajuste de posição do texto. Elas são essenciais nos cenários de edição de texto. A dificuldade é que você não pode determinar quantos fragmentos de texto serão removidos no cenário em que eles são processados em um loop.
+
+Portanto, recomendamos usar outra abordagem para o cenário de remoção de todo o texto das páginas PDF. Por favor, considere o seguinte trecho de código que funciona muito rápido.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "RemoveAllText.pdf");
-// Percorrer todas as páginas do Documento PDF
-for (int i = 1; i <= pdfDocument.Pages.Count; i++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveAllTextFromDocument()
 {
-    Page page = pdfDocument.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
-    // Selecionar todo o texto na página
-    page.Contents.Accept(operatorSelector);
-    // Excluir todo o texto
-    page.Contents.Delete(operatorSelector.Selected);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveAllText.pdf"))
+    {
+        // Loop through all pages of PDF Document
+        for (int i = 1; i <= document.Pages.Count; i++)
+        {
+            var page = document.Pages[i];
+            var operatorSelector = new Aspose.Pdf.OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
+            // Select all text on the page
+            page.Contents.Accept(operatorSelector);
+            // Delete all text
+            page.Contents.Delete(operatorSelector.Selected);
+        }
+        // Save PDF document
+        document.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+    }
 }
-// Salvar o documento
-pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
 ```
 
 <script type="application/ld+json">
@@ -507,21 +578,21 @@ pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -532,7 +603,7 @@ pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -544,5 +615,3 @@ pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
     }
 }
 </script>
-```
-

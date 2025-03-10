@@ -1,10 +1,12 @@
 ---
-title: Adicionar e Excluir um Marcador
-linktitle: Adicionar e Excluir um Marcador
+title: Obter, Atualizar e Expandir um Marcador
+linktitle: Obter, Atualizar e Expandir um Marcador
 type: docs
-weight: 10
-url: /pt/net/add-and-delete-bookmark/
-description: Você pode adicionar um marcador a um documento PDF com C#. É possível excluir todos ou determinados marcadores de um documento PDF.
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 20
+url: /pt/net/get-update-and-expand-bookmark/
+description: Este artigo descreve como usar marcadores em um arquivo PDF com nossa biblioteca Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Adicionar e Excluir um Marcador",
-    "alternativeHeadline": "Como adicionar e excluir Marcador de PDF",
+    "headline": "Get, Update and Expand a Bookmark",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks",
+    "abstract": "O novo recurso Obter, Atualizar e Expandir um Marcador aprimora a biblioteca Aspose.PDF for .NET, fornecendo aos usuários a capacidade de recuperar, modificar e expandir visualmente marcadores dentro de documentos PDF. Essa funcionalidade permite uma navegação e organização eficientes do conteúdo PDF, facilitando a gestão de documentos complexos com estruturas de marcadores hierárquicas.",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento PDF",
-    "keywords": "pdf, c#, excluir marcador, adicionar marcador",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "get bookmarks, update bookmarks, expand bookmarks, PDF bookmarks, Aspose.PDF for .NET, OutlineCollection, OutlineItemCollection, child bookmarks",
+    "wordcount": "1050",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,171 +49,440 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
         ]
     },
-    "url": "/net/add-and-delete-bookmark/",
+    "url": "/net/get-update-and-expand-bookmark/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/add-and-delete-bookmark/"
+        "@id": "/net/get-update-and-expand-bookmark/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Você pode adicionar um marcador a um documento PDF com C#. É possível excluir todos ou determinados marcadores de um documento PDF."
+    "dateModified": "2024-11-25",
+    "description": "Este artigo descreve como usar marcadores em um arquivo PDF com nossa biblioteca Aspose.PDF for .NET."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-## Adicionar um Marcador a um Documento PDF
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-Os marcadores estão contidos na coleção [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) do objeto Document, que por sua vez está na coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+## Obter Marcadores
 
-Para adicionar um marcador a um PDF:
+A coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) contém todos os marcadores de um arquivo PDF. Este artigo explica como obter marcadores de um arquivo PDF e como descobrir em qual página um determinado marcador está.
 
-1. Abra um documento PDF usando o objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Crie um marcador e defina suas propriedades.
-1. Adicione a coleção [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) à coleção de Outlines.
+Para obter os marcadores, percorra a coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) e obtenha cada marcador na OutlineItemCollection. A OutlineItemCollection fornece acesso a todos os atributos do marcador. O seguinte trecho de código mostra como obter marcadores do arquivo PDF.
 
-O seguinte trecho de código mostra como adicionar um marcador em um documento PDF.
-
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "AddBookmark.pdf");
-
-// Criar um objeto de marcador
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Test Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
-// Definir o número da página de destino
-pdfOutline.Action = new GoToAction(pdfDocument.Pages[1]);
-// Adicionar marcador na coleção de outline do documento.
-pdfDocument.Outlines.Add(pdfOutline);
-
-dataDir = dataDir + "AddBookmark_out.pdf";
-// Salvar saída
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf"))
+    {
+        // Loop through all the bookmarks
+        foreach (var outlineItem in document.Outlines)
+        {
+            Console.WriteLine(outlineItem.Title);
+            Console.WriteLine(outlineItem.Italic);
+            Console.WriteLine(outlineItem.Bold);
+            Console.WriteLine(outlineItem.Color);
+        }
+    }
+}
 ```
-## Adicionar um Marcador Filho ao Documento PDF
+{{< /tab >}}
 
-Os marcadores podem ser aninhados, indicando uma relação hierárquica com marcadores pai e filho. Este artigo explica como adicionar um marcador filho, ou seja, um marcador de segundo nível, a um PDF.
-
-Para adicionar um marcador filho a um arquivo PDF, primeiro adicione um marcador pai:
-
-1. Abra um documento.
-1. Adicione um marcador à [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), definindo suas propriedades.
-1. Adicione a OutlineItemCollection à coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) do objeto Document.
-
-O marcador filho é criado da mesma forma que o marcador pai, explicado acima, mas é adicionado à coleção de Outlines do marcador pai.
-
-Os seguintes trechos de código mostram como adicionar um marcador filho a um documento PDF.
-
+{{< tab tabNum="2" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "AddChildBookmark.pdf");
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf");
 
-// Criar um objeto de marcador pai
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Parent Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
-
-// Criar um objeto de marcador filho
-OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfChildOutline.Title = "Child Outline";
-pdfChildOutline.Italic = true;
-pdfChildOutline.Bold = true;
-
-// Adicionar marcador filho na coleção do marcador pai
-pdfOutline.Add(pdfChildOutline);
-// Adicionar marcador pai na coleção de marcadores do documento.
-pdfDocument.Outlines.Add(pdfOutline);
-
-dataDir = dataDir + "AddChildBookmark_out.pdf";
-// Salvar saída
-pdfDocument.Save(dataDir);
+    // Loop through all the bookmarks
+    foreach (var outlineItem in document.Outlines)
+    {
+        Console.WriteLine(outlineItem.Title);
+        Console.WriteLine(outlineItem.Italic);
+        Console.WriteLine(outlineItem.Bold);
+        Console.WriteLine(outlineItem.Color);
+    }
+}
 ```
-## Excluir todos os Favoritos de um Documento PDF
+{{< /tab >}}
+{{< /tabs >}}
 
-Todos os favoritos em um PDF estão contidos na coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Este artigo explica como excluir todos os favoritos de um arquivo PDF.
+## Obtendo o Número da Página de um Marcador
 
-Para excluir todos os favoritos de um arquivo PDF:
+Uma vez que você adicionou um marcador, pode descobrir em qual página ele está obtendo o número da página de destino associado ao objeto Bookmark.
 
-1. Chame o método Delete da coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. Salve o arquivo modificado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-
-Os seguintes trechos de código mostram como excluir todos os favoritos de um documento PDF.
-
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarkPageNumber()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "DeleteAllBookmarks.pdf");
+    // Create PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Bind PDF document
+        bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 
-// Excluir todos os favoritos
-pdfDocument.Outlines.Delete();
+        // Extract bookmarks
+        Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
 
-dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
-// Salvar arquivo atualizado
-pdfDocument.Save(dataDir);
+        foreach (var bookmark in bookmarks)
+        {
+            string strLevelSeparator = string.Empty;
+
+            for (int i = 1; i < bookmark.Level; i++)
+            {
+                strLevelSeparator += "----";
+            }
+
+            Console.WriteLine("{0}Title: {1}", strLevelSeparator, bookmark.Title);
+            Console.WriteLine("{0}Page Number: {1}", strLevelSeparator, bookmark.PageNumber);
+            Console.WriteLine("{0}Page Action: {1}", strLevelSeparator, bookmark.Action);
+        }
+    }
+}
 ```
-## Excluir um Favorito Específico de um Documento PDF
+{{< /tab >}}
 
-Para excluir um favorito específico de um arquivo PDF:
-
-1. Passe o título do favorito como parâmetro para o método Delete da coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. Em seguida, salve o arquivo atualizado com o método Save do objeto Document.
-
-A classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) fornece a coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). O método [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) remove qualquer favorito com o título passado para o método.
-
-Os seguintes trechos de código mostram como excluir um favorito específico do documento PDF.
-
+{{< tab tabNum="2" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarkPageNumber()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "DeleteParticularBookmark.pdf");
+    // Create PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-// Excluir um favorito específico pelo Título
-pdfDocument.Outlines.Delete("Child Outline");
+    // Bind PDF document
+    bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 
-// Salvar o arquivo atualizado
-pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+    // Extract bookmarks
+    Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+    foreach (var bookmark in bookmarks)
+    {
+        string strLevelSeparator = string.Empty;
+
+        for (int i = 1; i < bookmark.Level; i++)
+        {
+            strLevelSeparator += "----";
+        }
+
+        Console.WriteLine("{0}Title: {1}", strLevelSeparator, bookmark.Title);
+        Console.WriteLine("{0}Page Number: {1}", strLevelSeparator, bookmark.PageNumber);
+        Console.WriteLine("{0}Page Action: {1}", strLevelSeparator, bookmark.Action);
+    }
+}
 ```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Obter Marcadores Filhos de um Documento PDF
+
+Os marcadores podem ser organizados em uma estrutura hierárquica, com pais e filhos. Para obter todos os marcadores, percorra as coleções Outlines do objeto Document. No entanto, para obter marcadores filhos também, percorra todos os marcadores em cada objeto [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) obtido no primeiro loop. Os seguintes trechos de código mostram como obter marcadores filhos de um documento PDF.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf"))
+    {
+        // Loop through all the bookmarks
+        foreach (var outlineItem in document.Outlines)
+        {
+            Console.WriteLine(outlineItem.Title);
+            Console.WriteLine(outlineItem.Italic);
+            Console.WriteLine(outlineItem.Bold);
+            Console.WriteLine(outlineItem.Color);
+
+            if (outlineItem.Count > 0)
+            {
+                Console.WriteLine("Child Bookmarks");
+
+                // There are child bookmarks then loop through that as well
+                foreach (var childOutline in outlineItem)
+                {
+                    Console.WriteLine(childOutline.Title);
+                    Console.WriteLine(childOutline.Italic);
+                    Console.WriteLine(childOutline.Bold);
+                    Console.WriteLine(childOutline.Color);
+                }
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf");
+
+    // Loop through all the bookmarks
+    foreach (var outlineItem in document.Outlines)
+    {
+        Console.WriteLine(outlineItem.Title);
+        Console.WriteLine(outlineItem.Italic);
+        Console.WriteLine(outlineItem.Bold);
+        Console.WriteLine(outlineItem.Color);
+
+        if (outlineItem.Count > 0)
+        {
+            Console.WriteLine("Child Bookmarks");
+
+            // There are child bookmarks then loop through that as well
+            foreach (var childOutline in outlineItem)
+            {
+                Console.WriteLine(childOutline.Title);
+                Console.WriteLine(childOutline.Italic);
+                Console.WriteLine(childOutline.Bold);
+                Console.WriteLine(childOutline.Color);
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Atualizar Marcadores em um Documento PDF
+
+Para atualizar um marcador em um arquivo PDF, primeiro, obtenha o marcador específico da coleção OutlineColletion do objeto Document especificando o índice do marcador. Uma vez que você tenha recuperado o marcador no objeto [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), você pode atualizar suas propriedades e, em seguida, salvar o arquivo PDF atualizado usando o método Save. Os seguintes trechos de código mostram como atualizar marcadores em um documento PDF.
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf"))
+    {
+        // Get a bookmark object
+        var pdfOutline = document.Outlines[1];
+        pdfOutline.Title = "Updated Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf");
+
+    // Get a bookmark object
+    var pdfOutline = document.Outlines[1];
+    pdfOutline.Title = "Updated Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
+
+    // Save PDF document
+    document.Save(dataDir + "UpdateBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Atualizar Marcadores Filhos em um Documento PDF
+
+Para atualizar um marcador filho:
+
+1. Recupere o marcador filho que você deseja atualizar do arquivo PDF, primeiro obtendo o marcador pai e, em seguida, o marcador filho usando os valores de índice apropriados.
+1. Salve o arquivo PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1).
+
+{{% alert color="primary" %}}
+
+Obtenha um marcador da coleção OutlineCollection do objeto Document especificando o índice do marcador, e então obtenha o marcador filho especificando o índice deste marcador pai.
+
+{{% /alert %}}
+
+O seguinte trecho de código mostra como atualizar marcadores filhos em um documento PDF.
+
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf"))
+    {
+        // Get a bookmark object
+        var pdfOutline = document.Outlines[1];
+
+        // Get child bookmark object
+        Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
+        childOutline.Title = "Updated Outline";
+        childOutline.Italic = true;
+        childOutline.Bold = true;
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf");
+
+    // Get a bookmark object
+    var pdfOutline = document.Outlines[1];
+
+    // Get child bookmark object
+    Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
+    childOutline.Title = "Updated Outline";
+    childOutline.Italic = true;
+    childOutline.Bold = true;
+
+    // Save PDF document
+    document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Marcadores Expandidos ao visualizar o documento
+
+Os marcadores são mantidos na coleção [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) do objeto Document, que está na coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). No entanto, podemos ter a necessidade de ter todos os marcadores expandidos ao visualizar o arquivo PDF.
+
+Para atender a essa necessidade, podemos definir o status de abertura para cada item de contorno/marcador como Aberto. O seguinte trecho de código mostra como definir o status de abertura para cada marcador como expandido em um documento PDF.
+
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExpandBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
+        document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
+
+        // Traverse through each Outline item in outlines collection of PDF file
+        foreach (var item in document.Outlines)
+        {
+            // Set open status for outline item
+            item.Open = true;
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ExpandBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExpandBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
+    document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
+
+    // Traverse through each Outline item in outlines collection of PDF file
+    foreach (var item in document.Outlines)
+    {
+        // Set open status for outline item
+        item.Open = true;
+    }
+
+    // Save PDF document
+    document.Save(dataDir + "ExpandBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para .NET Library",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -232,21 +504,21 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -257,7 +529,7 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -269,5 +541,3 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
     }
 }
 </script>
-```
-

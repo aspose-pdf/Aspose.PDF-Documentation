@@ -1,35 +1,40 @@
 ---
-title: Imprimindo documentos PDF
+title: Impressão de documentos PDF
 linktitle: Impressão de documento
 type: docs
-weight: 160
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 220
 url: /pt/net/printing-document/
-description: Técnicas de impressão de PDF em C# e guia para configurações de impressora PDF em C# e dicas para projetos .NET
+description: Técnicas de impressão de PDF em C# e guia para configurações de impressora PDF em C# e dicas de projeto .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-pdf-printing-facades/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Imprimindo documentos PDF",
-    "alternativeHeadline": "Como imprimir documentos PDF",
+    "headline": "Printing PDF documents",
+    "alternativeHeadline": "Streamlined C# PDF Printing Techniques and Settings",
+    "abstract": "Descubra a nova funcionalidade de impressão de documentos PDF usando C# com nosso guia abrangente. Este recurso fornece técnicas e dicas essenciais para configurar as definições da impressora PDF dentro de projetos .NET, aprimorando suas capacidades de manuseio de documentos. Perfeito para desenvolvedores que buscam simplificar seus processos de impressão em aplicações .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, imprimir pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Printing PDF, C# PDF printer settings, .NET project tips, PDF document generation, print PDF document in WPF application, printing PDF in .NET Framework, Aspose.PDF for .NET Library, PDF to PostScript conversion, check print job status, printing PDF in .NET Core",
+    "wordcount": "120",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +51,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,18 +76,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/printing-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Técnicas de impressão de PDF em C# e guia para configurações de impressora PDF em C# e dicas para projetos .NET"
+    "dateModified": "2024-11-25",
+    "description": "Técnicas de impressão de PDF em C# e guia para configurações de impressora PDF em C# e dicas de projeto .NET"
 }
 </script>
 
 ## Como imprimir arquivos PDF em C#
 
-- [Impressão de PDF no .NET Framework](/pdf/pt/net/printing-pdf-in-net-framework/)
-- [Impressão de PDF em uma Impressora XPS (Facades)](/pdf/pt/net/printing-pdf-to-an-xps-printer-facades/)
-- [Conversão de PDF para PostScript, Verificando o Status do Trabalho de Impressão](/pdf/pt/net/pdf-to-postscript-conversion/)
-- [Impressão de PDF no .NET Core](/pdf/pt/net/print-dotnetcore/)
-- [Imprimir documento PDF em aplicação WPF](/pdf/pt/net/print-pdf-document-in-wpf-application/)
+- [Impressão de PDF no .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
+- [Impressão de PDF em uma impressora XPS (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
+- [Conversão de PDF para PostScript, Verificando o Status do Trabalho de Impressão](/pdf/net/pdf-to-postscript-conversion/)
+- [Impressão de PDF no .NET Core](/pdf/net/print-dotnetcore/)
+- [Imprimir documento PDF em aplicação WPF](/pdf/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {
@@ -135,7 +140,7 @@ sitemap:
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -147,5 +152,3 @@ sitemap:
     }
 }
 </script>
-
-

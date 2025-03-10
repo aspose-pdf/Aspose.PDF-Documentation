@@ -2,34 +2,39 @@
 title: Protegendo e assinando PDF em C#
 linktitle: Protegendo e assinando em PDF
 type: docs
-weight: 150
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 210
 url: /pt/net/securing-and-signing/
-description: Esta seção descreve os recursos de usar uma assinatura e proteger seu documento PDF usando C#
-lastmod: "2022-02-17"
+description: Esta seção descreve os recursos de uso de uma assinatura e proteção do seu documento PDF usando C#
+lastmod: "2024-02-07"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - net/working-with-security-and-signatures/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Protegendo e assinando PDF em C#",
-    "alternativeHeadline": "Como assinar PDF",
+    "headline": "Securing and signing PDF in C#",
+    "alternativeHeadline": "Securely Digitally Sign PDFs with C#",
+    "abstract": "Descubra as capacidades avançadas de proteger e assinar digitalmente documentos PDF usando C#. Este recurso permite que os usuários apliquem assinaturas digitais robustas com vários algoritmos e opções de resumo, garantindo a integridade e autenticidade do documento. Melhore a segurança do seu PDF com as funcionalidades abrangentes de assinatura do Aspose.PDF, adaptadas para uma integração perfeita em aplicações .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos em PDF",
-    "keywords": "pdf, c#, assinar pdf",
+    "genre": "pdf document generation",
+    "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
     "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +51,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,17 +76,30 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Esta seção descreve os recursos de usar uma assinatura e proteger seu documento PDF usando C#"
+    "dateModified": "2024-02-07",
+    "description": "Esta seção descreve os recursos de uso de uma assinatura e proteção do seu documento PDF usando C#"
 }
 </script>
 
-Esta seção descreve como assinar digitalmente documentos PDF de forma segura usando C#. Os termos assinatura eletrônica e assinatura digital são usados de forma intercambiável, mas essencialmente os dois são diferentes. Mais geralmente, uma assinatura digital vem com um selo aprovado por uma [autoridade de certificação](https://pt.wikipedia.org/wiki/Autoridade_certificadora) e é usada para proteger o documento assinado contra adulteração. Em vez disso, uma assinatura eletrônica é frequentemente usada para demonstrar a intenção de assinar um documento.
+Esta seção descreve como assinar digitalmente documentos PDF de forma segura usando C#. Os termos assinatura eletrônica e assinatura digital são usados de forma intercambiável, mas essencialmente os dois são diferentes. De forma mais geral, uma assinatura digital vem com um selo aprovado por uma [autoridade certificadora](https://en.wikipedia.org/wiki/Certificate_authority) e é usada para proteger o documento assinado contra adulterações. Em vez disso, uma assinatura eletrônica é frequentemente usada para demonstrar a intenção de assinar um documento.
 
-- [Assinar digitalmente arquivo PDF](/pdf/pt/net/digitally-sign-pdf-file/)
-- [Definir privilégios, criptografar e descriptografar arquivo PDF](/pdf/pt/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extrair imagem e informações de assinatura](/pdf/pt/net/extract-image-and-signature-information/)
-- [Assinar documento PDF a partir de Smart Card](/pdf/pt/net/sign-pdf-document-from-smart-card/)
+Aspose.PDF suporta assinaturas digitais:
+- PKCS1 com algoritmo de assinatura RSA e resumo SHA-1.
+- PKCS7 com algoritmo de assinatura RSA e resumo SHA-1.
+- PKCS7 destacado com algoritmos de assinatura DSA, RSA e ECDSA. Os algoritmos de resumo suportados dependem do algoritmo de assinatura.
+- Assinatura com timestamp.
+
+Algoritmos de resumo para PKCS7 destacado:
+- DSA - SHA-1.
+- RSA - SHA-1, SHA-256, SHA-384, SHA-512.
+- ECDSA - SHA-256, SHA-384, SHA-512, SHA3-256, SHA3-384, SHA3-512.
+
+É recomendado evitar assinaturas digitais com o algoritmo de resumo SHA-1 devido à sua insegurança.
+
+- [Assinar digitalmente arquivo PDF](/pdf/net/digitally-sign-pdf-file/)
+- [Definir privilégios, criptografar e descriptografar arquivo PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Extrair informações de imagem e assinatura](/pdf/net/extract-image-and-signature-information/)
+- [Assinar documento PDF de cartão inteligente](/pdf/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {
@@ -146,5 +164,3 @@ Esta seção descreve como assinar digitalmente documentos PDF de forma segura u
     }
 }
 </script>
-
-

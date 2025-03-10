@@ -2,9 +2,11 @@
 title: Extrair Links do Arquivo PDF
 linktitle: Extrair Links
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /pt/net/extract-links/
-description: Extrair links de PDF com C#. Este tópico explica como extrair links usando a classe AnnotationSelector.
+description: Descubra como extrair hyperlinks de documentos PDF em .NET usando Aspose.PDF para gerenciamento de conteúdo e análise de links.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Extrair Links do Arquivo PDF",
-    "alternativeHeadline": "Como extrair Links de PDF",
+    "headline": "Extract Links from the PDF File",
+    "alternativeHeadline": "Effortlessly Extract Links from PDF Files",
+    "abstract": "Extraia links de arquivos PDF de forma simples usando C# com a nova classe AnnotationSelector. Este recurso permite que os desenvolvedores identifiquem e extraiam facilmente anotações de links de páginas especificadas de um documento PDF, aprimorando as capacidades de manipulação de PDF para aplicações que requerem extração precisa de links.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, extrair link de pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Extract Links, PDF extraction, C# PDF library, AnnotationSelector class, LinkAnnotation objects, PDF document manipulation, Aspose.PDF library, extract links from PDF",
+    "wordcount": "303",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,40 +74,75 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Extrair links de PDF com C#. Este tópico explica como extrair links usando a classe AnnotationSelector."
+    "dateModified": "2024-11-25",
+    "description": "Extraia links de PDF com C#. Este tópico explica como extrair links usando a classe AnnotationSelector."
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ## Extrair Links do Arquivo PDF
 
-Links são representados como anotações em um arquivo PDF, então para extrair links, extraia todos os objetos [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
+Links são representados como anotações em um arquivo PDF, portanto, para extrair links, extraia todos os objetos [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
 
 1. Crie um objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Obtenha a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) da qual você deseja extrair os links.
+1. Obtenha a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) da qual você deseja extrair links.
 1. Use a classe [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) para extrair todos os objetos [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) da página especificada.
 1. Passe o objeto [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) para o método Accept do objeto Page.
-1.
+1. Obtenha todas as anotações de link selecionadas em um objeto IList usando a propriedade Selected do objeto [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector).
+
 O seguinte trecho de código mostra como extrair links de um arquivo PDF.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Abrir documento
-Document document = new Document(dataDir+ "ExtractLinks.pdf");
-// Extrair ações
-Page page = document.Pages[1];
-AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
-page.Accept(selector);
-IList<Annotation> list = selector.Selected;
-Annotation annotation = (Annotation)list[0];
-dataDir = dataDir + "ExtractLinks_out.pdf";
-// Salvar documento atualizado
-document.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf"))
+    {
+        // Extract actions
+        var page = document.Pages[1];
+        var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+        page.Accept(selector);
+        var list = selector.Selected;
+        var annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
+
+        // Save PDF document
+        document.Save(dataDir + "ExtractLinks_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf");
+
+    // Extract actions
+    var page = document.Pages[1];
+    var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+    page.Accept(selector);
+    var list = selector.Selected;
+    var annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
+
+    // Save PDF document
+    document.Save(dataDir + "ExtractLinks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -157,7 +195,7 @@ document.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -169,5 +207,3 @@ document.Save(dataDir);
     }
 }
 </script>
-
-

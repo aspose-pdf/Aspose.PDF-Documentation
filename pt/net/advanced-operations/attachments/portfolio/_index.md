@@ -2,9 +2,11 @@
 title: Trabalhando com Portfólio em PDF
 linktitle: Portfólio
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /pt/net/portfolio/
-description: Como Criar um Portfólio em PDF com C#. Você deve usar um Arquivo do Microsoft Excel, um documento Word e um arquivo de imagem para criar um Portfólio em PDF.
+description: Como Criar um Portfólio PDF com C#. Você deve usar um arquivo Microsoft Excel, um documento Word e um arquivo de imagem para criar um Portfólio PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,8 +16,9 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabalhando com Portfólio em PDF",
-    "alternativeHeadline": "Criar Portfólio em documento PDF",
+    "headline": "Working with Portfolio in PDF",
+    "alternativeHeadline": "Create Dynamic PDF Portfolios from Multiple File Types",
+    "abstract": "Descubra o recurso inovador de Portfólio PDF no Aspose.PDF, permitindo que os usuários combinem facilmente vários tipos de arquivos, incluindo Microsoft Excel, documentos Word e imagens em um PDF coeso. Essa funcionalidade não apenas preserva a identidade de cada arquivo individual, mas também simplifica o processo de gerenciamento, extração e modificação de componentes dentro do portfólio, garantindo uma experiência do usuário simplificada para geração e gerenciamento de documentos.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -23,13 +26,13 @@ sitemap:
         "familyName": "Holub",
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento PDF",
-    "keywords": "pdf, c#, portfólio",
-    "wordcount": "302",
-    "proficiencyLevel": "Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "PDF Portfolio, C# PDF creation, Aspose.PDF library, Document class, FileSpecification class, file extraction PDF, remove files PDF Portfolio, unified container PDF, embedded files collection, PDF manipulation .NET",
+    "wordcount": "575",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,98 +74,117 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/portfolio/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Como Criar um Portfólio em PDF com C#. Você deve usar um Arquivo do Microsoft Excel, um documento Word e um arquivo de imagem para criar um Portfólio em PDF."
+    "dateModified": "2024-11-25",
+    "description": "Como Criar um Portfólio PDF com C#. Você deve usar um arquivo Microsoft Excel, um documento Word e um arquivo de imagem para criar um Portfólio PDF."
 }
 </script>
-## Como Criar um Portfólio em PDF
 
-Aspose.PDF permite a criação de documentos de Portfólio em PDF usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Adicione um arquivo em um objeto Document.Collection após obtê-lo com a classe [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Quando os arquivos forem adicionados, use o método Save da classe Document para salvar o documento do portfólio.
+## Como Criar um Portfólio PDF
 
-O exemplo a seguir usa um arquivo Microsoft Excel, um documento Word e um arquivo de imagem para criar um Portfólio em PDF.
+Aspose.PDF permite criar documentos de Portfólio PDF usando a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) classe. Adicione um arquivo em um objeto Document.Collection após obtê-lo com a [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) classe. Quando os arquivos forem adicionados, use o método Save da classe Document para salvar o documento do portfólio.
+
+O exemplo a seguir usa um arquivo Microsoft Excel, um documento Word e um arquivo de imagem para criar um Portfólio PDF.
 
 O código abaixo resulta no seguinte portfólio.
 
-O trecho de código a seguir também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-### Um Portfólio em PDF criado com Aspose.PDF
+### Portfólio PDF criado com Aspose.PDF
 
-![Um Portfólio em PDF criado com Aspose.PDF para .NET](working-with-pdf-portfolio_1.jpg)
+![Um Portfólio PDF criado com Aspose.PDF for .NET](working-with-pdf-portfolio_1.jpg)
 
 ```csharp
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreatePortfolio()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
-// Instanciar Objeto Documento
-Document doc = new Document();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Instantiate document Collection object
+        document.Collection = new Aspose.Pdf.Collection();
 
-// Instanciar objeto de Coleção de documentos
-doc.Collection = new Collection();
+        // Get Files to add to Portfolio
+        var excel = new Aspose.Pdf.FileSpecification(dataDir + "HelloWorld.xlsx");
+        var word = new Aspose.Pdf.FileSpecification(dataDir + "HelloWorld.docx");
+        var image = new Aspose.Pdf.FileSpecification(dataDir + "aspose-logo.jpg");
 
-// Obter arquivos para adicionar ao Portfólio
-FileSpecification excel = new FileSpecification( dataDir + "HelloWorld.xlsx");
-FileSpecification word = new FileSpecification( dataDir + "HelloWorld.docx");
-FileSpecification image = new FileSpecification(dataDir + "aspose-logo.jpg");
+        // Provide description of the files
+        excel.Description = "Excel File";
+        word.Description = "Word File";
+        image.Description = "Image File";
 
-// Fornecer descrição dos arquivos
-excel.Description = "Arquivo Excel";
-word.Description = "Arquivo Word";
-image.Description = "Arquivo de Imagem";
+        // Add files to document collection
+        document.Collection.Add(excel);
+        document.Collection.Add(word);
+        document.Collection.Add(image);
 
-// Adicionar arquivos à coleção de documentos
-doc.Collection.Add(excel);
-doc.Collection.Add(word);
-doc.Collection.Add(image);
-
-// Salvar documento do Portfólio
-doc.Save(dataDir + "CreatePDFPortfolio_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "CreatePortfolio_out.pdf");
+    }
+}
 ```
-## Extrair arquivos de Portfólio PDF
 
-Portfólios PDF permitem que você reúna conteúdo de uma variedade de fontes (por exemplo, PDF, Word, Excel, arquivos JPEG) em um único recipiente unificado. Os arquivos originais mantêm suas identidades individuais, mas são montados em um arquivo de Portfólio PDF. Os usuários podem abrir, ler, editar e formatar cada arquivo componente independentemente dos outros arquivos componentes.
+## Extrair arquivos do Portfólio PDF
 
-Aspose.PDF permite a criação de documentos de Portfólio PDF usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Ele também oferece a capacidade de extrair arquivos de portfólio PDF.
+Portfólios PDF permitem reunir conteúdo de uma variedade de fontes (por exemplo, arquivos PDF, Word, Excel, JPEG) em um único contêiner unificado. Os arquivos originais mantêm suas identidades individuais, mas são montados em um arquivo de Portfólio PDF. Os usuários podem abrir, ler, editar e formatar cada arquivo componente independentemente dos outros arquivos componentes.
+
+Aspose.PDF permite a criação de documentos de Portfólio PDF usando a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) classe. Também oferece a capacidade de extrair arquivos de um portfólio PDF.
 
 O seguinte trecho de código mostra os passos para extrair arquivos de um portfólio PDF.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
-
-// Carregar o Portfólio PDF de origem
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
-// Obter coleção de arquivos embutidos
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
-// Iterar através de cada arquivo do Portfólio
-foreach (FileSpecification fileSpecification in embeddedFiles)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractPortfolioFiles()
 {
-    // Obter o anexo e escrever para arquivo ou fluxo
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-    string filename = Path.GetFileName(fileSpecification.Name);
-    // Salvar o arquivo extraído em algum local
-    FileStream fileStream = new FileStream(dataDir + "_out" + filename, FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    // Fechar o objeto de fluxo
-    fileStream.Close();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))
+    {
+        // Get collection of embedded files
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
+        // Iterate through individual file of Portfolio
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+        {
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            string filename = Path.GetFileName(fileSpecification.Name);
+            // Save the extracted file to some location
+            using (FileStream fileStream = new FileStream(dataDir + filename + "_out", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+        }
+    }
 }
 ```
-![Extract files from PDF Portfolio](working-with-pdf-portfolio_2.jpg)
 
-## Remover Arquivos de Portfólio PDF
+![Extrair arquivos do Portfólio PDF](working-with-pdf-portfolio_2.jpg)
 
-Para deletar/remover arquivos de um portfólio PDF, tente usar as seguintes linhas de código.
+## Remover Arquivos do Portfólio PDF
+
+Para deletar/remover arquivos do portfólio PDF, tente usar as seguintes linhas de código.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemovePortfolioFiles()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
-// Carregar o Portfólio PDF de origem
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
-pdfDocument.Collection.Delete();
-pdfDocument.Save(dataDir + "No_PortFolio_out.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))
+    {
+        document.Collection.Delete();
+        // Save PDF document
+        document.Save(dataDir + "NoPortFolio_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -228,5 +250,3 @@ pdfDocument.Save(dataDir + "No_PortFolio_out.pdf");
     }
 }
 </script>
-
-

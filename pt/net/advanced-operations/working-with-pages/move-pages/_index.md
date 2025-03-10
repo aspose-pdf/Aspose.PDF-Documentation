@@ -1,10 +1,12 @@
 ---
-title: Mova Páginas PDF Programaticamente em C#
+title: Mover Páginas PDF programaticamente C#
 linktitle: Mover Páginas PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /pt/net/move-pages/
-description: Tente mover páginas para o local desejado ou para o final de um arquivo PDF usando Aspose.PDF para .NET.
+description: Tente mover páginas para o local desejado ou para o final de um arquivo PDF usando Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Mova Páginas PDF Programaticamente em C#",
-    "alternativeHeadline": "Como mover Páginas PDF com .NET",
+    "headline": "Move PDF Pages programmatically C#",
+    "alternativeHeadline": "Programmatically Rearrange PDF Pages with .NET",
+    "abstract": "Aspose.PDF for .NET introduz um novo recurso poderoso que permite aos usuários mover programaticamente páginas PDF entre documentos ou reorganizá-las dentro do mesmo documento. Essa funcionalidade aprimora as capacidades de manipulação de PDF, permitindo que os desenvolvedores insiram páginas em locais designados e gerenciem facilmente a organização das páginas, mantendo a integridade do documento.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, mover página pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "wordcount": "668",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/move-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Tente mover páginas para o local desejado ou para o final de um arquivo PDF usando Aspose.PDF para .NET."
+    "dateModified": "2024-11-26",
+    "description": "Tente mover páginas para o local desejado ou para o final de um arquivo PDF usando Aspose.PDF for .NET."
 }
 </script>
 
@@ -80,81 +82,111 @@ sitemap:
 
 Este tópico explica como mover uma página de um documento PDF para o final de outro documento usando C#.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 Para mover uma página, devemos:
 
 1. Criar um objeto da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) com o arquivo PDF de origem.
 1. Criar um objeto da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) com o arquivo PDF de destino.
 1. Obter a Página da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [Adicionar](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) página ao documento de destino.
+1. [Adicionar](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) a página ao documento de destino.
 1. Salvar o PDF de saída usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [Deletar](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) a página no documento de origem.
-1.
+1. [Excluir](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) a página no documento de origem.
+1. Salvar o PDF de origem usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+
 O seguinte trecho de código mostra como mover uma página.
 
 ```csharp
-var srcFileName = "<insira o nome do arquivo>";
-var dstFileName = "<insira o nome do arquivo>";
-var srcDocument = new Document(srcFileName);
-var dstDocument = new Document();
-var page = srcDocument.Pages[2];
-dstDocument.Pages.Add(page);
-// Salvar arquivo de saída
-dstDocument.Save(srcFileName);
-srcDocument.Pages.Delete(2);
-srcDocument.Save(dstFileName);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MovingAPageFromOnePdfDocumentToAnother()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF documents
+    using (var srcDocument = new Aspose.Pdf.Document(dataDir + "MovingPageInput.pdf"))
+    {
+        using (var dstDocument = new Aspose.Pdf.Document())
+        {
+            var page = srcDocument.Pages[2];
+            dstDocument.Pages.Add(page);
+            // Save PDF document
+            dstDocument.Save(dataDir + "MovingPage_out.pdf");
+            srcDocument.Pages.Delete(2);
+            // Save PDF document
+            srcDocument.Save(dataDir + "MovingPageInput_out.pdf");
+        }
+    }
+}
 ```
 
-## Movendo um conjunto de páginas de um documento PDF para outro
+## Movendo um Conjunto de Páginas de um Documento PDF para Outro
 
-1. Crie um objeto da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) com o arquivo PDF fonte.
-1. Crie um objeto da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) com o arquivo PDF de destino.
-1. Defina um array com os números das páginas a serem movidas.
-1. Execute um loop através do array:
-    1. Obtenha a Página da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. Salve o PDF de saída usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) a página no documento fonte usando um array.
-1. Salve o PDF fonte usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Criar um objeto da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) com o arquivo PDF de origem.
+1. Criar um objeto da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) com o arquivo PDF de destino.
+1. Definir um array com os números das páginas a serem movidas.
+1. Executar um loop através do array:
+    1. Obter a Página da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+    1. [Adicionar](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) a página ao documento de destino.
+1. Salvar o PDF de saída usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. [Excluir](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) a página no documento de origem usando o array.
+1. Salvar o PDF de origem usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 O seguinte trecho de código mostra como mover um conjunto de páginas de um documento PDF para outro.
 
 ```csharp
-var srcFileName = "<enter file name>";
-var dstFileName = "<enter file name>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
-var dstDocument = new Aspose.Pdf.Document();
-var pages = new []{ 1, 3 };
-foreach (var pageIndex in pages)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 {
-    var page = srcDocument.Pages[pageIndex];
-    dstDocument.Pages.Add(page);
-}                       
-// Salva os arquivos de saída
-dstDocument.Save(dstFileName);
-srcDocument.Pages.Delete(pages);
-srcDocument.Save(srcFileName);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF documents
+    using (var srcDocument = new Aspose.Pdf.Document(dataDir + "MovingBunchOfPagesInput.pdf"))
+    {
+        using (var dstDocument = new Aspose.Pdf.Document())
+        {
+            var pages = new[] { 1, 3 };
+            foreach (int pageIndex in pages)
+            {
+                var page = srcDocument.Pages[pageIndex];
+                dstDocument.Pages.Add(page);
+            }
+            // Save PDF document
+            dstDocument.Save(dataDir + "MovingBunchOfPages_out.pdf");
+            srcDocument.Pages.Delete(pages);
+            // Save PDF document
+            srcDocument.Save(dataDir + "MovingBunchOfPagesInput_out.pdf";
+        }
+    }
+}
 ```
 
-## Movendo uma Página para uma nova localização no Documento PDF atual
+## Movendo uma Página para um Novo Local no Documento PDF Atual
 
-1.
-1. Obtenha a página da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [Adicione](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) a página para um novo local (por exemplo, no final).
-1. [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) a página na localização anterior.
-1. Salve o PDF de saída usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Criar um objeto da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) com o arquivo PDF de origem.
+1. Obter a Página da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. [Adicionar](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) a página ao novo local (por exemplo, ao final).
+1. [Excluir](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) a página no local anterior.
+1. Salvar o PDF de saída usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 ```csharp
-var srcFileName = "<enter file name>";
-var dstFileName = "<enter file name>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MovingAPageInNewLocationInTheCurrentPdfDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-var page = srcDocument.Pages[2];
-srcDocument.Pages.Add(page);
-srcDocument.Pages.Delete(2);          
-
-// Save output file
-srcDocument.Save(dstFileName);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocumentInput.pdf"))
+    {
+        var page = document.Pages[2];
+        document.Pages.Add(page);
+        document.Pages.Delete(2);
+        // Save PDF document
+        document.Save(dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocument_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -220,5 +252,3 @@ srcDocument.Save(dstFileName);
     }
 }
 </script>
-
-

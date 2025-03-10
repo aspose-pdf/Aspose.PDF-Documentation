@@ -1,10 +1,12 @@
 ---
-title: Visão Geral das Anotações Suportadas
-linktitle: Visão Geral das Anotações
+title: Visão geral das Anotações suportadas
+linktitle: Visão geral das Anotações
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /pt/net/overview-of-annotations/
-description: Confira a lista de anotações possíveis com as quais você pode trabalhar usando Aspose.PDF para .NET.
+description: Confira a lista de possíveis anotações com as quais você pode trabalhar usando Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Visão Geral das Anotações Suportadas",
-    "alternativeHeadline": "Lista de Anotações Suportadas",
+    "headline": "Overview of supported Annotations",
+    "alternativeHeadline": "Comprehensive List of Aspose.PDF Annotations",
+    "abstract": "Descubra a lista abrangente de anotações suportadas disponíveis em Aspose.PDF for .NET, permitindo que os desenvolvedores aprimorem documentos PDF com vários recursos. Essa funcionalidade inclui diversos tipos de anotações, como texto, link, destaque e multimídia, proporcionando opções robustas para manipulação e personalização de PDF. Explore como essas anotações podem elevar suas aplicações .NET e melhorar o engajamento do usuário com o conteúdo PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, anotações suportadas",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Aspose.PDF, supported annotations, PDF document generation, .NET Framework, .NET Core, Text annotation, Link annotations, Free text annotation, Highlight annotation, Watermark annotation",
+    "wordcount": "370",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,40 +74,37 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/overview-of-annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Confira a lista de anotações possíveis com as quais você pode trabalhar usando Aspose.PDF para .NET."
+    "dateModified": "2024-11-25",
+    "description": "Confira a lista de possíveis anotações com as quais você pode trabalhar usando Aspose.PDF for .NET."
 }
 </script>
 
-A tabela a seguir indica os tipos de anotação que o Aspose.PDF para .NET suporta.
+A tabela a seguir indica os tipos de Anotações que Aspose.PDF for .NET suportou.
 
 |**Tipo de Anotação**|**Descrição**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Text](/pdf/pt/net/text-annotation/)|Anotação de texto|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/pt/net/extra-annotations/)|Anotações de link|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[FreeText](/pdf/pt/net/text-annotation/)|(PDF 1.3) Anotação de texto livre|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Line](/pdf/pt/net/figures-annotation/)|(PDF 1.3) Anotação de linha|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Square](/pdf/pt/net/figures-annotation/)|(PDF 1.3) Anotação de quadrado|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Circle](/pdf/pt/net/figures-annotation/)|(PDF 1.3) Anotação de círculo|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Polygon](/pdf/pt/net/figures-annotation/)|(PDF 1.5) Anotação de polígono|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/pt/net/figures-annotation/)|(PDF 1.5) Anotação de polilinha|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-| [PolyLine](/pdf/pt/net/figures-annotation/) | (PDF 1.5) Anotação de polilinha | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Highlight](/pdf/pt/net/highlights-annotation/) | (PDF 1.3) Anotação de destaque | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Underline](/pdf/pt/net/highlights-annotation/) | (PDF 1.3) Anotação de sublinhado | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Squiggly](/pdf/pt/net/highlights-annotation/) | (PDF 1.4) Anotação de sublinhado ondulado | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [StrikeOut](/pdf/pt/net/highlights-annotation/) | (PDF 1.3) Anotação de tachado | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Stamp](/pdf/pt/net/stamping/) | (PDF 1.3) Anotação de carimbo de borracha | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Caret](/pdf/pt/net/extra-annotations/) | (PDF 1.5) Anotação de inserção | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Ink](/pdf/pt/net/figures-annotation/) | (PDF 1.3) Anotação de tinta | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Popup](/pdf/pt/net/text-annotation/) | (PDF 1.3) Anotação pop-up | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-
-|[Popup](/pdf/pt/net/text-annotation/)|(PDF 1.3) Anotação pop-up|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Sound](/pdf/pt/net/multimedia-annotation/)|(PDF 1.2) Anotação de som|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Movie](/pdf/pt/net/multimedia-annotation/)|(PDF 1.2) Anotação de filme|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Widget](/pdf/pt/net/multimedia-annotation/)|(PDF 1.2) Anotação de widget|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Screen](/pdf/pt/net/multimedia-annotation/)|(PDF 1.5) Anotação de tela|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/pt/net/sticky-annotations/)|(PDF 1.6) Anotação de marca d'água|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Redact](/pdf/pt/net/extra-annotations/)|(PDF 1.7) Anotação de redação|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Texto](/pdf/net/text-annotation/)|Anotação de texto|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/net/extra-annotations/)|Anotações de link|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[TextoLivre](/pdf/net/text-annotation/)|(PDF 1.3) Anotação de texto livre|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Linha](/pdf/net/figures-annotation/)|(PDF 1.3) Anotação de linha|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Quadrado](/pdf/net/figures-annotation/)|(PDF 1.3) Anotação de quadrado|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Círculo](/pdf/net/figures-annotation/)|(PDF 1.3) Anotação de círculo|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polígono](/pdf/net/figures-annotation/)|(PDF 1.5) Anotação de polígono|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polilinha](/pdf/net/figures-annotation/)|(PDF 1.5) Anotação de polilinha|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Destaque](/pdf/net/highlights-annotation/)|(PDF 1.3) Anotação de destaque|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sublinhado](/pdf/net/highlights-annotation/)|(PDF 1.3) Anotação de sublinhado|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Ziguezague](/pdf/net/highlights-annotation/)|(PDF 1.4) Anotação de sublinhado em ziguezague|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Riscado](/pdf/net/highlights-annotation/)|(PDF 1.3) Anotação de riscado|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Carimbo](/pdf/net/stamping/)|(PDF 1.3) Anotação de carimbo|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Cursor](/pdf/net/extra-annotations/)|(PDF 1.5) Anotação de cursor|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Tinta](/pdf/net/figures-annotation/)|(PDF 1.3) Anotação de tinta|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Pop-up](/pdf/net/text-annotation/)|(PDF 1.3) Anotação pop-up|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Som](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotação de som|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Filme](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotação de filme|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotação de widget|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Tela](/pdf/net/multimedia-annotation/)|(PDF 1.5) Anotação de tela|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Marca d'água](/pdf/net/sticky-annotations/)|(PDF 1.6) Anotação de marca d'água|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redação](/pdf/net/extra-annotations/)|(PDF 1.7) Anotação de redação|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {
@@ -169,5 +169,3 @@ A tabela a seguir indica os tipos de anotação que o Aspose.PDF para .NET supor
     }
 }
 </script>
-```
-

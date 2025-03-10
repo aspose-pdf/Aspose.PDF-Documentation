@@ -2,9 +2,11 @@
 title: Anotação de Destaque em PDF usando C#
 linktitle: Anotação de Destaque
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /pt/net/highlights-annotation/
-description: As anotações de marcação são apresentadas no texto como destaques, sublinhados, riscados ou sublinhados irregulares no texto de um documento.
+description: Aprenda como adicionar anotações de destaque a documentos PDF em .NET usando Aspose.PDF para ênfase e revisão de texto.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Anotação de Destaques em PDF usando C#",
-    "alternativeHeadline": "Como adicionar Anotação de Destaques em PDF",
+    "headline": "PDF Highlight Annotation using C#",
+    "alternativeHeadline": "PDF Annotations with Customizable Highlighting Options",
+    "abstract": "O novo recurso de Anotação de Destaque em PDF usando C# permite que os usuários adicionem e personalizem anotações de marcação de texto em seus documentos PDF de forma simples. Essa funcionalidade inclui opções para destaques, sublinhados, tachados e sublinhados irregulares, todos os quais podem ser editados quanto à cor, opacidade e metadados, melhorando a interatividade e clareza do documento.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, anotação de destaques, anotação de marcação de texto",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "PDF Highlight Annotation, C#, text markup annotation, highlight settings, strikethrough settings, underline settings, add annotation, delete annotation, Aspose.PDF.Drawing, markup annotations",
+    "wordcount": "958",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,23 +74,22 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/highlights-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "As anotações de marcação são apresentadas no texto como destaques, sublinhados, riscados ou sublinhados irregulares no texto de um documento."
+    "dateModified": "2024-11-25",
+    "description": "As anotações de marcação são apresentadas no texto como destaques, sublinhados, tachados ou sublinhados irregulares no texto de um documento."
 }
 </script>
 
-As anotações de marcação de texto devem aparecer como destaques, sublinhados, riscados ou sublinhados irregulares ("ondulados") no texto de um documento. Ao serem abertas, devem exibir uma janela pop-up contendo o texto da nota associada.
+As Anotações de Marcação de Texto devem aparecer como destaques, sublinhados, tachados ou sublinhados irregulares (“ondulados”) no texto de um documento. Quando abertas, devem exibir uma janela pop-up contendo o texto da nota associada.
 
 As propriedades das anotações de marcação de texto no documento PDF podem ser editadas usando a janela de propriedades fornecida no controle de visualização de PDF. A cor, opacidade, autor e assunto da anotação de marcação de texto podem ser modificados.
 
-É possível obter ou definir as configurações das anotações de destaque usando a propriedade highlightSettings. A propriedade highlightSettings é usada para definir a cor, opacidade, autor, assunto, data de modificação e propriedades isLocked das anotações de destaque.
+É possível obter ou definir as configurações das anotações de destaque usando a propriedade highlightSettings. A propriedade highlightSettings é usada para definir as propriedades de cor, opacidade, autor, assunto, modifiedDate e isLocked das anotações de destaque.
 
-Também é possível obter ou definir as configurações das anotações de riscado usando a propriedade strikethroughSettings. A propriedade strikethroughSettings é usada para definir a cor, opacidade, autor, assunto, data de modificação e propriedades isLocked das anotações de riscado.
+Também é possível obter ou definir as configurações das anotações de tachado usando a propriedade strikethroughSettings. A propriedade strikethroughSettings é usada para definir as propriedades de cor, opacidade, autor, assunto, modifiedDate e isLocked das anotações de tachado.
 
-A próxima característica é a capacidade de obter ou definir as configurações das anotações de sublinhado usando a propriedade underlineSettings.
-A próxima funcionalidade é a capacidade de obter ou definir as configurações das anotações sublinhadas usando a propriedade underlineSettings.
+A próxima funcionalidade é a capacidade de obter ou definir as configurações das anotações de sublinhado usando a propriedade underlineSettings. A propriedade underlineSettings é usada para definir as propriedades de cor, opacidade, autor, assunto, modifiedDate e isLocked das anotações de sublinhado.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ## Adicionar Anotação de Marcação de Texto
 
@@ -99,194 +101,199 @@ Para adicionar uma Anotação de Marcação de Texto ao documento PDF, precisamo
     - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) e definir parâmetros (título, cor).
     - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) e definir parâmetros (título, cor).
     - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) e definir parâmetros (título, cor).
-- [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) e defina parâmetros (título, cor).
 1. Depois, devemos adicionar todas as anotações à página.
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using Aspose.Pdf.Text;
-using System;
-using System.Linq;
-
-namespace Aspose.Pdf.Examples.Advanced
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextMarkupAnnotations()
 {
-    class ExampleTextMarkupAnnotation
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
     {
-        // O caminho para o diretório de documentos.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
+        // Create a TextFragmentAbsorber to find the text "PDF"
+        var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber("PDF");
+        tfa.Visit(document.Pages[1]);
 
-        public static void AddTextMarkupAnnotation()
+        // Create annotations for the found text fragments
+        var highlightAnnotation = new Aspose.Pdf.Annotations.HighlightAnnotation(document.Pages[1], tfa.TextFragments[1].Rectangle)
         {
-            try
-            {
-                // Carregar o arquivo PDF
-                Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
-                var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber("PDF");
-                tfa.Visit(document.Pages[1]);
+            Title = "Aspose User",
+            Color = Aspose.Pdf.Color.LightGreen
+        };
 
-                //Criar anotações
-                HighlightAnnotation highlightAnnotation = new HighlightAnnotation(document.Pages[1],
-                   tfa.TextFragments[1].Rectangle )
-                {
-                    Title = "Usuário Aspose",
-                    Color = Color.LightGreen
-                };
+        var strikeOutAnnotation = new Aspose.Pdf.Annotations.StrikeOutAnnotation(document.Pages[1], tfa.TextFragments[2].Rectangle)
+        {
+            Title = "Aspose User",
+            Color = Aspose.Pdf.Color.Blue
+        };
 
-                StrikeOutAnnotation strikeOutAnnotation = new StrikeOutAnnotation(
-                   document.Pages[1],
-                   tfa.TextFragments[2].Rectangle)
-                {
-                    Title = "Usuário Aspose",
-                    Color = Color.Blue
-                };
-                SquigglyAnnotation squigglyAnnotation = new SquigglyAnnotation(document.Pages[1],
-                    tfa.TextFragments[3].Rectangle)
-                {
-                    Title = "Usuário Aspose",
-                    Color = Color.Red
-                };
-                UnderlineAnnotation underlineAnnotation = new UnderlineAnnotation(document.Pages[1],
-                    tfa.TextFragments[4].Rectangle)
-                {
-                    Title = "Usuário Aspose",
-                    Color = Color.Violet
-                };
-                // Adicionar anotação à página
-                document.Pages[1].Annotations.Add(highlightAnnotation);
-                document.Pages[1].Annotations.Add(squigglyAnnotation);
-                document.Pages[1].Annotations.Add(strikeOutAnnotation);
-                document.Pages[1].Annotations.Add(underlineAnnotation);
-                document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
+        var squigglyAnnotation = new Aspose.Pdf.Annotations.SquigglyAnnotation(document.Pages[1], tfa.TextFragments[3].Rectangle)
+        {
+            Title = "Aspose User",
+            Color = Aspose.Pdf.Color.Red
+        };
+
+        var underlineAnnotation = new Aspose.Pdf.Annotations.UnderlineAnnotation(document.Pages[1], tfa.TextFragments[4].Rectangle)
+        {
+            Title = "Aspose User",
+            Color = Aspose.Pdf.Color.Violet
+        };
+
+        // Add annotations to the page
+        document.Pages[1].Annotations.Add(highlightAnnotation);
+        document.Pages[1].Annotations.Add(squigglyAnnotation);
+        document.Pages[1].Annotations.Add(strikeOutAnnotation);
+        document.Pages[1].Annotations.Add(underlineAnnotation);
+
+        // Save PDF document
+        document.Save(dataDir + "AddTextMarkupAnnotations_out.pdf");
+    }
+}
 ```
-Se você quiser destacar um fragmento de várias linhas, você deve usar o exemplo avançado:
+
+Se você quiser destacar um fragmento de várias linhas, deve usar um exemplo avançado:
 
 ```csharp
-        /// <summary>
-        /// Exemplo avançado para quando você quer destacar um fragmento de várias linhas
-        /// </summary>
-        public static void AddHighlightAnnotationAdvanced()
-        {
-            var document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var page = document.Pages[1];
-            var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
-            tfa.Visit(page);
-            foreach (var textFragment in tfa.TextFragments)
-            {
-                var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
-                page.Annotations.Add(highlightAnnotation);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-        }
-        private static HighlightAnnotation HighLightTextFragment(Aspose.Pdf.Page page,
-            TextFragment textFragment, Color color)
-        {
-            if (textFragment.Segments.Count == 1)
-                return new HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
-                {
-                    Title = "Usuário Aspose",
-                    Color = color,
-                    Modified = DateTime.Now,
-                    QuadPoints = new Point[]
-                    {
-                        new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.URY),
-                        new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.URY),
-                        new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.LLY),
-                        new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
-                    }
-                };
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHighlightAnnotationAdvanced()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-            var offset = 0;
-            var quadPoints = new Point[textFragment.Segments.Count * 4];
-            foreach (var segment in textFragment.Segments)
-            {
-                quadPoints[offset + 0] = new Point(segment.Rectangle.LLX, segment.Rectangle.URY);
-                quadPoints[offset + 1] = new Point(segment.Rectangle.URX, segment.Rectangle.URY);
-                quadPoints[offset + 2] = new Point(segment.Rectangle.LLX, segment.Rectangle.LLY);
-                quadPoints[offset + 3] = new Point(segment.Rectangle.URX, segment.Rectangle.LLY);
-                offset += 4;
-            }
-
-            var llx = quadPoints.Min(pt => pt.X);
-            var lly = quadPoints.Min(pt => pt.Y);
-            var urx = quadPoints.Max(pt => pt.X);
-            var ury = quadPoints.Max(pt => pt.Y);
-            return new HighlightAnnotation(page, new Rectangle(llx, lly, urx, ury))
-            {
-                Title = "Usuário Aspose",
-                Color = color,
-                Modified = DateTime.Now,
-                QuadPoints = quadPoints
-            };
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+    {
+        var page = document.Pages[1];
+        var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
+        tfa.Visit(page);
+        foreach (var textFragment in tfa.TextFragments)
+        {
+            var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
+            page.Annotations.Add(highlightAnnotation);
         }
 
-        /// <summary>
-        /// Como obter um Texto Destacado
-        /// </summary>
-        public static void GetHighlightedText()
+        // Save PDF document
+        document.Save(dataDir + "AddHighlightAnnotationAdvanced_out.pdf");
+    }
+}
+
+private static HighlightAnnotation HighLightTextFragment(Page page,
+    Aspose.Pdf.Text.TextFragment textFragment, Aspose.Pdf.Color color)
+{
+    if (textFragment.Segments.Count == 1)
+    {
+        return new Aspose.Pdf.Annotations.HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
         {
-            // Carregar o arquivo PDF
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var highlightAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Highlight)
-                .Cast<HighlightAnnotation>();
-            foreach (var ta in highlightAnnotations)
+            Title = "Aspose User",
+            Color = color,
+            Modified = DateTime.Now,
+            QuadPoints = new Aspose.Pdf.Point[]
             {
-                Console.WriteLine($"[{ta.GetMarkedText()}]");
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.URY),
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.URY),
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.LLY),
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
             }
+        };
+    }
+
+    var offset = 0;
+    var quadPoints = new Aspose.Pdf.Point[textFragment.Segments.Count * 4];
+    foreach (Aspose.Pdf.Text.TextSegment segment in textFragment.Segments)
+    {
+        quadPoints[offset + 0] = new Aspose.Pdf.Point(segment.Rectangle.LLX, segment.Rectangle.URY);
+        quadPoints[offset + 1] = new Aspose.Pdf.Point(segment.Rectangle.URX, segment.Rectangle.URY);
+        quadPoints[offset + 2] = new Aspose.Pdf.Point(segment.Rectangle.LLX, segment.Rectangle.LLY);
+        quadPoints[offset + 3] = new Aspose.Pdf.Point(segment.Rectangle.URX, segment.Rectangle.LLY);
+        offset += 4;
+    }
+
+    var llx = quadPoints.Min(pt => pt.X);
+    var lly = quadPoints.Min(pt => pt.Y);
+    var urx = quadPoints.Max(pt => pt.X);
+    var ury = quadPoints.Max(pt => pt.Y);
+    return new Aspose.Pdf.Annotations.HighlightAnnotation(page, new Aspose.Pdf.Rectangle(llx, lly, urx, ury))
+    {
+        Title = "Aspose User",
+        Color = color,
+        Modified = DateTime.Now,
+        QuadPoints = quadPoints
+    };
+}
+
+private static void GetHighlightedText()
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+    {
+        var highlightAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight)
+            .Cast<Aspose.Pdf.Annotations.HighlightAnnotation>();
+        foreach (var ta in highlightAnnotations)
+        {
+            Console.WriteLine($"[{ta.GetMarkedText()}]");
         }
+    }
+}
 ```
+
 ## Obter Anotação de Marcação de Texto
 
-Por favor, tente usar o seguinte trecho de código para obter Anotação de Marcação de Texto de um documento PDF.
+Por favor, tente usar o seguinte trecho de código para Obter Anotação de Marcação de Texto do documento PDF.
 
 ```csharp
-    public static void GetTextMarkupAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetTextMarkupAnnotation()
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
     {
-        // Carregar o arquivo PDF
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
         var textMarkupAnnotations = document.Pages[1].Annotations
-            .Where(a => a.AnnotationType == AnnotationType.Highlight
-            || a.AnnotationType == AnnotationType.Squiggly)
-            .Cast<TextMarkupAnnotation>();
-            foreach (var ta in textMarkupAnnotations)
-            {
-                Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
-            }
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight
+            || a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Squiggly)
+            .Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
+        foreach (var ta in textMarkupAnnotations)
+        {
+            Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
+        }
     }
+}
 ```
 
 ## Excluir Anotação de Marcação de Texto
 
-O seguinte trecho de código mostra como Excluir Anotação de Marcação de Texto de um arquivo PDF.
+O seguinte trecho de código mostra como Excluir Anotação de Marcação de Texto do arquivo PDF.
 
 ```csharp
-    public static void DeleteTextMarkupAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteTextMarkupAnnotation()
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
     {
-        // Carregar o arquivo PDF
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
         var textMarkupAnnotations = document.Pages[1].Annotations
-            .Where(a => a.AnnotationType == AnnotationType.Highlight
-            ||a.AnnotationType == AnnotationType.Squiggly)
-            .Cast<TextMarkupAnnotation>();
-            foreach (var ta in textMarkupAnnotations)
-            {
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight
+            ||a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Squiggly)
+            .Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
+        foreach (var ta in textMarkupAnnotations)
+        {
             document.Pages[1].Annotations.Delete(ta);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_del.pdf"));
+        }
+        
+        // Save PDF document
+        document.Save(dataDir + "DeleteTextMarkupAnnotation_out.pdf");
     }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Biblioteca Aspose.PDF para .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -308,21 +315,21 @@ O seguinte trecho de código mostra como Excluir Anotação de Marcação de Tex
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -333,7 +340,7 @@ O seguinte trecho de código mostra como Excluir Anotação de Marcação de Tex
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -345,5 +352,3 @@ O seguinte trecho de código mostra como Excluir Anotação de Marcação de Tex
     }
 }
 </script>
-```
-

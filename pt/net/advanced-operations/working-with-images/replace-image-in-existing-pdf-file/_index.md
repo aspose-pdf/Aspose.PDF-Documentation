@@ -2,31 +2,34 @@
 title: Substituir Imagem em Arquivo PDF Existente
 linktitle: Substituir Imagem
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /pt/net/replace-image-in-existing-pdf-file/
-description: Esta seção descreve sobre substituir imagem em arquivo PDF existente usando biblioteca C#.
+description: Esta seção descreve como substituir uma imagem em um arquivo PDF existente usando a biblioteca C#.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Substituir Imagem em Arquivo PDF Existente",
-    "alternativeHeadline": "Como substituir imagem em PDF",
+    "headline": "Replace Image in Existing PDF File",
+    "alternativeHeadline": "Effortlessly Swap Images in Existing PDF Files",
+    "abstract": "O novo recurso Substituir Imagem em Arquivo PDF Existente permite que os desenvolvedores atualizem imagens dentro de documentos PDF usando a biblioteca C# Aspose.PDF. Essa funcionalidade permite substituições de imagem precisas, aumentando a flexibilidade e a eficiência dos processos de edição de PDF em aplicações .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, dotnet, substituir imagem em pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Replace Image, Existing PDF File, C# Library, Aspose.PDF, PDF Manipulation, Images Collection, Replace Method, Save Method, Document Object, PDF Document Generation",
+    "wordcount": "174",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -43,21 +46,21 @@ lastmod: "2022-02-17"
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -68,28 +71,42 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/replace-image-in-existing-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Esta seção descreve sobre substituir imagem em arquivo PDF existente usando biblioteca C#."
+    "dateModified": "2024-11-26",
+    "description": "Esta seção descreve como substituir uma imagem em um arquivo PDF existente usando a biblioteca C#."
 }
 </script>
-O trecho de código a seguir também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-O método [Replace](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) da coleção Images permite substituir uma imagem em um arquivo PDF existente.
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-A coleção Images pode ser encontrada na coleção de Recursos de uma página. Para substituir uma imagem:
+O método [Substituir](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) da coleção Imagens permite que você substitua uma imagem em um arquivo PDF existente.
 
-1. Abra o arquivo PDF usando o objeto Document.
-2. Substitua uma imagem específica, salve o arquivo PDF atualizado usando o método Save do objeto Document.
+A coleção de Imagens pode ser encontrada na coleção de Recursos de uma página. Para substituir uma imagem:
+
+1. Abra o arquivo PDF usando o objeto Documento.
+2. Substitua uma imagem específica, salve o arquivo PDF atualizado usando o método Salvar do objeto Documento.
 
 O seguinte trecho de código mostra como substituir uma imagem em um arquivo PDF.
 
 ```csharp
-// Abrir documento
-Document pdfDocument = new Document("input.pdf");
-// Substituir uma imagem específica
-pdfDocument.Pages[1].Resources.Images.Replace(1, new FileStream("lovely.jpg", FileMode.Open));
-// Salvar arquivo PDF atualizado
-pdfDocument.Save("output.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceImageInPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceImage.pdf"))
+    {
+        // Replace a particular image in the document
+        using (var imageStream = new FileStream(dataDir + "NewImage.jpg", FileMode.Open))
+        {
+            document.Pages[1].Resources.Images.Replace(1, imageStream);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceImage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -155,5 +172,3 @@ pdfDocument.Save("output.pdf");
     }
 }
 </script>
-
-

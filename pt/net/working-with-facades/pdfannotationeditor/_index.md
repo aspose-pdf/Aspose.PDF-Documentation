@@ -1,6 +1,8 @@
 ---
-title: Classe PdfAnnotationEditor
+title: PdfAnnotationEditor Class
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /pt/net/pdfannotationeditor-class/
 description: Esta seção explica como trabalhar com Aspose.PDF Facades usando a Classe PdfAnnotationEditor.
@@ -10,9 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
-- [Excluir Todas as Anotações por Tipo Especificado (facades)](/pdf/pt/net/delete-annotations/)
-- [Importar e Exportar Anotações para o formato XFDF usando com.aspose.pdf.facades](/pdf/pt/net/import-export-annotations/)
-- [Extrair Anotação](/pdf/pt/net/extract-annotation/)
-- [Achatar Anotação](/pdf/pt/net/flatten-annotation/)
-- [Modificar Anotações](/pdf/pt/net/modify-annotations/)
+- [Excluir Todas as Anotações por Tipo Especificado (facades)](/pdf/net/delete-annotations/)
+- [Importar e Exportar Anotações para o formato XFDF usando com.aspose.pdf.facades](/pdf/net/import-export-annotations/)
+- [Extrair Anotação](/pdf/net/extract-annotation/)
+- [Achatar Anotação](/pdf/net/flatten-annotation/)
+- [Modificar Anotações](/pdf/net/modify-annotations/)

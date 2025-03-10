@@ -1,10 +1,12 @@
 ---
-title: Extract AcroForm - Extrair Dados de Formulário de PDF em C#
-linktitle: Extract AcroForm
+title: Extrair AcroForm - Extrair Dados de Formulário de PDF em C#
+linktitle: Extrair AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /pt/net/extract-form/
-description: Extraia formulário do seu documento PDF com a biblioteca Aspose.PDF para .NET. Obtenha valor de um campo individual do arquivo PDF.
+description: Extraia o formulário do seu documento PDF com a biblioteca Aspose.PDF for .NET. Obtenha o valor de um campo individual do arquivo PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Extract AcroForm",
-    "alternativeHeadline": "Como extrair AcroForm de PDF",
+    "headline": "Extract AcroForm - Extract Form Data from PDF in C#",
+    "alternativeHeadline": "Effortlessly Extract PDF Form Data Using C#",
+    "abstract": "O novo recurso Extrair AcroForm na biblioteca Aspose.PDF for .NET permite que os desenvolvedores extraiam facilmente dados de formulários de documentos PDF. Essa funcionalidade permite que os usuários recuperem valores de campos individuais ou de todos os campos dentro de um PDF, aprimorando as capacidades de gerenciamento e manipulação de dados em aplicações C#",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, extract acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "extract form data, PDF in C#, Aspose.PDF for .NET, AcroForm extraction, get field values PDF, PDF form fields, individual field value, get fields in region, manipulate PDF forms, C# PDF library",
+    "wordcount": "673",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,101 +74,125 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-form/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Extraia formulário do seu documento PDF com a biblioteca Aspose.PDF para .NET. Obtenha valor de um campo individual do arquivo PDF."
+    "dateModified": "2024-11-25",
+    "description": "Extraia o formulário do seu documento PDF com a biblioteca Aspose.PDF for .NET. Obtenha o valor de um campo individual do arquivo PDF."
 }
 </script>
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
+
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ## Extrair dados do formulário
 
-### Obter Valores de todos os Campos do Documento PDF
+### Obter Valores de Todos os Campos do Documento PDF
 
-Para obter valores de todos os campos em um documento PDF, você precisa navegar por todos os campos do formulário e então obter o valor usando a propriedade Value. Obtenha cada campo da coleção Form, no tipo de campo base chamado Field e acesse sua propriedade Value.
+Para obter valores de todos os campos em um documento PDF, você precisa navegar por todos os campos do formulário e, em seguida, obter o valor usando a propriedade Value. Obtenha cada campo da coleção Form, no tipo de campo base chamado Field e acesse sua propriedade Value.
 
 Os seguintes trechos de código C# mostram como obter os valores de todos os campos de um documento PDF.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "GetValuesFromAllFields.pdf");
-
-// Obter valores de todos os campos
-foreach (Field formField in pdfDocument.Form)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetValuesFromFields()
 {
-    Console.WriteLine("Nome do Campo : {0} ", formField.PartialName);
-    Console.WriteLine("Valor : {0} ", formField.Value);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf"))
+    {
+        // Get values from all fields
+        foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+        {
+            Console.WriteLine("Field Name : {0} ", formField.PartialName);
+            Console.WriteLine("Value : {0} ", formField.Value);
+        }
+    }
 }
 ```
-### Obter Valor de um Campo Individual de Documento PDF
 
-A propriedade Value do campo do formulário permite que você obtenha o valor de um campo específico. Para obter o valor, obtenha o campo do formulário da coleção Form do objeto Document. Este exemplo em C# seleciona um [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) e recupera seu valor usando a propriedade Value.
+### Obter Valor de um Campo Individual do Documento PDF
+
+A propriedade Value do campo de formulário permite que você obtenha o valor de um campo específico. Para obter o valor, obtenha o campo de formulário da coleção Form do objeto Document. Este exemplo em C# seleciona um [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) e recupera seu valor usando a propriedade Value.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetValueFromField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
-
-// Obter um campo
-TextBoxField textBoxField = pdfDocument.Form["textbox1"] como TextBoxField;
-
-// Obter valor do campo
-Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
-Console.WriteLine("Value : {0} ", textBoxField.Value);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+    {
+        // Get a field
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+        {
+            // Get field value
+            Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
+            Console.WriteLine("Value : {0} ", textBoxField.Value);
+        }
+    }
+}
 ```
 
 Para obter a URL do botão de envio, use as seguintes linhas de código.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetSubmitFormActionUrl()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
-SubmitFormAction act = pdfDocument.Form[1].OnActivated como SubmitFormAction;
-if(act != null)
-Console.WriteLine(act.Url.Name);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+    {
+        // Get the SubmitFormAction from the form field
+        if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
+        {
+            // Output the URL of the SubmitFormAction
+            Console.WriteLine(act.Url.Name);
+        }
+    }
+}
 ```
+
 ### Obter Campos de Formulário de uma Região Específica do Arquivo PDF
 
-Às vezes, você pode saber onde em um documento um campo de formulário está, mas não ter o nome dele. Por exemplo, se tudo o que você tem é um esquemático de um formulário impresso. Com Aspose.PDF para .NET, isso não é um problema. Você pode descobrir quais campos estão em uma região específica de um arquivo PDF. Para obter campos de formulário de uma região específica de um arquivo PDF:
+Às vezes, você pode saber onde em um documento um campo de formulário está, mas não ter seu nome. Por exemplo, se tudo o que você tem é um esquema de um formulário impresso. Com a biblioteca Aspose.PDF for .NET, isso não é um problema. Você pode descobrir quais campos estão em uma determinada região de um arquivo PDF. Para obter campos de formulário de uma região específica de um arquivo PDF:
 
 1. Abra o arquivo PDF usando o objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Obtenha o formulário da coleção Forms do documento.
-1. Especifique a região retangular e passe-a ao método GetFieldsInRect do objeto Form. Uma coleção Fields é retornada.
+1. Especifique a região retangular e passe-a para o método GetFieldsInRect do objeto Form. Uma coleção de Fields é retornada.
 1. Use isso para manipular os campos.
 
 O seguinte trecho de código C# mostra como obter campos de formulário em uma região retangular específica de um arquivo PDF.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Abrir arquivo pdf
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf");
-
-// Criar objeto retângulo para obter campos nessa área
-Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
-
-// Obter o formulário PDF
-Aspose.Pdf.Forms.Form form = doc.Form;
-
-// Obter campos na área retangular
-Aspose.Pdf.Forms.Field[] fields = form.GetFieldsInRect(rectangle);
-
-// Exibir nomes e valores dos campos
-foreach (Field field in fields)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetFieldsFromRegion()
 {
-    // Exibir propriedades de colocação de imagem para todas as colocações
-    Console.Out.WriteLine("Nome do Campo: " + field.FullName + "-" + "Valor do Campo: " + field.Value);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf"))
+    {
+        // Create rectangle object to get fields in that area
+        var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
+
+        // Get the PDF form
+        var form = document.Form;
+
+        // Get fields in the rectangular area
+        var fields = form.GetFieldsInRect(rectangle);
+
+        // Display Field names and values
+        foreach (var field in fields)
+        {
+            // Display image placement properties for all placements
+            Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value);
+        }
+    }
 }
 ```
 
@@ -173,7 +200,7 @@ foreach (Field field in fields)
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Biblioteca Aspose.PDF para .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -195,21 +222,21 @@ foreach (Field field in fields)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -220,7 +247,7 @@ foreach (Field field in fields)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -232,5 +259,3 @@ foreach (Field field in fields)
     }
 }
 </script>
-```
-

@@ -1,15 +1,82 @@
 ---
-title: Usando vinculação tardia em CPP
+title: Usando ligação tardia em CPP
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /pt/net/using-late-binding-in-cpp/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Using late binding in CPP",
+    "alternativeHeadline": "Effortless PDF Text Extraction with Late Binding in C",
+    "abstract": "O novo recurso permite que os desenvolvedores extraiam texto de documentos PDF usando ligação tardia em C através da Interop COM com Aspose.PDF. Essa funcionalidade simplifica o processo de recuperação de texto, facilitando a integração perfeita em aplicações C existentes sem a necessidade de definições de tipo rígidas.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "473",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/using-late-binding-in-cpp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/using-late-binding-in-cpp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados."
+}
+</script>
 
 ## Pré-requisitos
 
 {{% alert color="primary" %}}
 
-Por favor, registre o Aspose.PDF para .NET com COM Interop, verifique o artigo chamado [Use Aspose.pdf for .NET via COM Interop](/pdf/pt/net/use-aspose-pdf-for-net-via-com-interop/).
+Por favor, registre Aspose.PDF for .NET com Interop COM, verifique o artigo intitulado [Use Aspose.pdf para .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 
@@ -17,53 +84,52 @@ Por favor, registre o Aspose.PDF para .NET com COM Interop, verifique o artigo c
 
 {{% alert color="primary" %}}
 
-Este é um simples exemplo de código C++ para extrair texto de PDF por meio de COM Interop usando vinculação tardia. Para detalhes, por favor, veja [este](http://www.drdobbs.com/writing-com-clients-with-late-and-early/184403558) post.
+Este é um exemplo simples de código C++ para extrair texto de PDF por meio da Interop COM usando ligação tardia. Para detalhes, consulte [este](http://www.drdobbs.com/writing-com-clients-with-late-and-early/184403558) post.
 
 {{% /alert %}}
 
 ```cpp
-
-#include "stdafx.h"
+#include "pch.h"
 #include "comdef.h"
 
 using namespace System;
 
-String ^lateBinding(String ^file)
+String^ lateBinding(String^ file)
 {
     String^ text;
     DISPID dispid;
-    DISPPARAMS dp = { NULL, NULL, 0, 0};
+    DISPPARAMS dp = { NULL, NULL, 0, 0 };
     VARIANTARG vargs[1];
     VARIANT arg, result;
     WCHAR str[255];
     CLSID pclsid;
 
-    // criar ComHelper
+    // Create ComHelper
     IDispatch* comHelperPtr;
 
-    wcscpy_s(str, L"Aspose.PDF.ComHelper");
+    wcscpy_s(str, L"Aspose.Pdf.ComHelper");
     CLSIDFromProgID(str, &pclsid);
 
-    HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&comHelperPtr);
+    HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void**)&comHelperPtr);
     if (FAILED(hr))
     {
-        Console::WriteLine(L"Erro ocorrido");
+        Console::WriteLine(L"Error occured");
     }
     else
     {
-        // definir licença
+        // Set license
         IDispatch* licPtr;
-        wcscpy_s(str, L"Aspose.PDF.License");
+        wcscpy_s(str, L"Aspose.Pdf.License");
         CLSIDFromProgID(str, &pclsid);
 
-        HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&licPtr);
+        HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void**)&licPtr);
 
-        OLECHAR* setLicense =  L"SetLicense";
+        OLECHAR* setLicense = L"SetLicense";
 
         hr = licPtr->GetIDsOfNames(IID_NULL, &setLicense, 1, GetUserDefaultLCID(), &dispid);
         arg.vt = VT_BSTR;
 
-        BSTR lic = SysAllocString(L"C:\\Temp\\Aspose.PDF.lic");
+        BSTR lic = SysAllocString(L"C:\\Temp\\Aspose.Pdf.lic");
 
         arg.bstrVal = lic;
 
@@ -77,11 +143,11 @@ String ^lateBinding(String ^file)
 
         SysFreeString(lic);
 
-        licPtr.Release();
+        licPtr->Release();
 
-        // obter Documento
+        // Get Document
 
-        OLECHAR* openFile =  L"OpenFile";
+        OLECHAR* openFile = L"OpenFile";
 
         hr = comHelperPtr->GetIDsOfNames(IID_NULL, &openFile, 1, GetUserDefaultLCID(), &dispid);
 
@@ -99,13 +165,11 @@ String ^lateBinding(String ^file)
 
         IDispatch* docPtr = result.pdispVal;
 
-        comHelperPtr.Release();
+        comHelperPtr->Release();
 
-        //------------------------
+        // Get Pages for the Document
 
-        // obter Páginas do Documento
-
-        OLECHAR* pages =  L"Pages";
+        OLECHAR* pages = L"Pages";
 
         hr = docPtr->GetIDsOfNames(IID_NULL, &pages, 1, GetUserDefaultLCID(), &dispid);
 
@@ -115,9 +179,7 @@ String ^lateBinding(String ^file)
 
         IDispatch* pagesPtr = result.pdispVal;
 
-        //------------------------
-
-        // criar Absorvedor
+        // Create Absorber
 
         IDispatch* absorberPtr;
 
@@ -125,11 +187,9 @@ String ^lateBinding(String ^file)
 
         CLSIDFromProgID(str, &pclsid);
 
-        hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&absorberPtr);
+        hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void**)&absorberPtr);
 
-        //------------------------
-
-        // buscar texto
+        // Browse text
 
         arg.vt = VT_DISPATCH;
 
@@ -147,9 +207,7 @@ String ^lateBinding(String ^file)
 
         hr = pagesPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_METHOD, &dp, &result, NULL, NULL);
 
-        //------------------------
-
-        // recuperar texto
+        // Retrieve text
 
         OLECHAR* _text = L"Text";
 
@@ -159,39 +217,33 @@ String ^lateBinding(String ^file)
 
         hr = absorberPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_PROPERTYGET, &dp, &result, 0, 0);
 
-        //------------------------
-
         text = gcnew String(result.bstrVal);
 
-        docPtr.Release();
+        docPtr->Release();
 
-        pagesPtr.Release();
+        pagesPtr->Release();
 
-        absorberPtr.Release();
+        absorberPtr->Release();
 
     }
 
     return text;
-
 }
 
-int main(array<System::String ^> ^args)
+int main(array<System::String^>^ args)
 {
     if (args->Length != 1)
     {
-        Console::WriteLine("Parâmetros faltando\nUso:testCOM <arquivo pdf>");
+        Console::WriteLine("Missing parameters\nUsage:testCOM.exe <pdf file>");
         return 0;
     }
 
     CoInitialize(NULL);
-    String ^text = lateBinding(args[0]);
+    String^ text = lateBinding(args[0]);
     CoUninitialize();
-    Console::WriteLine("Texto extraído:");
-    Console::WriteLine("---\n{0}", text != nullptr ? text->Trim() : "<vazio>");
+    Console::WriteLine("Extracted text:");
+    Console::WriteLine("---\n{0}", text != nullptr ? text->Trim() : "<empty>");
     Console::WriteLine("---");
     return 0;
-
 }
-
 ```
-

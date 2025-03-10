@@ -1,8 +1,11 @@
 ---
 title: Trabalhando com Títulos em PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 url: /pt/net/working-with-headings/
-description: Crie numeração em título do seu documento PDF com C#. O Aspose.PDF para .NET oferece diferentes tipos de estilos de numeração.
+weight: 70
+description: Crie numeração nos títulos do seu documento PDF com C#. Aspose.PDF for .NET oferece diferentes tipos de estilos de numeração.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -12,22 +15,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabalhando com Títulos em PDF",
-    "alternativeHeadline": "Crie Títulos em PDF",
+    "headline": "Working with Headings in PDF",
+    "alternativeHeadline": "Enhance PDF Headings with Custom Numbering Styles",
+    "abstract": "Aprimore seus documentos PDF com numeração de títulos personalizável usando Aspose.PDF for .NET. Este novo recurso permite que você aplique vários estilos de numeração pré-definidos, como números romanos e listagens alfabéticas, para organizar seus títulos de forma eficaz, melhorando a legibilidade e a estrutura do documento. Agilize seu processo de criação de PDF integrando essa funcionalidade versátil em suas aplicações C#",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, títulos em pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "PDF, C#, headings in PDF, numbering style, Aspose.PDF for .NET, pre-defined numbering styles, NumberingStyle enumeration, document generation, Heading class, pdf document manipulation",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -44,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -69,97 +73,103 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-headings/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Crie numeração em título do seu documento PDF com C#. O Aspose.PDF para .NET oferece diferentes tipos de estilos de numeração."
+    "dateModified": "2024-11-25",
+    "description": "Crie numeração nos títulos do seu documento PDF com C#. Aspose.PDF for .NET oferece diferentes tipos de estilos de numeração."
 }
 </script>
-## Aplicar Estilo de Numeração em Título
 
-Os títulos são partes importantes de qualquer documento. Os escritores sempre tentam tornar os títulos mais proeminentes e significativos para seus leitores. Se houver mais de um título em um documento, um escritor tem várias opções para organizar esses títulos. Uma das abordagens mais comuns para organizar títulos é escrevê-los em Estilo de Numeração.
+## Aplicar Estilo de Numeração em Títulos
 
-[Aspose.PDF for .NET](/pdf/pt/net/) oferece muitos estilos de numeração pré-definidos. Esses estilos de numeração pré-definidos são armazenados em uma enumeração, NumberingStyle. Os valores pré-definidos da enumeração NumberingStyle e suas descrições são fornecidos abaixo:
+Os títulos são partes importantes de qualquer documento. Os escritores sempre tentam tornar os títulos mais proeminentes e significativos para seus leitores. Se houver mais de um título em um documento, um escritor tem várias opções para organizar esses títulos. Uma das abordagens mais comuns para organizar títulos é escrever títulos em Estilo de Numeração.
 
-|**Tipos de Título**|**Descrição**|
+[Aspose.PDF for .NET](/pdf/net/) oferece muitos estilos de numeração pré-definidos. Esses estilos de numeração pré-definidos são armazenados em uma enumeração, NumberingStyle. Os valores pré-definidos da enumeração NumberingStyle e suas descrições são dados abaixo:
+
+|**Tipos de Títulos**|**Descrição**|
 | :- | :- |
-|NumeralsArabic|Tipo árabe, por exemplo, 1, 1.1,...|
-|NumeralsRomanUppercase|Tipo romano maiúsculo, por exemplo, I, I.II, ...|
-|NumeralsRomanLowercase|Tipo romano minúsculo, por exemplo, i, i.ii, ...|
-|LettersUppercase|Tipo inglês maiúsculo, por exemplo, A, A.B, ...|
-|LettersLowercase|Tipo inglês minúsculo, por exemplo, a, a.b, ...|
-A propriedade **Style** da classe **Aspose.PDF.Heading** é usada para definir os estilos de numeração dos títulos.
-A propriedade **Style** da classe **Aspose.PDF.Heading** é usada para definir os estilos de numeração dos cabeçalhos.
+|NumeraisÁrabes|Tipo árabe, por exemplo, 1,1.1,...|
+|NumeraisRomanosMaiúsculos|Tipo romano maiúsculo, por exemplo, I,I.II, ...|
+|NumeraisRomanosMinúsculos|Tipo romano minúsculo, por exemplo, i,i.ii, ...|
+|LetrasMaiúsculas|Tipo inglês maiúsculo, por exemplo, A,A.B, ...|
+|LetrasMinúsculas|Tipo inglês minúsculo, por exemplo, a,a.b, ...|
+A propriedade **Style** da classe **Aspose.Pdf.Heading** é usada para definir os estilos de numeração dos títulos.
 
-|**Figura: Estilos de numeração predefinidos**|
+|**Figura: Estilos de numeração pré-definidos**|
 | :- |
-O código fonte, para obter a saída mostrada na figura acima, é fornecido abaixo no exemplo.
+O código fonte, para obter a saída mostrada na figura acima, é dado abaixo no exemplo.
 
-O próximo trecho de código também funciona com uma nova interface gráfica [Aspose.Drawing](/pdf/pt/net/drawing/).
+O próximo trecho de código também funciona com a biblioteca [Aspose.Drawing](/pdf/net/drawing/).
 
 ```csharp
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Headings();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ApplyNumberStyleToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-Document pdfDoc = new Document();
-pdfDoc.PageInfo.Width = 612.0;
-pdfDoc.PageInfo.Height = 792.0;
-pdfDoc.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-pdfDoc.PageInfo.Margin.Left = 72;
-pdfDoc.PageInfo.Margin.Right = 72;
-pdfDoc.PageInfo.Margin.Top = 72;
-pdfDoc.PageInfo.Margin.Bottom = 72;
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.PageInfo.Width = 612.0;
+        document.PageInfo.Height = 792.0;
+        document.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        document.PageInfo.Margin.Left = 72;
+        document.PageInfo.Margin.Right = 72;
+        document.PageInfo.Margin.Top = 72;
+        document.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.Page pdfPage = pdfDoc.Pages.Add();
-pdfPage.PageInfo.Width = 612.0;
-pdfPage.PageInfo.Height = 792.0;
-pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-pdfPage.PageInfo.Margin.Left = 72;
-pdfPage.PageInfo.Margin.Right = 72;
-pdfPage.PageInfo.Margin.Top = 72;
-pdfPage.PageInfo.Margin.Bottom = 72;
+        // Add page
+        var pdfPage = document.Pages.Add();
+        pdfPage.PageInfo.Width = 612.0;
+        pdfPage.PageInfo.Height = 792.0;
+        pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        pdfPage.PageInfo.Margin.Left = 72;
+        pdfPage.PageInfo.Margin.Right = 72;
+        pdfPage.PageInfo.Margin.Top = 72;
+        pdfPage.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox();
-floatBox.Margin = pdfPage.PageInfo.Margin;
+        // Create a floating box with the same margin as the page
+        var floatBox = new Aspose.Pdf.FloatingBox();
+        floatBox.Margin = pdfPage.PageInfo.Margin;
 
-pdfPage.Paragraphs.Add(floatBox);
+        // Add the floating box to the page
+        pdfPage.Paragraphs.Add(floatBox);
 
-TextFragment textFragment = new TextFragment();
-TextSegment segment = new TextSegment();
+        // Add headings with numbering styles
+        var heading = new Aspose.Pdf.Heading(1);
+        heading.IsInList = true;
+        heading.StartNumber = 1;
+        heading.Text = "List 1";
+        heading.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading);
 
-Aspose.Pdf.Heading heading = new Aspose.Pdf.Heading(1);
-heading.IsInList = true;
-heading.StartNumber = 1;
-heading.Text = "Lista 1";
-heading.Style = NumberingStyle.NumeralsRomanLowercase;
-heading.IsAutoSequence = true;
+        var heading2 = new Aspose.Pdf.Heading(1);
+        heading2.IsInList = true;
+        heading2.StartNumber = 13;
+        heading2.Text = "List 2";
+        heading2.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading2.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading2);
 
-floatBox.Paragraphs.Add(heading);
+        var heading3 = new Aspose.Pdf.Heading(2);
+        heading3.IsInList = true;
+        heading3.StartNumber = 1;
+        heading3.Text = "the value, as of the effective date of the plan, of property to be distributed under the plan on account of each allowed";
+        heading3.Style = Aspose.Pdf.NumberingStyle.LettersLowercase;
+        heading3.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading3);
 
-Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(1);
-heading2.IsInList = true;
-heading2.StartNumber = 13;
-heading2.Text = "Lista 2";
-heading2.Style = NumberingStyle.NumeralsRomanLowercase;
-heading2.IsAutoSequence = true;
-
-floatBox.Paragraphs.Add(heading2);
-
-Aspose.Pdf.Heading heading3 = new Aspose.Pdf.Heading(2);
-heading3.IsInList = true;
-heading3.StartNumber = 1;
-heading3.Text = "o valor, na data efetiva do plano, de propriedade a ser distribuída sob o plano em conta de cada permissão";
-heading3.Style = NumberingStyle.LettersLowercase;
-heading3.IsAutoSequence = true;
-
-floatBox.Paragraphs.Add(heading3);
-dataDir = dataDir + "ApplyNumberStyle_out.pdf";
-pdfDoc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ApplyNumberStyle_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para .NET Library",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -181,21 +191,21 @@ pdfDoc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -206,7 +216,7 @@ pdfDoc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -218,5 +228,3 @@ pdfDoc.Save(dataDir);
     }
 }
 </script>
-```
-
