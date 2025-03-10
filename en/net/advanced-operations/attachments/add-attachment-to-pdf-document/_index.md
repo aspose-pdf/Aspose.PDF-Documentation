@@ -2,6 +2,8 @@
 title: Adding Attachment to a PDF document
 linktitle: Adding Attachment to a PDF document
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-attachment-to-pdf-document/
 description: This page describes how to add an attachment to a PDF file with Aspose.PDF for . NET library

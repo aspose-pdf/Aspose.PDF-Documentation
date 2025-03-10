@@ -1,6 +1,8 @@
 ---
 title: Make Booklet of PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /net/make-booklet-of-pdf/
 description: This section explains how to make booklet of PDF with Aspose.PDF Facades using PdfFileEditor class.

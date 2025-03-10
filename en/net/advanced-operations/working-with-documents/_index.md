@@ -2,6 +2,8 @@
 title: Working with PDF Documents using C#
 linktitle: Working with Documents
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/working-with-documents/
 description: This article describes to you what manipulations can be done with the document with Aspose.PDF library.

@@ -1,6 +1,8 @@
 ---
 title: Adding Images and Text 
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/adding-images-and-text-using-pdffilemend-class/
 description: This section explains how to Add Images and Text using PdfFileMend class.

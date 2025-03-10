@@ -1,6 +1,8 @@
 ---
 title: Extract Attachments from PDF File
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/extract-attachments/
 description: Discover how to extract and manage attachments in PDF documents in .NET using Aspose.PDF for better document handling.

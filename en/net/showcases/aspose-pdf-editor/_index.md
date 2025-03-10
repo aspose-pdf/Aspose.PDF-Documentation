@@ -2,6 +2,8 @@
 title: Aspose.PDF Editor
 linktitle: Aspose.PDF Editor
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/aspose-pdf-editor/
 description: Aspose.PDF for .NET demonstrate HTML5 PDF Editor is an open source web-based PDF editor.

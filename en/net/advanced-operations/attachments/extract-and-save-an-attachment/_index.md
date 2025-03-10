@@ -2,6 +2,8 @@
 title: Extract and Save an Attachment
 linktitle: Extract and Save an Attachment
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/extract-and-save-an-attachment/
 description: Aspose.PDF for .NET allows you to get all attachments from a PDF document. Also, you can get an individual attachment from your document.

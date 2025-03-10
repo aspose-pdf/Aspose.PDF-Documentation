@@ -2,6 +2,8 @@
 title: How to Create PDF using C#
 linktitle: Create PDF Document
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/create-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for .NET.

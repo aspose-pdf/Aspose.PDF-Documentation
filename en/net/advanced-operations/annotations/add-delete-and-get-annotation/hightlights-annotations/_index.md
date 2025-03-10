@@ -2,6 +2,8 @@
 title: PDF Highlight Annotation using C#
 linktitle: Highlight Annotation
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/highlights-annotation/
 description: Learn how to add highlights annotation to PDF documents in .NET using Aspose.PDF for text emphasis and review.

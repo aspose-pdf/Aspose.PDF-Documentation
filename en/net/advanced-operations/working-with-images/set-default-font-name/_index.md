@@ -2,6 +2,8 @@
 title: Set Default Font Name
 linktitle: Set Default Font Name
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /net/set-default-font-name/
 description: This section describes how to set the default font name during the conversion process from PDF to image.
