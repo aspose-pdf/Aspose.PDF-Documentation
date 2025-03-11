@@ -1,131 +1,228 @@
 ---
-title:  C#を使用してAcroFormからデータを抽出する
-linktitle:  AcroFormからデータを抽出する
+title: AcroFormからC#を使用してデータを抽出
+linktitle: AcroFormからデータを抽出
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ja/net/extract-data-from-acroform/
-description: Aspose.PDFを使用すると、PDFファイルからフォームフィールドデータを簡単に抽出できます。AcroFormsからデータを抽出し、JSON、XML、またはFDF形式で保存する方法を学びましょう。
+description: Aspose.PDFは、PDFファイルからフォームフィールドデータを簡単に抽出できます。AcroFormsからデータを抽出し、JSON、XML、またはFDF形式で保存する方法を学びましょう。
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Extract Data from AcroForm using C#",
+    "alternativeHeadline": "Effortlessly Extract Acrobat Form Data with C#",
+    "abstract": "PDF文書のAcroFormsからフォームフィールドデータを抽出するための新しい機能を発見してください。JSON、XML、FDF、およびXFDF形式にデータをエクスポートする機能により、ユーザーはアプリケーションへのシームレスな統合のための簡潔なコード例を活用しながら、フォームデータを効率的に管理できます。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "826",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/extract-data-from-acroform/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/extract-data-from-acroform/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
+}
+</script>
 
-## PDFドキュメントからフォームフィールドを抽出する
+## PDF文書からフォームフィールドを抽出
 
-Aspose.PDF for .NETは、フォームフィールドを生成したり、フォームフィールドに入力したりすることを可能にするだけでなく、PDFファイルからフォームフィールドデータやフォームフィールドに関する情報を抽出するのも簡単です。
+Aspose.PDF for .NETは、フォームフィールドを生成し、フォームフィールドを入力するだけでなく、PDFファイルからフォームフィールドデータやフォームフィールドに関する情報を簡単に抽出できます。
 
-以下のサンプルコードでは、PDF内のすべてのAcroFormおよびフォームフィールド値についての情報を抽出するために、PDFの各ページを反復処理する方法を示しています。このサンプルコードは、事前にフォームフィールドの名前を知らないという前提で作成されています。
+以下のサンプルコードでは、PDF内のすべてのAcroFormに関する情報とフォームフィールドの値を抽出するために、PDFの各ページを反復処理する方法を示します。このサンプルコードは、事前にフォームフィールドの名前を知らないことを前提としています。
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
-public static void ExtractFormFields()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractFormFields()
 {
-    var document = new Aspose.Pdf.Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
-    // Get values from all fields
-    foreach (Field formField in document.Form)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf"))
     {
-        Console.WriteLine("Field Name : {0} ", formField.PartialName);
-        Console.WriteLine("Value : {0} ", formField.Value);
+        // Get values from all fields
+        foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+        {
+            Console.WriteLine("Field Name : {0} ", formField.PartialName);
+            Console.WriteLine("Value : {0} ", formField.Value);
+        }
     }
 }
 ```
-フォームフィールドの名前がわかっている場合は、Documents.Form コレクションのインデクサを使用して、このデータをすばやく取得できます。この記事の最後にその機能を使用する方法のサンプルコードをご覧ください。
 
-## タイトルでフォームフィールドの値を取得する
+抽出したいフォームフィールドの名前がわかっている場合は、Documents.Formコレクションのインデクサを使用して、このデータを迅速に取得できます。その機能の使用方法については、この記事の下部にあるサンプルコードを参照してください。
 
-フォームフィールドの Value プロパティを使用して、特定のフィールドの値を取得できます。値を取得するには、Document オブジェクトの Form コレクションからフォームフィールドを取得します。この例では、TextBoxField を選択して Value プロパティを使用してその値を取得します。
+## タイトルによるフォームフィールド値の取得
 
-## PDFドキュメントからフォームフィールドをJSONに抽出する
+フォームフィールドのValueプロパティを使用すると、特定のフィールドの値を取得できます。値を取得するには、DocumentオブジェクトのFormコレクションからフォームフィールドを取得します。この例では、TextBoxFieldを選択し、その値をValueプロパティを使用して取得します。
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
+## PDF文書からJSONにフォームフィールドを抽出
+
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
-public static void ExtractFormFieldsToJson()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractFormFieldsToJson()
 {
-    var document = new Aspose.Pdf.Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
-    var formData = document.Form.Cast<Field>().Select(f => new { Name = f.PartialName, f.Value });
-    string jsonString = JsonSerializer.Serialize(formData);
-    Console.WriteLine(jsonString);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf"))
+    {
+        // Extract form fields and convert to JSON
+        var formData = document.Form.Cast<Aspose.Pdf.Forms.Field>().Select(f => new { Name = f.PartialName, f.Value });
+        string jsonString = System.Text.Json.JsonSerializer.Serialize(formData);
+
+        // Output the JSON string
+        Console.WriteLine(jsonString);
+    }
 }
 ```
-## PDFファイルからXMLへデータ抽出
 
-Formクラスを使用すると、ExportXmlメソッドを使用してPDFファイルからXMLファイルにデータをエクスポートできます。XMLにデータをエクスポートするには、Formクラスのオブジェクトを作成し、FileStreamオブジェクトを使用してExportXmlメソッドを呼び出す必要があります。最後に、FileStreamオブジェクトを閉じてFormオブジェクトを破棄します。次のコードスニペットは、XMLファイルにデータをエクスポートする方法を示しています。
+## PDFファイルからXMLにデータを抽出
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+Formクラスを使用すると、ExportXmlメソッドを使用してPDFファイルからXMLファイルにデータをエクスポートできます。データをXMLにエクスポートするには、Formクラスのオブジェクトを作成し、FileStreamオブジェクトを使用してExportXmlメソッドを呼び出す必要があります。最後に、FileStreamオブジェクトを閉じてFormオブジェクトを破棄できます。以下のコードスニペットは、データをXMLファイルにエクスポートする方法を示しています。
 
-```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.Pdf-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
-
-// ドキュメントを開く
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-form.BindPdf(dataDir + "input.pdf");
-// xmlファイルを作成。
-System.IO.FileStream xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create);
-// データをエクスポート
-form.ExportXml(xmlOutputStream);
-// ファイルストリームを閉じる
-xmlOutputStream.Close();
-
-// ドキュメントを閉じる
-form.Dispose();
-```
-## PDFファイルからFDFへデータをエクスポートする
-
-Formクラスを使用して、PDFファイルからFDFファイルにデータをエクスポートすることができます。FDFにデータをエクスポートするためには、Formクラスのオブジェクトを作成し、FileStreamオブジェクトを使用してExportFdfメソッドを呼び出す必要があります。最後に、FormクラスのSaveメソッドを使用してPDFファイルを保存します。以下のコードスニペットは、FDFファイルにデータをエクスポートする方法を示しています。
-
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
-// 完全な例やデータファイルについては、https://github.com/aspose-pdf/Aspose.Pdf-for-.NET にアクセスしてください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportFormDataToXml()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// ドキュメントを開く
-form.BindPdf(dataDir + "input.pdf");
+    // Create form
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
 
-// fdfファイルを作成する。
-System.IO.FileStream fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create);
-
-// データをエクスポート
-form.ExportFdf(fdfOutputStream);
-
-// ファイルストリームを閉じる
-fdfOutputStream.Close();
-
-// 更新されたドキュメントを保存
-form.Save(dataDir + "ExportDataToPdf_out.pdf");
+        // Create XML file
+        using (var xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create))
+        {
+            // Export data
+            form.ExportXml(xmlOutputStream);
+        }
+    }
+}
 ```
-## PDFファイルからXFDFへデータをエクスポート
 
-Formクラスを使用して、PDFファイルからXFDFファイルへデータをエクスポートすることができます。XFDFへデータをエクスポートするには、Formクラスのオブジェクトを作成し、FileStreamオブジェクトを使用してExportXfdfメソッドを呼び出す必要があります。最後に、FormクラスのSaveメソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、XFDFファイルへデータをエクスポートする方法を示しています。
+## PDFファイルからFDFにデータをエクスポート
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも動作します。
+Formクラスを使用すると、ExportFdfメソッドを使用してPDFファイルからFDFファイルにデータをエクスポートできます。データをFDFにエクスポートするには、Formクラスのオブジェクトを作成し、FileStreamオブジェクトを使用してExportFdfメソッドを呼び出す必要があります。最後に、FormクラスのSaveメソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、データをFDFファイルにエクスポートする方法を示しています。
+
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.Pdf-for-.NET をご覧ください
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportDataToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// ドキュメントを開く
-form.BindPdf(dataDir + "input.pdf");
+    // Create form
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
 
-// xfdfファイルを作成。
-System.IO.FileStream xfdfOutputStream = new FileStream("student1.xfdf", FileMode.Create);
+        // Create fdf file
+        using (var fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create))
+        {
+            // Export data
+            form.ExportFdf(fdfOutputStream);
+        }
 
-// データをエクスポート
-form.ExportXfdf(xfdfOutputStream);
-
-// ファイルストリームを閉じる
-xfdfOutputStream.Close();
-
-// 更新されたドキュメントを保存
-form.Save(dataDir + "ExportDataToXFDF_out.pdf");
+        // Save PDF document
+        form.Save(dataDir + "ExportDataToPdf_out.pdf");
+    }
+}
 ```
 
+## PDFファイルからXFDFにデータをエクスポート
+
+Formクラスを使用すると、ExportXfdfメソッドを使用してPDFファイルからXFDFファイルにデータをエクスポートできます。データをXFDFにエクスポートするには、Formクラスのオブジェクトを作成し、FileStreamオブジェクトを使用してExportXfdfメソッドを呼び出す必要があります。最後に、FormクラスのSaveメソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、データをXFDFファイルにエクスポートする方法を示しています。
+
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportDataToXFDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+
+    // Create form
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
+
+        // Create xfdf file
+        using (var xfdfOutputStream = new FileStream(dataDir + "student1.xfdf", FileMode.Create))
+        {
+            // Export data
+            form.ExportXfdf(xfdfOutputStream);
+        }
+
+        // Save PDF document
+        form.Save(dataDir + "ExportDataToXFDF_out.pdf");
+    }
+}
+```

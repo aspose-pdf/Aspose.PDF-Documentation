@@ -1,32 +1,35 @@
 ---
-title: Mengganti Gambar dalam File PDF yang Ada
-linktitle: Mengganti Gambar
+title: Ganti Gambar di File PDF yang Ada
+linktitle: Ganti Gambar
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /id/net/replace-image-in-existing-pdf-file/
-description: Bagian ini menjelaskan tentang mengganti gambar dalam file PDF yang ada menggunakan pustaka C#.
+description: Bagian ini menjelaskan tentang mengganti gambar di file PDF yang ada menggunakan pustaka C#.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Mengganti Gambar dalam File PDF yang Ada",
-    "alternativeHeadline": "Cara mengganti Gambar dalam PDF",
+    "headline": "Replace Image in Existing PDF File",
+    "alternativeHeadline": "Effortlessly Swap Images in Existing PDF Files",
+    "abstract": "Fitur baru Ganti Gambar di File PDF yang Ada memungkinkan pengembang untuk memperbarui gambar dalam dokumen PDF dengan lancar menggunakan pustaka C# Aspose.PDF. Fungsionalitas ini memungkinkan penggantian gambar yang tepat, meningkatkan fleksibilitas dan efisiensi proses pengeditan PDF dalam aplikasi .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, dotnet, mengganti gambar dalam pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Replace Image, Existing PDF File, C# Library, Aspose.PDF, PDF Manipulation, Images Collection, Replace Method, Save Method, Document Object, PDF Document Generation",
+    "wordcount": "174",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -43,21 +46,21 @@ lastmod: "2022-02-17"
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -68,29 +71,42 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/replace-image-in-existing-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Bagian ini menjelaskan tentang mengganti gambar dalam file PDF yang ada menggunakan pustaka C#."
+    "dateModified": "2024-11-26",
+    "description": "Bagian ini menjelaskan tentang mengganti gambar di file PDF yang ada menggunakan pustaka C#."
 }
 </script>
 
-Kode berikut juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Metode [Replace](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) dari koleksi Images memungkinkan Anda untuk mengganti gambar dalam file PDF yang sudah ada.
+Metode [Ganti](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) dari koleksi Gambar memungkinkan Anda untuk mengganti gambar di file PDF yang ada.
 
-Koleksi Images dapat ditemukan dalam koleksi Resources dari sebuah halaman. Untuk mengganti gambar:
+Koleksi Gambar dapat ditemukan di koleksi Sumber halaman. Untuk mengganti gambar:
 
-1. Buka file PDF menggunakan objek Document.
-2. Ganti gambar tertentu, simpan file PDF yang telah diperbarui menggunakan metode Save dari objek Document.
+1. Buka file PDF menggunakan objek Dokumen.
+2. Ganti gambar tertentu, simpan file PDF yang diperbarui menggunakan metode Simpan dari objek Dokumen.
 
-Kode berikut menunjukkan cara mengganti gambar dalam file PDF.
+Potongan kode berikut menunjukkan cara mengganti gambar di file PDF.
 
 ```csharp
-// Buka dokumen
-Document pdfDocument = new Document("input.pdf");
-// Ganti gambar tertentu
-pdfDocument.Pages[1].Resources.Images.Replace(1, new FileStream("lovely.jpg", FileMode.Open));
-// Simpan file PDF yang telah diperbarui
-pdfDocument.Save("output.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceImageInPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceImage.pdf"))
+    {
+        // Replace a particular image in the document
+        using (var imageStream = new FileStream(dataDir + "NewImage.jpg", FileMode.Open))
+        {
+            document.Pages[1].Resources.Images.Replace(1, imageStream);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceImage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -156,5 +172,3 @@ pdfDocument.Save("output.pdf");
     }
 }
 </script>
-
-

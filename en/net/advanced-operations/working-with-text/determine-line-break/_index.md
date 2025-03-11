@@ -2,6 +2,8 @@
 title: Determine Line Break
 linktitle: Determine Line Break
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/determine-line-break/
 description: Learn more about how to determinate a line break of multi-line TextFragment using C#

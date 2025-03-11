@@ -2,6 +2,8 @@
 title: Converting Documents with Microsoft Azure function
 linktitle: Converting Documents with Microsoft Azure function
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/converting-documents-with-microsoft-azure-function/
 description: Learn how to convert PDF documents using Microsoft Azure Functions with Aspose.PDF for .NET, enabling cloud-based document processing.
@@ -475,71 +477,6 @@ public async Task<IActionResult> Run(
    - Using a consumption plan with more memory.
    - Implementing chunked upload/download.
    - Adding progress tracking.
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Working with PDF documents using Microsoft Azure Function",
-    "alternativeHeadline": "Using Microsoft Azure Function for processing PDF documents",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, c#, advanced operations in pdf, microsoft azure, function",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF for .NET",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/net/converting-documents-with-microsoft-azure-function/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/net/converting-documents-with-microsoft-azure-function/"
-    },
-    "dateModified": "2024-10-25",
-    "description": "Aspose.PDF for .NET can process documents using Microsoft Azure Function."
-}
-</script>
 
 <script type="application/ld+json">
 {

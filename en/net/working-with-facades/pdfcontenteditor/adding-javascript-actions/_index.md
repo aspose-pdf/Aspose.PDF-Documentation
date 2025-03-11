@@ -1,6 +1,8 @@
 ---
 title: Adding Javascript actions PDF 
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/adding-javascript-actions/
 description: Discover how to add JavaScript actions, such as button clicks or form submissions, to PDFs in .NET using Aspose.PDF.

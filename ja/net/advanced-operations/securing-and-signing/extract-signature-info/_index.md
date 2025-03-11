@@ -1,11 +1,13 @@
 ---
-title: 画像と署名情報を抽出
-linktitle: 画像と署名情報を抽出
+title: 画像と署名情報の抽出
+linktitle: 画像と署名情報の抽出
 type: docs
-weight: 30
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 20
 url: /ja/net/extract-image-and-signature-information/
-description: 署名フィールドから画像を抽出し、SignatureField クラスを使用して署名情報を抽出することができます。
-lastmod: "2022-02-17"
+description: C#を使用してSignatureFieldクラスを使って署名フィールドから画像を抽出し、署名情報を抽出できます。
+lastmod: "2024-11-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "画像と署名情報を抽出",
-    "alternativeHeadline": "PDFから画像と署名を抽出する方法",
+    "headline": "Extract Image and Signature Information",
+    "alternativeHeadline": "Extract PDF signature images and certificate details",
+    "abstract": "新しいAspose.PDF for .NET機能は、PDF署名フィールドから画像と詳細情報を抽出します。C#を使用して、開発者は署名画像と証明書データ（公開鍵、サムプリント、発行者の詳細を含む）を取得でき、PDF操作機能を向上させます。これにより、アプリケーション内でのデジタル署名の検証と管理が改善されます。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "PDF, C#, 署名抽出",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
+    "wordcount": "583",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,86 +74,139 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2022-02-04",
-    "description": "署名フィールドから画像を抽出し、SignatureField クラスを使用して署名情報を抽出することができます。"
+    "dateModified": "2024-11-25",
+    "description": "C#を使用してSignatureFieldクラスを使って署名フィールドから画像を抽出し、署名情報を抽出できます。"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
-## 署名フィールドから画像を抽出する
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-Aspose.PDF for .NET は、[SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) クラスを使用して PDF ファイルにデジタル署名する機能をサポートしており、ドキュメントに署名する際に SignatureAppearance 用の画像も設定できます。現在、この API は署名情報と署名フィールドに関連付けられた画像を抽出する機能も提供しています。
+## 署名フィールドからの画像の抽出
 
-署名情報を抽出するために、SignatureField クラスに [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) メソッドを導入しました。次のコードスニペットをご覧ください。これは、SignatureField オブジェクトから画像を抽出する手順を示しています：
+Aspose.PDF for .NETは、[SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield)クラスを使用してPDFファイルにデジタル署名をする機能をサポートしており、文書に署名する際に`SignatureAppearance`の画像を設定することもできます。現在、このAPIは署名フィールドに関連付けられた画像と署名情報を抽出する機能も提供しています。
+
+署名情報を抽出するために、SignatureFieldクラスに[ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage)メソッドを導入しました。以下のコードスニペットは、`SignatureField`オブジェクトから画像を抽出する手順を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-
-string input = dataDir+ @"ExtractingImage.pdf";
-using (Document pdfDocument = new Document(input))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesFromSignatureField()
 {
-    foreach (Field field in pdfDocument.Form)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractingImage.pdf"))
     {
-        SignatureField sf = field as SignatureField;
-        if (sf != null)
+        // Searching for signature fields
+        foreach (var field in document.Form)
         {
-            string outFile = dataDir+ @"output_out.jpg";
+            var sf = field as Aspose.Pdf.Forms.SignatureField;
+            if (sf == null)
+            {
+                continue;
+            }
+
             using (Stream imageStream = sf.ExtractImage())
             {
                 if (imageStream != null)
                 {
-                    using (System.Drawing.Image image = Bitmap.FromStream(imageStream))
-                    {
-                        image.Save(outFile, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    }
+                    continue;
+                }
+
+                using (System.Drawing.Image image = System.Drawing.Bitmap.FromStream(imageStream))
+                {
+                    // Save the image
+                    image.Save(dataDir + "output_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
                 }
             }
         }
     }
 }
 ```
-### 署名画像の置換
 
-PDFファイル内に既に存在する署名フィールドの画像のみを置き換える必要がある場合があります。この要件を達成するために、まずPDFファイル内のフォームフィールドを検索し、署名フィールドを特定し、署名フィールドの寸法（矩形の寸法）を取得してから、同じ寸法に画像をスタンプします。
+### 署名画像の置き換え
+
+時には、PDFファイル内の既存の署名フィールドの画像のみを置き換える必要がある場合があります。この要件を達成するために、まずPDFファイル内のフォームフィールドを検索し、署名フィールドを特定し、署名フィールドの寸法（矩形寸法）を取得し、同じ寸法に画像をスタンプする必要があります。
 
 ## 署名情報の抽出
 
-Aspose.PDF for .NETは、SignatureFieldクラスを使用してPDFファイルにデジタル署名する機能をサポートしています。現在、証明書の有効性を判断することもできますが、証明書全体を抽出することはできません。抽出可能な情報には、公開鍵、サムプリント、発行者などがあります。
+Aspose.PDF for .NETは、SignatureFieldクラスを使用してPDFファイルにデジタル署名をする機能をサポートしています。現在、証明書の有効性を判断することもできますが、証明書全体を抽出することはできません。抽出できる情報は、公開鍵、サムプリント、発行者などです。
 
-署名情報を抽出するために、[SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) クラスに [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) メソッドを導入しました。
-署名情報を抽出するために、[SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) クラスに [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) メソッドを導入しました。
+署名情報を抽出するために、[ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate)メソッドを[SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield)クラスに導入しました。以下のコードスニペットは、SignatureFieldオブジェクトから証明書を抽出する手順を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-
-string input = dataDir + "ExtractSignatureInfo.pdf";
-using (Document pdfDocument = new Document(input))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractCertificate()
 {
-    foreach (Field field in pdfDocument.Form)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractSignatureInfo.pdf"))
     {
-        SignatureField sf = field as SignatureField;
-        if (sf != null)
+        // Searching for signature fields
+        foreach (var field in document.Form)
         {
-            Stream cerStream = sf.ExtractCertificate();
-            if (cerStream != null)
+            var sf = field as Aspose.Pdf.Forms.SignatureField;
+            if (sf == null)
             {
-                using (cerStream)
+                continue;
+            }
+            // Extract certificate
+            Stream cerStream = sf.ExtractCertificate();
+            if (cerStream == null)
+            {
+                continue;
+            }
+            // Save certificate
+            using (cerStream)
+            {
+                byte[] bytes = new byte[cerStream.Length];
+                using (FileStream fs = new FileStream(dataDir + "input.cer", FileMode.CreateNew))
                 {
-                    byte[] bytes = new byte[cerStream.Length];
-                    using (FileStream fs = new FileStream(dataDir + @"input.cer", FileMode.CreateNew))
-                    {
-                        cerStream.Read(bytes, 0, bytes.Length);
-                        fs.Write(bytes, 0, bytes.Length);
-                    }
+                    cerStream.Read(bytes, 0, bytes.Length);
+                    fs.Write(bytes, 0, bytes.Length);
                 }
             }
         }
     }
 }
+```
+
+文書署名アルゴリズムに関する情報を取得できます。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private void GetSignaturesInfo()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "signed_rsa.pdf"))
+    {
+        using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            var sigNames = signature.GetSignatureNames();
+            var signaturesInfoList =  signature.GetSignaturesInfo();
+            foreach (var sigInfo in signaturesInfoList)
+            {
+                Console.WriteLine(sigInfo.DigestHashAlgorithm);
+                Console.WriteLine(sigInfo.AlgorithmType);
+                Console.WriteLine(sigInfo.CryptographicStandard);
+                Console.WriteLine(sigInfo.SignatureName);
+            }
+        }
+    }
+}
+```
+
+上記の例のサンプル出力：
+```
+Sha256
+Rsa
+Pkcs7
+Signature1
 ```
 
 <script type="application/ld+json">
@@ -179,23 +235,23 @@ using (Document pdfDocument = new Document(input))
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -204,7 +260,7 @@ using (Document pdfDocument = new Document(input))
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -216,5 +272,3 @@ using (Document pdfDocument = new Document(input))
     }
 }
 </script>
-```
-

@@ -2,6 +2,8 @@
 title: Aspose.PDF for .NET Support
 linktitle: Technical Support
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /net/technical-support/
 description: This page gives recommendations for quick and quality to resolve your tasks using Aspose.PDF for .NET.

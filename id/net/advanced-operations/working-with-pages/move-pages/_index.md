@@ -1,10 +1,12 @@
 ---
-title: Memindahkan Halaman PDF secara Programatis C#
-linktitle: Memindahkan Halaman PDF
+title: Pindahkan Halaman PDF secara programatik C#
+linktitle: Pindahkan Halaman PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /id/net/move-pages/
-description: Cobalah memindahkan halaman ke lokasi yang diinginkan atau di akhir file PDF menggunakan Aspose.PDF untuk .NET.
+description: Cobalah untuk memindahkan halaman ke lokasi yang diinginkan atau di akhir file PDF menggunakan Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Memindahkan Halaman PDF secara Programatis C#",
-    "alternativeHeadline": "Cara memindahkan Halaman PDF dengan .NET",
+    "headline": "Move PDF Pages programmatically C#",
+    "alternativeHeadline": "Programmatically Rearrange PDF Pages with .NET",
+    "abstract": "Aspose.PDF for .NET memperkenalkan fitur baru yang kuat yang memungkinkan pengguna untuk memindahkan halaman PDF secara programatik antara dokumen atau mengatur ulangnya dalam dokumen yang sama. Fungsionalitas ini meningkatkan kemampuan manipulasi PDF dengan memungkinkan pengembang untuk menyisipkan halaman di lokasi yang ditentukan dan dengan mudah mengelola organisasi halaman sambil mempertahankan integritas dokumen",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen PDF",
-    "keywords": "pdf, c#, memindahkan halaman pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "wordcount": "668",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dokumentasi Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,91 +73,182 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/move-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cobalah memindahkan halaman ke lokasi yang diinginkan atau di akhir file PDF menggunakan Aspose.PDF untuk .NET."
+    "dateModified": "2024-11-26",
+    "description": "Cobalah untuk memindahkan halaman ke lokasi yang diinginkan atau di akhir file PDF menggunakan Aspose.PDF for .NET."
 }
 </script>
-## Memindahkan Halaman dari satu Dokumen PDF ke Dokumen Lain
+
+## Memindahkan Halaman dari Satu Dokumen PDF ke Dokumen Lain
 
 Topik ini menjelaskan cara memindahkan halaman dari satu dokumen PDF ke akhir dokumen lain menggunakan C#.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk memindahkan halaman kita harus:
 
-1. Membuat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF sumber.
-1. Membuat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF tujuan.
-1. Mendapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [Menambahkan](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) halaman ke dokumen tujuan.
-1. Menyimpan output PDF menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [Menghapus](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) halaman di dokumen sumber.
-1.
-1.
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF sumber.
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF tujuan.
+1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. [Tambahkan](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) halaman ke dokumen tujuan.
+1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. [Hapus](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) halaman di dokumen sumber.
+1. Simpan PDF sumber menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-Potongan kode berikut ini menunjukkan cara memindahkan satu halaman.
+Potongan kode berikut menunjukkan cara memindahkan satu halaman.
 
 ```csharp
-var srcFileName = "<masukkan nama file>";
-var dstFileName = "<masukkan nama file>";
-var srcDocument = new Document(srcFileName);
-var dstDocument = new Document();
-var page = srcDocument.Pages[2];
-dstDocument.Pages.Add(page);
-// Simpan file output
-dstDocument.Save(srcFileName);
-srcDocument.Pages.Delete(2);
-srcDocument.Save(dstFileName);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MovingAPageFromOnePdfDocumentToAnother()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF documents
+    using (var srcDocument = new Aspose.Pdf.Document(dataDir + "MovingPageInput.pdf"))
+    {
+        using (var dstDocument = new Aspose.Pdf.Document())
+        {
+            var page = srcDocument.Pages[2];
+            dstDocument.Pages.Add(page);
+            // Save PDF document
+            dstDocument.Save(dataDir + "MovingPage_out.pdf");
+            srcDocument.Pages.Delete(2);
+            // Save PDF document
+            srcDocument.Save(dataDir + "MovingPageInput_out.pdf");
+        }
+    }
+}
 ```
 
-## Memindahkan Sekumpulan Halaman dari Satu Dokumen PDF ke Dokumen PDF Lain
+## Memindahkan Sekumpulan Halaman dari Satu Dokumen PDF ke Dokumen Lain
 
 1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF sumber.
-2. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF tujuan.
-3. Tentukan sebuah array dengan nomor halaman yang akan dipindahkan.
-4. Jalankan loop melalui array:
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF tujuan.
+1. Tentukan array dengan nomor halaman yang akan dipindahkan.
+1. Jalankan loop melalui array:
     1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-    2.
-1. Simpan output PDF menggunakan metode [Simpan](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [Hapus](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) halaman dalam dokumen sumber menggunakan array.
-1. Simpan PDF sumber menggunakan metode [Simpan](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+    1. [Tambahkan](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) halaman ke dokumen tujuan.
+1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. [Hapus](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) halaman di dokumen sumber menggunakan array.
+1. Simpan PDF sumber menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-Berikut ini adalah potongan kode yang menunjukkan cara memindahkan sejumlah halaman dari satu dokumen PDF ke dokumen PDF lainnya.
+Potongan kode berikut menunjukkan cara memindahkan sekumpulan halaman dari satu dokumen PDF ke dokumen lain.
 
 ```csharp
-var srcFileName = "<masukkan nama file>";
-var dstFileName = "<masukkan nama file>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
-var dstDocument = new Aspose.Pdf.Document();
-var pages = new []{ 1, 3 };
-foreach (var pageIndex in pages)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 {
-    var page = srcDocument.Pages[pageIndex];
-    dstDocument.Pages.Add(page);
-}                       
-// Simpan file output
-dstDocument.Save(dstFileName);
-srcDocument.Pages.Delete(pages);
-srcDocument.Save(srcFileName);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF documents
+    using (var srcDocument = new Aspose.Pdf.Document(dataDir + "MovingBunchOfPagesInput.pdf"))
+    {
+        using (var dstDocument = new Aspose.Pdf.Document())
+        {
+            var pages = new[] { 1, 3 };
+            foreach (int pageIndex in pages)
+            {
+                var page = srcDocument.Pages[pageIndex];
+                dstDocument.Pages.Add(page);
+            }
+            // Save PDF document
+            dstDocument.Save(dataDir + "MovingBunchOfPages_out.pdf");
+            srcDocument.Pages.Delete(pages);
+            // Save PDF document
+            srcDocument.Save(dataDir + "MovingBunchOfPagesInput_out.pdf";
+        }
+    }
+}
 ```
 
-## Memindahkan Halaman ke Lokasi Baru dalam Dokumen PDF Saat Ini
+## Memindahkan Halaman ke Lokasi Baru di Dokumen PDF Saat Ini
 
-1.
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF sumber.
 1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 1. [Tambahkan](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) halaman ke lokasi baru (misalnya ke akhir).
 1. [Hapus](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) halaman di lokasi sebelumnya.
 1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 ```csharp
-var srcFileName = "<masukkan nama file>";
-var dstFileName = "<masukkan nama file>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MovingAPageInNewLocationInTheCurrentPdfDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-var page = srcDocument.Pages[2];
-srcDocument.Pages.Add(page);
-srcDocument.Pages.Delete(2);          
-
-// Simpan file keluaran
-srcDocument.Save(dstFileName);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocumentInput.pdf"))
+    {
+        var page = document.Pages[2];
+        document.Pages.Add(page);
+        document.Pages.Delete(2);
+        // Save PDF document
+        document.Save(dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocument_out.pdf");
+    }
+}
 ```
 
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

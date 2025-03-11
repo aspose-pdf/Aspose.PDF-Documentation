@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/advanced-operations/
 description: You can perform not only simple and easy tasks but also cope with more complex goals with Aspose. PDF for Java. 
-lastmod: "2025-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,6 +27,7 @@ You'll learn different ways to:
 - [Working with Forms](/pdf/java/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.
 - [Working with Graphs](/pdf/java/graphs/) - manipulate with shapes on the page.
 - [Working with XML](/pdf/java/working-with-xml) - construct PDF documents based on the XML structure.
+- [Compare PDF documents](/pdf/java/compare-pdf-documents/) - possible to compare PDF documents content.
 - [Navigation and Interaction](/pdf/java/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages.
 - [Annotations](/pdf/java/annotations/) - annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
 - [Artifacts](/pdf/java/artifacts/) - deal with watermarks and other special objects in PDF.

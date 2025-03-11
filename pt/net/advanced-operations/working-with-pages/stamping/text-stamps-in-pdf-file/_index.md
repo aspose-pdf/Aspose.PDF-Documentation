@@ -1,10 +1,12 @@
 ---
-title: Adicionar selos de texto em PDF C#
-linktitle: Selos de texto em arquivo PDF
+title: Adicionar Carimbos de Texto em PDF C#
+linktitle: Carimbos de Texto em Arquivo PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /pt/net/text-stamps-in-the-pdf-file/
-description: Adicione um selo de texto a um documento PDF usando a classe TextStamp com a biblioteca Aspose.PDF para .NET.
+description: Adicione um carimbo de texto a um documento PDF usando a classe TextStamp com a biblioteca Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Adicionar selos de texto em PDF C#",
-    "alternativeHeadline": "Adicionar selos de texto em PDF C#",
+    "headline": "Add Text stamps in PDF C#",
+    "alternativeHeadline": "Effortlessly Add Text Stamps in PDF Documents with C#",
+    "abstract": "O novo recurso TextStamp na Aspose.PDF for .NET permite que os usuários adicionem carimbos de texto personalizáveis a documentos PDF de forma simples. Com propriedades para tamanho de fonte, estilo e cor, juntamente com opções de alinhamento, essa funcionalidade melhora a anotação de documentos ao permitir a colocação e aparência precisas do texto dentro dos arquivos PDF.",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, geração de documentos",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "wordcount": "765",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,126 +73,200 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Adicione um selo de texto a um documento PDF usando a classe TextStamp com a biblioteca Aspose.PDF para .NET."
+    "dateModified": "2024-11-26",
+    "description": "Adicione um carimbo de texto a um documento PDF usando a classe TextStamp com a biblioteca Aspose.PDF for .NET."
 }
 </script>
-## Adicionar Carimbo de Texto com C#
 
-Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) para adicionar um carimbo de texto em um arquivo PDF. A classe TextStamp fornece propriedades necessárias para criar um carimbo baseado em texto como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar um carimbo de texto, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Depois disso, você pode chamar o método AddStamp da Página para adicionar o carimbo no PDF.
+## Adicionar Carimbo de Texto
+
+Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) para adicionar um carimbo de texto em um arquivo PDF. A classe TextStamp fornece propriedades necessárias para criar um carimbo baseado em texto, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar um carimbo de texto, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Depois disso, você pode chamar o método AddStamp da Página para adicionar o carimbo no PDF.
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como adicionar um carimbo de texto no arquivo PDF.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir+ "AddTextStamp.pdf");
-
-// Criar carimbo de texto
-TextStamp textStamp = new TextStamp("Sample Stamp");
-// Definir se o carimbo é de fundo
-textStamp.Background = true;
-// Definir origem
-textStamp.XIndent = 100;
-textStamp.YIndent = 100;
-// Rotacionar carimbo
-textStamp.Rotate = Rotation.on90;
-// Definir propriedades do texto
-textStamp.TextState.Font = FontRepository.FindFont("Arial");
-textStamp.TextState.FontSize = 14.0F;
-textStamp.TextState.FontStyle = FontStyles.Bold;
-textStamp.TextState.FontStyle = FontStyles.Italic;
-textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Aqua);
-// Adicionar carimbo à página específica
-pdfDocument.Pages[1].AddStamp(textStamp);
-
-dataDir = dataDir + "AddTextStamp_out.pdf";
-// Salvar documento de saída
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create text stamp
+        var textStamp = new Aspose.Pdf.TextStamp("Sample Stamp");
+        // Set whether stamp is background
+        textStamp.Background = true;
+        // Set origin
+        textStamp.XIndent = 100;
+        textStamp.YIndent = 100;
+        // Rotate stamp
+        textStamp.Rotate = Rotation.on90;
+        // Set text properties
+        textStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        textStamp.TextState.FontSize = 14.0F;
+        textStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        textStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+        textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(textStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddTextStamp_out.pdf");  
+    }
+}
 ```
+
 ## Definir alinhamento para o objeto TextStamp
 
-Adicionar marcas d'água a documentos PDF é uma das funcionalidades frequentemente solicitadas e o Aspose.PDF para .NET é totalmente capaz de adicionar marcas d'água de Imagem e de Texto. Temos uma classe chamada [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) que oferece a funcionalidade de adicionar carimbos de texto sobre o arquivo PDF. Recentemente, surgiu a necessidade de suportar a funcionalidade de especificar o alinhamento do texto ao usar o objeto TextStamp. Portanto, para atender a essa necessidade, introduzimos a propriedade TextAlignment na classe TextStamp. Usando esta propriedade, podemos especificar o alinhamento horizontal do texto.
+Adicionar marcas d'água a documentos PDF é uma das funcionalidades mais solicitadas e a Aspose.PDF for .NET é totalmente capaz de adicionar marcas d'água de Imagem, bem como de Texto. Temos uma classe chamada [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) que fornece o recurso para adicionar carimbos de texto sobre o arquivo PDF. Recentemente, houve uma necessidade de suportar a funcionalidade de especificar o alinhamento do texto ao usar o objeto TextStamp. Portanto, para atender a essa necessidade, introduzimos a propriedade TextAlignment na classe TextStamp. Usando essa propriedade, podemos especificar o alinhamento horizontal do texto.
 
-Os seguintes trechos de código mostram um exemplo de como carregar um documento PDF existente e adicionar TextStamp sobre ele.
+Os seguintes trechos de código mostram um exemplo de como carregar um documento PDF existente e adicionar um TextStamp sobre ele.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DefineAlignmentForTextStampObject()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// Instanciar objeto Document com arquivo de entrada
-Document doc = new Document(dataDir+ "DefineAlignment.pdf");
-// Instanciar objeto FormattedText com string de exemplo
-FormattedText text = new FormattedText("This");
-// Adicionar nova linha de texto ao FormattedText
-text.AddNewLineText("is sample");
-text.AddNewLineText("Center Aligned");
-text.AddNewLineText("TextStamp");
-text.AddNewLineText("Object");
-// Criar objeto TextStamp usando FormattedText
-TextStamp stamp = new TextStamp(text);
-// Especificar o Alinhamento Horizontal do carimbo de texto como Centralizado
-stamp.HorizontalAlignment = HorizontalAlignment.Center;
-// Especificar o Alinhamento Vertical do carimbo de texto como Centralizado
-stamp.VerticalAlignment = VerticalAlignment.Center;
-// Especificar o Alinhamento Horizontal do Texto do TextStamp como Centralizado
-stamp.TextAlignment = HorizontalAlignment.Center;
-// Definir margem superior para o objeto carimbo
-stamp.TopMargin = 20;
-// Adicionar o objeto carimbo na primeira página do documento
-doc.Pages[1].AddStamp(stamp);
-
-dataDir = dataDir + "StampedPDF_out.pdf";
-// Salvar o documento atualizado
-doc.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Instantiate FormattedText object with sample string
+        var text = new Aspose.Pdf.Facades.FormattedText("This");
+        // Add new text line to FormattedText
+        text.AddNewLineText("is sample");
+        text.AddNewLineText("Center Aligned");
+        text.AddNewLineText("TextStamp");
+        text.AddNewLineText("Object");
+        // Create TextStamp object using FormattedText
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        // Specify the Horizontal Alignment of text stamp as Center aligned
+        stamp.HorizontalAlignment = HorizontalAlignment.Center;
+        // Specify the Vertical Alignment of text stamp as Center aligned
+        stamp.VerticalAlignment = VerticalAlignment.Center;
+        // Specify the Text Horizontal Alignment of TextStamp as Center aligned
+        stamp.TextAlignment = HorizontalAlignment.Center;
+        // Set top margin for stamp object
+        stamp.TopMargin = 20;
+        // Add the stamp object over first page of document
+        document.Pages[1].AddStamp(stamp);
+        // Save PDF document
+        document.Save(dataDir + "StampedPDF_out.pdf");
+    }
+}
 ```
-## Preencher Texto com Contorno como Carimbo em Arquivo PDF
 
-Implementamos a configuração do modo de renderização para cenários de adição e edição de texto. Para renderizar texto com contorno, por favor crie um objeto TextState e defina RenderingMode para TextRenderingMode.StrokeText e também selecione a cor para a propriedade StrokingColor. Posteriormente, vincule o TextState ao carimbo usando o método BindTextState().
+## Preencher Texto de Traço como Carimbo em Arquivo PDF
 
-O seguinte trecho de código demonstra a adição de Texto com Preenchimento e Contorno:
+Implementamos a configuração do modo de renderização para cenários de adição e edição de texto. Para renderizar texto de traço, crie um objeto TextState e defina RenderingMode como TextRenderingMode.StrokeText e também selecione a cor para a propriedade StrokingColor. Depois, vincule o TextState ao carimbo usando o método BindTextState().
+
+O seguinte trecho de código demonstra a adição de Texto de Traço Preenchido:
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-// Criar objeto TextState para transferir propriedades avançadas
-TextState ts = new TextState();
-// Definir cor para o contorno
-ts.StrokingColor = Color.Gray;
-// Definir modo de renderização de texto
-ts.RenderingMode = TextRenderingMode.StrokeText;
-// Carregar um documento PDF de entrada
-Facades.PdfFileStamp fileStamp = new Facades.PdfFileStamp(new Aspose.Pdf.Document(dataDir + "input.pdf"));
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillStrokeTextAsStampInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Create TextState object to transfer advanced properties
+    var textState = new Aspose.Pdf.Text.TextState();
+    // Set color for stroke
+    textState.StrokingColor = Color.Gray;
+    // Set text rendering mode
+    textState.RenderingMode = Aspose.Pdf.Text.TextRenderingMode.StrokeText;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create PdfFileStamp
+        var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp(document);
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("PAID IN FULL", System.Drawing.Color.Gray, "Arial", Aspose.Pdf.Facades.EncodingType.Winansi, true, 78));
+        // Bind TextState
+        stamp.BindTextState(textState);
+        // Set X,Y origin
+        stamp.SetOrigin(100, 100);
+        stamp.Opacity = 5;
+        stamp.BlendingSpace = Aspose.Pdf.Facades.BlendingColorSpace.DeviceRGB;
+        stamp.Rotation = 45.0F;
+        stamp.IsBackground = false;
+        // Add Stamp
+        fileStamp.AddStamp(stamp);
+        // Save PDF document
+        fileStamp.Save(dataDir + "FillStrokeTextAsStampInPdfFile_out.pdf");
+        fileStamp.Close();
+    }
+}
+```
 
-Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-stamp.BindLogo(new Facades.FormattedText("PAGO EM CHEIO", System.Drawing.Color.Gray, "Arial", Facades.EncodingType.Winansi, true, 78));
+## Adicionar carimbo de texto e ajustar automaticamente o tamanho da fonte
 
-// Vincular TextState
-stamp.BindTextState(ts);
-// Definir origem X,Y
-stamp.SetOrigin(100, 100);
-stamp.Opacity = 5;
-stamp.BlendingSpace = Facades.BlendingColorSpace.DeviceRGB;
-stamp.Rotation = 45.0F;
-stamp.IsBackground = false;
-// Adicionar Carimbo
-fileStamp.AddStamp(stamp);
-fileStamp.Save(dataDir + "ouput_out.pdf");
-fileStamp.Close();
+O seguinte trecho de código demonstra como adicionar um carimbo de texto a um arquivo PDF e ajustar automaticamente o tamanho da fonte para caber no retângulo do carimbo.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutoSetTheFontSizeOfTextStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        stamp.Width = 400;
+        stamp.Height = 200;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+        // Save PDF document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStamp_out.pdf");
+    }
+}
+```
+O seguinte trecho de código demonstra como adicionar um carimbo de texto a um arquivo PDF e ajustar automaticamente o tamanho da fonte para caber no retângulo do carimbo. O retângulo do carimbo tem como padrão o tamanho da página.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutoSetTheFontSizeOfTextStampToFitPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+        // Save PDF document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStampToFItPage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para .NET Library",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -212,21 +288,21 @@ fileStamp.Close();
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -237,7 +313,7 @@ fileStamp.Close();
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -249,5 +325,3 @@ fileStamp.Close();
     }
 }
 </script>
-```
-

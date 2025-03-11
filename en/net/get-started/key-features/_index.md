@@ -2,6 +2,8 @@
 title: Key Features of Aspose.PDF
 linktitle: Key Features
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /net/key-features/
 description: Aspose.PDF for .NET demonstrates its general features. Its shows the supported PDF versions, and all the manipulations we can do with PDF.

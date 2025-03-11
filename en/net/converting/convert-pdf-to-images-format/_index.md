@@ -2,6 +2,8 @@
 title: Convert PDF to Different Image Formats in C#
 linktitle: Convert PDF to Images
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/convert-pdf-to-images-format/
 lastmod: "2021-11-01"

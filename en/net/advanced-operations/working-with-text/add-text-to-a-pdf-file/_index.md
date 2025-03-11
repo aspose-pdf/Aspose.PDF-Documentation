@@ -2,6 +2,8 @@
 title: Add Text to PDF using C#
 linktitle: Add Text to PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-text-to-pdf-file/
 description: Learn how to add text to a PDF document in .NET using Aspose.PDF for content enhancement and document editing.

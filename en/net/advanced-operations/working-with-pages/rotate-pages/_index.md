@@ -2,6 +2,8 @@
 title: Rotate PDF Pages Using C#
 linktitle: Rotate PDF Pages
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/rotate-pages/
 description: This topic describes how to rotate the page orientation in an existing PDF file programmatically with C#.

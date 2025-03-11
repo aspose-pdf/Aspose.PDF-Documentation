@@ -2,6 +2,8 @@
 title: Add Figures Annotations using C#
 linktitle: Figures Annotations
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/figures-annotation/
 description: This article describes how to add, get, and delete figures annotations from your PDF document with Aspose.PDF for .NET

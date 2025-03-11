@@ -2,6 +2,8 @@
 title: Extract Image and Signature Information
 linktitle: Extract Image and Signature Information
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/extract-image-and-signature-information/
 description: You may extract images from the signature field and extract signature information using the SignatureField class with C#.

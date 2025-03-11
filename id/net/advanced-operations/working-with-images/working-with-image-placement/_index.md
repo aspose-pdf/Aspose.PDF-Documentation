@@ -1,10 +1,12 @@
 ---
-title: Working with Image Placement
-linktitle: Working with Image Placement
+title: Bekerja dengan Penempatan Gambar
+linktitle: Bekerja dengan Penempatan Gambar
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /id/net/working-with-image-placement/
-description: Bagian ini menjelaskan fitur-fitur penempatan gambar dalam file PDF menggunakan perpustakaan C#.
+description: Bagian ini menjelaskan fitur-fitur bekerja dengan file PDF penempatan gambar menggunakan pustaka C#.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -12,21 +14,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Image Placement",
-    "alternativeHeadline": "How to get the position of an Image in PDF File",
+    "alternativeHeadline": "Enhanced Image Placement in PDF",
+    "abstract": "Fitur penempatan gambar baru dalam Aspose.PDF for .NET memungkinkan pengembang untuk secara efisien memposisikan dan memanipulasi gambar dalam dokumen PDF. Fungsionalitas ini mencakup kelas seperti ImagePlacement dan ImagePlacementAbsorber, yang memungkinkan pengambilan dimensi dan resolusi gambar yang tepat, meningkatkan kemampuan pembuatan dokumen PDF dengan kontrol yang lebih besar atas elemen visual.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, image placement in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Image Placement, C# library, Aspose.PDF, ImagePlacement, ImagePlacementAbsorber, PDF document generation, image resolution, image properties, bitmap scaling, PDF manipulation",
+    "wordcount": "306",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,56 +71,54 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/working-with-image-placement/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Bagian ini menjelaskan fitur-fitur penempatan gambar dalam file PDF menggunakan perpustakaan C#."
+    "dateModified": "2024-11-26",
+    "description": "Bagian ini menjelaskan fitur-fitur bekerja dengan file PDF penempatan gambar menggunakan pustaka C#."
 }
 </script>
-Dengan peluncuran Aspose.PDF untuk .NET 7.0.0, kami memperkenalkan kelas yang disebut [ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) dan [ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection) yang menyediakan kemampuan serupa seperti kelas yang dijelaskan di atas untuk mendapatkan resolusi dan posisi gambar dalam dokumen PDF.
+
+Dengan rilis Aspose.PDF for .NET 7.0.0, kami memperkenalkan kelas-kelas yang disebut [ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) dan [ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection) yang memberikan kemampuan serupa seperti kelas-kelas yang dijelaskan di atas untuk mendapatkan resolusi dan posisi gambar dalam dokumen PDF.
 
 - ImagePlacementAbsorber melakukan pencarian penggunaan gambar sebagai koleksi objek ImagePlacement.
-- ImagePlacement menyediakan anggota Resolution dan Rectangle yang mengembalikan nilai penempatan gambar aktual.
+- ImagePlacement menyediakan anggota Resolution dan Rectangle yang mengembalikan nilai penempatan gambar yang sebenarnya.
 
-Potongan kode berikut juga bekerja dengan antarmuka grafis [Aspose.Drawing](/pdf/id/net/drawing/) yang baru.
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
-// Untuk contoh lengkap dan berkas data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-// Muat dokumen PDF sumber
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "ImagePlacement.pdf");
-ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-
-// Muat konten halaman pertama
-doc.Pages[1].Accept(abs);
-foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractAndScaleImagesFromPDF()
 {
-    // Dapatkan properti gambar
-    Console.Out.WriteLine("lebar gambar:" + imagePlacement.Rectangle.Width);
-    Console.Out.WriteLine("tinggi gambar:" + imagePlacement.Rectangle.Height);
-    Console.Out.WriteLine("gambar LLX:" + imagePlacement.Rectangle.LLX);
-    Console.Out.WriteLine("gambar LLY:" + imagePlacement.Rectangle.LLY);
-    Console.Out.WriteLine("resolusi horizontal gambar:" + imagePlacement.Resolution.X);
-    Console.Out.WriteLine("resolusi vertikal gambar:" + imagePlacement.Resolution.Y);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Ambil gambar dengan dimensi yang terlihat
-    Bitmap scaledImage;
-    using (MemoryStream imageStream = new MemoryStream())
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImagePlacement.pdf"))
     {
-        // Ambil gambar dari sumber daya
-        imagePlacement.Image.Save(imageStream, System.Drawing.Imaging.ImageFormat.Png);
-        Bitmap resourceImage = (Bitmap)Bitmap.FromStream(imageStream);
-        // Buat bitmap dengan dimensi aktual
-        scaledImage = new Bitmap(resourceImage, (int)imagePlacement.Rectangle.Width, (int)imagePlacement.Rectangle.Height);
+        var abs = new Aspose.Pdf.ImagePlacementAbsorber();
+
+        // Load the contents of the first page
+        document.Pages[1].Accept(abs);
+
+        // Iterate through each image placement on the first page
+        foreach (var imagePlacement in abs.ImagePlacements)
+        {
+            // Get image properties
+            Console.Out.WriteLine("image width: " + imagePlacement.Rectangle.Width);
+            Console.Out.WriteLine("image height: " + imagePlacement.Rectangle.Height);
+            Console.Out.WriteLine("image LLX: " + imagePlacement.Rectangle.LLX);
+            Console.Out.WriteLine("image LLY: " + imagePlacement.Rectangle.LLY);
+            Console.Out.WriteLine("image horizontal resolution: " + imagePlacement.Resolution.X);
+            Console.Out.WriteLine("image vertical resolution: " + imagePlacement.Resolution.Y);
+        }
     }
 }
 ```
+
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Perpustakaan Aspose.PDF untuk .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -139,21 +140,21 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -164,7 +165,7 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -176,5 +177,3 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
     }
 }
 </script>
-```
-

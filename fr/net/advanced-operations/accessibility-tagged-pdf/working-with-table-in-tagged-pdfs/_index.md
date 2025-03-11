@@ -1,10 +1,12 @@
 ---
-title: Travailler avec les tables dans les PDF balisés
-linktitle: Travailler avec les tables dans les PDF balisés
+title: Travailler avec des tableaux dans des PDF tagués
+linktitle: Travailler avec des tableaux dans des PDF tagués
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /fr/net/working-with-table-in-tagged-pdfs/
-description: Cet article explique comment travailler avec les tables dans un document PDF balisé avec Aspose.PDF pour .NET.
+description: Cet article explique comment travailler avec des tableaux dans un document PDF tagué avec Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Travailler avec les tables dans les PDF balisés",
-    "alternativeHeadline": "Manipuler les tables dans les PDF balisés",
+    "headline": "Working with Table in Tagged PDFs",
+    "alternativeHeadline": "Streamlined Table Creation in Tagged PDFs",
+    "abstract": "La nouvelle fonctionnalité dans Aspose.PDF for .NET permet aux utilisateurs de créer et de styliser des tableaux dans des documents PDF tagués de manière transparente. Cette fonctionnalité améliore l'accessibilité et la conformité des documents, permettant l'ajout d'en-têtes, de corps et de pieds de tableau tout en maintenant la conformité PDF/UA. Avec une variété de propriétés personnalisables, les utilisateurs peuvent facilement manipuler les styles de tableau, y compris les bordures, les arrière-plans et les alignements, pour répondre à des exigences de formatage spécifiques.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "table, pdf, style de l'élément table, créer une table",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "keywords": "table, Tagged PDF, Aspose.PDF for .NET, CreateTableElement, TableElement, style table, table row, table cell, PDF/UA compliance, manipulate tables",
+    "wordcount": "2179",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,486 +74,958 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-table-in-tagged-pdfs/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cet article explique comment travailler avec les tables dans un document PDF balisé avec Aspose.PDF pour .NET."
+    "dateModified": "2024-11-25",
+    "description": "Cet article explique comment travailler avec des tableaux dans un document PDF tagué avec Aspose.PDF for .NET."
 }
 </script>
-## Créer une table dans un PDF balisé
 
-Aspose.PDF pour .NET permet de créer une table dans des documents PDF balisés.
-Aspose.PDF pour .NET permet de créer une table dans les documents PDF étiquetés.
+## Créer un tableau dans un PDF tagué
+
+Aspose.PDF for .NET permet de créer un tableau dans des documents PDF tagués. Pour travailler avec des tableaux, l'API fournit la classe [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Afin de créer un tableau, vous pouvez utiliser la méthode [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) de l'interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). De plus, vous pouvez utiliser les méthodes [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) et [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) de la classe TableElement pour créer respectivement l'en-tête, le corps et le pied de tableau. Pour créer une ligne de tableau, vous pouvez utiliser la méthode [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) de la classe [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Vous pouvez également vérifier si le document PDF créé est conforme à la norme PDF/UA en utilisant la méthode Validate() de la classe Document.
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-Le code suivant montre comment créer une table dans le document PDF étiqueté :
+Le code suivant montre comment créer un tableau dans le document PDF tagué :
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Créer le document
-Document document = new Document();
-ITaggedContent contenuTaggé = document.TaggedContent;
-
-contenuTaggé.SetTitle("Tableau Exemple");
-contenuTaggé.SetLanguage("en-US");
-
-// Obtenir l'élément de structure racine
-StructureElement rootElement = contenuTaggé.RootElement;
-
-
-TableElement tableElement = contenuTaggé.CreateTableElement();
-rootElement.AppendChild(tableElement);
-
-tableElement.Border = new BorderInfo(BorderSide.All, 1.2F, Color.DarkBlue);
-
-TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
-TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
-TableTFootElement tableTFootElement = tableElement.CreateTFoot();
-int rowCount = 50;
-int colCount = 4;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.CreateTR();
-headTrElement.AlternativeText = "Ligne d'en-tête";
-
-headTrElement.BackgroundColor = Color.LightGray;
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateTable()
 {
-    TableTHElement thElement = headTrElement.CreateTH();
-    thElement.SetText(String.Format("En-tête {0}", colIndex));
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    thElement.BackgroundColor = Color.GreenYellow;
-    thElement.Border = new BorderInfo(BorderSide.All, 4.0F, Color.Gray);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
-    thElement.IsNoBorder = true;
-    thElement.Margin = new MarginInfo(16.0, 2.0, 8.0, 2.0);
+        taggedContent.SetTitle("Example table");
+        taggedContent.SetLanguage("en-US");
 
-    thElement.Alignment = HorizontalAlignment.Right;
+        // Get root structure element
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+        Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+        rootElement.AppendChild(tableElement);
+
+        tableElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.2F, Aspose.Pdf.Color.DarkBlue);
+
+        Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
+        Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
+        Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
+        int rowCount = 50;
+        int colCount = 4;
+        int rowIndex;
+        int colIndex;
+
+        Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+        headTrElement.AlternativeText = "Head Row";
+
+        headTrElement.BackgroundColor = Aspose.Pdf.Color.LightGray;
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+            thElement.SetText(String.Format("Head {0}", colIndex));
+
+            thElement.BackgroundColor = Aspose.Pdf.Color.GreenYellow;
+            thElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
+
+            thElement.IsNoBorder = true;
+            thElement.Margin = new Aspose.Pdf.MarginInfo(16.0, 2.0, 8.0, 2.0);
+
+            thElement.Alignment = Aspose.Pdf.HorizontalAlignment.Right;
+        }
+
+        for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+            trElement.AlternativeText = string.Format("Row {0}", rowIndex);
+
+            for (colIndex = 0; colIndex < colCount; colIndex++)
+            {
+                int colSpan = 1;
+                int rowSpan = 1;
+
+                if (colIndex == 1 && rowIndex == 1)
+                {
+                    colSpan = 2;
+                    rowSpan = 2;
+                }
+                else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
+                {
+                    continue;
+                }
+                else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
+                {
+                    continue;
+                }
+
+                Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+                tdElement.SetText(String.Format("Cell [{0}, {1}]", rowIndex, colIndex));
+
+                tdElement.BackgroundColor = Aspose.Pdf.Color.Yellow;
+                tdElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
+
+                tdElement.IsNoBorder = false;
+                tdElement.Margin = new Aspose.Pdf.MarginInfo(8.0, 2.0, 8.0, 2.0);
+
+                tdElement.Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+
+                var cellTextState = new Aspose.Pdf.Text.TextState();
+                cellTextState.ForegroundColor = Aspose.Pdf.Color.DarkBlue;
+                cellTextState.FontSize = 7.5F;
+                cellTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+                cellTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+                tdElement.DefaultCellTextState = cellTextState;
+
+                tdElement.IsWordWrapped = true;
+                tdElement.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Center;
+
+                tdElement.ColSpan = colSpan;
+                tdElement.RowSpan = rowSpan;
+            }
+        }
+
+        Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+        footTrElement.AlternativeText = "Foot Row";
+
+        footTrElement.BackgroundColor = Aspose.Pdf.Color.LightSeaGreen;
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+            tdElement.SetText(String.Format("Foot {0}", colIndex));
+
+            tdElement.Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+            tdElement.StructureTextState.FontSize = 7F;
+            tdElement.StructureTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        }
+
+        Aspose.Pdf.LogicalStructure.StructureAttributes tableAttributes = tableElement.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Table);
+        var summaryAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Summary);
+        summaryAttribute.SetStringValue("The summary text for table");
+        tableAttributes.SetAttribute(summaryAttribute);
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "CreateTableElement_out.pdf");
+    }
+
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateTableElement_out.pdf"))
+    {
+        bool isPdfUaCompliance = document.Validate(dataDir + "CreateTableElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+    }
 }
+```
+{{< /tab >}}
 
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateTable()
 {
-    TableTRElement trElement = tableTBodyElement.CreateTR();
-    trElement.AlternativeText = String.Format("Ligne {0}", rowIndex);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using var document1 = new Aspose.Pdf.Document();
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
+
+    taggedContent.SetTitle("Example table");
+    taggedContent.SetLanguage("en-US");
+
+    // Get root structure element
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+    Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+    rootElement.AppendChild(tableElement);
+
+    tableElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.2F, Aspose.Pdf.Color.DarkBlue);
+
+    Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
+    Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
+    Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
+    int rowCount = 50;
+    int colCount = 4;
+    int rowIndex;
+    int colIndex;
+
+    Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+    headTrElement.AlternativeText = "Head Row";
+
+    headTrElement.BackgroundColor = Aspose.Pdf.Color.LightGray;
 
     for (colIndex = 0; colIndex < colCount; colIndex++)
     {
-        int colSpan = 1;
-        int rowSpan = 1;
+        Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+        thElement.SetText(String.Format("Head {0}", colIndex));
 
-        if (colIndex == 1 && rowIndex == 1)
-        {
-            colSpan = 2;
-            rowSpan = 2;
-        }
-        else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
-        {
-            continue;
-        }
-        else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
-        {
-            continue;
-        }
+        thElement.BackgroundColor = Aspose.Pdf.Color.GreenYellow;
+        thElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
 
-        TableTDElement tdElement = trElement.CreateTD();
-        tdElement.SetText(String.Format("Cellule [{0}, {1}]", rowIndex, colIndex));
+        thElement.IsNoBorder = true;
+        thElement.Margin = new Aspose.Pdf.MarginInfo(16.0, 2.0, 8.0, 2.0);
 
-
-        tdElement.BackgroundColor = Color.Yellow;
-        tdElement.Border = new BorderInfo(BorderSide.All, 4.0F, Color.Gray);
-
-        tdElement.IsNoBorder = false;
-        tdElement.Margin = new MarginInfo(8.0, 2.0, 8.0, 2.0);
-
-        tdElement.Alignment = HorizontalAlignment.Center;
-
-        TextState cellTextState = new TextState();
-        cellTextState.ForegroundColor = Color.DarkBlue;
-        cellTextState.FontSize = 7.5F;
-        cellTextState.FontStyle = FontStyles.Bold;
-        cellTextState.Font = FontRepository.FindFont("Arial");
-        tdElement.DefaultCellTextState = cellTextState;
-
-        tdElement.IsWordWrapped = true;
-        tdElement.VerticalAlignment = VerticalAlignment.Center;
-
-        tdElement.ColSpan = colSpan;
-        tdElement.RowSpan = rowSpan;
+        thElement.Alignment = Aspose.Pdf.HorizontalAlignment.Right;
     }
-}
 
-TableTRElement footTrElement = tableTFootElement.CreateTR();
-footTrElement.AlternativeText = "Ligne de pied";
+    for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
+    {
+        Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+        trElement.AlternativeText = string.Format("Row {0}", rowIndex);
 
-footTrElement.BackgroundColor = Color.LightSeaGreen;
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            int colSpan = 1;
+            int rowSpan = 1;
 
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.CreateTD();
-    tdElement.SetText(String.Format("Pied {0}", colIndex));
+            if (colIndex == 1 && rowIndex == 1)
+            {
+                colSpan = 2;
+                rowSpan = 2;
+            }
+            else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
+            {
+                continue;
+            }
+            else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
+            {
+                continue;
+            }
 
-    tdElement.Alignment = HorizontalAlignment.Center;
-    tdElement.StructureTextState.FontSize = 7F;
-    tdElement.StructureTextState.FontStyle = FontStyles.Bold;
-}
+            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+            tdElement.SetText(String.Format("Cell [{0}, {1}]", rowIndex, colIndex));
 
+            tdElement.BackgroundColor = Aspose.Pdf.Color.Yellow;
+            tdElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
 
-StructureAttributes tableAttributes = tableElement.Attributes.GetAttributes(AttributeOwnerStandard.Table);
-StructureAttribute summaryAttribute = new StructureAttribute(AttributeKey.Summary);
-summaryAttribute.SetStringValue("Le texte récapitulatif pour la table");
-tableAttributes.SetAttribute(summaryAttribute);
+            tdElement.IsNoBorder = false;
+            tdElement.Margin = new Aspose.Pdf.MarginInfo(8.0, 2.0, 8.0, 2.0);
 
+            tdElement.Alignment = Aspose.Pdf.HorizontalAlignment.Center;
 
-// Sauvegarder le document PDF étiqueté
-document.Save(dataDir + "CreateTableElement.pdf");
+            var cellTextState = new Aspose.Pdf.Text.TextState();
+            cellTextState.ForegroundColor = Aspose.Pdf.Color.DarkBlue;
+            cellTextState.FontSize = 7.5F;
+            cellTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+            cellTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+            tdElement.DefaultCellTextState = cellTextState;
 
-// Vérification de la conformité PDF/UA
-document = new Document(dataDir + "CreateTableElement.pdf");
-bool isPdfUaCompliance = document.Validate(dataDir + "table.xml", PdfFormat.PDF_UA_1);
-Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
-```
-## Style Table Element
+            tdElement.IsWordWrapped = true;
+            tdElement.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Center;
 
-Aspose.PDF pour .NET permet de styliser un tableau dans un document PDF balisé. Pour styliser un tableau, vous pouvez créer un tableau en utilisant la méthode [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) de l'interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) et définir le style du tableau en utilisant les propriétés de la classe [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Voici la liste des propriétés que vous pouvez utiliser pour styliser un tableau :
+            tdElement.ColSpan = colSpan;
+            tdElement.RowSpan = rowSpan;
+        }
+    }
 
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor)
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/border)
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/alignment)
-- [CornerStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle)
-- [Style de coin](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle)
-- [Cassé](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/broken)
-- [Ajustement de colonne](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment)
-- [Largeurs de colonnes](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths)
-- [Bordure de cellule par défaut](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder)
-- [Rembourrage de cellule par défaut](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding)
-- [État du texte de cellule par défaut](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate)
-- [Largeur de colonne par défaut](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth)
-- [Est cassé](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken)
-- [IsBroken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken) - Est brisé
-- [IsBordersIncluded](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded) - Inclut les bordures
-- [Left](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/left) - Gauche
-- [Top](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/top) - Haut
+    Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+    footTrElement.AlternativeText = "Foot Row";
 
-Le code suivant montre comment styliser une table dans un document PDF tagué :
-
-```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// Créer le document
-Document document = new Document();
-ITaggedContent taggedContent = document.TaggedContent;
-
-taggedContent.SetTitle("Style de table exemple");
-taggedContent.SetLanguage("en-US");
-
-// Obtenir l'élément de structure racine
-StructureElement rootElement = taggedContent.RootElement;
-
-// Créer un élément de structure de table
-TableElement tableElement = taggedContent.CreateTableElement();
-rootElement.AppendChild(tableElement);
-
-tableElement.BackgroundColor = Color.Beige;
-tableElement.Border = new BorderInfo(BorderSide.All, 0.80F, Color.Gray);
-tableElement.Alignment = HorizontalAlignment.Center;
-tableElement.Broken = TableBroken.Vertical;
-tableElement.ColumnAdjustment = ColumnAdjustment.AutoFitToWindow;
-tableElement.ColumnWidths = "80 80 80 80 80";
-tableElement.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.50F, Color.DarkBlue);
-tableElement.DefaultCellPadding = new MarginInfo(16.0, 2.0, 8.0, 2.0);
-tableElement.DefaultCellTextState.ForegroundColor = Color.DarkCyan;
-tableElement.DefaultCellTextState.FontSize = 8F;
-tableElement.DefaultColumnWidth = "70";
-
-tableElement.IsBroken = false;
-tableElement.IsBordersIncluded = true;
-
-tableElement.Left = 0F;
-tableElement.Top = 40F;
-
-tableElement.RepeatingColumnsCount = 2;
-tableElement.RepeatingRowsCount = 3;
-TextState rowStyle = new TextState();
-rowStyle.BackgroundColor = Color.LightCoral;
-tableElement.RepeatingRowsStyle = rowStyle;
-
-TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
-TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
-TableTFootElement tableTFootElement = tableElement.CreateTFoot();
-int rowCount = 10;
-int colCount = 5;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.CreateTR();
-headTrElement.AlternativeText = "Ligne d'en-tête";
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.CreateTH();
-    thElement.SetText(String.Format("En-tête {0}", colIndex));
-}
-
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.CreateTR();
-    trElement.AlternativeText = String.Format("Ligne {0}", rowIndex);
+    footTrElement.BackgroundColor = Aspose.Pdf.Color.LightSeaGreen;
 
     for (colIndex = 0; colIndex < colCount; colIndex++)
     {
-        TableTDElement tdElement = trElement.CreateTD();
-        tdElement.SetText(String.Format("Cellule [{0}, {1}]", rowIndex, colIndex));
+        Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+        tdElement.SetText(String.Format("Foot {0}", colIndex));
+
+        tdElement.Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+        tdElement.StructureTextState.FontSize = 7F;
+        tdElement.StructureTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+    }
+
+    Aspose.Pdf.LogicalStructure.StructureAttributes tableAttributes = tableElement.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Table);
+    var summaryAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Summary);
+    summaryAttribute.SetStringValue("The summary text for table");
+    tableAttributes.SetAttribute(summaryAttribute);
+
+    // Save Tagged PDF Document
+    document1.Save(dataDir + "CreateTableElement_out.pdf");
+
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "CreateTableElement_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "CreateTableElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Styliser un élément de tableau
+
+Aspose.PDF for .NET permet de styliser un tableau dans un document PDF tagué. Afin de styliser un tableau, vous pouvez créer un tableau en utilisant la méthode [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) de l'interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) et définir le style du tableau en utilisant les propriétés de la classe [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Voici la liste des propriétés que vous pouvez utiliser pour styliser un tableau :
+
+- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/border).
+- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
+- [CornerStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
+- [Broken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
+- [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
+- [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
+- [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
+- [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
+- [DefaultColumnWidth](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
+- [IsBroken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
+- [IsBordersIncluded](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
+- [Left](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/left).
+- [Top](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/top).
+
+Le code suivant montre comment styliser un tableau dans un document PDF tagué :
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void StyleTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        taggedContent.SetTitle("Example table style");
+        taggedContent.SetLanguage("en-US");
+
+        // Get root structure element
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+        // Create table structure element
+        Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+        rootElement.AppendChild(tableElement);
+
+        tableElement.BackgroundColor = Aspose.Pdf.Color.Beige;
+        tableElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.80F, Aspose.Pdf.Color.Gray);
+        tableElement.Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+        tableElement.Broken = Aspose.Pdf.TableBroken.Vertical;
+        tableElement.ColumnAdjustment = Aspose.Pdf.ColumnAdjustment.AutoFitToWindow;
+        tableElement.ColumnWidths = "80 80 80 80 80";
+        tableElement.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.50F, Aspose.Pdf.Color.DarkBlue);
+        tableElement.DefaultCellPadding = new Aspose.Pdf.MarginInfo(16.0, 2.0, 8.0, 2.0);
+        tableElement.DefaultCellTextState.ForegroundColor = Aspose.Pdf.Color.DarkCyan;
+        tableElement.DefaultCellTextState.FontSize = 8F;
+        tableElement.DefaultColumnWidth = "70";
+
+        tableElement.IsBroken = false;
+        tableElement.IsBordersIncluded = true;
+
+        tableElement.Left = 0F;
+        tableElement.Top = 40F;
+
+        tableElement.RepeatingColumnsCount = 2;
+        tableElement.RepeatingRowsCount = 3;
+        var rowStyle = new Aspose.Pdf.Text.TextState();
+        rowStyle.BackgroundColor = Aspose.Pdf.Color.LightCoral;
+        tableElement.RepeatingRowsStyle = rowStyle;
+
+        Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
+        Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
+        Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
+        int rowCount = 10;
+        int colCount = 5;
+        int rowIndex;
+        int colIndex;
+
+        Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+        headTrElement.AlternativeText = "Head Row";
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+            thElement.SetText(String.Format("Head {0}", colIndex));
+        }
+
+        for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+            trElement.AlternativeText = String.Format("Row {0}", rowIndex);
+
+            for (colIndex = 0; colIndex < colCount; colIndex++)
+            {
+                Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+                tdElement.SetText(String.Format("Cell [{0}, {1}]", rowIndex, colIndex));
+            }
+        }
+
+        Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+        footTrElement.AlternativeText = "Foot Row";
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+            tdElement.SetText(String.Format("Foot {0}", colIndex));
+        }
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "StyleTableElement_out.pdf");
+    }
+
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableElement_out.pdf"))
+    {
+        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
-
-TableTRElement footTrElement = tableTFootElement.CreateTR();
-footTrElement.AlternativeText = "Ligne de pied";
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.CreateTD();
-    tdElement.SetText(String.Format("Pied {0}", colIndex));
-}
-
-// Sauvegarder le document PDF tagué
-document.Save(dataDir + "StyleTableElement.pdf");
-
-// Vérifier la conformité PDF/UA
-document = new Document(dataDir + "StyleTableElement.pdf");
-bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableElement.xml", PdfFormat.PDF_UA_1);
-Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
 ```
-## Style Table Row
+{{< /tab >}}
 
-Aspose.PDF pour .NET permet de styliser une ligne de tableau dans un document PDF tagué. Pour styliser une ligne de tableau, vous pouvez utiliser les propriétés de la classe [TableTRElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tabletrelement). Voici la liste des propriétés que vous pouvez utiliser pour styliser une ligne de tableau :
-
-- Couleur de Fond
-- Bordure
-- Bordure de Cellule par Défaut
-- Hauteur Minimale de la Ligne
-- Hauteur Fixe de la Ligne
-- EstDansNouvellePage
-- LigneCassée
-- État du Texte de la Cellule par Défaut
-- Rembourrage de Cellule par Défaut
-- Alignement Vertical
-
-Le fragment de code suivant montre comment styliser une ligne de tableau dans le document PDF tagué :
-
+{{< tab tabNum="2" >}}
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// Créer un document
-Document document = new Document();
-ITaggedContent taggedContent = document.TaggedContent;
-
-taggedContent.SetTitle("Exemple de style de ligne de tableau");
-taggedContent.SetLanguage("en-US");
-
-// Obtenir l'élément de structure racine
-StructureElement rootElement = taggedContent.RootElement;
-
-// Créer un élément de structure de tableau
-TableElement tableElement = taggedContent.CreateTableElement();
-rootElement.AppendChild(tableElement);
-
-TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
-TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
-TableTFootElement tableTFootElement = tableElement.CreateTFoot();
-int rowCount = 7;
-int colCount = 3;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.CreateTR();
-headTrElement.AlternativeText = "Ligne d'En-tête";
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void StyleTable()
 {
-    TableTHElement thElement = headTrElement.CreateTH();
-    thElement.SetText(String.Format("En-tête {0}", colIndex));
-}
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.CreateTR();
-    trElement.AlternativeText = String.Format("Ligne {0}", rowIndex);
+    // Create PDF document
+    using var document1 = new Aspose.Pdf.Document();
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
-    trElement.BackgroundColor = Color.LightGoldenrodYellow;
-    trElement.Border = new BorderInfo(BorderSide.All, 0.75F, Color.DarkGray);
+    taggedContent.SetTitle("Example table style");
+    taggedContent.SetLanguage("en-US");
 
-    trElement.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.50F, Color.Blue);
-    trElement.MinRowHeight = 100.0;
-    trElement.FixedRowHeight = 120.0;
-    trElement.IsInNewPage = (rowIndex % 3 == 1);
-    trElement.IsRowBroken = true;
+    // Get root structure element
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-    TextState cellTextState = new TextState();
-    cellTextState.ForegroundColor = Color.Red;
-    trElement.DefaultCellTextState = cellTextState;
+    // Create table structure element
+    Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+    rootElement.AppendChild(tableElement);
 
-    trElement.DefaultCellPadding = new MarginInfo(16.0, 2.0, 8.0, 2.0);
-    trElement.VerticalAlignment = VerticalAlignment.Bottom;
+    tableElement.BackgroundColor = Aspose.Pdf.Color.Beige;
+    tableElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.80F, Aspose.Pdf.Color.Gray);
+    tableElement.Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+    tableElement.Broken = Aspose.Pdf.TableBroken.Vertical;
+    tableElement.ColumnAdjustment = Aspose.Pdf.ColumnAdjustment.AutoFitToWindow;
+    tableElement.ColumnWidths = "80 80 80 80 80";
+    tableElement.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.50F, Aspose.Pdf.Color.DarkBlue);
+    tableElement.DefaultCellPadding = new Aspose.Pdf.MarginInfo(16.0, 2.0, 8.0, 2.0);
+    tableElement.DefaultCellTextState.ForegroundColor = Aspose.Pdf.Color.DarkCyan;
+    tableElement.DefaultCellTextState.FontSize = 8F;
+    tableElement.DefaultColumnWidth = "70";
+
+    tableElement.IsBroken = false;
+    tableElement.IsBordersIncluded = true;
+
+    tableElement.Left = 0F;
+    tableElement.Top = 40F;
+
+    tableElement.RepeatingColumnsCount = 2;
+    tableElement.RepeatingRowsCount = 3;
+    var rowStyle = new Aspose.Pdf.Text.TextState();
+    rowStyle.BackgroundColor = Aspose.Pdf.Color.LightCoral;
+    tableElement.RepeatingRowsStyle = rowStyle;
+
+    Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
+    Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
+    Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
+    int rowCount = 10;
+    int colCount = 5;
+    int rowIndex;
+    int colIndex;
+
+    Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+    headTrElement.AlternativeText = "Head Row";
 
     for (colIndex = 0; colIndex < colCount; colIndex++)
     {
-        TableTDElement tdElement = trElement.CreateTD();
-        tdElement.SetText(String.Format("Cellule [{0}, {1}]", rowIndex, colIndex));
+        Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+        thElement.SetText(String.Format("Head {0}", colIndex));
     }
-}
 
-TableTRElement footTrElement = tableTFootElement.CreateTR();
-footTrElement.AlternativeText = "Ligne de Pied";
+    for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
+    {
+        Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+        trElement.AlternativeText = String.Format("Row {0}", rowIndex);
 
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.CreateTD();
-    tdElement.SetText(String.Format("Pied {0}", colIndex));
-}
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+            tdElement.SetText(String.Format("Cell [{0}, {1}]", rowIndex, colIndex));
+        }
+    }
 
-// Sauvegarder le document PDF tagué
-document.Save(dataDir + "StyleTableRow.pdf");
-
-// Vérification de la conformité PDF/UA
-document = new Document(dataDir + "StyleTableRow.pdf");
-bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableRow.xml", PdfFormat.PDF_UA_1);
-Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
-```
-## Style de cellule de tableau
-
-Aspose.PDF pour .NET permet de styliser une cellule de tableau dans un document PDF balisé. Pour styliser une cellule de tableau, vous pouvez utiliser les propriétés de la classe [TableCellElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement). Voici la liste des propriétés que vous pouvez utiliser pour styliser une cellule de tableau :
-
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor)
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/border)
-- [IsNoBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder)
-- [Margin](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin)
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment)
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate)
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate)
-- [IsWordWrapped](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped)
-- [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment)
-- [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan)
-- [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan)
-
-Le code suivant montre comment styliser une cellule de tableau dans un document PDF balisé :
-
-```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// Créer un document
-Document document = new Document();
-ITaggedContent taggedContent = document.TaggedContent;
-
-taggedContent.SetTitle("Style de cellule de tableau exemple");
-taggedContent.SetLanguage("en-US");
-
-// Obtenir l'élément de structure racine
-StructureElement rootElement = taggedContent.RootElement;
-
-// Créer un élément de structure de tableau
-TableElement tableElement = taggedContent.CreateTableElement();
-rootElement.AppendChild(tableElement);
-
-TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
-TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
-TableTFootElement tableTFootElement = tableElement.CreateTFoot();
-int rowCount = 4;
-int colCount = 4;
-int rowIndex;
-int colIndex;
-
-TableTRElement headTrElement = tableTHeadElement.CreateTR();
-headTrElement.AlternativeText = "Ligne d'en-tête";
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTHElement thElement = headTrElement.CreateTH();
-    thElement.SetText(String.Format("En-tête {0}", colIndex));
-
-    thElement.BackgroundColor = Color.GreenYellow;
-    thElement.Border = new BorderInfo(BorderSide.All, 4.0F, Color.Gray);
-
-    thElement.IsNoBorder = true;
-    thElement.Margin = new MarginInfo(16.0, 2.0, 8.0, 2.0);
-
-    thElement.Alignment = HorizontalAlignment.Right;
-}
-
-for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
-{
-    TableTRElement trElement = tableTBodyElement.CreateTR();
-    trElement.AlternativeText = String.Format("Ligne {0}", rowIndex);
+    Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+    footTrElement.AlternativeText = "Foot Row";
 
     for (colIndex = 0; colIndex < colCount; colIndex++)
     {
-        int colSpan = 1;
-        int rowSpan = 1;
+        Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+        tdElement.SetText(String.Format("Foot {0}", colIndex));
+    }
 
-        if (colIndex == 1 && rowIndex == 1)
+    // Save Tagged PDF Document
+    document1.Save(dataDir + "StyleTableElement_out.pdf");
+
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "StyleTableElement_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "StyleTableElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Styliser une ligne de tableau
+
+Aspose.PDF for .NET permet de styliser une ligne de tableau dans un document PDF tagué. Afin de styliser une ligne de tableau, vous pouvez utiliser les propriétés de la classe [TableTRElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tabletrelement). Voici la liste des propriétés que vous pouvez utiliser pour styliser une ligne de tableau :
+
+- BackgroundColor.
+- Border.
+- DefaultCellBorder.
+- MinRowHeight.
+- FixedRowHeight.
+- IsInNewPage.
+- IsRowBroken.
+- DefaultCellTextState.
+- DefaultCellPadding.
+- VerticalAlignment.
+
+Le code suivant montre comment styliser une ligne de tableau dans le document PDF tagué :
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void StyleTableRow()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        taggedContent.SetTitle("Example table row style");
+        taggedContent.SetLanguage("en-US");
+
+        // Get root structure element
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+        // Create table structure element
+        Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+        rootElement.AppendChild(tableElement);
+
+        Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
+        Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
+        Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
+        int rowCount = 7;
+        int colCount = 3;
+        int rowIndex;
+        int colIndex;
+
+        Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+        headTrElement.AlternativeText = "Head Row";
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
         {
-            colSpan = 2;
-            rowSpan = 2;
+            Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+            thElement.SetText(string.Format("Head {0}", colIndex));
         }
-        else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
+
+        for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
         {
-            continue;
+            Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+            trElement.AlternativeText = string.Format("Row {0}", rowIndex);
+
+            trElement.BackgroundColor = Aspose.Pdf.Color.LightGoldenrodYellow;
+            trElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.75F, Aspose.Pdf.Color.DarkGray);
+
+            trElement.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.50F, Aspose.Pdf.Color.Blue);
+            trElement.MinRowHeight = 100.0;
+            trElement.FixedRowHeight = 120.0;
+            trElement.IsInNewPage = (rowIndex % 3 == 1);
+            trElement.IsRowBroken = true;
+
+            var cellTextState = new Aspose.Pdf.Text.TextState();
+            cellTextState.ForegroundColor = Aspose.Pdf.Color.Red;
+            trElement.DefaultCellTextState = cellTextState;
+
+            trElement.DefaultCellPadding = new Aspose.Pdf.MarginInfo(16.0, 2.0, 8.0, 2.0);
+            trElement.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Bottom;
+
+            for (colIndex = 0; colIndex < colCount; colIndex++)
+            {
+                Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+                tdElement.SetText(string.Format("Cell [{0}, {1}]", rowIndex, colIndex));
+            }
         }
-        else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
+
+        Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+        footTrElement.AlternativeText = "Foot Row";
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
         {
-            continue;
+            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+            tdElement.SetText(string.Format("Foot {0}", colIndex));
         }
 
-        TableTDElement tdElement = trElement.CreateTD();
-        tdElement.SetText(String.Format("Cellule [{0}, {1}]", rowIndex, colIndex));
+        // Save Tagged PDF Document
+        document.Save(dataDir + "StyleTableRow_out.pdf");
+    }
 
-        tdElement.BackgroundColor = Color.Yellow;
-        tdElement.Border = new BorderInfo(BorderSide.All, 4.0F, Color.Gray);
-
-        tdElement.IsNoBorder = false;
-        tdElement.Margin = new MarginInfo(8.0, 2.0, 8.0, 2.0);
-
-        tdElement.Alignment = HorizontalAlignment.Center;
-
-        TextState cellTextState = new TextState();
-        cellTextState.ForegroundColor = Color.DarkBlue;
-        cellTextState.FontSize = 7.5F;
-        cellTextState.FontStyle = FontStyles.Bold;
-        cellTextState.Font = FontRepository.FindFont("Arial");
-        tdElement.DefaultCellTextState = cellTextState;
-
-        tdElement.IsWordWrapped = true;
-        tdElement.VerticalAlignment = VerticalAlignment.Center;
-
-        tdElement.ColSpan = colSpan;
-        tdElement.RowSpan = rowSpan;
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableRow_out.pdf"))
+    {
+        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableRow_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
-
-TableTRElement footTrElement = tableTFootElement.CreateTR();
-footTrElement.AlternativeText = "Ligne de pied";
-
-for (colIndex = 0; colIndex < colCount; colIndex++)
-{
-    TableTDElement tdElement = footTrElement.CreateTD();
-    tdElement.SetText(String.Format("Pied {0}", colIndex));
-}
-
-// Enregistrer le document PDF balisé
-document.Save(dataDir + "StyleTableCell.pdf");
-
-// Vérifier la conformité PDF/UA
-document = new Document(dataDir + "StyleTableCell.pdf");
-bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableCell.xml", PdfFormat.PDF_UA_1);
-Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
 ```
+{{< /tab >}}
 
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void StyleTableRow()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using var document1 = new Aspose.Pdf.Document();
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
+
+    taggedContent.SetTitle("Example table row style");
+    taggedContent.SetLanguage("en-US");
+
+    // Get root structure element
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+    // Create table structure element
+    Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+    rootElement.AppendChild(tableElement);
+
+    Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
+    Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
+    Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
+    int rowCount = 7;
+    int colCount = 3;
+    int rowIndex;
+    int colIndex;
+
+    Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+    headTrElement.AlternativeText = "Head Row";
+
+    for (colIndex = 0; colIndex < colCount; colIndex++)
+    {
+        Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+        thElement.SetText(string.Format("Head {0}", colIndex));
+    }
+
+    for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
+    {
+        Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+        trElement.AlternativeText = string.Format("Row {0}", rowIndex);
+
+        trElement.BackgroundColor = Aspose.Pdf.Color.LightGoldenrodYellow;
+        trElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.75F, Aspose.Pdf.Color.DarkGray);
+
+        trElement.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.50F, Aspose.Pdf.Color.Blue);
+        trElement.MinRowHeight = 100.0;
+        trElement.FixedRowHeight = 120.0;
+        trElement.IsInNewPage = (rowIndex % 3 == 1);
+        trElement.IsRowBroken = true;
+
+        var cellTextState = new Aspose.Pdf.Text.TextState();
+        cellTextState.ForegroundColor = Aspose.Pdf.Color.Red;
+        trElement.DefaultCellTextState = cellTextState;
+
+        trElement.DefaultCellPadding = new Aspose.Pdf.MarginInfo(16.0, 2.0, 8.0, 2.0);
+        trElement.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Bottom;
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+            tdElement.SetText(string.Format("Cell [{0}, {1}]", rowIndex, colIndex));
+        }
+    }
+
+    Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+    footTrElement.AlternativeText = "Foot Row";
+
+    for (colIndex = 0; colIndex < colCount; colIndex++)
+    {
+        Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+        tdElement.SetText(string.Format("Foot {0}", colIndex));
+    }
+
+    // Save Tagged PDF Document
+    document1.Save(dataDir + "StyleTableRow_out.pdf");
+
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "StyleTableRow_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "StyleTableRow_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Styliser une cellule de tableau
+
+Aspose.PDF for .NET permet de styliser une cellule de tableau dans un document PDF tagué. Afin de styliser une cellule de tableau, vous pouvez utiliser les propriétés de la classe [TableCellElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement). Voici la liste des propriétés que vous pouvez utiliser pour styliser une cellule de tableau :
+
+- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
+- [IsNoBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
+- [Margin](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
+- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
+- [IsWordWrapped](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
+- [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
+- [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
+- [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
+
+Le code suivant montre comment styliser une cellule de tableau dans le document PDF tagué :
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void StyleTableCell()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        taggedContent.SetTitle("Example table cell style");
+        taggedContent.SetLanguage("en-US");
+
+        // Get root structure element
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+        // Create table structure element
+        Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+        rootElement.AppendChild(tableElement);
+
+        Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
+        Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
+        Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
+        int rowCount = 4;
+        int colCount = 4;
+        int rowIndex;
+        int colIndex;
+
+        Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+        headTrElement.AlternativeText = "Head Row";
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+            thElement.SetText(string.Format("Head {0}", colIndex));
+
+            thElement.BackgroundColor = Aspose.Pdf.Color.GreenYellow;
+            thElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
+
+            thElement.IsNoBorder = true;
+            thElement.Margin = new Aspose.Pdf.MarginInfo(16.0, 2.0, 8.0, 2.0);
+
+            thElement.Alignment = Aspose.Pdf.HorizontalAlignment.Right;
+        }
+
+        for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+            trElement.AlternativeText = string.Format("Row {0}", rowIndex);
+
+            for (colIndex = 0; colIndex < colCount; colIndex++)
+            {
+                int colSpan = 1;
+                int rowSpan = 1;
+
+                if (colIndex == 1 && rowIndex == 1)
+                {
+                    colSpan = 2;
+                    rowSpan = 2;
+                }
+                else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
+                {
+                    continue;
+                }
+                else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
+                {
+                    continue;
+                }
+
+                Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+                tdElement.SetText(string.Format("Cell [{0}, {1}]", rowIndex, colIndex));
+
+                tdElement.BackgroundColor = Aspose.Pdf.Color.Yellow;
+                tdElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
+
+                tdElement.IsNoBorder = false;
+                tdElement.Margin = new Aspose.Pdf.MarginInfo(8.0, 2.0, 8.0, 2.0);
+
+                tdElement.Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+
+                var cellTextState = new Aspose.Pdf.Text.TextState();
+                cellTextState.ForegroundColor = Aspose.Pdf.Color.DarkBlue;
+                cellTextState.FontSize = 7.5F;
+                cellTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+                cellTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+                tdElement.DefaultCellTextState = cellTextState;
+
+                tdElement.IsWordWrapped = true;
+                tdElement.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Center;
+
+                tdElement.ColSpan = colSpan;
+                tdElement.RowSpan = rowSpan;
+            }
+        }
+
+        Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+        footTrElement.AlternativeText = "Foot Row";
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+            tdElement.SetText(string.Format("Foot {0}", colIndex));
+        }
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "StyleTableCell_out.pdf");
+    }
+
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableCell_out.pdf"))
+    {
+        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableCell_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void StyleTableCell()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using var document1 = new Aspose.Pdf.Document();
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
+
+    taggedContent.SetTitle("Example table cell style");
+    taggedContent.SetLanguage("en-US");
+
+    // Get root structure element
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+    // Create table structure element
+    Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+    rootElement.AppendChild(tableElement);
+
+    Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
+    Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
+    Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
+    int rowCount = 4;
+    int colCount = 4;
+    int rowIndex;
+    int colIndex;
+
+    Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+    headTrElement.AlternativeText = "Head Row";
+
+    for (colIndex = 0; colIndex < colCount; colIndex++)
+    {
+        Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+        thElement.SetText(string.Format("Head {0}", colIndex));
+
+        thElement.BackgroundColor = Aspose.Pdf.Color.GreenYellow;
+        thElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
+
+        thElement.IsNoBorder = true;
+        thElement.Margin = new Aspose.Pdf.MarginInfo(16.0, 2.0, 8.0, 2.0);
+
+        thElement.Alignment = Aspose.Pdf.HorizontalAlignment.Right;
+    }
+
+    for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
+    {
+        Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+        trElement.AlternativeText = string.Format("Row {0}", rowIndex);
+
+        for (colIndex = 0; colIndex < colCount; colIndex++)
+        {
+            int colSpan = 1;
+            int rowSpan = 1;
+
+            if (colIndex == 1 && rowIndex == 1)
+            {
+                colSpan = 2;
+                rowSpan = 2;
+            }
+            else if (colIndex == 2 && (rowIndex == 1 || rowIndex == 2))
+            {
+                continue;
+            }
+            else if (rowIndex == 2 && (colIndex == 1 || colIndex == 2))
+            {
+                continue;
+            }
+
+            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+            tdElement.SetText(string.Format("Cell [{0}, {1}]", rowIndex, colIndex));
+
+            tdElement.BackgroundColor = Aspose.Pdf.Color.Yellow;
+            tdElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
+
+            tdElement.IsNoBorder = false;
+            tdElement.Margin = new Aspose.Pdf.MarginInfo(8.0, 2.0, 8.0, 2.0);
+
+            tdElement.Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+
+            var cellTextState = new Aspose.Pdf.Text.TextState();
+            cellTextState.ForegroundColor = Aspose.Pdf.Color.DarkBlue;
+            cellTextState.FontSize = 7.5F;
+            cellTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+            cellTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+            tdElement.DefaultCellTextState = cellTextState;
+
+            tdElement.IsWordWrapped = true;
+            tdElement.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Center;
+
+            tdElement.ColSpan = colSpan;
+            tdElement.RowSpan = rowSpan;
+        }
+    }
+
+    Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+    footTrElement.AlternativeText = "Foot Row";
+
+    for (colIndex = 0; colIndex < colCount; colIndex++)
+    {
+        Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+        tdElement.SetText(string.Format("Foot {0}", colIndex));
+    }
+
+    // Save Tagged PDF Document
+    document1.Save(dataDir + "StyleTableCell_out.pdf");
+
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "StyleTableCell_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "StyleTableCell_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -578,21 +1053,21 @@ Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -603,7 +1078,7 @@ Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation de PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -615,5 +1090,3 @@ Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
     }
 }
 </script>
-```
-Sure, I'll need the document or the content you'd like translated to proceed. Please paste the text here.

@@ -1,10 +1,12 @@
 ---
-title: Работа с текстом в PDF с использованием C#
+title: Работа с текстом в PDF с помощью C#
 linktitle: Работа с текстом
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ru/net/working-with-text/
-description: Этот раздел объясняет различные методы работы с текстом. Узнайте, как добавлять, заменять, поворачивать, искать текст с использованием Aspose.PDF и C#.
+description: В этом разделе объясняются различные методы работы с текстом. Узнайте, как добавлять, заменять, поворачивать и искать текст с помощью Aspose.PDF и C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Работа с текстом в PDF с использованием C#",
-    "alternativeHeadline": "Добавление, поворот, поиск и удаление текста в файле PDF",
+    "headline": "Working with Text in PDF using C#",
+    "alternativeHeadline": "Enhanced Text Manipulation Features in PDF with C#",
+    "abstract": "Откройте для себя мощные возможности работы с текстом в PDF-файлах с помощью Aspose.PDF для .NET. Эта функция позволяет пользователям легко добавлять, заменять, поворачивать и форматировать текст в PDF-документах, улучшая интерактивность и настройку документов. Обогатите свои приложения эффективными функциями поиска и гибкими методами обработки текста, разработанными специально для разработчиков на C#",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, добавление текста, поиск текста, удаление текста, манипулирование текстом в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "PDF manipulation, add text to PDF, rotate text in PDF, search text in PDF, replace text in PDF, text formatting inside PDF, Aspose.PDF for .NET, text handling techniques, PDF document generation, Floating Box tool",
+    "wordcount": "371",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,22 +74,23 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-text/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел объясняет различные методы работы с текстом. Узнайте, как добавлять, заменять, поворачивать, искать текст с использованием Aspose.PDF и C#."
+    "dateModified": "2024-11-26",
+    "description": "Этот раздел объясняет различные методы работы с текстом. Узнайте, как добавлять, заменять, поворачивать, искать текст с помощью Aspose.PDF и C#."
 }
 </script>
-Иногда нам всем нужно добавить текст в файл PDF. Например, когда вы хотите добавить перевод под основной текст, разместить подпись рядом с изображением или просто заполнить форму заявления. Также полезно, если все текстовые элементы можно форматировать в желаемом стиле. Самые популярные манипуляции с текстом в вашем файле PDF: добавление текста в PDF, форматирование текста внутри файла PDF, замена и поворот текста в вашем документе. **Aspose.PDF для .NET** - лучшее решение, которое имеет все необходимое для работы с содержимым PDF.
 
- Вы можете делать следующее:
+Всем нам иногда нужно было добавить текст в файл PDF. Например, когда вы хотите добавить перевод под основным текстом, разместить подпись рядом с изображением или просто заполнить форму заявления. Также полезно, если все текстовые элементы можно отформатировать по своему вкусу. Самые популярные операции с текстом в вашем PDF-файле: добавление текста в PDF, форматирование текста в файле PDF, замена и поворот текста в документе. **Aspose.PDF for .NET** — лучшее решение, в котором есть всё необходимое для работы с содержимым PDF.
 
-- [Добавить текст в файл PDF](/pdf/ru/net/add-text-to-pdf-file/) - добавьте текст в ваш PDF, используйте шрифты из потока и файлов, добавьте HTML-строку, добавьте гиперссылку и т. д.
-- [Всплывающая подсказка PDF](/pdf/ru/net/pdf-tooltip/) - вы можете добавить всплывающую подсказку к искомому тексту, добавив невидимую кнопку с использованием C#.
-- [Форматирование текста внутри PDF](/pdf/ru/net/text-formatting-inside-pdf/) - Множество функций, которые вы можете добавить в свой документ при форматировании текста внутри него.
-- [Форматирование текста внутри PDF](/pdf/ru/net/text-formatting-inside-pdf/) - Множество функций, которые вы можете добавить в свой документ, форматируя текст внутри него.
-- [Замена текста в PDF](/pdf/ru/net/replace-text-in-pdf/) - для замены текста на всех страницах PDF-документа, вам сначала нужно использовать TextFragmentAbsorber.
-- [Поворот текста внутри PDF](/pdf/ru/net/rotate-text-inside-pdf/) - поворот текста внутри PDF с использованием свойства поворота класса TextFragment.
-- [Поиск и получение текста со страниц PDF-документа](/pdf/ru/net/search-and-get-text-from-pdf/) - вы можете использовать класс TextFragmentAbsorber для поиска и получения текста со страниц.
-- [Определение переноса строк](/pdf/ru/net/determine-line-break/) - в этой теме объясняется, как отслеживать перенос строк многострочных текстовых фрагментов.
+Вы можете:
+
+- [Добавить текст в PDF-файл](/pdf/ru/net/add-text-to-pdf-file/) — добавляйте текст в свой PDF-файл, используйте шрифты из потока и файлов, добавляйте HTML-строку, добавляйте гиперссылку и т. д.
+- [Всплывающая подсказка PDF](/pdf/ru/net/pdf-tooltip/) — вы можете добавить всплывающую подсказку к искомому тексту, добавив невидимую кнопку с помощью C#.
+- [Форматирование текста внутри PDF](/pdf/ru/net/text-formatting-inside-pdf/) — множество функций, которые вы можете добавить в свой документ при форматировании текста внутри него. Добавьте отступ строки, добавьте границу текста, добавьте подчёркивание текста, добавьте перенос строки с помощью библиотеки Aspose.PDF.
+- [Использование FloatingBox](/pdf/ru/net/floating-box/) — инструмент Floating Box — это специальный инструмент для размещения текста и другого содержимого на странице PDF.
+- [Замена текста в PDF](/pdf/ru/net/replace-text-in-pdf/) — для замены текста на всех страницах PDF-документа. Сначала вам нужно использовать TextFragmentAbsorber.
+- [Поворот текста внутри PDF](/pdf/ru/net/rotate-text-inside-pdf/) — поворачивайте текст внутри PDF с помощью свойства поворота класса TextFragment.
+- [Поиск и получение текста со страниц PDF-документа](/pdf/ru/net/search-and-get-text-from-pdf/) — вы можете использовать класс TextFragmentAbsorber для поиска и получения текста со страниц.
+- [Определение переноса строки](/pdf/ru/net/determine-line-break/) — в этой теме объясняется, как отслеживать перенос строк многострочных текстовых фрагментов.
 
 <script type="application/ld+json">
 {
@@ -151,4 +155,3 @@ sitemap:
     }
 }
 </script>
-

@@ -2,6 +2,8 @@
 title: Navigation and Interaction in PDF
 linktitle: Navigation and interaction
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 140
 url: /net/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks.

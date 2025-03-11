@@ -2,6 +2,8 @@
 title: Integrate Table with Data Sources PDF
 linktitle: Integrate Table
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/integrate-table/
 description: This article shows how to integrate PDF tables. Integrate Table with Database and determine if the table will split on the current page.

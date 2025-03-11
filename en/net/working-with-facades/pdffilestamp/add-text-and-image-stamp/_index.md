@@ -1,6 +1,8 @@
 ---
 title: Add Text and Image Stamp
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/add-text-and-image-stamp/
 description: This section explains how to add Text and Image Stamp with Aspose.PDF Facades using PdfFileStamp Class.

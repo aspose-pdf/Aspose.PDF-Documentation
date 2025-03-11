@@ -2,6 +2,8 @@
 title: How to run Aspose.PDF for .NET 6 in Docker
 linktitle: Using Aspose.PDF for .NET 6 in Docker
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/docker/dotnet6/
 description: Integrate Aspose.PDF functionality into .NET 6 application using Docker Linux or Windows containers 

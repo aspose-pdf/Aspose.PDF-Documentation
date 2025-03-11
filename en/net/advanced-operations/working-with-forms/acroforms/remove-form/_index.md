@@ -2,6 +2,8 @@
 title: Delete Forms from PDF in C#
 linktitle: Delete Forms
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/remove-form/
 description: Remove Text based on subtype/form with Aspose.PDF for .NET library. Remove all forms from the PDF.

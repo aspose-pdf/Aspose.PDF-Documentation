@@ -2,9 +2,11 @@
 title: Trabajando con XML usando C#
 linktitle: Trabajando con XML
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /es/net/working-with-xml/
-description: Aprende cómo generar un documento PDF desde XML en Aspose.PDF para .NET
+description: Aprende cómo generar un documento PDF a partir de XML en Aspose.PDF for .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabajando con XML usando C#",
-    "alternativeHeadline": "Cómo generar un documento PDF desde XML",
+    "headline": "Working with XML using C#",
+    "alternativeHeadline": "Generate PDF from XML effortlessly with C#",
+    "abstract": "Descubre la poderosa capacidad de generar documentos PDF directamente desde XML usando Aspose.PDF for .NET. Esta función simplifica el proceso de manipulación de datos XML, permitiendo una conversión de documentos sin problemas que mejora la productividad y eficiencia en tus aplicaciones. Aprovecha esta funcionalidad para optimizar tu flujo de trabajo y mejorar la presentación de datos",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, c#, xml en pdf, generar pdf desde pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "genre": "pdf document generation",
+    "wordcount": "178",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,16 +73,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-xml/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aprende cómo generar un documento PDF desde XML en Aspose.PDF para .NET"
+    "dateModified": "2024-11-25",
+    "description": "Aprende cómo generar un documento PDF a partir de XML en Aspose.PDF for .NET"
 }
 </script>
 
-XML (Extensible Markup Language) es una forma de reutilizar datos en un archivo o automatizar el proceso de reemplazar los datos en un archivo con datos de otro archivo. Crear un esquema XML es difícil de acertar; crear varios esquemas entrelazados que se puedan extender es aún más difícil. Aprendamos cómo Aspose.PDF afronta las tareas de trabajar con XML.
+XML (Lenguaje de Marcado Extensible) es una forma de reutilizar datos en un archivo o automatizar el proceso de reemplazar los datos en un archivo con datos de otro archivo. Crear un esquema XML es difícil de hacer correctamente; crear varios esquemas interconectados que se puedan extender es aún más difícil. Aprendamos cómo Aspose.PDF maneja las tareas de trabajar con XML.
 
-- [Esquema XML soportado](/pdf/es/net/supported-xml-schema/) - use el siguiente esquema XML para trabajar con documentos XML.
-- [Ejemplo simple 'Hola Mundo' basado en XML y XSLT](/pdf/es/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - use XSLT para transformar su documento XML existente a PDF.
-- [Generar PDF desde XML](/pdf/es/net/generate-pdf-from-xml/) - Aspose.PDF tiene varias formas de generar PDF basado en un documento XML.
+- [Esquema XML soportado](/pdf/es/net/supported-xml-schema/) - utiliza el siguiente esquema XML para trabajar con documentos XML.
+- [Ejemplo simple de 'Hola Mundo' basado en XML y XSLT](/pdf/es/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - utiliza XSLT para transformar tu documento XML existente a PDF.
+- [Generar PDF a partir de XML](/pdf/es/net/generate-pdf-from-xml/) - Aspose.PDF tiene varias formas de generar PDF basados en documentos XML.
 
 <script type="application/ld+json">
 {
