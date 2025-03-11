@@ -2,80 +2,156 @@
 title: PDFドキュメントをプログラムで保存
 linktitle: PDFを保存
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ja/net/save-pdf-document/
-description: C# Aspose.PDF for .NET PDFライブラリを使ってPDFファイルを保存する方法を学びます。ファイルシステム、ストリーム、WebアプリケーションにPDFドキュメントを保存します。
+description: C# Aspose.PDF for .NET PDFライブラリを使用してPDFファイルを保存する方法を学びます。PDFドキュメントをファイルシステム、ストリーム、およびWebアプリケーションに保存します。
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Save PDF document programmatically",
+    "alternativeHeadline": "Programmatic PDF Saving with C#",
+    "abstract": "開発者がAspose.PDF for .NETを使用してPDFドキュメントを簡単にプログラムで保存する方法を発見してください。この機能は、ファイルシステム、ストリーム、およびWebアプリケーション内で直接PDFを保存することをサポートし、さまざまなユースケースに対応しながら、長期保存およびグラフィックス交換のためのPDF/AおよびPDF/X標準への準拠を確保します。この堅牢な保存メカニズムでPDF処理能力を最適化してください。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "471",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/save-pdf-document/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/save-pdf-document/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
+}
+</script>
 
-次のコードスニペットは、新しいグラフィカルな[Aspose.Drawing](/pdf/ja/net/drawing/)インターフェースでも動作します。
+次のコードスニペットは、[Aspose.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-## ファイルシステムにPDFドキュメントを保存
+## PDFドキュメントをファイルシステムに保存
 
-`Document`クラスの`Save`メソッドを使用して、作成または操作したPDFドキュメントをファイルシステムに保存することができます。
-形式タイプ（オプション）を指定しない場合、ドキュメントはAspose.PDF v.1.7 (*.pdf)形式で保存されます。
+`Document`クラスの`Save`メソッドを使用して、作成または操作されたPDFドキュメントをファイルシステムに保存できます。
+フォーマットタイプ（オプション）を指定しない場合、ドキュメントはAspose.PDF v.1.7（*.pdf）形式で保存されます。
 
 ```csharp
-public static void SaveDocument()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocument()
 {
-    var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-    var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var pdfDocument = new Aspose.Pdf.Document(originalFileName);
-    // 何か操作を行う、例えば新しい空ページを追加
-    pdfDocument.Pages.Add();
-    pdfDocument.Save(modifiedFileName);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save PDF document
+        document.Save(dataDir + "SimpleResume_out.pdf");
+    }
 }
 ```
-## ストリームへのPDFドキュメントの保存
 
-作成または操作されたPDFドキュメントをストリームに保存するために、`Save`メソッドのオーバーロードを使用することもできます。
+## PDFドキュメントをストリームに保存
+
+`Save`メソッドのオーバーロードを使用して、作成または操作されたPDFドキュメントをストリームに保存することもできます。
 
 ```csharp
-public static void SaveDocumentStream()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocumentStream()
 {
-    var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-    var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var pdfDocument = new Aspose.Pdf.Document(originalFileName);
-    // 何か操作を行う、例えば新しい空ページを追加
-    pdfDocument.Pages.Add();
-    pdfDocument.Save(System.IO.File.OpenWrite(modifiedFileName));
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save PDF document
+        document.Save(dataDir + "SimpleResume_out.pdf");
+    }
 }
 ```
 
-## WebアプリケーションでのPDFドキュメントの保存
-
-Webアプリケーションでドキュメントを保存するには、上記の方法を使用できます。加えて、`Document`クラスは[HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8)クラスを使用するための`Save`メソッドがオーバーロードされています。
-
-```csharp
-var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-var pdfDocument = new Aspose.Pdf.Document(originalFileName);
-// 何か操作を行う、例えば新しい空ページを追加
-pdfDocument.Pages.Add();
-pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
-```
-詳細な説明については、[Showcase](/pdf/ja/net/showcases/)セクションに進んでください。
+詳細な説明については、[Showcase](/pdf/ja/net/showcases/)セクションをご覧ください。
 
 ## PDF/AまたはPDF/X形式で保存
 
-PDF/Aは、電子文書のアーカイブおよび長期保存に使用するために標準化されたポータブルドキュメントフォーマット（PDF）のISO標準版です。
-PDF/Aは、フォントリンキング（フォント埋め込みとは対照的）や暗号化など、長期アーカイブに適さない機能を禁止する点でPDFと異なります。PDF/AビューアのISO要件には、カラーマネジメントガイドライン、埋め込みフォントサポート、埋め込み注釈の読み取り用ユーザーインターフェイスが含まれます。
+PDF/Aは、電子文書のアーカイブおよび長期保存のために使用されるポータブルドキュメントフォーマット（PDF）のISO標準化されたバージョンです。
+PDF/Aは、フォントリンク（フォント埋め込みとは対照的）や暗号化など、長期保存に適さない機能を禁止している点でPDFとは異なります。PDF/AビューアのISO要件には、カラー管理ガイドライン、埋め込まれたフォントのサポート、および埋め込まれた注釈を読むためのユーザーインターフェースが含まれます。
 
-PDF/Xは、PDF ISO標準のサブセットです。PDF/Xの目的はグラフィックス交換を容易にすることであり、そのためには標準のPDFファイルには適用されない一連の印刷関連の要件があります。
+PDF/XはPDF ISO標準のサブセットです。PDF/Xの目的はグラフィックス交換を促進することであり、そのため、標準PDFファイルには適用されない一連の印刷関連の要件があります。
 
-どちらの場合も、`Save` メソッドを使用してドキュメントを保存し、ドキュメントは `Convert` メソッドを使用して準備する必要があります。
+いずれの場合も、`Save`メソッドを使用してドキュメントを保存し、ドキュメントは`Convert`メソッドを使用して準備する必要があります。
 
 ```csharp
-public static void SaveDocumentAsPDFx()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocumentAsPDFx()
 {
-    var pdfDocument = new Aspose.Pdf.Document("..\\..\\..\\Samples\\SimpleResume.pdf");
-    pdfDocument.Pages.Add();
-    pdfDocument.Convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
-    pdfDocument.Save("..\\..\\..\\Samples\\SimpleResume_X3.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Add page
+        document.Pages.Add();
+        // Convert a document to a PDF/X-3 format
+        document.Convert(new Aspose.Pdf.PdfFormatConversionOptions(Aspose.Pdf.PdfFormat.PDF_X_3));
+        // Save PDF document
+        document.Save(dataDir + "SimpleResume_X3.pdf");
+    }
 }
 ```
-

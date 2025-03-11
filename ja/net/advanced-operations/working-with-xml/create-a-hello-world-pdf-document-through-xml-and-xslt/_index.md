@@ -1,10 +1,12 @@
 ---
-title: XSLTを使用してXMLからPDFを作成する
-linktitle: XSLTを使用してXMLからPDFを作成する
+title: XMLからXSLTを使用してPDFを作成する
+linktitle: XMLからXSLTを使用してPDFを作成する
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ja/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
-description: C#ライブラリは、入力XMLファイルがAspose.PDFスキーマに従う必要があることを前提に、XMLファイルをPDFドキュメントに変換する機能を提供します。
+description: C#ライブラリは、入力XMLファイルがAspose.PDFスキーマに従う必要があるPDFドキュメントへのXMLファイルの変換機能を提供します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "XSLTを使用してXMLからPDFを作成する",
-    "alternativeHeadline": "XSLTを使用してXMLからPDFを作成する方法",
+    "headline": "Creating PDF from XML using XSLT",
+    "alternativeHeadline": "Generate PDF from XML using XSLT and C#",
+    "abstract": "XSLTとC#ライブラリを使用してXMLファイルから直接PDFを生成します。この新しい機能は、既存のXMLデータをPDF互換形式に変換することでレポート生成を効率化します。このプロセスは、変換のためにXSLTを活用し、Aspose.PDFスキーマに従う必要があります。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, create pdf xml, pdf with xslt",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "323",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,20 +73,21 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-a-hello-world-pdf-document-through-xml-and-xslt/"
     },
-    "dateModified": "2022-02-04",
-    "description": "C#ライブラリは、入力XMLファイルがAspose.PDFスキーマに従う必要があることを前提に、XMLファイルをPDFドキュメントに変換する機能を提供します。"
+    "dateModified": "2024-11-26",
+    "description": "C#ライブラリは、入力XMLファイルがAspose.PDFスキーマに従う必要があるPDFドキュメントへのXMLファイルの変換機能を提供します。"
 }
 </script>
-以下のコードスニペットは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-既存のXMLファイルにアプリケーションデータが含まれていて、これらのファイルを使用してPDFレポートを生成したい場合があります。XSLTを使用して既存のXMLドキュメントをAspose.Pdf互換のXMLドキュメントに変換し、PDFファイルを生成することができます。XMLとXSLTを使用してPDFを生成するには、3つのステップがあります。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-以下のステップに従って、XSLTを使用してXMLファイルをPDFドキュメントに変換してください:
+既存のXMLファイルにアプリケーションデータが含まれていて、これらのファイルを使用してPDFレポートを生成したい場合があります。XSLTを使用して、既存のXMLドキュメントをAspose.Pdfの互換XMLドキュメントに変換し、その後PDFファイルを生成できます。XMLとXSLTを使用してPDFを生成するには、3つのステップがあります。
 
-* PDFドキュメントを表すPDFクラスのインスタンスを作成
-* ライセンスを購入している場合は、Aspose.Pdf名前空間のLicenseクラスを使用してそのライセンスを使用するコードを埋め込む
-* BindXMLメソッドを呼び出して、入力XMLとXSLTファイルをPDFクラスのインスタンスにバインド
-* バインドされたXMLをPDFインスタンスとして保存し、PDFドキュメントとして保存
+XSLTを使用してXMLファイルをPDFドキュメントに変換するには、次の手順に従ってください。
+
+* PDFドキュメントを表すPDFクラスのインスタンスを作成します
+* ライセンスを購入した場合は、Aspose.Pdf名前空間のLicenseクラスを使用してそのライセンスを使用するためのコードも埋め込む必要があります
+* PDFクラスのインスタンスに対してBindXMLメソッドを呼び出すことで、入力XMLおよびXSLTファイルをバインドします
+* バインドされたXMLをPDFインスタンスとともにPDFドキュメントとして保存します
 
 ## 入力XMLファイル
 
@@ -121,7 +124,49 @@ sitemap:
 </xsl:template>
 </xsl:stylesheet>
 ```
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Working-Document-HelloWorldPDFUsingXmlAndXslt-HelloWorldPDFUsingXmlAndXslt.cs" >}}
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        //Bind XML and XSLT files to the document
+        document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+        // Save PDF document
+        document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML and XSLT files to the document
+    document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+    // Save PDF document
+    document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -186,51 +231,3 @@ sitemap:
     }
 }
 </script>
-
----
-id: tutorials
-title: "Tutorials"
-sidebar_label: "Tutorials"
-slug: /category/tutorials
-type: docs
----
-
-## チュートリアルへようこそ
-
-このセクションでは、初めてのプロジェクトを始めるためのステップバイステップのガイドを提供します。各チュートリアルは、特定のタスクを達成するための実践的なアプローチを取ります。
-
-### 基本チュートリアル
-
-- **入門ガイド**: このガイドでは、基本的なセットアップと最初のプロジェクトの作成方法について説明します。
-- **データモデリング**: このチュートリアルでは、データベースの設計とデータモデルの作成方法について学びます。
-- **API 開発**: このガイドでは、RESTful API の作成とそれに関連するベストプラクティスについて説明します。
-
-### 高度なチュートリアル
-
-- **認証と認可**: このチュートリアルでは、ユーザー認証と認可の実装方法について学びます。
-- **パフォーマンス最適化**: このガイドでは、アプリケーションのパフォーマンスを向上させるための戦略を紹介します。
-- **デプロイとスケーリング**: このチュートリアルでは、アプリケーションのデプロイメントとスケーリングの方法について学びます。
-
-## よくある質問
-
-### チュートリアルの前提条件は何ですか？
-
-各チュートリアルの前提条件は、個々のチュートリアルの冒頭に記載されています。基本的なプログラミング知識があれば、ほとんどのチュートリアルを理解できるでしょう。
-
-### サポートを受けるにはどうすればいいですか？
-
-ドキュメンテーションやコミュニティフォーラムをチェックしてください。そこで質問を投稿したり、他のユーザーからのフィードバックを受け取ることができます。
-
-## 変更履歴
-
-- **バージョン 1.0** - 初版リリース
-- **バージョン 1.1** - 誤字修正と内容の更新
-
-## フィードバック
-
-私たちは、あなたのフィードバックを大切にします。改善点や提案があれば、お知らせください。
-
----
-
-changefreq: "monthly"
-```

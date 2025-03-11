@@ -1,405 +1,977 @@
 ---
-title: Bekerja dengan Pencetakan PDF - Facades
+title: Bekerja dengan pencetakan PDF - Facades
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/working-with-pdf-printing-facades/
 description: Bagian ini menjelaskan cara mencetak file PDF dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Working with PDF printing - Facades",
+    "alternativeHeadline": "Enhancing PDF Printing Capabilities with C#",
+    "abstract": "Aspose.PDF for .NET Fitur Facades menyederhanakan pencetakan PDF dengan kontrol yang lebih baik atas pengaturan printer dan format keluaran. Pengguna dapat dengan mudah mencetak dokumen ke printer default atau virtual, mendefinisikan tata letak halaman, dan bahkan mengelola pekerjaan cetak dalam mode simplex atau duplex, sementara opsi seperti mencetak dalam skala abu-abu dan menyembunyikan dialog cetak menambah fleksibilitasnya. Fungsionalitas ini secara signifikan mengoptimalkan alur kerja pencetakan untuk dokumen PDF, menjadikannya ideal bagi pengembang dan pengguna yang mencari solusi manajemen dokumen yang efisien.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1885",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/working-with-pdf-printing-facades/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/working-with-pdf-printing-facades/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+}
+</script>
 
 ## Mencetak File PDF ke Printer Default menggunakan Pengaturan Printer dan Halaman
 
-Pertama, dokumen dikonversi menjadi gambar dan kemudian dicetak pada printer. Kami membuat instance dari kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) yang memungkinkan Anda mencetak file PDF ke printer default, menggunakan metode BindPdf untuk dokumen tersebut, dan membuat pengaturan tertentu. Dalam contoh kami, kami menggunakan format A4, orientasi potret. Dalam printerSettings, pertama-tama, kami menunjukkan nama printer yang akan kami gunakan untuk mencetak. Atau jika tidak, akan mencetak ke printer default. Selanjutnya, tentukan jumlah salinan yang kami butuhkan.
+Pertama, dokumen dikonversi menjadi gambar, dan kemudian, dicetak pada printer.
+Buat instance dari kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer), yang memungkinkan pencetakan file PDF ke printer default, gunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/bindpdf/) untuk membuka dokumen ke dalamnya, dan ubah pengaturan yang diperlukan. Contoh ini menggunakan format A4, orientasi potret. Di [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/), pertama-tama, nama printer, ke mana pencetakan dilakukan, harus diatur. Jika tidak, itu akan mencetak ke printer default. Selanjutnya, tuliskan jumlah salinan yang diperlukan.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
- public static void PrintingPDFFile()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+
+        // Create objects for printer and page settings and PrintDocument
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
+        var prtdoc = new System.Drawing.Printing.PrintDocument();
+
+        // Set printer name
+        ps.PrinterName = prtdoc.PrinterSettings.PrinterName;
+
+        // Set PageSize (if required)
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+        // Set PageMargins (if required)
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+
+    // Create objects for printer and page settings and PrintDocument
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+    var prtdoc = new System.Drawing.Printing.PrintDocument();
+
+    // Set printer name
+    ps.PrinterName = prtdoc.PrinterSettings.PrinterName;
+
+    // Set PageSize (if required)
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+    // Set PageMargins (if required)
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+Untuk menampilkan dialog cetak, gunakan cuplikan kode berikut:
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFDisplayPrintDialog()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+
+        var printDialog = new System.Windows.Forms.PrintDialog();
+        if (printDialog.ShowDialog() == DialogResult.OK)
         {
-            // Buat objek PdfViewer
-            PdfViewer viewer = new PdfViewer();
+            // Document printing code goes here
 
-            // Buka file PDF input
-            viewer.BindPdf(_dataDir + "sample.pdf");
+            // Convert PrinterSettings and PageSettings to Aspose.PDF counterparts via extension methods
+            // provided in the Aspose.Pdf.Printing namespace
+            Aspose.Pdf.Printing.PrinterSettings ps = printDialog.PrinterSettings.ToAsposePrinterSettings();
+            Aspose.Pdf.Printing.PageSettings pgs = printDialog.PrinterSettings.DefaultPageSettings.ToAsposePageSettings();
 
-            // Tetapkan atribut untuk pencetakan
-            viewer.AutoResize = true;         // Cetak file dengan ukuran yang disesuaikan
-            viewer.AutoRotate = true;         // Cetak file dengan rotasi yang disesuaikan
-            viewer.PrintPageDialog = false;   // Jangan tampilkan dialog nomor halaman saat mencetak
-
-            // Buat objek untuk pengaturan printer dan halaman serta PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
-            System.Drawing.Printing.PrintDocument prtdoc = new System.Drawing.Printing.PrintDocument();
-
-            // Tetapkan nama printer
-            ps.PrinterName = prtdoc.PrinterSettings.PrinterName;
-
-            // Tetapkan Ukuran Halaman (jika diperlukan)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
-
-            // Tetapkan Margin Halaman (jika diperlukan)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-
-            // Cetak dokumen menggunakan pengaturan printer dan halaman
+            // Print document using printer and page settings
             viewer.PrintDocumentWithSettings(pgs, ps);
-
-            // Tutup file PDF setelah mencetak
-            viewer.Close();
         }
+    }
+}
 ```
+{{< /tab >}}
 
-Untuk menampilkan dialog cetak, coba gunakan potongan kode berikut:
-
+{{< tab tabNum="2" >}}
 ```csharp
-        public static void PrintingPDFDisplayPrintDialog()
-        {
-            // Membuat objek PdfViewer
-            PdfViewer viewer = new PdfViewer();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFDisplayPrintDialog()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-            // Buka file PDF input
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-            // Tetapkan atribut untuk pencetakan
-            viewer.AutoResize = true;         // Cetak file dengan ukuran yang disesuaikan
-            viewer.AutoRotate = true;         // Cetak file dengan rotasi yang disesuaikan
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-            // Membuat objek untuk pengaturan printer dan halaman serta PrintDocument
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
 
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings
-            {
+    var printDialog = new System.Windows.Forms.PrintDialog();
+    if (printDialog.ShowDialog() == DialogResult.OK)
+    {
+        // Document printing code goes here
 
-                // Tetapkan UkuranHalaman (jika diperlukan)
-                PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169),
+        // Convert PrinterSettings and PageSettings to Aspose.PDF counterparts via extension methods
+        // provided in the Aspose.Pdf.Printing namespace
+        Aspose.Pdf.Printing.PrinterSettings ps = printDialog.PrinterSettings.ToAsposePrinterSettings();
+        Aspose.Pdf.Printing.PageSettings pgs = printDialog.PrinterSettings.DefaultPageSettings.ToAsposePageSettings();
 
-                // Tetapkan MarginHalaman (jika diperlukan)
-                Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0)
-            };
-
-            System.Windows.Forms.PrintDialog printDialog = new System.Windows.Forms.PrintDialog();
-            if (printDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                // Kode pencetakan dokumen ada di sini
-                // Cetak dokumen menggunakan pengaturan printer dan halaman
-                System.Drawing.Printing.PrinterSettings ps = printDialog.PrinterSettings;
-                viewer.PrintDocumentWithSettings(pgs, ps);
-            }
-
-            // Tutup file PDF setelah pencetakan
-            viewer.Close();
-        }
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
+}
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-## Cetak PDF ke Printer Lunak
+## Mencetak PDF ke Printer Soft
 
-Ada printer yang mencetak ke file. Kami mengatur nama printer virtual, dan, dengan analogi dengan contoh sebelumnya, kami membuat pengaturan.
+Ada printer yang mencetak ke file. Untuk menggunakannya, atur nama printer virtual, dan, sama seperti contoh sebelumnya, buat pengaturan.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void PrintingPDFToSoftPrinter()
-        {
-            // Buat objek PdfViewer
-            PdfViewer viewer = new PdfViewer();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFToSoftPrinter()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-            // Buka file PDF input
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-            // Atur atribut untuk mencetak
-            viewer.AutoResize = true;         // Cetak file dengan ukuran yang disesuaikan
-            viewer.AutoRotate = true;         // Cetak file dengan rotasi yang disesuaikan
-            viewer.PrintPageDialog = false;   // Tidak menampilkan dialog nomor halaman saat mencetak
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+        // Do not convert document pages to images
+        viewer.PrintAsImage = false;
 
-            viewer.PrintAsImage = false;
+        // Create objects for printer and page settings and PrintDocument
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
 
-            // Buat objek untuk pengaturan printer dan halaman serta PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+        // Set printer name
+        ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+        // Or set the PDF printer
+        // ps.PrinterName = "Adobe PDF";
 
-            // Atur nama printer
-            ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
-            // Atau atur printer PDF
-            //ps.PrinterName = "Adobe PDF";
+        // Set PageSize (if required)
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
 
-            // Atur UkuranHalaman (jika diperlukan)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+        // Set PageMargins (if required)
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
 
-            // Atur MarginHalaman (jika diperlukan)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-
-            // Cetak dokumen menggunakan pengaturan printer dan halaman
-            viewer.PrintDocumentWithSettings(pgs, ps);
-
-            // Tutup file PDF setelah mencetak
-            viewer.Close();
-        }
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFToSoftPrinter()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+    // Do not convert document pages to images
+    viewer.PrintAsImage = false;
+
+    // Create objects for printer and page settings and PrintDocument
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+    // Set printer name
+    ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+    // Or set the PDF printer
+    // ps.PrinterName = "Adobe PDF";
+
+    // Set PageSize (if required)
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+    // Set PageMargins (if required)
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Menyembunyikan Dialog Cetak
 
-Aspose.PDF untuk .NET memungkinkan Anda untuk menyembunyikan dialog cetak. Untuk ini gunakan metode [PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
+Aspose.PDF for .NET mendukung menyembunyikan dialog cetak. Untuk ini, gunakan properti [PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
 
 Cuplikan kode berikut menunjukkan cara menyembunyikan dialog cetak.
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void PrintingPDFHidePrintDialog()
-        {
-            // Buat objek PdfViewer
-            PdfViewer viewer = new PdfViewer();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFHidePrintDialog()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-            // Buka file PDF input
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-            // Setel atribut untuk pencetakan
-            viewer.AutoResize = true;         // Cetak file dengan ukuran yang disesuaikan
-            viewer.AutoRotate = true;         // Cetak file dengan rotasi yang disesuaikan
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
-            viewer.PrintPageDialog = false;   // Jangan tampilkan dialog nomor halaman saat mencetak
+        // Create objects for printer and page settings
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
 
-            // Buat objek untuk pengaturan printer dan halaman serta PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+        // Set XPS/PDF printer name
+        ps.PrinterName = "OneNote for Windows 10";
 
-            // Setel nama printer XPS/PDF
-            ps.PrinterName = "OneNote for Windows 10";
+        // Set PageSize (if required)
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
 
-            // Setel UkuranHalaman (jika diperlukan)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+        // Set PageMargins (if required)
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
 
-            // Setel MarginHalaman (jika diperlukan)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-
-            // Cetak dokumen menggunakan pengaturan printer dan halaman
-            viewer.PrintDocumentWithSettings(pgs, ps);
-
-            // Tutup file PDF setelah mencetak
-            viewer.Close();
-        }
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
+}
 ```
+{{< /tab >}}
 
-## Mencetak PDF Berwarna ke File XPS sebagai Grayscale
-
-Dokumen PDF berwarna dapat dicetak ke printer XPS sebagai grayscale, menggunakan [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Untuk mencapai hal tersebut, Anda perlu menggunakan properti PdfViewer.PrintAsGrayscale dan mengaturnya ke *true*. Cuplikan kode berikut menunjukkan implementasi dari Properti PdfViewer.PrintAsGrayscale.
-
+{{< tab tabNum="2" >}}
 ```csharp
-public static void PrintingPDFasGrayscale()
-        {
-            // Buat objek PdfViewer
-            PdfViewer viewer = new PdfViewer();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFHidePrintDialog()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-            // Buka file PDF input
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-            // Atur atribut untuk pencetakan
-            viewer.AutoResize = true;         // Cetak file dengan ukuran yang disesuaikan
-            viewer.AutoRotate = true;         // Cetak file dengan rotasi yang disesuaikan
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-            viewer.PrintPageDialog = false;   // Jangan tampilkan dialog nomor halaman saat mencetak
-            viewer.PrintAsGrayscale = false;
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printin
+    viewer.PrintPageDialog = false;
 
-            // Buat objek untuk pengaturan printer dan halaman serta PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+    // Create objects for printer and page settings
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
 
-            // Atur nama printer XPS/PDF
-            ps.PrinterName = "OneNote for Windows 10";
+    // Set XPS/PDF printer name
+    ps.PrinterName = "OneNote for Windows 10";
 
-            // Atur UkuranHalaman (jika diperlukan)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    // Set PageSize (if required)
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
 
-            // Atur MarginHalaman (jika diperlukan)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+    // Set PageMargins (if required)
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
 
-            // Cetak dokumen menggunakan pengaturan printer dan halaman
-            viewer.PrintDocumentWithSettings(pgs, ps);
-
-            // Tutup file PDF setelah mencetak
-            viewer.Close();
-        }
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
 ```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Mencetak PDF Berwarna ke File XPS sebagai Skala Abu-abu
+
+Dokumen PDF berwarna dapat dicetak ke printer XPS sebagai skala abu-abu, menggunakan [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Untuk mencapai itu, atur properti [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) ke *true*. Cuplikan kode berikut menunjukkan penggunaan properti `PdfViewer.PrintAsGrayscale`.
+
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFAsGrayscale()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+        // Print the file as grayscale
+        viewer.PrintAsGrayscale = false;
+
+        // Create objects for printer and page settings
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+        // Set XPS/PDF printer name
+        ps.PrinterName = "OneNote for Windows 10";
+
+        // Set PageSize (if required)
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+        // Set PageMargins (if required)
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFAsGrayscale()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+    // Print the file as grayscale
+    viewer.PrintAsGrayscale = false;
+
+    // Create objects for printer and page settings
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+    // Set XPS/PDF printer name
+    ps.PrinterName = "OneNote for Windows 10";
+
+    // Set PageSize (if required)
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+    // Set PageMargins (if required)
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Konversi PDF ke PostScript
 
-Kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) menyediakan kemampuan untuk mencetak dokumen PDF dan dengan bantuan kelas ini, kita juga dapat mengonversi file PDF ke format PostScript. Untuk mengonversi file PDF ke PostScript, pertama-tama instal printer PS apa pun dan cukup cetak ke file dengan bantuan PdfViewer.
+Kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) menyediakan kemampuan untuk mencetak dokumen PDF dan dengan bantuan kelas ini, seseorang juga dapat mengonversi file PDF ke format PostScript. Untuk mengonversi file PDF menjadi PostScript, pertama instal printer PS apa pun dan cukup cetak ke file dengan bantuan `PdfViewer`.
 
 Cuplikan kode berikut menunjukkan cara mencetak dan mengonversi PDF ke format PostScript.
 
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void PrintingPDFToPostScript()
-        {
-            // Buat objek PdfViewer
-            PdfViewer viewer = new PdfViewer();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFToPostScript()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-            // Buka file PDF input
-            viewer.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-            // Tetapkan atribut untuk pencetakan
-            viewer.AutoResize = true;         // Cetak file dengan ukuran yang disesuaikan
-            viewer.AutoRotate = true;         // Cetak file dengan rotasi yang disesuaikan
-            viewer.PrintPageDialog = false;   // Jangan tampilkan dialog nomor halaman saat mencetak
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+        // Do not convert document pages to images
+        viewer.PrintAsImage = false;
 
-            viewer.PrintAsImage = false;
+        // Create objects for printer and page settings and PrintDocument
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
 
-            // Buat objek untuk pengaturan printer dan halaman serta PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+        // Set printer name
+        ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+        
+        // Set output file name and PrintToFile attribute
+        ps.PrintFileName = dataDir + "PdfToPostScript_out.ps";
+        ps.PrintToFile = true;
 
-            // Tetapkan nama printer XPS/PDF
-            ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
-            // Tetapkan nama file output dan atribut PrintToFile
-            ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
-            ps.PrintToFile = true;
+        // Set PageSize (if required)
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
 
-            // Tetapkan PageSize (jika diperlukan)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+        // Set PageMargins (if required)
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
 
-            // Tetapkan PageMargins (jika diperlukan)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-
-            // Cetak dokumen menggunakan pengaturan printer dan halaman
-            viewer.PrintDocumentWithSettings(pgs, ps);
-
-            // Tutup file PDF setelah mencetak
-            viewer.Close();
-        }
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingPDFToSoftPrinter()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+    // Do not convert document pages to images
+    viewer.PrintAsImage = false;
+
+    // Create objects for printer and page settings and PrintDocument
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+    // Set printer name
+    ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
+    
+    // Set output file name and PrintToFile attribute
+    ps.PrintFileName = dataDir + "PdfToPostScript_out.ps";
+    ps.PrintToFile = true;
+
+    // Set PageSize (if required)
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+    // Set PageMargins (if required)
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Memeriksa Status Pekerjaan Cetak
 
-File PDF dapat dicetak ke printer fisik maupun ke Microsoft XPS Document Writer, tanpa menampilkan dialog cetak, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Ketika mencetak file PDF besar, prosesnya mungkin memakan waktu lama sehingga pengguna mungkin tidak yakin apakah proses pencetakan selesai atau mengalami masalah. Untuk mengetahui status pekerjaan cetak, gunakan properti PrintStatus. Kode berikut menunjukkan cara mencetak file PDF ke file XPS dan mendapatkan status pencetakan.
+File PDF dapat dicetak ke printer fisik serta ke Microsoft XPS Document Writer, tanpa menunjukkan dialog cetak, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Ketika mencetak file PDF besar, proses mungkin memakan waktu lama sehingga pengguna mungkin tidak yakin apakah proses pencetakan selesai atau mengalami masalah. Untuk menentukan status pekerjaan pencetakan, gunakan properti [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). Cuplikan kode berikut menunjukkan cara mencetak file PDF ke file XPS dan mendapatkan status pencetakan.
 
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void CheckingPrintJobStatus()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckingPrintJobStatus()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Instantiate PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+        // Do not convert document pages to images
+        viewer.PrintAsImage = false;
+
+        // Create Printer Settings object
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+        // Specify the printer name
+        ps.PrinterName = "Microsoft XPS Document Writer";
+
+        // Set output file name and PrintToFile attribute
+        ps.PrintFileName = dataDir + "CheckingPrintJobStatus_out.xps";
+        ps.PrintToFile = true;
+
+        // Set PageSize (if required)
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+        
+        // Set PageMargins (if required)
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+        
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+
+        // Check the print status
+        if (viewer.PrintStatus != null)
         {
-            // Buat objek PdfViewer
-            PdfViewer viewer = new PdfViewer();
-
-            // Buka file PDF masukan
-            viewer.BindPdf(_dataDir + "sample1.pdf");
-
-            // Atur atribut untuk pencetakan
-            viewer.AutoResize = true;         // Cetak file dengan ukuran yang disesuaikan
-            viewer.AutoRotate = true;         // Cetak file dengan rotasi yang disesuaikan
-            viewer.PrintPageDialog = false;   // Jangan tampilkan dialog nomor halaman saat mencetak
-
-            viewer.PrintAsImage = false;
-
-            // Buat objek untuk pengaturan printer dan halaman serta PrintDocument
-            System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-            System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
-
-            // Atur nama printer XPS/PDF
-            ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
-            // Atur nama file keluaran dan atribut PrintToFile
-            ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
-            ps.PrintToFile = true;
-
-            // Atur PageSize (jika diperlukan)
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
-
-            // Atur PageMargins (jika diperlukan)
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-
-            // Cetak dokumen menggunakan pengaturan printer dan halaman
-            viewer.PrintDocumentWithSettings(pgs, ps);
-
-            // Periksa status cetak
-            if (viewer.PrintStatus != null && viewer.PrintStatus is Exception ex)
+            // An exception was thrown
+            if (viewer.PrintStatus is Exception ex)
             {
+                // Get exception message
                 Console.WriteLine(ex.Message);
             }
-            else
-            {
-                // Tidak ditemukan kesalahan. Pekerjaan pencetakan telah selesai dengan sukses
-                Console.WriteLine("Pencetakan selesai tanpa masalah..");
-            }
-
-            // Tutup file PDF setelah mencetak
-            viewer.Close();
         }
-
-        struct PrintingJobSettings
+        else
         {
-            public int ToPage { get; set; }
-            public int FromPage { get; set; }
-            public string OutputFile { get; set; }
-            public System.Drawing.Printing.Duplex Mode { get; set; }
+            // No errors were found. Printing job has completed successfully
+            Console.WriteLine("Printing completed without any issue.");
         }
+    }
+}
 ```
+{{< /tab >}}
 
-## Mencetak halaman dalam mode Simpleks dan Dupleks
-
-Dalam pekerjaan pencetakan tertentu, halaman dokumen PDF dapat dicetak dalam mode Dupleks atau Simpleks, tetapi Anda tidak dapat mencetak beberapa halaman sebagai simpleks dan beberapa halaman sebagai dupleks dalam satu pekerjaan cetak. Namun untuk memenuhi persyaratan tersebut, rentang halaman yang berbeda dan objek PrintingJobSettings dapat digunakan. Cuplikan kode berikut menunjukkan cara mencetak beberapa halaman file PDF dalam mode Simpleks dan beberapa halaman dalam mode Dupleks.
-
+{{< tab tabNum="2" >}}
 ```csharp
- public static void PrintingPagesInSimplexAndDuplexMode()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckingPrintJobStatus()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Instantiate PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+    // Do not convert document pages to images
+    viewer.PrintAsImage = false;
+
+    // Create Printer Settings object
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+    // Specify the printer name
+    ps.PrinterName = "Microsoft XPS Document Writer";
+
+    // Set output file name and PrintToFile attribute
+    ps.PrintFileName = dataDir + "CheckingPrintJobStatus_out.xps";
+    ps.PrintToFile = true;
+
+    // Set PageSize (if required)
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+    // Set PageMargins (if required)
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
+
+    // Check the print status
+    if (viewer.PrintStatus != null)
+    {
+        // An exception was thrown
+        if (viewer.PrintStatus is Exception ex)
         {
-            int printingJobIndex = 0;
-            string inPdf = _dataDir + "sample-8page.pdf";
-            string output = _dataDir;
-            IList<PrintingJobSettings> printingJobs = new List<PrintingJobSettings>();
+            // Get exception message
+            Console.WriteLine(ex.Message);
+        }
+    }
+    else
+    {
+        // No errors were found. Printing job has completed successfully
+        Console.WriteLine("Printing completed without any issue.");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
-            PrintingJobSettings printingJob1 = new PrintingJobSettings
+## Mencetak halaman dalam mode Simplex dan Duplex
+
+Dalam pekerjaan pencetakan tertentu, halaman dokumen PDF dapat dicetak baik dalam mode Duplex atau dalam mode Simplex tetapi Anda tidak dapat mencetak beberapa halaman sebagai simplex dan beberapa halaman sebagai duplex dalam satu pekerjaan cetak. Namun, untuk memenuhi persyaratan, rentang halaman yang berbeda dan objek PrintingJobSettings dapat digunakan. Cuplikan kode berikut menunjukkan cara mencetak beberapa halaman file PDF dalam mode Simplex dan beberapa halaman dalam mode Duplex.
+
+{{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+struct PrintingJobSettings
+{
+    public int ToPage { get; set; }
+    public int FromPage { get; set; }
+    public string OutputFile { get; set; }
+    public Aspose.Pdf.Printing.Duplex Mode { get; set; }
+}
+
+private static void PrintingPagesInSimplexAndDuplexMode()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    int printingJobIndex = 0;
+    string outputDir = dataDir;
+    var printingJobs = new List<PrintingJobSettings>();
+
+    // Create multiple printing jobs to print different page ranges with different duplex settings
+    var printingJob1 = new PrintingJobSettings();
+    printingJob1.FromPage = 1;
+    printingJob1.ToPage = 3;
+    printingJob1.OutputFile = outputDir + "PrintPageRange_p1-3_out.xps";
+    printingJob1.Mode = Aspose.Pdf.Printing.Duplex.Default;
+
+    printingJobs.Add(printingJob1);
+
+    PrintingJobSettings printingJob2 = new PrintingJobSettings();
+    printingJob2.FromPage = 4;
+    printingJob2.ToPage = 6;
+    printingJob2.OutputFile = outputDir + "PrintPageRange_p4-6_out.xps";
+    printingJob2.Mode = Aspose.Pdf.Printing.Duplex.Simplex;
+
+    printingJobs.Add(printingJob2);
+
+    PrintingJobSettings printingJob3 = new PrintingJobSettings();
+    printingJob3.FromPage = 7;
+    printingJob3.ToPage = 7;
+    printingJob3.OutputFile = outputDir + "PrintPageRange_p7_out.xps";
+    printingJob3.Mode = Aspose.Pdf.Printing.Duplex.Default;
+
+    printingJobs.Add(printingJob3);
+
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "Print-PageRange.pdf");
+
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+
+        // Create objects for printer and page settings
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+        // Set printer name
+        ps.PrinterName = "Microsoft XPS Document Writer";
+
+        // Set output file name and PrintToFile attribute
+        ps.PrintFileName = Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+        ps.PrintToFile = true;
+
+        // Set parameters for the first print job
+        ps.FromPage = printingJobs[printingJobIndex].FromPage;
+        ps.ToPage = printingJobs[printingJobIndex].ToPage;
+        ps.Duplex = printingJobs[printingJobIndex].Mode;
+        ps.PrintRange = Aspose.Pdf.Printing.PrintRange.SomePages;
+
+        // Set paper size and margins
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+        ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+        // Chain other print jobs at the end of the finished job
+        viewer.EndPrint += (sender, args) =>
+        {
+            if (++printingJobIndex < printingJobs.Count)
             {
-                FromPage = 1,
-                ToPage = 3,
-                OutputFile = output + "sample_1_3.xps",
-                Mode = Duplex.Default
-            };
+                // Set the next print job parameters
+                ps.PrintFileName = Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+                ps.FromPage = printingJobs[printingJobIndex].FromPage;
+                ps.ToPage = printingJobs[printingJobIndex].ToPage;
+                ps.Duplex = printingJobs[printingJobIndex].Mode;
 
-            printingJobs.Add(printingJob1);
+                // Run the next print job
+                viewer.PrintDocumentWithSettings(pgs, ps);
+            }
+        };
 
-            PrintingJobSettings printingJob2 = new PrintingJobSettings
-            {
-                FromPage = 4,
-                ToPage = 6,
-                OutputFile = output + "sample_4_6.xps",
-                Mode = Duplex.Simplex
-            };
+        // Run the first print job
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
+}
+```
+{{< /tab >}}
 
-            printingJobs.Add(printingJob2);
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+struct PrintingJobSettings
+{
+    public int ToPage { get; set; }
+    public int FromPage { get; set; }
+    public string OutputFile { get; set; }
+    public Aspose.Pdf.Printing.Duplex Mode { get; set; }
+}
 
-            PrintingJobSettings printingJob3 = new PrintingJobSettings
-            {
-                FromPage = 7,
-                ToPage = 7,
-                OutputFile = output + "sample_7.xps",
-                Mode = Duplex.Default
-            };
+private static void PrintingPagesInSimplexAndDuplexMode()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-            printingJobs.Add(printingJob3);
+    int printingJobIndex = 0;
+    string outputDir = dataDir;
+    var printingJobs = new List<PrintingJobSettings>();
 
-            PdfViewer viewer = new PdfViewer();
+    // Create multiple printing jobs to print different page ranges with different duplex settings
+    var printingJob1 = new PrintingJobSettings();
+    printingJob1.FromPage = 1;
+    printingJob1.ToPage = 3;
+    printingJob1.OutputFile = outputDir + "PrintPageRange_p1-3_out.xps";
+    printingJob1.Mode = Aspose.Pdf.Printing.Duplex.Default;
 
-            viewer.BindPdf(inPdf);
-            viewer.AutoResize = true;
-            viewer.AutoRotate = true;
-            viewer.PrintPageDialog = false;
+    printingJobs.Add(printingJob1);
 
-            PrinterSettings ps = new PrinterSettings();
-            PageSettings pgs = new PageSettings();
+    PrintingJobSettings printingJob2 = new PrintingJobSettings();
+    printingJob2.FromPage = 4;
+    printingJob2.ToPage = 6;
+    printingJob2.OutputFile = outputDir + "PrintPageRange_p4-6_out.xps";
+    printingJob2.Mode = Aspose.Pdf.Printing.Duplex.Simplex;
 
-            ps.PrinterName = "Microsoft XPS Document Writer";
-            ps.PrintFileName = System.IO.Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
-            ps.PrintToFile = true;
+    printingJobs.Add(printingJob2);
+
+    PrintingJobSettings printingJob3 = new PrintingJobSettings();
+    printingJob3.FromPage = 7;
+    printingJob3.ToPage = 7;
+    printingJob3.OutputFile = outputDir + "PrintPageRange_p7_out.xps";
+    printingJob3.Mode = Aspose.Pdf.Printing.Duplex.Default;
+
+    printingJobs.Add(printingJob3);
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "Print-PageRange.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+
+    // Create objects for printer and page settings
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+    // Set printer name
+    ps.PrinterName = "Microsoft XPS Document Writer";
+
+    // Set output file name and PrintToFile attribute
+    ps.PrintFileName = Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+    ps.PrintToFile = true;
+
+    // Set parameters for the first print job
+    ps.FromPage = printingJobs[printingJobIndex].FromPage;
+    ps.ToPage = printingJobs[printingJobIndex].ToPage;
+    ps.Duplex = printingJobs[printingJobIndex].Mode;
+    ps.PrintRange = Aspose.Pdf.Printing.PrintRange.SomePages;
+
+    // Set paper size and margins
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+    ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Chain other print jobs at the end of the finished job
+    viewer.EndPrint += (sender, args) =>
+    {
+        if (++printingJobIndex < printingJobs.Count)
+        {
+            // Set the next print job parameters
+            ps.PrintFileName = Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
             ps.FromPage = printingJobs[printingJobIndex].FromPage;
             ps.ToPage = printingJobs[printingJobIndex].ToPage;
             ps.Duplex = printingJobs[printingJobIndex].Mode;
-            ps.PrintRange = PrintRange.SomePages;
 
-            pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
-            ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
-            pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-
-            viewer.EndPrint += (sender, args) =>
-            {
-                if (++printingJobIndex < printingJobs.Count)
-                {
-                    ps.PrintFileName = System.IO.Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
-                    ps.FromPage = printingJobs[printingJobIndex].FromPage;
-                    ps.ToPage = printingJobs[printingJobIndex].ToPage;
-                    ps.Duplex = printingJobs[printingJobIndex].Mode;
-                    viewer.PrintDocumentWithSettings(pgs, ps);
-                }
-            };
-
+            // Run the next print job
             viewer.PrintDocumentWithSettings(pgs, ps);
         }
+    };
+
+    // Run the first print job
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
 ```
+{{< /tab >}}
+{{< /tabs >}}

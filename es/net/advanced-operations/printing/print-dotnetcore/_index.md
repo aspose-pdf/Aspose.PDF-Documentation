@@ -2,6 +2,8 @@
 title: Cómo imprimir un archivo PDF en .NET Core
 linktitle: Imprimir PDF en .NET Core
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /es/net/print-dotnetcore/
 description: Esta página explica cómo convertir un documento PDF en XPS en .NET Core y agregarlo como un trabajo a la cola de la impresora local.
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Cómo imprimir un archivo PDF en .NET Core",
-    "alternativeHeadline": "Imprimir archivo PDF en .NET Core",
+    "headline": "How to print PDF file in .NET Core",
+    "alternativeHeadline": "Print PDFs as XPS in .NET Core with ease",
+    "abstract": "Descubre la nueva funcionalidad en .NET Core que simplifica el proceso de impresión de documentos PDF al convertirlos a formato XPS y gestionar eficientemente los trabajos de impresión en la cola de tu impresora local. Esta característica también permite un control mejorado sobre las fuentes de papel según los tamaños de página PDF, asegurando una experiencia de impresión personalizada. Optimiza la gestión de tus documentos con opciones de escalado precisas directamente desde el diálogo de impresión.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, pdf en .NET Core",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "print PDF, .NET Core, convert PDF to XPS, print queue, Aspose.PDF, paper source by PDF page size, print dialog presets, page scaling, document printing, local printer",
+    "wordcount": "606",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,61 +74,220 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/print-dotnetcore/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Esta página explica cómo convertir un documento PDF en XPS y agregarlo como un trabajo a la cola de la impresora local."
 }
 </script>
+
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## **Imprimir documento Pdf en .NET Core**
 
-La biblioteca Aspose.PDF nos permite convertir archivos PDF a XPS. Esta función puede ser útil para organizar la impresión de documentos. Veamos un ejemplo utilizando la impresora predeterminada:
+La biblioteca Aspose.PDF nos permite convertir archivos PDF a XPS. Esta función puede ser útil para organizar la impresión de documentos. Veamos un ejemplo de uso de la impresora predeterminada.
 
+En este ejemplo, convertimos un documento PDF en XPS y lo agregamos como un trabajo a la cola de la impresora local:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-class Program
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintWithNetCore()
 {
-    static void Main()
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create the secondary thread and pass the printing method for
+    // the constructor's ThreadStart delegate parameter.
+    var printingThread = new Thread(() => PrintPDF(dataDir + "PrintDocument.pdf"));
+
+    // Set the thread that will use PrintQueue.AddJob to single threading.
+    printingThread.SetApartmentState(ApartmentState.STA);
+
+    // Start the printing thread. The method passed to the Thread
+    // constructor will execute.
+    printingThread.Start();
+
+    // Wait for the printing thread to finish its work
+    printingThread.Join();
+}
+
+private static void PrintPDF(string pdfFileName)
+{
+    // Create print server and print queue.
+    var defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
+
+    // Convert PDF to XPS
+    using (var document = new Aspose.Pdf.Document(pdfFileName))
     {
-        // Crear el hilo secundario y pasar el método de impresión para
-        // el parámetro delegado ThreadStart del constructor.
-        Thread printingThread = new Thread(() => PrintPDF(@"C:\tmp\doc-pdf.pdf"));
-
-        // Establecer el hilo que usará PrintQueue.AddJob a un solo hilo.
-        printingThread.SetApartmentState(ApartmentState.STA);
-
-        // Iniciar el hilo de impresión. El método pasado al constructor
-        // del hilo se ejecutará.
-        printingThread.Start();
-    }//end Main
-
-    private static void PrintPDF(string pdfFileName)
-    {
-        // Crear servidor de impresión y cola de impresión.
-        PrintQueue defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
-
-        Aspose.Pdf.Document document = new Document(pdfFileName);
         var xpsFileName = pdfFileName.Replace(".pdf", ".xps");
-        document.Save(xpsFileName,SaveFormat.Xps);
+        document.Save(xpsFileName, SaveFormat.Xps);
 
-        try
+        // Print the Xps file while providing XPS validation and progress notifications.
+        using (PrintSystemJobInfo xpsPrintJob = defaultPrintQueue.AddJob(xpsFileName, xpsFileName, false))
         {
-            // Imprimir el archivo Xps mientras se proporciona validación de XPS y notificaciones de progreso.
-            PrintSystemJobInfo xpsPrintJob = defaultPrintQueue.AddJob(xpsFileName, xpsFileName, false);
             Console.WriteLine(xpsPrintJob.JobIdentifier);
         }
-        catch (PrintJobException e)
-        {
-            Console.WriteLine("\n\t{0} no se pudo agregar a la cola de impresión.", pdfFileName);
-            if (e.InnerException != null && e.InnerException.Message == "El archivo contiene datos corruptos.")
-            {
-                Console.WriteLine("\tNo es un archivo XPS válido. Utiliza la herramienta de conformidad isXPS para depurarlo.");
-            }
-            Console.WriteLine("\tContinuando con el siguiente archivo XPS.\n");
-        }
     }
-}//end Program class
+}
 ```
-En este ejemplo, convertimos un documento PDF en XPS y lo agregamos como un trabajo a la cola de la impresora local.
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintWithNetCore()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create the secondary thread and pass the printing method for
+    // the constructor's ThreadStart delegate parameter.
+    var printingThread = new Thread(() => PrintPDF(dataDir + "PrintDocument.pdf"));
+
+    // Set the thread that will use PrintQueue.AddJob to single threading.
+    printingThread.SetApartmentState(ApartmentState.STA);
+
+    // Start the printing thread. The method passed to the Thread
+    // constructor will execute.
+    printingThread.Start();
+
+    // Wait for the printing thread to finish its work
+    printingThread.Join();
+}
+
+private static void PrintPDF(string pdfFileName)
+{
+    // Create print server and print queue.
+    var defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(pdfFileName);
+
+    // Convert PDF to XPS
+    var xpsFileName = pdfFileName.Replace(".pdf", ".xps");
+    document.Save(xpsFileName,SaveFormat.Xps);
+
+    // Print the Xps file while providing XPS validation and progress notifications.
+    using PrintSystemJobInfo xpsPrintJob = defaultPrintQueue.AddJob(xpsFileName, xpsFileName, false);
+    Console.WriteLine(xpsPrintJob.JobIdentifier);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Elegir fuente de papel por tamaño de página PDF
+ 
+Desde la versión 24.4, es posible elegir la fuente de papel por tamaño de página PDF en el diálogo de impresión. El siguiente fragmento de código permite seleccionar una bandeja de impresora según el tamaño de página del PDF.
+
+Esta preferencia se puede activar y desactivar utilizando la propiedad [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PickTrayByPdfSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
+
+        // Set the flag to choose a paper tray using the PDF page size
+        document.PickTrayByPdfSize = true;
+
+        // Save PDF document
+        document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PickTrayByPdfSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Add page
+    var page = document.Pages.Add();
+    page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
+
+    // Set the flag to choose a paper tray using the PDF page size
+    document.PickTrayByPdfSize = true;
+
+    // Save PDF document
+    document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Preajustes de diálogo de impresión Escalado de página
+
+El siguiente fragmento de código está destinado a asegurar que la propiedad [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) se aplique y guarde correctamente en el PDF.
+
+La propiedad [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) se ha agregado a la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) con los valores `Aspose.Pdf.PrintScaling.AppDefault` o `Aspose.Pdf.PrintScaling.None`.
+
+La opción de escalado de página que se debe seleccionar cuando se muestra un diálogo de impresión para este documento. Los valores válidos son `None`, que indica que no hay escalado de página, y `AppDefault`, que indica el escalado de impresión predeterminado del lector conforme. Si esta entrada tiene un valor no reconocido, se debe usar `AppDefault`. Valor predeterminado: `AppDefault`.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrintScaling()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        document.Pages.Add();
+
+        // Disable print scaling
+        document.PrintScaling = PrintScaling.None;
+
+        // Save PDF document
+        document.Save(dataDir + "SetPrintScaling_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrintScaling()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Add page
+    document.Pages.Add();
+
+    // Disable print scaling
+    document.PrintScaling = PrintScaling.None;
+
+    // Save PDF document
+    document.Save(dataDir + "SetPrintScaling_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -153,21 +315,21 @@ En este ejemplo, convertimos un documento PDF en XPS y lo agregamos como un trab
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -178,7 +340,7 @@ En este ejemplo, convertimos un documento PDF en XPS y lo agregamos como un trab
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -190,4 +352,3 @@ En este ejemplo, convertimos un documento PDF en XPS y lo agregamos como un trab
     }
 }
 </script>
-

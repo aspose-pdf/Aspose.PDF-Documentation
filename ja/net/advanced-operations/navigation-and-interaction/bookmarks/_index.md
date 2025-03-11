@@ -1,10 +1,12 @@
 ---
-title: PDFでのブックマークの扱い方について（C#使用）
+title: C#を使用したPDFのブックマークの操作
 linktitle: ブックマーク
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ja/net/bookmarks/
-description: このセクションでは、Aspose.PDF for .NETを使用してブックマークを追加、削除、取得する方法について説明します。
+description: Aspose.PDFを使用して.NETでPDFブックマークを操作し、文書のナビゲーションと整理を簡単に行う方法を発見してください。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFでのブックマークの扱い方について（C#使用）",
-    "alternativeHeadline": "PDFにブックマークを追加する方法",
+    "headline": "Working with Bookmarks in PDF using C#",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks with C#",
+    "abstract": "Aspose.PDF for .NETの新しい機能を発見し、ユーザーがPDF文書内のブックマークを効率的に管理できるようにします。この機能により、ブックマークの追加、削除、取得がシームレスに行え、PDFファイル内のナビゲーションとアクセシビリティが向上します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "PDF, C#, PDF内のブックマーク",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Bookmarks, PDF, C#, Aspose.PDF, add bookmark, delete bookmark, get bookmark, update bookmark, expand bookmark, PDF manipulation",
+    "wordcount": "130",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,16 +74,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/bookmarks/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このセクションでは、Aspose.PDF for .NETを使用してブックマークを追加、削除、取得する方法について説明します。"
+    "dateModified": "2024-11-25",
+    "description": "このセクションでは、Aspose.PDF for .NETを使用してブックマークを追加、削除、取得する方法を説明します。"
 }
 </script>
 
-PDFのブックマークは、PDFファイルを読む際に便利で必須のツールです。これにより、ユーザーはPDFドキュメント内の他の場所にすばやくジャンプしたり、ページをナビゲートしたり、目次のようにPDFの内容をすばやく表示することができます。
-このセクションでは、以下の方法を学びます：
+PDFのブックマークは、PDFファイルを読む際に便利で不可欠なツールです。これにより、ユーザーはPDF文書内の他の場所に迅速にジャンプし、ページをナビゲートし、目次のようにPDFの内容を迅速に表示できます。
+このセクションでは、次のことを学びます：
 
 - [ブックマークの追加と削除](/pdf/ja/net/add-and-delete-bookmark/)
-- [ブックマークの取得、更新、拡張](/pdf/ja/net/get-update-and-expand-bookmark/)
+- [ブックマークの取得、更新、展開](/pdf/ja/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {
@@ -145,4 +148,3 @@ PDFのブックマークは、PDFファイルを読む際に便利で必須の�
     }
 }
 </script>
-

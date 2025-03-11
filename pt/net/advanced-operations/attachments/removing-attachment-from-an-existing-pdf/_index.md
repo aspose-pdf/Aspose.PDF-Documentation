@@ -2,9 +2,11 @@
 title: Removendo anexo de PDF
 linktitle: Removendo anexo de um PDF existente
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /pt/net/removing-attachment-from-an-existing-pdf/
-description: Aspose.PDF pode remover anexos dos seus documentos PDF. Use a API PDF C# para remover anexos em arquivos PDF usando a biblioteca Aspose.PDF.
+description: Aspose.PDF pode remover anexos de seus documentos PDF. Use a API PDF em C# para remover anexos em arquivos PDF usando a biblioteca Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Removendo anexo de PDF",
-    "alternativeHeadline": "Como deletar anexos de PDF",
+    "headline": "Removing attachment from PDF",
+    "alternativeHeadline": "Remove Attachments Efficiently from PDF Files",
+    "abstract": "Aspose.PDF agora inclui um recurso poderoso que permite aos usuários remover facilmente anexos de seus documentos PDF usando a API PDF em C#. Essa funcionalidade simplifica a gestão de PDFs, permitindo que os usuários excluam quaisquer arquivos incorporados de seus documentos, garantindo uma experiência PDF mais limpa e simplificada.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, deletar anexos",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Removing attachment from PDF, Aspose.PDF, delete attachments, PDF API, C# PDF library, EmbeddedFiles collection, document.Save method, PDF manipulation, attachments management, Aspose.PDF for .NET",
+    "wordcount": "229",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,8 +74,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/removing-attachment-from-an-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF pode remover anexos dos seus documentos PDF. Use a API PDF C# para remover anexos em arquivos PDF usando a biblioteca Aspose.PDF."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF pode remover anexos de seus documentos PDF. Use a API PDF em C# para remover anexos em arquivos PDF usando a biblioteca Aspose.PDF."
 }
 </script>
 
@@ -80,7 +83,7 @@ Aspose.PDF pode remover anexos de arquivos PDF. Os anexos de um documento PDF s�
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-Para deletar todos os anexos associados a um arquivo PDF:
+Para excluir todos os anexos associados a um arquivo PDF:
 
 1. Chame o método [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) da coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection).
 1. Salve o arquivo atualizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
@@ -88,25 +91,29 @@ Para deletar todos os anexos associados a um arquivo PDF:
 O seguinte trecho de código mostra como remover anexos de um documento PDF.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteAllAttachments()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "DeleteAllAttachments.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf"))
+    {
+        // Delete all attachments
+        document.EmbeddedFiles.Delete();
 
-// Deletar todos os anexos
-pdfDocument.EmbeddedFiles.Delete();
-
-// Salvar documento atualizado
-pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllAttachments_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Biblioteca .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -128,21 +135,21 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -153,7 +160,7 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -165,5 +172,3 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
     }
 }
 </script>
-```
-

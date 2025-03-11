@@ -1,10 +1,12 @@
 ---
-title: قم بتدوير النص داخل PDF باستخدام C#
+title: تدوير النص داخل PDF باستخدام C#
 linktitle: تدوير النص داخل PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ar/net/rotate-text-inside-pdf/
-description: تعلم طرق مختلفة لتدوير النص إلى PDF. يتيح لك Aspose.PDF تدوير النص إلى أي زاوية، تدوير جزء من النص أو فقرة كاملة.
+description: تعلم كيفية تدوير النص داخل ملفات PDF في .NET باستخدام Aspose.PDF لضبط محاذاة النص وتحسين العرض.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "قم بتدوير النص داخل PDF باستخدام C#",
-    "alternativeHeadline": "كيفية تدوير النص في ملف PDF",
+    "headline": "Rotate Text Inside PDF using C#",
+    "alternativeHeadline": "Rotate Text to Any Angle in PDF with C#",
+    "abstract": "Aspose.PDF for .NET يسمح للمستخدمين بتدوير أجزاء النص والفقرات الكاملة داخل مستندات PDF بزوايا مختلفة. تعزز هذه الميزة مرونة المستند من خلال تمكين تعديلات دقيقة على اتجاه النص، مما يلبي احتياجات التنسيق المتنوعة في التطبيقات المهنية والإبداعية. يمكن للمستخدمين تنفيذ هذه التدويرات بسهولة باستخدام واجهات البرمجة المقدمة، مما يعزز تجربة إنشاء المستندات.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثيقة PDF",
-    "keywords": "pdf, c#, توليد الوثائق",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "860",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,183 +73,215 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/rotate-text-inside-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تعلم طرق مختلفة لتدوير النص إلى PDF. يتيح لك Aspose.PDF تدوير النص إلى أي زاوية، تدوير جزء من النص أو فقرة كاملة."
+    "dateModified": "2024-11-26",
+    "description": "تعلم طرق مختلفة لتدوير النص إلى PDF. يسمح لك Aspose.PDF بتدوير النص إلى أي زاوية، تدوير جزء من النص أو فقرة كاملة."
 }
 </script>
-الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 ## تدوير النص داخل PDF باستخدام خاصية التدوير
 
-من خلال استخدام خاصية التدوير لفئة [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)، يمكنك تدوير النص بزوايا مختلفة. يمكن استخدام تدوير النص في سيناريوهات مختلفة لتوليد الوثائق. يمكنك تحديد زاوية التدوير بالدرجات لتدوير النص حسب حاجتك. يرجى التحقق من السيناريوهات المختلفة التالية، التي يمكنك تنفيذ تدوير النص فيها.
+باستخدام خاصية التدوير في [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) يمكنك تدوير النص بزوايا مختلفة. يمكن استخدام تدوير النص في سيناريوهات مختلفة من توليد المستندات. يمكنك تحديد زاوية التدوير بالدرجات لتدوير النص وفقًا لمتطلباتك. يرجى مراجعة السيناريوهات المختلفة التالية، التي يمكنك تنفيذ تدوير النص فيها.
 
 ## تنفيذ التدوير باستخدام TextFragment و TextBuilder
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// تهيئة كائن المستند
-Document pdfDocument = new Document();
-// الحصول على صفحة معينة
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// إنشاء قطعة نص
-TextFragment textFragment1 = new TextFragment("النص الرئيسي");
-textFragment1.Position = new Position(100, 600);
-// تعيين خصائص النص
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// إنشاء قطعة نص مدورة
-TextFragment textFragment2 = new TextFragment("نص مدور");
-textFragment2.Position = new Position(200, 600);
-// تعيين خصائص النص
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment2.TextState.Rotation = 45;
-// إنشاء قطعة نص مدورة
-TextFragment textFragment3 = new TextFragment("نص مدور");
-textFragment3.Position = new Position(300, 600);
-// تعيين خصائص النص
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment3.TextState.Rotation = 90;
-// إنشاء كائن TextBuilder
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// إلحاق قطعة النص بصفحة PDF
-textBuilder.AppendText(textFragment1);
-textBuilder.AppendText(textFragment2);
-textBuilder.AppendText(textFragment3);
-// حفظ المستند
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
-```
-## تطبيق الدوران باستخدام TextParagraph و TextBuilder (أجزاء مدورة)
-
-```csharp
-// للحصول على الأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// تهيئة كائن المستند
-Document pdfDocument = new Document();
-// الحصول على صفحة معينة
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-TextParagraph paragraph = new TextParagraph();
-paragraph.Position = new Position(200, 600);
-// إنشاء جزء نصي
-TextFragment textFragment1 = new TextFragment("نص مدور");
-// تعيين خصائص النص
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// تعيين الدوران
-textFragment1.TextState.Rotation = 45;
-// إنشاء جزء نصي
-TextFragment textFragment2 = new TextFragment("النص الرئيسي");
-// تعيين خصائص النص
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// إنشاء جزء نصي
-TextFragment textFragment3 = new TextFragment("نص مدور آخر");
-// تعيين خصائص النص
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// تعيين الدوران
-textFragment3.TextState.Rotation = -45;
-// إلحاق أجزاء النص بالفقرة
-paragraph.AppendLine(textFragment1);
-paragraph.AppendLine(textFragment2);
-paragraph.AppendLine(textFragment3);
-// إنشاء كائن TextBuilder
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// إلحاق الفقرة النصية بصفحة PDF
-textBuilder.AppendParagraph(paragraph);
-// حفظ المستند
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
-```
-## تطبيق الدوران باستخدام TextFragment و Page.Paragraphs
-
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// تهيئة كائن المستند
-Document pdfDocument = new Document();
-// الحصول على صفحة معينة
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// إنشاء قطعة نص
-TextFragment textFragment1 = new TextFragment("النص الرئيسي");
-// تعيين خصائص النص
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// إنشاء قطعة نص
-TextFragment textFragment2 = new TextFragment("نص مدور");
-// تعيين خصائص النص
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// تعيين الدوران
-textFragment2.TextState.Rotation = 315;
-// إنشاء قطعة نص
-TextFragment textFragment3 = new TextFragment("نص مدور");
-// تعيين خصائص النص
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// تعيين الدوران
-textFragment3.TextState.Rotation = 270;
-pdfPage.Paragraphs.Add(textFragment1);
-pdfPage.Paragraphs.Add(textFragment2);
-pdfPage.Paragraphs.Add(textFragment3);
-// حفظ المستند
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
-```
-## تطبيق الدوران باستخدام TextParagraph و TextBuilder (دوران الفقرة بأكملها)
-
-```csharp
-// للحصول على الأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// تهيئة كائن المستند
-Document pdfDocument = new Document();
-// الحصول على صفحة معينة
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-for (int i = 0; i < 4; i++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RotateTextInsidePDF()
 {
-    TextParagraph paragraph = new TextParagraph();
-    paragraph.Position = new Position(200, 600);
-    // تحديد الدوران
-    paragraph.Rotation = i * 90 + 45;
-    // إنشاء قطعة نصية
-    TextFragment textFragment1 = new TextFragment("نص الفقرة");
-    // إنشاء قطعة نصية
-    textFragment1.TextState.FontSize = 12;
-    textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment1.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment1.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    // إنشاء قطعة نصية
-    TextFragment textFragment2 = new TextFragment("السطر الثاني من النص");
-    // تعيين خصائص النص
-    textFragment2.TextState.FontSize = 12;
-    textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment2.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment2.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    // إنشاء قطعة نصية
-    TextFragment textFragment3 = new TextFragment("وبعض النصوص الإضافية...");
-    // تعيين خصائص النص
-    textFragment3.TextState.FontSize = 12;
-    textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment3.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment3.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    textFragment3.TextState.Underline = true;
-    paragraph.AppendLine(textFragment1);
-    paragraph.AppendLine(textFragment2);
-    paragraph.AppendLine(textFragment3);
-    // إنشاء كائن TextBuilder
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // إضافة الفقرة النصية إلى صفحة PDF
-    textBuilder.AppendParagraph(paragraph);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get particular page
+        var page = document.Pages.Add();
+        // Create text fragment
+        var textFragment1 = new Aspose.Pdf.Text.TextFragment("main text");
+        textFragment1.Position = new Aspose.Pdf.Text.Position(100, 600);
+        // Set text properties
+        textFragment1.TextState.FontSize = 12;
+        textFragment1.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Create rotated text fragment
+        var textFragment2 = new Aspose.Pdf.Text.TextFragment("rotated text");
+        textFragment2.Position = new Aspose.Pdf.Text.Position(200, 600);
+        // Set text properties
+        textFragment2.TextState.FontSize = 12;
+        textFragment2.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        textFragment2.TextState.Rotation = 45;
+        // Create rotated text fragment
+        var textFragment3 = new Aspose.Pdf.Text.TextFragment("rotated text");
+        textFragment3.Position = new Aspose.Pdf.Text.Position(300, 600);
+        // Set text properties
+        textFragment3.TextState.FontSize = 12;
+        textFragment3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        textFragment3.TextState.Rotation = 90;
+        // create TextBuilder object
+        var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
+        // Append the text fragment to the PDF page
+        textBuilder.AppendText(textFragment1);
+        textBuilder.AppendText(textFragment2);
+        textBuilder.AppendText(textFragment3);
+        // Save PDF document
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
+    }
 }
-// حفظ المستند
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
+```
+
+## تنفيذ التدوير باستخدام TextParagraph و TextBuilder (أجزاء نصية مدورة)
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RotateTextInsidePDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get particular page
+        var page = document.Pages.Add();
+        var paragraph = new Aspose.Pdf.Text.TextParagraph();
+        paragraph.Position = new Aspose.Pdf.Text.Position(200, 600);
+        // Create text fragment
+        var textFragment1 = new Aspose.Pdf.Text.TextFragment("rotated text");
+        // Set text properties
+        textFragment1.TextState.FontSize = 12;
+        textFragment1.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Set rotation
+        textFragment1.TextState.Rotation = 45;
+        // Create text fragment
+        var textFragment2 = new Aspose.Pdf.Text.TextFragment("main text");
+        // Set text properties
+        textFragment2.TextState.FontSize = 12;
+        textFragment2.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Create text fragment
+        var textFragment3 = new Aspose.Pdf.Text.TextFragment("another rotated text");
+        // Set text properties
+        textFragment3.TextState.FontSize = 12;
+        textFragment3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Set rotation
+        textFragment3.TextState.Rotation = -45;
+        // Append the text fragments to the paragraph
+        paragraph.AppendLine(textFragment1);
+        paragraph.AppendLine(textFragment2);
+        paragraph.AppendLine(textFragment3);
+        // Create TextBuilder object
+        var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
+        // Append the text paragraph to the PDF page
+        textBuilder.AppendParagraph(paragraph);
+        // Save PDF document
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
+    }
+}
+```
+
+## تنفيذ التدوير باستخدام TextFragment و Page.Paragraphs
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RotateTextInsidePDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get particular page
+        var page = document.Pages.Add();
+        // Create text fragment
+        var textFragment1 = new Aspose.Pdf.Text.TextFragment("main text");
+        // Set text properties
+        textFragment1.TextState.FontSize = 12;
+        textFragment1.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Create text fragment
+        var textFragment2 = new Aspose.Pdf.Text.TextFragment("rotated text");
+        // Set text properties
+        textFragment2.TextState.FontSize = 12;
+        textFragment2.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Set rotation
+        textFragment2.TextState.Rotation = 315;
+        // Create text fragment
+        var textFragment3 = new Aspose.Pdf.Text.TextFragment("rotated text");
+        // Set text properties
+        textFragment3.TextState.FontSize = 12;
+        textFragment3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Set rotation
+        textFragment3.TextState.Rotation = 270;
+        page.Paragraphs.Add(textFragment1);
+        page.Paragraphs.Add(textFragment2);
+        page.Paragraphs.Add(textFragment3);
+        // Save PDF document
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
+    }
+}
+```
+
+## تنفيذ التدوير باستخدام TextParagraph و TextBuilder (فقرة كاملة مدورة)
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RotateTextInsidePDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get particular page
+        var page = document.Pages.Add();
+        for (int i = 0; i < 4; i++)
+        {
+            var paragraph = new Aspose.Pdf.Text.TextParagraph();
+            paragraph.Position = new Aspose.Pdf.Text.Position(200, 600);
+            // Specify rotation
+            paragraph.Rotation = i * 90 + 45;
+            // Create text fragment
+            var textFragment1 = new Aspose.Pdf.Text.TextFragment("Paragraph Text");
+            // Create text fragment
+            textFragment1.TextState.FontSize = 12;
+            textFragment1.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+            textFragment1.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
+            textFragment1.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
+            // Create text fragment
+            var textFragment2 = new Aspose.Pdf.Text.TextFragment("Second line of text");
+            // Set text properties
+            textFragment2.TextState.FontSize = 12;
+            textFragment2.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+            textFragment2.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
+            textFragment2.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
+            // Create text fragment
+            var textFragment3 = new Aspose.Pdf.Text.TextFragment("And some more text...");
+            // Set text properties
+            textFragment3.TextState.FontSize = 12;
+            textFragment3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+            textFragment3.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
+            textFragment3.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
+            textFragment3.TextState.Underline = true;
+            paragraph.AppendLine(textFragment1);
+            paragraph.AppendLine(textFragment2);
+            paragraph.AppendLine(textFragment3);
+            // Create TextBuilder object
+            var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
+            // Append the text fragment to the PDF page
+            textBuilder.AppendParagraph(paragraph);
+        }
+        // Save PDF document
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF لمكتبة .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -269,21 +303,21 @@ pdfDocument.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -294,7 +328,7 @@ pdfDocument.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تعديل ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -306,5 +340,3 @@ pdfDocument.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
     }
 }
 </script>
-```
-

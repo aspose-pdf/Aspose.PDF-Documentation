@@ -1,10 +1,12 @@
 ---
-title: Añadir sellos de página en PDF usando C#
+title: Agregar sellos de página en PDF usando C#
 linktitle: Sellos de página en archivo PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /es/net/page-stamps-in-the-pdf-file/
-description: Añade un sello de página a un documento PDF utilizando la clase PdfPageStamp con la biblioteca Aspose.PDF para .NET.
+description: Agregar un sello de página a un documento PDF usando la clase PdfPageStamp con la biblioteca Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Añadir sellos de página en PDF usando C#",
-    "alternativeHeadline": "Añadir sellos de página en PDF usando C#",
+    "headline": "Add PDF Page Stamps in PDF using C#",
+    "alternativeHeadline": "Enhance PDFs with Custom Page Stamps in C#",
+    "abstract": "Desbloquea potentes capacidades de edición de PDF con la nueva función de sello de página en Aspose.PDF for .NET. Agrega fácilmente sellos compuestos personalizables que incorporan gráficos, texto y tablas directamente en tus documentos PDF, mejorando su atractivo visual y funcionalidad. Ideal para crear diseños similares a papelería profesional, esta función simplifica la generación y manipulación de documentos en C#",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, generación de documentos",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "wordcount": "212",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,45 +73,38 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/page-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Añade un sello de página a un documento PDF utilizando la clase PdfPageStamp con la biblioteca Aspose.PDF para .NET."
+    "dateModified": "2024-11-26",
+    "description": "Agregar un sello de página a un documento PDF usando la clase PdfPageStamp con la biblioteca Aspose.PDF for .NET."
 }
 </script>
-## Añadir Sello de Página con C\#
 
-Un [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) puede ser utilizado cuando necesites aplicar un sello compuesto que contenga gráficos, texto, tablas. El siguiente ejemplo muestra cómo usar un sello para crear papelería como en Adobe InDesign, Illustrator, Microsoft Word. Supongamos que tenemos un documento de entrada y queremos aplicar 2 tipos de borde con color azul y ciruela.
+## Agregar sello de página con C\#
+
+Un [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) se puede usar cuando necesitas aplicar un sello compuesto que contenga gráficos, texto y tablas. El siguiente ejemplo muestra cómo usar un sello para crear papelería como en Adobe InDesign, Illustrator, Microsoft Word. Supongamos que tenemos un documento de entrada y queremos aplicar 2 tipos de borde con color azul y ciruela.
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
-public static void AddPageStamp()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStamp()
 {
-    var inputFileName = "sample-4pages.pdf";
-    var outputFileName = "AddPageStamp_out.pdf";
-    var pageStampFileName = "PageStamp.pdf";
-    var document = new Document(_dataDir + inputFileName);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    var bluePageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 1)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddPageStampInput.pdf"))
     {
-        Height = 800,
-        Background = true
-    };
-
-    var plumPageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 2)
-    {
-        Height = 800,
-        Background = true
-    };
-
-    for (int i = 1; i < 5; i++)
-    {
-        if (i % 2 == 0)
-            document.Pages[i].AddStamp(bluePageStamp);
-        else
-            document.Pages[i].AddStamp(plumPageStamp);
+        //Create PdfPageStamps
+        var bluePageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + "AddPageStamp.pdf", 1)
+        {
+            Height = 800,
+            Background = true
+        };
+        // Add stamps
+        document.Pages[1].AddStamp(bluePageStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddPageStamp_out.pdf");
     }
-
-    document.Save(_dataDir + outputFileName);
 }
 ```
 
@@ -139,21 +134,21 @@ public static void AddPageStamp()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -164,7 +159,7 @@ public static void AddPageStamp()
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -176,5 +171,3 @@ public static void AddPageStamp()
     }
 }
 </script>
-```
-

@@ -2,9 +2,11 @@
 title: العمل مع نماذج XFA
 linktitle: نماذج XFA
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ar/net/xfa-forms/
-description: تتيح لك واجهة برمجة تطبيقات Aspose.PDF لـ .NET العمل مع حقول XFA و XFA Acroform في مستند PDF.
+description: تتيح لك واجهة برمجة التطبيقات Aspose.PDF for .NET العمل مع حقول XFA و XFA Acroform في مستند PDF. Aspose.Pdf.Facades.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع نماذج XFA",
-    "alternativeHeadline": "ملء وتحويل والحصول على نماذج XFA في PDF",
+    "headline": "Working with XFA Forms",
+    "alternativeHeadline": "Enhance PDF handling with XFA form support",
+    "abstract": "تقدم Aspose.PDF for .NET الآن قدرات متقدمة للعمل مع نماذج XFA، مما يسمح للمطورين بملء وتحويل وإدارة حقول XFA Acroform داخل مستندات PDF. تسهل هذه الميزة التلاعب بالنماذج الديناميكية، مما يتيح الوصول السلس إلى قيم الحقول وخصائصها مع توفير تحويل فعال من XFA إلى AcroForms القياسية. عزز سير عمل معالجة PDF الخاص بك مع هذا الحل القوي للتعامل مع هياكل النماذج المعقدة",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, ملء نموذج xfa, الحصول على نموذج xfa, تحويل نموذج xfa",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "XFA Forms, Aspose.PDF for .NET, fill XFA form, convert XFA to Acroform, get XFA field properties, dynamic forms, XML Forms Architecture, manipulate XFA fields, AcroForm fields, PDF document generation",
+    "wordcount": "684",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,42 +74,52 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/xfa-forms/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تتيح لك واجهة برمجة تطبيقات Aspose.PDF لـ .NET العمل مع حقول XFA و XFA Acroform في مستند PDF."
+    "dateModified": "2024-11-25",
+    "description": "تتيح لك واجهة برمجة التطبيقات Aspose.PDF for .NET العمل مع حقول XFA و XFA Acroform في مستند PDF. Aspose.Pdf.Facades."
 }
 </script>
+
 {{% alert color="primary" %}}
 
-النماذج الديناميكية تعتمد على تخصيص XML المعروف بـ XFA، أو "هندسة النماذج XML". يمكنها أيضًا تحويل نموذج XFA الديناميكي إلى Acroform القياسي. المعلومات حول النموذج (بقدر ما يتعلق الأمر بـ PDF) غامضة جدًا - فهي تحدد أن هناك حقولًا موجودة، مع خصائص، وأحداث JavaScript، لكنها لا تحدد أي تصيير. يتم رسم كائنات نموذج XFA في وقت تحميل الوثيقة.
+تستند النماذج الديناميكية إلى مواصفة XML تعرف باسم XFA، "بنية النماذج XML". يمكنها أيضًا تحويل نموذج XFA الديناميكي إلى Acroform القياسي. المعلومات حول النموذج (بقدر ما يتعلق الأمر بـ PDF) غامضة جدًا - تحدد أن الحقول موجودة، مع خصائص، وأحداث JavaScript، ولكن لا تحدد أي عرض. يتم رسم كائنات نموذج XFA عند تحميل المستند.
 
 {{% /alert %}}
 
-توفر فئة النموذج القدرة على التعامل مع AcroForm الثابت ويمكنك الحصول على نموذج حقل معين باستخدام طريقة GetFieldFacade(..) لفئة النموذج. ومع ذلك، لا يمكن الوصول إلى حقول XFA عبر طريقة Form.GetFieldFacade(..). بدلاً من ذلك، استخدم [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) للحصول على/تعيين قيم الحقل ومعالجة قالب حقل XFA (تعيين خصائص الحقل).
+تقدم فئة النموذج القدرة على التعامل مع AcroForm الثابت ويمكنك الحصول على مثيل حقل معين باستخدام طريقة Form.GetFieldFacade(..). ومع ذلك، لا يمكن الوصول إلى حقول XFA عبر طريقة Form.GetFieldFacade(..). بدلاً من ذلك، استخدم [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) للحصول على/تعيين قيم الحقول والتلاعب بقالب حقل XFA (تعيين خصائص الحقل).
 
-يعمل أيضًا الجزء التالي من الكود مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## ملء حقول XFA
 
-يوضح لك جزء الكود التالي كيفية ملء الحقول في نموذج XFA.
-يوضح الجزء التالي من الشفرة كيفية ملء الحقول في نموذج XFA.
+تظهر مقتطفات الكود التالية كيفية ملء الحقول في نموذج XFA.
 
 ```csharp
-// لأمثلة كاملة وملفات بيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillXFAFields()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// تحميل نموذج XFA
-Document doc = new Document(dataDir + "FillXFAFields.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "FillXFAFields.pdf"))
+    {
+        // Get names of XFA form fields
+        var names = document.Form.XFA.FieldNames;
 
-// الحصول على أسماء حقول نموذج XFA
-string[] names = doc.Form.XFA.FieldNames;
+        // Set field values
+        if (names.Length > 0)
+        {
+            document.Form.XFA[names[0]] = "Field 0";
+        }
+        if (names.Length > 1)
+        {
+            document.Form.XFA[names[1]] = "Field 1";
+        }
 
-// تعيين قيم الحقول
-doc.Form.XFA[names[0]] = "Field 0";
-doc.Form.XFA[names[1]] = "Field 1";
-dataDir = dataDir + "Filled_XFA_out.pdf";
-// حفظ الوثيقة المحدثة
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "FilledXfa_out.pdf");
+    }
+}
 ```
 
 ## تحويل XFA إلى Acroform
@@ -114,62 +127,76 @@ doc.Save(dataDir);
 {{% alert color="primary" %}}
 
 جرب عبر الإنترنت
-يمكنك التحقق من جودة تحويل Aspose.PDF ومشاهدة النتائج عبر الإنترنت على هذا الرابط: [products.aspose.app/pdf/xfa/](https://products.aspose.app/pdf/xfa/)
+يمكنك التحقق من جودة تحويل Aspose.PDF وعرض النتائج عبر الإنترنت في هذا الرابط: [products.aspose.app/pdf/xfa/acroform](https://products.aspose.app/pdf/xfa/acroform)
 
 {{% /alert %}}
 
-النماذج الديناميكية تعتمد على مواصفات XML المعروفة باسم XFA، "الهندسة المعمارية للنماذج XML".
-النماذج الديناميكية مبنية على مواصفات XML تعرف بـ XFA، أو "هندسة نماذج XML".
+تستند النماذج الديناميكية إلى مواصفة XML تعرف باسم XFA، "بنية النماذج XML". المعلومات حول النموذج (بقدر ما يتعلق الأمر بـ PDF) غامضة جدًا - تحدد أن الحقول موجودة، مع خصائص، وأحداث JavaScript، ولكن لا تحدد أي عرض.
 
 حاليًا، يدعم PDF طريقتين مختلفتين لدمج البيانات ونماذج PDF:
 
-- AcroForms (المعروفة أيضًا باسم نماذج Acrobat)، تم تقديمها وتضمينها في مواصفات تنسيق PDF 1.2.
-- نماذج هندسة نماذج XML من Adobe (XFA)، تم تقديمها في مواصفات تنسيق PDF 1.5 كميزة اختيارية (مواصفات XFA غير مدرجة في مواصفات PDF، فهي مشار إليها فقط.)
+- AcroForms (المعروفة أيضًا باسم نماذج Acrobat)، تم تقديمها وتضمينها في مواصفة تنسيق PDF 1.2.
+- نماذج بنية النماذج XML من Adobe (XFA)، تم تقديمها في مواصفة تنسيق PDF 1.5 كميزة اختيارية (لم يتم تضمين مواصفة XFA في مواصفة PDF، بل تم الإشارة إليها فقط).
 
-لا يمكننا استخراج أو التلاعب بصفحات نماذج XFA، لأن محتوى النموذج يتم توليده في وقت التشغيل (أثناء عرض نموذج XFA) داخل التطبيق الذي يحاول عرض أو تقديم نموذج XFA. يحتوي Aspose.PDF على ميزة تتيح للمطورين تحويل نماذج XFA إلى AcroForms قياسية.
+لا يمكننا استخراج أو التلاعب بصفحات نماذج XFA، لأن محتوى النموذج يتم إنشاؤه في وقت التشغيل (أثناء عرض نموذج XFA) داخل التطبيق الذي يحاول عرض أو رسم نموذج XFA. تحتوي Aspose.PDF على ميزة تسمح للمطورين بتحويل نماذج XFA إلى AcroForms القياسية.
 
 ```csharp
-// لأمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertDynamicXFAToAcroForm()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// تحميل نموذج XFA الديناميكي
-Document document = new Document(dataDir + "DynamicXFAToAcroForm.pdf");
+    // Load dynamic XFA form
+    using (var document = new Aspose.Pdf.Document(dataDir + "DynamicXFAToAcroForm.pdf"))
+    {
+        // Set the form fields type as standard AcroForm
+        document.Form.Type = Aspose.Pdf.Forms.FormType.Standard;
 
-// تعيين نوع حقول النموذج كـ AcroForm قياسي
-document.Form.Type = FormType.Standard;
-
-dataDir = dataDir + "Standard_AcroForm_out.pdf";
-// حفظ PDF الناتج
-document.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "StandardAcroForm_out.pdf");
+    }
+}
 ```
+
 ## الحصول على خصائص حقل XFA
 
-للوصول إلى خصائص الحقل، استخدم أولاً Document.Form.XFA.Teamplate للوصول إلى قالب الحقل. يوضح مقتطف الكود التالي خطوات الحصول على إحداثيات X و Y لحقل نموذج XFA.
+للوصول إلى خصائص الحقل، استخدم أولاً Document.Form.XFA.Template للوصول إلى قالب الحقل. تظهر مقتطفات الكود التالية خطوات الحصول على إحداثيات X و Y لحقل نموذج XFA.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetXFAProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// تحميل نموذج XFA
-Document doc = new Document(dataDir + "GetXFAProperties.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetXFAProperties.pdf"))
+    {
+        // Get names of XFA form fields
+        var names = document.Form.XFA.FieldNames;
 
-string[] names = doc.Form.XFA.FieldNames;
+        // Set field values
+        if (names.Length > 0)
+        {
+            document.Form.XFA[names[0]] = "Field 0";
+        }
+        if (names.Length > 1)
+        {
+            document.Form.XFA[names[1]] = "Field 1";
+        }
 
-// تعيين قيم الحقول
-doc.Form.XFA[names[0]] = "Field 0";
-doc.Form.XFA[names[1]] = "Field 1";
+        // Get field position
+        if (names.Length > 0)
+        {
+            Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
+            Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
+        }
 
-// الحصول على موضع الحقل
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
-
-// الحصول على موضع الحقل
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
-
-dataDir = dataDir + "Filled_XFA_out.pdf";
-// حفظ الوثيقة المحدثة
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "FilledXfa_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -235,5 +262,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-
-

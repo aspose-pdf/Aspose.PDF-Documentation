@@ -1,32 +1,35 @@
 ---
-title: PDFファイルから画像を削除
-linktitle: 画像の削除
+title: PDFファイルから画像を削除する
+linktitle: 画像を削除する
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/delete-images-from-pdf-file/
-description: このセクションでは、Aspose.PDF for .NETを使用してPDFファイルから画像を削除する方法について説明します。
+description: このセクションでは、Aspose.PDF for .NETを使用してPDFファイルから画像を削除する方法を説明します。
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFファイルから画像を削除",
-    "alternativeHeadline": "PDFから画像を削除する方法",
+    "headline": "Delete Images from PDF File",
+    "alternativeHeadline": "Seamlessly Remove Images from Your PDF Files",
+    "abstract": "Aspose.PDF for .NETの新機能により、ユーザーはPDFファイルから効率的に画像を削除できます。この機能は、不要なビジュアルを削除するための簡単な方法を提供することで、文書管理を合理化し、全体的なコンテンツのプレゼンテーションを向上させます。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "pdf, c#, delete, remove image from pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "genre": "pdf document generation",
+    "keywords": "Delete Images, PDF manipulation, Aspose.PDF for .NET, remove image from PDF, document object, images collection, delete method, save updated PDF, PDF file handling, image deletion in PDF",
+    "wordcount": "198",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,37 +71,40 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/delete-images-from-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このセクションでは、Aspose.PDF for .NETを使用してPDFファイルから画像を削除する方法について説明します。"
+    "dateModified": "2024-11-26",
+    "description": "このセクションでは、Aspose.PDF for .NETを使用してPDFファイルから画像を削除する方法を説明します。"
 }
 </script>
 
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 PDFファイルから画像を削除するには：
 
 1. Documentオブジェクトを作成し、入力PDFファイルを開きます。
-1. DocumentオブジェクトのPagesコレクションから画像を保持するPageを取得します。
+1. DocumentオブジェクトのPagesコレクションから画像を保持しているPageを取得します。
 1. 画像は、ページのResourcesコレクションにあるImagesコレクションに保持されています。
-1. ImagesコレクションのDeleteメソッドで画像を削除します。
+1. ImagesコレクションのDeleteメソッドを使用して画像を削除します。
 1. DocumentオブジェクトのSaveメソッドを使用して出力を保存します。
 
-以下のコードスニペットは、PDFファイルから画像を削除する方法を示しています。
+次のコードスニペットは、PDFファイルから画像を削除する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteImageFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir+ "DeleteImages.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteImages.pdf"))
+    {
+        // Delete a particular image
+        document.Pages[1].Resources.Images.Delete(1);
 
-// 特定の画像を削除
-pdfDocument.Pages[1].Resources.Images.Delete(1);
-
-dataDir = dataDir + "DeleteImages_out.pdf";
-// 更新されたPDFファイルを保存
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "DeleteImages_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -127,23 +133,23 @@ pdfDocument.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -152,7 +158,7 @@ pdfDocument.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -164,5 +170,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-```
-

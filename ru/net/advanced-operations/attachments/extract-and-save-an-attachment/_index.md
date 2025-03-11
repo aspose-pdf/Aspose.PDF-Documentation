@@ -2,9 +2,11 @@
 title: Извлечение и сохранение вложения
 linktitle: Извлечение и сохранение вложения
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ru/net/extract-and-save-an-attachment/
-description: Aspose.PDF для .NET позволяет получить все вложения из документа PDF. Также вы можете получить отдельное вложение из вашего документа.
+description: Aspose.PDF for .NET позволяет вам получить все вложения из PDF-документа. Также вы можете получить отдельное вложение из вашего документа.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Извлечение и сохранение вложения",
-    "alternativeHeadline": "Как извлечь и сохранить вложения",
+    "headline": "Extract and Save an Attachment",
+    "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
+    "abstract": "Aspose.PDF для .NET представляет собой мощную функцию, которая позволяет пользователям легко извлекать и сохранять вложения из PDF-документов. Эта функциональность позволяет получать все встроенные файлы или определённые вложения, улучшая управление документами и доступность для разработчиков, работающих с PDF-файлами. Оптимизируйте свои рабочие процессы с PDF-документами, без труда обрабатывая вложения с помощью этого инновационного инструмента.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, сохранение вложений, извлечение вложений",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "extract attachments, save attachments, Aspose.PDF for .NET, PDF document, individual attachment, embedded files collection, FileSpecification object, PDF manipulation, document instance, get all attachments",
+    "wordcount": "604",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,116 +74,126 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-and-save-an-attachment/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF для .NET позволяет получить все вложения из документа PDF. Также вы можете получить отдельное вложение из вашего документа."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF для .NET позволяет получить все вложения из PDF-документа. Также вы можете получить отдельное вложение из вашего документа."
 }
 </script>
+
 ## Получение всех вложений
 
-С помощью Aspose.PDF можно получить все вложения из документа PDF. Это полезно, когда вы хотите сохранить документы отдельно от PDF или если вам нужно удалить вложения из PDF.
+С Aspose.PDF можно получить все вложения из PDF-документа. Это полезно, когда вы хотите сохранить документы отдельно от PDF или удалить из PDF все вложения.
 
-Для получения всех вложений из файла PDF:
+Чтобы получить все вложения из файла PDF:
 
-1. Пройдите через коллекцию [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Коллекция [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) содержит все вложения. Каждый элемент этой коллекции представляет объект [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Каждая итерация цикла foreach по коллекции [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) возвращает объект [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
-1.
+1. Пройдитесь по коллекции [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Коллекция [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) содержит все вложения. Каждая итерация цикла foreach по коллекции [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) возвращает объект [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
+1. Как только объект станет доступен, извлеките либо все свойства прикреплённого файла, либо сам файл.
 
-Следующие примеры кода показывают, как получить все вложения из документа PDF.
+Следующие фрагменты кода показывают, как получить все вложения из PDF-документа.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Эти фрагменты кода также работают с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "GetAlltheAttachments.pdf");
-
-// Получить коллекцию встроенных файлов
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
-
-// Получить количество встроенных файлов
-Console.WriteLine("Всего файлов: {0}", embeddedFiles.Count);
-
-int count = 1;
-
-// Пройти по коллекции, чтобы получить все вложения
-foreach (FileSpecification fileSpecification in embeddedFiles)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllAttachments()
 {
-    Console.WriteLine("Имя: {0}", fileSpecification.Name);
-    Console.WriteLine("Описание: {0}",
-    fileSpecification.Description);
-    Console.WriteLine("MIME-тип: {0}", fileSpecification.MIMEType);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-    // Проверить, содержит ли объект параметры
-    if (fileSpecification.Params != null)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf"))
     {
-        Console.WriteLine("Контрольная сумма: {0}",
-        fileSpecification.Params.CheckSum);
-        Console.WriteLine("Дата создания: {0}",
-        fileSpecification.Params.CreationDate);
-        Console.WriteLine("Дата изменения: {0}",
-        fileSpecification.Params.ModDate);
-        Console.WriteLine("Размер: {0}", fileSpecification.Params.Size);
-    }
+        // Get embedded files collection
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
 
-    // Получить вложение и записать в файл или поток
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0,
-    fileContent.Length);
-    FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt",
-    FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    fileStream.Close();
-    count+=1;
+        // Get count of the embedded files
+        Console.WriteLine("Total files : {0}", embeddedFiles.Count);
+
+        int count = 1;
+
+        // Loop through the collection to get all the attachments
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+        {
+            Console.WriteLine("Name: {0}", fileSpecification.Name);
+            Console.WriteLine("Description: {0}",
+            fileSpecification.Description);
+            Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+            // Check if parameter object contains the parameters
+            if (fileSpecification.Params != null)
+            {
+                Console.WriteLine("CheckSum: {0}",
+                fileSpecification.Params.CheckSum);
+                Console.WriteLine("Creation Date: {0}",
+                fileSpecification.Params.CreationDate);
+                Console.WriteLine("Modification Date: {0}",
+                fileSpecification.Params.ModDate);
+                Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+            }
+
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+            count += 1;
+        }
+    }
 }
 ```
+
 ## Получение отдельного вложения
 
-Для получения отдельного вложения мы можем указать индекс вложения в объекте `EmbeddedFiles` экземпляра документа. Пожалуйста, используйте следующий фрагмент кода.
+Чтобы получить отдельное вложение, мы можем указать индекс вложения в объекте EmbeddedFiles экземпляра Document. Попробуйте использовать следующий фрагмент кода.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "GetIndividualAttachment.pdf");
-
-// Получить конкретный встроенный файл
-FileSpecification fileSpecification = pdfDocument.EmbeddedFiles[1];
-
-// Получить свойства файла
-Console.WriteLine("Имя: {0}", fileSpecification.Name);
-Console.WriteLine("Описание: {0}", fileSpecification.Description);
-Console.WriteLine("MIME тип: {0}", fileSpecification.MIMEType);
-
-// Проверить, содержит ли объект параметры
-if (fileSpecification.Params != null)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetIndividualAttachment()
 {
-    Console.WriteLine("Контрольная сумма: {0}",
-    fileSpecification.Params.CheckSum);
-    Console.WriteLine("Дата создания: {0}",
-    fileSpecification.Params.CreationDate);
-    Console.WriteLine("Дата изменения: {0}",
-    fileSpecification.Params.ModDate);
-    Console.WriteLine("Размер: {0}", fileSpecification.Params.Size);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetIndividualAttachment.pdf"))
+    {
+        // Get particular embedded file
+        Aspose.Pdf.FileSpecification fileSpecification = document.EmbeddedFiles[1];
+
+        // Get the file properties
+        Console.WriteLine("Name: {0}", fileSpecification.Name);
+        Console.WriteLine("Description: {0}", fileSpecification.Description);
+        Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+        // Check if parameter object contains the parameters
+        if (fileSpecification.Params != null)
+        {
+            Console.WriteLine("CheckSum: {0}",
+            fileSpecification.Params.CheckSum);
+            Console.WriteLine("Creation Date: {0}",
+            fileSpecification.Params.CreationDate);
+            Console.WriteLine("Modification Date: {0}",
+            fileSpecification.Params.ModDate);
+            Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+        }
+
+        // Get the attachment and write to file or stream
+        byte[] fileContent = new byte[fileSpecification.Contents.Length];
+        fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+
+        using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+        {
+            fileStream.Write(fileContent, 0, fileContent.Length);
+        }
+    }
 }
-
-// Получить вложение и записать в файл или поток
-byte[] fileContent = new byte[fileSpecification.Contents.Length];
-fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-
-FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
-fileStream.Write(fileContent, 0, fileContent.Length);
-fileStream.Close();
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для .NET библиотеки",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -202,23 +215,23 @@ fileStream.Close();
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "английский"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "английский"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "английский"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -227,7 +240,7 @@ fileStream.Close();
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -239,5 +252,3 @@ fileStream.Close();
     }
 }
 </script>
-```
-

@@ -1,10 +1,12 @@
 ---
-title: Cambiar el tamaño de página de PDF con C#
-linktitle: Cambiar el tamaño de página de PDF
+title: Cambiar el tamaño de página PDF con C#
+linktitle: Cambiar el tamaño de página PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /es/net/change-page-size/
-description: Cambiar el tamaño de página de su documento PDF utilizando la biblioteca Aspose.PDF para .NET.
+description: Cambiar el tamaño de página de su documento PDF utilizando la biblioteca Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Cambiar el tamaño de página de PDF con C#",
-    "alternativeHeadline": "Redimensionar página de PDF con .NET",
+    "headline": "Change PDF Page Size with C#",
+    "alternativeHeadline": "Effortlessly Resize PDF Pages in C#",
+    "abstract": "La nueva funcionalidad en Aspose.PDF for .NET permite a los desarrolladores cambiar fácilmente el tamaño de página de documentos PDF programáticamente. Con solo unas pocas líneas de código, los usuarios pueden modificar las dimensiones de PDF existentes, mejorando sus capacidades de gestión de documentos y asegurando la compatibilidad con varios requisitos de diseño. Esta característica agiliza el proceso de redimensionar páginas PDF a formatos preferidos, como A4, directamente dentro de aplicaciones .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, cambiar tamaño de pdf, redimensionar pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "wordcount": "300",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,41 +73,81 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/change-page-size/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cambiar el tamaño de página de su documento PDF utilizando la biblioteca Aspose.PDF para .NET."
+    "dateModified": "2024-11-26",
+    "description": "Cambiar el tamaño de página de su documento PDF utilizando la biblioteca Aspose.PDF for .NET."
 }
 </script>
 
-## Cambiar el Tamaño de Página de PDF
+## Cambiar el tamaño de página PDF
 
-Aspose.PDF para .NET le permite cambiar el tamaño de página de PDF con simples líneas de código en sus aplicaciones .NET. Este tema explica cómo actualizar/cambiar las dimensiones de página (tamaño) de un archivo PDF existente.
+Aspose.PDF for .NET te permite cambiar el tamaño de página PDF con líneas de código simples en tus aplicaciones .NET. Este tema explica cómo actualizar/cambiar las dimensiones (tamaño) de un archivo PDF existente.
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-La clase [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) contiene el método SetPageSize(...) que le permite establecer el tamaño de la página. El fragmento de código a continuación actualiza las dimensiones de la página en unos pocos pasos fáciles:
+La clase [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) contiene el método SetPageSize(...) que te permite establecer el tamaño de la página. El siguiente fragmento de código actualiza las dimensiones de la página en unos pocos pasos sencillos:
 
 1. Cargar el archivo PDF fuente.
 1. Obtener las páginas en el objeto [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 1. Obtener una página dada.
 1. Llamar al método SetPageSize(..) para actualizar sus dimensiones.
-1. Llamar al método Save(..) de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) para generar el archivo PDF con dimensiones de página actualizadas.
+1. Llamar al método Save(..) de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) para generar el archivo PDF con las dimensiones de página actualizadas.
 
 {{% alert color="primary" %}}
 
-Tenga en cuenta que las propiedades de altura y anchura utilizan puntos como unidad básica, donde 1 pulgada = 72 puntos y 1 cm = 1/2.54 pulgadas = 0.3937 pulgadas = 28.3 puntos.
-Tenga en cuenta que las propiedades de altura y anchura utilizan puntos como unidad básica, donde 1 pulgada = 72 puntos y 1 cm = 1/2.54 pulgadas = 0.3937 pulgadas = 28.3 puntos.
+Ten en cuenta que las propiedades de altura y ancho utilizan puntos como unidad básica, donde 1 pulgada = 72 puntos y 1 cm = 1/2.54 pulgada = 0.3937 pulgada = 28.3 puntos.
 
 {{% /alert %}}
 
 El siguiente fragmento de código muestra cómo cambiar las dimensiones de la página PDF al tamaño A4.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-UpdateDimensions-UpdateDimensions.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ChangePdfPageSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-## Obtener tamaño de página PDF
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
+    {
+        // Get page collection
+        var pageCollection = document.Pages;
+        // Get particular page
+        var pdfPage = pageCollection[1];
+        // Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points
+        // So A4 dimensions in points will be (842.4, 597.6)
+        pdfPage.SetPageSize(597.6, 842.4);
+        // Save PDF document
+        document.Save(dataDir + "UpdateDimensions_out.pdf"); 
+    }
+}
+```
 
-Puede leer el tamaño de página de un archivo PDF existente usando Aspose.PDF para .NET. El siguiente ejemplo de código muestra cómo leer las dimensiones de la página PDF usando C#.
+## Obtener el tamaño de página PDF
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-GetDimensions-GetDimensions.cs" >}}
+Puedes leer el tamaño de página PDF de un archivo PDF existente utilizando Aspose.PDF for .NET. El siguiente ejemplo de código muestra cómo leer las dimensiones de la página PDF usando C#.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetPdfPageSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
+    {
+        // Adds a blank page to pdf document
+        Page page = document.Pages.Count > 0 ? document.Pages[1] : document.Pages.Add();
+        // Get page height and width information
+        Console.WriteLine(page.GetPageRect(true).Width.ToString() + ":" + page.GetPageRect(true).Height);
+        // Rotate page at 90 degree angle
+        page.Rotate = Rotation.on90;
+        // Get page height and width information
+        Console.WriteLine(page.GetPageRect(true).Width.ToString() + ":" + page.GetPageRect(true).Height);
+    }
+}
+```
 
 <script type="application/ld+json">
 {
@@ -158,7 +200,7 @@ Puede leer el tamaño de página de un archivo PDF existente usando Aspose.PDF p
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -170,4 +212,3 @@ Puede leer el tamaño de página de un archivo PDF existente usando Aspose.PDF p
     }
 }
 </script>
-Sure, I just need you to provide the document or the content that you want to translate into Spanish. Please paste the text here, and I'll help you with the translation while preserving the original markdown formatting.

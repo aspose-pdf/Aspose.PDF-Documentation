@@ -1,10 +1,12 @@
 ---
-title: Menambahkan Halaman ke Dokumen PDF
-linktitle: Tambah Halaman
+title: Tambahkan Halaman ke Dokumen PDF
+linktitle: Tambahkan Halaman
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/add-pages/
-description: Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghapus) halaman dari file PDF menggunakan C#.
+description: Jelajahi cara menambahkan halaman ke PDF yang ada di .NET dengan Aspose.PDF untuk meningkatkan dan memperluas dokumen Anda.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Tambah Halaman di PDF dengan C#",
-    "alternativeHeadline": "Cara menambah Halaman dalam dokumen PDF",
+    "headline": "Add Pages to PDF Document",
+    "alternativeHeadline": "Insert and Manage Pages in PDF Easily with C#",
+    "abstract": "Fitur dalam Aspose.PDF for .NET memungkinkan pengguna untuk dengan mudah menyisipkan halaman ke dalam dokumen PDF di lokasi yang ditentukan, meningkatkan fleksibilitas dan organisasi dokumen. Fungsionalitas ini tidak hanya mendukung penambahan halaman tetapi juga mencakup opsi untuk memindahkan atau menghapus halaman yang ada menggunakan C#. Permudah manajemen PDF Anda dengan tambahan intuitif ini ke dalam toolkit pengembangan Anda.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen PDF",
-    "keywords": "pdf, c#, tambah halaman pdf, sisipkan halaman pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Add Pages to PDF, insert PDF page, empty page PDF, C# PDF manipulation, PDF document generation, PageCollection, Aspose.PDF for .NET, move PDF pages, remove PDF pages, add pages to PDF",
+    "wordcount": "651",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,80 +74,93 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghapus) halaman dari file PDF menggunakan C#."
+    "dateModified": "2024-11-26",
+    "description": "Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman di lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghapus) halaman dari file PDF menggunakan C#."
 }
 </script>
-Aspose.PDF untuk .NET API memberikan fleksibilitas penuh untuk bekerja dengan halaman dalam dokumen PDF menggunakan C# atau bahasa .NET lainnya. Ini mempertahankan semua halaman dokumen PDF dalam [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) yang dapat digunakan untuk bekerja dengan halaman PDF.
-Aspose.PDF untuk .NET memungkinkan Anda memasukkan halaman ke dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF.
+
+Aspose.PDF for .NET API memberikan fleksibilitas penuh untuk bekerja dengan halaman dalam dokumen PDF menggunakan C# atau bahasa .NET lainnya. Ini mempertahankan semua halaman dari dokumen PDF dalam [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) yang dapat digunakan untuk bekerja dengan halaman PDF.
+Aspose.PDF for .NET memungkinkan Anda untuk menyisipkan halaman ke dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF.
 Bagian ini menunjukkan cara menambahkan halaman ke PDF menggunakan C#.
 
-## Tambah atau Sisipkan Halaman dalam File PDF
+## Tambahkan atau Sisipkan Halaman dalam File PDF
 
-Aspose.PDF untuk .NET memungkinkan Anda memasukkan halaman ke dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF.
+Aspose.PDF for .NET memungkinkan Anda untuk menyisipkan halaman ke dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-### Sisipkan Halaman Kosong di File PDF di Lokasi yang Diinginkan
+### Sisipkan Halaman Kosong dalam File PDF di Lokasi yang Diinginkan
 
-Untuk memasukkan halaman kosong dalam file PDF:
+Untuk menyisipkan halaman kosong dalam file PDF:
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF masukan.
-1. 
-1. Simpan output PDF menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF input.
+1. Panggil metode [Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) dengan indeks yang ditentukan.
+1. Simpan PDF output menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-Potongan kode berikut menunjukkan cara Anda memasukkan halaman dalam file PDF.
+Potongan kode berikut menunjukkan cara menyisipkan halaman dalam file PDF.
 
 ```cs
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "InsertEmptyPage.pdf");
-
-// Masukkan halaman kosong dalam PDF
-pdfDocument.Pages.Insert(2);
-// Simpan file output
-pdfDocument.Save(dataDir + "InsertEmptyPage_out.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPage.pdf"))
+    {
+       // Insert an empty page in a PDF
+       document.Pages.Insert(2);
+        // Save PDF document
+       document.Save(dataDir + "InsertEmptyPage_out.pdf");
+    }
+}
 ```
 
 Dalam contoh di atas, kami menambahkan halaman kosong dengan parameter default. Jika Anda perlu membuat ukuran halaman sama dengan halaman lain dalam dokumen, Anda harus menambahkan beberapa baris kode:
 
 ```cs
-var page = pdfDocument.Pages.Insert(2);
-//salin parameter halaman dari halaman 1
-page.ArtBox = pdfDocument.Pages[1].ArtBox;
-page.BleedBox = pdfDocument.Pages[1].BleedBox;
-page.CropBox = pdfDocument.Pages[1].CropBox;
-page.MediaBox = pdfDocument.Pages[1].MediaBox;
-page.TrimBox = pdfDocument.Pages[1].TrimBox;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPageWithParameters()
+{
+    var page = document.Pages.Insert(2);
+    //copy page parameters from page 1
+    page.ArtBox = document.Pages[1].ArtBox;
+    page.BleedBox = document.Pages[1].BleedBox;
+    page.CropBox = document.Pages[1].CropBox;
+    page.MediaBox = document.Pages[1].MediaBox;
+    page.TrimBox = document.Pages[1].TrimBox;
+}
 ```
+
 ### Tambahkan Halaman Kosong di Akhir File PDF
 
-Terkadang, Anda ingin memastikan bahwa dokumen berakhir di halaman kosong. Topik ini menjelaskan cara memasukkan halaman kosong di akhir dokumen PDF.
+Terkadang, Anda ingin memastikan bahwa dokumen diakhiri dengan halaman kosong. Topik ini menjelaskan cara menyisipkan halaman kosong di akhir dokumen PDF.
 
-Untuk memasukkan halaman kosong di akhir file PDF:
+Untuk menyisipkan halaman kosong di akhir file PDF:
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF masukan.
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF input.
 1. Panggil metode [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection), tanpa parameter apa pun.
-1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Simpan PDF output menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-Potongan kode berikut menunjukkan cara memasukkan halaman kosong di akhir file PDF.
+Potongan kode berikut menunjukkan cara menyisipkan halaman kosong di akhir file PDF.
 
 ```cs
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "InsertEmptyPageAtEnd.pdf");
-
-// Sisipkan halaman kosong di akhir file PDF
-pdfDocument.Pages.Add();
-
-// Simpan file keluaran
-pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPageAtTheEnd()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPageAtEnd.pdf"))
+    {
+        // Insert an empty page at the end of a PDF file
+        document.Pages.Add();
+        // Save PDF document
+        document.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -173,21 +189,21 @@ pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -198,7 +214,7 @@ pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -210,5 +226,3 @@ pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
     }
 }
 </script>
-```
-
