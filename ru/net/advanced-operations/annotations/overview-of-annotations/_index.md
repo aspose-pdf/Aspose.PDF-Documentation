@@ -85,7 +85,7 @@ sitemap:
 |:--|:--|:--|:--|
 |[Текст](/pdf/ru/net/text-annotation/)|Текстовая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Ссылка](/pdf/ru/net/extra-annotations/)|Аннотации ссылок|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Свободный текст](/pdf/ru/net/text-annotation/)|(PDF 1.3) Бесплатная текстовая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Свободный текст](/pdf/ru/net/text-annotation/)|(PDF 1.3) Free текстовая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Линия](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Линейная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Квадрат](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Квадратная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Круг](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Круговая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
