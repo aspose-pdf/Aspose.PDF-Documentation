@@ -509,7 +509,7 @@ private static void ValidateTaggedPdf()
 
 다음 코드 스니펫은 태그가 있는 PDF 문서에서 텍스트 구조 위치를 조정하는 방법을 보여줍니다:
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
