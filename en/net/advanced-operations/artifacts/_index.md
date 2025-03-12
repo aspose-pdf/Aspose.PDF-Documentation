@@ -17,8 +17,8 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Artifacts in .NET",
-    "alternativeHeadline": "Add and Manage Artifacts in PDF Documents",
-    "abstract": "Aspose.PDF for .NET introduces the Artifact class, allowing developers to efficiently manage non-content elements like background images and watermarks within PDF documents. This functionality enhances document structure while improving accessibility and performance, as artifacts can be ignored by assistive technologies. With customizable options for types and properties, users can easily manipulate these elements to create visually appealing PDFs",
+    "alternativeHeadline": "Enhance PDF Documents with Artifacts Management",
+    "abstract": "Aspose.PDF for .NET introduces the Artifact class, enabling developers to seamlessly manage non-content elements like background images and watermarks in PDF documents. This feature enhances document accessibility and performance by allowing assistive technologies to ignore decorative elements, while providing customizable options for various artifact types and properties",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,8 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "Artifacts, PDF document generation, Aspose.PDF for .NET, BackgroundArtifact, WatermarkArtifact, Artifact class, PDF artifacts, Artifact types, Accessibility in PDF, PDF watermark handling",
-    "wordcount": "779",
+    "wordcount": "2501",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/artifacts/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-03-12",
     "description": "Aspose.PDF for .NET allows you to add a background image to PDF pages,  and get each watermark using Artifact class."
 }
 </script>
