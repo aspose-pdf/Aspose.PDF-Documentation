@@ -483,6 +483,107 @@ private static void ValidateTaggedPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
+## 调整文本结构的位置
+
+以下代码片段展示了如何在标记的 PDF 文档中调整文本结构的位置：
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AdjustPosition()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with TaggedPdf
+        var taggedContent = document.TaggedContent;
+
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
+
+        // Create paragraph
+        var p = taggedContent.CreateParagraphElement();
+        taggedContent.RootElement.AppendChild(p);
+        p.SetText("Text.");
+
+        // Adjust position
+        p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+        {
+            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
+            Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 300,
+                Right = 0,
+                Top = 20,
+                Bottom = 0
+            },
+            VerticalAlignment = Aspose.Pdf.VerticalAlignment.None,
+            IsFirstParagraphInColumn = false,
+            IsKeptWithNext = false,
+            IsInNewPage = false,
+            IsInLineParagraph = false
+        });
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "AdjustTextPosition_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AdjustPosition()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+    
+    // Get Content for work with TaggedPdf
+    var taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Create paragraph
+    var p = taggedContent.CreateParagraphElement();
+    taggedContent.RootElement.AppendChild(p);
+    p.SetText("Text.");
+
+    // Adjust position
+    p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+    {
+        HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
+        Margin = new Aspose.Pdf.MarginInfo
+        {
+            Left = 300,
+            Right = 0,
+            Top = 20,
+            Bottom = 0
+        },
+        VerticalAlignment = Aspose.Pdf.VerticalAlignment.None,
+        IsFirstParagraphInColumn = false,
+        IsKeptWithNext = false,
+        IsInNewPage = false,
+        IsInLineParagraph = false
+    });
+
+    // Save Tagged PDF Document
+    document.Save(dataDir + "AdjustTextPosition_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
