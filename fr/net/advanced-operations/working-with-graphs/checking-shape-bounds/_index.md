@@ -155,7 +155,10 @@ In case of issues, here are a few tips:
 ## Complete Example
 Below is a complete example demonstrating all the steps combined:
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
     // Create a new document and add a page
@@ -187,8 +190,45 @@ private static void CheckShapeBounds()
         // Attempt to add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
+}```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckShapeBounds()
+{
+    // Create a new document and add a page
+    using var doc = new Aspose.Pdf.Document();
+    Aspose.Pdf.Page page = doc.Pages.Add();
+
+    // Create a Graph Object with Specified Dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
+    {
+        Top = 10,
+        Left = 15,
+        Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
+    };
+    page.Paragraphs.Add(graph);
+
+    // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
+    Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+    {
+        GraphInfo =
+        {
+            FillColor = Aspose.Pdf.Color.Tomato
+        }
+    };
+
+    // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
+    graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
+
+    // Attempt to add the rectangle to the graph
+    graph.Shapes.Add(rect);
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Conclusion
 The bounds-checking feature in the 'Aspose.Pdf.Drawing.Graph. Shapes' collection is a powerful tool for ensuring elements fit within parent containers. You can prevent layout issues in your PDF documents by setting the BoundsCheckMode to ThrowExceptionIfDoesNotFit. This feature is particularly useful in scenarios where precise element positioning and sizing are critical. For further details, visit the [official documentation](https://docs.aspose.com/pdf/net/).
