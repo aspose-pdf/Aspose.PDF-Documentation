@@ -1031,7 +1031,7 @@ private static void StyleTableCell()
 
 Potongan kode berikut menunjukkan cara menyesuaikan posisi tabel di dokumen PDF Berlabel:
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

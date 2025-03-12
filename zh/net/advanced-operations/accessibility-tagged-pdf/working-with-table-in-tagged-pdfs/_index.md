@@ -1031,9 +1031,9 @@ private static void StyleTableCell()
 
 以下代码片段演示了如何在标记的PDF文档中调整表格位置：
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
-```csharp
+```csharp~~~~
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AdjustTablePosition()
 {
