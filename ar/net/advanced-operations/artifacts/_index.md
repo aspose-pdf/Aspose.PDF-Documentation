@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 170
 url: /ar/net/artifacts/
-description: Aspose.PDF for .NET يتيح لك إضافة صورة خلفية إلى صفحات PDF، والحصول على كل علامة مائية باستخدام فئة Artifact.
+description: يسمح Aspose.PDF لـ .NET بإضافة صورة خلفية إلى صفحات PDF، والحصول على كل علامة مائية باستخدام فئة Artifact.
 lastmod: "2024-01-17"
 sitemap:
     changefreq: "monthly"
@@ -17,8 +17,8 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Artifacts in .NET",
-    "alternativeHeadline": "Add and Manage Artifacts in PDF Documents",
-    "abstract": "Aspose.PDF for .NET يقدم فئة Artifact، مما يسمح للمطورين بإدارة العناصر غير المحتوى مثل الصور الخلفية والعلامات المائية بكفاءة داخل مستندات PDF. تعزز هذه الوظيفة هيكل المستند مع تحسين الوصول والأداء، حيث يمكن تجاهل العناصر بواسطة التقنيات المساعدة. مع خيارات قابلة للتخصيص لأنواع وخصائص، يمكن للمستخدمين بسهولة التلاعب بهذه العناصر لإنشاء مستندات PDF جذابة بصريًا.",
+    "alternativeHeadline": "Enhance PDF Documents with Artifacts Management",
+    "abstract": "تقدم Aspose.PDF لـ .NET فئة Artifact، مما يمكّن المطورين من إدارة العناصر غير المحتوى مثل الصور الخلفية وعلامات الماء بسلاسة في مستندات PDF. تعزز هذه الميزة إمكانية الوصول إلى المستندات والأداء من خلال السماح للتقنيات المساعدة بتجاهل العناصر الزخرفية، مع توفير خيارات قابلة للتخصيص لمختلف أنواع وخصائص العناصر.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,8 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "Artifacts, PDF document generation, Aspose.PDF for .NET, BackgroundArtifact, WatermarkArtifact, Artifact class, PDF artifacts, Artifact types, Accessibility in PDF, PDF watermark handling",
-    "wordcount": "779",
+    "wordcount": "2501",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,29 +73,29 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/artifacts/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF for .NET يتيح لك إضافة صورة خلفية إلى صفحات PDF، والحصول على كل علامة مائية باستخدام فئة Artifact."
+    "dateModified": "2025-03-12",
+    "description": "يسمح Aspose.PDF لـ .NET بإضافة صورة خلفية إلى صفحات PDF، والحصول على كل علامة مائية باستخدام فئة Artifact."
 }
 </script>
 
-العناصر في PDF هي كائنات رسومية أو عناصر أخرى ليست جزءًا من المحتوى الفعلي للمستند. تُستخدم عادةً لأغراض الزخرفة أو التخطيط أو الخلفية. تشمل أمثلة العناصر رؤوس الصفحات، والتذييلات، والفواصل، أو الصور التي لا تنقل أي معنى.
+Artifacts in PDF هي كائنات رسومية أو عناصر أخرى ليست جزءًا من المحتوى الفعلي للمستند. عادةً ما تُستخدم لأغراض الزينة أو التخطيط أو كخلفية. تشمل أمثلة Artifacts رؤوس الصفحات، وتذييلها، والفواصل، أو الصور التي لا تنقل أي معنى.
 
-الغرض من العناصر في PDF هو السماح بالتمييز بين المحتوى والعناصر غير المحتوى. هذا مهم للوصول، حيث يمكن لبرامج قراءة الشاشة وغيرها من التقنيات المساعدة تجاهل العناصر والتركيز على المحتوى ذي الصلة. يمكن أن تحسن العناصر أيضًا من أداء وجودة مستندات PDF، حيث يمكن استبعادها من الطباعة أو البحث أو النسخ.
+الغرض من Artifacts في PDF هو التمييز بين عناصر المحتوى وغير المحتوى. وهذا مهم لإمكانية الوصول، حيث يمكن لبرامج قارئات الشاشة والتقنيات المساعدة تجاهل Artifacts والتركيز على المحتوى ذي الصلة. كما يمكن أن تحسن Artifacts من أداء وجودة مستندات PDF، إذ يمكن حذفها عند الطباعة أو البحث أو النسخ.
 
-لإنشاء عنصر كعنصر في PDF، تحتاج إلى استخدام فئة [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact).
+لإنشاء عنصر كـ Artifact في PDF، تحتاج إلى استخدام فئة [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact).
 تحتوي على الخصائص المفيدة التالية:
 
-- **Artifact.Type** – يحصل على نوع العنصر (يدعم قيم تعداد Artifact.ArtifactType حيث تشمل القيم الخلفية، والتخطيط، والصفحة، والترقيم وغير محدد).
-- **Artifact.Subtype** – يحصل على نوع العنصر الفرعي (يدعم قيم تعداد Artifact.ArtifactSubtype حيث تشمل القيم الخلفية، والتذييل، والرأس، وغير محدد، والعلامة المائية).
-- **Artifact.Image** – يحصل على صورة العنصر (إذا كانت الصورة موجودة، وإلا null).
-- **Artifact.Text** – يحصل على نص العنصر.
-- **Artifact.Contents** – يحصل على مجموعة من العمليات الداخلية للعنصر. نوعه المدعوم هو System.Collections.ICollection.
-- **Artifact.Form** – يحصل على XForm للعنصر (إذا تم استخدام XForm). تحتوي العناصر مثل العلامات المائية والرأس والتذييل على XForm الذي يظهر جميع محتويات العنصر.
-- **Artifact.Rectangle** – يحصل على موضع العنصر على الصفحة.
-- **Artifact.Rotation** – يحصل على دوران العنصر (بالدرجات، القيمة الإيجابية تشير إلى دوران عكس عقارب الساعة).
-- **Artifact.Opacity** – يحصل على شفافية العنصر. القيم الممكنة تتراوح بين 0...1، حيث 1 تعني غير شفاف تمامًا.
+- **Artifact.Type** – يحصل على نوع Artifact (يدعم القيم من تعداد Artifact.ArtifactType حيث تشمل القيم Background، Layout، Page، Pagination و Undefined).
+- **Artifact.Subtype** – يحصل على النوع الفرعي لـ Artifact (يدعم القيم من تعداد Artifact.ArtifactSubtype حيث تشمل القيم Background، Footer، Header، Undefined، Watermark).
+- **Artifact.Image** – يحصل على صورة Artifact (إذا كانت الصورة موجودة، وإلا null).
+- **Artifact.Text** – يحصل على نص Artifact.
+- **Artifact.Contents** – يحصل على مجموعة من العمليات الداخلية لـ Artifact. النوع المدعوم هو System.Collections.ICollection.
+- **Artifact.Form** – يحصل على XForm لـ Artifact (إذا تم استخدام XForm). تحتوي Artifacts الخاصة بـ Watermarks و header و footer على XForm تُظهر جميع محتويات Artifact.
+- **Artifact.Rectangle** – يحصل على موضع Artifact في الصفحة.
+- **Artifact.Rotation** – يحصل على دوران Artifact (بالدرجات؛ حيث تشير القيمة الموجبة إلى دوران عكس اتجاه عقارب الساعة).
+- **Artifact.Opacity** – يحصل على شفافية Artifact. القيم الممكنة تتراوح من 0 إلى 1، حيث يعني 1 شفافية كاملة.
 
-قد تكون الفئات التالية أيضًا مفيدة للعمل مع العناصر:
+الفئات التالية قد تكون مفيدة أيضًا للعمل مع Artifacts:
 
 - [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)
 - [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact/)
@@ -104,15 +103,15 @@ sitemap:
 - [FooterArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/footerartifact/)
 - [WatermarkArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/watermarkartifact/)
 
-## العمل مع العلامات المائية الموجودة
+## Working with Existing Watermarks
 
-تسمى العلامة المائية التي تم إنشاؤها باستخدام Adobe Acrobat عنصرًا (كما هو موضح في 14.8.2.2 المحتوى الحقيقي والعناصر في مواصفة PDF).
+العلامة المائية المُنشأة باستخدام Adobe Acrobat تُسمى Artifact (كما هو موضح في 14.8.2.2 Real Content and Artifacts من مواصفات PDF).
 
-للحصول على جميع العلامات المائية في صفحة معينة، تحتوي فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) على خاصية Artifacts.
+للحصول على جميع العلامات المائية على صفحة معينة، تحتوي فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) على خاصية Artifacts.
 
-تظهر مقتطفات الكود التالية كيفية الحصول على جميع العلامات المائية في الصفحة الأولى من ملف PDF.
+تُظهر الشيفرة التالية كيفية الحصول على جميع العلامات المائية في الصفحة الأولى من ملف PDF.
 
-_ملاحظة:_ يعمل هذا الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+_Note:_ تعمل هذه الشيفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) library.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -139,11 +138,11 @@ private static void ExtractWatermarkFromPDF()
 }
 ```
 
-## العمل مع الخلفيات كعناصر
+## Working with Backgrounds as Artifacts
 
-يمكن استخدام الصور الخلفية لإضافة علامة مائية، أو تصميم دقيق آخر، إلى المستندات. في Aspose.PDF for .NET، كل مستند PDF هو مجموعة من الصفحات وكل صفحة تحتوي على مجموعة من العناصر. يمكن استخدام فئة [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) لإضافة صورة خلفية إلى كائن الصفحة.
+يمكن استخدام الصور الخلفية لإضافة علامة مائية أو تصميم دقيق إلى المستندات. في Aspose.PDF for .NET، كل مستند PDF عبارة عن مجموعة من الصفحات، وتحتوي كل صفحة على مجموعة من Artifacts. يمكن استخدام فئة [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) لإضافة صورة خلفية إلى كائن الصفحة.
 
-تظهر مقتطفات الكود التالية كيفية إضافة صورة خلفية إلى صفحات PDF باستخدام كائن BackgroundArtifact.
+تُظهر الشيفرة التالية كيفية إضافة صورة خلفية إلى صفحات PDF باستخدام كائن BackgroundArtifact.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -170,7 +169,7 @@ private static void AddBackgroundImageToPDF()
 }
 ```
 
-إذا كنت ترغب، لأي سبب من الأسباب، في استخدام خلفية بلون صلب، يرجى تغيير الكود السابق بالطريقة التالية:
+إذا كنت ترغب، لأي سبب من الأسباب، في استخدام خلفية بلون ثابت، يرجى تغيير الشيفرة السابقة على النحو التالي:
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -198,9 +197,9 @@ private static void AddBackgroundImageToPDF()
  }
 ```
 
-## حساب عدد العناصر من نوع معين
+## Counting Artifacts of a Particular Type
 
-لحساب العدد الإجمالي للعناصر من نوع معين (على سبيل المثال، العدد الإجمالي للعلامات المائية)، استخدم الكود التالي:
+لحساب العدد الإجمالي لـ Artifacts من نوع معين (على سبيل المثال، العدد الإجمالي للعلامات المائية)، استخدم الشيفرة التالية:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -228,6 +227,326 @@ private static void CountPDFArtifacts()
     }
 }
 ```
+
+## Adding Bates Numbering Artifact
+
+لإضافة Bates numbering artifact إلى المستند، استدعِ طريقة التمديد ```AddBatesNumbering(BatesNArtifact batesNArtifact)``` على ```PageCollection```، مع تمرير كائن ```BatesNArtifact``` كمعامل:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBatesNArtifact()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create or open PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add 10 pages
+        for (int i = 0; i < 10; i++)
+        {
+            document.Pages.Add();
+        }
+
+        // Add Bates numbering to all pages
+        document.Pages.AddBatesNumbering(new BatesNArtifact
+        {
+            // These properties are set to their default values, as if they were not specified
+            StartPage = 1,
+            EndPage = 0,
+            Subset = Subset.All,
+            NumberOfDigits = 6,
+            StartNumber = 1,
+            Prefix = "",
+            Suffix = "",
+            ArtifactVerticalAlignment = VerticalAlignment.Bottom,
+            ArtifactHorizontalAlignment = HorizontalAlignment.Right,
+            RightMargin = 72,
+            LeftMargin = 72,
+            TopMargin = 36,
+            BottomMargin = 36
+        });
+
+        // Save PDF document
+        document.Save(dataDir + "SampleBatesNArtifact_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// The path to the documents directory
+var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+// Create or open PDF document
+using var document = new Aspose.Pdf.Document();
+
+// Add 10 pages
+for (int i = 0; i < 10; i++)
+{
+    document.Pages.Add();
+}
+
+// Add Bates numbering to all pages
+document.Pages.AddBatesNumbering(new BatesNArtifact
+{
+    // These properties are set to their default values, as if they were not specified
+    StartPage = 1,
+    EndPage = 0,
+    Subset = Subset.All,
+    NumberOfDigits = 6,
+    StartNumber = 1,
+    Prefix = "",
+    Suffix = "",
+    ArtifactVerticalAlignment = VerticalAlignment.Bottom,
+    ArtifactHorizontalAlignment = HorizontalAlignment.Right,
+    RightMargin = 72,
+    LeftMargin = 72,
+    TopMargin = 36,
+    BottomMargin = 36
+});
+
+// Save PDF document
+document.Save(dataDir + "SampleBatesNArtifact_out.pdf");
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+أو، يمكنك تمرير مجموعة من ```PaginationArtifacts```:
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBatesNArtifact()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create or open PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add 10 pages
+        for (int i = 0; i < 10; i++)
+        {
+            document.Pages.Add();
+        }
+
+        // Add Bates numbering to all pages
+        document.Pages.AddPagination(new List<Aspose.Pdf.PaginationArtifact>
+        {
+            new Aspose.Pdf.BatesNArtifact
+            {
+                // These properties are set to their default values, as if they were not specified
+                StartPage = 1,
+                EndPage = 0,
+                Subset = Subset.All,
+                NumberOfDigits = 6,
+                StartNumber = 1,
+                Prefix = "",
+                Suffix = "",
+                ArtifactVerticalAlignment = VerticalAlignment.Bottom,
+                ArtifactHorizontalAlignment = HorizontalAlignment.Right,
+                RightMargin = 72,
+                LeftMargin = 72,
+                TopMargin = 36,
+                BottomMargin = 36
+            }
+        });
+
+        // Save PDF document
+        document.Save(dataDir + "SampleBatesNArtifact_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBatesNArtifact()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create or open PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Add 10 pages
+    for (int i = 0; i < 10; i++)
+    {
+        document.Pages.Add();
+    }
+
+    // Add Bates numbering to all pages
+    document.Pages.AddPagination(new List<Aspose.Pdf.PaginationArtifact>
+    {
+        new Aspose.Pdf.BatesNArtifact
+        {
+            // These properties are set to their default values, as if they were not specified
+            StartPage = 1,
+            EndPage = 0,
+            Subset = Subset.All,
+            NumberOfDigits = 6,
+            StartNumber = 1,
+            Prefix = "",
+            Suffix = "",
+            ArtifactVerticalAlignment = VerticalAlignment.Bottom,
+            ArtifactHorizontalAlignment = HorizontalAlignment.Right,
+            RightMargin = 72,
+            LeftMargin = 72,
+            TopMargin = 36,
+            BottomMargin = 36
+        }
+    });
+
+    // Save PDF document
+    document.Save(dataDir + "SampleBatesNArtifact_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+بدلاً من ذلك، يمكنك إضافة Bates numbering artifact باستخدام مُفوَّض فعل:
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBatesNArtifact()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create or open PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add 10 pages
+        for (int i = 0; i < 10; i++)
+        {
+            document.Pages.Add();
+        }
+
+        // Add Bates numbering to all pages
+        document.Pages.AddBatesNumbering(batesN =>
+        {
+            // These properties are set to their default values, as if they were not specified
+            batesN.StartPage = 1;
+            batesN.EndPage = 0;
+            batesN.Subset = Subset.All;
+            batesN.NumberOfDigits = 6;
+            batesN.StartNumber = 1;
+            batesN.Prefix = "";
+            batesN.Suffix = "";
+            batesN.ArtifactVerticalAlignment = VerticalAlignment.Bottom;
+            batesN.ArtifactHorizontalAlignment = HorizontalAlignment.Right;
+            batesN.ArtifactVerticalAlignment = VerticalAlignment.Bottom;
+            batesN.RightMargin = 72;
+            batesN.LeftMargin = 72;
+            batesN.TopMargin = 36;
+            batesN.BottomMargin = 36;
+            batesN.TextState.FontSize = 10;
+        });
+
+        // Save PDF document
+        document.Save(dataDir + "SampleBatesNArtifact_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBatesNArtifact()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create or open PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Add 10 pages
+    for (int i = 0; i < 10; i++)
+    {
+        document.Pages.Add();
+    }
+
+    // Add Bates numbering to all pages
+    document.Pages.AddBatesNumbering(batesN =>
+    {
+        // These properties are set to their default values, as if they were not specified
+        batesN.StartPage = 1;
+        batesN.EndPage = 0;
+        batesN.Subset = Subset.All;
+        batesN.NumberOfDigits = 6;
+        batesN.StartNumber = 1;
+        batesN.Prefix = "";
+        batesN.Suffix = "";
+        batesN.ArtifactVerticalAlignment = VerticalAlignment.Bottom;
+        batesN.ArtifactHorizontalAlignment = HorizontalAlignment.Right;
+        batesN.ArtifactVerticalAlignment = VerticalAlignment.Bottom;
+        batesN.RightMargin = 72;
+        batesN.LeftMargin = 72;
+        batesN.TopMargin = 36;
+        batesN.BottomMargin = 36;
+        batesN.TextState.FontSize = 10;
+    });
+
+    // Save PDF document
+    document.Save(dataDir + "SampleBatesNArtifact_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+لحذف Bates numbering، استخدم الشيفرة التالية:
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBatesNArtifacts()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SampleBatesNArtifact_out.pdf"))
+    {
+        // Delete Bates numbering from all pages
+        document.Pages.DeleteBatesNumbering();
+
+        //Save PDF document
+        document.Save(dataDir + "DeleteBatesNArtifacts_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBatesNArtifacts()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "SampleBatesNArtifact_out.pdf");
+
+    // Delete Bates numbering from all pages
+    document.Pages.DeleteBatesNumbering();
+
+    //Save PDF document
+    document.Save(dataDir + "DeleteBatesNArtifacts_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
