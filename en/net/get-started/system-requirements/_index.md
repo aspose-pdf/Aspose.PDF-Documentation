@@ -2,6 +2,8 @@
 title: System Requirements
 linktitle: System Requirements
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/system-requirements/
 description: This section lists the supported operating systems that a developer needs to successfully work with Aspose.PDF for .NET.

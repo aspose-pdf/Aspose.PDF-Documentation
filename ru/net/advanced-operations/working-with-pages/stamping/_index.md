@@ -1,10 +1,12 @@
 ---
-title: Печать с использованием Aspose.PDF на C#
-linktitle: Печать
+title: Штамповка с помощью Aspose.PDF на C#
+linktitle: Штамповка
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /ru/net/stamping/
-description: В этом разделе описывается, как добавлять изображения и текстовые штампы на страницу PDF.
+description: В этом разделе описывается, как добавлять штампы изображений и текстовые штампы на страницу PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Печать с использованием Aspose.PDF на C#",
-    "alternativeHeadline": "Как добавить штамп изображения в PDF",
+    "headline": "Working with PDF Pages in C#",
+    "alternativeHeadline": "Enhance PDF Management with C# Page Features",
+    "abstract": "Откройте для себя расширенные возможности **Aspose.PDF для .NET** по управлению страницами PDF, включая добавление, перемещение и удаление страниц с высокой точностью. Эта функция позволяет пользователям улучшать свои PDF-документы, добавляя колонтитулы, водяные знаки и пользовательские размеры страниц с помощью интуитивно понятного кода на C#. Оптимизируйте рабочие процессы обработки документов с помощью удобных функций управления и настройки PDF",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, штамп pdf, штамп изображения",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "pdf, add pages, rotate pages, delete pages, add watermarks, page numbering, crop pages, Aspose.PDF for .NET",
+    "wordcount": "450",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,42 +49,44 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
         ]
     },
-    "url": "/net/stamping/",
+    "url": "/net/working-with-pages/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/stamping/"
+        "@id": "/net/working-with-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "В этом разделе описывается, как добавлять изображения и текстовые штампы на страницу PDF."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
 }
 </script>
-Печать в PDF-документе аналогична применению резиновой печати на бумажном документе.
-Печать в файле PDF предоставляет дополнительную информацию для файла PDF, например, чтобы защитить файл PDF от использования другими и подтвердить безопасность содержимого файла PDF. **Aspose.PDF для .NET** позволяет добавлять изображение или текстовую печать в ваш PDF-документ.
 
-Ознакомьтесь с следующими разделами, чтобы узнать, как добавить печать с помощью C#:
+Штамп в PDF-документе аналогичен нанесению резинового штампа на бумажный документ.
+Штамп в файле PDF предоставляет дополнительную информацию для файла PDF, например, защищает файл PDF от использования другими лицами и подтверждает безопасность содержимого файла PDF. **Aspose.PDF for .NET** позволяет добавлять в ваш PDF-документ изображения или текстовые штампы.
 
-- [Добавить печати изображений на страницу PDF](/pdf/ru/net/image-stamps-in-pdf-page/) - добавить печать изображения, контролировать качество изображения, печать изображения как фон вашего файла PDF.
-- [Добавить текстовые печати в файл PDF](/pdf/ru/net/text-stamps-in-the-pdf-file/) - добавить текстовую печать, определить выравнивание для объекта TextStamp, заполнить текст штампа в файле PDF.
+Ознакомьтесь со следующими разделами, чтобы узнать, как добавить штамп с помощью C#:
+
+- [Добавить штампы изображений на странице PDF](/pdf/ru/net/image-stamps-in-pdf-page/) — добавить штамп изображения, контролировать качество изображения, сделать изображение штампом в качестве фона вашего PDF-файла.
+- [Добавление текстовых штампов в файл PDF](/pdf/ru/net/text-stamps-in-the-pdf-file/) — добавление текстового штампа, определение выравнивания для объекта TextStamp, заполнение обводки текста в качестве штампа в файле PDF.
+- [Штампы страниц в файле PDF](/pdf/ru/net/page-stamps-in-the-pdf-file/) — добавьте штамп страницы в документ PDF с помощью класса PdfPageStamp.
 
 <script type="application/ld+json">
 {
@@ -146,4 +151,3 @@ sitemap:
     }
 }
 </script>
-

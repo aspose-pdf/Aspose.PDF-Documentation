@@ -1,10 +1,12 @@
 ---
 title: Membuat PDF dari XML menggunakan XSLT
-linktitle: Membuat PDF dari XML menggunakan XSLT
+linktitle: Buat PDF dari XML menggunakan XSLT
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
-description: Perpustakaan C# menyediakan kemampuan untuk mengkonversi file XML menjadi dokumen pdf dengan syarat file XML input harus mengikuti Skema Aspose.PDF.
+description: Perpustakaan C# menyediakan kemampuan untuk mengonversi file XML menjadi dokumen pdf dengan syarat bahwa file XML input harus mengikuti Skema Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Membuat PDF dari XML menggunakan XSLT",
-    "alternativeHeadline": "Cara membuat PDF dari XML menggunakan XSLT",
+    "headline": "Creating PDF from XML using XSLT",
+    "alternativeHeadline": "Generate PDF from XML using XSLT and C#",
+    "abstract": "Hasilkan PDF langsung dari file XML menggunakan XSLT dan perpustakaan C#. Fungsionalitas baru ini menyederhanakan pembuatan laporan dengan mengubah data XML yang ada menjadi format yang kompatibel dengan PDF. Proses ini memanfaatkan XSLT untuk transformasi dan memerlukan kepatuhan pada skema Aspose.PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, membuat pdf xml, pdf dengan xslt",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "wordcount": "323",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,19 +73,20 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-a-hello-world-pdf-document-through-xml-and-xslt/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Perpustakaan C# menyediakan kemampuan untuk mengkonversi file XML menjadi dokumen pdf dengan syarat file XML input harus mengikuti Skema Aspose.PDF."
+    "dateModified": "2024-11-26",
+    "description": "Perpustakaan C# menyediakan kemampuan untuk mengonversi file XML menjadi dokumen pdf dengan syarat bahwa file XML input harus mengikuti Skema Aspose.PDF."
 }
 </script>
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
-Terkadang Anda mungkin memiliki file XML yang ada yang berisi data aplikasi dan Anda ingin menghasilkan laporan PDF menggunakan file-file ini. Anda dapat menggunakan XSLT untuk mengubah dokumen XML yang ada menjadi dokumen XML yang kompatibel dengan Aspose.Pdf dan kemudian menghasilkan file PDF. Ada 3 langkah untuk menghasilkan PDF menggunakan XML dan XSLT.
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+
+Kadang-kadang Anda mungkin memiliki file XML yang ada yang berisi data aplikasi dan Anda ingin menghasilkan laporan PDF menggunakan file-file ini. Anda dapat menggunakan XSLT untuk mengubah dokumen XML yang ada menjadi dokumen XML yang kompatibel dengan Aspose.Pdf dan kemudian menghasilkan file PDF. Ada 3 langkah untuk menghasilkan PDF menggunakan XML dan XSLT.
 
 Silakan ikuti langkah-langkah ini untuk mengonversi file XML menjadi dokumen PDF menggunakan XSLT:
 
 * Buat instance dari kelas PDF yang mewakili dokumen PDF
 * Jika Anda telah membeli lisensi, maka Anda juga harus menyematkan kode untuk menggunakan lisensi tersebut dengan bantuan kelas License di namespace Aspose.Pdf
-* Ikat file XML dan XSLT input ke instance dari kelas PDF dengan memanggil metode BindXML-nya
+* Ikat file XML dan XSLT input ke instance kelas PDF dengan memanggil metode BindXML-nya
 * Simpan XML yang terikat dengan instance PDF sebagai dokumen PDF
 
 ## File XML Input
@@ -122,7 +125,48 @@ Silakan ikuti langkah-langkah ini untuk mengonversi file XML menjadi dokumen PDF
 </xsl:stylesheet>
 ```
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Working-Document-HelloWorldPDFUsingXmlAndXslt-HelloWorldPDFUsingXmlAndXslt.cs" >}}
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        //Bind XML and XSLT files to the document
+        document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+        // Save PDF document
+        document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML and XSLT files to the document
+    document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+    // Save PDF document
+    document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -175,7 +219,7 @@ Silakan ikuti langkah-langkah ini untuk mengonversi file XML menjadi dokumen PDF
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -187,42 +231,3 @@ Silakan ikuti langkah-langkah ini untuk mengonversi file XML menjadi dokumen PDF
     }
 }
 </script>
-```
-
----
-id: "example"
-title: "Contoh Dokumen"
-description: "Ini adalah contoh dokumen yang akan diterjemahkan."
-author: "John Doe"
-changefreq: "monthly"
-type: docs
----
-
-# Pendahuluan
-
-Ini adalah bagian pendahuluan dari dokumen. Bagian ini memberikan gambaran umum tentang isi dokumen.
-
-## Tujuan
-
-Tujuan dari dokumen ini adalah untuk memberikan contoh bagaimana menerjemahkan teks ke dalam Bahasa Indonesia sambil mempertahankan format markdown.
-
-## Bagian Utama
-
-Dalam bagian ini, kita akan membahas topik utama dari dokumen. Ini bisa mencakup berbagai subtopik dan penjelasan detail.
-
-### Subtopik 1
-
-Penjelasan tentang subtopik pertama. Ini bisa mencakup beberapa paragraf penjelasan.
-
-### Subtopik 2
-
-Penjelasan tentang subtopik kedua. Ini juga bisa mencakup beberapa paragraf penjelasan.
-
-## Kesimpulan
-
-Bagian kesimpulan merangkum poin-poin utama yang telah dibahas dalam dokumen. Ini memberikan ringkasan singkat tentang isi dokumen.
-
-## Kontak
-
-Untuk informasi lebih lanjut, silakan hubungi penulis di [email@example.com](mailto:email@example.com).
-```

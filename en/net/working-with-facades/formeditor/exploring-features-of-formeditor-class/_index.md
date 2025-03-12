@@ -1,6 +1,8 @@
 ---
 title: Exploring features of FormEditor class
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/exploring-features-of-formeditor-class/
 description: You can learn details of exploring features of FormEditor class with Aspose. PDF for .NET library

@@ -1,6 +1,8 @@
 ---
 title: Working with List Item
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/working-with-list-item/
 description: This section explains how to work with List Item with Aspose.PDF Facades using FormEditor Class.

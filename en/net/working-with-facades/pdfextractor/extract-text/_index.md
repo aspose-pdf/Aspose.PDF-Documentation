@@ -1,6 +1,8 @@
 ---
 title: Extract Text from PDF File
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/extract-text/
 description: This section explains how to extract text from pdf using PdfExtractor class.

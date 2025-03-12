@@ -1,9 +1,12 @@
 ---
-title: Remover Tabelas de um PDF existente
+title: Remover Tabelas de PDF existente
 linktitle: Remover Tabelas
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /pt/net/remove-tables-from-existing-pdf/
+description: Entenda como remover tabelas de um documento PDF usando Aspose.PDF for .NET, melhorando a clareza e a estrutura do documento.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -13,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Remover Tabelas de um PDF existente",
-    "alternativeHeadline": "Como Deletar Tabelas de um PDF",
+    "headline": "Remove Tables from existing PDF",
+    "alternativeHeadline": "Effortlessly Eliminate Tables from Existing PDF Files",
+    "abstract": "O recurso Remover Tabelas em Aspose.PDF for .NET permite que os usuários eliminem de forma eficiente objetos de tabela de documentos PDF existentes usando a classe TableAbsorber. Essa funcionalidade simplifica o processo de gerenciamento de conteúdo PDF, fornecendo métodos diretos para localizar e remover tabelas, aprimorando as capacidades de edição de documentos.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento PDF",
-    "keywords": "pdf, c#, remover tabela, deletar tabelas",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "wordcount": "494",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -70,81 +73,92 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/remove-tables-from-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados."
 }
 </script>
+
 {{% alert color="primary" %}}
 
-Aspose.PDF para NET oferece a capacidade de inserir/criar uma tabela dentro de um documento PDF enquanto ele está sendo gerado do zero ou você também pode adicionar o objeto de tabela em qualquer documento PDF existente. No entanto, você pode ter a necessidade de [Manipular Tabelas em PDF existente](https://docs.aspose.com/pdf/net/manipulate-tables-in-existing-pdf/) onde você pode atualizar os conteúdos nas células da tabela existente. No entanto, você pode se deparar com uma necessidade de remover objetos de tabela de um documento PDF existente.
+Aspose.PDF para .NET oferece as capacidades de inserir/criar tabelas dentro de um documento PDF enquanto está sendo gerado do zero ou você também pode adicionar o objeto tabela em qualquer documento PDF existente. No entanto, você pode ter a necessidade de [Manipular Tabelas em PDF existente](https://docs.aspose.com/pdf/net/manipulate-tables-in-existing-pdf/) onde você pode atualizar os conteúdos nas células de tabela existentes. No entanto, você pode se deparar com a necessidade de remover objetos de tabela de um documento PDF existente.
 
 {{% /alert %}}
 
-Para remover as tabelas, precisamos usar a classe [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) para obter acesso às tabelas em PDF existente e, em seguida, chamar [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
+Para remover as tabelas, precisamos usar a classe [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) para obter as tabelas no PDF existente e, em seguida, chamar [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-## Remover Tabela do documento PDF
+## Remover Tabela de documento PDF
 
-Adicionamos uma nova função, ou seja,
-Nós adicionamos uma nova função, isto é:
-
-```csharp
-// Para exemplos completos e arquivos de dados, por favor acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-// Carregar documento PDF existente
-Document pdfDocument = new Document(dataDir + "Table_input.pdf");
-
-// Criar objeto TableAbsorber para encontrar tabelas
-TableAbsorber absorber = new TableAbsorber();
-
-// Visitar a primeira página com absorvedor
-absorber.Visit(pdfDocument.Pages[1]);
-
-// Obter a primeira tabela na página
-AbsorbedTable table = absorber.TableList[0];
-
-// Remover a tabela
-absorber.Remove(table);
-
-// Salvar PDF
-pdfDocument.Save(dataDir + "Table_out.pdf");
-```
-
-## Remover Múltiplas Tabelas de um Documento PDF
-
-Às vezes, um documento PDF pode conter mais de uma tabela e você pode precisar remover múltiplas tabelas dele. Para remover múltiplas tabelas de um documento PDF, use o seguinte trecho de código:
+Adicionamos uma nova função, ou seja, Remove() à classe TableAbsorber existente para remover a tabela do documento PDF. Uma vez que o absorvedor encontra tabelas na página com sucesso, ele se torna capaz de removê-las. Por favor, verifique o seguinte trecho de código mostrando como remover uma tabela de um documento PDF:
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Carregar documento PDF existente
-Document pdfDocument = new Document(dataDir + "Table_input2.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Criar objeto TableAbsorber para encontrar tabelas
-TableAbsorber absorber = new TableAbsorber();
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Visitar a segunda página com absorvedor
-absorber.Visit(pdfDocument.Pages[1]);
+        // Get first table on the page
+        Aspose.Pdf.Text.AbsorbedTable table = absorber.TableList[0];
 
-// Obter cópia da coleção de tabelas
-AbsorbedTable[] tables = new AbsorbedTable[absorber.TableList.Count];
-absorber.TableList.CopyTo(tables, 0);
+        // Remove the table
+        absorber.Remove(table);
 
-// Percorrer a cópia da coleção removendo tabelas
-foreach (AbsorbedTable table in tables)
-    absorber.Remove(table);
-
-// Salvar documento
-pdfDocument.Save(dataDir + "Table2_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RemoveTable_out.pdf");
+    }
+}
 ```
+
+## Remover Múltiplas Tabelas de documento PDF
+
+Às vezes, um documento PDF pode conter mais de uma tabela e você pode ter a necessidade de remover várias tabelas dele. Para remover várias tabelas de um documento PDF, por favor, use o seguinte trecho de código:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveMultipleTables()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
+
+        // Visit second page with absorber
+        absorber.Visit(document.Pages[1]);
+
+        // Get copy of table collection
+        Aspose.Pdf.Text.AbsorbedTable[] tables = new Aspose.Pdf.Text.AbsorbedTable[absorber.TableList.Count];
+        absorber.TableList.CopyTo(tables, 0);
+
+        // Loop through the copy of collection and removing tables
+        foreach (var table in tables)
+        {
+            absorber.Remove(table);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "RemoveMultipleTables_out.pdf");
+    }
+}
+```
+
 {{% alert color="primary" %}}
 
-Por favor, leve em consideração que a remoção ou substituição de uma tabela altera a coleção TableList. Portanto, no caso de remover/substituir tabelas em um loop, a cópia da coleção TableList é essencial.
+Por favor, leve em conta que a remoção ou substituição de uma tabela altera a coleção TableList. Portanto, no caso de remoção/substituição de tabelas em um loop, a cópia da coleção TableList é essencial.
 
 {{% /alert %}}
 
@@ -211,5 +225,3 @@ Por favor, leve em consideração que a remoção ou substituição de uma tabel
     }
 }
 </script>
-
-

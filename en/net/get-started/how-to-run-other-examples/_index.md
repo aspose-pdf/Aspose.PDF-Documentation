@@ -2,6 +2,8 @@
 title: How to run other examples
 linktitle: How to run other examples
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/how-to-run-other-examples/    
 description: Learn how to run various examples and utilize Aspose.PDF features in .NET to enhance your PDF document processing.

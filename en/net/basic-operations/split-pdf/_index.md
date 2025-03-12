@@ -2,6 +2,8 @@
 title: Split PDF programmatically
 linktitle: Split PDF files
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/split-pdf-document/
 description: This topic shows how to split PDF pages into individual PDF files in your .NET applications with C#.

@@ -2,6 +2,8 @@
 title: Replace Text in PDF
 linktitle: Replace Text in PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/replace-text-in-pdf/
 description: Learn more about various ways of replacing and removing text from Aspose.PDF for .NET library.

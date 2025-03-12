@@ -1,6 +1,8 @@
 ---
 title: Umbraco PDF Import Module
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/umbraco-pdf-import-module/
 description: Learn how to install and use Umbraco PDF Import Module

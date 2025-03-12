@@ -2,8 +2,11 @@
 title: 기존 PDF에서 테이블 제거
 linktitle: 테이블 제거
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ko/net/remove-tables-from-existing-pdf/
+description: Aspose.PDF for .NET을 사용하여 PDF 문서에서 테이블을 제거하는 방법을 이해하고 문서의 명확성과 구조를 개선합니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -13,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "기존 PDF에서 테이블 제거",
-    "alternativeHeadline": "PDF에서 테이블 삭제하는 방법",
+    "headline": "Remove Tables from existing PDF",
+    "alternativeHeadline": "Effortlessly Eliminate Tables from Existing PDF Files",
+    "abstract": "Aspose.PDF for .NET의 테이블 제거 기능은 사용자가 TableAbsorber 클래스를 사용하여 기존 PDF 문서에서 테이블 객체를 효율적으로 제거할 수 있도록 합니다. 이 기능은 테이블을 찾고 제거하는 간단한 방법을 제공하여 PDF 콘텐츠 관리 프로세스를 단순화하고 문서 편집 기능을 향상시킵니다.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "pdf, c#, 테이블 제거, 테이블 삭제",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
+    "genre": "pdf document generation",
+    "wordcount": "494",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF 문서 팀",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "판매",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "판매",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "판매",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -70,81 +73,92 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/remove-tables-from-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하십시오."
 }
 </script>
+
 {{% alert color="primary" %}}
 
-Aspose.PDF for NET은 PDF 문서를 처음부터 생성하거나 기존 PDF 문서에 테이블 객체를 추가하면서 테이블을 삽입/생성할 수 있는 기능을 제공합니다. 그러나 기존 테이블 셀의 내용을 업데이트할 수 있는 [기존 PDF에서 테이블 조작하기](https://docs.aspose.com/pdf/net/manipulate-tables-in-existing-pdf/)에 대한 요구 사항이 있을 수 있습니다. 또한 기존 PDF 문서에서 테이블 객체를 제거해야 할 수도 있습니다.
+Aspose.PDF for NET은 PDF 문서가 처음 생성될 때 테이블을 삽입/생성할 수 있는 기능을 제공하며, 기존 PDF 문서에 테이블 객체를 추가할 수도 있습니다. 그러나 기존 PDF에서 [테이블 조작](https://docs.aspose.com/pdf/net/manipulate-tables-in-existing-pdf/)이 필요할 수 있으며, 이 경우 기존 테이블 셀의 내용을 업데이트할 수 있습니다. 그러나 기존 PDF 문서에서 테이블 객체를 제거해야 할 필요가 있을 수 있습니다.
 
 {{% /alert %}}
 
-테이블을 제거하려면 [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) 클래스를 사용하여 기존 PDF에서 테이블을 찾은 다음 [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove)를 호출해야 합니다.
+테이블을 제거하기 위해서는 [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) 클래스를 사용하여 기존 PDF의 테이블을 가져온 다음 [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove) 메서드를 호출해야 합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF 문서에서 테이블 제거
 
-새로운 함수를 추가했습니다.
-새로운 함수를 추가했습니다.
+기존 TableAbsorber 클래스에 테이블을 PDF 문서에서 제거하기 위한 새로운 함수인 Remove()를 추가했습니다. 흡수기가 페이지에서 테이블을 성공적으로 찾으면 이를 제거할 수 있게 됩니다. PDF 문서에서 테이블을 제거하는 방법을 보여주는 다음 코드 스니펫을 확인하십시오:
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하십시오.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// 기존 PDF 문서를 로드합니다.
-Document pdfDocument = new Document(dataDir + "Table_input.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// 테이블을 찾기 위해 TableAbsorber 객체를 생성합니다.
-TableAbsorber absorber = new TableAbsorber();
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// absorber를 사용하여 첫 번째 페이지를 방문합니다.
-absorber.Visit(pdfDocument.Pages[1]);
+        // Get first table on the page
+        Aspose.Pdf.Text.AbsorbedTable table = absorber.TableList[0];
 
-// 페이지에서 첫 번째 테이블을 가져옵니다.
-AbsorbedTable table = absorber.TableList[0];
+        // Remove the table
+        absorber.Remove(table);
 
-// 테이블을 제거합니다.
-absorber.Remove(table);
-
-// PDF를 저장합니다.
-pdfDocument.Save(dataDir + "Table_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RemoveTable_out.pdf");
+    }
+}
 ```
 
 ## PDF 문서에서 여러 테이블 제거
 
-가끔 PDF 문서에 여러 테이블이 포함되어 있을 수 있으며, 이러한 테이블들을 제거할 필요가 있을 수 있습니다. PDF 문서에서 여러 테이블을 제거하려면 다음 코드 스니펫을 사용하십시오:
+때때로 PDF 문서에는 하나 이상의 테이블이 포함될 수 있으며, 여러 테이블을 제거해야 할 필요가 있을 수 있습니다. PDF 문서에서 여러 테이블을 제거하려면 다음 코드 스니펫을 사용하십시오:
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하십시오.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveMultipleTables()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// 기존 PDF 문서를 로드합니다.
-Document pdfDocument = new Document(dataDir + "Table_input2.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// 테이블을 찾기 위해 TableAbsorber 객체를 생성합니다.
-TableAbsorber absorber = new TableAbsorber();
+        // Visit second page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// absorber를 사용하여 두 번째 페이지를 방문합니다.
-absorber.Visit(pdfDocument.Pages[1]);
+        // Get copy of table collection
+        Aspose.Pdf.Text.AbsorbedTable[] tables = new Aspose.Pdf.Text.AbsorbedTable[absorber.TableList.Count];
+        absorber.TableList.CopyTo(tables, 0);
 
-// 테이블 컬렉션의 복사본을 가져옵니다.
-AbsorbedTable[] tables = new AbsorbedTable[absorber.TableList.Count];
-absorber.TableList.CopyTo(tables, 0);
+        // Loop through the copy of collection and removing tables
+        foreach (var table in tables)
+        {
+            absorber.Remove(table);
+        }
 
-// 컬렉션의 복사본을 반복하면서 테이블을 제거합니다.
-foreach (AbsorbedTable table in tables)
-    absorber.Remove(table);
-
-// 문서를 저장합니다.
-pdfDocument.Save(dataDir + "Table2_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RemoveMultipleTables_out.pdf");
+    }
+}
 ```
+
 {{% alert color="primary" %}}
 
-테이블을 제거하거나 교체할 경우 TableList 컬렉션이 변경됨을 유의하십시오. 따라서 루프에서 테이블을 제거/교체하는 경우 TableList 컬렉션을 복사하는 것이 필수적입니다.
+테이블을 제거하거나 교체하면 TableList 컬렉션이 변경됩니다. 따라서 루프에서 테이블을 제거/교체하는 경우 TableList 컬렉션을 복사하는 것이 필수적입니다.
 
 {{% /alert %}}
 
@@ -211,5 +225,3 @@ pdfDocument.Save(dataDir + "Table2_out.pdf");
     }
 }
 </script>
-
-

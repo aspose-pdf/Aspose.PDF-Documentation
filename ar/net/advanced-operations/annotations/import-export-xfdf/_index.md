@@ -2,9 +2,11 @@
 title: استيراد وتصدير التعليقات التوضيحية إلى XFDF
 linktitle: استيراد وتصدير التعليقات التوضيحية إلى XFDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ar/net/import-export-xfdf/
-description: يمكنك استيراد وتصدير التعليقات التوضيحية بتنسيق XFDF باستخدام C# ومكتبة Aspose.PDF لـ .NET.
+description: يمكنك استيراد وتصدير التعليقات التوضيحية بتنسيق XFDF باستخدام C# ومكتبة Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "استيراد وتصدير التعليقات التوضيحية إلى XFDF",
-    "alternativeHeadline": "طرق لاستيراد وتصدير بيانات التعليقات التوضيحية إلى ملفات XFDF",
+    "headline": "Import and Export Annotations to XFDF",
+    "alternativeHeadline": "Effortless XFDF Annotation Import and Export",
+    "abstract": "تعمل وظيفة الاستيراد والتصدير الجديدة لتنسيق XFDF في مكتبة Aspose.PDF for .NET على تحسين إدارة مستندات PDF من خلال السماح بنقل بيانات التعليقات التوضيحية بسلاسة. تتيح هذه الميزة للمستخدمين دمج التعليقات التوضيحية بسهولة من ملفات XFDF وتصديرها مرة أخرى، مما يعزز تبادل البيانات الفعال وقدرات الأرشفة لنماذج PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء وثيقة PDF",
-    "keywords": "pdf, c#, استيراد تصدير إلى XFDF",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Import Annotations, Export Annotations, XFDF Format, Aspose.PDF for .NET, PdfAnnotationEditor, ImportAnnotationFromXfdf, ExportAnnotationsXfdf, PDF Forms Manipulation",
+    "wordcount": "670",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,120 +74,118 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/import-export-xfdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يمكنك استيراد وتصدير التعليقات التوضيحية بتنسيق XFDF باستخدام C# ومكتبة Aspose.PDF لـ .NET."
+    "dateModified": "2024-11-25",
+    "description": "يمكنك استيراد وتصدير التعليقات التوضيحية بتنسيق XFDF باستخدام C# ومكتبة Aspose.PDF for .NET."
 }
 </script>
+
 {{% alert color="primary" %}}
 
-XFDF تعني تنسيق بيانات النماذج XML. إنها تنسيق ملف يعتمد على XML. يُستخدم هذا التنسيق لتمثيل بيانات النماذج أو التعليقات التوضيحية الموجودة في نموذج PDF. يمكن استخدام XFDF لأغراض متعددة، ولكن في حالتنا، يمكن استخدامه لإما إرسال أو استقبال بيانات النماذج أو التعليقات التوضيحية إلى أجهزة كمبيوتر أو خوادم أخرى، أو يمكن استخدامه لأرشفة بيانات النماذج أو التعليقات التوضيحية. في هذه المقالة، سنرى كيف أخذت Aspose.Pdf.Facades هذا المفهوم بعين الاعتبار وكيف يمكننا استيراد وتصدير بيانات التعليقات التوضيحية إلى ملف XFDF.
+XFDF هو اختصار لتنسيق بيانات نماذج XML. إنه تنسيق ملف قائم على XML. يُستخدم هذا التنسيق لتمثيل بيانات النموذج أو التعليقات التوضيحية الموجودة في نموذج PDF. يمكن استخدام XFDF لأغراض مختلفة، ولكن في حالتنا، يمكن استخدامه إما لإرسال أو استلام بيانات النموذج أو التعليقات التوضيحية إلى أجهزة كمبيوتر أو خوادم أخرى، أو يمكن استخدامه لأرشفة بيانات النموذج أو التعليقات التوضيحية. في هذه المقالة، سنرى كيف أخذت Aspose.Pdf.Facades هذا المفهوم بعين الاعتبار وكيف يمكننا استيراد وتصدير بيانات التعليقات التوضيحية إلى ملف XFDF.
 
 {{% /alert %}}
 
-**Aspose.PDF لـ .NET** هو مكون غني بالميزات عندما يتعلق الأمر بتحرير مستندات PDF. كما نعلم أن XFDF هو جانب مهم من تلاعب نماذج PDF، فقد أخذ فضاء الأسماء Aspose.Pdf.Facades في Aspose.PDF لـ .NET هذا بعين الاعتبار جيدًا، وقدم طرقًا لاستيراد وتصدير بيانات التعليقات التوضيحية إلى ملفات XFDF.
+**Aspose.PDF for .NET** هو مكون غني بالميزات عندما يتعلق الأمر بتحرير مستندات PDF. كما نعلم، فإن XFDF هو جانب مهم من جوانب معالجة نماذج PDF، وقد أخذت مساحة أسماء Aspose.Pdf.Facades في Aspose.PDF for .NET هذا بعين الاعتبار، وقدمت طرقًا لاستيراد وتصدير بيانات التعليقات التوضيحية إلى ملفات XFDF.
 
-فئة [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) تحتوي على طريقتين للعمل مع استيراد وتصدير التعليقات التوضيحية إلى ملف XFDF.
-[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) تحتوي الفئة على طريقتين للعمل مع استيراد وتصدير التعليقات التوضيحية إلى ملف XFDF.
+تحتوي فئة [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) على طريقتين للعمل مع استيراد وتصدير التعليقات التوضيحية إلى ملف XFDF. توفر طريقة [ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) الوظيفة لتصدير التعليقات التوضيحية من مستند PDF إلى ملف XFDF، بينما تتيح لك طريقة [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) استيراد التعليقات التوضيحية من ملف XFDF موجود. لاستيراد أو تصدير التعليقات التوضيحية، نحتاج إلى تحديد أنواع التعليقات التوضيحية. يمكننا تحديد هذه الأنواع في شكل تعداد ثم تمرير هذا التعداد كوسيط إلى أي من هذه الطرق. بهذه الطريقة، سيتم استيراد أو تصدير التعليقات التوضيحية من الأنواع المحددة فقط إلى ملف XFDF.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-الشفرة التالية توضح لك كيفية تصدير التعليقات التوضيحية إلى ملف XFDF:
+تظهر مقتطفات الكود التالية كيفية تصدير التعليقات التوضيحية إلى ملف XFDF:
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using Aspose.Pdf.Facades;
-using System.IO;
-
-namespace Aspose.Pdf.Examples.Advanced
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportAnnotationsToXfdf()
 {
-    class ExampleAnnotationImportExport
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Create PdfAnnotationEditor object
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
-        // مسار إلى دليل المستندات.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        /// <summary>
-        /// استيراد التعليقات التوضيحية من ملف XFDF
-        /// ملف تنسيق بيانات النماذج XML (XFDF) تم إنشاؤه بواسطة Adobe Acrobat، تطبيق إنشاء PDF؛
-        /// يخزن وصف عناصر نموذج الصفحة وقيمها، مثل الأسماء والقيم لحقول النص؛ يستخدم لحفظ بيانات النموذج التي يمكن استيرادها إلى مستند PDF.
-        /// يمكنك استيراد بيانات التعليق التوضيحي من ملف XFDF إلى PDF باستخدام
-        /// طريقة ImportAnnotationsFromXfdf في فئة PdfAnnotationEditor.
-        /// </summary>       
-   
-        public static void ExportAnnotationXFDF()
-        {
-            // إنشاء كائن PdfAnnotationEditor
-            PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
+        // Bind PDF document
+        annotationEditor.BindPdf(dataDir + "AnnotationDemo1.pdf");
 
-            // ربط مستند PDF بمحرر التعليق التوضيحي
-            AnnotationEditor.BindPdf(Path.Combine(_dataDir, "AnnotationDemo1.pdf"));
-           
-            // تصدير التعليقات
-            var fileStream = File.OpenWrite(Path.Combine(_dataDir, "exportannotations.xfdf"));
-            var annotType = new AnnotationType[] { AnnotationType.Line, AnnotationType.Square };
-            AnnotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
+        // Define the annotation types to export
+        var annotType = new Aspose.Pdf.Annotations.AnnotationType[] { Aspose.Pdf.Annotations.AnnotationType.Line, Aspose.Pdf.Annotations.AnnotationType.Square };
+
+        // Export annotations to XFDF file
+        using (var fileStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
+        {
+            annotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
             fileStream.Flush();
-            fileStream.Close();
         }
-        //...
     }
 }
 ```
-الشريحة التالية توضح كيفية استيراد التعليقات التوضيحية إلى ملف XFDF:
+
+تصف مقتطفة الكود التالية كيفية استيراد التعليقات التوضيحية من ملف XFDF:
 
 ```csharp
-public static void ImportAnnotationXFDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportAnnotationFromXfdf()
 {
-    // إنشاء كائن PdfAnnotationEditor
-    PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-    // إنشاء وثيقة PDF جديدة
-    var document = new Document();
-    document.Pages.Add();
-    AnnotationEditor.BindPdf(document);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
-    if (!File.Exists(exportFileName))
-        ExportAnnotationXFDF();
-
-    // استيراد التعليقات التوضيحية
-    AnnotationEditor.ImportAnnotationsFromXfdf(exportFileName);
-
-    // حفظ PDF الناتج
-    document.Save(Path.Combine(_dataDir, "AnnotationDemo2.pdf"));
-}
-```
-
-## طريقة أخرى لتصدير / استيراد التعليقات التوضيحية دفعة واحدة
-
-في الشفرة أدناه، تسمح طريقة ImportAnnotations باستيراد التعليقات التوضيحية مباشرة من وثيقة PDF أخرى.
-
-```csharp
-        /// <summary>
-        /// طريقة ImportAnnotations تسمح باستيراد التعليقات التوضيحية مباشرة من وثيقة PDF أخرى
-        /// </summary>
-
-        public static void ImportAnnotationFromPDF()
+    // Create PdfAnnotationEditor object
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+    {
+        // Create PDF document
+        using (var document = new Aspose.Pdf.Document())
         {
-            // إنشاء كائن PdfAnnotationEditor
-            PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-            // إنشاء وثيقة PDF جديدة
-            var document = new Document();
-            document.Pages.Add();
-            AnnotationEditor.BindPdf(document);
-            var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
-            if (!File.Exists(exportFileName))
-                ExportAnnotationXFDF();
+            // Add page
+            var page = document.Pages.Add();
 
-            // يسمح محرر التعليقات التوضيحية باستيراد التعليقات من عدة وثائق PDF،
-            // لكن في هذا المثال، نستخدم واحدة فقط.
-            AnnotationEditor.ImportAnnotations(new[] { Path.Combine(_dataDir, "AnnotationDemo1.pdf") });
+            // Bind PDF document
+            annotationEditor.BindPdf(document);
 
-            // حفظ PDF الناتج
-            document.Save(Path.Combine(_dataDir, "AnnotationDemo3.pdf"));
+            // Define the export file name
+            var exportFileName = dataDir + "exportannotations.xfdf";
+
+            // Import annotations from the XFDF file
+            annotationEditor.ImportAnnotationsFromXfdf(exportFileName);
+
+            // Save PDF document
+            document.Save(dataDir + "ImportAnnotationFromXfdf_out.pdf");
         }
     }
 }
 ```
-changefreq: "monthly"
-type: docs
+
+## طريقة أخرى لاستيراد/تصدير التعليقات التوضيحية دفعة واحدة
+
+في الكود أدناه، تتيح طريقة ImportAnnotations استيراد التعليقات التوضيحية مباشرة من مستند PDF آخر.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportAnnotationFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf"))
+    {
+        // Create PDF document
+        using (var documentTo = new Aspose.Pdf.Document())
+        {
+            // Add page
+            var page = documentTo.Pages.Add();
+
+            // Export/import
+            using (var ms = new MemoryStream())
+            {
+                documentFrom.ExportAnnotationsToXfdf(ms);
+                documentTo.ImportAnnotationsFromXfdf(ms);
+            }
+
+            // Save PDF document
+            documentTo.Save(dataDir + "AnnotationDemo3_out.pdf");
+        }
+    }
+}
+```
 
 <script type="application/ld+json">
 {
@@ -212,23 +213,23 @@ type: docs
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "بريطانيا",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -237,7 +238,7 @@ type: docs
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -249,5 +250,3 @@ type: docs
     }
 }
 </script>
-```
-

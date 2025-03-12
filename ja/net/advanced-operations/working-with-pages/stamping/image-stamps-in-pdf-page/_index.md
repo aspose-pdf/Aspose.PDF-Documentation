@@ -1,11 +1,13 @@
 ---
-title: PDFに画像スタンプを追加するC#の使用
+title: PDFに画像スタンプを追加する C#
 linktitle: PDFファイルの画像スタンプ
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ja/net/image-stamps-in-pdf-page/
-description: Aspose.PDFライブラリを使用してPDFドキュメントに画像スタンプを追加します。
-lastmod: "2022-02-17"
+description: Aspose.PDFライブラリを使用してImageStampクラスでPDFドキュメントに画像スタンプを追加します。
+lastmod: "2024-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFに画像スタンプを追加するC#の使用",
-    "alternativeHeadline": "PDFに画像スタンプを追加するC#の使用",
+    "headline": "Add Image stamps in PDF using C#",
+    "alternativeHeadline": "Add Custom Image Stamps to PDF Documents",
+    "abstract": "Aspose.PDFライブラリの新機能により、ユーザーはC#を使用してPDFドキュメントに画像スタンプをシームレスに追加できます。ImageStampクラスを使用することで、開発者はサイズ、不透明度、品質などの属性をカスタマイズでき、ドキュメントのプレゼンテーションとアクセシビリティを大幅に向上させます。この機能には、代替テキストを追加する機能も含まれており、スクリーンリーダーの使いやすさを向上させます。",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "PDF, C#, ドキュメント生成",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "wordcount": "646",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,104 +73,148 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/image-stamps-in-pdf-page/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDFライブラリを使用してPDFドキュメントに画像スタンプを追加します。"
+    "dateModified": "2024-11-26",
+    "description": "Aspose.PDFライブラリを使用してImageStampクラスでPDFドキュメントに画像スタンプを追加します。"
 }
 </script>
-## PDFファイルにイメージスタンプを追加
 
-ImageStampクラスを使用して、PDFファイルにイメージスタンプを追加できます。ImageStampクラスは、高さ、幅、透明度など、イメージベースのスタンプを作成するために必要なプロパティを提供します。
+## PDFファイルに画像スタンプを追加する
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも動作します。
+ImageStampクラスを使用してPDFファイルに画像スタンプを追加できます。ImageStampクラスは、高さ、幅、不透明度など、画像ベースのスタンプを作成するために必要なプロパティを提供します。
 
-イメージスタンプを追加するには：
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+
+画像スタンプを追加するには：
 
 1. 必要なプロパティを使用してDocumentオブジェクトとImageStampオブジェクトを作成します。
-1. PDFにスタンプを追加するためにPageクラスのAddStampメソッドを呼び出します。
+1. PageクラスのAddStampメソッドを呼び出して、スタンプをPDFに追加します。
 
-次のコードスニペットは、PDFファイルにイメージスタンプを追加する方法を示しています。
-
-```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
-
-// イメージスタンプを作成
-ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
-imageStamp.Background = true;
-imageStamp.XIndent = 100;
-imageStamp.YIndent = 100;
-imageStamp.Height = 300;
-imageStamp.Width = 300;
-imageStamp.Rotate = Rotation.on270;
-imageStamp.Opacity = 0.5;
-// 特定のページにスタンプを追加
-pdfDocument.Pages[1].AddStamp(imageStamp);
-
-dataDir = dataDir + "AddImageStamp_out.pdf";
-// 出力ドキュメントを保存
-pdfDocument.Save(dataDir);
-```
-## スタンプとしての画像品質の制御
-
-スタンプオブジェクトとして画像を追加する際、画像の品質を制御することができます。ImageStampクラスのQualityプロパティを使用してこの目的に利用されます。これは画像の品質をパーセントで示します（有効な値は0..100です）。
+次のコードスニペットは、PDFファイルに画像スタンプを追加する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
-
-// 画像スタンプを作成する
-ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
-
-imageStamp.Quality = 10;
-pdfDocument.Pages[1].AddStamp(imageStamp);
-pdfDocument.Save(dataDir + "ControlImageQuality_out.pdf");
-```
-
-## フローティングボックスでの背景としての画像スタンプ
-
-Aspose.PDF APIは、フローティングボックスで背景として画像スタンプを追加することを可能にします。
-Aspose.PDF APIを使用すると、フローティングボックス内の背景に画像スタンプを追加できます。
-
-```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください。
-// ドキュメントディレクトリへのパスです。
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// Documentオブジェクトをインスタンス化します
-Document doc = new Document();
-// PDFドキュメントにページを追加します
-Page page = doc.Pages.Add();
-// FloatingBoxオブジェクトを作成します
-FloatingBox aBox = new FloatingBox(200, 100);
-// FloatingBoxの左位置を設定します
-aBox.Left = 40;
-// FloatingBoxの上位置を設定します
-aBox.Top = 80;
-// FloatingBoxの水平方向の配置を設定します
-aBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-// FloatingBoxの段落コレクションにテキストフラグメントを追加します
-aBox.Paragraphs.Add(new TextFragment("main text"));
-// FloatingBoxに境界を設定します
-aBox.Border = new BorderInfo(BorderSide.All, Aspose.Pdf.Color.Red);
-// 背景画像を追加します
-aBox.BackgroundImage = new Image
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageStampInPdfFile()
 {
-    File = dataDir + "aspose-logo.jpg"
-};
-// FloatingBoxの背景色を設定します
-aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
-// ページオブジェクトの段落コレクションにFloatingBoxを追加します
-page.Paragraphs.Add(aBox);
-// PDFドキュメントを保存します
-doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
+        imageStamp.Background = true;
+        imageStamp.XIndent = 100;
+        imageStamp.YIndent = 100;
+        imageStamp.Height = 300;
+        imageStamp.Width = 300;
+        imageStamp.Rotate = Rotation.on270;
+        imageStamp.Opacity = 0.5;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddImageStamp_out.pdf");
+    }
+}
+```
+
+## スタンプを追加する際の画像品質の制御
+
+スタンプオブジェクトとして画像を追加する際に、画像の品質を制御できます。ImageStampクラスのQualityプロパティは、この目的に使用されます。これは、画像の品質をパーセントで示します（有効な値は0..100です）。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ControlImageQualityWhenAddingStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
+        imageStamp.Quality = 10;
+        document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
+        document.Save(dataDir + "ControlImageQuality_out.pdf");
+    }
+}
+```
+
+## 浮動ボックスの背景としての画像スタンプ
+
+Aspose.PDF APIを使用すると、浮動ボックスの背景として画像スタンプを追加できます。FloatingBoxクラスのBackgroundImageプロパティを使用して、浮動ボックスの背景画像スタンプを設定できます。次のコードサンプルに示されています。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImageStampAsBackgroundInFloatingBox()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to PDF document
+        Page page = document.Pages.Add();
+        // Create FloatingBox object
+        var aBox = new Aspose.Pdf.FloatingBox(200, 100);
+        // Set left position for FloatingBox
+        aBox.Left = 40;
+        // Set Top position for FloatingBox
+        aBox.Top = 80;
+        // Set the Horizontal alignment for FloatingBox
+        aBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        // Add text fragment to paragraphs collection of FloatingBox
+        aBox.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("main text"));
+        // Set border for FloatingBox
+        aBox.Border = new Aspose.Pdf.BorderInfo(BorderSide.All, Aspose.Pdf.Color.Red);
+        // Add background image
+        aBox.BackgroundImage = new Aspose.Pdf.Image
+        {
+            File = dataDir + "aspose-logo.jpg"
+        };
+        // Set background color for FloatingBox
+        aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
+        // Add FloatingBox to paragraphs collection of page object
+        page.Paragraphs.Add(aBox);
+        // Save PDF document
+        document.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+    }
+}
+```
+
+## 画像スタンプに代替テキストを追加する
+
+バージョン24.6以降、画像スタンプに代替テキストを追加することが可能です。
+
+このコードはPDFファイルを開き、特定の位置にスタンプとして画像を追加し、アクセシビリティのために代替テキストを含めます。更新されたPDFは新しいファイル名で保存されます。
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddAlternativeTextToTheImageStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg")
+        {
+            XIndent = 100,
+            YIndent = 700,
+            Quality = 100,
+            AlternativeText = "Your alt text"  // This property added.
+        };
+        // Add stamp
+        document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
+        document.Save(dataDir + "DocWithImageStamp_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -197,21 +243,21 @@ doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -222,7 +268,7 @@ doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -234,5 +280,3 @@ doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
     }
 }
 </script>
-```
-

@@ -2,9 +2,11 @@
 title: Добавление текста в PDF с использованием C#
 linktitle: Добавление текста в PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/add-text-to-pdf-file/
-description: Эта статья описывает различные аспекты работы с текстом в Aspose.PDF. Узнайте, как добавить текст в PDF, добавить HTML-фрагменты или использовать пользовательские OTF-шрифты.
+description: Узнайте, как добавить текст в PDF-документ в .NET с использованием Aspose.PDF для улучшения содержания и редактирования документов.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Добавление текста в PDF с использованием C#",
-    "alternativeHeadline": "Как добавить текст в PDF",
+    "headline": "Add Text to PDF using C#",
+    "alternativeHeadline": "Add Custom Text to Existing PDFs with C#",
+    "abstract": "Функция добавления текста в PDF с использованием C# в Aspose.PDF позволяет разработчикам бесшовно интегрировать и манипулировать текстом в существующих PDF-документах. С такими возможностями, как добавление текстовых фрагментов, использование пользовательских шрифтов OTF и добавление HTML-содержимого, эта функциональность улучшает форматирование и представление документов, упрощая создание профессиональных, индивидуализированных PDF-программно.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, добавление текста в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "wordcount": "5625",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,821 +73,957 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-text-to-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Эта статья описывает различные аспекты работы с текстом в Aspose.PDF. Узнайте, как добавить текст в PDF, добавить HTML-фрагменты или использовать пользовательские OTF-шрифты."
+    "dateModified": "2024-11-26",
+    "description": "В этой статье описаны различные аспекты работы с текстом в Aspose.PDF. Узнайте, как добавить текст в PDF, добавить HTML-фрагменты или использовать пользовательские шрифты OTF."
 }
 </script>
+
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Для добавления текста в существующий файл PDF:
+Чтобы добавить текст в существующий PDF-файл:
 
 1. Откройте входной PDF с помощью объекта Document.
 2. Получите конкретную страницу, на которую вы хотите добавить текст.
-3. Создайте объект TextFragment с входным текстом вместе с другими свойствами текста. Объект TextBuilder, созданный из этой конкретной страницы – на которую вы хотите добавить текст – позволяет добавить объект TextFragment на страницу с помощью метода AppendText.
-4. Вызовите метод Save объекта Document и сохраните выходной файл PDF.
+3. Создайте объект TextFragment с входным текстом и другими свойствами текста. Объект TextBuilder, созданный из этой конкретной страницы, на которую вы хотите добавить текст, позволяет вам добавить объект TextFragment на страницу с помощью метода AppendText.
+4. Вызовите метод Save объекта Document и сохраните выходной PDF-файл.
 
 ## Добавление текста
 
-Следующий фрагмент кода показывает, как добавить текст в существующий файл PDF.
+Следующий фрагмент кода показывает, как добавить текст в существующий PDF-файл.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "input.pdf");
-
-// Получить конкретную страницу
-Page pdfPage = (Page)pdfDocument.Pages[1];
-
-// Создать фрагмент текста
-TextFragment textFragment = new TextFragment("основной текст");
-textFragment.Position = new Position(100, 600);
-
-// Установить свойства текста
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray);
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Red);
-
-// Создать объект TextBuilder
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-
-// Добавить фрагмент текста на страницу PDF
-textBuilder.AppendText(textFragment);
-
-dataDir = dataDir + "AddText_out.pdf";
-
-// Сохранить результирующий документ PDF.
-pdfDocument.Save(dataDir);
-```
-## Загрузка шрифта из потока
-
-Следующий фрагмент кода показывает, как загрузить шрифт из объекта Stream при добавлении текста в документ PDF.
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-string fontFile = "";
-
-// Загрузите входной файл PDF
-Document doc = new Document( dataDir + "input.pdf");
-// Создайте объект конструктора текста для первой страницы документа
-TextBuilder textBuilder = new TextBuilder(doc.Pages[1]);
-// Создайте текстовый фрагмент с образцом строки
-TextFragment textFragment = new TextFragment("Hello world");
-
-if (fontFile != "")
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddText()
 {
-    // Загрузите шрифт TrueType в объект потока
-    using (FileStream fontStream = File.OpenRead(fontFile))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-        // Установите имя шрифта для текстовой строки
-        textFragment.TextState.Font = FontRepository.OpenFont(fontStream, FontTypes.TTF);
-        // Укажите позицию для текстового фрагмента
-        textFragment.Position = new Position(10, 10);
-        // Добавьте текст в TextBuilder, чтобы он мог быть размещен в файле PDF
+        // Get particular page
+        var page = document.Pages.Add();
+
+        // Create text fragment
+        var textFragment = new Aspose.Pdf.Text.TextFragment("main text");
+        textFragment.Position = new Aspose.Pdf.Text.Position(100, 600);
+
+        // Set text properties
+        textFragment.TextState.FontSize = 12;
+        textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray);
+        textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Red);
+
+        // Create TextBuilder object
+        var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
+
+        // Append the text fragment to the PDF page
         textBuilder.AppendText(textFragment);
+
+        // Save PDF document
+        document.Save(dataDir + "AddText_out.pdf");
     }
-
-    dataDir = dataDir + "LoadingFontFromStream_out.pdf";
-
-    // Сохраните результирующий документ PDF.
-    doc.Save(dataDir);
 }
 ```
+
+## Загрузка шрифта из потока
+
+Следующий фрагмент кода показывает, как загрузить шрифт из объекта Stream при добавлении текста в PDF-документ.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void LoadingFontFromStream()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    var fontFile = dataDir + "HPSimplified.ttf";
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "LoadFonts.pdf"))
+    {
+        // Create text builder object for first page of document
+        var textBuilder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
+        // Create text fragment with sample string
+        var textFragment = new Aspose.Pdf.Text.TextFragment("Hello world");
+
+        if (File.Exists(fontFile))
+        {
+            // Load the TrueType font into stream object
+            using (FileStream fontStream = File.OpenRead(fontFile))
+            {
+                // Set the font name for text string
+                textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.OpenFont(fontStream, Aspose.Pdf.Text.FontTypes.TTF);
+                // Specify the position for Text Fragment
+                textFragment.Position = new Aspose.Pdf.Text.Position(10, 10);
+                // Add the text to TextBuilder so that it can be placed over the PDF file
+                textBuilder.AppendText(textFragment);
+            }
+
+            // Save PDF document
+            document.Save(dataDir + "LoadingFontFromStream_out.pdf");
+        }
+    }
+}
+```
+
 ## Добавление текста с использованием TextParagraph
 
-Приведенный ниже фрагмент кода показывает, как добавить текст в документ PDF с использованием класса [TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph).
+Следующий фрагмент кода показывает, как добавить текст в PDF-документ с использованием класса [TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph).
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Открыть документ
-Document doc = new Document();
-// Добавить страницу в коллекцию страниц объекта Document
-Page page = doc.Pages.Add();
-TextBuilder builder = new TextBuilder(page);
-// Создать текстовый параграф
-TextParagraph paragraph = new TextParagraph();
-// Установить отступ для последующих строк
-paragraph.SubsequentLinesIndent = 20;
-// Указать местоположение для добавления TextParagraph
-paragraph.Rectangle = new Aspose.Pdf.Rectangle(100, 300, 200, 700);
-// Указать режим переноса слов
-paragraph.FormattingOptions.WrapMode = TextFormattingOptions.WordWrapMode.ByWords;
-// Создать фрагмент текста
-TextFragment fragment1 = new TextFragment("the quick brown fox jumps over the lazy dog");
-fragment1.TextState.Font = FontRepository.FindFont("Times New Roman");
-fragment1.TextState.FontSize = 12;
-// Добавить фрагмент в параграф
-paragraph.AppendLine(fragment1);
-// Добавить параграф
-builder.AppendParagraph(paragraph);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextWithTextParagraph()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-dataDir = dataDir + "AddTextUsingTextParagraph_out.pdf";
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of Document object
+        var page = document.Pages.Add();
+        var builder = new Aspose.Pdf.Text.TextBuilder(page);
+        // Create text paragraph
+        var paragraph = new Aspose.Pdf.Text.TextParagraph();
+        // Set subsequent lines indent
+        paragraph.SubsequentLinesIndent = 20;
+        // Specify the location to add TextParagraph
+        paragraph.Rectangle = new Aspose.Pdf.Rectangle(100, 300, 200, 700);
+        // Specify word wraping mode
+        paragraph.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        // Create text fragment
+        var fragment = new Aspose.Pdf.Text.TextFragment("the quick brown fox jumps over the lazy dog");
+        fragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Times New Roman");
+        fragment.TextState.FontSize = 12;
+        // Add fragment to paragraph
+        paragraph.AppendLine(fragment);
+        // Add paragraph
+        builder.AppendParagraph(paragraph);
 
-// Сохранить результирующий PDF документ.
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AddTextUsingTextParagraph_out.pdf");
+    }
+}
 ```
+
 ## Добавление гиперссылки к TextSegment
 
-Страница PDF может состоять из одного или нескольких объектов TextFragment, где каждый объект TextFragment может иметь один или несколько экземпляров TextSegment. Чтобы установить гиперссылку для TextSegment, можно использовать свойство Hyperlink класса [TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment), предоставляя объект Aspose.Pdf.WebHyperlink. Пожалуйста, используйте следующий фрагмент кода для выполнения этой задачи.
+Страница PDF может состоять из одного или нескольких объектов TextFragment, где каждый объект TextFragment может иметь один или несколько экземпляров TextSegment. Чтобы установить гиперссылку для TextSegment, можно использовать свойство Hyperlink класса [TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment), предоставив объект экземпляра Aspose.Pdf.WebHyperlink. Пожалуйста, попробуйте использовать следующий фрагмент кода для выполнения этого требования.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Создание экземпляра документа
-Document doc = new Document();
-// Добавление страницы в коллекцию страниц PDF файла
-Page page1 = doc.Pages.Add();
-// Создание экземпляра TextFragment
-TextFragment tf = new TextFragment("Пример текстового фрагмента");
-// Установка горизонтального выравнивания для TextFragment
-tf.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-// Создание textsegment с образцом текста
-TextSegment segment = new TextSegment(" ... Текстовый сегмент 1...");
-// Добавление сегмента в коллекцию сегментов TextFragment
-tf.Segments.Add(segment);
-// Создание нового TextSegment
-segment = new TextSegment("Ссылка на Google");
-// Добавление сегмента в коллекцию сегментов TextFragment
-tf.Segments.Add(segment);
-// Установка гиперссылки для TextSegment
-segment.Hyperlink = new Aspose.Pdf.WebHyperlink("www.google.com");
-// Установка цвета переднего плана для текстового сегмента
-segment.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-// Установка форматирования текста как курсив
-segment.TextState.FontStyle = FontStyles.Italic;
-// Создание другого объекта TextSegment
-segment = new TextSegment("TextSegment без гиперссылки");
-// Добавление сегмента в коллекцию сегментов TextFragment
-tf.Segments.Add(segment);
-// Добавление TextFragment в коллекцию абзацев объекта страницы
-page1.Paragraphs.Add(tf);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHyperlinkToTextSegment()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-dataDir = dataDir + "AddHyperlinkToTextSegment_out.pdf";
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Create TextFragment instance
+        var fragment = new Aspose.Pdf.Text.TextFragment("Sample Text Fragment");
+        // Set horizontal alignment for TextFragment
+        fragment.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
+        // Create a textsegment with sample text
+        var segment = new Aspose.Pdf.Text.TextSegment(" ... Text Segment 1...");
+        // Add segment to segments collection of TextFragment
+        fragment.Segments.Add(segment);
+        // Create a new TextSegment
+        segment = new Aspose.Pdf.Text.TextSegment("Link to Google");
+        // Add segment to segments collection of TextFragment
+        fragment.Segments.Add(segment);
+        // Set hyperlink for TextSegment
+        segment.Hyperlink = new Aspose.Pdf.WebHyperlink("www.google.com");
+        // Set forground color for text segment
+        segment.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
+        // Set text formatting as italic
+        segment.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+        // Create another TextSegment object
+        segment = new Aspose.Pdf.Text.TextSegment("TextSegment without hyperlink");
+        // Add segment to segments collection of TextFragment
+        fragment.Segments.Add(segment);
+        // Add TextFragment to paragraphs collection of page object
+        page.Paragraphs.Add(fragment);
 
-// Сохранение результирующего документа PDF.
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AddHyperlinkToTextSegment_out.pdf");
+    }
+}
 ```
+
 ## Использование шрифта OTF
 
-Aspose.PDF для .NET предлагает функциональность использования пользовательских/шрифтов TrueType при создании/манипулировании содержимым файлов PDF, так что содержимое отображается с использованием шрифтов, отличных от системных по умолчанию. Начиная с релиза Aspose.PDF для .NET 10.3.0, мы добавили поддержку шрифтов Open Type.
+Aspose.PDF for .NET предлагает возможность использовать пользовательские/TrueType шрифты при создании/манипуляции содержимым PDF-файлов, чтобы содержимое файлов отображалось с использованием шрифтов, отличных от шрифтов системы по умолчанию. Начиная с версии Aspose.PDF for .NET 10.3.0, мы предоставили поддержку шрифтов Open Type.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Создать новый экземпляр документа
-Document pdfDocument = new Document();
-// Добавить страницу в коллекцию страниц PDF файла
-Aspose.Pdf.Page page = pdfDocument.Pages.Add();
-// Создать экземпляр TextFragment с образцом текста
-TextFragment fragment = new TextFragment("Пример текста в шрифте OTF");
-// Найти шрифт в системной директории шрифтов
-// Fragment.TextState.Font = FontRepository.FindFont("HelveticaNeueLT Pro 45 Lt");
-// Или вы можете указать путь к шрифту OTF в системной директории
-fragment.TextState.Font = FontRepository.OpenFont(dataDir + "space age.otf");
-// Указать внедрение шрифта в PDF файл, чтобы он правильно отображался,
-// даже если конкретный шрифт не установлен/присутствует на целевом устройстве
-fragment.TextState.Font.IsEmbedded = true;
-// Добавить TextFragment в коллекцию параграфов экземпляра страницы
-page.Paragraphs.Add(fragment);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UseOTFFont()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-dataDir = dataDir + "OTFFont_out.pdf";
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Create TextFragment instnace with sample text
+        var fragment = new Aspose.Pdf.Text.TextFragment("Sample Text in OTF font");
+        // Find font inside system font directory
+        // Fragment.TextState.Font = FontRepository.FindFont("HelveticaNeueLT Pro 45 Lt");
+        // Or you can even specify the path of OTF font in system directory
+        fragment.TextState.Font = Aspose.Pdf.Text.FontRepository.OpenFont(dataDir + "space age.otf");
+        // Specify to emend font inside PDF file, so that its displayed properly,
+        // Even if specific font is not installed/present over target machine
+        fragment.TextState.Font.IsEmbedded = true;
+        // Add TextFragment to paragraphs collection of Page instance
+        page.Paragraphs.Add(fragment);
 
-// Сохранить результатирующий PDF документ.
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "OTFFont_out.pdf");
+    }
+}
 ```
+
 ## Добавление HTML-строки с использованием DOM
 
-Класс Aspose.Pdf.Generator.Text содержит свойство с именем IsHtmlTagSupported, которое позволяет добавлять HTML-теги/содержимое в файлы PDF. Добавленное содержимое отображается с использованием нативных HTML-тегов, вместо того чтобы появляться как простая текстовая строка. Для поддержки аналогичной функции в новой модели объектов документа (DOM) пространства имен Aspose.Pdf был введен класс HtmlFragment.
+Класс Aspose.Pdf.Generator.Text содержит свойство IsHtmlTagSupported, которое позволяет добавлять HTML-теги/содержимое в PDF-файлы. Добавленное содержимое отображается в родных HTML-тегах, а не как простая текстовая строка. Чтобы поддержать аналогичную функцию в новой модели объектов документа (DOM) пространства имен Aspose.Pdf, был введен класс HtmlFragment.
 
-Экземпляр [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) может быть использован для указания HTML-содержимого, которое должно быть размещено внутри файла PDF. Аналогично TextFragment, HtmlFragment является объектом уровня абзаца и может быть добавлен в коллекцию абзацев объекта Page. Следующие примеры кода показывают шаги размещения HTML-содержимого в файле PDF с использованием подхода DOM.
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Создание объекта документа
-Document doc = new Document();
-// Добавление страницы в коллекцию страниц PDF файла
-Page page = doc.Pages.Add();
-// Создание HtmlFragment с HTML содержимым
-HtmlFragment title = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
-// Установка информации о нижнем отступе
-title.Margin.Bottom = 10;
-// Установка информации о верхнем отступе
-title.Margin.Top = 200;
-// Добавление HTML Fragment в коллекцию абзацев страницы
-page.Paragraphs.Add(title);
-
-dataDir = dataDir + "AddHTMLUsingDOM_out.pdf";
-// Сохранение файла PDF
-doc.Save(dataDir);
-```
-Следующий фрагмент кода демонстрирует шаги добавления упорядоченных списков HTML в документ:
+Экземпляр [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) может использоваться для указания HTML-содержимого, которое должно быть помещено внутри PDF-файла. Подобно TextFragment, HtmlFragment является объектом уровня абзаца и может быть добавлен в коллекцию абзацев объекта Page. Следующие фрагменты кода показывают шаги по размещению HTML-содержимого внутри PDF-файла с использованием подхода DOM.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Путь к выходному документу.
-string outFile = dataDir + "AddHTMLOrderedListIntoDocuments_out.pdf";
-// Создание объекта документа
-Document doc = new Document();
-// Создание объекта HtmlFragment с соответствующим фрагментом HTML
-HtmlFragment t = new HtmlFragment("`<body style='line-height: 100px;'><ul><li>Первый</li><li>Второй</li><li>Третий</li><li>Четвертый</li><li>Пятый</li></ul>Текст после списка.<br/>Следующая строка<br/>Последняя строка</body>`");
-// Добавление страницы в коллекцию страниц
-Page page = doc.Pages.Add();
-// Добавление HtmlFragment на страницу
-page.Paragraphs.Add(t);
-// Сохранение результата в PDF файл
-doc.Save(outFile);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHTMLStringUsingDOM()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a page to pages collection of PDF file
+        var page = document.Pages.Add();
+        // Instantiate HtmlFragment with HTML contnets
+        var title = new Aspose.Pdf.HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
+        // Set bottom margin information
+        title.Margin.Bottom = 10;
+        // Set top margin information
+        title.Margin.Top = 200;
+        // Add HTML Fragment to paragraphs collection of page
+        page.Paragraphs.Add(title);
+
+        // Save PDF document
+        document.Save(dataDir + "AddHTMLUsingDOM_out.pdf");
+    }
+}
 ```
 
-Вы также можете установить форматирование строк HTML с использованием объекта TextState следующим образом:
+Следующий фрагмент кода демонстрирует шаги, как добавить упорядоченные списки HTML в документ:
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-HtmlFragment html = new HtmlFragment("некоторый текст");
-html.TextState = new TextState();
-html.TextState.Font = FontRepository.FindFont("Calibri");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHTMLOrderedListIntoDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Instantiate HtmlFragment object with corresponding HTML fragment 
+        var fragment = new Aspose.Pdf.HtmlFragment("`<body style='line-height: 100px;'><ul><li>First</li><li>Second</li><li>Third</li><li>Fourth</li><li>Fifth</li></ul>Text after the list.<br/>Next line<br/>Last line</body>`");
+        // Add Page in Pages Collection 
+        var page = document.Pages.Add();
+        // Add HtmlFragment inside page 
+        page.Paragraphs.Add(fragment);
+
+        // Save PDF document
+        document.Save(dataDir + "AddHTMLOrderedListIntoDocuments_out.pdf");
+    }
+}
 ```
-Если вы устанавливаете значения атрибутов текста через HTML-разметку, а затем предоставляете те же значения в свойствах TextState, они перезапишут параметры HTML свойствами из экземпляра TextState. Следующие примеры кода демонстрируют описанное поведение.
+
+Вы также можете установить форматирование HTML-строки с использованием объекта TextState следующим образом:
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Создаем объект документа
-Document doc = new Document();
-// Добавляем страницу в коллекцию страниц PDF файла
-Page page = doc.Pages.Add();
-// Создаем HtmlFragment с HTML содержимым
-HtmlFragment title = new HtmlFragment("<p style='font-family: Verdana'><b><i>Таблица содержит текст</i></b></p>");
-// Шрифт 'Verdana' будет сброшен на 'Arial'
-title.TextState = new TextState("Arial");
-title.TextState.FontSize = 20;
-// Устанавливаем информацию о нижнем отступе
-title.Margin.Bottom = 10;
-// Устанавливаем информацию о верхнем отступе
-title.Margin.Top = 400;
-// Добавляем HTML Fragment в коллекцию параграфов страницы
-page.Paragraphs.Add(title);
-// Сохраняем PDF файл
-dataDir = dataDir + "AddHTMLUsingDOMAndOverwrite_out.pdf";
-// Сохраняем PDF файл
-doc.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetHTMLStringFormatting()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var fragment = new Aspose.Pdf.HtmlFragment("some text");
+        fragment.TextState = new Aspose.Pdf.Text.TextState();
+        fragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
+        // Add Page in Pages Collection 
+        var page = document.Pages.Add();
+        // Add HtmlFragment inside page 
+        page.Paragraphs.Add(fragment);
+
+        // Save PDF document
+        document.Save(dataDir + "SetHTMLStringFormatting_out.pdf");
+    }
+}
 ```
+
+В случае, если вы установите некоторые значения атрибутов текста через HTML-разметку, а затем предоставите те же значения в свойствах TextState, они перезапишут параметры HTML свойствами экземпляра TextState. Следующие фрагменты кода показывают описанное поведение.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHTMLUsingDOMAndOverwrite()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a page to pages collection of PDF file
+        var page = document.Pages.Add();
+        // Instantiate HtmlFragment with HTML contnets
+        var title = new Aspose.Pdf.HtmlFragment("<p style='font-family: Verdana'><b><i>Table contains text</i></b></p>");
+        //Font-family from 'Verdana' will be reset to 'Arial'
+        title.TextState = new Aspose.Pdf.Text.TextState("Arial");
+        title.TextState.FontSize = 20;
+        // Set bottom margin information
+        title.Margin.Bottom = 10;
+        // Set top margin information
+        title.Margin.Top = 400;
+        // Add HTML Fragment to paragraphs collection of page
+        page.Paragraphs.Add(title);
+        
+        // Save PDF document
+        document.Save(dataDir + "AddHTMLUsingDOMAndOverwrite_out.pdf");
+    }
+}
+```
+
 ## Сноски и концевые сноски (DOM)
 
-Сноски указывают на заметки в тексте вашей работы с использованием последовательных надстрочных номеров. Сама заметка имеет отступ и может находиться в виде сноски внизу страницы.
+Сноски указывают на заметки в тексте вашей работы, используя последовательные надстрочные номера. Фактическая заметка отступает и может появляться как сноска внизу страницы.
 
 ### Добавление сноски
 
-В системе ссылок сносками указывают на ссылку следующим образом:
+В системе ссылок сноски указывают на ссылку следующим образом:
 
-- помещая маленький номер над строкой текста непосредственно после исходного материала. Этот номер называется идентификатором заметки. Он находится немного выше строки текста.
-- помещая тот же номер, за которым следует цитата вашего источника, внизу страницы. Сноски должны быть числовыми и хронологическими: первая ссылка - 1, вторая - 2 и так далее.
+- Поместите маленький номер над строкой текста, непосредственно следующей за исходным материалом. Этот номер называется идентификатором заметки. Он находится немного выше строки текста.
+- Поместите тот же номер, за которым следует ссылка на ваш источник, внизу страницы. Сноски должны быть числовыми и хронологическими: первая ссылка — 1, вторая — 2 и так далее.
 
-Преимущество сносок заключается в том, что читатель может просто опустить взгляд на страницу, чтобы узнать источник интересующей его ссылки.
+Преимущество сносок заключается в том, что читатель может просто взглянуть вниз по странице, чтобы узнать источник ссылки, которая его интересует.
 
 Пожалуйста, следуйте указанным ниже шагам, чтобы создать сноску:
 
-- Создайте экземпляр документа
-- Создайте объект страницы
-- Создайте объект фрагмента текста
-- Создайте экземпляр заметки и передайте его значение в свойство TextFragment.FootNote
-- Создайте экземпляр Note и передайте его значение в свойство TextFragment.FootNote
-- Добавьте TextFragment в коллекцию абзацев страницы
+- Создайте экземпляр Document.
+- Создайте объект Page.
+- Создайте объект TextFragment.
+- Создайте экземпляр Note и передайте его значение в свойство TextFragment.FootNote.
+- Добавьте TextFragment в коллекцию абзацев экземпляра страницы.
 
 ### Пользовательский стиль линии для сноски
 
-Следующий пример демонстрирует, как добавить сноски в нижнюю часть страницы PDF и определить пользовательский стиль линии.
+Следующий пример демонстрирует, как добавить сноски внизу страницы PDF и определить пользовательский стиль линии.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CustomLineStyleForFootNote()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Создать экземпляр документа
-Document doc = new Document();
-// Добавить страницу в коллекцию страниц PDF
-Page page = doc.Pages.Add();
-// Создать объект GraphInfo
-Aspose.Pdf.GraphInfo graph = new Aspose.Pdf.GraphInfo();
-// Установить ширину линии равной 2
-graph.LineWidth = 2;
-// Установить цвет для объекта графики
-graph.Color = Aspose.Pdf.Color.Red;
-// Установить значение массива пунктира равным 3
-graph.DashArray = new int[] { 3 };
-// Установить значение фазы пунктира равным 1
-graph.DashPhase = 1;
-// Установить стиль линии сноски для страницы как graph
-page.NoteLineStyle = graph;
-// Создать экземпляр TextFragment
-TextFragment text = new TextFragment("Hello World");
-// Установить значение FootNote для TextFragment
-text.FootNote = new Note("сноска для тестового текста 1");
-// Добавить TextFragment в коллекцию абзацев первой страницы документа
-page.Paragraphs.Add(text);
-// Создать второй TextFragment
-text = new TextFragment("Aspose.Pdf for .NET");
-// Установить FootNote для второго текстового фрагмента
-text.FootNote = new Note("сноска для тестового текста 2");
-// Добавить второй текстовый фрагмент в коллекцию абзацев файла PDF
-page.Paragraphs.Add(text);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Create GraphInfo object
+        var graph = new Aspose.Pdf.GraphInfo();
+        // Set line width as 2
+        graph.LineWidth = 2;
+        // Set the color for graph object
+        graph.Color = Aspose.Pdf.Color.Red;
+        // Set dash array value as 3
+        graph.DashArray = new int[] { 3 };
+        // Set dash phase value as 1
+        graph.DashPhase = 1;
+        // Set footnote line style for page as graph
+        page.NoteLineStyle = graph;
+        // Create TextFragment instance
+        var text = new Aspose.Pdf.Text.TextFragment("Hello World");
+        // Set FootNote value for TextFragment
+        text.FootNote = new Aspose.Pdf.Note("foot note for test text 1");
+        // Add TextFragment to paragraphs collection of first page of document
+        page.Paragraphs.Add(text);
+        // Create second TextFragment
+        text = new Aspose.Pdf.Text.TextFragment("Aspose.PDF for .NET");
+        // Set FootNote for second text fragment
+        text.FootNote = new Aspose.Pdf.Note("foot note for test text 2");
+        // Add second text fragment to paragraphs collection of PDF file
+        page.Paragraphs.Add(text);
 
-dataDir = dataDir + "CustomLineStyleForFootNote_out.pdf";
-
-// Сохранить результат в PDF документ.
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "CustomLineStyleForFootNote_out.pdf");
+    }
+}
 ```
+
 Мы можем установить форматирование метки сноски (идентификатор заметки) с использованием объекта TextState следующим образом:
 
 ```csharp
-TextFragment text = new TextFragment("тестовый текст 1");
-text.FootNote = new Note("сноска для тестового текста 1");
-text.FootNote.Text = "21";
-text.FootNote.TextState = new TextState();
-text.FootNote.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-text.FootNote.TextState.FontStyle = FontStyles.Italic;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FormattingUsingTextStateObject()
+{
+    var text = new Aspose.Pdf.Text.TextFragment("test text 1");
+    text.FootNote = new Aspose.Pdf.Note("foot note for test text 1");
+    text.FootNote.Text = "21";
+    text.FootNote.TextState = new Aspose.Pdf.Text.TextState();
+    text.FootNote.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
+    text.FootNote.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+}
 ```
 
 ### Настройка метки сноски
 
-По умолчанию номер FootNote увеличивается, начиная с 1. Однако у нас может возникнуть потребность установить пользовательскую метку FootNote. Для достижения этой цели, пожалуйста, попробуйте использовать следующий фрагмент кода
+По умолчанию номер сноски увеличивается, начиная с 1. Однако у нас может быть требование установить пользовательскую метку сноски. Чтобы выполнить это требование, пожалуйста, попробуйте использовать следующий фрагмент кода.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Создать экземпляр документа
-Document doc = new Document();
-// Добавить страницу в коллекцию страниц PDF
-Page page = doc.Pages.Add();
-// Создать объект GraphInfo
-Aspose.Pdf.GraphInfo graph = new Aspose.Pdf.GraphInfo();
-// Установить ширину линии как 2
-graph.LineWidth = 2;
-// Установить цвет для объекта графики
-graph.Color = Aspose.Pdf.Color.Red;
-// Установить значение массива тире как 3
-graph.DashArray = new int[] { 3 };
-// Установить фазовое значение тире как 1
-graph.DashPhase = 1;
-// Установить стиль линии сноски для страницы как граф
-page.NoteLineStyle = graph;
-// Создать экземпляр TextFragment
-TextFragment text = new TextFragment("Привет Мир");
-// Установить значение FootNote для TextFragment
-text.FootNote = new Note("сноска для тестового текста 1");
-// Указать пользовательскую метку для FootNote
-text.FootNote.Text = " Aspose(2015)";
-// Добавить TextFragment в коллекцию абзацев первой страницы документа
-page.Paragraphs.Add(text);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CustomizeFootNoteLabel()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-dataDir = dataDir + "CustomizeFootNoteLabel_out.pdf";
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Create GraphInfo object
+        var graph = new Aspose.Pdf.GraphInfo();
+        // Set line width as 2
+        graph.LineWidth = 2;
+        // Set the color for graph object
+        graph.Color = Aspose.Pdf.Color.Red;
+        // Set dash array value as 3
+        graph.DashArray = new int[] { 3 };
+        // Set dash phase value as 1
+        graph.DashPhase = 1;
+        // Set footnote line style for page as graph
+        page.NoteLineStyle = graph;
+        // Create TextFragment instance
+        var text = new Aspose.Pdf.Text.TextFragment("Hello World");
+        // Set FootNote value for TextFragment
+        text.FootNote = new Aspose.Pdf.Note("foot note for test text 1");
+        // Specify custom label for FootNote
+        text.FootNote.Text = " Aspose(2015)";
+        // Add TextFragment to paragraphs collection of first page of document
+        page.Paragraphs.Add(text);
+
+        // Save PDF document
+        document.Save(dataDir + "CustomizeFootNoteLabel_out.pdf");
+    }
+}
 ```
+
 ## Добавление изображения и таблицы в сноску
 
-В предыдущих версиях поддержка сносок была предоставлена, но она применялась только к объекту TextFragment. Однако, начиная с версии Aspose.PDF для .NET 10.7.0, вы также можете добавлять сноски к другим объектам внутри документа PDF, таким как таблицы, ячейки и т.д. Следующий фрагмент кода показывает шаги по добавлению сноски к объекту TextFragment, а затем добавлению объекта изображения и таблицы в коллекцию абзацев раздела сноски.
+В предыдущих версиях поддержка сносок была предоставлена, но она применялась только к объекту TextFragment. Однако начиная с версии Aspose.PDF for .NET 10.7.0, вы также можете добавлять сноски к другим объектам внутри PDF-документа, таким как таблицы, ячейки и т.д. Следующий фрагмент кода показывает шаги по добавлению сноски к объекту TextFragment, а затем добавлению изображения и объекта таблицы в коллекцию абзацев раздела сноски.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageAndTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+        var text = new Aspose.Pdf.Text.TextFragment("some text");
+        page.Paragraphs.Add(text);
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
-TextFragment text = new TextFragment("некоторый текст");
-page.Paragraphs.Add(text);
+        text.FootNote = new Aspose.Pdf.Note();
+        // Create image
+        Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+        image.File = dataDir + "aspose-logo.jpg";
+        image.FixHeight = 20;
+        text.FootNote.Paragraphs.Add(image);
 
-text.FootNote = new Note();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-image.File = dataDir + "aspose-logo.jpg";
-image.FixHeight = 20;
-text.FootNote.Paragraphs.Add(image);
-TextFragment footNote = new TextFragment("текст сноски");
-footNote.TextState.FontSize = 20;
-footNote.IsInLineParagraph = true;
-text.FootNote.Paragraphs.Add(footNote);
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-table.Rows.Add().Cells.Add().Paragraphs.Add(new TextFragment("Ряд 1 Ячейка 1"));
-text.FootNote.Paragraphs.Add(table);
+        var footNote = new Aspose.Pdf.Text.TextFragment("footnote text");
+        footNote.TextState.FontSize = 20;
+        footNote.IsInLineParagraph = true;
+        text.FootNote.Paragraphs.Add(footNote);
 
-dataDir = dataDir + "AddImageAndTable_out.pdf";
+        var table = new Aspose.Pdf.Table();
+        table.Rows.Add().Cells.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Row 1 Cell 1"));
+        text.FootNote.Paragraphs.Add(table);
 
-// Сохранить результирующий PDF документ.
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AddImageAndTable_out.pdf");
+    }
+}
 ```
+
 ## Как создать концевые сноски
 
-Концевая сноска — это ссылка на источник, которая направляет читателей в определённое место в конце документа, где они могут найти источник информации или слов, цитируемых или упомянутых в документе. При использовании концевых сносок ваша цитируемая или перефразированная фраза или сводный материал сопровождается номером в виде верхнего индекса.
+Концевая сноска — это источник цитирования, который указывает читателям на конкретное место в конце работы, где они могут узнать источник информации или слов, процитированных или упомянутых в работе. При использовании концевых сносок ваша процитированная или перефразированная фраза или обобщенный материал сопровождаются надстрочным номером.
 
 Следующий пример демонстрирует, как добавить концевую сноску на страницу PDF.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Создать экземпляр документа
-Document doc = new Document();
-// Добавить страницу в коллекцию страниц PDF
-Page page = doc.Pages.Add();
-// Создать экземпляр TextFragment
-TextFragment text = new TextFragment("Hello World");
-// Установить значение FootNote для TextFragment
-text.EndNote = new Note("пример концевой сноски");
-// Указать пользовательскую метку для FootNote
-text.EndNote.Text = " Aspose(2015)";
-// Добавить TextFragment в коллекцию параграфов первой страницы документа
-page.Paragraphs.Add(text);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateEndNotes()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Create TextFragment instance
+        var text = new Aspose.Pdf.Text.TextFragment("Hello World");
+        // Set FootNote value for TextFragment
+        text.EndNote = new Aspose.Pdf.Note("sample End note");
+        // Specify custom label for FootNote
+        text.EndNote.Text = " Aspose(2015)";
+        // Add TextFragment to paragraphs collection of first page of document
+        page.Paragraphs.Add(text);
 
-dataDir = dataDir + "CreateEndNotes_out.pdf";
-// Сохранить результат в PDF документ.
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "CreateEndNotes_out.pdf");
+    }
+}
 ```
-## Текст и изображение как встроенный абзац
 
-Стандартная компоновка файла PDF представляет собой потоковую разметку (сверху слева вниз вправо). Поэтому каждый новый элемент, добавленный в файл PDF, размещается в потоке внизу справа. Однако может возникнуть потребность отображать различные элементы страницы, например Изображение и Текст, на одном уровне (один за другим). Один из подходов может заключаться в создании экземпляра Таблицы и добавлении обоих элементов в отдельные ячейки. Тем не менее, другой подход может быть использование встроенного абзаца. Установив свойство IsInLineParagraph для Изображения и Текста в значение true, эти абзацы будут отображаться как встроенные по отношению к другим элементам страницы.
+## Текст и изображение как встроенные абзацы
 
-Следующий фрагмент кода показывает, как добавить текст и изображение как встроенные абзацы в файл PDF.
+Стандартная компоновка PDF-файла — это компоновка потока (сверху вниз, слева направо). Поэтому каждый новый элемент, добавляемый в PDF-файл, добавляется в нижний правый поток. Однако у нас может быть требование отображать различные элементы страницы, т.е. изображение и текст на одном уровне (один за другим). Один из подходов может заключаться в создании экземпляра таблицы и добавлении обоих элементов в отдельные ячейки. Однако другой подход может быть встроенный абзац. Установив свойство IsInLineParagraph для изображения и текста как true, эти абзацы будут отображаться как встроенные к другим элементам страницы.
+
+Следующий фрагмент кода показывает, как добавить текст и изображение как встроенные абзацы в PDF-файл.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Создать экземпляр документа
-Document doc = new Document();
-// Добавить страницу в коллекцию страниц экземпляра Документа
-Page page = doc.Pages.Add();
-// Создать фрагмент текста
-TextFragment text = new TextFragment("Привет мир.. ");
-// Добавить фрагмент текста в коллекцию абзацев объекта Страницы
-page.Paragraphs.Add(text);
-// Создать экземпляр изображения
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-// Установить изображение как встроенный абзац, чтобы оно отображалось сразу после
-// предыдущего абзаца (фрагмента текста)
-image.IsInLineParagraph = true;
-// Указать путь к файлу изображения
-image.File = dataDir + "aspose-logo.jpg";
-// Установить высоту изображения (необязательно)
-image.FixHeight = 30;
-// Установить ширину изображения (необязательно)
-image.FixWidth = 100;
-// Добавить изображение в коллекцию абзацев объекта Страницы
-page.Paragraphs.Add(image);
-// Переинициализировать объект фрагмента текста с другим содержимым
-text = new TextFragment(" Снова привет..");
-// Установить фрагмент текста как встроенный абзац
-text.IsInLineParagraph = true;
-// Добавить вновь созданный фрагмент текста в коллекцию абзацев страницы
-page.Paragraphs.Add(text);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void TextAndImageAsParagraph()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-dataDir = dataDir + "TextAndImageAsParagraph_out.pdf";
-doc.Save(dataDir);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of Document instance
+        var page = document.Pages.Add();
+        // Create TextFragmnet
+        var text = new Aspose.Pdf.Text.TextFragment("Hello World.. ");
+        // Add text fragment to paragraphs collection of Page object
+        page.Paragraphs.Add(text);
+        // Create an image instance
+        var image = new Aspose.Pdf.Image();
+        // Set image as inline paragraph so that it appears right after
+        // The previous paragraph object (TextFragment)
+        image.IsInLineParagraph = true;
+        // Specify image file path
+        image.File = dataDir + "aspose-logo.jpg";
+        // Set image Height (optional)
+        image.FixHeight = 30;
+        // Set Image Width (optional)
+        image.FixWidth = 100;
+        // Add image to paragraphs collection of page object
+        page.Paragraphs.Add(image);
+        // Re-initialize TextFragment object with different contents
+        text = new Aspose.Pdf.Text.TextFragment(" Hello Again..");
+        // Set TextFragment as inline paragraph
+        text.IsInLineParagraph = true;
+        // Add newly created TextFragment to paragraphs collection of page
+        page.Paragraphs.Add(text);
+
+        // Save PDF document
+        document.Save(dataDir + "TextAndImageAsParagraph_out.pdf");
+    }
+}
 ```
-## Указание интервала между символами при добавлении текста
 
-Текст может быть добавлен в коллекцию абзацев PDF-файлов с использованием экземпляра TextFragment или с помощью объекта TextParagraph, а также вы можете добавить текст в PDF с помощью класса TextStamp. При добавлении текста может возникнуть необходимость указать интервал между символами для текстовых объектов. Для достижения этой цели было введено новое свойство с именем CharacterSpacing. Пожалуйста, ознакомьтесь с следующими подходами для выполнения этой задачи.
+## Укажите межсимвольное расстояние при добавлении текста
 
-Следующие подходы показывают шаги по указанию интервала между символами при добавлении текста в документ PDF.
+Текст может быть добавлен в коллекцию абзацев PDF-файлов с использованием экземпляра TextFragment или с использованием объекта TextParagraph, и даже вы можете штамповать текст внутри PDF, используя класс TextStamp. При добавлении текста у нас может быть требование указать межсимвольное расстояние для текстовых объектов. Чтобы выполнить это требование, было введено новое свойство под названием CharacterSpacing. Пожалуйста, ознакомьтесь с следующими подходами для выполнения этого требования.
+
+Следующие подходы показывают шаги по указанию межсимвольного расстояния при добавлении текста внутри PDF-документа.
 
 ### Использование TextBuilder и TextFragment
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CharacterSpacingUsingTextBuilderAndFragment()
+{            
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Создать экземпляр документа
-Document pdfDocument = new Document();
-// Добавить страницу в коллекцию страниц документа
-Page page = pdfDocument.Pages.Add();
-// Создать экземпляр TextBuilder
-TextBuilder builder = new TextBuilder(pdfDocument.Pages[1]);
-// Создать экземпляр текстового фрагмента с образцом содержимого
-TextFragment wideFragment = new TextFragment("Текст с увеличенным интервалом между символами");
-wideFragment.TextState.ApplyChangesFrom(new TextState("Arial", 12));
-// Указать интервал между символами для TextFragment
-wideFragment.TextState.CharacterSpacing = 2.0f;
-// Указать позицию TextFragment
-wideFragment.Position = new Position(100, 650);
-// Добавить TextFragment в экземпляр TextBuilder
-builder.AppendText(wideFragment);
-dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out.pdf";
-// Сохранить результат в PDF-документ.
-pdfDocument.Save(dataDir);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of Document
+        document.Pages.Add();
+        // Create TextBuilder instance
+        var builder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
+        // Create text fragment instance with sample contents
+        var wideFragment = new Aspose.Pdf.Text.TextFragment("Text with increased character spacing");
+        wideFragment.TextState.ApplyChangesFrom(new Aspose.Pdf.Text.TextState("Arial", 12));
+        // Specify character spacing for TextFragment
+        wideFragment.TextState.CharacterSpacing = 2.0f;
+        // Specify the position of TextFragment
+        wideFragment.Position = new Aspose.Pdf.Text.Position(100, 650);
+        // Append TextFragment to TextBuilder instance
+        builder.AppendText(wideFragment);
+
+        // Save PDF document
+        document.Save(dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out.pdf");
+    }
+}
 ```
+
 ### Использование TextParagraph
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CharacterSpacingUsingTextBuilderAndParagraph()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Создать экземпляр документа
-Document pdfDocument = new Document();
-// Добавить страницу в коллекцию страниц документа
-Page page = pdfDocument.Pages.Add();
-// Создать экземпляр TextBuilder
-TextBuilder builder = new TextBuilder(pdfDocument.Pages[1]);
-// Создать экземпляр TextParagraph
-TextParagraph paragraph = new TextParagraph();
-// Создать экземпляр TextState для указания имени шрифта и размера
-TextState state = new TextState("Arial", 12);
-// Указать межсимвольный интервал
-state.CharacterSpacing = 1.5f;
-// Добавить текст в объект TextParagraph
-paragraph.AppendLine("Это абзац с межсимвольным интервалом", state);
-// Указать позицию для TextParagraph
-paragraph.Position = new Position(100, 550);
-// Добавить TextParagraph в экземпляр TextBuilder
-builder.AppendParagraph(paragraph);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of Document
+        var page = document.Pages.Add();
+        // Create TextBuilder instance
+        var builder = new Aspose.Pdf.Text.TextBuilder(page);
+        // Instantiate TextParagraph instance
+        var paragraph = new Aspose.Pdf.Text.TextParagraph();
+        // Create TextState instance to specify font name and size
+        var state = new Aspose.Pdf.Text.TextState("Arial", 12);
+        // Specify the character spacing
+        state.CharacterSpacing = 1.5f;
+        // Append text to TextParagraph object
+        paragraph.AppendLine("This is paragraph with character spacing", state);
+        // Specify the position for TextParagraph
+        paragraph.Position = new Aspose.Pdf.Text.Position(100, 550);
+        // Append TextParagraph to TextBuilder instance
+        builder.AppendParagraph(paragraph);
 
-dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out.pdf";
-// Сохранить результат в PDF документ.
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out.pdf");
+    }
+}
 ```
+
 ### Использование TextStamp
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CharacterSpacingUsingTextStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Создать экземпляр документа
-Document pdfDocument = new Document();
-// Добавить страницу в коллекцию страниц документа
-Page page = pdfDocument.Pages.Add();
-// Создать экземпляр TextStamp с образцом текста
-TextStamp stamp = new TextStamp("This is text stamp with character spacing");
-// Указать имя шрифта для объекта Stamp
-stamp.TextState.Font = FontRepository.FindFont("Arial");
-// Указать размер шрифта для TextStamp
-stamp.TextState.FontSize = 12;
-// Указать расстояние между символами как 1f
-stamp.TextState.CharacterSpacing = 1f;
-// Установить XIndent для Stamp
-stamp.XIndent = 100;
-// Установить YIndent для Stamp
-stamp.YIndent = 500;
-// Добавить текстовый штамп на страницу
-stamp.Put(page);
-dataDir = dataDir + "CharacterSpacingUsingTextStamp_out.pdf";
-// Сохранить результат в PDF документ.
-pdfDocument.Save(dataDir);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of Document
+        var page = document.Pages.Add();
+        // Instantiate TextStamp instance with sample text
+        var stamp = new Aspose.Pdf.TextStamp("This is text stamp with character spacing");
+        // Specify font name for Stamp object
+        stamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        // Specify Font size for TextStamp
+        stamp.TextState.FontSize = 12;
+        // Specify character specing as 1f
+        stamp.TextState.CharacterSpacing = 1f;
+        // Set the XIndent for Stamp
+        stamp.XIndent = 100;
+        // Set the YIndent for Stamp
+        stamp.YIndent = 500;
+        // Add textual stamp to page instance
+        stamp.Put(page);
+
+        // Save PDF document
+        document.Save(dataDir + "CharacterSpacingUsingTextStamp_out.pdf");
+    }
+}
 ```
+
 ## Создание многостолбцового PDF-документа
 
-В журналах и газетах мы часто видим, что новости выводятся в нескольких столбцах на одной странице, в отличие от книг, где текстовые абзацы обычно печатаются на целой странице слева направо. Многие приложения для обработки документов, такие как Microsoft Word и Adobe Acrobat Writer, позволяют пользователям создавать несколько столбцов на одной странице и затем добавлять в них данные.
+В журналах и газетах мы чаще всего видим, что новости отображаются в нескольких столбцах на одной странице, в отличие от книг, где текстовые абзацы в основном печатаются на целых страницах слева направо. Многие приложения для обработки документов, такие как Microsoft Word и Adobe Acrobat Writer, позволяют пользователям создавать несколько столбцов на одной странице и затем добавлять данные в них.
 
-[Aspose.PDF для .NET](https://docs.aspose.com/pdf/net/) также предлагает функцию создания нескольких столбцов внутри страниц PDF-документов.
-[Aspose.PDF для .NET](https://docs.aspose.com/pdf/net/) также предлагает функцию создания нескольких колонок внутри страниц PDF-документов.
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) также предлагает возможность создавать несколько столбцов внутри страниц PDF-документов. Чтобы создать многостолбцовый PDF-файл, мы можем использовать класс Aspose.Pdf.FloatingBox, так как он предоставляет свойство ColumnInfo.ColumnCount для указания количества столбцов внутри FloatingBox, а также мы можем указать расстояние между столбцами и ширину столбцов с помощью свойств ColumnInfo.ColumnSpacing и ColumnInfo.ColumnWidths соответственно. Пожалуйста, обратите внимание, что FloatingBox является элементом внутри модели объектов документа и может иметь устаревшее позиционирование по сравнению с относительным позиционированием (т.е. текст, графика, изображение и т.д.).
 
-Расстояние между колонками означает пространство между колонками, и по умолчанию расстояние между колонками составляет 1,25 см. Если ширина колонки не указана, то [Aspose.PDF для .NET](https://docs.aspose.com/pdf/net/) автоматически рассчитывает ширину каждой колонки в соответствии с размером страницы и расстоянием между колонками.
+Расстояние между столбцами означает пространство между столбцами, и стандартное расстояние между столбцами составляет 1,25 см. Если ширина столбца не указана, то [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) автоматически рассчитывает ширину для каждого столбца в зависимости от размера страницы и расстояния между столбцами.
 
-Ниже приведен пример, демонстрирующий создание двух колонок с объектами графиков (Линия), которые добавляются в коллекцию абзацев FloatingBox, которая затем добавляется в коллекцию абзацев экземпляра страницы.
+Пример приведен ниже, чтобы продемонстрировать создание двух столбцов с объектами графиков (линия), которые добавляются в коллекцию абзацев FloatingBox, которая затем добавляется в коллекцию абзацев экземпляра страницы.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateMultiColumnPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document doc = new Document();
-// Указываем информацию о левом отступе для файла PDF
-doc.PageInfo.Margin.Left = 40;
-// Указываем информацию о правом отступе для файла PDF
-doc.PageInfo.Margin.Right = 40;
-Page page = doc.Pages.Add();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Specify the left margin info for the PDF file
+        document.PageInfo.Margin.Left = 40;
+        // Specify the Right margin info for the PDF file
+        document.PageInfo.Margin.Right = 40;
+        var page = document.Pages.Add();
 
-Aspose.Pdf.Drawing.Graph graph1 = new Aspose.Pdf.Drawing.Graph(500, 2);
-// Добавляем линию в коллекцию абзацев объекта раздела
-page.Paragraphs.Add(graph1);
+        var graph1 = new Aspose.Pdf.Drawing.Graph(500, 2);
+        // Add the line to paraphraphs collection of section object
+        page.Paragraphs.Add(graph1);
 
-// Указываем координаты для линии
-float[] posArr = new float[] { 1, 2, 500, 2 };
-Aspose.Pdf.Drawing.Line l1 = new Aspose.Pdf.Drawing.Line(posArr);
-graph1.Shapes.Add(l1);
-// Создаем строковые переменные с текстом, содержащим теги html
+        // Specify the coordinates for the line
+        float[] posArr = new float[] { 1, 2, 500, 2 };
+        var line1 = new Aspose.Pdf.Drawing.Line(posArr);
+        graph1.Shapes.Add(line1);
+        // Create string variables with text containing html tags
+        string s = "<font face=\"Times New Roman\" size=4>" +
 
-string s = "<font face=\"Times New Roman\" size=4>" +
+        "<strong> How to Steer Clear of money scams</<strong> "
+        + "</font>";
+        // Create text paragraphs containing HTML text
+        var heading_text = new Aspose.Pdf.HtmlFragment(s);
+        page.Paragraphs.Add(heading_text);
 
-"<strong> Как избежать денежных мошенничеств</<strong> "
-+ "</font>";
-// Создаем текстовые абзацы, содержащие HTML текст
+        var box = new Aspose.Pdf.FloatingBox();
+        // Add four columns in the section
+        box.ColumnInfo.ColumnCount = 2;
+        // Set the spacing between the columns
+        box.ColumnInfo.ColumnSpacing = "5";
 
-HtmlFragment heading_text = new HtmlFragment(s);
-page.Paragraphs.Add(heading_text);
+        box.ColumnInfo.ColumnWidths = "105 105";
+        var text1 = new Aspose.Pdf.Text.TextFragment("By A Googler (The Official Google Blog)");
+        text1.TextState.FontSize = 8;
+        text1.TextState.LineSpacing = 2;
+        box.Paragraphs.Add(text1);
+        text1.TextState.FontSize = 10;
 
-Aspose.Pdf.FloatingBox box = new Aspose.Pdf.FloatingBox();
-// Добавляем четыре колонки в раздел
-box.ColumnInfo.ColumnCount = 2;
-// Устанавливаем расстояние между колонками
-box.ColumnInfo.ColumnSpacing = "5";
+        text1.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+        // Create a graphs object to draw a line
+        var graph2 = new Aspose.Pdf.Drawing.Graph(50, 10);
+        // Specify the coordinates for the line
+        float[] posArr2 = new float[] { 1, 10, 100, 10 };
+        var line2 = new Aspose.Pdf.Drawing.Line(posArr2);
+        graph2.Shapes.Add(line2);
 
-box.ColumnInfo.ColumnWidths = "105 105";
-TextFragment text1 = new TextFragment("От Googler (Официальный блог Google)");
-text1.TextState.FontSize = 8;
-text1.TextState.LineSpacing = 2;
-box.Paragraphs.Add(text1);
-text1.TextState.FontSize = 10;
+        // Add the line to paragraphs collection of section object
+        box.Paragraphs.Add(graph2);
 
-text1.TextState.FontStyle = FontStyles.Italic;
-// Создаем объект графиков для рисования линии
-Aspose.Pdf.Drawing.Graph graph2 = new Aspose.Pdf.Drawing.Graph(50, 10);
-// Указываем координаты для линии
-float[] posArr2 = new float[] { 1, 10, 100, 10 };
-Aspose.Pdf.Drawing.Line l2 = new Aspose.Pdf.Drawing.Line(posArr2);
-graph2.Shapes.Add(l2);
+        var text2 = new Aspose.Pdf.Text.TextFragment(@"Sed augue tortor, sodales id, luctus et, pulvinar ut, eros. Suspendisse vel dolor. Sed quam. Curabitur ut massa vitae eros euismod aliquam. Pellentesque sit amet elit. Vestibulum interdum pellentesque augue. Cras mollis arcu sit amet purus. Donec augue. Nam mollis tortor a elit. Nulla viverra nisl vel mauris. Vivamus sapien. nascetur ridiculus mus. Nam justo lorem, aliquam luctus, sodales et, semper sed, enim Nam justo lorem, aliquam luctus, sodales et,nAenean posuere ante ut neque. Morbi sollicitudin congue felis. Praesent turpis diam, iaculis sed, pharetra non, mollis ac, mauris. Phasellus nisi ipsum, pretium vitae, tempor sed, molestie eu, dui. Duis lacus purus, tristique ut, iaculis cursus, tincidunt vitae, risus. Sed commodo. *** sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam justo lorem, aliquam luctus, sodales et, semper sed, enim Nam justo lorem, aliquam luctus, sodales et, semper sed, enim Nam justo lorem, aliquam luctus, sodales et, semper sed, enim nAenean posuere ante ut neque. Morbi sollicitudin congue felis. Praesent turpis diam, iaculis sed, pharetra non, mollis ac, mauris. Phasellus nisi ipsum, pretium vitae, tempor sed, molestie eu, dui. Duis lacus purus, tristique ut, iaculis cursus, tincidunt vitae, risus. Sed commodo. *** sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed urna. . Duis convallis ultrices nisi. Maecenas non ligula. Nunc nibh est, tincidunt in, placerat sit amet, vestibulum a, nulla. Praesent porttitor turpis eleifend ante. Morbi sodales.nAenean posuere ante ut neque. Morbi sollicitudin congue felis. Praesent turpis diam, iaculis sed, pharetra non, mollis ac, mauris. Phasellus nisi ipsum, pretium vitae, tempor sed, molestie eu, dui. Duis lacus purus, tristique ut, iaculis cursus, tincidunt vitae, risus. Sed commodo. *** sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed urna. . Duis convallis ultrices nisi. Maecenas non ligula. Nunc nibh est, tincidunt in, placerat sit amet, vestibulum a, nulla. Praesent porttitor turpis eleifend ante. Morbi sodales.");
+        box.Paragraphs.Add(text2);
 
-// Добавляем линию в коллекцию абзацев объекта раздела
-box.Paragraphs.Add(graph2);
+        page.Paragraphs.Add(box);
 
-TextFragment text2 = new TextFragment(@"Sed augue tortor, sodales id, luctus et, pulvinar ut, eros. Suspendisse vel dolor. Sed quam. Curabitur ut massa vitae eros euismod aliquam. Pellentesque sit amet elit. Vestibulum interdum pellentesque augue. Cras mollis arcu sit amet purus. Donec augue. Nam mollis tortor a elit. Nulla viverra nisl vel mauris. Vivamus sapien. nascetur ridiculus mus. Nam justo lorem, aliquam luctus, sodales et, semper sed, enim Nam justo lorem, aliquam luctus, sodales et,nAenean posuere ante ut neque. Morbi sollicitudin congue felis. Praesent turpis diam, iaculis sed, pharetra non, mollis ac, mauris. Phasellus nisi ipsum, pretium vitae, tempor sed, molestie eu, dui. Duis lacus purus, tristique ut, iaculis cursus, tincidunt vitae, risus. Sed commodo. *** sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam justo lorem, aliquam luctus, sodales et, semper sed, enim Nam justo lorem, aliquam luctus, sodales et, semper sed, enim Nam justo lorem, aliquam luctus, sodales et, semper sed, enim nAenean posuere ante ut neque. Morbi sollicitudin congue felis. Praesent turpis diam, iaculis sed, pharetra non, mollis ac, mauris. Phasellus nisi ipsum, pretium vitae, tempor sed, molestie eu, dui. Duis lacus purus, tristique ut, iaculis cursus, tincidunt vitae, risus. Sed commodo. *** sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed urna. . Duis convallis ultrices nisi. Maecenas non ligula. Nunc nibh est, tincidunt in, placerat sit amet, vestibulum a, nulla. Praesent porttitor turpis eleifend ante. Morbi sodales.nAenean posuere ante ut neque. Morbi sollicitudin congue felis. Praesent turpis diam, iaculis sed, pharetra non, mollis ac, mauris. Phasellus nisi ipsum, pretium vitae, tempor sed, molestie eu, dui. Duis lacus purus, tristique ut, iaculis cursus, tincidunt vitae, risus. Sed commodo. *** sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed urna. . Duis convallis ultrices nisi. Maecenas non ligula. Nunc nibh est, tincidunt in, placerat sit amet, vestibulum a, nulla. Praesent porttitor turpis eleifend ante. Morbi sodales.");
-box.Paragraphs.Add(text2);
-
-page.Paragraphs.Add(box);
-
-dataDir = dataDir + "CreateMultiColumnPdf_out.pdf";
-// Сохраняем файл PDF
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "CreateMultiColumnPdf_out.pdf");
+    }
+}
 ```
+
 ## Работа с пользовательскими табуляциями
 
-Табуляция - это точка остановки для табуляции. В текстовой обработке каждая строка содержит несколько точек табуляции, расположенных на регулярных интервалах (например, каждые полдюйма). Однако их можно изменить, поскольку большинство текстовых процессоров позволяют устанавливать табуляции там, где вы хотите. Когда вы нажимаете клавишу Tab, курсор или точка вставки перескакивает на следующую табуляцию, которая сама по себе невидима. Хотя табуляции не существуют в текстовом файле, текстовый процессор отслеживает их, чтобы правильно реагировать на клавишу Tab.
+Табуляция — это точка остановки для табуляции. В текстовых процессорах каждая строка содержит несколько табуляций, расположенных на равных интервалах (например, каждые полдюйма). Однако их можно изменить, так как большинство текстовых процессоров позволяют устанавливать табуляции в любом месте. Когда вы нажимаете клавишу Tab, курсор или точка вставки прыгает к следующей табуляции, которая сама по себе невидима. Хотя табуляции не существуют в текстовом файле, текстовый процессор отслеживает их, чтобы правильно реагировать на клавишу Tab.
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) позволяет разработчикам использовать пользовательские табуляции в документах PDF. Класс Aspose.Pdf.Text.TabStop используется для установки пользовательских ТАБ-остановок в классе [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) позволяет разработчикам использовать пользовательские табуляции в PDF-документах. Класс Aspose.Pdf.Text.TabStop используется для установки пользовательских табуляций в классе [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) также предлагает некоторые предопределенные типы табуляции как перечисление с именем TabLeaderType, значения и описания которых приведены ниже:
-[Aspose.PDF для .NET](https://docs.aspose.com/pdf/net/) также предлагает некоторые предопределенные типы табуляции в виде перечисления под названием TabLeaderType, значения и описания которых приведены ниже:
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) также предлагает некоторые предопределенные типы табуляции в виде перечисления под названием TabLeaderType, чьи предопределенные значения и их описания приведены ниже:
 
-|**Тип табулятора**|**Описание**|
+|**Тип табуляции**|**Описание**|
 | :- | :- |
-|None|Без табулятора|
-|Solid|Сплошная линия табулятора|
-|Dash|Пунктирная линия табулятора|
-|Dot|Точечная линия табулятора|
+|Нет|Нет табуляции|
+|Сплошная|Сплошная табуляция|
+|Штриховая|Штриховая табуляция|
+|Точечная|Точечная табуляция|
 
 Вот пример того, как установить пользовательские табуляции.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-Document _pdfdocument = new Document();
-Page page = _pdfdocument.Pages.Add();
-
-Aspose.Pdf.Text.TabStops ts = new Aspose.Pdf.Text.TabStops();
-Aspose.Pdf.Text.TabStop ts1 = ts.Add(100);
-ts1.AlignmentType = TabAlignmentType.Right;
-ts1.LeaderType = TabLeaderType.Solid;
-Aspose.Pdf.Text.TabStop ts2 = ts.Add(200);
-ts2.AlignmentType = TabAlignmentType.Center;
-ts2.LeaderType = TabLeaderType.Dash;
-Aspose.Pdf.Text.TabStop ts3 = ts.Add(300);
-ts3.AlignmentType = TabAlignmentType.Left;
-ts3.LeaderType = TabLeaderType.Dot;
-
-TextFragment header = new TextFragment("Это пример формирования таблицы с табуляциями", ts);
-TextFragment text0 = new TextFragment("#$TABHead1 #$TABHead2 #$TABHead3", ts);
-
-TextFragment text1 = new TextFragment("#$TABdata11 #$TABdata12 #$TABdata13", ts);
-TextFragment text2 = new TextFragment("#$TABdata21 ", ts);
-text2.Segments.Add(new TextSegment("#$TAB"));
-text2.Segments.Add(new TextSegment("data22 "));
-text2.Segments.Add(new TextSegment("#$TAB"));
-text2.Segments.Add(new TextSegment("data23"));
-
-page.Paragraphs.Add(header);
-page.Paragraphs.Add(text0);
-page.Paragraphs.Add(text1);
-page.Paragraphs.Add(text2);
-
-dataDir = dataDir + "CustomTabStops_out.pdf";
-_pdfdocument.Save(dataDir);
-```
-## Как добавить прозрачный текст в PDF
-
-Файл PDF содержит объекты изображений, текста, графиков, вложений, аннотаций, и при создании TextFragment вы можете установить информацию о переднем и фоновом цвете, а также форматирование текста. Aspose.PDF для .NET поддерживает функцию добавления текста с альфа-каналом цвета. Следующий фрагмент кода показывает, как добавить текст с прозрачным цветом.
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Создать экземпляр документа
-Document doc = new Document();
-// Создать страницу в коллекции страниц PDF файла
-Aspose.Pdf.Page page = doc.Pages.Add();
-
-// Создать объект Graph
-Aspose.Pdf.Drawing.Graph canvas = new Aspose.Pdf.Drawing.Graph(100, 400);
-// Создать экземпляр прямоугольника с определенными размерами
-Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(100, 100, 400, 400);
-// Создать объект цвета из альфа-канала цвета
-rect.GraphInfo.FillColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.FromArgb(128, System.Drawing.Color.FromArgb(12957183)));
-// Добавить прямоугольник в коллекцию форм объекта Graph
-canvas.Shapes.Add(rect);
-// Добавить объект графика в коллекцию параграфов объекта страницы
-page.Paragraphs.Add(canvas);
-// Установить значение, чтобы не изменять позицию для объекта графика
-canvas.IsChangePosition = false;
-
-// Создать экземпляр TextFragment с примером значения
-TextFragment text = new TextFragment("прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст прозрачный текст ");
-// Создать объект цвета из альфа-канала
-Aspose.Pdf.Color color = Aspose.Pdf.Color.FromArgb(30, 0, 255, 0);
-// Установить информацию о цвете для экземпляра текста
-text.TextState.ForegroundColor = color;
-// Добавить текст в коллекцию параграфов экземпляра страницы
-page.Paragraphs.Add(text);
-
-dataDir = dataDir + "AddTransparentText_out.pdf";
-doc.Save(dataDir);
-```
-## Указать межстрочный интервал для шрифтов
-
-Каждый шрифт имеет абстрактный квадрат, высота которого является предполагаемым расстоянием между строками текста одного и того же размера шрифта.
-Каждый шрифт имеет абстрактный квадрат, высота которого предназначена для расстояния между строками текста того же размера.
-
-```csharp
-// Для получения полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-string fontFile = dataDir + "HPSimplified.TTF";
-// Загрузить входной PDF файл
-Document doc = new Document();
-// Создать TextFormattingOptions с LineSpacingMode.FullSize
-TextFormattingOptions formattingOptions = new TextFormattingOptions();
-formattingOptions.LineSpacing = TextFormattingOptions.LineSpacingMode.FullSize;
-
-// Создать объект строителя текста для первой страницы документа
-//TextBuilder textBuilder = new TextBuilder(doc.Pages[1]);
-// Создать текстовый фрагмент с образцом строки
-TextFragment textFragment = new TextFragment("Привет мир");
-
-if (fontFile != "")
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CustomTabStops()
 {
-    // Загрузить шрифт TrueType в объект потока
-    using (FileStream fontStream = System.IO.File.OpenRead(fontFile))
-    {
-        // Установить имя шрифта для текстовой строки
-        textFragment.TextState.Font = FontRepository.OpenFont(fontStream, FontTypes.TTF);
-        // Указать позицию для текстового фрагмента
-        textFragment.Position = new Position(100, 600);
-        // Установить TextFormattingOptions текущего фрагмента на предопределенный (указывающий на LineSpacingMode.FullSize)
-        textFragment.TextState.FormattingOptions = formattingOptions;
-        // Добавить текст в TextBuilder, чтобы он мог быть размещен на PDF файле
-        //textBuilder.AppendText(textFragment);
-        var page = doc.Pages.Add();
-        page.Paragraphs.Add(textFragment);
-    }
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    dataDir = dataDir + "SpecifyLineSpacing_out.pdf";
-    // Сохранить результирующий PDF документ
-    doc.Save(dataDir);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+
+        var tabStops = new Aspose.Pdf.Text.TabStops();
+        var tabStop1 = tabStops.Add(100);
+        tabStop1.AlignmentType = Aspose.Pdf.Text.TabAlignmentType.Right;
+        tabStop1.LeaderType = Aspose.Pdf.Text.TabLeaderType.Solid;
+
+        var tabStop2 = tabStops.Add(200);
+        tabStop2.AlignmentType = Aspose.Pdf.Text.TabAlignmentType.Center;
+        tabStop2.LeaderType = Aspose.Pdf.Text.TabLeaderType.Dash;
+
+        var tabStop3 = tabStops.Add(300);
+        tabStop3.AlignmentType = Aspose.Pdf.Text.TabAlignmentType.Left;
+        tabStop3.LeaderType = Aspose.Pdf.Text.TabLeaderType.Dot;
+
+        var header = new Aspose.Pdf.Text.TextFragment("This is a example of forming table with TAB stops", tabStops);
+        var text0 = new Aspose.Pdf.Text.TextFragment("#$TABHead1 #$TABHead2 #$TABHead3", tabStops);
+        var text1 = new Aspose.Pdf.Text.TextFragment("#$TABdata11 #$TABdata12 #$TABdata13", tabStops);
+        var text2 = new Aspose.Pdf.Text.TextFragment("#$TABdata21 ", tabStops);
+        text2.Segments.Add(new Aspose.Pdf.Text.TextSegment("#$TAB"));
+        text2.Segments.Add(new Aspose.Pdf.Text.TextSegment("data22 "));
+        text2.Segments.Add(new Aspose.Pdf.Text.TextSegment("#$TAB"));
+        text2.Segments.Add(new Aspose.Pdf.Text.TextSegment("data23"));
+
+        // Add text fragments to page
+        page.Paragraphs.Add(header);
+        page.Paragraphs.Add(text0);
+        page.Paragraphs.Add(text1);
+        page.Paragraphs.Add(text2);
+
+        // Save PDF document
+        document.Save(dataDir + "CustomTabStops_out.pdf");
+    }
 }
 ```
-## Динамическое определение ширины текста
 
-Иногда требуется динамически получить ширину текста. Aspose.PDF для .NET включает два метода для измерения ширины строки. Вы можете вызвать метод [MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) классов Aspose.Pdf.Text.Font или Aspose.Pdf.Text.TextState (или обоих). Ниже приведен пример кода, который показывает, как использовать эту функциональность.
+## Как добавить прозрачный текст в PDF
+
+PDF-файл содержит объекты изображений, текста, графиков, вложений, аннотаций, и при создании TextFragment вы можете установить информацию о переднем и заднем фоне, а также форматирование текста. Aspose.PDF for .NET поддерживает возможность добавления текста с альфа-каналом цвета. Следующий фрагмент кода показывает, как добавить текст с прозрачным цветом.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-Aspose.Pdf.Text.Font font = FontRepository.FindFont("Arial");
-TextState ts = new TextState();
-ts.Font = font;
-ts.FontSize = 14;
-
-if (Math.Abs(font.MeasureString("A", 14) - 9.337) > 0.001)
-    Console.WriteLine("Неожиданное измерение ширины строки шрифта!");
-
-if (Math.Abs(ts.MeasureString("z") - 7.0) > 0.001)
-    Console.WriteLine("Неожиданное измерение ширины строки шрифта!");
-
-for (char c = 'A'; c <= 'z'; c++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTransparentText()
 {
-    double fnMeasure = font.MeasureString(c.ToString(), 14);
-    double tsMeasure = ts.MeasureString(c.ToString());
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    if (Math.Abs(fnMeasure - tsMeasure) > 0.001)
-        Console.WriteLine("Измерение ширины строки шрифта и состояния не совпадают!");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Create page to pages collection of PDF file
+        var page = document.Pages.Add();
+
+        // Create Graph object
+        var canvas = new Aspose.Pdf.Drawing.Graph(100, 400);
+        // Create rectangle instance with certain dimensions
+        var rect = new Aspose.Pdf.Drawing.Rectangle(100, 100, 400, 400);
+        // Create color object from Alpha color channel
+        rect.GraphInfo.FillColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.FromArgb(128, System.Drawing.Color.FromArgb(12957183)));
+        // Add rectanlge to shapes collection of Graph object
+        canvas.Shapes.Add(rect);
+        // Add graph object to paragraphs collection of page object
+        page.Paragraphs.Add(canvas);
+        // Set value to not change position for graph object
+        canvas.IsChangePosition = false;
+
+        // Create TextFragment instance with sample value
+        var text = new Aspose.Pdf.Text.TextFragment("transparent text transparent text transparent text transparent text transparent text transparent text transparent text transparent text transparent text transparent text transparent text transparent text transparent text transparent text transparent text transparent text ");
+        // Create color object from Alpha channel
+        Aspose.Pdf.Color color = Aspose.Pdf.Color.FromArgb(30, 0, 255, 0);
+        // Set color information for text instance
+        text.TextState.ForegroundColor = color;
+        // Add text to paragraphs collection of page instance
+        page.Paragraphs.Add(text);
+
+        // Save PDF document
+        document.Save(dataDir + "AddTransparentText_out.pdf");
+    }
+}
+```
+
+## Укажите межстрочное расстояние для шрифтов
+
+Каждый шрифт имеет абстрактный квадрат, высота которого является предполагаемым расстоянием между строками текста одного и того же размера. Этот квадрат называется квадратом em, и это проектная сетка, на которой определяются контуры глифов. Многие буквы входного шрифта имеют точки, которые расположены за пределами границ квадрата em шрифта, поэтому для правильного отображения шрифта требуется использование специальной настройки. Объект TextFragment имеет набор параметров форматирования текста, которые доступны через свойства TextState.FormattingOptions. Последнее свойство этого пути — это свойство типа Aspose.Pdf.Text.TextFormattingOptions. Этот класс имеет перечисление [LineSpacingMode](https://reference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode), которое предназначено для конкретных шрифтов, например, входного шрифта "HPSimplified.ttf". Также класс [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) имеет свойство [LineSpacing](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) типа LineSpacingMode. Вам просто нужно установить LineSpacing в LineSpacingMode.FullSize. Фрагмент кода для правильного отображения шрифта будет выглядеть следующим образом:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SpecifyLineSpacing()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    string fontFile = dataDir + "HPSimplified.TTF";
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        //Create TextFormattingOptions with LineSpacingMode.FullSize
+        var formattingOptions = new Aspose.Pdf.Text.TextFormattingOptions();
+        formattingOptions.LineSpacing = Aspose.Pdf.Text.TextFormattingOptions.LineSpacingMode.FullSize;
+
+        // Create text builder object for first page of document
+        //TextBuilder textBuilder = new TextBuilder(document.Pages[1]);
+        // Create text fragment with sample string
+        var textFragment = new Aspose.Pdf.Text.TextFragment("Hello world");
+
+        if (fontFile != "")
+        {
+            // Load the TrueType font into stream object
+            using (FileStream fontStream = File.OpenRead(fontFile))
+            {
+                // Set the font name for text string
+                textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.OpenFont(fontStream, Aspose.Pdf.Text.FontTypes.TTF);
+                // Specify the position for Text Fragment
+                textFragment.Position = new Aspose.Pdf.Text.Position(100, 600);
+                //Set TextFormattingOptions of current fragment to predefined(which points to LineSpacingMode.FullSize)
+                textFragment.TextState.FormattingOptions = formattingOptions;
+                // Add the text to TextBuilder so that it can be placed over the PDF file
+                //textBuilder.AppendText(textFragment);
+                var page = document.Pages.Add();
+                page.Paragraphs.Add(textFragment);
+            }
+
+            // Save PDF document
+            document.Save(dataDir + "SpecifyLineSpacing_out.pdf");
+        }
+    }
+}
+```
+
+## Получение ширины текста динамически
+
+Иногда требуется получить ширину текста динамически. Aspose.PDF for .NET включает два метода для измерения ширины строки. Вы можете вызвать метод [MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) классов Aspose.Pdf.Text.Font или Aspose.Pdf.Text.TextState (или оба). Следующий фрагмент кода показывает, как использовать эту функциональность.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetTextWidthDynamically()
+{            
+    var font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+    var textState = new Aspose.Pdf.Text.TextState();
+    textState.Font = font;
+    textState.FontSize = 14;
+
+    if (Math.Abs(font.MeasureString("A", 14) - 9.337) > 0.001)
+    {
+        Console.WriteLine("Unexpected font string measure!");
+    }
+
+    if (Math.Abs(textState.MeasureString("z") - 7.0) > 0.001)
+    {
+        Console.WriteLine("Unexpected font string measure!");
+    }
+
+    for (char c = 'A'; c <= 'z'; c++)
+    {
+        double fontMeasure = font.MeasureString(c.ToString(), 14);
+        double textStateMeasure = textState.MeasureString(c.ToString());
+
+        if (Math.Abs(fontMeasure - textStateMeasure) > 0.001)
+        {
+            Console.WriteLine("Font and state string measuring doesn't match!");
+        }
+    }
 }
 ```
 
@@ -893,7 +1031,7 @@ for (char c = 'A'; c <= 'z'; c++)
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для .NET библиотеки",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -915,21 +1053,21 @@ for (char c = 'A'; c <= 'z'; c++)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -940,7 +1078,7 @@ for (char c = 'A'; c <= 'z'; c++)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -952,5 +1090,3 @@ for (char c = 'A'; c <= 'z'; c++)
     }
 }
 </script>
-```
-

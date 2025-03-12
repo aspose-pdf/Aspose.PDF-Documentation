@@ -1,18 +1,19 @@
 ---
 title: PdfFileSecurity Class
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 125
 url: /fr/net/pdffilesecurity-class/
-description: Cette section explique comment travailler avec Aspose.PDF Facades en utilisant la classe PdfFileSecurity.
+description: Apprenez à sécuriser les documents PDF en appliquant le chiffrement, des signatures numériques et des contrôles d'accès à l'aide de la classe PDFFileSecurity dans .NET.
 lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
-- [Crypter un fichier PDF](/pdf/fr/net/encrypt-pdf-file/)
-- [Décrypter un fichier PDF](/pdf/fr/net/decrypt-pdf-file/)
-- [Contrôler une exception de fichier PDF](/pdf/fr/net/control-exception/)
+- [Chiffrer un fichier PDF](/pdf/fr/net/encrypt-pdf-file/)
+- [Déchiffrer un fichier PDF](/pdf/fr/net/decrypt-pdf-file/)
+- [Contrôler un fichier PDF d'exception](/pdf/fr/net/control-exception/)
 - [Changer le mot de passe d'un fichier PDF](/pdf/fr/net/change-password/)
-- [Définir les privilèges sur un fichier PDF existant](/pdf/fr/net/set-privileges/)
+- [Définir des privilèges sur un fichier PDF existant](/pdf/fr/net/set-privileges/)

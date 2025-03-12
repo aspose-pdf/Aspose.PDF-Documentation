@@ -2,6 +2,8 @@
 title: Edit PDF File Tags
 linktitle: Edit Tags
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/edit-pdf-file-tags/
 description: This article explains how to edit tags in the PDF documents using Aspose.PDF for .NET library.

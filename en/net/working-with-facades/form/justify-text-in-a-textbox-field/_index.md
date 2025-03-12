@@ -1,6 +1,8 @@
 ---
 title: Justify Text in a Textbox Field
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/justify-text-in-a-textbox-field/
 description: This article shows you how to Justify Text in a Textbox Field using Form Class.

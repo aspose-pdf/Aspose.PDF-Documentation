@@ -1,6 +1,8 @@
 ---
 title: Adding multi line watermark 
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/adding-multi-line-watermark-to-existing-pdf/
 description: This section explains how to add multi line watermark to existing PDF using FormattedText Class.

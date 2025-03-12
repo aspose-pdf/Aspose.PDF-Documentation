@@ -2,6 +2,8 @@
 title: Extract Text from PDF C#
 linktitle: Extract Text from PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/extract-text-from-all-pdf/
 description: This article describes various ways to extract text from PDF documents using Aspose.PDF in C#. 

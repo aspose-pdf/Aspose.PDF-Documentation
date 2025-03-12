@@ -2,6 +2,8 @@
 title: Extract Images from PDF File
 linktitle: Extract Images
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/extract-images-from-pdf-file/
 description: This section shows how to extract images from PDF file using C# library.

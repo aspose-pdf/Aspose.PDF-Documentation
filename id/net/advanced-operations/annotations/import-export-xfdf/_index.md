@@ -2,9 +2,11 @@
 title: Impor dan Ekspor Anotasi ke XFDF
 linktitle: Impor dan Ekspor Anotasi ke XFDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /id/net/import-export-xfdf/
-description: Anda dapat mengimpor dan mengekspor anotasi dalam format XFDF dengan C# dan perpustakaan Aspose.PDF untuk .NET.
+description: Anda dapat mengimpor dan mengekspor anotasi dengan format XFDF menggunakan C# dan pustaka Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Impor dan Ekspor Anotasi ke XFDF",
-    "alternativeHeadline": "Metode untuk mengimpor dan mengekspor data anotasi ke file XFDF",
+    "headline": "Import and Export Annotations to XFDF",
+    "alternativeHeadline": "Effortless XFDF Annotation Import and Export",
+    "abstract": "Fungsi impor dan ekspor baru untuk XFDF dalam pustaka Aspose.PDF for .NET meningkatkan manajemen dokumen PDF dengan memungkinkan transfer data anotasi yang mulus. Fitur ini memungkinkan pengguna untuk dengan mudah mengintegrasikan anotasi dari file XFDF dan mengekspornya kembali, mempromosikan pertukaran data yang efisien dan kemampuan pengarsipan untuk formulir PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, impor ekspor ke XFDF",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Import Annotations, Export Annotations, XFDF Format, Aspose.PDF for .NET, PdfAnnotationEditor, ImportAnnotationFromXfdf, ExportAnnotationsXfdf, PDF Forms Manipulation",
+    "wordcount": "670",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,116 +74,114 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/import-export-xfdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Anda dapat mengimpor dan mengekspor anotasi dalam format XFDF dengan C# dan perpustakaan Aspose.PDF untuk .NET."
+    "dateModified": "2024-11-25",
+    "description": "Anda dapat mengimpor dan mengekspor anotasi dengan format XFDF menggunakan C# dan pustaka Aspose.PDF for .NET."
 }
 </script>
 
 {{% alert color="primary" %}}
 
-XFDF adalah singkatan dari XML Forms Data Format. Ini adalah format file berbasis XML. Format file ini digunakan untuk merepresentasikan data formulir atau anotasi yang terkandung dalam formulir PDF. XFDF dapat digunakan untuk berbagai tujuan, namun dalam kasus kita, dapat digunakan untuk mengirim atau menerima data formulir atau anotasi ke komputer atau server lain, atau dapat digunakan untuk mengarsipkan data formulir atau anotasi. Dalam artikel ini, kita akan melihat bagaimana Aspose.Pdf.Facades telah mempertimbangkan konsep ini dan bagaimana kita dapat mengimpor dan mengekspor data anotasi ke file XFDF.
+XFDF adalah singkatan dari XML Forms Data Format. Ini adalah format file berbasis XML. Format file ini digunakan untuk merepresentasikan data formulir atau anotasi yang terdapat dalam formulir PDF. XFDF dapat digunakan untuk berbagai tujuan yang berbeda, tetapi dalam kasus kami, dapat digunakan untuk mengirim atau menerima data formulir atau anotasi ke komputer atau server lain, atau dapat digunakan untuk mengarsipkan data formulir atau anotasi. Dalam artikel ini, kita akan melihat bagaimana Aspose.Pdf.Facades mempertimbangkan konsep ini dan bagaimana kita dapat mengimpor dan mengekspor data anotasi ke file XFDF.
 
 {{% /alert %}}
 
-**Aspose.PDF for .NET** adalah komponen yang kaya fitur dalam hal mengedit dokumen PDF. Seperti kita ketahui XFDF adalah aspek penting dari manipulasi formulir PDF, namespace Aspose.Pdf.Facades di Aspose.PDF for .NET telah mempertimbangkan ini dengan sangat baik, dan telah menyediakan metode untuk mengimpor dan mengekspor data anotasi ke file XFDF.
+**Aspose.PDF for .NET** adalah komponen kaya fitur ketika datang untuk mengedit dokumen PDF. Seperti yang kita ketahui, XFDF adalah aspek penting dari manipulasi formulir PDF, namespace Aspose.Pdf.Facades dalam Aspose.PDF for .NET telah mempertimbangkan ini dengan baik, dan telah menyediakan metode untuk mengimpor dan mengekspor data anotasi ke file XFDF.
 
-Kelas [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) berisi dua metode untuk bekerja dengan impor dan ekspor anotasi ke file XFDF.
-Kelas [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) berisi dua metode untuk bekerja dengan impor dan ekspor anotasi ke file XFDF.
+Kelas [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) berisi dua metode untuk bekerja dengan impor dan ekspor anotasi ke file XFDF. Metode [ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) menyediakan fungsionalitas untuk mengekspor anotasi dari dokumen PDF ke file XFDF, sementara metode [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) memungkinkan Anda untuk mengimpor anotasi dari file XFDF yang ada. Untuk mengimpor atau mengekspor anotasi, kita perlu menentukan jenis anotasi. Kita dapat menentukan jenis ini dalam bentuk enumerasi dan kemudian mengoper enumerasi ini sebagai argumen ke salah satu metode ini. Dengan cara ini, anotasi dari jenis yang ditentukan hanya akan diimpor atau diekspor ke file XFDF.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Potongan kode berikut menunjukkan cara mengekspor anotasi ke file XFDF:
+Potongan kode berikut menunjukkan kepada Anda bagaimana mengekspor anotasi ke file XFDF:
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using Aspose.Pdf.Facades;
-using System.IO;
-
-namespace Aspose.Pdf.Examples.Advanced
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportAnnotationsToXfdf()
 {
-    class ExampleAnnotationImportExport
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Create PdfAnnotationEditor object
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
-        // Jalur ke direktori dokumen.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        /// <summary>
-        /// Mengimpor anotasi dari file XFDF
-        /// File Format Data Formulir XML (XFDF) dibuat oleh Adobe Acrobat, aplikasi pembuat PDF;
-        /// menyimpan deskripsi elemen formulir halaman dan nilai-nilainya, seperti nama dan nilai untuk
-        /// bidang teks; digunakan untuk menyimpan data formulir yang dapat diimpor ke dalam dokumen PDF.
-        /// Anda dapat mengimpor data anotasi dari file XFDF ke PDF menggunakan
-        /// metode ImportAnnotationsFromXfdf di kelas PdfAnnotationEditor.
-        /// </summary>       
+        // Bind PDF document
+        annotationEditor.BindPdf(dataDir + "AnnotationDemo1.pdf");
 
-        public static void ExportAnnotationXFDF()
+        // Define the annotation types to export
+        var annotType = new Aspose.Pdf.Annotations.AnnotationType[] { Aspose.Pdf.Annotations.AnnotationType.Line, Aspose.Pdf.Annotations.AnnotationType.Square };
+
+        // Export annotations to XFDF file
+        using (var fileStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
         {
-            // Buat objek PdfAnnotationEditor
-            PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-
-            // Mengikat dokumen PDF ke Editor Anotasi
-            AnnotationEditor.BindPdf(Path.Combine(_dataDir, "AnnotationDemo1.pdf"));
-
-            // Ekspor anotasi
-            var fileStream = File.OpenWrite(Path.Combine(_dataDir, "exportannotations.xfdf"));
-            var annotType = new AnnotationType[] { AnnotationType.Line, AnnotationType.Square };
-            AnnotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
+            annotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
             fileStream.Flush();
-            fileStream.Close();
         }
-        //...
     }
 }
 ```
-Potongan kode berikut menggambarkan cara mengimpor anotasi ke file XFDF:
+
+Potongan kode berikut menjelaskan bagaimana mengimpor anotasi dari file XFDF:
 
 ```csharp
-public static void ImportAnnotationXFDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportAnnotationFromXfdf()
 {
-    // Buat objek PdfAnnotationEditor
-    PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-    // Buat dokumen PDF baru
-    var document = new Document();
-    document.Pages.Add();
-    AnnotationEditor.BindPdf(document);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
-    if (!File.Exists(exportFileName))
-        ExportAnnotationXFDF();
+    // Create PdfAnnotationEditor object
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+    {
+        // Create PDF document
+        using (var document = new Aspose.Pdf.Document())
+        {
+            // Add page
+            var page = document.Pages.Add();
 
-    // Impor anotasi
-    AnnotationEditor.ImportAnnotationsFromXfdf(exportFileName);
+            // Bind PDF document
+            annotationEditor.BindPdf(document);
 
-    // Simpan PDF keluaran
-    document.Save(Path.Combine(_dataDir, "AnnotationDemo2.pdf"));
+            // Define the export file name
+            var exportFileName = dataDir + "exportannotations.xfdf";
+
+            // Import annotations from the XFDF file
+            annotationEditor.ImportAnnotationsFromXfdf(exportFileName);
+
+            // Save PDF document
+            document.Save(dataDir + "ImportAnnotationFromXfdf_out.pdf");
+        }
+    }
 }
 ```
 
-## Cara lain untuk ekspor/impor anotasi sekaligus
+## Cara lain untuk mengekspor/mengimpor anotasi sekaligus
 
-Pada kode di bawah ini, metode ImportAnnotations memungkinkan impor anotasi langsung dari dokumen PDF lain.
+Dalam kode di bawah ini, metode ImportAnnotations memungkinkan mengimpor anotasi langsung dari dokumen PDF lain.
 
 ```csharp
-        /// <summary>
-        /// Metode ImportAnnotations memungkinkan impor anotasi langsung dari dokumen PDF lain
-        /// </summary>
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportAnnotationFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-        public static void ImportAnnotationFromPDF()
+    // Open PDF document
+    using (var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf"))
+    {
+        // Create PDF document
+        using (var documentTo = new Aspose.Pdf.Document())
         {
-            // Buat objek PdfAnnotationEditor
-            PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-            // Buat dokumen PDF baru
-            var document = new Document();
-            document.Pages.Add();
-            AnnotationEditor.BindPdf(document);
-            var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
-            if (!File.Exists(exportFileName))
-                ExportAnnotationXFDF();
+            // Add page
+            var page = documentTo.Pages.Add();
 
-            // Annotation Editor memungkinkan impor anotasi dari beberapa dokumen PDF,
-            // tetapi dalam contoh ini, kita hanya menggunakan satu.
-            AnnotationEditor.ImportAnnotations(new[] { Path.Combine(_dataDir, "AnnotationDemo1.pdf") });
+            // Export/import
+            using (var ms = new MemoryStream())
+            {
+                documentFrom.ExportAnnotationsToXfdf(ms);
+                documentTo.ImportAnnotationsFromXfdf(ms);
+            }
 
-            // Simpan PDF keluaran
-            document.Save(Path.Combine(_dataDir, "AnnotationDemo3.pdf"));
+            // Save PDF document
+            documentTo.Save(dataDir + "AnnotationDemo3_out.pdf");
         }
     }
 }
@@ -190,7 +191,7 @@ Pada kode di bawah ini, metode ImportAnnotations memungkinkan impor anotasi lang
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Perpustakaan Aspose.PDF untuk .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -212,21 +213,21 @@ Pada kode di bawah ini, metode ImportAnnotations memungkinkan impor anotasi lang
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -237,7 +238,7 @@ Pada kode di bawah ini, metode ImportAnnotations memungkinkan impor anotasi lang
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -249,5 +250,3 @@ Pada kode di bawah ini, metode ImportAnnotations memungkinkan impor anotasi lang
     }
 }
 </script>
-```
-

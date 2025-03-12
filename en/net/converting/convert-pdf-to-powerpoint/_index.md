@@ -2,6 +2,8 @@
 title: Convert PDF to PowerPoint in .NET
 linktitle: Convert PDF to PowerPoint
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/convert-pdf-to-powerpoint/
 lastmod: "2021-11-01"

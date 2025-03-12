@@ -2,6 +2,8 @@
 title: Working with Image Placement
 linktitle: Working with Image Placement
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/working-with-image-placement/
 description: This section describes the features of working with image placement PDF file using C# library.

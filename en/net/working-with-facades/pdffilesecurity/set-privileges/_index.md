@@ -1,6 +1,8 @@
 ---
 title: Set Privileges on PDF 
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/set-privileges/
 description: Discover how to modify user privileges in PDF files, restricting certain actions using Aspose.PDF in .NET.

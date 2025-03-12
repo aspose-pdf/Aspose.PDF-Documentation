@@ -2,6 +2,8 @@
 title: Why Aspose.PDF
 linktitle: Why Aspose.PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/why-aspose-pdf/
 description: In the next section explain why users choose Aspose.PDF for .NET to work with documents.

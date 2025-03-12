@@ -2,6 +2,8 @@
 title: Find whether PDF contains images or text
 linktitle: Check presence text and images
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/find-whether-pdf-file-contains-images-or-text-only/
 description: This topic explain how to find whether PDF file contains images or text only with PdfExtractor Class.

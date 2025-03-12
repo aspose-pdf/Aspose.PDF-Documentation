@@ -2,6 +2,8 @@
 title: PDF AI Copilot
 linktitle: PDF AI Copilot
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 150
 url: /net/ai-copilot/
 description: This article describes how AI Copilot can be used to process the PDF document with Aspose.PDF library.

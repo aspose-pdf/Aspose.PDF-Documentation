@@ -2,6 +2,8 @@
 title: Add PDF Page Stamps in PDF using C#
 linktitle: Page stamps in PDF File
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/page-stamps-in-the-pdf-file/
 description: Add a page stamp to a PDF document using the PdfPageStamp class with Aspose.PDF for .NET library.
