@@ -1,10 +1,12 @@
 ---
-title: C#でPDFページを操作する
+title: C#でのPDFページの操作
 linktitle: ページの操作
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/working-with-pages/
-description: このセクションでは、ページの追加、ヘッダーとフッターの追加、ウォーターマークの追加方法について説明します。Aspose.PDF for .NETがこのトピックに関するすべての詳細を説明します。
+description: このセクションでは、ページの追加、ヘッダーとフッターの追加、透かしの追加方法について説明します。Aspose.PDF for .NETがこのトピックのすべての詳細を説明します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "C#でPDFページを操作する",
-    "alternativeHeadline": "PDFページの操作方法",
+    "headline": "Working with PDF Pages in C#",
+    "alternativeHeadline": "Enhance PDF Management with C# Page Features",
+    "abstract": "ページの追加、移動、削除を正確に行うためのAspose.PDF for .NETの高度な機能を発見してください。この機能により、ユーザーはヘッダー、フッター、透かし、カスタムページサイズを直感的なC#コードを通じてPDF文書に組み込むことができます。シームレスなPDF操作とカスタマイズ機能で文書ワークフローを最適化します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pdfドキュメント生成",
-    "keywords": "pdf, c#, pdfページ, pdfページ追加, ページ番号追加, ページ回転, ページ削除",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "wordcount": "450",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDFドキュメントチーム",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,32 +73,31 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このセクションでは、ページの追加、ヘッダーとフッターの追加、ウォーターマークの追加方法について説明します。Aspose.PDF for .NETがこのトピックに関するすべての詳細を説明します。"
+    "dateModified": "2024-11-26",
+    "description": "このセクションでは、ページの追加、ヘッダーとフッターの追加、透かしの追加方法について説明します。Aspose.PDF for .NETがこのトピックのすべての詳細を説明します。"
 }
 </script>
-**Aspose.PDF for .NET** は、ファイル内の任意の位置にPDFドキュメントにページを挿入するだけでなく、PDFファイルの最後にページを追加することができます。このセクションでは、Acrobat ReaderなしでPDFにページを追加する方法を示します。
-PDFファイルのヘッダーとフッターにテキストまたは画像を追加し、AsposeによるC#ライブラリでドキュメントの異なるヘッダーを選択できます。
-また、C#を使用してPDFドキュメントのページをプログラムでトリミングしてみてください。
+
+**Aspose.PDF for .NET** は、PDF文書の任意の位置にページを挿入したり、PDFファイルの末尾にページを追加したりできます。このセクションでは、Acrobat Readerを使用せずにPDFにページを追加する方法を示します。
+PDFファイルのヘッダーとフッターにテキストや画像を追加し、AsposeのC#ライブラリを使用して文書内で異なるヘッダーを選択できます。
+また、C#を使用してプログラム的にPDF文書のページをトリミングすることも試みてください。
 
 このセクションでは、Artifactクラスを使用してPDFファイルに透かしを追加する方法を学びます。このタスクのプログラミングサンプルを確認します。
-PageNumberStampクラスを使用してページ番号を追加します。ドキュメントにスタンプを追加するには、ImageStampクラスとTextStampクラスを使用します。**Aspose.PDF for .NET**を使用してPDFファイルに背景画像を作成するために透かしを追加してください。
+PageNumberStampクラスを使用してページ番号を追加します。文書にスタンプを追加するには、ImageStampおよびTextStampクラスを使用します。**Aspose.PDF for .NET**を使用してPDFファイルに背景画像を作成するための透かしを追加します。
 
-以下の操作が可能です：
+以下のことができます：
 
-- [ページを追加する](/pdf/ja/net/add-pages/) - 望ましい位置にページを追加するか、PDFファイルの最後にページを追加し、ドキュメントからページを削除します。
-- [ページを移動する](/pdf/ja/net/move-pages/) - 一つのドキュメントから別のドキュメントへページを移動します。
-- [ページの移動](/pdf/ja/net/move-pages/) - あるドキュメントから別のドキュメントへページを移動します。
-- [ページの削除](/pdf/ja/net/delete-pages/) - PageCollection コレクションを使用してPDFファイルからページを削除します。
-- [ページサイズの変更](/pdf/ja/net/change-page-size/) - Aspose.PDF ライブラリを使用したコードスニペットでPDFページのサイズを変更できます。
-- [ページの回転](/pdf/ja/net/rotate-pages/) - 既存のPDFファイルのページの向きを変更できます。
-- [ページの分割](/pdf/ja/net/split-document/) - PDFファイルを一つまたは複数のPDFに分割できます。
-- [ヘッダーおよび/またはフッターの追加](/pdf/ja/net/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーやフッターにテキストや画像を追加します。
-- [ページのトリミング](/pdf/ja/net/crop-pages/) - 異なるページプロパティを使用してPDFドキュメントのページをプログラムでトリミングできます。
-- [ウォーターマークの追加](/pdf/ja/net/add-watermarks/) - Artifact Class を使用してPDFファイルにウォーターマークを追加します。
+- [ページを追加](/pdf/ja/net/add-pages/) - 希望の位置にページを追加したり、PDFファイルの末尾に追加したり、文書からページを削除します。
+- [ページを移動](/pdf/ja/net/move-pages/) - 1つの文書から別の文書にページを移動します。
+- [ページを削除](/pdf/ja/net/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
+- [ページサイズを変更](/pdf/ja/net/change-page-size/) - Aspose.PDFライブラリを使用してコードスニペットでPDFページサイズを変更できます。
+- [ページを回転](/pdf/ja/net/rotate-pages/) - 既存のPDFファイル内のページの向きを変更できます。
+- [ページを分割](/pdf/ja/net/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
+- [ヘッダーおよび/またはフッターを追加](/pdf/ja/net/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
+- [ページをトリミング](/pdf/ja/net/crop-pages/) - 異なるページプロパティを使用してプログラム的にPDF文書のページをトリミングできます。
+- [透かしを追加](/pdf/ja/net/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
 - [PDFファイルにページ番号を追加](/pdf/ja/net/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加します。
-- [PDFファイルにページ番号を追加する](/pdf/ja/net/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加できます。
-- [背景を追加する](/pdf/ja/net/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
+- [背景を追加](/pdf/ja/net/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
 - [スタンピング](/pdf/ja/net/stamping/) - ImageStampクラスを使用してPDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
 
 <script type="application/ld+json">
@@ -162,4 +163,3 @@ PageNumberStampクラスを使用してページ番号を追加します。ド�
     }
 }
 </script>
-

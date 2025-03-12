@@ -1,40 +1,149 @@
 ---
 title: 导入和导出表单字段
 type: docs
-weight: 60
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 80
 url: /zh/net/import-export-form-field/
-description: 使用 Aspose.PDF for .NET 的 FormEditor 类通过 DataTable 填写表单字段
+description: 使用 FormEditor 类通过 DataTable 填充表单字段 Aspose.PDF for .NET
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Import and Export Form Field",
+    "alternativeHeadline": "Streamline PDF Form Management with Import/Export Features",
+    "abstract": "Aspose.PDF for .NET 中的导入和导出表单字段功能允许用户使用各种数据源（如 FDF、XFDF、XML，甚至 System.Data.DataTable 对象）无缝填充和操作 PDF 表单字段。这个强大的 API 使自动化数据处理成为可能，提高了 PDF 表单管理的效率，并简化了数据输入过程。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "252",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/import-export-form-field/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/import-export-form-field/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发者的信息。"
+}
+</script>
 
-Aspose.PDF for .NET 提供了在 PDF 文档中创建/操作表单字段的强大功能。使用此 API，您可以通过编程方式填写 PDF 文件中的表单字段，通过[从 FDF 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/)、[从 XFDF 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/)、[从 XML 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/)或甚至可以从 [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) 对象导入数据。
+Aspose.PDF for .NET 提供了在 PDF 文档中创建/操作表单字段的强大功能。使用此 API，您可以以编程方式填充 PDF 文件中的表单字段，通过 [从 FDF 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/)、[从 XFDF 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/)、[从 XML 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/) 填充表单字段，甚至可以从 [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) 对象导入数据。
 
 ```csharp
- public static void ImportData()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+private static void ImportData()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+
+    using (var form = new Aspose.Pdf.Facades.Form())
     {
-    var editor = new Form();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
-    editor.ImportFdf(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.fdf"));
-    editor.ImportXml(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.xml"));
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
 
-    //TODO: Bug! Create issue
-    editor.ImportXfdf(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.xfdf"));
-    editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
+        // Import data fdf
+        using (var xfdfInputStream  = new FileStream(dataDir + "student.fdf", FileMode.Open))
+        {
+            form.ImportFdf(xfdfInputStream);
+        }
+                
+        // Import data XML
+        using (var xfdfInputStream  = new FileStream(dataDir + "input.xml", FileMode.Open))
+        {
+            form.ImportXml(xfdfInputStream);
+        }
+                
+        // Import data XFDF
+        using (var xfdfInputStream  = new FileStream(dataDir + "input.xfdf", FileMode.Open))
+        {
+            form.ImportXfdf(xfdfInputStream);
+        }
+                
+        // Save PDF document
+        form.Save(dataDir + "ImportDataUpdated_out.pdf");
     }
-
+}
 ```
 
-## 从FDF导出数据到PDF文件
+## 从 FDF 导出数据到 PDF 文件
 
 ```csharp
-    public static void ExportData()
-        {
-            var editor = new Form();
-            editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
-            editor.ExportFdf(System.IO.File.OpenWrite(_dataDir + "Sample-Form-01-mod.fdf"));
-            editor.ExportXml(System.IO.File.OpenWrite(_dataDir + "Sample-Form-01-mod.xml"));
-            editor.ExportXfdf(System.IO.File.OpenWrite(_dataDir + "Sample-Form-01-mod.xfdf"));
-        }
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+private static void ExportData()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
+                
+        // Create FDF file
+        using (var fdfOutputStream = new FileStream(dataDir + "data_out.fdf", FileMode.Create))
+        {
+            form.ExportXfdf(fdfOutputStream);
+        }
+                
+        // Create XML file
+        using (var xmlOutputStream = new FileStream(dataDir + "data_out.xml", FileMode.Create))
+        {
+            form.ExportXfdf(xmlOutputStream);
+        }
+            
+        // Create XFDF file
+        using (var xfdfOutputStream = new FileStream(dataDir + "data_out.xfdf", FileMode.Create))
+        {
+            form.ExportXfdf(xfdfOutputStream);
+        }              
+    }
+} 
 ```

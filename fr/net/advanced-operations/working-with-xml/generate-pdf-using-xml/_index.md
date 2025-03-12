@@ -1,10 +1,12 @@
 ---
-title: Générer un PDF à partir d'un XML
-linktitle: Générer un PDF à partir d'un XML
+title: Générer un PDF à partir de XML
+linktitle: Générer un PDF à partir de XML
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /fr/net/generate-pdf-from-xml
-description: Aspose.PDF pour .NET offre plusieurs moyens de convertir un fichier XML en document PDF nécessitant que le fichier XML d'entrée.
+description: Aspose.PDF for .NET fournit plusieurs façons de convertir un fichier XML en un document PDF nécessitant que le fichier XML d'entrée.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Générer un PDF à partir d'un XML",
-    "alternativeHeadline": "Convertir XML en PDF",
+    "headline": "Generate PDF from XML",
+    "alternativeHeadline": "Generate PDF directly from XML data",
+    "abstract": "Aspose.PDF for .NET génère désormais des PDF directement à partir des données XML en utilisant plusieurs méthodes : transformations XSLT, balisage XSL-FO et un schéma XML Aspose.PDF personnalisé. Cette nouvelle fonctionnalité offre une création de PDF flexible à partir de diverses structures XML, rationalisant les flux de travail de génération de documents.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, c#, générer pdf à partir de xml, convertir xml en pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "wordcount": "3834",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,21 +73,22 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/generate-pdf-from-xml"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF pour .NET offre plusieurs moyens de convertir un fichier XML en document PDF nécessitant que le fichier XML d'entrée."
+    "dateModified": "2024-11-26",
+    "description": "Aspose.PDF for .NET fournit plusieurs façons de convertir un fichier XML en un document PDF nécessitant que le fichier XML d'entrée."
 }
 </script>
-Le extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-Générer un document PDF à partir d'un document XML n'est pas une tâche triviale car le document XML peut décrire différents contenus. Aspose.PDF pour .NET a plusieurs façons de générer un PDF basé sur un document XML :
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+
+Générer un document PDF à partir d'un document XML n'est pas une tâche triviale car le document XML peut décrire différents contenus. Aspose.PDF for .NET a plusieurs façons de générer un PDF basé sur un document XML :
 
 - en utilisant la transformation XSLT
 - en utilisant le balisage XSL-FO (XSL Formatting Objects)
 - en utilisant son propre schéma XML Aspose.PDF
 
-## Génération d'un document PDF en utilisant la transformation XSLT
+## Générer un document PDF en utilisant la transformation XSLT
 
-XSL (eXtensible Stylesheet Language) est un langage de style pour transformer des documents XML en d'autres documents XML ou HTML. Dans notre cas, nous pouvons utiliser la transformation XML en HTML puis créer un PDF basé sur les données HTML.
+XSL (eXtensible Stylesheet Language) est un langage de style pour transformer des documents XML en d'autres documents XML ou en HTML. Dans notre cas, nous pouvons utiliser la transformation XML en HTML, puis créer un PDF basé sur les données HTML.
 
 Supposons que nous ayons un fichier XML avec un simple catalogue de CD (voir ci-dessous).
 
@@ -302,9 +305,8 @@ Supposons que nous ayons un fichier XML avec un simple catalogue de CD (voir ci-
   </cd>
 </catalog>
 ```
- 
- 
-Pour convertir ce fichier en PDF, nous devons créer un XSL avec une mise en page HTML. Rendons nos données dans un tableau. Le fichier XSL qui nous aidera à faire cela pourrait ressembler à ceci :
+
+Pour convertir ce fichier en PDF, nous devrions créer un XSL avec une mise en page HTML. Rendons nos données dans un tableau. Le fichier XSL qui nous aidera à faire cela pourrait ressembler à ceci :
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -313,11 +315,11 @@ Pour convertir ce fichier en PDF, nous devons créer un XSL avec une mise en pag
   <xsl:template match="/">
     <html>
       <body>
-        <h2>Ma Collection de CD</h2>
+        <h2>My CD Collection</h2>
         <table border="1">
           <tr bgcolor="#9acd32">
-            <th style="text-align:left">Titre</th>
-            <th style="text-align:left">Artiste</th>
+            <th style="text-align:left">Title</th>
+            <th style="text-align:left">Artist</th>
           </tr>
           <xsl:for-each select="catalog/cd">
             <tr>
@@ -336,44 +338,102 @@ Pour convertir ce fichier en PDF, nous devons créer un XSL avec une mise en pag
 </xsl:stylesheet>
 ```
 
-Donc, nous devons transformer XML et charger dans un document PDF.
- 
-Ainsi, nous devons transformer XML et charger dans le document PDF.
+Ainsi, nous devons transformer XML et charger dans le document PDF. L'exemple suivant montre cette méthode :
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void ExampleXSLTtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXsltToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    var XmlContent = File.ReadAllText(@"XMLFile1.xml");
-    var XsltContent = File.ReadAllText(@"XSLTFile1.xslt");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
     var options = new Aspose.Pdf.HtmlLoadOptions();
-    // définir la taille de la page en A5
+
+    // set page size to A5
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
-    var pdfDocument = new Aspose.Pdf.Document(TransformXmltoHtml(XmlContent, XsltContent), options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLT_out.pdf");
+    }
 }
 
-public static MemoryStream TransformXmltoHtml(string inputXml, string xsltString)
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
 {
     var transform = new XslCompiledTransform();
+
     using (var reader = XmlReader.Create(new StringReader(xsltString)))
     {
         transform.Load(reader);
     }
+
     var memoryStream = new MemoryStream();
     var results = new StreamWriter(memoryStream);
+
     using (var reader = XmlReader.Create(new StringReader(inputXml)))
     {
         transform.Transform(reader, null, results);
     }
+
     memoryStream.Position = 0;
     return memoryStream;
 }
 ```
-## Génération de document PDF en utilisant le balisage XSL-FO
+{{< /tab >}}
 
-XSL-FO est un langage de balisage basé sur XML décrivant le formatage des données XML pour une sortie à l'écran, sur papier ou sur d'autres supports. Aspose.PDF dispose d'une classe spéciale qui permet d'appliquer le balisage XSL-FO et d'obtenir un document PDF.
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXsltToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
+    var options = new Aspose.Pdf.HtmlLoadOptions();
+
+    // set page size to A5
+    options.PageInfo.Height = 595;
+    options.PageInfo.Width = 420;
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLT_out.pdf");
+}
+
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, null, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Générer un document PDF en utilisant le balisage XSL-FO
+
+XSL-FO est un langage de balisage basé sur XML décrivant le formatage des données XML pour une sortie à l'écran, sur papier ou d'autres médias. Aspose.PDF a une classe spéciale qui permet d'appliquer le balisage XSL-FO et d'obtenir un document PDF.
 
 Prenons un exemple. Voici un fichier XML avec des données d'exemple d'employés.
 
@@ -401,7 +461,7 @@ Prenons un exemple. Voici un fichier XML avec des données d'exemple d'employés
 </employees>
 ```
 
-Créons un autre fichier - le fichier de balisage XSL-FO pour transformer les données des employés en tableau.
+Créons encore un autre fichier - le fichier de balisage XSL-FO pour transformer les données des employés en tableau.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -417,7 +477,7 @@ Créons un autre fichier - le fichier de balisage XSL-FO pour transformer les do
             <fo:page-sequence master-reference="simpleA4">
                 <fo:flow flow-name="xsl-region-body">
                     <fo:block font-size="16pt" font-weight="bold" space-after="5mm">
-                        Nom de l'Entreprise: <xsl:value-of select="companyname"/>
+                        Company Name: <xsl:value-of select="companyname"/>
                     </fo:block>
                     <fo:block font-size="10pt">
                         <fo:table table-layout="fixed" width="100%" border-collapse="separate">
@@ -458,26 +518,58 @@ Créons un autre fichier - le fichier de balisage XSL-FO pour transformer les do
     </xsl:template>
 </xsl:stylesheet>
 ```
-Aspose.PDF a une classe spéciale [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) qui permet d'appliquer une transformation XSL-FO.
-L'extrait suivant montre comment utiliser cette classe avec les fichiers d'exemple décrits ci-dessus.
 
+Aspose.PDF a une classe spéciale [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) qui permet d'appliquer la transformation XSL-FO. Le snippet suivant montre comment utiliser cette classe avec les fichiers d'exemple décrits ci-dessus.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    // Instancier l'objet XslFoLoadOption
-    var options = new Pdf.XslFoLoadOptions("employees.xslt");
-    // Créer un objet Document
-    var pdfDocument = new Aspose.Pdf.Document("employees.xml", options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Générer un document PDF en utilisant le balisage XSL-FO et les paramètres XSL
 
 Parfois, nous devons utiliser [XSL:param](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param). L'élément `<xsl:param>` établit un paramètre par nom et, éventuellement, une valeur par défaut pour ce paramètre.
 
-Prenons le même exemple que dans le cas précédent, mais avec quelques modifications mineures (ajout de paramètres). Le fichier XML avec les données d'exemple reste inchangé, ...
+Prenons le même exemple que dans le cas précédent, mais avec des modifications mineures (ajout de paramètres). Le fichier XML avec des données d'exemple reste inchangé, ...
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <employees>
@@ -485,24 +577,24 @@ Prenons le même exemple que dans le cas précédent, mais avec quelques modific
     <employee>
         <id>101</id>
         <name>Andrew</name>
-        <designation>Directeur</designation>
+        <designation>Manager</designation>
     </employee>
 
     <employee>
         <id>102</id>
         <name>Eduard</name>
-        <designation>Cadre</designation>
+        <designation>Executive</designation>
     </employee>
 
     <employee>
         <id>103</id>
         <name>Peter</name>
-        <designation>Cadre</designation>
+        <designation>Executive</designation>
     </employee>
 </employees>
 ```
 
-mais dans le fichier de balisage XSL-FO, nous allons ajouter le paramètre : `<xsl:param name="isBoldName"></xsl:param>` et l'appliquer à la colonne `Name`.
+mais dans le fichier de balisage XSL-FO, nous ajouterons le paramètre : `<xsl:param name="isBoldName"></xsl:param>` et l'appliquerons à la colonne `Name`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -521,7 +613,7 @@ mais dans le fichier de balisage XSL-FO, nous allons ajouter le paramètre : `<x
    <fo:page-sequence master-reference="simpleA4">
     <fo:flow flow-name="xsl-region-body">
      <fo:block font-size="16pt" font-weight="bold" space-after="5mm">
-      Nom de l'entreprise : <xsl:value-of select="companyname"/>
+      Company Name: <xsl:value-of select="companyname"/>
      </fo:block>
      <fo:block font-size="10pt">
       <fo:table table-layout="fixed" width="100%" border-collapse="separate">
@@ -539,7 +631,7 @@ mais dans le fichier de balisage XSL-FO, nous allons ajouter le paramètre : `<x
  </xsl:template>
  <xsl:template match="employee">
   <fo:table-row>
-   <xsl:if test="designation = 'Directeur'">
+   <xsl:if test="designation = 'Manager'">
     <xsl:attribute name="font-weight">bold</xsl:attribute>
    </xsl:if>
    <fo:table-cell>
@@ -567,73 +659,159 @@ mais dans le fichier de balisage XSL-FO, nous allons ajouter le paramètre : `<x
 ```
 
 Pour ajouter des paramètres XSL, nous devons créer notre propre [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) et
-le définir comme propriété dans [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
-L'extrait suivant montre comment utiliser cette classe avec les fichiers d'exemple décrits ci-dessus.
+le définir comme propriété dans [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Le snippet suivant montre comment utiliser cette classe avec les fichiers d'exemple décrits ci-dessus.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF_Param_21_7()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_7()
 {
-  string xmlInputFile = Path.Combine(_dataDir, "employees.xml");
-  string xsltInputFile = Path.Combine(_dataDir, "employees.xslt");
-  string outputFile = Path.Combine(_dataDir, "out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-  XslFoLoadOptions options = new XslFoLoadOptions(xsltInputFile);
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
-  options.XsltArgumentList = new XsltArgumentList();
-  options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
-  Document document = new Document(xmlInputFile, options);
-  document.Save(outputFile);
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
 
-Si vous utilisez une version antérieure à la 21.7, veuillez utiliser la technique suivante :
-
+{{< tab tabNum="2" >}}
 ```csharp
-  public static void Example_XSLFO_to_PDF_Param_21_6()
-  {
-      var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
-      var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_7()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-      var options = new Aspose.Pdf.XslFoLoadOptions();
-      var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
-      pdfDocument.Save(_dataDir + "data_xml.pdf");
-  }
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
-  public static MemoryStream TransformXSL(string inputXml, string xsltString)
-  {
-      var transform = new XslCompiledTransform();
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
-      //Créer notre propre XsltArgumentList
-      XsltArgumentList argsList = new XsltArgumentList();
-      argsList.AddParam("isBoldName", "", "no");
-      //---------------------
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
 
-      using (var reader = XmlReader.Create(new StringReader(xsltString)))
-      {
-          transform.Load(reader);
-      }
-      var memoryStream = new MemoryStream();
-
-      var results = new StreamWriter(memoryStream);
-      using (var reader = XmlReader.Create(new StringReader(inputXml)))
-      {
-          transform.Transform(reader, argsList, results);
-      }
-
-      memoryStream.Position = 0;
-      return memoryStream;
-  }
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
 }
 ```
-```
-## Génération d'un document PDF basé sur le schéma XML Aspose.PDF
+{{< /tab >}}
+{{< /tabs >}}
 
-Une autre façon de créer un document PDF à partir de XML est d'utiliser le schéma XML Aspose.PDF. En utilisant ce diagramme, vous pouvez décrire la mise en page de la même manière que si vous utilisiez une mise en page de table en HTML. Examinons le fonctionnement de cette méthode plus en détail.
+Si vous utilisez une version antérieure à 21.7, veuillez utiliser la technique suivante :
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_6()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
+
+    var options = new Aspose.Pdf.XslFoLoadOptions();
+
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
+}
+
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    // Create own XsltArgumentList
+    var argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
+
+    using (var reader = XmlReader.Create(new StringReader(xsltString)))
+    {
+        transform.Load(reader);
+    }
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using (var reader = XmlReader.Create(new StringReader(inputXml)))
+    {
+        transform.Transform(reader, argsList, results);
+    }
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf_Param_21_6()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
+
+    var options = new Aspose.Pdf.XslFoLoadOptions();
+
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    // Create own XsltArgumentList
+    var argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, argsList, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Générer un document PDF basé sur le schéma XML Aspose.PDF
+
+Une autre façon de créer un document PDF à partir de XML est d'utiliser le schéma XML Aspose.PDF. En utilisant ce diagramme, vous pouvez décrire la mise en page de la page de la même manière que si vous utilisiez une mise en page de tableau en HTML. Considérons le fonctionnement de cette méthode plus en détail.
 
 ### Définir la page
 
-Définissons la page avec les paramètres par défaut. Notre page aura un format A4 et contiendra uniquement un morceau de texte.
+Définissons la page avec des paramètres par défaut. Notre page aura un format A4 et contiendra uniquement un morceau de texte.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -648,17 +826,50 @@ Définissons la page avec les paramètres par défaut. Notre page aura un format
 
 Pour générer un document PDF, nous utiliserons la méthode [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index).
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void Example_XML_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXmlToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    var pdfDocument = new Aspose.Pdf.Document();
-    pdfDocument.BindXml(_dataDir + "aspose_pdf_demo.xml");
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file to the document
+        document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+        // Save PDF document
+        document.Save(dataDir + "XML_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
 
-Pour définir une nouvelle taille de page, nous devons ajouter un élément `PageInfo`. Dans l'exemple suivant, nous avons défini la taille de page A5 et des marges de 25 mm et 10 mm.
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXmlToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML file to the document
+    document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+    // Save PDF document
+    document.Save(dataDir + "XML_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+Pour définir une nouvelle taille de page, nous devrions ajouter un élément `PageInfo`. Dans l'exemple suivant, nous avons défini une taille de page A5 et des marges de 25 mm et 10 mm.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -674,12 +885,9 @@ Pour définir une nouvelle taille de page, nous devons ajouter un élément `Pag
 </Document>
 ```
 
-### Ajout de l'élément HtmlFragment dans le fichier XML
+### Ajouter un élément HtmlFragment dans le fichier XML
 
-Comme HTML contient des balises similaires à XML, lorsque vous écrivez du HTML à l'intérieur de n'importe quelle balise XML, l'analyseur le traite comme des balises XML et elles ne peuvent tout simplement pas être reconnues comme des balises XML.
-```
-
-Comme HTML contient des balises similaires à XML, lorsque vous écrivez du HTML à l'intérieur de n'importe quelle balise XML, le parseur le traite comme des balises XML et elles ne peuvent tout simplement pas être reconnues comme des balises XML.
+Comme HTML contient des balises similaires à XML, lorsque vous écrivez du HTML à l'intérieur de n'importe quelle balise XML, le parseur le traite comme des balisages XML et ils ne peuvent tout simplement pas être reconnus comme des balises XML. Le problème peut être contourné en utilisant une section "CDATA" dans XML. La section CDATA contient du texte qui n'est pas analysé par le parseur ou, en d'autres termes, il n'est pas traité comme des balisages XML. Le modèle XML d'exemple suivant montre comment ajouter HtmlFragment à l'intérieur des balisages XML en utilisant CDATA.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -694,16 +902,16 @@ Comme HTML contient des balises similaires à XML, lorsque vous écrivez du HTML
 </Document>
 ```
 
-### Ajouter un élément Table dans un fichier XML
+### Ajouter un élément Table dans le fichier XML
 
-Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L'extrait suivant montre l'utilisation d'une table simple. Dans cet exemple, certaines cellules ont l'attribut `Alignment` et cet attribut a une valeur numérique :
+Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire des tableaux. Le snippet suivant montre l'utilisation d'un tableau simple. Dans cet exemple, certaines cellules ont un attribut `Alignment` et cet attribut a une valeur numérique :
 
 1. Alignement à gauche
-1. Alignement au centre
-1. Alignement à droite
+1. Alignement centré
+1. Alignement à droite.
 1. Alignement justifié. Le texte sera aligné sur les marges gauche et droite.
-1.
-```
+1. Justification complète. Semblable à l'alignement 'Justifié', sauf que la toute dernière ligne sera uniquement alignée à gauche en mode 'Justifié', tandis qu'en mode 'Justification complète', toutes les lignes seront alignées à gauche et à droite.
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <Document xmlns="Aspose.Pdf">
@@ -713,7 +921,7 @@ Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L
     </PageInfo>
     <HtmlFragment>
       <![CDATA[
-        <h1 style="font-family:Tahoma; font-size:16pt;">HORAIRES SUR LA ROUTE GREENTOWN-BLUEBERG</h1>
+        <h1 style="font-family:Tahoma; font-size:16pt;">TIMETABLES ON GREENTOWN-BLUEBERG ROUTE</h1>
         ]]>
     </HtmlFragment>
     <TextFragment>
@@ -734,22 +942,22 @@ Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L
         </Border>
         <Cell Alignment="2">
           <TextFragment>
-            <TextSegment>Départ</TextSegment>
+            <TextSegment>Departure</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Arrivée</TextSegment>
+            <TextSegment>Arrival</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Jour de semaine</TextSegment>
+            <TextSegment>Weekday</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Bateau</TextSegment>
+            <TextSegment>Ship</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -766,7 +974,7 @@ Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Lun-Sam</TextSegment>
+            <TextSegment>Mon-Sat</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -788,7 +996,7 @@ Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>tous les jours</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -810,7 +1018,7 @@ Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>tous les jours</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -832,7 +1040,7 @@ Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>tous les jours</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -854,7 +1062,7 @@ Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>tous les jours</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -876,7 +1084,7 @@ Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Lun-Ven, Dim</TextSegment>
+            <TextSegment>Mon-Fri, Sun</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -889,7 +1097,8 @@ Les éléments `Table`, `Row`, `Cell` sont utilisés pour décrire les tables. L
   </Page>
 </Document>
 ```
-Tables sont utilisées pour la mise en page des documents. Par exemple, nous pouvons personnaliser un en-tête de page. Dans ce cas, des tables ont été utilisées pour diviser l'en-tête en 2 colonnes.
+
+Les tableaux sont utilisés pour la mise en page des documents. Par exemple, nous pouvons personnaliser un en-tête de page. Dans ce cas, un tableau a été utilisé pour diviser l'en-tête en 2 colonnes.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -917,7 +1126,7 @@ Tables sont utilisées pour la mise en page des documents. Par exemple, nous pou
     </Header>
     <HtmlFragment>
       <![CDATA[
-        <h1 style="font-family:Tahoma; font-size:16pt;">HORAIRES SUR LA ROUTE GREENTOWN-BLUEBERG</h1>
+        <h1 style="font-family:Tahoma; font-size:16pt;">TIMETABLES ON GREENTOWN-BLUEBERG ROUTE</h1>
         ]]>
     </HtmlFragment>
     <TextFragment>
@@ -938,22 +1147,22 @@ Tables sont utilisées pour la mise en page des documents. Par exemple, nous pou
         </Border>
         <Cell Alignment="2">
           <TextFragment>
-            <TextSegment>Départ</TextSegment>
+            <TextSegment>Departure</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Arrivée</TextSegment>
+            <TextSegment>Arrival</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Jour de la semaine</TextSegment>
+            <TextSegment>Weekday</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Bateau</TextSegment>
+            <TextSegment>Ship</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -970,7 +1179,7 @@ Tables sont utilisées pour la mise en page des documents. Par exemple, nous pou
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Lun-Sam</TextSegment>
+            <TextSegment>Mon-Sat</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -992,7 +1201,7 @@ Tables sont utilisées pour la mise en page des documents. Par exemple, nous pou
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>tous les jours</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1014,7 +1223,7 @@ Tables sont utilisées pour la mise en page des documents. Par exemple, nous pou
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>tous les jours</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1036,7 +1245,7 @@ Tables sont utilisées pour la mise en page des documents. Par exemple, nous pou
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>tous les jours</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1058,7 +1267,7 @@ Tables sont utilisées pour la mise en page des documents. Par exemple, nous pou
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>tous les jours</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1080,7 +1289,7 @@ Tables sont utilisées pour la mise en page des documents. Par exemple, nous pou
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Lun-Ven, Dim</TextSegment>
+            <TextSegment>Mon-Fri, Sun</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1093,9 +1302,10 @@ Tables sont utilisées pour la mise en page des documents. Par exemple, nous pou
   </Page>
 </Document>
 ```
-### Mise à jour du contenu dynamiquement
 
-La méthode BindXML() offre la fonctionnalité de charger le contenu du fichier XML et la méthode Document.save() peut être utilisée pour enregistrer la sortie au format PDF. Cependant, pendant la conversion, nous pouvons également accéder aux éléments individuels à l'intérieur du XML et utiliser le XML comme modèle. Le code suivant montre les étapes pour accéder aux TextSegments à partir du fichier XML.
+### Mise à jour dynamique du contenu
+
+La méthode BindXML() offre la fonctionnalité de charger le contenu du fichier XML et la méthode Document.save() peut être utilisée pour enregistrer la sortie au format PDF. Cependant, lors de la conversion, nous pouvons également accéder aux éléments individuels à l'intérieur de XML et utiliser XML comme modèle. Le snippet de code suivant montre les étapes pour accéder aux TextSegments à partir du fichier XML.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1111,41 +1321,84 @@ La méthode BindXML() offre la fonctionnalité de charger le contenu du fichier 
 </Document>
 ```
 
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-// Instantiate Document object
-Document doc = new Document();
-// Bind source XML file
-doc.BindXml( dataDir + "log.xml");
-// Get reference of page object from XML
-Page page = (Page)doc.GetObjectById("mainSection");
-// Get reference of first TextSegment with ID boldHtml
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
-// Get reference of second TextSegment with ID strongHtml
-segment = (TextSegment)doc.GetObjectById("strongHtml");
-// Save resultant PDF file
-doc.Save(dataDir + "XMLToPDF_out.pdf");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file
+        document.BindXml(dataDir + "log.xml");
+
+        // Get reference of page object from XML
+        var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+        // Get reference of first TextSegment with ID boldHtml
+        var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+        // Get reference of second TextSegment with ID strongHtml
+        segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+        // Save PDF document
+        document.Save(dataDir + "XMLToPDF_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Bind XML file
+    document.BindXml(dataDir + "log.xml");
+
+    // Get reference of page object from XML
+    var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+    // Get reference of first TextSegment with ID boldHtml
+    var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+    // Get reference of second TextSegment with ID strongHtml
+    segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+    // Save PDF document
+    document.Save(dataDir + "XMLToPDF_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ### Ajouter des éléments graphiques à la page
 
-Nous pouvons ajouter d'autres éléments supplémentaires au document XML : des objets Image ou Graph. Le fragment suivant montre comment ajouter ces éléments au document.
+Nous pouvons ajouter d'autres éléments supplémentaires au document XML : des objets Image ou Graph. Le snippet suivant montre comment ajouter ces éléments au document.
 
 ```xml
 <Graph Width="20" Height="20">
   <Circle PosX="30" PosY="30" Radius="10">
-    <GraphInfo Color="Rouge" FillColor="Bleu"></GraphInfo>
+    <GraphInfo Color="Red" FillColor="Blue"></GraphInfo>
   </Circle>
 </Graph>
 
 <Image File="logo.png" Id = "testImg"></Image>
 ```
 
-### Définir le chemin de l'image lors de la conversion XML en PDF
+### Définir le chemin de l'image lors de la conversion de XML en PDF
 
-Le modèle XML suivant contient une balise `<Image>` avec un ID "testImg". Au cas où vous souhaiteriez définir le chemin de l'image depuis votre code, vous pouvez accéder à l'élément Image du modèle XML pendant le processus de conversion et définir le chemin vers l'adresse souhaitée pour l'image.
+Le modèle XML suivant contient une balise `<Image>` avec un ID "testImg". Si vous souhaitez définir le chemin de l'image depuis votre code, vous pouvez accéder à l'élément Image à partir du modèle XML pendant le processus de conversion et définir le chemin vers l'adresse souhaitée pour l'image.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1176,14 +1429,14 @@ Le modèle XML suivant contient une balise `<Image>` avec un ID "testImg". Au ca
         <Cell Alignment="1">
         <!--Logo-->
             <TextFragment>
-                <TextSegment> ID de la demande</TextSegment>
+                <TextSegment> Request ID</TextSegment>
                 <TextState FontSize="14" ForegroundColor="#0e4f9c" FontStyle="1" />
             </TextFragment>
             <TextFragment>
                 <TextSegment></TextSegment>
             </TextFragment>
             <TextFragment>
-                <TextSegment id="boldtext">Du texte en gras</TextSegment>
+                <TextSegment id="boldtext">Some Bold Text</TextSegment>
                 <TextState FontSize="14" FontStyle="1"></TextState>
             </TextFragment>
         </Cell>
@@ -1192,20 +1445,63 @@ Le modèle XML suivant contient une balise `<Image>` avec un ID "testImg". Au ca
  </Page>
 </Document>
 ```
-Code pour définir le chemin de l'image dans le modèle XML est le suivant :
 
+Le code pour définir le chemin de l'image dans le modèle XML est le suivant :
+
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-string inXml = dataDir + "input.xml";
-string inFile = dataDir + "aspose-logo.jpg";
-string outFile = dataDir + "output_out.pdf";
-Document doc = new Document();
-doc.BindXml(inXml);
-Image image = (Image)doc.GetObjectById("testImg");
-image.File = inFile;
-doc.Save(outFile);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file
+        document.BindXml(dataDir + "input.xml");
+
+        // Get reference of Image with ID testImg
+        var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+        // Set image file
+        image.File = dataDir + "aspose-logo.jpg";
+
+        // Save PDF document
+        document.Save(dataDir + "output_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Bind XML file
+    document.BindXml(dataDir + "input.xml");
+
+    // Get reference of Image with ID testImg
+    var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+    // Set image file
+    image.File = dataDir + "aspose-logo.jpg";
+
+    // Save PDF document
+    document.Save(dataDir + "output_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -1270,29 +1566,3 @@ doc.Save(outFile);
     }
 }
 </script>
-
-# Introduction
-
-Bienvenue dans notre documentation. Ce guide vous aidera à comprendre les fonctionnalités et les utilisations de notre produit.
-
-## Fonctionnalités
-
-- **Facilité d'utilisation**: Notre produit est conçu pour être simple et intuitif.
-- **Haute performance**: Optimisé pour offrir les meilleures performances possibles.
-- **Sécurité**: Nous avons intégré des mesures de sécurité robustes pour protéger vos données.
-
-## Démarrage rapide
-
-Pour commencer avec notre produit, suivez ces étapes simples:
-
-1. **Inscription**: Créez un compte sur notre plateforme.
-2. **Configuration**: Configurez votre profil et vos préférences.
-3. **Utilisation**: Commencez à utiliser notre produit et découvrez ses fonctionnalités.
-
-## Support
-
-Si vous avez des questions ou avez besoin d'aide, veuillez contacter notre équipe de support.
-
-changefreq: "monthly"
-type: docs
-```

@@ -2,9 +2,11 @@
 title: العمل مع مستندات PDF باستخدام C#
 linktitle: العمل مع المستندات
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/working-with-documents/
-description: يصف لك هذا المقال التلاعبات التي يمكن القيام بها مع المستند باستخدام مكتبة Aspose.PDF.
+description: تصف هذه المقالة ما يمكن القيام به من عمليات على المستند باستخدام مكتبة Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع مستندات PDF باستخدام C#",
-    "alternativeHeadline": "التلاعب بمستندات PDF",
+    "headline": "Working with PDF Documents using C#",
+    "alternativeHeadline": "Streamline PDF Management with Aspose.PDF for .NET using C#",
+    "abstract": "اكتشف القدرات القوية لمكتبة Aspose.PDF لـ C#، مما يسمح بالتلاعب السلس بمستندات PDF. من تحسين ودمج الملفات إلى التحقق من المعايير PDF A، توفر هذه الميزة للمطورين أدوات أساسية لإدارة PDF الشاملة في تطبيقات .NET. عزز سير عمل معالجة المستندات لديك اليوم مع وظائف PDF المتقدمة",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, c#, مستندات pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "PDF manipulation, Aspose.PDF for .NET, formatting PDF document, manipulate PDF document, optimize PDF, merge PDF, split PDF, concatenate PDF files, C# PDF processing, create crash reports",
+    "wordcount": "362",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,32 +74,30 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-documents/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يصف لك هذا المقال التلاعبات التي يمكن القيام بها مع المستند باستخدام مكتبة Aspose.PDF."
+    "dateModified": "2024-11-25",
+    "description": "تصف هذه المقالة ما يمكن القيام به من عمليات على المستند باستخدام مكتبة Aspose.PDF."
 }
 </script>
-PDF يرمز إلى تنسيق المستند المحمول، المستخدم لعرض المستندات في شكل إلكتروني مستقل عن البرمجيات أو الأجهزة أو نظام التشغيل الذي يتم عرضها عليه.
 
-PDF هو معيار مفتوح، تحتفظ به منظمة الأيزو الدولية اليوم.
+PDF هو اختصار لصيغة المستندات المحمولة، المستخدمة لعرض المستندات في شكل إلكتروني مستقل عن البرنامج أو الأجهزة أو نظام التشغيل الذي يتم عرضها عليه.
 
-الهدف الأصلي كان للحفاظ وحماية محتوى وتنسيق المستند - بغض النظر عن المنصة أو برنامج الكمبيوتر الذي يتم عرضه عليه. هذا هو السبب في أن ملفات PDF صعبة التعديل وأحيانًا حتى استخراج المعلومات منها يمثل تحديًا.
+PDF هو معيار مفتوح، يتم الحفاظ عليه من قبل المنظمة الدولية للتوحيد القياسي (ISO) اليوم.
 
-ولكن **Aspose.PDF لـ .NET** يمكن أن يساعدك في التعامل مع معظم المهام التي تنشأ عند العمل مع مستند PDF.
+كان الهدف الأصلي هو الحفاظ على محتوى المستند وتنسيقه وحمايته - بغض النظر عن النظام الأساسي أو برنامج الكمبيوتر الذي يتم عرضه عليه. لهذا السبب، من الصعب تعديل ملفات PDF وأحيانًا حتى استخراج المعلومات منها يمثل تحديًا.
 
-أنت قادر على القيام بالتالي:
+لكن **Aspose.PDF for .NET** يمكن أن يساعدك في التعامل مع معظم المهام التي تنشأ عند العمل مع مستند PDF.
+
+يمكنك القيام بما يلي:
 
 - [تنسيق مستند PDF](/pdf/ar/net/formatting-pdf-document/) - إنشاء مستند، الحصول على خصائص المستند وتعيينها، تضمين الخطوط، وعمليات أخرى مع ملفات PDF.
-- [التلاعب بمستند PDF](/pdf/ar/net/manipulate-pdf-document/) - التحقق من مستند PDF لمعيار PDF A، العمل مع TOC، تحديد تاريخ انتهاء صلاحية PDF، وما إلى ذلك.
-- [تحسين PDF](/pdf/ar/net/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحسين المستند بنجاح.
-
-type: docs
-changefreq: "monthly"
-- [تحسين PDF](/pdf/ar/net/optimize-pdf/) - تحسين محتوى الصفحة، تقليل حجم الملف، إزالة العناصر غير المستخدمة، ضغط جميع الصور لتحسين الوثيقة بنجاح.
+- [التلاعب بمستند PDF](/pdf/ar/net/manipulate-pdf-document/) - التحقق من مستند PDF لمعيار PDF A، العمل مع جدول المحتويات، تعيين تاريخ انتهاء صلاحية PDF، وما إلى ذلك.
+- [تحسين PDF](/pdf/ar/net/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للمستند.
 - [دمج PDF](/pdf/ar/net/merge-pdf-documents/) - دمج عدة ملفات PDF في مستند PDF واحد باستخدام C#.
-- [تقسيم PDF](/pdf/ar/net/split-document/) - تقسيم صفحات PDF إلى ملفات PDF منفصلة في تطبيقات .NET الخاصة بك.
-- [ربط ملفات PDF في مجلد](/pdf/ar/net/concatenating-all-pdf-files-in-particular-folder/) - ربط جميع ملفات PDF في مجلد معين باستخدام فئة PdfFileEditor.
-- [ربط عدة ملفات PDF باستخدام MemoryStreams](/pdf/ar/net/concatenate-pdf-documents/) - ستتعلم كيفية ربط عدة ملفات PDF باستخدام MemoryStreams مع C#.
-- [العمل مع العناوين](/pdf/ar/net/working-with-headings/) - يمكنك إنشاء ترقيم في عنوان مستند PDF الخاص بك مع C#.
+- [تقسيم PDF](/pdf/ar/net/split-document/) - تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات .NET الخاصة بك.
+- [دمج ملفات PDF في مجلد](/pdf/ar/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - دمج جميع ملفات PDF في مجلد معين باستخدام فئة PdfFileEditor.
+- [دمج عدة ملفات PDF باستخدام MemoryStreams](/pdf/ar/net/concatenate-pdf-documents/) - ستتعلم كيفية دمج عدة ملفات PDF باستخدام MemoryStreams مع C#.
+- [إنشاء تقارير الأعطال](/pdf/ar/net/generate-crash-reports/) - إنشاء تقارير الأعطال باستخدام C#.
+- [العمل مع العناوين](/pdf/ar/net/working-with-headings/) - يمكنك إنشاء ترقيم في العناوين في مستند PDF الخاص بك باستخدام C#.
 
 <script type="application/ld+json">
 {
@@ -161,5 +162,3 @@ changefreq: "monthly"
     }
 }
 </script>
-
-

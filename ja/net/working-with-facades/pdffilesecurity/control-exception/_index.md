@@ -1,49 +1,135 @@
 ---
-title: 例外制御 PDF ファイル
+title: コントロール例外PDFファイル
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ja/net/control-exception/
-description: このトピックでは、PdfFileSecurity クラスを使用して PDF ファイルの例外を制御する方法について説明します。
+description: Aspose.PDFを使用してPDF処理における例外を処理し、PDF作業中のスムーズな操作を確保する方法を学びます。
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Control Exception PDF File",
+    "alternativeHeadline": "Manage PDF Exception Handling with New Security Control",
+    "abstract": "PdfFileSecurityクラスのコントロール例外機能を使用すると、AllowExceptionsプロパティを切り替えることでPDFファイルの復号時にエラーハンドリングを管理できます。ユーザーは、復号成功のためのブール結果を受け取るか、包括的な例外管理のためにtry-catchブロックを利用するかを選択でき、PDFセキュリティ操作に対する柔軟性と制御を強化します。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "224",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/control-exception/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/control-exception/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
+}
+</script>
 
-[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) クラスを使用すると、例外を制御できます。これを行うには、[AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) プロパティを false または true に設定する必要があります。操作を false に設定した場合、[DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) の結果は、パスワードの正確さに応じて true または false を返します。
+[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity)クラスは、例外を制御することを可能にします。これを行うには、[AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions)プロパティをfalseまたはtrueに設定する必要があります。操作をfalseに設定すると、[DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile)の結果は、パスワードの正しさに応じてtrueまたはfalseを返します。
 
 ```csharp
-   public static void ControlExceptionPDFFile()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ControlExceptionPDFFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    {
+        // Bind PDF document
+        fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
+        // Disallow exceptions
+        fileSecurity.AllowExceptions = false;
+        
+        // Decrypt PDF document
+        if (!fileSecurity.DecryptFile("IncorrectPassword"))
         {
-            PdfFileSecurity fileSecurity = new PdfFileSecurity();
-            fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
-            fileSecurity.AllowExceptions = false;
-            // PDF ドキュメントを復号化する
-            if (!fileSecurity.DecryptFile("IncorrectPassword"))
-            {
-                Console.WriteLine("何か問題があります...");
-                Console.WriteLine($"最後の例外: {fileSecurity.LastException.Message}");
-            }
-            fileSecurity.Save(_dataDir + "sample_decrtypted.pdf");
+            Console.WriteLine("Something wrong...");
+            Console.WriteLine($"Last exception: {fileSecurity.LastException.Message}");
         }
+        // Save PDF document
+        fileSecurity.Save(dataDir + "SampleDecrtypted_out.pdf");
+    }
+}
 ```
 
-If you set [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) プロパティを true に設定すると、try-catch 演算子を使用して操作の結果を取得できます。
+[AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions)プロパティをtrueに設定すると、try-catch演算子を使用して操作の結果を取得できます。
 
 ```csharp
-public static void ControlExceptionPDFFile2()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ControlExceptionPDFFile2()
+{   
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    {
+        // Bind PDF document
+        fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
+        // Allow exceptions
+        fileSecurity.AllowExceptions = true;
+        try
         {
-            PdfFileSecurity fileSecurity = new PdfFileSecurity();
-            fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
-            fileSecurity.AllowExceptions = true;
-            try
-            {
-                // PDF ドキュメントを復号化する
-                fileSecurity.DecryptFile("IncorrectPassword");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("何か問題が発生しました...");
-                Console.WriteLine($"Exception: {ex.Message}");
-            }
-            fileSecurity.Save(_dataDir + "sample_decrtypted.pdf");
+            // Decrypt PDF document
+            fileSecurity.DecryptFile("IncorrectPassword");
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Something wrong...");
+            Console.WriteLine($"Exception: {ex.Message}");
+        }
+        // Save PDF document
+        fileSecurity.Save(dataDir + "SampleDecrtypted_out.pdf");
+    }
+}
 ```

@@ -1,10 +1,12 @@
 ---
-title: Travailler avec les pièces jointes dans les fichiers PDF
-linktitle: Travailler avec les pièces jointes
+title: Travailler avec des pièces jointes dans un PDF
+linktitle: Travailler avec des pièces jointes
 type: docs
-weight: 130
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 190
 url: /fr/net/attachments/
-description: Utilisez l'API PDF C# pour accéder, ajouter et supprimer des pièces jointes dans les fichiers PDF en utilisant C# depuis vos applications. Guide complet avec des exemples de code C#.
+description: Utilisez l'API PDF C# pour accéder, ajouter et supprimer des pièces jointes dans des fichiers PDF en utilisant C# depuis vos applications. Guide complet avec des exemples de code C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Travailler avec les pièces jointes dans les fichiers PDF",
-    "alternativeHeadline": "Pièces jointes dans un fichier PDF",
+    "headline": "Working with Attachments in PDF",
+    "alternativeHeadline": "Effortlessly Manage PDF Attachments with C#",
+    "abstract": "Découvrez comment gérer efficacement les pièces jointes dans des fichiers PDF en utilisant la puissante API PDF C#. Cette fonctionnalité permet aux développeurs d'accéder, d'ajouter et de supprimer divers types de fichiers attachés aux PDF, accompagnée d'exemples de code C# détaillés pour une intégration transparente dans les applications. Améliorez vos capacités de manipulation de PDF en tirant parti de ce guide complet",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, pièces jointes dans pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "keywords": "C#, PDF API, attachments in PDF, add attachments, remove attachments, extract attachments, Aspose.PDF for .NET, manipulate PDF documents, save attachment to file, delete attachment from PDF",
+    "wordcount": "181",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,17 +74,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/attachments/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Utilisez l'API PDF C# pour accéder, ajouter et supprimer des pièces jointes dans les fichiers PDF en utilisant C# depuis vos applications. Guide complet avec des exemples de code C#."
+    "dateModified": "2024-11-25",
+    "description": "Utilisez l'API PDF C# pour accéder, ajouter et supprimer des pièces jointes dans des fichiers PDF en utilisant C# depuis vos applications. Guide complet avec des exemples de code C#."
 }
 </script>
-Dans cette section, nous expliquerons comment travailler avec des pièces jointes dans les PDF en utilisant Aspose.PDF pour .NET. 
-Une pièce jointe est un fichier supplémentaire qui est attaché à un document parent, il peut s'agir de divers types de fichiers, tels que pdf, word, image ou d'autres fichiers. 
-Vous apprendrez comment ajouter des pièces jointes à un pdf, obtenir les informations d'une pièce jointe et l'enregistrer dans un fichier, supprimer la pièce jointe du PDF de manière programmatique avec C#.
 
-- [Ajout d'une pièce jointe à un document PDF](/pdf/fr/net/add-attachment-to-pdf-document/)
+Dans cette section, nous expliquerons comment travailler avec des pièces jointes dans un PDF en utilisant Aspose.PDF for .NET.
+Une pièce jointe est un fichier supplémentaire qui est attaché à un document parent, il peut s'agir de divers types de fichiers, tels que pdf, word, image ou d'autres fichiers.
+Vous apprendrez comment ajouter des pièces jointes à un pdf, obtenir les informations d'une pièce jointe et l'enregistrer dans un fichier, supprimer la pièce jointe d'un PDF par programmation avec C#.
+
+- [Ajouter une pièce jointe à un document PDF](/pdf/fr/net/add-attachment-to-pdf-document/)
 - [Extraire et enregistrer une pièce jointe](/pdf/fr/net/extract-and-save-an-attachment/)
-- [Suppression d'une pièce jointe d'un PDF existant](/pdf/fr/net/removing-attachment-from-an-existing-pdf/)
+- [Supprimer une pièce jointe d'un PDF existant](/pdf/fr/net/removing-attachment-from-an-existing-pdf/)
 - [Portfolio](/pdf/fr/net/portfolio/)
 
 <script type="application/ld+json">
@@ -147,4 +151,3 @@ Vous apprendrez comment ajouter des pièces jointes à un pdf, obtenir les infor
     }
 }
 </script>
-

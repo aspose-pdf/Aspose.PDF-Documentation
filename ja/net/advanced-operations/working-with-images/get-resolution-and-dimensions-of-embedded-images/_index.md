@@ -1,32 +1,35 @@
 ---
 title: 画像の解像度と寸法を取得する
-linktitle: 解像度と寸法を取得
+linktitle: 解像度と寸法を取得する
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ja/net/get-resolution-and-dimensions-of-embedded-images/
-description: このセクションは、埋め込み画像の解像度と寸法を取得する詳細を示しています
+description: Aspose.PDFを使用して、.NETでPDFから埋め込まれた画像の解像度と寸法を取得する方法を学びます。
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "画像の解像度と寸法を取得する",
-    "alternativeHeadline": "埋め込み画像の解像度と寸法を取得する方法",
+    "headline": "Get Resolution and Dimensions of Images",
+    "alternativeHeadline": "Extract Image Resolution and Dimensions Efficiently",
+    "abstract": "Aspose.PDFライブラリを使用して、PDF文書内の埋め込まれた画像の解像度と寸法を効率的に取得する方法を発見してください。この機能により、開発者は抽出せずに画像プロパティに直接アクセスでき、PDFファイル内の画像操作プロセスを簡素化し、画像データに対する機能と制御を強化します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "PDF, C#, 解像度を取得, 寸法を取得",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Get Resolution, Dimensions of Images, Embedded Images, Aspose.PDF.Drawing, ArrayList, Image Placement Classes, ConcatenateMatrix, XImage, PDF Manipulation Library, Image Resolution Computation",
+    "wordcount": "827",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,127 +71,131 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/get-resolution-and-dimensions-of-embedded-images/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このセクションは、埋め込み画像の解像度と寸法を取得する詳細を示しています"
+    "dateModified": "2024-11-26",
+    "description": "このセクションでは、埋め込まれた画像の解像度と寸法を取得する方法の詳細を示します。"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
-このトピックでは、画像を抽出することなく、画像の解像度や寸法情報を取得する機能を提供する Aspose.PDF 名前空間のオペレータークラスの使用方法について説明します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-これを達成する方法はいくつかあります。この記事では、`arraylist` と [image placement classes](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement) の使用方法について説明します。
+このトピックでは、画像を抽出せずに解像度と寸法情報を取得する機能を提供するAspose.PDF名前空間のオペレータクラスの使用方法を説明します。
 
-1. 最初に、画像が含まれるソースPDFファイルを読み込みます。
-1. 次に、ドキュメント内の画像の名前を保持するための ArrayList オブジェクトを作成します。
-1. Page.Resources.Images プロパティを使用して画像を取得します。
-1. 画像のグラフィックステートを保持するスタックオブジェクトを作成し、異なる画像状態を追跡するために使用します。
-1.
-1.
-1. マトリックスをConcatenateMatrixで修正できるため、元の画像状態に戻す必要がある場合もあります。GSaveおよびGRestoreオペレーターを使用してください。これらのオペレーターはペアになっているため、一緒に呼び出す必要があります。たとえば、複雑な変換を伴うグラフィック作業を行い、最終的に変換を初期状態に戻す場合、アプローチは次のようになります：
+これを達成する方法はいくつかあります。この記事では、`arraylist`と[画像配置クラス](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement)を使用する方法を説明します。
+
+1. まず、ソースPDFファイル（画像を含む）をロードします。
+1. 次に、ドキュメント内の画像の名前を保持するためにArrayListオブジェクトを作成します。
+1. Page.Resources.Imagesプロパティを使用して画像を取得します。
+1. 画像のグラフィックス状態を保持するためのスタックオブジェクトを作成し、異なる画像状態を追跡します。
+1. 現在の変換を定義するConcatenateMatrixオブジェクトを作成します。これにより、コンテンツのスケーリング、回転、歪みをサポートします。新しい行列を以前の行列と連結します。最初から変換を定義することはできず、既存の変換のみを変更できることに注意してください。
+1. ConcatenateMatrixで行列を変更できるため、元の画像状態に戻す必要がある場合もあります。GSaveおよびGRestoreオペレータを使用します。これらのオペレータはペアになっているため、一緒に呼び出す必要があります。たとえば、複雑な変換でグラフィックス作業を行い、最終的に変換を初期状態に戻す場合、アプローチは次のようになります。
 
 ```csharp
-// テキストを描画
+// Draw some text
 GSave
 
-ConcatenateMatrix  // オペレーターの後で内容を回転
+ConcatenateMatrix  // rotate contents after the operator
 
-// グラフィック作業
+// Some graphics work
 
-ConcatenateMatrix // オペレーターの後で内容を拡大（前の回転を含む）
+ConcatenateMatrix // scale (with previous rotation) contents after the operator
 
-// その他のグラフィック作業
+// Some other graphics work
 
 GRestore
 
-// テキストを描画
+// Draw some text
 ```
 
-その結果、テキストは通常の形で描画されますが、テキストオペレーター間でいくつかの変換が実行されます。画像を表示するため、またはフォームオブジェクトや画像を描画するために、Doオペレーターを使用する必要があります。
+その結果、テキストは通常の形式で描画されますが、テキストオペレータの間にいくつかの変換が行われます。画像を表示したり、形状オブジェクトや画像を描画するためには、Doオペレータを使用する必要があります。
 
-また、XImageというクラスがあり、WidthとHeightの2つのプロパティを提供しており、画像の寸法を取得するために使用できます。
+また、画像の寸法を取得するために使用できるWidthおよびHeightという2つのプロパティを提供するXImageというクラスもあります。
 
-1.
-1. コマンドプロンプトで画像名とともに情報を表示します。
+1. 画像解像度を計算するためのいくつかの計算を実行します。
+1. 画像名とともにコマンドプロンプトに情報を表示します。
 
-次のコードスニペットは、PDFドキュメントから画像を抽出せずに画像の寸法と解像度を取得する方法を示しています。
+次のコードスニペットは、PDF文書から画像を抽出せずに画像の寸法と解像度を取得する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパスです。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-// ソースPDFファイルをロードします
-Document doc = new Document(dataDir+ "ImageInformation.pdf");
-
-// 画像のデフォルト解像度を定義します
-int defaultResolution = 72;
-System.Collections.Stack graphicsState = new System.Collections.Stack();
-// 画像名を保持するための配列リストオブジェクトを定義します
-System.Collections.ArrayList imageNames = new System.Collections.ArrayList(doc.Pages[1].Resources.Images.Names);
-// スタックにオブジェクトを挿入します
-graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
-
-// ドキュメントの最初のページのすべてのオペレーターを取得します
-foreach (Operator op in doc.Pages[1].Contents)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageInformationFromPDF()
 {
-    // GSave/GRestoreオペレーターを使って、以前に設定された変換に戻します
-    Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-    Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
-    // 現在の変換行列を定義するConcatenateMatrixオブジェクトをインスタンス化します。
-    Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
-    // リソースからオブジェクトを描画するDoオペレーターを作成します。FormオブジェクトとImageオブジェクトを描画します
-    Aspose.Pdf.Operators.Do opDo = op as Aspose.Pdf.Operators.Do;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    if (opSaveState != null)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageInformation.pdf"))
     {
-        // 以前の状態を保存し、現在の状態をスタックの一番上にプッシュします
-        graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
-    }
-    else if (opRestoreState != null)
-    {
-        // 現在の状態を捨てて、以前の状態を復元します
-        graphicsState.Pop();
-    }
-    else if (opCtm != null)
-    {
-        System.Drawing.Drawing2D.Matrix cm = new System.Drawing.Drawing2D.Matrix(
-           (float)opCtm.Matrix.A,
-           (float)opCtm.Matrix.B,
-           (float)opCtm.Matrix.C,
-           (float)opCtm.Matrix.D,
-           (float)opCtm.Matrix.E,
-           (float)opCtm.Matrix.F);
+        // Define the default resolution for image
+        int defaultResolution = 72;
+        var graphicsState = new Stack();
 
-        // 現在の行列と状態行列を乗算します
-        ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
+        // Define list which will hold image names
+        var imageNames = new List<string>(document.Pages[1].Resources.Images.Names);
 
-        continue;
-    }
-    else if (opDo != null)
-    {
-        // これが画像描画オペレーターの場合
-        if (imageNames.Contains(opDo.Name))
+        // Insert an object to stack
+        graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
+
+        // Get all the operators on first page of document
+        foreach (var op in document.Pages[1].Contents)
         {
-            System.Drawing.Drawing2D.Matrix lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
-            // 最初のPDFページの画像を保持するXImageオブジェクトを作成します
-            XImage image = doc.Pages[1].Resources.Images[opDo.Name];
+            // Use GSave/GRestore operators to revert the transformations back to previously set
+            var opSaveState = op as Aspose.Pdf.Operators.GSave;
+            var opRestoreState = op as Aspose.Pdf.Operators.GRestore;
+            var opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
+            var opDo = op as Aspose.Pdf.Operators.Do;
 
-            // 画像の寸法を取得します
-            double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));
-            double scaledHeight = Math.Sqrt(Math.Pow(lastCTM.Elements[2], 2) + Math.Pow(lastCTM.Elements[3], 2));
-            // 画像の高さと幅の情報を取得します
-            double originalWidth = image.Width;
-            double originalHeight = image.Height;
+            if (opSaveState != null)
+            {
+                // Save previous state and push current state to the top of the stack
+                graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
+            }
+            else if (opRestoreState != null)
+            {
+                // Throw away current state and restore previous one
+                graphicsState.Pop();
+            }
+            else if (opCtm != null)
+            {
+                var cm = new System.Drawing.Drawing2D.Matrix(
+                   (float)opCtm.Matrix.A,
+                   (float)opCtm.Matrix.B,
+                   (float)opCtm.Matrix.C,
+                   (float)opCtm.Matrix.D,
+                   (float)opCtm.Matrix.E,
+                   (float)opCtm.Matrix.F);
 
-            // 上記の情報に基づいて解像度を計算します
-            double resHorizontal = originalWidth * defaultResolution / scaledWidth;
-            double resVertical = originalHeight * defaultResolution / scaledHeight;
+                // Multiply current matrix with the state matrix
+                ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
 
-            // 各画像の寸法と解像度の情報を表示します
-            Console.Out.WriteLine(
-                    string.Format(dataDir + "image {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}",
-                                 opDo.Name, scaledWidth, scaledHeight, resHorizontal,
-                                 resVertical));
+                continue;
+            }
+            else if (opDo != null)
+            {
+                // In case this is an image drawing operator
+                if (imageNames.Contains(opDo.Name))
+                {
+                    var lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
+                    // Create XImage object to hold images of first pdf page
+                    var image = document.Pages[1].Resources.Images[opDo.Name];
+
+                    // Get image dimensions
+                    double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));
+                    double scaledHeight = Math.Sqrt(Math.Pow(lastCTM.Elements[2], 2) + Math.Pow(lastCTM.Elements[3], 2));
+                    // Get Height and Width information of image
+                    double originalWidth = image.Width;
+                    double originalHeight = image.Height;
+
+                    // Compute resolution based on above information
+                    double resHorizontal = originalWidth * defaultResolution / scaledWidth;
+                    double resVertical = originalHeight * defaultResolution / scaledHeight;
+
+                    // Display Dimension and Resolution information of each image
+                    Console.Out.WriteLine(
+                            string.Format(dataDir + "image {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}",
+                                         opDo.Name, scaledWidth, scaledHeight, resHorizontal,
+                                         resVertical));
+                }
+            }
         }
     }
 }
@@ -220,21 +227,21 @@ foreach (Operator op in doc.Pages[1].Contents)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -245,7 +252,7 @@ foreach (Operator op in doc.Pages[1].Contents)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -257,5 +264,3 @@ foreach (Operator op in doc.Pages[1].Contents)
     }
 }
 </script>
-```
-

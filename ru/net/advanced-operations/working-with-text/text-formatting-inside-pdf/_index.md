@@ -1,10 +1,12 @@
 ---
-title: Форматирование текста внутри PDF с использованием C#
-linktitle: Форматирование текста внутри PDF
+title: Форматирование текста внутри PDF с помощью C#
+linktitle: Форматирование текста в PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ru/net/text-formatting-inside-pdf/
-description: Эта страница объясняет, как форматировать текст внутри вашего файла PDF. Здесь рассмотрены добавление отступа строки, добавление границы текста, добавление подчеркивания текста и т.д.
+description: Узнайте, как форматировать текст в документе PDF в .NET с помощью Aspose.PDF для улучшения визуального представления документа.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Форматирование текста внутри PDF с использованием C#",
-    "alternativeHeadline": "Как форматировать текст в файле PDF",
+    "headline": "Text Formatting inside PDF using C#",
+    "alternativeHeadline": "Enhance PDF Text Formatting with New C# Features",
+    "abstract": "Откройте для себя мощные возможности форматирования текста в Aspose.PDF для .NET, которые позволяют добавлять отступы строк, границы текста, эффекты подчёркивания и многое другое в ваши PDF-документы. Эта функция обеспечивает точный контроль над эстетикой и макетом текста, улучшая общее представление ваших PDF-файлов. Оптимизируйте рабочие процессы создания PDF-документов с помощью универсальных параметров форматирования, разработанных специально для разработчиков",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, форматирование текста в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "wordcount": "1642",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,292 +73,388 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-formatting-inside-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Эта страница объясняет, как форматировать текст внутри вашего файла PDF. Здесь рассмотрены добавление отступа строки, добавление границы текста, добавление подчеркивания текста и т.д."
+    "dateModified": "2024-11-26",
+    "description": "На этой странице объясняется, как форматировать текст внутри вашего PDF-файла. Можно добавить отступ строки, границу текста, подчёркивание текста и т. д."
 }
 </script>
+
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-## Как добавить отступ в PDF
+## Как добавить отступ строки в PDF
 
-Aspose.PDF для .NET предлагает свойство SubsequentLinesIndent в классе [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions). Оно может быть использовано для указания отступа строк при генерации PDF с использованием TextFragment и коллекции Paragraphs.
+Aspose.PDF for .NET предлагает свойство SubsequentLinesIndent в классе [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions), которое можно использовать для указания отступа строки в сценариях генерации PDF с TextFragment и коллекцией Paragraphs.
 
-Пожалуйста, используйте следующий фрагмент кода для использования свойства:
+Пожалуйста, используйте следующий фрагмент кода, чтобы использовать это свойство:
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Создать новый объект документа
-Aspose.Pdf.Document document = new Aspose.Pdf.Document();
-Aspose.Pdf.Page page = document.Pages.Add();
-
-string textFragment = string.Concat(Enumerable.Repeat("Быстрая коричневая лиса перепрыгнула через ленивого пса. ", 10));
-
-Aspose.Pdf.Text.TextFragment text = new Aspose.Pdf.Text.TextFragment(textFragment);
-
-// Инициализируйте TextFormattingOptions для фрагмента текста и укажите значение SubsequentLinesIndent
-text.TextState.FormattingOptions = new Aspose.Pdf.Text.TextFormattingOptions()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void TextFormattingInsidePdf()
 {
-    SubsequentLinesIndent = 20
-};
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-page.Paragraphs.Add(text);
-
-text = new Aspose.Pdf.Text.TextFragment("Строка2");
-page.Paragraphs.Add(text);
-
-text = new Aspose.Pdf.Text.TextFragment("Строка3");
-page.Paragraphs.Add(text);
-
-text = new Aspose.Pdf.Text.TextFragment("Строка4");
-page.Paragraphs.Add(text);
-
-text = new Aspose.Pdf.Text.TextFragment("Строка5");
-page.Paragraphs.Add(text);
-
-document.Save(dataDir + "SubsequentIndent_out.pdf");
-```
-## Как добавить границу к тексту
-
-Следующий фрагмент кода показывает, как добавить границу к тексту с использованием TextBuilder и установкой свойства DrawTextRectangleBorder объекта TextState:
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Создание нового объекта документа
-Document pdfDocument = new Document();
-// Получение конкретной страницы
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// Создание текстового фрагмента
-TextFragment textFragment = new TextFragment("основной текст");
-textFragment.Position = new Position(100, 600);
-// Установка свойств текста
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-// Установка свойства StrokingColor для рисования границы (обводки) вокруг текстового прямоугольника
-textFragment.TextState.StrokingColor = Aspose.Pdf.Color.DarkRed;
-// Установка значения свойства DrawTextRectangleBorder в true
-textFragment.TextState.DrawTextRectangleBorder = true;
-TextBuilder tb = new TextBuilder(pdfPage);
-tb.AppendText(textFragment);
-// Сохранение документа
-pdfDocument.Save(dataDir + "PDFWithTextBorder_out.pdf");
-```
-## Как добавить подчеркнутый текст
-
-Следующий фрагмент кода показывает, как добавить подчеркнутый текст при создании нового файла PDF.
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Создать объект документации
-Document pdfDocument = new Document();
-// Добавить страницу в PDF документ
-pdfDocument.Pages.Add();
-// Создать TextBuilder для первой страницы
-TextBuilder tb = new TextBuilder(pdfDocument.Pages[1]);
-// TextFragment с примером текста
-TextFragment fragment = new TextFragment("Test message");
-// Установить шрифт для TextFragment
-fragment.TextState.Font = FontRepository.FindFont("Arial");
-fragment.TextState.FontSize = 10;
-// Установить форматирование текста как подчеркнутый
-fragment.TextState.Underline = true;
-// Указать позицию, где нужно разместить TextFragment
-fragment.Position = new Position(10, 800);
-// Добавить TextFragment в PDF файл
-tb.AppendText(fragment);
-
-dataDir = dataDir + "AddUnderlineText_out.pdf";
-
-// Сохранить результат в PDF документ.
-pdfDocument.Save(dataDir);
-```
-## Как добавить рамку вокруг добавленного текста
-
-У вас есть контроль над внешним видом добавляемого текста. Пример ниже показывает, как добавить рамку вокруг текста, нарисовав вокруг него прямоугольник. Узнайте больше о классе [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor).
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-PdfContentEditor editor = new PdfContentEditor();
-editor.BindPdf(dataDir + "input.pdf");
-LineInfo lineInfo = new LineInfo();
-lineInfo.LineWidth = 2;
-lineInfo.VerticeCoordinate = new float[] { 0, 0, 100, 100, 50, 100 };
-lineInfo.Visibility = true;
-editor.CreatePolygon(lineInfo, 1, new System.Drawing.Rectangle(0, 0, 0, 0), "");
-
-dataDir = dataDir + "AddingBorderAroundAddedText_out.pdf";
-
-// Сохранить результат в PDF документ.
-editor.Save(dataDir);
-```
-
-## Как добавить перевод строки
-## Как добавить перевод строки
-
-TextFragment не поддерживает перевод строки внутри текста. Однако для добавления текста с переводом строки используйте TextFragment с TextParagraph:
-
-- используйте "\r\n" или Environment.NewLine в TextFragment вместо одиночного "\n";
-- создайте объект TextParagraph. Он добавит текст с разделением строк;
-- добавьте TextFragment с TextParagraph.AppendLine;
-- добавьте TextParagraph с TextBuilder.AppendParagraph.
-Пожалуйста, используйте приведенный ниже фрагмент кода.
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
-
-// Инициализируйте новый TextFragment с текстом, содержащим необходимые маркеры новой строки
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Имя заявителя: " + Environment.NewLine + " Джо Смо");
-
-// Установите свойства фрагмента текста, если это необходимо
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-
-// Создайте объект TextParagraph
-TextParagraph par = new TextParagraph();
-
-// Добавьте новый TextFragment в абзац
-par.AppendLine(textFragment);
-
-// Установите позицию абзаца
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
-
-// Создайте объект TextBuilder
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// Добавьте TextParagraph с помощью TextBuilder
-textBuilder.AppendParagraph(par);
-
-
-dataDir = dataDir + "AddNewLineFeed_out.pdf";
-
-// Сохраните результатирующий PDF-документ.
-pdfApplicationDoc.Save(dataDir);
-```
-## Как добавить текст с зачеркиванием
-
-Класс TextState предоставляет возможности для установки форматирования для TextFragments, размещаемых внутри PDF-документа. Вы можете использовать этот класс для установки форматирования текста, такого как Жирный, Курсив, Подчеркнутый и начиная с этого выпуска, API предоставило возможности отмечать форматирование текста как Зачеркнутый. Пожалуйста, попробуйте использовать следующий фрагмент кода для добавления TextFragment с форматированием зачеркивания.
-
-Пожалуйста, используйте полный фрагмент кода:
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Открыть документ
-Document pdfDocument = new Document();
-// Получить конкретную страницу
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-
-// Создать фрагмент текста
-TextFragment textFragment = new TextFragment("основной текст");
-textFragment.Position = new Position(100, 600);
-
-// Установить свойства текста
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-// Установить свойство StrikeOut
-textFragment.TextState.StrikeOut = true;
-// Отметить текст как Жирный
-textFragment.TextState.FontStyle = FontStyles.Bold;
-
-// Создать объект TextBuilder
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// Добавить фрагмент текста на страницу PDF
-textBuilder.AppendText(textFragment);
-
-
-dataDir = dataDir + "AddStrikeOutText_out.pdf";
-
-// Сохранить результирующий PDF-документ.
-pdfDocument.Save(dataDir);
-```
-## Применение градиентной заливки к тексту
-
-Форматирование текста было дополнительно улучшено в API для сценариев редактирования текста, и теперь вы можете добавлять текст с цветовым пространством узора внутри PDF-документа. Класс Aspose.Pdf.Color был дополнительно усовершенствован за счет введения нового свойства PatternColorSpace, которое можно использовать для указания цветов затенения для текста. Это новое свойство добавляет различные градиентные затенения к тексту, например, осевое затенение, радиальное (тип 3) затенение, как показано в следующем фрагменте кода:
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
-{
-    TextFragmentAbsorber absorber = new TextFragmentAbsorber("Lorem ipsum");
-    pdfDocument.Pages.Accept(absorber);
-
-    TextFragment textFragment = absorber.TextFragments[1];
-
-    // Создание нового цвета с цветовым пространством узора
-    textFragment.TextState.ForegroundColor = new Aspose.Pdf.Color()
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-        PatternColorSpace = new Aspose.Pdf.Drawing.GradientAxialShading(Color.Red, Color.Blue)
-    };
-    textFragment.TextState.Underline = true;
+        var page = document.Pages.Add();
 
-    pdfDocument.Save(dataDir + "text_out.pdf");
+        string textFragment = string.Concat(Enumerable.Repeat("A quick brown fox jumped over the lazy dog. ", 10));
+
+        Aspose.Pdf.Text.TextFragment text = new Aspose.Pdf.Text.TextFragment(textFragment);
+
+        // Initilize TextFormattingOptions for the text fragment and specify SubsequentLinesIndent value
+        text.TextState.FormattingOptions = new Aspose.Pdf.Text.TextFormattingOptions()
+        {
+            SubsequentLinesIndent = 20
+        };
+
+        page.Paragraphs.Add(text);
+
+        text = new Aspose.Pdf.Text.TextFragment("Line2");
+        page.Paragraphs.Add(text);
+
+        text = new Aspose.Pdf.Text.TextFragment("Line3");
+        page.Paragraphs.Add(text);
+
+        text = new Aspose.Pdf.Text.TextFragment("Line4");
+        page.Paragraphs.Add(text);
+
+        text = new Aspose.Pdf.Text.TextFragment("Line5");
+        page.Paragraphs.Add(text);
+
+        // Save PDF document
+        document.Save(dataDir + "SubsequentIndent_out.pdf");
+    }
 }
 ```
->Чтобы применить радиальный градиент, вы можете установить свойство 'PatternColorSpace' равным 'Aspose.Pdf.Drawing.GradientRadialShading(startingColor, endingColor)' в приведенном выше фрагменте кода.
 
-## Как выровнять текст, чтобы он соответствовал плавающему содержимому
+## Как добавить границу текста
 
-Aspose.PDF поддерживает настройку выравнивания текста для содержимого внутри элемента Floating Box. Свойства выравнивания экземпляра Aspose.Pdf.FloatingBox могут быть использованы для этого, как показано в следующем примере кода.
+В следующем фрагменте кода показано, как добавить границу к тексту с помощью TextBuilder и установки свойства DrawTextRectangleBorder в TextState:
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextBorder()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Aspose.Pdf.Document doc = new Document();
-doc.Pages.Add();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get particular page
+        var page = document.Pages.Add();
+        // Create text fragment
+        var textFragment = new Aspose.Pdf.Text.TextFragment("main text");
+        textFragment.Position = new Aspose.Pdf.Text.Position(100, 600);
+        // Set text properties
+        textFragment.TextState.FontSize = 12;
+        textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
+        textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+        // Set StrokingColor property for drawing border (stroking) around text rectangle
+        textFragment.TextState.StrokingColor = Aspose.Pdf.Color.DarkRed;
+        // Set DrawTextRectangleBorder property value to true
+        textFragment.TextState.DrawTextRectangleBorder = true;
+        var tb = new Aspose.Pdf.Text.TextBuilder(page);
+        tb.AppendText(textFragment);
 
-Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox(100, 100);
-floatBox.VerticalAlignment = VerticalAlignment.Bottom;
-floatBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-floatBox.Paragraphs.Add(new TextFragment("FloatingBox_bottom"));
-floatBox.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox);
+        // Save PDF document
+        document.Save(dataDir + "PDFWithTextBorder_out.pdf");
+    }
+}
+```
 
-Aspose.Pdf.FloatingBox floatBox1 = new Aspose.Pdf.FloatingBox(100, 100);
-floatBox1.VerticalAlignment = VerticalAlignment.Center;
-floatBox1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-floatBox1.Paragraphs.Add(new TextFragment("FloatingBox_center"));
-floatBox1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox1);
+## Как добавить подчёркивание текста
 
-Aspose.Pdf.FloatingBox floatBox2 = new Aspose.Pdf.FloatingBox(100, 100);
-floatBox2.VerticalAlignment = VerticalAlignment.Top;
-floatBox2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-floatBox2.Paragraphs.Add(new TextFragment("FloatingBox_top"));
-floatBox2.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox2);
+Следующий фрагмент кода показывает, как добавить подчёркивание при создании нового PDF-файла.
 
-doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddUnderlineText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add age page to PDF document
+        document.Pages.Add();
+        // Create TextBuilder for first page
+        var tb = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
+        // TextFragment with sample text
+        var fragment = new Aspose.Pdf.Text.TextFragment("Test message");
+        // Set the font for TextFragment
+        fragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        fragment.TextState.FontSize = 10;
+        // Set the formatting of text as Underline
+        fragment.TextState.Underline = true;
+        // Specify the position where TextFragment needs to be placed
+        fragment.Position = new Aspose.Pdf.Text.Position(10, 800);
+        // Append TextFragment to PDF file
+        tb.AppendText(fragment);
+
+        // Save PDF document
+        document.Save(dataDir + "AddUnderlineText_out.pdf");
+    }
+}
+```
+
+## Как добавить рамку вокруг добавленного текста
+
+Вы можете контролировать внешний вид добавляемого текста. В примере ниже показано, как добавить рамку вокруг фрагмента текста, который вы добавили, нарисовав вокруг него прямоугольник. Узнайте больше о классе [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor).
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBorder()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    
+    // Open PDF document
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        // Bind PDF document
+        editor.BindPdf(dataDir + "AddBorder.pdf");
+        var lineInfo = new Aspose.Pdf.Facades.LineInfo();
+        lineInfo.LineWidth = 2;
+        lineInfo.VerticeCoordinate = new float[] { 0, 0, 100, 100, 50, 100 };
+        lineInfo.Visibility = true;
+        // Add border
+        editor.CreatePolygon(lineInfo, 1, new System.Drawing.Rectangle(0, 0, 0, 0), "");
+
+        // Save PDF document
+        editor.Save(dataDir + "AddingBorderAroundAddedText_out.pdf");
+    }
+}
+```
+
+## Как добавить перевод строки
+
+TextFragment не поддерживает перевод строки внутри текста. Однако, чтобы добавить текст с переводом строки, используйте TextFragment с TextParagraph:
+
+* Используйте «\r\n» или Environment.NewLine в TextFragment вместо одиночного «\n».
+* Создайте объект TextParagraph. Он добавит текст с разбивкой строк.
+* Добавьте TextFragment с помощью TextParagraph.AppendLine.
+* Добавьте TextParagraph с помощью TextBuilder.AppendParagraph.
+
+Используйте следующий фрагмент кода.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddNewLine()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+
+        // Initialize new TextFragment with text containing required newline markers
+        var textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
+
+        // Set text fragment properties if necessary
+        textFragment.TextState.FontSize = 12;
+        textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
+        textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+
+        // Create TextParagraph object
+        var par = new Aspose.Pdf.Text.TextParagraph();
+
+        // Add new TextFragment to paragraph
+        par.AppendLine(textFragment);
+
+        // Set paragraph position
+        par.Position = new Aspose.Pdf.Text.Position(100, 600);
+
+        // Create TextBuilder object
+        var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
+        // Add the TextParagraph using TextBuilder
+        textBuilder.AppendParagraph(par);
+
+        // Save PDF document
+        document.Save(dataDir + "AddNewLineFeed_out.pdf");
+    }
+}
+```
+
+## Как добавить зачёркивание текста
+
+Класс TextState предоставляет возможности для установки форматирования для текстовых фрагментов, размещаемых внутри PDF-документа. Вы можете использовать этот класс для установки форматирования текста как полужирного, курсивного, подчёркнутого, а начиная с этого выпуска API предоставил возможности отмечать форматирование текста как зачёркнутое. Попробуйте использовать следующий фрагмент кода для добавления TextFragment с форматированием зачёркивания.
+
+Используйте полный фрагмент кода:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddStrikeoutText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get particular page
+        var page = document.Pages.Add();
+
+        // Create text fragment
+        var textFragment = new Aspose.Pdf.Text.TextFragment("main text");
+        textFragment.Position = new Aspose.Pdf.Text.Position(100, 600);
+
+        // Set text properties
+        textFragment.TextState.FontSize = 12;
+        textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
+        textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+        // Set StrikeOut property
+        textFragment.TextState.StrikeOut = true;
+        // Mark text as Bold
+        textFragment.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+
+        // Create TextBuilder object
+        var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
+        // Append the text fragment to the PDF page
+        textBuilder.AppendText(textFragment);
+
+        // Save PDF document
+        document.Save(dataDir + "AddStrikeOutText_out.pdf");
+    }
+}
+```
+
+## Применение градиентного затенения к тексту
+
+Форматирование текста было дополнительно улучшено в API для сценариев редактирования текста, и теперь вы можете добавлять текст с шаблоном цветового пространства внутри PDF-документа. Класс Aspose.Pdf.Color был дополнительно усовершенствован путём введения нового свойства PatternColorSpace, которое можно использовать для указания цветов затенения для текста. Это новое свойство добавляет различные градиентные заливки к тексту, например, осевое затенение, радиальное (тип 3) затенение, как показано в следующем фрагменте кода:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ApplyGradientShadingToText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "text_sample4.pdf"))
+    {
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Lorem ipsum");
+        document.Pages.Accept(absorber);
+
+        var textFragment = absorber.TextFragments[1];
+
+        // Create new color with pattern colorspace
+        textFragment.TextState.ForegroundColor = new Aspose.Pdf.Color()
+        {
+            PatternColorSpace = new Aspose.Pdf.Drawing.GradientAxialShading(Aspose.Pdf.Color.Red, Aspose.Pdf.Color.Blue)
+        };
+        textFragment.TextState.Underline = true;
+
+        // Save PDF document
+        document.Save(dataDir +"ApplyGradientShadingToText_out.pdf");
+    }
+}
+```
+
+> Чтобы применить радиальный градиент, вы можете установить для свойства 'PatternColorSpace' значение 'Aspose.Pdf.Drawing.GradientRadialShading(startingColor, endingColor)' в приведённом выше фрагменте кода.
+
+## Как выровнять текст по плавающему содержимому
+
+Aspose.PDF поддерживает установку выравнивания текста для содержимого внутри элемента Floating Box. Для достижения этого можно использовать свойства выравнивания экземпляра Aspose.Pdf.FloatingBox, как показано в следующем примере кода.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AlignTextToFloat()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+
+        // Create float box
+        Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox(100, 100);
+        // Set settings to float box
+        floatBox.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Bottom;
+        floatBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
+        floatBox.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("FloatingBox_bottom"));
+        floatBox.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
+        // Add float box
+        page.Paragraphs.Add(floatBox);
+
+        // Create float box
+        Aspose.Pdf.FloatingBox floatBox1 = new Aspose.Pdf.FloatingBox(100, 100);
+        // Set settings to float box
+        floatBox1.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Center;
+        floatBox1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
+        floatBox1.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("FloatingBox_center"));
+        floatBox1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
+        // Add float box
+        page.Paragraphs.Add(floatBox1);
+
+        // Create float box
+        Aspose.Pdf.FloatingBox floatBox2 = new Aspose.Pdf.FloatingBox(100, 100);
+        // Set settings to float box
+        floatBox2.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
+        floatBox2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
+        floatBox2.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("FloatingBox_top"));
+        floatBox2.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
+        // Add float box
+        page.Paragraphs.Add(floatBox2);
+
+        // Save PDF document
+        document.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
+    }
+}
+```
+
+## Как удалить скрытый текст из PDF-файла
+
+Сначала фрагмент кода создаёт объект Document из файла. Затем он добавляет TextFragmentAbsorber для поиска и редактирования текста. Затем он проверяет наличие скрытого текста и удаляет его. Наконец, он сохраняет обновлённый документ.
+
+Этот метод сохраняет видимый текст без изменений и сохраняет макет.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveHiddenText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "HiddenText.pdf"))
+    {
+        var textAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+
+        // This option can be used to prevent other text fragments from moving after hidden text replacement
+        textAbsorber.TextReplaceOptions = new Aspose.Pdf.Text.TextReplaceOptions(Aspose.Pdf.Text.TextReplaceOptions.ReplaceAdjustment.None);
+
+        document.Pages.Accept(textAbsorber);
+
+        // Remove hidden text
+        foreach (var fragment in textAbsorber.TextFragments)
+        {
+            if (fragment.TextState.Invisible)
+            {
+                fragment.Text = "";
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "HiddenText_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для .NET Library",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -378,23 +476,23 @@ doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "английский"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "английский"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "английский"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -403,7 +501,7 @@ doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипуляции PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -415,5 +513,3 @@ doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
     }
 }
 </script>
-```
-

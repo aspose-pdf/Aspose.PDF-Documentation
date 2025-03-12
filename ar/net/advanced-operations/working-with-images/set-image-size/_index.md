@@ -1,7 +1,9 @@
 ---
-title: Set Image Size
-linktitle: Set Image Size
+title: تعيين حجم الصورة
+linktitle: تعيين حجم الصورة
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /ar/net/set-image-size/
 description: يصف هذا القسم كيفية تعيين حجم الصورة في ملف PDF باستخدام مكتبة C#.
@@ -12,21 +14,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Set Image Size",
-    "alternativeHeadline": "كيفية تعيين حجم الصورة في ملف PDF باستخدام C#",
+    "alternativeHeadline": "Set Custom Image Dimensions in PDFs with C#",
+    "abstract": "اكتشف ميزة تعيين حجم الصورة الجديدة في مكتبة Aspose.PDF لـ .NET، مما يتيح لك بسهولة تحديد أبعاد الصور المضافة إلى مستندات PDF. مع خصائص مثل FixWidth و FixHeight، يمكنك تخصيص أحجام الصور لمظهر مصقول واحترافي في ملفات PDF الخاصة بك. قم بتحسين سير عمل إنشاء PDF الخاص بك من خلال إتقان هذه الوظيفة الأساسية",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, c#, set image size",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Set Image Size, PDF generation, C# library, FixWidth, FixHeight, Aspose.Pdf.Image, image dimensions, PDF file manipulation, Aspose.PDF for .NET",
+    "wordcount": "216",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,44 +71,59 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/set-image-size/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "يصف هذا القسم كيفية تعيين حجم الصورة في ملف PDF باستخدام مكتبة C#."
 }
 </script>
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-من الممكن تحديد حجم الصورة التي يتم إضافتها إلى ملف PDF. لتعيين الحجم، يمكنك استخدام خصائص FixWidth و FixHeight لفئة Aspose.Pdf.Image. يوضح الجزء التالي من الكود كيفية تعيين حجم الصورة:
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+
+من الممكن تعيين حجم صورة تتم إضافتها إلى ملف PDF. لتعيين الحجم، يمكنك استخدام خصائص FixWidth و FixHeight من فئة Aspose.Pdf.Image. يوضح مقتطف الشيفرة التالي كيفية تعيين حجم صورة:
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-// توثيق كائن المستند
-Document doc = new Document();
-// إضافة صفحة إلى مجموعة صفحات ملف PDF
-Aspose.Pdf.Page page = doc.Pages.Add();
-// إنشاء نموذج صورة
-Aspose.Pdf.Image img = new Aspose.Pdf.Image();
-// تعيين عرض وارتفاع الصورة بالنقاط
-img.FixWidth = 100;
-img.FixHeight = 100;
-// تعيين نوع الصورة كـ SVG
-img.FileType = Aspose.Pdf.ImageFileType.Unknown;
-// مسار لملف المصدر
-img.File = dataDir + "aspose-logo.jpg";
-page.Paragraphs.Add(img);
-// تعيين خصائص الصفحة
-page.PageInfo.Width = 800;
-page.PageInfo.Height = 800;
-dataDir = dataDir + "SetImageSize_out.pdf";
-// حفظ ملف PDF الناتج
-doc.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetImageSizeInPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Create an image instance
+        var img = new Aspose.Pdf.Image();
+
+        // Set Image Width and Height in Points
+        img.FixWidth = 100;
+        img.FixHeight = 100;
+
+        // Set image type as SVG
+        img.FileType = Aspose.Pdf.ImageFileType.Unknown;
+
+        // Path for source file
+        img.File = dataDir + "InputImage.jpg";
+
+        // Add image to the page
+        page.Paragraphs.Add(img);
+
+        // Set page properties
+        page.PageInfo.Width = 800;
+        page.PageInfo.Height = 800;
+
+        // Save PDF document
+        document.Save(dataDir + "SetImageSize_out.pdf");
+    }
+}
 ```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -127,34 +145,34 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "بريطانيا العظمى",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
     "offers": {
         "@type": "Offer",
         "price": "1199",
-        "priceCurrency": "دولار أمريكي"
+        "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تعديل ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "ويندوز، ماك أوس، لينكس",
+    "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
@@ -164,4 +182,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-

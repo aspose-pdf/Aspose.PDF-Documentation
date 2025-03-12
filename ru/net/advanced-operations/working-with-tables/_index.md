@@ -1,10 +1,12 @@
 ---
-title: Работа с таблицами в PDF с использованием C#
+title: Работа с таблицами в PDF с помощью C#
 linktitle: Работа с таблицами
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ru/net/working-with-tables/
-description: Этот раздел описывает, как добавить и извлечь таблицу, как манипулировать и интегрировать таблицу с использованием библиотеки C#.
+description: В этом разделе описывается, как добавлять и извлекать таблицу, как управлять таблицей и интегрировать её с помощью библиотеки C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Работа с таблицами в PDF с использованием C#",
-    "alternativeHeadline": "Как манипулировать таблицами в PDF",
+    "headline": "Working with Tables in PDF using C#",
+    "alternativeHeadline": "Enhanced Table Management in PDF with C#",
+    "abstract": "Aspose.PDF для .NET позволяет пользователям эффективно создавать, извлекать, изменять и удалять таблицы в PDF-документах. Эта функция расширяет возможности интеграции данных, обеспечивая беспроблемное взаимодействие с источниками данных, что делает её важным инструментом для разработчиков, работающих с табличными данными в PDF.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, таблицы в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "wordcount": "257",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,24 +73,22 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-tables/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел описывает, как добавить и извлечь таблицу, как манипулировать и интегрировать таблицу с использованием библиотеки C#."
+    "dateModified": "2024-11-26",
+    "description": "Этот раздел описывает, как добавлять и извлекать таблицу, как управлять таблицей и интегрировать её с помощью библиотеки C#."
 }
 </script>
 
-Таблицы являются частью многих PDF-форм. Вы найдете таблицы в различных формах.
+Таблицы являются частью многих форм PDF. Вы можете найти таблицы в различных формах.
 
-**Aspose.PDF для .NET** позволяет вам продвинуто работать с таблицами в PDF-файле. Этот идеальный инструмент помогает преодолеть простоту PDF-файлов, извлекая таблицы с актуальными данными. С помощью библиотеки .NET вы можете легко создать или добавить таблицу в существующий PDF-документ, извлечь таблицу, интегрировать таблицу с источниками данных и удалить таблицы из существующих PDF-файлов.
+**Aspose.PDF for .NET** позволяет вам работать со сложными таблицами в файле PDF. Этот идеальный инструмент помогает упростить работу с PDF-файлами, извлекая таблицы с актуальными данными. С помощью ресурсов библиотеки .NET вы можете легко создать или добавить таблицу в существующий PDF-документ, извлечь таблицу, интегрировать таблицу с источниками данных и удалить таблицы из существующих PDF-файлов.
 
-Вы можете делать следующее:
+Вы можете:
 
-- [Создать или Добавить Таблицу в существующий PDF-документ](/pdf/ru/net/add-table-in-existing-pdf-document/) - создайте вашу таблицу в pdf-файле с объединением столбцов или строк с учетом границ, отступов и поля.
-- [Извлечь Таблицу из существующего PDF-документа](/pdf/ru/net/extract-table-from-existing-pdf-document/) - вы можете извлечь таблицу из PDF-файла или извлечь границу таблицы как изображение.
-- [Интегрировать Таблицу с Источниками Данных](/pdf/ru/net/integrate-table/) - интегрируйте таблицу с базой данных, интегрируйте таблицу с источником Entity Framework, используя библиотеку .NET.
-- [Манипулировать Таблицами в существующем PDF](/pdf/ru/net/manipulate-tables-in-existing-pdf/) - манипулируйте таблицами в вашем PDF с помощью TableAbsorber.
-
-- [Манипулирование таблицами в существующем PDF](/pdf/ru/net/manipulate-tables-in-existing-pdf/) - манипулируйте таблицами в вашем PDF с использованием TableAbsorber.
-- [Удаление таблиц из существующего PDF](/pdf/ru/net/remove-tables-from-existing-pdf/) - удалите одну или несколько таблиц из документа PDF.
+- [Создать или добавить таблицу в существующий документ PDF](/pdf/ru/net/add-table-in-existing-pdf-document/) — создайте свою таблицу в pdf-файле с объединением столбцов или строк с учётом границ, полей и отступов.
+- [Извлечь таблицу из существующего документа PDF](/pdf/ru/net/extract-table-from-existing-pdf-document/) — вы можете извлечь таблицу из PDF-файла или извлечь границу таблицы в виде изображения.
+- [Интегрировать таблицу с источниками данных](/pdf/ru/net/integrate-table/) — интегрируйте таблицу с базой данных, интегрируйте таблицу с источником Entity Framework с помощью библиотеки .NET.
+- [Управлять таблицами в существующем PDF](/pdf/ru/net/manipulate-tables-in-existing-pdf/) — управляйте таблицами в вашем PDF-файле с помощью TableAbsorber.
+- [Удалить таблицы из существующего PDF](/pdf/ru/net/remove-tables-from-existing-pdf/) — удалите таблицу или несколько таблиц из PDF-документа.
 
 <script type="application/ld+json">
 {
@@ -141,7 +141,7 @@ sitemap:
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипуляции PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -153,4 +153,3 @@ sitemap:
     }
 }
 </script>
-

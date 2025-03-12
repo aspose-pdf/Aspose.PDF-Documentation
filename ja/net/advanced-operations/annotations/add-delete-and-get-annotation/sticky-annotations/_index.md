@@ -1,10 +1,12 @@
 ---
-title: PDF sticky Annotations using C#
-linktitle: Sticky Annotation
+title: PDF スティッキー注釈を使用した C#
+linktitle: スティッキー注釈
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ja/net/sticky-annotations/
-description: このトピックはスティッキーアノテーションについてであり、例としてテキスト内のウォーターマークアノテーションを示しています。
+description: Aspose.PDF を使用して .NET で PDF にノートやハイライトなどのスティッキー注釈を作成する方法を学びます。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -15,21 +17,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "PDF sticky Annotations using C#",
-    "alternativeHeadline": "PDFにスティッキーアノテーションを追加する方法",
+    "alternativeHeadline": "Add Sticky Watermark Annotations to PDF with C#",
+    "abstract": "C# における新しい PDF スティッキー注釈機能を紹介します。これにより、ユーザーは PDF ドキュメント内で透かし注釈を直接作成およびカスタマイズできます。この機能は、特定のテキスト位置の設定、透明度の制御、画像の効率的な再利用をサポートし、全体的なドキュメントのプレゼンテーションを向上させ、ファイルサイズを最適化します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "pdf, c#, sticky annotations, watermark annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "PDF sticky annotations, C# sticky annotations, Watermark Annotation, Aspose.PDF.Drawing, PDF document generation, opacity property, XImageCollection, optimize PDF size",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,87 +74,118 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/sticky-annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このトピックはスティッキーアノテーションについてであり、例としてテキスト内のウォーターマークアノテーションを示しています。"
+    "dateModified": "2024-11-25",
+    "description": "このトピックはスティッキー注釈に関するもので、例としてテキスト内の透かし注釈を示します。"
 }
 </script>
+
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
-## ウォーターマーク注釈の追加
+## 透かし注釈を追加する
 
-ウォーターマーク注釈は、印刷されるページの寸法に関係なく、固定サイズと位置でページに表示されるグラフィックを表すために使用されます。
+透かし注釈は、印刷ページの寸法に関係なく、ページ上の固定サイズと位置で印刷されるグラフィックスを表すために使用されます。
 
-[WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) を使用して、PDFページの特定の位置にウォーターマークテキストを追加できます。ウォーターマークの不透明度も、不透明度プロパティを使用して制御することができます。
+特定の PDF ページの位置に [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) を使用して透かしテキストを追加できます。透かしの透明度は、透明度プロパティを使用して制御することもできます。
 
-ウォーターマーク注釈を追加するための以下のコードスニペットを確認してください。
-
-```csharp
- //ドキュメントを読み込む
-Aspose.PDF.Document doc = new Aspose.PDF.Document("source.pdf");
-
-//注釈を追加するためのページオブジェクトを読み込む
-Page page = doc.Pages[1];
-
-//注釈を作成する
-WatermarkAnnotation wa = new WatermarkAnnotation(page, new Aspose.PDF.Rectangle(100, 500, 400, 600));
-
-//ページの注釈コレクションに注釈を追加する
-page.Annotations.Add(wa);
-
-//フォント設定のためのTextStateを作成する
-Aspose.PDF.Text.TextState ts = new Aspose.PDF.Text.TextState();
-
-ts.ForegroundColor = Aspose.PDF.Color.Blue;
-ts.Font = FontRepository.FindFont("Times New Roman");
-
-ts.FontSize = 32;
-
-//注釈テキストの不透明度レベルを設定する
-
-wa.Opacity = 0.5;
-//注釈にテキストを追加する
-
-wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
-
-//ドキュメントを保存する
-doc.Save("Output.pdf");
-```
-## PDFドキュメントで単一の画像を複数回参照する
-
-PDFドキュメントで同じ画像を複数回使用する必要がある場合があります。新しいインスタンスを追加すると、結果のPDFドキュメントが大きくなります。そのため、Aspose.PDF for .NET 17.1.0にXImageCollection.Add(XImage)メソッドを追加しました。このメソッドは、元の画像と同じPDFオブジェクトへの参照を追加することで、PDFドキュメントのサイズを最適化します。
+透かし注釈を追加するための次のコードスニペットを確認してください。
 
 ```csharp
- Aspose.PDF.Rectangle imageRectangle = new Aspose.PDF.Rectangle(0, 0, 30, 15);
-
-using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddWatermarkAnnotation()
 {
-    using (var imageStream = File.Open("icon.png", FileMode.Open))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "source.pdf"))
     {
-        XImage image = null;
-        foreach (Page page in document.Pages)
-        {
-            WatermarkAnnotation annotation = new WatermarkAnnotation(page, page.Rect);
-            XForm form = annotation.Appearance["N"];
-            form.BBox = page.Rect;
-            string name;
-            if (image == null)
-            {
-                name = form.Resources.Images.Add(imageStream);
-                image = form.Resources.Images[name];
-            }
-            else
-            {
-                name = form.Resources.Images.Add(image);
-            }
-            form.Contents.Add(new Operator.GSave());
-            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.PDF.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
-            form.Contents.Add(new Operator.Do(name));
-            form.Contents.Add(new Operator.GRestore());
-            page.Annotations.Add(annotation, false);
-            imageRectangle = new Aspose.PDF.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
-        }
+        // Load Page object to add Annotation
+        var page = document.Pages[1];
+
+        // Create Watermark Annotation
+        var wa = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
+
+        // Add annotation into Annotation collection of Page
+        page.Annotations.Add(wa);
+
+        // Create TextState for Font settings
+        var ts = new Aspose.Pdf.Text.TextState();
+        ts.ForegroundColor = Aspose.Pdf.Color.Blue;
+        ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Times New Roman");
+        ts.FontSize = 32;
+
+        // Set opacity level of Annotation Text
+        wa.Opacity = 0.5;
+
+        // Add Text in Annotation
+        wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
+
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarkAnnotation_out.pdf");
     }
-    document.Save("output.pdf");
+}
+```
+
+## PDF ドキュメント内で単一の画像を複数回参照する
+
+時には、PDF ドキュメント内で同じ画像を複数回使用する必要があります。新しいインスタンスを追加すると、結果として得られる PDF ドキュメントが増加します。Aspose.PDF for .NET 17.1.0 では、新しいメソッド XImageCollection.Add(XImage) を追加しました。このメソッドは、PDF ドキュメントのサイズを最適化するために、元の画像と同じ PDF オブジェクトへの参照を追加することを可能にします。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddWatermarkAnnotationWithImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Define the rectangle for the image
+    var imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Open the image stream
+        using (var imageStream = File.Open(dataDir + "icon.png", FileMode.Open))
+        {
+            XImage image = null;
+
+            // Iterate through each page in the document
+            foreach (Page page in document.Pages)
+            {
+                // Create a Watermark Annotation
+                var annotation = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, page.Rect);
+                XForm form = annotation.Appearance["N"];
+                form.BBox = page.Rect;
+
+                string name;
+
+                // Add the image to the form resources if it hasn't been added yet
+                if (image == null)
+                {
+                    name = form.Resources.Images.Add(imageStream);
+                    image = form.Resources.Images[name];
+                }
+                else
+                {
+                    name = form.Resources.Images.Add(image);
+                }
+
+                // Add operators to the form contents to place the image
+                form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+                form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(new Aspose.Pdf.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
+                form.Contents.Add(new Aspose.Pdf.Operators.Do(name));
+                form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+                // Add the annotation to the page
+                page.Annotations.Add(annotation, false);
+
+                // Adjust the image rectangle size for the next iteration
+                imageRectangle = new Aspose.Pdf.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarkAnnotationWithImage_out.pdf");
+    }
 }
 ```
 
@@ -181,23 +215,23 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -206,7 +240,7 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -218,5 +252,3 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
     }
 }
 </script>
-```
-

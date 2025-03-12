@@ -1,10 +1,12 @@
 ---
-title: Bekerja dengan Teks dalam PDF menggunakan C#
+title: Bekerja dengan Teks di PDF menggunakan C#
 linktitle: Bekerja dengan Teks
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /id/net/working-with-text/
-description: Bagian ini menjelaskan berbagai teknik penanganan teks. Pelajari cara menambahkan, mengganti, memutar, mencari teks menggunakan Aspose.PDF dan C#.
+description: Bagian ini menjelaskan berbagai teknik penanganan teks. Pelajari cara menambahkan, mengganti, memutar, dan mencari teks menggunakan Aspose.PDF dan C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Bekerja dengan Teks dalam PDF menggunakan C#",
-    "alternativeHeadline": "Tambah, Putar, Cari, dan Hapus Teks dalam Berkas PDF",
+    "headline": "Working with Text in PDF using C#",
+    "alternativeHeadline": "Enhanced Text Manipulation Features in PDF with C#",
+    "abstract": "Temukan kemampuan manipulasi teks yang kuat dalam PDF menggunakan Aspose.PDF for .NET. Fitur ini memungkinkan pengguna untuk dengan mudah menambahkan, mengganti, memutar, dan memformat teks dalam dokumen PDF, meningkatkan interaktivitas dan kustomisasi dokumen. Memberdayakan aplikasi Anda dengan fungsionalitas pencarian yang efisien dan teknik penanganan teks yang fleksibel yang dirancang untuk pengembang C#",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, tambah teks, cari teks, hapus teks, manipulasi teks dalam pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "PDF manipulation, add text to PDF, rotate text in PDF, search text in PDF, replace text in PDF, text formatting inside PDF, Aspose.PDF for .NET, text handling techniques, PDF document generation, Floating Box tool",
+    "wordcount": "371",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,22 +74,22 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-text/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Bagian ini menjelaskan berbagai teknik penanganan teks. Pelajari cara menambahkan, mengganti, memutar, mencari teks menggunakan Aspose.PDF dan C#."
+    "dateModified": "2024-11-26",
+    "description": "Bagian ini menjelaskan berbagai teknik penanganan teks. Pelajari cara menambahkan, mengganti, memutar, dan mencari teks menggunakan Aspose.PDF dan C#."
 }
 </script>
 
-Kita semua terkadang perlu menambahkan teks ke dalam file PDF. Misalnya, ketika Anda ingin menambahkan terjemahan di bawah teks utama, menempatkan keterangan di sebelah gambar, atau sekadar mengisi formulir aplikasi. Sangat membantu juga jika semua elemen teks dapat diformat sesuai dengan gaya yang Anda inginkan. Manipulasi teks paling populer dalam file PDF Anda adalah: menambahkan teks ke PDF, memformat teks dalam file PDF, mengganti dan memutar teks dalam dokumen Anda. **Aspose.PDF for .NET** adalah solusi terbaik yang memiliki segala yang Anda butuhkan untuk berinteraksi dengan konten PDF.
+Kita semua kadang-kadang perlu menambahkan teks ke file PDF. Misalnya, ketika Anda ingin menambahkan terjemahan di bawah teks utama, menempatkan keterangan di samping gambar, atau hanya mengisi formulir aplikasi. Ini juga berguna jika semua elemen teks dapat diformat sesuai gaya yang Anda inginkan. Manipulasi teks yang paling populer di file PDF Anda adalah: menambahkan teks ke PDF, memformat teks di dalam file PDF, mengganti dan memutar teks di dokumen Anda. **Aspose.PDF for .NET** adalah solusi terbaik yang memiliki semua yang Anda butuhkan untuk berinteraksi dengan konten PDF.
 
-Anda dapat melakukan hal berikut:
+ Anda dapat melakukan hal-hal berikut:
 
-- [Tambah Teks ke file PDF](/pdf/id/net/add-text-to-pdf-file/) - tambahkan teks ke PDF Anda, gunakan font dari strem dan file, tambahkan string HTML, tambahkan hyperlink, dll.
+- [Menambahkan Teks ke file PDF](/pdf/id/net/add-text-to-pdf-file/) - menambahkan teks ke PDF Anda, menggunakan font dari stream dan file, menambahkan string HTML, menambahkan hyperlink, dll.
 - [Tooltip PDF](/pdf/id/net/pdf-tooltip/) - Anda dapat menambahkan tooltip ke teks yang dicari dengan menambahkan tombol tak terlihat menggunakan C#.
-- [Pemformatan Teks dalam PDF](/pdf/id/net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya.
-- [Pemformatan Teks dalam PDF](/pdf/id/net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya.
-- [Mengganti Teks dalam PDF](/pdf/id/net/replace-text-in-pdf/) - untuk mengganti teks di semua halaman dokumen PDF. Anda pertama-tama perlu menggunakan TextFragmentAbsorber.
-- [Memutar Teks Dalam PDF](/pdf/id/net/rotate-text-inside-pdf/) - memutar teks dalam PDF menggunakan properti rotasi dari Kelas TextFragment.
-- [Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF](/pdf/id/net/search-and-get-text-from-pages-of-pdf/) - Anda dapat menggunakan kelas TextFragmentAbsorber untuk mencari dan mendapatkan teks dari halaman.
+- [Pemformatan Teks di dalam PDF](/pdf/id/net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya. Tambahkan indentasi baris, tambahkan batas teks, tambahkan teks garis bawah, tambahkan umpan baris baru dengan pustaka Aspose.PDF.
+- [Menggunakan FloatingBox](/pdf/id/net/floating-box/) - alat Floating Box adalah alat khusus untuk menempatkan teks dan konten lainnya di halaman PDF.
+- [Mengganti Teks di PDF](/pdf/id/net/replace-text-in-pdf/) - untuk mengganti teks di semua halaman dokumen PDF. Anda pertama-tama perlu menggunakan TextFragmentAbsorber.
+- [Memutar Teks di Dalam PDF](/pdf/id/net/rotate-text-inside-pdf/) - memutar teks di dalam PDF menggunakan properti rotasi dari Kelas TextFragment.
+- [Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF](/pdf/id/net/search-and-get-text-from-pdf/) - Anda dapat menggunakan kelas TextFragmentAbsorber untuk mencari dan mendapatkan teks dari halaman.
 - [Menentukan Pemutusan Baris](/pdf/id/net/determine-line-break/) - topik ini menjelaskan cara melacak pemutusan baris dari fragmen teks multi-baris.
 
 <script type="application/ld+json">
@@ -152,4 +155,3 @@ Anda dapat melakukan hal berikut:
     }
 }
 </script>
-

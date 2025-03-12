@@ -1,32 +1,35 @@
 ---
-title: توليد صور مصغرة من مستندات PDF
-linktitle: توليد صور مصغرة
+title: إنشاء صور مصغرة من PDF
+linktitle: إنشاء صور مصغرة
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /ar/net/generate-thumbnail-images-from-pdf-documents/
-description: تصف هذا القسم كيفية توليد صور مصغرة من مستندات PDF
+description: يصف هذا القسم كيفية إنشاء صور مصغرة من مستندات PDF
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "توليد صور مصغرة من مستندات PDF",
-    "alternativeHeadline": "كيفية توليد صور مصغرة من ملف PDF",
+    "headline": "Generate Thumbnail Images from PDF",
+    "alternativeHeadline": "Generate Thumbnails from PDF Documents Effortlessly",
+    "abstract": "تتيح الميزة الجديدة للمستخدمين إنشاء صور مصغرة بكفاءة مباشرة من مستندات PDF. تعزز هذه الوظيفة إدارة المستندات من خلال تحويل صفحات PDF إلى تنسيقات صور سهلة المشاركة، مما يسهل سير العمل للمطورين والمستخدمين على حد سواء. مع دعم لمجموعة متنوعة من تنسيقات الصور، تبسط هذه الميزة عملية تصور محتوى PDF دون الحاجة إلى برامج خارجية مثل Adobe Acrobat",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, c#, توليد صور مصغرة",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Generate Thumbnail Images, PDF documents, Aspose.PDF for .NET, Acrobat SDK, image formats, PDF Manipulation Library, JavaScript, interapplication communication, thumbnail images, JPEG conversion",
+    "wordcount": "767",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,66 +71,176 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/generate-thumbnail-images-from-pdf-documents/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تصف هذا القسم كيفية توليد صور مصغرة من مستندات PDF"
+    "dateModified": "2024-11-26",
+    "description": "يصف هذا القسم كيفية إنشاء صور مصغرة من مستندات PDF"
 }
 </script>
+
 {{% alert color="primary" %}}
-مجموعة Adobe Acrobat SDK هي مجموعة من الأدوات التي تساعدك على تطوير البرمجيات التي تتفاعل مع تقنية Acrobat. تحتوي المجموعة على ملفات رأسية، مكتبات الأنواع، أدوات بسيطة، شفرة نموذجية، وتوثيق.
 
-باستخدام Acrobat SDK، يمكنك تطوير برمجيات تتكامل مع Acrobat وAdobe Reader بعدة طرق:
+مجموعة أدوات Adobe Acrobat SDK هي مجموعة من الأدوات التي تساعدك في تطوير البرمجيات التي تتفاعل مع تقنية Acrobat. تحتوي مجموعة الأدوات على ملفات رأس، ومكتبات نوع، وأدوات بسيطة، وأكواد نموذجية، ووثائق.
 
-- **جافا سكريبت** — كتابة البرامج النصية، سواء في مستند PDF فردي أو خارجياً، لتوسيع وظائف Acrobat أو Adobe Reader.
-- **الإضافات** — إنشاء إضافات مرتبطة ديناميكيًا وتوسع وظائف Acrobat أو Adobe Reader.
-- **التواصل بين التطبيقات** — كتابة عملية تطبيق منفصلة تستخدم التواصل بين التطبيقات (IAC) للتحكم في وظائف Acrobat. يتم دعم DDE وOLE على Microsoft® Windows®، وأحداث Apple/AppleScript على Mac OS®. IAC غير متاحة على UNIX®.
+باستخدام مجموعة أدوات Acrobat SDK، يمكنك تطوير برمجيات تتكامل مع Acrobat وAdobe Reader بعدة طرق:
 
-Aspose.PDF لـ .NET يوفر الكثير من نفس الوظائف، مما يحررك من الاعتماد على أتمتة Adobe Acrobat.
+- **JavaScript** — كتابة نصوص، إما في مستند PDF فردي أو خارجي، لتوسيع وظائف Acrobat أو Adobe Reader.
+- **الإضافات** — إنشاء إضافات مرتبطة ديناميكيًا وتوسيع وظائف Acrobat أو Adobe Reader.
+- **الاتصال بين التطبيقات** — كتابة عملية تطبيق منفصلة تستخدم الاتصال بين التطبيقات (IAC) للتحكم في وظائف Acrobat. يتم دعم DDE وOLE على Microsoft® Windows®، وأحداث Apple/AppleScript على Mac OS®. الاتصال بين التطبيقات غير متاح على UNIX®.
+
+توفر Aspose.PDF for .NET الكثير من نفس الوظائف، مما يحررك من الاعتماد على أتمتة Adobe Acrobat. يوضح هذا المقال كيفية إنشاء صور مصغرة من مستندات PDF باستخدام أولاً مجموعة أدوات Acrobat SDK ثم Aspose.PDF.
+
 {{% /alert %}}
-Aspose.PDF لـ .NET يوفر الكثير من الوظائف نفسها، مما يحررك من الاعتماد على أدوات أدوبي أكروبات أوتوميشن.
 
-## تطوير التطبيق باستخدام واجهة برمجة تطبيقات أكروبات للتواصل بين التطبيقات
+## تطوير تطبيق باستخدام واجهة برمجة التطبيقات للاتصال بين التطبيقات في Acrobat
 
-فكر في واجهة برمجة تطبيقات أكروبات على أنها تحتوي على طبقتين مميزتين تستخدمان كائنات التواصل بين التطبيقات لأكروبات (IAC):
+فكر في واجهة برمجة التطبيقات الخاصة بـ Acrobat على أنها تحتوي على طبقتين متميزتين تستخدمان كائنات الاتصال بين التطبيقات (IAC):
 
-- طبقة تطبيق أكروبات (AV). تتيح لك طبقة AV التحكم في كيفية عرض المستند. على سبيل المثال، يقع عرض كائن المستند في الطبقة المرتبطة بأكروبات.
-- طبقة المستند المحمول (PD). توفر طبقة PD الوصول إلى المعلومات داخل المستند، مثل صفحة. من طبقة PD يمكنك أداء التلاعبات الأساسية بمستندات PDF، مثل حذف الصفحات أو نقلها أو استبدالها، بالإضافة إلى تغيير خصائص التعليق التوضيحي. يمكنك أيضًا طباعة صفحات PDF، وتحديد النص، والوصول إلى النص المعدل، وإنشاء أو حذف الصور المصغرة.
+- طبقة تطبيق Acrobat (AV). تتيح لك طبقة AV التحكم في كيفية عرض المستند. على سبيل المثال، يتم عرض كائن المستند في الطبقة المرتبطة بـ Acrobat.
+- طبقة المستند القابل للنقل (PD). توفر طبقة PD الوصول إلى المعلومات داخل المستند، مثل صفحة. من طبقة PD يمكنك إجراء عمليات أساسية على مستندات PDF، مثل حذف أو نقل أو استبدال الصفحات، بالإضافة إلى تغيير خصائص التعليقات. يمكنك أيضًا طباعة صفحات PDF، وتحديد النص، والوصول إلى النص المعالج، وإنشاء أو حذف الصور المصغرة.
 
-نظرًا لأننا نهدف إلى تحويل صفحات PDF إلى صور مصغرة، فإننا نركز أكثر على IAC.
-كما أننا نعتزم تحويل صفحات PDF إلى صور مصغرة، فنحن نركز أكثر على IAC.
+نظرًا لأن هدفنا هو تحويل صفحات PDF إلى صور مصغرة، فإننا نركز أكثر على IAC. تحتوي واجهة برمجة التطبيقات IAC على كائنات مثل PDDoc وPDPage وPDAnnot وغيرها، مما يمكّن المستخدم من التعامل مع طبقة المستند القابل للنقل (PD). يقوم نموذج الكود التالي بمسح مجلد وتحويل صفحات PDF إلى صور مصغرة. باستخدام مجموعة أدوات Acrobat SDK، يمكننا أيضًا قراءة بيانات التعريف الخاصة بـ PDF واسترداد عدد الصفحات في المستند.
 
-### نهج أكروبات
+### نهج Acrobat
 
-لتوليد الصور المصغرة لكل مستند، استخدمنا Adobe Acrobat SDK 7.0 و Microsoft .NET Framework 2.0.
+من أجل إنشاء الصور المصغرة لكل مستند، استخدمنا مجموعة أدوات Adobe Acrobat 7.0 وMicrosoft .NET 2.0 Framework.
 
-يجمع [Acrobat SDK](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/) مع النسخة الكاملة من Adobe Acrobat تعرض مكتبة COM من الكائنات (للأسف، Adobe Reader المجاني لا يعرض واجهات COM) التي يمكن استخدامها للتلاعب والوصول إلى معلومات PDF. باستخدام هذه الكائنات COM عبر COM Interop، قم بتحميل مستند PDF، احصل على الصفحة الأولى وقم بعرض هذه الصفحة إلى الحافظة. ثم، باستخدام .NET Framework، انسخ هذا إلى بتماب، قم بتحجيم ودمج الصورة واحفظ النتيجة كملف GIF أو PNG.
+تجمع [مجموعة أدوات Acrobat](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/) مع النسخة الكاملة من Adobe Acrobat مكتبة COM من الكائنات (للأسف، لا تكشف Adobe Reader المجانية عن واجهات COM) التي يمكن استخدامها للتلاعب والوصول إلى معلومات PDF. باستخدام هذه الكائنات COM عبر COM Interop، قم بتحميل مستند PDF، واحصل على الصفحة الأولى وقم بعرض تلك الصفحة على الحافظة. ثم، باستخدام .NET Framework، انسخ هذا إلى صورة نقطية، وقم بتغيير حجم الصورة ودمجها واحفظ النتيجة كملف GIF أو PNG.
 
 بمجرد تثبيت Adobe Acrobat، استخدم regedit.exe وابحث تحت HKEY_CLASSES_ROOT عن إدخال يسمى AcroExch.PDDoc.
 
 **السجل يظهر إدخال AcroExch.PDDDoc**
 
 ![todo:image_alt_text](generate-thumbnail-images-from-pdf-documents_1.png)
-![todo:image_alt_text](generate-thumbnail-images-from-pdf-documents_1.png)
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-CreateThumbnailImagesUsingAdobe-CreateThumbnailImagesUsingAdobe.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GenerateThumbnailImagesFromPDF()
+{
+    // Acrobat objects
+    Acrobat.CAcroPDDoc pdfDoc;
+    Acrobat.CAcroPDPage pdfPage;
+    Acrobat.CAcroRect pdfRect;
+    Acrobat.CAcroPoint pdfPoint;
 
-## نهج Aspose.PDF لـ .NET
+    AppSettingsReader appSettings = new AppSettingsReader();
+    string pdfInputPath = appSettings.GetValue("pdfInputPath", typeof(string)).ToString();
+    string pngOutputPath = appSettings.GetValue("pngOutputPath", typeof(string)).ToString();
+    string templatePortraitFile = Application.StartupPath + @"\pdftemplate_portrait.gif";
+    string templateLandscapeFile = Application.StartupPath + @"\pdftemplate_landscape.gif";
 
-يوفر Aspose.PDF لـ .NET دعمًا واسعًا للتعامل مع مستندات PDF. كما يدعم القدرة على تحويل صفحات مستندات PDF إلى مجموعة متنوعة من تنسيقات الصور. يمكن تحقيق الوظيفة المذكورة أعلاه بسهولة باستخدام Aspose.PDF لـ .NET.
+    // Get list of files to process from the input path
+    string[] files = Directory.GetFiles(pdfInputPath, "*.pdf");
 
-لدى Aspose.PDF فوائد مميزة:
+    for (int n = 0; n < files.Length; n++)
+    {
+        string inputFile = files[n];
+        string outputFile = Path.Combine(pngOutputPath, Path.GetFileNameWithoutExtension(inputFile) + ".png");
+
+        // Create PDF document
+        pdfDoc = (Acrobat.CAcroPDDoc)Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.PDDoc", "");
+
+        if (pdfDoc.Open(inputFile) == 0)
+        {
+            throw new FileNotFoundException($"Unable to open PDF file: {inputFile}");
+        }
+
+        int pageCount = pdfDoc.GetNumPages();
+        pdfPage = (Acrobat.CAcroPDPage)pdfDoc.AcquirePage(0);
+        pdfPoint = (Acrobat.CAcroPoint)pdfPage.GetSize();
+
+        pdfRect = (Acrobat.CAcroRect)Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.Rect", "");
+        pdfRect.Left = 0;
+        pdfRect.right = pdfPoint.x;
+        pdfRect.Top = 0;
+        pdfRect.bottom = pdfPoint.y;
+
+        pdfPage.CopyToClipboard(pdfRect, 0, 0, 100);
+        IDataObject clipboardData = Clipboard.GetDataObject();
+
+        if (clipboardData.GetDataPresent(DataFormats.Bitmap))
+        {
+            Bitmap pdfBitmap = (Bitmap)clipboardData.GetData(DataFormats.Bitmap);
+
+            int thumbnailWidth = 45;
+            int thumbnailHeight = 59;
+            string templateFile = pdfPoint.x < pdfPoint.y ? templatePortraitFile : templateLandscapeFile;
+
+            if (pdfPoint.x > pdfPoint.y)
+            {
+                // Swap width and height for landscape orientation
+                (thumbnailWidth, thumbnailHeight) = (thumbnailHeight, thumbnailWidth);
+            }
+
+            Bitmap templateBitmap = new Bitmap(templateFile);
+            Image pdfImage = pdfBitmap.GetThumbnailImage(thumbnailWidth, thumbnailHeight, null, IntPtr.Zero);
+
+            Bitmap thumbnailBitmap = new Bitmap(thumbnailWidth + 7, thumbnailHeight + 7, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+            templateBitmap.MakeTransparent();
+
+            using (Graphics thumbnailGraphics = Graphics.FromImage(thumbnailBitmap))
+            {
+                thumbnailGraphics.DrawImage(pdfImage, 2, 2, thumbnailWidth, thumbnailHeight);
+                thumbnailGraphics.DrawImage(templateBitmap, 0, 0);
+                thumbnailBitmap.Save(outputFile, System.Drawing.Imaging.ImageFormat.Png);
+            }
+
+            Console.WriteLine("Generated thumbnail: {0}", outputFile);
+
+            pdfDoc.Close();
+            Marshal.ReleaseComObject(pdfPage);
+            Marshal.ReleaseComObject(pdfRect);
+            Marshal.ReleaseComObject(pdfDoc);
+        }
+    }
+}
+```
+
+## نهج Aspose.PDF for .NET
+
+توفر Aspose.PDF for .NET دعمًا واسعًا للتعامل مع مستندات PDF. كما تدعم القدرة على تحويل صفحات مستندات PDF إلى مجموعة متنوعة من تنسيقات الصور. يمكن تحقيق الوظيفة الموضحة أعلاه بسهولة باستخدام Aspose.PDF for .NET.
+
+تتمتع Aspose.PDF بمزايا مميزة:
 
 - لا تحتاج إلى تثبيت Adobe Acrobat على نظامك للعمل مع ملفات PDF.
-- استخدام Aspose.PDF لـ .NET بسيط وسهل الفهم مقارنةً بأتمتة Acrobat.
+- استخدام Aspose.PDF for .NET بسيط وسهل الفهم مقارنةً بأتمتة Acrobat.
 
-إذا كنا بحاجة لتحويل صفحات PDF إلى صور JPEG، فإن الفضاء الاسمي [Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices) يوفر فئة تُدعى [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) لتقديم صفحات PDF في صور JPEG.
-إذا احتجنا إلى تحويل صفحات PDF إلى صور JPEG، فإن الفضاء الاسمي [Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices) يوفر فئة تُسمى [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) لتقديم صفحات PDF على شكل صور JPEG.
+إذا كنا بحاجة إلى تحويل صفحات PDF إلى JPEGs، فإن مساحة أسماء [Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices) توفر فئة تسمى [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) لعرض صفحات PDF كصور JPEG. يرجى إلقاء نظرة على نموذج الكود التالي.
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-CreateThumbnailImages-CreateThumbnailImages.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GenerateThumbnailImagesFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Retrieve names of all the PDF files in a particular directory
+    string[] fileEntries = Directory.GetFiles(dataDir, "*.pdf");
+
+    // Iterate through all the files entries in array
+    for (int counter = 0; counter < fileEntries.Length; counter++)
+    {
+        // Open PDF document
+        using (var document = new Aspose.Pdf.Document(fileEntries[counter]))
+        {
+            for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
+            {
+                using (FileStream imageStream = new FileStream(dataDir + @"\Thumbanils" + counter.ToString() + "_" + pageCount + ".jpg", FileMode.Create))
+                {
+                    var resolution = new Aspose.Pdf.Devices.Resolution(300);
+                    var jpegDevice = new Aspose.Pdf.Devices.JpegDevice(45, 59, resolution, 100);
+                    // Convert a particular page and save the image to stream
+                    jpegDevice.Process(document.Pages[pageCount], imageStream);
+                }
+            }
+        }
+    }
+}
+```
 
 {{% alert color="primary" %}}
 
 - شكرًا لـ CodeProject على [إنشاء صورة مصغرة من مستند PDF](https://www.codeproject.com/Articles/5887/Generate-Thumbnail-Images-from-PDF-Documents).
-- شكرًا لـ Acrobat على [مرجع SDK الخاص بـ Acrobat](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/documentation.html).
+- شكرًا لـ Acrobat على [مرجع مجموعة أدوات Acrobat](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/documentation.html).
 
 {{% /alert %}}
 
@@ -194,4 +307,3 @@ Aspose.PDF لـ .NET يوفر الكثير من الوظائف نفسها، مم
     }
 }
 </script>
-

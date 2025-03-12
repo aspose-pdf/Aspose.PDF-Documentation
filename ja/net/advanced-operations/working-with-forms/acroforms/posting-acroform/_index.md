@@ -1,10 +1,12 @@
 ---
-title: Posting AcroForm Data
-linktitle: Posting AcroForm
+title: AcroFormデータの投稿
+linktitle: AcroFormの投稿
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ja/net/posting-acroform-data/
-description: Aspose.PDF for .NETのAspose.Pdf.Facades名前空間を使用して、フォームデータをXMLファイルにインポートおよびエクスポートできます。
+description: Aspose.Pdf.Facades名前空間を使用して、フォームデータをXMLファイルにインポートおよびエクスポートできます。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +17,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Posting AcroForm Data",
-    "alternativeHeadline": "XMLファイルにフォームデータをインポートおよびエクスポート",
+    "alternativeHeadline": "Post AcroForm Data",
+    "abstract": "Aspose.PDF for .NETの新しい強力な機能、AcroFormデータを投稿する機能を紹介します。この機能により、開発者はAcroFormを作成および編集するだけでなく、フォームデータをXMLファイルにシームレスにインポートおよびエクスポートでき、アプリケーション内でのデータ処理および保存機能が向上します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, posting acroform data",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Posting AcroForm Data, Import and Export Form Data, Aspose.PDF for .NET, AcroForm Fields, Submit Button, External Web Page Integration, Form Data Posting, XML File Handling, FieldType.Text, Database Saving",
+    "wordcount": "400",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDFドキュメントチーム",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,45 +74,54 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/posting-acroform-data/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NETのAspose.Pdf.Facades名前空間を使用して、フォームデータをXMLファイルにインポートおよびエクスポートできます。"
+    "dateModified": "2024-11-25",
+    "description": "Aspose.Pdf.Facades名前空間を使用して、フォームデータをXMLファイルにインポートおよびエクスポートできます。"
 }
 </script>
+
 {{% alert color="primary" %}}
-AcroFormはPDFドキュメントの重要なタイプです。[Aspose.Pdf.Facades 名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)を使用してAcroFormを作成および編集するだけでなく、フォームデータをXMLファイルにインポートおよびエクスポートすることもできます。.NETのAspose.PDF用Aspose.Pdf.Facades名前空間は、外部のウェブページにAcroFormデータを投稿するというAcroFormの別の機能を実装することを可能にします。このウェブページは、投稿された変数を読み取り、このデータをさらに処理するために使用します。この機能は、データをPDFファイルに保持したいだけでなく、サーバーに送信してデータベースなどに保存したい場合に便利です。
+
+AcroFormはPDFドキュメントの重要なタイプです。[Aspose.Pdf.Facades名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)を使用してAcroFormを作成および編集するだけでなく、フォームデータをXMLファイルにインポートおよびエクスポートすることもできます。Aspose.PDF for .NETのAspose.Pdf.Facades名前空間を使用すると、AcroFormの別の機能を実装でき、AcroFormデータを外部ウェブページに投稿することができます。このウェブページは投稿された変数を読み取り、このデータをさらに処理するために使用します。この機能は、データをPDFファイルに保持するだけでなく、サーバーに送信し、データベースに保存するなどのケースで便利です。
+
 {{% /alert %}}
 
 ## 実装の詳細
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリと一緒に動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-この記事では、[Aspose.Pdf.Facades 名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)を使用してAcroFormを作成しようとしました。
-この記事では、[Aspose.Pdf.Facades名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)を使用してAcroFormを作成しようと試みました。
+この記事では、[Aspose.Pdf.Facades名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)を使用してAcroFormを作成しようとしました。また、送信ボタンを追加し、そのターゲットURLを設定しました。以下のコードスニペットは、フォームを作成し、ウェブページで投稿されたデータを受信する方法を示しています。
 
 ```csharp
-// FormEditorクラスのインスタンスを作成し、入力および出力PDFファイルをバインドします
-Aspose.Pdf.Facades.FormEditor editor = new Aspose.Pdf.Facades.FormEditor("input.pdf","output.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateAcroFormWithFields()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// AcroFormフィールドを作成します - 簡単のために2つのフィールドのみを作成しました
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
+    // Create an instance of FormEditor class and bind input and output pdf files
+    using (var editor = new Aspose.Pdf.Facades.FormEditor(dataDir + "input.pdf", dataDir + "output.pdf"))
+    {
+        // Create AcroForm fields - I have created only two fields for simplicity
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
 
-// 提出ボタンを追加し、ターゲットURLを設定します
-editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
+        // Add a submit button and set target URL
+        editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
 
-// 出力PDFファイルを保存します
-editor.Save();
+        // Save PDF document
+        editor.Save();
+    }
+}
 ```
 
 {{% alert color="primary" %}}
 
-次のコードスニペットは、ターゲットWebページで投稿された値を受け取る方法を示しています。
-次のコードスニペットは、対象のWebページで投稿された値を受け取る方法を示しています。
+以下のコードスニペットは、ターゲットウェブページで投稿された値を受信する方法を示しています。この例では、Show.aspxという名前のページを使用し、ページロードメソッドにシンプルな1行のコードを追加しました。
 
 {{% /alert %}}
 
 ```csharp
-// 対象のWebページで投稿された値を表示する
+// Show the posted values on the target web page
 Response.Write("Hello " + Request.Form.Get("firstname") + " " + Request.Form.Get("lastname"));
 ```
 
@@ -176,4 +188,3 @@ Response.Write("Hello " + Request.Form.Get("firstname") + " " + Request.Form.Get
     }
 }
 </script>
-

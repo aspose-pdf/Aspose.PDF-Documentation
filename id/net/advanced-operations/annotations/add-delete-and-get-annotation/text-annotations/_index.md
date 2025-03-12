@@ -2,9 +2,11 @@
 title: Menggunakan Anotasi Teks untuk PDF
 linktitle: Anotasi Teks
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/text-annotation/
-description: Aspose.PDF untuk .NET memungkinkan Anda untuk Menambahkan, Mengambil, dan Menghapus Anotasi Teks dari dokumen PDF Anda.
+description: Aspose.PDF for .NET memungkinkan Anda untuk Menambahkan, Mengambil, dan Menghapus Anotasi Teks dari dokumen PDF Anda.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Menggunakan Anotasi Teks untuk PDF",
-    "alternativeHeadline": "Cara menambahkan Anotasi Teks dalam PDF",
+    "headline": "Using Text Annotation for PDF",
+    "alternativeHeadline": "Enhance PDFs with Dynamic Text Annotations",
+    "abstract": "Aspose.PDF for .NET memperkenalkan kemampuan anotasi teks yang canggih, memungkinkan pengguna untuk dengan mudah menambahkan, mengambil, atau menghapus anotasi teks dalam dokumen PDF. Fitur ini meningkatkan proses pengeditan PDF dengan memungkinkan penempatan dan kustomisasi anotasi yang tepat, sehingga meningkatkan interaksi dan kegunaan dokumen",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, anotasi teks",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Text Annotation, PDF document generation, Aspose.PDF for .NET, Add Annotation, Delete Annotation, Free Text Annotation, Popup Annotation, StrikeOutAnnotation, AnnotationCollection, Aspose.PDF library",
+    "wordcount": "2636",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,182 +74,228 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF untuk .NET memungkinkan Anda untuk Menambahkan, Mengambil, dan Menghapus Anotasi Teks dari dokumen PDF Anda."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NET memungkinkan Anda untuk Menambahkan, Mengambil, dan Menghapus Anotasi Teks dari dokumen PDF Anda."
 }
 </script>
 
-## Cara Menambahkan Anotasi Teks ke dalam File PDF yang Ada
+## Cara menambahkan Anotasi Teks ke file PDF yang ada
 
-Potongan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Anotasi Teks adalah anotasi yang dilampirkan pada lokasi tertentu dalam dokumen PDF. Ketika ditutup, anotasi ditampilkan sebagai ikon; ketika dibuka, seharusnya menampilkan jendela pop-up yang berisi teks catatan dalam font dan ukuran yang dipilih oleh pembaca.
+Anotasi Teks adalah anotasi yang dilampirkan pada lokasi tertentu dalam dokumen PDF. Ketika ditutup, anotasi ditampilkan sebagai ikon; ketika dibuka, harus menampilkan jendela pop-up yang berisi teks catatan dalam font dan ukuran yang dipilih oleh pembaca.
 
-Anotasi terkandung oleh koleksi [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) dari sebuah Halaman tertentu. Koleksi ini hanya berisi anotasi untuk halaman tersebut; setiap halaman memiliki koleksi Annotations sendiri.
+Anotasi terdapat dalam koleksi [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) dari Halaman tertentu. Koleksi ini berisi anotasi untuk halaman individu tersebut saja; setiap halaman memiliki koleksi Annotationsnya sendiri.
 
 Untuk menambahkan anotasi ke halaman tertentu, tambahkan ke koleksi Annotations halaman tersebut dengan metode [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add).
 
 1. Pertama, buat anotasi yang ingin Anda tambahkan ke PDF.
-1. Kemudian buka PDF masukan.
-1.
-Kode berikut menunjukkan cara menambahkan anotasi pada halaman PDF.
+1. Kemudian buka PDF input.
+1. Tambahkan anotasi ke koleksi Annotations objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+
+Potongan kode berikut menunjukkan cara menambahkan anotasi di halaman PDF.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "AddAnnotation.pdf");
-
-// Buat anotasi
-TextAnnotation textAnnotation = new TextAnnotation(pdfDocument.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600));
-textAnnotation.Title = "Judul Anotasi Contoh";
-textAnnotation.Subject = "Subjek Contoh";
-textAnnotation.State = AnnotationState.Accepted;
-textAnnotation.Contents = "Isi contoh untuk anotasi";
-textAnnotation.Open = true;
-textAnnotation.Icon = TextIcon.Key;
-
-Border border = new Border(textAnnotation);
-border.Width = 5;
-border.Dash = new Dash(1, 1);
-textAnnotation.Border = border;
-textAnnotation.Rect = new Aspose.Pdf.Rectangle(200, 400, 400, 600);
-
-// Tambahkan anotasi dalam koleksi anotasi halaman
-pdfDocument.Pages[1].Annotations.Add(textAnnotation);
-dataDir = dataDir + "AddAnnotation_out.pdf";
-// Simpan file keluaran
-pdfDocument.Save(dataDir);
-```
-## Cara Menambahkan Anotasi Popup
-
-Anotasi Popup menampilkan teks dalam jendela popup untuk entri dan pengeditan. Ini tidak boleh muncul sendiri tetapi harus dikaitkan dengan anotasi markup, anotasi induknya, dan harus digunakan untuk mengedit teks induk.
-
-Ini tidak boleh memiliki aliran penampilan atau tindakan terkait sendiri dan harus diidentifikasi oleh entri Popup dalam kamus anotasi induk.
-
-Potongan kode berikut menunjukkan cara menambahkan [Anotasi Popup](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) di halaman PDF menggunakan contoh menambahkan anotasi [Garis induk](/pdf/id/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
-
-```csharp
-using Aspose.Pdf.Annotations;
-using System;
-using System.Linq;
-
-namespace Aspose.Pdf.Examples.Advanced
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextAnnotationToPdf()
 {
-    class ExampleLineAnnotation
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
     {
-        // Jalur ke direktori dokumen.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        public static void AddLineAnnotation()
-        {
-            try
-            {
-                // Muat file PDF
-                Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments.pdf"));
+        // Create text annotation
+        var textAnnotation = new Aspose.Pdf.Annotations.TextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600));
+        textAnnotation.Title = "Sample Annotation Title";
+        textAnnotation.Subject = "Sample Subject";
+        textAnnotation.SetReviewState(Aspose.Pdf.Annotations.AnnotationState.Accepted);
+        textAnnotation.Contents = "Sample contents for the annotation";
+        textAnnotation.Open = true;
+        textAnnotation.Icon = Aspose.Pdf.Annotations.TextIcon.Key;
 
-                // Buat Anotasi Garis
-                var lineAnnotation = new LineAnnotation(
-                    document.Pages[1],
-                    new Rectangle(550, 93, 562, 439),
-                    new Point(556, 99), new Point(556, 443))
-                {
-                    Title = "John Smith",
-                    Color = Color.Red,
-                    Width = 3,
-                    StartingStyle = LineEnding.OpenArrow,
-                    EndingStyle = LineEnding.OpenArrow,
-                    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 124, 1021, 266))
-                };
+        // Set border for the annotation
+        var border = new Aspose.Pdf.Annotations.Border(textAnnotation);
+        border.Width = 5;
+        border.Dash = new Aspose.Pdf.Annotations.Dash(1, 1);
+        textAnnotation.Border = border;
+        textAnnotation.Rect = new Aspose.Pdf.Rectangle(200, 400, 400, 600);
 
-                // Tambahkan anotasi ke halaman
-                document.Pages[1].Annotations.Add(lineAnnotation);
-                document.Save(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
+        // Add annotation to the annotations collection of the page
+        document.Pages[1].Annotations.Add(textAnnotation);
+
+        // Save PDF document
+        document.Save(dataDir + "AddAnnotation_out.pdf");
+    }
+}
 ```
-## Bagaimana Menambahkan (atau Membuat) Anotasi Teks Bebas Baru
 
-Anotasi teks bebas menampilkan teks langsung di halaman. Metode [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) memungkinkan pembuatan jenis anotasi ini. Dalam potongan berikut, kami menambahkan anotasi teks bebas di atas kemunculan pertama dari string.
+## Cara menambahkan Anotasi Pop-up
+
+Anotasi Pop-up menampilkan teks dalam jendela pop-up untuk entri dan pengeditan. Ini tidak boleh muncul sendiri tetapi terkait dengan anotasi markup, anotasi induknya, dan harus digunakan untuk mengedit teks induk.
+
+Ini tidak boleh memiliki aliran penampilan atau tindakan terkait sendiri dan harus diidentifikasi oleh entri Popup dalam kamus anotasi induknya.
+
+Potongan kode berikut menunjukkan cara menambahkan [Anotasi Pop-up](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) di halaman PDF menggunakan contoh menambahkan [anotasi Garis](/pdf/id/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) induk.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddLineAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
+    {
+        // Create Line Annotation
+        var lineAnnotation = new Aspose.Pdf.Annotations.LineAnnotation(
+            document.Pages[1],
+            new Aspose.Pdf.Rectangle(550, 93, 562, 439),
+            new Aspose.Pdf.Point(556, 99), new Aspose.Pdf.Point(556, 443))
+        {
+            Title = "John Smith",
+            Color = Aspose.Pdf.Color.Red,
+            Width = 3,
+            StartingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow,
+            EndingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow,
+            Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 124, 1021, 266))
+        };
+
+        // Add annotation to the page
+        document.Pages[1].Annotations.Add(lineAnnotation);
+
+        // Save PDF document
+        document.Save(dataDir + "AddLineAnnotation_out.pdf");
+    }
+}
+```
+
+## Cara menambahkan (atau Membuat) Anotasi Teks Gratis baru
+
+Anotasi teks gratis menampilkan teks langsung di halaman. Metode [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) memungkinkan pembuatan jenis anotasi ini. Dalam potongan berikut, kami menambahkan anotasi teks gratis di atas kemunculan pertama dari string.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddFreeTextAnnotationDemo()
 {
-    _document = new Document(@"C:\tmp\pdf-sample.pdf");
-    var pdfContentEditor = new PdfContentEditor(_document);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    tfa.Visit(_document.Pages[1]);
-    if (tfa.TextFragments.Count <= 0) return;
-    var rect = new System.Drawing.Rectangle
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "pdf-sample.pdf"))
     {
-        X = (int)tfa.TextFragments[1].Rectangle.LLX,
-        Y = (int)tfa.TextFragments[1].Rectangle.URY + 5,
-        Height = 18,
-        Width = 100
-    };
+        var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor(document);
 
-    pdfContentEditor.CreateFreeText(rect, "Demo Teks Bebas", 1); // parameter terakhir adalah nomor halaman
-    pdfContentEditor.Save(@"C:\tmp\pdf-sample-0.pdf");
+        // Assuming tfa is an instance of TextFragmentAbsorber or similar
+        var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        tfa.Visit(document.Pages[1]);
+
+        if (tfa.TextFragments.Count <= 0)
+        {
+            return;
+        }
+
+        // Define the rectangle for the free text annotation
+        var rect = new System.Drawing.Rectangle
+        {
+            X = (int)tfa.TextFragments[1].Rectangle.LLX,
+            Y = (int)tfa.TextFragments[1].Rectangle.URY + 5,
+            Height = 18,
+            Width = 100
+        };
+
+        // Create free text annotation
+        pdfContentEditor.CreateFreeText(rect, "Free Text Demo", 1); // Last param is the page number
+
+        // Save PDF document
+        pdfContentEditor.Save(dataDir + "pdf-sample-0.pdf");
+    }
 }
 ```
 
 ### Atur Properti Callout untuk FreeTextAnnotation
-### Atur Properti Callout untuk FreeTextAnnotation
 
-Untuk konfigurasi yang lebih fleksibel dari anotasi dalam dokumen PDF, Aspose.PDF untuk .NET menyediakan properti [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) dari kelas [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) yang memungkinkan penentuan Array dari titik garis callout. Cuplikan kode berikut menunjukkan, bagaimana menggunakan fungsionalitas ini:
+Untuk konfigurasi anotasi yang lebih fleksibel dalam dokumen PDF, Aspose.PDF for .NET menyediakan properti [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) dari kelas [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) yang memungkinkan spesifikasi Array titik garis callout. Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini:
 
 ```csharp
-// Untuk contoh lengkap dan berkas data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-Document doc = new Document();
-Page page = doc.Pages.Add();
-DefaultAppearance da = new DefaultAppearance();
-da.TextColor = System.Drawing.Color.Red;
-da.FontSize = 10;
-FreeTextAnnotation fta = new FreeTextAnnotation(page, new Rectangle(422.25, 645.75, 583.5, 702.75), da);
-fta.Intent = FreeTextIntent.FreeTextCallout;
-fta.EndingStyle = LineEnding.OpenArrow;
-fta.Callout = new Point[]
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddFreeTextCalloutAnnotation()
 {
-    new Point(428.25,651.75), new Point(462.75,681.375), new Point(474,681.375)
-};
-page.Annotations.Add(fta);
-fta.RichText = "<body xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:APIVersion=\"Acrobat:11.0.23\" xfa:spec=\"2.0.2\"  style=\"color:#FF0000;font-weight:normal;font-style:normal;font-stretch:normal\"><p dir=\"ltr\"><span style=\"font-size:9.0pt;font-family:Helvetica\">Ini adalah contoh</span></p></body>";
-doc.Save(dataDir + "SetCalloutProperty.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Create default appearance for the annotation
+        var da = new Aspose.Pdf.Annotations.DefaultAppearance();
+        da.TextColor = System.Drawing.Color.Red;
+        da.FontSize = 10;
+
+        // Create free text annotation with callout
+        var fta = new Aspose.Pdf.Annotations.FreeTextAnnotation(page, new Aspose.Pdf.Rectangle(422.25, 645.75, 583.5, 702.75), da);
+        fta.Intent = Aspose.Pdf.Annotations.FreeTextIntent.FreeTextCallout;
+        fta.EndingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow;
+        fta.Callout = new Aspose.Pdf.Point[]
+        {
+            new Aspose.Pdf.Point(428.25, 651.75),
+            new Aspose.Pdf.Point(462.75, 681.375),
+            new Aspose.Pdf.Point(474, 681.375)
+        };
+
+        // Add the annotation to the page
+        page.Annotations.Add(fta);
+
+        // Set rich text for the annotation
+        fta.RichText = "<body xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:APIVersion=\"Acrobat:11.0.23\" xfa:spec=\"2.0.2\"  style=\"color:#FF0000;font-weight:normal;font-style:normal;font-stretch:normal\"><p dir=\"ltr\"><span style=\"font-size:9.0pt;font-family:Helvetica\">This is a sample</span></p></body>";
+
+        // Save PDF document
+        document.Save(dataDir + "SetCalloutProperty_out.pdf");
+    }
+}
 ```
+
 ### Atur Properti Callout untuk File XFDF
 
-Jika Anda menggunakan impor dari file XFDF, silakan gunakan nama callout-line daripada hanya Callout. Potongan kode berikut menunjukkan, bagaimana menggunakan fungsi ini:
+Jika Anda menggunakan impor dari file XFDF, silakan gunakan nama garis callout alih-alih hanya Callout. Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini:
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-Document pdfDocument = new Document(dataDir + "AddAnnotation.pdf");
-StringBuilder Xfdf = new StringBuilder();
-Xfdf.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?><xfdf xmlns=\"http://ns.adobe.com/xfdf/\" xml:space=\"preserve\"><annots>");
-CreateXfdf(ref Xfdf);
-Xfdf.AppendLine("</annots></xfdf>");
-pdfDocument.ImportAnnotationsFromXfdf(new MemoryStream(Encoding.UTF8.GetBytes(Xfdf.ToString())));
-pdfDocument.Save(dataDir + "SetCalloutPropertyXFDF.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportAnnotationsFromXfdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
+    {
+        // Create an XFDF string builder
+        var xfdf = new StringBuilder();
+        xfdf.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?><xfdf xmlns=\"http://ns.adobe.com/xfdf/\" xml:space=\"preserve\"><annots>");
+
+        // Call the method to create XFDF content
+        CreateXfdf(ref xfdf);
+
+        xfdf.AppendLine("</annots></xfdf>");
+
+        // Import annotations from the XFDF string
+        document.ImportAnnotationsFromXfdf(new MemoryStream(Encoding.UTF8.GetBytes(xfdf.ToString())));
+
+        // Save PDF document
+        document.Save(dataDir + "SetCalloutPropertyXfdf_out.pdf");
+    }
+}
 ```
 
 Metode berikut digunakan untuk CreateXfdf:
 
 ```csharp
-/// <summary>
-/// Buat XFDF
-/// </summary>
-/// <param name="pXfdf"></param>
-
-static void CreateXfdf(ref StringBuilder pXfdf)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateXfdf(ref StringBuilder pXfdf)
 {
     pXfdf.Append("<freetext");
     pXfdf.Append(" page=\"0\"");
@@ -257,218 +306,364 @@ static void CreateXfdf(ref StringBuilder pXfdf)
     pXfdf.AppendLine(">");
     pXfdf.Append("<contents-richtext><body ");
     pXfdf.Append(" style=\"font-size:10.0pt;text-align:left;color:#FF0000;font-weight:normal;font-style:normal;font-family:Helvetica;font-stretch:normal\">");
-    pXfdf.Append("<p dir=\"ltr\">Ini adalah contoh</p>");
+    pXfdf.Append("<p dir=\"ltr\">This is a sample</p>");
     pXfdf.Append("</body></contents-richtext>");
     pXfdf.AppendLine("<defaultappearance>/Helv 12 Tf 1 0 0 rg</defaultappearance>");
     pXfdf.AppendLine("</freetext>");
 }
 ```
-### Membuat Anotasi Teks Bebas Menjadi Tidak Terlihat
 
-Terkadang, diperlukan untuk membuat watermark yang tidak terlihat dalam dokumen saat dilihat tetapi harus terlihat saat dokumen dicetak. Gunakan bendera anotasi untuk tujuan ini. Cuplikan kode berikut menunjukkan caranya.
+### Buat Anotasi Teks Gratis Tidak Terlihat
+
+Terkadang, perlu untuk membuat watermark yang tidak terlihat dalam dokumen saat melihatnya tetapi harus terlihat saat dokumen dicetak. Gunakan bendera anotasi untuk tujuan ini. Potongan kode berikut menunjukkan caranya.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddInvisibleAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Buka dokumen
-Document doc = new Document(dataDir + "input.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create a free text annotation
+        var annotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(
+            document.Pages[1],
+            new Aspose.Pdf.Rectangle(50, 600, 250, 650),
+            new Aspose.Pdf.Annotations.DefaultAppearance("Helvetica", 16, System.Drawing.Color.Red)
+        );
 
-FreeTextAnnotation annotation = new FreeTextAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(50, 600, 250, 650), new DefaultAppearance("Helvetica", 16, System.Drawing.Color.Red));
-annotation.Contents = "ABCDEFG";
-annotation.Characteristics.Border = System.Drawing.Color.Red;
-annotation.Flags = AnnotationFlags.Print | AnnotationFlags.NoView;
-doc.Pages[1].Annotations.Add(annotation);
+        annotation.Contents = "ABCDEFG";
+        annotation.Characteristics.Border = System.Drawing.Color.Red;
+        annotation.Flags = Aspose.Pdf.Annotations.AnnotationFlags.Print | Aspose.Pdf.Annotations.AnnotationFlags.NoView;
 
-dataDir = dataDir + "InvisibleAnnotation_out.pdf";
-// Simpan file keluaran
-doc.Save(dataDir);
+        // Add the annotation to the page
+        document.Pages[1].Annotations.Add(annotation);
+
+        // Save PDF document
+        document.Save(dataDir + "InvisibleAnnotation_out.pdf");
+    }
+}
 ```
-### Mengatur Format Teks pada FreeTextAnnotation
 
-Bagian ini membahas cara memformat teks dalam anotasi teks bebas.
+### Atur Pemformatan FreeTextAnnotation
 
-Anotasi terdapat dalam koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) dari objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Saat menambahkan [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) ke dalam dokumen PDF, Anda dapat menentukan informasi format seperti font, ukuran, warna, dan sebagainya menggunakan kelas [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index). Anda juga dapat menentukan informasi format menggunakan properti TextStyle. Selain itu, Anda dapat memperbarui format dari FreeTextAnnotation yang sudah ada dalam dokumen PDF.
+Bagian ini melihat bagaimana cara memformat teks dalam anotasi teks gratis.
 
-Kelas [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) mendukung kerja dengan entri gaya default.
-Kelas [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) mendukung penggunaan entri gaya default.
+Anotasi terdapat dalam koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Saat menambahkan [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) ke dokumen PDF, Anda dapat menentukan informasi pemformatan seperti font, ukuran, warna, dan sebagainya menggunakan kelas [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index). Juga dimungkinkan untuk menentukan informasi pemformatan menggunakan properti TextStyle. Selain itu, Anda dapat memperbarui pemformatan dari setiap FreeTextAnnotation yang sudah ada dalam dokumen PDF.
+
+Kelas [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) mendukung bekerja dengan entri gaya default. Kelas ini memungkinkan Anda untuk mengatur warna, ukuran font, dan nama font:
 
 - Properti FontName mendapatkan atau mengatur nama font (string).
 - Properti FontSize mendapatkan dan mengatur ukuran teks default (double).
 - Properti System.Drawing.Color mendapatkan dan mengatur warna teks (color).
-- Properti TextAlignment mendapatkan dan mengatur penyelarasan teks anotasi (alignment).
+- Properti TextAlignment mendapatkan dan mengatur perataan teks anotasi (alignment).
 
-Potongan kode berikut menunjukkan cara menambahkan FreeTextAnnotation dengan format teks tertentu.
+Potongan kode berikut menunjukkan cara menambahkan FreeTextAnnotation dengan pemformatan teks tertentu.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Annotations-SetFreeTextAnnotationFormatting-SetFreeTextAnnotationFormatting.cs" >}}
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddFreeAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFreeTextAnnotationFormatting.pdf"))
+    {
+        // Instantiate DefaultAppearance object
+        var defaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Arial", 28, System.Drawing.Color.Red);
+
+        // Create annotation
+        var freetext = new Aspose.Pdf.Annotations.FreeTextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600), defaultAppearance);
+
+        // Specify the contents of annotation
+        freetext.Contents = "Free Text";
+
+        // Add annotation to annotations collection of page
+        document.Pages[1].Annotations.Add(freetext);
+
+        // Save PDF document
+        document.Save(dataDir + "SetFreeTextAnnotationFormatting_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddFreeAnnotation(string fontName = "Arial", float fontSize = 28)
+{
+     // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+	
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFreeTextAnnotationFormatting.pdf"))
+    {
+        // Set default values
+        var textColor = System.Drawing.Color.Red;
+        var position = new Aspose.Pdf.Rectangle(200, 400, 400, 600);
+
+        // Instantiate DefaultAppearance object
+        Aspose.Pdf.Annotations.DefaultAppearance defaultAppearance = new(fontName, fontSize, textColor);
+        // Create annotation
+        var freetext = new Aspose.Pdf.Annotations.FreeTextAnnotation(document.Pages[1], position, defaultAppearance)
+        {
+            // Specify the contents of annotation
+            Contents = "Free Text"
+        };
+        // Add anootation to annotations collection of page
+        document.Pages[1].Annotations.Add(freetext);
+
+        // Save PDF document
+        document.Save(dataDir + "SetFreeTextAnnotationFormatting_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 {{% alert color="primary" %}}
 
-Ketika Anda mengubah isi atau gaya teks dari anotasi teks bebas, tampilan anotasi diregenerasi untuk mencerminkan perubahan.
+Ketika Anda mengubah konten atau gaya teks dari anotasi teks gratis, penampilan anotasi diperbarui untuk mencerminkan perubahan.
 
 {{% /alert %}}
 
-### Coret Kata menggunakan StrikeOutAnnotation
+### Garis Teks yang Dihapus menggunakan StrikeOutAnnotation
 
-Aspose.PDF untuk .NET memungkinkan Anda menambah, menghapus, dan memperbarui anotasi dalam dokumen PDF.
-Aspose.PDF for .NET memungkinkan Anda untuk menambah, menghapus, dan memperbarui anotasi dalam dokumen PDF.
+Aspose.PDF for .NET memungkinkan Anda untuk menambahkan, menghapus, dan memperbarui anotasi dalam dokumen PDF. Salah satu kelas memungkinkan Anda untuk menghapus anotasi juga. Ini berguna ketika Anda ingin menghapus satu atau lebih fragmen teks dalam dokumen. Anotasi disimpan dalam koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Kelas bernama [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) dapat digunakan untuk menambahkan anotasi garis yang dihapus ke dokumen PDF.
 
-Untuk mencoret TextFragment tertentu:
+Untuk menghapus fragmen Teks tertentu:
 
-1. Cari TextFragment dalam file PDF.
+1. Cari fragmen Teks dalam file PDF.
 1. Dapatkan koordinat objek TextFragment.
 1. Gunakan koordinat untuk menginstansiasi objek StrikeOutAnnotation.
 
-Potongan kode berikut menunjukkan cara mencari TextFragment tertentu dan menambahkan StrikeOutAnnotation ke objek tersebut.
+Potongan kode berikut menunjukkan cara mencari fragmen Teks tertentu dan menambahkan StrikeOutAnnotation ke objek tersebut.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Annotations-StrikeOutWords-StrikeOutWords.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private void StrikeOutTextInDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-{{% alert color="primary" %}}
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "pdf-sample.pdf"))
+    {
+        // Create TextFragment Absorber instance to search for a particular text fragment
+        var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Estoque");
 
-Fitur ini didukung oleh versi 19.6 atau lebih tinggi.
+        // Iterate through pages of PDF document
+        foreach (var page in document.Pages)
+        {
+            // Accept the absorber for the current page
+            page.Accept(textFragmentAbsorber);
+        }
 
-{{% /alert %}}
+        // Get the collection of absorbed text fragments
+        var textFragmentCollection = textFragmentAbsorber.TextFragments;
+
+        // Iterate through the collection of text fragments
+        foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentCollection)
+        {
+            // Get rectangular dimensions of the TextFragment object
+            var rect = new Aspose.Pdf.Rectangle(
+                (float)textFragment.Position.XIndent,
+                (float)textFragment.Position.YIndent,
+                (float)textFragment.Position.XIndent + (float)textFragment.Rectangle.Width,
+                (float)textFragment.Position.YIndent + (float)textFragment.Rectangle.Height);
+
+            // Instantiate StrikeOut Annotation instance
+            var strikeOut = new Aspose.Pdf.Annotations.StrikeOutAnnotation(textFragment.Page, rect)
+            {
+                // Set opacity for annotation
+                Opacity = 0.80f,
+
+                // Set the color of annotation
+                Color = Aspose.Pdf.Color.Red
+            };
+
+            // Set the border for annotation instance
+            strikeOut.Border = new Aspose.Pdf.Annotations.Border(strikeOut);
+
+            // Add annotation to the annotations collection of the TextFragment's page
+            textFragment.Page.Annotations.Add(strikeOut);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "StrikeOutWords_out.pdf");
+    }
+}
+```
 
 ## Hapus Semua Anotasi dari Halaman File PDF
 
-Koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) dari objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) berisi semua anotasi untuk halaman tersebut.
-Koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) dari objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) berisi semua anotasi untuk halaman tersebut.
+Koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) berisi semua anotasi untuk halaman tertentu tersebut. Untuk menghapus semua anotasi dari halaman, panggil metode *Delete* dari koleksi AnnotationCollectoin.
 
-Berikut adalah cuplikan kode yang menunjukkan cara menghapus semua anotasi dari halaman tertentu.
+Potongan kode berikut menunjukkan cara menghapus semua anotasi dari halaman tertentu.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteAllAnnotationsFromPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "DeleteAllAnnotationsFromPage.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotationsFromPage.pdf"))
+    {
+        // Delete all annotations from the first page
+        document.Pages[1].Annotations.Delete();
 
-// Hapus anotasi tertentu
-pdfDocument.Pages[1].Annotations.Delete();
-
-dataDir = dataDir + "DeleteAllAnnotationsFromPage_out.pdf";
-// Simpan dokumen yang telah diperbarui
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
+    }
+}
 ```
 
 ## Hapus Anotasi Tertentu dari File PDF
 
 {{% alert color="primary" %}}
 
-Anda dapat memeriksa kualitas Aspose.PDF dan mendapatkan hasil secara online di tautan ini:
-[products.aspose.app/pdf/annotation](https://products.aspose.app/pdf/annotation)
+Anda dapat memeriksa kualitas Aspose.PDF dan mendapatkan hasilnya secara online di tautan ini:
 [products.aspose.app/pdf/annotation](https://products.aspose.app/pdf/annotation)
 
 {{% /alert %}}
 
 Aspose.PDF memungkinkan Anda untuk menghapus Anotasi tertentu dari file PDF. Topik ini menjelaskan caranya.
 
-Untuk menghapus anotasi tertentu dari PDF, panggil [metode Delete dari kumpulan AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). Koleksi ini merupakan bagian dari objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Metode Delete memerlukan indeks dari anotasi yang ingin Anda hapus. Kemudian, simpan file PDF yang telah diperbarui. Cuplikan kode berikut menunjukkan cara menghapus anotasi tertentu.
+Untuk menghapus anotasi tertentu dari PDF, panggil [metode Delete dari koleksi AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). Koleksi ini milik objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Metode Delete memerlukan indeks anotasi yang ingin Anda hapus. Kemudian, simpan file PDF yang diperbarui. Potongan kode berikut menunjukkan cara menghapus anotasi tertentu.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteParticularAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "DeleteParticularAnnotation.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularAnnotation.pdf"))
+    {
+        // Delete a particular annotation by index (e.g., the first annotation on the first page)
+        document.Pages[1].Annotations.Delete(1);
 
-// Hapus anotasi tertentu
-pdfDocument.Pages[1].Annotations.Delete(1);
-
-dataDir = dataDir + "DeleteParticularAnnotation_out.pdf";
-// Simpan dokumen yang diperbarui
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "DeleteParticularAnnotation_out.pdf");
+    }
+}
 ```
 
 ## Dapatkan Semua Anotasi dari Halaman Dokumen PDF
 
-Aspose.PDF memungkinkan Anda untuk mendapatkan anotasi dari seluruh dokumen, atau dari halaman tertentu. Untuk mendapatkan semua anotasi dari halaman dalam dokumen PDF, lakukan perulangan melalui koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) dari sumber halaman yang diinginkan. Cuplikan kode berikut menunjukkan cara mendapatkan semua anotasi dari sebuah halaman.
+Aspose.PDF memungkinkan Anda untuk mendapatkan anotasi dari seluruh dokumen, atau dari halaman tertentu. Untuk mendapatkan semua anotasi dari halaman dalam dokumen PDF, lakukan loop melalui koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) dari sumber halaman yang diinginkan. Potongan kode berikut menunjukkan cara mendapatkan semua anotasi dari sebuah halaman.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "GetAllAnnotationsFromPage.pdf");
-
-// Lakukan perulangan melalui semua anotasi
-foreach (MarkupAnnotation annotation in pdfDocument.Pages[1].Annotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllAnnotationsFromPage()
 {
-    // Dapatkan properti anotasi
-    Console.WriteLine("Judul : {0} ", annotation.Title);
-    Console.WriteLine("Subjek : {0} ", annotation.Subject);
-    Console.WriteLine("Konten : {0} ", annotation.Contents);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAllAnnotationsFromPage.pdf"))
+    {
+        // Loop through all the annotations on the first page
+        foreach (Aspose.Pdf.Annotations.MarkupAnnotation annotation in document.Pages[1].Annotations)
+        {
+            // Get annotation properties
+            Console.WriteLine("Title : {0} ", annotation.Title);
+            Console.WriteLine("Subject : {0} ", annotation.Subject);
+            Console.WriteLine("Contents : {0} ", annotation.Contents);
+        }
+    }
 }
 ```
-Harap diperhatikan bahwa untuk mendapatkan semua anotasi dari seluruh PDF, Anda harus melakukan perulangan melalui koleksi kelas PageCollection dari dokumen sebelum menavigasi melalui koleksi kelas AnnotationCollection. Anda dapat mendapatkan setiap anotasi dari koleksi tersebut dalam tipe dasar anotasi yang disebut kelas MarkupAnnotation dan kemudian menampilkan propertinya.
+
+Harap dicatat bahwa untuk mendapatkan semua anotasi dari seluruh PDF, Anda harus melakukan loop melalui koleksi Kelas PageCollection dokumen sebelum menavigasi melalui koleksi kelas AnnotationCollection. Anda dapat mendapatkan setiap anotasi dari koleksi dalam tipe anotasi dasar yang disebut Kelas MarkupAnnotation dan kemudian menunjukkan propertinya.
 
 ## Dapatkan Anotasi Tertentu dari File PDF
 
-Anotasi terkait dengan halaman individu dan disimpan dalam koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) dari objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
-Anotasi terkait dengan halaman individu dan disimpan dalam koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) dari objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+Anotasi terkait dengan halaman individu dan disimpan dalam koleksi [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Untuk mendapatkan anotasi tertentu, tentukan indeksnya. Ini mengembalikan objek [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) yang perlu di-cast ke tipe anotasi tertentu, misalnya [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). Potongan kode berikut menunjukkan cara mendapatkan anotasi tertentu dan propertinya.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetParticularAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "GetParticularAnnotation.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetParticularAnnotation.pdf"))
+    {
+        // Get a particular annotation by index (e.g., the first annotation on the first page)
+        var textAnnotation = (Aspose.Pdf.Annotations.TextAnnotation)document.Pages[1].Annotations[1];
 
-// Dapatkan anotasi tertentu
-TextAnnotation textAnnotation = (TextAnnotation)pdfDocument.Pages[1].Annotations[1];
-
-// Dapatkan properti anotasi
-Console.WriteLine("Judul : {0} ", textAnnotation.Title);
-Console.WriteLine("Subjek : {0} ", textAnnotation.Subject);
-Console.WriteLine("Isi : {0} ", textAnnotation.Contents);
+        // Get annotation properties
+        Console.WriteLine("Title : {0} ", textAnnotation.Title);
+        Console.WriteLine("Subject : {0} ", textAnnotation.Subject);
+        Console.WriteLine("Contents : {0} ", textAnnotation.Contents);
+    }
+}
 ```
 
 ## Dapatkan Sumber Anotasi
 
-Aspose.PDF memungkinkan Anda untuk mendapatkan sumber anotasi dari seluruh dokumen, atau dari halaman tertentu.
-Aspose.PDF memungkinkan Anda untuk mendapatkan sumber daya anotasi dari seluruh dokumen, atau dari halaman tertentu.
+Aspose.PDF memungkinkan Anda untuk mendapatkan sumber anotasi dari seluruh dokumen, atau dari halaman tertentu. Potongan kode berikut menunjukkan cara mendapatkan sumber anotasi sebagai objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) dari file PDF input.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// Buka dokumen
-Document doc = new Document(dataDir + "AddAnnotation.pdf");
-//Buat anotasi
-ScreenAnnotation sa = new ScreenAnnotation(doc.Pages[1], new Rectangle(100, 400, 300, 600), dataDir + "AddSwfFileAsAnnotation.swf");
-doc.Pages[1].Annotations.Add(sa);
-// Simpan Dokumen
-doc.Save(dataDir + "GetResourceOfAnnotation_Out.pdf");
-
-// Buka dokumen
-Document doc1 = new Document(dataDir + "GetResourceOfAnnotation_Out.pdf");
-
-//Dapatkan aksi dari anotasi
-RenditionAction action = (doc.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction;
-
-//Dapatkan perwujudan dari aksi perwujudan
-Rendition rendition = ((doc.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction).Rendition;
-
-//Klip Media
-MediaClip clip = (rendition as MediaRendition).MediaClip;
-FileSpecification data = (clip as MediaClipData).Data;
-MemoryStream ms = new MemoryStream();
-byte[] buffer = new byte[1024];
-int read = 0;
-//Data media dapat diakses di FileSpecification.Contents
-Stream source = data.Contents;
-while ((read = source.Read(buffer, 0, buffer.Length)) > 0)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddAndGetResourceOfAnnotation()
 {
-    ms.Write(buffer, 0, read);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
+    {
+        // Create a screen annotation with a SWF file
+        var sa = new Aspose.Pdf.Annotations.ScreenAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 400, 300, 600), dataDir + "AddSwfFileAsAnnotation.swf");
+        document.Pages[1].Annotations.Add(sa);
+
+        // Save PDF document with the new annotation
+        document.Save(dataDir + "GetResourceOfAnnotation_out.pdf");
+
+        // Open the updated document
+        var document1 = new Aspose.Pdf.Document(dataDir + "GetResourceOfAnnotation_Out.pdf");
+
+        // Get the action of the annotation
+        var action = (document1.Pages[1].Annotations[1] as Aspose.Pdf.Annotations.ScreenAnnotation).Action as Aspose.Pdf.Annotations.RenditionAction;
+
+        // Get the rendition of the rendition action
+        var rendition = action.Rendition;
+
+        // Get the media clip
+        var clip = (rendition as Aspose.Pdf.Annotations.MediaRendition).MediaClip;
+        var data = (clip as Aspose.Pdf.Annotations.MediaClipData).Data;
+
+        // Read the media data
+        using (var ms = new MemoryStream())
+        {
+            byte[] buffer = new byte[1024];
+            int read = 0;
+
+            // Data of media are accessible in FileSpecification.Contents
+            using (var source = data.Contents)
+            {
+                while ((read = source.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    ms.Write(buffer, 0, read);
+                }
+            }
+
+            Console.WriteLine(rendition.Name);
+            Console.WriteLine(action.RenditionOperation);
+        }
+    }
 }
-Console.WriteLine(rendition.Name);
-Console.WriteLine(action.RenditionOperation);
 ```
 
 <script type="application/ld+json">
@@ -497,21 +692,21 @@ Console.WriteLine(action.RenditionOperation);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -522,7 +717,7 @@ Console.WriteLine(action.RenditionOperation);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -534,5 +729,3 @@ Console.WriteLine(action.RenditionOperation);
     }
 }
 </script>
-```
-
