@@ -4,7 +4,7 @@ type: docs
 weight: 80
 url: /java/pdfconverter-class/
 description: Discover how to use the PDFConverter class in Java to convert PDF files into other formats with Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

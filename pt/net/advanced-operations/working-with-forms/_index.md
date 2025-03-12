@@ -2,9 +2,11 @@
 title: Trabalhando com Formulários
 linktitle: Trabalhando com Formulários
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /pt/net/working-with-forms/
-description: Esta seção explica como trabalhar com AcroForms e XFA Forms em seus documentos PDF com Aspose.PDF para .NET.
+description: Esta seção explica como trabalhar com AcroForms e XFA Forms em seus documentos PDF com Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabalhando com Formulários",
-    "alternativeHeadline": "Como trabalhar com AcroForms e XFA Forms",
+    "headline": "Working with Forms",
+    "alternativeHeadline": "Effortlessly Manage AcroForms and XFA in PDFs",
+    "abstract": "Descubra a nova funcionalidade de Aspose.PDF for .NET, permitindo interação contínua com AcroForms e XFA Forms diretamente em seus documentos PDF. Este poderoso recurso simplifica o processo de mapeamento e preenchimento de formulários programaticamente, aprimorando as capacidades de manipulação de documentos para desenvolvedores C#. Desbloqueie o manuseio avançado de formulários PDF hoje!",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, acroforms, xfa forms",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "AcroForms, XFA Forms, Aspose.PDF, PDF document generation, fill form fields, extract data from form, map PDF fields, programmatically complete PDF, XML presentation forms",
+    "wordcount": "153",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,15 +74,15 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-forms/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Esta seção explica como trabalhar com AcroForms e XFA Forms em seus documentos PDF com Aspose.PDF para .NET."
+    "dateModified": "2024-11-25",
+    "description": "Esta seção explica como trabalhar com AcroForms e XFA Forms em seus documentos PDF com Aspose.PDF for .NET."
 }
 </script>
 
-Esta seção descreve uma abordagem rápida e simples para completar programaticamente um documento PDF por meio do uso do Aspose.PDF. A seção também discute como se pode proceder para usar o Aspose.PDF para .NET para descobrir e mapear os campos disponíveis dentro de um PDF existente com AcroForms.
-Além disso, você aprenderá como trabalhar com XFA - outra tecnologia para a apresentação de formulários baseada em XML.
+Esta seção descreve uma abordagem rápida e simples para completar programaticamente um documento PDF através do uso do Aspose.PDF. A seção também discute como alguém pode usar o Aspose.PDF for .NET para descobrir e mapear os campos disponíveis dentro de um PDF existente com AcroForms. 
+Além disso, você aprenderá como trabalhar com XFA - outra tecnologia para os formulários de apresentação baseados em XML.
 
-- [AcroForms](/pdf/pt/net/acroforms/) - criar formulário, preencher campo de formulário, extrair dados do formulário, adicionar e remover campos no seu PDF com a biblioteca .NET.
+- [AcroForms](/pdf/pt/net/acroforms/) - criar formulário, preencher campo de formulário, extrair dados do formulário, adicionar e remover campos em seu PDF com a biblioteca .NET.
 - [XFA Forms](/pdf/pt/net/xfa-forms/) - preencher campos XFA, converter XFA, obter propriedades dos campos XFA.
 
 <script type="application/ld+json">
@@ -145,5 +148,3 @@ Além disso, você aprenderá como trabalhar com XFA - outra tecnologia para a a
     }
 }
 </script>
-
-

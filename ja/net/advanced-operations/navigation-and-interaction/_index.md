@@ -1,10 +1,12 @@
 ---
-title: PDFでのナビゲーションとインタラクション
+title: PDFにおけるナビゲーションとインタラクション
 linktitle: ナビゲーションとインタラクション
 type: docs
-weight: 90
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 140
 url: /ja/net/navigation-and-interaction/
-description: このセクションでは、リンク、アクション、およびブックマークの操作機能について説明します。
+description: このセクションでは、リンク、アクション、およびブックマークに関する機能について説明します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFでのナビゲーションとインタラクション",
-    "alternativeHeadline": "PDFのリンク、アクション、ブックマーク",
+    "headline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Programmatically Add Links to PDF Files in C#",
+    "abstract": "C#を使用してPDF文書内のリンクをプログラムで管理する新しい機能を発見してください。この機能により、内部ページリンクや外部ウェブサイトのハイパーリンクを簡単に追加でき、PDF内のナビゲーションとインタラクティビティが向上します。PDF管理プロセスを効率化したい開発者に最適です！",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, リンク, アクション, PDFでのブックマーク",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Working with Links, PDF programmatically, internal page link, external website hyperlink, C# language, PDF document generation, create links in PDF, extract links from PDF, update link destinations, Aspose.PDF for .NET",
+    "wordcount": "118",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,13 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/navigation-and-interaction/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このセクションでは、リンク、アクション、およびブックマークの操作機能について説明します。"
+    "dateModified": "2024-11-25",
+    "description": "このセクションでは、リンク、アクション、およびブックマークに関する機能について説明します。"
 }
 </script>
-- [リンク](/pdf/ja/net/links/) - C#を使って、簡単にリンクを作成、更新、抽出できます。
-- [アクション](/pdf/ja/net/actions/) - PDFファイルにハイパーリンクを追加、取得することが可能です。また、この記事では、PDFファイルからドキュメントオープンアクションを削除する方法や、ドキュメントを表示する際にPDFページを指定する方法について学びます。
-- [ブックマーク](/pdf/ja/net/bookmarks/)- 大規模な出版物には通常、ブックマークのフレームワークが含まれており、ブックマークペインで簡単に表示および選択できます。ブックマークをクリックすると、それが表すページや章にジャンプできます。ブックマークペインはコンテンツ認識要素であり、開かれたPDFドキュメントにブックマーク構造が含まれている場合にのみサイドバーに表示されます。
+
+- [リンク](/pdf/ja/net/links/) - C#を使用してリンクを簡単に作成、更新、抽出できます。
+- [アクション](/pdf/ja/net/actions/) - PDFファイルにハイパーリンクを追加および取得、作成することが可能です。また、この記事では、PDFファイルからドキュメントオープンアクションを削除する方法や、ドキュメントを表示する際にPDFページを指定する方法について学びます。
+- [ブックマーク](/pdf/ja/net/bookmarks/) - 大規模な出版物には通常、ブックマークのフレームワークが含まれており、ブックマークペインで簡単に表示および選択できます。これにより、ブックマークをクリックしてそれが表すページや章にジャンプできます。ブックマークペインはコンテンツ認識要素であり、開いているPDF文書にブックマーク構造が含まれている場合にのみサイドバーに表示されます。
 
 <script type="application/ld+json">
 {
@@ -142,4 +146,3 @@ sitemap:
     }
 }
 </script>
-

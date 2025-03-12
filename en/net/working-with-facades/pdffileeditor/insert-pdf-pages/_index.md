@@ -1,6 +1,8 @@
 ---
 title: Insert PDF pages
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/insert-pdf-pages/
 description: This section explains how to insert PDF pages with Aspose.PDF Facades using PdfFileEditor class.

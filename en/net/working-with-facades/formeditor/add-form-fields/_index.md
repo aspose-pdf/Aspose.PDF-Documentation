@@ -1,6 +1,8 @@
 ---
 title: Add PDF Form Fields
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-form-fields/
 description: This topic explains how to work with Form Fields with Aspose.PDF Facades using FormEditor Class.

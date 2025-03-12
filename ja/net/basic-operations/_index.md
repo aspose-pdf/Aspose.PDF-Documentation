@@ -2,17 +2,21 @@
 title: PDFドキュメントの基本操作
 linktitle: 基本操作
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /ja/net/basic-operations/
 lastmod: "2022-01-29"
-description: 基本操作セクションでは、Aspose.PDF for .NETを使用してPDFドキュメントを開くおよび保存する可能性について説明します。
+description: 基本操作セクションでは、Aspose.PDF for .NETを使用してPDFドキュメントを開くことと保存することの可能性について説明します。
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+**基本操作**セクションでは、Aspose.PDF for .NETにおけるPDFドキュメントに関する最初で最も簡単で人気のある操作について説明します：
 
-**基本操作** セクションでは、Aspose.PDF for .NETでのPDFドキュメントとの最初で最も簡単な操作について説明します:
-
-- [PDFドキュメントの作成](/pdf/ja/net/create-document/) - この記事では、C#を使用してPDFファイルを作成する方法について説明します。
-- [PDFドキュメントの開く](/pdf/ja/net/open-pdf-document/) - この記事では、.NETアプリケーションでPDFドキュメントを開くさまざまな方法について説明します。
-- [PDFドキュメントの保存](/pdf/ja/net/save-pdf-document/) - この記事では、ファイル、ストリームにPDFドキュメントを保存する方法、Webに送信する方法、またはPDF/A（またはPDF/X）ドキュメントとして保存する方法について説明します。
+- [PDFドキュメントの作成](/pdf/ja/net/create-document/) - この文書では、C#を使用してPDFファイルを作成する方法について説明します。
+- [PDFドキュメントのオープン](/pdf/ja/net/open-pdf-document/) - この文書では、.NETアプリケーションでPDFドキュメントを開くさまざまな方法について説明します。
+- [PDFドキュメントの保存](/pdf/ja/net/save-pdf-document/) - この文書では、PDFドキュメントをファイル、ストリームに保存する方法、Webに送信する方法、またはPDF/A（またはPDF/X）ドキュメントとして保存する方法について説明します。
+- [PDFのマージ](/pdf/ja/net/merge-pdf-documents/) - C#を使用して複数のPDFファイルを1つのPDFドキュメントにマージします。
+- [PDFの分割](/pdf/ja/net/split-document/) - .NETアプリケーションでPDFページを個別のPDFファイルに分割します。
+- [PDFファイルの暗号化と復号化](/pdf/ja/net/set-privileges-encrypt-and-decrypt-pdf-file/) - PDFファイルを暗号化および復号化します。

@@ -5,10 +5,14 @@ type: docs
 weight: 40
 url: /java/add-line/
 description: This article explains how to create a line object to your PDF using Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Add Line objects to PDF documents using Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on adding Line objects to PDF documents using Aspose.PDF for Java. It highlights the capability to incorporate various graph objects, such as lines and rectangles, with customizable attributes like dash patterns and colors. The article details three main functionalities. It outlines the steps to create a PDF document, add a page, and draw a simple line using the `Line` object. A code snippet demonstrates setting line width and saving the document. The process to create a dotted dashed line involves specifying color and dash patterns for the line. The provided code illustrates the implementation and results in saving the PDF with the dashed line. Instructions are given to draw intersecting lines across the page, forming a cross. This includes setting page margins and utilizing the `Line` object to draw lines from corner to corner. Each section is accompanied by Java code examples and illustrative
+SoftwareApplication: java
 ---
 
 ## Add Line object

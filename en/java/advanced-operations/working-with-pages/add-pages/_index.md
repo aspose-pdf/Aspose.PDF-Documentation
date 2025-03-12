@@ -5,10 +5,14 @@ type: docs
 weight: 10
 url: /java/add-pages/
 description: This article teaches how to insert (add) a page at the desired location PDF file. Learn how to move, remove (delete) pages from a PDF file using Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on how to add or insert pages in a PDF file using Aspose.PDF for Java
+Abstract: This article provides a guide on how to add or insert pages in a PDF file using Aspose.PDF for Java. It details two main operations - inserting an empty page at a specified location within a PDF and adding an empty page at the end of a PDF document. The article includes Java code snippets demonstrating these functionalities. To insert a page at a specific location, the user must create a `Document` object, utilize the `PageCollection`'s `insert` method, and save the updated document. The provided code also shows how to align a new page's size with an existing page's parameters by copying page properties. To add a page at the end of a document, the `add` method of `PageCollection` is used without parameters. Each process concludes by saving the modified PDF with the `save` method.
+SoftwareApplication: java
 ---
 
 ## Add or Insert Page in a PDF File

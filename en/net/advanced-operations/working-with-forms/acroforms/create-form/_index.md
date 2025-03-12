@@ -2,6 +2,8 @@
 title: Create AcroForm - Create Fillable PDF in C#
 linktitle: Create AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/create-form/
 description: With Aspose.PDF for .NET you may create a form from scratch in your PDF file

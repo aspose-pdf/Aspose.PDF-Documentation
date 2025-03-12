@@ -1,6 +1,8 @@
 ---
 title: Split PDF pages
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/split-pdf-pages/
 description: This section explains how to split PDF pages with Aspose.PDF Facades using PdfFileEditor class.

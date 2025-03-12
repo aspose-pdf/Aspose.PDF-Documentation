@@ -1,10 +1,12 @@
 ---
-title: Создание тегированного PDF с помощью C#
-linktitle: Создание тегированного PDF
+title: Создание помеченного PDF с использованием C#
+linktitle: Создание помеченного PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/create-tagged-pdf/
-description: Эта статья объясняет, как программно создавать элементы структуры для тегированного PDF документа с использованием Aspose.PDF для .NET.
+description: Эта статья объясняет, как программно создать элементы структуры для помеченного PDF-документа с использованием Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Создание тегированного PDF с помощью C#",
-    "alternativeHeadline": "Как создать тегированный PDF",
+    "headline": "Create Tagged PDF using C#",
+    "alternativeHeadline": "Programmatically create tagged PDFs using C#",
+    "abstract": "Программное создание помеченных PDF-документов с использованием C# и Aspose.PDF, обеспечивая соответствие стандартам PDF/UA. Эта функция позволяет создавать структурированные PDF-документы с элементами, такими как заголовки и абзацы, поддерживая вложенные структуры и стили текста для доступности. Библиотека также включает валидацию для подтверждения соответствия стандартам PDF/UA.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация PDF документов",
-    "keywords": "создание, тегированный, pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
+    "wordcount": "1163",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,89 +74,199 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-tagged-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Эта статья объясняет, как программно создавать элементы структуры для тегированного PDF документа с использованием Aspose.PDF для .NET."
+    "dateModified": "2022-11-25",
+    "description": "Эта статья объясняет, как программно создать элементы структуры для помеченного PDF-документа с использованием Aspose.PDF for .NET."
 }
 </script>
-Создание маркированного PDF означает добавление (или создание) определенных элементов в документ, что позволит валидировать документ в соответствии с требованиями PDF/UA. Эти элементы часто называются Структурными Элементами.
 
-Приведенный ниже фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Создание помеченного PDF означает добавление (или создание) определенных элементов в документ, которые позволят документу быть проверенным в соответствии с требованиями PDF/UA. Эти элементы часто называются элементами структуры.
 
-## Создание маркированного PDF (Простой сценарий)
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Для создания структурных элементов в маркированном PDF документе, Aspose.PDF предлагает методы создания структурного элемента с помощью интерфейса [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Следующий фрагмент кода показывает, как создать маркированный PDF, содержащий 2 элемента: заголовок и абзац.
+## Создание помеченного PDF (Простой сценарий)
 
+Для создания элементов структуры в помеченном PDF-документе Aspose.PDF предлагает методы для создания элемента структуры с использованием интерфейса [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Следующий фрагмент кода показывает, как создать помеченный PDF, который содержит 2 элемента: заголовок и абзац.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateTaggedPdfDocument01()
 {
-    // Создание PDF документа
-    var document = new Document();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Получение контента для работы с TaggedPdf
-    ITaggedContent taggedContent = document.TaggedContent;
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with TaggedPdf
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+        var rootElement = taggedContent.RootElement;
+
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
+
+        Aspose.Pdf.LogicalStructure.HeaderElement mainHeader = taggedContent.CreateHeaderElement();
+        mainHeader.SetText("Main Header");
+
+        Aspose.Pdf.LogicalStructure.ParagraphElement paragraphElement = taggedContent.CreateParagraphElement();
+        paragraphElement.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
+            "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. " +
+            "Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet" +
+            "nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus." +
+            "Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat" +
+            "sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper" +
+            "pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus" +
+            "ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus," +
+            "ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
+
+        rootElement.AppendChild(mainHeader);
+        rootElement.AppendChild(paragraphElement);
+
+        // Save Tagged PDF document
+        document.Save(dataDir + "TaggedPdfDocument_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateTaggedPdfDocument01()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with TaggedPdf
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
     var rootElement = taggedContent.RootElement;
-    // Установка заголовка и языка для документа
-    taggedContent.SetTitle("Маркированный PDF документ");
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
     taggedContent.SetLanguage("en-US");
 
-    // 
-    HeaderElement mainHeader = taggedContent.CreateHeaderElement();
-    mainHeader.SetText("Основной заголовок");
+    Aspose.Pdf.LogicalStructure.HeaderElement mainHeader = taggedContent.CreateHeaderElement();
+    mainHeader.SetText("Main Header");
 
-    ParagraphElement paragraphElement = taggedContent.CreateParagraphElement();
+    Aspose.Pdf.LogicalStructure.ParagraphElement paragraphElement = taggedContent.CreateParagraphElement();
     paragraphElement.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-    "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. " +
-    "Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet" +
-    "nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus." +
-    "Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat" +
-    "sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper" +
-    "pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus" +
-    "ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed luctus lacinia," +
-    "ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
+        "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. " +
+        "Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet" +
+        "nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus." +
+        "Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat" +
+        "sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper" +
+        "pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus" +
+        "ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus," +
+        "ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
 
     rootElement.AppendChild(mainHeader);
     rootElement.AppendChild(paragraphElement);
 
-    // Сохранение маркированного PDF документа
-    document.Save("C:\\Samples\\TaggedPDF\\Sample1.pdf");
+    // Save Tagged PDF Document
+    document.Save(dataDir + "TaggedPdfDocument_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
+
 Мы получим следующий документ после создания:
 
-![Тегированный PDF-документ с 2 элементами - Заголовок и Параграф](taggedpdf-01.png)
+![Помеченный PDF-документ с 2 элементами - Заголовок и Абзац](taggedpdf-01.png)
 
-## Создание тегированного PDF с вложенными элементами (Создание дерева структурных элементов)
+## Создание помеченного PDF с вложенными элементами (Создание дерева элементов структуры)
 
-В некоторых случаях нам нужно создать более сложную структуру, например, разместить цитаты в параграфе.
-Для создания дерева структурных элементов мы должны использовать метод [AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild).
-Следующий фрагмент кода показывает, как создать дерево структурных элементов тегированного PDF-документа:
+В некоторых случаях нам нужно создать более сложную структуру, например, разместить цитаты в абзаце. 
+Для создания дерева элементов структуры мы должны использовать метод [AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild).
+Следующий фрагмент кода показывает, как создать дерево элементов структуры помеченного PDF-документа:
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateTaggedPdfDocument02()
 {
-    // Создание PDF-документа
-    var document = new Document();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Получение контента для работы с TaggedPdf
-    ITaggedContent taggedContent = document.TaggedContent;
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with TaggedPdf
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+        var rootElement = taggedContent.RootElement;
+
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
+
+        Aspose.Pdf.LogicalStructure.HeaderElement header1 = taggedContent.CreateHeaderElement(1);
+        header1.SetText("Header Level 1");
+
+        Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
+        paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
+        paragraphWithQuotes.StructureTextState.MarginInfo = new Aspose.Pdf.MarginInfo(10, 5, 10, 5);
+
+        Aspose.Pdf.LogicalStructure.SpanElement spanElement1 = taggedContent.CreateSpanElement();
+        spanElement1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
+
+        Aspose.Pdf.LogicalStructure.QuoteElement quoteElement = taggedContent.CreateQuoteElement();
+        quoteElement.SetText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa.");
+        quoteElement.StructureTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold | Aspose.Pdf.Text.FontStyles.Italic;
+        Aspose.Pdf.LogicalStructure.SpanElement spanElement2 = taggedContent.CreateSpanElement();
+        spanElement2.SetText(" Sed non consectetur elit.");
+
+        paragraphWithQuotes.AppendChild(spanElement1);
+        paragraphWithQuotes.AppendChild(quoteElement);
+        paragraphWithQuotes.AppendChild(spanElement2);
+
+        rootElement.AppendChild(header1);
+        rootElement.AppendChild(paragraphWithQuotes);
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "TaggedPdfDocument_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateTaggedPdfDocument02()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with TaggedPdf
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
     var rootElement = taggedContent.RootElement;
-    // Установка заголовка и языка документа
+
+    // Set Title and Language for Document
     taggedContent.SetTitle("Tagged Pdf Document");
     taggedContent.SetLanguage("en-US");
 
-    HeaderElement header1 = taggedContent.CreateHeaderElement(1);
-    header1.SetText("Заголовок уровня 1");
+    Aspose.Pdf.LogicalStructure.HeaderElement header1 = taggedContent.CreateHeaderElement(1);
+    header1.SetText("Header Level 1");
 
-    ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
-    paragraphWithQuotes.StructureTextState.Font = FontRepository.FindFont("Calibri");
-    paragraphWithQuotes.StructureTextState.MarginInfo = new MarginInfo(10, 5, 10, 5);
+    Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
+    paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
+    paragraphWithQuotes.StructureTextState.MarginInfo = new Aspose.Pdf.MarginInfo(10, 5, 10, 5);
 
-    SpanElement spanElement1 = taggedContent.CreateSpanElement();
+    Aspose.Pdf.LogicalStructure.SpanElement spanElement1 = taggedContent.CreateSpanElement();
     spanElement1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
-    QuoteElement quoteElement = taggedContent.CreateQuoteElement();
+
+    Aspose.Pdf.LogicalStructure.QuoteElement quoteElement = taggedContent.CreateQuoteElement();
     quoteElement.SetText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa.");
-    quoteElement.StructureTextState.FontStyle = FontStyles.Bold | FontStyles.Italic;
-    SpanElement spanElement2 = taggedContent.CreateSpanElement();
+    quoteElement.StructureTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold | Aspose.Pdf.Text.FontStyles.Italic;
+    Aspose.Pdf.LogicalStructure.SpanElement spanElement2 = taggedContent.CreateSpanElement();
     spanElement2.SetText(" Sed non consectetur elit.");
 
     paragraphWithQuotes.AppendChild(spanElement1);
@@ -163,111 +276,214 @@ private static void CreateTaggedPdfDocument02()
     rootElement.AppendChild(header1);
     rootElement.AppendChild(paragraphWithQuotes);
 
-    // Сохранение тегированного PDF-документа
-    document.Save("C:\\Samples\\TaggedPDF\\Sample2.pdf");
+    // Save Tagged PDF Document
+    document.Save(dataDir + "TaggedPdfDocument_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
+
 Мы получим следующий документ после создания:
-![Тегированный PDF-документ с вложенными элементами - span и quotes](taggedpdf-02.png)
+![Помеченный PDF-документ с вложенными элементами - span и цитаты](taggedpdf-02.png)
 
 ## Стилизация структуры текста
 
-Для стилизации структуры текста в Тегированном PDF-документе, Aspose.PDF предлагает свойства [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) и [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) класса [StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate). Следующий фрагмент кода показывает, как стилизовать текстовую структуру в Тегированном PDF-документе:
+Для стилизации структуры текста в помеченном PDF-документе Aspose.PDF предлагает свойства [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) и [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) класса [StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate). Следующий фрагмент кода показывает, как стилизовать структуру текста в помеченном PDF-документе:
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Создать PDF-документ
-Document document = new Document();
-
-// Получить содержимое для работы с TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
-
-// Установить название и язык для документа
-taggedContent.SetTitle("Tagged Pdf Document");
-taggedContent.SetLanguage("en-US");
-
-ParagraphElement p = taggedContent.CreateParagraphElement();
-taggedContent.RootElement.AppendChild(p);
-
-// В процессе разработки
-p.StructureTextState.FontSize = 18F;
-p.StructureTextState.ForegroundColor = Color.Red;
-p.StructureTextState.FontStyle = FontStyles.Italic;
-
-p.SetText("Красный курсивный текст.");
-
-// Сохранить Тегированный PDF-документ
-document.Save(dataDir + "StyleTextStructure.pdf");
-```
-## Иллюстрация структурных элементов
-
-Для иллюстрации структурных элементов в тегированном PDF документе, Aspose.PDF предлагает класс [IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement). Следующий пример кода показывает, как иллюстрировать структурные элементы в тегированном PDF документе:
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Создать PDF документ
-Document document = new Document();
-
-// Получить содержимое для работы с TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
-
-// Установить заголовок и язык для документа
-taggedContent.SetTitle("Тегированный PDF документ");
-taggedContent.SetLanguage("en-US");
-
-// В разработке
-IllustrationElement figure1 = taggedContent.CreateFigureElement();
-taggedContent.RootElement.AppendChild(figure1);
-figure1.AlternativeText = "Рисунок Один";
-figure1.Title = "Изображение 1";
-figure1.SetTag("Fig1");
-figure1.SetImage("image.png");
-
-// Сохранить тегированный PDF документ
-document.Save(dataDir + "IllustrationStructureElements.pdf");
-
-```
-## Проверка тегированного PDF
-
-Aspose.PDF для .NET предоставляет возможность валидации PDF/UA тегированного PDF документа. Валидация стандарта PDF/UA поддерживает:
-
-- Проверки для XObjects
-- Проверки для Actions
-- Проверки для Optional Content
-- Проверки для Embedded Files
-- Проверки для полей Acroform(Проверка естественного языка и альтернативного имени и цифровых подписей)
-- Проверки для полей форм XFA
-- Проверки для настроек безопасности
-- Проверки для навигации
-- Проверки для аннотаций
-
-Приведенный ниже фрагмент кода показывает, как провести валидацию тегированного PDF документа. Соответствующие проблемы будут отображены в XML лог-отчете.
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-string inputFileName = dataDir + "StructureElements.pdf";
-string outputLogName = dataDir + "ua-20.xml";
-
-using (var document = new Aspose.Pdf.Document(inputFileName))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddStyle()
 {
-    bool isValid = document.Validate(outputLogName, Aspose.Pdf.PdfFormat.PDF_UA_1);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with TaggedPdf
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
+
+        Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
+        taggedContent.RootElement.AppendChild(p);
+
+        p.StructureTextState.FontSize = 18F;
+        p.StructureTextState.ForegroundColor = Aspose.Pdf.Color.Red;
+        p.StructureTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+
+        p.SetText("Red italic text.");
+
+        // Save Tagged Pdf Document
+        document.Save(dataDir + "StyleTextStructure_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddStyle()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with TaggedPdf
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
+    taggedContent.RootElement.AppendChild(p);
+
+    p.StructureTextState.FontSize = 18F;
+    p.StructureTextState.ForegroundColor = Aspose.Pdf.Color.Red;
+    p.StructureTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+
+    p.SetText("Red italic text.");
+
+    // Save Tagged Pdf Document
+    document.Save(dataDir + "StyleTextStructure_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Иллюстрация элементов структуры
+
+Для иллюстрации элементов структуры в помеченном PDF-документе Aspose.PDF предлагает класс [IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement). Следующий фрагмент кода показывает, как иллюстрировать элементы структуры в помеченном PDF-документе:
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IllustrateStructureElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with TaggedPdf
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
+
+        Aspose.Pdf.LogicalStructure.IllustrationElement figure1 = taggedContent.CreateFigureElement();
+        taggedContent.RootElement.AppendChild(figure1);
+        figure1.AlternativeText = "Figure One";
+        figure1.Title = "Image 1";
+        figure1.SetTag("Fig1");
+        figure1.SetImage(dataDir + "image.png");
+
+        // Save Tagged Pdf Document
+        document.Save(dataDir + "IllustrationStructureElements_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IllustrateStructureElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with TaggedPdf
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    Aspose.Pdf.LogicalStructure.IllustrationElement figure1 = taggedContent.CreateFigureElement();
+    taggedContent.RootElement.AppendChild(figure1);
+    figure1.AlternativeText = "Figure One";
+    figure1.Title = "Image 1";
+    figure1.SetTag("Fig1");
+    figure1.SetImage(dataDir + "image.png");
+
+    // Save Tagged Pdf Document
+    document.Save(dataDir + "IllustrationStructureElements_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Проверка помеченного PDF
+
+Aspose.PDF for .NET предоставляет возможность проверять PDF/UA помеченный PDF-документ. Валидация стандарта PDF/UA поддерживает:
+
+- Проверки для XObjects.
+- Проверки для действий.
+- Проверки для необязательного контента.
+- Проверки для встроенных файлов.
+- Проверки для полей Acroform (Проверка естественного языка и альтернативного имени и цифровых подписей).
+- Проверки для полей формы XFA.
+- Проверки для настроек безопасности.
+- Проверки для навигации.
+- Проверки для аннотаций.
+
+Ниже приведен фрагмент кода, который показывает, как проверить помеченный PDF-документ. Соответствующие проблемы будут отображены в XML-отчете.
+
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ValidateTaggedPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "StructureElements.pdf"))
+    {
+        bool isValid = document.Validate(dataDir + "StructureElements_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ValidateTaggedPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "StructureElements.pdf");
+
+    bool isValid = document.Validate(dataDir + "StructureElements_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Библиотека Aspose.PDF для .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -289,23 +505,23 @@ using (var document = new Aspose.Pdf.Document(inputFileName))
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -314,7 +530,7 @@ using (var document = new Aspose.Pdf.Document(inputFileName))
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -326,5 +542,3 @@ using (var document = new Aspose.Pdf.Document(inputFileName))
     }
 }
 </script>
-```
-

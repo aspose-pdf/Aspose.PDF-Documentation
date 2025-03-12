@@ -2,403 +2,1286 @@
 title: Что нового
 linktitle: Что нового
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/whatsnew/
-description: На этой странице представлены самые популярные новые функции в Aspose.PDF для .NET, которые были внедрены в последних выпусках.
+description: На этой странице представлены самые популярные новые функции в Aspose.PDF for .NET, которые были введены в последних релизах.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2024-09-06"
+lastmod: "2025-01-31"
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Whats new",
+    "alternativeHeadline": "Discover the latest enhancements in Aspose.PDF for .NET",
+    "abstract": "Узнайте о последних улучшениях в Aspose.PDF for .NET, включая внедрение алгоритма цифровой подписи на эллиптической кривой (ECDSA) для надежной подписи и проверки документов, а также поддержку нескольких эллиптических кривых. Кроме того, новая функция позволяет обрезать изображения при вставке в PDF и генерировать отчеты о сбоях для улучшения обработки ошибок. Эти обновления упрощают управление PDF и усиливают безопасность в рабочих процессах с документами.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "8022",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/whatsnew/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/whatsnew/"
+    },
+    "dateModified": "2024-12-04",
+    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков."
+}
+</script>
+
+## Что нового в Aspose.PDF 25.2
+
+**Наиболее значительные изменения**
+
+В Aspose.PDF 25.2 мы добавили:
+* поддержку [конвертации PDF в PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/) стандарт.
+* [опцию](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) для предотвращения двойного вызова делегата CustomSignHash во время подписания.
+* новый метод `GetSignatureNames()` для получения информации о [цифровых подписях](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) PDF.
+* возможность создания [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) с несколькими аннотациями виджетов.
+> [!NOTE]
+> Подробная информация об изменениях и примеры использования доступны на странице [Примечания к релизу Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
+
+**Другие заметные улучшения**
+
+* Оптимизация изображений без потери качества при [оптимизации PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) улучшена. Размер сжатого документа уменьшен.
+* Метод [Repair](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) документа улучшен. Теперь он может проверять и исправлять значения в массиве Annotation.Rect.
+* Обновлена версия зависимости System.Text.Json для предотвращения возможной уязвимости CVE-2024-43485.
+* Улучшена детекция атак на подписи PDF для предотвращения получения ложноположительных результатов.
+* Предоставлен публичный API для редактирования словаря ресурсов:
+
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingNewExtGState()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDirAsposePdfFacadesPages();
+
+    // Graphics state parameter dictionary new name
+    var gsName = "GS0";
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        var page = doc.Pages[1];
+        var dictionaryEditor = new DictionaryEditor(page.Resources);
+        var states = dictionaryEditor["ExtGState"].ToCosPdfDictionary();
+
+        var newGs = CosPdfDictionary.CreateEmptyDictionary(doc);
+        var pairs = new KeyValuePair<string, ICosPdfPrimitive>[3]
+        {
+            new KeyValuePair<string, ICosPdfPrimitive>("CA", new CosPdfNumber(1)),
+            new KeyValuePair<string, ICosPdfPrimitive>("ca", new CosPdfNumber(0.5)),
+            new KeyValuePair<string, ICosPdfPrimitive>("BM", new CosPdfName("Normal"))
+        };
+
+        foreach (var p in pairs)
+        {
+            newGs.Add(p);
+        }
+        states.Add(gsName, newGs);
+
+        // Save PDF document
+        doc.Save(outputPath);
+    }
+}
+```
+
+## Что нового в Aspose.PDF 25.1
+
+В Aspose.PDF 25.1 мы добавили:
+* опцию для сохранения PDF в HTML с пропуском всех растровых изображений.
+* возможность проверки цифровой подписи PDF с использованием сервера удостоверяющего центра (CA).
+* кроссплатформенную проверку цифровой подписи PDF с использованием алгоритмов хеширования SHA-3.
+
+Подробная информация об изменениях и примеры использования доступны на странице [Примечания к релизу Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
+
+## Что нового в Aspose.PDF 24.12
+
+Возможность передачи пути к внешнему ICC профилю для конвертации PDF/X и PDF/A уже существовала в библиотеке на протяжении нескольких лет, активируемая свойством PdfFormatConversionOptions.IccProfileFileName. Теперь также возможно передавать данные для заполнения свойств OutputIntent с использованием объекта класса OutputIntent.
+
+Следующий фрагмент кода показывает, как конвертировать документ аннотации в PDF/X-1 с использованием ICC профиля аннотации FOGRA39:
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPdfToPdfx1UsingCustomIccProfile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Create conversion options to convert the document to PDF/X-1a with the given ICC profile
+        var options = new PdfFormatConversionOptions(PdfFormat.PDF_X_1A, ConvertErrorAction.Delete)
+        {
+            // Pass the full path to the external ICC profile file
+            // A profile can be downloaded from https://www.color.org/registry/Coated_Fogra39L_VIGC_300.xalter
+            IccProfileFileName = "Coated_Fogra39L_VIGC_300.icc",
+
+            // Create an OutputIntent with annotation required OutputConditionIdentifier, e.g. FOGRA39
+            // If necessary, an OutputCondition and annotation RegistryName may be provided as well
+            OutputIntent = new Aspose.Pdf.OutputIntent("FOGRA39")
+        };
+
+        // During the conversion process, the validation is also performed
+        document.Convert(options);
+
+        // Save PDF document
+        document.Save(dataDir + "outputPdfx.pdf");
+    }
+}
+```
+
+Добавлен анализатор для поиска наиболее подходящего шрифта для генерации документов, конвертации и замены текста. Поиск наиболее подходящего шрифта выполняется в случае, если исходный PDF содержит недостаточно информации о шрифте для выполнения запрашиваемой операции. "Наиболее подходящий" шрифт определяется среди шрифтов, установленных в окружении, на основе информации о шрифте PDF, а также запрашиваемом языке текста и наборе символов.
+
+Следующий пример показывает, как это можно использовать при конвертации PDF в PNG, чтобы избежать превращения текста в пустые квадраты.
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PdfToPngWithAnalyzingFonts()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertAllPagesToBmp.pdf"))
+    {
+        var pngDevice = new Aspose.Pdf.Devices.PngDevice();
+        pngDevice.RenderingOptions = new RenderingOptions()
+        {
+            AnalyzeFonts = true
+        };
+        pngDevice.Process(document.Pages[1], dataDir + "converted.png");
+    }
+}
+```
+
+Начиная с Aspose.PDF 24.12, автоматическая настройка размера шрифта может применяться при добавлении текстового штампа в аннотированный PDF файл.
+
+Следующий фрагмент кода демонстрирует, как добавить текстовый штамп аннотации в аннотированный PDF файл и автоматически настроить размер шрифта, чтобы он соответствовал прямоугольнику штампа.
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutoSetTheFontSizeOfTextStamp()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDirAsposePdfFacadesPages();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        stamp.Width = 400;
+        stamp.Height = 200;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+
+        // Save PDF document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStamp_out.pdf");
+    }
+}
+```
+
+Следующий фрагмент кода демонстрирует, как добавить текстовый штамп аннотации в аннотированный PDF файл и автоматически настроить размер шрифта, чтобы он соответствовал размеру страницы.
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutoSetTheFontSizeOfTextStampToFitPage()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDirAsposePdfFacadesPages();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+
+        // Save PDF document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStampToFItPage_out.pdf");
+    }
+}
+```
+
+## Что нового в Aspose.PDF 24.11
+
+Метод расширения `PageCollection` был добавлен для обновления номера страницы и артефактов заголовка/подвала даты при добавлении или вставке новых страниц. Настройки для номера страницы и формата даты должны храниться в оригинальном документе в соответствии со спецификацией PDF, как это реализовано в Adobe Acrobat.
+
+Следующий фрагмент кода демонстрирует, как обновить нумерацию страниц в документе:
+```csharp
+private static void UpdatePagination()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document that contains at least one page with pagination artifacts
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithPaginationArtifacts.pdf"))
+    {
+        // Update pages
+        document.Pages.Insert(1, document.Pages[2]);
+        document.Pages.Add();
+
+        // Update pagination artifacts
+        document.Pages.UpdatePagination();
+
+        // Save PDF document
+        document.Save(dataDir + "DocumentWithUpdatedPagination.pdf");
+    }
+}
+```
+
+С версии 24.11 мы добавили возможность выбора алгоритма хеширования для Pkcs7Detached. По умолчанию используется SHA-256. Для цифровых подписей ECDSA алгоритм дайджеста по умолчанию зависит от длины ключа.
+
+ECDSA поддерживает SHA-1, SHA-256, SHA-384, SHA-512, SHA3-256, SHA3-384 и SHA3-512. Алгоритмы SHA3-256, SHA3-384 и SHA3-512 поддерживаются только для .NET 8 и более новых версий. Для получения информации о поддерживаемых платформах для SHA-3 обратитесь к [документации](https://learn.microsoft.com/en-us/dotnet/standard/security/cross-platform-cryptography#sha-3).
+
+RSA поддерживает SHA-1, SHA-256, SHA-384 и SHA-512.
+
+DSA поддерживает только SHA-1. Обратите внимание, что SHA-1 устарел и не соответствует современным стандартам безопасности.
+
+Следующий фрагмент кода демонстрирует установку алгоритма хеширования для Pkcs7Detached:
+```csharp
+private static void SignWithManualDigestHashAlgorithm(string cert, string pass)
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DigitallySign.pdf"))
+    {
+        // Instantiate PdfFileSignature object
+        using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Create PKCS#7 detached object for sign
+            var pkcs = new Aspose.Pdf.Forms.PKCS7Detached(cert, pass, Aspose.Pdf.DigestHashAlgorithm.Sha512);
+            // Sign PDF file
+            signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
+            // Save PDF document
+            signature.Save(dataDir + "DigitallySign_out.pdf");
+        }
+    }
+}
+```
+
+Новое свойство `FontEncodingStrategy` было добавлено в класс `HtmlSaveOptions`. Спецификация PDF рекомендует использовать таблицу `ToUnicode` для извлечения текстового содержимого из PDF. Однако использование таблицы CMap шрифта может дать лучшие результаты для определенных типов документов. Начиная с версии 24.11, вы можете выбрать, какую таблицу использовать для декодирования. По умолчанию используется таблица `ToUnicode`.
+
+Следующий пример демонстрирует новую опцию использования:
+```csharp
+private static void ConvertPdfToHtmlUsingCMap()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Instantiate HTML SaveOptions object
+        var options = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // New option there
+            FontEncodingStrategy = Aspose.Pdf.HtmlSaveOptions.FontEncodingRules.DecreaseToUnicodePriorityLevel
+        };
+        // Save HTML document
+        document.Save(dataDir + "CmapFontHTML_out.html", options);
+    }
+}
+```
+
+## Что нового в Aspose.PDF 24.10
+
+Алгоритм цифровой подписи на эллиптической кривой (ECDSA) является современным криптографическим алгоритмом, известным своей высокой безопасностью при меньших размерах ключей по сравнению с традиционными алгоритмами. Начиная с версии 24.10, стало возможным подписывать PDF документы с использованием ECDSA, а также проверять подписи ECDSA. Поддерживаются следующие эллиптические кривые для создания и проверки цифровых подписей:
+* P-256 (secp256r1).
+* P-384 (secp384r1).
+* P-521 (secp521r1).
+* brainpoolP256r1.
+* brainpoolP384r1.
+* brainpoolP512r1.
+
+Для генерации подписи используется алгоритм хеширования SHA-256. Подписи ECDSA могут быть проверены с использованием следующих алгоритмов хеширования: SHA-256, SHA-384, SHA-512, SHA3-256, SHA3-384 и SHA3-512.
+
+Вы можете использовать свой обычный код для подписания документов с ECDSA и для проверки подписей:
+
+```cs
+private static void Sign(string cert, string pass)
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DigitallySign.pdf"))
+    {
+        // Instantiate PdfFileSignature object
+        using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Create PKCS#7 detached object for sign
+            var pkcs = new Aspose.Pdf.Forms.PKCS7Detached(cert, pass);
+            // Sign PDF file
+            signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
+            // Save PDF document
+            signature.Save(dataDir + "DigitallySign_out.pdf");
+        }
+    }
+}
+
+private static void Verify()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DigitallySign_out.pdf"))
+    {
+        // Instantiate PdfFileSignature object
+        using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Get annotation list of signature names in the document
+            var sigNames = signature.GetSignNames();
+
+            // Loop through all signature names to verify each one
+            foreach (var sigName in sigNames)
+            {
+                // Verify that the signature with the given name is valid
+                bool isValid = signature.VerifySignature(sigName);
+                Console.WriteLine("Signature '{0}' validation returns {1}", sigName, isValid);
+            }
+        }
+    }
+}
+```
+
+Иногда необходимо обрезать изображение перед вставкой его в PDF. Мы добавили перегруженную версию метода `AddImage()`, чтобы поддерживать добавление обрезанных изображений:
+
+```cs
+private static void AddCroppedImageToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Open image stream
+        using (Stream imgStream = File.OpenRead(Path.Combine(dataDir, "Images", "Sample-01.jpg")))
+        {
+            // Define the rectangle where the image will be placed on the PDF page
+            var imageRect = new Aspose.Pdf.Rectangle(17.62, 65.25, 602.62, 767.25);
+
+            // Crop the image to half its original width and height
+            var w = imageRect.Width / 2;
+            var h = imageRect.Height / 2;
+            var bbox = new Aspose.Pdf.Rectangle(imageRect.LLX, imageRect.LLY, imageRect.LLX + w, imageRect.LLY + h);
+
+            // Add page
+            var page = document.Pages.Add();
+
+            // Insert the cropped image onto the page, specifying the original position (imageRect)
+            // and the cropping area (bbox)
+            page.AddImage(imgStream, imageRect, bbox);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddCroppedImageMender_out.pdf");
+    }
+}
+```
+
+## Что нового в Aspose.PDF 24.9
+
+С версии 24.9 стало возможным генерировать отчет о сбое, когда библиотека выбрасывает исключение. Отчет о сбое включает информацию о типе исключения, названии приложения, версии Aspose.PDF, версии ОС, сообщении об ошибке и трассировке стека.
+
+Следующий фрагмент кода демонстрирует общий сценарий для генерации отчета о сбое:
+
+```cs
+private static void GenerateCrashReportExample()
+{
+    try
+    {
+        // some code
+        // ....
+
+        // Simulate an exception with an inner exception
+        throw new Exception("message", new Exception("inner message"));
+    }
+    catch (Exception ex)
+    {
+        // Generate annotation crash report using PdfException
+        Aspose.Pdf.PdfException.GenerateCrashReport(new Aspose.Pdf.CrashReportOptions(ex));
+    }
+}
+```
+
+Извлечение элементов слоя PDF документа и сохранение в новый поток PDF теперь доступно. В PDF документах слои (также известные как группы опционального содержимого или OCG) используются для различных целей, в первую очередь для управления и контроля видимости содержимого внутри документа. Эта функциональность особенно полезна в дизайне, инженерии и издательском деле. Например: аспекты чертежей, сложные компоненты диаграмм, языковые версии одного и того же содержимого.
+
+```cs
+private static void ExtractPdfLayer()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var inputDocument = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get layers from the first page
+        var layers = inputDocument.Pages[1].Layers;
+
+        // Save each layer to the output path
+        foreach (var layer in layers)
+        {
+            layer.Save(dataDir + string.Format("Layer_{0}.pdf", layer.Id));
+        }
+    }
+}
+```
+
+Класс `GraphicalPdfComparer` добавлен для графического сравнения PDF документов и страниц. Графическое сравнение касается изображений страниц документа. Оно возвращает результат в виде объекта `ImagesDifference` или в виде PDF документа, который содержит изображения, объединенные из оригинала и различий. Графическое сравнение наиболее полезно для документов, которые имеют незначительные различия в текстовом или графическом содержимом.
+
+Следующий фрагмент кода демонстрирует графическое сравнение двух PDF документов и сохраняет изображение с различиями в результирующем PDF документе:
+
+```cs
+private static void ComparePDFWithCompareDocumentsToPdfMethod()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithCompareDocumentsToPdfMethod1.pdf"))
+    {
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithCompareDocumentsToPdfMethod2.pdf"))
+        {
+            // Create comparer
+            var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer()
+            {
+                Threshold = 3.0,
+                Color = Aspose.Pdf.Color.Blue,
+                Resolution = new Aspose.Pdf.Devices.Resolution(300)
+            };
+            // Compare and save result
+            comparer.CompareDocumentsToPdf(document1, document2, dataDir + "compareDocumentsToPdf_out.pdf");
+        }
+    }
+}
+```
+
+API реализован для интеграции FileFormat.HEIC и Aspose.PDF. HEIC (High-Efficiency Image Coding) — это современный формат изображения, представленный Apple с iOS 11 в 2017 году как стандартный формат изображения для iPhone и iPad.
+
+Чтобы конвертировать изображения HEIC в PDF, пользователю следует добавить ссылку на пакет NuGet `FileFormat.HEIC` и использовать следующий фрагмент кода:
+
+```cs
+private static void ConvertHEICtoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open HEIC file
+    using (var fs = new FileStream(dataDir + "HEICtoPDF.heic", FileMode.Open))
+    {
+        var image = FileFormat.Heic.Decoder.HeicImage.Load(fs);
+        var pixels = image.GetByteArray(FileFormat.Heic.Decoder.PixelFormat.Rgb24);
+        var width = (int)image.Width;
+        var height = (int)image.Height;
+
+        // Open PDF document
+        using (var document = new Aspose.Pdf.Document())
+        {
+            var page = document.Pages.Add();
+            var asposeImage = new Aspose.Pdf.Image();
+            asposeImage.BitmapInfo = new Aspose.Pdf.BitmapInfo(pixels, width, height, Aspose.Pdf.BitmapInfo.PixelFormat.Rgb24);
+            page.PageInfo.Height = height;
+            page.PageInfo.Width = width;
+            page.PageInfo.Margin.Bottom = 0;
+            page.PageInfo.Margin.Top = 0;
+            page.PageInfo.Margin.Right = 0;
+            page.PageInfo.Margin.Left = 0;
+
+            page.Paragraphs.Add(asposeImage);
+
+            // Save PDF document
+            document.Save(dataDir + "HEICtoPDF_out.pdf");
+        }
+    }
+}
+```
 
 ## Что нового в Aspose.PDF 24.8
 
-Конвертация документов PDF в формат PDF/A-4
+Конвертация PDF документов в формат PDF/A-4
 
-Начиная с версии 24.8, стало возможным конвертировать документы PDF в PDF/A-4. Часть 4 стандарта, основанная на PDF 2.0, была опубликована в конце 2020 года.
+С версии 24.8 стало возможным конвертировать PDF документы в PDF/A-4. Часть 4 стандарта, основанная на PDF 2.0, была опубликована в конце 2020 года.
 
-Следующий фрагмент кода демонстрирует, как конвертировать документ в формат PDF/A-4, предполагая, что входной документ является PDF 2.x.
-
-```cs
-
-    string documentPath = "";
-    string conversionLogPath = "";
-    string resultPdfPath ="";
-
-    using (var document = new Document(documentPath))
-    {
-        // Только документы PDF-2.x могут быть конвертированы в PDF/A-4
-        document.Convert(conversionLogPath, PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
-        document.Save(resultPdfPath);
-    }
-```
-Второй фрагмент кода демонстрирует, как конвертировать документ в формат PDF/A-4, когда входной документ является более ранней версией.
+Следующий фрагмент кода демонстрирует, как конвертировать документ в формат PDF/A-4, когда входной документ является более ранней версией PDF, чем 2.0.
 
 ```cs
+private static void ConvertPdfToPdfA4()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    string documentPath = "";
-    string conversionLogPath = "";
-    string resultPdfPath ="";
-
-    using (var document = new Document(documentPath))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
-        document.Convert(Stream.Null, PdfFormat.v_2_0, ConvertErrorAction.Delete);
+        // If the document version is less than PDF-2.0, it must be converted to PDF-2.0
+        document.Convert(Stream.Null, Aspose.Pdf.PdfFormat.v_2_0, Aspose.Pdf.ConvertErrorAction.Delete);
 
-        document.Convert(conversionLogPath, PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
-        document.Save(resultPdfPath);
+        // Convert to the PDF/A-4 format
+        document.Convert(dataDir + "PDFA4ConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_4, Aspose.Pdf.ConvertErrorAction.Delete);
+
+        // Save PDF document
+        document.Save(dataDir + "PDFToPDFA4_out.pdf");
     }
+}
 ```
 
-С 24.8 мы ввели метод для уплощения прозрачного содержимого в PDF документах:
+С 24.8 мы представили метод для сглаживания прозрачного содержимого в PDF документах:
 
 ```cs
+private static void FlattenTransparency()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    string documentPath = "";
-    string resultPdfPath ="";
-
-    using (var document = new Document(documentPath))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfWithTransparentImage.pdf"))
     {
+        // Flatten image transparency
         document.FlattenTransparency();
-        document.Save(resultPdfPath);
+        // Save PDF document
+        document.Save(dataDir + "PdfWithFlattenedImage.pdf");
     }
+}
 ```
-
 
 ## Что нового в Aspose.PDF 24.7
 
-Сравнение PDF документов с Aspose.PDF для .NET
+Сравнение PDF документов с Aspose.PDF for .NET
 
-С 24.7 стало возможно сравнивать содержимое PDF документов с пометками аннотаций и выводом бок о бок:
+С 24.7 стало возможным сравнивать содержимое PDF документов с аннотациями и выводом рядом:
 
-Первый фрагмент кода демонстрирует, как сравнить первые страницы двух PDF документов.
 Первый фрагмент кода демонстрирует, как сравнить первые страницы двух PDF документов.
 
 ```cs
+private static void ComparingSpecificPagesSideBySide()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
-    string documentPath1 = "";
-    string documentPath2= "";
-
-    string resultPdfPath ="";
-
-    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparingSpecificPages1.pdf"))
     {
-        SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new SideBySideComparisonOptions()
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparingSpecificPages2.pdf"))
         {
-            AdditionalChangeMarks = true,
-            ComparisonMode = ComparisonMode.IgnoreSpaces
-        });
+            // Compare
+            Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1],
+                dataDir + "ComparingSpecificPages_out.pdf", new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+            {
+                AdditionalChangeMarks = true,
+                ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
+            });
+        }
     }
+}
 ```
 
-Второй фрагмент кода расширяет возможности сравнения на весь контент двух PDF документов.
+Второй фрагмент кода расширяет область сравнения на все содержимое двух PDF документов.
 
 ```cs
+private static void ComparingEntireDocumentsSideBySide()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
-    string documentPath1 = "";
-    string documentPath2 = "";
-
-    string resultPdfPath ="";
-
-    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparingEntireDocuments1.pdf"))
     {
-        SideBySidePdfComparer.Compare(document1, document2, resultPdfPath, new SideBySideComparisonOptions()
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparingEntireDocuments2.pdf"))
         {
-            AdditionalChangeMarks = true,
-            ComparisonMode = ComparisonMode.IgnoreSpaces
-        });
+            // Compare
+            Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(
+                document1,
+                document2,
+                dataDir + "ComparingEntireDocuments_out.pdf",
+                new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+                {
+                    AdditionalChangeMarks = true,
+                    ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
+                });
+        }
     }
+}
 ```
-Файлы прикреплены к задаче. Результат был получен в режиме:
 
-AdditionalChangeMarks = true
-ComparisonMode = ComparisonMode.ParseSpaces
+Также с этого релиза добавлен плагин Aspose.PDF Security для .NET:
+
+Функция шифрования:
+
+```cs
+var input = "sample.pdf";
+var output = "encrypted.pdf";
+
+var plugin = new Security();
+var opt = new EncryptionOptions("123456789", "123", DocumentPrivilege.ForbidAll);
+opt.AddInput(new FileDataSource(input));
+opt.AddOutput(new FileDataSource(output));
+plugin.Process(opt);
+```
+
+Функция расшифровки:
+
+```cs
+var input = "encrypted.pdf";
+var output = "decrypted.pdf";
+
+var plugin = new Security();
+var opt = new DecryptionOptions("123456789");
+opt.AddInput(new FileDataSource(input));
+opt.AddOutput(new FileDataSource(output));
+plugin.Process(opt);
+```
+
+## Что нового в Aspose.PDF 24.6
+
+С релиза 24.6, в рамках редактирования помеченного PDF, были добавлены методы в **Aspose.Pdf.LogicalStructure.Element**:
+
+- Tag (добавить теги к конкретным операторам, таким как изображения, текст и ссылки)
+- InsertChild
+- RemoveChild
+- ClearChilds
+
+Также в этом релизе стало возможным создать доступный PDF с использованием низкоуровневых функций:
+
+Следующий фрагмент кода работает с PDF документом и его помеченным содержимым, используя библиотеку Aspose.PDF для его обработки.
+
+```cs
+private static void CreateAnAccessibleDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
+    {
+        // Access tagged content
+        Aspose.Pdf.Tagged.ITaggedContent content = document.TaggedContent;
+        // Create annotation span element
+        Aspose.Pdf.LogicalStructure.SpanElement span = content.CreateSpanElement();
+        // Append span to root element
+        content.RootElement.AppendChild(span);
+        // Iterate over page contents
+        foreach (var op in document.Pages[1].Contents)
+        {
+            var bdc = op as Aspose.Pdf.Operators.BDC;
+            if (bdc != null)
+            {
+                span.Tag(bdc);
+            }
+        }
+        // Save PDF document
+        document.Save(dataDir + "AccessibleDocument_out.pdf");
+    }
+}
+```
+
+С 24.6 Aspose.PDF for .NET позволяет подписывать PDF с X509Certificate2 в формате base64:
+
+```cs
+private static void SignWithBase64Certificate(string pfxFilePath, string password)
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    var base64Str = "Certificate in base64 format";
+    using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        var sign = new Aspose.Pdf.Forms.ExternalSignature(base64Str, false);// without Private Key
+        sign.ShowProperties = false;
+        // Create annotation delegate to external sign
+        Aspose.Pdf.Forms.SignHash customSignHash = delegate (byte[] signableHash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
+        {
+            // Simulated Server Part (This will probably just be sending data and receiving annotation response)
+            var signerCert = new X509Certificate2(pfxFilePath, password, X509KeyStorageFlags.Exportable);// must have Private Key
+            var rsaCSP = new RSACryptoServiceProvider();
+            var xmlString = signerCert.PrivateKey.ToXmlString(true);
+            rsaCSP.FromXmlString(xmlString);
+            byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+            return signedData;
+        };
+        sign.CustomSignHash = customSignHash;
+        // Bind PDF document
+        pdfSign.BindPdf(dataDir + "input.pdf");
+        // Sign the file
+        pdfSign.Sign(1, "second approval", "second_user@example.com", "Australia", false,
+            new System.Drawing.Rectangle(200, 200, 200, 100),
+            sign);
+        // Save PDF document
+        pdfSign.Save(dataDir + "SignWithBase64Certificate_out.pdf");
+    }
+}
+```
+
+## Что нового в Aspose.PDF 24.5
+
+Этот релиз позволяет работать с слоями PDF. Например:
+
+- заблокировать слой PDF
+- извлечь элементы слоя PDF
+- сгладить многослойный PDF
+- объединить все слои внутри PDF в один
+
+### Заблокировать слой PDF
+
+С релиза 24.5 вы можете открыть PDF, заблокировать конкретный слой на первой странице и сохранить документ с изменениями. Были добавлены два новых метода и одно свойство:
+
+Layer.Lock(); - блокирует слой.
+Layer.Unlock(); - разблокирует слой.
+Layer.Locked; - свойство, указывающее состояние блокировки слоя.
+
+```cs
+private static void LockLayerInPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Layers();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get the first page and the first layer
+        var page = document.Pages[1];
+        var layer = page.Layers[0];
+
+        // Lock the layer
+        layer.Lock();
+
+        // Save PDF document
+        document.Save(dataDir + "LockLayerInPDF_out.pdf");
+    }
+}
+```
+
+### Извлечь элементы слоя PDF
+
+Библиотека Aspose.PDF for .NET позволяет извлекать каждый слой с первой страницы и сохранять каждый слой в отдельный файл.
+
+Чтобы создать новый PDF из слоя, можно использовать следующий фрагмент кода:
+
+```cs
+private static void ExtractPdfLayer()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var inputDocument = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get layers from the first page
+        var layers = inputDocument.Pages[1].Layers;
+
+        // Save each layer to the output path
+        foreach (var layer in layers)
+        {
+            layer.Save(dataDir + string.Format("Layer_{0}.pdf", layer.Id));
+        }
+    }
+}
+```
+
+### Сгладить многослойный PDF
+
+Библиотека Aspose.PDF for .NET открывает PDF, проходит через каждый слой на первой странице и сглаживает каждый слой, делая его постоянным на странице.
+
+```cs
+private static void FlattenPdfLayers()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get the first page
+        var page = document.Pages[1];
+
+        // Flatten each layer on the page
+        foreach (var layer in page.Layers)
+        {
+            layer.Flatten(true);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "FlattenedLayersPdf_out.pdf");
+    }
+}
+```
+
+Метод 'Layer.Flatten(bool cleanupContentStream)' принимает булевый параметр, который указывает, следует ли удалять маркеры опциональной группы содержимого из потока содержимого. Установка параметра cleanupContentStream в false ускоряет процесс сглаживания.
+
+### Объединить все слои внутри PDF в один
+
+Библиотека Aspose.PDF for .NET позволяет объединять все слои PDF или конкретный слой на первой странице в новый слой и сохранять обновленный документ.
+
+Были добавлены два метода для объединения всех слоев на странице:
+
+- void MergeLayers(string newLayerName);
+- void MergeLayers(string newLayerName, string newOptionalContentGroupId); 
+
+Второй параметр позволяет переименовать маркер опциональной группы содержимого. Значение по умолчанию - "oc1" (/OC /oc1 BDC).
+
+```cs
+private static void MergePdfLayers()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get the first page
+        var page = document.Pages[1];
+
+        page.MergeLayers("NewLayerName");
+        // Or
+        // page.MergeLayers("NewLayerName", "OC1");
+
+        // Save PDF document
+        document.Save(dataDir + "MergeLayersInPdf_out.pdf");
+    }
+}
+```
 
 ## Что нового в Aspose.PDF 24.4
 
 Этот релиз поддерживает применение маски обрезки к изображениям:
 
 ```cs
-    Document doc = new Document("input.pdf");
-    using (var fs1 = new FileStream("mask1.jpg", FileMode.Open))
-    using (var fs2 = new FileStream("mask2.png", FileMode.Open))
+private static void AddStencilMasksToImages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddStencilMasksToImages.pdf"))
     {
-        doc.Pages[1].Resources.Images[1].AddStencilMask(fs1);
-        doc.Pages[1].Resources.Images[2].AddStencilMask(fs2);
+        // Open the first mask image file
+        using (var fs1 = new FileStream(dataDir + "mask1.jpg", FileMode.Open))
+        {
+            // Open the second mask image file
+            using (var fs2 = new FileStream(dataDir + "mask2.png", FileMode.Open))
+            {
+                // Apply stencil mask to the first image on the first page
+                document.Pages[1].Resources.Images[1].AddStencilMask(fs1);
+
+                // Apply stencil mask to the second image on the first page
+                document.Pages[1].Resources.Images[2].AddStencilMask(fs2);
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddStencilMasksToImages_out.pdf");
     }
+}
 ```
 
-Начиная с версии 24.4, вы можете выбрать источник бумаги по размеру страницы PDF в диалоговом окне печати с помощью API
+С 24.4 вы можете выбрать источник бумаги по размеру страницы PDF в диалоговом окне печати с использованием API
 
-Начиная с Aspose.PDF 24.4, эту настройку можно включать и выключать, используя свойство Document.PickTrayByPdfSize или фасад PdfContentEditor:
+Начиная с Aspose.PDF 24.4, этот параметр можно включать и отключать с помощью свойства Document.PickTrayByPdfSize или фасада PdfContentEditor:
 
 ```cs
-    using (Document document = new Document())
-    {
-        Page page = document.Pages.Add();
-        page.Paragraphs.Add(new TextFragment("Привет, мир!"));
+private static void PickTrayByPdfSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-        // Установить флаг для выбора лотка для бумаги с использованием размера страницы PDF
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
+
+        // Set the flag to choose annotation paper tray using the PDF page size
         document.PickTrayByPdfSize = true;
-        document.Save("result.pdf");
-    }
-```
-```cs
 
-    using (PdfContentEditor contentEditor = new PdfContentEditor())
+        // Save PDF document
+        document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
+    }
+}
+```
+
+```cs
+private static void PickTrayByPdfSizeFacade()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create the PdfContentEditor facade
+    using (var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        contentEditor.BindPdf("input.pdf");
+        // Bind PDF document
+        contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
 
-        // Установка флага для выбора лотка бумаги в зависимости от размера страницы PDF
-        contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
-        contentEditor.Save("result.pdf");
+        // Set the flag to choose annotation paper tray using the PDF page size
+        contentEditor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PickTrayByPDFSize);
+
+        // Save PDF document
+        contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
     }
+}
 ```
 
-В этом релизе добавлен плагин Aspose.PDF Signature для .NET:
+С этого релиза добавлен плагин Aspose.PDF Signature для .NET:
 
-- Пример с созданием нового поля и опций:
+- Пример с созданием нового поля и параметрами:
 
 ```cs
-
-    // создать подпись
-    var plugin = new Signature();
-    // создать объект SignOptions для установки инструкций
-    var opt = new SignOptions(inputPfxPath, inputPfxPassword);
-    // добавить путь к входному файлу
-    opt.AddInput(new FileDataSource(inputPath));
-    // установить путь к выходному файлу
-    opt.AddOutput(new FileDataSource(outputPath));
-    // установить дополнительные опции
-    opt.Reason = "моя причина";
-    opt.Contact = "мой контакт";
-    opt.Location = "мое местоположение";
-    // выполнить процесс
-    plugin.Process(opt);
+// create Signature
+var plugin = new Signature();
+// create SignOptions object to set instructions
+var opt = new SignOptions(inputPfxPath, inputPfxPassword);
+// add input file path
+opt.AddInput(new FileDataSource(inputPath));
+// set output file path
+opt.AddOutput(new FileDataSource(outputPath));
+// set extra options
+opt.Reason = "my Reason";
+opt.Contact = "my Contact";
+opt.Location = "my Location";
+// perform the process
+plugin.Process(opt);
 ```
 
 - Пример с существующим пустым полем
 
 ```cs
-
-    // создать подпись
-    var plugin = new Signature();
-    // создать объект SignOptions для установки инструкций
-    var opt = new SignOptions(inputPfxPath, inputPfxPassword);
-    // добавить путь к входному файлу с пустым полем подписи
-    opt.AddInput(new FileDataSource(inputPath));
-    // установить путь к выходному файлу
-    opt.AddOutput(new FileDataSource(outputPath));
-    // установить имя существующего поля подписи
-    opt.Name = "Signature1";
-    // выполнить процесс
-    plugin.Process(opt);
+// create Signature
+var plugin = new Signature();
+// create SignOptions object to set instructions
+var opt = new SignOptions(inputPfxPath, inputPfxPassword);
+// add input file path with empty signature field
+opt.AddInput(new FileDataSource(inputPath));
+// set output file path
+opt.AddOutput(new FileDataSource(outputPath));
+// set name of existing signature field
+opt.Name = "Signature1";
+// perform the process
+plugin.Process(opt);
 ```
+
 ## Что нового в Aspose.PDF 24.3
 
-В этом релизе добавлен плагин PDF/A Converter для .NET:
+С этого релиза добавлен плагин PDF/A Converter для .NET:
 
 ```cs
+var options = new PdfAConvertOptions
+{
+    PdfAVersion = PdfAStandardVersion.PDF_A_3B
+};
 
-    var options = new PdfAConvertOptions
-    {
-        PdfAVersion = PdfAStandardVersion.PDF_A_3B
-    };
+// Add the source file
+options.AddInput(new FileDataSource("path_to_your_pdf_file.pdf")); // replace with your actual file path
 
-    // Добавить исходный файл
-    options.AddInput(new FileDataSource("path_to_your_pdf_file.pdf")); // замените на ваш фактический путь к файлу
+// Add the path to save the converted file
+options.AddOutput(new FileDataSource("path_to_the_converted_file.pdf"));
 
-    // Добавить путь для сохранения преобразованного файла
-    options.AddOutput(new FileDataSource("path_to_the_converted_file.pdf"));
+// Create the plugin instance
+var plugin = new PdfAConverter();
 
-    // Создать экземпляр плагина
-    var plugin = new PdfAConverter();
-
-    // Запустить преобразование
-    plugin.Process(options);
+// Run the conversion
+plugin.Process(options);
 ```
 
 - Реализовать поиск по списку фраз в TextFragmentAbsorber:
 
 ```cs
-
+private static void SearchMultipleRegex()
+{
+    // Create resular expressions
     var regexes = new Regex[]
     {
-    new Regex(@"(?s)document\s+(?:(?:no\(?s?\)?\.?)|(?:number(?:\(?s\)?)?))\s+(?:(?:[\w-]*\d[\w-]*)+(?:[,;\s]|and)*)+", RegexOptions.IgnoreCase),
-    new Regex(@"[\s\r\n]+Tract[\s\r\n]+of:?", RegexOptions.IgnoreCase),
-    new Regex(@"vested[\s\r\n]+in", RegexOptions.IgnoreCase),
-    new Regex("Vested in:", RegexOptions.IgnoreCase),
-    new Regex(@"file.?[\s\r\n]+(?:nos?|numbers?|#s?|nums?).?[\s\r\n]+(\d+)-(\d+)", RegexOptions.IgnoreCase),
-    new Regex(@"file.?[\s\r\n]+nos?.?:?[\s\r\n]+([\d\r\n-]+)", RegexOptions.IgnoreCase)
+        new Regex(@"(?s)document\s+(?:(?:no\(?s?\)?\.?)|(?:number(?:\(?s\)?)?))\s+(?:(?:[\w-]*\d[\w-]*)+(?:[,;\s]|and)*)", RegexOptions.IgnoreCase),
+        new Regex(@"[\s\r\n]+Tract[\s\r\n]+of:? ", RegexOptions.IgnoreCase),
+        new Regex(@"vested[\s\r\n]+in", RegexOptions.IgnoreCase),
+        new Regex("Vested in:", RegexOptions.IgnoreCase),
+        new Regex(@"file.?[\s\r\n]+(?:nos?|numbers?|#s?|nums?).?[\s\r\n]+(\d+)-(\d+)", RegexOptions.IgnoreCase),
+        new Regex(@"file.?[\s\r\n]+nos?.?:?[\s\r\n]+([\d\r\n-]+)", RegexOptions.IgnoreCase)
     };
-    var document = new Document(input);
-    var absorber = new TextFragmentAbsorber(
-    regexes,
-    new TextSearchOptions(true)
-    );
-    document.Pages.Accept(absorber);
-    // Получить результат
-    var result = absorber.RegexResults
+
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SearchRegularExpressionAll.pdf"))
+    {
+        // Create TextAbsorber object to find all instances of the input search phrase
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber(regexes, new Aspose.Pdf.Text.TextSearchOptions(true));
+        document.Pages.Accept(absorber);
+        // Get result
+        var result = absorber.RegexResults;
+    }
+}
 ```
-С 24.3 возможно добавить пустое поле для подписи на каждую страницу в файл PDF/A
+
+С 24.3 стало возможным добавить пустое поле подписи на каждую страницу в файл PDF/A
 
 ```cs
-    static void Main(string[] args)
+private static void AddEmptySignatureFieldOnEveryPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var fieldName = "signature_1234";
+
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf"))
     {
-        try
-        {
-            var lic = new Aspose.Pdf.License();
-            lic.SetLicense("Aspose.Total.lic");
+        // The new suggested code, using SignatureField object
+        var signatureField = new Aspose.Pdf.Forms.SignatureField(document.Pages[1], new Aspose.Pdf.Rectangle(10, 10, 100, 100));
 
-            string source = "source.pdf";
-            string fieldName = "signature_1234";
-            string dest = "source_fieldNotInAllPages.pdf";
-            addFieldSingle_NewCode(source, dest, fieldName, 1);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e.ToString());
-        }
-        Console.ReadLine(); 
-    }
+        // Add the default appearance for the signature field
+        signatureField.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Helv", 12, System.Drawing.Color.Black);
+        var newAddedField = document.Form.Add(signatureField, fieldName, 1);
 
-    private static void addFieldSingle_NewCode(string source, string dest, string fieldName, int page)
-    {
-        File.Copy(source, dest, true);
-        using (var fs = new FileStream(dest, FileMode.Open))
+        // Find annotation associated with the field
+        Aspose.Pdf.Annotations.Annotation addedAnnotation = null;
+        foreach (Aspose.Pdf.Annotations.Annotation annotation in document.Pages[1].Annotations)
         {
-            // Новый предложенный код, используя объект SignatureField (этот код работает хорошо)
-            var doc = new Document(fs);
-            var f = new SignatureField(doc.Pages[page], new Rectangle(10, 10, 100, 100));
-            // Добавить стандартное представление для поля подписи
-            f.DefaultAppearance = new DefaultAppearance("Helv", 12, System.Drawing.Color.Black);
-            var newAddedField = doc.Form.Add(f, fieldName, page);
-
-            // Как теперь сделать newAddedField видимым на всех страницах?
-            Aspose.Pdf.Annotations.Annotation addedField = null;
-            foreach (Aspose.Pdf.Annotations.Annotation a in doc.Pages[1].Annotations)
+            if (annotation.FullName == fieldName)
             {
-            if (a.FullName == fieldName)
-                {
-                    addedField = a;
-                    break;
-                }
+                addedAnnotation = annotation;
+                break;
             }
-            if (addedField != null)
-            {
-                for (int p = 1; p <= doc.Pages.Count; p++)
-                {
-                    if (p == page) continue;
-                    doc.Pages[p].Annotations.Add(addedField);
-                }
-            }
-
-            doc.Save();
         }
-        System.Diagnostics.Process.Start(dest);
+
+        // Add the annotation to every page except of initial
+        if (addedAnnotation != null)
+        {
+            for (int p = 2; p <= document.Pages.Count; p++)
+            {
+                document.Pages[p].Annotations.Add(addedAnnotation);
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "outputPdfaWithSignatureFields.pdf");
     }
+}
 ```
+
 ## Что нового в Aspose.PDF 24.2
 
-С версии 24.2 стало возможно получать векторные данные из файла PDF
+С 24.2 стало возможным получать векторные данные из PDF файла
 
-Был реализован GraphicsAbsorber для извлечения векторных данных из документов:
+Был реализован GraphicsAbsorber для получения векторных данных из документов:
 
 ```cs
-var doc = new Document(input);
-var grAbsorber = new GraphicsAbsorber();
-grAbsorber.Visit(doc.Pages[1]);
-var elements = grAbsorber.Elements;
-var operators = elements[1].Operators;
-var rectangle = elements[1].Rectangle;
-var position = elements[1].Position;
+private static void UsingGraphicsAbsorber()
+{
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
+    {
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Select the first page of the document
+            var page = document.Pages[1];
+
+            // Use the `Visit` method to extract graphics from the page
+            graphicsAbsorber.Visit(page);
+
+            // Step 5: Display information about the extracted elements
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                Console.WriteLine($"Page Number: {element.SourcePage.Number}");
+                Console.WriteLine($"Position: ({element.Position.X}, {element.Position.Y})");
+                Console.WriteLine($"Number of Operators: {element.Operators.Count}");
+            }
+        }
+    }
+}
 ```
 
 ## Что нового в Aspose.PDF 24.1
 
-С релиза 24.1 стало возможно импортировать аннотации в формате FDF в PDF:
+С релиза 24.1 стало возможным импортировать аннотации формата FDF в PDF:
 
 ```cs
-    var fdfPath = Params.InputPath + "50745.fdf";
-    var templatePath = Params.InputPath + "Empty.pdf";
-    var outputPath = Params.OutputPath + "50745_form.pdf";
+private static void ImportFDFByForm()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-    using (var form = new Aspose.Pdf.Facades.Form(templatePath))
+    using (var form = new Aspose.Pdf.Facades.Form(dataDir + "input.pdf"))
     {
-        using (var fdfInputStream = new FileStream(fdfPath, FileMode.Open))
+        // Open FDF file
+        using (var fdfInputStream = new FileStream(dataDir + "student.fdf", FileMode.Open))
         {
             form.ImportFdf(fdfInputStream);
         }
-
-        form.Save(outputPath);
+        // Save PDF document
+        form.Save(dataDir + "ImportDataFromPdf_Form_out.pdf");
     }
+}
 ```
 
-Также поддерживается доступ к словарю страниц или каталогу документов.
-Также поддерживает доступ к Словарю Страницы или Каталогу Документов.
+Также поддерживается доступ к словарю страниц или каталогу документа.
 
 Вот примеры кода для DictionaryEditor:
 
-- Добавление новых значений
+- Добавить новые значения
 
 ```cs
-    // пример названий ключей
+/private static void AddNewKeysToPdfPageDicrionary()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // example of key's names
     string KEY_NAME = "name";
     string KEY_STRING = "str";
     string KEY_BOOL = "bool";
     string KEY_NUMBER = "number";
 
-    var outputPath = "page_dictionary_editor.pdf";
-    using (var doc = new Document())
+    // Open the document
+    using (var document = new Aspose.Pdf.Document())
     {
-        var page = doc.Pages.Add();
-        var dictionaryEditor = new DictionaryEditor(page);
+        var page = document.Pages.Add();
+        var dictionaryEditor = new Aspose.Pdf.DataEditor.DictionaryEditor(page);
 
-        dictionaryEditor.Add(KEY_NAME, new CosPdfName("name data"));
-        dictionaryEditor.Add(KEY_STRING, new CosPdfString("string data"));
-        dictionaryEditor.Add(KEY_BOOL, new CosPdfBoolean(true));
-        dictionaryEditor.Add(KEY_NUMBER, new CosPdfNumber(11.2));
+        dictionaryEditor.Add(KEY_NAME, new Aspose.Pdf.DataEditor.CosPdfName("name data"));
+        dictionaryEditor.Add(KEY_STRING, new Aspose.Pdf.DataEditor.CosPdfString("string data"));
+        dictionaryEditor.Add(KEY_BOOL, new Aspose.Pdf.DataEditor.CosPdfBoolean(true));
+        dictionaryEditor.Add(KEY_NUMBER, new Aspose.Pdf.DataEditor.CosPdfNumber(11.2));
 
-        doc.Save(outputPath);
+        // Save PDF document
+        document.Save(dataDir + "PageDictionaryEditor_out.pdf");
     }
+}
 ```
 
-- Добавление и установка значений в словарь
+- Добавить и установить значения в словаре
 
 ```cs
-    using (var doc = new Document())
+private static void ModifyKeysInPdfPageDicrionary()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    string KEY_NAME = "name";
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document())
     {
-        var page = doc.Pages.Add();
-        var dictionaryEditor = new DictionaryEditor(page);
-        dictionaryEditor.Add(KEY_NAME, new CosPdfName("Old name"));
-        // или 
-        dictionaryEditor[KEY_NAME] = new CosPdfName("New name");
+        var page = document.Pages.Add();
+        var dictionaryEditor = new Aspose.Pdf.DataEditor.DictionaryEditor(page);
+        dictionaryEditor.Add(KEY_NAME, new Aspose.Pdf.DataEditor.CosPdfName("Old data"));
+        // Modify existing value
+        dictionaryEditor[KEY_NAME] = new Aspose.Pdf.DataEditor.CosPdfName("New data");
+
+        // Save PDF document
+        document.Save(dataDir + "PageDictionaryEditorEdit_out.pdf");
     }
+}
 ```
+
 - Получить значение из словаря
 
 ```cs
-    using (var doc = new Document())
+private static void GetValuesFromPdfPageDicrionary()
+{
+    string KEY_NAME = "name";
+
+    using (var document = new Aspose.Pdf.Document())
     {
-        var page = doc.Pages.Add();
-        var dictionaryEditor = new DictionaryEditor(page);
-        dictionaryEditor[KEY_NAME] = new CosPdfName("name");
+        var page = document.Pages.Add();
+        var dictionaryEditor = new Aspose.Pdf.DataEditor.DictionaryEditor(page);
+        dictionaryEditor[KEY_NAME] = new Aspose.Pdf.DataEditor.CosPdfName("name");
         var value = dictionaryEditor[KEY_NAME];
-        // или 
-        ICosPdfPrimitive primitive;
+        // or 
+        Aspose.Pdf.DataEditor.ICosPdfPrimitive primitive;
         dictionaryEditor.TryGetValue(KEY_NAME, out primitive);
     }
+}
 ```
 
 - Удалить значение из словаря
 
 ```cs
-    using (var doc = new Document())
+private static void RemoveFromPdfPageDicrionary()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    string KEY_NAME = "name";
+    string EXPECTED_NAME = "name data";
+
+    using (var document = new Aspose.Pdf.Document())
     {
-        var page = doc.Pages.Add();
-        var dictionaryEditor = new DictionaryEditor(page);
-        dictionaryEditor.Add(KEY_NAME, new CosPdfName(EXPECTED_NAME));
+        var page = document.Pages.Add();
+        var dictionaryEditor = new Aspose.Pdf.DataEditor.DictionaryEditor(page);
+        dictionaryEditor.Add(KEY_NAME, new Aspose.Pdf.DataEditor.CosPdfName(EXPECTED_NAME));
         dictionaryEditor.Remove(KEY_NAME);
+
+        // Save PDF document
+        document.Save(dataDir + "PageDictionaryEditorRemove_out.pdf");
     }
+}
 ```
 
 ## Что нового в Aspose.PDF 23.12
@@ -406,155 +1289,247 @@ var position = elements[1].Position;
 Форма может быть найдена, и текст может быть заменен с помощью следующего фрагмента кода:
 
 ```cs
-    var document = new Document(input);
-    var forms = document.Pages[1].Resources.Forms;
+private static void ReplaceTextInPdfForm()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    foreach (var form in forms)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextBox.pdf"))
     {
-        if (form.IT == "Typewriter" && form.Subtype == "Form")
-        {
-            var absorber = new TextFragmentAbsorber();
-            absorber.Visit(form);
+        // Get the forms from the first page
+        var forms = document.Pages[1].Resources.Forms;
 
-            foreach (var fragment in absorber.TextFragments)
+        foreach (var form in forms)
+        {
+            // Check if the form is of type "Typewriter" and subtype "Form"
+            if (form.IT == "Typewriter" && form.Subtype == "Form")
             {
-                fragment.Text = "";
+                // Create a TextFragmentAbsorber to find text fragments
+                var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+                absorber.Visit(form);
+
+                // Clear the text in each fragment
+                foreach (var fragment in absorber.TextFragments)
+                {
+                    fragment.Text = "";
+                }
             }
         }
-    }
 
-    document.Save(output);
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
+}
 ```            
 
-Или форма может быть полностью удалена:
+Или форму можно полностью удалить:
 
 ```cs
-    var document = new Document(input);
-    var forms = document.Pages[1].Resources.Forms;
+private static void DeleteSpecifiedForm1()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    for (int i = 1; i <= forms.Count; i++)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
-        if (forms[i].IT == "Typewriter" && forms[i].Subtype == "Form")
-        {
-            forms.Delete(forms[i].Name);
-        }
-    }
+        // Get the forms from the first page
+        var forms = document.Pages[1].Resources.Forms;
 
-    document.Save(output);
+        // Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
+        for (int i = forms.Count; i > 0; i--)
+        {
+            if (forms[i].IT == "Typewriter" && forms[i].Subtype == "Form")
+            {
+                forms.Delete(forms[i].Name);
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
+}
 ```            
 
 Другой вариант удаления формы:
 
 ```cs
-    var document = new Document(input);
-    var forms = document.Pages[1].Resources.Forms;
+private static void DeleteSpecifiedForm2()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    foreach (var form in forms)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
-        if (form.IT == "Typewriter" && form.Subtype == "Form")
-        {
-            var name = forms.GetFormName(form);
-            forms.Delete(name);
-        }
-    }
+        // Get the forms from the first page
+        var forms = document.Pages[1].Resources.Forms;
 
-    document.Save(output);
+        // Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
+        foreach (var form in forms)
+        {
+            if (form.IT == "Typewriter" && form.Subtype == "Form")
+            {
+                var name = forms.GetFormName(form);
+                forms.Delete(name);
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
+}
 ``` 
 
-- Все формы могут быть удалены с помощью следующего фрагмента кода:
+- Все формы можно удалить с помощью следующего фрагмента кода:
 
 ```cs
-    var document = new Document(input);
-    var forms = document.Pages[1].Resources.Forms;
+private static void RemoveAllForms()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    forms.Clear();
-
-    document.Save(output);
-```
-- Реализуйте конвертацию PDF в Markdown:
-
-```cs
-    string markdownOutputFilePath = "output.md"
-    string inputPdfPath = "input.pdf"
-    using (Document doc = new Document(inputPdfPath))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
-    MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
-    saveOptions.ResourcesDirectoryName = "images"; 
-    doc.Save(markdownOutputFilePath, saveOptions);
+        // Get the forms from the first page
+        var forms = document.Pages[1].Resources.Forms;
+
+        // Clear all forms
+        forms.Clear();
+
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
     }
+}
 ```
 
-- Реализуйте конвертацию OFD в PDF:
+- Реализовать конвертацию PDF в Markdown:
 
 ```cs
-    var document = new Document("sample.ofd", new OfdLoadOptions());
-    document.Save("sample.pdf");
-```
+private static void ConvertPDFtoMarkup()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-В этом релизе добавлен плагин Merger:
-
-```cs
-    // Путь к выходному файлу объединенного PDF.
-    var outputPath = "TestMerge.pdf";
-
-    // Создайте новый экземпляр Merger.
-    var merger = new Merger();
-
-    // Создайте MergeOptions.
-    var opt = new MergeOptions();
-    opt.AddInput(new FileDataSource(inputPath1));
-    opt.AddInput(new FileDataSource(inputPath2));
-    opt.AddOutput(new FileDataSource(outputPath));
-
-    // Обработайте объединение PDF.
-    merger.Process(opt);
-```
-
-Также в этом релизе добавлен плагин ChatGPT:
-Также, начиная с этого релиза, добавлен плагин ChatGPT:
-
-```cs
-    using (var plugin = new PdfChatGpt())
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
     {
-    var options = new PdfChatGptRequestOptions();
-    options.AddOutput(new FileDataSource("PdfChatGPT_output.pdf")); // Добавьте путь к выходному файлу.
-    options.ApiKey = "Ваш API ключ."; // Вам необходимо предоставить ключ для доступа к API.
-    options.MaxTokens = 1000; // Максимальное количество токенов для генерации в завершении чата.
+        // Create an instance of MarkdownSaveOptions to configure the Markdown export settings
+        var saveOptions = new MarkdownSaveOptions()
+        {
+            // Set to false to prevent the use of HTML <img> tags for images in the Markdown output
+            UseImageHtmlTag = false
+        };
+        
+        // Specify the directory name where resources (like images) will be stored
+        saveOptions.ResourcesDirectoryName = "images";
 
-    // Добавьте сообщения запроса.
-    options.Messages.Add(new Message
-    {
-        Content = "Вы полезный помощник.",
-        Role = Role.System
-    });
-    options.Messages.Add(new Message
-    {
-        Content = "Какой максимальный диаметр пиццы когда-либо делали?",
-        Role = Role.User
-    });
-
-    // Обработайте запрос.
-    var result = await plugin.ProcessAsync(options);
-
-    var fileResultPath = result.ResultCollection[0].Data;
-    var chatCompletionObject = result.ResultCollection[1].Data as ChatCompletion; // Объект завершения чата API ChatGPT.
+        // Save PDF document in Markdown format to the specified output file path using the defined save options
+        document.Save(dataDir + "PDFtoMarkup_out.md", saveOptions);
     }
+}
+```
+
+- Реализовать конвертацию OFD в PDF:
+
+```cs
+private static void ConvertOFDToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.OfdLoadOptions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertOFDToPDF.ofd", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertOFDToPDF_out.pdf");
+    }
+}
+```
+
+С этого релиза добавлен плагин Merger:
+
+```cs
+private static void PdfMergeUsingPlugin()
+{
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Create annotation new instance of Merger
+    using (var merger = new Aspose.Pdf.Plugins.Merger())
+    {
+        // Create MergeOptions
+        var opt = new Aspose.Pdf.Plugins.MergeOptions();
+        opt.AddInput(new Aspose.Pdf.Plugins.FileDataSource(dataDir + "Concat1.pdf"));
+        opt.AddInput(new Aspose.Pdf.Plugins.FileDataSource(dataDir + "Concat2.pdf"));
+        opt.AddOutput(new Aspose.Pdf.Plugins.FileDataSource(dataDir + "ConcatenatePdfFiles_out.pdf"));
+
+        // Process the PDF merging
+        merger.Process(opt);
+    }
+}
+```
+
+Также с этого релиза добавлен плагин ChatGPT:
+
+```cs
+private static async void InvokeChatGptPlugin()
+{
+    using (var plugin = new Aspose.Pdf.Plugins.PdfChatGpt())
+    {
+        var options = new Aspose.Pdf.Plugins.PdfChatGptRequestOptions();
+        options.AddOutput(new Aspose.Pdf.Plugins.FileDataSource("PdfChatGPT_output.pdf")); // Add the output file path.
+        options.ApiKey = "Your API key."; // You need to provide the key to access the API.
+        options.MaxTokens = 1000; // The maximum number of tokens to generate in the chat completion.
+
+        // Add the request messages.
+        options.Messages.Add(new Aspose.Pdf.Plugins.Message
+        {
+            Content = "You are annotation helpful assistant.",
+            Role = Aspose.Pdf.Plugins.Role.System
+        });
+        options.Messages.Add(new Aspose.Pdf.Plugins.Message
+        {
+            Content = "What is the biggest pizza diameter ever made?",
+            Role = Aspose.Pdf.Plugins.Role.User
+        });
+
+        // Process the request.
+        var result = await plugin.ProcessAsync(options);
+
+        var fileResultPath = result.ResultCollection[0].Data;
+
+        // The ChatGPT API chat completion object.
+        var chatCompletionObject = result.ResultCollection[1].Data as Aspose.Pdf.Plugins.ChatCompletion;
+    }
+}
 ```
 
 ## Что нового в Aspose.PDF 23.11
-## Что нового в Aspose.PDF 23.11
 
-С этой версии можно удалять скрытый текст из файла PDF:
+С этого релиза стало возможным удалять скрытый текст из PDF файла:
 
 ```cs
-    var document = new Document(inputFile);
-    var textAbsorber = new TextFragmentAbsorber();
+private static void RemoveHiddenText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-        // Эта опция может быть использована для предотвращения перемещения других текстовых фрагментов после замены скрытого текста.
-        textAbsorber.TextReplaceOptions = new TextReplaceOptions(TextReplaceOptions.ReplaceAdjustment.None);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "HiddenText.pdf"))
+    {
+        // Use TextFragmentAbsorber with no parameters to get all text
+        var textAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+
+        // This option can be used to prevent other text fragments from moving after hidden text replacement
+        textAbsorber.TextReplaceOptions = new Aspose.Pdf.Text.TextReplaceOptions(Aspose.Pdf.Text.TextReplaceOptions.ReplaceAdjustment.None);
 
         document.Pages.Accept(textAbsorber);
 
+        // Remove hidden text
         foreach (var fragment in textAbsorber.TextFragments)
         {
             if (fragment.TextState.Invisible)
@@ -563,561 +1538,836 @@ var position = elements[1].Position;
             }
         }
 
-        document.Save(outputFile);
+        // Save PDF document
+        document.Save(dataDir + "HiddenText_out.pdf");
+    }
+}
 ```
 
-С 23.11 поддерживается прерывание потока:
+С 23.11 поддержка прерывания потоков:
 
 ```cs
+private static void InterruptExample()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    public void InterruptExample()
+    using (var monitor = new Aspose.Pdf.Multithreading.InterruptMonitor())
     {
-        string outputFile = testdata + "sample.pdf";
-        // это большой текст, используется Lorem Ipsum на 8350 символов для вызова приостановки
-        string text = ExampleApp.LongText;
-        using (InterruptMonitor monitor = new InterruptMonitor())
+        // An class that can produce long-drawn-out work
+        RowSpanWorker worker = new RowSpanWorker(dataDir + "RowSpanWorker_out.pdf", monitor);
+
+        var thread = new System.Threading.Thread(new System.Threading.ThreadStart(worker.Work));
+        thread.Start();
+
+        // The timeout should be less than the time required for full document save (without interruption)
+        System.Threading.Thread.Sleep(500);
+
+        // Interrupt the process
+        monitor.Interrupt();
+
+        // Wait for interruption...
+        thread.Join();
+    }
+}
+
+private class RowSpanWorker
+{
+    private readonly string outputPath;
+    private readonly Aspose.Pdf.Multithreading.InterruptMonitor monitor;
+
+    public RowSpanWorker(string outputPath, Aspose.Pdf.Multithreading.InterruptMonitor monitor)
+    {
+        this.outputPath = outputPath;
+        this.monitor = monitor;
+    }
+
+    public void Work()
+    {
+        // This is some large text, used Lorem Ipsum in 10000 characters to cause suspension in processing
+        string text = RunExamples.GetLoremIpsumString(10000);
+
+        // Open PDF document
+        using (var document = new Aspose.Pdf.Document())
         {
-            RowSpanWorker worker = new RowSpanWorker (outputFile, monitor);
-            Thread thread = new Thread(new ThreadStart(worker.Work));
-            thread.Start();
+            Aspose.Pdf.Multithreading.InterruptMonitor.ThreadLocalInstance = this.monitor;
+            var page = document.Pages.Add();
 
-            // Тайм-аут должен быть меньше времени, необходимого для полного сохранения документа (без прерывания).
-            Thread.Sleep(500);
-
-            // Прервать процесс
-            monitor.Interrupt();
-
-            // Ожидание прерывания...
-            thread.Join();
-        }
-        private class RowSpanWorker
-        {
-            private readonly string outputPath;
-            private readonly InterruptMonitor monitor;
-
-            public RowSpanWorker(string outputPath, InterruptMonitor monitor)
+            var table = new Aspose.Pdf.Table
             {
-                this.outputPath = outputPath;
-                this.monitor = monitor;
+                DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F)
+            };
+
+            var row0 = table.Rows.Add();
+
+            // Add annotation cell that spans for two rows and contains annotation long-long text
+            var cell00 = row0.Cells.Add(text);
+            cell00.RowSpan = 2;
+            cell00.IsWordWrapped = true;
+            row0.Cells.Add("Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum ");
+            row0.Cells.Add("Dolor Dolor Dolor Dolor Dolor Dolor ");
+
+            var row1 = table.Rows.Add();
+            row1.Cells.Add("IpsumDolor Dolor Dolor Dolor Dolor ");
+            row1.Cells.Add("DolorDolor Dolor Dolor Dolor Dolor ");
+
+            page.Paragraphs.Add(table);
+
+            try
+            {
+                // Save PDF document
+                document.Save(this.outputPath);
             }
-            public void Work()
+            catch (Exception ex)
             {
-                string text = InterruptMonitorTests.LongText;
-                using (var doc = new Document())
-                {
-                    InterruptMonitor.ThreadLocalInstance = this.monitor;
-                    var page = doc.Pages.Add();
-
-                    var table = new Aspose.Pdf.Table
-                    {
-                        DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F)
-                    };
-
-                    var row0 = table.Rows.Add();
-
-                    // добавить ячейку, которая занимает два ряда и содержит очень длинный текст
-                    var cell00 = row0.Cells.Add(text);
-                    cell00.RowSpan = 2;
-                    cell00.IsWordWrapped = true;
-                    row0.Cells.Add("Ipsum Ipsum Ipsum Ipsum Ipsum Ipsum ");
-                    row0.Cells.Add("Dolor Dolor Dolor Dolor Dolor Dolor ");
-
-                    var row1 = table.Rows.Add();
-                    row1.Cells.Add("IpsumDolor Dolor Dolor Dolor Dolor ");
-                    row1.Cells.Add("DolorDolor Dolor Dolor Dolor Dolor ");
-
-                    page.Paragraphs.Add(table);
-
-                    try
-                    {
-                        doc.Save(this.outputPath);
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
-                }
+                Console.WriteLine(ex.Message);
             }
         }
     }
+}
 ```
+
 ## Что нового в Aspose.PDF 23.10
 
-Текущее обновление представляет три варианта удаления тегов из тегированных PDF.
+Текущий обновление представляет три версии удаления тегов из помеченных PDF.
 
-- Удалить некоторые элементы узла из documentElement (корневой элемент дерева):
-
-```cs
-    var document = new Document("some tagged pdf");
-    var structure = document.LogicalStructure;
-    var documentElement = structure.Children[0];
-    var structElement = documentElement.Children.Count > 1 ? documentElement.Children[1] as StructElement : null;
-    if (documentElement.Children.Remove(structElement))
-    {
-        // элемент удален
-        document.Save(outputPath);
-    }
-
-    // Вы также можете удалить сам structElement
-    //if (structElement != null)
-    //{
-    //    structElement.Remove();
-    //    document.Save(outputPath);
-    //}
-```
-
-- Удалить все помеченные тегами элементы из документа, но сохранить структурные элементы:
+- Удалить некоторый элемент узла из documentElement (корневого элемента дерева):
 
 ```cs
-    var document = new Document("some tagged pdf");
-    var structure = document.LogicalStructure;
-    var root = structure.Children[0];
-    var queue = new Queue<Element>();
-    queue.Enqueue(root);
-    while(queue.TryDequeue(out var element))
+private static void RemoveStructElement()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "StructureElementsTree.pdf"))
     {
-        foreach (var child in element.Children)
+        // Access to root element(s)
+        var structure = document.LogicalStructure;
+        var documentElement = structure.Children[0];
+        var structElement = documentElement.Children.Count > 1 ? documentElement.Children[1] as Aspose.Pdf.Structure.StructElement : null;
+
+        if (documentElement.Children.Remove(structElement))
         {
-            queue.Enqueue(child);
+            // Element removed. Save PDF document.
+            document.Save(dataDir + "StructureElementsRemoved.pdf");
         }
 
-        if (element is TextElement || element is FigureElement)
-        {
-            element.Remove();
-        }
+        // You can also delete the structElement itself
+        //if (structElement != null)
+        //{
+        //    structElement.Remove();
+        //    document.Save(outputPdfPath);
+        //}
     }
-```
-- Удалите все теги:
-
-```cs
-    var document = new Document("some tagged pdf");
-    var structure = document.LogicalStructure;
-    var documentElement = structure.Children[0];
-    documentElement.Remove();
-    document.Save(outputPath);
+}
 ```
 
-С 23.10 была реализована новая функция для измерения высоты символов. Используйте следующий код для измерения высоты символа.
+- Удалить все отмеченные элементы тегов из документа, но сохранить структурные элементы:
 
 ```cs
-    var doc = new Document(input);
-    var absorber = new TextFragmentAbsorber();
-    absorber.Visit(doc.Pages[1]);
-    var height = absorber.TextFragments[1].TextState.MeasureHeight('A')
+private static void RemoveMarkedElementsTags()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TH.pdf"))
+    {
+        // Access to root element(s)
+        var structure = document.LogicalStructure;
+        var root = structure.Children[0];
+        var queue = new Queue<Aspose.Pdf.Structure.Element>();
+        queue.Enqueue(root);
+
+        while (queue.TryDequeue(out var element))
+        {
+            foreach (var child in element.Children)
+            {
+                queue.Enqueue(child);
+            }
+
+            if (element is Aspose.Pdf.Structure.TextElement || element is Aspose.Pdf.Structure.FigureElement)
+            {
+                element.Remove();
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "MarkedElementsTagsRemoved.pdf");
+    }
+}
+```
+
+- Удалить теги полностью:
+
+```cs
+private static void RemoveTags()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TH.pdf"))
+    {
+        // Access to root element(s)
+        var structure = document.LogicalStructure;
+        var documentElement = structure.Children[0];
+        documentElement.Remove();
+
+        // Save PDF document
+        document.Save(dataDir + "TagsRemoved.pdf");
+    }
+}
+```
+
+С 23.10 была реализована новая функция для измерения высоты символа. Используйте следующий код для измерения высоты символа.
+
+```cs
+private static void DisplayCharacterHeight()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextAll.pdf"))
+    {
+        // Create TextFragmentAbsorber to get information about state of document text
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        absorber.Visit(document.Pages[1]);
+
+        // Get height of 'A' character being displayed with font of first text fragment
+        var textState = absorber.TextFragments[1].TextState;
+        var height = textState.MeasureHeight('A');
+        Console.WriteLine("The height of 'A' character displayed with {0} font size of {1} is {2:N3}", textState.Font.FontName, textState.FontSize,height);
+    }
+}
 ```
 
 Обратите внимание, что измерение основано на шрифте, встроенном в документ. Если какая-либо информация о размере отсутствует, этот метод возвращает 0.
 
-Также в этом релизе представлена функция Подписать PDF с использованием подписанного HASH:
+Также этот релиз предоставляет возможность подписать PDF с использованием подписанного HASH:
 
 ```cs
-    public void PDFNET_54566()
+private static void SignPdfUsingSignedHash(string certP12, string pfxPassword)
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        var inputPdf = "54566.pdf";
-        var inputP12 = "54566.p12";
-        var inputPfxPassword = "123456";
-        var outputPdf = "54566_out.pdf";
-        using (var sign = new PdfFileSignature())
+        // Bind PDF document
+        sign.BindPdf(dataDir + "input.pdf");
+        var pkcs7 = new Aspose.Pdf.Forms.PKCS7(certP12, pfxPassword);
+
+        // Create a delegate to external sign
+        pkcs7.CustomSignHash = delegate (byte[] signableHash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
         {
-            sign.BindPdf(inputPdf);
-            var pkcs7 = new PKCS7(inputP12, inputPfxPassword);
-            pkcs7.CustomSignHash = CustomSignHash;
-            sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
-            sign.Save(outputPdf);
-        }
-        using (var sign = new PdfFileSignature())
-        {
-            sign.BindPdf(outputPdf);
-            Assert.IsTrue(sign.VerifySignature("Signature1"));
-        }
+            X509Certificate2 signerCert = new X509Certificate2(certP12, pfxPassword, X509KeyStorageFlags.Exportable);
+            RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+            var xmlString = signerCert.PrivateKey.ToXmlString(true);    //not supported on core 2.0
+            rsaCSP.FromXmlString(xmlString);                            //not supported on core 2.0
+
+            byte[] signedData = rsaCSP.SignHash(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+            return signedData;
+        };
+
+        // Sign PDF file
+        sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
+
+        // Save PDF document
+        sign.Save(dataDir + "SignWithCertificate_out.pdf");
     }
 
-    private byte[] CustomSignHash(byte[] signableHash)
+    // Verify
+    using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        var inputP12 = "54566.p12";
-        var inputPfxPassword = "123456";
-        X509Certificate2 signerCert = new X509Certificate2(inputP12, inputPfxPassword, X509KeyStorageFlags.Exportable);
-        RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
-        var xmlString = signerCert.PrivateKey.ToXmlString(true);
-        rsaCSP.FromXmlString(xmlString);
-        byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
-        return signedData;
+        // Bind PDF document
+        sign.BindPdf(dataDir + "SignWithCertificate_out.pdf");
+
+        if (!sign.VerifySignature("Signature1"))
+        {
+            throw new Exception("Not verified");
+        }
     }
+}
 ```
-Ещё одна новая функция - Масштабирование страницы в диалоговом окне предустановок печати:
+
+Еще одной новой функцией является масштабирование страницы в диалоговых окнах печати:
 
 ```cs
-    Document document = new Document();
-    document.Pages.Add();
-    document.PrintScaling = PrintScaling.None;
-    document.Save("output.pdf");
+private static void SetPrintScaling()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        document.Pages.Add();
+
+        // Disable print scaling
+        document.PrintScaling = PrintScaling.None;
+
+        // Save PDF document
+        document.Save(dataDir + "SetPrintScaling_out.pdf");
+    }
+}
 ```
 
 ## Что нового в Aspose.PDF 23.9
 
-С версии 23.9 появилась поддержка удаления дочерней аннотации из заполняемого поля.
+С 23.9 поддержка удаления дочерней аннотации из заполняемого поля.
 
 ```cs
+private static void RemoveChildAnnotationFromFillableField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    doc = new Document("field-ref-add.pdf");
-    field = (Field)doc.Form[fieldName];
-    var annotation = field[1];
-    doc.Pages[annotation .PageIndex].Annotations.Remove(annotation);
-    doc.Save("field-ref-delete.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "FieldWithChildAnnots.pdf"))
+    {
+        // Get field with child annotations
+        var field = (Aspose.Pdf.Forms.Field)document.Form["1 Vehicle Identification Number"];
+        // Get first child annotation
+        var annotation = field[1];
+        // Remove the annotation
+        document.Pages[annotation.PageIndex].Annotations.Remove(annotation);
+
+        // Save PDF document
+        document.Save(dataDir + "RemoveChildAnnotation_out.pdf");
+    }
+}
 ```
 
 ## Что нового в Aspose.PDF 23.8
 
-С версии 23.8 появилась поддержка обнаружения инкрементных обновлений.
+С 23.8 поддержка добавления обнаружения инкрементальных обновлений.
 
-Функция для обнаружения инкрементных обновлений в PDF-документе была добавлена. Эта функция возвращает 'true', если документ был сохранён с инкрементными обновлениями; в противном случае, она возвращает 'false'.
-
-```cs
-
-    var path = "C:\test.pdf";
-    var doc = new Document(path);
-    Console.WriteLine(doc.HasIncrementalUpdate());
-```
-
-Также, 23.8 поддерживает способы работы с вложенными полями флажков.
-Также, версия 23.8 поддерживает способы работы с вложенными полями флажков.
-
-- Создание поля флажка с множественным выбором:
+Функция для обнаружения инкрементальных обновлений в PDF документе была добавлена. Эта функция возвращает 'true', если документ был сохранен с инкрементальными обновлениями; в противном случае возвращает 'false'.
 
 ```cs
-    using (var document = new Document())
+private static bool HasIncrementalUpdate()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfWithIncrementalUpdate.pdf"))
     {
-    var page = document.Pages.Add();
+        // New method
+        bool hasIncrementalUpdate = document.HasIncrementalUpdate();
 
-    var checkbox = new CheckboxField(page, new Rectangle(50, 50, 70, 70));
-
-    // Установите значение первой группы флажков
-    checkbox.ExportValue = "option 1";
-
-    // Добавьте новый вариант прямо под существующими
-    checkbox.AddOption("option 2");
-
-    // Добавьте новый вариант в заданном прямоугольнике
-    checkbox.AddOption("option 3", new Rectangle(100, 100, 120, 120));
-
-    document.Form.Add(checkbox);
-
-    // Выберите добавленный флажок
-    checkbox.Value = "option 2";
-    document.Save("checkbox_group.pdf");
+        Console.WriteLine("Document {0} incremental update check returns: {1}", document.FileName, hasIncrementalUpdate);
+        return hasIncrementalUpdate;
     }
+}
 ```
 
-- Получение и установка значения многоступенчатого флажка:
+Также 23.8 поддерживает способы работы с вложенными полями флажков. Многие заполняемые PDF формы имеют поля флажков, которые действуют как группы радиокнопок:
+
+- Создать многоцелевое поле флажка:
 
 ```cs
-    using (Document doc = new Document("example.pdf"))
+private static void CreateMultivalueCheckboxField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-    Form form = doc.Form;
-    CheckboxField checkbox = form.Fields[0] as CheckboxField;
+        var page = document.Pages.Add();
 
-    // Допустимые значения можно получить из коллекции AllowedStates
-    // Установите значение флажка, используя свойство Value
-    checkbox.Value = checkbox.AllowedStates[0];
-    checkboxValue = checkbox.Value; // ранее установленное значение, например "option 1"
+        var checkbox = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 50, 70, 70));
 
-    // Значение должно быть любым элементом из AllowedStates
-    checkbox.Value = "option 2";
-    checkboxValue = checkbox.Value; // option 2
+        // Set the first checkbox group option value
+        checkbox.ExportValue = "option 1";
 
-    // Снимите отметку, установив значение «Off» или установив Checked в false
-    checkbox.Value = "Off";
-    // или, по выбору:
-    // checkbox.Checked = false;
-    checkboxValue = checkbox.Value; // Off
+        // Add new option right under existing ones
+        checkbox.AddOption("option 2");
+
+        // Add new option at the given rectangle
+        checkbox.AddOption("option 3", new Aspose.Pdf.Rectangle(100, 100, 120, 120));
+
+        document.Form.Add(checkbox);
+
+        // Select the added checkbox
+        checkbox.Value = "option 2";
+
+        // Save PDF document
+        document.Save(dataDir + "MultivalueCheckboxField.pdf");
     }
+}
 ```
+
+- Получить и установить значение многоцелевого флажка:
+
+```cs
+private static void GetAndSetValueOfMultivalueCheckboxField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "MultivalueCheckboxField.pdf"))
+    {
+        var form = document.Form;
+        var checkbox = form.Fields[0] as Aspose.Pdf.Forms.CheckboxField;
+
+        // Allowed values may be retrieved from the AllowedStates collection
+        // Set the checkbox value using Value property
+        checkbox.Value = checkbox.AllowedStates[0];
+        var checkboxValue = checkbox.Value; // the previously set value, e.g. "option 1"
+
+        // The value should be any element of AllowedStates
+        checkbox.Value = "option 2";
+        checkboxValue = checkbox.Value; // option 2
+
+        // Uncheck boxes by either setting Value to "Off" or setting Checked to false
+        checkbox.Value = "Off";
+        // or, alternately:
+        // checkbox.Checked = false;
+        checkboxValue = checkbox.Value; // Off
+    }
+}
+```
+
 ## Что нового в Aspose.PDF 23.7
 
-С версии Aspose.PDF 23.7 появилась поддержка добавления извлечения фигур:
+С Aspose.PDF 23.7 поддержка добавления извлечения форм:
 
 ```cs
+private static void CopyShape()
+{
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Graphs();
 
-    public void PDFNET_46298()
+    // Open PDF document
+    using (var sourceDocument = new Aspose.Pdf.Document(dataDir + "test.pdf"))
     {
-        var input1 = "46298_1.pdf";
-        var input2 = "46298_2.pdf";
+        // Create PDF document
+        using (var destDocument = new Aspose.Pdf.Document())
+        {
+            // Absorb vector graphics from the source document
+            var graphicAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
+            graphicAbsorber.Visit(sourceDocument.Pages[1]);
 
-        var source = new Document(input1);
-        var dest = new Document(input2);
+            // Copy the graphics into the destination document specified page and area
+            var area = new Aspose.Pdf.Rectangle(90, 250, 300, 400);
+            destDocument.Pages[1].AddGraphics(graphicAbsorber.Elements, area);
 
-        var graphicAbsorber = new GraphicsAbsorber();
-        graphicAbsorber.Visit(source.Pages[1]);
-        var area = new Rectangle(90, 250, 300, 400);
-        dest.Pages[1].AddGraphics(graphicAbsorber.Elements, area);
+            // Save PDF document
+            destDocument.Save(dataDir + "CopyShape_out.pdf");
+        }
     }
+}
 ```
 
 Также поддерживается возможность обнаружения переполнения при добавлении текста:
 
 ```cs
+private static void FitTextIntoRectangle()
+{
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    var doc = new Document();
-    var paragraphContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisl tortor, efficitur sed cursus in, lobortis vitae nulla. Quisque rhoncus, felis sed dictum semper, est tellus finibus augue, ut feugiat enim risus eget tortor. Nulla finibus velit nec ante gravida sollicitudin. Morbi sollicitudin vehicula facilisis. Vestibulum ac convallis erat. Ut eget varius sem. Nam varius pharetra lorem, id ullamcorper justo auctor ac. Integer quis erat vitae lacus mollis volutpat eget et eros. Donec a efficitur dolor. Maecenas non dapibus nisi, ut pellentesque elit. Sed pellentesque rhoncus ante, a consectetur ligula viverra vel. Integer eget bibendum ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur elementum, sem a auctor vulputate, ante libero iaculis dolor, vitae facilisis dolor lorem at orci. Sed laoreet dui id nisi accumsan, id posuere diam accumsan.";
-    var rectangle = new Rectangle(100, 600, 500, 700, false);
-    var paragraph = new TextParagraph();
-    var fragment = new TextFragment(paragraphContent);
-    paragraph.VerticalAlignment = VerticalAlignment.Top;
-    paragraph.FormattingOptions.WrapMode = TextFormattingOptions.WordWrapMode.ByWords;
-    paragraph.Rectangle = rectangle;
-    var isFitRectangle = fragment.TextState.IsFitRectangle(paragraphContent, rectangle);
-    while (!isFitRectangle)
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document()) 
     {
-        fragment.TextState.FontSize -= 0.5f;
-        isFitRectangle = fragment.TextState.IsFitRectangle(paragraphContent, rectangle);
+        // Generate text to add: "Lorem Ipsum" text of 1000 characters
+        var paragraphContent = RunExamples.GetLoremIpsumString(1000);
+        // Create a text fragment with the desired text
+        var fragment = new Aspose.Pdf.Text.TextFragment(paragraphContent);
+        // Declare the rectangle to fit text into
+        var rectangle = new Aspose.Pdf.Rectangle(100, 600, 500, 700, false);
+        
+        // Check whether the text fits into the rectangle
+        var isFitRectangle = fragment.TextState.IsFitRectangle(paragraphContent, rectangle);
+
+        // Iteratively decrease font size until text fits the rectangle
+        while (!isFitRectangle)
+        {
+            fragment.TextState.FontSize -= 0.5f;
+            isFitRectangle = fragment.TextState.IsFitRectangle(paragraphContent, rectangle);
+        }
+
+        // Create a paragraph from the text fragment in the specified rectangle. Now you may be sure it fits.
+        var paragraph = new Aspose.Pdf.Text.TextParagraph();
+        paragraph.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
+        paragraph.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        paragraph.Rectangle = rectangle;
+        paragraph.AppendLine(fragment);
+
+        // Create a text builder to place the paragraph on the document page
+        var builder = new Aspose.Pdf.Text.TextBuilder(document.Pages.Add());
+        builder.AppendParagraph(paragraph);
+
+        // Save PDF document
+        document.Save(dataDir + "FitTextIntoRectangle_out.pdf");
     }
-    paragraph.AppendLine(fragment);
-    TextBuilder builder = new TextBuilder(doc.Pages.Add());
-    builder.AppendParagraph(paragraph);
-    doc.Save(output);
+}
 ```
 
 ## Что нового в Aspose.PDF 23.6
 
-В Aspose.PDF 23.6 появилась поддержка добавления следующих плагинов:
+С Aspose.PDF 23.6 поддержка добавления следующих плагинов:
 
-- Aspose PdfConverter Html в PDF
-- Aspose PdfOrganizer Resize API
-- Aspose PdfOrganizer Compress API
+- Aspose PdfConverter Html в PDF 
+- Aspose PdfOrganizer Изменение размера API
+- Aspose PdfOrganizer Сжатие API
 
-Обновление Aspose.PdfForm 
-- добавлена функция 'Экспорт "Значений из полей в документе в файл CSV"'
-- добавлена возможность устанавливать свойства для отдельных полей
+Обновите Aspose.PdfForm 
+- добавьте функцию «Экспорт "Значений из полей в документе в CSV файл"
+- добавьте возможность устанавливать свойства для отдельных полей
 
-Также поддерживается возможность установки заголовка для страниц HTML, Epub:
+Также поддержка добавления возможности установить заголовок HTML, страницы Epub:
 
 ```cs
+private static void SetHtmlTitle()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    var document = new Document(Params.InputPath + "53357.pdf");
-
-    var htmlSaveOptions = new HtmlSaveOptions
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
-        ExplicitListOfSavedPages = new[] { 1 },
-        SplitIntoPages = false,
-        FixedLayout = true,
-        CompressSvgGraphicsIfAny = false,
-        SaveTransparentTexts = true,
-        SaveShadowedTextsAsTransparentTexts = true,
-        FontSavingMode = HtmlSaveOptions.FontSavingModes.AlwaysSaveAsWOFF,
-        RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground,
-        PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml,
-        Title = "Заголовок страницы"   // <-- добавлено
-    };
+        var options = new Aspose.Pdf.HtmlSaveOptions
+        {
+            ExplicitListOfSavedPages = new[] { 1 },
+            SplitIntoPages = false,
+            FixedLayout = true,
+            CompressSvgGraphicsIfAny = false,
+            SaveTransparentTexts = true,
+            SaveShadowedTextsAsTransparentTexts = true,
+            FontSavingMode = Aspose.Pdf.HtmlSaveOptions.FontSavingModes.AlwaysSaveAsWOFF,
+            RasterImagesSavingMode = Aspose.Pdf.HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground,
+            PartsEmbeddingMode = Aspose.Pdf.HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml,
+            // New property
+            Title = "Title for page"
+        };
 
-    document.Save(Params.OutputPath + "53357-out.html", htmlSaveOptions);
+        // Save HTML document
+        document.Save(dataDir + "SetHtmlTitle_out.html", options);
+    }
+}
 ```
+
 ## Что нового в Aspose.PDF 23.5
 
-С версии 23.5 появилась поддержка добавления опции FontSize для RedactionAnnotation. Используйте следующий фрагмент кода для решения этой задачи:
+С 23.5 поддержка добавления опции FontSize для RedactionAnnotation. Используйте следующий фрагмент кода для решения этой задачи:
 
 ```cs
-    Document doc = new Document(dataDir + "test_factuur.pdf");
+private static void AddRedactionAnnotationFontSize() 
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Создайте экземпляр RedactionAnnotation для конкретной области страницы
-    RedactionAnnotation annot = new RedactionAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(367, 756.919982910156, 420, 823.919982910156));
-    annot.FillColor = Aspose.Pdf.Color.Black;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf")) 
+    {
+        // Create RedactionAnnotation instance for specific page region
+        var annot = new Aspose.Pdf.Annotations.RedactionAnnotation(document.Pages[1],
+            new Aspose.Pdf.Rectangle(367, 756.919982910156, 420, 823.919982910156));
+        annot.FillColor = Aspose.Pdf.Color.Black;
 
-    annot.BorderColor = Aspose.Pdf.Color.Yellow;
-    annot.Color = Aspose.Pdf.Color.Blue;
-    // Текст, который будет напечатан на аннотации к редакции
-    annot.OverlayText = "(Unknown)";
-    annot.TextAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-    // Повторение текста поверх аннотации редакции
-    annot.Repeat = false;
-    // Новое свойство здесь!
-    annot.FontSize = 20;
-    // Добавить аннотацию в коллекцию аннотаций первой страницы
-    doc.Pages[1].Annotations.Add(annot);
-    // Сглаживает аннотацию и редактирует содержимое страницы (т.е. удаляет текст и изображение
-    // Под редактируемой аннотацией)
-    annot.Redact();
-    dataDir = dataDir + "47704_RedactPage_out_NETCORE.pdf";
-    doc.Save(dataDir);
+        annot.BorderColor = Aspose.Pdf.Color.Yellow;
+        annot.Color = Aspose.Pdf.Color.Blue;
+        // Text to be printed on redact annotation
+        annot.OverlayText = "(Unknown)";
+        annot.TextAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        // Repat Overlay text over redact Annotation
+        annot.Repeat = false;
+
+        // New property
+        annot.FontSize = 20;
+
+        // Add annotation to annotations collection of first page
+        document.Pages[1].Annotations.Add(annot);
+        // Flattens annotation and redacts page contents (i.e. removes text and image under redacted annotation)
+        annot.Redact();
+        // Save PDF document
+        document.Save(dataDir + "AddRedactionAnnotationFontSize_out.pdf");
+    }
+}
 ```
+
 ## Что нового в Aspose.PDF 23.4
 
-Aspose.PDF объявил о выпуске SDK для .NET 7.
+Aspose.PDF объявила о выпуске .NET 7 SDK.
 
 ## Что нового в Aspose.PDF 23.3.1
 
-С версии Aspose.PDF 23.3 добавлена поддержка следующих плагинов:
+С Aspose.PDF 23.3 поддержка добавления следующих плагинов:
 
 - Aspose.PdfForm
 - Aspose.PdfConverter PDF в HTML
 - Aspose.PdfConverter PDF в XLSX
-- Aspose.PdfOrganizer Rotate
+- Aspose.PdfOrganizer Поворот
 - Aspose.PdfExtrator для изображений
 
 ## Что нового в Aspose.PDF 23.3
 
-Версия 23.3 ввела поддержку добавления разрешения к изображению. Для решения этой задачи можно использовать два метода:
+Версия 23.3 представила поддержку сохранения пропорций изображения и разрешения при вставке на страницу. Для решения этой проблемы можно использовать два метода:
 
 ```cs
-    var table = new Table
-            {
-                ColumnWidths = "600"
-            };
+private static void InsertImageWithNativeResolutionAsTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            for(var j = 0; j < 2; j ++)
-            {
-                var row = table.Rows.Add();
-                var cell = row.Cells.Add();
-                cell.Paragraphs.Add(new Image()
-                {
-                    IsApplyResolution = true,
-                    File = imageFile
-                });
-            }
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
 
-            page.Paragraphs.Add(table);
+        var table = new Aspose.Pdf.Table
+        {
+            ColumnWidths = "600"
+        };
+
+        for (var j = 0; j < 2; j++)
+        {
+            var row = table.Rows.Add();
+            var cell = row.Cells.Add();
+            cell.Paragraphs.Add(new Aspose.Pdf.Image()
+            {
+                IsApplyResolution = true,
+                File = dataDir + "Image1.jpg"
+            });
+        }
+
+        page.Paragraphs.Add(table);
+
+        // Save PDF document
+        document.Save(dataDir + "ImageWithNativeResolutionAsTable_out.pdf");
+    }
+}
 ```
 
 И второй подход:
 
 ```cs
-    page.Paragraphs.Add(new Image()
+private static void InsertImageWithNativeResolutionAsParagraph()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+
+        for (var j = 0; j < 2; j++)
+        {
+            page.Paragraphs.Add(new Aspose.Pdf.Image()
             {
                 IsApplyResolution = true,
-                File = imageFile
+                File = dataDir + "Image1.jpg"
             });
-            page.Paragraphs.Add(new Image()
-            {
-                IsApplyResolution = true,
-                File = imageFile
-            });
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ImageWithNativeResolutionAsParagraph_out.pdf");
+    }
+}
 ```
-Изображение будет размещено с масштабируемым разрешением, или вы можете установить свойства FixedWidth или FixedHeight в сочетании с IsApplyResolution
+
+Изображение будет размещено в масштабированном размере и родном разрешении. Вы можете установить свойства FixedWidth или FixedHeight в сочетании с IsApplyResolution.
 
 ## Что нового в Aspose.PDF 23.1.1
 
-С версии Aspose.PDF 23.1.1 поддерживается добавление следующих плагинов:
+С Aspose.PDF 23.1.1 поддержка добавления следующих плагинов:
 
 - Плагин Aspose.PdfOrganizer
 - Плагин Aspose.PdfExtractor
 
 ## Что нового в Aspose.PDF 23.1
 
-Начиная с версии 23.1 поддерживается создание аннотации PrinterMark.
+С версии 23.1 поддержка создания аннотации PrinterMark.
 
-Знаки печати - это графические символы или текст, добавленные на страницу для помощи производственному персоналу в идентификации компонентов многопластинной работы и поддержании постоянного качества вывода во время производства. Примеры, обычно используемые в печатной промышленности, включают:
+Метки печатника — это графические символы или текст, добавленные на страницу, чтобы помочь производственному персоналу идентифицировать компоненты многопластовой работы и поддерживать согласованный вывод в процессе производства. Примеры, обычно используемые в печатной индустрии, включают:
 
-- Метки регистрации для выравнивания пластин
-- Серые рампы и цветные полосы для измерения цветов и плотности чернил
-- Метки обрезки, показывающие, где должен быть обрезан носитель вывода
+- Цели регистрации для выравнивания пластин
+- Серые градиенты и цветовые полосы для измерения цветов и плотности чернил
+- Метки резки, показывающие, где выходной носитель должен быть обрезан
 
-Мы покажем пример опции с цветными полосами для измерения цветов и плотности чернил.
-Мы покажем пример опции с цветными полосами для измерения цветов и плотности чернил.
+Мы покажем пример опции с цветными полосами для измерения цветов и плотности чернил. Существует базовый абстрактный класс PrinterMarkAnnotation, и от него наследуется класс ColorBarAnnotation - который уже реализует эти полосы. Давайте проверим пример:
 
 ```cs
-var outFile = myDir + "ColorBarTest.pdf");
-
-using (var doc = new Document())
+private static void AddPrinterMarkAnnotation()
 {
-    Page page = doc.Pages.Add();
-    page.TrimBox = new Aspose.Pdf.Rectangle(20, 20, 580, 820);
-    AddAnnotations(page);
-    doc.Save(outFile);
-}
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-void AddAnnotations(Page page)
-{
-    var rectBlack = new Aspose.Pdf.Rectangle(100, 300, 300, 320);
-    var rectCyan = new Aspose.Pdf.Rectangle(200, 600, 260, 690);
-    var rectMagenta = new Aspose.Pdf.Rectangle(10, 650, 140, 670);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+        page.TrimBox = new Aspose.Pdf.Rectangle(20, 20, 580, 820);
 
-    var colorBarBlack = new ColorBarAnnotation(page, rectBlack);
-    var colorBarCyan = new ColorBarAnnotation(page, rectCyan, ColorsOfCMYK.Cyan);
-    var colorBaMagenta = new ColorBarAnnotation(page, rectMagenta);
-    colorBaMagenta.ColorOfCMYK = ColorsOfCMYK.Magenta;
-    var colorBarYellow = new ColorBarAnnotation(page, new Aspose.Pdf.Rectangle(400, 250, 450, 700), ColorsOfCMYK.Yellow);
+        var rectBlack = new Aspose.Pdf.Rectangle(100, 300, 300, 320);
+        var rectCyan = new Aspose.Pdf.Rectangle(200, 600, 260, 690);
+        var rectMagenta = new Aspose.Pdf.Rectangle(10, 650, 140, 670);
 
-    page.Annotations.Add(colorBarBlack);
-    page.Annotations.Add(colorBarCyan);
-    page.Annotations.Add(colorBaMagenta);
-    page.Annotations.Add(colorBarYellow);
+        var colorBarBlack = new Aspose.Pdf.Annotations.ColorBarAnnotation(page, rectBlack);
+        var colorBarCyan = new Aspose.Pdf.Annotations.ColorBarAnnotation(page, rectCyan,
+            Aspose.Pdf.Annotations.ColorsOfCMYK.Cyan);
+        var colorBarMagenta = new Aspose.Pdf.Annotations.ColorBarAnnotation(page, rectMagenta);
+        colorBarMagenta.ColorOfCMYK = Aspose.Pdf.Annotations.ColorsOfCMYK.Magenta;
+        var colorBarYellow = new Aspose.Pdf.Annotations.ColorBarAnnotation(page,
+            new Aspose.Pdf.Rectangle(400, 250, 450, 700), Aspose.Pdf.Annotations.ColorsOfCMYK.Yellow);
+
+        page.Annotations.Add(colorBarBlack);
+        page.Annotations.Add(colorBarCyan);
+        page.Annotations.Add(colorBarMagenta);
+        page.Annotations.Add(colorBarYellow);
+
+        // Save PDF document
+        document.Save(dataDir + "PrinterMarkAnnotation_out.pdf");
+    }
 }
 ```
-Также поддерживает извлечение векторных изображений. Попробуйте использовать следующий код для обнаружения и извлечения векторной графики:
+Также поддерживается извлечение векторных изображений. Попробуйте использовать следующий код для обнаружения и извлечения векторной графики:
 
 ```cs
-    var doc = new Document(input);
-    try{
-        doc.Pages[1].TrySaveVectorGraphics(outputSvg);
-    }
-    catch(Exception){
+private static void SavePdfVectorGraphicToSvg()
+{
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Graphs();
 
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "test.pdf"))
+    {
+        // Attempt to save the vector graphics into a specified SVG file
+        document.Pages[1].TrySaveVectorGraphics(dataDir + "PdfVectorGraphicToSvg.svg");
     }
+}
 ```
 
 ## Что нового в Aspose.PDF 22.12
 
-С этого релиза поддерживается конвертация PDF в DICOM изображение
+С этого релиза поддержка конвертации PDF в DICOM изображение
 
 ```cs
-    Document doc = new Document("source.pdf");
-    DicomDevice dicom = new DicomDevice();
-    FileStream outStream = new FileStream("out.dicom", FileMode.Create, FileAccess.ReadWrite);
-    dicom.Process(doc.Pages[1], outStream);
+private static void PdfToDicom()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PagesToImages.pdf"))
+    {
+        var dicom = new Aspose.Pdf.Devices.DicomDevice();
+        FileStream outStream = new FileStream(dataDir + "PdfToDicom_out.dcm", FileMode.Create, FileAccess.ReadWrite);
+        dicom.Process(document.Pages[1], outStream);
+    }
+}
 ```    
 
 ## Что нового в Aspose.PDF 22.09
 
-С 22.09 поддерживается добавление свойства для изменения порядка рубрик темы (E=, CN=, O=, OU=, ) в подпись.
+С 22.09 поддержка добавления свойства для изменения порядка предметных рубрик (E=, CN=, O=, OU=, ) в подписи.
 
 ```cs
-    using (var fileSign = new PdfFileSignature())
+private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath, string password)
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var fileSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        fileSign.BindPdf(inputPdf);
+        // Bind PDF document
+        fileSign.BindPdf(dataDir + "DigitallySign.pdf");
+
         var rect = new System.Drawing.Rectangle(100, 100, 400, 100);
-        var signature = new PKCS7Detached(inputPfx, "123456789");
-        signature.CustomAppearance = new SignatureCustomAppearance()
+        var signature = new Aspose.Pdf.Forms.PKCS7Detached(pfxFilePath, password);
+
+        // Set signature custom appearance
+        signature.CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance()
         {
             UseDigitalSubjectFormat = true,
-            DigitalSubjectFormat = new SubjectNameElements[] { SubjectNameElements.CN, SubjectNameElements.O }
-            //или
-            //DigitalSubjectFormat = new SubjectNameElements[] { SubjectNameElements.OU, SubjectNameElements.S, SubjectNameElements.C }
+            DigitalSubjectFormat = new Aspose.Pdf.Forms.SubjectNameElements[] { Aspose.Pdf.Forms.SubjectNameElements.CN, Aspose.Pdf.Forms.SubjectNameElements.O }
+            //or
+            //DigitalSubjectFormat = new Aspose.Pdf.Forms.SubjectNameElements[] { Aspose.Pdf.Forms.SubjectNameElements.OU, Aspose.Pdf.Forms.SubjectNameElements.S, Aspose.Pdf.Forms.SubjectNameElements.C }
         };
+
+        // Sign PDF file
         fileSign.Sign(1, true, rect, signature);
-        fileSign.Save(outputPdf);
+        // Save PDF document
+        fileSign.Save(dataDir + "SignPdfWithModifiedOrderOfSubjectRubrics_out.pdf");
     }
+}
 ```
+
 ## Что нового в Aspose.PDF 22.6
 
-С версии 22.5 поддержка извлечения текста с нижним и верхним индексом из PDF.
+С 22.5 поддержка извлечения текста SubScript и SuperScript из PDF.
 
-Если документ PDF содержит текст с нижним и верхним индексом, например H2O, то при извлечении текста из PDF должна также извлекаться информация о форматировании (в извлеченном обычном тексте).
+Если PDF документ содержит текст SubScript и SuperScript, такой как H2O, то извлечение текста из PDF также должно извлекать их информацию о форматировании (в извлеченном обычном тексте).
 Если PDF содержит текст курсивом, он также должен быть включен в извлеченное содержимое.
 
 ```cs
-Document doc = new Document(input);
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("TM");
-absorber.Visit(doc.Pages[1]);
+private static void ExtractTextSuperscript()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextWithSubscriptsSuperscripts.pdf"))
+    {
+        // Use TextFragmentAbsorber with no parameters to get all text
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        absorber.Visit(document.Pages[1]);
+
+        // Iterate through text fragments to find superscript text
+        foreach (var textFragment in absorber.TextFragments) 
+        {
+            if (textFragment.TextState.Superscript)
+            {
+                Console.WriteLine(String.Format("Text {0} at {1} is superscript!", textFragment.Text, textFragment.Position));
+            }
+        }
+    }
+}
 ```
 
 ## Что нового в Aspose.PDF 22.4
 
-Этот релиз включает информацию для Aspose.PDF для .NET:
+Этот релиз включает информацию для Aspose.PDF for .NET:
 
-- PDF в ODS: Распознавание текста с нижним и верхним индексом;
+- PDF в ODS: Распознавание текста в подстрочном и надстрочном формате;
 
 **пример**
 
 ```cs
-Document pdfDocument = new Document("Superscript-Subscript.pdf");
-ExcelSaveOptions options = new ExcelSaveOptions();
-options.Format = ExcelSaveOptions.ExcelFormat.ODS;
-pdfDocument.Save("output.ods"), options);
+private static void ConvertPdfToOds()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate ExcelSaveOptions object
+        var saveOptions = new Aspose.Pdf.ExcelSaveOptions
+        {
+            // Specify the desired table file format
+            Format = Aspose.Pdf.ExcelSaveOptions.ExcelFormat.ODS
+        };
+
+        // Save the file in ODS format
+        document.Save(dataDir + "PDFToODS_out.ods", saveOptions);
+    }
+}
 ```
 
-- PDF в XMLSpreadSheet2003: Распознавание текста с нижним и верхним индексом;
+- PDF в XMLSpreadSheet2003: Распознавание текста в подстрочном и надстрочном формате;
 
-- PDF в Excel: Распознавание текста с нижним и верхним индексом;
-- PDF в Excel: Распознавание текста в нижнем и верхнем индексах;
+- PDF в Excel: Распознавание текста в подстрочном и надстрочном формате;
 
 - Удаление подписей UR при сохранении документа;
 
@@ -1135,56 +2385,66 @@ pdfDocument.Save("output.ods"), options);
 
 - Удаление подфильтра adbe.x509.rsa_sha1 при сохранении документа;
 
-- Формат поля как число и формат даты;
+- Форматирование поля как числа и даты;
 
 - Запрет использования шифрования RC4 в FDF 2.0.
 
 ## Что нового в Aspose.PDF 22.2
 
-Начиная с версии 22.2, стало возможно подписывать документ с использованием PdfFileSignature с LTV, а также изменять хэширование с SHA1 на SHA256.
+С версии 22.2 стало возможным подписывать документ с использованием PdfFileSignature с LTV и с возможностью изменения хеширования с SHA1 на SHA256.
 
 ```csharp
-Пример использования:
-var inputPdf = "51168.pdf";
-var inputPfx = "51168.pfx";
-var inputPfxPassword = "111111";
-var outputPdf = "51168.pdf";
-
-using (var doc = new Document(inputPdf))
+private static void SignPdfWithSha256(string pfxFilePath, string password)
 {
-    using (PdfFileSignature signature = new PdfFileSignature(doc))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var fileSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        var pkcs = new PKCS7(inputPfx, inputPfxPassword)
+        // Bind PDF document
+        fileSign.BindPdf(dataDir + "DigitallySign.pdf");
+
+        var rect = new System.Drawing.Rectangle(300, 100, 1, 1);
+        var signature = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password)
         {
             UseLtv = true,
-            TimestampSettings = new TimestampSettings("http://freetsa.org/tsr", string.Empty, DigestHashAlgorithm.Sha256)
+            TimestampSettings = new Aspose.Pdf.TimestampSettings("http://freetsa.org/tsr", string.Empty, Aspose.Pdf.DigestHashAlgorithm.Sha256)
         };
-        signature.Sign(1, false, new System.Drawing.Rectangle(300, 100, 1, 1), pkcs);
-        signature.Save(outputPdf);
+
+        // Sign PDF file
+        fileSign.Sign(1, false, rect, signature);
+        // Save PDF document
+        fileSign.Save(dataDir + "SignPdfWithSha256_out.pdf");
     }
 }
 ```
+
 ## Что нового в Aspose.PDF 22.1
 
-Теперь Aspose.PDF для .NET поддерживает загрузку документов из одного из самых популярных форматов документов, Portable Document Format (PDF) версии 2.0.
+Теперь Aspose.PDF for .NET поддерживает загрузку документов из одного из самых популярных форматов документов, Portable Document Format (PDF) версии 2.0.
 
 ## Что нового в Aspose.PDF 21.11
 
 ### Разрешить нелатинские символы в пароле
 
 ```csharp
-Aspose.Pdf.Facades.PdfFileSecurity fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity();
-fileSecurity.AllowExceptions = true;
-    try
+private static void EncriptPdfNonlatinPassCharacters()
 {
- fileSecurity.BindPdf(exportDoc);
- bool res = fileSecurity.EncryptFile("æøå", "æøå", Aspose.Pdf.Facades.DocumentPrivilege.Print, Aspose.Pdf.Facades.KeySize.x256, Aspose.Pdf.Facades.Algorithm.AES);
- Console.WriteLine(res);
- fileSecurity.Save(output("encrypted.pdf"));
-}
-    catch(Exception e)
-{
-    Console.WriteLn("Exception: " + e.Message);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    {
+        // Bind PDF document
+        fileSecurity.BindPdf(dataDir + "input.pdf");
+        // Encrypt file using 256-bit encryption
+        bool isSuccessful = fileSecurity.EncryptFile("æøå", "æøå", Aspose.Pdf.Facades.DocumentPrivilege.Print,
+            Aspose.Pdf.Facades.KeySize.x256, Aspose.Pdf.Facades.Algorithm.AES);
+        Console.WriteLine(isSuccessful);
+        // Save PDF document
+        fileSecurity.Save(dataDir + "PdfNonlatinPassEncrypted_out.pdf");
+    }
 }
 ```
 
@@ -1192,53 +2452,93 @@ fileSecurity.AllowExceptions = true;
 
 ### Как обнаружить скрытый текст?
 
-Пожалуйста, используйте TextState.Invisible для получения информации о невидимости текста за пределами настройки режима отображения.
+Пожалуйста, используйте TextState.Invisible, чтобы получить информацию о невидимости текста вне настройки режима рендеринга.
 
 Мы использовали следующий код для тестирования:
 
 ```csharp
-Document pdf = new Document(dataDir + "TestPage.pdf");
-Console.WriteLine(pdf.FileName);
-var page = pdf.Pages[1];
-var textFragmentAbsorber = new TextFragmentAbsorber();
-page.Accept(textFragmentAbsorber);
-var textFragmentCollection = textFragmentAbsorber.TextFragments;
-for (int i = 1; i <= textFragmentCollection.Count; i++)
+private static void DisplayTextInvisibility()
 {
-    TextFragment fragment = textFragmentCollection[i];
-    Console.WriteLine("Fragment {0} at {1}", i, fragment.Rectangle.ToString());
-    Console.WriteLine("Text: {0}", fragment.Text);
-    Console.WriteLine("RenderingMode: {0}", fragment.TextState.RenderingMode.ToString());
-    Console.WriteLine("Invisibility: {0}", fragment.TextState.Invisible);
-    Console.WriteLine("---");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfWithHiddenText.pdf"))
+    {
+        Console.WriteLine(document.FileName);
+
+        // Use TextFragmentAbsorber with no parameters to get all text
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        absorber.Visit(document.Pages[1]);
+        var textFragmentCollection = absorber.TextFragments;
+
+        // Iterate through text fragments to find hidden text
+        for (int i = 1; i <= textFragmentCollection.Count; i++)
+        {
+            var fragment = textFragmentCollection[i];
+            Console.WriteLine("Fragment {0} at {1}", i, fragment.Rectangle.ToString());
+            Console.WriteLine("Text: {0}", fragment.Text);
+            Console.WriteLine("RenderingMode: {0}", fragment.TextState.RenderingMode.ToString());
+            Console.WriteLine("Invisibility: {0}", fragment.TextState.Invisible);
+            Console.WriteLine("---");
+        }
+    }
 }
 ```
-### Как получить информацию о количестве слоёв в PDF документе?
+
+### Как получить информацию о количестве слоев в PDF документе?
 
 ```csharp
-Please use code snippet:
-var inFile = "1234.pdf";
-Document doc = new Document(inFile);
-List layers = doc.Pages[1].Layers;
+private static void GetPdfLayers()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Layers();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfWithLayers.pdf"))
+    {
+        // Get layers from the first page
+        var layers = document.Pages[1].Layers;
+        // Save each layer to the output path
+        foreach (var layer in layers)
+        {
+            Console.WriteLine("Document {0} contains a layer named: {1} ", document.FileName, layer.Name);
+        }
+    }
+}
 ```
 
 ## Что нового в Aspose.PDF 21.9
 
-Настройте цвет фона для внешнего вида подписи и цвет шрифта меток в области подписи с Aspose.PDF для .NET.
+Настройте цвет фона для внешнего вида подписи и цвет шрифта меток в области подписи с Aspose.PDF for .NET.
 
 ```csharp
-using (PdfFileSignature pdfSign = new PdfFileSignature())
+private static void SignPdfWithCustomColorsInAppearance(string pfxFilePath, string password)
 {
-    pdfSign.BindPdf(inFile);
-    var rect = new System.Drawing.Rectangle(310, 45, 200, 50);
-    var pkcs = new PKCS7(inPfxFile, "");
-    pkcs.CustomAppearance = new SignatureCustomAppearance()
-    {//set colors
-        ForegroundColor = Color.DarkGreen,
-        BackgroundColor = Color.LightSeaGreen,
-    };
-    pdfSign.Sign(1, true, rect, pkcs);
-    pdfSign.Save(outFile);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdfFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        var rect = new System.Drawing.Rectangle(310, 45, 200, 50);
+        // Create PKCS#7 object for sign
+        var pkcs = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);
+
+        // Set signature custom appearance
+        pkcs.CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance()
+        {
+            // Set colors
+            ForegroundColor = Aspose.Pdf.Color.DarkGreen,
+            BackgroundColor = Aspose.Pdf.Color.LightSeaGreen,
+        };
+        // Sign PDF file
+        pdfFileSignature.Sign(1, true, rect, pkcs);
+        // Save PDF document
+        pdfFileSignature.Save(dataDir + "SignPdfWithCustomColorsInAppearance_out.pdf");
+    }
 }
 ```
 
@@ -1249,22 +2549,31 @@ using (PdfFileSignature pdfSign = new PdfFileSignature())
 В версии 21.8 свойство ForegroundColor позволяет изменять цвет текста в цифровой подписи.
 
 ```csharp
-```
-```csharp
-using (PdfFileSignature pdfSign = new PdfFileSignature())
+private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, string password)
 {
-    pdfSign.BindPdf(inFile);
-    //создаем прямоугольник для размещения подписи
-    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
-    PKCS7 pkcs = new PKCS7(inPfxFile, "");
-    pkcs.CustomAppearance = new SignatureCustomAppearance()
-    {//устанавливаем цвет текста
-        ForegroundColor = Color.Green
-    };
-    // подписываем PDF файл
-    pdfSign.Sign(1, true, rect, pkcs);
-    //сохраняем выходной PDF файл
-    pdfSign.Save(outFile);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
+        var rect = new System.Drawing.Rectangle(310, 45, 200, 50);
+        // Create PKCS#7 object for sign
+        var pkcs = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);
+
+        // Set signature custom appearance
+        pkcs.CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance()
+        {
+            // Set text color
+            ForegroundColor = Aspose.Pdf.Color.Green
+        };
+        // Sign PDF file
+        pdfSign.Sign(1, true, rect, pkcs);
+        // Save PDF document
+        pdfSign.Save(dataDir + "SignPdfWithForegroundInAppearance_out.pdf");
+    }
 }
 ```
 
@@ -1272,62 +2581,58 @@ using (PdfFileSignature pdfSign = new PdfFileSignature())
 
 ### Создание PDF на основе XML и XLS с параметрами
 
-Для добавления параметров XSL нам нужно создать собственный [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) и установить его как свойство в [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Следующий фрагмент показывает, как использовать этот класс с описанными выше примерами файлов.
+Чтобы добавить параметры XSL, нам нужно создать собственный [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) и установить его как свойство в [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Следующий фрагмент показывает, как использовать этот класс с образцами файлов, описанными выше.
 
 ```csharp
-public static void Example_XSLFO_to_PDF()
+private static void ConvertXslfoToPdfWithArgumentList()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create convert options
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "XSLFOToPdfInput.xslt");
+
+    // Example of using XsltArgumentList
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "XSLFOToPdfInput.xml", options))
     {
-        var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
-        var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
-
-        var options = new Aspose.Pdf.XslFoLoadOptions();
-
-        //Пример использования XsltArgumentList
-         XsltArgumentList argsList = new XsltArgumentList();
-        argsList.AddParam("isBoldName", "", "yes");
-        //---------------------
-
-        var pdfDocument = new Aspose.Pdf.Document(TransformXml(XmlContent, XsltContent, argsList), options);
-        pdfDocument.Save(_dataDir + "data_xml.pdf");
+        // Save PDF document
+        document.Save(dataDir + "XslfoToPdfWithArgumentList_out.pdf");
     }
-
- public static MemoryStream TransformXml(string inputXml, string xsltString, XsltArgumentList argsList=null)
-    {
-            var transform = new XslCompiledTransform();
-            using (var reader = XmlReader.Create(new StringReader(xsltString)))
-            {
-                transform.Load(reader);
-            }
-            var memoryStream = new MemoryStream();
-
-            var results = new StreamWriter(memoryStream);
-            using (var reader = XmlReader.Create(new StringReader(inputXml)))
-            {
-                transform.Transform(reader, argsList, results);
-            }
-
-            memoryStream.Position = 0;
-            return memoryStream;
-    }
+}
 ```
+
 ## Что нового в Aspose.PDF 21.6
 
-С Aspose.PDF для .NET вы можете скрыть изображения с помощью ImagePlacementAbsorber из документа:
+С Aspose.PDF for .NET вы можете скрывать изображения с помощью ImagePlacementAbsorber из документа:
 
 ```csharp
-public void PDFNET_49961()
+private static void HideImageInPdf()
 {
-   ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-   Document doc = new Document("test.pdf");
-   // Скрыть изображение на первой странице
-   doc.Pages[1].Accept(abs);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-   foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
-   {
-       imagePlacement.Hide();
-   }
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImagePlacement.pdf"))
+    {
+        // Create ImagePlacementAbsorber instance
+        var absorber = new Aspose.Pdf.ImagePlacementAbsorber();
+        // Load the images of the first page
+        document.Pages[1].Accept(absorber);
 
-   doc.Save("test_out.pdf");
+        // Iterate through each image placement on the first page
+        foreach (var imagePlacement in absorber.ImagePlacements)
+        {
+            // Hide image
+            imagePlacement.Hide();
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "HideImageInPdf_out.pdf");
+    }
 }
 ```
 
@@ -1335,151 +2640,199 @@ public void PDFNET_49961()
 
 ### Как извлечь полное имя шрифта из его описания/ресурса в PDF?
 
-Вы можете получить полное имя шрифта с префиксом с свойством BaseFont для класса Font.
+Вы можете получить полный шрифт с префиксом с помощью свойства BaseFont для класса Font.
 
 ```csharp
-Document pdf = new Document(dataDir + @"testfont.pdf");
-
-Aspose.Pdf.Text.Font[] fonts = pdf.FontUtilities.GetAllFonts();
-foreach (Aspose.Pdf.Text.Font font in fonts)
+private static void DisplayFontFullNames()
 {
-    Console.WriteLine($"font name : {font.FontName} BaseFont name : {font.BaseFont}");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    {
+        // Get document fonts
+        var fonts = document.FontUtilities.GetAllFonts();
+
+        // Iterate through the fonts
+        foreach (var font in fonts)
+        {
+            // Show font names
+            Console.WriteLine($"font name : {font.FontName} BaseFont name : {font.BaseFont}");
+        }
+    }
 }
-pdf.Dispose();
 ```
 
 ## Что нового в Aspose.PDF 21.4
 
-### Добавлен API для объединения изображений
+### Добавить API для объединения изображений
 
-Aspose.PDF 21.4 позволяет объединять изображения.
-Aspose.PDF 21.4 позволяет объединять изображения.
+Aspose.PDF 21.4 позволяет вам объединять изображения. Следующий фрагмент кода:
 
 ```csharp
 private static void MergeAsJpeg()
 {
-   List<Stream> inputImagesStreams = new List<Stream>();
-   using (FileStream inputFile300dpi = new FileStream(@"c:\300.jpg", FileMode.Open))
-   {
-       inputImagesStreams.Add(inputFile300dpi);
-       using (FileStream inputFile600dpi = new FileStream(@"c:\49616_600.jpg", FileMode.Open))
-       {
-           inputImagesStreams.Add(inputFile600dpi);
-           using (Stream inputStream =
-                 PdfConverter.MergeImages(inputImagesStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
-           {
-               using (FileStream outputStream = new FileStream(@"c:\out.jpg", FileMode.Create))
-               {
-                   byte[] buffer = new byte[32768];
-                   int read;
-                   while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
-                   {
-                       outputStream.Write(buffer, 0, read);
-                   }
-               }
-           }
-       }
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    List<Stream> inputImagesStreams = new List<Stream>();
+    using (FileStream firstImageStream = new FileStream(dataDir + "aspose.jpg", FileMode.Open))
+    {
+        inputImagesStreams.Add(firstImageStream);
+        using (FileStream secondImageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            inputImagesStreams.Add(secondImageStream);
+
+            // Invoke PdfConverter.MergeImages to perform merge
+            using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImages(inputImagesStreams,
+                  Aspose.Pdf.Drawing.ImageFormat.Jpeg, Aspose.Pdf.Facades.ImageMergeMode.Vertical, 1, 1))
+            {
+                using (FileStream outputStream = new FileStream(dataDir + "Merge_out.jpg", FileMode.Create))
+                {
+                    byte[] buffer = new byte[32768];
+                    int read;
+                    while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        outputStream.Write(buffer, 0, read);
+                    }
+                }
+            }
+        }
     }
 }
 ```
+
 Также вы можете объединить свои изображения в формате Tiff:
 
 ```csharp
 private static void MergeAsTiff()
 {
-   List<Stream> inputImagesStreams = new List<Stream>();
-   using (FileStream inputFile300dpi = new FileStream(@"c:\300.tiff", FileMode.Open))
-   {
-       inputImagesStreams.Add(inputFile300dpi);
-       using (FileStream inputFile600dpi = new FileStream(@"c:\600.tiff", FileMode.Open))
-       {
-           inputImagesStreams.Add(inputFile600dpi);
-           using (Stream inputStream = PdfConverter.MergeImagesAsTiff(inputImagesStreams))
-           {
-               using (FileStream outputStream = new FileStream(@"c:\out.tiff", FileMode.Create))
-               {
-                   byte[] buffer = new byte[32768];
-                   int read;
-                   while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
-                   {
-                       outputStream.Write(buffer, 0, read);
-                   }
-               }
-           }
-       }
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    List<Stream> inputImagesStreams = new List<Stream>();
+    using (FileStream firstImageStream = new FileStream(dataDir + "aspose.jpg", FileMode.Open))
+    {
+        inputImagesStreams.Add(firstImageStream);
+        using (FileStream secondImageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            inputImagesStreams.Add(secondImageStream);
+
+            // Invoke PdfConverter.MergeImagesAsTiff to perform merge
+            using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImagesAsTiff(inputImagesStreams))
+            {
+                using (FileStream outputStream = new FileStream(dataDir + "Merge_out.tiff", FileMode.Create))
+                {
+                    byte[] buffer = new byte[32768];
+                    int read;
+                    while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        outputStream.Write(buffer, 0, read);
+                    }
+                }
+            }
+        }
     }
 }
 ```
 
 ## Что нового в Aspose.PDF 21.3
 
-### Открытое публичное свойство для обнаружения защиты информации Azure
-### Публичное раскрытие свойства для обнаружения защиты Azure Information Protection
+### Публичное раскрытие свойства для обнаружения защиты информации Azure
 
-Следующий фрагмент кода позволит вам получить доступ к зашифрованным данным ваших PDF-файлов, защищенных с помощью Azure Information Protection:
+С помощью следующего фрагмента кода вы должны иметь возможность получить доступ к зашифрованному содержимому ваших PDF файлов, защищенных защитой информации Azure:
 
 ```csharp
- public void Azure_Information_Protection()
- {
-     string inputFile = @"c:\pdf.pdf";
-     Document document = new Document(inputFile);
-     if (document.EmbeddedFiles[1].AFRelationship == AFRelationship.EncryptedPayload)
-     {
+private static void AzureInformationProtection()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf"))
+    {
+        if (document.EmbeddedFiles[1].AFRelationship == Aspose.Pdf.AFRelationship.EncryptedPayload)
+        {
             if (document.EmbeddedFiles[1].EncryptedPayload != null)
             {
-              // document.EmbeddedFiles[1].EncryptedPayload.Type == "EncryptedPayload"
-              // document.EmbeddedFiles[1].EncryptedPayload.Subtype == "MicrosoftIRMServices"
-              // document.EmbeddedFiles[1].EncryptedPayload.Version == "2"
+                // document.EmbeddedFiles[1].EncryptedPayload.Type == "EncryptedPayload"
+                // document.EmbeddedFiles[1].EncryptedPayload.Subtype == "MicrosoftIRMServices"
+                // document.EmbeddedFiles[1].EncryptedPayload.Version == "2"
             }
-     }
+        }
+    }
 }
 ```
 
 ## Что нового в Aspose.PDF 21.1
 
-### Добавлена поддержка получения цвета фона TextFragment
+### Добавить поддержку извлечения цвета фона TextFragment
 
-В этой версии Aspose.PDF появилась функция получения цвета фона.
-В этой версии Aspose.PDF стала доступна функция получения цвета фона.
+В этой версии Aspose.PDF функция стала доступна для извлечения цвета фона. Вам нужно указать searchOptions.SearchForTextRelatedGraphics = true; в параметрах объекта TextFragmentAbsorber.
 
 Пожалуйста, рассмотрите следующий код:
 
 ```csharp
-Document pdfDocument = new Document(dataDir + "TextColor.pdf");
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber();
-
-TextSearchOptions searchOptions = new TextSearchOptions(false);
-searchOptions.SearchForTextRelatedGraphics = true;
-
-textFragmentAbsorber.TextSearchOptions = searchOptions;
-
-// Принять абсорбер для всех страниц
-pdfDocument.Pages.Accept(textFragmentAbsorber);
-
-// Получить извлеченные фрагменты текста
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// Пройтись по фрагментам
-foreach (TextFragment textFragment in textFragmentCollection)
+private static void DisplayPdfTextBackgroundColor()
 {
-    Console.WriteLine("Текст: '{0}'", textFragment.Text);
-    Console.WriteLine("Цвет фона: '{0}'", textFragment.TextState.BackgroundColor);
-    Console.WriteLine("Цвет переднего плана: '{0}'", textFragment.TextState.ForegroundColor);
-    Console.WriteLine("Цвет фона сегмента: '{0}'", textFragment.Segments[1].TextState.BackgroundColor);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfWithTextBackgroundColor.pdf"))
+    {
+        // Use TextFragmentAbsorber with no parameters to get all text
+        var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+
+        var searchOptions = new Aspose.Pdf.Text.TextSearchOptions(false);
+        // Setting this option into the 'true' is necessary 
+        searchOptions.SearchForTextRelatedGraphics = true;
+        textFragmentAbsorber.TextSearchOptions = searchOptions;
+
+        // Accept the absorber for all the pages
+        document.Pages.Accept(textFragmentAbsorber);
+        
+        // Loop through the fragments
+        foreach (var textFragment in textFragmentAbsorber.TextFragments)
+        {
+            Console.WriteLine("Text: '{0}'", textFragment.Text);
+            Console.WriteLine("BackgroundColor: '{0}'", textFragment.TextState.BackgroundColor);
+            Console.WriteLine("ForegroundColor: '{0}'", textFragment.TextState.ForegroundColor);
+            Console.WriteLine("Segment BackgroundColor: '{0}'", textFragment.Segments[1].TextState.BackgroundColor);
+        }
+    }
 }
 ```
-### После конвертации в HTML шрифт полностью встроен в результат
 
-Также, в Aspose.PDF 21.1, после конвертации PDF в HTML, стало доступно встраивание шрифтов в выходной HTML-документ. Это возможно с новой булевой опцией сохранения HtmlSaveParameter.SaveFullFont.
+### После конвертации в HTML шрифт полностью встроен в вывод
+
+Также в Aspose.PDF 21.1, после конвертации PDF в HTML, стали доступны встроенные шрифты в выходном HTML документе. Это возможно благодаря новой булевой опции сохранения HtmlSaveParameter.SaveFullFont.
 
 Вот фрагмент кода:
 
 ```csharp
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
-saveOptions.PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml;
-saveOptions.LettersPositioningMethod = HtmlSaveOptions.LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss;
-saveOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.AlwaysSaveAsTTF;
-saveOptions.SaveTransparentTexts = true;
-saveOptions.SaveFullFont = true;
+private static void PdfToHtmlWithFullFont()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Instantiate HTML SaveOptions object
+        var options = new Aspose.Pdf.HtmlSaveOptions
+        {
+            RasterImagesSavingMode = Aspose.Pdf.HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground,
+            PartsEmbeddingMode = Aspose.Pdf.HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml,
+            LettersPositioningMethod = Aspose.Pdf.HtmlSaveOptions.LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss,
+            FontSavingMode = Aspose.Pdf.HtmlSaveOptions.FontSavingModes.AlwaysSaveAsTTF,
+            SaveTransparentTexts = true,
+            // New option
+            SaveFullFont = true
+        };
+        // Save HTML document
+        document.Save(dataDir + "PdfToHtmlWithFullFont_out.html", options);
+    }
+}
 ```

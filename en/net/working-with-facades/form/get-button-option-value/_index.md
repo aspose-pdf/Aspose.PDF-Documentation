@@ -1,6 +1,8 @@
 ---
 title: Get Button Option Value
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/get-button-option-value/
 description: This section explains how to get Button Option Value with Aspose.PDF Facades using Form Class.

@@ -2,6 +2,8 @@
 title: Working with AcroForms
 linktitle: AcroForms
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/acroforms/
 description: With Aspose.PDF for .NET you may create a form from scratch, fill the form field in a PDF document, extract data from the form, and etc.

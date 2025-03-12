@@ -2,6 +2,8 @@
 title: Using in other languages
 linktitle: Using in other languages
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /net/use-aspose-pdf-for-net-in-other-programming-languages/
 description: Learn how to use Aspose.PDF for .NET in other programming languages like VB.NET, C++, and more. Maximize the versatility of PDF processing.

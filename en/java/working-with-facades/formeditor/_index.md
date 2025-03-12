@@ -4,10 +4,10 @@ type: docs
 weight: 105
 url: /java/formeditor-class/
 description: This section explains how to work with com.aspose.pdf.facades using FormEditor Class.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 draft: false
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

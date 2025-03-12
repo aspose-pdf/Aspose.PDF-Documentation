@@ -2,6 +2,8 @@
 title: Add Curve Object to PDF file
 linktitle: Add Curve
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/add-curve/
 description: This article explains how to create a curve object to your PDF using Aspose.PDF for .NET.

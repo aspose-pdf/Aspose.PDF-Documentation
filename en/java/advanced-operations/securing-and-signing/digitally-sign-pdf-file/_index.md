@@ -5,10 +5,14 @@ type: docs
 weight: 10
 url: /java/digitally-sign-pdf-file/
 description: Learn how to digitally sign a PDF file to ensure its authenticity and integrity using Aspose.PDF for Java
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add digital signatures to PDF documents using the Aspose.PDF library for Java
+Abstract: The article provides an overview of how to add digital signatures to PDF documents using the Aspose.PDF library for Java. It highlights the significance of certifying a document to maintain its integrity and outlines recent changes to the public API, including the introduction of the `isCertified(…)` method in the `PdfFileSignature` class. The article includes practical examples of signing a PDF with a digital signature using the `PKCS7` protocol and demonstrates how to add a timestamp to a digital signature by incorporating the `TimestampSettings` class. Code snippets illustrate the process of digitally signing a PDF document and adding a timestamp using a timestamp server, ensuring that the document's authenticity and integrity can be trusted.
+SoftwareApplication: java
 ---
 
 When signing a PDF document using a signature, you basically confirm that its contents should remain “as is”. Consequently, any changes made afterwards invalidate the signature and thus, you know if the document has been altered. Certifying a document first, allows you to specify the changes that a user can make to the document without invalidating the certification.

@@ -5,10 +5,14 @@ type: docs
 weight: 120
 url: /java/accessibility-tagged-pdf/
 description: Ensure PDF accessibility with Aspose.PDF for Java. Learn how to create tagged PDFs to meet accessibility standards like WCAG and PDF
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Creating Tagged PDF documents with Aspose.PDF for Java
+Abstract: This article discusses the importance of creating Tagged PDF documents to enhance accessibility for individuals with disabilities. Tagged PDFs are essential for compatibility with assistive technologies, such as screen readers, by incorporating elements like Tables of Contents, hyperlinks, bookmarks, and alternative text. Aspose.PDF offers tools to generate PDF documents adhering to the PDF/UA Standard (commonly referred to as "Section 508" or "WCAG Standard"), which outlines the necessary requirements for making documents accessible and user-friendly for people with disabilities and those using limited devices. By utilizing Aspose.PDF, users can create compliant PDF documents that are both readable and navigable. The article further explores how to add tagged content, covering topics such as creating Tagged PDFs, extracting tagged content, setting structure element properties, and working with tables within Tagged PDFs.
+SoftwareApplication: java
 ---
 
 A Tagged PDF document can be accessed by people with disabilities. Adding accessibility tags to PDF files makes it easier for screen readers and other assistive technologies to read and navigate a document, with Tables of Contents, hyperlinks, bookmarks, alt text, and so on.

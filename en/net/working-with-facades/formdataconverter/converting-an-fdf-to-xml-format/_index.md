@@ -1,6 +1,8 @@
 ---
 title: Converting an FDF to XML format
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/converting-an-fdf-to-xml-format/
 description: This section explains how you can convert an FDF to XML format with FormDataConverter Class.

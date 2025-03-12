@@ -2,6 +2,8 @@
 title: Add, Delete and Get Annotation
 linktitle: Add, Delete and Get Annotation
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/add-delete-and-get-annotation/
 description: With Aspose.PDF for .NET you may add, delete and get annotation from your PDF file. Check all lists of annotations to resolve your task.

@@ -5,10 +5,14 @@ type: docs
 weight: 90
 url: /java/add-watermarks/
 description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add watermarks to PDF documents using the Aspose.PDF for Java library
+Abstract: The article discusses how to add watermarks to PDF documents using the Aspose.PDF for Java library, focusing on the concept of artifacts as defined in the PDF specification. It introduces two key classes for handling artifacts - `Artifact` and `ArtifactCollection`. The `Page` class has an `Artifacts` property, which is used to access all artifacts on a specific page. The article details various properties of the `Artifact` class, such as `Type`, `Subtype`, `Contents`, `Form`, `Image`, `Text`, `Rectangle`, `Rotation`, and `Opacity`, each providing different functionalities and characteristics of an artifact. The article highlights that watermarks created with Adobe Acrobat are classified as artifacts with the type `Pagination` and subtype `Watermark`. Additionally, a code example is provided, illustrating how to retrieve and manipulate watermarks on the first page of a PDF using Java. 
+SoftwareApplication: java
 ---
 
 **Aspose.PDF for Java** allows adding watermarks to your PDF document using Artifacts. Please check this article to resolve your task.

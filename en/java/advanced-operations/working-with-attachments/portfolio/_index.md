@@ -5,10 +5,14 @@ type: docs
 weight: 40
 url: /java/portfolio/
 description: How to Create a PDF Portfolio with Java. You should use a Microsoft Excel File, a Word document, and an image file to create a PDF Portfolio.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Working with Portfolio in PDF documents using Aspose.PDF for Java
+Abstract: This article provides a comprehensive overview of the PDF Portfolio file format and demonstrates how to create, extract, and remove files from a PDF Portfolio using Aspose.PDF for Java. A PDF Portfolio is a type of PDF file that can contain multiple files of different formats, such as Word documents, Excel spreadsheets, and images, while preserving each file’s original format. Users can easily manage these files as if they were in a folder, and apply security features like watermarks and passwords. The article explains the process of creating a PDF Portfolio by using the Aspose.PDF library's `Document` and `FileSpecification` classes to add various files to a portfolio and save it as a PDF. It includes a Java code snippet demonstrating how to create a portfolio with an Excel file, a Word document, and an image. Additionally, the article details how to extract files from an existing PDF Portfolio by iterating through embedded files and saving them individually. The provided code snippet illustrates the extraction process using the `Document
+SoftwareApplication: java
 ---
 
 First, let's figure out **What is a PDF Portfolio file format?**

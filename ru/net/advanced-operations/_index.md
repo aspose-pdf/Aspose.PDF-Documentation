@@ -1,11 +1,13 @@
 ---
-title: Продвинутые операции
-linktitle: Продвинутые операции
+title: Расширенные операции
+linktitle: Расширенные операции
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /ru/net/advanced-operations/
-description: Aspose.PDF способен выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков.
-lastmod: "2022-02-17"
+description: Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для продвинутых пользователей и разработчиков.
+lastmod: "2024-10-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Продвинутые операции",
-    "alternativeHeadline": "Использование продвинутых функций в работе с PDF",
+    "headline": "Advanced operations",
+    "alternativeHeadline": "Unlock Complex PDF Manipulation with New Features in C#",
+    "abstract": "Откройте для себя мощные возможности Aspose.PDF для сложных операций в .NET, предназначенных как для начинающих, так и для опытных разработчиков. Эта функция позволяет выполнять сложные манипуляции с PDF-файлами: от сжатия и объединения документов до сложных текстовых поисков и управления формами, при этом обеспечивая беспроблемную интеграцию с различными источниками PDF, такими как Adobe Acrobat и Microsoft Office. Откройте новый уровень эффективности в работе с документами и их обработке с помощью этого универсального набора инструментов",
     "author": {
         "@type": "Person",
-        "name": "Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, продвинутые операции в pdf, создание pdf, удаление pdf, манипуляции с pdf",
-    "wordcount": "302",
-    "proficiencyLevel": "Начинающий",
+    "genre": "pdf document generation",
+    "wordcount": "521",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,32 +73,98 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/advanced-operations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF способен выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
 }
 </script>
-**Расширенные операции** — это раздел о том, как программно работать с существующими PDF-файлами, будь то документы, созданные с помощью Aspose.PDF, как обсуждалось в [Основные операции](/pdf/ru/net/basic-operations/), или PDF-файлы, созданные с помощью Adobe Acrobat, Google Docs, Microsoft Office, Open Office или любым другим PDF-продюсером.
 
-Вы узнаете различные способы:
+**Расширенные операции** — это раздел о том, как программно работать с существующими PDF-файлами, будь то документы, созданные с помощью Aspose.PDF, как обсуждалось в разделе [«Основные операции» (/pdf/ru/net/basic-operations/)], или PDF-файлы, созданные в Adobe Acrobat, Google Docs, Microsoft Office, Open Office или любом другом средстве создания PDF-файлов.
 
-- [Работа с документами](/pdf/ru/net/working-with-documents/) - сжатие, разделение и объединение документов и выполнение других операций с полным документом
-- [Работа со страницами](/pdf/ru/net/working-with-pages/) - добавление, перемещение или удаление, обрезка страниц, добавление водяных знаков, штампов
-- [Работа с текстом](/pdf/ru/net/working-with-text/) - добавление, форматирование, поиск и замена текста в PDF
-- [Работа с изображениями](/pdf/ru/net/working-with-images/) - вставка, удаление, извлечение изображения в документе
-- [Работа с таблицами](/pdf/ru/net/working-with-tables/) - вставка, декорирование таблицы в PDF, извлечение табличных данных
-- [Работа с формами](/pdf/ru/net/working-with-forms/) - работа с интерактивными PDF-документами, добавление форм, извлечение данных
-- [Работа с формами](/pdf/ru/net/working-with-forms/) - взаимодействие с PDF документами, добавление полей форм, извлечение данных
-- [Работа с графикой](/pdf/ru/net/graphs/) - манипулирование формами на странице
-- [Работа с XML](/pdf/ru/net/working-with-xml) - создание PDF документов на основе структуры XML
-- [Сравнение PDF документов](/pdf/ru/net/compare-pdf-documents/) - возможность сравнения содержимого PDF документов
-- [Навигация и взаимодействие](/pdf/ru/net/navigation-and-interaction/) - работа с действиями, закладками, навигация по страницам
-- [Аннотации](/pdf/ru/net/annotations/) - Аннотации позволяют пользователям добавлять пользовательский контент на страницы PDF. Вы можете добавлять, удалять и модифицировать аннотации в PDF документах.
-- [Артефакты](/pdf/ru/net/artifacts/) - работа с водяными знаками и другими специальными объектами в PDF
-- [Доступность. Маркированный PDF](/pdf/ru/net/accessibility-tagged-pdf/) - Маркировка необходима для доступности PDF. Aspose.PDF позволяет добавлять метки в PDF и устанавливать логический порядок чтения и указывать структуру и тип.
-- [Вложения](/pdf/ru/net/attachments/) - Документы PDF могут содержать файловые вложения.
-- [Вложения](/pdf/ru/net/attachments/) - PDF документы могут содержать файловые вложения.
-- [Метаданные в PDF](/pdf/ru/net/pdf-file-metadata/) - получение или установка метаданных в документах, работа с данными XMP.
-- [Защита и Подпись](/pdf/ru/net/securing-and-signing/) - защитите и подпишите ваш PDF документ программно.
-- [Печать документа](/pdf/ru/net/printing-document/) - печать PDF в различных типах приложений (WinForms, WPF и др.)
-- [Операторы](/pdf/ru/net/operators/) - выполнение низкоуровневых операций в PDF.
+Вы узнаете о различных способах:
 
+- **Работа с документами (/pdf/ru/net/working-with-documents/)** — сжатие, разделение и объединение документов, а также выполнение других операций с целым документом.
+- **Работа со страницами (/pdf/ru/net/working-with-pages/)** — добавление, перемещение или удаление, обрезка страниц, добавление водяных знаков, штампов.
+- **Работа с текстом (/pdf/ru/net/working-with-text/)** — добавление, форматирование, поиск и замена текста в PDF.
+- **Работа с изображениями (/pdf/ru/net/working-with-images/)** — вставка, удаление, извлечение изображений в документе.
+- **Работа с таблицами (/pdf/ru/net/working-with-tables/)** — вставка, оформление таблиц в PDF, извлечение табличных данных.
+- **Работа с формами (/pdf/ru/net/working-with-forms/)** — работа с интерактивными PDF-документами, добавление полей форм, извлечение данных.
+- **Работа с диаграммами (/pdf/ru/net/working-with-graphs/)** — управление фигурами на странице.
+- **Работа с XML (/pdf/ru/net/working-with-xml)** — создание PDF-документов на основе структуры XML.
+- **Работа с операторами (/pdf/ru/net/working-with-operators/)** — выполнение низкоуровневых операций в PDF.
+- **Работа с векторной графикой (/pdf/ru/net/working-with-vector-graphics)** — описание возможностей работы с GraphicsAbsorber.
+- **Работа с ZUGFeRD (/pdf/ru/net/working-with-zugferd)** — создание PDF-счетов, соответствующих стандарту ZUGFeRD.
+- **Работа с JavaScript (/pdf/ru/net/working-with-javascript)** — добавление, удаление кода JavaScript в PDF.
+- **Сравнение PDF-документов (/pdf/ru/net/compare-pdf-documents/)** — возможность сравнения содержимого PDF-документов.
+- **Навигация и взаимодействие (/pdf/ru/net/navigation-and-interaction/)** — работа с действиями, закладками, навигация по страницам.
+- **PDF AI Copilot (/pdf/ru/net/ai-copilot/)** — позволяет обрабатывать PDF-документы с помощью LLM от разных поставщиков.
+- **Аннотации (/pdf/ru/net/annotations/)** — аннотации позволяют пользователям добавлять пользовательский контент на страницы PDF. Вы можете добавлять, удалять и изменять аннотации в PDF-документах.
+- **Артефакты (/pdf/ru/net/artifacts/)** — работа с водяными знаками и другими специальными объектами в PDF.
+- **Доступность. Tagged PDF (/pdf/ru/net/accessibility-tagged-pdf/)** — тегирование имеет важное значение для доступности PDF. Aspose.PDF позволяет добавлять теги в PDF и устанавливать логический порядок чтения, а также предоставлять средства для обозначения структуры и типа.
+- **Вложения (/pdf/ru/net/attachments/)** — PDF-документы могут содержать вложения файлов. Этими вложениями могут быть другие PDF-документы или файлы любого типа, например аудиофайлы, документы Microsoft Office и т. д. Вы узнаете, как добавлять вложения в PDF, получать информацию о вложении и сохранять её в файл, программно удалять вложение из PDF с помощью C#.
+- **Метаданные в PDF (/pdf/ru/net/pdf-file-metadata/)** — получение или установка метаданных в документах, работа с данными XMP.
+- **Защита и подписание (/pdf/ru/net/securing-and-signing/)** — программная защита и подписание вашего PDF-документа.
+- **Печать документа (/pdf/ru/net/printing-document/)** — печать PDF-файлов в различных типах приложений (WinForms, WPF и т.д.).
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

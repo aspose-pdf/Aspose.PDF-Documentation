@@ -1,32 +1,35 @@
 ---
-title: العمل مع الرسومات المتجهة
-linktitle: العمل مع الرسومات المتجهة
+title: العمل مع الرسوميات المتجهة
+linktitle: العمل مع الرسوميات المتجهة
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /ar/net/working-with-vector-graphics/
-description: يصف هذا المقال ميزات العمل مع أداة GraphicsAbsorber باستخدام C#.
+description: تصف هذه المقالة ميزات العمل مع أداة GraphicsAbsorber باستخدام C#.
 lastmod: "2024-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع GraphicsAbsorber",
-    "alternativeHeadline": "كيفية الحصول على موقع صورة في ملف PDF",
+    "headline": "Working with Vector Graphics in PDF",
+    "alternativeHeadline": "Programmatically manipulate PDF vector graphics",
+    "abstract": "التلاعب بالرسوميات المتجهة في مستندات PDF باستخدام فئة GraphicsAbsorber الجديدة. تتيح مكتبة C# Aspose.PDF for .NET التحكم الدقيق في العناصر الرسومية، مما يمكّن من القيام بإجراءات مثل التحريك، الإزالة، والإضافة لتعزيز المظهر البصري لملفات PDF. توفر الأداة طرق تلاعب فردية وجماعية لأداء مثالي.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, GraphicsAbsorber في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "GraphicsAbsorber, Vector Graphics, PDF Manipulation, C# library, Aspose.PDF, Move Graphics, Remove Graphics, Add Graphics, PDF Vector Graphics",
+    "wordcount": "967",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,195 +71,306 @@ lastmod: "2024-02-17"
         "@type": "WebPage",
         "@id": "/net/working-with-vector-graphics/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يصف هذا القسم ميزات العمل مع ملف PDF GraphicsAbsorber باستخدام مكتبة C#."
+    "dateModified": "2024-11-26",
+    "description": "تصف هذه القسم ميزات العمل مع ملف PDF باستخدام مكتبة GraphicsAbsorber C#."
 }
 </script>
 
-في هذا الفصل، سنستكشف كيفية استخدام فئة `GraphicsAbsorber` القوية للتفاعل مع الرسومات المتجهة ضمن مستندات PDF. سواء كنت بحاجة إلى نقل، إزالة، أو إضافة رسومات، سيوضح لك هذا الدليل كيفية أداء هذه المهام بفعالية. لنبدأ!
+في هذا الفصل، سنستكشف كيفية استخدام فئة `GraphicsAbsorber` القوية للتفاعل مع الرسوميات المتجهة داخل مستندات PDF. سواء كنت بحاجة إلى تحريك، إزالة، أو إضافة الرسوميات، ستظهر لك هذه الدليل كيفية أداء هذه المهام بفعالية. لنبدأ!
 
-## مقدمة<a name="introduction"></a>
+## المقدمة<a name="introduction"></a>
 
-الرسومات المتجهة هي مكون حاسم في العديد من مستندات PDF، تستخدم لتمثيل الصور، الأشكال، وعناصر رسومية أخرى. يوفر Aspose.PDF فئة `GraphicsAbsorber`، التي تتيح للمطورين الوصول إلى هذه الرسومات والتلاعب بها برمجيًا. من خلال استخدام طريقة `Visit` الخاصة بـ `GraphicsAbsorber`، يمكنك استخراج الرسومات المتجهة من صفحة محددة وأداء عمليات مختلفة، مثل النقل، الإزالة، أو نسخها إلى صفحات أخرى.
+تعتبر الرسوميات المتجهة مكونًا حيويًا في العديد من مستندات PDF، تُستخدم لتمثيل الصور، الأشكال، وعناصر رسومية أخرى. توفر Aspose.PDF فئة `GraphicsAbsorber`، التي تتيح للمطورين الوصول برمجيًا إلى هذه الرسوميات والتلاعب بها. من خلال استخدام طريقة `Visit` لفئة `GraphicsAbsorber`، يمكنك استخراج الرسوميات المتجهة من صفحة محددة وأداء عمليات مختلفة، مثل التحريك، الإزالة، أو نسخها إلى صفحات أخرى.
 
-## 1. استخراج الرسومات مع `GraphicsAbsorber`<a name="extracting-graphics"></a>
+## 1. استخراج الرسوميات باستخدام `GraphicsAbsorber`<a name="extracting-graphics"></a>
 
-الخطوة الأولى في العمل مع الرسومات المتجهة هي استخراجها من مستند PDF. إليك كيف يمكنك القيام بذلك باستخدام فئة `GraphicsAbsorber`:
+الخطوة الأولى في العمل مع الرسوميات المتجهة هي استخراجها من مستند PDF. إليك كيفية القيام بذلك باستخدام فئة `GraphicsAbsorber`:
 
 ```csharp
-public static void UsingGraphicsAbsorber()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UsingGraphicsAbsorber()
 {
-    // الخطوة 1: إنشاء كائن Document.
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // الخطوة 2: إنشاء نموذج لـ GraphicsAbsorber.
-    var graphicsAbsorber = new GraphicsAbsorber();
-
-    // اختيار الصفحة الأولى من المستند.
-    var page = document.Pages[1];
-
-    // الخطوة 3: استخدام طريقة `Visit` لاستخراج الرسومات من الصفحة.
-    graphicsAbsorber.Visit(page);
-
-    // عرض معلومات حول العناصر المستخرجة.
-    foreach (var element in graphicsAbsorber.Elements)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Document-01.pdf"))
     {
-        Console.WriteLine($"رقم الصفحة: {element.SourcePage.Number}");
-        Console.WriteLine($"الموقع: ({element.Position.X}, {element.Position.Y})");
-        Console.WriteLine($"عدد المشغلين: {element.Operators.Count}");
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Select the first page of the document
+            var page = document.Pages[1];
+
+            // Use the `Visit` method to extract graphics from the page
+            graphicsAbsorber.Visit(page);
+
+            // Display information about the extracted elements
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                Console.WriteLine($"Page Number: {element.SourcePage.Number}");
+                Console.WriteLine($"Position: ({element.Position.X}, {element.Position.Y})");
+                Console.WriteLine($"Number of Operators: {element.Operators.Count}");
+            }
+        }
+    }
+}
+
+```
+
+### الشرح:
+
+1. **إنشاء كائن مستند**: يتم إنشاء كائن `Document` جديد مع مسار ملف PDF المستهدف.
+2. **إنشاء مثيل من `GraphicsAbsorber`**: تلتقط هذه الفئة جميع العناصر الرسومية من صفحة محددة.
+3. **طريقة الزيارة**: يتم استدعاء طريقة `Visit` على الصفحة الأولى، مما يسمح لـ `GraphicsAbsorber` بامتصاص الرسوميات المتجهة.
+4. **التكرار عبر العناصر المستخرجة**: يقوم الكود بالتكرار عبر كل عنصر مستخرج، مطبوعًا معلومات مثل رقم الصفحة، الموقع، وعدد مشغلات الرسم المعنية.
+
+## 2. تحريك الرسوميات<a name="moving-graphics"></a>
+
+بمجرد استخراج الرسوميات، يمكنك تحريكها إلى موقع مختلف على نفس الصفحة. إليك كيفية تحقيق ذلك:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MoveGraphics()
+{
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "MoveGraphics.pdf"))
+    {
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the first page of the document
+            var page = document.Pages[1];
+
+            // Use the `Visit` method to extract graphics from the page
+            graphicsAbsorber.Visit(page);
+
+            // Temporarily suspend updates to improve performance
+            graphicsAbsorber.SuppressUpdate();
+
+            // Move graphics by shifting their X and Y coordinates
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                var position = element.Position;
+                element.Position = new Aspose.Pdf.Point(position.X + 150, position.Y - 10);
+            }
+
+            // Resume updates and apply changes
+            graphicsAbsorber.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "MoveGraphics_out.pdf");
+        }
     }
 }
 ```
-### شرح:
 
-1. **إنشاء كائن مستند**: يتم إنشاء كائن `Document` جديد بمسار ملف PDF المستهدف.
-2. **إنشاء نموذج `GraphicsAbsorber`**: تلتقط هذه الفئة جميع عناصر الرسومات من صفحة محددة.
-3. **طريقة الزيارة**: يتم استدعاء طريقة `Visit` على الصفحة الأولى، مما يسمح لـ `GraphicsAbsorber` بامتصاص الرسومات المتجهة.
-4. **تكرار من خلال العناصر المستخرجة**: يقوم الكود بتكرار كل عنصر مستخرج، طباعة معلومات مثل رقم الصفحة، الموقع، وعدد عمليات الرسم المعنية.
-
-## 2. تحريك الرسومات<a name="moving-graphics"></a>
-
-بمجرد استخراج الرسومات، يمكنك نقلها إلى موقع مختلف على نفس الصفحة. إليك كيف يمكنك تحقيق ذلك:
-
-```csharp
-public static void MoveGraphics()
-{
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page = document.Pages[1];
-    graphicsAbsorber.Visit(page);
-
-    // تعليق التحديثات مؤقتًا لتحسين الأداء.
-    graphicsAbsorber.SuppressUpdate();
-
-    foreach (var element in graphicsAbsorber.Elements)
-    {
-        var position = element.Position;
-        // نقل الرسومات بتحريك إحداثيات X و Y.
-        element.Position = new Point(position.X + 150, position.Y - 10);
-    }
-
-    // استئناف التحديثات وتطبيق التغييرات.
-    graphicsAbsorber.ResumeUpdate();
-    document.Save("test.pdf");
-}
-```
 ### النقاط الرئيسية:
 
-- **SuppressUpdate**: هذه الطريقة توقف التحديثات مؤقتًا لتحسين الأداء عند إجراء تغييرات متعددة.
-- **ResumeUpdate**: هذه الطريقة تستأنف التحديثات وتطبق التغييرات المدخلة على مواقع الرسومات.
-- **تحديد موقع العنصر**: يتم ضبط موقع كل رسم بتغيير إحداثيات `X` و `Y`.
+- **SuppressUpdate**: هذه الطريقة توقف مؤقتًا التحديثات لتحسين الأداء عند إجراء تغييرات متعددة.
+- **ResumeUpdate**: هذه الطريقة تستأنف التحديثات وتطبق التغييرات التي تم إجراؤها على مواقع الرسوميات.
+- **تحديد موقع العنصر**: يتم تعديل موقع كل رسم من خلال تغيير إحداثياته `X` و `Y`.
 
-## 3. إزالة الرسومات<a name="removing-graphics"></a>
+## 3. إزالة الرسوميات<a name="removing-graphics"></a>
 
-هناك سيناريوهات قد ترغب فيها بإزالة رسومات معينة من صفحة. يوفر Aspose.PDF طريقتين لتحقيق ذلك:
+هناك سيناريوهات قد ترغب فيها في إزالة رسوميات معينة من صفحة. تقدم Aspose.PDF طريقتين لتحقيق ذلك:
 
 ### الطريقة 1: باستخدام حدود المستطيل
 
 ```csharp
-public static void RemoveGraphicsMethod1()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveGraphicsMethod1()
 {
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page = document.Pages[1];
-    graphicsAbsorber.Visit(page);
-    var rectangle = new Rectangle(70, 248, 170, 252);
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    graphicsAbsorber.SuppressUpdate();
-    foreach (var element in graphicsAbsorber.Elements)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphics.pdf"))
     {
-        // تحقق إذا كان موقع الرسم ضمن المستطيل.
-        if (rectangle.Contains(element.Position))
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
-            element.Remove(); // إزالة عنصر الرسم.
+            // Get the first page of the document
+            var page = document.Pages[1];
+
+            // Extract graphic elements from the page
+            graphicsAbsorber.Visit(page);
+
+            // Define the rectangle within which graphics will be removed
+            var rectangle = new Aspose.Pdf.Rectangle(70, 248, 170, 252);
+
+            // Temporarily suppress updates for better performance
+            graphicsAbsorber.SuppressUpdate();
+
+            // Iterate through the extracted graphic elements and remove those inside the rectangle
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                if (rectangle.Contains(element.Position))
+                {
+                    element.Remove(); // Remove the graphic element
+                }
+            }
+
+            // Resume updates and apply changes
+            graphicsAbsorber.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "RemoveGraphics_out.pdf");
         }
     }
-    graphicsAbsorber.ResumeUpdate();
-    document.Save("test.pdf");
 }
 ```
-### الطريقة 2: استخدام مجموعة من العناصر المحذوفة
+
+### الطريقة 2: باستخدام مجموعة من العناصر المزالة
 
 ```csharp
-public static void RemoveGraphicsMethod2()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveGraphicsMethod2()
 {
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page = document.Pages[1];
-    var rectangle = new Rectangle(70, 248, 170, 252);
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    graphicsAbsorber.Visit(page);
-    var removedElementsCollection = new GraphicElementCollection();
-    foreach (var item in graphicsAbsorber.Elements.Where(el => rectangle.Contains(el.Position)))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphics.pdf"))
     {
-        removedElementsCollection.Add(item);
-    }
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the first page of the document
+            var page = document.Pages[1];
 
-    page.Contents.SuppressUpdate();
-    page.DeleteGraphics(removedElementsCollection);
-    page.Contents.ResumeUpdate();
-    document.Save("test.pdf");
+            // Define the rectangle within which graphics will be removed
+            var rectangle = new Aspose.Pdf.Rectangle(70, 248, 170, 252);
+
+            // Extract graphic elements from the page
+            graphicsAbsorber.Visit(page);
+
+            // Create a collection to store the removed elements
+            var removedElementsCollection = new Aspose.Pdf.Vector.GraphicElementCollection();
+
+            // Iterate through the extracted elements and add those inside the rectangle to the collection
+            foreach (var item in graphicsAbsorber.Elements.Where(el => rectangle.Contains(el.Position)))
+            {
+                removedElementsCollection.Add(item);
+            }
+
+            // Temporarily suppress updates for better performance
+            page.Contents.SuppressUpdate();
+
+            // Delete the graphics elements from the page
+            page.DeleteGraphics(removedElementsCollection);
+
+            // Resume updates and apply changes
+            page.Contents.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "RemoveGraphics_out.pdf");
+        }
+    }
 }
 ```
 
-### شرح:
+### الشرح:
 
-- **حدود المستطيل**: تحديد منطقة مستطيلة لتحديد الرسومات التي سيتم إزالتها.
-- **تعليق واستئناف التحديثات**: ضمان إزالة فعالة دون تقديم متوسط.
+- **حدود المستطيل**: تحديد منطقة مستطيلة لتحديد الرسوميات التي يجب إزالتها.
+- **إيقاف واستئناف التحديثات**: ضمان إزالة فعالة دون عرض وسيط.
 
-## 4. إضافة الرسومات إلى صفحة أخرى<a name="adding-graphics"></a>
+## 4. إضافة الرسوميات إلى صفحة أخرى<a name="adding-graphics"></a>
 
-يمكن إضافة الرسومات الممتصة من صفحة إلى صفحة أخرى ضمن نفس المستند.
-يمكن إضافة الرسومات الممتصة من صفحة إلى صفحة أخرى ضمن نفس المستند.
+يمكن إضافة الرسوميات الممتصة من صفحة واحدة إلى صفحة أخرى داخل نفس المستند. إليك طريقتين لتحقيق ذلك:
 
-### الطريقة 1: إضافة الرسومات بشكل فردي
+### الطريقة 1: إضافة الرسوميات بشكل فردي
 
 ```csharp
-public static void AddToAnotherPageMethod1()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddToAnotherPageMethod1()
 {
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page1 = document.Pages[1];
-    var page2 = document.Pages[2];
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    graphicsAbsorber.Visit(page1);
-    page2.Contents.SuppressUpdate();
-    foreach (var element in graphicsAbsorber.Elements)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))
     {
-        element.AddOnPage(page2); // أضف كل عنصر رسومي إلى الصفحة الثانية.
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the pages from the document
+            var page1 = document.Pages[1];
+            var page2 = document.Pages[2];
+
+            // Extract graphics from the first page
+            graphicsAbsorber.Visit(page1);
+
+            // Temporarily suppress updates for better performance
+            page2.Contents.SuppressUpdate();
+
+            // Add each graphic element to the second page
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                element.AddOnPage(page2); // Add each graphic element to the second page
+            }
+
+            // Resume updates and apply changes
+            page2.Contents.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "AddToAnotherPage_out.pdf");
+        }
     }
-    page2.Contents.ResumeUpdate();
-    document.Save("test.pdf");
 }
 ```
 
-### الطريقة 2: إضافة الرسومات كمجموعة
+### الطريقة 2: إضافة الرسوميات كمجموعة
 
 ```csharp
-public static void AddToAnotherPageMethod2()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddToAnotherPageMethod2()
 {
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page1 = document.Pages[1];
-    var page2 = document.Pages[2];
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    graphicsAbsorber.Visit(page1);
-    page2.Contents.SuppressUpdate();
-    page2.AddGraphics(graphicsAbsorber.Elements); // أضف جميع الرسومات دفعة واحدة.
-    page2.Contents.ResumeUpdate();
-    document.Save("test.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))
+    {
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the pages from the document
+            var page1 = document.Pages[1];
+            var page2 = document.Pages[2];
+
+            // Extract graphics from the first page
+            graphicsAbsorber.Visit(page1);
+
+            // Temporarily suppress updates for better performance
+            page2.Contents.SuppressUpdate();
+
+            // Add all graphics elements to the second page at once
+            page2.AddGraphics(graphicsAbsorber.Elements);
+
+            // Resume updates and apply changes
+            page2.Contents.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "AddToAnotherPage_out.pdf");
+        }
+    }
 }
 ```
+
 ### النقاط الرئيسية:
 
 - **SuppressUpdate و ResumeUpdate**: تساعد هذه الطرق في الحفاظ على الأداء أثناء إجراء تغييرات جماعية.
 - **AddOnPage مقابل AddGraphics**: استخدم `AddOnPage` للإضافات الفردية و `AddGraphics` للإضافات الجماعية.
 
-## الختام
+## الخاتمة
 
-في هذا الفصل، استكشفنا كيفية استخدام فئة `GraphicsAbsorber` لاستخراج الرسومات البيانية ونقلها وإزالتها وإضافتها ضمن مستندات PDF باستخدام Aspose.PDF. من خلال إتقان هذه التقنيات، يمكنك تعزيز العرض المرئي لملفات PDF الخاصة بك وإنشاء مستندات جذابة بصريًا وديناميكية.
+في هذا الفصل، استكشفنا كيفية استخدام فئة `GraphicsAbsorber` لاستخراج، تحريك، إزالة، وإضافة الرسوميات المتجهة داخل مستندات PDF باستخدام Aspose.PDF. من خلال إتقان هذه التقنيات، يمكنك تعزيز العرض البصري لملفات PDF الخاصة بك بشكل كبير وإنشاء مستندات ديناميكية وجذابة بصريًا.
 
-لا تتردد في تجربة أمثلة الكود وتكييفها مع حالات الاستخدام الخاصة بك. تحية طيبة في البرمجة!
+لا تتردد في تجربة أمثلة الكود وتكييفها مع حالات الاستخدام الخاصة بك. برمجة سعيدة!
 
 <script type="application/ld+json">
 {
@@ -321,5 +435,3 @@ public static void AddToAnotherPageMethod2()
     }
 }
 </script>
-
-

@@ -5,10 +5,14 @@ type: docs
 weight: 20
 url: /java/xfa-forms/
 description: Explore how to handle XFA forms in PDF documents, including form data processing and conversion, with Aspose.PDF in Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Overview of XML Forms Architecture and its application in PDF forms
+Abstract: This article provides an overview of XML Forms Architecture (XFA) and its application in PDF forms, specifically focusing on the conversion of dynamic XFA forms to standard AcroForms. XFA, introduced in 1999, is a proprietary XML specification used for web forms and later adapted for PDFs. PDF documents support two types of forms - AcroForms, introduced in PDF 1.2, and XFA forms, included as an optional feature in PDF 1.5. Unlike AcroForms, XFA forms generate content at runtime, complicating content extraction and manipulation. The article discusses a solution using Aspose.PDF, a tool that allows developers to convert XFA forms into AcroForms, which are more static and standardized. The conversion process is illustrated with a Java code snippet that demonstrates loading a dynamic XFA form, setting the form type to AcroForm, and saving the transformed document.
+SoftwareApplication: java   
 ---
 
 XFA stands for XML Forms Architecture. It's a set of proprietary XML specifications built originally for use with web forms in 1999, and has since become available for PDF.

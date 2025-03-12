@@ -1,6 +1,8 @@
 ---
 title: Working with Signature in PDF File
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/working-with-signature-in-a-pdf-file/
 description: This section explains how to to extract signature information, extract image from signature, change language, and etc using PdfFileSignature class.

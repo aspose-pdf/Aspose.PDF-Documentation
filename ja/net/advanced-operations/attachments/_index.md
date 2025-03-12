@@ -1,10 +1,12 @@
 ---
-title: PDFでの添付ファイルの操作
+title: PDFの添付ファイルの操作
 linktitle: 添付ファイルの操作
 type: docs
-weight: 130
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 190
 url: /ja/net/attachments/
-description: C# PDF APIを使用して、アプリケーション内からPDFファイルのアクセス、追加、および削除を行う方法。C#のコードサンプル付き完全ガイド。
+description: C# PDF APIを使用して、アプリケーション内からPDFファイルの添付ファイルにアクセスし、追加および削除する方法を説明します。C#コードサンプルを含む完全なガイドです。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFでの添付ファイルの操作",
-    "alternativeHeadline": "PDFファイルの添付ファイル",
+    "headline": "Working with Attachments in PDF",
+    "alternativeHeadline": "Effortlessly Manage PDF Attachments with C#",
+    "abstract": "強力なC# PDF APIを使用して、PDFファイル内の添付ファイルを効率的に管理する方法を発見してください。この機能により、開発者はPDFに添付されたさまざまなファイルタイプにアクセスし、追加および削除することができ、アプリケーションへのシームレスな統合のための詳細なC#コードサンプルが含まれています。この包括的なガイドを活用して、PDF操作機能を向上させましょう。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "pdf, c#, pdfの添付ファイル",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "C#, PDF API, attachments in PDF, add attachments, remove attachments, extract attachments, Aspose.PDF for .NET, manipulate PDF documents, save attachment to file, delete attachment from PDF",
+    "wordcount": "181",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,15 +74,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/attachments/"
     },
-    "dateModified": "2022-02-04",
-    "description": "C# PDF APIを使用して、アプリケーション内からPDFファイルのアクセス、追加、および削除を行う方法。C#のコードサンプル付き完全ガイド。"
+    "dateModified": "2024-11-25",
+    "description": "C# PDF APIを使用して、アプリケーション内からPDFファイルの添付ファイルにアクセスし、追加および削除する方法を説明します。C#コードサンプルを含む完全なガイドです。"
 }
 </script>
-このセクションでは、Aspose.PDF for .NETを使用してPDFの添付ファイルを操作する方法について説明します。
-添付ファイルは、親ドキュメントに添付された追加のファイルであり、pdf、word、画像、その他のファイルタイプがあります。
-PDFに添付ファイルを追加する方法、添付ファイルの情報を取得してファイルに保存する方法、プログラムでC#を使用してPDFから添付ファイルを削除する方法を学びます。
 
-- [PDFドキュメントへの添付ファイルの追加](/pdf/ja/net/add-attachment-to-pdf-document/)
+このセクションでは、Aspose.PDF for .NETを使用してPDFの添付ファイルを操作する方法を説明します。
+添付ファイルとは、親文書に添付された追加のファイルであり、pdf、word、画像、またはその他のファイルタイプなど、さまざまなファイルタイプが含まれます。
+PDFに添付ファイルを追加する方法、添付ファイルの情報を取得し、ファイルに保存する方法、C#を使用してプログラム的にPDFから添付ファイルを削除する方法を学びます。
+
+- [PDF文書に添付ファイルを追加する](/pdf/ja/net/add-attachment-to-pdf-document/)
 - [添付ファイルを抽出して保存する](/pdf/ja/net/extract-and-save-an-attachment/)
 - [既存のPDFから添付ファイルを削除する](/pdf/ja/net/removing-attachment-from-an-existing-pdf/)
 - [ポートフォリオ](/pdf/ja/net/portfolio/)
@@ -147,4 +151,3 @@ PDFに添付ファイルを追加する方法、添付ファイルの情報を�
     }
 }
 </script>
-

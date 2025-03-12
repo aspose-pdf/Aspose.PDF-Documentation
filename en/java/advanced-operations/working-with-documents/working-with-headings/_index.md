@@ -3,11 +3,15 @@ title: Working with Headings in PDF
 type: docs
 weight: 70
 url: /java/working-with-headings/
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 description: Create numbering in heading your PDF document with Java. Aspose.PDF for Java offers different kinds of numbering styles.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Manipulate Headings in PDF using Aspose.PDF for Java
+Abstract: The article "Apply Numbering Style in Heading" discusses the significance of headings in documents and the importance of organizing them effectively for enhanced clarity and readability. It introduces Aspose.PDF for Java, a tool that provides various pre-defined numbering styles through its `NumberingStyle` enumeration. These styles include `NumeralsArabic`, `NumeralsRomanUppercase`, `NumeralsRomanLowercase`, `LettersUppercase`, and `LettersLowercase`, each offering a different formatting option for document headings. The article further illustrates the application of these styles using Java code, showcasing how to implement them through the `setStyle` property of the `com.aspose.pdf.Heading` class. A practical example is provided, demonstrating how to create a PDF document with numbered headings using the Aspose.PDF library. The example code details the process of setting up a document, adding pages, and applying different numbering styles to headings, culminating in the generation of a PDF file named "ApplyNumberStyle_out.pdf".
+SoftwareApplication: java
 ---
 
 ## Apply Numbering Style in Heading

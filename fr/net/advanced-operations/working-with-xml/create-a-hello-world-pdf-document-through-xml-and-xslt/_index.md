@@ -2,9 +2,11 @@
 title: Création de PDF à partir de XML en utilisant XSLT
 linktitle: Créer un PDF à partir de XML en utilisant XSLT
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /fr/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
-description: La bibliothèque C# offre la possibilité de convertir un fichier XML en document PDF en exigeant que le fichier XML d'entrée suive le schéma Aspose.PDF.
+description: La bibliothèque C# offre la possibilité de convertir un fichier XML en document PDF, nécessitant que le fichier XML d'entrée suive le schéma Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Création de PDF à partir de XML en utilisant XSLT",
-    "alternativeHeadline": "Comment créer un PDF à partir de XML en utilisant XSLT",
+    "headline": "Creating PDF from XML using XSLT",
+    "alternativeHeadline": "Generate PDF from XML using XSLT and C#",
+    "abstract": "Générez des PDF directement à partir de fichiers XML en utilisant XSLT et une bibliothèque C#. Cette nouvelle fonctionnalité simplifie la génération de rapports en transformant les données XML existantes en un format compatible PDF. Le processus utilise XSLT pour la transformation et nécessite le respect du schéma Aspose.PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, c#, créer pdf xml, pdf avec xslt",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "wordcount": "323",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,11 +73,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-a-hello-world-pdf-document-through-xml-and-xslt/"
     },
-    "dateModified": "2022-02-04",
-    "description": "La bibliothèque C# offre la possibilité de convertir un fichier XML en document PDF en exigeant que le fichier XML d'entrée suive le schéma Aspose.PDF."
+    "dateModified": "2024-11-26",
+    "description": "La bibliothèque C# offre la possibilité de convertir un fichier XML en document PDF, nécessitant que le fichier XML d'entrée suive le schéma Aspose.PDF."
 }
 </script>
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/fr/net/drawing/) library.
+
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Parfois, vous pouvez avoir des fichiers XML existants contenant des données d'application et vous souhaitez générer un rapport PDF en utilisant ces fichiers. Vous pouvez utiliser XSLT pour transformer votre document XML existant en un document XML compatible avec Aspose.Pdf, puis générer un fichier PDF. Il y a 3 étapes pour générer un PDF en utilisant XML et XSLT.
 
@@ -122,7 +125,48 @@ Veuillez suivre ces étapes pour convertir un fichier XML en un document PDF en 
 </xsl:stylesheet>
 ```
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Working-Document-HelloWorldPDFUsingXmlAndXslt-HelloWorldPDFUsingXmlAndXslt.cs" >}}
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        //Bind XML and XSLT files to the document
+        document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+        // Save PDF document
+        document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML and XSLT files to the document
+    document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+    // Save PDF document
+    document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -175,7 +219,7 @@ Veuillez suivre ces étapes pour convertir un fichier XML en un document PDF en 
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -187,44 +231,3 @@ Veuillez suivre ces étapes pour convertir un fichier XML en un document PDF en 
     }
 }
 </script>
-```
-
----
-id: docker
-title: Docker
-sidebar_label: Docker
-slug: /docker
----
-
-Docker est un outil conçu pour faciliter la création, le déploiement et l'exécution d'applications en utilisant des conteneurs. Les conteneurs permettent à un développeur de regrouper une application avec toutes les parties dont elle a besoin, telles que des bibliothèques et d'autres dépendances, et de les expédier toutes sous forme d'un seul paquet.
-
-## Introduction
-
-Docker est une plateforme logicielle qui vous permet de créer, tester et déployer des applications rapidement. Docker regroupe le logiciel avec toutes ses bibliothèques et dépendances dans un conteneur, et ce conteneur peut être déployé sur n'importe quel hôte Docker.
-
-## Avantages de Docker
-
-- **Portabilité**: Les conteneurs Docker peuvent s'exécuter sur n'importe quelle machine qui prend en charge Docker sans aucune modification.
-- **Isolation**: Chaque conteneur s'exécute dans son propre environnement, ce qui permet une meilleure gestion des dépendances et des versions.
-- **Efficacité**: Docker utilise moins de ressources système que les machines virtuelles, ce qui permet une utilisation plus efficace des ressources système.
-
-## Concepts clés
-
-- **Image**: Une image Docker est un modèle en lecture seule avec les instructions pour créer un conteneur Docker. Souvent, une image est basée sur une autre image, avec quelques personnalisations supplémentaires.
-- **Conteneur**: Un conteneur est une instance en cours d'exécution d'une image Docker. Un conteneur est le processus en cours d'exécution et l'environnement isolé dans lequel il s'exécute.
-- **Dockerfile**: Un Dockerfile est un fichier texte qui contient toutes les commandes qu'un utilisateur pourrait appeler sur la ligne de commande pour assembler une image.
-
-## Commandes Docker de base
-
-Voici quelques commandes Docker de base pour vous aider à démarrer:
-
-- `docker build`: Cette commande construit une image à partir d'un Dockerfile et d'un contexte.
-- `docker run`: Cette commande exécute un conteneur à partir d'une image Docker.
-- `docker pull`: Cette commande télécharge une image depuis un registre Docker.
-- `docker push`: Cette commande pousse une image vers un registre Docker.
-- `docker ps`: Cette commande liste les conteneurs Docker en cours d'exécution.
-
-## Conclusion
-
-Docker est un outil puissant qui peut grandement simplifier le processus de développement, de déploiement et d'exécution des applications. En utilisant des conteneurs, les développeurs peuvent s'assurer que leurs applications fonctionneront de manière cohérente, quel que soit l'environnement dans lequel elles sont déployées.
-```

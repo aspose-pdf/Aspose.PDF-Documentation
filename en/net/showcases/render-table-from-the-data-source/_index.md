@@ -2,6 +2,8 @@
 title: Render table from the data source
 linktitle: Render table from the data source
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/render-table-from-the-data-source/
 description: This page explain how possible render table from the data source using Aspose.PDf library.

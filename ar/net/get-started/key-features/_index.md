@@ -2,153 +2,488 @@
 title: الميزات الرئيسية لـ Aspose.PDF
 linktitle: الميزات الرئيسية
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /ar/net/key-features/
-description: Aspose.PDF لـ .NET يعرض الميزات العامة. يُظهر الإصدارات المدعومة من PDF، وجميع التلاعبات التي يمكننا القيام بها مع PDF.
+description: Aspose.PDF for .NET توضح ميزاتها العامة. تظهر الإصدارات المدعومة من PDF، وجميع التعديلات التي يمكننا القيام بها مع PDF.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Key Features of Aspose.PDF for .NET",
+    "alternativeHeadline": "Comprehensive PDF Manipulation with Aspose.PDF for .NET",
+    "abstract": "تقدم Aspose.PDF for .NET قدرات قوية لتلاعب الوثائق، مما يمكّن المستخدمين من تعديل وتحويل وتأمين ملفات PDF بسلاسة عبر منصات مختلفة. يدعم معايير PDF متعددة ونموذج كائن الوثيقة (DOM) الشامل، مما يسمح بإدارة المحتوى بشكل شامل، بما في ذلك استخراج النصوص، والتعليقات، ومعالجة النماذج، مما يجعله أداة أساسية للمطورين والشركات على حد سواء.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "Cross-platform software, Document Object Model, PDF standards, AI capabilities, PDF conversion, Annotations management, Form handling, Security and Signatures, PDF editing features, Supported file formats",
+    "wordcount": "890",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/key-features/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/key-features/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+}
+</script>
+
+## برمجيات متعددة المنصات
+
+يدعم منصات وإصدارات .NET مختلفة. راجع [متطلبات النظام](/pdf/ar/net/system-requirements/) للحصول على التفاصيل.
 
 ## الميزات العامة
 
-- مكتوبة بالكامل بلغة C#، تعمل مع إطار .NET.
-- يتطلب بيئة .NET.
-- يدعم تطبيقات Windows Forms و ASP.NET.
-- مرجع API بتنسيق HTML ومساعدة Microsoft.
-- إطارات .NET المدعومة (2.0، 3.5، 4.0، 4.0_ClientProfile، 4.5.0، 4.5.1، 4.6.0، 4.6.2، 4.7، 4.7.2).
-- .NET Standard 2.0 (.NET Core 2.0/2.1)
-- نظام تشغيل 32 بت
-- نظام تشغيل 64 بت
+يوفر Aspose.PDF نموذج كائن الوثيقة (DOM) قوي لاستكشاف وتعديل جميع أنواع محتوى PDF. يدعم التحميل من وإلى قائمة واسعة من [تنسيقات الملفات](/pdf/ar/net/supported-file-formats/).
 
-## الإصدارات المدعومة من PDF
+## معايير PDF المدعومة
 
-Aspose.PDF لـ .NET يدعم إصدارات PDF 1.2، 1.3، 1.4، 1.5، 1.6 و 1.7.
+- ISO 32000-1 (PDF 1.2، PDF 1.3، PDF 1.4، PDF 1.5، PDF 1.6، PDF 1.7).
+- ISO 32000-2 (PDF 2.0).
+- ISO 19005 (PDF/A)، ISO 15930 (PDF/X)، ISO 24517 (PDF/E)، ISO 14289 (PDF/UA).
 
-## الخطوط
+## قدرات الذكاء الاصطناعي
 
-- 14 خط أساسي.
-- خطوط النوع 1.
-- خطوط TrueType.
-- خطوط النوع 3.
-- خطوط CJK.
-- دعم يونيكود.
+يدعم مزودي الذكاء الاصطناعي المختلفين مع القدرة على تحميل البيانات من مستندات PDF.
 
-## النص
+## الميزات حسب نوع المحتوى
 
-- استخراج النص من الصفحات.
-- البحث عن نص في الصفحات.
-- الحصول على شرائح النص.
-- الحصول على أجزاء النص.
-- البحث في النص باستخدام التعبيرات النمطية.
-- استبدال النص.
-- استبدال النص باستخدام التعبيرات النمطية.
-- استبدال أول حدوث أو حدوث معين لعبارة.
-- إضافة نص في ملف PDF.
-
-## الصور
-
-- إضافة صورة في ملف PDF.
-- حذف الصور.
-- استبدال الصور.
-- استخراج الصور.
-- تحويل PDF إلى JPEG (صفحة معينة أو جميع الصفحات).
-- تحويل PDF إلى TIFF (صفحات فردية أو صورة TIFF واحدة).
-- تحويل PDF إلى PNG (صفحة معينة أو جميع الصفحات).
-- تحويل PDF إلى BMP.
-
-## المرفقات
-
-- إضافة مرفق.
-- الحصول على المرفقات.
-- حذف المرفقات.
-- الحصول على معلومات المرفق.
-
-## الصفحة
-
-- الحصول على عدد الصفحات.
-- الحصول على خصائص الصفحة.
-- دمج ملفات PDF.
-- إدراج صفحة فارغة في ملف PDF.
-- إدراج صفحات PDF.
-- حذف صفحات PDF.
-- تقسيم PDF إلى صفحات فردية.
-- الحصول على صفحة معينة.
-
-## المستند
-
-- الحصول على خصائص عارض المستند.
-- تعيين خصائص عارض المستند.
-- الحصول على خصائص عرض الصفحة.
-- تعيين خصائص عرض الصفحة.
-- الحصول على معلومات ملف PDF.
-- تعيين معلومات ملف PDF.
-- الخطينة (التحسين للويب).
-- خطي (تحسين للويب).
-- التحقق (PDF/A-1a، PDF/A-1b، PDF/A-2a).
-- تعيين بيانات XMP الوصفية.
-- الحصول على بيانات XMP الوصفية.
-- تحويل PDF إلى DOC/DOCX.
-- تحويل PDF إلى HTML.
-- تحويل PDF إلى XPS.
-- تحويل PDF إلى Tex.
-
-## العلامات المرجعية
-
-- إضافة علامات مرجعية.
-- إضافة علامات مرجعية فرعية.
-- حذف العلامات المرجعية.
-- الحصول على العلامات المرجعية.
-- الحصول على العلامات المرجعية الفرعية.
-- تعديل العلامات المرجعية.
-- تعديل العلامات المرجعية الفرعية.
-
-## الشروحات
-
-- إضافة شروحات.
-- الحصول على الشروحات.
-- حذف الشروحات.
-- تعديل الشروحات.
-
-## النماذج
-
-- إضافة حقول.
-- حذف حقول.
-- تعديل حقول.
-- ملء حقول.
-- الحصول على قيم الحقول.
-- الدعم لـ XFA (نماذج مبنية على XML) و AcroForms (النماذج القياسية)
-
-## المشغلات
-
-- إضافة مشغلات في ملف PDF.
-
-## الختم والعلامة المائية
-
-- إضافة ختم نصي.
-- إضافة ختم صوري.
-- إضافة ختم صفحة PDF.
-- إضافة ختم رقم الصفحة.
-- إضافة نص في الرأس.
-- إضافة صورة في الرأس.
-- إضافة نص في التذييل.
-- إضافة صورة في التذييل.
-
-## الروابط والأفعال
-
-- إنشاء رابط تطبيق.
-- إنشاء رابط JavaScript.
-- إزالة فعل فتح المستند.
-- استخراج الروابط.
-- استخراج الروابط.
-
-## الأمان والتوقيعات
-
-- تشفير PDF.
-- فك تشفير PDF.
-- تعديل كلمة المرور.
-
-## متفرقات
-
-الحصول على معلومات إصدار البناء.
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th scope="col" rowspan="8">
+        مستند
+      </th>
+      <td>
+        تعديل خصائص عرض المستند.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تعديل خصائص عرض الصفحة.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تعديل معلومات ملف PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تعديل بيانات التعريف XMP.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        التحسين (التسريع للويب).
+      </td>
+    </tr>
+    <tr>
+      <td>
+        دعم معايير الأرشفة والحفظ طويل الأمد مثل PDF/A-1a، PDF/A-1b، و PDF/A-2a.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تشمل قدرات التحويل PDF إلى DOC/DOCX، PDF إلى HTML، PDF إلى XPS، PDF إلى Tex، والمزيد.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        إصلاح لإصلاح مستندات PDF التالفة.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="8">
+        صفحة
+      </th>
+     <td>
+        الحصول على عدد الصفحات.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        الحصول على خصائص الصفحة.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        الحصول على صفحة معينة.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        إدراج صفحة فارغة في ملف PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        إدراج صفحات PDF كاملة.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        حذف صفحات PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        دمج ملفات PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تقسيم PDF إلى صفحات فردية.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="7">
+        نص
+      </th>
+      <td>
+        استخراج النص من الصفحات.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        استرجاع جزء نصي محدد.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        البحث واستبدال النص من الصفحات.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        البحث واستبدال النص باستخدام التعبيرات العادية.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        استبدال أول أو حدوث معين لعبارة.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        البحث واستبدال فقرات النص.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        إضافة نص في ملف PDF.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="6">
+        خط
+      </th>
+      <td>
+        14 خط أساسي.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        خطوط من النوع 1.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        خطوط TrueType.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        خطوط من النوع 3.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        خطوط CJK.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        دعم Unicode.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="5">
+        صورة
+      </th>
+      <td>
+        إضافة صورة في ملف PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        البحث واستبدال الصور.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        حذف الصور.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        استخراج الصور.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تحويل PDF إلى صورة يتعامل مع صفحة معينة أو جميع الصفحات ويدعم PDF إلى JPEG، PDF إلى TIFF (بما في ذلك صورة TIFF متعددة الصفحات)، PDF إلى PNG، PDF إلى BMP، والمزيد.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="4">
+        تعليقات
+      </th>
+    <td>
+      إضافة تعليقات.
+    </td>
+    </tr>
+    <tr>
+      <td>
+        الحصول على التعليقات.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        حذف التعليقات.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تعديل التعليقات.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="5">
+        نماذج
+      </th>
+      <td>
+        إضافة، حذف وتعديل الحقول.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ملء الحقول.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        الحصول على قيم الحقول.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        استيراد وتصدير قيم الحقول.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        دعم XFA (نماذج قائمة على XML) و AcroForms (نماذج قياسية).
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="7">
+        إشارات مرجعية
+      </th>
+      <td>
+        إضافة إشارات مرجعية.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        إضافة إشارات مرجعية فرعية.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        حذف إشارات مرجعية.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        الحصول على إشارات مرجعية.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        الحصول على إشارات مرجعية فرعية.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تعديل إشارات مرجعية.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تعديل إشارات مرجعية فرعية.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="4">
+        مرفقات
+      </th>
+      <td>
+        إضافة مرفق.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        الحصول على المرفقات.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        حذف المرفقات.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        الحصول على معلومات المرفق.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="2">
+        مشغلون
+      </th>
+      <td>
+        الحصول على مشغلات محتوى الصفحة لاستكشاف تقديم المحتوى على مستوى منخفض.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        إضافة، إزالة وإدراج مشغلات محتوى الصفحة في ملف PDF.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="3">
+        ختم وعلامة مائية
+      </th>
+      <td>
+        إضافة نص، صورة، وختم صفحة PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        إضافة ختم رقم الصفحة.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        إضافة عناصر رأس وتذييل على صفحة PDF. من الممكن إضافة كل من محتوى الصورة والنص.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="4">
+        روابط وإجراءات
+      </th>
+      <td>
+        إنشاء روابط تطبيق، ويب، وJavaScript.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        استخراج الروابط.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        إزالة إجراء فتح المستند.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تطهير مستند PDF من الروابط والإجراءات الضارة المحتملة.
+      </td>
+    </tr>
+    <tr>
+      <th scope="col" rowspan="6">
+        الأمان والتوقيعات
+      </th>
+      <td>
+        تشفير PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        فك تشفير PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        تعديل كلمة المرور.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        توقيع PDF.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        التحقق من التوقيعات.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        دعم PAdES.
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -2,6 +2,8 @@
 title: Merge PDF files using .NET 5 
 linktitle: How to merge PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 75
 url: /net/how-to-concatenate-pdf-files-in-different-ways/
 description: This article explains possible ways to concatenate any number of existing PDF files into a Single PDF file.

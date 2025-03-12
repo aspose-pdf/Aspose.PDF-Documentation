@@ -1,5 +1,5 @@
 ---
-title: Basic operations with PDF by Aspose.PDF for Go via C++ 
+title: Basic operations with PDF with Aspose.PDF for Go via C++ 
 linktitle: Basic operations
 type: docs
 weight: 40

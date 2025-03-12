@@ -1,32 +1,35 @@
 ---
-title: Поддержка изображений DICOM
-linktitle: Поддержка изображений DICOM
+title: Поддержка DICOM-изображений
+linktitle: Поддержка DICOM-изображений
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /ru/net/support-for-dicom-mages/
-description: Этот раздел описывает, как обеспечить поддержку изображений DICOM в файле PDF с использованием библиотеки C#.
+description: В этом разделе описывается, как с помощью библиотеки C# обеспечить поддержку DICOM-изображений в PDF-файле.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Поддержка изображений DICOM",
-    "alternativeHeadline": "Формат изображений DICOM в файле PDF",
+    "headline": "Support for DICOM Images",
+    "alternativeHeadline": "Add DICOM images to PDFs using C# library",
+    "abstract": "Aspose.PDF для .NET теперь интегрирует поддержку изображений DICOM, позволяя легко встраивать медицинские изображения в документы PDF. Эта новая функция использует библиотеку C# для эффективной обработки изображений DICOM в процессе создания PDF-файлов. Функция упрощает рабочий процесс включения изображений DICOM в PDF-файлы.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, изображение dicom",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "DICOM images, PDF, C#, Aspose.PDF, DICOM to PDF, add DICOM to PDF, .NET library, ImageFileType.Dicom",
+    "wordcount": "194",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,38 +71,52 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/support-for-dicom-mages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел описывает, как обеспечить поддержку изображений DICOM в файле PDF с использованием библиотеки C#."
+    "dateModified": "2024-11-26",
+    "description": "Этот раздел описывает, как реализовать поддержку DICOM-изображений в PDF-файле с помощью библиотеки на C#."
 }
 </script>
-Стандарт DICOM был разработан Национальной ассоциацией производителей электротехнического оборудования. Этот формат охватывает функции создания, хранения, передачи и печати отдельных кадров изображений, серий кадров, информации о пациентах, исследованиях, оборудовании, учреждениях, медицинском персонале, проводящем обследование, и прочее.
+
+Стандарт DICOM был разработан Национальной ассоциацией производителей электрооборудования. Этот формат охватывает функции создания, хранения, передачи и печати отдельных кадров изображений, серий кадров, информации о пациентах, исследований, оборудования, учреждений, медицинского персонала, проводящего обследование, и тому подобного.
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-**Aspose.PDF для .NET** поддерживает функциональность добавления изображений DICOM в документы PDF. Следующий фрагмент кода показывает, как использовать эту функциональность.
+**Aspose.PDF for .NET** поддерживает функцию добавления DICOM-изображений в PDF-документы. Следующий фрагмент кода показывает, как использовать эту функцию.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-using (Document pdfDocument = new Document())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddDicomImageToPDF()
 {
-    pdfDocument.Pages.Add();
-    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-    image.FileType = ImageFileType.Dicom;
-    image.ImageStream = new FileStream(dataDir + "0002.dcm", FileMode.Open, FileAccess.Read);
-    pdfDocument.Pages[1].Paragraphs.Add(image);
-    // Сохранить результат в формате PDF
-    pdfDocument.Save(dataDir + "PdfWithDicomImage_out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Create an image instance and set its properties
+        var image = new Aspose.Pdf.Image
+        {
+            FileType = Aspose.Pdf.ImageFileType.Dicom,
+            ImageStream = new FileStream(dataDir + "DicomImage.dcm", FileMode.Open, FileAccess.Read)
+        };
+
+        // Add image to the first page
+        page.Paragraphs.Add(image);
+
+        // Save PDF document
+        document.Save(dataDir + "PdfWithDicomImage_out.pdf");
+    }
 }
 ```
+
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Библиотека Aspose.PDF для .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -121,23 +138,23 @@ using (Document pdfDocument = new Document())
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -146,7 +163,7 @@ using (Document pdfDocument = new Document())
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF в .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -158,5 +175,3 @@ using (Document pdfDocument = new Document())
     }
 }
 </script>
-```
-

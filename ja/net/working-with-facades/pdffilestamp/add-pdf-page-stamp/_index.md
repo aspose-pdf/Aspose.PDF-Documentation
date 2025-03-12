@@ -1,169 +1,245 @@
 ---
-title: PDFページスタンプを追加
+title: PDFページスタンプの追加
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ja/net/add-pdf-page-stamp/
-description: このセクションでは、PdfFileStampクラスを使用してAspose.PDF Facadesを操作する方法を説明します。
+description: Aspose.PDFを使用して、ウォーターマークやブランディングのために、テキストや画像を含むPDFページにスタンプを追加する方法を発見してください。
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add PDF Page Stamp",
+    "alternativeHeadline": "Enhance PDFs with Custom Stamps and Page Numbers",
+    "abstract": "PdfFileStampクラスを使用して、PDFドキュメントのすべてまたは特定のページにカスタマイズされたスタンプを簡単に追加できるPDFページスタンプ機能を紹介します。この機能は、ページスタンプの回転、背景、カスタム番号スタイルなどのさまざまな属性を有効にすることで、ドキュメントのパーソナライズを強化し、PDFファイルをユニークでプロフェッショナルに仕上げます。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1309",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-pdf-page-stamp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-pdf-page-stamp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
+}
+</script>
 
 ## PDFファイルのすべてのページにPDFページスタンプを追加
 
-[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスを使用すると、PDFファイルのすべてのページにPDFページスタンプを追加できます。 In order to add PDF page stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes.
-
-PDFページスタンプを追加するには、まず [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスと [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスのオブジェクトを作成する必要があります。 You also need to create the PDF page stamp using [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) メソッドの [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラス。起源、回転、背景などの他の属性を [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) オブジェクトを使用して設定することもできます。その後、[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) メソッドの [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスを使用してPDFファイルにスタンプを追加できます。最後に、[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) メソッドの [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスを使用して、出力PDFファイルを保存します。次のコードスニペットは、PDFファイル内のすべてのページにPDFページスタンプを追加する方法を示しています。
+[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスを使用すると、PDFファイルのすべてのページにPDFページスタンプを追加できます。PDFページスタンプを追加するには、まず[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)と[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスのオブジェクトを作成する必要があります。また、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)メソッドを使用してPDFページスタンプを作成する必要があります。他の属性（原点、回転、背景など）も[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)オブジェクトを使用して設定できます。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp)メソッドを使用してPDFファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)メソッドを使用して出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルのすべてのページにPDFページスタンプを追加する方法を示しています。
 
 ```csharp
-public static void AddPageStampOnAllPages()
-        {
-            // Create PdfFileStamp object
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStampOnAllPages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Open Document
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
-            // Create stamp
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
-            stamp.SetOrigin(20, 20);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        // Bind PDF document
+        stamp.BindPdf(dataDir + "AddPageStampOnAllPages.pdf", 1);
+        stamp.SetOrigin(20, 20);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-            // Add stamp to PDF file
-            fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // Save updated PDF file
-            fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
-
-            // Close fileStamp
-            fileStamp.Close();
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "PageStampOnAllPages_out.pdf");
+    }
+}
 ```
-## 特定のページにPDFページスタンプを追加する
 
-[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスを使用すると、PDFファイルの特定のページにPDFページスタンプを追加できます。 
-PDFページスタンプを追加するには、まず[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスと[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスのオブジェクトを作成する必要があります。
-``` You also need to create the PDFページスタンプを作成する必要があります。 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) メソッドを使用して [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスの。 You can set other attributes like origin, rotation, background etc.  
-他の属性、例えば原点、回転、背景などを設定できます。 using [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) オブジェクトも使用します。 As you want to add PDF page stamp on particular pages of the PDF file, you also need to set the [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) property of the [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class. This property requires an integer array containing numbers of the pages on which you want to add the stamp. Then you can add the stamp in the PDF file using [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. Finally, save the output PDF file using [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. The following code snippet shows you how to add PDF page stamp on particular pages in a PDF file.
+## PDFファイルの特定のページにPDFページスタンプを追加
 
-PDFファイルの特定のページにPDFページスタンプを追加したい場合は、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスの [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) プロパティを設定する必要があります。このプロパティには、スタンプを追加したいページの番号を含む整数の配列が必要です。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスの [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) メソッドを使用してPDFファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスの [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) メソッドを使用して、出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルの特定のページにPDFページスタンプを追加する方法を示しています。
+[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスを使用すると、PDFファイルの特定のページにPDFページスタンプを追加できます。PDFページスタンプを追加するには、まず[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)と[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスのオブジェクトを作成する必要があります。また、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用してPDFページスタンプを作成する必要があります。他の属性（原点、回転、背景など）も[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)オブジェクトを使用して設定できます。PDFファイルの特定のページにPDFページスタンプを追加するには、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages)プロパティを設定する必要があります。このプロパティには、スタンプを追加したいページの番号を含む整数配列が必要です。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp)メソッドを使用してPDFファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)メソッドを使用して出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルの特定のページにPDFページスタンプを追加する方法を示しています。
 
 ```csharp
-public static void AddPageStampOnCertainPages()
-        {
-            // Create PdfFileStamp object
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStampOnCertainPages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Open Document
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
-            // Create stamp
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
-            stamp.SetOrigin(20, 20);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
-            stamp.Pages = new[] { 1, 3 };
-            // Add stamp to PDF file
-            fileStamp.AddStamp(stamp);
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        // Bind PDF document
+        stamp.BindPdf(dataDir + "PageStampOnCertainPages.pdf", 1);
+        stamp.SetOrigin(20, 20);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
+        stamp.Pages = new[] { 1, 3 };  // Apply stamp to specific pages (1 and 3)
 
-            // Save updated PDF file
-            fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // Close fileStamp
-            fileStamp.Close();
-        }
-
-        // Add PDF Page Numbers
-        public enum PageNumPosition
-        {
-            PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "PageStampOnCertainPages_out.pdf");
+    }
+}
 ```
+
 ## PDFファイルにページ番号を追加
 
-[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスを使用すると、PDFファイルにページ番号を追加できます。 In order to add page numbers, you first need to create object of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class.
+[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスを使用すると、PDFファイルにページ番号を追加できます。ページ番号を追加するには、まず[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスのオブジェクトを作成する必要があります。「ページXのN」のようにページ番号を表示したい場合、Xは現在のページ番号、NはPDFファイルの総ページ数です。最初に[PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo)クラスの[NumberOfpages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/numberofpages)プロパティを使用してページ数を取得する必要があります。現在のページ番号を取得するには、テキストの任意の場所に**#**記号を使用できます。ページ番号のテキストは、[FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)クラスを使用してフォーマットできます。特定の番号からページ番号を開始したい場合は、[StartingNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/properties/startingnumber)プロパティを設定できます。ファイルにページ番号を追加する準備ができたら、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[AddPageNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addpagenumber/methods/7)メソッドを呼び出す必要があります。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)クラスの[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)メソッドを使用して出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルにページ番号を追加する方法を示しています。
 
-ページ番号を追加するためには、まず [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスのオブジェクトを作成する必要があります。 If you want to show page number like “Page X of N” while X being the current page number and N the total number of pages in the PDF file then you first need to get the page count using [NumberOfpages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/numberofpages) property of [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class.
-
-PDFファイル内で現在のページ番号をX、総ページ数をNとすると、「Page X of N」のようにページ番号を表示したい場合、まず、[PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo)クラスの[NumberOfpages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/numberofpages)プロパティを使用してページ数を取得する必要があります。 ```
-現在のページ番号を取得するには、テキスト内の任意の場所に **#** 記号を使用できます。ページ番号のテキストをフォーマットするには、[FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) クラスを使用できます。特定の番号からページ番号を開始したい場合は、[StartingNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/properties/startingnumber) プロパティを設定できます。ファイルにページ番号を追加する準備が整ったら、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp) クラスの [AddPageNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addpagenumber/methods/7) メソッドを呼び出す必要があります。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスの [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) メソッドを使用して、出力 PDF ファイルを保存します。次のコードスニペットは、PDF ファイルにページ番号を追加する方法を示しています。
 ```csharp
- public static void AddPageNumberInPdfFile()
-        {
-            // PdfFileStamp オブジェクトを作成
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageNumberInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // ドキュメントを開く
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
-            // 総ページ数を取得
-            int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+        // Get total number of pages
+        int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
 
-            // ページ番号のフォーマットされたテキストを作成
-            FormattedText formattedText = new FormattedText($"Page # of {totalPages}",
-                System.Drawing.Color.AntiqueWhite,
-                System.Drawing.Color.Gray,
-                FontStyle.TimesBoldItalic,
-                EncodingType.Winansi, false, 12);
+        // Create formatted text for page number
+        var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
+            System.Drawing.Color.AntiqueWhite,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            false, 12);
 
-            // 最初のページの開始番号を設定; 2以上から開始することもできます
-            fileStamp.StartingNumber = 1;
+        // Set starting number for first page; you might want to start from 2 or more
+        fileStamp.StartingNumber = 1;
+        // Add page number in upper right corner
+        fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-            // ページ番号を追加
-            fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
+    }
+}
 
-            // 更新された PDF ファイルを保存
-            fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
-
-            // fileStamp を閉じる
-            fileStamp.Close();
-        }
+// Add PDF Page Numbers
+public enum PageNumPosition
+{
+    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
+}
 ```
-```
+
 ### カスタム番号スタイル
 
-PdfFileStamp クラスは、PDF ドキュメント内にスタンプオブジェクトとしてページ番号情報を追加する機能を提供します。このリリース以前は、クラスは 1,2,3,4 のみをページ番号スタイルとしてサポートしていました。しかし、PDF ドキュメント内にページ番号スタンプを配置する際にカスタム番号スタイルを使用したいという要件が一部の顧客からありました。この要件を達成するために、[NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle) プロパティが導入されました。このプロパティは、[NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle) 列挙からの値を受け入れます。以下に、この列挙で提供されている値を示します。
+PdfFileStampクラスは、PDFドキュメント内にスタンプオブジェクトとしてページ番号情報を追加する機能を提供します。このリリース以前は、クラスはページ番号スタイルとして1,2,3,4のみをサポートしていました。しかし、PDFドキュメント内にページ番号スタンプを配置する際にカスタム番号スタイルを使用するという顧客からの要望がありました。この要件を満たすために、[NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle)プロパティが導入され、[NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle)列挙から値を受け入れます。この列挙で提供される値は以下の通りです。
 
-- LettersLowercase
-- LettersUppercase
-- NumeralsArabic
-- NumeralsRomanLowercase
-- NumeralsRomanUppercase
+- 小文字のアルファベット。
+- 大文字のアルファベット。
+- アラビア数字。
+- ローマ数字（小文字）。
+- ローマ数字（大文字）。
 
 ```csharp
- public static void AddCustomPageNumberInPdfFile()
-        {
-            // PdfFileStamp オブジェクトを作成
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddCustomPageNumberInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // ドキュメントを開く
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
-            // 総ページ数を取得
-            int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+        // Get total number of pages
+        int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
 
-            // ページ番号用にフォーマットされたテキストを作成
-            FormattedText formattedText = new FormattedText($"Page # of {totalPages}",
-                System.Drawing.Color.AntiqueWhite,
-                System.Drawing.Color.Gray,
-                FontStyle.TimesBoldItalic,
-                EncodingType.Winansi, false, 12);
+        // Create formatted text for page number
+        var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
+            System.Drawing.Color.AntiqueWhite,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            false, 12);
 
-            // 番号スタイルをローマ数字の大文字に指定
-            fileStamp.NumberingStyle = Aspose.Pdf.NumberingStyle.NumeralsRomanUppercase;
+        // Specify numbering style as Numerals Roman UpperCase
+        fileStamp.NumberingStyle = Aspose.Pdf.NumberingStyle.NumeralsRomanUppercase;
 
-            // 最初のページの開始番号を設定; 2以上から開始することもできます
-            fileStamp.StartingNumber = 1;
+        // Set starting number for first page; you might want to start from 2 or more
+        fileStamp.StartingNumber = 1;
 
-            // ページ番号を追加
-            fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
+        // Add page number in upper right corner
+        fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-            // 更新された PDF ファイルを保存
-            fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddCustomPageNumber_out.pdf");
+    }
+}
 
-            // fileStamp を閉じる
-            fileStamp.Close();
-        }
+// Add PDF Page Numbers
+public enum PageNumPosition
+{
+    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
+}
 ```

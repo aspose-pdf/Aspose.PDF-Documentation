@@ -2,6 +2,8 @@
 title: Using Text Annotation for PDF
 linktitle: Text Annotation
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/text-annotation/
 description: Aspose.PDF for .NET allows you to Add, Get, and Delete Text Annotation from your PDF document.

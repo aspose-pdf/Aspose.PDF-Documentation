@@ -1,6 +1,8 @@
 ---
 title: PdfFileInfo Class
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /net/pdffileinfo-class/
 description: Discover how to manage PDF file information like properties and metadata using the PDFFileInfo class in .NET.

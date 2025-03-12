@@ -1,10 +1,12 @@
 ---
-title: PDF에서 첨부 파일 제거
-linktitle: 기존 PDF에서 첨부 파일 제거
+title: PDF에서 첨부파일 제거
+linktitle: 기존 PDF에서 첨부파일 제거
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ko/net/removing-attachment-from-an-existing-pdf/
-description: Aspose.PDF를 사용하면 PDF 문서에서 첨부 파일을 제거할 수 있습니다. Aspose.PDF 라이브러리를 사용하여 PDF 파일에서 첨부 파일을 제거하기 위해 C# PDF API를 사용하세요.
+description: Aspose.PDF는 PDF 문서에서 첨부파일을 제거할 수 있습니다. C# PDF API를 사용하여 Aspose.PDF 라이브러리로 PDF 파일에서 첨부파일을 제거하세요.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF에서 첨부 파일 제거",
-    "alternativeHeadline": "PDF에서 첨부 파일 삭제 방법",
+    "headline": "Removing attachment from PDF",
+    "alternativeHeadline": "Remove Attachments Efficiently from PDF Files",
+    "abstract": "Aspose.PDF는 이제 사용자가 C# PDF API를 사용하여 PDF 문서에서 첨부파일을 쉽게 제거할 수 있는 강력한 기능을 포함하고 있습니다. 이 기능은 사용자가 문서에서 모든 내장 파일을 삭제할 수 있게 하여 PDF 관리를 간소화하고, 더 깔끔하고 효율적인 PDF 경험을 보장합니다.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, c#, 첨부 파일 삭제",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
+    "genre": "pdf document generation",
+    "keywords": "Removing attachment from PDF, Aspose.PDF, delete attachments, PDF API, C# PDF library, EmbeddedFiles collection, document.Save method, PDF manipulation, attachments management, Aspose.PDF for .NET",
+    "wordcount": "229",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF 문서 팀",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,34 +74,39 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/removing-attachment-from-an-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF를 사용하면 PDF 문서에서 첨부 파일을 제거할 수 있습니다. Aspose.PDF 라이브러리를 사용하여 PDF 파일에서 첨부 파일을 제거하기 위해 C# PDF API를 사용하세요."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF는 PDF 문서에서 첨부파일을 제거할 수 있습니다. C# PDF API를 사용하여 Aspose.PDF 라이브러리로 PDF 파일에서 첨부파일을 제거하세요."
 }
 </script>
-Aspose.PDF는 PDF 파일에서 첨부 파일을 제거할 수 있습니다. PDF 문서의 첨부 파일은 Document 객체의 EmbeddedFiles 컬렉션에 저장됩니다.
+
+Aspose.PDF는 PDF 파일에서 첨부파일을 제거할 수 있습니다. PDF 문서의 첨부파일은 Document 객체의 EmbeddedFiles 컬렉션에 저장됩니다.
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-PDF 파일과 관련된 모든 첨부 파일을 삭제하려면:
+PDF 파일과 관련된 모든 첨부파일을 삭제하려면:
 
-1. [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션의 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) 메소드를 호출합니다.
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메소드를 사용하여 업데이트된 파일을 저장합니다.
+1. [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션의 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) 메서드를 호출합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 업데이트된 파일을 저장합니다.
 
-다음 코드 스니펫은 PDF 문서에서 첨부 파일을 제거하는 방법을 보여줍니다.
+다음 코드 스니펫은 PDF 문서에서 첨부파일을 제거하는 방법을 보여줍니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인해 주세요.
-// 문서 디렉토리의 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteAllAttachments()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "DeleteAllAttachments.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf"))
+    {
+        // Delete all attachments
+        document.EmbeddedFiles.Delete();
 
-// 모든 첨부 파일 삭제
-pdfDocument.EmbeddedFiles.Delete();
-
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllAttachments_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -127,23 +135,23 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "영어"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "영어"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "영어"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -152,7 +160,7 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET용 PDF 조작 라이브러리",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -164,5 +172,3 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
     }
 }
 </script>
-```
-

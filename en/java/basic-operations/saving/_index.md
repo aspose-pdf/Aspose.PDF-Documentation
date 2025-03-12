@@ -5,10 +5,14 @@ type: docs
 weight: 30
 url: /java/save-pdf-document/
 description: Learn how to save PDF file with Aspose.PDF for Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to save PDF file with Aspose.PDF for Java library
+Abstract: The article discusses various methods to save PDF documents using the Aspose.PDF library in Java. It outlines three main approaches - saving PDFs to the file system, saving to a stream, and saving in web applications. For file system storage, the `Document` class's `Save` method is used to save the document in Aspose.PDF v.1.7 format unless otherwise specified. The article provides a Java example that demonstrates adding a new page to a document and saving it under a modified filename. For saving documents to a stream, it presents an overload of the `Save` method, showcasing how to capture the document's output in a `FileOutputStream`. When saving PDFs in web applications, the article mentions using the same approaches with additional handling for HTTP responses. Furthermore, the article explains saving PDF documents in specialized formats like PDF/A and PDF/X, which are tailored for archival and graphics exchange purposes, respectively. These formats require conversion using the `Convert` method before saving. The
+SoftwareApplication: java
 ---
 
 ## Save PDF document to file system

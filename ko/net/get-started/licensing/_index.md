@@ -1,147 +1,316 @@
 ---
-title: Aspose PDF 라이선스
-linktitle: 라이선스 및 제한사항
+title: Aspose PDF 라이센스
+linktitle: 라이센스 및 제한 사항
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /ko/net/licensing/
-description: Aspose. PDF for .NET은 고객에게 클래식 라이선스와 미터드 라이선스를 제공합니다. 또한 제품을 더 잘 탐색할 수 있도록 제한된 라이선스를 사용할 수 있습니다.
-lastmod: "2021-06-05"
+description: Aspose.PDF for .NET는 고객에게 클래식 라이센스와 미터 라이센스를 받을 것을 권장합니다. 또한 제품을 더 잘 탐색할 수 있도록 제한된 라이센스를 사용할 수 있습니다.
+lastmod: "2025-02-07"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Aspose PDF for .NET License",
+    "alternativeHeadline": "Licensing Options for Aspose.PDF for .NET Users",
+    "abstract": "Aspose PDF for .NET은 고정 가격과 사용 기반 청구 옵션 중에서 선택할 수 있는 클래식 및 미터 라이센스를 포함한 강력한 라이센스 프레임워크를 소개합니다. 클래식 라이센스는 파일 또는 스트림에서 쉽게 로드할 수 있으며, 혁신적인 미터 라이센스는 API 사용량에 따라 유연한 계량을 제공하여 다양한 사용자 요구를 충족합니다. 이 이중 라이센스 전략은 개발자를 위한 PDF 솔루션의 접근성과 확장성을 향상시킵니다.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "869",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/licensing/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/licensing/"
+    },
+    "dateModified": "2025-02-07",
+    "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 수행할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하십시오."
+}
+</script>
 
-## 평가 버전의 제한
+## 평가 버전의 제한 사항
 
-우리는 고객이 구매하기 전에 우리의 구성요소를 철저히 테스트하기를 원합니다. 그래서 평가 버전을 통해 평상시처럼 사용할 수 있습니다.
+고객이 구매하기 전에 구성 요소를 철저히 테스트할 수 있도록 평가 버전에서는 일반적으로 사용하는 것처럼 사용할 수 있습니다.
 
-- **평가 워터마크가 있는 PDF 생성.** Aspose.PDF for .NET의 평가 버전은 전체 제품 기능을 제공하지만 생성된 PDF 문서의 모든 페이지 상단에 "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd"라는 워터마크가 있습니다.
+- **평가 워터마크가 있는 PDF 생성.** Aspose.PDF for .NET의 평가 버전은 전체 제품 기능을 제공하지만 생성된 PDF 문서의 모든 페이지 상단에 "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd."라는 텍스트가 워터마크로 표시됩니다.
 
-- **처리할 수 있는 컬렉션 항목 수의 제한.**
-평가 버전에서는 모든 컬렉션에서 요소를 단 4개만 처리할 수 있습니다(예: 페이지 4개, 폼 필드 4개 등).
-평가 버전에서는 어떤 컬렉션에서든 단 4개의 요소만 처리할 수 있습니다(예: 단 4페이지, 4개의 폼 필드 등).
+- **처리할 수 있는 페이지 수 제한.**
+평가 버전에서는 문서의 처음 네 페이지만 처리할 수 있습니다.
 
-Aspose.HTML for .NET의 평가 제한 없이 테스트하고 싶다면, 30일 임시 라이선스도 요청할 수 있습니다. [임시 라이선스는 어떻게 받나요?](https://purchase.aspose.com/temporary-license)를 참조해 주세요.
+> 평가 버전의 제한 없이 Aspose.PDF for .NET을 테스트하려면 30일 임시 라이센스를 요청할 수도 있습니다. [임시 라이센스를 받는 방법?](https://purchase.aspose.com/temporary-license)를 참조하십시오.
 
-## 고전 라이선스
+## 클래식 라이센스
 
-라이선스는 파일이나 스트림 객체에서 로드할 수 있습니다. 라이선스를 설정하는 가장 쉬운 방법은 Aspose.PDF.dll 파일과 같은 폴더에 라이선스 파일을 넣고 경로 없이 파일 이름만 지정하는 것입니다. 아래 예시와 같습니다.
+라이센스는 파일 또는 스트림 객체에서 로드할 수 있습니다. 라이센스를 설정하는 가장 쉬운 방법은 라이센스 파일을 Aspose.PDF.dll 파일과 동일한 폴더에 두고 경로 없이 파일 이름만 지정하는 것입니다. 아래 예제와 같이.
 
-Aspose.PDF for .NET과 함께 다른 Aspose for .NET 컴포넌트를 사용하는 경우, [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license)와 같이 라이선스의 네임스페이스를 지정해 주세요.
+Aspose.PDF for .NET와 함께 다른 Aspose for .NET 구성 요소를 사용하는 경우 [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license)와 같이 라이센스의 네임스페이스를 지정하십시오.
 
-### 파일에서 라이선스 로드
+### 파일에서 라이센스 로드하기
 
-라이선스를 적용하는 가장 쉬운 방법은 Aspose.PDF.dll 파일과 같은 폴더에 라이선스 파일을 넣고 경로 없이 파일 이름만 지정하는 것입니다.
+라이센스를 적용하는 가장 쉬운 방법은 라이센스 파일을 Aspose.PDF.dll 파일과 동일한 폴더에 두고 경로 없이 파일 이름만 지정하는 것입니다.
 
-[SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) 메소드를 호출할 때, 전달하는 라이선스 이름은 라이선스 파일의 이름이어야 합니다.
-[SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) 메소드를 호출할 때, 전달하는 라이선스 이름은 라이선스 파일의 이름과 동일해야 합니다.
+[SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) 메서드를 호출할 때 전달하는 라이센스 이름은 라이센스 파일의 이름이어야 합니다. 예를 들어, 라이센스 파일 이름을 "Aspose.PDF.lic.xml"로 변경하면 해당 파일 이름을 Pdf.SetLicense(…) 메서드에 전달하십시오.
 
 ```csharp
-public static void SetLicenseExample()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetLicenseExample()
 {
-    // 라이선스 객체 초기화
-    Aspose.Pdf.License license = new Aspose.Pdf.License();
+    // Initialize license object
+    var license = new Aspose.Pdf.License();
     try
     {
-        // 라이선스 설정
+        // Set license
         license.SetLicense("Aspose.Pdf.lic");
     }
     catch (Exception)
     {
-        // 문제가 발생함
+        // Something went wrong
         throw;
     }
-    Console.WriteLine("라이선스가 성공적으로 설정됐습니다.");
+    Console.WriteLine("License set successfully.");
 }
 ```
-### 스트림 객체에서 라이선스 불러오기
+### 스트림 객체에서 라이센스 로드하기
 
-다음 예제는 스트림에서 라이선스를 불러오는 방법을 보여줍니다.
+다음 예제는 스트림에서 라이센스를 로드하는 방법을 보여줍니다.
 
 ```csharp
-public static void SetLicenseFromStream()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetLicenseFromStream()
 {
-    // 라이선스 객체 초기화
-    Aspose.Pdf.License license = new Aspose.Pdf.License();
-    // 파일 스트림에서 라이선스 불러오기
-    System.IO.FileStream myStream =
-        new System.IO.FileStream(
+    // Initialize license object
+    var license = new Aspose.Pdf.License();
+    // Load license from the file stream
+    var myStream = new FileStream(
             "Aspose.Pdf.lic",
-            System.IO.FileMode.Open);
-    // 라이선스 설정
+            FileMode.Open);
+    // Set license
     license.SetLicense(myStream);
-    Console.WriteLine("라이선스가 성공적으로 설정됐습니다.");
+    Console.WriteLine("License set successfully.");
 }
 ```
-## 미터링 라이선스
+## 미터 라이센스
 
-Aspose.PDF는 개발자가 미터링 키를 적용할 수 있습니다. 이것은 새로운 라이선싱 메커니즘입니다. 새로운 라이선싱 메커니즘은 기존의 라이선싱 방법과 함께 사용됩니다. API 기능의 사용량을 기준으로 청구되길 원하는 고객은 미터링 라이선스를 사용할 수 있습니다. 자세한 내용은 미터링 라이선스 FAQ 섹션을 참조하십시오.
+Aspose.PDF는 개발자가 미터 키를 적용할 수 있도록 합니다. 미터 라이센스 메커니즘은 기존 라이센스 방법과 함께 사용됩니다. API 기능 사용량에 따라 청구되기를 원하는 고객은 미터 라이센스를 사용할 수 있습니다. 자세한 내용은 미터 라이센스 FAQ 섹션을 참조하십시오.
+이 가이드는 원활한 구현을 위한 모범 사례와 라이센스 상태 변경으로 인한 중단을 방지하는 방법을 제공합니다.
 
-미터링 키를 적용하기 위해 Metered라는 새 클래스가 도입되었습니다. 다음은 미터링 공개 및 개인 키를 설정하는 방법을 보여주는 샘플 코드입니다.
+"Metered" 클래스는 미터 키를 적용하는 데 사용됩니다. 다음은 미터 공개 및 비공개 키를 설정하는 방법을 보여주는 샘플 코드입니다.
 
-자세한 내용은 [미터링 라이선스 FAQ](https://purchase.aspose.com/faqs/licensing/metered) 섹션을 참조하십시오.
+자세한 내용은 [미터 라이센스 FAQ](https://purchase.aspose.com/faqs/licensing/metered) 섹션을 참조하십시오.
+
+__미터 라이센스 방법__
+
+미터 라이센스를 적용하려면 `SetMeteredKey` 메서드를 사용하여 공개 및 비공개 키를 제공하여 미터 라이센스를 활성화합니다. 이는 적절한 라이센스를 보장하기 위해 애플리케이션 초기화 중에 한 번 수행해야 합니다.
+
+예시:
 
 ```csharp
-public static void SetMeteredLicense()
-{
-    // 미터링 공개 및 개인 키 설정
-    Aspose.Pdf.Metered metered = new Aspose.Pdf.Metered();
-    // setMeteredKey 속성에 접근하여 공개 및 개인 키를 매개변수로 전달
-    metered.SetMeteredKey(
-        "<여기에 공개 키 입력>",
-        "<여기에 비공개 키 입력>");
+ var metered = new Aspose.Pdf.Metered();
+ metered.SetMeteredKey("your-public-key", "your-private-key");
+ ```
+라이센스 상태 확인은 `IsMeteredLicensed()`를 사용하여 미터 라이센스가 활성화되어 있는지 확인합니다.
 
-    // 디스크에서 문서를 로드합니다.
-    Document doc = new Document("input.pdf");
-    //문서의 페이지 수를 가져옵니다
-    Console.WriteLine(doc.Pages.Count);
+예시:
+
+```csharp
+bool isLicensed = Aspose.Pdf.License.IsMeteredLicensed();
+if (!isLicensed) 
+{
+    metered.SetMeteredKey("your-public-key", "your-private-key");
 }
-```
-**Aspose.PDF for .NET**을 사용하는 COM 애플리케이션은 라이선스 클래스를 사용해야 합니다.
+ ```
+`Metered.GetConsumptionCredit()` 메서드는 소비 크레딧에 대한 정보를 가져오는 데 사용됩니다.
+`Metered.GetConsumptionQuantity()` 메서드는 소비 파일 크기에 대한 정보를 가져오는 데 사용됩니다.
 
-고려해야 할 한 가지 점:
-내장 리소스는 애플리케이션에 내장 리소스로 추가된 방식대로 어셈블리에 포함됩니다. 즉, 텍스트 파일을 내장 리소스로 추가하고 결과 EXE를 메모장에서 열면 텍스트 파일의 정확한 내용을 볼 수 있습니다. 따라서 라이선스 파일을 내장 리소스로 사용할 때 누구나 간단한 텍스트 편집기에서 exe 파일을 열어 라이선스의 내용을 보거나 추출할 수 있습니다.
-
-따라서 애플리케이션과 함께 라이선스를 내장할 때 추가 보안 계층을 추가하기 위해 라이선스를 압축/암호화한 후 어셈블리에 내장할 수 있습니다. Aspose.PDF.lic 라이선스 파일이 있다고 가정하고, 비밀번호 test를 사용하여 Aspose.PDF.zip을 만든 다음 이 zip 파일을 솔루션에 내장합니다. 라이선스를 초기화하기 위해 다음 코드 스니펫을 사용할 수 있습니다:
+예시:
 
 ```csharp
-using System;
-using System.IO;
-using System.IO.Compression;
-using System.Reflection;
-
-namespace Aspose.Pdf.Examples
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetMeteredLicense()
 {
-    class ExampleLicensing
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // Set metered public and private keys
+    var metered = new Aspose.Pdf.Metered();
+    // Access the setMeteredKey property and pass public and private keys as parameters
+    metered.SetMeteredKey("your public key", "your private key");
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        public static void LicenseDemo()
-        {
-            License license = new License();
-            license.SetLicense(GetSecureLicenseFromStream());
-            Document doc = new Document("document.pdf");
-            //문서의 페이지 수를 가져옵니다
-            Console.WriteLine(doc.Pages.Count);
-        }
+       // Add five pages
+       AddPages(document, 5);
+       // Save the document
+       document.Save(dataDir + "output.pdf")
+    }
+}
 
-        private static Stream GetSecureLicenseFromStream()
+private static void AddPages(Document document, int n)
+{
+    for(int i = 0; i < n; i++)
+    {
+        document.Pages.Add();
+    }
+}   
+```
+
+__미터 라이센스에 대한 모범 사례__
+
+✅ 권장 접근 방식: 싱글톤 패턴
+안정적인 라이센스 설정을 보장하기 위해:
+
+- 애플리케이션 시작 시 라이센스를 한 번 적용합니다.
+- 싱글톤 패턴(또는 유사한 접근 방식)을 사용하여 미터 라이센스 인스턴스를 생성하고 재사용합니다.
+- `IsMeteredLicensed()`를 사용하여 주기적으로 라이센스 상태를 확인합니다. 라이센스가 무효화되면 다시 적용합니다.
+- 올바르게 구현되면 라이센스 서버가 일시적으로 사용할 수 없더라도 라이센스는 24시간 동안 유효합니다.
+
+예시: 싱글톤 구현
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+public class AsposeLicenseManager
+{
+    private static AsposeLicenseManager _instance;
+    private static readonly object _lock = new object();
+    private Aspose.Pdf.Metered _metered;
+
+    private AsposeLicenseManager()
+    {
+        _metered = new Aspose.Pdf.Metered();
+        _metered.SetMeteredKey("your-public-key", "your-private-key");
+    }
+
+    public static AsposeLicenseManager Instance
+    {
+        get
         {
-            var assembly = Assembly.GetExecutingAssembly();
-            var memoryStream = new MemoryStream();
-            using (var zipToOpen = assembly.GetManifestResourceStream("Aspose.Pdf.Examples.License.Aspose.PDF.zip"))
+            lock (_lock)
             {
-                using (ZipArchive archive = new ZipArchive(zipToOpen ?? throw new InvalidOperationException(), ZipArchiveMode.Read))
+                if (_instance == null)
                 {
-                    var unpackedLicense  = archive.GetEntry("Aspose.PDF.lic");
-                    unpackedLicense?.Open().CopyTo(memoryStream);
+                    _instance = new AsposeLicenseManager();
                 }
+                return _instance;
             }
+        }
+    }
 
-            memoryStream.Position = 0;
-            return memoryStream;
+    public void ValidateLicense()
+    {
+        if (!Aspose.Pdf.License.IsMeteredLicensed())
+        {
+        _metered.SetMeteredKey("your-public-key", "your-private-key");
         }
     }
 }
 ```
-### 2005/01/22 이전에 구매한 라이선스 적용하기
 
-Aspose.PDF for .NET은 이제 오래된 스타일의 라이선스를 지원하지 않습니다. 2005년 1월 22일 이전에 라이선스를 구입하셨고 Aspose.PDF의 최신 버전으로 업데이트하신 경우, 새 라이선스 파일을 받기 위해 영업팀에 문의하십시오.
+❌ 피해야 할 일반적인 실수:
+
+- 빈번한 라이센스 적용
+- 모든 작업에 대해 새로운 미터 라이센스 인스턴스를 생성하지 마십시오.
+- 초기화 중에 라이센스 서버에 연결할 수 없는 경우 라이센스가 평가 모드로 돌아갈 수 있습니다.
+- 각 작업에 대해 라이센스를 반복적으로 적용하지 마십시오.
+- 빈번한 라이센스 적용은 라이센스 서버가 일시적으로 사용할 수 없을 경우 시험 모드로 돌아갈 수 있습니다.
+
+__요약:__
+
+✅ 애플리케이션 시작 시 미터 라이센스를 한 번 설정합니다.
+✅ 단일 인스턴스를 관리하기 위해 싱글톤 패턴을 사용합니다.
+✅ 필요할 경우 주기적으로 라이센스를 확인하고 다시 적용합니다.
+❌ 시험 모드로 돌아가는 것을 방지하기 위해 빈번한 라이센스 적용을 피하십시오.
+이러한 모범 사례를 따르면 미터 라이센스를 사용하여 Aspose.PDF를 원활하고 중단 없이 사용할 수 있습니다.
+
+라이센스가 초기화된 경우 이 객체가 "존재하는" 한, 라이센스 서버와의 연결이 어떤 이유로든 끊어지더라도 라이센스는 추가로 7일 동안 활성으로 간주됩니다. 무언가를 수행해야 할 때마다 라이센스를 초기화하고 초기화 순간에 서버에 연결이 없으면 라이센스는 평가 모드로 전환됩니다.
+사용자가 라이센스를 초기화한 경우 이 객체가 "존재하는" 한, 라이센스 서버와의 연결이 어떤 이유로든 끊어지더라도 라이센스는 추가로 24시간 동안 활성으로 간주됩니다. 무언가를 수행해야 할 때마다 라이센스를 초기화하고 초기화 순간에 서버에 연결이 없으면 라이센스는 평가 모드로 전환됩니다.
+
+**Aspose.PDF for .NET**과 함께 작업하는 COM 애플리케이션도 License 클래스를 사용해야 합니다.
+
+고려해야 할 한 가지 사항:
+임베디드 리소스는 추가된 방식으로 어셈블리에 포함됩니다. 즉, 애플리케이션에 텍스트 파일을 임베디드 리소스로 추가하고 결과 EXE를 메모장으로 열면 텍스트 파일의 정확한 내용을 볼 수 있습니다. 따라서 라이센스 파일을 임베디드 리소스로 사용할 때는 누구나 EXE 파일을 간단한 텍스트 편집기로 열어 임베디드 라이센스의 내용을 볼 수 있습니다.
+
+따라서 애플리케이션과 함께 라이센스를 임베드할 때 추가 보안 계층을 제공하기 위해 라이센스를 압축/암호화한 후 이를 어셈블리에 임베드할 수 있습니다. 예를 들어 Aspose.PDF.lic 라이센스 파일이 있다고 가정하면, 비밀번호 test로 Aspose.PDF.zip을 만들고 이 zip 파일을 솔루션에 임베드합니다. 다음 코드 조각을 사용하여 라이센스를 초기화할 수 있습니다:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetLicenseFromStream()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var license = new Aspose.Pdf.License();
+    license.SetLicense(GetSecureLicenseFromStream());
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get the page count of document
+        Console.WriteLine(document.Pages.Count);
+    }
+}
+
+private static Stream GetSecureLicenseFromStream()
+{
+    var assembly = Assembly.GetExecutingAssembly();
+    var memoryStream = new MemoryStream();
+    using (var zipToOpen = assembly.GetManifestResourceStream("Aspose.Pdf.Examples.License.Aspose.PDF.zip"))
+    {
+        using (ZipArchive archive = new ZipArchive(zipToOpen ?? throw new InvalidOperationException(), ZipArchiveMode.Read))
+        {
+            var unpackedLicense  = archive.GetEntry("Aspose.PDF.lic");
+            unpackedLicense?.Open().CopyTo(memoryStream);
+        }
+    }
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```

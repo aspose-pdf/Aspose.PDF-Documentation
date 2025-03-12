@@ -1,7 +1,9 @@
 ---
-title: Stamping with Aspose.PDF using C#
-linktitle: Stamping
+title: Aspose.PDFを使用したスタンプ作成（C#）
+linktitle: スタンプ作成
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /ja/net/stamping/
 description: このセクションでは、PDFページに画像スタンプとテキストスタンプを追加する方法について説明します。
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Stamping with Aspose.PDF using C#",
-    "alternativeHeadline": "How to add Image Stamp to PDF",
+    "headline": "Working with PDF Pages in C#",
+    "alternativeHeadline": "Enhance PDF Management with C# Page Features",
+    "abstract": "PDFページの管理に関する**Aspose.PDF for .NET**の高度な機能を発見してください。これには、ページの追加、移動、削除が含まれ、精度を持って行えます。この機能により、ユーザーはヘッダー、フッター、透かし、カスタムページサイズをPDFドキュメントに組み込むことができ、すべて直感的なC#コードを通じて行えます。シームレスなPDF操作とカスタマイズ機能でドキュメントワークフローを最適化します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf stamp, image stamp",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "pdf, add pages, rotate pages, delete pages, add watermarks, page numbering, crop pages, Aspose.PDF for .NET",
+    "wordcount": "450",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -66,22 +69,24 @@ sitemap:
             }
         ]
     },
-    "url": "/net/stamping/",
+    "url": "/net/working-with-pages/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/stamping/"
+        "@id": "/net/working-with-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このセクションでは、PDFページに画像スタンプとテキストスタンプを追加する方法について説明します。"
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
 }
 </script>
-PDF文書にスタンプを押すことは、紙の文書にゴム印を押すことに相当します。
-PDFファイルのスタンプは、他の人に使用されることを防ぐためや、PDFファイルの内容のセキュリティを確認するためなど、PDFファイルに追加情報を提供します。**Aspose.PDF for .NET**は、PDF文書に画像またはテキストのスタンプを追加することができます。
 
-以下のセクションをチェックして、C#でスタンプを追加する方法を学びましょう：
+PDFドキュメントのスタンプは、紙のドキュメントにゴム印を押すことに類似しています。
+PDFファイルのスタンプは、他の人が使用できないようにPDFファイルを保護したり、PDFファイルの内容のセキュリティを確認したりするための追加情報を提供します。**Aspose.PDF for .NET**を使用すると、PDFドキュメントに画像またはテキストスタンプを追加できます。
 
-- [PDFページに画像スタンプを追加](/pdf/ja/net/image-stamps-in-pdf-page/) - 画像スタンプを追加、画像品質を制御、PDFファイルの背景としての画像スタンプ。
-- [PDFファイルにテキストスタンプを追加](/pdf/ja/net/text-stamps-in-the-pdf-file/) - テキストスタンプを追加、TextStampオブジェクトの配置を定義、PDFファイルにスタンプとしてテキストを塗りつぶす。
+C#を使用してスタンプを追加する方法を学ぶには、以下のセクションを確認してください：
+
+- [PDFページに画像スタンプを追加](/pdf/ja/net/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを使用します。
+- [PDFファイルにテキストスタンプを追加](/pdf/ja/net/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、PDFファイルにスタンプとしてストロークテキストを填充します。
+- [PDFファイルにページスタンプを追加](/pdf/ja/net/page-stamps-in-the-pdf-file/) - PdfPageStampクラスを使用してPDFドキュメントにページスタンプを追加します。
 
 
 <script type="application/ld+json">
@@ -147,4 +152,3 @@ PDFファイルのスタンプは、他の人に使用されることを防ぐ�
     }
 }
 </script>
-

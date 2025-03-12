@@ -1,6 +1,8 @@
 ---
 title: Decrypt PDF File
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/decrypt-pdf-file/
 description: Explore methods to decrypt password-protected PDF files in .NET, ensuring access to the document's content using Aspose.PDF.

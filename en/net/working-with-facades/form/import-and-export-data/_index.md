@@ -1,6 +1,8 @@
 ---
 title: Import and Export Data
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/import-and-export-data/
 description: This section explains how to import and Export Data with Aspose.PDF Facades using Form Class.

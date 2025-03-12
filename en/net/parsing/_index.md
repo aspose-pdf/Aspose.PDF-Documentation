@@ -2,6 +2,8 @@
 title: Parse PDF documents
 linktitle: Parse PDF documents
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /net/parsing/
 description: Do you want to parse PDF documents? Discover various PDF data extraction methods with Aspose.PDF for .NET.

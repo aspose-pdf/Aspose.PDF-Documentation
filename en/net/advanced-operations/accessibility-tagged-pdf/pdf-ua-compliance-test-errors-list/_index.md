@@ -2,6 +2,8 @@
 title: PDF-UA Compliance Test - Errors List
 linktitle: PDF-UA Compliance Test - Errors List
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/pdf-ua-compliance-test-errors-list/
 description: This article shows a list of the errors that can arise during PDF/UA compliance testing using the Aspose.PDF API and C# or VB.
