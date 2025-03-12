@@ -124,7 +124,7 @@ private static void CreateTaggedPdfDocument01()
         rootElement.AppendChild(mainHeader);
         rootElement.AppendChild(paragraphElement);
 
-        // Save Tagged PDF document
+        // Save Tagged PDF Document
         document.Save(dataDir + "TaggedPdfDocument_out.pdf");
     }
 }
@@ -324,7 +324,7 @@ private static void AddStyle()
 
         p.SetText("Red italic text.");
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "StyleTextStructure_out.pdf");
     }
 }
@@ -358,7 +358,7 @@ private static void AddStyle()
 
     p.SetText("Red italic text.");
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "StyleTextStructure_out.pdf");
 }
 ```
@@ -395,7 +395,7 @@ private static void IllustrateStructureElements()
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "IllustrationStructureElements_out.pdf");
     }
 }
@@ -427,7 +427,7 @@ private static void IllustrateStructureElements()
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "IllustrationStructureElements_out.pdf");
 }
 ```

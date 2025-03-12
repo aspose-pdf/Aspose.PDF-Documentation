@@ -124,7 +124,7 @@ private static void CreateTaggedPdfDocument01()
         rootElement.AppendChild(mainHeader);
         rootElement.AppendChild(paragraphElement);
 
-        // Save Tagged PDF document
+        // Save Tagged PDF Document
         document.Save(dataDir + "TaggedPdfDocument_out.pdf");
     }
 }
