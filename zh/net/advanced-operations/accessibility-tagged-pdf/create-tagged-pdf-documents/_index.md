@@ -393,6 +393,16 @@ private static void IllustrateStructureElements()
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
 
+        // Adjust position
+        figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+        {
+            Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 50,
+                Top = 20
+            },
+        });
+
         // Save Tagged PDF Document
         document.Save(dataDir + "IllustrationStructureElements_out.pdf");
     }
@@ -424,6 +434,16 @@ private static void IllustrateStructureElements()
     figure1.Title = "Image 1";
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
+
+    // Adjust position
+    figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+    {
+        Margin = new Aspose.Pdf.MarginInfo
+        {
+            Left = 50,
+            Top = 20
+        },
+    });
 
     // Save Tagged PDF Document
     document.Save(dataDir + "IllustrationStructureElements_out.pdf");
