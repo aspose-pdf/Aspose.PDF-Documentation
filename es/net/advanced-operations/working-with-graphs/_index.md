@@ -86,15 +86,15 @@ Agregar gráficos a documentos PDF es una tarea muy común para los desarrollado
 
 Los siguientes tipos de formas son compatibles con la clase [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph):
 
-- [Arco](/pdf/net/add-arc/) - a veces también llamado una bandera, es un par ordenado de vértices adyacentes, pero a veces también se llama una línea dirigida.
-- [Círculo](/pdf/net/add-circle/) - muestra datos utilizando un círculo dividido en sectores. Usamos un gráfico circular (también llamado gráfico de pastel) para mostrar cómo los datos representan porciones de un todo o un grupo.
-- [Curva](/pdf/net/add-curve/) - es una unión conectada de líneas proyectivas, cada línea se encuentra con tres otras en puntos dobles ordinarios.
-- [Línea](/pdf/net/add-line) - los gráficos de líneas se utilizan para mostrar datos continuos y pueden ser útiles para predecir eventos futuros cuando muestran tendencias a lo largo del tiempo.
-- [Rectángulo](/pdf/net/add-rectangle/) - es una de las muchas formas fundamentales que verás en gráficos, puede ser muy útil para ayudarte a resolver un problema.
-- [Elipse](/pdf/net/add-ellipse/) - es un conjunto de puntos en un plano, creando una forma ovalada y curva.
+- [Arco](/pdf/es/net/add-arc/) - a veces también llamado una bandera, es un par ordenado de vértices adyacentes, pero a veces también se llama una línea dirigida.
+- [Círculo](/pdf/es/net/add-circle/) - muestra datos utilizando un círculo dividido en sectores. Usamos un gráfico circular (también llamado gráfico de pastel) para mostrar cómo los datos representan porciones de un todo o un grupo.
+- [Curva](/pdf/es/net/add-curve/) - es una unión conectada de líneas proyectivas, cada línea se encuentra con tres otras en puntos dobles ordinarios.
+- [Línea](/pdf/es/net/add-line) - los gráficos de líneas se utilizan para mostrar datos continuos y pueden ser útiles para predecir eventos futuros cuando muestran tendencias a lo largo del tiempo.
+- [Rectángulo](/pdf/es/net/add-rectangle/) - es una de las muchas formas fundamentales que verás en gráficos, puede ser muy útil para ayudarte a resolver un problema.
+- [Elipse](/pdf/es/net/add-ellipse/) - es un conjunto de puntos en un plano, creando una forma ovalada y curva.
 
 Las siguientes operaciones son compatibles con los tipos de formas:
-- [Verificar límites](/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - verificar los límites de la forma en la colección de Formas.
+- [Verificar límites](/pdf/es/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - verificar los límites de la forma en la colección de Formas.
 
 Los detalles anteriores también se representan en las figuras a continuación:
 

@@ -88,15 +88,15 @@ Adding graphs to PDF documents is a very common task for developers while workin
 
 The following types of shapes are supported by the [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) class:
 
-- [Arc](/pdf/net/add-arc/) - sometimes also called a flag is an ordered pair of adjacent vertices, but sometimes also called a directed line.
-- [Circle](/pdf/net/add-circle/) - displays data using a circle divided into sectors. We use a circle graph (also called a pie chart) to show how data represent portions of one whole or one group.
-- [Curve](/pdf/net/add-curve/) - is a connected union of projective lines, each line meeting three others in ordinary double points.
-- [Line](/pdf/net/add-line) - line graphs are used to display continuous data and can be useful in predicting future events when they show trends over time.
-- [Rectangle](/pdf/net/add-rectangle/) - is one of the many fundamental shapes you'll see in graphs, its can be very useful in helping you solve a problem.
-- [Ellipse](/pdf/net/add-ellipse/) - is a set of points on a plane, creating an oval, curved shape.
+- [Arc](/pdf/en/net/add-arc/) - sometimes also called a flag is an ordered pair of adjacent vertices, but sometimes also called a directed line.
+- [Circle](/pdf/en/net/add-circle/) - displays data using a circle divided into sectors. We use a circle graph (also called a pie chart) to show how data represent portions of one whole or one group.
+- [Curve](/pdf/en/net/add-curve/) - is a connected union of projective lines, each line meeting three others in ordinary double points.
+- [Line](/pdf/en/net/add-line) - line graphs are used to display continuous data and can be useful in predicting future events when they show trends over time.
+- [Rectangle](/pdf/en/net/add-rectangle/) - is one of the many fundamental shapes you'll see in graphs, its can be very useful in helping you solve a problem.
+- [Ellipse](/pdf/en/net/add-ellipse/) - is a set of points on a plane, creating an oval, curved shape.
 
 The following operations are supported for shape types:
-- [Check bounds](/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - check shape bounds in Shapes collection.
+- [Check bounds](/pdf/en/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - check shape bounds in Shapes collection.
 
 
 The above details are also depicted in the figures below:

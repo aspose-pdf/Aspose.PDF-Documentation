@@ -86,15 +86,15 @@ Ajouter des graphiques aux documents PDF est une tâche très courante pour les 
 
 Les types de formes suivants sont pris en charge par la classe [Graphique](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) :
 
-- [Arc](/pdf/net/add-arc/) - parfois aussi appelé un drapeau, est une paire ordonnée de sommets adjacents, mais parfois aussi appelé une ligne dirigée.
-- [Cercle](/pdf/net/add-circle/) - affiche des données à l'aide d'un cercle divisé en secteurs. Nous utilisons un graphique circulaire (également appelé un diagramme circulaire) pour montrer comment les données représentent des portions d'un tout ou d'un groupe.
-- [Courbe](/pdf/net/add-curve/) - est une union connectée de lignes projectives, chaque ligne rencontrant trois autres en points doubles ordinaires.
-- [Ligne](/pdf/net/add-line) - les graphiques linéaires sont utilisés pour afficher des données continues et peuvent être utiles pour prédire des événements futurs lorsqu'ils montrent des tendances au fil du temps.
-- [Rectangle](/pdf/net/add-rectangle/) - est l'une des nombreuses formes fondamentales que vous verrez dans les graphiques, elle peut être très utile pour vous aider à résoudre un problème.
-- [Ellipse](/pdf/net/add-ellipse/) - est un ensemble de points sur un plan, créant une forme ovale et courbée.
+- [Arc](/pdf/fr/net/add-arc/) - parfois aussi appelé un drapeau, est une paire ordonnée de sommets adjacents, mais parfois aussi appelé une ligne dirigée.
+- [Cercle](/pdf/fr/net/add-circle/) - affiche des données à l'aide d'un cercle divisé en secteurs. Nous utilisons un graphique circulaire (également appelé un diagramme circulaire) pour montrer comment les données représentent des portions d'un tout ou d'un groupe.
+- [Courbe](/pdf/fr/net/add-curve/) - est une union connectée de lignes projectives, chaque ligne rencontrant trois autres en points doubles ordinaires.
+- [Ligne](/pdf/fr/net/add-line) - les graphiques linéaires sont utilisés pour afficher des données continues et peuvent être utiles pour prédire des événements futurs lorsqu'ils montrent des tendances au fil du temps.
+- [Rectangle](/pdf/fr/net/add-rectangle/) - est l'une des nombreuses formes fondamentales que vous verrez dans les graphiques, elle peut être très utile pour vous aider à résoudre un problème.
+- [Ellipse](/pdf/fr/net/add-ellipse/) - est un ensemble de points sur un plan, créant une forme ovale et courbée.
 
 Les opérations suivantes sont prises en charge pour les types de formes :
-- [Vérifier les limites](/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - vérifier les limites de la forme dans la collection de Formes.
+- [Vérifier les limites](/pdf/fr/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - vérifier les limites de la forme dans la collection de Formes.
 
 Les détails ci-dessus sont également représentés dans les figures ci-dessous :
 

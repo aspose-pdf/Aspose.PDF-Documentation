@@ -86,15 +86,15 @@ Menambahkan grafik ke dokumen PDF adalah tugas yang sangat umum bagi pengembang 
 
 Jenis bentuk berikut didukung oleh kelas [Grafik](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph):
 
-- [Busur](/pdf/net/add-arc/) - terkadang juga disebut sebagai bendera adalah pasangan terurut dari simpul yang berdekatan, tetapi terkadang juga disebut sebagai garis terarah.
-- [Lingkaran](/pdf/net/add-circle/) - menampilkan data menggunakan lingkaran yang dibagi menjadi sektor. Kami menggunakan grafik lingkaran (juga disebut sebagai diagram pai) untuk menunjukkan bagaimana data mewakili bagian dari satu keseluruhan atau satu kelompok.
-- [Kurva](/pdf/net/add-curve/) - adalah persatuan terhubung dari garis proyektif, setiap garis bertemu dengan tiga garis lainnya di titik ganda biasa.
-- [Garis](/pdf/net/add-line) - grafik garis digunakan untuk menampilkan data kontinu dan dapat berguna dalam memprediksi peristiwa di masa depan ketika menunjukkan tren dari waktu ke waktu.
-- [Persegi panjang](/pdf/net/add-rectangle/) - adalah salah satu dari banyak bentuk dasar yang akan Anda lihat dalam grafik, ini bisa sangat berguna dalam membantu Anda menyelesaikan masalah.
-- [Elips](/pdf/net/add-ellipse/) - adalah sekumpulan titik pada bidang, menciptakan bentuk oval yang melengkung.
+- [Busur](/pdf/id/net/add-arc/) - terkadang juga disebut sebagai bendera adalah pasangan terurut dari simpul yang berdekatan, tetapi terkadang juga disebut sebagai garis terarah.
+- [Lingkaran](/pdf/id/net/add-circle/) - menampilkan data menggunakan lingkaran yang dibagi menjadi sektor. Kami menggunakan grafik lingkaran (juga disebut sebagai diagram pai) untuk menunjukkan bagaimana data mewakili bagian dari satu keseluruhan atau satu kelompok.
+- [Kurva](/pdf/id/net/add-curve/) - adalah persatuan terhubung dari garis proyektif, setiap garis bertemu dengan tiga garis lainnya di titik ganda biasa.
+- [Garis](/pdf/id/net/add-line) - grafik garis digunakan untuk menampilkan data kontinu dan dapat berguna dalam memprediksi peristiwa di masa depan ketika menunjukkan tren dari waktu ke waktu.
+- [Persegi panjang](/pdf/id/net/add-rectangle/) - adalah salah satu dari banyak bentuk dasar yang akan Anda lihat dalam grafik, ini bisa sangat berguna dalam membantu Anda menyelesaikan masalah.
+- [Elips](/pdf/id/net/add-ellipse/) - adalah sekumpulan titik pada bidang, menciptakan bentuk oval yang melengkung.
 
 Operasi berikut didukung untuk jenis bentuk:
-- [Periksa batas](/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - periksa batas bentuk dalam koleksi Bentuk.
+- [Periksa batas](/pdf/id/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - periksa batas bentuk dalam koleksi Bentuk.
 
 
 Detail di atas juga digambarkan dalam gambar di bawah ini:

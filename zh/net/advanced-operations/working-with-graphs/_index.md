@@ -86,15 +86,15 @@ sitemap:
 
 [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) 类支持以下类型的形状：
 
-- [弧](/pdf/net/add-arc/) - 有时也称为标志，是一对相邻顶点的有序对，但有时也称为有向线。
-- [圆](/pdf/net/add-circle/) - 使用分成扇区的圆来显示数据。我们使用圆形图（也称为饼图）来显示数据如何代表一个整体或一个组的部分。
-- [曲线](/pdf/net/add-curve/) - 是一组连接的投影线，每条线在普通双点上与三条其他线相交。
-- [线](/pdf/net/add-line) - 线图用于显示连续数据，当它们显示随时间变化的趋势时，可以在预测未来事件时非常有用。
-- [矩形](/pdf/net/add-rectangle/) - 是您在图形中看到的许多基本形状之一，它在帮助您解决问题时非常有用。
-- [椭圆](/pdf/net/add-ellipse/) - 是平面上的一组点，形成一个椭圆形的曲线。
+- [弧](/pdf/zh/net/add-arc/) - 有时也称为标志，是一对相邻顶点的有序对，但有时也称为有向线。
+- [圆](/pdf/zh/net/add-circle/) - 使用分成扇区的圆来显示数据。我们使用圆形图（也称为饼图）来显示数据如何代表一个整体或一个组的部分。
+- [曲线](/pdf/zh/net/add-curve/) - 是一组连接的投影线，每条线在普通双点上与三条其他线相交。
+- [线](/pdf/zh/net/add-line) - 线图用于显示连续数据，当它们显示随时间变化的趋势时，可以在预测未来事件时非常有用。
+- [矩形](/pdf/zh/net/add-rectangle/) - 是您在图形中看到的许多基本形状之一，它在帮助您解决问题时非常有用。
+- [椭圆](/pdf/zh/net/add-ellipse/) - 是平面上的一组点，形成一个椭圆形的曲线。
 
 支持以下形状类型的操作：
-- [检查边界](/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - 检查形状集合中的形状边界。
+- [检查边界](/pdf/zh/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - 检查形状集合中的形状边界。
 
 上述细节也在下面的图中描绘：
 
