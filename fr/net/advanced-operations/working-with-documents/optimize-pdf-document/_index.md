@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Optimize, Compress or Reduce PDF Size in C#",
     "alternativeHeadline": "Optimize PDF Files Efficiently with C#",
-    "abstract": "La nouvelle fonctionnalité d'optimisation des PDF en C# permet aux développeurs de réduire considérablement la taille des fichiers PDF en utilisant plusieurs stratégies, telles que la compression des images, la désincorporation des polices et la suppression des objets inutilisés. Cette amélioration améliore l'efficacité pour la publication sur le web, le partage par e-mail et le stockage, offrant une solution efficace pour gérer de grands documents PDF.",
+    "abstract": "La nouvelle fonctionnalité d'optimisation des PDF en C# permet aux développeurs de réduire considérablement la taille des fichiers PDF en utilisant plusieurs stratégies, telles que la compression des images, la désincorporation des polices et la suppression des objets inutilisés. Cette amélioration améliore l'efficacité pour la publication sur le web, le partage par e-mail et le stockage, fournissant une solution efficace pour gérer de grands documents PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -92,11 +92,11 @@ Un document PDF peut parfois contenir des données supplémentaires. Réduire la
 
 {{% alert color="primary" %}}
 
-Une explication détaillée des méthodes d'optimisation peut être trouvée sur la page Vue d'ensemble des méthodes d'optimisation.
+ Une explication détaillée des méthodes d'optimisation peut être trouvée sur la page Vue d'ensemble des méthodes d'optimisation.
 
 {{% /alert %}}
 
-## Optimiser un document PDF pour le web
+## Optimiser le document PDF pour le web
 
 L'optimisation, ou linéarisation pour le web, fait référence au processus de rendre un fichier PDF adapté à la navigation en ligne à l'aide d'un navigateur web. Pour optimiser un fichier pour l'affichage web :
 
@@ -104,9 +104,9 @@ L'optimisation, ou linéarisation pour le web, fait référence au processus de 
 1. Utilisez la méthode [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
 1. Enregistrez le document optimisé en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-Le code ci-dessous fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-Le code ci-dessous montre comment optimiser un document PDF pour le web.
+Le code suivant montre comment optimiser un document PDF pour le web.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,10 +132,10 @@ private static void OptimizeDocument()
 La méthode [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) vous permet de réduire la taille du document en éliminant les informations inutiles. Par défaut, cette méthode fonctionne comme suit :
 
 - Les ressources qui ne sont pas utilisées sur les pages du document sont supprimées.
-- Les ressources identiques sont regroupées en un seul objet.
+- Les ressources égales sont regroupées en un seul objet.
 - Les objets inutilisés sont supprimés.
 
-Le code ci-dessous est un exemple. Notez cependant que cette méthode ne peut pas garantir la réduction de la taille du document.
+Le snippet ci-dessous est un exemple. Notez cependant que cette méthode ne peut pas garantir la réduction de la taille du document.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -194,7 +194,7 @@ private static void ShrinkImage()
 }
 ```
 
-Une autre façon est de redimensionner les images avec une résolution plus basse. Dans ce cas, nous devons définir ResizeImages sur true et MaxResolution sur la valeur appropriée.
+Une autre façon est de redimensionner les images avec une résolution plus basse. Dans ce cas, nous devrions définir ResizeImages sur true et MaxResolution sur la valeur appropriée.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -230,7 +230,7 @@ private static void ResizeImages()
 }
 ```
 
-Un autre point important est le temps d'exécution. Mais encore une fois, nous pouvons gérer ce paramètre aussi. Actuellement, nous pouvons utiliser deux algorithmes - Standard et Rapide. Pour contrôler le temps d'exécution, nous devons définir une propriété [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Le code ci-dessous démontre l'algorithme Rapide :
+Un autre point important est le temps d'exécution. Mais encore une fois, nous pouvons gérer ce paramètre aussi. Actuellement, nous pouvons utiliser deux algorithmes - Standard et Rapide. Pour contrôler le temps d'exécution, nous devrions définir une propriété [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Le snippet suivant démontre l'algorithme Rapide :
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -434,7 +434,7 @@ Les ressources d'optimisation appliquent ces méthodes au document. Si l'une de 
 
 ## Autres moyens de réduire la taille du document PDF
 
-### Suppression ou aplanissement des annotations
+### Suppression ou aplatissage des annotations
 
 Les annotations peuvent être supprimées lorsqu'elles ne sont pas nécessaires. Lorsqu'elles sont nécessaires mais ne nécessitent pas d'édition supplémentaire, elles peuvent être aplaties. Ces deux techniques réduiront la taille du fichier.
 
@@ -494,7 +494,7 @@ private static void FlattenPdfForms()
 
 ### Convertir un PDF de l'espace colorimétrique RVB en niveaux de gris
 
-Un fichier PDF comprend du texte, des images, des pièces jointes, des annotations, des graphiques et d'autres objets. Vous pouvez rencontrer un besoin de convertir un PDF de l'espace colorimétrique RVB en niveaux de gris afin qu'il soit plus rapide lors de l'impression de ces fichiers PDF. De plus, lorsque le fichier est converti en niveaux de gris, la taille du document est également réduite, mais cela peut également entraîner une diminution de la qualité du document. Cette fonctionnalité est actuellement prise en charge par la fonctionnalité Pre-Flight d'Adobe Acrobat, mais en ce qui concerne l'automatisation de bureau, Aspose.PDF est une solution ultime pour fournir de tels avantages pour les manipulations de documents. Afin de répondre à cette exigence, le code ci-dessous peut être utilisé.
+Un fichier PDF comprend du texte, des images, des pièces jointes, des annotations, des graphiques et d'autres objets. Vous pouvez rencontrer un besoin de convertir un PDF de l'espace colorimétrique RVB en niveaux de gris afin qu'il soit plus rapide lors de l'impression de ces fichiers PDF. De plus, lorsque le fichier est converti en niveaux de gris, la taille du document est également réduite, mais cela peut également entraîner une diminution de la qualité du document. Cette fonctionnalité est actuellement prise en charge par la fonctionnalité Pre-Flight d'Adobe Acrobat, mais en ce qui concerne l'automatisation de bureau, Aspose.PDF est une solution ultime pour fournir de tels leviers pour les manipulations de documents. Afin de répondre à cette exigence, le code suivant peut être utilisé.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -533,7 +533,7 @@ Cette fonctionnalité est prise en charge par la version 18.12 ou supérieure.
 
 {{% /alert %}}
 
-Aspose.PDF for .NET fournit un support de compression FlateDecode pour la fonctionnalité d'optimisation PDF. Le code ci-dessous montre comment utiliser l'option dans l'optimisation pour stocker des images avec une compression **FlateDecode** :
+Aspose.PDF for .NET fournit un support de compression FlateDecode pour la fonctionnalité d'optimisation PDF. Le code suivant montre comment utiliser l'option dans l'optimisation pour stocker des images avec une compression **FlateDecode** :
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -562,7 +562,7 @@ private static void OptimizeDocumentImagesWithFlateCompression()
 
 ### Stocker l'image dans XImageCollection
 
-Aspose.PDF for .NET offre la possibilité de stocker de nouvelles images dans **XImageCollection** avec compression FlateDecode. Pour activer cette option, vous pouvez utiliser le drapeau **ImageFilterType.Flate**. Le code ci-dessous montre comment utiliser cette fonctionnalité :
+Aspose.PDF for .NET offre la possibilité de stocker de nouvelles images dans **XImageCollection** avec compression FlateDecode. Pour activer cette option, vous pouvez utiliser le drapeau **ImageFilterType.Flate**. Le code suivant montre comment utiliser cette fonctionnalité :
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

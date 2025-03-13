@@ -81,7 +81,7 @@ sitemap:
 
 PDF 文档有时可能包含额外的数据。减少 PDF 文件的大小将帮助您优化网络传输和存储。这在网页发布、社交网络共享、通过电子邮件发送或存档存储时尤其方便。我们可以使用几种技术来优化 PDF：
 
-- 优化页面内容以便在线浏览。
+- 为在线浏览优化页面内容。
 - 缩小或压缩所有图像。
 - 启用重用页面内容。
 - 合并重复的流。
@@ -92,19 +92,19 @@ PDF 文档有时可能包含额外的数据。减少 PDF 文件的大小将帮�
 
 {{% alert color="primary" %}}
 
-优化方法的详细说明可以在优化方法概述页面中找到。
+ 优化方法的详细说明可以在优化方法概述页面中找到。
 
 {{% /alert %}}
 
 ## 为网络优化 PDF 文档
 
-优化，或称为网络线性化，指的是使 PDF 文件适合使用网页浏览器在线浏览的过程。要优化文件以便于网络显示：
+优化，或称为网络线性化，指的是使 PDF 文件适合使用网页浏览器在线浏览的过程。要为网页显示优化文件：
 
 1. 在 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象中打开输入文档。
 1. 使用 [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) 方法。
 1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存优化后的文档。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 以下代码片段演示了如何为网络优化 PDF 文档。
 
@@ -132,7 +132,7 @@ private static void OptimizeDocument()
 [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) 方法允许您通过剔除不必要的信息来减少文档大小。默认情况下，此方法的工作方式如下：
 
 - 删除文档页面上未使用的资源。
-- 相同的资源合并为一个对象。
+- 将相等的资源合并为一个对象。
 - 删除未使用的对象。
 
 下面的代码片段是一个示例。不过，请注意，此方法不能保证文档缩小。
@@ -271,7 +271,7 @@ private static void FastShrinkImages()
 
 ### 删除未使用的对象
 
-PDF 文档有时包含未从文档中的任何其他对象引用的 PDF 对象。例如，当页面从文档页面树中删除但页面对象本身未被删除时，可能会发生这种情况。删除这些对象不会使文档无效，而是缩小了文档。
+PDF 文档有时包含未从文档中的任何其他对象引用的 PDF 对象。例如，当从文档页面树中删除页面但页面对象本身未被删除时，可能会发生这种情况。删除这些对象不会使文档无效，而是缩小了文档。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -300,7 +300,7 @@ private static void OptimizeDocument()
 
 ### 删除未使用的流
 
-有时文档包含未使用的资源流。这些流不是“未使用的对象”，因为它们是从页面资源字典中引用的。因此，它们不会通过“删除未使用的对象”方法被删除。但是，这些流从未与页面内容一起使用。当图像从页面中删除但未从页面资源中删除时，可能会发生这种情况。此外，当从文档中提取页面且文档页面具有“公共”资源，即相同的 Resources 对象时，这种情况经常发生。页面内容会被分析以确定资源流是否被使用。未使用的流会被删除。这有时会减少文档大小。使用此技术与前一步类似：
+有时文档包含未使用的资源流。这些流不是“未使用的对象”，因为它们是从页面资源字典中引用的。因此，它们不会通过“删除未使用的对象”方法被删除。但是这些流从未与页面内容一起使用。当图像从页面中删除但未从页面资源中删除时，可能会发生这种情况。此外，当从文档中提取页面并且文档页面具有“公共”资源，即相同的 Resources 对象时，这种情况也经常发生。页面内容会被分析以确定资源流是否被使用。未使用的流会被删除。这有时会减少文档大小。使用此技术与前一步类似：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -394,7 +394,7 @@ private static void OptimizePdfDocumentWithReusePageContent()
 
 ### 取消嵌入字体
 
-如果文档使用嵌入字体，则意味着所有字体数据都存储在文档中。优点是，无论用户的计算机上是否安装字体，文档都可以查看。但是，嵌入字体会使文档变大。取消嵌入字体方法会删除所有嵌入的字体。因此，文档大小会减少，但如果未安装正确的字体，文档本身可能会变得不可读。
+如果文档使用嵌入字体，则意味着所有字体数据都存储在文档中。优点是，无论用户的计算机上是否安装字体，文档都可以查看。但是嵌入字体会使文档变大。取消嵌入字体方法会删除所有嵌入字体。因此，文档大小减少，但如果未安装正确的字体，文档本身可能会变得不可读。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -436,7 +436,7 @@ private static void OptimizePdfDocumentWithUnembedFonts()
 
 ### 删除或扁平化注释
 
-当注释不必要时，可以删除它们。当需要注释但不需要额外编辑时，可以将其扁平化。这两种技术都会减少文件大小。
+当注释不必要时，可以删除它们。当需要注释但不需要额外编辑时，可以将其扁平化。这两种技术都将减少文件大小。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -494,7 +494,7 @@ private static void FlattenPdfForms()
 
 ### 将 PDF 从 RGB 颜色空间转换为灰度
 
-PDF 文件包含文本、图像、附件、注释、图表和其他对象。您可能会遇到将 PDF 从 RGB 颜色空间转换为灰度的要求，以便在打印这些 PDF 文件时更快。此外，当文件转换为灰度时，文档大小也会减少，但这也可能导致文档质量下降。此功能目前由 Adobe Acrobat 的预检功能支持，但在谈到 Office 自动化时，Aspose.PDF 是提供此类文档操作的终极解决方案。为了实现此要求，可以使用以下代码片段。
+PDF 文件包含文本、图像、附件、注释、图形和其他对象。您可能会遇到将 PDF 从 RGB 颜色空间转换为灰度的要求，以便在打印这些 PDF 文件时更快。此外，当文件转换为灰度时，文档大小也会减少，但这也可能导致文档质量下降。此功能目前由 Adobe Acrobat 的预检功能支持，但在谈到 Office 自动化时，Aspose.PDF 是提供此类文档操作的终极解决方案。为了实现此要求，可以使用以下代码片段。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -533,7 +533,7 @@ private static void ConvertRgbToGrayScale()
 
 {{% /alert %}}
 
-Aspose.PDF for .NET 提供 FlateDecode 压缩的 PDF 优化功能支持。以下代码片段显示了如何在优化中使用该选项以 **FlateDecode** 压缩存储图像：
+Aspose.PDF for .NET 提供对 PDF 优化功能的 FlateDecode 压缩支持。以下代码片段演示了如何在优化中使用该选项以 **FlateDecode** 压缩存储图像：
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -562,7 +562,7 @@ private static void OptimizeDocumentImagesWithFlateCompression()
 
 ### 在 XImageCollection 中存储图像
 
-Aspose.PDF for .NET 提供将新图像存储到 **XImageCollection** 中的能力，并使用 FlateDecode 压缩。要启用此选项，您可以使用 **ImageFilterType.Flate** 标志。以下代码片段显示了如何使用此功能：
+Aspose.PDF for .NET 提供将新图像存储到 **XImageCollection** 中并使用 FlateDecode 压缩的能力。要启用此选项，您可以使用 **ImageFilterType.Flate** 标志。以下代码片段演示了如何使用此功能：
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
