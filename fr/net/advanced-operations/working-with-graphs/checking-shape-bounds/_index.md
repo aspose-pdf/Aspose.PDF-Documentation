@@ -1,9 +1,9 @@
 ---
-title: Verificar límites de forma en la colección de Shapes
+title: Vérifier les limites de forme dans la collection Shapes
 type: docs
 weight: 70
-url: /es/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Aprenda cómo verificar los límites de una forma cuando se inserta en la colección de Shapes para asegurarse de que se ajuste dentro de su contenedor padre.
+url: /fr/net/aspose-pdf-drawing-graph-shapes-bounds-check/
+description: Apprenez à vérifier les limites d'une forme lorsqu'elle est insérée dans la collection Shapes pour garantir qu'elle s'adapte à son conteneur parent.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "La nueva función de verificación de límites de Aspose.PDF for .NET en la colección `Drawing.Graph.Shapes` valida automáticamente las dimensiones de los elementos contra los contenedores padres, evitando el desbordamiento del diseño. Se activan excepciones cuando los elementos exceden los límites del contenedor, aplicando restricciones de tamaño estrictas durante la inserción para garantizar un formato PDF preciso y optimizar la precisión del diseño.",
+    "abstract": "La nouvelle fonctionnalité de vérification des limites de Aspose.PDF for .NET dans la collection `Drawing.Graph.Shapes` valide automatiquement les dimensions des éléments par rapport aux conteneurs parents, empêchant le débordement de mise en page. Elle déclenche des exceptions lorsque les éléments dépassent les limites du conteneur, imposant des contraintes de taille strictes lors de l'insertion pour garantir un formatage PDF précis et rationaliser l'exactitude de la conception.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -73,29 +73,29 @@ draft: false
 }
 </script>
 
-## Introducción
-Este documento proporciona una guía detallada sobre el uso de la función de verificación de límites en la colección de Shapes. Esta función asegura que los elementos se ajusten dentro de su contenedor padre y se puede configurar para lanzar una excepción si el componente no se ajusta. Vamos a repasar los pasos para implementar esta funcionalidad y proporcionar un ejemplo completo.
+## Introduction
+Ce document fournit un guide détaillé sur l'utilisation de la fonctionnalité de vérification des limites dans la collection Shapes. Cette fonctionnalité garantit que les éléments s'adaptent à leur conteneur parent et peut être configurée pour déclencher une exception si le composant ne s'adapte pas. Nous allons passer en revue les étapes pour mettre en œuvre cette fonctionnalité et fournir un exemple complet.
 
-## Requisitos previos
-Necesitará lo siguiente:
-* Visual Studio 2019 o posterior
-* Aspose.PDF for .NET 25.3 o posterior
-* Un archivo PDF de muestra que contenga algunas páginas
+## Prérequis
+Vous aurez besoin des éléments suivants :
+* Visual Studio 2019 ou version ultérieure
+* Aspose.PDF for .NET 25.3 ou version ultérieure
+* Un fichier PDF d'exemple contenant quelques pages
 
-Puede descargar la biblioteca Aspose.PDF for .NET desde el sitio web oficial o instalarla utilizando el Administrador de paquetes NuGet en Visual Studio.
+Vous pouvez télécharger la bibliothèque Aspose.PDF for .NET depuis le site officiel ou l'installer en utilisant le gestionnaire de packages NuGet dans Visual Studio.
 
-## Pasos
-Aquí están los pasos para completar la tarea:
-1. Crear un nuevo documento y agregar una página.
-2. Crear un objeto `Graph` con dimensiones especificadas.
-3. Crear un objeto `Shape` con dimensiones especificadas.
-4. Establecer el `BoundsCheckMode` en `ThrowExceptionIfDoesNotFit`.
-5. Intentar agregar la forma al gráfico.
+## Étapes
+Voici les étapes à suivre pour compléter la tâche :
+1. Créez un nouveau document et ajoutez une page.
+2. Créez un objet `Graph` avec des dimensions spécifiées.
+3. Créez un objet `Shape` avec des dimensions spécifiées.
+4. Définissez le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit`.
+5. Essayez d'ajouter la forme au graphique.
 
-Veamos cómo implementar estos pasos en código C#.
+Voyons comment mettre en œuvre ces étapes dans le code C#.
 
-### Paso 1: Crear un nuevo documento y agregar una página
-Primero, cree un nuevo documento PDF y agregue una página a él.
+### Étape 1 : Créer un nouveau document et ajouter une page
+Tout d'abord, créez un nouveau document PDF et ajoutez-y une page.
 
 ```csharp
 using (var doc = new Aspose.Pdf.Document())
@@ -104,8 +104,8 @@ using (var doc = new Aspose.Pdf.Document())
 }
 ```
 
-### Paso 2: Crear un objeto Graph con dimensiones especificadas
-A continuación, cree un objeto `Graph` con un ancho y alto de 100 unidades. Posicione el gráfico a 10 unidades desde la parte superior y 15 unidades desde la izquierda de la página. Agregue un borde negro al gráfico.
+### Étape 2 : Créer un objet Graph avec des dimensions spécifiées
+Ensuite, créez un objet `Graph` avec une largeur et une hauteur de 100 unités. Positionnez le graphique à 10 unités du haut et à 15 unités de la gauche de la page. Ajoutez une bordure noire au graphique.
 
 ```csharp
 var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -117,8 +117,8 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### Paso 3: Crear un objeto Aspose.Pdf.Drawing.Shape (por ejemplo, Aspose.Pdf.Drawing.Rectangle) con dimensiones especificadas
-Cree un objeto Rectangle con un ancho y alto de 50 unidades. Posicione el rectángulo en (-1, 0), que está fuera de los límites del gráfico.
+### Étape 3 : Créer un objet Aspose.Pdf.Drawing.Shape (par exemple, Aspose.Pdf.Drawing.Rectangle) avec des dimensions spécifiées
+Créez un objet Rectangle avec une largeur et une hauteur de 50 unités. Positionnez le rectangle à (-1, 0), ce qui est en dehors des limites du graphique.
 
 ```csharp
 Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
@@ -130,35 +130,35 @@ Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 
 };
 ```
 
-### Paso 4: Establecer el BoundsCheckMode en ThrowExceptionIfDoesNotFit
-Establezca el `BoundsCheckMode` en `ThrowExceptionIfDoesNotFit` para asegurarse de que se lance una excepción si el rectángulo no se ajusta dentro del gráfico.
+### Étape 4 : Définir le BoundsCheckMode sur ThrowExceptionIfDoesNotFit
+Définissez le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit` pour garantir qu'une exception soit lancée si le rectangle ne s'adapte pas au graphique.
 
 ```csharp
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 ```
 
-### Paso 5: Intentar agregar el rectángulo al gráfico
-Intente agregar el rectángulo al gráfico. Esto lanzará una `Aspose.Pdf.BoundsOutOfRangeException` porque el rectángulo no se ajusta dentro de las dimensiones del gráfico.
+### Étape 5 : Essayer d'ajouter le rectangle au graphique
+Essayez d'ajouter le rectangle au graphique. Cela lancera une `Aspose.Pdf.BoundsOutOfRangeException` car le rectangle ne s'adapte pas aux dimensions du graphique.
 
 ```csharp
 graph.Shapes.Add(rect);
 ```
 
-## Salida
-Después de ejecutar el código, la salida esperada será una `Aspose.Pdf.BoundsOutOfRangeException` con el mensaje:
+## Sortie
+Après l'exécution du code, la sortie attendue sera une `Aspose.Pdf.BoundsOutOfRangeException` avec le message :
 
 ```
 Bounds not fit. Container dimensions: 100x100
 ```
 
-## Solución de problemas
-En caso de problemas, aquí hay algunos consejos:
-* Asegúrese de que el `BoundsCheckMode` esté configurado correctamente.
-* Verifique que las dimensiones del elemento y del contenedor sean precisas.
-* Verifique la posición del elemento dentro del contenedor.
+## Dépannage
+En cas de problèmes, voici quelques conseils :
+* Assurez-vous que le `BoundsCheckMode` est correctement défini.
+* Vérifiez que les dimensions de l'élément et du conteneur sont exactes.
+* Vérifiez le positionnement de l'élément dans le conteneur.
 
-## Ejemplo completo
-A continuación se muestra un ejemplo completo que demuestra todos los pasos combinados:
+## Exemple complet
+Voici un exemple complet démontrant toutes les étapes combinées :
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -235,5 +235,5 @@ private static void CheckShapeBounds()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Conclusión
-La función de verificación de límites en la colección de Shapes es una herramienta poderosa para garantizar que los elementos se ajusten dentro de los contenedores padres. Puede prevenir problemas de diseño en sus documentos PDF configurando el BoundsCheckMode en ThrowExceptionIfDoesNotFit. Esta función es particularmente útil en escenarios donde la posición y el tamaño precisos de los elementos son críticos. Para más detalles, visite la [documentación oficial](https://docs.aspose.com/pdf/net/).
+## Conclusion
+La fonctionnalité de vérification des limites dans la collection Shapes est un outil puissant pour garantir que les éléments s'adaptent aux conteneurs parents. Vous pouvez éviter les problèmes de mise en page dans vos documents PDF en définissant le BoundsCheckMode sur ThrowExceptionIfDoesNotFit. Cette fonctionnalité est particulièrement utile dans les scénarios où le positionnement et la taille précis des éléments sont critiques. Pour plus de détails, visitez la [documentation officielle](https://docs.aspose.com/pdf/net/).
