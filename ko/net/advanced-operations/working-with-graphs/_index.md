@@ -9,10 +9,8 @@ url: /ko/net/working-with-graphs/
 description: 이 문서에서는 그래프가 무엇인지, 채워진 사각형 객체를 만드는 방법 및 기타 기능에 대해 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
-changefreq: "weekly"
-priority: 0.7
-aliases:
-- /net/working-with-graphs/
+    changefreq: "weekly"
+    priority: 0.7
 ---
 <script type="application/ld+json">
 {

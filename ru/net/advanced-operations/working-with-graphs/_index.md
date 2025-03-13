@@ -9,10 +9,8 @@ url: /ru/net/working-with-graphs/
 description: Эта статья объясняет, что такое график, как создать объект заполненного прямоугольника и другие функции
 lastmod: "2022-02-17"
 sitemap:
-changefreq: "weekly"
-priority: 0.7
-aliases:
-- /net/working-with-graphs/
+    changefreq: "weekly"
+    priority: 0.7
 ---
 <script type="application/ld+json">
 {

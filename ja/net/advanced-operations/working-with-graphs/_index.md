@@ -9,10 +9,8 @@ url: /ja/net/working-with-graphs/
 description: この記事では、グラフとは何か、塗りつぶされた長方形オブジェクトの作成方法、およびその他の機能について説明します
 lastmod: "2022-02-17"
 sitemap:
-changefreq: "weekly"
-priority: 0.7
-aliases:
-- /net/working-with-graphs/
+    changefreq: "weekly"
+    priority: 0.7
 ---
 <script type="application/ld+json">
 {
