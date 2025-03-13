@@ -9,8 +9,10 @@ url: /es/net/working-with-graphs/
 description: Este artículo explica qué es un Gráfico, cómo crear un objeto rectángulo relleno y otras funciones
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+changefreq: "weekly"
+priority: 0.7
+aliases:
+- /net/working-with-graphs/
 ---
 <script type="application/ld+json">
 {

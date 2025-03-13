@@ -9,8 +9,10 @@ url: /ar/net/working-with-graphs/
 description: تشرح هذه المقالة ما هو الرسم البياني، كيفية إنشاء كائن مستطيل مملوء، ووظائف أخرى
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+changefreq: "weekly"
+priority: 0.7
+aliases:
+- /net/working-with-graphs/
 ---
 <script type="application/ld+json">
 {

@@ -9,8 +9,10 @@ url: /zh/net/working-with-graphs/
 description: 本文解释了什么是图形，如何创建填充矩形对象以及其他功能
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+changefreq: "weekly"
+priority: 0.7
+aliases:
+- /net/working-with-graphs/
 ---
 <script type="application/ld+json">
 {

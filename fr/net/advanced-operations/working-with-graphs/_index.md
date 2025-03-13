@@ -9,8 +9,10 @@ url: /fr/net/working-with-graphs/
 description: Cet article explique ce qu'est un Graphique, comment créer un objet rectangle rempli, et d'autres fonctions
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+changefreq: "weekly"
+priority: 0.7
+aliases:
+- /net/working-with-graphs/
 ---
 <script type="application/ld+json">
 {

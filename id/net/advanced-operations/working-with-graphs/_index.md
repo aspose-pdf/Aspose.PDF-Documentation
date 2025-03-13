@@ -9,8 +9,10 @@ url: /id/net/working-with-graphs/
 description: Artikel ini menjelaskan apa itu Grafik, bagaimana cara membuat objek persegi panjang terisi, dan fungsi lainnya
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+changefreq: "weekly"
+priority: 0.7
+aliases:
+- /net/working-with-graphs/
 ---
 <script type="application/ld+json">
 {
