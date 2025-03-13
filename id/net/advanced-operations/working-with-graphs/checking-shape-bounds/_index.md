@@ -1,9 +1,9 @@
 ---
-title: Memeriksa Batas Bentuk dalam Koleksi Aspose.Pdf.Drawing.Graph.Shapes
+title: Periksa batas bentuk dalam koleksi Shapes
 type: docs
-weight: 10
+weight: 70
 url: /id/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Pelajari cara memeriksa batas bentuk saat dimasukkan ke dalam koleksi Aspose.Pdf.Drawing.Graph.Shapes untuk memastikan bentuk tersebut sesuai dengan wadah induknya.
+description: Pelajari cara memeriksa batas sebuah bentuk saat dimasukkan ke dalam koleksi Shapes untuk memastikan itu sesuai dengan wadah induknya.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -11,9 +11,9 @@ draft: false
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Checking Element Bounds in Aspose.Pdf.Drawing.Graph.Shapes Collection",
+    "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Fitur pemeriksaan batas baru dari Aspose.PDF for .NET dalam koleksi `Drawing.Graph.Shapes` secara otomatis memvalidasi dimensi elemen terhadap wadah induk, mencegah overflow tata letak. Ini memicu pengecualian ketika elemen melebihi batas wadah, menegakkan batas ukuran yang ketat selama penyisipan untuk memastikan format PDF yang tepat dan memperlancar akurasi desain",
+    "abstract": "Fitur pemeriksaan batas baru Aspose.PDF for .NET dalam koleksi `Drawing.Graph.Shapes` secara otomatis memvalidasi dimensi elemen terhadap wadah induk, mencegah overflow tata letak. Ini memicu pengecualian ketika elemen melebihi batas wadah, menegakkan batas ukuran yang ketat selama penyisipan untuk memastikan format PDF yang tepat dan memperlancar akurasi desain",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -74,12 +74,12 @@ draft: false
 </script>
 
 ## Pendahuluan
-Dokumen ini memberikan panduan rinci tentang penggunaan fitur pemeriksaan batas dalam koleksi Aspose.Pdf.Drawing.Graph.Shapes. Fitur ini memastikan bahwa elemen sesuai dengan wadah induknya dan dapat dikonfigurasi untuk memicu pengecualian jika komponen tidak sesuai. Kami akan menjelaskan langkah-langkah untuk menerapkan fungsionalitas ini dan memberikan contoh lengkap.
+Dokumen ini memberikan panduan rinci tentang penggunaan fitur pemeriksaan batas dalam koleksi Shapes. Fitur ini memastikan bahwa elemen sesuai dengan wadah induknya dan dapat dikonfigurasi untuk memicu pengecualian jika komponen tidak sesuai. Kami akan menjelaskan langkah-langkah untuk menerapkan fungsionalitas ini dan memberikan contoh lengkap.
 
 ## Prasyarat
-Anda akan memerlukan hal-hal berikut:
-* Visual Studio 2019 atau yang lebih baru
-* Aspose.PDF for .NET 25.3 atau yang lebih baru
+Anda akan memerlukan yang berikut:
+* Visual Studio 2019 atau lebih baru
+* Aspose.PDF for .NET 25.3 atau lebih baru
 * Sebuah file PDF contoh yang berisi beberapa halaman
 
 Anda dapat mengunduh pustaka Aspose.PDF for .NET dari situs web resmi atau menginstalnya menggunakan NuGet Package Manager di Visual Studio.
@@ -131,7 +131,7 @@ Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 
 ```
 
 ### Langkah 4: Atur BoundsCheckMode ke ThrowExceptionIfDoesNotFit
-Atur `BoundsCheckMode` ke `ThrowExceptionIfDoesNotFit` untuk memastikan bahwa pengecualian akan dilempar jika persegi panjang tidak sesuai dengan grafik.
+Atur `BoundsCheckMode` ke `ThrowExceptionIfDoesNotFit` untuk memastikan bahwa pengecualian dilemparkan jika persegi panjang tidak sesuai dengan grafik.
 
 ```csharp
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
@@ -158,7 +158,7 @@ Jika terjadi masalah, berikut beberapa tips:
 * Periksa posisi elemen dalam wadah.
 
 ## Contoh Lengkap
-Berikut adalah contoh lengkap yang menunjukkan semua langkah yang digabungkan:
+Di bawah ini adalah contoh lengkap yang menunjukkan semua langkah yang digabungkan:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -236,4 +236,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## Kesimpulan
-Fitur pemeriksaan batas dalam koleksi 'Aspose.Pdf.Drawing.Graph.Shapes' adalah alat yang kuat untuk memastikan elemen sesuai dengan wadah induk. Anda dapat mencegah masalah tata letak dalam dokumen PDF Anda dengan mengatur BoundsCheckMode ke ThrowExceptionIfDoesNotFit. Fitur ini sangat berguna dalam skenario di mana penempatan dan ukuran elemen yang tepat sangat penting. Untuk detail lebih lanjut, kunjungi [dokumentasi resmi](https://docs.aspose.com/pdf/net/).
+Fitur pemeriksaan batas dalam koleksi Shapes adalah alat yang kuat untuk memastikan elemen sesuai dengan wadah induk. Anda dapat mencegah masalah tata letak dalam dokumen PDF Anda dengan mengatur BoundsCheckMode ke ThrowExceptionIfDoesNotFit. Fitur ini sangat berguna dalam skenario di mana penempatan dan ukuran elemen yang tepat sangat penting. Untuk detail lebih lanjut, kunjungi [dokumentasi resmi](https://docs.aspose.com/pdf/net/).

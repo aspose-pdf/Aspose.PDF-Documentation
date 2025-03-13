@@ -1,9 +1,9 @@
 ---
-title: Checking Shape Bounds in Aspose.Pdf.Drawing.Graph.Shapes Collection
+title: Check shape bounds in Shapes collection
 type: docs
-weight: 10
+weight: 70
 url: /net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Learn how to check the bounds of an shape when inserted into the Aspose.Pdf.Drawing.Graph.Shapes collection to ensure it fits within its parent container.
+description: Learn how to check the bounds of an shape when inserted into the Shapes collection to ensure it fits within its parent container.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -11,7 +11,7 @@ draft: false
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Checking Element Bounds in Aspose.Pdf.Drawing.Graph.Shapes Collection",
+    "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
     "abstract": "Aspose.PDF for .NET's new bounds-checking feature in the `Drawing.Graph.Shapes` collection automatically validates element dimensions against parent containers, preventing layout overflow. It triggers exceptions when elements exceed container limits, enforcing strict size constraints during insertion to ensure precise PDF formatting and streamline design accuracy",
     "author": {
@@ -74,7 +74,7 @@ draft: false
 </script>
 
 ## Introduction
-This document provides a detailed guide on using the bounds-checking feature in the Aspose.Pdf.Drawing.Graph.Shapes collection. This feature ensures that elements fit within their parent container and can be configured to throw an exception if the component does not fit. We will walk through the steps to implement this functionality and provide a complete example.
+This document provides a detailed guide on using the bounds-checking feature in the Shapes collection. This feature ensures that elements fit within their parent container and can be configured to throw an exception if the component does not fit. We will walk through the steps to implement this functionality and provide a complete example.
 
 ## Prerequisites
 You will need the following:
@@ -236,4 +236,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## Conclusion
-The bounds-checking feature in the 'Aspose.Pdf.Drawing.Graph. Shapes' collection is a powerful tool for ensuring elements fit within parent containers. You can prevent layout issues in your PDF documents by setting the BoundsCheckMode to ThrowExceptionIfDoesNotFit. This feature is particularly useful in scenarios where precise element positioning and sizing are critical. For further details, visit the [official documentation](https://docs.aspose.com/pdf/net/).
+The bounds-checking feature in the Shapes collection is a powerful tool for ensuring elements fit within parent containers. You can prevent layout issues in your PDF documents by setting the BoundsCheckMode to ThrowExceptionIfDoesNotFit. This feature is particularly useful in scenarios where precise element positioning and sizing are critical. For further details, visit the [official documentation](https://docs.aspose.com/pdf/net/).

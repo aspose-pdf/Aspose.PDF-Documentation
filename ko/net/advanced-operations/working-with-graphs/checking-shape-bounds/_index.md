@@ -1,9 +1,9 @@
 ---
-title: Aspose.Pdf.Drawing.Graph.Shapes 컬렉션에서 모양 경계 확인
+title: シェイプコレクションの形状境界をチェックする
 type: docs
-weight: 10
-url: /ko/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Aspose.Pdf.Drawing.Graph.Shapes 컬렉션에 삽입된 모양의 경계를 확인하여 부모 컨테이너에 맞는지 확인하는 방법을 알아보세요.
+weight: 70
+url: /ja/net/aspose-pdf-drawing-graph-shapes-bounds-check/
+description: シェイプがシェイプコレクションに挿入されたときの境界をチェックして、親コンテナ内に収まることを確認する方法を学びます。
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -11,9 +11,9 @@ draft: false
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Checking Element Bounds in Aspose.Pdf.Drawing.Graph.Shapes Collection",
+    "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Aspose.PDF for .NET의 새로운 경계 확인 기능은 `Drawing.Graph.Shapes` 컬렉션에서 요소의 치수를 부모 컨테이너와 자동으로 검증하여 레이아웃 오버플로우를 방지합니다. 요소가 컨테이너 한계를 초과할 때 예외를 발생시켜 삽입 중에 엄격한 크기 제약을 적용하여 정확한 PDF 형식을 보장하고 디자인 정확성을 간소화합니다.",
+    "abstract": "Aspose.PDF for .NETの新しい境界チェック機能は、`Drawing.Graph.Shapes`コレクション内の要素の寸法を親コンテナに対して自動的に検証し、レイアウトのオーバーフローを防ぎます。要素がコンテナの制限を超えると例外が発生し、挿入時に厳密なサイズ制約を強制して、正確なPDFフォーマットを確保し、デザインの精度を向上させます。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -73,29 +73,29 @@ draft: false
 }
 </script>
 
-## 소개
-이 문서는 Aspose.Pdf.Drawing.Graph.Shapes 컬렉션에서 경계 확인 기능을 사용하는 방법에 대한 자세한 가이드를 제공합니다. 이 기능은 요소가 부모 컨테이너에 맞도록 보장하며, 구성하여 구성 요소가 맞지 않을 경우 예외를 발생시킬 수 있습니다. 이 기능을 구현하는 단계를 안내하고 완전한 예제를 제공합니다.
+## はじめに
+このドキュメントは、シェイプコレクションにおける境界チェック機能の使用に関する詳細なガイドを提供します。この機能は、要素が親コンテナ内に収まることを保証し、コンポーネントが収まらない場合に例外をスローするように構成できます。この機能を実装する手順を説明し、完全な例を提供します。
 
-## 전제 조건
-다음이 필요합니다:
-* Visual Studio 2019 이상
-* Aspose.PDF for .NET 25.3 이상
-* 몇 페이지가 포함된 샘플 PDF 파일
+## 前提条件
+以下が必要です：
+* Visual Studio 2019以降
+* Aspose.PDF for .NET 25.3以降
+* ページを含むサンプルPDFファイル
 
-Aspose.PDF for .NET 라이브러리는 공식 웹사이트에서 다운로드하거나 Visual Studio의 NuGet 패키지 관리자를 사용하여 설치할 수 있습니다.
+Aspose.PDF for .NETライブラリは公式ウェブサイトからダウンロードするか、Visual StudioのNuGetパッケージマネージャーを使用してインストールできます。
 
-## 단계
-작업을 완료하기 위한 단계는 다음과 같습니다:
-1. 새 문서를 만들고 페이지를 추가합니다.
-2. 지정된 치수로 `Graph` 객체를 만듭니다.
-3. 지정된 치수로 `Shape` 객체를 만듭니다.
-4. `BoundsCheckMode`를 `ThrowExceptionIfDoesNotFit`로 설정합니다.
-5. 그래프에 모양을 추가하려고 시도합니다.
+## 手順
+タスクを完了するための手順は以下の通りです：
+1. 新しいドキュメントを作成し、ページを追加します。
+2. 指定された寸法で`Graph`オブジェクトを作成します。
+3. 指定された寸法で`Shape`オブジェクトを作成します。
+4. `BoundsCheckMode`を`ThrowExceptionIfDoesNotFit`に設定します。
+5. シェイプをグラフに追加しようとします。
 
-이 단계들을 C# 코드로 구현하는 방법을 살펴보겠습니다.
+これらの手順をC#コードで実装する方法を見てみましょう。
 
-### 단계 1: 새 문서 만들고 페이지 추가
-먼저, 새 PDF 문서를 만들고 페이지를 추가합니다.
+### ステップ1: 新しいドキュメントを作成し、ページを追加する
+まず、新しいPDFドキュメントを作成し、それにページを追加します。
 
 ```csharp
 using (var doc = new Aspose.Pdf.Document())
@@ -104,8 +104,8 @@ using (var doc = new Aspose.Pdf.Document())
 }
 ```
 
-### 단계 2: 지정된 치수로 Graph 객체 만들기
-다음으로, 너비와 높이가 100 단위인 `Graph` 객체를 만듭니다. 페이지의 상단에서 10 단위, 왼쪽에서 15 단위 떨어진 위치에 그래프를 배치합니다. 그래프에 검은색 테두리를 추가합니다.
+### ステップ2: 指定された寸法でグラフオブジェクトを作成する
+次に、幅と高さが100ユニットの`Graph`オブジェクトを作成します。グラフをページの上から10ユニット、左から15ユニットの位置に配置します。グラフに黒い境界を追加します。
 
 ```csharp
 var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -117,8 +117,8 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### 단계 3: 지정된 치수로 Aspose.Pdf.Drawing.Shape 객체 (예: Aspose.Pdf.Drawing.Rectangle) 만들기
-너비와 높이가 50 단위인 사각형 객체를 만듭니다. 사각형을 (-1, 0) 위치에 배치하는데, 이는 그래프의 경계를 벗어납니다.
+### ステップ3: 指定された寸法でAspose.Pdf.Drawing.Shapeオブジェクト（例えば、Aspose.Pdf.Drawing.Rectangle）を作成する
+幅と高さが50ユニットの長方形オブジェクトを作成します。長方形を(-1, 0)に配置します。これはグラフの境界の外側です。
 
 ```csharp
 Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
@@ -130,35 +130,35 @@ Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 
 };
 ```
 
-### 단계 4: BoundsCheckMode를 ThrowExceptionIfDoesNotFit로 설정
-사각형이 그래프 내에 맞지 않을 경우 예외가 발생하도록 `BoundsCheckMode`를 `ThrowExceptionIfDoesNotFit`로 설정합니다.
+### ステップ4: BoundsCheckModeをThrowExceptionIfDoesNotFitに設定する
+長方形がグラフ内に収まらない場合に例外がスローされるように、`BoundsCheckMode`を`ThrowExceptionIfDoesNotFit`に設定します。
 
 ```csharp
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 ```
 
-### 단계 5: 사각형을 그래프에 추가하려고 시도
-사각형을 그래프에 추가하려고 시도합니다. 이는 사각형이 그래프의 치수 내에 맞지 않기 때문에 `Aspose.Pdf.BoundsOutOfRangeException`을 발생시킵니다.
+### ステップ5: 長方形をグラフに追加しようとする
+長方形をグラフに追加しようとします。これは、長方形がグラフの寸法内に収まらないため、`Aspose.Pdf.BoundsOutOfRangeException`をスローします。
 
 ```csharp
 graph.Shapes.Add(rect);
 ```
 
-## 출력
-코드를 실행한 후 예상 출력은 다음과 같은 `Aspose.Pdf.BoundsOutOfRangeException`입니다:
+## 出力
+コードを実行した後、期待される出力は、次のメッセージを持つ`Aspose.Pdf.BoundsOutOfRangeException`になります：
 
 ```
 Bounds not fit. Container dimensions: 100x100
 ```
 
-## 문제 해결
-문제가 발생할 경우, 다음 몇 가지 팁을 참고하세요:
-* `BoundsCheckMode`가 올바르게 설정되었는지 확인합니다.
-* 요소와 컨테이너의 치수가 정확한지 확인합니다.
-* 컨테이너 내에서 요소의 위치를 확인합니다.
+## トラブルシューティング
+問題が発生した場合、以下のいくつかのヒントがあります：
+* `BoundsCheckMode`が正しく設定されていることを確認してください。
+* 要素とコンテナの寸法が正確であることを確認してください。
+* コンテナ内の要素の位置を確認してください。
 
-## 전체 예제
-아래는 모든 단계를 결합한 전체 예제입니다:
+## 完全な例
+以下は、すべての手順を組み合わせた完全な例です：
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -235,5 +235,5 @@ private static void CheckShapeBounds()
 {{< /tab >}}
 {{< /tabs >}}
 
-## 결론
-'Aspose.Pdf.Drawing.Graph.Shapes' 컬렉션의 경계 확인 기능은 요소가 부모 컨테이너에 맞도록 보장하는 강력한 도구입니다. `BoundsCheckMode`를 `ThrowExceptionIfDoesNotFit`로 설정하여 PDF 문서에서 레이아웃 문제를 방지할 수 있습니다. 이 기능은 요소의 정확한 위치 지정 및 크기가 중요한 시나리오에서 특히 유용합니다. 자세한 내용은 [공식 문서](https://docs.aspose.com/pdf/net/)를 방문하세요.
+## 結論
+シェイプコレクションの境界チェック機能は、要素が親コンテナ内に収まることを保証するための強力なツールです。`BoundsCheckMode`を`ThrowExceptionIfDoesNotFit`に設定することで、PDFドキュメント内のレイアウトの問題を防ぐことができます。この機能は、要素の正確な配置とサイズが重要なシナリオで特に便利です。詳細については、[公式ドキュメント](https://docs.aspose.com/pdf/net/)を訪れてください。
