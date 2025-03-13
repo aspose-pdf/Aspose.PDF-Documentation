@@ -95,6 +95,10 @@ The following types of shapes are supported by the [Graph](https://reference.asp
 - [Rectangle](/pdf/net/add-rectangle/) - is one of the many fundamental shapes you'll see in graphs, its can be very useful in helping you solve a problem.
 - [Ellipse](/pdf/net/add-ellipse/) - is a set of points on a plane, creating an oval, curved shape.
 
+The following operations are supported for shape types:
+- [Check bounds](/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - check shape bounds in Shapes collection.
+
+
 The above details are also depicted in the figures below:
 
 ![Figures in Graphs](graphs.png)

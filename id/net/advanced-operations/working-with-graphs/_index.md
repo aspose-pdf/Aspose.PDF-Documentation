@@ -82,16 +82,20 @@ sitemap:
 ## Apa itu Grafik
 
 Menambahkan grafik ke dokumen PDF adalah tugas yang sangat umum bagi pengembang saat bekerja dengan Adobe Acrobat Writer atau aplikasi pemrosesan PDF lainnya. Ada banyak jenis grafik yang dapat digunakan dalam aplikasi PDF.
-[Aspose.PDF for .NET](/pdf/id/net/) juga mendukung penambahan grafik ke dokumen PDF. Untuk tujuan ini, kelas Grafik disediakan. Grafik adalah elemen tingkat paragraf dan dapat ditambahkan ke koleksi Paragraf dalam instance Halaman. Sebuah instance Grafik berisi koleksi Bentuk.
+[Aspose.PDF for .NET](/pdf/net/) juga mendukung penambahan grafik ke dokumen PDF. Untuk tujuan ini, kelas Grafik disediakan. Grafik adalah elemen tingkat paragraf dan dapat ditambahkan ke koleksi Paragraf dalam instance Halaman. Sebuah instance Grafik berisi koleksi Bentuk.
 
 Jenis bentuk berikut didukung oleh kelas [Grafik](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph):
 
-- [Busur](/pdf/id/net/add-arc/) - kadang-kadang juga disebut bendera adalah pasangan terurut dari simpul yang berdekatan, tetapi kadang-kadang juga disebut garis terarah.
-- [Lingkaran](/pdf/id/net/add-circle/) - menampilkan data menggunakan lingkaran yang dibagi menjadi sektor. Kami menggunakan grafik lingkaran (juga disebut diagram pai) untuk menunjukkan bagaimana data mewakili bagian dari satu keseluruhan atau satu kelompok.
-- [Kurva](/pdf/id/net/add-curve/) - adalah persatuan terhubung dari garis proyektif, setiap garis bertemu tiga garis lainnya di titik ganda biasa.
-- [Garis](/pdf/id/net/add-line) - grafik garis digunakan untuk menampilkan data kontinu dan dapat berguna dalam memprediksi peristiwa di masa depan ketika menunjukkan tren dari waktu ke waktu.
-- [Persegi panjang](/pdf/id/net/add-rectangle/) - adalah salah satu dari banyak bentuk dasar yang akan Anda lihat dalam grafik, ini bisa sangat berguna dalam membantu Anda menyelesaikan masalah.
-- [Elips](/pdf/id/net/add-ellipse/) - adalah sekumpulan titik pada bidang, menciptakan bentuk oval yang melengkung.
+- [Busur](/pdf/net/add-arc/) - terkadang juga disebut sebagai bendera adalah pasangan terurut dari simpul yang berdekatan, tetapi terkadang juga disebut sebagai garis terarah.
+- [Lingkaran](/pdf/net/add-circle/) - menampilkan data menggunakan lingkaran yang dibagi menjadi sektor. Kami menggunakan grafik lingkaran (juga disebut sebagai diagram pai) untuk menunjukkan bagaimana data mewakili bagian dari satu keseluruhan atau satu kelompok.
+- [Kurva](/pdf/net/add-curve/) - adalah persatuan terhubung dari garis proyektif, setiap garis bertemu dengan tiga garis lainnya di titik ganda biasa.
+- [Garis](/pdf/net/add-line) - grafik garis digunakan untuk menampilkan data kontinu dan dapat berguna dalam memprediksi peristiwa di masa depan ketika menunjukkan tren dari waktu ke waktu.
+- [Persegi panjang](/pdf/net/add-rectangle/) - adalah salah satu dari banyak bentuk dasar yang akan Anda lihat dalam grafik, ini bisa sangat berguna dalam membantu Anda menyelesaikan masalah.
+- [Elips](/pdf/net/add-ellipse/) - adalah sekumpulan titik pada bidang, menciptakan bentuk oval yang melengkung.
+
+Operasi berikut didukung untuk jenis bentuk:
+- [Periksa batas](/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - periksa batas bentuk dalam koleksi Bentuk.
+
 
 Detail di atas juga digambarkan dalam gambar di bawah ini:
 

@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /zh/net/working-with-graphs/
-description: 本文解释了什么是图形，如何创建填充矩形对象，以及其他功能
+description: 本文解释了什么是图形，如何创建填充矩形对象以及其他功能
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Working with Graphs in PDF file",
     "alternativeHeadline": "Create and Manipulate Graphs in PDF Files",
-    "abstract": "发现使用 Aspose.PDF for .NET 在 PDF 文档中生成和操作图形的强大新功能。此功能允许开发人员创建各种图形形状，包括弧、圆、线和矩形，增强其应用程序中数据的视觉呈现。优化您的 PDF 生成过程，轻松提供动态数据可视化",
+    "abstract": "发现使用 Aspose.PDF for .NET 在 PDF 文档中生成和操作图形的强大新功能。此功能允许开发人员创建多种图形形状，包括弧、圆、线和矩形，从而增强其应用程序中数据的视觉呈现。优化您的 PDF 生成过程，轻松提供动态数据可视化",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -75,22 +75,26 @@ sitemap:
         "@id": "/net/graphs/"
     },
     "dateModified": "2024-11-25",
-    "description": "本文解释了什么是图形，如何创建填充矩形对象，以及其他功能"
+    "description": "本文解释了什么是图形，如何创建填充矩形对象以及其他功能"
 }
 </script>
 
 ## 什么是图形
 
-在处理 Adobe Acrobat Writer 或其他 PDF 处理应用程序时，向 PDF 文档添加图形是开发人员非常常见的任务。PDF 应用程序中可以使用多种类型的图形。[Aspose.PDF for .NET](/pdf/zh/net/) 也支持向 PDF 文档添加图形。为此，提供了 Graph 类。Graph 是一个段落级元素，可以添加到 Page 实例中的 Paragraphs 集合中。Graph 实例包含一个形状的集合。
+在处理 Adobe Acrobat Writer 或其他 PDF 处理应用程序时，向 PDF 文档添加图形是开发人员非常常见的任务。PDF 应用程序中可以使用多种类型的图形。
+[Aspose.PDF for .NET](/pdf/net/) 也支持向 PDF 文档添加图形。为此，提供了 Graph 类。Graph 是一个段落级元素，可以添加到 Page 实例中的段落集合中。Graph 实例包含一个形状集合。
 
 [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) 类支持以下类型的形状：
 
-- [弧](/pdf/zh/net/add-arc/) - 有时也称为标志，是一对相邻顶点的有序对，但有时也称为有向线。
-- [圆](/pdf/zh/net/add-circle/) - 使用分成扇区的圆来显示数据。我们使用圆形图（也称为饼图）来显示数据如何代表一个整体或一个组的部分。
-- [曲线](/pdf/zh/net/add-curve/) - 是一组连接的投影线，每条线在普通双点上与三条其他线相交。
-- [线](/pdf/zh/net/add-line) - 线图用于显示连续数据，并且在显示随时间变化的趋势时可以对预测未来事件非常有用。
-- [矩形](/pdf/zh/net/add-rectangle/) - 是您在图形中看到的许多基本形状之一，它在帮助您解决问题时非常有用。
-- [椭圆](/pdf/zh/net/add-ellipse/) - 是平面上的一组点，形成一个椭圆形的曲线。
+- [弧](/pdf/net/add-arc/) - 有时也称为标志，是一对相邻顶点的有序对，但有时也称为有向线。
+- [圆](/pdf/net/add-circle/) - 使用分成扇区的圆来显示数据。我们使用圆形图（也称为饼图）来显示数据如何代表一个整体或一个组的部分。
+- [曲线](/pdf/net/add-curve/) - 是一组连接的投影线，每条线在普通双点上与三条其他线相交。
+- [线](/pdf/net/add-line) - 线图用于显示连续数据，当它们显示随时间变化的趋势时，可以在预测未来事件时非常有用。
+- [矩形](/pdf/net/add-rectangle/) - 是您在图形中看到的许多基本形状之一，它在帮助您解决问题时非常有用。
+- [椭圆](/pdf/net/add-ellipse/) - 是平面上的一组点，形成一个椭圆形的曲线。
+
+支持以下形状类型的操作：
+- [检查边界](/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - 检查形状集合中的形状边界。
 
 上述细节也在下面的图中描绘：
 
