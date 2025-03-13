@@ -39,13 +39,19 @@ The following Python code sample shows how to convert an HTML document to a PDF.
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "little_html.html"
-    output_pdf = DIR_OUTPUT + "convert_html_to_pdf.pdf"
-    options = ap.HtmlLoadOptions()
-    document = ap.Document(input_pdf, options)
-    document.save(output_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+
+    load_options = apdf.HtmlLoadOptions()
+
+    document = apdf.Document(path_infile, load_options)
+    document.save(path_outfile)
+    print(infile + " converted into " + outfile)
 ```
 
 {{% alert color="success" %}}

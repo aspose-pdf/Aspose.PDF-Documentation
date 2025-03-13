@@ -23,23 +23,38 @@ Below code snippet follows these steps:
 1. Instantiate a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object
 1. Add a [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) to document object
 1. Create a [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) object
-1. Add TextFragment to [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection of the page
+1. Set Text Colors
+1. Create a Text Builder
+1. Add [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) to the Page
 1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) resultant PDF document
 
 Following code snippet is a "Hello World" program to exhibit working of Aspose.PDF for Python via .NET API.
 
 ```python
 
-    import aspose.pdf as ap
+    from datetime import timedelta
+    import aspose.pdf as apdf
 
     # Initialize document object
-    document = ap.Document()
+    document = apdf.Document()
     # Add page
     page = document.pages.add()
-    # Initialize textfragment object
-    text_fragment = ap.text.TextFragment("Hello,world!")
-    # Add text fragment to new page
-    page.paragraphs.add(text_fragment)
-    # Save updated PDF
-    document.save("output.pdf")
+    # Add text to new page
+    textFragment = apdf.text.TextFragment("Hello, world!")
+    textFragment.position = apdf.text.Position(100, 600)
+
+    textFragment.TextState.FontSize = 12
+    textFragment.TextState.Font = apdf.apdf.text.FontRepository.find_font(
+        "TimesNewRoman"
+    )
+    textFragment.TextState.background_color = apdf.Color.blue
+    textFragment.TextState.foreground_color = apdf.Color.yellow
+
+    # Create TextBuilder object
+    textBuilder = apdf.text.TextBuilder(page)
+
+    # Append the text fragment to the PDF page
+    textBuilder.append_text(textFragment)
+
+    document.save("HelloWorld_out.pdf")
 ```

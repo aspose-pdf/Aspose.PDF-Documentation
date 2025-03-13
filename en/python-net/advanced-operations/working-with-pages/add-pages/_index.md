@@ -99,14 +99,15 @@ The following code snippet shows you how to insert a page in a PDF file.
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from os import path
 
-    # Open document
-    document = ap.Document(input_pdf)
-    # Insert a empty page in a PDF
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, outfile)
+
+    document = apdf.Document(path_infile)
     document.pages.insert(2)
-    # Save output file
-    document.save(output_pdf)
+    document.save(path_outfile)
 ```
 
 ### Add an Empty Page at the End of a PDF File

@@ -31,42 +31,55 @@ If we create a document from scratch we need to follow certain steps:
 
 ```python
 
-    import aspose.pdf as ap
+    from datetime import timedelta
+    import aspose.pdf as apdf
 
     # Initialize document object
-    document = ap.Document()
+    document = apdf.Document()
     # Add page
     page = document.pages.add()
 
     # Add image
-    page.add_image(image_file, ap.Rectangle(20, 730, 120, 830, True))
+    imageFileName = self.dataDir + "logo.png"
+    page.add_image(imageFileName, apdf.Rectangle(20, 730, 120, 830))
 
     # Add Header
-    header = ap.text.TextFragment("New ferry routes in Fall 2020")
-    header.text_state.font = ap.text.FontRepository.find_font("Arial")
-    header.text_state.font_size = 24
-    header.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    header.position = ap.text.Position(130, 720)
-    page.paragraphs.add(header)
+    header = apdf.TextFragment("New ferry routes in Fall 2020")
+    header.TextState.Font = apdf.text.FontRepository.find_font("Arial")
+    header.TextState.FontSize = 24
+    header.HorizontalAlignment = apdf.HorizontalAlignment.CENTER
+    header.Position = apdf.Position(130, 720)
+    page.Paragraphs.Add(header)
 
     # Add description
     descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. \
     Ferry service is operating at half capacity and on a reduced schedule. Expect lineups."
-    description = ap.text.TextFragment(descriptionText)
-    description.text_state.font = ap.text.FontRepository.find_font("Times New Roman")
-    description.text_state.font_size = 14
-    description.horizontal_alignment = ap.HorizontalAlignment.LEFT
-    page.paragraphs.add(description)
+    description = apdf.TextFragment(descriptionText)
+    description.TextState.Font = apdf.text.FontRepository.find_font(
+        "Times New Roman"
+    )
+    description.TextState.FontSize = 14
+    description.HorizontalAlignment = apdf.HorizontalAlignment.LEFT
+    page.Paragraphs.Add(description)
 
     # Add table
-    table = ap.Table()
+    table = apdf.Table()
+
+    # Add table
+    table = apdf.Table()
 
     table.column_widths = "200"
-    table.border = ap.BorderInfo(ap.BorderSide.BOX, 1.0, ap.Color.dark_slate_gray)
-    table.default_cell_border = ap.BorderInfo(ap.BorderSide.BOX, 0.5, ap.Color.black)
-    table.default_cell_padding = ap.MarginInfo(4.5, 4.5, 4.5, 4.5)
+    table.border = apdf.BorderInfo(
+        apdf.BorderSide.BOX, 1.0, apdf.Color.dark_slate_gray
+    )
+    table.default_cell_border = apdf.BorderInfo(
+        apdf.BorderSide.BOX, 0.5, apdf.Color.black
+    )
+    table.default_cell_padding = apdf.MarginInfo(4.5, 4.5, 4.5, 4.5)
     table.margin.bottom = 10
-    table.default_cell_text_state.font = ap.text.FontRepository.find_font("Helvetica")
+    table.default_cell_text_state.font = apdf.text.FontRepository.find_font(
+        "Helvetica"
+    )
 
     headerRow = table.rows.add()
     headerRow.cells.add("Departs City")
@@ -74,8 +87,10 @@ If we create a document from scratch we need to follow certain steps:
 
     i = 0
     while i < headerRow.cells.count:
-        headerRow.cells[i].background_color = ap.Color.gray
-        headerRow.cells[i].default_cell_text_state.foreground_color = ap.Color.white_smoke
+        headerRow.cells[i].background_color = apdf.Color.gray
+        headerRow.cells[i].default_cell_text_state.foreground_color = (
+            apdf.Color.white_smoke
+        )
         i += 1
 
     time = timedelta(hours=6, minutes=0)
@@ -91,5 +106,5 @@ If we create a document from scratch we need to follow certain steps:
 
     page.paragraphs.add(table)
 
-    document.save(output_pdf)
+    document.save(self.dataDir + "Complex.pdf")
 ```

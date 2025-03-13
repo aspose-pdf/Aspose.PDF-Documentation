@@ -32,21 +32,20 @@ Please try using the following code snippet to accomplish this requirement with 
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_epub.epub"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    # Instantiate Epub Save options
-    save_options = ap.EpubSaveOptions()
+    document = apdf.Document(path_infile)
+    save_options = apdf.EpubSaveOptions()
+    save_options.content_recognition_mode = apdf.EpubSaveOptions.RecognitionMode.FLOW
+    document.save(path_outfile, save_options)
 
-    # Specify the layout for contents
-    save_options.content_recognition_mode = ap.EpubSaveOptions.RecognitionMode.FLOW
-
-    # Save the ePUB document
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
 ## Convert PDF to LaTeX/TeX
@@ -68,15 +67,28 @@ The following code snippet shows the process of converting PDF files into the TE
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_tex.tex"
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+
     # Open PDF document
-    document = ap.Document(input_pdf)
+
+    document = apdf.Document(path_infile)
+
+    # Instantiate an object of SvgSaveOptions
+
+    save_options = apdf.SvgSaveOptions()
+
     # Instantiate an object of LaTeXSaveOptions
-    saveOptions = ap.LaTeXSaveOptions()
-    document.save(output_pdf, saveOptions)
+
+    save_options = apdf.LaTeXSaveOptions()
+
+    document.save(path_outfile, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
 ## Convert PDF to Text
@@ -91,18 +103,19 @@ The following code snippet explains how to extract the texts from the all pages.
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf =  DIR_OUTPUT + "convert_pdf_to_txt.txt"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    # Create Text device
-    textDevice = ap.devices.TextDevice()
+    document = apdf.Document(path_infile)
+    device = apdf.devices.TextDevice()
+    device.process(document.pages[1], path_outfile)
 
-    # Convert a particular page and save
-    textDevice.process(document.pages[1], output_pdf)
+    print(infile + " converted into " + outfile)
 ```
 
 {{% alert color="success" %}}
@@ -133,19 +146,20 @@ The following code snippet shows the process of converting PDF file into XPS for
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xps.xps"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+    document = apdf.Document(path_infile)
+    save_options = apdf.XpsSaveOptions()
+    document.save(path_outfile, save_options)
 
-    # Instantiate XPS Save options
-    save_options = ap.XpsSaveOptions()
-
-    # Save the XPS document
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
+
 ## Convert PDF to XML
 
 {{% alert color="success" %}}
@@ -163,20 +177,17 @@ Please try using the following code snippet to accomplish this requirement with 
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    def convert_pdf_to_xml(self, infile, outfile):
-        path_infile = self.dataDir + infile
-        path_outfile = self.dataDir + outfile
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-        # Open PDF document
+    document = apdf.Document(path_infile)
+    save_options = apdf.PdfXmlSaveOptions()
+    document.save(path_outfile, save_options)
 
-        document = ap.Document(path_infile)
-
-        # Instantiate XML Save options
-        save_options = ap.XmlSaveOptions()
-
-        # Save the XML document
-        document.save(path_outfile, save_options)
-        print(infile + " converted into " + outfile)
+    print(infile + " converted into " + outfile)
 ```

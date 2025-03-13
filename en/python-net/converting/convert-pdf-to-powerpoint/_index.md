@@ -49,16 +49,19 @@ In order to convert PDF to PPTX, Aspose.PDF for Python advice to use the followi
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_pptx.pptx"
-    # Open PDF document
-    document = ap.Document(input_pdf)
-    # Instantiate PptxSaveOptions instance
-    save_option = ap.PptxSaveOptions()
-    # Save the file into MS PowerPoint format
-    document.save(output_pdf, save_option)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    save_options = apdf.PptxSaveOptions()
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
 ```
 
 ## Convert PDF to PPTX with Slides as Images

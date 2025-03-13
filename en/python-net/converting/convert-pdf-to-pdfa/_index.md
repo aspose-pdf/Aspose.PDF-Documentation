@@ -39,16 +39,22 @@ The following code snippet shows how to convert PDF files to PDF/A-1b compliant 
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_pdfa.pdf"
-    output_log = DIR_OUTPUT + "convert_pdf_to_pdfa.log"
-    # Open PDF document
-    document = ap.Document(input_pdf)
-    # Convert to PDF/A compliant document
-    document.convert(output_log, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE)
-    # Save output document
-    document.save(output_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    document.convert(
+        self.dataDir + "pdf_pdfa.log",
+        apdf.PdfFormat.PDF_A_1B,
+        apdf.ConvertErrorAction.DELETE,
+    )
+    document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
 ```
 

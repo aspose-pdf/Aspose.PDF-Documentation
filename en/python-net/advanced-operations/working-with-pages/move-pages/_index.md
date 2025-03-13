@@ -96,16 +96,17 @@ The following code snippet shows you how to move one page.
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from os import path
 
-    srcDocument = ap.Document(src_file_name)
-    dstDocument = ap.Document(dst_File_name)
-    page = srcDocument.pages[2]
-    dstDocument.pages.add(page)
-    # Save output file
-    dstDocument.save(dst_File_name_new)
-    srcDocument.pages.delete(2)
-    srcDocument.save(src_file_name_new)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, outfile)
+
+    document = apdf.Document(path_infile)
+    page = document.pages[2]
+    document.pages.add(page)
+    document.pages.delete(2)
+    document.save(path_outfile)
 ```
 
 ## Moving bunch of Pages from one PDF Document to Another

@@ -43,16 +43,23 @@ Aspose.PDF for Python presents you online free application ["PDF to HTML"](https
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_html.html"
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+
     # Open PDF document
-    document = ap.Document(input_pdf)
+
+    document = apdf.Document(path_infile)
 
     # save document in HTML format
-    save_options = ap.HtmlSaveOptions()
-    document.save(output_pdf, save_options)
+
+    save_options = apdf.HtmlSaveOptions()
+
+    document.save(path_outfile, save_options)
 ```
 
 ## See Also 

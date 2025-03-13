@@ -72,18 +72,20 @@ The following code snippet shows the process for converting PDF file into XLS or
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xls.xls"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
+    document = apdf.Document(path_infile)
+    save_options = apdf.ExcelSaveOptions()
+    save_options.format = apdf.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
+    document.save(path_outfile, save_options)
 
-    # Save the file into MS Excel format
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
 

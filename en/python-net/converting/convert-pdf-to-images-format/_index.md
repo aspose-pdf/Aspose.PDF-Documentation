@@ -92,27 +92,26 @@ The following code snippet shows how to convert all the PDF pages to a single TI
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_tiff.tiff"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    # Create Resolution object
-    resolution = ap.devices.Resolution(300)
+    document = apdf.Document(path_infile)
+    resolution = apdf.devices.Resolution(300)
 
-    # Create TiffSettings object
-    tiffSettings = ap.devices.TiffSettings()
-    tiffSettings.compression = ap.devices.CompressionType.LZW
-    tiffSettings.depth = ap.devices.ColorDepth.DEFAULT
+    tiffSettings = apdf.devices.TiffSettings()
+    tiffSettings.compression = apdf.devices.CompressionType.LZW
+    tiffSettings.depth = apdf.devices.ColorDepth.DEFAULT
     tiffSettings.skip_blank_pages = False
 
-    # Create TIFF device
-    tiffDevice = ap.devices.TiffDevice(resolution, tiffSettings)
+    tiffDevice = apdf.devices.TiffDevice(resolution, tiffSettings)
+    tiffDevice.Process(document, path_outfile)
 
-    # Convert a particular page and save the image to stream
-    tiffDevice.process(document, output_pdf)
+    print(infile + " converted into " + outfile)
 ```
 
 ## Convert PDF using ImageDevice class
@@ -158,127 +157,126 @@ The following steps and code snippet in Python shows this possibility
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "many_pages.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_bmp"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    # Create Resolution object
-    resolution = ap.devices.Resolution(300)
-    device = ap.devices.BmpDevice(resolution)
+    options = apdf.CgmLoadOptions()
+    document = apdf.Document(path_infile, options)
+    resolution = apdf.devices.Resolution(300)
 
-    for i in range(0, len(document.pages)):
-        # Create file for save
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.bmp", 'x'
-        )
-        # Convert a particular page and save the image to stream
-        device.process(document.pages[i + 1], imageStream)
-        imageStream.close()
+    device = apdf.devices.BmpDevice(resolution)
+    image_stream = FileIO(path_outfile, "w")
+    device.process(document.pages[1], image_stream)
+    image_stream.close()
+
+    print(infile + " converted into " + outfile)
 ```
 
 ### Convert PDF to EMF
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_emf"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    # Create Resolution object
-    resolution = ap.devices.Resolution(300)
-    device = ap.devices.EmfDevice(resolution)
+    document = apdf.Document(path_infile)
+    resolution = apdf.devices.Resolution(300)
+    device = apdf.devices.EmfDevice(resolution)
+    page_count = 1
+    while page_count <= len(document.pages):
+        image_stream = FileIO(path_outfile + str(page_count) + "_out.emf", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
 
-    for i in range(0, len(document.pages)):
-        # Create file for save
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.emf", 'x'
-        )
-        # Convert a particular page and save the image to stream
-        device.process(document.pages[i + 1], imageStream)
-        imageStream.close()
+    print(infile + " converted into " + outfile)
 ```  
 
 ### Convert PDF to JPEG
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "many_pages.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_jpeg"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    # Create Resolution object
-    resolution = ap.devices.Resolution(300)
-    device = ap.devices.JpegDevice(resolution)
+    document = apdf.Document(path_infile)
+    resolution = apdf.devices.Resolution(300)
+    device = apdf.devices.JpegDevice(resolution)
+    page_count = 1
 
-    for i in range(0, len(document.pages)):
-        # Create file for save
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.jpeg", "x"
-        )
-        # Convert a particular page and save the image to stream
-        device.process(document.pages[i + 1], imageStream)
-        imageStream.close()  
+    while page_count <= len(document.pages):
+        image_stream = FileIO(path_outfile + str(page_count) + "_out.jpeg", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
+
+    print(infile + " converted into " + outfile) 
 ``` 
 
 ### Convert PDF to PNG
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_png"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    # Create Resolution object
-    resolution = ap.devices.Resolution(300)
-    device = ap.devices.PngDevice(resolution)
+    document = apdf.Document(path_infile)
+    resolution = apdf.devices.Resolution(300)
 
-    for i in range(0, len(document.pages)):
-        # Create file for save
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.png", 'x'
-        )
-        # Convert a particular page and save the image to stream
-        device.process(document.pages[i + 1], imageStream)
-        imageStream.close()
+    device = apdf.devices.PngDevice(resolution)
+    page_count = 1
+    while page_count <= len(document.pages):
+        image_stream = FileIO(path_outfile + str(page_count) + "_out.png", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
+
+    print(infile + " converted into " + outfile)
 ``` 
 
 ### Convert PDF to GIF
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "many_pages.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_gif"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    # Create Resolution object
-    resolution = ap.devices.Resolution(300)
+    document = apdf.Document(path_infile)
+    resolution = apdf.devices.Resolution(300)
+    device = apdf.devices.GifDevice(resolution)
+    page_count = 1
+    while page_count <= len(document.pages):
+        image_stream = FileIO(path_outfile + str(page_count) + "_out.gif", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
 
-    device = ap.devices.GifDevice(resolution)
-
-    for i in range(0, len(document.pages)):
-        # Create file for save
-        imageStream = io.FileIO(
-            output_pdf + "_page_" + str(i + 1) + "_out.gif", 'x'
-        )
-        # Convert a particular page and save the image to stream
-        device.process(document.pages[i + 1], imageStream)
-        # Close stream
-        imageStream.close()  
+    print(infile + " converted into " + outfile)
 ``` 
 
 {{% alert color="success" %}}
@@ -321,20 +319,29 @@ The following code snippet shows the steps for converting a PDF file to SVG form
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_svg.svg"
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+
     # Open PDF document
-    document = ap.Document(input_pdf)
+
+    document = apdf.Document(path_infile)
 
     # Instantiate an object of SvgSaveOptions
-    saveOptions = ap.SvgSaveOptions()
+
+    save_options = apdf.SvgSaveOptions()
 
     # Do not compress SVG image to Zip archive
-    saveOptions.compress_output_to_zip_archive = False
-    saveOptions.treat_target_file_name_as_directory = True
+
+    save_options.compress_output_to_zip_archive = False
+    save_options.treat_target_file_name_as_directory = True
 
     # Save the output in SVG files
-    document.save(output_pdf, saveOptions)
+
+    document.save(path_outfile, save_options)
+    print(infile + " converted into " + outfile)
 ```

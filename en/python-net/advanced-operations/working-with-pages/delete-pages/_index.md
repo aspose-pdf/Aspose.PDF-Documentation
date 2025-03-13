@@ -89,16 +89,15 @@ The following code snippet shows how to delete a particular page from the PDF fi
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from os import path
 
-    # Open document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, outfile)
 
-    # Delete a particular page
+    document = apdf.Document(path_infile)
     document.pages.delete(2)
-
-    # Save updated PDF
-    document.save(output_pdf)
+    document.save(path_outfile)
 ```
 
 <script type="application/ld+json">
