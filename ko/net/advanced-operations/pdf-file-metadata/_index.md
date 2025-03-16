@@ -146,12 +146,6 @@ Aspose.PDF for .NET은 저자, 생성 날짜, 주제 및 제목과 같은 PDF에
 1. 속성의 값을 설정합니다.
 1. Document 클래스의 Save 메서드를 사용하여 업데이트된 문서를 저장합니다.
 
-{{% alert color="primary" %}}
-
-*Application* 및 *Producer* 필드에 대해서는 값을 설정할 수 없음을 유의하시기 바랍니다. Aspose Ltd.와 Aspose.PDF for .NET x.x.x가 이러한 필드에 표시됩니다.
-
-{{% /alert %}}
-
 다음 코드 스니펫은 PDF 파일 정보를 설정하는 방법을 보여줍니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
