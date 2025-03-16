@@ -169,6 +169,8 @@ private static void SetFileInformation()
         docInfo.ModDate = DateTime.Now;
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
 
         // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");
@@ -197,6 +199,8 @@ private static void SetFileInformation()
         docInfo.ModDate = DateTime.Now;
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
 
         // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");
