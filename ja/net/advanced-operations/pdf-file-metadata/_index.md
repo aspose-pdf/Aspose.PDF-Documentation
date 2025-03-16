@@ -146,12 +146,6 @@ Aspose.PDF for .NETを使用すると、著者、作成日、件名、タイト�
 1. プロパティの値を設定します。
 1. DocumentクラスのSaveメソッドを使用して、更新された文書を保存します。
 
-{{% alert color="primary" %}}
-
-*Application*および*Producer*フィールドに対して値を設定できないことに注意してください。これらのフィールドにはAspose Ltd.およびAspose.PDF for .NET x.x.xが表示されます。
-
-{{% /alert %}}
-
 以下のコードスニペットは、PDFファイル情報を設定する方法を示しています。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

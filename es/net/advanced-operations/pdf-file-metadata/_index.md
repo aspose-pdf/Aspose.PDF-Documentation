@@ -146,12 +146,6 @@ Aspose.PDF for .NET te permite establecer información específica del archivo p
 1. Establece los valores de las propiedades.
 1. Guarda el documento actualizado utilizando el método Save de la clase Document.
 
-{{% alert color="primary" %}}
-
-Ten en cuenta que no puedes establecer valores en los campos *Application* y *Producer*, porque Aspose Ltd. y Aspose.PDF for .NET x.x.x se mostrarán en estos campos.
-
-{{% /alert %}}
-
 El siguiente fragmento de código te muestra cómo establecer información del archivo PDF.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

@@ -146,12 +146,6 @@ Aspose.PDF for .NET 允许您为 PDF 设置特定的信息，例如作者、创�
 1. 设置属性的值。
 1. 使用 Document 类的 Save 方法保存更新后的文档。
 
-{{% alert color="primary" %}}
-
-请注意，您无法设置 *Application* 和 *Producer* 字段的值，因为 Aspose Ltd. 和 Aspose.PDF for .NET x.x.x 将显示在这些字段中。
-
-{{% /alert %}}
-
 以下代码片段向您展示如何设置 PDF 文件信息。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

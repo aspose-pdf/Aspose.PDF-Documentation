@@ -146,12 +146,6 @@ Aspose.PDF for .NET allows you to set file-specific information for a PDF, infor
 1. Set the values of the properties.
 1. Save the updated document using the Document class’ Save method.
 
-{{% alert color="primary" %}}
-
-Please note that you cannot set values against the *Application* and *Producer* fields, because Aspose Ltd. and Aspose.PDF for .NET x.x.x will be displayed against these fields.
-
-{{% /alert %}}
-
 The following code snippet shows you how to set PDF file information.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
