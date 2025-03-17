@@ -82,7 +82,7 @@ priority: 0.7
 ## Qu'est-ce qu'un Graphique
 
 Ajouter des graphiques aux documents PDF est une tâche très courante pour les développeurs travaillant avec Adobe Acrobat Writer ou d'autres applications de traitement de PDF. Il existe de nombreux types de graphiques qui peuvent être utilisés dans les applications PDF.
-[Aspose.PDF for .NET](/pdf/net/) prend également en charge l'ajout de graphiques aux documents PDF. À cet effet, la classe Graphique est fournie. Un Graphique est un élément de niveau paragraphe et peut être ajouté à la collection de Paragraphes dans une instance de Page. Une instance de Graphique contient une collection de Formes.
+[Aspose.PDF for .NET](/pdf/fr/net/) prend également en charge l'ajout de graphiques aux documents PDF. À cet effet, la classe Graphique est fournie. Un Graphique est un élément de niveau paragraphe et peut être ajouté à la collection de Paragraphes dans une instance de Page. Une instance de Graphique contient une collection de Formes.
 
 Les types de formes suivants sont pris en charge par la classe [Graphique](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/graph) :
 

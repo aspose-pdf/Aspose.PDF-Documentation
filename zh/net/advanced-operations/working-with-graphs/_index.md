@@ -82,7 +82,7 @@ priority: 0.7
 ## 什么是图形
 
 在 PDF 文档中添加图形是开发人员在使用 Adobe Acrobat Writer 或其他 PDF 处理应用程序时非常常见的任务。PDF 应用程序中可以使用多种类型的图形。
-[Aspose.PDF for .NET](/pdf/net/) 也支持向 PDF 文档中添加图形。为此，提供了图形类。图形是段落级元素，可以添加到页面实例的段落集合中。图形实例包含一个形状集合。
+[Aspose.PDF for .NET](/pdf/zh/net/) 也支持向 PDF 文档中添加图形。为此，提供了图形类。图形是段落级元素，可以添加到页面实例的段落集合中。图形实例包含一个形状集合。
 
 以下类型的形状由 [Graph](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph) 类支持：
 
