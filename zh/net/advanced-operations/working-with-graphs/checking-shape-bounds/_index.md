@@ -98,7 +98,7 @@ draft: false
 首先，创建一个新的PDF文档并向其中添加一页。
 
 ```csharp
-using (var document = new Aspose.Pdf.Document())
+using (var doc = new Aspose.Pdf.Document())
 {
     Aspose.Pdf.Page page = doc.Pages.Add();
 }
@@ -167,7 +167,7 @@ Bounds not fit. Container dimensions: 100x100
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using (var document = new Aspose.Pdf.Document())
+    using (var doc = new Aspose.Pdf.Document())
     {
         // Add page
         var page = doc.Pages.Add();
@@ -206,7 +206,7 @@ private static void CheckShapeBounds()
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using var document = new Aspose.Pdf.Document();
+    using var doc = new Aspose.Pdf.Document();
     
     // Add page
     var page = doc.Pages.Add();
