@@ -98,9 +98,9 @@ draft: false
 먼저, 새 PDF 문서를 만들고 페이지를 추가합니다.
 
 ```csharp
-using (var doc = new Aspose.Pdf.Document())
+using (var document = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    Aspose.Pdf.Page page = document.Pages.Add();
 }
 ```
 
