@@ -1,19 +1,24 @@
 ---
-title: 检查形状集合中的形状边界
+title: 在 PDF 文件中使用图形
+linktitle: 使用图形
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
-url: /zh/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: 了解如何检查插入到形状集合中的形状的边界，以确保它适合其父容器。
-lastmod: "2025-02-28"
-draft: false
+url: /zh/net/working-with-graphs/
+description: 本文解释了什么是图形，如何创建填充矩形对象，以及其他功能
+lastmod: "2022-02-17"
+sitemap:
+changefreq: "weekly"
+priority: 0.7
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Checking Element Bounds in Shapes Collection",
-    "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Aspose.PDF for .NET的新边界检查功能在`Drawing.Graph.Shapes`集合中自动验证元素尺寸与父容器的匹配，防止布局溢出。当元素超出容器限制时，它会触发异常，在插入过程中强制执行严格的尺寸约束，以确保精确的PDF格式和简化设计准确性",
+    "headline": "Working with Graphs in PDF file",
+    "alternativeHeadline": "Create and Manipulate Graphs in PDF Files",
+    "abstract": "发现使用 Aspose.PDF for .NET 在 PDF 文档中生成和操作图形的强大新功能。此功能允许开发人员创建各种图形形状，包括弧、圆、线和矩形，增强其应用程序中数据的视觉呈现。优化您的 PDF 生成过程，轻松提供动态数据可视化",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +27,8 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "476",
+    "keywords": "Graph, PDF documents, Aspose.PDF for .NET, Graph class, Shapes, Arc, Circle, Line graph, Rectangle, PDF manipulation",
+    "wordcount": "108",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -63,181 +69,97 @@ draft: false
             }
         ]
     },
-    "url": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/",
+    "url": "/net/graphs/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/"
+        "@id": "/net/graphs/"
     },
     "dateModified": "2025-03-17",
-    "description": ""
+    "description": "本文解释了什么是图形，如何创建填充矩形对象，以及其他功能"
 }
 </script>
 
-## 介绍
-本文档提供了关于如何使用形状集合中的边界检查功能的详细指南。此功能确保元素适合其父容器，并可以配置为在组件不适合时抛出异常。我们将逐步介绍实现此功能的步骤，并提供完整示例。
+## 什么是图形
 
-## 先决条件
-您需要以下内容：
-* Visual Studio 2019或更高版本
-* Aspose.PDF for .NET 25.3或更高版本
-* 一个包含一些页面的示例PDF文件
+在 PDF 文档中添加图形是开发人员在使用 Adobe Acrobat Writer 或其他 PDF 处理应用程序时非常常见的任务。PDF 应用程序中可以使用多种类型的图形。
+[Aspose.PDF for .NET](/pdf/zh/net/) 也支持向 PDF 文档中添加图形。为此，提供了图形类。图形是段落级元素，可以添加到页面实例的段落集合中。图形实例包含一个形状集合。
 
-您可以从官方网站下载Aspose.PDF for .NET库，或使用Visual Studio中的NuGet包管理器进行安装。
+以下类型的形状由 [Graph](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph) 类支持：
 
-## 步骤
-完成任务的步骤如下：
-1. 创建PDF文档。
-2. 创建一个具有指定尺寸的`Graph`对象。
-3. 创建一个具有指定尺寸的`Shape`对象。
-4. 将`BoundsCheckMode`设置为`ThrowExceptionIfDoesNotFit`。
-5. 尝试将形状添加到图形中。
+- [弧](/pdf/zh/net/add-arc/) - 有时也称为标志，是一对相邻顶点的有序对，但有时也称为有向线。
+- [圆](/pdf/zh/net/add-circle/) - 使用分成扇区的圆来显示数据。我们使用圆形图（也称为饼图）来显示数据如何代表一个整体或一个组的部分。
+- [曲线](/pdf/zh/net/add-curve/) - 是一组相连的射影线，每条线在普通双点上与三条其他线相交。
+- [线](/pdf/zh/net/add-line) - 线图用于显示连续数据，并且在显示随时间变化的趋势时可以对预测未来事件非常有用。
+- [矩形](/pdf/zh/net/add-rectangle/) - 是您在图形中看到的许多基本形状之一，它在帮助您解决问题时非常有用。
+- [椭圆](/pdf/zh/net/add-ellipse/) - 是平面上的一组点，形成一个椭圆形的曲线。
 
-让我们看看如何在C#代码中实现这些步骤。
+以下操作支持形状类型：
+- [检查边界](/pdf/zh/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - 检查形状集合中的形状边界。
 
-### 步骤1：创建PDF文档
-首先，创建一个新的PDF文档并向其中添加一页。
+上述细节也在下面的图中描述：
 
-```csharp
-using (var doc = new Aspose.Pdf.Document())
+![图形中的图](graphs.png)
+
+<script type="application/ld+json">
 {
-    Aspose.Pdf.Page page = doc.Pages.Add();
-}
-```
-
-### 步骤2：创建一个具有指定尺寸的Graph对象
-接下来，创建一个宽度和高度均为100单位的`Graph`对象。将图形定位在页面顶部10单位和左侧15单位的位置。为图形添加黑色边框。
-
-```csharp
-var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
-{
-    Top = 10,
-    Left = 15,
-    Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
-};
-page.Paragraphs.Add(graph);
-```
-
-### 步骤3：创建一个具有指定尺寸的Shape对象（例如，矩形）
-创建一个宽度和高度均为50单位的矩形对象。将矩形定位在(-1, 0)，这超出了图形的边界。
-
-```csharp
-var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
-{
-    GraphInfo =
-    {
-        FillColor = Aspose.Pdf.Color.Tomato
-    }
-};
-```
-
-### 步骤4：将BoundsCheckMode设置为ThrowExceptionIfDoesNotFit
-将`BoundsCheckMode`设置为`ThrowExceptionIfDoesNotFit`，以确保如果矩形不适合图形，则抛出异常。
-
-```csharp
-graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-```
-
-### 步骤5：将矩形添加到图形中
-将矩形添加到图形中。这将抛出一个`Aspose.Pdf.BoundsOutOfRangeException`，因为矩形不适合图形的尺寸。
-
-```csharp
-graph.Shapes.Add(rect);
-```
-
-## 输出
-执行代码后，预期的输出将是一个`Aspose.Pdf.BoundsOutOfRangeException`，其消息为：
-
-```
-Bounds not fit. Container dimensions: 100x100
-```
-
-## 故障排除
-如果出现问题，以下是一些提示：
-* 确保`BoundsCheckMode`设置正确。
-* 验证元素和容器的尺寸是否准确。
-* 检查元素在容器内的位置。
-
-## 完整示例
-以下是一个完整示例，演示所有步骤的结合：
-
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
-{{< tab tabNum="1" >}}
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CheckShapeBounds()
-{
-    // Create PDF document
-    using (var doc = new Aspose.Pdf.Document())
-    {
-        // Add page
-        var page = doc.Pages.Add();
-        
-        // Create a Graph object with specified dimensions
-        var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
-        {
-            Top = 10,
-            Left = 15,
-            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
-        };
-        page.Paragraphs.Add(graph);
-        
-        // Create a Shape object (for example, Rectangle) with specified dimensions
-        var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
-        {
-            GraphInfo =
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
             {
-                FillColor = Aspose.Pdf.Color.Tomato
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
-        };
-        
-        // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
-        graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-        
-        // Add the rectangle to the graph
-        graph.Shapes.Add(rect);
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
     }
 }
-```
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CheckShapeBounds()
-{
-    // Create PDF document
-    using var doc = new Aspose.Pdf.Document();
-    
-    // Add page
-    var page = doc.Pages.Add();
-
-    // Create a Graph object with specified dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
-    {
-        Top = 10,
-        Left = 15,
-        Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
-    };
-    page.Paragraphs.Add(graph);
-
-    // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
-    var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
-    {
-        GraphInfo =
-        {
-            FillColor = Aspose.Pdf.Color.Tomato
-        }
-    };
-
-    // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
-    graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-
-    // Add the rectangle to the graph
-    graph.Shapes.Add(rect);
-}
-```
-{{< /tab >}}
-{{< /tabs >}}
-
-## 结论
-形状集合中的边界检查功能是确保元素适合父容器的强大工具。通过将BoundsCheckMode设置为ThrowExceptionIfDoesNotFit，您可以防止PDF文档中的布局问题。此功能在元素定位和尺寸至关重要的场景中尤其有用。有关更多详细信息，请访问[官方文档](https://docs.aspose.com/pdf/net/)。
+</script>

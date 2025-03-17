@@ -1,19 +1,24 @@
 ---
-title: Vérifier les limites de forme dans la collection Shapes
+title: Travailler avec des Graphiques dans un fichier PDF
+linktitle: Travailler avec des Graphiques
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
-url: /fr/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Apprenez à vérifier les limites d'une forme lorsqu'elle est insérée dans la collection Shapes pour s'assurer qu'elle s'adapte à son conteneur parent.
-lastmod: "2025-02-28"
-draft: false
+url: /fr/net/working-with-graphs/
+description: Cet article explique ce qu'est un Graphique, comment créer un objet rectangle rempli, et d'autres fonctions
+lastmod: "2022-02-17"
+sitemap:
+changefreq: "weekly"
+priority: 0.7
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Checking Element Bounds in Shapes Collection",
-    "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "La nouvelle fonctionnalité de vérification des limites de Aspose.PDF for .NET dans la collection `Drawing.Graph.Shapes` valide automatiquement les dimensions des éléments par rapport aux conteneurs parents, empêchant le débordement de mise en page. Elle déclenche des exceptions lorsque les éléments dépassent les limites du conteneur, imposant des contraintes de taille strictes lors de l'insertion pour garantir un formatage PDF précis et rationaliser l'exactitude de la conception.",
+    "headline": "Working with Graphs in PDF file",
+    "alternativeHeadline": "Create and Manipulate Graphs in PDF Files",
+    "abstract": "Découvrez la nouvelle fonctionnalité puissante pour générer et manipuler des graphiques dans des documents PDF en utilisant Aspose.PDF for .NET. Cette fonctionnalité permet aux développeurs de créer une variété de formes de graphiques, y compris des arcs, des cercles, des lignes et des rectangles, améliorant la présentation visuelle des données dans leurs applications. Optimisez votre processus de génération de PDF et fournissez des visualisations de données dynamiques avec facilité",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +27,8 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "849",
+    "keywords": "Graph, PDF documents, Aspose.PDF for .NET, Graph class, Shapes, Arc, Circle, Line graph, Rectangle, PDF manipulation",
+    "wordcount": "353",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -63,181 +69,97 @@ draft: false
             }
         ]
     },
-    "url": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/",
+    "url": "/net/graphs/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/"
+        "@id": "/net/graphs/"
     },
     "dateModified": "2025-03-17",
-    "description": ""
+    "description": "Cet article explique ce qu'est un Graphique, comment créer un objet rectangle rempli, et d'autres fonctions"
 }
 </script>
 
-## Introduction
-Ce document fournit un guide détaillé sur l'utilisation de la fonctionnalité de vérification des limites dans la collection Shapes. Cette fonctionnalité garantit que les éléments s'adaptent à leur conteneur parent et peut être configurée pour déclencher une exception si le composant ne s'adapte pas. Nous allons passer en revue les étapes pour mettre en œuvre cette fonctionnalité et fournir un exemple complet.
+## Qu'est-ce qu'un Graphique
 
-## Prérequis
-Vous aurez besoin des éléments suivants :
-* Visual Studio 2019 ou version ultérieure
-* Aspose.PDF for .NET 25.3 ou version ultérieure
-* Un fichier PDF d'exemple contenant quelques pages
+Ajouter des graphiques aux documents PDF est une tâche très courante pour les développeurs travaillant avec Adobe Acrobat Writer ou d'autres applications de traitement de PDF. Il existe de nombreux types de graphiques qui peuvent être utilisés dans les applications PDF.
+[Aspose.PDF for .NET](/pdf/fr/net/) prend également en charge l'ajout de graphiques aux documents PDF. À cet effet, la classe Graphique est fournie. Un Graphique est un élément de niveau paragraphe et peut être ajouté à la collection de Paragraphes dans une instance de Page. Une instance de Graphique contient une collection de Formes.
 
-Vous pouvez télécharger la bibliothèque Aspose.PDF for .NET depuis le site officiel ou l'installer en utilisant le gestionnaire de packages NuGet dans Visual Studio.
+Les types de formes suivants sont pris en charge par la classe [Graphique](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/graph) :
 
-## Étapes
-Voici les étapes à suivre pour compléter la tâche :
-1. Créer un document PDF.
-2. Créer un objet `Graph` avec des dimensions spécifiées.
-3. Créer un objet `Shape` avec des dimensions spécifiées.
-4. Définir le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit`.
-5. Tenter d'ajouter la forme au graphique.
+- [Arc](/pdf/fr/net/add-arc/) - parfois également appelé un drapeau, est une paire ordonnée de sommets adjacents, mais parfois également appelé une ligne dirigée.
+- [Cercle](/pdf/fr/net/add-circle/) - affiche des données en utilisant un cercle divisé en secteurs. Nous utilisons un graphique circulaire (également appelé un diagramme circulaire) pour montrer comment les données représentent des portions d'un tout ou d'un groupe.
+- [Courbe](/pdf/fr/net/add-curve/) - est une union connectée de lignes projectives, chaque ligne rencontrant trois autres en points doubles ordinaires.
+- [Ligne](/pdf/fr/net/add-line) - les graphiques linéaires sont utilisés pour afficher des données continues et peuvent être utiles pour prédire des événements futurs lorsqu'ils montrent des tendances au fil du temps.
+- [Rectangle](/pdf/fr/net/add-rectangle/) - est l'une des nombreuses formes fondamentales que vous verrez dans les graphiques, elle peut être très utile pour vous aider à résoudre un problème.
+- [Ellipse](/pdf/fr/net/add-ellipse/) - est un ensemble de points sur un plan, créant une forme ovale, courbée.
 
-Voyons comment mettre en œuvre ces étapes dans le code C#.
+Les opérations suivantes sont prises en charge pour les types de formes :
+- [Vérifier les limites](/pdf/fr/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - vérifier les limites de forme dans la collection de Formes.
 
-### Étape 1 : Créer un document PDF
-Tout d'abord, créez un nouveau document PDF et ajoutez-y une page.
+Les détails ci-dessus sont également représentés dans les figures ci-dessous :
 
-```csharp
-using (var doc = new Aspose.Pdf.Document())
+![Figures dans les Graphiques](graphs.png)
+
+<script type="application/ld+json">
 {
-    Aspose.Pdf.Page page = doc.Pages.Add();
-}
-```
-
-### Étape 2 : Créer un objet Graph avec des dimensions spécifiées
-Ensuite, créez un objet `Graph` avec une largeur et une hauteur de 100 unités. Positionnez le graphique à 10 unités du haut et à 15 unités de la gauche de la page. Ajoutez une bordure noire au graphique.
-
-```csharp
-var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
-{
-    Top = 10,
-    Left = 15,
-    Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
-};
-page.Paragraphs.Add(graph);
-```
-
-### Étape 3 : Créer un objet Shape (par exemple, Rectangle) avec des dimensions spécifiées
-Créez un objet Rectangle avec une largeur et une hauteur de 50 unités. Positionnez le rectangle à (-1, 0), ce qui est en dehors des limites du graphique.
-
-```csharp
-var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
-{
-    GraphInfo =
-    {
-        FillColor = Aspose.Pdf.Color.Tomato
-    }
-};
-```
-
-### Étape 4 : Définir le BoundsCheckMode sur ThrowExceptionIfDoesNotFit
-Définissez le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit` pour garantir qu'une exception soit lancée si le rectangle ne s'adapte pas au graphique.
-
-```csharp
-graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-```
-
-### Étape 5 : Ajouter le rectangle au graphique
-Ajoutez le rectangle au graphique. Cela lancera une `Aspose.Pdf.BoundsOutOfRangeException` car le rectangle ne s'adapte pas aux dimensions du graphique.
-
-```csharp
-graph.Shapes.Add(rect);
-```
-
-## Sortie
-Après l'exécution du code, la sortie attendue sera une `Aspose.Pdf.BoundsOutOfRangeException` avec le message :
-
-```
-Bounds not fit. Container dimensions: 100x100
-```
-
-## Dépannage
-En cas de problèmes, voici quelques conseils :
-* Assurez-vous que le `BoundsCheckMode` est correctement défini.
-* Vérifiez que les dimensions de l'élément et du conteneur sont exactes.
-* Vérifiez le positionnement de l'élément dans le conteneur.
-
-## Exemple complet
-Voici un exemple complet démontrant toutes les étapes combinées :
-
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
-{{< tab tabNum="1" >}}
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CheckShapeBounds()
-{
-    // Create PDF document
-    using (var doc = new Aspose.Pdf.Document())
-    {
-        // Add page
-        var page = doc.Pages.Add();
-        
-        // Create a Graph object with specified dimensions
-        var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
-        {
-            Top = 10,
-            Left = 15,
-            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
-        };
-        page.Paragraphs.Add(graph);
-        
-        // Create a Shape object (for example, Rectangle) with specified dimensions
-        var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
-        {
-            GraphInfo =
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
             {
-                FillColor = Aspose.Pdf.Color.Tomato
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
-        };
-        
-        // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
-        graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-        
-        // Add the rectangle to the graph
-        graph.Shapes.Add(rect);
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
     }
 }
-```
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CheckShapeBounds()
-{
-    // Create PDF document
-    using var doc = new Aspose.Pdf.Document();
-    
-    // Add page
-    var page = doc.Pages.Add();
-
-    // Create a Graph object with specified dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
-    {
-        Top = 10,
-        Left = 15,
-        Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
-    };
-    page.Paragraphs.Add(graph);
-
-    // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
-    var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
-    {
-        GraphInfo =
-        {
-            FillColor = Aspose.Pdf.Color.Tomato
-        }
-    };
-
-    // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
-    graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-
-    // Add the rectangle to the graph
-    graph.Shapes.Add(rect);
-}
-```
-{{< /tab >}}
-{{< /tabs >}}
-
-## Conclusion
-La fonctionnalité de vérification des limites dans la collection Shapes est un outil puissant pour garantir que les éléments s'adaptent aux conteneurs parents. Vous pouvez prévenir les problèmes de mise en page dans vos documents PDF en définissant le BoundsCheckMode sur ThrowExceptionIfDoesNotFit. Cette fonctionnalité est particulièrement utile dans les scénarios où le positionnement et la taille précis des éléments sont critiques. Pour plus de détails, visitez la [documentation officielle](https://docs.aspose.com/pdf/net/).
+</script>
