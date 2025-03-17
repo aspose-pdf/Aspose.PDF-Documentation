@@ -1,9 +1,9 @@
 ---
-title: Verificar limites de forma na coleção de Formas
+title: Проверка границ формы в коллекции Shapes
 type: docs
 weight: 70
-url: /pt/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Aprenda como verificar os limites de uma forma quando inserida na coleção de Formas para garantir que ela se encaixe dentro de seu contêiner pai.
+url: /ru/net/aspose-pdf-drawing-graph-shapes-bounds-check/
+description: Узнайте, как проверить границы формы при вставке в коллекцию Shapes, чтобы убедиться, что она помещается в родительский контейнер.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "O novo recurso de verificação de limites de Aspose.PDF for .NET na coleção `Drawing.Graph.Shapes` valida automaticamente as dimensões dos elementos em relação aos contêineres pai, prevenindo transbordamento de layout. Ele aciona exceções quando os elementos excedem os limites do contêiner, impondo restrições de tamanho rigorosas durante a inserção para garantir formatação precisa de PDF e agilizar a precisão do design.",
+    "abstract": "Новая функция проверки границ в `Drawing.Graph.Shapes` автоматически проверяет размеры элементов относительно родительских контейнеров, предотвращая переполнение макета. Она вызывает исключения, когда элементы превышают пределы контейнера, обеспечивая строгие ограничения по размеру во время вставки для точного форматирования PDF и повышения точности дизайна.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "818",
+    "wordcount": "741",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,29 +73,29 @@ draft: false
 }
 </script>
 
-## Introdução
-Este documento fornece um guia detalhado sobre como usar o recurso de verificação de limites na coleção de Formas. Este recurso garante que os elementos se encaixem dentro de seu contêiner pai e pode ser configurado para lançar uma exceção se o componente não se encaixar. Vamos percorrer os passos para implementar essa funcionalidade e fornecer um exemplo completo.
+## Введение
+Этот документ предоставляет подробное руководство по использованию функции проверки границ в коллекции Shapes. Эта функция гарантирует, что элементы помещаются в родительский контейнер и может быть настроена на выброс исключения, если компонент не помещается. Мы пройдем через шаги для реализации этой функциональности и предоставим полный пример.
 
-## Pré-requisitos
-Você precisará do seguinte:
-* Visual Studio 2019 ou posterior
-* Aspose.PDF for .NET 25.3 ou posterior
-* Um arquivo PDF de exemplo que contenha algumas páginas
+## Предварительные требования
+Вам понадобятся следующие компоненты:
+* Visual Studio 2019 или более поздняя версия
+* Aspose.PDF for .NET 25.3 или более поздняя версия
+* Пример PDF файла, содержащего несколько страниц
 
-Você pode baixar a biblioteca Aspose.PDF for .NET do site oficial ou instalá-la usando o Gerenciador de Pacotes NuGet no Visual Studio.
+Вы можете скачать библиотеку Aspose.PDF for .NET с официального сайта или установить ее с помощью диспетчера пакетов NuGet в Visual Studio.
 
-## Passos
-Aqui estão os passos para completar a tarefa:
-1. Criar documento PDF.
-2. Criar um objeto `Graph` com dimensões especificadas.
-3. Criar um objeto `Shape` com dimensões especificadas.
-4. Definir o `BoundsCheckMode` como `ThrowExceptionIfDoesNotFit`.
-5. Tentar adicionar a forma ao gráfico.
+## Шаги
+Вот шаги для выполнения задачи:
+1. Создайте PDF документ.
+2. Создайте объект `Graph` с заданными размерами.
+3. Создайте объект `Shape` с заданными размерами.
+4. Установите `BoundsCheckMode` в `ThrowExceptionIfDoesNotFit`.
+5. Попытайтесь добавить форму в граф.
 
-Vamos ver como implementar esses passos em código C#.
+Давайте посмотрим, как реализовать эти шаги в коде C#.
 
-### Passo 1: Criar documento PDF
-Primeiro, crie um novo documento PDF e adicione uma página a ele.
+### Шаг 1: Создайте PDF документ
+Сначала создайте новый PDF документ и добавьте страницу к нему.
 
 ```csharp
 using (var doc = new Aspose.Pdf.Document())
@@ -104,8 +104,8 @@ using (var doc = new Aspose.Pdf.Document())
 }
 ```
 
-### Passo 2: Criar um objeto Graph com dimensões especificadas
-Em seguida, crie um objeto `Graph` com uma largura e altura de 100 unidades. Posicione o gráfico a 10 unidades do topo e 15 unidades da esquerda da página. Adicione uma borda preta ao gráfico.
+### Шаг 2: Создайте объект Graph с заданными размерами
+Затем создайте объект `Graph` с шириной и высотой 100 единиц. Разместите граф на 10 единиц от верхней части и на 15 единиц от левой стороны страницы. Добавьте черную рамку к графу.
 
 ```csharp
 var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -117,8 +117,8 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### Passo 3: Criar um objeto Shape (por exemplo, Retângulo) com dimensões especificadas
-Crie um objeto Retângulo com uma largura e altura de 50 unidades. Posicione o retângulo em (-1, 0), que está fora dos limites do gráfico.
+### Шаг 3: Создайте объект Shape (например, Прямоугольник) с заданными размерами
+Создайте объект Прямоугольник с шириной и высотой 50 единиц. Разместите прямоугольник в (-1, 0), что находится за пределами границ графа.
 
 ```csharp
 var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
@@ -130,35 +130,35 @@ var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
 };
 ```
 
-### Passo 4: Definir o BoundsCheckMode como ThrowExceptionIfDoesNotFit
-Defina o `BoundsCheckMode` como `ThrowExceptionIfDoesNotFit` para garantir que uma exceção seja lançada se o retângulo não se encaixar dentro do gráfico.
+### Шаг 4: Установите BoundsCheckMode в ThrowExceptionIfDoesNotFit
+Установите `BoundsCheckMode` в `ThrowExceptionIfDoesNotFit`, чтобы гарантировать, что будет выброшено исключение, если прямоугольник не помещается в граф.
 
 ```csharp
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 ```
 
-### Passo 5: Adicionar o retângulo ao gráfico
-Adicione o retângulo ao gráfico. Isso lançará uma `Aspose.Pdf.BoundsOutOfRangeException` porque o retângulo não se encaixa nas dimensões do gráfico.
+### Шаг 5: Добавьте прямоугольник в граф
+Добавьте прямоугольник в граф. Это вызовет `Aspose.Pdf.BoundsOutOfRangeException`, потому что прямоугольник не помещается в размеры графа.
 
 ```csharp
 graph.Shapes.Add(rect);
 ```
 
-## Saída
-Após executar o código, a saída esperada será uma `Aspose.Pdf.BoundsOutOfRangeException` com a mensagem:
+## Вывод
+После выполнения кода ожидаемый вывод будет `Aspose.Pdf.BoundsOutOfRangeException` с сообщением:
 
 ```
 Bounds not fit. Container dimensions: 100x100
 ```
 
-## Solução de Problemas
-Em caso de problemas, aqui estão algumas dicas:
-* Certifique-se de que o `BoundsCheckMode` esteja configurado corretamente.
-* Verifique se as dimensões do elemento e do contêiner estão precisas.
-* Verifique o posicionamento do elemento dentro do contêiner.
+## Устранение неполадок
+В случае возникновения проблем вот несколько советов:
+* Убедитесь, что `BoundsCheckMode` установлен правильно.
+* Проверьте, что размеры элемента и контейнера точны.
+* Проверьте позиционирование элемента внутри контейнера.
 
-## Exemplo Completo
-Abaixo está um exemplo completo demonstrando todos os passos combinados:
+## Полный пример
+Ниже приведен полный пример, демонстрирующий все шаги в совокупности:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -239,5 +239,5 @@ private static void CheckShapeBounds()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Conclusão
-O recurso de verificação de limites na coleção de Formas é uma ferramenta poderosa para garantir que os elementos se encaixem dentro dos contêineres pai. Você pode prevenir problemas de layout em seus documentos PDF definindo o BoundsCheckMode como ThrowExceptionIfDoesNotFit. Este recurso é particularmente útil em cenários onde o posicionamento e o dimensionamento precisos dos elementos são críticos. Para mais detalhes, visite a [documentação oficial](https://docs.aspose.com/pdf/net/).
+## Заключение
+Функция проверки границ в коллекции Shapes является мощным инструментом для обеспечения того, чтобы элементы помещались в родительские контейнеры. Вы можете предотвратить проблемы с макетом в ваших PDF документах, установив BoundsCheckMode в ThrowExceptionIfDoesNotFit. Эта функция особенно полезна в сценариях, где критически важно точное позиционирование и размер элементов. Для получения дополнительных сведений посетите [официальную документацию](https://docs.aspose.com/pdf/net/).
