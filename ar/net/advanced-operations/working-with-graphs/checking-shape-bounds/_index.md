@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "775",
+    "wordcount": "751",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,9 +74,9 @@ draft: false
 </script>
 
 ## المقدمة
-يوفر هذا المستند دليلًا مفصلًا حول استخدام ميزة التحقق من الحدود في مجموعة الأشكال. تضمن هذه الميزة أن العناصر تناسب داخل حاويتها الأم ويمكن تكوينها لرمي استثناء إذا لم يتناسب المكون. سنستعرض الخطوات لتنفيذ هذه الوظيفة ونقدم مثالًا كاملاً.
+يوفر هذا المستند دليلًا مفصلًا حول استخدام ميزة التحقق من الحدود في مجموعة الأشكال. تضمن هذه الميزة أن العناصر تناسب داخل الحاوية الأم ويمكن تكوينها لرمي استثناء إذا لم يتناسب المكون. سنستعرض الخطوات لتنفيذ هذه الوظيفة ونقدم مثالًا كاملاً.
 
-## المتطلبات المسبقة
+## المتطلبات الأساسية
 ستحتاج إلى ما يلي:
 * Visual Studio 2019 أو أحدث
 * Aspose.PDF for .NET 25.3 أو أحدث
@@ -117,11 +117,11 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### الخطوة 3: إنشاء كائن Aspose.Pdf.Drawing.Shape (على سبيل المثال، Aspose.Pdf.Drawing.Rectangle) بأبعاد محددة
+### الخطوة 3: إنشاء كائن Shape (على سبيل المثال، مستطيل) بأبعاد محددة
 قم بإنشاء كائن مستطيل بعرض وارتفاع 50 وحدة. ضع المستطيل في (-1، 0)، وهو خارج حدود الرسم البياني.
 
 ```csharp
-Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
 {
     GraphInfo =
     {
@@ -145,7 +145,7 @@ graph.Shapes.Add(rect);
 ```
 
 ## المخرجات
-بعد تنفيذ الكود، ستكون المخرجات المتوقعة هي `Aspose.Pdf.BoundsOutOfRangeException` مع الرسالة:
+بعد تنفيذ الكود، ستكون المخرجات المتوقعة هي استثناء `Aspose.Pdf.BoundsOutOfRangeException` مع الرسالة:
 
 ```
 Bounds not fit. Container dimensions: 100x100
@@ -169,7 +169,7 @@ private static void CheckShapeBounds()
     // Create a new document and add a page
     using (var doc = new Aspose.Pdf.Document())
     {
-        Aspose.Pdf.Page page = doc.Pages.Add();
+        var page = doc.Pages.Add();
         
         // Create a Graph Object with Specified Dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -180,8 +180,8 @@ private static void CheckShapeBounds()
         };
         page.Paragraphs.Add(graph);
         
-        // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
-        Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+        // Create a Shape object (for example, Rectangle) with specified dimensions
+        var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
             GraphInfo =
             {
@@ -195,7 +195,8 @@ private static void CheckShapeBounds()
         // Attempt to add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
-}```
+}
+```
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
@@ -205,7 +206,7 @@ private static void CheckShapeBounds()
 {
     // Create a new document and add a page
     using var doc = new Aspose.Pdf.Document();
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    var page = doc.Pages.Add();
 
     // Create a Graph Object with Specified Dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -217,7 +218,7 @@ private static void CheckShapeBounds()
     page.Paragraphs.Add(graph);
 
     // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
-    Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+    var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
     {
         GraphInfo =
         {

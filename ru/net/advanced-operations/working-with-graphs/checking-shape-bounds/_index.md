@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "785",
+    "wordcount": "761",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -80,7 +80,7 @@ draft: false
 Вам понадобятся следующие компоненты:
 * Visual Studio 2019 или более поздняя версия
 * Aspose.PDF for .NET 25.3 или более поздняя версия
-* Пример PDF файла, содержащего несколько страниц
+* Пример PDF файла, который содержит несколько страниц
 
 Вы можете скачать библиотеку Aspose.PDF for .NET с официального сайта или установить ее с помощью диспетчера пакетов NuGet в Visual Studio.
 
@@ -95,7 +95,7 @@ draft: false
 Давайте посмотрим, как реализовать эти шаги в коде C#.
 
 ### Шаг 1: Создайте новый документ и добавьте страницу
-Сначала создайте новый PDF документ и добавьте страницу в него.
+Сначала создайте новый PDF документ и добавьте страницу к нему.
 
 ```csharp
 using (var doc = new Aspose.Pdf.Document())
@@ -105,7 +105,7 @@ using (var doc = new Aspose.Pdf.Document())
 ```
 
 ### Шаг 2: Создайте объект Graph с заданными размерами
-Затем создайте объект `Graph` с шириной и высотой 100 единиц. Разместите граф на 10 единиц от верхней части и на 15 единиц от левой стороны страницы. Добавьте черную рамку к графу.
+Затем создайте объект `Graph` с шириной и высотой 100 единиц. Разместите граф на расстоянии 10 единиц от верхней части и 15 единиц от левой стороны страницы. Добавьте черную рамку к графу.
 
 ```csharp
 var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -117,11 +117,11 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### Шаг 3: Создайте объект Aspose.Pdf.Drawing.Shape (например, Aspose.Pdf.Drawing.Rectangle) с заданными размерами
-Создайте объект Rectangle с шириной и высотой 50 единиц. Разместите прямоугольник в (-1, 0), что находится за пределами границ графа.
+### Шаг 3: Создайте объект Shape (например, Прямоугольник) с заданными размерами
+Создайте объект Прямоугольник с шириной и высотой 50 единиц. Разместите прямоугольник в (-1, 0), что находится за пределами границ графа.
 
 ```csharp
-Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
 {
     GraphInfo =
     {
@@ -169,7 +169,7 @@ private static void CheckShapeBounds()
     // Create a new document and add a page
     using (var doc = new Aspose.Pdf.Document())
     {
-        Aspose.Pdf.Page page = doc.Pages.Add();
+        var page = doc.Pages.Add();
         
         // Create a Graph Object with Specified Dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -180,8 +180,8 @@ private static void CheckShapeBounds()
         };
         page.Paragraphs.Add(graph);
         
-        // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
-        Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+        // Create a Shape object (for example, Rectangle) with specified dimensions
+        var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
             GraphInfo =
             {
@@ -195,7 +195,8 @@ private static void CheckShapeBounds()
         // Attempt to add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
-}```
+}
+```
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
@@ -205,7 +206,7 @@ private static void CheckShapeBounds()
 {
     // Create a new document and add a page
     using var doc = new Aspose.Pdf.Document();
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    var page = doc.Pages.Add();
 
     // Create a Graph Object with Specified Dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -217,7 +218,7 @@ private static void CheckShapeBounds()
     page.Paragraphs.Add(graph);
 
     // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
-    Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+    var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
     {
         GraphInfo =
         {

@@ -3,7 +3,7 @@ title: 检查形状集合中的形状边界
 type: docs
 weight: 70
 url: /zh/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: 了解如何检查插入到形状集合中的形状的边界，以确保其适合其父容器。
+description: 了解如何检查插入到形状集合中的形状的边界，以确保它适合其父容器。
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Aspose.PDF for .NET的新边界检查功能在`Drawing.Graph.Shapes`集合中自动验证元素尺寸与父容器的匹配，防止布局溢出。当元素超出容器限制时，会触发异常，在插入过程中强制执行严格的尺寸约束，以确保精确的PDF格式和简化设计准确性",
+    "abstract": "Aspose.PDF for .NET的新边界检查功能在`Drawing.Graph.Shapes`集合中自动验证元素尺寸与父容器的匹配，防止布局溢出。当元素超出容器限制时，它会触发异常，在插入过程中强制执行严格的尺寸约束，以确保精确的PDF格式和简化设计准确性",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "510",
+    "wordcount": "485",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -117,11 +117,11 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### 步骤3：创建具有指定尺寸的Aspose.Pdf.Drawing.Shape对象（例如，Aspose.Pdf.Drawing.Rectangle）
+### 步骤3：创建具有指定尺寸的Shape对象（例如，矩形）
 创建一个宽度和高度均为50单位的矩形对象。将矩形定位在(-1, 0)，这超出了图形的边界。
 
 ```csharp
-Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
 {
     GraphInfo =
     {
@@ -169,7 +169,7 @@ private static void CheckShapeBounds()
     // Create a new document and add a page
     using (var doc = new Aspose.Pdf.Document())
     {
-        Aspose.Pdf.Page page = doc.Pages.Add();
+        var page = doc.Pages.Add();
         
         // Create a Graph Object with Specified Dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -180,8 +180,8 @@ private static void CheckShapeBounds()
         };
         page.Paragraphs.Add(graph);
         
-        // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
-        Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+        // Create a Shape object (for example, Rectangle) with specified dimensions
+        var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
             GraphInfo =
             {
@@ -195,7 +195,8 @@ private static void CheckShapeBounds()
         // Attempt to add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
-}```
+}
+```
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
@@ -205,7 +206,7 @@ private static void CheckShapeBounds()
 {
     // Create a new document and add a page
     using var doc = new Aspose.Pdf.Document();
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    var page = doc.Pages.Add();
 
     // Create a Graph Object with Specified Dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -217,7 +218,7 @@ private static void CheckShapeBounds()
     page.Paragraphs.Add(graph);
 
     // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
-    Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+    var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
     {
         GraphInfo =
         {
@@ -236,4 +237,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## 结论
-形状集合中的边界检查功能是确保元素适合父容器的强大工具。通过将BoundsCheckMode设置为ThrowExceptionIfDoesNotFit，您可以防止PDF文档中的布局问题。此功能在元素定位和尺寸至关重要的场景中尤其有用。有关更多详细信息，请访问[官方文档](https://docs.aspose.com/pdf/net/)。
+形状集合中的边界检查功能是确保元素适合父容器的强大工具。通过将BoundsCheckMode设置为ThrowExceptionIfDoesNotFit，您可以防止PDF文档中的布局问题。此功能在元素定位和尺寸精确度至关重要的场景中尤其有用。有关更多详细信息，请访问[官方文档](https://docs.aspose.com/pdf/net/)。
