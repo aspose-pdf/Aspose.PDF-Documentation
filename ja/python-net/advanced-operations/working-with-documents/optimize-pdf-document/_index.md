@@ -217,7 +217,7 @@ PDF ドキュメントには、ドキュメント内の他のオブジェクト�
 
     # 文書を開く
     document = ap.Document(input_pdf)
-    # LinkDuplcateStreams オプションを設定
+    # LinkDuplicateStreams オプションを設定
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.link_duplcate_streams = True
     # OptimizationOptions を使用してPDF文書を最適化
