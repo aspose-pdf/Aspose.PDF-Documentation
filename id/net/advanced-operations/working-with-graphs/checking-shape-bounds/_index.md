@@ -98,7 +98,7 @@ Mari kita lihat bagaimana menerapkan langkah-langkah ini dalam kode C#.
 Pertama, buat dokumen PDF baru dan tambahkan halaman ke dalamnya.
 
 ```csharp
-using (var doc = new Aspose.Pdf.Document())
+using (var document = new Aspose.Pdf.Document())
 {
     Aspose.Pdf.Page page = doc.Pages.Add();
 }
@@ -167,7 +167,7 @@ Di bawah ini adalah contoh lengkap yang menunjukkan semua langkah yang digabungk
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using (var doc = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page
         var page = doc.Pages.Add();
@@ -206,7 +206,7 @@ private static void CheckShapeBounds()
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using var doc = new Aspose.Pdf.Document();
+    using var document = new Aspose.Pdf.Document();
     
     // Add page
     var page = doc.Pages.Add();
