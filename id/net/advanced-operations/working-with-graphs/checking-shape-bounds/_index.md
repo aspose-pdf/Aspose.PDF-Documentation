@@ -1,9 +1,9 @@
 ---
-title: Periksa batas bentuk dalam koleksi Shapes
+title: Vérifier les limites de forme dans la collection Shapes
 type: docs
 weight: 70
-url: /id/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Pelajari cara memeriksa batas bentuk saat dimasukkan ke dalam koleksi Shapes untuk memastikan bentuk tersebut sesuai dengan wadah induknya.
+url: /fr/net/aspose-pdf-drawing-graph-shapes-bounds-check/
+description: Apprenez à vérifier les limites d'une forme lorsqu'elle est insérée dans la collection Shapes pour s'assurer qu'elle s'adapte à son conteneur parent.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Fitur pemeriksaan batas baru dari Aspose.PDF for .NET dalam koleksi `Drawing.Graph.Shapes` secara otomatis memvalidasi dimensi elemen terhadap wadah induk, mencegah overflow tata letak. Ini memicu pengecualian ketika elemen melebihi batas wadah, menegakkan batas ukuran yang ketat selama penyisipan untuk memastikan format PDF yang tepat dan memperlancar akurasi desain",
+    "abstract": "La nouvelle fonctionnalité de vérification des limites de Aspose.PDF for .NET dans la collection `Drawing.Graph.Shapes` valide automatiquement les dimensions des éléments par rapport aux conteneurs parents, empêchant le débordement de mise en page. Elle déclenche des exceptions lorsque les éléments dépassent les limites du conteneur, imposant des contraintes de taille strictes lors de l'insertion pour garantir un formatage PDF précis et rationaliser l'exactitude de la conception.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "776",
+    "wordcount": "849",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,29 +73,29 @@ draft: false
 }
 </script>
 
-## Pendahuluan
-Dokumen ini memberikan panduan rinci tentang penggunaan fitur pemeriksaan batas dalam koleksi Shapes. Fitur ini memastikan bahwa elemen sesuai dengan wadah induknya dan dapat dikonfigurasi untuk memicu pengecualian jika komponen tidak sesuai. Kami akan menjelaskan langkah-langkah untuk menerapkan fungsionalitas ini dan memberikan contoh lengkap.
+## Introduction
+Ce document fournit un guide détaillé sur l'utilisation de la fonctionnalité de vérification des limites dans la collection Shapes. Cette fonctionnalité garantit que les éléments s'adaptent à leur conteneur parent et peut être configurée pour déclencher une exception si le composant ne s'adapte pas. Nous allons passer en revue les étapes pour mettre en œuvre cette fonctionnalité et fournir un exemple complet.
 
-## Prasyarat
-Anda akan memerlukan hal-hal berikut:
-* Visual Studio 2019 atau yang lebih baru
-* Aspose.PDF for .NET 25.3 atau yang lebih baru
-* Sebuah file PDF contoh yang berisi beberapa halaman
+## Prérequis
+Vous aurez besoin des éléments suivants :
+* Visual Studio 2019 ou version ultérieure
+* Aspose.PDF for .NET 25.3 ou version ultérieure
+* Un fichier PDF d'exemple contenant quelques pages
 
-Anda dapat mengunduh pustaka Aspose.PDF for .NET dari situs web resmi atau menginstalnya menggunakan NuGet Package Manager di Visual Studio.
+Vous pouvez télécharger la bibliothèque Aspose.PDF for .NET depuis le site officiel ou l'installer en utilisant le gestionnaire de packages NuGet dans Visual Studio.
 
-## Langkah-langkah
-Berikut adalah langkah-langkah untuk menyelesaikan tugas:
-1. Buat dokumen baru dan tambahkan halaman.
-2. Buat objek `Graph` dengan dimensi yang ditentukan.
-3. Buat objek `Shape` dengan dimensi yang ditentukan.
-4. Atur `BoundsCheckMode` ke `ThrowExceptionIfDoesNotFit`.
-5. Coba tambahkan bentuk ke grafik.
+## Étapes
+Voici les étapes à suivre pour compléter la tâche :
+1. Créer un document PDF.
+2. Créer un objet `Graph` avec des dimensions spécifiées.
+3. Créer un objet `Shape` avec des dimensions spécifiées.
+4. Définir le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit`.
+5. Tenter d'ajouter la forme au graphique.
 
-Mari kita lihat bagaimana menerapkan langkah-langkah ini dalam kode C#.
+Voyons comment mettre en œuvre ces étapes dans le code C#.
 
-### Langkah 1: Buat Dokumen Baru dan Tambahkan Halaman
-Pertama, buat dokumen PDF baru dan tambahkan halaman ke dalamnya.
+### Étape 1 : Créer un document PDF
+Tout d'abord, créez un nouveau document PDF et ajoutez-y une page.
 
 ```csharp
 using (var doc = new Aspose.Pdf.Document())
@@ -104,8 +104,8 @@ using (var doc = new Aspose.Pdf.Document())
 }
 ```
 
-### Langkah 2: Buat Objek Graph dengan Dimensi yang Ditentukan
-Selanjutnya, buat objek `Graph` dengan lebar dan tinggi 100 unit. Posisi grafik 10 unit dari atas dan 15 unit dari kiri halaman. Tambahkan batas hitam ke grafik.
+### Étape 2 : Créer un objet Graph avec des dimensions spécifiées
+Ensuite, créez un objet `Graph` avec une largeur et une hauteur de 100 unités. Positionnez le graphique à 10 unités du haut et à 15 unités de la gauche de la page. Ajoutez une bordure noire au graphique.
 
 ```csharp
 var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -117,8 +117,8 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### Langkah 3: Buat objek Shape (misalnya, Persegi Panjang) dengan dimensi yang ditentukan
-Buat objek Persegi Panjang dengan lebar dan tinggi 50 unit. Posisi persegi panjang di (-1, 0), yang berada di luar batas grafik.
+### Étape 3 : Créer un objet Shape (par exemple, Rectangle) avec des dimensions spécifiées
+Créez un objet Rectangle avec une largeur et une hauteur de 50 unités. Positionnez le rectangle à (-1, 0), ce qui est en dehors des limites du graphique.
 
 ```csharp
 var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
@@ -130,35 +130,35 @@ var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
 };
 ```
 
-### Langkah 4: Atur BoundsCheckMode ke ThrowExceptionIfDoesNotFit
-Atur `BoundsCheckMode` ke `ThrowExceptionIfDoesNotFit` untuk memastikan bahwa pengecualian dilempar jika persegi panjang tidak sesuai dengan grafik.
+### Étape 4 : Définir le BoundsCheckMode sur ThrowExceptionIfDoesNotFit
+Définissez le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit` pour garantir qu'une exception soit lancée si le rectangle ne s'adapte pas au graphique.
 
 ```csharp
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 ```
 
-### Langkah 5: Coba Tambahkan Persegi Panjang ke Grafik
-Coba tambahkan persegi panjang ke grafik. Ini akan memicu `Aspose.Pdf.BoundsOutOfRangeException` karena persegi panjang tidak sesuai dengan dimensi grafik.
+### Étape 5 : Ajouter le rectangle au graphique
+Ajoutez le rectangle au graphique. Cela lancera une `Aspose.Pdf.BoundsOutOfRangeException` car le rectangle ne s'adapte pas aux dimensions du graphique.
 
 ```csharp
 graph.Shapes.Add(rect);
 ```
 
-## Output
-Setelah menjalankan kode, output yang diharapkan adalah `Aspose.Pdf.BoundsOutOfRangeException` dengan pesan:
+## Sortie
+Après l'exécution du code, la sortie attendue sera une `Aspose.Pdf.BoundsOutOfRangeException` avec le message :
 
 ```
 Bounds not fit. Container dimensions: 100x100
 ```
 
-## Pemecahan Masalah
-Jika terjadi masalah, berikut beberapa tips:
-* Pastikan bahwa `BoundsCheckMode` diatur dengan benar.
-* Verifikasi bahwa dimensi elemen dan wadah akurat.
-* Periksa posisi elemen dalam wadah.
+## Dépannage
+En cas de problèmes, voici quelques conseils :
+* Assurez-vous que le `BoundsCheckMode` est correctement défini.
+* Vérifiez que les dimensions de l'élément et du conteneur sont exactes.
+* Vérifiez le positionnement de l'élément dans le conteneur.
 
-## Contoh Lengkap
-Berikut adalah contoh lengkap yang menunjukkan semua langkah yang digabungkan:
+## Exemple complet
+Voici un exemple complet démontrant toutes les étapes combinées :
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -166,12 +166,13 @@ Berikut adalah contoh lengkap yang menunjukkan semua langkah yang digabungkan:
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using (var doc = new Aspose.Pdf.Document())
     {
+        // Add page
         var page = doc.Pages.Add();
         
-        // Create a Graph Object with Specified Dimensions
+        // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
             Top = 10,
@@ -192,7 +193,7 @@ private static void CheckShapeBounds()
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
         
-        // Attempt to add the rectangle to the graph
+        // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
 }
@@ -204,11 +205,13 @@ private static void CheckShapeBounds()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using var doc = new Aspose.Pdf.Document();
+    
+    // Add page
     var page = doc.Pages.Add();
 
-    // Create a Graph Object with Specified Dimensions
+    // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
     {
         Top = 10,
@@ -229,12 +232,12 @@ private static void CheckShapeBounds()
     // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
     graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 
-    // Attempt to add the rectangle to the graph
+    // Add the rectangle to the graph
     graph.Shapes.Add(rect);
 }
 ```
 {{< /tab >}}
 {{< /tabs >}}
 
-## Kesimpulan
-Fitur pemeriksaan batas dalam koleksi Shapes adalah alat yang kuat untuk memastikan elemen sesuai dengan wadah induk. Anda dapat mencegah masalah tata letak dalam dokumen PDF Anda dengan mengatur BoundsCheckMode ke ThrowExceptionIfDoesNotFit. Fitur ini sangat berguna dalam skenario di mana penempatan dan ukuran elemen yang tepat sangat penting. Untuk detail lebih lanjut, kunjungi [dokumentasi resmi](https://docs.aspose.com/pdf/net/).
+## Conclusion
+La fonctionnalité de vérification des limites dans la collection Shapes est un outil puissant pour garantir que les éléments s'adaptent aux conteneurs parents. Vous pouvez prévenir les problèmes de mise en page dans vos documents PDF en définissant le BoundsCheckMode sur ThrowExceptionIfDoesNotFit. Cette fonctionnalité est particulièrement utile dans les scénarios où le positionnement et la taille précis des éléments sont critiques. Pour plus de détails, visitez la [documentation officielle](https://docs.aspose.com/pdf/net/).

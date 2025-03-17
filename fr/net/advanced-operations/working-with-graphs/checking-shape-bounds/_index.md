@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "871",
+    "wordcount": "849",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -86,15 +86,15 @@ Vous pouvez télécharger la bibliothèque Aspose.PDF for .NET depuis le site of
 
 ## Étapes
 Voici les étapes à suivre pour compléter la tâche :
-1. Créez un nouveau document et ajoutez une page.
-2. Créez un objet `Graph` avec des dimensions spécifiées.
-3. Créez un objet `Shape` avec des dimensions spécifiées.
-4. Définissez le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit`.
-5. Essayez d'ajouter la forme au graphique.
+1. Créer un document PDF.
+2. Créer un objet `Graph` avec des dimensions spécifiées.
+3. Créer un objet `Shape` avec des dimensions spécifiées.
+4. Définir le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit`.
+5. Tenter d'ajouter la forme au graphique.
 
 Voyons comment mettre en œuvre ces étapes dans le code C#.
 
-### Étape 1 : Créer un nouveau document et ajouter une page
+### Étape 1 : Créer un document PDF
 Tout d'abord, créez un nouveau document PDF et ajoutez-y une page.
 
 ```csharp
@@ -137,8 +137,8 @@ Définissez le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit` pour garantir 
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 ```
 
-### Étape 5 : Essayer d'ajouter le rectangle au graphique
-Essayez d'ajouter le rectangle au graphique. Cela lancera une `Aspose.Pdf.BoundsOutOfRangeException` car le rectangle ne s'adapte pas aux dimensions du graphique.
+### Étape 5 : Ajouter le rectangle au graphique
+Ajoutez le rectangle au graphique. Cela lancera une `Aspose.Pdf.BoundsOutOfRangeException` car le rectangle ne s'adapte pas aux dimensions du graphique.
 
 ```csharp
 graph.Shapes.Add(rect);
@@ -166,12 +166,13 @@ Voici un exemple complet démontrant toutes les étapes combinées :
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using (var doc = new Aspose.Pdf.Document())
     {
+        // Add page
         var page = doc.Pages.Add();
         
-        // Create a Graph Object with Specified Dimensions
+        // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
             Top = 10,
@@ -192,7 +193,7 @@ private static void CheckShapeBounds()
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
         
-        // Attempt to add the rectangle to the graph
+        // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
 }
@@ -204,11 +205,13 @@ private static void CheckShapeBounds()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using var doc = new Aspose.Pdf.Document();
+    
+    // Add page
     var page = doc.Pages.Add();
 
-    // Create a Graph Object with Specified Dimensions
+    // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
     {
         Top = 10,
@@ -229,7 +232,7 @@ private static void CheckShapeBounds()
     // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
     graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 
-    // Attempt to add the rectangle to the graph
+    // Add the rectangle to the graph
     graph.Shapes.Add(rect);
 }
 ```

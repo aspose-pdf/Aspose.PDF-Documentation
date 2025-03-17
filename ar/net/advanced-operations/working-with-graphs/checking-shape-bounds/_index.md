@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "تتميز ميزة التحقق من الحدود الجديدة في `Drawing.Graph.Shapes` بالتحقق تلقائيًا من أبعاد العناصر مقابل الحاويات الأم، مما يمنع تجاوز التخطيط. يتم تشغيل الاستثناءات عندما تتجاوز العناصر حدود الحاوية، مما يفرض قيودًا صارمة على الحجم أثناء الإدراج لضمان تنسيق PDF دقيق وتبسيط دقة التصميم.",
+    "abstract": "تتميز ميزة التحقق من الحدود الجديدة في `Drawing.Graph.Shapes` بالتحقق تلقائيًا من أبعاد العناصر مقابل الحاويات الأم، مما يمنع تجاوز التخطيط. يتم تفعيل الاستثناءات عندما تتجاوز العناصر حدود الحاوية، مما يفرض قيودًا صارمة على الحجم أثناء الإدراج لضمان تنسيق PDF دقيق وتبسيط دقة التصميم",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "751",
+    "wordcount": "732",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ draft: false
 </script>
 
 ## المقدمة
-يوفر هذا المستند دليلًا مفصلًا حول استخدام ميزة التحقق من الحدود في مجموعة الأشكال. تضمن هذه الميزة أن العناصر تناسب داخل الحاوية الأم ويمكن تكوينها لرمي استثناء إذا لم يتناسب المكون. سنستعرض الخطوات لتنفيذ هذه الوظيفة ونقدم مثالًا كاملاً.
+يوفر هذا المستند دليلًا تفصيليًا حول استخدام ميزة التحقق من الحدود في مجموعة الأشكال. تضمن هذه الميزة أن تناسب العناصر داخل حاويتها الأم ويمكن تكوينها لإلقاء استثناء إذا لم يتناسب المكون. سنستعرض الخطوات لتنفيذ هذه الوظيفة ونقدم مثالًا كاملاً.
 
 ## المتطلبات الأساسية
 ستحتاج إلى ما يلي:
@@ -86,7 +86,7 @@ draft: false
 
 ## الخطوات
 إليك الخطوات لإكمال المهمة:
-1. إنشاء مستند جديد وإضافة صفحة.
+1. إنشاء مستند PDF.
 2. إنشاء كائن `Graph` بأبعاد محددة.
 3. إنشاء كائن `Shape` بأبعاد محددة.
 4. تعيين `BoundsCheckMode` إلى `ThrowExceptionIfDoesNotFit`.
@@ -94,7 +94,7 @@ draft: false
 
 دعنا نرى كيفية تنفيذ هذه الخطوات في كود C#.
 
-### الخطوة 1: إنشاء مستند جديد وإضافة صفحة
+### الخطوة 1: إنشاء مستند PDF
 أولاً، قم بإنشاء مستند PDF جديد وأضف صفحة إليه.
 
 ```csharp
@@ -131,21 +131,21 @@ var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
 ```
 
 ### الخطوة 4: تعيين BoundsCheckMode إلى ThrowExceptionIfDoesNotFit
-قم بتعيين `BoundsCheckMode` إلى `ThrowExceptionIfDoesNotFit` لضمان أنه يتم رمي استثناء إذا لم يتناسب المستطيل داخل الرسم البياني.
+قم بتعيين `BoundsCheckMode` إلى `ThrowExceptionIfDoesNotFit` لضمان إلقاء استثناء إذا لم يتناسب المستطيل داخل الرسم البياني.
 
 ```csharp
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 ```
 
-### الخطوة 5: محاولة إضافة المستطيل إلى الرسم البياني
-حاول إضافة المستطيل إلى الرسم البياني. سيؤدي ذلك إلى رمي استثناء `Aspose.Pdf.BoundsOutOfRangeException` لأن المستطيل لا يتناسب مع أبعاد الرسم البياني.
+### الخطوة 5: إضافة المستطيل إلى الرسم البياني
+أضف المستطيل إلى الرسم البياني. سيؤدي ذلك إلى إلقاء استثناء `Aspose.Pdf.BoundsOutOfRangeException` لأن المستطيل لا يتناسب مع أبعاد الرسم البياني.
 
 ```csharp
 graph.Shapes.Add(rect);
 ```
 
 ## المخرجات
-بعد تنفيذ الكود، ستكون المخرجات المتوقعة هي استثناء `Aspose.Pdf.BoundsOutOfRangeException` مع الرسالة:
+بعد تنفيذ الكود، ستكون المخرجات المتوقعة هي `Aspose.Pdf.BoundsOutOfRangeException` مع الرسالة:
 
 ```
 Bounds not fit. Container dimensions: 100x100
@@ -166,12 +166,13 @@ Bounds not fit. Container dimensions: 100x100
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using (var doc = new Aspose.Pdf.Document())
     {
+        // Add page
         var page = doc.Pages.Add();
         
-        // Create a Graph Object with Specified Dimensions
+        // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
             Top = 10,
@@ -192,7 +193,7 @@ private static void CheckShapeBounds()
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
         
-        // Attempt to add the rectangle to the graph
+        // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
 }
@@ -204,11 +205,13 @@ private static void CheckShapeBounds()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using var doc = new Aspose.Pdf.Document();
+    
+    // Add page
     var page = doc.Pages.Add();
 
-    // Create a Graph Object with Specified Dimensions
+    // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
     {
         Top = 10,
@@ -229,7 +232,7 @@ private static void CheckShapeBounds()
     // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
     graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 
-    // Attempt to add the rectangle to the graph
+    // Add the rectangle to the graph
     graph.Shapes.Add(rect);
 }
 ```

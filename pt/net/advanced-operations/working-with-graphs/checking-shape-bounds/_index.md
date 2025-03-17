@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "O novo recurso de verificação de limites de Aspose.PDF for .NET na coleção `Drawing.Graph.Shapes` valida automaticamente as dimensões dos elementos em relação aos contêineres pai, prevenindo transbordamento de layout. Ele aciona exceções quando os elementos excedem os limites do contêiner, impondo restrições de tamanho rigorosas durante a inserção para garantir formatação precisa de PDF e agilizar a precisão do design",
+    "abstract": "O novo recurso de verificação de limites de Aspose.PDF for .NET na coleção `Drawing.Graph.Shapes` valida automaticamente as dimensões dos elementos em relação aos contêineres pai, prevenindo transbordamento de layout. Ele aciona exceções quando os elementos excedem os limites do contêiner, impondo restrições de tamanho rigorosas durante a inserção para garantir formatação precisa de PDF e agilizar a precisão do design.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "840",
+    "wordcount": "818",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -86,15 +86,15 @@ Você pode baixar a biblioteca Aspose.PDF for .NET do site oficial ou instalá-l
 
 ## Passos
 Aqui estão os passos para completar a tarefa:
-1. Crie um novo documento e adicione uma página.
-2. Crie um objeto `Graph` com dimensões especificadas.
-3. Crie um objeto `Shape` com dimensões especificadas.
-4. Defina o `BoundsCheckMode` como `ThrowExceptionIfDoesNotFit`.
-5. Tente adicionar a forma ao gráfico.
+1. Criar documento PDF.
+2. Criar um objeto `Graph` com dimensões especificadas.
+3. Criar um objeto `Shape` com dimensões especificadas.
+4. Definir o `BoundsCheckMode` como `ThrowExceptionIfDoesNotFit`.
+5. Tentar adicionar a forma ao gráfico.
 
 Vamos ver como implementar esses passos em código C#.
 
-### Passo 1: Criar um Novo Documento e Adicionar uma Página
+### Passo 1: Criar documento PDF
 Primeiro, crie um novo documento PDF e adicione uma página a ele.
 
 ```csharp
@@ -104,7 +104,7 @@ using (var doc = new Aspose.Pdf.Document())
 }
 ```
 
-### Passo 2: Criar um Objeto Graph com Dimensões Especificadas
+### Passo 2: Criar um objeto Graph com dimensões especificadas
 Em seguida, crie um objeto `Graph` com uma largura e altura de 100 unidades. Posicione o gráfico a 10 unidades do topo e 15 unidades da esquerda da página. Adicione uma borda preta ao gráfico.
 
 ```csharp
@@ -137,8 +137,8 @@ Defina o `BoundsCheckMode` como `ThrowExceptionIfDoesNotFit` para garantir que u
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 ```
 
-### Passo 5: Tentar Adicionar o Retângulo ao Gráfico
-Tente adicionar o retângulo ao gráfico. Isso lançará uma `Aspose.Pdf.BoundsOutOfRangeException` porque o retângulo não se encaixa nas dimensões do gráfico.
+### Passo 5: Adicionar o retângulo ao gráfico
+Adicione o retângulo ao gráfico. Isso lançará uma `Aspose.Pdf.BoundsOutOfRangeException` porque o retângulo não se encaixa nas dimensões do gráfico.
 
 ```csharp
 graph.Shapes.Add(rect);
@@ -154,7 +154,7 @@ Bounds not fit. Container dimensions: 100x100
 ## Solução de Problemas
 Em caso de problemas, aqui estão algumas dicas:
 * Certifique-se de que o `BoundsCheckMode` esteja configurado corretamente.
-* Verifique se as dimensões do elemento e do contêiner estão corretas.
+* Verifique se as dimensões do elemento e do contêiner estão precisas.
 * Verifique o posicionamento do elemento dentro do contêiner.
 
 ## Exemplo Completo
@@ -166,12 +166,13 @@ Abaixo está um exemplo completo demonstrando todos os passos combinados:
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using (var doc = new Aspose.Pdf.Document())
     {
+        // Add page
         var page = doc.Pages.Add();
         
-        // Create a Graph Object with Specified Dimensions
+        // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
             Top = 10,
@@ -192,7 +193,7 @@ private static void CheckShapeBounds()
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
         
-        // Attempt to add the rectangle to the graph
+        // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
 }
@@ -204,11 +205,13 @@ private static void CheckShapeBounds()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using var doc = new Aspose.Pdf.Document();
+    
+    // Add page
     var page = doc.Pages.Add();
 
-    // Create a Graph Object with Specified Dimensions
+    // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
     {
         Top = 10,
@@ -229,7 +232,7 @@ private static void CheckShapeBounds()
     // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
     graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 
-    // Attempt to add the rectangle to the graph
+    // Add the rectangle to the graph
     graph.Shapes.Add(rect);
 }
 ```

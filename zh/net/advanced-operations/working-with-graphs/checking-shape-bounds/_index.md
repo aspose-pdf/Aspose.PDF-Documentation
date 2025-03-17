@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "485",
+    "wordcount": "476",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -86,7 +86,7 @@ draft: false
 
 ## 步骤
 完成任务的步骤如下：
-1. 创建一个新文档并添加一个页面。
+1. 创建PDF文档。
 2. 创建一个具有指定尺寸的`Graph`对象。
 3. 创建一个具有指定尺寸的`Shape`对象。
 4. 将`BoundsCheckMode`设置为`ThrowExceptionIfDoesNotFit`。
@@ -94,8 +94,8 @@ draft: false
 
 让我们看看如何在C#代码中实现这些步骤。
 
-### 步骤1：创建新文档并添加页面
-首先，创建一个新的PDF文档并向其中添加一个页面。
+### 步骤1：创建PDF文档
+首先，创建一个新的PDF文档并向其中添加一页。
 
 ```csharp
 using (var doc = new Aspose.Pdf.Document())
@@ -104,7 +104,7 @@ using (var doc = new Aspose.Pdf.Document())
 }
 ```
 
-### 步骤2：创建具有指定尺寸的Graph对象
+### 步骤2：创建一个具有指定尺寸的Graph对象
 接下来，创建一个宽度和高度均为100单位的`Graph`对象。将图形定位在页面顶部10单位和左侧15单位的位置。为图形添加黑色边框。
 
 ```csharp
@@ -117,7 +117,7 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### 步骤3：创建具有指定尺寸的Shape对象（例如，矩形）
+### 步骤3：创建一个具有指定尺寸的Shape对象（例如，矩形）
 创建一个宽度和高度均为50单位的矩形对象。将矩形定位在(-1, 0)，这超出了图形的边界。
 
 ```csharp
@@ -137,15 +137,15 @@ var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 ```
 
-### 步骤5：尝试将矩形添加到图形中
-尝试将矩形添加到图形中。这将抛出`Aspose.Pdf.BoundsOutOfRangeException`，因为矩形不适合图形的尺寸。
+### 步骤5：将矩形添加到图形中
+将矩形添加到图形中。这将抛出一个`Aspose.Pdf.BoundsOutOfRangeException`，因为矩形不适合图形的尺寸。
 
 ```csharp
 graph.Shapes.Add(rect);
 ```
 
 ## 输出
-执行代码后，预期输出将是一个`Aspose.Pdf.BoundsOutOfRangeException`，其消息为：
+执行代码后，预期的输出将是一个`Aspose.Pdf.BoundsOutOfRangeException`，其消息为：
 
 ```
 Bounds not fit. Container dimensions: 100x100
@@ -153,7 +153,7 @@ Bounds not fit. Container dimensions: 100x100
 
 ## 故障排除
 如果出现问题，以下是一些提示：
-* 确保正确设置了`BoundsCheckMode`。
+* 确保`BoundsCheckMode`设置正确。
 * 验证元素和容器的尺寸是否准确。
 * 检查元素在容器内的位置。
 
@@ -166,12 +166,13 @@ Bounds not fit. Container dimensions: 100x100
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using (var doc = new Aspose.Pdf.Document())
     {
+        // Add page
         var page = doc.Pages.Add();
         
-        // Create a Graph Object with Specified Dimensions
+        // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
             Top = 10,
@@ -192,7 +193,7 @@ private static void CheckShapeBounds()
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
         
-        // Attempt to add the rectangle to the graph
+        // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
 }
@@ -204,11 +205,13 @@ private static void CheckShapeBounds()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckShapeBounds()
 {
-    // Create a new document and add a page
+    // Create PDF document
     using var doc = new Aspose.Pdf.Document();
+    
+    // Add page
     var page = doc.Pages.Add();
 
-    // Create a Graph Object with Specified Dimensions
+    // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
     {
         Top = 10,
@@ -229,7 +232,7 @@ private static void CheckShapeBounds()
     // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
     graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 
-    // Attempt to add the rectangle to the graph
+    // Add the rectangle to the graph
     graph.Shapes.Add(rect);
 }
 ```
@@ -237,4 +240,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## 结论
-形状集合中的边界检查功能是确保元素适合父容器的强大工具。通过将BoundsCheckMode设置为ThrowExceptionIfDoesNotFit，您可以防止PDF文档中的布局问题。此功能在元素定位和尺寸精确度至关重要的场景中尤其有用。有关更多详细信息，请访问[官方文档](https://docs.aspose.com/pdf/net/)。
+形状集合中的边界检查功能是确保元素适合父容器的强大工具。通过将BoundsCheckMode设置为ThrowExceptionIfDoesNotFit，您可以防止PDF文档中的布局问题。此功能在元素定位和尺寸至关重要的场景中尤其有用。有关更多详细信息，请访问[官方文档](https://docs.aspose.com/pdf/net/)。
