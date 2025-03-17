@@ -9,8 +9,8 @@ url: /pt/net/working-with-graphs/
 description: Este artigo explica o que é um Gráfico, como criar um objeto retângulo preenchido e outras funções
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+changefreq: "weekly"
+priority: 0.7
 ---
 <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Graph, PDF documents, Aspose.PDF for .NET, Graph class, Shapes, Arc, Circle, Line graph, Rectangle, PDF manipulation",
-    "wordcount": "329",
+    "wordcount": "324",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/graphs/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-03-17",
     "description": "Este artigo explica o que é um Gráfico, como criar um objeto retângulo preenchido e outras funções"
 }
 </script>
@@ -84,14 +84,14 @@ sitemap:
 Adicionar gráficos a documentos PDF é uma tarefa muito comum para desenvolvedores ao trabalhar com Adobe Acrobat Writer ou outras aplicações de processamento de PDF. Existem muitos tipos de gráficos que podem ser usados em aplicações PDF.
 [Aspose.PDF for .NET](/pdf/net/) também suporta a adição de gráficos a documentos PDF. Para esse propósito, a classe Gráfico é fornecida. Gráfico é um elemento de nível de parágrafo e pode ser adicionado à coleção de Parágrafos em uma instância de Página. Uma instância de Gráfico contém uma coleção de Formas.
 
-Os seguintes tipos de formas são suportados pela classe [Gráfico](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph):
+Os seguintes tipos de formas são suportados pela classe [Gráfico](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/graph):
 
 - [Arco](/pdf/pt/net/add-arc/) - às vezes também chamado de bandeira, é um par ordenado de vértices adjacentes, mas às vezes também chamado de linha direcionada.
 - [Círculo](/pdf/pt/net/add-circle/) - exibe dados usando um círculo dividido em setores. Usamos um gráfico de círculo (também chamado de gráfico de pizza) para mostrar como os dados representam porções de um todo ou de um grupo.
 - [Curva](/pdf/pt/net/add-curve/) - é uma união conectada de linhas projetivas, cada linha encontrando três outras em pontos duplos ordinários.
 - [Linha](/pdf/pt/net/add-line) - gráficos de linha são usados para exibir dados contínuos e podem ser úteis na previsão de eventos futuros quando mostram tendências ao longo do tempo.
 - [Retângulo](/pdf/pt/net/add-rectangle/) - é uma das muitas formas fundamentais que você verá em gráficos, pode ser muito útil para ajudá-lo a resolver um problema.
-- [Elipse](/pdf/pt/net/add-ellipse/) - é um conjunto de pontos em um plano, criando uma forma oval e curva.
+- [Elipse](/pdf/pt/net/add-ellipse/) - é um conjunto de pontos em um plano, criando uma forma oval, curva.
 
 As seguintes operações são suportadas para tipos de forma:
 - [Verificar limites](/pdf/pt/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - verificar limites de forma na coleção de Formas.
