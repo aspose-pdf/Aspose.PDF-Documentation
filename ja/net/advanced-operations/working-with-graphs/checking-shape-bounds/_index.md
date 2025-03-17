@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Aspose.PDF for .NETの新しい境界チェック機能は、`Drawing.Graph.Shapes`コレクション内の要素の寸法を親コンテナに対して自動的に検証し、レイアウトのオーバーフローを防ぎます。要素がコンテナの制限を超えると例外が発生し、挿入時に厳密なサイズ制約を強制して、正確なPDFフォーマットとデザインの精度を確保します。",
+    "abstract": "Aspose.PDF for .NETの新しい境界チェック機能は、`Drawing.Graph.Shapes`コレクション内の要素の寸法を親コンテナに対して自動的に検証し、レイアウトのオーバーフローを防ぎます。要素がコンテナの制限を超えると例外が発生し、挿入時に厳密なサイズ制約を強制して、正確なPDFフォーマットを保証し、デザインの精度を向上させます。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "487",
+    "wordcount": "484",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ draft: false
 </script>
 
 ## はじめに
-この文書は、シェイプコレクションにおける境界チェック機能の使用に関する詳細なガイドを提供します。この機能は、要素が親コンテナ内に収まることを保証し、コンポーネントが収まらない場合に例外をスローするように構成できます。この機能を実装する手順を説明し、完全な例を提供します。
+このドキュメントは、シェイプコレクションにおける境界チェック機能の使用に関する詳細なガイドを提供します。この機能は、要素が親コンテナ内に収まることを保証し、コンポーネントが収まらない場合に例外をスローするように構成できます。この機能を実装する手順を説明し、完全な例を提供します。
 
 ## 前提条件
 以下が必要です：
@@ -86,7 +86,7 @@ Aspose.PDF for .NETライブラリは公式ウェブサイトからダウンロ�
 
 ## 手順
 タスクを完了するための手順は以下の通りです：
-1. PDF文書を作成します。
+1. PDFドキュメントを作成します。
 2. 指定された寸法で`Graph`オブジェクトを作成します。
 3. 指定された寸法で`Shape`オブジェクトを作成します。
 4. `BoundsCheckMode`を`ThrowExceptionIfDoesNotFit`に設定します。
@@ -94,18 +94,18 @@ Aspose.PDF for .NETライブラリは公式ウェブサイトからダウンロ�
 
 これらの手順をC#コードで実装する方法を見てみましょう。
 
-### ステップ1: PDF文書を作成する
-まず、新しいPDF文書を作成し、ページを追加します。
+### ステップ1: PDFドキュメントを作成する
+まず、新しいPDFドキュメントを作成し、ページを追加します。
 
 ```csharp
-using (var doc = new Aspose.Pdf.Document())
+using (var document = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    Aspose.Pdf.Page page = document.Pages.Add();
 }
 ```
 
 ### ステップ2: 指定された寸法でGraphオブジェクトを作成する
-次に、幅と高さが100ユニットの`Graph`オブジェクトを作成します。グラフをページの上から10ユニット、左から15ユニットの位置に配置します。グラフに黒い境界を追加します。
+次に、幅と高さが100単位の`Graph`オブジェクトを作成します。グラフをページの上から10単位、左から15単位の位置に配置します。グラフに黒い境界を追加します。
 
 ```csharp
 var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -118,7 +118,7 @@ page.Paragraphs.Add(graph);
 ```
 
 ### ステップ3: 指定された寸法でShapeオブジェクト（例えば、長方形）を作成する
-幅と高さが50ユニットの長方形オブジェクトを作成します。長方形を(-1, 0)に配置します。これはグラフの境界の外にあります。
+幅と高さが50単位の長方形オブジェクトを作成します。長方形を(-1, 0)に配置します。これはグラフの境界の外側です。
 
 ```csharp
 var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
@@ -167,11 +167,11 @@ Bounds not fit. Container dimensions: 100x100
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using (var doc = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        var page = doc.Pages.Add();
-        
+        var page = document.Pages.Add();
+
         // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
@@ -180,7 +180,7 @@ private static void CheckShapeBounds()
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
         };
         page.Paragraphs.Add(graph);
-        
+
         // Create a Shape object (for example, Rectangle) with specified dimensions
         var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
@@ -189,10 +189,10 @@ private static void CheckShapeBounds()
                 FillColor = Aspose.Pdf.Color.Tomato
             }
         };
-        
+
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-        
+
         // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
@@ -206,10 +206,10 @@ private static void CheckShapeBounds()
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using var doc = new Aspose.Pdf.Document();
-    
+    using var document = new Aspose.Pdf.Document();
+
     // Add page
-    var page = doc.Pages.Add();
+    var page = document.Pages.Add();
 
     // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -240,4 +240,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## 結論
-シェイプコレクションの境界チェック機能は、要素が親コンテナ内に収まることを保証するための強力なツールです。`BoundsCheckMode`を`ThrowExceptionIfDoesNotFit`に設定することで、PDF文書内のレイアウトの問題を防ぐことができます。この機能は、要素の正確な配置とサイズが重要なシナリオで特に便利です。詳細については、[公式ドキュメント](https://docs.aspose.com/pdf/net/)をご覧ください。
+シェイプコレクションの境界チェック機能は、要素が親コンテナ内に収まることを保証するための強力なツールです。BoundsCheckModeをThrowExceptionIfDoesNotFitに設定することで、PDFドキュメント内のレイアウトの問題を防ぐことができます。この機能は、正確な要素の位置決めとサイズ設定が重要なシナリオで特に便利です。詳細については、[公式ドキュメント](https://docs.aspose.com/pdf/net/)を訪れてください。

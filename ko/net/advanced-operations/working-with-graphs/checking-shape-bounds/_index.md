@@ -3,7 +3,7 @@ title: 도형 컬렉션에서 모양 경계 확인
 type: docs
 weight: 70
 url: /ko/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: 도형이 Shapes 컬렉션에 삽입될 때 경계를 확인하여 부모 컨테이너 내에 적합한지 확인하는 방법을 알아보세요.
+description: 도형이 도형 컬렉션에 삽입될 때 경계를 확인하여 부모 컨테이너 내에 적합한지 확인하는 방법을 알아보세요.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Aspose.PDF for .NET의 새로운 경계 확인 기능은 `Drawing.Graph.Shapes` 컬렉션에서 요소 치수를 부모 컨테이너와 자동으로 검증하여 레이아웃 오버플로를 방지합니다. 요소가 컨테이너 한계를 초과할 때 예외를 발생시켜 삽입 중에 엄격한 크기 제약을 강제하여 정확한 PDF 형식과 디자인 정확성을 보장합니다.",
+    "abstract": "Aspose.PDF for .NET의 새로운 경계 확인 기능은 `Drawing.Graph.Shapes` 컬렉션에서 요소의 치수를 부모 컨테이너와 자동으로 검증하여 레이아웃 오버플로우를 방지합니다. 요소가 컨테이너 한계를 초과할 때 예외를 발생시켜 삽입 중에 엄격한 크기 제약을 적용하여 정확한 PDF 형식과 디자인 정확성을 보장합니다.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -74,13 +74,13 @@ draft: false
 </script>
 
 ## 소개
-이 문서는 Shapes 컬렉션에서 경계 확인 기능을 사용하는 방법에 대한 자세한 가이드를 제공합니다. 이 기능은 요소가 부모 컨테이너 내에 적합하도록 보장하며, 구성하여 구성 요소가 맞지 않을 경우 예외를 발생시킬 수 있습니다. 이 기능을 구현하는 단계를 안내하고 완전한 예제를 제공합니다.
+이 문서는 도형 컬렉션에서 경계 확인 기능을 사용하는 방법에 대한 자세한 가이드를 제공합니다. 이 기능은 요소가 부모 컨테이너 내에 적합하도록 보장하며, 구성하여 구성 요소가 맞지 않을 경우 예외를 발생시킬 수 있습니다. 이 기능을 구현하는 단계를 안내하고 완전한 예제를 제공합니다.
 
 ## 전제 조건
 다음이 필요합니다:
 * Visual Studio 2019 이상
 * Aspose.PDF for .NET 25.3 이상
-* 몇 페이지가 포함된 샘플 PDF 파일
+* 몇 개의 페이지가 포함된 샘플 PDF 파일
 
 공식 웹사이트에서 Aspose.PDF for .NET 라이브러리를 다운로드하거나 Visual Studio의 NuGet 패키지 관리자를 사용하여 설치할 수 있습니다.
 
@@ -90,17 +90,17 @@ draft: false
 2. 지정된 치수로 `Graph` 객체 생성.
 3. 지정된 치수로 `Shape` 객체 생성.
 4. `BoundsCheckMode`를 `ThrowExceptionIfDoesNotFit`로 설정.
-5. 그래프에 도형 추가 시도.
+5. 도형을 그래프에 추가하려고 시도.
 
 이 단계들을 C# 코드로 구현하는 방법을 살펴보겠습니다.
 
 ### 단계 1: PDF 문서 생성
-먼저, 새 PDF 문서를 만들고 페이지를 추가합니다.
+먼저, 새 PDF 문서를 생성하고 페이지를 추가합니다.
 
 ```csharp
-using (var doc = new Aspose.Pdf.Document())
+using (var document = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    Aspose.Pdf.Page page = document.Pages.Add();
 }
 ```
 
@@ -118,7 +118,7 @@ page.Paragraphs.Add(graph);
 ```
 
 ### 단계 3: 지정된 치수로 Shape 객체(예: Rectangle) 생성
-너비와 높이가 50 단위인 Rectangle 객체를 생성합니다. 사각형을 (-1, 0) 위치에 배치하는데, 이는 그래프의 경계를 벗어납니다.
+너비와 높이가 50 단위인 Rectangle 객체를 생성합니다. 그래프의 경계를 벗어난 (-1, 0) 위치에 사각형을 배치합니다.
 
 ```csharp
 var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
@@ -167,11 +167,11 @@ Bounds not fit. Container dimensions: 100x100
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using (var doc = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        var page = doc.Pages.Add();
-        
+        var page = document.Pages.Add();
+
         // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
@@ -180,7 +180,7 @@ private static void CheckShapeBounds()
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
         };
         page.Paragraphs.Add(graph);
-        
+
         // Create a Shape object (for example, Rectangle) with specified dimensions
         var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
@@ -189,10 +189,10 @@ private static void CheckShapeBounds()
                 FillColor = Aspose.Pdf.Color.Tomato
             }
         };
-        
+
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-        
+
         // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
@@ -206,10 +206,10 @@ private static void CheckShapeBounds()
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using var doc = new Aspose.Pdf.Document();
-    
+    using var document = new Aspose.Pdf.Document();
+
     // Add page
-    var page = doc.Pages.Add();
+    var page = document.Pages.Add();
 
     // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -240,4 +240,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## 결론
-Shapes 컬렉션의 경계 확인 기능은 요소가 부모 컨테이너 내에 적합하도록 보장하는 강력한 도구입니다. `BoundsCheckMode`를 `ThrowExceptionIfDoesNotFit`로 설정하여 PDF 문서에서 레이아웃 문제를 방지할 수 있습니다. 이 기능은 요소의 정확한 위치 지정 및 크기가 중요한 시나리오에서 특히 유용합니다. 자세한 내용은 [공식 문서](https://docs.aspose.com/pdf/net/)를 방문하세요.
+도형 컬렉션의 경계 확인 기능은 요소가 부모 컨테이너 내에 적합하도록 보장하는 강력한 도구입니다. `BoundsCheckMode`를 `ThrowExceptionIfDoesNotFit`로 설정하여 PDF 문서에서 레이아웃 문제를 방지할 수 있습니다. 이 기능은 요소의 정확한 위치 지정 및 크기가 중요한 시나리오에서 특히 유용합니다. 자세한 내용은 [공식 문서](https://docs.aspose.com/pdf/net/)를 방문하세요.

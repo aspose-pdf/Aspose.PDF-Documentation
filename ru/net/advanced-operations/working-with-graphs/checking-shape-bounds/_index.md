@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Новая функция проверки границ в `Drawing.Graph.Shapes` автоматически проверяет размеры элементов относительно родительских контейнеров, предотвращая переполнение макета. Она вызывает исключения, когда элементы превышают пределы контейнера, обеспечивая строгие ограничения по размеру во время вставки для точного форматирования PDF и повышения точности дизайна.",
+    "abstract": "Новая функция проверки границ Aspose.PDF for .NET в коллекции `Drawing.Graph.Shapes` автоматически проверяет размеры элементов относительно родительских контейнеров, предотвращая переполнение макета. Она вызывает исключения, когда элементы превышают пределы контейнера, обеспечивая строгие ограничения по размеру во время вставки для точного форматирования PDF и упрощения точности дизайна.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "741",
+    "wordcount": "742",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -80,7 +80,7 @@ draft: false
 Вам понадобятся следующие компоненты:
 * Visual Studio 2019 или более поздняя версия
 * Aspose.PDF for .NET 25.3 или более поздняя версия
-* Пример PDF файла, содержащего несколько страниц
+* Пример PDF файла, который содержит несколько страниц
 
 Вы можете скачать библиотеку Aspose.PDF for .NET с официального сайта или установить ее с помощью диспетчера пакетов NuGet в Visual Studio.
 
@@ -98,9 +98,9 @@ draft: false
 Сначала создайте новый PDF документ и добавьте страницу к нему.
 
 ```csharp
-using (var doc = new Aspose.Pdf.Document())
+using (var document = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    Aspose.Pdf.Page page = document.Pages.Add();
 }
 ```
 
@@ -167,11 +167,11 @@ Bounds not fit. Container dimensions: 100x100
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using (var doc = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        var page = doc.Pages.Add();
-        
+        var page = document.Pages.Add();
+
         // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
@@ -180,7 +180,7 @@ private static void CheckShapeBounds()
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
         };
         page.Paragraphs.Add(graph);
-        
+
         // Create a Shape object (for example, Rectangle) with specified dimensions
         var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
@@ -189,10 +189,10 @@ private static void CheckShapeBounds()
                 FillColor = Aspose.Pdf.Color.Tomato
             }
         };
-        
+
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-        
+
         // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
@@ -206,10 +206,10 @@ private static void CheckShapeBounds()
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using var doc = new Aspose.Pdf.Document();
-    
+    using var document = new Aspose.Pdf.Document();
+
     // Add page
-    var page = doc.Pages.Add();
+    var page = document.Pages.Add();
 
     // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)

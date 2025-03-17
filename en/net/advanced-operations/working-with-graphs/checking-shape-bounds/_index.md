@@ -98,9 +98,9 @@ Let's see how to implement these steps in C# code.
 First, create a new PDF document and add a page to it.
 
 ```csharp
-using (var doc = new Aspose.Pdf.Document())
+using (var document = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    Aspose.Pdf.Page page = document.Pages.Add();
 }
 ```
 
@@ -167,11 +167,11 @@ Below is a complete example demonstrating all the steps combined:
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using (var doc = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        var page = doc.Pages.Add();
-        
+        var page = document.Pages.Add();
+
         // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
@@ -180,7 +180,7 @@ private static void CheckShapeBounds()
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
         };
         page.Paragraphs.Add(graph);
-        
+
         // Create a Shape object (for example, Rectangle) with specified dimensions
         var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
@@ -189,10 +189,10 @@ private static void CheckShapeBounds()
                 FillColor = Aspose.Pdf.Color.Tomato
             }
         };
-        
+
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-        
+
         // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
@@ -206,10 +206,10 @@ private static void CheckShapeBounds()
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using var doc = new Aspose.Pdf.Document();
-    
+    using var document = new Aspose.Pdf.Document();
+
     // Add page
-    var page = doc.Pages.Add();
+    var page = document.Pages.Add();
 
     // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)

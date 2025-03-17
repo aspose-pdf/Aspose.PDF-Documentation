@@ -1,9 +1,9 @@
 ---
-title: Comprobar los límites de forma en la colección de Shapes
+title: Verificar límites de forma en la colección de Shapes
 type: docs
 weight: 70
 url: /es/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Aprenda cómo comprobar los límites de una forma cuando se inserta en la colección de Shapes para asegurarse de que se ajuste dentro de su contenedor padre.
+description: Aprenda cómo verificar los límites de una forma cuando se inserta en la colección de Shapes para asegurarse de que se ajuste dentro de su contenedor padre.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "La nueva función de comprobación de límites de Aspose.PDF for .NET en la colección `Drawing.Graph.Shapes` valida automáticamente las dimensiones de los elementos contra los contenedores padres, evitando el desbordamiento del diseño. Se activan excepciones cuando los elementos superan los límites del contenedor, aplicando restricciones de tamaño estrictas durante la inserción para garantizar un formato PDF preciso y agilizar la precisión del diseño.",
+    "abstract": "La nueva función de verificación de límites de Aspose.PDF for .NET en la colección `Drawing.Graph.Shapes` valida automáticamente las dimensiones de los elementos contra los contenedores padres, evitando el desbordamiento del diseño. Se activan excepciones cuando los elementos superan los límites del contenedor, aplicando restricciones de tamaño estrictas durante la inserción para garantizar un formato PDF preciso y agilizar la precisión del diseño.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -74,7 +74,7 @@ draft: false
 </script>
 
 ## Introducción
-Este documento proporciona una guía detallada sobre el uso de la función de comprobación de límites en la colección de Shapes. Esta función asegura que los elementos se ajusten dentro de su contenedor padre y se puede configurar para lanzar una excepción si el componente no se ajusta. Vamos a repasar los pasos para implementar esta funcionalidad y proporcionar un ejemplo completo.
+Este documento proporciona una guía detallada sobre el uso de la función de verificación de límites en la colección de Shapes. Esta función asegura que los elementos se ajusten dentro de su contenedor padre y se puede configurar para lanzar una excepción si el componente no se ajusta. Vamos a repasar los pasos para implementar esta funcionalidad y proporcionar un ejemplo completo.
 
 ## Requisitos previos
 Necesitará lo siguiente:
@@ -98,9 +98,9 @@ Veamos cómo implementar estos pasos en código C#.
 Primero, cree un nuevo documento PDF y agregue una página a él.
 
 ```csharp
-using (var doc = new Aspose.Pdf.Document())
+using (var document = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    Aspose.Pdf.Page page = document.Pages.Add();
 }
 ```
 
@@ -167,11 +167,11 @@ A continuación se muestra un ejemplo completo que demuestra todos los pasos com
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using (var doc = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        var page = doc.Pages.Add();
-        
+        var page = document.Pages.Add();
+
         // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
@@ -180,7 +180,7 @@ private static void CheckShapeBounds()
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
         };
         page.Paragraphs.Add(graph);
-        
+
         // Create a Shape object (for example, Rectangle) with specified dimensions
         var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
@@ -189,10 +189,10 @@ private static void CheckShapeBounds()
                 FillColor = Aspose.Pdf.Color.Tomato
             }
         };
-        
+
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-        
+
         // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
@@ -206,10 +206,10 @@ private static void CheckShapeBounds()
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using var doc = new Aspose.Pdf.Document();
-    
+    using var document = new Aspose.Pdf.Document();
+
     // Add page
-    var page = doc.Pages.Add();
+    var page = document.Pages.Add();
 
     // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -240,4 +240,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## Conclusión
-La función de comprobación de límites en la colección de Shapes es una herramienta poderosa para garantizar que los elementos se ajusten dentro de los contenedores padres. Puede prevenir problemas de diseño en sus documentos PDF configurando el BoundsCheckMode en ThrowExceptionIfDoesNotFit. Esta función es particularmente útil en escenarios donde la posición y el tamaño precisos de los elementos son críticos. Para más detalles, visite la [documentación oficial](https://docs.aspose.com/pdf/net/).
+La función de verificación de límites en la colección de Shapes es una herramienta poderosa para asegurar que los elementos se ajusten dentro de los contenedores padres. Puede prevenir problemas de diseño en sus documentos PDF configurando el BoundsCheckMode en ThrowExceptionIfDoesNotFit. Esta función es particularmente útil en escenarios donde la posición y el tamaño precisos de los elementos son críticos. Para más detalles, visite la [documentación oficial](https://docs.aspose.com/pdf/net/).

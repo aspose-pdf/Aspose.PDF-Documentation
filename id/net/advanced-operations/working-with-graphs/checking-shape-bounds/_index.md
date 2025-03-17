@@ -3,7 +3,7 @@ title: Periksa batas bentuk dalam koleksi Shapes
 type: docs
 weight: 70
 url: /id/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Pelajari cara memeriksa batas sebuah bentuk saat dimasukkan ke dalam koleksi Shapes untuk memastikan itu sesuai dengan wadah induknya.
+description: Pelajari cara memeriksa batas bentuk saat dimasukkan ke dalam koleksi Shapes untuk memastikan bahwa bentuk tersebut sesuai dengan wadah induknya.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Fitur pemeriksaan batas baru dari Aspose.PDF for .NET dalam koleksi `Drawing.Graph.Shapes` secara otomatis memvalidasi dimensi elemen terhadap wadah induk, mencegah overflow tata letak. Ini memicu pengecualian ketika elemen melebihi batas wadah, menegakkan batas ukuran yang ketat selama penyisipan untuk memastikan format PDF yang tepat dan memperlancar akurasi desain",
+    "abstract": "Fitur pemeriksaan batas baru dari Aspose.PDF for .NET dalam koleksi `Drawing.Graph.Shapes` secara otomatis memvalidasi dimensi elemen terhadap wadah induk, mencegah overflow tata letak. Ini memicu pengecualian ketika elemen melebihi batas wadah, menegakkan batas ukuran yang ketat selama penyisipan untuk memastikan format PDF yang tepat dan memperlancar akurasi desain.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "756",
+    "wordcount": "757",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -77,9 +77,9 @@ draft: false
 Dokumen ini memberikan panduan rinci tentang penggunaan fitur pemeriksaan batas dalam koleksi Shapes. Fitur ini memastikan bahwa elemen sesuai dengan wadah induknya dan dapat dikonfigurasi untuk memicu pengecualian jika komponen tidak sesuai. Kami akan menjelaskan langkah-langkah untuk menerapkan fungsionalitas ini dan memberikan contoh lengkap.
 
 ## Prasyarat
-Anda akan memerlukan yang berikut:
-* Visual Studio 2019 atau lebih baru
-* Aspose.PDF for .NET 25.3 atau lebih baru
+Anda akan memerlukan hal-hal berikut:
+* Visual Studio 2019 atau yang lebih baru
+* Aspose.PDF for .NET 25.3 atau yang lebih baru
 * Sebuah file PDF contoh yang berisi beberapa halaman
 
 Anda dapat mengunduh pustaka Aspose.PDF for .NET dari situs web resmi atau menginstalnya menggunakan NuGet Package Manager di Visual Studio.
@@ -98,9 +98,9 @@ Mari kita lihat bagaimana menerapkan langkah-langkah ini dalam kode C#.
 Pertama, buat dokumen PDF baru dan tambahkan halaman ke dalamnya.
 
 ```csharp
-using (var doc = new Aspose.Pdf.Document())
+using (var document = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = doc.Pages.Add();
+    Aspose.Pdf.Page page = document.Pages.Add();
 }
 ```
 
@@ -158,7 +158,7 @@ Jika terjadi masalah, berikut adalah beberapa tips:
 * Periksa posisi elemen dalam wadah.
 
 ## Contoh Lengkap
-Di bawah ini adalah contoh lengkap yang menunjukkan semua langkah yang digabungkan:
+Berikut adalah contoh lengkap yang menunjukkan semua langkah yang digabungkan:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -167,11 +167,11 @@ Di bawah ini adalah contoh lengkap yang menunjukkan semua langkah yang digabungk
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using (var doc = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        var page = doc.Pages.Add();
-        
+        var page = document.Pages.Add();
+
         // Create a Graph object with specified dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
@@ -180,7 +180,7 @@ private static void CheckShapeBounds()
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
         };
         page.Paragraphs.Add(graph);
-        
+
         // Create a Shape object (for example, Rectangle) with specified dimensions
         var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
@@ -189,10 +189,10 @@ private static void CheckShapeBounds()
                 FillColor = Aspose.Pdf.Color.Tomato
             }
         };
-        
+
         // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-        
+
         // Add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
@@ -206,10 +206,10 @@ private static void CheckShapeBounds()
 private static void CheckShapeBounds()
 {
     // Create PDF document
-    using var doc = new Aspose.Pdf.Document();
-    
+    using var document = new Aspose.Pdf.Document();
+
     // Add page
-    var page = doc.Pages.Add();
+    var page = document.Pages.Add();
 
     // Create a Graph object with specified dimensions
     var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)

@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "تتميز ميزة التحقق من الحدود الجديدة في `Drawing.Graph.Shapes` بالتحقق تلقائيًا من أبعاد العناصر مقابل الحاويات الأم، مما يمنع تجاوز التخطيط. يتم تفعيل الاستثناءات عندما تتجاوز العناصر حدود الحاوية، مما يفرض قيودًا صارمة على الحجم أثناء الإدراج لضمان تنسيق PDF دقيق وتبسيط دقة التصميم",
+    "abstract": "تتميز ميزة التحقق من الحدود الجديدة في `Drawing.Graph.Shapes` بالتحقق تلقائيًا من أبعاد العناصر مقابل الحاويات الأم، مما يمنع تجاوز التخطيط. يتم تفعيل الاستثناءات عندما تتجاوز العناصر حدود الحاوية، مما يفرض قيودًا صارمة على الحجم أثناء الإدراج لضمان تنسيق PDF دقيق وتبسيط دقة التصميم.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "732",
+    "wordcount": "731",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ draft: false
 </script>
 
 ## المقدمة
-يوفر هذا المستند دليلًا تفصيليًا حول استخدام ميزة التحقق من الحدود في مجموعة الأشكال. تضمن هذه الميزة أن تناسب العناصر داخل حاويتها الأم ويمكن تكوينها لإلقاء استثناء إذا لم يتناسب المكون. سنستعرض الخطوات لتنفيذ هذه الوظيفة ونقدم مثالًا كاملاً.
+يوفر هذا المستند دليلًا مفصلًا حول استخدام ميزة التحقق من الحدود في مجموعة الأشكال. تضمن هذه الميزة أن تناسب العناصر داخل الحاوية الأم ويمكن تكوينها لرمي استثناء إذا لم يتناسب المكون. سنستعرض الخطوات لتنفيذ هذه الوظيفة ونقدم مثالًا كاملاً.
 
 ## المتطلبات الأساسية
 ستحتاج إلى ما يلي:
@@ -131,14 +131,14 @@ var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
 ```
 
 ### الخطوة 4: تعيين BoundsCheckMode إلى ThrowExceptionIfDoesNotFit
-قم بتعيين `BoundsCheckMode` إلى `ThrowExceptionIfDoesNotFit` لضمان إلقاء استثناء إذا لم يتناسب المستطيل داخل الرسم البياني.
+قم بتعيين `BoundsCheckMode` إلى `ThrowExceptionIfDoesNotFit` لضمان رمي استثناء إذا لم يتناسب المستطيل داخل الرسم البياني.
 
 ```csharp
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
 ```
 
 ### الخطوة 5: إضافة المستطيل إلى الرسم البياني
-أضف المستطيل إلى الرسم البياني. سيؤدي ذلك إلى إلقاء استثناء `Aspose.Pdf.BoundsOutOfRangeException` لأن المستطيل لا يتناسب مع أبعاد الرسم البياني.
+أضف المستطيل إلى الرسم البياني. سيؤدي ذلك إلى رمي استثناء `Aspose.Pdf.BoundsOutOfRangeException` لأن المستطيل لا يتناسب مع أبعاد الرسم البياني.
 
 ```csharp
 graph.Shapes.Add(rect);
@@ -240,4 +240,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## الخاتمة
-تعد ميزة التحقق من الحدود في مجموعة الأشكال أداة قوية لضمان تناسب العناصر داخل الحاويات الأم. يمكنك منع مشكلات التخطيط في مستندات PDF الخاصة بك عن طريق تعيين BoundsCheckMode إلى ThrowExceptionIfDoesNotFit. هذه الميزة مفيدة بشكل خاص في السيناريوهات التي يكون فيها تحديد موضع العناصر وحجمها بدقة أمرًا حاسمًا. لمزيد من التفاصيل، قم بزيارة [الوثائق الرسمية](https://docs.aspose.com/pdf/net/).
+تعد ميزة التحقق من الحدود في مجموعة الأشكال أداة قوية لضمان تناسب العناصر داخل الحاويات الأم. يمكنك منع مشكلات التخطيط في مستندات PDF الخاصة بك عن طريق تعيين BoundsCheckMode إلى ThrowExceptionIfDoesNotFit. هذه الميزة مفيدة بشكل خاص في السيناريوهات التي تكون فيها دقة موضع العنصر وحجمه أمرًا حاسمًا. لمزيد من التفاصيل، قم بزيارة [الوثائق الرسمية](https://docs.aspose.com/pdf/net/).
