@@ -3,7 +3,7 @@ title: 检查形状集合中的形状边界
 type: docs
 weight: 70
 url: /zh/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: 了解如何检查插入到形状集合中的形状的边界，以确保它适合其父容器。
+description: 了解如何检查插入到形状集合中的形状的边界，以确保其适合其父容器。
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "Aspose.PDF for .NET的新边界检查功能在`Drawing.Graph.Shapes`集合中自动验证元素尺寸与父容器的匹配，防止布局溢出。当元素超出容器限制时，它会触发异常，在插入期间强制执行严格的尺寸约束，以确保精确的PDF格式和简化设计准确性",
+    "abstract": "Aspose.PDF for .NET的新边界检查功能在`Drawing.Graph.Shapes`集合中自动验证元素尺寸与父容器的匹配，防止布局溢出。当元素超出容器限制时，会触发异常，在插入过程中强制执行严格的尺寸约束，以确保精确的PDF格式和简化设计准确性",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1000",
+    "wordcount": "510",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -68,7 +68,7 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/"
     },
-    "dateModified": "2025-02-28",
+    "dateModified": "2025-03-17",
     "description": ""
 }
 </script>
@@ -158,7 +158,7 @@ Bounds not fit. Container dimensions: 100x100
 * 检查元素在容器内的位置。
 
 ## 完整示例
-以下是一个完整示例，演示了所有步骤的结合：
+以下是一个完整示例，演示所有步骤的结合：
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -236,4 +236,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## 结论
-形状集合中的边界检查功能是确保元素适合父容器的强大工具。通过将BoundsCheckMode设置为ThrowExceptionIfDoesNotFit，您可以防止PDF文档中的布局问题。此功能在元素定位和尺寸精确性至关重要的场景中尤其有用。有关更多详细信息，请访问[官方文档](https://docs.aspose.com/pdf/net/)。
+形状集合中的边界检查功能是确保元素适合父容器的强大工具。通过将BoundsCheckMode设置为ThrowExceptionIfDoesNotFit，您可以防止PDF文档中的布局问题。此功能在元素定位和尺寸至关重要的场景中尤其有用。有关更多详细信息，请访问[官方文档](https://docs.aspose.com/pdf/net/)。

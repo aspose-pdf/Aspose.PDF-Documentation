@@ -3,7 +3,7 @@ title: Periksa batas bentuk dalam koleksi Shapes
 type: docs
 weight: 70
 url: /id/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Pelajari cara memeriksa batas sebuah bentuk saat dimasukkan ke dalam koleksi Shapes untuk memastikan itu sesuai dengan wadah induknya.
+description: Pelajari cara memeriksa batas bentuk saat dimasukkan ke dalam koleksi Shapes untuk memastikan bahwa bentuk tersebut sesuai dengan wadah induknya.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1000",
+    "wordcount": "798",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -68,7 +68,7 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/"
     },
-    "dateModified": "2025-02-28",
+    "dateModified": "2025-03-17",
     "description": ""
 }
 </script>
@@ -77,7 +77,7 @@ draft: false
 Dokumen ini memberikan panduan rinci tentang penggunaan fitur pemeriksaan batas dalam koleksi Shapes. Fitur ini memastikan bahwa elemen sesuai dengan wadah induknya dan dapat dikonfigurasi untuk memicu pengecualian jika komponen tidak sesuai. Kami akan menjelaskan langkah-langkah untuk menerapkan fungsionalitas ini dan memberikan contoh lengkap.
 
 ## Prasyarat
-Anda akan memerlukan yang berikut:
+Anda akan memerlukan hal-hal berikut:
 * Visual Studio 2019 atau lebih baru
 * Aspose.PDF for .NET 25.3 atau lebih baru
 * Sebuah file PDF contoh yang berisi beberapa halaman
@@ -131,7 +131,7 @@ Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 
 ```
 
 ### Langkah 4: Atur BoundsCheckMode ke ThrowExceptionIfDoesNotFit
-Atur `BoundsCheckMode` ke `ThrowExceptionIfDoesNotFit` untuk memastikan bahwa pengecualian dilemparkan jika persegi panjang tidak sesuai dengan grafik.
+Atur `BoundsCheckMode` ke `ThrowExceptionIfDoesNotFit` untuk memastikan bahwa pengecualian akan dilempar jika persegi panjang tidak sesuai dengan grafik.
 
 ```csharp
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
@@ -158,7 +158,7 @@ Jika terjadi masalah, berikut beberapa tips:
 * Periksa posisi elemen dalam wadah.
 
 ## Contoh Lengkap
-Di bawah ini adalah contoh lengkap yang menunjukkan semua langkah yang digabungkan:
+Berikut adalah contoh lengkap yang menunjukkan semua langkah yang digabungkan:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

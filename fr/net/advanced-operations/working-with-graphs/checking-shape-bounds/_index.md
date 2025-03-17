@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1000",
+    "wordcount": "896",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -68,7 +68,7 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/"
     },
-    "dateModified": "2025-02-28",
+    "dateModified": "2025-03-17",
     "description": ""
 }
 </script>
@@ -131,7 +131,7 @@ Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 
 ```
 
 ### Étape 4 : Définir le BoundsCheckMode sur ThrowExceptionIfDoesNotFit
-Définissez le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit` pour garantir qu'une exception soit lancée si le rectangle ne s'adapte pas au graphique.
+Définissez le `BoundsCheckMode` sur `ThrowExceptionIfDoesNotFit` pour garantir qu'une exception est lancée si le rectangle ne s'adapte pas au graphique.
 
 ```csharp
 graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
@@ -236,4 +236,4 @@ private static void CheckShapeBounds()
 {{< /tabs >}}
 
 ## Conclusion
-La fonctionnalité de vérification des limites dans la collection Shapes est un outil puissant pour garantir que les éléments s'adaptent aux conteneurs parents. Vous pouvez éviter les problèmes de mise en page dans vos documents PDF en définissant le BoundsCheckMode sur ThrowExceptionIfDoesNotFit. Cette fonctionnalité est particulièrement utile dans les scénarios où le positionnement et la taille précis des éléments sont critiques. Pour plus de détails, visitez la [documentation officielle](https://docs.aspose.com/pdf/net/).
+La fonctionnalité de vérification des limites dans la collection Shapes est un outil puissant pour garantir que les éléments s'adaptent aux conteneurs parents. Vous pouvez éviter les problèmes de mise en page dans vos documents PDF en définissant le BoundsCheckMode sur ThrowExceptionIfDoesNotFit. Cette fonctionnalité est particulièrement utile dans les scénarios où le positionnement et le dimensionnement précis des éléments sont critiques. Pour plus de détails, visitez la [documentation officielle](https://docs.aspose.com/pdf/net/).

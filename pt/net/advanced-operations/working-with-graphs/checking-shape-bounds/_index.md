@@ -3,7 +3,7 @@ title: Verificar limites de forma na coleção Shapes
 type: docs
 weight: 70
 url: /pt/net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Aprenda como verificar os limites de uma forma ao inseri-la na coleção Shapes para garantir que ela se encaixe dentro de seu contêiner pai.
+description: Aprenda como verificar os limites de uma forma quando inserida na coleção Shapes para garantir que ela se encaixe dentro de seu contêiner pai.
 lastmod: "2025-02-28"
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "O novo recurso de verificação de limites de Aspose.PDF for .NET na coleção `Drawing.Graph.Shapes` valida automaticamente as dimensões dos elementos em relação aos contêineres pai, prevenindo transbordamento de layout. Ele aciona exceções quando os elementos excedem os limites do contêiner, impondo restrições de tamanho rigorosas durante a inserção para garantir formatação precisa de PDF e agilizar a precisão do design.",
+    "abstract": "O novo recurso de verificação de limites do Aspose.PDF for .NET na coleção `Drawing.Graph.Shapes` valida automaticamente as dimensões dos elementos em relação aos contêineres pai, prevenindo transbordamento de layout. Ele aciona exceções quando os elementos excedem os limites do contêiner, impondo restrições de tamanho rigorosas durante a inserção para garantir formatação precisa de PDF e agilizar a precisão do design.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1000",
+    "wordcount": "863",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -68,7 +68,7 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/"
     },
-    "dateModified": "2025-02-28",
+    "dateModified": "2025-03-17",
     "description": ""
 }
 </script>
@@ -105,7 +105,7 @@ using (var doc = new Aspose.Pdf.Document())
 ```
 
 ### Passo 2: Criar um Objeto Graph com Dimensões Especificadas
-Em seguida, crie um objeto `Graph` com largura e altura de 100 unidades. Posicione o gráfico a 10 unidades do topo e 15 unidades da esquerda da página. Adicione uma borda preta ao gráfico.
+Em seguida, crie um objeto `Graph` com uma largura e altura de 100 unidades. Posicione o gráfico a 10 unidades do topo e 15 unidades da esquerda da página. Adicione uma borda preta ao gráfico.
 
 ```csharp
 var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
@@ -118,7 +118,7 @@ page.Paragraphs.Add(graph);
 ```
 
 ### Passo 3: Criar um objeto Aspose.Pdf.Drawing.Shape (por exemplo, Aspose.Pdf.Drawing.Rectangle) com dimensões especificadas
-Crie um objeto Rectangle com largura e altura de 50 unidades. Posicione o retângulo em (-1, 0), que está fora dos limites do gráfico.
+Crie um objeto Rectangle com uma largura e altura de 50 unidades. Posicione o retângulo em (-1, 0), que está fora dos limites do gráfico.
 
 ```csharp
 Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
@@ -153,8 +153,8 @@ Bounds not fit. Container dimensions: 100x100
 
 ## Solução de Problemas
 Em caso de problemas, aqui estão algumas dicas:
-* Certifique-se de que o `BoundsCheckMode` esteja definido corretamente.
-* Verifique se as dimensões do elemento e do contêiner estão precisas.
+* Certifique-se de que o `BoundsCheckMode` está definido corretamente.
+* Verifique se as dimensões do elemento e do contêiner estão corretas.
 * Verifique o posicionamento do elemento dentro do contêiner.
 
 ## Exemplo Completo
