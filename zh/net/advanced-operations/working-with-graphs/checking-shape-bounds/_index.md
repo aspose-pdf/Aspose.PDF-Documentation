@@ -98,9 +98,9 @@ draft: false
 首先，创建一个新的PDF文档并向其中添加一页。
 
 ```csharp
-using (var document = new Aspose.Pdf.Document())
+using (var doc = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = document.Pages.Add();
+    Aspose.Pdf.Page page = doc.Pages.Add();
 }
 ```
 

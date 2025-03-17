@@ -98,9 +98,9 @@ draft: false
 أولاً، قم بإنشاء مستند PDF جديد وأضف صفحة إليه.
 
 ```csharp
-using (var document = new Aspose.Pdf.Document())
+using (var doc = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = document.Pages.Add();
+    Aspose.Pdf.Page page = doc.Pages.Add();
 }
 ```
 

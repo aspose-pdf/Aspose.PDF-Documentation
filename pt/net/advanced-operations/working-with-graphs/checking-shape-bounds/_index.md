@@ -98,9 +98,9 @@ Vamos ver como implementar esses passos em código C#.
 Primeiro, crie um novo documento PDF e adicione uma página a ele.
 
 ```csharp
-using (var document = new Aspose.Pdf.Document())
+using (var doc = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = document.Pages.Add();
+    Aspose.Pdf.Page page = doc.Pages.Add();
 }
 ```
 

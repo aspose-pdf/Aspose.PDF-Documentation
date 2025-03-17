@@ -98,9 +98,9 @@ draft: false
 Сначала создайте новый PDF документ и добавьте страницу к нему.
 
 ```csharp
-using (var document = new Aspose.Pdf.Document())
+using (var doc = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = document.Pages.Add();
+    Aspose.Pdf.Page page = doc.Pages.Add();
 }
 ```
 

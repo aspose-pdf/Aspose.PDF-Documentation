@@ -98,9 +98,9 @@ Aspose.PDF for .NETライブラリは公式ウェブサイトからダウンロ�
 まず、新しいPDF文書を作成し、ページを追加します。
 
 ```csharp
-using (var document = new Aspose.Pdf.Document())
+using (var doc = new Aspose.Pdf.Document())
 {
-    Aspose.Pdf.Page page = document.Pages.Add();
+    Aspose.Pdf.Page page = doc.Pages.Add();
 }
 ```
 
