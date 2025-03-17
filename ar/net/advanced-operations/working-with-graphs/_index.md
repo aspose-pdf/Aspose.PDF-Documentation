@@ -1,24 +1,19 @@
 ---
-title: العمل مع الرسوم البيانية في ملف PDF
-linktitle: العمل مع الرسوم البيانية
+title: تحقق من حدود الشكل في مجموعة الأشكال
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
-url: /ar/net/working-with-graphs/
-description: يشرح هذا المقال ما هو الرسم البياني، كيفية إنشاء كائن مستطيل مملوء، ووظائف أخرى
-lastmod: "2022-02-17"
-sitemap:
-changefreq: "weekly"
-priority: 0.7
+url: /ar/net/aspose-pdf-drawing-graph-shapes-bounds-check/
+description: تعرف على كيفية التحقق من حدود الشكل عند إدخاله في مجموعة الأشكال لضمان ملاءمته داخل الحاوية الأم.
+lastmod: "2025-02-28"
+draft: false
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Working with Graphs in PDF file",
-    "alternativeHeadline": "Create and Manipulate Graphs in PDF Files",
-    "abstract": "اكتشف الميزة الجديدة القوية لإنشاء ومعالجة الرسوم البيانية داخل مستندات PDF باستخدام Aspose.PDF for .NET. تتيح هذه الوظيفة للمطورين إنشاء مجموعة متنوعة من أشكال الرسوم البيانية، بما في ذلك الأقواس، والدوائر، والخطوط، والمستطيلات، مما يعزز العرض المرئي للبيانات في تطبيقاتهم. قم بتحسين عملية إنشاء PDF الخاصة بك وقدم تصورات بيانات ديناميكية بسهولة",
+    "headline": "Checking Element Bounds in Shapes Collection",
+    "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
+    "abstract": "تتميز ميزة التحقق من الحدود الجديدة في `Drawing.Graph.Shapes` بالتحقق تلقائيًا من أبعاد العناصر مقابل الحاويات الأم، مما يمنع تجاوز التخطيط. يتم تفعيل الاستثناءات عندما تتجاوز العناصر حدود الحاوية، مما يفرض قيودًا صارمة على الحجم أثناء الإدراج لضمان تنسيق PDF دقيق وتبسيط دقة التصميم",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,8 +22,7 @@ priority: 0.7
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "Graph, PDF documents, Aspose.PDF for .NET, Graph class, Shapes, Arc, Circle, Line graph, Rectangle, PDF manipulation",
-    "wordcount": "288",
+    "wordcount": "732",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -69,98 +63,181 @@ priority: 0.7
             }
         ]
     },
-    "url": "/net/graphs/",
+    "url": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/graphs/"
+        "@id": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/"
     },
     "dateModified": "2025-03-17",
-    "description": "يشرح هذا المقال ما هو الرسم البياني، كيفية إنشاء كائن مستطيل مملوء، ووظائف أخرى"
+    "description": ""
 }
 </script>
 
-## ما هو الرسم البياني
+## المقدمة
+يوفر هذا المستند دليلًا تفصيليًا حول استخدام ميزة التحقق من الحدود في مجموعة الأشكال. تضمن هذه الميزة أن تناسب العناصر داخل حاويتها الأم ويمكن تكوينها لإلقاء استثناء إذا لم يتناسب المكون. سنستعرض الخطوات لتنفيذ هذه الوظيفة ونقدم مثالًا كاملاً.
 
-إضافة الرسوم البيانية إلى مستندات PDF هي مهمة شائعة جدًا للمطورين أثناء العمل مع Adobe Acrobat Writer أو تطبيقات معالجة PDF الأخرى. هناك العديد من أنواع الرسوم البيانية التي يمكن استخدامها في تطبيقات PDF.
-[Aspose.PDF for .NET](/pdf/ar/net/) يدعم أيضًا إضافة الرسوم البيانية إلى مستندات PDF. لهذا الغرض، يتم توفير فئة الرسم البياني. الرسم البياني هو عنصر على مستوى الفقرة ويمكن إضافته إلى مجموعة الفقرات في مثيل الصفحة. يحتوي مثيل الرسم البياني على مجموعة من الأشكال.
+## المتطلبات الأساسية
+ستحتاج إلى ما يلي:
+* Visual Studio 2019 أو أحدث
+* Aspose.PDF for .NET 25.3 أو أحدث
+* ملف PDF عينة يحتوي على بعض الصفحات
 
-الأنواع التالية من الأشكال مدعومة من قبل فئة [Graph](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/graph):
+يمكنك تنزيل مكتبة Aspose.PDF for .NET من الموقع الرسمي أو تثبيتها باستخدام مدير حزم NuGet في Visual Studio.
 
-- [قوس](/pdf/ar/net/add-arc/) - يُطلق عليه أحيانًا أيضًا علم وهو زوج مرتب من الرؤوس المتجاورة، ولكنه يُطلق عليه أحيانًا أيضًا خط موجه.
-- [دائرة](/pdf/ar/net/add-circle/) - تعرض البيانات باستخدام دائرة مقسمة إلى قطاعات. نستخدم رسمًا دائريًا (يُطلق عليه أيضًا مخطط دائري) لإظهار كيف تمثل البيانات أجزاء من كل واحد أو مجموعة واحدة.
-- [منحنى](/pdf/ar/net/add-curve/) - هو اتحاد متصل من الخطوط الإسقاطية، حيث يلتقي كل خط بثلاثة خطوط أخرى في نقاط مزدوجة عادية.
-- [خط](/pdf/ar/net/add-line) - تُستخدم الرسوم البيانية الخطية لعرض البيانات المستمرة ويمكن أن تكون مفيدة في التنبؤ بالأحداث المستقبلية عندما تظهر الاتجاهات بمرور الوقت.
-- [مستطيل](/pdf/ar/net/add-rectangle/) - هو أحد الأشكال الأساسية العديدة التي سترى في الرسوم البيانية، ويمكن أن يكون مفيدًا جدًا في مساعدتك على حل مشكلة.
-- [بيضاوي](/pdf/ar/net/add-ellipse/) - هو مجموعة من النقاط على مستوى، مما يخلق شكلًا بيضاويًا منحنيًا.
+## الخطوات
+إليك الخطوات لإكمال المهمة:
+1. إنشاء مستند PDF.
+2. إنشاء كائن `Graph` بأبعاد محددة.
+3. إنشاء كائن `Shape` بأبعاد محددة.
+4. تعيين `BoundsCheckMode` إلى `ThrowExceptionIfDoesNotFit`.
+5. محاولة إضافة الشكل إلى الرسم البياني.
 
-العمليات التالية مدعومة لأنواع الأشكال:
-- [تحقق من الحدود](/pdf/ar/net/aspose-pdf-drawing-graph-shapes-bounds-check/) - تحقق من حدود الشكل في مجموعة الأشكال.
+دعنا نرى كيفية تنفيذ هذه الخطوات في كود C#.
 
-التفاصيل أعلاه موضحة أيضًا في الأشكال أدناه:
+### الخطوة 1: إنشاء مستند PDF
+أولاً، قم بإنشاء مستند PDF جديد وأضف صفحة إليه.
 
-![الأشكال في الرسوم البيانية](graphs.png)
-
-
-<script type="application/ld+json">
+```csharp
+using (var doc = new Aspose.Pdf.Document())
 {
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
+    Aspose.Pdf.Page page = doc.Pages.Add();
+}
+```
+
+### الخطوة 2: إنشاء كائن Graph بأبعاد محددة
+بعد ذلك، قم بإنشاء كائن `Graph` بعرض وارتفاع 100 وحدة. ضع الرسم البياني على بعد 10 وحدات من الأعلى و15 وحدة من اليسار من الصفحة. أضف حدودًا سوداء للرسم البياني.
+
+```csharp
+var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
+{
+    Top = 10,
+    Left = 15,
+    Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
+};
+page.Paragraphs.Add(graph);
+```
+
+### الخطوة 3: إنشاء كائن Shape (على سبيل المثال، مستطيل) بأبعاد محددة
+قم بإنشاء كائن مستطيل بعرض وارتفاع 50 وحدة. ضع المستطيل في (-1، 0)، وهو خارج حدود الرسم البياني.
+
+```csharp
+var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+{
+    GraphInfo =
+    {
+        FillColor = Aspose.Pdf.Color.Tomato
+    }
+};
+```
+
+### الخطوة 4: تعيين BoundsCheckMode إلى ThrowExceptionIfDoesNotFit
+قم بتعيين `BoundsCheckMode` إلى `ThrowExceptionIfDoesNotFit` لضمان إلقاء استثناء إذا لم يتناسب المستطيل داخل الرسم البياني.
+
+```csharp
+graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
+```
+
+### الخطوة 5: إضافة المستطيل إلى الرسم البياني
+أضف المستطيل إلى الرسم البياني. سيؤدي ذلك إلى إلقاء استثناء `Aspose.Pdf.BoundsOutOfRangeException` لأن المستطيل لا يتناسب مع أبعاد الرسم البياني.
+
+```csharp
+graph.Shapes.Add(rect);
+```
+
+## المخرجات
+بعد تنفيذ الكود، ستكون المخرجات المتوقعة هي `Aspose.Pdf.BoundsOutOfRangeException` مع الرسالة:
+
+```
+Bounds not fit. Container dimensions: 100x100
+```
+
+## استكشاف الأخطاء وإصلاحها
+في حالة حدوث مشكلات، إليك بعض النصائح:
+* تأكد من تعيين `BoundsCheckMode` بشكل صحيح.
+* تحقق من أن أبعاد العنصر والحاوية دقيقة.
+* تحقق من موضع العنصر داخل الحاوية.
+
+## مثال كامل
+فيما يلي مثال كامل يوضح جميع الخطوات مجتمعة:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckShapeBounds()
+{
+    // Create PDF document
+    using (var doc = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = doc.Pages.Add();
+        
+        // Create a Graph object with specified dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
+        {
+            Top = 10,
+            Left = 15,
+            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
+        };
+        page.Paragraphs.Add(graph);
+        
+        // Create a Shape object (for example, Rectangle) with specified dimensions
+        var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+        {
+            GraphInfo =
             {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
+                FillColor = Aspose.Pdf.Color.Tomato
             }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
+        };
+        
+        // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
+        graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
+        
+        // Add the rectangle to the graph
+        graph.Shapes.Add(rect);
     }
 }
-</script>
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckShapeBounds()
+{
+    // Create PDF document
+    using var doc = new Aspose.Pdf.Document();
+    
+    // Add page
+    var page = doc.Pages.Add();
+
+    // Create a Graph object with specified dimensions
+    var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
+    {
+        Top = 10,
+        Left = 15,
+        Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
+    };
+    page.Paragraphs.Add(graph);
+
+    // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
+    var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
+    {
+        GraphInfo =
+        {
+            FillColor = Aspose.Pdf.Color.Tomato
+        }
+    };
+
+    // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
+    graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
+
+    // Add the rectangle to the graph
+    graph.Shapes.Add(rect);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## الخاتمة
+تعد ميزة التحقق من الحدود في مجموعة الأشكال أداة قوية لضمان تناسب العناصر داخل الحاويات الأم. يمكنك منع مشكلات التخطيط في مستندات PDF الخاصة بك عن طريق تعيين BoundsCheckMode إلى ThrowExceptionIfDoesNotFit. هذه الميزة مفيدة بشكل خاص في السيناريوهات التي يكون فيها تحديد موضع العناصر وحجمها بدقة أمرًا حاسمًا. لمزيد من التفاصيل، قم بزيارة [الوثائق الرسمية](https://docs.aspose.com/pdf/net/).
