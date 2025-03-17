@@ -231,29 +231,29 @@ private static void Check(string pdfFile)
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(pdfFile))
     {   
-         // Create the compromise detector instance
-         var detector = new Aspose.Pdf.SignaturesCompromiseDetector(document);
-         CompromiseCheckResult result;
+        // Create the compromise detector instance
+        var detector = new Aspose.Pdf.SignaturesCompromiseDetector(document);
+        CompromiseCheckResult result;
     
-         // Check for compromise
-         if (detector.Check(out result))
-         {
+        // Check for compromise
+        if (detector.Check(out result))
+        {
             Console.WriteLine("No signature compromise detected");
             return;
-         }
+        }
          
-         // Get information about compromised signatures
-         if (result.HasCompromisedSignatures)
-         {
+        // Get information about compromised signatures
+        if (result.HasCompromisedSignatures)
+        {
             Console.WriteLine($"Count of compromised signatures: {result.CompromisedSignatures.Count}");
             foreach (var signatureName in result.CompromisedSignatures)
             {
                 Console.WriteLine($"Signature name: {signatureName.FullName}");
             }
-         }
+        }
          
-         // Get info about signatures coverage
-         Console.WriteLine(result.SignaturesCoverage);   
+        // Get info about signatures coverage
+        Console.WriteLine(result.SignaturesCoverage);   
     }
 }
 ```
