@@ -209,6 +209,89 @@ Pkcs7
 Signature1
 ```
 
+## Comprobación de firmas por compromiso
+
+Puede usar la clase **SignaturesCompromiseDetector** para verificar firmas digitales por compromiso.
+Llame al método **Check()** para verificar las firmas del documento.
+Si no se detecta compromiso en ninguna firma, el método devolverá verdadero.
+Si el método devuelve falso, puede verificar si las firmas comprometidas utilizan la propiedad **HasCompromisedSignatures** y recuperar la lista de firmas comprometidas a través de la propiedad **CompromisedSignatures**.
+
+Para verificar si las firmas existentes cubren todo el documento, use la propiedad **SignaturesCoverage**.
+Esta propiedad puede tener los siguientes valores:
+- **Undefined** – si una de las firmas está explícitamente comprometida o la verificación de cobertura falló.
+- **EntirelySigned** – si las firmas cubren todo el documento.
+- **PartiallySigned** – si las firmas no cubren todo el documento y hay contenido no firmado.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Check(string pdfFile)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(pdfFile))
+    {   
+         // Create the compromise detector instance
+         var detector = new Aspose.Pdf.SignaturesCompromiseDetector(document);
+         CompromiseCheckResult result;
+    
+         // Check for compromise
+         if (detector.Check(out result))
+         {
+            Console.WriteLine("No signature compromise detected");
+            return;
+         }
+         
+         // Get information about compromised signatures
+         if (result.HasCompromisedSignatures)
+         {
+            Console.WriteLine($"Count of compromised signatures: {result.CompromisedSignatures.Count}");
+            foreach (var signatureName in result.CompromisedSignatures)
+            {
+                Console.WriteLine($"Signature name: {signatureName.FullName}");
+            }
+         }
+         
+         // Get info about signatures coverage
+         Console.WriteLine(result.SignaturesCoverage);   
+    }
+}
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Check(string pdfFile)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(pdfFile);
+    // Create the compromise detector instance
+    var detector = new Aspose.Pdf.SignaturesCompromiseDetector(document);
+
+    // Check for compromise
+    if (detector.Check(out var result))
+    {
+        Console.WriteLine("No signature compromise detected");
+        return;
+    }
+         
+    // Get information about compromised signatures
+    if (result.HasCompromisedSignatures)
+    {
+        Console.WriteLine($"Count of compromised signatures: {result.CompromisedSignatures.Count}");
+        foreach (var signatureName in result.CompromisedSignatures)
+        {
+            Console.WriteLine($"Signature name: {signatureName.FullName}");
+        }
+    }
+         
+    // Get info about signatures coverage
+    Console.WriteLine(result.SignaturesCoverage);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",

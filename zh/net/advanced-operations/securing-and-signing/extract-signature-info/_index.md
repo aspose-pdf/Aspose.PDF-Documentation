@@ -209,6 +209,90 @@ Pkcs7
 Signature1
 ```
 
+## 检查签名是否被篡改
+
+您可以使用 **SignaturesCompromiseDetector** 类来验证数字签名是否被篡改。
+调用 **Check()** 方法检查文档的签名。
+如果未检测到签名篡改，则该方法将返回 true。
+如果该方法返回 false，您可以通过 **HasCompromisedSignatures** 属性检查是否存在被篡改的签名，并通过 **CompromisedSignatures** 属性检索被篡改的签名列表。
+
+要验证现有签名是否覆盖整个文档，请使用 **SignaturesCoverage** 属性。
+此属性可以具有以下值：
+- **Undefined** – 如果其中一个签名被明确篡改或覆盖检查失败。
+- **EntirelySigned** – 如果签名覆盖整个文档。
+- **PartiallySigned** – 如果签名未覆盖整个文档，并且存在未签名的内容。
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Check(string pdfFile)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(pdfFile))
+    {   
+         // Create the compromise detector instance
+         var detector = new Aspose.Pdf.SignaturesCompromiseDetector(document);
+         CompromiseCheckResult result;
+    
+         // Check for compromise
+         if (detector.Check(out result))
+         {
+            Console.WriteLine("No signature compromise detected");
+            return;
+         }
+         
+         // Get information about compromised signatures
+         if (result.HasCompromisedSignatures)
+         {
+            Console.WriteLine($"Count of compromised signatures: {result.CompromisedSignatures.Count}");
+            foreach (var signatureName in result.CompromisedSignatures)
+            {
+                Console.WriteLine($"Signature name: {signatureName.FullName}");
+            }
+         }
+         
+         // Get info about signatures coverage
+         Console.WriteLine(result.SignaturesCoverage);   
+    }
+}
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Check(string pdfFile)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(pdfFile);
+    // Create the compromise detector instance
+    var detector = new Aspose.Pdf.SignaturesCompromiseDetector(document);
+
+    // Check for compromise
+    if (detector.Check(out var result))
+    {
+        Console.WriteLine("No signature compromise detected");
+        return;
+    }
+         
+    // Get information about compromised signatures
+    if (result.HasCompromisedSignatures)
+    {
+        Console.WriteLine($"Count of compromised signatures: {result.CompromisedSignatures.Count}");
+        foreach (var signatureName in result.CompromisedSignatures)
+        {
+            Console.WriteLine($"Signature name: {signatureName.FullName}");
+        }
+    }
+         
+    // Get info about signatures coverage
+    Console.WriteLine(result.SignaturesCoverage);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
