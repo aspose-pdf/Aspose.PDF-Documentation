@@ -611,8 +611,7 @@ private static void Search()
 
 ## Searching bold text 
 
-Aspose.PDF for .NET provides the ability to search documents using font style properties. The TextFragmentAbsorber can be used for this purpose as shown in the code sample below.
-
+Aspose.PDF for .NET allows users to search documents using font style properties. The TextFragmentAbsorber can be used for this purpose, as shown in the code sample below.
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractBoldText()

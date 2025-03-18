@@ -374,7 +374,7 @@ private static void Search()
 }
 ```
 
-## 各TextFragmentの周りに矩形を描画して検索
+## 各TextFragmentの周りに矩形を描画して検索する
 
 Aspose.PDF for .NETは、各文字またはテキストフラグメントの座標を検索して取得する機能をサポートしています。したがって、各文字に対して返される座標が確実であることを確認するために、各文字の周りにハイライト（矩形を追加）することを検討できます。
 
@@ -392,27 +392,40 @@ private static void SearchAndDraw()
     {
 
         // Create TextAbsorber object to find all the phrases matching the regular expression
-        var textAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber(@"[\S]+");
+        var textAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber(".");
 
         var textSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(true);
         textAbsorber.TextSearchOptions = textSearchOptions;
 
         document.Pages.Accept(textAbsorber);
 
-        using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(document))
+        foreach (var textFragment in textAbsorber.TextFragments)
         {
-            foreach (var textFragment in textAbsorber.TextFragments)
-            {
-                foreach (var textSegment in textFragment.Segments)
-                {
-                    //DrawBox(editor, textFragment.Page.Number, textSegment, System.Drawing.Color.Red);
-                }
-            }
-        }
+            DrawRectangleOnPage(textFragment.Rectangle, textFragment.Page, new Aspose.Pdf.Operators.SetRGBColorStroke(System.Drawing.Color.Red));
+        }   
         // Save PDF document
         document.Save(dataDir + "SearchTextAndDrawRectangle_out.pdf");
     }
 }
+
+ private static void DrawRectangleOnPage(Aspose.Pdf.Rectangle rectangle, Aspose.Pdf.Page page, Aspose.Pdf.Operators.SetRGBColorStroke colorStroke = null)
+ {
+     if (colorStroke == null)
+     {
+         colorStroke = new Aspose.Pdf.Operators.SetRGBColorStroke(0.7, 0, 0);
+     }
+
+     page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+     page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
+     page.Contents.Add(colorStroke);
+     page.Contents.Add(
+         new Re(rectangle.LLX,
+             rectangle.LLY,
+             rectangle.Width,
+             rectangle.Height));
+     page.Contents.Add(new Aspose.Pdf.Operators.ClosePathStroke());
+     page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+ }
 ```
 
 ## PDFドキュメント内の各文字をハイライト
@@ -591,6 +604,41 @@ private static void Search()
         foreach (var textFragment in textFragmentCollection)
         {
             Console.WriteLine(textFragment.Text);
+        }
+    }
+}
+```
+
+## 太字テキストを検索する
+
+Aspose.PDF for .NETは、フォントスタイルプロパティを使用してドキュメントを検索することを許可します。TextFragmentAbsorberは、この目的のために使用できます。以下のコードサンプルに示されています。
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractBoldText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractBoldText.pdf"))
+    {
+        // Create TextFragmentAbsorber object to extract text
+        var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+
+        // Accept the absorber for all document
+        textFragmentAbsorber.Visit(document);
+
+        // Loop through the fragments
+        foreach (var textFragment in textFragmentAbsorber.TextFragments)
+        {
+            // Get the text properties of the text fragment
+            var textState = textFragment.TextState;
+            // Check if text is bold
+            if (textState.FontStyle == FontStyles.Bold)
+            {
+                // Print the text from the text fragment
+                Console.WriteLine("Text :- " + textFragment.Text);
+            }
         }
     }
 }

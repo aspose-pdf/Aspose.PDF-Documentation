@@ -143,6 +143,56 @@ private static void ConvertPdfPagesToImages02()
 }
 ```
 
+## 사용자 정의 글꼴 대체를 사용하여 PDF 페이지를 이미지 형식으로 변환
+
+다음 코드 스니펫에서는 PDF에서 이미지로 변환하는 과정에서 사용자 정의 글꼴 대체를 적용하는 방법을 보여줍니다. FontRepository.Substitutions 컬렉션을 사용하여 사용자 정의 대체 규칙을 등록합니다. 이 예제에서는 "Helvetica" 글꼴이 발견되면 "Arial"로 대체됩니다.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertWithCustomFontSubstitution()
+{
+    // Add custom font substitution
+    Aspose.Pdf.Text.FontRepository.Substitutions.Add(new CustomPdfFontSubstitution());
+
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    
+    using (var converter = new Aspose.Pdf.Facades.PdfConverter())
+    {
+        // Bind PDF document
+        converter.BindPdf(dataDir + "ConvertWithSubstitution.pdf");
+
+        // Initialize the converting process
+        converter.DoConvert();
+
+        // Check if pages exist and then convert to image one by one
+        while (converter.HasNextImage())
+        {
+            // Generate output file name with '_out' suffix
+            var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
+            // Convert the page to image and save it
+            converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+        }
+    }
+}
+
+private class CustomPdfFontSubstitution : Aspose.Pdf.Text.CustomFontSubstitutionBase
+{
+    public override bool TrySubstitute(
+        Aspose.Pdf.Text.CustomFontSubstitutionBase.OriginalFontSpecification originalFontSpecification,
+        out Aspose.Pdf.Text.Font substitutionFont)
+    {
+        if (originalFontSpecification.OriginalFontName == "Helvetica")
+        {
+            substitutionFont = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+            return true;
+        }
+        // Default substitution logic
+        return base.TrySubstitute(originalFontSpecification, out substitutionFont);
+    }
+}
+```
+
 ## 참조
 
 Aspose.PDF for .NET은 PDF 문서를 다양한 형식으로 변환할 수 있으며, 다른 형식에서 PDF로 변환할 수도 있습니다. 또한 Aspose.PDF 변환의 품질을 확인하고 Aspose.PDF 변환기 앱을 통해 결과를 온라인으로 볼 수 있습니다. 작업을 해결하기 위해 [변환하기](/pdf/ko/net/converting/) 섹션을 배우십시오.
