@@ -617,10 +617,10 @@ Aspose.PDF for .NET provides the ability to search documents using font style pr
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractBoldText()
 {
-     // The path to the documents directory
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractBoldText.pdf"))
     {
         // Create TextFragmentAbsorber object to extract text

@@ -147,13 +147,15 @@ private static void ConvertPdfPagesToImages02()
 In the next code snippet, we demonstrate how to apply custom font substitution during the PDF-to-image conversion process. We use the FontRepository.Substitutions collection to register a custom substitution rule. In this example, when the font "Helvetica" is encountered, it is replaced with "Arial".
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertWithCustomFontSubstitution()
 {
     // Add custom font substitution
     Aspose.Pdf.Text.FontRepository.Substitutions.Add(new CustomPdfFontSubstitution());
 
-    // Load a PDF document (example)
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
+    
     using (var converter = new Aspose.Pdf.Facades.PdfConverter())
     {
         // Bind PDF document
