@@ -147,6 +147,8 @@ private static void ConvertPdfPagesToImages02()
 
 다음 코드 스니펫에서는 PDF에서 이미지로 변환하는 과정에서 사용자 정의 글꼴 대체를 적용하는 방법을 보여줍니다. FontRepository.Substitutions 컬렉션을 사용하여 사용자 정의 대체 규칙을 등록합니다. 이 예제에서는 "Helvetica" 글꼴이 발견되면 "Arial"로 대체됩니다.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertWithCustomFontSubstitution()

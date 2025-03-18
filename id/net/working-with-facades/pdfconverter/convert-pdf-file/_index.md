@@ -147,6 +147,8 @@ private static void ConvertPdfPagesToImages02()
 
 Dalam potongan kode berikut, kami menunjukkan cara menerapkan substitusi font kustom selama proses konversi PDF ke gambar. Kami menggunakan koleksi FontRepository.Substitutions untuk mendaftarkan aturan substitusi kustom. Dalam contoh ini, ketika font "Helvetica" ditemukan, font tersebut diganti dengan "Arial".
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertWithCustomFontSubstitution()

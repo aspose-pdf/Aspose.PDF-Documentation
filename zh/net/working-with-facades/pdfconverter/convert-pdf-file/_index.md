@@ -147,6 +147,8 @@ private static void ConvertPdfPagesToImages02()
 
 在下一个代码片段中，我们演示如何在 PDF 到图像转换过程中应用自定义字体替换。我们使用 FontRepository.Substitutions 集合来注册自定义替换规则。在此示例中，当遇到字体 "Helvetica" 时，它将被替换为 "Arial"。
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertWithCustomFontSubstitution()

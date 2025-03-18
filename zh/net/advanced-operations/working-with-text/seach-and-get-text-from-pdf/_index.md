@@ -380,6 +380,8 @@ Aspose.PDF for .NET支持搜索并获取每个字符或文本片段的坐标。�
 
 在文本段落的情况下，您可以考虑使用某些正则表达式来确定段落的断点并在其周围绘制矩形。请查看以下代码片段。以下代码片段获取每个字符的坐标并在每个字符周围创建一个矩形。
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SearchAndDraw()
@@ -612,6 +614,9 @@ private static void Search()
 ## 搜索粗体文本
 
 Aspose.PDF for .NET允许用户使用字体样式属性搜索文档。TextFragmentAbsorber可以用于此目的，如下面的代码示例所示。
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractBoldText()

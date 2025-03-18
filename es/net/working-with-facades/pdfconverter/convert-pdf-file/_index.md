@@ -147,6 +147,8 @@ private static void ConvertPdfPagesToImages02()
 
 En el siguiente fragmento de código, demostramos cómo aplicar la sustitución de fuentes personalizada durante el proceso de conversión de PDF a imagen. Utilizamos la colección FontRepository.Substitutions para registrar una regla de sustitución personalizada. En este ejemplo, cuando se encuentra la fuente "Helvetica", se reemplaza por "Arial".
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertWithCustomFontSubstitution()

@@ -380,6 +380,8 @@ Aspose.PDF for .NET은 각 문자 또는 텍스트 조각의 좌표를 검색하
 
 텍스트 단락의 경우, 단락 구분을 결정하기 위해 일부 정규 표현식을 사용하는 것을 고려할 수 있으며, 그 주위에 사각형을 그릴 수 있습니다. 다음 코드 스니펫을 참조하십시오. 다음 코드 스니펫은 각 문자의 좌표를 가져오고 각 문자 주위에 사각형을 생성합니다.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SearchAndDraw()
@@ -612,6 +614,9 @@ private static void Search()
 ## 굵은 텍스트 검색
 
 Aspose.PDF for .NET은 사용자가 글꼴 스타일 속성을 사용하여 문서를 검색할 수 있도록 합니다. TextFragmentAbsorber는 아래 코드 샘플과 같이 이 목적을 위해 사용할 수 있습니다.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractBoldText()

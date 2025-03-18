@@ -380,6 +380,8 @@ Aspose.PDF for .NETは、各文字またはテキストフラグメントの座�
 
 テキスト段落の場合、段落の区切りを決定するためにいくつかの正規表現を使用し、その周りに矩形を描画することを検討できます。次のコードスニペットを参照してください。次のコードスニペットは、各文字の座標を取得し、各文字の周りに矩形を作成します。
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SearchAndDraw()
@@ -612,6 +614,9 @@ private static void Search()
 ## 太字テキストを検索する
 
 Aspose.PDF for .NETは、フォントスタイルプロパティを使用してドキュメントを検索することを許可します。TextFragmentAbsorberは、この目的のために使用できます。以下のコードサンプルに示されています。
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractBoldText()

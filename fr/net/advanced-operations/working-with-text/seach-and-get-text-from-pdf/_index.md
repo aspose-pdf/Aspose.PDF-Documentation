@@ -380,6 +380,8 @@ Aspose.PDF for .NET prend en charge la fonctionnalité de recherche et d'obtenti
 
 Dans le cas d'un paragraphe de texte, vous pouvez envisager d'utiliser une expression régulière pour déterminer la rupture de paragraphe et dessiner un rectangle autour de celui-ci. Veuillez consulter le code suivant. Le code suivant obtient les coordonnées de chaque caractère et crée un rectangle autour de chaque caractère.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SearchAndDraw()
@@ -612,6 +614,9 @@ private static void Search()
 ## Recherche de texte en gras
 
 Aspose.PDF for .NET permet aux utilisateurs de rechercher des documents en utilisant les propriétés de style de police. Le TextFragmentAbsorber peut être utilisé à cet effet, comme montré dans l'exemple de code ci-dessous.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractBoldText()

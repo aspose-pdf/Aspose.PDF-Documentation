@@ -380,6 +380,8 @@ Aspose.PDF for .NET admite la función de buscar y obtener las coordenadas de ca
 
 En el caso de un párrafo de texto, puedes considerar usar alguna expresión regular para determinar el salto de párrafo y dibujar un rectángulo alrededor de él. Por favor, echa un vistazo al siguiente fragmento de código. El siguiente fragmento de código obtiene las coordenadas de cada carácter y crea un rectángulo alrededor de cada carácter.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SearchAndDraw()
@@ -612,6 +614,9 @@ private static void Search()
 ## Buscar texto en negrita
 
 Aspose.PDF for .NET permite a los usuarios buscar documentos utilizando propiedades de estilo de fuente. El TextFragmentAbsorber se puede utilizar para este propósito, como se muestra en el ejemplo de código a continuación.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractBoldText()

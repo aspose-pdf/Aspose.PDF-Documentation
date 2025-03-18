@@ -147,6 +147,8 @@ private static void ConvertPdfPagesToImages02()
 
 Dans le code suivant, nous démontrons comment appliquer une substitution de police personnalisée lors du processus de conversion PDF-en-image. Nous utilisons la collection FontRepository.Substitutions pour enregistrer une règle de substitution personnalisée. Dans cet exemple, lorsque la police "Helvetica" est rencontrée, elle est remplacée par "Arial".
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertWithCustomFontSubstitution()

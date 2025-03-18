@@ -147,6 +147,8 @@ private static void ConvertPdfPagesToImages02()
 
 次のコードスニペットでは、PDFから画像への変換プロセス中にカスタムフォント置換を適用する方法を示します。FontRepository.Substitutionsコレクションを使用して、カスタム置換ルールを登録します。この例では、「Helvetica」フォントが見つかった場合、それは「Arial」に置き換えられます。
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertWithCustomFontSubstitution()

@@ -380,6 +380,8 @@ Aspose.PDF for .NET mendukung fitur untuk mencari dan mendapatkan koordinat seti
 
 Dalam kasus paragraf teks, Anda dapat mempertimbangkan menggunakan beberapa ekspresi reguler untuk menentukan pemisahan paragraf dan menggambar persegi panjang di sekitarnya. Silakan lihat potongan kode berikut. Potongan kode berikut mendapatkan koordinat setiap karakter dan membuat persegi panjang di sekitar setiap karakter.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SearchAndDraw()
@@ -612,6 +614,9 @@ private static void Search()
 ## Mencari teks tebal 
 
 Aspose.PDF for .NET memungkinkan pengguna untuk mencari dokumen menggunakan properti gaya font. TextFragmentAbsorber dapat digunakan untuk tujuan ini, seperti yang ditunjukkan dalam contoh kode di bawah.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractBoldText()
