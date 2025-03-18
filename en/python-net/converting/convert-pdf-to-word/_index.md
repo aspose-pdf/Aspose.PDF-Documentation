@@ -4,11 +4,14 @@ linktitle: Convert PDF to Word 2003/2019
 type: docs
 weight: 10
 url: /python-net/convert-pdf-to-word/
-lastmod: "2022-12-23"
+lastmod: "2025-02-27"
 description: Learn how to convert PDF documents to Word format in Python using Aspose.PDF for easy document editing.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to convert PDF to Word format using Aspose.PDF for Python
+Abstract: This article provides a comprehensive guide on converting PDF files to Microsoft Word documents (DOC and DOCX formats) using Python, specifically with the Aspose.PDF library. It highlights the advantages of converting PDFs, which are typically more challenging to edit, into Word documents that allow for easier content manipulation. The article details the conversion process, showcasing how Aspose.PDF for Python facilitates seamless conversion with minimal code. It includes Python code snippets illustrating the conversion to both DOC (Word 97-2003) and DOCX formats. The use of the `DocSaveOptions` class is explained, offering customization options like setting recognition modes and proximity parameters to enhance conversion quality. Additionally, the article mentions online tools provided by Aspose for trying out PDF to DOC and DOCX conversions. A section titled "See Also" links to related topics and resources, promising a broader understanding of PDF to Word conversions programmatically, using APIs and libraries.
 ---
 
 ## Overview
@@ -68,24 +71,20 @@ The [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docs
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_doc_with_options.doc"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    save_options = ap.DocSaveOptions()
-    save_options.format = ap.DocSaveOptions.DocFormat.DOC
-    # Set the recognition mode as Flow
-    save_options.mode = ap.DocSaveOptions.RecognitionMode.FLOW
-    # Set the Horizontal proximity as 2.5
-    save_options.relative_horizontal_proximity = 2.5
-    # Enable the value to recognize bullets during conversion process
-    save_options.recognize_bullets = True
+    document = apdf.Document(path_infile)
+    save_options = apdf.DocSaveOptions()
+    save_options.format = apdf.DocSaveOptions.DocFormat.DOC
+    document.save(path_outfile, save_options)
 
-    # Save the file into MS Word document format
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
 {{% alert color="success" %}}
@@ -109,24 +108,20 @@ The following Python code snippet shows the process of converting a PDF file int
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_docx_options.docx"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    save_options = ap.DocSaveOptions()
-    save_options.format = ap.DocSaveOptions.DocFormat.DOC_X
-    # Set the recognition mode as Flow
-    save_options.mode = ap.DocSaveOptions.RecognitionMode.FLOW
-    # Set the Horizontal proximity as 2.5
-    save_options.relative_horizontal_proximity = 2.5
-    # Enable the value to recognize bullets during conversion process
-    save_options.recognize_bullets = True
+    document = apdf.Document(path_infile)
+    save_options = apdf.DocSaveOptions()
+    save_options.format = apdf.DocSaveOptions.DocFormat.DOC_X
+    document.save(path_outfile, save_options)
 
-    # Save the file into MS Word document format
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
 The [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) class has a property named Format which provides the capability to specify the format of the resultant document, that is, DOC or DOCX. In order to convert a PDF file to DOCX format, please pass the Docx value from the DocSaveOptions.DocFormat enumeration.

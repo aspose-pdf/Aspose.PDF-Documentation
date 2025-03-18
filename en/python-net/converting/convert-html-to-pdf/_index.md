@@ -4,14 +4,17 @@ linktitle: Convert HTML to PDF file
 type: docs
 weight: 40
 url: /python-net/convert-html-to-pdf/
-lastmod: "2022-12-22"
+lastmod: "2025-02-27"
 description: Learn how to convert HTML content into a PDF document using Aspose.PDF for Python via .NET
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true 
+AlternativeHeadline: How to convert HTML to PDF using Aspose.PDF for Python
+Abstract: Aspose.PDF for Python via .NET offers a robust solution for creating PDF files from web pages and raw HTML code within applications. This article provides a guide on converting HTML to PDF using Python, outlining the use of Aspose.PDF for Python, a PDF manipulation API that enables seamless conversion of HTML documents to PDF format. The conversion process can be customized as needed. The article includes a Python code sample demonstrating the conversion process, which involves creating an instance of the HtmlLoadOptions class, initializing a Document object, and saving the output PDF document using the Document.Save() method. Additionally, Aspose offers an online tool for converting HTML to PDF, allowing users to explore the functionality and quality of the conversion process.
 ---
 
-## Overview 
+## Overview
 
 Aspose.PDF for Python via .NET is a professional solution that allows you to create PDF files from web pages and raw HTML code in your applications.
 
@@ -36,13 +39,19 @@ The following Python code sample shows how to convert an HTML document to a PDF.
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "little_html.html"
-    output_pdf = DIR_OUTPUT + "convert_html_to_pdf.pdf"
-    options = ap.HtmlLoadOptions()
-    document = ap.Document(input_pdf, options)
-    document.save(output_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+
+    load_options = apdf.HtmlLoadOptions()
+
+    document = apdf.Document(path_infile, load_options)
+    document.save(path_outfile)
+    print(infile + " converted into " + outfile)
 ```
 
 {{% alert color="success" %}}
