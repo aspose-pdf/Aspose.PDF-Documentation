@@ -455,7 +455,6 @@ private static void SearchAndDraw()
     }   
     // Save PDF document
     document.Save(dataDir + "SearchTextAndDrawRectangle_out.pdf");
-    
 }
 
  private static void DrawRectangleOnPage(Aspose.Pdf.Rectangle rectangle, Aspose.Pdf.Page page, Aspose.Pdf.Operators.SetRGBColorStroke colorStroke = null)
