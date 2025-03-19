@@ -222,7 +222,6 @@ private static void ConvertWithCustomFontSubstitution()
         // Convert the page to image and save it
         converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
     }
-    
 }
 
 private class CustomPdfFontSubstitution : Aspose.Pdf.Text.CustomFontSubstitutionBase
