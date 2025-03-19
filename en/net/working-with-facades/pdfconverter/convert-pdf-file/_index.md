@@ -205,23 +205,23 @@ private static void ConvertWithCustomFontSubstitution()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
     
-    using (var converter = new Aspose.Pdf.Facades.PdfConverter())
+    using var converter = new Aspose.Pdf.Facades.PdfConverter();
+    
+    // Bind PDF document
+    converter.BindPdf(dataDir + "ConvertWithSubstitution.pdf");
+
+    // Initialize the converting process
+    converter.DoConvert();
+
+    // Check if pages exist and then convert to image one by one
+    while (converter.HasNextImage())
     {
-        // Bind PDF document
-        converter.BindPdf(dataDir + "ConvertWithSubstitution.pdf");
-
-        // Initialize the converting process
-        converter.DoConvert();
-
-        // Check if pages exist and then convert to image one by one
-        while (converter.HasNextImage())
-        {
-            // Generate output file name with '_out' suffix
-            var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
-            // Convert the page to image and save it
-            converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
-        }
+        // Generate output file name with '_out' suffix
+        var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
+        // Convert the page to image and save it
+        converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
     }
+    
 }
 
 private class CustomPdfFontSubstitution : Aspose.Pdf.Text.CustomFontSubstitutionBase

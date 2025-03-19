@@ -439,24 +439,23 @@ private static void SearchAndDraw()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf"))
+    using var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf");
+    
+    // Create TextAbsorber object to find all the phrases matching the regular expression
+    var textAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber(".");
+
+    var textSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(true);
+    textAbsorber.TextSearchOptions = textSearchOptions;
+
+    document.Pages.Accept(textAbsorber);
+
+    foreach (var textFragment in textAbsorber.TextFragments)
     {
-
-        // Create TextAbsorber object to find all the phrases matching the regular expression
-        var textAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber(".");
-
-        var textSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(true);
-        textAbsorber.TextSearchOptions = textSearchOptions;
-
-        document.Pages.Accept(textAbsorber);
-
-        foreach (var textFragment in textAbsorber.TextFragments)
-        {
-            DrawRectangleOnPage(textFragment.Rectangle, textFragment.Page, new Aspose.Pdf.Operators.SetRGBColorStroke(System.Drawing.Color.Red));
-        }   
-        // Save PDF document
-        document.Save(dataDir + "SearchTextAndDrawRectangle_out.pdf");
-    }
+        DrawRectangleOnPage(textFragment.Rectangle, textFragment.Page, new Aspose.Pdf.Operators.SetRGBColorStroke(System.Drawing.Color.Red));
+    }   
+    // Save PDF document
+    document.Save(dataDir + "SearchTextAndDrawRectangle_out.pdf");
+    
 }
 
  private static void DrawRectangleOnPage(Aspose.Pdf.Rectangle rectangle, Aspose.Pdf.Page page, Aspose.Pdf.Operators.SetRGBColorStroke colorStroke = null)
@@ -709,27 +708,27 @@ private static void ExtractBoldText()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractBoldText.pdf"))
+    using var document = new Aspose.Pdf.Document(dataDir + "ExtractBoldText.pdf");
+    
+    // Create TextFragmentAbsorber object to extract text
+    var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+
+    // Accept the absorber for all document
+    textFragmentAbsorber.Visit(document);
+
+    // Loop through the fragments
+    foreach (var textFragment in textFragmentAbsorber.TextFragments)
     {
-        // Create TextFragmentAbsorber object to extract text
-        var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
-
-        // Accept the absorber for all document
-        textFragmentAbsorber.Visit(document);
-
-        // Loop through the fragments
-        foreach (var textFragment in textFragmentAbsorber.TextFragments)
+        // Get the text properties of the text fragment
+        var textState = textFragment.TextState;
+        // Check if text is bold
+        if (textState.FontStyle == FontStyles.Bold)
         {
-            // Get the text properties of the text fragment
-            var textState = textFragment.TextState;
-            // Check if text is bold
-            if (textState.FontStyle == FontStyles.Bold)
-            {
-                // Print the text from the text fragment
-                Console.WriteLine("Text :- " + textFragment.Text);
-            }
+            // Print the text from the text fragment
+            Console.WriteLine("Text :- " + textFragment.Text);
         }
     }
+    
 }
 ```
 {{< /tab >}}
