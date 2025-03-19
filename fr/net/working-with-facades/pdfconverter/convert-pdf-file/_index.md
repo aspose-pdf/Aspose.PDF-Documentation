@@ -143,6 +143,106 @@ private static void ConvertPdfPagesToImages02()
 }
 ```
 
+## Convertir des pages PDF en formats d'image avec substitution de police personnalisée
+
+Dans le code suivant, nous démontrons comment appliquer une substitution de police personnalisée lors du processus de conversion PDF-en-image. Nous utilisons la collection FontRepository.Substitutions pour enregistrer une règle de substitution personnalisée. Dans cet exemple, lorsque la police "Helvetica" est rencontrée, elle est remplacée par "Arial".
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertWithCustomFontSubstitution()
+{
+    // Add custom font substitution
+    Aspose.Pdf.Text.FontRepository.Substitutions.Add(new CustomPdfFontSubstitution());
+
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    
+    using (var converter = new Aspose.Pdf.Facades.PdfConverter())
+    {
+        // Bind PDF document
+        converter.BindPdf(dataDir + "ConvertWithSubstitution.pdf");
+
+        // Initialize the converting process
+        converter.DoConvert();
+
+        // Check if pages exist and then convert to image one by one
+        while (converter.HasNextImage())
+        {
+            // Generate output file name with '_out' suffix
+            var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
+            // Convert the page to image and save it
+            converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+        }
+    }
+}
+
+private class CustomPdfFontSubstitution : Aspose.Pdf.Text.CustomFontSubstitutionBase
+{
+    public override bool TrySubstitute(
+        Aspose.Pdf.Text.CustomFontSubstitutionBase.OriginalFontSpecification originalFontSpecification,
+        out Aspose.Pdf.Text.Font substitutionFont)
+    {
+        if (originalFontSpecification.OriginalFontName == "Helvetica")
+        {
+            substitutionFont = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+            return true;
+        }
+        // Default substitution logic
+        return base.TrySubstitute(originalFontSpecification, out substitutionFont);
+    }
+}
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertWithCustomFontSubstitution()
+{
+    // Add custom font substitution
+    Aspose.Pdf.Text.FontRepository.Substitutions.Add(new CustomPdfFontSubstitution());
+
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    
+    using var converter = new Aspose.Pdf.Facades.PdfConverter();
+    
+    // Bind PDF document
+    converter.BindPdf(dataDir + "ConvertWithSubstitution.pdf");
+
+    // Initialize the converting process
+    converter.DoConvert();
+
+    // Check if pages exist and then convert to image one by one
+    while (converter.HasNextImage())
+    {
+        // Generate output file name with '_out' suffix
+        var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
+        // Convert the page to image and save it
+        converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+    }
+}
+
+private class CustomPdfFontSubstitution : Aspose.Pdf.Text.CustomFontSubstitutionBase
+{
+    public override bool TrySubstitute(
+        Aspose.Pdf.Text.CustomFontSubstitutionBase.OriginalFontSpecification originalFontSpecification,
+        out Aspose.Pdf.Text.Font substitutionFont)
+    {
+        if (originalFontSpecification.OriginalFontName == "Helvetica")
+        {
+            substitutionFont = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+            return true;
+        }
+        // Default substitution logic
+        return base.TrySubstitute(originalFontSpecification, out substitutionFont);
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Voir aussi
 
 Aspose.PDF for .NET permet de convertir des documents PDF en divers formats et également de convertir d'autres formats en PDF. De plus, vous pouvez vérifier la qualité de la conversion Aspose.PDF et visualiser les résultats en ligne avec l'application de conversion Aspose.PDF. Apprenez la section [Conversion](/pdf/fr/net/converting/) pour résoudre vos tâches.
