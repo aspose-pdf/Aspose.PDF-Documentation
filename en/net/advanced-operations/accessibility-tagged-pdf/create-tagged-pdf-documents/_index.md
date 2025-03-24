@@ -479,6 +479,92 @@ private static void ValidateTaggedPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
+## Creating Tagged PDF automatically with PDF/UA-1 conversion
+
+Aspose.PDF allows to automatically generate a basic logical structure markup when a document is converted to PDF/UA-1. Users may then manually improve upon this basic logical structure, providing additional insights regarding the document contents.
+
+To generate a logical document structure, create an instance of the [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/) class, set its [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/enableautotagging/) to `true`, and assign it to the [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/) property.
+
+{{% alert color="warning" %}}
+Note that if the document already has logical structure tags, enabling auto-tagging will destroy the existing logical structure and generate a new one.
+{{% /alert %}}
+
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertToPdfUAWithAutomaticTagging()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    {
+        // Create conversion options
+        Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+        // Create auto-tagging settings
+        // Aspose.Pdf.AutoTaggingSettings.Default may be used to set the same settings as given below
+        Aspose.Pdf.AutoTaggingSettings autoTaggingSettings = new Aspose.Pdf.AutoTaggingSettings();
+
+        // Enable auto-tagging during the conversion process
+        autoTaggingSettings.EnableAutoTagging = true;
+
+        // Use the heading recognition strategy that's optimal for the given document structure
+        autoTaggingSettings.HeadingRecognitionStrategy = Aspose.Pdf.HeadingRecognitionStrategy.Auto;
+
+        // Assign auto-tagging settings to be used during the conversion process
+        options.AutoTaggingSettings = autoTaggingSettings;
+
+        // During the conversion, the document logical structure will be automatically created
+        document.Convert(options);
+
+        // Save PDF document
+        document.Save(dataDir + "ConvertToPdfUAWithAutomaticTagging_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertToPdfUAWithAutomaticTagging()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
+
+    // Create conversion options
+    Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+    // Create auto-tagging settings
+    // Aspose.Pdf.AutoTaggingSettings.Default may be used to set the same settings as given below
+    Aspose.Pdf.AutoTaggingSettings autoTaggingSettings = new Aspose.Pdf.AutoTaggingSettings
+    {
+        // Enable auto-tagging during the conversion process
+        EnableAutoTagging = true,
+
+        // Use the heading recognition strategy that's optimal for the given document structure
+        HeadingRecognitionStrategy = Aspose.Pdf.HeadingRecognitionStrategy.Auto
+    };
+
+    // Assign auto-tagging settings to be used during the conversion process
+    options.AutoTaggingSettings = autoTaggingSettings;
+
+    // During the conversion, the document logical structure will be automatically created
+    document.Convert(options);
+
+    // Save PDF document
+    document.Save(dataDir + "ConvertToPdfUAWithAutomaticTagging_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
