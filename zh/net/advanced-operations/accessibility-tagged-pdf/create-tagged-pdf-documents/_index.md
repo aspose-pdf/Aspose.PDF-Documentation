@@ -1,10 +1,10 @@
 ---
-title: C#を使用してタグ付きPDFを作成する
-linktitle: タグ付きPDFを作成する
+title: 使用 C# 创建标记 PDF
+linktitle: 创建标记 PDF
 type: docs
 weight: 10
-url: /ja/net/create-tagged-pdf/
-description: この記事では、Aspose.PDF for .NETを使用してタグ付きPDFドキュメントの構造要素をプログラムで作成する方法を説明します。
+url: /zh/net/create-tagged-pdf/
+description: 本文解释了如何使用 Aspose.PDF for .NET 以编程方式为标记 PDF 文档创建结构元素。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create Tagged PDF using C#",
     "alternativeHeadline": "Programmatically create tagged PDFs using C#",
-    "abstract": "C#とAspose.PDFを使用してタグ付きPDFドキュメントをプログラムで作成し、PDF/UA準拠を確保します。この機能により、ヘッダーや段落などの要素を持つ構造化PDFドキュメントを作成でき、ネストされた構造やアクセシビリティのためのテキストスタイリングをサポートします。このライブラリには、PDF/UA基準が満たされていることを確認するための検証も含まれています。",
+    "abstract": "使用 C# 和 Aspose.PDF 以编程方式创建标记 PDF 文档，确保符合 PDF/UA 标准。此功能支持创建具有标题和段落等元素的结构化 PDF 文档，支持嵌套结构和可访问性的文本样式。该库还包括验证，以确认符合 PDF/UA 标准。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
-    "wordcount": "2295",
+    "wordcount": "2341",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,17 +73,17 @@ sitemap:
         "@id": "/net/create-tagged-pdf/"
     },
     "dateModified": "2025-03-24",
-    "description": "この記事では、Aspose.PDF for .NETを使用してタグ付きPDFドキュメントの構造要素をプログラムで作成する方法を説明します。"
+    "description": "本文解释了如何使用 Aspose.PDF for .NET 以编程方式为标记 PDF 文档创建结构元素。"
 }
 </script>
 
-タグ付きPDFを作成することは、PDF/UA要件に従って文書を検証できるようにするために、文書に特定の要素を追加（または作成）することを意味します。これらの要素は、しばしば構造要素と呼ばれます。
+创建标记 PDF 意味着向文档添加（或创建）某些元素，以使文档能够根据 PDF/UA 要求进行验证。这些元素通常称为结构元素。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
-## タグ付きPDFの作成（シンプルなシナリオ）
+## 创建标记 PDF（简单场景）
 
-タグ付きPDFドキュメントに構造要素を作成するために、Aspose.PDFは[ITaggedContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent)インターフェースを使用して構造要素を作成するメソッドを提供します。次のコードスニペットは、ヘッダーと段落の2つの要素を含むタグ付きPDFを作成する方法を示しています。
+为了在标记 PDF 文档中创建结构元素，Aspose.PDF 提供了使用 [ITaggedContent](https://reference.aspose.com/pdf/zh/net/aspose.pdf.tagged/itaggedcontent) 接口创建结构元素的方法。以下代码片段显示了如何创建包含 2 个元素的标记 PDF：标题和段落。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -174,15 +174,15 @@ private static void CreateTaggedPdfDocument01()
 {{< /tab >}}
 {{< /tabs >}}
 
-作成後、次の文書が得られます：
+创建后，我们将得到以下文档：
 
-![2つの要素 - ヘッダーと段落を持つタグ付きPDF文書](taggedpdf-01.png)
+![带有 2 个元素的标记 PDF 文档 - 标题和段落](taggedpdf-01.png)
 
-## ネストされた要素を持つタグ付きPDFの作成（構造要素ツリーの作成）
+## 创建带有嵌套元素的标记 PDF（创建结构元素树）
 
-場合によっては、段落内に引用を配置するなど、より複雑な構造を作成する必要があります。
-構造要素ツリーを作成するためには、[AppendChild](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/element/methods/appendchild)メソッドを使用する必要があります。
-次のコードスニペットは、タグ付きPDFドキュメントの構造要素ツリーを作成する方法を示しています：
+在某些情况下，我们需要创建更复杂的结构，例如在段落中放置引号。 
+为了创建结构元素树，我们应该使用 [AppendChild](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/element/methods/appendchild) 方法。
+以下代码片段显示了如何创建标记 PDF 文档的结构元素树：
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -285,12 +285,12 @@ private static void CreateTaggedPdfDocument02()
 {{< /tab >}}
 {{< /tabs >}}
 
-作成後、次の文書が得られます：
-![ネストされた要素 - spanと引用を持つタグ付きPDF文書](taggedpdf-02.png)
+创建后，我们将得到以下文档：
+![带有嵌套元素的标记 PDF 文档 - span 和引号](taggedpdf-02.png)
 
-## テキスト構造のスタイリング
+## 样式文本结构
 
-タグ付きPDFドキュメント内のテキスト構造をスタイリングするために、Aspose.PDFは[Font](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)、[FontSize](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)、[FontStyle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle)、および[ForegroundColor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor)プロパティを[StructureTextState](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate)クラスで提供します。次のコードスニペットは、タグ付きPDFドキュメント内のテキスト構造をスタイリングする方法を示しています：
+为了在标记 PDF 文档中样式文本结构，Aspose.PDF 提供了 [Font](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)、[FontSize](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)、[FontStyle](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) 和 [ForegroundColor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) 属性的 [StructureTextState](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate) 类。以下代码片段显示了如何在标记 PDF 文档中样式文本结构：
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -363,9 +363,9 @@ private static void AddStyle()
 {{< /tab >}}
 {{< /tabs >}}
 
-## 構造要素の図示
+## 说明结构元素
 
-タグ付きPDFドキュメント内の構造要素を図示するために、Aspose.PDFは[IllustrationElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/illustrationelement)クラスを提供します。次のコードスニペットは、タグ付きPDFドキュメント内の構造要素を図示する方法を示しています：
+为了在标记 PDF 文档中说明结构元素，Aspose.PDF 提供了 [IllustrationElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/illustrationelement) 类。以下代码片段显示了如何在标记 PDF 文档中说明结构元素：
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -434,21 +434,21 @@ private static void IllustrateStructureElements()
 {{< /tab >}}
 {{< /tabs >}}
 
-## タグ付きPDFの検証
+## 验证标记 PDF
 
-Aspose.PDF for .NETは、PDF/UAタグ付きPDFドキュメントを検証する機能を提供します。PDF/UA標準の検証は以下をサポートします：
+Aspose.PDF for .NET 提供了验证 PDF/UA 标记 PDF 文档的能力。PDF/UA 标准的验证支持：
 
-- XObjectsのチェック。
-- アクションのチェック。
-- オプションのコンテンツのチェック。
-- 埋め込みファイルのチェック。
-- Acroformフィールドのチェック（自然言語と代替名およびデジタル署名の検証）。
-- XFAフォームフィールドのチェック。
-- セキュリティ設定のチェック。
-- ナビゲーションのチェック。
-- 注釈のチェック。
+- 检查 XObjects。
+- 检查操作。
+- 检查可选内容。
+- 检查嵌入文件。
+- 检查 Acroform 字段（验证自然语言、替代名称和数字签名）。
+- 检查 XFA 表单字段。
+- 检查安全设置。
+- 检查导航。
+- 检查注释。
 
-以下のコードスニペットは、タグ付きPDFドキュメントを検証する方法を示しています。対応する問題はXMLログレポートに表示されます。
+以下代码片段显示了如何验证标记 PDF 文档。相应的问题将显示在 XML 日志报告中。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -487,14 +487,14 @@ private static void ValidateTaggedPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-## PDF/UA-1変換によるタグ付きPDFの自動作成
+## 使用 PDF/UA-1 转换自动创建标记 PDF
 
-Aspose.PDFは、文書がPDF/UA-1に変換されるときに基本的な論理構造マークアップを自動的に生成することを許可します。ユーザーは、その後、この基本的な論理構造を手動で改善し、文書の内容に関する追加の洞察を提供できます。
+Aspose.PDF 允许在将文档转换为 PDF/UA-1 时自动生成基本的逻辑结构标记。用户可以手动改进此基本逻辑结构，提供有关文档内容的更多见解。
 
-論理文書構造を生成するには、[Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf/autotaggingsettings/)クラスのインスタンスを作成し、その[AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/ja/net/aspose.pdf/autotaggingsettings/enableautotagging/)を`true`に設定し、[PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/)プロパティに割り当てます。
+要生成逻辑文档结构，请创建 [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf/autotaggingsettings/) 类的实例，将其 [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/zh/net/aspose.pdf/autotaggingsettings/enableautotagging/) 设置为 `true`，并将其分配给 [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/) 属性。
 
 {{% alert color="warning" %}}
-文書にすでに論理構造タグがある場合、自動タグ付けを有効にすると既存の論理構造が破壊され、新しいものが生成されることに注意してください。
+请注意，如果文档已经具有逻辑结构标签，则启用自动标记将破坏现有的逻辑结构并生成一个新的结构。
 {{% /alert %}}
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

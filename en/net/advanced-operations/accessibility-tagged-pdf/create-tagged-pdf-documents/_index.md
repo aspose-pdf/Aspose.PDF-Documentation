@@ -81,11 +81,11 @@ sitemap:
 
 Creating a Tagged PDF means adding (or creating) certain elements to the document that will enable the document to be validated in accordance with PDF/UA requirements. These elements are called often Structure Elements.
 
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+The following code snippet also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ## Creating Tagged PDF (Simple Scenario)
 
-In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure element using [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to create Tagged PDF which contain 2 elements: header and paragraph.
+In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure elements using the [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to create Tagged PDF which contains 2 elements: header and paragraph.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -174,13 +174,13 @@ private static void CreateTaggedPdfDocument01()
 {{< /tab >}}
 {{< /tabs >}}
 
-We will get a following document after creation:
+We will get the following document after creation:
 
 ![Tagged PDF document with 2 elements - Header and Paragraph](taggedpdf-01.png)
 
 ## Creating Tagged PDF with nested elements (Creating Structure Elements Tree)
 
-In some cases, we need to create more complex sturcutre, eg. place quotes in paragraph. 
+In some cases, we need to create more complex structure, eg. place quotes in paragraph. 
 In order to create structure elements tree we should use [AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild) method.
 Following code snippet shows how to create structure elements tree of Tagged PDF Document:
 
@@ -283,12 +283,12 @@ private static void CreateTaggedPdfDocument02()
 {{< /tab >}}
 {{< /tabs >}}
 
-We will get a following document after creation:
+We will get the following document after creation:
 ![Tagged PDF document with nested elements - span and quotes](taggedpdf-02.png)
 
 ## Styling Text Structure
 
-In order to style text structure in a Tagged PDF Document, Aspose.PDF offers [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) and [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) properties of [StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate) Class. Following code snippet shows how to style text structure in a Tagged PDF Document:
+In order to style the text structure in a Tagged PDF Document, Aspose.PDF offers the [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) and [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) properties of the [StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate) Class. Following code snippet shows how to style text structure in a Tagged PDF Document:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -430,7 +430,7 @@ private static void IllustrateStructureElements()
 
 ## Validate Tagged PDF
 
-Aspose.PDF for .NET provides the ability to validate PDF/UA Tagged PDF Document. Validation of PDF/UA standard supports:
+Aspose.PDF for .NET provides the ability to validate a PDF/UA Tagged PDF Document. Validation of PDF/UA standard supports:
 
 - Checks for XObjects.
 - Checks for Actions.
@@ -481,7 +481,7 @@ private static void ValidateTaggedPdf()
 
 ## Creating Tagged PDF automatically with PDF/UA-1 conversion
 
-Aspose.PDF allows to automatically generate a basic logical structure markup when a document is converted to PDF/UA-1. Users may then manually improve upon this basic logical structure, providing additional insights regarding the document contents.
+Aspose.PDF allows for the automatic generation of a basic logical structure markup when a document is converted to PDF/UA-1. Users may then manually improve upon this basic logical structure, providing additional insights regarding the document contents.
 
 To generate a logical document structure, create an instance of the [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/) class, set its [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/enableautotagging/) to `true`, and assign it to the [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/) property.
 
