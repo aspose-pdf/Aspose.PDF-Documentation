@@ -423,12 +423,12 @@ private static void ReplaceMissingFonts()
 
 ## Automatically create document logical structure tags
 
-In order to improve accessibility and logical structure, a PDF document may contain logical structure tags, that frame document content and partition it into logical parts, sections, paragraphs, and so on. Aspose.PDF allows to automatically generate a basic logical structure markup when a document is converted to PDF/A. Users may then manually improve upon this basic logical structure, providing additional insights regarding the document contents.
+A PDF document may include logical structure tags to enhance accessibility and organization. These tags structure the document's content by dividing it into logical parts, such as sections, paragraphs, and more. When a document is converted to PDF/A, Aspose.PDF can automatically generate a basic logical structure markup. Users can then manually refine this structure, adding further insights about the document's content. 
 
 To generate a logical document structure, create an instance of the [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/) class, set its [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/enableautotagging/) to `true`, and assign it to the [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/) property.
 
 {{% alert color="warning" %}}
-Note that if the document already has logical structure tags, enabling auto-tagging will destroy the existing logical structure and generate a new one.
+If the document already has logical structure tags, enabling auto-tagging will destroy the existing logical structure and generate a new one.
 {{% /alert %}}
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

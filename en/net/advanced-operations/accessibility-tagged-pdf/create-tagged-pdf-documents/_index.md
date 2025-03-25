@@ -481,12 +481,12 @@ private static void ValidateTaggedPdf()
 
 ## Creating Tagged PDF automatically with PDF/UA-1 conversion
 
-Aspose.PDF allows for the automatic generation of a basic logical structure markup when a document is converted to PDF/UA-1. Users may then manually improve upon this basic logical structure, providing additional insights regarding the document contents.
+Aspose.PDF enables the automatic generation of basic logical structure markup when converting a document to PDF/UA-1. Users may then manually improve upon this basic logical structure, providing additional insights regarding the document contents.
 
 To generate a logical document structure, create an instance of the [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/) class, set its [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/enableautotagging/) to `true`, and assign it to the [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/) property.
 
 {{% alert color="warning" %}}
-Note that if the document already has logical structure tags, enabling auto-tagging will destroy the existing logical structure and generate a new one.
+If the document already has logical structure tags, enabling auto-tagging will destroy the existing logical structure and generate a new one.
 {{% /alert %}}
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
