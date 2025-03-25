@@ -2,10 +2,12 @@
 title: استخراج معلومات الصورة والتوقيع
 linktitle: استخراج معلومات الصورة والتوقيع
 type: docs
-weight: 30
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 20
 url: /ar/net/extract-image-and-signature-information/
 description: يمكنك استخراج الصور من حقل التوقيع واستخراج معلومات التوقيع باستخدام فئة SignatureField مع C#.
-lastmod: "2022-02-17"
+lastmod: "2024-11-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "استخراج معلومات الصورة والتوقيع",
-    "alternativeHeadline": "كيفية استخراج الصورة والتوقيع من ملف PDF",
+    "headline": "Extract Image and Signature Information",
+    "alternativeHeadline": "Extract PDF signature images and certificate details",
+    "abstract": "تعمل الوظيفة الجديدة Aspose.PDF for .NET على استخراج الصور والمعلومات التفصيلية من حقول توقيع PDF. باستخدام C#، يمكن للمطورين استرداد صور التوقيع وبيانات الشهادة، بما في ذلك المفتاح العام، وبصمة الإصبع، وتفاصيل الجهة المصدرة، مما يعزز قدرات معالجة PDF. هذا يحسن من التحقق من التوقيع الرقمي وإدارته داخل التطبيقات.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, c#, استخراج التوقيع",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
+    "wordcount": "583",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,93 +74,229 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "يمكنك استخراج الصور من حقل التوقيع واستخراج معلومات التوقيع باستخدام فئة SignatureField مع C#."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 ## استخراج الصورة من حقل التوقيع
 
-يدعم Aspose.PDF لـ .NET ميزة التوقيع الرقمي على ملفات PDF باستخدام فئة [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) وأثناء توقيع المستند، يمكنك أيضًا تعيين صورة لمظهر التوقيع. الآن، توفر هذه الواجهة البرمجية أيضًا القدرة على استخراج معلومات التوقيع بالإضافة إلى الصورة المرتبطة بحقل التوقيع.
+تدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) وأثناء توقيع المستند، يمكنك أيضًا تعيين صورة لـ `SignatureAppearance`. الآن، توفر هذه الواجهة البرمجية أيضًا القدرة على استخراج معلومات التوقيع بالإضافة إلى الصورة المرتبطة بحقل التوقيع.
 
-لكي نتمكن من استخراج معلومات التوقيع، قمنا بتقديم طريقة [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) إلى فئة SignatureField. الرجاء الاطلاع على الشفرة التالية التي توضح الخطوات لاستخراج صورة من كائن SignatureField:
+لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) إلى فئة SignatureField. يرجى إلقاء نظرة على مقتطف الشيفرة التالي الذي يوضح الخطوات لاستخراج صورة من كائن `SignatureField`:
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-
-string input = dataDir+ @"ExtractingImage.pdf";
-using (Document pdfDocument = new Document(input))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesFromSignatureField()
 {
-    foreach (Field field in pdfDocument.Form)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractingImage.pdf"))
     {
-        SignatureField sf = field as SignatureField;
-        if (sf != null)
+        // Searching for signature fields
+        foreach (var field in document.Form)
         {
-            string outFile = dataDir+ @"output_out.jpg";
+            var sf = field as Aspose.Pdf.Forms.SignatureField;
+            if (sf == null)
+            {
+                continue;
+            }
+
             using (Stream imageStream = sf.ExtractImage())
             {
                 if (imageStream != null)
                 {
-                    using (System.Drawing.Image image = Bitmap.FromStream(imageStream))
-                    {
-                        image.Save(outFile, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    }
+                    continue;
+                }
+
+                using (System.Drawing.Image image = System.Drawing.Bitmap.FromStream(imageStream))
+                {
+                    // Save the image
+                    image.Save(dataDir + "output_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
                 }
             }
         }
     }
 }
 ```
+
 ### استبدال صورة التوقيع
 
-أحيانًا قد يكون لديك متطلب لاستبدال صورة حقل توقيع موجود بالفعل داخل ملف PDF. لتحقيق هذا المتطلب، أولًا، نحتاج إلى البحث عن حقول النماذج داخل ملف PDF، تحديد حقول التوقيع، الحصول على الأبعاد (الأبعاد المستطيلة) لحقل التوقيع ثم ختم الصورة فوق نفس الأبعاد.
+في بعض الأحيان قد يكون لديك متطلبات لاستبدال صورة حقل التوقيع الموجود بالفعل داخل ملف PDF. لتحقيق هذا المتطلب، أولاً، نحتاج إلى البحث عن حقول النموذج داخل ملف PDF، وتحديد حقول التوقيع، والحصول على الأبعاد (الأبعاد المستطيلة) لحقل التوقيع ثم ختم صورة فوق نفس الأبعاد.
 
 ## استخراج معلومات التوقيع
 
-يدعم Aspose.PDF لـ .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة SignatureField. حاليًا، يمكننا أيضًا تحديد صلاحية الشهادة ولكن لا يمكننا استخراج الشهادة بأكملها. المعلومات التي يمكن استخراجها هي المفتاح العام، البصمة، المصدر، إلخ.
+تدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة SignatureField. حاليًا، يمكننا أيضًا تحديد صلاحية الشهادة ولكن لا يمكننا استخراج الشهادة بالكامل. المعلومات التي يمكن استخراجها هي المفتاح العام، وبصمة الإصبع، والجهة المصدرة، إلخ.
 
-لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) إلى فئة [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield).
-لقد قمنا بإدخال طريقة [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) إلى فئة [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield).
+لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) إلى فئة [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) . يرجى إلقاء نظرة على مقتطف الشيفرة التالي الذي يوضح الخطوات لاستخراج الشهادة من كائن SignatureField:
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى مجلد الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-
-string input = dataDir + "ExtractSignatureInfo.pdf";
-using (Document pdfDocument = new Document(input))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractCertificate()
 {
-    foreach (Field field in pdfDocument.Form)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractSignatureInfo.pdf"))
     {
-        SignatureField sf = field as SignatureField;
-        if (sf != null)
+        // Searching for signature fields
+        foreach (var field in document.Form)
         {
-            Stream cerStream = sf.ExtractCertificate();
-            if (cerStream != null)
+            var sf = field as Aspose.Pdf.Forms.SignatureField;
+            if (sf == null)
             {
-                using (cerStream)
+                continue;
+            }
+            // Extract certificate
+            Stream cerStream = sf.ExtractCertificate();
+            if (cerStream == null)
+            {
+                continue;
+            }
+            // Save certificate
+            using (cerStream)
+            {
+                byte[] bytes = new byte[cerStream.Length];
+                using (FileStream fs = new FileStream(dataDir + "input.cer", FileMode.CreateNew))
                 {
-                    byte[] bytes = new byte[cerStream.Length];
-                    using (FileStream fs = new FileStream(dataDir + @"input.cer", FileMode.CreateNew))
-                    {
-                        cerStream.Read(bytes, 0, bytes.Length);
-                        fs.Write(bytes, 0, bytes.Length);
-                    }
+                    cerStream.Read(bytes, 0, bytes.Length);
+                    fs.Write(bytes, 0, bytes.Length);
                 }
             }
         }
     }
 }
 ```
+
+يمكنك الحصول على معلومات حول خوارزميات توقيع المستند.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private void GetSignaturesInfo()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "signed_rsa.pdf"))
+    {
+        using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            var sigNames = signature.GetSignatureNames();
+            var signaturesInfoList =  signature.GetSignaturesInfo();
+            foreach (var sigInfo in signaturesInfoList)
+            {
+                Console.WriteLine(sigInfo.DigestHashAlgorithm);
+                Console.WriteLine(sigInfo.AlgorithmType);
+                Console.WriteLine(sigInfo.CryptographicStandard);
+                Console.WriteLine(sigInfo.SignatureName);
+            }
+        }
+    }
+}
+```
+
+نموذج الإخراج للمثال أعلاه:
+```
+Sha256
+Rsa
+Pkcs7
+Signature1
+```
+
+## التحقق من تعرض التوقيعات للتلاعب
+
+يمكنك استخدام فئة **SignaturesCompromiseDetector** للتحقق من تعرض التوقيعات الرقمية للتلاعب.
+استدعِ طريقة **Check()** للتحقق من توقيعات المستند.
+إذا لم يتم اكتشاف أي تلاعب في التوقيعات، ستعيد الطريقة true.
+إذا أعادت الطريقة false، يمكنك التحقق مما إذا كانت التوقيعات المتعرضة للتلاعب تستخدم الخاصية **HasCompromisedSignatures** واسترجاع قائمة التوقيعات المتعرضة للتلاعب عبر الخاصية **CompromisedSignatures**.
+
+للتحقق مما إذا كانت التوقيعات الحالية تغطي المستند بأكمله، استخدم الخاصية **SignaturesCoverage**.
+يمكن أن تأخذ هذه الخاصية القيم التالية:
+- **Undefined** – إذا تم التلاعب بإحدى التوقيعات صراحةً أو فشل فحص التغطية.
+- **EntirelySigned** – إذا كانت التوقيعات تغطي المستند بأكمله.
+- **PartiallySigned** – إذا لم تغطِ التوقيعات المستند بأكمله وكان هناك محتوى غير موقع.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Check(string pdfFile)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(pdfFile))
+    {   
+        // Create the compromise detector instance
+        var detector = new Aspose.Pdf.SignaturesCompromiseDetector(document);
+        CompromiseCheckResult result;
+    
+        // Check for compromise
+        if (detector.Check(out result))
+        {
+            Console.WriteLine("No signature compromise detected");
+            return;
+        }
+         
+        // Get information about compromised signatures
+        if (result.HasCompromisedSignatures)
+        {
+            Console.WriteLine($"Count of compromised signatures: {result.CompromisedSignatures.Count}");
+            foreach (var signatureName in result.CompromisedSignatures)
+            {
+                Console.WriteLine($"Signature name: {signatureName.FullName}");
+            }
+        }
+         
+        // Get info about signatures coverage
+        Console.WriteLine(result.SignaturesCoverage);   
+    }
+}
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Check(string pdfFile)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(pdfFile);
+    // Create the compromise detector instance
+    var detector = new Aspose.Pdf.SignaturesCompromiseDetector(document);
+
+    // Check for compromise
+    if (detector.Check(out var result))
+    {
+        Console.WriteLine("No signature compromise detected");
+        return;
+    }
+         
+    // Get information about compromised signatures
+    if (result.HasCompromisedSignatures)
+    {
+        Console.WriteLine($"Count of compromised signatures: {result.CompromisedSignatures.Count}");
+        foreach (var signatureName in result.CompromisedSignatures)
+        {
+            Console.WriteLine($"Signature name: {signatureName.FullName}");
+        }
+    }
+         
+    // Get info about signatures coverage
+    Console.WriteLine(result.SignaturesCoverage);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -179,21 +318,21 @@ using (Document pdfDocument = new Document(input))
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -204,7 +343,7 @@ using (Document pdfDocument = new Document(input))
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة لتعديل ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -216,5 +355,3 @@ using (Document pdfDocument = new Document(input))
     }
 }
 </script>
-```
-

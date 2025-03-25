@@ -1,10 +1,12 @@
 ---
-title: PDFをC#でページスタンプ追加
+title: PDFにページスタンプを追加する C#
 linktitle: PDFファイルのページスタンプ
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ja/net/page-stamps-in-the-pdf-file/
-description: Aspose.PDF for .NETライブラリを使ってPDFドキュメントにページスタンプを追加します。
+description: PdfPageStampクラスを使用してPDFドキュメントにページスタンプを追加します。Aspose.PDF for .NETライブラリを使用。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFをC#でページスタンプ追加",
-    "alternativeHeadline": "PDFをC#でページスタンプ追加",
+    "headline": "Add PDF Page Stamps in PDF using C#",
+    "alternativeHeadline": "Enhance PDFs with Custom Page Stamps in C#",
+    "abstract": "Aspose.PDF for .NETの新しいページスタンプ機能を使用して、強力なPDF編集機能を解放します。グラフィックス、テキスト、テーブルを組み込んだカスタマイズ可能な複合スタンプをPDFドキュメントに直接追加し、視覚的な魅力と機能性を向上させます。プロフェッショナルな文房具のようなデザインを作成するのに最適で、この機能はC#でのドキュメント生成と操作を簡素化します。",
     "author": {
         "@type": "Person",
-        "name":"アンドリー・アンドルホフスキー",
-        "givenName": "アンドリー",
-        "familyName": "アンドルホフスキー",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, ドキュメント生成",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "wordcount": "212",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,45 +73,38 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/page-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NETライブラリを使ってPDFドキュメントにページスタンプを追加します。"
+    "dateModified": "2024-11-26",
+    "description": "PdfPageStampクラスを使用してPDFドキュメントにページスタンプを追加します。Aspose.PDF for .NETライブラリを使用。"
 }
 </script>
-## C\#を使用してページスタンプを追加
 
-[PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp)は、グラフィック、テキスト、テーブルを含む複合スタンプを適用する必要がある場合に使用できます。次の例では、Adobe InDesign、Illustrator、Microsoft Wordを使用するような文房具を作成する方法を示しています。いくつかの入力ドキュメントがあると仮定し、青とプラム色の2種類のボーダーを適用したいと考えています。
+## C#でページスタンプを追加する
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリとも動作します。
+[PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp)は、グラフィックス、テキスト、テーブルを含む複合スタンプを適用する必要があるときに使用できます。以下の例は、Adobe InDesign、Illustrator、Microsoft Wordを使用して文房具のようなものを作成するためにスタンプを使用する方法を示しています。入力ドキュメントがあり、青とプラム色の2種類のボーダーを適用したいと仮定します。
+
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
-public static void AddPageStamp()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStamp()
 {
-    var inputFileName = "sample-4pages.pdf";
-    var outputFileName = "AddPageStamp_out.pdf";
-    var pageStampFileName = "PageStamp.pdf";
-    var document = new Document(_dataDir + inputFileName);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    var bluePageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 1)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddPageStampInput.pdf"))
     {
-        Height = 800,
-        Background = true
-    };
-
-    var plumPageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 2)
-    {
-        Height = 800,
-        Background = true
-    };
-
-    for (int i = 1; i < 5; i++)
-    {
-        if (i % 2 == 0)
-            document.Pages[i].AddStamp(bluePageStamp);
-        else
-            document.Pages[i].AddStamp(plumPageStamp);
+        //Create PdfPageStamps
+        var bluePageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + "AddPageStamp.pdf", 1)
+        {
+            Height = 800,
+            Background = true
+        };
+        // Add stamps
+        document.Pages[1].AddStamp(bluePageStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddPageStamp_out.pdf");
     }
-
-    document.Save(_dataDir + outputFileName);
 }
 ```
 
@@ -139,21 +134,21 @@ public static void AddPageStamp()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -164,7 +159,7 @@ public static void AddPageStamp()
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -176,5 +171,3 @@ public static void AddPageStamp()
     }
 }
 </script>
-```
-

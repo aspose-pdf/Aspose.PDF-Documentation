@@ -1,10 +1,12 @@
 ---
-title: نظرة عامة على الشروحات المدعومة
-linktitle: نظرة عامة على الشروحات
+title: نظرة عامة على التعليقات المدعومة
+linktitle: نظرة عامة على التعليقات
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/overview-of-annotations/
-description: تحقق من قائمة الشروحات الممكنة التي يمكنك العمل معها باستخدام Aspose.PDF لـ .NET.
+description: تحقق من قائمة التعليقات الممكنة التي يمكنك العمل بها باستخدام Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "نظرة عامة على الشروحات المدعومة",
-    "alternativeHeadline": "قائمة الشروحات المدعومة",
+    "headline": "Overview of supported Annotations",
+    "alternativeHeadline": "Comprehensive List of Aspose.PDF Annotations",
+    "abstract": "اكتشف القائمة الشاملة للتعليقات المدعومة المتاحة في Aspose.PDF for .NET، مما يمكّن المطورين من تحسين مستندات PDF بميزات متنوعة. تشمل هذه الوظيفة أنواعًا متنوعة من التعليقات، مثل النص، والرابط، والتظليل، والوسائط المتعددة، مما يوفر خيارات قوية لمعالجة PDF وتخصيصه. استكشف كيف يمكن أن تعزز هذه التعليقات تطبيقات .NET الخاصة بك وتحسن تفاعل المستخدم مع محتوى PDF",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثيقة PDF",
-    "keywords": "pdf, c#, الشروحات المدعومة",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Aspose.PDF, supported annotations, PDF document generation, .NET Framework, .NET Core, Text annotation, Link annotations, Free text annotation, Highlight annotation, Watermark annotation",
+    "wordcount": "370",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,38 +74,37 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/overview-of-annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تحقق من قائمة الشروحات الممكنة التي يمكنك العمل معها باستخدام Aspose.PDF لـ .NET."
+    "dateModified": "2024-11-25",
+    "description": "تحقق من قائمة التعليقات الممكنة التي يمكنك العمل بها باستخدام Aspose.PDF for .NET."
 }
 </script>
-الجدول التالي يوضح أنواع التعليقات التوضيحية التي يدعمها Aspose.PDF لـ .NET.
 
-|**نوع التعليق التوضيحي**|**الوصف**|**.NET Framework**|**.NET Core**|
+تشير الجدول التالي إلى أنواع التعليقات التي يدعمها Aspose.PDF for .NET.
+
+|**نوع التعليق**|**الوصف**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
 |[Text](/pdf/ar/net/text-annotation/)|تعليق نصي|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/ar/net/extra-annotations/)|تعليقات الرابط|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[FreeText](/pdf/ar/net/text-annotation/)|تعليق نصي حر (PDF 1.3)|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Line](/pdf/ar/net/figures-annotation/)|تعليق خطي (PDF 1.3)|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Square](/pdf/ar/net/figures-annotation/)|تعليق مربع (PDF 1.3)|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Circle](/pdf/ar/net/figures-annotation/)|تعليق دائري (PDF 1.3)|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Polygon](/pdf/ar/net/figures-annotation/)|تعليق متعدد الأضلاع (PDF 1.5)|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/ar/net/figures-annotation/)|تعليق خطوط متعددة (PDF 1.5)|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/ar/net/figures-annotation/)|(PDF 1.5) تعليق توضيحي للخط المتعدد|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Highlight](/pdf/ar/net/highlights-annotation/)|(PDF 1.3) تعليق توضيحي للتمييز|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Underline](/pdf/ar/net/highlights-annotation/)|(PDF 1.3) تعليق توضيحي للتسطير|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Squiggly](/pdf/ar/net/highlights-annotation/)|(PDF 1.4) تعليق توضيحي للتسطير المتموج|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[StrikeOut](/pdf/ar/net/highlights-annotation/)|(PDF 1.3) تعليق توضيحي للإضراب|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Stamp](/pdf/ar/net/stamping/)|(PDF 1.3) تعليق توضيحي للختم|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Caret](/pdf/ar/net/extra-annotations/)|(PDF 1.5) تعليق توضيحي لعلامة الإدراج|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Ink](/pdf/ar/net/figures-annotation/)|(PDF 1.3) تعليق توضيحي للحبر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Popup](/pdf/ar/net/text-annotation/)|(PDF 1.3) تعليق توضيحي منبثق|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-| [Popup](/pdf/ar/net/text-annotation/) | (PDF 1.3) تعليق مستطيل الإعلام | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Sound](/pdf/ar/net/multimedia-annotation/) | (PDF 1.2) تعليق الصوت | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Movie](/pdf/ar/net/multimedia-annotation/) | (PDF 1.2) تعليق الفيلم | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Widget](/pdf/ar/net/multimedia-annotation/) | (PDF 1.2) تعليق الويدجت | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Screen](/pdf/ar/net/multimedia-annotation/) | (PDF 1.5) تعليق الشاشة | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Watermark](/pdf/ar/net/sticky-annotations/) | (PDF 1.6) تعليق العلامة المائية | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Redact](/pdf/ar/net/extra-annotations/) | (PDF 1.7) تعليق التحرير | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+|[Link](/pdf/ar/net/extra-annotations/)|تعليقات روابط|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[FreeText](/pdf/ar/net/text-annotation/)|(PDF 1.3) تعليق نص حر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Line](/pdf/ar/net/figures-annotation/)|(PDF 1.3) تعليق خط|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Square](/pdf/ar/net/figures-annotation/)|(PDF 1.3) تعليق مربع|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Circle](/pdf/ar/net/figures-annotation/)|(PDF 1.3) تعليق دائرة|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polygon](/pdf/ar/net/figures-annotation/)|(PDF 1.5) تعليق مضلع|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[PolyLine](/pdf/ar/net/figures-annotation/)|(PDF 1.5) تعليق خط متعرج|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Highlight](/pdf/ar/net/highlights-annotation/)|(PDF 1.3) تعليق تظليل|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Underline](/pdf/ar/net/highlights-annotation/)|(PDF 1.3) تعليق خط تحت|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Squiggly](/pdf/ar/net/highlights-annotation/)|(PDF 1.4) تعليق خط متعرج|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[StrikeOut](/pdf/ar/net/highlights-annotation/)|(PDF 1.3) تعليق شطب|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Stamp](/pdf/ar/net/stamping/)|(PDF 1.3) تعليق ختم مطاطي|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Caret](/pdf/ar/net/extra-annotations/)|(PDF 1.5) تعليق مؤشر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Ink](/pdf/ar/net/figures-annotation/)|(PDF 1.3) تعليق حبر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Popup](/pdf/ar/net/text-annotation/)|(PDF 1.3) تعليق منبثق|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sound](/pdf/ar/net/multimedia-annotation/)|(PDF 1.2) تعليق صوتي|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Movie](/pdf/ar/net/multimedia-annotation/)|(PDF 1.2) تعليق فيلم|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/ar/net/multimedia-annotation/)|(PDF 1.2) تعليق عنصر واجهة المستخدم|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Screen](/pdf/ar/net/multimedia-annotation/)|(PDF 1.5) تعليق شاشة|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/ar/net/sticky-annotations/)|(PDF 1.6) تعليق علامة مائية|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redact](/pdf/ar/net/extra-annotations/)|(PDF 1.7) تعليق حذف|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {
@@ -167,4 +169,3 @@ sitemap:
     }
 }
 </script>
-

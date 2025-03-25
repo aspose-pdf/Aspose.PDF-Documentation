@@ -1,10 +1,12 @@
 ---
-title: XML Schema of Aspose.PDF
+title: Schéma XML d'Aspose.PDF
 linktitle: Schéma XML pris en charge
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
-url: frnet/supported-xml-schema/
-description: Cet article décrit un schéma XML pour travailler avec des documents XML dans Aspose.PDF pour .NET
+url: /frnet/supported-xml-schema/
+description: Cet article décrit un schéma XML pour travailler avec des documents XML dans Aspose.PDF for .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +17,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "XML Schema of Aspose.PDF",
-    "alternativeHeadline": "Comment travailler avec le schéma XML dans PDF ",
+    "alternativeHeadline": "Enhanced XML Schema Support in C#",
+    "abstract": "Présentation du schéma XML pour Aspose.PDF for .NET, une nouvelle fonctionnalité puissante qui améliore votre capacité à travailler avec des documents XML dans des applications .NET. Ce schéma fournit un moyen structuré de définir et de manipuler des objets PDF, permettant une personnalisation avancée et un contrôle sur la conception et la mise en page des documents, en faisant un outil essentiel pour les développeurs cherchant à optimiser leurs processus de génération de PDF. Découvrez comment cette fonctionnalité peut rationaliser votre flux de travail de développement et améliorer vos capacités de gestion des PDF dans votre application.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, c#, schéma XML",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "wordcount": "2078",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,15 +73,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "net/supported-xml-schema/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cet article décrit un schéma XML pour travailler avec des documents XML dans Aspose.PDF pour .NET"
+    "dateModified": "2024-11-26",
+    "description": "Cet article décrit un schéma XML pour travailler avec des documents XML dans Aspose.PDF for .NET"
 }
 </script>
-```
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-Aspose.PDF pour .NET utilise le schéma XML suivant pour travailler avec des documents XML :
+Aspose.PDF for .NET utilise le schéma XML suivant pour travailler avec des documents XML :
 
 ```xml
 <?xml version="1.0"?>
@@ -316,14 +317,68 @@ Aspose.PDF pour .NET utilise le schéma XML suivant pour travailler avec des doc
       <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphInfoType" name="GraphInfo" minOccurs="0"/>
     </xs:sequence>
     <xs:attribute type="xs:byte" name="Left" use="optional"/>
-    <xs:attribute type="xs:byte
+    <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+    <xs:attribute type="xs:byte" name="Width" use="optional"/>
+    <xs:attribute type="xs:byte" name="Height" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="TextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Text" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NoteType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextType" name="Text"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TableType" name="Table"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:ImageType" name="Image"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphType" name="Graph"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:FloatingBoxType" name="FloatingBox"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextFragmentType" name="TextFragment"/>
+      <xs:element type="xs:string" name="HtmlFragment"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:HeadingType" name="Heading"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HeadingType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="TextSegment"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="Level" use="optional"/>
+    <xs:attribute type="xs:string" name="IsAutoSequence" use="optional"/>
+    <xs:attribute type="xs:byte" name="Style" use="optional"/>
+    <xs:attribute type="xs:byte" name="StartNumber" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="RectangleType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+        <xs:attribute type="xs:byte" name="Height" use="optional"/>
+        <xs:attribute type="xs:byte" name="Left" use="optional"/>
+        <xs:attribute type="xs:byte" name="Width" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CurveType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="PositionArray"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DocumentType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:PageType" name="Page" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+```
 
-```html
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF pour .NET Library",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -345,21 +400,21 @@ Aspose.PDF pour .NET utilise le schéma XML suivant pour travailler avec des doc
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -370,7 +425,7 @@ Aspose.PDF pour .NET utilise le schéma XML suivant pour travailler avec des doc
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -382,4 +437,3 @@ Aspose.PDF pour .NET utilise le schéma XML suivant pour travailler avec des doc
     }
 }
 </script>
-```

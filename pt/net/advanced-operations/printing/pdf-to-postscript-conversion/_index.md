@@ -2,9 +2,11 @@
 title: Conversão de PDF para PostScript
 linktitle: Conversão de PDF para PostScript
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /pt/net/pdf-to-postscript-conversion/
-description: Temos uma solução para conversão de PDF para PostScript. Use para essa tarefa a impressão e a classe PdfViewer.
+description: Temos uma solução para conversão de PDF para PostScript. Use para essa tarefa as classes printing e PdfViewer.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Conversão de PDF para PostScript",
-    "alternativeHeadline": "Converter PDF para PostScript",
+    "headline": "PDF to PostScript conversion",
+    "alternativeHeadline": "Effortlessly Convert PDF Files to PostScript Format",
+    "abstract": "O novo recurso de conversão de PDF para PostScript permite a transformação sem costura de documentos PDF em formato PostScript usando a classe PdfViewer em C#. Essa funcionalidade aprimora seu fluxo de trabalho de impressão, permitindo a saída direta de arquivos para uma impressora PS, facilitando o gerenciamento e a utilização de arquivos PDF em vários ambientes de impressão.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, c#, pdf to postscript",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "pdf to postscript, PDF to PostScript conversion, PdfViewer class, printing PDF documents, convert PDF files, C# PDF printing, print job status, PrinterJobName property, Aspose.PDF library, PS printer installation",
+    "wordcount": "1224",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,8 +74,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-to-postscript-conversion/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Temos uma solução para conversão de PDF para PostScript. Use para essa tarefa a impressão e a classe PdfViewer."
+    "dateModified": "2024-11-25",
+    "description": "Temos uma solução para conversão de PDF para PostScript. Use para essa tarefa as classes printing e PdfViewer."
 }
 </script>
 
@@ -80,230 +83,579 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## **PDF Para Postscript em C#**
 
-A classe PdfViewer fornece a capacidade de imprimir documentos PDF e com a ajuda desta classe, também podemos converter arquivos PDF para o formato PostScript. Para converter um arquivo PDF em PostScript, primeiro instale qualquer impressora PS e apenas imprima para o arquivo com a ajuda do PdfViewer. Você pode seguir as instruções especificadas pela Universidade do Havaí sobre como instalar a impressora PS. O seguinte trecho de código mostra como imprimir e converter um PDF para o formato PostScript.
+A classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) fornece a capacidade de imprimir documentos PDF e, com a ajuda dessa classe, também podemos converter arquivos PDF para o formato PostScript. Para converter um arquivo PDF em PostScript, primeiro instale qualquer impressora PS e apenas imprima para arquivo com a ajuda do PdfViewer. Para instalar uma impressora PS, consulte as instruções fornecidas pelo fornecedor da sua impressora. O seguinte trecho de código mostra como imprimir e converter um PDF para o formato PostScript.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void PrintToPostscriptFile()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintToPostscriptFile()
 {
-    // O caminho para o diretório de documentos.
-    // string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    Aspose.Pdf.Facades.PdfViewer viewer = new Aspose.Pdf.Facades.PdfViewer();
-    viewer.BindPdf(_dataDir + "input.pdf");
-    // Configurar PrinterSettings e PageSettings
-    System.Drawing.Printing.PrinterSettings printerSettings = new System.Drawing.Printing.PrinterSettings();
-    printerSettings.Copies = 1;
-    // Configurar a impressora PS, pode-se encontrar este driver na lista de drivers de impressora pré-instalados no Windows
-    printerSettings.PrinterName = "HP LaserJet 2300 Series PS";
-    // Configurar o nome do arquivo de saída e o atributo PrintToFile
-    printerSettings.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
-    printerSettings.PrintToFile = true;
-    // Desativar o diálogo de página de impressão
-    viewer.PrintPageDialog = false;
-    // Passar o objeto de configurações de impressora para o método
-    viewer.PrintDocumentWithSettings(printerSettings);
-    viewer.Close();
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Set PrinterSettings and PageSettings
+        var printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
+        printerSettings.Copies = 1;
+
+        // Set PS printer, one can find this driver in the list of preinstalled printer drivers in Windows
+        printerSettings.PrinterName = "HP LaserJet 2300 Series PS";
+
+        // Set output file name and PrintToFile attribute
+        printerSettings.PrintFileName = dataDir + "PdfToPostScript_out.ps";
+        printerSettings.PrintToFile = true;
+        
+        // Disable print page dialog
+        viewer.PrintPageDialog = false;
+        
+        // Pass printer settings object to the method
+        viewer.PrintDocumentWithSettings(printerSettings);
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintToPostscriptFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set PrinterSettings and PageSettings
+    var printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
+    printerSettings.Copies = 1;
+
+    // Set PS printer, one can find this driver in the list of preinstalled printer drivers in Windows
+    printerSettings.PrinterName = "HP LaserJet 2300 Series PS";
+
+    // Set output file name and PrintToFile attribute
+    printerSettings.PrintFileName = dataDir + "PdfToPostScript_out.ps";
+    printerSettings.PrintToFile = true;
+        
+    // Disable print page dialog
+    viewer.PrintPageDialog = false;
+        
+    // Pass printer settings object to the method
+    viewer.PrintDocumentWithSettings(printerSettings);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Verificando o Status do Trabalho de Impressão
 
-Um arquivo PDF pode ser impresso em uma impressora física, bem como no Microsoft XPS Document Writer, sem mostrar um diálogo de impressão, usando a classe PdfViewer. Ao imprimir arquivos PDF grandes, o processo pode demorar muito tempo, então o usuário pode não ter certeza se o processo de impressão foi concluído ou encontrou algum problema. Para determinar o status de um trabalho de impressão, use a propriedade PrintStatus. O seguinte trecho de código mostra como imprimir o arquivo PDF em um arquivo XPS e obter o status da impressão.
+Um arquivo PDF pode ser impresso em uma impressora física, bem como no Microsoft XPS Document Writer, sem mostrar uma caixa de diálogo de impressão, usando a classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/). Ao imprimir arquivos PDF grandes, o processo pode demorar um pouco, então o usuário pode não ter certeza se o processo de impressão foi concluído ou encontrou um problema. Para determinar o status de um trabalho de impressão, use a propriedade [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). O seguinte trecho de código mostra como imprimir o arquivo PDF em um arquivo XPS e obter o status da impressão.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void CheckingPrintJobStatus()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckingPrintJobStatus()
 {
-    // Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-    // O caminho para o diretório de documentos.
-    // string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Instanciar objeto PdfViewer
-    PdfViewer viewer = new PdfViewer();
+    // Instantiate PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-    // Vincular arquivo PDF de origem
-    viewer.BindPdf(_dataDir + "input.pdf");
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+
+        // Hide printing dialog
+        viewer.PrintPageDialog = false;
+
+        // Create Printer Settings object
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+        // Specify the printer name
+        ps.PrinterName = "Microsoft XPS Document Writer";
+
+        // Resultant Printout name
+        ps.PrintFileName = dataDir + "CheckingPrintJobStatus_out.xps";
+
+        // Print the output to file
+        ps.PrintToFile = true;
+
+        // Set a range of pages to print
+        ps.FromPage = 1;
+        ps.ToPage = 2;
+        ps.PrintRange = Aspose.Pdf.Printing.PrintRange.SomePages;
+
+        // Specify the page size of printout
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+        ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
+
+        // Specify page margins
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+        // Print the document with settings specified above
+        viewer.PrintDocumentWithSettings(pgs, ps);
+
+        // Check the print status
+        if (viewer.PrintStatus != null)
+        {
+            // An exception was thrown
+            if (viewer.PrintStatus is Exception ex)
+            {
+                // Get exception message
+                Console.WriteLine(ex.Message);
+            }
+        }
+        else
+        {
+            // No errors were found. Printing job has completed successfully
+            Console.WriteLine("Printing completed without any issue.");
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckingPrintJobStatus()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Instantiate PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Print the file with adjusted size
     viewer.AutoResize = true;
 
-    // Ocultar diálogo de impressão
+    // Hide printing dialog
     viewer.PrintPageDialog = false;
 
-    // Criar objeto de configurações de impressora
-    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+    // Create Printer Settings object
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
 
-    // Especificar o nome da impressora
+    // Specify the printer name
     ps.PrinterName = "Microsoft XPS Document Writer";
 
-    // Nome resultante da impressão
-    ps.PrintFileName = "ResultantPrintout.xps";
+    // Resultant Printout name
+    ps.PrintFileName = dataDir + "CheckingPrintJobStatus_out.xps";
 
-    // Imprimir a saída para arquivo
+    // Print the output to file
     ps.PrintToFile = true;
+
+    // Set a range of pages to print
     ps.FromPage = 1;
     ps.ToPage = 2;
-    ps.PrintRange = System.Drawing.Printing.PrintRange.SomePages;
+    ps.PrintRange = Aspose.Pdf.Printing.PrintRange.SomePages;
 
-    // Especificar o tamanho da página da impressão
-    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    // Specify the page size of printout
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
     ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
-    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
 
-    // Imprimir o documento com as configurações especificadas acima
+    // Specify page margins
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Print the document with settings specified above
     viewer.PrintDocumentWithSettings(pgs, ps);
 
-    // Verificar o status da impressão
+    // Check the print status
     if (viewer.PrintStatus != null)
     {
-        // Uma exceção foi lançada
+        // An exception was thrown
         if (viewer.PrintStatus is Exception ex)
         {
-            // Obter mensagem de exceção
+            // Get exception message
             Console.WriteLine(ex.Message);
         }
     }
     else
     {
-        // Não foram encontrados erros. O trabalho de impressão foi concluído com sucesso
-        Console.WriteLine("printing completed without any issue..");
+        // No errors were found. Printing job has completed successfully
+        Console.WriteLine("Printing completed without any issue.");
     }
 }
 ```
-## Obter/Definir o nome do proprietário da impressão
+{{< /tab >}}
+{{< /tabs >}}
 
-Recentemente, recebemos uma solicitação para obter/definir o nome do proprietário da impressão (o usuário atual que pressionou o botão de imprimir na página da web). Essas informações são necessárias ao imprimir o arquivo PDF. Para cumprir essa solicitação, você pode usar a propriedade chamada PrinterJobName:
+## Obter/Definir Nome do Proprietário do Trabalho de Impressão
 
+Às vezes, há a necessidade de obter ou definir o nome do proprietário do trabalho de impressão (ou seja, o usuário real que pressionou o botão de impressão em uma página da web). Essa informação é necessária ao imprimir o arquivo PDF. Para atender a essa necessidade, a propriedade [PrinterJobName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printerjobname/) é utilizada.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
-PdfViewer viewer = new PdfViewer();
-// Vincular arquivo PDF fonte
-viewer.BindPdf(dataDir + "input.pdf");
-// Especificar o nome do trabalho de impressão
-viewer.PrinterJobName = GetCurrentUserCredentials();
-```
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrinterJobName()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Specify the name of Print job
+        viewer.PrinterJobName = GetCurrentUserCredentials();
+
+        // Fill the necessary settings and print the documents, as shown in examples in this section
+    }
+}
+
 private static string GetCurrentUserCredentials()
 {
-    // A implementação depende do tipo de aplicação em execução (ASP.NET, Windows forms, etc.)
-    string userCredentials = string.Empty;
+    // The implementation depends on type of running application (ASP.NET, Windows forms, etc.)
+    var userCredentials = string.Empty;
     return userCredentials;
 }
 ```
-## Usando Impersonação
+{{< /tab >}}
 
-Outra abordagem para obter o nome do proprietário do trabalho de impressão é usar a impersonação (executando rotinas de impressão em outro contexto de usuário) ou o usuário pode alterar o nome do proprietário diretamente usando a rotina SetJob.
-
-Por favor, note que não há possibilidade de definir o valor do proprietário usando a API de impressão Aspose.PDF por considerações de segurança. A propriedade PrinterJobName pode ser usada para definir o valor da coluna nome do documento na aplicação de spool de impressão. O trecho de código compartilhado acima apenas mostra como o usuário pode incluir o nome do usuário na coluna nome do documento (por exemplo, usando a sintaxe UserName\documentName). Mas a configuração das colunas de Proprietário pode ser implementada diretamente pelo usuário das seguintes maneiras:
-
-1) Impersonação. Como o valor da coluna proprietário contém o valor do usuário que executa o código de impressão, há uma maneira de invocar a API de impressão Aspose.PDF dentro de outro contexto de usuário. Por exemplo, por favor, dê uma olhada na solução descrita aqui. Usando esta classe, o usuário pode alcançar um objetivo:
-
+{{< tab tabNum="2" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
-PdfViewer viewer = new PdfViewer();
-viewer.BindPdf(dataDir + "input.pdf");
-viewer.PrintPageDialog = false;
-// Não produzir o diálogo de número de página ao imprimir
-using (new Impersonator("OwnerUserName", "SomeDomain", "OwnerUserNamePassword"))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrinterJobName()
 {
-    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-    ps.PrinterName = "Microsoft XPS Document Writer";
-    viewer.PrintDocumentWithSettings(ps); // OwnerUserName é um valor da coluna Proprietário na aplicação de spooler
-    viewer.Close();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Specify the name of Print job
+    viewer.PrinterJobName = GetCurrentUserCredentials();
+
+    // Fill the necessary settings and print the documents, as shown in examples in this section
+}
+
+private static string GetCurrentUserCredentials()
+{
+    // The implementation depends on type of running application (ASP.NET, Windows forms, etc.)
+    var userCredentials = string.Empty;
+    return userCredentials;
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Usando Impersonação
+
+Outra abordagem para obter o nome do proprietário do trabalho de impressão é usar impersonação (executar rotinas de impressão em outro contexto de usuário) ou o usuário pode alterar o nome do proprietário diretamente usando a rotina SetJob.
+
+Por favor, note que não há possibilidade de definir o valor do proprietário usando a API de impressão Aspose.PDF por considerações de segurança. A propriedade PrinterJobName pode ser usada para definir o valor da coluna do nome do documento na aplicação de impressão spooler. O trecho de código compartilhado acima apenas mostra como o usuário pode juntar o nome do usuário na coluna do nome do documento (por exemplo, usando a sintaxe UserName\documentName). Mas a configuração das colunas do Proprietário pode ser implementada das seguintes maneiras diretamente pelo usuário:
+
+1) Impersonação. Como o valor da coluna do proprietário contém o valor do usuário que executa o código de impressão, há uma maneira de invocar a API de impressão Aspose.PDF dentro de outro contexto de usuário. Por exemplo, veja a solução descrita aqui. Usando [esta classe Impersonator](https://www.codeproject.com/articles/10090/a-small-csharp-class-for-impersonating-a-user), o usuário pode alcançar o objetivo:
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintWithImpersonation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+
+        // Impersonate another user
+        using (new Impersonator("OwnerUserName", "SomeDomain", "OwnerUserPassword"))
+        {
+            // Set PrinterSettings
+            var ps = new Aspose.Pdf.Printing.PrinterSettings();
+
+            // Set the name of the printer
+            ps.PrinterName = "Microsoft XPS Document Writer";
+
+            // Pass printer settings object to the method
+            viewer.PrintDocumentWithSettings(ps); // OwnerUserName is a value of Owner column in spooler app
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintWithImpersonation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+
+    // Impersonate another user
+    using var impersonator = new Impersonator("OwnerUserName", "SomeDomain", "OwnerUserPassword");
+
+    // Set PrinterSettings
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+
+    // Set the name of the printer
+    ps.PrinterName = "Microsoft XPS Document Writer";
+
+    // Pass printer settings object to the method
+    viewer.PrintDocumentWithSettings(ps); // OwnerUserName is a value of Owner column in spooler app
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 2) Usando a API Spooler e a rotina SetJob
 
-O seguinte trecho de código mostra como imprimir algumas páginas de um arquivo PDF em modo Simplex e algumas páginas em modo Duplex.
+O seguinte trecho de código mostra como imprimir algumas páginas de um arquivo PDF em modo Simples e algumas páginas em modo Duplex.
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 struct PrintingJobSettings
 {
     public int ToPage { get; set; }
     public int FromPage { get; set; }
     public string OutputFile { get; set; }
-    public System.Drawing.Printing.Duplex Mode { get; set; }
+    public Aspose.Pdf.Printing.Duplex Mode { get; set; }
 }
-```
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, visite https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
-
-int printingJobIndex = 0;
-string inPdf = dataDir + "input.pdf";
-string output = dataDir;
-IList<PrintingJobSettings> printingJobs = new List<PrintingJobSettings>();
-
-PrintingJobSettings printingJob1 = new PrintingJobSettings();
-printingJob1.FromPage = 1;
-printingJob1.ToPage = 3;
-printingJob1.OutputFile = output + "35925_1_3.xps";
-printingJob1.Mode = Duplex.Default;
-
-printingJobs.Add(printingJob1);
-
-PrintingJobSettings printingJob2 = new PrintingJobSettings();
-printingJob2.FromPage = 4;
-printingJob2.ToPage = 6;
-printingJob2.OutputFile = output + "35925_4_6.xps";
-printingJob2.Mode = Duplex.Simplex;
-
-printingJobs.Add(printingJob2);
-
-PrintingJobSettings printingJob3 = new PrintingJobSettings();
-printingJob3.FromPage = 7;
-printingJob3.ToPage = 7;
-printingJob3.OutputFile = output + "35925_7.xps";
-printingJob3.Mode = Duplex.Default;
-
-printingJobs.Add(printingJob3);
-
-PdfViewer viewer = new PdfViewer();
-
-viewer.BindPdf(inPdf);
-viewer.AutoResize = true;
-viewer.AutoRotate = true;
-viewer.PrintPageDialog = false;
-
-PrinterSettings ps = new PrinterSettings();
-PageSettings pgs = new PageSettings();
-
-ps.PrinterName = "Microsoft XPS Document Writer";
-ps.PrintFileName = Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
-ps.PrintToFile = true;
-ps.FromPage = printingJobs[printingJobIndex].FromPage;
-ps.ToPage = printingJobs[printingJobIndex].ToPage;
-ps.Duplex = printingJobs[printingJobIndex].Mode;
-ps.PrintRange = PrintRange.SomePages;
-
-pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
-ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
-pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
-viewer.EndPrint += (sender, args) =>
+private static void PrintUsingSpoolerApi()
 {
-    if (++printingJobIndex < printingJobs.Count)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    int printingJobIndex = 0;
+    string outputDir = dataDir;
+    var printingJobs = new List<PrintingJobSettings>();
+
+    // Create multiple printing jobs to print different page ranges with different duplex settings
+    var printingJob1 = new PrintingJobSettings();
+    printingJob1.FromPage = 1;
+    printingJob1.ToPage = 3;
+    printingJob1.OutputFile = outputDir + "PrintUsingSpoolerApi_p1-3_out.xps";
+    printingJob1.Mode = Aspose.Pdf.Printing.Duplex.Default;
+
+    printingJobs.Add(printingJob1);
+
+    PrintingJobSettings printingJob2 = new PrintingJobSettings();
+    printingJob2.FromPage = 4;
+    printingJob2.ToPage = 6;
+    printingJob2.OutputFile = outputDir + "PrintUsingSpoolerApi_p4-6_out.xps";
+    printingJob2.Mode = Aspose.Pdf.Printing.Duplex.Simplex;
+
+    printingJobs.Add(printingJob2);
+
+    PrintingJobSettings printingJob3 = new PrintingJobSettings();
+    printingJob3.FromPage = 7;
+    printingJob3.ToPage = 7;
+    printingJob3.OutputFile = outputDir + "PrintUsingSpoolerApi_p7_out.xps";
+    printingJob3.Mode = Aspose.Pdf.Printing.Duplex.Default;
+
+    printingJobs.Add(printingJob3);
+
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "Print-PageRange.pdf");
+
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+
+        // Create objects for printer and page settings
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+        // Set printer name
+        ps.PrinterName = "Microsoft XPS Document Writer";
+
+        // Set output file name and PrintToFile attribute
         ps.PrintFileName = Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+        ps.PrintToFile = true;
+
+        // Set parameters for the first print job
         ps.FromPage = printingJobs[printingJobIndex].FromPage;
         ps.ToPage = printingJobs[printingJobIndex].ToPage;
         ps.Duplex = printingJobs[printingJobIndex].Mode;
+        ps.PrintRange = Aspose.Pdf.Printing.PrintRange.SomePages;
+
+        // Set paper size and margins
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+        ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+        // Chain other print jobs at the end of the finished job
+        viewer.EndPrint += (sender, args) =>
+        {
+            if (++printingJobIndex < printingJobs.Count)
+            {
+                // Set the next print job parameters
+                ps.PrintFileName = Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+                ps.FromPage = printingJobs[printingJobIndex].FromPage;
+                ps.ToPage = printingJobs[printingJobIndex].ToPage;
+                ps.Duplex = printingJobs[printingJobIndex].Mode;
+
+                // Run the next print job
+                viewer.PrintDocumentWithSettings(pgs, ps);
+            }
+        };
+
+        // Run the first print job
         viewer.PrintDocumentWithSettings(pgs, ps);
     }
-};
-
-viewer.PrintDocumentWithSettings(pgs, ps);
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+struct PrintingJobSettings
+{
+    public int ToPage { get; set; }
+    public int FromPage { get; set; }
+    public string OutputFile { get; set; }
+    public Aspose.Pdf.Printing.Duplex Mode { get; set; }
+}
+
+private static void PrintUsingSpoolerApi()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    int printingJobIndex = 0;
+    var printingJobs = new List<PrintingJobSettings>();
+
+    // Create multiple printing jobs to print different page ranges with different duplex settings
+    var printingJob1 = new PrintingJobSettings();
+    printingJob1.FromPage = 1;
+    printingJob1.ToPage = 3;
+    printingJob1.OutputFile = dataDir + "PrintUsingSpoolerApi_p1-3_out.xps";
+    printingJob1.Mode = Aspose.Pdf.Printing.Duplex.Default;
+
+    printingJobs.Add(printingJob1);
+
+    PrintingJobSettings printingJob2 = new PrintingJobSettings();
+    printingJob2.FromPage = 4;
+    printingJob2.ToPage = 6;
+    printingJob2.OutputFile = dataDir + "PrintUsingSpoolerApi_p4-6_out.xps";
+    printingJob2.Mode = Aspose.Pdf.Printing.Duplex.Simplex;
+
+    printingJobs.Add(printingJob2);
+
+    PrintingJobSettings printingJob3 = new PrintingJobSettings();
+    printingJob3.FromPage = 7;
+    printingJob3.ToPage = 7;
+    printingJob3.OutputFile = dataDir + "PrintUsingSpoolerApi_p7_out.xps";
+    printingJob3.Mode = Aspose.Pdf.Printing.Duplex.Default;
+
+    printingJobs.Add(printingJob3);
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "Print-PageRange.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+
+    // Create objects for printer and page settings
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+    // Set printer name
+    ps.PrinterName = "Microsoft XPS Document Writer";
+
+    // Set output file name and PrintToFile attribute
+    ps.PrintFileName = Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+    ps.PrintToFile = true;
+
+    // Set parameters for the first print job
+    ps.FromPage = printingJobs[printingJobIndex].FromPage;
+    ps.ToPage = printingJobs[printingJobIndex].ToPage;
+    ps.Duplex = printingJobs[printingJobIndex].Mode;
+    ps.PrintRange = Aspose.Pdf.Printing.PrintRange.SomePages;
+
+    // Set paper size and margins
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+    ps.DefaultPageSettings.PaperSize = pgs.PaperSize;
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Chain other print jobs at the end of the finished job
+    viewer.EndPrint += (sender, args) =>
+    {
+        if (++printingJobIndex < printingJobs.Count)
+        {
+            // Set the next print job parameters
+            ps.PrintFileName = Path.GetFullPath(printingJobs[printingJobIndex].OutputFile);
+            ps.FromPage = printingJobs[printingJobIndex].FromPage;
+            ps.ToPage = printingJobs[printingJobIndex].ToPage;
+            ps.Duplex = printingJobs[printingJobIndex].Mode;
+
+            // Run the next print job
+            viewer.PrintDocumentWithSettings(pgs, ps);
+        }
+    };
+
+    // Run the first print job
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Biblioteca Aspose.PDF para .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -325,21 +677,21 @@ viewer.PrintDocumentWithSettings(pgs, ps);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -350,7 +702,7 @@ viewer.PrintDocumentWithSettings(pgs, ps);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -362,5 +714,3 @@ viewer.PrintDocumentWithSettings(pgs, ps);
     }
 }
 </script>
-```
-

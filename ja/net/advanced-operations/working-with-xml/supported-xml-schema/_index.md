@@ -2,8 +2,10 @@
 title: Aspose.PDFのXMLスキーマ
 linktitle: サポートされているXMLスキーマ
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
-url: janet/supported-xml-schema/
+url: /janet/supported-xml-schema/
 description: この記事では、Aspose.PDF for .NETでXMLドキュメントを操作するためのXMLスキーマについて説明します
 lastmod: "2022-02-17"
 sitemap:
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Aspose.PDFのXMLスキーマ",
-    "alternativeHeadline": "PDFでXMLスキーマを操作する方法",
+    "headline": "XML Schema of Aspose.PDF",
+    "alternativeHeadline": "Enhanced XML Schema Support in C#",
+    "abstract": "Aspose.PDF for .NETのXMLスキーマを紹介します。これは、.NETアプリケーションでXMLドキュメントを操作する能力を強化する強力な新機能です。このスキーマは、PDFオブジェクトを定義し操作するための構造化された方法を提供し、ドキュメントのデザインとレイアウトに対する高度なカスタマイズと制御を可能にします。これは、PDF生成プロセスを最適化しようとする開発者にとって不可欠なツールです。この機能がどのように開発ワークフローを効率化し、アプリケーションのPDF処理能力を向上させるかを発見してください。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, XML schema",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2078",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,15 +73,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "net/supported-xml-schema/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "この記事では、Aspose.PDF for .NETでXMLドキュメントを操作するためのXMLスキーマについて説明します"
 }
 </script>
-```
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-Aspose.PDF for .NETは、XMLドキュメントを操作するために次のXMLスキーマを使用します:
+Aspose.PDF for .NETは、XMLドキュメントを操作するために次のXMLスキーマを使用します：
 
 ```xml
 <?xml version="1.0"?>
@@ -315,9 +316,65 @@ Aspose.PDF for .NETは、XMLドキュメントを操作するために次のXML�
     <xs:sequence>
       <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphInfoType" name="GraphInfo" minOccurs="0"/>
     </xs:sequence>
-    <xs:attribute type="xs:byte" name
+    <xs:attribute type="xs:byte" name="Left" use="optional"/>
+    <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+    <xs:attribute type="xs:byte" name="Width" use="optional"/>
+    <xs:attribute type="xs:byte" name="Height" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="TextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Text" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NoteType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextType" name="Text"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TableType" name="Table"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:ImageType" name="Image"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphType" name="Graph"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:FloatingBoxType" name="FloatingBox"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextFragmentType" name="TextFragment"/>
+      <xs:element type="xs:string" name="HtmlFragment"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:HeadingType" name="Heading"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HeadingType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="TextSegment"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="Level" use="optional"/>
+    <xs:attribute type="xs:string" name="IsAutoSequence" use="optional"/>
+    <xs:attribute type="xs:byte" name="Style" use="optional"/>
+    <xs:attribute type="xs:byte" name="StartNumber" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="RectangleType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+        <xs:attribute type="xs:byte" name="Height" use="optional"/>
+        <xs:attribute type="xs:byte" name="Left" use="optional"/>
+        <xs:attribute type="xs:byte" name="Width" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CurveType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="PositionArray"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DocumentType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:PageType" name="Page" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+```
 
-```json
+<script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
@@ -368,7 +425,7 @@ Aspose.PDF for .NETは、XMLドキュメントを操作するために次のXML�
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "PDF操作ライブラリ for .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -379,4 +436,4 @@ Aspose.PDF for .NETは、XMLドキュメントを操作するために次のXML�
         "ratingCount": "16"
     }
 }
-```
+</script>

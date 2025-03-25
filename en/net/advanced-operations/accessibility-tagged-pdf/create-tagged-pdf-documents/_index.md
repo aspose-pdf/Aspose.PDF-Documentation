@@ -124,7 +124,7 @@ private static void CreateTaggedPdfDocument01()
         rootElement.AppendChild(mainHeader);
         rootElement.AppendChild(paragraphElement);
 
-        // Save Tagged PDF document
+        // Save Tagged PDF Document
         document.Save(dataDir + "TaggedPdfDocument_out.pdf");
     }
 }
@@ -209,7 +209,10 @@ private static void CreateTaggedPdfDocument02()
 
         Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
         paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
-        paragraphWithQuotes.StructureTextState.MarginInfo = new Aspose.Pdf.MarginInfo(10, 5, 10, 5);
+        paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+            {
+                Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
+            });
 
         Aspose.Pdf.LogicalStructure.SpanElement spanElement1 = taggedContent.CreateSpanElement();
         spanElement1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
@@ -258,7 +261,11 @@ private static void CreateTaggedPdfDocument02()
 
     Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
     paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
-    paragraphWithQuotes.StructureTextState.MarginInfo = new Aspose.Pdf.MarginInfo(10, 5, 10, 5);
+    
+    paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+        {
+            Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
+        });
 
     Aspose.Pdf.LogicalStructure.SpanElement spanElement1 = taggedContent.CreateSpanElement();
     spanElement1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
@@ -318,7 +325,7 @@ private static void AddStyle()
 
         p.SetText("Red italic text.");
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "StyleTextStructure_out.pdf");
     }
 }
@@ -352,7 +359,7 @@ private static void AddStyle()
 
     p.SetText("Red italic text.");
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "StyleTextStructure_out.pdf");
 }
 ```
@@ -388,8 +395,18 @@ private static void IllustrateStructureElements()
         figure1.Title = "Image 1";
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
+        
+        // Adjust position
+        figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+        {
+            Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 50,
+                Top = 20
+            },
+        });
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "IllustrationStructureElements_out.pdf");
     }
 }
@@ -420,8 +437,18 @@ private static void IllustrateStructureElements()
     figure1.Title = "Image 1";
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
+    
+    // Adjust position
+    figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+    {
+        Margin = new Aspose.Pdf.MarginInfo
+        {
+            Left = 50,
+            Top = 20
+        },
+    });
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "IllustrationStructureElements_out.pdf");
 }
 ```
@@ -479,6 +506,107 @@ private static void ValidateTaggedPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
+## Adjust position of Text Structure
+
+The following code snippet shows how to adjust Text Structure position in the Tagged PDF document:
+
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AdjustPosition()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with TaggedPdf
+        var taggedContent = document.TaggedContent;
+
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
+
+        // Create paragraph
+        var p = taggedContent.CreateParagraphElement();
+        taggedContent.RootElement.AppendChild(p);
+        p.SetText("Text.");
+
+        // Adjust position
+        p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+        {
+            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
+            Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 300,
+                Right = 0,
+                Top = 20,
+                Bottom = 0
+            },
+            VerticalAlignment = Aspose.Pdf.VerticalAlignment.None,
+            IsFirstParagraphInColumn = false,
+            IsKeptWithNext = false,
+            IsInNewPage = false,
+            IsInLineParagraph = false
+        });
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "AdjustTextPosition_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AdjustPosition()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+    
+    // Get Content for work with TaggedPdf
+    var taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Create paragraph
+    var p = taggedContent.CreateParagraphElement();
+    taggedContent.RootElement.AppendChild(p);
+    p.SetText("Text.");
+
+    // Adjust position
+    p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+    {
+        HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
+        Margin = new Aspose.Pdf.MarginInfo
+        {
+            Left = 300,
+            Right = 0,
+            Top = 20,
+            Bottom = 0
+        },
+        VerticalAlignment = Aspose.Pdf.VerticalAlignment.None,
+        IsFirstParagraphInColumn = false,
+        IsKeptWithNext = false,
+        IsInNewPage = false,
+        IsInLineParagraph = false
+    });
+
+    // Save Tagged PDF Document
+    document.Save(dataDir + "AdjustTextPosition_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Creating Tagged PDF automatically with PDF/UA-1 conversion
 
 Aspose.PDF enables the automatic generation of basic logical structure markup when converting a document to PDF/UA-1. Users may then manually improve upon this basic logical structure, providing additional insights regarding the document contents.
@@ -489,7 +617,7 @@ To generate a logical document structure, create an instance of the [Aspose.Pdf.
 If the document already has logical structure tags, enabling auto-tagging will destroy the existing logical structure and generate a new one.
 {{% /alert %}}
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -628,3 +756,5 @@ private static void ConvertToPdfUAWithAutomaticTagging()
     }
 }
 </script>
+
+

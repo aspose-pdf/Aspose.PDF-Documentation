@@ -2,6 +2,8 @@
 title: 将 PDF 转换为 PDF/A 格式
 linktitle: 将 PDF 转换为 PDF/A 格式
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /zh/net/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
@@ -110,7 +112,7 @@ Aspose.PDF for .NET 为您提供了在线免费应用程序 ["PDF to PDF/A-1A"](
 private static void ConvertPdfToPdfA()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
@@ -132,7 +134,7 @@ private static void ConvertPdfToPdfA()
 private static void ConvertPdfToPdfA()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
@@ -157,7 +159,7 @@ private static void ConvertPdfToPdfA()
 private static void ValidatePdfAStandard()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
@@ -175,7 +177,7 @@ private static void ValidatePdfAStandard()
 private static void ValidatePdfAStandard()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf");
@@ -198,7 +200,7 @@ Aspose.PDF for .NET 还支持将 PDF 文件转换为 PDF/A-3b 格式的功能。
 private static void ConvertPdfToPdfA3b()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
@@ -219,7 +221,7 @@ private static void ConvertPdfToPdfA3b()
 private static void ConvertPdfToPdfA3b()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
@@ -245,7 +247,7 @@ Aspose.PDF for .NET 还支持将 PDF 文件转换为 PDF/A-4 格式的功能。
 private static void ConvertPdfToPdfA4()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
@@ -269,7 +271,7 @@ private static void ConvertPdfToPdfA4()
 private static void ConvertPdfToPdfA4()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
@@ -299,7 +301,7 @@ PDF/A-3a 是提供将任何文件格式作为附件附加到符合 PDF/A 文件�
 private static void AddAttachmentToPdfA()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
@@ -327,7 +329,7 @@ private static void AddAttachmentToPdfA()
 private static void AddAttachmentToPdfA()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
@@ -359,7 +361,7 @@ private static void AddAttachmentToPdfA()
 private static void ReplaceMissingFonts()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     try
     {
@@ -392,7 +394,7 @@ private static void ReplaceMissingFonts()
 private static void ReplaceMissingFonts()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     try
     {
@@ -465,6 +467,7 @@ private static void ConvertToPdfAWithAutomaticTagging()
     }
 }
 ```
+
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}

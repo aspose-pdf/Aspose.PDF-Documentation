@@ -2,9 +2,11 @@
 title: Faire pivoter les pages PDF en utilisant C#
 linktitle: Faire pivoter les pages PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /fr/net/rotate-pages/
-description: Ce sujet décrit comment faire pivoter l'orientation des pages dans un fichier PDF existant de manière programmatique avec C#.
+description: Ce sujet décrit comment faire pivoter l'orientation des pages dans un fichier PDF existant par programmation avec C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Faire pivoter les pages PDF en utilisant C#",
-    "alternativeHeadline": "Comment faire pivoter les pages PDF avec .NET",
+    "headline": "Rotate PDF Pages Using C#",
+    "alternativeHeadline": "Effortlessly Rotate PDF Pages with C#",
+    "abstract": "La nouvelle fonctionnalité dans Aspose.PDF for .NET permet aux développeurs de changer par programmation l'orientation des pages dans des fichiers PDF existants. Les utilisateurs peuvent passer facilement entre les modes paysage et portrait, garantissant que le contenu s'adapte correctement dans la nouvelle mise en page, améliorant l'utilisabilité et la présentation du document.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, faire pivoter la page pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "wordcount": "236",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,26 +73,112 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/rotate-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Ce sujet décrit comment faire pivoter l'orientation des pages dans un fichier PDF existant de manière programmatique avec C#."
+    "dateModified": "2024-11-26",
+    "description": "Ce sujet décrit comment faire pivoter l'orientation des pages dans un fichier PDF existant par programmation avec C#."
 }
 </script>
-Ce sujet décrit comment mettre à jour ou changer l'orientation des pages d'un fichier PDF existant de manière programmatique avec C#.
+
+Ce sujet décrit comment mettre à jour ou changer l'orientation des pages dans un fichier PDF existant par programmation avec C#.
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-## Changer l'Orientation de la Page
+## Changer l'orientation de la page
 
-Depuis la version 9.6.0 d'Aspose.PDF pour .NET, nous avons ajouté de nouvelles fonctionnalités intéressantes comme le changement de l'orientation de la page de paysage à portrait et vice versa. Pour changer l'orientation de la page, définissez la MediaBox de la page en utilisant le code suivant. Vous pouvez également changer l'orientation de la page en définissant l'angle de rotation avec la méthode Rotate().
+Depuis la version Aspose.PDF for .NET 9.6.0, nous avons ajouté de nouvelles fonctionnalités intéressantes comme le changement de l'orientation de la page du paysage au portrait et vice versa. Pour changer l'orientation de la page, définissez le MediaBox de la page en utilisant le code suivant. Vous pouvez également changer l'orientation de la page en définissant l'angle de rotation en utilisant la méthode Rotate().
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-ChangeOrientation-ChangeOrientation.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ChangePageOrientation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RotatePagesInput.pdf"))
+    {
+        foreach (Page page in document.Pages)
+        {
+            Aspose.Pdf.Rectangle r = page.MediaBox;
+            double newHeight = r.Width;
+            double newWidth = r.Height;
+            double newLLX = r.LLX;
+            //  We must to move page upper in order to compensate changing page size
+            // (lower edge of the page is 0,0 and information is usually placed from the
+            //  Top of the page. That's why we move lover edge upper on difference between
+            //  Old and new height.
+            double newLLY = r.LLY + (r.Height - newHeight);
+            page.MediaBox = new Aspose.Pdf.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight);
+            // Sometimes we also need to set CropBox (if it was set in original file)
+            page.CropBox = new Aspose.Pdf.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight);
+            // Setting Rotation angle of page
+            page.Rotate = Rotation.on90;
+        }
+        // Save PDF document
+        document.Save(dataDir + "ChangeOrientation_out.pdf");
+    }
+}
+```
 
-## Adapter le Contenu de la Page à la Nouvelle Orientation de la Page
-
-Veuillez noter que lorsque vous utilisez le code ci-dessus, certains contenus du document pourraient être coupés car la hauteur de la page est diminuée. Pour éviter cela, augmentez la largeur proportionnellement et laissez la hauteur intacte. Exemple de calculs :
-
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-FitPageContents-FitPageContents.cs" >}}
-En plus de l'approche ci-dessus, envisagez d'utiliser la façade PdfPageEditor qui peut appliquer un zoom sur le contenu de la page.
-
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-ZoomToPageContents-ZoomToPageContents.cs" >}}
-
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

@@ -1,10 +1,12 @@
 ---
-title: Работа с метаданными PDF файла | C#
-linktitle: Метаданные PDF файла
+title: Работа с метаданными PDF-файлов в C#
+linktitle: Метаданные PDF-файла
 type: docs
-weight: 140
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 200
 url: /ru/net/pdf-file-metadata/
-description: Этот раздел объясняет, как получить информацию о PDF файле, как получить XMP метаданные из PDF файла, установить информацию о PDF файле.
+description: Изучите, как извлекать и управлять метаданными PDF, такими как автор и заголовок, в .NET с использованием Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Работа с метаданными PDF файла | C#",
-    "alternativeHeadline": "Как получить метаданные PDF файла",
+    "headline": "Working with PDF File Metadata in C#",
+    "alternativeHeadline": "Extracting and Managing PDF Metadata in C#",
+    "abstract": "Откройте возможности управления PDF-файлами с нашей новой функцией для разработчиков C#, обеспечивающей бесшовный доступ к метаданным PDF-файлов. Получите представление о свойствах файлов, извлеките метаданные XMP и легко обновите информацию о документе, оптимизируя процесс обработки документов. Испытайте улучшенные функции для эффективного поддержания и манипулирования метаданными PDF.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация pdf документов",
-    "keywords": "pdf, c#, метаданные pdf файла",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "PDF file metadata, C# PDF manipulation, get PDF file information, set PDF file information, XMP metadata, Aspose.PDF for .NET, document properties, PDF metadata management",
+    "wordcount": "834",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,141 +74,304 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-file-metadata/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел объясняет, как получить информацию о PDF файле, как получить XMP метаданные из PDF файла, установить информацию о PDF файле."
+    "dateModified": "2024-11-25",
+    "description": "В этом разделе объясняется, как получить информацию о PDF-файле, как получить метаданные XMP из PDF-файла, установить информацию о PDF-файле."
 }
 </script>
+
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-## Получение информации о файле PDF
+## Получение информации о PDF-файле
 
-Для получения информации о конкретном файле PDF, вам сначала нужно получить объект [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo), используя свойство [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). После получения объекта [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo), вы можете получить значения отдельных свойств. Следующий фрагмент кода показывает, как получить информацию о файле PDF.
+Чтобы получить специфическую информацию о PDF-файле, вам сначала нужно получить объект [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) с помощью свойства [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). После получения объекта [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) вы можете получить значения отдельных свойств. Следующий фрагмент кода показывает, как получить информацию о PDF-файле.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetPDFFileInformation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "GetFileInfo.pdf");
-// Получить информацию о документе
-DocumentInfo docInfo = pdfDocument.Info;
-// Показать информацию о документе
-Console.WriteLine("Автор: {0}", docInfo.Author);
-Console.WriteLine("Дата создания: {0}", docInfo.CreationDate);
-Console.WriteLine("Ключевые слова: {0}", docInfo.Keywords);
-Console.WriteLine("Дата изменения: {0}", docInfo.ModDate);
-Console.WriteLine("Тема: {0}", docInfo.Subject);
-Console.WriteLine("Название: {0}", docInfo.Title);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetFileInfo.pdf"))
+    {
+        // Get document information
+        var docInfo = document.Info;
+
+        // Display document information
+        Console.WriteLine("Author: {0}", docInfo.Author);
+        Console.WriteLine("Creation Date: {0}", docInfo.CreationDate);
+        Console.WriteLine("Keywords: {0}", docInfo.Keywords);
+        Console.WriteLine("Modify Date: {0}", docInfo.ModDate);
+        Console.WriteLine("Subject: {0}", docInfo.Subject);
+        Console.WriteLine("Title: {0}", docInfo.Title);
+    }
+}
 ```
-## Установка информации о файле PDF
+{{< /tab >}}
 
-Aspose.PDF для .NET позволяет устанавливать специфическую информацию для PDF, такую как автор, дата создания, тема и название. Для установки этой информации:
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetPDFFileInformation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetFileInfo.pdf"))
+    {
+        // Get document information
+        var docInfo = document.Info;
+        // Display document information
+        Console.WriteLine("Author: {0}", docInfo.Author);
+        Console.WriteLine("Creation Date: {0}", docInfo.CreationDate);
+        Console.WriteLine("Keywords: {0}", docInfo.Keywords);
+        Console.WriteLine("Modify Date: {0}", docInfo.ModDate);
+        Console.WriteLine("Subject: {0}", docInfo.Subject);
+        Console.WriteLine("Title: {0}", docInfo.Title);
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Установка информации о PDF-файле
+
+Aspose.PDF for .NET позволяет вам устанавливать специфическую информацию о файле для PDF, такую как автор, дата создания, тема и заголовок. Чтобы установить эту информацию:
 
 1. Создайте объект [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo).
 1. Установите значения свойств.
-1. Сохраните обновленный документ, используя метод Save класса Document.
+1. Сохраните обновленный документ с помощью метода Save класса Document.
 
-{{% alert color="primary" %}}
+Следующий фрагмент кода показывает, как установить информацию о PDF-файле.
 
-Обратите внимание, что вы не можете устанавливать значения для полей *Application* и *Producer*, так как против этих полей будут отображаться Aspose Ltd. и Aspose.PDF для .NET x.x.x.
-
-{{% /alert %}}
-
-Следующий фрагмент кода показывает, как установить информацию о файле PDF.
-
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetFileInformation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "SetFileInfo.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFileInfo.pdf"))
+    {
+        // Specify document information
+        var docInfo = new Aspose.Pdf.DocumentInfo(document);
 
-// Указать информацию о документе
-DocumentInfo docInfo = new DocumentInfo(pdfDocument);
+        docInfo.Author = "Aspose";
+        docInfo.CreationDate = DateTime.Now;
+        docInfo.Keywords = "Aspose.Pdf, DOM, API";
+        docInfo.ModDate = DateTime.Now;
+        docInfo.Subject = "PDF Information";
+        docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
 
-docInfo.Author = "Aspose";
-docInfo.CreationDate = DateTime.Now;
-docInfo.Keywords = "Aspose.Pdf, DOM, API";
-docInfo.ModDate = DateTime.Now;
-docInfo.Subject = "Информация о PDF";
-docInfo.Title = "Установка информации о документе PDF";
-
-dataDir = dataDir + "SetFileInfo_out.pdf";
-// Сохранить выходной документ
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "SetFileInfo_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetFileInformation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFileInfo.pdf"))
+    {
+        // Specify document information
+        var docInfo = new Aspose.Pdf.DocumentInfo(document);
+
+        docInfo.Author = "Aspose";
+        docInfo.CreationDate = DateTime.Now;
+        docInfo.Keywords = "Aspose.Pdf, DOM, API";
+        docInfo.ModDate = DateTime.Now;
+        docInfo.Subject = "PDF Information";
+        docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
+
+        // Save PDF document
+        document.Save(dataDir + "SetFileInfo_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Получение метаданных XMP из PDF-файла
 
-Aspose.PDF позволяет получить доступ к метаданным XMP PDF-файла. Чтобы получить метаданные PDF-файла:
+Aspose.PDF позволяет вам получить доступ к метаданным XMP PDF-файла. Чтобы получить метаданные PDF-файла:
 
 1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) и откройте входной PDF-файл.
 1. Получите метаданные файла с помощью свойства [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
 
 Следующий фрагмент кода показывает, как получить метаданные из PDF-файла.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetXMPMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "GetXMPMetadata.pdf");
-
-// Получить свойства
-Console.WriteLine(pdfDocument.Metadata["xmp:CreateDate"]);
-Console.WriteLine(pdfDocument.Metadata["xmp:Nickname"]);
-Console.WriteLine(pdfDocument.Metadata["xmp:CustomProperty"]);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetXMPMetadata.pdf"))
+    {
+        // Get and display properties
+        Console.WriteLine($"Create Date: {document.Metadata["xmp:CreateDate"]}");
+        Console.WriteLine($"Nickname: {document.Metadata["xmp:Nickname"]}");
+        Console.WriteLine($"Custom Property: {document.Metadata["xmp:CustomProperty"]}");
+    }
+}
 ```
+{{< /tab >}}
 
-## Установка метаданных XMP в PDF-файле
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetXMPMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Aspose.PDF позволяет устанавливать метаданные в PDF-файле.
-Aspose.PDF позволяет устанавливать метаданные в файле PDF.
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetXMPMetadata.pdf"))
+    {
+        // Get and display properties
+        Console.WriteLine($"Create Date: {document.Metadata["xmp:CreateDate"]}");
+        Console.WriteLine($"Nickname: {document.Metadata["xmp:Nickname"]}");
+        Console.WriteLine($"Custom Property: {document.Metadata["xmp:CustomProperty"]}");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Установка метаданных XMP в PDF-файл
+
+Aspose.PDF позволяет вам устанавливать метаданные в PDF-файл. Чтобы установить метаданные:
 
 1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Установите значения метаданных с помощью свойства [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
 1. Сохраните обновленный документ с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
-Следующий фрагмент кода показывает, как установить метаданные в файле PDF.
+Следующий фрагмент кода показывает, как установить метаданные в PDF-файл.
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetXMPMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
+    {
+        // Set properties
+        document.Metadata["xmp:CreateDate"] = DateTime.Now.ToString("o");
+        document.Metadata["xmp:Nickname"] = "Nickname";
+        document.Metadata["xmp:CustomProperty"] = "Custom Value";
 
-// Установить свойства
-pdfDocument.Metadata["xmp:CreateDate"] = DateTime.Now;
-pdfDocument.Metadata["xmp:Nickname"] = "Nickname";
-pdfDocument.Metadata["xmp:CustomProperty"] = "Custom Value";
-
-dataDir = dataDir + "SetXMPMetadata_out.pdf";
-// Сохранить документ
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "SetXMPMetadata_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetXMPMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
+    {
+        // Set properties
+        document.Metadata["xmp:CreateDate"] = DateTime.Now.ToString("o");
+        document.Metadata["xmp:Nickname"] = "Nickname";
+        document.Metadata["xmp:CustomProperty"] = "Custom Value";
+
+        // Save PDF document
+        document.Save(dataDir + "SetXMPMetadata_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Вставка метаданных с префиксом
 
 Некоторым разработчикам необходимо создать новое пространство имен метаданных с префиксом. Следующий фрагмент кода показывает, как вставить метаданные с префиксом.
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrefixMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
-pdfDocument.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // Префикс Xmlns был удален
-pdfDocument.Metadata["xmp:ModifyDate"] = DateTime.Now;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
+    {
+        // Register a namespace URI for the 'xmp' prefix
+        document.Metadata.RegisterNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
 
-dataDir = dataDir + "SetPrefixMetadata_out.pdf";
-// Сохранить документ
-pdfDocument.Save(dataDir);
+        // Set the metadata property using the registered prefix
+        document.Metadata["xmp:ModifyDate"] = DateTime.Now.ToString("o"); // ISO 8601 format for datetime
+
+        // Save PDF document
+        document.Save(dataDir + "SetPrefixMetadata_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
 
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrefixMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
+    {
+        // Register a namespace URI for the 'xmp' prefix
+        document.Metadata.RegisterNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
+
+        // Set the metadata property using the registered prefix
+        document.Metadata["xmp:ModifyDate"] = DateTime.Now.ToString("o"); // ISO 8601 format for datetime
+
+        // Save PDF document
+        document.Save(dataDir + "SetPrefixMetadata_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -269,4 +435,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-

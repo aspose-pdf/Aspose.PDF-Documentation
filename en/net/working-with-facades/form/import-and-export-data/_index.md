@@ -86,6 +86,9 @@ private static void ImportDataFromXml()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
+        // Bind PDF document
+        pdfForm.BindPdf(dataDir + "input.pdf");
+
         // Open xml file
         using (var xmlInputStream = new FileStream(dataDir + "input.xml", FileMode.Open))
         {

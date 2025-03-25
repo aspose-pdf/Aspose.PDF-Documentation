@@ -2,6 +2,8 @@
 title: PDFファイルから画像を抽出する
 linktitle: 画像を抽出する
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ja/net/extract-images-from-pdf-file/
 description: このセクションでは、C#ライブラリを使用してPDFファイルから画像を抽出する方法を示します。
@@ -11,22 +13,23 @@ lastmod: "2022-02-17"
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFファイルから画像を抽出する",
-    "alternativeHeadline": "PDFから画像を抽出する方法",
+    "headline": "Extract Images from PDF File",
+    "alternativeHeadline": "Effortlessly Extract Images from PDF Files",
+    "abstract": "C#ライブラリを使用してPDFファイルから画像を抽出する新機能により、開発者はPDFドキュメント内に含まれる画像を簡単に取得して保存できます。Aspose.PDFライブラリを活用することで、ユーザーは任意のページから特定の画像にアクセスし、さまざまな形式でエクスポートできるため、PDFコンテンツの管理ワークフローが効率化されます。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, PDFから画像を抽出",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Extract images, PDF file, C# library, images collection, extract images from PDF, XImage object, save extracted image, PDF manipulation, Aspose.PDF for .NET, document resources",
+    "wordcount": "227",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,38 +71,39 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/extract-images-from-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "このセクションでは、C#ライブラリを使用してPDFファイルから画像を抽出する方法を示します。"
 }
 </script>
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-画像は各ページの [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) コレクションの [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) コレクションに保持されています。特定のページを抽出し、Images コレクションから特定のインデックスを使用して画像を取得します。
+画像は各ページの[Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources)コレクションの[Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images)コレクションに保持されています。特定のページを抽出するには、特定の画像のインデックスを使用してImagesコレクションから画像を取得します。
 
-画像のインデックスは [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage) オブジェクトを返します。このオブジェクトは Save メソッドを提供しており、抽出した画像を保存するために使用できます。以下のコードスニペットは、PDFファイルから画像を抽出する方法を示しています。
+画像のインデックスは[XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage)オブジェクトを返します。このオブジェクトは、抽出した画像を保存するために使用できるSaveメソッドを提供します。次のコードスニペットは、PDFファイルから画像を抽出する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir+ "ExtractImages.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
+    {
+        // Extract a particular image
+        var xImage = document.Pages[1].Resources.Images[1];
+        using (var outputImage = new FileStream(dataDir + "ExtractedImage.jpg", FileMode.Create))
+        {
+            // Save PDF document image
+            xImage.Save(outputImage, System.Drawing.Imaging.ImageFormat.Jpeg);
+        }
 
-// 特定の画像を抽出
-XImage xImage = pdfDocument.Pages[1].Resources.Images[1];
-
-FileStream outputImage = new FileStream(dataDir + "output.jpg", FileMode.Create);
-
-// 出力画像を保存
-xImage.Save(outputImage, ImageFormat.Jpeg);
-outputImage.Close();
-
-dataDir = dataDir + "ExtractImages_out.pdf";
-
-// 更新されたPDFファイルを保存
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ExtractImages_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -128,23 +132,23 @@ pdfDocument.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -153,7 +157,7 @@ pdfDocument.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -165,5 +169,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-```
-

@@ -2,9 +2,11 @@
 title: Работа с вложениями в PDF
 linktitle: Работа с вложениями
 type: docs
-weight: 130
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 190
 url: /ru/net/attachments/
-description: Используйте C# PDF API для доступа, добавления и удаления вложений в PDF-файлах с помощью C# в ваших приложениях. Полное руководство с примерами кода на C#.
+description: Используйте C# PDF API для доступа, добавления и удаления вложений в файлах PDF на C#. Полное руководство с примерами кода на C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Работа с вложениями в PDF",
-    "alternativeHeadline": "Вложения в файле PDF",
+    "headline": "Working with Attachments in PDF",
+    "alternativeHeadline": "Effortlessly Manage PDF Attachments with C#",
+    "abstract": "Узнайте, как эффективно управлять вложениями в файлах PDF с помощью мощного C# PDF API. Эта функция позволяет разработчикам получать доступ, добавлять и удалять различные типы файлов, прикреплённых к PDF-файлам. В руководстве вы найдёте подробные примеры кода на C# для беспроблемной интеграции в приложения. Расширьте свои возможности работы с PDF-документами, используя это подробное руководство",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, вложения в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "C#, PDF API, attachments in PDF, add attachments, remove attachments, extract attachments, Aspose.PDF for .NET, manipulate PDF documents, save attachment to file, delete attachment from PDF",
+    "wordcount": "181",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,13 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/attachments/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Используйте C# PDF API для доступа, добавления и удаления вложений в PDF-файлах с помощью C# в ваших приложениях. Полное руководство с примерами кода на C#."
+    "dateModified": "2024-11-25",
+    "description": "Используйте C# PDF API для доступа, добавления и удаления вложений в файлах PDF с помощью C# из ваших приложений. Подробное руководство с примерами кода на C#"
 }
 </script>
-В этом разделе мы объясним, как работать с вложениями в PDF с помощью Aspose.PDF для .NET.
-Вложение — это дополнительный файл, прикрепленный к основному документу, это может быть различные типы файлов, такие как pdf, word, изображение или другие файлы.
-Вы узнаете, как добавлять вложения в pdf, получать информацию о вложении и сохранять её в файл, удалять вложение из PDF программно с помощью C#.
+
+В этом разделе мы объясним, как работать со вложениями в формате PDF с помощью Aspose.PDF for .NET.
+Вложение — это дополнительный файл, присоединённый к основному документу. Оно может быть различных типов, таких как PDF, Word, изображения или другие файлы.
+Вы узнаете, как добавлять вложения в PDF-файлы, получать информацию о вложении и сохранять его в файл, программно удалять вложение из PDF на языке C#.
 
 - [Добавление вложения в документ PDF](/pdf/ru/net/add-attachment-to-pdf-document/)
 - [Извлечение и сохранение вложения](/pdf/ru/net/extract-and-save-an-attachment/)
@@ -147,4 +151,3 @@ sitemap:
     }
 }
 </script>
-

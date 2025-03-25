@@ -2,9 +2,11 @@
 title: Extrair e Salvar um Anexo
 linktitle: Extrair e Salvar um Anexo
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /pt/net/extract-and-save-an-attachment/
-description: Aspose.PDF para .NET permite que você obtenha todos os anexos de um documento PDF. Além disso, você pode obter um anexo individual do seu documento.
+description: Aspose.PDF for .NET permite que você obtenha todos os anexos de um documento PDF. Além disso, você pode obter um anexo individual do seu documento.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Extrair e Salvar um Anexo",
-    "alternativeHeadline": "Como extrair e salvar um anexos",
+    "headline": "Extract and Save an Attachment",
+    "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
+    "abstract": "Aspose.PDF for .NET apresenta um recurso poderoso que permite aos usuários extrair e salvar anexos de documentos PDF de forma contínua. Essa funcionalidade permite a recuperação de todos os arquivos incorporados ou anexos específicos, melhorando a gestão de documentos e a acessibilidade para desenvolvedores que trabalham com arquivos PDF. Otimize seus fluxos de trabalho em PDF lidando facilmente com anexos com esta ferramenta inovadora",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento PDF",
-    "keywords": "pdf, c#, salvar anexos, extrair anexos",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "extract attachments, save attachments, Aspose.PDF for .NET, PDF document, individual attachment, embedded files collection, FileSpecification object, PDF manipulation, document instance, get all attachments",
+    "wordcount": "604",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,108 +74,119 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-and-save-an-attachment/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF para .NET permite que você obtenha todos os anexos de um documento PDF. Além disso, você pode obter um anexo individual do seu documento."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NET permite que você obtenha todos os anexos de um documento PDF. Além disso, você pode obter um anexo individual do seu documento."
 }
 </script>
 
 ## Obter Todos os Anexos
 
-Com o Aspose.PDF, é possível obter todos os anexos de um documento PDF. Isso é útil tanto quando você deseja salvar os documentos separadamente do PDF, quanto se você precisa remover anexos de um PDF.
+Com Aspose.PDF, é possível obter todos os anexos de um documento PDF. Isso é útil tanto quando você deseja salvar os documentos separadamente do PDF, quanto se precisar remover um PDF de anexos.
 
 Para obter todos os anexos de um arquivo PDF:
 
-1. Percorra a coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). A coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contém todos os anexos. Cada elemento desta coleção representa um objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Cada iteração do loop foreach pela coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) retorna um objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
+1. Percorra a coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). A coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contém todos os anexos. Cada elemento dessa coleção representa um objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Cada iteração do loop foreach pela coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) retorna um objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
+1. Uma vez que o objeto esteja disponível, recupere as propriedades do arquivo anexado ou o próprio arquivo.
+
 Os seguintes trechos de código mostram como obter todos os anexos de um documento PDF.
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "GetAlltheAttachments.pdf");
-
-// Obter coleção de arquivos embutidos
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
-
-// Obter quantidade de arquivos embutidos
-Console.WriteLine("Total de arquivos : {0}", embeddedFiles.Count);
-
-int count = 1;
-
-// Percorrer a coleção para obter todos os anexos
-foreach (FileSpecification fileSpecification in embeddedFiles)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllAttachments()
 {
-    Console.WriteLine("Nome: {0}", fileSpecification.Name);
-    Console.WriteLine("Descrição: {0}",
-    fileSpecification.Description);
-    Console.WriteLine("Tipo MIME: {0}", fileSpecification.MIMEType);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-    // Verificar se o objeto de parâmetros contém os parâmetros
-    if (fileSpecification.Params != null)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf"))
     {
-        Console.WriteLine("Checksum: {0}",
-        fileSpecification.Params.CheckSum);
-        Console.WriteLine("Data de Criação: {0}",
-        fileSpecification.Params.CreationDate);
-        Console.WriteLine("Data de Modificação: {0}",
-        fileSpecification.Params.ModDate);
-        Console.WriteLine("Tamanho: {0}", fileSpecification.Params.Size);
-    }
+        // Get embedded files collection
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
 
-    // Obter o anexo e escrever para arquivo ou fluxo
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0,
-    fileContent.Length);
-    FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt",
-    FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    fileStream.Close();
-    count+=1;
+        // Get count of the embedded files
+        Console.WriteLine("Total files : {0}", embeddedFiles.Count);
+
+        int count = 1;
+
+        // Loop through the collection to get all the attachments
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+        {
+            Console.WriteLine("Name: {0}", fileSpecification.Name);
+            Console.WriteLine("Description: {0}",
+            fileSpecification.Description);
+            Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+            // Check if parameter object contains the parameters
+            if (fileSpecification.Params != null)
+            {
+                Console.WriteLine("CheckSum: {0}",
+                fileSpecification.Params.CheckSum);
+                Console.WriteLine("Creation Date: {0}",
+                fileSpecification.Params.CreationDate);
+                Console.WriteLine("Modification Date: {0}",
+                fileSpecification.Params.ModDate);
+                Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+            }
+
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+            count += 1;
+        }
+    }
 }
 ```
+
 ## Obter Anexo Individual
 
 Para obter um anexo individual, podemos especificar o índice do anexo no objeto `EmbeddedFiles` da instância do Documento. Por favor, tente usar o seguinte trecho de código.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "GetIndividualAttachment.pdf");
-
-// Obter arquivo embutido específico
-FileSpecification fileSpecification = pdfDocument.EmbeddedFiles[1];
-
-// Obter as propriedades do arquivo
-Console.WriteLine("Nome: {0}", fileSpecification.Name);
-Console.WriteLine("Descrição: {0}", fileSpecification.Description);
-Console.WriteLine("Tipo MIME: {0}", fileSpecification.MIMEType);
-
-// Verificar se o objeto de parâmetro contém os parâmetros
-if (fileSpecification.Params != null)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetIndividualAttachment()
 {
-    Console.WriteLine("Checksum: {0}",
-    fileSpecification.Params.CheckSum);
-    Console.WriteLine("Data de Criação: {0}",
-    fileSpecification.Params.CreationDate);
-    Console.WriteLine("Data de Modificação: {0}",
-    fileSpecification.Params.ModDate);
-    Console.WriteLine("Tamanho: {0}", fileSpecification.Params.Size);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetIndividualAttachment.pdf"))
+    {
+        // Get particular embedded file
+        Aspose.Pdf.FileSpecification fileSpecification = document.EmbeddedFiles[1];
+
+        // Get the file properties
+        Console.WriteLine("Name: {0}", fileSpecification.Name);
+        Console.WriteLine("Description: {0}", fileSpecification.Description);
+        Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+        // Check if parameter object contains the parameters
+        if (fileSpecification.Params != null)
+        {
+            Console.WriteLine("CheckSum: {0}",
+            fileSpecification.Params.CheckSum);
+            Console.WriteLine("Creation Date: {0}",
+            fileSpecification.Params.CreationDate);
+            Console.WriteLine("Modification Date: {0}",
+            fileSpecification.Params.ModDate);
+            Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+        }
+
+        // Get the attachment and write to file or stream
+        byte[] fileContent = new byte[fileSpecification.Contents.Length];
+        fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+
+        using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+        {
+            fileStream.Write(fileContent, 0, fileContent.Length);
+        }
+    }
 }
-
-// Obter o anexo e escrever para arquivo ou stream
-byte[] fileContent = new byte[fileSpecification.Contents.Length];
-fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-
-FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
-fileStream.Write(fileContent, 0, fileContent.Length);
-fileStream.Close();
 ```
 
 <script type="application/ld+json">
@@ -201,21 +215,21 @@ fileStream.Close();
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -226,7 +240,7 @@ fileStream.Close();
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -238,5 +252,3 @@ fileStream.Close();
     }
 }
 </script>
-```
-

@@ -1,10 +1,12 @@
 ---
-title: Travailler avec les annotations
+title: Travailler avec des annotations
 linktitle: Annotations dans PDF
 type: docs
-weight: 100
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 160
 url: /fr/net/annotations/
-description: Cette section montre comment utiliser toutes sortes d'annotations sur votre fichier PDF avec la bibliothèque Aspose.PDF.
+description: Apprenez à travailler avec des annotations dans des fichiers PDF en utilisant Aspose.PDF dans .NET, y compris l'ajout de commentaires, de surlignages et d'autres annotations.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Annotations PDF",
-    "alternativeHeadline": "Travailler avec des annotations dans des PDF",
+    "headline": "Working with Annotations",
+    "alternativeHeadline": "Enhance PDFs with Comprehensive Annotation Capabilities",
+    "abstract": "Améliorez vos documents PDF avec les puissantes capacités d'annotation de la bibliothèque Aspose.PDF. Cette fonctionnalité permet aux utilisateurs d'ajouter, de modifier et de supprimer facilement divers types d'annotations, y compris des surlignages, des notes et des formes, tout en maintenant une compatibilité totale avec les visionneuses PDF. Découvrez comment gérer sans effort les annotations et importer/exporter des données au format XFDF et FDF pour une manipulation efficace des documents PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, annotations",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "keywords": "PDF Annotations, Aspose.PDF, annotations, XFDF format, FDF format, edit annotations, add annotations, delete annotations, PDF manipulation, interactive features",
+    "wordcount": "294",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,25 +74,25 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cette section montre comment utiliser toutes sortes d'annotations sur votre fichier PDF avec la bibliothèque Aspose.PDF."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
 
-Le contenu à l'intérieur d'une page PDF est difficile à éditer, mais la spécification PDF définit un ensemble complet d'objets qui peuvent être ajoutés aux pages PDF sans modifier le contenu de la page.
+Le contenu à l'intérieur d'une page PDF est difficile à modifier, mais la spécification PDF définit un ensemble complet d'objets qui peuvent être ajoutés aux pages PDF sans changer le contenu de la page.
 
-Ces objets sont appelés des annotations, et leur but varie du marquage du contenu de la page à la mise en œuvre de fonctionnalités interactives telles que des formulaires.
+Ces objets sont appelés annotations, et leur but va de la mise en forme du contenu de la page à la mise en œuvre de fonctionnalités interactives telles que des formulaires.
 
-Les visionneuses PDF permettent généralement la création et l'édition de divers types d'annotations, par exemple des surlignages de texte, des notes, des lignes ou des formes. Indépendamment des types d'annotations qui peuvent être créés, les visionneuses PDF conformes à la spécification PDF doivent également prendre en charge le rendu pour tous les types d'annotations.
+Les visionneuses PDF permettent généralement la création et la modification de divers types d'annotations, par exemple des surlignages de texte, des notes, des lignes ou des formes. Quel que soit le type d'annotation pouvant être créé, les visionneuses PDF conformes à la spécification PDF devraient également prendre en charge le rendu de tous les types d'annotations.
 
-L'annotation est une partie importante du fichier PDF. En utilisant Aspose.PDF pour .NET, vous pouvez ajouter une nouvelle annotation, modifier une annotation existante, supprimer des annotations, etc. Cette section couvre le sujet suivant :
+L'annotation est une partie importante du fichier PDF. En utilisant Aspose.PDF for .NET, vous pouvez ajouter une nouvelle annotation, modifier une annotation existante et supprimer des annotations, etc. Cette section couvre le sujet suivant :
 
-Vous êtes capable de faire ce qui suit :
+Vous êtes en mesure de faire ce qui suit :
 
-- [Aperçu des Annotations](/pdf/fr/net/overview-of-annotations/) - apprenez quels types d'annotations sont définis par la spécification PDF, et ce que Aspose.PDF prend en charge.
-- [Ajouter, Supprimer et Obtenir une Annotation](/pdf/fr/net/add-delete-and-get-annotation/) - cette section explique comment travailler avec tous les types d'annotations autorisés.
-- [Ajouter, Supprimer et Obtenir une Annotation](/pdf/fr/net/add-delete-and-get-annotation/) - cette section explique comment travailler avec tous les types d'annotations autorisées.
-- [Importer et exporter une annotation au format XFDF](/pdf/fr/net/import-export-xfdf/) - La bibliothèque Aspose.PDF fournit des méthodes pour importer et exporter des données d'annotations vers des fichiers XFDF.
+- [Aperçu des annotations](/pdf/fr/net/overview-of-annotations/) - apprenez quels types d'annotations sont définis par la spécification PDF et ce que prend en charge Aspose.PDF.
+- [Ajouter, supprimer et obtenir une annotation](/pdf/fr/net/add-delete-and-get-annotation/) - cette section explique comment travailler avec tous les types d'annotations autorisées.
+- [Importer et exporter des annotations avec le format XFDF](/pdf/fr/net/import-export-xfdf/) - la bibliothèque Aspose.PDF fournit des méthodes pour importer et exporter des données d'annotations vers des fichiers XFDF.
+- [Importer des annotations au format FDF dans PDF](/pdf/fr/net/import-fdf/) - la bibliothèque Aspose.PDF fournit une méthode pour importer des annotations au format FDF dans des fichiers PDF.
 
 <script type="application/ld+json">
 {
@@ -154,5 +157,3 @@ Vous êtes capable de faire ce qui suit :
     }
 }
 </script>
-
-

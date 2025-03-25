@@ -1,166 +1,245 @@
 ---
 title: إضافة ختم صفحة PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/add-pdf-page-stamp/
-description: يشرح هذا القسم كيفية العمل مع واجهات Aspose.PDF باستخدام فئة PdfFileStamp.
+description: اكتشف كيفية إضافة الأختام إلى صفحات PDF في .NET، بما في ذلك النصوص والصور، لأغراض العلامة المائية أو العلامة التجارية باستخدام Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add PDF Page Stamp",
+    "alternativeHeadline": "Enhance PDFs with Custom Stamps and Page Numbers",
+    "abstract": "تقديم ميزة ختم صفحة PDF التي تتيح للمستخدمين إضافة أختام مخصصة بسهولة على جميع أو صفحات معينة من مستند PDF باستخدام فئة PdfFileStamp. تعزز هذه الوظيفة تخصيص المستند من خلال تمكين سمات مختلفة مثل الدوران والخلفية وأنماط الترقيم المخصصة لختم الصفحات، مما يجعل ملفات PDF الخاصة بك فريدة من نوعها واحترافية.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1309",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-pdf-page-stamp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-pdf-page-stamp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+}
+</script>
 
 ## إضافة ختم صفحة PDF على جميع الصفحات في ملف PDF
 
-فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) تسمح لك بإضافة ختم صفحة PDF على جميع صفحات ملف PDF. في سبيل إضافة ختم صفحة PDF، تحتاج أولاً إلى إنشاء كائنات من فئات [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) و[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). تحتاج أيضًا إلى إنشاء ختم صفحة PDF باستخدام طريقة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) من فئة [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). يمكنك تعيين سمات أخرى مثل الأصل، الدوران، الخلفية وغيرها باستخدام كائن [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) أيضًا. ثم يمكنك إضافة الختم في ملف PDF باستخدام طريقة [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). وأخيرًا، حفظ ملف PDF الناتج باستخدام طريقة [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). يوضح لك المقتطف التالي من الشيفرة كيفية إضافة ختم صفحة PDF على جميع الصفحات في ملف PDF.
+تتيح لك فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) إضافة ختم صفحة PDF على جميع صفحات ملف PDF. لإضافة ختم صفحة PDF، تحتاج أولاً إلى إنشاء كائنات من فئتي [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) و [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). تحتاج أيضًا إلى إنشاء ختم صفحة PDF باستخدام طريقة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) من فئة [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). يمكنك أيضًا تعيين سمات أخرى مثل الأصل والدوران والخلفية وما إلى ذلك باستخدام كائن [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). ثم يمكنك إضافة الختم في ملف PDF باستخدام طريقة [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). أخيرًا، احفظ ملف PDF الناتج باستخدام طريقة [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). يوضح لك مقتطف الكود التالي كيفية إضافة ختم صفحة PDF على جميع الصفحات في ملف PDF.
 
 ```csharp
-public static void AddPageStampOnAllPages()
-        {
-            // إنشاء كائن PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStampOnAllPages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // فتح المستند
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
-            // إنشاء الختم
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
-            stamp.SetOrigin(20, 20);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        // Bind PDF document
+        stamp.BindPdf(dataDir + "AddPageStampOnAllPages.pdf", 1);
+        stamp.SetOrigin(20, 20);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-            // إضافة الختم إلى ملف PDF
-            fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // حفظ ملف PDF المحدث
-            fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
-
-            // إغلاق الملف
-            fileStamp.Close();
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "PageStampOnAllPages_out.pdf");
+    }
+}
 ```
+
 ## إضافة ختم صفحة PDF على صفحات معينة في ملف PDF
 
-تسمح لك فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) بإضافة ختم صفحة PDF على صفحات معينة من ملف PDF. في البداية لإضافة ختم صفحة PDF، تحتاج أولاً إلى إنشاء كائنات من [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) و[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). You also need to create the PDF page stamp using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method of [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class.  
-أنت أيضًا بحاجة إلى إنشاء ختم صفحة PDF باستخدام [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) طريقة من فئة [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). ```
-يمكنك تعيين سمات أخرى مثل الأصل، التدوير، الخلفية إلخ.
-``` استخدام [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) الكائن أيضًا. As you want to add PDF page stamp on particular pages of the PDF file, you also need to set the [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) property of the [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class. This property requires an integer array containing numbers of the pages on which you want to add the stamp. Then you can add the stamp in the PDF file using [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. Finally, save the output PDF file using [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. The following code snippet shows you how to add PDF page stamp on particular pages in a PDF file.
+تتيح لك فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) إضافة ختم صفحة PDF على صفحات معينة من ملف PDF. لإضافة ختم صفحة PDF، تحتاج أولاً إلى إنشاء كائنات من فئتي [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) و [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). تحتاج أيضًا إلى إنشاء ختم صفحة PDF باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) من فئة [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). يمكنك أيضًا تعيين سمات أخرى مثل الأصل والدوران والخلفية وما إلى ذلك باستخدام كائن [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). كما تريد إضافة ختم صفحة PDF على صفحات معينة من ملف PDF، تحتاج أيضًا إلى تعيين خاصية [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) من فئة [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). تتطلب هذه الخاصية مصفوفة صحيحة تحتوي على أرقام الصفحات التي تريد إضافة الختم عليها. ثم يمكنك إضافة الختم في ملف PDF باستخدام طريقة [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). أخيرًا، احفظ ملف PDF الناتج باستخدام طريقة [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). يوضح لك مقتطف الكود التالي كيفية إضافة ختم صفحة PDF على صفحات معينة في ملف PDF.
 
 ```csharp
-public static void AddPageStampOnCertainPages()
-        {
-            // Create PdfFileStamp object
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStampOnCertainPages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Open Document
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
-            // Create stamp
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
-            stamp.SetOrigin(20, 20);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
-            stamp.Pages = new[] { 1, 3 };
-            // Add stamp to PDF file
-            fileStamp.AddStamp(stamp);
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        // Bind PDF document
+        stamp.BindPdf(dataDir + "PageStampOnCertainPages.pdf", 1);
+        stamp.SetOrigin(20, 20);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
+        stamp.Pages = new[] { 1, 3 };  // Apply stamp to specific pages (1 and 3)
 
-            // Save updated PDF file
-            fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // Close fileStamp
-            fileStamp.Close();
-        }
-
-        // Add PDF Page Numbers
-        public enum PageNumPosition
-        {
-            PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "PageStampOnCertainPages_out.pdf");
+    }
+}
 ```
 
-كما تريد إضافة ختم صفحة PDF على صفحات معينة من ملف PDF، تحتاج أيضًا إلى تعيين خاصية [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) من فئة [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). تتطلب هذه الخاصية مصفوفة عددية تحتوي على أرقام الصفحات التي تريد إضافة الختم عليها. يمكنك بعد ذلك إضافة الختم في ملف PDF باستخدام طريقة [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). أخيرًا، احفظ ملف PDF الناتج باستخدام طريقة [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). يظهر لك المقتطف البرمجي التالي كيفية إضافة ختم صفحة PDF على صفحات معينة في ملف PDF.
 ## إضافة رقم الصفحة في ملف PDF
 
-تسمح لك فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) بإضافة أرقام الصفحات في ملف PDF. In order to add page numbers, you first need to create object of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class.  
-   
-من أجل إضافة أرقام الصفحات، تحتاج أولاً إلى إنشاء كائن من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). If you want to show page number like “Page X of N” while X being the current page number and N the total number of pages in the PDF file then you first need to get the page count using [NumberOfpages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/numberofpages) property of [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class.
-
-إذا كنت تريد عرض رقم الصفحة مثل "الصفحة X من N" حيث X هو رقم الصفحة الحالية و N هو العدد الإجمالي للصفحات في ملف PDF، فأنت بحاجة أولاً إلى الحصول على عدد الصفحات باستخدام خاصية [NumberOfpages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/numberofpages) في فئة [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo). من أجل الحصول على رقم الصفحة الحالي يمكنك استخدام علامة **#** في نصك في أي مكان ترغب فيه. يمكنك تنسيق نص رقم الصفحة باستخدام فئة [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). إذا كنت تريد بدء ترقيم الصفحات من رقم معين يمكنك تعيين خاصية [StartingNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/properties/startingnumber). بمجرد أن تكون جاهزًا لإضافة رقم الصفحة في الملف، تحتاج إلى استدعاء طريقة [AddPageNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addpagenumber/methods/7) لفئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). وأخيرًا، احفظ ملف PDF الناتج باستخدام طريقة [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) لفئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). يوضح لك مقتطف الشيفرة البرمجية التالي كيفية إضافة رقم الصفحة في ملف PDF.
+تتيح لك فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) إضافة أرقام الصفحات في ملف PDF. لإضافة أرقام الصفحات، تحتاج أولاً إلى إنشاء كائن من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). إذا كنت ترغب في عرض رقم الصفحة مثل "الصفحة X من N" حيث X هو رقم الصفحة الحالي وN هو العدد الإجمالي للصفحات في ملف PDF، تحتاج أولاً إلى الحصول على عدد الصفحات باستخدام خاصية [NumberOfpages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/numberofpages) من فئة [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo). للحصول على رقم الصفحة الحالي، يمكنك استخدام علامة **#** في نصك في أي مكان تريده. يمكنك تنسيق نص رقم الصفحة باستخدام فئة [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). إذا كنت ترغب في بدء ترقيم الصفحات من رقم معين، يمكنك تعيين خاصية [StartingNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/properties/startingnumber). بمجرد أن تكون جاهزًا لإضافة رقم الصفحة في الملف، تحتاج إلى استدعاء طريقة [AddPageNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addpagenumber/methods/7) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). أخيرًا، احفظ ملف PDF الناتج باستخدام طريقة [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) من فئة [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). يوضح لك مقتطف الكود التالي كيفية إضافة رقم الصفحة في ملف PDF.
 
 ```csharp
- public static void AddPageNumberInPdfFile()
-        {
-            // إنشاء كائن PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageNumberInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // فتح المستند
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
-            // الحصول على العدد الإجمالي للصفحات
-            int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+        // Get total number of pages
+        int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
 
-            // إنشاء نص منسق لرقم الصفحة
-            FormattedText formattedText = new FormattedText($"Page # of {totalPages}",
-                System.Drawing.Color.AntiqueWhite,
-                System.Drawing.Color.Gray,
-                FontStyle.TimesBoldItalic,
-                EncodingType.Winansi, false, 12);
+        // Create formatted text for page number
+        var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
+            System.Drawing.Color.AntiqueWhite,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            false, 12);
 
-            // تعيين الرقم الابتدائي للصفحة الأولى؛ قد ترغب في البدء من 2 أو أكثر
-            fileStamp.StartingNumber = 1;
+        // Set starting number for first page; you might want to start from 2 or more
+        fileStamp.StartingNumber = 1;
+        // Add page number in upper right corner
+        fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-            // إضافة رقم الصفحة
-            fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
+    }
+}
 
-            // حفظ ملف PDF المحدث
-            fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
-
-            // إغلاق fileStamp
-            fileStamp.Close();
-        }
+// Add PDF Page Numbers
+public enum PageNumPosition
+{
+    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
+}
 ```
-### أسلوب ترقيم مخصص
 
-تقدم فئة PdfFileStamp ميزة إضافة معلومات رقم الصفحة ككائن ختم داخل مستند PDF. قبل هذا الإصدار، كانت الفئة تدعم فقط 1،2،3،4 كأسلوب ترقيم الصفحات. ومع ذلك، كان هناك طلب من بعض العملاء لاستخدام أسلوب ترقيم مخصص عند وضع ختم رقم الصفحة داخل مستند PDF. لتحقيق هذا الطلب، تم تقديم خاصية [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle)، والتي تقبل القيم من تعداد [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle). موضحة أدناه هي القيم التي تقدم في هذا التعداد.
+### نمط الترقيم المخصص
 
-- أحرف صغيرة
-- أحرف كبيرة
-- أرقام عربية
-- أرقام رومانية صغيرة
-- أرقام رومانية كبيرة
+تقدم فئة PdfFileStamp ميزة إضافة معلومات رقم الصفحة ككائن ختم داخل مستند PDF. قبل هذا الإصدار، كانت الفئة تدعم فقط نمط ترقيم الصفحات 1،2،3،4. ومع ذلك، كان هناك طلب من بعض العملاء لاستخدام نمط ترقيم مخصص عند وضع ختم رقم الصفحة داخل مستند PDF. لتحقيق هذا الطلب، تم تقديم خاصية [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle) التي تقبل القيم من تعداد [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle). القيم المحددة أدناه هي القيم المقدمة في هذا التعداد.
+
+- حروف صغيرة.
+- حروف كبيرة.
+- أرقام عربية.
+- أرقام رومانية صغيرة.
+- أرقام رومانية كبيرة.
 
 ```csharp
- public static void AddCustomPageNumberInPdfFile()
-        {
-            // إنشاء كائن PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddCustomPageNumberInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // فتح المستند
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
-            // الحصول على العدد الإجمالي للصفحات
-            int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+        // Get total number of pages
+        int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
 
-            // إنشاء نص منسق لرقم الصفحة
-            FormattedText formattedText = new FormattedText($"Page # of {totalPages}",
-                System.Drawing.Color.AntiqueWhite,
-                System.Drawing.Color.Gray,
-                FontStyle.TimesBoldItalic,
-                EncodingType.Winansi, false, 12);
+        // Create formatted text for page number
+        var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
+            System.Drawing.Color.AntiqueWhite,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            false, 12);
 
-            // تحديد أسلوب الترقيم كأرقام رومانية كبيرة
-            fileStamp.NumberingStyle = Aspose.Pdf.NumberingStyle.NumeralsRomanUppercase;
+        // Specify numbering style as Numerals Roman UpperCase
+        fileStamp.NumberingStyle = Aspose.Pdf.NumberingStyle.NumeralsRomanUppercase;
 
-            // تعيين الرقم الابتدائي للصفحة الأولى؛ قد ترغب في البدء من 2 أو أكثر
-            fileStamp.StartingNumber = 1;
+        // Set starting number for first page; you might want to start from 2 or more
+        fileStamp.StartingNumber = 1;
 
-            // إضافة رقم الصفحة
-            fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
+        // Add page number in upper right corner
+        fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-            // حفظ ملف PDF المحدث
-            fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddCustomPageNumber_out.pdf");
+    }
+}
 
-            // إغلاق fileStamp
-            fileStamp.Close();
-        }
+// Add PDF Page Numbers
+public enum PageNumPosition
+{
+    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
+}
 ```

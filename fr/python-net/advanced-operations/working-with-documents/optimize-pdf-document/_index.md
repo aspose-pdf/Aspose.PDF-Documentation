@@ -217,7 +217,7 @@ Certains documents peuvent contenir plusieurs flux de ressources identiques (com
 
     # Ouvrir le document
     document = ap.Document(input_pdf)
-    # Définir l'option LinkDuplcateStreams
+    # Définir l'option LinkDuplicateStreams
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.link_duplcate_streams = True
     # Optimiser le document PDF en utilisant OptimizationOptions

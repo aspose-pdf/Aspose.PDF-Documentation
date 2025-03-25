@@ -217,7 +217,7 @@ Beberapa dokumen dapat berisi beberapa aliran sumber daya yang identik (seperti 
 
     # Buka dokumen
     document = ap.Document(input_pdf)
-    # Atur opsi LinkDuplcateStreams
+    # Atur opsi LinkDuplicateStreams
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.link_duplcate_streams = True
     # Optimalkan dokumen PDF menggunakan OptimizationOptions

@@ -1,10 +1,12 @@
 ---
-title: Definindo Propriedades de Elementos Estruturais
-linktitle: Definindo Propriedades de Elementos Estruturais
+title: Definindo Propriedades dos Elementos de Estrutura
+linktitle: Definindo Propriedades dos Elementos de Estrutura
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /pt/net/setting-structure-elements-properties/
-description: Você pode definir diferentes propriedades dos elementos estruturais em um documento PDF com Aspose.PDF para .NET.
+description: Você pode definir diferentes propriedades dos elementos de estrutura em documentos PDF com Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Definindo Propriedades de Elementos Estruturais",
-    "alternativeHeadline": "Como definir as propriedades dos elementos estruturais",
+    "headline": "Setting Structure Elements Properties",
+    "alternativeHeadline": "Setting Properties for Structure Elements in PDFs",
+    "abstract": "Melhore a acessibilidade do seu documento PDF com o novo recurso em Aspose.PDF for .NET que permite aos usuários definir propriedades para elementos de estrutura. Essa funcionalidade permite controle preciso sobre títulos, idiomas e tags personalizadas para vários elementos dentro de um PDF Marcado, garantindo conformidade e melhor navegação para leitores de tela.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento PDF",
-    "keywords": "pdf, c#, configurar estrutura de texto, configurar idioma, configurar título, configurar elemento de estrutura de Nota",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Setting Structure Elements Properties, Aspose.PDF for .NET, Tagged PDF Document, CreateSectElement, CreateHeaderElement, SetTitle, SetLanguage, NoteElement, StructureElement, LinkElement",
+    "wordcount": "2730",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,601 +74,1243 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/setting-structure-elements-properties/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Você pode definir diferentes propriedades dos elementos estruturais em um documento PDF com Aspose.PDF para .NET."
+    "dateModified": "2024-11-25",
+    "description": "Você pode definir diferentes propriedades dos elementos de estrutura em documentos PDF com Aspose.PDF for .NET."
 }
 </script>
-Para definir as propriedades dos elementos de estrutura em um Documento PDF Marcado, o Aspose.PDF oferece os métodos [CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) e [CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent).
 
-O seguinte trecho de código mostra como definir as propriedades dos elementos de estrutura de um Documento PDF Marcado:
+Para definir propriedades dos elementos de estrutura em um Documento PDF Marcado, Aspose.PDF oferece os métodos [CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) e [CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent).
 
+O seguinte trecho de código mostra como definir propriedades dos elementos de estrutura de um Documento PDF Marcado:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Criar Documento Pdf
-Document document = new Document();
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with Tagged PDF
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
-// Obter Conteúdo para trabalhar com TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
 
-// Definir Título e Idioma para o Documento
-taggedContent.SetTitle("Documento PDF Marcado");
-taggedContent.SetLanguage("en-US");
+        // Create Structure Elements
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-// Criar Elementos de Estrutura
-StructureElement rootElement = taggedContent.RootElement;
+        Aspose.Pdf.LogicalStructure.SectElement sect = taggedContent.CreateSectElement();
+        rootElement.AppendChild(sect);
 
-SectElement sect = taggedContent.CreateSectElement();
-rootElement.AppendChild(sect);
+        Aspose.Pdf.LogicalStructure.HeaderElement h1 = taggedContent.CreateHeaderElement(1);
+        sect.AppendChild(h1);
+        h1.SetText("The Header");
 
-HeaderElement h1 = taggedContent.CreateHeaderElement(1);
-sect.AppendChild(h1);
-h1.SetText("O Cabeçalho");
+        h1.Title = "Title";
+        h1.Language = "en-US";
+        h1.AlternativeText = "Alternative Text";
+        h1.ExpansionText = "Expansion Text";
+        h1.ActualText = "Actual Text";
 
-h1.Title = "Título";
-h1.Language = "en-US";
-h1.AlternativeText = "Texto Alternativo";
-h1.ExpansionText = "Texto de Expansão";
-h1.ActualText = "Texto Real";
-
-// Salvar Documento PDF Marcado
-document.Save(dataDir + "StructureElementsProperties.pdf");
+        // Save Tagged PDF Document
+        document.Save(dataDir + "StructureElementsProperties_out.pdf");
+    }
+}
 ```
-changefreq: "monthly"
-type: docs
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with Tagged PDF
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Create Structure Elements
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+    Aspose.Pdf.LogicalStructure.SectElement sect = taggedContent.CreateSectElement();
+    rootElement.AppendChild(sect);
+
+    Aspose.Pdf.LogicalStructure.HeaderElement h1 = taggedContent.CreateHeaderElement(1);
+    sect.AppendChild(h1);
+    h1.SetText("The Header");
+
+    h1.Title = "Title";
+    h1.Language = "en-US";
+    h1.AlternativeText = "Alternative Text";
+    h1.ExpansionText = "Expansion Text";
+    h1.ActualText = "Actual Text";
+
+    // Save Tagged PDF Document
+    document.Save(dataDir + "StructureElementsProperties_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Definindo Elementos de Estrutura de Texto
 
 Para definir elementos de estrutura de texto de um Documento PDF Marcado, Aspose.PDF oferece a classe [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). O seguinte trecho de código mostra como definir elementos de estrutura de texto de um Documento PDF Marcado:
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetTextElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Criar Documento Pdf
-Document document = new Document();
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with Tagged PDF
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
-// Obter Conteúdo para trabalhar com TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
 
-// Definir Título e Língua para o Documento
-taggedContent.SetTitle("Documento PDF Marcado");
-taggedContent.SetLanguage("en-US");
+        // Get Root Structure Elements
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-// Obter Elementos de Estrutura Raiz
-StructureElement rootElement = taggedContent.RootElement;
+        Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
 
-ParagraphElement p = taggedContent.CreateParagraphElement();
-// Definir Texto para Elemento de Estrutura de Texto
-p.SetText("Parágrafo.");
-rootElement.AppendChild(p);
+        // Set Text to Text Structure Element
+        p.SetText("Paragraph.");
+        rootElement.AppendChild(p);
 
-
-// Salvar Documento PDF Marcado
-document.Save(dataDir + "TextStructureElement.pdf");
+        // Save Tagged PDF Document
+        document.Save(dataDir + "TextStructureElement_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetTextElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with TaggedPdf
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Get Root Structure Elements
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+    Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
+
+    // Set Text to Text Structure Element
+    p.SetText("Paragraph.");
+    rootElement.AppendChild(p);
+
+    // Save Tagged PDF Document
+    document.Save(dataDir + "TextStructureElement_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Definindo Elementos de Estrutura de Bloco de Texto
 
-Para definir elementos de estrutura de bloco de texto de um Documento PDF Marcado, o Aspose.PDF oferece as classes [HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) e [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Você pode anexar objetos dessas classes como um filho do objeto [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement).
+Para definir elementos de estrutura de bloco de texto de um Documento PDF Marcado, Aspose.PDF oferece as classes [HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) e [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Você pode anexar objetos dessas classes como filhos do objeto [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement).
 O seguinte trecho de código mostra como definir elementos de estrutura de bloco de texto de um Documento PDF Marcado:
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetTextBlockElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Criar Documento PDF
-Document document = new Document();
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with Tagged PDF
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
-// Obter Conteúdo para trabalhar com TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
 
-// Definir Título e Idioma para o Documento
-taggedContent.SetTitle("Documento PDF Marcado");
-taggedContent.SetLanguage("en-US");
+        // Get Root Structure Element
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-// Obter Elemento de Estrutura Raiz
-StructureElement rootElement = taggedContent.RootElement;
+        Aspose.Pdf.LogicalStructure.HeaderElement h1 = taggedContent.CreateHeaderElement(1);
+        Aspose.Pdf.LogicalStructure.HeaderElement h2 = taggedContent.CreateHeaderElement(2);
+        Aspose.Pdf.LogicalStructure.HeaderElement h3 = taggedContent.CreateHeaderElement(3);
+        Aspose.Pdf.LogicalStructure.HeaderElement h4 = taggedContent.CreateHeaderElement(4);
+        Aspose.Pdf.LogicalStructure.HeaderElement h5 = taggedContent.CreateHeaderElement(5);
+        Aspose.Pdf.LogicalStructure.HeaderElement h6 = taggedContent.CreateHeaderElement(6);
+        h1.SetText("H1. Header of Level 1");
+        h2.SetText("H2. Header of Level 2");
+        h3.SetText("H3. Header of Level 3");
+        h4.SetText("H4. Header of Level 4");
+        h5.SetText("H5. Header of Level 5");
+        h6.SetText("H6. Header of Level 6");
+        rootElement.AppendChild(h1);
+        rootElement.AppendChild(h2);
+        rootElement.AppendChild(h3);
+        rootElement.AppendChild(h4);
+        rootElement.AppendChild(h5);
+        rootElement.AppendChild(h6);
 
-HeaderElement h1 = taggedContent.CreateHeaderElement(1);
-HeaderElement h2 = taggedContent.CreateHeaderElement(2);
-HeaderElement h3 = taggedContent.CreateHeaderElement(3);
-HeaderElement h4 = taggedContent.CreateHeaderElement(4);
-HeaderElement h5 = taggedContent.CreateHeaderElement(5);
-HeaderElement h6 = taggedContent.CreateHeaderElement(6);
-h1.SetText("H1. Cabeçalho de Nível 1");
-h2.SetText("H2. Cabeçalho de Nível 2");
-h3.SetText("H3. Cabeçalho de Nível 3");
-h4.SetText("H4. Cabeçalho de Nível 4");
-h5.SetText("H5. Cabeçalho de Nível 5");
-h6.SetText("H6. Cabeçalho de Nível 6");
-rootElement.AppendChild(h1);
-rootElement.AppendChild(h2);
-rootElement.AppendChild(h3);
-rootElement.AppendChild(h4);
-rootElement.AppendChild(h5);
-rootElement.AppendChild(h6);
+        Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
+        p.SetText("P. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
+        rootElement.AppendChild(p);
 
-ParagraphElement p = taggedContent.CreateParagraphElement();
-p.SetText("P. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
-rootElement.AppendChild(p);
-
-// Salvar Documento PDF Marcado
-document.Save(dataDir + "TextBlockStructureElements.pdf");
+        // Save Tagged PDF Document
+        document.Save(dataDir + "TextBlockStructureElements_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetTextBlockElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with Tagged PDF
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Get Root Structure Element
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+    Aspose.Pdf.LogicalStructure.HeaderElement h1 = taggedContent.CreateHeaderElement(1);
+    Aspose.Pdf.LogicalStructure.HeaderElement h2 = taggedContent.CreateHeaderElement(2);
+    Aspose.Pdf.LogicalStructure.HeaderElement h3 = taggedContent.CreateHeaderElement(3);
+    Aspose.Pdf.LogicalStructure.HeaderElement h4 = taggedContent.CreateHeaderElement(4);
+    Aspose.Pdf.LogicalStructure.HeaderElement h5 = taggedContent.CreateHeaderElement(5);
+    Aspose.Pdf.LogicalStructure.HeaderElement h6 = taggedContent.CreateHeaderElement(6);
+    h1.SetText("H1. Header of Level 1");
+    h2.SetText("H2. Header of Level 2");
+    h3.SetText("H3. Header of Level 3");
+    h4.SetText("H4. Header of Level 4");
+    h5.SetText("H5. Header of Level 5");
+    h6.SetText("H6. Header of Level 6");
+    rootElement.AppendChild(h1);
+    rootElement.AppendChild(h2);
+    rootElement.AppendChild(h3);
+    rootElement.AppendChild(h4);
+    rootElement.AppendChild(h5);
+    rootElement.AppendChild(h6);
+
+    Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
+    p.SetText("P. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
+    rootElement.AppendChild(p);
+
+    // Save Tagged PDF Document
+    document.Save(dataDir + "TextBlockStructureElements_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Definindo Elementos de Estrutura Inline
 
-Para definir elementos de estrutura inline de um Documento PDF Marcado, Aspose.PDF oferece as classes [SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) e [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Você pode anexar objetos dessas classes como um filho de um objeto [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). O trecho de código a seguir mostra como definir elementos de estrutura inline de um Documento PDF Marcado:
+Para definir elementos de estrutura inline de um Documento PDF Marcado, Aspose.PDF oferece as classes [SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) e [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Você pode anexar objetos dessas classes como filhos do objeto [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). O seguinte trecho de código mostra como definir elementos de estrutura inline de um Documento PDF Marcado:
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetInlineElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Criar Documento Pdf
-Document document = new Document();
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with Tagged PDF
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
-// Obter Conteúdo para trabalhar com TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
 
-// Definir Título e Idioma para o Documento
-taggedContent.SetTitle("Documento PDF Marcado");
-taggedContent.SetLanguage("en-US");
+        // Get Root Structure Element
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-// Obter Elemento de Estrutura Raiz
-StructureElement rootElement = taggedContent.RootElement;
+        Aspose.Pdf.LogicalStructure.HeaderElement h1 = taggedContent.CreateHeaderElement(1);
+        Aspose.Pdf.LogicalStructure.HeaderElement h2 = taggedContent.CreateHeaderElement(2);
+        Aspose.Pdf.LogicalStructure.HeaderElement h3 = taggedContent.CreateHeaderElement(3);
+        Aspose.Pdf.LogicalStructure.HeaderElement h4 = taggedContent.CreateHeaderElement(4);
+        Aspose.Pdf.LogicalStructure.HeaderElement h5 = taggedContent.CreateHeaderElement(5);
+        Aspose.Pdf.LogicalStructure.HeaderElement h6 = taggedContent.CreateHeaderElement(6);
+        rootElement.AppendChild(h1);
+        rootElement.AppendChild(h2);
+        rootElement.AppendChild(h3);
+        rootElement.AppendChild(h4);
+        rootElement.AppendChild(h5);
+        rootElement.AppendChild(h6);
 
-HeaderElement h1 = taggedContent.CreateHeaderElement(1);
-HeaderElement h2 = taggedContent.CreateHeaderElement(2);
-HeaderElement h3 = taggedContent.CreateHeaderElement(3);
-HeaderElement h4 = taggedContent.CreateHeaderElement(4);
-HeaderElement h5 = taggedContent.CreateHeaderElement(5);
-HeaderElement h6 = taggedContent.CreateHeaderElement(6);
-rootElement.AppendChild(h1);
-rootElement.AppendChild(h2);
-rootElement.AppendChild(h3);
-rootElement.AppendChild(h4);
-rootElement.AppendChild(h5);
-rootElement.AppendChild(h6);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH11 = taggedContent.CreateSpanElement();
+        spanH11.SetText("H1. ");
+        h1.AppendChild(spanH11);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH12 = taggedContent.CreateSpanElement();
+        spanH12.SetText("Level 1 Header");
+        h1.AppendChild(spanH12);
 
-SpanElement spanH11 = taggedContent.CreateSpanElement();
-spanH11.SetText("H1. ");
-h1.AppendChild(spanH11);
-SpanElement spanH12 = taggedContent.CreateSpanElement();
-spanH12.SetText("Cabeçalho Nível 1");
-h1.AppendChild(spanH12);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH21 = taggedContent.CreateSpanElement();
+        spanH21.SetText("H2. ");
+        h2.AppendChild(spanH21);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH22 = taggedContent.CreateSpanElement();
+        spanH22.SetText("Level 2 Header");
+        h2.AppendChild(spanH22);
 
-SpanElement spanH21 = taggedContent.CreateSpanElement();
-spanH21.SetText("H2. ");
-h2.AppendChild(spanH21);
-SpanElement spanH22 = taggedContent.CreateSpanElement();
-spanH22.SetText("Cabeçalho Nível 2");
-h2.AppendChild(spanH22);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH31 = taggedContent.CreateSpanElement();
+        spanH31.SetText("H3. ");
+        h3.AppendChild(spanH31);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH32 = taggedContent.CreateSpanElement();
+        spanH32.SetText("Level 3 Header");
+        h3.AppendChild(spanH32);
 
-SpanElement spanH31 = taggedContent.CreateSpanElement();
-spanH31.SetText("H3. ");
-h3.AppendChild(spanH31);
-SpanElement spanH32 = taggedContent.CreateSpanElement();
-spanH32.SetText("Cabeçalho Nível 3");
-h3.AppendChild(spanH32);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH41 = taggedContent.CreateSpanElement();
+        spanH41.SetText("H4. ");
+        h4.AppendChild(spanH41);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH42 = taggedContent.CreateSpanElement();
+        spanH42.SetText("Level 4 Header");
+        h4.AppendChild(spanH42);
 
-SpanElement spanH41 = taggedContent.CreateSpanElement();
-spanH41.SetText("H4. ");
-h4.AppendChild(spanH41);
-SpanElement spanH42 = taggedContent.CreateSpanElement();
-spanH42.SetText("Cabeçalho Nível 4");
-h4.AppendChild(spanH42);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH51 = taggedContent.CreateSpanElement();
+        spanH51.SetText("H5. ");
+        h5.AppendChild(spanH51);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH52 = taggedContent.CreateSpanElement();
+        spanH52.SetText("Level 5 Header");
+        h5.AppendChild(spanH52);
 
-SpanElement spanH51 = taggedContent.CreateSpanElement();
-spanH51.SetText("H5. ");
-h5.AppendChild(spanH51);
-SpanElement spanH52 = taggedContent.CreateSpanElement();
-spanH52.SetText("Cabeçalho Nível 5");
-h5.AppendChild(spanH52);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH61 = taggedContent.CreateSpanElement();
+        spanH61.SetText("H6. ");
+        h6.AppendChild(spanH61);
+        Aspose.Pdf.LogicalStructure.SpanElement spanH62 = taggedContent.CreateSpanElement();
+        spanH62.SetText("Level 6 Header");
+        h6.AppendChild(spanH62);
 
-SpanElement spanH61 = taggedContent.CreateSpanElement();
-spanH61.SetText("H6. ");
-h6.AppendChild(spanH61);
-SpanElement spanH62 = taggedContent.CreateSpanElement();
-spanH62.SetText("Cabeçalho Nível 6");
-h6.AppendChild(spanH62);
+        Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
+        p.SetText("P. ");
+        rootElement.AppendChild(p);
+        Aspose.Pdf.LogicalStructure.SpanElement span1 = taggedContent.CreateSpanElement();
+        span1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. ");
+        p.AppendChild(span1);
+        Aspose.Pdf.LogicalStructure.SpanElement span2 = taggedContent.CreateSpanElement();
+        span2.SetText("Aenean nec lectus ac sem faucibus imperdiet. ");
+        p.AppendChild(span2);
+        Aspose.Pdf.LogicalStructure.SpanElement span3 = taggedContent.CreateSpanElement();
+        span3.SetText("Sed ut erat ac magna ullamcorper hendrerit. ");
+        p.AppendChild(span3);
+        Aspose.Pdf.LogicalStructure.SpanElement span4 = taggedContent.CreateSpanElement();
+        span4.SetText("Cras pellentesque libero semper, gravida magna sed, luctus leo. ");
+        p.AppendChild(span4);
+        Aspose.Pdf.LogicalStructure.SpanElement span5 = taggedContent.CreateSpanElement();
+        span5.SetText("Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. ");
+        p.AppendChild(span5);
+        Aspose.Pdf.LogicalStructure.SpanElement span6 = taggedContent.CreateSpanElement();
+        span6.SetText("Interdum et malesuada fames ac ante ipsum primis in faucibus. ");
+        p.AppendChild(span6);
+        Aspose.Pdf.LogicalStructure.SpanElement span7 = taggedContent.CreateSpanElement();
+        span7.SetText("Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. ");
+        p.AppendChild(span7);
+        Aspose.Pdf.LogicalStructure.SpanElement span8 = taggedContent.CreateSpanElement();
+        span8.SetText("Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. ");
+        p.AppendChild(span8);
+        Aspose.Pdf.LogicalStructure.SpanElement span9 = taggedContent.CreateSpanElement();
+        span9.SetText("Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
+        p.AppendChild(span9);
+        Aspose.Pdf.LogicalStructure.SpanElement span10 = taggedContent.CreateSpanElement();
+        span10.SetText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
+        p.AppendChild(span10);
 
-ParagraphElement p = taggedContent.CreateParagraphElement();
-p.SetText("P. ");
-rootElement.AppendChild(p);
-SpanElement span1 = taggedContent.CreateSpanElement();
-span1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. ");
-p.AppendChild(span1);
-SpanElement span2 = taggedContent.CreateSpanElement();
-span2.SetText("Aenean nec lectus ac sem faucibus imperdiet. ");
-p.AppendChild(span2);
-SpanElement span3 = taggedContent.CreateSpanElement();
-span3.SetText("Sed ut erat ac magna ullamcorper hendrerit. ");
-p.AppendChild(span3);
-SpanElement span4 = taggedContent.CreateSpanElement();
-span4.SetText("Cras pellentesque libero semper, gravida magna sed, luctus leo. ");
-p.AppendChild(span4);
-SpanElement span5 = taggedContent.CreateSpanElement();
-span5.SetText("Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. ");
-p.AppendChild(span5);
-SpanElement span6 = taggedContent.CreateSpanElement();
-span6.SetText("Interdum et malesuada fames ac ante ipsum primis in faucibus. ");
-p.AppendChild(span6);
-SpanElement span7 = taggedContent.CreateSpanElement();
-span7.SetText("Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. ");
-p.AppendChild(span7);
-SpanElement span8 = taggedContent.CreateSpanElement();
-span8.SetText("Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. ");
-p.AppendChild(span8);
-SpanElement span9 = taggedContent.CreateSpanElement();
-span9.SetText("Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
-p.AppendChild(span9);
-SpanElement span10 = taggedContent.CreateSpanElement();
-span10.SetText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
-p.AppendChild(span10);
-
-// Salvar Documento PDF Marcado
-document.Save(dataDir + "InlineStructureElements.pdf");
+        // Save Tagged PDF Document
+        document.Save(dataDir + "InlineStructureElements_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
 
-## Configurando Nome de Tag Personalizado
-
-Para configurar o nome de tag personalizado dos elementos de um Documento PDF Marcado, Aspose.PDF oferece o método [SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) da classe StructureElement para elementos. O seguinte trecho de código mostra como definir um nome de tag personalizado:
-
+{{< tab tabNum="2" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetInlineElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Criar Documento Pdf
-Document document = new Document();
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
 
-// Obter Conteúdo para trabalhar com TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
+    // Get Content for work with Tagged PDF
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
-// Definir Título e Idioma para o Documento
-taggedContent.SetTitle("Documento Pdf Marcado");
-taggedContent.SetLanguage("en-US");
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
 
-// Criar Elementos de Estrutura Lógica
-SectElement sect = taggedContent.CreateSectElement();
-taggedContent.RootElement.AppendChild(sect);
+    // Get Root Structure Element
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-ParagraphElement p1 = taggedContent.CreateParagraphElement();
-ParagraphElement p2 = taggedContent.CreateParagraphElement();
-ParagraphElement p3 = taggedContent.CreateParagraphElement();
-ParagraphElement p4 = taggedContent.CreateParagraphElement();
+    Aspose.Pdf.LogicalStructure.HeaderElement h1 = taggedContent.CreateHeaderElement(1);
+    Aspose.Pdf.LogicalStructure.HeaderElement h2 = taggedContent.CreateHeaderElement(2);
+    Aspose.Pdf.LogicalStructure.HeaderElement h3 = taggedContent.CreateHeaderElement(3);
+    Aspose.Pdf.LogicalStructure.HeaderElement h4 = taggedContent.CreateHeaderElement(4);
+    Aspose.Pdf.LogicalStructure.HeaderElement h5 = taggedContent.CreateHeaderElement(5);
+    Aspose.Pdf.LogicalStructure.HeaderElement h6 = taggedContent.CreateHeaderElement(6);
+    rootElement.AppendChild(h1);
+    rootElement.AppendChild(h2);
+    rootElement.AppendChild(h3);
+    rootElement.AppendChild(h4);
+    rootElement.AppendChild(h5);
+    rootElement.AppendChild(h6);
 
-p1.SetText("P1. ");
-p2.SetText("P2. ");
-p3.SetText("P3. ");
-p4.SetText("P4. ");
+    Aspose.Pdf.LogicalStructure.SpanElement spanH11 = taggedContent.CreateSpanElement();
+    spanH11.SetText("H1. ");
+    h1.AppendChild(spanH11);
+    Aspose.Pdf.LogicalStructure.SpanElement spanH12 = taggedContent.CreateSpanElement();
+    spanH12.SetText("Level 1 Header");
+    h1.AppendChild(spanH12);
 
-p1.SetTag("P1");
-p2.SetTag("Para");
-p3.SetTag("Para");
-p4.SetTag("Paragraph");
+    Aspose.Pdf.LogicalStructure.SpanElement spanH21 = taggedContent.CreateSpanElement();
+    spanH21.SetText("H2. ");
+    h2.AppendChild(spanH21);
+    Aspose.Pdf.LogicalStructure.SpanElement spanH22 = taggedContent.CreateSpanElement();
+    spanH22.SetText("Level 2 Header");
+    h2.AppendChild(spanH22);
 
-sect.AppendChild(p1);
-sect.AppendChild(p2);
-sect.AppendChild(p3);
-sect.AppendChild(p4);
+    Aspose.Pdf.LogicalStructure.SpanElement spanH31 = taggedContent.CreateSpanElement();
+    spanH31.SetText("H3. ");
+    h3.AppendChild(spanH31);
+    Aspose.Pdf.LogicalStructure.SpanElement spanH32 = taggedContent.CreateSpanElement();
+    spanH32.SetText("Level 3 Header");
+    h3.AppendChild(spanH32);
 
-SpanElement span1 = taggedContent.CreateSpanElement();
-SpanElement span2 = taggedContent.CreateSpanElement();
-SpanElement span3 = taggedContent.CreateSpanElement();
-SpanElement span4 = taggedContent.CreateSpanElement();
+    Aspose.Pdf.LogicalStructure.SpanElement spanH41 = taggedContent.CreateSpanElement();
+    spanH41.SetText("H4. ");
+    h4.AppendChild(spanH41);
+    Aspose.Pdf.LogicalStructure.SpanElement spanH42 = taggedContent.CreateSpanElement();
+    spanH42.SetText("Level 4 Header");
+    h4.AppendChild(spanH42);
 
-span1.SetText("Span 1.");
-span2.SetText("Span 2.");
-span3.SetText("Span 3.");
-span4.SetText("Span 4.");
+    Aspose.Pdf.LogicalStructure.SpanElement spanH51 = taggedContent.CreateSpanElement();
+    spanH51.SetText("H5. ");
+    h5.AppendChild(spanH51);
+    Aspose.Pdf.LogicalStructure.SpanElement spanH52 = taggedContent.CreateSpanElement();
+    spanH52.SetText("Level 5 Header");
+    h5.AppendChild(spanH52);
 
-span1.SetTag("SPAN");
-span2.SetTag("Sp");
-span3.SetTag("Sp");
-span4.SetTag("TheSpan");
+    Aspose.Pdf.LogicalStructure.SpanElement spanH61 = taggedContent.CreateSpanElement();
+    spanH61.SetText("H6. ");
+    h6.AppendChild(spanH61);
+    Aspose.Pdf.LogicalStructure.SpanElement spanH62 = taggedContent.CreateSpanElement();
+    spanH62.SetText("Level 6 Header");
+    h6.AppendChild(spanH62);
 
-p1.AppendChild(span1);
-p2.AppendChild(span2);
-p3.AppendChild(span3);
-p4.AppendChild(span4);
+    Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
+    p.SetText("P. ");
+    rootElement.AppendChild(p);
+    Aspose.Pdf.LogicalStructure.SpanElement span1 = taggedContent.CreateSpanElement();
+    span1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. ");
+    p.AppendChild(span1);
+    Aspose.Pdf.LogicalStructure.SpanElement span2 = taggedContent.CreateSpanElement();
+    span2.SetText("Aenean nec lectus ac sem faucibus imperdiet. ");
+    p.AppendChild(span2);
+    Aspose.Pdf.LogicalStructure.SpanElement span3 = taggedContent.CreateSpanElement();
+    span3.SetText("Sed ut erat ac magna ullamcorper hendrerit. ");
+    p.AppendChild(span3);
+    Aspose.Pdf.LogicalStructure.SpanElement span4 = taggedContent.CreateSpanElement();
+    span4.SetText("Cras pellentesque libero semper, gravida magna sed, luctus leo. ");
+    p.AppendChild(span4);
+    Aspose.Pdf.LogicalStructure.SpanElement span5 = taggedContent.CreateSpanElement();
+    span5.SetText("Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. ");
+    p.AppendChild(span5);
+    Aspose.Pdf.LogicalStructure.SpanElement span6 = taggedContent.CreateSpanElement();
+    span6.SetText("Interdum et malesuada fames ac ante ipsum primis in faucibus. ");
+    p.AppendChild(span6);
+    Aspose.Pdf.LogicalStructure.SpanElement span7 = taggedContent.CreateSpanElement();
+    span7.SetText("Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. ");
+    p.AppendChild(span7);
+    Aspose.Pdf.LogicalStructure.SpanElement span8 = taggedContent.CreateSpanElement();
+    span8.SetText("Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. ");
+    p.AppendChild(span8);
+    Aspose.Pdf.LogicalStructure.SpanElement span9 = taggedContent.CreateSpanElement();
+    span9.SetText("Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
+    p.AppendChild(span9);
+    Aspose.Pdf.LogicalStructure.SpanElement span10 = taggedContent.CreateSpanElement();
+    span10.SetText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
+    p.AppendChild(span10);
 
-// Salvar Documento Pdf Marcado
-document.Save(dataDir + "CustomTag.pdf");
+    // Save Tagged PDF Document
+    document.Save(dataDir + "InlineStructureElements_out.pdf");
+}
 ```
-## Adicionando Elemento de Estrutura nos Elementos
+{{< /tab >}}
+{{< /tabs >}}
 
-**Este recurso é suportado pela versão 19.4 ou superior.**
+## Definindo Nome de Tag Personalizada
 
-Para configurar elementos de estrutura de link em um Documento PDF Marcado, Aspose.PDF oferece o método [CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). O seguinte trecho de código mostra como configurar elementos de estrutura em parágrafo com texto de Documento PDF Marcado:
+Para definir um nome de tag personalizada dos elementos de um Documento PDF Marcado, Aspose.PDF oferece o método [SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) da classe StructureElement para elementos. O seguinte trecho de código mostra como definir um nome de tag personalizada:
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-string outFile = dataDir + "LinkStructureElements_Output.pdf";
-string logFile = dataDir + "46035_log.xml";
-string imgFile = dataDir + "google-icon-512.png";
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetTagName()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Criação de documento e obtenção de Conteúdo PDF Marcado
-Document document = new Document();
-ITaggedContent taggedContent = document.TaggedContent;
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with Tagged PDF
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
 
-// Configurando Título e Linguagem Natural para o documento
-taggedContent.SetTitle("Exemplo de Elementos de Link");
-taggedContent.SetLanguage("en-US");
+        // Create Logical Structure Elements
+        Aspose.Pdf.LogicalStructure.SectElement sect = taggedContent.CreateSectElement();
+        taggedContent.RootElement.AppendChild(sect);
 
-// Obtendo o elemento de estrutura Raiz (elemento de estrutura do Documento)
-StructureElement rootElement = taggedContent.RootElement;
+        Aspose.Pdf.LogicalStructure.ParagraphElement p1 = taggedContent.CreateParagraphElement();
+        Aspose.Pdf.LogicalStructure.ParagraphElement p2 = taggedContent.CreateParagraphElement();
+        Aspose.Pdf.LogicalStructure.ParagraphElement p3 = taggedContent.CreateParagraphElement();
+        Aspose.Pdf.LogicalStructure.ParagraphElement p4 = taggedContent.CreateParagraphElement();
 
+        p1.SetText("P1. ");
+        p2.SetText("P2. ");
+        p3.SetText("P3. ");
+        p4.SetText("P4. ");
 
-ParagraphElement p1 = taggedContent.CreateParagraphElement();
-rootElement.AppendChild(p1);
-LinkElement link1 = taggedContent.CreateLinkElement();
-p1.AppendChild(link1);
-link1.Hyperlink = new WebHyperlink("http://google.com");
-link1.SetText("Google");
-link1.AlternateDescriptions = "Link para o Google";
+        p1.SetTag("P1");
+        p2.SetTag("Para");
+        p3.SetTag("Para");
+        p4.SetTag("Paragraph");
 
+        sect.AppendChild(p1);
+        sect.AppendChild(p2);
+        sect.AppendChild(p3);
+        sect.AppendChild(p4);
 
-ParagraphElement p2 = taggedContent.CreateParagraphElement();
-rootElement.AppendChild(p2);
-LinkElement link2 = taggedContent.CreateLinkElement();
-p2.AppendChild(link2);
-link2.Hyperlink = new WebHyperlink("http://google.com");
-SpanElement span2 = taggedContent.CreateSpanElement();
-span2.SetText("Google");
-link2.AppendChild(span2);
-link2.AlternateDescriptions = "Link para o Google";
+        Aspose.Pdf.LogicalStructure.SpanElement span1 = taggedContent.CreateSpanElement();
+        Aspose.Pdf.LogicalStructure.SpanElement span2 = taggedContent.CreateSpanElement();
+        Aspose.Pdf.LogicalStructure.SpanElement span3 = taggedContent.CreateSpanElement();
+        Aspose.Pdf.LogicalStructure.SpanElement span4 = taggedContent.CreateSpanElement();
 
+        span1.SetText("Span 1.");
+        span2.SetText("Span 2.");
+        span3.SetText("Span 3.");
+        span4.SetText("Span 4.");
 
-ParagraphElement p3 = taggedContent.CreateParagraphElement();
-rootElement.AppendChild(p3);
-LinkElement link3 = taggedContent.CreateLinkElement();
-p3.AppendChild(link3);
-link3.Hyperlink = new WebHyperlink("http://google.com");
-SpanElement span31 = taggedContent.CreateSpanElement();
-span31.SetText("G");
-SpanElement span32 = taggedContent.CreateSpanElement();
-span32.SetText("oogle");
-link3.AppendChild(span31);
-link3.SetText("-");
-link3.AppendChild(span32);
-link3.AlternateDescriptions = "Link para o Google";
+        span1.SetTag("SPAN");
+        span2.SetTag("Sp");
+        span3.SetTag("Sp");
+        span4.SetTag("TheSpan");
 
+        p1.AppendChild(span1);
+        p2.AppendChild(span2);
+        p3.AppendChild(span3);
+        p4.AppendChild(span4);
 
-ParagraphElement p4 = taggedContent.CreateParagraphElement();
-rootElement.AppendChild(p4);
-LinkElement link4 = taggedContent.CreateLinkElement();
-p4.AppendChild(link4);
-link4.Hyperlink = new WebHyperlink("http://google.com");
-link4.SetText("O link de várias linhas: Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google");
-link4.AlternateDescriptions = "Link para o Google (múltiplas linhas)";
-
-
-ParagraphElement p5 = taggedContent.CreateParagraphElement();
-rootElement.AppendChild(p5);
-LinkElement link5 = taggedContent.CreateLinkElement();
-p5.AppendChild(link5);
-link5.Hyperlink = new WebHyperlink("http://google.com");
-FigureElement figure5 = taggedContent.CreateFigureElement();
-figure5.SetImage(imgFile, 1200);
-figure5.AlternativeText = "Ícone do Google";
-StructureAttributes linkLayoutAttributes = link5.Attributes.GetAttributes(AttributeOwnerStandard.Layout);
-StructureAttribute placementAttribute = new StructureAttribute(AttributeKey.Placement);
-placementAttribute.SetNameValue(AttributeName.Placement_Block);
-linkLayoutAttributes.SetAttribute(placementAttribute);
-link5.AppendChild(figure5);
-link5.AlternateDescriptions = "Link para o Google";
-
-
-// Salvar Documento PDF Marcado
-document.Save(outFile);
-
-// Verificando conformidade com PDF/UA
-document = new Document(outFile);
-bool isPdfUaCompliance = document.Validate(logFile, PdfFormat.PDF_UA_1);
-Console.WriteLine(String.Format("Conformidade com PDF/UA: {0}", isPdfUaCompliance));
+        // Save Tagged PDF Document
+        document.Save(dataDir + "CustomTag_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetTagName()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with Tagged PDF
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Create Logical Structure Elements
+    Aspose.Pdf.LogicalStructure.SectElement sect = taggedContent.CreateSectElement();
+    taggedContent.RootElement.AppendChild(sect);
+
+    Aspose.Pdf.LogicalStructure.ParagraphElement p1 = taggedContent.CreateParagraphElement();
+    Aspose.Pdf.LogicalStructure.ParagraphElement p2 = taggedContent.CreateParagraphElement();
+    Aspose.Pdf.LogicalStructure.ParagraphElement p3 = taggedContent.CreateParagraphElement();
+    Aspose.Pdf.LogicalStructure.ParagraphElement p4 = taggedContent.CreateParagraphElement();
+
+    p1.SetText("P1. ");
+    p2.SetText("P2. ");
+    p3.SetText("P3. ");
+    p4.SetText("P4. ");
+
+    p1.SetTag("P1");
+    p2.SetTag("Para");
+    p3.SetTag("Para");
+    p4.SetTag("Paragraph");
+
+    sect.AppendChild(p1);
+    sect.AppendChild(p2);
+    sect.AppendChild(p3);
+    sect.AppendChild(p4);
+
+    Aspose.Pdf.LogicalStructure.SpanElement span1 = taggedContent.CreateSpanElement();
+    Aspose.Pdf.LogicalStructure.SpanElement span2 = taggedContent.CreateSpanElement();
+    Aspose.Pdf.LogicalStructure.SpanElement span3 = taggedContent.CreateSpanElement();
+    Aspose.Pdf.LogicalStructure.SpanElement span4 = taggedContent.CreateSpanElement();
+
+    span1.SetText("Span 1.");
+    span2.SetText("Span 2.");
+    span3.SetText("Span 3.");
+    span4.SetText("Span 4.");
+
+    span1.SetTag("SPAN");
+    span2.SetTag("Sp");
+    span3.SetTag("Sp");
+    span4.SetTag("TheSpan");
+
+    p1.AppendChild(span1);
+    p2.AppendChild(span2);
+    p3.AppendChild(span3);
+    p4.AppendChild(span4);
+
+    // Save Tagged PDF Document
+    document.Save(dataDir + "CustomTag_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Adicionando Elemento de Estrutura em Elementos
+
+**Esse recurso é suportado pela versão 19.4 ou superior.**
+
+Para definir elementos de estrutura de link em um Documento PDF Marcado, Aspose.PDF oferece o método [CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). O seguinte trecho de código mostra como definir elementos de estrutura em parágrafo com texto de Documento PDF Marcado:
+
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        // Setting Title and Nature Language for document
+        taggedContent.SetTitle("Link Elements Example");
+        taggedContent.SetLanguage("en-US");
+
+        // Getting Root structure element (Document structure element)
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+        Aspose.Pdf.LogicalStructure.ParagraphElement p1 = taggedContent.CreateParagraphElement();
+        rootElement.AppendChild(p1);
+        Aspose.Pdf.LogicalStructure.LinkElement link1 = taggedContent.CreateLinkElement();
+        p1.AppendChild(link1);
+        link1.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+        link1.SetText("Google");
+        link1.AlternateDescriptions = "Link to Google";
+
+        Aspose.Pdf.LogicalStructure.ParagraphElement p2 = taggedContent.CreateParagraphElement();
+        rootElement.AppendChild(p2);
+        Aspose.Pdf.LogicalStructure.LinkElement link2 = taggedContent.CreateLinkElement();
+        p2.AppendChild(link2);
+        link2.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+        Aspose.Pdf.LogicalStructure.SpanElement span2 = taggedContent.CreateSpanElement();
+        span2.SetText("Google");
+        link2.AppendChild(span2);
+        link2.AlternateDescriptions = "Link to Google";
+
+        Aspose.Pdf.LogicalStructure.ParagraphElement p3 = taggedContent.CreateParagraphElement();
+        rootElement.AppendChild(p3);
+        Aspose.Pdf.LogicalStructure.LinkElement link3 = taggedContent.CreateLinkElement();
+        p3.AppendChild(link3);
+        link3.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+        Aspose.Pdf.LogicalStructure.SpanElement span31 = taggedContent.CreateSpanElement();
+        span31.SetText("G");
+        Aspose.Pdf.LogicalStructure.SpanElement span32 = taggedContent.CreateSpanElement();
+        span32.SetText("oogle");
+        link3.AppendChild(span31);
+        link3.SetText("-");
+        link3.AppendChild(span32);
+        link3.AlternateDescriptions = "Link to Google";
+
+        Aspose.Pdf.LogicalStructure.ParagraphElement p4 = taggedContent.CreateParagraphElement();
+        rootElement.AppendChild(p4);
+        Aspose.Pdf.LogicalStructure.LinkElement link4 = taggedContent.CreateLinkElement();
+        p4.AppendChild(link4);
+        link4.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+        link4.SetText("The multiline link: Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google");
+        link4.AlternateDescriptions = "Link to Google (multiline)";
+
+        Aspose.Pdf.LogicalStructure.ParagraphElement p5 = taggedContent.CreateParagraphElement();
+        rootElement.AppendChild(p5);
+        Aspose.Pdf.LogicalStructure.LinkElement link5 = taggedContent.CreateLinkElement();
+        p5.AppendChild(link5);
+        link5.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+        Aspose.Pdf.LogicalStructure.FigureElement figure5 = taggedContent.CreateFigureElement();
+        figure5.SetImage(dataDir + "google-icon-512.png", 1200);
+        figure5.AlternativeText = "Google icon";
+        Aspose.Pdf.LogicalStructure.StructureAttributes linkLayoutAttributes = link5.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Layout);
+        var placementAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Placement);
+        placementAttribute.SetNameValue(Aspose.Pdf.LogicalStructure.AttributeName.Placement_Block);
+        linkLayoutAttributes.SetAttribute(placementAttribute);
+        link5.AppendChild(figure5);
+        link5.AlternateDescriptions = "Link to Google";
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "LinkStructureElements_out.pdf");
+    }
+
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "LinkStructureElements_out.pdf"))
+    {
+        bool isPdfUaCompliance = document.Validate(dataDir + "LinkStructureElements_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using var document1 = new Aspose.Pdf.Document();
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
+
+    // Setting Title and Nature Language for document
+    taggedContent.SetTitle("Link Elements Example");
+    taggedContent.SetLanguage("en-US");
+
+    // Getting Root structure element (Document structure element)
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+    Aspose.Pdf.LogicalStructure.ParagraphElement p1 = taggedContent.CreateParagraphElement();
+    rootElement.AppendChild(p1);
+    Aspose.Pdf.LogicalStructure.LinkElement link1 = taggedContent.CreateLinkElement();
+    p1.AppendChild(link1);
+    link1.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+    link1.SetText("Google");
+    link1.AlternateDescriptions = "Link to Google";
+
+    Aspose.Pdf.LogicalStructure.ParagraphElement p2 = taggedContent.CreateParagraphElement();
+    rootElement.AppendChild(p2);
+    Aspose.Pdf.LogicalStructure.LinkElement link2 = taggedContent.CreateLinkElement();
+    p2.AppendChild(link2);
+    link2.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+    Aspose.Pdf.LogicalStructure.SpanElement span2 = taggedContent.CreateSpanElement();
+    span2.SetText("Google");
+    link2.AppendChild(span2);
+    link2.AlternateDescriptions = "Link to Google";
+
+    Aspose.Pdf.LogicalStructure.ParagraphElement p3 = taggedContent.CreateParagraphElement();
+    rootElement.AppendChild(p3);
+    Aspose.Pdf.LogicalStructure.LinkElement link3 = taggedContent.CreateLinkElement();
+    p3.AppendChild(link3);
+    link3.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+    Aspose.Pdf.LogicalStructure.SpanElement span31 = taggedContent.CreateSpanElement();
+    span31.SetText("G");
+    Aspose.Pdf.LogicalStructure.SpanElement span32 = taggedContent.CreateSpanElement();
+    span32.SetText("oogle");
+    link3.AppendChild(span31);
+    link3.SetText("-");
+    link3.AppendChild(span32);
+    link3.AlternateDescriptions = "Link to Google";
+
+    Aspose.Pdf.LogicalStructure.ParagraphElement p4 = taggedContent.CreateParagraphElement();
+    rootElement.AppendChild(p4);
+    Aspose.Pdf.LogicalStructure.LinkElement link4 = taggedContent.CreateLinkElement();
+    p4.AppendChild(link4);
+    link4.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+    link4.SetText("The multiline link: Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google");
+    link4.AlternateDescriptions = "Link to Google (multiline)";
+
+    Aspose.Pdf.LogicalStructure.ParagraphElement p5 = taggedContent.CreateParagraphElement();
+    rootElement.AppendChild(p5);
+    Aspose.Pdf.LogicalStructure.LinkElement link5 = taggedContent.CreateLinkElement();
+    p5.AppendChild(link5);
+    link5.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
+    Aspose.Pdf.LogicalStructure.FigureElement figure5 = taggedContent.CreateFigureElement();
+    figure5.SetImage(dataDir + "google-icon-512.png", 1200);
+    figure5.AlternativeText = "Google icon";
+    Aspose.Pdf.LogicalStructure.StructureAttributes linkLayoutAttributes = link5.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Layout);
+    var placementAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Placement);
+    placementAttribute.SetNameValue(Aspose.Pdf.LogicalStructure.AttributeName.Placement_Block);
+    linkLayoutAttributes.SetAttribute(placementAttribute);
+    link5.AppendChild(figure5);
+    link5.AlternateDescriptions = "Link to Google";
+
+    // Save Tagged PDF Document
+    document1.Save(dataDir + "LinkStructureElements_out.pdf");
+
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "LinkStructureElements_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "LinkStructureElements_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Definindo Elemento de Estrutura de Link
 
-**Este recurso é suportado pela versão 19.4 ou superior.**
+**Esse recurso é suportado pela versão 19.4 ou superior.**
 
-A API Aspose.PDF para .NET também permite que você adicione elementos de estrutura de link. O trecho de código a seguir mostra como adicionar um elemento de estrutura de link em um Documento PDF com Tags:
+A API Aspose.PDF for .NET também permite que você adicione elementos de estrutura de link. O seguinte trecho de código mostra como adicionar elemento de estrutura de link em Documento PDF Marcado:
 
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-string outFile = dataDir + "AddStructureElementIntoElement_Output.pdf";
-string logFile = dataDir + "46144_log.xml";
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddLinkElement()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Criação do documento e obtenção de Conteúdo PDF com Tags
-Document document = new Document();
-ITaggedContent taggedContent = document.TaggedContent;
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
+        // Setting Title and Nature Language for document
+        taggedContent.SetTitle("Text Elements Example");
+        taggedContent.SetLanguage("en-US");
 
-// Definindo Título e Linguagem Natural para o documento
-taggedContent.SetTitle("Exemplo de Elementos de Texto");
-taggedContent.SetLanguage("en-US");
+        // Getting Root structure element (Document structure element)
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-// Obtendo o elemento de estrutura raiz (elemento de estrutura do documento)
-StructureElement rootElement = taggedContent.RootElement;
+        Aspose.Pdf.LogicalStructure.ParagraphElement p1 = taggedContent.CreateParagraphElement();
+        rootElement.AppendChild(p1);
+        Aspose.Pdf.LogicalStructure.SpanElement span11 = taggedContent.CreateSpanElement();
+        span11.SetText("Span_11");
+        Aspose.Pdf.LogicalStructure.SpanElement span12 = taggedContent.CreateSpanElement();
+        span12.SetText(" and Span_12.");
+        p1.SetText("Paragraph with ");
+        p1.AppendChild(span11);
+        p1.AppendChild(span12);
 
+        Aspose.Pdf.LogicalStructure.ParagraphElement p2 = taggedContent.CreateParagraphElement();
+        rootElement.AppendChild(p2);
+        Aspose.Pdf.LogicalStructure.SpanElement span21 = taggedContent.CreateSpanElement();
+        span21.SetText("Span_21");
+        Aspose.Pdf.LogicalStructure.SpanElement span22 = taggedContent.CreateSpanElement();
+        span22.SetText("Span_22.");
+        p2.AppendChild(span21);
+        p2.SetText(" and ");
+        p2.AppendChild(span22);
 
-ParagraphElement p1 = taggedContent.CreateParagraphElement();
-rootElement.AppendChild(p1);
-SpanElement span11 = taggedContent.CreateSpanElement();
-span11.SetText("Span_11");
-SpanElement span12 = taggedContent.CreateSpanElement();
-span12.SetText(" e Span_12.");
-p1.SetText("Parágrafo com ");
-p1.AppendChild(span11);
-p1.AppendChild(span12);
+        Aspose.Pdf.LogicalStructure.ParagraphElement p3 = taggedContent.CreateParagraphElement();
+        rootElement.AppendChild(p3);
+        Aspose.Pdf.LogicalStructure.SpanElement span31 = taggedContent.CreateSpanElement();
+        span31.SetText("Span_31");
+        Aspose.Pdf.LogicalStructure.SpanElement span32 = taggedContent.CreateSpanElement();
+        span32.SetText(" and Span_32");
+        p3.AppendChild(span31);
+        p3.AppendChild(span32);
+        p3.SetText(".");
 
+        Aspose.Pdf.LogicalStructure.ParagraphElement p4 = taggedContent.CreateParagraphElement();
+        rootElement.AppendChild(p4);
+        Aspose.Pdf.LogicalStructure.SpanElement span41 = taggedContent.CreateSpanElement();
+        Aspose.Pdf.LogicalStructure.SpanElement span411 = taggedContent.CreateSpanElement();
+        span411.SetText("Span_411, ");
+        span41.SetText("Span_41, ");
+        span41.AppendChild(span411);
+        Aspose.Pdf.LogicalStructure.SpanElement span42 = taggedContent.CreateSpanElement();
+        Aspose.Pdf.LogicalStructure.SpanElement span421 = taggedContent.CreateSpanElement();
+        span421.SetText("Span 421 and ");
+        span42.AppendChild(span421);
+        span42.SetText("Span_42");
+        p4.AppendChild(span41);
+        p4.AppendChild(span42);
+        p4.SetText(".");
 
-ParagraphElement p2 = taggedContent.CreateParagraphElement();
-rootElement.AppendChild(p2);
-SpanElement span21 = taggedContent.CreateSpanElement();
-span21.SetText("Span_21");
-SpanElement span22 = taggedContent.CreateSpanElement();
-span22.SetText("Span_22.");
-p2.AppendChild(span21);
-p2.SetText(" e ");
-p2.AppendChild(span22);
+        // Save Tagged PDF Document
+        document.Save(dataDir + "AddStructureElementIntoElement_out.pdf");
+    }
 
-
-ParagraphElement p3 = taggedContent.CreateParagraphElement();
-rootElement.AppendChild(p3);
-SpanElement span31 = taggedContent.CreateSpanElement();
-span31.SetText("Span_31");
-SpanElement span32 = taggedContent.CreateSpanElement();
-span32.SetText(" e Span_32");
-p3.AppendChild(span31);
-p3.AppendChild(span32);
-p3.SetText(".");
-
-
-ParagraphElement p4 = taggedContent.CreateParagraphElement();
-rootElement.AppendChild(p4);
-SpanElement span41 = taggedContent.CreateSpanElement();
-SpanElement span411 = taggedContent.CreateSpanElement();
-span411.SetText("Span_411, ");
-span41.SetText("Span_41, ");
-span41.AppendChild(span411);
-SpanElement span42 = taggedContent.CreateSpanElement();
-SpanElement span421 = taggedContent.CreateSpanElement();
-span421.SetText("Span 421 e ");
-span42.AppendChild(span421);
-span42.SetText("Span_42");
-p4.AppendChild(span41);
-p4.AppendChild(span42);
-p4.SetText(".");
-
-
-// Salvar Documento PDF com Tags
-document.Save(outFile);
-
-// Verificando conformidade com PDF/UA
-document = new Document(outFile);
-bool isPdfUaCompliance = document.Validate(logFile, PdfFormat.PDF_UA_1);
-Console.WriteLine(String.Format("Conformidade com PDF/UA: {0}", isPdfUaCompliance));
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddStructureElementIntoElement_out.pdf"))
+    {
+        bool isPdfUaCompliance = document.Validate(dataDir + "46144_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+    }
+}
 ```
-## Estrutura do Elemento de Nota de Configuração
+{{< /tab >}}
 
-Aspose.PDF para API .NET também permite que você adicione [NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement) em um documento PDF etiquetado. O trecho de código a seguir mostra como adicionar elemento de nota em Documento PDF Etiquetado:
-
+{{< tab tabNum="2" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-string outFile = dataDir + "45929_doc.pdf";
-string logFile = dataDir + "45929_log.xml";
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddLinkElement()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Criar Documento Pdf
-Document document = new Document();
-ITaggedContent taggedContent = document.TaggedContent;
+    // Create PDF document
+    using var document1 = new Aspose.Pdf.Document();
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
-taggedContent.SetTitle("Exemplo de Elementos de Nota");
-taggedContent.SetLanguage("en-US");
+    // Setting Title and Nature Language for document
+    taggedContent.SetTitle("Text Elements Example");
+    taggedContent.SetLanguage("en-US");
 
-// Adicionar Elemento de Parágrafo
-ParagraphElement paragraph = taggedContent.CreateParagraphElement();
-taggedContent.RootElement.AppendChild(paragraph);
+    // Getting Root structure element (Document structure element)
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-// Adicionar NoteElement
-NoteElement note1 = taggedContent.CreateNoteElement();
-paragraph.AppendChild(note1);
-note1.SetText("Nota com ID gerado automaticamente. ");
+    Aspose.Pdf.LogicalStructure.ParagraphElement p1 = taggedContent.CreateParagraphElement();
+    rootElement.AppendChild(p1);
+    Aspose.Pdf.LogicalStructure.SpanElement span11 = taggedContent.CreateSpanElement();
+    span11.SetText("Span_11");
+    Aspose.Pdf.LogicalStructure.SpanElement span12 = taggedContent.CreateSpanElement();
+    span12.SetText(" and Span_12.");
+    p1.SetText("Paragraph with ");
+    p1.AppendChild(span11);
+    p1.AppendChild(span12);
 
-// Adicionar NoteElement
-NoteElement note2 = taggedContent.CreateNoteElement();
-paragraph.AppendChild(note2);
-note2.SetText("Nota com ID = 'note_002'. ");
-note2.SetId("note_002");
+    Aspose.Pdf.LogicalStructure.ParagraphElement p2 = taggedContent.CreateParagraphElement();
+    rootElement.AppendChild(p2);
+    Aspose.Pdf.LogicalStructure.SpanElement span21 = taggedContent.CreateSpanElement();
+    span21.SetText("Span_21");
+    Aspose.Pdf.LogicalStructure.SpanElement span22 = taggedContent.CreateSpanElement();
+    span22.SetText("Span_22.");
+    p2.AppendChild(span21);
+    p2.SetText(" and ");
+    p2.AppendChild(span22);
 
-// Adicionar NoteElement
-NoteElement note3 = taggedContent.CreateNoteElement();
-paragraph.AppendChild(note3);
-note3.SetText("Nota com ID = 'note_003'. ");
-note3.SetId("note_003");
+    Aspose.Pdf.LogicalStructure.ParagraphElement p3 = taggedContent.CreateParagraphElement();
+    rootElement.AppendChild(p3);
+    Aspose.Pdf.LogicalStructure.SpanElement span31 = taggedContent.CreateSpanElement();
+    span31.SetText("Span_31");
+    Aspose.Pdf.LogicalStructure.SpanElement span32 = taggedContent.CreateSpanElement();
+    span32.SetText(" and Span_32");
+    p3.AppendChild(span31);
+    p3.AppendChild(span32);
+    p3.SetText(".");
 
-// Deve lançar exceção - Aspose.Pdf.Tagged.TaggedException : Elemento de estrutura com ID='note_002' já existe
-//note3.SetId("note_002");
+    Aspose.Pdf.LogicalStructure.ParagraphElement p4 = taggedContent.CreateParagraphElement();
+    rootElement.AppendChild(p4);
+    Aspose.Pdf.LogicalStructure.SpanElement span41 = taggedContent.CreateSpanElement();
+    Aspose.Pdf.LogicalStructure.SpanElement span411 = taggedContent.CreateSpanElement();
+    span411.SetText("Span_411, ");
+    span41.SetText("Span_41, ");
+    span41.AppendChild(span411);
+    Aspose.Pdf.LogicalStructure.SpanElement span42 = taggedContent.CreateSpanElement();
+    Aspose.Pdf.LogicalStructure.SpanElement span421 = taggedContent.CreateSpanElement();
+    span421.SetText("Span 421 and ");
+    span42.AppendChild(span421);
+    span42.SetText("Span_42");
+    p4.AppendChild(span41);
+    p4.AppendChild(span42);
+    p4.SetText(".");
 
-// O documento resultante não está em conformidade com PDF/UA se ClearId() for usado para Elemento de Estrutura de Nota
-//note3.ClearId();
+    // Save Tagged PDF Document
+    document1.Save(dataDir + "AddStructureElementIntoElement_out.pdf");
 
-
-// Salvar Documento PDF Etiquetado
-document.Save(outFile);
-
-// Verificação de conformidade com PDF/UA
-document = new Document(outFile);
-bool isPdfUaCompliance = document.Validate(logFile, PdfFormat.PDF_UA_1);
-Console.WriteLine(String.Format("Conformidade com PDF/UA: {0}", isPdfUaCompliance));
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "AddStructureElementIntoElement_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "46144_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+}
 ```
-## Configurando Idioma e Título
+{{< /tab >}}
+{{< /tabs >}}
 
-**Este recurso é suportado pela versão 19.6 ou superior.**
+## Definindo Elemento de Estrutura de Nota
 
-Aspose.PDF para API .NET também permite que você defina o idioma e o título para um documento de acordo com a especificação PDF/UA. O idioma pode ser configurado tanto para o documento inteiro quanto para seus elementos estruturais separados. O seguinte trecho de código mostra como definir idioma e título em Documento PDF Marcado:
+A API Aspose.PDF for .NET também permite que você adicione [NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement) em um documento PDF marcado. O seguinte trecho de código mostra como adicionar elemento de nota em Documento PDF Marcado:
 
+{{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-Document document = new Document();
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetNoteElement()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Obter TaggedContent
-Tagged.ITaggedContent taggedContent = document.TaggedContent;
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
-// Definir Título e Idioma
-taggedContent.SetTitle("Documento Marcado de Exemplo");
-taggedContent.SetLanguage("en-US");
+        taggedContent.SetTitle("Sample of Note Elements");
+        taggedContent.SetLanguage("en-US");
 
-// Cabeçalho (en-US, herdado do documento)
-LogicalStructure.HeaderElement h1 = taggedContent.CreateHeaderElement(1);
-h1.SetText("Frase em diferentes idiomas");
-taggedContent.RootElement.AppendChild(h1);
+        // Add Paragraph Element
+        Aspose.Pdf.LogicalStructure.ParagraphElement paragraph = taggedContent.CreateParagraphElement();
+        taggedContent.RootElement.AppendChild(paragraph);
 
-// Parágrafo (Inglês)
-LogicalStructure.ParagraphElement pEN = taggedContent.CreateParagraphElement();
-pEN.SetText("Olá, Mundo!");
-pEN.Language = "en-US";
-taggedContent.RootElement.AppendChild(pEN);
+        // Add NoteElement
+        Aspose.Pdf.LogicalStructure.NoteElement note1 = taggedContent.CreateNoteElement();
+        paragraph.AppendChild(note1);
+        note1.SetText("Note with auto generate ID. ");
 
-// Parágrafo (Alemão)
-LogicalStructure.ParagraphElement pDE = taggedContent.CreateParagraphElement();
-pDE.SetText("Hallo Welt!");
-pDE.Language = "de-DE";
-taggedContent.RootElement.AppendChild(pDE);
+        // Add NoteElement
+        Aspose.Pdf.LogicalStructure.NoteElement note2 = taggedContent.CreateNoteElement();
+        paragraph.AppendChild(note2);
+        note2.SetText("Note with ID = 'note_002'. ");
+        note2.SetId("note_002");
 
-// Parágrafo (Francês)
-LogicalStructure.ParagraphElement pFR = taggedContent.CreateParagraphElement();
-pFR.SetText("Bonjour le monde!");
-pFR.Language = "fr-FR";
-taggedContent.RootElement.AppendChild(pFR);
+        // Add NoteElement
+        Aspose.Pdf.LogicalStructure.NoteElement note3 = taggedContent.CreateNoteElement();
+        paragraph.AppendChild(note3);
+        note3.SetText("Note with ID = 'note_003'. ");
+        note3.SetId("note_003");
 
-// Parágrafo (Espanhol)
-LogicalStructure.ParagraphElement pSP = taggedContent.CreateParagraphElement();
-pSP.SetText("¡Hola Mundo!");
-pSP.Language = "es-ES";
-taggedContent.RootElement.AppendChild(pSP);
+        // Must throw exception - Aspose.Pdf.Tagged.TaggedException : Structure element with ID='note_002' already exists
+        //note3.SetId("note_002");
 
-// Salvar Documento PDF Marcado
-document.Save(dataDir + "SetupLanguageAndTitle.pdf");
+        // Resultant document does not compliance to PDF/UA If ClearId() used for Note Structure Element
+        //note3.ClearId();
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "SetNoteElement_out.pdf");
+    }
+
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetNoteElement_out.pdf"))
+    {
+        bool isPdfUaCompliance = document.Validate(dataDir + "SetNoteElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetNoteElement()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document1 = new Aspose.Pdf.Document();
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
+
+    taggedContent.SetTitle("Sample of Note Elements");
+    taggedContent.SetLanguage("en-US");
+
+    // Add Paragraph Element
+    Aspose.Pdf.LogicalStructure.ParagraphElement paragraph = taggedContent.CreateParagraphElement();
+    taggedContent.RootElement.AppendChild(paragraph);
+
+    // Add NoteElement
+    Aspose.Pdf.LogicalStructure.NoteElement note1 = taggedContent.CreateNoteElement();
+    paragraph.AppendChild(note1);
+    note1.SetText("Note with auto generate ID. ");
+
+    // Add NoteElement
+    Aspose.Pdf.LogicalStructure.NoteElement note2 = taggedContent.CreateNoteElement();
+    paragraph.AppendChild(note2);
+    note2.SetText("Note with ID = 'note_002'. ");
+    note2.SetId("note_002");
+
+    // Add NoteElement
+    Aspose.Pdf.LogicalStructure.NoteElement note3 = taggedContent.CreateNoteElement();
+    paragraph.AppendChild(note3);
+    note3.SetText("Note with ID = 'note_003'. ");
+    note3.SetId("note_003");
+
+    // Must throw exception - Aspose.Pdf.Tagged.TaggedException : Structure element with ID='note_002' already exists
+    //note3.SetId("note_002");
+
+    // Resultant document does not compliance to PDF/UA If ClearId() used for Note Structure Element
+    //note3.ClearId();
+
+    // Save Tagged PDF Document
+    document1.Save(dataDir + "SetNoteElement_out.pdf");
+
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "SetNoteElement_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "SetNoteElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Definindo Idioma e Título
+
+**Esse recurso é suportado pela versão 19.6 ou superior.**
+
+A API Aspose.PDF for .NET também permite que você defina idioma e título para um documento de acordo com a especificação PDF/UA. O idioma pode ser definido tanto para o documento inteiro quanto para seus elementos estruturais separados. O seguinte trecho de código mostra como definir idioma e título em Documento PDF Marcado:
+
+{{< tabs tabID="9" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetLanguageAndTitle()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get TaggedContent
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        // Set Title and Language
+        taggedContent.SetTitle("Example Tagged Document");
+        taggedContent.SetLanguage("en-US");
+
+        // Header (en-US, inherited from document)
+        Aspose.Pdf.LogicalStructure.HeaderElement h1 = taggedContent.CreateHeaderElement(1);
+        h1.SetText("Phrase on different languages");
+        taggedContent.RootElement.AppendChild(h1);
+
+        // Paragraph (English)
+        Aspose.Pdf.LogicalStructure.ParagraphElement pEN = taggedContent.CreateParagraphElement();
+        pEN.SetText("Hello, World!");
+        pEN.Language = "en-US";
+        taggedContent.RootElement.AppendChild(pEN);
+
+        // Paragraph (German)
+        Aspose.Pdf.LogicalStructure.ParagraphElement pDE = taggedContent.CreateParagraphElement();
+        pDE.SetText("Hallo Welt!");
+        pDE.Language = "de-DE";
+        taggedContent.RootElement.AppendChild(pDE);
+
+        // Paragraph (French)
+        Aspose.Pdf.LogicalStructure.ParagraphElement pFR = taggedContent.CreateParagraphElement();
+        pFR.SetText("Bonjour le monde!");
+        pFR.Language = "fr-FR";
+        taggedContent.RootElement.AppendChild(pFR);
+
+        // Paragraph (Spanish)
+        Aspose.Pdf.LogicalStructure.ParagraphElement pSP = taggedContent.CreateParagraphElement();
+        pSP.SetText("¡Hola Mundo!");
+        pSP.Language = "es-ES";
+        taggedContent.RootElement.AppendChild(pSP);
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "SetupLanguageAndTitle_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetLanguageAndTitle()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get TaggedContent
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Set Title and Language
+    taggedContent.SetTitle("Example Tagged Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Header (en-US, inherited from document)
+    Aspose.Pdf.LogicalStructure.HeaderElement h1 = taggedContent.CreateHeaderElement(1);
+    h1.SetText("Phrase on different languages");
+    taggedContent.RootElement.AppendChild(h1);
+
+    // Paragraph (English)
+    Aspose.Pdf.LogicalStructure.ParagraphElement pEN = taggedContent.CreateParagraphElement();
+    pEN.SetText("Hello, World!");
+    pEN.Language = "en-US";
+    taggedContent.RootElement.AppendChild(pEN);
+
+    // Paragraph (German)
+    Aspose.Pdf.LogicalStructure.ParagraphElement pDE = taggedContent.CreateParagraphElement();
+    pDE.SetText("Hallo Welt!");
+    pDE.Language = "de-DE";
+    taggedContent.RootElement.AppendChild(pDE);
+
+    // Paragraph (French)
+    Aspose.Pdf.LogicalStructure.ParagraphElement pFR = taggedContent.CreateParagraphElement();
+    pFR.SetText("Bonjour le monde!");
+    pFR.Language = "fr-FR";
+    taggedContent.RootElement.AppendChild(pFR);
+
+    // Paragraph (Spanish)
+    Aspose.Pdf.LogicalStructure.ParagraphElement pSP = taggedContent.CreateParagraphElement();
+    pSP.SetText("¡Hola Mundo!");
+    pSP.Language = "es-ES";
+    taggedContent.RootElement.AppendChild(pSP);
+
+    // Save Tagged PDF Document
+    document.Save(dataDir + "SetupLanguageAndTitle.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Biblioteca Aspose.PDF para .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -687,21 +1332,21 @@ document.Save(dataDir + "SetupLanguageAndTitle.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -712,7 +1357,7 @@ document.Save(dataDir + "SetupLanguageAndTitle.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -724,5 +1369,3 @@ document.Save(dataDir + "SetupLanguageAndTitle.pdf");
     }
 }
 </script>
-```
-

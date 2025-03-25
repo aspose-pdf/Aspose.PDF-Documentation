@@ -1,10 +1,12 @@
 ---
-title: PDF липкие аннотации на C#
-linktitle: Липкая аннотация
+title: PDF-стикеры с заметками на C#
+linktitle: Стикер-заметки
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ru/net/sticky-annotations/
-description: Эта тема о липких аннотациях, в качестве примера мы показываем аннотацию водяного знака в тексте.
+description: Узнайте, как создавать стикеры-заметки в PDF-файлах с помощью Aspose.PDF на .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF липкие аннотации на C#",
-    "alternativeHeadline": "Как добавить липкие аннотации в PDF",
+    "headline": "PDF sticky Annotations using C#",
+    "alternativeHeadline": "Add Sticky Watermark Annotations to PDF with C#",
+    "abstract": "Представляем новую функцию C# PDF Sticky Annotations, которая позволяет пользователям создавать и настраивать водяные знаки непосредственно в PDF-документах. Эта функция поддерживает установку определённых позиций текста, контроль непрозрачности и эффективное повторное использование изображений, улучшая общее представление документа и оптимизируя размер файлов.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, липкие аннотации, аннотация водяного знака",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "PDF sticky annotations, C# sticky annotations, Watermark Annotation, Aspose.PDF.Drawing, PDF document generation, opacity property, XImageCollection, optimize PDF size",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,88 +74,118 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/sticky-annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Эта тема о липких аннотациях, в качестве примера мы показываем аннотацию водяного знака в тексте."
+    "dateModified": "2024-11-25",
+    "description": "Эта тема посвящена липким аннотациям, в качестве примера мы показываем аннотацию-водяной знак в тексте"
 }
 </script>
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-## Добавление аннотации с водяным знаком
+## Добавление водяного знака
 
-Аннотация с водяным знаком должна использоваться для представления графики, которая должна печататься фиксированного размера и позиции на странице, независимо от размеров печатной страницы.
+Водяной знак должен использоваться для представления графики, которая должна печататься в фиксированном размере и положении на странице независимо от размеров печатной страницы.
 
-Вы можете добавить текст водяного знака, используя [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) в определенной позиции страницы PDF. Прозрачность водяного знака также можно контролировать, используя свойство прозрачности.
+Вы можете добавить текст водяного знака с помощью [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) в определённое место на странице PDF. Непрозрачностью водяного знака также можно управлять с помощью свойства opacity.
 
-Пожалуйста, проверьте следующий фрагмент кода для добавления WatermarkAnnotation.
-
-```csharp
- //Загрузить документ
-Aspose.PDF.Document doc = new Aspose.PDF.Document("source.pdf");
-
-//Загрузить объект страницы для добавления аннотации
-Page page = doc.Pages[1];
-
-//Создать аннотацию
-WatermarkAnnotation wa = new WatermarkAnnotation(page, new Aspose.PDF.Rectangle(100, 500, 400, 600));
-
-//Добавить аннотацию в коллекцию аннотаций страницы
-page.Annotations.Add(wa);
-
-//Создать TextState для настройки шрифта
-Aspose.PDF.Text.TextState ts = new Aspose.PDF.Text.TextState();
-
-ts.ForegroundColor = Aspose.PDF.Color.Blue;
-ts.Font = FontRepository.FindFont("Times New Roman");
-
-ts.FontSize = 32;
-
-//Установить уровень прозрачности текста аннотации
-
-wa.Opacity = 0.5;
-//Добавить текст в аннотацию
-
-wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
-
-//Сохранить документ
-doc.Save("Output.pdf");
-```
-## Добавление ссылки на одно и то же изображение несколько раз в документ PDF
-
-Иногда возникает необходимость использовать одно и то же изображение несколько раз в документе PDF. Добавление нового экземпляра увеличивает итоговый размер документа PDF. Мы добавили новый метод XImageCollection.Add(XImage) в Aspose.PDF для .NET 17.1.0. Этот метод позволяет добавить ссылку на тот же объект PDF, что и исходное изображение, что оптимизирует размер документа PDF.
+Пожалуйста, ознакомьтесь со следующим фрагментом кода, чтобы добавить WatermarkAnnotation.
 
 ```csharp
- Aspose.PDF.Rectangle imageRectangle = new Aspose.PDF.Rectangle(0, 0, 30, 15);
-
-using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddWatermarkAnnotation()
 {
-    using (var imageStream = File.Open("icon.png", FileMode.Open))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "source.pdf"))
     {
-        XImage image = null;
-        foreach (Page page in document.Pages)
-        {
-            WatermarkAnnotation annotation = new WatermarkAnnotation(page, page.Rect);
-            XForm form = annotation.Appearance["N"];
-            form.BBox = page.Rect;
-            string name;
-            if (image == null)
-            {
-                name = form.Resources.Images.Add(imageStream);
-                image = form.Resources.Images[name];
-            }
-            else
-            {
-                name = form.Resources.Images.Add(image);
-            }
-            form.Contents.Add(new Operator.GSave());
-            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.PDF.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
-            form.Contents.Add(new Operator.Do(name));
-            form.Contents.Add(new Operator.GRestore());
-            page.Annotations.Add(annotation, false);
-            imageRectangle = new Aspose.PDF.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
-        }
+        // Load Page object to add Annotation
+        var page = document.Pages[1];
+
+        // Create Watermark Annotation
+        var wa = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
+
+        // Add annotation into Annotation collection of Page
+        page.Annotations.Add(wa);
+
+        // Create TextState for Font settings
+        var ts = new Aspose.Pdf.Text.TextState();
+        ts.ForegroundColor = Aspose.Pdf.Color.Blue;
+        ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Times New Roman");
+        ts.FontSize = 32;
+
+        // Set opacity level of Annotation Text
+        wa.Opacity = 0.5;
+
+        // Add Text in Annotation
+        wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
+
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarkAnnotation_out.pdf");
     }
-    document.Save("output.pdf");
+}
+```
+
+## Добавить ссылку на одно изображение несколько раз в PDF-документ
+
+Иногда нам требуется использовать одно и то же изображение в PDF-документе несколько раз. Добавление нового экземпляра увеличивает результирующий PDF-документ. Мы добавили новый метод XImageCollection.Add(XImage) в версии Aspose.PDF for .NET 17.1.0. Этот метод позволяет добавить ссылку на тот же PDF-объект, что и исходное изображение, что оптимизирует размер PDF-документа.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddWatermarkAnnotationWithImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Define the rectangle for the image
+    var imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Open the image stream
+        using (var imageStream = File.Open(dataDir + "icon.png", FileMode.Open))
+        {
+            XImage image = null;
+
+            // Iterate through each page in the document
+            foreach (Page page in document.Pages)
+            {
+                // Create a Watermark Annotation
+                var annotation = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, page.Rect);
+                XForm form = annotation.Appearance["N"];
+                form.BBox = page.Rect;
+
+                string name;
+
+                // Add the image to the form resources if it hasn't been added yet
+                if (image == null)
+                {
+                    name = form.Resources.Images.Add(imageStream);
+                    image = form.Resources.Images[name];
+                }
+                else
+                {
+                    name = form.Resources.Images.Add(image);
+                }
+
+                // Add operators to the form contents to place the image
+                form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+                form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(new Aspose.Pdf.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
+                form.Contents.Add(new Aspose.Pdf.Operators.Do(name));
+                form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+                // Add the annotation to the page
+                page.Annotations.Add(annotation, false);
+
+                // Adjust the image rectangle size for the next iteration
+                imageRectangle = new Aspose.Pdf.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarkAnnotationWithImage_out.pdf");
+    }
 }
 ```
 
@@ -160,7 +193,7 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для библиотеки .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -182,23 +215,23 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -207,7 +240,7 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипулирования PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -219,5 +252,3 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
     }
 }
 </script>
-```
-

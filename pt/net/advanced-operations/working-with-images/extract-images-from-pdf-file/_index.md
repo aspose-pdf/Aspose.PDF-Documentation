@@ -2,6 +2,8 @@
 title: Extrair Imagens de Arquivo PDF
 linktitle: Extrair Imagens
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /pt/net/extract-images-from-pdf-file/
 description: Esta seção mostra como extrair imagens de um arquivo PDF usando a biblioteca C#.
@@ -11,22 +13,23 @@ lastmod: "2022-02-17"
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Extrair Imagens de Arquivo PDF",
-    "alternativeHeadline": "Como extrair imagens de PDF",
+    "headline": "Extract Images from PDF File",
+    "alternativeHeadline": "Effortlessly Extract Images from PDF Files",
+    "abstract": "O novo recurso para extrair imagens de arquivos PDF usando a biblioteca C# permite que os desenvolvedores recuperem e salvem facilmente as imagens contidas nos documentos PDF. Ao aproveitar a biblioteca Aspose.PDF, os usuários podem acessar imagens específicas de qualquer página e exportá-las em vários formatos, agilizando seu fluxo de trabalho para gerenciar conteúdo PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, c#, extrair imagem de pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Extract images, PDF file, C# library, images collection, extract images from PDF, XImage object, save extracted image, PDF manipulation, Aspose.PDF for .NET, document resources",
+    "wordcount": "227",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -43,21 +46,21 @@ lastmod: "2022-02-17"
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -68,44 +71,46 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/extract-images-from-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Esta seção mostra como extrair imagens de um arquivo PDF usando a biblioteca C#."
 }
 </script>
+
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-As imagens são armazenadas na coleção [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) de cada página, na coleção [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Para extrair uma página específica, em seguida, obter a imagem da coleção Images usando o índice específico da imagem.
+As imagens estão contidas na coleção [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) de cada página, na coleção [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Para extrair uma página específica, obtenha a imagem da coleção Images usando o índice específico da imagem.
 
 O índice da imagem retorna um objeto [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Este objeto fornece um método Save que pode ser usado para salvar a imagem extraída. O seguinte trecho de código mostra como extrair imagens de um arquivo PDF.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "ExtractImages.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
+    {
+        // Extract a particular image
+        var xImage = document.Pages[1].Resources.Images[1];
+        using (var outputImage = new FileStream(dataDir + "ExtractedImage.jpg", FileMode.Create))
+        {
+            // Save PDF document image
+            xImage.Save(outputImage, System.Drawing.Imaging.ImageFormat.Jpeg);
+        }
 
-// Extrair uma imagem específica
-XImage xImage = pdfDocument.Pages[1].Resources.Images[1];
-
-FileStream outputImage = new FileStream(dataDir + "output.jpg", FileMode.Create);
-
-// Salvar imagem de saída
-xImage.Save(outputImage, ImageFormat.Jpeg);
-outputImage.Close();
-
-dataDir = dataDir + "ExtractImages_out.pdf";
-
-// Salvar arquivo PDF atualizado
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ExtractImages_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Biblioteca .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -127,23 +132,23 @@ pdfDocument.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "inglês"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "inglês"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "inglês"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -152,7 +157,7 @@ pdfDocument.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -164,5 +169,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-```
-

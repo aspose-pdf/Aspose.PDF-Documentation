@@ -1,10 +1,12 @@
 ---
-title: Bekerja dengan Lampiran dalam PDF
+title: Bekerja dengan Lampiran di PDF
 linktitle: Bekerja dengan Lampiran
 type: docs
-weight: 130
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 190
 url: /id/net/attachments/
-description: Gunakan API PDF C# untuk mengakses, menambahkan, dan menghapus lampiran dalam file PDF menggunakan C# dari dalam aplikasi Anda. Panduan lengkap dengan contoh kode C#.
+description: Gunakan C# PDF API untuk mengakses, menambahkan, dan menghapus lampiran dalam file PDF menggunakan C# dari dalam aplikasi Anda. Panduan lengkap dengan contoh kode C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Bekerja dengan Lampiran dalam PDF",
-    "alternativeHeadline": "Lampiran dalam file PDF",
+    "headline": "Working with Attachments in PDF",
+    "alternativeHeadline": "Effortlessly Manage PDF Attachments with C#",
+    "abstract": "Temukan cara untuk mengelola lampiran dalam file PDF secara efisien menggunakan C# PDF API yang kuat. Fitur ini memungkinkan pengembang untuk mengakses, menambahkan, dan menghapus berbagai jenis file yang dilampirkan ke PDF, lengkap dengan contoh kode C# yang mendetail untuk integrasi yang mulus ke dalam aplikasi. Tingkatkan kemampuan manipulasi PDF Anda dengan memanfaatkan panduan komprehensif ini",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, lampiran dalam pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "C#, PDF API, attachments in PDF, add attachments, remove attachments, extract attachments, Aspose.PDF for .NET, manipulate PDF documents, save attachment to file, delete attachment from PDF",
+    "wordcount": "181",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,16 +74,17 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/attachments/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Gunakan API PDF C# untuk mengakses, menambahkan, dan menghapus lampiran dalam file PDF menggunakan C# dari dalam aplikasi Anda. Panduan lengkap dengan contoh kode C#."
+    "dateModified": "2024-11-25",
+    "description": "Gunakan C# PDF API untuk mengakses, menambahkan, dan menghapus lampiran dalam file PDF menggunakan C# dari dalam aplikasi Anda. Panduan lengkap dengan contoh kode C#."
 }
 </script>
-Pada bagian ini, kami akan menjelaskan cara bekerja dengan lampiran dalam PDF menggunakan Aspose.PDF untuk .NET.
-Lampiran adalah file tambahan yang dilampirkan pada dokumen induk, bisa berupa berbagai jenis file seperti pdf, word, gambar, atau file lainnya.
-Anda akan mempelajari cara menambahkan lampiran ke pdf, mendapatkan informasi lampiran, dan menyimpannya ke file, menghapus lampiran dari PDF secara programatik dengan C#.
+
+Dalam bagian ini, kami akan menjelaskan cara bekerja dengan lampiran di PDF menggunakan Aspose.PDF for .NET.
+Lampiran adalah file tambahan yang dilampirkan ke dokumen induk, bisa berupa berbagai jenis file, seperti pdf, word, gambar, atau file lainnya.
+Anda akan belajar cara menambahkan lampiran ke pdf, mendapatkan informasi tentang lampiran, dan menyimpannya ke file, menghapus lampiran dari PDF secara programatis dengan C#.
 
 - [Menambahkan lampiran ke dokumen PDF](/pdf/id/net/add-attachment-to-pdf-document/)
-- [Mengekstrak dan menyimpan lampiran](/pdf/id/net/extract-and-save-an-attachment/)
+- [Ekstrak dan simpan lampiran](/pdf/id/net/extract-and-save-an-attachment/)
 - [Menghapus lampiran dari PDF yang ada](/pdf/id/net/removing-attachment-from-an-existing-pdf/)
 - [Portofolio](/pdf/id/net/portfolio/)
 
@@ -147,4 +151,3 @@ Anda akan mempelajari cara menambahkan lampiran ke pdf, mendapatkan informasi la
     }
 }
 </script>
-
