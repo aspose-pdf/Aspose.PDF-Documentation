@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to Split PDF files via Python
-Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a guide for splitting PDF documents into individual pages using Python. It targets beginners and outlines a straightforward method to accomplish this task programmatically by leveraging the Aspose.PDF library. The process involves iterating through the pages of a PDF document, creating a new document for each page, and saving these as separate PDF files. A sample Python code snippet is provided to demonstrate the implementation. Additionally, the article highlights the availability of the Aspose.PDF Splitter, a free online tool for splitting PDFs, and includes links to Aspose's resources and contact information.
+AlternativeHeadline: Splitting PDF pages using Python
+Abstract: The article discusses the process of splitting PDF pages into individual files using Python, highlighting the utility of such a feature for managing large PDF documents. It references the Aspose.PDF Splitter, an online tool designed to demonstrate PDF splitting functionality. The article provides a detailed method for achieving this in Python applications, involving iterating through a PDF document's pages via the `Document` object's `PageCollection`. For each page, a new `Document` object is created, the page is added to it, and the new PDF file is saved using the `save()` method. An accompanying Python code snippet illustrates this process, showcasing the steps necessary to split a PDF document into separate files by iterating through its pages and saving each as an individual PDF.
 ---
 
 Splitting PDF pages can be a useful feature for those who want to split a large file into separate pages or groups of pages.

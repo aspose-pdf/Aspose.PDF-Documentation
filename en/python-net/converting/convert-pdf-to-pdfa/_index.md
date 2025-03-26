@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true 
-AlternativeHeadline: How to convert PDF to PDF/A format using Aspose.PDF for Python
-Abstract: The article describes the process of converting a PDF file to a PDF/A compliant format using Aspose.PDF for Python. It emphasizes the necessity of validating the PDF file before conversion, following Adobe Preflight to ensure PDF/A conformance. The validation process involves storing results in an XML file, which is then used during conversion through the `Convert` method of the Document class. The article highlights the ability to specify actions for elements that cannot be converted using the `ConvertErrorAction` enumeration. Additionally, it introduces an online application, "PDF to PDF/A-1A", allowing users to explore the functionality and quality of Aspose.PDF's conversion process. A code snippet is provided to demonstrate converting a PDF to a PDF/A-1b compliant file using Aspose.PDF for Python.
+AlternativeHeadline: How to Convert PDF to PDF/A formats in Python
+Abstract: This article outlines the process of converting a PDF file to a PDF/A compliant format using Aspose.PDF for Python. The procedure includes validating the original PDF file according to Adobe Preflight standards, as various tools interpret PDF/A conformance differently. Once validated, the PDF is converted using the `Document` class's `Convert` method, with the validation results stored in an XML file. The conversion process allows for handling unconvertible elements via the `ConvertErrorAction` enumeration. Additionally, Aspose.PDF offers an online tool for converting PDFs to PDF/A-1A, enabling users to test the functionality and quality of the conversion process. A Python code snippet is provided to demonstrate converting a PDF to PDF/A-1b, illustrating the necessary steps and functions involved in the conversion.
 ---
 
 **Aspose.PDF for Python** allows you to convert a PDF file to a <abbr title="Portable Document Format / A">PDF/A</abbr> compliant PDF file. Before doing so, the file must be validated. This topic explains how.

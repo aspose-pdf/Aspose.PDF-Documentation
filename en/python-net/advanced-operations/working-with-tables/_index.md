@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to work with Tables in PDF using Python
-Abstract: The article "Working with Tables in PDF using Python", published by the Aspose.PDF Doc Team, provides a beginner-level guide to manipulating tables in PDF documents using the Aspose.PDF for Python via .NET library. The article outlines the process of creating, adding, extracting, manipulating, and removing tables within PDF files. It highlights key functionalities such as merging columns or rows while considering borders, margins, and padding, as well as using the TableAbsorber for manipulation tasks. The library facilitates these operations on Windows, MacOS, and Linux platforms, offering a robust tool for handling tables in PDFs. The article serves as a practical resource for users looking to enhance their PDF manipulation skills using Python.
+AlternativeHeadline: How to manipulate tables in PDF using Python
+Abstract: The Aspose.PDF for Python via .NET is a versatile tool designed to enhance the handling of tables within PDF files. This library empowers users to extract tables from PDFs, create or add tables to existing documents, determine table breaking on pages, and remove tables from PDFs. Key functionalities include the ability to create or add tables while managing aspects like borders, margins, and padding, as well as extracting and manipulating tables using the TableAbsorber feature. Additionally, the tool offers capabilities for removing one or multiple tables from PDF documents, thereby providing comprehensive management of table data in PDFs.
 ---
 
 **Aspose.PDF for Python via .NET** allows you to work with tables in PDF file advanced. This perfect tool helps fight through the simplicity of PDFs by extracting tables. With Python library resource you can easily create or add table in an existing PDF document, determine if table will break in the current page, extract table, and remove tables from existing PDFs.

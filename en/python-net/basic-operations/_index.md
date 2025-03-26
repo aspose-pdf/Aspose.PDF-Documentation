@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true 
-AlternativeHeadline: Create, open, and save PDF with Aspose.PDF for Python
-Abstract: The article provides an overview of basic operations with PDF documents using Aspose.PDF for Python. It covers three fundamental tasks- creating, opening, and saving PDF files. The "Create PDF Document" section explains the process of generating a PDF file through Python. The "Open PDF Document" section explores various methods to access PDF documents within a Python application. Finally, the "Save PDF Document" section discusses different approaches to saving a PDF file. Each section is linked to further resources for detailed guidance on performing these tasks efficiently.
+AlternativeHeadline: Overview of basic operations with PDF using Python
+Abstract: The article provides an overview of basic operations for handling PDF documents using Aspose.PDF for Python. It covers three fundamental tasks - creating, opening, and saving PDF files within a Python environment. The "Create PDF Document" section details the process of generating a PDF file using Python. The "Open PDF Document" section explores multiple methods for accessing PDF documents in a Python application. Lastly, the "Save PDF Document" section explains various techniques for saving a PDF document. Each section links to more detailed articles that guide users through these essential PDF operations.
 ---
 
 **Basic operations** section describes the first and simplest operation with PDF documents in Aspose.PDF for Python:

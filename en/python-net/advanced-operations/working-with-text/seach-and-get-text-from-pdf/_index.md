@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to search and get Text from Pages of PDF
-Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a comprehensive guide on using the Aspose.PDF for .NET library to search and extract text from PDF documents. It introduces the `TextFragmentAbsorber` class, which allows developers to locate text matching a specific phrase or pattern across all pages of a PDF. The article details how to employ the `Accept` method of the `Pages` collection to retrieve `TextFragment` objects, which can be iterated over to access various text properties.
+AlternativeHeadline: How to Search and Get Text from Pages in PDF
+Abstract: The article provides an in-depth exploration of text extraction and manipulation capabilities within PDF documents using the Aspose.PDF for .NET library. It highlights the utility of the `TextFragmentAbsorber` class for searching and retrieving text matching specific phrases or regular expressions across all pages of a PDF. The article details the process of using the `Accept` method to collect `TextFragment` objects and demonstrates how to access various properties of these fragments, such as text content, position, font details, and color. Additionally, it discusses searching text segments, using regular expressions, and adding hyperlinks over specific text using `PdfContentEditor`. The article further describes techniques for drawing rectangles around text fragments, highlighting individual characters, and handling hidden text within PDFs. Lastly, it covers searching text using regular expressions in .NET, providing comprehensive code snippets to illustrate each technique. These capabilities enable advanced text processing, extraction, and manipulation, aiding developers in creating robust PDF applications.
 ---
 
 ## Search and Get Text from All the Pages of PDF Document

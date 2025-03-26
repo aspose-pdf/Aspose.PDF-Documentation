@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Guide on how to fill AcroForm fields in PDF using the Aspose.PDF for Python
-Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a beginner-level guide on how to fill AcroForm fields in PDF documents using the Aspose.PDF library for Python. The process involves accessing the form fields from the document's form collection and setting their values using the `value` property. An example code snippet demonstrates how to select a `TextBoxField` and modify its value. The article is intended for users interested in PDF document generation and manipulation with Python, offering a practical example to facilitate understanding. The Aspose.PDF library is available for various operating systems and can be downloaded from NuGet. The library is well-rated, with a price of USD 1199, and provides extensive support through multiple platforms.
+AlternativeHeadline: How to fill form field in PDF using Python
+Abstract: The article provides a guide on how to fill a form field in a PDF document using the Aspose.PDF library for Python. It explains the process of accessing a form field from the document's form collection and setting its value via the field's value property. The example code demonstrates how to open a PDF document, iterate through its form fields to find a specific field by its partial name (in this case, "Field 1"), and modify the value of a TextBoxField to "777". Finally, the updated document is saved to an output file. Links to the relevant Aspose documentation are provided for further reference.
 ---
 
 ## Fill Form Field in a PDF Document

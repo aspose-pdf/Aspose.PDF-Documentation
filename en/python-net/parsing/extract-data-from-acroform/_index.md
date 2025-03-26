@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Get Data from AcroForm using the Aspose.PDF for Python
-Abstract: The article provides a comprehensive guide on using Aspose.PDF for Python to extract and export form field data from PDF documents. It details several code snippets demonstrating how to handle PDF forms, including extracting form field data into a dictionary, exporting form data to JSON, XML, FDF, and XFDF formats. The first section describes a method to iterate through form field names, retrieve their values, and store them in a Python dictionary, which is then printed. Another section shows how to serialize this data into a JSON file. Subsequent sections illustrate the process of exporting PDF form data to XML, FDF, and XFDF formats. Each code snippet imports necessary modules, constructs file paths for input and output, and utilizes Aspose.PDF's `Form` class methods to perform the data extraction and export operations efficiently. These examples highlight the versatility of Aspose.PDF for managing PDF form data programmatically.
+AlternativeHeadline: How to Extract Data from AcroForm via Python
+Abstract: The article provides a comprehensive guide on using Aspose.PDF for Python to manage form fields within PDF documents. It details various methods for extracting, manipulating, and exporting form data from PDFs. The article begins by demonstrating how to extract form field values and store them in a dictionary, subsequently outputting the data in JSON format. It further illustrates exporting form data directly to JSON files, enhancing data serialization capabilities. Additionally, the article covers exporting form data to other formats such as XML, FDF (Forms Data Format), and XFDF, which are useful for data interchange and structured data storage. Each section includes Python code snippets to aid in understanding and implementation. Overall, the article serves as a practical resource for developers looking to integrate PDF form handling into their Python applications.
 ---
 
 ## Extract form fields from PDF document

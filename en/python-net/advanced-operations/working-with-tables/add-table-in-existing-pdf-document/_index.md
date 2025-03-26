@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Guide on creating Tables
-Abstract: The article titled "Create or Add Table In PDF using Python" discusses using the Aspose.PDF library for Python via .NET to generate and manipulate tables within PDF documents. It provides a step-by-step guide on creating tables, adding them to existing PDFs, and utilizing features such as column and row spans to merge cells. The article further explores setting table borders, margins, and padding, and demonstrates how to apply AutoFit settings to tables. Additionally, it covers advanced topics like inserting SVG images into table cells, handling page breaks between table rows, and rendering tables on new pages. The article includes practical code snippets that illustrate these functionalities, making it a comprehensive resource for beginners interested in PDF document generation using Python.
+AlternativeHeadline: How to add Table In PDF using Python 
+Abstract: This article provides a comprehensive guide to creating and manipulating tables in PDF documents using the Aspose.PDF for Python via .NET library. It details the steps to add tables to existing PDF files, including setting table borders, margins, and padding. Furthermore, it explores advanced functionalities like merging columns and rows using `col_span` and `row_span`, applying different AutoFit settings, and dynamically retrieving table width. The article also demonstrates inserting SVG images into table cells and enforcing page breaks or rendering tables on new pages. Code snippets illustrate each functionality, showcasing how to effectively manage table layout and content in PDF documents.
 ---
 
 ## Creating Table using Python

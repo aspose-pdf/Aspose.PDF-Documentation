@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to Add Pages in PDF with Python
-Abstract: The article titled "Add Pages in PDF with Python", published by Aspose.PDF Doc Team, provides a beginner-friendly guide on manipulating PDF documents using the Aspose.PDF for Python via .NET API. It focuses on adding pages to a PDF document, detailing how to insert an empty page at any desired position or append one at the end of the document. The article describes the process of utilizing the `PageCollection` class within the API to manage pages. Step-by-step instructions are provided, along with Python code snippets, to demonstrate how to create a `Document` object, utilize methods like `insert` and `add`, and save the modified PDF. This guide is a practical resource for those looking to perform PDF page operations programmatically using Python.
+AlternativeHeadline: How to add Pages in PDF using Python
+Abstract: The article provides a guide on using the Aspose.PDF for Python via .NET API to manipulate pages in a PDF document. It emphasizes the flexibility offered by the API, particularly through the `PageCollection` class, which manages all pages within a PDF. The document details procedures for adding or inserting pages at specific locations in a PDF file. It outlines two primary operations: inserting an empty page at a desired location within the document and adding an empty page at the end of the document. For both operations, the process involves creating a `Document` object, using the `PageCollection`'s `insert` or `add` methods, and saving the modified document. The article includes code snippets demonstrating these tasks, showcasing how straightforward it is to manipulate PDF documents using Python with this API.
 ---
 
 Aspose.PDF for Python via .NET API provides full flexibility to work with pages in a PDF document using Python. It maintains all the pages of a PDF document in [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) that can be used to work with PDF pages.

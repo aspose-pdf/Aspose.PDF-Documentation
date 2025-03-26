@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to add Text stamps in PDF via Python
-Abstract: The article "Add Text stamps in PDF Python" provides an introduction to using the Aspose.PDF for Python library to add text stamps to PDF documents. It covers the basic steps required to utilize the `TextStamp` class, which allows users to customize properties such as font size, style, and color. The article includes code snippets demonstrating how to create a `Document` object, configure a `TextStamp` object, and apply it to a specific page. Additionally, it explains how to align text and set rendering modes for more advanced text styling, including fill and stroke text. The examples illustrate how to add watermarks and adjust text alignment and appearance within PDF files. The article is aimed at beginners and highlights the capabilities of the Aspose.PDF library for enhancing PDF document generation and manipulation.
+AlternativeHeadline: How to add Text stamps in PDF using Python
+Abstract: This article provides a comprehensive guide on adding text stamps to PDF files using the Aspose.PDF library for Python. It outlines the use of the `TextStamp` class to create customizable text stamps with properties such as font size, style, color, and alignment. The article includes code snippets demonstrating how to add a simple text stamp, configure text alignment, and apply advanced rendering modes like fill stroke text. The first section explains the creation of a `Document` and `TextStamp` object, setting text properties, and adding the stamp to a specific page. The second section introduces the `text_alignment` property to align text horizontally and vertically, providing a code example of centering text on a PDF page. The final section discusses rendering modes, demonstrating how to add fill stroke text using a `TextState` object to set stroke color and rendering mode before binding to a stamp. Each section is accompanied by practical examples to facilitate understanding and implementation.
 ---
 
 ## Add Text Stamp with Python

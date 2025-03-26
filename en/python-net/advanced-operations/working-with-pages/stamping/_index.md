@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to stamping PDF with Aspose.PDF using Python
-Abstract: The article titled "Stamping with Aspose.PDF using Python," authored, introduces the process of adding image and text stamps to PDF documents using the Aspose.PDF for Python via .NET library. Stamping, akin to a rubber stamp on paper, provides additional information to a PDF, enhancing its security and usage control. The article is tailored for beginners interested in PDF document generation and highlights specific functionalities such as adding image stamps with quality control and setting them as backgrounds, as well as incorporating text stamps with defined alignments and stroke fills. Aspose.PDF, the publisher of this guide, offers comprehensive support and resources for manipulating PDF documents across various platforms, including Windows, MacOS, and Linux. The software, priced at $1199, is highly rated by users and includes a variety of features for effective PDF manipulation.
+AlternativeHeadline: How to add stamps to PDF using Python
+Abstract: This article discusses the concept and application of stamps in PDF documents, which are akin to rubber stamps on paper documents, providing additional information and enhancing document security. It highlights the use of **Aspose.PDF for Python via .NET** to add image or text stamps to PDFs. The article includes guidance on adding image stamps, controlling image quality, and using image stamps as backgrounds, as well as instructions for adding text stamps, setting alignment, and filling stroke text in a PDF. Readers can explore two sections for detailed instructions - "Add Image stamps in PDF page" and "Add Text stamps in the PDF File".
 ---
 
 A stamp in a PDF document is analogous to applying a rubber stamp on a paper document.

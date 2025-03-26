@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline:  How to add Page Number to PDF with Python
-Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a beginner-friendly guide on adding page numbers to PDF files using Python. It introduces the Aspose.PDF for Python via .NET library, focusing on the `PageNumberStamp` class which allows users to customize and add page number stamps to PDF documents. The article details the process of creating a page number stamp, setting its properties such as format, margins, and font attributes, and applying it to a PDF using the `add_stamp()` method. A practical code snippet demonstrates the steps involved, and a live example is available through a free online web application. The Aspose.PDF for Python via .NET Library is highlighted as a versatile tool for PDF manipulation, compatible with multiple operating systems, and available for download.
+AlternativeHeadline: How to add Page Number to PDF using Python
+Abstract: This article discusses the importance of adding page numbers to documents for easier navigation and introduces the **Aspose.PDF for Python via .NET** library as a tool for achieving this in PDF files. The library utilizes the [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/) class, which offers properties to customize the page number stamp, including format, margins, alignments, and starting number. The process involves creating a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object and a [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/) object, configuring desired properties, and applying the stamp to the PDF pages using the [add_stamp()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) method. The article provides a Python code example demonstrating how to set up and apply page number stamps with customizable font attributes. 
 ---
 
 All the documents must have page numbers in it. The page number makes it easier for the reader to locate different parts of the document.

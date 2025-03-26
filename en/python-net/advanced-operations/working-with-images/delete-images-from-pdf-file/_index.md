@@ -7,8 +7,8 @@ url: /python-net/delete-images-from-pdf-file/
 description: This section explain how to delete Images from PDF File using Aspose.PDF for Python via .NET.
 lastmod: "2025-02-27"
 TechArticle: true 
-AlternativeHeadline: How to Delete Images from PDF File using Python
-Abstract: The article, authored, provides a beginner-level guide on how to delete images from PDF files using the Aspose.PDF for Python via .NET library. It addresses the need for removing images to protect privacy, reduce file size, and prepare PDFs for text extraction or compression. The article includes step-by-step instructions and code snippets for both deleting specific images and removing all images from a PDF document. The tutorial demonstrates the use of Python code to open a PDF, access and delete images from pages, and save the updated document. This guide is published by Aspose.PDF Doc Team, which provides resources for PDF manipulation and offers support across multiple platforms.
+AlternativeHeadline: How to remove images from PDF using Python
+Abstract: The article discusses the various reasons for removing images from PDF files, such as protecting privacy, preventing unauthorized access to sensitive information, reducing file size for easier sharing and storage, and preparing the document for compression or text extraction. It introduces **Aspose.PDF for Python via .NET** as a tool to accomplish this task. The article provides step-by-step instructions and code snippets for deleting specific images or all images from a PDF file using Aspose.PDF. The process involves opening an existing PDF document, deleting images either individually or in bulk, and saving the updated file. The provided Python code demonstrates how to remove images by accessing the document's resources and modifying the desired pages.
 ---
 
 There are many reasons for removing all or specific images from PDFs.

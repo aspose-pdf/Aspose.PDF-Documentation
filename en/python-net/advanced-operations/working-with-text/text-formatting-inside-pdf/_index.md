@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Guide on formatting text in PDF files using Python
-Abstract: The article titled "Text Formatting inside PDF using Python", published by the Aspose.PDF Doc Team, provides a comprehensive guide on formatting text within PDF files using Python, specifically utilizing the Aspose.PDF for .NET library. Aimed at beginners, the article covers various text formatting techniques such as adding line indents, text borders, underlines, and strikeouts. It also explains how to introduce new line feeds, apply gradient shading, and align text within floating box elements. Through detailed code snippets, the article demonstrates the use of classes like `TextFragment`, `TextBuilder`, and `PdfContentEditor` to achieve these formatting tasks. Additionally, it highlights enhancements in text editing capabilities like gradient shading using `PatternColorSpace`. The article serves as a practical resource for developers looking to manipulate PDF text formatting programmatically.
+AlternativeHeadline: How to edit Text in PDF with Python
+Abstract: The article provides a comprehensive guide on various text formatting techniques in PDF documents using Aspose.PDF for .NET. It covers a range of functionalities including adding line indent, creating text borders, underlining text, and adding strikeout text, among others. Each section presents a specific feature with detailed C# code snippets to demonstrate its implementation. For instance, the article explains how to use the `SubsequentLinesIndent` property in the `TextFormattingOptions` class to set line indents, and how to draw borders around text using `TextBuilder` and `TextState`. It also delves into adding text with line feeds using `TextParagraph` and `TextBuilder`, applying gradient shading using `PatternColorSpace`, and aligning text within a `FloatingBox` element. The guide emphasizes practical usage by incorporating complete code examples available in the Aspose.PDF GitHub repository, enabling developers to enhance their PDF document editing capabilities efficiently.
 ---
 
 ## How to add Line Indent to PDF

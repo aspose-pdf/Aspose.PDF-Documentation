@@ -7,8 +7,8 @@ url: /python-net/add-image-to-existing-pdf-file/
 description: This section describes how to add image to existing PDF file using Python library.
 lastmod: "2025-02-27"
 TechArticle: true 
-AlternativeHeadline: How to Add Image to PDF using Python
-Abstract: The article "Add Image to PDF using Python" provides a beginner-friendly tutorial on embedding images into existing PDF documents using the Aspose.PDF for Python via .NET library. The guide outlines two distinct methods for achieving this the direct method using the `Document` and `Page` classes, and the alternative method using the `PdfFileMend` class from the Facades package. For the direct method, users load the PDF, specify the target page and image position, and save the document. The Facades approach simplifies the process by utilizing the `AddImage` method, which requires specifying the image and its coordinates, followed by saving the document and closing the `PdfFileMend` object. The article serves as an instructional resource for those interested in PDF document generation and manipulation with Python, backed by the Aspose.PDF library.
+AlternativeHeadline: How to add images into PDf using Python
+Abstract: This article provides guidance on adding images to existing PDF files using Python with the Aspose.PDF library. Two methods are outlined for achieving this. The first method involves using the `Document` class from Aspose.PDF, where the user loads the PDF, specifies the page number, and uses the `add_image` method of the `Page` class to position the image. The document is then saved using the `save()` method. The second method utilizes the `PdfFileMend` class from the Aspose.PDF.Facades namespace, which offers a simpler interface. Here, the `add_image()` method is invoked to add the image to the specified page and coordinates, followed by saving the updated PDF and closing the `PdfFileMend` object. Code snippets are provided for both methods to demonstrate the process.
 ---
 
 ## Add Image in an Existing PDF File

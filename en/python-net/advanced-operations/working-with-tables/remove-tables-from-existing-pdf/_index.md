@@ -9,8 +9,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to remove Tables from existing PDF
-Abstract: The article, authored, provides a beginner-level guide on how to remove tables from existing PDF documents using Aspose.PDF for Python via .NET. It discusses the use of the `TableAbsorber` class, which can identify and manipulate tables within a PDF. The article offers code snippets demonstrating how to utilize the `remove()` method of the `TableAbsorber` class to delete single or multiple tables from PDF documents. This functionality is particularly useful for users who need to manage and edit tables in PDF files dynamically. The article is published by the Aspose.PDF Doc Team and is targeted at users interested in PDF document generation and manipulation.
+AlternativeHeadline: How to delete tables from PDF using Python
+Abstract: This article discusses the functionality of Aspose.PDF for Python via .NET, specifically focusing on the manipulation of tables within PDF documents. The library allows users to insert or create tables in both new and existing PDF files, as well as manipulate or remove tables from existing PDFs. The article introduces the `TableAbsorber` class, which is crucial for identifying and interacting with tables in a PDF. A new method, `remove()`, has been added to enable the removal of tables. The document provides two code snippets - one demonstrating how to remove a single table from a PDF, and another illustrating the removal of multiple tables. These examples highlight the practical application of the `TableAbsorber` class to achieve table removal from PDF documents.
 ---
 
 {{% alert color="primary" %}}

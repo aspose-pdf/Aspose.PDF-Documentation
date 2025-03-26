@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Guide on extracting AcroForm data from PDF documents using Python
-Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a beginner-level guide on extracting AcroForm data from PDF documents using Python. It focuses on utilizing the Aspose.PDF for Python library to navigate through form fields and retrieve their values. The article includes a practical code snippet demonstrating the process of accessing and printing the names and values of all fields in a PDF document. This guide is part of the broader topic of PDF document generation and manipulation, and it highlights the functionality of the Aspose.PDF for Python library, which is available for various operating systems and can be downloaded from the provided link.
+AlternativeHeadline: How to get Form Data from PDF using Python
+Abstract: This article provides a guide on extracting data from form fields within a PDF document using Python. It describes how to navigate through all the fields using the Aspose.PDF library, specifically by accessing the `Form` collection and utilizing the `Field` type and its `value` property. A sample Python code snippet is included, demonstrating how to open a PDF document, iterate through its form fields, and print each field's name and value. This method is useful for programmatically retrieving form data from PDF files.
 ---
 
 ## Extract data from form

@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Overview of the features offered by Aspose.PDF for Python via .NET
-Abstract: Aspose.PDF for Python via .NET is a comprehensive PDF processing API enabling developers to manage PDF documents without Microsoft Office® or Adobe Acrobat. The library supports a range of PDF standards and specifications and offers functionalities such as exporting PDFs to image formats (BMP, GIF, JPEG, PNG), setting document metadata, configuring page properties, and handling text, hyperlinks, and attachments. Additionally, it facilitates the conversion of various formats like EPUB, Markdown, XPS, and XML to PDF and vice versa, ensuring high performance and quality. Aspose.PDF for Python also provides free online applications for popular functionalities. Further information is available on supported file formats, key features, system requirements, installation, licensing, and technical support.
+AlternativeHeadline: Overview of key-features of Aspose.PDF for Python
+Abstract: Aspose.PDF for Python via .NET is a comprehensive PDF processing API designed for developers to handle PDF documents without relying on Microsoft Office or Adobe Acrobat Automation. The library supports a wide range of functionality, including adherence to established PDF standards and specifications, the ability to read and export PDFs in various image formats such as BMP, GIF, JPEG, and PNG, and the capability to set basic document information like author and creator. It also allows the configuration of PDF page properties, such as width, height, cropbox, and bleedbox, as well as features like page numbering, bookmark levels, and page sizes. Users can manipulate text, paragraphs, headings, hyperlinks, graphs, and attachments within PDFs. Additionally, Aspose.PDF for Python offers efficient conversion capabilities from formats like EPUB, Markdown, Text, XPS, PostScript, XML, and LaTex to PDF, and vice versa, ensuring high performance and quality.
 ---
 
 _This page is an overview of  Aspose.PDF for Python features._

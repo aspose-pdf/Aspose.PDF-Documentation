@@ -9,8 +9,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Get text from stamp annotations using the Aspose.PDF for Python
-Abstract: The article introduces a method for extracting text from stamp annotations in PDF documents using the Aspose.PDF library for Python. It outlines a step-by-step process to achieve this task - loading the PDF document, accessing its first page, iterating through annotations to identify stamp annotations, initializing a text absorber, extracting appearance information, and finally extracting text from the appearance stream to print it. The article provides a Python code snippet that demonstrates how to implement these steps, showcasing the use of Aspose.PDF's functionalities to handle and extract data from stamp annotations effectively.
+AlternativeHeadline: How to Extract Text From Stamps via Python
+Abstract: The article provides a guide on how to use Aspose.PDF for Python to extract text from stamp annotations within a PDF document. It outlines a series of steps necessary to accomplish this task, starting with loading the PDF document and accessing its first page. The process involves iterating through the annotations present on the page and checking for stamp annotations specifically. Once identified, a Text Absorber is initialized to extract text from the appearance stream of the stamp annotations. The extracted text is then printed. The article includes a Python code snippet demonstrating the implementation of these steps using the Aspose.PDF library, showcasing how to access and process stamp annotations to retrieve textual content.
 ---
 
 ## Extract Text from Stamp Annotations

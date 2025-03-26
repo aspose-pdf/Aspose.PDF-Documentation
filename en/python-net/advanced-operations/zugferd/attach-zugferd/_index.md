@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to create PDF/3-A compliant PDF
-Abstract: This article provides a step-by-step guide on how to attach a ZUGFeRD-compliant XML file to a PDF document using the Aspose.PDF library. The process involves several key steps importing the library, defining paths for input and output files, loading the PDF document, creating a `FileSpecification` object for the XML invoice metadata, and setting the MIME type and relationship properties. The XML file is then added to the PDF's embedded files collection, effectively attaching it as invoice metadata. The document is subsequently converted to the PDF/A-3A format, ensuring compliance with specific archival standards. Finally, the modified PDF, now containing the embedded ZUGFeRD data, is saved. The provided Python code illustrates the implementation of these steps, highlighting the use of Aspose.PDF's functionalities to achieve the desired outcome.
+AlternativeHeadline: How to attach ZUGFeRD to a PDF document 
+Abstract: The article provides a step-by-step guide on how to attach ZUGFeRD (a format for electronic invoices) to a PDF document using the Aspose.PDF library. The procedure begins with importing the necessary library and setting up the directory paths for input and output files. It involves loading the target PDF file into a Document object, and creating a FileSpecification object for the XML invoice metadata file. Key properties like `mime_type` and `af_relationship` are set to ensure proper integration of the metadata. The XML file is then added to the PDF's embedded files collection, effectively attaching it as metadata. Subsequently, the PDF document is converted to the PDF/A-3A format, which is suitable for archiving electronic documents, before saving the final PDF with the embedded ZUGFeRD. The article concludes with a Python code snippet that demonstrates the implementation of these steps, showcasing the integration of ZUGFeRD with a PDF for enhanced document management.
 ---
 
 ## Attach ZUGFeRD to PDF

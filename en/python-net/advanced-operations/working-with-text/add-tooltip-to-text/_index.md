@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to add tooltip to the text fragment in PDF
-Abstract: The article "PDF Tooltip using Python" provides a guide on adding tooltips and interactive floating text elements to PDF documents using Python and the Aspose.PDF library. The article is aimed at beginners and includes code snippets demonstrating two key functionalities adding tooltips to specific text fragments in a PDF and creating hidden text blocks that appear on mouse hover. The first code example shows how to use the `TextFragmentAbsorber` to locate text and add invisible buttons with tooltips, while the second example details the creation of floating text using `TextBoxField` and button fields to manage its visibility. The article is published by the Aspose.PDF Doc Team and offers resources for further exploration of the Aspose.PDF for Python via .NET Library.
+AlternativeHeadline: Add tooltip to the text fragment in PDF using Python
+Abstract: This article provides two Python code examples for enhancing interactivity in PDF documents using the Aspose.PDF library. The first example demonstrates how to add tooltips to specific text fragments within a PDF. This is achieved by creating invisible button fields over the text fragments, where the `alternate_name` property is set to define the tooltip content. This allows tooltips to appear when users hover their mouse over the designated text.The second example extends this interactivity by showing how to create floating text blocks that become visible when the mouse hovers over a specified area. The process begins with creating a new PDF document containing a text fragment. This fragment's position is then used to define a hidden `TextBoxField` that displays specified text. An invisible button field is created at the position of the original text fragment, and HideAction events are assigned to it. These events dictate that the floating text block appears when the mouse enters the area and disappears when it exits.
 ---
 
 ## Add Tooltip to Searched Text by adding Invisible Button

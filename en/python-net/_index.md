@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Documentation Pages of Aspose.PDF for Python
-Abstract: Aspose.PDF for Python via .NET is a versatile .NET component designed to enable developers to programmatically create PDF documents, ranging from simple to complex, using Python. It supports the insertion of various elements such as tables, graphs, images, hyperlinks, and custom fonts into PDFs, along with offering compression and robust security features for document protection. A notable feature of Aspose.PDF for Python via .NET is its dual capability to create PDFs via an API and from XML templates. The article provides an overview of various chapters and resources that are essential for getting started with the component, including sections on basic and advanced operations, document conversion, and parsing. Additionally, it offers links to the product's key features, release notes, and support resources, ensuring comprehensive assistance for users.
+AlternativeHeadline: Documentation Guide of Aspose.PDF for Python via .NET
+Abstract: Aspose.PDF for Python via .NET is a versatile component designed for developers to programmatically create and manipulate PDF documents using Python in conjunction with .NET. This tool supports a wide range of functionalities, including the insertion of tables, graphs, images, hyperlinks, and custom fonts, as well as PDF compression. It also offers robust security features to ensure document protection. Notably, developers can generate PDF documents through an API or from XML templates. The documentation is organized into several chapters covering new features, an overview, getting started guides, basic and advanced operations, document conversion, and parsing techniques. Additional resources include feature highlights, release notes, product pages, download links, installation instructions, an API reference guide, and access to support forums and helpdesks.
 ---
 
 ![Aspose.PDF for Python via .NET logo image](aspose_pdf-for-python-net.png)

@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Various types of figure annotations in PDF documents using the Aspose.PDF library for Python
-Abstract: The article "Add Figures Annotations using Python" provides a comprehensive guide on creating, retrieving, and deleting various types of figure annotations in PDF documents using the Aspose.PDF library for Python. It focuses on beginner-level proficiency and covers square, circle, polygon, and polyline annotations. The article outlines the necessary steps for each annotation type, including loading the PDF, creating annotations with specified parameters, and appending them to the document. Code snippets are provided for practical demonstrations of how to add, get, and delete these annotations. The article also includes links to the Aspose.PDF documentation for further reference. The Aspose.PDF library is a versatile tool for PDF manipulation across various operating systems, available for download via NuGet.
+AlternativeHeadline: Guide on how to manipulate Figures annotations in PDF
+Abstract: This article provides a comprehensive guide on adding, retrieving, and deleting square, circle, polygon, and polyline annotations in PDF documents using Aspose.PDF for Python. Square and circle annotations visually highlight specific areas on a PDF page with rectangular and elliptical shapes, respectively. The article includes step-by-step instructions and Python code snippets for creating these annotations by loading a PDF file, configuring annotation properties such as title, color, and opacity, and appending them to the PDF pages. Additionally, the article details methods to retrieve annotations by type, printing their rectangular dimensions, and deleting them from the PDF document. Polygon and polyline annotations are also covered, wherein polygons are defined by a series of connected vertices forming a closed shape, while polylines connect vertices in an open-ended manner. The document provides code examples to illustrate the processes of adding these annotations to a PDF, as well as methods for accessing and removing them.
+
 ---
 
 ## Add Square and Circle Annotations

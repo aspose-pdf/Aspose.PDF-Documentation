@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to save PDF file in Aspose.PDF for Python
-Abstract: The article provides guidance on saving PDF documents using the Aspose.PDF library in Python. It covers three main topics - saving a PDF document to the file system, saving to a stream, and saving in PDF/A or PDF/X formats. The document-saving process to the file system and stream involves using the `save()` method from the `Document` class, allowing for straightforward manipulation such as adding pages. For saving in PDF/A or PDF/X formats, the article highlights the ISO standards pertinent to each format, emphasizing their use for archiving and graphics exchange, respectively. It describes the necessity of using the `convert` method to prepare documents for these specific formats before saving. Code snippets are provided to illustrate each process, demonstrating the practical implementation of these tasks.
+AlternativeHeadline: Saving PDF documents using the Aspose.PDF library in Python
+Abstract: The article provides guidance on saving PDF documents using the Aspose.PDF library in Python. It outlines three primary methods for saving PDFs - to the file system, to a stream, and in specific formats like PDF/A or PDF/X. The `save()` method of the `Document` class is central to these operations. To save a PDF to the file system, a document can be created or manipulated, such as adding a new page, and then saved directly to a path. For saving to a stream, the `Save` method's overloads allow writing a document to a stream object. Additionally, the article explains how to save documents in the PDF/A or PDF/X formats, which are standards for long-term archiving and graphics exchange, respectively. This process requires preparing the document with the `convert` method before saving it. The provided Python code snippets demonstrate each approach, illustrating the practical application of these methods.
 ---
 
 ## Save PDF document to file system

@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to move PDF pages programmatically via Python
-Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a beginner-friendly guide on manipulating PDF documents using Python, specifically through the Aspose.PDF for Python via .NET library. It outlines methods for programmatically moving pages within and between PDF documents. The article covers three main scenarios moving a page from one document to another, transferring multiple pages, and repositioning a page within the same document. Each section includes step-by-step instructions and Python code snippets to illustrate the process. The solutions involve creating `Document` objects for source and destination files, manipulating `PageCollection` objects to add and remove pages, and saving the modified documents. This technical guide is designed for developers looking to automate PDF page management tasks using Python.
+AlternativeHeadline: Moving Pages between PDF documents using Python
+Abstract: The article provides a comprehensive guide on moving pages between PDF documents or within a single PDF document using Python, specifically utilizing the Aspose.PDF library. It outlines step-by-step processes for three scenarios: moving a single page from one PDF to another, transferring multiple pages, and relocating a page within the same document. Each scenario involves creating `Document` class objects for source and destination PDFs, manipulating pages through the `PageCollection` class, and utilizing the `add()`, `delete()`, and `save()` methods to achieve the desired page reorganization. Code snippets are provided for practical implementation, demonstrating how to move pages efficiently using Python scripts.
 ---
 
 ## Moving a Page from one PDF Document to Another

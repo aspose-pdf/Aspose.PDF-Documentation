@@ -1,5 +1,5 @@
 ---
-title: Extract Images from PDF Python
+title: Extract Images from PDF using Python
 linktitle: Extract Images from PDF
 type: docs
 weight: 20
@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Get Images from PDF using the Aspose.PDF for Python
-Abstract: This article provides a Python code snippet for extracting embedded images from a PDF document using the Aspose.PDF library. The process involves three main steps - loading the PDF document, accessing the image resource, and saving the extracted image to a file. The script imports necessary modules, including Aspose.PDF and file handling libraries, to facilitate the image extraction. The code demonstrates how to specify the input and output file paths, load a PDF document, access an image from the document's resources, and save the image to a separate file for further analysis, editing, or reuse in other documents.
+AlternativeHeadline: How to Extract Images from PDF via Python
+Abstract: This article provides a concise guide on extracting embedded images from a PDF document using Python. The process involves three main steps - loading the PDF document, accessing the image resource, and saving the image to a file. The code snippet utilizes the Aspose.PDF library to facilitate these operations. Initially, the PDF document is loaded from a specified path, and the desired image is accessed from the resources of the first page. Finally, the image is saved to a specified output file using a file I/O operation, allowing for further analysis, editing, or reuse in other documents.
 ---
 
 This code snippets extracts embedded images from a PDF document for separate analysis, editing, or reuse in other documents:

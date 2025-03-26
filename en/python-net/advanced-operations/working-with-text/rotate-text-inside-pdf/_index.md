@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to rotate Text Inside PDF using Python
-Abstract: The article titled "Rotate Text Inside PDF using Python", published by the Aspose.PDF Doc Team, provides a beginner-level tutorial on how to rotate text within PDF documents using the Aspose.PDF library for .NET. The guide explores various methods to implement text rotation, including using the `TextFragment` and `TextBuilder` classes as well as `TextParagraph`. It demonstrates how to rotate individual text fragments and entire paragraphs at specified angles, utilizing the Rotation property. The article includes code snippets in C# for practical implementation, illustrating scenarios such as rotating text fragments to 45, 90, 270, and 315 degrees. This comprehensive guide is designed for those interested in PDF document generation and manipulation through Python and .NET environments, offering step-by-step instructions to enhance document presentation by rotating text elements.
+AlternativeHeadline: How to rotate Text in PDF with Python
+Abstract: The article provides a detailed guide on how to rotate text within a PDF document using the Aspose.PDF library for .NET. It describes the utilization of the `Rotation` property of the `TextFragment` class to achieve text rotation at various angles, which is useful in multiple document generation scenarios. Demonstrates creating text fragments with specified rotation angles and adding them to a PDF page using a `TextBuilder'. Illustrates how to append rotated text fragments to a `TextParagraph` and then add the paragraph to a PDF page. Shows how to add rotated text fragments directly to the page's paragraph collection.Explains rotating an entire paragraph with multiple text fragments.
 ---
 
 ## Rotate Text Inside PDF using Rotation Property

@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Advanced operations for working with PDF documents with Aspose.PDF for Python
-Abstract: This article published by the Aspose.PDF Doc Team, explores advanced operations with PDF files using Python via .NET. It is aimed at beginner-level users and covers a wide range of functionalities, from manipulating entire documents to detailed operations on pages, images, attachments, and annotations. The article explains how to compress, split, and merge documents, as well as add, move, or remove pages. It also delves into adding watermarks and stamps, handling images and attachments, and managing navigation and interaction within PDFs. Furthermore, the article provides insights into working with annotations, tables, forms, and text, including adding, formatting, and extracting data. This comprehensive guide serves as a resource for developers looking to enhance their PDF manipulation skills programmatically.
+AlternativeHeadline: The Advanced Operations section with Python
+Abstract: The Advanced Operations section provides comprehensive guidance on programmatically handling existing PDF files, regardless of their origin, using various tools and techniques. This section extends the foundational skills discussed in Basic Operations by exploring advanced functionalities. 
 ---
 
 **Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF as discussed in [Basic Operations](/pdf/python-net/basic-operations/), or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.

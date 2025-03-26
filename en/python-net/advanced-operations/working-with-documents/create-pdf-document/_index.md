@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Create the PDF documents via Python
-Abstract: The article provides a beginner-level guide on creating PDF documents using the Aspose.PDF for Python via .NET API. This API facilitates the manipulation of PDF files, enabling the creation, loading, modification, and conversion of these files within Python applications using .NET. The article outlines a straightforward process to generate a simple PDF document. The steps include initializing a `Document` object, adding a `Page` object to the document, inserting a `TextFragment` into the page, and finally saving the PDF. A sample Python code snippet is provided to illustrate the process, demonstrating how to create a PDF with a "Hello World!" message. The article is published by the Aspose.PDF Doc Team, with additional resources and contact information available for further support.
+AlternativeHeadline: Create PDF File with Python
+Abstract: Aspose.PDF for Python via .NET is a versatile API designed for developers to manipulate PDF files within Python applications targeting the .NET framework. It enables users to create, load, modify, and convert PDF documents effortlessly. This article provides a step-by-step guide to creating a simple PDF file using Aspose.PDF. The process involves initializing a `Document` object, adding a `Page` to the document, inserting a `TextFragment` into the page's paragraphs, and saving the file as a PDF. The included Python code snippet demonstrates these steps by creating a PDF document that contains the text "Hello World!". This API simplifies PDF handling with minimal code, enhancing productivity for developers working with PDFs in .NET environments.
 ---
 
 **Aspose.PDF for Python via .NET** is a PDF manipulation API that allows developers to create, load, modify, and convert PDF files directly from Python for .NET applications with just a few lines of code.

@@ -10,8 +10,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to determinate a line break
-Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a beginner-level guide on determining line breaks within a multi-line TextFragment in PDF documents using Python. It introduces a function, `track_line_breaking()`, which demonstrates how to create a PDF with multi-line text and extract line-breaking notifications. The process involves creating a new PDF document, adding a page, and inserting TextFragments with simulated line breaks. Each TextFragment is assigned a font size of 20 points. After saving the document, line-breaking notifications are extracted and written to a text file. This example highlights the use of Aspose.PDF for .NET to understand text layout within a document.
+AlternativeHeadline: How to Determine Line Break in PDF using Python
+Abstract: This article presents a method for tracking the line-breaking behavior of multi-line `TextFragment` objects within a PDF document using a code snippet based on the Aspose.PDF library. The core function, `track_line_breaking()`, is designed to generate a PDF document and a corresponding text file that details the line-breaking notifications. The process involves creating a new PDF document, adding a page, and inserting four instances of `TextFragment` with pre-inserted line breaks to simulate multi-line text. Each text fragment is set to a font size of 20 points before being added to the document. After saving the PDF, the function extracts line-breaking notifications from the document's second page using the `get_notifications()` method and writes these to a text file. This example demonstrates how to programmatically create a PDF with multi-line text and analyze its layout by extracting line-break information, offering insights into text rendering within PDF documents.
 ---
 
 ## Track Line Breaking of Multi-Line TextFragment
