@@ -611,7 +611,7 @@ private static void AdjustPosition()
 
 Aspose.PDF enables the automatic generation of basic logical structure markup when converting a document to PDF/UA-1. Users may then manually improve upon this basic logical structure, providing additional insights regarding the document contents.
 
-To generate a logical document structure, create an instance of the [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/) class, set its [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/enableautotagging/) to `true`, and assign it to the [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/) property.
+To generate a logical document structure, create an instance of the [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/) class, set its [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/net/aspose.pdf/autotaggingsettings/enableautotagging/) property to `true`, and assign it to the [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/) property.
 
 {{% alert color="warning" %}}
 If the document already has logical structure tags, enabling auto-tagging will destroy the existing logical structure and generate a new one.
@@ -624,10 +624,10 @@ If the document already has logical structure tags, enabling auto-tagging will d
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
@@ -661,10 +661,10 @@ private static void ConvertToPdfUAWithAutomaticTagging()
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);

@@ -1,6 +1,6 @@
 ---
 title: C#を使用してタグ付きPDFを作成する
-linktitle: タグ付きPDFの作成
+linktitle: タグ付きPDFを作成する
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
-    "wordcount": "2295",
+    "wordcount": "2626",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,14 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-tagged-pdf/"
     },
-    "dateModified": "2025-03-24",
+    "dateModified": "2025-03-26",
     "description": "この記事では、Aspose.PDF for .NETを使用してタグ付きPDFドキュメントの構造要素をプログラムで作成する方法を説明します。"
 }
 </script>
 
 タグ付きPDFを作成することは、PDF/UA要件に従って文書を検証できるようにするために、文書に特定の要素を追加（または作成）することを意味します。これらの要素は、しばしば構造要素と呼ばれます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
 ## タグ付きPDFの作成（シンプルなシナリオ）
 
@@ -261,6 +261,7 @@ private static void CreateTaggedPdfDocument02()
 
     Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
     paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
+    
     paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
             Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
@@ -365,8 +366,6 @@ private static void AddStyle()
 {{< /tab >}}
 {{< /tabs >}}
 
-タグ付きPDFドキュメントの構造要素を説明するために、Aspose.PDFは[IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement)クラスを提供しています。次のコードスニペットは、タグ付きPDFドキュメントで構造要素を説明する方法を示しています：
-
 ## 構造要素の図示
 
 タグ付きPDFドキュメント内の構造要素を図示するために、Aspose.PDFは[IllustrationElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/illustrationelement)クラスを提供します。次のコードスニペットは、タグ付きPDFドキュメント内の構造要素を図示する方法を示しています：
@@ -396,7 +395,7 @@ private static void IllustrateStructureElements()
         figure1.Title = "Image 1";
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
-
+        
         // Adjust position
         figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
@@ -438,7 +437,7 @@ private static void IllustrateStructureElements()
     figure1.Title = "Image 1";
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
-
+    
     // Adjust position
     figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
     {
@@ -463,7 +462,7 @@ Aspose.PDF for .NETは、PDF/UAタグ付きPDFドキュメントを検証する�
 - XObjectsのチェック。
 - アクションのチェック。
 - オプションのコンテンツのチェック。
-- 埋め込みファイルのチェック。
+- 埋め込まれたファイルのチェック。
 - Acroformフィールドのチェック（自然言語と代替名およびデジタル署名の検証）。
 - XFAフォームフィールドのチェック。
 - セキュリティ設定のチェック。
@@ -507,9 +506,9 @@ private static void ValidateTaggedPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-## テキスト構造の位置を調整する
+## テキスト構造の位置調整
 
-以下のコードスニペットは、タグ付きPDFドキュメント内でテキスト構造の位置を調整する方法を示しています：
+以下のコードスニペットは、タグ付きPDFドキュメント内のテキスト構造の位置を調整する方法を示しています：
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -610,12 +609,12 @@ private static void AdjustPosition()
 
 ## PDF/UA-1変換によるタグ付きPDFの自動作成
 
-Aspose.PDFは、文書がPDF/UA-1に変換されるときに基本的な論理構造マークアップを自動的に生成することを許可します。ユーザーは、その後、この基本的な論理構造を手動で改善し、文書の内容に関する追加の洞察を提供できます。
+Aspose.PDFは、文書をPDF/UA-1に変換する際に基本的な論理構造マークアップの自動生成を可能にします。ユーザーは、その後、この基本的な論理構造を手動で改善し、文書の内容に関する追加の洞察を提供できます。
 
 論理文書構造を生成するには、[Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf/autotaggingsettings/)クラスのインスタンスを作成し、その[AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/ja/net/aspose.pdf/autotaggingsettings/enableautotagging/)を`true`に設定し、[PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/)プロパティに割り当てます。
 
 {{% alert color="warning" %}}
-文書にすでに論理構造タグがある場合、自動タグ付けを有効にすると既存の論理構造が破壊され、新しいものが生成されることに注意してください。
+文書にすでに論理構造タグがある場合、オートタグ付けを有効にすると既存の論理構造が破壊され、新しいものが生成されます。
 {{% /alert %}}
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -625,10 +624,10 @@ Aspose.PDFは、文書がPDF/UA-1に変換されるときに基本的な論理�
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
@@ -662,10 +661,10 @@ private static void ConvertToPdfUAWithAutomaticTagging()
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);

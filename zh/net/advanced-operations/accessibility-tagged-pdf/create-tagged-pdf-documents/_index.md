@@ -2,6 +2,8 @@
 title: 使用 C# 创建标记 PDF
 linktitle: 创建标记 PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /zh/net/create-tagged-pdf/
 description: 本文解释了如何使用 Aspose.PDF for .NET 以编程方式为标记 PDF 文档创建结构元素。
@@ -16,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create Tagged PDF using C#",
     "alternativeHeadline": "Programmatically create tagged PDFs using C#",
-    "abstract": "使用 C# 和 Aspose.PDF 以编程方式创建标记 PDF 文档，确保符合 PDF/UA 标准。此功能支持创建具有标题和段落等元素的结构化 PDF 文档，支持嵌套结构和可访问性的文本样式。该库还包括验证，以确认符合 PDF/UA 标准。",
+    "abstract": "使用 C# 和 Aspose.PDF 以编程方式创建标记 PDF 文档，确保 PDF/UA 合规性。此功能支持创建具有标题和段落等元素的结构化 PDF 文档，支持嵌套结构和可访问性的文本样式。该库还包括验证以确认符合 PDF/UA 标准",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
-    "wordcount": "2341",
+    "wordcount": "2671",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-tagged-pdf/"
     },
-    "dateModified": "2025-03-24",
+    "dateModified": "2025-03-26",
     "description": "本文解释了如何使用 Aspose.PDF for .NET 以编程方式为标记 PDF 文档创建结构元素。"
 }
 </script>
@@ -89,11 +91,10 @@ sitemap:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateTaggedPdfDocument01()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -123,7 +124,7 @@ private static void CreateTaggedPdfDocument01()
         rootElement.AppendChild(mainHeader);
         rootElement.AppendChild(paragraphElement);
 
-        // Save Tagged PDF document
+        // Save Tagged PDF Document
         document.Save(dataDir + "TaggedPdfDocument_out.pdf");
     }
 }
@@ -133,11 +134,10 @@ private static void CreateTaggedPdfDocument01()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateTaggedPdfDocument01()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
     using var document = new Aspose.Pdf.Document();
@@ -174,13 +174,13 @@ private static void CreateTaggedPdfDocument01()
 {{< /tab >}}
 {{< /tabs >}}
 
-创建后，我们将得到以下文档：
+创建后，我们将获得以下文档：
 
-![带有 2 个元素的标记 PDF 文档 - 标题和段落](taggedpdf-01.png)
+![包含 2 个元素 - 标题和段落的标记 PDF 文档](taggedpdf-01.png)
 
 ## 创建带有嵌套元素的标记 PDF（创建结构元素树）
 
-在某些情况下，我们需要创建更复杂的结构，例如在段落中放置引号。 
+在某些情况下，我们需要创建更复杂的结构，例如在段落中放置引号。
 为了创建结构元素树，我们应该使用 [AppendChild](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/element/methods/appendchild) 方法。
 以下代码片段显示了如何创建标记 PDF 文档的结构元素树：
 
@@ -188,11 +188,10 @@ private static void CreateTaggedPdfDocument01()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateTaggedPdfDocument02()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
@@ -210,7 +209,10 @@ private static void CreateTaggedPdfDocument02()
 
         Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
         paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
-        paragraphWithQuotes.StructureTextState.MarginInfo = new Aspose.Pdf.MarginInfo(10, 5, 10, 5);
+        paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+            {
+                Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
+            });
 
         Aspose.Pdf.LogicalStructure.SpanElement spanElement1 = taggedContent.CreateSpanElement();
         spanElement1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
@@ -238,11 +240,10 @@ private static void CreateTaggedPdfDocument02()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateTaggedPdfDocument02()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
     using var document = new Aspose.Pdf.Document();
@@ -260,7 +261,11 @@ private static void CreateTaggedPdfDocument02()
 
     Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
     paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
-    paragraphWithQuotes.StructureTextState.MarginInfo = new Aspose.Pdf.MarginInfo(10, 5, 10, 5);
+    
+    paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+        {
+            Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
+        });
 
     Aspose.Pdf.LogicalStructure.SpanElement spanElement1 = taggedContent.CreateSpanElement();
     spanElement1.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ");
@@ -285,8 +290,8 @@ private static void CreateTaggedPdfDocument02()
 {{< /tab >}}
 {{< /tabs >}}
 
-创建后，我们将得到以下文档：
-![带有嵌套元素的标记 PDF 文档 - span 和引号](taggedpdf-02.png)
+创建后，我们将获得以下文档：
+![带有嵌套元素 - span 和引号的标记 PDF 文档](taggedpdf-02.png)
 
 ## 样式文本结构
 
@@ -296,11 +301,10 @@ private static void CreateTaggedPdfDocument02()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddStyle()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
@@ -321,7 +325,7 @@ private static void AddStyle()
 
         p.SetText("Red italic text.");
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "StyleTextStructure_out.pdf");
     }
 }
@@ -331,11 +335,10 @@ private static void AddStyle()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddStyle()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
     using var document = new Aspose.Pdf.Document();
@@ -356,7 +359,7 @@ private static void AddStyle()
 
     p.SetText("Red italic text.");
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "StyleTextStructure_out.pdf");
 }
 ```
@@ -371,11 +374,10 @@ private static void AddStyle()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void IllustrateStructureElements()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
@@ -393,8 +395,18 @@ private static void IllustrateStructureElements()
         figure1.Title = "Image 1";
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
+        
+        // Adjust position
+        figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+        {
+            Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 50,
+                Top = 20
+            },
+        });
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "IllustrationStructureElements_out.pdf");
     }
 }
@@ -404,11 +416,10 @@ private static void IllustrateStructureElements()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void IllustrateStructureElements()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
     using var document = new Aspose.Pdf.Document();
@@ -426,8 +437,18 @@ private static void IllustrateStructureElements()
     figure1.Title = "Image 1";
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
+    
+    // Adjust position
+    figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+    {
+        Margin = new Aspose.Pdf.MarginInfo
+        {
+            Left = 50,
+            Top = 20
+        },
+    });
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "IllustrationStructureElements_out.pdf");
 }
 ```
@@ -442,7 +463,7 @@ Aspose.PDF for .NET 提供了验证 PDF/UA 标记 PDF 文档的能力。PDF/UA �
 - 检查操作。
 - 检查可选内容。
 - 检查嵌入文件。
-- 检查 Acroform 字段（验证自然语言、替代名称和数字签名）。
+- 检查 Acroform 字段（验证自然语言和替代名称及数字签名）。
 - 检查 XFA 表单字段。
 - 检查安全设置。
 - 检查导航。
@@ -454,11 +475,10 @@ Aspose.PDF for .NET 提供了验证 PDF/UA 标记 PDF 文档的能力。PDF/UA �
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ValidateTaggedPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "StructureElements.pdf"))
@@ -472,11 +492,10 @@ private static void ValidateTaggedPdf()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ValidateTaggedPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "StructureElements.pdf");
@@ -489,7 +508,7 @@ private static void ValidateTaggedPdf()
 
 ## 调整文本结构的位置
 
-以下代码片段展示了如何在标记的 PDF 文档中调整文本结构的位置：
+以下代码片段显示了如何调整标记 PDF 文档中文本结构的位置：
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -590,12 +609,12 @@ private static void AdjustPosition()
 
 ## 使用 PDF/UA-1 转换自动创建标记 PDF
 
-Aspose.PDF 允许在将文档转换为 PDF/UA-1 时自动生成基本的逻辑结构标记。用户可以手动改进此基本逻辑结构，提供有关文档内容的更多见解。
+Aspose.PDF 在将文档转换为 PDF/UA-1 时启用基本逻辑结构标记的自动生成。用户可以手动改进此基本逻辑结构，提供有关文档内容的更多见解。
 
 要生成逻辑文档结构，请创建 [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf/autotaggingsettings/) 类的实例，将其 [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/zh/net/aspose.pdf/autotaggingsettings/enableautotagging/) 设置为 `true`，并将其分配给 [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/) 属性。
 
 {{% alert color="warning" %}}
-请注意，如果文档已经具有逻辑结构标签，则启用自动标记将破坏现有的逻辑结构并生成一个新的结构。
+如果文档已经具有逻辑结构标签，则启用自动标记将破坏现有的逻辑结构并生成一个新的。
 {{% /alert %}}
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -605,10 +624,10 @@ Aspose.PDF 允许在将文档转换为 PDF/UA-1 时自动生成基本的逻辑�
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
@@ -642,10 +661,10 @@ private static void ConvertToPdfUAWithAutomaticTagging()
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);

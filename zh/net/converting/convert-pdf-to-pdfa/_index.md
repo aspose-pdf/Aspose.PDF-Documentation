@@ -7,7 +7,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /zh/net/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
-description: 了解如何使用 Aspose.PDF 在 .NET 中将 PDF 文件转换为 PDF/A 格式以进行归档。
+description: 学习如何使用 Aspose.PDF 在 .NET 中将 PDF 文件转换为 PDF/A 格式以进行归档。
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to PDF/A formats",
     "alternativeHeadline": "Effortless PDF to PDF/A Conversion with Validation in C#",
-    "abstract": "Aspose.PDF for .NET 中的功能实现了标准 PDF 文件无缝转换为各种符合 PDF/A 标准的格式，包括 PDF/A-1b、PDF/A-2u 和 PDF/A-3a。此功能不仅通过全面验证确保符合 PDF/A 标准，还允许附加其他文件和替换缺失的字体，从而增强文档的完整性和可访问性。探索 Aspose.PDF 的强大功能，以实现高效可靠的 PDF/A 转换。",
+    "abstract": "Aspose.PDF for .NET 中的功能实现了标准 PDF 文件与各种 PDF/A 合规格式之间的无缝转换，包括 PDF/A-1b、PDF/A-2u 和 PDF/A-3a。此功能不仅通过全面验证确保符合 PDF/A 标准，还允许附加文件和替换缺失字体，从而增强文档的完整性和可访问性。探索 Aspose.PDF 的强大功能，以实现高效可靠的 PDF/A 转换。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1919",
+    "wordcount": "1923",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2025-03-24",
-    "description": "Aspose.PDF 不仅可以执行简单易行的任务，还能应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
+    "dateModified": "2025-03-26",
+    "description": "Aspose.PDF 不仅可以执行简单易行的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
 }
 </script>
 
@@ -82,7 +82,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-请注意，我们遵循 Adobe Preflight 和 veraPDF 来验证 PDF/A 的符合性。市场上的所有工具都有自己对 PDF/A 符合性的“表示”。请查看本文关于 PDF/A 验证工具的参考。我们选择 Adobe 产品来验证 Aspose.PDF 生成 PDF 文件的方式，因为 Adobe 是与 PDF 相关的一切的中心。
+我们遵循 Adobe Preflight 和 veraPDF 来验证 PDF/A 的符合性。市场上的所有工具都有自己对 PDF/A 符合性的“表示”。请查看本文关于 PDF/A 验证工具的参考。我们选择 Adobe 产品来验证 Aspose.PDF 生成 PDF 文件的方式，因为 Adobe 是与 PDF 相关的一切的中心。
 
 {{% /alert %}}
 
@@ -91,7 +91,7 @@ sitemap:
 {{% alert color="success" %}}
 **尝试在线将 PDF 转换为 PDF/A**
 
-Aspose.PDF for .NET 为您提供了在线免费应用程序 ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)，您可以尝试探索其功能和工作质量。
+Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)，您可以尝试探索其功能和工作质量。
 
 [![Aspose.PDF 将 PDF 转换为 PDF/A 的免费应用](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
@@ -350,9 +350,9 @@ private static void AddAttachmentToPdfA()
 {{< /tab >}}
 {{< /tabs >}}
 
-## 用替代字体替换缺失的字体
+## 用替代字体替换缺失字体
 
-根据 PDF/A 标准，字体应嵌入 PDF/A 文档中。然而，如果源文档中未嵌入字体且机器上不存在这些字体，则 PDF/A 转换将失败。在这种情况下，有必要用机器上存在的一些替代字体替换缺失的字体。在 PDF 到 PDF/A 转换过程中，可以使用 SimpleFontSubsitution 类替换缺失的字体。
+根据 PDF/A 标准，字体应嵌入 PDF/A 文档中。然而，如果源文档中未嵌入字体且机器上不存在这些字体，则 PDF/A 转换将失败。在这种情况下，有必要用机器上存在的一些替代字体替换缺失的字体。在 PDF 转换为 PDF/A 的过程中，可以使用 SimpleFontSubsitution 类替换缺失的字体。
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -423,12 +423,12 @@ private static void ReplaceMissingFonts()
 
 ## 自动创建文档逻辑结构标签
 
-为了提高可访问性和逻辑结构，PDF 文档可以包含逻辑结构标签，这些标签框架文档内容并将其划分为逻辑部分、章节、段落等。Aspose.PDF 允许在文档转换为 PDF/A 时自动生成基本的逻辑结构标记。用户可以手动改进此基本逻辑结构，提供有关文档内容的额外见解。
+PDF 文档可以包含逻辑结构标签，以增强可访问性和组织性。这些标签通过将文档内容划分为逻辑部分（如章节、段落等）来构建文档的结构。当文档转换为 PDF/A 时，Aspose.PDF 可以自动生成基本的逻辑结构标记。用户可以手动完善此结构，添加有关文档内容的进一步见解。
 
 要生成逻辑文档结构，请创建 [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf/autotaggingsettings/) 类的实例，将其 [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/zh/net/aspose.pdf/autotaggingsettings/enableautotagging/) 设置为 `true`，并将其分配给 [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/) 属性。
 
 {{% alert color="warning" %}}
-请注意，如果文档已经具有逻辑结构标签，则启用自动标记将破坏现有的逻辑结构并生成一个新的结构。
+如果文档已经具有逻辑结构标签，则启用自动标记将破坏现有的逻辑结构并生成一个新的结构。
 {{% /alert %}}
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -438,10 +438,10 @@ private static void ReplaceMissingFonts()
 private static void ConvertToPdfAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
@@ -467,7 +467,6 @@ private static void ConvertToPdfAWithAutomaticTagging()
     }
 }
 ```
-
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
@@ -476,10 +475,10 @@ private static void ConvertToPdfAWithAutomaticTagging()
 private static void ConvertToPdfAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);

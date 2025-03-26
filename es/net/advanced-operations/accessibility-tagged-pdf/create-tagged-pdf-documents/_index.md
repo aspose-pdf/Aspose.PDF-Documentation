@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create Tagged PDF using C#",
     "alternativeHeadline": "Programmatically create tagged PDFs using C#",
-    "abstract": "Cree documentos PDF etiquetados programáticamente usando C# y Aspose.PDF, asegurando el cumplimiento de PDF/UA. Esta función permite la creación de documentos PDF estructurados con elementos como encabezados y párrafos, soportando estructuras anidadas y estilo de texto para accesibilidad. La biblioteca también incluye validación para confirmar que se cumplen los estándares PDF/UA.",
+    "abstract": "Cree documentos PDF etiquetados programáticamente usando C# y Aspose.PDF, asegurando el cumplimiento de PDF/UA. Esta función permite la creación de documentos PDF estructurados con elementos como encabezados y párrafos, soportando estructuras anidadas y estilo de texto para accesibilidad. La biblioteca también incluye validación para confirmar que se cumplen los estándares de PDF/UA.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
-    "wordcount": "2650",
+    "wordcount": "3001",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-tagged-pdf/"
     },
-    "dateModified": "2025-03-24",
+    "dateModified": "2025-03-26",
     "description": "Este artículo explica cómo crear elementos de estructura para un documento PDF etiquetado programáticamente usando Aspose.PDF for .NET."
 }
 </script>
@@ -85,7 +85,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Creando PDF Etiquetado (Escenario Simple)
 
-Para crear elementos de estructura en un Documento PDF Etiquetado, Aspose.PDF ofrece métodos para crear elementos de estructura usando la interfaz [ITaggedContent](https://reference.aspose.com/pdf/es/net/aspose.pdf.tagged/itaggedcontent). El siguiente fragmento de código muestra cómo crear un PDF etiquetado que contiene 2 elementos: encabezado y párrafo.
+Para crear elementos de estructura en un Documento PDF Etiquetado, Aspose.PDF ofrece métodos para crear elementos de estructura utilizando la interfaz [ITaggedContent](https://reference.aspose.com/pdf/es/net/aspose.pdf.tagged/itaggedcontent). El siguiente fragmento de código muestra cómo crear un PDF etiquetado que contiene 2 elementos: encabezado y párrafo.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -261,6 +261,7 @@ private static void CreateTaggedPdfDocument02()
 
     Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
     paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
+    
     paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
             Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
@@ -294,7 +295,7 @@ Obtendremos el siguiente documento después de la creación:
 
 ## Estilizando la Estructura del Texto
 
-Para estilizar la estructura del texto en un Documento PDF Etiquetado, Aspose.PDF ofrece las propiedades [Font](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) y [ForegroundColor](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) de la clase [StructureTextState](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate). El siguiente fragmento de código muestra cómo estilizar la estructura del texto en un Documento PDF Etiquetado:
+Para estilizar la estructura del texto en un Documento PDF Etiquetado, Aspose.PDF ofrece las propiedades [Font](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) y [ForegroundColor](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) de la Clase [StructureTextState](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate). El siguiente fragmento de código muestra cómo estilizar la estructura del texto en un Documento PDF Etiquetado:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -394,7 +395,7 @@ private static void IllustrateStructureElements()
         figure1.Title = "Image 1";
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
-
+        
         // Adjust position
         figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
@@ -436,7 +437,7 @@ private static void IllustrateStructureElements()
     figure1.Title = "Image 1";
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
-
+    
     // Adjust position
     figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
     {
@@ -458,15 +459,15 @@ private static void IllustrateStructureElements()
 
 Aspose.PDF for .NET proporciona la capacidad de validar un Documento PDF Etiquetado PDF/UA. La validación del estándar PDF/UA soporta:
 
-- Verificaciones de XObjects.
-- Verificaciones de Acciones.
-- Verificaciones de Contenido Opcional.
-- Verificaciones de Archivos Incorporados.
-- Verificaciones de Campos de Acroform (Validar Lenguaje Natural y Nombre Alternativo y Firmas Digitales).
-- Verificaciones de Campos de Formulario XFA.
-- Verificaciones de configuraciones de Seguridad.
-- Verificaciones de Navegación.
-- Verificaciones de Anotaciones.
+- Comprobaciones de XObjects.
+- Comprobaciones de Acciones.
+- Comprobaciones de Contenido Opcional.
+- Comprobaciones de Archivos Embebidos.
+- Comprobaciones de Campos de Acroform (Validar Lenguaje Natural y Nombre Alternativo y Firmas Digitales).
+- Comprobaciones de Campos de Formulario XFA.
+- Comprobaciones de configuraciones de Seguridad.
+- Comprobaciones de Navegación.
+- Comprobaciones de Anotaciones.
 
 El siguiente fragmento de código muestra cómo validar el Documento PDF Etiquetado. Los problemas correspondientes se mostrarán en el informe de registro XML.
 
@@ -505,9 +506,9 @@ private static void ValidateTaggedPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Ajustar la posición de la Estructura de Texto
+## Ajustar la posición de la Estructura del Texto
 
-El siguiente fragmento de código muestra cómo ajustar la posición de la Estructura de Texto en el documento PDF Etiquetado:
+El siguiente fragmento de código muestra cómo ajustar la posición de la Estructura del Texto en el documento PDF etiquetado:
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -606,14 +607,14 @@ private static void AdjustPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Creando PDF Etiquetado automáticamente con conversión a PDF/UA-1
+## Creando PDF Etiquetado automáticamente con conversión PDF/UA-1
 
-Aspose.PDF permite generar automáticamente un marcado de estructura lógica básica cuando un documento se convierte a PDF/UA-1. Los usuarios pueden luego mejorar manualmente esta estructura lógica básica, proporcionando información adicional sobre el contenido del documento.
+Aspose.PDF permite la generación automática de marcado de estructura lógica básica al convertir un documento a PDF/UA-1. Los usuarios pueden luego mejorar manualmente esta estructura lógica básica, proporcionando información adicional sobre el contenido del documento.
 
 Para generar una estructura lógica del documento, cree una instancia de la clase [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/es/net/aspose.pdf/autotaggingsettings/), establezca su [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/es/net/aspose.pdf/autotaggingsettings/enableautotagging/) en `true`, y asígnelo a la propiedad [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/es/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/).
 
 {{% alert color="warning" %}}
-Tenga en cuenta que si el documento ya tiene etiquetas de estructura lógica, habilitar el auto-etiquetado destruirá la estructura lógica existente y generará una nueva.
+Si el documento ya tiene etiquetas de estructura lógica, habilitar el auto-etiquetado destruirá la estructura lógica existente y generará una nueva.
 {{% /alert %}}
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -623,10 +624,10 @@ Tenga en cuenta que si el documento ya tiene etiquetas de estructura lógica, ha
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
@@ -660,10 +661,10 @@ private static void ConvertToPdfUAWithAutomaticTagging()
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);

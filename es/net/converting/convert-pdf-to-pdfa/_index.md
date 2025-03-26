@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "2280",
+    "wordcount": "2270",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2025-03-24",
-    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulte la siguiente sección para usuarios y desarrolladores avanzados."
+    "dateModified": "2025-03-26",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulte la siguiente sección para usuarios avanzados y desarrolladores."
 }
 </script>
 
@@ -82,7 +82,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-Tenga en cuenta que seguimos Adobe Preflight y veraPDF para validar la conformidad con PDF/A. Todas las herramientas en el mercado tienen su propia “representación” de la conformidad con PDF/A. Consulte este artículo sobre herramientas de validación PDF/A para referencia. Elegimos productos de Adobe para verificar cómo Aspose.PDF produce archivos PDF porque Adobe está en el centro de todo lo relacionado con PDF.
+Seguimos Adobe Preflight y veraPDF para validar la conformidad con PDF/A. Todas las herramientas en el mercado tienen su propia “representación” de la conformidad con PDF/A. Consulte este artículo sobre herramientas de validación PDF/A para referencia. Elegimos productos de Adobe para verificar cómo Aspose.PDF produce archivos PDF porque Adobe está en el centro de todo lo relacionado con PDF.
 
 {{% /alert %}}
 
@@ -91,9 +91,9 @@ Convierta el archivo utilizando el método Convert de la clase Document. Antes d
 {{% alert color="success" %}}
 **Intente convertir PDF a PDF/A en línea**
 
-Aspose.PDF for .NET le presenta una aplicación gratuita en línea ["PDF a PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), donde puede intentar investigar la funcionalidad y la calidad con la que funciona.
+Aspose.PDF for .NET le presenta una aplicación gratuita en línea ["PDF a PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), donde puede investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión PDF a PDF/A con aplicación gratuita](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
+[![Aspose.PDF Conversión de PDF a PDF/A con aplicación gratuita](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
@@ -150,7 +150,7 @@ private static void ConvertPdfToPdfA()
 {{< /tab >}}
 {{< /tabs >}}
 
-Para realizar solo la validación, utilice la siguiente línea de código:
+Para realizar solo la validación, use la siguiente línea de código:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -423,12 +423,12 @@ private static void ReplaceMissingFonts()
 
 ## Crear automáticamente etiquetas de estructura lógica del documento
 
-Con el fin de mejorar la accesibilidad y la estructura lógica, un documento PDF puede contener etiquetas de estructura lógica, que enmarcan el contenido del documento y lo dividen en partes lógicas, secciones, párrafos, etc. Aspose.PDF permite generar automáticamente una marca básica de estructura lógica cuando un documento se convierte a PDF/A. Los usuarios pueden luego mejorar manualmente esta estructura lógica básica, proporcionando información adicional sobre el contenido del documento.
+Un documento PDF puede incluir etiquetas de estructura lógica para mejorar la accesibilidad y organización. Estas etiquetas estructuran el contenido del documento dividiéndolo en partes lógicas, como secciones, párrafos y más. Cuando un documento se convierte a PDF/A, Aspose.PDF puede generar automáticamente una marca básica de estructura lógica. Los usuarios pueden luego refinar manualmente esta estructura, añadiendo más información sobre el contenido del documento.
 
 Para generar una estructura lógica del documento, cree una instancia de la clase [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/es/net/aspose.pdf/autotaggingsettings/), establezca su [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/es/net/aspose.pdf/autotaggingsettings/enableautotagging/) en `true`, y asígnelo a la propiedad [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/es/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/).
 
 {{% alert color="warning" %}}
-Tenga en cuenta que si el documento ya tiene etiquetas de estructura lógica, habilitar la auto-etiquetado destruirá la estructura lógica existente y generará una nueva.
+Si el documento ya tiene etiquetas de estructura lógica, habilitar la auto-etiquetado destruirá la estructura lógica existente y generará una nueva.
 {{% /alert %}}
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -438,10 +438,10 @@ Tenga en cuenta que si el documento ya tiene etiquetas de estructura lógica, ha
 private static void ConvertToPdfAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
@@ -467,7 +467,6 @@ private static void ConvertToPdfAWithAutomaticTagging()
     }
 }
 ```
-
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
@@ -476,10 +475,10 @@ private static void ConvertToPdfAWithAutomaticTagging()
 private static void ConvertToPdfAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);

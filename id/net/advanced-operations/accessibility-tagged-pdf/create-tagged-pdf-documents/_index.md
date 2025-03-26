@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create Tagged PDF using C#",
     "alternativeHeadline": "Programmatically create tagged PDFs using C#",
-    "abstract": "Buat dokumen PDF berlabel secara programatis menggunakan C# dan Aspose.PDF, memastikan kepatuhan PDF/UA. Fitur ini memungkinkan pembuatan dokumen PDF terstruktur dengan elemen seperti header dan paragraf, mendukung struktur bersarang dan penataan teks untuk aksesibilitas. Perpustakaan ini juga mencakup validasi untuk memastikan standar PDF/UA terpenuhi",
+    "abstract": "Buat dokumen PDF berlabel secara programatis menggunakan C# dan Aspose.PDF, memastikan kepatuhan PDF/UA. Fitur ini memungkinkan pembuatan dokumen PDF terstruktur dengan elemen seperti header dan paragraf, mendukung struktur bersarang dan gaya teks untuk aksesibilitas. Perpustakaan ini juga mencakup validasi untuk memastikan standar PDF/UA terpenuhi",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
-    "wordcount": "2576",
+    "wordcount": "2919",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,12 +74,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-tagged-pdf/"
     },
-    "dateModified": "2025-03-24",
+    "dateModified": "2025-03-26",
     "description": "Artikel ini menjelaskan cara membuat elemen struktur untuk dokumen PDF berlabel secara programatis menggunakan Aspose.PDF for .NET."
 }
 </script>
 
-Membuat PDF berlabel berarti menambahkan (atau membuat) elemen tertentu ke dokumen yang akan memungkinkan dokumen tersebut divalidasi sesuai dengan persyaratan PDF/UA. Elemen-elemen ini sering disebut Elemen Struktur.
+Membuat PDF berlabel berarti menambahkan (atau membuat) elemen tertentu ke dokumen yang akan memungkinkan dokumen tersebut divalidasi sesuai dengan persyaratan PDF/UA. Elemen-elemen ini sering disebut sebagai Elemen Struktur.
 
 Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -261,6 +261,7 @@ private static void CreateTaggedPdfDocument02()
 
     Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
     paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
+    
     paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
             Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
@@ -365,9 +366,6 @@ private static void AddStyle()
 {{< /tab >}}
 {{< /tabs >}}
 
-Untuk menggambarkan elemen struktur dalam Dokumen PDF Bertag, Aspose.PDF menawarkan kelas [IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement). Cuplikan kode berikut menunjukkan cara menggambarkan elemen struktur dalam Dokumen PDF Bertag:
-
-
 ## Mengilustrasikan Elemen Struktur
 
 Untuk mengilustrasikan elemen struktur dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [IllustrationElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/illustrationelement). Potongan kode berikut menunjukkan cara mengilustrasikan elemen struktur dalam Dokumen PDF Berlabel:
@@ -397,7 +395,7 @@ private static void IllustrateStructureElements()
         figure1.Title = "Image 1";
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
-
+        
         // Adjust position
         figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
@@ -439,7 +437,7 @@ private static void IllustrateStructureElements()
     figure1.Title = "Image 1";
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
-
+    
     // Adjust position
     figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
     {
@@ -464,7 +462,7 @@ Aspose.PDF for .NET menyediakan kemampuan untuk memvalidasi Dokumen PDF Berlabel
 - Pemeriksaan untuk XObjects.
 - Pemeriksaan untuk Tindakan.
 - Pemeriksaan untuk Konten Opsional.
-- Pemeriksaan untuk Berkas Tersemat.
+- Pemeriksaan untuk File Tersemat.
 - Pemeriksaan untuk Bidang Acroform (Validasi Bahasa Alami dan Nama Alternatif serta Tanda Tangan Digital).
 - Pemeriksaan untuk Bidang Formulir XFA.
 - Pemeriksaan untuk pengaturan Keamanan.
@@ -508,7 +506,7 @@ private static void ValidateTaggedPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Sesuaikan posisi Struktur Teks
+## Menyesuaikan posisi Struktur Teks
 
 Potongan kode berikut menunjukkan cara menyesuaikan posisi Struktur Teks dalam dokumen PDF Berlabel:
 
@@ -609,15 +607,14 @@ private static void AdjustPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-
 ## Membuat PDF Berlabel secara otomatis dengan konversi PDF/UA-1
 
-Aspose.PDF memungkinkan untuk secara otomatis menghasilkan markup struktur logis dasar ketika dokumen dikonversi ke PDF/UA-1. Pengguna kemudian dapat secara manual meningkatkan struktur logis dasar ini, memberikan wawasan tambahan mengenai konten dokumen.
+Aspose.PDF memungkinkan pembuatan markup struktur logis dasar secara otomatis saat mengonversi dokumen ke PDF/UA-1. Pengguna kemudian dapat secara manual meningkatkan struktur logis dasar ini, memberikan wawasan tambahan mengenai konten dokumen.
 
 Untuk menghasilkan struktur dokumen logis, buat instance dari kelas [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf/autotaggingsettings/), atur [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/id/net/aspose.pdf/autotaggingsettings/enableautotagging/) ke `true`, dan tetapkan ke properti [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/).
 
 {{% alert color="warning" %}}
-Perhatikan bahwa jika dokumen sudah memiliki tag struktur logis, mengaktifkan auto-tagging akan menghancurkan struktur logis yang ada dan menghasilkan yang baru.
+Jika dokumen sudah memiliki tag struktur logis, mengaktifkan auto-tagging akan menghancurkan struktur logis yang ada dan menghasilkan yang baru.
 {{% /alert %}}
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -627,10 +624,10 @@ Perhatikan bahwa jika dokumen sudah memiliki tag struktur logis, mengaktifkan au
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
@@ -664,10 +661,10 @@ private static void ConvertToPdfUAWithAutomaticTagging()
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);

@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "2180",
+    "wordcount": "2176",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2025-03-24",
-    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة، بالإضافة إلى التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+    "dateModified": "2025-03-26",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة، ولكنها أيضًا قادرة على التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
 
@@ -82,7 +82,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-يرجى ملاحظة أننا نتبع Adobe Preflight و veraPDF للتحقق من توافق PDF/A. جميع الأدوات في السوق لديها "تمثيل" خاص بها لتوافق PDF/A. يرجى مراجعة هذه المقالة حول أدوات التحقق من PDF/A للرجوع إليها. اخترنا منتجات Adobe للتحقق من كيفية إنتاج Aspose.PDF لملفات PDF لأن Adobe هي في مركز كل ما يتعلق بـ PDF.
+نتبع Adobe Preflight و veraPDF للتحقق من توافق PDF/A. جميع الأدوات في السوق لديها "تمثيل" خاص بها لتوافق PDF/A. يرجى مراجعة هذه المقالة حول أدوات التحقق من PDF/A للرجوع إليها. اخترنا منتجات Adobe للتحقق من كيفية إنتاج Aspose.PDF لملفات PDF لأن Adobe هي في مركز كل ما يتعلق بـ PDF.
 
 {{% /alert %}}
 
@@ -91,7 +91,7 @@ sitemap:
 {{% alert color="success" %}}
 **حاول تحويل PDF إلى PDF/A عبر الإنترنت**
 
-Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
+Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)، حيث يمكنك تجربة الوظائف والجودة التي يعمل بها.
 
 [![Aspose.PDF تحويل PDF إلى PDF/A مع تطبيق مجاني](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
@@ -191,7 +191,7 @@ private static void ValidatePdfAStandard()
 
 ## تحويل ملف PDF إلى PDF/A-3b
 
-Aspose.PDF for .NET يدعم أيضًا ميزة تحويل ملف PDF إلى تنسيق PDF/A-3b.
+يدعم Aspose.PDF for .NET أيضًا ميزة تحويل ملف PDF إلى تنسيق PDF/A-3b.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -423,12 +423,12 @@ private static void ReplaceMissingFonts()
 
 ## إنشاء علامات الهيكل المنطقي للمستند تلقائيًا
 
-من أجل تحسين إمكانية الوصول والهيكل المنطقي، قد يحتوي مستند PDF على علامات هيكل منطقي، التي تؤطر محتوى المستند وتقسمه إلى أجزاء منطقية، أقسام، فقرات، وما إلى ذلك. يسمح Aspose.PDF بإنشاء ترميز هيكل منطقي أساسي تلقائيًا عند تحويل مستند إلى PDF/A. يمكن للمستخدمين بعد ذلك تحسين هذا الهيكل المنطقي الأساسي يدويًا، مما يوفر رؤى إضافية حول محتويات المستند.
+يمكن أن يتضمن مستند PDF علامات هيكل منطقي لتعزيز إمكانية الوصول والتنظيم. تقوم هذه العلامات بتنظيم محتوى المستند عن طريق تقسيمه إلى أجزاء منطقية، مثل الأقسام والفقرات والمزيد. عند تحويل مستند إلى PDF/A، يمكن لـ Aspose.PDF إنشاء ترميز هيكل منطقي أساسي تلقائيًا. يمكن للمستخدمين بعد ذلك تحسين هذا الهيكل يدويًا، وإضافة مزيد من المعلومات حول محتوى المستند.
 
 لإنشاء هيكل منطقي للمستند، قم بإنشاء مثيل من فئة [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf/autotaggingsettings/)، واضبط خاصية [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/ar/net/aspose.pdf/autotaggingsettings/enableautotagging/) على `true`، وخصصها إلى خاصية [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/).
 
 {{% alert color="warning" %}}
-يرجى ملاحظة أنه إذا كان المستند يحتوي بالفعل على علامات هيكل منطقي، فإن تمكين التوسيم التلقائي سيدمر الهيكل المنطقي الحالي وينشئ هيكلًا جديدًا.
+إذا كان المستند يحتوي بالفعل على علامات هيكل منطقي، فإن تمكين التمييز التلقائي سيدمر الهيكل المنطقي الحالي وينشئ هيكلًا جديدًا.
 {{% /alert %}}
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -438,10 +438,10 @@ private static void ReplaceMissingFonts()
 private static void ConvertToPdfAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
@@ -467,7 +467,6 @@ private static void ConvertToPdfAWithAutomaticTagging()
     }
 }
 ```
-
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
@@ -476,10 +475,10 @@ private static void ConvertToPdfAWithAutomaticTagging()
 private static void ConvertToPdfAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);

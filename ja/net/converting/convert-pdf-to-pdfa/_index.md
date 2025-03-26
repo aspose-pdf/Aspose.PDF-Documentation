@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1835",
+    "wordcount": "1840",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2025-03-24",
+    "dateModified": "2025-03-26",
     "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
 }
 </script>
@@ -82,7 +82,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-Adobe PreflightとveraPDFに従ってPDF/A準拠を検証していることに注意してください。市場のすべてのツールには、PDF/A準拠の「表現」があります。参考のためにPDF/A検証ツールに関するこの記事を確認してください。Aspose.PDFがPDFファイルを生成する方法を確認するためにAdobe製品を選択しました。なぜなら、AdobeはPDFに関連するすべての中心にいるからです。
+私たちは、PDF/A準拠を検証するためにAdobe PreflightとveraPDFに従っています。市場に出回っているすべてのツールは、PDF/A準拠の「表現」を持っています。参考のためにPDF/A検証ツールに関するこの記事を確認してください。Aspose.PDFがPDFファイルを生成する方法を検証するためにAdobe製品を選択しました。なぜなら、AdobeはPDFに関連するすべての中心にいるからです。
 
 {{% /alert %}}
 
@@ -91,7 +91,7 @@ DocumentクラスのConvertメソッドを使用してファイルを変換し�
 {{% alert color="success" %}}
 **PDFをPDF/Aにオンラインで変換してみてください**
 
-Aspose.PDF for .NETは、機能と品質を調査するために試すことができるオンライン無料アプリケーション["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)を提供します。
+Aspose.PDF for .NETは、機能と品質を調査するために試すことができるオンライン無料アプリケーション["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)を提供しています。
 
 [![Aspose.PDF PDFからPDF/Aへの変換を無料アプリで](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
@@ -99,11 +99,9 @@ Aspose.PDF for .NETは、機能と品質を調査するために試すことが�
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## サポートされている標準
-以下の標準をサポートしています：PDF/A-1b、PDF/A-1a、PDF/A-2b、PDF/A-2u、PDF/A-2a、PDF/A-3b、PDF/A-3u、PDF/A-3a、PDF/A-4、PDF/A-4e、PDF/A-4f。
+私たちは、次の標準をサポートしています：PDF/A-1b、PDF/A-1a、PDF/A-2b、PDF/A-2u、PDF/A-2a、PDF/A-3b、PDF/A-3u、PDF/A-3a、PDF/A-4、PDF/A-4e、PDF/A-4f。
 
-## PDFファイルをPDF/A-1bに変換する
-
-以下のコードスニペットは、PDFファイルをPDF/A-1b準拠のPDFに変換する方法を示しています。
+## PDFファイルをPDF/A-1bに変換
 
 次のコードスニペットは、PDFファイルをPDF/A-1b準拠のPDFに変換する方法を示しています。
 
@@ -191,7 +189,7 @@ private static void ValidatePdfAStandard()
 {{< /tab >}}
 {{< /tabs >}}
 
-## PDFファイルをPDF/A-3bに変換する
+## PDFファイルをPDF/A-3bに変換
 
 Aspose.PDF for .NETは、PDFファイルをPDF/A-3b形式に変換する機能もサポートしています。
 
@@ -238,7 +236,7 @@ private static void ConvertPdfToPdfA3b()
 {{< /tab >}}
 {{< /tabs >}}
 
-## PDFファイルをPDF/A-4に変換する
+## PDFファイルをPDF/A-4に変換
 
 Aspose.PDF for .NETは、PDFファイルをPDF/A-4形式に変換する機能もサポートしています。
 
@@ -291,10 +289,10 @@ private static void ConvertPdfToPdfA4()
 {{< /tab >}}
 {{< /tabs >}}
 
-## PDF/Aファイルに添付ファイルを追加する
+## PDF/Aファイルに添付ファイルを追加
 
 PDF/A準拠の文書にファイルを添付する必要がある場合は、Aspose.PDF.PdfFormat列挙体からPDF_A_3A値を使用することをお勧めします。
-PDF/A-3aは、PDF/A準拠のファイルに任意のファイル形式を添付する機能を提供する形式です。
+PDF/A-3aは、PDF/A準拠のファイルに任意のファイル形式を添付ファイルとして添付する機能を提供する形式です。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -354,7 +352,7 @@ private static void AddAttachmentToPdfA()
 
 ## 欠落フォントを代替フォントで置き換える
 
-PDF/A標準に従って、フォントはPDF/A文書に埋め込む必要があります。ただし、ソース文書にフォントが埋め込まれておらず、マシンに存在しない場合、PDF/A変換は失敗します。この場合、欠落フォントをマシンに存在する代替フォントで置き換える必要があります。欠落フォントは、PDFからPDF/Aへの変換中にSimpleFontSubsitutionクラスを使用して置き換えることができます。
+PDF/A基準に従って、フォントはPDF/A文書に埋め込む必要があります。しかし、ソース文書にフォントが埋め込まれておらず、マシンに存在しない場合、PDF/A変換は失敗します。この場合、欠落フォントをマシンに存在する代替フォントで置き換える必要があります。欠落フォントは、PDFからPDF/Aへの変換中にSimpleFontSubsitutionクラスを使用して置き換えることができます。
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -423,14 +421,14 @@ private static void ReplaceMissingFonts()
 {{< /tab >}}
 {{< /tabs >}}
 
-## 文書の論理構造タグを自動的に作成する
+## ドキュメントの論理構造タグを自動的に作成
 
-アクセシビリティと論理構造を改善するために、PDF文書には論理構造タグを含めることができ、文書の内容をフレームし、論理的な部分、セクション、段落などに分割します。Aspose.PDFは、文書がPDF/Aに変換されるときに基本的な論理構造マークアップを自動的に生成することを許可します。ユーザーは、その後この基本的な論理構造を手動で改善し、文書の内容に関する追加の洞察を提供できます。
+PDF文書には、アクセシビリティと組織を向上させるために論理構造タグを含めることができます。これらのタグは、文書の内容をセクション、段落などの論理的な部分に分割することによって構造化します。文書がPDF/Aに変換されると、Aspose.PDFは基本的な論理構造マークアップを自動的に生成できます。ユーザーはその後、この構造を手動で洗練させ、文書の内容に関するさらなる洞察を追加できます。
 
 論理文書構造を生成するには、[Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf/autotaggingsettings/)クラスのインスタンスを作成し、その[AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/ja/net/aspose.pdf/autotaggingsettings/enableautotagging/)を`true`に設定し、[PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/)プロパティに割り当てます。
 
 {{% alert color="warning" %}}
-文書にすでに論理構造タグがある場合、オートタグ付けを有効にすると既存の論理構造が破壊され、新しいものが生成されることに注意してください。
+文書にすでに論理構造タグがある場合、オートタグ付けを有効にすると既存の論理構造が破壊され、新しいものが生成されます。
 {{% /alert %}}
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -440,10 +438,10 @@ private static void ReplaceMissingFonts()
 private static void ConvertToPdfAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
@@ -469,7 +467,6 @@ private static void ConvertToPdfAWithAutomaticTagging()
     }
 }
 ```
-
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
@@ -478,10 +475,10 @@ private static void ConvertToPdfAWithAutomaticTagging()
 private static void ConvertToPdfAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);

@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
-    "wordcount": "2667",
+    "wordcount": "3022",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-tagged-pdf/"
     },
-    "dateModified": "2025-03-24",
+    "dateModified": "2025-03-26",
     "description": "Cet article explique comment créer des éléments de structure pour un document PDF tagué de manière programmatique en utilisant Aspose.PDF for .NET."
 }
 </script>
@@ -261,6 +261,7 @@ private static void CreateTaggedPdfDocument02()
 
     Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
     paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
+    
     paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
             Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
@@ -394,7 +395,7 @@ private static void IllustrateStructureElements()
         figure1.Title = "Image 1";
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
-
+        
         // Adjust position
         figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
@@ -436,7 +437,7 @@ private static void IllustrateStructureElements()
     figure1.Title = "Image 1";
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
-
+    
     // Adjust position
     figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
     {
@@ -460,15 +461,15 @@ Aspose.PDF for .NET offre la possibilité de valider un document PDF tagué PDF/
 
 - Vérifications des XObjects.
 - Vérifications des Actions.
-- Vérifications du Contenu Optionnel.
-- Vérifications des Fichiers Intégrés.
+- Vérifications du Contenu optionnel.
+- Vérifications des Fichiers intégrés.
 - Vérifications des Champs Acroform (Valider le langage naturel et le nom alternatif et les signatures numériques).
-- Vérifications des Champs de Formulaire XFA.
+- Vérifications des Champs de formulaire XFA.
 - Vérifications des paramètres de sécurité.
 - Vérifications de la navigation.
 - Vérifications des annotations.
 
-Le code suivant montre comment valider le document PDF tagué. Les problèmes correspondants seront affichés dans le rapport XML.
+Le code suivant montre comment valider le document PDF tagué. Les problèmes correspondants seront affichés dans le rapport de log XML.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -505,9 +506,9 @@ private static void ValidateTaggedPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Ajuster la position de la structure de texte
+## Ajuster la position de la structure du texte
 
-Le code suivant montre comment ajuster la position de la structure de texte dans le document PDF tagué :
+Le code suivant montre comment ajuster la position de la structure du texte dans le document PDF tagué :
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -606,28 +607,27 @@ private static void AdjustPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
+## Création automatique d'un PDF tagué avec conversion PDF/UA-1
 
-## Création d'un PDF tagué automatiquement avec la conversion PDF/UA-1
-
-Aspose.PDF permet de générer automatiquement une balise de structure logique de base lorsqu'un document est converti en PDF/UA-1. Les utilisateurs peuvent ensuite améliorer manuellement cette structure logique de base, fournissant des informations supplémentaires concernant le contenu du document.
+Aspose.PDF permet la génération automatique de balisage de structure logique de base lors de la conversion d'un document en PDF/UA-1. Les utilisateurs peuvent ensuite améliorer manuellement cette structure logique de base, fournissant des informations supplémentaires concernant le contenu du document.
 
 Pour générer une structure logique de document, créez une instance de la classe [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/fr/net/aspose.pdf/autotaggingsettings/), définissez sa propriété [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/fr/net/aspose.pdf/autotaggingsettings/enableautotagging/) sur `true`, et assignez-la à la propriété [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/).
 
 {{% alert color="warning" %}}
-Notez que si le document a déjà des balises de structure logique, l'activation de l'auto-tagging détruira la structure logique existante et en générera une nouvelle.
+Si le document a déjà des balises de structure logique, l'activation de l'auto-tagging détruira la structure logique existante et en générera une nouvelle.
 {{% /alert %}}
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
     {
         // Create conversion options
         Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
@@ -661,10 +661,10 @@ private static void ConvertToPdfUAWithAutomaticTagging()
 private static void ConvertToPdfUAWithAutomaticTagging()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
 
     // Create conversion options
     Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
