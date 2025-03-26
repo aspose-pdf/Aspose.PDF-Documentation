@@ -146,12 +146,6 @@ Aspose.PDF for .NET permite que você defina informações específicas de arqui
 1. Defina os valores das propriedades.
 1. Salve o documento atualizado usando o método Save da classe Document.
 
-{{% alert color="primary" %}}
-
-Por favor, note que você não pode definir valores para os campos *Application* e *Producer*, porque Aspose Ltd. e Aspose.PDF for .NET x.x.x serão exibidos nesses campos.
-
-{{% /alert %}}
-
 O seguinte trecho de código mostra como definir informações do arquivo PDF.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -175,6 +169,8 @@ private static void SetFileInformation()
         docInfo.ModDate = DateTime.Now;
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
 
         // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");
@@ -203,6 +199,8 @@ private static void SetFileInformation()
         docInfo.ModDate = DateTime.Now;
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
 
         // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");

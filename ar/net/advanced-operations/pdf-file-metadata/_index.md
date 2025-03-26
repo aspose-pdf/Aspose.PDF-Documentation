@@ -146,12 +146,6 @@ Aspose.PDF for .NET يتيح لك تعيين معلومات محددة عن مل
 1. قم بتعيين قيم الخصائص.
 1. احفظ المستند المحدث باستخدام طريقة Save لفئة Document.
 
-{{% alert color="primary" %}}
-
-يرجى ملاحظة أنه لا يمكنك تعيين قيم ضد حقول *Application* و *Producer*، لأن Aspose Ltd. و Aspose.PDF for .NET x.x.x ستظهر ضد هذه الحقول.
-
-{{% /alert %}}
-
 يظهر مقتطف الشيفرة التالي كيفية تعيين معلومات ملف PDF.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -175,6 +169,8 @@ private static void SetFileInformation()
         docInfo.ModDate = DateTime.Now;
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
 
         // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");
@@ -203,6 +199,8 @@ private static void SetFileInformation()
         docInfo.ModDate = DateTime.Now;
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
 
         // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");

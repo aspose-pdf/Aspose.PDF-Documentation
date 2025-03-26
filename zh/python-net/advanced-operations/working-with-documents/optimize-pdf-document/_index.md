@@ -217,7 +217,7 @@ PDF 文档有时包含未被文档中任何其他对象引用的 PDF 对象。 �
 
     # 打开文档
     document = ap.Document(input_pdf)
-    # 设置 LinkDuplcateStreams 选项
+    # 设置 LinkDuplicateStreams 选项
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.link_duplcate_streams = True
     # 使用 OptimizationOptions 优化 PDF 文档

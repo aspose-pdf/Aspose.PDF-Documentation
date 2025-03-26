@@ -146,12 +146,6 @@ Aspose.PDF for .NET memungkinkan Anda untuk mengatur informasi spesifik file unt
 1. Atur nilai dari properti.
 1. Simpan dokumen yang diperbarui menggunakan metode Save dari kelas Document.
 
-{{% alert color="primary" %}}
-
-Harap dicatat bahwa Anda tidak dapat mengatur nilai terhadap bidang *Application* dan *Producer*, karena Aspose Ltd. dan Aspose.PDF for .NET x.x.x akan ditampilkan terhadap bidang ini.
-
-{{% /alert %}}
-
 Potongan kode berikut menunjukkan cara mengatur informasi file PDF.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -175,6 +169,8 @@ private static void SetFileInformation()
         docInfo.ModDate = DateTime.Now;
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
 
         // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");
@@ -203,6 +199,8 @@ private static void SetFileInformation()
         docInfo.ModDate = DateTime.Now;
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
+        docInfo.Producer = "Custom producer";
+        docInfo.Creator = "Custom creator";
 
         // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");

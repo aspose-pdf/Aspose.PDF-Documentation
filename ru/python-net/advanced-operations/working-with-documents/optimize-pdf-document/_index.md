@@ -217,7 +217,7 @@ PDF документ иногда содержит PDF объекты, кото�
 
     # Открыть документ
     document = ap.Document(input_pdf)
-    # Установить опцию LinkDuplcateStreams
+    # Установить опцию LinkDuplicateStreams
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.link_duplcate_streams = True
     # Оптимизировать PDF-документ, используя OptimizationOptions
