@@ -81,7 +81,7 @@ aliases:
 }
 </script>
 
-**Aspose.PDF for .NET** allows you to add header and footer in your existing PDF file. You may add images or text to a PDF document. Also, try to add different headers in one PDF File with C#.
+**Aspose.PDF for .NET** enables you to add headers and footers to an existing PDF file. You can insert both images and text into the document.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
