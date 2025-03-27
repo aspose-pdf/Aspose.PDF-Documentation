@@ -200,7 +200,7 @@ private static void AddHeaderAndFooterAsText()
 
 The following code snippet demonstrates how to add headers and footers as HTML fragments to a PDF using C#.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -306,7 +306,115 @@ private static void AddHeaderAndFooterAsHTML()
 {{< /tab >}}
 {{< /tabs >}}
 
+## Adding Headers and Footers as images
 
+The following code snippet demonstrates how to add headers and footers as images to a PDF using C#.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHeaderAndFooterAsImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsImageInput.pdf"))
+    {
+        for (var i = 1; i <= document.Pages.Count; i++)
+        {
+            // Create header image
+            var headerImage = new Aspose.Pdf.Image();
+            headerImage.File = dataDir + "ImageExample.png";
+            
+            // Create header
+            var header = new Aspose.Pdf.HeaderFooter();
+            header.Paragraphs.Add(headerImage);
+                    
+            // Create footer image
+            var footerImage = new Aspose.Pdf.Image();
+            footerImage.File = dataDir + "ImageExample.png";
+            
+            // Create footer 
+            var footer = new Aspose.Pdf.HeaderFooter();
+            footer.Paragraphs.Add(footerImage);
+            
+            // Set header margin
+            header.Margin = new MarginInfo
+            {
+                Left = 50
+            };
+            
+            // Set footer margin
+            footer.Margin = new MarginInfo
+            {
+                Left = 50
+            };
+                    
+            // Bind the header and footer to the page
+            document.Pages[i].Header = header;
+            document.Pages[i].Footer = footer;
+        }
+            
+        // Save PDF document
+        document.Save(dataDir + "AddHeaderAndFooterAsImage_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHeaderAndFooterAsImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsImageInput.pdf");
+    
+    for (var i = 1; i <= document.Pages.Count; i++)
+    {
+        // Create header image
+        var headerImage = new Aspose.Pdf.Image();
+        headerImage.File = dataDir + "ImageExample.png";
+            
+        // Create header
+        var header = new Aspose.Pdf.HeaderFooter();
+        header.Paragraphs.Add(headerImage);
+                    
+        // Create footer image
+        var footerImage = new Aspose.Pdf.Image();
+        footerImage.File = dataDir + "ImageExample.png";
+            
+        // Create footer 
+        var footer = new Aspose.Pdf.HeaderFooter();
+        footer.Paragraphs.Add(footerImage);
+            
+        // Set header margin
+        header.Margin = new MarginInfo
+        {
+            Left = 50
+        };
+            
+        // Set footer margin
+        footer.Margin = new MarginInfo
+        {
+            Left = 50
+        };
+                    
+        // Bind the header and footer to the page
+        document.Pages[i].Header = header;
+        document.Pages[i].Footer = footer;
+    }
+            
+    // Save PDF document
+    document.Save(dataDir + "AddHeaderAndFooterAsImage_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
