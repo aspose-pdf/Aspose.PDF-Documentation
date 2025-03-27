@@ -30,7 +30,7 @@ aliases:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1549",
+    "wordcount": "1072",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
