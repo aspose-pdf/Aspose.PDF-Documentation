@@ -196,58 +196,6 @@ private static void AddHeaderAndFooterAsText()
 {{< /tabs >}}
 
 
-
-
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddHeaderAndFooterAsText()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
-  
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsTextInput.pdf"))
-    {
-        for (var i = 1; i <= document.Pages.Count; i++)
-        {
-            // Create header text
-            var headerText = new Aspose.Pdf.Text.TextFragment("header");
-            
-            // Create header
-            var header = new Aspose.Pdf.HeaderFooter();
-            header.Paragraphs.Add(headerText);
-                    
-            // Create footer text
-            var footerText = new Aspose.Pdf.Text.TextFragment("footer");
-            
-            // Create footer 
-            var footer = new Aspose.Pdf.HeaderFooter();
-            footer.Paragraphs.Add(footerText);
-            
-            // Set header margin
-            header.Margin = new MarginInfo
-            {
-                Left = 50,
-                Top = 20
-            };
-            
-            // Set footer margin
-            footer.Margin = new MarginInfo
-            {
-                Left = 50,
-                Top = 20
-            };
-                    
-            // Bind the header and footer to the page
-            document.Pages[i].Header = header;
-            document.Pages[i].Footer = footer;
-        }
-            
-        // Save PDF document
-        document.Save(dataDir + "AddHeaderAndFooterAsText_out.pdf");
-    }
-}
-```
-
 ## Adding Headers and Footers as HTML Fragments
 
 The following code snippet demonstrates how to add headers and footers as HTML fragments in a PDF using C#.
