@@ -115,14 +115,14 @@ private static void AddHeaderAndFooterAsText()
             footer.Paragraphs.Add(footerText);
             
             // Set header margin
-            header.Margin = new MarginInfo
+            header.Margin = new Aspose.Pdf.MarginInfo
             {
                 Left = 50,
                 Top = 20
             };
             
             // Set footer margin
-            footer.Margin = new MarginInfo
+            footer.Margin = new Aspose.Pdf.MarginInfo
             {
                 Left = 50,
                 Top = 20
@@ -167,14 +167,14 @@ private static void AddHeaderAndFooterAsText()
         footer.Paragraphs.Add(footerText);
     
         // Set header margin
-        header.Margin = new MarginInfo
+        header.Margin = new Aspose.Pdf.MarginInfo
         {
             Left = 50,
             Top = 20
         };
     
         // Set footer margin
-        footer.Margin = new MarginInfo
+        footer.Margin = new Aspose.Pdf.MarginInfo
         {
             Left = 50,
             Top = 20
@@ -226,14 +226,14 @@ private static void AddHeaderAndFooterAsHTML()
             footer.Paragraphs.Add(footerHTML);
             
             // Set header margin
-            header.Margin = new MarginInfo
+            header.Margin = new Aspose.Pdf.MarginInfo
             {
                 Left = 50,
                 Top = 20
             };
             
             // Set footer margin
-            footer.Margin = new MarginInfo
+            footer.Margin = new Aspose.Pdf.MarginInfo
             {
                 Left = 50,
                 Top = 20
@@ -278,14 +278,14 @@ private static void AddHeaderAndFooterAsHTML()
         footer.Paragraphs.Add(footerHTML);
     
         // Set header margin
-        header.Margin = new MarginInfo
+        header.Margin = new Aspose.Pdf.MarginInfo
         {
             Left = 50,
             Top = 20
         };
     
         // Set footer margin
-        footer.Margin = new MarginInfo
+        footer.Margin = new Aspose.Pdf.MarginInfo
         {
             Left = 50,
             Top = 20
@@ -338,13 +338,13 @@ private static void AddHeaderAndFooterAsImage()
             footer.Paragraphs.Add(footerImage);
             
             // Set header margin
-            header.Margin = new MarginInfo
+            header.Margin = new Aspose.Pdf.MarginInfo
             {
                 Left = 50
             };
             
             // Set footer margin
-            footer.Margin = new MarginInfo
+            footer.Margin = new Aspose.Pdf.MarginInfo
             {
                 Left = 50
             };
@@ -390,13 +390,13 @@ private static void AddHeaderAndFooterAsImage()
         footer.Paragraphs.Add(footerImage);
             
         // Set header margin
-        header.Margin = new MarginInfo
+        header.Margin = new Aspose.Pdf.MarginInfo
         {
             Left = 50
         };
             
         // Set footer margin
-        footer.Margin = new MarginInfo
+        footer.Margin = new Aspose.Pdf.MarginInfo
         {
             Left = 50
         };
