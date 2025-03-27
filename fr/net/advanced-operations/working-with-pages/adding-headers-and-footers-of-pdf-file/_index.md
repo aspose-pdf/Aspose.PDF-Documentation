@@ -1,362 +1,333 @@
----
-title: Ajouter un en-tête et un pied de page au PDF
-linktitle: Ajouter un en-tête et un pied de page au PDF
-type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
-weight: 70
-url: /fr/net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF for .NET vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp.
-lastmod: "2022-02-17"
-sitemap:
-    changefreq: "monthly"
-    priority: 0.7
----
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Add Header and Footer to PDF",
-    "alternativeHeadline": "Add Custom Headers and Footers to PDF Files",
-    "abstract": "Aspose.PDF for .NET introduit une fonctionnalité puissante qui permet aux utilisateurs d'enrichir leurs documents PDF en ajoutant des en-têtes et des pieds de page personnalisables. En utilisant les classes TextStamp et ImageStamp, les développeurs peuvent facilement intégrer à la fois du texte et des images, en adaptant leur placement et leur apparence pour s'adapter à divers formats et styles de documents. Cela améliore le professionnalisme et la lisibilité des documents, ce qui le rend idéal pour les rapports, les factures et autres communications formelles.",
-    "author": {
-        "@type": "Person",
-        "name": "Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "wordcount": "1549",
-    "proficiencyLevel": "Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF for .NET",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/net/add-headers-and-footers-of-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/net/add-headers-and-footers-of-pdf-file/"
-    },
-    "dateModified": "2024-11-26",
-    "description": "Aspose.PDF for .NET vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp."
-}
-</script>
-
-**Aspose.PDF for .NET** vous permet d'ajouter un en-tête et un pied de page dans votre fichier PDF existant. Vous pouvez ajouter des images ou du texte à un document PDF. Essayez également d'ajouter différents en-têtes dans un fichier PDF avec C#.
+Aspose.PDF for .NET vous permet d'ajouter des en-têtes et des pieds de page à un fichier PDF existant. Vous pouvez insérer à la fois des images et du texte dans le document.
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-## Ajouter du texte dans l'en-tête du fichier PDF
+## Ajout d'en-têtes et de pieds de page en tant que fragments de texte
 
-Vous pouvez utiliser la classe [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) pour ajouter du texte dans l'en-tête d'un fichier PDF. La classe TextStamp fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter du texte dans l'en-tête, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la Page pour ajouter le texte dans l'en-tête du PDF.
+Le code suivant démontre comment ajouter des en-têtes et des pieds de page en tant que fragments de texte dans un PDF en utilisant C#.
 
-Vous devez définir la propriété TopMargin de manière à ce qu'elle ajuste le texte dans la zone d'en-tête de votre PDF. Vous devez également définir HorizontalAlignment sur Center et VerticalAlignment sur Top.
-
-Le code suivant vous montre comment ajouter du texte dans l'en-tête d'un fichier PDF avec C#.
-
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddHeaderText()
+private static void AddHeaderAndFooterAsText()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "TextinHeader.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsTextInput.pdf"))
     {
-        // Create header as a TextStamp
-        var textStamp = new Aspose.Pdf.TextStamp("Header Text")
+        for (var i = 1; i <= document.Pages.Count; i++)
         {
-            TopMargin = 10,
-            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center,
-            VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top
-        };
-
-        // Add header on all pages
-        foreach (var page in document.Pages)
-        {
-            page.AddStamp(textStamp);
-        }
-
-        // Save PDF document
-        document.Save(dataDir + "TextinHeader_out.pdf");
-    }
-}
-```
-
-## Ajouter du texte dans le pied de page du fichier PDF
-
-Vous pouvez utiliser la classe TextStamp pour ajouter du texte dans le pied de page d'un fichier PDF. La classe TextStamp fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter du texte dans le pied de page, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la Page pour ajouter le texte dans le pied de page du PDF.
-
-{{% alert color="primary" %}}
-
-Vous devez définir la propriété Bottom Margin de manière à ce qu'elle ajuste le texte dans la zone de pied de page de votre PDF. Vous devez également définir HorizontalAlignment sur Center et VerticalAlignment sur Bottom.
-
-{{% /alert %}}
-
-Le code suivant vous montre comment ajouter du texte dans le pied de page d'un fichier PDF avec C#.
-
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddFooterText()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "TextinFooter.pdf"))
-    {
-        // Create footer as a TextStamp
-        var textStamp = new Aspose.Pdf.TextStamp("Footer Text")
-        {
-            BottomMargin = 10,
-            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center,
-            VerticalAlignment = Aspose.Pdf.VerticalAlignment.Bottom
-        };
-
-        // Add footer on all pages
-        foreach (var page in document.Pages)
-        {
-            page.AddStamp(textStamp);
-        }
-
-        // Save PDF document
-        document.Save(dataDir + "TextinFooter_out.pdf");
-    }
-}
-```
-
-## Ajouter une image dans l'en-tête du fichier PDF
-
-Vous pouvez utiliser la classe [ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp) pour ajouter une image dans l'en-tête d'un fichier PDF. La classe Image Stamp fournit les propriétés nécessaires pour créer un tampon basé sur une image comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter une image dans l'en-tête, vous devez créer un objet Document et un objet Image Stamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la Page pour ajouter l'image dans l'en-tête du PDF.
-
-{{% alert color="primary" %}}
-
-Vous devez définir la propriété TopMargin de manière à ce qu'elle ajuste l'image dans la zone d'en-tête de votre PDF. Vous devez également définir HorizontalAlignment sur Center et VerticalAlignment sur Top.
-
-{{% /alert %}}
-
-Le code suivant vous montre comment ajouter une image dans l'en-tête d'un fichier PDF avec C#.
-
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddImageHeader()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "ImageinHeader.pdf"))
-    {
-        // Create header as an ImageStamp
-        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg")
-        {
-            TopMargin = 10,
-            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center,
-            VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top
-        };
-
-        // Add image header on all pages
-        foreach (var page in document.Pages)
-        {
-            page.AddStamp(imageStamp);
-        }
-
-        // Save PDF document
-        document.Save(dataDir + "ImageinHeader_out.pdf");
-    }
-}
-```
-
-## Ajouter une image dans le pied de page du fichier PDF
-
-Vous pouvez utiliser la classe Image Stamp pour ajouter une image dans le pied de page d'un fichier PDF. La classe Image Stamp fournit les propriétés nécessaires pour créer un tampon basé sur une image comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter une image dans le pied de page, vous devez créer un objet Document et un objet Image Stamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la Page pour ajouter l'image dans le pied de page du PDF.
-
-{{% alert color="primary" %}}
-
-Vous devez définir la propriété [BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin) de manière à ce qu'elle ajuste l'image dans la zone de pied de page de votre PDF. Vous devez également définir [HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment) sur `Center` et [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment) sur `Bottom`.
-
-{{% /alert %}}
-
-Le code suivant vous montre comment ajouter une image dans le pied de page d'un fichier PDF avec C#.
-
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddImageFooter()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "ImageInFooter.pdf"))
-    {
-        // Create footer as an ImageStamp
-        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg")
-        {
-            BottomMargin = 10,
-            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center,
-            VerticalAlignment = Aspose.Pdf.VerticalAlignment.Bottom
-        };
-
-        // Add image footer on all pages
-        foreach (var page in document.Pages)
-        {
-            page.AddStamp(imageStamp);
-        }
-
-        // Save PDF document
-        document.Save(dataDir + "ImageInFooter_out.pdf");
-    }
-}
-```
-
-## Ajouter différents en-têtes dans un fichier PDF
-
-Nous savons que nous pouvons ajouter TextStamp dans la section En-tête/Pied de page du document en utilisant les propriétés TopMargin ou Bottom Margin, mais parfois nous pouvons avoir besoin d'ajouter plusieurs en-têtes/pieds de page dans un seul document PDF. **Aspose.PDF for .NET** explique comment faire cela.
-
-Pour accomplir cette exigence, nous allons créer des objets TextStamp individuels (le nombre d'objets dépend du nombre d'en-têtes/pieds de page requis) et les ajouter au document PDF. Nous pouvons également spécifier différentes informations de formatage pour chaque objet tampon. Dans l'exemple suivant, nous avons créé un objet Document et trois objets TextStamp, puis nous avons utilisé la méthode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la Page pour ajouter le texte dans la section d'en-tête du PDF. Le code suivant vous montre comment ajouter une image dans le pied de page d'un fichier PDF avec Aspose.PDF for .NET.
-
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddDifferentHeaders()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddingDifferentHeaders.pdf"))
-    {
-        // Create three stamps
-        var stamp1 = new Aspose.Pdf.TextStamp("Header 1");
-        var stamp2 = new Aspose.Pdf.TextStamp("Header 2");
-        var stamp3 = new Aspose.Pdf.TextStamp("Header 3");
-
-        // Set stamp1 properties (Header 1)
-        stamp1.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
-        stamp1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-        stamp1.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
-        stamp1.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-        stamp1.TextState.FontSize = 14;
-
-        // Set stamp2 properties (Header 2)
-        stamp2.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
-        stamp2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-        stamp2.Zoom = 10;
-
-        // Set stamp3 properties (Header 3)
-        stamp3.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
-        stamp3.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-        stamp3.RotateAngle = 35;
-        stamp3.TextState.BackgroundColor = Aspose.Pdf.Color.Pink;
-        stamp3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
-
-        // Add the stamps to specific pages
-        document.Pages[1].AddStamp(stamp1);
-        document.Pages[2].AddStamp(stamp2);
-        document.Pages[3].AddStamp(stamp3);
-
-        // Save PDF document
-        document.Save(dataDir + "MultiHeader_out.pdf");
-    }
-}
-```
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
+            // Create header text
+            var headerText = new Aspose.Pdf.Text.TextFragment("header");
+            
+            // Create header
+            var header = new Aspose.Pdf.HeaderFooter();
+            header.Paragraphs.Add(headerText);
+                    
+            // Create footer text
+            var footerText = new Aspose.Pdf.Text.TextFragment("footer");
+            
+            // Create footer 
+            var footer = new Aspose.Pdf.HeaderFooter();
+            footer.Paragraphs.Add(footerText);
+            
+            // Set header margin
+            header.Margin = new MarginInfo
             {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
+                Left = 50,
+                Top = 20
+            };
+            
+            // Set footer margin
+            footer.Margin = new MarginInfo
             {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
+                Left = 50,
+                Top = 20
+            };
+                    
+            // Bind the header and footer to the page
+            document.Pages[i].Header = header;
+            document.Pages[i].Footer = footer;
+        }
+            
+        // Save PDF document
+        document.Save(dataDir + "AddHeaderAndFooterAsText_out.pdf");
     }
 }
-</script>
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHeaderAndFooterAsText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsTextInput.pdf");
+    
+    for (var i = 1; i <= document.Pages.Count; i++)
+    {
+        // Create header text
+        var headerText = new Aspose.Pdf.Text.TextFragment("header");
+    
+        // Create header
+        var header = new Aspose.Pdf.HeaderFooter();
+        header.Paragraphs.Add(headerText);
+            
+        // Create footer text
+        var footerText = new Aspose.Pdf.Text.TextFragment("footer");
+    
+        // Create footer 
+        var footer = new Aspose.Pdf.HeaderFooter();
+        footer.Paragraphs.Add(footerText);
+    
+        // Set header margin
+        header.Margin = new MarginInfo
+        {
+            Left = 50,
+            Top = 20
+        };
+    
+        // Set footer margin
+        footer.Margin = new MarginInfo
+        {
+            Left = 50,
+            Top = 20
+        };
+            
+        // Bind the header and footer to the page
+        document.Pages[i].Header = header;
+        document.Pages[i].Footer = footer;
+    }
+    
+    // Save PDF document
+    document.Save(dataDir + "AddHeaderAndFooterAsText_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Ajout d'en-têtes et de pieds de page en tant que fragments HTML
+
+Le code suivant démontre comment ajouter des en-têtes et des pieds de page en tant que fragments HTML à un PDF en utilisant C#.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHeaderAndFooterAsHTML()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsHTMLInput.pdf"))
+    {
+        for (var i = 1; i <= document.Pages.Count; i++)
+        {
+            // Create header HTML
+            var headerHTML = new Aspose.Pdf.HtmlFragment("<span>header</span>");
+            
+            // Create header
+            var header = new Aspose.Pdf.HeaderFooter();
+            header.Paragraphs.Add(headerHTML);
+                    
+            // Create footer HTML
+            var footerHTML = new Aspose.Pdf.HtmlFragment("<span>footer</span>");
+            
+            // Create footer 
+            var footer = new Aspose.Pdf.HeaderFooter();
+            footer.Paragraphs.Add(footerHTML);
+            
+            // Set header margin
+            header.Margin = new MarginInfo
+            {
+                Left = 50,
+                Top = 20
+            };
+            
+            // Set footer margin
+            footer.Margin = new MarginInfo
+            {
+                Left = 50,
+                Top = 20
+            };
+                    
+            // Bind the header and footer to the page
+            document.Pages[i].Header = header;
+            document.Pages[i].Footer = footer;
+        }
+            
+        // Save PDF document
+        document.Save(dataDir + "AddHeaderAndFooterAsHTML_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHeaderAndFooterAsHTML()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsHTMLInput.pdf");
+    
+    for (var i = 1; i <= document.Pages.Count; i++)
+    {
+        // Create header HTML
+        var headerHTML = new Aspose.Pdf.HtmlFragment("<span>header</span>");
+    
+        // Create header
+        var header = new Aspose.Pdf.HeaderFooter();
+        header.Paragraphs.Add(headerHTML);
+            
+        // Create footer HTML
+        var footerHTML = new Aspose.Pdf.HtmlFragment("<span>footer</span>");
+    
+        // Create footer 
+        var footer = new Aspose.Pdf.HeaderFooter();
+        footer.Paragraphs.Add(footerHTML);
+    
+        // Set header margin
+        header.Margin = new MarginInfo
+        {
+            Left = 50,
+            Top = 20
+        };
+    
+        // Set footer margin
+        footer.Margin = new MarginInfo
+        {
+            Left = 50,
+            Top = 20
+        };
+            
+        // Bind the header and footer to the page
+        document.Pages[i].Header = header;
+        document.Pages[i].Footer = footer;
+    }
+    
+    // Save PDF document
+    document.Save(dataDir + "AddHeaderAndFooterAsHTML_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Ajout d'en-têtes et de pieds de page en tant qu'images
+
+Le code suivant démontre comment ajouter des en-têtes et des pieds de page en tant qu'images à un PDF en utilisant C#.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHeaderAndFooterAsImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsImageInput.pdf"))
+    {
+        for (var i = 1; i <= document.Pages.Count; i++)
+        {
+            // Create header image
+            var headerImage = new Aspose.Pdf.Image();
+            headerImage.File = dataDir + "ImageExample.png";
+            
+            // Create header
+            var header = new Aspose.Pdf.HeaderFooter();
+            header.Paragraphs.Add(headerImage);
+                    
+            // Create footer image
+            var footerImage = new Aspose.Pdf.Image();
+            footerImage.File = dataDir + "ImageExample.png";
+            
+            // Create footer 
+            var footer = new Aspose.Pdf.HeaderFooter();
+            footer.Paragraphs.Add(footerImage);
+            
+            // Set header margin
+            header.Margin = new MarginInfo
+            {
+                Left = 50
+            };
+            
+            // Set footer margin
+            footer.Margin = new MarginInfo
+            {
+                Left = 50
+            };
+                    
+            // Bind the header and footer to the page
+            document.Pages[i].Header = header;
+            document.Pages[i].Footer = footer;
+        }
+            
+        // Save PDF document
+        document.Save(dataDir + "AddHeaderAndFooterAsImage_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHeaderAndFooterAsImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsImageInput.pdf");
+    
+    for (var i = 1; i <= document.Pages.Count; i++)
+    {
+        // Create header image
+        var headerImage = new Aspose.Pdf.Image();
+        headerImage.File = dataDir + "ImageExample.png";
+            
+        // Create header
+        var header = new Aspose.Pdf.HeaderFooter();
+        header.Paragraphs.Add(headerImage);
+                    
+        // Create footer image
+        var footerImage = new Aspose.Pdf.Image();
+        footerImage.File = dataDir + "ImageExample.png";
+            
+        // Create footer 
+        var footer = new Aspose.Pdf.HeaderFooter();
+        footer.Paragraphs.Add(footerImage);
+            
+        // Set header margin
+        header.Margin = new MarginInfo
+        {
+            Left = 50
+        };
+            
+        // Set footer margin
+        footer.Margin = new MarginInfo
+        {
+            Left = 50
+        };
+                    
+        // Bind the header and footer to the page
+        document.Pages[i].Header = header;
+        document.Pages[i].Footer = footer;
+    }
+            
+    // Save PDF document
+    document.Save(dataDir + "AddHeaderAndFooterAsImage_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
