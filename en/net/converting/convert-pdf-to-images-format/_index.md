@@ -82,44 +82,13 @@ sitemap:
 
 This article explains how to convert PDF to different image formats using C#. It covers the following topics.
 
-_Image Format_: **TIFF**
-- [C# PDF to TIFF](#csharp-pdf-to-tiff)
-- [C# Convert PDF to TIFF](#csharp-pdf-to-tiff)
-- [C# Convert Single or Particular Pages of PDF to TIFF](#csharp-pdf-to-tiff-pages)
-
-
-_Image Format_: **BMP**
-- [C# PDF to BMP](#csharp-pdf-to-bmp)
-- [C# Convert PDF to BMP](#csharp-pdf-to-bmp)
-- [C# PDF to BMP Converter](#csharp-pdf-to-bmp)
-
-_Image Format_: **EMF**
-- [C# PDF to EMF](#csharp-pdf-to-emf)
-- [C# Convert PDF to EMF](#csharp-pdf-to-emf)
-- [C# PDF to EMF Converter](#csharp-pdf-to-emf)
-
-
-_Image Format_: **JPG**
-- [C# PDF to JPG](#csharp-pdf-to-jpg)
-- [C# Convert PDF to JPG](#csharp-pdf-to-jpg)
-- [C# PDF to JPG Converter](#csharp-pdf-to-jpg)
-
-
-_Image Format_: **PNG**
-- [C# PDF to PNG](#csharp-pdf-to-png)
-- [C# Convert PDF to PNG](#csharp-pdf-to-png)
-- [C# PDF to PNG Converter](#csharp-pdf-to-png)
-
-
-_Image Format_: **GIF**
-- [C# PDF to GIF](#csharp-pdf-to-gif)
-- [C# Convert PDF to GIF](#csharp-pdf-to-gif)
-- [C# PDF to GIF Converter](#csharp-pdf-to-gif)
-
-_Image Format_: **SVG**
-- [C# PDF to SVG](#csharp-pdf-to-svg)
-- [C# Convert PDF to SVG](#csharp-pdf-to-svg)
-- [C# PDF to SVG Converter](#csharp-pdf-to-svg)
+- [Convert PDF to TIFF](#csharp-pdf-to-tiff)
+- [Convert PDF to BMP](#csharp-pdf-to-bmp)
+- [Convert PDF to EMF](#csharp-pdf-to-emf)
+- [Convert PDF to JPG](#csharp-pdf-to-jpg)
+- [Convert PDF to PNG](#csharp-pdf-to-png)
+- [Convert PDF to GIF](#csharp-pdf-to-gif)
+- [Convert PDF to SVG](#csharp-pdf-to-svg)
 
 ## C# Convert PDF to Image
 
@@ -147,7 +116,7 @@ Aspose.PDF for .NET presents you online free application ["PDF to TIFF"](https:/
 
 Aspose.PDF for .NET explain how to convert all pages in a PDF file to a single TIFF image:
 
-<a name="csharp-pdf-to-tiff"><strong>Steps: Convert PDF to TIFF in C#</strong></a>
+<a name="csharp-pdf-to-tiff"><strong>Convert PDF to TIFF</strong></a>
 
 1. Create an object of the **Document** class.
 2. Create **TiffSettings** and **TiffDevice** objects.
@@ -191,7 +160,6 @@ private static void ConvertPDFtoTIFF()
 
 Aspose.PDF for .NET allows to convert a particular page in a PDF file to a TIFF image, use an overloaded version of the Process(..) method which takes a page number as an argument for conversion. The following code snippet shows how to convert the first page of a PDF to TIFF format.
 
-<a name="csharp-pdf-to-tiff-pages"><strong>Steps: Convert Single or Particular Pages of PDF to TIFF in C#</strong></a>
 
 1. Create an object of the **Document** class.
 2. Create **TiffSettings** and **TiffDevice** objects.
@@ -291,16 +259,6 @@ Let's take a look at how to convert a PDF page to an image.
 <a name="csharp-pdf-to-jpg"></a>
 <a name="csharp-pdf-to-png"></a>
 <a name="csharp-pdf-to-gif"></a>
-    
-The following steps and code snippet in C# shows this possibility
- 
- - [Convert PDF to BMP in C#](#csharp-pdf-to-image)
- - [Convert PDF to EMF in C#](#csharp-pdf-to-image)
- - [Convert PDF to JPG in C#](#csharp-pdf-to-image)
- - [Convert PDF to PNG in C#](#csharp-pdf-to-image)
- - [Convert PDF to GIF in C#](#csharp-pdf-to-image)
-
-<a name="csharp-pdf-to-image"><strong>Steps: PDF to Image (BMP, EMF, JPG, PNG, GIF) in C#</strong></a>
 
 1. Load the PDF file using **Document** class.
 2. Create an instance of subclass of **ImageDevice** i.e.
@@ -383,7 +341,7 @@ Aspose.PDF for .NET supports the feature to convert SVG image to PDF format and 
 
 The following code snippet shows the steps for converting a PDF file to SVG format with .NET.
 
-<a name="csharp-pdf-to-svg"><strong>Steps: Convert PDF to SVG in C#</strong></a>
+<a name="csharp-pdf-to-svg"><strong>Convert PDF to SVG</strong></a>
 
 1. Create an object of the **Document** class.
 2. Create **SvgSaveOptions** object with needed settings.

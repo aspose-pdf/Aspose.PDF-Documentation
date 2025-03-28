@@ -78,10 +78,20 @@ sitemap:
 }
 </script>
 
+This article explains how to convert PDF to different formats using C#. It covers the following topics.
+
+- [Convert PDF to EPUB](#csharp-convert-pdf-to-epub)
+- [Convert PDF to LaTeX/TeX](#csharp-convert-pdf-to-latex)
+- [Convert PDF to Plain Text](#csharp-convert-pdf-to-plain-text)
+- [Convert PDF to XPS](#csharp-convert-pdf-to-xps)
+- [Convert PDF to Markdown](#csharp-convert-pdf-to-markdown)
+
 ## Convert PDF to EPUB
 
 {{% alert color="success" %}}
 **Try to convert PDF to EPUB online**
+
+<a name="csharp-convert-pdf-to-epub" id="csharp-convert-pdf-to-epub"><strong>Convert PDF to EPUB</strong></a>
 
 Aspose.PDF for .NET presents you online free application ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), where you may try to investigate the functionality and quality it works.
 
@@ -118,6 +128,8 @@ private static void ConvertPDFtoEPUB()
 ```
 
 ## Convert PDF to LaTeX/TeX
+
+<a name="csharp-convert-pdf-to-latex" id="csharp-convert-pdf-to-latex"><strong>Convert PDF to LaTeX/TeX</strong></a>
 
 **Aspose.PDF for .NET** support converting PDF to LaTeX/TeX.
 The LaTeX file format is a text file format with the special markup and used in TeX-based document preparation system for high-quality typesetting.
@@ -160,6 +172,8 @@ private static void ConvertPDFtoTeX()
 ```
 
 ## Convert PDF to Text
+
+<a name="csharp-convert-pdf-to-plain-text" id="csharp-convert-pdf-to-plain-text"><strong>Convert PDF to Plain Text</strong></a>
 
 **Aspose.PDF for .NET** support converting whole PDF document and single page to a Text file.
 
@@ -227,6 +241,8 @@ private static void ConvertPDFtoTXT()
 
 ## Convert PDF to XPS
 
+<a name="csharp-convert-pdf-to-xps" id="csharp-convert-pdf-to-xps"><strong>Convert PDF to XPS</strong></a>
+
 **Aspose.PDF for .NET** gives a possibility to convert PDF files to <abbr title="XML Paper Specification">XPS</abbr> format. Let try to use the presented code snippet for converting PDF files to XPS format with C#.
 
 {{% alert color="success" %}}
@@ -266,6 +282,8 @@ private static void ConvertPDFtoXPS()
 ```
 
 ## Convert PDF to Markdown
+
+<a name="csharp-convert-pdf-to-markdown" id="csharp-convert-pdf-to-markdown"><strong>Convert PDF to Markdown</strong></a>
 
 **Aspose.PDF for .NET** gives a possibility to convert PDF files to <abbr title="Markdown">MD</abbr> format. Let try to use the presented code snippet for converting PDF files to MD format with C#.
 

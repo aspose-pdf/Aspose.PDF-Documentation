@@ -74,7 +74,7 @@ draft: false
 </script>
 
 ## Introduction
-This document provides a detailed guide on using the bounds-checking feature in the Shapes collection. This feature ensures that elements fit within their parent container and can be configured to throw an exception if the component does not fit. We will walk through the steps to implement this functionality and provide a complete example.
+This document provides a detailed guide on using the bounds-checking feature in the Shapes collection. This feature ensures that elements fit within their parent container and can be configured to throw an exception if the component does not fit.
 
 ## Prerequisites
 You will need the following:
@@ -83,82 +83,6 @@ You will need the following:
 * A sample PDF file that contains some pages
 
 You can download the Aspose.PDF for .NET library from the official website or install it using the NuGet Package Manager in Visual Studio.
-
-## Steps
-Here are the steps to complete the task:
-1. Create PDF document.
-2. Create a `Graph` object with specified dimensions.
-3. Create a `Shape` object with specified dimensions.
-4. Set the `BoundsCheckMode` to `ThrowExceptionIfDoesNotFit`.
-5. Attempt to add the shape to the graph.
-
-Let's see how to implement these steps in C# code.
-
-### Step 1: Create PDF document
-First, create a new PDF document and add a page to it.
-
-```csharp
-using (var document = new Aspose.Pdf.Document())
-{
-    Aspose.Pdf.Page page = document.Pages.Add();
-}
-```
-
-### Step 2: Create a Graph object with specified dimensions
-Next, create a `Graph` object with a width and height of 100 units. Position the graph 10 units from the top and 15 units from the left of the page. Add a black border to the graph.
-
-```csharp
-var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
-{
-    Top = 10,
-    Left = 15,
-    Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
-};
-page.Paragraphs.Add(graph);
-```
-
-### Step 3: Create an Shape object (for example, Rectangle) with specified dimensions
-Create a Rectangle object with a width and height of 50 units. Position the rectangle at (-1, 0), which is outside the bounds of the graph.
-
-```csharp
-var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
-{
-    GraphInfo =
-    {
-        FillColor = Aspose.Pdf.Color.Tomato
-    }
-};
-```
-
-### Step 4: Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
-Set the `BoundsCheckMode` to `ThrowExceptionIfDoesNotFit` to ensure that an exception is thrown if the rectangle does not fit within the graph.
-
-```csharp
-graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-```
-
-### Step 5: Add the rectangle to the graph
-Add the rectangle to the graph. This will throw an `Aspose.Pdf.BoundsOutOfRangeException` because the rectangle does not fit within the graph's dimensions.
-
-```csharp
-graph.Shapes.Add(rect);
-```
-
-## Output
-After executing the code, the expected output will be an `Aspose.Pdf.BoundsOutOfRangeException` with the message:
-
-```
-Bounds not fit. Container dimensions: 100x100
-```
-
-## Troubleshooting
-In case of issues, here are a few tips:
-* Ensure that the `BoundsCheckMode` is set correctly.
-* Verify that the dimensions of the element and the container are accurate.
-* Check the positioning of the element within the container.
-
-## Complete Example
-Below is a complete example demonstrating all the steps combined:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -238,6 +162,3 @@ private static void CheckShapeBounds()
 ```
 {{< /tab >}}
 {{< /tabs >}}
-
-## Conclusion
-The bounds-checking feature in the Shapes collection is a powerful tool for ensuring elements fit within parent containers. You can prevent layout issues in your PDF documents by setting the BoundsCheckMode to ThrowExceptionIfDoesNotFit. This feature is particularly useful in scenarios where precise element positioning and sizing are critical. For further details, visit the [official documentation](https://docs.aspose.com/pdf/net/).
