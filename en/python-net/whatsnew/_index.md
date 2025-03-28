@@ -9,6 +9,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 lastmod: "2025-02-24"
+TechArticle: true 
+AlternativeHeadline: Release Notes of Aspose.PDF for Python
+Abstract: ​The What's New section of Aspose.PDF for Python via .NET provides detailed release notes for each version, highlighting new features, improvements, and bug fixes. Each release note includes code snippets demonstrating the latest functionalities, offering developers practical examples to integrate into their projects.
 ---
 
 ## What's new in Aspose.PDF 25.1

@@ -5,76 +5,14 @@ type: docs
 weight: 10
 url: /python-net/create-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for Python via .NET.
-lastmod: "2023-04-12"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Create PDF File with Python
+Abstract: Aspose.PDF for Python via .NET is a versatile API designed for developers to manipulate PDF files within Python applications targeting the .NET framework. It enables users to create, load, modify, and convert PDF documents effortlessly. This article provides a step-by-step guide to creating a simple PDF file using Aspose.PDF. The process involves initializing a `Document` object, adding a `Page` to the document, inserting a `TextFragment` into the page's paragraphs, and saving the file as a PDF. The included Python code snippet demonstrates these steps by creating a PDF document that contains the text "Hello World!". This API simplifies PDF handling with minimal code, enhancing productivity for developers working with PDFs in .NET environments.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "How to Create PDF using Python",
-    "alternativeHeadline": "Create PDF document from scratch via Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, dotnet, create pdf document",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/create-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/create-pdf-document/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Create and format the PDF Document with Aspose.PDF for Python via .NET."
-}
-</script>
 
 **Aspose.PDF for Python via .NET** is a PDF manipulation API that allows developers to create, load, modify, and convert PDF files directly from Python for .NET applications with just a few lines of code.
 
