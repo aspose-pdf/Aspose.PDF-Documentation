@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET introduce la capacidad de crear formularios PDF rellenables desde cero, permitiendo a los desarrolladores integrar sin problemas campos de formulario personalizables como cuadros de texto, botones de opción y cuadros combinados en sus PDF. Esta funcionalidad permite a los usuarios mejorar la interactividad de los documentos y optimizar la recopilación de datos dentro de sus aplicaciones.",
+    "abstract": "Aspose.PDF for .NET introduces the ability to create fillable PDF forms from scratch, allowing developers to seamlessly integrate customizable form fields such as text boxes, radio buttons, and combo boxes into their PDFs. This functionality empowers users to enhance document interactivity and improve data collection within their applications",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "4018",
+    "wordcount": "4022",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-28",
+    "dateModified": "2025-03-29",
     "description": "Con Aspose.PDF for .NET puedes crear un formulario desde cero en tu archivo PDF"
 }
 </script>
@@ -86,8 +86,9 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 La clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) proporciona una colección llamada [Form](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/properties/form) que te ayuda a gestionar campos de formulario en un documento PDF.
 
 Para agregar un campo de formulario:
+
 1. Crea el campo de formulario que deseas agregar.
-2. Llama al método Add de la colección [Form](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/properties/form).
+1. Llama al método Add de la colección [Form](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/properties/form).
 
 ### Agregar TextBoxField
 
@@ -95,6 +96,7 @@ El siguiente ejemplo muestra cómo agregar un [TextBoxField](https://reference.a
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()
@@ -130,6 +132,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()
@@ -170,6 +173,7 @@ Los siguientes fragmentos de código muestran cómo agregar [RadioButtonField](h
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRadioButtonToPdf()
@@ -203,6 +207,7 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRadioButtonToPdf()
@@ -235,9 +240,10 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-[TextBoxField](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/textboxfield) puede agregarse con algunas anotaciones de widget.
+[TextBoxField](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/textboxfield) se puede agregar con algunas anotaciones de widget.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()
@@ -290,6 +296,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()
@@ -345,6 +352,7 @@ El siguiente fragmento de código muestra los pasos para agregar RadioButtonFiel
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRadioButtonWithOptionsToPdf()
@@ -431,6 +439,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRadioButtonWithOptionsToPdf()
@@ -518,10 +527,11 @@ private static void AddRadioButtonWithOptionsToPdf()
 
 ### Agregar título a RadioButtonField
 
-El siguiente fragmento de código muestra cómo agregar un título asociado a RadioButtonField:
+El siguiente fragmento de código muestra cómo agregar un título que estará asociado con RadioButtonField:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddingCaptionToRadioButtonField()
@@ -579,6 +589,7 @@ private static void AddingCaptionToRadioButtonField()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddingCaptionToRadioButtonField()
@@ -634,11 +645,12 @@ private static void AddingCaptionToRadioButtonField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Otra variante para agregar checkboxes agrupados
+### Otra variante para agregar casillas de verificación agrupadas
 
-Los siguientes fragmentos de código muestran cómo agregar campos de checkbox agrupados en un documento PDF.
+Los siguientes fragmentos de código muestran cómo agregar campos de casillas de verificación agrupadas en un documento PDF.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddGroupedCheckBoxFieldsToPdf()
@@ -691,6 +703,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddGroupedCheckBoxFieldsToPdf()
@@ -748,6 +761,7 @@ Los siguientes fragmentos de código muestran cómo agregar un campo ComboBox en
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddComboBoxToPdf()
@@ -781,6 +795,7 @@ private static void AddComboBoxToPdf()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddComboBoxToPdf()
@@ -819,6 +834,7 @@ El siguiente fragmento de código muestra cómo agregar CheckboxField en un docu
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddCheckBoxFieldToPdf()
@@ -835,7 +851,6 @@ private static void AddCheckBoxFieldToPdf()
         var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
         checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
         checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-        document.Form.Add(checkboxField, 1);
 
         // Add field to the form
         document.Form.Add(checkboxField);
@@ -848,6 +863,7 @@ private static void AddCheckBoxFieldToPdf()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddCheckBoxFieldToPdf()
@@ -864,7 +880,6 @@ private static void AddCheckBoxFieldToPdf()
     var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
     checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
     checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-    document.Form.Add(checkboxField, 1);
 
     // Add field to the form
     document.Form.Add(checkboxField);
@@ -882,6 +897,7 @@ El siguiente fragmento de código muestra cómo agregar ListBoxField en un docum
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddListBoxFieldToPdf()
@@ -911,6 +927,7 @@ private static void AddListBoxFieldToPdf()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddListBoxFieldToPdf()
@@ -945,6 +962,7 @@ El siguiente fragmento de código muestra cómo firmar un documento PDF con Sign
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 private static void SignPdfBySignatureField()
 {
@@ -976,6 +994,7 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 private static void SignPdfBySignatureField()
 {
@@ -1006,14 +1025,15 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Agregar tooltip a campo de formulario
+### Agregar información sobre herramientas a un campo de formulario
 
-La clase Document proporciona una colección llamada Form que gestiona campos de formulario en un documento PDF. Para agregar un tooltip a un campo de formulario, usa la propiedad AlternateName de la clase Field. Adobe Acrobat utiliza el 'nombre alternativo' como tooltip del campo.
+La clase Document proporciona una colección llamada Form que gestiona campos de formulario en un documento PDF. Para agregar información sobre herramientas a un campo de formulario, usa la propiedad AlternateName de la clase Field. Adobe Acrobat utiliza el 'nombre alternativo' como información sobre herramientas del campo.
 
-Los siguientes fragmentos de código muestran cómo agregar un tooltip a un campo de formulario, primero usando C# y luego Visual Basic.
+Los siguientes fragmentos de código muestran cómo agregar información sobre herramientas a un campo de formulario, primero usando C# y luego Visual Basic.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTooltipToField()
@@ -1038,6 +1058,7 @@ private static void AddTooltipToField()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTooltipToField()

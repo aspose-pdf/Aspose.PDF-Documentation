@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "٤٦٣٦٧٢٠٨٥٩ يُقدم إمكانية إنشاء نماذج PDF قابلة للتعبئة من الصفر، مما يسمح للمطورين بدمج حقول النماذج القابلة للتخصيص مثل مربعات النص وأزرار الاختيار والقوائم المنسدلة في ملفات PDF بسلاسة. هذه الوظيفة تمكّن المستخدمين من تعزيز التفاعل في المستندات وتحسين جمع البيانات داخل تطبيقاتهم.",
+    "abstract": "يقدم Aspose.PDF for .NET القدرة على إنشاء نماذج PDF قابلة للتعبئة من الصفر، مما يسمح للمطورين بدمج حقول النماذج القابلة للتخصيص مثل مربعات النص وأزرار الراديو ومربعات التحرير والسرد في ملفات PDF الخاصة بهم بسلاسة. تمكّن هذه الوظيفة المستخدمين من تعزيز التفاعل في المستندات وتحسين جمع البيانات داخل تطبيقاتهم",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "3949",
+    "wordcount": "3948",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,27 +72,27 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-28",
-    "description": "مع Aspose.PDF for .NET يمكنك إنشاء نموذج من البداية في ملف PDF الخاص بك"
+    "dateModified": "2025-03-29",
+    "description": "باستخدام Aspose.PDF for .NET يمكنك إنشاء نموذج من الصفر في ملف PDF الخاص بك"
 }
 </script>
 
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) library.
+تعمل مقتطفات التعليمات البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إنشاء نموذج من الصفر
 
 ### إضافة حقل نموذج في مستند PDF
 
-يوفر صنف [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مجموعة تسمى [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/form) تساعدك في إدارة حقول النموذج في مستند PDF.
+توفر فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مجموعة تسمى [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/form) تساعدك في إدارة حقول النموذج في مستند PDF.
 
 لإضافة حقل نموذج:
 
 1. قم بإنشاء حقل النموذج الذي تريد إضافته.
-1. استدعِ طريقة Add لمجموعة [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/form).
+1. استدعاء طريقة Add لمجموعة [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/form).
 
 ### إضافة TextBoxField
 
-يوضح المثال أدناه كيفية إضافة [TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield).
+يوضح المثال التالي كيفية إضافة [TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield).
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -169,7 +169,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### إضافة RadioButtonField
 
-تظهر مقاطع الكود التالية كيفية إضافة [RadioButtonField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/radiobuttonfield) في مستند PDF.
+تعرض مقاطع التعليمات البرمجية التالية كيفية إضافة [RadioButtonField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/radiobuttonfield) في مستند PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -240,7 +240,7 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-[TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield) يمكن إضافته مع بعض تعليقات الويدجت.
+يمكن إضافة [TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield) مع بعض التعليقات التوضيحية للأداة.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -348,7 +348,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-يظهر مقطع الكود التالي الخطوات لإضافة RadioButtonField مع ثلاثة خيارات ووضعها داخل خلايا الجدول.
+يعرض مقطع التعليمات البرمجية التالي الخطوات لإضافة RadioButtonField مع ثلاثة خيارات ووضعها داخل خلايا الجدول.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -527,7 +527,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 
 ### إضافة تسمية إلى RadioButtonField
 
-يظهر مقطع الكود التالي كيفية إضافة تسمية ستكون مرتبطة بـ RadioButtonField:
+يعرض مقطع التعليمات البرمجية التالي كيفية إضافة تسمية ستكون مرتبطة بـ RadioButtonField:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -647,7 +647,7 @@ private static void AddingCaptionToRadioButtonField()
 
 ### متغير آخر لإضافة مربعات اختيار مجمعة
 
-تظهر مقاطع الكود التالية كيفية إضافة حقول مربعات اختيار مجمعة في مستند PDF.
+تعرض مقاطع التعليمات البرمجية التالية كيفية إضافة حقول مربعات اختيار مجمعة في مستند PDF.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -757,7 +757,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 
 ### إضافة حقل ComboBox
 
-تظهر مقاطع الكود التالية كيفية إضافة حقل ComboBox في مستند PDF.
+تعرض مقاطع التعليمات البرمجية التالية كيفية إضافة حقل ComboBox في مستند PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -830,7 +830,7 @@ private static void AddComboBoxToPdf()
 
 ### إضافة CheckboxField
 
-يظهر مقطع الكود التالي كيفية إضافة CheckboxField في مستند PDF.
+يعرض مقطع التعليمات البرمجية التالي كيفية إضافة CheckboxField في مستند PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -851,7 +851,6 @@ private static void AddCheckBoxFieldToPdf()
         var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
         checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
         checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-        document.Form.Add(checkboxField, 1);
 
         // Add field to the form
         document.Form.Add(checkboxField);
@@ -881,7 +880,6 @@ private static void AddCheckBoxFieldToPdf()
     var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
     checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
     checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-    document.Form.Add(checkboxField, 1);
 
     // Add field to the form
     document.Form.Add(checkboxField);
@@ -895,7 +893,7 @@ private static void AddCheckBoxFieldToPdf()
 
 ### إضافة ListBoxField
 
-يظهر مقطع الكود التالي كيفية إضافة ListBoxField في مستند PDF.
+يعرض مقطع التعليمات البرمجية التالي كيفية إضافة ListBoxField في مستند PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -960,7 +958,7 @@ private static void AddListBoxFieldToPdf()
 
 ### استخدام SignatureField
 
-يظهر مقطع الكود التالي كيفية توقيع مستند PDF باستخدام SignatureField.
+يعرض مقطع التعليمات البرمجية التالي كيفية توقيع مستند PDF باستخدام SignatureField.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1029,9 +1027,9 @@ private static void SignPdfBySignatureField()
 
 ### إضافة تلميح إلى حقل النموذج
 
-يوفر صنف Document مجموعة تسمى Form تدير حقول النموذج في مستند PDF. لإضافة تلميح إلى حقل نموذج، استخدم خاصية AlternateName في صنف Field. يستخدم Adobe Acrobat 'الاسم البديل' كتلميح للحقل.
+توفر فئة Document مجموعة تسمى Form تدير حقول النموذج في مستند PDF. لإضافة تلميح إلى حقل نموذج، استخدم خاصية AlternateName للفئة Field. يستخدم Adobe Acrobat "الاسم البديل" كتلميح للحقل.
 
-تظهر مقاطع الكود التالية كيفية إضافة تلميح إلى حقل نموذج، أولاً باستخدام C# ثم Visual Basic.
+تعرض مقاطع التعليمات البرمجية التالية كيفية إضافة تلميح إلى حقل نموذج، أولاً باستخدام C# ثم Visual Basic.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

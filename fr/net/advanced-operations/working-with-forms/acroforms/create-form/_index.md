@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "4054",
+    "wordcount": "4052",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-28",
+    "dateModified": "2025-03-29",
     "description": "Avec Aspose.PDF for .NET, vous pouvez créer un formulaire à partir de zéro dans votre fichier PDF"
 }
 </script>
@@ -90,7 +90,7 @@ Pour ajouter un champ de formulaire :
 1. Créez le champ de formulaire que vous souhaitez ajouter.
 1. Appelez la méthode Add de la collection [Form](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/properties/form).
 
-### Ajouter un TextBoxField
+### Ajout d'un TextBoxField
 
 L'exemple ci-dessous montre comment ajouter un [TextBoxField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/textboxfield).
 
@@ -167,7 +167,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajouter un RadioButtonField
+### Ajout d'un RadioButtonField
 
 Les extraits de code suivants montrent comment ajouter un [RadioButtonField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/radiobuttonfield) dans un document PDF.
 
@@ -525,7 +525,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajouter une légende à RadioButtonField
+### Ajout d'une légende à RadioButtonField
 
 L'extrait de code suivant montre comment ajouter une légende qui sera associée à RadioButtonField :
 
@@ -755,7 +755,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajouter un champ ComboBox
+### Ajout d'un champ ComboBox
 
 Les extraits de code suivants montrent comment ajouter un champ ComboBox dans un document PDF.
 
@@ -828,7 +828,7 @@ private static void AddComboBoxToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajouter un CheckboxField
+### Ajout d'un CheckboxField
 
 L'extrait de code suivant montre comment ajouter un CheckboxField dans un document PDF.
 
@@ -851,7 +851,6 @@ private static void AddCheckBoxFieldToPdf()
         var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
         checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
         checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-        document.Form.Add(checkboxField, 1);
 
         // Add field to the form
         document.Form.Add(checkboxField);
@@ -881,7 +880,6 @@ private static void AddCheckBoxFieldToPdf()
     var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
     checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
     checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-    document.Form.Add(checkboxField, 1);
 
     // Add field to the form
     document.Form.Add(checkboxField);
@@ -893,7 +891,7 @@ private static void AddCheckBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajouter un ListBoxField
+### Ajout d'un ListBoxField
 
 L'extrait de code suivant montre comment ajouter un ListBoxField dans un document PDF.
 
@@ -958,7 +956,7 @@ private static void AddListBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Utiliser SignatureField
+### Utilisation de SignatureField
 
 L'extrait de code suivant montre comment signer un document PDF avec SignatureField.
 
@@ -1027,7 +1025,7 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajouter une info-bulle à un champ de formulaire
+### Ajout d'une info-bulle à un champ de formulaire
 
 La classe Document fournit une collection nommée Form qui gère les champs de formulaire dans un document PDF. Pour ajouter une info-bulle à un champ de formulaire, utilisez la propriété AlternateName de la classe Field. Adobe Acrobat utilise le 'nom alternatif' comme info-bulle de champ.
 

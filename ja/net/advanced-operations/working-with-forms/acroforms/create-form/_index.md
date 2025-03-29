@@ -1,10 +1,10 @@
 ---
-title: AcroFormの作成 - C#で入力可能なPDFを作成する
+title: AcroFormの作成 - C#で記入可能なPDFを作成
 linktitle: AcroFormの作成
 type: docs
 weight: 10
 url: /ja/net/create-form/
-description: Aspose.PDF for .NETを使用すると、PDFファイルでフォームを一から作成できます
+description: Aspose.PDF for .NETを使用すると、PDFファイルで最初からフォームを作成できます
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NETは入力可能なPDFフォームを一から作成する機能を導入し、開発者がテキストボックス、ラジオボタン、コンボボックスなどのカスタマイズ可能なフォームフィールドをPDFにシームレスに統合できるようにします。この機能により、アプリケーション内でドキュメントのインタラクティビティを強化し、データ収集を改善することが可能になります",
+    "abstract": "Aspose.PDF for .NETは、最初から記入可能なPDFフォームを作成する機能を導入し、開発者がテキストボックス、ラジオボタン、コンボボックスなどのカスタマイズ可能なフォームフィールドをPDFにシームレスに統合できるようにします。この機能により、ユーザーはドキュメントのインタラクティブ性を向上させ、アプリケーション内でのデータ収集を改善できます",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -72,27 +72,27 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-28",
-    "description": "Aspose.PDF for .NETを使用すると、PDFファイルでフォームを一から作成できます"
+    "dateModified": "2025-03-29",
+    "description": "Aspose.PDF for .NETを使用すると、PDFファイルで最初からフォームを作成できます"
 }
 </script>
 
-次のコードスニペットは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
-## フォームを一から作成する
+## 最初からフォームを作成
 
-### PDFドキュメントにフォームフィールドを追加する
+### PDFドキュメントにフォームフィールドを追加
 
-[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスは、PDFドキュメント内のフォームフィールドを管理するのに役立つ[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/form)コレクションを提供します。
+[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document) クラスは、PDFドキュメント内のフォームフィールドを管理するのに役立つ [Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/form) というコレクションを提供します。
 
-フォームフィールドを追加する手順:
+フォームフィールドを追加するには:
 
-1. 追加したいフォームフィールドを作成します
-1. [Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/form)コレクションのAddメソッドを呼び出します
+1. 追加したいフォームフィールドを作成します。
+1. [Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/form) コレクションのAddメソッドを呼び出します。
 
 ### TextBoxFieldの追加
 
-次の例は[TextBoxField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/textboxfield)を追加する方法を示しています。
+以下の例は、[TextBoxField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/textboxfield) を追加する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -169,7 +169,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### RadioButtonFieldの追加
 
-次のコードスニペットはPDFドキュメントに[RadioButtonField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/radiobuttonfield)を追加する方法を示しています。
+以下のコードスニペットは、PDFドキュメントに [RadioButtonField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/radiobuttonfield) を追加する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -240,7 +240,7 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-[TextBoxField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/textboxfield)はウィジェットアノテーションと共に追加できます。
+[TextBoxField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/textboxfield) はいくつかのウィジェット注釈と共に追加できます。
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -348,7 +348,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-次のコードスニペットは、3つのオプションを持つRadioButtonFieldを追加し、テーブルセル内に配置する手順を示しています。
+以下のコードスニペットは、3つのオプションを持つRadioButtonFieldを追加し、それらをTableセル内に配置する手順を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -525,9 +525,9 @@ private static void AddRadioButtonWithOptionsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### RadioButtonFieldにキャプションを追加する
+### RadioButtonFieldにキャプションを追加
 
-RadioButtonFieldに関連付けられるキャプションを追加する方法を示すコードスニペット:
+以下のコードスニペットは、RadioButtonFieldに関連付けられるキャプションを追加する方法を示しています:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -647,7 +647,7 @@ private static void AddingCaptionToRadioButtonField()
 
 ### グループ化されたチェックボックスを追加する別の方法
 
-次のコードスニペットはPDFドキュメントにグループ化されたチェックボックスフィールドを追加する方法を示しています。
+以下のコードスニペットは、PDFドキュメントにグループ化されたチェックボックスフィールドを追加する方法を示しています。
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -757,7 +757,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 
 ### ComboBoxフィールドの追加
 
-次のコードスニペットはPDFドキュメントにComboBoxフィールドを追加する方法を示しています。
+以下のコードスニペットは、PDFドキュメントにComboBoxフィールドを追加する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -830,7 +830,7 @@ private static void AddComboBoxToPdf()
 
 ### CheckboxFieldの追加
 
-次のコードスニペットはPDFドキュメントにCheckboxFieldを追加する方法を示しています。
+以下のコードスニペットは、PDFドキュメントにCheckboxFieldを追加する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -851,7 +851,6 @@ private static void AddCheckBoxFieldToPdf()
         var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
         checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
         checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-        document.Form.Add(checkboxField, 1);
 
         // Add field to the form
         document.Form.Add(checkboxField);
@@ -881,7 +880,6 @@ private static void AddCheckBoxFieldToPdf()
     var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
     checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
     checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-    document.Form.Add(checkboxField, 1);
 
     // Add field to the form
     document.Form.Add(checkboxField);
@@ -895,7 +893,7 @@ private static void AddCheckBoxFieldToPdf()
 
 ### ListBoxFieldの追加
 
-次のコードスニペットはPDFドキュメントにListBoxFieldを追加する方法を示しています。
+以下のコードスニペットは、PDFドキュメントにListBoxFieldを追加する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -960,7 +958,7 @@ private static void AddListBoxFieldToPdf()
 
 ### SignatureFieldの使用
 
-次のコードスニペットはSignatureFieldを使用してPDFドキュメントに署名する方法を示しています。
+以下のコードスニペットは、SignatureFieldを使用してPDFドキュメントに署名する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1027,11 +1025,11 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### フォームフィールドにツールチップを追加する
+### フォームフィールドにツールチップを追加
 
-DocumentクラスはPDFドキュメント内のフォームフィールドを管理するFormコレクションを提供します。フォームフィールドにツールチップを追加するには、FieldクラスのAlternateNameプロパティを使用します。Adobe Acrobatは「代替名」をフィールドツールチップとして使用します。
+Documentクラスは、PDFドキュメント内のフォームフィールドを管理するFormというコレクションを提供します。フォームフィールドにツールチップを追加するには、FieldクラスのAlternateNameを使用します。Adobe Acrobatは「alternate name」をフィールドツールチップとして使用します。
 
-以下のコードスニペットは、C#とVisual Basicを使用してフォームフィールドにツールチップを追加する方法を示しています。
+以下のコードスニペットは、最初にC#で、次にVisual Basicでフォームフィールドにツールチップを追加する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

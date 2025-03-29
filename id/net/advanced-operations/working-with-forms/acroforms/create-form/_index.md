@@ -1,10 +1,10 @@
 ---
-title: Buat AcroForm - Buat PDF yang Dapat Diisi di C#
+title: Buat AcroForm - Buat PDF yang Dapat Diisi dalam C#
 linktitle: Buat AcroForm
 type: docs
 weight: 10
 url: /id/net/create-form/
-description: Dengan Aspose.PDF for .NET Anda dapat membuat formulir dari awal di file PDF Anda
+description: Dengan Aspose.PDF for .NET Anda dapat membuat formulir dari awal dalam file PDF Anda
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "3966",
+    "wordcount": "3952",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,18 +72,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-28",
+    "dateModified": "2025-03-29",
     "description": "Dengan Aspose.PDF for .NET Anda dapat membuat formulir dari awal di file PDF Anda"
 }
 </script>
 
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Buat formulir dari awal
 
-### Tambahkan Field Formulir di Dokumen PDF
+### Tambahkan Field Formulir dalam Dokumen PDF
 
-The [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) class provides a collection named [Form](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/form) which helps you manage form fields in a PDF document.
+Kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) menyediakan koleksi bernama [Form](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/form) yang membantu Anda mengelola field formulir dalam dokumen PDF.
 
 Untuk menambahkan field formulir:
 
@@ -647,7 +647,7 @@ private static void AddingCaptionToRadioButtonField()
 
 ### Variasi lain untuk menambahkan Checkbox yang dikelompokkan
 
-Potongan kode berikut menunjukkan cara menambahkan field Checkbox yang dikelompokkan dalam dokumen PDF.
+Potongan kode berikut menunjukkan cara menambahkan field CheckBox yang dikelompokkan dalam dokumen PDF.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -851,7 +851,6 @@ private static void AddCheckBoxFieldToPdf()
         var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
         checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
         checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-        document.Form.Add(checkboxField, 1);
 
         // Add field to the form
         document.Form.Add(checkboxField);
@@ -881,7 +880,6 @@ private static void AddCheckBoxFieldToPdf()
     var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
     checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
     checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-    document.Form.Add(checkboxField, 1);
 
     // Add field to the form
     document.Form.Add(checkboxField);

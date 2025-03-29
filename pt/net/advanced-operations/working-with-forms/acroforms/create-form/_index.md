@@ -1,5 +1,5 @@
 ---
-title: Criar AcroForm - Criar PDF preenchível em C#
+title: Criar AcroForm - Criar PDF Preenchível em C#
 linktitle: Criar AcroForm
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET introduz a capacidade de criar formulários PDF preenchíveis do zero, permitindo que os desenvolvedores integrem perfeitamente campos de formulário personalizáveis, como caixas de texto, botões de rádio e caixas de combinação, em seus PDFs. Essa funcionalidade capacita os usuários a melhorar a interatividade dos documentos e aprimorar a coleta de dados em seus aplicativos",
+    "abstract": "Aspose.PDF for .NET introduz a capacidade de criar formulários PDF preenchíveis do zero, permitindo que os desenvolvedores integrem perfeitamente campos de formulário personalizáveis, como caixas de texto, botões de rádio e caixas de combinação, em seus PDFs. Essa funcionalidade capacita os usuários a melhorar a interatividade dos documentos e aprimorar a coleta de dados em suas aplicações",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "4037",
+    "wordcount": "4024",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,12 +72,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-28",
+    "dateModified": "2025-03-29",
     "description": "Com Aspose.PDF for .NET você pode criar um formulário do zero no seu arquivo PDF"
 }
 </script>
 
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/pt/net/drawing/) library.
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Criar formulário do zero
 
@@ -348,7 +348,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-O trecho de código a seguir mostra as etapas para adicionar RadioButtonField com três opções e colocá-las dentro de células de Tabela.
+O seguinte trecho de código mostra as etapas para adicionar RadioButtonField com três opções e colocá-las dentro de células de Tabela.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -527,7 +527,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 
 ### Adicionando Legenda ao RadioButtonField
 
-O trecho de código a seguir mostra como adicionar uma legenda que será associada ao RadioButtonField:
+O seguinte trecho de código mostra como adicionar uma legenda que será associada ao RadioButtonField:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -647,7 +647,7 @@ private static void AddingCaptionToRadioButtonField()
 
 ### Outra variante para adicionar Checkboxes agrupados
 
-Os trechos de código a seguir mostram como adicionar campos de Checkbox agrupados em um documento PDF.
+Os trechos de código a seguir mostram como adicionar campos de CheckBox agrupados em um documento PDF.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -830,7 +830,7 @@ private static void AddComboBoxToPdf()
 
 ### Adicionando CheckboxField
 
-O trecho de código a seguir mostra como adicionar CheckboxField em um documento PDF.
+O seguinte trecho de código mostra como adicionar CheckboxField em um documento PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -851,7 +851,6 @@ private static void AddCheckBoxFieldToPdf()
         var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
         checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
         checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-        document.Form.Add(checkboxField, 1);
 
         // Add field to the form
         document.Form.Add(checkboxField);
@@ -881,7 +880,6 @@ private static void AddCheckBoxFieldToPdf()
     var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
     checkboxField.Characteristics.Background = System.Drawing.Color.Aqua;
     checkboxField.Style = Aspose.Pdf.Forms.BoxStyle.Circle;
-    document.Form.Add(checkboxField, 1);
 
     // Add field to the form
     document.Form.Add(checkboxField);
@@ -895,7 +893,7 @@ private static void AddCheckBoxFieldToPdf()
 
 ### Adicionando ListBoxField
 
-O trecho de código a seguir mostra como adicionar ListBoxField em um documento PDF.
+O seguinte trecho de código mostra como adicionar ListBoxField em um documento PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -960,7 +958,7 @@ private static void AddListBoxFieldToPdf()
 
 ### Usando SignatureField
 
-O trecho de código a seguir mostra como assinar um documento PDF com SignatureField.
+O seguinte trecho de código mostra como assinar um documento PDF com SignatureField.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
