@@ -4,11 +4,14 @@ linktitle: Convert PDF to Excel
 type: docs
 weight: 20
 url: /python-net/convert-pdf-to-excel/
-lastmod: "2022-12-23"
+lastmod: "2025-02-27"
 description: Convert PDFs to Excel spreadsheets effortlessly with Aspose.PDF for Python via .NET. Follow this guide for accurate PDF to XLSX conversions
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to Convert PDF to Excel in Python
+Abstract: This article provides a comprehensive guide on converting PDF files to various Excel formats using Python, specifically with the Aspose.PDF for Python via .NET library. It details the conversion processes for XLS, XLSX, CSV, and ODS formats. The document explains the steps needed to convert PDF to XLS and XLSX, highlighting the creation of Document and ExcelSaveOptions instances, and the use of the Document.Save() method to specify output formats. The article also discusses features such as controlling the insertion of blank columns and minimizing worksheet numbers during conversion. Additionally, it provides examples of converting PDFs to single Excel worksheets and other formats like CSV and ODS, emphasizing the flexibility and functionality of Aspose.PDF. An online tool for PDF to XLSX conversion is also mentioned, allowing users to explore the conversion quality. The article concludes with a list of related topics and code snippets to further aid in understanding and implementing these conversions programmatically.
 ---
 
 ## Overview
@@ -69,18 +72,20 @@ The following code snippet shows the process for converting PDF file into XLS or
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xls.xls"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
 
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
+    document = apdf.Document(path_infile)
+    save_options = apdf.ExcelSaveOptions()
+    save_options.format = apdf.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
+    document.save(path_outfile, save_options)
 
-    # Save the file into MS Excel format
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
 
