@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to PDF/A formats",
     "alternativeHeadline": "Effortless PDF to PDF/A Conversion with Validation in C#",
-    "abstract": "La función en Aspose.PDF for .NET permite la conversión sin problemas de archivos PDF estándar en varios formatos compatibles con PDF/A, incluyendo PDF/A-1b, PDF/A-2u y PDF/A-3a. Esta función no solo asegura el cumplimiento de los estándares PDF/A a través de una validación exhaustiva, sino que también permite la adjunción de archivos adicionales y la sustitución de fuentes faltantes, mejorando la integridad y accesibilidad del documento. Explore las robustas capacidades de Aspose.PDF para conversiones PDF/A eficientes y confiables.",
+    "abstract": "La función en Aspose.PDF for .NET permite la conversión sin problemas de archivos PDF estándar a varios formatos compatibles con PDF/A, incluyendo PDF/A-1b, PDF/A-2u y PDF/A-3a. Esta función no solo asegura el cumplimiento de los estándares PDF/A a través de una validación exhaustiva, sino que también permite la adjunción de archivos adicionales y la sustitución de fuentes faltantes, mejorando la integridad y accesibilidad del documento. Explore las robustas capacidades de Aspose.PDF para conversiones PDF/A eficientes y confiables.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "2270",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-03-26",
     "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulte la siguiente sección para usuarios avanzados y desarrolladores."
 }
 </script>
@@ -82,7 +82,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-Tenga en cuenta que seguimos Adobe Preflight y veraPDF para validar la conformidad con PDF/A. Todas las herramientas en el mercado tienen su propia “representación” de la conformidad con PDF/A. Consulte este artículo sobre herramientas de validación PDF/A para referencia. Elegimos productos de Adobe para verificar cómo Aspose.PDF produce archivos PDF porque Adobe está en el centro de todo lo relacionado con PDF.
+Seguimos Adobe Preflight y veraPDF para validar la conformidad con PDF/A. Todas las herramientas en el mercado tienen su propia “representación” de la conformidad con PDF/A. Consulte este artículo sobre herramientas de validación PDF/A para referencia. Elegimos productos de Adobe para verificar cómo Aspose.PDF produce archivos PDF porque Adobe está en el centro de todo lo relacionado con PDF.
 
 {{% /alert %}}
 
@@ -91,7 +91,7 @@ Convierta el archivo utilizando el método Convert de la clase Document. Antes d
 {{% alert color="success" %}}
 **Intente convertir PDF a PDF/A en línea**
 
-Aspose.PDF for .NET le presenta una aplicación gratuita en línea ["PDF a PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), donde puede intentar investigar la funcionalidad y la calidad con la que funciona.
+Aspose.PDF for .NET le presenta una aplicación gratuita en línea ["PDF a PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), donde puede investigar la funcionalidad y la calidad con la que funciona.
 
 [![Aspose.PDF Conversión de PDF a PDF/A con aplicación gratuita](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
@@ -289,10 +289,10 @@ private static void ConvertPdfToPdfA4()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Agregar archivo adjunto a archivo PDF/A
+## Agregar adjunto a archivo PDF/A
 
-En caso de que tenga un requisito para adjuntar archivos a un documento compatible con PDF/A, le recomendamos usar un valor PDF_A_3A de la enumeración Aspose.PDF.PdfFormat.
-PDF/A-3a es el formato que proporciona la función para adjuntar cualquier formato de archivo como un archivo adjunto a un archivo compatible con PDF/A.
+En caso de que tenga un requisito para adjuntar archivos a un documento compatible con PDF/A, le recomendamos utilizar un valor PDF_A_3A de la enumeración Aspose.PDF.PdfFormat.
+PDF/A-3a es el formato que proporciona la función para adjuntar cualquier formato de archivo como un adjunto a un archivo compatible con PDF/A.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -416,6 +416,92 @@ private static void ReplaceMissingFonts()
 
     // Save PDF document
     document.Save(dataDir + "ReplaceMissingFonts_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Crear automáticamente etiquetas de estructura lógica del documento
+
+Un documento PDF puede incluir etiquetas de estructura lógica para mejorar la accesibilidad y organización. Estas etiquetas estructuran el contenido del documento dividiéndolo en partes lógicas, como secciones, párrafos y más. Cuando un documento se convierte a PDF/A, Aspose.PDF puede generar automáticamente una marca básica de estructura lógica. Los usuarios pueden luego refinar manualmente esta estructura, añadiendo más información sobre el contenido del documento.
+
+Para generar una estructura lógica del documento, cree una instancia de la clase [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/es/net/aspose.pdf/autotaggingsettings/), establezca su [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/es/net/aspose.pdf/autotaggingsettings/enableautotagging/) en `true`, y asígnelo a la propiedad [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/es/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/).
+
+{{% alert color="warning" %}}
+Si el documento ya tiene etiquetas de estructura lógica, habilitar la auto-etiquetado destruirá la estructura lógica existente y generará una nueva.
+{{% /alert %}}
+
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertToPdfAWithAutomaticTagging()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
+    {
+        // Create conversion options
+        Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
+
+        // Create auto-tagging settings
+        // Aspose.Pdf.AutoTaggingSettings.Default may be used to set the same settings as given below
+        Aspose.Pdf.AutoTaggingSettings autoTaggingSettings = new Aspose.Pdf.AutoTaggingSettings();
+
+        // Enable auto-tagging during the conversion process
+        autoTaggingSettings.EnableAutoTagging = true;
+
+        // Use the heading recognition strategy that's optimal for the given document structure
+        autoTaggingSettings.HeadingRecognitionStrategy = Aspose.Pdf.HeadingRecognitionStrategy.Auto;
+
+        // Assign auto-tagging settings to be used during the conversion process
+        options.AutoTaggingSettings = autoTaggingSettings;
+
+        // During the conversion, the document logical structure will be automatically created
+        document.Convert(options);
+
+        // Save PDF document
+        document.Save(dataDir + "ConvertToPdfAWithAutomaticTagging_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertToPdfAWithAutomaticTagging()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
+
+    // Create conversion options
+    Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfAWithAutomaticTagging.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
+
+    // Create auto-tagging settings
+    // Aspose.Pdf.AutoTaggingSettings.Default may be used to set the same settings as given below
+    Aspose.Pdf.AutoTaggingSettings autoTaggingSettings = new Aspose.Pdf.AutoTaggingSettings
+    {
+        // Enable auto-tagging during the conversion process
+        EnableAutoTagging = true,
+
+        // Use the heading recognition strategy that's optimal for the given document structure
+        HeadingRecognitionStrategy = Aspose.Pdf.HeadingRecognitionStrategy.Auto
+    };
+
+    // Assign auto-tagging settings to be used during the conversion process
+    options.AutoTaggingSettings = autoTaggingSettings;
+
+    // During the conversion, the document logical structure will be automatically created
+    document.Convert(options);
+
+    // Save PDF document
+    document.Save(dataDir + "ConvertToPdfAWithAutomaticTagging_out.pdf");
 }
 ```
 {{< /tab >}}
