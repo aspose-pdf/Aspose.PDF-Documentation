@@ -83,7 +83,7 @@ sitemap:
 
 ## التحقق من مستند PDF لمعيار PDF A (A 1A و A 1B)
 
-للتحقق من توافق مستند PDF مع PDF/A-1a أو PDF/A-1b، استخدم طريقة Validate من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). تتيح لك هذه الطريقة تحديد اسم الملف الذي سيتم حفظ النتيجة فيه ونوع التحقق المطلوب من تعداد [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat): PDF_A_1A أو PDF_A_1B.
+للتحقق من توافق مستند PDF مع PDF/A-1a أو PDF/A-1b، استخدم طريقة Validate من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document). تتيح لك هذه الطريقة تحديد اسم الملف الذي سيتم حفظ النتيجة فيه ونوع التحقق المطلوب من تعداد [PdfFormat](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pdfformat): PDF_A_1A أو PDF_A_1B.
 
 {{% alert color="primary" %}}
 
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### إخفاء أرقام الصفحات في جدول المحتويات
 
-في حال كنت لا ترغب في عرض أرقام الصفحات، جنبًا إلى جنب مع العناوين في جدول المحتويات، يمكنك استخدام خاصية [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) من فئة [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) كـ false. يرجى مراجعة مقتطف الكود التالي لإخفاء أرقام الصفحات في جدول المحتويات:
+في حال كنت لا ترغب في عرض أرقام الصفحات، جنبًا إلى جنب مع العناوين في جدول المحتويات، يمكنك استخدام خاصية [IsShowPageNumbers](https://reference.aspose.com/pdf/ar/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) من فئة [TOCInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf/tocinfo) كـ false. يرجى مراجعة مقتطف الكود التالي لإخفاء أرقام الصفحات في جدول المحتويات:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -453,7 +453,7 @@ private static void SetExpiryDate()
 
 طلب منا أحد العملاء إضافة ميزة تتيح للمطورين تحديد تقدم توليد ملف PDF. إليك الرد على ذلك الطلب.
 
-تتيح لك حقل [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) من فئة [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) تحديد كيفية تقدم توليد PDF. يحتوي المعالج على الأنواع التالية:
+تتيح لك حقل [CustomerProgressHandler](https://reference.aspose.com/pdf/ar/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) من فئة [DocSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/docsaveoptions) تحديد كيفية تقدم توليد PDF. يحتوي المعالج على الأنواع التالية:
 
 - DocSaveOptions.ConversionProgessEventHandler.
 - DocSaveOptions.ProgressEventHandlerInfo.

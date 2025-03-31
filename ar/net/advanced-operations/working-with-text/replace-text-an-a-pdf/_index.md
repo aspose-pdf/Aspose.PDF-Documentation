@@ -484,7 +484,7 @@ private static void ReplaceableSymbolsInHeaderOrFooterArea()
 
 لاستبدال الخطوط، استخدم النهج التالي:
 
-1. استدعاء فئة [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) .
+1. استدعاء فئة [TextFragmentAbsorber](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragmentabsorber) .
 1. استدعاء معلمة TextFragmentAbsorber class’ TextEditOptions.FontReplace.RemoveUnusedFonts. (هذا يزيل الخطوط التي أصبحت غير مستخدمة أثناء استبدال الخط).
 1. تعيين الخط بشكل فردي لكل جزء نص.
 

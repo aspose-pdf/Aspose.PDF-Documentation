@@ -82,7 +82,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Seguimiento del Salto de Línea de TextFragment de Varias Líneas
 
-Aspose.PDF for .NET ofrece procesamiento en segundo plano de registro (seguimiento) del salto de línea de fragmentos de texto de varias líneas en escenarios de adición de texto. Puedes usar el método [GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)() de la clase [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) de la siguiente manera, para rastrear el salto de línea del fragmento de texto:
+Aspose.PDF for .NET ofrece procesamiento en segundo plano de registro (seguimiento) del salto de línea de fragmentos de texto de varias líneas en escenarios de adición de texto. Puedes usar el método [GetNotifications](https://reference.aspose.com/pdf/es/net/aspose.pdf/page/methods/getnotifications)() de la clase [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page) de la siguiente manera, para rastrear el salto de línea del fragmento de texto:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

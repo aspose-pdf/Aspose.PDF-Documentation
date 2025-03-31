@@ -77,7 +77,7 @@ draft: false
 
 ## الحصول على قيم خيارات الزر من ملف PDF موجود
 
-توفر أزرار الاختيار وسيلة لعرض خيارات مختلفة. تتيح لك فئة [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) الحصول على جميع قيم خيارات الزر لزر اختيار معين. يمكنك الحصول على هذه القيم باستخدام طريقة [GetButtonOptionValues](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). تتطلب هذه الطريقة اسم زر الاختيار كمعامل إدخال وتعيد Hashtable. يمكنك التكرار عبر هذه Hashtable للحصول على قيم الخيارات. يوضح لك مقتطف الشيفرة التالي كيفية الحصول على قيم خيارات الزر من ملف PDF موجود.
+توفر أزرار الاختيار وسيلة لعرض خيارات مختلفة. تتيح لك فئة [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form) الحصول على جميع قيم خيارات الزر لزر اختيار معين. يمكنك الحصول على هذه القيم باستخدام طريقة [GetButtonOptionValues](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). تتطلب هذه الطريقة اسم زر الاختيار كمعامل إدخال وتعيد Hashtable. يمكنك التكرار عبر هذه Hashtable للحصول على قيم الخيارات. يوضح لك مقتطف الشيفرة التالي كيفية الحصول على قيم خيارات الزر من ملف PDF موجود.
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetButtonOptions()
@@ -105,7 +105,7 @@ private static void GetButtonOptions()
 
 ## الحصول على قيمة خيار الزر الحالي من ملف PDF موجود
 
-توفر أزرار الاختيار وسيلة لتعيين قيم الخيارات، ومع ذلك يمكن اختيار واحد منها فقط في كل مرة. إذا كنت ترغب في الحصول على قيمة الخيار المحدد حاليًا، يمكنك استخدام [GetButtonOptionCurrentValue** method. توفر فئة [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) هذه الطريقة. تتطلب طريقة [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) اسم زر الاختيار كمعامل إدخال وتعيد القيمة كسلسلة. يوضح لك مقتطف الشيفرة التالي كيفية الحصول على قيمة خيار الزر الحالي من ملف PDF موجود.
+توفر أزرار الاختيار وسيلة لتعيين قيم الخيارات، ومع ذلك يمكن اختيار واحد منها فقط في كل مرة. إذا كنت ترغب في الحصول على قيمة الخيار المحدد حاليًا، يمكنك استخدام [GetButtonOptionCurrentValue** method. توفر فئة [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form) هذه الطريقة. تتطلب طريقة [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) اسم زر الاختيار كمعامل إدخال وتعيد القيمة كسلسلة. يوضح لك مقتطف الشيفرة التالي كيفية الحصول على قيمة خيار الزر الحالي من ملف PDF موجود.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

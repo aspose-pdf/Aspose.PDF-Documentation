@@ -113,11 +113,11 @@ Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["PDF a HTML"
 [![Aspose.PDF Conversión PDF a HTML con aplicación gratuita](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
-Aspose.PDF for .NET proporciona un código de dos líneas para transformar un archivo PDF fuente a HTML. La [`enumeración SaveFormat`](https://reference.aspose.com/pdf/net/aspose.pdf/saveformat) contiene el valor Html que te permite guardar el archivo fuente en HTML. El siguiente fragmento de código muestra el proceso de conversión de un archivo PDF en HTML.
+Aspose.PDF for .NET proporciona un código de dos líneas para transformar un archivo PDF fuente a HTML. La [`enumeración SaveFormat`](https://reference.aspose.com/pdf/es/net/aspose.pdf/saveformat) contiene el valor Html que te permite guardar el archivo fuente en HTML. El siguiente fragmento de código muestra el proceso de conversión de un archivo PDF en HTML.
 
 <a name="csharp-pdf-to-html"><strong>Pasos: Convertir PDF a HTML en C#</strong></a>
 
-1. Crea una instancia del objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) con el documento PDF fuente.
+1. Crea una instancia del objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/) con el documento PDF fuente.
 2. Guárdalo en formato **SaveFormat.Html** llamando al método **Document.Save()**.
 
 ```csharp
@@ -165,7 +165,7 @@ private static void ConvertPDFtoMultiPageHTML()
 
 ### Especificar la carpeta para almacenar archivos SVG
 
-Durante la conversión de PDF a HTML, es posible especificar la carpeta en la que se deben guardar las imágenes SVG. Utiliza la [`clase HtmlSaveOption`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions) [`propiedad SpecialFolderForSvgImages`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) para especificar un directorio especial para imágenes SVG. Esta propiedad obtiene o establece la ruta al directorio en el que se deben guardar las imágenes SVG cuando se encuentran durante la conversión. Si el parámetro está vacío o es nulo, entonces cualquier archivo SVG se guarda junto con otros archivos de imagen.
+Durante la conversión de PDF a HTML, es posible especificar la carpeta en la que se deben guardar las imágenes SVG. Utiliza la [`clase HtmlSaveOption`](https://reference.aspose.com/pdf/es/net/aspose.pdf/htmlsaveoptions) [`propiedad SpecialFolderForSvgImages`](https://reference.aspose.com/pdf/es/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) para especificar un directorio especial para imágenes SVG. Esta propiedad obtiene o establece la ruta al directorio en el que se deben guardar las imágenes SVG cuando se encuentran durante la conversión. Si el parámetro está vacío o es nulo, entonces cualquier archivo SVG se guarda junto con otros archivos de imagen.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

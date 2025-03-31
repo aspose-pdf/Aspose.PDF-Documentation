@@ -93,13 +93,13 @@ sitemap:
 
 يمكن تحميل الترخيص من ملف أو كائن دفق. أسهل طريقة لتعيين ترخيص هي وضع ملف الترخيص في نفس المجلد الذي يوجد فيه ملف Aspose.PDF.dll وتحديد اسم الملف بدون مسار، كما هو موضح في المثال أدناه.
 
-إذا كنت تستخدم أي مكون آخر من Aspose لبرنامج .NET مع Aspose.PDF for .NET، يرجى تحديد مساحة الاسم للترخيص مثل [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license).
+إذا كنت تستخدم أي مكون آخر من Aspose لبرنامج .NET مع Aspose.PDF for .NET، يرجى تحديد مساحة الاسم للترخيص مثل [Aspose.Pdf.License](https://reference.aspose.com/pdf/ar/net/aspose.pdf/license).
 
 ### تحميل الترخيص من ملف
 
 أسهل طريقة لتطبيق ترخيص هي وضع ملف الترخيص في نفس المجلد الذي يوجد فيه ملف Aspose.PDF.dll وتحديد اسم الملف فقط بدون مسار.
 
-عند استدعاء طريقة [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index)، يجب أن يكون اسم الترخيص الذي تمرره هو اسم ملف الترخيص الخاص بك. على سبيل المثال، إذا قمت بتغيير اسم ملف الترخيص إلى "Aspose.PDF.lic.xml" فمرر ذلك الاسم إلى طريقة Pdf.SetLicense(…) .
+عند استدعاء طريقة [SetLicense](https://reference.aspose.com/pdf/ar/net/aspose.pdf/license/methods/setlicense/index)، يجب أن يكون اسم الترخيص الذي تمرره هو اسم ملف الترخيص الخاص بك. على سبيل المثال، إذا قمت بتغيير اسم ملف الترخيص إلى "Aspose.PDF.lic.xml" فمرر ذلك الاسم إلى طريقة Pdf.SetLicense(…) .
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

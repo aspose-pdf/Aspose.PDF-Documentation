@@ -85,7 +85,7 @@ sitemap:
 
 {{% /alert %}}
 
-تقدم فئة النموذج القدرة على التعامل مع AcroForm الثابت ويمكنك الحصول على مثيل حقل معين باستخدام طريقة Form.GetFieldFacade(..). ومع ذلك، لا يمكن الوصول إلى حقول XFA عبر طريقة Form.GetFieldFacade(..). بدلاً من ذلك، استخدم [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) للحصول على/تعيين قيم الحقول والتلاعب بقالب حقل XFA (تعيين خصائص الحقل).
+تقدم فئة النموذج القدرة على التعامل مع AcroForm الثابت ويمكنك الحصول على مثيل حقل معين باستخدام طريقة Form.GetFieldFacade(..). ومع ذلك، لا يمكن الوصول إلى حقول XFA عبر طريقة Form.GetFieldFacade(..). بدلاً من ذلك، استخدم [Document.Form.XFA](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form/properties/xfa) للحصول على/تعيين قيم الحقول والتلاعب بقالب حقل XFA (تعيين خصائص الحقل).
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 

@@ -78,9 +78,9 @@ lastmod: "2022-02-17"
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Изображения хранятся в коллекции [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) каждой страницы в коллекции [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Чтобы извлечь конкретную страницу, получите изображение из коллекции Images, используя конкретный индекс изображения.
+Изображения хранятся в коллекции [Resources](https://reference.aspose.com/pdf/ru/net/aspose.pdf/resources) каждой страницы в коллекции [Images](https://reference.aspose.com/pdf/ru/net/aspose.pdf/resources/properties/images). Чтобы извлечь конкретную страницу, получите изображение из коллекции Images, используя конкретный индекс изображения.
 
-Индекс изображения возвращает объект [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Этот объект предоставляет метод Save, который можно использовать для сохранения извлеченного изображения. Следующий фрагмент кода показывает, как извлечь изображения из PDF-файла.
+Индекс изображения возвращает объект [XImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf/ximage). Этот объект предоставляет метод Save, который можно использовать для сохранения извлеченного изображения. Следующий фрагмент кода показывает, как извлечь изображения из PDF-файла.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

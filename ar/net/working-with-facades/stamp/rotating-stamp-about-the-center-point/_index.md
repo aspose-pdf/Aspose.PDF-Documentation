@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) تتيح لك إضافة ختم في ملف PDF موجود. أحيانًا، يحتاج المستخدمون إلى تدوير الختم. في هذه المقالة، سنرى كيفية تدوير الختم حول نقطة مركزه.
+[مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) تتيح لك إضافة ختم في ملف PDF موجود. أحيانًا، يحتاج المستخدمون إلى تدوير الختم. في هذه المقالة، سنرى كيفية تدوير الختم حول نقطة مركزه.
 
 {{% /alert %}}
 
 ## تفاصيل التنفيذ
 
-تتيح لك فئة [الختم](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) إضافة علامة مائية في ملف PDF. يمكنك تحديد الصورة التي سيتم إضافتها كختم باستخدام طريقة [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.stamp/bindimage/methods/1). تتيح لك طريقة [SetOrigin](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setorigin) تعيين نقطة الأصل للختم المضاف؛ هذه النقطة هي إحداثيات الزاوية السفلى اليسرى للختم. يمكنك أيضًا تعيين حجم الصورة باستخدام طريقة [SetImageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setimagesize).
+تتيح لك فئة [الختم](https://reference.aspose.com/pdf/ar/net/aspose.pdf/stamp) إضافة علامة مائية في ملف PDF. يمكنك تحديد الصورة التي سيتم إضافتها كختم باستخدام طريقة [BindImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.stamp/bindimage/methods/1). تتيح لك طريقة [SetOrigin](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/stamp/methods/setorigin) تعيين نقطة الأصل للختم المضاف؛ هذه النقطة هي إحداثيات الزاوية السفلى اليسرى للختم. يمكنك أيضًا تعيين حجم الصورة باستخدام طريقة [SetImageSize](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/stamp/methods/setimagesize).
 
-الآن، نرى كيف يمكن تدوير الختم حول مركز الختم. توفر فئة [الختم](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) خاصية تسمى Rotation. تقوم هذه الخاصية بتعيين أو الحصول على التدوير من 0 إلى 360 لمحتوى الختم. يمكننا تحديد أي قيمة تدوير من 0 إلى 360. من خلال تحديد قيمة التدوير، يمكننا تدوير الختم حول نقطة مركزه. إذا كان الختم كائنًا من نوع الختم، فيمكن تحديد قيمة التدوير كالتالي: aStamp.Rotation = 90. في هذه الحالة، سيتم تدوير الختم بزاوية 90 درجة حول مركز محتوى الختم. يوضح لك مقتطف الكود التالي كيفية تدوير الختم حول نقطة المركز:
+الآن، نرى كيف يمكن تدوير الختم حول مركز الختم. توفر فئة [الختم](https://reference.aspose.com/pdf/ar/net/aspose.pdf/stamp) خاصية تسمى Rotation. تقوم هذه الخاصية بتعيين أو الحصول على التدوير من 0 إلى 360 لمحتوى الختم. يمكننا تحديد أي قيمة تدوير من 0 إلى 360. من خلال تحديد قيمة التدوير، يمكننا تدوير الختم حول نقطة مركزه. إذا كان الختم كائنًا من نوع الختم، فيمكن تحديد قيمة التدوير كالتالي: aStamp.Rotation = 90. في هذه الحالة، سيتم تدوير الختم بزاوية 90 درجة حول مركز محتوى الختم. يوضح لك مقتطف الكود التالي كيفية تدوير الختم حول نقطة المركز:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

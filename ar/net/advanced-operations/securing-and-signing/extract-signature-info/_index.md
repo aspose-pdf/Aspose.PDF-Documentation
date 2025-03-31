@@ -83,9 +83,9 @@ sitemap:
 
 ## استخراج الصورة من حقل التوقيع
 
-تدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) وأثناء توقيع المستند، يمكنك أيضًا تعيين صورة لـ `SignatureAppearance`. الآن، توفر هذه الواجهة البرمجية أيضًا القدرة على استخراج معلومات التوقيع بالإضافة إلى الصورة المرتبطة بحقل التوقيع.
+تدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة [SignatureField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturefield) وأثناء توقيع المستند، يمكنك أيضًا تعيين صورة لـ `SignatureAppearance`. الآن، توفر هذه الواجهة البرمجية أيضًا القدرة على استخراج معلومات التوقيع بالإضافة إلى الصورة المرتبطة بحقل التوقيع.
 
-لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) إلى فئة SignatureField. يرجى إلقاء نظرة على مقتطف الشيفرة التالي الذي يوضح الخطوات لاستخراج صورة من كائن `SignatureField`:
+لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturefield/methods/extractimage) إلى فئة SignatureField. يرجى إلقاء نظرة على مقتطف الشيفرة التالي الذي يوضح الخطوات لاستخراج صورة من كائن `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,7 +132,7 @@ private static void ExtractImagesFromSignatureField()
 
 تدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة SignatureField. حاليًا، يمكننا أيضًا تحديد صلاحية الشهادة ولكن لا يمكننا استخراج الشهادة بالكامل. المعلومات التي يمكن استخراجها هي المفتاح العام، وبصمة الإصبع، والجهة المصدرة، إلخ.
 
-لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) إلى فئة [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) . يرجى إلقاء نظرة على مقتطف الشيفرة التالي الذي يوضح الخطوات لاستخراج الشهادة من كائن SignatureField:
+لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractCertificate](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) إلى فئة [SignatureField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturefield) . يرجى إلقاء نظرة على مقتطف الشيفرة التالي الذي يوضح الخطوات لاستخراج الشهادة من كائن SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

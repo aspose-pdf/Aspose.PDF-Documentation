@@ -85,7 +85,7 @@ sitemap:
 
 Ce sujet vous aide à comprendre comment obtenir les propriétés de la fenêtre du document, de l'application de visualisation et comment les pages sont affichées. Pour définir ces propriétés :
 
-Ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Maintenant, vous pouvez définir les propriétés de l'objet Document, telles que
+Ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document). Maintenant, vous pouvez définir les propriétés de l'objet Document, telles que
 
 - CenterWindow – Centrer la fenêtre du document à l'écran. Par défaut : false.
 - Direction – Ordre de lecture. Cela détermine comment les pages sont disposées lorsqu'elles sont affichées côte à côte. Par défaut : de gauche à droite.
@@ -99,7 +99,7 @@ Ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-Le code suivant vous montre comment obtenir les propriétés en utilisant la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Le code suivant vous montre comment obtenir les propriétés en utilisant la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -154,7 +154,7 @@ private static void GetDocumentWindowProperties()
 
 Ce sujet explique comment définir les propriétés de la fenêtre du document, de l'application de visualisation et de l'affichage de la page. Pour définir ces différentes propriétés :
 
-1. Ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 1. Définissez les propriétés de l'objet Document.
 1. Enregistrez le fichier PDF mis à jour en utilisant la méthode Save.
 
@@ -171,7 +171,7 @@ Les propriétés disponibles sont :
 - PageLayout.
 - PageMode.
 
-Chacune est utilisée et décrite dans le code ci-dessous. Le code suivant montre comment définir les propriétés en utilisant la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Chacune est utilisée et décrite dans le code ci-dessous. Le code suivant montre comment définir les propriétés en utilisant la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -229,7 +229,7 @@ private static void SetDocumentWindowProperties()
 
 Les lecteurs PDF prennent en charge [un noyau de 14 polices](https://en.wikipedia.org/wiki/PDF#Text) afin que les documents puissent être affichés de la même manière, quelle que soit la plateforme sur laquelle le document est affiché. Lorsqu'un PDF contient une police qui n'est pas l'une des 14 polices de base, incorporez la police dans le fichier PDF pour éviter la substitution de police.
 
-Aspose.PDF for .NET prend en charge l'incorporation de polices dans des fichiers PDF existants. Vous pouvez incorporer une police complète ou un sous-ensemble de la police. Pour incorporer la police, ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Ensuite, utilisez la classe [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) pour incorporer la police dans le fichier PDF. Pour incorporer la police complète, utilisez la propriété IsEmbeded de la classe Font ; pour utiliser un sous-ensemble de la police, utilisez la propriété IsSubset.
+Aspose.PDF for .NET prend en charge l'incorporation de polices dans des fichiers PDF existants. Vous pouvez incorporer une police complète ou un sous-ensemble de la police. Pour incorporer la police, ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document). Ensuite, utilisez la classe [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/fr/net/aspose.pdf.text) pour incorporer la police dans le fichier PDF. Pour incorporer la police complète, utilisez la propriété IsEmbeded de la classe Font ; pour utiliser un sous-ensemble de la police, utilisez la propriété IsSubset.
 
 {{% alert color="primary" %}}
 
@@ -241,7 +241,7 @@ Le code suivant montre comment incorporer une police dans un fichier PDF.
 
 ### Incorporation de polices standard de type 1
 
-Certains documents PDF ont des polices d'un ensemble de polices Adobe spécial. Les polices de cet ensemble sont appelées "Polices standard de type 1". Cet ensemble comprend 14 polices et l'incorporation de ce type de polices nécessite l'utilisation de drapeaux spéciaux, c'est-à-dire [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). Le code suivant peut être utilisé pour obtenir un document avec toutes les polices incorporées, y compris les polices standard de type 1 :
+Certains documents PDF ont des polices d'un ensemble de polices Adobe spécial. Les polices de cet ensemble sont appelées "Polices standard de type 1". Cet ensemble comprend 14 polices et l'incorporation de ce type de polices nécessite l'utilisation de drapeaux spéciaux, c'est-à-dire [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/properties/embedstandardfonts). Le code suivant peut être utilisé pour obtenir un document avec toutes les polices incorporées, y compris les polices standard de type 1 :
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
 
 ### Obtenir toutes les polices d'un document PDF
 
-Dans le cas où vous souhaitez obtenir toutes les polices d'un document PDF, vous pouvez utiliser la méthode FontUtilities.GetAllFonts() fournie dans la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Veuillez consulter le code suivant afin d'obtenir toutes les polices d'un document PDF existant :
+Dans le cas où vous souhaitez obtenir toutes les polices d'un document PDF, vous pouvez utiliser la méthode FontUtilities.GetAllFonts() fournie dans la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document). Veuillez consulter le code suivant afin d'obtenir toutes les polices d'un document PDF existant :
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -450,7 +450,7 @@ private static void SetFontSubsetStrategy()
 
 Parfois, vous souhaitez déterminer quel est le facteur de zoom actuel d'un document PDF. Avec Aspose.Pdf, vous pouvez découvrir la valeur actuelle ainsi que définir une.
 
-La propriété Destination de la classe [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) vous permet d'obtenir la valeur de zoom associée à un fichier PDF. De même, elle peut être utilisée pour définir le facteur de zoom d'un fichier.
+La propriété Destination de la classe [GoToAction](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/gotoaction) vous permet d'obtenir la valeur de zoom associée à un fichier PDF. De même, elle peut être utilisée pour définir le facteur de zoom d'un fichier.
 
 #### Définir le facteur de zoom
 

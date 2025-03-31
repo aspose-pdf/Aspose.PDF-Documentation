@@ -84,7 +84,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Agregar Texto en el Encabezado del Archivo PDF
 
-Puedes usar la clase [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) para agregar texto en el encabezado de un archivo PDF. La clase TextStamp proporciona propiedades necesarias para crear un sello basado en texto como tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar texto en el encabezado, necesitas crear un objeto Document y un objeto TextStamp utilizando las propiedades requeridas. Después de eso, puedes llamar al método AddStamp de la Página para agregar el texto en el encabezado del PDF.
+Puedes usar la clase [TextStamp](https://reference.aspose.com/pdf/es/net/aspose.pdf/textstamp) para agregar texto en el encabezado de un archivo PDF. La clase TextStamp proporciona propiedades necesarias para crear un sello basado en texto como tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar texto en el encabezado, necesitas crear un objeto Document y un objeto TextStamp utilizando las propiedades requeridas. Después de eso, puedes llamar al método AddStamp de la Página para agregar el texto en el encabezado del PDF.
 
 Necesitas establecer la propiedad TopMargin de tal manera que ajuste el texto en el área del encabezado de tu PDF. También necesitas establecer HorizontalAlignment en Center y VerticalAlignment en Top.
 
@@ -164,7 +164,7 @@ private static void AddFooterText()
 
 ## Agregar Imagen en el Encabezado del Archivo PDF
 
-Puedes usar la clase [ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp) para agregar una imagen en el encabezado de un archivo PDF. La clase Image Stamp proporciona propiedades necesarias para crear un sello basado en imagen como tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar una imagen en el encabezado, necesitas crear un objeto Document y un objeto Image Stamp utilizando las propiedades requeridas. Después de eso, puedes llamar al método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la Página para agregar la imagen en el encabezado del PDF.
+Puedes usar la clase [ImageStamp](https://reference.aspose.com/pdf/es/net/aspose.pdf/ImageStamp) para agregar una imagen en el encabezado de un archivo PDF. La clase Image Stamp proporciona propiedades necesarias para crear un sello basado en imagen como tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar una imagen en el encabezado, necesitas crear un objeto Document y un objeto Image Stamp utilizando las propiedades requeridas. Después de eso, puedes llamar al método [AddStamp](https://reference.aspose.com/pdf/es/net/aspose.pdf/page/methods/addstamp) de la Página para agregar la imagen en el encabezado del PDF.
 
 {{% alert color="primary" %}}
 
@@ -210,7 +210,7 @@ Puedes usar la clase Image Stamp para agregar una imagen en el pie de página de
 
 {{% alert color="primary" %}}
 
-Necesitas establecer la propiedad [BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin) de tal manera que ajuste la imagen en el área del pie de página de tu PDF. También necesitas establecer [HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment) en `Center` y [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment) en `Bottom`.
+Necesitas establecer la propiedad [BottomMargin](https://reference.aspose.com/pdf/es/net/aspose.pdf/stamp/properties/bottommargin) de tal manera que ajuste la imagen en el área del pie de página de tu PDF. También necesitas establecer [HorizontalAlignment](https://reference.aspose.com/pdf/es/net/aspose.pdf/stamp/properties/horizontalalignment) en `Center` y [VerticalAlignment](https://reference.aspose.com/pdf/es/net/aspose.pdf/stamp/properties/verticalalignment) en `Bottom`.
 
 {{% /alert %}}
 
@@ -250,7 +250,7 @@ private static void AddImageFooter()
 
 Sabemos que podemos agregar TextStamp en la sección de Encabezado/Pie de Página del documento utilizando las propiedades TopMargin o Bottom Margin, pero a veces podemos tener la necesidad de agregar múltiples encabezados/pies de página en un solo documento PDF. **Aspose.PDF for .NET** explica cómo hacer esto.
 
-Para cumplir con este requisito, crearemos objetos TextStamp individuales (el número de objetos depende del número de encabezados/pies de página requeridos) y los agregaremos al documento PDF. También podemos especificar diferentes información de formato para cada objeto de sello. En el siguiente ejemplo, hemos creado un objeto Document y tres objetos TextStamp y luego hemos utilizado el método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la Página para agregar el texto en la sección del encabezado del PDF. El siguiente fragmento de código te muestra cómo agregar una imagen en el pie de página de un archivo PDF con Aspose.PDF for .NET.
+Para cumplir con este requisito, crearemos objetos TextStamp individuales (el número de objetos depende del número de encabezados/pies de página requeridos) y los agregaremos al documento PDF. También podemos especificar diferentes información de formato para cada objeto de sello. En el siguiente ejemplo, hemos creado un objeto Document y tres objetos TextStamp y luego hemos utilizado el método [AddStamp](https://reference.aspose.com/pdf/es/net/aspose.pdf/page/methods/addstamp) de la Página para agregar el texto en la sección del encabezado del PDF. El siguiente fragmento de código te muestra cómo agregar una imagen en el pie de página de un archivo PDF con Aspose.PDF for .NET.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -85,11 +85,11 @@ sitemap:
 
 1. 创建一个新的 C# 项目。
 1. 添加对 Aspose.PDF DLL 的引用。
-1. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。
-1. 创建一个 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 对象，包含您要添加的文件和文件描述。
-1. 使用集合的 Add 方法将 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 对象添加到 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 集合中。
+1. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
+1. 创建一个 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 对象，包含您要添加的文件和文件描述。
+1. 使用集合的 Add 方法将 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 对象添加到 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合中。
 
-[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 集合包含 PDF 文件中的所有附件。以下代码片段演示了如何在 PDF 文档中添加附件。
+[EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合包含 PDF 文件中的所有附件。以下代码片段演示了如何在 PDF 文档中添加附件。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

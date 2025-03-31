@@ -84,7 +84,7 @@ sitemap:
 
 ## إضافة نص في رأس ملف PDF
 
-يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) لإضافة نص في رأس ملف PDF. توفر فئة TextStamp الخصائص اللازمة لإنشاء ختم نصي مثل حجم الخط، نمط الخط، ولون الخط، إلخ. لإضافة نص في الرأس، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة AddStamp من الصفحة لإضافة النص في رأس PDF.
+يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/ar/net/aspose.pdf/textstamp) لإضافة نص في رأس ملف PDF. توفر فئة TextStamp الخصائص اللازمة لإنشاء ختم نصي مثل حجم الخط، نمط الخط، ولون الخط، إلخ. لإضافة نص في الرأس، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة AddStamp من الصفحة لإضافة النص في رأس PDF.
 
 تحتاج إلى تعيين خاصية TopMargin بطريقة تضبط النص في منطقة الرأس من PDF الخاص بك. تحتاج أيضًا إلى تعيين HorizontalAlignment إلى Center و VerticalAlignment إلى Top.
 
@@ -164,7 +164,7 @@ private static void AddFooterText()
 
 ## إضافة صورة في رأس ملف PDF
 
-يمكنك استخدام فئة [ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp) لإضافة صورة في رأس ملف PDF. توفر فئة Image Stamp الخصائص اللازمة لإنشاء ختم قائم على الصورة مثل حجم الخط، نمط الخط، ولون الخط، إلخ. لإضافة صورة في الرأس، تحتاج إلى إنشاء كائن Document وكائن Image Stamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) من الصفحة لإضافة الصورة في رأس PDF.
+يمكنك استخدام فئة [ImageStamp](https://reference.aspose.com/pdf/ar/net/aspose.pdf/ImageStamp) لإضافة صورة في رأس ملف PDF. توفر فئة Image Stamp الخصائص اللازمة لإنشاء ختم قائم على الصورة مثل حجم الخط، نمط الخط، ولون الخط، إلخ. لإضافة صورة في الرأس، تحتاج إلى إنشاء كائن Document وكائن Image Stamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة [AddStamp](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page/methods/addstamp) من الصفحة لإضافة الصورة في رأس PDF.
 
 {{% alert color="primary" %}}
 
@@ -210,7 +210,7 @@ private static void AddImageHeader()
 
 {{% alert color="primary" %}}
 
-تحتاج إلى تعيين خاصية [BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin) بطريقة تضبط الصورة في منطقة التذييل من PDF الخاص بك. تحتاج أيضًا إلى تعيين [HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment) إلى `Center` و [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment) إلى `Bottom`.
+تحتاج إلى تعيين خاصية [BottomMargin](https://reference.aspose.com/pdf/ar/net/aspose.pdf/stamp/properties/bottommargin) بطريقة تضبط الصورة في منطقة التذييل من PDF الخاص بك. تحتاج أيضًا إلى تعيين [HorizontalAlignment](https://reference.aspose.com/pdf/ar/net/aspose.pdf/stamp/properties/horizontalalignment) إلى `Center` و [VerticalAlignment](https://reference.aspose.com/pdf/ar/net/aspose.pdf/stamp/properties/verticalalignment) إلى `Bottom`.
 
 {{% /alert %}}
 
@@ -250,7 +250,7 @@ private static void AddImageFooter()
 
 نعلم أنه يمكننا إضافة TextStamp في قسم الرأس/التذييل من المستند باستخدام خاصيتي TopMargin أو Bottom Margin، ولكن في بعض الأحيان قد نحتاج إلى إضافة رؤوس/تذييلات متعددة في مستند PDF واحد. **Aspose.PDF for .NET** يشرح كيفية القيام بذلك.
 
-لتحقيق هذا المتطلب، سنقوم بإنشاء كائنات TextStamp فردية (عدد الكائنات يعتمد على عدد الرؤوس/التذييلات المطلوبة) وسنضيفها إلى مستند PDF. يمكننا أيضًا تحديد معلومات تنسيق مختلفة لكل كائن ختم فردي. في المثال التالي، أنشأنا كائن Document وثلاثة كائنات TextStamp ثم استخدمنا طريقة [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) من الصفحة لإضافة النص في قسم الرأس من PDF. تظهر مقتطفات الشيفرة التالية كيفية إضافة صورة في تذييل ملف PDF باستخدام Aspose.PDF for .NET.
+لتحقيق هذا المتطلب، سنقوم بإنشاء كائنات TextStamp فردية (عدد الكائنات يعتمد على عدد الرؤوس/التذييلات المطلوبة) وسنضيفها إلى مستند PDF. يمكننا أيضًا تحديد معلومات تنسيق مختلفة لكل كائن ختم فردي. في المثال التالي، أنشأنا كائن Document وثلاثة كائنات TextStamp ثم استخدمنا طريقة [AddStamp](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page/methods/addstamp) من الصفحة لإضافة النص في قسم الرأس من PDF. تظهر مقتطفات الشيفرة التالية كيفية إضافة صورة في تذييل ملف PDF باستخدام Aspose.PDF for .NET.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,21 +83,21 @@ sitemap:
 
 ## 添加线对象
 
-Aspose.PDF for .NET支持将图形对象（例如图形、线条、矩形等）添加到PDF文档的功能。您还可以添加[线](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/line)对象，在其中您还可以指定虚线模式、颜色和其他线元素的格式。
+Aspose.PDF for .NET支持将图形对象（例如图形、线条、矩形等）添加到PDF文档的功能。您还可以添加[线](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/line)对象，在其中您还可以指定虚线模式、颜色和其他线元素的格式。
 
 请按照以下步骤操作：
 
-1. 创建一个新的PDF [文档](https://reference.aspose.com/pdf/net/aspose.pdf/document)。
-1. 将[页面](https://reference.aspose.com/pdf/net/aspose.pdf/page)添加到PDF文件的页面集合中。
-1. 创建[图形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)实例。
+1. 创建一个新的PDF [文档](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)。
+1. 将[页面](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)添加到PDF文件的页面集合中。
+1. 创建[图形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph)实例。
 1. 将图形对象添加到页面实例的段落集合中。
-1. 创建[矩形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)实例。
+1. 创建[矩形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)实例。
 1. 设置线宽。
-1. 将[矩形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)对象添加到图形对象的形状集合中。
+1. 将[矩形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)对象添加到图形对象的形状集合中。
 
 1. 保存您的PDF文件。
 
-以下代码片段演示了如何添加一个填充颜色的[矩形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)对象。
+以下代码片段演示了如何添加一个填充颜色的[矩形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)对象。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

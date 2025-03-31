@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-[ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) تتيح لك استخراج التعليقات من ملف PDF. لاستخراج التعليقات، تحتاج إلى إنشاء كائن [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) وربط ملف PDF باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، تحتاج إلى إنشاء تعداد لأنواع التعليقات التي ترغب في استخراجها من ملف PDF.
+[ExtractAnnotations](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) تتيح لك استخراج التعليقات من ملف PDF. لاستخراج التعليقات، تحتاج إلى إنشاء كائن [PdfAnnotationEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfannotationeditor) وربط ملف PDF باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، تحتاج إلى إنشاء تعداد لأنواع التعليقات التي ترغب في استخراجها من ملف PDF.
 
-يمكنك بعد ذلك استخدام طريقة [ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) لاستخراج التعليقات إلى ArrayList. بعد ذلك، يمكنك التكرار عبر هذه القائمة والحصول على التعليقات الفردية. وأخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor). يوضح لك مقتطف الكود التالي كيفية استخراج التعليقات من ملف PDF.
+يمكنك بعد ذلك استخدام طريقة [ExtractAnnotations](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) لاستخراج التعليقات إلى ArrayList. بعد ذلك، يمكنك التكرار عبر هذه القائمة والحصول على التعليقات الفردية. وأخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save) لكائن [PdfAnnotationEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfannotationeditor). يوضح لك مقتطف الكود التالي كيفية استخراج التعليقات من ملف PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

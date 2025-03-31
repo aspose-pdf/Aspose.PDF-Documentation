@@ -87,13 +87,13 @@ Aspose.PDF for .NET admite la función de agregar objetos gráficos (por ejemplo
 
 Siga los pasos a continuación:
 
-1. Cree una instancia de [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Cree un [objeto Drawing](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) con dimensiones determinadas.
-1. Establezca el [Borde](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) para el objeto Drawing.
-1. Agregue el objeto [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) a la colección de párrafos de la página.
+1. Cree una instancia de [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+1. Cree un [objeto Drawing](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing) con dimensiones determinadas.
+1. Establezca el [Borde](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/graph/properties/border) para el objeto Drawing.
+1. Agregue el objeto [Graph](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/graph) a la colección de párrafos de la página.
 1. Guarde nuestro archivo PDF.
 
-El siguiente fragmento de código muestra cómo agregar un objeto [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc).
+El siguiente fragmento de código muestra cómo agregar un objeto [Arc](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/arc).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

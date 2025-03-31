@@ -87,13 +87,13 @@ Aspose.PDF for .NET支持将图形对象（例如图形、线条、矩形等）�
 
 请按照以下步骤操作：
 
-1. 创建[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)实例。
-1. 创建具有特定尺寸的[Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)。
-1. 为Drawing object设置[Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border)。
-1. 将[Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)对象添加到页面的段落集合中。
+1. 创建[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)实例。
+1. 创建具有特定尺寸的[Drawing object](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing)。
+1. 为Drawing object设置[Border](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph/properties/border)。
+1. 将[Graph](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph)对象添加到页面的段落集合中。
 1. 保存我们的PDF文件。
 
-以下代码片段演示了如何添加[Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc)对象。
+以下代码片段演示了如何添加[Arc](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/arc)对象。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

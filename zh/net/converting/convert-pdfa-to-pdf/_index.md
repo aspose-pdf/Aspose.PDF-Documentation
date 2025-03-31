@@ -83,7 +83,7 @@ sitemap:
 ## 将 PDF/A 文档转换为 PDF
 
 将 PDF/A 文档转换为 PDF 意味着从原始文档中去除 <abbr title="可移植文档格式档案">PDF/A</abbr> 限制。 
-类 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 具有方法 [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) 用于从输入/源文件中删除 PDF 合规性信息。
+类 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 具有方法 [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/removepdfacompliance) 用于从输入/源文件中删除 PDF 合规性信息。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

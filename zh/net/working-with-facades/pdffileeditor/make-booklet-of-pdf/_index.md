@@ -77,7 +77,7 @@ draft: false
 
 ## 使用文件路径制作 PDF 小册子
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的小册子并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作小册子。以下代码片段演示了如何使用文件路径制作小册子。
+[MakeBooklet](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的小册子并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作小册子。以下代码片段演示了如何使用文件路径制作小册子。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
 
 ## 使用页面大小和文件路径制作 PDF 小册子
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的小册子并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作小册子。您还可以使用此重载设置输出 PDF 文件的页面大小。以下代码片段演示了如何使用页面大小和文件路径制作小册子。
+[MakeBooklet](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的小册子并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作小册子。您还可以使用此重载设置输出 PDF 文件的页面大小。以下代码片段演示了如何使用页面大小和文件路径制作小册子。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
 
 ## 使用页面大小、指定的左右页面和文件路径制作 PDF 小册子
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的小册子并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作小册子。您还可以使用此重载设置输出 PDF 文件的页面大小，并为输出 PDF 文件的左右两侧指定特定页面。以下代码片段演示了如何使用页面大小、指定的左右页面和文件路径制作小册子。
+[MakeBooklet](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的小册子并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作小册子。您还可以使用此重载设置输出 PDF 文件的页面大小，并为输出 PDF 文件的左右两侧指定特定页面。以下代码片段演示了如何使用页面大小、指定的左右页面和文件路径制作小册子。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## 使用指定的左右页面和文件路径制作 PDF 小册子
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的小册子并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作小册子。您还可以使用此重载为输出 PDF 文件的左右两侧指定特定页面。以下代码片段演示了如何使用指定的左右页面和文件路径制作小册子。
+[MakeBooklet](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的小册子并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作小册子。您还可以使用此重载为输出 PDF 文件的左右两侧指定特定页面。以下代码片段演示了如何使用指定的左右页面和文件路径制作小册子。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
 
 ## 使用流制作 PDF 小册子
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的小册子并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作小册子。以下代码片段演示了如何使用流制作小册子。
+[MakeBooklet](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的小册子并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作小册子。以下代码片段演示了如何使用流制作小册子。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,7 +175,7 @@ private static void MakeBookletOfPdfUsingStreams()
 
 ## 使用页面大小和流制作 PDF 小册子
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的小册子并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作小册子。您还可以使用此重载设置输出 PDF 流的页面大小。以下代码片段演示了如何使用页面大小和流制作小册子。
+[MakeBooklet](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的小册子并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作小册子。您还可以使用此重载设置输出 PDF 流的页面大小。以下代码片段演示了如何使用页面大小和流制作小册子。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
 
 ## 使用页面大小、指定的左右页面和流制作 PDF 小册子
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的小册子并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作小册子。您还可以使用此重载设置输出 PDF 文件的页面大小，并为输出 PDF 流的左右两侧指定特定页面。以下代码片段演示了如何使用页面大小、指定的左右页面和流制作小册子。
+[MakeBooklet](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的小册子并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作小册子。您还可以使用此重载设置输出 PDF 文件的页面大小，并为输出 PDF 流的左右两侧指定特定页面。以下代码片段演示了如何使用页面大小、指定的左右页面和流制作小册子。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +226,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
 
 ## 使用指定的左右页面和流制作 PDF 小册子
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的小册子并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作小册子。您还可以使用此重载为输出 PDF 流的左右两侧指定特定页面。以下代码片段演示了如何使用指定的左右页面和流制作小册子。
+[MakeBooklet](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的小册子并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作小册子。您还可以使用此重载为输出 PDF 流的左右两侧指定特定页面。以下代码片段演示了如何使用指定的左右页面和流制作小册子。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

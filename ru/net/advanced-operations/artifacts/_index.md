@@ -82,7 +82,7 @@ sitemap:
 
 Цель артефактов в PDF — позволить различать содержимое и не относящиеся к нему элементы. Это важно для обеспечения доступности, поскольку программы чтения с экрана и другие вспомогательные технологии могут игнорировать артефакты и сосредоточиться на соответствующем содержимом. Артефакты также могут повысить производительность и качество PDF-документов, поскольку их можно исключить из печати, поиска или копирования.
 
-Чтобы создать элемент в качестве артефакта в PDF, необходимо использовать класс [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact). Он содержит следующие полезные свойства:
+Чтобы создать элемент в качестве артефакта в PDF, необходимо использовать класс [Artifact](https://reference.aspose.com/pdf/ru/net/aspose.pdf/artifact). Он содержит следующие полезные свойства:
 
 - **Artifact.Type** – получает тип артефакта (поддерживает значения перечисления Artifact.ArtifactType, где значения включают Background, Layout, Page, Pagination и Undefined).
 - **Artifact.Subtype** – получает подтип артефакта (поддерживает значения перечисления Artifact.ArtifactSubtype, где значения включают Background, Footer, Header, Undefined, Watermark).
@@ -96,17 +96,17 @@ sitemap:
 
 Для работы с артефактами также могут быть полезны следующие классы:
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/watermarkartifact/)
+- [ArtifactCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/artifactcollection)
+- [BackgroundArtifact](https://reference.aspose.com/pdf/ru/net/aspose.pdf/backgroundartifact/)
+- [HeaderArtifact](https://reference.aspose.com/pdf/ru/net/aspose.pdf/headerartifact/)
+- [FooterArtifact](https://reference.aspose.com/pdf/ru/net/aspose.pdf/footerartifact/)
+- [WatermarkArtifact](https://reference.aspose.com/pdf/ru/net/aspose.pdf/watermarkartifact/)
 
 ## Работа с существующими водяными знаками
 
 Водяной знак, созданный с помощью Adobe Acrobat, называется артефактом (как описано в 14.8.2.2 Реальное содержимое и артефакты спецификации PDF).
 
-Чтобы получить все водяные знаки на определённой странице, класс [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) имеет свойство Artifacts.
+Чтобы получить все водяные знаки на определённой странице, класс [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) имеет свойство Artifacts.
 
 Следующий фрагмент кода показывает, как получить все водяные знаки на первой странице PDF-файла.
 
@@ -139,7 +139,7 @@ private static void ExtractWatermarkFromPDF()
 
 ## Использование фонов в качестве артефактов
 
-Фоновые изображения можно использовать для добавления водяных знаков или другого ненавязчивого оформления документов. В «Aspose.PDF for .NET» каждый PDF-документ представляет собой набор страниц, и каждая страница содержит набор артефактов. Класс [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) можно использовать для добавления фонового изображения к объекту страницы.
+Фоновые изображения можно использовать для добавления водяных знаков или другого ненавязчивого оформления документов. В «Aspose.PDF for .NET» каждый PDF-документ представляет собой набор страниц, и каждая страница содержит набор артефактов. Класс [BackgroundArtifact](https://reference.aspose.com/pdf/ru/net/aspose.pdf/backgroundartifact) можно использовать для добавления фонового изображения к объекту страницы.
 
 Следующий фрагмент кода показывает, как добавить фоновое изображение на страницы PDF с помощью объекта BackgroundArtifact.
 

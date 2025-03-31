@@ -85,7 +85,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Obtener Contenido PDF Etiquetado
 
-Para obtener el contenido de un documento PDF con texto etiquetado, Aspose.PDF ofrece la propiedad [TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Para obtener el contenido de un documento PDF con texto etiquetado, Aspose.PDF ofrece la propiedad [TaggedContent](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/properties/taggedcontent) de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
 
 El siguiente fragmento de código muestra cómo obtener el contenido de un documento PDF con texto etiquetado:
 
@@ -144,7 +144,7 @@ private static void GetTaggedContent()
 
 ## Obtener Estructura Raíz
 
-Para obtener la estructura raíz de un documento PDF etiquetado, Aspose.PDF ofrece la propiedad [StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) de la interfaz [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) y [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). El siguiente fragmento de código muestra cómo obtener la estructura raíz de un documento PDF etiquetado:
+Para obtener la estructura raíz de un documento PDF etiquetado, Aspose.PDF ofrece la propiedad [StructTreeRootElement](https://reference.aspose.com/pdf/es/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) de la interfaz [ITaggedContent](https://reference.aspose.com/pdf/es/net/aspose.pdf.tagged/itaggedcontent) y [StructureElement](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structureelement). El siguiente fragmento de código muestra cómo obtener la estructura raíz de un documento PDF etiquetado:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void GetRootStructure()
 
 ## Acceder a Elementos Hijos
 
-Para acceder a los elementos hijos de un documento PDF etiquetado, Aspose.PDF ofrece la clase [ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist). El siguiente fragmento de código muestra cómo acceder a los elementos hijos de un documento PDF etiquetado:
+Para acceder a los elementos hijos de un documento PDF etiquetado, Aspose.PDF ofrece la clase [ElementList](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/elementlist). El siguiente fragmento de código muestra cómo acceder a los elementos hijos de un documento PDF etiquetado:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -316,7 +316,7 @@ private static void AccessChildElements()
 
 ## Etiquetado de Imágenes en PDF Existente
 
-Para etiquetar imágenes en un documento PDF existente, Aspose.PDF ofrece el método [FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) de la clase [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Puedes agregar texto alternativo para figuras usando la propiedad [AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) de la clase [FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement).
+Para etiquetar imágenes en un documento PDF existente, Aspose.PDF ofrece el método [FindElements](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) de la clase [StructureElement](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structureelement). Puedes agregar texto alternativo para figuras usando la propiedad [AlternativeText](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) de la clase [FigureElement](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/figureelement).
 
 El siguiente fragmento de código muestra cómo etiquetar imágenes en un documento PDF existente:
 

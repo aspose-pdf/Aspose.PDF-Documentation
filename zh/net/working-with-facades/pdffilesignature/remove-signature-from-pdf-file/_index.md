@@ -79,7 +79,7 @@ draft: false
 
 当签名已添加到 PDF 文件中时，可以将其移除。您可以移除特定的签名，或移除文件中的所有签名。移除签名的最快方法也会移除签名字段，但可以仅移除签名，保留签名字段，以便文件可以再次签名。
 
-[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的 RemoveSignature 方法允许您从 PDF 文件中移除签名。此方法将签名名称作为输入。可以直接指定签名名称，以移除所有签名，或使用 [GetSignNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/getsignername) 方法获取签名名称。
+[PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类的 RemoveSignature 方法允许您从 PDF 文件中移除签名。此方法将签名名称作为输入。可以直接指定签名名称，以移除所有签名，或使用 [GetSignNames](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature/methods/getsignername) 方法获取签名名称。
 
 以下代码片段演示如何从 PDF 文件中移除数字签名。
 
@@ -111,7 +111,7 @@ private static void RemoveSignature()
 
 ### 移除签名但保留签名字段
 
-如上所示，[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的 [RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) 方法允许您从 PDF 文件中移除签名字段。当使用此方法与 9.3.0 之前的版本时，签名和签名字段都会被移除。一些开发者希望仅移除签名并保留签名字段，以便可以用来重新签署文档。要保留签名字段并仅移除签名，请使用以下代码片段。
+如上所示，[PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类的 [RemoveSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) 方法允许您从 PDF 文件中移除签名字段。当使用此方法与 9.3.0 之前的版本时，签名和签名字段都会被移除。一些开发者希望仅移除签名并保留签名字段，以便可以用来重新签署文档。要保留签名字段并仅移除签名，请使用以下代码片段。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

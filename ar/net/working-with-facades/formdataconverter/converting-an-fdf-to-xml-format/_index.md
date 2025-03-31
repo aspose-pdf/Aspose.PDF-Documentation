@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-تدعم مساحة [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) نماذج AcroForms بشكل جيد. كما أنها تدعم استيراد وتصدير بيانات النماذج إلى تنسيقات ملفات مختلفة مثل FDF و XFDF و XML. ومع ذلك، قد يحتاج المطورون أحيانًا إلى تحويل تنسيق إلى آخر. تتناول هذه المقالة الميزة التي تحول FDF إلى XML.
+تدعم مساحة [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) نماذج AcroForms بشكل جيد. كما أنها تدعم استيراد وتصدير بيانات النماذج إلى تنسيقات ملفات مختلفة مثل FDF و XFDF و XML. ومع ذلك، قد يحتاج المطورون أحيانًا إلى تحويل تنسيق إلى آخر. تتناول هذه المقالة الميزة التي تحول FDF إلى XML.
 
 {{% /alert %}}
 
 ## تفاصيل التنفيذ
 
-FDF تعني تنسيق بيانات النماذج، وملف FDF يحتوي على قيم النموذج في زوج مفتاح/قيمة. نحن نعلم أيضًا أن ملف XML يحتوي على القيم كعلامات. حيث يتم تمثيل المفتاح غالبًا كاسم العلامة ويتم تمثيل القيمة كالقيمة داخل تلك العلامة. الآن، توفر لنا [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) المرونة لتحويل تنسيق ملف FDF إلى تنسيق XML.
+FDF تعني تنسيق بيانات النماذج، وملف FDF يحتوي على قيم النموذج في زوج مفتاح/قيمة. نحن نعلم أيضًا أن ملف XML يحتوي على القيم كعلامات. حيث يتم تمثيل المفتاح غالبًا كاسم العلامة ويتم تمثيل القيمة كالقيمة داخل تلك العلامة. الآن، توفر لنا [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) المرونة لتحويل تنسيق ملف FDF إلى تنسيق XML.
 
-يمكننا استخدام فئة [FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formdataconverter) لهذا الغرض. توفر لنا هذه الفئة طرقًا مختلفة لتحويل تنسيق بيانات إلى آخر. في هذه المقالة، سنستخدم فقط طريقة واحدة تسمى [ConvertFdfToXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formdataconverter/methods/convertfdftoxml). تأخذ هذه الطريقة ملف FDF كمدخل أو تدفق مصدر وتقوم بحفظه في تنسيق XML.
+يمكننا استخدام فئة [FormDataConverter](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formdataconverter) لهذا الغرض. توفر لنا هذه الفئة طرقًا مختلفة لتحويل تنسيق بيانات إلى آخر. في هذه المقالة، سنستخدم فقط طريقة واحدة تسمى [ConvertFdfToXml](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formdataconverter/methods/convertfdftoxml). تأخذ هذه الطريقة ملف FDF كمدخل أو تدفق مصدر وتقوم بحفظه في تنسيق XML.
 
 تظهر الشيفرة البرمجية التالية كيفية تحويل ملف FDF إلى ملف XML:
 

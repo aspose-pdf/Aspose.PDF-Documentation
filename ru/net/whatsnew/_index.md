@@ -93,7 +93,7 @@ lastmod: "2025-01-31"
 **Другие заметные улучшения**
 
 * Оптимизация изображений без потери качества при [оптимизации PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) улучшена. Размер сжатого документа уменьшен.
-* Метод [Repair](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) документа улучшен. Теперь он может проверять и исправлять значения в массиве Annotation.Rect.
+* Метод [Repair](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/repair/) документа улучшен. Теперь он может проверять и исправлять значения в массиве Annotation.Rect.
 * Обновлена версия зависимости System.Text.Json для предотвращения возможной уязвимости CVE-2024-43485.
 * Улучшена детекция атак на подписи PDF для предотвращения получения ложноположительных результатов.
 * Предоставлен публичный API для редактирования словаря ресурсов:
@@ -2581,7 +2581,7 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 
 ### Создание PDF на основе XML и XLS с параметрами
 
-Чтобы добавить параметры XSL, нам нужно создать собственный [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) и установить его как свойство в [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Следующий фрагмент показывает, как использовать этот класс с образцами файлов, описанными выше.
+Чтобы добавить параметры XSL, нам нужно создать собственный [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) и установить его как свойство в [XslFoLoadOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf/xslfoloadoptions). Следующий фрагмент показывает, как использовать этот класс с образцами файлов, описанными выше.
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()

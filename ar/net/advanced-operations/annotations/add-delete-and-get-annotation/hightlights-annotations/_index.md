@@ -95,12 +95,12 @@ sitemap:
 
 لإضافة تعليق تمييز نص إلى مستند PDF، نحتاج إلى تنفيذ الإجراءات التالية:
 
-1. تحميل ملف PDF - كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) جديد.
+1. تحميل ملف PDF - كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) جديد.
 1. إنشاء التعليقات:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) وتعيين المعلمات (العنوان، اللون).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) وتعيين المعلمات (العنوان، اللون).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) وتعيين المعلمات (العنوان، اللون).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) وتعيين المعلمات (العنوان، اللون).
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/highlightannotation) وتعيين المعلمات (العنوان، اللون).
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/strikeoutannotation) وتعيين المعلمات (العنوان، اللون).
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/squigglyannotation) وتعيين المعلمات (العنوان، اللون).
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/underlineannotation) وتعيين المعلمات (العنوان، اللون).
 1. بعد ذلك يجب إضافة جميع التعليقات إلى الصفحة.
 
 ```csharp

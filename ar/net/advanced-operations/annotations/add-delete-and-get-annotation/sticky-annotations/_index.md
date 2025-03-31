@@ -85,7 +85,7 @@ sitemap:
 
 يجب استخدام تعليق العلامة المائية لتمثيل الرسوميات التي يجب طباعتها بحجم ثابت وموقع ثابت على الصفحة، بغض النظر عن أبعاد الصفحة المطبوعة.
 
-يمكنك إضافة نص العلامة المائية باستخدام [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) في موضع محدد من صفحة PDF. يمكن أيضًا التحكم في شفافية العلامة المائية باستخدام خاصية الشفافية.
+يمكنك إضافة نص العلامة المائية باستخدام [WatermarkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/watermarkannotation) في موضع محدد من صفحة PDF. يمكن أيضًا التحكم في شفافية العلامة المائية باستخدام خاصية الشفافية.
 
 يرجى مراجعة الشفرة البرمجية التالية لإضافة WatermarkAnnotation.
 

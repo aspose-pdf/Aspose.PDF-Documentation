@@ -83,14 +83,14 @@ Le code ci-dessous fonctionne également avec la bibliothèque [Aspose.PDF.Drawi
 
 ## Ajouter un objet cercle
 
-Comme les graphiques à barres, les graphiques circulaires peuvent être utilisés pour afficher des données dans plusieurs catégories distinctes. Contrairement aux graphiques à barres, cependant, les graphiques circulaires ne peuvent être utilisés que lorsque vous avez des données pour toutes les catégories qui composent l'ensemble. Voyons donc comment ajouter un objet [Cercle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/circle) avec Aspose.PDF for .NET.
+Comme les graphiques à barres, les graphiques circulaires peuvent être utilisés pour afficher des données dans plusieurs catégories distinctes. Contrairement aux graphiques à barres, cependant, les graphiques circulaires ne peuvent être utilisés que lorsque vous avez des données pour toutes les catégories qui composent l'ensemble. Voyons donc comment ajouter un objet [Cercle](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/circle) avec Aspose.PDF for .NET.
 
 Suivez les étapes ci-dessous :
 
-1. Créez une instance de [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Créez un [objet de dessin](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) avec certaines dimensions.
-1. Définissez la [bordure](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) pour l'objet de dessin.
-1. Ajoutez un objet [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) à la collection de paragraphes de la page.
+1. Créez une instance de [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Créez un [objet de dessin](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing) avec certaines dimensions.
+1. Définissez la [bordure](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/graph/properties/border) pour l'objet de dessin.
+1. Ajoutez un objet [Graph](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/graph) à la collection de paragraphes de la page.
 1. Enregistrez notre fichier PDF.
 
 ```csharp

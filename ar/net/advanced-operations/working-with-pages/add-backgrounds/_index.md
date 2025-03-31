@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-يمكن استخدام صور الخلفية لإضافة علامة مائية، أو تصميم خفيف آخر، إلى المستندات. في Aspose.PDF for .NET، كل مستند PDF هو مجموعة من الصفحات وكل صفحة تحتوي على مجموعة من الآثار. يمكن استخدام فئة [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) لإضافة صورة خلفية إلى كائن الصفحة.
+يمكن استخدام صور الخلفية لإضافة علامة مائية، أو تصميم خفيف آخر، إلى المستندات. في Aspose.PDF for .NET، كل مستند PDF هو مجموعة من الصفحات وكل صفحة تحتوي على مجموعة من الآثار. يمكن استخدام فئة [BackgroundArtifact](https://reference.aspose.com/pdf/ar/net/aspose.pdf/backgroundartifact) لإضافة صورة خلفية إلى كائن الصفحة.
 
 تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 

@@ -101,7 +101,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 Tenemos una API llamada Aspose.Slides que ofrece la función de crear y manipular presentaciones PPT/PPTX. Esta API también proporciona la función de convertir archivos PPT/PPTX a formato PDF. Recientemente recibimos solicitudes de muchos de nuestros clientes para apoyar la capacidad de transformación de PDF a formato PPTX. A partir de la versión Aspose.PDF for .NET 10.3.0, hemos introducido una función para transformar documentos PDF a formato PPTX. Durante esta conversión, las páginas individuales del archivo PDF se convierten en diapositivas separadas en el archivo PPTX.
 
-Durante la conversión de PDF a <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>, el texto se renderiza como texto donde puedes seleccionarlo/actualizarlo. Ten en cuenta que para convertir archivos PDF a formato PPTX, Aspose.PDF proporciona una clase llamada [`PptxSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions). Un objeto de la clase PptxSaveOptions se pasa como segundo argumento al [`Document.Save(..) method`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save). El siguiente fragmento de código muestra el proceso para convertir archivos PDF a formato PPTX.
+Durante la conversión de PDF a <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>, el texto se renderiza como texto donde puedes seleccionarlo/actualizarlo. Ten en cuenta que para convertir archivos PDF a formato PPTX, Aspose.PDF proporciona una clase llamada [`PptxSaveOptions`](https://reference.aspose.com/pdf/es/net/aspose.pdf/pptxsaveoptions). Un objeto de la clase PptxSaveOptions se pasa como segundo argumento al [`Document.Save(..) method`](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save). El siguiente fragmento de código muestra el proceso para convertir archivos PDF a formato PPTX.
 
 ## Conversión simple de PDF a PowerPoint usando C# y Aspose.PDF .NET
 
@@ -109,8 +109,8 @@ Para convertir PDF a PPTX, Aspose.PDF for .NET aconseja usar los siguientes paso
 
 <a name="csharp-pdf-to-powerpoint"><strong>Pasos: Convertir PDF a PowerPoint en C#</strong></a> | <a name="csharp-pdf-to-pptx"><strong>Pasos: Convertir PDF a PPTX en C#</strong></a>
 
-1. Crea una instancia de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-2. Crea una instancia de la clase [PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions).
+1. Crea una instancia de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+2. Crea una instancia de la clase [PptxSaveOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/pptxsaveoptions).
 3. Usa el método **Save** del objeto **Document** para guardar el PDF como PPTX.
 
 ```csharp
@@ -142,7 +142,7 @@ Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["PDF a PPTX"
 [![Aspose.PDF Conversión PDF a PPTX con aplicación gratuita](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
 
-En caso de que necesites convertir un PDF buscable a PPTX como imágenes en lugar de texto seleccionable, Aspose.PDF proporciona tal función a través de la clase [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions). Para lograr esto, establece la propiedad [SlidesAsImages](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) de la clase [PptxSaveOptios](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) en 'true' como se muestra en el siguiente ejemplo de código.
+En caso de que necesites convertir un PDF buscable a PPTX como imágenes en lugar de texto seleccionable, Aspose.PDF proporciona tal función a través de la clase [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/pptxsaveoptions). Para lograr esto, establece la propiedad [SlidesAsImages](https://reference.aspose.com/pdf/es/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) de la clase [PptxSaveOptios](https://reference.aspose.com/pdf/es/net/aspose.pdf/pptxsaveoptions) en 'true' como se muestra en el siguiente ejemplo de código.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -168,7 +168,7 @@ private static void ConvertPDFToPPTWithSlidesAsImages()
 
 ## Detalle del progreso de la conversión a PPTX
 
-Aspose.PDF for .NET te permite rastrear el progreso de la conversión de PDF a PPTX. La clase [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) proporciona la propiedad [CustomProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler) que se puede especificar a un método personalizado para rastrear el progreso de la conversión como se muestra en el siguiente ejemplo de código.
+Aspose.PDF for .NET te permite rastrear el progreso de la conversión de PDF a PPTX. La clase [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/pptxsaveoptions) proporciona la propiedad [CustomProgressHandler](https://reference.aspose.com/pdf/es/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler) que se puede especificar a un método personalizado para rastrear el progreso de la conversión como se muestra en el siguiente ejemplo de código.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

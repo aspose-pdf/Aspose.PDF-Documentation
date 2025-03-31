@@ -83,7 +83,7 @@ sitemap:
 
 ## Проверка PDF-документа на соответствие стандарту PDF A (A 1A и A 1B)
 
-Чтобы проверить PDF-документ на соответствие PDF/A-1a или PDF/A-1b, используйте метод Validate класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Этот метод позволяет указать имя файла, в котором будет сохранен результат, и требуемый тип проверки из перечисления [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat): PDF_A_1A или PDF_A_1B.
+Чтобы проверить PDF-документ на соответствие PDF/A-1a или PDF/A-1b, используйте метод Validate класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Этот метод позволяет указать имя файла, в котором будет сохранен результат, и требуемый тип проверки из перечисления [PdfFormat](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pdfformat): PDF_A_1A или PDF_A_1B.
 
 {{% alert color="primary" %}}
 
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### Скрытие номеров страниц в оглавлении
 
-Если вы не хотите отображать номера страниц вместе с заголовками в оглавлении, вы можете использовать свойство [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) класса [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) как false. Пожалуйста, посмотрите следующий фрагмент кода, чтобы скрыть номера страниц в оглавлении:
+Если вы не хотите отображать номера страниц вместе с заголовками в оглавлении, вы можете использовать свойство [IsShowPageNumbers](https://reference.aspose.com/pdf/ru/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) класса [TOCInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf/tocinfo) как false. Пожалуйста, посмотрите следующий фрагмент кода, чтобы скрыть номера страниц в оглавлении:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -453,7 +453,7 @@ private static void SetExpiryDate()
 
 Клиент попросил нас добавить функцию, которая позволяет разработчикам определять прогресс генерации PDF-файла. Вот ответ на этот запрос.
 
-Поле [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) класса [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) позволяет вам определить, как идет генерация PDF. Обработчик имеет следующие типы:
+Поле [CustomerProgressHandler](https://reference.aspose.com/pdf/ru/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) класса [DocSaveOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf/docsaveoptions) позволяет вам определить, как идет генерация PDF. Обработчик имеет следующие типы:
 
 - DocSaveOptions.ConversionProgessEventHandler.
 - DocSaveOptions.ProgressEventHandlerInfo.

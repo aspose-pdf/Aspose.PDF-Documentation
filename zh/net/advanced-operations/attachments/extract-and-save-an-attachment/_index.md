@@ -85,7 +85,7 @@ sitemap:
 
 要从 PDF 文件中获取所有附件：
 
-1. 遍历 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 集合。[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 集合包含所有附件。该集合的每个元素代表一个 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 对象。通过 [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 集合的 foreach 循环的每次迭代返回一个 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 对象。
+1. 遍历 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合。[EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合包含所有附件。该集合的每个元素代表一个 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 对象。通过 [EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合的 foreach 循环的每次迭代返回一个 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 对象。
 1. 一旦对象可用，检索附加文件的所有属性或文件本身。
 
 以下代码片段展示了如何从 PDF 文档中获取所有附件。

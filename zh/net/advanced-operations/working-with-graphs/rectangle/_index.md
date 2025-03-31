@@ -83,22 +83,22 @@ sitemap:
 
 ## 添加矩形对象
 
-Aspose.PDF for .NET支持将图形对象（例如图形、线条、矩形等）添加到PDF文档的功能。您还可以添加[矩形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)对象，并提供用特定颜色填充矩形对象、控制Z-顺序、添加渐变颜色填充等功能。
+Aspose.PDF for .NET支持将图形对象（例如图形、线条、矩形等）添加到PDF文档的功能。您还可以添加[矩形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)对象，并提供用特定颜色填充矩形对象、控制Z-顺序、添加渐变颜色填充等功能。
 
 首先，让我们看看创建矩形对象的可能性。
 
 请按照以下步骤操作：
 
-1. 创建一个新的PDF [文档](https://reference.aspose.com/pdf/net/aspose.pdf/document)。
-1. 将[页面](https://reference.aspose.com/pdf/net/aspose.pdf/page)添加到PDF文件的页面集合中。
-1. 将[文本片段](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment)添加到页面实例的段落集合中。
-1. 创建[图形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)实例。
-1. 为[绘图对象](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)设置边框。
+1. 创建一个新的PDF [文档](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)。
+1. 将[页面](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)添加到PDF文件的页面集合中。
+1. 将[文本片段](https://reference.aspose.com/pdf/zh/net/aspose.pdf/texfragment)添加到页面实例的段落集合中。
+1. 创建[图形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph)实例。
+1. 为[绘图对象](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing)设置边框。
 1. 创建矩形实例。
 
-1. 将[矩形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)对象添加到图形对象的形状集合中。
+1. 将[矩形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)对象添加到图形对象的形状集合中。
 1. 将图形对象添加到页面实例的段落集合中。
-1. 将[文本片段](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment)添加到页面实例的段落集合中。
+1. 将[文本片段](https://reference.aspose.com/pdf/zh/net/aspose.pdf/texfragment)添加到页面实例的段落集合中。
 
 1. 然后保存您的PDF文件。
 
@@ -146,7 +146,7 @@ private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float w
 
 Aspose.PDF for .NET还提供用特定颜色填充矩形对象的功能。
 
-以下代码片段演示如何添加一个用颜色填充的[矩形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)对象。
+以下代码片段演示如何添加一个用颜色填充的[矩形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)对象。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -194,7 +194,7 @@ private static void RectangleFilled()
 
 Aspose.PDF for .NET支持将图形对象添加到PDF文档，有时需要用渐变颜色填充图形对象。要用渐变颜色填充图形对象，我们需要将setPatterColorSpace设置为渐变轴向阴影对象，如下所示。
 
-以下代码片段演示如何添加一个用渐变颜色填充的[矩形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)对象。
+以下代码片段演示如何添加一个用渐变颜色填充的[矩形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)对象。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -243,7 +243,7 @@ private static void CreateFilledRectangleGradientFill()
 
 ## 创建带Alpha颜色通道的矩形
 
-Aspose.PDF for .NET支持用特定颜色填充矩形对象。矩形对象还可以具有Alpha颜色通道，以提供透明外观。以下代码片段演示如何添加一个带Alpha颜色通道的[矩形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)对象。
+Aspose.PDF for .NET支持用特定颜色填充矩形对象。矩形对象还可以具有Alpha颜色通道，以提供透明外观。以下代码片段演示如何添加一个带Alpha颜色通道的[矩形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)对象。
 
 图像的像素可以存储有关其不透明度的信息以及颜色值。这允许创建具有透明或半透明区域的图像。
 
@@ -304,7 +304,7 @@ private static void RectangleFilled_AlphaChannel()
 
 Aspose.PDF for .NET支持将图形对象（例如图形、线条、矩形等）添加到PDF文档的功能。当在PDF文件中添加多个相同对象的实例时，我们可以通过指定Z-顺序来控制它们的渲染。Z-顺序在我们需要将对象重叠渲染时也会使用。
 
-以下代码片段演示了在彼此之上渲染[矩形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)对象的步骤。
+以下代码片段演示了在彼此之上渲染[矩形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)对象的步骤。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

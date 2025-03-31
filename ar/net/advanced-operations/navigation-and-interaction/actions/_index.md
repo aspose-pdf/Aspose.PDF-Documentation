@@ -87,18 +87,18 @@ sitemap:
 
 لإضافة روابط ويب إلى مستندات PDF:
 
-1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
-1. الحصول على فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) التي تريد إضافة الرابط إليها.
-1. إنشاء كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) باستخدام كائنات Page و [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) . يتم استخدام كائن المستطيل لتحديد الموقع على الصفحة حيث يجب إضافة الرابط.
-1. تعيين خاصية Action إلى كائن [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) الذي يحدد موقع URI البعيد.
-1. لعرض نص الرابط، أضف سلسلة نصية في موقع مشابه لمكان وجود كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) .
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
+1. الحصول على فئة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) التي تريد إضافة الرابط إليها.
+1. إنشاء كائن [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) باستخدام كائنات Page و [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf/rectangle) . يتم استخدام كائن المستطيل لتحديد الموقع على الصفحة حيث يجب إضافة الرابط.
+1. تعيين خاصية Action إلى كائن [GoToURIAction](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/gotouriaction) الذي يحدد موقع URI البعيد.
+1. لعرض نص الرابط، أضف سلسلة نصية في موقع مشابه لمكان وجود كائن [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) .
 1. لإضافة نص حر:
 
-- قم بإنشاء كائن [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) . يقبل أيضًا كائنات Page و Rectangle كوسائط، لذا من الممكن توفير نفس القيم كما هو محدد ضد مُنشئ LinkAnnotation.
-- باستخدام خاصية Contents لكائن [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) ، حدد السلسلة التي يجب عرضها في ملف PDF الناتج.
-- اختياريًا، قم بتعيين عرض الحدود لكل من كائنات [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) و FreeTextAnnotation إلى 0 حتى لا تظهر في مستند PDF.
-- بمجرد تعريف كائنات [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) و [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) ، أضف هذه الروابط إلى مجموعة التعليقات التوضيحية لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) .
-- أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+- قم بإنشاء كائن [FreeTextAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/freetextannotation) . يقبل أيضًا كائنات Page و Rectangle كوسائط، لذا من الممكن توفير نفس القيم كما هو محدد ضد مُنشئ LinkAnnotation.
+- باستخدام خاصية Contents لكائن [FreeTextAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/freetextannotation) ، حدد السلسلة التي يجب عرضها في ملف PDF الناتج.
+- اختياريًا، قم بتعيين عرض الحدود لكل من كائنات [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) و FreeTextAnnotation إلى 0 حتى لا تظهر في مستند PDF.
+- بمجرد تعريف كائنات [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) و [FreeTextAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/freetextannotation) ، أضف هذه الروابط إلى مجموعة التعليقات التوضيحية لكائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) .
+- أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة رابط إلى ملف PDF.
 
@@ -188,9 +188,9 @@ private static void AddHyperlink()
 
 ## إنشاء رابط إلى الصفحات في نفس ملف PDF
 
-تقدم Aspose.PDF for .NET ميزة رائعة لإنشاء PDF وكذلك التلاعب به. كما أنها تقدم ميزة إضافة روابط إلى صفحات PDF ويمكن أن يوجه الرابط إما إلى صفحات في ملف PDF آخر، أو عنوان URL على الويب، أو رابط لتشغيل تطبيق، أو حتى رابط إلى صفحات في نفس ملف PDF. لإضافة روابط محلية (روابط إلى صفحات في نفس ملف PDF)، تمت إضافة فئة تسمى [LocalHyperlink](https://reference.aspose.com/pdf/net/aspose.pdf/localhyperlink) إلى مساحة أسماء Aspose.PDF وهذه الفئة تحتوي على خاصية تسمى TargetPageNumber، والتي تستخدم لتحديد الصفحة المستهدفة/الوجهة للرابط.
+تقدم Aspose.PDF for .NET ميزة رائعة لإنشاء PDF وكذلك التلاعب به. كما أنها تقدم ميزة إضافة روابط إلى صفحات PDF ويمكن أن يوجه الرابط إما إلى صفحات في ملف PDF آخر، أو عنوان URL على الويب، أو رابط لتشغيل تطبيق، أو حتى رابط إلى صفحات في نفس ملف PDF. لإضافة روابط محلية (روابط إلى صفحات في نفس ملف PDF)، تمت إضافة فئة تسمى [LocalHyperlink](https://reference.aspose.com/pdf/ar/net/aspose.pdf/localhyperlink) إلى مساحة أسماء Aspose.PDF وهذه الفئة تحتوي على خاصية تسمى TargetPageNumber، والتي تستخدم لتحديد الصفحة المستهدفة/الوجهة للرابط.
 
-لإضافة الرابط المحلي، نحتاج إلى إنشاء TextFragment بحيث يمكن ربط الرابط بـ TextFragment. تحتوي فئة [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) على خاصية تسمى Hyperlink والتي تستخدم لربط مثيل LocalHyperlink. تظهر مقتطفات الشيفرة التالية الخطوات اللازمة لتحقيق هذا المتطلب.
+لإضافة الرابط المحلي، نحتاج إلى إنشاء TextFragment بحيث يمكن ربط الرابط بـ TextFragment. تحتوي فئة [TextFragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragment) على خاصية تسمى Hyperlink والتي تستخدم لربط مثيل LocalHyperlink. تظهر مقتطفات الشيفرة التالية الخطوات اللازمة لتحقيق هذا المتطلب.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -284,11 +284,11 @@ private static void AddHyperlink()
 
 للحصول على عنوان URL للرابط:
 
-1. إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
-1. الحصول على [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) التي تريد استخراج الروابط منها.
-1. استخدم فئة [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) لاستخراج جميع كائنات [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) من الصفحة المحددة.
-1. تمرير كائن [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) إلى طريقة Accept لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) .
-1. الحصول على جميع التعليقات التوضيحية المحددة في كائن IList باستخدام خاصية Selected لكائن [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) .
+1. إنشاء كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
+1. الحصول على [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) التي تريد استخراج الروابط منها.
+1. استخدم فئة [AnnotationSelector](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationselector) لاستخراج جميع كائنات [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) من الصفحة المحددة.
+1. تمرير كائن [AnnotationSelector](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationselector) إلى طريقة Accept لكائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) .
+1. الحصول على جميع التعليقات التوضيحية المحددة في كائن IList باستخدام خاصية Selected لكائن [AnnotationSelector](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationselector) .
 1. أخيرًا، استخراج إجراء LinkAnnotation كـ GoToURIAction.
 
 تظهر مقتطفات الشيفرة التالية كيفية الحصول على وجهات الروابط (URL) من ملف PDF.
@@ -368,7 +368,7 @@ private static void GetHyperlink()
 
 يمثل النص والتعليقات التوضيحية/الإجراءات في ملف PDF كيانات مختلفة. النص على الصفحة هو مجرد مجموعة من الكلمات والأحرف، بينما تجلب التعليقات التوضيحية بعض التفاعل مثل ذلك الموجود في الرابط.
 
-للعثور على محتوى URL، تحتاج إلى العمل مع كل من التعليق والنص. لا يحتوي كائن [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) على النص بنفسه ولكنه يقع تحت النص على الصفحة. لذا للحصول على النص، يعطي التعليق حدود URL، بينما يعطي كائن النص محتويات URL. يرجى الاطلاع على مقتطفات الشيفرة التالية.
+للعثور على محتوى URL، تحتاج إلى العمل مع كل من التعليق والنص. لا يحتوي كائن [Annotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotation) على النص بنفسه ولكنه يقع تحت النص على الصفحة. لذا للحصول على النص، يعطي التعليق حدود URL، بينما يعطي كائن النص محتويات URL. يرجى الاطلاع على مقتطفات الشيفرة التالية.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -459,8 +459,8 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 لإزالة إجراء الفتح:
 
-1. تعيين خاصية [OpenAction](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) إلى null.
-1. احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن Document .
+1. تعيين خاصية [OpenAction](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/openaction) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) إلى null.
+1. احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save) لكائن Document .
 
 تظهر مقتطفات الشيفرة التالية كيفية إزالة إجراء فتح المستند من ملف PDF.
 
@@ -511,7 +511,7 @@ private static void RemoveOpenAction()
 
 عند عرض ملفات PDF في عارض PDF مثل Adobe Reader، عادةً ما تفتح الملفات على الصفحة الأولى. ومع ذلك، من الممكن تعيين الملف ليفتح على صفحة مختلفة.
 
-تسمح لك فئة [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) بتحديد صفحة في ملف PDF تريد فتحها. عند تمرير قيمة كائن GoToAction إلى خاصية OpenAction لفئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) ، يفتح المستند في الصفحة المحددة ضد كائن XYZExplicitDestination. تظهر مقتطفات الشيفرة التالية كيفية تحديد صفحة كإجراء فتح المستند.
+تسمح لك فئة [XYZExplicitDestination](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/xyzexplicitdestination) بتحديد صفحة في ملف PDF تريد فتحها. عند تمرير قيمة كائن GoToAction إلى خاصية OpenAction لفئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) ، يفتح المستند في الصفحة المحددة ضد كائن XYZExplicitDestination. تظهر مقتطفات الشيفرة التالية كيفية تحديد صفحة كإجراء فتح المستند.
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -199,7 +199,7 @@ private static void ComparingEntireDocuments()
 
 在协作处理文档时，尤其是在专业环境中，您通常会得到同一文件的多个版本。
 
-您可以使用 [GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) 类来比较 PDF 文档和页面。该类适合比较页面图形内容中的更改。
+您可以使用 [GraphicalPdfComparer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) 类来比较 PDF 文档和页面。该类适合比较页面图形内容中的更改。
 
 使用 Aspose.PDF for .NET，可以比较文档和页面，并将比较结果输出到 PDF 文档或图像文件。
 
@@ -211,13 +211,13 @@ private static void ComparingEntireDocuments()
 
 该类具有一个方法，允许您以适合进一步处理的形式获取页面图像差异：**ImagesDifference GetDifference(Page page1, Page page2)**。
 
-此方法返回一个 [ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) 类的对象，该对象包含正在比较的第一页的图像和差异数组。差异数组和原始图像具有 **RGB24bpp** 像素格式。
+此方法返回一个 [ImagesDifference](https://reference.aspose.com/pdf/zh/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) 类的对象，该对象包含正在比较的第一页的图像和差异数组。差异数组和原始图像具有 **RGB24bpp** 像素格式。
 
 ImagesDifference 允许您生成不同的图像，并通过将差异数组添加到原始图像来获取正在比较的第二页的图像。为此，请使用 **ImagesDifference.GetDestinationImage 和 ImagesDifference.DifferenceToImage** 方法。
 
 ### 使用 GetDifference 方法比较 PDF
 
-提供的代码定义了一个方法 [GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods)，该方法比较两个 PDF 文档并生成它们之间差异的视觉表示。
+提供的代码定义了一个方法 [GetDifference](https://reference.aspose.com/pdf/zh/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods)，该方法比较两个 PDF 文档并生成它们之间差异的视觉表示。
 
 此方法比较两个 PDF 文件的第一页，并生成两个 PNG 图像：
 
@@ -259,7 +259,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 
 ### 使用 CompareDocumentsToPdf 方法比较 PDF
 
-提供的代码片段使用了 [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) 方法，该方法比较两个文档并生成比较结果的 PDF 报告。
+提供的代码片段使用了 [CompareDocumentsToPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) 方法，该方法比较两个文档并生成比较结果的 PDF 报告。
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

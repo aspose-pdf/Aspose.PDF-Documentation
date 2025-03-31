@@ -155,7 +155,7 @@ Par défaut, la qualité JPEG est réglée sur 100 %. Pour appliquer une meilleu
 
 ## Ajouter une image dans un fichier PDF existant (Facades)
 
-Il existe également une méthode alternative, plus facile, pour ajouter une image à un fichier PDF. Vous pouvez utiliser la méthode [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) de la classe [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend). La méthode [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) nécessite l'image à ajouter, le numéro de page sur lequel l'image doit être ajoutée et les informations de coordonnées. Après cela, enregistrez le fichier PDF mis à jour en utilisant la méthode Close. Le code suivant vous montre comment ajouter une image dans un fichier PDF existant.
+Il existe également une méthode alternative, plus facile, pour ajouter une image à un fichier PDF. Vous pouvez utiliser la méthode [AddImage](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) de la classe [PdfFileMend](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilemend). La méthode [AddImage](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) nécessite l'image à ajouter, le numéro de page sur lequel l'image doit être ajoutée et les informations de coordonnées. Après cela, enregistrez le fichier PDF mis à jour en utilisant la méthode Close. Le code suivant vous montre comment ajouter une image dans un fichier PDF existant.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -324,7 +324,7 @@ private static void ExtractImageTypesFromPDF()
 
 ## Contrôler la qualité de l'image
 
-Il est possible de contrôler la qualité d'une image qui est ajoutée à un fichier PDF. Utilisez la méthode surchargée [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) dans la classe [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection).
+Il est possible de contrôler la qualité d'une image qui est ajoutée à un fichier PDF. Utilisez la méthode surchargée [Replace](https://reference.aspose.com/pdf/fr/net/aspose.pdf.ximagecollection/replace/methods/1) dans la classe [XImageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/ximagecollection).
 
 Le code suivant démontre comment convertir toutes les images du document en JPEG utilisant une qualité de 80 % pour la compression.
 

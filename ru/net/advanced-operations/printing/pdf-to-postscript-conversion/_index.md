@@ -83,7 +83,7 @@ sitemap:
 
 ## **PDF в Postscript на C#**
 
-Класс [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) предоставляет возможность печати PDF-документов, и с помощью этого класса мы также можем конвертировать PDF-файлы в формат PostScript. Чтобы конвертировать PDF-файл в PostScript, сначала установите любой PS-принтер и просто напечатайте в файл с помощью PdfViewer. Для установки PS-принтера обратитесь к инструкциям, предоставленным вашим производителем принтера. Следующий фрагмент кода показывает, как напечатать и конвертировать PDF в формат PostScript.
+Класс [PdfViewer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/) предоставляет возможность печати PDF-документов, и с помощью этого класса мы также можем конвертировать PDF-файлы в формат PostScript. Чтобы конвертировать PDF-файл в PostScript, сначала установите любой PS-принтер и просто напечатайте в файл с помощью PdfViewer. Для установки PS-принтера обратитесь к инструкциям, предоставленным вашим производителем принтера. Следующий фрагмент кода показывает, как напечатать и конвертировать PDF в формат PostScript.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -158,7 +158,7 @@ private static void PrintToPostscriptFile()
 
 ## Проверка статуса задания на печать
 
-PDF-файл можно напечатать как на физическом принтере, так и на Microsoft XPS Document Writer, без отображения диалогового окна печати, с использованием класса [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/). При печати больших PDF-файлов процесс может занять много времени, поэтому пользователь может не быть уверенным, завершился ли процесс печати или возникла проблема. Чтобы определить статус задания на печать, используйте свойство [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). Следующий фрагмент кода показывает, как напечатать PDF-файл в файл XPS и получить статус печати.
+PDF-файл можно напечатать как на физическом принтере, так и на Microsoft XPS Document Writer, без отображения диалогового окна печати, с использованием класса [PdfViewer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/). При печати больших PDF-файлов процесс может занять много времени, поэтому пользователь может не быть уверенным, завершился ли процесс печати или возникла проблема. Чтобы определить статус задания на печать, используйте свойство [PrintStatus](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/printstatus/). Следующий фрагмент кода показывает, как напечатать PDF-файл в файл XPS и получить статус печати.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -299,7 +299,7 @@ private static void CheckingPrintJobStatus()
 
 ## Получение/установка имени владельца задания на печать
 
-Иногда возникает необходимость получить или установить имя владельца задания на печать (т.е. фактического пользователя, который нажал кнопку печати на веб-странице). Эта информация необходима при печати PDF-файла. Для выполнения этого требования используется свойство [PrinterJobName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printerjobname/).
+Иногда возникает необходимость получить или установить имя владельца задания на печать (т.е. фактического пользователя, который нажал кнопку печати на веб-странице). Эта информация необходима при печати PDF-файла. Для выполнения этого требования используется свойство [PrinterJobName](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/printerjobname/).
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

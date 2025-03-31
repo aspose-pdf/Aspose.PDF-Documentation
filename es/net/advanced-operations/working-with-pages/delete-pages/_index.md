@@ -80,12 +80,12 @@ sitemap:
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-Puedes eliminar páginas de un archivo PDF utilizando Aspose.PDF for .NET. Para eliminar una página en particular de la colección [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+Puedes eliminar páginas de un archivo PDF utilizando Aspose.PDF for .NET. Para eliminar una página en particular de la colección [PageCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/pagecollection).
 
 ## Eliminar página de un archivo PDF
 
-1. Llama al método [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) y especifica el índice de la página.
-1. Llama al método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) para guardar el archivo PDF actualizado.
+1. Llama al método [Delete](https://reference.aspose.com/pdf/es/net/aspose.pdf/pagecollection/methods/delete) y especifica el índice de la página.
+1. Llama al método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf.document/save/methods/4) para guardar el archivo PDF actualizado.
 El siguiente fragmento de código muestra cómo eliminar una página en particular del archivo PDF utilizando C#.
 
 ```csharp

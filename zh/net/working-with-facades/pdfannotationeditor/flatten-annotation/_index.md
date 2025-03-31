@@ -81,7 +81,7 @@ sitemap:
 
 选择此选项时，您的注释将作为 PDF 标准注释包含在导出的 PDF 中。
 
-查看下一个代码片段中使用的 [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) 方法。 
+查看下一个代码片段中使用的 [flatteningAnnotations](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) 方法。 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

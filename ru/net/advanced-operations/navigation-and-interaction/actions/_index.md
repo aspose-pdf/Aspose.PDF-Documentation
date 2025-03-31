@@ -87,18 +87,18 @@ sitemap:
 
 Чтобы добавить веб-гиперссылки в PDF документы:
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Получите класс [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page), к которому вы хотите добавить ссылку.
-1. Создайте объект [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) с использованием объектов Page и [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle). Объект прямоугольника используется для указания местоположения на странице, где должна быть добавлена ссылка.
-1. Установите свойство Action в объект [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction), который указывает местоположение удаленного URI.
-1. Чтобы отобразить текст гиперссылки, добавьте строку текста в месте, аналогичном тому, где размещен объект [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
+1. Создайте объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Получите класс [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page), к которому вы хотите добавить ссылку.
+1. Создайте объект [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation) с использованием объектов Page и [Rectangle](https://reference.aspose.com/pdf/ru/net/aspose.pdf/rectangle). Объект прямоугольника используется для указания местоположения на странице, где должна быть добавлена ссылка.
+1. Установите свойство Action в объект [GoToURIAction](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/gotouriaction), который указывает местоположение удаленного URI.
+1. Чтобы отобразить текст гиперссылки, добавьте строку текста в месте, аналогичном тому, где размещен объект [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation).
 1. Чтобы добавить свободный текст:
 
-- Создайте объект [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation). Он также принимает объекты Page и Rectangle в качестве аргументов, поэтому можно предоставить те же значения, что указаны в конструкторе LinkAnnotation.
-- Используя свойство Contents объекта [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation), укажите строку, которая должна отображаться в выходном PDF.
-- При желании установите ширину границы как для объектов [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation), так и для объектов FreeTextAnnotation в 0, чтобы они не отображались в PDF документе.
-- После определения объектов [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) и [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) добавьте эти ссылки в коллекцию аннотаций объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
-- Наконец, сохраните обновленный PDF, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+- Создайте объект [FreeTextAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/freetextannotation). Он также принимает объекты Page и Rectangle в качестве аргументов, поэтому можно предоставить те же значения, что указаны в конструкторе LinkAnnotation.
+- Используя свойство Contents объекта [FreeTextAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/freetextannotation), укажите строку, которая должна отображаться в выходном PDF.
+- При желании установите ширину границы как для объектов [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation), так и для объектов FreeTextAnnotation в 0, чтобы они не отображались в PDF документе.
+- После определения объектов [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation) и [FreeTextAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/freetextannotation) добавьте эти ссылки в коллекцию аннотаций объекта [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page).
+- Наконец, сохраните обновленный PDF, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 Следующий фрагмент кода показывает, как добавить гиперссылку в PDF файл.
 
@@ -188,9 +188,9 @@ private static void AddHyperlink()
 
 ## Создать гиперссылку на страницы в том же PDF
 
-Aspose.PDF for .NET предоставляет отличную функцию для создания PDF, а также его манипуляции. Он также предлагает возможность добавлять ссылки на страницы PDF, и ссылка может направлять либо на страницы в другом PDF файле, веб URL, запускать приложение или даже на страницы в том же PDF файле. Чтобы добавить локальные гиперссылки (ссылки на страницы в том же PDF файле), в пространство имен Aspose.PDF добавлен класс [LocalHyperlink](https://reference.aspose.com/pdf/net/aspose.pdf/localhyperlink), который имеет свойство TargetPageNumber, используемое для указания целевой/назначенной страницы для гиперссылки.
+Aspose.PDF for .NET предоставляет отличную функцию для создания PDF, а также его манипуляции. Он также предлагает возможность добавлять ссылки на страницы PDF, и ссылка может направлять либо на страницы в другом PDF файле, веб URL, запускать приложение или даже на страницы в том же PDF файле. Чтобы добавить локальные гиперссылки (ссылки на страницы в том же PDF файле), в пространство имен Aspose.PDF добавлен класс [LocalHyperlink](https://reference.aspose.com/pdf/ru/net/aspose.pdf/localhyperlink), который имеет свойство TargetPageNumber, используемое для указания целевой/назначенной страницы для гиперссылки.
 
-Чтобы добавить локальную гиперссылку, нам нужно создать TextFragment, чтобы ссылка могла быть связана с TextFragment. Класс [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) имеет свойство Hyperlink, которое используется для связывания экземпляра LocalHyperlink. Следующий фрагмент кода показывает шаги для выполнения этого требования.
+Чтобы добавить локальную гиперссылку, нам нужно создать TextFragment, чтобы ссылка могла быть связана с TextFragment. Класс [TextFragment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textfragment) имеет свойство Hyperlink, которое используется для связывания экземпляра LocalHyperlink. Следующий фрагмент кода показывает шаги для выполнения этого требования.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -284,11 +284,11 @@ private static void AddHyperlink()
 
 Чтобы получить URL ссылки:
 
-1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Получите [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page), из которой вы хотите извлечь ссылки.
-1. Используйте класс [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector), чтобы извлечь все объекты [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) с указанной страницы.
-1. Передайте объект [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) в метод Accept объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
-1. Получите все выбранные аннотации ссылок в объект IList, используя свойство Selected объекта [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector).
+1. Создайте объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Получите [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page), из которой вы хотите извлечь ссылки.
+1. Используйте класс [AnnotationSelector](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationselector), чтобы извлечь все объекты [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation) с указанной страницы.
+1. Передайте объект [AnnotationSelector](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationselector) в метод Accept объекта [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page).
+1. Получите все выбранные аннотации ссылок в объект IList, используя свойство Selected объекта [AnnotationSelector](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationselector).
 1. Наконец, извлеките действие LinkAnnotation как GoToURIAction.
 
 Следующий фрагмент кода показывает, как получить назначения гиперссылок (URL) из PDF файла.
@@ -368,7 +368,7 @@ private static void GetHyperlink()
 
 Текст и аннотации/действия в PDF файле представлены разными сущностями. Текст на странице — это просто набор слов и символов, в то время как аннотации придают некоторую интерактивность, такую как та, что присуща гиперссылке.
 
-Чтобы найти содержимое URL, вам нужно работать как с аннотацией, так и с текстом. Объект [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) сам по себе не имеет текста, но находится под текстом на странице. Поэтому, чтобы получить текст, аннотация дает границы URL, в то время как объект Text дает содержимое URL. Пожалуйста, смотрите следующий фрагмент кода.
+Чтобы найти содержимое URL, вам нужно работать как с аннотацией, так и с текстом. Объект [Annotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotation) сам по себе не имеет текста, но находится под текстом на странице. Поэтому, чтобы получить текст, аннотация дает границы URL, в то время как объект Text дает содержимое URL. Пожалуйста, смотрите следующий фрагмент кода.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -459,8 +459,8 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 Чтобы удалить действие открытия:
 
-1. Установите свойство [OpenAction](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) в null.
-1. Сохраните обновленный PDF, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта Document.
+1. Установите свойство [OpenAction](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/openaction) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) в null.
+1. Сохраните обновленный PDF, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save) объекта Document.
 
 Следующий фрагмент кода показывает, как удалить действие открытия документа из PDF файла.
 
@@ -511,7 +511,7 @@ private static void RemoveOpenAction()
 
 При просмотре PDF файлов в просмотрщике PDF, таком как Adobe Reader, файлы обычно открываются на первой странице. Однако возможно установить файл так, чтобы он открывался на другой странице.
 
-Класс [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) позволяет вам указать страницу в PDF файле, которую вы хотите открыть. При передаче значения объекта GoToAction в свойство OpenAction класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), документ открывается на странице, указанной в объекте XYZExplicitDestination. Следующий фрагмент кода показывает, как указать страницу в качестве действия открытия документа.
+Класс [XYZExplicitDestination](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/xyzexplicitdestination) позволяет вам указать страницу в PDF файле, которую вы хотите открыть. При передаче значения объекта GoToAction в свойство OpenAction класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document), документ открывается на странице, указанной в объекте XYZExplicitDestination. Следующий фрагмент кода показывает, как указать страницу в качестве действия открытия документа.
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

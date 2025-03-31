@@ -86,7 +86,7 @@ sitemap:
 
 * 定义一个路径变量，指向输入和输出 PDF 文件所在的文件夹。
 * 通过从路径加载现有 PDF 文件（例如 "ZUGFeRD-test.pdf"）来创建文档对象。
-* 通过提供路径和另一个名为 "factur-x.xml" 的文件的描述来创建 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification/) 对象，该文件包含符合 ZUGFeRD 标准的发票元数据。
+* 通过提供路径和另一个名为 "factur-x.xml" 的文件的描述来创建 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification/) 对象，该文件包含符合 ZUGFeRD 标准的发票元数据。
 * 向文件规范对象添加属性，例如描述、MIME 类型和 AF 关系。AF 关系指示嵌入文件与 PDF 文档的关系。在这种情况下，它被设置为 "Alternative"，意味着嵌入文件是 PDF 内容的替代表示。
 * 将文件规范对象添加到文档的嵌入文件集合中。文件名应符合 ZUGFeRD 标准，例如 "factur-x.xml"。
 * 将文档转换为 PDF/A-3B 格式，这是 PDF 的一个子集，确保电子文档的长期保存。PDF/A-3B 允许在 PDF 文档中嵌入任何格式的文件。

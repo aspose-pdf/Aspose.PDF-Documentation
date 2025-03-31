@@ -85,7 +85,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 Una anotación de marca de agua se debe usar para representar gráficos que se imprimirán en un tamaño y posición fijos en una página, independientemente de las dimensiones de la página impresa.
 
-Puede agregar texto de marca de agua usando [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) en una posición específica de la página PDF. La opacidad de la marca de agua también se puede controlar utilizando la propiedad de opacidad.
+Puede agregar texto de marca de agua usando [WatermarkAnnotation](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/watermarkannotation) en una posición específica de la página PDF. La opacidad de la marca de agua también se puede controlar utilizando la propiedad de opacidad.
 
 Por favor, consulte el siguiente fragmento de código para agregar WatermarkAnnotation.
 

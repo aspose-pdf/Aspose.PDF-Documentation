@@ -91,9 +91,9 @@ Aspose.PDF for .NET يدعم ميزة توقيع ملفات PDF رقميًا ب�
 
 يمكننا استخدام الفئات والأساليب التالية لتوقيع PDF
 
-- فئة [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature).
-- تعداد [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions).
-- خاصية [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) في فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature).
+- فئة [DocMDPSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/docmdpsignature).
+- تعداد [DocMDPAccessPermissions](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/docmdpaccesspermissions).
+- خاصية [IsCertified](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) في فئة [PdfFileSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature).
 
 لإنشاء توقيع رقمي بناءً على شهادات PKCS12 (امتدادات الملفات .p12، pfx)، يجب عليك إنشاء مثيل من فئة `PdfFileSignature`، مع تمرير كائن المستند إليها.
 بعد ذلك، يجب عليك تحديد طريقة التوقيع الرقمي المطلوبة عن طريق إنشاء كائن من إحدى الفئات:
@@ -203,7 +203,7 @@ private static void Verify()
 
 Aspose.PDF for .NET يدعم توقيع PDF رقميًا مع خادم طابع زمني أو خدمة ويب.
 
-لتحقيق هذا المتطلب، تمت إضافة فئة [TimestampSettings](https://reference.aspose.com/pdf/net/aspose.pdf/timestampsettings) إلى مساحة أسماء Aspose.PDF. يرجى إلقاء نظرة على مقتطف الكود التالي الذي يحصل على الطابع الزمني ويضيفه إلى مستند PDF:
+لتحقيق هذا المتطلب، تمت إضافة فئة [TimestampSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf/timestampsettings) إلى مساحة أسماء Aspose.PDF. يرجى إلقاء نظرة على مقتطف الكود التالي الذي يحصل على الطابع الزمني ويضيفه إلى مستند PDF:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

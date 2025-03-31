@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 命名空间在 [Aspose.PDF for .NET](/pdf/zh/net/) 中对 AcroForms 的支持非常好。它还支持将表单数据导入和导出到不同的文件格式，如 FDF、XFDF 和 XML。然而，有时开发人员需要将一种格式转换为另一种格式。在本文中，我们将探讨允许我们将 FDF 格式转换为 XML 的功能。
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 命名空间在 [Aspose.PDF for .NET](/pdf/zh/net/) 中对 AcroForms 的支持非常好。它还支持将表单数据导入和导出到不同的文件格式，如 FDF、XFDF 和 XML。然而，有时开发人员需要将一种格式转换为另一种格式。在本文中，我们将探讨允许我们将 FDF 格式转换为 XML 的功能。
 
 {{% /alert %}}
 
 ## 实现细节
 
-FDF 代表表单数据格式，FDF 文件包含以键/值对形式的表单值。我们还知道 XML 文件以标签的形式包含值。在这里，通常键表示为标签名称，值表示为该标签内的值。现在，[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 提供了将 XML 文件格式转换为 FDF 格式的灵活性。
+FDF 代表表单数据格式，FDF 文件包含以键/值对形式的表单值。我们还知道 XML 文件以标签的形式包含值。在这里，通常键表示为标签名称，值表示为该标签内的值。现在，[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 提供了将 XML 文件格式转换为 FDF 格式的灵活性。
 
-为此，请使用 [FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormDataConverter) 类。该类提供了将一种数据格式转换为另一种格式的不同方法。本文展示了如何使用一个方法 ConvertXmlToFdf(..)，该方法将 FDF 文件作为输入或源流，并将其保存为 XML 格式。以下代码片段展示了如何将 FDF 文件转换为 XML 文件。
+为此，请使用 [FormDataConverter](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/FormDataConverter) 类。该类提供了将一种数据格式转换为另一种格式的不同方法。本文展示了如何使用一个方法 ConvertXmlToFdf(..)，该方法将 FDF 文件作为输入或源流，并将其保存为 XML 格式。以下代码片段展示了如何将 FDF 文件转换为 XML 文件。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Закладки дают вам возможность отслеживать/ссылаться на конкретную страницу внутри PDF документа. Класс [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) в [пространстве имен Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) предоставляет функцию, которая позволяет вам создавать свои собственные закладки сложным, но интуитивно понятным способом внутри существующего PDF файла, на заданной странице или на всех страницах.
+Закладки дают вам возможность отслеживать/ссылаться на конкретную страницу внутри PDF документа. Класс [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/PdfContentEditor) в [пространстве имен Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) предоставляет функцию, которая позволяет вам создавать свои собственные закладки сложным, но интуитивно понятным способом внутри существующего PDF файла, на заданной странице или на всех страницах.
 
 ## Подробности реализации
 

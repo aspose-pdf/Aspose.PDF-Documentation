@@ -83,9 +83,9 @@ draft: false
 
 ## 使用不同的加密类型和算法加密 PDF 文件
 
-为了加密 PDF 文件，您需要创建 [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) 对象，然后调用 [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) 方法。您可以将用户密码、所有者密码和权限传递给 [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) 方法。您还需要将 KeySize 和 Algorithm 值传递给此方法。
+为了加密 PDF 文件，您需要创建 [PdfFileSecurity](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity) 对象，然后调用 [EncryptFile](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) 方法。您可以将用户密码、所有者密码和权限传递给 [EncryptFile](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) 方法。您还需要将 KeySize 和 Algorithm 值传递给此方法。
 
-查看可能的 [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm) 列表：
+查看可能的 [CryptoAlgorithm](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cryptoalgorithm) 列表：
 
 |**成员名称**|**值**|**描述**|
 | :- | :- | :- |

@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) 类位于 Aspose.Pdf.Facades 包下，提供了向 PDF 文件添加 Javascript 动作的灵活性。您可以创建一个链接，使用与在 PDF 查看器中执行菜单项相对应的序列动作。此类还提供为文档事件创建附加动作的功能。
+[PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/PdfContentEditor) 类位于 Aspose.Pdf.Facades 包下，提供了向 PDF 文件添加 Javascript 动作的灵活性。您可以创建一个链接，使用与在 PDF 查看器中执行菜单项相对应的序列动作。此类还提供为文档事件创建附加动作的功能。
 
-首先，在 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 中绘制一个对象，在我们的示例中是一个 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)。并将动作 [createJavaScriptLink](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) 设置为矩形。之后，您可以保存文档。
+首先，在 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 中绘制一个对象，在我们的示例中是一个 [Rectangle](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/rectangle)。并将动作 [createJavaScriptLink](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) 设置为矩形。之后，您可以保存文档。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

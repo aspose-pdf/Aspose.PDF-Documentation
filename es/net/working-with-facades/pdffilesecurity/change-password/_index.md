@@ -77,7 +77,7 @@ draft: false
 
 ## Cambiar la Contraseña de un Archivo PDF
 
-Para cambiar la contraseña de un archivo PDF, necesitas crear un objeto [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) y luego llamar al método [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Debes pasar la contraseña de propietario existente y las nuevas contraseñas de usuario y propietario al método [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
+Para cambiar la contraseña de un archivo PDF, necesitas crear un objeto [PdfFileSecurity](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesecurity) y luego llamar al método [ChangePassword](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Debes pasar la contraseña de propietario existente y las nuevas contraseñas de usuario y propietario al método [ChangePassword](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
 
 {{% alert color="primary" %}}
 

@@ -146,7 +146,7 @@ sitemap:
 
 ![Aspose.PDF.Drawing لـ .NET](nuget.png)
 
-تعرف على الفئات المتاحة في Aspose.PDF.Drawing على موقع [مرجع API](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/).
+تعرف على الفئات المتاحة في Aspose.PDF.Drawing على موقع [مرجع API](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/).
 
 تعرف على المزيد حول:
 

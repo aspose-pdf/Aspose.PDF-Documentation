@@ -152,11 +152,11 @@ Aspose.PDF for .NET 用于操作由 Adobe 标准化的 PDF 文档。PDF 文档�
 
 ### 识别表单字段名称
 
-Aspose.PDF for .NET 提供了创建、编辑和填写已创建 PDF 表单的能力。它包含 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) 类，该类具有名为 [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) 的函数，它接受两个参数，即需要填写的字段名称和字段值。因此，为了填写表单字段，您必须知道确切的表单字段名称。
-我们经常遇到需要填写在某个工具中创建的表单的情况，例如 Adobe Designer，而我们不确定表单字段名称。为了满足我们的需求，我们需要读取所有 PDF 表单字段的名称。[Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) 类提供了名为 [FieldsNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/properties/fieldnames) 的属性，该属性返回所有字段的名称，如果 PDF 没有字段，则返回 null。但该属性将返回所有 PDF 表单字段的名称，我们无法确定哪个名称对应于表单上的哪个字段。
+Aspose.PDF for .NET 提供了创建、编辑和填写已创建 PDF 表单的能力。它包含 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form) 类，该类具有名为 [FillField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/fillfield/index) 的函数，它接受两个参数，即需要填写的字段名称和字段值。因此，为了填写表单字段，您必须知道确切的表单字段名称。
+我们经常遇到需要填写在某个工具中创建的表单的情况，例如 Adobe Designer，而我们不确定表单字段名称。为了满足我们的需求，我们需要读取所有 PDF 表单字段的名称。[Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form) 类提供了名为 [FieldsNames](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/properties/fieldnames) 的属性，该属性返回所有字段的名称，如果 PDF 没有字段，则返回 null。但该属性将返回所有 PDF 表单字段的名称，我们无法确定哪个名称对应于表单上的哪个字段。
 
-为了解决这个问题，我们需要每个字段的外观属性。[Form](http://www.aspose.com/documentation/file-format-components/aspose.pdf.kit-for-.net-and-java/aspose.pdf.kit.form.html) 类具有名为 GetFieldFacade 的函数，该函数返回包括位置、颜色、边框样式、字体、列表项等属性。为了保存这些值，我们将使用 [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formfieldfacade) 类，该类用于记录字段的视觉属性。一旦我们拥有这些属性，我们可以在每个字段下添加一个文本字段，以显示字段名称。在这里，出现了一个问题，我们如何确定添加文本字段的位置？解决此问题的方法是 [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formfieldfacade) 类中的 Box 属性，该属性保存字段的位置。我们将这些值保存到一个矩形类型的数组中，并使用这些值来确定添加新文本字段的位置。
-在 Aspose.Pdf.Facades 命名空间中，我们有一个名为 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 的类，它提供了操作 PDF 表单的能力。打开一个 PDF 表单，在每个现有表单字段下添加一个文本字段，并使用新名称保存 PDF 表单。
+为了解决这个问题，我们需要每个字段的外观属性。[Form](http://www.aspose.com/documentation/file-format-components/aspose.pdf.kit-for-.net-and-java/aspose.pdf.kit.form.html) 类具有名为 GetFieldFacade 的函数，该函数返回包括位置、颜色、边框样式、字体、列表项等属性。为了保存这些值，我们将使用 [FormFieldFacade](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formfieldfacade) 类，该类用于记录字段的视觉属性。一旦我们拥有这些属性，我们可以在每个字段下添加一个文本字段，以显示字段名称。在这里，出现了一个问题，我们如何确定添加文本字段的位置？解决此问题的方法是 [FormFieldFacade](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formfieldfacade) 类中的 Box 属性，该属性保存字段的位置。我们将这些值保存到一个矩形类型的数组中，并使用这些值来确定添加新文本字段的位置。
+在 Aspose.Pdf.Facades 命名空间中，我们有一个名为 [FormEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor) 的类，它提供了操作 PDF 表单的能力。打开一个 PDF 表单，在每个现有表单字段下添加一个文本字段，并使用新名称保存 PDF 表单。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

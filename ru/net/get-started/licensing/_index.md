@@ -93,13 +93,13 @@ sitemap:
 
 Лицензия может быть загружена из файла или объекта потока. Самый простой способ установить лицензию — поместить файл лицензии в ту же папку, что и файл Aspose.PDF.dll, и указать имя файла без пути, как показано в примере ниже.
 
-Если вы используете любой другой компонент Aspose для .NET вместе с Aspose.PDF for .NET, пожалуйста, укажите пространство имен для лицензии, например [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license).
+Если вы используете любой другой компонент Aspose для .NET вместе с Aspose.PDF for .NET, пожалуйста, укажите пространство имен для лицензии, например [Aspose.Pdf.License](https://reference.aspose.com/pdf/ru/net/aspose.pdf/license).
 
 ### Загрузка лицензии из файла
 
 Самый простой способ применить лицензию — поместить файл лицензии в ту же папку, что и файл Aspose.PDF.dll, и указать только имя файла без пути.
 
-Когда вы вызываете метод [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index), имя лицензии, которое вы передаете, должно соответствовать имени вашего файла лицензии. Например, если вы измените имя файла лицензии на "Aspose.PDF.lic.xml", передайте это имя файла в метод Pdf.SetLicense(…).
+Когда вы вызываете метод [SetLicense](https://reference.aspose.com/pdf/ru/net/aspose.pdf/license/methods/setlicense/index), имя лицензии, которое вы передаете, должно соответствовать имени вашего файла лицензии. Например, если вы измените имя файла лицензии на "Aspose.PDF.lic.xml", передайте это имя файла в метод Pdf.SetLicense(…).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
