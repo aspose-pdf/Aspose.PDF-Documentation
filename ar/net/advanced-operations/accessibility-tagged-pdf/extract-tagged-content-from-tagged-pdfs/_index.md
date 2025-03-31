@@ -85,7 +85,7 @@ sitemap:
 
 ## الحصول على محتوى PDF المميز
 
-من أجل الحصول على محتوى مستند PDF مع نص مميز، تقدم Aspose.PDF خاصية [TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+من أجل الحصول على محتوى مستند PDF مع نص مميز، تقدم Aspose.PDF خاصية [TaggedContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/taggedcontent) من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
 
 تظهر مقتطفات الشيفرة التالية كيفية الحصول على محتوى مستند PDF مع نص مميز:
 
@@ -144,7 +144,7 @@ private static void GetTaggedContent()
 
 ## الحصول على الهيكل الجذري
 
-من أجل الحصول على الهيكل الجذري لمستند PDF المميز، تقدم Aspose.PDF خاصية [StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) من واجهة [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) و [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) . تظهر مقتطفات الشيفرة التالية كيفية الحصول على الهيكل الجذري لمستند PDF المميز:
+من أجل الحصول على الهيكل الجذري لمستند PDF المميز، تقدم Aspose.PDF خاصية [StructTreeRootElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) من واجهة [ITaggedContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent) و [StructureElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structureelement) . تظهر مقتطفات الشيفرة التالية كيفية الحصول على الهيكل الجذري لمستند PDF المميز:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void GetRootStructure()
 
 ## الوصول إلى العناصر الفرعية
 
-من أجل الوصول إلى العناصر الفرعية لمستند PDF المميز، تقدم Aspose.PDF فئة [ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist) . تظهر مقتطفات الشيفرة التالية كيفية الوصول إلى العناصر الفرعية لمستند PDF المميز:
+من أجل الوصول إلى العناصر الفرعية لمستند PDF المميز، تقدم Aspose.PDF فئة [ElementList](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/elementlist) . تظهر مقتطفات الشيفرة التالية كيفية الوصول إلى العناصر الفرعية لمستند PDF المميز:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -316,7 +316,7 @@ private static void AccessChildElements()
 
 ## وضع العلامات على الصور في PDF الموجود
 
-من أجل وضع علامات على الصور في مستند PDF الموجود، تقدم Aspose.PDF طريقة [FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) من فئة [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) . يمكنك إضافة نص بديل للصور باستخدام خاصية [AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) من فئة [FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement) .
+من أجل وضع علامات على الصور في مستند PDF الموجود، تقدم Aspose.PDF طريقة [FindElements](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) من فئة [StructureElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structureelement) . يمكنك إضافة نص بديل للصور باستخدام خاصية [AlternativeText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) من فئة [FigureElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/figureelement) .
 
 تظهر مقتطفات الشيفرة التالية كيفية وضع علامات على الصور في مستند PDF الموجود:
 

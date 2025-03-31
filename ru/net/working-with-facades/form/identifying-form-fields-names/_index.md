@@ -75,24 +75,24 @@ draft: false
 }
 </script>
 
-[Aspose.PDF for .NET](/pdf/ru/net/) предоставляет возможность создавать, редактировать и заполнять уже созданные PDF-формы. Пространство имён [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) содержит класс [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), который содержит функцию с именем [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index), и она принимает два аргумента, то есть имя поля и значение поля. Итак, чтобы заполнить поля формы, вы должны знать точное имя поля формы.
+[Aspose.PDF for .NET](/pdf/ru/net/) предоставляет возможность создавать, редактировать и заполнять уже созданные PDF-формы. Пространство имён [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) содержит класс [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form), который содержит функцию с именем [FillField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/fillfield/index), и она принимает два аргумента, то есть имя поля и значение поля. Итак, чтобы заполнить поля формы, вы должны знать точное имя поля формы.
 
 ## Детали реализации
 
-Мы часто сталкиваемся со сценарием, когда нам нужно заполнить форму, созданную в каком-либо инструменте, например, в Adobe Designer, и мы не уверены в именах полей формы. Итак, чтобы заполнить поля формы, сначала нам нужно прочитать имена всех полей PDF-формы. Класс [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) предоставляет свойство с именем [FieldNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/properties/fieldnames), которое возвращает имена всех полей и возвращает null, если PDF не содержит ни одного поля. Однако при использовании этого свойства мы получаем имена всех полей в форме PDF, и мы можем не быть уверены, какое имя соответствует какому полю в форме.
+Мы часто сталкиваемся со сценарием, когда нам нужно заполнить форму, созданную в каком-либо инструменте, например, в Adobe Designer, и мы не уверены в именах полей формы. Итак, чтобы заполнить поля формы, сначала нам нужно прочитать имена всех полей PDF-формы. Класс [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form) предоставляет свойство с именем [FieldNames](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/properties/fieldnames), которое возвращает имена всех полей и возвращает null, если PDF не содержит ни одного поля. Однако при использовании этого свойства мы получаем имена всех полей в форме PDF, и мы можем не быть уверены, какое имя соответствует какому полю в форме.
 
-В качестве решения этой проблемы мы будем использовать атрибуты внешнего вида каждого поля. Класс Form имеет функцию с именем [GetFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getfieldfacade), которая возвращает атрибуты, включая расположение, цвет, стиль границы, шрифт, элемент списка и так далее. Чтобы сохранить эти значения, нам нужно использовать класс [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormFieldFacade), который используется для записи визуальных атрибутов полей. Получив эти атрибуты, мы можем добавить текстовое поле под каждым полем, которое будет отображать имя поля.
+В качестве решения этой проблемы мы будем использовать атрибуты внешнего вида каждого поля. Класс Form имеет функцию с именем [GetFieldFacade](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/getfieldfacade), которая возвращает атрибуты, включая расположение, цвет, стиль границы, шрифт, элемент списка и так далее. Чтобы сохранить эти значения, нам нужно использовать класс [FormFieldFacade](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/FormFieldFacade), который используется для записи визуальных атрибутов полей. Получив эти атрибуты, мы можем добавить текстовое поле под каждым полем, которое будет отображать имя поля.
 
 {{% alert color="primary" %}}
 На этом этапе возникает вопрос: «Как мы определим место, куда добавить текстовое поле?»
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-Решением этой проблемы является свойство Box в классе [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormFieldFacade), которое содержит местоположение поля. Нам нужно сохранить эти значения в массиве типа прямоугольника и использовать эти значения для определения позиции, где добавить новые текстовые поля.
+Решением этой проблемы является свойство Box в классе [FormFieldFacade](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/FormFieldFacade), которое содержит местоположение поля. Нам нужно сохранить эти значения в массиве типа прямоугольника и использовать эти значения для определения позиции, где добавить новые текстовые поля.
 
 {{% /alert %}}
 
-В пространстве имён [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) у нас есть класс с именем [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor), который позволяет управлять PDF-формами. Откройте PDF-форму, добавьте текстовое поле под каждое существующее поле формы и сохраните PDF-форму под новым именем.
+В пространстве имён [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) у нас есть класс с именем [FormEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/FormEditor), который позволяет управлять PDF-формами. Откройте PDF-форму, добавьте текстовое поле под каждое существующее поле формы и сохраните PDF-форму под новым именем.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

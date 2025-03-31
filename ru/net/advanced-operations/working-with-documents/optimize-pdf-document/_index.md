@@ -100,9 +100,9 @@ PDF документ иногда может содержать дополнит
 
 Оптимизация, или линейзация для веба, относится к процессу подготовки PDF файла для онлайн-просмотра с использованием веб-браузера. Чтобы оптимизировать файл для веб-дисплея:
 
-1. Откройте входной документ в объекте [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Используйте метод [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
-1. Сохраните оптимизированный документ с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
+1. Откройте входной документ в объекте [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Используйте метод [Optimize](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/optimize).
+1. Сохраните оптимизированный документ с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save).
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
@@ -129,7 +129,7 @@ private static void OptimizeDocument()
 
 ## Уменьшение размера PDF
 
-Метод [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) позволяет уменьшить размер документа, устраняя ненужную информацию. По умолчанию этот метод работает следующим образом:
+Метод [OptimizeResources()](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/optimizeresources) позволяет уменьшить размер документа, устраняя ненужную информацию. По умолчанию этот метод работает следующим образом:
 
 - Ресурсы, которые не используются на страницах документа, удаляются.
 - Равные ресурсы объединяются в один объект.
@@ -158,11 +158,11 @@ private static void ShrinkDocument()
 
 ## Управление стратегией оптимизации
 
-Мы также можем настроить стратегию оптимизации. В настоящее время метод [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) использует 5 техник. Эти техники могут быть применены с помощью метода OptimizeResources() с параметром [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions).
+Мы также можем настроить стратегию оптимизации. В настоящее время метод [OptimizeResources()](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/optimizeresources/methods/1) использует 5 техник. Эти техники могут быть применены с помощью метода OptimizeResources() с параметром [OptimizationOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf.optimization/optimizationoptions).
 
 ### Уменьшение или сжатие всех изображений
 
-У нас есть два способа работы с изображениями: уменьшение качества изображения и/или изменение их разрешения. В любом случае следует применять [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions). В следующем примере мы уменьшаем изображения, снижая [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) до 50.
+У нас есть два способа работы с изображениями: уменьшение качества изображения и/или изменение их разрешения. В любом случае следует применять [ImageCompressionOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf.optimization/imagecompressionoptions). В следующем примере мы уменьшаем изображения, снижая [ImageQuality](https://reference.aspose.com/pdf/ru/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) до 50.
 
 `ImageQuality` работает аналогично качеству JPEG, где значение 0 - это наименьшее, а значение 100 - наибольшее.
 
@@ -230,7 +230,7 @@ private static void ResizeImages()
 }
 ```
 
-Другой важный вопрос - это время выполнения. Но снова мы можем управлять этой настройкой. В настоящее время мы можем использовать два алгоритма - Standard и Fast. Чтобы контролировать время выполнения, мы должны установить свойство [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Следующий фрагмент демонстрирует алгоритм Fast:
+Другой важный вопрос - это время выполнения. Но снова мы можем управлять этой настройкой. В настоящее время мы можем использовать два алгоритма - Standard и Fast. Чтобы контролировать время выполнения, мы должны установить свойство [Version](https://reference.aspose.com/pdf/ru/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Следующий фрагмент демонстрирует алгоритм Fast:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -356,7 +356,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 }
 ```
 
-Кроме того, мы можем использовать настройки [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent). Если это свойство установлено в true, содержимое страницы будет повторно использоваться при оптимизации документа для идентичных страниц.
+Кроме того, мы можем использовать настройки [AllowReusePageContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent). Если это свойство установлено в true, содержимое страницы будет повторно использоваться при оптимизации документа для идентичных страниц.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

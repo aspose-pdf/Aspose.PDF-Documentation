@@ -88,10 +88,10 @@ sitemap:
 
 Чтобы объединить два PDF файла:
 
-1. Создайте два [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) объекта, каждый из которых содержит один из входных PDF файлов.
-1. Затем вызовите метод Add коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) для объекта Document, к которому вы хотите добавить другой PDF файл.
+1. Создайте два [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) объекта, каждый из которых содержит один из входных PDF файлов.
+1. Затем вызовите метод Add коллекции [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection) для объекта Document, к которому вы хотите добавить другой PDF файл.
 1. Передайте коллекцию PageCollection второго объекта Document в метод Add первой коллекции PageCollection.
-1. Наконец, сохраните выходной PDF файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Наконец, сохраните выходной PDF файл с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
 
 Следующий фрагмент кода показывает, как объединить PDF файлы.
 

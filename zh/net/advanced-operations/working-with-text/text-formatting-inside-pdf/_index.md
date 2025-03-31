@@ -82,7 +82,7 @@ sitemap:
 
 ## 如何在 PDF 中添加行缩进
 
-Aspose.PDF for .NET 提供了 [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) 类中的 SubsequentLinesIndent 属性。可以在使用 TextFragment 和段落集合的 PDF 生成场景中指定行缩进。
+Aspose.PDF for .NET 提供了 [TextFormattingOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textformattingoptions) 类中的 SubsequentLinesIndent 属性。可以在使用 TextFragment 和段落集合的 PDF 生成场景中指定行缩进。
 
 请使用以下代码片段来使用该属性：
 
@@ -203,7 +203,7 @@ private static void AddUnderlineText()
 
 ## 如何在添加文本周围添加边框
 
-您可以控制添加文本的外观和感觉。下面的示例展示了如何通过在文本周围绘制矩形来添加边框。了解更多关于 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的信息。
+您可以控制添加文本的外观和感觉。下面的示例展示了如何通过在文本周围绘制矩形来添加边框。了解更多关于 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的信息。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

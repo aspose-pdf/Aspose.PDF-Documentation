@@ -85,8 +85,8 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 Pour supprimer toutes les pièces jointes associées à un fichier PDF :
 
-1. Appelez la méthode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) de la collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection).
-1. Enregistrez le fichier mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Appelez la méthode [Delete](https://reference.aspose.com/pdf/fr/net/aspose.pdf/embeddedfilecollection/methods/delete) de la collection [EmbeddedFiles](https://reference.aspose.com/pdf/fr/net/aspose.pdf/embeddedfilecollection).
+1. Enregistrez le fichier mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 
 Le code suivant montre comment supprimer des pièces jointes d'un document PDF.
 

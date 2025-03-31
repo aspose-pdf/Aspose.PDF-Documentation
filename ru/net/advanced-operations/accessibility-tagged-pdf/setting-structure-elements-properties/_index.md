@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Чтобы установить свойства элементов структуры в помеченном PDF-документе, Aspose.PDF предлагает методы [CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) и [CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent).
+Чтобы установить свойства элементов структуры в помеченном PDF-документе, Aspose.PDF предлагает методы [CreateSectElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) и [CreateHeaderElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent).
 
 Следующий фрагмент кода показывает, как установить свойства элементов структуры помеченного PDF-документа:
 
@@ -168,7 +168,7 @@ private static void SetProperties()
 
 ## Установка текстовых элементов структуры
 
-Чтобы установить текстовые элементы структуры помеченного PDF-документа, Aspose.PDF предлагает класс [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Следующий фрагмент кода показывает, как установить текстовые элементы структуры помеченного PDF-документа:
+Чтобы установить текстовые элементы структуры помеченного PDF-документа, Aspose.PDF предлагает класс [ParagraphElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/paragraphelement). Следующий фрагмент кода показывает, как установить текстовые элементы структуры помеченного PDF-документа:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -241,7 +241,7 @@ private static void SetTextElements()
 
 ## Установка элементов структуры текстового блока
 
-Чтобы установить элементы структуры текстового блока помеченного PDF-документа, Aspose.PDF предлагает классы [HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) и [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Вы можете добавить объекты этих классов в качестве дочерних элементов объекта [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement).
+Чтобы установить элементы структуры текстового блока помеченного PDF-документа, Aspose.PDF предлагает классы [HeaderElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/headerelement) и [ParagraphElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/paragraphelement). Вы можете добавить объекты этих классов в качестве дочерних элементов объекта [StructureElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structureelement).
 Следующий фрагмент кода показывает, как установить элементы структуры текстового блока помеченного PDF-документа:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -349,7 +349,7 @@ private static void SetTextBlockElements()
 
 ## Установка встроенных элементов структуры
 
-Чтобы установить встроенные элементы структуры помеченного PDF-документа, Aspose.PDF предлагает классы [SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) и [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Вы можете добавить объекты этих классов в качестве дочерних элементов объекта [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Следующий фрагмент кода показывает, как установить встроенные элементы структуры помеченного PDF-документа:
+Чтобы установить встроенные элементы структуры помеченного PDF-документа, Aspose.PDF предлагает классы [SpanElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/spanelement) и [ParagraphElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/paragraphelement). Вы можете добавить объекты этих классов в качестве дочерних элементов объекта [StructureElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structureelement). Следующий фрагмент кода показывает, как установить встроенные элементы структуры помеченного PDF-документа:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -588,7 +588,7 @@ private static void SetInlineElements()
 
 ## Установка пользовательского имени тега
 
-Чтобы установить пользовательское имя тега для элементов помеченного PDF-документа, Aspose.PDF предлагает метод [SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) класса StructureElement для элементов. Следующий фрагмент кода показывает, как установить пользовательское имя тега:
+Чтобы установить пользовательское имя тега для элементов помеченного PDF-документа, Aspose.PDF предлагает метод [SetTag](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structureelement/methods/settag) класса StructureElement для элементов. Следующий фрагмент кода показывает, как установить пользовательское имя тега:
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -733,7 +733,7 @@ private static void SetTagName()
 
 **Эта функция поддерживается версией 19.4 или выше.**
 
-Чтобы установить элементы структуры ссылок в помеченном PDF-документе, Aspose.PDF предлагает метод [CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Следующий фрагмент кода показывает, как установить элементы структуры в абзаце с текстом помеченного PDF-документа:
+Чтобы установить элементы структуры ссылок в помеченном PDF-документе, Aspose.PDF предлагает метод [CreateLinkElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent). Следующий фрагмент кода показывает, как установить элементы структуры в абзаце с текстом помеченного PDF-документа:
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1077,7 +1077,7 @@ private static void AddLinkElement()
 
 ## Установка элемента структуры заметки
 
-API Aspose.PDF for .NET также позволяет добавлять [NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement) в помеченный PDF-документ. Следующий фрагмент кода показывает, как добавить элемент заметки в помеченный PDF-документ:
+API Aspose.PDF for .NET также позволяет добавлять [NoteElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/noteelement) в помеченный PDF-документ. Следующий фрагмент кода показывает, как добавить элемент заметки в помеченный PDF-документ:
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

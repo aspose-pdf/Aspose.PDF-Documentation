@@ -155,7 +155,7 @@ private static void AddImageToPDF()
 
 ## Добавить изображение в существующий PDF-файл (Facade)
 
-Существует также альтернативный, более простой способ добавить изображение в PDF-файл. Вы можете использовать метод [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) класса [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend). Метод [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) требует изображение, которое нужно добавить, номер страницы, на которую нужно добавить изображение, и информацию о координатах. После этого сохраните обновленный PDF-файл, используя метод Close. Следующий фрагмент кода показывает, как добавить изображение в существующий PDF-файл.
+Существует также альтернативный, более простой способ добавить изображение в PDF-файл. Вы можете использовать метод [AddImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) класса [PdfFileMend](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend). Метод [AddImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) требует изображение, которое нужно добавить, номер страницы, на которую нужно добавить изображение, и информацию о координатах. После этого сохраните обновленный PDF-файл, используя метод Close. Следующий фрагмент кода показывает, как добавить изображение в существующий PDF-файл.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -324,7 +324,7 @@ private static void ExtractImageTypesFromPDF()
 
 ## Контроль качества изображения
 
-Можно контролировать качество изображения, которое добавляется в PDF-файл. Используйте перегруженный метод [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) в классе [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection).
+Можно контролировать качество изображения, которое добавляется в PDF-файл. Используйте перегруженный метод [Replace](https://reference.aspose.com/pdf/ru/net/aspose.pdf.ximagecollection/replace/methods/1) в классе [XImageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/ximagecollection).
 
 Следующий фрагмент кода демонстрирует, как преобразовать все изображения документа в JPEG с использованием 80% качества для сжатия.
 

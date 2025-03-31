@@ -77,7 +77,7 @@ draft: false
 
 ## تعيين الامتيازات على ملف PDF موجود
 
-لتعيين امتيازات ملف PDF، قم بإنشاء كائن [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) واستدعاء طريقة SetPrivilege. يمكنك تحديد الامتيازات باستخدام كائن DocumentPrivilege ثم تمرير هذا الكائن إلى طريقة SetPrivilege. يوضح مقتطف الكود التالي كيفية تعيين امتيازات ملف PDF.
+لتعيين امتيازات ملف PDF، قم بإنشاء كائن [PdfFileSecurity](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesecurity) واستدعاء طريقة SetPrivilege. يمكنك تحديد الامتيازات باستخدام كائن DocumentPrivilege ثم تمرير هذا الكائن إلى طريقة SetPrivilege. يوضح مقتطف الكود التالي كيفية تعيين امتيازات ملف PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

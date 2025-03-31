@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-مع إصدار Aspose.PDF for .NET 7.0.0، قدمنا فئات تسمى [ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement)، [ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) و [ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection) التي توفر قدرة مشابهة للفئات الموضحة أعلاه للحصول على دقة الصورة وموقعها في مستند PDF.
+مع إصدار Aspose.PDF for .NET 7.0.0، قدمنا فئات تسمى [ImagePlacement](https://reference.aspose.com/pdf/ar/net/aspose.pdf/imageplacement)، [ImagePlacementAbsorber](https://reference.aspose.com/pdf/ar/net/aspose.pdf/imageplacementabsorber) و [ImagePlacementCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/imageplacementcollection) التي توفر قدرة مشابهة للفئات الموضحة أعلاه للحصول على دقة الصورة وموقعها في مستند PDF.
 
 - يقوم ImagePlacementAbsorber بأداء بحث عن استخدام الصورة مثل مجموعة كائنات ImagePlacement.
 - يوفر ImagePlacement الأعضاء Resolution و Rectangle التي تعيد قيم وضع الصورة الفعلية.

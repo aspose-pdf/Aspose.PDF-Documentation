@@ -91,9 +91,9 @@ lastmod: "2021-06-05"
 
 ## 使用文件路径合并 PDF 文件
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 是 [Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 中的类，允许您合并多个 PDF 文件。您不仅可以使用 FileStreams 合并文件，还可以使用 MemoryStreams。在本文中，将解释使用 MemoryStreams 合并文件的过程，并通过代码片段进行演示。
+[PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 是 [Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 中的类，允许您合并多个 PDF 文件。您不仅可以使用 FileStreams 合并文件，还可以使用 MemoryStreams。在本文中，将解释使用 MemoryStreams 合并文件的过程，并通过代码片段进行演示。
 
-[Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法可以用于合并两个 PDF 文件。 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法允许您传递三个参数：第一个输入 PDF、第二个输入 PDF 和输出 PDF。最终输出的 PDF 包含两个输入 PDF 文件。
+[Concatenate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法可以用于合并两个 PDF 文件。 [Concatenate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法允许您传递三个参数：第一个输入 PDF、第二个输入 PDF 和输出 PDF。最终输出的 PDF 包含两个输入 PDF 文件。
 
 以下 C# 代码片段演示了如何使用文件路径合并 PDF 文件。
 
@@ -129,7 +129,7 @@ private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 
 ## 使用 MemoryStreams 合并多个 PDF 文件
 
-[Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类将源 PDF 文件和目标 PDF 文件作为参数。这些参数可以是磁盘上 PDF 文件的路径，也可以是 MemoryStreams。现在，对于这个示例，我们将首先创建两个文件流以从磁盘读取 PDF 文件。然后，我们将这些文件转换为字节数组。这些 PDF 文件的字节数组将转换为 MemoryStreams。一旦我们从 PDF 文件中获取 MemoryStreams，我们就可以将它们传递给合并方法并合并为一个输出文件。
+[Concatenate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类将源 PDF 文件和目标 PDF 文件作为参数。这些参数可以是磁盘上 PDF 文件的路径，也可以是 MemoryStreams。现在，对于这个示例，我们将首先创建两个文件流以从磁盘读取 PDF 文件。然后，我们将这些文件转换为字节数组。这些 PDF 文件的字节数组将转换为 MemoryStreams。一旦我们从 PDF 文件中获取 MemoryStreams，我们就可以将它们传递给合并方法并合并为一个输出文件。
 
 以下 C# 代码片段演示了如何使用 MemoryStreams 合并多个 PDF 文件：
 
@@ -187,7 +187,7 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
 
 ## 使用文件路径合并 PDF 文件数组
 
-如果您想合并多个 PDF 文件，可以使用 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法的重载，允许您传递一个 PDF 文件数组。最终输出将作为一个合并文件保存，该文件由数组中的所有文件创建。以下 C# 代码片段演示了如何使用文件路径合并 PDF 文件数组。
+如果您想合并多个 PDF 文件，可以使用 [Concatenate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法的重载，允许您传递一个 PDF 文件数组。最终输出将作为一个合并文件保存，该文件由数组中的所有文件创建。以下 C# 代码片段演示了如何使用文件路径合并 PDF 文件数组。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
 
 ## 使用流合并 PDF 文件数组
 
-合并 PDF 文件数组不仅限于磁盘上的文件。您还可以从流中合并 PDF 文件数组。如果您想合并多个 PDF 文件，可以使用 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法的适当重载。首先，您需要创建一个输入流数组和一个输出 PDF 的流，然后调用 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法。输出将保存在输出流中。以下 C# 代码片段演示了如何使用流合并 PDF 文件数组。
+合并 PDF 文件数组不仅限于磁盘上的文件。您还可以从流中合并 PDF 文件数组。如果您想合并多个 PDF 文件，可以使用 [Concatenate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法的适当重载。首先，您需要创建一个输入流数组和一个输出 PDF 的流，然后调用 [Concatenate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法。输出将保存在输出流中。以下 C# 代码片段演示了如何使用流合并 PDF 文件数组。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -267,7 +267,7 @@ private static void ConcatenatingAllPdfFilesInParticularFolder()
 
 ## 合并 PDF 表单并保持字段名称唯一
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类在 [Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 中提供了合并 PDF 文件的能力。如果要合并的 PDF 文件具有相似字段名称的表单字段，Aspose.PDF 提供了将结果 PDF 文件中的字段保持唯一的功能，您还可以指定后缀以使字段名称唯一。将 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 的 [KeepFieldsUnique](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) 属性设置为 true 将使字段名称在合并 PDF 表单时保持唯一。此外，PdfFileEditor 的 [UniqueSuffix](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) 属性可用于指定用户定义的后缀格式，该后缀将添加到字段名称以使其在合并表单时保持唯一。该字符串必须包含 `%NUM%` 子字符串，该子字符串将在结果文件中替换为数字。
+[PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类在 [Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 中提供了合并 PDF 文件的能力。如果要合并的 PDF 文件具有相似字段名称的表单字段，Aspose.PDF 提供了将结果 PDF 文件中的字段保持唯一的功能，您还可以指定后缀以使字段名称唯一。将 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 的 [KeepFieldsUnique](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) 属性设置为 true 将使字段名称在合并 PDF 表单时保持唯一。此外，PdfFileEditor 的 [UniqueSuffix](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) 属性可用于指定用户定义的后缀格式，该后缀将添加到字段名称以使其在合并表单时保持唯一。该字符串必须包含 `%NUM%` 子字符串，该子字符串将在结果文件中替换为数字。
 
 请参见以下简单代码片段以实现此功能。
 
@@ -347,7 +347,7 @@ private static void InsertBlankPage()
 
 ### 添加文本印章
 
-为了创建目录，我们需要使用 [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) 和 [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp) 对象在第一页上添加文本印章。Stamp 类提供 `BindLogo(...)` 方法以添加 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)，我们还可以使用 `SetOrigin(..)` 方法指定添加这些文本印章的位置。在本文中，我们正在合并两个 PDF 文件，因此我们需要创建两个指向这些单独文档的文本印章对象。
+为了创建目录，我们需要使用 [PdfFileStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilestamp) 和 [Stamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/stamp) 对象在第一页上添加文本印章。Stamp 类提供 `BindLogo(...)` 方法以添加 [FormattedText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formattedtext)，我们还可以使用 `SetOrigin(..)` 方法指定添加这些文本印章的位置。在本文中，我们正在合并两个 PDF 文件，因此我们需要创建两个指向这些单独文档的文本印章对象。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -368,7 +368,7 @@ private static void AddTextStampForTableOfContents()
 
 ### 创建本地链接
 
-现在我们需要添加指向合并文件内部页面的链接。为了实现此要求，我们可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的 `CreateLocalLink(..)` 方法。在以下代码片段中，我们将透明作为第四个参数传递，以便链接周围的矩形不可见。
+现在我们需要添加指向合并文件内部页面的链接。为了实现此要求，我们可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的 `CreateLocalLink(..)` 方法。在以下代码片段中，我们将透明作为第四个参数传递，以便链接周围的矩形不可见。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -484,7 +484,7 @@ private static void CompleteCode()
 
 ## 合并文件夹中的 PDF 文件
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类在 Aspose.Pdf.Facades 命名空间中为您提供了合并 PDF 文件的能力。您甚至可以在运行时读取特定文件夹中的所有 PDF 文件并将它们合并，而无需知道文件名。只需提供包含您希望合并的 PDF 文档的目录路径。
+[PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类在 Aspose.Pdf.Facades 命名空间中为您提供了合并 PDF 文件的能力。您甚至可以在运行时读取特定文件夹中的所有 PDF 文件并将它们合并，而无需知道文件名。只需提供包含您希望合并的 PDF 文档的目录路径。
 
 请尝试使用以下 C# 代码片段从 Aspose.PDF 实现此功能：
 

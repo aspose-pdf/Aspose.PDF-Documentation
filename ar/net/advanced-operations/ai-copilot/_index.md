@@ -80,7 +80,7 @@ lastmod: "2024-10-23"
 </script>
 
 {{% alert color="primary" %}}
-**واجهة برمجة تطبيقات Aspose.PDF AI Copilot** مصممة للسماح للمستخدمين بمعالجة مستندات PDF باستخدام LLMs من مزودين مختلفين. ستساعد هذه [الواجهة البرمجية](https://reference.aspose.com/pdf/net/aspose.pdf.ai/) المستخدمين في بناء تطبيقات الدردشة ودمج حلول PDF مع LLMs.
+**واجهة برمجة تطبيقات Aspose.PDF AI Copilot** مصممة للسماح للمستخدمين بمعالجة مستندات PDF باستخدام LLMs من مزودين مختلفين. ستساعد هذه [الواجهة البرمجية](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ai/) المستخدمين في بناء تطبيقات الدردشة ودمج حلول PDF مع LLMs.
 {{% /alert %}}
 
 ## الميزات الرئيسية
@@ -93,7 +93,7 @@ lastmod: "2024-10-23"
 
 حاليًا، تتوفر copilots التالية:
 
-[**ملخص OpenAI**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaisummarycopilot/) يسمح للمستخدمين بتوليد ملخصات من المستندات. يوفر وسيلة ملائمة لإنشاء الملخصات من خلال تكوين خيارات مثل النموذج، درجة الحرارة، عدد الرموز، تعليمات النموذج، مرفقات المستندات وغيرها. يمكن لـ copilot توليد الملخصات بشكل غير متزامن كنصوص، مستندات وحفظ الملخصات في تنسيقات مختلفة. يعرض الكود التجريبي المقدم إنشاء عميل OpenAI، تكوين خيارات copilot واستخدام SummaryCopilot لتوليد وحفظ الملخصات.
+[**ملخص OpenAI**](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ai/openaisummarycopilot/) يسمح للمستخدمين بتوليد ملخصات من المستندات. يوفر وسيلة ملائمة لإنشاء الملخصات من خلال تكوين خيارات مثل النموذج، درجة الحرارة، عدد الرموز، تعليمات النموذج، مرفقات المستندات وغيرها. يمكن لـ copilot توليد الملخصات بشكل غير متزامن كنصوص، مستندات وحفظ الملخصات في تنسيقات مختلفة. يعرض الكود التجريبي المقدم إنشاء عميل OpenAI، تكوين خيارات copilot واستخدام SummaryCopilot لتوليد وحفظ الملخصات.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -178,7 +178,7 @@ private static async Task GetSummary()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**دردشة OpenAI**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaichatcopilot/) هي copilot ذكاء اصطناعي مصممة للتفاعل بالدردشة مع المستندات. تسهل توليد الردود على استفسارات المستخدم وإدارة السياق. يمكن للمستخدمين تكوين خيارات copilot، مثل النموذج، درجة الحرارة، عدد الرموز، تعليمات النموذج، مرفقات المستندات وغيرها. يمكن لـ copilot تقديم ردود على استفسارات فردية أو متعددة، حفظ الردود في تنسيقات مختلفة، حفظ وحذف السياق.
+[**دردشة OpenAI**](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ai/openaichatcopilot/) هي copilot ذكاء اصطناعي مصممة للتفاعل بالدردشة مع المستندات. تسهل توليد الردود على استفسارات المستخدم وإدارة السياق. يمكن للمستخدمين تكوين خيارات copilot، مثل النموذج، درجة الحرارة، عدد الرموز، تعليمات النموذج، مرفقات المستندات وغيرها. يمكن لـ copilot تقديم ردود على استفسارات فردية أو متعددة، حفظ الردود في تنسيقات مختلفة، حفظ وحذف السياق.
 
 يعرض الكود المقدم إنشاء عميل OpenAI، تكوين خيارات ChatCopilot واستخدام ChatCopilot للتفاعل مع استفسارات المستخدم وإدارة السياق.
 
@@ -303,7 +303,7 @@ private static async Task ChatWithDocument()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**وصف صورة OpenAI**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaiimagedescriptioncopilot/) هو copilot ذكاء اصطناعي مصمم لتوليد أوصاف الصور للصور داخل مستندات PDF وكذلك ملفات الصور المنفصلة. يمكن للمستخدمين تكوين خيارات copilot، مثل النموذج، درجة الحرارة، عدد الرموز، تعليمات النموذج، مرفقات المستندات وغيرها. يوفر copilot القدرة على الحصول على أوصاف الصور لجميع المستندات المرفقة دفعة واحدة.
+[**وصف صورة OpenAI**](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ai/openaiimagedescriptioncopilot/) هو copilot ذكاء اصطناعي مصمم لتوليد أوصاف الصور للصور داخل مستندات PDF وكذلك ملفات الصور المنفصلة. يمكن للمستخدمين تكوين خيارات copilot، مثل النموذج، درجة الحرارة، عدد الرموز، تعليمات النموذج، مرفقات المستندات وغيرها. يوفر copilot القدرة على الحصول على أوصاف الصور لجميع المستندات المرفقة دفعة واحدة.
 
 يعرض مقتطف الكود المقدم إنشاء عميل OpenAI، تكوين خيارات ImageDescriptionCopilot واستخدام copilot للحصول على أوصاف الصور للمستندات المرفقة. بالإضافة إلى ذلك، هناك طريقة توسيع تسمح بإضافة أوصاف الصور إلى الصور في المستندات المرفقة وحفظ مستندات جديدة في الدليل المقدم.
 
@@ -394,7 +394,7 @@ private static async Task CreateImageDescriptions()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**دردشة Llama**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) يسمح بإنشاء عميل لإرسال طلبات إلى واجهة برمجة تطبيقات إكمال دردشة Llama.
+[**دردشة Llama**](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ai/llamaclient/) يسمح بإنشاء عميل لإرسال طلبات إلى واجهة برمجة تطبيقات إكمال دردشة Llama.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -443,7 +443,7 @@ private static async Task ChatWithLlama()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**ملخص Llama**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) يسمح للعميل بأن يُستخدم لإنشاء Summary Copilot.
+[**ملخص Llama**](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ai/llamaclient/) يسمح للعميل بأن يُستخدم لإنشاء Summary Copilot.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

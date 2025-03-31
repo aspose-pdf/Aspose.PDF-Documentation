@@ -79,7 +79,7 @@ draft: false
 
 ## إضافة مرفق من ملف في PDF موجود
 
-يمكنك إضافة مرفق في ملف PDF موجود باستخدام فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). يمكن إضافة المرفق من ملف على القرص باستخدام مسار الملف. يمكنك إضافة المرفق باستخدام طريقة [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment). تأخذ هذه الطريقة وسيطين: مسار الملف ووصف المرفق. أولاً، تحتاج إلى فتح ملف PDF الموجود وإضافة المرفق إليه. ثم يمكنك حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor).
+يمكنك إضافة مرفق في ملف PDF موجود باستخدام فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor). يمكن إضافة المرفق من ملف على القرص باستخدام مسار الملف. يمكنك إضافة المرفق باستخدام طريقة [AddDocumentAttachment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment). تأخذ هذه الطريقة وسيطين: مسار الملف ووصف المرفق. أولاً، تحتاج إلى فتح ملف PDF الموجود وإضافة المرفق إليه. ثم يمكنك حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index) من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor).
 
 تظهر الشيفرة التالية كيفية إضافة مرفق من ملف. على سبيل المثال، دعنا نضيف ملف MP3.
 
@@ -125,7 +125,7 @@ private static void AddAttachment()
 
 ## إضافة مرفق من دفق في PDF موجود
 
-يمكن إضافة مرفق في ملف PDF من دفق - FileStream - باستخدام طريقة [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment). تأخذ هذه الطريقة ثلاثة وسائط: الدفق، اسم المرفق، ووصف المرفق. لإضافة المرفق، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). بعد ذلك، يمكنك استدعاء طريقة [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) لإضافة المرفق. أخيرًا، يمكنك استدعاء طريقة Save لحفظ ملف PDF المحدث. تظهر الشيفرة التالية كيفية إضافة مرفق من دفق.
+يمكن إضافة مرفق في ملف PDF من دفق - FileStream - باستخدام طريقة [AddDocumentAttachment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment). تأخذ هذه الطريقة ثلاثة وسائط: الدفق، اسم المرفق، ووصف المرفق. لإضافة المرفق، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/facade/methods/bindpdf/index). بعد ذلك، يمكنك استدعاء طريقة [AddDocumentAttachment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) لإضافة المرفق. أخيرًا، يمكنك استدعاء طريقة Save لحفظ ملف PDF المحدث. تظهر الشيفرة التالية كيفية إضافة مرفق من دفق.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -172,7 +172,7 @@ private static void AddAttachment()
 
 ## حذف جميع المرفقات من ملف PDF موجود
 
-تتيح لك طريقة [DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) حذف جميع المرفقات من ملف PDF موجود. استدعِ طريقة [DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments). أخيرًا، يجب عليك استدعاء طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) لحفظ ملف PDF المحدث. تظهر الشيفرة التالية كيفية حذف جميع المرفقات من ملف PDF موجود.
+تتيح لك طريقة [DeleteAttachments](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) حذف جميع المرفقات من ملف PDF موجود. استدعِ طريقة [DeleteAttachments](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments). أخيرًا، يجب عليك استدعاء طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index) لحفظ ملف PDF المحدث. تظهر الشيفرة التالية كيفية حذف جميع المرفقات من ملف PDF موجود.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

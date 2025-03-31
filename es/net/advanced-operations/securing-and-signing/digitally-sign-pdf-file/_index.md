@@ -91,9 +91,9 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 Podemos usar las siguientes clases y métodos para la firma de PDF
 
-- Clase [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature).
-- Enumeración [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions).
-- Propiedad [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) en la clase [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature).
+- Clase [DocMDPSignature](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/docmdpsignature).
+- Enumeración [DocMDPAccessPermissions](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/docmdpaccesspermissions).
+- Propiedad [IsCertified](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) en la clase [PdfFileSignature](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesignature).
 
 Para crear una firma digital basada en certificados PKCS12 (extensiones de archivo .p12, pfx), debes crear una instancia de la clase `PdfFileSignature`, pasando el objeto del documento a ella. A continuación, debes especificar el método de firma digital deseado creando un objeto de una de las clases:
 
@@ -198,7 +198,7 @@ private static void Verify()
 
 Aspose.PDF for .NET admite firmar digitalmente el PDF con un servidor de estampillado de tiempo o servicio web.
 
-Para cumplir con este requisito, se ha agregado la clase [TimestampSettings](https://reference.aspose.com/pdf/net/aspose.pdf/timestampsettings) al espacio de nombres Aspose.PDF. Por favor, echa un vistazo al siguiente fragmento de código que obtiene el estampillado de tiempo y lo agrega al documento PDF:
+Para cumplir con este requisito, se ha agregado la clase [TimestampSettings](https://reference.aspose.com/pdf/es/net/aspose.pdf/timestampsettings) al espacio de nombres Aspose.PDF. Por favor, echa un vistazo al siguiente fragmento de código que obtiene el estampillado de tiempo y lo agrega al documento PDF:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -77,7 +77,7 @@ draft: false
 
 ## Extraire des pages PDF entre deux numéros en utilisant des chemins de fichiers
 
-La méthode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet d'extraire une plage spécifiée de pages d'un fichier PDF. Cette surcharge vous permet d'extraire des pages tout en manipulant les fichiers PDF depuis le disque. Cette surcharge nécessite les paramètres suivants : chemin du fichier d'entrée, page de début, page de fin et chemin du fichier de sortie. Les pages de la page de début à la page de fin seront extraites et la sortie sera enregistrée sur le disque. Le code suivant vous montre comment extraire des pages PDF entre deux numéros en utilisant des chemins de fichiers.
+La méthode [Extract](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet d'extraire une plage spécifiée de pages d'un fichier PDF. Cette surcharge vous permet d'extraire des pages tout en manipulant les fichiers PDF depuis le disque. Cette surcharge nécessite les paramètres suivants : chemin du fichier d'entrée, page de début, page de fin et chemin du fichier de sortie. Les pages de la page de début à la page de fin seront extraites et la sortie sera enregistrée sur le disque. Le code suivant vous montre comment extraire des pages PDF entre deux numéros en utilisant des chemins de fichiers.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -96,7 +96,7 @@ private static void Extract_PDFPages_FilePaths()
 
 ## Extraire un tableau de pages PDF en utilisant des chemins de fichiers
 
-Si vous ne souhaitez pas extraire une plage de pages, mais plutôt un ensemble de pages particulières, la méthode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) vous permet également de le faire. Vous devez d'abord créer un tableau d'entiers avec tous les numéros de pages qui doivent être extraits. Cette surcharge de la méthode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) prend les paramètres suivants : fichier PDF d'entrée, tableau d'entiers des pages à extraire et fichier PDF de sortie. Le code suivant vous montre comment extraire des pages PDF en utilisant des chemins de fichiers.
+Si vous ne souhaitez pas extraire une plage de pages, mais plutôt un ensemble de pages particulières, la méthode [Extract](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) vous permet également de le faire. Vous devez d'abord créer un tableau d'entiers avec tous les numéros de pages qui doivent être extraits. Cette surcharge de la méthode [Extract](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) prend les paramètres suivants : fichier PDF d'entrée, tableau d'entiers des pages à extraire et fichier PDF de sortie. Le code suivant vous montre comment extraire des pages PDF en utilisant des chemins de fichiers.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -122,7 +122,7 @@ private static void Extract_PDFPages_Streams()
 
 ## Extraire des pages PDF entre deux numéros en utilisant des flux
 
-La méthode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet d'extraire une plage de pages en utilisant des flux. Vous devez passer les paramètres suivants à cette surcharge : flux d'entrée, page de début, page de fin et flux de sortie. Les pages spécifiées par la plage entre la page de début et la page de fin seront extraites du flux d'entrée et enregistrées dans le flux de sortie. Le code suivant vous montre comment extraire des pages PDF entre deux numéros en utilisant des flux.
+La méthode [Extract](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet d'extraire une plage de pages en utilisant des flux. Vous devez passer les paramètres suivants à cette surcharge : flux d'entrée, page de début, page de fin et flux de sortie. Les pages spécifiées par la plage entre la page de début et la page de fin seront extraites du flux d'entrée et enregistrées dans le flux de sortie. Le code suivant vous montre comment extraire des pages PDF entre deux numéros en utilisant des flux.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -141,7 +141,7 @@ private static void Extract_ArrayPDFPages_FilePaths()
 
 ## Extraire un tableau de pages PDF en utilisant des flux
 
-Un tableau de pages peut être extrait du flux PDF et enregistré dans le flux de sortie en utilisant la surcharge appropriée de la méthode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index). Si vous ne souhaitez pas extraire une plage de pages, mais plutôt un ensemble de pages particulières, la méthode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) vous permet également de le faire. Vous devez d'abord créer un tableau d'entiers avec tous les numéros de pages qui doivent être extraits. Cette surcharge de la méthode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) prend les paramètres suivants : flux d'entrée, tableau d'entiers des pages à extraire et flux de sortie. Le code suivant vous montre comment extraire des pages PDF en utilisant des flux.
+Un tableau de pages peut être extrait du flux PDF et enregistré dans le flux de sortie en utilisant la surcharge appropriée de la méthode [Extract](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/extract/index). Si vous ne souhaitez pas extraire une plage de pages, mais plutôt un ensemble de pages particulières, la méthode [Extract](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) vous permet également de le faire. Vous devez d'abord créer un tableau d'entiers avec tous les numéros de pages qui doivent être extraits. Cette surcharge de la méthode [Extract](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) prend les paramètres suivants : flux d'entrée, tableau d'entiers des pages à extraire et flux de sortie. Le code suivant vous montre comment extraire des pages PDF en utilisant des flux.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

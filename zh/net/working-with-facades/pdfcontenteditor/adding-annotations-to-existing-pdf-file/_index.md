@@ -79,11 +79,11 @@ sitemap:
 
 ## 在现有PDF文件中添加自由文本注释（facades）
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 允许您在现有PDF文件中添加不同类型的注释。您可以使用相应的方法添加特定的注释。例如，在以下代码片段中，我们使用了 [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 方法添加 [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 类型的注释。
+[PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 允许您在现有PDF文件中添加不同类型的注释。您可以使用相应的方法添加特定的注释。例如，在以下代码片段中，我们使用了 [CreateFreeText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 方法添加 [FreeText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation) 类型的注释。
 
-任何类型的注释都可以以相同的方式添加到PDF文件中。首先，您需要创建一个类型为 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入PDF文件。其次，您必须创建一个矩形对象以指定注释的区域。
+任何类型的注释都可以以相同的方式添加到PDF文件中。首先，您需要创建一个类型为 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入PDF文件。其次，您必须创建一个矩形对象以指定注释的区域。
 
-之后，您可以调用 [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 方法添加 [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 注释，然后使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的PDF文件。
+之后，您可以调用 [CreateFreeText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 方法添加 [FreeText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation) 注释，然后使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的PDF文件。
 
 以下代码片段向您展示如何在PDF文件中添加自由文本注释。
 
@@ -160,7 +160,7 @@ private static void AddFreeTextAnnotation()
 
 ## 在现有PDF文件中添加文本注释（facades）
 
-在这个例子中，您也需要创建一个类型为 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入PDF文件。其次，您必须创建一个矩形对象以指定注释的区域。之后，您可以调用 [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 方法添加自由文本注释，创建注释的标题，以及注释所在的页码。
+在这个例子中，您也需要创建一个类型为 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入PDF文件。其次，您必须创建一个矩形对象以指定注释的区域。之后，您可以调用 [CreateFreeText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 方法添加自由文本注释，创建注释的标题，以及注释所在的页码。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -83,17 +83,17 @@ draft: false
 
 ## Объяснение
 
-Класс [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) отличается от классов [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) и [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Сначала нам нужно понять разницу, а затем мы сможем лучше понять класс PdfPageEditor. Класс PdfFileEditor позволяет вам манипулировать всеми страницами в файле, такими как добавление, удаление или объединение страниц и т. д., в то время как класс PdfContentEditor помогает вам манипулировать содержимым страницы, т.е. текстом и другими объектами и т. д. В то время как класс PdfPageEditor работает только с отдельной страницей, такой как поворот, масштабирование и выравнивание страницы и т. д.
+Класс [PdfPageEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfpageeditor) отличается от классов [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) и [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor). Сначала нам нужно понять разницу, а затем мы сможем лучше понять класс PdfPageEditor. Класс PdfFileEditor позволяет вам манипулировать всеми страницами в файле, такими как добавление, удаление или объединение страниц и т. д., в то время как класс PdfContentEditor помогает вам манипулировать содержимым страницы, т.е. текстом и другими объектами и т. д. В то время как класс PdfPageEditor работает только с отдельной страницей, такой как поворот, масштабирование и выравнивание страницы и т. д.
 
 Мы можем разделить функции, предоставляемые этим классом, на три основные категории: Переход, Выравнивание и Отображение. Мы обсудим эти категории ниже:
 
 ### Переход
 
-Этот класс содержит два свойства, связанные с переходом, т.е. [TransitionType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) и [TransitionDuration](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). TransitionType указывает стиль перехода, который будет использоваться при переходе на эту страницу с другой страницы во время презентации. TransitionDuration указывает продолжительность отображения страниц.
+Этот класс содержит два свойства, связанные с переходом, т.е. [TransitionType](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) и [TransitionDuration](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). TransitionType указывает стиль перехода, который будет использоваться при переходе на эту страницу с другой страницы во время презентации. TransitionDuration указывает продолжительность отображения страниц.
 
 ### Выравнивание
 
-Класс PdfPageEditor поддерживает как горизонтальное, так и вертикальное выравнивание. Он предоставляет два свойства для этой цели, т.е. [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) и [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). Свойство Alignment используется для горизонтального выравнивания содержимого. Свойство Alignment принимает значение AlignmentType, которое содержит три варианта: Центр, Слева и Справа. Свойство VerticalAlignment принимает значение VerticalAlignmentType, которое содержит три варианта: Снизу, По центру и Сверху.
+Класс PdfPageEditor поддерживает как горизонтальное, так и вертикальное выравнивание. Он предоставляет два свойства для этой цели, т.е. [Alignment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) и [VerticalAlignment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). Свойство Alignment используется для горизонтального выравнивания содержимого. Свойство Alignment принимает значение AlignmentType, которое содержит три варианта: Центр, Слева и Справа. Свойство VerticalAlignment принимает значение VerticalAlignmentType, которое содержит три варианта: Снизу, По центру и Сверху.
 
 ### Отображение
 
@@ -164,5 +164,5 @@ private static void EditPdfPages()
 ## Заключение
 
 {{% alert color="primary" %}}
-В этой статье мы более подробно рассмотрели класс [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor). Мы подробно описали свойства и методы, предоставляемые этим классом. Это делает манипуляцию отдельными страницами в классе очень легкой и простой задачей.
+В этой статье мы более подробно рассмотрели класс [PdfPageEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfpageeditor). Мы подробно описали свойства и методы, предоставляемые этим классом. Это делает манипуляцию отдельными страницами в классе очень легкой и простой задачей.
 {{% /alert %}}

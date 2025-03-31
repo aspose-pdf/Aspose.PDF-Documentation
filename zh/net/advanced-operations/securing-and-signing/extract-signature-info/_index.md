@@ -83,9 +83,9 @@ sitemap:
 
 ## 从签名字段提取图像
 
-Aspose.PDF for .NET 支持使用 [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) 类对 PDF 文件进行数字签名的功能，并且在签署文档时，您还可以为 `SignatureAppearance` 设置图像。现在，此 API 还提供提取签名信息以及与签名字段关联的图像的能力。
+Aspose.PDF for .NET 支持使用 [SignatureField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield) 类对 PDF 文件进行数字签名的功能，并且在签署文档时，您还可以为 `SignatureAppearance` 设置图像。现在，此 API 还提供提取签名信息以及与签名字段关联的图像的能力。
 
-为了提取签名信息，我们已向 SignatureField 类引入了 [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) 方法。请查看以下代码片段，演示从 `SignatureField` 对象提取图像的步骤：
+为了提取签名信息，我们已向 SignatureField 类引入了 [ExtractImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield/methods/extractimage) 方法。请查看以下代码片段，演示从 `SignatureField` 对象提取图像的步骤：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,7 +132,7 @@ private static void ExtractImagesFromSignatureField()
 
 Aspose.PDF for .NET 支持使用 SignatureField 类对 PDF 文件进行数字签名的功能。目前，我们还可以确定证书的有效性，但无法提取整个证书。可以提取的信息包括公钥、指纹、颁发者等。
 
-为了提取签名信息，我们已向 [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) 类引入了 [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) 方法。请查看以下代码片段，演示从 SignatureField 对象提取证书的步骤：
+为了提取签名信息，我们已向 [SignatureField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield) 类引入了 [ExtractCertificate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) 方法。请查看以下代码片段，演示从 SignatureField 对象提取证书的步骤：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

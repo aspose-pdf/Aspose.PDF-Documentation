@@ -152,8 +152,8 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 
 <a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong><em>الخطوات:</em> تحويل EPUB إلى PDF في C#</strong></a>
 
-1. إنشاء مثيل من فئة [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions).
-2. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم ملف المصدر والخيارات.
+1. إنشاء مثيل من فئة [EpubLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/epubloadoptions).
+2. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ذكر اسم ملف المصدر والخيارات.
 3. حفظ المستند بالاسم المطلوب.
 
 يظهر مقتطف الكود التالي كيفية تحويل ملفات EPUB إلى تنسيق PDF باستخدام C#.
@@ -176,7 +176,7 @@ private static void ConvertEPUBtoPDF()
 }
 ```
 
-يمكنك أيضًا تعيين حجم الصفحة للتحويل. لتحديد حجم صفحة جديدة، تحتاج إلى كائن `SizeF` وتمريره إلى مُنشئ [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main).
+يمكنك أيضًا تعيين حجم الصفحة للتحويل. لتحديد حجم صفحة جديدة، تحتاج إلى كائن `SizeF` وتمريره إلى مُنشئ [EpubLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/epubloadoptions/constructors/main).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,15 +208,15 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 [![تحويل Aspose.PDF Markdown إلى PDF مع تطبيق مجاني](markdown.png)](https://products.aspose.app/pdf/conversion/md-to-pdf)
 {{% /alert %}}
 
-Aspose.PDF for .NET يوفر الوظيفة لإنشاء مستند PDF بناءً على ملف بيانات [Markdown](https://daringfireball.net/projects/markdown/syntax) المدخل. من أجل تحويل Markdown إلى PDF، تحتاج إلى تهيئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) باستخدام [MdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions).
+Aspose.PDF for .NET يوفر الوظيفة لإنشاء مستند PDF بناءً على ملف بيانات [Markdown](https://daringfireball.net/projects/markdown/syntax) المدخل. من أجل تحويل Markdown إلى PDF، تحتاج إلى تهيئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) باستخدام [MdLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/mdloadoptions).
 
 يظهر مقتطف الكود التالي كيفية استخدام هذه الوظيفة مع مكتبة Aspose.PDF:
 
 <a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>الخطوات:</em> تحويل Markdown إلى PDF في C#</strong></a> |
 <a name="csharp-convert-md-to-pdf" id="csharp-convert-md-to-pdf"><strong><em>الخطوات:</em> تحويل MD إلى PDF في C#</strong></a>
 
-1. إنشاء مثيل من فئة [MdLoadOptions ](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions/) .
-2. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم ملف المصدر والخيارات.
+1. إنشاء مثيل من فئة [MdLoadOptions ](https://reference.aspose.com/pdf/ar/net/aspose.pdf/mdloadoptions/) .
+2. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ذكر اسم ملف المصدر والخيارات.
 3. حفظ المستند بالاسم المطلوب.
 
 ```csharp
@@ -462,14 +462,14 @@ Aspose.PDF لـ .NET يقدم لك تطبيقًا مجانيًا عبر الإن
 
 ### تحويل ملف PCL إلى تنسيق PDF
 
-للسماح بالتحويل من PCL إلى PDF، تحتوي Aspose.PDF على فئة [`PclLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) التي تُستخدم لتهيئة كائن LoadOptions. لاحقًا، يتم تمرير هذا الكائن كوسيط أثناء تهيئة كائن Document ويساعد محرك عرض PDF في تحديد تنسيق الإدخال لمستند المصدر.
+للسماح بالتحويل من PCL إلى PDF، تحتوي Aspose.PDF على فئة [`PclLoadOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pclloadoptions) التي تُستخدم لتهيئة كائن LoadOptions. لاحقًا، يتم تمرير هذا الكائن كوسيط أثناء تهيئة كائن Document ويساعد محرك عرض PDF في تحديد تنسيق الإدخال لمستند المصدر.
 
 يظهر مقتطف الكود التالي عملية تحويل ملف PCL إلى تنسيق PDF.
 
 <a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong><em>الخطوات:</em> تحويل PCL إلى PDF في C#</strong></a>
 
-1. إنشاء مثيل من فئة [PclLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions/) .
-2. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) مع ذكر اسم ملف المصدر والخيارات.
+1. إنشاء مثيل من فئة [PclLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pclloadoptions/) .
+2. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) مع ذكر اسم ملف المصدر والخيارات.
 3. حفظ المستند بالاسم المطلوب.
 
 ```csharp
@@ -548,10 +548,10 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 <a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong><em>الخطوات:</em> تحويل النص العادي إلى PDF في C#</strong></a>
 
 1. استخدم _TextReader_ لقراءة النص بالكامل.
-2. إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) وإضافة صفحة جديدة في مجموعة Pages.
-3. إنشاء كائن جديد من [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment/) وتمرير كائن _TextReader_ إلى مُنشئه.
+2. إنشاء كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) وإضافة صفحة جديدة في مجموعة Pages.
+3. إنشاء كائن جديد من [TextFragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragment/) وتمرير كائن _TextReader_ إلى مُنشئه.
 4. إضافة كائن _TextFragment_ كفقرة في مجموعة _Paragraphs_. إذا كانت كمية النص أكبر من الصفحة، تضيف خوارزمية المكتبة صفحات إضافية تلقائيًا.
-5. استخدم طريقة **Save** من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) .
+5. استخدم طريقة **Save** من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) .
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -589,8 +589,8 @@ private static void ConvertPlainTextFileToPDF()
 <a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong><em>الخطوات:</em> تحويل TXT المُنسق مسبقًا إلى PDF في C#</strong></a>
 
 1. قراءة النص بالكامل كمصفوفة من السلاسل.
-2. إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) وإضافة صفحة جديدة في مجموعة [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/pages/) .
-3. تشغيل حلقة عبر مصفوفة السلاسل وإضافة كل سلسلة كفقرة في مجموعة [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/paragraphs/) .
+2. إنشاء كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) وإضافة صفحة جديدة في مجموعة [Pages](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/pages/) .
+3. تشغيل حلقة عبر مصفوفة السلاسل وإضافة كل سلسلة كفقرة في مجموعة [Paragraphs](https://reference.aspose.com/pdf/ar/net/aspose.pdf/paragraphs/) .
 
 في هذه الحالة، تضيف خوارزمية المكتبة أيضًا صفحات إضافية، ولكن يمكننا التحكم في هذه العملية بأنفسنا.
 يظهر المثال التالي كيفية تحويل ملف نص مُنسق مسبقًا إلى مستند PDF بحجم صفحة A4.
@@ -653,7 +653,7 @@ private static void ConvertPreFormattedTextToPdf()
 
 {{% /alert %}}
 
-لتحويل XPS إلى PDF باستخدام Aspose.PDF for .NET، قدمنا فئة تُسمى [XpsLoadOption](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions) التي تُستخدم لتهيئة كائن [LoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) . لاحقًا، يتم تمرير هذا الكائن كوسيط أثناء تهيئة كائن Document ويساعد محرك عرض PDF في تحديد تنسيق الإدخال لمستند المصدر.
+لتحويل XPS إلى PDF باستخدام Aspose.PDF for .NET، قدمنا فئة تُسمى [XpsLoadOption](https://reference.aspose.com/pdf/ar/net/aspose.pdf/xpsloadoptions) التي تُستخدم لتهيئة كائن [LoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/loadoptions) . لاحقًا، يتم تمرير هذا الكائن كوسيط أثناء تهيئة كائن Document ويساعد محرك عرض PDF في تحديد تنسيق الإدخال لمستند المصدر.
 
 {{% alert color="primary" %}}
 
@@ -665,8 +665,8 @@ private static void ConvertPreFormattedTextToPdf()
 
 <a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong><em>الخطوات:</em> تحويل XPS إلى PDF في C#</strong></a>
 
-1. إنشاء مثيل من فئة [XpsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions/) .
-2. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) مع ذكر اسم ملف المصدر والخيارات.
+1. إنشاء مثيل من فئة [XpsLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/xpsloadoptions/) .
+2. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) مع ذكر اسم ملف المصدر والخيارات.
 3. حفظ المستند بتنسيق PDF بالاسم المطلوب.
 
 ```csharp
@@ -699,7 +699,7 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 
 **Aspose.PDF for .NET** تدعم ميزات تحويل ملفات PostScript إلى تنسيق PDF. واحدة من الميزات من Aspose.PDF هي أنه يمكنك تعيين مجموعة من مجلدات الخطوط التي سيتم استخدامها أثناء التحويل.
 
-لتحويل ملف PostScript إلى تنسيق PDF، تقدم Aspose.PDF for .NET فئة [PsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/psloadoptions) التي تُستخدم لتهيئة كائن LoadOptions. لاحقًا، يمكن تمرير هذا الكائن كوسيط إلى مُنشئ كائن Document، مما سيساعد محرك عرض PDF في تحديد تنسيق مستند المصدر.
+لتحويل ملف PostScript إلى تنسيق PDF، تقدم Aspose.PDF for .NET فئة [PsLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/psloadoptions) التي تُستخدم لتهيئة كائن LoadOptions. لاحقًا، يمكن تمرير هذا الكائن كوسيط إلى مُنشئ كائن Document، مما سيساعد محرك عرض PDF في تحديد تنسيق مستند المصدر.
 
 يمكن استخدام مقتطف الكود التالي لتحويل ملف PostScript إلى تنسيق PDF باستخدام Aspose.PDF for .NET:
 
@@ -763,7 +763,7 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 
 ## تحويل XSL-FO إلى PDF
 
-يمكن تنفيذ تحويل ملفات XSL-FO إلى PDF باستخدام التقنية التقليدية من Aspose.PDF - إنشاء كائن [Document](https://reference.aspose.com/page/net/aspose.page/document) مع [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). ولكن في بعض الأحيان يمكنك مواجهة هيكل ملف غير صحيح. في هذه الحالة، يسمح محول XSL-FO بتعيين استراتيجية معالجة الأخطاء. يمكنك اختيار `ThrowExceptionImmediately`، `TryIgnore` أو `InvokeCustomHandler`.
+يمكن تنفيذ تحويل ملفات XSL-FO إلى PDF باستخدام التقنية التقليدية من Aspose.PDF - إنشاء كائن [Document](https://reference.aspose.com/page/net/aspose.page/document) مع [XslFoLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/xslfoloadoptions). ولكن في بعض الأحيان يمكنك مواجهة هيكل ملف غير صحيح. في هذه الحالة، يسمح محول XSL-FO بتعيين استراتيجية معالجة الأخطاء. يمكنك اختيار `ThrowExceptionImmediately`، `TryIgnore` أو `InvokeCustomHandler`.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -797,7 +797,7 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 [![تحويل Aspose.PDF LaTeX/TeX إلى PDF مع تطبيق مجاني](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
 {{% /alert %}}
 
-Aspose.PDF for .NET تدعم ميزة تحويل ملفات TeX إلى تنسيق PDF ومن أجل تحقيق هذا المتطلب، تحتوي مساحة أسماء Aspose.Pdf على فئة تُسمى [LatexLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexloadoptions) التي توفر القدرات لتحميل ملفات LaTex وعرض المخرجات بتنسيق PDF باستخدام [فئة Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Aspose.PDF for .NET تدعم ميزة تحويل ملفات TeX إلى تنسيق PDF ومن أجل تحقيق هذا المتطلب، تحتوي مساحة أسماء Aspose.Pdf على فئة تُسمى [LatexLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/latexloadoptions) التي توفر القدرات لتحميل ملفات LaTex وعرض المخرجات بتنسيق PDF باستخدام [فئة Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
 يظهر مقتطف الكود التالي عملية تحويل ملف LaTex إلى تنسيق PDF باستخدام C#.
 
 ```csharp
@@ -821,7 +821,7 @@ private static void ConvertTeXtoPDF()
 
 يشير تنسيق OFD إلى "مستند ثابت مفتوح"، الذي تم تأسيسه كمعيار وطني للصين لتخزين الملفات الإلكترونية، ويستخدم كبديل للتنسيق الشائع PDF. يدعم مستندات بتنسيق ثابت، مما يضمن عرضًا متسقًا عبر منصات مختلفة. تُستخدم ملفات OFD لأغراض متنوعة، بما في ذلك المستندات الرقمية وتطبيقات الأعمال.
 
-Aspose.PDF for .NET تدعم ميزة تحويل ملفات OFD إلى تنسيق PDF ومن أجل تحقيق هذا المتطلب، تحتوي مساحة أسماء Aspose.Pdf على فئة تُسمى [OfdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/ofdloadoptions/) التي توفر القدرات لتحميل ملفات OFD وعرض المخرجات بتنسيق PDF باستخدام [فئة Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Aspose.PDF for .NET تدعم ميزة تحويل ملفات OFD إلى تنسيق PDF ومن أجل تحقيق هذا المتطلب، تحتوي مساحة أسماء Aspose.Pdf على فئة تُسمى [OfdLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/ofdloadoptions/) التي توفر القدرات لتحميل ملفات OFD وعرض المخرجات بتنسيق PDF باستخدام [فئة Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
 
 يظهر مقتطف الكود التالي عملية تحويل ملف OFD إلى تنسيق PDF باستخدام C#. 
 

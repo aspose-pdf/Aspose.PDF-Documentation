@@ -82,7 +82,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Rechercher et Obtenir du Texte de Toutes les Pages d'un Document PDF
 
-La classe [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) vous permet de trouver du texte correspondant à une phrase particulière, sur toutes les pages d'un document PDF. Pour rechercher du texte dans l'ensemble du document, vous devez appeler la méthode Accept de la collection Pages. La méthode [Accept](https://reference.aspose.com/pdf/net/aspose.pdf.page/accept/methods/3) prend un objet TextFragmentAbsorber comme paramètre, qui retourne une collection d'objets TextFragment. Vous pouvez parcourir tous les fragments et obtenir leurs propriétés comme Text, Position (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor, etc.
+La classe [TextFragmentAbsorber](https://reference.aspose.com/pdf/fr/net/aspose.pdf.text/textfragmentabsorber) vous permet de trouver du texte correspondant à une phrase particulière, sur toutes les pages d'un document PDF. Pour rechercher du texte dans l'ensemble du document, vous devez appeler la méthode Accept de la collection Pages. La méthode [Accept](https://reference.aspose.com/pdf/fr/net/aspose.pdf.page/accept/methods/3) prend un objet TextFragmentAbsorber comme paramètre, qui retourne une collection d'objets TextFragment. Vous pouvez parcourir tous les fragments et obtenir leurs propriétés comme Text, Position (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor, etc.
 
 Le code suivant vous montre comment rechercher du texte sur toutes les pages.
 

@@ -83,13 +83,13 @@ sitemap:
 
 ## إضافة إشارة مرجعية إلى مستند PDF
 
-تحتفظ إشارات مرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) الخاصة بكائن Document، والتي توجد في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) .
+تحتفظ إشارات مرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlineitemcollection) الخاصة بكائن Document، والتي توجد في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection) .
 
 لإضافة إشارة مرجعية إلى PDF:
 
-1. افتح مستند PDF باستخدام كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+1. افتح مستند PDF باستخدام كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
 1. أنشئ إشارة مرجعية وحدد خصائصها.
-1. أضف مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) إلى مجموعة Outlines.
+1. أضف مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlineitemcollection) إلى مجموعة Outlines.
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة إشارة مرجعية في مستند PDF.
 
@@ -161,8 +161,8 @@ private static void AddBookmark()
 لإضافة إشارة مرجعية فرعية إلى ملف PDF، أضف أولاً إشارة مرجعية رئيسية:
 
 1. افتح مستندًا.
-1. أضف إشارة مرجعية إلى [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) ، مع تحديد خصائصها.
-1. أضف OutlineItemCollection إلى مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) الخاصة بكائن Document.
+1. أضف إشارة مرجعية إلى [OutlineItemCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlineitemcollection) ، مع تحديد خصائصها.
+1. أضف OutlineItemCollection إلى مجموعة [OutlineCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection) الخاصة بكائن Document.
 
 تُنشأ الإشارة المرجعية الفرعية تمامًا مثل الإشارة المرجعية الرئيسية، كما هو موضح أعلاه، ولكن يتم إضافتها إلى مجموعة Outlines الخاصة بالإشارة المرجعية الرئيسية.
 
@@ -243,12 +243,12 @@ private static void AddChildBookmark()
 
 ## حذف جميع الإشارات المرجعية من مستند PDF
 
-تحتفظ جميع الإشارات المرجعية في PDF في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) . يشرح هذا المقال كيفية حذف جميع الإشارات المرجعية من ملف PDF.
+تحتفظ جميع الإشارات المرجعية في PDF في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection) . يشرح هذا المقال كيفية حذف جميع الإشارات المرجعية من ملف PDF.
 
 لحذف جميع الإشارات المرجعية من ملف PDF:
 
-1. استدعِ طريقة Delete الخاصة بمجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) .
-1. احفظ الملف المعدل باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) الخاصة بكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+1. استدعِ طريقة Delete الخاصة بمجموعة [OutlineCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection) .
+1. احفظ الملف المعدل باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4) الخاصة بكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
 
 تظهر مقتطفات الشيفرة التالية كيفية حذف جميع الإشارات المرجعية من مستند PDF.
 
@@ -299,10 +299,10 @@ private static void DeleteBookmarks()
 
 لحذف إشارة مرجعية معينة من ملف PDF:
 
-1. مرر عنوان الإشارة المرجعية كمعامل إلى طريقة Delete الخاصة بمجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) .
+1. مرر عنوان الإشارة المرجعية كمعامل إلى طريقة Delete الخاصة بمجموعة [OutlineCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection) .
 1. ثم احفظ الملف المحدث باستخدام طريقة Save الخاصة بكائن Document.
 
-توفر فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) . تقوم طريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) بإزالة أي إشارة مرجعية بعنوان تم تمريره إلى الطريقة.
+توفر فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مجموعة [OutlineCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection) . تقوم طريقة [Delete](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection/methods/delete) بإزالة أي إشارة مرجعية بعنوان تم تمريره إلى الطريقة.
 
 تظهر مقتطفات الشيفرة التالية كيفية حذف إشارة مرجعية معينة من مستند PDF.
 

@@ -155,7 +155,7 @@ _التنسيق_: **DJVU**
 
 <a name="csharp-bmp-to-pdf" id="csharp-bmp-to-pdf"><strong>الخطوات: تحويل BMP إلى PDF في C#</strong></a>
 
-1. قم بتهيئة كائن جديد من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. قم بتهيئة كائن جديد من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
 2. قم بتحميل صورة **BMP** المدخلة.
 3. أخيرًا، احفظ ملف PDF الناتج.
 
@@ -201,8 +201,8 @@ private static void ConvertBMPtoPDF()
 
 <a name="csharp-cgm-to-pdf" id="csharp-cgm-to-pdf"><strong>الخطوات: تحويل CGM إلى PDF في C#</strong></a>
 
-1. أنشئ مثيلًا من فئة [CgmLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions).
-2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
+1. أنشئ مثيلًا من فئة [CgmLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cgmloadoptions).
+2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
 3. احفظ المستند بالاسم المطلوب.
 
 ```csharp
@@ -233,7 +233,7 @@ private static void ConvertCGMtoPDF()
 
 1. أنشئ كائنًا من فئة Image.
 2. أضف الصورة إلى مجموعة الفقرات في الصفحة.
-3. حدد خاصية [FileType](https://reference.aspose.com/pdf/net/aspose.pdf/image/properties/filetype).
+3. حدد خاصية [FileType](https://reference.aspose.com/pdf/ar/net/aspose.pdf/image/properties/filetype).
 4. حدد مسار الملف أو المصدر.
     - إذا كانت الصورة في موقع على القرص الصلب، حدد موقع المسار باستخدام خاصية Image.File.
     - إذا كانت الصورة موجودة في MemoryStream، مرر الكائن الذي يحمل الصورة إلى خاصية Image.ImageStream.
@@ -280,7 +280,7 @@ private static void ConvertDICOMtoPDF()
 
 <a name="csharp-emf-to-pdf" id="csharp-emf-to-pdf"><strong>الخطوات: تحويل EMF إلى PDF في C#</strong></a>
 
-1. أولاً، قم بتهيئة كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. أولاً، قم بتهيئة كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
 2. قم بتحميل ملف صورة **EMF**.
 3. أضف صورة EMF المحملة إلى صفحة.
 4. احفظ مستند PDF.
@@ -336,7 +336,7 @@ private static void ConvertEMFtoPDF()
 
 <a name="csharp-gif-to-pdf" id="csharp-gif-to-pdf"><strong>الخطوات: تحويل GIF إلى PDF في C#</strong></a>
 
-1. قم بتهيئة كائن جديد من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. قم بتهيئة كائن جديد من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
 2. قم بتحميل صورة **GIF** المدخلة.
 3. أخيرًا، احفظ ملف PDF الناتج.
 
@@ -536,12 +536,12 @@ private static void ConvertPNGtoPDF()
 [![تحويل Aspose.PDF SVG إلى PDF باستخدام التطبيق المجاني](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
-لتحويل ملفات SVG إلى PDF، استخدم الفئة المسماة [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) التي تُستخدم لتهيئة كائن [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions). لاحقًا، يتم تمرير هذا الكائن كوسيط أثناء تهيئة كائن Document ويساعد محرك عرض PDF في تحديد تنسيق الإدخال للمستند المصدر.
+لتحويل ملفات SVG إلى PDF، استخدم الفئة المسماة [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) التي تُستخدم لتهيئة كائن [`LoadOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/loadoptions). لاحقًا، يتم تمرير هذا الكائن كوسيط أثناء تهيئة كائن Document ويساعد محرك عرض PDF في تحديد تنسيق الإدخال للمستند المصدر.
 
 <a name="csharp-svg-to-pdf" id="csharp-svg-to-pdf"><strong>الخطوات: تحويل SVG إلى PDF في C#</strong></a>
 
-1. أنشئ مثيلًا من فئة [`SvgLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions).
-2. أنشئ مثيلًا من فئة [`Document`](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
+1. أنشئ مثيلًا من فئة [`SvgLoadOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/loadoptions).
+2. أنشئ مثيلًا من فئة [`Document`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
 3. احفظ المستند بالاسم المطلوب.
 
 يظهر مقتطف الشيفرة التالي عملية تحويل ملف SVG إلى تنسيق PDF باستخدام Aspose.PDF for .NET.
@@ -788,7 +788,7 @@ private static void ConvertSVGtoPDF()
 
 <a name="csharp-tiff-to-pdf" id="csharp-tiff-to-pdf"><strong>الخطوات: تحويل TIFF إلى PDF في C#</strong></a>
 
-1. أنشئ كائن جديد من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وأضف صفحة.
+1. أنشئ كائن جديد من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) وأضف صفحة.
 2. قم بتحميل صورة **TIFF** المدخلة.
 3. احفظ مستند PDF.
 
@@ -877,8 +877,8 @@ private static void ConvertTIFFtoPDF()
 
 <a name="csharp-cdr-to-pdf" id="csharp-cdr-to-pdf"><strong>الخطوات: تحويل CDR إلى PDF في C#</strong></a>
 
-1. أنشئ مثيلًا من فئة [CdrLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cdrloadoptions/) .
-2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
+1. أنشئ مثيلًا من فئة [CdrLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cdrloadoptions/) .
+2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
 3. احفظ المستند بالاسم المطلوب.
 
 ```csharp
@@ -905,8 +905,8 @@ private static void ConvertCDRtoPDF()
 
 <a name="csharp-djvu-to-pdf" id="csharp-djvu-to-pdf"><strong>الخطوات: تحويل DJVU إلى PDF في C#</strong></a>
 
-1. أنشئ مثيلًا من فئة [DjvuLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/djvuloadoptions/) .
-2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
+1. أنشئ مثيلًا من فئة [DjvuLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/djvuloadoptions/) .
+2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
 3. احفظ المستند بالاسم المطلوب.
 
 ```csharp

@@ -87,10 +87,10 @@ sitemap:
 
 Шаги, с помощью которых мы создаем аннотацию курсора:
 
-1. Загрузите PDF-файл - новый [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Создайте новую [аннотацию курсора](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) и установите параметры курсора (новый Rectangle, title, Subject, Flags, color, width, StartingStyle и EndingStyle). Эта аннотация используется для указания вставки текста.
-1. Создайте новую [аннотацию курсора](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) и установите параметры курсора (новый Rectangle, title, Subject, Flags, color, width, StartingStyle и EndingStyle). Эта аннотация используется для указания замены текста.
-1. Создайте новую [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) и установите параметры (новый Rectangle, title, color, новые QuadPoints и новые points, Subject, InReplyTo, ReplyType).
+1. Загрузите PDF-файл - новый [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Создайте новую [аннотацию курсора](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/caretannotation) и установите параметры курсора (новый Rectangle, title, Subject, Flags, color, width, StartingStyle и EndingStyle). Эта аннотация используется для указания вставки текста.
+1. Создайте новую [аннотацию курсора](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/caretannotation) и установите параметры курсора (новый Rectangle, title, Subject, Flags, color, width, StartingStyle и EndingStyle). Эта аннотация используется для указания замены текста.
+1. Создайте новую [StrikeOutAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/strikeoutannotation) и установите параметры (новый Rectangle, title, color, новые QuadPoints и новые points, Subject, InReplyTo, ReplyType).
 1. После этого мы можем добавить аннотации на страницу.
 
 Следующий фрагмент кода показывает, как добавить аннотацию курсора в PDF-файл:
@@ -249,7 +249,7 @@ private static void RedactPage()
 
 ### Подход фасадов
 
-Пространство имен Aspose.Pdf.Facades также имеет класс под названием [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor), который предоставляет возможность манипулировать существующими аннотациями внутри PDF-файла. Этот класс содержит метод под названием [RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea), который предоставляет возможность удалять определенные области страницы.
+Пространство имен Aspose.Pdf.Facades также имеет класс под названием [PdfAnnotationEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfannotationeditor), который предоставляет возможность манипулировать существующими аннотациями внутри PDF-файла. Этот класс содержит метод под названием [RedactArea(..)](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea), который предоставляет возможность удалять определенные области страницы.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

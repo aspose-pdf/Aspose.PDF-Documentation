@@ -75,11 +75,11 @@ draft: false
 }
 </script>
 
-Como diseño predeterminado, los contenidos dentro de los archivos PDF se añaden en un diseño de arriba a la izquierda a abajo a la derecha. Una vez que los contenidos superan el margen inferior de la página, ocurre el salto de página. Sin embargo, puede que te encuentres con la necesidad de insertar un salto de página dependiendo del requerimiento. Se ha añadido un método llamado AddPageBreak(...) en la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) para cumplir con este requisito.
+Como diseño predeterminado, los contenidos dentro de los archivos PDF se añaden en un diseño de arriba a la izquierda a abajo a la derecha. Una vez que los contenidos superan el margen inferior de la página, ocurre el salto de página. Sin embargo, puede que te encuentres con la necesidad de insertar un salto de página dependiendo del requerimiento. Se ha añadido un método llamado AddPageBreak(...) en la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) para cumplir con este requisito.
 
-1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
-1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
-1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
+1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
+1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
+1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
 
 - src es el documento de origen/ruta al documento/flujo con el documento de origen.
 - dest es el documento de destino/ruta donde se guardará el documento/flujo donde se guardará el documento.

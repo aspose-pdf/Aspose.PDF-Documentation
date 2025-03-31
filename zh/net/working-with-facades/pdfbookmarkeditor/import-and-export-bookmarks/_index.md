@@ -77,7 +77,7 @@ draft: false
 
 ## 从 XML 导入书签到现有 PDF 文件
 
-[ImportBookmarksWithXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) 方法允许您从 XML 文件将书签导入 PDF 文件。为了导入书签，您需要创建 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 对象并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 方法绑定 PDF 文件。之后，您需要调用 [ImportBookmarksWithXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) 方法。最后，使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段向您展示如何从 XML 文件导入书签。
+[ImportBookmarksWithXml](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) 方法允许您从 XML 文件将书签导入 PDF 文件。为了导入书签，您需要创建 [PdfBookmarkEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor) 对象并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/facade/methods/bindpdf/index) 方法绑定 PDF 文件。之后，您需要调用 [ImportBookmarksWithXml](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) 方法。最后，使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段向您展示如何从 XML 文件导入书签。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

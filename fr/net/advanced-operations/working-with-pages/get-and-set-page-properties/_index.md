@@ -83,8 +83,8 @@ Lorsque vous travaillez avec des documents, vous souhaitez souvent savoir combie
 
 Pour obtenir le nombre de pages dans un fichier PDF :
 
-1. Ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Ensuite, utilisez la propriété Count de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) (de l'objet Document) pour obtenir le nombre total de pages dans le document.
+1. Ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Ensuite, utilisez la propriété Count de la collection [PageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection) (de l'objet Document) pour obtenir le nombre total de pages dans le document.
 
 Le code suivant montre comment obtenir le nombre de pages d'un fichier PDF.
 
@@ -106,7 +106,7 @@ private static void GetNumberOfPagesInAPdfFile()
 
 ### Obtenir le nombre de pages sans enregistrer le document
 
-Parfois, nous générons les fichiers PDF à la volée et lors de la création du fichier PDF, nous pouvons rencontrer le besoin (création de table des matières, etc.) d'obtenir le nombre de pages du fichier PDF sans enregistrer le fichier sur le système ou le flux. Afin de répondre à ce besoin, une méthode [ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs) a été introduite dans la classe Document. Veuillez consulter le code suivant qui montre les étapes pour obtenir le nombre de pages sans enregistrer le document.
+Parfois, nous générons les fichiers PDF à la volée et lors de la création du fichier PDF, nous pouvons rencontrer le besoin (création de table des matières, etc.) d'obtenir le nombre de pages du fichier PDF sans enregistrer le fichier sur le système ou le flux. Afin de répondre à ce besoin, une méthode [ProcessParagraphs](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/processparagraphs) a été introduite dans la classe Document. Veuillez consulter le code suivant qui montre les étapes pour obtenir le nombre de pages sans enregistrer le document.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ Pour plus de détails, veuillez visiter [cette page](http://www.enfocus.com/manu
 
 ### **Accéder aux propriétés de page**
 
-La classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) fournit toutes les propriétés liées à une page PDF particulière. Toutes les pages des fichiers PDF sont contenues dans la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+La classe [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) fournit toutes les propriétés liées à une page PDF particulière. Toutes les pages des fichiers PDF sont contenues dans la collection [PageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 
 À partir de là, il est possible d'accéder soit à des objets Page individuels en utilisant leur index, soit de parcourir la collection, en utilisant une boucle foreach, pour obtenir toutes les pages. Une fois qu'une page individuelle est accessible, nous pouvons obtenir ses propriétés. Le code suivant montre comment obtenir les propriétés de page.
 
@@ -190,12 +190,12 @@ private static void AccessingPageProperties()
 
 Aspose.PDF vous permet de [diviser un PDF en pages individuelles](/pdf/fr/net/split-pdf-document/) et de les enregistrer en tant que fichiers PDF. Obtenir une page spécifiée dans un fichier PDF et l'enregistrer en tant que nouveau PDF est une opération très similaire : ouvrez le document source, accédez à la page, créez un nouveau document et ajoutez la page à celui-ci.
 
-La collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) contient les pages du fichier PDF. Pour obtenir une page particulière de cette collection :
+La collection [PageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) contient les pages du fichier PDF. Pour obtenir une page particulière de cette collection :
 
 1. Spécifiez l'index de la page en utilisant la propriété Pages.
-1. Créez un nouvel objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Ajoutez l'objet [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) au nouvel objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Enregistrez la sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Créez un nouvel objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Ajoutez l'objet [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) au nouvel objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Enregistrez la sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4).
 
 Le code suivant montre comment obtenir une page particulière d'un fichier PDF et l'enregistrer en tant que nouveau fichier.
 
@@ -224,9 +224,9 @@ private static void GetAParticularPageOfThePdfFile()
 
 ## Déterminer la couleur de la page
 
-La classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) fournit les propriétés liées à une page particulière dans un document PDF, y compris le type de couleur - RGB, noir et blanc, niveaux de gris ou indéfini - utilisé par la page.
+La classe [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) fournit les propriétés liées à une page particulière dans un document PDF, y compris le type de couleur - RGB, noir et blanc, niveaux de gris ou indéfini - utilisé par la page.
 
-Toutes les pages des fichiers PDF sont contenues dans la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection). La propriété ColorType spécifie la couleur des éléments sur la page. Pour obtenir ou déterminer les informations de couleur pour une page PDF particulière, utilisez la propriété [ColorType](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/colortype) de l'objet [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+Toutes les pages des fichiers PDF sont contenues dans la collection [PageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection). La propriété ColorType spécifie la couleur des éléments sur la page. Pour obtenir ou déterminer les informations de couleur pour une page PDF particulière, utilisez la propriété [ColorType](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page/properties/colortype) de l'objet [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page).
 
 Le code suivant montre comment parcourir chaque page d'un fichier PDF pour obtenir des informations de couleur.
 

@@ -93,7 +93,7 @@ lastmod: "2025-01-31"
 **其他显著增强**
 
 * 在[PDF优化](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images)中增强了无质量损失的图像压缩。压缩文档大小减少。
-* 文档[修复](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/)方法改进。现在可以检查并修复Annotation.Rect数组中的值。
+* 文档[修复](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/repair/)方法改进。现在可以检查并修复Annotation.Rect数组中的值。
 * 更新了System.Text.Json依赖项版本，以避免可能的漏洞CVE-2024-43485。
 * 改进了PDF签名攻击检测，以防止获得误报结果。
 * 提供了用于编辑资源字典的公共API：
@@ -2581,7 +2581,7 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 
 ### 基于XML和XLS的PDF创建，带参数
 
-要添加XSL参数，我们需要创建自己的[XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)，并将其设置为[XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions)中的属性。以下代码片段展示了如何使用此类与上述示例文件。
+要添加XSL参数，我们需要创建自己的[XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)，并将其设置为[XslFoLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/xslfoloadoptions)中的属性。以下代码片段展示了如何使用此类与上述示例文件。
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()

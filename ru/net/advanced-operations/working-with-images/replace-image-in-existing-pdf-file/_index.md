@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Метод [Replace](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) коллекции Images позволяет заменить изображение в существующем PDF-файле.
+Метод [Replace](https://reference.aspose.com/pdf/ru/net/aspose.pdf/ximagecollection/methods/replace/index) коллекции Images позволяет заменить изображение в существующем PDF-файле.
 
 Коллекция Images может быть найдена в коллекции ресурсов страницы. Чтобы заменить изображение:
 

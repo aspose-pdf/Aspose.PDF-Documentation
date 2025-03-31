@@ -109,8 +109,8 @@ _格式_: **网页**
 
 <a name="csharp-html-to-pdf"><strong>步骤：在 C# 中将 HTML 转换为 PDF</strong></a>
 
-1. 创建 [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/) 类的实例。
-2. 初始化 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 对象。
+1. 创建 [HtmlLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlloadoptions/) 类的实例。
+2. 初始化 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/) 对象。
 3. 通过调用 **Document.Save()** 方法保存输出 PDF 文档。
 
 ```csharp
@@ -146,7 +146,7 @@ HTML 转换引擎有几个选项，允许我们控制转换过程。
 
 ### 媒体查询支持
 
-媒体查询是一种流行的技术，用于向不同设备提供定制的样式表。我们可以使用 [`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype) 属性设置设备类型。
+媒体查询是一种流行的技术，用于向不同设备提供定制的样式表。我们可以使用 [`HtmlMediaType`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype) 属性设置设备类型。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void ConvertHTMLtoPDFAdvancedMediaType()
 
 ### 启用（禁用）字体嵌入
 
-HTML 页面通常使用字体（例如来自本地文件夹的字体、Google Fonts 等）。我们还可以使用 [`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts) 属性控制文档中字体的嵌入。
+HTML 页面通常使用字体（例如来自本地文件夹的字体、Google Fonts 等）。我们还可以使用 [`IsEmbedFonts`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlloadoptions/properties/isembedfonts) 属性控制文档中字体的嵌入。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -201,9 +201,9 @@ HTML 页面通常使用字体（例如来自本地文件夹的字体、Google Fo
 ### 管理外部资源加载
 
 转换引擎提供了一种机制，允许您控制与 HTML 文档相关的某些资源的加载。
-[`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) 类具有属性 [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources)，通过该属性我们可以定义资源加载器的行为。
+[`HtmlLoadOptions`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlloadoptions) 类具有属性 [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources)，通过该属性我们可以定义资源加载器的行为。
 假设我们需要将所有 PNG 图像替换为单个图像 `test.jpg`，并将其他资源的外部 URL 替换为内部 URL。
-为此，我们可以定义一个自定义加载器 `SamePictureLoader` 并将 [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) 指向该名称。
+为此，我们可以定义一个自定义加载器 `SamePictureLoader` 并将 [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) 指向该名称。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -264,7 +264,7 @@ private static byte[] GetContentFromUrl(string url)
 <a name="csharp-webpage-to-pdf"><strong>步骤：在 C# 中将网页转换为 PDF</strong></a>
 
 1. 使用 HttpClient 对象读取页面内容。
-1. 实例化 [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) 对象并设置基本 URL。
+1. 实例化 [HtmlLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlloadoptions) 对象并设置基本 URL。
 1. 初始化 Document 对象，同时传递流对象。
 1. 可选地，设置页面大小和/或方向。
 
@@ -308,7 +308,7 @@ private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredenti
 
 ### 提供凭据进行网页到 PDF 的转换
 
-有时我们需要执行需要身份验证和访问权限的 HTML 文件转换，以便只有经过身份验证的用户才能获取页面内容。这还包括某些资源/数据在 HTML 中引用的场景，这些资源/数据从某个外部服务器获取，需要身份验证。为满足此要求，[`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) 类中添加了 [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) 属性。以下代码片段显示了在将 HTML 文件转换为 PDF 时传递凭据以请求 HTML 及其相关资源的步骤。
+有时我们需要执行需要身份验证和访问权限的 HTML 文件转换，以便只有经过身份验证的用户才能获取页面内容。这还包括某些资源/数据在 HTML 中引用的场景，这些资源/数据从某个外部服务器获取，需要身份验证。为满足此要求，[`HtmlLoadOptions`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlloadoptions) 类中添加了 [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) 属性。以下代码片段显示了在将 HTML 文件转换为 PDF 时传递凭据以请求 HTML 及其相关资源的步骤。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -406,8 +406,8 @@ Aspose.PDF for .NET 为您提供在线免费应用程序 ["MHTML to PDF"](https:
 
 <a name="csharp-mhtml-to-pdf"><strong>步骤：在 C# 中将 MHTML 转换为 PDF</strong></a>
 
-1. 创建 [MhtLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mhtloadoptions/) 类的实例。
-2. 初始化 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 对象。
+1. 创建 [MhtLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/mhtloadoptions/) 类的实例。
+2. 初始化 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/) 对象。
 3. 通过调用 **Document.Save()** 方法保存输出 PDF 文档。
 
 ```csharp

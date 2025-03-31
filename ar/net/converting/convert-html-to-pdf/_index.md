@@ -109,8 +109,8 @@ _التنسيق_: **WebPage**
 
 <a name="csharp-html-to-pdf"><strong>الخطوات: تحويل HTML إلى PDF في C#</strong></a>
 
-1. إنشاء مثيل من فئة [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/) .
-2. تهيئة كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) .
+1. إنشاء مثيل من فئة [HtmlLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlloadoptions/) .
+2. تهيئة كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) .
 3. حفظ مستند PDF الناتج عن طريق استدعاء **Document.Save()** .
 
 ```csharp
@@ -146,7 +146,7 @@ private static void ConvertHTMLtoPDF()
 
 ### دعم استعلامات الوسائط
 
-استعلامات الوسائط هي تقنية شائعة لتقديم ورقة أنماط مخصصة لأجهزة مختلفة. يمكننا تعيين نوع الجهاز باستخدام خاصية [`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype) .
+استعلامات الوسائط هي تقنية شائعة لتقديم ورقة أنماط مخصصة لأجهزة مختلفة. يمكننا تعيين نوع الجهاز باستخدام خاصية [`HtmlMediaType`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype) .
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void ConvertHTMLtoPDFAdvancedMediaType()
 
 ### تمكين (تعطيل) تضمين الخطوط
 
-تستخدم صفحات HTML غالبًا خطوطًا (مثل الخطوط من المجلد المحلي، خطوط Google، إلخ). يمكننا أيضًا التحكم في تضمين الخطوط في مستند باستخدام خاصية [`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts) .
+تستخدم صفحات HTML غالبًا خطوطًا (مثل الخطوط من المجلد المحلي، خطوط Google، إلخ). يمكننا أيضًا التحكم في تضمين الخطوط في مستند باستخدام خاصية [`IsEmbedFonts`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlloadoptions/properties/isembedfonts) .
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -201,9 +201,9 @@ private static void ConvertHTMLtoPDFAdvancedMediaType()
 ### إدارة تحميل الموارد الخارجية
 
 يوفر محرك التحويل آلية تتيح لك التحكم في تحميل بعض الموارد المرتبطة بمستند HTML.
-تحتوي فئة [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) على خاصية [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) التي يمكننا من خلالها تحديد سلوك محمل الموارد.
+تحتوي فئة [`HtmlLoadOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlloadoptions) على خاصية [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) التي يمكننا من خلالها تحديد سلوك محمل الموارد.
 افترض أننا بحاجة إلى استبدال جميع صور PNG بصورة واحدة `test.jpg` واستبدال عنوان URL الخارجي إلى داخلي للموارد الأخرى.
-للقيام بذلك، يمكننا تعريف محمل مخصص `SamePictureLoader` ونشير إلى [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) بهذا الاسم.
+للقيام بذلك، يمكننا تعريف محمل مخصص `SamePictureLoader` ونشير إلى [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) بهذا الاسم.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -264,7 +264,7 @@ private static byte[] GetContentFromUrl(string url)
 <a name="csharp-webpage-to-pdf"><strong>الخطوات: تحويل WebPage إلى PDF في C#</strong></a>
 
 1. قراءة محتويات الصفحة باستخدام كائن HttpClient.
-1. إنشاء كائن [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) وتعيين عنوان URL الأساسي.
+1. إنشاء كائن [HtmlLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlloadoptions) وتعيين عنوان URL الأساسي.
 1. تهيئة كائن Document مع تمرير كائن stream.
 1. اختياريًا، تعيين حجم الصفحة و/أو الاتجاه.
 
@@ -308,7 +308,7 @@ private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredenti
 
 ### توفير بيانات الاعتماد لتحويل صفحة الويب إلى PDF
 
-أحيانًا نحتاج إلى إجراء تحويل لملفات HTML التي تتطلب مصادقة وامتيازات وصول، بحيث يمكن فقط للمستخدمين المصرح لهم جلب محتويات الصفحة. يشمل ذلك أيضًا السيناريو الذي يتم فيه جلب بعض الموارد/البيانات المشار إليها داخل HTML من خادم خارجي يتطلب مصادقة، ومن أجل تلبية هذا المتطلب، تمت إضافة خاصية [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) إلى فئة [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) . يظهر مقتطف الكود التالي الخطوات اللازمة لتمرير بيانات الاعتماد لطلب HTML وموارده المعنية أثناء تحويل ملف HTML إلى PDF.
+أحيانًا نحتاج إلى إجراء تحويل لملفات HTML التي تتطلب مصادقة وامتيازات وصول، بحيث يمكن فقط للمستخدمين المصرح لهم جلب محتويات الصفحة. يشمل ذلك أيضًا السيناريو الذي يتم فيه جلب بعض الموارد/البيانات المشار إليها داخل HTML من خادم خارجي يتطلب مصادقة، ومن أجل تلبية هذا المتطلب، تمت إضافة خاصية [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) إلى فئة [`HtmlLoadOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlloadoptions) . يظهر مقتطف الكود التالي الخطوات اللازمة لتمرير بيانات الاعتماد لطلب HTML وموارده المعنية أثناء تحويل ملف HTML إلى PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -406,8 +406,8 @@ private static void ConvertHTMLtoPDFWithSVG()
 
 <a name="csharp-mhtml-to-pdf"><strong>الخطوات: تحويل MHTML إلى PDF في C#</strong></a>
 
-1. إنشاء مثيل من فئة [MhtLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mhtloadoptions/) .
-2. تهيئة كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) .
+1. إنشاء مثيل من فئة [MhtLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/mhtloadoptions/) .
+2. تهيئة كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) .
 3. حفظ مستند PDF الناتج عن طريق استدعاء **Document.Save()** .
 
 ```csharp

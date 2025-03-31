@@ -83,7 +83,7 @@ sitemap:
 
 ## إضافة كائن بيضاوي
 
-يدعم Aspose.PDF for .NET إضافة كائنات [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) إلى مستندات PDF. كما يقدم ميزة تعبئة كائن البيضاوي بلون معين.
+يدعم Aspose.PDF for .NET إضافة كائنات [Ellipse](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/ellipse) إلى مستندات PDF. كما يقدم ميزة تعبئة كائن البيضاوي بلون معين.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,7 +133,7 @@ private static void Ellipse()
 
 ## إنشاء كائن بيضاوي مملوء
 
-تظهر مقتطفات الشيفرة التالية كيفية إضافة كائن [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) مملوء باللون.
+تظهر مقتطفات الشيفرة التالية كيفية إضافة كائن [Ellipse](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/ellipse) مملوء باللون.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

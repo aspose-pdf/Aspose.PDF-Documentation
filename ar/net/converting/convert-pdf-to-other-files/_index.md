@@ -93,7 +93,7 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 
 تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-Aspose.PDF for .NET يدعم أيضًا ميزة تحويل مستندات PDF إلى تنسيق EPUB. يحتوي Aspose.PDF for .NET على فئة تسمى EpubSaveOptions يمكن استخدامها كوسيط ثانٍ لطريقة [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) لإنشاء ملف EPUB.
+Aspose.PDF for .NET يدعم أيضًا ميزة تحويل مستندات PDF إلى تنسيق EPUB. يحتوي Aspose.PDF for .NET على فئة تسمى EpubSaveOptions يمكن استخدامها كوسيط ثانٍ لطريقة [`Document.Save(..)`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index) لإنشاء ملف EPUB.
 يرجى محاولة استخدام مقتطف الشيفرة التالية لتحقيق هذا المتطلب باستخدام C#.
 
 ```csharp
@@ -130,7 +130,7 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 [![تحويل Aspose.PDF PDF إلى LaTeX/TeX مع تطبيق مجاني](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-لتحويل ملفات PDF إلى TeX، يحتوي Aspose.PDF على فئة [LaTeXSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions) التي توفر خاصية OutDirectoryPath لحفظ الصور المؤقتة أثناء عملية التحويل.
+لتحويل ملفات PDF إلى TeX، يحتوي Aspose.PDF على فئة [LaTeXSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/latexsaveoptions) التي توفر خاصية OutDirectoryPath لحفظ الصور المؤقتة أثناء عملية التحويل.
 
 توضح مقتطفات الشيفرة التالية عملية تحويل ملفات PDF إلى تنسيق TEX باستخدام C#.
 
@@ -165,7 +165,7 @@ private static void ConvertPDFtoTeX()
 
 ### تحويل مستند PDF كامل إلى ملف نص
 
-يمكنك تحويل مستند PDF إلى ملف TXT باستخدام طريقة [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber/methods/visit/index) من فئة [TextAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber).
+يمكنك تحويل مستند PDF إلى ملف TXT باستخدام طريقة [Visit](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textabsorber/methods/visit/index) من فئة [TextAbsorber](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textabsorber).
 
 توضح مقتطفات الشيفرة التالية كيفية استخراج النصوص من جميع الصفحات.
 
@@ -239,7 +239,7 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 
 نوع ملف XPS مرتبط بشكل أساسي بمواصفة ورق XML من شركة مايكروسوفت. مواصفة ورق XML (XPS)، التي كانت تُعرف سابقًا باسم Metro وتحتوي على مفهوم تسويق Next Generation Print Path (NGPP)، هي مبادرة مايكروسوفت لدمج إنشاء المستندات وعرضها في نظام تشغيل ويندوز.
 
-لتحويل ملفات PDF إلى XPS، يحتوي Aspose.PDF على فئة [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) التي تستخدم كوسيط ثانٍ لطريقة [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) لإنشاء ملف XPS.
+لتحويل ملفات PDF إلى XPS، يحتوي Aspose.PDF على فئة [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) التي تستخدم كوسيط ثانٍ لطريقة [Document.Save(..)](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index) لإنشاء ملف XPS.
 
 منذ إصدار 24.2، قامت Aspose.PDF بتنفيذ تحويل PDF القابل للبحث إلى XPS مع الحفاظ على النص قابل للتحديد في XPS الناتج. للحفاظ على النص، من الضروري تعيين خاصية XpsSaveOptions.SaveTransparentTexts إلى true.
 

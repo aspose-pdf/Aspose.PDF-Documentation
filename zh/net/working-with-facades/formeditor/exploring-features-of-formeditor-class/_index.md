@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-PDF 文档有时包含交互式表单，称为 AcroForm。它就像网页中使用的表单。这些表单包含不同类型的控件，即文本框、复选框和按钮等。处理 PDF 文件的开发人员有时可能需要编辑这些表单。在本文中，我们将详细了解 [Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 如何使我们能够做到这一点。
+PDF 文档有时包含交互式表单，称为 AcroForm。它就像网页中使用的表单。这些表单包含不同类型的控件，即文本框、复选框和按钮等。处理 PDF 文件的开发人员有时可能需要编辑这些表单。在本文中，我们将详细了解 [Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 如何使我们能够做到这一点。
 
 {{% /alert %}}
 
 ## 实现细节
 
-开发人员可以使用 [Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 不仅可以在 PDF 文档中添加新表单和表单字段，还可以编辑现有字段。本文的范围仅限于处理表单编辑的 [Aspose.PDF for .NET](/pdf/zh/net/) 的功能。
+开发人员可以使用 [Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 不仅可以在 PDF 文档中添加新表单和表单字段，还可以编辑现有字段。本文的范围仅限于处理表单编辑的 [Aspose.PDF for .NET](/pdf/zh/net/) 的功能。
 
-[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 是包含大多数方法和属性的类，允许开发人员编辑表单字段。您不仅可以添加新字段，还可以删除现有字段，将一个字段移动到另一个位置，更改字段名称或属性等。此类提供的功能列表相当全面，使用此类处理表单字段非常简单。
+[FormEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor) 是包含大多数方法和属性的类，允许开发人员编辑表单字段。您不仅可以添加新字段，还可以删除现有字段，将一个字段移动到另一个位置，更改字段名称或属性等。此类提供的功能列表相当全面，使用此类处理表单字段非常简单。
 
 这些方法可以分为两个主要类别，其中一个用于操作字段，另一个用于设置这些字段的新属性。我们可以将第一类方法分组为 AddField、AddListItem、RemoveListItem、CopyInnerField、CopyOuterField、DelListItem、MoveField、RemoveField 和 RenameField 等。在第二类方法中可以包括 SetFieldAlignment、SetFieldAppearance、SetFieldAttribute、SetFieldLimit、SetFieldScript。以下代码片段向您展示了 FormEditor 类的一些方法的工作：
 

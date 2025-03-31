@@ -77,9 +77,9 @@ draft: false
 
 ## Obtenir la préférence du visualiseur d'un fichier PDF existant
 
-[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) classe représente les modes d'affichage des fichiers PDF ; par exemple, positionner la fenêtre du document au centre de l'écran, cacher la barre de menu de l'application de visualisation, etc.
+[ViewerPreference](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/viewerpreference) classe représente les modes d'affichage des fichiers PDF ; par exemple, positionner la fenêtre du document au centre de l'écran, cacher la barre de menu de l'application de visualisation, etc.
 
-Pour lire les paramètres, nous utilisons la classe [GetViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference). Cette méthode retourne une variable où tous les paramètres sont sauvegardés.
+Pour lire les paramètres, nous utilisons la classe [GetViewerPreference](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference). Cette méthode retourne une variable où tous les paramètres sont sauvegardés.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

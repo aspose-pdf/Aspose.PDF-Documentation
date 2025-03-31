@@ -111,7 +111,7 @@ private static void GetValuesFromFields()
 
 ### Obtener valor de un campo individual del documento PDF
 
-La propiedad Value del campo del formulario le permite obtener el valor de un campo particular. Para obtener el valor, obtenga el campo del formulario de la colección Form del objeto Document. Este ejemplo en C# selecciona un [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) y recupera su valor usando la propiedad Value.
+La propiedad Value del campo del formulario le permite obtener el valor de un campo particular. Para obtener el valor, obtenga el campo del formulario de la colección Form del objeto Document. Este ejemplo en C# selecciona un [TextBoxField](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/textboxfield) y recupera su valor usando la propiedad Value.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -160,7 +160,7 @@ private static void GetSubmitFormActionUrl()
 
 A veces, puede saber dónde en un documento se encuentra un campo de formulario, pero no tener su nombre. Por ejemplo, si todo lo que tiene es un esquema de un formulario impreso. Con Aspose.PDF for .NET, esto no es un problema. Puede averiguar qué campos están en una región dada de un archivo PDF. Para obtener campos de formulario de una región específica de un archivo PDF:
 
-1. Abra el archivo PDF usando el objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Abra el archivo PDF usando el objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
 1. Obtenga el formulario de la colección Forms del documento.
 1. Especifique la región rectangular y pásela al método GetFieldsInRect del objeto Form. Se devuelve una colección de Fields.
 1. Use esto para manipular los campos.

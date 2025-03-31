@@ -83,9 +83,9 @@ sitemap:
 
 ## Получение закладок
 
-Коллекция [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) содержит все закладки PDF-файла. Эта статья объясняет, как получить закладки из PDF-файла и как узнать, на какой странице находится конкретная закладка.
+Коллекция [OutlineCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) содержит все закладки PDF-файла. Эта статья объясняет, как получить закладки из PDF-файла и как узнать, на какой странице находится конкретная закладка.
 
-Чтобы получить закладки, пройдите по коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) и получите каждую закладку в OutlineItemCollection. OutlineItemCollection предоставляет доступ ко всем атрибутам закладки. Следующий фрагмент кода показывает, как получить закладки из PDF-файла.
+Чтобы получить закладки, пройдите по коллекции [OutlineCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection) и получите каждую закладку в OutlineItemCollection. OutlineItemCollection предоставляет доступ ко всем атрибутам закладки. Следующий фрагмент кода показывает, как получить закладки из PDF-файла.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -213,7 +213,7 @@ private static void GetBookmarkPageNumber()
 
 ## Получение дочерних закладок из PDF-документа
 
-Закладки могут быть организованы в иерархическую структуру, с родителями и детьми. Чтобы получить все закладки, пройдите по коллекциям Outlines объекта Document. Однако, чтобы получить также дочерние закладки, пройдите по всем закладкам в каждом объекте [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), полученном в первом цикле. Следующие фрагменты кода показывают, как получить дочерние закладки из PDF-документа.
+Закладки могут быть организованы в иерархическую структуру, с родителями и детьми. Чтобы получить все закладки, пройдите по коллекциям Outlines объекта Document. Однако, чтобы получить также дочерние закладки, пройдите по всем закладкам в каждом объекте [OutlineItemCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlineitemcollection), полученном в первом цикле. Следующие фрагменты кода показывают, как получить дочерние закладки из PDF-документа.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -294,7 +294,7 @@ private static void GetChildBookmarks()
 
 ## Обновление закладок в PDF-документе
 
-Чтобы обновить закладку в PDF-файле, сначала получите конкретную закладку из коллекции OutlineColletion объекта Document, указав индекс закладки. После того как вы извлекли закладку в объект [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), вы можете обновить ее свойства и затем сохранить обновленный PDF-файл, используя метод Save. Следующие фрагменты кода показывают, как обновить закладки в PDF-документе.
+Чтобы обновить закладку в PDF-файле, сначала получите конкретную закладку из коллекции OutlineColletion объекта Document, указав индекс закладки. После того как вы извлекли закладку в объект [OutlineItemCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlineitemcollection), вы можете обновить ее свойства и затем сохранить обновленный PDF-файл, используя метод Save. Следующие фрагменты кода показывают, как обновить закладки в PDF-документе.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -350,7 +350,7 @@ private static void UpdateBookmarks()
 Чтобы обновить дочернюю закладку:
 
 1. Извлеките дочернюю закладку, которую хотите обновить, из PDF-файла, сначала получив родительскую закладку, а затем дочернюю закладку, используя соответствующие индексы.
-1. Сохраните обновленный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1).
+1. Сохраните обновленный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/1).
 
 {{% alert color="primary" %}}
 
@@ -417,7 +417,7 @@ private static void UpdateChildBookmarks()
 
 ## Расширенные закладки при просмотре документа
 
-Закладки хранятся в коллекции [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) объекта Document, который, в свою очередь, находится в коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Однако у нас может быть требование, чтобы все закладки были развернуты при просмотре PDF-файла.
+Закладки хранятся в коллекции [OutlineItemCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlineitemcollection) объекта Document, который, в свою очередь, находится в коллекции [OutlineCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection). Однако у нас может быть требование, чтобы все закладки были развернуты при просмотре PDF-файла.
 
 Чтобы выполнить это требование, мы можем установить статус открытия для каждого элемента закладки как Открытый. Следующий фрагмент кода показывает, как установить статус открытия для каждой закладки как развернутой в PDF-документе.
 

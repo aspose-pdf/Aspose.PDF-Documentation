@@ -94,9 +94,9 @@ sitemap:
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-1. Загрузите PDF-файл или создайте новый с помощью [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Загрузите PDF-файл или создайте новый с помощью [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 1. Создайте новую аннотацию и установите параметры (новый прямоугольник, новая точка, заголовок, цвет, ширина и т.д.).
-1. Создайте новую [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
+1. Создайте новую [PopupAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/popupannotation/methods/index).
 1. Свяжите всплывающую аннотацию с оригинальной.
 1. Добавьте аннотацию на страницу.
 
@@ -153,7 +153,7 @@ private static void AddLineAnnotation()
 
 ## Добавление квадрата или круга
 
-Аннотации [Square](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation) и [Circle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) будут отображать прямоугольник или эллипс на странице. При открытии они будут отображать всплывающее окно с текстом связанной заметки. Аннотации квадратов похожи на аннотации кругов (экземпляры класса Aspose. Pdf. Annotations. CircleAnnotation), за исключением формы.
+Аннотации [Square](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/squareannotation) и [Circle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/circleannotation) будут отображать прямоугольник или эллипс на странице. При открытии они будут отображать всплывающее окно с текстом связанной заметки. Аннотации квадратов похожи на аннотации кругов (экземпляры класса Aspose. Pdf. Annotations. CircleAnnotation), за исключением формы.
 
 ### Добавление аннотации круга
 
@@ -543,7 +543,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 
 Аннотация чернила представляет собой свободный "каракули", состоящий из одного или нескольких несвязанных путей. При открытии она будет отображать всплывающее окно с текстом связанной заметки.
 
-[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) представляет собой свободные каракули, состоящие из одной или нескольких несвязанных точек. Пожалуйста, попробуйте использовать следующий фрагмент кода для добавления InkAnnotation в PDF-документ.
+[InkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/inkannotation) представляет собой свободные каракули, состоящие из одной или нескольких несвязанных точек. Пожалуйста, попробуйте использовать следующий фрагмент кода для добавления InkAnnotation в PDF-документ.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -599,7 +599,7 @@ private static void AddInkAnnotation()
 
 ### Установка ширины линии InkAnnotation
 
-Ширину [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) можно изменить с помощью объектов LineInfo и Border.
+Ширину [InkAnnottion](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/inkannotation) можно изменить с помощью объектов LineInfo и Border.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

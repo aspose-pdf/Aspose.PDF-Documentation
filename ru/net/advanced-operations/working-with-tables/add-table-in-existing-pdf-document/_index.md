@@ -80,7 +80,7 @@ sitemap:
 
 ## Создание таблицы с использованием C\#
 
-Таблицы важны при работе с PDF документами. Они предоставляют отличные возможности для систематизированного отображения информации. Пространство имен Aspose.PDF содержит классы [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) и [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row), которые обеспечивают функциональность для создания таблиц при генерации PDF документов с нуля.
+Таблицы важны при работе с PDF документами. Они предоставляют отличные возможности для систематизированного отображения информации. Пространство имен Aspose.PDF содержит классы [Table](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cell) и [Row](https://reference.aspose.com/pdf/ru/net/aspose.pdf/row), которые обеспечивают функциональность для создания таблиц при генерации PDF документов с нуля.
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
@@ -140,7 +140,7 @@ private static void AddTable()
 
 ### ColSpan и RowSpan в таблицах
 
-Aspose.PDF for .NET предоставляет свойство [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) для объединения столбцов в таблице и свойство [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) для объединения строк.
+Aspose.PDF for .NET предоставляет свойство [ColSpan](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cell/properties/colspan) для объединения столбцов в таблице и свойство [RowSpan](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cell/properties/rowspan) для объединения строк.
 
 Мы используем свойство `ColSpan` или `RowSpan` для объекта `Cell`, который создает ячейку таблицы. После применения необходимых свойств созданную ячейку можно добавить в таблицу.
 
@@ -229,7 +229,7 @@ private static void AddTableRowColSpan()
 
 ### Поля или внутренние отступы
 
-Заполнение ячеек можно управлять с помощью свойства [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) класса Table. Все свойства, связанные с заполнением, присваиваются экземпляру класса [MarginInfo], который принимает информацию о параметрах `Left`, `Right`, `Top` и `Bottom` для создания настраиваемых полей.
+Заполнение ячеек можно управлять с помощью свойства [DefaultCellPadding](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/defaultcellpadding) класса Table. Все свойства, связанные с заполнением, присваиваются экземпляру класса [MarginInfo], который принимает информацию о параметрах `Left`, `Right`, `Top` и `Bottom` для создания настраиваемых полей.
 
 В следующем примере ширина границы ячейки установлена равной 0.1 пункта, ширина границы таблицы — равной 1 пункту, а внутренние отступы ячейки — равными 5 пунктам.
 
@@ -369,7 +369,7 @@ private static void AddAutoFitToWindow()
 
 ### Получение ширины таблицы
 
-Иногда требуется динамически определить ширину таблицы. Класс Aspose.PDF.Table имеет метод [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) для этой цели. Например, если вы не установили ширину столбцов таблицы явно и задали [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) как AutoFitToContent, то в этом случае вы можете получить ширину таблицы следующим образом.
+Иногда требуется динамически определить ширину таблицы. Класс Aspose.PDF.Table имеет метод [GetWidth](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/methods/getwidth) для этой цели. Например, если вы не установили ширину столбцов таблицы явно и задали [ColumnAdjustment](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/columnadjustment) как AutoFitToContent, то в этом случае вы можете получить ширину таблицы следующим образом.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -561,7 +561,7 @@ private static void InsertPageBreak()
 
 ### Пример: как отобразить таблицу на новой странице с использованием C\#
 
-Чтобы отобразить таблицу на новой странице, используйте свойство [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) в классе BaseParagraph. Следующий фрагмент кода демонстрирует, как это сделать.
+Чтобы отобразить таблицу на новой странице, используйте свойство [IsInNewPage](https://reference.aspose.com/pdf/ru/net/aspose.pdf/baseparagraph/properties/isinnewpage) в классе BaseParagraph. Следующий фрагмент кода демонстрирует, как это сделать.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

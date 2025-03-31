@@ -91,9 +91,9 @@ Aspose.PDF for .NET 支持使用 SignatureField 类数字签名 PDF 文件。您
 
 我们可以使用以下类和方法进行 PDF 签名
 
-- 类 [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature)。
-- 枚举 [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions)。
-- 属性 [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) 在 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类中。
+- 类 [DocMDPSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/docmdpsignature)。
+- 枚举 [DocMDPAccessPermissions](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/docmdpaccesspermissions)。
+- 属性 [IsCertified](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) 在 [PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类中。
 
 要基于 PKCS12 证书（文件扩展名 .p12, pfx）创建数字签名，您应该创建 `PdfFileSignature` 类的实例，将文档对象传递给它。
 接下来，您应该通过创建其中一个类的对象来指定所需的数字签名方法：
@@ -203,7 +203,7 @@ private static void Verify()
 
 Aspose.PDF for .NET 支持使用时间戳服务器或 Web 服务数字签署 PDF。
 
-为了实现此要求，Aspose.PDF 命名空间中添加了 [TimestampSettings](https://reference.aspose.com/pdf/net/aspose.pdf/timestampsettings) 类。请查看以下代码片段，该代码获取时间戳并将其添加到 PDF 文档中：
+为了实现此要求，Aspose.PDF 命名空间中添加了 [TimestampSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf/timestampsettings) 类。请查看以下代码片段，该代码获取时间戳并将其添加到 PDF 文档中：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

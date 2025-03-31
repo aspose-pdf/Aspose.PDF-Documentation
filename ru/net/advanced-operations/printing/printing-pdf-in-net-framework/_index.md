@@ -85,7 +85,7 @@ sitemap:
 
 В этой статье описывается, как напечатать PDF-файл на принтере по умолчанию с использованием настроек принтера и страницы на C#.
 
-Класс [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) позволяет печатать PDF-файл на принтере по умолчанию. Вам нужно создать объект PdfViewer и открыть PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Чтобы задать различные параметры печати, используйте классы [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) и [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/). Наконец, вызовите метод [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings), чтобы напечатать PDF-файл на принтере по умолчанию. Следующий фрагмент кода показывает, как распечатать PDF-файл на принтере по умолчанию с настройками принтера и страницы.
+Класс [PdfViewer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer) позволяет печатать PDF-файл на принтере по умолчанию. Вам нужно создать объект PdfViewer и открыть PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Чтобы задать различные параметры печати, используйте классы [PageSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf.printing/pagesettings/) и [PrinterSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf.printing/printersettings/). Наконец, вызовите метод [PrintDocumentWithSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings), чтобы напечатать PDF-файл на принтере по умолчанию. Следующий фрагмент кода показывает, как распечатать PDF-файл на принтере по умолчанию с настройками принтера и страницы.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -261,7 +261,7 @@ private static void PrintWithPrintDialog()
 
 Начиная с версии 24.4, в диалоговом окне печати можно выбрать источник бумаги по размеру страницы PDF. Следующий фрагмент кода позволяет выбирать лоток принтера на основе размера страницы PDF.
 
-Эту настройку можно включать и выключать с помощью свойства [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+Эту настройку можно включать и выключать с помощью свойства [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
