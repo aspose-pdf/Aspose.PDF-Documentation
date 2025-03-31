@@ -85,7 +85,7 @@ sitemap:
 
 للحصول على جميع المرفقات من ملف PDF:
 
-1. قم بالتكرار عبر مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). تحتوي مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) على جميع المرفقات. يمثل كل عنصر في هذه المجموعة كائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). كل تكرار في حلقة foreach عبر مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) يعيد كائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
+1. قم بالتكرار عبر مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/ar/net/aspose.pdf/embeddedfilecollection) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document). تحتوي مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/ar/net/aspose.pdf/embeddedfilecollection) على جميع المرفقات. يمثل كل عنصر في هذه المجموعة كائن [FileSpecification](https://reference.aspose.com/pdf/ar/net/aspose.pdf/filespecification). كل تكرار في حلقة foreach عبر مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/ar/net/aspose.pdf/embeddedfilecollection) يعيد كائن [FileSpecification](https://reference.aspose.com/pdf/ar/net/aspose.pdf/filespecification).
 1. بمجرد توفر الكائن، استرجع إما جميع خصائص الملف المرفق أو الملف نفسه.
 
 تظهر مقتطفات الشيفرة التالية كيفية الحصول على جميع المرفقات من مستند PDF.

@@ -78,9 +78,9 @@ sitemap:
 }
 </script>
 
-تحتوي الصور على كل مجموعة [الموارد](https://reference.aspose.com/pdf/net/aspose.pdf/resources) في كل صفحة في مجموعة [الصور](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). لاستخراج صفحة معينة، ثم احصل على الصورة من مجموعة الصور باستخدام الفهرس المحدد للصورة.
+تحتوي الصور على كل مجموعة [الموارد](https://reference.aspose.com/pdf/ar/net/aspose.pdf/resources) في كل صفحة في مجموعة [الصور](https://reference.aspose.com/pdf/ar/net/aspose.pdf/resources/properties/images). لاستخراج صفحة معينة، ثم احصل على الصورة من مجموعة الصور باستخدام الفهرس المحدد للصورة.
 
-يعيد فهرس الصورة كائن [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). يوفر هذا الكائن طريقة Save التي يمكن استخدامها لحفظ الصورة المستخرجة. يوضح مقتطف الكود التالي كيفية استخراج الصور من ملف PDF.
+يعيد فهرس الصورة كائن [XImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf/ximage). يوفر هذا الكائن طريقة Save التي يمكن استخدامها لحفظ الصورة المستخرجة. يوضح مقتطف الكود التالي كيفية استخراج الصور من ملف PDF.
 
 يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 

@@ -85,7 +85,7 @@ sitemap:
 
 ## إنشاء PDF مع علامات (سيناريو بسيط)
 
-لإنشاء عناصر الهيكل في وثيقة PDF مع علامات، تقدم Aspose.PDF طرقًا لإنشاء عنصر الهيكل باستخدام واجهة [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). توضح مقتطفات الكود التالية كيفية إنشاء PDF مع علامات يحتوي على عنصرين: عنوان وفقرة.
+لإنشاء عناصر الهيكل في وثيقة PDF مع علامات، تقدم Aspose.PDF طرقًا لإنشاء عنصر الهيكل باستخدام واجهة [ITaggedContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent). توضح مقتطفات الكود التالية كيفية إنشاء PDF مع علامات يحتوي على عنصرين: عنوان وفقرة.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -181,7 +181,7 @@ private static void CreateTaggedPdfDocument01()
 ## إنشاء PDF مع علامات مع عناصر متداخلة (إنشاء شجرة عناصر الهيكل)
 
 في بعض الحالات، نحتاج إلى إنشاء هيكل أكثر تعقيدًا، على سبيل المثال، وضع اقتباسات في فقرة. 
-لإنشاء شجرة عناصر الهيكل، يجب علينا استخدام طريقة [AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild).
+لإنشاء شجرة عناصر الهيكل، يجب علينا استخدام طريقة [AppendChild](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/element/methods/appendchild).
 توضح مقتطفات الكود التالية كيفية إنشاء شجرة عناصر الهيكل لوثيقة PDF مع علامات:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -294,7 +294,7 @@ private static void CreateTaggedPdfDocument02()
 
 ## تنسيق هيكل النص
 
-لتهيئة هيكل النص في وثيقة PDF مع علامات، تقدم Aspose.PDF خصائص [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)، [FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)، [FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) و [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) من فئة [StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate). توضح مقتطفات الكود التالية كيفية تنسيق هيكل النص في وثيقة PDF مع علامات:
+لتهيئة هيكل النص في وثيقة PDF مع علامات، تقدم Aspose.PDF خصائص [Font](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)، [FontSize](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)، [FontStyle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) و [ForegroundColor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) من فئة [StructureTextState](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate). توضح مقتطفات الكود التالية كيفية تنسيق هيكل النص في وثيقة PDF مع علامات:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -367,7 +367,7 @@ private static void AddStyle()
 
 ## توضيح عناصر الهيكل
 
-لتوضيح عناصر الهيكل في وثيقة PDF مع علامات، تقدم Aspose.PDF فئة [IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement). توضح مقتطفات الكود التالية كيفية توضيح عناصر الهيكل في وثيقة PDF مع علامات:
+لتوضيح عناصر الهيكل في وثيقة PDF مع علامات، تقدم Aspose.PDF فئة [IllustrationElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/illustrationelement). توضح مقتطفات الكود التالية كيفية توضيح عناصر الهيكل في وثيقة PDF مع علامات:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

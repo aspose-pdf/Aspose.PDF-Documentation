@@ -80,9 +80,9 @@ Aspose.PDF for .NET API 允许您使用 C# 和 VB.NET 创建和读取 PDF 文件
 
 要使用 C# 创建 PDF 文件，可以使用以下步骤。
 
-1. 创建 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类的对象。
-1. 向 Document 对象的 [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) 集合中添加一个 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象。
-1. 向页面的 [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) 集合中添加 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)。
+1. 创建 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的对象。
+1. 向 Document 对象的 [Pages](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/pages) 集合中添加一个 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象。
+1. 向页面的 [Paragraphs](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/properties/paragraphs) 集合中添加 [TextFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragment)。
 1. 保存生成的 PDF 文档。
 
 下一个代码片段也适用于 [Aspose.Drawing](/pdf/zh/net/drawing/) 库。

@@ -77,7 +77,7 @@ draft: false
 
 ## Changer le mot de passe d'un fichier PDF
 
-Pour changer le mot de passe d'un fichier PDF, vous devez créer un objet [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) puis appeler la méthode [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Vous devez passer le mot de passe propriétaire existant ainsi que les nouveaux mots de passe utilisateur et propriétaire à la méthode [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
+Pour changer le mot de passe d'un fichier PDF, vous devez créer un objet [PdfFileSecurity](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesecurity) puis appeler la méthode [ChangePassword](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Vous devez passer le mot de passe propriétaire existant ainsi que les nouveaux mots de passe utilisateur et propriétaire à la méthode [ChangePassword](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
 
 {{% alert color="primary" %}}
 

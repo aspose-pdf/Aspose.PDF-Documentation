@@ -86,7 +86,7 @@ draft: false
 
 {{% /alert %}}
 
-لفك تشفير ملف PDF، تحتاج إلى إنشاء كائن [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) ثم استدعاء طريقة [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). تحتاج أيضًا إلى تمرير كلمة مرور المالك إلى طريقة [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). يوضح لك مقتطف الكود التالي كيفية فك تشفير ملف PDF.
+لفك تشفير ملف PDF، تحتاج إلى إنشاء كائن [PdfFileSecurity](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesecurity) ثم استدعاء طريقة [DecryptFile](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). تحتاج أيضًا إلى تمرير كلمة مرور المالك إلى طريقة [DecryptFile](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). يوضح لك مقتطف الكود التالي كيفية فك تشفير ملف PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

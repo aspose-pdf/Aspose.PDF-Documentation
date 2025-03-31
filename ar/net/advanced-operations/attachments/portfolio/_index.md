@@ -81,7 +81,7 @@ sitemap:
 
 ## كيفية إنشاء محفظة PDF
 
-تسمح Aspose.PDF بإنشاء مستندات محفظة PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). أضف ملفًا إلى كائن Document.Collection بعد الحصول عليه باستخدام فئة [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). عندما يتم إضافة الملفات، استخدم طريقة Save لفئة Document لحفظ مستند المحفظة.
+تسمح Aspose.PDF بإنشاء مستندات محفظة PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document). أضف ملفًا إلى كائن Document.Collection بعد الحصول عليه باستخدام فئة [FileSpecification](https://reference.aspose.com/pdf/ar/net/aspose.pdf/filespecification). عندما يتم إضافة الملفات، استخدم طريقة Save لفئة Document لحفظ مستند المحفظة.
 
 المثال التالي يستخدم ملف Microsoft Excel، مستند Word وملف صورة لإنشاء محفظة PDF.
 
@@ -131,7 +131,7 @@ private static void CreatePortfolio()
 
 تسمح محافظ PDF بجمع المحتوى من مجموعة متنوعة من المصادر (على سبيل المثال، PDF، Word، Excel، ملفات JPEG) في حاوية موحدة واحدة. تحتفظ الملفات الأصلية بهوياتها الفردية ولكن يتم تجميعها في ملف محفظة PDF. يمكن للمستخدمين فتح وقراءة وتحرير وتنسيق كل ملف مكون بشكل مستقل عن الملفات المكونة الأخرى.
 
-تسمح Aspose.PDF بإنشاء مستندات محفظة PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). كما أنها تقدم القدرة على استخراج الملفات من محفظة PDF.
+تسمح Aspose.PDF بإنشاء مستندات محفظة PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document). كما أنها تقدم القدرة على استخراج الملفات من محفظة PDF.
 
 تظهر مقتطفات الكود التالية الخطوات لاستخراج الملفات من محفظة PDF.
 

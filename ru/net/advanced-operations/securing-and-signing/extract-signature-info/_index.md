@@ -83,9 +83,9 @@ sitemap:
 
 ## Извлечение изображения из поля подписи
 
-Aspose.PDF for .NET поддерживает функцию цифровой подписи PDF-файлов с помощью класса [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield), и при подписании документа вы также можете установить изображение для `SignatureAppearance`. Теперь этот API также предоставляет возможность извлечения информации о подписи и связанного с ней изображения.
+Aspose.PDF for .NET поддерживает функцию цифровой подписи PDF-файлов с помощью класса [SignatureField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield), и при подписании документа вы также можете установить изображение для `SignatureAppearance`. Теперь этот API также предоставляет возможность извлечения информации о подписи и связанного с ней изображения.
 
-Чтобы извлечь информацию о подписи, мы добавили метод [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) в класс SignatureField. Пожалуйста, посмотрите следующий фрагмент кода, который демонстрирует шаги по извлечению изображения из объекта `SignatureField`:
+Чтобы извлечь информацию о подписи, мы добавили метод [ExtractImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield/methods/extractimage) в класс SignatureField. Пожалуйста, посмотрите следующий фрагмент кода, который демонстрирует шаги по извлечению изображения из объекта `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,7 +132,7 @@ private static void ExtractImagesFromSignatureField()
 
 Aspose.PDF for .NET поддерживает возможность цифровой подписи PDF-файлов с помощью класса SignatureField. В настоящее время мы также можем определить действительность сертификата, но не можем извлечь весь сертификат. Можно извлечь следующую информацию: открытый ключ, отпечаток, эмитент и т.д.
 
-Для извлечения информации о подписи мы добавили метод [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) в класс [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield). Пожалуйста, взгляните на следующий фрагмент кода, демонстрирующий шаги по извлечению сертификата из объекта SignatureField:
+Для извлечения информации о подписи мы добавили метод [ExtractCertificate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) в класс [SignatureField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield). Пожалуйста, взгляните на следующий фрагмент кода, демонстрирующий шаги по извлечению сертификата из объекта SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

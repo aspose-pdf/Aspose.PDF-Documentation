@@ -85,16 +85,16 @@ sitemap:
 
 ### Добавление поля формы в PDF-документ
 
-Класс [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) предоставляет коллекцию под названием [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form), которая помогает управлять полями форм в PDF-документе.
+Класс [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) предоставляет коллекцию под названием [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/form), которая помогает управлять полями форм в PDF-документе.
 
 Чтобы добавить поле формы:
 
 1. Создайте нужное поле формы.
-1. Вызовите метод Add коллекции [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form).
+1. Вызовите метод Add коллекции [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/form).
 
 ### Добавление TextBoxField
 
-В следующем примере показано, как добавить [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
+В следующем примере показано, как добавить [TextBoxField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/textboxfield).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### Добавление RadioButtonField
 
-Следующие фрагменты кода показывают, как добавить [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) в PDF-документ.
+Следующие фрагменты кода показывают, как добавить [RadioButtonField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/radiobuttonfield) в PDF-документ.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -164,7 +164,7 @@ private static void AddRadioButtonToPdf()
 }
 ```
 
-[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) можно добавить с некоторыми аннотациями виджетов.
+[TextBoxField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/textboxfield) можно добавить с некоторыми аннотациями виджетов.
 ```csharp
 // For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()

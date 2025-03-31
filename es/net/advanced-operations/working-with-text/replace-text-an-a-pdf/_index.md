@@ -484,7 +484,7 @@ Aspose.PDF for .NET soporta la función de incrustar fuentes al crear un documen
 
 Para reemplazar fuentes, usa el siguiente enfoque:
 
-1. Llama a la clase [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber).
+1. Llama a la clase [TextFragmentAbsorber](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textfragmentabsorber).
 1. Llama al parámetro TextEditOptions.FontReplace.RemoveUnusedFonts de la clase TextFragmentAbsorber. (Esto elimina fuentes que se han vuelto no utilizadas durante el reemplazo de fuentes).
 1. Establece la fuente individualmente para cada fragmento de texto.
 

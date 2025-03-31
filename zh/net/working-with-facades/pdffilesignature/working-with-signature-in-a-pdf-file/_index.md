@@ -158,7 +158,7 @@ private static void ExtractSignatureImage()
 
 ## 抑制位置和原因
 
-Aspose.PDF 功能允许灵活配置数字签名实例。[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类提供对 PDF 文件进行签名的能力。签名方法的实现允许对 PDF 进行签名并将特定的签名对象传递给此类。签名方法包含一组属性，用于自定义输出数字签名。如果您需要从结果签名中抑制某些文本属性，可以将它们留空。以下代码片段演示如何从签名块中抑制位置和原因两行：
+Aspose.PDF 功能允许灵活配置数字签名实例。[PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类提供对 PDF 文件进行签名的能力。签名方法的实现允许对 PDF 进行签名并将特定的签名对象传递给此类。签名方法包含一组属性，用于自定义输出数字签名。如果您需要从结果签名中抑制某些文本属性，可以将它们留空。以下代码片段演示如何从签名块中抑制位置和原因两行：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void SupressLocationReason()
 
 ## 数字签名的自定义功能
 
-Aspose.PDF for .NET 允许数字签名的自定义功能。[SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) 类的签名方法实现了 6 个重载，以便于您的使用。例如，您可以仅通过 SignatureCustomAppearance 类实例及其属性值来配置结果签名。以下代码片段演示如何从 PDF 的输出数字签名中隐藏“数字签名由”标题。
+Aspose.PDF for .NET 允许数字签名的自定义功能。[SignatureCustomAppearance](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturecustomappearance) 类的签名方法实现了 6 个重载，以便于您的使用。例如，您可以仅通过 SignatureCustomAppearance 类实例及其属性值来配置结果签名。以下代码片段演示如何从 PDF 的输出数字签名中隐藏“数字签名由”标题。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,7 +233,7 @@ private static void CustomizationFeaturesForDigitalSign()
 - PKCS#7。
 - PKCS#12。
 
-每种提供的签名都包含一组为您的方便而实现的配置属性（本地化、日期时间格式、字体系列等）。[SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) 类提供相应的功能。以下代码片段演示如何更改数字签名文本中的语言：
+每种提供的签名都包含一组为您的方便而实现的配置属性（本地化、日期时间格式、字体系列等）。[SignatureCustomAppearance](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturecustomappearance) 类提供相应的功能。以下代码片段演示如何更改数字签名文本中的语言：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

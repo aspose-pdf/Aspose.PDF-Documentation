@@ -83,9 +83,9 @@ Examinons comment fonctionne le chiffrement PDF avec la bibliothèque Aspose.PDF
 
 ## Chiffrer un fichier PDF en utilisant différents types et algorithmes de chiffrement
 
-Pour chiffrer un fichier PDF, vous devez créer un objet [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) puis appeler la méthode [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Vous pouvez passer le mot de passe utilisateur, le mot de passe propriétaire et les privilèges à la méthode [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Vous devez également passer les valeurs KeySize et Algorithm à cette méthode.
+Pour chiffrer un fichier PDF, vous devez créer un objet [PdfFileSecurity](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesecurity) puis appeler la méthode [EncryptFile](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Vous pouvez passer le mot de passe utilisateur, le mot de passe propriétaire et les privilèges à la méthode [EncryptFile](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Vous devez également passer les valeurs KeySize et Algorithm à cette méthode.
 
-Consultez une liste possible de tels [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm) :
+Consultez une liste possible de tels [CryptoAlgorithm](https://reference.aspose.com/pdf/fr/net/aspose.pdf/cryptoalgorithm) :
 
 |**Nom du membre**|**Valeur**|**Description**|
 | :- | :- | :- |

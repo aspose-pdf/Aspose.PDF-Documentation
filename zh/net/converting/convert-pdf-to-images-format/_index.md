@@ -272,15 +272,15 @@ private static void ConvertPDFtoTiffBradleyBinarization()
 
 `ImageDevice` 是 `BmpDevice`、`JpegDevice`、`GifDevice`、`PngDevice` 和 `EmfDevice` 的祖先。
 
-- [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) 类允许您将 PDF 页面转换为 <abbr title="Bitmap Image File">BMP</abbr> 图像。
-- [EmfDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/emfdevice) 类允许您将 PDF 页面转换为 <abbr title="Enhanced Meta File">EMF</abbr> 图像。
-- [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) 类允许您将 PDF 页面转换为 JPEG 图像。
-- [PngDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice) 类允许您将 PDF 页面转换为 <abbr title="Portable Network Graphics">PNG</abbr> 图像。
-- [GifDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/gifdevice) 类允许您将 PDF 页面转换为 <abbr title="Graphics Interchange Format">GIF</abbr> 图像。
+- [BmpDevice](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/bmpdevice) 类允许您将 PDF 页面转换为 <abbr title="Bitmap Image File">BMP</abbr> 图像。
+- [EmfDevice](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/emfdevice) 类允许您将 PDF 页面转换为 <abbr title="Enhanced Meta File">EMF</abbr> 图像。
+- [JpegDevice](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/jpegdevice) 类允许您将 PDF 页面转换为 JPEG 图像。
+- [PngDevice](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/pngdevice) 类允许您将 PDF 页面转换为 <abbr title="Portable Network Graphics">PNG</abbr> 图像。
+- [GifDevice](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/gifdevice) 类允许您将 PDF 页面转换为 <abbr title="Graphics Interchange Format">GIF</abbr> 图像。
 
 让我们看看如何将 PDF 页面转换为图像。
 
-`BmpDevice` 类提供一个名为 [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) 的方法，允许您将 PDF 文件的特定页面转换为 BMP 图像格式。其他类也有相同的方法。因此，如果我们需要将 PDF 页面转换为图像，我们只需实例化所需的类。
+`BmpDevice` 类提供一个名为 [Process](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/bmpdevice/methods/process) 的方法，允许您将 PDF 文件的特定页面转换为 BMP 图像格式。其他类也有相同的方法。因此，如果我们需要将 PDF 页面转换为图像，我们只需实例化所需的类。
 
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
@@ -375,7 +375,7 @@ Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to SVG"](https://
 
 SVG 图像及其行为在 XML 文本文件中定义。这意味着它们可以被搜索、索引、脚本化，并在需要时进行压缩。作为 XML 文件，SVG 图像可以使用任何文本编辑器创建和编辑，但通常使用绘图程序（如 Inkscape）创建它们更为方便。
 
-Aspose.PDF for .NET 支持将 SVG 图像转换为 PDF 格式的功能，并且还提供将 PDF 文件转换为 SVG 格式的能力。为了实现这一要求，[`SvgSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/svgsaveoptions/methods/index) 类已被引入到 Aspose.PDF 命名空间中。实例化一个 SvgSaveOptions 对象，并将其作为第二个参数传递给 [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法。
+Aspose.PDF for .NET 支持将 SVG 图像转换为 PDF 格式的功能，并且还提供将 PDF 文件转换为 SVG 格式的能力。为了实现这一要求，[`SvgSaveOptions`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/svgsaveoptions/methods/index) 类已被引入到 Aspose.PDF 命名空间中。实例化一个 SvgSaveOptions 对象，并将其作为第二个参数传递给 [`Document.Save(..)`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法。
 
 以下代码片段展示了将 PDF 文件转换为 SVG 格式的步骤。
 

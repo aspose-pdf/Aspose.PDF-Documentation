@@ -82,7 +82,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Suivre le saut de ligne des TextFragments multi-lignes
 
-Aspose.PDF for .NET offre un traitement en arrière-plan de journalisation (suivi) du saut de ligne des fragments de texte multi-lignes dans les scénarios d'ajout de texte. Vous pouvez utiliser la méthode [GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)() de la classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) comme suit, afin de suivre le saut de ligne du fragment de texte :
+Aspose.PDF for .NET offre un traitement en arrière-plan de journalisation (suivi) du saut de ligne des fragments de texte multi-lignes dans les scénarios d'ajout de texte. Vous pouvez utiliser la méthode [GetNotifications](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page/methods/getnotifications)() de la classe [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) comme suit, afin de suivre le saut de ligne du fragment de texte :
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

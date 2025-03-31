@@ -158,7 +158,7 @@ private static void ExtractSignatureImage()
 
 ## Supprimer l'emplacement et la raison
 
-La fonctionnalité Aspose.PDF permet une configuration flexible pour l'instance de signature numérique. La classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) offre la possibilité de signer un fichier PDF. L'implémentation de la méthode Sign permet de signer le PDF et de passer l'objet de signature particulier à cette classe. La méthode Sign contient un ensemble d'attributs pour la personnalisation de la signature numérique de sortie. Dans le cas où vous devez supprimer certains attributs de texte de la signature résultante, vous pouvez les laisser vides. Le code suivant démontre comment supprimer l'emplacement et la raison de la zone de signature :
+La fonctionnalité Aspose.PDF permet une configuration flexible pour l'instance de signature numérique. La classe [PdfFileSignature](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesignature) offre la possibilité de signer un fichier PDF. L'implémentation de la méthode Sign permet de signer le PDF et de passer l'objet de signature particulier à cette classe. La méthode Sign contient un ensemble d'attributs pour la personnalisation de la signature numérique de sortie. Dans le cas où vous devez supprimer certains attributs de texte de la signature résultante, vous pouvez les laisser vides. Le code suivant démontre comment supprimer l'emplacement et la raison de la zone de signature :
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void SupressLocationReason()
 
 ## Fonctionnalités de personnalisation pour la signature numérique
 
-Aspose.PDF for .NET permet des fonctionnalités de personnalisation pour une signature numérique. La méthode Sign de la classe [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) est implémentée avec 6 surcharges pour votre utilisation confortable. Par exemple, vous pouvez configurer la signature résultante uniquement par l'instance de la classe SignatureCustomAppearance et ses valeurs de propriétés. Le code suivant démontre comment cacher la légende "Signé numériquement par" de la signature numérique de sortie de votre PDF.
+Aspose.PDF for .NET permet des fonctionnalités de personnalisation pour une signature numérique. La méthode Sign de la classe [SignatureCustomAppearance](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/signaturecustomappearance) est implémentée avec 6 surcharges pour votre utilisation confortable. Par exemple, vous pouvez configurer la signature résultante uniquement par l'instance de la classe SignatureCustomAppearance et ses valeurs de propriétés. Le code suivant démontre comment cacher la légende "Signé numériquement par" de la signature numérique de sortie de votre PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,7 +233,7 @@ En utilisant l'API Aspose.PDF for .NET, vous pouvez signer un fichier PDF en uti
 - PKCS#7.
 - PKCS#12.
 
-Chacune des signatures fournies contient un ensemble de propriétés de configuration mises en œuvre pour votre commodité (localisation, format de date et d'heure, famille de polices, etc.). La classe [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) fournit la fonctionnalité correspondante. Le code suivant démontre comment changer la langue dans le texte de la signature numérique :
+Chacune des signatures fournies contient un ensemble de propriétés de configuration mises en œuvre pour votre commodité (localisation, format de date et d'heure, famille de polices, etc.). La classe [SignatureCustomAppearance](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/signaturecustomappearance) fournit la fonctionnalité correspondante. Le code suivant démontre comment changer la langue dans le texte de la signature numérique :
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

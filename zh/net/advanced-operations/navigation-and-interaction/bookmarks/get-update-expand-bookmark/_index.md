@@ -83,9 +83,9 @@ sitemap:
 
 ## 获取书签
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 集合包含 PDF 文件的所有书签。本文解释了如何从 PDF 文件中获取书签，以及如何获取特定书签所在的页面。
+[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [OutlineCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection) 集合包含 PDF 文件的所有书签。本文解释了如何从 PDF 文件中获取书签，以及如何获取特定书签所在的页面。
 
-要获取书签，请循环遍历 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 集合，并获取 OutlineItemCollection 中的每个书签。OutlineItemCollection 提供对所有书签属性的访问。以下代码片段演示了如何从 PDF 文件中获取书签。
+要获取书签，请循环遍历 [OutlineCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection) 集合，并获取 OutlineItemCollection 中的每个书签。OutlineItemCollection 提供对所有书签属性的访问。以下代码片段演示了如何从 PDF 文件中获取书签。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -213,7 +213,7 @@ private static void GetBookmarkPageNumber()
 
 ## 从 PDF 文档中获取子书签
 
-书签可以以层次结构组织，具有父书签和子书签。要获取所有书签，请循环遍历 Document 对象的 Outlines 集合。然而，要获取子书签，还需要循环遍历在第一次循环中获得的每个 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 对象中的所有书签。以下代码片段演示了如何从 PDF 文档中获取子书签。
+书签可以以层次结构组织，具有父书签和子书签。要获取所有书签，请循环遍历 Document 对象的 Outlines 集合。然而，要获取子书签，还需要循环遍历在第一次循环中获得的每个 [OutlineItemCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlineitemcollection) 对象中的所有书签。以下代码片段演示了如何从 PDF 文档中获取子书签。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -294,7 +294,7 @@ private static void GetChildBookmarks()
 
 ## 更新 PDF 文档中的书签
 
-要更新 PDF 文件中的书签，首先，通过指定书签的索引从 Document 对象的 OutlineColletion 集合中获取特定书签。一旦您将书签检索到 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 对象中，您可以更新其属性，然后使用 Save 方法保存更新后的 PDF 文件。以下代码片段演示了如何在 PDF 文档中更新书签。
+要更新 PDF 文件中的书签，首先，通过指定书签的索引从 Document 对象的 OutlineColletion 集合中获取特定书签。一旦您将书签检索到 [OutlineItemCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlineitemcollection) 对象中，您可以更新其属性，然后使用 Save 方法保存更新后的 PDF 文件。以下代码片段演示了如何在 PDF 文档中更新书签。
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -350,7 +350,7 @@ private static void UpdateBookmarks()
 要更新子书签：
 
 1. 通过首先获取父书签，然后使用适当的索引值获取子书签，从 PDF 文件中检索您要更新的子书签。
-2. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1) 方法保存更新后的 PDF 文件。
+2. 使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/1) 方法保存更新后的 PDF 文件。
 
 {{% alert color="primary" %}}
 
@@ -417,7 +417,7 @@ private static void UpdateChildBookmarks()
 
 ## 查看文档时展开书签
 
-书签保存在 Document 对象的 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 集合中，该集合本身在 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 集合中。然而，我们可能需要在查看 PDF 文件时将所有书签展开。
+书签保存在 Document 对象的 [OutlineItemCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlineitemcollection) 集合中，该集合本身在 [OutlineCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection) 集合中。然而，我们可能需要在查看 PDF 文件时将所有书签展开。
 
 为了实现这一要求，我们可以将每个大纲/书签项的打开状态设置为打开。以下代码片段演示了如何在 PDF 文档中将每个书签的打开状态设置为展开。
 

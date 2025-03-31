@@ -78,9 +78,9 @@ sitemap:
 }
 </script>
 
-Les images sont contenues dans la collection [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) de chaque page, dans la collection [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Pour extraire une page particulière, récupérez ensuite l'image de la collection Images en utilisant l'index particulier de l'image.
+Les images sont contenues dans la collection [Resources](https://reference.aspose.com/pdf/fr/net/aspose.pdf/resources) de chaque page, dans la collection [Images](https://reference.aspose.com/pdf/fr/net/aspose.pdf/resources/properties/images). Pour extraire une page particulière, récupérez ensuite l'image de la collection Images en utilisant l'index particulier de l'image.
 
-L'index de l'image renvoie un objet [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Cet objet fournit une méthode Save qui peut être utilisée pour sauvegarder l'image extraite. Le code suivant montre comment extraire des images d'un fichier PDF.
+L'index de l'image renvoie un objet [XImage](https://reference.aspose.com/pdf/fr/net/aspose.pdf/ximage). Cet objet fournit une méthode Save qui peut être utilisée pour sauvegarder l'image extraite. Le code suivant montre comment extraire des images d'un fichier PDF.
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 

@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Las imágenes de fondo se pueden utilizar para agregar una marca de agua u otro diseño sutil a los documentos. En Aspose.PDF for .NET, cada documento PDF es una colección de páginas y cada página contiene una colección de artefactos. La clase [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) se puede utilizar para agregar una imagen de fondo a un objeto de página.
+Las imágenes de fondo se pueden utilizar para agregar una marca de agua u otro diseño sutil a los documentos. En Aspose.PDF for .NET, cada documento PDF es una colección de páginas y cada página contiene una colección de artefactos. La clase [BackgroundArtifact](https://reference.aspose.com/pdf/es/net/aspose.pdf/backgroundartifact) se puede utilizar para agregar una imagen de fondo a un objeto de página.
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 

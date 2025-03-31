@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-为了从 PDF 文件中获取 XMP 元数据，您需要创建 [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) 对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 方法绑定 PDF 文件。您可以将特定的 XMP 元数据属性传递给 [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) 对象以获取其值。以下代码片段向您展示了如何从 PDF 文件中获取 XMP 元数据。
+为了从 PDF 文件中获取 XMP 元数据，您需要创建 [PdfXmpMetadata](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfxmpmetadata) 对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/facade/methods/bindpdf/index) 方法绑定 PDF 文件。您可以将特定的 XMP 元数据属性传递给 [PdfXmpMetadata](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfxmpmetadata) 对象以获取其值。以下代码片段向您展示了如何从 PDF 文件中获取 XMP 元数据。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

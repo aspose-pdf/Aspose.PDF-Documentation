@@ -77,9 +77,9 @@ draft: false
 
 ## Obtener Preferencia del Visor de un Archivo PDF Existente
 
-[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) la clase representa los modos de visualización de archivos PDF; por ejemplo, posicionar la ventana del documento en el centro de la pantalla, ocultar la barra de menú de la aplicación del visor, etc.
+[ViewerPreference](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/viewerpreference) la clase representa los modos de visualización de archivos PDF; por ejemplo, posicionar la ventana del documento en el centro de la pantalla, ocultar la barra de menú de la aplicación del visor, etc.
 
-Para leer la configuración, utilizamos la clase [GetViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference). Este método devuelve una variable donde se guardan todas las configuraciones.
+Para leer la configuración, utilizamos la clase [GetViewerPreference](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference). Este método devuelve una variable donde se guardan todas las configuraciones.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

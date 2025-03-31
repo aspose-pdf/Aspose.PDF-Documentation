@@ -87,10 +87,10 @@ sitemap:
 
 خطوات إنشاء إضافة المؤشر:
 
-1. تحميل ملف PDF - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. إنشاء إضافة مؤشر جديدة [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) وتعيين معلمات المؤشر (new Rectangle، title، Subject، Flags، color، width، StartingStyle و EndingStyle). تُستخدم هذه الإضافة للإشارة إلى إدخال النص.
-1. إنشاء إضافة مؤشر جديدة [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) وتعيين معلمات المؤشر (new Rectangle، title، Subject، Flags، color، width، StartingStyle و EndingStyle). تُستخدم هذه الإضافة للإشارة إلى استبدال النص.
-1. إنشاء إضافة [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) جديدة وتعيين المعلمات (new Rectangle، title، color، new QuadPoints و new points، Subject، InReplyTo، ReplyType).
+1. تحميل ملف PDF - new [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. إنشاء إضافة مؤشر جديدة [Caret Annotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/caretannotation) وتعيين معلمات المؤشر (new Rectangle، title، Subject، Flags، color، width، StartingStyle و EndingStyle). تُستخدم هذه الإضافة للإشارة إلى إدخال النص.
+1. إنشاء إضافة مؤشر جديدة [Caret Annotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/caretannotation) وتعيين معلمات المؤشر (new Rectangle، title، Subject، Flags، color، width، StartingStyle و EndingStyle). تُستخدم هذه الإضافة للإشارة إلى استبدال النص.
+1. إنشاء إضافة [StrikeOutAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/strikeoutannotation) جديدة وتعيين المعلمات (new Rectangle، title، color، new QuadPoints و new points، Subject، InReplyTo، ReplyType).
 1. بعد ذلك يمكننا إضافة الإضافات إلى الصفحة.
 
 تظهر مقتطفات الكود التالية كيفية إضافة إضافة المؤشر إلى ملف PDF:
@@ -249,7 +249,7 @@ private static void RedactPage()
 
 ### نهج الواجهات
 
-تحتوي مساحة الأسماء Aspose.Pdf.Facades أيضًا على فئة تسمى [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) التي توفر ميزة التلاعب بالإضافات الموجودة داخل ملف PDF. تحتوي هذه الفئة على طريقة تسمى [RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) التي توفر القدرة على إزالة مناطق معينة من الصفحة.
+تحتوي مساحة الأسماء Aspose.Pdf.Facades أيضًا على فئة تسمى [PdfAnnotationEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfannotationeditor) التي توفر ميزة التلاعب بالإضافات الموجودة داخل ملف PDF. تحتوي هذه الفئة على طريقة تسمى [RedactArea(..)](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) التي توفر القدرة على إزالة مناطق معينة من الصفحة.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

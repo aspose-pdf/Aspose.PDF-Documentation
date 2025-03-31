@@ -85,8 +85,8 @@ Aspose.PDF可以从PDF文件中删除附件。PDF文档的附件保存在Documen
 
 要删除与PDF文件关联的所有附件：
 
-1. 调用[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)集合的[Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete)方法。
-1. 使用[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)对象的[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)方法保存更新后的文件。
+1. 调用[EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection)集合的[Delete](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection/methods/delete)方法。
+1. 使用[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)对象的[Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4)方法保存更新后的文件。
 
 以下代码片段演示了如何从PDF文档中删除附件。
 

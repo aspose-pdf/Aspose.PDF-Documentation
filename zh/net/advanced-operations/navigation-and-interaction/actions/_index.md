@@ -1,12 +1,12 @@
 ---
-title: 在PDF中处理动作
-linktitle: 动作
+title: 在 PDF 中使用操作
+linktitle: 操作
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /zh/net/actions/
-description: 本节介绍如何通过C#编程方式向文档和表单字段添加动作。
+description: 本节解释如何使用 C# 程序化地向文档和表单字段添加操作。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Working with Actions in PDF",
     "alternativeHeadline": "Programmatic Actions in PDF with C#",
-    "abstract": "Aspose.PDF for .NET中的新功能允许开发者以编程方式向PDF添加动作，增强文档内的交互性。用户可以实现在文档内导航或跳转至外部URL的超链接，以及操控文档打开动作以控制PDF打开时的显示方式。这一强大功能简化了C#应用程序中文档的创建与交互流程",
+    "abstract": "Aspose.PDF for .NET 中的新功能允许开发人员以编程方式向 PDF 添加操作，从而增强文档的交互性。用户可以实现超链接以在文档内或外部 URL 之间导航，以及操作文档打开操作以控制 PDF 打开时的显示方式。这一强大的功能简化了 C# 应用程序的文档创建和交互。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "C#, PDF actions, hyperlink creation, LinkAnnotation, LocalHyperlink, FreeTextAnnotation, document open action, XYZExplicitDestination, Aspose.PDF, PDF manipulation",
-    "wordcount": "2704",
+    "wordcount": "2007",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,33 +74,33 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/actions/"
     },
-    "dateModified": "2025-03-29",
-    "description": "本节介绍如何通过C#编程方式向文档和表单字段添加动作。"
+    "dateModified": "2024-11-25",
+    "description": "本节解释如何使用 C# 程序化地向文档和表单字段添加操作。"
 }
 </script>
 
-以下代码片段同样适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
+以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
-## 在PDF文件中添加超链接
+## 在 PDF 文件中添加超链接
 
-可以向PDF文件添加超链接，允许读者导航至PDF的另一部分或外部内容。
+可以向 PDF 文件添加超链接，以便允许读者导航到 PDF 的另一部分或外部内容。
 
-添加网页超链接至PDF文档的步骤：
+为了向 PDF 文档添加网页超链接：
 
-1. 创建[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)类对象。
-1. 获取要添加链接的[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)类。
-1. 使用Page和[Rectangle](https://reference.aspose.com/pdf/zh/net/aspose.pdf/rectangle)对象创建[LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation)对象。矩形对象用于指定链接在页面上的位置。
-1. 将Action属性设置为[GoToURIAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/gotouriaction)对象，指定远程URI的位置。
-1. 要显示超链接文本，在与[LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation)对象相同位置添加文本字符串。
-1. 添加自由文本：
+1. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象。
+1. 获取要添加链接的 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 类。
+1. 使用 Page 和 [Rectangle](https://reference.aspose.com/pdf/zh/net/aspose.pdf/rectangle) 对象创建一个 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 对象。矩形对象用于指定链接应添加到页面上的位置。
+1. 将 Action 属性设置为指定远程 URI 位置的 [GoToURIAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/gotouriaction) 对象。
+1. 要显示超链接文本，请在与 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 对象放置位置相似的位置添加文本字符串。
+1. 要添加自由文本：
 
-- 实例化[FreeTextAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation)对象。它也接受Page和Rectangle对象作为参数，因此可以提供与LinkAnnotation构造函数相同的值。
-- 使用[FreeTextAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation)对象的Contents属性，指定输出PDF中应显示的字符串。
-- 可选地，将[LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation)和FreeTextAnnotation对象的边框宽度设为0，使其不在PDF文档中显示。
-- 定义好[LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation)和[FreeTextAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation)对象后，将这些链接添加到[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)对象的Annotations集合中。
-- 最后，使用[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)对象的[Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save)方法保存更新后的PDF。
+- 实例化一个 [FreeTextAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation) 对象。它也接受 Page 和 Rectangle 对象作为参数，因此可以提供与 LinkAnnotation 构造函数中指定的相同值。
+- 使用 [FreeTextAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation) 对象的 Contents 属性，指定应在输出 PDF 中显示的字符串。
+- 可选地，将 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 和 FreeTextAnnotation 对象的边框宽度设置为 0，以便它们不出现在 PDF 文档中。
+- 一旦定义了 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 和 [FreeTextAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation) 对象，将这些链接添加到 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象的 Annotations 集合中。
+- 最后，使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF。
 
-以下代码片段展示如何在PDF文件中添加超链接。
+以下代码片段演示了如何向 PDF 文件添加超链接。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -186,102 +186,11 @@ private static void AddHyperlink()
 {{< /tab >}}
 {{< /tabs >}}
 
-另一个常见场景是使用TextFragmentAbsorber查找文档中的特定文本，并将其区域设置为指向网站的链接。以下是实现此功能的代码片段。
+## 创建指向同一 PDF 中页面的超链接
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
-{{< tab tabNum="1" >}}
+Aspose.PDF for .NET 为 PDF 创建和操作提供了一个很好的功能。它还提供了向 PDF 页面添加链接的功能，链接可以指向另一个 PDF 文件中的页面、网页 URL、启动应用程序的链接，甚至指向同一 PDF 文件中的页面。为了添加本地超链接（指向同一 PDF 文件中的页面），在 Aspose.PDF 命名空间中添加了一个名为 [LocalHyperlink](https://reference.aspose.com/pdf/zh/net/aspose.pdf/localhyperlink) 的类，该类具有一个名为 TargetPageNumber 的属性，用于指定超链接的目标/目的页面。
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddHyperlinkForExistingText()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf"))
-    {
-        // Get page
-        var page = document.Pages[1];
-
-        // The text in the document for which we want to create a link
-        string textForLink = "Portable Document Format";
-
-        // Finding the location of text on a page
-        var textFragmentAbsosrber = new Aspose.Pdf.Text.TextFragmentAbsorber(textForLink);
-        page.Accept(textFragmentAbsosrber);
-        foreach(Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
-        {
-            // Create Link annotation object
-            var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, textFragment.Rectangle);
-            // Create border object for LinkAnnotation
-            var border = new Aspose.Pdf.Annotations.Border(link);
-            // Set the border width value as 0
-            border.Width = 0;
-            // Set the border for LinkAnnotation
-            link.Border = border;
-            // Specify the link type as remote URI
-            link.Action = new Aspose.Pdf.Annotations.GoToURIAction("https://www.pdfa-inc.org/");
-            // Add link annotation to annotations collection of first page of PDF file
-            page.Annotations.Add(link);
-        }
-
-        // Save PDF document
-        document.Save(dataDir + "AddHyperlink_out.pdf");
-    }
-}
-```
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddHyperlinkForExistingText()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-
-    // Open PDF document
-    using var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf");
-
-    // Get page
-    var page = document.Pages[1];
-
-    // The text in the document for which we want to create a link
-    string textForLink = "Portable Document Format";
-
-    // Finding the location of text on a page
-    var textFragmentAbsosrber = new Aspose.Pdf.Text.TextFragmentAbsorber(textForLink);
-    page.Accept(textFragmentAbsosrber);
-    foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
-    {
-        // Create Link annotation object
-        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, textFragment.Rectangle);
-        // Create border object for LinkAnnotation
-        var border = new Aspose.Pdf.Annotations.Border(link);
-        // Set the border width value as 0
-        border.Width = 0;
-        // Set the border for LinkAnnotation
-        link.Border = border;
-        // Specify the link type as remote URI
-        link.Action = new Aspose.Pdf.Annotations.GoToURIAction("https://www.pdfa-inc.org/");
-        // Add link annotation to annotations collection of first page of PDF file
-        page.Annotations.Add(link);
-    }
-
-    // Save PDF document
-    document.Save(dataDir + "AddHyperlink_out.pdf");
-}
-```
-{{< /tab >}}
-{{< /tabs >}}
-
-## 创建指向同一PDF内页面的超链接
-
-Aspose.PDF for .NET为PDF创建及操作提供了强大功能，包括添加指向PDF页面的链接。链接可以指向另一个PDF文件的页面、网页URL、启动应用程序，甚至是同一PDF文件内的页面。要添加本地超链接（指向同一PDF内页面的链接），Aspose.PDF命名空间中新增了[LocalHyperlink](https://reference.aspose.com/pdf/zh/net/aspose.pdf/localhyperlink)类，该类具有TargetPageNumber属性，用于指定超链接的目标页面。
-
-添加本地超链接需要创建TextFragment，以便将链接与TextFragment关联。[TextFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragment)类具有Hyperlink属性，用于关联LocalHyperlink实例。以下代码片段展示了实现此需求的步骤。
+为了添加本地超链接，我们需要创建一个 TextFragment，以便链接可以与 TextFragment 关联。[TextFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragment) 类具有一个名为 Hyperlink 的属性，用于关联 LocalHyperlink 实例。以下代码片段展示了实现此要求的步骤。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -369,20 +278,20 @@ private static void AddHyperlink()
 {{< /tab >}}
 {{< /tabs >}}
 
-## 获取PDF超链接目标（URL）
+## 获取 PDF 超链接目标 (URL)
 
-在PDF文件中，链接以注释形式表示，可以添加、更新或删除。Aspose.PDF for .NET还支持获取PDF文件中超链接的目标（URL）。
+链接在 PDF 文件中表示为注释，可以添加、更新或删除。Aspose.PDF for .NET 还支持获取 PDF 文件中超链接的目标 (URL)。
 
-获取链接URL的步骤：
+要获取链接的 URL：
 
-1. 创建[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)对象。
-1. 获取要提取链接的[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)。
-1. 使用[AnnotationSelector](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationselector)类从指定页面提取所有[LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation)对象。
-1. 将[AnnotationSelector](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationselector)对象传递给[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)对象的Accept方法。
-1. 使用[AnnotationSelector](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationselector)对象的Selected属性将所有选中的链接注释存入IList对象。
-1. 最后，将LinkAnnotation的Action提取为GoToURIAction。
+1. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
+1. 获取要提取链接的 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)。
+1. 使用 [AnnotationSelector](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationselector) 类从指定页面提取所有 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 对象。
+1. 将 [AnnotationSelector](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationselector) 对象传递给 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象的 Accept 方法。
+1. 使用 [AnnotationSelector](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationselector) 对象的 Selected 属性将所有选定的链接注释提取到 IList 对象中。
+1. 最后，提取 LinkAnnotation Action 作为 GoToURIAction。
 
-以下代码片段展示如何从PDF文件中获取超链接目标（URL）。
+以下代码片段展示了如何从 PDF 文件中获取超链接目标 (URL)。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -455,11 +364,11 @@ private static void GetHyperlink()
 
 ## 获取超链接文本
 
-超链接由两部分组成：文档中显示的文本和目标URL。某些情况下，我们需要的是文本而非URL。
+超链接有两个部分：文档中显示的文本和目标 URL。在某些情况下，我们需要的是文本而不是 URL。
 
-PDF文件中的文本和注释/动作由不同实体表示。页面上的文本仅是一组单词和字符，而注释则带来一些交互性，如超链接的固有特性。
+PDF 文件中的文本和注释/操作由不同的实体表示。页面上的文本只是一个单词和字符的集合，而注释则带来一些交互性，例如超链接所固有的交互性。
 
-要查找URL内容，需要同时处理注释和文本。[Annotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotation)对象本身不包含文本，而是位于页面文本下方。因此，要获取文本，注释提供URL的边界，而文本对象提供URL内容。请参阅以下代码片段。
+要查找 URL 内容，您需要同时处理注释和文本。[Annotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotation) 对象本身没有文本，而是位于页面上的文本下方。因此，要获取文本，注释提供了 URL 的边界，而文本对象提供了 URL 内容。请参见以下代码片段。
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -544,16 +453,16 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 {{< /tab >}}
 {{< /tabs >}}
 
-## 从PDF文件中移除文档打开动作
+## 从 PDF 文件中移除文档打开操作
 
-[如何在查看文档时指定PDF页面](#how-to-specify-pdf-page-when-viewing-document)解释了如何设置文档打开时显示非首页。当合并多个文档且其中一个或多个设置了GoTo动作时，可能需要移除它们。例如，合并两个文档且第二个文档有跳转至第二页的GoTo动作，输出文档将在合并后文档的第二页打开，而非第一页。为避免此行为，需移除打开动作命令。
+[如何在查看文档时指定 PDF 页面](#how-to-specify-pdf-page-when-viewing-document) 解释了如何告诉文档在不同于第一页的页面上打开。当连接多个文档时，如果一个或多个文档设置了 GoTo 操作，您可能希望移除它们。例如，如果合并两个文档，而第二个文档具有将您带到第二页的 GoTo 操作，则输出文档将在第二个文档的第二页打开，而不是合并文档的第一页。为了避免这种行为，请移除打开操作命令。
 
-移除打开动作的步骤：
+要移除打开操作：
 
-1. 将[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)对象的[OpenAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/openaction)属性设为null。
-1. 使用Document对象的[Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save)方法保存更新后的PDF。
+1. 将 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [OpenAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/openaction) 属性设置为 null。
+1. 使用 Document 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF。
 
-以下代码片段展示如何从PDF文件中移除文档打开动作。
+以下代码片段展示了如何从 PDF 文件中移除文档打开操作。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -598,11 +507,11 @@ private static void RemoveOpenAction()
 {{< /tab >}}
 {{< /tabs >}}
 
-## 如何在查看文档时指定PDF页面 {#how-to-specify-pdf-page-when-viewing-document}
+## 如何在查看文档时指定 PDF 页面 {#how-to-specify-pdf-page-when-viewing-document}
 
-在Adobe Reader等PDF查看器中查看PDF文件时，通常会在第一页打开。但可以设置文件在其他页面打开。
+在 PDF 查看器（如 Adobe Reader）中查看 PDF 文件时，文件通常在第一页打开。然而，可以设置文件在不同的页面上打开。
 
-[XYZExplicitDestination](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/xyzexplicitdestination)类允许指定要打开的PDF文件中的页面。将GoToAction对象值传递给[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)类的OpenAction属性时，文档将在XYZExplicitDestination对象指定的页面打开。以下代码片段展示如何将页面指定为文档打开动作。
+[XYZExplicitDestination](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/xyzexplicitdestination) 类允许您指定要打开的 PDF 文件中的页面。当将 GoToAction 对象值传递给 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的 OpenAction 属性时，文档将在与 XYZExplicitDestination 对象指定的页面上打开。以下代码片段展示了如何指定页面作为文档打开操作。
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -93,13 +93,13 @@ En la versión de evaluación, solo puedes procesar las primeras cuatro páginas
 
 La licencia se puede cargar desde un archivo o un objeto de flujo. La forma más fácil de establecer una licencia es colocar el archivo de licencia en la misma carpeta que el archivo Aspose.PDF.dll y especificar el nombre del archivo sin una ruta, como se muestra en el ejemplo a continuación.
 
-Si utilizas cualquier otro componente de Aspose para .NET junto con Aspose.PDF for .NET, por favor especifica el espacio de nombres para License como [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license).
+Si utilizas cualquier otro componente de Aspose para .NET junto con Aspose.PDF for .NET, por favor especifica el espacio de nombres para License como [Aspose.Pdf.License](https://reference.aspose.com/pdf/es/net/aspose.pdf/license).
 
 ### Cargando una licencia desde un archivo
 
 La forma más fácil de aplicar una licencia es colocar el archivo de licencia en la misma carpeta que el archivo Aspose.PDF.dll y especificar solo el nombre del archivo sin una ruta.
 
-Cuando llames al método [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index), el nombre de la licencia que pases debe ser el de tu archivo de licencia. Por ejemplo, si cambias el nombre del archivo de licencia a "Aspose.PDF.lic.xml", pasa ese nombre de archivo al método Pdf.SetLicense(…).
+Cuando llames al método [SetLicense](https://reference.aspose.com/pdf/es/net/aspose.pdf/license/methods/setlicense/index), el nombre de la licencia que pases debe ser el de tu archivo de licencia. Por ejemplo, si cambias el nombre del archivo de licencia a "Aspose.PDF.lic.xml", pasa ese nombre de archivo al método Pdf.SetLicense(…).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

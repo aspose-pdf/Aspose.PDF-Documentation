@@ -81,7 +81,7 @@ sitemap:
 
 عند اختيار هذا الخيار، ستُدرج تعليقاتك في ملف PDF المصدّر كتعليقات وفقًا لمعايير PDF.
 
-تحقق من كيفية استخدام طريقة [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) في مقتطف الكود التالي.
+تحقق من كيفية استخدام طريقة [flatteningAnnotations](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) في مقتطف الكود التالي.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

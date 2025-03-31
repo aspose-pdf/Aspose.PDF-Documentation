@@ -83,7 +83,7 @@ sitemap:
 
 ## **C# 中的 PDF 到 Postscript**
 
-[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) 类提供打印 PDF 文档的能力，并且借助此类，我们还可以将 PDF 文件转换为 PostScript 格式。要将 PDF 文件转换为 PostScript，首先安装任何 PS 打印机，然后借助 PdfViewer 打印到文件。有关安装 PS 打印机的说明，请参考您的打印机供应商提供的说明。以下代码片段向您展示如何打印并将 PDF 转换为 PostScript 格式。
+[PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer/) 类提供打印 PDF 文档的能力，并且借助此类，我们还可以将 PDF 文件转换为 PostScript 格式。要将 PDF 文件转换为 PostScript，首先安装任何 PS 打印机，然后借助 PdfViewer 打印到文件。有关安装 PS 打印机的说明，请参考您的打印机供应商提供的说明。以下代码片段向您展示如何打印并将 PDF 转换为 PostScript 格式。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -158,7 +158,7 @@ private static void PrintToPostscriptFile()
 
 ## 检查打印作业状态
 
-PDF 文件可以打印到物理打印机，也可以打印到 Microsoft XPS Document Writer，而无需显示打印对话框，使用 [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) 类。当打印大型 PDF 文件时，过程可能需要很长时间，因此用户可能不确定打印过程是否完成或遇到问题。要确定打印作业的状态，请使用 [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/) 属性。以下代码片段向您展示如何将 PDF 文件打印到 XPS 文件并获取打印状态。
+PDF 文件可以打印到物理打印机，也可以打印到 Microsoft XPS Document Writer，而无需显示打印对话框，使用 [PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer/) 类。当打印大型 PDF 文件时，过程可能需要很长时间，因此用户可能不确定打印过程是否完成或遇到问题。要确定打印作业的状态，请使用 [PrintStatus](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer/printstatus/) 属性。以下代码片段向您展示如何将 PDF 文件打印到 XPS 文件并获取打印状态。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -299,7 +299,7 @@ private static void CheckingPrintJobStatus()
 
 ## 获取/设置打印作业所有者名称
 
-有时需要获取或设置打印作业所有者名称（即，实际在网页上按下打印按钮的用户）。在打印 PDF 文件时需要此信息。为了实现此要求，使用属性 [PrinterJobName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printerjobname/)。
+有时需要获取或设置打印作业所有者名称（即，实际在网页上按下打印按钮的用户）。在打印 PDF 文件时需要此信息。为了实现此要求，使用属性 [PrinterJobName](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer/printerjobname/)。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

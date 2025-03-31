@@ -80,7 +80,7 @@ sitemap:
 
 ## Agregar sello de página con C\#
 
-Un [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) se puede usar cuando necesitas aplicar un sello compuesto que contenga gráficos, texto y tablas. El siguiente ejemplo muestra cómo usar un sello para crear papelería como en Adobe InDesign, Illustrator, Microsoft Word. Supongamos que tenemos un documento de entrada y queremos aplicar 2 tipos de borde con color azul y ciruela.
+Un [PdfPageStamp](https://reference.aspose.com/pdf/es/net/aspose.pdf/PdfPageStamp) se puede usar cuando necesitas aplicar un sello compuesto que contenga gráficos, texto y tablas. El siguiente ejemplo muestra cómo usar un sello para crear papelería como en Adobe InDesign, Illustrator, Microsoft Word. Supongamos que tenemos un documento de entrada y queremos aplicar 2 tipos de borde con color azul y ciruela.
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 

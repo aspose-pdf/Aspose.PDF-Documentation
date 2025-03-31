@@ -77,7 +77,7 @@ draft: false
 
 ## 使用文件路径提取两个数字之间的 PDF 页面
 
-[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您从 PDF 文件中提取指定范围的页面。此重载允许您在操作磁盘上的 PDF 文件时提取页面。此重载需要以下参数：输入文件路径、起始页面、结束页面和输出文件路径。从起始页面到结束页面的页面将被提取，输出将保存在磁盘上。以下代码片段演示了如何使用文件路径提取两个数字之间的 PDF 页面。
+[Extract](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您从 PDF 文件中提取指定范围的页面。此重载允许您在操作磁盘上的 PDF 文件时提取页面。此重载需要以下参数：输入文件路径、起始页面、结束页面和输出文件路径。从起始页面到结束页面的页面将被提取，输出将保存在磁盘上。以下代码片段演示了如何使用文件路径提取两个数字之间的 PDF 页面。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -96,7 +96,7 @@ private static void Extract_PDFPages_FilePaths()
 
 ## 使用文件路径提取 PDF 页面数组
 
-如果您不想提取一系列页面，而是特定页面的集合，[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法也允许您这样做。您首先需要创建一个包含所有需要提取的页面编号的整数数组。此重载的 [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法需要以下参数：输入 PDF 文件、要提取的页面的整数数组和输出 PDF 文件。以下代码片段演示了如何使用文件路径提取 PDF 页面。
+如果您不想提取一系列页面，而是特定页面的集合，[Extract](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法也允许您这样做。您首先需要创建一个包含所有需要提取的页面编号的整数数组。此重载的 [Extract](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法需要以下参数：输入 PDF 文件、要提取的页面的整数数组和输出 PDF 文件。以下代码片段演示了如何使用文件路径提取 PDF 页面。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -122,7 +122,7 @@ private static void Extract_PDFPages_Streams()
 
 ## 使用流提取两个数字之间的 PDF 页面
 
-[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您使用流提取一系列页面。您需要将以下参数传递给此重载：输入流、起始页面、结束页面和输出流。从输入流中提取的页面将根据起始页面和结束页面之间的范围进行提取，并保存到输出流中。以下代码片段演示了如何使用流提取两个数字之间的 PDF 页面。
+[Extract](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您使用流提取一系列页面。您需要将以下参数传递给此重载：输入流、起始页面、结束页面和输出流。从输入流中提取的页面将根据起始页面和结束页面之间的范围进行提取，并保存到输出流中。以下代码片段演示了如何使用流提取两个数字之间的 PDF 页面。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -141,7 +141,7 @@ private static void Extract_ArrayPDFPages_FilePaths()
 
 ## 使用流提取 PDF 页面数组
 
-可以从 PDF 流中提取页面数组，并使用适当的 [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法重载将其保存到输出流中。如果您不想提取一系列页面，而是特定页面的集合，[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法也允许您这样做。您首先需要创建一个包含所有需要提取的页面编号的整数数组。此重载的 [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法需要以下参数：输入流、要提取的页面的整数数组和输出流。以下代码片段演示了如何使用流提取 PDF 页面。
+可以从 PDF 流中提取页面数组，并使用适当的 [Extract](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法重载将其保存到输出流中。如果您不想提取一系列页面，而是特定页面的集合，[Extract](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法也允许您这样做。您首先需要创建一个包含所有需要提取的页面编号的整数数组。此重载的 [Extract](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 方法需要以下参数：输入流、要提取的页面的整数数组和输出流。以下代码片段演示了如何使用流提取 PDF 页面。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

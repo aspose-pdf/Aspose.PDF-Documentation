@@ -77,7 +77,7 @@ draft: false
 
 ## Извлечение изображения из штампа изображения
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) класс позволяет вам извлекать изображения из штампа в PDF-файле. Сначала вам нужно создать объект класса [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). После этого вызовите метод [GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps), чтобы получить массив объектов StampInfo с определенной страницы PDF-файла. Затем вы можете получить изображение из StampInfo, используя свойство StampInfo.Image. Как только вы получите изображение, вы можете сохранить его или работать с различными свойствами изображения. Следующий фрагмент кода показывает, как извлечь изображение из штампа изображения.
+[PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor) класс позволяет вам извлекать изображения из штампа в PDF-файле. Сначала вам нужно создать объект класса [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.facade/bindpdf/methods/3). После этого вызовите метод [GetStamps](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps), чтобы получить массив объектов StampInfo с определенной страницы PDF-файла. Затем вы можете получить изображение из StampInfo, используя свойство StampInfo.Image. Как только вы получите изображение, вы можете сохранить его или работать с различными свойствами изображения. Следующий фрагмент кода показывает, как извлечь изображение из штампа изображения.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -136,7 +136,7 @@ private static void ExtractImageFromStamp()
 
 ## Изменение позиции штампа в PDF-файле
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) класс позволяет вам изменить позицию штампа в PDF-файле. Сначала вам нужно создать объект класса [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). После этого вызовите метод [MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) с индексом штампа и новой позицией на определенной странице PDF-файла. Затем вы можете сохранить обновленный файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save). Следующий фрагмент кода показывает, как переместить штамп на определенной странице.
+[PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor) класс позволяет вам изменить позицию штампа в PDF-файле. Сначала вам нужно создать объект класса [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.facade/bindpdf/methods/3). После этого вызовите метод [MoveStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) с индексом штампа и новой позицией на определенной странице PDF-файла. Затем вы можете сохранить обновленный файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save). Следующий фрагмент кода показывает, как переместить штамп на определенной странице.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void ChangeStampPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-Кроме того, вы можете использовать метод [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid), чтобы переместить конкретный штамп, используя StampId.
+Кроме того, вы можете использовать метод [MoveStampById](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid), чтобы переместить конкретный штамп, используя StampId.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

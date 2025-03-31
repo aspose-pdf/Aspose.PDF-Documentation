@@ -86,7 +86,7 @@ draft: false
 
 {{% /alert %}}
 
-为了解密 PDF 文件，您需要创建 [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) 对象，然后调用 [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 方法。您还需要将所有者密码传递给 [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 方法。以下代码片段向您展示了如何解密 PDF 文件。
+为了解密 PDF 文件，您需要创建 [PdfFileSecurity](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity) 对象，然后调用 [DecryptFile](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 方法。您还需要将所有者密码传递给 [DecryptFile](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 方法。以下代码片段向您展示了如何解密 PDF 文件。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

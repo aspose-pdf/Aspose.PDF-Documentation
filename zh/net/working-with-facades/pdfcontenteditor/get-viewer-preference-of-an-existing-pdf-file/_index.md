@@ -77,9 +77,9 @@ draft: false
 
 ## 获取现有 PDF 文件的查看器偏好设置
 
-[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) 类表示 PDF 文件的显示模式；例如，将文档窗口定位在屏幕中央，隐藏查看器应用程序的菜单栏等。
+[ViewerPreference](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/viewerpreference) 类表示 PDF 文件的显示模式；例如，将文档窗口定位在屏幕中央，隐藏查看器应用程序的菜单栏等。
 
-为了读取设置，我们使用 [GetViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference) 类。此方法返回一个变量，其中保存了所有设置。
+为了读取设置，我们使用 [GetViewerPreference](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference) 类。此方法返回一个变量，其中保存了所有设置。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

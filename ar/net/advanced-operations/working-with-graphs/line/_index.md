@@ -83,21 +83,21 @@ sitemap:
 
 ## إضافة كائن خط
 
-يدعم Aspose.PDF for .NET ميزة إضافة كائنات رسم (مثل الرسم البياني، الخط، المستطيل، إلخ) إلى مستندات PDF. يمكنك أيضًا الاستفادة من إضافة كائن [خط](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/line) حيث يمكنك أيضًا تحديد نمط الخط، اللون، والتنسيقات الأخرى لعنصر الخط.
+يدعم Aspose.PDF for .NET ميزة إضافة كائنات رسم (مثل الرسم البياني، الخط، المستطيل، إلخ) إلى مستندات PDF. يمكنك أيضًا الاستفادة من إضافة كائن [خط](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/line) حيث يمكنك أيضًا تحديد نمط الخط، اللون، والتنسيقات الأخرى لعنصر الخط.
 
 اتبع الخطوات أدناه:
 
-1. إنشاء مستند PDF جديد [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. إضافة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) إلى مجموعة الصفحات في ملف PDF.
-1. إنشاء مثيل [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph).
+1. إنشاء مستند PDF جديد [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. إضافة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) إلى مجموعة الصفحات في ملف PDF.
+1. إنشاء مثيل [Graph](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/graph).
 1. إضافة كائن Graph إلى مجموعة الفقرات في مثيل الصفحة.
-1. إنشاء مثيل [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle).
+1. إنشاء مثيل [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle).
 1. تعيين عرض الخط.
-1. إضافة كائن [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) إلى مجموعة الأشكال في كائن Graph.
+1. إضافة كائن [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle) إلى مجموعة الأشكال في كائن Graph.
 
 1. حفظ ملف PDF الخاص بك.
 
-تظهر مقتطفات الشيفرة التالية كيفية إضافة كائن [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) مملوء باللون.
+تظهر مقتطفات الشيفرة التالية كيفية إضافة كائن [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle) مملوء باللون.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

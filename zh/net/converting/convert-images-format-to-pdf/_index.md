@@ -155,7 +155,7 @@ _格式_：**DJVU**
 
 <a name="csharp-bmp-to-pdf" id="csharp-bmp-to-pdf"><strong>步骤：在 C# 中将 BMP 转换为 PDF</strong></a>
 
-1. 初始化一个新的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类对象。
+1. 初始化一个新的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象。
 2. 加载输入 **BMP** 图像。
 3. 最后，保存输出 PDF 文件。
 
@@ -201,8 +201,8 @@ Aspose 为您提供在线免费应用程序 ["BMP to PDF"](https://products.aspo
 
 <a name="csharp-cgm-to-pdf" id="csharp-cgm-to-pdf"><strong>步骤：在 C# 中将 CGM 转换为 PDF</strong></a>
 
-1. 创建一个 [CgmLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions) 类的实例。
-2. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类的实例，并提及源文件名和选项。
+1. 创建一个 [CgmLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cgmloadoptions) 类的实例。
+2. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的实例，并提及源文件名和选项。
 3. 使用所需的文件名保存文档。
 
 ```csharp
@@ -233,7 +233,7 @@ private static void ConvertCGMtoPDF()
 
 1. 创建一个 Image 类的对象。
 2. 将图像添加到页面的段落集合中。
-3. 指定 [FileType](https://reference.aspose.com/pdf/net/aspose.pdf/image/properties/filetype) 属性。
+3. 指定 [FileType](https://reference.aspose.com/pdf/zh/net/aspose.pdf/image/properties/filetype) 属性。
 4. 指定文件的路径或来源。
     - 如果图像位于硬盘上的某个位置，请使用 Image.File 属性指定路径位置。
     - 如果图像放置在 MemoryStream 中，请将持有图像的对象传递给 Image.ImageStream 属性。
@@ -280,7 +280,7 @@ Aspose 为您提供在线免费应用程序 ["DICOM to PDF"](https://products.as
 
 <a name="csharp-emf-to-pdf" id="csharp-emf-to-pdf"><strong>步骤：在 C# 中将 EMF 转换为 PDF</strong></a>
 
-1. 首先，初始化 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类对象。
+1. 首先，初始化 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象。
 2. 加载 **EMF** 图像文件。
 3. 将加载的 EMF 图像添加到页面。
 4. 保存 PDF 文档。
@@ -336,7 +336,7 @@ Aspose 为您提供在线免费应用程序 ["EMF to PDF"](https://products.aspo
 
 <a name="csharp-gif-to-pdf" id="csharp-gif-to-pdf"><strong>步骤：在 C# 中将 GIF 转换为 PDF</strong></a>
 
-1. 初始化一个新的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类对象。
+1. 初始化一个新的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象。
 2. 加载输入 **GIF** 图像。
 3. 最后，保存输出 PDF 文件。
 
@@ -536,12 +536,12 @@ Aspose.PDF for .NET 为您提供在线免费应用程序 ["SVG to PDF"](https://
 [![Aspose.PDF 使用免费应用程序将 SVG 转换为 PDF](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
-要将 SVG 文件转换为 PDF，请使用名为 [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) 的类，该类用于初始化 [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) 对象。随后，该对象作为参数传递给 Document 对象的初始化，并帮助 PDF 渲染引擎确定源文档的输入格式。
+要将 SVG 文件转换为 PDF，请使用名为 [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) 的类，该类用于初始化 [`LoadOptions`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/loadoptions) 对象。随后，该对象作为参数传递给 Document 对象的初始化，并帮助 PDF 渲染引擎确定源文档的输入格式。
 
 <a name="csharp-svg-to-pdf" id="csharp-svg-to-pdf"><strong>步骤：在 C# 中将 SVG 转换为 PDF</strong></a>
 
-1. 创建一个 [`SvgLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) 类的实例。
-2. 创建一个 [`Document`](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类的实例，并提及源文件名和选项。
+1. 创建一个 [`SvgLoadOptions`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/loadoptions) 类的实例。
+2. 创建一个 [`Document`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的实例，并提及源文件名和选项。
 3. 使用所需的文件名保存文档。
 
 以下代码片段展示了将 SVG 文件转换为 PDF 格式的过程，使用 Aspose.PDF for .NET。
@@ -788,7 +788,7 @@ TIFF 或 TIF，标记图像文件格式，表示用于在符合此文件格式�
 
 <a name="csharp-tiff-to-pdf" id="csharp-tiff-to-pdf"><strong>步骤：在 C# 中将 TIFF 转换为 PDF</strong></a>
 
-1. 创建新的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类对象并添加页面。
+1. 创建新的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象并添加页面。
 2. 加载输入 **TIFF** 图像。
 3. 保存 PDF 文档。
 
@@ -877,8 +877,8 @@ private static void ConvertTIFFtoPDF()
 
 <a name="csharp-cdr-to-pdf" id="csharp-cdr-to-pdf"><strong>步骤：在 C# 中将 CDR 转换为 PDF</strong></a>
 
-1. 创建一个 [CdrLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cdrloadoptions/) 类的实例。
-2. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类的实例，并提及源文件名和选项。
+1. 创建一个 [CdrLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cdrloadoptions/) 类的实例。
+2. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的实例，并提及源文件名和选项。
 3. 使用所需的文件名保存文档。
 
 ```csharp
@@ -905,8 +905,8 @@ private static void ConvertCDRtoPDF()
 
 <a name="csharp-djvu-to-pdf" id="csharp-djvu-to-pdf"><strong>步骤：在 C# 中将 DJVU 转换为 PDF</strong></a>
 
-1. 创建一个 [DjvuLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/djvuloadoptions/) 类的实例。
-2. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类的实例，并提及源文件名和选项。
+1. 创建一个 [DjvuLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/djvuloadoptions/) 类的实例。
+2. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的实例，并提及源文件名和选项。
 3. 使用所需的文件名保存文档。
 
 ```csharp

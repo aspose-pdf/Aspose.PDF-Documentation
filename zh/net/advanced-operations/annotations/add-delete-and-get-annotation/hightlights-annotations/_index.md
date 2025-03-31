@@ -95,12 +95,12 @@ PDF 文档中的文本标记注释的属性可以使用 PDF 查看控件提供�
 
 为了向 PDF 文档添加文本标记注释，我们需要执行以下操作：
 
-1. 加载 PDF 文件 - 新建 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。
+1. 加载 PDF 文件 - 新建 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
 1. 创建注释：
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) 并设置参数（标题、颜色）。
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) 并设置参数（标题、颜色）。
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) 并设置参数（标题、颜色）。
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) 并设置参数（标题、颜色）。
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/highlightannotation) 并设置参数（标题、颜色）。
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/strikeoutannotation) 并设置参数（标题、颜色）。
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/squigglyannotation) 并设置参数（标题、颜色）。
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/underlineannotation) 并设置参数（标题、颜色）。
 1. 然后我们应该将所有注释添加到页面。
 
 ```csharp

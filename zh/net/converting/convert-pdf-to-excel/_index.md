@@ -138,7 +138,7 @@ Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to XLSX"](https:/
 [![Aspose.PDF 使用免费应用程序将 PDF 转换为 Excel](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-为了将 PDF 文件转换为 <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr> 格式，Aspose.PDF 有一个名为 [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) 的类。ExcelSaveOptions 类的对象作为第二个参数传递给 Document.Save(..) 构造函数。
+为了将 PDF 文件转换为 <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr> 格式，Aspose.PDF 有一个名为 [ExcelSaveOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/excelsaveoptions) 的类。ExcelSaveOptions 类的对象作为第二个参数传递给 Document.Save(..) 构造函数。
 
 以下代码片段展示了使用 Aspose.PDF for .NET 将 PDF 文件转换为 XLS 或 XLSX 格式的过程。
 
@@ -235,7 +235,7 @@ private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 ### 转换为 XML 电子表格 2003 格式
 
-自版本 20.8 起，Aspose.PDF 使用 Microsoft Excel Open XML 电子表格 2007 文件格式作为存储数据的默认格式。为了将 PDF 文件转换为 XML 电子表格 2003 格式，Aspose.PDF 有一个名为 [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) 的类，具有 [Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format)。将 [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) 类的对象作为第二个参数传递给 [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法。
+自版本 20.8 起，Aspose.PDF 使用 Microsoft Excel Open XML 电子表格 2007 文件格式作为存储数据的默认格式。为了将 PDF 文件转换为 XML 电子表格 2003 格式，Aspose.PDF 有一个名为 [ExcelSaveOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/excelsaveoptions) 的类，具有 [Format](https://reference.aspose.com/pdf/zh/net/aspose.pdf/excelsaveoptions/properties/format)。将 [ExcelSaveOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/excelsaveoptions) 类的对象作为第二个参数传递给 [Document.Save(..)](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法。
 
 以下代码片段展示了将 PDF 文件转换为 XLS Excel 2003 XML 格式的过程。
 

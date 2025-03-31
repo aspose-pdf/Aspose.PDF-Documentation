@@ -83,7 +83,7 @@ sitemap:
 
 ## **تحويل PDF إلى Postscript في C#**
 
-توفر فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) القدرة على طباعة مستندات PDF ومع مساعدة هذه الفئة، يمكننا أيضًا تحويل ملفات PDF إلى تنسيق PostScript. لتحويل ملف PDF إلى PostScript، أولاً قم بتثبيت أي طابعة PS ثم قم بالطباعة إلى ملف بمساعدة PdfViewer. لتثبيت طابعة PS، راجع التعليمات المقدمة من بائع الطابعة الخاص بك. يوضح مقتطف الكود التالي كيفية الطباعة وتحويل PDF إلى تنسيق PostScript.
+توفر فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/) القدرة على طباعة مستندات PDF ومع مساعدة هذه الفئة، يمكننا أيضًا تحويل ملفات PDF إلى تنسيق PostScript. لتحويل ملف PDF إلى PostScript، أولاً قم بتثبيت أي طابعة PS ثم قم بالطباعة إلى ملف بمساعدة PdfViewer. لتثبيت طابعة PS، راجع التعليمات المقدمة من بائع الطابعة الخاص بك. يوضح مقتطف الكود التالي كيفية الطباعة وتحويل PDF إلى تنسيق PostScript.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -158,7 +158,7 @@ private static void PrintToPostscriptFile()
 
 ## التحقق من حالة مهمة الطباعة
 
-يمكن طباعة ملف PDF إلى طابعة فعلية وكذلك إلى كاتب مستندات Microsoft XPS، دون عرض مربع حوار الطباعة، باستخدام فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) . عند طباعة ملفات PDF الكبيرة، قد تستغرق العملية وقتًا طويلاً لذلك قد لا يكون المستخدم متأكدًا مما إذا كانت عملية الطباعة قد اكتملت أو واجهت مشكلة. لتحديد حالة مهمة الطباعة، استخدم خاصية [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/) . يوضح مقتطف الكود التالي كيفية طباعة ملف PDF إلى ملف XPS والحصول على حالة الطباعة.
+يمكن طباعة ملف PDF إلى طابعة فعلية وكذلك إلى كاتب مستندات Microsoft XPS، دون عرض مربع حوار الطباعة، باستخدام فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/) . عند طباعة ملفات PDF الكبيرة، قد تستغرق العملية وقتًا طويلاً لذلك قد لا يكون المستخدم متأكدًا مما إذا كانت عملية الطباعة قد اكتملت أو واجهت مشكلة. لتحديد حالة مهمة الطباعة، استخدم خاصية [PrintStatus](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/printstatus/) . يوضح مقتطف الكود التالي كيفية طباعة ملف PDF إلى ملف XPS والحصول على حالة الطباعة.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -299,7 +299,7 @@ private static void CheckingPrintJobStatus()
 
 ## الحصول على/تعيين اسم مالك مهمة الطباعة
 
-أحيانًا يحدث الحاجة إلى الحصول على أو تعيين اسم مالك مهمة الطباعة (أي، المستخدم الفعلي الذي ضغط على زر الطباعة على صفحة الويب). هذه المعلومات مطلوبة عند طباعة ملف PDF. من أجل تحقيق هذا المتطلب، يتم استخدام خاصية [PrinterJobName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printerjobname/) .
+أحيانًا يحدث الحاجة إلى الحصول على أو تعيين اسم مالك مهمة الطباعة (أي، المستخدم الفعلي الذي ضغط على زر الطباعة على صفحة الويب). هذه المعلومات مطلوبة عند طباعة ملف PDF. من أجل تحقيق هذا المتطلب، يتم استخدام خاصية [PrinterJobName](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/printerjobname/) .
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

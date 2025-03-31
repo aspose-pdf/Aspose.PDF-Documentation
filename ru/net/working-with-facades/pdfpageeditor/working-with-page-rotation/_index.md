@@ -77,13 +77,13 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) класс предоставляет возможность поворачивать страницу.
+[PdfPageEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfpageeditor) класс предоставляет возможность поворачивать страницу.
 
 {{% /alert %}}
 
 ## Поворот страницы с использованием PageRotations
 
-Чтобы повернуть страницы в документе, мы можем использовать [PageRotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
+Чтобы повернуть страницы в документе, мы можем использовать [PageRotations](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
 `PageRotations` содержит номер страницы и угол поворота, ключ представляет номер страницы, значение ключа представляет угол поворота в градусах.
 
 ```csharp
@@ -114,7 +114,7 @@ draft: false
 
 ## Поворот страницы с использованием Rotation
 
-Мы также можем использовать [Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation) свойство. Поворот должен быть 0, 90, 180 или 270
+Мы также можем использовать [Rotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfpageeditor/properties/rotation) свойство. Поворот должен быть 0, 90, 180 или 270
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

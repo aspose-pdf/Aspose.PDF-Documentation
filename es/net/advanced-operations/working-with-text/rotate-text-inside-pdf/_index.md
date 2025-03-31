@@ -82,7 +82,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Rotar texto dentro de PDF usando la propiedad de rotación
 
-Al usar la propiedad de Rotación de la clase [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment), puedes rotar texto en varios ángulos. La rotación del texto se puede utilizar en diferentes escenarios de generación de documentos. Puedes especificar el ángulo de rotación en grados para rotar el texto según tus requisitos. Por favor, revisa los siguientes diferentes escenarios, en los que puedes implementar la rotación de texto.
+Al usar la propiedad de Rotación de la clase [TextFragment](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textfragment), puedes rotar texto en varios ángulos. La rotación del texto se puede utilizar en diferentes escenarios de generación de documentos. Puedes especificar el ángulo de rotación en grados para rotar el texto según tus requisitos. Por favor, revisa los siguientes diferentes escenarios, en los que puedes implementar la rotación de texto.
 
 ## Implementar rotación usando TextFragment y TextBuilder
 

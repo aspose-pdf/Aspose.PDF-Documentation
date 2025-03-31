@@ -118,7 +118,7 @@ _Формат_: **Word**
 
 <a name="csharp-pdf-to-doc"><strong>Шаги: Конвертация PDF в DOC на C#</strong></a>
 
-1. Создайте экземпляр объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) с исходным PDF документом.
+1. Создайте экземпляр объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/) с исходным PDF документом.
 2. Сохраните его в формате **SaveFormat.Doc**, вызвав метод **Document.Save()**.
 
 ```csharp
@@ -139,13 +139,13 @@ private static void ConvertPDFtoWord()
 
 ### Использование класса DocSaveOptions
 
-Класс [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) предоставляет множество свойств, которые улучшают конвертацию PDF файлов в формат DOC. Среди этих свойств, Mode позволяет вам указать режим распознавания для содержимого PDF. Вы можете выбрать любое значение из перечисления RecognitionMode для этого свойства. Каждое из этих значений имеет свои преимущества и ограничения:
+Класс [`DocSaveOptions`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/docsaveoptions) предоставляет множество свойств, которые улучшают конвертацию PDF файлов в формат DOC. Среди этих свойств, Mode позволяет вам указать режим распознавания для содержимого PDF. Вы можете выбрать любое значение из перечисления RecognitionMode для этого свойства. Каждое из этих значений имеет свои преимущества и ограничения:
 
-- Режим [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) быстрый и хорошо сохраняет оригинальный вид PDF файла, но редактируемость полученного документа может быть ограничена. Каждый визуально сгруппированный текстовый блок в оригинальном PDF преобразуется в текстовое поле в выходном документе. Это достигает максимального сходства с оригиналом, так что выходной документ выглядит хорошо, но состоит исключительно из текстовых полей, которые можно редактировать в Microsoft Word, что довольно сложно.
-- Режим [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) является полным режимом распознавания, где движок выполняет группировку и многоуровневый анализ, чтобы восстановить оригинальный документ в соответствии с намерением автора, создавая легко редактируемый документ. Ограничение заключается в том, что выходной документ может выглядеть иначе, чем оригинал.
+- Режим [`Textbox`](https://reference.aspose.com/pdf/ru/net/aspose.pdf.docsaveoptions/recognitionmode) быстрый и хорошо сохраняет оригинальный вид PDF файла, но редактируемость полученного документа может быть ограничена. Каждый визуально сгруппированный текстовый блок в оригинальном PDF преобразуется в текстовое поле в выходном документе. Это достигает максимального сходства с оригиналом, так что выходной документ выглядит хорошо, но состоит исключительно из текстовых полей, которые можно редактировать в Microsoft Word, что довольно сложно.
+- Режим [`Flow`](https://reference.aspose.com/pdf/ru/net/aspose.pdf.docsaveoptions/recognitionmode) является полным режимом распознавания, где движок выполняет группировку и многоуровневый анализ, чтобы восстановить оригинальный документ в соответствии с намерением автора, создавая легко редактируемый документ. Ограничение заключается в том, что выходной документ может выглядеть иначе, чем оригинал.
 
-Свойство [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) может использоваться для контроля относительной близости между текстовыми элементами. Это означает, что расстояние нормируется по размеру шрифта. Более крупные шрифты могут иметь большие промежутки между слогами и все еще считаться единым целым. Оно указывается в процентах от размера шрифта; например, 1 = 100%. Это означает, что два символа размером 12pt, расположенные на расстоянии 12 pt друг от друга, являются близкими.
-- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) используется для включения распознавания маркеров во время конвертации.
+Свойство [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) может использоваться для контроля относительной близости между текстовыми элементами. Это означает, что расстояние нормируется по размеру шрифта. Более крупные шрифты могут иметь большие промежутки между слогами и все еще считаться единым целым. Оно указывается в процентах от размера шрифта; например, 1 = 100%. Это означает, что два символа размером 12pt, расположенные на расстоянии 12 pt друг от друга, являются близкими.
+- [`RecognitionBullets`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/docsaveoptions/properties/recognizebullets) используется для включения распознавания маркеров во время конвертации.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -190,7 +190,7 @@ API Aspose.PDF for .NET позволяет вам читать и конверт
 
 <a name="csharp-pdf-to-docx"><strong>Шаги: Конвертация PDF в DOCX на C#</strong></a>
 
-1. Создайте экземпляр объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) с исходным PDF документом.
+1. Создайте экземпляр объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/) с исходным PDF документом.
 2. Сохраните его в формате **SaveFormat.DocX**, вызвав метод **Document.Save()**.
 
 ```csharp

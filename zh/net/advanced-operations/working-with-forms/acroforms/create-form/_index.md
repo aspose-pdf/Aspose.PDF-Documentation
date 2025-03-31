@@ -85,16 +85,16 @@ sitemap:
 
 ### 在 PDF 文档中添加表单字段
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类提供了一个名为 [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) 的集合，帮助您管理 PDF 文档中的表单字段。
+[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类提供了一个名为 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/form) 的集合，帮助您管理 PDF 文档中的表单字段。
 
 要添加表单字段：
 
 1. 创建您想要添加的表单字段。
-1. 调用 [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) 集合的 Add 方法。
+1. 调用 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/form) 集合的 Add 方法。
 
 ### 添加 TextBoxField
 
-以下示例演示如何添加 [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)。
+以下示例演示如何添加 [TextBoxField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/textboxfield)。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### 添加 RadioButtonField
 
-以下代码片段演示如何在 PDF 文档中添加 [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield)。
+以下代码片段演示如何在 PDF 文档中添加 [RadioButtonField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/radiobuttonfield)。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -164,7 +164,7 @@ private static void AddRadioButtonToPdf()
 }
 ```
 
-[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) 可以与一些小部件注释一起添加。
+[TextBoxField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/textboxfield) 可以与一些小部件注释一起添加。
 ```csharp
 // For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()

@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
 
 منذ إصدار 24.4، أصبح من الممكن اختيار مصدر الورق حسب حجم صفحة PDF في مربع حوار الطباعة. يمكّن مقتطف الشيفرة التالي من اختيار درج الطابعة بناءً على حجم صفحة PDF.
 
-يمكن تشغيل هذه الميزة وإيقافها باستخدام خاصية [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/) .
+يمكن تشغيل هذه الميزة وإيقافها باستخدام خاصية [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/picktraybypdfsize/) .
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## إعدادات مربع حوار الطباعة قياس الصفحة
 
-يهدف مقتطف الشيفرة التالي إلى ضمان تطبيق خاصية [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) بشكل صحيح وحفظها في PDF.
+يهدف مقتطف الشيفرة التالي إلى ضمان تطبيق خاصية [PrintScaling](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/printscaling/) بشكل صحيح وحفظها في PDF.
 
-تمت إضافة خاصية [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) إلى فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) مع القيم `Aspose.Pdf.PrintScaling.AppDefault` أو `Aspose.Pdf.PrintScaling.None` .
+تمت إضافة خاصية [PrintScaling](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/printscaling/) إلى فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) مع القيم `Aspose.Pdf.PrintScaling.AppDefault` أو `Aspose.Pdf.PrintScaling.None` .
 
 خيار قياس الصفحة الذي يجب اختياره عند عرض مربع حوار الطباعة لهذا المستند. القيم الصالحة هي `None`، مما يشير إلى عدم وجود قياس للصفحة، و `AppDefault`، مما يشير إلى قياس الطباعة الافتراضي للقارئ المتوافق. إذا كانت هذه الإدخال تحتوي على قيمة غير معروفة، يجب استخدام `AppDefault`. القيمة الافتراضية: `AppDefault` .
 

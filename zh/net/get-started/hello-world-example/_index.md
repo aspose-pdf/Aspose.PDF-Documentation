@@ -86,11 +86,11 @@ Aspose.PDF for .NET 是一个功能丰富的 PDF API，允许开发人员在其 
 
 以下代码片段遵循这些步骤：
 
-1. 实例化一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。
-1. 向文档对象添加一个 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)。
-1. 创建一个 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) 对象。
-1. 将 TextFragment 添加到页面的 [Paragraph](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) 集合中。
-1. [保存](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 生成的 PDF 文档。
+1. 实例化一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
+1. 向文档对象添加一个 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)。
+1. 创建一个 [TextFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragment) 对象。
+1. 将 TextFragment 添加到页面的 [Paragraph](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/properties/paragraphs) 集合中。
+1. [保存](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 生成的 PDF 文档。
 
 以下代码片段是一个 Hello World 程序，用于展示 Aspose.PDF for .NET API 的工作。
 

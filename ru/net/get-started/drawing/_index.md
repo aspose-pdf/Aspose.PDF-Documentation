@@ -146,7 +146,7 @@ Aspose.PDF.Drawing для .NET поддерживает широкий спек�
 
 ![Aspose.PDF.Drawing для .NET](nuget.png)
 
-Узнайте о классах, доступных в Aspose.PDF.Drawing, на сайте [API Reference](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/).
+Узнайте о классах, доступных в Aspose.PDF.Drawing, на сайте [API Reference](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/).
 
 Узнайте больше о:
 

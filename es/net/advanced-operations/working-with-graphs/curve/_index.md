@@ -83,7 +83,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Agregar objeto de curva
 
-Una curva [Curve](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve) es una unión conectada de líneas proyectivas, cada línea se encuentra con tres otras en puntos dobles ordinarios.
+Una curva [Curve](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/curve) es una unión conectada de líneas proyectivas, cada línea se encuentra con tres otras en puntos dobles ordinarios.
 
 Aspose.PDF for .NET muestra cómo usar curvas de Bézier en sus gráficos.
 Las curvas de Bézier se utilizan ampliamente en gráficos por computadora para modelar curvas suaves. La curva está completamente contenida en el casco convexo de sus puntos de control, los puntos pueden ser mostrados gráficamente y utilizados para manipular la curva de manera intuitiva.
@@ -93,10 +93,10 @@ En este artículo, investigaremos curvas gráficas simples y curvas rellenas que
 
 Siga los pasos a continuación:
 
-1. Cree una instancia de [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Cree un [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) con ciertas dimensiones.
-1. Establezca el [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) para el objeto de dibujo.
-1. Agregue un objeto [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) a la colección de párrafos de la página.
+1. Cree una instancia de [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+1. Cree un [Drawing object](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing) con ciertas dimensiones.
+1. Establezca el [Border](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/graph/properties/border) para el objeto de dibujo.
+1. Agregue un objeto [Graph](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/graph) a la colección de párrafos de la página.
 1. Guarde nuestro archivo PDF.
 
 ```csharp

@@ -77,13 +77,13 @@ draft: false
 
 ## تعيين تفضيلات عرض ملف PDF موجود
 
-[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) تمثل أوضاع عرض ملفات PDF؛ على سبيل المثال، وضع نافذة المستند في وسط الشاشة، وإخفاء شريط قوائم تطبيق العرض، إلخ.
+[ViewerPreference](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/viewerpreference) تمثل أوضاع عرض ملفات PDF؛ على سبيل المثال، وضع نافذة المستند في وسط الشاشة، وإخفاء شريط قوائم تطبيق العرض، إلخ.
 
-تتيح لك طريقة [ChangeViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) في فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) تغيير تفضيلات العرض. للقيام بذلك، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/bindpdf/index).
+تتيح لك طريقة [ChangeViewerPreference](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) في فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) تغيير تفضيلات العرض. للقيام بذلك، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/bindpdf/index).
 
-بعد ذلك، يمكنك استدعاء طريقة [ChangeViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) لتعيين أي تفضيل. أخيرًا، يجب عليك حفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index). يوضح لك مقتطف الكود التالي كيفية تغيير تفضيلات العرض في ملف PDF موجود.
+بعد ذلك، يمكنك استدعاء طريقة [ChangeViewerPreference](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) لتعيين أي تفضيل. أخيرًا، يجب عليك حفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index). يوضح لك مقتطف الكود التالي كيفية تغيير تفضيلات العرض في ملف PDF موجود.
 
-على سبيل المثال، نحدد المعامل [CenterWindow](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/centerwindow) الذي نستخدمه لتوسيط النافذة، بعد إزالة شريط الأدوات العلوي باستخدام [HideMenubar](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar) ومع [PageModeUseNone](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone) لفتح وضع ملء الشاشة.
+على سبيل المثال، نحدد المعامل [CenterWindow](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/viewerpreference/fields/centerwindow) الذي نستخدمه لتوسيط النافذة، بعد إزالة شريط الأدوات العلوي باستخدام [HideMenubar](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar) ومع [PageModeUseNone](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone) لفتح وضع ملء الشاشة.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

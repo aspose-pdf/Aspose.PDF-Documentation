@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-لتعيين بيانات XMP الوصفية في ملف PDF، تحتاج إلى إنشاء [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) وربط ملف PDF باستخدام [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) طريقة. يمكنك استخدام [Add](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata/methods/add/index) طريقة من فئة [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) لإضافة خصائص مختلفة. أخيرًا، استدعِ [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) طريقة من فئة [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata). يوضح لك مقتطف الكود التالي كيفية إضافة بيانات XMP الوصفية في ملف PDF.
+لتعيين بيانات XMP الوصفية في ملف PDF، تحتاج إلى إنشاء [PdfXmpMetadata](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfxmpmetadata) وربط ملف PDF باستخدام [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/facade/methods/bindpdf/index) طريقة. يمكنك استخدام [Add](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfxmpmetadata/methods/add/index) طريقة من فئة [PdfXmpMetadata](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfxmpmetadata) لإضافة خصائص مختلفة. أخيرًا، استدعِ [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index) طريقة من فئة [PdfXmpMetadata](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfxmpmetadata). يوضح لك مقتطف الكود التالي كيفية إضافة بيانات XMP الوصفية في ملف PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

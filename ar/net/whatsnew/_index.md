@@ -93,7 +93,7 @@ lastmod: "2025-01-31"
 **تحسينات ملحوظة أخرى**
 
 * تحسين ضغط الصور دون فقدان الجودة عند [تحسين PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images). تم تقليل حجم الوثيقة المضغوطة.
-* تحسين طريقة [إصلاح](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) الوثيقة. يمكنها الآن التحقق وإصلاح القيم في مصفوفة Annotation.Rect.
+* تحسين طريقة [إصلاح](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/repair/) الوثيقة. يمكنها الآن التحقق وإصلاح القيم في مصفوفة Annotation.Rect.
 * تحديث إصدار الاعتماد على System.Text.Json لتجنب الثغرات المحتملة CVE-2024-43485.
 * تحسين اكتشاف هجمات توقيع PDF لمنع الحصول على نتائج إيجابية كاذبة.
 * تم توفير واجهة برمجة تطبيقات عامة لتعديل قاموس الموارد:
@@ -2581,7 +2581,7 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 
 ### إنشاء PDF بناءً على XML و XLS مع المعلمات
 
-لإضافة معلمات XSL، نحتاج إلى إنشاء [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) الخاصة بنا وتعيينها كخاصية في [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). توضح الشيفرة التالية كيفية استخدام هذه الفئة مع الملفات النموذجية الموضحة أعلاه.
+لإضافة معلمات XSL، نحتاج إلى إنشاء [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) الخاصة بنا وتعيينها كخاصية في [XslFoLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/xslfoloadoptions). توضح الشيفرة التالية كيفية استخدام هذه الفئة مع الملفات النموذجية الموضحة أعلاه.
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()

@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[CopyInnerField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) 方法允许您在同一文件中、在指定页面的相同坐标处复制字段。此方法需要您要复制的字段名称、新字段名称以及需要复制字段的页面编号。[FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 类提供了此方法。以下代码片段向您展示如何在同一文件的相同位置复制字段。
+[CopyInnerField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) 方法允许您在同一文件中、在指定页面的相同坐标处复制字段。此方法需要您要复制的字段名称、新字段名称以及需要复制字段的页面编号。[FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 类提供了此方法。以下代码片段向您展示如何在同一文件的相同位置复制字段。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -108,7 +108,7 @@ private static void CopyInnerField()
 
 ## 在现有 PDF 文件中复制外部字段
 
-[CopyOuterField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) 方法允许您从外部 PDF 文件复制表单字段，然后将其添加到输入 PDF 文件的相同位置和指定页面编号。此方法需要从中复制字段的 PDF 文件、字段名称以及需要复制字段的页面编号。此方法由 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 类提供。以下代码片段向您展示如何从外部 PDF 文件复制字段。
+[CopyOuterField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) 方法允许您从外部 PDF 文件复制表单字段，然后将其添加到输入 PDF 文件的相同位置和指定页面编号。此方法需要从中复制字段的 PDF 文件、字段名称以及需要复制字段的页面编号。此方法由 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 类提供。以下代码片段向您展示如何从外部 PDF 文件复制字段。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

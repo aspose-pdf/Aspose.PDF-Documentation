@@ -168,7 +168,7 @@ private static void LoadingFontFromStream()
 
 ## Добавление текста с использованием TextParagraph
 
-Следующий фрагмент кода показывает, как добавить текст в PDF-документ с использованием класса [TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph).
+Следующий фрагмент кода показывает, как добавить текст в PDF-документ с использованием класса [TextParagraph](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textparagraph).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void AddTextWithTextParagraph()
 
 ## Добавление гиперссылки к TextSegment
 
-Страница PDF может состоять из одного или нескольких объектов TextFragment, где каждый объект TextFragment может иметь один или несколько экземпляров TextSegment. Чтобы установить гиперссылку для TextSegment, можно использовать свойство Hyperlink класса [TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment), предоставив объект экземпляра Aspose.Pdf.WebHyperlink. Пожалуйста, попробуйте использовать следующий фрагмент кода для выполнения этого требования.
+Страница PDF может состоять из одного или нескольких объектов TextFragment, где каждый объект TextFragment может иметь один или несколько экземпляров TextSegment. Чтобы установить гиперссылку для TextSegment, можно использовать свойство Hyperlink класса [TextSegment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textsegment), предоставив объект экземпляра Aspose.Pdf.WebHyperlink. Пожалуйста, попробуйте использовать следующий фрагмент кода для выполнения этого требования.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -291,7 +291,7 @@ private static void UseOTFFont()
 
 Класс Aspose.Pdf.Generator.Text содержит свойство IsHtmlTagSupported, которое позволяет добавлять HTML-теги/содержимое в PDF-файлы. Добавленное содержимое отображается в родных HTML-тегах, а не как простая текстовая строка. Чтобы поддержать аналогичную функцию в новой модели объектов документа (DOM) пространства имен Aspose.Pdf, был введен класс HtmlFragment.
 
-Экземпляр [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) может использоваться для указания HTML-содержимого, которое должно быть помещено внутри PDF-файла. Подобно TextFragment, HtmlFragment является объектом уровня абзаца и может быть добавлен в коллекцию абзацев объекта Page. Следующие фрагменты кода показывают шаги по размещению HTML-содержимого внутри PDF-файла с использованием подхода DOM.
+Экземпляр [HtmlFragment](https://reference.aspose.com/pdf/ru/net/aspose.pdf/htmlfragment) может использоваться для указания HTML-содержимого, которое должно быть помещено внутри PDF-файла. Подобно TextFragment, HtmlFragment является объектом уровня абзаца и может быть добавлен в коллекцию абзацев объекта Page. Следующие фрагменты кода показывают шаги по размещению HTML-содержимого внутри PDF-файла с использованием подхода DOM.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -838,7 +838,7 @@ private static void CreateMultiColumnPdf()
 
 Табуляция — это точка остановки для табуляции. В текстовых процессорах каждая строка содержит несколько табуляций, расположенных на равных интервалах (например, каждые полдюйма). Однако их можно изменить, так как большинство текстовых процессоров позволяют устанавливать табуляции в любом месте. Когда вы нажимаете клавишу Tab, курсор или точка вставки прыгает к следующей табуляции, которая сама по себе невидима. Хотя табуляции не существуют в текстовом файле, текстовый процессор отслеживает их, чтобы правильно реагировать на клавишу Tab.
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) позволяет разработчикам использовать пользовательские табуляции в PDF-документах. Класс Aspose.Pdf.Text.TabStop используется для установки пользовательских табуляций в классе [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) позволяет разработчикам использовать пользовательские табуляции в PDF-документах. Класс Aspose.Pdf.Text.TabStop используется для установки пользовательских табуляций в классе [TextFragment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textfragment).
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) также предлагает некоторые предопределенные типы табуляции в виде перечисления под названием TabLeaderType, чьи предопределенные значения и их описания приведены ниже:
 
@@ -944,7 +944,7 @@ private static void AddTransparentText()
 
 ## Укажите межстрочное расстояние для шрифтов
 
-Каждый шрифт имеет абстрактный квадрат, высота которого является предполагаемым расстоянием между строками текста одного и того же размера. Этот квадрат называется квадратом em, и это проектная сетка, на которой определяются контуры глифов. Многие буквы входного шрифта имеют точки, которые расположены за пределами границ квадрата em шрифта, поэтому для правильного отображения шрифта требуется использование специальной настройки. Объект TextFragment имеет набор параметров форматирования текста, которые доступны через свойства TextState.FormattingOptions. Последнее свойство этого пути — это свойство типа Aspose.Pdf.Text.TextFormattingOptions. Этот класс имеет перечисление [LineSpacingMode](https://reference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode), которое предназначено для конкретных шрифтов, например, входного шрифта "HPSimplified.ttf". Также класс [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) имеет свойство [LineSpacing](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) типа LineSpacingMode. Вам просто нужно установить LineSpacing в LineSpacingMode.FullSize. Фрагмент кода для правильного отображения шрифта будет выглядеть следующим образом:
+Каждый шрифт имеет абстрактный квадрат, высота которого является предполагаемым расстоянием между строками текста одного и того же размера. Этот квадрат называется квадратом em, и это проектная сетка, на которой определяются контуры глифов. Многие буквы входного шрифта имеют точки, которые расположены за пределами границ квадрата em шрифта, поэтому для правильного отображения шрифта требуется использование специальной настройки. Объект TextFragment имеет набор параметров форматирования текста, которые доступны через свойства TextState.FormattingOptions. Последнее свойство этого пути — это свойство типа Aspose.Pdf.Text.TextFormattingOptions. Этот класс имеет перечисление [LineSpacingMode](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text.textformattingoptions/linespacingmode), которое предназначено для конкретных шрифтов, например, входного шрифта "HPSimplified.ttf". Также класс [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textformattingoptions) имеет свойство [LineSpacing](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textformattingoptions/properties/linespacing) типа LineSpacingMode. Вам просто нужно установить LineSpacing в LineSpacingMode.FullSize. Фрагмент кода для правильного отображения шрифта будет выглядеть следующим образом:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -993,7 +993,7 @@ private static void SpecifyLineSpacing()
 
 ## Получение ширины текста динамически
 
-Иногда требуется получить ширину текста динамически. Aspose.PDF for .NET включает два метода для измерения ширины строки. Вы можете вызвать метод [MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) классов Aspose.Pdf.Text.Font или Aspose.Pdf.Text.TextState (или оба). Следующий фрагмент кода показывает, как использовать эту функциональность.
+Иногда требуется получить ширину текста динамически. Aspose.PDF for .NET включает два метода для измерения ширины строки. Вы можете вызвать метод [MeasureString](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/font/methods/measurestring) классов Aspose.Pdf.Text.Font или Aspose.Pdf.Text.TextState (или оба). Следующий фрагмент кода показывает, как использовать эту функциональность.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
