@@ -4,7 +4,7 @@ linktitle: AcroForm 생성
 type: docs
 weight: 10
 url: /ko/net/create-form/
-description: Aspose.PDF for .NET를 사용하면 PDF 파일에서 처음부터 양식을 생성할 수 있습니다.
+description: Aspose.PDF for .NET을 사용하면 PDF 파일에서 처음부터 양식을 생성할 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "3923",
+    "wordcount": "3972",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,27 +72,27 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-29",
-    "description": "With Aspose.PDF for .NET you may create a form from scratch in your PDF file"
+    "dateModified": "2025-03-31",
+    "description": "Aspose.PDF for .NET으로 PDF 파일에서 처음부터 양식을 만들 수 있습니다"
 }
 </script>
 
 다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 호환됩니다.
 
-## 처음부터 양식 생성
+## 처음부터 양식 생성하기
 
-### PDF 문서에 양식 필드 추가
+### PDF 문서에 양식 필드 추가하기
 
-[Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스는 PDF 문서에서 양식 필드를 관리하는 데 도움이 되는 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/form) 컬렉션을 제공합니다.
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스는 PDF 문서에서 양식 필드를 관리하는 데 도움이 되는 [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) 컬렉션을 제공합니다.
 
 양식 필드를 추가하려면:
 
 1. 추가하려는 양식 필드를 생성합니다.
-1. [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/form) 컬렉션의 Add 메서드를 호출합니다.
+1. [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) 컬렉션의 Add 메서드를 호출합니다.
 
-### TextBoxField 추가
+### TextBoxField 추가하기
 
-아래 예제는 [TextBoxField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/textboxfield)를 추가하는 방법을 보여줍니다.
+아래 예제는 [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)를 추가하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -167,9 +167,9 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### RadioButtonField 추가
+### RadioButtonField 추가하기
 
-다음 코드 조각은 PDF 문서에 [RadioButtonField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/radiobuttonfield)를 추가하는 방법을 보여줍니다.
+다음 코드 조각은 PDF 문서에 [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield)를 추가하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -184,7 +184,7 @@ private static void AddRadioButtonToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a page to PDF file
+        // Add page to PDF file
         document.Pages.Add();
 
         // Instantiate RadioButtonField object with page number as argument
@@ -218,7 +218,7 @@ private static void AddRadioButtonToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add a page to PDF file
+    // Add page to PDF file
     document.Pages.Add();
 
     // Instantiate RadioButtonField object with page number as argument
@@ -240,7 +240,7 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-[TextBoxField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/textboxfield)는 일부 위젯 주석과 함께 추가될 수 있습니다.
+[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)은 일부 위젯 주석과 함께 추가될 수 있습니다.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -254,7 +254,7 @@ private static void AddTextBoxFieldToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a new page in the created document
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         // Defining an array with rectangle data for widget annotations. 
@@ -267,15 +267,15 @@ private static void AddTextBoxFieldToPdf()
         };
 
         // Defining an array with DefaultAppearance used to specify how widget annotations are displayed in the added field.
-        var defaultAppearances = new DefaultAppearance[]
+        var defaultAppearances = new Aspose.Pdf.Annotations.DefaultAppearance[]
         {
             new Aspose.Pdf.Annotations.DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
             new Aspose.Pdf.Annotations.DefaultAppearance("Helvetica", 12, System.Drawing.Color.DarkGreen),
-            new Aspose.Pdf.Annotations.DefaultAppearance(FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
+            new Aspose.Pdf.Annotations.DefaultAppearance(Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
         };
 
         // Create a field
-        var textBoxField = new TextBoxField(page, rects);
+        var textBoxField = new Aspose.Pdf.Forms.TextBoxField(page, rects);
 
         // Setting the appearances of widget annotations
         short i = 0;
@@ -307,7 +307,7 @@ private static void AddTextBoxFieldToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add a new page in the created document
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     // Defining an array with rectangle data for widget annotations. 
@@ -320,15 +320,15 @@ private static void AddTextBoxFieldToPdf()
     };
 
     // Defining an array with DefaultAppearance used to specify how widget annotations are displayed in the added field.
-    var defaultAppearances = new DefaultAppearance[]
+    var defaultAppearances = new Aspose.Pdf.Annotations.DefaultAppearance[]
     {
         new Aspose.Pdf.Annotations.DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
         new Aspose.Pdf.Annotations.DefaultAppearance("Helvetica", 12, System.Drawing.Color.DarkGreen),
-        new Aspose.Pdf.Annotations.DefaultAppearance(FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
+        new Aspose.Pdf.Annotations.DefaultAppearance(Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
     };
 
     // Create a field
-    var textBoxField = new TextBoxField(page, rects);
+    var textBoxField = new Aspose.Pdf.Forms.TextBoxField(page, rects);
 
     // Setting the appearances of widget annotations
     short i = 0;
@@ -363,7 +363,7 @@ private static void AddRadioButtonWithOptionsToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a page to PDF file
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         // Create a table
@@ -450,7 +450,7 @@ private static void AddRadioButtonWithOptionsToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add a page to PDF file
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     // Create a table
@@ -525,7 +525,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### RadioButtonField에 캡션 추가
+### RadioButtonField에 캡션 추가하기
 
 다음 코드 조각은 RadioButtonField와 연결될 캡션을 추가하는 방법을 보여줍니다:
 
@@ -540,18 +540,18 @@ private static void AddingCaptionToRadioButtonField()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
-    using (var form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf"))
+    using (var form = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf"))
     {
         using (var document = new Aspose.Pdf.Document(dataDir + "RadioButtonField.pdf"))
         {
-            foreach (var item in form1.FieldNames)
+            foreach (var item in form.FieldNames)
             {
                 Console.WriteLine(item.ToString());
-                var radioOptions = form1.GetButtonOptionValues(item);
+                var radioOptions = form.GetButtonOptionValues(item);
 
                 if (item.Contains("radio1"))
                 {
-                    var field0 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
+                    var field1 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
                     var fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
                     fieldoption.OptionName = "Yes";
                     fieldoption.PartialName = "Yesname";
@@ -565,7 +565,7 @@ private static void AddingCaptionToRadioButtonField()
                     var par = new Aspose.Pdf.Text.TextParagraph();
 
                     // Set paragraph position
-                    par.Position = new Aspose.Pdf.Text.Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
+                    par.Position = new Aspose.Pdf.Text.Position(field1.Rect.LLX, field1.Rect.LLY + updatedFragment.TextState.FontSize);
                     // Specify word wraping mode
                     par.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
 
@@ -576,7 +576,7 @@ private static void AddingCaptionToRadioButtonField()
                     var textBuilder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
                     textBuilder.AppendParagraph(par);
 
-                    field0.DeleteOption("item1");
+                    field1.DeleteOption("item1");
                 }
             }
 
@@ -598,18 +598,17 @@ private static void AddingCaptionToRadioButtonField()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
-    using var form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf");
+    using var form = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf");
     using var document = new Aspose.Pdf.Document(dataDir + "RadioButtonField.pdf");
 
-
-    foreach (var item in form1.FieldNames)
+    foreach (var item in form.FieldNames)
     {
         Console.WriteLine(item.ToString());
-        var radioOptions = form1.GetButtonOptionValues(item);
+        var radioOptions = form.GetButtonOptionValues(item);
 
         if (item.Contains("radio1"))
         {
-            var field0 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
+            var field1 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
             var fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
             fieldoption.OptionName = "Yes";
             fieldoption.PartialName = "Yesname";
@@ -623,7 +622,7 @@ private static void AddingCaptionToRadioButtonField()
             var par = new Aspose.Pdf.Text.TextParagraph();
 
             // Set paragraph position
-            par.Position = new Aspose.Pdf.Text.Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
+            par.Position = new Aspose.Pdf.Text.Position(field1.Rect.LLX, field1.Rect.LLY + updatedFragment.TextState.FontSize);
             // Specify word wraping mode
             par.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
 
@@ -634,7 +633,7 @@ private static void AddingCaptionToRadioButtonField()
             var textBuilder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
             textBuilder.AppendParagraph(par);
 
-            field0.DeleteOption("item1");
+            field1.DeleteOption("item1");
         }
     }
 
@@ -661,6 +660,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
+		// Add page to PDF file
         var page = document.Pages.Add();
 
         var radioButtonField = new Aspose.Pdf.Forms.RadioButtonField(page);
@@ -714,6 +714,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     var radioButtonField = new Aspose.Pdf.Forms.RadioButtonField(page);
@@ -755,7 +756,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### ComboBox 필드 추가
+### ComboBox 필드 추가하기
 
 다음 코드 조각은 PDF 문서에 ComboBox 필드를 추가하는 방법을 보여줍니다.
 
@@ -772,7 +773,7 @@ private static void AddComboBoxToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to document object
+        // Add page to PDF file
         document.Pages.Add();
 
         // Instantiate ComboBox Field object
@@ -806,7 +807,7 @@ private static void AddComboBoxToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add page to document object
+    // Add page to PDF file
     document.Pages.Add();
 
     // Instantiate ComboBox Field object
@@ -828,7 +829,7 @@ private static void AddComboBoxToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### CheckboxField 추가
+### CheckboxField 추가하기
 
 다음 코드 조각은 PDF 문서에 CheckboxField를 추가하는 방법을 보여줍니다.
 
@@ -845,6 +846,7 @@ private static void AddCheckBoxFieldToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         // Create a field
@@ -874,7 +876,8 @@ private static void AddCheckBoxFieldToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    Page page = document.Pages.Add();
+    // Add page to PDF file
+    var page = document.Pages.Add();
 
     // Create a field
     var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
@@ -891,7 +894,7 @@ private static void AddCheckBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### ListBoxField 추가
+### ListBoxField 추가하기
 
 다음 코드 조각은 PDF 문서에 ListBoxField를 추가하는 방법을 보여줍니다.
 
@@ -908,6 +911,7 @@ private static void AddListBoxFieldToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         // Create a field
@@ -938,6 +942,7 @@ private static void AddListBoxFieldToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     // Create a field
@@ -956,7 +961,7 @@ private static void AddListBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### SignatureField 사용
+### SignatureField 사용하기
 
 다음 코드 조각은 SignatureField를 사용하여 PDF 문서에 서명하는 방법을 보여줍니다.
 
@@ -972,10 +977,11 @@ private static void SignPdfBySignatureField()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
+        // Add page to PDF file	
         var page = document.Pages.Add();
 
         // Create a field
-        var signatureField = new SignatureField(page, new Aspose.Pdf.Rectangle(100, 700, 200, 800));
+        var signatureField = new Aspose.Pdf.Forms.SignatureField(page, new Aspose.Pdf.Rectangle(100, 700, 200, 800));
         document.Form.Add(signatureField);
 
         var pkcs = new Aspose.Pdf.Forms.PKCS7("test1.pfx", "test1");
@@ -1004,10 +1010,11 @@ private static void SignPdfBySignatureField()
     // Create PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf");
 
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     // Create a field
-    var signatureField = new SignatureField(page, new Aspose.Pdf.Rectangle(100, 700, 200, 800));
+    var signatureField = new Aspose.Pdf.Forms.SignatureField(page, new Aspose.Pdf.Rectangle(100, 700, 200, 800));
     document.Form.Add(signatureField);
 
     var pkcs = new Aspose.Pdf.Forms.PKCS7("test1.pfx", "test1");
@@ -1025,11 +1032,11 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 양식 필드에 툴팁 추가
+### 양식 필드에 툴팁 추가하기
 
-Document 클래스는 PDF 문서에서 양식 필드를 관리하는 Form 컬렉션을 제공합니다. 양식 필드에 툴팁을 추가하려면 Field 클래스의 AlternateName을 사용하십시오. Adobe Acrobat은 '대체 이름'을 필드 툴팁으로 사용합니다.
+Document 클래스는 PDF 문서에서 양식 필드를 관리하는 Form 컬렉션을 제공합니다. 양식 필드에 툴팁을 추가하려면 Field 클래스의 AlternateName을 사용하세요. Adobe Acrobat은 'alternate name'을 필드 툴팁으로 사용합니다.
 
-다음 코드 조각은 먼저 C#을 사용한 다음 Visual Basic을 사용하여 양식 필드에 툴팁을 추가하는 방법을 보여줍니다.
+다음 코드 조각은 먼저 C#을 사용하고 그 다음 Visual Basic을 사용하여 양식 필드에 툴팁을 추가하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
