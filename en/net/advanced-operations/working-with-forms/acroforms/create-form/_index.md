@@ -184,7 +184,7 @@ private static void AddRadioButtonToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a page to PDF file
+        // Add page to PDF file
         document.Pages.Add();
 
         // Instantiate RadioButtonField object with page number as argument
@@ -218,7 +218,7 @@ private static void AddRadioButtonToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add a page to PDF file
+    // Add page to PDF file
     document.Pages.Add();
 
     // Instantiate RadioButtonField object with page number as argument
@@ -254,7 +254,7 @@ private static void AddTextBoxFieldToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a new page in the created document
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         // Defining an array with rectangle data for widget annotations. 
@@ -267,15 +267,15 @@ private static void AddTextBoxFieldToPdf()
         };
 
         // Defining an array with DefaultAppearance used to specify how widget annotations are displayed in the added field.
-        var defaultAppearances = new DefaultAppearance[]
+        var defaultAppearances = new Aspose.Pdf.Annotations.DefaultAppearance[]
         {
             new Aspose.Pdf.Annotations.DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
             new Aspose.Pdf.Annotations.DefaultAppearance("Helvetica", 12, System.Drawing.Color.DarkGreen),
-            new Aspose.Pdf.Annotations.DefaultAppearance(FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
+            new Aspose.Pdf.Annotations.DefaultAppearance(Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
         };
 
         // Create a field
-        var textBoxField = new TextBoxField(page, rects);
+        var textBoxField = new Aspose.Pdf.Forms.TextBoxField(page, rects);
 
         // Setting the appearances of widget annotations
         short i = 0;
@@ -307,7 +307,7 @@ private static void AddTextBoxFieldToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add a new page in the created document
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     // Defining an array with rectangle data for widget annotations. 
@@ -320,15 +320,15 @@ private static void AddTextBoxFieldToPdf()
     };
 
     // Defining an array with DefaultAppearance used to specify how widget annotations are displayed in the added field.
-    var defaultAppearances = new DefaultAppearance[]
+    var defaultAppearances = new Aspose.Pdf.Annotations.DefaultAppearance[]
     {
         new Aspose.Pdf.Annotations.DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
         new Aspose.Pdf.Annotations.DefaultAppearance("Helvetica", 12, System.Drawing.Color.DarkGreen),
-        new Aspose.Pdf.Annotations.DefaultAppearance(FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
+        new Aspose.Pdf.Annotations.DefaultAppearance(Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
     };
 
     // Create a field
-    var textBoxField = new TextBoxField(page, rects);
+    var textBoxField = new Aspose.Pdf.Forms.TextBoxField(page, rects);
 
     // Setting the appearances of widget annotations
     short i = 0;
@@ -363,7 +363,7 @@ private static void AddRadioButtonWithOptionsToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a page to PDF file
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         // Create a table
@@ -450,7 +450,7 @@ private static void AddRadioButtonWithOptionsToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add a page to PDF file
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     // Create a table
@@ -540,18 +540,18 @@ private static void AddingCaptionToRadioButtonField()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
-    using (var form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf"))
+    using (var form = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf"))
     {
         using (var document = new Aspose.Pdf.Document(dataDir + "RadioButtonField.pdf"))
         {
-            foreach (var item in form1.FieldNames)
+            foreach (var item in form.FieldNames)
             {
                 Console.WriteLine(item.ToString());
-                var radioOptions = form1.GetButtonOptionValues(item);
+                var radioOptions = form.GetButtonOptionValues(item);
 
                 if (item.Contains("radio1"))
                 {
-                    var field0 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
+                    var field1 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
                     var fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
                     fieldoption.OptionName = "Yes";
                     fieldoption.PartialName = "Yesname";
@@ -565,7 +565,7 @@ private static void AddingCaptionToRadioButtonField()
                     var par = new Aspose.Pdf.Text.TextParagraph();
 
                     // Set paragraph position
-                    par.Position = new Aspose.Pdf.Text.Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
+                    par.Position = new Aspose.Pdf.Text.Position(field1.Rect.LLX, field1.Rect.LLY + updatedFragment.TextState.FontSize);
                     // Specify word wraping mode
                     par.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
 
@@ -576,7 +576,7 @@ private static void AddingCaptionToRadioButtonField()
                     var textBuilder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
                     textBuilder.AppendParagraph(par);
 
-                    field0.DeleteOption("item1");
+                    field1.DeleteOption("item1");
                 }
             }
 
@@ -598,18 +598,17 @@ private static void AddingCaptionToRadioButtonField()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
-    using var form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf");
+    using var form = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf");
     using var document = new Aspose.Pdf.Document(dataDir + "RadioButtonField.pdf");
 
-
-    foreach (var item in form1.FieldNames)
+    foreach (var item in form.FieldNames)
     {
         Console.WriteLine(item.ToString());
-        var radioOptions = form1.GetButtonOptionValues(item);
+        var radioOptions = form.GetButtonOptionValues(item);
 
         if (item.Contains("radio1"))
         {
-            var field0 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
+            var field1 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
             var fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
             fieldoption.OptionName = "Yes";
             fieldoption.PartialName = "Yesname";
@@ -623,7 +622,7 @@ private static void AddingCaptionToRadioButtonField()
             var par = new Aspose.Pdf.Text.TextParagraph();
 
             // Set paragraph position
-            par.Position = new Aspose.Pdf.Text.Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
+            par.Position = new Aspose.Pdf.Text.Position(field1.Rect.LLX, field1.Rect.LLY + updatedFragment.TextState.FontSize);
             // Specify word wraping mode
             par.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
 
@@ -634,7 +633,7 @@ private static void AddingCaptionToRadioButtonField()
             var textBuilder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
             textBuilder.AppendParagraph(par);
 
-            field0.DeleteOption("item1");
+            field1.DeleteOption("item1");
         }
     }
 
@@ -661,6 +660,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
+		// Add page to PDF file
         var page = document.Pages.Add();
 
         var radioButtonField = new Aspose.Pdf.Forms.RadioButtonField(page);
@@ -714,6 +714,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     var radioButtonField = new Aspose.Pdf.Forms.RadioButtonField(page);
@@ -772,7 +773,7 @@ private static void AddComboBoxToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to document object
+        // Add page to PDF file
         document.Pages.Add();
 
         // Instantiate ComboBox Field object
@@ -806,7 +807,7 @@ private static void AddComboBoxToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add page to document object
+    // Add page to PDF file
     document.Pages.Add();
 
     // Instantiate ComboBox Field object
@@ -845,6 +846,7 @@ private static void AddCheckBoxFieldToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         // Create a field
@@ -874,7 +876,8 @@ private static void AddCheckBoxFieldToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    Page page = document.Pages.Add();
+    // Add page to PDF file
+    var page = document.Pages.Add();
 
     // Create a field
     var checkboxField = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 620, 100, 650));
@@ -908,6 +911,7 @@ private static void AddListBoxFieldToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         // Create a field
@@ -938,6 +942,7 @@ private static void AddListBoxFieldToPdf()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     // Create a field
@@ -972,10 +977,11 @@ private static void SignPdfBySignatureField()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
+        // Add page to PDF file	
         var page = document.Pages.Add();
 
         // Create a field
-        var signatureField = new SignatureField(page, new Aspose.Pdf.Rectangle(100, 700, 200, 800));
+        var signatureField = new Aspose.Pdf.Forms.SignatureField(page, new Aspose.Pdf.Rectangle(100, 700, 200, 800));
         document.Form.Add(signatureField);
 
         var pkcs = new Aspose.Pdf.Forms.PKCS7("test1.pfx", "test1");
@@ -1004,10 +1010,11 @@ private static void SignPdfBySignatureField()
     // Create PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf");
 
+    // Add page to PDF file
     var page = document.Pages.Add();
 
     // Create a field
-    var signatureField = new SignatureField(page, new Aspose.Pdf.Rectangle(100, 700, 200, 800));
+    var signatureField = new Aspose.Pdf.Forms.SignatureField(page, new Aspose.Pdf.Rectangle(100, 700, 200, 800));
     document.Form.Add(signatureField);
 
     var pkcs = new Aspose.Pdf.Forms.PKCS7("test1.pfx", "test1");
