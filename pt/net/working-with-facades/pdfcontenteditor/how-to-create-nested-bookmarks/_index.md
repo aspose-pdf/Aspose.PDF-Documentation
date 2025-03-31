@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Favoritos oferecem a opção de acompanhar/vincular a uma página específica dentro do documento PDF. A classe [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/PdfContentEditor) no [namespace Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) fornece um recurso que permite criar seu próprio favorito de maneira sofisticada e intuitiva dentro de um arquivo PDF existente, em uma página específica ou em todas as páginas.
+Favoritos oferecem a opção de acompanhar/vincular a uma página específica dentro do documento PDF. A classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) no [namespace Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) fornece um recurso que permite criar seu próprio favorito de maneira sofisticada e intuitiva dentro de um arquivo PDF existente, em uma página específica ou em todas as páginas.
 
 ## Detalhes da implementação
 

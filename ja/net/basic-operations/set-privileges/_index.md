@@ -82,7 +82,7 @@ sitemap:
 
 ## 既存のPDFファイルに権限を設定する
 
-PDFファイルに権限を設定するには、[DocumentPrivilege](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/documentprivilege)クラスのオブジェクトを作成し、文書に適用したい権利を指定します。権限が定義されたら、このオブジェクトを[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[Encrypt](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/encrypt/methods/1)メソッドに引数として渡します。次のコードスニペットは、PDFファイルの権限を設定する方法を示しています。
+PDFファイルに権限を設定するには、[DocumentPrivilege](https://reference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege)クラスのオブジェクトを作成し、文書に適用したい権利を指定します。権限が定義されたら、このオブジェクトを[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1)メソッドに引数として渡します。次のコードスニペットは、PDFファイルの権限を設定する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void SetPrivilegesOnExistingPdfFile()
 
 ## 異なる暗号化タイプとアルゴリズムを使用してPDFファイルを暗号化する
 
-[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[Encrypt](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/encrypt/methods/1)メソッドを使用してPDFファイルを暗号化できます。ユーザーパスワード、オーナーパスワード、および権限を[Encrypt](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/encrypt/methods/1)メソッドに渡すことができます。さらに、[CryptoAlgorithm](https://reference.aspose.com/pdf/ja/net/aspose.pdf/cryptoalgorithm)列挙体の任意の値を渡すことができます。この列挙体は、暗号化アルゴリズムとキーサイズのさまざまな組み合わせを提供します。選択した値を渡すことができます。最後に、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して暗号化されたPDFファイルを保存します。
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1)メソッドを使用してPDFファイルを暗号化できます。ユーザーパスワード、オーナーパスワード、および権限を[Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1)メソッドに渡すことができます。さらに、[CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm)列挙体の任意の値を渡すことができます。この列挙体は、暗号化アルゴリズムとキーサイズのさまざまな組み合わせを提供します。選択した値を渡すことができます。最後に、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して暗号化されたPDFファイルを保存します。
 
 >PDFファイルを暗号化する際には、異なるユーザーおよびオーナーパスワードを指定してください。
 
@@ -144,7 +144,7 @@ private static void EncryptPdfFile()
 
 この問題は、Aspose.PDFライブラリを使用して一度で解決するのが最善です。
 
-PDFファイルを復号化するには、まず[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを作成し、オーナーパスワードを使用してPDFを開く必要があります。その後、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[Decrypt](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/decrypt)メソッドを呼び出す必要があります。最後に、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して更新されたPDFファイルを保存します。次のコードスニペットは、PDFファイルを復号化する方法を示しています。
+PDFファイルを復号化するには、まず[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成し、オーナーパスワードを使用してPDFを開く必要があります。その後、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Decrypt](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/decrypt)メソッドを呼び出す必要があります。最後に、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して更新されたPDFファイルを保存します。次のコードスニペットは、PDFファイルを復号化する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -166,7 +166,7 @@ private static void DecryptPdfFile()
 
 ## PDFファイルのパスワードを変更する
 
-PDFファイルのパスワードを変更するには、まず[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを使用してオーナーパスワードでPDFファイルを開く必要があります。その後、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[ChangePasswords](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/changepasswords)メソッドを呼び出す必要があります。このメソッドには、現在のオーナーパスワードと新しいユーザーパスワード、新しいオーナーパスワードを渡す必要があります。最後に、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して更新されたPDFファイルを保存します。
+PDFファイルのパスワードを変更するには、まず[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを使用してオーナーパスワードでPDFファイルを開く必要があります。その後、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[ChangePasswords](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords)メソッドを呼び出す必要があります。このメソッドには、現在のオーナーパスワードと新しいユーザーパスワード、新しいオーナーパスワードを渡す必要があります。最後に、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して更新されたPDFファイルを保存します。
 
 >- ユーザーパスワードが設定されている場合、PDFを開くために必要です。Acrobat/Readerはユーザーにユーザーパスワードの入力を促します。正しくない場合、文書は開きません。
 >- オーナーパスワードが設定されている場合、印刷、編集、抽出、コメントなどの権限を制御します。Acrobat/Readerは、権限設定に基づいてこれらの操作を禁止します。権限を設定/変更する場合、このパスワードが必要です。

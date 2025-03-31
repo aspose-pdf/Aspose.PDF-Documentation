@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[PdfFileInfo](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileinfo)クラスを使用すると、PDFファイルのファイル固有の情報を設定できます。[PdfFileInfo](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileinfo)クラスのオブジェクトを作成し、著者、タイトル、キーワード、作成者などのさまざまなファイル固有のプロパティを設定する必要があります。最後に、[PdfFileInfo](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileinfo)オブジェクトの[SaveNewInfo](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1)メソッドを使用して、更新されたPDFファイルを保存します。
+[PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo)クラスを使用すると、PDFファイルのファイル固有の情報を設定できます。[PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo)クラスのオブジェクトを作成し、著者、タイトル、キーワード、作成者などのさまざまなファイル固有のプロパティを設定する必要があります。最後に、[PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo)オブジェクトの[SaveNewInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1)メソッドを使用して、更新されたPDFファイルを保存します。
 
 次のコードスニペットは、PDFファイル情報を設定する方法を示しています。
 
@@ -103,7 +103,7 @@ private static void SetPdfInfo()
 
 ## メタ情報の設定
 
-[SetMetaInfo](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo)メソッドを使用すると、任意の情報を追加できます。私たちの例では、フィールドを追加しました。次のコードスニペットを確認してください：
+[SetMetaInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo)メソッドを使用すると、任意の情報を追加できます。私たちの例では、フィールドを追加しました。次のコードスニペットを確認してください：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -75,11 +75,11 @@ draft: false
 }
 </script>
 
-デフォルトのレイアウトでは、PDFファイル内のコンテンツは左上から右下に追加されます。コンテンツがページの下余白を超えると、ページブレークが発生します。ただし、要件に応じてページブレークを挿入する必要がある場合があります。この要件を達成するために、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスにAddPageBreak(...)メソッドが追加されました。
+デフォルトのレイアウトでは、PDFファイル内のコンテンツは左上から右下に追加されます。コンテンツがページの下余白を超えると、ページブレークが発生します。ただし、要件に応じてページブレークを挿入する必要がある場合があります。この要件を達成するために、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスにAddPageBreak(...)メソッドが追加されました。
 
-1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
-1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
-1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
+1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
+1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
+1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
 
 - srcはソースドキュメント/ドキュメントへのパス/ソースドキュメントを含むストリームです。
 - destは保存先のドキュメント/ドキュメントが保存されるパス/ドキュメントが保存されるストリームです。

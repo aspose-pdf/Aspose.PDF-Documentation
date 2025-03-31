@@ -84,7 +84,7 @@ Aspose.PDF for NETは、ゼロから生成されるPDFドキュメント内に�
 
 {{% /alert %}}
 
-テーブルを削除するには、[TableAbsorber](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/tableabsorber)クラスを使用して既存のPDF内のテーブルを取得し、次に[Remove](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/tableabsorber/methods/remove)を呼び出す必要があります。
+テーブルを削除するには、[TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber)クラスを使用して既存のPDF内のテーブルを取得し、次に[Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove)を呼び出す必要があります。
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 

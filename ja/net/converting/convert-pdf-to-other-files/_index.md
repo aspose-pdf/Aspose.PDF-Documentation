@@ -93,7 +93,7 @@ EPUBは再フロー可能なコンテンツのために設計されており、E
 
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-Aspose.PDF for .NETは、PDFドキュメントをEPUB形式に変換する機能もサポートしています。Aspose.PDF for .NETには、[`Document.Save(..)`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドの第二引数として使用できるEpubSaveOptionsというクラスがあります。これを使用してEPUBファイルを生成します。
+Aspose.PDF for .NETは、PDFドキュメントをEPUB形式に変換する機能もサポートしています。Aspose.PDF for .NETには、[`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドの第二引数として使用できるEpubSaveOptionsというクラスがあります。これを使用してEPUBファイルを生成します。
 次のコードスニペットを使用して、C#でこの要件を達成してみてください。
 
 ```csharp
@@ -130,7 +130,7 @@ Aspose.PDF for .NETは、機能と品質を調査するために使用できる�
 [![Aspose.PDF PDFをLaTeX/TeXに変換する無料アプリ](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-PDFファイルをTeXに変換するために、Aspose.PDFには、変換プロセス中に一時画像を保存するためのプロパティOutDirectoryPathを提供する[LaTeXSaveOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/latexsaveoptions)というクラスがあります。
+PDFファイルをTeXに変換するために、Aspose.PDFには、変換プロセス中に一時画像を保存するためのプロパティOutDirectoryPathを提供する[LaTeXSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions)というクラスがあります。
 
 次のコードスニペットは、C#を使用してPDFファイルをTEX形式に変換するプロセスを示しています。
 
@@ -165,7 +165,7 @@ private static void ConvertPDFtoTeX()
 
 ### PDFドキュメント全体をテキストファイルに変換
 
-[TextAbsorber](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textabsorber)クラスの[Visit](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textabsorber/methods/visit/index)メソッドを使用して、PDFドキュメントをTXTファイルに変換できます。
+[TextAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber)クラスの[Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber/methods/visit/index)メソッドを使用して、PDFドキュメントをTXTファイルに変換できます。
 
 次のコードスニペットは、すべてのページからテキストを抽出する方法を説明しています。
 
@@ -239,7 +239,7 @@ Aspose.PDF for .NETは、機能と品質を調査するために使用できる�
 
 XPSファイルタイプは、主にマイクロソフト社のXML Paper Specificationに関連付けられています。XML Paper Specification（XPS）は、以前はMetroというコード名で知られ、次世代印刷パス（NGPP）マーケティングコンセプトを包含するもので、文書作成と表示をWindowsオペレーティングシステムに統合するためのマイクロソフトの取り組みです。
 
-PDFファイルをXPSに変換するために、Aspose.PDFには、XPSファイルを生成するために[Document.Save(..)](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドの第二引数として使用される[XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions)というクラスがあります。
+PDFファイルをXPSに変換するために、Aspose.PDFには、XPSファイルを生成するために[Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドの第二引数として使用される[XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions)というクラスがあります。
 
 24.2リリース以降、Aspose.PDFは、結果のXPSでテキストを選択可能に保ちながら、検索可能なPDFをXPSに変換する機能を実装しました。テキストを保持するためには、XpsSaveOptions.SaveTransparentTextsプロパティをtrueに設定する必要があります。
 

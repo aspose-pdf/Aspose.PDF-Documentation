@@ -484,7 +484,7 @@ Aspose.PDF for .NET mendukung fitur untuk menyematkan font saat membuat dokumen 
 
 Untuk mengganti font, gunakan pendekatan berikut:
 
-1. Panggil kelas [TextFragmentAbsorber](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textfragmentabsorber).
+1. Panggil kelas [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber).
 1. Panggil parameter TextFragmentAbsorber kelas’ TextEditOptions.FontReplace.RemoveUnusedFonts. (Ini menghapus font yang telah menjadi tidak terpakai selama penggantian font).
 1. Atur font secara individu untuk setiap fragmen teks.
 

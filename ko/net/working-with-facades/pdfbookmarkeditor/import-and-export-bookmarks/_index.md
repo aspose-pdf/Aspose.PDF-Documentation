@@ -77,7 +77,7 @@ draft: false
 
 ## XML에서 기존 PDF 파일로 북마크 가져오기
 
-[ImportBookmarksWithXml](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) 메서드는 XML 파일에서 PDF 파일로 북마크를 가져올 수 있게 해줍니다. 북마크를 가져오기 위해서는 [PdfBookmarkEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 PDF 파일을 바인딩해야 합니다. 그 후, [ImportBookmarksWithXml](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) 메서드를 호출해야 합니다. 마지막으로, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 XML 파일에서 북마크를 가져오는 방법을 보여줍니다.
+[ImportBookmarksWithXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) 메서드는 XML 파일에서 PDF 파일로 북마크를 가져올 수 있게 해줍니다. 북마크를 가져오기 위해서는 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 PDF 파일을 바인딩해야 합니다. 그 후, [ImportBookmarksWithXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) 메서드를 호출해야 합니다. 마지막으로, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 XML 파일에서 북마크를 가져오는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

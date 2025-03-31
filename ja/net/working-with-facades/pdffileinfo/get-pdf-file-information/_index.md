@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-PDFファイルの特定の情報を取得するには、[PdfFileInfo](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileinfo)クラスのオブジェクトを作成する必要があります。その後、Subject、Title、Keywords、Creatorなどの個々のプロパティの値を取得できます。
+PDFファイルの特定の情報を取得するには、[PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo)クラスのオブジェクトを作成する必要があります。その後、Subject、Title、Keywords、Creatorなどの個々のプロパティの値を取得できます。
 
 以下のコードスニペットは、PDFファイル情報を取得する方法を示しています。
 
@@ -110,7 +110,7 @@ private static void GetPdfInfo()
 
 ## メタ情報の取得
 
-情報を取得するために、[Header](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileinfo/properties/header)プロパティを使用します。'Hashtable'を使用して、すべての可能な値を取得します。
+情報を取得するために、[Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header)プロパティを使用します。'Hashtable'を使用して、すべての可能な値を取得します。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

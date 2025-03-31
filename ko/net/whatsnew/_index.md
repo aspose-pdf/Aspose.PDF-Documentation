@@ -93,7 +93,7 @@ Aspose.PDF 25.2에서는 다음을 추가했습니다:
 **기타 주목할 만한 개선 사항**
 
 * [PDF 최적화](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images)에서 품질 손실 없이 이미지 압축이 향상되었습니다. 압축된 문서 크기가 줄어들었습니다.
-* 문서 [수리](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/repair/) 메서드가 개선되었습니다. 이제 주석의 Rect 배열에서 값을 확인하고 수정할 수 있습니다.
+* 문서 [수리](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) 메서드가 개선되었습니다. 이제 주석의 Rect 배열에서 값을 확인하고 수정할 수 있습니다.
 * 잠재적인 취약성 CVE-2024-43485를 피하기 위해 System.Text.Json 종속성 버전이 업데이트되었습니다.
 * PDF 서명 공격 탐지가 개선되어 잘못된 긍정 결과를 방지합니다.
 * 리소스 사전을 수정하기 위한 공개 API가 제공되었습니다:
@@ -2589,7 +2589,7 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 
 ### 매개변수를 사용하여 XML 및 XLS 기반 PDF 생성
 
-XSL 매개변수를 추가하려면 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)를 생성하고 [XslFoLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/xslfoloadoptions)에서 속성으로 설정해야 합니다. 다음 스니펫은 위에서 설명한 샘플 파일과 함께 이 클래스를 사용하는 방법을 보여줍니다.
+XSL 매개변수를 추가하려면 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)를 생성하고 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions)에서 속성으로 설정해야 합니다. 다음 스니펫은 위에서 설명한 샘플 파일과 함께 이 클래스를 사용하는 방법을 보여줍니다.
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()

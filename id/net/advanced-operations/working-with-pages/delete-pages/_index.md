@@ -80,12 +80,12 @@ sitemap:
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Anda dapat menghapus halaman dari file PDF menggunakan Aspose.PDF for .NET. Untuk menghapus halaman tertentu dari koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection).
+Anda dapat menghapus halaman dari file PDF menggunakan Aspose.PDF for .NET. Untuk menghapus halaman tertentu dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 
 ## Hapus Halaman dari File PDF
 
-1. Panggil metode [Delete](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection/methods/delete) dan tentukan indeks halaman.
-1. Panggil metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4) untuk menyimpan file PDF yang diperbarui.
+1. Panggil metode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) dan tentukan indeks halaman.
+1. Panggil metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) untuk menyimpan file PDF yang diperbarui.
 Potongan kode berikut menunjukkan cara menghapus halaman tertentu dari file PDF menggunakan C#.
 
 ```csharp

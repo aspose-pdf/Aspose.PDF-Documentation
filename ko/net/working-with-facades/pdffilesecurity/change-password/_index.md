@@ -77,7 +77,7 @@ draft: false
 
 ## PDF 파일 비밀번호 변경
 
-PDF 파일의 비밀번호를 변경하려면 [PdfFileSecurity](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity) 객체를 생성한 다음 [ChangePassword](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) 메서드를 호출해야 합니다. 기존 소유자 비밀번호와 새로운 사용자 및 소유자 비밀번호를 [ChangePassword](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) 메서드에 전달해야 합니다.
+PDF 파일의 비밀번호를 변경하려면 [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) 객체를 생성한 다음 [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) 메서드를 호출해야 합니다. 기존 소유자 비밀번호와 새로운 사용자 및 소유자 비밀번호를 [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) 메서드에 전달해야 합니다.
 
 {{% alert color="primary" %}}
 

@@ -83,13 +83,13 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Extrair Links do Arquivo PDF
 
-Links são representados como anotações em um arquivo PDF, portanto, para extrair links, extraia todos os objetos [LinkAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/linkannotation).
+Links são representados como anotações em um arquivo PDF, portanto, para extrair links, extraia todos os objetos [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
 
-1. Crie um objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
-1. Obtenha a [Page](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) da qual você deseja extrair links.
-1. Use a classe [AnnotationSelector](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/annotationselector) para extrair todos os objetos [LinkAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/linkannotation) da página especificada.
-1. Passe o objeto [AnnotationSelector](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/annotationselector) para o método Accept do objeto Page.
-1. Obtenha todas as anotações de link selecionadas em um objeto IList usando a propriedade Selected do objeto [AnnotationSelector](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/annotationselector).
+1. Crie um objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Obtenha a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) da qual você deseja extrair links.
+1. Use a classe [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) para extrair todos os objetos [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) da página especificada.
+1. Passe o objeto [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) para o método Accept do objeto Page.
+1. Obtenha todas as anotações de link selecionadas em um objeto IList usando a propriedade Selected do objeto [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector).
 
 O seguinte trecho de código mostra como extrair links de um arquivo PDF.
 

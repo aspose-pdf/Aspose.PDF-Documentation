@@ -77,9 +77,9 @@ draft: false
 
 ## 기존 PDF 파일의 뷰어 기본 설정 가져오기
 
-[ViewerPreference](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/viewerpreference) 클래스는 PDF 파일의 표시 모드를 나타냅니다. 예를 들어, 문서 창을 화면 중앙에 위치시키거나 뷰어 애플리케이션의 메뉴 바를 숨기는 등의 기능이 있습니다.
+[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) 클래스는 PDF 파일의 표시 모드를 나타냅니다. 예를 들어, 문서 창을 화면 중앙에 위치시키거나 뷰어 애플리케이션의 메뉴 바를 숨기는 등의 기능이 있습니다.
 
-설정을 읽기 위해 [GetViewerPreference](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference) 클래스를 사용합니다. 이 메서드는 모든 설정이 저장된 변수를 반환합니다.
+설정을 읽기 위해 [GetViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference) 클래스를 사용합니다. 이 메서드는 모든 설정이 저장된 변수를 반환합니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

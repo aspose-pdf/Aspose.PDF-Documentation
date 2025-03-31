@@ -109,8 +109,8 @@ Contoh kode C# berikut menunjukkan cara mengonversi dokumen HTML ke PDF.
 
 <a name="csharp-html-to-pdf"><strong>Langkah: Mengonversi HTML ke PDF di C#</strong></a>
 
-1. Buat instance dari kelas [HtmlLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/).
-2. Inisialisasi objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/).
+1. Buat instance dari kelas [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/).
+2. Inisialisasi objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/).
 3. Simpan dokumen PDF keluaran dengan memanggil metode **Document.Save()**.
 
 ```csharp
@@ -146,7 +146,7 @@ Mesin Konversi HTML memiliki beberapa opsi yang memungkinkan kita mengontrol pro
 
 ### Dukungan Kueri Media
 
-Kueri media adalah teknik populer untuk menyampaikan lembar gaya yang disesuaikan ke perangkat yang berbeda. Kita dapat mengatur jenis perangkat menggunakan properti [`HtmlMediaType`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype).
+Kueri media adalah teknik populer untuk menyampaikan lembar gaya yang disesuaikan ke perangkat yang berbeda. Kita dapat mengatur jenis perangkat menggunakan properti [`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void ConvertHTMLtoPDFAdvancedMediaType()
 
 ### Mengaktifkan (menonaktifkan) penyematan font
 
-Halaman HTML sering menggunakan font (misalnya, font dari folder lokal, Google Fonts, dll). Kita juga dapat mengontrol penyematan font dalam dokumen menggunakan properti [`IsEmbedFonts`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/properties/isembedfonts).
+Halaman HTML sering menggunakan font (misalnya, font dari folder lokal, Google Fonts, dll). Kita juga dapat mengontrol penyematan font dalam dokumen menggunakan properti [`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts).
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ Halaman HTML sering menggunakan font (misalnya, font dari folder lokal, Google F
 
 ### Mengelola pemuatan sumber daya eksternal
 
-Mesin Konversi menyediakan mekanisme yang memungkinkan Anda mengontrol pemuatan sumber daya tertentu yang terkait dengan dokumen HTML. Kelas [`HtmlLoadOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions) memiliki properti [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) di mana kita dapat mendefinisikan perilaku pemuat sumber daya. Misalkan kita perlu mengganti semua gambar PNG dengan gambar tunggal `test.jpg` dan mengganti URL eksternal menjadi internal untuk sumber daya lainnya. Untuk melakukan ini, kita dapat mendefinisikan pemuat kustom `SamePictureLoader` dan mengarahkan [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) ke nama ini.
+Mesin Konversi menyediakan mekanisme yang memungkinkan Anda mengontrol pemuatan sumber daya tertentu yang terkait dengan dokumen HTML. Kelas [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) memiliki properti [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) di mana kita dapat mendefinisikan perilaku pemuat sumber daya. Misalkan kita perlu mengganti semua gambar PNG dengan gambar tunggal `test.jpg` dan mengganti URL eksternal menjadi internal untuk sumber daya lainnya. Untuk melakukan ini, kita dapat mendefinisikan pemuat kustom `SamePictureLoader` dan mengarahkan [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) ke nama ini.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -261,7 +261,7 @@ Saat mengonversi halaman web yang dihosting di server web ke PDF:
 <a name="csharp-webpage-to-pdf"><strong>Langkah: Mengonversi WebPage ke PDF di C#</strong></a>
 
 1. Baca konten halaman menggunakan objek HttpClient.
-1. Buat objek [HtmlLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions) dan atur URL dasar.
+1. Buat objek [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) dan atur URL dasar.
 1. Inisialisasi objek Document sambil meneruskan objek stream.
 1. Opsional, atur ukuran halaman dan/atau orientasi.
 
@@ -305,7 +305,7 @@ private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredenti
 
 ### Berikan kredensial untuk konversi Halaman Web ke PDF
 
-Terkadang kita perlu melakukan konversi file HTML yang memerlukan otentikasi dan hak akses, sehingga hanya pengguna yang sah yang dapat mengambil konten halaman. Ini juga mencakup skenario di mana beberapa sumber daya/data yang dirujuk di dalam HTML diambil dari server eksternal yang memerlukan otentikasi dan untuk memenuhi kebutuhan ini, properti [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) ditambahkan ke kelas [`HtmlLoadOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions). Potongan kode berikut menunjukkan langkah-langkah untuk meneruskan kredensial untuk meminta HTML & sumber daya terkait saat mengonversi file HTML ke PDF.
+Terkadang kita perlu melakukan konversi file HTML yang memerlukan otentikasi dan hak akses, sehingga hanya pengguna yang sah yang dapat mengambil konten halaman. Ini juga mencakup skenario di mana beberapa sumber daya/data yang dirujuk di dalam HTML diambil dari server eksternal yang memerlukan otentikasi dan untuk memenuhi kebutuhan ini, properti [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) ditambahkan ke kelas [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions). Potongan kode berikut menunjukkan langkah-langkah untuk meneruskan kredensial untuk meminta HTML & sumber daya terkait saat mengonversi file HTML ke PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -403,8 +403,8 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["MHTML ke PDF"](http
 
 <a name="csharp-mhtml-to-pdf"><strong>Langkah: Mengonversi MHTML ke PDF di C#</strong></a>
 
-1. Buat instance dari kelas [MhtLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/mhtloadoptions/).
-2. Inisialisasi objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/).
+1. Buat instance dari kelas [MhtLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mhtloadoptions/).
+2. Inisialisasi objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/).
 3. Simpan dokumen PDF keluaran dengan memanggil metode **Document.Save()**.
 
 ```csharp

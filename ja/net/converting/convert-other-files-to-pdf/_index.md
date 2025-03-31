@@ -152,8 +152,8 @@ Aspose.PDF for .NETは、オンラインの無料アプリケーション["EPUB 
 
 <a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong><em>手順:</em> C#でEPUBをPDFに変換する</strong></a>
 
-1. [EpubLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/epubloadoptions)クラスのインスタンスを作成します。
-2. 指定したソースファイル名とオプションを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのインスタンスを作成します。
+1. [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions)クラスのインスタンスを作成します。
+2. 指定したソースファイル名とオプションを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのインスタンスを作成します。
 3. 希望のファイル名でドキュメントを保存します。
 
 次のコードスニペットは、C#を使用してEPUBファイルをPDF形式に変換する方法を示しています。
@@ -176,7 +176,7 @@ private static void ConvertEPUBtoPDF()
 }
 ```
 
-変換のためにページサイズを設定することもできます。新しいページサイズを定義するには、`SizeF`オブジェクトを作成し、それを[エプブロードオプション](https://reference.aspose.com/pdf/ja/net/aspose.pdf/epubloadoptions/constructors/main)コンストラクタに渡します。
+変換のためにページサイズを設定することもできます。新しいページサイズを定義するには、`SizeF`オブジェクトを作成し、それを[エプブロードオプション](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main)コンストラクタに渡します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,15 +208,15 @@ Aspose.PDF for .NETは、オンラインの無料アプリケーション["Markd
 [![Aspose.PDF MarkdownをPDFに変換する無料アプリ](markdown.png)](https://products.aspose.app/pdf/conversion/md-to-pdf)
 {{% /alert %}}
 
-Aspose.PDF for .NETは、入力[Markdown](https://daringfireball.net/projects/markdown/syntax)データファイルに基づいてPDFドキュメントを作成する機能を提供します。MarkdownをPDFに変換するには、[MdLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/mdloadoptions)を使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)を初期化する必要があります。
+Aspose.PDF for .NETは、入力[Markdown](https://daringfireball.net/projects/markdown/syntax)データファイルに基づいてPDFドキュメントを作成する機能を提供します。MarkdownをPDFに変換するには、[MdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions)を使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)を初期化する必要があります。
 
 以下のコードスニペットは、Aspose.PDFライブラリを使用してこの機能をどのように利用するかを示しています。
 
 <a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>手順:</em> C#でMarkdownをPDFに変換する</strong></a> |
 <a name="csharp-convert-md-to-pdf" id="csharp-convert-md-to-pdf"><strong><em>手順:</em> C#でMDをPDFに変換する</strong></a>
 
-1. [MdLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/mdloadoptions/)クラスのインスタンスを作成します。
-2. 指定したソースファイル名とオプションを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのインスタンスを作成します。
+1. [MdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions/)クラスのインスタンスを作成します。
+2. 指定したソースファイル名とオプションを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのインスタンスを作成します。
 3. 希望のファイル名でドキュメントを保存します。
 
 ```csharp
@@ -452,14 +452,14 @@ Aspose.PDF for .NETは、オンラインの無料アプリケーション["PCL t
 
 ### PCLファイルをPDF形式に変換する
 
-PCLからPDFへの変換を可能にするために、Aspose.PDFには[`PclLoadOptions`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pclloadoptions)クラスがあり、これを使用してLoadOptionsオブジェクトを初期化します。後で、このオブジェクトはDocumentオブジェクトの初期化時に引数として渡され、PDFレンダリングエンジンがソースドキュメントの入力形式を特定するのに役立ちます。
+PCLからPDFへの変換を可能にするために、Aspose.PDFには[`PclLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions)クラスがあり、これを使用してLoadOptionsオブジェクトを初期化します。後で、このオブジェクトはDocumentオブジェクトの初期化時に引数として渡され、PDFレンダリングエンジンがソースドキュメントの入力形式を特定するのに役立ちます。
 
 以下のコードスニペットは、PCLファイルをPDF形式に変換するプロセスを示しています。
 
 <a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong><em>手順:</em> C#でPCLをPDFに変換する</strong></a>
 
-1. [PclLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pclloadoptions/)クラスのインスタンスを作成します。
-2. 指定したソースファイル名とオプションを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)クラスのインスタンスを作成します。
+1. [PclLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions/)クラスのインスタンスを作成します。
+2. 指定したソースファイル名とオプションを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)クラスのインスタンスを作成します。
 3. 希望のファイル名でドキュメントを保存します。
 
 ```csharp
@@ -538,10 +538,10 @@ Aspose.PDF for .NETは、オンラインの無料アプリケーション["Text 
 <a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong><em>手順:</em> C#でプレーンテキストをPDFに変換する</strong></a>
 
 1. _TextReader_を使用して、全テキストを読み取ります。
-2. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)オブジェクトをインスタンス化し、Pagesコレクションに新しいページを追加します。
-3. [TextFragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragment/)の新しいオブジェクトを作成し、_TextReader_オブジェクトをそのコンストラクタに渡します。
+2. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)オブジェクトをインスタンス化し、Pagesコレクションに新しいページを追加します。
+3. [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment/)の新しいオブジェクトを作成し、_TextReader_オブジェクトをそのコンストラクタに渡します。
 4. _TextFragment_オブジェクトを_Paragraphs_コレクションの段落として追加します。テキストの量がページを超える場合、ライブラリアルゴリズムは自動的に追加ページを追加します。
-5. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)クラスの**Save**メソッドを使用します。
+5. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)クラスの**Save**メソッドを使用します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -579,8 +579,8 @@ C#でプレフォーマットされたテキストをPDFに変換する手順は
 <a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong><em>手順:</em> C#でプレフォーマットされたTXTをPDFに変換する</strong></a>
 
 1. 全テキストを文字列の配列として読み取ります。
-2. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)オブジェクトをインスタンス化し、[Pages](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/pages/)コレクションに新しいページを追加します。
-3. 文字列の配列をループして、各文字列を[Paragraphs](https://reference.aspose.com/pdf/ja/net/aspose.pdf/paragraphs/)コレクションの段落として追加します。
+2. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)オブジェクトをインスタンス化し、[Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/pages/)コレクションに新しいページを追加します。
+3. 文字列の配列をループして、各文字列を[Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/paragraphs/)コレクションの段落として追加します。
 
 この場合、ライブラリのアルゴリズムも追加ページを追加しますが、このプロセスを自分で制御することもできます。
 以下の例は、プレフォーマットされたテキストファイルをPDFドキュメントに変換する方法を示しています。ページサイズはA4です。
@@ -643,7 +643,7 @@ XPSファイルタイプは、主にマイクロソフト社のXMLペーパー�
 
 {{% /alert %}}
 
-XPSをPDFに変換するために、Aspose.PDF for .NETでは[XpsLoadOption](https://reference.aspose.com/pdf/ja/net/aspose.pdf/xpsloadoptions)というクラスを導入しており、これを使用して[LoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/loadoptions)オブジェクトを初期化します。後で、このオブジェクトはDocumentオブジェクトの初期化時に引数として渡され、PDFレンダリングエンジンがソースドキュメントの入力形式を特定するのに役立ちます。
+XPSをPDFに変換するために、Aspose.PDF for .NETでは[XpsLoadOption](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions)というクラスを導入しており、これを使用して[LoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions)オブジェクトを初期化します。後で、このオブジェクトはDocumentオブジェクトの初期化時に引数として渡され、PDFレンダリングエンジンがソースドキュメントの入力形式を特定するのに役立ちます。
 
 {{% alert color="primary" %}}
 
@@ -655,8 +655,8 @@ XPおよびWindows 7では、コントロールパネルのプリンタを見て
 
 <a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong><em>手順:</em> C#でXPSをPDFに変換する</strong></a>
 
-1. [XpsLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/xpsloadoptions/)クラスのインスタンスを作成します。
-2. 指定したソースファイル名とオプションを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)クラスのインスタンスを作成します。
+1. [XpsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions/)クラスのインスタンスを作成します。
+2. 指定したソースファイル名とオプションを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)クラスのインスタンスを作成します。
 3. 希望のファイル名でドキュメントをPDF形式に保存します。
 
 ```csharp
@@ -689,7 +689,7 @@ Aspose.PDF for .NETは、オンラインの無料アプリケーション["XPS t
 
 **Aspose.PDF for .NET**は、PostScriptファイルをPDF形式に変換する機能をサポートしています。Aspose.PDFの機能の1つは、変換中に使用されるフォントフォルダのセットを設定できることです。
 
-PostScriptファイルをPDF形式に変換するために、Aspose.PDF for .NETは[PsLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/psloadoptions)クラスを提供しており、これを使用してLoadOptionsオブジェクトを初期化します。後で、このオブジェクトはDocumentオブジェクトのコンストラクタに引数として渡され、PDFレンダリングエンジンがソースドキュメントの形式を特定するのに役立ちます。
+PostScriptファイルをPDF形式に変換するために、Aspose.PDF for .NETは[PsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/psloadoptions)クラスを提供しており、これを使用してLoadOptionsオブジェクトを初期化します。後で、このオブジェクトはDocumentオブジェクトのコンストラクタに引数として渡され、PDFレンダリングエンジンがソースドキュメントの形式を特定するのに役立ちます。
 
 以下のコードスニペットは、Aspose.PDF for .NETを使用してPostScriptファイルをPDF形式に変換するために使用できます。
 
@@ -752,7 +752,7 @@ Aspose.PDF for .NETは、オンラインの無料アプリケーション["XML t
 
 ## XSL-FOをPDFに変換
 
-XSL-FOファイルをPDFに変換することは、従来のAspose.PDF技術を使用して実装できます。すなわち、[Document](https://reference.aspose.com/page/net/aspose.page/document)オブジェクトを[XslFoLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/xslfoloadoptions)でインスタンス化します。しかし、時には不正なファイル構造に遭遇することがあります。この場合、XSL-FOコンバータはエラーハンドリング戦略を設定することを許可します。`ThrowExceptionImmediately`、`TryIgnore`、または`InvokeCustomHandler`を選択できます。
+XSL-FOファイルをPDFに変換することは、従来のAspose.PDF技術を使用して実装できます。すなわち、[Document](https://reference.aspose.com/page/net/aspose.page/document)オブジェクトを[XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions)でインスタンス化します。しかし、時には不正なファイル構造に遭遇することがあります。この場合、XSL-FOコンバータはエラーハンドリング戦略を設定することを許可します。`ThrowExceptionImmediately`、`TryIgnore`、または`InvokeCustomHandler`を選択できます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -786,7 +786,7 @@ Aspose.PDF for .NETは、オンラインの無料アプリケーション["LaTex
 [![Aspose.PDF LaTeX/TeXをPDFに変換する無料アプリ](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
 {{% /alert %}}
 
-Aspose.PDF for .NETは、TeXファイルをPDF形式に変換する機能をサポートしており、この要件を満たすために、Aspose.Pdf名前空間には[LatexLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/latexloadoptions)というクラスがあり、LaTexファイルを読み込み、[Document class](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)を使用してPDF形式で出力をレンダリングする機能を提供します。
+Aspose.PDF for .NETは、TeXファイルをPDF形式に変換する機能をサポートしており、この要件を満たすために、Aspose.Pdf名前空間には[LatexLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexloadoptions)というクラスがあり、LaTexファイルを読み込み、[Document class](https://reference.aspose.com/pdf/net/aspose.pdf/document)を使用してPDF形式で出力をレンダリングする機能を提供します。
 以下のコードスニペットは、C#を使用してLaTexファイルをPDF形式に変換するプロセスを示しています。
 
 ```csharp
@@ -810,7 +810,7 @@ private static void ConvertTeXtoPDF()
 
 OFD形式は「Open Fixed-layout Document」を指し、中国の電子ファイルストレージの国家標準として確立されており、人気のあるPDF形式の代替として使用されます。固定レイアウトのドキュメントをサポートし、さまざまなプラットフォームでの一貫した表示を保証します。OFDファイルは、デジタルドキュメントやビジネスアプリケーションなど、さまざまな目的で利用されます。
 
-Aspose.PDF for .NETは、OFDファイルをPDF形式に変換する機能をサポートしており、この要件を満たすために、Aspose.Pdf名前空間には[OfdLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/ofdloadoptions/)というクラスがあり、OFDファイルを読み込み、[Document class](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)を使用してPDF形式で出力をレンダリングする機能を提供します。
+Aspose.PDF for .NETは、OFDファイルをPDF形式に変換する機能をサポートしており、この要件を満たすために、Aspose.Pdf名前空間には[OfdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/ofdloadoptions/)というクラスがあり、OFDファイルを読み込み、[Document class](https://reference.aspose.com/pdf/net/aspose.pdf/document)を使用してPDF形式で出力をレンダリングする機能を提供します。
 
 以下のコードスニペットは、C#を使用してOFDファイルをPDF形式に変換するプロセスを示しています。
 

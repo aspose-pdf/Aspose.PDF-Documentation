@@ -77,7 +77,7 @@ draft: false
 
 ## 画像スタンプから画像を抽出する
 
-[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスを使用すると、PDFファイルのスタンプから画像を抽出できます。まず、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[GetStamps](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps)メソッドを呼び出して、PDFファイルの特定のページからStampInfoオブジェクトの配列を取得します。次に、StampInfo.Imageプロパティを使用してStampInfoから画像を取得できます。画像を取得したら、画像を保存するか、画像のさまざまなプロパティで作業できます。以下のコードスニペットは、画像スタンプから画像を抽出する方法を示しています。
+[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスを使用すると、PDFファイルのスタンプから画像を抽出できます。まず、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps)メソッドを呼び出して、PDFファイルの特定のページからStampInfoオブジェクトの配列を取得します。次に、StampInfo.Imageプロパティを使用してStampInfoから画像を取得できます。画像を取得したら、画像を保存するか、画像のさまざまなプロパティで作業できます。以下のコードスニペットは、画像スタンプから画像を抽出する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -136,7 +136,7 @@ private static void ExtractImageFromStamp()
 
 ## PDFファイル内のスタンプの位置を変更する
 
-[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスを使用すると、PDFファイル内のスタンプの位置を変更できます。まず、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、スタンプインデックスとPDFファイルの特定のページ上の新しい位置を指定して[MoveStamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp)メソッドを呼び出します。次に、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたファイルを保存できます。以下のコードスニペットは、特定のページでスタンプを移動する方法を示しています。
+[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスを使用すると、PDFファイル内のスタンプの位置を変更できます。まず、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、スタンプインデックスとPDFファイルの特定のページ上の新しい位置を指定して[MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp)メソッドを呼び出します。次に、[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたファイルを保存できます。以下のコードスニペットは、特定のページでスタンプを移動する方法を示しています。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void ChangeStampPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-また、[MoveStampById](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid)メソッドを使用して、StampIdを使用して特定のスタンプを移動することもできます。
+また、[MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid)メソッドを使用して、StampIdを使用して特定のスタンプを移動することもできます。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

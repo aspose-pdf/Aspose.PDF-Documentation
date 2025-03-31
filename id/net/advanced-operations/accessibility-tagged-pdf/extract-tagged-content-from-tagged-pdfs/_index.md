@@ -85,7 +85,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Mendapatkan Konten PDF Berlabel
 
-Untuk mendapatkan konten dari Dokumen PDF dengan Teks Berlabel, Aspose.PDF menawarkan properti [TaggedContent](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/taggedcontent) dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+Untuk mendapatkan konten dari Dokumen PDF dengan Teks Berlabel, Aspose.PDF menawarkan properti [TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 Potongan kode berikut menunjukkan cara mendapatkan konten dari dokumen PDF dengan Teks Berlabel:
 
@@ -144,7 +144,7 @@ private static void GetTaggedContent()
 
 ## Mendapatkan Struktur Akar
 
-Untuk mendapatkan struktur akar dari Dokumen PDF Berlabel, Aspose.PDF menawarkan properti [StructTreeRootElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent) dan [StructureElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structureelement). Potongan kode berikut menunjukkan cara mendapatkan struktur akar dari Dokumen PDF Berlabel:
+Untuk mendapatkan struktur akar dari Dokumen PDF Berlabel, Aspose.PDF menawarkan properti [StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) dan [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Potongan kode berikut menunjukkan cara mendapatkan struktur akar dari Dokumen PDF Berlabel:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void GetRootStructure()
 
 ## Mengakses Elemen Anak
 
-Untuk mengakses elemen anak dari Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [ElementList](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/elementlist). Potongan kode berikut menunjukkan cara mengakses elemen anak dari Dokumen PDF Berlabel:
+Untuk mengakses elemen anak dari Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist). Potongan kode berikut menunjukkan cara mengakses elemen anak dari Dokumen PDF Berlabel:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -316,7 +316,7 @@ private static void AccessChildElements()
 
 ## Menandai Gambar dalam PDF yang Ada
 
-Untuk menandai gambar dalam dokumen PDF yang ada, Aspose.PDF menawarkan metode [FindElements](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) dari kelas [StructureElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structureelement). Anda dapat menambahkan teks alternatif untuk gambar menggunakan properti [AlternativeText](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) dari kelas [FigureElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/figureelement).
+Untuk menandai gambar dalam dokumen PDF yang ada, Aspose.PDF menawarkan metode [FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) dari kelas [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Anda dapat menambahkan teks alternatif untuk gambar menggunakan properti [AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) dari kelas [FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement).
 
 Potongan kode berikut menunjukkan cara menandai gambar dalam dokumen PDF yang ada:
 

@@ -87,13 +87,13 @@ Aspose.PDF for .NET은 PDF 문서에 그래프 객체(예: 그래프, 선, 사�
 
 아래 단계를 따르세요:
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 인스턴스를 생성합니다.
-1. 특정 치수로 [Drawing object](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing)를 생성합니다.
-1. Drawing object에 대한 [Border](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/graph/properties/border)를 설정합니다.
-1. 페이지의 단락 컬렉션에 [Graph](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/graph) 객체를 추가합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 인스턴스를 생성합니다.
+1. 특정 치수로 [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)를 생성합니다.
+1. Drawing object에 대한 [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border)를 설정합니다.
+1. 페이지의 단락 컬렉션에 [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) 객체를 추가합니다.
 1. PDF 파일을 저장합니다.
 
-다음 코드 스니펫은 [Arc](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/arc) 객체를 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc) 객체를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

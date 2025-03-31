@@ -91,9 +91,9 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Kami dapat menggunakan kelas dan metode berikut untuk penandatanganan PDF
 
-- Kelas [DocMDPSignature](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/docmdpsignature).
-- Enumerasi [DocMDPAccessPermissions](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/docmdpaccesspermissions).
-- Properti [IsCertified](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) dalam kelas [PdfFileSignature](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature).
+- Kelas [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature).
+- Enumerasi [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions).
+- Properti [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) dalam kelas [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature).
 
 Untuk membuat tanda tangan digital berdasarkan sertifikat PKCS12 (ekstensi file .p12, pfx), Anda harus membuat instance dari kelas `PdfFileSignature`, dengan melewatkan objek dokumen ke dalamnya. Selanjutnya, Anda harus menentukan metode tanda tangan digital yang diinginkan dengan membuat objek dari salah satu kelas:
 
@@ -198,7 +198,7 @@ private static void Verify()
 
 Aspose.PDF for .NET mendukung untuk menandatangani PDF secara digital dengan server cap waktu atau layanan Web.
 
-Untuk memenuhi persyaratan ini, kelas [TimestampSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf/timestampsettings) telah ditambahkan ke namespace Aspose.PDF. Silakan lihat potongan kode berikut yang memperoleh cap waktu dan menambahkannya ke dokumen PDF:
+Untuk memenuhi persyaratan ini, kelas [TimestampSettings](https://reference.aspose.com/pdf/net/aspose.pdf/timestampsettings) telah ditambahkan ke namespace Aspose.PDF. Silakan lihat potongan kode berikut yang memperoleh cap waktu dan menambahkannya ke dokumen PDF:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

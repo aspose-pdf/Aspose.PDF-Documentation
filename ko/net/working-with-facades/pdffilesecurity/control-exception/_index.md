@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[PdfFileSecurity](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity) 클래스는 예외를 제어할 수 있게 해줍니다. 이를 위해 [AllowExceptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) 속성을 false 또는 true로 설정해야 합니다. 작업을 false로 설정하면 [DecryptFile](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile)의 결과는 비밀번호의 정확성에 따라 true 또는 false를 반환합니다.
+[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) 클래스는 예외를 제어할 수 있게 해줍니다. 이를 위해 [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) 속성을 false 또는 true로 설정해야 합니다. 작업을 false로 설정하면 [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile)의 결과는 비밀번호의 정확성에 따라 true 또는 false를 반환합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -103,7 +103,7 @@ private static void ControlExceptionPDFFile()
 }
 ```
 
-[AllowExceptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) 속성을 true로 설정하면 try-catch 연산자를 사용하여 작업의 결과를 얻을 수 있습니다.
+[AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) 속성을 true로 설정하면 try-catch 연산자를 사용하여 작업의 결과를 얻을 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

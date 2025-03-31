@@ -77,7 +77,7 @@ draft: false
 
 ## ファイルパスを使用してPDFのブックレットを作成する
 
-[MakeBooklet](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFファイルのブックレットを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してブックレットを作成できます。以下のコードスニペットは、ファイルパスを使用してブックレットを作成する方法を示しています。
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFファイルのブックレットを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してブックレットを作成できます。以下のコードスニペットは、ファイルパスを使用してブックレットを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
 
 ## ページサイズとファイルパスを使用してPDFのブックレットを作成する
 
-[MakeBooklet](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFファイルのブックレットを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズを設定することもできます。以下のコードスニペットは、ページサイズとファイルパスを使用してブックレットを作成する方法を示しています。
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFファイルのブックレットを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズを設定することもできます。以下のコードスニペットは、ページサイズとファイルパスを使用してブックレットを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
 
 ## ページサイズ、指定された左ページと右ページ、およびファイルパスを使用してPDFのブックレットを作成する
 
-[MakeBooklet](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFファイルのブックレットを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズを設定し、出力PDFファイルの左側と右側に特定のページを指定することもできます。以下のコードスニペットは、ページサイズ、指定された左ページと右ページ、およびファイルパスを使用してブックレットを作成する方法を示しています。
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFファイルのブックレットを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズを設定し、出力PDFファイルの左側と右側に特定のページを指定することもできます。以下のコードスニペットは、ページサイズ、指定された左ページと右ページ、およびファイルパスを使用してブックレットを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## 指定された左ページと右ページ、およびファイルパスを使用してPDFのブックレットを作成する
 
-[MakeBooklet](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFファイルのブックレットを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFファイルの左側と右側に特定のページを指定することもできます。以下のコードスニペットは、指定された左ページと右ページ、およびファイルパスを使用してブックレットを作成する方法を示しています。
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFファイルのブックレットを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFファイルの左側と右側に特定のページを指定することもできます。以下のコードスニペットは、指定された左ページと右ページ、およびファイルパスを使用してブックレットを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
 
 ## ストリームを使用してPDFのブックレットを作成する
 
-[MakeBooklet](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFストリームのブックレットを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してブックレットを作成できます。以下のコードスニペットは、ストリームを使用してブックレットを作成する方法を示しています。
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFストリームのブックレットを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してブックレットを作成できます。以下のコードスニペットは、ストリームを使用してブックレットを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,7 +175,7 @@ private static void MakeBookletOfPdfUsingStreams()
 
 ## ページサイズとストリームを使用してPDFのブックレットを作成する
 
-[MakeBooklet](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFストリームのブックレットを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFストリームのページサイズを設定することもできます。以下のコードスニペットは、ページサイズとストリームを使用してブックレットを作成する方法を示しています。
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFストリームのブックレットを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFストリームのページサイズを設定することもできます。以下のコードスニペットは、ページサイズとストリームを使用してブックレットを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
 
 ## ページサイズ、指定された左ページと右ページ、およびストリームを使用してPDFのブックレットを作成する
 
-[MakeBooklet](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFストリームのブックレットを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズを設定し、出力PDFストリームの左側と右側に特定のページを指定することもできます。以下のコードスニペットは、ページサイズ、指定された左ページと右ページ、およびストリームを使用してブックレットを作成する方法を示しています。
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFストリームのブックレットを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズを設定し、出力PDFストリームの左側と右側に特定のページを指定することもできます。以下のコードスニペットは、ページサイズ、指定された左ページと右ページ、およびストリームを使用してブックレットを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +226,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
 
 ## 指定された左ページと右ページ、およびストリームを使用してPDFのブックレットを作成する
 
-[MakeBooklet](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFストリームのブックレットを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFストリームの左側と右側に特定のページを指定することもできます。以下のコードスニペットは、指定された左ページと右ページ、およびストリームを使用してブックレットを作成する方法を示しています。
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、入力PDFストリームのブックレットを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してブックレットを作成できます。また、このオーバーロードを使用して出力PDFストリームの左側と右側に特定のページを指定することもできます。以下のコードスニペットは、指定された左ページと右ページ、およびストリームを使用してブックレットを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

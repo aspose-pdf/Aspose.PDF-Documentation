@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Metode [Ganti](https://reference.aspose.com/pdf/id/net/aspose.pdf/ximagecollection/methods/replace/index) dari koleksi Gambar memungkinkan Anda untuk mengganti gambar di file PDF yang ada.
+Metode [Ganti](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) dari koleksi Gambar memungkinkan Anda untuk mengganti gambar di file PDF yang ada.
 
 Koleksi Gambar dapat ditemukan di koleksi Sumber halaman. Untuk mengganti gambar:
 

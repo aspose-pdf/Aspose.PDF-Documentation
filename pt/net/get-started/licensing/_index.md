@@ -93,13 +93,13 @@ Na versão de avaliação, você pode processar apenas as quatro primeiras pági
 
 A licença pode ser carregada de um arquivo ou objeto de fluxo. A maneira mais fácil de definir uma licença é colocar o arquivo de licença na mesma pasta que o arquivo Aspose.PDF.dll e especificar o nome do arquivo sem um caminho, como mostrado no exemplo abaixo.
 
-Se você usar qualquer outro componente Aspose para .NET junto com Aspose.PDF for .NET, por favor, especifique o namespace para Licença como [Aspose.Pdf.License](https://reference.aspose.com/pdf/pt/net/aspose.pdf/license).
+Se você usar qualquer outro componente Aspose para .NET junto com Aspose.PDF for .NET, por favor, especifique o namespace para Licença como [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license).
 
 ### Carregando uma licença de um arquivo
 
 A maneira mais fácil de aplicar uma licença é colocar o arquivo de licença na mesma pasta que o arquivo Aspose.PDF.dll e especificar apenas o nome do arquivo sem um caminho.
 
-Quando você chama o método [SetLicense](https://reference.aspose.com/pdf/pt/net/aspose.pdf/license/methods/setlicense/index), o nome da licença que você passa deve ser o do seu arquivo de licença. Por exemplo, se você mudar o nome do arquivo de licença para "Aspose.PDF.lic.xml", passe esse nome de arquivo para o método Pdf.SetLicense(…).
+Quando você chama o método [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index), o nome da licença que você passa deve ser o do seu arquivo de licença. Por exemplo, se você mudar o nome do arquivo de licença para "Aspose.PDF.lic.xml", passe esse nome de arquivo para o método Pdf.SetLicense(…).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

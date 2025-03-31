@@ -82,13 +82,13 @@ sitemap:
 
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-Adobe Acrobatで作成された透かしはアーティファクトと呼ばれます（PDF仕様の14.8.2.2の実際のコンテンツとアーティファクトに記載されています）。アーティファクトを操作するために、Aspose.PDFには2つのクラスがあります：[Artifact](https://reference.aspose.com/pdf/ja/net/aspose.pdf/artifact)と[ArtifactCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/artifactcollection)。
+Adobe Acrobatで作成された透かしはアーティファクトと呼ばれます（PDF仕様の14.8.2.2の実際のコンテンツとアーティファクトに記載されています）。アーティファクトを操作するために、Aspose.PDFには2つのクラスがあります：[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact)と[ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)。
 
-特定のページ上のすべてのアーティファクトを取得するには、[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)クラスのArtifactsプロパティを使用します。このトピックでは、PDFファイル内のアーティファクトの操作方法について説明します。
+特定のページ上のすべてのアーティファクトを取得するには、[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)クラスのArtifactsプロパティを使用します。このトピックでは、PDFファイル内のアーティファクトの操作方法について説明します。
 
 ## アーティファクトの操作
 
-[Artifact](https://reference.aspose.com/pdf/ja/net/aspose.pdf/artifact)クラスには次のプロパティがあります：
+[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact)クラスには次のプロパティがあります：
 
 - **Artifact.Type**: アーティファクトのタイプを取得します（Artifact.ArtifactType列挙型の値をサポートし、値にはBackground、Layout、Page、Pagination、Undefinedが含まれます）。
 - **Artifact.Subtype**: アーティファクトのサブタイプを取得します（Artifact.ArtifactSubtype列挙型の値をサポートし、値にはBackground、Footer、Header、Undefined、Watermarkが含まれます）。

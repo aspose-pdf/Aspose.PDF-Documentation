@@ -83,7 +83,7 @@ sitemap:
 ## PDF/A文書をPDFに変換
 
 PDF/A文書をPDFに変換することは、元の文書から<abbr title="Portable Document Format Archive">PDF/A</abbr>制限を削除することを意味します。
-クラス[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)には、入力/ソースファイルからPDF準拠情報を削除するためのメソッド[RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/removepdfacompliance)があります。
+クラス[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)には、入力/ソースファイルからPDF準拠情報を削除するためのメソッド[RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance)があります。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

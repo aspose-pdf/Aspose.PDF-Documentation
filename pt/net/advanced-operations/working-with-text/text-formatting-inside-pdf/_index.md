@@ -82,7 +82,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Como adicionar Recuo de Linha ao PDF
 
-Aspose.PDF for .NET oferece a propriedade SubsequentLinesIndent na classe [TextFormattingOptions](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/textformattingoptions). Que pode ser usada para especificar o recuo de linha em cenários de geração de PDF com TextFragment e coleção de Parágrafos.
+Aspose.PDF for .NET oferece a propriedade SubsequentLinesIndent na classe [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions). Que pode ser usada para especificar o recuo de linha em cenários de geração de PDF com TextFragment e coleção de Parágrafos.
 
 Por favor, use o seguinte trecho de código para usar a propriedade:
 
@@ -203,7 +203,7 @@ private static void AddUnderlineText()
 
 ## Como adicionar Borda em Torno do Texto Adicionado
 
-Você tem controle sobre a aparência do texto que adiciona. O exemplo abaixo mostra como adicionar uma borda em torno de um pedaço de texto que você adicionou desenhando um retângulo ao redor dele. Descubra mais sobre a classe [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor).
+Você tem controle sobre a aparência do texto que adiciona. O exemplo abaixo mostra como adicionar uma borda em torno de um pedaço de texto que você adicionou desenhando um retângulo ao redor dele. Descubra mais sobre a classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

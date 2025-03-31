@@ -85,13 +85,13 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Anotasi Teks adalah anotasi yang dilampirkan pada lokasi tertentu dalam dokumen PDF. Ketika ditutup, anotasi ditampilkan sebagai ikon; ketika dibuka, harus menampilkan jendela pop-up yang berisi teks catatan dalam font dan ukuran yang dipilih oleh pembaca.
 
-Anotasi terdapat dalam koleksi [Annotations](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations) dari Halaman tertentu. Koleksi ini berisi anotasi untuk halaman individu tersebut saja; setiap halaman memiliki koleksi Annotationsnya sendiri.
+Anotasi terdapat dalam koleksi [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) dari Halaman tertentu. Koleksi ini berisi anotasi untuk halaman individu tersebut saja; setiap halaman memiliki koleksi Annotationsnya sendiri.
 
-Untuk menambahkan anotasi ke halaman tertentu, tambahkan ke koleksi Annotations halaman tersebut dengan metode [Add](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationcollection/methods/add).
+Untuk menambahkan anotasi ke halaman tertentu, tambahkan ke koleksi Annotations halaman tersebut dengan metode [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add).
 
 1. Pertama, buat anotasi yang ingin Anda tambahkan ke PDF.
 1. Kemudian buka PDF input.
-1. Tambahkan anotasi ke koleksi Annotations objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page).
+1. Tambahkan anotasi ke koleksi Annotations objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
 
 Potongan kode berikut menunjukkan cara menambahkan anotasi di halaman PDF.
 
@@ -136,7 +136,7 @@ Anotasi Pop-up menampilkan teks dalam jendela pop-up untuk entri dan pengeditan.
 
 Ini tidak boleh memiliki aliran penampilan atau tindakan terkait sendiri dan harus diidentifikasi oleh entri Popup dalam kamus anotasi induknya.
 
-Potongan kode berikut menunjukkan cara menambahkan [Anotasi Pop-up](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/popupannotation) di halaman PDF menggunakan contoh menambahkan [anotasi Garis](/pdf/id/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) induk.
+Potongan kode berikut menunjukkan cara menambahkan [Anotasi Pop-up](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) di halaman PDF menggunakan contoh menambahkan [anotasi Garis](/pdf/id/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) induk.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void AddLineAnnotation()
 
 ## Cara menambahkan (atau Membuat) Anotasi Teks Gratis baru
 
-Anotasi teks gratis menampilkan teks langsung di halaman. Metode [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) memungkinkan pembuatan jenis anotasi ini. Dalam potongan berikut, kami menambahkan anotasi teks gratis di atas kemunculan pertama dari string.
+Anotasi teks gratis menampilkan teks langsung di halaman. Metode [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) memungkinkan pembuatan jenis anotasi ini. Dalam potongan berikut, kami menambahkan anotasi teks gratis di atas kemunculan pertama dari string.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -216,7 +216,7 @@ private static void AddFreeTextAnnotationDemo()
 
 ### Atur Properti Callout untuk FreeTextAnnotation
 
-Untuk konfigurasi anotasi yang lebih fleksibel dalam dokumen PDF, Aspose.PDF for .NET menyediakan properti [Callout](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/freetextannotation/properties/callout) dari kelas [FreeTextAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/freetextannotation) yang memungkinkan spesifikasi Array titik garis callout. Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini:
+Untuk konfigurasi anotasi yang lebih fleksibel dalam dokumen PDF, Aspose.PDF for .NET menyediakan properti [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) dari kelas [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) yang memungkinkan spesifikasi Array titik garis callout. Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -351,9 +351,9 @@ private static void AddInvisibleAnnotation()
 
 Bagian ini melihat bagaimana cara memformat teks dalam anotasi teks gratis.
 
-Anotasi terdapat dalam koleksi [AnnotationCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page). Saat menambahkan [FreeTextAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/freetextannotation) ke dokumen PDF, Anda dapat menentukan informasi pemformatan seperti font, ukuran, warna, dan sebagainya menggunakan kelas [DefaultAppearance](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/defaultappearance/methods/index). Juga dimungkinkan untuk menentukan informasi pemformatan menggunakan properti TextStyle. Selain itu, Anda dapat memperbarui pemformatan dari setiap FreeTextAnnotation yang sudah ada dalam dokumen PDF.
+Anotasi terdapat dalam koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Saat menambahkan [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) ke dokumen PDF, Anda dapat menentukan informasi pemformatan seperti font, ukuran, warna, dan sebagainya menggunakan kelas [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index). Juga dimungkinkan untuk menentukan informasi pemformatan menggunakan properti TextStyle. Selain itu, Anda dapat memperbarui pemformatan dari setiap FreeTextAnnotation yang sudah ada dalam dokumen PDF.
 
-Kelas [TextStyle](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/textstyle) mendukung bekerja dengan entri gaya default. Kelas ini memungkinkan Anda untuk mengatur warna, ukuran font, dan nama font:
+Kelas [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) mendukung bekerja dengan entri gaya default. Kelas ini memungkinkan Anda untuk mengatur warna, ukuran font, dan nama font:
 
 - Properti FontName mendapatkan atau mengatur nama font (string).
 - Properti FontSize mendapatkan dan mengatur ukuran teks default (double).
@@ -434,7 +434,7 @@ Ketika Anda mengubah konten atau gaya teks dari anotasi teks gratis, penampilan 
 
 ### Garis Teks yang Dihapus menggunakan StrikeOutAnnotation
 
-Aspose.PDF for .NET memungkinkan Anda untuk menambahkan, menghapus, dan memperbarui anotasi dalam dokumen PDF. Salah satu kelas memungkinkan Anda untuk menghapus anotasi juga. Ini berguna ketika Anda ingin menghapus satu atau lebih fragmen teks dalam dokumen. Anotasi disimpan dalam koleksi [AnnotationCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page). Kelas bernama [StrikeOutAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/strikeoutannotation) dapat digunakan untuk menambahkan anotasi garis yang dihapus ke dokumen PDF.
+Aspose.PDF for .NET memungkinkan Anda untuk menambahkan, menghapus, dan memperbarui anotasi dalam dokumen PDF. Salah satu kelas memungkinkan Anda untuk menghapus anotasi juga. Ini berguna ketika Anda ingin menghapus satu atau lebih fragmen teks dalam dokumen. Anotasi disimpan dalam koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Kelas bernama [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) dapat digunakan untuk menambahkan anotasi garis yang dihapus ke dokumen PDF.
 
 Untuk menghapus fragmen Teks tertentu:
 
@@ -502,7 +502,7 @@ private void StrikeOutTextInDocument()
 
 ## Hapus Semua Anotasi dari Halaman File PDF
 
-Koleksi [AnnotationCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) berisi semua anotasi untuk halaman tertentu tersebut. Untuk menghapus semua anotasi dari halaman, panggil metode *Delete* dari koleksi AnnotationCollectoin.
+Koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) berisi semua anotasi untuk halaman tertentu tersebut. Untuk menghapus semua anotasi dari halaman, panggil metode *Delete* dari koleksi AnnotationCollectoin.
 
 Potongan kode berikut menunjukkan cara menghapus semua anotasi dari halaman tertentu.
 
@@ -536,7 +536,7 @@ Anda dapat memeriksa kualitas Aspose.PDF dan mendapatkan hasilnya secara online 
 
 Aspose.PDF memungkinkan Anda untuk menghapus Anotasi tertentu dari file PDF. Topik ini menjelaskan caranya.
 
-Untuk menghapus anotasi tertentu dari PDF, panggil [metode Delete dari koleksi AnnotationCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). Koleksi ini milik objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page). Metode Delete memerlukan indeks anotasi yang ingin Anda hapus. Kemudian, simpan file PDF yang diperbarui. Potongan kode berikut menunjukkan cara menghapus anotasi tertentu.
+Untuk menghapus anotasi tertentu dari PDF, panggil [metode Delete dari koleksi AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). Koleksi ini milik objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Metode Delete memerlukan indeks anotasi yang ingin Anda hapus. Kemudian, simpan file PDF yang diperbarui. Potongan kode berikut menunjukkan cara menghapus anotasi tertentu.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -559,7 +559,7 @@ private static void DeleteParticularAnnotation()
 
 ## Dapatkan Semua Anotasi dari Halaman Dokumen PDF
 
-Aspose.PDF memungkinkan Anda untuk mendapatkan anotasi dari seluruh dokumen, atau dari halaman tertentu. Untuk mendapatkan semua anotasi dari halaman dalam dokumen PDF, lakukan loop melalui koleksi [AnnotationCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationcollection) dari sumber halaman yang diinginkan. Potongan kode berikut menunjukkan cara mendapatkan semua anotasi dari sebuah halaman.
+Aspose.PDF memungkinkan Anda untuk mendapatkan anotasi dari seluruh dokumen, atau dari halaman tertentu. Untuk mendapatkan semua anotasi dari halaman dalam dokumen PDF, lakukan loop melalui koleksi [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) dari sumber halaman yang diinginkan. Potongan kode berikut menunjukkan cara mendapatkan semua anotasi dari sebuah halaman.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -587,7 +587,7 @@ Harap dicatat bahwa untuk mendapatkan semua anotasi dari seluruh PDF, Anda harus
 
 ## Dapatkan Anotasi Tertentu dari File PDF
 
-Anotasi terkait dengan halaman individu dan disimpan dalam koleksi [AnnotationCOllection](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page). Untuk mendapatkan anotasi tertentu, tentukan indeksnya. Ini mengembalikan objek [Annotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotation) yang perlu di-cast ke tipe anotasi tertentu, misalnya [TextAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/textannotation). Potongan kode berikut menunjukkan cara mendapatkan anotasi tertentu dan propertinya.
+Anotasi terkait dengan halaman individu dan disimpan dalam koleksi [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Untuk mendapatkan anotasi tertentu, tentukan indeksnya. Ini mengembalikan objek [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) yang perlu di-cast ke tipe anotasi tertentu, misalnya [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). Potongan kode berikut menunjukkan cara mendapatkan anotasi tertentu dan propertinya.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -612,7 +612,7 @@ private static void GetParticularAnnotation()
 
 ## Dapatkan Sumber Anotasi
 
-Aspose.PDF memungkinkan Anda untuk mendapatkan sumber anotasi dari seluruh dokumen, atau dari halaman tertentu. Potongan kode berikut menunjukkan cara mendapatkan sumber anotasi sebagai objek [FileSpecification](https://reference.aspose.com/pdf/id/net/aspose.pdf/filespecification) dari file PDF input.
+Aspose.PDF memungkinkan Anda untuk mendapatkan sumber anotasi dari seluruh dokumen, atau dari halaman tertentu. Potongan kode berikut menunjukkan cara mendapatkan sumber anotasi sebagai objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) dari file PDF input.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

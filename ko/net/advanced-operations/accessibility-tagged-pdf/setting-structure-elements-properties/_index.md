@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-태그가 있는 PDF 문서에서 구조 요소 속성을 설정하기 위해 Aspose.PDF는 [CreateSectElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) 및 [CreateHeaderElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) 메서드를 [ITaggedContent](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent) 인터페이스에서 제공합니다.
+태그가 있는 PDF 문서에서 구조 요소 속성을 설정하기 위해 Aspose.PDF는 [CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) 및 [CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) 메서드를 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 인터페이스에서 제공합니다.
 
 다음 코드 스니펫은 태그가 있는 PDF 문서의 구조 요소 속성을 설정하는 방법을 보여줍니다:
 
@@ -168,7 +168,7 @@ private static void SetProperties()
 
 ## 텍스트 구조 요소 설정
 
-태그가 있는 PDF 문서의 텍스트 구조 요소를 설정하기 위해 Aspose.PDF는 [ParagraphElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/paragraphelement) 클래스를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 텍스트 구조 요소를 설정하는 방법을 보여줍니다:
+태그가 있는 PDF 문서의 텍스트 구조 요소를 설정하기 위해 Aspose.PDF는 [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) 클래스를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 텍스트 구조 요소를 설정하는 방법을 보여줍니다:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -241,7 +241,7 @@ private static void SetTextElements()
 
 ## 텍스트 블록 구조 요소 설정
 
-태그가 있는 PDF 문서의 텍스트 블록 구조 요소를 설정하기 위해 Aspose.PDF는 [HeaderElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/headerelement) 및 [ParagraphElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/paragraphelement) 클래스를 제공합니다. 이러한 클래스의 객체를 [StructureElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structureelement) 객체의 자식으로 추가할 수 있습니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 텍스트 블록 구조 요소를 설정하는 방법을 보여줍니다:
+태그가 있는 PDF 문서의 텍스트 블록 구조 요소를 설정하기 위해 Aspose.PDF는 [HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) 및 [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) 클래스를 제공합니다. 이러한 클래스의 객체를 [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) 객체의 자식으로 추가할 수 있습니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 텍스트 블록 구조 요소를 설정하는 방법을 보여줍니다:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -348,7 +348,7 @@ private static void SetTextBlockElements()
 
 ## 인라인 구조 요소 설정
 
-태그가 있는 PDF 문서의 인라인 구조 요소를 설정하기 위해 Aspose.PDF는 [SpanElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/spanelement) 및 [ParagraphElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/paragraphelement) 클래스를 제공합니다. 이러한 클래스의 객체를 [StructureElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structureelement) 객체의 자식으로 추가할 수 있습니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 인라인 구조 요소를 설정하는 방법을 보여줍니다:
+태그가 있는 PDF 문서의 인라인 구조 요소를 설정하기 위해 Aspose.PDF는 [SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) 및 [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) 클래스를 제공합니다. 이러한 클래스의 객체를 [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) 객체의 자식으로 추가할 수 있습니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 인라인 구조 요소를 설정하는 방법을 보여줍니다:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -587,7 +587,7 @@ private static void SetInlineElements()
 
 ## 사용자 정의 태그 이름 설정
 
-태그가 있는 PDF 문서의 요소에 대한 사용자 정의 태그 이름을 설정하기 위해 Aspose.PDF는 StructureElement 클래스의 [SetTag](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structureelement/methods/settag) 메서드를 제공합니다. 다음 코드 스니펫은 사용자 정의 태그 이름을 설정하는 방법을 보여줍니다:
+태그가 있는 PDF 문서의 요소에 대한 사용자 정의 태그 이름을 설정하기 위해 Aspose.PDF는 StructureElement 클래스의 [SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) 메서드를 제공합니다. 다음 코드 스니펫은 사용자 정의 태그 이름을 설정하는 방법을 보여줍니다:
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -732,7 +732,7 @@ private static void SetTagName()
 
 **이 기능은 버전 19.4 이상에서 지원됩니다.**
 
-태그가 있는 PDF 문서에서 링크 구조 요소를 설정하기 위해 Aspose.PDF는 [ITaggedContent](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent) 인터페이스의 [CreateLinkElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) 메서드를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 텍스트가 포함된 단락에 구조 요소를 설정하는 방법을 보여줍니다:
+태그가 있는 PDF 문서에서 링크 구조 요소를 설정하기 위해 Aspose.PDF는 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 인터페이스의 [CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) 메서드를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 텍스트가 포함된 단락에 구조 요소를 설정하는 방법을 보여줍니다:
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1076,7 +1076,7 @@ private static void AddLinkElement()
 
 ## 노트 구조 요소 설정
 
-Aspose.PDF for .NET API는 태그가 있는 PDF 문서에 [NoteElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/noteelement)를 추가할 수 있도록 합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서에 노트 요소를 추가하는 방법을 보여줍니다:
+Aspose.PDF for .NET API는 태그가 있는 PDF 문서에 [NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement)를 추가할 수 있도록 합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서에 노트 요소를 추가하는 방법을 보여줍니다:
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

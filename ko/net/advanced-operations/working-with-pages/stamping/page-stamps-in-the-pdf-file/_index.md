@@ -80,7 +80,7 @@ sitemap:
 
 ## C#로 페이지 스탬프 추가
 
-[PdfPageStamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf/PdfPageStamp)는 그래픽, 텍스트, 테이블이 포함된 복합 스탬프를 적용해야 할 때 사용할 수 있습니다. 다음 예제는 Adobe InDesign, Illustrator, Microsoft Word를 사용하여 문구를 만드는 것처럼 스탬프를 사용하는 방법을 보여줍니다. 입력 문서가 있다고 가정하고 파란색과 자주색의 두 가지 테두리를 적용하고자 합니다.
+[PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp)는 그래픽, 텍스트, 테이블이 포함된 복합 스탬프를 적용해야 할 때 사용할 수 있습니다. 다음 예제는 Adobe InDesign, Illustrator, Microsoft Word를 사용하여 문구를 만드는 것처럼 스탬프를 사용하는 방법을 보여줍니다. 입력 문서가 있다고 가정하고 파란색과 자주색의 두 가지 테두리를 적용하고자 합니다.
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 

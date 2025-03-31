@@ -85,7 +85,7 @@ sitemap:
 
 {{% /alert %}}
 
-Form 클래스는 정적 AcroForm을 처리할 수 있는 기능을 제공하며, Form 클래스의 GetFieldFacade(..) 메서드를 사용하여 특정 필드 인스턴스를 가져올 수 있습니다. 그러나 XFA 필드는 Form.GetFieldFacade(..) 메서드를 통해 접근할 수 없습니다. 대신 [Document.Form.XFA](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form/properties/xfa)를 사용하여 필드 값을 가져오거나 설정하고 XFA 필드 템플릿을 조작하십시오(필드 속성 설정).
+Form 클래스는 정적 AcroForm을 처리할 수 있는 기능을 제공하며, Form 클래스의 GetFieldFacade(..) 메서드를 사용하여 특정 필드 인스턴스를 가져올 수 있습니다. 그러나 XFA 필드는 Form.GetFieldFacade(..) 메서드를 통해 접근할 수 없습니다. 대신 [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa)를 사용하여 필드 값을 가져오거나 설정하고 XFA 필드 템플릿을 조작하십시오(필드 속성 설정).
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 

@@ -77,7 +77,7 @@ draft: false
 
 ## 두 숫자 사이의 PDF 페이지 추출 (파일 경로 사용)
 
-[PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Extract](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드는 PDF 파일에서 지정된 페이지 범위를 추출할 수 있습니다. 이 오버로드는 디스크에서 PDF 파일을 조작하면서 페이지를 추출할 수 있게 해줍니다. 이 오버로드는 다음 매개변수를 요구합니다: 입력 파일 경로, 시작 페이지, 종료 페이지 및 출력 파일 경로. 시작 페이지에서 종료 페이지까지의 페이지가 추출되며 출력은 디스크에 저장됩니다. 다음 코드 스니펫은 파일 경로를 사용하여 두 숫자 사이의 PDF 페이지를 추출하는 방법을 보여줍니다.
+[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드는 PDF 파일에서 지정된 페이지 범위를 추출할 수 있습니다. 이 오버로드는 디스크에서 PDF 파일을 조작하면서 페이지를 추출할 수 있게 해줍니다. 이 오버로드는 다음 매개변수를 요구합니다: 입력 파일 경로, 시작 페이지, 종료 페이지 및 출력 파일 경로. 시작 페이지에서 종료 페이지까지의 페이지가 추출되며 출력은 디스크에 저장됩니다. 다음 코드 스니펫은 파일 경로를 사용하여 두 숫자 사이의 PDF 페이지를 추출하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -96,7 +96,7 @@ private static void Extract_PDFPages_FilePaths()
 
 ## 파일 경로를 사용한 PDF 페이지 배열 추출
 
-페이지 범위를 추출하는 대신 특정 페이지 집합을 추출하려는 경우, [Extract](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드를 사용하여 그렇게 할 수 있습니다. 먼저 추출해야 할 모든 페이지 번호로 구성된 정수 배열을 생성해야 합니다. 이 [Extract](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드의 오버로드는 다음 매개변수를 요구합니다: 입력 PDF 파일, 추출할 페이지의 정수 배열 및 출력 PDF 파일. 다음 코드 스니펫은 파일 경로를 사용하여 PDF 페이지를 추출하는 방법을 보여줍니다.
+페이지 범위를 추출하는 대신 특정 페이지 집합을 추출하려는 경우, [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드를 사용하여 그렇게 할 수 있습니다. 먼저 추출해야 할 모든 페이지 번호로 구성된 정수 배열을 생성해야 합니다. 이 [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드의 오버로드는 다음 매개변수를 요구합니다: 입력 PDF 파일, 추출할 페이지의 정수 배열 및 출력 PDF 파일. 다음 코드 스니펫은 파일 경로를 사용하여 PDF 페이지를 추출하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -122,7 +122,7 @@ private static void Extract_PDFPages_Streams()
 
 ## 두 숫자 사이의 PDF 페이지 추출 (스트림 사용)
 
-[PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Extract](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드는 스트림을 사용하여 페이지 범위를 추출할 수 있습니다. 이 오버로드에 다음 매개변수를 전달해야 합니다: 입력 스트림, 시작 페이지, 종료 페이지 및 출력 스트림. 시작 페이지와 종료 페이지 사이의 범위로 지정된 페이지가 입력 스트림에서 추출되어 출력 스트림에 저장됩니다. 다음 코드 스니펫은 스트림을 사용하여 두 숫자 사이의 PDF 페이지를 추출하는 방법을 보여줍니다.
+[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드는 스트림을 사용하여 페이지 범위를 추출할 수 있습니다. 이 오버로드에 다음 매개변수를 전달해야 합니다: 입력 스트림, 시작 페이지, 종료 페이지 및 출력 스트림. 시작 페이지와 종료 페이지 사이의 범위로 지정된 페이지가 입력 스트림에서 추출되어 출력 스트림에 저장됩니다. 다음 코드 스니펫은 스트림을 사용하여 두 숫자 사이의 PDF 페이지를 추출하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -141,7 +141,7 @@ private static void Extract_ArrayPDFPages_FilePaths()
 
 ## 스트림을 사용한 PDF 페이지 배열 추출
 
-PDF 스트림에서 페이지 배열을 추출하고 적절한 오버로드의 [Extract](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드를 사용하여 출력 스트림에 저장할 수 있습니다. 페이지 범위를 추출하는 대신 특정 페이지 집합을 추출하려는 경우, [Extract](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드를 사용하여 그렇게 할 수 있습니다. 먼저 추출해야 할 모든 페이지 번호로 구성된 정수 배열을 생성해야 합니다. 이 [Extract](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드의 오버로드는 다음 매개변수를 요구합니다: 입력 스트림, 추출할 페이지의 정수 배열 및 출력 스트림. 다음 코드 스니펫은 스트림을 사용하여 PDF 페이지를 추출하는 방법을 보여줍니다.
+PDF 스트림에서 페이지 배열을 추출하고 적절한 오버로드의 [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드를 사용하여 출력 스트림에 저장할 수 있습니다. 페이지 범위를 추출하는 대신 특정 페이지 집합을 추출하려는 경우, [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드를 사용하여 그렇게 할 수 있습니다. 먼저 추출해야 할 모든 페이지 번호로 구성된 정수 배열을 생성해야 합니다. 이 [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) 메서드의 오버로드는 다음 매개변수를 요구합니다: 입력 스트림, 추출할 페이지의 정수 배열 및 출력 스트림. 다음 코드 스니펫은 스트림을 사용하여 PDF 페이지를 추출하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

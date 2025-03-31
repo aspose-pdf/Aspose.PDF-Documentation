@@ -83,9 +83,9 @@ sitemap:
 
 ## ブックマークの取得
 
-[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[OutlineCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection)コレクションには、PDFファイルのすべてのブックマークが含まれています。この記事では、PDFファイルからブックマークを取得する方法と、特定のブックマークがどのページにあるかを取得する方法について説明します。
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションには、PDFファイルのすべてのブックマークが含まれています。この記事では、PDFファイルからブックマークを取得する方法と、特定のブックマークがどのページにあるかを取得する方法について説明します。
 
-ブックマークを取得するには、[OutlineCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection)コレクションをループして、OutlineItemCollection内の各ブックマークを取得します。OutlineItemCollectionは、すべてのブックマークの属性にアクセスするためのものです。次のコードスニペットは、PDFファイルからブックマークを取得する方法を示しています。
+ブックマークを取得するには、[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションをループして、OutlineItemCollection内の各ブックマークを取得します。OutlineItemCollectionは、すべてのブックマークの属性にアクセスするためのものです。次のコードスニペットは、PDFファイルからブックマークを取得する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -213,7 +213,7 @@ private static void GetBookmarkPageNumber()
 
 ## PDFドキュメントから子ブックマークを取得する
 
-ブックマークは、親と子の階層構造で整理できます。すべてのブックマークを取得するには、DocumentオブジェクトのOutlinesコレクションをループします。ただし、子ブックマークも取得するには、最初のループで取得した各[OutlineItemCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlineitemcollection)オブジェクト内のすべてのブックマークをループする必要があります。次のコードスニペットは、PDFドキュメントから子ブックマークを取得する方法を示しています。
+ブックマークは、親と子の階層構造で整理できます。すべてのブックマークを取得するには、DocumentオブジェクトのOutlinesコレクションをループします。ただし、子ブックマークも取得するには、最初のループで取得した各[OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)オブジェクト内のすべてのブックマークをループする必要があります。次のコードスニペットは、PDFドキュメントから子ブックマークを取得する方法を示しています。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -294,7 +294,7 @@ private static void GetChildBookmarks()
 
 ## PDFドキュメント内のブックマークを更新する
 
-PDFファイル内のブックマークを更新するには、まず、ブックマークのインデックスを指定してDocumentオブジェクトのOutlineColletionコレクションから特定のブックマークを取得します。OutlineItemCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlineitemcollection)オブジェクトにブックマークを取得したら、そのプロパティを更新し、Saveメソッドを使用して更新されたPDFファイルを保存できます。次のコードスニペットは、PDFドキュメント内のブックマークを更新する方法を示しています。
+PDFファイル内のブックマークを更新するには、まず、ブックマークのインデックスを指定してDocumentオブジェクトのOutlineColletionコレクションから特定のブックマークを取得します。OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)オブジェクトにブックマークを取得したら、そのプロパティを更新し、Saveメソッドを使用して更新されたPDFファイルを保存できます。次のコードスニペットは、PDFドキュメント内のブックマークを更新する方法を示しています。
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -350,7 +350,7 @@ private static void UpdateBookmarks()
 子ブックマークを更新するには：
 
 1. 最初に親ブックマークを取得し、次に適切なインデックス値を使用して子ブックマークを取得することで、更新したい子ブックマークをPDFファイルから取得します。
-1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/1)メソッドを使用して更新されたPDFファイルを保存します。
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1)メソッドを使用して更新されたPDFファイルを保存します。
 
 {{% alert color="primary" %}}
 
@@ -417,7 +417,7 @@ private static void UpdateChildBookmarks()
 
 ## ドキュメントを表示する際の拡張されたブックマーク
 
-ブックマークは、Documentオブジェクトの[OutlineItemCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlineitemcollection)コレクションに保持されており、これは[OutlineCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection)コレクション内にあります。ただし、PDFファイルを表示する際にすべてのブックマークを展開する必要がある場合があります。
+ブックマークは、Documentオブジェクトの[OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)コレクションに保持されており、これは[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクション内にあります。ただし、PDFファイルを表示する際にすべてのブックマークを展開する必要がある場合があります。
 
 この要件を達成するために、各アウトライン/ブックマークアイテムのオープンステータスをオープンとして設定できます。次のコードスニペットは、PDFドキュメント内の各ブックマークのオープンステータスを拡張として設定する方法を示しています。
 

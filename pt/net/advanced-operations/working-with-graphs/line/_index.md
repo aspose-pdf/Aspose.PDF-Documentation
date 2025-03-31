@@ -83,21 +83,21 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Adicionar objeto Linha
 
-Aspose.PDF for .NET suporta a funcionalidade de adicionar objetos gráficos (por exemplo, gráfico, linha, retângulo etc.) a documentos PDF. Você também tem a vantagem de adicionar o objeto [Linha](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/line), onde você também pode especificar o padrão de traço, cor e outras formatações para o elemento Linha.
+Aspose.PDF for .NET suporta a funcionalidade de adicionar objetos gráficos (por exemplo, gráfico, linha, retângulo etc.) a documentos PDF. Você também tem a vantagem de adicionar o objeto [Linha](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/line), onde você também pode especificar o padrão de traço, cor e outras formatações para o elemento Linha.
 
 Siga os passos abaixo:
 
-1. Crie um novo [Documento](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document) PDF.
-1. Adicione uma [Página](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) à coleção de páginas do arquivo PDF.
-1. Crie uma instância de [Gráfico](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/graph).
+1. Crie um novo [Documento](https://reference.aspose.com/pdf/net/aspose.pdf/document) PDF.
+1. Adicione uma [Página](https://reference.aspose.com/pdf/net/aspose.pdf/page) à coleção de páginas do arquivo PDF.
+1. Crie uma instância de [Gráfico](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph).
 1. Adicione o objeto Gráfico à coleção de parágrafos da instância da página.
-1. Crie uma instância de [Retângulo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/rectangle).
+1. Crie uma instância de [Retângulo](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle).
 1. Defina a largura da linha.
-1. Adicione o objeto [Retângulo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/rectangle) à coleção de formas do objeto Gráfico.
+1. Adicione o objeto [Retângulo](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) à coleção de formas do objeto Gráfico.
 
 1. Salve seu arquivo PDF.
 
-O seguinte trecho de código mostra como adicionar um objeto [Retângulo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/rectangle) que é preenchido com cor.
+O seguinte trecho de código mostra como adicionar um objeto [Retângulo](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) que é preenchido com cor.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

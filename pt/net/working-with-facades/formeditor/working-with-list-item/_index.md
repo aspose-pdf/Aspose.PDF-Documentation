@@ -77,7 +77,7 @@ draft: false
 
 ## Adicionar Item de Lista em um Arquivo PDF Existente
 
-[AddListItem](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formeditor/methods/addlistitem) método permite que você adicione um item em um campo [ListBox](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/listboxfield). O primeiro argumento é o nome do campo e o segundo argumento é o item do campo. Você pode passar um único item de campo ou pode passar um array de strings que contém uma lista de itens. Este método é fornecido pela classe [FormEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formeditor). O seguinte trecho de código mostra como adicionar itens de lista em um arquivo PDF.
+[AddListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addlistitem) método permite que você adicione um item em um campo [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield). O primeiro argumento é o nome do campo e o segundo argumento é o item do campo. Você pode passar um único item de campo ou pode passar um array de strings que contém uma lista de itens. Este método é fornecido pela classe [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). O seguinte trecho de código mostra como adicionar itens de lista em um arquivo PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -110,7 +110,7 @@ draft: false
 
 ## Excluir Item de Lista de um Arquivo PDF Existente
 
-[DelListItem](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formeditor/methods/dellistitem) método permite que você exclua um item específico do [ListBox](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/listboxfield). O primeiro parâmetro é o nome do campo, enquanto o segundo parâmetro é o item que você deseja excluir da lista. Este método é fornecido pela classe [FormEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formeditor). O seguinte trecho de código mostra como excluir um item de lista do arquivo PDF.
+[DelListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/dellistitem) método permite que você exclua um item específico do [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield). O primeiro parâmetro é o nome do campo, enquanto o segundo parâmetro é o item que você deseja excluir da lista. Este método é fornecido pela classe [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). O seguinte trecho de código mostra como excluir um item de lista do arquivo PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -77,7 +77,7 @@ draft: false
 
 ## Ekstrak Halaman PDF antara Dua Nomor Menggunakan Jalur File
 
-Metode [Extract](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk mengekstrak rentang halaman tertentu dari file PDF. Overload ini memungkinkan Anda untuk mengekstrak halaman sambil memanipulasi file PDF dari disk. Overload ini memerlukan parameter berikut: jalur file input, halaman awal, halaman akhir, dan jalur file output. Halaman dari halaman awal hingga halaman akhir akan diekstrak dan output akan disimpan di disk. Potongan kode berikut menunjukkan cara mengekstrak halaman PDF antara dua nomor menggunakan jalur file.
+Metode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk mengekstrak rentang halaman tertentu dari file PDF. Overload ini memungkinkan Anda untuk mengekstrak halaman sambil memanipulasi file PDF dari disk. Overload ini memerlukan parameter berikut: jalur file input, halaman awal, halaman akhir, dan jalur file output. Halaman dari halaman awal hingga halaman akhir akan diekstrak dan output akan disimpan di disk. Potongan kode berikut menunjukkan cara mengekstrak halaman PDF antara dua nomor menggunakan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -96,7 +96,7 @@ private static void Extract_PDFPages_FilePaths()
 
 ## Ekstrak Array Halaman PDF Menggunakan Jalur File
 
-Jika Anda tidak ingin mengekstrak rentang halaman, melainkan sekumpulan halaman tertentu, metode [Extract](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) juga memungkinkan Anda untuk melakukannya. Anda pertama-tama perlu membuat array integer dengan semua nomor halaman yang perlu diekstrak. Overload metode [Extract](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) ini mengambil parameter berikut: file PDF input, array integer halaman yang akan diekstrak, dan file PDF output. Potongan kode berikut menunjukkan cara mengekstrak halaman PDF menggunakan jalur file.
+Jika Anda tidak ingin mengekstrak rentang halaman, melainkan sekumpulan halaman tertentu, metode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) juga memungkinkan Anda untuk melakukannya. Anda pertama-tama perlu membuat array integer dengan semua nomor halaman yang perlu diekstrak. Overload metode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) ini mengambil parameter berikut: file PDF input, array integer halaman yang akan diekstrak, dan file PDF output. Potongan kode berikut menunjukkan cara mengekstrak halaman PDF menggunakan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -122,7 +122,7 @@ private static void Extract_PDFPages_Streams()
 
 ## Ekstrak Halaman PDF antara Dua Nomor Menggunakan Aliran
 
-Metode [Extract](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk mengekstrak rentang halaman menggunakan aliran. Anda perlu melewatkan parameter berikut ke overload ini: aliran input, halaman awal, halaman akhir, dan aliran output. Halaman yang ditentukan oleh rentang antara halaman awal dan halaman akhir akan diekstrak dari aliran input dan disimpan ke aliran output. Potongan kode berikut menunjukkan cara mengekstrak halaman PDF antara dua nomor menggunakan aliran.
+Metode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk mengekstrak rentang halaman menggunakan aliran. Anda perlu melewatkan parameter berikut ke overload ini: aliran input, halaman awal, halaman akhir, dan aliran output. Halaman yang ditentukan oleh rentang antara halaman awal dan halaman akhir akan diekstrak dari aliran input dan disimpan ke aliran output. Potongan kode berikut menunjukkan cara mengekstrak halaman PDF antara dua nomor menggunakan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -141,7 +141,7 @@ private static void Extract_ArrayPDFPages_FilePaths()
 
 ## Ekstrak Array Halaman PDF Menggunakan Aliran
 
-Sebuah array halaman dapat diekstrak dari aliran PDF dan disimpan dalam aliran output menggunakan overload yang sesuai dari metode [Extract](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/extract/index). Jika Anda tidak ingin mengekstrak rentang halaman, melainkan sekumpulan halaman tertentu, metode [Extract](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) juga memungkinkan Anda untuk melakukannya. Anda pertama-tama perlu membuat array integer dengan semua nomor halaman yang perlu diekstrak. Overload metode [Extract](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) ini mengambil parameter berikut: aliran input, array integer halaman yang akan diekstrak, dan aliran output. Potongan kode berikut menunjukkan cara mengekstrak halaman PDF menggunakan aliran.
+Sebuah array halaman dapat diekstrak dari aliran PDF dan disimpan dalam aliran output menggunakan overload yang sesuai dari metode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index). Jika Anda tidak ingin mengekstrak rentang halaman, melainkan sekumpulan halaman tertentu, metode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) juga memungkinkan Anda untuk melakukannya. Anda pertama-tama perlu membuat array integer dengan semua nomor halaman yang perlu diekstrak. Overload metode [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) ini mengambil parameter berikut: aliran input, array integer halaman yang akan diekstrak, dan aliran output. Potongan kode berikut menunjukkan cara mengekstrak halaman PDF menggunakan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

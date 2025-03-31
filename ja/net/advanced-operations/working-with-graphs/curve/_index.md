@@ -83,7 +83,7 @@ sitemap:
 
 ## 曲線オブジェクトを追加
 
-グラフ[Curve](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/curve)は、各線が他の三つの線と通常の二重点で交わる射影線の接続された集合です。
+グラフ[Curve](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve)は、各線が他の三つの線と通常の二重点で交わる射影線の接続された集合です。
 
 Aspose.PDF for .NETは、グラフ内でベジェ曲線を使用する方法を示しています。
 ベジェ曲線は、スムーズな曲線をモデル化するためにコンピュータグラフィックスで広く使用されています。曲線は、その制御点の凸包に完全に含まれており、ポイントは視覚的に表示され、直感的に曲線を操作するために使用できます。
@@ -93,10 +93,10 @@ Aspose.PDF for .NETは、グラフ内でベジェ曲線を使用する方法を�
 
 以下の手順に従ってください：
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)インスタンスを作成します。
-1. 特定の寸法を持つ[Drawing object](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing)を作成します。
-1. Drawing objectの[Border](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/graph/properties/border)を設定します。
-1. ページの段落コレクションに[Graph](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/graph)オブジェクトを追加します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)インスタンスを作成します。
+1. 特定の寸法を持つ[Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)を作成します。
+1. Drawing objectの[Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border)を設定します。
+1. ページの段落コレクションに[Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)オブジェクトを追加します。
 1. PDFファイルを保存します。
 
 ```csharp

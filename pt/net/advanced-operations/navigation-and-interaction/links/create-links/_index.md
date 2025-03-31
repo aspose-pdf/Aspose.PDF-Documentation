@@ -85,14 +85,14 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 Ao adicionar um link a um aplicativo em um documento, é possível vincular a aplicativos a partir de um documento. Isso é útil quando você deseja que os leitores realizem uma determinada ação em um ponto específico de um tutorial, por exemplo, ou para criar um documento rico em recursos. Para criar um link de aplicativo:
 
-1. [Crie um objeto Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
-1. Obtenha a [Page](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) à qual você deseja adicionar o link.
-1. Crie um objeto [LinkAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/linkannotation) usando os objetos Page e [Rectangle](https://reference.aspose.com/pdf/pt/net/aspose.pdf/rectangle).
-1. Defina os atributos do link usando o objeto [LinkAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/linkannotation).
-1. Além disso, defina a propriedade Action do objeto [LaunchAction](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/launchaction).
-1. Ao criar o objeto [LaunchAction](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/launchaction), especifique o aplicativo que você deseja iniciar.
-1. Adicione o link à propriedade [Annotations](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page/properties/annotations) do objeto Page.
-1. Por fim, salve o PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/methods/save) do objeto Document.
+1. [Crie um objeto Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Obtenha a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) à qual você deseja adicionar o link.
+1. Crie um objeto [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) usando os objetos Page e [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
+1. Defina os atributos do link usando o objeto [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
+1. Além disso, defina a propriedade Action do objeto [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction).
+1. Ao criar o objeto [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction), especifique o aplicativo que você deseja iniciar.
+1. Adicione o link à propriedade [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations) do objeto Page.
+1. Por fim, salve o PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) do objeto Document.
 
 O seguinte trecho de código mostra como criar um link para um aplicativo em um arquivo PDF.
 
@@ -151,14 +151,14 @@ private static void CreateLinkAnnotation()
 
 Aspose.PDF for .NET permite que você adicione um link a um arquivo PDF externo para que você possa vincular vários documentos juntos. Para criar um link de documento PDF:
 
-1. Primeiro, crie um objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
-1. Em seguida, obtenha a [Page](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) específica à qual você deseja adicionar o link.
-1. Crie um objeto [LinkAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/linkannotation) usando os objetos Page e [Rectangle](https://reference.aspose.com/pdf/pt/net/aspose.pdf/rectangle).
-1. Defina os atributos do link usando o objeto [LinkAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/linkannotation).
-1. Defina a propriedade Action para o objeto [GoToRemoteAction](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/gotoremoteaction).
+1. Primeiro, crie um objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Em seguida, obtenha a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) específica à qual você deseja adicionar o link.
+1. Crie um objeto [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) usando os objetos Page e [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
+1. Defina os atributos do link usando o objeto [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
+1. Defina a propriedade Action para o objeto [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction).
 1. Ao criar o objeto GoToRemoteAction, especifique o arquivo PDF que deve ser aberto, bem como o número da página que deve ser exibida.
 1. Adicione o link à coleção Annotations do objeto Page.
-1. Salve o PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/methods/save) do objeto Document.
+1. Salve o PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) do objeto Document.
 
 O seguinte trecho de código mostra como criar um link de documento PDF em um arquivo PDF.
 

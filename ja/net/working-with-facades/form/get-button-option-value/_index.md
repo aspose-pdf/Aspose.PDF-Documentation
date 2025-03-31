@@ -77,7 +77,7 @@ draft: false
 
 ## 既存のPDFファイルからボタンオプション値を取得する
 
-ラジオボタンは、異なるオプションを表示する方法を提供します。[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form)クラスを使用すると、特定のラジオボタンのすべてのボタンオプション値を取得できます。これらの値は、[GetButtonOptionValues](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues)メソッドを使用して取得できます。このメソッドは、ラジオボタンの名前を入力パラメータとして要求し、Hashtableを返します。このHashtableを反復処理してオプション値を取得できます。以下のコードスニペットは、既存のPDFファイルからボタンオプション値を取得する方法を示しています。
+ラジオボタンは、異なるオプションを表示する方法を提供します。[Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)クラスを使用すると、特定のラジオボタンのすべてのボタンオプション値を取得できます。これらの値は、[GetButtonOptionValues](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues)メソッドを使用して取得できます。このメソッドは、ラジオボタンの名前を入力パラメータとして要求し、Hashtableを返します。このHashtableを反復処理してオプション値を取得できます。以下のコードスニペットは、既存のPDFファイルからボタンオプション値を取得する方法を示しています。
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetButtonOptions()
@@ -105,7 +105,7 @@ private static void GetButtonOptions()
 
 ## 既存のPDFファイルから現在のボタンオプション値を取得する
 
-ラジオボタンはオプション値を設定する方法を提供しますが、一度に1つだけ選択できます。現在選択されているオプション値を取得したい場合は、[GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue)メソッドを使用できます。[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form)クラスはこのメソッドを提供します。このメソッドは、ラジオボタンの名前を入力パラメータとして要求し、値を文字列として返します。以下のコードスニペットは、既存のPDFファイルから現在のボタンオプション値を取得する方法を示しています。
+ラジオボタンはオプション値を設定する方法を提供しますが、一度に1つだけ選択できます。現在選択されているオプション値を取得したい場合は、[GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue)メソッドを使用できます。[Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)クラスはこのメソッドを提供します。このメソッドは、ラジオボタンの名前を入力パラメータとして要求し、値を文字列として返します。以下のコードスニペットは、既存のPDFファイルから現在のボタンオプション値を取得する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

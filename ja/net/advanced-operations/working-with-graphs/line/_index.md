@@ -83,21 +83,21 @@ sitemap:
 
 ## ラインオブジェクトを追加
 
-Aspose.PDF for .NETは、PDFドキュメントにグラフオブジェクト（例えば、グラフ、ライン、長方形など）を追加する機能をサポートしています。また、[ライン](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/line)オブジェクトを追加することもでき、ライン要素のダッシュパターン、色、その他のフォーマットを指定することもできます。
+Aspose.PDF for .NETは、PDFドキュメントにグラフオブジェクト（例えば、グラフ、ライン、長方形など）を追加する機能をサポートしています。また、[ライン](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/line)オブジェクトを追加することもでき、ライン要素のダッシュパターン、色、その他のフォーマットを指定することもできます。
 
 以下の手順に従ってください：
 
-1. 新しいPDF [ドキュメント](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)を作成します。
-1. PDFファイルのページコレクションに[ページ](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)を追加します。
-1. [グラフ](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/graph)インスタンスを作成します。
+1. 新しいPDF [ドキュメント](https://reference.aspose.com/pdf/net/aspose.pdf/document)を作成します。
+1. PDFファイルのページコレクションに[ページ](https://reference.aspose.com/pdf/net/aspose.pdf/page)を追加します。
+1. [グラフ](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)インスタンスを作成します。
 1. ページインスタンスの段落コレクションにグラフオブジェクトを追加します。
-1. [長方形](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/rectangle)インスタンスを作成します。
+1. [長方形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)インスタンスを作成します。
 1. ライン幅を設定します。
-1. グラフオブジェクトのシェイプコレクションに[長方形](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/rectangle)オブジェクトを追加します。
+1. グラフオブジェクトのシェイプコレクションに[長方形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)オブジェクトを追加します。
 
 1. PDFファイルを保存します。
 
-次のコードスニペットは、色で塗りつぶされた[長方形](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/rectangle)オブジェクトを追加する方法を示しています。
+次のコードスニペットは、色で塗りつぶされた[長方形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)オブジェクトを追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

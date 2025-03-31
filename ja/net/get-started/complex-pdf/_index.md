@@ -83,15 +83,15 @@ sitemap:
 
 ゼロからドキュメントを作成する場合、特定の手順に従う必要があります：
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトをインスタンス化します。このステップでは、メタデータはあるがページがない空のPDFドキュメントを作成します。
-1. ドキュメントオブジェクトに[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)を追加します。これで、ドキュメントには1ページが追加されます。
-1. ページに[Image](https://reference.aspose.com/pdf/ja/net/aspose.pdf/image/methods/index)を追加します。
-1. ヘッダー用の[TextFragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragment)を作成します。ヘッダーには、フォントサイズ24ptのArialフォントと中央揃えを使用します。
-1. ヘッダーをページの[Paragraphs](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page/properties/paragraphs)に追加します。
-1. 説明用の[TextFragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragment)を作成します。説明には、フォントサイズ24ptのArialフォントと中央揃えを使用します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトをインスタンス化します。このステップでは、メタデータはあるがページがない空のPDFドキュメントを作成します。
+1. ドキュメントオブジェクトに[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)を追加します。これで、ドキュメントには1ページが追加されます。
+1. ページに[Image](https://reference.aspose.com/pdf/net/aspose.pdf/image/methods/index)を追加します。
+1. ヘッダー用の[TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)を作成します。ヘッダーには、フォントサイズ24ptのArialフォントと中央揃えを使用します。
+1. ヘッダーをページの[Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)に追加します。
+1. 説明用の[TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)を作成します。説明には、フォントサイズ24ptのArialフォントと中央揃えを使用します。
 1. （説明）をページのParagraphsに追加します。
 1. テーブルを作成し、テーブルプロパティを追加します。
-1. （テーブル）をページの[Paragraphs](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page/properties/paragraphs)に追加します。
+1. （テーブル）をページの[Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)に追加します。
 1. ドキュメントを「Complex.pdf」として保存します。
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。

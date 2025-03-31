@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-[BmpDevice](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices/bmpdevice) 클래스는 PDF 페이지를 <abbr title="Bitmap Image File">BMP</abbr> 이미지로 변환할 수 있게 해줍니다. 이 클래스는 [Process](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices/bmpdevice/methods/process)라는 메서드를 제공하며, 이를 통해 PDF 파일의 특정 페이지를 Bmp 이미지 형식으로 변환할 수 있습니다.
+[BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) 클래스는 PDF 페이지를 <abbr title="Bitmap Image File">BMP</abbr> 이미지로 변환할 수 있게 해줍니다. 이 클래스는 [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process)라는 메서드를 제공하며, 이를 통해 PDF 파일의 특정 페이지를 Bmp 이미지 형식으로 변환할 수 있습니다.
 
 {{% alert color="primary" %}}
 

@@ -81,7 +81,7 @@ sitemap:
 
 このオプションが選択されると、注釈はエクスポートされたPDFにPDF標準の注釈として含まれます。
 
-次のコードスニペットで使用されている[flatteningAnnotations](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations)メソッドを確認してください。
+次のコードスニペットで使用されている[flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations)メソッドを確認してください。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

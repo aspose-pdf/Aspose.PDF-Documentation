@@ -77,7 +77,7 @@ draft: false
 
 ## Atur Hak Akses pada File PDF yang Ada
 
-Untuk mengatur hak akses file PDF, buat objek [PdfFileSecurity](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity) dan panggil metode SetPrivilege. Anda dapat menentukan hak akses menggunakan objek DocumentPrivilege dan kemudian mengoper objek ini ke metode SetPrivilege. Potongan kode berikut menunjukkan cara mengatur hak akses file PDF.
+Untuk mengatur hak akses file PDF, buat objek [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) dan panggil metode SetPrivilege. Anda dapat menentukan hak akses menggunakan objek DocumentPrivilege dan kemudian mengoper objek ini ke metode SetPrivilege. Potongan kode berikut menunjukkan cara mengatur hak akses file PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

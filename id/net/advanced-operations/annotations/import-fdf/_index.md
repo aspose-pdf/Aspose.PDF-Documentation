@@ -85,9 +85,9 @@ FDF (Format Data Formulir) adalah format file yang menyimpan dan mentransmisikan
 
 {{% /alert %}}
 
-[PDFAnnotationEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfannotationeditor/) kelas berisi metode untuk bekerja dengan impor anotasi dari file FDF. Metode [PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) menyediakan fungsionalitas untuk mengimpor anotasi dari dokumen FDF ke file PDF.
+[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/) kelas berisi metode untuk bekerja dengan impor anotasi dari file FDF. Metode [PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) menyediakan fungsionalitas untuk mengimpor anotasi dari dokumen FDF ke file PDF.
 
-Selain itu, [Kelas Form](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/) menyertakan metode [Form.ImportFdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/importfdf/) - mengimpor konten bidang dari file FDF dan menempatkannya ke dalam PDF baru.
+Selain itu, [Kelas Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/) menyertakan metode [Form.ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/importfdf/) - mengimpor konten bidang dari file FDF dan menempatkannya ke dalam PDF baru.
 
 Potongan kode berikut menunjukkan kepada Anda cara Mengimpor anotasi format FDF ke PDF dengan metode Form.ImportFdf():
 

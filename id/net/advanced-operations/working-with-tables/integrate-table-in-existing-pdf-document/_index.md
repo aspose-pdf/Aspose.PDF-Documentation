@@ -82,7 +82,7 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 ## Integrasi Tabel dengan Database
 
-Database dibangun untuk menyimpan dan mengelola data. Merupakan praktik umum bagi programmer untuk mengisi berbagai objek dengan data dari database. Artikel ini membahas penambahan data dari database ke dalam tabel. Dimungkinkan untuk mengisi objek [Table](https://reference.aspose.com/pdf/id/net/aspose.pdf/table) dengan data dari sumber data mana pun menggunakan Aspose.PDF for .NET. Dan tidak hanya mungkin tetapi juga sangat mudah.
+Database dibangun untuk menyimpan dan mengelola data. Merupakan praktik umum bagi programmer untuk mengisi berbagai objek dengan data dari database. Artikel ini membahas penambahan data dari database ke dalam tabel. Dimungkinkan untuk mengisi objek [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) dengan data dari sumber data mana pun menggunakan Aspose.PDF for .NET. Dan tidak hanya mungkin tetapi juga sangat mudah.
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) memungkinkan pengembang untuk mengimpor data dari:
 

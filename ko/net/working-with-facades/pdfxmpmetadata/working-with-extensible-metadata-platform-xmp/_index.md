@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-확장 가능한 메타데이터 플랫폼(XMP)은 Adobe Systems Inc.에서 만든 표준입니다. 이 표준은 표준화된 메타데이터와 독점 메타데이터를 처리하고 저장하기 위해 개발되었습니다. 이 메타데이터는 다양한 파일 형식에 삽입될 수 있지만, 이 기사에서는 PDF 파일 형식에만 집중하겠습니다. Aspose.Pdf.Facades 네임스페이스를 사용하여 PDF 파일에 메타데이터를 삽입하는 방법을 살펴보겠습니다. PDF 문서에서 XMP를 조작하기 위해 [PdfXmpMetadata](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfxmpmetadata) 클래스를 사용할 것입니다.
+확장 가능한 메타데이터 플랫폼(XMP)은 Adobe Systems Inc.에서 만든 표준입니다. 이 표준은 표준화된 메타데이터와 독점 메타데이터를 처리하고 저장하기 위해 개발되었습니다. 이 메타데이터는 다양한 파일 형식에 삽입될 수 있지만, 이 기사에서는 PDF 파일 형식에만 집중하겠습니다. Aspose.Pdf.Facades 네임스페이스를 사용하여 PDF 파일에 메타데이터를 삽입하는 방법을 살펴보겠습니다. PDF 문서에서 XMP를 조작하기 위해 [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) 클래스를 사용할 것입니다.
 
 {{% /alert %}}
 
@@ -88,7 +88,7 @@ PDF 파일은 생애 주기 동안 여러 단계를 거칩니다. 우리는 PDF 
 ## 설명
 
 Aspose.Pdf.Facades를 사용하여 XMP를 조작하기 위해 [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) 클래스를 사용할 것입니다. 이 클래스를 사용하여 미리 정의된 메타데이터 속성을 조작합니다. [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) 클래스는 이러한 속성을 PDF 파일에 추가합니다. 또한 메타데이터를 추가하는 PDF 파일을 열고 저장하는 데 도움을 줍니다. 따라서 [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) 클래스를 사용하면 PDF 파일에서 XMP를 쉽게 조작할 수 있습니다.
-다음 코드 스니펫은 [PdfXmpMetadata](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfxmpmetadata) 클래스를 사용하여 XMP와 작업하는 방법을 이해하는 데 도움이 될 것입니다:
+다음 코드 스니펫은 [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) 클래스를 사용하여 XMP와 작업하는 방법을 이해하는 데 도움이 될 것입니다:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

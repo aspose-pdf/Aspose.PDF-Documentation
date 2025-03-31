@@ -87,10 +87,10 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Langkah-langkah untuk membuat anotasi Caret:
 
-1. Muat file PDF - baru [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
-1. Buat anotasi [Caret Annotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/caretannotation) baru dan atur parameter Caret (new Rectangle, title, Subject, Flags, color, width, StartingStyle dan EndingStyle). Anotasi ini digunakan untuk menunjukkan penyisipan teks.
-1. Buat anotasi [Caret Annotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/caretannotation) baru dan atur parameter Caret (new Rectangle, title, Subject, Flags, color, width, StartingStyle dan EndingStyle). Anotasi ini digunakan untuk menunjukkan penggantian teks.
-1. Buat [StrikeOutAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/strikeoutannotation) baru dan atur parameter (new Rectangle, title, color, new QuadPoints dan new points, Subject, InReplyTo, ReplyType).
+1. Muat file PDF - baru [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Buat anotasi [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) baru dan atur parameter Caret (new Rectangle, title, Subject, Flags, color, width, StartingStyle dan EndingStyle). Anotasi ini digunakan untuk menunjukkan penyisipan teks.
+1. Buat anotasi [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) baru dan atur parameter Caret (new Rectangle, title, Subject, Flags, color, width, StartingStyle dan EndingStyle). Anotasi ini digunakan untuk menunjukkan penggantian teks.
+1. Buat [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) baru dan atur parameter (new Rectangle, title, color, new QuadPoints dan new points, Subject, InReplyTo, ReplyType).
 1. Setelah itu, kita dapat menambahkan anotasi ke halaman.
 
 Potongan kode berikut menunjukkan cara menambahkan Anotasi Caret ke file PDF:
@@ -249,7 +249,7 @@ private static void RedactPage()
 
 ### Pendekatan Facades
 
-Namespace Aspose.Pdf.Facades juga memiliki kelas bernama [PdfAnnotationEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfannotationeditor) yang menyediakan fitur untuk memanipulasi Anotasi yang ada di dalam file PDF. Kelas ini berisi metode bernama [RedactArea(..)](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) yang menyediakan kemampuan untuk menghapus wilayah halaman tertentu.
+Namespace Aspose.Pdf.Facades juga memiliki kelas bernama [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) yang menyediakan fitur untuk memanipulasi Anotasi yang ada di dalam file PDF. Kelas ini berisi metode bernama [RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) yang menyediakan kemampuan untuk menghapus wilayah halaman tertentu.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

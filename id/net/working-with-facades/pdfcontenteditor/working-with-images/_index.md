@@ -76,7 +76,7 @@ lastmod: "2021-06-24"
 
 ## Hapus Gambar dari Halaman Tertentu PDF (Facades)
 
-Untuk menghapus gambar dari halaman tertentu, Anda perlu memanggil metode [DeleteImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) dengan parameter pageNumber dan index. Parameter index mewakili array bilangan bulat – indeks gambar yang akan dihapus. Pertama-tama, Anda perlu membuat objek dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) dan kemudian memanggil metode [DeleteImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). Setelah itu, Anda dapat menyimpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index).
+Untuk menghapus gambar dari halaman tertentu, Anda perlu memanggil metode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) dengan parameter pageNumber dan index. Parameter index mewakili array bilangan bulat – indeks gambar yang akan dihapus. Pertama-tama, Anda perlu membuat objek dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) dan kemudian memanggil metode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). Setelah itu, Anda dapat menyimpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
 
 Potongan kode berikut menunjukkan kepada Anda cara menghapus gambar dari halaman tertentu PDF.
 
@@ -123,7 +123,7 @@ private static void DeleteImage()
 
 ## Hapus Semua Gambar dari File PDF (Facades)
 
-Semua gambar dapat dihapus dari file PDF menggunakan metode [DeleteImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) dari [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor). Panggil metode [DeleteImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – overload tanpa parameter – untuk menghapus semua gambar, dan kemudian simpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index).
+Semua gambar dapat dihapus dari file PDF menggunakan metode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) dari [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Panggil metode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – overload tanpa parameter – untuk menghapus semua gambar, dan kemudian simpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
 
 Potongan kode berikut menunjukkan kepada Anda cara menghapus semua gambar dari file PDF.
 
@@ -170,7 +170,7 @@ private static void DeleteImages()
 
 ## Ganti Gambar dalam File PDF (Facades)
 
-Kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) memungkinkan Anda mengganti gambar Anda dalam file PDF, panggil untuk ini metode [ReplaceImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage), dan simpan hasilnya.
+Kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) memungkinkan Anda mengganti gambar Anda dalam file PDF, panggil untuk ini metode [ReplaceImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage), dan simpan hasilnya.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

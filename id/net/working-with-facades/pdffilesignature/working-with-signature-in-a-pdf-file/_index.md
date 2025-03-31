@@ -158,7 +158,7 @@ private static void ExtractSignatureImage()
 
 ## Menyembunyikan Lokasi dan Alasan
 
-Fungsi Aspose.PDF memungkinkan konfigurasi yang fleksibel untuk instance tanda tangan digital. Kelas [PdfFileSignature](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature) menyediakan kemampuan untuk menandatangani file PDF. Implementasi metode Sign memungkinkan untuk menandatangani PDF dan meneruskan objek tanda tangan tertentu ke kelas ini. Metode Sign berisi sekumpulan atribut untuk kustomisasi tanda tangan digital keluaran. Jika Anda perlu menyembunyikan beberapa atribut teks dari hasil tanda tangan, Anda dapat membiarkannya kosong. Cuplikan kode berikut menunjukkan cara menyembunyikan dua baris Lokasi dan Alasan dari blok tanda tangan:
+Fungsi Aspose.PDF memungkinkan konfigurasi yang fleksibel untuk instance tanda tangan digital. Kelas [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) menyediakan kemampuan untuk menandatangani file PDF. Implementasi metode Sign memungkinkan untuk menandatangani PDF dan meneruskan objek tanda tangan tertentu ke kelas ini. Metode Sign berisi sekumpulan atribut untuk kustomisasi tanda tangan digital keluaran. Jika Anda perlu menyembunyikan beberapa atribut teks dari hasil tanda tangan, Anda dapat membiarkannya kosong. Cuplikan kode berikut menunjukkan cara menyembunyikan dua baris Lokasi dan Alasan dari blok tanda tangan:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void SupressLocationReason()
 
 ## Fitur Kustomisasi untuk Tanda Tangan Digital
 
-Aspose.PDF for .NET memungkinkan fitur kustomisasi untuk tanda tangan digital. Metode Sign dari kelas [SignatureCustomAppearance](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturecustomappearance) diimplementasikan dengan 6 overload untuk kenyamanan penggunaan Anda. Misalnya, Anda dapat mengonfigurasi tanda tangan hasil hanya dengan instance kelas SignatureCustomAppearance dan nilai propertinya. Cuplikan kode berikut menunjukkan cara menyembunyikan keterangan "Ditandatangani secara digital oleh" dari tanda tangan digital keluaran PDF Anda.
+Aspose.PDF for .NET memungkinkan fitur kustomisasi untuk tanda tangan digital. Metode Sign dari kelas [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) diimplementasikan dengan 6 overload untuk kenyamanan penggunaan Anda. Misalnya, Anda dapat mengonfigurasi tanda tangan hasil hanya dengan instance kelas SignatureCustomAppearance dan nilai propertinya. Cuplikan kode berikut menunjukkan cara menyembunyikan keterangan "Ditandatangani secara digital oleh" dari tanda tangan digital keluaran PDF Anda.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,7 +233,7 @@ Dengan menggunakan API Aspose.PDF for .NET, Anda dapat menandatangani file PDF m
 - PKCS#7.
 - PKCS#12.
 
-Setiap tanda tangan yang disediakan berisi sekumpulan properti konfigurasi yang diimplementasikan untuk kenyamanan Anda (lokalisasi, format tanggal waktu, keluarga font, dll). Kelas [SignatureCustomAppearance](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturecustomappearance) menyediakan fungsionalitas yang sesuai. Cuplikan kode berikut menunjukkan cara mengubah bahasa dalam teks tanda tangan digital: 
+Setiap tanda tangan yang disediakan berisi sekumpulan properti konfigurasi yang diimplementasikan untuk kenyamanan Anda (lokalisasi, format tanggal waktu, keluarga font, dll). Kelas [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) menyediakan fungsionalitas yang sesuai. Cuplikan kode berikut menunjukkan cara mengubah bahasa dalam teks tanda tangan digital: 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

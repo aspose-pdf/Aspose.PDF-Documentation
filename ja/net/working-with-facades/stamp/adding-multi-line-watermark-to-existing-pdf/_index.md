@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-多くのユーザーがPDF文書にマルチラインテキストをスタンプしたいと考えています。彼らは通常、`\n`や`<br>`を使用しようとしますが、これらの文字はAspose.Pdf.Facades名前空間ではサポートされていません。したがって、これを可能にするために、Aspose.Pdf.Facades名前空間の[FormattedText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formattedtext)クラスに[AddNewLineText()](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index)という別のメソッドを追加しました。
+多くのユーザーがPDF文書にマルチラインテキストをスタンプしたいと考えています。彼らは通常、`\n`や`<br>`を使用しようとしますが、これらの文字はAspose.Pdf.Facades名前空間ではサポートされていません。したがって、これを可能にするために、Aspose.Pdf.Facades名前空間の[FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)クラスに[AddNewLineText()](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index)という別のメソッドを追加しました。
 
 {{% /alert %}}
 

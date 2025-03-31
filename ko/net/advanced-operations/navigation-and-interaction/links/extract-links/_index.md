@@ -83,13 +83,13 @@ sitemap:
 
 ## PDF 파일에서 링크 추출
 
-링크는 PDF 파일에서 주석으로 표현되므로 링크를 추출하려면 모든 [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 객체를 추출해야 합니다.
+링크는 PDF 파일에서 주석으로 표현되므로 링크를 추출하려면 모든 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 객체를 추출해야 합니다.
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성합니다.
-1. 링크를 추출할 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page)를 가져옵니다.
-1. [AnnotationSelector](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationselector) 클래스를 사용하여 지정된 페이지에서 모든 [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 객체를 추출합니다.
-1. [AnnotationSelector](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationselector) 객체를 Page 객체의 Accept 메서드에 전달합니다.
-1. [AnnotationSelector](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationselector) 객체의 Selected 속성을 사용하여 모든 선택된 링크 주석을 IList 객체로 가져옵니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성합니다.
+1. 링크를 추출할 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)를 가져옵니다.
+1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) 클래스를 사용하여 지정된 페이지에서 모든 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 객체를 추출합니다.
+1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) 객체를 Page 객체의 Accept 메서드에 전달합니다.
+1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) 객체의 Selected 속성을 사용하여 모든 선택된 링크 주석을 IList 객체로 가져옵니다.
 
 다음 코드 스니펫은 PDF 파일에서 링크를 추출하는 방법을 보여줍니다.
 

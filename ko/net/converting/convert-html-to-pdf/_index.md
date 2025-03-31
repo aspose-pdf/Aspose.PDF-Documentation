@@ -109,8 +109,8 @@ _형식_: **웹 페이지**
 
 <a name="csharp-html-to-pdf"><strong>단계: C#에서 HTML을 PDF로 변환하기</strong></a>
 
-1. [HtmlLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlloadoptions/) 클래스의 인스턴스를 생성합니다.
-2. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/) 객체를 초기화합니다.
+1. [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/) 클래스의 인스턴스를 생성합니다.
+2. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 객체를 초기화합니다.
 3. **Document.Save()** 메서드를 호출하여 출력 PDF 문서를 저장합니다.
 
 ```csharp
@@ -146,7 +146,7 @@ HTML 변환 엔진에는 변환 프로세스를 제어할 수 있는 여러 옵�
 
 ### 미디어 쿼리 지원
 
-미디어 쿼리는 다양한 장치에 맞춤형 스타일 시트를 제공하는 인기 있는 기술입니다. [`HtmlMediaType`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype) 속성을 사용하여 장치 유형을 설정할 수 있습니다.
+미디어 쿼리는 다양한 장치에 맞춤형 스타일 시트를 제공하는 인기 있는 기술입니다. [`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype) 속성을 사용하여 장치 유형을 설정할 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void ConvertHTMLtoPDFAdvancedMediaType()
 
 ### 글꼴 포함 활성화(비활성화)
 
-HTML 페이지는 종종 글꼴(예: 로컬 폴더의 글꼴, Google Fonts 등)을 사용합니다. [`IsEmbedFonts`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlloadoptions/properties/isembedfonts) 속성을 사용하여 문서에서 글꼴 포함을 제어할 수 있습니다.
+HTML 페이지는 종종 글꼴(예: 로컬 폴더의 글꼴, Google Fonts 등)을 사용합니다. [`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts) 속성을 사용하여 문서에서 글꼴 포함을 제어할 수 있습니다.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ HTML 페이지는 종종 글꼴(예: 로컬 폴더의 글꼴, Google Fonts 등)�
 
 ### 외부 리소스 로딩 관리
 
-변환 엔진은 HTML 문서와 관련된 특정 리소스의 로딩을 제어할 수 있는 메커니즘을 제공합니다. [`HtmlLoadOptions`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlloadoptions) 클래스에는 리소스 로더의 동작을 정의할 수 있는 [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) 속성이 있습니다. 모든 PNG 이미지를 단일 이미지 `test.jpg`로 교체하고 다른 리소스의 외부 URL을 내부로 교체해야 한다고 가정해 보겠습니다. 이를 위해 사용자 정의 로더 `SamePictureLoader`를 정의하고 [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources)를 이 이름으로 지정할 수 있습니다.
+변환 엔진은 HTML 문서와 관련된 특정 리소스의 로딩을 제어할 수 있는 메커니즘을 제공합니다. [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) 클래스에는 리소스 로더의 동작을 정의할 수 있는 [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) 속성이 있습니다. 모든 PNG 이미지를 단일 이미지 `test.jpg`로 교체하고 다른 리소스의 외부 URL을 내부로 교체해야 한다고 가정해 보겠습니다. 이를 위해 사용자 정의 로더 `SamePictureLoader`를 정의하고 [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources)를 이 이름으로 지정할 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -261,7 +261,7 @@ private static byte[] GetContentFromUrl(string url)
 <a name="csharp-webpage-to-pdf"><strong>단계: C#에서 웹 페이지를 PDF로 변환하기</strong></a>
 
 1. HttpClient 객체를 사용하여 페이지의 내용을 읽습니다.
-1. [HtmlLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlloadoptions) 객체를 인스턴스화하고 기본 URL을 설정합니다.
+1. [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) 객체를 인스턴스화하고 기본 URL을 설정합니다.
 1. Stream 객체를 전달하면서 Document 객체를 초기화합니다.
 1. 선택적으로 페이지 크기 및/또는 방향을 설정합니다.
 
@@ -305,7 +305,7 @@ private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredenti
 
 ### 웹 페이지를 PDF로 변환하기 위한 자격 증명 제공
 
-때때로 인증 및 접근 권한이 필요한 HTML 파일의 변환을 수행해야 하므로 인증된 사용자만 페이지 내용을 가져올 수 있습니다. 여기에는 HTML 내부에서 참조된 일부 리소스/데이터가 인증이 필요한 외부 서버에서 가져오는 시나리오도 포함됩니다. 이러한 요구 사항을 충족하기 위해 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlloadoptions) 클래스에 [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) 속성이 추가되었습니다. 다음 코드 스니펫은 HTML 파일을 PDF로 변환할 때 HTML 및 해당 리소스에 대한 자격 증명을 요청하는 단계를 보여줍니다.
+때때로 인증 및 접근 권한이 필요한 HTML 파일의 변환을 수행해야 하므로 인증된 사용자만 페이지 내용을 가져올 수 있습니다. 여기에는 HTML 내부에서 참조된 일부 리소스/데이터가 인증이 필요한 외부 서버에서 가져오는 시나리오도 포함됩니다. 이러한 요구 사항을 충족하기 위해 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) 클래스에 [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) 속성이 추가되었습니다. 다음 코드 스니펫은 HTML 파일을 PDF로 변환할 때 HTML 및 해당 리소스에 대한 자격 증명을 요청하는 단계를 보여줍니다.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -403,8 +403,8 @@ Aspose.PDF for .NET은 ["MHTML to PDF"](https://products.aspose.app/pdf/conversi
 
 <a name="csharp-mhtml-to-pdf"><strong>단계: C#에서 MHTML을 PDF로 변환하기</strong></a>
 
-1. [MhtLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/mhtloadoptions/) 클래스의 인스턴스를 생성합니다.
-2. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/) 객체를 초기화합니다.
+1. [MhtLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mhtloadoptions/) 클래스의 인스턴스를 생성합니다.
+2. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 객체를 초기화합니다.
 3. **Document.Save()** 메서드를 호출하여 출력 PDF 문서를 저장합니다.
 
 ```csharp

@@ -76,7 +76,7 @@ lastmod: "2021-06-24"
 
 ## PDFの特定のページから画像を削除する（ファサード）
 
-特定のページから画像を削除するには、pageNumberおよびindexパラメーターを使用して[DeleteImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1)メソッドを呼び出す必要があります。indexパラメーターは、削除する画像のインデックスを表す整数の配列です。まず、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、その後[DeleteImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1)メソッドを呼び出します。その後、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドを使用して更新されたPDFファイルを保存できます。
+特定のページから画像を削除するには、pageNumberおよびindexパラメーターを使用して[DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1)メソッドを呼び出す必要があります。indexパラメーターは、削除する画像のインデックスを表す整数の配列です。まず、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、その後[DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1)メソッドを呼び出します。その後、[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドを使用して更新されたPDFファイルを保存できます。
 
 以下のコードスニペットは、PDFの特定のページから画像を削除する方法を示しています。
 
@@ -123,7 +123,7 @@ private static void DeleteImage()
 
 ## PDFファイルからすべての画像を削除する（ファサード）
 
-すべての画像は、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)の[DeleteImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1)メソッドを使用してPDFファイルから削除できます。[DeleteImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1)メソッドを呼び出し、パラメーターなしのオーバーロードを使用してすべての画像を削除し、その後[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドを使用して更新されたPDFファイルを保存します。
+すべての画像は、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)の[DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1)メソッドを使用してPDFファイルから削除できます。[DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1)メソッドを呼び出し、パラメーターなしのオーバーロードを使用してすべての画像を削除し、その後[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドを使用して更新されたPDFファイルを保存します。
 
 以下のコードスニペットは、PDFファイルからすべての画像を削除する方法を示しています。
 
@@ -170,7 +170,7 @@ private static void DeleteImages()
 
 ## PDFファイル内の画像を置き換える（ファサード）
 
-[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)を使用すると、PDFファイル内の画像を置き換えることができます。このために[ReplaceImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage)メソッドを呼び出し、結果を保存します。
+[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)を使用すると、PDFファイル内の画像を置き換えることができます。このために[ReplaceImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage)メソッドを呼び出し、結果を保存します。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -86,13 +86,13 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Untuk memindahkan halaman kita harus:
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan file PDF sumber.
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan file PDF tujuan.
-1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection).
-1. [Tambahkan](https://reference.aspose.com/pdf/id/net/aspose.pdf.pagecollection/add/methods/1) halaman ke dokumen tujuan.
-1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
-1. [Hapus](https://reference.aspose.com/pdf/id/net/aspose.pdf.pagecollection/delete/methods/1) halaman di dokumen sumber.
-1. Simpan PDF sumber menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF sumber.
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF tujuan.
+1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. [Tambahkan](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) halaman ke dokumen tujuan.
+1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. [Hapus](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) halaman di dokumen sumber.
+1. Simpan PDF sumber menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 Potongan kode berikut menunjukkan cara memindahkan satu halaman.
 
@@ -122,15 +122,15 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
 
 ## Memindahkan Sekumpulan Halaman dari Satu Dokumen PDF ke Dokumen Lain
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan file PDF sumber.
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan file PDF tujuan.
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF sumber.
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF tujuan.
 1. Tentukan array dengan nomor halaman yang akan dipindahkan.
 1. Jalankan loop melalui array:
-    1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection).
-    1. [Tambahkan](https://reference.aspose.com/pdf/id/net/aspose.pdf.pagecollection/add/methods/1) halaman ke dokumen tujuan.
-1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
-1. [Hapus](https://reference.aspose.com/pdf/id/net/aspose.pdf.pagecollection/delete/methods/2) halaman di dokumen sumber menggunakan array.
-1. Simpan PDF sumber menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
+    1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+    1. [Tambahkan](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) halaman ke dokumen tujuan.
+1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. [Hapus](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) halaman di dokumen sumber menggunakan array.
+1. Simpan PDF sumber menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 Potongan kode berikut menunjukkan cara memindahkan sekumpulan halaman dari satu dokumen PDF ke dokumen lain.
 
@@ -164,11 +164,11 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 
 ## Memindahkan Halaman ke Lokasi Baru di Dokumen PDF Saat Ini
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan file PDF sumber.
-1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection).
-1. [Tambahkan](https://reference.aspose.com/pdf/id/net/aspose.pdf.pagecollection/add/methods/1) halaman ke lokasi baru (misalnya ke akhir).
-1. [Hapus](https://reference.aspose.com/pdf/id/net/aspose.pdf.pagecollection/delete/methods/1) halaman di lokasi sebelumnya.
-1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF sumber.
+1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. [Tambahkan](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) halaman ke lokasi baru (misalnya ke akhir).
+1. [Hapus](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) halaman di lokasi sebelumnya.
+1. Simpan PDF keluaran menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

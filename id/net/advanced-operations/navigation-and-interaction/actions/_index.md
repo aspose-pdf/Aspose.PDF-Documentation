@@ -87,18 +87,18 @@ Adalah mungkin untuk menambahkan hyperlink ke file PDF, baik untuk memungkinkan 
 
 Untuk menambahkan hyperlink web ke dokumen PDF:
 
-1. Buat objek Kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
-1. Dapatkan Kelas [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) yang ingin Anda tambahkan tautan.
-1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) menggunakan objek Page dan [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf/rectangle). Objek rectangle digunakan untuk menentukan lokasi di halaman tempat tautan harus ditambahkan.
-1. Atur properti Action ke objek [GoToURIAction](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/gotouriaction) yang menentukan lokasi URI jarak jauh.
-1. Untuk menampilkan teks hyperlink, tambahkan string teks di lokasi yang mirip dengan tempat objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) ditempatkan.
+1. Buat objek Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Dapatkan Kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) yang ingin Anda tambahkan tautan.
+1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) menggunakan objek Page dan [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle). Objek rectangle digunakan untuk menentukan lokasi di halaman tempat tautan harus ditambahkan.
+1. Atur properti Action ke objek [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) yang menentukan lokasi URI jarak jauh.
+1. Untuk menampilkan teks hyperlink, tambahkan string teks di lokasi yang mirip dengan tempat objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) ditempatkan.
 1. Untuk menambahkan teks bebas:
 
-- Buat objek [FreeTextAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/freetextannotation). Ini juga menerima objek Page dan Rectangle sebagai argumen, sehingga mungkin untuk memberikan nilai yang sama seperti yang ditentukan terhadap konstruktor LinkAnnotation.
-- Menggunakan properti Contents objek [FreeTextAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/freetextannotation), tentukan string yang harus ditampilkan di PDF keluaran.
-- Opsional, atur lebar batas dari objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) dan FreeTextAnnotation ke 0 sehingga tidak muncul di dokumen PDF.
-- Setelah objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) dan [FreeTextAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/freetextannotation) didefinisikan, tambahkan tautan ini ke koleksi Annotations objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page).
-- Terakhir, simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+- Buat objek [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation). Ini juga menerima objek Page dan Rectangle sebagai argumen, sehingga mungkin untuk memberikan nilai yang sama seperti yang ditentukan terhadap konstruktor LinkAnnotation.
+- Menggunakan properti Contents objek [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation), tentukan string yang harus ditampilkan di PDF keluaran.
+- Opsional, atur lebar batas dari objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) dan FreeTextAnnotation ke 0 sehingga tidak muncul di dokumen PDF.
+- Setelah objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) dan [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) didefinisikan, tambahkan tautan ini ke koleksi Annotations objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+- Terakhir, simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 Potongan kode berikut menunjukkan cara menambahkan hyperlink ke file PDF.
 
@@ -188,9 +188,9 @@ private static void AddHyperlink()
 
 ## Buat Hyperlink ke halaman di PDF yang sama
 
-Aspose.PDF for .NET menyediakan fitur hebat untuk pembuatan PDF serta manipulasi. Ini juga menawarkan fitur untuk menambahkan tautan ke halaman PDF dan tautan dapat mengarahkan ke halaman di file PDF lain, URL web, tautan untuk meluncurkan Aplikasi atau bahkan tautan ke halaman di file PDF yang sama. Untuk menambahkan hyperlink lokal (tautan ke halaman di file PDF yang sama), sebuah kelas bernama [LocalHyperlink](https://reference.aspose.com/pdf/id/net/aspose.pdf/localhyperlink) ditambahkan ke namespace Aspose.PDF dan kelas ini memiliki properti bernama TargetPageNumber, yang digunakan untuk menentukan halaman target/tujuan untuk hyperlink.
+Aspose.PDF for .NET menyediakan fitur hebat untuk pembuatan PDF serta manipulasi. Ini juga menawarkan fitur untuk menambahkan tautan ke halaman PDF dan tautan dapat mengarahkan ke halaman di file PDF lain, URL web, tautan untuk meluncurkan Aplikasi atau bahkan tautan ke halaman di file PDF yang sama. Untuk menambahkan hyperlink lokal (tautan ke halaman di file PDF yang sama), sebuah kelas bernama [LocalHyperlink](https://reference.aspose.com/pdf/net/aspose.pdf/localhyperlink) ditambahkan ke namespace Aspose.PDF dan kelas ini memiliki properti bernama TargetPageNumber, yang digunakan untuk menentukan halaman target/tujuan untuk hyperlink.
 
-Untuk menambahkan hyperlink lokal, kita perlu membuat TextFragment sehingga tautan dapat diasosiasikan dengan TextFragment. Kelas [TextFragment](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textfragment) memiliki properti bernama Hyperlink yang digunakan untuk mengasosiasikan instance LocalHyperlink. Potongan kode berikut menunjukkan langkah-langkah untuk memenuhi persyaratan ini.
+Untuk menambahkan hyperlink lokal, kita perlu membuat TextFragment sehingga tautan dapat diasosiasikan dengan TextFragment. Kelas [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) memiliki properti bernama Hyperlink yang digunakan untuk mengasosiasikan instance LocalHyperlink. Potongan kode berikut menunjukkan langkah-langkah untuk memenuhi persyaratan ini.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -284,11 +284,11 @@ Tautan direpresentasikan sebagai anotasi dalam file PDF dan mereka dapat ditamba
 
 Untuk mendapatkan URL tautan:
 
-1. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
-1. Dapatkan [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) yang ingin Anda ekstrak tautan darinya.
-1. Gunakan kelas [AnnotationSelector](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationselector) untuk mengekstrak semua objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) dari halaman yang ditentukan.
-1. Lewati objek [AnnotationSelector](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationselector) ke metode Accept objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page).
-1. Dapatkan semua anotasi tautan yang dipilih ke dalam objek IList menggunakan properti Selected dari objek [AnnotationSelector](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationselector).
+1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Dapatkan [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) yang ingin Anda ekstrak tautan darinya.
+1. Gunakan kelas [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) untuk mengekstrak semua objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) dari halaman yang ditentukan.
+1. Lewati objek [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) ke metode Accept objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. Dapatkan semua anotasi tautan yang dipilih ke dalam objek IList menggunakan properti Selected dari objek [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector).
 1. Terakhir, ekstrak Aksi LinkAnnotation sebagai GoToURIAction.
 
 Potongan kode berikut menunjukkan cara mendapatkan tujuan hyperlink (URL) dari file PDF.
@@ -368,7 +368,7 @@ Sebuah hyperlink memiliki dua bagian: teks yang ditampilkan dalam dokumen, dan U
 
 Teks dan anotasi/aksi dalam file PDF direpresentasikan oleh entitas yang berbeda. Teks di halaman hanyalah sekumpulan kata dan karakter, sementara anotasi membawa beberapa interaktivitas seperti yang melekat pada hyperlink.
 
-Untuk menemukan konten URL, Anda perlu bekerja dengan anotasi dan teks. Objek [Annotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotation) tidak memiliki teks itu sendiri tetapi berada di bawah teks di halaman. Jadi untuk mendapatkan teks, Anotasi memberikan batas URL, sementara objek Teks memberikan konten URL. Silakan lihat potongan kode berikut.
+Untuk menemukan konten URL, Anda perlu bekerja dengan anotasi dan teks. Objek [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) tidak memiliki teks itu sendiri tetapi berada di bawah teks di halaman. Jadi untuk mendapatkan teks, Anotasi memberikan batas URL, sementara objek Teks memberikan konten URL. Silakan lihat potongan kode berikut.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -459,8 +459,8 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 Untuk menghapus aksi buka:
 
-1. Atur properti [OpenAction](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/openaction) objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) ke null.
-1. Simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save) dari objek Document.
+1. Atur properti [OpenAction](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) ke null.
+1. Simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) dari objek Document.
 
 Potongan kode berikut menunjukkan cara menghapus aksi buka dokumen dari file PDF.
 
@@ -511,7 +511,7 @@ private static void RemoveOpenAction()
 
 Saat melihat file PDF di penampil PDF seperti Adobe Reader, file biasanya terbuka di halaman pertama. Namun, adalah mungkin untuk mengatur file agar terbuka di halaman yang berbeda.
 
-Kelas [XYZExplicitDestination](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/xyzexplicitdestination) memungkinkan Anda untuk menentukan halaman dalam file PDF yang ingin Anda buka. Saat melewatkan nilai objek GoToAction ke properti OpenAction kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document), dokumen terbuka di halaman yang ditentukan terhadap objek XYZExplicitDestination. Potongan kode berikut menunjukkan cara menentukan halaman sebagai aksi buka dokumen.
+Kelas [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) memungkinkan Anda untuk menentukan halaman dalam file PDF yang ingin Anda buka. Saat melewatkan nilai objek GoToAction ke properti OpenAction kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), dokumen terbuka di halaman yang ditentukan terhadap objek XYZExplicitDestination. Potongan kode berikut menunjukkan cara menentukan halaman sebagai aksi buka dokumen.
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

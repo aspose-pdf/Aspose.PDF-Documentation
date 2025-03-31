@@ -77,7 +77,7 @@ draft: false
 
 ## 既存のPDFファイルにリストアイテムを追加
 
-[AddListItem](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/addlistitem)メソッドを使用すると、[ListBox](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/listboxfield)フィールドにアイテムを追加できます。最初の引数はフィールド名で、2番目の引数はフィールドアイテムです。単一のフィールドアイテムを渡すことも、アイテムのリストを含む文字列の配列を渡すこともできます。このメソッドは[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor)クラスによって提供されています。以下のコードスニペットは、PDFファイルにリストアイテムを追加する方法を示しています。
+[AddListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addlistitem)メソッドを使用すると、[ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield)フィールドにアイテムを追加できます。最初の引数はフィールド名で、2番目の引数はフィールドアイテムです。単一のフィールドアイテムを渡すことも、アイテムのリストを含む文字列の配列を渡すこともできます。このメソッドは[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)クラスによって提供されています。以下のコードスニペットは、PDFファイルにリストアイテムを追加する方法を示しています。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -110,7 +110,7 @@ draft: false
 
 ## 既存のPDFファイルからリストアイテムを削除
 
-[DelListItem](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/dellistitem)メソッドを使用すると、[ListBox](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/listboxfield)から特定のアイテムを削除できます。最初のパラメータはフィールド名で、2番目のパラメータはリストから削除したいアイテムです。このメソッドは[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor)クラスによって提供されています。以下のコードスニペットは、PDFファイルからリストアイテムを削除する方法を示しています。
+[DelListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/dellistitem)メソッドを使用すると、[ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield)から特定のアイテムを削除できます。最初のパラメータはフィールド名で、2番目のパラメータはリストから削除したいアイテムです。このメソッドは[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)クラスによって提供されています。以下のコードスニペットは、PDFファイルからリストアイテムを削除する方法を示しています。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

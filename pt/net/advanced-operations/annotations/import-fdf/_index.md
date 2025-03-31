@@ -85,9 +85,9 @@ FDF (Forms Data Format) é um formato de arquivo que armazena e transmite dados 
 
 {{% /alert %}}
 
-A classe [PDFAnnotationEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfannotationeditor/) contém métodos para trabalhar com a importação de anotações de arquivos FDF. O método [PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) fornece a funcionalidade para importar anotações de um documento FDF para um arquivo PDF.
+A classe [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/) contém métodos para trabalhar com a importação de anotações de arquivos FDF. O método [PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) fornece a funcionalidade para importar anotações de um documento FDF para um arquivo PDF.
 
-Além disso, a [Classe Form](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/form/) inclui o método [Form.ImportFdf](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/form/importfdf/) - importa o conteúdo dos campos do arquivo FDF e os coloca no novo PDF.
+Além disso, a [Classe Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/) inclui o método [Form.ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/importfdf/) - importa o conteúdo dos campos do arquivo FDF e os coloca no novo PDF.
 
 O seguinte trecho de código mostra como importar anotações no formato FDF para PDF com o método Form.ImportFdf():
 

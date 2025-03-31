@@ -85,7 +85,7 @@ sitemap:
 
 ## 태그가 있는 PDF 만들기 (간단한 시나리오)
 
-태그가 있는 PDF 문서에서 구조 요소를 생성하기 위해 Aspose.PDF는 [ITaggedContent](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent) 인터페이스를 사용하여 구조 요소를 생성하는 방법을 제공합니다. 다음 코드 스니펫은 헤더와 단락의 2개 요소를 포함하는 태그가 있는 PDF를 생성하는 방법을 보여줍니다.
+태그가 있는 PDF 문서에서 구조 요소를 생성하기 위해 Aspose.PDF는 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 인터페이스를 사용하여 구조 요소를 생성하는 방법을 제공합니다. 다음 코드 스니펫은 헤더와 단락의 2개 요소를 포함하는 태그가 있는 PDF를 생성하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -181,7 +181,7 @@ private static void CreateTaggedPdfDocument01()
 ## 중첩 요소가 있는 태그가 있는 PDF 만들기 (구조 요소 트리 생성)
 
 일부 경우에는 단락에 인용문을 배치하는 등 더 복잡한 구조를 생성해야 합니다. 
-구조 요소 트리를 생성하기 위해 [AppendChild](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/element/methods/appendchild) 메서드를 사용해야 합니다.
+구조 요소 트리를 생성하기 위해 [AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild) 메서드를 사용해야 합니다.
 다음 코드 스니펫은 태그가 있는 PDF 문서의 구조 요소 트리를 생성하는 방법을 보여줍니다:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -294,7 +294,7 @@ private static void CreateTaggedPdfDocument02()
 
 ## 텍스트 구조 스타일링
 
-태그가 있는 PDF 문서에서 텍스트 구조의 스타일을 지정하기 위해 Aspose.PDF는 [Font](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) 및 [ForegroundColor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) 속성을 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서에서 텍스트 구조의 스타일을 지정하는 방법을 보여줍니다:
+태그가 있는 PDF 문서에서 텍스트 구조의 스타일을 지정하기 위해 Aspose.PDF는 [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) 및 [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) 속성을 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서에서 텍스트 구조의 스타일을 지정하는 방법을 보여줍니다:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -367,7 +367,7 @@ private static void AddStyle()
 
 ## 구조 요소 설명
 
-태그가 있는 PDF 문서에서 구조 요소를 설명하기 위해 Aspose.PDF는 [IllustrationElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/illustrationelement) 클래스를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서에서 구조 요소를 설명하는 방법을 보여줍니다:
+태그가 있는 PDF 문서에서 구조 요소를 설명하기 위해 Aspose.PDF는 [IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement) 클래스를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서에서 구조 요소를 설명하는 방법을 보여줍니다:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

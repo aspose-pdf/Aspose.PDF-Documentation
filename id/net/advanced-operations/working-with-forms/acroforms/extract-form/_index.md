@@ -111,7 +111,7 @@ private static void GetValuesFromFields()
 
 ### Dapatkan Nilai dari Bidang Individu Dokumen PDF
 
-Properti Value dari bidang formulir memungkinkan Anda untuk mendapatkan nilai dari bidang tertentu. Untuk mendapatkan nilai, ambil bidang formulir dari koleksi Form objek Document. Contoh C# ini memilih [TextBoxField](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/textboxfield) dan mengambil nilainya menggunakan properti Value.
+Properti Value dari bidang formulir memungkinkan Anda untuk mendapatkan nilai dari bidang tertentu. Untuk mendapatkan nilai, ambil bidang formulir dari koleksi Form objek Document. Contoh C# ini memilih [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) dan mengambil nilainya menggunakan properti Value.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -160,7 +160,7 @@ private static void GetSubmitFormActionUrl()
 
 Terkadang, Anda mungkin tahu di mana dalam dokumen sebuah bidang formulir berada, tetapi tidak tahu namanya. Misalnya, jika yang Anda miliki hanyalah skema dari formulir yang dicetak. Dengan Aspose.PDF for .NET, ini bukan masalah. Anda dapat mengetahui bidang mana yang ada di wilayah tertentu dari file PDF. Untuk mendapatkan bidang formulir dari wilayah tertentu file PDF:
 
-1. Buka file PDF menggunakan objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Buka file PDF menggunakan objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Ambil formulir dari koleksi Forms dokumen.
 1. Tentukan wilayah persegi panjang dan serahkan ke metode GetFieldsInRect objek Form. Koleksi Fields dikembalikan.
 1. Gunakan ini untuk memanipulasi bidang.

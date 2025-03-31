@@ -82,7 +82,7 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 ## Lacak Pemutusan Baris dari TextFragment Multi-Baris
 
-Aspose.PDF for .NET menawarkan pemrosesan latar belakang logging (pelacakan) pemutusan baris dari fragmen teks multi-baris dalam skenario penambahan teks. Anda dapat menggunakan metode [GetNotifications](https://reference.aspose.com/pdf/id/net/aspose.pdf/page/methods/getnotifications)() dari Kelas [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) sebagai berikut, untuk melacak pemutusan baris dari fragmen teks:
+Aspose.PDF for .NET menawarkan pemrosesan latar belakang logging (pelacakan) pemutusan baris dari fragmen teks multi-baris dalam skenario penambahan teks. Anda dapat menggunakan metode [GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)() dari Kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) sebagai berikut, untuk melacak pemutusan baris dari fragmen teks:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

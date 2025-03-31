@@ -77,7 +77,7 @@ draft: false
 
 ## 기존 PDF 파일에서 텍스트 교체
 
-기존 PDF 파일에서 텍스트를 교체하려면 [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [ReplaceText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index) 메서드를 호출해야 합니다. [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 기존 PDF 파일에서 텍스트를 교체하는 방법을 보여줍니다.
+기존 PDF 파일에서 텍스트를 교체하려면 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [ReplaceText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index) 메서드를 호출해야 합니다. [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 기존 PDF 파일에서 텍스트를 교체하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -179,7 +179,7 @@ private static void ReplaceText02()
 {{< /tab >}}
 {{< /tabs >}}
 
-텍스트 작업을 위한 더 고급 가능성을 위해 [TextState](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textstate) 메서드를 사용할 것입니다. 이 메서드를 사용하면 텍스트를 굵게, 기울임꼴로, 색상으로 만들 수 있습니다.
+텍스트 작업을 위한 더 고급 가능성을 위해 [TextState](https://reference.aspose.com/pdf/net/aspose.pdf.text/textstate) 메서드를 사용할 것입니다. 이 메서드를 사용하면 텍스트를 굵게, 기울임꼴로, 색상으로 만들 수 있습니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

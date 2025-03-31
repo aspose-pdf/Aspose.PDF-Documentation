@@ -81,7 +81,7 @@ sitemap:
 
 ## Cara Membuat Portofolio PDF
 
-Aspose.PDF memungkinkan pembuatan dokumen Portofolio PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Tambahkan file ke objek Document.Collection setelah mendapatkannya dengan kelas [FileSpecification](https://reference.aspose.com/pdf/id/net/aspose.pdf/filespecification). Setelah file ditambahkan, gunakan metode Save kelas Document untuk menyimpan dokumen portofolio.
+Aspose.PDF memungkinkan pembuatan dokumen Portofolio PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Tambahkan file ke objek Document.Collection setelah mendapatkannya dengan kelas [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Setelah file ditambahkan, gunakan metode Save kelas Document untuk menyimpan dokumen portofolio.
 
 Contoh berikut menggunakan File Microsoft Excel, dokumen Word, dan file gambar untuk membuat Portofolio PDF.
 
@@ -131,7 +131,7 @@ private static void CreatePortfolio()
 
 Portofolio PDF memungkinkan Anda untuk menggabungkan konten dari berbagai sumber (misalnya, PDF, Word, Excel, file JPEG) ke dalam satu wadah terpadu. File asli mempertahankan identitas masing-masing tetapi disusun menjadi file Portofolio PDF. Pengguna dapat membuka, membaca, mengedit, dan memformat setiap file komponen secara independen dari file komponen lainnya.
 
-Aspose.PDF memungkinkan pembuatan dokumen Portofolio PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Ini juga menawarkan kemampuan untuk mengekstrak file dari portofolio PDF.
+Aspose.PDF memungkinkan pembuatan dokumen Portofolio PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Ini juga menawarkan kemampuan untuk mengekstrak file dari portofolio PDF.
 
 Potongan kode berikut menunjukkan langkah-langkah untuk mengekstrak file dari portofolio PDF.
 

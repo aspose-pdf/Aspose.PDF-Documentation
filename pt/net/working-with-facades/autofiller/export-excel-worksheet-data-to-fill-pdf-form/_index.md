@@ -77,8 +77,8 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades) em [Aspose.PDF for .NET](/pdf/pt/net/) oferece várias maneiras de preencher os formulários PDF. Você pode importar dados de arquivo XML, DFD, XFDF, usar API e até mesmo usar os dados da planilha do Excel.
-Usaremos o método [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) da classe [Cells](https://reference.aspose.com/pdf/pt/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) para exportar os dados da planilha do Excel para um objeto DataTable. Em seguida, precisaremos importar esses dados para o formulário PDF usando o método [ImportDataTable](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/autofiller/methods/importdatatable) da classe [AutoFiller](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/autofiller). Certifique-se de que o nome da coluna do DataTable seja o mesmo que o nome do campo no formulário PDF.
+[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) em [Aspose.PDF for .NET](/pdf/pt/net/) oferece várias maneiras de preencher os formulários PDF. Você pode importar dados de arquivo XML, DFD, XFDF, usar API e até mesmo usar os dados da planilha do Excel.
+Usaremos o método [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) da classe [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) para exportar os dados da planilha do Excel para um objeto DataTable. Em seguida, precisaremos importar esses dados para o formulário PDF usando o método [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) da classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Certifique-se de que o nome da coluna do DataTable seja o mesmo que o nome do campo no formulário PDF.
 
 {{% /alert %}}
 
@@ -92,7 +92,7 @@ No formulário especificado acima, há uma página, com três campos chamados "I
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
-Precisamos criar um objeto da classe [AutoFiller](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/autofiller) e vincular o formulário PDF presente nas imagens acima e usar o método [ImportDataTable](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/autofiller/methods/importdatatable) para preencher os campos do formulário usando os dados presentes no objeto DataTable.
+Precisamos criar um objeto da classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) e vincular o formulário PDF presente nas imagens acima e usar o método [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) para preencher os campos do formulário usando os dados presentes no objeto DataTable.
 Uma vez que o método é chamado, um novo arquivo de formulário PDF é gerado, que contém cinco páginas com o formulário preenchido com base nos dados da planilha do Excel. O formulário PDF de entrada era de uma única página e o resultado é de cinco páginas, porque o número de linhas de dados na planilha do Excel é 5. A classe DataTable oferece a capacidade de usar a primeira linha da planilha como Nome da Coluna.
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
@@ -216,5 +216,5 @@ private static System.Data.DataTable GenerateDataTable()
 ## Conclusão
 
 {{% alert color="primary" %}}
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades) também oferece a capacidade de preencher formulários PDF usando dados de banco de dados, mas esse recurso é atualmente suportado na versão .NET.
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) também oferece a capacidade de preencher formulários PDF usando dados de banco de dados, mas esse recurso é atualmente suportado na versão .NET.
 {{% /alert %}}

@@ -156,7 +156,7 @@ Anda dapat mengonversi BMP ke file PDF dengan API Aspose.PDF for .NET. Oleh kare
 
 <a name="csharp-bmp-to-pdf" id="csharp-bmp-to-pdf"><strong>Langkah: Mengonversi BMP ke PDF di C#</strong></a>
 
-1. Inisialisasi objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) baru.
+1. Inisialisasi objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
 2. Muat gambar **BMP** input.
 3. Terakhir, simpan file PDF output.
 
@@ -202,8 +202,8 @@ Periksa potongan kode berikut untuk mengonversi file CGM ke format PDF.
 
 <a name="csharp-cgm-to-pdf" id="csharp-cgm-to-pdf"><strong>Langkah: Mengonversi CGM ke PDF di C#</strong></a>
 
-1. Buat instance kelas [CgmLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/cgmloadoptions).
-2. Buat instance kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance kelas [CgmLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions).
+2. Buat instance kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
 ```csharp
@@ -234,7 +234,7 @@ private static void ConvertCGMtoPDF()
 
 1. Buat objek kelas Gambar.
 2. Tambahkan gambar ke koleksi Paragraf halaman.
-3. Tentukan properti [FileType](https://reference.aspose.com/pdf/id/net/aspose.pdf/image/properties/filetype).
+3. Tentukan properti [FileType](https://reference.aspose.com/pdf/net/aspose.pdf/image/properties/filetype).
 4. Tentukan jalur atau sumber file.
     - Jika gambar berada di lokasi di hard drive, tentukan lokasi jalur menggunakan properti Image.File.
     - Jika gambar ditempatkan dalam MemoryStream, kirim objek yang menyimpan gambar ke properti Image.ImageStream.
@@ -281,7 +281,7 @@ Aspose mempersembahkan aplikasi gratis online ["DICOM ke PDF"](https://products.
 
 <a name="csharp-emf-to-pdf" id="csharp-emf-to-pdf"><strong>Langkah: Mengonversi EMF ke PDF di C#</strong></a>
 
-1. Pertama, inisialisasi objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Pertama, inisialisasi objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 2. Muat file gambar **EMF**.
 3. Tambahkan gambar EMF yang dimuat ke sebuah Halaman.
 4. Simpan dokumen PDF.
@@ -337,7 +337,7 @@ Anda dapat mengonversi GIF ke file PDF dengan API Aspose.PDF for .NET. Oleh kare
 
 <a name="csharp-gif-to-pdf" id="csharp-gif-to-pdf"><strong>Langkah: Mengonversi GIF ke PDF di C#</strong></a>
 
-1. Inisialisasi objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) baru.
+1. Inisialisasi objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
 2. Muat gambar **GIF** input.
 3. Terakhir, simpan file PDF output.
 
@@ -537,12 +537,12 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["SVG ke PDF"](https:
 [![Aspose.PDF Konversi SVG ke PDF dengan Aplikasi Gratis](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
-Untuk mengonversi file SVG ke PDF, gunakan kelas bernama [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) yang digunakan untuk menginisialisasi objek [`LoadOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/loadoptions). Kemudian, objek ini diteruskan sebagai argumen selama inisialisasi objek Document dan membantu mesin rendering PDF untuk menentukan format input dari dokumen sumber.
+Untuk mengonversi file SVG ke PDF, gunakan kelas bernama [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) yang digunakan untuk menginisialisasi objek [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions). Kemudian, objek ini diteruskan sebagai argumen selama inisialisasi objek Document dan membantu mesin rendering PDF untuk menentukan format input dari dokumen sumber.
 
 <a name="csharp-svg-to-pdf" id="csharp-svg-to-pdf"><strong>Langkah: Mengonversi SVG ke PDF di C#</strong></a>
 
-1. Buat instance kelas [`SvgLoadOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/loadoptions).
-2. Buat instance kelas [`Document`](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance kelas [`SvgLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions).
+2. Buat instance kelas [`Document`](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
 Potongan kode berikut menunjukkan proses mengonversi file SVG menjadi format PDF dengan Aspose.PDF for .NET.
@@ -789,7 +789,7 @@ Anda dapat mengonversi TIFF ke PDF dengan cara yang sama seperti format file ras
 
 <a name="csharp-tiff-to-pdf" id="csharp-tiff-to-pdf"><strong>Langkah: Mengonversi TIFF ke PDF di C#</strong></a>
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) baru dan tambahkan Halaman.
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru dan tambahkan Halaman.
 2. Muat gambar **TIFF** input.
 3. Simpan dokumen PDF.
 
@@ -878,8 +878,8 @@ Periksa potongan kode berikut untuk mengonversi file CDR ke format PDF.
 
 <a name="csharp-cdr-to-pdf" id="csharp-cdr-to-pdf"><strong>Langkah: Mengonversi CDR ke PDF di C#</strong></a>
 
-1. Buat instance kelas [CdrLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/cdrloadoptions/) .
-2. Buat instance kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance kelas [CdrLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cdrloadoptions/) .
+2. Buat instance kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
 ```csharp
@@ -906,8 +906,8 @@ Periksa potongan kode berikut untuk mengonversi file DJVU ke format PDF.
 
 <a name="csharp-djvu-to-pdf" id="csharp-djvu-to-pdf"><strong>Langkah: Mengonversi DJVU ke PDF di C#</strong></a>
 
-1. Buat instance kelas [DjvuLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/djvuloadoptions/) .
-2. Buat instance kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance kelas [DjvuLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/djvuloadoptions/) .
+2. Buat instance kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
 ```csharp

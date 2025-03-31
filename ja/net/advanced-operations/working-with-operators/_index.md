@@ -87,7 +87,7 @@ sitemap:
 
 ### 実装の詳細
 
-このトピックでは、Aspose.PDFで演算子を使用する方法について説明します。選択された例では、概念を示すためにPDFファイルに画像を追加します。PDFファイルに画像を追加するには、異なる演算子が必要です。この例では、[GSave](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ioperatorselector/visit/methods/28)、[ConcatenateMatrix](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ioperatorselector/visit/methods/10)、[Do](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ioperatorselector/visit/methods/14)、および[GRestore](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ioperatorselector/visit/methods/26)を使用します。
+このトピックでは、Aspose.PDFで演算子を使用する方法について説明します。選択された例では、概念を示すためにPDFファイルに画像を追加します。PDFファイルに画像を追加するには、異なる演算子が必要です。この例では、[GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28)、[ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10)、[Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14)、および[GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26)を使用します。
 
 - **GSave**演算子は、PDFの現在のグラフィカル状態を保存します。
 - **ConcatenateMatrix**（行列を連結する）演算子は、画像がPDFページにどのように配置されるかを定義するために使用されます。
@@ -96,7 +96,7 @@ sitemap:
 
 PDFファイルに画像を追加するには：
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを作成し、入力PDF文書を開きます。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成し、入力PDF文書を開きます。
 1. 画像を追加する特定のページを取得します。
 1. ページのリソースコレクションに画像を追加します。
 1. 演算子を使用してページ上に画像を配置します：
@@ -235,7 +235,7 @@ private static void DrawXFormOnPage()
 
 ## 演算子クラスを使用してグラフィックスオブジェクトを削除する
 
-演算子クラスは、PDF操作のための優れた機能を提供します。PDFファイルに、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスの[DeleteImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage)メソッドを使用して削除できないグラフィックスが含まれている場合、演算子クラスを使用してそれらを削除できます。
+演算子クラスは、PDF操作のための優れた機能を提供します。PDFファイルに、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスの[DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage)メソッドを使用して削除できないグラフィックスが含まれている場合、演算子クラスを使用してそれらを削除できます。
 
 以下のコードスニペットは、グラフィックスを削除する方法を示しています。PDFファイルにグラフィックスのテキストラベルが含まれている場合、このアプローチを使用すると、それらがPDFファイルに残る可能性があることに注意してください。したがって、グラフィック演算子を検索して、そのような画像を削除するための代替方法を探してください。
 

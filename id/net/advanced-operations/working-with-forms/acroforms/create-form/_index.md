@@ -85,16 +85,16 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ### Tambahkan Bidang Formulir di Dokumen PDF
 
-Kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) menyediakan koleksi bernama [Form](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/form) yang membantu Anda mengelola bidang formulir dalam dokumen PDF.
+Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menyediakan koleksi bernama [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) yang membantu Anda mengelola bidang formulir dalam dokumen PDF.
 
 Untuk menambahkan bidang formulir:
 
 1. Buat bidang formulir yang ingin Anda tambahkan.
-1. Panggil metode Add dari koleksi [Form](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/form).
+1. Panggil metode Add dari koleksi [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form).
 
 ### Menambahkan TextBoxField
 
-Contoh di bawah ini menunjukkan cara menambahkan [TextBoxField](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/textboxfield).
+Contoh di bawah ini menunjukkan cara menambahkan [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### Menambahkan RadioButtonField
 
-Potongan kode berikut menunjukkan cara menambahkan [RadioButtonField](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/radiobuttonfield) dalam dokumen PDF.
+Potongan kode berikut menunjukkan cara menambahkan [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) dalam dokumen PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -164,7 +164,7 @@ private static void AddRadioButtonToPdf()
 }
 ```
 
-[TextBoxField](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/textboxfield) dapat ditambahkan dengan beberapa anotasi widget.
+[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) dapat ditambahkan dengan beberapa anotasi widget.
 ```csharp
 // For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()

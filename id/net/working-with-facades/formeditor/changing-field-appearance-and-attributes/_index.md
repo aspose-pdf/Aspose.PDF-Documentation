@@ -77,17 +77,17 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Kelas FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/FormEditor) dari [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades) memungkinkan Anda untuk tidak hanya mengubah tampilan dan nuansa field form, tetapi juga perilaku field tersebut. Dalam artikel ini, kita akan melihat bagaimana kita dapat menggunakan kelas FormEditor untuk mengubah penampilan field, atribut field, dan batas field juga.
+[Kelas FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) dari [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) memungkinkan Anda untuk tidak hanya mengubah tampilan dan nuansa field form, tetapi juga perilaku field tersebut. Dalam artikel ini, kita akan melihat bagaimana kita dapat menggunakan kelas FormEditor untuk mengubah penampilan field, atribut field, dan batas field juga.
 
 {{% /alert %}}
 
 ## Detail implementasi
 
-Metode [SetFieldAppearance](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/setfieldappearance) digunakan untuk mengubah penampilan field form. Ini mengambil AnnotationFlag sebagai parameter. AnnotationFlag adalah enumerasi yang memiliki anggota berbeda seperti Hidden atau NoRotate, dll.
+Metode [SetFieldAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldappearance) digunakan untuk mengubah penampilan field form. Ini mengambil AnnotationFlag sebagai parameter. AnnotationFlag adalah enumerasi yang memiliki anggota berbeda seperti Hidden atau NoRotate, dll.
 
-Metode [SetFieldAttributes](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/setfieldattribute) digunakan untuk mengubah atribut field form. Parameter yang diteruskan ke metode ini adalah enumerasi PropertyFlag yang berisi anggota seperti ReadOnly atau Required, dll.
+Metode [SetFieldAttributes](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldattribute) digunakan untuk mengubah atribut field form. Parameter yang diteruskan ke metode ini adalah enumerasi PropertyFlag yang berisi anggota seperti ReadOnly atau Required, dll.
 
-Kelas [FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/FormEditor) juga menyediakan metode untuk mengatur batas field. Ini memberi tahu field berapa banyak karakter yang dapat diisi. Potongan kode di bawah ini menunjukkan bagaimana semua metode ini dapat digunakan.
+Kelas [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) juga menyediakan metode untuk mengatur batas field. Ini memberi tahu field berapa banyak karakter yang dapat diisi. Potongan kode di bawah ini menunjukkan bagaimana semua metode ini dapat digunakan.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -82,7 +82,7 @@ sitemap:
 
 ## PDF에 줄 들여쓰기 추가하는 방법
 
-Aspose.PDF for .NET는 [TextFormattingOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textformattingoptions) 클래스에 SubsequentLinesIndent 속성을 제공합니다. 이 속성은 TextFragment 및 Paragraphs 컬렉션과 함께 PDF 생성 시 줄 들여쓰기를 지정하는 데 사용할 수 있습니다.
+Aspose.PDF for .NET는 [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) 클래스에 SubsequentLinesIndent 속성을 제공합니다. 이 속성은 TextFragment 및 Paragraphs 컬렉션과 함께 PDF 생성 시 줄 들여쓰기를 지정하는 데 사용할 수 있습니다.
 
 다음 코드 스니펫을 사용하여 속성을 사용하세요:
 
@@ -203,7 +203,7 @@ private static void AddUnderlineText()
 
 ## 추가된 텍스트 주위에 테두리 추가하는 방법
 
-추가한 텍스트의 모양과 느낌을 제어할 수 있습니다. 아래 예제는 추가한 텍스트 주위에 사각형을 그려 테두리를 추가하는 방법을 보여줍니다. [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스에 대해 더 알아보세요.
+추가한 텍스트의 모양과 느낌을 제어할 수 있습니다. 아래 예제는 추가한 텍스트 주위에 사각형을 그려 테두리를 추가하는 방법을 보여줍니다. [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스에 대해 더 알아보세요.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

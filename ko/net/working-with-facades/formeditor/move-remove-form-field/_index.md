@@ -77,7 +77,7 @@ draft: false
 
 ## 기존 PDF 파일에서 양식 필드를 새 위치로 이동하기
 
-양식 필드를 새 위치로 이동하려면 [FormEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor) 클래스의 [MoveField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/movefield) 메서드를 사용할 수 있습니다. 필드 이름과 이 필드의 새 위치만 [MoveField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/movefield) 메서드에 제공하면 됩니다. 또한 [FormEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor) 클래스의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/save/index) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에서 양식 필드를 새 위치로 이동하는 방법을 보여줍니다.
+양식 필드를 새 위치로 이동하려면 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 클래스의 [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) 메서드를 사용할 수 있습니다. 필드 이름과 이 필드의 새 위치만 [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) 메서드에 제공하면 됩니다. 또한 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 클래스의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에서 양식 필드를 새 위치로 이동하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -98,7 +98,7 @@ private static void MoveField()
 
 ## 기존 PDF 파일에서 양식 필드 삭제하기
 
-기존 PDF 파일에서 양식 필드를 삭제하려면 FormEditor 클래스의 RemoveField 메서드를 사용할 수 있습니다. 이 메서드는 필드 이름이라는 하나의 인수만 필요합니다. FormEditor 클래스의 객체를 생성하고, [RemoveField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/removefield) 메서드를 호출하여 PDF에서 특정 필드를 제거한 다음 Save 메서드를 호출하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 기존 PDF 파일에서 양식 필드를 삭제하는 방법을 보여줍니다.
+기존 PDF 파일에서 양식 필드를 삭제하려면 FormEditor 클래스의 RemoveField 메서드를 사용할 수 있습니다. 이 메서드는 필드 이름이라는 하나의 인수만 필요합니다. FormEditor 클래스의 객체를 생성하고, [RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield) 메서드를 호출하여 PDF에서 특정 필드를 제거한 다음 Save 메서드를 호출하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 기존 PDF 파일에서 양식 필드를 삭제하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -119,7 +119,7 @@ private static void RemoveFields()
 
 ## PDF에서 양식 필드 이름 변경하기
 
-또한 [FormEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor) 클래스의 [RenameField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/renamefield) 메서드를 사용하여 필드 이름을 변경할 수 있습니다.
+또한 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 클래스의 [RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield) 메서드를 사용하여 필드 이름을 변경할 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -81,7 +81,7 @@ sitemap:
 
 ## Criar Tabela em PDF Marcado
 
-Aspose.PDF for .NET permite criar uma tabela em documentos PDF marcados. Para trabalhar com tabelas, a API fornece a classe [TableElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement). Para criar uma tabela, você pode usar o método [CreateTableElement()](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent). Além disso, você pode usar os métodos [CreateTHead()](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) e [CreateTFoot()](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) da classe TableElement para criar o Cabeçalho da Tabela, o Corpo da Tabela e o Rodapé da Tabela, respectivamente. Para criar uma linha de tabela, você pode usar o método [CreateTR()](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) da classe [TableRowCollectionElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Você também pode verificar se o documento PDF criado está em conformidade com PDF/UA usando o método Validate() da classe Document.
+Aspose.PDF for .NET permite criar uma tabela em documentos PDF marcados. Para trabalhar com tabelas, a API fornece a classe [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Para criar uma tabela, você pode usar o método [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Além disso, você pode usar os métodos [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) e [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) da classe TableElement para criar o Cabeçalho da Tabela, o Corpo da Tabela e o Rodapé da Tabela, respectivamente. Para criar uma linha de tabela, você pode usar o método [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) da classe [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Você também pode verificar se o documento PDF criado está em conformidade com PDF/UA usando o método Validate() da classe Document.
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
@@ -357,23 +357,23 @@ private static void CreateTable()
 
 ## Estilizar Elemento da Tabela
 
-Aspose.PDF for .NET permite estilizar uma tabela em documento PDF marcado. Para estilizar uma tabela, você pode criar uma tabela usando o método [CreateTableElement()](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent) e definir o estilo da tabela usando as propriedades da classe [TableElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement). A seguir está a lista de propriedades que você pode usar para estilizar uma tabela:
+Aspose.PDF for .NET permite estilizar uma tabela em documento PDF marcado. Para estilizar uma tabela, você pode criar uma tabela usando o método [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) e definir o estilo da tabela usando as propriedades da classe [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). A seguir está a lista de propriedades que você pode usar para estilizar uma tabela:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/border).
-- [Alignment](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
-- [CornerStyle](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
-- [Broken](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
-- [ColumnAdjustment](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
-- [ColumnWidths](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
-- [DefaultCellBorder](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
-- [DefaultCellPadding](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
-- [DefaultColumnWidth](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
-- [IsBroken](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
-- [IsBordersIncluded](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
-- [Left](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/left).
-- [Top](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tableelement/properties/top).
+- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/border).
+- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
+- [CornerStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
+- [Broken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
+- [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
+- [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
+- [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
+- [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
+- [DefaultColumnWidth](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
+- [IsBroken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
+- [IsBordersIncluded](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
+- [Left](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/left).
+- [Top](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/top).
 
 O seguinte trecho de código mostra como estilizar uma tabela em documento PDF marcado:
 
@@ -575,7 +575,7 @@ private static void StyleTable()
 
 ## Estilizar Linha da Tabela
 
-Aspose.PDF for .NET permite estilizar uma linha de tabela em documento PDF marcado. Para estilizar uma linha de tabela, você pode usar as propriedades da classe [TableTRElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tabletrelement). A seguir está a lista de propriedades que você pode usar para estilizar uma linha de tabela:
+Aspose.PDF for .NET permite estilizar uma linha de tabela em documento PDF marcado. Para estilizar uma linha de tabela, você pode usar as propriedades da classe [TableTRElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tabletrelement). A seguir está a lista de propriedades que você pode usar para estilizar uma linha de tabela:
 
 - BackgroundColor.
 - Border.
@@ -772,18 +772,18 @@ private static void StyleTableRow()
 
 ## Estilizar Célula da Tabela
 
-Aspose.PDF for .NET permite estilizar uma célula de tabela em documento PDF marcado. Para estilizar uma célula de tabela, você pode usar as propriedades da classe [TableCellElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement). A seguir está a lista de propriedades que você pode usar para estilizar uma célula de tabela:
+Aspose.PDF for .NET permite estilizar uma célula de tabela em documento PDF marcado. Para estilizar uma célula de tabela, você pode usar as propriedades da classe [TableCellElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement). A seguir está a lista de propriedades que você pode usar para estilizar uma célula de tabela:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
-- [IsNoBorder](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
-- [Margin](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
-- [Alignment](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
-- [IsWordWrapped](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
-- [VerticalAlignment](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
-- [ColSpan](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
-- [RowSpan](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
+- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
+- [IsNoBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
+- [Margin](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
+- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
+- [IsWordWrapped](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
+- [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
+- [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
+- [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
 
 O seguinte trecho de código mostra como estilizar uma célula de tabela no documento PDF marcado:
 

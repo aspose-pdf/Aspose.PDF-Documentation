@@ -77,7 +77,7 @@ draft: false
 
 ## 기존 PDF 파일에서 PDF 페이지 속성 가져오기
 
-[PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor)는 PDF 파일의 개별 페이지와 작업할 수 있게 해줍니다. 이를 통해 다양한 페이지 박스 크기, 페이지 회전, 페이지 확대/축소 등과 같은 개별 페이지의 속성을 가져올 수 있습니다. 이러한 속성을 가져오기 위해서는 [PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [GetPageRotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/methods/getpagerotation), [GetPages](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/methods/getpages), [GetPageBoxSize](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/methods/getpageboxsize) 등과 같은 다양한 메서드를 사용하여 페이지 속성을 가져올 수 있습니다.
+[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor)는 PDF 파일의 개별 페이지와 작업할 수 있게 해줍니다. 이를 통해 다양한 페이지 박스 크기, 페이지 회전, 페이지 확대/축소 등과 같은 개별 페이지의 속성을 가져올 수 있습니다. 이러한 속성을 가져오기 위해서는 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [GetPageRotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpagerotation), [GetPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpages), [GetPageBoxSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpageboxsize) 등과 같은 다양한 메서드를 사용하여 페이지 속성을 가져올 수 있습니다.
 
 다음 코드 스니펫은 기존 PDF 파일에서 PDF 페이지 속성을 가져오는 방법을 보여줍니다.
 
@@ -109,7 +109,7 @@ private static void GetPdfPageProperties()
 
 ## 기존 PDF 파일에서 PDF 페이지 속성 설정하기
 
-페이지 회전, 확대/축소 또는 원점과 같은 페이지 속성을 설정하려면 [PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor) 클래스를 사용해야 합니다. 이 클래스는 이러한 페이지 속성을 설정하기 위한 다양한 메서드와 속성을 제공합니다. 우선, [PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, 이러한 메서드와 속성을 사용하여 페이지 속성을 설정할 수 있습니다. 마지막으로, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
+페이지 회전, 확대/축소 또는 원점과 같은 페이지 속성을 설정하려면 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 클래스를 사용해야 합니다. 이 클래스는 이러한 페이지 속성을 설정하기 위한 다양한 메서드와 속성을 제공합니다. 우선, [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, 이러한 메서드와 속성을 사용하여 페이지 속성을 설정할 수 있습니다. 마지막으로, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
 
 다음 코드 스니펫은 기존 PDF 파일에서 PDF 페이지 속성을 설정하는 방법을 보여줍니다.
 
@@ -149,7 +149,7 @@ private static void SetPdfPageProperties()
 
 ## PDF 파일의 특정 페이지 콘텐츠 크기 조정
 
-[PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor) 클래스의 ResizeContents 메서드는 PDF 파일의 페이지 콘텐츠 크기를 조정할 수 있게 해줍니다. [ContentsResizeParameters](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdffileeditor/contentsresizeparameters) 클래스는 페이지를 크기 조정하는 데 사용할 매개변수를 지정하는 데 사용됩니다. 예를 들어, 비율 또는 단위로 여백을 설정할 수 있습니다. 모든 페이지의 크기를 조정하거나 ResizeContents 메서드를 사용하여 크기를 조정할 페이지 배열을 지정할 수 있습니다.
+[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 클래스의 ResizeContents 메서드는 PDF 파일의 페이지 콘텐츠 크기를 조정할 수 있게 해줍니다. [ContentsResizeParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/contentsresizeparameters) 클래스는 페이지를 크기 조정하는 데 사용할 매개변수를 지정하는 데 사용됩니다. 예를 들어, 비율 또는 단위로 여백을 설정할 수 있습니다. 모든 페이지의 크기를 조정하거나 ResizeContents 메서드를 사용하여 크기를 조정할 페이지 배열을 지정할 수 있습니다.
 
 다음 코드 스니펫은 PDF 파일의 특정 페이지 콘텐츠 크기를 조정하는 방법을 보여줍니다.
 

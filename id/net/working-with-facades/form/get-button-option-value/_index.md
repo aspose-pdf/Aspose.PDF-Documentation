@@ -77,7 +77,7 @@ draft: false
 
 ## Dapatkan Nilai Opsi Tombol dari File PDF yang Ada
 
-Tombol radio menyediakan cara untuk menunjukkan berbagai opsi. Kelas [Form](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form) memungkinkan Anda untuk mendapatkan semua nilai opsi tombol untuk tombol radio tertentu. Anda dapat mendapatkan nilai-nilai ini menggunakan metode [GetButtonOptionValues](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). Metode ini memerlukan nama tombol radio sebagai parameter input dan mengembalikan sebuah Hashtable. Anda dapat mengiterasi melalui Hashtable ini untuk mendapatkan nilai opsi. Cuplikan kode berikut menunjukkan cara mendapatkan nilai opsi tombol dari file PDF yang ada.
+Tombol radio menyediakan cara untuk menunjukkan berbagai opsi. Kelas [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) memungkinkan Anda untuk mendapatkan semua nilai opsi tombol untuk tombol radio tertentu. Anda dapat mendapatkan nilai-nilai ini menggunakan metode [GetButtonOptionValues](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). Metode ini memerlukan nama tombol radio sebagai parameter input dan mengembalikan sebuah Hashtable. Anda dapat mengiterasi melalui Hashtable ini untuk mendapatkan nilai opsi. Cuplikan kode berikut menunjukkan cara mendapatkan nilai opsi tombol dari file PDF yang ada.
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetButtonOptions()
@@ -105,7 +105,7 @@ private static void GetButtonOptions()
 
 ## Dapatkan Nilai Opsi Tombol Saat Ini dari File PDF yang Ada
 
-Tombol radio menyediakan cara untuk mengatur nilai opsi, namun hanya satu dari mereka yang dapat dipilih pada satu waktu. Jika Anda ingin mendapatkan nilai opsi yang dipilih saat ini, maka Anda dapat menggunakan metode [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue). Kelas [Form](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form) menyediakan metode ini. Metode [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) memerlukan nama tombol radio sebagai parameter input dan mengembalikan nilai sebagai string. Cuplikan kode berikut menunjukkan cara mendapatkan nilai opsi tombol saat ini dari file PDF yang ada.
+Tombol radio menyediakan cara untuk mengatur nilai opsi, namun hanya satu dari mereka yang dapat dipilih pada satu waktu. Jika Anda ingin mendapatkan nilai opsi yang dipilih saat ini, maka Anda dapat menggunakan metode [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue). Kelas [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) menyediakan metode ini. Metode [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) memerlukan nama tombol radio sebagai parameter input dan mengembalikan nilai sebagai string. Cuplikan kode berikut menunjukkan cara mendapatkan nilai opsi tombol saat ini dari file PDF yang ada.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

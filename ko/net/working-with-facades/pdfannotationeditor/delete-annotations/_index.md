@@ -79,7 +79,7 @@ sitemap:
 
 ## 기존 PDF 파일에서 모든 주석 삭제
 
-[PdfAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor)를 사용하면 기존 PDF 파일에서 모든 주석을 삭제할 수 있습니다. 먼저, [PdfAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩합니다. 그 후, [DeleteAnnotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor/methods/deleteannotations) 메서드를 호출하여 파일에서 모든 주석을 삭제하고, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 PDF 파일에서 모든 주석을 삭제하는 방법을 보여줍니다.
+[PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor)를 사용하면 기존 PDF 파일에서 모든 주석을 삭제할 수 있습니다. 먼저, [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩합니다. 그 후, [DeleteAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/deleteannotations) 메서드를 호출하여 파일에서 모든 주석을 삭제하고, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 PDF 파일에서 모든 주석을 삭제하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -132,7 +132,7 @@ private static void DeleteAllAnnotations()
 
 ## 지정된 유형으로 모든 주석 삭제
 
-기존 PDF 파일에서 지정된 주석 유형으로 모든 주석을 삭제하려면 [PdfAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor) 클래스를 사용할 수 있습니다. 이를 위해 [PdfAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩합니다. 그 후, 문자열 매개변수를 사용하여 [DeleteAnnotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor/methods/deleteannotations) 메서드를 호출하여 파일에서 모든 주석을 삭제합니다. 문자열 매개변수는 삭제할 주석 유형을 나타냅니다. 마지막으로, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 지정된 주석 유형으로 모든 주석을 삭제하는 방법을 보여줍니다.
+기존 PDF 파일에서 지정된 주석 유형으로 모든 주석을 삭제하려면 [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 클래스를 사용할 수 있습니다. 이를 위해 [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩합니다. 그 후, 문자열 매개변수를 사용하여 [DeleteAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/deleteannotations) 메서드를 호출하여 파일에서 모든 주석을 삭제합니다. 문자열 매개변수는 삭제할 주석 유형을 나타냅니다. 마지막으로, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 지정된 주석 유형으로 모든 주석을 삭제하는 방법을 보여줍니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -250,7 +250,7 @@ private static void DeleteAllAnnotationByType()
 
 ## 지정된 이름으로 주석 삭제
 
-특정 주석을 **고유 이름**으로 삭제하려면 [PdfAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor) 클래스를 사용할 수 있습니다. 이를 위해 [PdfAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩합니다. 그 후, 삭제할 주석의 이름을 전달하여 [DeleteAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor/methods/deleteannotation) 메서드를 호출합니다. 마지막으로, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 이름으로 주석을 삭제하는 방법을 보여줍니다.
+특정 주석을 **고유 이름**으로 삭제하려면 [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 클래스를 사용할 수 있습니다. 이를 위해 [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩합니다. 그 후, 삭제할 주석의 이름을 전달하여 [DeleteAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/deleteannotation) 메서드를 호출합니다. 마지막으로, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 이름으로 주석을 삭제하는 방법을 보여줍니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

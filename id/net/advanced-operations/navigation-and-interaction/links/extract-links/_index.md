@@ -83,13 +83,13 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Ekstrak Tautan dari File PDF
 
-Tautan direpresentasikan sebagai anotasi dalam file PDF, jadi untuk mengekstrak tautan, ekstrak semua objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation).
+Tautan direpresentasikan sebagai anotasi dalam file PDF, jadi untuk mengekstrak tautan, ekstrak semua objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
 
-1. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
-1. Dapatkan [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) yang ingin Anda ekstrak tautannya.
-1. Gunakan kelas [AnnotationSelector](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationselector) untuk mengekstrak semua objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) dari halaman yang ditentukan.
-1. Lewatkan objek [AnnotationSelector](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationselector) ke metode Accept dari objek Page.
-1. Dapatkan semua anotasi tautan yang dipilih ke dalam objek IList menggunakan properti Selected dari objek [AnnotationSelector](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/annotationselector).
+1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Dapatkan [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) yang ingin Anda ekstrak tautannya.
+1. Gunakan kelas [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) untuk mengekstrak semua objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) dari halaman yang ditentukan.
+1. Lewatkan objek [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) ke metode Accept dari objek Page.
+1. Dapatkan semua anotasi tautan yang dipilih ke dalam objek IList menggunakan properti Selected dari objek [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector).
 
 Potongan kode berikut menunjukkan cara mengekstrak tautan dari file PDF.
 

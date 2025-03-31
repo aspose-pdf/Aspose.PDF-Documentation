@@ -86,11 +86,11 @@ Aspose.PDF for .NETは、開発者が.NETアプリケーションにPDFドキュ
 
 以下のコードスニペットは、次の手順に従います：
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトをインスタンス化します。
-1. ドキュメントオブジェクトに[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)を追加します。
-1. [TextFragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragment)オブジェクトを作成します。
-1. TextFragmentをページの[Paragraph](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page/properties/paragraphs)コレクションに追加します。
-1. 結果のPDFドキュメントを[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトをインスタンス化します。
+1. ドキュメントオブジェクトに[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)を追加します。
+1. [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)オブジェクトを作成します。
+1. TextFragmentをページの[Paragraph](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)コレクションに追加します。
+1. 結果のPDFドキュメントを[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)します。
 
 以下のコードスニペットは、Aspose.PDF for .NET APIの動作を示すHello Worldプログラムです。
 

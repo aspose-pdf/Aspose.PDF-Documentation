@@ -81,7 +81,7 @@ sitemap:
 
 ## 태그가 있는 PDF에서 테이블 생성
 
-Aspose.PDF for .NET은 태그가 있는 PDF 문서에서 테이블을 생성할 수 있게 합니다. 테이블 작업을 위해 API는 [TableElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement) 클래스를 제공합니다. 테이블을 생성하려면 [ITaggedContent](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent) 인터페이스의 [CreateTableElement()](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) 메서드를 사용할 수 있습니다. 또한, [TableElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement) 클래스의 [CreateTHead()](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) 및 [CreateTFoot()](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) 메서드를 사용하여 각각 테이블 헤드, 테이블 본문 및 테이블 바닥글을 생성할 수 있습니다. 테이블 행을 생성하려면 [TableRowCollectionElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablerowcollectionelement) 클래스의 [CreateTR()](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) 메서드를 사용할 수 있습니다. 생성된 PDF 문서가 PDF/UA 준수인지 확인하려면 Document 클래스의 Validate() 메서드를 사용할 수 있습니다.
+Aspose.PDF for .NET은 태그가 있는 PDF 문서에서 테이블을 생성할 수 있게 합니다. 테이블 작업을 위해 API는 [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement) 클래스를 제공합니다. 테이블을 생성하려면 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 인터페이스의 [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) 메서드를 사용할 수 있습니다. 또한, [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement) 클래스의 [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) 및 [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) 메서드를 사용하여 각각 테이블 헤드, 테이블 본문 및 테이블 바닥글을 생성할 수 있습니다. 테이블 행을 생성하려면 [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement) 클래스의 [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) 메서드를 사용할 수 있습니다. 생성된 PDF 문서가 PDF/UA 준수인지 확인하려면 Document 클래스의 Validate() 메서드를 사용할 수 있습니다.
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작업합니다.
 
@@ -357,23 +357,23 @@ private static void CreateTable()
 
 ## 테이블 요소 스타일 지정
 
-Aspose.PDF for .NET은 태그가 있는 PDF 문서에서 테이블을 스타일링할 수 있게 합니다. 테이블을 스타일링하려면 [ITaggedContent](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent) 인터페이스의 [CreateTableElement()](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) 메서드를 사용하여 테이블을 생성하고 [TableElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement) 클래스의 속성을 사용하여 테이블 스타일을 설정할 수 있습니다. 다음은 테이블 스타일을 지정하는 데 사용할 수 있는 속성 목록입니다:
+Aspose.PDF for .NET은 태그가 있는 PDF 문서에서 테이블을 스타일링할 수 있게 합니다. 테이블을 스타일링하려면 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 인터페이스의 [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) 메서드를 사용하여 테이블을 생성하고 [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement) 클래스의 속성을 사용하여 테이블 스타일을 설정할 수 있습니다. 다음은 테이블 스타일을 지정하는 데 사용할 수 있는 속성 목록입니다:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/border).
-- [Alignment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
-- [CornerStyle](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
-- [Broken](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
-- [ColumnAdjustment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
-- [ColumnWidths](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
-- [DefaultCellBorder](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
-- [DefaultCellPadding](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
-- [DefaultColumnWidth](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
-- [IsBroken](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
-- [IsBordersIncluded](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
-- [Left](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/left).
-- [Top](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tableelement/properties/top).
+- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/border).
+- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
+- [CornerStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
+- [Broken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
+- [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
+- [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
+- [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
+- [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
+- [DefaultColumnWidth](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
+- [IsBroken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
+- [IsBordersIncluded](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
+- [Left](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/left).
+- [Top](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/top).
 
 다음 코드 스니펫은 태그가 있는 PDF 문서에서 테이블을 스타일링하는 방법을 보여줍니다:
 
@@ -575,7 +575,7 @@ private static void StyleTable()
 
 ## 테이블 행 스타일 지정
 
-Aspose.PDF for .NET은 태그가 있는 PDF 문서에서 테이블 행을 스타일링할 수 있게 합니다. 테이블 행을 스타일링하려면 [TableTRElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tabletrelement) 클래스의 속성을 사용할 수 있습니다. 다음은 테이블 행을 스타일링하는 데 사용할 수 있는 속성 목록입니다:
+Aspose.PDF for .NET은 태그가 있는 PDF 문서에서 테이블 행을 스타일링할 수 있게 합니다. 테이블 행을 스타일링하려면 [TableTRElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tabletrelement) 클래스의 속성을 사용할 수 있습니다. 다음은 테이블 행을 스타일링하는 데 사용할 수 있는 속성 목록입니다:
 
 - BackgroundColor.
 - Border.
@@ -772,18 +772,18 @@ private static void StyleTableRow()
 
 ## 테이블 셀 스타일 지정
 
-Aspose.PDF for .NET은 태그가 있는 PDF 문서에서 테이블 셀을 스타일링할 수 있게 합니다. 테이블 셀을 스타일링하려면 [TableCellElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement) 클래스의 속성을 사용할 수 있습니다. 다음은 테이블 셀을 스타일링하는 데 사용할 수 있는 속성 목록입니다:
+Aspose.PDF for .NET은 태그가 있는 PDF 문서에서 테이블 셀을 스타일링할 수 있게 합니다. 테이블 셀을 스타일링하려면 [TableCellElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement) 클래스의 속성을 사용할 수 있습니다. 다음은 테이블 셀을 스타일링하는 데 사용할 수 있는 속성 목록입니다:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
-- [IsNoBorder](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
-- [Margin](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
-- [Alignment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
-- [IsWordWrapped](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
-- [VerticalAlignment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
-- [ColSpan](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
-- [RowSpan](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
+- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
+- [IsNoBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
+- [Margin](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
+- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
+- [IsWordWrapped](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
+- [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
+- [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
+- [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
 
 다음 코드 스니펫은 태그가 있는 PDF 문서에서 테이블 셀을 스타일링하는 방법을 보여줍니다:
 

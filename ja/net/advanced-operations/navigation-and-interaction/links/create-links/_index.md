@@ -85,14 +85,14 @@ sitemap:
 
 ドキュメントにアプリケーションへのリンクを追加することで、ドキュメントからアプリケーションにリンクすることが可能です。これは、特定のチュートリアルのポイントで読者に特定のアクションを取らせたい場合や、機能豊かなドキュメントを作成したい場合に便利です。アプリケーションリンクを作成するには：
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを作成します。
-1. リンクを追加したい[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)を取得します。
-1. Pageと[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf/rectangle)オブジェクトを使用して[LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)オブジェクトを作成します。
-1. [LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)オブジェクトを使用してリンク属性を設定します。
-1. また、[LaunchAction](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/launchaction)オブジェクトのActionプロパティを設定します。
-1. [LaunchAction](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/launchaction)オブジェクトを作成する際に、起動したいアプリケーションを指定します。
-1. リンクをPageオブジェクトの[Annotations](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page/properties/annotations)プロパティに追加します。
-1. 最後に、Documentオブジェクトの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFを保存します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成します。
+1. リンクを追加したい[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)を取得します。
+1. Pageと[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle)オブジェクトを使用して[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)オブジェクトを作成します。
+1. [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)オブジェクトを使用してリンク属性を設定します。
+1. また、[LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction)オブジェクトのActionプロパティを設定します。
+1. [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction)オブジェクトを作成する際に、起動したいアプリケーションを指定します。
+1. リンクをPageオブジェクトの[Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations)プロパティに追加します。
+1. 最後に、Documentオブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFを保存します。
 
 次のコードスニペットは、PDFファイル内にアプリケーションへのリンクを作成する方法を示しています。
 
@@ -151,14 +151,14 @@ private static void CreateLinkAnnotation()
 
 Aspose.PDF for .NETを使用すると、外部PDFファイルへのリンクを追加して、複数のドキュメントをリンクさせることができます。PDFドキュメントリンクを作成するには：
 
-1. まず、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを作成します。
-1. 次に、リンクを追加したい特定の[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)を取得します。
-1. Pageと[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf/rectangle)オブジェクトを使用して[LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)オブジェクトを作成します。
-1. [LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)オブジェクトを使用してリンク属性を設定します。
-1. Actionプロパティを[GoToRemoteAction](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/gotoremoteaction)オブジェクトに設定します。
+1. まず、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成します。
+1. 次に、リンクを追加したい特定の[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)を取得します。
+1. Pageと[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle)オブジェクトを使用して[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)オブジェクトを作成します。
+1. [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)オブジェクトを使用してリンク属性を設定します。
+1. Actionプロパティを[GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction)オブジェクトに設定します。
 1. GoToRemoteActionオブジェクトを作成する際に、起動すべきPDFファイルと、開くべきページ番号を指定します。
 1. リンクをPageオブジェクトのAnnotationsコレクションに追加します。
-1. Documentオブジェクトの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFを保存します。
+1. Documentオブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFを保存します。
 
 次のコードスニペットは、PDFファイル内にPDFドキュメントリンクを作成する方法を示しています。
 

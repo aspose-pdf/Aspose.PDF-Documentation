@@ -82,7 +82,7 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 ## Putar Teks di Dalam PDF menggunakan Properti Rotasi
 
-Dengan menggunakan properti Rotasi dari [TextFragment](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textfragment) Kelas, Anda dapat memutar teks pada berbagai sudut. Rotasi teks dapat digunakan dalam berbagai skenario pembuatan dokumen. Anda dapat menentukan sudut rotasi dalam derajat untuk memutar teks sesuai kebutuhan Anda. Silakan periksa berbagai skenario berikut, di mana Anda dapat menerapkan rotasi teks.
+Dengan menggunakan properti Rotasi dari [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) Kelas, Anda dapat memutar teks pada berbagai sudut. Rotasi teks dapat digunakan dalam berbagai skenario pembuatan dokumen. Anda dapat menentukan sudut rotasi dalam derajat untuk memutar teks sesuai kebutuhan Anda. Silakan periksa berbagai skenario berikut, di mana Anda dapat menerapkan rotasi teks.
 
 ## Terapkan Rotasi menggunakan TextFragment dan TextBuilder
 

@@ -80,7 +80,7 @@ sitemap:
 
 Aspose.PDF는 PdfLightTable 클래스를 사용하여 DataSet, Data Table, 배열 및 IEnumerable 객체에서 DataSource로 테이블을 생성할 수 있습니다.
 
-[Table 클래스](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table)는 테이블을 처리하는 데 사용됩니다. 이 클래스는 테이블을 생성하고 문서에 배치할 수 있는 기능을 제공합니다. [Rows](https://reference.aspose.com/pdf/ko/net/aspose.pdf/rows) 및 [Cells](https://reference.aspose.com/pdf/ko/net/aspose.pdf/cell)를 사용하여 테이블을 생성하려면 필요한 수의 행을 추가하고 적절한 수의 셀로 채워야 합니다.
+[Table 클래스](https://reference.aspose.com/pdf/net/aspose.pdf/table)는 테이블을 처리하는 데 사용됩니다. 이 클래스는 테이블을 생성하고 문서에 배치할 수 있는 기능을 제공합니다. [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) 및 [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell)를 사용하여 테이블을 생성하려면 필요한 수의 행을 추가하고 적절한 수의 셀로 채워야 합니다.
 
 다음 예제는 4x10 테이블을 생성합니다.
 
@@ -189,14 +189,14 @@ private static void AddTable()
 
 Table 객체를 초기화할 때 최소한의 피부 설정이 사용되었습니다:
 
-* [ColumnWidths](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table/properties/columnwidths) - 열의 너비(기본값).
-* [DefaultCellPadding](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table/properties/defaultcellpadding) - 테이블 셀의 기본 필드.
-* [Border](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table/properties/border) - 테이블 프레임 속성(스타일, 두께, 색상).
-* [DefaultCellBorder](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table/properties/defaultcellborder) - 셀 프레임의 속성(스타일, 두께, 색상).
+* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - 열의 너비(기본값).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - 테이블 셀의 기본 필드.
+* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - 테이블 프레임 속성(스타일, 두께, 색상).
+* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - 셀 프레임의 속성(스타일, 두께, 색상).
 
 ## 객체 배열에서 데이터 내보내기
 
-Table 클래스는 ADO.NET 데이터 소스와 상호 작용하기 위한 메서드를 제공합니다 - [ImportDataTable](https://reference.aspose.com/pdf/ko/net/aspose.pdf.table/importdatatable/methods/1) 및 [ImportDataView](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table/methods/importdataview). 첫 번째 메서드는 DataTable에서 데이터를 가져오고, 두 번째는 DataView에서 가져옵니다. 이러한 객체가 MVC 템플릿에서 작업하기에 그리 편리하지 않다는 점을 감안하여 간단한 예제로 제한하겠습니다. 이 예제(50행)에서는 ImportDataTable 메서드를 호출하고 DataTable 인스턴스와 헤더 플래그 및 데이터 출력을 위한 초기 위치(행/열)와 같은 추가 설정을 매개변수로 받습니다.
+Table 클래스는 ADO.NET 데이터 소스와 상호 작용하기 위한 메서드를 제공합니다 - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) 및 [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). 첫 번째 메서드는 DataTable에서 데이터를 가져오고, 두 번째는 DataView에서 가져옵니다. 이러한 객체가 MVC 템플릿에서 작업하기에 그리 편리하지 않다는 점을 감안하여 간단한 예제로 제한하겠습니다. 이 예제(50행)에서는 ImportDataTable 메서드를 호출하고 DataTable 인스턴스와 헤더 플래그 및 데이터 출력을 위한 초기 위치(행/열)와 같은 추가 설정을 매개변수로 받습니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

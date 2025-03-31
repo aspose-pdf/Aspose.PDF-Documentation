@@ -79,7 +79,7 @@ draft: false
 
 ## 기존 PDF에서 파일로 첨부파일 추가
 
-[PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스를 사용하여 기존 PDF 파일에 첨부파일을 추가할 수 있습니다. 첨부파일은 디스크의 파일 경로를 사용하여 추가할 수 있습니다. [AddDocumentAttachment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 메서드를 사용하여 첨부파일을 추가할 수 있습니다. 이 메서드는 두 개의 인수를 사용합니다: 파일 경로와 첨부파일 설명. 먼저 기존 PDF 파일을 열고 그 안에 첨부파일을 추가해야 합니다. 그런 다음 [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor)의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save/index) 메서드를 사용하여 출력 PDF 파일을 저장할 수 있습니다.
+[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스를 사용하여 기존 PDF 파일에 첨부파일을 추가할 수 있습니다. 첨부파일은 디스크의 파일 경로를 사용하여 추가할 수 있습니다. [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 메서드를 사용하여 첨부파일을 추가할 수 있습니다. 이 메서드는 두 개의 인수를 사용합니다: 파일 경로와 첨부파일 설명. 먼저 기존 PDF 파일을 열고 그 안에 첨부파일을 추가해야 합니다. 그런 다음 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메서드를 사용하여 출력 PDF 파일을 저장할 수 있습니다.
 
 다음 코드 스니펫은 파일에서 첨부파일을 추가하는 방법을 보여줍니다. 예를 들어, MP3 파일을 추가해 보겠습니다.
 
@@ -125,7 +125,7 @@ private static void AddAttachment()
 
 ## 기존 PDF에서 스트림으로 첨부파일 추가
 
-첨부파일은 [AddDocumentAttachment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 메서드를 사용하여 스트림 - FileStream에서 PDF 파일에 추가할 수 있습니다. 이 메서드는 세 개의 인수를 사용합니다: 스트림, 첨부파일 이름 및 첨부파일 설명. 첨부파일을 추가하려면 [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [AddDocumentAttachment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 메서드를 호출하여 첨부파일을 추가할 수 있습니다. 마지막으로, 업데이트된 PDF 파일을 저장하기 위해 Save 메서드를 호출할 수 있습니다. 다음 코드 스니펫은 스트림에서 첨부파일을 추가하는 방법을 보여줍니다.
+첨부파일은 [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 메서드를 사용하여 스트림 - FileStream에서 PDF 파일에 추가할 수 있습니다. 이 메서드는 세 개의 인수를 사용합니다: 스트림, 첨부파일 이름 및 첨부파일 설명. 첨부파일을 추가하려면 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 메서드를 호출하여 첨부파일을 추가할 수 있습니다. 마지막으로, 업데이트된 PDF 파일을 저장하기 위해 Save 메서드를 호출할 수 있습니다. 다음 코드 스니펫은 스트림에서 첨부파일을 추가하는 방법을 보여줍니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -172,7 +172,7 @@ private static void AddAttachment()
 
 ## 기존 PDF 파일에서 모든 첨부파일 삭제
 
-[PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 [DeleteAttachments](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) 메서드를 사용하면 기존 PDF 파일에서 모든 첨부파일을 삭제할 수 있습니다. [DeleteAttachments](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) 메서드를 호출합니다. 마지막으로, 업데이트된 PDF 파일을 저장하기 위해 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save/index) 메서드를 호출해야 합니다. 다음 코드 스니펫은 기존 PDF 파일에서 모든 첨부파일을 삭제하는 방법을 보여줍니다.
+[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 [DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) 메서드를 사용하면 기존 PDF 파일에서 모든 첨부파일을 삭제할 수 있습니다. [DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) 메서드를 호출합니다. 마지막으로, 업데이트된 PDF 파일을 저장하기 위해 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메서드를 호출해야 합니다. 다음 코드 스니펫은 기존 PDF 파일에서 모든 첨부파일을 삭제하는 방법을 보여줍니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

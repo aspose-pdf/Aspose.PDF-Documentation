@@ -85,9 +85,9 @@ FDF (Forms Data Format)는 PDF 문서에서 양식 데이터와 주석을 저장
 
 {{% /alert %}}
 
-[PDFAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor/) 클래스는 FDF 파일에서 주석을 가져오는 작업을 위한 메서드를 포함하고 있습니다. [PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) 메서드는 FDF 문서에서 PDF 파일로 주석을 가져오는 기능을 제공합니다.
+[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/) 클래스는 FDF 파일에서 주석을 가져오는 작업을 위한 메서드를 포함하고 있습니다. [PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) 메서드는 FDF 문서에서 PDF 파일로 주석을 가져오는 기능을 제공합니다.
 
-또한, [Class Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/)에는 [Form.ImportFdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/importfdf/) 메서드가 포함되어 있으며, 이는 FDF 파일의 필드 내용을 가져와 새로운 PDF에 넣습니다.
+또한, [Class Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/)에는 [Form.ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/importfdf/) 메서드가 포함되어 있으며, 이는 FDF 파일의 필드 내용을 가져와 새로운 PDF에 넣습니다.
 
 다음 코드 스니펫은 Form.ImportFdf() 메서드를 사용하여 FDF 형식 주석을 PDF로 가져오는 방법을 보여줍니다:
 

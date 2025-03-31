@@ -272,15 +272,15 @@ private static void ConvertPDFtoTiffBradleyBinarization()
 
 `ImageDevice` adalah nenek moyang untuk `BmpDevice`, `JpegDevice`, `GifDevice`, `PngDevice` dan `EmfDevice`.
 
-- Kelas [BmpDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/bmpdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Bitmap Image File">BMP</abbr>.
-- Kelas [EmfDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/emfdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Enhanced Meta File">EMF</abbr>.
-- Kelas [JpegDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/jpegdevice) memungkinkan Anda mengonversi halaman PDF ke gambar JPEG.
-- Kelas [PngDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/pngdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Portable Network Graphics">PNG</abbr>.
-- Kelas [GifDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/gifdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Graphics Interchange Format">GIF</abbr>.
+- Kelas [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Bitmap Image File">BMP</abbr>.
+- Kelas [EmfDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/emfdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Enhanced Meta File">EMF</abbr>.
+- Kelas [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) memungkinkan Anda mengonversi halaman PDF ke gambar JPEG.
+- Kelas [PngDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Portable Network Graphics">PNG</abbr>.
+- Kelas [GifDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/gifdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Graphics Interchange Format">GIF</abbr>.
 
 Mari kita lihat bagaimana cara mengonversi halaman PDF menjadi gambar.
 
-Kelas `BmpDevice` menyediakan metode bernama [Process](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/bmpdevice/methods/process) yang memungkinkan Anda mengonversi halaman tertentu dari file PDF ke format gambar BMP. Kelas lainnya memiliki metode yang sama. Jadi, jika kita perlu mengonversi halaman PDF menjadi gambar, kita hanya perlu menginstansiasi kelas yang diperlukan.
+Kelas `BmpDevice` menyediakan metode bernama [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) yang memungkinkan Anda mengonversi halaman tertentu dari file PDF ke format gambar BMP. Kelas lainnya memiliki metode yang sama. Jadi, jika kita perlu mengonversi halaman PDF menjadi gambar, kita hanya perlu menginstansiasi kelas yang diperlukan.
 
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
@@ -375,7 +375,7 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke SVG"](https:
 
 Gambar SVG dan perilakunya didefinisikan dalam file teks XML. Ini berarti bahwa mereka dapat dicari, diindeks, diskrip, dan jika diperlukan, dikompresi. Sebagai file XML, gambar SVG dapat dibuat dan diedit dengan editor teks apa pun, tetapi seringkali lebih nyaman untuk membuatnya dengan program menggambar seperti Inkscape.
 
-Aspose.PDF for .NET mendukung fitur untuk mengonversi gambar SVG ke format PDF dan juga menawarkan kemampuan untuk mengonversi file PDF ke format SVG. Untuk memenuhi kebutuhan ini, kelas [`SvgSaveOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/svgsaveoptions/methods/index) telah diperkenalkan ke dalam namespace Aspose.PDF. Buat objek dari SvgSaveOptions dan berikan sebagai argumen kedua ke metode [`Document.Save(..)`](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index).
+Aspose.PDF for .NET mendukung fitur untuk mengonversi gambar SVG ke format PDF dan juga menawarkan kemampuan untuk mengonversi file PDF ke format SVG. Untuk memenuhi kebutuhan ini, kelas [`SvgSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/svgsaveoptions/methods/index) telah diperkenalkan ke dalam namespace Aspose.PDF. Buat objek dari SvgSaveOptions dan berikan sebagai argumen kedua ke metode [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
 
 Potongan kode berikut menunjukkan langkah-langkah untuk mengonversi file PDF ke format SVG dengan .NET.
 

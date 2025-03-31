@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-ディスク上にあるPDFファイルから複数のページを削除したい場合は、次の3つのパラメーターを受け取る[Delete](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/delete/index)メソッドのオーバーロードを使用できます：入力ファイルパス、削除するページ番号の配列、および出力PDFファイルパス。2番目のパラメーターは、削除する必要があるすべてのページを表す整数配列です。指定されたページは入力ファイルから削除され、結果は出力ファイルとして保存されます。以下のコードスニペットは、ファイルパスを使用してPDFページを削除する方法を示しています。
+ディスク上にあるPDFファイルから複数のページを削除したい場合は、次の3つのパラメーターを受け取る[Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index)メソッドのオーバーロードを使用できます：入力ファイルパス、削除するページ番号の配列、および出力PDFファイルパス。2番目のパラメーターは、削除する必要があるすべてのページを表す整数配列です。指定されたページは入力ファイルから削除され、結果は出力ファイルとして保存されます。以下のコードスニペットは、ファイルパスを使用してPDFページを削除する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void DeletePages()
 
 ## ストリームを使用したPDFページの削除
 
-[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスの[Delete](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/delete/index)メソッドは、入力PDFファイルからページを削除するためのオーバーロードも提供しています。このオーバーロードは、入力ストリーム、削除するPDFページの整数配列、および出力ストリームの3つのパラメーターを受け取ります。以下のコードスニペットは、ストリームを使用してPDFページを削除する方法を示しています。
+[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスの[Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index)メソッドは、入力PDFファイルからページを削除するためのオーバーロードも提供しています。このオーバーロードは、入力ストリーム、削除するPDFページの整数配列、および出力ストリームの3つのパラメーターを受け取ります。以下のコードスニペットは、ストリームを使用してPDFページを削除する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

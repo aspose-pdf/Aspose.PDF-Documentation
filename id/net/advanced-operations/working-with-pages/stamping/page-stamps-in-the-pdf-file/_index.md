@@ -80,7 +80,7 @@ sitemap:
 
 ## Tambahkan Stempel Halaman dengan C\#
 
-Sebuah [PdfPageStamp](https://reference.aspose.com/pdf/id/net/aspose.pdf/PdfPageStamp) dapat digunakan ketika Anda perlu menerapkan stempel komposit yang berisi grafik, teks, tabel. Contoh berikut menunjukkan cara menggunakan stempel untuk membuat alat tulis seperti di Adobe InDesign, Illustrator, Microsoft Word. Anggap kita memiliki beberapa dokumen input dan kita ingin menerapkan 2 jenis batas dengan warna biru dan plum.
+Sebuah [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) dapat digunakan ketika Anda perlu menerapkan stempel komposit yang berisi grafik, teks, tabel. Contoh berikut menunjukkan cara menggunakan stempel untuk membuat alat tulis seperti di Adobe InDesign, Illustrator, Microsoft Word. Anggap kita memiliki beberapa dokumen input dan kita ingin menerapkan 2 jenis batas dengan warna biru dan plum.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 

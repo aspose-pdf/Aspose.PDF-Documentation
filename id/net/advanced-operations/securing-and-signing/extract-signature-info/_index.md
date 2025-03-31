@@ -83,9 +83,9 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Mengekstrak Gambar dari Bidang Tanda Tangan
 
-Aspose.PDF for .NET mendukung fitur untuk menandatangani file PDF secara digital menggunakan kelas [SignatureField](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturefield) dan saat menandatangani dokumen, Anda juga dapat menetapkan gambar untuk `SignatureAppearance`. Sekarang, API ini juga menyediakan kemampuan untuk mengekstrak informasi tanda tangan serta gambar yang terkait dengan bidang tanda tangan.
+Aspose.PDF for .NET mendukung fitur untuk menandatangani file PDF secara digital menggunakan kelas [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) dan saat menandatangani dokumen, Anda juga dapat menetapkan gambar untuk `SignatureAppearance`. Sekarang, API ini juga menyediakan kemampuan untuk mengekstrak informasi tanda tangan serta gambar yang terkait dengan bidang tanda tangan.
 
-Untuk mengekstrak informasi tanda tangan, kami telah memperkenalkan metode [ExtractImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturefield/methods/extractimage) ke kelas SignatureField. Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mengekstrak gambar dari objek `SignatureField`:
+Untuk mengekstrak informasi tanda tangan, kami telah memperkenalkan metode [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) ke kelas SignatureField. Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mengekstrak gambar dari objek `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,7 +132,7 @@ Terkadang Anda mungkin memiliki kebutuhan untuk hanya mengganti gambar dari bida
 
 Aspose.PDF for .NET mendukung fitur untuk menandatangani file PDF secara digital menggunakan kelas SignatureField. Saat ini, kita juga dapat menentukan keabsahan sertifikat tetapi kita tidak dapat mengekstrak seluruh sertifikat. Informasi yang dapat diekstrak adalah kunci publik, sidik jari, penerbit, dll.
 
-Untuk mengekstrak informasi tanda tangan, kami telah memperkenalkan metode [ExtractCertificate](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) ke kelas [SignatureField](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturefield). Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mengekstrak sertifikat dari objek SignatureField:
+Untuk mengekstrak informasi tanda tangan, kami telah memperkenalkan metode [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) ke kelas [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield). Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mengekstrak sertifikat dari objek SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

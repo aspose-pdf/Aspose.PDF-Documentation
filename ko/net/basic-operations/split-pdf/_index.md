@@ -86,9 +86,9 @@ sitemap:
 
 이 주제에서는 .NET 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다. C#을 사용하여 PDF 페이지를 단일 페이지 PDF 파일로 분할하려면 다음 단계를 따를 수 있습니다:
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션을 통해 PDF 문서의 페이지를 반복합니다.
-1. 각 반복마다 새로운 Document 객체를 생성하고 개별 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체를 빈 문서에 추가합니다.
-1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 새로운 PDF를 저장합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션을 통해 PDF 문서의 페이지를 반복합니다.
+1. 각 반복마다 새로운 Document 객체를 생성하고 개별 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체를 빈 문서에 추가합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 새로운 PDF를 저장합니다.
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 

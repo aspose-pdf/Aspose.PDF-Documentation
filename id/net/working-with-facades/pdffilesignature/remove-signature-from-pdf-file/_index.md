@@ -79,7 +79,7 @@ draft: false
 
 Ketika sebuah tanda tangan telah ditambahkan ke file PDF, adalah mungkin untuk menghapusnya. Anda dapat menghapus tanda tangan tertentu, atau semua tanda tangan dalam sebuah file. Metode tercepat untuk menghapus tanda tangan juga menghapus kolom tanda tangan, tetapi dimungkinkan untuk hanya menghapus tanda tangan, menjaga kolom tanda tangan sehingga file dapat ditandatangani lagi.
 
-Metode RemoveSignature dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature) memungkinkan Anda untuk menghapus tanda tangan dari file PDF. Metode ini mengambil nama tanda tangan sebagai input. Anda dapat menentukan nama tanda tangan secara langsung, untuk menghapus semua tanda tangan, dapatkan nama tanda tangan menggunakan metode [GetSignNames](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
+Metode RemoveSignature dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) memungkinkan Anda untuk menghapus tanda tangan dari file PDF. Metode ini mengambil nama tanda tangan sebagai input. Anda dapat menentukan nama tanda tangan secara langsung, untuk menghapus semua tanda tangan, dapatkan nama tanda tangan menggunakan metode [GetSignNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
 
 Potongan kode berikut menunjukkan cara menghapus tanda tangan digital dari file PDF.
 
@@ -111,7 +111,7 @@ private static void RemoveSignature()
 
 ### Hapus Tanda Tangan tetapi Pertahankan Kolom Tanda Tangan
 
-Seperti yang ditunjukkan di atas, metode [RemoveSignature](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature) memungkinkan Anda untuk menghapus kolom tanda tangan dari file PDF. Ketika menggunakan metode ini dengan versi sebelum 9.3.0, baik tanda tangan maupun kolom tanda tangan dihapus. Beberapa pengembang ingin hanya menghapus tanda tangan dan mempertahankan kolom tanda tangan sehingga dapat digunakan untuk menandatangani ulang dokumen. Untuk mempertahankan kolom tanda tangan dan hanya menghapus tanda tangan, silakan gunakan potongan kode berikut.
+Seperti yang ditunjukkan di atas, metode [RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) memungkinkan Anda untuk menghapus kolom tanda tangan dari file PDF. Ketika menggunakan metode ini dengan versi sebelum 9.3.0, baik tanda tangan maupun kolom tanda tangan dihapus. Beberapa pengembang ingin hanya menghapus tanda tangan dan mempertahankan kolom tanda tangan sehingga dapat digunakan untuk menandatangani ulang dokumen. Untuk mempertahankan kolom tanda tangan dan hanya menghapus tanda tangan, silakan gunakan potongan kode berikut.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

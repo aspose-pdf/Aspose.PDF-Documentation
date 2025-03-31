@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[CopyInnerField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) 메서드는 동일한 파일에서 동일한 좌표에 있는 필드를 복사할 수 있도록 합니다. 이 메서드는 복사할 필드 이름, 새 필드 이름 및 필드를 복사해야 하는 페이지 번호가 필요합니다. [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 클래스에서 이 메서드를 제공합니다. 다음 코드 스니펫은 동일한 파일에서 동일한 위치에 필드를 복사하는 방법을 보여줍니다.
+[CopyInnerField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) 메서드는 동일한 파일에서 동일한 좌표에 있는 필드를 복사할 수 있도록 합니다. 이 메서드는 복사할 필드 이름, 새 필드 이름 및 필드를 복사해야 하는 페이지 번호가 필요합니다. [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 클래스에서 이 메서드를 제공합니다. 다음 코드 스니펫은 동일한 파일에서 동일한 위치에 필드를 복사하는 방법을 보여줍니다.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -108,7 +108,7 @@ private static void CopyInnerField()
 
 ## 기존 PDF 파일에서 외부 필드 복사
 
-[CopyOuterField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) 메서드는 외부 PDF 파일에서 양식 필드를 복사한 다음 입력 PDF 파일의 동일한 위치와 지정된 페이지 번호에 추가할 수 있도록 합니다. 이 메서드는 필드를 복사해야 하는 PDF 파일, 필드 이름 및 필드를 복사해야 하는 페이지 번호가 필요합니다. 이 메서드는 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 외부 PDF 파일에서 필드를 복사하는 방법을 보여줍니다.
+[CopyOuterField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) 메서드는 외부 PDF 파일에서 양식 필드를 복사한 다음 입력 PDF 파일의 동일한 위치와 지정된 페이지 번호에 추가할 수 있도록 합니다. 이 메서드는 필드를 복사해야 하는 PDF 파일, 필드 이름 및 필드를 복사해야 하는 페이지 번호가 필요합니다. 이 메서드는 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 외부 PDF 파일에서 필드를 복사하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

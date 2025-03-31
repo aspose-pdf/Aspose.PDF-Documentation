@@ -83,13 +83,13 @@ sitemap:
 
 ## PDFドキュメントにブックマークを追加する
 
-ブックマークは、Documentオブジェクトの[OutlineItemCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlineitemcollection)コレクションに保持されており、さらに[OutlineCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection)コレクションに含まれています。
+ブックマークは、Documentオブジェクトの[OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)コレクションに保持されており、さらに[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションに含まれています。
 
 PDFにブックマークを追加するには：
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを使用してPDFドキュメントを開きます。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを使用してPDFドキュメントを開きます。
 1. ブックマークを作成し、そのプロパティを定義します。
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlineitemcollection)コレクションをOutlinesコレクションに追加します。
+1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)コレクションをOutlinesコレクションに追加します。
 
 次のコードスニペットは、PDFドキュメントにブックマークを追加する方法を示しています。
 
@@ -161,8 +161,8 @@ private static void AddBookmark()
 PDFファイルに子ブックマークを追加するには、まず親ブックマークを追加します：
 
 1. ドキュメントを開きます。
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlineitemcollection)にブックマークを追加し、そのプロパティを定義します。
-1. OutlineItemCollectionをDocumentオブジェクトの[OutlineCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection)コレクションに追加します。
+1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)にブックマークを追加し、そのプロパティを定義します。
+1. OutlineItemCollectionをDocumentオブジェクトの[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションに追加します。
 
 子ブックマークは、上記で説明した親ブックマークと同様に作成されますが、親ブックマークのOutlinesコレクションに追加されます。
 
@@ -243,12 +243,12 @@ private static void AddChildBookmark()
 
 ## PDFドキュメントからすべてのブックマークを削除する
 
-PDF内のすべてのブックマークは、[OutlineCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection)コレクションに保持されています。この記事では、PDFファイルからすべてのブックマークを削除する方法を説明します。
+PDF内のすべてのブックマークは、[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションに保持されています。この記事では、PDFファイルからすべてのブックマークを削除する方法を説明します。
 
 PDFファイルからすべてのブックマークを削除するには：
 
-1. [OutlineCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection)コレクションのDeleteメソッドを呼び出します。
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して、変更されたファイルを保存します。
+1. [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションのDeleteメソッドを呼び出します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して、変更されたファイルを保存します。
 
 次のコードスニペットは、PDFドキュメントからすべてのブックマークを削除する方法を示しています。
 
@@ -299,10 +299,10 @@ private static void DeleteBookmarks()
 
 PDFファイルから特定のブックマークを削除するには：
 
-1. ブックマークのタイトルを[OutlineCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection)コレクションのDeleteメソッドにパラメータとして渡します。
+1. ブックマークのタイトルを[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションのDeleteメソッドにパラメータとして渡します。
 1. 次に、DocumentオブジェクトのSaveメソッドで更新されたファイルを保存します。
 
-[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスは、[OutlineCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection)コレクションを提供します。[Delete](https://reference.aspose.com/pdf/ja/net/aspose.pdf/outlinecollection/methods/delete)メソッドは、メソッドに渡されたタイトルを持つブックマークを削除します。
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスは、[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションを提供します。[Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete)メソッドは、メソッドに渡されたタイトルを持つブックマークを削除します。
 
 次のコードスニペットは、PDFドキュメントから特定のブックマークを削除する方法を示しています。
 

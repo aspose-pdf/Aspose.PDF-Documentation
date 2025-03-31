@@ -83,7 +83,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 ## Mengonversi dokumen PDF/A ke PDF
 
 Mengonversi dokumen PDF/A ke PDF berarti menghapus <abbr title="Portable Document Format Archive">PDF/A</abbr> batasan dari dokumen asli. 
-Kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) memiliki metode [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/removepdfacompliance) untuk menghapus informasi kepatuhan PDF dari file input/sumber.
+Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) memiliki metode [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) untuk menghapus informasi kepatuhan PDF dari file input/sumber.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

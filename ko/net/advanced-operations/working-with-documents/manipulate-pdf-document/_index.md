@@ -83,7 +83,7 @@ sitemap:
 
 ## PDF A 표준에 대한 PDF 문서 검증 (A 1A 및 A 1B)
 
-PDF/A-1a 또는 PDF/A-1b 호환성을 위해 PDF 문서를 검증하려면 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 Validate 메서드를 사용하세요. 이 메서드는 결과를 저장할 파일의 이름과 필요한 검증 유형 [PdfFormat](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pdfformat) 열거형: PDF_A_1A 또는 PDF_A_1B를 지정할 수 있습니다.
+PDF/A-1a 또는 PDF/A-1b 호환성을 위해 PDF 문서를 검증하려면 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 Validate 메서드를 사용하세요. 이 메서드는 결과를 저장할 파일의 이름과 필요한 검증 유형 [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat) 열거형: PDF_A_1A 또는 PDF_A_1B를 지정할 수 있습니다.
 
 {{% alert color="primary" %}}
 
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### TOC에서 페이지 번호 숨기기
 
-TOC에서 제목과 함께 페이지 번호를 표시하고 싶지 않은 경우 [TOCInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf/tocinfo) 클래스의 [IsShowPageNumbers](https://reference.aspose.com/pdf/ko/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) 속성을 false로 설정할 수 있습니다. TOC에서 페이지 번호를 숨기기 위한 다음 코드 조각을 확인하세요:
+TOC에서 제목과 함께 페이지 번호를 표시하고 싶지 않은 경우 [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) 클래스의 [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) 속성을 false로 설정할 수 있습니다. TOC에서 페이지 번호를 숨기기 위한 다음 코드 조각을 확인하세요:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -453,7 +453,7 @@ private static void SetExpiryDate()
 
 고객이 PDF 파일 생성 진행 상황을 확인할 수 있는 기능을 추가해 달라고 요청했습니다. 이에 대한 응답은 다음과 같습니다.
 
-[DocSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions) 클래스의 [CustomerProgressHandler](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) 필드는 PDF 생성 진행 상황을 확인할 수 있게 해줍니다. 핸들러는 다음과 같은 유형을 가집니다:
+[DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) 클래스의 [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) 필드는 PDF 생성 진행 상황을 확인할 수 있게 해줍니다. 핸들러는 다음과 같은 유형을 가집니다:
 
 - DocSaveOptions.ConversionProgessEventHandler.
 - DocSaveOptions.ProgressEventHandlerInfo.

@@ -86,13 +86,13 @@ sitemap:
 
 페이지를 이동하려면 다음을 수행해야 합니다:
 
-1. 소스 PDF 파일로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 생성합니다.
-1. 대상 PDF 파일로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 생성합니다.
-1. [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션에서 페이지를 가져옵니다.
-1. [Add](https://reference.aspose.com/pdf/ko/net/aspose.pdf.pagecollection/add/methods/1) 메서드를 사용하여 페이지를 대상 문서에 추가합니다.
-1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
-1. 소스 문서에서 [Delete](https://reference.aspose.com/pdf/ko/net/aspose.pdf.pagecollection/delete/methods/1) 메서드를 사용하여 페이지를 삭제합니다.
-1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 소스 PDF를 저장합니다.
+1. 소스 PDF 파일로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 생성합니다.
+1. 대상 PDF 파일로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 생성합니다.
+1. [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션에서 페이지를 가져옵니다.
+1. [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) 메서드를 사용하여 페이지를 대상 문서에 추가합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
+1. 소스 문서에서 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) 메서드를 사용하여 페이지를 삭제합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 소스 PDF를 저장합니다.
 
 다음 코드 스니펫은 한 페이지를 이동하는 방법을 보여줍니다.
 
@@ -122,15 +122,15 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
 
 ## 여러 페이지를 한 PDF 문서에서 다른 PDF 문서로 이동
 
-1. 소스 PDF 파일로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 생성합니다.
-1. 대상 PDF 파일로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 생성합니다.
+1. 소스 PDF 파일로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 생성합니다.
+1. 대상 PDF 파일로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 생성합니다.
 1. 이동할 페이지 번호로 배열을 정의합니다.
 1. 배열을 통해 루프를 실행합니다:
-    1. [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션에서 페이지를 가져옵니다.
-    1. [Add](https://reference.aspose.com/pdf/ko/net/aspose.pdf.pagecollection/add/methods/1) 메서드를 사용하여 페이지를 대상 문서에 추가합니다.
-1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
-1. 배열을 사용하여 소스 문서에서 [Delete](https://reference.aspose.com/pdf/ko/net/aspose.pdf.pagecollection/delete/methods/2) 메서드를 사용하여 페이지를 삭제합니다.
-1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 소스 PDF를 저장합니다.
+    1. [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션에서 페이지를 가져옵니다.
+    1. [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) 메서드를 사용하여 페이지를 대상 문서에 추가합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
+1. 배열을 사용하여 소스 문서에서 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) 메서드를 사용하여 페이지를 삭제합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 소스 PDF를 저장합니다.
 
 다음 코드 스니펫은 여러 페이지를 한 PDF 문서에서 다른 PDF 문서로 이동하는 방법을 보여줍니다.
 
@@ -164,11 +164,11 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 
 ## 현재 PDF 문서에서 새로운 위치로 페이지 이동
 
-1. 소스 PDF 파일로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 생성합니다.
-1. [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션에서 페이지를 가져옵니다.
-1. 새로운 위치(예: 끝)에 [Add](https://reference.aspose.com/pdf/ko/net/aspose.pdf.pagecollection/add/methods/1) 메서드를 사용하여 페이지를 추가합니다.
-1. 이전 위치에서 [Delete](https://reference.aspose.com/pdf/ko/net/aspose.pdf.pagecollection/delete/methods/1) 메서드를 사용하여 페이지를 삭제합니다.
-1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
+1. 소스 PDF 파일로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 생성합니다.
+1. [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션에서 페이지를 가져옵니다.
+1. 새로운 위치(예: 끝)에 [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) 메서드를 사용하여 페이지를 추가합니다.
+1. 이전 위치에서 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) 메서드를 사용하여 페이지를 삭제합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

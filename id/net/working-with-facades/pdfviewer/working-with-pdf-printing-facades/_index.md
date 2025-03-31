@@ -78,7 +78,7 @@ draft: false
 ## Mencetak File PDF ke Printer Default menggunakan Pengaturan Printer dan Halaman
 
 Pertama, dokumen dikonversi menjadi gambar, dan kemudian, dicetak pada printer.
-Buat instance dari kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer), yang memungkinkan pencetakan file PDF ke printer default, gunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/bindpdf/) untuk membuka dokumen ke dalamnya, dan ubah pengaturan yang diperlukan. Contoh ini menggunakan format A4, orientasi potret. Di [PrinterSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf.printing/printersettings/), pertama-tama, nama printer, ke mana pencetakan dilakukan, harus diatur. Jika tidak, itu akan mencetak ke printer default. Selanjutnya, tuliskan jumlah salinan yang diperlukan.
+Buat instance dari kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer), yang memungkinkan pencetakan file PDF ke printer default, gunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/bindpdf/) untuk membuka dokumen ke dalamnya, dan ubah pengaturan yang diperlukan. Contoh ini menggunakan format A4, orientasi potret. Di [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/), pertama-tama, nama printer, ke mana pencetakan dilakukan, harus diatur. Jika tidak, itu akan mencetak ke printer default. Selanjutnya, tuliskan jumlah salinan yang diperlukan.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -345,7 +345,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Menyembunyikan Dialog Cetak
 
-Aspose.PDF for .NET mendukung menyembunyikan dialog cetak. Untuk ini, gunakan properti [PrintPageDialog](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
+Aspose.PDF for .NET mendukung menyembunyikan dialog cetak. Untuk ini, gunakan properti [PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
 
 Cuplikan kode berikut menunjukkan cara menyembunyikan dialog cetak.
 
@@ -436,7 +436,7 @@ private static void PrintingPDFHidePrintDialog()
 
 ## Mencetak PDF Berwarna ke File XPS sebagai Skala Abu-abu
 
-Dokumen PDF berwarna dapat dicetak ke printer XPS sebagai skala abu-abu, menggunakan [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer). Untuk mencapai itu, atur properti [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) ke *true*. Cuplikan kode berikut menunjukkan penggunaan properti `PdfViewer.PrintAsGrayscale`.
+Dokumen PDF berwarna dapat dicetak ke printer XPS sebagai skala abu-abu, menggunakan [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Untuk mencapai itu, atur properti [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) ke *true*. Cuplikan kode berikut menunjukkan penggunaan properti `PdfViewer.PrintAsGrayscale`.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -529,7 +529,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## Konversi PDF ke PostScript
 
-Kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer) menyediakan kemampuan untuk mencetak dokumen PDF dan dengan bantuan kelas ini, seseorang juga dapat mengonversi file PDF ke format PostScript. Untuk mengonversi file PDF menjadi PostScript, pertama instal printer PS apa pun dan cukup cetak ke file dengan bantuan `PdfViewer`.
+Kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) menyediakan kemampuan untuk mencetak dokumen PDF dan dengan bantuan kelas ini, seseorang juga dapat mengonversi file PDF ke format PostScript. Untuk mengonversi file PDF menjadi PostScript, pertama instal printer PS apa pun dan cukup cetak ke file dengan bantuan `PdfViewer`.
 
 Cuplikan kode berikut menunjukkan cara mencetak dan mengonversi PDF ke format PostScript.
 
@@ -632,7 +632,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Memeriksa Status Pekerjaan Cetak
 
-File PDF dapat dicetak ke printer fisik serta ke Microsoft XPS Document Writer, tanpa menunjukkan dialog cetak, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer). Ketika mencetak file PDF besar, proses mungkin memakan waktu lama sehingga pengguna mungkin tidak yakin apakah proses pencetakan selesai atau mengalami masalah. Untuk menentukan status pekerjaan pencetakan, gunakan properti [PrintStatus](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/printstatus/). Cuplikan kode berikut menunjukkan cara mencetak file PDF ke file XPS dan mendapatkan status pencetakan.
+File PDF dapat dicetak ke printer fisik serta ke Microsoft XPS Document Writer, tanpa menunjukkan dialog cetak, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Ketika mencetak file PDF besar, proses mungkin memakan waktu lama sehingga pengguna mungkin tidak yakin apakah proses pencetakan selesai atau mengalami masalah. Untuk menentukan status pekerjaan pencetakan, gunakan properti [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). Cuplikan kode berikut menunjukkan cara mencetak file PDF ke file XPS dan mendapatkan status pencetakan.
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

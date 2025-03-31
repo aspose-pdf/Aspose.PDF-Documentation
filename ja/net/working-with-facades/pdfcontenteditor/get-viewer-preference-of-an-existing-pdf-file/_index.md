@@ -77,9 +77,9 @@ draft: false
 
 ## 既存のPDFファイルのビューワー設定を取得する
 
-[ViewerPreference](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/viewerpreference)クラスは、PDFファイルの表示モードを表します。たとえば、ドキュメントウィンドウを画面の中央に配置したり、ビューワーアプリケーションのメニューバーを隠したりします。
+[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference)クラスは、PDFファイルの表示モードを表します。たとえば、ドキュメントウィンドウを画面の中央に配置したり、ビューワーアプリケーションのメニューバーを隠したりします。
 
-設定を読み取るために、[GetViewerPreference](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference)クラスを使用します。このメソッドは、すべての設定が保存される変数を返します。
+設定を読み取るために、[GetViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference)クラスを使用します。このメソッドは、すべての設定が保存される変数を返します。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

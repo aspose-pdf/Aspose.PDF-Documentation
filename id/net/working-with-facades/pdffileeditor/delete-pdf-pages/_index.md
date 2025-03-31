@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Jika Anda ingin menghapus sejumlah halaman dari file PDF yang berada di disk, maka Anda dapat menggunakan overload dari metode [Delete](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) yang mengambil tiga parameter berikut: jalur file input, array nomor halaman yang akan dihapus, dan jalur file PDF output. Parameter kedua adalah array integer yang mewakili semua halaman yang perlu dihapus. Halaman yang ditentukan dihapus dari file input dan hasilnya disimpan sebagai file output. Cuplikan kode berikut menunjukkan cara menghapus halaman PDF menggunakan jalur file.
+Jika Anda ingin menghapus sejumlah halaman dari file PDF yang berada di disk, maka Anda dapat menggunakan overload dari metode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) yang mengambil tiga parameter berikut: jalur file input, array nomor halaman yang akan dihapus, dan jalur file PDF output. Parameter kedua adalah array integer yang mewakili semua halaman yang perlu dihapus. Halaman yang ditentukan dihapus dari file input dan hasilnya disimpan sebagai file output. Cuplikan kode berikut menunjukkan cara menghapus halaman PDF menggunakan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void DeletePages()
 
 ## Hapus Halaman PDF Menggunakan Aliran
 
-Metode [Delete](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) juga menyediakan overload yang memungkinkan Anda untuk menghapus halaman dari file PDF input, sementara kedua file input dan output berada dalam aliran. Overload ini mengambil tiga parameter berikut: aliran input, array integer dari halaman PDF yang akan dihapus, dan aliran output. Cuplikan kode berikut menunjukkan cara menghapus halaman PDF menggunakan aliran.
+Metode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) juga menyediakan overload yang memungkinkan Anda untuk menghapus halaman dari file PDF input, sementara kedua file input dan output berada dalam aliran. Overload ini mengambil tiga parameter berikut: aliran input, array integer dari halaman PDF yang akan dihapus, dan aliran output. Cuplikan kode berikut menunjukkan cara menghapus halaman PDF menggunakan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

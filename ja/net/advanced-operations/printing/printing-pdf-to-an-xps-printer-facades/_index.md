@@ -83,9 +83,9 @@ sitemap:
 
 ## **C#でPDFをXPSプリンターに印刷する**
 
-[PdfViewer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer)クラスを使用して、PDFファイルをXPSプリンターまたは他のソフトプリンターに印刷できます。そのためには、PdfViewerクラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2)メソッドを使用してPDFファイルを開きます。さまざまな印刷設定は、[PrinterSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf.printing/printersettings/)および[PageSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf.printing/pagesettings/)クラスを使用して設定できます。また、[PrinterName](https://reference.aspose.com/pdf/ja/net/aspose.pdf.printing/printersettings/printername/)プロパティを、インストールされているXPSまたは他のソフトプリンターに設定する必要があります。
+[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer)クラスを使用して、PDFファイルをXPSプリンターまたは他のソフトプリンターに印刷できます。そのためには、PdfViewerクラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2)メソッドを使用してPDFファイルを開きます。さまざまな印刷設定は、[PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/)および[PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/)クラスを使用して設定できます。また、[PrinterName](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/printername/)プロパティを、インストールされているXPSまたは他のソフトプリンターに設定する必要があります。
 
-最後に、[PrintDocumentWithSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings)メソッドを使用して、PDFをXPSまたは他のソフトプリンターに印刷します。次のコードスニペットは、PDFファイルをXPSプリンターに印刷する方法を示しています。
+最後に、[PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings)メソッドを使用して、PDFをXPSまたは他のソフトプリンターに印刷します。次のコードスニペットは、PDFファイルをXPSプリンターに印刷する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -180,7 +180,7 @@ private static void PrintToXpsPrinter()
  
 24.4リリース以降、印刷ダイアログでPDFページサイズによる用紙ソースの選択が可能になりました。次のコードスニペットは、PDFのページサイズに基づいてプリンタートレイを選択することを可能にします。
 
-この設定は、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/)ファサードを使用してオンオフできます。
+この設定は、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/)ファサードを使用してオンオフできます。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

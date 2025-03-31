@@ -89,16 +89,16 @@ Aspose.PDF for .NET은 PDF 문서에 그래프 객체(예: 그래프, 선, 사�
 
 아래 단계를 따르세요:
 
-1. 새 PDF [문서](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 생성.
-1. PDF 파일의 페이지 컬렉션에 [페이지](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 추가.
-1. 페이지 인스턴스의 단락 컬렉션에 [텍스트 조각](https://reference.aspose.com/pdf/ko/net/aspose.pdf/texfragment) 추가.
-1. [그래프](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/graph) 인스턴스 생성.
-1. [그리기 객체](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing)에 테두리 설정.
+1. 새 PDF [문서](https://reference.aspose.com/pdf/net/aspose.pdf/document) 생성.
+1. PDF 파일의 페이지 컬렉션에 [페이지](https://reference.aspose.com/pdf/net/aspose.pdf/page) 추가.
+1. 페이지 인스턴스의 단락 컬렉션에 [텍스트 조각](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) 추가.
+1. [그래프](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) 인스턴스 생성.
+1. [그리기 객체](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)에 테두리 설정.
 1. 사각형 인스턴스 생성.
 
-1. [사각형](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/rectangle) 객체를 그래프 객체의 도형 컬렉션에 추가.
+1. [사각형](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) 객체를 그래프 객체의 도형 컬렉션에 추가.
 1. 페이지 인스턴스의 단락 컬렉션에 그래프 객체 추가.
-1. 페이지 인스턴스의 단락 컬렉션에 [텍스트 조각](https://reference.aspose.com/pdf/ko/net/aspose.pdf/texfragment) 추가.
+1. 페이지 인스턴스의 단락 컬렉션에 [텍스트 조각](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) 추가.
 
 1. 그리고 PDF 파일을 저장하세요.
 
@@ -146,7 +146,7 @@ private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float w
 
 Aspose.PDF for .NET은 특정 색상으로 사각형 객체를 채우는 기능도 제공합니다.
 
-다음 코드 스니펫은 색상으로 채워진 [사각형](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/rectangle) 객체를 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 색상으로 채워진 [사각형](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) 객체를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -194,7 +194,7 @@ private static void RectangleFilled()
 
 Aspose.PDF for .NET은 PDF 문서에 그래프 객체를 추가하는 기능을 지원하며, 때때로 그래프 객체를 그라디언트 색상으로 채워야 할 필요가 있습니다. 그래프 객체를 그라디언트 색상으로 채우기 위해서는 gradientAxialShading 객체와 함께 setPatterColorSpace를 설정해야 합니다.
 
-다음 코드 스니펫은 그라디언트 색상으로 채워진 [사각형](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/rectangle) 객체를 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 그라디언트 색상으로 채워진 [사각형](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) 객체를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -243,7 +243,7 @@ private static void CreateFilledRectangleGradientFill()
 
 ## 알파 색상 채널로 사각형 만들기
 
-Aspose.PDF for .NET은 특정 색상으로 사각형 객체를 채우는 기능을 지원합니다. 사각형 객체는 투명한 외관을 제공하기 위해 알파 색상 채널을 가질 수도 있습니다. 다음 코드 스니펫은 알파 색상 채널이 있는 [사각형](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/rectangle) 객체를 추가하는 방법을 보여줍니다.
+Aspose.PDF for .NET은 특정 색상으로 사각형 객체를 채우는 기능을 지원합니다. 사각형 객체는 투명한 외관을 제공하기 위해 알파 색상 채널을 가질 수도 있습니다. 다음 코드 스니펫은 알파 색상 채널이 있는 [사각형](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) 객체를 추가하는 방법을 보여줍니다.
 
 이미지의 픽셀은 색상 값과 함께 불투명도에 대한 정보를 저장할 수 있습니다. 이를 통해 투명하거나 반투명한 영역이 있는 이미지를 만들 수 있습니다.
 
@@ -304,7 +304,7 @@ private static void RectangleFilled_AlphaChannel()
 
 Aspose.PDF for .NET은 PDF 문서에 그래프 객체(예: 그래프, 선, 사각형 등)를 추가하는 기능을 지원합니다. PDF 파일 내에서 동일한 객체의 여러 인스턴스를 추가할 때, Z-순서를 지정하여 렌더링을 제어할 수 있습니다. Z-순서는 객체를 서로 위에 렌더링해야 할 때도 사용됩니다.
 
-다음 코드 스니펫은 서로 위에 렌더링하는 [사각형](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/rectangle) 객체의 단계를 보여줍니다.
+다음 코드 스니펫은 서로 위에 렌더링하는 [사각형](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) 객체의 단계를 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

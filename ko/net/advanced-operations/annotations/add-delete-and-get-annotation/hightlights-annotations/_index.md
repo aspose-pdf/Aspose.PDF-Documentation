@@ -95,12 +95,12 @@ PDF 문서의 텍스트 마크업 주석 속성은 PDF 뷰어 컨트롤에서 �
 
 PDF 문서에 텍스트 마크업 주석을 추가하려면 다음 작업을 수행해야 합니다:
 
-1. PDF 파일 로드 - 새로운 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체.
+1. PDF 파일 로드 - 새로운 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체.
 1. 주석 생성:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/highlightannotation) 및 매개변수 설정 (제목, 색상).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/strikeoutannotation) 및 매개변수 설정 (제목, 색상).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/squigglyannotation) 및 매개변수 설정 (제목, 색상).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/underlineannotation) 및 매개변수 설정 (제목, 색상).
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) 및 매개변수 설정 (제목, 색상).
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) 및 매개변수 설정 (제목, 색상).
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) 및 매개변수 설정 (제목, 색상).
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) 및 매개변수 설정 (제목, 색상).
 1. 모든 주석을 페이지에 추가해야 합니다.
 
 ```csharp

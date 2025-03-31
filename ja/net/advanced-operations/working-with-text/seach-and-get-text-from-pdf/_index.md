@@ -82,7 +82,7 @@ sitemap:
 
 ## PDFドキュメントのすべてのページからテキストを検索して取得
 
-[TextFragmentAbsorber](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragmentabsorber)クラスを使用すると、PDFドキュメントのすべてのページから特定のフレーズに一致するテキストを見つけることができます。ドキュメント全体からテキストを検索するには、PagesコレクションのAcceptメソッドを呼び出す必要があります。[Accept](https://reference.aspose.com/pdf/ja/net/aspose.pdf.page/accept/methods/3)メソッドはTextFragmentAbsorberオブジェクトをパラメーターとして受け取り、TextFragmentオブジェクトのコレクションを返します。すべてのフラグメントをループして、Text、Position (XIndent, YIndent)、FontName、FontSize、IsAccessible、IsEmbedded、IsSubset、ForegroundColorなどのプロパティを取得できます。
+[TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber)クラスを使用すると、PDFドキュメントのすべてのページから特定のフレーズに一致するテキストを見つけることができます。ドキュメント全体からテキストを検索するには、PagesコレクションのAcceptメソッドを呼び出す必要があります。[Accept](https://reference.aspose.com/pdf/net/aspose.pdf.page/accept/methods/3)メソッドはTextFragmentAbsorberオブジェクトをパラメーターとして受け取り、TextFragmentオブジェクトのコレクションを返します。すべてのフラグメントをループして、Text、Position (XIndent, YIndent)、FontName、FontSize、IsAccessible、IsEmbedded、IsSubset、ForegroundColorなどのプロパティを取得できます。
 
 次のコードスニペットは、すべてのページからテキストを検索する方法を示しています。
 

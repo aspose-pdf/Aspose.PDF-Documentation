@@ -85,7 +85,7 @@ sitemap:
 
 ## 태그가 있는 PDF 콘텐츠 가져오기
 
-태그가 있는 텍스트가 포함된 PDF 문서의 콘텐츠를 가져오기 위해 Aspose.PDF는 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 [TaggedContent](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/taggedcontent) 속성을 제공합니다.
+태그가 있는 텍스트가 포함된 PDF 문서의 콘텐츠를 가져오기 위해 Aspose.PDF는 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 [TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) 속성을 제공합니다.
 
 다음 코드 스니펫은 태그가 있는 텍스트가 포함된 PDF 문서의 콘텐츠를 가져오는 방법을 보여줍니다:
 
@@ -144,7 +144,7 @@ private static void GetTaggedContent()
 
 ## 루트 구조 가져오기
 
-태그가 있는 PDF 문서의 루트 구조를 가져오기 위해 Aspose.PDF는 [ITaggedContent](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent) 인터페이스의 [StructTreeRootElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) 속성과 [StructureElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structureelement)를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 루트 구조를 가져오는 방법을 보여줍니다:
+태그가 있는 PDF 문서의 루트 구조를 가져오기 위해 Aspose.PDF는 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 인터페이스의 [StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) 속성과 [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement)를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 루트 구조를 가져오는 방법을 보여줍니다:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void GetRootStructure()
 
 ## 자식 요소 접근하기
 
-태그가 있는 PDF 문서의 자식 요소에 접근하기 위해 Aspose.PDF는 [ElementList](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/elementlist) 클래스를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 자식 요소에 접근하는 방법을 보여줍니다:
+태그가 있는 PDF 문서의 자식 요소에 접근하기 위해 Aspose.PDF는 [ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist) 클래스를 제공합니다. 다음 코드 스니펫은 태그가 있는 PDF 문서의 자식 요소에 접근하는 방법을 보여줍니다:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -316,7 +316,7 @@ private static void AccessChildElements()
 
 ## 기존 PDF에서 이미지 태깅하기
 
-기존 PDF 문서에서 이미지를 태깅하기 위해 Aspose.PDF는 [StructureElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structureelement) 클래스의 [FindElements](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) 메서드를 제공합니다. [FigureElement](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/figureelement) 클래스의 [AlternativeText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) 속성을 사용하여 그림에 대한 대체 텍스트를 추가할 수 있습니다.
+기존 PDF 문서에서 이미지를 태깅하기 위해 Aspose.PDF는 [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) 클래스의 [FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) 메서드를 제공합니다. [FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement) 클래스의 [AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) 속성을 사용하여 그림에 대한 대체 텍스트를 추가할 수 있습니다.
 
 다음 코드 스니펫은 기존 PDF 문서에서 이미지를 태깅하는 방법을 보여줍니다:
 

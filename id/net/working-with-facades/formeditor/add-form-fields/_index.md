@@ -77,7 +77,7 @@ draft: false
 
 ## Tambahkan Bidang Formulir di File PDF yang Ada
 
-Untuk menambahkan bidang formulir di file PDF yang ada, Anda perlu menggunakan metode [AddField](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/addfield/index) dari kelas [FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor). Metode ini mengharuskan Anda untuk menentukan jenis bidang yang ingin Anda tambahkan bersama dengan nama dan lokasi bidang tersebut. Anda perlu membuat objek dari kelas [FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor), menggunakan metode [AddField](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/addfield/index) untuk menambahkan bidang baru di PDF, Selain itu, Anda dapat menentukan batasan jumlah karakter di bidang Anda dengan [SetFieldLimit](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) dan akhirnya menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/methods/save/index) untuk menyimpan file PDF yang diperbarui. Potongan kode berikut menunjukkan kepada Anda cara menambahkan bidang formulir di file PDF yang ada.
+Untuk menambahkan bidang formulir di file PDF yang ada, Anda perlu menggunakan metode [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) dari kelas [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Metode ini mengharuskan Anda untuk menentukan jenis bidang yang ingin Anda tambahkan bersama dengan nama dan lokasi bidang tersebut. Anda perlu membuat objek dari kelas [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor), menggunakan metode [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) untuk menambahkan bidang baru di PDF, Selain itu, Anda dapat menentukan batasan jumlah karakter di bidang Anda dengan [SetFieldLimit](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) dan akhirnya menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) untuk menyimpan file PDF yang diperbarui. Potongan kode berikut menunjukkan kepada Anda cara menambahkan bidang formulir di file PDF yang ada.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -107,7 +107,7 @@ private static void AddField()
 
 ## Tambahkan URL Tombol Kirim di File PDF yang Ada
 
-Metode [AddSubmitBtn](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) memungkinkan Anda untuk mengatur URL tombol kirim di file PDF. Ini adalah URL tempat data diposting ketika tombol kirim diklik. Dalam kode contoh kami, kami menentukan URL, nama bidang kami, nomor halaman tempat kami ingin menambahkan, dan koordinat penempatan tombol. Metode [AddSubmitBtn](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) memerlukan nama bidang tombol kirim dan URL. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Potongan kode berikut menunjukkan kepada Anda cara mengatur URL tombol kirim.
+Metode [AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) memungkinkan Anda untuk mengatur URL tombol kirim di file PDF. Ini adalah URL tempat data diposting ketika tombol kirim diklik. Dalam kode contoh kami, kami menentukan URL, nama bidang kami, nomor halaman tempat kami ingin menambahkan, dan koordinat penempatan tombol. Metode [AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) memerlukan nama bidang tombol kirim dan URL. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Potongan kode berikut menunjukkan kepada Anda cara mengatur URL tombol kirim.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -135,7 +135,7 @@ Metode [AddSubmitBtn](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades
 
 ## Tambahkan JavaScript untuk Tombol Dorong
 
-Metode [AddFieldScript](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/addfieldscript) memungkinkan Anda untuk menambahkan JavaScript ke tombol dorong di file PDF. Metode ini memerlukan nama tombol dorong dan JavaScript. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Potongan kode berikut menunjukkan kepada Anda cara mengatur JavaScript ke tombol dorong.
+Metode [AddFieldScript](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfieldscript) memungkinkan Anda untuk menambahkan JavaScript ke tombol dorong di file PDF. Metode ini memerlukan nama tombol dorong dan JavaScript. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Potongan kode berikut menunjukkan kepada Anda cara mengatur JavaScript ke tombol dorong.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

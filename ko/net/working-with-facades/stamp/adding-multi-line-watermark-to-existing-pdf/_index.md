@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-많은 사용자들이 다중 행 텍스트로 PDF 문서에 스탬프를 찍고 싶어합니다. 그들은 보통 `\n` 및 `<br>`를 사용하려고 하지만 이러한 유형의 문자는 Aspose.Pdf.Facades 네임스페이스에서 지원되지 않습니다. 따라서 이를 가능하게 하기 위해 Aspose.Pdf.Facades 네임스페이스의 [FormattedText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formattedtext) 클래스에 [AddNewLineText()](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index)라는 또 다른 메서드를 추가했습니다.
+많은 사용자들이 다중 행 텍스트로 PDF 문서에 스탬프를 찍고 싶어합니다. 그들은 보통 `\n` 및 `<br>`를 사용하려고 하지만 이러한 유형의 문자는 Aspose.Pdf.Facades 네임스페이스에서 지원되지 않습니다. 따라서 이를 가능하게 하기 위해 Aspose.Pdf.Facades 네임스페이스의 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 클래스에 [AddNewLineText()](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index)라는 또 다른 메서드를 추가했습니다.
 
 {{% /alert %}}
 

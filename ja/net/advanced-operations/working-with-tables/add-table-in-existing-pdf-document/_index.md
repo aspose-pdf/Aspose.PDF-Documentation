@@ -80,7 +80,7 @@ sitemap:
 
 ## C#を使用したテーブルの作成
 
-テーブルはPDFドキュメントを扱う際に重要です。情報を体系的に表示するための優れた機能を提供します。Aspose.PDF名前空間には、PDFドキュメントをゼロから生成する際にテーブルを作成する機能を提供する[Table](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table)、[Cell](https://reference.aspose.com/pdf/ja/net/aspose.pdf/cell)、および[Row](https://reference.aspose.com/pdf/ja/net/aspose.pdf/row)という名前のクラスが含まれています。
+テーブルはPDFドキュメントを扱う際に重要です。情報を体系的に表示するための優れた機能を提供します。Aspose.PDF名前空間には、PDFドキュメントをゼロから生成する際にテーブルを作成する機能を提供する[Table](https://reference.aspose.com/pdf/net/aspose.pdf/table)、[Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell)、および[Row](https://reference.aspose.com/pdf/net/aspose.pdf/row)という名前のクラスが含まれています。
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
@@ -140,7 +140,7 @@ private static void AddTable()
 
 ### テーブルのColSpanとRowSpan
 
-Aspose.PDF for .NETは、テーブル内の列を結合するための[ColSpan](https://reference.aspose.com/pdf/ja/net/aspose.pdf/cell/properties/colspan)プロパティと、行を結合するための[RowSpan](https://reference.aspose.com/pdf/ja/net/aspose.pdf/cell/properties/rowspan)プロパティを提供します。
+Aspose.PDF for .NETは、テーブル内の列を結合するための[ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan)プロパティと、行を結合するための[RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan)プロパティを提供します。
 
 `Cell`オブジェクトに`ColSpan`または`RowSpan`プロパティを使用してテーブルセルを作成します。必要なプロパティを適用した後、作成したセルをテーブルに追加できます。
 
@@ -225,11 +225,11 @@ private static void AddTableRowColSpan()
 
 ### 境界線
 
-テーブル、[Row](https://reference.aspose.com/pdf/ja/net/aspose.pdf/row)、および[Cell](https://reference.aspose.com/pdf/ja/net/aspose.pdf/cell)オブジェクトの境界線を設定するには、Table.Border、Row.Border、およびCell.Borderプロパティを使用します。セルの境界線は、[Table](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table)またはRowクラスのDefaultCellBorderプロパティを使用して設定することもできます。上記で説明したすべての境界線関連プロパティは、コンストラクタを呼び出すことによって作成されるRowクラスのインスタンスに割り当てられます。Rowクラスには、境界線をカスタマイズするために必要なほぼすべてのパラメータを受け取る多くのオーバーロードがあります。
+テーブル、[Row](https://reference.aspose.com/pdf/net/aspose.pdf/row)、および[Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell)オブジェクトの境界線を設定するには、Table.Border、Row.Border、およびCell.Borderプロパティを使用します。セルの境界線は、[Table](https://reference.aspose.com/pdf/net/aspose.pdf/table)またはRowクラスのDefaultCellBorderプロパティを使用して設定することもできます。上記で説明したすべての境界線関連プロパティは、コンストラクタを呼び出すことによって作成されるRowクラスのインスタンスに割り当てられます。Rowクラスには、境界線をカスタマイズするために必要なほぼすべてのパラメータを受け取る多くのオーバーロードがあります。
 
 ### マージンまたはパディング
 
-セルのパディングは、Tableクラスの[DefaultCellPadding](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table/properties/defaultcellpadding)プロパティを使用して管理できます。すべてのパディング関連プロパティは、`Left`、`Right`、`Top`、および`Bottom`パラメータに関する情報を受け取る[MarginInfo](https://reference.aspose.com/pdf/ja/net/aspose.pdf/margininfo)クラスのインスタンスに割り当てられます。
+セルのパディングは、Tableクラスの[DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding)プロパティを使用して管理できます。すべてのパディング関連プロパティは、`Left`、`Right`、`Top`、および`Bottom`パラメータに関する情報を受け取る[MarginInfo](https://reference.aspose.com/pdf/net/aspose.pdf/margininfo)クラスのインスタンスに割り当てられます。
 
 以下の例では、セルの境界線の幅を0.1ポイント、テーブルの境界線の幅を1ポイント、セルのパディングを5ポイントに設定しています。
 
@@ -369,7 +369,7 @@ private static void AddAutoFitToWindow()
 
 ### テーブルの幅を取得する
 
-時には、テーブルの幅を動的に取得する必要があります。Aspose.PDF.Tableクラスには、その目的のための[GetWidth](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table/methods/getwidth)メソッドがあります。たとえば、テーブルの列幅を明示的に設定せず、[ColumnAdjustment](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table/properties/columnadjustment)をAutoFitToContentに設定した場合、この場合、次のようにテーブルの幅を取得できます。
+時には、テーブルの幅を動的に取得する必要があります。Aspose.PDF.Tableクラスには、その目的のための[GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth)メソッドがあります。たとえば、テーブルの列幅を明示的に設定せず、[ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment)をAutoFitToContentに設定した場合、この場合、次のようにテーブルの幅を取得できます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -561,7 +561,7 @@ private static void InsertPageBreak()
 
 ### サンプル：C#を使用して新しいページにテーブルをレンダリングする方法
 
-新しいページにテーブルをレンダリングするには、BaseParagraphクラスの[IsInNewPage](https://reference.aspose.com/pdf/ja/net/aspose.pdf/baseparagraph/properties/isinnewpage)プロパティを使用します。以下のコードスニペットはその方法を示しています。
+新しいページにテーブルをレンダリングするには、BaseParagraphクラスの[IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage)プロパティを使用します。以下のコードスニペットはその方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

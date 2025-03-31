@@ -91,9 +91,9 @@ Aspose.PDF for .NET API를 사용하면 C# 및 VB.NET을 사용하여 PDF 파일
 
 C#을 사용하여 PDF 파일을 생성하려면 다음 단계를 사용할 수 있습니다.
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 객체를 생성합니다.
-1. Document 객체의 [Pages](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/pages) 컬렉션에 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체를 추가합니다.
-1. 페이지의 [Paragraphs](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page/properties/paragraphs) 컬렉션에 [TextFragment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textfragment)를 추가합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 객체를 생성합니다.
+1. Document 객체의 [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) 컬렉션에 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체를 추가합니다.
+1. 페이지의 [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) 컬렉션에 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)를 추가합니다.
 1. 결과 PDF 문서를 저장합니다.
 
 ```csharp

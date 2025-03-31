@@ -85,16 +85,16 @@ sitemap:
 
 ### PDF 문서에 양식 필드 추가
 
-[Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스는 PDF 문서에서 양식 필드를 관리하는 데 도움이 되는 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/form)이라는 컬렉션을 제공합니다.
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스는 PDF 문서에서 양식 필드를 관리하는 데 도움이 되는 [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form)이라는 컬렉션을 제공합니다.
 
 양식 필드를 추가하려면:
 
 1. 추가할 양식 필드를 생성합니다.
-1. [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/form) 컬렉션의 Add 메서드를 호출합니다.
+1. [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) 컬렉션의 Add 메서드를 호출합니다.
 
 ### TextBoxField 추가
 
-아래 예제는 [TextBoxField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/textboxfield)를 추가하는 방법을 보여줍니다.
+아래 예제는 [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### RadioButtonField 추가
 
-다음 코드 스니펫은 PDF 문서에 [RadioButtonField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/radiobuttonfield)를 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 PDF 문서에 [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield)를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -164,7 +164,7 @@ private static void AddRadioButtonToPdf()
 }
 ```
 
-[TextBoxField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/textboxfield)는 일부 위젯 주석과 함께 추가할 수 있습니다.
+[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)는 일부 위젯 주석과 함께 추가할 수 있습니다.
 ```csharp
 // For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()

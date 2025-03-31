@@ -111,7 +111,7 @@ private static void GetValuesFromFields()
 
 ### PDF 문서의 개별 필드에서 값 가져오기
 
-양식 필드의 Value 속성을 사용하면 특정 필드의 값을 가져올 수 있습니다. 값을 가져오려면 Document 객체의 Form 컬렉션에서 양식 필드를 가져옵니다. 이 C# 예제는 [TextBoxField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/textboxfield)를 선택하고 Value 속성을 사용하여 값을 검색합니다.
+양식 필드의 Value 속성을 사용하면 특정 필드의 값을 가져올 수 있습니다. 값을 가져오려면 Document 객체의 Form 컬렉션에서 양식 필드를 가져옵니다. 이 C# 예제는 [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)를 선택하고 Value 속성을 사용하여 값을 검색합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -160,7 +160,7 @@ private static void GetSubmitFormActionUrl()
 
 때때로 문서에서 양식 필드가 어디에 있는지 알 수 있지만 이름은 모를 수 있습니다. 예를 들어, 인쇄된 양식의 도면만 가지고 있는 경우입니다. Aspose.PDF for .NET를 사용하면 문제가 되지 않습니다. PDF 파일의 특정 영역에 어떤 필드가 있는지 확인할 수 있습니다. PDF 파일의 특정 영역에서 양식 필드를 가져오려면:
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 사용하여 PDF 파일을 엽니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 사용하여 PDF 파일을 엽니다.
 1. 문서의 Forms 컬렉션에서 양식을 가져옵니다.
 1. 직사각형 영역을 지정하고 Form 객체의 GetFieldsInRect 메서드에 전달합니다. Fields 컬렉션이 반환됩니다.
 1. 이를 사용하여 필드를 조작합니다.

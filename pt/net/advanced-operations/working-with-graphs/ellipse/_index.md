@@ -83,7 +83,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Adicionar objeto Elipse
 
-Aspose.PDF for .NET suporta a adição de objetos [Elipse](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/ellipse) a documentos PDF. Ele também oferece a funcionalidade de preencher o objeto elipse com uma determinada cor.
+Aspose.PDF for .NET suporta a adição de objetos [Elipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) a documentos PDF. Ele também oferece a funcionalidade de preencher o objeto elipse com uma determinada cor.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,7 +133,7 @@ private static void Ellipse()
 
 ## Criar Objeto Elipse Preenchido
 
-O seguinte trecho de código mostra como adicionar um objeto [Elipse](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/ellipse) que é preenchido com cor.
+O seguinte trecho de código mostra como adicionar um objeto [Elipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) que é preenchido com cor.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -77,7 +77,7 @@ draft: false
 
 ## 기존 PDF 파일에 목록 항목 추가
 
-[AddListItem](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/addlistitem) 메서드는 [ListBox](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/listboxfield) 필드에 항목을 추가할 수 있게 해줍니다. 첫 번째 인자는 필드 이름이고 두 번째 인자는 필드 항목입니다. 단일 필드 항목을 전달하거나 항목 목록을 포함하는 문자열 배열을 전달할 수 있습니다. 이 메서드는 [FormEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 PDF 파일에 목록 항목을 추가하는 방법을 보여줍니다.
+[AddListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addlistitem) 메서드는 [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield) 필드에 항목을 추가할 수 있게 해줍니다. 첫 번째 인자는 필드 이름이고 두 번째 인자는 필드 항목입니다. 단일 필드 항목을 전달하거나 항목 목록을 포함하는 문자열 배열을 전달할 수 있습니다. 이 메서드는 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 PDF 파일에 목록 항목을 추가하는 방법을 보여줍니다.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -110,7 +110,7 @@ draft: false
 
 ## 기존 PDF 파일에서 목록 항목 삭제
 
-[DelListItem](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/dellistitem) 메서드는 [ListBox](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/listboxfield)에서 특정 항목을 삭제할 수 있게 해줍니다. 첫 번째 매개변수는 필드 이름이고 두 번째 매개변수는 목록에서 삭제하려는 항목입니다. 이 메서드는 [FormEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 PDF 파일에서 목록 항목을 삭제하는 방법을 보여줍니다.
+[DelListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/dellistitem) 메서드는 [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield)에서 특정 항목을 삭제할 수 있게 해줍니다. 첫 번째 매개변수는 필드 이름이고 두 번째 매개변수는 목록에서 삭제하려는 항목입니다. 이 메서드는 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 PDF 파일에서 목록 항목을 삭제하는 방법을 보여줍니다.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

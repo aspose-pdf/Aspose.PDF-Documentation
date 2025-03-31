@@ -86,7 +86,7 @@ Você pode tentar desbloquear o documento usando Aspose.PDF e obter os resultado
 
 {{% /alert %}}
 
-Para descriptografar um arquivo PDF, você precisa criar um objeto [PdfFileSecurity](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesecurity) e, em seguida, chamar o método [DecryptFile](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Você também precisa passar a senha do proprietário para o método [DecryptFile](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). O seguinte trecho de código mostra como descriptografar um arquivo PDF.
+Para descriptografar um arquivo PDF, você precisa criar um objeto [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) e, em seguida, chamar o método [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Você também precisa passar a senha do proprietário para o método [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). O seguinte trecho de código mostra como descriptografar um arquivo PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

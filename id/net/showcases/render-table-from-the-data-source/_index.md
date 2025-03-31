@@ -80,7 +80,7 @@ sitemap:
 
 Aspose.PDF memungkinkan Anda untuk membuat tabel dengan DataSource dari DataSet, Data Table, array, dan objek IEnumerable menggunakan kelas PdfLightTable.
 
-Kelas [Table](https://reference.aspose.com/pdf/id/net/aspose.pdf/table) digunakan untuk memproses tabel. Kelas ini memberi kita kemampuan untuk membuat tabel dan menempatkannya dalam dokumen, menggunakan [Rows](https://reference.aspose.com/pdf/id/net/aspose.pdf/rows) dan [Cells](https://reference.aspose.com/pdf/id/net/aspose.pdf/cell). Jadi, untuk membuat tabel, Anda perlu menambahkan jumlah baris yang diperlukan dan mengisinya dengan jumlah sel yang sesuai.
+Kelas [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) digunakan untuk memproses tabel. Kelas ini memberi kita kemampuan untuk membuat tabel dan menempatkannya dalam dokumen, menggunakan [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) dan [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). Jadi, untuk membuat tabel, Anda perlu menambahkan jumlah baris yang diperlukan dan mengisinya dengan jumlah sel yang sesuai.
 
 Contoh berikut membuat tabel 4x10.
 
@@ -189,14 +189,14 @@ private static void AddTable()
 
 Saat menginisialisasi objek Table, pengaturan skin minimal digunakan:
 
-* [ColumnWidths](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/columnwidths) - lebar kolom (secara default).
-* [DefaultCellPadding](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/defaultcellpadding) - bidang default untuk sel tabel.
-* [Border](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/border) - atribut bingkai tabel (gaya, ketebalan, warna).
-* [DefaultCellBorder](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/defaultcellborder) - atribut bingkai sel (gaya, ketebalan, warna).
+* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - lebar kolom (secara default).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - bidang default untuk sel tabel.
+* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - atribut bingkai tabel (gaya, ketebalan, warna).
+* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - atribut bingkai sel (gaya, ketebalan, warna).
 
 ## Mengekspor data dari array objek
 
-Kelas Table menyediakan metode untuk berinteraksi dengan sumber data ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/id/net/aspose.pdf.table/importdatatable/methods/1) dan [ImportDataView](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/methods/importdataview). Metode pertama mengimpor data dari DataTable, yang kedua dari DataView. 
+Kelas Table menyediakan metode untuk berinteraksi dengan sumber data ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) dan [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). Metode pertama mengimpor data dari DataTable, yang kedua dari DataView. 
 Dengan asumsi bahwa objek-objek ini tidak terlalu nyaman untuk bekerja dalam template MVC, kita akan membatasi diri pada contoh singkat. Dalam contoh ini (baris 50), metode ImportDataTable dipanggil dan menerima sebagai parameter sebuah instance DataTable dan pengaturan tambahan seperti flag header dan posisi awal (baris/kolom) untuk output data.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

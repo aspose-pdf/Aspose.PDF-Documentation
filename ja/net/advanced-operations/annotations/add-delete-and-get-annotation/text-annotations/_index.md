@@ -85,13 +85,13 @@ sitemap:
 
 テキスト注釈は、PDFドキュメント内の特定の位置に添付された注釈です。閉じているとき、注釈はアイコンとして表示され、開くと、読者が選択したフォントとサイズでノートテキストを含むポップアップウィンドウが表示されるべきです。
 
-注釈は特定のページの[Annotations](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations)コレクションに含まれています。このコレクションには、その個々のページの注釈のみが含まれています。すべてのページには独自のAnnotationsコレクションがあります。
+注釈は特定のページの[Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations)コレクションに含まれています。このコレクションには、その個々のページの注釈のみが含まれています。すべてのページには独自のAnnotationsコレクションがあります。
 
-特定のページに注釈を追加するには、そのページのAnnotationsコレクションに[Add](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationcollection/methods/add)メソッドを使用して追加します。
+特定のページに注釈を追加するには、そのページのAnnotationsコレクションに[Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add)メソッドを使用して追加します。
 
 1. まず、PDFに追加したい注釈を作成します。
 1. 次に、入力PDFを開きます。
-1. 注釈を[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトのAnnotationsコレクションに追加します。
+1. 注釈を[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトのAnnotationsコレクションに追加します。
 
 次のコードスニペットは、PDFページに注釈を追加する方法を示しています。
 
@@ -136,7 +136,7 @@ private static void AddTextAnnotationToPdf()
 
 独自の外観ストリームや関連するアクションを持たず、親の注釈辞書のPopupエントリによって識別されます。
 
-次のコードスニペットは、親の[Line annotation](/pdf/ja/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file)を追加する例を使用して、PDFページに[Popup Annotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/popupannotation)を追加する方法を示しています。
+次のコードスニペットは、親の[Line annotation](/pdf/ja/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file)を追加する例を使用して、PDFページに[Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation)を追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void AddLineAnnotation()
 
 ## 新しいフリーテキスト注釈を追加（または作成）する方法
 
-フリーテキスト注釈は、ページ上に直接テキストを表示します。[PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext)メソッドを使用して、このタイプの注釈を作成できます。次のスニペットでは、文字列の最初の出現の上にフリーテキスト注釈を追加します。
+フリーテキスト注釈は、ページ上に直接テキストを表示します。[PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext)メソッドを使用して、このタイプの注釈を作成できます。次のスニペットでは、文字列の最初の出現の上にフリーテキスト注釈を追加します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -216,7 +216,7 @@ private static void AddFreeTextAnnotationDemo()
 
 ### FreeTextAnnotationのコールアウトプロパティを設定する
 
-PDFドキュメント内の注釈のより柔軟な構成のために、Aspose.PDF for .NETは、コールアウトラインのポイントの配列を指定できる[FreeTextAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/freetextannotation)クラスの[Callout](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/freetextannotation/properties/callout)プロパティを提供します。次のコードスニペットは、この機能を使用する方法を示しています。
+PDFドキュメント内の注釈のより柔軟な構成のために、Aspose.PDF for .NETは、コールアウトラインのポイントの配列を指定できる[FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation)クラスの[Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout)プロパティを提供します。次のコードスニペットは、この機能を使用する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -351,9 +351,9 @@ private static void AddInvisibleAnnotation()
 
 この部分では、フリーテキスト注釈内のテキストをフォーマットする方法を見ていきます。
 
-注釈は[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトの[AnnotationCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationcollection)コレクションに含まれています。[FreeTextAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/freetextannotation)をPDFドキュメントに追加する際に、フォント、サイズ、色などのフォーマット情報を[DefaultAppearance](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/defaultappearance/methods/index)クラスを使用して指定できます。また、TextStyleプロパティを使用してフォーマット情報を指定することも可能です。さらに、PDFドキュメント内の既存のFreeTextAnnotationのフォーマットを更新することもできます。
+注釈は[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトの[AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection)コレクションに含まれています。[FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation)をPDFドキュメントに追加する際に、フォント、サイズ、色などのフォーマット情報を[DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index)クラスを使用して指定できます。また、TextStyleプロパティを使用してフォーマット情報を指定することも可能です。さらに、PDFドキュメント内の既存のFreeTextAnnotationのフォーマットを更新することもできます。
 
-[TextStyle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/textstyle)クラスは、デフォルトスタイルエントリでの作業をサポートします。このクラスを使用すると、色、フォントサイズ、フォント名を設定できます：
+[TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle)クラスは、デフォルトスタイルエントリでの作業をサポートします。このクラスを使用すると、色、フォントサイズ、フォント名を設定できます：
 
 - FontNameプロパティは、フォント名（文字列）を取得または設定します。
 - FontSizeプロパティは、デフォルトのテキストサイズ（ダブル）を取得または設定します。
@@ -434,7 +434,7 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
 
 ### StrikeOutAnnotationを使用して単語を打ち消す
 
-Aspose.PDF for .NETは、PDFドキュメントに注釈を追加、削除、更新することを可能にします。クラスの1つは、打ち消し線注釈を追加することもできます。これは、文書内の1つまたは複数のテキストフラグメントを打ち消したいときに便利です。注釈は[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトの[AnnotationCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationcollection)コレクションに保持されます。[StrikeOutAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/strikeoutannotation)というクラスを使用して、PDFドキュメントに打ち消し線注釈を追加できます。
+Aspose.PDF for .NETは、PDFドキュメントに注釈を追加、削除、更新することを可能にします。クラスの1つは、打ち消し線注釈を追加することもできます。これは、文書内の1つまたは複数のテキストフラグメントを打ち消したいときに便利です。注釈は[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトの[AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection)コレクションに保持されます。[StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation)というクラスを使用して、PDFドキュメントに打ち消し線注釈を追加できます。
 
 特定のTextFragmentを打ち消すには：
 
@@ -502,7 +502,7 @@ private void StrikeOutTextInDocument()
 
 ## PDFファイルのページからすべての注釈を削除する
 
-[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトの[AnnotationCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationcollection)コレクションには、その特定のページのすべての注釈が含まれています。ページからすべての注釈を削除するには、AnnotationCollectoinコレクションの*Delete*メソッドを呼び出します。
+[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトの[AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection)コレクションには、その特定のページのすべての注釈が含まれています。ページからすべての注釈を削除するには、AnnotationCollectoinコレクションの*Delete*メソッドを呼び出します。
 
 次のコードスニペットは、特定のページからすべての注釈を削除する方法を示しています。
 
@@ -536,7 +536,7 @@ Aspose.PDFの品質を確認し、オンラインで結果を得るには、次�
 
 Aspose.PDFは、PDFファイルから特定の注釈を削除することを可能にします。このトピックでは、その方法を説明します。
 
-PDFから特定の注釈を削除するには、[AnnotationCollectionコレクションのDeleteメソッド](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations.annotationcollection/delete/methods/1)を呼び出します。このコレクションは[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトに属しています。Deleteメソッドには、削除したい注釈のインデックスが必要です。その後、更新されたPDFファイルを保存します。次のコードスニペットは、特定の注釈を削除する方法を示しています。
+PDFから特定の注釈を削除するには、[AnnotationCollectionコレクションのDeleteメソッド](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1)を呼び出します。このコレクションは[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトに属しています。Deleteメソッドには、削除したい注釈のインデックスが必要です。その後、更新されたPDFファイルを保存します。次のコードスニペットは、特定の注釈を削除する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -559,7 +559,7 @@ private static void DeleteParticularAnnotation()
 
 ## PDFドキュメントのページからすべての注釈を取得する
 
-Aspose.PDFは、ドキュメント全体または特定のページから注釈を取得することを可能にします。PDFドキュメントのページからすべての注釈を取得するには、希望するページリソースの[AnnotationCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationcollection)コレクションをループします。次のコードスニペットは、ページのすべての注釈を取得する方法を示しています。
+Aspose.PDFは、ドキュメント全体または特定のページから注釈を取得することを可能にします。PDFドキュメントのページからすべての注釈を取得するには、希望するページリソースの[AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection)コレクションをループします。次のコードスニペットは、ページのすべての注釈を取得する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -587,7 +587,7 @@ PDF全体からすべての注釈を取得するには、AnnotationCollectionク
 
 ## PDFファイルから特定の注釈を取得する
 
-注釈は個々のページに関連付けられ、[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトの[AnnotationCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationcollection)コレクションに保存されます。特定の注釈を取得するには、そのインデックスを指定します。これにより、特定の注釈タイプ、例えば[TextAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/textannotation)にキャストする必要がある[Annotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotation)オブジェクトが返されます。次のコードスニペットは、特定の注釈とそのプロパティを取得する方法を示しています。
+注釈は個々のページに関連付けられ、[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトの[AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection)コレクションに保存されます。特定の注釈を取得するには、そのインデックスを指定します。これにより、特定の注釈タイプ、例えば[TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation)にキャストする必要がある[Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation)オブジェクトが返されます。次のコードスニペットは、特定の注釈とそのプロパティを取得する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -612,7 +612,7 @@ private static void GetParticularAnnotation()
 
 ## 注釈のリソースを取得する
 
-Aspose.PDFは、ドキュメント全体または特定のページから注釈のリソースを取得することを可能にします。次のコードスニペットは、入力PDFファイルの[FileSpecification](https://reference.aspose.com/pdf/ja/net/aspose.pdf/filespecification)オブジェクトとして注釈のリソースを取得する方法を示しています。
+Aspose.PDFは、ドキュメント全体または特定のページから注釈のリソースを取得することを可能にします。次のコードスニペットは、入力PDFファイルの[FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification)オブジェクトとして注釈のリソースを取得する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

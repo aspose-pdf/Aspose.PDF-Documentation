@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades) em [Aspose.PDF for .NET](/pdf/pt/net/) permite que você adicione um carimbo em um arquivo PDF existente. Às vezes, os usuários precisam rotacionar o carimbo. Neste artigo, veremos como rotacionar um carimbo em torno de seu ponto central.
+[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) em [Aspose.PDF for .NET](/pdf/pt/net/) permite que você adicione um carimbo em um arquivo PDF existente. Às vezes, os usuários precisam rotacionar o carimbo. Neste artigo, veremos como rotacionar um carimbo em torno de seu ponto central.
 
 {{% /alert %}}
 
 ## Detalhes da implementação
 
-A classe [Stamp](https://reference.aspose.com/pdf/pt/net/aspose.pdf/stamp) permite que você adicione uma marca d'água em um arquivo PDF. Você pode especificar a imagem a ser adicionada como um carimbo usando o método [BindImage](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.stamp/bindimage/methods/1). O método [SetOrigin](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/stamp/methods/setorigin) permite que você defina a origem do carimbo adicionado; essa origem é as coordenadas do canto inferior esquerdo do carimbo. Você também pode definir o tamanho da imagem usando o método [SetImageSize](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/stamp/methods/setimagesize).
+A classe [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) permite que você adicione uma marca d'água em um arquivo PDF. Você pode especificar a imagem a ser adicionada como um carimbo usando o método [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.stamp/bindimage/methods/1). O método [SetOrigin](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setorigin) permite que você defina a origem do carimbo adicionado; essa origem é as coordenadas do canto inferior esquerdo do carimbo. Você também pode definir o tamanho da imagem usando o método [SetImageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setimagesize).
 
-Agora, veremos como o carimbo pode ser rotacionado em torno do centro do carimbo. A classe [Stamp](https://reference.aspose.com/pdf/pt/net/aspose.pdf/stamp) fornece uma propriedade chamada Rotation. Essa propriedade define ou obtém a rotação de 0 a 360 do conteúdo do carimbo. Podemos especificar qualquer valor de rotação de 0 a 360. Ao especificar o valor de rotação, podemos girar o carimbo em torno de seu ponto central. Se um Stamp for um objeto do tipo Stamp, então o valor de rotação pode ser especificado como aStamp.Rotation = 90. Nesse caso, o carimbo será rotacionado em 90 graus em torno do centro do conteúdo do carimbo. O seguinte trecho de código mostra como rotacionar o carimbo em torno do ponto central:
+Agora, veremos como o carimbo pode ser rotacionado em torno do centro do carimbo. A classe [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) fornece uma propriedade chamada Rotation. Essa propriedade define ou obtém a rotação de 0 a 360 do conteúdo do carimbo. Podemos especificar qualquer valor de rotação de 0 a 360. Ao especificar o valor de rotação, podemos girar o carimbo em torno de seu ponto central. Se um Stamp for um objeto do tipo Stamp, então o valor de rotação pode ser especificado como aStamp.Rotation = 90. Nesse caso, o carimbo será rotacionado em 90 graus em torno do centro do conteúdo do carimbo. O seguinte trecho de código mostra como rotacionar o carimbo em torno do ponto central:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

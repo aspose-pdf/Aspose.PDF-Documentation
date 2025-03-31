@@ -85,7 +85,7 @@ sitemap:
 
 ## タグ付きPDFコンテンツの取得
 
-タグ付きテキストを含むPDF文書のコンテンツを取得するために、Aspose.PDFは[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスの[TaggedContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/taggedcontent)プロパティを提供します。
+タグ付きテキストを含むPDF文書のコンテンツを取得するために、Aspose.PDFは[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスの[TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent)プロパティを提供します。
 
 以下のコードスニペットは、タグ付きテキストを含むPDF文書のコンテンツを取得する方法を示しています。
 
@@ -144,7 +144,7 @@ private static void GetTaggedContent()
 
 ## ルート構造の取得
 
-タグ付きPDF文書のルート構造を取得するために、Aspose.PDFは[ITaggedContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent)インターフェースの[StructTreeRootElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement)プロパティと[StructureElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structureelement)を提供します。以下のコードスニペットは、タグ付きPDF文書のルート構造を取得する方法を示しています。
+タグ付きPDF文書のルート構造を取得するために、Aspose.PDFは[ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent)インターフェースの[StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement)プロパティと[StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement)を提供します。以下のコードスニペットは、タグ付きPDF文書のルート構造を取得する方法を示しています。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void GetRootStructure()
 
 ## 子要素へのアクセス
 
-タグ付きPDF文書の子要素にアクセスするために、Aspose.PDFは[ElementList](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/elementlist)クラスを提供します。以下のコードスニペットは、タグ付きPDF文書の子要素にアクセスする方法を示しています。
+タグ付きPDF文書の子要素にアクセスするために、Aspose.PDFは[ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist)クラスを提供します。以下のコードスニペットは、タグ付きPDF文書の子要素にアクセスする方法を示しています。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -316,7 +316,7 @@ private static void AccessChildElements()
 
 ## 既存のPDFに画像をタグ付けする
 
-既存のPDF文書に画像をタグ付けするために、Aspose.PDFは[StructureElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structureelement)クラスの[FindElements](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/element/methods/findelements/_1)メソッドを提供します。図の代替テキストを追加するには、[FigureElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/figureelement)クラスの[AlternativeText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext)プロパティを使用できます。
+既存のPDF文書に画像をタグ付けするために、Aspose.PDFは[StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement)クラスの[FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1)メソッドを提供します。図の代替テキストを追加するには、[FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement)クラスの[AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext)プロパティを使用できます。
 
 以下のコードスニペットは、既存のPDF文書に画像をタグ付けする方法を示しています。
 

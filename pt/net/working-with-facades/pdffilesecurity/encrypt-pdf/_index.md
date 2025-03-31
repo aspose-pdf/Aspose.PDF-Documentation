@@ -83,9 +83,9 @@ Vamos dar uma olhada em como a criptografia de PDF funciona com a biblioteca Asp
 
 ## Criptografar Arquivo PDF usando Diferentes Tipos e Algoritmos de Criptografia
 
-Para criptografar um arquivo PDF, você precisa criar um objeto [PdfFileSecurity](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesecurity) e, em seguida, chamar o método [EncryptFile](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Você pode passar a senha do usuário, a senha do proprietário e privilégios para o método [EncryptFile](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Você também precisa passar os valores KeySize e Algorithm para este método.
+Para criptografar um arquivo PDF, você precisa criar um objeto [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) e, em seguida, chamar o método [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Você pode passar a senha do usuário, a senha do proprietário e privilégios para o método [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Você também precisa passar os valores KeySize e Algorithm para este método.
 
-Revise uma lista possível de [CryptoAlgorithm](https://reference.aspose.com/pdf/pt/net/aspose.pdf/cryptoalgorithm):
+Revise uma lista possível de [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm):
 
 |**Nome do membro**|**Valor**|**Descrição**|
 | :- | :- | :- |

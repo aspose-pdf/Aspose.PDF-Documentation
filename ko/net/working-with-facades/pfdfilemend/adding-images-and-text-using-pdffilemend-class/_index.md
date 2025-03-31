@@ -75,21 +75,21 @@ draft: false
 }
 </script>
 
-[PdfFileMend](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend) 클래스는 기존 PDF 문서의 지정된 위치에 이미지와 텍스트를 추가하는 데 도움을 줄 수 있습니다. 이 클래스는 [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 및 [AddText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)라는 두 가지 메서드를 제공합니다. [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드는 JPG, GIF, PNG 및 BMP 형식의 이미지를 추가할 수 있습니다. [AddText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) 메서드는 [FormattedText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formattedtext) 클래스의 인수를 받아 기존 PDF 파일에 추가합니다. 이미지는 좌하단 및 우상단 좌표로 지정된 사각형 영역에 추가될 수 있습니다. 이미지를 추가할 때 이미지 파일 경로 또는 이미지 파일의 스트림을 지정할 수 있습니다. 이미지 또는 텍스트를 추가할 페이지 번호를 지정하기 위해 이 두 메서드는 페이지 번호 인수를 제공합니다. 따라서 지정된 위치뿐만 아니라 지정된 페이지에도 이미지와 텍스트를 추가할 수 있습니다.
+[PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) 클래스는 기존 PDF 문서의 지정된 위치에 이미지와 텍스트를 추가하는 데 도움을 줄 수 있습니다. 이 클래스는 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 및 [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)라는 두 가지 메서드를 제공합니다. [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드는 JPG, GIF, PNG 및 BMP 형식의 이미지를 추가할 수 있습니다. [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) 메서드는 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 클래스의 인수를 받아 기존 PDF 파일에 추가합니다. 이미지는 좌하단 및 우상단 좌표로 지정된 사각형 영역에 추가될 수 있습니다. 이미지를 추가할 때 이미지 파일 경로 또는 이미지 파일의 스트림을 지정할 수 있습니다. 이미지 또는 텍스트를 추가할 페이지 번호를 지정하기 위해 이 두 메서드는 페이지 번호 인수를 제공합니다. 따라서 지정된 위치뿐만 아니라 지정된 페이지에도 이미지와 텍스트를 추가할 수 있습니다.
 
-이미지는 PDF 문서 내용의 중요한 부분입니다. 기존 PDF 파일에서 이미지를 조작하는 것은 PDF 파일을 다루는 사람들에게 일반적인 요구 사항입니다. 이 기사에서는 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)를 사용하여 기존 PDF 파일에서 이미지를 조작하는 방법을 살펴보겠습니다. [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)의 모든 이미지 관련 작업이 이 기사에 통합되어 있습니다.
+이미지는 PDF 문서 내용의 중요한 부분입니다. 기존 PDF 파일에서 이미지를 조작하는 것은 PDF 파일을 다루는 사람들에게 일반적인 요구 사항입니다. 이 기사에서는 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)를 사용하여 기존 PDF 파일에서 이미지를 조작하는 방법을 살펴보겠습니다. [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)의 모든 이미지 관련 작업이 이 기사에 통합되어 있습니다.
 
 ## 구현 세부정보
 
-[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)는 기존 PDF 파일에 새로운 이미지를 추가할 수 있게 해줍니다. 기존 이미지를 교체하거나 제거할 수도 있습니다. PDF 파일을 이미지로 변환할 수도 있습니다. 각 개별 페이지를 하나의 이미지로 변환하거나 전체 PDF 파일을 하나의 이미지로 변환할 수 있습니다. JPEG, BMP, PNG 및 TIFF 등의 형식을 지원합니다. PDF 파일에서 이미지를 추출할 수도 있습니다. 이러한 작업을 구현하기 위해 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)의 네 가지 클래스를 사용할 수 있습니다: [PdfFileMend](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend), [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor), [PdfExtractor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor) 및 [PdfConverter](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfconverter).
+[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 기존 PDF 파일에 새로운 이미지를 추가할 수 있게 해줍니다. 기존 이미지를 교체하거나 제거할 수도 있습니다. PDF 파일을 이미지로 변환할 수도 있습니다. 각 개별 페이지를 하나의 이미지로 변환하거나 전체 PDF 파일을 하나의 이미지로 변환할 수 있습니다. JPEG, BMP, PNG 및 TIFF 등의 형식을 지원합니다. PDF 파일에서 이미지를 추출할 수도 있습니다. 이러한 작업을 구현하기 위해 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades)의 네 가지 클래스를 사용할 수 있습니다: [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend), [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor), [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 및 [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter).
 
 ## 이미지 작업
 
-이 섹션에서는 이러한 이미지 작업을 자세히 살펴보겠습니다. 관련 클래스 및 메서드의 사용을 보여주는 코드 스니펫도 확인하겠습니다. 먼저, 기존 PDF 파일에 이미지를 추가하는 방법을 살펴보겠습니다. [PdfFileMend](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend) 클래스의 [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드를 사용하여 새 이미지를 추가할 수 있습니다. 이 메서드를 사용하면 이미지를 추가할 페이지 번호뿐만 아니라 이미지의 위치도 지정할 수 있습니다.
+이 섹션에서는 이러한 이미지 작업을 자세히 살펴보겠습니다. 관련 클래스 및 메서드의 사용을 보여주는 코드 스니펫도 확인하겠습니다. 먼저, 기존 PDF 파일에 이미지를 추가하는 방법을 살펴보겠습니다. [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) 클래스의 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드를 사용하여 새 이미지를 추가할 수 있습니다. 이 메서드를 사용하면 이미지를 추가할 페이지 번호뿐만 아니라 이미지의 위치도 지정할 수 있습니다.
 
 ## 기존 PDF 파일에 이미지 추가 (Facades)
 
-[PdfFileMend](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend) 클래스의 [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage) 메서드를 사용할 수 있습니다. [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage) 메서드는 추가할 이미지, 이미지를 추가할 페이지 번호 및 좌표 정보를 요구합니다. 그 후, [Close](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/close) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
+[PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) 클래스의 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) 메서드를 사용할 수 있습니다. [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) 메서드는 추가할 이미지, 이미지를 추가할 페이지 번호 및 좌표 정보를 요구합니다. 그 후, [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/close) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
 
 다음 예제에서는 imageStream을 사용하여 페이지에 이미지를 추가합니다:
 
@@ -124,7 +124,7 @@ private static void AddImage01()
 
 ![이미지 추가](/pdf/ko/net/images/add_image1.png)
 
-[CompositingParameters](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)의 도움으로 한 이미지를 다른 이미지 위에 겹쳐 놓을 수 있습니다:
+[CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)의 도움으로 한 이미지를 다른 이미지 위에 겹쳐 놓을 수 있습니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +248,7 @@ private static void AddImage04()
 
 ## 기존 PDF 파일에 텍스트 추가 (facades)
 
-여러 가지 방법으로 텍스트를 추가할 수 있습니다. 첫 번째 방법을 고려해 보겠습니다. [FormattedText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formattedtext)를 가져와 페이지에 추가합니다. 그런 다음 좌하단 모서리의 좌표를 지정하고 페이지에 텍스트를 추가합니다.
+여러 가지 방법으로 텍스트를 추가할 수 있습니다. 첫 번째 방법을 고려해 보겠습니다. [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)를 가져와 페이지에 추가합니다. 그런 다음 좌하단 모서리의 좌표를 지정하고 페이지에 텍스트를 추가합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -279,7 +279,7 @@ private static void AddText01()
 
 ![텍스트 추가](/pdf/ko/net/images/add_text.png)
 
-두 번째 방법은 [FormattedText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formattedtext)를 추가하는 것입니다. 추가로, 텍스트가 들어가야 할 사각형을 지정합니다.
+두 번째 방법은 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)를 추가하는 것입니다. 추가로, 텍스트가 들어가야 할 사각형을 지정합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -84,11 +84,11 @@ Mengekstrak tabel dari PDF bukanlah tugas yang sepele karena tabel dapat dibuat 
 
 Aspose.PDF for .NET memiliki alat untuk memudahkan pengambilan tabel. Untuk mengekstrak data tabel, Anda harus melakukan langkah-langkah berikut:
 
-1. Buka dokumen - buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
-1. Buat objek [TableAbsorber](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/tableabsorber).
-1. Tentukan halaman mana yang akan dianalisis dan terapkan [Visit](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/tableabsorber/methods/visit) ke halaman yang diinginkan. Data tabel akan dipindai dan hasilnya akan disimpan dalam [TableList](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/tableabsorber/properties/tablelist).
-1. `TableList` adalah daftar dari [AbsorbedTable](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/absorbedtable). Untuk mendapatkan data, iterasi melalui `TableList` dan tangani [RowList](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/absorbedtable/properties/rowlist) dan [CellList](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/absorbedrow/properties/celllist).
-1. Setiap [AbsorbedCell](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/absorbedcell) berisi koleksi [TextFragments](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/absorbedcell/properties/textfragments). Anda dapat memprosesnya untuk tujuan Anda sendiri.
+1. Buka dokumen - buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Buat objek [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber).
+1. Tentukan halaman mana yang akan dianalisis dan terapkan [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/visit) ke halaman yang diinginkan. Data tabel akan dipindai dan hasilnya akan disimpan dalam [TableList](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/properties/tablelist).
+1. `TableList` adalah daftar dari [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). Untuk mendapatkan data, iterasi melalui `TableList` dan tangani [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) dan [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
+1. Setiap [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) berisi koleksi [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). Anda dapat memprosesnya untuk tujuan Anda sendiri.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -135,7 +135,7 @@ private static void ExtractTable()
 
 ## Ekstrak tabel di area tertentu dari halaman PDF
 
-Setiap tabel yang diserap memiliki properti [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/absorbedtable/properties/rectangle) yang menggambarkan posisi tabel di halaman.
+Setiap tabel yang diserap memiliki properti [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle) yang menggambarkan posisi tabel di halaman.
 
 Jika Anda perlu mengekstrak tabel yang terletak di wilayah tertentu, Anda harus bekerja dengan koordinat tertentu.
 

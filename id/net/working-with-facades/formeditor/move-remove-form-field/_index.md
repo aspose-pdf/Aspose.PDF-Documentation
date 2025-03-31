@@ -77,7 +77,7 @@ draft: false
 
 ## Pindahkan Field Form ke Lokasi Baru dalam File PDF yang Ada
 
-Jika Anda ingin memindahkan field form ke lokasi baru, maka Anda dapat menggunakan metode [MoveField](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/movefield) dari kelas [FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor). Anda hanya perlu memberikan nama field dan lokasi baru dari field ini ke metode [MoveField](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/movefield). Anda juga perlu menyimpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/methods/save/index) dari kelas [FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor). Potongan kode berikut menunjukkan kepada Anda cara memindahkan field form ke lokasi baru dalam file PDF.
+Jika Anda ingin memindahkan field form ke lokasi baru, maka Anda dapat menggunakan metode [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) dari kelas [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Anda hanya perlu memberikan nama field dan lokasi baru dari field ini ke metode [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield). Anda juga perlu menyimpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) dari kelas [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Potongan kode berikut menunjukkan kepada Anda cara memindahkan field form ke lokasi baru dalam file PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -98,7 +98,7 @@ private static void MoveField()
 
 ## Hapus Field Form dari File PDF yang Ada
 
-Untuk menghapus field form dari file PDF yang ada, Anda dapat menggunakan metode RemoveField dari kelas FormEditor. Metode ini hanya membutuhkan satu argumen: nama field. Anda perlu membuat objek dari kelas FormEditor, memanggil metode [RemoveField](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/removefield) untuk menghapus field tertentu dari PDF dan kemudian memanggil metode Save untuk menyimpan file PDF yang diperbarui. Potongan kode berikut menunjukkan kepada Anda cara menghapus field form dari file PDF yang ada.
+Untuk menghapus field form dari file PDF yang ada, Anda dapat menggunakan metode RemoveField dari kelas FormEditor. Metode ini hanya membutuhkan satu argumen: nama field. Anda perlu membuat objek dari kelas FormEditor, memanggil metode [RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield) untuk menghapus field tertentu dari PDF dan kemudian memanggil metode Save untuk menyimpan file PDF yang diperbarui. Potongan kode berikut menunjukkan kepada Anda cara menghapus field form dari file PDF yang ada.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -119,7 +119,7 @@ private static void RemoveFields()
 
 ## Ganti Nama Field Form dalam PDF
 
-Anda juga dapat mengganti nama field Anda menggunakan metode [RenameField](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/renamefield) dari kelas [FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor).
+Anda juga dapat mengganti nama field Anda menggunakan metode [RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield) dari kelas [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

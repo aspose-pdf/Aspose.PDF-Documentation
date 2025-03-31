@@ -82,7 +82,7 @@ sitemap:
 
 ## PDF/A 문서를 PDF로 변환
 
-PDF/A 문서를 PDF로 변환하는 것은 원본 문서에서 <abbr title="Portable Document Format Archive">PDF/A</abbr> 제한을 제거하는 것을 의미합니다. 클래스 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document)에는 입력/소스 파일에서 PDF 준수 정보를 제거하는 [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/removepdfacompliance) 메서드가 있습니다.
+PDF/A 문서를 PDF로 변환하는 것은 원본 문서에서 <abbr title="Portable Document Format Archive">PDF/A</abbr> 제한을 제거하는 것을 의미합니다. 클래스 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)에는 입력/소스 파일에서 PDF 준수 정보를 제거하는 [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) 메서드가 있습니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

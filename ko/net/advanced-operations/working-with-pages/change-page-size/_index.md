@@ -84,13 +84,13 @@ Aspose.PDF for .NET을 사용하면 .NET 애플리케이션에서 간단한 코�
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-[Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 클래스에는 페이지 크기를 설정할 수 있는 SetPageSize(...) 메서드가 포함되어 있습니다. 아래의 코드 스니펫은 몇 가지 간단한 단계로 페이지 치수를 업데이트합니다:
+[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스에는 페이지 크기를 설정할 수 있는 SetPageSize(...) 메서드가 포함되어 있습니다. 아래의 코드 스니펫은 몇 가지 간단한 단계로 페이지 치수를 업데이트합니다:
 
 1. 소스 PDF 파일을 로드합니다.
-1. [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 객체에 페이지를 가져옵니다.
+1. [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 객체에 페이지를 가져옵니다.
 1. 주어진 페이지를 가져옵니다.
 1. SetPageSize(..) 메서드를 호출하여 치수를 업데이트합니다.
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 Save(..) 메서드를 호출하여 업데이트된 페이지 치수로 PDF 파일을 생성합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 Save(..) 메서드를 호출하여 업데이트된 페이지 치수로 PDF 파일을 생성합니다.
 
 {{% alert color="primary" %}}
 

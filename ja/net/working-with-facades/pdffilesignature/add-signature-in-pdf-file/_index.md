@@ -77,9 +77,9 @@ draft: false
 
 ## PDFファイルにデジタル署名を追加
 
-[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスを使用すると、PDFファイルに署名を追加できます。入力および出力PDFファイルを使用して[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスのオブジェクトを作成する必要があります。また、署名を追加したい位置に[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf/rectangle)オブジェクトを作成し、署名の外観を設定するために、[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)オブジェクトの[SignatureAppearance](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature/properties/signatureappearance)プロパティを使用して画像を指定できます。Aspose.Pdf.Facadesは、PKCS#1、PKCS#7、PKCS#7Detachedなどのさまざまな種類の署名も提供しています。特定のタイプの署名を作成するには、証明書ファイルとパスワードを使用して、**PKCS1**、**PKCS7**、または**PKCS7Detached**の特定のクラスのオブジェクトを作成する必要があります。
+[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスを使用すると、PDFファイルに署名を追加できます。入力および出力PDFファイルを使用して[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスのオブジェクトを作成する必要があります。また、署名を追加したい位置に[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle)オブジェクトを作成し、署名の外観を設定するために、[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)オブジェクトの[SignatureAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/signatureappearance)プロパティを使用して画像を指定できます。Aspose.Pdf.Facadesは、PKCS#1、PKCS#7、PKCS#7Detachedなどのさまざまな種類の署名も提供しています。特定のタイプの署名を作成するには、証明書ファイルとパスワードを使用して、**PKCS1**、**PKCS7**、または**PKCS7Detached**の特定のクラスのオブジェクトを作成する必要があります。
 
-特定の署名タイプのオブジェクトが作成されると、[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスの[Sign](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature/methods/sign/index)メソッドを使用してPDFに署名し、このクラスに特定の署名オブジェクトを渡すことができます。このメソッドに対して他の属性を指定することもできます。最後に、[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドを使用して署名されたPDFを保存する必要があります。以下のコードスニペットは、PDFファイルに署名を追加する方法を示しています。
+特定の署名タイプのオブジェクトが作成されると、[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスの[Sign](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/sign/index)メソッドを使用してPDFに署名し、このクラスに特定の署名オブジェクトを渡すことができます。このメソッドに対して他の属性を指定することもできます。最後に、[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスの[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドを使用して署名されたPDFを保存する必要があります。以下のコードスニペットは、PDFファイルに署名を追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void AddTwoSignature()
 ```
 
 署名が必要なフォームまたはアクロフォームを含むドキュメントについては、以下の例を参照してください。
-入力および出力PDFファイルを使用して[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスのオブジェクトを作成する必要があります。[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1)を使用してバインディングを行います。必要なプロパティを追加する能力を持つ署名を作成します。私たちの例では、「Reason」と「CustomAppearance」です。
+入力および出力PDFファイルを使用して[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスのオブジェクトを作成する必要があります。[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1)を使用してバインディングを行います。必要なプロパティを追加する能力を持つ署名を作成します。私たちの例では、「Reason」と「CustomAppearance」です。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

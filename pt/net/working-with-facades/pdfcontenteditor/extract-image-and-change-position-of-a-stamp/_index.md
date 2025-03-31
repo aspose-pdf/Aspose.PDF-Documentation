@@ -77,7 +77,7 @@ draft: false
 
 ## Extrair Imagem de um Carimbo de Imagem
 
-A classe [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor) permite que você extraia imagens de um carimbo em um arquivo PDF. Primeiro, você precisa criar um objeto da classe [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor) e vincular o arquivo PDF de entrada usando o método [BindPdf](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.facade/bindpdf/methods/3). Depois disso, chame o método [GetStamps](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) para obter um array de objetos StampInfo de uma página específica do arquivo PDF. Em seguida, você pode obter a imagem de um StampInfo usando a propriedade StampInfo.Image. Uma vez que você obtenha a imagem, pode salvá-la ou trabalhar com diferentes propriedades da imagem. O seguinte trecho de código mostra como extrair uma imagem de um carimbo de imagem.
+A classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) permite que você extraia imagens de um carimbo em um arquivo PDF. Primeiro, você precisa criar um objeto da classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) e vincular o arquivo PDF de entrada usando o método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Depois disso, chame o método [GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) para obter um array de objetos StampInfo de uma página específica do arquivo PDF. Em seguida, você pode obter a imagem de um StampInfo usando a propriedade StampInfo.Image. Uma vez que você obtenha a imagem, pode salvá-la ou trabalhar com diferentes propriedades da imagem. O seguinte trecho de código mostra como extrair uma imagem de um carimbo de imagem.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -136,7 +136,7 @@ private static void ExtractImageFromStamp()
 
 ## Mudar a Posição de um Carimbo em um arquivo PDF
 
-A classe [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor) permite que você mude a posição de um carimbo em um arquivo PDF. Primeiro, você precisa criar um objeto da classe [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor) e vincular o arquivo PDF de entrada usando o método [BindPdf](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.facade/bindpdf/methods/3). Depois disso, chame o método [MoveStamp](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) com o índice do carimbo e a nova posição em uma página específica do arquivo PDF. Em seguida, você pode salvar o arquivo atualizado usando o método [Save](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/methods/save). O seguinte trecho de código mostra como mover um carimbo em uma página específica.
+A classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) permite que você mude a posição de um carimbo em um arquivo PDF. Primeiro, você precisa criar um objeto da classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) e vincular o arquivo PDF de entrada usando o método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Depois disso, chame o método [MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) com o índice do carimbo e a nova posição em uma página específica do arquivo PDF. Em seguida, você pode salvar o arquivo atualizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save). O seguinte trecho de código mostra como mover um carimbo em uma página específica.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void ChangeStampPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-Além disso, você pode usar o método [MoveStampById](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) para mover um carimbo específico usando o StampId.
+Além disso, você pode usar o método [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) para mover um carimbo específico usando o StampId.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

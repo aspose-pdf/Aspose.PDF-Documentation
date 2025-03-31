@@ -91,9 +91,9 @@ Aspose.PDF for .NET APIを使用すると、C#およびVB.NETを使用してPDF�
 
 C#を使用してPDFファイルを作成するには、以下の手順を使用できます。
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのオブジェクトを作成します。
-1. Documentオブジェクトの[Pages](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/pages)コレクションに[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトを追加します。
-1. ページの[Paragraphs](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page/properties/paragraphs)コレクションに[TextFragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragment)を追加します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのオブジェクトを作成します。
+1. Documentオブジェクトの[Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages)コレクションに[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトを追加します。
+1. ページの[Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)コレクションに[TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)を追加します。
 1. 結果のPDFドキュメントを保存します。
 
 ```csharp

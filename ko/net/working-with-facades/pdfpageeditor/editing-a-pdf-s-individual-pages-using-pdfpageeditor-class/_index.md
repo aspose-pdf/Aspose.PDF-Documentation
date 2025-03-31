@@ -83,17 +83,17 @@ Aspose.Pdf.Facades 네임스페이스는 [Aspose.PDF for .NET](/pdf/ko/net/)에�
 
 ## 설명
 
-[PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor) 클래스는 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 및 [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스와 다릅니다. 먼저 차이점을 이해해야 하며, 그러면 PdfPageEditor 클래스를 더 잘 이해할 수 있습니다. PdfFileEditor 클래스는 페이지 추가, 삭제 또는 연결과 같은 파일의 모든 페이지를 조작할 수 있게 해주며, PdfContentEditor 클래스는 페이지의 내용, 즉 텍스트 및 기타 객체를 조작하는 데 도움을 줍니다. 반면, PdfPageEditor 클래스는 개별 페이지 자체와만 작업하며 회전, 확대 및 정렬 등을 수행합니다.
+[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 클래스는 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 및 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스와 다릅니다. 먼저 차이점을 이해해야 하며, 그러면 PdfPageEditor 클래스를 더 잘 이해할 수 있습니다. PdfFileEditor 클래스는 페이지 추가, 삭제 또는 연결과 같은 파일의 모든 페이지를 조작할 수 있게 해주며, PdfContentEditor 클래스는 페이지의 내용, 즉 텍스트 및 기타 객체를 조작하는 데 도움을 줍니다. 반면, PdfPageEditor 클래스는 개별 페이지 자체와만 작업하며 회전, 확대 및 정렬 등을 수행합니다.
 
 이 클래스에서 제공하는 기능은 크게 세 가지 범주로 나눌 수 있습니다: 전환, 정렬 및 표시. 아래에서 이러한 범주에 대해 논의하겠습니다.
 
 ### 전환
 
-이 클래스에는 전환과 관련된 두 가지 속성인 [TransitionType](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) 및 [TransitionDuration](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration)가 포함되어 있습니다. TransitionType은 프레젠테이션 중 다른 페이지에서 이 페이지로 이동할 때 사용할 전환 스타일을 지정합니다. TransitionDuration은 페이지의 표시 지속 시간을 지정합니다.
+이 클래스에는 전환과 관련된 두 가지 속성인 [TransitionType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) 및 [TransitionDuration](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration)가 포함되어 있습니다. TransitionType은 프레젠테이션 중 다른 페이지에서 이 페이지로 이동할 때 사용할 전환 스타일을 지정합니다. TransitionDuration은 페이지의 표시 지속 시간을 지정합니다.
 
 ### 정렬
 
-PdfPageEditor 클래스는 수평 및 수직 정렬을 모두 지원합니다. 이를 위해 두 가지 속성인 [Alignment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) 및 [VerticalAlignment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment)를 제공합니다. Alignment 속성은 내용을 수평으로 정렬하는 데 사용됩니다. Alignment 속성은 Center, Left 및 Right의 세 가지 옵션을 포함하는 AlignmentType 값을 취합니다. VerticalAlignment 속성은 Bottom, Center 및 Top의 세 가지 옵션을 포함하는 VerticalAlignmentType 값을 취합니다.
+PdfPageEditor 클래스는 수평 및 수직 정렬을 모두 지원합니다. 이를 위해 두 가지 속성인 [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) 및 [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment)를 제공합니다. Alignment 속성은 내용을 수평으로 정렬하는 데 사용됩니다. Alignment 속성은 Center, Left 및 Right의 세 가지 옵션을 포함하는 AlignmentType 값을 취합니다. VerticalAlignment 속성은 Bottom, Center 및 Top의 세 가지 옵션을 포함하는 VerticalAlignmentType 값을 취합니다.
 
 ### 표시
 
@@ -164,5 +164,5 @@ private static void EditPdfPages()
 ## 결론
 
 {{% alert color="primary" %}}
-이 기사에서는 [PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor) 클래스에 대해 자세히 살펴보았습니다. 이 클래스에서 제공하는 속성과 메서드를 설명했습니다. 개별 페이지를 조작하는 작업을 매우 쉽고 간단하게 만들어 줍니다.
+이 기사에서는 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 클래스에 대해 자세히 살펴보았습니다. 이 클래스에서 제공하는 속성과 메서드를 설명했습니다. 개별 페이지를 조작하는 작업을 매우 쉽고 간단하게 만들어 줍니다.
 {{% /alert %}}

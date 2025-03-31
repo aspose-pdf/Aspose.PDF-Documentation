@@ -78,9 +78,9 @@ sitemap:
 }
 </script>
 
-画像は各ページの[Resources](https://reference.aspose.com/pdf/ja/net/aspose.pdf/resources)コレクションの[Images](https://reference.aspose.com/pdf/ja/net/aspose.pdf/resources/properties/images)コレクションに保持されています。特定のページを抽出するには、特定の画像のインデックスを使用してImagesコレクションから画像を取得します。
+画像は各ページの[Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources)コレクションの[Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images)コレクションに保持されています。特定のページを抽出するには、特定の画像のインデックスを使用してImagesコレクションから画像を取得します。
 
-画像のインデックスは[XImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf/ximage)オブジェクトを返します。このオブジェクトは、抽出した画像を保存するために使用できるSaveメソッドを提供します。以下のコードスニペットは、PDFファイルから画像を抽出する方法を示しています。
+画像のインデックスは[XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage)オブジェクトを返します。このオブジェクトは、抽出した画像を保存するために使用できるSaveメソッドを提供します。以下のコードスニペットは、PDFファイルから画像を抽出する方法を示しています。
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 

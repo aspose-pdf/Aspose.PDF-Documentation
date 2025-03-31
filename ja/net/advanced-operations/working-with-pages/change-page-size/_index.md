@@ -84,13 +84,13 @@ Aspose.PDF for .NETを使用すると、.NETアプリケーション内で簡単
 
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)クラスには、ページサイズを設定するSetPageSize(...)メソッドがあります。以下のコードスニペットは、いくつかの簡単なステップでページ寸法を更新します：
+[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)クラスには、ページサイズを設定するSetPageSize(...)メソッドがあります。以下のコードスニペットは、いくつかの簡単なステップでページ寸法を更新します：
 
 1. ソースPDFファイルをロードします。
-1. [PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)オブジェクトにページを取得します。
+1. [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)オブジェクトにページを取得します。
 1. 指定されたページを取得します。
 1. SetPageSize(..)メソッドを呼び出して、その寸法を更新します。
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのSave(..)メソッドを呼び出して、更新されたページ寸法のPDFファイルを生成します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのSave(..)メソッドを呼び出して、更新されたページ寸法のPDFファイルを生成します。
 
 {{% alert color="primary" %}}
 

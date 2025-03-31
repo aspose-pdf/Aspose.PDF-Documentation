@@ -82,7 +82,7 @@ sitemap:
 
 ## 회전 속성을 사용하여 PDF 내 텍스트 회전하기
 
-[TextFragment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textfragment) 클래스의 회전 속성을 사용하여 다양한 각도로 텍스트를 회전할 수 있습니다. 텍스트 회전은 문서 생성의 다양한 시나리오에서 사용할 수 있습니다. 요구 사항에 따라 텍스트를 회전하기 위해 도 단위로 회전 각도를 지정할 수 있습니다. 텍스트 회전을 구현할 수 있는 다양한 시나리오를 확인해 보십시오.
+[TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) 클래스의 회전 속성을 사용하여 다양한 각도로 텍스트를 회전할 수 있습니다. 텍스트 회전은 문서 생성의 다양한 시나리오에서 사용할 수 있습니다. 요구 사항에 따라 텍스트를 회전하기 위해 도 단위로 회전 각도를 지정할 수 있습니다. 텍스트 회전을 구현할 수 있는 다양한 시나리오를 확인해 보십시오.
 
 ## TextFragment 및 TextBuilder를 사용하여 회전 구현하기
 

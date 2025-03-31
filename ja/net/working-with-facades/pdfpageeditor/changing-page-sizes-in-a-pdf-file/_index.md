@@ -77,7 +77,7 @@ draft: false
 
 ## 実装の詳細
 
-[PdfPageEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor) クラスは [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) 内に存在し、個々のページまたは複数のページのページサイズを一度に変更するために使用できる [PageSize](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor/properties/pagesize) プロパティを含んでいます。 Pages プロパティを使用して、新しいページサイズを適用するページの番号を指定することができます。 PageSize クラスは、そのメンバーとしてさまざまなページサイズのリストを保持しています。このクラスのいずれかのメンバーは、[PdfPageEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor) クラスの PageSize プロパティに割り当てることができます。 GetPageSize メソッドを使用して該当するページ番号を渡すことで、任意のページのページサイズを取得することもできます。
+[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) クラスは [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) 内に存在し、個々のページまたは複数のページのページサイズを一度に変更するために使用できる [PageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagesize) プロパティを含んでいます。 Pages プロパティを使用して、新しいページサイズを適用するページの番号を指定することができます。 PageSize クラスは、そのメンバーとしてさまざまなページサイズのリストを保持しています。このクラスのいずれかのメンバーは、[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) クラスの PageSize プロパティに割り当てることができます。 GetPageSize メソッドを使用して該当するページ番号を渡すことで、任意のページのページサイズを取得することもできます。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

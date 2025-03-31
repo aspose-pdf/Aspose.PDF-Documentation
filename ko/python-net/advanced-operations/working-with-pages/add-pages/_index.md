@@ -89,8 +89,8 @@ PDF 파일에 빈 페이지를 삽입하려면:
 
 1. 입력 PDF 파일로 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 클래스 객체를 생성합니다.
 
-1. 지정된 인덱스로 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 컬렉션의 [insert](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection/methods/insert) 메서드를 호출합니다.
-1. [save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
+1. 지정된 인덱스로 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 컬렉션의 [insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) 메서드를 호출합니다.
+1. [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
 
 다음 코드 스니펫은 PDF 파일에 페이지를 삽입하는 방법을 보여줍니다.
 

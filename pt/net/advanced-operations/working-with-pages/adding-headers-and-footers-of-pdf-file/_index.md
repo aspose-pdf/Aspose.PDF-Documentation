@@ -84,7 +84,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Adicionando Texto no Cabeçalho do Arquivo PDF
 
-Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/pt/net/aspose.pdf/textstamp) para adicionar texto no cabeçalho de um arquivo PDF. A classe TextStamp fornece propriedades necessárias para criar um carimbo baseado em texto, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar texto no cabeçalho, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Depois disso, você pode chamar o método AddStamp da Página para adicionar o texto no cabeçalho do PDF.
+Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) para adicionar texto no cabeçalho de um arquivo PDF. A classe TextStamp fornece propriedades necessárias para criar um carimbo baseado em texto, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar texto no cabeçalho, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Depois disso, você pode chamar o método AddStamp da Página para adicionar o texto no cabeçalho do PDF.
 
 Você precisa definir a propriedade TopMargin de tal forma que ajuste o texto na área do cabeçalho do seu PDF. Você também precisa definir HorizontalAlignment como Center e VerticalAlignment como Top.
 
@@ -164,7 +164,7 @@ private static void AddFooterText()
 
 ## Adicionando Imagem no Cabeçalho do Arquivo PDF
 
-Você pode usar a classe [ImageStamp](https://reference.aspose.com/pdf/pt/net/aspose.pdf/ImageStamp) para adicionar uma imagem no cabeçalho de um arquivo PDF. A classe Image Stamp fornece propriedades necessárias para criar um carimbo baseado em imagem, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar uma imagem no cabeçalho, você precisa criar um objeto Document e um objeto Image Stamp usando as propriedades necessárias. Depois disso, você pode chamar o método [AddStamp](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page/methods/addstamp) da Página para adicionar a imagem no cabeçalho do PDF.
+Você pode usar a classe [ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp) para adicionar uma imagem no cabeçalho de um arquivo PDF. A classe Image Stamp fornece propriedades necessárias para criar um carimbo baseado em imagem, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar uma imagem no cabeçalho, você precisa criar um objeto Document e um objeto Image Stamp usando as propriedades necessárias. Depois disso, você pode chamar o método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) da Página para adicionar a imagem no cabeçalho do PDF.
 
 {{% alert color="primary" %}}
 
@@ -210,7 +210,7 @@ Você pode usar a classe Image Stamp para adicionar uma imagem no rodapé de um 
 
 {{% alert color="primary" %}}
 
-Você precisa definir a propriedade [BottomMargin](https://reference.aspose.com/pdf/pt/net/aspose.pdf/stamp/properties/bottommargin) de tal forma que ajuste a imagem na área do rodapé do seu PDF. Você também precisa definir [HorizontalAlignment](https://reference.aspose.com/pdf/pt/net/aspose.pdf/stamp/properties/horizontalalignment) como `Center` e [VerticalAlignment](https://reference.aspose.com/pdf/pt/net/aspose.pdf/stamp/properties/verticalalignment) como `Bottom`.
+Você precisa definir a propriedade [BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin) de tal forma que ajuste a imagem na área do rodapé do seu PDF. Você também precisa definir [HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment) como `Center` e [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment) como `Bottom`.
 
 {{% /alert %}}
 
@@ -250,7 +250,7 @@ private static void AddImageFooter()
 
 Sabemos que podemos adicionar TextStamp na seção de Cabeçalho/Rodapé do documento usando as propriedades TopMargin ou Bottom Margin, mas às vezes podemos ter a necessidade de adicionar múltiplos cabeçalhos/rodapés em um único documento PDF. **Aspose.PDF for .NET** explica como fazer isso.
 
-Para atender a essa necessidade, criaremos objetos TextStamp individuais (o número de objetos depende do número de Cabeçalhos/Rodapés necessários) e os adicionaremos ao documento PDF. Também podemos especificar diferentes informações de formatação para cada objeto de carimbo. No exemplo a seguir, criamos um objeto Document e três objetos TextStamp e, em seguida, usamos o método [AddStamp](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page/methods/addstamp) da Página para adicionar o texto na seção do cabeçalho do PDF. O seguinte trecho de código mostra como adicionar uma imagem no rodapé de um arquivo PDF com Aspose.PDF for .NET.
+Para atender a essa necessidade, criaremos objetos TextStamp individuais (o número de objetos depende do número de Cabeçalhos/Rodapés necessários) e os adicionaremos ao documento PDF. Também podemos especificar diferentes informações de formatação para cada objeto de carimbo. No exemplo a seguir, criamos um objeto Document e três objetos TextStamp e, em seguida, usamos o método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) da Página para adicionar o texto na seção do cabeçalho do PDF. O seguinte trecho de código mostra como adicionar uma imagem no rodapé de um arquivo PDF com Aspose.PDF for .NET.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

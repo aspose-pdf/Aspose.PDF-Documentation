@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
  
 Desde o lançamento 24.4, escolher a fonte de papel pelo tamanho da página PDF na caixa de diálogo de impressão é possível. O próximo trecho de código permite selecionar uma bandeja de impressora com base no tamanho da página do PDF.
 
-Essa preferência pode ser ativada e desativada usando a propriedade [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/picktraybypdfsize/).
+Essa preferência pode ser ativada e desativada usando a propriedade [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## Predefinições da caixa de diálogo de impressão Escalonamento de página
 
-O próximo trecho de código tem como objetivo garantir que a propriedade [PrintScaling](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/printscaling/) seja aplicada e salva corretamente no PDF.
+O próximo trecho de código tem como objetivo garantir que a propriedade [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) seja aplicada e salva corretamente no PDF.
 
-A propriedade [PrintScaling](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/printscaling/) foi adicionada à classe [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/) com os valores `Aspose.Pdf.PrintScaling.AppDefault` ou `Aspose.Pdf.PrintScaling.None`.
+A propriedade [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) foi adicionada à classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) com os valores `Aspose.Pdf.PrintScaling.AppDefault` ou `Aspose.Pdf.PrintScaling.None`.
 
 A opção de escalonamento de página que deve ser selecionada quando uma caixa de diálogo de impressão é exibida para este documento. Os valores válidos são `None`, que indica nenhum escalonamento de página, e `AppDefault`, que indica o escalonamento de impressão padrão do leitor compatível. Se esta entrada tiver um valor não reconhecido, `AppDefault` deve ser usado. Valor padrão: `AppDefault`.
 

@@ -77,17 +77,17 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/FormEditor)クラスは、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)の一部であり、フォームフィールドの外観だけでなく、フィールドの動作も変更できます。この記事では、FormEditorクラスを使用してフィールドの外観、フィールド属性、およびフィールド制限を変更する方法を見ていきます。
+[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor)クラスは、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)の一部であり、フォームフィールドの外観だけでなく、フィールドの動作も変更できます。この記事では、FormEditorクラスを使用してフィールドの外観、フィールド属性、およびフィールド制限を変更する方法を見ていきます。
 
 {{% /alert %}}
 
 ## 実装の詳細
 
-[SetFieldAppearance](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/setfieldappearance)メソッドは、フォームフィールドの外観を変更するために使用されます。これは、AnnotationFlagをパラメーターとして受け取ります。AnnotationFlagは、HiddenやNoRotateなどの異なるメンバーを持つ列挙型です。
+[SetFieldAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldappearance)メソッドは、フォームフィールドの外観を変更するために使用されます。これは、AnnotationFlagをパラメーターとして受け取ります。AnnotationFlagは、HiddenやNoRotateなどの異なるメンバーを持つ列挙型です。
 
-[SetFieldAttributes](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/setfieldattribute)メソッドは、フォームフィールドの属性を変更するために使用されます。このメソッドに渡されるパラメーターは、ReadOnlyやRequiredなどのメンバーを含むPropertyFlag列挙型です。
+[SetFieldAttributes](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldattribute)メソッドは、フォームフィールドの属性を変更するために使用されます。このメソッドに渡されるパラメーターは、ReadOnlyやRequiredなどのメンバーを含むPropertyFlag列挙型です。
 
-[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/FormEditor)クラスは、フィールド制限を設定するためのメソッドも提供しています。これは、フィールドがどれだけの文字を入力できるかを示します。以下のコードスニペットは、これらのメソッドがどのように使用できるかを示しています。
+[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor)クラスは、フィールド制限を設定するためのメソッドも提供しています。これは、フィールドがどれだけの文字を入力できるかを示します。以下のコードスニペットは、これらのメソッドがどのように使用できるかを示しています。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

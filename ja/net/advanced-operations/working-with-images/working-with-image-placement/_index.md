@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Aspose.PDF for .NET 7.0.0のリリースに伴い、[ImagePlacement](https://reference.aspose.com/pdf/ja/net/aspose.pdf/imageplacement)、[ImagePlacementAbsorber](https://reference.aspose.com/pdf/ja/net/aspose.pdf/imageplacementabsorber)、および[ImagePlacementCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/imageplacementcollection)というクラスを導入しました。これらは、PDFドキュメント内の画像の解像度と位置を取得するための上記のクラスと同様の機能を提供します。
+Aspose.PDF for .NET 7.0.0のリリースに伴い、[ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement)、[ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber)、および[ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection)というクラスを導入しました。これらは、PDFドキュメント内の画像の解像度と位置を取得するための上記のクラスと同様の機能を提供します。
 
 - ImagePlacementAbsorberは、ImagePlacementオブジェクトのコレクションとして画像使用検索を実行します。
 - ImagePlacementは、実際の画像配置値を返すメンバーResolutionとRectangleを提供します。

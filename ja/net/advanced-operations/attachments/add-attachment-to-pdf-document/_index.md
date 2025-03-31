@@ -85,11 +85,11 @@ sitemap:
 
 1. 新しいC#プロジェクトを作成します。
 1. Aspose.PDF DLLへの参照を追加します。
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを作成します。
-1. 追加するファイルとファイルの説明を持つ[FileSpecification](https://reference.aspose.com/pdf/ja/net/aspose.pdf/filespecification)オブジェクトを作成します。
-1. [FileSpecification](https://reference.aspose.com/pdf/ja/net/aspose.pdf/filespecification)オブジェクトを[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[EmbeddedFiles](https://reference.aspose.com/pdf/ja/net/aspose.pdf/embeddedfilecollection)コレクションに、コレクションのAddメソッドを使用して追加します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成します。
+1. 追加するファイルとファイルの説明を持つ[FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification)オブジェクトを作成します。
+1. [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification)オブジェクトを[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションに、コレクションのAddメソッドを使用して追加します。
 
-[EmbeddedFiles](https://reference.aspose.com/pdf/ja/net/aspose.pdf/embeddedfilecollection)コレクションには、PDFファイル内のすべての添付ファイルが含まれています。次のコードスニペットは、PDFドキュメントに添付ファイルを追加する方法を示しています。
+[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションには、PDFファイル内のすべての添付ファイルが含まれています。次のコードスニペットは、PDFドキュメントに添付ファイルを追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

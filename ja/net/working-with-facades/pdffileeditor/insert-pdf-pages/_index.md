@@ -77,7 +77,7 @@ draft: false
 
 ## ファイルパスを使用して2つの番号の間にPDFページを挿入する
 
-特定のページ範囲を1つのPDFから別のPDFに挿入するには、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスの[Insert](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/insert/index)メソッドを使用します。そのためには、ページを挿入したい入力PDFファイル、挿入のためにページを取得するポートファイル、ページを挿入する場所、ポートファイルの挿入する必要があるページ範囲が必要です。この範囲は、開始ページと終了ページのパラメータで指定されます。最後に、指定されたページ範囲が挿入された出力PDFファイルが保存されます。以下のコードスニペットは、ファイルストリームを使用して2つの番号の間にPDFページを挿入する方法を示しています。
+特定のページ範囲を1つのPDFから別のPDFに挿入するには、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスの[Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index)メソッドを使用します。そのためには、ページを挿入したい入力PDFファイル、挿入のためにページを取得するポートファイル、ページを挿入する場所、ポートファイルの挿入する必要があるページ範囲が必要です。この範囲は、開始ページと終了ページのパラメータで指定されます。最後に、指定されたページ範囲が挿入された出力PDFファイルが保存されます。以下のコードスニペットは、ファイルストリームを使用して2つの番号の間にPDFページを挿入する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -97,7 +97,7 @@ private static void InsertPdfPagesBetweenTwoNumbersUsingFilePaths()
 
 ## ファイルパスを使用してPDFページの配列を挿入する
 
-特定のページを別のPDFファイルに挿入したい場合は、ページの整数配列を必要とする[Insert](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/insert/index)メソッドのオーバーロードを使用できます。この配列では、入力PDFファイルに挿入したい特定のページを指定できます。そのためには、ページを挿入したい入力PDFファイル、挿入のためにページを取得するポートファイル、ページを挿入する場所、入力PDFファイルに挿入する必要があるポートファイルのページの整数配列が必要です。この配列には、入力PDFファイルに挿入したい特定のページのリストが含まれています。最後に、指定されたページの配列が挿入された出力PDFファイルが保存されます。以下のコードスニペットは、ファイルパスを使用してPDFページの配列を挿入する方法を示しています。
+特定のページを別のPDFファイルに挿入したい場合は、ページの整数配列を必要とする[Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index)メソッドのオーバーロードを使用できます。この配列では、入力PDFファイルに挿入したい特定のページを指定できます。そのためには、ページを挿入したい入力PDFファイル、挿入のためにページを取得するポートファイル、ページを挿入する場所、入力PDFファイルに挿入する必要があるポートファイルのページの整数配列が必要です。この配列には、入力PDFファイルに挿入したい特定のページのリストが含まれています。最後に、指定されたページの配列が挿入された出力PDFファイルが保存されます。以下のコードスニペットは、ファイルパスを使用してPDFページの配列を挿入する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -118,7 +118,7 @@ private static void InsertArrayOfPdfPagesUsingFilePaths()
 
 ## ストリームを使用して2つの番号の間にPDFページを挿入する
 
-ストリームを使用してページ範囲を挿入したい場合は、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスの[Insert](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/insert/index)メソッドの適切なオーバーロードを使用するだけです。そのためには、ページを挿入したい入力PDFストリーム、挿入のためにページを取得するポートストリーム、ページを挿入する場所、入力PDFストリームに挿入する必要があるポートストリームのページ範囲が必要です。この範囲は、開始ページと終了ページのパラメータで指定されます。最後に、指定されたページ範囲が挿入された出力PDFストリームが保存されます。以下のコードスニペットは、ストリームを使用して2つの番号の間にPDFページを挿入する方法を示しています。
+ストリームを使用してページ範囲を挿入したい場合は、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスの[Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index)メソッドの適切なオーバーロードを使用するだけです。そのためには、ページを挿入したい入力PDFストリーム、挿入のためにページを取得するポートストリーム、ページを挿入する場所、入力PDFストリームに挿入する必要があるポートストリームのページ範囲が必要です。この範囲は、開始ページと終了ページのパラメータで指定されます。最後に、指定されたページ範囲が挿入された出力PDFストリームが保存されます。以下のコードスニペットは、ストリームを使用して2つの番号の間にPDFページを挿入する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

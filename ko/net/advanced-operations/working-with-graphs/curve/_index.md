@@ -83,7 +83,7 @@ sitemap:
 
 ## 곡선 객체 추가
 
-그래프 [Curve](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/curve)는 각각 세 개의 다른 선과 만나는 연결된 투영선의 집합입니다.
+그래프 [Curve](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve)는 각각 세 개의 다른 선과 만나는 연결된 투영선의 집합입니다.
 
 Aspose.PDF for .NET는 그래프에서 베지어 곡선을 사용하는 방법을 보여줍니다.
 베지어 곡선은 부드러운 곡선을 모델링하기 위해 컴퓨터 그래픽에서 널리 사용됩니다. 곡선은 제어 점의 볼록 껍질에 완전히 포함되며, 이 점들은 그래픽적으로 표시되고 곡선을 직관적으로 조작하는 데 사용될 수 있습니다.
@@ -93,10 +93,10 @@ Aspose.PDF for .NET는 그래프에서 베지어 곡선을 사용하는 방법�
 
 아래 단계를 따르십시오:
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 인스턴스를 생성합니다.
-1. 특정 치수를 가진 [Drawing object](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing)를 생성합니다.
-1. 드로잉 객체에 대한 [Border](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/graph/properties/border)를 설정합니다.
-1. 페이지의 단락 컬렉션에 [Graph](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/graph) 객체를 추가합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 인스턴스를 생성합니다.
+1. 특정 치수를 가진 [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)를 생성합니다.
+1. 드로잉 객체에 대한 [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border)를 설정합니다.
+1. 페이지의 단락 컬렉션에 [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) 객체를 추가합니다.
 1. PDF 파일을 저장합니다.
 
 ```csharp

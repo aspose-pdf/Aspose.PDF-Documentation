@@ -83,7 +83,7 @@ sitemap:
 
 ## **C#でのPDFからPostScriptへの変換**
 
-[PdfViewer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer/)クラスは、PDF文書を印刷する機能を提供し、このクラスの助けを借りてPDFファイルをPostScript形式に変換することもできます。PDFファイルをPostScriptに変換するには、まず任意のPSプリンターをインストールし、PdfViewerの助けを借りてファイルに印刷します。PSプリンターをインストールするには、プリンターベンダーが提供する指示を参照してください。次のコードスニペットは、PDFをPostScript形式に印刷および変換する方法を示しています。
+[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/)クラスは、PDF文書を印刷する機能を提供し、このクラスの助けを借りてPDFファイルをPostScript形式に変換することもできます。PDFファイルをPostScriptに変換するには、まず任意のPSプリンターをインストールし、PdfViewerの助けを借りてファイルに印刷します。PSプリンターをインストールするには、プリンターベンダーが提供する指示を参照してください。次のコードスニペットは、PDFをPostScript形式に印刷および変換する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -158,7 +158,7 @@ private static void PrintToPostscriptFile()
 
 ## 印刷ジョブのステータスを確認する
 
-PDFファイルは、物理プリンターやMicrosoft XPS Document Writerに印刷でき、印刷ダイアログを表示せずに[PdfViewer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer/)クラスを使用して印刷できます。大きなPDFファイルを印刷する場合、プロセスに時間がかかることがあるため、ユーザーは印刷プロセスが完了したか、問題が発生したかどうかを確信できないことがあります。印刷ジョブのステータスを確認するには、[PrintStatus](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer/printstatus/)プロパティを使用します。次のコードスニペットは、PDFファイルをXPSファイルに印刷し、印刷ステータスを取得する方法を示しています。
+PDFファイルは、物理プリンターやMicrosoft XPS Document Writerに印刷でき、印刷ダイアログを表示せずに[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/)クラスを使用して印刷できます。大きなPDFファイルを印刷する場合、プロセスに時間がかかることがあるため、ユーザーは印刷プロセスが完了したか、問題が発生したかどうかを確信できないことがあります。印刷ジョブのステータスを確認するには、[PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/)プロパティを使用します。次のコードスニペットは、PDFファイルをXPSファイルに印刷し、印刷ステータスを取得する方法を示しています。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -299,7 +299,7 @@ private static void CheckingPrintJobStatus()
 
 ## 印刷ジョブの所有者名を取得/設定する
 
-時々、印刷ジョブの所有者名（つまり、ウェブページで印刷ボタンを押した実際のユーザー）を取得または設定する必要があります。この情報は、PDFファイルを印刷する際に必要です。この要件を満たすために、[PrinterJobName](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer/printerjobname/)プロパティが使用されます。
+時々、印刷ジョブの所有者名（つまり、ウェブページで印刷ボタンを押した実際のユーザー）を取得または設定する必要があります。この情報は、PDFファイルを印刷する際に必要です。この要件を満たすために、[PrinterJobName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printerjobname/)プロパティが使用されます。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

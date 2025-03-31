@@ -93,7 +93,7 @@ No Aspose.PDF 25.2, adicionamos:
 **Outras melhorias notáveis**
 
 * Compressão de imagem sem perda de qualidade na [otimização de PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) aprimorada. Tamanho do documento comprimido reduzido.
-* O método [Repair](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/repair/) do Documento melhorado. Agora pode verificar e corrigir valores no array Annotation.Rect.
+* O método [Repair](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) do Documento melhorado. Agora pode verificar e corrigir valores no array Annotation.Rect.
 * Versão da dependência System.Text.Json atualizada para evitar possível vulnerabilidade CVE-2024-43485.
 * Detecção de ataque de assinatura PDF melhorada para evitar resultados falso-positivos.
 * Uma API pública para redigir o dicionário de recursos foi fornecida:
@@ -2581,7 +2581,7 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 
 ### Criação de PDF baseada em XML e XLS com parâmetros
 
-Para adicionar parâmetros XSL, precisamos criar nossa própria [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) e definir como propriedade em [XslFoLoadOptions](https://reference.aspose.com/pdf/pt/net/aspose.pdf/xslfoloadoptions). O seguinte trecho mostra como usar esta classe com os arquivos de exemplo descritos acima.
+Para adicionar parâmetros XSL, precisamos criar nossa própria [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) e definir como propriedade em [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). O seguinte trecho mostra como usar esta classe com os arquivos de exemplo descritos acima.
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()

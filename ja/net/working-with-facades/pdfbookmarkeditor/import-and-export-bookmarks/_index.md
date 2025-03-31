@@ -77,7 +77,7 @@ draft: false
 
 ## XMLから既存のPDFファイルへのブックマークのインポート
 
-[ImportBookmarksWithXml](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1)メソッドを使用すると、XMLファイルからPDFファイルにブックマークをインポートできます。ブックマークをインポートするには、[PdfBookmarkEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor)オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/facade/methods/bindpdf/index)メソッドを使用してPDFファイルをバインドする必要があります。その後、[ImportBookmarksWithXml](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1)メソッドを呼び出す必要があります。最後に、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。以下のコードスニペットは、XMLファイルからブックマークをインポートする方法を示しています。
+[ImportBookmarksWithXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1)メソッドを使用すると、XMLファイルからPDFファイルにブックマークをインポートできます。ブックマークをインポートするには、[PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor)オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index)メソッドを使用してPDFファイルをバインドする必要があります。その後、[ImportBookmarksWithXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1)メソッドを呼び出す必要があります。最後に、[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。以下のコードスニペットは、XMLファイルからブックマークをインポートする方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

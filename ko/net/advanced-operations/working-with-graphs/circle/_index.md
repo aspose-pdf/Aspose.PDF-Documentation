@@ -83,14 +83,14 @@ sitemap:
 
 ## 원 객체 추가
 
-막대 그래프와 마찬가지로 원 그래프는 여러 개의 개별 카테고리에서 데이터를 표시하는 데 사용할 수 있습니다. 그러나 막대 그래프와 달리 원 그래프는 전체를 구성하는 모든 카테고리에 대한 데이터가 있을 때만 사용할 수 있습니다. 그러므로 Aspose.PDF for .NET을 사용하여 [원](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/circle) 객체를 추가하는 방법을 살펴보겠습니다.
+막대 그래프와 마찬가지로 원 그래프는 여러 개의 개별 카테고리에서 데이터를 표시하는 데 사용할 수 있습니다. 그러나 막대 그래프와 달리 원 그래프는 전체를 구성하는 모든 카테고리에 대한 데이터가 있을 때만 사용할 수 있습니다. 그러므로 Aspose.PDF for .NET을 사용하여 [원](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/circle) 객체를 추가하는 방법을 살펴보겠습니다.
 
 아래 단계를 따르세요:
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 인스턴스를 생성합니다.
-1. 특정 크기로 [Drawing object](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing)를 생성합니다.
-1. Drawing object에 대한 [Border](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/graph/properties/border)를 설정합니다.
-1. 페이지의 단락 컬렉션에 [Graph](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/graph) 객체를 추가합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 인스턴스를 생성합니다.
+1. 특정 크기로 [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)를 생성합니다.
+1. Drawing object에 대한 [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border)를 설정합니다.
+1. 페이지의 단락 컬렉션에 [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) 객체를 추가합니다.
 1. PDF 파일을 저장합니다.
 
 ```csharp

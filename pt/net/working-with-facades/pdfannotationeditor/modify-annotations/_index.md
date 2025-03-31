@@ -79,9 +79,9 @@ sitemap:
 
 ## Modificar anotação
 
-O método [ModifyAnnotations](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) permite que você altere atributos básicos de uma anotação, ou seja, Assunto, Data de modificação, Autor, Cor da anotação e Sinalizador de abertura. Você também pode definir o Autor diretamente usando o método ModifyAnnotations. Esta classe também fornece dois métodos sobrecarregados para excluir anotações. O primeiro método chamado DeleteAnnotations exclui todas as anotações de um arquivo PDF.  
+O método [ModifyAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) permite que você altere atributos básicos de uma anotação, ou seja, Assunto, Data de modificação, Autor, Cor da anotação e Sinalizador de abertura. Você também pode definir o Autor diretamente usando o método ModifyAnnotations. Esta classe também fornece dois métodos sobrecarregados para excluir anotações. O primeiro método chamado DeleteAnnotations exclui todas as anotações de um arquivo PDF.  
 
-Por exemplo, no código a seguir, considere alterar o autor em nossa anotação usando [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
+Por exemplo, no código a seguir, considere alterar o autor em nossa anotação usando [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

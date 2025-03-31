@@ -89,10 +89,10 @@ C#でPDFをマージすることは、サードパーティライブラリを使
 
 2つのPDFファイルを連結するには：
 
-1. 各入力PDFファイルを含む2つの[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを作成します。
-1. 次に、他のPDFファイルを追加したいDocumentオブジェクトの[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションのAddメソッドを呼び出します。
+1. 各入力PDFファイルを含む2つの[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成します。
+1. 次に、他のPDFファイルを追加したいDocumentオブジェクトの[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションのAddメソッドを呼び出します。
 1. 2番目のDocumentオブジェクトのPageCollectionコレクションを最初のPageCollectionコレクションのAddメソッドに渡します。
-1. 最後に、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFファイルを保存します。
+1. 最後に、[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFファイルを保存します。
 
 以下のコードスニペットは、PDFファイルを連結する方法を示しています。
 

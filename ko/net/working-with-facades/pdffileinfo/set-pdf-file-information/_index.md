@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[PdfFileInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileinfo) 클래스는 PDF 파일의 파일 특정 정보를 설정할 수 있게 해줍니다. [PdfFileInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileinfo) 클래스의 객체를 생성한 다음 저자, 제목, 키워드 및 작성자 등의 다양한 파일 특정 속성을 설정해야 합니다. 마지막으로 [PdfFileInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileinfo) 객체의 [SaveNewInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
+[PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) 클래스는 PDF 파일의 파일 특정 정보를 설정할 수 있게 해줍니다. [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) 클래스의 객체를 생성한 다음 저자, 제목, 키워드 및 작성자 등의 다양한 파일 특정 속성을 설정해야 합니다. 마지막으로 [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) 객체의 [SaveNewInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
 
 다음 코드 스니펫은 PDF 파일 정보를 설정하는 방법을 보여줍니다.
 
@@ -103,7 +103,7 @@ private static void SetPdfInfo()
 
 ## 메타 정보 설정
 
-[SetMetaInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) 메서드는 정보를 추가할 수 있게 해줍니다. 우리의 예제에서는 필드를 추가했습니다. 다음 코드 스니펫을 확인하세요:
+[SetMetaInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) 메서드는 정보를 추가할 수 있게 해줍니다. 우리의 예제에서는 필드를 추가했습니다. 다음 코드 스니펫을 확인하세요:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

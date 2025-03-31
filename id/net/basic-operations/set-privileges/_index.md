@@ -82,7 +82,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Atur Hak pada File PDF yang Ada
 
-Untuk mengatur hak pada file PDF, buat objek dari kelas [DocumentPrivilege](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/documentprivilege) dan tentukan hak yang ingin Anda terapkan pada dokumen. Setelah hak ditentukan, berikan objek ini sebagai argumen ke metode [Encrypt](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/encrypt/methods/1) objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Potongan kode berikut menunjukkan cara mengatur hak file PDF.
+Untuk mengatur hak pada file PDF, buat objek dari kelas [DocumentPrivilege](https://reference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege) dan tentukan hak yang ingin Anda terapkan pada dokumen. Setelah hak ditentukan, berikan objek ini sebagai argumen ke metode [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Potongan kode berikut menunjukkan cara mengatur hak file PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void SetPrivilegesOnExistingPdfFile()
 
 ## Enkripsi File PDF menggunakan Berbagai Jenis dan Algoritma Enkripsi
 
-Anda dapat menggunakan metode [Encrypt](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/encrypt/methods/1) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) untuk mengenkripsi file PDF. Anda dapat memberikan kata sandi pengguna, kata sandi pemilik, dan izin ke metode [Encrypt](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/encrypt/methods/1). Selain itu, Anda dapat memberikan nilai apa pun dari enum [CryptoAlgorithm](https://reference.aspose.com/pdf/id/net/aspose.pdf/cryptoalgorithm). Enum ini menyediakan berbagai kombinasi algoritma enkripsi dan ukuran kunci. Anda dapat memberikan nilai pilihan Anda. Akhirnya, simpan file PDF yang telah dienkripsi menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+Anda dapat menggunakan metode [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) untuk mengenkripsi file PDF. Anda dapat memberikan kata sandi pengguna, kata sandi pemilik, dan izin ke metode [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1). Selain itu, Anda dapat memberikan nilai apa pun dari enum [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm). Enum ini menyediakan berbagai kombinasi algoritma enkripsi dan ukuran kunci. Anda dapat memberikan nilai pilihan Anda. Akhirnya, simpan file PDF yang telah dienkripsi menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 >Silakan tentukan kata sandi pengguna dan pemilik yang berbeda saat mengenkripsi file PDF.
 
@@ -145,7 +145,7 @@ Dalam hal ini, ada kebutuhan untuk mengakses file PDF yang dienkripsi, karena ak
 
 Lebih baik menyelesaikan masalah ini sekali dengan menggunakan pustaka Aspose.PDF.
 
-Untuk mendekripsi file PDF, Anda pertama-tama perlu membuat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dan membuka PDF menggunakan kata sandi pemilik. Setelah itu, Anda perlu memanggil metode [Decrypt](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/decrypt) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Akhirnya, simpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Potongan kode berikut menunjukkan cara mendekripsi file PDF.
+Untuk mendekripsi file PDF, Anda pertama-tama perlu membuat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dan membuka PDF menggunakan kata sandi pemilik. Setelah itu, Anda perlu memanggil metode [Decrypt](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/decrypt) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Akhirnya, simpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Potongan kode berikut menunjukkan cara mendekripsi file PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -167,7 +167,7 @@ private static void DecryptPdfFile()
 
 ## Ubah Kata Sandi File PDF
 
-Jika Anda ingin mengubah kata sandi file PDF, Anda pertama-tama perlu membuka file PDF menggunakan kata sandi pemilik dengan objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Setelah itu, Anda perlu memanggil metode [ChangePasswords](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/changepasswords) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Anda perlu memberikan kata sandi pemilik saat ini bersama dengan kata sandi pengguna baru dan kata sandi pemilik baru ke metode ini. Akhirnya, simpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+Jika Anda ingin mengubah kata sandi file PDF, Anda pertama-tama perlu membuka file PDF menggunakan kata sandi pemilik dengan objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Setelah itu, Anda perlu memanggil metode [ChangePasswords](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Anda perlu memberikan kata sandi pemilik saat ini bersama dengan kata sandi pengguna baru dan kata sandi pemilik baru ke metode ini. Akhirnya, simpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 >- Kata sandi pengguna, jika diatur, adalah yang perlu Anda berikan untuk membuka PDF. Acrobat/Reader akan meminta pengguna untuk memasukkan kata sandi pengguna. Jika tidak benar, dokumen tidak akan terbuka.
 >- Kata sandi pemilik, jika diatur, mengontrol izin, seperti mencetak, mengedit, mengekstrak, mengomentari, dll. Acrobat/Reader akan melarang hal-hal ini berdasarkan pengaturan izin. Acrobat akan meminta kata sandi ini jika Anda ingin mengatur/mengubah izin.

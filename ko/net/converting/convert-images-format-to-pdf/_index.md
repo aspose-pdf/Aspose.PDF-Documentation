@@ -156,7 +156,7 @@ Aspose.PDF for .NET API를 사용하여 BMP를 PDF 파일로 변환할 수 있�
 
 <a name="csharp-bmp-to-pdf" id="csharp-bmp-to-pdf"><strong>단계: C#에서 BMP를 PDF로 변환하기</strong></a>
 
-1. 새로운 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 초기화합니다.
+1. 새로운 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 초기화합니다.
 2. 입력 **BMP** 이미지를 로드합니다.
 3. 마지막으로 출력 PDF 파일을 저장합니다.
 
@@ -202,8 +202,8 @@ CGM 파일을 PDF 형식으로 변환하는 다음 코드 스니펫을 확인하
 
 <a name="csharp-cgm-to-pdf" id="csharp-cgm-to-pdf"><strong>단계: C#에서 CGM을 PDF로 변환하기</strong></a>
 
-1. [CgmLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/cgmloadoptions) 클래스의 인스턴스를 생성합니다.
-2. 소스 파일 이름과 옵션을 언급하여 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
+1. [CgmLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions) 클래스의 인스턴스를 생성합니다.
+2. 소스 파일 이름과 옵션을 언급하여 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
 3. 원하는 파일 이름으로 문서를 저장합니다.
 
 ```csharp
@@ -234,7 +234,7 @@ private static void ConvertCGMtoPDF()
 
 1. Image 클래스의 객체를 생성합니다.
 2. 페이지의 Paragraphs 컬렉션에 이미지를 추가합니다.
-3. [FileType](https://reference.aspose.com/pdf/ko/net/aspose.pdf/image/properties/filetype) 속성을 지정합니다.
+3. [FileType](https://reference.aspose.com/pdf/net/aspose.pdf/image/properties/filetype) 속성을 지정합니다.
 4. 파일의 경로 또는 소스를 지정합니다.
     - 이미지가 하드 드라이브의 위치에 있는 경우 Image.File 속성을 사용하여 경로 위치를 지정합니다.
     - 이미지가 MemoryStream에 있는 경우 이미지를 보유하는 객체를 Image.ImageStream 속성에 전달합니다.
@@ -281,7 +281,7 @@ Aspose는 ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-p
 
 <a name="csharp-emf-to-pdf" id="csharp-emf-to-pdf"><strong>단계: C#에서 EMF를 PDF로 변환하기</strong></a>
 
-1. 먼저 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 초기화합니다.
+1. 먼저 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 초기화합니다.
 2. **EMF** 이미지 파일을 로드합니다.
 3. 로드된 EMF 이미지를 페이지에 추가합니다.
 4. PDF 문서를 저장합니다.
@@ -337,7 +337,7 @@ Aspose.PDF for .NET API를 사용하여 GIF를 PDF 파일로 변환할 수 있�
 
 <a name="csharp-gif-to-pdf" id="csharp-gif-to-pdf"><strong>단계: C#에서 GIF를 PDF로 변환하기</strong></a>
 
-1. 새로운 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 초기화합니다.
+1. 새로운 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 초기화합니다.
 2. 입력 **GIF** 이미지를 로드합니다.
 3. 마지막으로 출력 PDF 파일을 저장합니다.
 
@@ -537,12 +537,12 @@ Aspose.PDF for .NET은 ["SVG to PDF"](https://products.aspose.app/pdf/conversion
 [![Aspose.PDF SVG를 PDF로 변환하는 무료 앱 사용](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
-SVG 파일을 PDF로 변환하려면 [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions)라는 클래스를 사용하여 [`LoadOptions`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/loadoptions) 객체를 초기화합니다. 이후 이 객체는 Document 객체 초기화 시 인수로 전달되어 PDF 렌더링 엔진이 소스 문서의 입력 형식을 결정하는 데 도움을 줍니다.
+SVG 파일을 PDF로 변환하려면 [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions)라는 클래스를 사용하여 [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) 객체를 초기화합니다. 이후 이 객체는 Document 객체 초기화 시 인수로 전달되어 PDF 렌더링 엔진이 소스 문서의 입력 형식을 결정하는 데 도움을 줍니다.
 
 <a name="csharp-svg-to-pdf" id="csharp-svg-to-pdf"><strong>단계: C#에서 SVG를 PDF로 변환하기</strong></a>
 
-1. [`SvgLoadOptions`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/loadoptions) 클래스의 인스턴스를 생성합니다.
-2. 소스 파일 이름과 옵션을 언급하여 [`Document`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
+1. [`SvgLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) 클래스의 인스턴스를 생성합니다.
+2. 소스 파일 이름과 옵션을 언급하여 [`Document`](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
 3. 원하는 파일 이름으로 문서를 저장합니다.
 
 다음 코드 스니펫은 Aspose.PDF for .NET을 사용하여 SVG 파일을 PDF 형식으로 변환하는 과정을 보여줍니다.
@@ -789,7 +789,7 @@ TIFF 또는 TIF, 태그 이미지 파일 형식은 이 파일 형식 표준을 �
 
 <a name="csharp-tiff-to-pdf" id="csharp-tiff-to-pdf"><strong>단계: C#에서 TIFF를 PDF로 변환하기</strong></a>
 
-1. 새로운 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 생성하고 페이지를 추가합니다.
+1. 새로운 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 생성하고 페이지를 추가합니다.
 2. 입력 **TIFF** 이미지를 로드합니다.
 3. PDF 문서를 저장합니다.
 
@@ -878,8 +878,8 @@ CDR 파일을 PDF 형식으로 변환하는 다음 코드 스니펫을 확인하
 
 <a name="csharp-cdr-to-pdf" id="csharp-cdr-to-pdf"><strong>단계: C#에서 CDR을 PDF로 변환하기</strong></a>
 
-1. [CdrLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/cdrloadoptions/) 클래스의 인스턴스를 생성합니다.
-2. 소스 파일 이름과 옵션을 언급하여 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
+1. [CdrLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cdrloadoptions/) 클래스의 인스턴스를 생성합니다.
+2. 소스 파일 이름과 옵션을 언급하여 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
 3. 원하는 파일 이름으로 문서를 저장합니다.
 
 ```csharp
@@ -906,8 +906,8 @@ DJVU 파일을 PDF 형식으로 변환하는 다음 코드 스니펫을 확인�
 
 <a name="csharp-djvu-to-pdf" id="csharp-djvu-to-pdf"><strong>단계: C#에서 DJVU를 PDF로 변환하기</strong></a>
 
-1. [DjvuLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/djvuloadoptions/) 클래스의 인스턴스를 생성합니다.
-2. 소스 파일 이름과 옵션을 언급하여 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
+1. [DjvuLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/djvuloadoptions/) 클래스의 인스턴스를 생성합니다.
+2. 소스 파일 이름과 옵션을 언급하여 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
 3. 원하는 파일 이름으로 문서를 저장합니다.
 
 ```csharp

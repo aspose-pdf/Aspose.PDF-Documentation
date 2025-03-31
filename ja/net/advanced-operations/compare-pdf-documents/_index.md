@@ -199,7 +199,7 @@ private static void ComparingEntireDocuments()
 
 特にプロフェッショナルな環境で文書を共同作成する際、同じファイルの複数のバージョンができることがよくあります。
 
-[GraphicalPdfComparer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/)クラスを使用してPDFドキュメントとページを比較できます。このクラスは、ページのグラフィックコンテンツの変更を比較するのに適しています。
+[GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/)クラスを使用してPDFドキュメントとページを比較できます。このクラスは、ページのグラフィックコンテンツの変更を比較するのに適しています。
 
 Aspose.PDF for .NETを使用すると、ドキュメントとページを比較し、比較結果をPDFドキュメントまたは画像ファイルに出力できます。
 
@@ -211,13 +211,13 @@ Aspose.PDF for .NETを使用すると、ドキュメントとページを比較�
 
 このクラスには、さらなる処理に適した形でページ画像の違いを取得するメソッドがあります：**ImagesDifference GetDifference(Page page1, Page page2)**。
 
-このメソッドは、比較される最初のページの画像と違いの配列を含む[ImagesDifference](https://reference.aspose.com/pdf/ja/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/)クラスのオブジェクトを返します。違いの配列と元の画像は、**RGB24bpp**ピクセル形式を持っています。
+このメソッドは、比較される最初のページの画像と違いの配列を含む[ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/)クラスのオブジェクトを返します。違いの配列と元の画像は、**RGB24bpp**ピクセル形式を持っています。
 
 ImagesDifferenceを使用すると、異なる画像を生成し、違いの配列を元の画像に追加することで、比較される2番目のページの画像を取得できます。これを行うには、**ImagesDifference.GetDestinationImageおよびImagesDifference.DifferenceToImage**メソッドを使用します。
 
 ### GetDifferenceメソッドを使用してPDFを比較する
 
-提供されたコードは、2つのPDFドキュメントを比較し、それらの違いの視覚的表現を生成する[GetDifference](https://reference.aspose.com/pdf/ja/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods)メソッドを定義しています。
+提供されたコードは、2つのPDFドキュメントを比較し、それらの違いの視覚的表現を生成する[GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods)メソッドを定義しています。
 
 このメソッドは、2つのPDFファイルの最初のページを比較し、2つのPNG画像を生成します：
 
@@ -259,7 +259,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 
 ### CompareDocumentsToPdfメソッドを使用してPDFを比較する
 
-提供されたコードスニペットは、2つのドキュメントを比較し、比較結果のPDFレポートを生成する[CompareDocumentsToPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/)メソッドを使用しています。
+提供されたコードスニペットは、2つのドキュメントを比較し、比較結果のPDFレポートを生成する[CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/)メソッドを使用しています。
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Gambar latar belakang dapat digunakan untuk menambahkan watermark, atau desain halus lainnya, ke dokumen. Dalam Aspose.PDF for .NET, setiap dokumen PDF adalah kumpulan halaman dan setiap halaman berisi kumpulan artefak. Kelas [BackgroundArtifact](https://reference.aspose.com/pdf/id/net/aspose.pdf/backgroundartifact) dapat digunakan untuk menambahkan gambar latar belakang ke objek halaman.
+Gambar latar belakang dapat digunakan untuk menambahkan watermark, atau desain halus lainnya, ke dokumen. Dalam Aspose.PDF for .NET, setiap dokumen PDF adalah kumpulan halaman dan setiap halaman berisi kumpulan artefak. Kelas [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) dapat digunakan untuk menambahkan gambar latar belakang ke objek halaman.
 
 Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 

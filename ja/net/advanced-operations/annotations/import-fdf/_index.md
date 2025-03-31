@@ -85,9 +85,9 @@ FDF（Forms Data Format）は、PDF文書内のフォームデータと注釈を
 
 {{% /alert %}}
 
-[PDFAnnotationEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfannotationeditor/)クラスには、FDFファイルからの注釈のインポートに関するメソッドが含まれています。[PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/)メソッドは、FDFドキュメントからPDFファイルに注釈をインポートする機能を提供します。
+[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/)クラスには、FDFファイルからの注釈のインポートに関するメソッドが含まれています。[PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/)メソッドは、FDFドキュメントからPDFファイルに注釈をインポートする機能を提供します。
 
-また、[Class Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/)には、FDFファイルからフィールドの内容をインポートし、新しいPDFに配置する[Form.ImportFdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/importfdf/)メソッドが含まれています。
+また、[Class Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/)には、FDFファイルからフィールドの内容をインポートし、新しいPDFに配置する[Form.ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/importfdf/)メソッドが含まれています。
 
 次のコードスニペットは、Form.ImportFdf()メソッドを使用してFDF形式の注釈をPDFにインポートする方法を示しています：
 

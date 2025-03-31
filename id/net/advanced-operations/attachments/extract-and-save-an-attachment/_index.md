@@ -85,7 +85,7 @@ Dengan Aspose.PDF, dimungkinkan untuk mendapatkan semua lampiran dari dokumen PD
 
 Untuk mendapatkan semua lampiran dari file PDF:
 
-1. Loop melalui koleksi [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) objek [EmbeddedFiles](https://reference.aspose.com/pdf/id/net/aspose.pdf/embeddedfilecollection). Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/id/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran. Setiap elemen dari koleksi ini mewakili objek [FileSpecification](https://reference.aspose.com/pdf/id/net/aspose.pdf/filespecification). Setiap iterasi dari loop foreach melalui koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/id/net/aspose.pdf/embeddedfilecollection) mengembalikan objek [FileSpecification](https://reference.aspose.com/pdf/id/net/aspose.pdf/filespecification).
+1. Loop melalui koleksi [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) objek [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection). Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran. Setiap elemen dari koleksi ini mewakili objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Setiap iterasi dari loop foreach melalui koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) mengembalikan objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
 1. Setelah objek tersedia, ambil baik semua properti file yang terlampir atau file itu sendiri.
 
 Potongan kode berikut menunjukkan cara mendapatkan semua lampiran dari dokumen PDF.

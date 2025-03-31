@@ -82,13 +82,13 @@ sitemap:
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-Adobe Acrobat으로 생성된 워터마크는 아티팩트라고 하며( PDF 사양의 14.8.2.2 실제 콘텐츠 및 아티팩트에 설명됨), 아티팩트와 함께 작업하기 위해 Aspose.PDF에는 두 개의 클래스가 있습니다: [Artifact](https://reference.aspose.com/pdf/ko/net/aspose.pdf/artifact) 및 [ArtifactCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/artifactcollection).
+Adobe Acrobat으로 생성된 워터마크는 아티팩트라고 하며( PDF 사양의 14.8.2.2 실제 콘텐츠 및 아티팩트에 설명됨), 아티팩트와 함께 작업하기 위해 Aspose.PDF에는 두 개의 클래스가 있습니다: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 및 [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 
-특정 페이지의 모든 아티팩트를 가져오기 위해 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 클래스에는 Artifacts 속성이 있습니다. 이 주제에서는 PDF 파일에서 아티팩트와 함께 작업하는 방법을 설명합니다.
+특정 페이지의 모든 아티팩트를 가져오기 위해 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스에는 Artifacts 속성이 있습니다. 이 주제에서는 PDF 파일에서 아티팩트와 함께 작업하는 방법을 설명합니다.
 
 ## 아티팩트 작업하기
 
-[Artifact](https://reference.aspose.com/pdf/ko/net/aspose.pdf/artifact) 클래스에는 다음과 같은 속성이 포함되어 있습니다:
+[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 클래스에는 다음과 같은 속성이 포함되어 있습니다:
 
 - **Artifact.Type**: 아티팩트 유형을 가져옵니다(Artifact.ArtifactType 열거형의 값으로 배경, 레이아웃, 페이지, 페이지 매김 및 정의되지 않음 지원).
 - **Artifact.Subtype**: 아티팩트 하위 유형을 가져옵니다(Artifact.ArtifactSubtype 열거형의 값으로 배경, 바닥글, 머리글, 정의되지 않음, 워터마크 지원).

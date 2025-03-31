@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Aspose.PDF for .NETは、PDFドキュメント内のフォームフィールドを作成/操作するための優れた機能を提供します。このAPIを使用すると、プログラム的にPDFファイル内のフォームフィールドを埋めたり、[FDFからPDFファイルにデータをインポートする](/pdf/ja/net/import-and-export-data/)、[XFDFからPDFファイルにデータをインポートする](/pdf/ja/net/import-and-export-data/)、[XMLからPDFファイルにデータをインポートする](/pdf/ja/net/import-and-export-data/)ことができます。また、[System.Data.DataTable](https://reference.aspose.com/pdf/ja/net/aspose.pdf.table/importdatatable/methods/1)オブジェクトからデータをインポートすることもできます。
+Aspose.PDF for .NETは、PDFドキュメント内のフォームフィールドを作成/操作するための優れた機能を提供します。このAPIを使用すると、プログラム的にPDFファイル内のフォームフィールドを埋めたり、[FDFからPDFファイルにデータをインポートする](/pdf/ja/net/import-and-export-data/)、[XFDFからPDFファイルにデータをインポートする](/pdf/ja/net/import-and-export-data/)、[XMLからPDFファイルにデータをインポートする](/pdf/ja/net/import-and-export-data/)ことができます。また、[System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1)オブジェクトからデータをインポートすることもできます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

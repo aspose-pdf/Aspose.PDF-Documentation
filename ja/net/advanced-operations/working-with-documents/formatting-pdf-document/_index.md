@@ -85,7 +85,7 @@ sitemap:
 
 このトピックでは、ドキュメントウィンドウ、ビューアアプリケーションのプロパティ、およびページの表示方法を理解するのに役立ちます。これらのプロパティを設定するには：
 
-[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスを使用してPDFファイルを開きます。これで、Documentオブジェクトのプロパティを設定できます。例えば：
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスを使用してPDFファイルを開きます。これで、Documentオブジェクトのプロパティを設定できます。例えば：
 
 - CenterWindow – ドキュメントウィンドウを画面の中央に配置します。デフォルト：false。
 - Direction – 読み取り順序。これは、ページが横に並べて表示されるときのレイアウト方法を決定します。デフォルト：左から右。
@@ -99,7 +99,7 @@ sitemap:
 
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-次のコードスニペットは、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスを使用してプロパティを取得する方法を示しています。
+次のコードスニペットは、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスを使用してプロパティを取得する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -154,7 +154,7 @@ private static void GetDocumentWindowProperties()
 
 このトピックでは、ドキュメントウィンドウ、ビューアアプリケーション、およびページ表示のプロパティを設定する方法を説明します。これらの異なるプロパティを設定するには：
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスを使用してPDFファイルを開きます。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスを使用してPDFファイルを開きます。
 1. Documentオブジェクトのプロパティを設定します。
 1. Saveメソッドを使用して更新されたPDFファイルを保存します。
 
@@ -171,7 +171,7 @@ private static void GetDocumentWindowProperties()
 - PageLayout。
 - PageMode。
 
-それぞれは、以下のコードで使用され、説明されています。次のコードスニペットは、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスを使用してプロパティを設定する方法を示しています。
+それぞれは、以下のコードで使用され、説明されています。次のコードスニペットは、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスを使用してプロパティを設定する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -229,7 +229,7 @@ private static void SetDocumentWindowProperties()
 
 PDFリーダーは、プラットフォームに関係なくドキュメントが同じように表示されるように、[14のコアフォント](https://en.wikipedia.org/wiki/PDF#Text)をサポートしています。PDFに14のコアフォントのいずれかでないフォントが含まれている場合、フォント置換を避けるためにフォントをPDFファイルに埋め込む必要があります。
 
-Aspose.PDF for .NETは、既存のPDFファイルへのフォント埋め込みをサポートしています。完全なフォントまたはフォントのサブセットを埋め込むことができます。フォントを埋め込むには、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスを使用してPDFファイルを開きます。次に、[Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text)クラスを使用してフォントをPDFファイルに埋め込みます。完全なフォントを埋め込むには、FontクラスのIsEmbededプロパティを使用します。フォントのサブセットを使用するには、IsSubsetプロパティを使用します。
+Aspose.PDF for .NETは、既存のPDFファイルへのフォント埋め込みをサポートしています。完全なフォントまたはフォントのサブセットを埋め込むことができます。フォントを埋め込むには、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスを使用してPDFファイルを開きます。次に、[Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text)クラスを使用してフォントをPDFファイルに埋め込みます。完全なフォントを埋め込むには、FontクラスのIsEmbededプロパティを使用します。フォントのサブセットを使用するには、IsSubsetプロパティを使用します。
 
 {{% alert color="primary" %}}
 
@@ -241,7 +241,7 @@ Aspose.PDF for .NETは、既存のPDFファイルへのフォント埋め込み�
 
 ### 標準タイプ1フォントの埋め込み
 
-一部のPDFドキュメントには、特別なAdobeフォントセットからのフォントがあります。このセットのフォントは「標準タイプ1フォント」と呼ばれます。このセットには14のフォントが含まれており、このタイプのフォントを埋め込むには特別なフラグ、すなわち[Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/embedstandardfonts)を使用する必要があります。以下は、標準タイプ1フォントを含むすべてのフォントが埋め込まれたドキュメントを取得するために使用できるコードスニペットです：
+一部のPDFドキュメントには、特別なAdobeフォントセットからのフォントがあります。このセットのフォントは「標準タイプ1フォント」と呼ばれます。このセットには14のフォントが含まれており、このタイプのフォントを埋め込むには特別なフラグ、すなわち[Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts)を使用する必要があります。以下は、標準タイプ1フォントを含むすべてのフォントが埋め込まれたドキュメントを取得するために使用できるコードスニペットです：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
 
 ### PDFドキュメントからすべてのフォントを取得
 
-PDFドキュメントからすべてのフォントを取得したい場合は、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスで提供されているFontUtilities.GetAllFonts()メソッドを使用できます。既存のPDFドキュメントからすべてのフォントを取得するためのコードスニペットは以下の通りです：
+PDFドキュメントからすべてのフォントを取得したい場合は、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスで提供されているFontUtilities.GetAllFonts()メソッドを使用できます。既存のPDFドキュメントからすべてのフォントを取得するためのコードスニペットは以下の通りです：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -450,7 +450,7 @@ private static void SetFontSubsetStrategy()
 
 時には、PDFドキュメントの現在のズームファクターを確認したい場合があります。Aspose.Pdfを使用すると、現在の値を確認することも、設定することもできます。
 
-[GoToAction](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/gotoaction)クラスのDestinationプロパティを使用すると、PDFファイルに関連付けられたズーム値を取得できます。同様に、ファイルのズームファクターを設定するためにも使用できます。
+[GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction)クラスのDestinationプロパティを使用すると、PDFファイルに関連付けられたズーム値を取得できます。同様に、ファイルのズームファクターを設定するためにも使用できます。
 
 #### ズームファクターの設定
 

@@ -86,7 +86,7 @@ Aspose.PDFを使用してドキュメントを解除し、次のリンクで結�
 
 {{% /alert %}}
 
-PDFファイルを復号化するには、[PdfFileSecurity](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity)オブジェクトを作成し、次に[DecryptFile](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile)メソッドを呼び出す必要があります。また、[DecryptFile](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile)メソッドにオーナーパスワードを渡す必要があります。以下のコードスニペットは、PDFファイルを復号化する方法を示しています。
+PDFファイルを復号化するには、[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity)オブジェクトを作成し、次に[DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile)メソッドを呼び出す必要があります。また、[DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile)メソッドにオーナーパスワードを渡す必要があります。以下のコードスニペットは、PDFファイルを復号化する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

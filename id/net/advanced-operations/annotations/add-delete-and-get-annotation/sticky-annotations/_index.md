@@ -85,7 +85,7 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 Anotasi watermark harus digunakan untuk mewakili grafik yang akan dicetak pada ukuran dan posisi tetap di halaman, terlepas dari dimensi halaman yang dicetak.
 
-Anda dapat menambahkan Teks Watermark menggunakan [WatermarkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/watermarkannotation) pada posisi tertentu di halaman PDF. Opasitas Watermark juga dapat dikontrol dengan menggunakan properti opasitas.
+Anda dapat menambahkan Teks Watermark menggunakan [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) pada posisi tertentu di halaman PDF. Opasitas Watermark juga dapat dikontrol dengan menggunakan properti opasitas.
 
 Silakan periksa potongan kode berikut untuk menambahkan WatermarkAnnotation.
 

@@ -93,13 +93,13 @@ sitemap:
 
 라이센스는 파일 또는 스트림 객체에서 로드할 수 있습니다. 라이센스를 설정하는 가장 쉬운 방법은 라이센스 파일을 Aspose.PDF.dll 파일과 동일한 폴더에 두고 경로 없이 파일 이름만 지정하는 것입니다. 아래 예제와 같이.
 
-Aspose.PDF for .NET와 함께 다른 Aspose for .NET 구성 요소를 사용하는 경우 [Aspose.Pdf.License](https://reference.aspose.com/pdf/ko/net/aspose.pdf/license)와 같이 라이센스의 네임스페이스를 지정하십시오.
+Aspose.PDF for .NET와 함께 다른 Aspose for .NET 구성 요소를 사용하는 경우 [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license)와 같이 라이센스의 네임스페이스를 지정하십시오.
 
 ### 파일에서 라이센스 로드하기
 
 라이센스를 적용하는 가장 쉬운 방법은 라이센스 파일을 Aspose.PDF.dll 파일과 동일한 폴더에 두고 경로 없이 파일 이름만 지정하는 것입니다.
 
-[SetLicense](https://reference.aspose.com/pdf/ko/net/aspose.pdf/license/methods/setlicense/index) 메서드를 호출할 때 전달하는 라이센스 이름은 라이센스 파일의 이름이어야 합니다. 예를 들어, 라이센스 파일 이름을 "Aspose.PDF.lic.xml"로 변경하면 해당 파일 이름을 Pdf.SetLicense(…) 메서드에 전달하십시오.
+[SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) 메서드를 호출할 때 전달하는 라이센스 이름은 라이센스 파일의 이름이어야 합니다. 예를 들어, 라이센스 파일 이름을 "Aspose.PDF.lic.xml"로 변경하면 해당 파일 이름을 Pdf.SetLicense(…) 메서드에 전달하십시오.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

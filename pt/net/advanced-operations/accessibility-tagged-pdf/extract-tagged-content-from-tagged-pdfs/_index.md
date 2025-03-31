@@ -85,7 +85,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Obtendo Conteúdo PDF Marcado
 
-Para obter o conteúdo de um Documento PDF com Texto Marcado, a Aspose.PDF oferece a propriedade [TaggedContent](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/properties/taggedcontent) da classe [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
+Para obter o conteúdo de um Documento PDF com Texto Marcado, a Aspose.PDF oferece a propriedade [TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 O seguinte trecho de código mostra como obter o conteúdo de um documento PDF com Texto Marcado:
 
@@ -144,7 +144,7 @@ private static void GetTaggedContent()
 
 ## Obtendo Estrutura Raiz
 
-Para obter a estrutura raiz do Documento PDF Marcado, a Aspose.PDF oferece a propriedade [StructTreeRootElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent) e [StructureElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/structureelement). O seguinte trecho de código mostra como obter a estrutura raiz do Documento PDF Marcado:
+Para obter a estrutura raiz do Documento PDF Marcado, a Aspose.PDF oferece a propriedade [StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) e [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). O seguinte trecho de código mostra como obter a estrutura raiz do Documento PDF Marcado:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void GetRootStructure()
 
 ## Acessando Elementos Filhos
 
-Para acessar elementos filhos de um Documento PDF Marcado, a Aspose.PDF oferece a classe [ElementList](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/elementlist). O seguinte trecho de código mostra como acessar elementos filhos de um Documento PDF Marcado:
+Para acessar elementos filhos de um Documento PDF Marcado, a Aspose.PDF oferece a classe [ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist). O seguinte trecho de código mostra como acessar elementos filhos de um Documento PDF Marcado:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -316,7 +316,7 @@ private static void AccessChildElements()
 
 ## Marcando Imagens em PDF Existente
 
-Para marcar imagens em um documento PDF existente, a Aspose.PDF oferece o método [FindElements](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) da classe [StructureElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/structureelement). Você pode adicionar texto alternativo para figuras usando a propriedade [AlternativeText](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) da classe [FigureElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/figureelement).
+Para marcar imagens em um documento PDF existente, a Aspose.PDF oferece o método [FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) da classe [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Você pode adicionar texto alternativo para figuras usando a propriedade [AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) da classe [FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement).
 
 O seguinte trecho de código mostra como marcar imagens em um documento PDF existente:
 

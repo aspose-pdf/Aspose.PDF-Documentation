@@ -84,11 +84,11 @@ Extrair tabelas de PDFs não é uma tarefa trivial porque as tabelas podem ser c
 
 Aspose.PDF for .NET possui uma ferramenta para facilitar a recuperação de tabelas. Para extrair dados de tabela, você deve realizar os seguintes passos:
 
-1. Abrir documento - instanciar um objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
-1. Criar um objeto [TableAbsorber](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/tableabsorber).
-1. Decidir quais páginas devem ser analisadas e aplicar [Visit](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/tableabsorber/methods/visit) nas páginas desejadas. Os dados tabulares serão escaneados e o resultado será armazenado em [TableList](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/tableabsorber/properties/tablelist).
-1. `TableList` é uma lista de [AbsorbedTable](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/absorbedtable). Para obter os dados, itere através de `TableList` e manipule [RowList](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/absorbedtable/properties/rowlist) e [CellList](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/absorbedrow/properties/celllist).
-1. Cada [AbsorbedCell](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/absorbedcell) contém uma coleção de [TextFragments](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/absorbedcell/properties/textfragments). Você pode processá-la para seus próprios fins.
+1. Abrir documento - instanciar um objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Criar um objeto [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber).
+1. Decidir quais páginas devem ser analisadas e aplicar [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/visit) nas páginas desejadas. Os dados tabulares serão escaneados e o resultado será armazenado em [TableList](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/properties/tablelist).
+1. `TableList` é uma lista de [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). Para obter os dados, itere através de `TableList` e manipule [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) e [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
+1. Cada [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) contém uma coleção de [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). Você pode processá-la para seus próprios fins.
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
@@ -135,7 +135,7 @@ private static void ExtractTable()
 
 ## Extrair tabela em área específica da página PDF
 
-Cada tabela absorvida tem a propriedade [Rectangle](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/absorbedtable/properties/rectangle) que descreve a posição da tabela na página.
+Cada tabela absorvida tem a propriedade [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle) que descreve a posição da tabela na página.
 
 Se você precisar extrair tabelas localizadas em uma região específica, deve trabalhar com coordenadas específicas.
 

@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
  
 24.4リリース以降、印刷ダイアログでPDFページサイズに基づいて用紙ソースを選択することが可能になりました。次のコードスニペットは、PDFのページサイズに基づいてプリンタートレイを選択することを可能にします。
 
-この設定は、[Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/picktraybypdfsize/)プロパティを使用してオンまたはオフに切り替えることができます。
+この設定は、[Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/)プロパティを使用してオンまたはオフに切り替えることができます。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## 印刷ダイアログプリセットページスケーリング
 
-次のコードスニペットは、[PrintScaling](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/printscaling/)プロパティが正しく適用され、PDFに保存されることを保証するためのものです。
+次のコードスニペットは、[PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/)プロパティが正しく適用され、PDFに保存されることを保証するためのものです。
 
-[PrintScaling](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/printscaling/)プロパティは、値`Aspose.Pdf.PrintScaling.AppDefault`または`Aspose.Pdf.PrintScaling.None`を持つ[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)クラスに追加されました。
+[PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/)プロパティは、値`Aspose.Pdf.PrintScaling.AppDefault`または`Aspose.Pdf.PrintScaling.None`を持つ[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)クラスに追加されました。
 
 このドキュメントの印刷ダイアログが表示されるときに選択されるべきページスケーリングオプションです。有効な値は、ページスケーリングなしを示す`None`と、準拠リーダーのデフォルト印刷スケーリングを示す`AppDefault`です。このエントリに認識されない値がある場合は、`AppDefault`を使用する必要があります。デフォルト値: `AppDefault`。
 

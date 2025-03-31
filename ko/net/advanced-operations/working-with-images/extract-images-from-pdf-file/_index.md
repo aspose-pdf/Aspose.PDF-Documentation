@@ -78,9 +78,9 @@ lastmod: "2022-02-17"
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-이미지는 각 페이지의 [Resources](https://reference.aspose.com/pdf/ko/net/aspose.pdf/resources) 컬렉션의 [Images](https://reference.aspose.com/pdf/ko/net/aspose.pdf/resources/properties/images) 컬렉션에 저장됩니다. 특정 페이지를 추출하려면 해당 이미지의 특정 인덱스를 사용하여 Images 컬렉션에서 이미지를 가져옵니다.
+이미지는 각 페이지의 [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) 컬렉션의 [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) 컬렉션에 저장됩니다. 특정 페이지를 추출하려면 해당 이미지의 특정 인덱스를 사용하여 Images 컬렉션에서 이미지를 가져옵니다.
 
-이미지의 인덱스는 [XImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf/ximage) 객체를 반환합니다. 이 객체는 추출된 이미지를 저장하는 데 사용할 수 있는 Save 메서드를 제공합니다. 다음 코드 스니펫은 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
+이미지의 인덱스는 [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage) 객체를 반환합니다. 이 객체는 추출된 이미지를 저장하는 데 사용할 수 있는 Save 메서드를 제공합니다. 다음 코드 스니펫은 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

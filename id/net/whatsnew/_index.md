@@ -93,7 +93,7 @@ Di Aspose.PDF 25.2 kami telah menambahkan:
 **Peningkatan notable lainnya**
 
 * Kompresi gambar tanpa kehilangan kualitas pada [optimisasi PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) ditingkatkan. Ukuran dokumen yang dikompresi berkurang.
-* Metode [Perbaikan](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/repair/) Dokumen ditingkatkan. Sekarang dapat memeriksa dan memperbaiki nilai dalam array Annotation.Rect.
+* Metode [Perbaikan](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) Dokumen ditingkatkan. Sekarang dapat memeriksa dan memperbaiki nilai dalam array Annotation.Rect.
 * Versi ketergantungan System.Text.Json diperbarui untuk menghindari kemungkinan kerentanan CVE-2024-43485.
 * Deteksi serangan tanda tangan PDF ditingkatkan untuk mencegah hasil positif palsu.
 * API publik untuk mendeklarasikan kamus sumber daya disediakan:
@@ -2581,7 +2581,7 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 
 ### Pembuatan PDF berdasarkan XML dan XLS dengan parameter
 
-Untuk menambahkan parameter XSL kami perlu membuat [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) sendiri dan mengatur sebagai properti dalam [XslFoLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/xslfoloadoptions). Cuplikan berikut menunjukkan cara menggunakan kelas ini dengan file contoh yang dijelaskan di atas.
+Untuk menambahkan parameter XSL kami perlu membuat [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) sendiri dan mengatur sebagai properti dalam [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Cuplikan berikut menunjukkan cara menggunakan kelas ini dengan file contoh yang dijelaskan di atas.
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()

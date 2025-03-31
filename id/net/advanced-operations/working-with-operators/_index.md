@@ -87,7 +87,7 @@ Aliran konten adalah objek aliran PDF yang datanya terdiri dari instruksi yang m
 
 ### Detail Implementasi
 
-Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF. Contoh yang dipilih menambahkan gambar ke dalam file PDF untuk menggambarkan konsep tersebut. Untuk menambahkan gambar dalam file PDF, operator yang berbeda diperlukan. Contoh ini menggunakan [GSave](https://reference.aspose.com/pdf/id/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/id/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/id/net/aspose.pdf.ioperatorselector/visit/methods/14), dan [GRestore](https://reference.aspose.com/pdf/id/net/aspose.pdf.ioperatorselector/visit/methods/26).
+Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF. Contoh yang dipilih menambahkan gambar ke dalam file PDF untuk menggambarkan konsep tersebut. Untuk menambahkan gambar dalam file PDF, operator yang berbeda diperlukan. Contoh ini menggunakan [GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14), dan [GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26).
 
 - Operator **GSave** menyimpan status grafis saat ini dari PDF.
 - Operator **ConcatenateMatrix** (matriks gabungan) digunakan untuk menentukan bagaimana gambar harus ditempatkan di halaman PDF.
@@ -96,7 +96,7 @@ Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF. Contoh yang d
 
 Untuk menambahkan gambar ke dalam file PDF:
 
-1. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dan buka dokumen PDF input.
+1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dan buka dokumen PDF input.
 1. Dapatkan halaman tertentu tempat gambar akan ditambahkan.
 1. Tambahkan gambar ke dalam koleksi Sumber halaman.
 1. Gunakan operator untuk menempatkan gambar di halaman:
@@ -235,7 +235,7 @@ private static void DrawXFormOnPage()
 
 ## Menghapus Objek Grafik menggunakan Kelas Operator
 
-Kelas operator menyediakan fitur hebat untuk manipulasi PDF. Ketika file PDF berisi grafik yang tidak dapat dihapus menggunakan metode [DeleteImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor), kelas operator dapat digunakan untuk menghapusnya sebagai gantinya.
+Kelas operator menyediakan fitur hebat untuk manipulasi PDF. Ketika file PDF berisi grafik yang tidak dapat dihapus menggunakan metode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor), kelas operator dapat digunakan untuk menghapusnya sebagai gantinya.
 
 Potongan kode berikut menunjukkan cara menghapus grafik. Harap dicatat bahwa jika file PDF berisi label teks untuk grafik, mereka mungkin tetap ada di file PDF, menggunakan pendekatan ini. Oleh karena itu, cari operator grafik untuk metode alternatif untuk menghapus gambar semacam itu.
 

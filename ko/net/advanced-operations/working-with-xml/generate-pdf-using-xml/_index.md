@@ -519,7 +519,7 @@ XSL-FO는 XML 데이터를 화면, 종이 또는 기타 매체로 출력하기 �
 </xsl:stylesheet>
 ```
 
-Aspose.PDF에는 XSL-FO 변환을 적용할 수 있는 특별한 [XslFoLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/xslfoloadoptions) 클래스가 있습니다.
+Aspose.PDF에는 XSL-FO 변환을 적용할 수 있는 특별한 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) 클래스가 있습니다.
 다음 스니펫은 위에서 설명한 샘플 파일과 함께 이 클래스를 사용하는 방법을 보여줍니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -660,7 +660,7 @@ private static void ExampleXslfoToPdf()
 ```
 
 XSL 매개변수를 추가하려면 자체 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)를 생성하고
-[XslFoLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/xslfoloadoptions)에서 속성으로 설정해야 합니다.
+[XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions)에서 속성으로 설정해야 합니다.
 다음 스니펫은 위에서 설명한 샘플 파일과 함께 이 클래스를 사용하는 방법을 보여줍니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -826,7 +826,7 @@ XML에서 PDF 문서를 생성하는 또 다른 방법은 Aspose.PDF XML 스키�
 </Document>
 ```
 
-PDF 문서를 생성하기 위해 [BindXml](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/bindxml/index) 메서드를 사용할 것입니다.
+PDF 문서를 생성하기 위해 [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index) 메서드를 사용할 것입니다.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

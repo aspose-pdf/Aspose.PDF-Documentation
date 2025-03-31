@@ -77,8 +77,8 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)は、[Aspose.PDF for .NET](/pdf/ja/net/)でPDFフォームを埋めるためのさまざまな方法を提供します。XMLファイル、DFD、XFDFからデータをインポートしたり、APIを使用したり、Excelワークシートからデータを使用することもできます。
-私たちは、ExcelシートからDataTableオブジェクトにデータをエクスポートするために、[Aspose.Cells](https://docs.aspose.com//cells/net)の[Cells](https://reference.aspose.com/pdf/ja/net/aspose.pdf/cells)クラスの[ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index)メソッドを使用します。次に、[AutoFiller](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/autofiller)クラスの[ImportDataTable](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/autofiller/methods/importdatatable)メソッドを使用して、このデータをPDFフォームにインポートします。DataTableの列名がPDFフォームのフィールド名と同じであることを確認してください。
+[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)は、[Aspose.PDF for .NET](/pdf/ja/net/)でPDFフォームを埋めるためのさまざまな方法を提供します。XMLファイル、DFD、XFDFからデータをインポートしたり、APIを使用したり、Excelワークシートからデータを使用することもできます。
+私たちは、ExcelシートからDataTableオブジェクトにデータをエクスポートするために、[Aspose.Cells](https://docs.aspose.com//cells/net)の[Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells)クラスの[ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index)メソッドを使用します。次に、[AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller)クラスの[ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable)メソッドを使用して、このデータをPDFフォームにインポートします。DataTableの列名がPDFフォームのフィールド名と同じであることを確認してください。
 
 {{% /alert %}}
 
@@ -92,7 +92,7 @@ draft: false
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
-[AutoFiller](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/autofiller)クラスのオブジェクトを作成し、上記の画像にあるPDFフォームをバインドし、[ImportDataTable](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/autofiller/methods/importdatatable)メソッドを使用してDataTableオブジェクトにあるデータを使用してフォームフィールドを埋めます。
+[AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller)クラスのオブジェクトを作成し、上記の画像にあるPDFフォームをバインドし、[ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable)メソッドを使用してDataTableオブジェクトにあるデータを使用してフォームフィールドを埋めます。
 メソッドが呼び出されると、新しいPDFフォームファイルが生成され、Excelシートのデータに基づいてフォームが埋められた5ページが含まれます。入力PDFフォームは1ページで、結果は5ページです。これは、Excelシートのデータ行の数が5であるためです。DataTableクラスは、シートの最初の行をColumnNameとして使用する機能を提供します。
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
@@ -216,5 +216,5 @@ private static System.Data.DataTable GenerateDataTable()
 ## 結論
 
 {{% alert color="primary" %}}
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)は、データベースからのデータを使用してPDFフォームを埋める機能も提供していますが、この機能は現在.NETバージョンでのみサポートされています。
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)は、データベースからのデータを使用してPDFフォームを埋める機能も提供していますが、この機能は現在.NETバージョンでのみサポートされています。
 {{% /alert %}}

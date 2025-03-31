@@ -85,13 +85,13 @@ sitemap:
 
 텍스트 주석은 PDF 문서의 특정 위치에 첨부된 주석입니다. 닫힐 때 주석은 아이콘으로 표시되며, 열릴 때는 독자가 선택한 글꼴과 크기로 된 노트 텍스트가 포함된 팝업 창이 표시되어야 합니다.
 
-주석은 특정 페이지의 [Annotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations) 컬렉션에 포함됩니다. 이 컬렉션은 해당 개별 페이지의 주석만 포함하며, 모든 페이지는 고유한 Annotations 컬렉션을 가지고 있습니다.
+주석은 특정 페이지의 [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) 컬렉션에 포함됩니다. 이 컬렉션은 해당 개별 페이지의 주석만 포함하며, 모든 페이지는 고유한 Annotations 컬렉션을 가지고 있습니다.
 
-특정 페이지에 주석을 추가하려면 [Add](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationcollection/methods/add) 메서드를 사용하여 해당 페이지의 Annotations 컬렉션에 추가합니다.
+특정 페이지에 주석을 추가하려면 [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add) 메서드를 사용하여 해당 페이지의 Annotations 컬렉션에 추가합니다.
 
 1. 먼저 PDF에 추가할 주석을 생성합니다.
 1. 그런 다음 입력 PDF를 엽니다.
-1. 주석을 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체의 Annotations 컬렉션에 추가합니다.
+1. 주석을 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체의 Annotations 컬렉션에 추가합니다.
 
 다음 코드 스니펫은 PDF 페이지에 주석을 추가하는 방법을 보여줍니다.
 
@@ -136,7 +136,7 @@ private static void AddTextAnnotationToPdf()
 
 자신의 외관 스트림이나 관련 작업이 없으며, 부모의 주석 사전에서 Popup 항목으로 식별됩니다.
 
-다음 코드 스니펫은 부모의 [Line annotation](/pdf/ko/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file)을 추가하는 예제를 사용하여 PDF 페이지에 [Popup Annotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/popupannotation)을 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 부모의 [Line annotation](/pdf/ko/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file)을 추가하는 예제를 사용하여 PDF 페이지에 [Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation)을 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void AddLineAnnotation()
 
 ## 새로운 자유 텍스트 주석 추가(또는 생성)하는 방법
 
-자유 텍스트 주석은 페이지에 직접 텍스트를 표시합니다. [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 메서드를 사용하여 이 유형의 주석을 생성할 수 있습니다. 다음 스니펫에서는 문자열의 첫 번째 발생 위에 자유 텍스트 주석을 추가합니다.
+자유 텍스트 주석은 페이지에 직접 텍스트를 표시합니다. [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 메서드를 사용하여 이 유형의 주석을 생성할 수 있습니다. 다음 스니펫에서는 문자열의 첫 번째 발생 위에 자유 텍스트 주석을 추가합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -216,7 +216,7 @@ private static void AddFreeTextAnnotationDemo()
 
 ### FreeTextAnnotation의 Callout 속성 설정
 
-PDF 문서에서 주석을 보다 유연하게 구성하기 위해 Aspose.PDF for .NET는 [FreeTextAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/freetextannotation) 클래스의 [Callout](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/freetextannotation/properties/callout) 속성을 제공하여 호출선의 점 배열을 지정할 수 있습니다. 다음 코드 스니펫은 이 기능을 사용하는 방법을 보여줍니다.
+PDF 문서에서 주석을 보다 유연하게 구성하기 위해 Aspose.PDF for .NET는 [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 클래스의 [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) 속성을 제공하여 호출선의 점 배열을 지정할 수 있습니다. 다음 코드 스니펫은 이 기능을 사용하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -351,9 +351,9 @@ private static void AddInvisibleAnnotation()
 
 이 부분에서는 자유 텍스트 주석의 텍스트를 서식 지정하는 방법을 살펴봅니다.
 
-주석은 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체의 [AnnotationCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationcollection) 컬렉션에 포함됩니다. PDF 문서에 [FreeTextAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/freetextannotation)을 추가할 때 글꼴, 크기, 색상 등의 서식 정보를 [DefaultAppearance](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/defaultappearance/methods/index) 클래스를 사용하여 지정할 수 있습니다. 또한 TextStyle 속성을 사용하여 서식 정보를 지정할 수도 있습니다. 게다가, PDF 문서에 이미 있는 모든 FreeTextAnnotation의 서식을 업데이트할 수 있습니다.
+주석은 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체의 [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 컬렉션에 포함됩니다. PDF 문서에 [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation)을 추가할 때 글꼴, 크기, 색상 등의 서식 정보를 [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index) 클래스를 사용하여 지정할 수 있습니다. 또한 TextStyle 속성을 사용하여 서식 정보를 지정할 수도 있습니다. 게다가, PDF 문서에 이미 있는 모든 FreeTextAnnotation의 서식을 업데이트할 수 있습니다.
 
-[TextStyle](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/textstyle) 클래스는 기본 스타일 항목과 함께 작업하는 것을 지원합니다. 이 클래스는 색상, 글꼴 크기 및 글꼴 이름을 설정할 수 있습니다:
+[TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) 클래스는 기본 스타일 항목과 함께 작업하는 것을 지원합니다. 이 클래스는 색상, 글꼴 크기 및 글꼴 이름을 설정할 수 있습니다:
 
 - FontName 속성은 글꼴 이름(string)을 가져오거나 설정합니다.
 - FontSize 속성은 기본 텍스트 크기(double)를 가져오거나 설정합니다.
@@ -434,7 +434,7 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
 
 ### StrikeOutAnnotation을 사용하여 단어 삭제하기
 
-Aspose.PDF for .NET는 PDF 문서에서 주석을 추가, 삭제 및 업데이트할 수 있습니다. 특정 클래스를 사용하여 주석을 삭제할 수도 있습니다. 이는 문서에서 하나 이상의 텍스트 조각을 삭제하고자 할 때 유용합니다. 주석은 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체의 [AnnotationCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationcollection) 컬렉션에 포함됩니다. [StrikeOutAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/strikeoutannotation)이라는 클래스를 사용하여 PDF 문서에 스트라이크 아웃 주석을 추가할 수 있습니다.
+Aspose.PDF for .NET는 PDF 문서에서 주석을 추가, 삭제 및 업데이트할 수 있습니다. 특정 클래스를 사용하여 주석을 삭제할 수도 있습니다. 이는 문서에서 하나 이상의 텍스트 조각을 삭제하고자 할 때 유용합니다. 주석은 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체의 [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 컬렉션에 포함됩니다. [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation)이라는 클래스를 사용하여 PDF 문서에 스트라이크 아웃 주석을 추가할 수 있습니다.
 
 특정 TextFragment를 삭제하려면:
 
@@ -502,7 +502,7 @@ private void StrikeOutTextInDocument()
 
 ## PDF 파일의 페이지에서 모든 주석 삭제하기
 
-[Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체의 [AnnotationCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationcollection) 컬렉션은 해당 특정 페이지의 모든 주석을 포함합니다. 페이지에서 모든 주석을 삭제하려면 AnnotationCollectoin 컬렉션의 *Delete* 메서드를 호출합니다.
+[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체의 [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 컬렉션은 해당 특정 페이지의 모든 주석을 포함합니다. 페이지에서 모든 주석을 삭제하려면 AnnotationCollectoin 컬렉션의 *Delete* 메서드를 호출합니다.
 
 다음 코드 스니펫은 특정 페이지에서 모든 주석을 삭제하는 방법을 보여줍니다.
 
@@ -536,7 +536,7 @@ Aspose.PDF의 품질을 확인하고 이 링크에서 결과를 온라인으로 
 
 Aspose.PDF는 PDF 파일에서 특정 주석을 제거할 수 있습니다. 이 주제에서는 그 방법을 설명합니다.
 
-PDF에서 특정 주석을 삭제하려면 [AnnotationCollection 컬렉션의 Delete 메서드](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations.annotationcollection/delete/methods/1)를 호출합니다. 이 컬렉션은 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체에 속합니다. Delete 메서드는 삭제할 주석의 인덱스를 요구합니다. 그런 다음 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 특정 주석을 삭제하는 방법을 보여줍니다.
+PDF에서 특정 주석을 삭제하려면 [AnnotationCollection 컬렉션의 Delete 메서드](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1)를 호출합니다. 이 컬렉션은 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체에 속합니다. Delete 메서드는 삭제할 주석의 인덱스를 요구합니다. 그런 다음 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 특정 주석을 삭제하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -559,7 +559,7 @@ private static void DeleteParticularAnnotation()
 
 ## PDF 문서의 페이지에서 모든 주석 가져오기
 
-Aspose.PDF는 전체 문서 또는 특정 페이지에서 주석을 가져올 수 있습니다. PDF 문서의 페이지에서 모든 주석을 가져오려면 원하는 페이지 리소스의 [AnnotationCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationcollection) 컬렉션을 반복합니다. 다음 코드 스니펫은 페이지의 모든 주석을 가져오는 방법을 보여줍니다.
+Aspose.PDF는 전체 문서 또는 특정 페이지에서 주석을 가져올 수 있습니다. PDF 문서의 페이지에서 모든 주석을 가져오려면 원하는 페이지 리소스의 [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 컬렉션을 반복합니다. 다음 코드 스니펫은 페이지의 모든 주석을 가져오는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -587,7 +587,7 @@ private static void GetAllAnnotationsFromPage()
 
 ## PDF 파일에서 특정 주석 가져오기
 
-주석은 개별 페이지와 연결되어 있으며 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체의 [AnnotationCOllection](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationcollection) 컬렉션에 저장됩니다. 특정 주석을 가져오려면 인덱스를 지정합니다. 이렇게 하면 특정 주석 유형으로 캐스팅해야 하는 [Annotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotation) 객체가 반환됩니다. 예를 들어 [TextAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/textannotation)입니다. 다음 코드 스니펫은 특정 주석과 그 속성을 가져오는 방법을 보여줍니다.
+주석은 개별 페이지와 연결되어 있으며 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체의 [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 컬렉션에 저장됩니다. 특정 주석을 가져오려면 인덱스를 지정합니다. 이렇게 하면 특정 주석 유형으로 캐스팅해야 하는 [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) 객체가 반환됩니다. 예를 들어 [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation)입니다. 다음 코드 스니펫은 특정 주석과 그 속성을 가져오는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -612,7 +612,7 @@ private static void GetParticularAnnotation()
 
 ## 주석의 리소스 가져오기
 
-Aspose.PDF는 전체 문서 또는 특정 페이지에서 주석의 리소스를 가져올 수 있습니다. 다음 코드 스니펫은 입력 PDF 파일의 [FileSpecification](https://reference.aspose.com/pdf/ko/net/aspose.pdf/filespecification) 객체로 주석의 리소스를 가져오는 방법을 보여줍니다.
+Aspose.PDF는 전체 문서 또는 특정 페이지에서 주석의 리소스를 가져올 수 있습니다. 다음 코드 스니펫은 입력 PDF 파일의 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 객체로 주석의 리소스를 가져오는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

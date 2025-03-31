@@ -83,9 +83,9 @@ Mari kita lihat bagaimana enkripsi PDF bekerja dengan pustaka Aspose.PDF.
 
 ## Enkripsi File PDF menggunakan Berbagai Jenis dan Algoritma Enkripsi
 
-Untuk mengenkripsi file PDF, Anda perlu membuat objek [PdfFileSecurity](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity) dan kemudian memanggil metode [EncryptFile](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Anda dapat melewatkan kata sandi pengguna, kata sandi pemilik, dan hak istimewa ke metode [EncryptFile](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Anda juga perlu melewatkan nilai KeySize dan Algorithm ke metode ini.
+Untuk mengenkripsi file PDF, Anda perlu membuat objek [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) dan kemudian memanggil metode [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Anda dapat melewatkan kata sandi pengguna, kata sandi pemilik, dan hak istimewa ke metode [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Anda juga perlu melewatkan nilai KeySize dan Algorithm ke metode ini.
 
-Tinjau daftar kemungkinan dari [CryptoAlgorithm](https://reference.aspose.com/pdf/id/net/aspose.pdf/cryptoalgorithm):
+Tinjau daftar kemungkinan dari [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm):
 
 |**Nama Anggota**|**Nilai**|**Deskripsi**|
 | :- | :- | :- |

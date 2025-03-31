@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-A Plataforma de Metadados Extensível (XMP) é um padrão criado pela Adobe Systems Inc. Este padrão foi desenvolvido para processar e armazenar metadados padronizados e proprietários. Esses metadados podem ser incorporados em diferentes formatos de arquivo, mas neste artigo nos concentraremos apenas no formato de arquivo PDF. Veremos como podemos incorporar metadados em um arquivo PDF usando o namespace Aspose.Pdf.Facades em Aspose.PDF for .NET. Usaremos a classe [PdfXmpMetadata](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfxmpmetadata) para manipular XMP no documento PDF.
+A Plataforma de Metadados Extensível (XMP) é um padrão criado pela Adobe Systems Inc. Este padrão foi desenvolvido para processar e armazenar metadados padronizados e proprietários. Esses metadados podem ser incorporados em diferentes formatos de arquivo, mas neste artigo nos concentraremos apenas no formato de arquivo PDF. Veremos como podemos incorporar metadados em um arquivo PDF usando o namespace Aspose.Pdf.Facades em Aspose.PDF for .NET. Usaremos a classe [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) para manipular XMP no documento PDF.
 
 {{% /alert %}}
 
@@ -87,7 +87,7 @@ Um arquivo PDF passa por muitas etapas durante sua vida útil. Criamos um docume
 
 ## Explicação
 
-Para manipular XMP usando Aspose.Pdf.Facades, usaremos a classe [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class). Usaremos essa classe para manipular propriedades de metadados pré-definidas. A classe [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) adiciona essas propriedades a um arquivo PDF. Ela também ajuda a abrir e salvar arquivos PDF nos quais estamos adicionando metadados. Assim, usando a classe [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class), podemos facilmente manipular XMP em um arquivo PDF. O seguinte trecho de código ajudará você a entender como usar a classe [PdfXmpMetadata](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfxmpmetadata) para trabalhar com XMP:
+Para manipular XMP usando Aspose.Pdf.Facades, usaremos a classe [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class). Usaremos essa classe para manipular propriedades de metadados pré-definidas. A classe [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) adiciona essas propriedades a um arquivo PDF. Ela também ajuda a abrir e salvar arquivos PDF nos quais estamos adicionando metadados. Assim, usando a classe [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class), podemos facilmente manipular XMP em um arquivo PDF. O seguinte trecho de código ajudará você a entender como usar a classe [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) para trabalhar com XMP:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

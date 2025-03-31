@@ -83,12 +83,12 @@ sitemap:
 
 ## PDF 파일에서 링크 업데이트
 
-PDF 파일에 하이퍼링크를 추가하는 방법에 대해 논의한 바와 같이, [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 클래스는 PDF 파일에 링크를 추가할 수 있게 해줍니다. PDF 파일 내에서 기존 링크를 가져오는 데 사용되는 유사한 클래스도 있습니다. 기존 링크를 업데이트해야 하는 경우 이 클래스를 사용하십시오. 기존 링크를 업데이트하려면:
+PDF 파일에 하이퍼링크를 추가하는 방법에 대해 논의한 바와 같이, [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 클래스는 PDF 파일에 링크를 추가할 수 있게 해줍니다. PDF 파일 내에서 기존 링크를 가져오는 데 사용되는 유사한 클래스도 있습니다. 기존 링크를 업데이트해야 하는 경우 이 클래스를 사용하십시오. 기존 링크를 업데이트하려면:
 
 1. PDF 파일을 로드합니다.
 1. PDF 파일의 특정 페이지로 이동합니다.
-1. [GoToAction](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/gotoaction) 객체의 Destination 속성을 사용하여 링크 대상을 지정합니다.
-1. 대상 페이지는 [XYZExplicitDestination](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/xyzexplicitdestination) 생성자를 사용하여 지정됩니다.
+1. [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) 객체의 Destination 속성을 사용하여 링크 대상을 지정합니다.
+1. 대상 페이지는 [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) 생성자를 사용하여 지정됩니다.
 
 ### 동일한 문서의 페이지로 링크 대상 설정
 
@@ -155,7 +155,7 @@ private static void UpdateLinkAnnotation()
 
 ### 웹 주소로 링크 대상 설정
 
-하이퍼링크를 웹 주소를 가리키도록 업데이트하려면 [GoToURIAction](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/gotouriaction) 객체를 인스턴스화하고 이를 LinkAnnotation의 Action 속성에 전달합니다. 다음 코드 스니펫은 PDF 파일에서 링크를 업데이트하고 그 대상을 웹 주소로 설정하는 방법을 보여줍니다.
+하이퍼링크를 웹 주소를 가리키도록 업데이트하려면 [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) 객체를 인스턴스화하고 이를 LinkAnnotation의 Action 속성에 전달합니다. 다음 코드 스니펫은 PDF 파일에서 링크를 업데이트하고 그 대상을 웹 주소로 설정하는 방법을 보여줍니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

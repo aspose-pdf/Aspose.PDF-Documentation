@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스는 [ImportXml](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.form/importxml/methods/1) 메서드를 사용하여 XML 파일에서 PDF 파일로 데이터를 가져올 수 있게 해줍니다. XML에서 데이터를 가져오려면 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ImportXml](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/importxml/index) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 XML 파일에서 데이터를 가져오는 방법을 보여줍니다.
+[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스는 [ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.form/importxml/methods/1) 메서드를 사용하여 XML 파일에서 PDF 파일로 데이터를 가져올 수 있게 해줍니다. XML에서 데이터를 가져오려면 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxml/index) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 XML 파일에서 데이터를 가져오는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -104,7 +104,7 @@ private static void ImportDataFromXml()
 
 ## PDF 파일에서 XML로 데이터 내보내기
 
-[Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스는 [ExportXml](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/exportxml) 메서드를 사용하여 PDF 파일에서 XML 파일로 데이터를 내보낼 수 있게 해줍니다. XML로 데이터를 내보내려면 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ExportXml](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/exportxml) 메서드를 호출해야 합니다. 마지막으로 FileStream 객체를 닫고 Form 객체를 해제할 수 있습니다. 다음 코드 스니펫은 XML 파일로 데이터를 내보내는 방법을 보여줍니다.
+[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스는 [ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml) 메서드를 사용하여 PDF 파일에서 XML 파일로 데이터를 내보낼 수 있게 해줍니다. XML로 데이터를 내보내려면 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml) 메서드를 호출해야 합니다. 마지막으로 FileStream 객체를 닫고 Form 객체를 해제할 수 있습니다. 다음 코드 스니펫은 XML 파일로 데이터를 내보내는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -130,7 +130,7 @@ private static void ExportDataToXml()
 
 ## FDF에서 PDF 파일로 데이터 가져오기
 
-[Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스는 [ImportFdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/importfdf) 메서드를 사용하여 FDF 파일에서 PDF 파일로 데이터를 가져올 수 있게 해줍니다. FDF에서 데이터를 가져오려면 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ImportFdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/importfdf) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 FDF 파일에서 데이터를 가져오는 방법을 보여줍니다.
+[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스는 [ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf) 메서드를 사용하여 FDF 파일에서 PDF 파일로 데이터를 가져올 수 있게 해줍니다. FDF에서 데이터를 가져오려면 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 FDF 파일에서 데이터를 가져오는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -159,7 +159,7 @@ private static void ImportDataFromPdfIntoPdf()
 
 ## PDF 파일에서 FDF로 데이터 내보내기
 
-[Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스는 [ExportFdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/exportfdf) 메서드를 사용하여 PDF 파일에서 FDF 파일로 데이터를 내보낼 수 있게 해줍니다. FDF로 데이터를 내보내려면 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ExportFdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/exportfdf) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 FDF 파일로 데이터를 내보내는 방법을 보여줍니다.
+[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스는 [ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf) 메서드를 사용하여 PDF 파일에서 FDF 파일로 데이터를 내보낼 수 있게 해줍니다. FDF로 데이터를 내보내려면 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 FDF 파일로 데이터를 내보내는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -188,7 +188,7 @@ private static void ExportDataToPdfFromPdf()
 
 ## XFDF에서 PDF 파일로 데이터 가져오기
 
-[Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스는 [ImportXfdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/importxfdf) 메서드를 사용하여 XFDF 파일에서 PDF 파일로 데이터를 가져올 수 있게 해줍니다. XFDF에서 데이터를 가져오려면 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ImportXfdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/importxfdf) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 XFDF 파일에서 데이터를 가져오는 방법을 보여줍니다.
+[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스는 [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf) 메서드를 사용하여 XFDF 파일에서 PDF 파일로 데이터를 가져올 수 있게 해줍니다. XFDF에서 데이터를 가져오려면 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 XFDF 파일에서 데이터를 가져오는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -217,7 +217,7 @@ private static void ImportDataFromXFDIntoPdf()
 
 ## PDF 파일에서 XFDF로 데이터 내보내기
 
-[Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스는 [ExportXfdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/exportxfdf) 메서드를 사용하여 PDF 파일에서 XFDF 파일로 데이터를 내보낼 수 있게 해줍니다. XFDF로 데이터를 내보내려면 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ExportXfdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/exportxfdf) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 XFDF 파일로 데이터를 내보내는 방법을 보여줍니다.
+[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스는 [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf) 메서드를 사용하여 PDF 파일에서 XFDF 파일로 데이터를 내보낼 수 있게 해줍니다. XFDF로 데이터를 내보내려면 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf) 메서드를 호출해야 합니다. 마지막으로 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 클래스의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 XFDF 파일로 데이터를 내보내는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

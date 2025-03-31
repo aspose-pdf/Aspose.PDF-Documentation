@@ -77,7 +77,7 @@ draft: false
 
 ## 파일 경로를 사용하여 두 숫자 사이에 PDF 페이지 삽입
 
-특정 페이지 범위를 한 PDF에서 다른 PDF로 삽입할 수 있습니다. [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Insert](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 메서드를 사용합니다. 이를 위해서는 페이지를 삽입할 입력 PDF 파일, 삽입을 위해 페이지를 가져올 포트 파일, 페이지를 삽입할 위치, 입력 PDF 파일에 삽입해야 할 포트 파일의 페이지 범위가 필요합니다. 이 범위는 시작 페이지 및 종료 페이지 매개변수로 지정됩니다. 마지막으로, 지정된 페이지 범위가 삽입된 출력 PDF 파일이 저장됩니다. 다음 코드 스니펫은 파일 스트림을 사용하여 두 숫자 사이에 PDF 페이지를 삽입하는 방법을 보여줍니다.
+특정 페이지 범위를 한 PDF에서 다른 PDF로 삽입할 수 있습니다. [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 메서드를 사용합니다. 이를 위해서는 페이지를 삽입할 입력 PDF 파일, 삽입을 위해 페이지를 가져올 포트 파일, 페이지를 삽입할 위치, 입력 PDF 파일에 삽입해야 할 포트 파일의 페이지 범위가 필요합니다. 이 범위는 시작 페이지 및 종료 페이지 매개변수로 지정됩니다. 마지막으로, 지정된 페이지 범위가 삽입된 출력 PDF 파일이 저장됩니다. 다음 코드 스니펫은 파일 스트림을 사용하여 두 숫자 사이에 PDF 페이지를 삽입하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -97,7 +97,7 @@ private static void InsertPdfPagesBetweenTwoNumbersUsingFilePaths()
 
 ## 파일 경로를 사용하여 PDF 페이지 배열 삽입
 
-특정 페이지를 다른 PDF 파일에 삽입하려면, 페이지의 정수 배열을 요구하는 [Insert](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 메서드의 오버로드를 사용할 수 있습니다. 이 배열에서 입력 PDF 파일에 삽입할 특정 페이지를 지정할 수 있습니다. 이를 위해서는 페이지를 삽입할 입력 PDF 파일, 삽입을 위해 페이지를 가져올 포트 파일, 페이지를 삽입할 위치, 입력 PDF 파일에 삽입해야 할 포트 파일의 페이지 정수 배열이 필요합니다. 이 배열에는 입력 PDF 파일에 삽입하고자 하는 특정 페이지 목록이 포함되어 있습니다. 마지막으로, 지정된 페이지 배열이 삽입된 출력 PDF 파일이 저장됩니다. 다음 코드 스니펫은 파일 경로를 사용하여 PDF 페이지 배열을 삽입하는 방법을 보여줍니다.
+특정 페이지를 다른 PDF 파일에 삽입하려면, 페이지의 정수 배열을 요구하는 [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 메서드의 오버로드를 사용할 수 있습니다. 이 배열에서 입력 PDF 파일에 삽입할 특정 페이지를 지정할 수 있습니다. 이를 위해서는 페이지를 삽입할 입력 PDF 파일, 삽입을 위해 페이지를 가져올 포트 파일, 페이지를 삽입할 위치, 입력 PDF 파일에 삽입해야 할 포트 파일의 페이지 정수 배열이 필요합니다. 이 배열에는 입력 PDF 파일에 삽입하고자 하는 특정 페이지 목록이 포함되어 있습니다. 마지막으로, 지정된 페이지 배열이 삽입된 출력 PDF 파일이 저장됩니다. 다음 코드 스니펫은 파일 경로를 사용하여 PDF 페이지 배열을 삽입하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -118,7 +118,7 @@ private static void InsertArrayOfPdfPagesUsingFilePaths()
 
 ## 스트림을 사용하여 두 숫자 사이에 PDF 페이지 삽입
 
-스트림을 사용하여 페이지 범위를 삽입하려면, [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Insert](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 메서드의 적절한 오버로드를 사용하면 됩니다. 이를 위해서는 페이지를 삽입할 입력 PDF 스트림, 삽입을 위해 페이지를 가져올 포트 스트림, 페이지를 삽입할 위치, 입력 PDF 스트림에 삽입해야 할 포트 스트림의 페이지 범위가 필요합니다. 이 범위는 시작 페이지 및 종료 페이지 매개변수로 지정됩니다. 마지막으로, 지정된 페이지 범위가 삽입된 출력 PDF 스트림이 저장됩니다. 다음 코드 스니펫은 스트림을 사용하여 두 숫자 사이에 PDF 페이지를 삽입하는 방법을 보여줍니다.
+스트림을 사용하여 페이지 범위를 삽입하려면, [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 메서드의 적절한 오버로드를 사용하면 됩니다. 이를 위해서는 페이지를 삽입할 입력 PDF 스트림, 삽입을 위해 페이지를 가져올 포트 스트림, 페이지를 삽입할 위치, 입력 PDF 스트림에 삽입해야 할 포트 스트림의 페이지 범위가 필요합니다. 이 범위는 시작 페이지 및 종료 페이지 매개변수로 지정됩니다. 마지막으로, 지정된 페이지 범위가 삽입된 출력 PDF 스트림이 저장됩니다. 다음 코드 스니펫은 스트림을 사용하여 두 숫자 사이에 PDF 페이지를 삽입하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

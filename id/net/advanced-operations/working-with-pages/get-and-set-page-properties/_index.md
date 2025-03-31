@@ -83,8 +83,8 @@ Saat bekerja dengan dokumen, Anda sering ingin tahu berapa banyak halaman yang m
 
 Untuk mendapatkan jumlah halaman dalam file PDF:
 
-1. Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
-1. Kemudian gunakan properti Count dari koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection) (dari objek Document) untuk mendapatkan total jumlah halaman dalam dokumen.
+1. Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Kemudian gunakan properti Count dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) (dari objek Document) untuk mendapatkan total jumlah halaman dalam dokumen.
 
 Potongan kode berikut menunjukkan cara mendapatkan jumlah halaman dari file PDF.
 
@@ -106,7 +106,7 @@ private static void GetNumberOfPagesInAPdfFile()
 
 ### Dapatkan jumlah halaman tanpa menyimpan dokumen
 
-Terkadang kita menghasilkan file PDF secara langsung dan selama pembuatan file PDF, kita mungkin menghadapi kebutuhan (membuat Daftar Isi, dll.) untuk mendapatkan jumlah halaman file PDF tanpa menyimpan file di sistem atau stream. Jadi untuk memenuhi kebutuhan ini, sebuah metode [ProcessParagraphs](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/processparagraphs) telah diperkenalkan dalam kelas Document. Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mendapatkan jumlah halaman tanpa menyimpan dokumen.
+Terkadang kita menghasilkan file PDF secara langsung dan selama pembuatan file PDF, kita mungkin menghadapi kebutuhan (membuat Daftar Isi, dll.) untuk mendapatkan jumlah halaman file PDF tanpa menyimpan file di sistem atau stream. Jadi untuk memenuhi kebutuhan ini, sebuah metode [ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs) telah diperkenalkan dalam kelas Document. Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mendapatkan jumlah halaman tanpa menyimpan dokumen.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ Untuk detail lebih lanjut, silakan kunjungi [halaman ini](http://www.enfocus.com
 
 ### **Mengakses Properti Halaman**
 
-Kelas [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) menyediakan semua properti yang terkait dengan halaman PDF tertentu. Semua halaman dari file PDF terkandung dalam koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+Kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) menyediakan semua properti yang terkait dengan halaman PDF tertentu. Semua halaman dari file PDF terkandung dalam koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 Dari sana, dimungkinkan untuk mengakses objek Page individu menggunakan indeksnya, atau melakukan loop melalui koleksi, menggunakan loop foreach, untuk mendapatkan semua halaman. Setelah halaman individu diakses, kita dapat mendapatkan propertinya. Potongan kode berikut menunjukkan cara mendapatkan properti halaman.
 
@@ -190,12 +190,12 @@ private static void AccessingPageProperties()
 
 Aspose.PDF memungkinkan Anda [memisahkan PDF menjadi halaman individual](/pdf/id/net/split-pdf-document/) dan menyimpannya sebagai file PDF. Mendapatkan halaman tertentu dalam file PDF dan menyimpannya sebagai PDF baru adalah operasi yang sangat mirip: buka dokumen sumber, akses halaman, buat dokumen baru dan tambahkan halaman ke dokumen ini.
 
-Koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) menyimpan halaman-halaman dalam file PDF. Untuk mendapatkan halaman tertentu dari koleksi ini:
+Koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menyimpan halaman-halaman dalam file PDF. Untuk mendapatkan halaman tertentu dari koleksi ini:
 
 1. Tentukan indeks halaman menggunakan properti Pages.
-1. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) baru.
-1. Tambahkan objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) ke objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) baru.
-1. Simpan output menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
+1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
+1. Tambahkan objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) ke objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
+1. Simpan output menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 Potongan kode berikut menunjukkan cara mendapatkan halaman tertentu dari file PDF dan menyimpannya sebagai file baru.
 
@@ -224,9 +224,9 @@ private static void GetAParticularPageOfThePdfFile()
 
 ## Tentukan Warna Halaman
 
-Kelas [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) menyediakan properti yang terkait dengan halaman tertentu dalam dokumen PDF, termasuk jenis warna apa - RGB, hitam dan putih, grayscale atau tidak terdefinisi - yang digunakan halaman tersebut.
+Kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) menyediakan properti yang terkait dengan halaman tertentu dalam dokumen PDF, termasuk jenis warna apa - RGB, hitam dan putih, grayscale atau tidak terdefinisi - yang digunakan halaman tersebut.
 
-Semua halaman dari file PDF terkandung dalam koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection). Properti ColorType menentukan warna elemen di halaman. Untuk mendapatkan atau menentukan informasi warna untuk halaman PDF tertentu, gunakan properti [ColorType](https://reference.aspose.com/pdf/id/net/aspose.pdf/page/properties/colortype) dari objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page).
+Semua halaman dari file PDF terkandung dalam koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection). Properti ColorType menentukan warna elemen di halaman. Untuk mendapatkan atau menentukan informasi warna untuk halaman PDF tertentu, gunakan properti [ColorType](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/colortype) dari objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
 
 Potongan kode berikut menunjukkan cara melakukan iterasi melalui halaman individu dari file PDF untuk mendapatkan informasi warna.
 

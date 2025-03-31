@@ -82,7 +82,7 @@ sitemap:
 
 ## PDF 문서의 모든 페이지에서 텍스트 검색 및 가져오기
 
-[TextFragmentAbsorber](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textfragmentabsorber) 클래스는 PDF 문서의 모든 페이지에서 특정 구문과 일치하는 텍스트를 찾을 수 있도록 합니다. 전체 문서에서 텍스트를 검색하려면 Pages 컬렉션의 Accept 메서드를 호출해야 합니다. [Accept](https://reference.aspose.com/pdf/ko/net/aspose.pdf.page/accept/methods/3) 메서드는 TextFragmentAbsorber 객체를 매개변수로 받아들이며, 이는 TextFragment 객체의 컬렉션을 반환합니다. 모든 조각을 반복하여 Text, Position (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor 등의 속성을 가져올 수 있습니다.
+[TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) 클래스는 PDF 문서의 모든 페이지에서 특정 구문과 일치하는 텍스트를 찾을 수 있도록 합니다. 전체 문서에서 텍스트를 검색하려면 Pages 컬렉션의 Accept 메서드를 호출해야 합니다. [Accept](https://reference.aspose.com/pdf/net/aspose.pdf.page/accept/methods/3) 메서드는 TextFragmentAbsorber 객체를 매개변수로 받아들이며, 이는 TextFragment 객체의 컬렉션을 반환합니다. 모든 조각을 반복하여 Text, Position (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor 등의 속성을 가져올 수 있습니다.
 
 다음 코드 스니펫은 모든 페이지에서 텍스트를 검색하는 방법을 보여줍니다.
 

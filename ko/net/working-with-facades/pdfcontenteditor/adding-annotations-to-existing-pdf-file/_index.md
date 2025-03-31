@@ -79,11 +79,11 @@ sitemap:
 
 ## 기존 PDF 파일에 자유 텍스트 주석 추가 (facades)
 
-[PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor)를 사용하면 기존 PDF 파일에 다양한 유형의 주석을 추가할 수 있습니다. 특정 주석을 추가하기 위해 해당 메서드를 사용할 수 있습니다. 예를 들어, 다음 코드 스니펫에서는 [CreateFreeText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 메서드를 사용하여 [FreeText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/freetextannotation) 유형의 주석을 추가했습니다.
+[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)를 사용하면 기존 PDF 파일에 다양한 유형의 주석을 추가할 수 있습니다. 특정 주석을 추가하기 위해 해당 메서드를 사용할 수 있습니다. 예를 들어, 다음 코드 스니펫에서는 [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 메서드를 사용하여 [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 유형의 주석을 추가했습니다.
 
-모든 유형의 주석은 동일한 방식으로 PDF 파일에 추가할 수 있습니다. 먼저, [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 유형의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 둘째, 주석 영역을 지정하기 위해 Rectangle 객체를 생성해야 합니다.
+모든 유형의 주석은 동일한 방식으로 PDF 파일에 추가할 수 있습니다. 먼저, [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 유형의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 둘째, 주석 영역을 지정하기 위해 Rectangle 객체를 생성해야 합니다.
 
-그 후, [CreateFreeText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 메서드를 호출하여 [FreeText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/freetextannotation) 주석을 추가하고, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장할 수 있습니다.
+그 후, [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 메서드를 호출하여 [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 주석을 추가하고, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장할 수 있습니다.
 
 다음 코드 스니펫은 PDF 파일에 자유 텍스트 주석을 추가하는 방법을 보여줍니다.
 
@@ -160,7 +160,7 @@ private static void AddFreeTextAnnotation()
 
 ## 기존 PDF 파일에 텍스트 주석 추가 (facades)
 
-이 예제에서도 [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 유형의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 둘째, 주석 영역을 지정하기 위해 Rectangle 객체를 생성해야 합니다. 그 후, [CreateFreeText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 메서드를 호출하여 FreeText 주석을 추가하고, 주석의 제목과 주석이 위치한 페이지 번호를 생성할 수 있습니다.
+이 예제에서도 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 유형의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 둘째, 주석 영역을 지정하기 위해 Rectangle 객체를 생성해야 합니다. 그 후, [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 메서드를 호출하여 FreeText 주석을 추가하고, 주석의 제목과 주석이 위치한 페이지 번호를 생성할 수 있습니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

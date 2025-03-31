@@ -80,7 +80,7 @@ sitemap:
 
 ## Adicionar Carimbo de Texto
 
-Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/pt/net/aspose.pdf/TextStamp) para adicionar um carimbo de texto em um arquivo PDF. A classe TextStamp fornece propriedades necessárias para criar um carimbo baseado em texto, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar um carimbo de texto, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Depois disso, você pode chamar o método AddStamp da Página para adicionar o carimbo no PDF.
+Você pode usar a classe [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) para adicionar um carimbo de texto em um arquivo PDF. A classe TextStamp fornece propriedades necessárias para criar um carimbo baseado em texto, como tamanho da fonte, estilo da fonte e cor da fonte, etc. Para adicionar um carimbo de texto, você precisa criar um objeto Document e um objeto TextStamp usando as propriedades necessárias. Depois disso, você pode chamar o método AddStamp da Página para adicionar o carimbo no PDF.
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
@@ -121,7 +121,7 @@ private static void AddTextStamp()
 
 ## Definir alinhamento para o objeto TextStamp
 
-Adicionar marcas d'água a documentos PDF é uma das funcionalidades mais solicitadas e a Aspose.PDF for .NET é totalmente capaz de adicionar marcas d'água de Imagem, bem como de Texto. Temos uma classe chamada [TextStamp](https://reference.aspose.com/pdf/pt/net/aspose.pdf/textstamp) que fornece o recurso para adicionar carimbos de texto sobre o arquivo PDF. Recentemente, houve uma necessidade de suportar a funcionalidade de especificar o alinhamento do texto ao usar o objeto TextStamp. Portanto, para atender a essa necessidade, introduzimos a propriedade TextAlignment na classe TextStamp. Usando essa propriedade, podemos especificar o alinhamento horizontal do texto.
+Adicionar marcas d'água a documentos PDF é uma das funcionalidades mais solicitadas e a Aspose.PDF for .NET é totalmente capaz de adicionar marcas d'água de Imagem, bem como de Texto. Temos uma classe chamada [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) que fornece o recurso para adicionar carimbos de texto sobre o arquivo PDF. Recentemente, houve uma necessidade de suportar a funcionalidade de especificar o alinhamento do texto ao usar o objeto TextStamp. Portanto, para atender a essa necessidade, introduzimos a propriedade TextAlignment na classe TextStamp. Usando essa propriedade, podemos especificar o alinhamento horizontal do texto.
 
 Os seguintes trechos de código mostram um exemplo de como carregar um documento PDF existente e adicionar um TextStamp sobre ele.
 

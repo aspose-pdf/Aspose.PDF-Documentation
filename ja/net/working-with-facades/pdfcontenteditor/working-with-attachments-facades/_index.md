@@ -79,7 +79,7 @@ draft: false
 
 ## 既存のPDFからファイルを添付する
 
-[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスを使用して、既存のPDFファイルに添付ファイルを追加できます。添付ファイルは、ディスク上のファイルからファイルパスを使用して追加できます。[AddDocumentAttachment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment)メソッドを使用して添付ファイルを追加できます。このメソッドは、ファイルパスと添付ファイルの説明の2つの引数を取ります。まず、既存のPDFファイルを開き、その中に添付ファイルを追加する必要があります。その後、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)の[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドを使用して出力PDFファイルを保存できます。
+[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスを使用して、既存のPDFファイルに添付ファイルを追加できます。添付ファイルは、ディスク上のファイルからファイルパスを使用して追加できます。[AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment)メソッドを使用して添付ファイルを追加できます。このメソッドは、ファイルパスと添付ファイルの説明の2つの引数を取ります。まず、既存のPDFファイルを開き、その中に添付ファイルを追加する必要があります。その後、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)の[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドを使用して出力PDFファイルを保存できます。
 
 以下のコードスニペットは、ファイルから添付ファイルを追加する方法を示しています。たとえば、MP3ファイルを追加してみましょう。
 
@@ -125,7 +125,7 @@ private static void AddAttachment()
 
 ## 既存のPDFからストリームを添付する
 
-添付ファイルは、[AddDocumentAttachment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment)メソッドを使用して、ストリーム - FileStreamからPDFファイルに追加できます。このメソッドは、ストリーム、添付ファイル名、および添付ファイルの説明の3つの引数を取ります。添付ファイルを追加するには、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/facade/methods/bindpdf/index)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[AddDocumentAttachment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment)メソッドを呼び出して添付ファイルを追加できます。最後に、更新されたPDFファイルを保存するためにSaveメソッドを呼び出すことができます。以下のコードスニペットは、ストリームから添付ファイルを追加する方法を示しています。
+添付ファイルは、[AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment)メソッドを使用して、ストリーム - FileStreamからPDFファイルに追加できます。このメソッドは、ストリーム、添付ファイル名、および添付ファイルの説明の3つの引数を取ります。添付ファイルを追加するには、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment)メソッドを呼び出して添付ファイルを追加できます。最後に、更新されたPDFファイルを保存するためにSaveメソッドを呼び出すことができます。以下のコードスニペットは、ストリームから添付ファイルを追加する方法を示しています。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -172,7 +172,7 @@ private static void AddAttachment()
 
 ## 既存のPDFファイルからすべての添付ファイルを削除する
 
-[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスの[DeleteAttachments](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments)メソッドを使用すると、既存のPDFファイルからすべての添付ファイルを削除できます。[DeleteAttachments](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments)メソッドを呼び出します。最後に、更新されたPDFファイルを保存するために[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドを呼び出す必要があります。以下のコードスニペットは、既存のPDFファイルからすべての添付ファイルを削除する方法を示しています。
+[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスの[DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments)メソッドを使用すると、既存のPDFファイルからすべての添付ファイルを削除できます。[DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments)メソッドを呼び出します。最後に、更新されたPDFファイルを保存するために[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドを呼び出す必要があります。以下のコードスニペットは、既存のPDFファイルからすべての添付ファイルを削除する方法を示しています。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

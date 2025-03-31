@@ -77,7 +77,7 @@ draft: false
 
 ## 既存のPDFファイルの権限を設定する
 
-PDFファイルの権限を設定するには、[PdfFileSecurity](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity)オブジェクトを作成し、SetPrivilegeメソッドを呼び出します。DocumentPrivilegeオブジェクトを使用して権限を指定し、このオブジェクトをSetPrivilegeメソッドに渡すことができます。以下のコードスニペットは、PDFファイルの権限を設定する方法を示しています。
+PDFファイルの権限を設定するには、[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity)オブジェクトを作成し、SetPrivilegeメソッドを呼び出します。DocumentPrivilegeオブジェクトを使用して権限を指定し、このオブジェクトをSetPrivilegeメソッドに渡すことができます。以下のコードスニペットは、PDFファイルの権限を設定する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

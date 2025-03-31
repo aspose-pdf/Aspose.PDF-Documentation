@@ -93,13 +93,13 @@ Dalam versi evaluasi, Anda hanya dapat memproses empat halaman pertama dari sebu
 
 Lisensi dapat dimuat dari file atau objek stream. Cara termudah untuk mengatur lisensi adalah dengan menempatkan file lisensi di folder yang sama dengan file Aspose.PDF.dll dan menentukan nama file tanpa jalur, seperti yang ditunjukkan dalam contoh di bawah ini.
 
-Jika Anda menggunakan komponen Aspose untuk .NET lainnya bersama dengan Aspose.PDF for .NET, silakan tentukan namespace untuk Lisensi seperti [Aspose.Pdf.License](https://reference.aspose.com/pdf/id/net/aspose.pdf/license).
+Jika Anda menggunakan komponen Aspose untuk .NET lainnya bersama dengan Aspose.PDF for .NET, silakan tentukan namespace untuk Lisensi seperti [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license).
 
 ### Memuat lisensi dari file
 
 Cara termudah untuk menerapkan lisensi adalah dengan menempatkan file lisensi di folder yang sama dengan file Aspose.PDF.dll dan hanya menentukan nama file tanpa jalur.
 
-Ketika Anda memanggil metode [SetLicense](https://reference.aspose.com/pdf/id/net/aspose.pdf/license/methods/setlicense/index), nama lisensi yang Anda berikan harus sesuai dengan nama file lisensi Anda. Misalnya, jika Anda mengubah nama file lisensi menjadi "Aspose.PDF.lic.xml", berikan nama file itu ke metode Pdf.SetLicense(…) .
+Ketika Anda memanggil metode [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index), nama lisensi yang Anda berikan harus sesuai dengan nama file lisensi Anda. Misalnya, jika Anda mengubah nama file lisensi menjadi "Aspose.PDF.lic.xml", berikan nama file itu ke metode Pdf.SetLicense(…) .
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -82,7 +82,7 @@ sitemap:
 
 ## 기존 PDF 파일에 권한 설정
 
-PDF 파일에 권한을 설정하려면 [DocumentPrivilege](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/documentprivilege) 클래스의 객체를 생성하고 문서에 적용할 권한을 지정합니다. 권한이 정의되면 이 객체를 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Encrypt](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/encrypt/methods/1) 메서드의 인수로 전달합니다. 다음 코드 스니펫은 PDF 파일의 권한을 설정하는 방법을 보여줍니다.
+PDF 파일에 권한을 설정하려면 [DocumentPrivilege](https://reference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege) 클래스의 객체를 생성하고 문서에 적용할 권한을 지정합니다. 권한이 정의되면 이 객체를 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) 메서드의 인수로 전달합니다. 다음 코드 스니펫은 PDF 파일의 권한을 설정하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void SetPrivilegesOnExistingPdfFile()
 
 ## 다양한 암호화 유형 및 알고리즘을 사용하여 PDF 파일 암호화
 
-[Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Encrypt](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/encrypt/methods/1) 메서드를 사용하여 PDF 파일을 암호화할 수 있습니다. 사용자 비밀번호, 소유자 비밀번호 및 권한을 [Encrypt](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/encrypt/methods/1) 메서드에 전달할 수 있습니다. 또한 [CryptoAlgorithm](https://reference.aspose.com/pdf/ko/net/aspose.pdf/cryptoalgorithm) 열거형의 값을 전달할 수 있습니다. 이 열거형은 다양한 암호화 알고리즘 및 키 크기의 조합을 제공합니다. 원하는 값을 전달할 수 있습니다. 마지막으로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 암호화된 PDF 파일을 저장합니다.
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) 메서드를 사용하여 PDF 파일을 암호화할 수 있습니다. 사용자 비밀번호, 소유자 비밀번호 및 권한을 [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) 메서드에 전달할 수 있습니다. 또한 [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm) 열거형의 값을 전달할 수 있습니다. 이 열거형은 다양한 암호화 알고리즘 및 키 크기의 조합을 제공합니다. 원하는 값을 전달할 수 있습니다. 마지막으로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 암호화된 PDF 파일을 저장합니다.
 
 >PDF 파일을 암호화할 때는 서로 다른 사용자 및 소유자 비밀번호를 지정하십시오.
 
@@ -144,7 +144,7 @@ private static void EncryptPdfFile()
 
 Aspose.PDF 라이브러리를 사용하여 이 문제를 한 번에 해결하는 것이 좋습니다.
 
-PDF 파일을 복호화하려면 먼저 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성하고 소유자 비밀번호를 사용하여 PDF를 엽니다. 그 후, [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Decrypt](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/decrypt) 메서드를 호출해야 합니다. 마지막으로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 PDF 파일을 복호화하는 방법을 보여줍니다.
+PDF 파일을 복호화하려면 먼저 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성하고 소유자 비밀번호를 사용하여 PDF를 엽니다. 그 후, [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Decrypt](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/decrypt) 메서드를 호출해야 합니다. 마지막으로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 PDF 파일을 복호화하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -166,7 +166,7 @@ private static void DecryptPdfFile()
 
 ## PDF 파일의 비밀번호 변경
 
-PDF 파일의 비밀번호를 변경하려면 먼저 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 사용하여 소유자 비밀번호로 PDF 파일을 열어야 합니다. 그 후, [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [ChangePasswords](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/changepasswords) 메서드를 호출해야 합니다. 이 메서드에 현재 소유자 비밀번호와 새로운 사용자 비밀번호 및 새로운 소유자 비밀번호를 전달해야 합니다. 마지막으로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
+PDF 파일의 비밀번호를 변경하려면 먼저 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 사용하여 소유자 비밀번호로 PDF 파일을 열어야 합니다. 그 후, [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [ChangePasswords](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords) 메서드를 호출해야 합니다. 이 메서드에 현재 소유자 비밀번호와 새로운 사용자 비밀번호 및 새로운 소유자 비밀번호를 전달해야 합니다. 마지막으로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
 
 >- 사용자 비밀번호가 설정된 경우, PDF를 열기 위해 제공해야 하는 비밀번호입니다. Acrobat/Reader는 사용자에게 사용자 비밀번호를 입력하라는 메시지를 표시합니다. 비밀번호가 올바르지 않으면 문서가 열리지 않습니다.
 >- 소유자 비밀번호가 설정된 경우, 인쇄, 편집, 추출, 주석 달기 등의 권한을 제어합니다. Acrobat/Reader는 권한 설정에 따라 이러한 작업을 허용하지 않습니다. 권한을 설정/변경하려면 이 비밀번호가 필요합니다.

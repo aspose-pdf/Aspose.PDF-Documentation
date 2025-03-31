@@ -77,7 +77,7 @@ draft: false
 
 ## Ganti Teks dalam File PDF yang Ada
 
-Untuk mengganti teks dalam file PDF yang ada, Anda perlu membuat objek dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/facade/methods/bindpdf/index). Setelah itu, Anda perlu memanggil metode [ReplaceText](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index). Anda perlu menyimpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save) dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor). Potongan kode berikut menunjukkan cara mengganti teks dalam file PDF yang ada.
+Untuk mengganti teks dalam file PDF yang ada, Anda perlu membuat objek dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). Setelah itu, Anda perlu memanggil metode [ReplaceText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index). Anda perlu menyimpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Potongan kode berikut menunjukkan cara mengganti teks dalam file PDF yang ada.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -179,7 +179,7 @@ private static void ReplaceText02()
 {{< /tab >}}
 {{< /tabs >}}
 
-Untuk kemungkinan yang lebih canggih dalam bekerja dengan teks kami, kami akan menggunakan metode [TextState](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textstate). Dengan metode ini, kami dapat membuat teks menjadi tebal, miring, berwarna, dan sebagainya.
+Untuk kemungkinan yang lebih canggih dalam bekerja dengan teks kami, kami akan menggunakan metode [TextState](https://reference.aspose.com/pdf/net/aspose.pdf.text/textstate). Dengan metode ini, kami dapat membuat teks menjadi tebal, miring, berwarna, dan sebagainya.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

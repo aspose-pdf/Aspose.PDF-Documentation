@@ -77,7 +77,7 @@ draft: false
 
 ## 既存のPDFファイルからPDFページプロパティを取得する
 
-[PdfPageEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor)を使用すると、PDFファイルの個々のページを操作できます。これにより、異なるページボックスサイズ、ページ回転、ページズームなどの個々のページのプロパティを取得できます。これらのプロパティを取得するには、[PdfPageEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor)オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[GetPageRotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor/methods/getpagerotation)、[GetPages](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor/methods/getpages)、[GetPageBoxSize](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor/methods/getpageboxsize)などの異なるメソッドを使用してページプロパティを取得できます。
+[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor)を使用すると、PDFファイルの個々のページを操作できます。これにより、異なるページボックスサイズ、ページ回転、ページズームなどの個々のページのプロパティを取得できます。これらのプロパティを取得するには、[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor)オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[GetPageRotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpagerotation)、[GetPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpages)、[GetPageBoxSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpageboxsize)などの異なるメソッドを使用してページプロパティを取得できます。
 
 以下のコードスニペットは、既存のPDFファイルからPDFページプロパティを取得する方法を示しています。
 
@@ -109,7 +109,7 @@ private static void GetPdfPageProperties()
 
 ## 既存のPDFファイルにPDFページプロパティを設定する
 
-ページ回転、ズーム、または原点などのページプロパティを設定するには、[PdfPageEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor)クラスを使用する必要があります。このクラスは、これらのページプロパティを設定するためのさまざまなメソッドとプロパティを提供します。まず、[PdfPageEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、これらのメソッドとプロパティを使用してページプロパティを設定できます。最後に、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。
+ページ回転、ズーム、または原点などのページプロパティを設定するには、[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor)クラスを使用する必要があります。このクラスは、これらのページプロパティを設定するためのさまざまなメソッドとプロパティを提供します。まず、[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、これらのメソッドとプロパティを使用してページプロパティを設定できます。最後に、[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。
 
 以下のコードスニペットは、既存のPDFファイルにPDFページプロパティを設定する方法を示しています。
 
@@ -149,7 +149,7 @@ private static void SetPdfPageProperties()
 
 ## PDFファイルの特定のページのページコンテンツをリサイズする
 
-[PdfPageEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor)クラスのResizeContentsメソッドを使用すると、PDFファイル内のページコンテンツをリサイズできます。[ContentsResizeParameters](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffileeditor/contentsresizeparameters)クラスは、ページをリサイズするために使用されるパラメータ（例えば、パーセンテージまたは単位でのマージンなど）を指定するために使用されます。すべてのページをリサイズするか、リサイズするページの配列を指定することができます。
+[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor)クラスのResizeContentsメソッドを使用すると、PDFファイル内のページコンテンツをリサイズできます。[ContentsResizeParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/contentsresizeparameters)クラスは、ページをリサイズするために使用されるパラメータ（例えば、パーセンテージまたは単位でのマージンなど）を指定するために使用されます。すべてのページをリサイズするか、リサイズするページの配列を指定することができます。
 
 以下のコードスニペットは、PDFファイルの特定のページのコンテンツをリサイズする方法を示しています。
 

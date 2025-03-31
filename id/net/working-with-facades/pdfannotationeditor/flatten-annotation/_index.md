@@ -81,7 +81,7 @@ Proses pemadatan berarti ketika anotasi dihapus dari dokumen, representasi visua
 
 Ketika opsi ini dipilih, anotasi Anda akan disertakan dalam PDF yang diekspor sebagai anotasi standar PDF.
 
-Periksa bagaimana metode [flatteningAnnotations](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) yang digunakan dalam cuplikan kode berikut.
+Periksa bagaimana metode [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) yang digunakan dalam cuplikan kode berikut.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

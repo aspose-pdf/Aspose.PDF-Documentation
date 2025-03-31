@@ -168,7 +168,7 @@ private static void LoadingFontFromStream()
 
 ## TextParagraph를 사용하여 텍스트 추가
 
-다음 코드 스니펫은 [TextParagraph](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textparagraph) 클래스를 사용하여 PDF 문서에 텍스트를 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 [TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph) 클래스를 사용하여 PDF 문서에 텍스트를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void AddTextWithTextParagraph()
 
 ## TextSegment에 하이퍼링크 추가
 
-PDF 페이지는 하나 이상의 TextFragment 객체로 구성될 수 있으며, 각 TextFragment 객체는 하나 이상의 TextSegment 인스턴스를 가질 수 있습니다. TextSegment에 하이퍼링크를 설정하려면 [TextSegment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textsegment) 클래스의 Hyperlink 속성을 사용하여 Aspose.Pdf.WebHyperlink 인스턴스의 객체를 제공할 수 있습니다. 이 요구 사항을 충족하기 위해 다음 코드 스니펫을 사용해 보십시오.
+PDF 페이지는 하나 이상의 TextFragment 객체로 구성될 수 있으며, 각 TextFragment 객체는 하나 이상의 TextSegment 인스턴스를 가질 수 있습니다. TextSegment에 하이퍼링크를 설정하려면 [TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment) 클래스의 Hyperlink 속성을 사용하여 Aspose.Pdf.WebHyperlink 인스턴스의 객체를 제공할 수 있습니다. 이 요구 사항을 충족하기 위해 다음 코드 스니펫을 사용해 보십시오.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -291,7 +291,7 @@ private static void UseOTFFont()
 
 Aspose.Pdf.Generator.Text 클래스에는 PDF 파일에 HTML 태그/내용을 추가할 수 있는 IsHtmlTagSupported라는 속성이 포함되어 있습니다. 추가된 콘텐츠는 단순한 텍스트 문자열로 나타나는 대신 기본 HTML 태그로 렌더링됩니다. Aspose.Pdf 네임스페이스의 새로운 Document Object Model (DOM)에서 유사한 기능을 지원하기 위해 HtmlFragment 클래스가 도입되었습니다.
 
-[HtmlFragment](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlfragment) 인스턴스를 사용하여 PDF 파일 내에 배치할 HTML 콘텐츠를 지정할 수 있습니다. TextFragment와 유사하게 HtmlFragment는 단락 수준 객체이며 Page 객체의 단락 컬렉션에 추가할 수 있습니다. 다음 코드 스니펫은 DOM 접근 방식을 사용하여 PDF 파일 내에 HTML 콘텐츠를 배치하는 단계를 보여줍니다.
+[HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) 인스턴스를 사용하여 PDF 파일 내에 배치할 HTML 콘텐츠를 지정할 수 있습니다. TextFragment와 유사하게 HtmlFragment는 단락 수준 객체이며 Page 객체의 단락 컬렉션에 추가할 수 있습니다. 다음 코드 스니펫은 DOM 접근 방식을 사용하여 PDF 파일 내에 HTML 콘텐츠를 배치하는 단계를 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -838,7 +838,7 @@ private static void CreateMultiColumnPdf()
 
 탭 정지는 탭을 위한 정지 지점입니다. 워드 프로세싱에서 각 줄에는 정기적인 간격(예: 매 0.5인치)으로 배치된 여러 개의 탭 정지가 포함됩니다. 그러나 대부분의 워드 프로세서는 원하는 위치에 탭 정지를 설정할 수 있도록 허용하므로 변경할 수 있습니다. Tab 키를 누르면 커서 또는 삽입 지점이 다음 탭 정지로 점프하며, 이 탭 정지는 보이지 않습니다. 탭 정지는 텍스트 파일에 존재하지 않지만, 워드 프로세서는 Tab 키에 올바르게 반응할 수 있도록 이를 추적합니다.
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/)은 개발자가 PDF 문서에서 사용자 정의 탭 정지를 사용할 수 있도록 합니다. Aspose.Pdf.Text.TabStop 클래스는 [TextFragment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textfragment) 클래스에서 사용자 정의 탭 정지를 설정하는 데 사용됩니다.
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/)은 개발자가 PDF 문서에서 사용자 정의 탭 정지를 사용할 수 있도록 합니다. Aspose.Pdf.Text.TabStop 클래스는 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) 클래스에서 사용자 정의 탭 정지를 설정하는 데 사용됩니다.
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/)은 또한 TabLeaderType이라는 열거형으로 미리 정의된 탭 리더 유형을 제공하며, 그 미리 정의된 값과 설명은 다음과 같습니다:
 
@@ -944,7 +944,7 @@ private static void AddTransparentText()
 
 ## 글꼴에 대한 줄 간격 지정
 
-모든 글꼴에는 같은 글자 크기에서 줄 간격으로 의도된 거리를 나타내는 추상 정사각형이 있습니다. 이 정사각형을 em 정사각형이라고 하며, 글리프 윤곽이 정의되는 디자인 그리드입니다. 입력 글꼴의 많은 글자는 글꼴의 em 정사각형 경계를 넘어 배치된 점을 가지고 있으므로 글꼴을 올바르게 표시하려면 특별한 설정이 필요합니다. TextFragment 객체에는 TextState.FormattingOptions 속성을 통해 접근할 수 있는 텍스트 형식 옵션 세트가 있습니다. 이 경로의 마지막 속성은 Aspose.Pdf.Text.TextFormattingOptions 유형의 속성입니다. 이 클래스에는 특정 글꼴을 위해 설계된 [LineSpacingMode](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text.textformattingoptions/linespacingmode)라는 열거형이 있습니다. 또한 [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textformattingoptions) 클래스에는 LineSpacingMode 유형의 [LineSpacing](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textformattingoptions/properties/linespacing) 속성이 있습니다. LineSpacing을 LineSpacingMode.FullSize로 설정하기만 하면 됩니다. 글꼴을 올바르게 표시하기 위한 코드 스니펫은 다음과 같습니다:
+모든 글꼴에는 같은 글자 크기에서 줄 간격으로 의도된 거리를 나타내는 추상 정사각형이 있습니다. 이 정사각형을 em 정사각형이라고 하며, 글리프 윤곽이 정의되는 디자인 그리드입니다. 입력 글꼴의 많은 글자는 글꼴의 em 정사각형 경계를 넘어 배치된 점을 가지고 있으므로 글꼴을 올바르게 표시하려면 특별한 설정이 필요합니다. TextFragment 객체에는 TextState.FormattingOptions 속성을 통해 접근할 수 있는 텍스트 형식 옵션 세트가 있습니다. 이 경로의 마지막 속성은 Aspose.Pdf.Text.TextFormattingOptions 유형의 속성입니다. 이 클래스에는 특정 글꼴을 위해 설계된 [LineSpacingMode](https://reference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode)라는 열거형이 있습니다. 또한 [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) 클래스에는 LineSpacingMode 유형의 [LineSpacing](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) 속성이 있습니다. LineSpacing을 LineSpacingMode.FullSize로 설정하기만 하면 됩니다. 글꼴을 올바르게 표시하기 위한 코드 스니펫은 다음과 같습니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -993,7 +993,7 @@ private static void SpecifyLineSpacing()
 
 ## 텍스트 너비를 동적으로 가져오기
 
-때때로 텍스트 너비를 동적으로 가져와야 할 필요가 있습니다. Aspose.PDF for .NET은 문자열 너비 측정을 위한 두 가지 메서드를 포함합니다. Aspose.Pdf.Text.Font 또는 Aspose.Pdf.Text.TextState 클래스의 [MeasureString](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/font/methods/measurestring) 메서드를 호출할 수 있습니다(또는 둘 다). 아래의 코드 스니펫은 이 기능을 사용하는 방법을 보여줍니다.
+때때로 텍스트 너비를 동적으로 가져와야 할 필요가 있습니다. Aspose.PDF for .NET은 문자열 너비 측정을 위한 두 가지 메서드를 포함합니다. Aspose.Pdf.Text.Font 또는 Aspose.Pdf.Text.TextState 클래스의 [MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) 메서드를 호출할 수 있습니다(또는 둘 다). 아래의 코드 스니펫은 이 기능을 사용하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

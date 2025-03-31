@@ -80,7 +80,7 @@ lastmod: "2022-02-17"
 
 이 주제는 Aspose.PDF 네임스페이스의 연산자 클래스를 사용하는 방법을 설명하며, 이를 통해 이미지를 추출하지 않고도 해상도 및 크기 정보를 얻을 수 있는 기능을 제공합니다.
 
-이를 달성하는 방법에는 여러 가지가 있습니다. 이 문서에서는 `arraylist`와 [이미지 배치 클래스](https://reference.aspose.com/pdf/ko/net/aspose.pdf/imageplacement)를 사용하는 방법을 설명합니다.
+이를 달성하는 방법에는 여러 가지가 있습니다. 이 문서에서는 `arraylist`와 [이미지 배치 클래스](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement)를 사용하는 방법을 설명합니다.
 
 1. 먼저, 소스 PDF 파일(이미지가 포함된)을 로드합니다.
 1. 그런 다음 문서에 있는 이미지의 이름을 보관할 ArrayList 객체를 생성합니다.

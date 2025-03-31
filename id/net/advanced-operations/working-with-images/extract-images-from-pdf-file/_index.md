@@ -78,9 +78,9 @@ lastmod: "2022-02-17"
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Gambar disimpan dalam koleksi [Resources](https://reference.aspose.com/pdf/id/net/aspose.pdf/resources) dari setiap halaman dalam koleksi [Images](https://reference.aspose.com/pdf/id/net/aspose.pdf/resources/properties/images). Untuk mengekstrak halaman tertentu, ambil gambar dari koleksi Images menggunakan indeks tertentu dari gambar tersebut.
+Gambar disimpan dalam koleksi [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) dari setiap halaman dalam koleksi [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Untuk mengekstrak halaman tertentu, ambil gambar dari koleksi Images menggunakan indeks tertentu dari gambar tersebut.
 
-Indeks gambar mengembalikan objek [XImage](https://reference.aspose.com/pdf/id/net/aspose.pdf/ximage). Objek ini menyediakan metode Save yang dapat digunakan untuk menyimpan gambar yang diekstrak. Potongan kode berikut menunjukkan cara mengekstrak gambar dari file PDF.
+Indeks gambar mengembalikan objek [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Objek ini menyediakan metode Save yang dapat digunakan untuk menyimpan gambar yang diekstrak. Potongan kode berikut menunjukkan cara mengekstrak gambar dari file PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

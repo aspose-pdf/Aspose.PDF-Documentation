@@ -83,9 +83,9 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Extraindo Imagem do Campo de Assinatura
 
-Aspose.PDF for .NET suporta a funcionalidade de assinar digitalmente os arquivos PDF usando a classe [SignatureField](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturefield) e, ao assinar o documento, você também pode definir uma imagem para `SignatureAppearance`. Agora, esta API também fornece a capacidade de extrair informações de assinatura, bem como a imagem associada ao campo de assinatura.
+Aspose.PDF for .NET suporta a funcionalidade de assinar digitalmente os arquivos PDF usando a classe [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) e, ao assinar o documento, você também pode definir uma imagem para `SignatureAppearance`. Agora, esta API também fornece a capacidade de extrair informações de assinatura, bem como a imagem associada ao campo de assinatura.
 
-Para extrair informações de assinatura, introduzimos o método [ExtractImage](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturefield/methods/extractimage) na classe SignatureField. Por favor, dê uma olhada no seguinte trecho de código que demonstra os passos para extrair uma imagem do objeto `SignatureField`:
+Para extrair informações de assinatura, introduzimos o método [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) na classe SignatureField. Por favor, dê uma olhada no seguinte trecho de código que demonstra os passos para extrair uma imagem do objeto `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,7 +132,7 @@ private static void ExtractImagesFromSignatureField()
 
 Aspose.PDF for .NET suporta a funcionalidade de assinar digitalmente os arquivos PDF usando a classe SignatureField. Atualmente, também podemos determinar a validade do certificado, mas não podemos extrair o certificado completo. As informações que podem ser extraídas são chave pública, impressão digital, emissor, etc.
 
-Para extrair informações de assinatura, introduzimos o método [ExtractCertificate](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) na classe [SignatureField](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturefield). Por favor, dê uma olhada no seguinte trecho de código que demonstra os passos para extrair o certificado do objeto SignatureField:
+Para extrair informações de assinatura, introduzimos o método [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) na classe [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield). Por favor, dê uma olhada no seguinte trecho de código que demonstra os passos para extrair o certificado do objeto SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

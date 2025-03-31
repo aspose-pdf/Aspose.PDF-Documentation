@@ -138,7 +138,7 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke XLSX"](https
 [![Aspose.PDF Konversi PDF ke Excel dengan Aplikasi Gratis](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-Untuk mengonversi file PDF ke format <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>, Aspose.PDF memiliki kelas bernama [ExcelSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/excelsaveoptions). Sebuah objek dari kelas ExcelSaveOptions diteruskan sebagai argumen kedua ke konstruktor Document.Save(..).
+Untuk mengonversi file PDF ke format <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>, Aspose.PDF memiliki kelas bernama [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions). Sebuah objek dari kelas ExcelSaveOptions diteruskan sebagai argumen kedua ke konstruktor Document.Save(..).
 
 Potongan kode berikut menunjukkan proses untuk mengonversi file PDF menjadi format XLS atau XLSX dengan Aspose.PDF for .NET.
 
@@ -235,7 +235,7 @@ private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 ### Mengonversi ke format XML Spreadsheet 2003
 
-Sejak versi 20.8 Aspose.PDF menggunakan format file Microsoft Excel Open XML Spreadsheet 2007 sebagai default untuk menyimpan data. Untuk mengonversi file PDF ke format XML Spreadsheet 2003, Aspose.PDF memiliki kelas bernama [ExcelSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/excelsaveoptions) dengan [Format](https://reference.aspose.com/pdf/id/net/aspose.pdf/excelsaveoptions/properties/format). Sebuah objek dari kelas [ExcelSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/excelsaveoptions) diteruskan sebagai argumen kedua ke metode [Document.Save(..)](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index).
+Sejak versi 20.8 Aspose.PDF menggunakan format file Microsoft Excel Open XML Spreadsheet 2007 sebagai default untuk menyimpan data. Untuk mengonversi file PDF ke format XML Spreadsheet 2003, Aspose.PDF memiliki kelas bernama [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) dengan [Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format). Sebuah objek dari kelas [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) diteruskan sebagai argumen kedua ke metode [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
 
 Potongan kode berikut menunjukkan proses untuk mengonversi file PDF menjadi format XLS Excel 2003 XML.
 

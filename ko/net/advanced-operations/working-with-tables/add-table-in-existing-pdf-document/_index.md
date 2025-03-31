@@ -80,7 +80,7 @@ sitemap:
 
 ## C#을 사용하여 테이블 만들기
 
-PDF 문서 작업 시 테이블은 중요합니다. 테이블은 정보를 체계적으로 표시하는 데 훌륭한 기능을 제공합니다. Aspose.PDF 네임스페이스에는 PDF 문서를 처음부터 생성할 때 테이블을 생성하는 기능을 제공하는 [Table](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/ko/net/aspose.pdf/cell), [Row](https://reference.aspose.com/pdf/ko/net/aspose.pdf/row)라는 클래스가 포함되어 있습니다.
+PDF 문서 작업 시 테이블은 중요합니다. 테이블은 정보를 체계적으로 표시하는 데 훌륭한 기능을 제공합니다. Aspose.PDF 네임스페이스에는 PDF 문서를 처음부터 생성할 때 테이블을 생성하는 기능을 제공하는 [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row)라는 클래스가 포함되어 있습니다.
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
@@ -140,7 +140,7 @@ private static void AddTable()
 
 ### 테이블의 ColSpan 및 RowSpan
 
-Aspose.PDF for .NET은 테이블에서 열을 병합하기 위한 [ColSpan](https://reference.aspose.com/pdf/ko/net/aspose.pdf/cell/properties/colspan) 속성과 행을 병합하기 위한 [RowSpan](https://reference.aspose.com/pdf/ko/net/aspose.pdf/cell/properties/rowspan) 속성을 제공합니다.
+Aspose.PDF for .NET은 테이블에서 열을 병합하기 위한 [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) 속성과 행을 병합하기 위한 [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) 속성을 제공합니다.
 
 우리는 테이블 셀을 생성하는 `Cell` 객체에서 `ColSpan` 또는 `RowSpan` 속성을 사용합니다. 필요한 속성을 적용한 후 생성된 셀을 테이블에 추가할 수 있습니다.
 
@@ -225,11 +225,11 @@ private static void AddTableRowColSpan()
 
 ### 테두리
 
-테이블, [Row](https://reference.aspose.com/pdf/ko/net/aspose.pdf/row) 및 [Cell](https://reference.aspose.com/pdf/ko/net/aspose.pdf/cell) 객체의 테두리를 설정하려면 Table.Border, Row.Border 및 Cell.Border 속성을 사용합니다. 셀 테두리는 [Table](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table) 또는 Row 클래스의 DefaultCellBorder 속성을 사용하여 설정할 수도 있습니다. 위에서 논의된 모든 테두리 관련 속성은 Row 클래스의 인스턴스에 할당되며, 이는 생성자를 호출하여 생성됩니다. Row 클래스에는 테두리를 사용자 정의하는 데 필요한 거의 모든 매개변수를 사용하는 여러 오버로드가 있습니다.
+테이블, [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) 및 [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) 객체의 테두리를 설정하려면 Table.Border, Row.Border 및 Cell.Border 속성을 사용합니다. 셀 테두리는 [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) 또는 Row 클래스의 DefaultCellBorder 속성을 사용하여 설정할 수도 있습니다. 위에서 논의된 모든 테두리 관련 속성은 Row 클래스의 인스턴스에 할당되며, 이는 생성자를 호출하여 생성됩니다. Row 클래스에는 테두리를 사용자 정의하는 데 필요한 거의 모든 매개변수를 사용하는 여러 오버로드가 있습니다.
 
 ### 여백 또는 패딩
 
-셀 패딩은 Table 클래스의 [DefaultCellPadding](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table/properties/defaultcellpadding) 속성을 사용하여 관리할 수 있습니다. 모든 패딩 관련 속성은 `Left`, `Right`, `Top` 및 `Bottom` 매개변수에 대한 정보를 가져와 사용자 정의 여백을 생성하는 [MarginInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf/margininfo) 클래스의 인스턴스에 할당됩니다.
+셀 패딩은 Table 클래스의 [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) 속성을 사용하여 관리할 수 있습니다. 모든 패딩 관련 속성은 `Left`, `Right`, `Top` 및 `Bottom` 매개변수에 대한 정보를 가져와 사용자 정의 여백을 생성하는 [MarginInfo](https://reference.aspose.com/pdf/net/aspose.pdf/margininfo) 클래스의 인스턴스에 할당됩니다.
 
 다음 예제에서는 셀 테두리의 너비를 0.1 포인트로 설정하고, 테이블 테두리의 너비를 1 포인트로 설정하며, 셀 패딩을 5 포인트로 설정합니다.
 
@@ -369,7 +369,7 @@ private static void AddAutoFitToWindow()
 
 ### 테이블 너비 가져오기
 
-때때로 테이블 너비를 동적으로 가져와야 할 필요가 있습니다. Aspose.PDF.Table 클래스에는 이를 위한 [GetWidth](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table/methods/getwidth) 메서드가 있습니다. 예를 들어, 테이블 열 너비를 명시적으로 설정하지 않고 [ColumnAdjustment](https://reference.aspose.com/pdf/ko/net/aspose.pdf/table/properties/columnadjustment)를 AutoFitToContent로 설정한 경우, 다음과 같이 테이블 너비를 가져올 수 있습니다.
+때때로 테이블 너비를 동적으로 가져와야 할 필요가 있습니다. Aspose.PDF.Table 클래스에는 이를 위한 [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) 메서드가 있습니다. 예를 들어, 테이블 열 너비를 명시적으로 설정하지 않고 [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment)를 AutoFitToContent로 설정한 경우, 다음과 같이 테이블 너비를 가져올 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -561,7 +561,7 @@ private static void InsertPageBreak()
 
 ### 샘플: C#을 사용하여 새 페이지에 테이블 렌더링하기
 
-새 페이지에 테이블을 렌더링하려면 BaseParagraph 클래스의 [IsInNewPage](https://reference.aspose.com/pdf/ko/net/aspose.pdf/baseparagraph/properties/isinnewpage) 속성을 사용합니다. 다음 코드 스니펫은 그 방법을 보여줍니다.
+새 페이지에 테이블을 렌더링하려면 BaseParagraph 클래스의 [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) 속성을 사용합니다. 다음 코드 스니펫은 그 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

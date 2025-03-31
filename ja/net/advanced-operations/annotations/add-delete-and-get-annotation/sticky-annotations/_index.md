@@ -85,7 +85,7 @@ sitemap:
 
 透かし注釈は、印刷ページの寸法に関係なく、ページ上の固定サイズと位置で印刷されるグラフィックスを表すために使用されます。
 
-特定の PDF ページの位置に [WatermarkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/watermarkannotation) を使用して透かしテキストを追加できます。透かしの透明度は、透明度プロパティを使用して制御することもできます。
+特定の PDF ページの位置に [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) を使用して透かしテキストを追加できます。透かしの透明度は、透明度プロパティを使用して制御することもできます。
 
 透かし注釈を追加するための次のコードスニペットを確認してください。
 

@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[CopyInnerField](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) método permite que você copie um campo no mesmo arquivo, nas mesmas coordenadas, na página especificada. Este método requer o nome do campo que você deseja copiar, o novo nome do campo e o número da página na qual o campo precisa ser copiado. A classe [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) fornece este método. O seguinte trecho de código mostra como copiar o campo na mesma localização no mesmo arquivo.
+[CopyInnerField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) método permite que você copie um campo no mesmo arquivo, nas mesmas coordenadas, na página especificada. Este método requer o nome do campo que você deseja copiar, o novo nome do campo e o número da página na qual o campo precisa ser copiado. A classe [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) fornece este método. O seguinte trecho de código mostra como copiar o campo na mesma localização no mesmo arquivo.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -108,7 +108,7 @@ private static void CopyInnerField()
 
 ## Copiar Campo Externo em um Arquivo PDF Existente
 
-[CopyOuterField](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) método permite que você copie um campo de formulário de um arquivo PDF externo e, em seguida, o adicione ao arquivo PDF de entrada na mesma localização e no número da página especificado. Este método requer o arquivo PDF do qual o campo precisa ser copiado, o nome do campo e o número da página na qual o campo precisa ser copiado. Este método é fornecido pela classe [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). O seguinte trecho de código mostra como copiar um campo de um arquivo PDF externo.
+[CopyOuterField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) método permite que você copie um campo de formulário de um arquivo PDF externo e, em seguida, o adicione ao arquivo PDF de entrada na mesma localização e no número da página especificado. Este método requer o arquivo PDF do qual o campo precisa ser copiado, o nome do campo e o número da página na qual o campo precisa ser copiado. Este método é fornecido pela classe [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). O seguinte trecho de código mostra como copiar um campo de um arquivo PDF externo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

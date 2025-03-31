@@ -168,7 +168,7 @@ private static void LoadingFontFromStream()
 
 ## Tambahkan Teks menggunakan TextParagraph
 
-Potongan kode berikut menunjukkan cara menambahkan teks dalam dokumen PDF menggunakan kelas [TextParagraph](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textparagraph).
+Potongan kode berikut menunjukkan cara menambahkan teks dalam dokumen PDF menggunakan kelas [TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void AddTextWithTextParagraph()
 
 ## Tambahkan Hyperlink ke TextSegment
 
-Sebuah halaman PDF dapat terdiri dari satu atau lebih objek TextFragment, di mana setiap objek TextFragment dapat memiliki satu atau lebih instance TextSegment. Untuk mengatur hyperlink untuk TextSegment, properti Hyperlink dari kelas [TextSegment](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textsegment) dapat digunakan dengan menyediakan objek dari instance Aspose.Pdf.WebHyperlink. Silakan coba menggunakan potongan kode berikut untuk memenuhi kebutuhan ini.
+Sebuah halaman PDF dapat terdiri dari satu atau lebih objek TextFragment, di mana setiap objek TextFragment dapat memiliki satu atau lebih instance TextSegment. Untuk mengatur hyperlink untuk TextSegment, properti Hyperlink dari kelas [TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment) dapat digunakan dengan menyediakan objek dari instance Aspose.Pdf.WebHyperlink. Silakan coba menggunakan potongan kode berikut untuk memenuhi kebutuhan ini.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -291,7 +291,7 @@ private static void UseOTFFont()
 
 Kelas Aspose.Pdf.Generator.Text memiliki properti bernama IsHtmlTagSupported yang memungkinkan untuk menambahkan tag/konten HTML ke dalam file PDF. Konten yang ditambahkan dirender dalam tag HTML asli alih-alih muncul sebagai string teks sederhana. Untuk mendukung fitur serupa dalam Model Objek Dokumen (DOM) baru dari namespace Aspose.Pdf, kelas HtmlFragment telah diperkenalkan.
 
-Instance [HtmlFragment](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlfragment) dapat digunakan untuk menentukan konten HTML yang harus ditempatkan di dalam file PDF. Mirip dengan TextFragment, HtmlFragment adalah objek tingkat paragraf dan dapat ditambahkan ke koleksi paragraf objek Page. Potongan kode berikut menunjukkan langkah-langkah untuk menempatkan konten HTML di dalam file PDF menggunakan pendekatan DOM.
+Instance [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) dapat digunakan untuk menentukan konten HTML yang harus ditempatkan di dalam file PDF. Mirip dengan TextFragment, HtmlFragment adalah objek tingkat paragraf dan dapat ditambahkan ke koleksi paragraf objek Page. Potongan kode berikut menunjukkan langkah-langkah untuk menempatkan konten HTML di dalam file PDF menggunakan pendekatan DOM.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -838,7 +838,7 @@ private static void CreateMultiColumnPdf()
 
 Tab Stop adalah titik berhenti untuk tabbing. Dalam pengolahan kata, setiap baris berisi sejumlah tab stops yang ditempatkan pada interval reguler (misalnya, setiap setengah inci). Mereka dapat diubah, namun, karena sebagian besar pengolah kata memungkinkan Anda untuk mengatur tab stops di mana pun Anda mau. Ketika Anda menekan tombol Tab, kursor atau titik penyisipan melompat ke tab stop berikutnya, yang sendiri tidak terlihat. Meskipun tab stops tidak ada dalam file teks, pengolah kata melacaknya sehingga dapat bereaksi dengan benar terhadap tombol Tab.
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) memungkinkan pengembang untuk menggunakan tab stops kustom dalam dokumen PDF. Kelas Aspose.Pdf.Text.TabStop digunakan untuk mengatur TAB stops kustom dalam kelas [TextFragment](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textfragment).
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) memungkinkan pengembang untuk menggunakan tab stops kustom dalam dokumen PDF. Kelas Aspose.Pdf.Text.TabStop digunakan untuk mengatur TAB stops kustom dalam kelas [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) juga menawarkan beberapa jenis pemimpin tab yang telah ditentukan sebelumnya sebagai enumerasi bernama, TabLeaderType yang nilai dan deskripsi yang telah ditentukan sebelumnya diberikan di bawah ini:
 
@@ -944,7 +944,7 @@ private static void AddTransparentText()
 
 ## Tentukan Spasi Garis untuk Font
 
-Setiap font memiliki kotak abstrak, yang tingginya adalah jarak yang dimaksudkan antara garis teks dalam ukuran jenis yang sama. Kotak ini disebut kotak em dan merupakan grid desain di mana garis besar glyph didefinisikan. Banyak huruf dari font input memiliki titik yang ditempatkan di luar batas kotak em font, jadi untuk menampilkan font dengan benar, penggunaan pengaturan khusus diperlukan. Objek TextFragment memiliki serangkaian opsi format teks yang dapat diakses melalui properti TextState.FormattingOptions. Properti terakhir dari jalur ini adalah properti dari jenis Aspose.Pdf.Text.TextFormattingOptions. Kelas ini memiliki enumerasi [LineSpacingMode](https://reference.aspose.com/pdf/id/net/aspose.pdf.text.textformattingoptions/linespacingmode) yang dirancang untuk font tertentu misalnya font input "HPSimplified.ttf". Juga kelas [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textformattingoptions) memiliki properti [LineSpacing](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textformattingoptions/properties/linespacing) dari jenis LineSpacingMode. Anda hanya perlu mengatur LineSpacing ke LineSpacingMode.FullSize. Potongan kode untuk mendapatkan font ditampilkan dengan benar, akan seperti berikut:
+Setiap font memiliki kotak abstrak, yang tingginya adalah jarak yang dimaksudkan antara garis teks dalam ukuran jenis yang sama. Kotak ini disebut kotak em dan merupakan grid desain di mana garis besar glyph didefinisikan. Banyak huruf dari font input memiliki titik yang ditempatkan di luar batas kotak em font, jadi untuk menampilkan font dengan benar, penggunaan pengaturan khusus diperlukan. Objek TextFragment memiliki serangkaian opsi format teks yang dapat diakses melalui properti TextState.FormattingOptions. Properti terakhir dari jalur ini adalah properti dari jenis Aspose.Pdf.Text.TextFormattingOptions. Kelas ini memiliki enumerasi [LineSpacingMode](https://reference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode) yang dirancang untuk font tertentu misalnya font input "HPSimplified.ttf". Juga kelas [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) memiliki properti [LineSpacing](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) dari jenis LineSpacingMode. Anda hanya perlu mengatur LineSpacing ke LineSpacingMode.FullSize. Potongan kode untuk mendapatkan font ditampilkan dengan benar, akan seperti berikut:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -993,7 +993,7 @@ private static void SpecifyLineSpacing()
 
 ## Dapatkan Lebar Teks Secara Dinamis
 
-Terkadang, diperlukan untuk mendapatkan lebar teks secara dinamis. Aspose.PDF for .NET mencakup dua metode untuk pengukuran lebar string. Anda dapat memanggil metode [MeasureString](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/font/methods/measurestring) dari kelas Aspose.Pdf.Text.Font atau Aspose.Pdf.Text.TextState (atau keduanya). Potongan kode di bawah ini menunjukkan cara menggunakan fungsionalitas ini.
+Terkadang, diperlukan untuk mendapatkan lebar teks secara dinamis. Aspose.PDF for .NET mencakup dua metode untuk pengukuran lebar string. Anda dapat memanggil metode [MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) dari kelas Aspose.Pdf.Text.Font atau Aspose.Pdf.Text.TextState (atau keduanya). Potongan kode di bawah ini menunjukkan cara menggunakan fungsionalitas ini.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

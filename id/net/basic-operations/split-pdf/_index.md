@@ -86,9 +86,9 @@ sitemap:
 
 Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individu dalam aplikasi .NET Anda. Untuk memisahkan halaman PDF menjadi file PDF satu halaman menggunakan C#, langkah-langkah berikut dapat diikuti:
 
-1. Loop melalui halaman dokumen PDF melalui koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection) objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
-1. Untuk setiap iterasi, buat objek Document baru dan tambahkan objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) individu ke dalam dokumen kosong.
-1. Simpan PDF baru menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
+1. Loop melalui halaman dokumen PDF melalui koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Untuk setiap iterasi, buat objek Document baru dan tambahkan objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) individu ke dalam dokumen kosong.
+1. Simpan PDF baru menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 

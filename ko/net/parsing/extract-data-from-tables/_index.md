@@ -84,11 +84,11 @@ PDF에서 테이블을 추출하는 것은 간단한 작업이 아닙니다. 테
 
 Aspose.PDF for .NET은 테이블을 쉽게 검색할 수 있는 도구를 제공합니다. 테이블 데이터를 추출하려면 다음 단계를 수행해야 합니다:
 
-1. 문서 열기 - [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 인스턴스화합니다.
-1. [TableAbsorber](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/tableabsorber) 객체를 생성합니다.
-1. 분석할 페이지를 결정하고 원하는 페이지에 [Visit](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/tableabsorber/methods/visit)를 적용합니다. 표 형식 데이터가 스캔되고 결과는 [TableList](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/tableabsorber/properties/tablelist)에 저장됩니다.
-1. `TableList`는 [AbsorbedTable](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/absorbedtable)의 목록입니다. 데이터를 가져오려면 `TableList`를 반복하고 [RowList](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/absorbedtable/properties/rowlist) 및 [CellList](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/absorbedrow/properties/celllist)를 처리합니다.
-1. 각 [AbsorbedCell](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/absorbedcell)에는 [TextFragments](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/absorbedcell/properties/textfragments) 컬렉션이 포함되어 있습니다. 이를 자신의 목적에 맞게 처리할 수 있습니다.
+1. 문서 열기 - [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 인스턴스화합니다.
+1. [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) 객체를 생성합니다.
+1. 분석할 페이지를 결정하고 원하는 페이지에 [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/visit)를 적용합니다. 표 형식 데이터가 스캔되고 결과는 [TableList](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/properties/tablelist)에 저장됩니다.
+1. `TableList`는 [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable)의 목록입니다. 데이터를 가져오려면 `TableList`를 반복하고 [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) 및 [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)를 처리합니다.
+1. 각 [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell)에는 [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments) 컬렉션이 포함되어 있습니다. 이를 자신의 목적에 맞게 처리할 수 있습니다.
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
@@ -135,7 +135,7 @@ private static void ExtractTable()
 
 ## PDF 페이지의 특정 영역에서 테이블 추출
 
-각 흡수된 테이블에는 페이지에서 테이블의 위치를 설명하는 [Rectangle](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/absorbedtable/properties/rectangle) 속성이 있습니다.
+각 흡수된 테이블에는 페이지에서 테이블의 위치를 설명하는 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle) 속성이 있습니다.
 
 특정 지역에 위치한 테이블을 추출해야 하는 경우 특정 좌표로 작업해야 합니다.
 

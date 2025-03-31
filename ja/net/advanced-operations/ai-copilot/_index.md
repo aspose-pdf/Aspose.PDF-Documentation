@@ -80,7 +80,7 @@ lastmod: "2024-10-23"
 </script>
 
 {{% alert color="primary" %}}
-**Aspose.PDF AI Copilot API**は、ユーザーが異なるプロバイダーのLLMを使用してPDFドキュメントを処理できるように設計されています。この[API](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ai/)は、ユーザーがチャットボットアプリケーションを構築し、PDFソリューションをLLMと統合するのに役立ちます。
+**Aspose.PDF AI Copilot API**は、ユーザーが異なるプロバイダーのLLMを使用してPDFドキュメントを処理できるように設計されています。この[API](https://reference.aspose.com/pdf/net/aspose.pdf.ai/)は、ユーザーがチャットボットアプリケーションを構築し、PDFソリューションをLLMと統合するのに役立ちます。
 {{% /alert %}}
 
 ## 主な機能
@@ -93,7 +93,7 @@ lastmod: "2024-10-23"
 
 現在、以下のコパイロットが利用可能です：
 
-[**OpenAI Summary**](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ai/openaisummarycopilot/)は、ユーザーがドキュメントから要約を生成できるようにします。モデル、温度、トークン数、モデルの指示、ドキュメントの添付ファイルなどのオプションを設定することで、要約を作成する便利な方法を提供します。このコパイロットは、テキスト、ドキュメントとして要約を非同期に生成し、さまざまな形式で要約を保存できます。提供されたデモコードは、OpenAIクライアントの作成、コパイロットオプションの設定、およびSummaryCopilotを使用して要約を生成し保存する方法を示しています。
+[**OpenAI Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaisummarycopilot/)は、ユーザーがドキュメントから要約を生成できるようにします。モデル、温度、トークン数、モデルの指示、ドキュメントの添付ファイルなどのオプションを設定することで、要約を作成する便利な方法を提供します。このコパイロットは、テキスト、ドキュメントとして要約を非同期に生成し、さまざまな形式で要約を保存できます。提供されたデモコードは、OpenAIクライアントの作成、コパイロットオプションの設定、およびSummaryCopilotを使用して要約を生成し保存する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -178,7 +178,7 @@ private static async Task GetSummary()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**OpenAI Chat**](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ai/openaichatcopilot/)は、ドキュメントとのチャットインタラクションのために設計されたAIコパイロットです。ユーザーのクエリに対する応答を生成し、コンテキストを管理することを容易にします。ユーザーは、モデル、温度、トークン数、モデルの指示、ドキュメントの添付ファイルなどのコパイロットオプションを設定できます。このコパイロットは、単一または複数のクエリに対する応答を提供し、さまざまな形式で応答を保存し、コンテキストを保存および削除できます。
+[**OpenAI Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaichatcopilot/)は、ドキュメントとのチャットインタラクションのために設計されたAIコパイロットです。ユーザーのクエリに対する応答を生成し、コンテキストを管理することを容易にします。ユーザーは、モデル、温度、トークン数、モデルの指示、ドキュメントの添付ファイルなどのコパイロットオプションを設定できます。このコパイロットは、単一または複数のクエリに対する応答を提供し、さまざまな形式で応答を保存し、コンテキストを保存および削除できます。
 
 提供されたコードは、OpenAIクライアントの作成、ChatCopilotオプションの設定、およびユーザーのクエリと対話しコンテキストを管理するためのChatCopilotの使用を示しています。
 
@@ -303,7 +303,7 @@ private static async Task ChatWithDocument()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**OpenAI Image Description**](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ai/openaiimagedescriptioncopilot/)は、PDFドキュメント内の画像や別の画像ファイルの画像説明を生成するために設計されたAIコパイロットです。ユーザーは、モデル、温度、トークン数、モデルの指示、ドキュメントの添付ファイルなどのコパイロットオプションを設定できます。このコパイロットは、すべての添付ドキュメントの画像説明を一度に取得する機能を提供します。
+[**OpenAI Image Description**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaiimagedescriptioncopilot/)は、PDFドキュメント内の画像や別の画像ファイルの画像説明を生成するために設計されたAIコパイロットです。ユーザーは、モデル、温度、トークン数、モデルの指示、ドキュメントの添付ファイルなどのコパイロットオプションを設定できます。このコパイロットは、すべての添付ドキュメントの画像説明を一度に取得する機能を提供します。
 
 提供されたコードスニペットは、OpenAIクライアントの作成、ImageDescriptionCopilotオプションの設定、および添付ドキュメントの画像説明を取得するためのコパイロットの使用を示しています。さらに、添付ドキュメント内の画像に画像説明を追加し、指定されたディレクトリに新しいドキュメントを保存するための拡張メソッドもあります。
 
@@ -394,7 +394,7 @@ private static async Task CreateImageDescriptions()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Chat**](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ai/llamaclient/)は、Llamaチャット完了APIにリクエストを送信するクライアントを作成することを可能にします。
+[**Llama Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/)は、Llamaチャット完了APIにリクエストを送信するクライアントを作成することを可能にします。
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -443,7 +443,7 @@ private static async Task ChatWithLlama()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Summary**](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ai/llamaclient/)は、クライアントがSummary Copilotを作成するために使用できます。
+[**Llama Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/)は、クライアントがSummary Copilotを作成するために使用できます。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

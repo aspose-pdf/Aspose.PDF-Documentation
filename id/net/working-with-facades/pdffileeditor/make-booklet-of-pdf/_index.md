@@ -77,7 +77,7 @@ draft: false
 
 ## Buat Buku Saku dari PDF Menggunakan Jalur File
 
-[MakeBooklet](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan jalur file. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan jalur file.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan jalur file. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
 
 ## Buat Buku Saku dari PDF Menggunakan Ukuran Halaman dan Jalur File
 
-[MakeBooklet](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan ukuran halaman dan jalur file.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan ukuran halaman dan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
 
 ## Buat Buku Saku dari PDF Menggunakan Ukuran Halaman, Halaman Kiri dan Kanan yang Ditentukan, dan Jalur File
 
-[MakeBooklet](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output dan menentukan halaman tertentu untuk sisi kiri dan kanan dari file PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan ukuran halaman, halaman kiri dan kanan yang ditentukan, dan jalur file.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output dan menentukan halaman tertentu untuk sisi kiri dan kanan dari file PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan ukuran halaman, halaman kiri dan kanan yang ditentukan, dan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## Buat Buku Saku dari PDF Menggunakan Halaman Kiri dan Kanan yang Ditentukan, dan Jalur File
 
-[MakeBooklet](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan jalur file. Anda juga dapat menentukan halaman tertentu untuk sisi kiri dan kanan dari file PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan halaman kiri dan kanan yang ditentukan dan jalur file.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan jalur file. Anda juga dapat menentukan halaman tertentu untuk sisi kiri dan kanan dari file PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan halaman kiri dan kanan yang ditentukan dan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
 
 ## Buat Buku Saku dari PDF Menggunakan Aliran
 
-[MakeBooklet](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan aliran alih-alih jalur file. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan aliran.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan aliran alih-alih jalur file. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,7 +175,7 @@ private static void MakeBookletOfPdfUsingStreams()
 
 ## Buat Buku Saku dari PDF Menggunakan Ukuran Halaman dan Aliran
 
-[MakeBooklet](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan aliran alih-alih jalur file. Anda juga dapat mengatur ukuran halaman dari aliran PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan ukuran halaman dan aliran.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan aliran alih-alih jalur file. Anda juga dapat mengatur ukuran halaman dari aliran PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan ukuran halaman dan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
 
 ## Buat Buku Saku dari PDF Menggunakan Ukuran Halaman, Halaman Kiri dan Kanan yang Ditentukan, dan Aliran
 
-[MakeBooklet](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan aliran alih-alih jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output dan menentukan halaman tertentu untuk sisi kiri dan kanan dari aliran PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan ukuran halaman, halaman kiri dan kanan yang ditentukan, dan aliran.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan aliran alih-alih jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output dan menentukan halaman tertentu untuk sisi kiri dan kanan dari aliran PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan ukuran halaman, halaman kiri dan kanan yang ditentukan, dan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +226,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
 
 ## Buat Buku Saku dari PDF Menggunakan Halaman Kiri dan Kanan yang Ditentukan, dan Aliran
 
-[MakeBooklet](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan aliran alih-alih jalur file. Anda juga dapat menentukan halaman tertentu untuk sisi kiri dan kanan dari aliran PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan halaman kiri dan kanan yang ditentukan dan aliran.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat buku saku dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat buku saku menggunakan aliran alih-alih jalur file. Anda juga dapat menentukan halaman tertentu untuk sisi kiri dan kanan dari aliran PDF output dengan overload ini. Potongan kode berikut menunjukkan cara membuat buku saku menggunakan halaman kiri dan kanan yang ditentukan dan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

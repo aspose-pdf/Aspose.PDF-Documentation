@@ -87,10 +87,10 @@ sitemap:
 
 キャレット注釈を作成する手順：
 
-1. PDFファイルをロードします - 新しい [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)。
-1. 新しい [Caret Annotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/caretannotation)を作成し、キャレットパラメータ（新しいRectangle、タイトル、件名、フラグ、色、幅、StartingStyleおよびEndingStyle）を設定します。この注釈は、テキストの挿入を示すために使用されます。
-1. 新しい [Caret Annotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/caretannotation)を作成し、キャレットパラメータ（新しいRectangle、タイトル、件名、フラグ、色、幅、StartingStyleおよびEndingStyle）を設定します。この注釈は、テキストの置き換えを示すために使用されます。
-1. 新しい [StrikeOutAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/strikeoutannotation)を作成し、パラメータ（新しいRectangle、タイトル、色、新しいQuadPointsおよび新しいポイント、件名、InReplyTo、ReplyType）を設定します。
+1. PDFファイルをロードします - 新しい [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)。
+1. 新しい [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation)を作成し、キャレットパラメータ（新しいRectangle、タイトル、件名、フラグ、色、幅、StartingStyleおよびEndingStyle）を設定します。この注釈は、テキストの挿入を示すために使用されます。
+1. 新しい [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation)を作成し、キャレットパラメータ（新しいRectangle、タイトル、件名、フラグ、色、幅、StartingStyleおよびEndingStyle）を設定します。この注釈は、テキストの置き換えを示すために使用されます。
+1. 新しい [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation)を作成し、パラメータ（新しいRectangle、タイトル、色、新しいQuadPointsおよび新しいポイント、件名、InReplyTo、ReplyType）を設定します。
 1. その後、ページに注釈を追加できます。
 
 次のコードスニペットは、PDFファイルにキャレット注釈を追加する方法を示しています：
@@ -249,7 +249,7 @@ private static void RedactPage()
 
 ### ファサードアプローチ
 
-Aspose.Pdf.Facades名前空間には、PDFファイル内の既存の注釈を操作する機能を提供する[PdfAnnotationEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfannotationeditor)というクラスもあります。このクラスには、特定のページ領域を削除する機能を提供する[RedactArea(..)](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea)というメソッドが含まれています。
+Aspose.Pdf.Facades名前空間には、PDFファイル内の既存の注釈を操作する機能を提供する[PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor)というクラスもあります。このクラスには、特定のページ領域を削除する機能を提供する[RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea)というメソッドが含まれています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

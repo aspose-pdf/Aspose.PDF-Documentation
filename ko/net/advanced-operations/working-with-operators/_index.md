@@ -87,7 +87,7 @@ sitemap:
 
 ### 구현 세부정보
 
-이 주제는 Aspose.PDF와 함께 연산자를 사용하는 방법을 설명합니다. 선택된 예제는 개념을 설명하기 위해 PDF 파일에 이미지를 추가합니다. PDF 파일에 이미지를 추가하려면 다양한 연산자가 필요합니다. 이 예제에서는 [GSave](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ioperatorselector/visit/methods/14), 및 [GRestore](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ioperatorselector/visit/methods/26) 연산자를 사용합니다.
+이 주제는 Aspose.PDF와 함께 연산자를 사용하는 방법을 설명합니다. 선택된 예제는 개념을 설명하기 위해 PDF 파일에 이미지를 추가합니다. PDF 파일에 이미지를 추가하려면 다양한 연산자가 필요합니다. 이 예제에서는 [GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14), 및 [GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26) 연산자를 사용합니다.
 
 - **GSave** 연산자는 PDF의 현재 그래픽 상태를 저장합니다.
 - **ConcatenateMatrix** (행렬 연결) 연산자는 이미지가 PDF 페이지에 어떻게 배치될지를 정의하는 데 사용됩니다.
@@ -96,7 +96,7 @@ sitemap:
 
 PDF 파일에 이미지를 추가하려면:
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성하고 입력 PDF 문서를 엽니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성하고 입력 PDF 문서를 엽니다.
 1. 이미지를 추가할 특정 페이지를 가져옵니다.
 1. 페이지의 리소스 컬렉션에 이미지를 추가합니다.
 1. 연산자를 사용하여 페이지에 이미지를 배치합니다:
@@ -235,7 +235,7 @@ private static void DrawXFormOnPage()
 
 ## 연산자 클래스를 사용하여 그래픽 객체 제거
 
-연산자 클래스는 PDF 조작을 위한 훌륭한 기능을 제공합니다. PDF 파일에 [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 [DeleteImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) 메서드를 사용하여 제거할 수 없는 그래픽이 포함된 경우, 대신 연산자 클래스를 사용하여 제거할 수 있습니다.
+연산자 클래스는 PDF 조작을 위한 훌륭한 기능을 제공합니다. PDF 파일에 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) 메서드를 사용하여 제거할 수 없는 그래픽이 포함된 경우, 대신 연산자 클래스를 사용하여 제거할 수 있습니다.
 
 다음 코드 스니펫은 그래픽을 제거하는 방법을 보여줍니다. PDF 파일에 그래픽에 대한 텍스트 레이블이 포함되어 있는 경우, 이 접근 방식을 사용하면 PDF 파일에 남아 있을 수 있습니다. 따라서 이러한 이미지를 삭제하기 위한 대체 방법으로 그래픽 연산자를 검색하십시오.
 

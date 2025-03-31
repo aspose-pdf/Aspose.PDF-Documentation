@@ -85,11 +85,11 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.Drawing](/pdf/id/net/d
 
 1. Buat proyek C# baru.
 1. Tambahkan referensi ke DLL Aspose.PDF.
-1. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
-1. Buat objek [FileSpecification](https://reference.aspose.com/pdf/id/net/aspose.pdf/filespecification) dengan file yang Anda tambahkan, dan deskripsi file.
-1. Tambahkan objek [FileSpecification](https://reference.aspose.com/pdf/id/net/aspose.pdf/filespecification) ke koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/id/net/aspose.pdf/embeddedfilecollection) objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document), dengan metode Add koleksi tersebut.
+1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Buat objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) dengan file yang Anda tambahkan, dan deskripsi file.
+1. Tambahkan objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) ke koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), dengan metode Add koleksi tersebut.
 
-Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/id/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran dalam file PDF. Potongan kode berikut menunjukkan cara menambahkan lampiran dalam dokumen PDF.
+Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran dalam file PDF. Potongan kode berikut menunjukkan cara menambahkan lampiran dalam dokumen PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

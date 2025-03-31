@@ -77,7 +77,7 @@ draft: false
 
 ## 파일 경로를 사용하여 PDF 북릿 만들기
 
-[MakeBooklet](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 파일의 북릿을 만들고 출력 PDF 파일로 저장할 수 있습니다. 이 오버로드는 파일 경로를 사용하여 북릿을 만들 수 있게 해줍니다. 다음 코드 스니펫은 파일 경로를 사용하여 북릿을 만드는 방법을 보여줍니다.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 파일의 북릿을 만들고 출력 PDF 파일로 저장할 수 있습니다. 이 오버로드는 파일 경로를 사용하여 북릿을 만들 수 있게 해줍니다. 다음 코드 스니펫은 파일 경로를 사용하여 북릿을 만드는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
 
 ## 페이지 크기 및 파일 경로를 사용하여 PDF 북릿 만들기
 
-[MakeBooklet](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 파일의 북릿을 만들고 출력 PDF 파일로 저장할 수 있습니다. 이 오버로드는 파일 경로를 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 파일의 페이지 크기를 설정할 수 있습니다. 다음 코드 스니펫은 페이지 크기와 파일 경로를 사용하여 북릿을 만드는 방법을 보여줍니다.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 파일의 북릿을 만들고 출력 PDF 파일로 저장할 수 있습니다. 이 오버로드는 파일 경로를 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 파일의 페이지 크기를 설정할 수 있습니다. 다음 코드 스니펫은 페이지 크기와 파일 경로를 사용하여 북릿을 만드는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
 
 ## 페이지 크기, 지정된 왼쪽 및 오른쪽 페이지, 파일 경로를 사용하여 PDF 북릿 만들기
 
-[MakeBooklet](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 파일의 북릿을 만들고 출력 PDF 파일로 저장할 수 있습니다. 이 오버로드는 파일 경로를 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 파일의 페이지 크기를 설정하고 왼쪽 및 오른쪽 측면에 대한 특정 페이지를 지정할 수 있습니다. 다음 코드 스니펫은 페이지 크기, 지정된 왼쪽 및 오른쪽 페이지 및 파일 경로를 사용하여 북릿을 만드는 방법을 보여줍니다.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) 메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 파일의 북릿을 만들고 출력 PDF 파일로 저장할 수 있습니다. 이 오버로드는 파일 경로를 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 파일의 페이지 크기를 설정하고 왼쪽 및 오른쪽 측면에 대한 특정 페이지를 지정할 수 있습니다. 다음 코드 스니펫은 페이지 크기, 지정된 왼쪽 및 오른쪽 페이지 및 파일 경로를 사용하여 북릿을 만드는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## 지정된 왼쪽 및 오른쪽 페이지, 파일 경로를 사용하여 PDF 북릿 만들기
 
-[MakeBooklet](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 파일의 북릿을 만들고 출력 PDF 파일로 저장할 수 있습니다. 이 오버로드는 파일 경로를 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 파일의 왼쪽 및 오른쪽 측면에 대한 특정 페이지를 지정할 수 있습니다. 다음 코드 스니펫은 지정된 왼쪽 및 오른쪽 페이지와 파일 경로를 사용하여 북릿을 만드는 방법을 보여줍니다.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 파일의 북릿을 만들고 출력 PDF 파일로 저장할 수 있습니다. 이 오버로드는 파일 경로를 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 파일의 왼쪽 및 오른쪽 측면에 대한 특정 페이지를 지정할 수 있습니다. 다음 코드 스니펫은 지정된 왼쪽 및 오른쪽 페이지와 파일 경로를 사용하여 북릿을 만드는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
 
 ## 스트림을 사용하여 PDF 북릿 만들기
 
-[MakeBooklet](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 스트림의 북릿을 만들고 출력 PDF 스트림으로 저장할 수 있습니다. 이 오버로드는 파일 경로 대신 스트림을 사용하여 북릿을 만들 수 있게 해줍니다. 다음 코드 스니펫은 스트림을 사용하여 북릿을 만드는 방법을 보여줍니다.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 스트림의 북릿을 만들고 출력 PDF 스트림으로 저장할 수 있습니다. 이 오버로드는 파일 경로 대신 스트림을 사용하여 북릿을 만들 수 있게 해줍니다. 다음 코드 스니펫은 스트림을 사용하여 북릿을 만드는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,7 +175,7 @@ private static void MakeBookletOfPdfUsingStreams()
 
 ## 페이지 크기 및 스트림을 사용하여 PDF 북릿 만들기
 
-[MakeBooklet](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 스트림의 북릿을 만들고 출력 PDF 스트림으로 저장할 수 있습니다. 이 오버로드는 파일 경로 대신 스트림을 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 스트림의 페이지 크기를 설정할 수 있습니다. 다음 코드 스니펫은 페이지 크기와 스트림을 사용하여 북릿을 만드는 방법을 보여줍니다.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 스트림의 북릿을 만들고 출력 PDF 스트림으로 저장할 수 있습니다. 이 오버로드는 파일 경로 대신 스트림을 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 스트림의 페이지 크기를 설정할 수 있습니다. 다음 코드 스니펫은 페이지 크기와 스트림을 사용하여 북릿을 만드는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
 
 ## 페이지 크기, 지정된 왼쪽 및 오른쪽 페이지, 스트림을 사용하여 PDF 북릿 만들기
 
-[MakeBooklet](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 스트림의 북릿을 만들고 출력 PDF 스트림으로 저장할 수 있습니다. 이 오버로드는 파일 경로 대신 스트림을 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 파일의 페이지 크기를 설정하고 왼쪽 및 오른쪽 측면에 대한 특정 페이지를 지정할 수 있습니다. 다음 코드 스니펫은 페이지 크기, 지정된 왼쪽 및 오른쪽 페이지 및 스트림을 사용하여 북릿을 만드는 방법을 보여줍니다.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 스트림의 북릿을 만들고 출력 PDF 스트림으로 저장할 수 있습니다. 이 오버로드는 파일 경로 대신 스트림을 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 파일의 페이지 크기를 설정하고 왼쪽 및 오른쪽 측면에 대한 특정 페이지를 지정할 수 있습니다. 다음 코드 스니펫은 페이지 크기, 지정된 왼쪽 및 오른쪽 페이지 및 스트림을 사용하여 북릿을 만드는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +226,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
 
 ## 지정된 왼쪽 및 오른쪽 페이지, 스트림을 사용하여 PDF 북릿 만들기
 
-[MakeBooklet](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 스트림의 북릿을 만들고 출력 PDF 스트림으로 저장할 수 있습니다. 이 오버로드는 파일 경로 대신 스트림을 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 스트림의 왼쪽 및 오른쪽 측면에 대한 특정 페이지를 지정할 수 있습니다. 다음 코드 스니펫은 지정된 왼쪽 및 오른쪽 페이지와 스트림을 사용하여 북릿을 만드는 방법을 보여줍니다.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  메서드는 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스를 사용하여 입력 PDF 스트림의 북릿을 만들고 출력 PDF 스트림으로 저장할 수 있습니다. 이 오버로드는 파일 경로 대신 스트림을 사용하여 북릿을 만들 수 있게 해줍니다. 또한 이 오버로드를 사용하여 출력 PDF 스트림의 왼쪽 및 오른쪽 측면에 대한 특정 페이지를 지정할 수 있습니다. 다음 코드 스니펫은 지정된 왼쪽 및 오른쪽 페이지와 스트림을 사용하여 북릿을 만드는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -113,11 +113,11 @@ Aspose.PDF for .NET은 ["PDF to HTML"](https://products.aspose.app/pdf/conversio
 [![Aspose.PDF PDF를 HTML로 변환하는 무료 앱](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
-Aspose.PDF for .NET은 소스 PDF 파일을 HTML로 변환하는 두 줄의 코드를 제공합니다. [`SaveFormat enumeration`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/saveformat)에는 소스 파일을 HTML로 저장할 수 있는 값 Html이 포함되어 있습니다. 다음 코드 스니펫은 PDF 파일을 HTML로 변환하는 과정을 보여줍니다.
+Aspose.PDF for .NET은 소스 PDF 파일을 HTML로 변환하는 두 줄의 코드를 제공합니다. [`SaveFormat enumeration`](https://reference.aspose.com/pdf/net/aspose.pdf/saveformat)에는 소스 파일을 HTML로 저장할 수 있는 값 Html이 포함되어 있습니다. 다음 코드 스니펫은 PDF 파일을 HTML로 변환하는 과정을 보여줍니다.
 
 <a name="csharp-pdf-to-html"><strong>단계: C#에서 PDF를 HTML로 변환하기</strong></a>
 
-1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
+1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
 2. **Document.Save()** 메서드를 호출하여 **SaveFormat.Html** 형식으로 저장합니다.
 
 ```csharp
@@ -165,7 +165,7 @@ private static void ConvertPDFtoMultiPageHTML()
 
 ### SVG 파일 저장을 위한 폴더 지정하기
 
-PDF를 HTML로 변환하는 동안 SVG 이미지를 저장할 폴더를 지정할 수 있습니다. [`HtmlSaveOption class`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlsaveoptions)에서 [`SpecialFolderForSvgImages property`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages)를 사용하여 특별한 SVG 이미지 디렉토리를 지정합니다. 이 속성은 변환 중에 SVG 이미지를 저장해야 하는 디렉토리의 경로를 가져오거나 설정합니다. 매개변수가 비어 있거나 null인 경우 모든 SVG 파일은 다른 이미지 파일과 함께 저장됩니다.
+PDF를 HTML로 변환하는 동안 SVG 이미지를 저장할 폴더를 지정할 수 있습니다. [`HtmlSaveOption class`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions)에서 [`SpecialFolderForSvgImages property`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages)를 사용하여 특별한 SVG 이미지 디렉토리를 지정합니다. 이 속성은 변환 중에 SVG 이미지를 저장해야 하는 디렉토리의 경로를 가져오거나 설정합니다. 매개변수가 비어 있거나 null인 경우 모든 SVG 파일은 다른 이미지 파일과 함께 저장됩니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

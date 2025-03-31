@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Bookmark memberi Anda opsi untuk melacak/menghubungkan ke halaman tertentu di dalam dokumen PDF. Kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/PdfContentEditor) dalam [namespace Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) menyediakan fitur yang memungkinkan Anda untuk membuat bookmark Anda sendiri dengan cara yang canggih namun intuitif dalam file PDF yang ada, di halaman tertentu atau di semua halaman.
+Bookmark memberi Anda opsi untuk melacak/menghubungkan ke halaman tertentu di dalam dokumen PDF. Kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) dalam [namespace Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) menyediakan fitur yang memungkinkan Anda untuk membuat bookmark Anda sendiri dengan cara yang canggih namun intuitif dalam file PDF yang ada, di halaman tertentu atau di semua halaman.
 
 ## Detail implementasi
 

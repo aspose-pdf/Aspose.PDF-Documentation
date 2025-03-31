@@ -83,12 +83,12 @@ sitemap:
 
 ## PDFファイル内のリンクを更新
 
-PDFファイルにリンクを追加するために、[LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)クラスを使用します。また、PDFファイル内の既存のリンクを取得するために使用される類似のクラスもあります。既存のリンクを更新する必要がある場合は、これを使用します。既存のリンクを更新するには：
+PDFファイルにリンクを追加するために、[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)クラスを使用します。また、PDFファイル内の既存のリンクを取得するために使用される類似のクラスもあります。既存のリンクを更新する必要がある場合は、これを使用します。既存のリンクを更新するには：
 
 1. PDFファイルをロードします。
 1. PDFファイル内の特定のページに移動します。
-1. [GoToAction](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/gotoaction)オブジェクトのDestinationプロパティを使用してリンクの宛先を指定します。
-1. 宛先ページは、[XYZExplicitDestination](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/xyzexplicitdestination)コンストラクタを使用して指定します。
+1. [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction)オブジェクトのDestinationプロパティを使用してリンクの宛先を指定します。
+1. 宛先ページは、[XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination)コンストラクタを使用して指定します。
 
 ### 同じドキュメント内のページにリンクターゲットを設定
 
@@ -155,7 +155,7 @@ private static void UpdateLinkAnnotation()
 
 ### リンクの宛先をウェブアドレスに設定
 
-ハイパーリンクをウェブアドレスを指すように更新するには、[GoToURIAction](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/gotouriaction)オブジェクトをインスタンス化し、それをLinkAnnotationのActionプロパティに渡します。次のコードスニペットは、PDFファイル内のリンクを更新し、そのターゲットをウェブアドレスに設定する方法を示しています。
+ハイパーリンクをウェブアドレスを指すように更新するには、[GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction)オブジェクトをインスタンス化し、それをLinkAnnotationのActionプロパティに渡します。次のコードスニペットは、PDFファイル内のリンクを更新し、そのターゲットをウェブアドレスに設定する方法を示しています。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

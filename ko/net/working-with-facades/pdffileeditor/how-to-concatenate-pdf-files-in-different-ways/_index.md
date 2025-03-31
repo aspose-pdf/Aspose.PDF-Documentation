@@ -78,11 +78,11 @@ draft: false
 
 {{% alert color="primary" %}}
 
-이 문서에서는 [Aspose.PDF for .NET](/pdf/ko/net/) 구성 요소의 도움으로 여러 PDF 문서를 단일 PDF 문서로 [연결하는 방법](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)을 설명합니다. [Aspose.PDF for .NET](/pdf/ko/net/)는 이 작업을 매우 쉽게 만들어 줍니다.
+이 문서에서는 [Aspose.PDF for .NET](/pdf/ko/net/) 구성 요소의 도움으로 여러 PDF 문서를 단일 PDF 문서로 [연결하는 방법](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)을 설명합니다. [Aspose.PDF for .NET](/pdf/ko/net/)는 이 작업을 매우 쉽게 만들어 줍니다.
 
 {{% /alert %}}
 
-해야 할 일은 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Concatenate](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드를 호출하는 것입니다. 그러면 모든 입력 PDF 파일이 함께 연결되고 단일 PDF 파일이 생성됩니다. PDF 파일 연결을 연습하기 위해 애플리케이션을 만들어 보겠습니다. Visual Studio.NET 2019를 사용하여 애플리케이션을 만들 것입니다.
+해야 할 일은 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드를 호출하는 것입니다. 그러면 모든 입력 PDF 파일이 함께 연결되고 단일 PDF 파일이 생성됩니다. PDF 파일 연결을 연습하기 위해 애플리케이션을 만들어 보겠습니다. Visual Studio.NET 2019를 사용하여 애플리케이션을 만들 것입니다.
 
 {{% alert color="primary" %}}
 
@@ -104,7 +104,7 @@ private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabe
 }
 ```
 
-PDF 파일 연결을 위한 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스의 시연을 위해 Windows 폼 애플리케이션의 뷰가 표시됩니다.
+PDF 파일 연결을 위한 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스의 시연을 위해 Windows 폼 애플리케이션의 뷰가 표시됩니다.
 
 ![PDF 파일 연결하기](how-to-concatenate-pdf-files-in-different-ways_1.png)
 

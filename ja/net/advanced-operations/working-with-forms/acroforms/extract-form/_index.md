@@ -111,7 +111,7 @@ private static void GetValuesFromFields()
 
 ### PDFドキュメントの個々のフィールドから値を取得
 
-フォームフィールドのValueプロパティを使用すると、特定のフィールドの値を取得できます。値を取得するには、DocumentオブジェクトのFormコレクションからフォームフィールドを取得します。このC#の例では、[TextBoxField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/textboxfield)を選択し、そのValueプロパティを使用して値を取得します。
+フォームフィールドのValueプロパティを使用すると、特定のフィールドの値を取得できます。値を取得するには、DocumentオブジェクトのFormコレクションからフォームフィールドを取得します。このC#の例では、[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)を選択し、そのValueプロパティを使用して値を取得します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -160,7 +160,7 @@ private static void GetSubmitFormActionUrl()
 
 場合によっては、ドキュメント内のフォームフィールドの位置を知っているが、その名前を知らないことがあります。たとえば、印刷されたフォームのスキーマしかない場合です。Aspose.PDF for .NETを使用すれば、これは問題ではありません。PDFファイルの特定の領域にどのフィールドがあるかを確認できます。特定の領域からフォームフィールドを取得するには：
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを使用してPDFファイルを開きます。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを使用してPDFファイルを開きます。
 1. ドキュメントのFormsコレクションからフォームを取得します。
 1. 矩形領域を指定し、それをFormオブジェクトのGetFieldsInRectメソッドに渡します。Fieldsコレクションが返されます。
 1. これを使用してフィールドを操作します。

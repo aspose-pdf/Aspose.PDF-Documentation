@@ -77,7 +77,7 @@ draft: false
 
 ## PDFファイルのパスワードを変更する
 
-PDFファイルのパスワードを変更するには、[PdfFileSecurity](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity)オブジェクトを作成し、次に[ChangePassword](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2)メソッドを呼び出す必要があります。既存のオーナーパスワードと新しいユーザーパスワードおよびオーナーパスワードを[ChangePassword](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2)メソッドに渡す必要があります。
+PDFファイルのパスワードを変更するには、[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity)オブジェクトを作成し、次に[ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2)メソッドを呼び出す必要があります。既存のオーナーパスワードと新しいユーザーパスワードおよびオーナーパスワードを[ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2)メソッドに渡す必要があります。
 
 {{% alert color="primary" %}}
 

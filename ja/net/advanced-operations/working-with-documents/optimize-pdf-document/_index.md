@@ -100,9 +100,9 @@ PDFドキュメントには、時折追加データが含まれることがあ�
 
 最適化、またはウェブ用の線形化は、PDFファイルをウェブブラウザでオンラインブラウジングに適したものにするプロセスを指します。ウェブ表示用にファイルを最適化するには：
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトで入力ドキュメントを開きます。
-1. [Optimize](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/optimize)メソッドを使用します。
-1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して最適化されたドキュメントを保存します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトで入力ドキュメントを開きます。
+1. [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize)メソッドを使用します。
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して最適化されたドキュメントを保存します。
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
@@ -129,7 +129,7 @@ private static void OptimizeDocument()
 
 ## PDFサイズを削減する
 
-[OptimizeResources()](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/optimizeresources)メソッドを使用すると、不要な情報を取り除くことでドキュメントサイズを削減できます。デフォルトでは、このメソッドは次のように機能します：
+[OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources)メソッドを使用すると、不要な情報を取り除くことでドキュメントサイズを削減できます。デフォルトでは、このメソッドは次のように機能します：
 
 - ドキュメントページで使用されていないリソースが削除されます。
 - 同じリソースが1つのオブジェクトに結合されます。
@@ -158,11 +158,11 @@ private static void ShrinkDocument()
 
 ## 最適化戦略の管理
 
-最適化戦略をカスタマイズすることもできます。現在、[OptimizeResources()](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/optimizeresources/methods/1)メソッドは5つの技術を使用しています。これらの技術は、[OptimizationOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf.optimization/optimizationoptions)パラメータを使用してOptimizeResources()メソッドで適用できます。
+最適化戦略をカスタマイズすることもできます。現在、[OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1)メソッドは5つの技術を使用しています。これらの技術は、[OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions)パラメータを使用してOptimizeResources()メソッドで適用できます。
 
 ### すべての画像を縮小または圧縮する
 
-画像で作業する方法は2つあります：画像の品質を低下させるか、解像度を変更するかです。いずれの場合でも、[ImageCompressionOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf.optimization/imagecompressionoptions)を適用する必要があります。次の例では、[ImageQuality](https://reference.aspose.com/pdf/ja/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality)を50に設定して画像を縮小します。
+画像で作業する方法は2つあります：画像の品質を低下させるか、解像度を変更するかです。いずれの場合でも、[ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions)を適用する必要があります。次の例では、[ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality)を50に設定して画像を縮小します。
 
 `ImageQuality`はJPEG品質と同様に機能し、値0が最低、値100が最高です。
 
@@ -230,7 +230,7 @@ private static void ResizeImages()
 }
 ```
 
-もう1つの重要な問題は、実行時間です。しかし、再度、この設定も管理できます。現在、2つのアルゴリズム - 標準と高速を使用できます。実行時間を制御するには、[Version](https://reference.aspose.com/pdf/ja/net/aspose.pdf.optimization/imagecompressionoptions/properties/version)プロパティを設定する必要があります。以下のスニペットは、高速アルゴリズムを示しています：
+もう1つの重要な問題は、実行時間です。しかし、再度、この設定も管理できます。現在、2つのアルゴリズム - 標準と高速を使用できます。実行時間を制御するには、[Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version)プロパティを設定する必要があります。以下のスニペットは、高速アルゴリズムを示しています：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -356,7 +356,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 }
 ```
 
-さらに、[AllowReusePageContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent)設定を使用できます。このプロパティがtrueに設定されている場合、同一ページの最適化時にページコンテンツが再利用されます。
+さらに、[AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent)設定を使用できます。このプロパティがtrueに設定されている場合、同一ページの最適化時にページコンテンツが再利用されます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

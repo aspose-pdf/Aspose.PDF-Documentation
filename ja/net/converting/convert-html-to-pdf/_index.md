@@ -109,8 +109,8 @@ _形式_: **Webページ**
 
 <a name="csharp-html-to-pdf"><strong>手順: C#でHTMLをPDFに変換する</strong></a>
 
-1. [HtmlLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlloadoptions/)クラスのインスタンスを作成します。
-2. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)オブジェクトを初期化します。
+1. [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/)クラスのインスタンスを作成します。
+2. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)オブジェクトを初期化します。
 3. **Document.Save()**メソッドを呼び出して出力PDFドキュメントを保存します。
 
 ```csharp
@@ -146,7 +146,7 @@ HTML変換エンジンには、変換プロセスを制御するためのいく�
 
 ### メディアクエリのサポート
 
-メディアクエリは、異なるデバイスに合わせたスタイルシートを提供するための一般的な手法です。デバイスタイプは[`HtmlMediaType`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype)プロパティを使用して設定できます。
+メディアクエリは、異なるデバイスに合わせたスタイルシートを提供するための一般的な手法です。デバイスタイプは[`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype)プロパティを使用して設定できます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void ConvertHTMLtoPDFAdvancedMediaType()
 
 ### フォントの埋め込みを有効（無効）にする
 
-HTMLページは、フォント（ローカルフォルダのフォント、Google Fontsなど）を使用することがよくあります。ドキュメント内のフォントの埋め込みを制御するために、[`IsEmbedFonts`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlloadoptions/properties/isembedfonts)プロパティを使用することもできます。
+HTMLページは、フォント（ローカルフォルダのフォント、Google Fontsなど）を使用することがよくあります。ドキュメント内のフォントの埋め込みを制御するために、[`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts)プロパティを使用することもできます。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -201,9 +201,9 @@ HTMLページは、フォント（ローカルフォルダのフォント、Goog
 ### 外部リソースの読み込みを管理する
 
 変換エンジンは、HTMLドキュメントに関連する特定のリソースの読み込みを制御するメカニズムを提供します。
-[`HtmlLoadOptions`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlloadoptions)クラスには、リソースローダーの動作を定義できる[`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources)プロパティがあります。
+[`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions)クラスには、リソースローダーの動作を定義できる[`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources)プロパティがあります。
 すべてのPNG画像を単一の画像`test.jpg`に置き換え、他のリソースの外部URLを内部に置き換える必要があると仮定します。
-これを行うために、カスタムローダー`SamePictureLoader`を定義し、[`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources)をこの名前にポイントします。
+これを行うために、カスタムローダー`SamePictureLoader`を定義し、[`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources)をこの名前にポイントします。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -264,7 +264,7 @@ private static byte[] GetContentFromUrl(string url)
 <a name="csharp-webpage-to-pdf"><strong>手順: C#でWebページをPDFに変換する</strong></a>
 
 1. HttpClientオブジェクトを使用してページの内容を読み取ります。
-1. [HtmlLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlloadoptions)オブジェクトをインスタンス化し、ベースURLを設定します。
+1. [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions)オブジェクトをインスタンス化し、ベースURLを設定します。
 1. ストリームオブジェクトを渡しながらDocumentオブジェクトを初期化します。
 1. 必要に応じて、ページサイズや向きを設定します。
 
@@ -308,7 +308,7 @@ private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredenti
 
 ### ウェブページをPDFに変換するための資格情報を提供する
 
-時々、認証とアクセス権が必要なHTMLファイルの変換を行う必要があります。これにより、認証されたユーザーのみがページの内容を取得できるようになります。また、HTML内で参照されるリソースやデータが外部サーバーから取得されるシナリオも含まれます。これに対応するために、[`HtmlLoadOptions`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlloadoptions)クラスに[`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials)プロパティが追加されました。以下のコードスニペットは、HTMLファイルをPDFに変換する際にHTMLおよびその関連リソースに資格情報を渡す手順を示しています。
+時々、認証とアクセス権が必要なHTMLファイルの変換を行う必要があります。これにより、認証されたユーザーのみがページの内容を取得できるようになります。また、HTML内で参照されるリソースやデータが外部サーバーから取得されるシナリオも含まれます。これに対応するために、[`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions)クラスに[`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials)プロパティが追加されました。以下のコードスニペットは、HTMLファイルをPDFに変換する際にHTMLおよびその関連リソースに資格情報を渡す手順を示しています。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -406,8 +406,8 @@ Aspose.PDF for .NETは、機能と品質を調査できるオンライン無料�
 
 <a name="csharp-mhtml-to-pdf"><strong>手順: C#でMHTMLをPDFに変換する</strong></a>
 
-1. [MhtLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/mhtloadoptions/)クラスのインスタンスを作成します。
-2. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)オブジェクトを初期化します。
+1. [MhtLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mhtloadoptions/)クラスのインスタンスを作成します。
+2. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)オブジェクトを初期化します。
 3. **Document.Save()**メソッドを呼び出して出力PDFドキュメントを保存します。
 
 ```csharp

@@ -484,7 +484,7 @@ Aspose.PDF for .NET은 PDF 문서를 생성할 때 글꼴을 포함하는 기능
 
 글꼴을 교체하려면 다음 접근 방식을 사용하십시오:
 
-1. [TextFragmentAbsorber](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textfragmentabsorber) 클래스를 호출합니다.
+1. [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) 클래스를 호출합니다.
 1. TextFragmentAbsorber 클래스의 TextEditOptions.FontReplace.RemoveUnusedFonts 매개변수를 호출합니다. (이것은 글꼴 교체 중에 사용하지 않게 된 글꼴을 제거합니다).
 1. 각 텍스트 조각에 대해 글꼴을 개별적으로 설정합니다.
 

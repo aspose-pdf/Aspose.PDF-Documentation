@@ -115,7 +115,7 @@ PDFファイルをDOC形式に簡単に変換し、完全な制御を行いま�
 
 <a name="csharp-pdf-to-doc"><strong>手順: C#でPDFをDOCに変換する</strong></a>
 
-1. ソースPDF文書を使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)オブジェクトのインスタンスを作成します。
+1. ソースPDF文書を使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)オブジェクトのインスタンスを作成します。
 2. **Document.Save()**メソッドを呼び出して、**SaveFormat.Doc**形式で保存します。
 
 ```csharp
@@ -136,13 +136,13 @@ private static void ConvertPDFtoWord()
 
 ### DocSaveOptionsクラスの使用
 
-[`DocSaveOptions`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/docsaveoptions)クラスは、PDFファイルをDOC形式に変換するための多数のプロパティを提供します。これらのプロパティの中で、ModeはPDFコンテンツの認識モードを指定するために使用できます。このプロパティには、RecognitionMode列挙型から任意の値を選択できます。これらの値にはそれぞれ特定の利点と制限があります。
+[`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions)クラスは、PDFファイルをDOC形式に変換するための多数のプロパティを提供します。これらのプロパティの中で、ModeはPDFコンテンツの認識モードを指定するために使用できます。このプロパティには、RecognitionMode列挙型から任意の値を選択できます。これらの値にはそれぞれ特定の利点と制限があります。
 
-- [`Textbox`](https://reference.aspose.com/pdf/ja/net/aspose.pdf.docsaveoptions/recognitionmode)モードは高速で、PDFファイルの元の外観を保持するのに適していますが、結果の文書の編集可能性は制限される可能性があります。元のPDF内の視覚的にグループ化されたテキストブロックは、出力文書内のテキストボックスに変換されます。これにより、元の文書に最大限似た出力文書が得られますが、出力文書は完全にテキストボックスで構成されており、Microsoft Wordで編集するのは非常に難しいです。
-- [`Flow`](https://reference.aspose.com/pdf/ja/net/aspose.pdf.docsaveoptions/recognitionmode)は完全認識モードであり、エンジンがグループ化と多層分析を実行して、著者の意図に従って元の文書を復元し、簡単に編集可能な文書を生成します。制限は、出力文書が元の文書とは異なる外観になる可能性があることです。
+- [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode)モードは高速で、PDFファイルの元の外観を保持するのに適していますが、結果の文書の編集可能性は制限される可能性があります。元のPDF内の視覚的にグループ化されたテキストブロックは、出力文書内のテキストボックスに変換されます。これにより、元の文書に最大限似た出力文書が得られますが、出力文書は完全にテキストボックスで構成されており、Microsoft Wordで編集するのは非常に難しいです。
+- [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode)は完全認識モードであり、エンジンがグループ化と多層分析を実行して、著者の意図に従って元の文書を復元し、簡単に編集可能な文書を生成します。制限は、出力文書が元の文書とは異なる外観になる可能性があることです。
 
-[`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity)プロパティは、テキスト要素間の相対的な近接性を制御するために使用できます。これは、距離がフォントサイズによって規定されることを意味します。大きなフォントは音節間に大きなスペースを持つことができ、依然として1つの全体と見なされます。これはフォントサイズのパーセンテージとして指定されます。たとえば、1 = 100%です。これは、12ptの2文字が12pt離れて配置されている場合、近接していることを意味します。
-- [`RecognitionBullets`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/docsaveoptions/properties/recognizebullets)は、変換中に箇条書きの認識をオンにするために使用されます。
+[`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity)プロパティは、テキスト要素間の相対的な近接性を制御するために使用できます。これは、距離がフォントサイズによって規定されることを意味します。大きなフォントは音節間に大きなスペースを持つことができ、依然として1つの全体と見なされます。これはフォントサイズのパーセンテージとして指定されます。たとえば、1 = 100%です。これは、12ptの2文字が12pt離れて配置されている場合、近接していることを意味します。
+- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets)は、変換中に箇条書きの認識をオンにするために使用されます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -187,7 +187,7 @@ Aspose.PDF for .NET APIを使用すると、C#および任意の.NET言語を使
 
 <a name="csharp-pdf-to-docx"><strong>手順: C#でPDFをDOCXに変換する</strong></a>
 
-1. ソースPDF文書を使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)オブジェクトのインスタンスを作成します。
+1. ソースPDF文書を使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)オブジェクトのインスタンスを作成します。
 2. **Document.Save()**メソッドを呼び出して、**SaveFormat.DocX**形式で保存します。
 
 ```csharp

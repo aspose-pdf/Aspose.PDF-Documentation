@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Para definir propriedades dos elementos de estrutura em um Documento PDF Marcado, Aspose.PDF oferece os métodos [CreateSectElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) e [CreateHeaderElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) da interface [ITaggedContent](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent).
+Para definir propriedades dos elementos de estrutura em um Documento PDF Marcado, Aspose.PDF oferece os métodos [CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) e [CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent).
 
 O seguinte trecho de código mostra como definir propriedades dos elementos de estrutura de um Documento PDF Marcado:
 
@@ -168,7 +168,7 @@ private static void SetProperties()
 
 ## Definindo Elementos de Estrutura de Texto
 
-Para definir elementos de estrutura de texto de um Documento PDF Marcado, Aspose.PDF oferece a classe [ParagraphElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/paragraphelement). O seguinte trecho de código mostra como definir elementos de estrutura de texto de um Documento PDF Marcado:
+Para definir elementos de estrutura de texto de um Documento PDF Marcado, Aspose.PDF oferece a classe [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). O seguinte trecho de código mostra como definir elementos de estrutura de texto de um Documento PDF Marcado:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -241,7 +241,7 @@ private static void SetTextElements()
 
 ## Definindo Elementos de Estrutura de Bloco de Texto
 
-Para definir elementos de estrutura de bloco de texto de um Documento PDF Marcado, Aspose.PDF oferece as classes [HeaderElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/headerelement) e [ParagraphElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/paragraphelement). Você pode anexar objetos dessas classes como filhos do objeto [StructureElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/structureelement).
+Para definir elementos de estrutura de bloco de texto de um Documento PDF Marcado, Aspose.PDF oferece as classes [HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) e [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Você pode anexar objetos dessas classes como filhos do objeto [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement).
 O seguinte trecho de código mostra como definir elementos de estrutura de bloco de texto de um Documento PDF Marcado:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -349,7 +349,7 @@ private static void SetTextBlockElements()
 
 ## Definindo Elementos de Estrutura Inline
 
-Para definir elementos de estrutura inline de um Documento PDF Marcado, Aspose.PDF oferece as classes [SpanElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/spanelement) e [ParagraphElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/paragraphelement). Você pode anexar objetos dessas classes como filhos do objeto [StructureElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/structureelement). O seguinte trecho de código mostra como definir elementos de estrutura inline de um Documento PDF Marcado:
+Para definir elementos de estrutura inline de um Documento PDF Marcado, Aspose.PDF oferece as classes [SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) e [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Você pode anexar objetos dessas classes como filhos do objeto [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). O seguinte trecho de código mostra como definir elementos de estrutura inline de um Documento PDF Marcado:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -588,7 +588,7 @@ private static void SetInlineElements()
 
 ## Definindo Nome de Tag Personalizada
 
-Para definir um nome de tag personalizada dos elementos de um Documento PDF Marcado, Aspose.PDF oferece o método [SetTag](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/structureelement/methods/settag) da classe StructureElement para elementos. O seguinte trecho de código mostra como definir um nome de tag personalizada:
+Para definir um nome de tag personalizada dos elementos de um Documento PDF Marcado, Aspose.PDF oferece o método [SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) da classe StructureElement para elementos. O seguinte trecho de código mostra como definir um nome de tag personalizada:
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -733,7 +733,7 @@ private static void SetTagName()
 
 **Esse recurso é suportado pela versão 19.4 ou superior.**
 
-Para definir elementos de estrutura de link em um Documento PDF Marcado, Aspose.PDF oferece o método [CreateLinkElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/pt/net/aspose.pdf.tagged/itaggedcontent). O seguinte trecho de código mostra como definir elementos de estrutura em parágrafo com texto de Documento PDF Marcado:
+Para definir elementos de estrutura de link em um Documento PDF Marcado, Aspose.PDF oferece o método [CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). O seguinte trecho de código mostra como definir elementos de estrutura em parágrafo com texto de Documento PDF Marcado:
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1077,7 +1077,7 @@ private static void AddLinkElement()
 
 ## Definindo Elemento de Estrutura de Nota
 
-A API Aspose.PDF for .NET também permite que você adicione [NoteElement](https://reference.aspose.com/pdf/pt/net/aspose.pdf.logicalstructure/noteelement) em um documento PDF marcado. O seguinte trecho de código mostra como adicionar elemento de nota em Documento PDF Marcado:
+A API Aspose.PDF for .NET também permite que você adicione [NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement) em um documento PDF marcado. O seguinte trecho de código mostra como adicionar elemento de nota em Documento PDF Marcado:
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

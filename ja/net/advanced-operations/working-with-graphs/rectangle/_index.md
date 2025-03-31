@@ -89,16 +89,16 @@ Aspose.PDF for .NETは、PDF文書にグラフオブジェクト（例えば、�
 
 以下の手順に従ってください：
 
-1. 新しいPDF [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)を作成します。
-1. PDFファイルのページコレクションに[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)を追加します。
-1. ページインスタンスの段落コレクションに[Text fragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf/texfragment)を追加します。
-1. [Graph](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/graph)インスタンスを作成します。
-1. [Drawing object](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing)の境界を設定します。
+1. 新しいPDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)を作成します。
+1. PDFファイルのページコレクションに[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)を追加します。
+1. ページインスタンスの段落コレクションに[Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment)を追加します。
+1. [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)インスタンスを作成します。
+1. [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)の境界を設定します。
 1. 矩形インスタンスを作成します。
 
-1. [Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/rectangle)オブジェクトをGraphオブジェクトの形状コレクションに追加します。
+1. [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)オブジェクトをGraphオブジェクトの形状コレクションに追加します。
 1. グラフオブジェクトをページインスタンスの段落コレクションに追加します。
-1. ページインスタンスの段落コレクションに[Text fragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf/texfragment)を追加します。
+1. ページインスタンスの段落コレクションに[Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment)を追加します。
 
 1. そして、PDFファイルを保存します。
 
@@ -146,7 +146,7 @@ private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float w
 
 Aspose.PDF for .NETは、特定の色で矩形オブジェクトを塗りつぶす機能も提供しています。
 
-以下のコードスニペットは、色で塗りつぶされた[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/rectangle)オブジェクトを追加する方法を示しています。
+以下のコードスニペットは、色で塗りつぶされた[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)オブジェクトを追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -194,7 +194,7 @@ private static void RectangleFilled()
 
 Aspose.PDF for .NETは、PDF文書にグラフオブジェクトを追加する機能をサポートしており、時にはグラフオブジェクトをグラデーションカラーで塗りつぶす必要があります。グラフオブジェクトをグラデーションカラーで塗りつぶすには、以下のようにsetPatterColorSpaceをgradientAxialShadingオブジェクトに設定する必要があります。
 
-以下のコードスニペットは、グラデーションカラーで塗りつぶされた[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/rectangle)オブジェクトを追加する方法を示しています。
+以下のコードスニペットは、グラデーションカラーで塗りつぶされた[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)オブジェクトを追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -243,7 +243,7 @@ private static void CreateFilledRectangleGradientFill()
 
 ## アルファカラー チャンネルを持つ矩形を作成
 
-Aspose.PDF for .NETは、特定の色で矩形オブジェクトを塗りつぶす機能をサポートしています。矩形オブジェクトは、透明な外観を与えるためにアルファカラー チャンネルを持つこともできます。以下のコードスニペットは、アルファカラー チャンネルを持つ[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/rectangle)オブジェクトを追加する方法を示しています。
+Aspose.PDF for .NETは、特定の色で矩形オブジェクトを塗りつぶす機能をサポートしています。矩形オブジェクトは、透明な外観を与えるためにアルファカラー チャンネルを持つこともできます。以下のコードスニペットは、アルファカラー チャンネルを持つ[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)オブジェクトを追加する方法を示しています。
 
 画像のピクセルは、色の値とともに不透明度に関する情報を保存できます。これにより、透明または半透明の領域を持つ画像を作成できます。
 
@@ -304,7 +304,7 @@ private static void RectangleFilled_AlphaChannel()
 
 Aspose.PDF for .NETは、PDF文書にグラフオブジェクト（例えば、グラフ、線、矩形など）を追加する機能をサポートしています。同じオブジェクトのインスタンスをPDFファイル内に複数追加する場合、Z-オーダーを指定することで描画を制御できます。Z-オーダーは、オブジェクトを重ねて描画する必要がある場合にも使用されます。
 
-以下のコードスニペットは、[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/rectangle)オブジェクトを重ねて描画する手順を示しています。
+以下のコードスニペットは、[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)オブジェクトを重ねて描画する手順を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -84,11 +84,11 @@ PDFからテーブルを抽出することは、テーブルがさまざまな�
 
 Aspose.PDF for .NETには、テーブルを簡単に取得するためのツールがあります。テーブルデータを抽出するには、次の手順を実行する必要があります。
 
-1. ドキュメントを開く - [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトをインスタンス化します。
-1. [TableAbsorber](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/tableabsorber)オブジェクトを作成します。
-1. 分析するページを決定し、[Visit](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/tableabsorber/methods/visit)を希望のページに適用します。表形式のデータがスキャンされ、結果が[TableList](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/tableabsorber/properties/tablelist)に保存されます。
-1. `TableList`は[AbsorbedTable](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/absorbedtable)のリストです。データを取得するには、`TableList`を反復処理し、[RowList](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/absorbedtable/properties/rowlist)と[CellList](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/absorbedrow/properties/celllist)を処理します。
-1. 各[AbsorbedCell](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/absorbedcell)には[TextFragments](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/absorbedcell/properties/textfragments)コレクションが含まれています。これを自分の目的に合わせて処理できます。
+1. ドキュメントを開く - [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトをインスタンス化します。
+1. [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber)オブジェクトを作成します。
+1. 分析するページを決定し、[Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/visit)を希望のページに適用します。表形式のデータがスキャンされ、結果が[TableList](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/properties/tablelist)に保存されます。
+1. `TableList`は[AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable)のリストです。データを取得するには、`TableList`を反復処理し、[RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist)と[CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)を処理します。
+1. 各[AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell)には[TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments)コレクションが含まれています。これを自分の目的に合わせて処理できます。
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
@@ -135,7 +135,7 @@ private static void ExtractTable()
 
 ## PDFページの特定の領域でテーブルを抽出する
 
-各吸収されたテーブルには、ページ上のテーブルの位置を説明する[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/absorbedtable/properties/rectangle)プロパティがあります。
+各吸収されたテーブルには、ページ上のテーブルの位置を説明する[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle)プロパティがあります。
 
 特定の領域にあるテーブルを抽出する必要がある場合は、特定の座標で作業する必要があります。
 

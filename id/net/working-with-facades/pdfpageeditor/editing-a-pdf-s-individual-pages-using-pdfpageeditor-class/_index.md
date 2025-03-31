@@ -83,17 +83,17 @@ Namespace Aspose.Pdf.Facades dalam [Aspose.PDF for .NET](/pdf/id/net/) memungkin
 
 ## Penjelasan
 
-Kelas [PdfPageEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfpageeditor) berbeda dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) dan [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor). Pertama, kita perlu memahami perbedaannya, dan kemudian kita akan dapat memahami kelas PdfPageEditor dengan lebih baik. Kelas PdfFileEditor memungkinkan Anda memanipulasi semua halaman dalam sebuah file seperti menambahkan, menghapus, atau menggabungkan halaman, dll, sementara kelas PdfContentEditor membantu Anda memanipulasi konten halaman yaitu teks dan objek lainnya, dll. Sedangkan, kelas PdfPageEditor hanya bekerja dengan halaman individu itu sendiri seperti memutar, memperbesar, dan menyelaraskan halaman, dll.
+Kelas [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) berbeda dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) dan [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Pertama, kita perlu memahami perbedaannya, dan kemudian kita akan dapat memahami kelas PdfPageEditor dengan lebih baik. Kelas PdfFileEditor memungkinkan Anda memanipulasi semua halaman dalam sebuah file seperti menambahkan, menghapus, atau menggabungkan halaman, dll, sementara kelas PdfContentEditor membantu Anda memanipulasi konten halaman yaitu teks dan objek lainnya, dll. Sedangkan, kelas PdfPageEditor hanya bekerja dengan halaman individu itu sendiri seperti memutar, memperbesar, dan menyelaraskan halaman, dll.
 
 Kita dapat membagi fitur yang disediakan oleh kelas ini menjadi tiga kategori utama yaitu Transisi, Penyelarasan, dan Tampilan. Kita akan membahas kategori-kategori ini di bawah ini:
 
 ### Transisi
 
-Kelas ini memiliki dua properti terkait transisi yaitu [TransitionType](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) dan [TransitionDuration](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). TransitionType menentukan gaya transisi yang akan digunakan saat berpindah ke halaman ini dari halaman lain selama presentasi. TransitionDuration menentukan durasi tampilan untuk halaman-halaman.
+Kelas ini memiliki dua properti terkait transisi yaitu [TransitionType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) dan [TransitionDuration](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). TransitionType menentukan gaya transisi yang akan digunakan saat berpindah ke halaman ini dari halaman lain selama presentasi. TransitionDuration menentukan durasi tampilan untuk halaman-halaman.
 
 ### Penyelarasan
 
-Kelas PdfPageEditor mendukung penyelarasan horizontal dan vertikal. Ini menyediakan dua properti untuk tujuan tersebut yaitu [Alignment](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) dan [VerticalAlignment](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). Properti Alignment digunakan untuk menyelaraskan konten secara horizontal. Properti Alignment mengambil nilai dari AlignmentType, yang memiliki tiga opsi yaitu Pusat, Kiri, dan Kanan. Properti VerticalAlignment mengambil nilai dari VerticalAlignmentType, yang memiliki tiga opsi yaitu Bawah, Pusat, dan Atas.
+Kelas PdfPageEditor mendukung penyelarasan horizontal dan vertikal. Ini menyediakan dua properti untuk tujuan tersebut yaitu [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) dan [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). Properti Alignment digunakan untuk menyelaraskan konten secara horizontal. Properti Alignment mengambil nilai dari AlignmentType, yang memiliki tiga opsi yaitu Pusat, Kiri, dan Kanan. Properti VerticalAlignment mengambil nilai dari VerticalAlignmentType, yang memiliki tiga opsi yaitu Bawah, Pusat, dan Atas.
 
 ### Tampilan
 
@@ -164,5 +164,5 @@ private static void EditPdfPages()
 ## Kesimpulan
 
 {{% alert color="primary" %}}
-Dalam artikel ini, kita telah melihat lebih dekat pada kelas [PdfPageEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfpageeditor). Kita telah menjelaskan properti dan metode yang disediakan oleh kelas ini. Ini membuat manipulasi halaman individu dalam kelas menjadi tugas yang sangat mudah dan sederhana.
+Dalam artikel ini, kita telah melihat lebih dekat pada kelas [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor). Kita telah menjelaskan properti dan metode yang disediakan oleh kelas ini. Ini membuat manipulasi halaman individu dalam kelas menjadi tugas yang sangat mudah dan sederhana.
 {{% /alert %}}

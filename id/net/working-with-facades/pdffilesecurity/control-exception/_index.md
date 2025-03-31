@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Kelas PdfFileSecurity](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity) memungkinkan Anda untuk mengontrol pengecualian. Untuk melakukan ini, Anda perlu mengatur properti [AllowExceptions](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) ke false atau true. Jika Anda mengatur operasi ke false, hasil dari [DecryptFile](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) akan mengembalikan true atau false tergantung pada kebenaran kata sandi.
+[Kelas PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) memungkinkan Anda untuk mengontrol pengecualian. Untuk melakukan ini, Anda perlu mengatur properti [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) ke false atau true. Jika Anda mengatur operasi ke false, hasil dari [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) akan mengembalikan true atau false tergantung pada kebenaran kata sandi.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -103,7 +103,7 @@ private static void ControlExceptionPDFFile()
 }
 ```
 
-Jika Anda mengatur properti [AllowExceptions](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) ke true, maka Anda dapat mendapatkan hasil dari operasi menggunakan operator try-catch.
+Jika Anda mengatur properti [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) ke true, maka Anda dapat mendapatkan hasil dari operasi menggunakan operator try-catch.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

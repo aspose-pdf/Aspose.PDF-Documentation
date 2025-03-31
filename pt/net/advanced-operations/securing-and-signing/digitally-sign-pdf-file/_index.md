@@ -91,9 +91,9 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 Podemos usar as seguintes classes e métodos para assinatura de PDF
 
-- Classe [DocMDPSignature](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/docmdpsignature).
-- Enumeração [DocMDPAccessPermissions](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/docmdpaccesspermissions).
-- Propriedade [IsCertified](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) na classe [PdfFileSignature](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature).
+- Classe [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature).
+- Enumeração [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions).
+- Propriedade [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) na classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature).
 
 Para criar uma assinatura digital baseada em certificados PKCS12 (extensões de arquivo .p12, pfx), você deve criar uma instância da classe `PdfFileSignature`, passando o objeto do documento para ela. Em seguida, você deve especificar o método de assinatura digital desejado criando um objeto de uma das classes:
 
@@ -198,7 +198,7 @@ private static void Verify()
 
 Aspose.PDF for .NET suporta assinar digitalmente o PDF com um servidor de timestamp ou serviço Web.
 
-Para atender a esse requisito, a classe [TimestampSettings](https://reference.aspose.com/pdf/pt/net/aspose.pdf/timestampsettings) foi adicionada ao namespace Aspose.PDF. Por favor, dê uma olhada no seguinte trecho de código que obtém o timestamp e o adiciona ao documento PDF:
+Para atender a esse requisito, a classe [TimestampSettings](https://reference.aspose.com/pdf/net/aspose.pdf/timestampsettings) foi adicionada ao namespace Aspose.PDF. Por favor, dê uma olhada no seguinte trecho de código que obtém o timestamp e o adiciona ao documento PDF:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -80,12 +80,12 @@ sitemap:
 
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-Aspose.PDF for .NETを使用してPDFファイルからページを削除できます。[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションから特定のページを削除します。
+Aspose.PDF for .NETを使用してPDFファイルからページを削除できます。[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションから特定のページを削除します。
 
 ## PDFファイルからページを削除
 
-1. [Delete](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection/methods/delete)メソッドを呼び出し、ページのインデックスを指定します。
-1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを呼び出して、更新されたPDFファイルを保存します。
+1. [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete)メソッドを呼び出し、ページのインデックスを指定します。
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを呼び出して、更新されたPDFファイルを保存します。
 次のコードスニペットは、C#を使用してPDFファイルから特定のページを削除する方法を示しています。
 
 ```csharp

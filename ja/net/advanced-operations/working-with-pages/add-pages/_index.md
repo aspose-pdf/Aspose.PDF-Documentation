@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Aspose.PDF for .NET APIは、C#または他の.NET言語を使用してPDFドキュメント内のページを操作するための完全な柔軟性を提供します。PDFドキュメントのすべてのページは、PDFページを操作するために使用できる[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)に保持されます。
+Aspose.PDF for .NET APIは、C#または他の.NET言語を使用してPDFドキュメント内のページを操作するための完全な柔軟性を提供します。PDFドキュメントのすべてのページは、PDFページを操作するために使用できる[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)に保持されます。
 Aspose.PDF for .NETを使用すると、ファイル内の任意の位置にPDFドキュメントにページを挿入したり、PDFファイルの最後にページを追加したりできます。
 このセクションでは、C#を使用してPDFにページを追加する方法を示します。
 
@@ -93,9 +93,9 @@ Aspose.PDF for .NETを使用すると、ファイル内の任意の位置にPDF�
 
 PDFファイルに空白ページを挿入するには：
 
-1. 入力PDFファイルを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのオブジェクトを作成します。
-1. 指定されたインデックスで[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションの[Insert](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection/methods/insert)メソッドを呼び出します。
-1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
+1. 入力PDFファイルを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのオブジェクトを作成します。
+1. 指定されたインデックスで[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションの[Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert)メソッドを呼び出します。
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
 
 次のコードスニペットは、PDFファイルにページを挿入する方法を示しています。
 
@@ -139,9 +139,9 @@ private static void InsertAnEmptyPageWithParameters()
 
 PDFファイルの最後に空白ページを挿入するには：
 
-1. 入力PDFファイルを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのオブジェクトを作成します。
-1. パラメータなしで[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションの[Add](https://reference.aspose.com/pdf/ja/net/aspose.pdf.pagecollection/add/methods/1)メソッドを呼び出します。
-1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
+1. 入力PDFファイルを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのオブジェクトを作成します。
+1. パラメータなしで[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションの[Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1)メソッドを呼び出します。
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
 
 次のコードスニペットは、PDFファイルの最後に空白ページを挿入する方法を示しています。
 

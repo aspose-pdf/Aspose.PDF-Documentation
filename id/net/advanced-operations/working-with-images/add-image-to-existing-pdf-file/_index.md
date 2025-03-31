@@ -155,7 +155,7 @@ Secara default, kualitas JPEG diatur ke 100%. Untuk menerapkan kompresi dan kual
 
 ## Tambahkan Gambar dalam File PDF yang Ada (Facade)
 
-Ada juga cara alternatif yang lebih mudah untuk menambahkan Gambar ke file PDF. Anda dapat menggunakan metode [AddImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) dari kelas [PdfFileMend](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend). Metode [AddImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) memerlukan gambar yang akan ditambahkan, nomor halaman di mana gambar perlu ditambahkan dan informasi koordinat. Setelah itu, simpan file PDF yang diperbarui menggunakan metode Close. Potongan kode berikut menunjukkan cara menambahkan gambar dalam file PDF yang sudah ada.
+Ada juga cara alternatif yang lebih mudah untuk menambahkan Gambar ke file PDF. Anda dapat menggunakan metode [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) dari kelas [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend). Metode [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) memerlukan gambar yang akan ditambahkan, nomor halaman di mana gambar perlu ditambahkan dan informasi koordinat. Setelah itu, simpan file PDF yang diperbarui menggunakan metode Close. Potongan kode berikut menunjukkan cara menambahkan gambar dalam file PDF yang sudah ada.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -324,7 +324,7 @@ private static void ExtractImageTypesFromPDF()
 
 ## Kontrol Kualitas Gambar
 
-Dimungkinkan untuk mengontrol kualitas gambar yang ditambahkan ke file PDF. Gunakan metode overload [Replace](https://reference.aspose.com/pdf/id/net/aspose.pdf.ximagecollection/replace/methods/1) dalam kelas [XImageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/ximagecollection).
+Dimungkinkan untuk mengontrol kualitas gambar yang ditambahkan ke file PDF. Gunakan metode overload [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) dalam kelas [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection).
 
 Potongan kode berikut menunjukkan cara mengonversi semua gambar dokumen menjadi JPEG yang menggunakan kualitas 80% untuk kompresi.
 

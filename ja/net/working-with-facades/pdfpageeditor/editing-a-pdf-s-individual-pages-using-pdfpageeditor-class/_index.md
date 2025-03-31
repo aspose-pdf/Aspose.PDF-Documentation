@@ -83,17 +83,17 @@ Aspose.Pdf.Facades名前空間は[Aspose.PDF for .NET](/pdf/ja/net/)で、PDFフ
 
 ## 説明
 
-[PdfPageEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor)クラスは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)および[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスとは異なります。まず、違いを理解する必要があり、その後、PdfPageEditorクラスをよりよく理解できるようになります。PdfFileEditorクラスは、ページの追加、削除、結合など、ファイル内のすべてのページを操作することを可能にします。一方、PdfContentEditorクラスは、ページの内容、すなわちテキストやその他のオブジェクトを操作するのに役立ちます。対照的に、PdfPageEditorクラスは、ページの回転、ズーム、整列など、個々のページ自体のみを操作します。
+[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor)クラスは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)および[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスとは異なります。まず、違いを理解する必要があり、その後、PdfPageEditorクラスをよりよく理解できるようになります。PdfFileEditorクラスは、ページの追加、削除、結合など、ファイル内のすべてのページを操作することを可能にします。一方、PdfContentEditorクラスは、ページの内容、すなわちテキストやその他のオブジェクトを操作するのに役立ちます。対照的に、PdfPageEditorクラスは、ページの回転、ズーム、整列など、個々のページ自体のみを操作します。
 
 このクラスが提供する機能は、トランジション、整列、表示の3つの主要なカテゴリに分けることができます。以下でこれらのカテゴリについて説明します。
 
 ### トランジション
 
-このクラスには、トランジションに関連する2つのプロパティ、すなわち[TransitionType](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype)と[TransitionDuration](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration)があります。TransitionTypeは、プレゼンテーション中に別のページからこのページに移動する際に使用されるトランジションスタイルを指定します。TransitionDurationは、ページの表示時間を指定します。
+このクラスには、トランジションに関連する2つのプロパティ、すなわち[TransitionType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype)と[TransitionDuration](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration)があります。TransitionTypeは、プレゼンテーション中に別のページからこのページに移動する際に使用されるトランジションスタイルを指定します。TransitionDurationは、ページの表示時間を指定します。
 
 ### 整列
 
-PdfPageEditorクラスは、水平および垂直の整列の両方をサポートしています。この目的のために、[Alignment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor/properties/alignment)と[VerticalAlignment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment)の2つのプロパティを提供します。Alignmentプロパティは、内容を水平方向に整列させるために使用されます。Alignmentプロパティは、Center、Left、Rightの3つのオプションを含むAlignmentTypeの値を取ります。VerticalAlignmentプロパティは、Bottom、Center、Topの3つのオプションを含むVerticalAlignmentTypeの値を取ります。
+PdfPageEditorクラスは、水平および垂直の整列の両方をサポートしています。この目的のために、[Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/alignment)と[VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment)の2つのプロパティを提供します。Alignmentプロパティは、内容を水平方向に整列させるために使用されます。Alignmentプロパティは、Center、Left、Rightの3つのオプションを含むAlignmentTypeの値を取ります。VerticalAlignmentプロパティは、Bottom、Center、Topの3つのオプションを含むVerticalAlignmentTypeの値を取ります。
 
 ### 表示
 
@@ -164,5 +164,5 @@ private static void EditPdfPages()
 ## 結論
 
 {{% alert color="primary" %}}
-この記事では、[PdfPageEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfpageeditor)クラスを詳しく見てきました。このクラスが提供するプロパティとメソッドについて詳述しました。これにより、クラス内の個々のページの操作が非常に簡単でシンプルなタスクになります。
+この記事では、[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor)クラスを詳しく見てきました。このクラスが提供するプロパティとメソッドについて詳述しました。これにより、クラス内の個々のページの操作が非常に簡単でシンプルなタスクになります。
 {{% /alert %}}

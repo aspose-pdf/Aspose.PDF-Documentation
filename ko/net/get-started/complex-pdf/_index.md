@@ -83,15 +83,15 @@ sitemap:
 
 문서를 처음부터 만들 경우 특정 단계를 따라야 합니다:
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 인스턴스화합니다. 이 단계에서는 일부 메타데이터가 포함된 빈 PDF 문서를 생성하지만 페이지는 포함하지 않습니다.
-1. 문서 객체에 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page)를 추가합니다. 이제 우리 문서에는 한 페이지가 있습니다.
-1. 페이지에 [Image](https://reference.aspose.com/pdf/ko/net/aspose.pdf/image/methods/index)를 추가합니다.
-1. 헤더를 위한 [TextFragment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textfragment)를 생성합니다. 헤더에는 Arial 글꼴을 사용하고 글꼴 크기는 24pt, 정렬은 중앙으로 설정합니다.
-1. 페이지의 [Paragraphs](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page/properties/paragraphs)에 헤더를 추가합니다.
-1. 설명을 위한 [TextFragment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textfragment)를 생성합니다. 설명에도 Arial 글꼴을 사용하고 글꼴 크기는 24pt, 정렬은 중앙으로 설정합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 인스턴스화합니다. 이 단계에서는 일부 메타데이터가 포함된 빈 PDF 문서를 생성하지만 페이지는 포함하지 않습니다.
+1. 문서 객체에 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)를 추가합니다. 이제 우리 문서에는 한 페이지가 있습니다.
+1. 페이지에 [Image](https://reference.aspose.com/pdf/net/aspose.pdf/image/methods/index)를 추가합니다.
+1. 헤더를 위한 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)를 생성합니다. 헤더에는 Arial 글꼴을 사용하고 글꼴 크기는 24pt, 정렬은 중앙으로 설정합니다.
+1. 페이지의 [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)에 헤더를 추가합니다.
+1. 설명을 위한 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)를 생성합니다. 설명에도 Arial 글꼴을 사용하고 글꼴 크기는 24pt, 정렬은 중앙으로 설정합니다.
 1. 페이지의 단락에 (설명)을 추가합니다.
 1. 테이블을 생성하고 테이블 속성을 추가합니다.
-1. (테이블)을 페이지의 [Paragraphs](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page/properties/paragraphs)에 추가합니다.
+1. (테이블)을 페이지의 [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)에 추가합니다.
 1. 문서를 "Complex.pdf"로 저장합니다.
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.

@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Kelas PdfFileInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileinfo) memungkinkan Anda untuk mengatur informasi spesifik file dari file PDF. Anda perlu membuat objek dari [Kelas PdfFileInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileinfo) dan kemudian mengatur berbagai properti spesifik file seperti Penulis, Judul, Kata Kunci, dan Pencipta, dll. Akhirnya, simpan file PDF yang diperbarui menggunakan metode [SaveNewInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) dari objek [PdfFileInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileinfo).
+[Kelas PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) memungkinkan Anda untuk mengatur informasi spesifik file dari file PDF. Anda perlu membuat objek dari [Kelas PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) dan kemudian mengatur berbagai properti spesifik file seperti Penulis, Judul, Kata Kunci, dan Pencipta, dll. Akhirnya, simpan file PDF yang diperbarui menggunakan metode [SaveNewInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) dari objek [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo).
 
 Cuplikan kode berikut menunjukkan kepada Anda cara mengatur informasi file PDF.
 
@@ -103,7 +103,7 @@ private static void SetPdfInfo()
 
 ## Atur Info Meta
 
-Metode [SetMetaInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) memungkinkan Anda untuk menambahkan informasi apa pun. Dalam contoh kami, kami menambahkan sebuah field. Periksa cuplikan kode berikut: 
+Metode [SetMetaInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) memungkinkan Anda untuk menambahkan informasi apa pun. Dalam contoh kami, kami menambahkan sebuah field. Periksa cuplikan kode berikut: 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

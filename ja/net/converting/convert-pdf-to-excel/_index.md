@@ -138,7 +138,7 @@ Aspose.PDF for .NETは、オンラインの無料アプリケーション["PDF t
 [![Aspose.PDF PDFをExcelに変換する無料アプリ](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-PDFファイルを<abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>形式に変換するために、Aspose.PDFには[ExcelSaveOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/excelsaveoptions)というクラスがあります。ExcelSaveOptionsクラスのオブジェクトは、Document.Save(..)コンストラクタの第二引数として渡されます。
+PDFファイルを<abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>形式に変換するために、Aspose.PDFには[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)というクラスがあります。ExcelSaveOptionsクラスのオブジェクトは、Document.Save(..)コンストラクタの第二引数として渡されます。
 
 次のコードスニペットは、Aspose.PDF for .NETを使用してPDFファイルをXLSまたはXLSX形式に変換するプロセスを示しています。
 
@@ -235,7 +235,7 @@ private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 ### XMLスプレッドシート2003形式に変換
 
-バージョン20.8以降、Aspose.PDFはデフォルトでMicrosoft Excel Open XMLスプレッドシート2007ファイル形式を使用してデータを保存します。PDFファイルをXMLスプレッドシート2003形式に変換するために、Aspose.PDFには[ExcelSaveOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/excelsaveoptions)というクラスがあり、[Format](https://reference.aspose.com/pdf/ja/net/aspose.pdf/excelsaveoptions/properties/format)があります。[ExcelSaveOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/excelsaveoptions)クラスのオブジェクトは、[Document.Save(..)](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドの第二引数として渡されます。
+バージョン20.8以降、Aspose.PDFはデフォルトでMicrosoft Excel Open XMLスプレッドシート2007ファイル形式を使用してデータを保存します。PDFファイルをXMLスプレッドシート2003形式に変換するために、Aspose.PDFには[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)というクラスがあり、[Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format)があります。[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)クラスのオブジェクトは、[Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドの第二引数として渡されます。
 
 次のコードスニペットは、PDFファイルをXLS Excel 2003 XML形式に変換するプロセスを示しています。
 

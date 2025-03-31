@@ -82,7 +82,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Rastrear Quebra de Linha de TextFragment de Múltiplas Linhas
 
-Aspose.PDF for .NET oferece processamento em segundo plano de registro (rastreamento) (quebra de linha) de fragmentos de texto de múltiplas linhas em cenários de adição de texto. Você pode usar o método [GetNotifications](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page/methods/getnotifications)() da classe [Page](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) da seguinte forma, a fim de rastrear a quebra de linha do fragmento de texto:
+Aspose.PDF for .NET oferece processamento em segundo plano de registro (rastreamento) (quebra de linha) de fragmentos de texto de múltiplas linhas em cenários de adição de texto. Você pode usar o método [GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)() da classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) da seguinte forma, a fim de rastrear a quebra de linha do fragmento de texto:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

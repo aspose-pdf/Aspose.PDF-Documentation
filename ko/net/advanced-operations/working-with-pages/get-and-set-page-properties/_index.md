@@ -83,8 +83,8 @@ Aspose.PDF for .NET는 .NET 애플리케이션에서 PDF 파일의 페이지 속
 
 PDF 파일의 페이지 수를 가져오려면:
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스를 사용하여 PDF 파일을 엽니다.
-1. 그런 다음 [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션의 Count 속성(문서 객체에서)을 사용하여 문서의 총 페이지 수를 가져옵니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 PDF 파일을 엽니다.
+1. 그런 다음 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션의 Count 속성(문서 객체에서)을 사용하여 문서의 총 페이지 수를 가져옵니다.
 
 다음 코드 조각은 PDF 파일의 페이지 수를 가져오는 방법을 보여줍니다.
 
@@ -106,7 +106,7 @@ private static void GetNumberOfPagesInAPdfFile()
 
 ### 문서를 저장하지 않고 페이지 수 가져오기
 
-때때로 우리는 PDF 파일을 즉석에서 생성하며, PDF 파일 생성 중에 시스템이나 스트림에 파일을 저장하지 않고 페이지 수를 가져와야 하는 요구 사항(목차 생성 등)이 발생할 수 있습니다. 이러한 요구 사항을 충족하기 위해 Document 클래스에 [ProcessParagraphs](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/processparagraphs) 메서드가 도입되었습니다. 문서를 저장하지 않고 페이지 수를 가져오는 단계를 보여주는 다음 코드 조각을 살펴보십시오.
+때때로 우리는 PDF 파일을 즉석에서 생성하며, PDF 파일 생성 중에 시스템이나 스트림에 파일을 저장하지 않고 페이지 수를 가져와야 하는 요구 사항(목차 생성 등)이 발생할 수 있습니다. 이러한 요구 사항을 충족하기 위해 Document 클래스에 [ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs) 메서드가 도입되었습니다. 문서를 저장하지 않고 페이지 수를 가져오는 단계를 보여주는 다음 코드 조각을 살펴보십시오.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ PDF 파일의 각 페이지에는 너비, 높이, 블리드 박스, 크롭 박�
 
 ### **페이지 속성 접근하기**
 
-[Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 클래스는 특정 PDF 페이지와 관련된 모든 속성을 제공합니다. PDF 파일의 모든 페이지는 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션에 포함되어 있습니다.
+[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스는 특정 PDF 페이지와 관련된 모든 속성을 제공합니다. PDF 파일의 모든 페이지는 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션에 포함되어 있습니다.
 
 거기에서 인덱스를 사용하여 개별 Page 객체에 접근하거나 foreach 루프를 사용하여 컬렉션을 반복하여 모든 페이지를 가져올 수 있습니다. 개별 페이지에 접근하면 해당 속성을 가져올 수 있습니다. 다음 코드 조각은 페이지 속성을 가져오는 방법을 보여줍니다.
 
@@ -190,12 +190,12 @@ private static void AccessingPageProperties()
 
 Aspose.PDF를 사용하면 [PDF를 개별 페이지로 분할](/pdf/ko/net/split-pdf-document/)하고 이를 PDF 파일로 저장할 수 있습니다. PDF 파일에서 특정 페이지를 가져와 새 PDF로 저장하는 것은 매우 유사한 작업입니다: 원본 문서를 열고, 페이지에 접근하고, 새 문서를 만들고, 페이지를 추가합니다.
 
-[Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection)은 PDF 파일의 페이지를 보유합니다. 이 컬렉션에서 특정 페이지를 가져오려면:
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)은 PDF 파일의 페이지를 보유합니다. 이 컬렉션에서 특정 페이지를 가져오려면:
 
 1. Pages 속성을 사용하여 페이지 인덱스를 지정합니다.
-1. 새 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성합니다.
-1. [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체를 새 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체에 추가합니다.
-1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력을 저장합니다.
+1. 새 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성합니다.
+1. [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체를 새 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체에 추가합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력을 저장합니다.
 
 다음 코드 조각은 PDF 파일에서 특정 페이지를 가져와 새 파일로 저장하는 방법을 보여줍니다.
 
@@ -224,9 +224,9 @@ private static void GetAParticularPageOfThePdfFile()
 
 ## 페이지 색상 결정하기
 
-[Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 클래스는 PDF 문서의 특정 페이지와 관련된 속성을 제공하며, 페이지가 사용하는 색상 유형 - RGB, 흑백, 그레이스케일 또는 정의되지 않음 - 을 포함합니다.
+[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스는 PDF 문서의 특정 페이지와 관련된 속성을 제공하며, 페이지가 사용하는 색상 유형 - RGB, 흑백, 그레이스케일 또는 정의되지 않음 - 을 포함합니다.
 
-PDF 파일의 모든 페이지는 [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션에 포함되어 있습니다. ColorType 속성은 페이지의 요소 색상을 지정합니다. 특정 PDF 페이지의 색상 정보를 가져오거나 결정하려면 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체의 [ColorType](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page/properties/colortype) 속성을 사용하십시오.
+PDF 파일의 모든 페이지는 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션에 포함되어 있습니다. ColorType 속성은 페이지의 요소 색상을 지정합니다. 특정 PDF 페이지의 색상 정보를 가져오거나 결정하려면 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체의 [ColorType](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/colortype) 속성을 사용하십시오.
 
 다음 코드 조각은 PDF 파일의 개별 페이지를 반복하여 색상 정보를 가져오는 방법을 보여줍니다.
 

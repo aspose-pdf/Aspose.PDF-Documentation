@@ -83,13 +83,13 @@ sitemap:
 
 ## PDFファイルからリンクを抽出する
 
-リンクはPDFファイル内の注釈として表されるため、リンクを抽出するには、すべての[LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)オブジェクトを抽出します。
+リンクはPDFファイル内の注釈として表されるため、リンクを抽出するには、すべての[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)オブジェクトを抽出します。
 
-1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを作成します。
-1. リンクを抽出したい[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)を取得します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationselector)クラスを使用して、指定されたページからすべての[LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)オブジェクトを抽出します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationselector)オブジェクトをPageオブジェクトのAcceptメソッドに渡します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationselector)オブジェクトのSelectedプロパティを使用して、すべての選択されたリンク注釈をIListオブジェクトに取得します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成します。
+1. リンクを抽出したい[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)を取得します。
+1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector)クラスを使用して、指定されたページからすべての[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)オブジェクトを抽出します。
+1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector)オブジェクトをPageオブジェクトのAcceptメソッドに渡します。
+1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector)オブジェクトのSelectedプロパティを使用して、すべての選択されたリンク注釈をIListオブジェクトに取得します。
 
 次のコードスニペットは、PDFファイルからリンクを抽出する方法を示しています。
 

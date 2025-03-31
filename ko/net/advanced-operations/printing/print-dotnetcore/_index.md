@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
  
 24.4 릴리스 이후, 인쇄 대화 상자에서 PDF 페이지 크기에 따라 용지 소스를 선택할 수 있습니다. 다음 코드 스니펫은 PDF의 페이지 크기에 따라 프린터 트레이를 선택할 수 있게 해줍니다.
 
-이 선호도는 [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/picktraybypdfsize/) 속성을 사용하여 켜고 끌 수 있습니다.
+이 선호도는 [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/) 속성을 사용하여 켜고 끌 수 있습니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## 인쇄 대화 상자 프리셋 페이지 배율
 
-다음 코드 스니펫은 [PrintScaling](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/printscaling/) 속성이 올바르게 적용되고 PDF에 저장되도록 하는 것을 목표로 합니다.
+다음 코드 스니펫은 [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) 속성이 올바르게 적용되고 PDF에 저장되도록 하는 것을 목표로 합니다.
 
-[PrintScaling](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/printscaling/) 속성은 `Aspose.Pdf.PrintScaling.AppDefault` 또는 `Aspose.Pdf.PrintScaling.None` 값으로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/) 클래스에 추가되었습니다.
+[PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) 속성은 `Aspose.Pdf.PrintScaling.AppDefault` 또는 `Aspose.Pdf.PrintScaling.None` 값으로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 클래스에 추가되었습니다.
 
 이 문서에 대해 인쇄 대화 상자가 표시될 때 선택해야 할 페이지 배율 옵션입니다. 유효한 값은 페이지 배율이 없음을 나타내는 `None`과, 준수하는 리더의 기본 인쇄 배율을 나타내는 `AppDefault`입니다. 이 항목에 인식되지 않는 값이 있는 경우 `AppDefault`를 사용해야 합니다. 기본값: `AppDefault`.
 

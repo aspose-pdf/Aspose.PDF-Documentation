@@ -101,7 +101,7 @@ _형식_: **PowerPoint**
 
 우리는 PPT/PPTX 프레젠테이션을 생성하고 조작할 수 있는 기능을 제공하는 Aspose.Slides라는 API를 가지고 있습니다. 이 API는 PPT/PPTX 파일을 PDF 형식으로 변환하는 기능도 제공합니다. 최근에 많은 고객으로부터 PDF를 PPTX 형식으로 변환하는 기능을 지원해 달라는 요청을 받았습니다. Aspose.PDF for .NET 10.3.0 버전부터 PDF 문서를 PPTX 형식으로 변환하는 기능을 도입했습니다. 이 변환 과정에서 PDF 파일의 개별 페이지가 PPTX 파일의 별도 슬라이드로 변환됩니다.
 
-PDF를 <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>로 변환하는 동안 텍스트는 선택 및 업데이트할 수 있는 텍스트로 렌더링됩니다. PDF 파일을 PPTX 형식으로 변환하기 위해 Aspose.PDF는 [`PptxSaveOptions`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pptxsaveoptions)라는 클래스를 제공합니다. PptxSaveOptions 클래스의 객체는 [`Document.Save(..) method`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드의 두 번째 인수로 전달됩니다. 다음 코드 스니펫은 PDF 파일을 PPTX 형식으로 변환하는 과정을 보여줍니다.
+PDF를 <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>로 변환하는 동안 텍스트는 선택 및 업데이트할 수 있는 텍스트로 렌더링됩니다. PDF 파일을 PPTX 형식으로 변환하기 위해 Aspose.PDF는 [`PptxSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions)라는 클래스를 제공합니다. PptxSaveOptions 클래스의 객체는 [`Document.Save(..) method`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드의 두 번째 인수로 전달됩니다. 다음 코드 스니펫은 PDF 파일을 PPTX 형식으로 변환하는 과정을 보여줍니다.
 
 ## C# 및 Aspose.PDF .NET을 사용한 PDF를 PowerPoint로 간단히 변환하기
 
@@ -109,8 +109,8 @@ PDF를 PPTX로 변환하기 위해 Aspose.PDF for .NET는 다음 코드 단계�
 
 <a name="csharp-pdf-to-powerpoint"><strong>단계: C#에서 PDF를 PowerPoint로 변환하기</strong></a> | <a name="csharp-pdf-to-pptx"><strong>단계: C#에서 PDF를 PPTX로 변환하기</strong></a>
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
-2. [PptxSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pptxsaveoptions) 클래스의 인스턴스를 생성합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
+2. [PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) 클래스의 인스턴스를 생성합니다.
 3. **Document** 객체의 **Save** 메서드를 사용하여 PDF를 PPTX로 저장합니다.
 
 ```csharp
@@ -142,7 +142,7 @@ Aspose.PDF for .NET는 ["PDF to PPTX"](https://products.aspose.app/pdf/conversio
 [![Aspose.PDF PDF를 PPTX로 변환하는 무료 앱](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
 
-검색 가능한 PDF를 선택 가능한 텍스트 대신 이미지로 PPTX로 변환해야 하는 경우, Aspose.PDF는 [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pptxsaveoptions) 클래스를 통해 이러한 기능을 제공합니다. 이를 달성하기 위해 [PptxSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pptxsaveoptions) 클래스의 [SlidesAsImages](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) 속성을 'true'로 설정합니다. 다음 코드 샘플에서 보여줍니다.
+검색 가능한 PDF를 선택 가능한 텍스트 대신 이미지로 PPTX로 변환해야 하는 경우, Aspose.PDF는 [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) 클래스를 통해 이러한 기능을 제공합니다. 이를 달성하기 위해 [PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) 클래스의 [SlidesAsImages](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) 속성을 'true'로 설정합니다. 다음 코드 샘플에서 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -168,7 +168,7 @@ private static void ConvertPDFToPPTWithSlidesAsImages()
 
 ## PPTX 변환 진행 세부정보
 
-Aspose.PDF for .NET는 PDF를 PPTX로 변환하는 진행 상황을 추적할 수 있게 해줍니다. [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pptxsaveoptions) 클래스는 변환 진행 상황을 추적하기 위해 사용자 정의 메서드에 지정할 수 있는 [CustomProgressHandler](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler) 속성을 제공합니다. 다음 코드 샘플에서 보여줍니다.
+Aspose.PDF for .NET는 PDF를 PPTX로 변환하는 진행 상황을 추적할 수 있게 해줍니다. [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) 클래스는 변환 진행 상황을 추적하기 위해 사용자 정의 메서드에 지정할 수 있는 [CustomProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler) 속성을 제공합니다. 다음 코드 샘플에서 보여줍니다.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

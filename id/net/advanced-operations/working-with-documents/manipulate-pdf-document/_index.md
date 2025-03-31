@@ -83,7 +83,7 @@ sitemap:
 
 ## Memvalidasi Dokumen PDF untuk Standar PDF A (A 1A dan A 1B)
 
-Untuk memvalidasi dokumen PDF untuk kompatibilitas PDF/A-1a atau PDF/A-1b, gunakan metode Validate dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Metode ini memungkinkan Anda untuk menentukan nama file tempat hasil akan disimpan dan jenis validasi yang diperlukan dari enumerasi [PdfFormat](https://reference.aspose.com/pdf/id/net/aspose.pdf/pdfformat): PDF_A_1A atau PDF_A_1B.
+Untuk memvalidasi dokumen PDF untuk kompatibilitas PDF/A-1a atau PDF/A-1b, gunakan metode Validate dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Metode ini memungkinkan Anda untuk menentukan nama file tempat hasil akan disimpan dan jenis validasi yang diperlukan dari enumerasi [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat): PDF_A_1A atau PDF_A_1B.
 
 {{% alert color="primary" %}}
 
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### Menyembunyikan Nomor Halaman di TOC
 
-Jika Anda tidak ingin menampilkan nomor halaman, bersama dengan judul di TOC, Anda dapat menggunakan properti [IsShowPageNumbers](https://reference.aspose.com/pdf/id/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) dari kelas [TOCInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf/tocinfo) sebagai false. Silakan periksa potongan kode berikut untuk menyembunyikan nomor halaman di tabel isi:
+Jika Anda tidak ingin menampilkan nomor halaman, bersama dengan judul di TOC, Anda dapat menggunakan properti [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) dari kelas [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) sebagai false. Silakan periksa potongan kode berikut untuk menyembunyikan nomor halaman di tabel isi:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -453,7 +453,7 @@ private static void SetExpiryDate()
 
 Seorang pelanggan meminta kami untuk menambahkan fitur yang memungkinkan pengembang untuk menentukan kemajuan generasi file PDF. Berikut adalah tanggapan terhadap permintaan itu.
 
-Bidang [CustomerProgressHandler](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) dari kelas [DocSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions) memungkinkan Anda untuk menentukan bagaimana kemajuan generasi PDF. Penangan memiliki tipe berikut:
+Bidang [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) dari kelas [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) memungkinkan Anda untuk menentukan bagaimana kemajuan generasi PDF. Penangan memiliki tipe berikut:
 
 - DocSaveOptions.ConversionProgessEventHandler.
 - DocSaveOptions.ProgressEventHandlerInfo.

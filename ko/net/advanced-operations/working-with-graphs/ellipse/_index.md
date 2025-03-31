@@ -83,7 +83,7 @@ sitemap:
 
 ## 타원 객체 추가
 
-Aspose.PDF for .NET은 PDF 문서에 [타원](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/ellipse) 객체를 추가하는 기능을 지원합니다. 또한 특정 색상으로 타원 객체를 채우는 기능을 제공합니다.
+Aspose.PDF for .NET은 PDF 문서에 [타원](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) 객체를 추가하는 기능을 지원합니다. 또한 특정 색상으로 타원 객체를 채우는 기능을 제공합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,7 +133,7 @@ private static void Ellipse()
 
 ## 채워진 타원 객체 생성
 
-다음 코드 스니펫은 색상으로 채워진 [타원](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/ellipse) 객체를 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 색상으로 채워진 [타원](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) 객체를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

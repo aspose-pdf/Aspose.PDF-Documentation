@@ -83,9 +83,9 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## **Mencetak PDF ke printer XPS di C#**
 
-Anda dapat mencetak file PDF ke printer XPS, atau beberapa printer lunak lainnya, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer) . Untuk melakukan itu, buat objek dari kelas PdfViewer dan buka file PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) . Anda dapat mengatur berbagai pengaturan cetak menggunakan kelas [PrinterSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf.printing/printersettings/) dan [PageSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf.printing/pagesettings/) . Anda juga perlu mengatur properti [PrinterName](https://reference.aspose.com/pdf/id/net/aspose.pdf.printing/printersettings/printername/) ke printer XPS atau printer lunak lainnya yang telah Anda instal.
+Anda dapat mencetak file PDF ke printer XPS, atau beberapa printer lunak lainnya, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) . Untuk melakukan itu, buat objek dari kelas PdfViewer dan buka file PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) . Anda dapat mengatur berbagai pengaturan cetak menggunakan kelas [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) dan [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) . Anda juga perlu mengatur properti [PrinterName](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/printername/) ke printer XPS atau printer lunak lainnya yang telah Anda instal.
 
-Akhirnya, gunakan metode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) untuk mencetak PDF ke XPS atau printer lunak lainnya. Potongan kode berikut menunjukkan cara mencetak file PDF ke printer XPS.
+Akhirnya, gunakan metode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) untuk mencetak PDF ke XPS atau printer lunak lainnya. Potongan kode berikut menunjukkan cara mencetak file PDF ke printer XPS.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -180,7 +180,7 @@ private static void PrintToXpsPrinter()
 
 Sejak rilis 24.4, memilih sumber kertas berdasarkan ukuran halaman PDF di dialog cetak adalah mungkin. Potongan kode berikut memungkinkan pemilihan baki printer berdasarkan ukuran halaman PDF.
 
-Preferensi ini dapat diaktifkan dan dinonaktifkan menggunakan fasad [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/) .
+Preferensi ini dapat diaktifkan dan dinonaktifkan menggunakan fasad [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/) .
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

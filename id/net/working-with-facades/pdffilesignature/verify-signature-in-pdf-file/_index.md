@@ -77,7 +77,7 @@ draft: false
 
 ## Verifikasi Apakah File PDF Ditandatangani Menggunakan Tanda Tangan
 
-Untuk memverifikasi apakah file PDF ditandatangani menggunakan [tanda tangan tertentu](/pdf/id/net/working-with-signature-in-a-pdf-file/), gunakan metode VerifySigned dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature). Metode ini memerlukan nama tanda tangan dan mengembalikan true jika PDF ditandatangani menggunakan nama tanda tangan tersebut. Juga dimungkinkan untuk memverifikasi bahwa [PDF ditandatangani](/pdf/id/net/working-with-signature-in-a-pdf-file/), tanpa memverifikasi tanda tangan mana yang digunakan.
+Untuk memverifikasi apakah file PDF ditandatangani menggunakan [tanda tangan tertentu](/pdf/id/net/working-with-signature-in-a-pdf-file/), gunakan metode VerifySigned dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). Metode ini memerlukan nama tanda tangan dan mengembalikan true jika PDF ditandatangani menggunakan nama tanda tangan tersebut. Juga dimungkinkan untuk memverifikasi bahwa [PDF ditandatangani](/pdf/id/net/working-with-signature-in-a-pdf-file/), tanpa memverifikasi tanda tangan mana yang digunakan.
 
 ### Memverifikasi bahwa PDF Ditandatangani dengan Tanda Tangan Tertentu
 
@@ -127,7 +127,7 @@ private static void IsPdfSignedWithGivenSignature()
 
 ## Verifikasi Apakah Tanda Tangan Valid
 
-Metode [VerifySignature](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesignature) memungkinkan Anda untuk memvalidasi tanda tangan tertentu. Metode ini memerlukan nama tanda tangan sebagai input dan mengembalikan true jika tanda tangan tersebut valid. Potongan kode berikut menunjukkan cara memvalidasi tanda tangan.
+Metode [VerifySignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) memungkinkan Anda untuk memvalidasi tanda tangan tertentu. Metode ini memerlukan nama tanda tangan sebagai input dan mengembalikan true jika tanda tangan tersebut valid. Potongan kode berikut menunjukkan cara memvalidasi tanda tangan.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

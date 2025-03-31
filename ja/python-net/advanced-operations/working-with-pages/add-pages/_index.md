@@ -90,8 +90,8 @@ PDFファイルに空のページを挿入するには：
 
 1. 入力PDFファイルを使用して[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)クラスオブジェクトを作成します。
 
-1. 指定されたインデックスで[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)コレクションの[insert](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection/methods/insert)メソッドを呼び出します。
-1. [save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
+1. 指定されたインデックスで[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)コレクションの[insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert)メソッドを呼び出します。
+1. [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
 
 次のコードスニペットは、PDFファイルにページを挿入する方法を示しています。
 

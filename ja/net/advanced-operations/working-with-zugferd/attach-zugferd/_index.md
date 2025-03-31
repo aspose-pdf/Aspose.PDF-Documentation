@@ -86,7 +86,7 @@ ZUGFeRDをPDFに添付するための手順をお勧めします：
 
 * 入力および出力PDFファイルがあるフォルダーを指すパス変数を定義します。
 * パスから既存のPDFファイル（例："ZUGFeRD-test.pdf"）を読み込んでドキュメントオブジェクトを作成します。
-* ZUGFeRD標準に準拠した請求書メタデータを含む別のファイル"factur-x.xml"のパスと説明を提供して、[FileSpecification](https://reference.aspose.com/pdf/ja/net/aspose.pdf/filespecification/)オブジェクトを作成します。
+* ZUGFeRD標準に準拠した請求書メタデータを含む別のファイル"factur-x.xml"のパスと説明を提供して、[FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification/)オブジェクトを作成します。
 * ファイル仕様オブジェクトに、説明、MIMEタイプ、AF関係などのプロパティを追加します。AF関係は、埋め込まれたファイルがPDF文書にどのように関連しているかを示します。この場合、埋め込まれたファイルはPDFコンテンツの代替表現であるため、"Alternative"に設定されています。
 * ファイル仕様オブジェクトをドキュメントの埋め込みファイルコレクションに追加します。ファイル名はZUGFeRD標準に従って指定する必要があります（例："factur-x.xml"）。
 * ドキュメントをPDF/A-3B形式に変換します。これは、電子文書の長期保存を確保するPDFのサブセットです。PDF/A-3Bは、PDF文書に任意の形式のファイルを埋め込むことを許可します。

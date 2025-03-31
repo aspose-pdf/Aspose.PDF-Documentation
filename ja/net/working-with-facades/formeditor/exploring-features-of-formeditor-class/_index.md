@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-PDFドキュメントには、AcroFormとして知られるインタラクティブフォームが含まれていることがあります。これは、ウェブページで使用されるフォームと同様です。これらのフォームには、テキストボックス、チェックボックス、ボタンなど、さまざまなタイプのコントロールが含まれています。PDFファイルを扱う開発者は、時折これらのフォームを編集する必要があるかもしれません。この記事では、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)がどのようにそれを可能にするかの詳細を見ていきます。
+PDFドキュメントには、AcroFormとして知られるインタラクティブフォームが含まれていることがあります。これは、ウェブページで使用されるフォームと同様です。これらのフォームには、テキストボックス、チェックボックス、ボタンなど、さまざまなタイプのコントロールが含まれています。PDFファイルを扱う開発者は、時折これらのフォームを編集する必要があるかもしれません。この記事では、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)がどのようにそれを可能にするかの詳細を見ていきます。
 
 {{% /alert %}}
 
 ## 実装の詳細
 
-開発者は、PDFドキュメントに新しいフォームやフォームフィールドを追加するだけでなく、既存のフィールドを編集するためにも[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)を使用できます。この記事の範囲は、フォーム編集に関する[Aspose.PDF for .NET](/pdf/ja/net/)の機能に限定されています。
+開発者は、PDFドキュメントに新しいフォームやフォームフィールドを追加するだけでなく、既存のフィールドを編集するためにも[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)を使用できます。この記事の範囲は、フォーム編集に関する[Aspose.PDF for .NET](/pdf/ja/net/)の機能に限定されています。
 
-[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor)は、開発者がフォームフィールドを編集するためのメソッドとプロパティのほとんどを含むクラスです。新しいフィールドを追加するだけでなく、既存のフィールドを削除したり、フィールドを別の位置に移動したり、フィールド名や属性を変更したりすることもできます。このクラスが提供する機能のリストは非常に包括的であり、このクラスを使用してフォームフィールドを扱うのは非常に簡単です。
+[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)は、開発者がフォームフィールドを編集するためのメソッドとプロパティのほとんどを含むクラスです。新しいフィールドを追加するだけでなく、既存のフィールドを削除したり、フィールドを別の位置に移動したり、フィールド名や属性を変更したりすることもできます。このクラスが提供する機能のリストは非常に包括的であり、このクラスを使用してフォームフィールドを扱うのは非常に簡単です。
 
 これらのメソッドは、フィールドを操作するために使用されるものと、これらのフィールドの新しい属性を設定するために使用されるものの2つの主要なカテゴリに分けることができます。最初のカテゴリにグループ化できるメソッドには、AddField、AddListItem、RemoveListItem、CopyInnerField、CopyOuterField、DelListItem、MoveField、RemoveField、RenameFieldなどがあります。2番目のカテゴリには、SetFieldAlignment、SetFieldAppearance、SetFieldAttribute、SetFieldLimit、SetFieldScriptなどのメソッドが含まれます。以下のコードスニペットは、FormEditorクラスのいくつかのメソッドがどのように機能するかを示しています：
 

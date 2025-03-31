@@ -81,7 +81,7 @@ sitemap:
 
 ## PDF 포트폴리오 만들기
 
-Aspose.PDF는 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스를 사용하여 PDF 포트폴리오 문서를 생성할 수 있습니다. [FileSpecification](https://reference.aspose.com/pdf/ko/net/aspose.pdf/filespecification) 클래스를 사용하여 파일을 가져온 후 Document.Collection 객체에 파일을 추가합니다. 파일이 추가되면 Document 클래스의 Save 메서드를 사용하여 포트폴리오 문서를 저장합니다.
+Aspose.PDF는 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 PDF 포트폴리오 문서를 생성할 수 있습니다. [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 클래스를 사용하여 파일을 가져온 후 Document.Collection 객체에 파일을 추가합니다. 파일이 추가되면 Document 클래스의 Save 메서드를 사용하여 포트폴리오 문서를 저장합니다.
 
 다음 예제는 Microsoft Excel 파일, Word 문서 및 이미지 파일을 사용하여 PDF 포트폴리오를 생성합니다.
 
@@ -131,7 +131,7 @@ private static void CreatePortfolio()
 
 PDF 포트폴리오는 다양한 출처(예: PDF, Word, Excel, JPEG 파일)의 콘텐츠를 하나의 통합 컨테이너로 모을 수 있게 해줍니다. 원본 파일은 개별 정체성을 유지하지만 PDF 포트폴리오 파일로 조립됩니다. 사용자는 각 구성 요소 파일을 다른 구성 요소 파일과 독립적으로 열고, 읽고, 편집하고, 형식을 지정할 수 있습니다.
 
-Aspose.PDF는 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스를 사용하여 PDF 포트폴리오 문서를 생성할 수 있습니다. 또한 PDF 포트폴리오에서 파일을 추출하는 기능도 제공합니다.
+Aspose.PDF는 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 PDF 포트폴리오 문서를 생성할 수 있습니다. 또한 PDF 포트폴리오에서 파일을 추출하는 기능도 제공합니다.
 
 다음 코드 조각은 PDF 포트폴리오에서 파일을 추출하는 단계를 보여줍니다.
 

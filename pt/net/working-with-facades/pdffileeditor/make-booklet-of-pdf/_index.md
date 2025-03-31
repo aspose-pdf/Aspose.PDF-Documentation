@@ -77,7 +77,7 @@ draft: false
 
 ## Criar Booklet de PDF Usando Caminhos de Arquivo
 
-O método [MakeBooklet](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do arquivo PDF de entrada e o salve no arquivo PDF de saída. Esta sobrecarga permite que você crie um booklet usando caminhos de arquivo. O seguinte trecho de código mostra como criar um booklet usando caminhos de arquivo.
+O método [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do arquivo PDF de entrada e o salve no arquivo PDF de saída. Esta sobrecarga permite que você crie um booklet usando caminhos de arquivo. O seguinte trecho de código mostra como criar um booklet usando caminhos de arquivo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
 
 ## Criar Booklet de PDF Usando Tamanho de Página e Caminhos de Arquivo
 
-O método [MakeBooklet](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do arquivo PDF de entrada e o salve no arquivo PDF de saída. Esta sobrecarga permite que você crie um booklet usando caminhos de arquivo. Você também pode definir o tamanho da página do arquivo PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando tamanho de página e caminhos de arquivo.
+O método [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do arquivo PDF de entrada e o salve no arquivo PDF de saída. Esta sobrecarga permite que você crie um booklet usando caminhos de arquivo. Você também pode definir o tamanho da página do arquivo PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando tamanho de página e caminhos de arquivo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
 
 ## Criar Booklet de PDF Usando Tamanho de Página, Páginas Esquerda e Direita Especificadas, e Caminhos de Arquivo
 
-O método [MakeBooklet](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do arquivo PDF de entrada e o salve no arquivo PDF de saída. Esta sobrecarga permite que você crie um booklet usando caminhos de arquivo. Você também pode definir o tamanho da página do arquivo PDF de saída e especificar páginas particulares para os lados esquerdo e direito do arquivo PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando tamanho de página, páginas esquerda e direita especificadas e caminhos de arquivo.
+O método [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do arquivo PDF de entrada e o salve no arquivo PDF de saída. Esta sobrecarga permite que você crie um booklet usando caminhos de arquivo. Você também pode definir o tamanho da página do arquivo PDF de saída e especificar páginas particulares para os lados esquerdo e direito do arquivo PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando tamanho de página, páginas esquerda e direita especificadas e caminhos de arquivo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## Criar Booklet de PDF Usando Páginas Esquerda e Direita Especificadas, e Caminhos de Arquivo
 
-O método [MakeBooklet](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do arquivo PDF de entrada e o salve no arquivo PDF de saída. Esta sobrecarga permite que você crie um booklet usando caminhos de arquivo. Você também pode especificar páginas particulares para os lados esquerdo e direito do arquivo PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando páginas esquerda e direita especificadas e caminhos de arquivo.
+O método [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do arquivo PDF de entrada e o salve no arquivo PDF de saída. Esta sobrecarga permite que você crie um booklet usando caminhos de arquivo. Você também pode especificar páginas particulares para os lados esquerdo e direito do arquivo PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando páginas esquerda e direita especificadas e caminhos de arquivo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
 
 ## Criar Booklet de PDF Usando Streams
 
-O método [MakeBooklet](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do stream PDF de entrada e o salve nos streams PDF de saída. Esta sobrecarga permite que você crie um booklet usando streams em vez de caminhos de arquivo. O seguinte trecho de código mostra como criar um booklet usando streams.
+O método [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do stream PDF de entrada e o salve nos streams PDF de saída. Esta sobrecarga permite que você crie um booklet usando streams em vez de caminhos de arquivo. O seguinte trecho de código mostra como criar um booklet usando streams.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,7 +175,7 @@ private static void MakeBookletOfPdfUsingStreams()
 
 ## Criar Booklet de PDF Usando Tamanho de Página e Streams
 
-O método [MakeBooklet](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do stream PDF de entrada e o salve no stream PDF de saída. Esta sobrecarga permite que você crie um booklet usando streams em vez de caminhos de arquivo. Você também pode definir o tamanho da página do stream PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando tamanho de página e streams.
+O método [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do stream PDF de entrada e o salve no stream PDF de saída. Esta sobrecarga permite que você crie um booklet usando streams em vez de caminhos de arquivo. Você também pode definir o tamanho da página do stream PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando tamanho de página e streams.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
 
 ## Criar Booklet de PDF Usando Tamanho de Página, Páginas Esquerda e Direita Especificadas, e Streams
 
-O método [MakeBooklet](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do stream PDF de entrada e o salve no stream PDF de saída. Esta sobrecarga permite que você crie um booklet usando streams em vez de caminhos de arquivo. Você também pode definir o tamanho da página do arquivo PDF de saída e especificar páginas particulares para os lados esquerdo e direito do stream PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando tamanho de página, páginas esquerda e direita especificadas e streams.
+O método [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do stream PDF de entrada e o salve no stream PDF de saída. Esta sobrecarga permite que você crie um booklet usando streams em vez de caminhos de arquivo. Você também pode definir o tamanho da página do arquivo PDF de saída e especificar páginas particulares para os lados esquerdo e direito do stream PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando tamanho de página, páginas esquerda e direita especificadas e streams.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +226,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
 
 ## Criar Booklet de PDF Usando Páginas Esquerda e Direita Especificadas, e Streams
 
-O método [MakeBooklet](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do stream PDF de entrada e o salve no stream PDF de saída. Esta sobrecarga permite que você crie um booklet usando streams em vez de caminhos de arquivo. Você também pode especificar páginas particulares para os lados esquerdo e direito do stream PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando páginas esquerda e direita especificadas e streams.
+O método [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você crie um booklet do stream PDF de entrada e o salve no stream PDF de saída. Esta sobrecarga permite que você crie um booklet usando streams em vez de caminhos de arquivo. Você também pode especificar páginas particulares para os lados esquerdo e direito do stream PDF de saída com esta sobrecarga. O seguinte trecho de código mostra como criar um booklet usando páginas esquerda e direita especificadas e streams.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

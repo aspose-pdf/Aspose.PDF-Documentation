@@ -83,7 +83,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 ## Converter documento PDF/A para PDF
 
 Converter documento PDF/A para PDF significa remover a <abbr title="Portable Document Format Archive">restrição PDF/A</abbr> do documento original. 
-A classe [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document) possui o método [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/methods/removepdfacompliance) para remover as informações de conformidade PDF do arquivo de entrada/fonte.
+A classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) possui o método [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) para remover as informações de conformidade PDF do arquivo de entrada/fonte.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

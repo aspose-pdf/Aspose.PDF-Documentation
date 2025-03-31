@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-Kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/PdfContentEditor) yang terdapat dalam paket Aspose.Pdf.Facades memberikan fleksibilitas untuk menambahkan aksi Javascript ke file PDF. Anda dapat membuat tautan dengan aksi serial yang sesuai untuk mengeksekusi item menu di penampil PDF. Kelas ini juga menyediakan fitur untuk membuat aksi tambahan untuk peristiwa dokumen.
+Kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) yang terdapat dalam paket Aspose.Pdf.Facades memberikan fleksibilitas untuk menambahkan aksi Javascript ke file PDF. Anda dapat membuat tautan dengan aksi serial yang sesuai untuk mengeksekusi item menu di penampil PDF. Kelas ini juga menyediakan fitur untuk membuat aksi tambahan untuk peristiwa dokumen.
 
-Pertama-tama, sebuah objek digambar dalam [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document), dalam contoh kami sebuah [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/rectangle). Dan atur aksi [createJavaScriptLink](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) ke Rectangle. Setelah itu, Anda dapat menyimpan dokumen Anda.
+Pertama-tama, sebuah objek digambar dalam [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), dalam contoh kami sebuah [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle). Dan atur aksi [createJavaScriptLink](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) ke Rectangle. Setelah itu, Anda dapat menyimpan dokumen Anda.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

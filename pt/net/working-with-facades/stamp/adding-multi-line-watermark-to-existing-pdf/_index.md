@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Muitos usuários desejam estampar seus documentos PDF com texto de várias linhas. Eles geralmente tentam usar `\n` e `<br>`, mas esses tipos de caracteres não são suportados pelo namespace Aspose.Pdf.Facades. Portanto, para tornar isso possível, adicionamos outro método chamado [AddNewLineText()](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) na classe [FormattedText](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formattedtext) do namespace Aspose.Pdf.Facades.
+Muitos usuários desejam estampar seus documentos PDF com texto de várias linhas. Eles geralmente tentam usar `\n` e `<br>`, mas esses tipos de caracteres não são suportados pelo namespace Aspose.Pdf.Facades. Portanto, para tornar isso possível, adicionamos outro método chamado [AddNewLineText()](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) na classe [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) do namespace Aspose.Pdf.Facades.
 
 {{% /alert %}}
 
