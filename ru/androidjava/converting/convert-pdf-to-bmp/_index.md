@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Класс [BmpDevice](https://reference.aspose.com/pdf/ru/net/aspose.pdf.devices/bmpdevice) позволяет конвертировать страницы PDF в изображения <abbr title="Bitmap Image File">BMP</abbr>. Этот класс предоставляет метод под названием [Process](https://reference.aspose.com/pdf/ru/net/aspose.pdf.devices/bmpdevice/methods/process), который позволяет конвертировать конкретную страницу PDF файла в формат изображения Bmp.
+Класс [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) позволяет конвертировать страницы PDF в изображения <abbr title="Bitmap Image File">BMP</abbr>. Этот класс предоставляет метод под названием [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process), который позволяет конвертировать конкретную страницу PDF файла в формат изображения Bmp.
 
 {{% alert color="primary" %}}
 

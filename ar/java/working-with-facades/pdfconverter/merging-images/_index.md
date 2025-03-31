@@ -8,7 +8,7 @@ lastmod: "2021-07-01"
 draft: false
 ---
 
-يسمح Aspose.PDF 21.4 بدمج الصور. يقوم [دمج الصور](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) بفحص محتويات مجلد معين ويعمل مع نوع الملفات المحدد فيه. عند العمل مع دمج الصور، نحدد 'inputImagesStreams' وتنسيق الصورة وطريقة دمج الصور (كمثال - عمودي) لملفنا. ثم نحفظ نتيجتنا في FileOutputStream.
+يسمح Aspose.PDF 21.4 بدمج الصور. يقوم [دمج الصور](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) بفحص محتويات مجلد معين ويعمل مع نوع الملفات المحدد فيه. عند العمل مع دمج الصور، نحدد 'inputImagesStreams' وتنسيق الصورة وطريقة دمج الصور (كمثال - عمودي) لملفنا. ثم نحفظ نتيجتنا في FileOutputStream.
 
 اتبع الجزء التالي من الشيفرة لحل مهمتك:
 

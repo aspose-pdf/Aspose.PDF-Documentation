@@ -91,8 +91,8 @@ Aspose.PDF for Python via .NET 允许您在文件中的任何位置插入页面�
 
 1. 使用输入 PDF 文件创建一个 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 类对象。  
 
-1. 使用指定索引调用[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)集合的[insert](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection/methods/insert)方法。
-1. 使用[save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4)方法保存输出PDF。
+1. 使用指定索引调用[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)集合的[insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert)方法。
+1. 使用[save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)方法保存输出PDF。
 
 以下代码片段向您展示了如何在PDF文件中插入页面。
 

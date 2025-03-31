@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-[BmpDevice](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/bmpdevice) 类允许您将 PDF 页面转换为<abbr title="Bitmap Image File">BMP</abbr>图像。该类提供了一种名为[Process](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/bmpdevice/methods/process)的方法，允许您将 PDF 文件的特定页面转换为 Bmp 图像格式。
+[BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) 类允许您将 PDF 页面转换为<abbr title="Bitmap Image File">BMP</abbr>图像。该类提供了一种名为[Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process)的方法，允许您将 PDF 文件的特定页面转换为 Bmp 图像格式。
 
 {{% alert color="primary" %}}
 
