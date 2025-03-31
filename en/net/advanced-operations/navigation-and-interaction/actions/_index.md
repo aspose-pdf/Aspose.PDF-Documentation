@@ -210,7 +210,7 @@ private static void AddHyperlinkForExistingText()
         // Finding the location of text on a page
         var textFragmentAbsosrber = new Aspose.Pdf.Text.TextFragmentAbsorber(textForLink);
         page.Accept(textFragmentAbsosrber);
-        foreach(Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
+        foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
         {
             // Create Link annotation object
             var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, textFragment.Rectangle);
