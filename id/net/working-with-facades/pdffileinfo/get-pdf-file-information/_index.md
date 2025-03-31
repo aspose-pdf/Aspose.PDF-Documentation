@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Untuk mendapatkan informasi spesifik file dari file PDF, Anda perlu membuat objek dari kelas [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo). Setelah itu, Anda dapat mendapatkan nilai dari properti individual seperti Subjek, Judul, Kata Kunci, dan Pembuat, dll.
+Untuk mendapatkan informasi spesifik file dari file PDF, Anda perlu membuat objek dari kelas [PdfFileInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileinfo). Setelah itu, Anda dapat mendapatkan nilai dari properti individual seperti Subjek, Judul, Kata Kunci, dan Pembuat, dll.
 
 Cuplikan kode berikut menunjukkan kepada Anda cara mendapatkan informasi file PDF.
 
@@ -110,7 +110,7 @@ private static void GetPdfInfo()
 
 ## Dapatkan Info Meta
 
-Untuk mendapatkan informasi, kami menggunakan properti [Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header). Dengan 'Hashtable' kami mendapatkan semua nilai yang mungkin.
+Untuk mendapatkan informasi, kami menggunakan properti [Header](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileinfo/properties/header). Dengan 'Hashtable' kami mendapatkan semua nilai yang mungkin.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

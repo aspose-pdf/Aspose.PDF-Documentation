@@ -94,9 +94,9 @@ PDF 문서 관리 앱은 문서에 주석을 달기 위한 다양한 도구를 �
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-1. PDF 파일을 로드하거나 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)를 사용하여 새로 만듭니다.
+1. PDF 파일을 로드하거나 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document)를 사용하여 새로 만듭니다.
 1. 새 주석을 만들고 매개변수(새 Rectangle, 새 Point, 제목, 색상, 너비 등)를 설정합니다.
-1. 새 [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index)를 만듭니다.
+1. 새 [PopupAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/popupannotation/methods/index)를 만듭니다.
 1. 팝업 주석을 원본 주석과 연결합니다.
 1. 페이지에 주석을 추가합니다.
 
@@ -154,7 +154,7 @@ private static void AddLineAnnotation()
 
 ## 사각형 또는 원 추가하기
 
-[사각형](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation) 및 [원](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) 주석은 페이지에 사각형 또는 타원을 표시합니다. 열면 관련 메모의 텍스트가 포함된 팝업 창이 표시됩니다. 사각형 주석은 원 주석(Aspose. Pdf. Annotations. CircleAnnotation 클래스의 인스턴스)과 모양을 제외하고 유사합니다.
+[사각형](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/squareannotation) 및 [원](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/circleannotation) 주석은 페이지에 사각형 또는 타원을 표시합니다. 열면 관련 메모의 텍스트가 포함된 팝업 창이 표시됩니다. 사각형 주석은 원 주석(Aspose. Pdf. Annotations. CircleAnnotation 클래스의 인스턴스)과 모양을 제외하고 유사합니다.
 
 ### 원 주석 추가하기
 
@@ -544,7 +544,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 
 잉크 주석은 하나 이상의 분리된 경로로 구성된 자유형 "낙서"를 나타냅니다. 열면 관련 메모의 텍스트가 포함된 팝업 창이 표시됩니다.
 
-[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation)는 하나 이상의 분리된 점으로 구성된 자유형 낙서를 나타냅니다. PDF 문서에 InkAnnotation을 추가하기 위해 다음 코드 스니펫을 사용해 보세요.
+[InkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/inkannotation)는 하나 이상의 분리된 점으로 구성된 자유형 낙서를 나타냅니다. PDF 문서에 InkAnnotation을 추가하기 위해 다음 코드 스니펫을 사용해 보세요.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -600,7 +600,7 @@ private static void AddInkAnnotation()
 
 ### InkAnnotation의 선 너비 설정하기
 
-[InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation)의 너비는 LineInfo 및 Border 객체를 사용하여 변경할 수 있습니다.
+[InkAnnottion](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/inkannotation)의 너비는 LineInfo 및 Border 객체를 사용하여 변경할 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

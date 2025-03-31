@@ -78,11 +78,11 @@ draft: false
 
 {{% alert color="primary" %}}
 
-この記事では、[Aspose.PDF for .NET](/pdf/ja/net/)コンポーネントの助けを借りて、複数のPDFドキュメントを1つのPDFドキュメントに[連結](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)する方法を説明します。[Aspose.PDF for .NET](/pdf/ja/net/)は、この作業を簡単にします。
+この記事では、[Aspose.PDF for .NET](/pdf/ja/net/)コンポーネントの助けを借りて、複数のPDFドキュメントを1つのPDFドキュメントに[連結](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)する方法を説明します。[Aspose.PDF for .NET](/pdf/ja/net/)は、この作業を簡単にします。
 
 {{% /alert %}}
 
-すべての入力PDFファイルを連結し、1つのPDFファイルを生成するには、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスの[Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドを呼び出すだけです。PDFファイルの連結を練習するためのアプリケーションを作成しましょう。Visual Studio.NET 2019を使用してアプリケーションを作成します。
+すべての入力PDFファイルを連結し、1つのPDFファイルを生成するには、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスの[Concatenate](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドを呼び出すだけです。PDFファイルの連結を練習するためのアプリケーションを作成しましょう。Visual Studio.NET 2019を使用してアプリケーションを作成します。
 
 {{% alert color="primary" %}}
 
@@ -104,7 +104,7 @@ private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabe
 }
 ```
 
-PDFファイルの連結のための[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスのデモンストレーションとして、ウィンドウフォームアプリケーションのビューが表示されています。
+PDFファイルの連結のための[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスのデモンストレーションとして、ウィンドウフォームアプリケーションのビューが表示されています。
 
 ![PDFファイルを連結する](how-to-concatenate-pdf-files-in-different-ways_1.png)
 

@@ -85,7 +85,7 @@ Com Aspose.PDF, é possível obter todos os anexos de um documento PDF. Isso é 
 
 Para obter todos os anexos de um arquivo PDF:
 
-1. Percorra a coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). A coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contém todos os anexos. Cada elemento dessa coleção representa um objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Cada iteração do loop foreach pela coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) retorna um objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
+1. Percorra a coleção [EmbeddedFiles](https://reference.aspose.com/pdf/pt/net/aspose.pdf/embeddedfilecollection) do objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document). A coleção [EmbeddedFiles](https://reference.aspose.com/pdf/pt/net/aspose.pdf/embeddedfilecollection) contém todos os anexos. Cada elemento dessa coleção representa um objeto [FileSpecification](https://reference.aspose.com/pdf/pt/net/aspose.pdf/filespecification). Cada iteração do loop foreach pela coleção [EmbeddedFiles](https://reference.aspose.com/pdf/pt/net/aspose.pdf/embeddedfilecollection) retorna um objeto [FileSpecification](https://reference.aspose.com/pdf/pt/net/aspose.pdf/filespecification).
 1. Uma vez que o objeto esteja disponível, recupere as propriedades do arquivo anexado ou o próprio arquivo.
 
 Os seguintes trechos de código mostram como obter todos os anexos de um documento PDF.

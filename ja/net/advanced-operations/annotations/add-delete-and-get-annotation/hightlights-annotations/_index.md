@@ -95,12 +95,12 @@ PDFドキュメント内のテキストマークアップ注釈のプロパテ�
 
 PDFドキュメントにテキストマークアップ注釈を追加するには、次のアクションを実行する必要があります。
 
-1. PDFファイルをロードします - 新しい[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクト。
+1. PDFファイルをロードします - 新しい[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクト。
 1. 注釈を作成します：
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation)を作成し、パラメータ（タイトル、色）を設定します。
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation)を作成し、パラメータ（タイトル、色）を設定します。
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation)を作成し、パラメータ（タイトル、色）を設定します。
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation)を作成し、パラメータ（タイトル、色）を設定します。
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/highlightannotation)を作成し、パラメータ（タイトル、色）を設定します。
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/strikeoutannotation)を作成し、パラメータ（タイトル、色）を設定します。
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/squigglyannotation)を作成し、パラメータ（タイトル、色）を設定します。
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/underlineannotation)を作成し、パラメータ（タイトル、色）を設定します。
 1. すべての注釈をページに追加します。
 
 ```csharp

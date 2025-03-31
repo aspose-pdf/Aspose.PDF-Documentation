@@ -83,7 +83,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## **PDF ke Postscript di C#**
 
-Kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) menyediakan kemampuan untuk mencetak dokumen PDF dan dengan bantuan kelas ini, kita juga dapat mengonversi file PDF ke format PostScript. Untuk mengonversi file PDF menjadi PostScript, pertama instal printer PS dan cukup cetak ke file dengan bantuan PdfViewer. Untuk menginstal printer PS, lihat instruksi yang diberikan oleh vendor printer Anda. Potongan kode berikut menunjukkan cara mencetak dan mengonversi PDF ke format PostScript.
+Kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/) menyediakan kemampuan untuk mencetak dokumen PDF dan dengan bantuan kelas ini, kita juga dapat mengonversi file PDF ke format PostScript. Untuk mengonversi file PDF menjadi PostScript, pertama instal printer PS dan cukup cetak ke file dengan bantuan PdfViewer. Untuk menginstal printer PS, lihat instruksi yang diberikan oleh vendor printer Anda. Potongan kode berikut menunjukkan cara mencetak dan mengonversi PDF ke format PostScript.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -158,7 +158,7 @@ private static void PrintToPostscriptFile()
 
 ## Memeriksa Status Pekerjaan Cetak
 
-File PDF dapat dicetak ke printer fisik serta ke Microsoft XPS Document Writer, tanpa menampilkan dialog cetak, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/). Saat mencetak file PDF besar, prosesnya mungkin memakan waktu lama sehingga pengguna mungkin tidak yakin apakah proses pencetakan selesai atau mengalami masalah. Untuk menentukan status pekerjaan pencetakan, gunakan properti [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). Potongan kode berikut menunjukkan cara mencetak file PDF ke file XPS dan mendapatkan status pencetakan.
+File PDF dapat dicetak ke printer fisik serta ke Microsoft XPS Document Writer, tanpa menampilkan dialog cetak, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/). Saat mencetak file PDF besar, prosesnya mungkin memakan waktu lama sehingga pengguna mungkin tidak yakin apakah proses pencetakan selesai atau mengalami masalah. Untuk menentukan status pekerjaan pencetakan, gunakan properti [PrintStatus](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/printstatus/). Potongan kode berikut menunjukkan cara mencetak file PDF ke file XPS dan mendapatkan status pencetakan.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -299,7 +299,7 @@ private static void CheckingPrintJobStatus()
 
 ## Mendapatkan/Mengatur Nama Pemilik Pekerjaan Cetak
 
-Terkadang ada kebutuhan untuk mendapatkan atau mengatur nama pemilik pekerjaan cetak (yaitu, pengguna sebenarnya yang menekan tombol cetak di halaman web). Informasi ini diperlukan saat mencetak file PDF. Untuk memenuhi kebutuhan ini, properti [PrinterJobName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printerjobname/) digunakan.
+Terkadang ada kebutuhan untuk mendapatkan atau mengatur nama pemilik pekerjaan cetak (yaitu, pengguna sebenarnya yang menekan tombol cetak di halaman web). Informasi ini diperlukan saat mencetak file PDF. Untuk memenuhi kebutuhan ini, properti [PrinterJobName](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/printerjobname/) digunakan.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

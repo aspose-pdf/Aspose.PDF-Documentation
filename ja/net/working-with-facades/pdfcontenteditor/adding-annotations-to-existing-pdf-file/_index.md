@@ -79,11 +79,11 @@ sitemap:
 
 ## 既存のPDFファイルに自由テキスト注釈を追加する (facades)
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)を使用すると、既存のPDFファイルにさまざまなタイプの注釈を追加できます。特定の注釈を追加するために、対応するメソッドを使用できます。たとえば、以下のコードスニペットでは、[CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext)メソッドを使用して[FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation)タイプの注釈を追加しています。
+[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)を使用すると、既存のPDFファイルにさまざまなタイプの注釈を追加できます。特定の注釈を追加するために、対応するメソッドを使用できます。たとえば、以下のコードスニペットでは、[CreateFreeText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext)メソッドを使用して[FreeText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/freetextannotation)タイプの注釈を追加しています。
 
-任意のタイプの注釈は、同じ方法でPDFファイルに追加できます。まず、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)タイプのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。次に、注釈のエリアを指定するためにRectangleオブジェクトを作成する必要があります。
+任意のタイプの注釈は、同じ方法でPDFファイルに追加できます。まず、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)タイプのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。次に、注釈のエリアを指定するためにRectangleオブジェクトを作成する必要があります。
 
-その後、[CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext)メソッドを呼び出して[FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation)注釈を追加し、[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。
+その後、[CreateFreeText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext)メソッドを呼び出して[FreeText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/freetextannotation)注釈を追加し、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。
 
 以下のコードスニペットは、PDFファイルに自由テキスト注釈を追加する方法を示しています。
 
@@ -160,7 +160,7 @@ private static void AddFreeTextAnnotation()
 
 ## 既存のPDFファイルにテキスト注釈を追加する (facades)
 
-この例でも、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)タイプのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。次に、注釈のエリアを指定するためにRectangleオブジェクトを作成する必要があります。その後、[CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext)メソッドを呼び出してFreeText注釈を追加し、注釈のタイトルと注釈があるページ番号を作成します。
+この例でも、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)タイプのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。次に、注釈のエリアを指定するためにRectangleオブジェクトを作成する必要があります。その後、[CreateFreeText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext)メソッドを呼び出してFreeText注釈を追加し、注釈のタイトルと注釈があるページ番号を作成します。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

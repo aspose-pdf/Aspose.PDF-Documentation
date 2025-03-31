@@ -84,13 +84,13 @@ Aspose.PDF for .NET позволяет вам изменять размер ст
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Класс [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) содержит метод SetPageSize(...), который позволяет установить размер страницы. Ниже приведен фрагмент кода, который обновляет размеры страниц за несколько простых шагов:
+Класс [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) содержит метод SetPageSize(...), который позволяет установить размер страницы. Ниже приведен фрагмент кода, который обновляет размеры страниц за несколько простых шагов:
 
 1. Загрузите исходный PDF-файл.
-1. Получите страницы в объект [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. Получите страницы в объект [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection).
 1. Получите заданную страницу.
 1. Вызовите метод SetPageSize(..), чтобы обновить ее размеры.
-1. Вызовите метод Save(..) класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), чтобы сгенерировать PDF-файл с обновленными размерами страниц.
+1. Вызовите метод Save(..) класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document), чтобы сгенерировать PDF-файл с обновленными размерами страниц.
 
 {{% alert color="primary" %}}
 

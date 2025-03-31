@@ -83,7 +83,7 @@ sitemap:
 ## Конвертация документа PDF/A в PDF
 
 Конвертация документа PDF/A в PDF означает удаление <abbr title="Portable Document Format Archive">PDF/A</abbr> ограничения из оригинального документа. 
-Класс [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) имеет метод [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) для удаления информации о соответствии PDF из входного/исходного файла.
+Класс [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) имеет метод [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/removepdfacompliance) для удаления информации о соответствии PDF из входного/исходного файла.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

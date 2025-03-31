@@ -77,9 +77,9 @@ draft: false
 
 ## Dapatkan Preferensi Penampil dari File PDF yang Ada
 
-[Kelas ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) mewakili mode tampilan dari file PDF; misalnya, menempatkan jendela dokumen di tengah layar, menyembunyikan bilah menu aplikasi penampil, dll.
+[Kelas ViewerPreference](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/viewerpreference) mewakili mode tampilan dari file PDF; misalnya, menempatkan jendela dokumen di tengah layar, menyembunyikan bilah menu aplikasi penampil, dll.
 
-Untuk membaca pengaturan, kami menggunakan [Kelas GetViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference). Metode ini mengembalikan variabel di mana semua pengaturan disimpan.
+Untuk membaca pengaturan, kami menggunakan [Kelas GetViewerPreference](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference). Metode ini mengembalikan variabel di mana semua pengaturan disimpan.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

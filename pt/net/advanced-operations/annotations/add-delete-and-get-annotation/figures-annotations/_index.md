@@ -94,9 +94,9 @@ A abordagem para adicionar a anotação é típica para qualquer uma delas.
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-1. Carregue o arquivo PDF ou crie um novo por [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Carregue o arquivo PDF ou crie um novo por [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
 1. Crie a nova anotação e defina os parâmetros (novo Retângulo, novo Ponto, título, cor, largura etc).
-1. Crie a nova [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
+1. Crie a nova [PopupAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/popupannotation/methods/index).
 1. Vincule a anotação Popup com a original.
 1. Adicione a anotação à página.
 
@@ -153,7 +153,7 @@ private static void AddLineAnnotation()
 
 ## Adicionando Quadrado ou Círculo
 
-As anotações [Square](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation) e [Circle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) exibirão um retângulo ou uma elipse na página. Quando abertas, elas exibirão uma janela pop-up contendo o texto da nota associada. Anotações quadradas são como anotações de círculo (instâncias da classe Aspose. Pdf. Annotations. CircleAnnotation) além da forma.
+As anotações [Square](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/squareannotation) e [Circle](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/circleannotation) exibirão um retângulo ou uma elipse na página. Quando abertas, elas exibirão uma janela pop-up contendo o texto da nota associada. Anotações quadradas são como anotações de círculo (instâncias da classe Aspose. Pdf. Annotations. CircleAnnotation) além da forma.
 
 ### Adicionando anotação de Círculo
 
@@ -543,7 +543,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 
 Uma Anotação de Tinta representa um "rabisco" à mão livre composto por um ou mais caminhos disjuntos. Quando aberta, ela exibirá uma janela pop-up contendo o texto da nota associada.
 
-A [InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) representa um rabisco à mão livre composto por um ou mais pontos disjuntos. Por favor, tente usar o seguinte trecho de código para adicionar InkAnnotation no documento PDF.
+A [InkAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/inkannotation) representa um rabisco à mão livre composto por um ou mais pontos disjuntos. Por favor, tente usar o seguinte trecho de código para adicionar InkAnnotation no documento PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -599,7 +599,7 @@ private static void AddInkAnnotation()
 
 ### Definir Largura da Linha da InkAnnotation
 
-A largura da [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) pode ser alterada usando os objetos LineInfo e Border.
+A largura da [InkAnnottion](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/inkannotation) pode ser alterada usando os objetos LineInfo e Border.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

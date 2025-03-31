@@ -75,11 +75,11 @@ draft: false
 }
 </script>
 
-Como layout padrão, os conteúdos dentro dos arquivos PDF são adicionados no layout de Cima-Esquerda para Baixo-Direita. Uma vez que os conteúdos excedem a margem inferior da página, a quebra de página ocorre. No entanto, você pode se deparar com a necessidade de inserir quebras de página dependendo da exigência. Um método chamado AddPageBreak(...) foi adicionado na classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) para cumprir essa exigência.
+Como layout padrão, os conteúdos dentro dos arquivos PDF são adicionados no layout de Cima-Esquerda para Baixo-Direita. Uma vez que os conteúdos excedem a margem inferior da página, a quebra de página ocorre. No entanto, você pode se deparar com a necessidade de inserir quebras de página dependendo da exigência. Um método chamado AddPageBreak(...) foi adicionado na classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) para cumprir essa exigência.
 
-1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
-1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
-1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
+1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
+1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
+1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
 
 - src é o documento de origem/caminho para o documento/fluxo com o documento de origem.
 - dest é o documento de destino/caminho onde o documento será salvo/fluxo onde o documento será salvo.

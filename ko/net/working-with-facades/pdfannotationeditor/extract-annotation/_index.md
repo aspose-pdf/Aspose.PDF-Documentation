@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-[ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) 메서드는 PDF 파일에서 주석을 추출할 수 있게 해줍니다. 주석을 추출하려면 [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 PDF 파일을 바인딩해야 합니다. 그 후, PDF 파일에서 추출할 주석 유형의 열거형을 생성해야 합니다.
+[ExtractAnnotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) 메서드는 PDF 파일에서 주석을 추출할 수 있게 해줍니다. 주석을 추출하려면 [PdfAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 PDF 파일을 바인딩해야 합니다. 그 후, PDF 파일에서 추출할 주석 유형의 열거형을 생성해야 합니다.
 
-그런 다음 [ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) 메서드를 사용하여 주석을 ArrayList로 추출할 수 있습니다. 그 후, 이 목록을 반복하여 개별 주석을 가져올 수 있습니다. 마지막으로, [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 PDF 파일에서 주석을 추출하는 방법을 보여줍니다.
+그런 다음 [ExtractAnnotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) 메서드를 사용하여 주석을 ArrayList로 추출할 수 있습니다. 그 후, 이 목록을 반복하여 개별 주석을 가져올 수 있습니다. 마지막으로, [PdfAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor) 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 PDF 파일에서 주석을 추출하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

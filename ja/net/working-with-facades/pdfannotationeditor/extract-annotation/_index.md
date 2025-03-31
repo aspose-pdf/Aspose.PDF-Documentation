@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-[ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) メソッドを使用すると、PDFファイルから注釈を抽出できます。注釈を抽出するには、[PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) メソッドを使用してPDFファイルをバインドする必要があります。その後、PDFファイルから抽出したい注釈タイプの列挙を作成する必要があります。
+[ExtractAnnotations](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) メソッドを使用すると、PDFファイルから注釈を抽出できます。注釈を抽出するには、[PdfAnnotationEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfannotationeditor) オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3) メソッドを使用してPDFファイルをバインドする必要があります。その後、PDFファイルから抽出したい注釈タイプの列挙を作成する必要があります。
 
-次に、[ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) メソッドを使用して、注釈をArrayListに抽出できます。その後、このリストをループして個々の注釈を取得できます。最後に、[PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) オブジェクトの [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) メソッドを使用して、更新されたPDFファイルを保存します。以下のコードスニペットは、PDFファイルから注釈を抽出する方法を示しています。
+次に、[ExtractAnnotations](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) メソッドを使用して、注釈をArrayListに抽出できます。その後、このリストをループして個々の注釈を取得できます。最後に、[PdfAnnotationEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfannotationeditor) オブジェクトの [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save) メソッドを使用して、更新されたPDFファイルを保存します。以下のコードスニペットは、PDFファイルから注釈を抽出する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

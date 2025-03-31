@@ -83,14 +83,14 @@ sitemap:
 
 ## 円オブジェクトを追加
 
-円グラフは、複数のカテゴリにデータを表示するために使用できますが、棒グラフとは異なり、円グラフは全体を構成するすべてのカテゴリのデータがある場合にのみ使用できます。それでは、Aspose.PDF for .NETを使用して[Circle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/circle)オブジェクトを追加する方法を見てみましょう。
+円グラフは、複数のカテゴリにデータを表示するために使用できますが、棒グラフとは異なり、円グラフは全体を構成するすべてのカテゴリのデータがある場合にのみ使用できます。それでは、Aspose.PDF for .NETを使用して[Circle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/circle)オブジェクトを追加する方法を見てみましょう。
 
 以下の手順に従ってください：
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)インスタンスを作成します。
-1. 特定の寸法で[Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)を作成します。
-1. Drawing objectの[Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border)を設定します。
-1. [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)オブジェクトをページの段落コレクションに追加します。
+1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)インスタンスを作成します。
+1. 特定の寸法で[Drawing object](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing)を作成します。
+1. Drawing objectの[Border](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/graph/properties/border)を設定します。
+1. [Graph](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/graph)オブジェクトをページの段落コレクションに追加します。
 1. PDFファイルを保存します。
 
 ```csharp

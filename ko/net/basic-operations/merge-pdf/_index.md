@@ -89,10 +89,10 @@ C#에서 PDF를 병합하는 것은 3rd 파티 라이브러리를 사용하지 �
 
 두 개의 PDF 파일을 연결하려면:
 
-1. 입력 PDF 파일 중 하나를 포함하는 두 개의 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성합니다.
-1. 그런 다음 다른 PDF 파일을 추가할 Document 객체에 대해 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션의 Add 메서드를 호출합니다.
+1. 입력 PDF 파일 중 하나를 포함하는 두 개의 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성합니다.
+1. 그런 다음 다른 PDF 파일을 추가할 Document 객체에 대해 [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션의 Add 메서드를 호출합니다.
 1. 두 번째 Document 객체의 PageCollection 컬렉션을 첫 번째 PageCollection 컬렉션의 Add 메서드에 전달합니다.
-1. 마지막으로 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF 파일을 저장합니다.
+1. 마지막으로 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF 파일을 저장합니다.
 
 다음 코드 스니펫은 PDF 파일을 연결하는 방법을 보여줍니다.
 

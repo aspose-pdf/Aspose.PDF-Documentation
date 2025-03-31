@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
 
 Начиная с версии 24.4, в диалоговом окне печати можно выбрать источник бумаги по размеру страницы PDF. Следующий фрагмент кода позволяет выбирать лоток принтера на основе размера страницы PDF.
 
-Эта настройка может быть включена и выключена с помощью свойства [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+Эта настройка может быть включена и выключена с помощью свойства [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## Масштабирование страницы в настройках печати
 
-Следующий фрагмент кода предназначен для обеспечения правильного применения свойства [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) и сохранения его в PDF.
+Следующий фрагмент кода предназначен для обеспечения правильного применения свойства [PrintScaling](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/printscaling/) и сохранения его в PDF.
 
-Свойство [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) было добавлено в класс [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) со значениями `​​Aspose.Pdf.PrintScaling.AppDefault` или `Aspose.Pdf.PrintScaling.None`.
+Свойство [PrintScaling](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/printscaling/) было добавлено в класс [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/) со значениями `​​Aspose.Pdf.PrintScaling.AppDefault` или `Aspose.Pdf.PrintScaling.None`.
 
 Масштабирование страницы — это параметр, который должен быть выбран при отображении диалогового окна печати для этого документа. Допустимые значения: `None`, что указывает на отсутствие масштабирования страницы, и `AppDefault`, что указывает на стандартное масштабирование печати соответствующего средства чтения. Если эта запись имеет неузнаваемое значение, следует использовать `AppDefault`. Значение по умолчанию: `AppDefault`.
 

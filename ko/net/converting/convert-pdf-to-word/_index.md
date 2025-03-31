@@ -118,7 +118,7 @@ PDF 파일을 DOC 형식으로 쉽게 변환하고 완벽한 제어를 할 수 �
 
 <a name="csharp-pdf-to-doc"><strong>단계: C#에서 PDF를 DOC로 변환하기</strong></a>
 
-1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
+1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
 2. **Document.Save()** 메서드를 호출하여 **SaveFormat.Doc** 형식으로 저장합니다.
 
 ```csharp
@@ -139,13 +139,13 @@ private static void ConvertPDFtoWord()
 
 ### DocSaveOptions 클래스 사용하기
 
-[`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) 클래스는 PDF 파일을 DOC 형식으로 변환하는 데 도움이 되는 여러 속성을 제공합니다. 이러한 속성 중 Mode는 PDF 콘텐츠의 인식 모드를 지정할 수 있게 해줍니다. 이 속성에 대해 RecognitionMode 열거형의 값을 선택할 수 있습니다. 이러한 값 각각은 특정 이점과 제한이 있습니다:
+[`DocSaveOptions`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions) 클래스는 PDF 파일을 DOC 형식으로 변환하는 데 도움이 되는 여러 속성을 제공합니다. 이러한 속성 중 Mode는 PDF 콘텐츠의 인식 모드를 지정할 수 있게 해줍니다. 이 속성에 대해 RecognitionMode 열거형의 값을 선택할 수 있습니다. 이러한 값 각각은 특정 이점과 제한이 있습니다:
 
-- [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) 모드는 빠르고 PDF 파일의 원래 모양을 유지하는 데 좋지만, 결과 문서의 편집 가능성이 제한될 수 있습니다. 원본 PDF의 시각적으로 그룹화된 텍스트 블록은 출력 문서에서 텍스트 상자로 변환됩니다. 이는 원본과 최대한 유사하게 만들어 주므로 출력 문서가 보기 좋지만, 전적으로 텍스트 상자로 구성되어 있어 Microsoft Word에서 편집하기가 상당히 어렵습니다.
-- [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) 모드는 전체 인식 모드로, 엔진이 그룹화 및 다단계 분석을 수행하여 원본 문서를 작성자의 의도에 따라 복원하면서 쉽게 편집할 수 있는 문서를 생성합니다. 제한 사항은 출력 문서가 원본과 다르게 보일 수 있다는 것입니다.
+- [`Textbox`](https://reference.aspose.com/pdf/ko/net/aspose.pdf.docsaveoptions/recognitionmode) 모드는 빠르고 PDF 파일의 원래 모양을 유지하는 데 좋지만, 결과 문서의 편집 가능성이 제한될 수 있습니다. 원본 PDF의 시각적으로 그룹화된 텍스트 블록은 출력 문서에서 텍스트 상자로 변환됩니다. 이는 원본과 최대한 유사하게 만들어 주므로 출력 문서가 보기 좋지만, 전적으로 텍스트 상자로 구성되어 있어 Microsoft Word에서 편집하기가 상당히 어렵습니다.
+- [`Flow`](https://reference.aspose.com/pdf/ko/net/aspose.pdf.docsaveoptions/recognitionmode) 모드는 전체 인식 모드로, 엔진이 그룹화 및 다단계 분석을 수행하여 원본 문서를 작성자의 의도에 따라 복원하면서 쉽게 편집할 수 있는 문서를 생성합니다. 제한 사항은 출력 문서가 원본과 다르게 보일 수 있다는 것입니다.
 
-[`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) 속성은 텍스트 요소 간의 상대적 근접성을 제어하는 데 사용할 수 있습니다. 이는 거리가 글꼴 크기로 정규화된다는 것을 의미합니다. 더 큰 글꼴은 음절 간의 간격이 더 클 수 있으며 여전히 하나의 전체로 간주됩니다. 이는 글꼴 크기의 백분율로 지정됩니다; 예를 들어, 1 = 100%. 이는 12pt 간격으로 배치된 12pt의 두 문자가 근접하다는 것을 의미합니다.
-- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets)는 변환 중에 글머리 기호 인식을 활성화하는 데 사용됩니다.
+[`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) 속성은 텍스트 요소 간의 상대적 근접성을 제어하는 데 사용할 수 있습니다. 이는 거리가 글꼴 크기로 정규화된다는 것을 의미합니다. 더 큰 글꼴은 음절 간의 간격이 더 클 수 있으며 여전히 하나의 전체로 간주됩니다. 이는 글꼴 크기의 백분율로 지정됩니다; 예를 들어, 1 = 100%. 이는 12pt 간격으로 배치된 12pt의 두 문자가 근접하다는 것을 의미합니다.
+- [`RecognitionBullets`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions/properties/recognizebullets)는 변환 중에 글머리 기호 인식을 활성화하는 데 사용됩니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -190,7 +190,7 @@ Aspose.PDF for .NET API는 C# 및 모든 .NET 언어를 사용하여 PDF 문서�
 
 <a name="csharp-pdf-to-docx"><strong>단계: C#에서 PDF를 DOCX로 변환하기</strong></a>
 
-1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
+1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
 2. **Document.Save()** 메서드를 호출하여 **SaveFormat.DocX** 형식으로 저장합니다.
 
 ```csharp

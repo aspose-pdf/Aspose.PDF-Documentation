@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Aspose.PDF for .NET API는 C# 또는 기타 .NET 언어를 사용하여 PDF 문서의 페이지를 작업할 수 있는 완전한 유연성을 제공합니다. PDF 문서의 모든 페이지는 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)에서 유지되며, 이를 사용하여 PDF 페이지를 작업할 수 있습니다.
+Aspose.PDF for .NET API는 C# 또는 기타 .NET 언어를 사용하여 PDF 문서의 페이지를 작업할 수 있는 완전한 유연성을 제공합니다. PDF 문서의 모든 페이지는 [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection)에서 유지되며, 이를 사용하여 PDF 페이지를 작업할 수 있습니다.
 Aspose.PDF for .NET은 PDF 문서의 파일 내의 원하는 위치에 페이지를 삽입할 수 있을 뿐만 아니라 PDF 파일의 끝에 페이지를 추가할 수 있습니다.
 이 섹션에서는 C#을 사용하여 PDF에 페이지를 추가하는 방법을 보여줍니다.
 
@@ -93,9 +93,9 @@ Aspose.PDF for .NET은 PDF 문서의 파일 내의 원하는 위치에 페이지
 
 PDF 파일에 빈 페이지를 삽입하려면:
 
-1. 입력 PDF 파일로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 생성합니다.
-1. 지정된 인덱스와 함께 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션의 [Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) 메서드를 호출합니다.
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
+1. 입력 PDF 파일로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 생성합니다.
+1. 지정된 인덱스와 함께 [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션의 [Insert](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection/methods/insert) 메서드를 호출합니다.
+1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
 
 다음 코드 스니펫은 PDF 파일에 페이지를 삽입하는 방법을 보여줍니다.
 
@@ -139,9 +139,9 @@ private static void InsertAnEmptyPageWithParameters()
 
 PDF 파일 끝에 빈 페이지를 삽입하려면:
 
-1. 입력 PDF 파일로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 생성합니다.
-1. 매개변수 없이 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 컬렉션의 [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) 메서드를 호출합니다.
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
+1. 입력 PDF 파일로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 생성합니다.
+1. 매개변수 없이 [PageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pagecollection) 컬렉션의 [Add](https://reference.aspose.com/pdf/ko/net/aspose.pdf.pagecollection/add/methods/1) 메서드를 호출합니다.
+1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 출력 PDF를 저장합니다.
 
 다음 코드 스니펫은 PDF 파일 끝에 빈 페이지를 삽입하는 방법을 보여줍니다.
 

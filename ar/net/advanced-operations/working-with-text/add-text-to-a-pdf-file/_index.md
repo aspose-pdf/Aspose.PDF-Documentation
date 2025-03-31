@@ -168,7 +168,7 @@ private static void LoadingFontFromStream()
 
 ## إضافة نص باستخدام TextParagraph
 
-تظهر مقتطفات الشيفرة التالية كيفية إضافة نص في مستند PDF باستخدام فئة [TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph).
+تظهر مقتطفات الشيفرة التالية كيفية إضافة نص في مستند PDF باستخدام فئة [TextParagraph](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textparagraph).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void AddTextWithTextParagraph()
 
 ## إضافة رابط تشعبي إلى TextSegment
 
-قد تتكون صفحة PDF من كائنات TextFragment واحدة أو أكثر، حيث يمكن أن يحتوي كل كائن TextFragment على مثيل واحد أو أكثر من TextSegment. لتعيين رابط تشعبي لـ TextSegment، يمكن استخدام خاصية Hyperlink من فئة [TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment) مع توفير كائن من مثيل Aspose.Pdf.WebHyperlink. يرجى محاولة استخدام مقتطف الشيفرة التالية لتحقيق هذا المتطلب.
+قد تتكون صفحة PDF من كائنات TextFragment واحدة أو أكثر، حيث يمكن أن يحتوي كل كائن TextFragment على مثيل واحد أو أكثر من TextSegment. لتعيين رابط تشعبي لـ TextSegment، يمكن استخدام خاصية Hyperlink من فئة [TextSegment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textsegment) مع توفير كائن من مثيل Aspose.Pdf.WebHyperlink. يرجى محاولة استخدام مقتطف الشيفرة التالية لتحقيق هذا المتطلب.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -291,7 +291,7 @@ private static void UseOTFFont()
 
 تحتوي فئة Aspose.Pdf.Generator.Text على خاصية تسمى IsHtmlTagSupported مما يجعل من الممكن إضافة علامات/محتويات HTML إلى ملفات PDF. يتم عرض المحتوى المضاف في علامات HTML الأصلية بدلاً من الظهور كسلسلة نصية بسيطة. لدعم ميزة مماثلة في نموذج كائن المستند (DOM) الجديد من مساحة Aspose.Pdf، تم تقديم فئة HtmlFragment.
 
-يمكن استخدام مثيل [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) لتحديد محتويات HTML التي يجب وضعها داخل ملف PDF. مشابهًا لـ TextFragment، يعد HtmlFragment كائنًا على مستوى الفقرة ويمكن إضافته إلى مجموعة الفقرات لكائن الصفحة. تظهر مقتطفات الشيفرة التالية الخطوات لوضع محتويات HTML داخل ملف PDF باستخدام نهج DOM.
+يمكن استخدام مثيل [HtmlFragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlfragment) لتحديد محتويات HTML التي يجب وضعها داخل ملف PDF. مشابهًا لـ TextFragment، يعد HtmlFragment كائنًا على مستوى الفقرة ويمكن إضافته إلى مجموعة الفقرات لكائن الصفحة. تظهر مقتطفات الشيفرة التالية الخطوات لوضع محتويات HTML داخل ملف PDF باستخدام نهج DOM.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -838,7 +838,7 @@ private static void CreateMultiColumnPdf()
 
 نقطة توقف التبويب هي نقطة توقف للتبويب. في معالجة الكلمات، يحتوي كل سطر على عدد من نقاط توقف التبويب الموضوعة على فترات منتظمة (على سبيل المثال، كل نصف بوصة). ومع ذلك، يمكن تغييرها، حيث تسمح معظم معالجات الكلمات لك بتعيين نقاط توقف التبويب في أي مكان تريده. عند الضغط على مفتاح التبويب، يقفز المؤشر أو نقطة الإدراج إلى نقطة التوقف التالية، والتي تكون غير مرئية. على الرغم من أن نقاط التوقف لا توجد في ملف النص، إلا أن معالج الكلمات يتتبعها حتى يتمكن من الاستجابة بشكل صحيح لمفتاح التبويب.
 
-تسمح [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) للمطورين باستخدام نقاط توقف التبويب المخصصة في مستندات PDF. تُستخدم فئة Aspose.Pdf.Text.TabStop لتعيين نقاط توقف TAB مخصصة في فئة [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
+تسمح [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) للمطورين باستخدام نقاط توقف التبويب المخصصة في مستندات PDF. تُستخدم فئة Aspose.Pdf.Text.TabStop لتعيين نقاط توقف TAB مخصصة في فئة [TextFragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragment).
 
 تقدم [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) أيضًا بعض أنواع قادة التبويب المعرفة مسبقًا كعداد يسمى TabLeaderType، حيث يتم إعطاء القيم المعرفة مسبقًا ووصفها أدناه:
 
@@ -944,7 +944,7 @@ private static void AddTransparentText()
 
 ## تحديد تباعد الأسطر للخطوط
 
-يمتلك كل خط مربعًا مجردًا، ارتفاعه هو المسافة المقصودة بين الأسطر من النوع في نفس حجم النوع. يُطلق على هذا المربع اسم مربع em وهو شبكة التصميم التي يتم تعريف خطوطها. تحتوي العديد من حروف الخط المدخل على نقاط تقع خارج حدود مربع em الخاص بالخط، لذا من أجل عرض الخط بشكل صحيح، يلزم استخدام إعداد خاص. يحتوي كائن TextFragment على مجموعة من خيارات تنسيق النص التي يمكن الوصول إليها عبر خصائص TextState.FormattingOptions. آخر خاصية في هذا المسار هي خاصية من نوع Aspose.Pdf.Text.TextFormattingOptions. تحتوي هذه الفئة على تعداد [LineSpacingMode](https://reference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode) المصمم لخطوط معينة مثل الخط المدخل "HPSimplified.ttf". أيضًا تحتوي فئة [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) على خاصية [LineSpacing](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) من نوع LineSpacingMode. تحتاج فقط إلى تعيين LineSpacing إلى LineSpacingMode.FullSize. سيكون مقتطف الشيفرة للحصول على عرض خط بشكل صحيح كما يلي:
+يمتلك كل خط مربعًا مجردًا، ارتفاعه هو المسافة المقصودة بين الأسطر من النوع في نفس حجم النوع. يُطلق على هذا المربع اسم مربع em وهو شبكة التصميم التي يتم تعريف خطوطها. تحتوي العديد من حروف الخط المدخل على نقاط تقع خارج حدود مربع em الخاص بالخط، لذا من أجل عرض الخط بشكل صحيح، يلزم استخدام إعداد خاص. يحتوي كائن TextFragment على مجموعة من خيارات تنسيق النص التي يمكن الوصول إليها عبر خصائص TextState.FormattingOptions. آخر خاصية في هذا المسار هي خاصية من نوع Aspose.Pdf.Text.TextFormattingOptions. تحتوي هذه الفئة على تعداد [LineSpacingMode](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text.textformattingoptions/linespacingmode) المصمم لخطوط معينة مثل الخط المدخل "HPSimplified.ttf". أيضًا تحتوي فئة [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textformattingoptions) على خاصية [LineSpacing](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textformattingoptions/properties/linespacing) من نوع LineSpacingMode. تحتاج فقط إلى تعيين LineSpacing إلى LineSpacingMode.FullSize. سيكون مقتطف الشيفرة للحصول على عرض خط بشكل صحيح كما يلي:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -993,7 +993,7 @@ private static void SpecifyLineSpacing()
 
 ## الحصول على عرض النص ديناميكيًا
 
-في بعض الأحيان، يكون من الضروري الحصول على عرض النص ديناميكيًا. تتضمن Aspose.PDF for .NET طريقتين لقياس عرض السلسلة. يمكنك استدعاء طريقة [MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) من فئات Aspose.Pdf.Text.Font أو Aspose.Pdf.Text.TextState (أو كليهما). توضح مقتطفات الشيفرة أدناه كيفية استخدام هذه الوظيفة.
+في بعض الأحيان، يكون من الضروري الحصول على عرض النص ديناميكيًا. تتضمن Aspose.PDF for .NET طريقتين لقياس عرض السلسلة. يمكنك استدعاء طريقة [MeasureString](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/font/methods/measurestring) من فئات Aspose.Pdf.Text.Font أو Aspose.Pdf.Text.TextState (أو كليهما). توضح مقتطفات الشيفرة أدناه كيفية استخدام هذه الوظيفة.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

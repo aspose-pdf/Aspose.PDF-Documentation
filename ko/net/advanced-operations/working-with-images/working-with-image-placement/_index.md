@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Aspose.PDF for .NET 7.0.0의 출시와 함께, 우리는 PDF 문서에서 이미지의 해상도와 위치를 가져오는 유사한 기능을 제공하는 [ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) 및 [ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection)이라는 클래스를 도입했습니다.
+Aspose.PDF for .NET 7.0.0의 출시와 함께, 우리는 PDF 문서에서 이미지의 해상도와 위치를 가져오는 유사한 기능을 제공하는 [ImagePlacement](https://reference.aspose.com/pdf/ko/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://reference.aspose.com/pdf/ko/net/aspose.pdf/imageplacementabsorber) 및 [ImagePlacementCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/imageplacementcollection)이라는 클래스를 도입했습니다.
 
 - ImagePlacementAbsorber는 ImagePlacement 객체 컬렉션과 같은 이미지 사용 검색을 수행합니다.
 - ImagePlacement는 실제 이미지 배치 값을 반환하는 Resolution 및 Rectangle 멤버를 제공합니다.

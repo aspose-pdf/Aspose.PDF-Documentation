@@ -82,7 +82,7 @@ sitemap:
 
 ## Установить привилегии на существующий PDF файл
 
-Чтобы установить привилегии на PDF файл, создайте объект класса [DocumentPrivilege](https://reference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege) и укажите права, которые вы хотите применить к документу. После определения привилегий передайте этот объект в качестве аргумента методу [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Следующий фрагмент кода показывает, как установить привилегии PDF файла.
+Чтобы установить привилегии на PDF файл, создайте объект класса [DocumentPrivilege](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/documentprivilege) и укажите права, которые вы хотите применить к документу. После определения привилегий передайте этот объект в качестве аргумента методу [Encrypt](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/encrypt/methods/1) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Следующий фрагмент кода показывает, как установить привилегии PDF файла.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void SetPrivilegesOnExistingPdfFile()
 
 ## Зашифровать PDF файл с использованием различных типов и алгоритмов шифрования
 
-Вы можете использовать метод [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) для шифрования PDF файла. Вы можете передать пароль пользователя, пароль владельца и разрешения в метод [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1). Кроме того, вы можете передать любое значение перечисления [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm). Это перечисление предоставляет различные комбинации алгоритмов шифрования и размеров ключей. Вы можете передать значение по вашему выбору. Наконец, сохраните зашифрованный PDF файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Вы можете использовать метод [Encrypt](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/encrypt/methods/1) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) для шифрования PDF файла. Вы можете передать пароль пользователя, пароль владельца и разрешения в метод [Encrypt](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/encrypt/methods/1). Кроме того, вы можете передать любое значение перечисления [CryptoAlgorithm](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cryptoalgorithm). Это перечисление предоставляет различные комбинации алгоритмов шифрования и размеров ключей. Вы можете передать значение по вашему выбору. Наконец, сохраните зашифрованный PDF файл с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 > Пожалуйста, укажите разные пароли пользователя и владельца при шифровании PDF файла.
 
@@ -144,7 +144,7 @@ private static void EncryptPdfFile()
 
 Лучше решить эту проблему один раз, используя библиотеку Aspose.PDF.
 
-Чтобы расшифровать PDF файл, вам сначала нужно создать объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) и открыть PDF с использованием пароля владельца. После этого вам нужно вызвать метод [Decrypt](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/decrypt) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Наконец, сохраните обновленный PDF файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Следующий фрагмент кода показывает, как расшифровать PDF файл.
+Чтобы расшифровать PDF файл, вам сначала нужно создать объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) и открыть PDF с использованием пароля владельца. После этого вам нужно вызвать метод [Decrypt](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/decrypt) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Наконец, сохраните обновленный PDF файл с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Следующий фрагмент кода показывает, как расшифровать PDF файл.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -166,7 +166,7 @@ private static void DecryptPdfFile()
 
 ## Изменить пароль PDF файла
 
-Если вы хотите изменить пароль PDF файла, вам сначала нужно открыть PDF файл с использованием пароля владельца с помощью объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). После этого вам нужно вызвать метод [ChangePasswords](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Вам нужно передать текущий пароль владельца вместе с новым паролем пользователя и новым паролем владельца в этот метод. Наконец, сохраните обновленный PDF файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Если вы хотите изменить пароль PDF файла, вам сначала нужно открыть PDF файл с использованием пароля владельца с помощью объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). После этого вам нужно вызвать метод [ChangePasswords](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/changepasswords) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Вам нужно передать текущий пароль владельца вместе с новым паролем пользователя и новым паролем владельца в этот метод. Наконец, сохраните обновленный PDF файл с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 >- Пароль пользователя, если установлен, это то, что вам нужно предоставить для открытия PDF. Acrobat/Reader предложит пользователю ввести пароль пользователя. Если он неверный, документ не откроется.
 >- Пароль владельца, если установлен, контролирует разрешения, такие как печать, редактирование, извлечение, комментирование и т.д. Acrobat/Reader запретит эти действия в зависимости от настроек разрешений. Acrobat потребует этот пароль, если вы хотите установить/изменить разрешения.

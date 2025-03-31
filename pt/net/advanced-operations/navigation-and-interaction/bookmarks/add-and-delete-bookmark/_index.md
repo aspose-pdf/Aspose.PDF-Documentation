@@ -83,13 +83,13 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Adicionar um Marcador a um Documento PDF
 
-Os marcadores são mantidos na coleção [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) do objeto Document, que está na coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+Os marcadores são mantidos na coleção [OutlineItemCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlineitemcollection) do objeto Document, que está na coleção [OutlineCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlinecollection).
 
 Para adicionar um marcador a um PDF:
 
-1. Abra um documento PDF usando o objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Abra um documento PDF usando o objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
 1. Crie um marcador e defina suas propriedades.
-1. Adicione a coleção [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) à coleção de Outlines.
+1. Adicione a coleção [OutlineItemCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlineitemcollection) à coleção de Outlines.
 
 O seguinte trecho de código mostra como adicionar um marcador em um documento PDF.
 
@@ -161,8 +161,8 @@ Os marcadores podem ser aninhados, indicando uma relação hierárquica com marc
 Para adicionar um marcador filho a um arquivo PDF, primeiro adicione um marcador pai:
 
 1. Abra um documento.
-1. Adicione um marcador à [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), definindo suas propriedades.
-1. Adicione a OutlineItemCollection à coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) do objeto Document.
+1. Adicione um marcador à [OutlineItemCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlineitemcollection), definindo suas propriedades.
+1. Adicione a OutlineItemCollection à coleção [OutlineCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlinecollection) do objeto Document.
 
 O marcador filho é criado da mesma forma que o marcador pai, explicado acima, mas é adicionado à coleção de Outlines do marcador pai.
 
@@ -243,12 +243,12 @@ private static void AddChildBookmark()
 
 ## Excluir Todos os Marcadores de um Documento PDF
 
-Todos os marcadores em um PDF estão na coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Este artigo explica como excluir todos os marcadores de um arquivo PDF.
+Todos os marcadores em um PDF estão na coleção [OutlineCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlinecollection). Este artigo explica como excluir todos os marcadores de um arquivo PDF.
 
 Para excluir todos os marcadores de um arquivo PDF:
 
-1. Chame o método Delete da coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. Salve o arquivo modificado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Chame o método Delete da coleção [OutlineCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlinecollection).
+1. Salve o arquivo modificado usando o método [Save](https://reference.aspose.com/pdf/pt/net/aspose.pdf.document/save/methods/4) do objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
 
 Os seguintes trechos de código mostram como excluir todos os marcadores de um documento PDF.
 
@@ -299,10 +299,10 @@ private static void DeleteBookmarks()
 
 Para excluir um marcador específico de um arquivo PDF:
 
-1. Passe o título do marcador como parâmetro para o método Delete da coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+1. Passe o título do marcador como parâmetro para o método Delete da coleção [OutlineCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlinecollection).
 1. Em seguida, salve o arquivo atualizado com o método Save do objeto Document.
 
-A classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) fornece a coleção [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). O método [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) remove qualquer marcador com o título passado para o método.
+A classe [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document) fornece a coleção [OutlineCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlinecollection). O método [Delete](https://reference.aspose.com/pdf/pt/net/aspose.pdf/outlinecollection/methods/delete) remove qualquer marcador com o título passado para o método.
 
 Os seguintes trechos de código mostram como excluir um marcador específico do documento PDF.
 

@@ -86,7 +86,7 @@ Kami merekomendasikan langkah-langkah berikut untuk melampirkan ZUGFeRD ke PDF:
 
 * Tentukan variabel jalur yang menunjuk ke folder tempat file PDF input dan output berada.
 * Buat objek dokumen dengan memuat file PDF yang ada (misalnya "ZUGFeRD-test.pdf") dari jalur.
-* Buat objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification/) dengan memberikan jalur dan deskripsi file lain bernama "factur-x.xml", yang berisi metadata faktur yang sesuai dengan standar ZUGFeRD.
+* Buat objek [FileSpecification](https://reference.aspose.com/pdf/id/net/aspose.pdf/filespecification/) dengan memberikan jalur dan deskripsi file lain bernama "factur-x.xml", yang berisi metadata faktur yang sesuai dengan standar ZUGFeRD.
 * Tambahkan properti ke objek spesifikasi file, seperti deskripsi, tipe MIME, dan hubungan AF. Hubungan AF menunjukkan bagaimana file yang disisipkan terkait dengan dokumen PDF. Dalam hal ini, diatur ke "Alternatif", yang berarti file yang disisipkan adalah representasi alternatif dari konten PDF.
 * Tambahkan objek spesifikasi file ke koleksi file yang disisipkan dalam dokumen. Nama file harus ditentukan sesuai dengan standar ZUGFeRD, misalnya "factur-x.xml".
 * Konversi dokumen ke format PDF/A-3B, subset dari PDF yang memastikan pelestarian jangka panjang dokumen elektronik. PDF/A-3B memungkinkan penyisipan file dalam format apa pun ke dalam dokumen PDF.

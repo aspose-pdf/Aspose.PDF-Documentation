@@ -77,7 +77,7 @@ draft: false
 
 ## Buat NUp dari PDF Menggunakan Jalur File
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan jalur file. Potongan kode berikut menunjukkan cara membuat NUP menggunakan jalur file.
+[MakeNUp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan jalur file. Potongan kode berikut menunjukkan cara membuat NUP menggunakan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeNupOfPdfUsingFilePaths()
 
 ## Buat NUp Menggunakan Ukuran Halaman dan Jalur File
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output menggunakan overload ini. Potongan kode berikut menunjukkan cara membuat NUp menggunakan ukuran halaman dan jalur file.
+[MakeNUp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output menggunakan overload ini. Potongan kode berikut menunjukkan cara membuat NUp menggunakan ukuran halaman dan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeNupUsingPageSizeAndFilePaths()
 
 ## Buat NUp dari PDF Menggunakan Ukuran Halaman, Nilai Horizontal dan Vertikal, dan Jalur File
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output dan jumlah halaman horizontal dan vertikal pada setiap halaman output menggunakan overload ini. Potongan kode berikut menunjukkan cara membuat NUp menggunakan ukuran halaman, nilai horizontal dan vertikal, dan jalur file.
+[MakeNUp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari file PDF input dan menyimpannya ke file PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan jalur file. Anda juga dapat mengatur ukuran halaman dari file PDF output dan jumlah halaman horizontal dan vertikal pada setiap halaman output menggunakan overload ini. Potongan kode berikut menunjukkan cara membuat NUp menggunakan ukuran halaman, nilai horizontal dan vertikal, dan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -128,7 +128,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFileP
 
 ## Buat NUp dari PDF Menggunakan Array File PDF dan Jalur File
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari array file PDF input dan menyimpannya ke satu file PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan jalur file. Potongan kode berikut menunjukkan cara membuat NUp menggunakan array file PDF dan jalur file.
+[MakeNUp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari array file PDF input dan menyimpannya ke satu file PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan jalur file. Potongan kode berikut menunjukkan cara membuat NUp menggunakan array file PDF dan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
 
 ## Buat NUp dari PDF Menggunakan Aliran
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan aliran alih-alih jalur file. Potongan kode berikut menunjukkan cara membuat NUp menggunakan aliran.
+[MakeNUp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan aliran alih-alih jalur file. Potongan kode berikut menunjukkan cara membuat NUp menggunakan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -176,7 +176,7 @@ private static void MakeNupOfPdfUsingStreams()
 
 ## Buat NUp dari PDF Menggunakan Ukuran Halaman dan Aliran
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan aliran alih-alih jalur file. Anda juga dapat mengatur ukuran halaman dari aliran PDF output menggunakan overload ini. Potongan kode berikut menunjukkan cara membuat NUp menggunakan ukuran halaman dan aliran.
+[MakeNUp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan aliran alih-alih jalur file. Anda juga dapat mengatur ukuran halaman dari aliran PDF output menggunakan overload ini. Potongan kode berikut menunjukkan cara membuat NUp menggunakan ukuran halaman dan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ private static void MakeNupOfPdfUsingPageSizeAndStreams()
 
 ## Buat NUp dari PDF Menggunakan Ukuran Halaman, Nilai Horizontal dan Vertikal, dan Aliran
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan aliran alih-alih jalur file. Anda juga dapat mengatur ukuran halaman dari aliran PDF output dan jumlah halaman horizontal dan vertikal pada setiap halaman output menggunakan overload ini. Potongan kode berikut menunjukkan cara membuat NUp menggunakan ukuran halaman, nilai horizontal dan vertikal, dan aliran.
+[MakeNUp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari aliran PDF input dan menyimpannya ke aliran PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan aliran alih-alih jalur file. Anda juga dapat mengatur ukuran halaman dari aliran PDF output dan jumlah halaman horizontal dan vertikal pada setiap halaman output menggunakan overload ini. Potongan kode berikut menunjukkan cara membuat NUp menggunakan ukuran halaman, nilai horizontal dan vertikal, dan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -224,7 +224,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStrea
 
 ## Buat NUp dari PDF Menggunakan Array File PDF dan Aliran
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari array aliran PDF input dan menyimpannya ke satu aliran PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan aliran alih-alih jalur file. Potongan kode berikut menunjukkan cara membuat NUp menggunakan array file PDF menggunakan aliran.
+[MakeNUp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membuat NUp dari array aliran PDF input dan menyimpannya ke satu aliran PDF output. Overload ini memungkinkan Anda untuk membuat NUp menggunakan aliran alih-alih jalur file. Potongan kode berikut menunjukkan cara membuat NUp menggunakan array file PDF menggunakan aliran.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -86,11 +86,11 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 O trecho de código abaixo segue estas etapas:
 
-1. Instanciar um objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Adicionar uma [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) ao objeto documento.
-1. Criar um objeto [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
-1. Adicionar TextFragment à coleção de [Paragraph](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) da página.
-1. [Salvar](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) o documento PDF resultante.
+1. Instanciar um objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
+1. Adicionar uma [Page](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) ao objeto documento.
+1. Criar um objeto [TextFragment](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/textfragment).
+1. Adicionar TextFragment à coleção de [Paragraph](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page/properties/paragraphs) da página.
+1. [Salvar](https://reference.aspose.com/pdf/pt/net/aspose.pdf.document/save/methods/4) o documento PDF resultante.
 
 O seguinte trecho de código é um programa Hello World para demonstrar o funcionamento da API Aspose.PDF for .NET.
 

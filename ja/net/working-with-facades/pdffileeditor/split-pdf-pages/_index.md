@@ -77,7 +77,7 @@ draft: false
 
 ## ファイルパスを使用して最初からPDFページを分割
 
-[SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、指定されたページ番号で終了する最初のページからPDFファイルを分割することができます。ディスクからPDFファイルを操作したい場合は、このメソッドに入力および出力PDFファイルのファイルパスを渡すことができます。以下のコードスニペットは、ファイルパスを使用して最初からPDFページを分割する方法を示しています。
+[SplitFromFirst](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、指定されたページ番号で終了する最初のページからPDFファイルを分割することができます。ディスクからPDFファイルを操作したい場合は、このメソッドに入力および出力PDFファイルのファイルパスを渡すことができます。以下のコードスニペットは、ファイルパスを使用して最初からPDFページを分割する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void SplitPdfPagesFromFirstUsingFilePaths()
 
 ## ファイルストリームを使用して最初からPDFページを分割
 
-[SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、指定されたページ番号で終了する最初のページからPDFファイルを分割することができます。ストリームからPDFファイルを操作したい場合は、このメソッドに入力および出力PDFストリームを渡すことができます。以下のコードスニペットは、ファイルストリームを使用して最初からPDFページを分割する方法を示しています。
+[SplitFromFirst](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、指定されたページ番号で終了する最初のページからPDFファイルを分割することができます。ストリームからPDFファイルを操作したい場合は、このメソッドに入力および出力PDFストリームを渡すことができます。以下のコードスニペットは、ファイルストリームを使用して最初からPDFページを分割する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -118,7 +118,7 @@ private static void SplitPdfPagesFromFirstUsingFileStreams()
 
 ## ファイルパスを使用してPDFページをバルクに分割
 
-[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、PDFファイルを複数のページセットに分割することができます。この例では、2つのページセット（1, 2）と（5, 6）が必要です。ディスクからPDFファイルにアクセスする場合は、入力PDFをファイルパスとして渡す必要があります。このメソッドはMemoryStreamの配列を返します。この配列をループして、個々のページセットを別々のファイルとして保存できます。以下のコードスニペットは、ファイルパスを使用してPDFページをバルクに分割する方法を示しています。
+[SplitToBulks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、PDFファイルを複数のページセットに分割することができます。この例では、2つのページセット（1, 2）と（5, 6）が必要です。ディスクからPDFファイルにアクセスする場合は、入力PDFをファイルパスとして渡す必要があります。このメソッドはMemoryStreamの配列を返します。この配列をループして、個々のページセットを別々のファイルとして保存できます。以下のコードスニペットは、ファイルパスを使用してPDFページをバルクに分割する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -147,7 +147,7 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
 
 ## ストリームを使用してPDFページをバルクに分割
 
-[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、PDFファイルを複数のページセットに分割することができます。この例では、2つのページセット（1, 2）と（5, 6）が必要です。ディスクからファイルにアクセスする代わりに、このメソッドにストリームを渡すことができます。このメソッドはMemoryStreamの配列を返します。この配列をループして、個々のページセットを別々のファイルとして保存できます。以下のコードスニペットは、ストリームを使用してPDFページをバルクに分割する方法を示しています。
+[SplitToBulks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、PDFファイルを複数のページセットに分割することができます。この例では、2つのページセット（1, 2）と（5, 6）が必要です。ディスクからファイルにアクセスする代わりに、このメソッドにストリームを渡すことができます。このメソッドはMemoryStreamの配列を返します。この配列をループして、個々のページセットを別々のファイルとして保存できます。以下のコードスニペットは、ストリームを使用してPDFページをバルクに分割する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -180,7 +180,7 @@ private static void SplitPdfPagesToBulkUsingStreams()
 
 ## ファイルパスを使用してPDFページを最後まで分割
 
-[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、指定されたページ番号からPDFファイルの最後まで分割し、新しいPDFとして保存することができます。これを行うには、ファイルパスを使用して、入力および出力ファイルパスと分割を開始するページ番号を渡す必要があります。出力PDFはディスクに保存されます。以下のコードスニペットは、ファイルパスを使用してPDFページを最後まで分割する方法を示しています。
+[SplitToEnd](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、指定されたページ番号からPDFファイルの最後まで分割し、新しいPDFとして保存することができます。これを行うには、ファイルパスを使用して、入力および出力ファイルパスと分割を開始するページ番号を渡す必要があります。出力PDFはディスクに保存されます。以下のコードスニペットは、ファイルパスを使用してPDFページを最後まで分割する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -197,7 +197,7 @@ private static void SplitPdfPagesToEndUsingFilePaths()
 
 ## ストリームを使用してPDFページを最後まで分割
 
-[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) クラスのもので、指定されたページ番号からPDFファイルの最後まで分割し、新しいPDFとして保存することができます。これを行うには、ストリームを使用して、入力および出力ストリームと分割を開始するページ番号を渡す必要があります。出力PDFは出力ストリームに保存されます。以下のコードスニペットは、ストリームを使用してPDFページを最後まで分割する方法を示しています。
+[SplitToEnd](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor) クラスのもので、指定されたページ番号からPDFファイルの最後まで分割し、新しいPDFとして保存することができます。これを行うには、ストリームを使用して、入力および出力ストリームと分割を開始するページ番号を渡す必要があります。出力PDFは出力ストリームに保存されます。以下のコードスニペットは、ストリームを使用してPDFページを最後まで分割する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -227,7 +227,7 @@ PDFドキュメントを分割して、結果をオンラインで表示する�
 
 [products.aspose.app/pdf/splitter](https://products.aspose.app/pdf/splitter) {{% /alert %}}
 
-PDFファイルを個々のページに分割するには、[SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index) メソッドにPDFをファイルパスとして渡す必要があります。このメソッドは、PDFファイルの個々のページを含むMemoryStreamの配列を返します。このMemoryStreamの配列をループして、個々のページを別々のPDFファイルとしてディスクに保存できます。以下のコードスニペットは、ファイルパスを使用してPDFを個々のページに分割する方法を示しています。
+PDFファイルを個々のページに分割するには、[SplitToPages](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index) メソッドにPDFをファイルパスとして渡す必要があります。このメソッドは、PDFファイルの個々のページを含むMemoryStreamの配列を返します。このMemoryStreamの配列をループして、個々のページを別々のPDFファイルとしてディスクに保存できます。以下のコードスニペットは、ファイルパスを使用してPDFを個々のページに分割する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -254,7 +254,7 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
 
 ## ストリームを使用してPDFを個々のページに分割
 
-PDFファイルを個々のページに分割するには、[SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index) メソッドにPDFをストリームとして渡す必要があります。このメソッドは、PDFファイルの個々のページを含むMemoryStreamの配列を返します。このMemoryStreamの配列をループして、個々のページを別々のPDFファイルとしてディスクに保存することも、後でアプリケーションで使用するためにメモリストリームに保持することもできます。以下のコードスニペットは、ストリームを使用してPDFを個々のページに分割する方法を示しています。
+PDFファイルを個々のページに分割するには、[SplitToPages](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index) メソッドにPDFをストリームとして渡す必要があります。このメソッドは、PDFファイルの個々のページを含むMemoryStreamの配列を返します。このMemoryStreamの配列をループして、個々のページを別々のPDFファイルとしてディスクに保存することも、後でアプリケーションで使用するためにメモリストリームに保持することもできます。以下のコードスニペットは、ストリームを使用してPDFを個々のページに分割する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

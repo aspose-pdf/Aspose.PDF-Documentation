@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-PDF 파일에 XMP 메타데이터를 설정하려면 [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 PDF 파일을 바인딩해야 합니다. [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) 클래스의 [Add](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata/methods/add/index) 메서드를 사용하여 다양한 속성을 추가할 수 있습니다. 마지막으로 [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) 클래스의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메서드를 호출합니다. 다음 코드 스니펫은 PDF 파일에 XMP 메타데이터를 추가하는 방법을 보여줍니다.
+PDF 파일에 XMP 메타데이터를 설정하려면 [PdfXmpMetadata](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfxmpmetadata) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 PDF 파일을 바인딩해야 합니다. [PdfXmpMetadata](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfxmpmetadata) 클래스의 [Add](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfxmpmetadata/methods/add/index) 메서드를 사용하여 다양한 속성을 추가할 수 있습니다. 마지막으로 [PdfXmpMetadata](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfxmpmetadata) 클래스의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save/index) 메서드를 호출합니다. 다음 코드 스니펫은 PDF 파일에 XMP 메타데이터를 추가하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

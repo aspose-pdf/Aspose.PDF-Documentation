@@ -78,9 +78,9 @@ sitemap:
 }
 </script>
 
-Gambar disimpan dalam koleksi [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) setiap halaman dalam koleksi [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Untuk mengekstrak halaman tertentu, kemudian ambil gambar dari koleksi Images menggunakan indeks tertentu dari gambar.
+Gambar disimpan dalam koleksi [Resources](https://reference.aspose.com/pdf/id/net/aspose.pdf/resources) setiap halaman dalam koleksi [Images](https://reference.aspose.com/pdf/id/net/aspose.pdf/resources/properties/images). Untuk mengekstrak halaman tertentu, kemudian ambil gambar dari koleksi Images menggunakan indeks tertentu dari gambar.
 
-Indeks gambar mengembalikan objek [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Objek ini menyediakan metode Save yang dapat digunakan untuk menyimpan gambar yang diekstrak. Potongan kode berikut menunjukkan cara mengekstrak gambar dari file PDF.
+Indeks gambar mengembalikan objek [XImage](https://reference.aspose.com/pdf/id/net/aspose.pdf/ximage). Objek ini menyediakan metode Save yang dapat digunakan untuk menyimpan gambar yang diekstrak. Potongan kode berikut menunjukkan cara mengekstrak gambar dari file PDF.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 

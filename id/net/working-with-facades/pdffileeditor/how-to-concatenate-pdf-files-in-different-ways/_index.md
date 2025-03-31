@@ -78,11 +78,11 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Artikel ini menjelaskan bagaimana Anda dapat [Menggabungkan](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) beberapa Dokumen PDF menjadi Satu Dokumen PDF dengan bantuan Komponen [Aspose.PDF for .NET](/pdf/id/net/). [Aspose.PDF for .NET](/pdf/id/net/) membuat pekerjaan ini seperti sepotong kue.
+Artikel ini menjelaskan bagaimana Anda dapat [Menggabungkan](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) beberapa Dokumen PDF menjadi Satu Dokumen PDF dengan bantuan Komponen [Aspose.PDF for .NET](/pdf/id/net/). [Aspose.PDF for .NET](/pdf/id/net/) membuat pekerjaan ini seperti sepotong kue.
 
 {{% /alert %}}
 
-Yang perlu Anda lakukan adalah memanggil metode [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) dan semua file PDF input Anda akan digabungkan bersama dan satu file PDF akan dihasilkan. Mari kita buat aplikasi untuk berlatih penggabungan file PDF. Kita akan membuat aplikasi menggunakan Visual Studio.NET 2019.
+Yang perlu Anda lakukan adalah memanggil metode [Concatenate](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) dan semua file PDF input Anda akan digabungkan bersama dan satu file PDF akan dihasilkan. Mari kita buat aplikasi untuk berlatih penggabungan file PDF. Kita akan membuat aplikasi menggunakan Visual Studio.NET 2019.
 
 {{% alert color="primary" %}}
 
@@ -104,7 +104,7 @@ private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabe
 }
 ```
 
-Tampilan aplikasi formulir windows ditunjukkan untuk demonstrasi kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) untuk Penggabungan File PDF.
+Tampilan aplikasi formulir windows ditunjukkan untuk demonstrasi kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) untuk Penggabungan File PDF.
 
 ![Menggabungkan File PDF](how-to-concatenate-pdf-files-in-different-ways_1.png)
 

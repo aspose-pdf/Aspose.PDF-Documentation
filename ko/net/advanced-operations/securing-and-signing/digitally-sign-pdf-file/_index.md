@@ -91,9 +91,9 @@ Aspose.PDF for .NET은 SignatureField 클래스를 사용하여 PDF 파일에 �
 
 PDF 서명을 위해 다음 클래스 및 메서드를 사용할 수 있습니다.
 
-- 클래스 [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature).
-- 열거형 [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions).
-- [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스의 [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) 속성.
+- 클래스 [DocMDPSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/docmdpsignature).
+- 열거형 [DocMDPAccessPermissions](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/docmdpaccesspermissions).
+- [PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 클래스의 [IsCertified](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) 속성.
 
 PKCS12 인증서(.p12, .pfx 파일 확장자)를 기반으로 디지털 서명을 생성하려면 `PdfFileSignature` 클래스의 인스턴스를 생성하고 문서 객체를 전달해야 합니다.
 다음으로, 다음 클래스 중 하나의 객체를 생성하여 원하는 디지털 서명 방법을 지정해야 합니다:
@@ -203,7 +203,7 @@ private static void Verify()
 
 Aspose.PDF for .NET은 타임스탬프 서버 또는 웹 서비스를 사용하여 PDF에 디지털 서명하는 것을 지원합니다.
 
-이 요구 사항을 충족하기 위해 [TimestampSettings](https://reference.aspose.com/pdf/net/aspose.pdf/timestampsettings) 클래스가 Aspose.PDF 네임스페이스에 추가되었습니다. 타임스탬프를 얻고 PDF 문서에 추가하는 다음 코드 스니펫을 살펴보십시오:
+이 요구 사항을 충족하기 위해 [TimestampSettings](https://reference.aspose.com/pdf/ko/net/aspose.pdf/timestampsettings) 클래스가 Aspose.PDF 네임스페이스에 추가되었습니다. 타임스탬프를 얻고 PDF 문서에 추가하는 다음 코드 스니펫을 살펴보십시오:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

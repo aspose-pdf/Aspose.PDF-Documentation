@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[CopyInnerField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) metode memungkinkan Anda untuk menyalin sebuah field dalam file yang sama, pada koordinat yang sama, di halaman yang ditentukan. Metode ini memerlukan nama field yang ingin Anda salin, nama field baru, dan nomor halaman di mana field perlu disalin. Kelas [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) menyediakan metode ini. Cuplikan kode berikut menunjukkan kepada Anda cara menyalin field di lokasi yang sama dalam file yang sama.
+[CopyInnerField](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) metode memungkinkan Anda untuk menyalin sebuah field dalam file yang sama, pada koordinat yang sama, di halaman yang ditentukan. Metode ini memerlukan nama field yang ingin Anda salin, nama field baru, dan nomor halaman di mana field perlu disalin. Kelas [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) menyediakan metode ini. Cuplikan kode berikut menunjukkan kepada Anda cara menyalin field di lokasi yang sama dalam file yang sama.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -108,7 +108,7 @@ private static void CopyInnerField()
 
 ## Salin Field Luar dalam File PDF yang Ada
 
-[CopyOuterField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) metode memungkinkan Anda untuk menyalin sebuah field formulir dari file PDF eksternal dan kemudian menambahkannya ke file PDF input di lokasi yang sama dan nomor halaman yang ditentukan. Metode ini memerlukan file PDF dari mana field perlu disalin, nama field, dan nomor halaman di mana field perlu disalin. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Cuplikan kode berikut menunjukkan kepada Anda cara menyalin sebuah field dari file PDF eksternal.
+[CopyOuterField](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) metode memungkinkan Anda untuk menyalin sebuah field formulir dari file PDF eksternal dan kemudian menambahkannya ke file PDF input di lokasi yang sama dan nomor halaman yang ditentukan. Metode ini memerlukan file PDF dari mana field perlu disalin, nama field, dan nomor halaman di mana field perlu disalin. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Cuplikan kode berikut menunjukkan kepada Anda cara menyalin sebuah field dari file PDF eksternal.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

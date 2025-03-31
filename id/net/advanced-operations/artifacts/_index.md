@@ -82,7 +82,7 @@ Artifacts dalam PDF adalah objek grafis atau elemen lain yang bukan bagian dari 
 
 Tujuan artifacts dalam PDF adalah untuk memungkinkan perbedaan antara elemen konten dan non-konten. Hal ini penting untuk aksesibilitas, karena pembaca layar dan teknologi bantu lainnya dapat mengabaikan artifacts dan fokus pada konten yang relevan. Artifacts juga dapat meningkatkan kinerja dan kualitas dokumen PDF, karena mereka dapat dihilangkan dari pencetakan, pencarian, atau penyalinan.
 
-Untuk membuat sebuah elemen sebagai artifact di PDF, Anda perlu menggunakan [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) class.
+Untuk membuat sebuah elemen sebagai artifact di PDF, Anda perlu menggunakan [Artifact](https://reference.aspose.com/pdf/id/net/aspose.pdf/artifact) class.
 Kelas ini berisi properti-properti berguna berikut:
 
 - **Artifact.Type** – mengambil artifact type (mendukung nilai dari enumerasi Artifact.ArtifactType di mana nilainya termasuk Background, Layout, Page, Pagination, dan Undefined).
@@ -97,17 +97,17 @@ Kelas ini berisi properti-properti berguna berikut:
 
 Kelas-kelas berikut mungkin juga berguna untuk bekerja dengan artifacts:
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/watermarkartifact/)
+- [ArtifactCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/artifactcollection)
+- [BackgroundArtifact](https://reference.aspose.com/pdf/id/net/aspose.pdf/backgroundartifact/)
+- [HeaderArtifact](https://reference.aspose.com/pdf/id/net/aspose.pdf/headerartifact/)
+- [FooterArtifact](https://reference.aspose.com/pdf/id/net/aspose.pdf/footerartifact/)
+- [WatermarkArtifact](https://reference.aspose.com/pdf/id/net/aspose.pdf/watermarkartifact/)
 
 ## Bekerja dengan Watermark yang Sudah Ada
 
 Watermark yang dibuat dengan Adobe Acrobat disebut sebagai artifact (sebagaimana dijelaskan dalam 14.8.2.2 Real Content and Artifacts pada spesifikasi PDF). 
 
-Untuk mendapatkan semua Watermark pada halaman tertentu, kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) memiliki properti Artifacts.
+Untuk mendapatkan semua Watermark pada halaman tertentu, kelas [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) memiliki properti Artifacts.
 
 Potongan kode berikut menunjukkan cara untuk mendapatkan semua watermark pada halaman pertama dari sebuah file PDF.
 
@@ -140,7 +140,7 @@ private static void ExtractWatermarkFromPDF()
 
 ## Bekerja dengan Latar Belakang sebagai Artifacts
 
-Gambar latar belakang dapat digunakan untuk menambahkan watermark, atau desain halus lainnya, ke dokumen. Dalam Aspose.PDF for .NET, setiap dokumen PDF adalah koleksi halaman dan setiap halaman berisi koleksi artifacts. Kelas [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) dapat digunakan untuk menambahkan gambar latar belakang pada objek halaman.
+Gambar latar belakang dapat digunakan untuk menambahkan watermark, atau desain halus lainnya, ke dokumen. Dalam Aspose.PDF for .NET, setiap dokumen PDF adalah koleksi halaman dan setiap halaman berisi koleksi artifacts. Kelas [BackgroundArtifact](https://reference.aspose.com/pdf/id/net/aspose.pdf/backgroundartifact) dapat digunakan untuk menambahkan gambar latar belakang pada objek halaman.
 
 Potongan kode berikut menunjukkan cara untuk menambahkan gambar latar belakang ke halaman PDF menggunakan objek BackgroundArtifact.
 

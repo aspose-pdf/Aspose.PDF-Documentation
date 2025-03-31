@@ -519,7 +519,7 @@ Mari kita buat satu file lagi - file markup XSL-FO untuk mengubah data karyawan 
 </xsl:stylesheet>
 ```
 
-Aspose.PDF memiliki [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) kelas khusus yang memungkinkan penerapan transformasi XSL-FO.
+Aspose.PDF memiliki [XslFoLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/xslfoloadoptions) kelas khusus yang memungkinkan penerapan transformasi XSL-FO.
 Potongan berikut menunjukkan cara menggunakan kelas ini dengan file contoh yang dijelaskan di atas.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -660,7 +660,7 @@ tetapi dalam file markup XSL-FO kami akan menambahkan parameter: `<xsl:param nam
 ```
 
 Untuk menambahkan parameter XSL, kami perlu membuat [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) sendiri dan
-mengatur sebagai properti di [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
+mengatur sebagai properti di [XslFoLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/xslfoloadoptions).
 Potongan berikut menunjukkan cara menggunakan kelas ini dengan file contoh yang dijelaskan di atas.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -826,7 +826,7 @@ Mari kita definisikan halaman dengan parameter default. Halaman kami akan memili
 </Document>
 ```
 
-Untuk menghasilkan dokumen PDF, kami akan menggunakan metode [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index).
+Untuk menghasilkan dokumen PDF, kami akan menggunakan metode [BindXml](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/bindxml/index).
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

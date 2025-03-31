@@ -82,7 +82,7 @@ sitemap:
 
 ## 回転プロパティを使用してPDF内のテキストを回転させる
 
-[TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)クラスの回転プロパティを使用することで、さまざまな角度でテキストを回転させることができます。テキストの回転は、文書生成のさまざまなシナリオで使用できます。要件に応じてテキストを回転させるために、度数法で回転角を指定できます。テキスト回転を実装できるさまざまなシナリオを以下に示します。
+[TextFragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragment)クラスの回転プロパティを使用することで、さまざまな角度でテキストを回転させることができます。テキストの回転は、文書生成のさまざまなシナリオで使用できます。要件に応じてテキストを回転させるために、度数法で回転角を指定できます。テキスト回転を実装できるさまざまなシナリオを以下に示します。
 
 ## TextFragmentとTextBuilderを使用して回転を実装する
 

@@ -94,9 +94,9 @@ Pendekatan untuk menambahkan anotasi adalah tipikal untuk salah satu dari mereka
 
 Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) pustaka.
 
-1. Muat file PDF atau buat baru dengan [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Muat file PDF atau buat baru dengan [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 1. Buat anotasi baru dan atur parameter (Rectangle baru, Point baru, judul, warna, lebar, dll).
-1. Buat [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index) baru.
+1. Buat [PopupAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/popupannotation/methods/index) baru.
 1. Tautkan anotasi Popup dengan yang asli.
 1. Tambahkan anotasi ke halaman
 
@@ -154,7 +154,7 @@ private static void AddLineAnnotation()
 
 ## Menambahkan Persegi atau Lingkaran
 
-Anotasi [Persegi](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation) dan [Lingkaran](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) akan menampilkan persegi panjang atau elips di halaman. Ketika dibuka, mereka akan menampilkan jendela pop-up yang berisi teks dari catatan terkait. Anotasi persegi mirip dengan anotasi lingkaran (instansi dari kelas Aspose. Pdf. Annotations. CircleAnnotation) kecuali bentuknya.
+Anotasi [Persegi](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/squareannotation) dan [Lingkaran](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/circleannotation) akan menampilkan persegi panjang atau elips di halaman. Ketika dibuka, mereka akan menampilkan jendela pop-up yang berisi teks dari catatan terkait. Anotasi persegi mirip dengan anotasi lingkaran (instansi dari kelas Aspose. Pdf. Annotations. CircleAnnotation) kecuali bentuknya.
 
 ### Menambahkan anotasi Lingkaran
 
@@ -544,7 +544,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 
 Anotasi Tinta mewakili "coretan" bebas tangan yang terdiri dari satu atau lebih jalur yang terputus. Ketika dibuka, ia akan menampilkan jendela pop-up yang berisi teks dari catatan terkait.
 
-[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) mewakili coretan bebas tangan yang terdiri dari satu atau lebih titik yang terputus. Silakan coba menggunakan potongan kode berikut untuk menambahkan InkAnnotation dalam dokumen PDF.
+[InkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/inkannotation) mewakili coretan bebas tangan yang terdiri dari satu atau lebih titik yang terputus. Silakan coba menggunakan potongan kode berikut untuk menambahkan InkAnnotation dalam dokumen PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -600,7 +600,7 @@ private static void AddInkAnnotation()
 
 ### Atur Lebar Garis InkAnnotation
 
-Lebar dari [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) dapat diubah menggunakan objek LineInfo dan Border.
+Lebar dari [InkAnnottion](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/inkannotation) dapat diubah menggunakan objek LineInfo dan Border.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

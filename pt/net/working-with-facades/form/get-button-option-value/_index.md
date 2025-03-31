@@ -77,7 +77,7 @@ draft: false
 
 ## Obter Valores da Opção do Botão de um Arquivo PDF Existente
 
-Os botões de rádio fornecem uma maneira de mostrar diferentes opções. A classe [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) permite que você obtenha todos os valores das opções de botão para um botão de rádio específico. Você pode obter esses valores usando o método [GetButtonOptionValues](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). Este método requer o nome do botão de rádio como parâmetro de entrada e retorna um Hashtable. Você pode iterar por este Hashtable para obter os valores das opções. O seguinte trecho de código mostra como obter os valores das opções do botão de um arquivo PDF existente.
+Os botões de rádio fornecem uma maneira de mostrar diferentes opções. A classe [Form](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/form) permite que você obtenha todos os valores das opções de botão para um botão de rádio específico. Você pode obter esses valores usando o método [GetButtonOptionValues](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). Este método requer o nome do botão de rádio como parâmetro de entrada e retorna um Hashtable. Você pode iterar por este Hashtable para obter os valores das opções. O seguinte trecho de código mostra como obter os valores das opções do botão de um arquivo PDF existente.
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetButtonOptions()
@@ -105,7 +105,7 @@ private static void GetButtonOptions()
 
 ## Obter o Valor da Opção do Botão Atual de um Arquivo PDF Existente
 
-Os botões de rádio fornecem uma maneira de definir valores de opção, no entanto, apenas um deles pode ser selecionado por vez. Se você deseja obter o valor da opção atualmente selecionada, pode usar o método [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue). A classe [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) fornece este método. O método [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) requer o nome do botão de rádio como parâmetro de entrada e retorna o valor como string. O seguinte trecho de código mostra como obter o valor da opção do botão atual de um arquivo PDF existente.
+Os botões de rádio fornecem uma maneira de definir valores de opção, no entanto, apenas um deles pode ser selecionado por vez. Se você deseja obter o valor da opção atualmente selecionada, pode usar o método [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue). A classe [Form](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/form) fornece este método. O método [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) requer o nome do botão de rádio como parâmetro de entrada e retorna o valor como string. O seguinte trecho de código mostra como obter o valor da opção do botão atual de um arquivo PDF existente.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

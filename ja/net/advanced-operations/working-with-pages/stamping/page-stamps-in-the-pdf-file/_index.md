@@ -80,7 +80,7 @@ sitemap:
 
 ## C#でページスタンプを追加する
 
-[PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp)は、グラフィックス、テキスト、テーブルを含む複合スタンプを適用する必要があるときに使用できます。以下の例は、Adobe InDesign、Illustrator、Microsoft Wordを使用して文房具のようなものを作成するためにスタンプを使用する方法を示しています。入力ドキュメントがあり、青とプラム色の2種類のボーダーを適用したいと仮定します。
+[PdfPageStamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf/PdfPageStamp)は、グラフィックス、テキスト、テーブルを含む複合スタンプを適用する必要があるときに使用できます。以下の例は、Adobe InDesign、Illustrator、Microsoft Wordを使用して文房具のようなものを作成するためにスタンプを使用する方法を示しています。入力ドキュメントがあり、青とプラム色の2種類のボーダーを適用したいと仮定します。
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 

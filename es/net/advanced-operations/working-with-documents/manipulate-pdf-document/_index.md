@@ -83,7 +83,7 @@ sitemap:
 
 ## Validar documento PDF para el estándar PDF A (A 1A y A 1B)
 
-Para validar un documento PDF para la compatibilidad con PDF/A-1a o PDF/A-1b, utiliza el método Validate de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Este método te permite especificar el nombre del archivo en el que se guardará el resultado y el tipo de validación requerida de la enumeración [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat): PDF_A_1A o PDF_A_1B.
+Para validar un documento PDF para la compatibilidad con PDF/A-1a o PDF/A-1b, utiliza el método Validate de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document). Este método te permite especificar el nombre del archivo en el que se guardará el resultado y el tipo de validación requerida de la enumeración [PdfFormat](https://reference.aspose.com/pdf/es/net/aspose.pdf/pdfformat): PDF_A_1A o PDF_A_1B.
 
 {{% alert color="primary" %}}
 
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### Ocultar números de página en TOC
 
-En caso de que no desees mostrar números de página, junto con los encabezados en el TOC, puedes utilizar la propiedad [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) de la clase [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) como falsa. Por favor, revisa el siguiente fragmento de código para ocultar números de página en la tabla de contenido:
+En caso de que no desees mostrar números de página, junto con los encabezados en el TOC, puedes utilizar la propiedad [IsShowPageNumbers](https://reference.aspose.com/pdf/es/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) de la clase [TOCInfo](https://reference.aspose.com/pdf/es/net/aspose.pdf/tocinfo) como falsa. Por favor, revisa el siguiente fragmento de código para ocultar números de página en la tabla de contenido:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -453,7 +453,7 @@ private static void SetExpiryDate()
 
 Un cliente nos pidió que agregáramos una función que permita a los desarrolladores determinar el progreso de la generación del archivo PDF. Aquí está la respuesta a esa solicitud.
 
-El campo [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) de la clase [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) te permite determinar cómo va la generación del PDF. El controlador tiene los siguientes tipos:
+El campo [CustomerProgressHandler](https://reference.aspose.com/pdf/es/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) de la clase [DocSaveOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/docsaveoptions) te permite determinar cómo va la generación del PDF. El controlador tiene los siguientes tipos:
 
 - DocSaveOptions.ConversionProgessEventHandler.
 - DocSaveOptions.ProgressEventHandlerInfo.

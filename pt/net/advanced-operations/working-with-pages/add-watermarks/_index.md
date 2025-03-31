@@ -82,13 +82,13 @@ sitemap:
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-Uma marca d'água criada com o Adobe Acrobat é chamada de artefato (conforme descrito na 14.8.2.2 Conteúdo Real e Artefatos da especificação PDF). Para trabalhar com artefatos, Aspose.PDF possui duas classes: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) e [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
+Uma marca d'água criada com o Adobe Acrobat é chamada de artefato (conforme descrito na 14.8.2.2 Conteúdo Real e Artefatos da especificação PDF). Para trabalhar com artefatos, Aspose.PDF possui duas classes: [Artifact](https://reference.aspose.com/pdf/pt/net/aspose.pdf/artifact) e [ArtifactCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/artifactcollection).
 
-Para obter todos os artefatos em uma página específica, a classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) possui a propriedade Artifacts. Este tópico explica como trabalhar com artefatos em arquivos PDF.
+Para obter todos os artefatos em uma página específica, a classe [Page](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) possui a propriedade Artifacts. Este tópico explica como trabalhar com artefatos em arquivos PDF.
 
 ## Trabalhando com Artefatos
 
-A classe [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) contém as seguintes propriedades:
+A classe [Artifact](https://reference.aspose.com/pdf/pt/net/aspose.pdf/artifact) contém as seguintes propriedades:
 
 - **Artifact.Type**: obtém o tipo de artefato (suporta valores da enumeração Artifact.ArtifactType onde os valores incluem Background, Layout, Page, Pagination e Undefined).
 - **Artifact.Subtype**: obtém o subtipo de artefato (suporta os valores da enumeração Artifact.ArtifactSubtype onde os valores incluem Background, Footer, Header, Undefined, Watermark).

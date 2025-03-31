@@ -83,7 +83,7 @@ sitemap:
 
 > Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Anotasi [Tautan](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) mewakili hyperlink, tujuan di tempat lain, dan dokumen. Menurut Standar PDF, anotasi tautan dapat digunakan dalam tiga kasus: membuka tampilan halaman, membuka file, dan membuka halaman web.
+Anotasi [Tautan](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) mewakili hyperlink, tujuan di tempat lain, dan dokumen. Menurut Standar PDF, anotasi tautan dapat digunakan dalam tiga kasus: membuka tampilan halaman, membuka file, dan membuka halaman web.
 
 ### Menggunakan Anotasi Tautan untuk membuka tampilan halaman
 

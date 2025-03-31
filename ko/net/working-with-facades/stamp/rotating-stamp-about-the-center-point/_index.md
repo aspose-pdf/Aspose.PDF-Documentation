@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 [Aspose.PDF for .NET](/pdf/ko/net/)에서 기존 PDF 파일에 스탬프를 추가할 수 있게 해줍니다. 때때로 사용자는 스탬프를 회전해야 할 필요가 있습니다. 이 기사에서는 스탬프를 중심점을 기준으로 회전하는 방법을 살펴보겠습니다.
+[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)는 [Aspose.PDF for .NET](/pdf/ko/net/)에서 기존 PDF 파일에 스탬프를 추가할 수 있게 해줍니다. 때때로 사용자는 스탬프를 회전해야 할 필요가 있습니다. 이 기사에서는 스탬프를 중심점을 기준으로 회전하는 방법을 살펴보겠습니다.
 
 {{% /alert %}}
 
 ## 구현 세부사항
 
-[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) 클래스는 PDF 파일에 워터마크를 추가할 수 있게 해줍니다. [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.stamp/bindimage/methods/1) 메서드를 사용하여 스탬프로 추가할 이미지를 지정할 수 있습니다. [SetOrigin](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setorigin) 메서드는 추가된 스탬프의 원점을 설정할 수 있게 해주며, 이 원점은 스탬프의 왼쪽 아래 좌표입니다. [SetImageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setimagesize) 메서드를 사용하여 이미지의 크기도 설정할 수 있습니다.
+[Stamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf/stamp) 클래스는 PDF 파일에 워터마크를 추가할 수 있게 해줍니다. [BindImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.stamp/bindimage/methods/1) 메서드를 사용하여 스탬프로 추가할 이미지를 지정할 수 있습니다. [SetOrigin](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/stamp/methods/setorigin) 메서드는 추가된 스탬프의 원점을 설정할 수 있게 해주며, 이 원점은 스탬프의 왼쪽 아래 좌표입니다. [SetImageSize](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/stamp/methods/setimagesize) 메서드를 사용하여 이미지의 크기도 설정할 수 있습니다.
 
-이제 스탬프를 스탬프의 중심을 기준으로 회전하는 방법을 살펴보겠습니다. [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) 클래스는 Rotation이라는 속성을 제공합니다. 이 속성은 스탬프 콘텐츠의 회전을 0도에서 360도까지 설정하거나 가져옵니다. 우리는 0도에서 360도까지의 회전 값을 지정할 수 있습니다. 회전 값을 지정함으로써 스탬프를 중심점을 기준으로 회전할 수 있습니다. Stamp가 Stamp 유형의 객체인 경우 회전 값은 aStamp.Rotation = 90으로 지정할 수 있습니다. 이 경우 스탬프는 스탬프 콘텐츠의 중심을 기준으로 90도 회전합니다. 다음 코드 스니펫은 스탬프를 중심점을 기준으로 회전하는 방법을 보여줍니다:
+이제 스탬프를 스탬프의 중심을 기준으로 회전하는 방법을 살펴보겠습니다. [Stamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf/stamp) 클래스는 Rotation이라는 속성을 제공합니다. 이 속성은 스탬프 콘텐츠의 회전을 0도에서 360도까지 설정하거나 가져옵니다. 우리는 0도에서 360도까지의 회전 값을 지정할 수 있습니다. 회전 값을 지정함으로써 스탬프를 중심점을 기준으로 회전할 수 있습니다. Stamp가 Stamp 유형의 객체인 경우 회전 값은 aStamp.Rotation = 90으로 지정할 수 있습니다. 이 경우 스탬프는 스탬프 콘텐츠의 중심을 기준으로 90도 회전합니다. 다음 코드 스니펫은 스탬프를 중심점을 기준으로 회전하는 방법을 보여줍니다:
 
 
 ```csharp

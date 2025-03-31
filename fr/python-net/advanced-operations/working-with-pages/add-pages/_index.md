@@ -89,8 +89,8 @@ Pour insérer une page vide dans un fichier PDF :
 
 1. Créez un objet de classe [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) avec le fichier PDF d'entrée.
 
-1. Appelez la méthode [insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) de la collection [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) avec l'index spécifié.
-1. Enregistrez le PDF de sortie en utilisant la méthode [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Appelez la méthode [insert](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection/methods/insert) de la collection [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) avec l'index spécifié.
+1. Enregistrez le PDF de sortie en utilisant la méthode [save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4).
 
 Le snippet de code suivant vous montre comment insérer une page dans un fichier PDF.
 

@@ -86,11 +86,11 @@ Aspose.PDF for .NET는 개발자가 .NET 애플리케이션에 PDF 문서 생성
 
 다음 코드 스니펫은 다음 단계를 따릅니다:
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 인스턴스화합니다.
-1. 문서 객체에 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 추가합니다.
-1. [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) 객체를 생성합니다.
-1. 페이지의 [Paragraph](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) 컬렉션에 TextFragment를 추가합니다.
-1. 결과 PDF 문서를 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)합니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 인스턴스화합니다.
+1. 문서 객체에 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 추가합니다.
+1. [TextFragment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textfragment) 객체를 생성합니다.
+1. 페이지의 [Paragraph](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page/properties/paragraphs) 컬렉션에 TextFragment를 추가합니다.
+1. 결과 PDF 문서를 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4)합니다.
 
 다음 코드 스니펫은 Aspose.PDF for .NET API의 작동을 보여주는 Hello World 프로그램입니다.
 

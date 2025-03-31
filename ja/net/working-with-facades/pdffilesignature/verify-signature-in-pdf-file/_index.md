@@ -77,7 +77,7 @@ draft: false
 
 ## PDFファイルが署名されているかどうかを確認する
 
-特定の署名を使用してPDFファイルが署名されているかどうかを確認するには、[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスのVerifySignedメソッドを使用します。このメソッドは署名名を必要とし、その署名名を使用してPDFが署名されている場合はtrueを返します。また、どの署名で署名されているかを確認せずに[PDFが署名されているか](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)を確認することも可能です。
+特定の署名を使用してPDFファイルが署名されているかどうかを確認するには、[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスのVerifySignedメソッドを使用します。このメソッドは署名名を必要とし、その署名名を使用してPDFが署名されている場合はtrueを返します。また、どの署名で署名されているかを確認せずに[PDFが署名されているか](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)を確認することも可能です。
 
 ### 特定の署名でPDFが署名されていることを確認する
 
@@ -127,7 +127,7 @@ private static void IsPdfSignedWithGivenSignature()
 
 ## 署名が有効かどうかを確認する
 
-[VerifySignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature)メソッドは、[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスの特定の署名を検証するために使用されます。このメソッドは署名名を入力として必要とし、署名が有効な場合はtrueを返します。以下のコードスニペットは、署名を検証する方法を示しています。
+[VerifySignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature)メソッドは、[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスの特定の署名を検証するために使用されます。このメソッドは署名名を入力として必要とし、署名が有効な場合はtrueを返します。以下のコードスニペットは、署名を検証する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

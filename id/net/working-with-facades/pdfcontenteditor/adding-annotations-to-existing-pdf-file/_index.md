@@ -79,11 +79,11 @@ sitemap:
 
 ## Tambahkan Anotasi Teks Bebas di File PDF yang Ada (facades)
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) memungkinkan Anda untuk menambahkan anotasi dari berbagai jenis di file PDF yang ada. Anda dapat menggunakan metode yang sesuai untuk menambahkan anotasi tertentu. Misalnya, dalam cuplikan kode berikut, kami telah menggunakan metode [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) untuk menambahkan anotasi tipe [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation).
+[PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) memungkinkan Anda untuk menambahkan anotasi dari berbagai jenis di file PDF yang ada. Anda dapat menggunakan metode yang sesuai untuk menambahkan anotasi tertentu. Misalnya, dalam cuplikan kode berikut, kami telah menggunakan metode [CreateFreeText](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) untuk menambahkan anotasi tipe [FreeText](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/freetextannotation).
 
-Jenis anotasi apa pun dapat ditambahkan ke file PDF dengan cara yang sama. Pertama-tama, Anda perlu membuat objek tipe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Kedua, Anda harus membuat objek Rectangle untuk menentukan area anotasi.
+Jenis anotasi apa pun dapat ditambahkan ke file PDF dengan cara yang sama. Pertama-tama, Anda perlu membuat objek tipe [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.facade/bindpdf/methods/3). Kedua, Anda harus membuat objek Rectangle untuk menentukan area anotasi.
 
-Setelah itu, Anda dapat memanggil metode [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) untuk menambahkan anotasi [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation), dan kemudian menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) untuk menyimpan file PDF yang diperbarui.
+Setelah itu, Anda dapat memanggil metode [CreateFreeText](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) untuk menambahkan anotasi [FreeText](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/freetextannotation), dan kemudian menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save) untuk menyimpan file PDF yang diperbarui.
 
 Cuplikan kode berikut menunjukkan kepada Anda cara menambahkan anotasi teks bebas di file PDF.
 
@@ -160,7 +160,7 @@ private static void AddFreeTextAnnotation()
 
 ## Tambahkan Anotasi Teks di File PDF yang Ada (facades)
 
-Dalam contoh ini juga, Anda perlu membuat objek tipe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Kedua, Anda harus membuat objek Rectangle untuk menentukan area anotasi. Setelah itu, Anda dapat memanggil metode [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) untuk menambahkan anotasi FreeText, membuat judul anotasi Anda, dan nomor halaman di mana anotasi tersebut berada.
+Dalam contoh ini juga, Anda perlu membuat objek tipe [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.facade/bindpdf/methods/3). Kedua, Anda harus membuat objek Rectangle untuk menentukan area anotasi. Setelah itu, Anda dapat memanggil metode [CreateFreeText](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) untuk menambahkan anotasi FreeText, membuat judul anotasi Anda, dan nomor halaman di mana anotasi tersebut berada.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

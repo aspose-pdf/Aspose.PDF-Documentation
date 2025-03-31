@@ -82,7 +82,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Cómo agregar sangría de línea a PDF
 
-Aspose.PDF for .NET ofrece la propiedad SubsequentLinesIndent en la clase [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions). La cual se puede usar para especificar la sangría de línea en escenarios de generación de PDF con TextFragment y la colección de párrafos.
+Aspose.PDF for .NET ofrece la propiedad SubsequentLinesIndent en la clase [TextFormattingOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textformattingoptions). La cual se puede usar para especificar la sangría de línea en escenarios de generación de PDF con TextFragment y la colección de párrafos.
 
 Por favor, use el siguiente fragmento de código para utilizar la propiedad:
 
@@ -203,7 +203,7 @@ private static void AddUnderlineText()
 
 ## Cómo agregar un borde alrededor del texto agregado
 
-Usted tiene control sobre la apariencia del texto que agrega. El ejemplo a continuación muestra cómo agregar un borde alrededor de un fragmento de texto que ha agregado dibujando un rectángulo alrededor de él. Descubra más sobre la clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor).
+Usted tiene control sobre la apariencia del texto que agrega. El ejemplo a continuación muestra cómo agregar un borde alrededor de un fragmento de texto que ha agregado dibujando un rectángulo alrededor de él. Descubra más sobre la clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

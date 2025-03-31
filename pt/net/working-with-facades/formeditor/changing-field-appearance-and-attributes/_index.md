@@ -77,17 +77,17 @@ draft: false
 
 {{% alert color="primary" %}}
 
-A classe [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) do [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) permite que você não apenas altere a aparência do campo de formulário, mas também o comportamento do campo. Neste artigo, veremos como podemos usar a classe FormEditor para alterar a aparência do campo, os atributos do campo e o limite do campo também.
+A classe [FormEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/FormEditor) do [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades) permite que você não apenas altere a aparência do campo de formulário, mas também o comportamento do campo. Neste artigo, veremos como podemos usar a classe FormEditor para alterar a aparência do campo, os atributos do campo e o limite do campo também.
 
 {{% /alert %}}
 
 ## Detalhes da implementação
 
-O método [SetFieldAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldappearance) é usado para alterar a aparência de um campo de formulário. Ele recebe AnnotationFlag como parâmetro. AnnotationFlag é uma enumeração que possui diferentes membros como Hidden ou NoRotate, etc.
+O método [SetFieldAppearance](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formeditor/methods/setfieldappearance) é usado para alterar a aparência de um campo de formulário. Ele recebe AnnotationFlag como parâmetro. AnnotationFlag é uma enumeração que possui diferentes membros como Hidden ou NoRotate, etc.
 
-O método [SetFieldAttributes](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldattribute) é usado para alterar o atributo de um campo de formulário. Um parâmetro passado para este método é a enumeração PropertyFlag, que contém membros como ReadOnly ou Required, etc.
+O método [SetFieldAttributes](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formeditor/methods/setfieldattribute) é usado para alterar o atributo de um campo de formulário. Um parâmetro passado para este método é a enumeração PropertyFlag, que contém membros como ReadOnly ou Required, etc.
 
-A classe [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) também fornece um método para definir o limite do campo. Ele informa ao campo quantos caracteres podem ser preenchidos. O trecho de código abaixo mostra como todos esses métodos podem ser usados.
+A classe [FormEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/FormEditor) também fornece um método para definir o limite do campo. Ele informa ao campo quantos caracteres podem ser preenchidos. O trecho de código abaixo mostra como todos esses métodos podem ser usados.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

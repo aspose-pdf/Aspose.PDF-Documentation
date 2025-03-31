@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/id/net/) memungkinkan Anda untuk menambahkan cap dalam file PDF yang ada. Terkadang, pengguna perlu memutar cap. Dalam artikel ini, kita akan melihat cara memutar cap tentang titik pusatnya.
+[Namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/id/net/) memungkinkan Anda untuk menambahkan cap dalam file PDF yang ada. Terkadang, pengguna perlu memutar cap. Dalam artikel ini, kita akan melihat cara memutar cap tentang titik pusatnya.
 
 {{% /alert %}}
 
 ## Detail implementasi
 
-Kelas [Cap](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) memungkinkan Anda untuk menambahkan watermark dalam file PDF. Anda dapat menentukan gambar yang akan ditambahkan sebagai cap menggunakan metode [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.stamp/bindimage/methods/1). Metode [SetOrigin](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setorigin) memungkinkan Anda untuk mengatur asal dari cap yang ditambahkan; asal ini adalah koordinat kiri-bawah dari cap. Anda juga dapat mengatur ukuran gambar menggunakan metode [SetImageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setimagesize).
+Kelas [Cap](https://reference.aspose.com/pdf/id/net/aspose.pdf/stamp) memungkinkan Anda untuk menambahkan watermark dalam file PDF. Anda dapat menentukan gambar yang akan ditambahkan sebagai cap menggunakan metode [BindImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.stamp/bindimage/methods/1). Metode [SetOrigin](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/stamp/methods/setorigin) memungkinkan Anda untuk mengatur asal dari cap yang ditambahkan; asal ini adalah koordinat kiri-bawah dari cap. Anda juga dapat mengatur ukuran gambar menggunakan metode [SetImageSize](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/stamp/methods/setimagesize).
 
-Sekarang, kita melihat bagaimana cap dapat diputar tentang pusat cap. Kelas [Cap](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) menyediakan properti bernama Rotation. Properti ini mengatur atau mendapatkan rotasi dari 0 hingga 360 dari konten cap. Kita dapat menentukan nilai rotasi apa pun dari 0 hingga 360. Dengan menentukan nilai rotasi, kita dapat memutar cap tentang titik pusatnya. Jika sebuah Cap adalah objek dari tipe Cap maka nilai rotasi dapat ditentukan sebagai aStamp.Rotation = 90. Dalam hal ini, cap akan diputar pada 90 derajat di sekitar pusat konten cap. Potongan kode berikut menunjukkan kepada Anda bagaimana cara memutar cap tentang titik pusat:
+Sekarang, kita melihat bagaimana cap dapat diputar tentang pusat cap. Kelas [Cap](https://reference.aspose.com/pdf/id/net/aspose.pdf/stamp) menyediakan properti bernama Rotation. Properti ini mengatur atau mendapatkan rotasi dari 0 hingga 360 dari konten cap. Kita dapat menentukan nilai rotasi apa pun dari 0 hingga 360. Dengan menentukan nilai rotasi, kita dapat memutar cap tentang titik pusatnya. Jika sebuah Cap adalah objek dari tipe Cap maka nilai rotasi dapat ditentukan sebagai aStamp.Rotation = 90. Dalam hal ini, cap akan diputar pada 90 derajat di sekitar pusat konten cap. Potongan kode berikut menunjukkan kepada Anda bagaimana cara memutar cap tentang titik pusat:
 
 
 ```csharp

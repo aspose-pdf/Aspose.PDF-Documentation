@@ -95,12 +95,12 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 Para adicionar uma Anotação de Marcação de Texto ao documento PDF, precisamos realizar as seguintes ações:
 
-1. Carregar o arquivo PDF - novo objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Carregar o arquivo PDF - novo objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
 1. Criar anotações:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) e definir parâmetros (título, cor).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) e definir parâmetros (título, cor).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) e definir parâmetros (título, cor).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) e definir parâmetros (título, cor).
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/highlightannotation) e definir parâmetros (título, cor).
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/strikeoutannotation) e definir parâmetros (título, cor).
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/squigglyannotation) e definir parâmetros (título, cor).
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/underlineannotation) e definir parâmetros (título, cor).
 1. Depois, devemos adicionar todas as anotações à página.
 
 ```csharp

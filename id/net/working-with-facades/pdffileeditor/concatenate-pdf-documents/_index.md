@@ -91,9 +91,9 @@ Artikel ini menjelaskan cara menggabungkan, mengkombinasikan, atau menggabungkan
 
 ## Menggabungkan file PDF menggunakan jalur file
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) adalah kelas dalam [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) yang memungkinkan Anda untuk menggabungkan beberapa file PDF. Anda tidak hanya dapat menggabungkan file menggunakan FileStreams tetapi juga menggunakan MemoryStreams. Dalam artikel ini, proses penggabungan file menggunakan MemoryStreams akan dijelaskan dan kemudian ditunjukkan menggunakan cuplikan kode.
+[PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) adalah kelas dalam [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades) yang memungkinkan Anda untuk menggabungkan beberapa file PDF. Anda tidak hanya dapat menggabungkan file menggunakan FileStreams tetapi juga menggunakan MemoryStreams. Dalam artikel ini, proses penggabungan file menggunakan MemoryStreams akan dijelaskan dan kemudian ditunjukkan menggunakan cuplikan kode.
 
-Metode [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) dapat digunakan untuk menggabungkan dua file PDF. Metode [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) memungkinkan Anda untuk melewatkan tiga parameter: PDF input pertama, PDF input kedua, dan PDF output. PDF output akhir berisi kedua file PDF input.
+Metode [Concatenate](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) dapat digunakan untuk menggabungkan dua file PDF. Metode [Concatenate](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) memungkinkan Anda untuk melewatkan tiga parameter: PDF input pertama, PDF input kedua, dan PDF output. PDF output akhir berisi kedua file PDF input.
 
 Cuplikan kode C# berikut menunjukkan cara menggabungkan file PDF menggunakan jalur file.
 
@@ -129,7 +129,7 @@ private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 
 ## Menggabungkan beberapa file PDF menggunakan MemoryStreams
 
-Metode [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) mengambil file PDF sumber dan file PDF tujuan sebagai parameter. Parameter ini bisa berupa jalur ke file PDF di disk atau bisa juga berupa MemoryStreams. Sekarang, untuk contoh ini, kita akan terlebih dahulu membuat dua file stream untuk membaca file PDF dari disk. Kemudian kita akan mengonversi file-file ini menjadi array byte. Array byte dari file PDF ini akan dikonversi menjadi MemoryStreams. Setelah kita mendapatkan MemoryStreams dari file PDF, kita akan dapat meneruskannya ke metode concatenate dan menggabungkannya menjadi satu file output.
+Metode [Concatenate](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) mengambil file PDF sumber dan file PDF tujuan sebagai parameter. Parameter ini bisa berupa jalur ke file PDF di disk atau bisa juga berupa MemoryStreams. Sekarang, untuk contoh ini, kita akan terlebih dahulu membuat dua file stream untuk membaca file PDF dari disk. Kemudian kita akan mengonversi file-file ini menjadi array byte. Array byte dari file PDF ini akan dikonversi menjadi MemoryStreams. Setelah kita mendapatkan MemoryStreams dari file PDF, kita akan dapat meneruskannya ke metode concatenate dan menggabungkannya menjadi satu file output.
 
 Cuplikan kode C# berikut menunjukkan cara menggabungkan beberapa file PDF menggunakan MemoryStreams:
 
@@ -187,7 +187,7 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
 
 ## Menggabungkan Array File PDF Menggunakan Jalur File
 
-Jika Anda ingin menggabungkan beberapa file PDF, Anda dapat menggunakan overload dari metode [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) yang memungkinkan Anda untuk melewatkan array file PDF. Output akhir disimpan sebagai file gabungan yang dibuat dari semua file dalam array. Cuplikan kode C# berikut menunjukkan cara menggabungkan array file PDF menggunakan jalur file.
+Jika Anda ingin menggabungkan beberapa file PDF, Anda dapat menggunakan overload dari metode [Concatenate](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) yang memungkinkan Anda untuk melewatkan array file PDF. Output akhir disimpan sebagai file gabungan yang dibuat dari semua file dalam array. Cuplikan kode C# berikut menunjukkan cara menggabungkan array file PDF menggunakan jalur file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
 
 ## Menggabungkan Array File PDF Menggunakan Stream
 
-Menggabungkan array file PDF tidak terbatas hanya pada file yang berada di disk. Anda juga dapat menggabungkan array file PDF dari stream. Jika Anda ingin menggabungkan beberapa file PDF, Anda dapat menggunakan overload yang sesuai dari metode [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Pertama, Anda perlu membuat array stream input dan satu stream untuk PDF output dan kemudian memanggil metode [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Output akan disimpan dalam stream output. Cuplikan kode C# berikut menunjukkan cara menggabungkan array file PDF menggunakan stream.
+Menggabungkan array file PDF tidak terbatas hanya pada file yang berada di disk. Anda juga dapat menggabungkan array file PDF dari stream. Jika Anda ingin menggabungkan beberapa file PDF, Anda dapat menggunakan overload yang sesuai dari metode [Concatenate](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Pertama, Anda perlu membuat array stream input dan satu stream untuk PDF output dan kemudian memanggil metode [Concatenate](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Output akan disimpan dalam stream output. Cuplikan kode C# berikut menunjukkan cara menggabungkan array file PDF menggunakan stream.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -267,7 +267,7 @@ private static void ConcatenatingAllPdfFilesInParticularFolder()
 
 ## Menggabungkan Formulir PDF dan menjaga nama field tetap unik
 
-Kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) dalam [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) menawarkan kemampuan untuk menggabungkan file PDF. Sekarang, jika file PDF yang akan digabungkan memiliki field formulir dengan nama field yang sama, Aspose.PDF menyediakan fitur untuk menjaga field dalam file PDF hasil sebagai unik dan Anda juga dapat menentukan sufiks untuk membuat nama field unik. Properti [KeepFieldsUnique](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) dari [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) sebagai true akan membuat nama field unik ketika formulir PDF digabungkan. Juga, properti [UniqueSuffix](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) dari PdfFileEditor dapat digunakan untuk menentukan format sufiks yang ditentukan pengguna yang ditambahkan ke nama field untuk membuatnya unik ketika formulir digabungkan. String ini harus mengandung substring `%NUM%` yang akan diganti dengan angka dalam file hasil.
+Kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) dalam [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades) menawarkan kemampuan untuk menggabungkan file PDF. Sekarang, jika file PDF yang akan digabungkan memiliki field formulir dengan nama field yang sama, Aspose.PDF menyediakan fitur untuk menjaga field dalam file PDF hasil sebagai unik dan Anda juga dapat menentukan sufiks untuk membuat nama field unik. Properti [KeepFieldsUnique](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) dari [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) sebagai true akan membuat nama field unik ketika formulir PDF digabungkan. Juga, properti [UniqueSuffix](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) dari PdfFileEditor dapat digunakan untuk menentukan format sufiks yang ditentukan pengguna yang ditambahkan ke nama field untuk membuatnya unik ketika formulir digabungkan. String ini harus mengandung substring `%NUM%` yang akan diganti dengan angka dalam file hasil.
 
 Silakan lihat cuplikan kode sederhana berikut untuk mencapai fungsionalitas ini.
 
@@ -347,7 +347,7 @@ private static void InsertBlankPage()
 
 ### Menambahkan Stempel Teks
 
-Untuk membuat Daftar Isi, kita perlu menambahkan stempel teks di halaman pertama menggunakan [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) dan objek [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp). Kelas Stamp menyediakan metode `BindLogo(...)` untuk menambahkan [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) dan kita juga dapat menentukan lokasi untuk menambahkan stempel teks ini menggunakan metode `SetOrigin(..)`. Dalam artikel ini, kita menggabungkan dua file PDF, jadi kita perlu membuat dua objek stempel teks yang mengarah ke dokumen individu ini.
+Untuk membuat Daftar Isi, kita perlu menambahkan stempel teks di halaman pertama menggunakan [PdfFileStamp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilestamp) dan objek [Stamp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/stamp). Kelas Stamp menyediakan metode `BindLogo(...)` untuk menambahkan [FormattedText](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formattedtext) dan kita juga dapat menentukan lokasi untuk menambahkan stempel teks ini menggunakan metode `SetOrigin(..)`. Dalam artikel ini, kita menggabungkan dua file PDF, jadi kita perlu membuat dua objek stempel teks yang mengarah ke dokumen individu ini.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -368,7 +368,7 @@ private static void AddTextStampForTableOfContents()
 
 ### Membuat tautan lokal
 
-Sekarang kita perlu menambahkan tautan ke halaman di dalam file yang digabungkan. Untuk memenuhi persyaratan ini, kita dapat menggunakan metode `CreateLocalLink(..)` dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Dalam cuplikan kode berikut, kita telah melewatkan Transparent sebagai argumen ke-4 sehingga persegi panjang di sekitar tautan tidak terlihat.
+Sekarang kita perlu menambahkan tautan ke halaman di dalam file yang digabungkan. Untuk memenuhi persyaratan ini, kita dapat menggunakan metode `CreateLocalLink(..)` dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor). Dalam cuplikan kode berikut, kita telah melewatkan Transparent sebagai argumen ke-4 sehingga persegi panjang di sekitar tautan tidak terlihat.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -484,7 +484,7 @@ private static void CompleteCode()
 
 ## Menggabungkan file PDF dalam folder
 
-Kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) dalam namespace Aspose.Pdf.Facades menawarkan Anda kemampuan untuk menggabungkan file PDF. Anda bahkan dapat membaca semua file PDF dalam folder tertentu saat runtime dan menggabungkannya, tanpa bahkan mengetahui nama file. Cukup berikan jalur direktori yang berisi dokumen PDF yang ingin Anda gabungkan.
+Kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) dalam namespace Aspose.Pdf.Facades menawarkan Anda kemampuan untuk menggabungkan file PDF. Anda bahkan dapat membaca semua file PDF dalam folder tertentu saat runtime dan menggabungkannya, tanpa bahkan mengetahui nama file. Cukup berikan jalur direktori yang berisi dokumen PDF yang ingin Anda gabungkan.
 
 Silakan coba menggunakan cuplikan kode C# berikut untuk mencapai fungsionalitas ini dari Aspose.PDF:
 

@@ -83,7 +83,7 @@ sitemap:
 
 ## PDF 파일 정보 가져오기
 
-PDF 파일의 특정 정보를 가져오려면 먼저 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) 속성을 사용하여 [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) 객체를 가져와야 합니다. [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) 객체를 가져온 후에는 개별 속성의 값을 가져올 수 있습니다. 다음 코드 스니펫은 PDF 파일 정보를 가져오는 방법을 보여줍니다.
+PDF 파일의 특정 정보를 가져오려면 먼저 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Info](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/info) 속성을 사용하여 [DocumentInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf/documentinfo) 객체를 가져와야 합니다. [DocumentInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf/documentinfo) 객체를 가져온 후에는 개별 속성의 값을 가져올 수 있습니다. 다음 코드 스니펫은 PDF 파일 정보를 가져오는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -142,7 +142,7 @@ private static void GetPDFFileInformation()
 
 Aspose.PDF for .NET은 저자, 생성 날짜, 주제 및 제목과 같은 PDF에 대한 파일 특정 정보를 설정할 수 있게 해줍니다. 이 정보를 설정하려면:
 
-1. [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) 객체를 생성합니다.
+1. [DocumentInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf/documentinfo) 객체를 생성합니다.
 1. 속성의 값을 설정합니다.
 1. Document 클래스의 Save 메서드를 사용하여 업데이트된 문서를 저장합니다.
 
@@ -214,8 +214,8 @@ private static void SetFileInformation()
 
 Aspose.PDF는 PDF 파일의 XMP 메타데이터에 접근할 수 있게 해줍니다. PDF 파일의 메타데이터를 가져오려면:
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성하고 입력 PDF 파일을 엽니다.
-1. [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) 속성을 사용하여 파일의 메타데이터를 가져옵니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성하고 입력 PDF 파일을 엽니다.
+1. [Metadata](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/metadata) 속성을 사용하여 파일의 메타데이터를 가져옵니다.
 
 다음 코드 스니펫은 PDF 파일에서 메타데이터를 가져오는 방법을 보여줍니다.
 
@@ -265,9 +265,9 @@ private static void GetXMPMetadata()
 
 Aspose.PDF는 PDF 파일에 메타데이터를 설정할 수 있게 해줍니다. 메타데이터를 설정하려면:
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성합니다.
-1. [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) 속성을 사용하여 메타데이터 값을 설정합니다.
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 문서를 저장합니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성합니다.
+1. [Metadata](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/metadata) 속성을 사용하여 메타데이터 값을 설정합니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 문서를 저장합니다.
 
 다음 코드 스니펫은 PDF 파일에 메타데이터를 설정하는 방법을 보여줍니다.
 

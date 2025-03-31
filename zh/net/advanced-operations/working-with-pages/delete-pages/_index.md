@@ -80,12 +80,12 @@ sitemap:
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
-您可以使用 Aspose.PDF for .NET 从 PDF 文件中删除页面。要从 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合中删除特定页面。
+您可以使用 Aspose.PDF for .NET 从 PDF 文件中删除页面。要从 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 集合中删除特定页面。
 
 ## 从 PDF 文件中删除页面
 
-1. 调用 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) 方法并指定页面的索引。
-1. 调用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法以保存更新后的 PDF 文件。
+1. 调用 [Delete](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection/methods/delete) 方法并指定页面的索引。
+1. 调用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法以保存更新后的 PDF 文件。
 以下代码片段演示了如何使用 C# 从 PDF 文件中删除特定页面。
 
 ```csharp

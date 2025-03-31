@@ -85,16 +85,16 @@ sitemap:
 
 ### إضافة حقل نموذج في مستند PDF
 
-توفر فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مجموعة تُسمى [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) والتي تساعدك في إدارة حقول النموذج في مستند PDF.
+توفر فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مجموعة تُسمى [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/form) والتي تساعدك في إدارة حقول النموذج في مستند PDF.
 
 لإضافة حقل نموذج:
 
 1. أنشئ حقل النموذج الذي تريد إضافته.
-1. استدعِ طريقة Add لمجموعة [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) .
+1. استدعِ طريقة Add لمجموعة [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/form) .
 
 ### إضافة TextBoxField
 
-يوضح المثال أدناه كيفية إضافة [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
+يوضح المثال أدناه كيفية إضافة [TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### إضافة RadioButtonField
 
-تظهر مقتطفات الشيفرة التالية كيفية إضافة [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) في مستند PDF.
+تظهر مقتطفات الشيفرة التالية كيفية إضافة [RadioButtonField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/radiobuttonfield) في مستند PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -164,7 +164,7 @@ private static void AddRadioButtonToPdf()
 }
 ```
 
-يمكن إضافة [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) مع بعض تعليقات الأدوات.
+يمكن إضافة [TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield) مع بعض تعليقات الأدوات.
 ```csharp
 // For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()

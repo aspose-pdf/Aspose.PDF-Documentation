@@ -84,7 +84,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Ajouter du texte dans l'en-tête du fichier PDF
 
-Vous pouvez utiliser la classe [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) pour ajouter du texte dans l'en-tête d'un fichier PDF. La classe TextStamp fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter du texte dans l'en-tête, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la Page pour ajouter le texte dans l'en-tête du PDF.
+Vous pouvez utiliser la classe [TextStamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf/textstamp) pour ajouter du texte dans l'en-tête d'un fichier PDF. La classe TextStamp fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter du texte dans l'en-tête, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la Page pour ajouter le texte dans l'en-tête du PDF.
 
 Vous devez définir la propriété TopMargin de manière à ce qu'elle ajuste le texte dans la zone d'en-tête de votre PDF. Vous devez également définir HorizontalAlignment sur Center et VerticalAlignment sur Top.
 
@@ -164,7 +164,7 @@ private static void AddFooterText()
 
 ## Ajouter une image dans l'en-tête du fichier PDF
 
-Vous pouvez utiliser la classe [ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp) pour ajouter une image dans l'en-tête d'un fichier PDF. La classe Image Stamp fournit les propriétés nécessaires pour créer un tampon basé sur une image comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter une image dans l'en-tête, vous devez créer un objet Document et un objet Image Stamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la Page pour ajouter l'image dans l'en-tête du PDF.
+Vous pouvez utiliser la classe [ImageStamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf/ImageStamp) pour ajouter une image dans l'en-tête d'un fichier PDF. La classe Image Stamp fournit les propriétés nécessaires pour créer un tampon basé sur une image comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter une image dans l'en-tête, vous devez créer un objet Document et un objet Image Stamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode [AddStamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page/methods/addstamp) de la Page pour ajouter l'image dans l'en-tête du PDF.
 
 {{% alert color="primary" %}}
 
@@ -210,7 +210,7 @@ Vous pouvez utiliser la classe Image Stamp pour ajouter une image dans le pied d
 
 {{% alert color="primary" %}}
 
-Vous devez définir la propriété [BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin) de manière à ce qu'elle ajuste l'image dans la zone de pied de page de votre PDF. Vous devez également définir [HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment) sur `Center` et [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment) sur `Bottom`.
+Vous devez définir la propriété [BottomMargin](https://reference.aspose.com/pdf/fr/net/aspose.pdf/stamp/properties/bottommargin) de manière à ce qu'elle ajuste l'image dans la zone de pied de page de votre PDF. Vous devez également définir [HorizontalAlignment](https://reference.aspose.com/pdf/fr/net/aspose.pdf/stamp/properties/horizontalalignment) sur `Center` et [VerticalAlignment](https://reference.aspose.com/pdf/fr/net/aspose.pdf/stamp/properties/verticalalignment) sur `Bottom`.
 
 {{% /alert %}}
 
@@ -250,7 +250,7 @@ private static void AddImageFooter()
 
 Nous savons que nous pouvons ajouter TextStamp dans la section En-tête/Pied de page du document en utilisant les propriétés TopMargin ou Bottom Margin, mais parfois nous pouvons avoir besoin d'ajouter plusieurs en-têtes/pieds de page dans un seul document PDF. **Aspose.PDF for .NET** explique comment faire cela.
 
-Pour accomplir cette exigence, nous allons créer des objets TextStamp individuels (le nombre d'objets dépend du nombre d'en-têtes/pieds de page requis) et les ajouter au document PDF. Nous pouvons également spécifier différentes informations de formatage pour chaque objet tampon. Dans l'exemple suivant, nous avons créé un objet Document et trois objets TextStamp, puis nous avons utilisé la méthode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la Page pour ajouter le texte dans la section d'en-tête du PDF. Le code suivant vous montre comment ajouter une image dans le pied de page d'un fichier PDF avec Aspose.PDF for .NET.
+Pour accomplir cette exigence, nous allons créer des objets TextStamp individuels (le nombre d'objets dépend du nombre d'en-têtes/pieds de page requis) et les ajouter au document PDF. Nous pouvons également spécifier différentes informations de formatage pour chaque objet tampon. Dans l'exemple suivant, nous avons créé un objet Document et trois objets TextStamp, puis nous avons utilisé la méthode [AddStamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page/methods/addstamp) de la Page pour ajouter le texte dans la section d'en-tête du PDF. Le code suivant vous montre comment ajouter une image dans le pied de page d'un fichier PDF avec Aspose.PDF for .NET.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

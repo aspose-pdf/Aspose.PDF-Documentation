@@ -77,7 +77,7 @@ draft: false
 
 ## Ubah Kata Sandi File PDF
 
-Untuk mengubah kata sandi file PDF, Anda perlu membuat objek [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) dan kemudian memanggil metode [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Anda perlu memberikan kata sandi pemilik yang ada dan kata sandi pengguna serta pemilik yang baru ke metode [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
+Untuk mengubah kata sandi file PDF, Anda perlu membuat objek [PdfFileSecurity](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity) dan kemudian memanggil metode [ChangePassword](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Anda perlu memberikan kata sandi pemilik yang ada dan kata sandi pengguna serta pemilik yang baru ke metode [ChangePassword](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
 
 {{% alert color="primary" %}}
 

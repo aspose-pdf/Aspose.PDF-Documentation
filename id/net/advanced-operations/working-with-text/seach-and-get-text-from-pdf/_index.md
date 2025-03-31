@@ -82,7 +82,7 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 ## Cari dan Ambil Teks dari Semua Halaman Dokumen PDF
 
-Kelas [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) memungkinkan Anda untuk menemukan teks yang cocok dengan frasa tertentu, dari semua halaman dokumen PDF. Untuk mencari teks dari seluruh dokumen, Anda perlu memanggil metode Accept dari koleksi Pages. Metode [Accept](https://reference.aspose.com/pdf/net/aspose.pdf.page/accept/methods/3) mengambil objek TextFragmentAbsorber sebagai parameter, yang mengembalikan koleksi objek TextFragment. Anda dapat melakukan loop melalui semua fragmen dan mendapatkan properti mereka seperti Teks, Posisi (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor, dll.
+Kelas [TextFragmentAbsorber](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textfragmentabsorber) memungkinkan Anda untuk menemukan teks yang cocok dengan frasa tertentu, dari semua halaman dokumen PDF. Untuk mencari teks dari seluruh dokumen, Anda perlu memanggil metode Accept dari koleksi Pages. Metode [Accept](https://reference.aspose.com/pdf/id/net/aspose.pdf.page/accept/methods/3) mengambil objek TextFragmentAbsorber sebagai parameter, yang mengembalikan koleksi objek TextFragment. Anda dapat melakukan loop melalui semua fragmen dan mendapatkan properti mereka seperti Teks, Posisi (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor, dll.
 
 Potongan kode berikut menunjukkan kepada Anda cara mencari teks dari semua halaman.
 

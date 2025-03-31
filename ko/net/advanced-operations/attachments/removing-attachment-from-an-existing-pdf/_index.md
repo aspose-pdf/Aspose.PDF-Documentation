@@ -85,8 +85,8 @@ Aspose.PDF는 PDF 파일에서 첨부파일을 제거할 수 있습니다. PDF �
 
 PDF 파일과 관련된 모든 첨부파일을 삭제하려면:
 
-1. [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션의 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) 메서드를 호출합니다.
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 업데이트된 파일을 저장합니다.
+1. [EmbeddedFiles](https://reference.aspose.com/pdf/ko/net/aspose.pdf/embeddedfilecollection) 컬렉션의 [Delete](https://reference.aspose.com/pdf/ko/net/aspose.pdf/embeddedfilecollection/methods/delete) 메서드를 호출합니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 업데이트된 파일을 저장합니다.
 
 다음 코드 스니펫은 PDF 문서에서 첨부파일을 제거하는 방법을 보여줍니다.
 

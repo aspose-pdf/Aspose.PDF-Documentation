@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[CopyInnerField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) تتيح لك نسخ حقل في نفس الملف، في نفس الإحداثيات، على الصفحة المحددة. تتطلب هذه الطريقة اسم الحقل الذي تريد نسخه، واسم الحقل الجديد، ورقم الصفحة التي يحتاج الحقل ليتم نسخه فيها. توفر فئة [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) هذه الطريقة. يوضح لك مقتطف الكود التالي كيفية نسخ الحقل في نفس الموقع في نفس الملف.
+[CopyInnerField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) تتيح لك نسخ حقل في نفس الملف، في نفس الإحداثيات، على الصفحة المحددة. تتطلب هذه الطريقة اسم الحقل الذي تريد نسخه، واسم الحقل الجديد، ورقم الصفحة التي يحتاج الحقل ليتم نسخه فيها. توفر فئة [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) هذه الطريقة. يوضح لك مقتطف الكود التالي كيفية نسخ الحقل في نفس الموقع في نفس الملف.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -108,7 +108,7 @@ private static void CopyInnerField()
 
 ## نسخ الحقل الخارجي في ملف PDF موجود
 
-تتيح لك طريقة [CopyOuterField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) نسخ حقل نموذج من ملف PDF خارجي ثم إضافته إلى ملف PDF المدخل في نفس الموقع ورقم الصفحة المحدد. تتطلب هذه الطريقة ملف PDF الذي يحتاج الحقل ليتم نسخه منه، واسم الحقل، ورقم الصفحة التي يحتاج الحقل ليتم نسخه فيها. يتم توفير هذه الطريقة من قبل فئة [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). يوضح لك مقتطف الكود التالي كيفية نسخ حقل من ملف PDF خارجي.
+تتيح لك طريقة [CopyOuterField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) نسخ حقل نموذج من ملف PDF خارجي ثم إضافته إلى ملف PDF المدخل في نفس الموقع ورقم الصفحة المحدد. تتطلب هذه الطريقة ملف PDF الذي يحتاج الحقل ليتم نسخه منه، واسم الحقل، ورقم الصفحة التي يحتاج الحقل ليتم نسخه فيها. يتم توفير هذه الطريقة من قبل فئة [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). يوضح لك مقتطف الكود التالي كيفية نسخ حقل من ملف PDF خارجي.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

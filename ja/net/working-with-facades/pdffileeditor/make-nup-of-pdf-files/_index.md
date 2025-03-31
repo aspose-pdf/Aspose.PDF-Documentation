@@ -77,7 +77,7 @@ draft: false
 
 ## ファイルパスを使用してPDFのNUpを作成する
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFファイルのNUpを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してNUpを作成できます。以下のコードスニペットは、ファイルパスを使用してNUPを作成する方法を示しています。
+[MakeNUp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFファイルのNUpを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してNUpを作成できます。以下のコードスニペットは、ファイルパスを使用してNUPを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeNupOfPdfUsingFilePaths()
 
 ## ページサイズとファイルパスを使用してNUpを作成する
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFファイルのNUpを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してNUpを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズを設定することもできます。以下のコードスニペットは、ページサイズとファイルパスを使用してNUpを作成する方法を示しています。
+[MakeNUp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFファイルのNUpを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してNUpを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズを設定することもできます。以下のコードスニペットは、ページサイズとファイルパスを使用してNUpを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeNupUsingPageSizeAndFilePaths()
 
 ## ページサイズ、水平および垂直値、ファイルパスを使用してPDFのNUpを作成する
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFファイルのNUpを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してNUpを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズと、各出力ページの水平および垂直のページ数を設定することもできます。以下のコードスニペットは、ページサイズ、水平および垂直値、ファイルパスを使用してNUpを作成する方法を示しています。
+[MakeNUp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFファイルのNUpを作成し、出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してNUpを作成できます。また、このオーバーロードを使用して出力PDFファイルのページサイズと、各出力ページの水平および垂直のページ数を設定することもできます。以下のコードスニペットは、ページサイズ、水平および垂直値、ファイルパスを使用してNUpを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -128,7 +128,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFileP
 
 ## PDFファイルの配列とファイルパスを使用してNUpを作成する
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFファイルの配列のNUpを作成し、それらを1つの出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してNUpを作成できます。以下のコードスニペットは、PDFファイルの配列とファイルパスを使用してNUpを作成する方法を示しています。
+[MakeNUp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFファイルの配列のNUpを作成し、それらを1つの出力PDFファイルに保存することができます。このオーバーロードを使用すると、ファイルパスを使用してNUpを作成できます。以下のコードスニペットは、PDFファイルの配列とファイルパスを使用してNUpを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
 
 ## ストリームを使用してPDFのNUpを作成する
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFストリームのNUpを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してNUpを作成できます。以下のコードスニペットは、ストリームを使用してNUpを作成する方法を示しています。
+[MakeNUp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFストリームのNUpを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してNUpを作成できます。以下のコードスニペットは、ストリームを使用してNUpを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -176,7 +176,7 @@ private static void MakeNupOfPdfUsingStreams()
 
 ## ページサイズとストリームを使用してPDFのNUpを作成する
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFストリームのNUpを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してNUpを作成できます。また、このオーバーロードを使用して出力PDFストリームのページサイズを設定することもできます。以下のコードスニペットは、ページサイズとストリームを使用してNUpを作成する方法を示しています。
+[MakeNUp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFストリームのNUpを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してNUpを作成できます。また、このオーバーロードを使用して出力PDFストリームのページサイズを設定することもできます。以下のコードスニペットは、ページサイズとストリームを使用してNUpを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ private static void MakeNupOfPdfUsingPageSizeAndStreams()
 
 ## ページサイズ、水平および垂直値、ストリームを使用してPDFのNUpを作成する
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFストリームのNUpを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してNUpを作成できます。また、このオーバーロードを使用して出力PDFストリームのページサイズと、各出力ページの水平および垂直のページ数を設定することもできます。以下のコードスニペットは、ページサイズ、水平および垂直値、ストリームを使用してNUpを作成する方法を示しています。
+[MakeNUp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFストリームのNUpを作成し、出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してNUpを作成できます。また、このオーバーロードを使用して出力PDFストリームのページサイズと、各出力ページの水平および垂直のページ数を設定することもできます。以下のコードスニペットは、ページサイズ、水平および垂直値、ストリームを使用してNUpを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -224,7 +224,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStrea
 
 ## PDFファイルの配列とストリームを使用してNUpを作成する
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFストリームの配列のNUpを作成し、それらを1つの出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してNUpを作成できます。以下のコードスニペットは、ストリームを使用してPDFファイルの配列を使用してNUpを作成する方法を示しています。
+[MakeNUp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index)メソッドは、[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスのもので、入力PDFストリームの配列のNUpを作成し、それらを1つの出力PDFストリームに保存することができます。このオーバーロードを使用すると、ファイルパスの代わりにストリームを使用してNUpを作成できます。以下のコードスニペットは、ストリームを使用してPDFファイルの配列を使用してNUpを作成する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

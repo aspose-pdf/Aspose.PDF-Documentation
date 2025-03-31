@@ -83,7 +83,7 @@ sitemap:
 
 ## PDF/A標準のPDFドキュメントを検証する（A 1AおよびA 1B）
 
-PDFドキュメントをPDF/A-1aまたはPDF/A-1b互換性のために検証するには、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのValidateメソッドを使用します。このメソッドでは、結果を保存するファイルの名前と必要な検証タイプ[PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat)列挙型：PDF_A_1AまたはPDF_A_1Bを指定できます。
+PDFドキュメントをPDF/A-1aまたはPDF/A-1b互換性のために検証するには、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのValidateメソッドを使用します。このメソッドでは、結果を保存するファイルの名前と必要な検証タイプ[PdfFormat](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pdfformat)列挙型：PDF_A_1AまたはPDF_A_1Bを指定できます。
 
 {{% alert color="primary" %}}
 
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### TOC内のページ番号を非表示にする
 
-TOC内の見出しとともにページ番号を表示したくない場合は、[TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo)クラスの[IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers)プロパティをfalseとして使用できます。目次内のページ番号を非表示にするための次のコードスニペットを確認してください。
+TOC内の見出しとともにページ番号を表示したくない場合は、[TOCInfo](https://reference.aspose.com/pdf/ja/net/aspose.pdf/tocinfo)クラスの[IsShowPageNumbers](https://reference.aspose.com/pdf/ja/net/aspose.pdf/tocinfo/properties/isshowpagenumbers)プロパティをfalseとして使用できます。目次内のページ番号を非表示にするための次のコードスニペットを確認してください。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -453,7 +453,7 @@ private static void SetExpiryDate()
 
 顧客から、開発者がPDFファイル生成の進捗を判断できる機能を追加するように依頼されました。そのリクエストに対する回答は以下の通りです。
 
-[DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions)クラスの[CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler)フィールドを使用すると、PDF生成の進捗を判断できます。ハンドラーには次のタイプがあります：
+[DocSaveOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/docsaveoptions)クラスの[CustomerProgressHandler](https://reference.aspose.com/pdf/ja/net/aspose.pdf/docsaveoptions/fields/customprogresshandler)フィールドを使用すると、PDF生成の進捗を判断できます。ハンドラーには次のタイプがあります：
 
 - DocSaveOptions.ConversionProgessEventHandler。
 - DocSaveOptions.ProgressEventHandlerInfo。

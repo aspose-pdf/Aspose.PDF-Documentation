@@ -77,7 +77,7 @@ draft: false
 
 ## Verificar se o Arquivo PDF está Assinado Usando uma Assinatura
 
-Para verificar se um arquivo PDF está assinado usando uma [assinatura específica](/pdf/pt/net/working-with-signature-in-a-pdf-file/), use o método VerifySigned da classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). Este método requer o nome da assinatura e retorna verdadeiro se o PDF estiver assinado com esse nome de assinatura. Também é possível verificar se um [PDF está assinado](/pdf/pt/net/working-with-signature-in-a-pdf-file/), sem verificar com qual assinatura ele está assinado.
+Para verificar se um arquivo PDF está assinado usando uma [assinatura específica](/pdf/pt/net/working-with-signature-in-a-pdf-file/), use o método VerifySigned da classe [PdfFileSignature](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature). Este método requer o nome da assinatura e retorna verdadeiro se o PDF estiver assinado com esse nome de assinatura. Também é possível verificar se um [PDF está assinado](/pdf/pt/net/working-with-signature-in-a-pdf-file/), sem verificar com qual assinatura ele está assinado.
 
 ### Verificando se um PDF está Assinado com uma Assinatura Dada
 
@@ -127,7 +127,7 @@ private static void IsPdfSignedWithGivenSignature()
 
 ## Verificar se a Assinatura é Válida
 
-O método [VerifySignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) da classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) permite validar uma assinatura específica. Este método requer o nome da assinatura como entrada e retorna verdadeiro se a assinatura for válida. O seguinte trecho de código mostra como validar uma assinatura.
+O método [VerifySignature](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) da classe [PdfFileSignature](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature) permite validar uma assinatura específica. Este método requer o nome da assinatura como entrada e retorna verdadeiro se a assinatura for válida. O seguinte trecho de código mostra como validar uma assinatura.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

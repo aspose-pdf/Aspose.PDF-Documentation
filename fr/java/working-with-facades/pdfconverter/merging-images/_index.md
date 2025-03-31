@@ -8,7 +8,7 @@ lastmod: "2021-07-01"
 draft: false  
 ---
 
-Aspose.PDF 21.4 vous permet de combiner des images. La méthode [Merge Images](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) vérifie le contenu d'un dossier spécifique et travaille avec le type de fichiers spécifié qu'il contient. Lors du travail avec la fusion d'images, nous spécifions 'inputImagesStreams', le format d'image et le mode de fusion d'image (par exemple - vertical) de notre fichier. Ensuite, nous enregistrons notre résultat dans FileOutputStream.
+Aspose.PDF 21.4 vous permet de combiner des images. La méthode [Merge Images](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) vérifie le contenu d'un dossier spécifique et travaille avec le type de fichiers spécifié qu'il contient. Lors du travail avec la fusion d'images, nous spécifions 'inputImagesStreams', le format d'image et le mode de fusion d'image (par exemple - vertical) de notre fichier. Ensuite, nous enregistrons notre résultat dans FileOutputStream.
 
 Suivez l'extrait de code suivant pour résoudre votre tâche :
 

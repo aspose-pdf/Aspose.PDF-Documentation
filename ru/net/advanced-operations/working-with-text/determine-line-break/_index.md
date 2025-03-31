@@ -82,7 +82,7 @@ sitemap:
 
 ## Отслеживание переноса строк многострочным TextFragment
 
-Aspose.PDF for .NET предлагает ведение журнала (отслеживания) фоновой обработки (переноса строк) многострочных текстовых фрагментов в сценариях добавления текста. Вы можете использовать метод [GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)() класса [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page), чтобы отслеживать перенос строк текстового фрагмента:
+Aspose.PDF for .NET предлагает ведение журнала (отслеживания) фоновой обработки (переноса строк) многострочных текстовых фрагментов в сценариях добавления текста. Вы можете использовать метод [GetNotifications](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/methods/getnotifications)() класса [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page), чтобы отслеживать перенос строк текстового фрагмента:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

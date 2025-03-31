@@ -83,12 +83,12 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Mettre à jour les liens dans un fichier PDF
 
-Comme discuté dans Ajouter un hyperlien dans un fichier PDF, la classe [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) permet d'ajouter des liens dans un fichier PDF. Il existe également une classe similaire utilisée pour obtenir des liens existants à l'intérieur des fichiers PDF. Utilisez ceci si vous devez mettre à jour un lien existant. Pour mettre à jour un lien existant :
+Comme discuté dans Ajouter un hyperlien dans un fichier PDF, la classe [LinkAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/linkannotation) permet d'ajouter des liens dans un fichier PDF. Il existe également une classe similaire utilisée pour obtenir des liens existants à l'intérieur des fichiers PDF. Utilisez ceci si vous devez mettre à jour un lien existant. Pour mettre à jour un lien existant :
 
 1. Chargez un fichier PDF.
 1. Allez à une page spécifique dans le fichier PDF.
-1. Spécifiez la destination du lien en utilisant la propriété Destination de l'objet [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction).
-1. La page de destination est spécifiée en utilisant le constructeur [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination).
+1. Spécifiez la destination du lien en utilisant la propriété Destination de l'objet [GoToAction](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/gotoaction).
+1. La page de destination est spécifiée en utilisant le constructeur [XYZExplicitDestination](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/xyzexplicitdestination).
 
 ### Définir la cible du lien sur une page dans le même document
 
@@ -155,7 +155,7 @@ private static void UpdateLinkAnnotation()
 
 ### Définir la destination du lien sur une adresse web
 
-Pour mettre à jour l'hyperlien afin qu'il pointe vers une adresse web, instanciez l'objet [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) et passez-le à la propriété Action de LinkAnnotation. Le code suivant montre comment mettre à jour un lien dans un fichier PDF et définir sa cible sur une adresse web.
+Pour mettre à jour l'hyperlien afin qu'il pointe vers une adresse web, instanciez l'objet [GoToURIAction](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/gotouriaction) et passez-le à la propriété Action de LinkAnnotation. Le code suivant montre comment mettre à jour un lien dans un fichier PDF et définir sa cible sur une adresse web.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

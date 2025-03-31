@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-La clase [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) te permite convertir páginas de PDF a imágenes <abbr title="Archivo de Imagen Bitmap">BMP</abbr>. Esta clase proporciona un método llamado [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) que te permite convertir una página particular del archivo PDF al formato de imagen Bmp.
+La clase [BmpDevice](https://reference.aspose.com/pdf/es/net/aspose.pdf.devices/bmpdevice) te permite convertir páginas de PDF a imágenes <abbr title="Archivo de Imagen Bitmap">BMP</abbr>. Esta clase proporciona un método llamado [Process](https://reference.aspose.com/pdf/es/net/aspose.pdf.devices/bmpdevice/methods/process) que te permite convertir una página particular del archivo PDF al formato de imagen Bmp.
 
 {{% alert color="primary" %}}
 

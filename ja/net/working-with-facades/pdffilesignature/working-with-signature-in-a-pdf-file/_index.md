@@ -158,7 +158,7 @@ private static void ExtractSignatureImage()
 
 ## 場所と理由の抑制
 
-Aspose.PDFの機能は、デジタル署名インスタンスの柔軟な構成を可能にします。[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスは、PDFファイルに署名する機能を提供します。Signメソッドの実装により、PDFに署名し、このクラスに特定の署名オブジェクトを渡すことができます。Signメソッドには、出力デジタル署名のカスタマイズのための属性のセットが含まれています。結果の署名からいくつかのテキスト属性を抑制する必要がある場合は、それらを空のままにすることができます。以下のコードスニペットは、署名ブロックから場所と理由の2行を抑制する方法を示しています。
+Aspose.PDFの機能は、デジタル署名インスタンスの柔軟な構成を可能にします。[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスは、PDFファイルに署名する機能を提供します。Signメソッドの実装により、PDFに署名し、このクラスに特定の署名オブジェクトを渡すことができます。Signメソッドには、出力デジタル署名のカスタマイズのための属性のセットが含まれています。結果の署名からいくつかのテキスト属性を抑制する必要がある場合は、それらを空のままにすることができます。以下のコードスニペットは、署名ブロックから場所と理由の2行を抑制する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void SupressLocationReason()
 
 ## デジタル署名のカスタマイズ機能
 
-Aspose.PDF for .NETは、デジタル署名のカスタマイズ機能を提供します。[SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance)クラスのSignメソッドは、快適な使用のために6つのオーバーロードを実装しています。たとえば、SignatureCustomAppearanceクラスのインスタンスとそのプロパティ値を使用して、結果の署名を構成できます。以下のコードスニペットは、PDFの出力デジタル署名から「デジタル署名された」キャプションを非表示にする方法を示しています。
+Aspose.PDF for .NETは、デジタル署名のカスタマイズ機能を提供します。[SignatureCustomAppearance](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturecustomappearance)クラスのSignメソッドは、快適な使用のために6つのオーバーロードを実装しています。たとえば、SignatureCustomAppearanceクラスのインスタンスとそのプロパティ値を使用して、結果の署名を構成できます。以下のコードスニペットは、PDFの出力デジタル署名から「デジタル署名された」キャプションを非表示にする方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,7 +233,7 @@ Aspose.PDF for .NET APIを使用すると、次の3種類の署名のいずれ�
 - PKCS#7.
 - PKCS#12.
 
-提供される各署名には、便利な設定プロパティのセットが含まれています（ローカライズ、日付時刻形式、フォントファミリーなど）。[SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance)クラスは、対応する機能を提供します。以下のコードスニペットは、デジタル署名テキストの言語を変更する方法を示しています。
+提供される各署名には、便利な設定プロパティのセットが含まれています（ローカライズ、日付時刻形式、フォントファミリーなど）。[SignatureCustomAppearance](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturecustomappearance)クラスは、対応する機能を提供します。以下のコードスニペットは、デジタル署名テキストの言語を変更する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

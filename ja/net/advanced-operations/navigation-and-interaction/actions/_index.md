@@ -87,18 +87,18 @@ PDFファイルにハイパーリンクを追加することが可能で、読�
 
 PDFドキュメントにウェブハイパーリンクを追加するには：
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのオブジェクトを作成します。
-1. リンクを追加したい[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)クラスを取得します。
-1. Pageおよび[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle)オブジェクトを使用して[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)オブジェクトを作成します。矩形オブジェクトは、リンクを追加するページ上の位置を指定するために使用されます。
-1. Actionプロパティを、リモートURIの位置を指定する[GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction)オブジェクトに設定します。
-1. ハイパーリンクテキストを表示するには、[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)オブジェクトが配置されている位置に類似した位置にテキスト文字列を追加します。
+1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのオブジェクトを作成します。
+1. リンクを追加したい[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)クラスを取得します。
+1. Pageおよび[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf/rectangle)オブジェクトを使用して[LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)オブジェクトを作成します。矩形オブジェクトは、リンクを追加するページ上の位置を指定するために使用されます。
+1. Actionプロパティを、リモートURIの位置を指定する[GoToURIAction](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/gotouriaction)オブジェクトに設定します。
+1. ハイパーリンクテキストを表示するには、[LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)オブジェクトが配置されている位置に類似した位置にテキスト文字列を追加します。
 1. フリーテキストを追加するには：
 
-- [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation)オブジェクトをインスタンス化します。このオブジェクトもPageおよびRectangleオブジェクトを引数として受け入れるため、LinkAnnotationコンストラクタに対して指定された値を提供することが可能です。
-- [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation)オブジェクトのContentsプロパティを使用して、出力PDFに表示される文字列を指定します。
-- オプションで、[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)およびFreeTextAnnotationオブジェクトの両方の境界幅を0に設定して、PDFドキュメントに表示されないようにします。
-- [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)および[FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation)オブジェクトが定義されたら、これらのリンクを[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトのAnnotationsコレクションに追加します。
-- 最後に、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して、更新されたPDFを保存します。
+- [FreeTextAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/freetextannotation)オブジェクトをインスタンス化します。このオブジェクトもPageおよびRectangleオブジェクトを引数として受け入れるため、LinkAnnotationコンストラクタに対して指定された値を提供することが可能です。
+- [FreeTextAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/freetextannotation)オブジェクトのContentsプロパティを使用して、出力PDFに表示される文字列を指定します。
+- オプションで、[LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)およびFreeTextAnnotationオブジェクトの両方の境界幅を0に設定して、PDFドキュメントに表示されないようにします。
+- [LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)および[FreeTextAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/freetextannotation)オブジェクトが定義されたら、これらのリンクを[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトのAnnotationsコレクションに追加します。
+- 最後に、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して、更新されたPDFを保存します。
 
 次のコードスニペットは、PDFファイルにハイパーリンクを追加する方法を示しています。
 
@@ -188,9 +188,9 @@ private static void AddHyperlink()
 
 ## 同じPDF内のページへのハイパーリンクを作成する
 
-Aspose.PDF for .NETは、PDFの作成と操作に優れた機能を提供します。また、PDFページへのリンクを追加する機能も提供しており、リンクは別のPDFファイルのページ、ウェブURL、アプリケーションを起動するリンク、または同じPDFファイルのページにリンクすることができます。ローカルハイパーリンク（同じPDFファイル内のページへのリンク）を追加するには、[LocalHyperlink](https://reference.aspose.com/pdf/net/aspose.pdf/localhyperlink)というクラスがAspose.PDF名前空間に追加され、このクラスにはハイパーリンクのターゲット/宛先ページを指定するために使用されるTargetPageNumberというプロパティがあります。
+Aspose.PDF for .NETは、PDFの作成と操作に優れた機能を提供します。また、PDFページへのリンクを追加する機能も提供しており、リンクは別のPDFファイルのページ、ウェブURL、アプリケーションを起動するリンク、または同じPDFファイルのページにリンクすることができます。ローカルハイパーリンク（同じPDFファイル内のページへのリンク）を追加するには、[LocalHyperlink](https://reference.aspose.com/pdf/ja/net/aspose.pdf/localhyperlink)というクラスがAspose.PDF名前空間に追加され、このクラスにはハイパーリンクのターゲット/宛先ページを指定するために使用されるTargetPageNumberというプロパティがあります。
 
-ローカルハイパーリンクを追加するには、リンクをTextFragmentに関連付けるためにTextFragmentを作成する必要があります。[TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)クラスには、LocalHyperlinkインスタンスを関連付けるために使用されるHyperlinkというプロパティがあります。次のコードスニペットは、この要件を達成する手順を示しています。
+ローカルハイパーリンクを追加するには、リンクをTextFragmentに関連付けるためにTextFragmentを作成する必要があります。[TextFragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragment)クラスには、LocalHyperlinkインスタンスを関連付けるために使用されるHyperlinkというプロパティがあります。次のコードスニペットは、この要件を達成する手順を示しています。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -284,11 +284,11 @@ private static void AddHyperlink()
 
 リンクのURLを取得するには：
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成します。
-1. リンクを抽出したい[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)を取得します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector)クラスを使用して、指定されたページからすべての[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)オブジェクトを抽出します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector)オブジェクトを[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトのAcceptメソッドに渡します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector)オブジェクトのSelectedプロパティを使用して、すべての選択されたリンク注釈をIListオブジェクトに取得します。
+1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを作成します。
+1. リンクを抽出したい[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)を取得します。
+1. [AnnotationSelector](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationselector)クラスを使用して、指定されたページからすべての[LinkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)オブジェクトを抽出します。
+1. [AnnotationSelector](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationselector)オブジェクトを[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトのAcceptメソッドに渡します。
+1. [AnnotationSelector](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotationselector)オブジェクトのSelectedプロパティを使用して、すべての選択されたリンク注釈をIListオブジェクトに取得します。
 1. 最後に、LinkAnnotation ActionをGoToURIActionとして抽出します。
 
 次のコードスニペットは、PDFファイルからハイパーリンクの宛先（URL）を取得する方法を示しています。
@@ -368,7 +368,7 @@ private static void GetHyperlink()
 
 PDFファイル内のテキストと注釈/アクションは異なるエンティティで表されます。ページ上のテキストは単なる単語と文字のセットですが、注釈はハイパーリンクに固有のインタラクティビティをもたらします。
 
-URLコンテンツを見つけるには、注釈とテキストの両方を操作する必要があります。[Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation)オブジェクト自体にはテキストがなく、ページ上のテキストの下に位置しています。したがって、テキストを取得するには、AnnotationがURLの境界を提供し、TextオブジェクトがURLの内容を提供します。次のコードスニペットを参照してください。
+URLコンテンツを見つけるには、注釈とテキストの両方を操作する必要があります。[Annotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/annotation)オブジェクト自体にはテキストがなく、ページ上のテキストの下に位置しています。したがって、テキストを取得するには、AnnotationがURLの境界を提供し、TextオブジェクトがURLの内容を提供します。次のコードスニペットを参照してください。
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -459,8 +459,8 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 オープンアクションを削除するには：
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[OpenAction](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction)プロパティをnullに設定します。
-1. Documentオブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して、更新されたPDFを保存します。
+1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[OpenAction](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/openaction)プロパティをnullに設定します。
+1. Documentオブジェクトの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して、更新されたPDFを保存します。
 
 次のコードスニペットは、PDFファイルからドキュメントオープンアクションを削除する方法を示しています。
 
@@ -511,7 +511,7 @@ private static void RemoveOpenAction()
 
 Adobe ReaderなどのPDFビューアでPDFファイルを表示する際、ファイルは通常最初のページで開きます。ただし、ファイルを異なるページで開くように設定することも可能です。
 
-[XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination)クラスを使用すると、開きたいPDFファイル内のページを指定できます。GoToActionオブジェクトの値を[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのOpenActionプロパティに渡すと、ドキュメントはXYZExplicitDestinationオブジェクトに対して指定されたページで開きます。次のコードスニペットは、ドキュメントオープンアクションとしてページを指定する方法を示しています。
+[XYZExplicitDestination](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/xyzexplicitdestination)クラスを使用すると、開きたいPDFファイル内のページを指定できます。GoToActionオブジェクトの値を[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのOpenActionプロパティに渡すと、ドキュメントはXYZExplicitDestinationオブジェクトに対して指定されたページで開きます。次のコードスニペットは、ドキュメントオープンアクションとしてページを指定する方法を示しています。
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

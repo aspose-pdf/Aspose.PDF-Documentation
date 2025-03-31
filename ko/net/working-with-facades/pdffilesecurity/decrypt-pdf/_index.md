@@ -86,7 +86,7 @@ Aspose.PDF를 사용하여 문서의 잠금을 해제하고 이 링크에서 결
 
 {{% /alert %}}
 
-PDF 파일을 복호화하려면 [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) 객체를 생성한 다음 [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 메서드를 호출해야 합니다. 또한 [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 메서드에 소유자 비밀번호를 전달해야 합니다. 다음 코드 스니펫은 PDF 파일을 복호화하는 방법을 보여줍니다.
+PDF 파일을 복호화하려면 [PdfFileSecurity](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity) 객체를 생성한 다음 [DecryptFile](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 메서드를 호출해야 합니다. 또한 [DecryptFile](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 메서드에 소유자 비밀번호를 전달해야 합니다. 다음 코드 스니펫은 PDF 파일을 복호화하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -85,7 +85,7 @@ sitemap:
 
 Topik ini membantu Anda memahami cara mendapatkan properti jendela dokumen, aplikasi penampil, dan cara halaman ditampilkan. Untuk mengatur properti ini:
 
-Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Sekarang, Anda dapat mengatur properti objek Document, seperti
+Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Sekarang, Anda dapat mengatur properti objek Document, seperti
 
 - CenterWindow – Pusatkan jendela dokumen di layar. Default: false.
 - Direction – Urutan bacaan. Ini menentukan bagaimana halaman disusun saat ditampilkan berdampingan. Default: kiri ke kanan.
@@ -99,7 +99,7 @@ Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/net/
 
 Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Cuplikan kode berikut menunjukkan cara mendapatkan properti menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Cuplikan kode berikut menunjukkan cara mendapatkan properti menggunakan kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -154,7 +154,7 @@ private static void GetDocumentWindowProperties()
 
 Topik ini menjelaskan cara mengatur properti jendela dokumen, aplikasi penampil, dan tampilan halaman. Untuk mengatur berbagai properti ini:
 
-1. Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 1. Atur properti objek Document.
 1. Simpan file PDF yang diperbarui menggunakan metode Save.
 
@@ -171,7 +171,7 @@ Properti yang tersedia adalah:
 - PageLayout.
 - PageMode.
 
-Masing-masing digunakan dan dijelaskan dalam kode di bawah ini. Cuplikan kode berikut menunjukkan cara mengatur properti menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Masing-masing digunakan dan dijelaskan dalam kode di bawah ini. Cuplikan kode berikut menunjukkan cara mengatur properti menggunakan kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -229,7 +229,7 @@ private static void SetDocumentWindowProperties()
 
 Pembaca PDF mendukung [inti 14 font](https://en.wikipedia.org/wiki/PDF#Text) sehingga dokumen dapat ditampilkan dengan cara yang sama terlepas dari platform tempat dokumen ditampilkan. Ketika sebuah PDF berisi font yang bukan salah satu dari 14 font inti, sematkan font ke file PDF untuk menghindari penggantian font.
 
-Aspose.PDF for .NET mendukung penyematan font dalam file PDF yang ada. Anda dapat menyematkan font lengkap atau subset dari font. Untuk menyematkan font, buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Kemudian gunakan kelas [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) untuk menyematkan font ke dalam file PDF. Untuk menyematkan font lengkap, gunakan properti IsEmbeded dari kelas Font; untuk menggunakan subset dari font, gunakan properti IsSubset.
+Aspose.PDF for .NET mendukung penyematan font dalam file PDF yang ada. Anda dapat menyematkan font lengkap atau subset dari font. Untuk menyematkan font, buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Kemudian gunakan kelas [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/id/net/aspose.pdf.text) untuk menyematkan font ke dalam file PDF. Untuk menyematkan font lengkap, gunakan properti IsEmbeded dari kelas Font; untuk menggunakan subset dari font, gunakan properti IsSubset.
 
 {{% alert color="primary" %}}
 
@@ -241,7 +241,7 @@ Cuplikan kode berikut menunjukkan cara menyematkan font dalam file PDF.
 
 ### Menyematkan Font Tipe 1 Standar
 
-Beberapa dokumen PDF memiliki font dari set font khusus Adobe. Font dari set ini disebut "Font Tipe 1 Standar". Set ini mencakup 14 font dan penyematan jenis font ini memerlukan penggunaan bendera khusus yaitu [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). Berikut adalah cuplikan kode yang dapat digunakan untuk mendapatkan dokumen dengan semua font disematkan termasuk Font Tipe 1 Standar:
+Beberapa dokumen PDF memiliki font dari set font khusus Adobe. Font dari set ini disebut "Font Tipe 1 Standar". Set ini mencakup 14 font dan penyematan jenis font ini memerlukan penggunaan bendera khusus yaitu [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/embedstandardfonts). Berikut adalah cuplikan kode yang dapat digunakan untuk mendapatkan dokumen dengan semua font disematkan termasuk Font Tipe 1 Standar:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
 
 ### Mendapatkan Semua Font dari Dokumen PDF
 
-Jika Anda ingin mendapatkan semua font dari dokumen PDF, Anda dapat menggunakan metode FontUtilities.GetAllFonts() yang disediakan dalam kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Silakan periksa cuplikan kode berikut untuk mendapatkan semua font dari dokumen PDF yang ada:
+Jika Anda ingin mendapatkan semua font dari dokumen PDF, Anda dapat menggunakan metode FontUtilities.GetAllFonts() yang disediakan dalam kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Silakan periksa cuplikan kode berikut untuk mendapatkan semua font dari dokumen PDF yang ada:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -450,7 +450,7 @@ private static void SetFontSubsetStrategy()
 
 Terkadang, Anda ingin menentukan apa faktor zoom saat ini dari dokumen PDF. Dengan Aspose.Pdf, Anda dapat mengetahui nilai saat ini serta mengatur satu.
 
-Properti Destination dari kelas [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) memungkinkan Anda untuk mendapatkan nilai zoom yang terkait dengan file PDF. Demikian pula, dapat digunakan untuk mengatur faktor zoom file.
+Properti Destination dari kelas [GoToAction](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/gotoaction) memungkinkan Anda untuk mendapatkan nilai zoom yang terkait dengan file PDF. Demikian pula, dapat digunakan untuk mengatur faktor zoom file.
 
 #### Mengatur Faktor Zoom
 

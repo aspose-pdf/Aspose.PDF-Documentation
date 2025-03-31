@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Si vous souhaitez supprimer un certain nombre de pages du fichier PDF qui se trouve sur le disque, vous pouvez utiliser la surcharge de la méthode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) qui prend les trois paramètres suivants : chemin du fichier d'entrée, tableau des numéros de pages à supprimer, et chemin du fichier PDF de sortie. Le deuxième paramètre est un tableau d'entiers représentant toutes les pages qui doivent être supprimées. Les pages spécifiées sont supprimées du fichier d'entrée et le résultat est enregistré en tant que fichier de sortie. Le code suivant vous montre comment supprimer des pages PDF en utilisant des chemins de fichiers.
+Si vous souhaitez supprimer un certain nombre de pages du fichier PDF qui se trouve sur le disque, vous pouvez utiliser la surcharge de la méthode [Delete](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) qui prend les trois paramètres suivants : chemin du fichier d'entrée, tableau des numéros de pages à supprimer, et chemin du fichier PDF de sortie. Le deuxième paramètre est un tableau d'entiers représentant toutes les pages qui doivent être supprimées. Les pages spécifiées sont supprimées du fichier d'entrée et le résultat est enregistré en tant que fichier de sortie. Le code suivant vous montre comment supprimer des pages PDF en utilisant des chemins de fichiers.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void DeletePages()
 
 ## Supprimer des pages PDF en utilisant des flux
 
-La méthode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) fournit également une surcharge qui vous permet de supprimer les pages du fichier PDF d'entrée, tandis que les fichiers d'entrée et de sortie sont dans les flux. Cette surcharge prend les trois paramètres suivants : flux d'entrée, tableau d'entiers des pages PDF à supprimer, et flux de sortie. Le code suivant vous montre comment supprimer des pages PDF en utilisant des flux.
+La méthode [Delete](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) fournit également une surcharge qui vous permet de supprimer les pages du fichier PDF d'entrée, tandis que les fichiers d'entrée et de sortie sont dans les flux. Cette surcharge prend les trois paramètres suivants : flux d'entrée, tableau d'entiers des pages PDF à supprimer, et flux de sortie. Le code suivant vous montre comment supprimer des pages PDF en utilisant des flux.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

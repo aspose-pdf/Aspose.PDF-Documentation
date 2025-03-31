@@ -84,13 +84,13 @@ sitemap:
 
 تعمل مقتطفات التعليمات البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-تحتوي فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) على طريقة SetPageSize(...) التي تتيح لك تعيين حجم الصفحة. يقوم مقتطف التعليمات البرمجية أدناه بتحديث أبعاد الصفحة في بضع خطوات سهلة:
+تحتوي فئة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) على طريقة SetPageSize(...) التي تتيح لك تعيين حجم الصفحة. يقوم مقتطف التعليمات البرمجية أدناه بتحديث أبعاد الصفحة في بضع خطوات سهلة:
 
 1. تحميل ملف PDF المصدر.
-1. الحصول على الصفحات في كائن [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. الحصول على الصفحات في كائن [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection).
 1. الحصول على صفحة معينة.
 1. استدعاء طريقة SetPageSize(..) لتحديث أبعادها.
-1. استدعاء طريقة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) لحفظ(..) لتوليد ملف PDF بأبعاد صفحة محدثة.
+1. استدعاء طريقة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) لحفظ(..) لتوليد ملف PDF بأبعاد صفحة محدثة.
 
 {{% alert color="primary" %}}
 

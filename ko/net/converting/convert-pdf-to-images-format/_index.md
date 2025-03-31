@@ -272,15 +272,15 @@ private static void ConvertPDFtoTiffBradleyBinarization()
 
 `ImageDevice`는 `BmpDevice`, `JpegDevice`, `GifDevice`, `PngDevice` 및 `EmfDevice`의 조상입니다.
 
-- [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) 클래스는 PDF 페이지를 <abbr title="Bitmap Image File">BMP</abbr> 이미지로 변환할 수 있게 해줍니다.
-- [EmfDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/emfdevice) 클래스는 PDF 페이지를 <abbr title="Enhanced Meta File">EMF</abbr> 이미지로 변환할 수 있게 해줍니다.
-- [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) 클래스는 PDF 페이지를 JPEG 이미지로 변환할 수 있게 해줍니다.
-- [PngDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice) 클래스는 PDF 페이지를 <abbr title="Portable Network Graphics">PNG</abbr> 이미지로 변환할 수 있게 해줍니다.
-- [GifDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/gifdevice) 클래스는 PDF 페이지를 <abbr title="Graphics Interchange Format">GIF</abbr> 이미지로 변환할 수 있게 해줍니다.
+- [BmpDevice](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices/bmpdevice) 클래스는 PDF 페이지를 <abbr title="Bitmap Image File">BMP</abbr> 이미지로 변환할 수 있게 해줍니다.
+- [EmfDevice](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices/emfdevice) 클래스는 PDF 페이지를 <abbr title="Enhanced Meta File">EMF</abbr> 이미지로 변환할 수 있게 해줍니다.
+- [JpegDevice](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices/jpegdevice) 클래스는 PDF 페이지를 JPEG 이미지로 변환할 수 있게 해줍니다.
+- [PngDevice](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices/pngdevice) 클래스는 PDF 페이지를 <abbr title="Portable Network Graphics">PNG</abbr> 이미지로 변환할 수 있게 해줍니다.
+- [GifDevice](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices/gifdevice) 클래스는 PDF 페이지를 <abbr title="Graphics Interchange Format">GIF</abbr> 이미지로 변환할 수 있게 해줍니다.
 
 PDF 페이지를 이미지로 변환하는 방법을 살펴보겠습니다.
 
-`BmpDevice` 클래스는 PDF 파일의 특정 페이지를 BMP 이미지 형식으로 변환할 수 있는 [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process)라는 메서드를 제공합니다. 다른 클래스들도 동일한 메서드를 가지고 있습니다. 따라서 PDF 페이지를 이미지로 변환해야 할 경우, 필요한 클래스를 인스턴스화하기만 하면 됩니다.
+`BmpDevice` 클래스는 PDF 파일의 특정 페이지를 BMP 이미지 형식으로 변환할 수 있는 [Process](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices/bmpdevice/methods/process)라는 메서드를 제공합니다. 다른 클래스들도 동일한 메서드를 가지고 있습니다. 따라서 PDF 페이지를 이미지로 변환해야 할 경우, 필요한 클래스를 인스턴스화하기만 하면 됩니다.
 
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
@@ -375,7 +375,7 @@ Aspose.PDF for .NET는 기능과 품질을 조사할 수 있는 온라인 무료
 
 SVG 이미지와 그 동작은 XML 텍스트 파일로 정의됩니다. 이는 검색, 인덱싱, 스크립팅이 가능하며 필요할 경우 압축할 수 있음을 의미합니다. XML 파일로서 SVG 이미지는 모든 텍스트 편집기로 생성 및 편집할 수 있지만, Inkscape와 같은 드로잉 프로그램을 사용하여 생성하는 것이 더 편리합니다.
 
-Aspose.PDF for .NET는 SVG 이미지를 PDF 형식으로 변환하는 기능을 지원하며, PDF 파일을 SVG 형식으로 변환하는 기능도 제공합니다. 이 요구 사항을 충족하기 위해 [`SvgSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/svgsaveoptions/methods/index) 클래스가 Aspose.PDF 네임스페이스에 도입되었습니다. SvgSaveOptions의 객체를 인스턴스화하고 이를 [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메서드의 두 번째 인수로 전달합니다.
+Aspose.PDF for .NET는 SVG 이미지를 PDF 형식으로 변환하는 기능을 지원하며, PDF 파일을 SVG 형식으로 변환하는 기능도 제공합니다. 이 요구 사항을 충족하기 위해 [`SvgSaveOptions`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/svgsaveoptions/methods/index) 클래스가 Aspose.PDF 네임스페이스에 도입되었습니다. SvgSaveOptions의 객체를 인스턴스화하고 이를 [`Document.Save(..)`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save/index) 메서드의 두 번째 인수로 전달합니다.
 
 다음 코드 스니펫은 .NET에서 PDF 파일을 SVG 형식으로 변환하는 단계를 보여줍니다.
 

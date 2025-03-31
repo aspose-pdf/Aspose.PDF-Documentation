@@ -86,7 +86,7 @@ Anda dapat mencoba membuka kunci dokumen menggunakan Aspose.PDF dan mendapatkan 
 
 {{% /alert %}}
 
-Untuk mendekripsi file PDF, Anda perlu membuat objek [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) dan kemudian memanggil metode [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Anda juga perlu melewatkan kata sandi pemilik ke metode [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Potongan kode berikut menunjukkan kepada Anda cara mendekripsi file PDF.
+Untuk mendekripsi file PDF, Anda perlu membuat objek [PdfFileSecurity](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity) dan kemudian memanggil metode [DecryptFile](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Anda juga perlu melewatkan kata sandi pemilik ke metode [DecryptFile](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Potongan kode berikut menunjukkan kepada Anda cara mendekripsi file PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

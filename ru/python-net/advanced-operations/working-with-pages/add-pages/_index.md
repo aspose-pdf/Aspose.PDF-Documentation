@@ -89,8 +89,8 @@ Aspose.PDF for Python via .NET позволяет вставить страни�
 
 1. Создайте объект класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с входным PDF-файлом.
 
-1. Вызовите метод [insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) коллекции [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) с указанным индексом.
-1. Сохраните выходной PDF, используя метод [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Вызовите метод [insert](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection/methods/insert) коллекции [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) с указанным индексом.
+1. Сохраните выходной PDF, используя метод [save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
 
 Следующий фрагмент кода показывает, как вставить страницу в PDF файл.
 

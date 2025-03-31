@@ -79,9 +79,9 @@ sitemap:
 
 ## 注釈の変更
 
-[ModifyAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations)メソッドを使用すると、注釈の基本属性、つまり件名、変更日、著者、注釈の色、およびオープンフラグを変更できます。また、ModifyAnnotationsメソッドを使用して著者を直接設定することもできます。このクラスは、注釈を削除するための2つのオーバーロードメソッドも提供します。最初のメソッドであるDeleteAnnotationsは、PDFファイルからすべての注釈を削除します。
+[ModifyAnnotations](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations)メソッドを使用すると、注釈の基本属性、つまり件名、変更日、著者、注釈の色、およびオープンフラグを変更できます。また、ModifyAnnotationsメソッドを使用して著者を直接設定することもできます。このクラスは、注釈を削除するための2つのオーバーロードメソッドも提供します。最初のメソッドであるDeleteAnnotationsは、PDFファイルからすべての注釈を削除します。
 
-たとえば、次のコードでは、[ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor)を使用して注釈の著者を変更することを考えます。
+たとえば、次のコードでは、[ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor)を使用して注釈の著者を変更することを考えます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -87,18 +87,18 @@ PDF 파일에 하이퍼링크를 추가할 수 있으며, 이는 독자가 PDF�
 
 PDF 문서에 웹 하이퍼링크를 추가하려면:
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스 객체를 생성합니다.
-1. 링크를 추가할 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스를 가져옵니다.
-1. Page 및 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) 객체를 사용하여 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 객체를 생성합니다. 사각형 객체는 링크가 추가될 페이지의 위치를 지정하는 데 사용됩니다.
-1. Action 속성을 원격 URI의 위치를 지정하는 [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) 객체로 설정합니다.
-1. 하이퍼링크 텍스트를 표시하려면 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 객체가 배치된 위치와 유사한 위치에 텍스트 문자열을 추가합니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스 객체를 생성합니다.
+1. 링크를 추가할 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 클래스를 가져옵니다.
+1. Page 및 [Rectangle](https://reference.aspose.com/pdf/ko/net/aspose.pdf/rectangle) 객체를 사용하여 [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 객체를 생성합니다. 사각형 객체는 링크가 추가될 페이지의 위치를 지정하는 데 사용됩니다.
+1. Action 속성을 원격 URI의 위치를 지정하는 [GoToURIAction](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/gotouriaction) 객체로 설정합니다.
+1. 하이퍼링크 텍스트를 표시하려면 [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 객체가 배치된 위치와 유사한 위치에 텍스트 문자열을 추가합니다.
 1. 자유 텍스트를 추가하려면:
 
-- [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 객체를 인스턴스화합니다. 이 객체는 Page 및 Rectangle 객체를 인수로 받아들이므로 LinkAnnotation 생성자에 지정된 값과 동일한 값을 제공할 수 있습니다.
-- [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 객체의 Contents 속성을 사용하여 출력 PDF에 표시될 문자열을 지정합니다.
-- 선택적으로, [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 및 FreeTextAnnotation 객체의 테두리 너비를 0으로 설정하여 PDF 문서에 나타나지 않도록 합니다.
-- [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 및 [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 객체가 정의되면 이러한 링크를 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체의 Annotations 컬렉션에 추가합니다.
-- 마지막으로, [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장합니다.
+- [FreeTextAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/freetextannotation) 객체를 인스턴스화합니다. 이 객체는 Page 및 Rectangle 객체를 인수로 받아들이므로 LinkAnnotation 생성자에 지정된 값과 동일한 값을 제공할 수 있습니다.
+- [FreeTextAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/freetextannotation) 객체의 Contents 속성을 사용하여 출력 PDF에 표시될 문자열을 지정합니다.
+- 선택적으로, [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 및 FreeTextAnnotation 객체의 테두리 너비를 0으로 설정하여 PDF 문서에 나타나지 않도록 합니다.
+- [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 및 [FreeTextAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/freetextannotation) 객체가 정의되면 이러한 링크를 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체의 Annotations 컬렉션에 추가합니다.
+- 마지막으로, [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장합니다.
 
 다음 코드 스니펫은 PDF 파일에 하이퍼링크를 추가하는 방법을 보여줍니다.
 
@@ -188,9 +188,9 @@ private static void AddHyperlink()
 
 ## 동일한 PDF의 페이지에 하이퍼링크 만들기
 
-Aspose.PDF for .NET은 PDF 생성 및 조작에 훌륭한 기능을 제공합니다. 또한 PDF 페이지에 링크를 추가하는 기능을 제공하며, 링크는 다른 PDF 파일의 페이지, 웹 URL, 애플리케이션을 실행하는 링크 또는 동일한 PDF 파일의 페이지로 연결될 수 있습니다. 동일한 PDF 파일의 페이지에 대한 로컬 하이퍼링크를 추가하기 위해 [LocalHyperlink](https://reference.aspose.com/pdf/net/aspose.pdf/localhyperlink)라는 클래스가 Aspose.PDF 네임스페이스에 추가되었으며, 이 클래스에는 하이퍼링크의 대상/목적 페이지를 지정하는 데 사용되는 TargetPageNumber라는 속성이 있습니다.
+Aspose.PDF for .NET은 PDF 생성 및 조작에 훌륭한 기능을 제공합니다. 또한 PDF 페이지에 링크를 추가하는 기능을 제공하며, 링크는 다른 PDF 파일의 페이지, 웹 URL, 애플리케이션을 실행하는 링크 또는 동일한 PDF 파일의 페이지로 연결될 수 있습니다. 동일한 PDF 파일의 페이지에 대한 로컬 하이퍼링크를 추가하기 위해 [LocalHyperlink](https://reference.aspose.com/pdf/ko/net/aspose.pdf/localhyperlink)라는 클래스가 Aspose.PDF 네임스페이스에 추가되었으며, 이 클래스에는 하이퍼링크의 대상/목적 페이지를 지정하는 데 사용되는 TargetPageNumber라는 속성이 있습니다.
 
-로컬 하이퍼링크를 추가하려면, 링크를 TextFragment와 연결할 수 있도록 TextFragment를 생성해야 합니다. [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) 클래스에는 LocalHyperlink 인스턴스를 연결하는 데 사용되는 Hyperlink라는 속성이 있습니다. 다음 코드 스니펫은 이 요구 사항을 충족하는 단계를 보여줍니다.
+로컬 하이퍼링크를 추가하려면, 링크를 TextFragment와 연결할 수 있도록 TextFragment를 생성해야 합니다. [TextFragment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textfragment) 클래스에는 LocalHyperlink 인스턴스를 연결하는 데 사용되는 Hyperlink라는 속성이 있습니다. 다음 코드 스니펫은 이 요구 사항을 충족하는 단계를 보여줍니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -284,11 +284,11 @@ private static void AddHyperlink()
 
 링크의 URL을 가져오려면:
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성합니다.
-1. 링크를 추출할 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)를 가져옵니다.
-1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) 클래스를 사용하여 지정된 페이지에서 모든 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 객체를 추출합니다.
-1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) 객체를 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체의 Accept 메서드에 전달합니다.
-1. [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) 객체의 Selected 속성을 사용하여 모든 선택된 링크 주석을 IList 객체로 가져옵니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성합니다.
+1. 링크를 추출할 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page)를 가져옵니다.
+1. [AnnotationSelector](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationselector) 클래스를 사용하여 지정된 페이지에서 모든 [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 객체를 추출합니다.
+1. [AnnotationSelector](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationselector) 객체를 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체의 Accept 메서드에 전달합니다.
+1. [AnnotationSelector](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotationselector) 객체의 Selected 속성을 사용하여 모든 선택된 링크 주석을 IList 객체로 가져옵니다.
 1. 마지막으로, LinkAnnotation Action을 GoToURIAction으로 추출합니다.
 
 다음 코드 스니펫은 PDF 파일에서 하이퍼링크 대상을(URL) 가져오는 방법을 보여줍니다.
@@ -368,7 +368,7 @@ private static void GetHyperlink()
 
 PDF 파일의 텍스트와 주석/작업은 서로 다른 엔터티로 표현됩니다. 페이지의 텍스트는 단어와 문자 집합일 뿐이며, 주석은 하이퍼링크에 내재된 것과 같은 상호작용을 제공합니다.
 
-URL 콘텐츠를 찾으려면 주석과 텍스트 모두를 작업해야 합니다. [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) 객체는 자체적으로 텍스트를 가지고 있지 않지만 페이지의 텍스트 아래에 위치합니다. 따라서 텍스트를 얻으려면 Annotation이 URL의 경계를 제공하고, Text 객체가 URL 내용을 제공합니다. 다음 코드 스니펫을 참조하십시오.
+URL 콘텐츠를 찾으려면 주석과 텍스트 모두를 작업해야 합니다. [Annotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/annotation) 객체는 자체적으로 텍스트를 가지고 있지 않지만 페이지의 텍스트 아래에 위치합니다. 따라서 텍스트를 얻으려면 Annotation이 URL의 경계를 제공하고, Text 객체가 URL 내용을 제공합니다. 다음 코드 스니펫을 참조하십시오.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -459,8 +459,8 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 열기 작업을 제거하려면:
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [OpenAction](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction) 속성을 null로 설정합니다.
-1. Document 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장합니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [OpenAction](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/openaction) 속성을 null로 설정합니다.
+1. Document 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장합니다.
 
 다음 코드 스니펫은 PDF 파일에서 문서 열기 작업을 제거하는 방법을 보여줍니다.
 
@@ -511,7 +511,7 @@ private static void RemoveOpenAction()
 
 Adobe Reader와 같은 PDF 뷰어에서 PDF 파일을 볼 때, 파일은 일반적으로 첫 페이지에서 열립니다. 그러나 파일을 다른 페이지에서 열리도록 설정할 수 있습니다.
 
-[XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) 클래스는 열고자 하는 PDF 파일의 페이지를 지정할 수 있게 해줍니다. GoToAction 객체 값을 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 OpenAction 속성에 전달하면, 문서는 XYZExplicitDestination 객체에 대해 지정된 페이지에서 열립니다. 다음 코드 스니펫은 문서 열기 작업으로 페이지를 지정하는 방법을 보여줍니다.
+[XYZExplicitDestination](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/xyzexplicitdestination) 클래스는 열고자 하는 PDF 파일의 페이지를 지정할 수 있게 해줍니다. GoToAction 객체 값을 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 OpenAction 속성에 전달하면, 문서는 XYZExplicitDestination 객체에 대해 지정된 페이지에서 열립니다. 다음 코드 스니펫은 문서 열기 작업으로 페이지를 지정하는 방법을 보여줍니다.
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

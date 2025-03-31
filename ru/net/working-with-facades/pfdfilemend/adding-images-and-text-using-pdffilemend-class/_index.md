@@ -75,21 +75,21 @@ draft: false
 }
 </script>
 
-[PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) класс может помочь вам добавить изображения и текст в существующий PDF-документ в указанном месте. Он предоставляет два метода с названиями [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) и [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index). Метод [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) позволяет добавлять изображения форматов JPG, GIF, PNG и BMP. Метод [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) принимает аргумент типа [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) и добавляет его в существующий PDF-файл. Изображения и текст могут быть добавлены в прямоугольную область, заданную координатами нижнего левого и верхнего правого углов. При добавлении изображений вы можете указать либо путь к файлу изображения, либо поток файла изображения. Чтобы указать номер страницы, на которую нужно добавить изображение или текст, оба этих метода предоставляют аргумент номера страницы. Таким образом, вы можете не только добавлять изображения и текст в указанном месте, но и на указанной странице.
+[PdfFileMend](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend) класс может помочь вам добавить изображения и текст в существующий PDF-документ в указанном месте. Он предоставляет два метода с названиями [AddImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) и [AddText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend/methods/addtext/index). Метод [AddImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) позволяет добавлять изображения форматов JPG, GIF, PNG и BMP. Метод [AddText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) принимает аргумент типа [FormattedText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formattedtext) и добавляет его в существующий PDF-файл. Изображения и текст могут быть добавлены в прямоугольную область, заданную координатами нижнего левого и верхнего правого углов. При добавлении изображений вы можете указать либо путь к файлу изображения, либо поток файла изображения. Чтобы указать номер страницы, на которую нужно добавить изображение или текст, оба этих метода предоставляют аргумент номера страницы. Таким образом, вы можете не только добавлять изображения и текст в указанном месте, но и на указанной странице.
 
-Изображения являются важной частью содержания PDF-документа. Манипуляция изображениями в существующем PDF-файле является распространенной задачей для людей, работающих с PDF-файлами. В этой статье мы рассмотрим, как можно манипулировать изображениями в существующем PDF-файле с помощью [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) класса [Aspose.PDF for .NET](/pdf/ru/net/). Все операции, связанные с изображениями, в пространстве имен [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades), были собраны в этой статье.
+Изображения являются важной частью содержания PDF-документа. Манипуляция изображениями в существующем PDF-файле является распространенной задачей для людей, работающих с PDF-файлами. В этой статье мы рассмотрим, как можно манипулировать изображениями в существующем PDF-файле с помощью [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) класса [Aspose.PDF for .NET](/pdf/ru/net/). Все операции, связанные с изображениями, в пространстве имен [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades), были собраны в этой статье.
 
 ## Подробности реализации
 
-[Пространство имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) позволяет добавлять новые изображения в существующий PDF-файл. Вы также можете заменить или удалить существующее изображение. PDF-файл также может быть преобразован в изображения. Вы можете либо преобразовать каждую отдельную страницу в одно изображение, либо весь PDF-файл в одно изображение. Он поддерживает форматы, такие как JPEG, BMP, PNG и TIFF и т.д. Вы также можете извлекать изображения из PDF-файла. Вы можете использовать четыре класса из [пространства имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) для выполнения этих операций, а именно [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend), [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor), [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) и [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter).
+[Пространство имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) позволяет добавлять новые изображения в существующий PDF-файл. Вы также можете заменить или удалить существующее изображение. PDF-файл также может быть преобразован в изображения. Вы можете либо преобразовать каждую отдельную страницу в одно изображение, либо весь PDF-файл в одно изображение. Он поддерживает форматы, такие как JPEG, BMP, PNG и TIFF и т.д. Вы также можете извлекать изображения из PDF-файла. Вы можете использовать четыре класса из [пространства имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) для выполнения этих операций, а именно [PdfFileMend](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend), [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor), [PdfExtractor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfextractor) и [PdfConverter](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfconverter).
 
 ## Операции с изображениями
 
-В этом разделе мы подробно рассмотрим эти операции с изображениями. Мы также увидим фрагменты кода, чтобы показать использование связанных классов и методов. Прежде всего, давайте посмотрим, как добавить изображение в существующий PDF-файл. Мы можем использовать метод [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) класса [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) для добавления нового изображения. С помощью этого метода вы можете не только указать номер страницы, на которую хотите добавить изображение, но и указать местоположение изображения.
+В этом разделе мы подробно рассмотрим эти операции с изображениями. Мы также увидим фрагменты кода, чтобы показать использование связанных классов и методов. Прежде всего, давайте посмотрим, как добавить изображение в существующий PDF-файл. Мы можем использовать метод [AddImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) класса [PdfFileMend](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend) для добавления нового изображения. С помощью этого метода вы можете не только указать номер страницы, на которую хотите добавить изображение, но и указать местоположение изображения.
 
 ## Добавить изображение в существующий PDF-файл (Facades)
 
-Вы можете использовать метод [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) класса [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend). Метод [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) требует изображение для добавления, номер страницы, на которую нужно добавить изображение, и информацию о координатах. После этого сохраните обновленный PDF-файл, используя метод [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/close).
+Вы можете использовать метод [AddImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend/methods/addimage) класса [PdfFileMend](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend). Метод [AddImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilemend/methods/addimage) требует изображение для добавления, номер страницы, на которую нужно добавить изображение, и информацию о координатах. После этого сохраните обновленный PDF-файл, используя метод [Close](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/close).
 
 В следующем примере мы добавляем изображение на страницу, используя imageStream:
 
@@ -124,7 +124,7 @@ private static void AddImage01()
 
 ![Добавить изображение](/pdf/ru/net/images/add_image1.png)
 
-С помощью [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1) мы можем наложить одно изображение на другое:
+С помощью [CompositingParameters](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdffilemend/addimage/methods/1) мы можем наложить одно изображение на другое:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +248,7 @@ private static void AddImage04()
 
 ## Добавить текст в существующий PDF-файл (facades)
 
-Мы можем добавлять текст несколькими способами. Рассмотрим первый. Мы берем [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) и добавляем его на страницу. Затем мы указываем координаты нижнего левого угла, а затем добавляем наш текст на страницу.
+Мы можем добавлять текст несколькими способами. Рассмотрим первый. Мы берем [FormattedText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formattedtext) и добавляем его на страницу. Затем мы указываем координаты нижнего левого угла, а затем добавляем наш текст на страницу.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -279,7 +279,7 @@ private static void AddText01()
 
 ![Добавить текст](/pdf/ru/net/images/add_text.png)
 
-Второй способ добавить [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). Кроме того, мы указываем прямоугольник, в который должен поместиться наш текст.
+Второй способ добавить [FormattedText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formattedtext). Кроме того, мы указываем прямоугольник, в который должен поместиться наш текст.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

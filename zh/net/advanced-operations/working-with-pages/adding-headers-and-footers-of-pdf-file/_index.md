@@ -84,7 +84,7 @@ sitemap:
 
 ## 在PDF文件的页眉中添加文本
 
-您可以使用[TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp)类在PDF文件的页眉中添加文本。TextStamp类提供了创建基于文本的印章所需的属性，如字体大小、字体样式和字体颜色等。为了在页眉中添加文本，您需要使用所需的属性创建一个Document对象和一个TextStamp对象。之后，您可以调用Page的AddStamp方法将文本添加到PDF的页眉中。
+您可以使用[TextStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/textstamp)类在PDF文件的页眉中添加文本。TextStamp类提供了创建基于文本的印章所需的属性，如字体大小、字体样式和字体颜色等。为了在页眉中添加文本，您需要使用所需的属性创建一个Document对象和一个TextStamp对象。之后，您可以调用Page的AddStamp方法将文本添加到PDF的页眉中。
 
 您需要以适当的方式设置TopMargin属性，以便将文本调整到PDF的页眉区域。您还需要将HorizontalAlignment设置为Center，将VerticalAlignment设置为Top。
 
@@ -164,7 +164,7 @@ private static void AddFooterText()
 
 ## 在PDF文件的页眉中添加图像
 
-您可以使用[ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp)类在PDF文件的页眉中添加图像。Image Stamp类提供了创建基于图像的印章所需的属性，如字体大小、字体样式和字体颜色等。为了在页眉中添加图像，您需要使用所需的属性创建一个Document对象和一个Image Stamp对象。之后，您可以调用[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp)方法将图像添加到PDF的页眉中。
+您可以使用[ImageStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/ImageStamp)类在PDF文件的页眉中添加图像。Image Stamp类提供了创建基于图像的印章所需的属性，如字体大小、字体样式和字体颜色等。为了在页眉中添加图像，您需要使用所需的属性创建一个Document对象和一个Image Stamp对象。之后，您可以调用[AddStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/methods/addstamp)方法将图像添加到PDF的页眉中。
 
 {{% alert color="primary" %}}
 
@@ -210,7 +210,7 @@ private static void AddImageHeader()
 
 {{% alert color="primary" %}}
 
-您需要以适当的方式设置[BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin)属性，以便将图像调整到PDF的页脚区域。您还需要将[HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment)设置为`Center`，将[VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment)设置为`Bottom`。
+您需要以适当的方式设置[BottomMargin](https://reference.aspose.com/pdf/zh/net/aspose.pdf/stamp/properties/bottommargin)属性，以便将图像调整到PDF的页脚区域。您还需要将[HorizontalAlignment](https://reference.aspose.com/pdf/zh/net/aspose.pdf/stamp/properties/horizontalalignment)设置为`Center`，将[VerticalAlignment](https://reference.aspose.com/pdf/zh/net/aspose.pdf/stamp/properties/verticalalignment)设置为`Bottom`。
 
 {{% /alert %}}
 
@@ -250,7 +250,7 @@ private static void AddImageFooter()
 
 我们知道可以通过使用TopMargin或Bottom Margin属性在文档的页眉/页脚部分添加TextStamp，但有时我们可能需要在单个PDF文档中添加多个页眉/页脚。**Aspose.PDF for .NET**解释了如何做到这一点。
 
-为了实现这一要求，我们将创建单独的TextStamp对象（对象的数量取决于所需的页眉/页脚数量），并将它们添加到PDF文档中。我们还可以为每个印章对象指定不同的格式信息。在以下示例中，我们创建了Document对象和三个TextStamp对象，然后使用Page的[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp)方法将文本添加到PDF的页眉部分。以下代码片段演示了如何使用Aspose.PDF for .NET在PDF文件的页脚中添加图像。
+为了实现这一要求，我们将创建单独的TextStamp对象（对象的数量取决于所需的页眉/页脚数量），并将它们添加到PDF文档中。我们还可以为每个印章对象指定不同的格式信息。在以下示例中，我们创建了Document对象和三个TextStamp对象，然后使用Page的[AddStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/methods/addstamp)方法将文本添加到PDF的页眉部分。以下代码片段演示了如何使用Aspose.PDF for .NET在PDF文件的页脚中添加图像。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

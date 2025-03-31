@@ -199,7 +199,7 @@ Dengan mengatur 'AdditionalChangeMarks' ke 'true', Anda juga dapat melihat penan
 
 Saat berkolaborasi pada dokumen, terutama di lingkungan profesional, Anda sering kali berakhir dengan beberapa versi dari file yang sama.
 
-Anda dapat menggunakan kelas [GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) untuk membandingkan dokumen dan halaman PDF. Kelas ini cocok untuk membandingkan perubahan dalam konten grafis sebuah halaman.
+Anda dapat menggunakan kelas [GraphicalPdfComparer](https://reference.aspose.com/pdf/id/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) untuk membandingkan dokumen dan halaman PDF. Kelas ini cocok untuk membandingkan perubahan dalam konten grafis sebuah halaman.
 
 Dengan Aspose.PDF for .NET, dimungkinkan untuk membandingkan dokumen dan halaman serta mengeluarkan hasil perbandingan ke dokumen PDF atau file gambar.
 
@@ -211,13 +211,13 @@ Anda dapat mengatur properti kelas berikut:
 
 Kelas ini memiliki metode yang memungkinkan Anda untuk mendapatkan perbedaan gambar halaman dalam bentuk yang cocok untuk pemrosesan lebih lanjut: **ImagesDifference GetDifference(Page page1, Page page2)**.
 
-Metode ini mengembalikan objek dari kelas [ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) yang berisi gambar dari halaman pertama yang dibandingkan dan array perbedaan. Array perbedaan dan gambar asli memiliki format piksel **RGB24bpp**.
+Metode ini mengembalikan objek dari kelas [ImagesDifference](https://reference.aspose.com/pdf/id/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) yang berisi gambar dari halaman pertama yang dibandingkan dan array perbedaan. Array perbedaan dan gambar asli memiliki format piksel **RGB24bpp**.
 
 ImagesDifference memungkinkan Anda untuk menghasilkan gambar yang berbeda dan mendapatkan gambar dari halaman kedua yang dibandingkan dengan menambahkan array perbedaan ke gambar asli. Untuk melakukan ini, gunakan metode **ImagesDifference.GetDestinationImage dan ImagesDifference.DifferenceToImage**.
 
 ### Bandingkan PDF dengan metode GetDifference
 
-Kode yang disediakan mendefinisikan metode [GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) yang membandingkan dua dokumen PDF dan menghasilkan representasi visual dari perbedaan antara keduanya.
+Kode yang disediakan mendefinisikan metode [GetDifference](https://reference.aspose.com/pdf/id/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) yang membandingkan dua dokumen PDF dan menghasilkan representasi visual dari perbedaan antara keduanya.
 
 Metode ini membandingkan halaman pertama dari dua file PDF dan menghasilkan dua gambar PNG:
 
@@ -259,7 +259,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 
 ### Bandingkan PDF dengan metode CompareDocumentsToPdf
 
-Cuplikan kode yang disediakan menggunakan metode [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) yang membandingkan dua dokumen dan menghasilkan laporan PDF dari hasil perbandingan.
+Cuplikan kode yang disediakan menggunakan metode [CompareDocumentsToPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) yang membandingkan dua dokumen dan menghasilkan laporan PDF dari hasil perbandingan.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

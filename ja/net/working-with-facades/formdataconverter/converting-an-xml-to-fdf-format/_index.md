@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)名前空間は、[Aspose.PDF for .NET](/pdf/ja/net/)でAcroFormsを非常によくサポートしています。また、FDF、XFDF、XMLなどの異なるファイル形式へのフォームデータのインポートとエクスポートもサポートしています。しかし、時には開発者がある形式を別の形式に変換する必要があります。この記事では、FDF形式をXMLに変換する機能について見ていきます。
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)名前空間は、[Aspose.PDF for .NET](/pdf/ja/net/)でAcroFormsを非常によくサポートしています。また、FDF、XFDF、XMLなどの異なるファイル形式へのフォームデータのインポートとエクスポートもサポートしています。しかし、時には開発者がある形式を別の形式に変換する必要があります。この記事では、FDF形式をXMLに変換する機能について見ていきます。
 
 {{% /alert %}}
 
 ## 実装の詳細
 
-FDFはForms Data Formatの略で、FDFファイルにはキー/バリューのペアでフォームの値が含まれています。また、XMLファイルにはタグとして値が含まれていることも知っています。ここで、主にキーはタグ名として表され、値はそのタグ内の値として表されます。現在、[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)は、XMLファイル形式をFDF形式に変換する柔軟性を提供します。
+FDFはForms Data Formatの略で、FDFファイルにはキー/バリューのペアでフォームの値が含まれています。また、XMLファイルにはタグとして値が含まれていることも知っています。ここで、主にキーはタグ名として表され、値はそのタグ内の値として表されます。現在、[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)は、XMLファイル形式をFDF形式に変換する柔軟性を提供します。
 
-この目的のために、[FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormDataConverter)クラスを使用します。このクラスは、あるデータ形式を別のデータ形式に変換するためのさまざまなメソッドを提供します。この記事では、FDFファイルを入力またはソースストリームとして受け取り、XML形式に保存するConvertXmlToFdf(..)メソッドの使用方法を示します。以下のコードスニペットは、FDFファイルをXMLファイルに変換する方法を示しています。
+この目的のために、[FormDataConverter](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/FormDataConverter)クラスを使用します。このクラスは、あるデータ形式を別のデータ形式に変換するためのさまざまなメソッドを提供します。この記事では、FDFファイルを入力またはソースストリームとして受け取り、XML形式に保存するConvertXmlToFdf(..)メソッドの使用方法を示します。以下のコードスニペットは、FDFファイルをXMLファイルに変換する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

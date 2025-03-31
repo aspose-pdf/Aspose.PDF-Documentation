@@ -87,10 +87,10 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 Passos com os quais criamos a anotação de Caret:
 
-1. Carregar o arquivo PDF - novo [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Criar nova [Anotação de Caret](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) e definir os parâmetros do Caret (novo Rectangle, título, Assunto, Flags, cor, largura, StartingStyle e EndingStyle). Esta anotação é usada para indicar a inserção de texto.
-1. Criar nova [Anotação de Caret](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) e definir os parâmetros do Caret (novo Rectangle, título, Assunto, Flags, cor, largura, StartingStyle e EndingStyle). Esta anotação é usada para indicar a substituição de texto.
-1. Criar nova [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) e definir os parâmetros (novo Rectangle, título, cor, novos QuadPoints e novos pontos, Assunto, InReplyTo, ReplyType).
+1. Carregar o arquivo PDF - novo [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
+1. Criar nova [Anotação de Caret](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/caretannotation) e definir os parâmetros do Caret (novo Rectangle, título, Assunto, Flags, cor, largura, StartingStyle e EndingStyle). Esta anotação é usada para indicar a inserção de texto.
+1. Criar nova [Anotação de Caret](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/caretannotation) e definir os parâmetros do Caret (novo Rectangle, título, Assunto, Flags, cor, largura, StartingStyle e EndingStyle). Esta anotação é usada para indicar a substituição de texto.
+1. Criar nova [StrikeOutAnnotation](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/strikeoutannotation) e definir os parâmetros (novo Rectangle, título, cor, novos QuadPoints e novos pontos, Assunto, InReplyTo, ReplyType).
 1. Depois, podemos adicionar anotações à página.
 
 O seguinte trecho de código mostra como adicionar Anotação de Caret a um arquivo PDF:
@@ -249,7 +249,7 @@ private static void RedactPage()
 
 ### Abordagem de Facades
 
-O namespace Aspose.Pdf.Facades também possui uma classe chamada [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) que fornece o recurso para manipular Anotações existentes dentro do arquivo PDF. Esta classe contém um método chamado [RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) que fornece a capacidade de remover certas regiões da página.
+O namespace Aspose.Pdf.Facades também possui uma classe chamada [PdfAnnotationEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfannotationeditor) que fornece o recurso para manipular Anotações existentes dentro do arquivo PDF. Esta classe contém um método chamado [RedactArea(..)](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) que fornece a capacidade de remover certas regiões da página.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) 클래스는 Aspose.Pdf.Facades 패키지에 포함되어 있으며 PDF 파일에 자바스크립트 액션을 추가할 수 있는 유연성을 제공합니다. PDF 뷰어에서 메뉴 항목을 실행하는 일련의 액션에 해당하는 링크를 생성할 수 있습니다. 이 클래스는 문서 이벤트에 대한 추가 액션을 생성하는 기능도 제공합니다.
+[PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/PdfContentEditor) 클래스는 Aspose.Pdf.Facades 패키지에 포함되어 있으며 PDF 파일에 자바스크립트 액션을 추가할 수 있는 유연성을 제공합니다. PDF 뷰어에서 메뉴 항목을 실행하는 일련의 액션에 해당하는 링크를 생성할 수 있습니다. 이 클래스는 문서 이벤트에 대한 추가 액션을 생성하는 기능도 제공합니다.
 
-우선, [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체가 그려지며, 우리의 예에서는 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)입니다. 그리고 Rectangle에 [createJavaScriptLink](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) 액션을 설정합니다. 이후 문서를 저장할 수 있습니다.
+우선, [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체가 그려지며, 우리의 예에서는 [Rectangle](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/rectangle)입니다. 그리고 Rectangle에 [createJavaScriptLink](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) 액션을 설정합니다. 이후 문서를 저장할 수 있습니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

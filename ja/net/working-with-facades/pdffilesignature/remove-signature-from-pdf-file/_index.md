@@ -79,7 +79,7 @@ draft: false
 
 PDFファイルに署名が追加されると、それを削除することが可能です。特定の署名を削除することも、ファイル内のすべての署名を削除することもできます。署名を削除する最も迅速な方法は署名フィールドも削除しますが、署名フィールドを保持して署名のみを削除することも可能です。
 
-[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスのRemoveSignatureメソッドを使用すると、PDFファイルから署名を削除できます。このメソッドは署名名を入力として受け取ります。署名名を直接指定してすべての署名を削除するか、[GetSignNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/getsignername)メソッドを使用して署名名を取得します。
+[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスのRemoveSignatureメソッドを使用すると、PDFファイルから署名を削除できます。このメソッドは署名名を入力として受け取ります。署名名を直接指定してすべての署名を削除するか、[GetSignNames](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature/methods/getsignername)メソッドを使用して署名名を取得します。
 
 以下のコードスニペットは、PDFファイルからデジタル署名を削除する方法を示しています。
 
@@ -111,7 +111,7 @@ private static void RemoveSignature()
 
 ### 署名を削除するが署名フィールドを保持する
 
-上記のように、[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)クラスの[RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature)メソッドを使用すると、PDFファイルから署名フィールドを削除できます。このメソッドを9.3.0以前のバージョンで使用すると、署名と署名フィールドの両方が削除されます。一部の開発者は、署名を削除し、署名フィールドを保持して文書を再署名できるようにしたいと考えています。署名フィールドを保持し、署名のみを削除するには、以下のコードスニペットを使用してください。
+上記のように、[PdfFileSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature)クラスの[RemoveSignature](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesignature/methods/removesignature)メソッドを使用すると、PDFファイルから署名フィールドを削除できます。このメソッドを9.3.0以前のバージョンで使用すると、署名と署名フィールドの両方が削除されます。一部の開発者は、署名を削除し、署名フィールドを保持して文書を再署名できるようにしたいと考えています。署名フィールドを保持し、署名のみを削除するには、以下のコードスニペットを使用してください。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

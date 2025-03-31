@@ -95,12 +95,12 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Untuk menambahkan Anotasi Markup Teks ke dokumen PDF, kita perlu melakukan tindakan berikut:
 
-1. Muat file PDF - objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
+1. Muat file PDF - objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) baru.
 1. Buat anotasi:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) dan atur parameter (judul, warna).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) dan atur parameter (judul, warna).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) dan atur parameter (judul, warna).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) dan atur parameter (judul, warna).
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/highlightannotation) dan atur parameter (judul, warna).
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/strikeoutannotation) dan atur parameter (judul, warna).
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/squigglyannotation) dan atur parameter (judul, warna).
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/underlineannotation) dan atur parameter (judul, warna).
 1. Setelah itu, kita harus menambahkan semua anotasi ke halaman.
 
 ```csharp

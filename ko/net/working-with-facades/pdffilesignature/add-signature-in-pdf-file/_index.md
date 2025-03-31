@@ -77,9 +77,9 @@ draft: false
 
 ## PDF 파일에 디지털 서명 추가
 
-[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스는 PDF 파일에 서명을 추가할 수 있게 해줍니다. 입력 및 출력 PDF 파일을 사용하여 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스의 객체를 생성해야 합니다. 서명을 추가할 위치에 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) 객체를 생성해야 하며, 서명의 모양을 설정하기 위해 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 객체의 [SignatureAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/signatureappearance) 속성을 사용하여 이미지를 지정할 수 있습니다. Aspose.Pdf.Facades는 PKCS#1, PKCS#7 및 PKCS#7Detached와 같은 다양한 서명 유형도 제공합니다. 특정 유형의 서명을 생성하려면 인증서 파일과 비밀번호를 사용하여 **PKCS1**, **PKCS7** 또는 **PKCS7Detached**와 같은 특정 클래스의 객체를 생성해야 합니다.
+[PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 클래스는 PDF 파일에 서명을 추가할 수 있게 해줍니다. 입력 및 출력 PDF 파일을 사용하여 [PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 클래스의 객체를 생성해야 합니다. 서명을 추가할 위치에 [Rectangle](https://reference.aspose.com/pdf/ko/net/aspose.pdf/rectangle) 객체를 생성해야 하며, 서명의 모양을 설정하기 위해 [PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 객체의 [SignatureAppearance](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature/properties/signatureappearance) 속성을 사용하여 이미지를 지정할 수 있습니다. Aspose.Pdf.Facades는 PKCS#1, PKCS#7 및 PKCS#7Detached와 같은 다양한 서명 유형도 제공합니다. 특정 유형의 서명을 생성하려면 인증서 파일과 비밀번호를 사용하여 **PKCS1**, **PKCS7** 또는 **PKCS7Detached**와 같은 특정 클래스의 객체를 생성해야 합니다.
 
-특정 서명 유형의 객체가 생성되면, [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스의 [Sign](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/sign/index) 메서드를 사용하여 PDF에 서명하고 이 클래스에 특정 서명 객체를 전달할 수 있습니다. 이 메서드에 대한 다른 속성도 지정할 수 있습니다. 마지막으로, [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메서드를 사용하여 서명된 PDF를 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에 서명을 추가하는 방법을 보여줍니다.
+특정 서명 유형의 객체가 생성되면, [PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 클래스의 [Sign](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature/methods/sign/index) 메서드를 사용하여 PDF에 서명하고 이 클래스에 특정 서명 객체를 전달할 수 있습니다. 이 메서드에 대한 다른 속성도 지정할 수 있습니다. 마지막으로, [PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 클래스의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save/index) 메서드를 사용하여 서명된 PDF를 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에 서명을 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -150,7 +150,7 @@ private static void AddTwoSignature()
 }
 ```
 
-서명해야 하는 양식 또는 아크로폼이 있는 문서의 경우, 다음 예제를 참조하세요. 입력 및 출력 PDF 파일을 사용하여 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스의 객체를 생성해야 합니다. 바인딩을 위해 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1)를 사용하세요. 필요한 속성을 추가할 수 있는 서명을 생성하세요. 우리의 예제에서는 'Reason'과 'CustomAppearance'가 있습니다.
+서명해야 하는 양식 또는 아크로폼이 있는 문서의 경우, 다음 예제를 참조하세요. 입력 및 출력 PDF 파일을 사용하여 [PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 클래스의 객체를 생성해야 합니다. 바인딩을 위해 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1)를 사용하세요. 필요한 속성을 추가할 수 있는 서명을 생성하세요. 우리의 예제에서는 'Reason'과 'CustomAppearance'가 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

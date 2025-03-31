@@ -204,7 +204,7 @@ Aspose.PDF memiliki manfaat yang berbeda:
 - Anda tidak perlu menginstal Adobe Acrobat di sistem Anda untuk bekerja dengan file PDF.
 - Menggunakan Aspose.PDF for .NET sederhana dan mudah dipahami dibandingkan dengan Automasi Acrobat.
 
-Jika kita perlu mengonversi halaman PDF menjadi JPEG, namespace [Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices) menyediakan kelas bernama [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) untuk merender halaman PDF menjadi gambar JPEG. Silakan lihat cuplikan kode berikut.
+Jika kita perlu mengonversi halaman PDF menjadi JPEG, namespace [Aspose.PDF.Devices](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices) menyediakan kelas bernama [JpegDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/jpegdevice) untuk merender halaman PDF menjadi gambar JPEG. Silakan lihat cuplikan kode berikut.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

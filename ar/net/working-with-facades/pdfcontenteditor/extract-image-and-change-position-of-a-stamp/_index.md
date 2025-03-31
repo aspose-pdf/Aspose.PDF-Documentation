@@ -77,7 +77,7 @@ draft: false
 
 ## استخراج الصورة من ختم الصورة
 
-تتيح لك فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) استخراج الصور من ختم في ملف PDF. أولاً، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، استدعِ طريقة [GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) للحصول على مصفوفة من كائنات StampInfo من صفحة معينة من ملف PDF. ثم يمكنك الحصول على الصورة من StampInfo باستخدام خاصية StampInfo.Image. بمجرد الحصول على الصورة، يمكنك حفظ الصورة أو العمل مع خصائص مختلفة للصورة. يوضح لك مقتطف الكود التالي كيفية استخراج الصورة من ختم الصورة.
+تتيح لك فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) استخراج الصور من ختم في ملف PDF. أولاً، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، استدعِ طريقة [GetStamps](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) للحصول على مصفوفة من كائنات StampInfo من صفحة معينة من ملف PDF. ثم يمكنك الحصول على الصورة من StampInfo باستخدام خاصية StampInfo.Image. بمجرد الحصول على الصورة، يمكنك حفظ الصورة أو العمل مع خصائص مختلفة للصورة. يوضح لك مقتطف الكود التالي كيفية استخراج الصورة من ختم الصورة.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -136,7 +136,7 @@ private static void ExtractImageFromStamp()
 
 ## تغيير موضع ختم في ملف PDF
 
-تتيح لك فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) تغيير موضع ختم في ملف PDF. أولاً، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، استدعِ طريقة [MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) مع فهرس الختم والموقع الجديد على صفحة معينة من ملف PDF. ثم، يمكنك حفظ الملف المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save). يوضح لك مقتطف الكود التالي كيفية نقل ختم في صفحة معينة.
+تتيح لك فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) تغيير موضع ختم في ملف PDF. أولاً، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، استدعِ طريقة [MoveStamp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) مع فهرس الختم والموقع الجديد على صفحة معينة من ملف PDF. ثم، يمكنك حفظ الملف المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save). يوضح لك مقتطف الكود التالي كيفية نقل ختم في صفحة معينة.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void ChangeStampPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-أيضًا، يمكنك استخدام طريقة [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) لنقل ختم معين باستخدام StampId.
+أيضًا، يمكنك استخدام طريقة [MoveStampById](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) لنقل ختم معين باستخدام StampId.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

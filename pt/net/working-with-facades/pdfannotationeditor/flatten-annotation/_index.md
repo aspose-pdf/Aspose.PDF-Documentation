@@ -81,7 +81,7 @@ O processo de achatamento significa que, quando uma anotação é removida de um
 
 Quando esta opção é selecionada, suas anotações serão incluídas no seu PDF exportado como anotações padrão do PDF.
 
-Verifique como o método [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) é usado no próximo trecho de código.
+Verifique como o método [flatteningAnnotations](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) é usado no próximo trecho de código.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

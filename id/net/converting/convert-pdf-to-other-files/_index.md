@@ -93,7 +93,7 @@ EPUB dirancang untuk konten yang dapat mengalir, yang berarti bahwa pembaca EPUB
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Aspose.PDF for .NET juga mendukung fitur untuk mengonversi dokumen PDF ke format EPUB. Aspose.PDF for .NET memiliki kelas bernama EpubSaveOptions yang dapat digunakan sebagai argumen kedua untuk metode [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index), untuk menghasilkan file EPUB.
+Aspose.PDF for .NET juga mendukung fitur untuk mengonversi dokumen PDF ke format EPUB. Aspose.PDF for .NET memiliki kelas bernama EpubSaveOptions yang dapat digunakan sebagai argumen kedua untuk metode [`Document.Save(..)`](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index), untuk menghasilkan file EPUB.
 Silakan coba menggunakan potongan kode berikut untuk memenuhi kebutuhan ini dengan C#.
 
 ```csharp
@@ -130,7 +130,7 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to LaTeX"](http
 [![Aspose.PDF Konversi PDF ke LaTeX/TeX dengan Aplikasi Gratis](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-Untuk mengonversi file PDF ke TeX, Aspose.PDF memiliki kelas [LaTeXSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions) yang menyediakan properti OutDirectoryPath untuk menyimpan gambar sementara selama proses konversi.
+Untuk mengonversi file PDF ke TeX, Aspose.PDF memiliki kelas [LaTeXSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/latexsaveoptions) yang menyediakan properti OutDirectoryPath untuk menyimpan gambar sementara selama proses konversi.
 
 Potongan kode berikut menunjukkan proses mengonversi file PDF menjadi format TEX dengan C#.
 
@@ -165,7 +165,7 @@ private static void ConvertPDFtoTeX()
 
 ### Mengonversi seluruh dokumen PDF ke file Teks
 
-Anda dapat mengonversi dokumen PDF ke file TXT menggunakan metode [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber/methods/visit/index) dari kelas [TextAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber).
+Anda dapat mengonversi dokumen PDF ke file TXT menggunakan metode [Visit](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textabsorber/methods/visit/index) dari kelas [TextAbsorber](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textabsorber).
 
 Potongan kode berikut menjelaskan cara mengekstrak teks dari semua halaman.
 
@@ -239,7 +239,7 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to XPS"](https:
 
 Tipe file XPS terutama terkait dengan Spesifikasi Kertas XML oleh Microsoft Corporation. Spesifikasi Kertas XML (XPS), sebelumnya bernama Metro dan mencakup konsep pemasaran Jalur Cetak Generasi Berikutnya (NGPP), adalah inisiatif Microsoft untuk mengintegrasikan pembuatan dan tampilan dokumen ke dalam sistem operasi Windows.
 
-Untuk mengonversi file PDF ke XPS, Aspose.PDF memiliki kelas [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) yang digunakan sebagai argumen kedua untuk metode [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) untuk menghasilkan file XPS.
+Untuk mengonversi file PDF ke XPS, Aspose.PDF memiliki kelas [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) yang digunakan sebagai argumen kedua untuk metode [Document.Save(..)](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index) untuk menghasilkan file XPS.
 
 Sejak rilis 24.2, Aspose.PDF telah menerapkan konversi PDF yang Dapat Dicari ke XPS sambil menjaga Teks Dapat Dipilih di XPS yang dihasilkan. Untuk mempertahankan teks, perlu untuk mengatur properti XpsSaveOptions.SaveTransparentTexts ke true.
 

@@ -82,7 +82,7 @@ PDF内のArtifactは、実際の文書コンテンツの一部ではないグラ
 
 PDFにおけるArtifactの目的は、コンテンツ要素と非コンテンツ要素とを区別できるようにすることです。これにより、スクリーンリーダーなどの支援技術がArtifactを無視して関連するコンテンツに注目できるため、アクセシビリティが向上します。また、印刷、検索、またはコピーの際にArtifactを省略することで、PDF文書のパフォーマンスおよび品質も改善されます。
 
-PDF内で要素をArtifactとして作成するには、[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) クラスを使用する必要があります。
+PDF内で要素をArtifactとして作成するには、[Artifact](https://reference.aspose.com/pdf/ja/net/aspose.pdf/artifact) クラスを使用する必要があります。
 このクラスには、以下の有用なプロパティが含まれています:
 
 - **Artifact.Type** – Artifactのタイプを取得します (サポートされる値は Artifact.ArtifactType 列挙体の Background、Layout、Page、Pagination、Undefined が含まれます)。
@@ -97,17 +97,17 @@ PDF内で要素をArtifactとして作成するには、[Artifact](https://refer
 
 以下のクラスもArtifactの操作に役立つかもしれません:
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/watermarkartifact/)
+- [ArtifactCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/artifactcollection)
+- [BackgroundArtifact](https://reference.aspose.com/pdf/ja/net/aspose.pdf/backgroundartifact/)
+- [HeaderArtifact](https://reference.aspose.com/pdf/ja/net/aspose.pdf/headerartifact/)
+- [FooterArtifact](https://reference.aspose.com/pdf/ja/net/aspose.pdf/footerartifact/)
+- [WatermarkArtifact](https://reference.aspose.com/pdf/ja/net/aspose.pdf/watermarkartifact/)
 
 ## Working with Existing Watermarks
 
 Adobe Acrobatで作成された透かしは、PDF仕様の14.8.2.2 Real Content and Artifactsで説明されているように、Artifactと呼ばれます。
 
-特定のページ上のすべての透かしを取得するには、[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) クラスの Artifacts プロパティを使用します。
+特定のページ上のすべての透かしを取得するには、[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page) クラスの Artifacts プロパティを使用します。
 
 以下のコードスニペットは、PDFファイルの最初のページ上のすべての透かしを取得する方法を示しています。
 
@@ -140,7 +140,7 @@ private static void ExtractWatermarkFromPDF()
 
 ## Working with Backgrounds as Artifacts
 
-背景画像は、文書に透かしやその他の subtle なデザイン要素を追加するために使用できます。Aspose.PDF for .NETでは、各PDF文書が複数のページで構成され、各ページが複数のArtifactを含んでいます。[BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) クラスを使用して、ページオブジェクトに背景画像を追加できます。
+背景画像は、文書に透かしやその他の subtle なデザイン要素を追加するために使用できます。Aspose.PDF for .NETでは、各PDF文書が複数のページで構成され、各ページが複数のArtifactを含んでいます。[BackgroundArtifact](https://reference.aspose.com/pdf/ja/net/aspose.pdf/backgroundartifact) クラスを使用して、ページオブジェクトに背景画像を追加できます。
 
 以下のコードスニペットは、BackgroundArtifactオブジェクトを使用してPDFページに背景画像を追加する方法を示しています。
 

@@ -83,7 +83,7 @@ sitemap:
 
 ## 楕円オブジェクトを追加
 
-Aspose.PDF for .NETは、PDFドキュメントに[楕円](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse)オブジェクトを追加することをサポートしています。また、特定の色で楕円オブジェクトを塗りつぶす機能も提供しています。
+Aspose.PDF for .NETは、PDFドキュメントに[楕円](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/ellipse)オブジェクトを追加することをサポートしています。また、特定の色で楕円オブジェクトを塗りつぶす機能も提供しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,7 +133,7 @@ private static void Ellipse()
 
 ## 塗りつぶされた楕円オブジェクトを作成
 
-次のコードスニペットは、色で塗りつぶされた[楕円](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse)オブジェクトを追加する方法を示しています。
+次のコードスニペットは、色で塗りつぶされた[楕円](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/ellipse)オブジェクトを追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

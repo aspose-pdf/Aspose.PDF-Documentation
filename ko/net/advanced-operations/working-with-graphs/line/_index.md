@@ -83,21 +83,21 @@ sitemap:
 
 ## 선 객체 추가
 
-Aspose.PDF for .NET는 PDF 문서에 그래프 객체(예: 그래프, 선, 사각형 등)를 추가하는 기능을 지원합니다. 또한 대시 패턴, 색상 및 선 요소의 기타 형식을 지정할 수 있는 [선](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/line) 객체를 추가할 수 있는 이점을 제공합니다.
+Aspose.PDF for .NET는 PDF 문서에 그래프 객체(예: 그래프, 선, 사각형 등)를 추가하는 기능을 지원합니다. 또한 대시 패턴, 색상 및 선 요소의 기타 형식을 지정할 수 있는 [선](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/line) 객체를 추가할 수 있는 이점을 제공합니다.
 
 아래 단계를 따르세요:
 
-1. 새 PDF [문서](https://reference.aspose.com/pdf/net/aspose.pdf/document)를 만듭니다.
-1. PDF 파일의 페이지 컬렉션에 [페이지](https://reference.aspose.com/pdf/net/aspose.pdf/page)를 추가합니다.
-1. [그래프](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) 인스턴스를 만듭니다.
+1. 새 PDF [문서](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document)를 만듭니다.
+1. PDF 파일의 페이지 컬렉션에 [페이지](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page)를 추가합니다.
+1. [그래프](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/graph) 인스턴스를 만듭니다.
 1. 페이지 인스턴스의 단락 컬렉션에 그래프 객체를 추가합니다.
-1. [사각형](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) 인스턴스를 만듭니다.
+1. [사각형](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/rectangle) 인스턴스를 만듭니다.
 1. 선 너비를 설정합니다.
-1. 그래프 객체의 도형 컬렉션에 [사각형](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) 객체를 추가합니다.
+1. 그래프 객체의 도형 컬렉션에 [사각형](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/rectangle) 객체를 추가합니다.
 
 1. PDF 파일을 저장합니다.
 
-다음 코드 스니펫은 색상으로 채워진 [사각형](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) 객체를 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 색상으로 채워진 [사각형](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/rectangle) 객체를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

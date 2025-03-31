@@ -85,16 +85,16 @@ sitemap:
 
 ### PDFドキュメントにフォームフィールドを追加
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスは、PDFドキュメント内のフォームフィールドを管理するための[Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form)というコレクションを提供します。
+[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスは、PDFドキュメント内のフォームフィールドを管理するための[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/form)というコレクションを提供します。
 
 フォームフィールドを追加するには：
 
 1. 追加したいフォームフィールドを作成します。
-1. [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form)コレクションのAddメソッドを呼び出します。
+1. [Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/properties/form)コレクションのAddメソッドを呼び出します。
 
 ### TextBoxFieldの追加
 
-以下の例は、[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)を追加する方法を示しています。
+以下の例は、[TextBoxField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/textboxfield)を追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### RadioButtonFieldの追加
 
-次のコードスニペットは、PDFドキュメントに[RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield)を追加する方法を示しています。
+次のコードスニペットは、PDFドキュメントに[RadioButtonField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/radiobuttonfield)を追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -164,7 +164,7 @@ private static void AddRadioButtonToPdf()
 }
 ```
 
-[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)は、いくつかのウィジェット注釈と共に追加できます。
+[TextBoxField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/textboxfield)は、いくつかのウィジェット注釈と共に追加できます。
 ```csharp
 // For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()

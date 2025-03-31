@@ -158,7 +158,7 @@ private static void ExtractSignatureImage()
 
 ## 위치 및 이유 숨기기
 
-Aspose.PDF 기능은 디지털 서명 인스턴스에 대한 유연한 구성을 허용합니다. [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스는 PDF 파일에 서명할 수 있는 기능을 제공합니다. 서명 메서드 구현은 PDF에 서명하고 이 클래스에 특정 서명 객체를 전달할 수 있도록 합니다. 서명 메서드는 출력 디지털 서명의 사용자 지정을 위한 속성 집합을 포함합니다. 결과 서명에서 일부 텍스트 속성을 숨기려면 해당 속성을 비워둘 수 있습니다. 다음 코드 스니펫은 서명 블록에서 위치와 이유 두 줄을 숨기는 방법을 보여줍니다:
+Aspose.PDF 기능은 디지털 서명 인스턴스에 대한 유연한 구성을 허용합니다. [PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 클래스는 PDF 파일에 서명할 수 있는 기능을 제공합니다. 서명 메서드 구현은 PDF에 서명하고 이 클래스에 특정 서명 객체를 전달할 수 있도록 합니다. 서명 메서드는 출력 디지털 서명의 사용자 지정을 위한 속성 집합을 포함합니다. 결과 서명에서 일부 텍스트 속성을 숨기려면 해당 속성을 비워둘 수 있습니다. 다음 코드 스니펫은 서명 블록에서 위치와 이유 두 줄을 숨기는 방법을 보여줍니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void SupressLocationReason()
 
 ## 디지털 서명을 위한 사용자 정의 기능
 
-Aspose.PDF for .NET는 디지털 서명을 위한 사용자 정의 기능을 허용합니다. [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) 클래스의 서명 메서드는 편리한 사용을 위해 6개의 오버로드를 구현합니다. 예를 들어, SignatureCustomAppearance 클래스 인스턴스와 그 속성 값을 사용하여 결과 서명을 구성할 수 있습니다. 다음 코드 스니펫은 PDF의 출력 디지털 서명에서 "디지털 서명한 사람" 캡션을 숨기는 방법을 보여줍니다.
+Aspose.PDF for .NET는 디지털 서명을 위한 사용자 정의 기능을 허용합니다. [SignatureCustomAppearance](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturecustomappearance) 클래스의 서명 메서드는 편리한 사용을 위해 6개의 오버로드를 구현합니다. 예를 들어, SignatureCustomAppearance 클래스 인스턴스와 그 속성 값을 사용하여 결과 서명을 구성할 수 있습니다. 다음 코드 스니펫은 PDF의 출력 디지털 서명에서 "디지털 서명한 사람" 캡션을 숨기는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,7 +233,7 @@ Aspose.PDF for .NET API를 사용하면 다음 세 가지 유형의 서명 중 �
 - PKCS#7.
 - PKCS#12.
 
-제공된 각 서명은 귀하의 편의를 위해 구현된 구성 속성 집합을 포함합니다(지역화, 날짜 시간 형식, 글꼴 패밀리 등). [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) 클래스는 해당 기능을 제공합니다. 다음 코드 스니펫은 디지털 서명 텍스트의 언어를 변경하는 방법을 보여줍니다:
+제공된 각 서명은 귀하의 편의를 위해 구현된 구성 속성 집합을 포함합니다(지역화, 날짜 시간 형식, 글꼴 패밀리 등). [SignatureCustomAppearance](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturecustomappearance) 클래스는 해당 기능을 제공합니다. 다음 코드 스니펫은 디지털 서명 텍스트의 언어를 변경하는 방법을 보여줍니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

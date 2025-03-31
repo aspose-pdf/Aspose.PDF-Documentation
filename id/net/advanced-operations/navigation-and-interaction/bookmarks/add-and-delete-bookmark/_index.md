@@ -83,13 +83,13 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 ## Tambahkan Bookmark ke Dokumen PDF
 
-Bookmark disimpan dalam koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) objek Document, yang berada dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+Bookmark disimpan dalam koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlineitemcollection) objek Document, yang berada dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection).
 
 Untuk menambahkan bookmark ke PDF:
 
-1. Buka dokumen PDF menggunakan objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Buka dokumen PDF menggunakan objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 1. Buat bookmark dan tentukan propertinya.
-1. Tambahkan koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) ke koleksi Outlines.
+1. Tambahkan koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlineitemcollection) ke koleksi Outlines.
 
 Potongan kode berikut menunjukkan cara menambahkan bookmark dalam dokumen PDF.
 
@@ -161,8 +161,8 @@ Bookmark dapat dinesting, menunjukkan hubungan hierarkis dengan bookmark induk d
 Untuk menambahkan bookmark anak ke file PDF, pertama tambahkan bookmark induk:
 
 1. Buka dokumen.
-1. Tambahkan bookmark ke [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), mendefinisikan propertinya.
-1. Tambahkan OutlineItemCollection ke koleksi [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) objek Document.
+1. Tambahkan bookmark ke [OutlineItemCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlineitemcollection), mendefinisikan propertinya.
+1. Tambahkan OutlineItemCollection ke koleksi [OutlineCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection) objek Document.
 
 Bookmark anak dibuat seperti bookmark induk, yang dijelaskan di atas, tetapi ditambahkan ke koleksi Outlines bookmark induk.
 
@@ -243,12 +243,12 @@ private static void AddChildBookmark()
 
 ## Hapus Semua Bookmark dari Dokumen PDF
 
-Semua bookmark dalam PDF disimpan dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Artikel ini menjelaskan cara menghapus semua bookmark dari file PDF.
+Semua bookmark dalam PDF disimpan dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection). Artikel ini menjelaskan cara menghapus semua bookmark dari file PDF.
 
 Untuk menghapus semua bookmark dari file PDF:
 
-1. Panggil metode Delete dari koleksi [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. Simpan file yang dimodifikasi menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Panggil metode Delete dari koleksi [OutlineCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection).
+1. Simpan file yang dimodifikasi menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4) objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 
 Potongan kode berikut menunjukkan cara menghapus semua bookmark dari dokumen PDF.
 
@@ -299,10 +299,10 @@ private static void DeleteBookmarks()
 
 Untuk menghapus bookmark tertentu dari file PDF:
 
-1. Berikan judul bookmark sebagai parameter ke metode Delete dari koleksi [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+1. Berikan judul bookmark sebagai parameter ke metode Delete dari koleksi [OutlineCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection).
 1. Kemudian simpan file yang diperbarui dengan metode Save objek Document.
 
-Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menyediakan koleksi [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Metode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) menghapus bookmark dengan judul yang diberikan ke metode.
+Kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) menyediakan koleksi [OutlineCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection). Metode [Delete](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection/methods/delete) menghapus bookmark dengan judul yang diberikan ke metode.
 
 Potongan kode berikut menunjukkan cara menghapus bookmark tertentu dari dokumen PDF.
 

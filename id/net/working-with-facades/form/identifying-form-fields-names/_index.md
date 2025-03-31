@@ -75,24 +75,24 @@ draft: false
 }
 </script>
 
-[Aspose.PDF for .NET](/pdf/id/net/) menyediakan kemampuan untuk membuat, mengedit, dan mengisi formulir Pdf yang sudah dibuat. [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) namespace berisi kelas [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), yang memiliki fungsi bernama [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) dan mengambil dua argumen yaitu nama bidang dan nilai bidang. Jadi, untuk mengisi bidang formulir, Anda harus mengetahui nama bidang formulir yang tepat.
+[Aspose.PDF for .NET](/pdf/id/net/) menyediakan kemampuan untuk membuat, mengedit, dan mengisi formulir Pdf yang sudah dibuat. [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades) namespace berisi kelas [Form](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form), yang memiliki fungsi bernama [FillField](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/methods/fillfield/index) dan mengambil dua argumen yaitu nama bidang dan nilai bidang. Jadi, untuk mengisi bidang formulir, Anda harus mengetahui nama bidang formulir yang tepat.
 
 ## Detail implementasi
 
-Kami sering menemui skenario di mana kami perlu mengisi formulir yang dibuat di beberapa alat yaitu Adobe Designer, dan kami tidak yakin tentang nama bidang formulir. Jadi, untuk mengisi bidang formulir, pertama-tama kami perlu membaca nama semua bidang formulir Pdf. Kelas [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) menyediakan properti bernama [FieldNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/properties/fieldnames) yang mengembalikan semua nama bidang dan mengembalikan null jika PDF tidak mengandung bidang apa pun. Namun, saat menggunakan properti ini, kami mendapatkan nama semua bidang dalam formulir PDF dan kami mungkin tidak yakin nama mana yang sesuai dengan bidang mana di formulir.
+Kami sering menemui skenario di mana kami perlu mengisi formulir yang dibuat di beberapa alat yaitu Adobe Designer, dan kami tidak yakin tentang nama bidang formulir. Jadi, untuk mengisi bidang formulir, pertama-tama kami perlu membaca nama semua bidang formulir Pdf. Kelas [Form](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form) menyediakan properti bernama [FieldNames](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/properties/fieldnames) yang mengembalikan semua nama bidang dan mengembalikan null jika PDF tidak mengandung bidang apa pun. Namun, saat menggunakan properti ini, kami mendapatkan nama semua bidang dalam formulir PDF dan kami mungkin tidak yakin nama mana yang sesuai dengan bidang mana di formulir.
 
-Sebagai solusi untuk masalah ini, kami akan menggunakan atribut penampilan dari setiap bidang. Kelas Form memiliki fungsi bernama [GetFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getfieldfacade) yang mengembalikan atribut, termasuk lokasi, warna, gaya batas, font, item daftar, dan sebagainya. Untuk menyimpan nilai-nilai ini, kami perlu menggunakan kelas [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormFieldFacade), yang digunakan untuk mencatat atribut visual dari bidang. Setelah kami memiliki atribut ini, kami dapat menambahkan bidang teks di bawah setiap bidang yang akan menampilkan nama bidang.
+Sebagai solusi untuk masalah ini, kami akan menggunakan atribut penampilan dari setiap bidang. Kelas Form memiliki fungsi bernama [GetFieldFacade](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/form/methods/getfieldfacade) yang mengembalikan atribut, termasuk lokasi, warna, gaya batas, font, item daftar, dan sebagainya. Untuk menyimpan nilai-nilai ini, kami perlu menggunakan kelas [FormFieldFacade](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/FormFieldFacade), yang digunakan untuk mencatat atribut visual dari bidang. Setelah kami memiliki atribut ini, kami dapat menambahkan bidang teks di bawah setiap bidang yang akan menampilkan nama bidang.
 
 {{% alert color="primary" %}}
 Pada titik ini, muncul pertanyaan "bagaimana kami akan menentukan lokasi di mana menambahkan bidang teks?"
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-Solusi untuk masalah ini adalah properti Box dalam kelas [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormFieldFacade), yang menyimpan lokasi bidang. Kami perlu menyimpan nilai-nilai ini ke dalam array tipe persegi panjang dan menggunakan nilai-nilai ini untuk mengidentifikasi posisi di mana menambahkan bidang teks baru.
+Solusi untuk masalah ini adalah properti Box dalam kelas [FormFieldFacade](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/FormFieldFacade), yang menyimpan lokasi bidang. Kami perlu menyimpan nilai-nilai ini ke dalam array tipe persegi panjang dan menggunakan nilai-nilai ini untuk mengidentifikasi posisi di mana menambahkan bidang teks baru.
 
 {{% /alert %}}
 
-Dalam namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) kami memiliki kelas bernama [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) yang menyediakan kemampuan untuk memanipulasi formulir PDF. Buka formulir pdf; tambahkan bidang teks di bawah setiap bidang formulir yang ada dan simpan formulir Pdf dengan nama baru.
+Dalam namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades) kami memiliki kelas bernama [FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/FormEditor) yang menyediakan kemampuan untuk memanipulasi formulir PDF. Buka formulir pdf; tambahkan bidang teks di bawah setiap bidang formulir yang ada dan simpan formulir Pdf dengan nama baru.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

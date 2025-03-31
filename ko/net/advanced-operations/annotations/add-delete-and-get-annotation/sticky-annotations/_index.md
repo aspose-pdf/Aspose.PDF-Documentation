@@ -85,7 +85,7 @@ sitemap:
 
 워터마크 주석은 페이지의 고정된 크기와 위치에 인쇄될 그래픽을 나타내는 데 사용됩니다. 인쇄된 페이지의 치수와 관계없이 사용됩니다.
 
-특정 PDF 페이지 위치에 [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation)를 사용하여 워터마크 텍스트를 추가할 수 있습니다. 워터마크의 불투명도는 불투명도 속성을 사용하여 제어할 수 있습니다.
+특정 PDF 페이지 위치에 [WatermarkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/watermarkannotation)를 사용하여 워터마크 텍스트를 추가할 수 있습니다. 워터마크의 불투명도는 불투명도 속성을 사용하여 제어할 수 있습니다.
 
 워터마크 주석을 추가하기 위한 다음 코드 스니펫을 확인하십시오.
 

@@ -80,7 +80,7 @@ sitemap:
 
 ## テキストスタンプを追加
 
-[TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) クラスを使用して PDF ファイルにテキスト スタンプを追加できます。TextStamp クラスは、フォント サイズ、フォント スタイル、フォント色など、テキストベースのスタンプを作成するために必要なプロパティを提供します。テキストスタンプを追加するには、必要なプロパティを使用して Document オブジェクトと TextStamp オブジェクトを作成する必要があります。その後、PDF にスタンプを追加するために Page の AddStamp メソッドを呼び出すことができます。
+[TextStamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf/TextStamp) クラスを使用して PDF ファイルにテキスト スタンプを追加できます。TextStamp クラスは、フォント サイズ、フォント スタイル、フォント色など、テキストベースのスタンプを作成するために必要なプロパティを提供します。テキストスタンプを追加するには、必要なプロパティを使用して Document オブジェクトと TextStamp オブジェクトを作成する必要があります。その後、PDF にスタンプを追加するために Page の AddStamp メソッドを呼び出すことができます。
 
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
@@ -121,7 +121,7 @@ private static void AddTextStamp()
 
 ## TextStamp オブジェクトの配置を定義する
 
-PDF ドキュメントに透かしを追加することは、頻繁に要求される機能の 1 つであり、Aspose.PDF for .NET は画像とテキストの透かしの両方を追加する完全な能力を備えています。[TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) というクラスがあり、PDF ファイルにテキスト スタンプを追加する機能を提供します。最近、TextStamp オブジェクトを使用する際にテキストの配置を指定する機能をサポートする必要がありました。この要件を満たすために、TextStamp クラスに TextAlignment プロパティを導入しました。このプロパティを使用して、水平テキストの配置を指定できます。
+PDF ドキュメントに透かしを追加することは、頻繁に要求される機能の 1 つであり、Aspose.PDF for .NET は画像とテキストの透かしの両方を追加する完全な能力を備えています。[TextStamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf/textstamp) というクラスがあり、PDF ファイルにテキスト スタンプを追加する機能を提供します。最近、TextStamp オブジェクトを使用する際にテキストの配置を指定する機能をサポートする必要がありました。この要件を満たすために、TextStamp クラスに TextAlignment プロパティを導入しました。このプロパティを使用して、水平テキストの配置を指定できます。
 
 次のコードスニペットは、既存の PDF ドキュメントを読み込み、その上に TextStamp を追加する方法の例を示しています。
 

@@ -75,21 +75,21 @@ draft: false
 }
 </script>
 
-[PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend)クラスは、既存のPDF文書に指定された位置で画像とテキストを追加するのに役立ちます。 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)および[AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)という名前の2つのメソッドを提供します。[AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)メソッドを使用すると、JPG、GIF、PNG、BMP形式の画像を追加できます。[AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)メソッドは、[FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)クラスの引数を取り、既存のPDFファイルに追加します。画像とテキストは、左下と右上の座標で指定された矩形領域に追加できます。画像を追加する際には、画像ファイルのパスまたは画像ファイルのストリームを指定できます。画像またはテキストを追加するページ番号を指定するために、これらのメソッドはページ番号の引数を提供します。したがって、指定された位置だけでなく、指定されたページにも画像とテキストを追加できます。
+[PdfFileMend](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend)クラスは、既存のPDF文書に指定された位置で画像とテキストを追加するのに役立ちます。 [AddImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)および[AddText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)という名前の2つのメソッドを提供します。[AddImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)メソッドを使用すると、JPG、GIF、PNG、BMP形式の画像を追加できます。[AddText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)メソッドは、[FormattedText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formattedtext)クラスの引数を取り、既存のPDFファイルに追加します。画像とテキストは、左下と右上の座標で指定された矩形領域に追加できます。画像を追加する際には、画像ファイルのパスまたは画像ファイルのストリームを指定できます。画像またはテキストを追加するページ番号を指定するために、これらのメソッドはページ番号の引数を提供します。したがって、指定された位置だけでなく、指定されたページにも画像とテキストを追加できます。
 
-画像はPDF文書の内容の重要な部分です。既存のPDFファイル内の画像を操作することは、PDFファイルを扱う人々にとって一般的な要件です。この記事では、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)を使用して、既存のPDFファイル内の画像を操作する方法を探ります。[Aspose.PDF for .NET](/pdf/ja/net/)のすべての画像関連操作は、この文書にまとめられています。
+画像はPDF文書の内容の重要な部分です。既存のPDFファイル内の画像を操作することは、PDFファイルを扱う人々にとって一般的な要件です。この記事では、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)を使用して、既存のPDFファイル内の画像を操作する方法を探ります。[Aspose.PDF for .NET](/pdf/ja/net/)のすべての画像関連操作は、この文書にまとめられています。
 
 ## 実装の詳細
 
-[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)を使用すると、既存のPDFファイルに新しい画像を追加できます。また、既存の画像を置き換えたり削除したりすることもできます。PDFファイルを画像に変換することもできます。各ページを個別の画像に変換することも、完全なPDFファイルを1つの画像に変換することもできます。JPEG、BMP、PNG、TIFFなどの形式をサポートしています。また、PDFファイルから画像を抽出することもできます。これらの操作を実装するために、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)の4つのクラス、すなわち[PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend)、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)、[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor)、および[PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter)を使用できます。
+[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)を使用すると、既存のPDFファイルに新しい画像を追加できます。また、既存の画像を置き換えたり削除したりすることもできます。PDFファイルを画像に変換することもできます。各ページを個別の画像に変換することも、完全なPDFファイルを1つの画像に変換することもできます。JPEG、BMP、PNG、TIFFなどの形式をサポートしています。また、PDFファイルから画像を抽出することもできます。これらの操作を実装するために、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)の4つのクラス、すなわち[PdfFileMend](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend)、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)、[PdfExtractor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor)、および[PdfConverter](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfconverter)を使用できます。
 
 ## 画像操作
 
-このセクションでは、これらの画像操作を詳しく見ていきます。関連するクラスとメソッドの使用を示すコードスニペットも見ていきます。まず、既存のPDFファイルに画像を追加する方法を見てみましょう。[PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend)クラスの[AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)メソッドを使用して新しい画像を追加できます。このメソッドを使用すると、画像を追加したいページ番号だけでなく、画像の位置も指定できます。
+このセクションでは、これらの画像操作を詳しく見ていきます。関連するクラスとメソッドの使用を示すコードスニペットも見ていきます。まず、既存のPDFファイルに画像を追加する方法を見てみましょう。[PdfFileMend](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend)クラスの[AddImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)メソッドを使用して新しい画像を追加できます。このメソッドを使用すると、画像を追加したいページ番号だけでなく、画像の位置も指定できます。
 
 ## 既存のPDFファイルに画像を追加する（ファサード）
 
-[PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend)クラスの[AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage)メソッドを使用できます。[AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage)メソッドは、追加する画像、画像を追加するページ番号、および座標情報を必要とします。その後、[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/close)メソッドを使用して更新されたPDFファイルを保存します。
+[PdfFileMend](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend)クラスの[AddImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend/methods/addimage)メソッドを使用できます。[AddImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend/methods/addimage)メソッドは、追加する画像、画像を追加するページ番号、および座標情報を必要とします。その後、[Close](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/close)メソッドを使用して更新されたPDFファイルを保存します。
 
 次の例では、imageStreamを使用してページに画像を追加します：
 
@@ -124,7 +124,7 @@ private static void AddImage01()
 
 ![画像を追加](/pdf/ja/net/images/add_image1.png)
 
-[CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)を使用すると、1つの画像を別の画像の上に重ねることができます：
+[CompositingParameters](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)を使用すると、1つの画像を別の画像の上に重ねることができます：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +248,7 @@ private static void AddImage04()
 
 ## 既存のPDFファイルにテキストを追加する（ファサード）
 
-テキストを追加する方法はいくつかあります。最初の方法を考えてみましょう。[FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)を取得し、ページに追加します。その後、左下の角の座標を指定し、テキストをページに追加します。
+テキストを追加する方法はいくつかあります。最初の方法を考えてみましょう。[FormattedText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formattedtext)を取得し、ページに追加します。その後、左下の角の座標を指定し、テキストをページに追加します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -279,7 +279,7 @@ private static void AddText01()
 
 ![テキストを追加](/pdf/ja/net/images/add_text.png)
 
-[FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)を追加する2番目の方法です。さらに、テキストが収まる矩形を指定します。
+[FormattedText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formattedtext)を追加する2番目の方法です。さらに、テキストが収まる矩形を指定します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

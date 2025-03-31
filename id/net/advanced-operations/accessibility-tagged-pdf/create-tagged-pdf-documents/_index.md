@@ -85,7 +85,7 @@ Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf
 
 ## Membuat PDF Berlabel (Skenario Sederhana)
 
-Untuk membuat elemen struktur dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan metode untuk membuat elemen struktur menggunakan antarmuka [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Potongan kode berikut menunjukkan cara membuat PDF berlabel yang berisi 2 elemen: header dan paragraf.
+Untuk membuat elemen struktur dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan metode untuk membuat elemen struktur menggunakan antarmuka [ITaggedContent](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent). Potongan kode berikut menunjukkan cara membuat PDF berlabel yang berisi 2 elemen: header dan paragraf.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -181,7 +181,7 @@ Kami akan mendapatkan dokumen berikut setelah pembuatan:
 ## Membuat PDF Berlabel dengan elemen bersarang (Membuat Pohon Elemen Struktur)
 
 Dalam beberapa kasus, kita perlu membuat struktur yang lebih kompleks, misalnya menempatkan kutipan dalam paragraf. 
-Untuk membuat pohon elemen struktur, kita harus menggunakan metode [AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild).
+Untuk membuat pohon elemen struktur, kita harus menggunakan metode [AppendChild](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/element/methods/appendchild).
 Potongan kode berikut menunjukkan cara membuat pohon elemen struktur dari Dokumen PDF Berlabel:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -294,7 +294,7 @@ Kami akan mendapatkan dokumen berikut setelah pembuatan:
 
 ## Menata Struktur Teks
 
-Untuk menata struktur teks dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan properti [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) dan [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) dari Kelas [StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate). Potongan kode berikut menunjukkan cara menata struktur teks dalam Dokumen PDF Berlabel:
+Untuk menata struktur teks dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan properti [Font](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) dan [ForegroundColor](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) dari Kelas [StructureTextState](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structuretextstate). Potongan kode berikut menunjukkan cara menata struktur teks dalam Dokumen PDF Berlabel:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -367,7 +367,7 @@ private static void AddStyle()
 
 ## Mengilustrasikan Elemen Struktur
 
-Untuk mengilustrasikan elemen struktur dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement). Potongan kode berikut menunjukkan cara mengilustrasikan elemen struktur dalam Dokumen PDF Berlabel:
+Untuk mengilustrasikan elemen struktur dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [IllustrationElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/illustrationelement). Potongan kode berikut menunjukkan cara mengilustrasikan elemen struktur dalam Dokumen PDF Berlabel:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Banyak pengguna ingin menempelkan dokumen PDF mereka dengan teks multi-baris. Mereka biasanya mencoba menggunakan `\n` dan `<br>` tetapi jenis karakter ini tidak didukung oleh namespace Aspose.Pdf.Facades. Jadi, untuk membuatnya mungkin, kami telah menambahkan metode lain bernama [AddNewLineText()](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) dalam kelas [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) dari namespace Aspose.Pdf.Facades.
+Banyak pengguna ingin menempelkan dokumen PDF mereka dengan teks multi-baris. Mereka biasanya mencoba menggunakan `\n` dan `<br>` tetapi jenis karakter ini tidak didukung oleh namespace Aspose.Pdf.Facades. Jadi, untuk membuatnya mungkin, kami telah menambahkan metode lain bernama [AddNewLineText()](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) dalam kelas [FormattedText](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formattedtext) dari namespace Aspose.Pdf.Facades.
 
 {{% /alert %}}
 

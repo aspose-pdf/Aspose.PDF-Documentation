@@ -85,8 +85,8 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Untuk menghapus semua lampiran yang terkait dengan file PDF:
 
-1. Panggil metode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) dari koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection).
-1. Simpan file yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Panggil metode [Delete](https://reference.aspose.com/pdf/id/net/aspose.pdf/embeddedfilecollection/methods/delete) dari koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/id/net/aspose.pdf/embeddedfilecollection).
+1. Simpan file yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 
 Potongan kode berikut menunjukkan cara menghapus lampiran dari dokumen PDF.
 

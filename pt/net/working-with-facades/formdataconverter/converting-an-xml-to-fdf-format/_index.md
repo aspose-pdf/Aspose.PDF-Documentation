@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-O [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) namespace em [Aspose.PDF for .NET](/pdf/pt/net/) suporta AcroForms muito bem. Ele também suporta a importação e exportação de dados de formulários para diferentes formatos de arquivo, como FDF, XFDF e XML. No entanto, às vezes um desenvolvedor precisa converter um formato para outro. Neste artigo, vamos explorar o recurso que nos permite converter um formato FDF em XML.
+O [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades) namespace em [Aspose.PDF for .NET](/pdf/pt/net/) suporta AcroForms muito bem. Ele também suporta a importação e exportação de dados de formulários para diferentes formatos de arquivo, como FDF, XFDF e XML. No entanto, às vezes um desenvolvedor precisa converter um formato para outro. Neste artigo, vamos explorar o recurso que nos permite converter um formato FDF em XML.
 
 {{% /alert %}}
 
 ## Detalhes da implementação
 
-FDF significa Formato de Dados de Formulários, e um arquivo FDF contém os valores do formulário em um par chave/valor. Também sabemos que um arquivo XML contém os valores como tags. Onde, na maioria das vezes, a chave é representada como o nome da tag e o valor é representado como o valor dentro dessa tag. Agora, [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) fornece a flexibilidade para converter um formato de arquivo XML em formato FDF.
+FDF significa Formato de Dados de Formulários, e um arquivo FDF contém os valores do formulário em um par chave/valor. Também sabemos que um arquivo XML contém os valores como tags. Onde, na maioria das vezes, a chave é representada como o nome da tag e o valor é representado como o valor dentro dessa tag. Agora, [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades) fornece a flexibilidade para converter um formato de arquivo XML em formato FDF.
 
-Use a classe [FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormDataConverter) para esse propósito. Esta classe fornece diferentes métodos para converter um formato de dados em outro. Este artigo mostra como usar um método, ConvertXmlToFdf(..), que recebe um arquivo FDF como entrada ou fluxo de origem e o salva em formato XML. O seguinte trecho de código mostra como converter um arquivo FDF em um arquivo XML.
+Use a classe [FormDataConverter](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/FormDataConverter) para esse propósito. Esta classe fornece diferentes métodos para converter um formato de dados em outro. Este artigo mostra como usar um método, ConvertXmlToFdf(..), que recebe um arquivo FDF como entrada ou fluxo de origem e o salva em formato XML. O seguinte trecho de código mostra como converter um arquivo FDF em um arquivo XML.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

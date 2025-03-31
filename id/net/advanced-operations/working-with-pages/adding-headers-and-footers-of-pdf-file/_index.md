@@ -84,7 +84,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Menambahkan Teks di Header File PDF
 
-Anda dapat menggunakan kelas [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) untuk menambahkan teks di header file PDF. Kelas TextStamp menyediakan properti yang diperlukan untuk membuat stempel berbasis teks seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan teks di header, Anda perlu membuat objek Document dan objek TextStamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode AddStamp dari Page untuk menambahkan teks di header PDF.
+Anda dapat menggunakan kelas [TextStamp](https://reference.aspose.com/pdf/id/net/aspose.pdf/textstamp) untuk menambahkan teks di header file PDF. Kelas TextStamp menyediakan properti yang diperlukan untuk membuat stempel berbasis teks seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan teks di header, Anda perlu membuat objek Document dan objek TextStamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode AddStamp dari Page untuk menambahkan teks di header PDF.
 
 Anda perlu mengatur properti TopMargin sedemikian rupa sehingga menyesuaikan teks di area header PDF Anda. Anda juga perlu mengatur HorizontalAlignment ke Center dan VerticalAlignment ke Top.
 
@@ -164,7 +164,7 @@ private static void AddFooterText()
 
 ## Menambahkan Gambar di Header File PDF
 
-Anda dapat menggunakan kelas [ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp) untuk menambahkan gambar di header file PDF. Kelas Image Stamp menyediakan properti yang diperlukan untuk membuat stempel berbasis gambar seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan gambar di header, Anda perlu membuat objek Document dan objek Image Stamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) dari Page untuk menambahkan gambar di header PDF.
+Anda dapat menggunakan kelas [ImageStamp](https://reference.aspose.com/pdf/id/net/aspose.pdf/ImageStamp) untuk menambahkan gambar di header file PDF. Kelas Image Stamp menyediakan properti yang diperlukan untuk membuat stempel berbasis gambar seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan gambar di header, Anda perlu membuat objek Document dan objek Image Stamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode [AddStamp](https://reference.aspose.com/pdf/id/net/aspose.pdf/page/methods/addstamp) dari Page untuk menambahkan gambar di header PDF.
 
 {{% alert color="primary" %}}
 
@@ -210,7 +210,7 @@ Anda dapat menggunakan kelas Image Stamp untuk menambahkan gambar di footer file
 
 {{% alert color="primary" %}}
 
-Anda perlu mengatur properti [BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin) sedemikian rupa sehingga menyesuaikan gambar di area footer PDF Anda. Anda juga perlu mengatur [HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment) ke `Center` dan [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment) ke `Bottom`.
+Anda perlu mengatur properti [BottomMargin](https://reference.aspose.com/pdf/id/net/aspose.pdf/stamp/properties/bottommargin) sedemikian rupa sehingga menyesuaikan gambar di area footer PDF Anda. Anda juga perlu mengatur [HorizontalAlignment](https://reference.aspose.com/pdf/id/net/aspose.pdf/stamp/properties/horizontalalignment) ke `Center` dan [VerticalAlignment](https://reference.aspose.com/pdf/id/net/aspose.pdf/stamp/properties/verticalalignment) ke `Bottom`.
 
 {{% /alert %}}
 
@@ -250,7 +250,7 @@ private static void AddImageFooter()
 
 Kita tahu bahwa kita dapat menambahkan TextStamp di bagian Header/Footer dokumen dengan menggunakan properti TopMargin atau Bottom Margin, tetapi terkadang kita mungkin memiliki kebutuhan untuk menambahkan beberapa header/footer dalam satu dokumen PDF. **Aspose.PDF for .NET** menjelaskan cara melakukannya.
 
-Untuk memenuhi kebutuhan ini, kita akan membuat objek TextStamp individu (jumlah objek tergantung pada jumlah Header/Footer yang diperlukan) dan akan menambahkannya ke dokumen PDF. Kita juga dapat menentukan informasi format yang berbeda untuk setiap objek stempel. Dalam contoh berikut, kita telah membuat objek Document dan tiga objek TextStamp dan kemudian kita telah menggunakan metode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) dari Page untuk menambahkan teks di bagian header PDF. Potongan kode berikut menunjukkan kepada Anda cara menambahkan gambar di footer file PDF dengan Aspose.PDF for .NET.
+Untuk memenuhi kebutuhan ini, kita akan membuat objek TextStamp individu (jumlah objek tergantung pada jumlah Header/Footer yang diperlukan) dan akan menambahkannya ke dokumen PDF. Kita juga dapat menentukan informasi format yang berbeda untuk setiap objek stempel. Dalam contoh berikut, kita telah membuat objek Document dan tiga objek TextStamp dan kemudian kita telah menggunakan metode [AddStamp](https://reference.aspose.com/pdf/id/net/aspose.pdf/page/methods/addstamp) dari Page untuk menambahkan teks di bagian header PDF. Potongan kode berikut menunjukkan kepada Anda cara menambahkan gambar di footer file PDF dengan Aspose.PDF for .NET.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

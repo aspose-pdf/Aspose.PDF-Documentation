@@ -80,7 +80,7 @@ lastmod: "2024-10-23"
 </script>
 
 {{% alert color="primary" %}}
-**Aspose.PDF AI Copilot API** dirancang untuk memungkinkan pengguna memproses dokumen PDF menggunakan LLM dari berbagai penyedia. [API](https://reference.aspose.com/pdf/net/aspose.pdf.ai/) ini akan membantu pengguna dalam membangun aplikasi chatbot dan mengintegrasikan solusi PDF dengan LLM.
+**Aspose.PDF AI Copilot API** dirancang untuk memungkinkan pengguna memproses dokumen PDF menggunakan LLM dari berbagai penyedia. [API](https://reference.aspose.com/pdf/id/net/aspose.pdf.ai/) ini akan membantu pengguna dalam membangun aplikasi chatbot dan mengintegrasikan solusi PDF dengan LLM.
 {{% /alert %}}
 
 ## Fitur Utama
@@ -93,7 +93,7 @@ lastmod: "2024-10-23"
 
 Saat ini, copilots berikut tersedia:
 
-[**Ringkasan OpenAI**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaisummarycopilot/) memungkinkan pengguna untuk menghasilkan ringkasan dari dokumen. Ini menyediakan cara yang nyaman untuk membuat ringkasan dengan mengonfigurasi opsi seperti model, suhu, jumlah token, instruksi model, lampiran dokumen, dan lainnya. Copilot dapat secara asinkron menghasilkan ringkasan sebagai teks, dokumen, dan menyimpan ringkasan dalam berbagai format. Kode demo yang disediakan menunjukkan pembuatan klien OpenAI, konfigurasi opsi copilot, dan penggunaan SummaryCopilot untuk menghasilkan dan menyimpan ringkasan.
+[**Ringkasan OpenAI**](https://reference.aspose.com/pdf/id/net/aspose.pdf.ai/openaisummarycopilot/) memungkinkan pengguna untuk menghasilkan ringkasan dari dokumen. Ini menyediakan cara yang nyaman untuk membuat ringkasan dengan mengonfigurasi opsi seperti model, suhu, jumlah token, instruksi model, lampiran dokumen, dan lainnya. Copilot dapat secara asinkron menghasilkan ringkasan sebagai teks, dokumen, dan menyimpan ringkasan dalam berbagai format. Kode demo yang disediakan menunjukkan pembuatan klien OpenAI, konfigurasi opsi copilot, dan penggunaan SummaryCopilot untuk menghasilkan dan menyimpan ringkasan.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -178,7 +178,7 @@ private static async Task GetSummary()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Obrolan OpenAI**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaichatcopilot/) adalah copilot AI yang dirancang untuk interaksi obrolan dengan dokumen. Ini memfasilitasi menghasilkan respons terhadap pertanyaan pengguna dan mengelola konteks. Pengguna dapat mengonfigurasi opsi copilot, seperti model, suhu, jumlah token, instruksi model, lampiran dokumen, dan lainnya. Copilot dapat memberikan respons terhadap satu atau beberapa pertanyaan, menyimpan respons dalam berbagai format, menyimpan dan menghapus konteks.
+[**Obrolan OpenAI**](https://reference.aspose.com/pdf/id/net/aspose.pdf.ai/openaichatcopilot/) adalah copilot AI yang dirancang untuk interaksi obrolan dengan dokumen. Ini memfasilitasi menghasilkan respons terhadap pertanyaan pengguna dan mengelola konteks. Pengguna dapat mengonfigurasi opsi copilot, seperti model, suhu, jumlah token, instruksi model, lampiran dokumen, dan lainnya. Copilot dapat memberikan respons terhadap satu atau beberapa pertanyaan, menyimpan respons dalam berbagai format, menyimpan dan menghapus konteks.
 
 Kode yang disediakan menunjukkan pembuatan klien OpenAI, konfigurasi opsi ChatCopilot, dan penggunaan ChatCopilot untuk berinteraksi dengan pertanyaan pengguna dan mengelola konteks.
 
@@ -303,7 +303,7 @@ private static async Task ChatWithDocument()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Deskripsi Gambar OpenAI**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaiimagedescriptioncopilot/) adalah copilot AI yang dirancang untuk menghasilkan deskripsi gambar dari gambar di dalam dokumen PDF serta file gambar terpisah. Pengguna dapat mengonfigurasi opsi copilot, seperti model, suhu, jumlah token, instruksi model, lampiran dokumen, dan lainnya. Copilot memberikan kemampuan untuk mendapatkan deskripsi gambar untuk semua dokumen yang dilampirkan sekaligus.
+[**Deskripsi Gambar OpenAI**](https://reference.aspose.com/pdf/id/net/aspose.pdf.ai/openaiimagedescriptioncopilot/) adalah copilot AI yang dirancang untuk menghasilkan deskripsi gambar dari gambar di dalam dokumen PDF serta file gambar terpisah. Pengguna dapat mengonfigurasi opsi copilot, seperti model, suhu, jumlah token, instruksi model, lampiran dokumen, dan lainnya. Copilot memberikan kemampuan untuk mendapatkan deskripsi gambar untuk semua dokumen yang dilampirkan sekaligus.
 
 Potongan kode yang disediakan menunjukkan pembuatan klien OpenAI, konfigurasi opsi ImageDescriptionCopilot, dan penggunaan copilot untuk memperoleh deskripsi gambar untuk dokumen yang dilampirkan. Selain itu, ada metode ekstensi yang memungkinkan menambahkan deskripsi gambar ke gambar dalam dokumen yang dilampirkan dan menyimpan dokumen baru di direktori yang disediakan.
 
@@ -394,7 +394,7 @@ private static async Task CreateImageDescriptions()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Obrolan Llama**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) memungkinkan pembuatan klien untuk mengirim permintaan ke API penyelesaian obrolan Llama.
+[**Obrolan Llama**](https://reference.aspose.com/pdf/id/net/aspose.pdf.ai/llamaclient/) memungkinkan pembuatan klien untuk mengirim permintaan ke API penyelesaian obrolan Llama.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -443,7 +443,7 @@ private static async Task ChatWithLlama()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Ringkasan Llama**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) memungkinkan klien dapat digunakan untuk membuat Summary Copilot.
+[**Ringkasan Llama**](https://reference.aspose.com/pdf/id/net/aspose.pdf.ai/llamaclient/) memungkinkan klien dapat digunakan untuk membuat Summary Copilot.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

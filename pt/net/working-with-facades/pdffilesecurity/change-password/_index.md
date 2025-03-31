@@ -77,7 +77,7 @@ draft: false
 
 ## Alterar Senha de um Arquivo PDF
 
-Para alterar a senha de um arquivo PDF, você precisa criar um objeto [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) e, em seguida, chamar o método [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Você precisa passar a senha de proprietário existente e as novas senhas de usuário e proprietário para o método [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
+Para alterar a senha de um arquivo PDF, você precisa criar um objeto [PdfFileSecurity](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesecurity) e, em seguida, chamar o método [ChangePassword](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Você precisa passar a senha de proprietário existente e as novas senhas de usuário e proprietário para o método [ChangePassword](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
 
 {{% alert color="primary" %}}
 

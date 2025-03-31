@@ -79,7 +79,7 @@ draft: false
 
 PDF 파일에 서명이 추가된 경우 이를 제거할 수 있습니다. 특정 서명 또는 파일의 모든 서명을 제거할 수 있습니다. 서명을 제거하는 가장 빠른 방법은 서명 필드도 제거하지만, 서명을 제거하고 서명 필드는 유지하여 파일을 다시 서명할 수 있도록 하는 것도 가능합니다.
 
-[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스의 RemoveSignature 메서드는 PDF 파일에서 서명을 제거할 수 있도록 합니다. 이 메서드는 서명 이름을 입력으로 받습니다. 서명 이름을 직접 지정하여 모든 서명을 제거하거나, [GetSignNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/getsignername) 메서드를 사용하여 서명 이름을 가져올 수 있습니다.
+[PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 클래스의 RemoveSignature 메서드는 PDF 파일에서 서명을 제거할 수 있도록 합니다. 이 메서드는 서명 이름을 입력으로 받습니다. 서명 이름을 직접 지정하여 모든 서명을 제거하거나, [GetSignNames](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature/methods/getsignername) 메서드를 사용하여 서명 이름을 가져올 수 있습니다.
 
 다음 코드 스니펫은 PDF 파일에서 디지털 서명을 제거하는 방법을 보여줍니다.
 
@@ -111,7 +111,7 @@ private static void RemoveSignature()
 
 ### 서명을 제거하되 서명 필드는 유지하기
 
-위에서 설명한 대로, [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 클래스의 [RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) 메서드는 PDF 파일에서 서명 필드를 제거할 수 있도록 합니다. 이 메서드를 9.3.0 이전 버전에서 사용할 경우 서명과 서명 필드가 모두 제거됩니다. 일부 개발자는 서명만 제거하고 서명 필드는 유지하여 문서를 다시 서명할 수 있도록 하기를 원합니다. 서명 필드를 유지하고 서명만 제거하려면 다음 코드 스니펫을 사용하십시오.
+위에서 설명한 대로, [PdfFileSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature) 클래스의 [RemoveSignature](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) 메서드는 PDF 파일에서 서명 필드를 제거할 수 있도록 합니다. 이 메서드를 9.3.0 이전 버전에서 사용할 경우 서명과 서명 필드가 모두 제거됩니다. 일부 개발자는 서명만 제거하고 서명 필드는 유지하여 문서를 다시 서명할 수 있도록 하기를 원합니다. 서명 필드를 유지하고 서명만 제거하려면 다음 코드 스니펫을 사용하십시오.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

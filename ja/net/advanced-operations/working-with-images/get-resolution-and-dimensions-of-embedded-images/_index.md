@@ -80,7 +80,7 @@ lastmod: "2022-02-17"
 
 このトピックでは、画像を抽出せずに解像度と寸法情報を取得する機能を提供するAspose.PDF名前空間のオペレータクラスの使用方法を説明します。
 
-これを達成する方法はいくつかあります。この記事では、`arraylist`と[画像配置クラス](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement)を使用する方法を説明します。
+これを達成する方法はいくつかあります。この記事では、`arraylist`と[画像配置クラス](https://reference.aspose.com/pdf/ja/net/aspose.pdf/imageplacement)を使用する方法を説明します。
 
 1. まず、ソースPDFファイル（画像を含む）をロードします。
 1. 次に、ドキュメント内の画像の名前を保持するためにArrayListオブジェクトを作成します。

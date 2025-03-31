@@ -77,7 +77,7 @@ draft: false
 
 ## 既存のPDFファイル内のフォームフィールドを新しい場所に移動する
 
-フォームフィールドを新しい場所に移動したい場合は、[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)クラスの[MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield)メソッドを使用できます。このメソッドには、フィールド名とこのフィールドの新しい位置を提供するだけで済みます。また、[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)クラスの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index)メソッドを使用して、更新されたPDFファイルを保存する必要があります。以下のコードスニペットは、PDFファイル内でフォームフィールドを新しい場所に移動する方法を示しています。
+フォームフィールドを新しい場所に移動したい場合は、[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor)クラスの[MoveField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/movefield)メソッドを使用できます。このメソッドには、フィールド名とこのフィールドの新しい位置を提供するだけで済みます。また、[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor)クラスの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/save/index)メソッドを使用して、更新されたPDFファイルを保存する必要があります。以下のコードスニペットは、PDFファイル内でフォームフィールドを新しい場所に移動する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -98,7 +98,7 @@ private static void MoveField()
 
 ## 既存のPDFファイルからフォームフィールドを削除する
 
-既存のPDFファイルからフォームフィールドを削除するには、FormEditorクラスのRemoveFieldメソッドを使用できます。このメソッドは、フィールド名という1つの引数のみを取ります。FormEditorクラスのオブジェクトを作成し、特定のフィールドをPDFから削除するために[RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield)メソッドを呼び出し、その後、更新されたPDFファイルを保存するためにSaveメソッドを呼び出す必要があります。以下のコードスニペットは、既存のPDFファイルからフォームフィールドを削除する方法を示しています。
+既存のPDFファイルからフォームフィールドを削除するには、FormEditorクラスのRemoveFieldメソッドを使用できます。このメソッドは、フィールド名という1つの引数のみを取ります。FormEditorクラスのオブジェクトを作成し、特定のフィールドをPDFから削除するために[RemoveField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/removefield)メソッドを呼び出し、その後、更新されたPDFファイルを保存するためにSaveメソッドを呼び出す必要があります。以下のコードスニペットは、既存のPDFファイルからフォームフィールドを削除する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -119,7 +119,7 @@ private static void RemoveFields()
 
 ## PDF内のフォームフィールドの名前を変更する
 
-また、[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)クラスの[RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield)メソッドを使用してフィールドの名前を変更することもできます。
+また、[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor)クラスの[RenameField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/renamefield)メソッドを使用してフィールドの名前を変更することもできます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

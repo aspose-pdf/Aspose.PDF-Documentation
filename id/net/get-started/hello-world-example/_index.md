@@ -86,11 +86,11 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 Potongan kode di bawah ini mengikuti langkah-langkah ini:
 
-1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Tambahkan sebuah [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) ke objek dokumen.
-1. Buat objek [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
-1. Tambahkan TextFragment ke koleksi [Paragraph](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) dari halaman.
-1. [Simpan](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) dokumen PDF yang dihasilkan.
+1. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Tambahkan sebuah [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) ke objek dokumen.
+1. Buat objek [TextFragment](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textfragment).
+1. Tambahkan TextFragment ke koleksi [Paragraph](https://reference.aspose.com/pdf/id/net/aspose.pdf/page/properties/paragraphs) dari halaman.
+1. [Simpan](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4) dokumen PDF yang dihasilkan.
 
 Potongan kode berikut adalah program Hello World untuk menunjukkan cara kerja API Aspose.PDF for .NET.
 

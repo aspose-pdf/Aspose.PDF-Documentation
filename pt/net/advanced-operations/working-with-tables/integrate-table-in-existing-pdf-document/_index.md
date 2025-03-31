@@ -82,7 +82,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Integrar Tabela com Banco de Dados
 
-Bancos de dados são construídos para armazenar e gerenciar dados. É uma prática comum para programadores preencher diferentes objetos com dados de bancos de dados. Este artigo discute a adição de dados de um banco de dados em uma tabela. É possível preencher um objeto [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) com dados de qualquer fonte de dados usando Aspose.PDF for .NET. E não é apenas possível, mas é muito fácil.
+Bancos de dados são construídos para armazenar e gerenciar dados. É uma prática comum para programadores preencher diferentes objetos com dados de bancos de dados. Este artigo discute a adição de dados de um banco de dados em uma tabela. É possível preencher um objeto [Table](https://reference.aspose.com/pdf/pt/net/aspose.pdf/table) com dados de qualquer fonte de dados usando Aspose.PDF for .NET. E não é apenas possível, mas é muito fácil.
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) permite que os desenvolvedores importem dados de:
 

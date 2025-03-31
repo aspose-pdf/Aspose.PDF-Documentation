@@ -78,7 +78,7 @@ draft: false
 ## デフォルトプリンターへのPDFファイルの印刷とページ設定
 
 まず、ドキュメントは画像に変換され、その後、プリンターで印刷されます。
-[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer)クラスのインスタンスを作成し、PDFファイルをデフォルトプリンターに印刷できるようにし、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/bindpdf/)メソッドを使用してドキュメントを開き、必要な設定を変更します。この例ではA4形式、縦向きが使用されています。[PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/)では、まず印刷先のプリンター名を設定する必要があります。さもなければ、デフォルトプリンターに印刷されます。次に、必要なコピー数を記入します。
+[PdfViewer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer)クラスのインスタンスを作成し、PDFファイルをデフォルトプリンターに印刷できるようにし、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer/bindpdf/)メソッドを使用してドキュメントを開き、必要な設定を変更します。この例ではA4形式、縦向きが使用されています。[PrinterSettings](https://reference.aspose.com/pdf/ja/net/aspose.pdf.printing/printersettings/)では、まず印刷先のプリンター名を設定する必要があります。さもなければ、デフォルトプリンターに印刷されます。次に、必要なコピー数を記入します。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -345,7 +345,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## 印刷ダイアログの非表示
 
-Aspose.PDF for .NETは印刷ダイアログを隠すことをサポートしています。これには、[PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog)プロパティを使用します。
+Aspose.PDF for .NETは印刷ダイアログを隠すことをサポートしています。これには、[PrintPageDialog](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog)プロパティを使用します。
 
 次のコードスニペットは、印刷ダイアログを隠す方法を示しています。
 
@@ -436,7 +436,7 @@ private static void PrintingPDFHidePrintDialog()
 
 ## カラーPDFをグレースケールでXPSファイルに印刷
 
-カラーPDFドキュメントは、[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer)を使用してグレースケールでXPSプリンターに印刷できます。それを実現するために、プロパティ[PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printasgrayscale/)を*true*に設定します。次のコードスニペットは、`PdfViewer.PrintAsGrayscale`プロパティの使用法を示しています。
+カラーPDFドキュメントは、[PdfViewer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer)を使用してグレースケールでXPSプリンターに印刷できます。それを実現するために、プロパティ[PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer/printasgrayscale/)を*true*に設定します。次のコードスニペットは、`PdfViewer.PrintAsGrayscale`プロパティの使用法を示しています。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -529,7 +529,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## PDFからPostScriptへの変換
 
-[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer)クラスは、PDFドキュメントを印刷する機能を提供し、このクラスを使用することでPDFファイルをPostScript形式に変換することもできます。PDFファイルをPostScriptに変換するには、まず任意のPSプリンターをインストールし、`PdfViewer`を使用してファイルに印刷します。
+[PdfViewer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer)クラスは、PDFドキュメントを印刷する機能を提供し、このクラスを使用することでPDFファイルをPostScript形式に変換することもできます。PDFファイルをPostScriptに変換するには、まず任意のPSプリンターをインストールし、`PdfViewer`を使用してファイルに印刷します。
 
 次のコードスニペットは、PDFをPostScript形式に印刷して変換する方法を示しています。
 
@@ -632,7 +632,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## 印刷ジョブのステータス確認
 
-PDFファイルは、物理プリンターやMicrosoft XPS Document Writerに印刷でき、印刷ダイアログを表示せずに[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer)クラスを使用します。大きなPDFファイルを印刷する場合、プロセスに時間がかかることがあるため、ユーザーは印刷プロセスが完了したか、問題が発生したかどうかを確信できないことがあります。印刷ジョブのステータスを確認するには、[PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/)プロパティを使用します。次のコードスニペットは、PDFファイルをXPSファイルに印刷し、印刷ステータスを取得する方法を示しています。
+PDFファイルは、物理プリンターやMicrosoft XPS Document Writerに印刷でき、印刷ダイアログを表示せずに[PdfViewer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer)クラスを使用します。大きなPDFファイルを印刷する場合、プロセスに時間がかかることがあるため、ユーザーは印刷プロセスが完了したか、問題が発生したかどうかを確信できないことがあります。印刷ジョブのステータスを確認するには、[PrintStatus](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer/printstatus/)プロパティを使用します。次のコードスニペットは、PDFファイルをXPSファイルに印刷し、印刷ステータスを取得する方法を示しています。
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -80,7 +80,7 @@ sitemap:
 
 ## Tambahkan Stempel Teks
 
-Anda dapat menggunakan kelas [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) untuk menambahkan stempel teks di file PDF. Kelas TextStamp menyediakan properti yang diperlukan untuk membuat stempel berbasis teks seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan stempel teks, Anda perlu membuat objek Document dan objek TextStamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode AddStamp dari Page untuk menambahkan stempel di PDF.
+Anda dapat menggunakan kelas [TextStamp](https://reference.aspose.com/pdf/id/net/aspose.pdf/TextStamp) untuk menambahkan stempel teks di file PDF. Kelas TextStamp menyediakan properti yang diperlukan untuk membuat stempel berbasis teks seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan stempel teks, Anda perlu membuat objek Document dan objek TextStamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode AddStamp dari Page untuk menambahkan stempel di PDF.
 
 Potongan kode berikut juga bekerja dengan library [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -121,7 +121,7 @@ private static void AddTextStamp()
 
 ## Tentukan perataan untuk objek TextStamp
 
-Menambahkan watermark ke dokumen PDF adalah salah satu fitur yang sering diminta dan Aspose.PDF for .NET sepenuhnya mampu menambahkan watermark Gambar maupun Teks. Kami memiliki kelas bernama [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) yang menyediakan fitur untuk menambahkan stempel teks di atas file PDF. Baru-baru ini ada permintaan untuk mendukung fitur untuk menentukan perataan teks saat menggunakan objek TextStamp. Jadi untuk memenuhi permintaan ini, kami telah memperkenalkan properti TextAlignment dalam kelas TextStamp. Menggunakan properti ini, kita dapat menentukan perataan teks Horizontal.
+Menambahkan watermark ke dokumen PDF adalah salah satu fitur yang sering diminta dan Aspose.PDF for .NET sepenuhnya mampu menambahkan watermark Gambar maupun Teks. Kami memiliki kelas bernama [TextStamp](https://reference.aspose.com/pdf/id/net/aspose.pdf/textstamp) yang menyediakan fitur untuk menambahkan stempel teks di atas file PDF. Baru-baru ini ada permintaan untuk mendukung fitur untuk menentukan perataan teks saat menggunakan objek TextStamp. Jadi untuk memenuhi permintaan ini, kami telah memperkenalkan properti TextAlignment dalam kelas TextStamp. Menggunakan properti ini, kita dapat menentukan perataan teks Horizontal.
 
 Potongan kode berikut menunjukkan contoh tentang cara memuat dokumen PDF yang ada dan menambahkan TextStamp di atasnya.
 

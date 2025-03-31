@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Aspose.PDF for .NET API memberikan fleksibilitas penuh untuk bekerja dengan halaman dalam dokumen PDF menggunakan C# atau bahasa .NET lainnya. Ini mempertahankan semua halaman dari dokumen PDF dalam [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) yang dapat digunakan untuk bekerja dengan halaman PDF.
+Aspose.PDF for .NET API memberikan fleksibilitas penuh untuk bekerja dengan halaman dalam dokumen PDF menggunakan C# atau bahasa .NET lainnya. Ini mempertahankan semua halaman dari dokumen PDF dalam [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection) yang dapat digunakan untuk bekerja dengan halaman PDF.
 Aspose.PDF for .NET memungkinkan Anda untuk menyisipkan halaman ke dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF.
 Bagian ini menunjukkan cara menambahkan halaman ke PDF menggunakan C#.
 
@@ -93,9 +93,9 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Untuk menyisipkan halaman kosong dalam file PDF:
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF input.
-1. Panggil metode [Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) dengan indeks yang ditentukan.
-1. Simpan PDF output menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan file PDF input.
+1. Panggil metode [Insert](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection/methods/insert) dari koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection) dengan indeks yang ditentukan.
+1. Simpan PDF output menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
 
 Potongan kode berikut menunjukkan cara menyisipkan halaman dalam file PDF.
 
@@ -139,9 +139,9 @@ Terkadang, Anda ingin memastikan bahwa dokumen diakhiri dengan halaman kosong. T
 
 Untuk menyisipkan halaman kosong di akhir file PDF:
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan file PDF input.
-1. Panggil metode [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection), tanpa parameter apa pun.
-1. Simpan PDF output menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Buat objek kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan file PDF input.
+1. Panggil metode [Add](https://reference.aspose.com/pdf/id/net/aspose.pdf.pagecollection/add/methods/1) dari koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection), tanpa parameter apa pun.
+1. Simpan PDF output menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
 
 Potongan kode berikut menunjukkan cara menyisipkan halaman kosong di akhir file PDF.
 

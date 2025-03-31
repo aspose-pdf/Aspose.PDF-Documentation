@@ -91,9 +91,9 @@ lastmod: "2021-06-05"
 
 ## ファイルパスを使用してPDFファイルを連結する
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)は、複数のPDFファイルを連結するための[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)のクラスです。ファイルストリームを使用してファイルを連結するだけでなく、メモリストリームを使用しても連結できます。この記事では、メモリストリームを使用してファイルを連結するプロセスを説明し、コードスニペットを使用して示します。
+[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)は、複数のPDFファイルを連結するための[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)のクラスです。ファイルストリームを使用してファイルを連結するだけでなく、メモリストリームを使用しても連結できます。この記事では、メモリストリームを使用してファイルを連結するプロセスを説明し、コードスニペットを使用して示します。
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスの[Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドを使用して、2つのPDFファイルを連結できます。[Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドでは、最初の入力PDF、2番目の入力PDF、および出力PDFの3つのパラメーターを渡すことができます。最終的な出力PDFには、両方の入力PDFファイルが含まれます。
+[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスの[Concatenate](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドを使用して、2つのPDFファイルを連結できます。[Concatenate](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドでは、最初の入力PDF、2番目の入力PDF、および出力PDFの3つのパラメーターを渡すことができます。最終的な出力PDFには、両方の入力PDFファイルが含まれます。
 
 以下のC#コードスニペットは、ファイルパスを使用してPDFファイルを連結する方法を示しています。
 
@@ -129,7 +129,7 @@ private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 
 ## メモリストリームを使用して複数のPDFファイルを連結する
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスの[Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドは、ソースPDFファイルと宛先PDFファイルをパラメーターとして受け取ります。これらのパラメーターは、ディスク上のPDFファイルへのパスであるか、メモリストリームである可能性があります。この例では、最初に2つのファイルストリームを作成して、ディスクからPDFファイルを読み取ります。次に、これらのファイルをバイト配列に変換します。PDFファイルのバイト配列はメモリストリームに変換されます。PDFファイルからメモリストリームを取得したら、それらを連結メソッドに渡して、単一の出力ファイルにマージできます。
+[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスの[Concatenate](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドは、ソースPDFファイルと宛先PDFファイルをパラメーターとして受け取ります。これらのパラメーターは、ディスク上のPDFファイルへのパスであるか、メモリストリームである可能性があります。この例では、最初に2つのファイルストリームを作成して、ディスクからPDFファイルを読み取ります。次に、これらのファイルをバイト配列に変換します。PDFファイルのバイト配列はメモリストリームに変換されます。PDFファイルからメモリストリームを取得したら、それらを連結メソッドに渡して、単一の出力ファイルにマージできます。
 
 以下のC#コードスニペットは、メモリストリームを使用して複数のPDFファイルを連結する方法を示しています。
 
@@ -187,7 +187,7 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
 
 ## ファイルパスを使用してPDFファイルの配列を連結する
 
-複数のPDFファイルを連結したい場合は、PDFファイルの配列を渡すことができる[Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドのオーバーロードを使用できます。最終的な出力は、配列内のすべてのファイルから作成されたマージファイルとして保存されます。以下のC#コードスニペットは、ファイルパスを使用してPDFファイルの配列を連結する方法を示しています。
+複数のPDFファイルを連結したい場合は、PDFファイルの配列を渡すことができる[Concatenate](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドのオーバーロードを使用できます。最終的な出力は、配列内のすべてのファイルから作成されたマージファイルとして保存されます。以下のC#コードスニペットは、ファイルパスを使用してPDFファイルの配列を連結する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
 
 ## ストリームを使用してPDFファイルの配列を連結する
 
-PDFファイルの配列を連結することは、ディスク上に存在するファイルに限られません。ストリームからPDFファイルの配列を連結することもできます。複数のPDFファイルを連結したい場合は、[Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドの適切なオーバーロードを使用できます。最初に、入力ストリームの配列と出力PDF用の1つのストリームを作成し、次に[Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドを呼び出します。出力は出力ストリームに保存されます。以下のC#コードスニペットは、ストリームを使用してPDFファイルの配列を連結する方法を示しています。
+PDFファイルの配列を連結することは、ディスク上に存在するファイルに限られません。ストリームからPDFファイルの配列を連結することもできます。複数のPDFファイルを連結したい場合は、[Concatenate](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドの適切なオーバーロードを使用できます。最初に、入力ストリームの配列と出力PDF用の1つのストリームを作成し、次に[Concatenate](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)メソッドを呼び出します。出力は出力ストリームに保存されます。以下のC#コードスニペットは、ストリームを使用してPDFファイルの配列を連結する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -267,7 +267,7 @@ private static void ConcatenatingAllPdfFilesInParticularFolder()
 
 ## PDFフォームを連結し、フィールド名をユニークに保つ
 
-[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)の[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスは、PDFファイルを連結する機能を提供します。連結するPDFファイルに同じフィールド名を持つフォームフィールドがある場合、Aspose.PDFは、結果のPDFファイル内のフィールドをユニークに保つ機能を提供し、フィールド名をユニークにするためのサフィックスを指定することもできます。[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)の[KeepFieldsUnique](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique)プロパティをtrueに設定すると、PDFフォームが連結されるときにフィールド名がユニークになります。また、[UniqueSuffix](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix)プロパティを使用して、フォームが連結されるときにフィールド名をユニークにするために追加されるサフィックスのユーザー定義形式を指定できます。この文字列には、結果のファイル内の数字に置き換えられる`%NUM%`サブストリングが含まれている必要があります。
+[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)の[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスは、PDFファイルを連結する機能を提供します。連結するPDFファイルに同じフィールド名を持つフォームフィールドがある場合、Aspose.PDFは、結果のPDFファイル内のフィールドをユニークに保つ機能を提供し、フィールド名をユニークにするためのサフィックスを指定することもできます。[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)の[KeepFieldsUnique](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique)プロパティをtrueに設定すると、PDFフォームが連結されるときにフィールド名がユニークになります。また、[UniqueSuffix](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix)プロパティを使用して、フォームが連結されるときにフィールド名をユニークにするために追加されるサフィックスのユーザー定義形式を指定できます。この文字列には、結果のファイル内の数字に置き換えられる`%NUM%`サブストリングが含まれている必要があります。
 
 この機能を実現するための簡単なコードスニペットを以下に示します。
 
@@ -347,7 +347,7 @@ private static void InsertBlankPage()
 
 ### テキストスタンプを追加する
 
-目次を作成するために、最初のページに[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)および[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp)オブジェクトを使用してテキストスタンプを追加する必要があります。Stampクラスは、[FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)を追加するための`BindLogo(...)`メソッドを提供し、`SetOrigin(..)`メソッドを使用してこれらのテキストスタンプを追加する位置を指定できます。この記事では、2つのPDFファイルを連結しているため、これらの個々のドキュメントを指す2つのテキストスタンプオブジェクトを作成する必要があります。
+目次を作成するために、最初のページに[PdfFileStamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilestamp)および[Stamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/stamp)オブジェクトを使用してテキストスタンプを追加する必要があります。Stampクラスは、[FormattedText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formattedtext)を追加するための`BindLogo(...)`メソッドを提供し、`SetOrigin(..)`メソッドを使用してこれらのテキストスタンプを追加する位置を指定できます。この記事では、2つのPDFファイルを連結しているため、これらの個々のドキュメントを指す2つのテキストスタンプオブジェクトを作成する必要があります。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -368,7 +368,7 @@ private static void AddTextStampForTableOfContents()
 
 ### ローカルリンクを作成する
 
-次に、連結されたファイル内のページへのリンクを追加する必要があります。この要件を達成するために、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスの`CreateLocalLink(..)`メソッドを使用できます。以下のコードスニペットでは、リンクの周りの矩形が表示されないように、4番目の引数としてTransparentを渡しています。
+次に、連結されたファイル内のページへのリンクを追加する必要があります。この要件を達成するために、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスの`CreateLocalLink(..)`メソッドを使用できます。以下のコードスニペットでは、リンクの周りの矩形が表示されないように、4番目の引数としてTransparentを渡しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -484,7 +484,7 @@ private static void CompleteCode()
 
 ## フォルダー内のPDFファイルを連結する
 
-[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)の[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスは、PDFファイルを連結する機能を提供します。特定のフォルダー内のすべてのPDFファイルをランタイムで読み取り、ファイル名を知らなくても連結することができます。連結したいPDFドキュメントを含むディレクトリのパスを提供してください。
+[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)の[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスは、PDFファイルを連結する機能を提供します。特定のフォルダー内のすべてのPDFファイルをランタイムで読み取り、ファイル名を知らなくても連結することができます。連結したいPDFドキュメントを含むディレクトリのパスを提供してください。
 
 この機能を実現するために、以下のC#コードスニペットを使用してください。
 

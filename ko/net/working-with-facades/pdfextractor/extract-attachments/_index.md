@@ -74,7 +74,7 @@ lastmod: "2021-06-05"
 }
 </script>
 
-[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)의 추출 기능 중 하나는 첨부 파일 추출입니다. 이 카테고리는 첨부 파일을 추출하는 데 도움이 되는 메서드 집합을 제공할 뿐만 아니라 첨부 파일 관련 정보를 제공하는 메서드도 제공합니다. 즉, [GetAttachmentInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getattachmentinfo) 및 [GetAttachName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getattachnames) 메서드는 각각 첨부 파일 정보와 첨부 파일 이름을 제공합니다. 첨부 파일을 추출하고 가져오기 위해 [ExtractAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractattachment) 및 [GetAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getattachment) 메서드를 사용합니다.
+[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)의 추출 기능 중 하나는 첨부 파일 추출입니다. 이 카테고리는 첨부 파일을 추출하는 데 도움이 되는 메서드 집합을 제공할 뿐만 아니라 첨부 파일 관련 정보를 제공하는 메서드도 제공합니다. 즉, [GetAttachmentInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor/methods/getattachmentinfo) 및 [GetAttachName](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor/methods/getattachnames) 메서드는 각각 첨부 파일 정보와 첨부 파일 이름을 제공합니다. 첨부 파일을 추출하고 가져오기 위해 [ExtractAttachment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor/methods/extractattachment) 및 [GetAttachment](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor/methods/getattachment) 메서드를 사용합니다.
 
 다음 코드 스니펫은 PdfExtractor 메서드를 사용하는 방법을 보여줍니다:
 

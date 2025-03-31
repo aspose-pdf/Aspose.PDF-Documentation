@@ -484,7 +484,7 @@ A biblioteca Aspose.PDF for .NET suporta o recurso de incorporar fontes ao criar
 
 Para substituir fontes, use a seguinte abordagem:
 
-1. Chame a classe [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber).
+1. Chame a classe [TextFragmentAbsorber](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/textfragmentabsorber).
 1. Chame o parâmetro TextEditOptions.FontReplace.RemoveUnusedFonts da classe TextFragmentAbsorber. (Isso remove fontes que se tornaram não utilizadas durante a substituição de fontes).
 1. Defina a fonte individualmente para cada fragmento de texto.
 

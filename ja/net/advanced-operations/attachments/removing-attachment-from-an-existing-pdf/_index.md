@@ -85,8 +85,8 @@ Aspose.PDFはPDFファイルから添付ファイルを削除できます。PDF�
 
 PDFファイルに関連付けられたすべての添付ファイルを削除するには：
 
-1. [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションの[Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete)メソッドを呼び出します。
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して更新されたファイルを保存します。
+1. [EmbeddedFiles](https://reference.aspose.com/pdf/ja/net/aspose.pdf/embeddedfilecollection)コレクションの[Delete](https://reference.aspose.com/pdf/ja/net/aspose.pdf/embeddedfilecollection/methods/delete)メソッドを呼び出します。
+1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して更新されたファイルを保存します。
 
 次のコードスニペットは、PDFドキュメントから添付ファイルを削除する方法を示しています。
 

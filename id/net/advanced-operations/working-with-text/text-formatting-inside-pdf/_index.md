@@ -82,7 +82,7 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 ## Cara menambahkan Indentasi Baris ke PDF
 
-Aspose.PDF for .NET menawarkan properti SubsequentLinesIndent ke dalam kelas [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions). Yang dapat digunakan untuk menentukan indentasi baris dalam skenario pembuatan PDF dengan koleksi TextFragment dan Paragraphs.
+Aspose.PDF for .NET menawarkan properti SubsequentLinesIndent ke dalam kelas [TextFormattingOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textformattingoptions). Yang dapat digunakan untuk menentukan indentasi baris dalam skenario pembuatan PDF dengan koleksi TextFragment dan Paragraphs.
 
 Silakan gunakan potongan kode berikut untuk menggunakan properti tersebut:
 
@@ -203,7 +203,7 @@ private static void AddUnderlineText()
 
 ## Cara menambahkan Batas di Sekitar Teks yang Ditambahkan
 
-Anda memiliki kontrol atas tampilan dan nuansa teks yang Anda tambahkan. Contoh di bawah ini menunjukkan cara menambahkan batas di sekitar sepotong teks yang telah Anda tambahkan dengan menggambar persegi panjang di sekitarnya. Temukan lebih lanjut tentang kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor).
+Anda memiliki kontrol atas tampilan dan nuansa teks yang Anda tambahkan. Contoh di bawah ini menunjukkan cara menambahkan batas di sekitar sepotong teks yang telah Anda tambahkan dengan menggambar persegi panjang di sekitarnya. Temukan lebih lanjut tentang kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -111,7 +111,7 @@ private static void GetValuesFromFields()
 
 ### 获取 PDF 文档中单个字段的值
 
-表单字段的 Value 属性允许您获取特定字段的值。要获取值，从 Document 对象的 Form 集合中获取表单字段。此 C# 示例选择一个 [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) 并使用 Value 属性检索其值。
+表单字段的 Value 属性允许您获取特定字段的值。要获取值，从 Document 对象的 Form 集合中获取表单字段。此 C# 示例选择一个 [TextBoxField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/textboxfield) 并使用 Value 属性检索其值。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -160,7 +160,7 @@ private static void GetSubmitFormActionUrl()
 
 有时，您可能知道文档中表单字段的位置，但不知道它的名称。例如，如果您只有打印表单的示意图。使用 Aspose.PDF for .NET，这不是问题。您可以找出 PDF 文件中给定区域的字段。要从 PDF 文件的特定区域获取表单字段：
 
-1. 使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象打开 PDF 文件。
+1. 使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象打开 PDF 文件。
 1. 从文档的 Forms 集合中获取表单。
 1. 指定矩形区域并将其传递给 Form 对象的 GetFieldsInRect 方法。返回一个 Fields 集合。
 1. 使用此集合来操作字段。

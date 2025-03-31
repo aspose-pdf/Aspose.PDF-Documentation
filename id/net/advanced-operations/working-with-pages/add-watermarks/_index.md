@@ -82,13 +82,13 @@ sitemap:
 
 Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
-Watermark yang dibuat dengan Adobe Acrobat disebut artefak (seperti yang dijelaskan dalam 14.8.2.2 Konten Nyata dan Artefak dari spesifikasi PDF). Untuk bekerja dengan artefak, Aspose.PDF memiliki dua kelas: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) dan [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
+Watermark yang dibuat dengan Adobe Acrobat disebut artefak (seperti yang dijelaskan dalam 14.8.2.2 Konten Nyata dan Artefak dari spesifikasi PDF). Untuk bekerja dengan artefak, Aspose.PDF memiliki dua kelas: [Artifact](https://reference.aspose.com/pdf/id/net/aspose.pdf/artifact) dan [ArtifactCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/artifactcollection).
 
-Untuk mendapatkan semua artefak di halaman tertentu, kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) memiliki properti Artifacts. Topik ini menjelaskan cara bekerja dengan artefak dalam file PDF.
+Untuk mendapatkan semua artefak di halaman tertentu, kelas [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) memiliki properti Artifacts. Topik ini menjelaskan cara bekerja dengan artefak dalam file PDF.
 
 ## Bekerja dengan Artefak
 
-Kelas [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) memiliki properti berikut:
+Kelas [Artifact](https://reference.aspose.com/pdf/id/net/aspose.pdf/artifact) memiliki properti berikut:
 
 - **Artifact.Type**: mendapatkan jenis artefak (mendukung nilai dari enumerasi Artifact.ArtifactType di mana nilai termasuk Latar Belakang, Tata Letak, Halaman, Penomoran dan Tidak Terdefinisi).
 - **Artifact.Subtype**: mendapatkan subtype artefak (mendukung nilai dari enumerasi Artifact.ArtifactSubtype di mana nilai termasuk Latar Belakang, Footer, Header, Tidak Terdefinisi, Watermark).

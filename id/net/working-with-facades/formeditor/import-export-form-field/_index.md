@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Aspose.PDF for .NET menyediakan kemampuan hebat untuk membuat/memanipulasi bidang formulir di dalam dokumen PDF. Menggunakan API ini, Anda dapat mengisi bidang formulir di dalam file PDF secara programatis, mengisi bidang formulir dengan [Impor Data dari FDF ke File PDF](/pdf/id/net/import-and-export-data/), [Impor Data dari XFDF ke File PDF](/pdf/id/net/import-and-export-data/), [Impor Data dari XML ke File PDF](/pdf/id/net/import-and-export-data/) atau bahkan Anda dapat mengimpor data dari objek [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF for .NET menyediakan kemampuan hebat untuk membuat/memanipulasi bidang formulir di dalam dokumen PDF. Menggunakan API ini, Anda dapat mengisi bidang formulir di dalam file PDF secara programatis, mengisi bidang formulir dengan [Impor Data dari FDF ke File PDF](/pdf/id/net/import-and-export-data/), [Impor Data dari XFDF ke File PDF](/pdf/id/net/import-and-export-data/), [Impor Data dari XML ke File PDF](/pdf/id/net/import-and-export-data/) atau bahkan Anda dapat mengimpor data dari objek [System.Data.DataTable](https://reference.aspose.com/pdf/id/net/aspose.pdf.table/importdatatable/methods/1).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

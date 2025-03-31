@@ -79,7 +79,7 @@ draft: false
 
 Quando uma assinatura é adicionada a um arquivo PDF, é possível removê-la. Você pode remover uma assinatura específica ou todas as assinaturas em um arquivo. O método mais rápido para remover a assinatura também remove o campo de assinatura, mas é possível apenas remover a assinatura, mantendo o campo de assinatura para que o arquivo possa ser assinado novamente.
 
-O método RemoveSignature da classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) permite que você remova uma assinatura de um arquivo PDF. Este método recebe o nome da assinatura como entrada. Especifique o nome da assinatura diretamente para remover todas as assinaturas ou obtenha os nomes das assinaturas usando o método [GetSignNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
+O método RemoveSignature da classe [PdfFileSignature](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature) permite que você remova uma assinatura de um arquivo PDF. Este método recebe o nome da assinatura como entrada. Especifique o nome da assinatura diretamente para remover todas as assinaturas ou obtenha os nomes das assinaturas usando o método [GetSignNames](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
 
 O seguinte trecho de código mostra como remover a assinatura digital do arquivo PDF.
 
@@ -111,7 +111,7 @@ private static void RemoveSignature()
 
 ### Remover Assinatura, mas Manter o Campo de Assinatura
 
-Como mostrado acima, o método [RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) da classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) permite que você remova campos de assinatura de arquivos PDF. Ao usar este método com versões anteriores a 9.3.0, tanto a assinatura quanto o campo de assinatura são removidos. Alguns desenvolvedores desejam remover apenas a assinatura e manter o campo de assinatura para que ele possa ser usado para resignar o documento. Para manter o campo de assinatura e remover apenas a assinatura, utilize o seguinte trecho de código.
+Como mostrado acima, o método [RemoveSignature](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) da classe [PdfFileSignature](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature) permite que você remova campos de assinatura de arquivos PDF. Ao usar este método com versões anteriores a 9.3.0, tanto a assinatura quanto o campo de assinatura são removidos. Alguns desenvolvedores desejam remover apenas a assinatura e manter o campo de assinatura para que ele possa ser usado para resignar o documento. Para manter o campo de assinatura e remover apenas a assinatura, utilize o seguinte trecho de código.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

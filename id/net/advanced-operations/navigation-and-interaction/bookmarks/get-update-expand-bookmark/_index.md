@@ -83,9 +83,9 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Dapatkan Bookmark
 
-Koleksi [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) berisi semua bookmark dari file PDF. Artikel ini menjelaskan cara mendapatkan bookmark dari file PDF, dan cara mengetahui halaman mana yang terdapat bookmark tertentu.
+Koleksi [OutlineCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection) objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) berisi semua bookmark dari file PDF. Artikel ini menjelaskan cara mendapatkan bookmark dari file PDF, dan cara mengetahui halaman mana yang terdapat bookmark tertentu.
 
-Untuk mendapatkan bookmark, lakukan loop melalui koleksi [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) dan ambil setiap bookmark dalam OutlineItemCollection. OutlineItemCollection memberikan akses ke semua atribut bookmark. Potongan kode berikut menunjukkan cara mendapatkan bookmark dari file PDF.
+Untuk mendapatkan bookmark, lakukan loop melalui koleksi [OutlineCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection) dan ambil setiap bookmark dalam OutlineItemCollection. OutlineItemCollection memberikan akses ke semua atribut bookmark. Potongan kode berikut menunjukkan cara mendapatkan bookmark dari file PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -213,7 +213,7 @@ private static void GetBookmarkPageNumber()
 
 ## Dapatkan Bookmark Anak dari Dokumen PDF
 
-Bookmark dapat diorganisir dalam struktur hierarkis, dengan orang tua dan anak. Untuk mendapatkan semua bookmark, lakukan loop melalui koleksi Outlines objek Document. Namun, untuk mendapatkan bookmark anak juga, lakukan loop melalui semua bookmark dalam setiap objek [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) yang diperoleh dalam loop pertama. Potongan kode berikut menunjukkan cara mendapatkan bookmark anak dari dokumen PDF.
+Bookmark dapat diorganisir dalam struktur hierarkis, dengan orang tua dan anak. Untuk mendapatkan semua bookmark, lakukan loop melalui koleksi Outlines objek Document. Namun, untuk mendapatkan bookmark anak juga, lakukan loop melalui semua bookmark dalam setiap objek [OutlineItemCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlineitemcollection) yang diperoleh dalam loop pertama. Potongan kode berikut menunjukkan cara mendapatkan bookmark anak dari dokumen PDF.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -294,7 +294,7 @@ private static void GetChildBookmarks()
 
 ## Perbarui Bookmark dalam Dokumen PDF
 
-Untuk memperbarui bookmark dalam file PDF, pertama, ambil bookmark tertentu dari koleksi OutlineColletion objek Document dengan menentukan indeks bookmark. Setelah Anda mengambil bookmark ke dalam objek [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), Anda dapat memperbarui propertinya dan kemudian menyimpan file PDF yang diperbarui menggunakan metode Save. Potongan kode berikut menunjukkan cara memperbarui bookmark dalam dokumen PDF.
+Untuk memperbarui bookmark dalam file PDF, pertama, ambil bookmark tertentu dari koleksi OutlineColletion objek Document dengan menentukan indeks bookmark. Setelah Anda mengambil bookmark ke dalam objek [OutlineItemCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlineitemcollection), Anda dapat memperbarui propertinya dan kemudian menyimpan file PDF yang diperbarui menggunakan metode Save. Potongan kode berikut menunjukkan cara memperbarui bookmark dalam dokumen PDF.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -350,7 +350,7 @@ private static void UpdateBookmarks()
 Untuk memperbarui bookmark anak:
 
 1. Ambil bookmark anak yang ingin Anda perbarui dari file PDF dengan terlebih dahulu mendapatkan bookmark induk dan kemudian bookmark anak menggunakan nilai indeks yang sesuai.
-1. Simpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1).
+1. Simpan file PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/1).
 
 {{% alert color="primary" %}}
 
@@ -417,7 +417,7 @@ private static void UpdateChildBookmarks()
 
 ## Bookmark Diperluas saat melihat dokumen
 
-Bookmark disimpan dalam koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) objek Document, yang berada dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Namun, kita mungkin memiliki kebutuhan untuk memiliki semua bookmark diperluas saat melihat file PDF.
+Bookmark disimpan dalam koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlineitemcollection) objek Document, yang berada dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/outlinecollection). Namun, kita mungkin memiliki kebutuhan untuk memiliki semua bookmark diperluas saat melihat file PDF.
 
 Untuk memenuhi kebutuhan ini, kita dapat mengatur status terbuka untuk setiap item outline/bookmark sebagai Terbuka. Potongan kode berikut menunjukkan cara mengatur status terbuka untuk setiap bookmark sebagai diperluas dalam dokumen PDF.
 

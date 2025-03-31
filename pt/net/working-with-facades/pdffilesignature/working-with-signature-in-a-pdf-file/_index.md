@@ -158,7 +158,7 @@ private static void ExtractSignatureImage()
 
 ## Suprimir Localização e Motivo
 
-A funcionalidade Aspose.PDF permite configuração flexível para a instância de assinatura digital. A classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) fornece a capacidade de assinar um arquivo PDF. A implementação do método Sign permite assinar o PDF e passar o objeto de assinatura específico para esta classe. O método Sign contém um conjunto de atributos para a personalização da assinatura digital de saída. Caso você precise suprimir alguns atributos de texto da assinatura resultante, pode deixá-los vazios. O seguinte trecho de código demonstra como suprimir as duas linhas Localização e Motivo do bloco de assinatura:
+A funcionalidade Aspose.PDF permite configuração flexível para a instância de assinatura digital. A classe [PdfFileSignature](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffilesignature) fornece a capacidade de assinar um arquivo PDF. A implementação do método Sign permite assinar o PDF e passar o objeto de assinatura específico para esta classe. O método Sign contém um conjunto de atributos para a personalização da assinatura digital de saída. Caso você precise suprimir alguns atributos de texto da assinatura resultante, pode deixá-los vazios. O seguinte trecho de código demonstra como suprimir as duas linhas Localização e Motivo do bloco de assinatura:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void SupressLocationReason()
 
 ## Recursos de Personalização para Assinatura Digital
 
-Aspose.PDF for .NET permite recursos de personalização para uma assinatura digital. O método Sign da classe [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) implementa 6 sobrecargas para seu uso confortável. Por exemplo, você pode configurar a assinatura resultante apenas pela instância da classe SignatureCustomAppearance e seus valores de propriedades. O seguinte trecho de código demonstra como ocultar a legenda "Assinado digitalmente por" da assinatura digital de saída do seu PDF.
+Aspose.PDF for .NET permite recursos de personalização para uma assinatura digital. O método Sign da classe [SignatureCustomAppearance](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturecustomappearance) implementa 6 sobrecargas para seu uso confortável. Por exemplo, você pode configurar a assinatura resultante apenas pela instância da classe SignatureCustomAppearance e seus valores de propriedades. O seguinte trecho de código demonstra como ocultar a legenda "Assinado digitalmente por" da assinatura digital de saída do seu PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,7 +233,7 @@ Usando a API Aspose.PDF for .NET, você pode assinar um arquivo PDF usando qualq
 - PKCS#7.
 - PKCS#12.
 
-Cada uma das assinaturas fornecidas contém um conjunto de propriedades de configuração implementadas para sua conveniência (localização, formato de data e hora, família de fontes, etc.). A classe [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) fornece a funcionalidade correspondente. O seguinte trecho de código demonstra como mudar o idioma no texto da assinatura digital: 
+Cada uma das assinaturas fornecidas contém um conjunto de propriedades de configuração implementadas para sua conveniência (localização, formato de data e hora, família de fontes, etc.). A classe [SignatureCustomAppearance](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturecustomappearance) fornece a funcionalidade correspondente. O seguinte trecho de código demonstra como mudar o idioma no texto da assinatura digital: 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

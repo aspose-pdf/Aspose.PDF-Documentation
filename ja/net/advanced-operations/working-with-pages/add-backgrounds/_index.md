@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-背景画像は、文書にウォーターマークやその他の微妙なデザインを追加するために使用できます。Aspose.PDF for .NETでは、各PDF文書はページのコレクションであり、各ページはアーティファクトのコレクションを含んでいます。[BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact)クラスを使用して、ページオブジェクトに背景画像を追加できます。
+背景画像は、文書にウォーターマークやその他の微妙なデザインを追加するために使用できます。Aspose.PDF for .NETでは、各PDF文書はページのコレクションであり、各ページはアーティファクトのコレクションを含んでいます。[BackgroundArtifact](https://reference.aspose.com/pdf/ja/net/aspose.pdf/backgroundartifact)クラスを使用して、ページオブジェクトに背景画像を追加できます。
 
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 

@@ -84,7 +84,7 @@ Aspose.PDF for NET은 PDF 문서가 처음 생성될 때 테이블을 삽입/생
 
 {{% /alert %}}
 
-테이블을 제거하기 위해서는 [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) 클래스를 사용하여 기존 PDF의 테이블을 가져온 다음 [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove) 메서드를 호출해야 합니다.
+테이블을 제거하기 위해서는 [TableAbsorber](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/tableabsorber) 클래스를 사용하여 기존 PDF의 테이블을 가져온 다음 [Remove](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/tableabsorber/methods/remove) 메서드를 호출해야 합니다.
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 

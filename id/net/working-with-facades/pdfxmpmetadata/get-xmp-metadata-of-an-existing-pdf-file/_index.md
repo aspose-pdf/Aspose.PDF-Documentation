@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Untuk mendapatkan metadata XMP dari file PDF, Anda perlu membuat objek [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) dan mengikat file PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). Anda dapat mengirimkan properti metadata XMP tertentu ke objek [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) untuk mendapatkan nilainya. Potongan kode berikut menunjukkan cara mendapatkan metadata XMP dari file PDF.
+Untuk mendapatkan metadata XMP dari file PDF, Anda perlu membuat objek [PdfXmpMetadata](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfxmpmetadata) dan mengikat file PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/facade/methods/bindpdf/index). Anda dapat mengirimkan properti metadata XMP tertentu ke objek [PdfXmpMetadata](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfxmpmetadata) untuk mendapatkan nilainya. Potongan kode berikut menunjukkan cara mendapatkan metadata XMP dari file PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

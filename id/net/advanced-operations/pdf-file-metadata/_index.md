@@ -83,7 +83,7 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 ## Dapatkan Informasi File PDF
 
-Untuk mendapatkan informasi spesifik file dari file PDF, Anda pertama-tama perlu mendapatkan objek [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) menggunakan properti [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Setelah objek [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) diambil, Anda dapat mendapatkan nilai dari properti individual. Potongan kode berikut menunjukkan cara mendapatkan informasi file PDF.
+Untuk mendapatkan informasi spesifik file dari file PDF, Anda pertama-tama perlu mendapatkan objek [DocumentInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf/documentinfo) menggunakan properti [Info](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/info) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Setelah objek [DocumentInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf/documentinfo) diambil, Anda dapat mendapatkan nilai dari properti individual. Potongan kode berikut menunjukkan cara mendapatkan informasi file PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -142,7 +142,7 @@ private static void GetPDFFileInformation()
 
 Aspose.PDF for .NET memungkinkan Anda untuk mengatur informasi spesifik file untuk PDF, informasi seperti penulis, tanggal pembuatan, subjek, dan judul. Untuk mengatur informasi ini:
 
-1. Buat objek [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo).
+1. Buat objek [DocumentInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf/documentinfo).
 1. Atur nilai dari properti.
 1. Simpan dokumen yang diperbarui menggunakan metode Save dari kelas Document.
 
@@ -214,8 +214,8 @@ private static void SetFileInformation()
 
 Aspose.PDF memungkinkan Anda untuk mengakses metadata XMP dari file PDF. Untuk mendapatkan metadata file PDF:
 
-1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dan buka file PDF input.
-1. Dapatkan metadata file menggunakan properti [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
+1. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dan buka file PDF input.
+1. Dapatkan metadata file menggunakan properti [Metadata](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/metadata).
 
 Potongan kode berikut menunjukkan cara mendapatkan metadata dari file PDF.
 
@@ -265,9 +265,9 @@ private static void GetXMPMetadata()
 
 Aspose.PDF memungkinkan Anda untuk mengatur metadata dalam file PDF. Untuk mengatur metadata:
 
-1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Atur nilai metadata menggunakan properti [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
-1. Simpan dokumen yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Atur nilai metadata menggunakan properti [Metadata](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/properties/metadata).
+1. Simpan dokumen yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save) dari objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 
 Potongan kode berikut menunjukkan cara mengatur metadata dalam file PDF.
 

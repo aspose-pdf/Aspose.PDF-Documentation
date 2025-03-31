@@ -80,7 +80,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 Este tópico explica como usar as classes de operador no namespace Aspose.PDF, que fornecem a capacidade de obter informações de resolução e dimensão sobre imagens sem precisar extraí-las.
 
-Existem diferentes maneiras de alcançar isso. Este artigo explica como usar um `arraylist` e [classes de colocação de imagem](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement).
+Existem diferentes maneiras de alcançar isso. Este artigo explica como usar um `arraylist` e [classes de colocação de imagem](https://reference.aspose.com/pdf/pt/net/aspose.pdf/imageplacement).
 
 1. Primeiro, carregue o arquivo PDF de origem (com imagens).
 1. Em seguida, crie um objeto ArrayList para armazenar os nomes de quaisquer imagens no documento.

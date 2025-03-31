@@ -87,10 +87,10 @@ sitemap:
 
 캐럿 주석을 생성하는 단계:
 
-1. PDF 파일 로드 - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. 새 [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation)을 생성하고 캐럿 매개변수(new Rectangle, title, Subject, Flags, color, width, StartingStyle 및 EndingStyle)를 설정합니다. 이 주석은 텍스트 삽입을 나타내는 데 사용됩니다.
-1. 새 [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation)을 생성하고 캐럿 매개변수(new Rectangle, title, Subject, Flags, color, width, StartingStyle 및 EndingStyle)를 설정합니다. 이 주석은 텍스트 교체를 나타내는 데 사용됩니다.
-1. 새 [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation)을 생성하고 매개변수(new Rectangle, title, color, new QuadPoints 및 new points, Subject, InReplyTo, ReplyType)를 설정합니다.
+1. PDF 파일 로드 - new [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document).
+1. 새 [Caret Annotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/caretannotation)을 생성하고 캐럿 매개변수(new Rectangle, title, Subject, Flags, color, width, StartingStyle 및 EndingStyle)를 설정합니다. 이 주석은 텍스트 삽입을 나타내는 데 사용됩니다.
+1. 새 [Caret Annotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/caretannotation)을 생성하고 캐럿 매개변수(new Rectangle, title, Subject, Flags, color, width, StartingStyle 및 EndingStyle)를 설정합니다. 이 주석은 텍스트 교체를 나타내는 데 사용됩니다.
+1. 새 [StrikeOutAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/strikeoutannotation)을 생성하고 매개변수(new Rectangle, title, color, new QuadPoints 및 new points, Subject, InReplyTo, ReplyType)를 설정합니다.
 1. 그런 다음 페이지에 주석을 추가할 수 있습니다.
 
 다음 코드 스니펫은 PDF 파일에 캐럿 주석을 추가하는 방법을 보여줍니다:
@@ -249,7 +249,7 @@ private static void RedactPage()
 
 ### 파사드 접근 방식
 
-Aspose.Pdf.Facades 네임스페이스에는 PDF 파일 내의 기존 주석을 조작하는 기능을 제공하는 [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor)라는 클래스도 있습니다. 이 클래스에는 특정 페이지 영역을 제거하는 기능을 제공하는 [RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea)라는 메서드가 포함되어 있습니다.
+Aspose.Pdf.Facades 네임스페이스에는 PDF 파일 내의 기존 주석을 조작하는 기능을 제공하는 [PdfAnnotationEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor)라는 클래스도 있습니다. 이 클래스에는 특정 페이지 영역을 제거하는 기능을 제공하는 [RedactArea(..)](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea)라는 메서드가 포함되어 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

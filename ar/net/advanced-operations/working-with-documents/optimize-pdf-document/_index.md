@@ -100,9 +100,9 @@ sitemap:
 
 تشير عملية التحسين، أو الترتيب للويب، إلى جعل ملف PDF مناسبًا للتصفح عبر الإنترنت باستخدام متصفح الويب. لتحسين ملف للعرض على الويب:
 
-1. افتح المستند المدخل في كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. استخدم طريقة [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
-1. احفظ المستند المحسن باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
+1. افتح المستند المدخل في كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. استخدم طريقة [Optimize](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/optimize).
+1. احفظ المستند المحسن باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save).
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
@@ -129,7 +129,7 @@ private static void OptimizeDocument()
 
 ## تقليل حجم PDF
 
-تسمح لك طريقة [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) بتقليل حجم المستند عن طريق التخلص من المعلومات غير الضرورية. بشكل افتراضي، تعمل هذه الطريقة كما يلي:
+تسمح لك طريقة [OptimizeResources()](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/optimizeresources) بتقليل حجم المستند عن طريق التخلص من المعلومات غير الضرورية. بشكل افتراضي، تعمل هذه الطريقة كما يلي:
 
 - يتم إزالة الموارد التي لا تستخدم في صفحات المستند.
 - يتم دمج الموارد المتساوية في كائن واحد.
@@ -158,11 +158,11 @@ private static void ShrinkDocument()
 
 ## إدارة استراتيجية التحسين
 
-يمكننا أيضًا تخصيص استراتيجية التحسين. حاليًا، تستخدم طريقة [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) 5 تقنيات. يمكن تطبيق هذه التقنيات باستخدام طريقة OptimizeResources() مع معلمة [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions).
+يمكننا أيضًا تخصيص استراتيجية التحسين. حاليًا، تستخدم طريقة [OptimizeResources()](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/optimizeresources/methods/1) 5 تقنيات. يمكن تطبيق هذه التقنيات باستخدام طريقة OptimizeResources() مع معلمة [OptimizationOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/optimizationoptions).
 
 ### تقليل أو ضغط جميع الصور
 
-لدينا طريقتان للعمل مع الصور: تقليل جودة الصورة و/أو تغيير دقتها. في أي حال، يجب تطبيق [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions). في المثال التالي، نقوم بتقليل الصور عن طريق تقليل [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) إلى 50.
+لدينا طريقتان للعمل مع الصور: تقليل جودة الصورة و/أو تغيير دقتها. في أي حال، يجب تطبيق [ImageCompressionOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/imagecompressionoptions). في المثال التالي، نقوم بتقليل الصور عن طريق تقليل [ImageQuality](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) إلى 50.
 
 `ImageQuality` يعمل بشكل مشابه لجودة JPEG، حيث القيمة 0 هي الأدنى والقيمة 100 هي الأعلى.
 
@@ -230,7 +230,7 @@ private static void ResizeImages()
 }
 ```
 
-مسألة أخرى مهمة هي وقت التنفيذ. ولكن مرة أخرى، يمكننا إدارة هذا الإعداد أيضًا. حاليًا، يمكننا استخدام خوارزميتين - القياسية والسريعة. للتحكم في وقت التنفيذ، يجب علينا تعيين خاصية [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). توضح المقتطفات التالية خوارزمية السريعة:
+مسألة أخرى مهمة هي وقت التنفيذ. ولكن مرة أخرى، يمكننا إدارة هذا الإعداد أيضًا. حاليًا، يمكننا استخدام خوارزميتين - القياسية والسريعة. للتحكم في وقت التنفيذ، يجب علينا تعيين خاصية [Version](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). توضح المقتطفات التالية خوارزمية السريعة:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -356,7 +356,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 }
 ```
 
-بالإضافة إلى ذلك، يمكننا استخدام إعدادات [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent). إذا تم تعيين هذه الخاصية إلى true، سيتم إعادة استخدام محتوى الصفحة عند تحسين المستند للصفحات المتطابقة.
+بالإضافة إلى ذلك، يمكننا استخدام إعدادات [AllowReusePageContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent). إذا تم تعيين هذه الخاصية إلى true، سيتم إعادة استخدام محتوى الصفحة عند تحسين المستند للصفحات المتطابقة.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

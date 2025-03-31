@@ -83,9 +83,9 @@ Aspose.PDFライブラリを使用してPDF暗号化がどのように機能す�
 
 ## 異なる暗号化タイプとアルゴリズムを使用してPDFファイルを暗号化する
 
-PDFファイルを暗号化するには、[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity)オブジェクトを作成し、次に[EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile)メソッドを呼び出す必要があります。ユーザーパスワード、オーナーパスワード、および権限を[EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile)メソッドに渡すことができます。また、このメソッドにKeySizeとAlgorithmの値を渡す必要があります。
+PDFファイルを暗号化するには、[PdfFileSecurity](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity)オブジェクトを作成し、次に[EncryptFile](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile)メソッドを呼び出す必要があります。ユーザーパスワード、オーナーパスワード、および権限を[EncryptFile](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile)メソッドに渡すことができます。また、このメソッドにKeySizeとAlgorithmの値を渡す必要があります。
 
-以下は、可能な[CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm)のリストです：
+以下は、可能な[CryptoAlgorithm](https://reference.aspose.com/pdf/ja/net/aspose.pdf/cryptoalgorithm)のリストです：
 
 |**メンバー名**|**値**|**説明**|
 | :- | :- | :- |

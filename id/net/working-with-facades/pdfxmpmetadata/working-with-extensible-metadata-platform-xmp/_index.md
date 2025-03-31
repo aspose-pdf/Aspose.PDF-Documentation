@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Platform Metadata Ekstensibel (XMP) adalah standar yang dibuat oleh Adobe Systems Inc. Standar ini dikembangkan untuk memproses dan menyimpan metadata standar dan proprietary. Metadata ini dapat disematkan ke dalam berbagai format file, tetapi dalam artikel ini kita akan fokus hanya pada format file PDF. Kita akan melihat bagaimana kita dapat menyematkan metadata dalam file PDF menggunakan namespace Aspose.Pdf.Facades dalam Aspose.PDF for .NET. Kita akan menggunakan kelas [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) untuk memanipulasi XMP dalam dokumen PDF.
+Platform Metadata Ekstensibel (XMP) adalah standar yang dibuat oleh Adobe Systems Inc. Standar ini dikembangkan untuk memproses dan menyimpan metadata standar dan proprietary. Metadata ini dapat disematkan ke dalam berbagai format file, tetapi dalam artikel ini kita akan fokus hanya pada format file PDF. Kita akan melihat bagaimana kita dapat menyematkan metadata dalam file PDF menggunakan namespace Aspose.Pdf.Facades dalam Aspose.PDF for .NET. Kita akan menggunakan kelas [PdfXmpMetadata](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfxmpmetadata) untuk memanipulasi XMP dalam dokumen PDF.
 
 {{% /alert %}}
 
@@ -88,7 +88,7 @@ Sebuah file PDF melalui banyak tahap selama masa hidupnya. Kita membuat dokumen 
 ## Penjelasan
 
 Untuk memanipulasi XMP menggunakan Aspose.Pdf.Facades, kita akan menggunakan kelas [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class). Kita akan menggunakan kelas ini untuk memanipulasi properti metadata yang telah ditentukan sebelumnya. Kelas [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) menambahkan properti ini ke file PDF. Ini juga membantu untuk membuka dan menyimpan file PDF di mana kita menambahkan metadata. Jadi, dengan menggunakan kelas [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class), kita dapat dengan mudah memanipulasi XMP dalam file PDF.
-Potongan kode berikut akan membantu Anda memahami cara menggunakan kelas [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) untuk bekerja dengan XMP:
+Potongan kode berikut akan membantu Anda memahami cara menggunakan kelas [PdfXmpMetadata](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfxmpmetadata) untuk bekerja dengan XMP:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

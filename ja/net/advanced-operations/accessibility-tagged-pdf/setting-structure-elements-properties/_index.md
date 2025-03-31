@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-タグ付きPDFドキュメントの構造要素のプロパティを設定するために、Aspose.PDFは[CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement)および[CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index)メソッドを[ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent)インターフェースで提供しています。
+タグ付きPDFドキュメントの構造要素のプロパティを設定するために、Aspose.PDFは[CreateSectElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement)および[CreateHeaderElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index)メソッドを[ITaggedContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent)インターフェースで提供しています。
 
 以下のコードスニペットは、タグ付きPDFドキュメントの構造要素のプロパティを設定する方法を示しています：
 
@@ -168,7 +168,7 @@ private static void SetProperties()
 
 ## テキスト構造要素の設定
 
-タグ付きPDFドキュメントのテキスト構造要素を設定するために、Aspose.PDFは[ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement)クラスを提供しています。以下のコードスニペットは、タグ付きPDFドキュメントのテキスト構造要素を設定する方法を示しています：
+タグ付きPDFドキュメントのテキスト構造要素を設定するために、Aspose.PDFは[ParagraphElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/paragraphelement)クラスを提供しています。以下のコードスニペットは、タグ付きPDFドキュメントのテキスト構造要素を設定する方法を示しています：
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -241,7 +241,7 @@ private static void SetTextElements()
 
 ## テキストブロック構造要素の設定
 
-タグ付きPDFドキュメントのテキストブロック構造要素を設定するために、Aspose.PDFは[HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement)および[ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement)クラスを提供しています。これらのクラスのオブジェクトを[StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement)オブジェクトの子として追加できます。
+タグ付きPDFドキュメントのテキストブロック構造要素を設定するために、Aspose.PDFは[HeaderElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/headerelement)および[ParagraphElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/paragraphelement)クラスを提供しています。これらのクラスのオブジェクトを[StructureElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structureelement)オブジェクトの子として追加できます。
 以下のコードスニペットは、タグ付きPDFドキュメントのテキストブロック構造要素を設定する方法を示しています：
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -349,7 +349,7 @@ private static void SetTextBlockElements()
 
 ## インライン構造要素の設定
 
-タグ付きPDFドキュメントのインライン構造要素を設定するために、Aspose.PDFは[SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement)および[ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement)クラスを提供しています。これらのクラスのオブジェクトを[StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement)オブジェクトの子として追加できます。以下のコードスニペットは、タグ付きPDFドキュメントのインライン構造要素を設定する方法を示しています：
+タグ付きPDFドキュメントのインライン構造要素を設定するために、Aspose.PDFは[SpanElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/spanelement)および[ParagraphElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/paragraphelement)クラスを提供しています。これらのクラスのオブジェクトを[StructureElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structureelement)オブジェクトの子として追加できます。以下のコードスニペットは、タグ付きPDFドキュメントのインライン構造要素を設定する方法を示しています：
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -588,7 +588,7 @@ private static void SetInlineElements()
 
 ## カスタムタグ名の設定
 
-タグ付きPDFドキュメントの要素のカスタムタグ名を設定するために、Aspose.PDFはStructureElementクラスの[SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag)メソッドを提供しています。以下のコードスニペットは、カスタムタグ名を設定する方法を示しています：
+タグ付きPDFドキュメントの要素のカスタムタグ名を設定するために、Aspose.PDFはStructureElementクラスの[SetTag](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structureelement/methods/settag)メソッドを提供しています。以下のコードスニペットは、カスタムタグ名を設定する方法を示しています：
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -733,7 +733,7 @@ private static void SetTagName()
 
 **この機能はバージョン19.4以上でサポートされています。**
 
-タグ付きPDFドキュメントにリンク構造要素を設定するために、Aspose.PDFは[CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement)メソッドを[ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent)インターフェースで提供しています。以下のコードスニペットは、タグ付きPDFドキュメントのテキストを持つ段落に構造要素を設定する方法を示しています：
+タグ付きPDFドキュメントにリンク構造要素を設定するために、Aspose.PDFは[CreateLinkElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement)メソッドを[ITaggedContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent)インターフェースで提供しています。以下のコードスニペットは、タグ付きPDFドキュメントのテキストを持つ段落に構造要素を設定する方法を示しています：
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1077,7 +1077,7 @@ private static void AddLinkElement()
 
 ## ノート構造要素の設定
 
-Aspose.PDF for .NET APIは、タグ付きPDFドキュメントに[NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement)を追加することも可能です。以下のコードスニペットは、タグ付きPDFドキュメントにノート要素を追加する方法を示しています：
+Aspose.PDF for .NET APIは、タグ付きPDFドキュメントに[NoteElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/noteelement)を追加することも可能です。以下のコードスニペットは、タグ付きPDFドキュメントにノート要素を追加する方法を示しています：
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

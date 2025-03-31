@@ -83,7 +83,7 @@ sitemap:
 
 ## 添加椭圆对象
 
-Aspose.PDF for .NET支持将[椭圆](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse)对象添加到PDF文档中。它还提供用特定颜色填充椭圆对象的功能。
+Aspose.PDF for .NET支持将[椭圆](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/ellipse)对象添加到PDF文档中。它还提供用特定颜色填充椭圆对象的功能。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,7 +133,7 @@ private static void Ellipse()
 
 ## 创建填充椭圆对象
 
-以下代码片段演示如何添加一个用颜色填充的[椭圆](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse)对象。
+以下代码片段演示如何添加一个用颜色填充的[椭圆](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/ellipse)对象。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

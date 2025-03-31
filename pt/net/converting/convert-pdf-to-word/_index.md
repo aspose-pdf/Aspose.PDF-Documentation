@@ -118,7 +118,7 @@ O seguinte trecho de código C# mostra como converter um arquivo PDF em formato 
 
 <a name="csharp-pdf-to-doc"><strong>Passos: Converter PDF para DOC em C#</strong></a>
 
-1. Crie uma instância do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) com o documento PDF de origem.
+1. Crie uma instância do objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/) com o documento PDF de origem.
 2. Salve-o no formato **SaveFormat.Doc** chamando o método **Document.Save()**.
 
 ```csharp
@@ -139,13 +139,13 @@ private static void ConvertPDFtoWord()
 
 ### Usando a Classe DocSaveOptions
 
-A classe [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) fornece inúmeras propriedades que melhoram a conversão de arquivos PDF para o formato DOC. Entre essas propriedades, Mode permite que você especifique o modo de reconhecimento para o conteúdo PDF. Você pode selecionar qualquer valor da enumeração RecognitionMode para esta propriedade. Cada um desses valores tem benefícios e limitações específicas:
+A classe [`DocSaveOptions`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/docsaveoptions) fornece inúmeras propriedades que melhoram a conversão de arquivos PDF para o formato DOC. Entre essas propriedades, Mode permite que você especifique o modo de reconhecimento para o conteúdo PDF. Você pode selecionar qualquer valor da enumeração RecognitionMode para esta propriedade. Cada um desses valores tem benefícios e limitações específicas:
 
-- O modo [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) é rápido e bom para preservar a aparência original do arquivo PDF, mas a editabilidade do documento resultante pode ser limitada. Cada bloco de texto visualmente agrupado no PDF original é convertido em uma caixa de texto no documento de saída. Isso alcança uma semelhança máxima com o original, de modo que o documento de saída parece bom, mas consiste inteiramente em caixas de texto, que podem ser editadas no Microsoft Word, o que é bastante desafiador.
-- O modo [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) é o modo de reconhecimento completo, onde o mecanismo realiza agrupamento e análise em múltiplos níveis para restaurar o documento original conforme a intenção do autor, enquanto produz um documento facilmente editável. A limitação é que o documento de saída pode parecer diferente do original.
+- O modo [`Textbox`](https://reference.aspose.com/pdf/pt/net/aspose.pdf.docsaveoptions/recognitionmode) é rápido e bom para preservar a aparência original do arquivo PDF, mas a editabilidade do documento resultante pode ser limitada. Cada bloco de texto visualmente agrupado no PDF original é convertido em uma caixa de texto no documento de saída. Isso alcança uma semelhança máxima com o original, de modo que o documento de saída parece bom, mas consiste inteiramente em caixas de texto, que podem ser editadas no Microsoft Word, o que é bastante desafiador.
+- O modo [`Flow`](https://reference.aspose.com/pdf/pt/net/aspose.pdf.docsaveoptions/recognitionmode) é o modo de reconhecimento completo, onde o mecanismo realiza agrupamento e análise em múltiplos níveis para restaurar o documento original conforme a intenção do autor, enquanto produz um documento facilmente editável. A limitação é que o documento de saída pode parecer diferente do original.
 
-A propriedade [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) pode ser usada para controlar a proximidade relativa entre elementos textuais. Isso significa que a distância é normalizada pelo tamanho da fonte. Fontes maiores podem ter espaços maiores entre as sílabas e ainda serem consideradas um todo único. É especificado como uma porcentagem do tamanho da fonte; por exemplo, 1 = 100%. Isso significa que dois caracteres de 12pt colocados a 12 pt de distância são proximais.
-- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) é usado para ativar o reconhecimento de marcadores durante a conversão.
+A propriedade [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) pode ser usada para controlar a proximidade relativa entre elementos textuais. Isso significa que a distância é normalizada pelo tamanho da fonte. Fontes maiores podem ter espaços maiores entre as sílabas e ainda serem consideradas um todo único. É especificado como uma porcentagem do tamanho da fonte; por exemplo, 1 = 100%. Isso significa que dois caracteres de 12pt colocados a 12 pt de distância são proximais.
+- [`RecognitionBullets`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/docsaveoptions/properties/recognizebullets) é usado para ativar o reconhecimento de marcadores durante a conversão.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -190,7 +190,7 @@ O seguinte trecho de código C# mostra como converter um arquivo PDF em formato 
 
 <a name="csharp-pdf-to-docx"><strong>Passos: Converter PDF para DOCX em C#</strong></a>
 
-1. Crie uma instância do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) com o documento PDF de origem.
+1. Crie uma instância do objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/) com o documento PDF de origem.
 2. Salve-o no formato **SaveFormat.DocX** chamando o método **Document.Save()**.
 
 ```csharp

@@ -81,7 +81,7 @@ sitemap:
 
 ## PDFポートフォリオの作成方法
 
-Aspose.PDFを使用すると、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスを使用してPDFポートフォリオ文書を作成できます。[FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification)クラスを使用してファイルを取得した後、Document.Collectionオブジェクトにファイルを追加します。ファイルが追加されたら、DocumentクラスのSaveメソッドを使用してポートフォリオ文書を保存します。
+Aspose.PDFを使用すると、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスを使用してPDFポートフォリオ文書を作成できます。[FileSpecification](https://reference.aspose.com/pdf/ja/net/aspose.pdf/filespecification)クラスを使用してファイルを取得した後、Document.Collectionオブジェクトにファイルを追加します。ファイルが追加されたら、DocumentクラスのSaveメソッドを使用してポートフォリオ文書を保存します。
 
 以下の例では、Microsoft Excelファイル、Word文書、および画像ファイルを使用してPDFポートフォリオを作成します。
 
@@ -131,7 +131,7 @@ private static void CreatePortfolio()
 
 PDFポートフォリオを使用すると、さまざまなソース（たとえば、PDF、Word、Excel、JPEGファイル）からのコンテンツを1つの統一コンテナにまとめることができます。元のファイルはそれぞれのアイデンティティを保持しながら、PDFポートフォリオファイルに組み込まれます。ユーザーは、他のコンポーネントファイルとは独立して、各コンポーネントファイルを開いて、読み取り、編集、フォーマットできます。
 
-Aspose.PDFを使用すると、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスを使用してPDFポートフォリオ文書を作成できます。また、PDFポートフォリオからファイルを抽出する機能も提供しています。
+Aspose.PDFを使用すると、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスを使用してPDFポートフォリオ文書を作成できます。また、PDFポートフォリオからファイルを抽出する機能も提供しています。
 
 以下のコードスニペットは、PDFポートフォリオからファイルを抽出する手順を示しています。
 

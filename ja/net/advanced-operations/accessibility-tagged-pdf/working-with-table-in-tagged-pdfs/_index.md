@@ -81,7 +81,7 @@ sitemap:
 
 ## タグ付きPDFでのテーブルの作成
 
-Aspose.PDF for .NETを使用すると、タグ付きPDFドキュメントにテーブルを作成できます。テーブルを操作するために、APIは[TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement)クラスを提供します。テーブルを作成するには、[ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent)インターフェースの[CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement)メソッドを使用できます。さらに、TableElementクラスの[CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead)、[CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody)、および[CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot)メソッドを使用して、それぞれテーブルヘッダー、テーブルボディ、およびテーブルフッターを作成できます。テーブル行を作成するには、[TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement)クラスの[CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr)メソッドを使用できます。また、作成したPDFドキュメントがPDF/UAコンプライアンスであるかどうかを、DocumentクラスのValidate()メソッドを使用して確認できます。
+Aspose.PDF for .NETを使用すると、タグ付きPDFドキュメントにテーブルを作成できます。テーブルを操作するために、APIは[TableElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement)クラスを提供します。テーブルを作成するには、[ITaggedContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent)インターフェースの[CreateTableElement()](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement)メソッドを使用できます。さらに、TableElementクラスの[CreateTHead()](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/methods/createthead)、[CreateTBody()](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody)、および[CreateTFoot()](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot)メソッドを使用して、それぞれテーブルヘッダー、テーブルボディ、およびテーブルフッターを作成できます。テーブル行を作成するには、[TableRowCollectionElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablerowcollectionelement)クラスの[CreateTR()](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr)メソッドを使用できます。また、作成したPDFドキュメントがPDF/UAコンプライアンスであるかどうかを、DocumentクラスのValidate()メソッドを使用して確認できます。
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
@@ -357,23 +357,23 @@ private static void CreateTable()
 
 ## テーブル要素のスタイル設定
 
-Aspose.PDF for .NETを使用すると、タグ付きPDFドキュメント内のテーブルにスタイルを設定できます。テーブルにスタイルを設定するには、[ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent)インターフェースの[CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement)メソッドを使用してテーブルを作成し、[TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement)クラスのプロパティを使用してテーブルのスタイルを設定します。以下は、テーブルにスタイルを設定するために使用できるプロパティのリストです：
+Aspose.PDF for .NETを使用すると、タグ付きPDFドキュメント内のテーブルにスタイルを設定できます。テーブルにスタイルを設定するには、[ITaggedContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent)インターフェースの[CreateTableElement()](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement)メソッドを使用してテーブルを作成し、[TableElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement)クラスのプロパティを使用してテーブルのスタイルを設定します。以下は、テーブルにスタイルを設定するために使用できるプロパティのリストです：
 
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/border).
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
-- [CornerStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
-- [Broken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
-- [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
-- [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
-- [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
-- [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
-- [DefaultColumnWidth](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
-- [IsBroken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
-- [IsBordersIncluded](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
-- [Left](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/left).
-- [Top](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/top).
+- [BackgroundColor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/border).
+- [Alignment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
+- [CornerStyle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
+- [Broken](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
+- [ColumnAdjustment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
+- [ColumnWidths](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
+- [DefaultCellBorder](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
+- [DefaultCellPadding](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
+- [DefaultColumnWidth](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
+- [IsBroken](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
+- [IsBordersIncluded](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
+- [Left](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/left).
+- [Top](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tableelement/properties/top).
 
 以下のコードスニペットは、タグ付きPDFドキュメント内のテーブルにスタイルを設定する方法を示しています：
 
@@ -575,7 +575,7 @@ private static void StyleTable()
 
 ## テーブル行のスタイル設定
 
-Aspose.PDF for .NETを使用すると、タグ付きPDFドキュメント内のテーブル行にスタイルを設定できます。テーブル行にスタイルを設定するには、[TableTRElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tabletrelement)クラスのプロパティを使用できます。以下は、テーブル行にスタイルを設定するために使用できるプロパティのリストです：
+Aspose.PDF for .NETを使用すると、タグ付きPDFドキュメント内のテーブル行にスタイルを設定できます。テーブル行にスタイルを設定するには、[TableTRElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tabletrelement)クラスのプロパティを使用できます。以下は、テーブル行にスタイルを設定するために使用できるプロパティのリストです：
 
 - BackgroundColor.
 - Border.
@@ -772,18 +772,18 @@ private static void StyleTableRow()
 
 ## テーブルセルのスタイル設定
 
-Aspose.PDF for .NETを使用すると、タグ付きPDFドキュメント内のテーブルセルにスタイルを設定できます。テーブルセルにスタイルを設定するには、[TableCellElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement)クラスのプロパティを使用できます。以下は、テーブルセルにスタイルを設定するために使用できるプロパティのリストです：
+Aspose.PDF for .NETを使用すると、タグ付きPDFドキュメント内のテーブルセルにスタイルを設定できます。テーブルセルにスタイルを設定するには、[TableCellElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement)クラスのプロパティを使用できます。以下は、テーブルセルにスタイルを設定するために使用できるプロパティのリストです：
 
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
-- [IsNoBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
-- [Margin](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
-- [IsWordWrapped](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
-- [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
-- [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
-- [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
+- [BackgroundColor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
+- [IsNoBorder](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
+- [Margin](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
+- [Alignment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
+- [IsWordWrapped](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
+- [VerticalAlignment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
+- [ColSpan](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
+- [RowSpan](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
 
 以下のコードスニペットは、タグ付きPDFドキュメント内のテーブルセルにスタイルを設定する方法を示しています：
 

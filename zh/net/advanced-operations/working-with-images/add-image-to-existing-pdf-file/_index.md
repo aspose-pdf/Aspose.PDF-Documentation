@@ -155,7 +155,7 @@ private static void AddImageToPDF()
 
 ## 在现有 PDF 文件中添加图像（外观）
 
-还有一种替代的、更简单的方法可以将图像添加到 PDF 文件中。您可以使用 [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法。 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法需要添加的图像、需要添加图像的页面编号和坐标信息。之后，使用 Close 方法保存更新后的 PDF 文件。以下代码片段向您展示如何在现有 PDF 文件中添加图像。
+还有一种替代的、更简单的方法可以将图像添加到 PDF 文件中。您可以使用 [PdfFileMend](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法。 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法需要添加的图像、需要添加图像的页面编号和坐标信息。之后，使用 Close 方法保存更新后的 PDF 文件。以下代码片段向您展示如何在现有 PDF 文件中添加图像。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -324,7 +324,7 @@ private static void ExtractImageTypesFromPDF()
 
 ## 控制图像质量
 
-可以控制添加到 PDF 文件中的图像的质量。使用 [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection) 类中的重载 [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) 方法。
+可以控制添加到 PDF 文件中的图像的质量。使用 [XImageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/ximagecollection) 类中的重载 [Replace](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ximagecollection/replace/methods/1) 方法。
 
 以下代码片段演示如何将文档中的所有图像转换为使用 80% 质量进行压缩的 JPEG。
 

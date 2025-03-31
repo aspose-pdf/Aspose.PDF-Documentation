@@ -81,7 +81,7 @@ sitemap:
 
 ## Como Criar um Portfólio PDF
 
-Aspose.PDF permite criar documentos de Portfólio PDF usando a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) classe. Adicione um arquivo em um objeto Document.Collection após obtê-lo com a [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) classe. Quando os arquivos forem adicionados, use o método Save da classe Document para salvar o documento do portfólio.
+Aspose.PDF permite criar documentos de Portfólio PDF usando a [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document) classe. Adicione um arquivo em um objeto Document.Collection após obtê-lo com a [FileSpecification](https://reference.aspose.com/pdf/pt/net/aspose.pdf/filespecification) classe. Quando os arquivos forem adicionados, use o método Save da classe Document para salvar o documento do portfólio.
 
 O exemplo a seguir usa um arquivo Microsoft Excel, um documento Word e um arquivo de imagem para criar um Portfólio PDF.
 
@@ -131,7 +131,7 @@ private static void CreatePortfolio()
 
 Portfólios PDF permitem reunir conteúdo de uma variedade de fontes (por exemplo, arquivos PDF, Word, Excel, JPEG) em um único contêiner unificado. Os arquivos originais mantêm suas identidades individuais, mas são montados em um arquivo de Portfólio PDF. Os usuários podem abrir, ler, editar e formatar cada arquivo componente independentemente dos outros arquivos componentes.
 
-Aspose.PDF permite a criação de documentos de Portfólio PDF usando a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) classe. Também oferece a capacidade de extrair arquivos de um portfólio PDF.
+Aspose.PDF permite a criação de documentos de Portfólio PDF usando a [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document) classe. Também oferece a capacidade de extrair arquivos de um portfólio PDF.
 
 O seguinte trecho de código mostra os passos para extrair arquivos de um portfólio PDF.
 

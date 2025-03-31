@@ -84,7 +84,7 @@ sitemap:
 
 ## PDFファイルのヘッダーにテキストを追加
 
-[TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp)クラスを使用して、PDFファイルのヘッダーにテキストを追加できます。TextStampクラスは、フォントサイズ、フォントスタイル、フォントカラーなど、テキストベースのスタンプを作成するために必要なプロパティを提供します。ヘッダーにテキストを追加するには、必要なプロパティを使用してDocumentオブジェクトとTextStampオブジェクトを作成する必要があります。その後、PDFのヘッダーにテキストを追加するために、PageのAddStampメソッドを呼び出すことができます。
+[TextStamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf/textstamp)クラスを使用して、PDFファイルのヘッダーにテキストを追加できます。TextStampクラスは、フォントサイズ、フォントスタイル、フォントカラーなど、テキストベースのスタンプを作成するために必要なプロパティを提供します。ヘッダーにテキストを追加するには、必要なプロパティを使用してDocumentオブジェクトとTextStampオブジェクトを作成する必要があります。その後、PDFのヘッダーにテキストを追加するために、PageのAddStampメソッドを呼び出すことができます。
 
 ヘッダー領域にテキストを調整するようにTopMarginプロパティを設定する必要があります。また、HorizontalAlignmentをCenter、VerticalAlignmentをTopに設定する必要があります。
 
@@ -164,7 +164,7 @@ private static void AddFooterText()
 
 ## PDFファイルのヘッダーに画像を追加
 
-[ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp)クラスを使用して、PDFファイルのヘッダーに画像を追加できます。Image Stampクラスは、フォントサイズ、フォントスタイル、フォントカラーなど、画像ベースのスタンプを作成するために必要なプロパティを提供します。ヘッダーに画像を追加するには、必要なプロパティを使用してDocumentオブジェクトとImage Stampオブジェクトを作成する必要があります。その後、PDFのヘッダーに画像を追加するために、Pageの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp)メソッドを呼び出すことができます。
+[ImageStamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf/ImageStamp)クラスを使用して、PDFファイルのヘッダーに画像を追加できます。Image Stampクラスは、フォントサイズ、フォントスタイル、フォントカラーなど、画像ベースのスタンプを作成するために必要なプロパティを提供します。ヘッダーに画像を追加するには、必要なプロパティを使用してDocumentオブジェクトとImage Stampオブジェクトを作成する必要があります。その後、PDFのヘッダーに画像を追加するために、Pageの[AddStamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page/methods/addstamp)メソッドを呼び出すことができます。
 
 {{% alert color="primary" %}}
 
@@ -210,7 +210,7 @@ PDFファイルのフッターに画像を追加するには、Image Stampクラ
 
 {{% alert color="primary" %}}
 
-[BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin)プロパティを設定して、PDFのフッター領域に画像を調整する必要があります。また、[HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment)を`Center`、[VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment)を`Bottom`に設定する必要があります。
+[BottomMargin](https://reference.aspose.com/pdf/ja/net/aspose.pdf/stamp/properties/bottommargin)プロパティを設定して、PDFのフッター領域に画像を調整する必要があります。また、[HorizontalAlignment](https://reference.aspose.com/pdf/ja/net/aspose.pdf/stamp/properties/horizontalalignment)を`Center`、[VerticalAlignment](https://reference.aspose.com/pdf/ja/net/aspose.pdf/stamp/properties/verticalalignment)を`Bottom`に設定する必要があります。
 
 {{% /alert %}}
 
@@ -250,7 +250,7 @@ private static void AddImageFooter()
 
 ヘッダー/フッターセクションにTextStampを追加するためにTopMarginまたはBottom Marginプロパティを使用できることは知っていますが、時には1つのPDF文書に複数のヘッダー/フッターを追加する必要がある場合があります。**Aspose.PDF for .NET**は、これを行う方法を説明します。
 
-この要件を達成するために、個別のTextStampオブジェクトを作成し（オブジェクトの数は必要なヘッダー/フッターの数によります）、それらをPDF文書に追加します。また、個々のスタンプオブジェクトに異なる書式情報を指定することもできます。次の例では、Documentオブジェクトと3つのTextStampオブジェクトを作成し、Pageの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp)メソッドを使用してPDFのヘッダーセクションにテキストを追加しました。次のコードスニペットは、Aspose.PDF for .NETを使用してPDFファイルのフッターに画像を追加する方法を示しています。
+この要件を達成するために、個別のTextStampオブジェクトを作成し（オブジェクトの数は必要なヘッダー/フッターの数によります）、それらをPDF文書に追加します。また、個々のスタンプオブジェクトに異なる書式情報を指定することもできます。次の例では、Documentオブジェクトと3つのTextStampオブジェクトを作成し、Pageの[AddStamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page/methods/addstamp)メソッドを使用してPDFのヘッダーセクションにテキストを追加しました。次のコードスニペットは、Aspose.PDF for .NETを使用してPDFファイルのフッターに画像を追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

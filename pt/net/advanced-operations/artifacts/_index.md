@@ -82,7 +82,7 @@ Artefatos em PDF são objetos gráficos ou outros elementos que não fazem parte
 
 O objetivo dos artefatos em PDF é permitir a distinção entre elementos de conteúdo e não conteúdo. Isso é importante para acessibilidade, pois leitores de tela e outras tecnologias assistivas podem ignorar artefatos e se concentrar no conteúdo relevante. Artefatos também podem melhorar o desempenho e a qualidade dos documentos PDF, pois podem ser omitidos na impressão, pesquisa ou cópia.
 
-Para criar um elemento como um artefato em PDF, você precisa usar a classe [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact).
+Para criar um elemento como um artefato em PDF, você precisa usar a classe [Artifact](https://reference.aspose.com/pdf/pt/net/aspose.pdf/artifact).
 Ela contém as seguintes propriedades úteis:
 
 - **Artifact.Type** – obtém o tipo de artefato (suporta valores da enumeração Artifact.ArtifactType onde os valores incluem Background, Layout, Page, Pagination e Undefined).
@@ -97,17 +97,17 @@ Ela contém as seguintes propriedades úteis:
 
 As seguintes classes também podem ser úteis para trabalhar com artefatos:
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/watermarkartifact/)
+- [ArtifactCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/artifactcollection)
+- [BackgroundArtifact](https://reference.aspose.com/pdf/pt/net/aspose.pdf/backgroundartifact/)
+- [HeaderArtifact](https://reference.aspose.com/pdf/pt/net/aspose.pdf/headerartifact/)
+- [FooterArtifact](https://reference.aspose.com/pdf/pt/net/aspose.pdf/footerartifact/)
+- [WatermarkArtifact](https://reference.aspose.com/pdf/pt/net/aspose.pdf/watermarkartifact/)
 
 ## Trabalhando com Marcas d'Água Existentes
 
 Uma marca d'água criada com o Adobe Acrobat é chamada de artefato (conforme descrito na especificação PDF 14.8.2.2 Conteúdo Real e Artefatos).
 
-Para obter todas as Marcas d'Água em uma página específica, a classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) possui a propriedade Artifacts.
+Para obter todas as Marcas d'Água em uma página específica, a classe [Page](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) possui a propriedade Artifacts.
 
 O seguinte trecho de código mostra como obter todas as marcas d'água na primeira página de um arquivo PDF.
 
@@ -140,7 +140,7 @@ private static void ExtractWatermarkFromPDF()
 
 ## Trabalhando com Fundos como Artefatos
 
-Imagens de fundo podem ser usadas para adicionar uma marca d'água ou outro design sutil a documentos. Em Aspose.PDF for .NET, cada documento PDF é uma coleção de páginas e cada página contém uma coleção de artefatos. A classe [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) pode ser usada para adicionar uma imagem de fundo a um objeto de página.
+Imagens de fundo podem ser usadas para adicionar uma marca d'água ou outro design sutil a documentos. Em Aspose.PDF for .NET, cada documento PDF é uma coleção de páginas e cada página contém uma coleção de artefatos. A classe [BackgroundArtifact](https://reference.aspose.com/pdf/pt/net/aspose.pdf/backgroundartifact) pode ser usada para adicionar uma imagem de fundo a um objeto de página.
 
 O seguinte trecho de código mostra como adicionar uma imagem de fundo às páginas PDF usando o objeto BackgroundArtifact.
 

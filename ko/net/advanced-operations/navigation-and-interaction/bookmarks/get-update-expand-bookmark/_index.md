@@ -83,9 +83,9 @@ sitemap:
 
 ## 북마크 가져오기
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션에는 PDF 파일의 모든 북마크가 포함되어 있습니다. 이 문서에서는 PDF 파일에서 북마크를 가져오는 방법과 특정 북마크가 있는 페이지를 가져오는 방법을 설명합니다.
+[Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [OutlineCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection) 컬렉션에는 PDF 파일의 모든 북마크가 포함되어 있습니다. 이 문서에서는 PDF 파일에서 북마크를 가져오는 방법과 특정 북마크가 있는 페이지를 가져오는 방법을 설명합니다.
 
-북마크를 가져오려면 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션을 반복하여 OutlineItemCollection의 각 북마크를 가져옵니다. OutlineItemCollection은 모든 북마크의 속성에 대한 액세스를 제공합니다. 다음 코드 스니펫은 PDF 파일에서 북마크를 가져오는 방법을 보여줍니다.
+북마크를 가져오려면 [OutlineCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection) 컬렉션을 반복하여 OutlineItemCollection의 각 북마크를 가져옵니다. OutlineItemCollection은 모든 북마크의 속성에 대한 액세스를 제공합니다. 다음 코드 스니펫은 PDF 파일에서 북마크를 가져오는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -213,7 +213,7 @@ private static void GetBookmarkPageNumber()
 
 ## PDF 문서에서 자식 북마크 가져오기
 
-북마크는 부모와 자식으로 계층 구조로 구성될 수 있습니다. 모든 북마크를 가져오려면 Document 객체의 Outlines 컬렉션을 반복합니다. 그러나 자식 북마크도 가져오려면 첫 번째 루프에서 얻은 각 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 객체의 모든 북마크를 반복해야 합니다. 다음 코드 스니펫은 PDF 문서에서 자식 북마크를 가져오는 방법을 보여줍니다.
+북마크는 부모와 자식으로 계층 구조로 구성될 수 있습니다. 모든 북마크를 가져오려면 Document 객체의 Outlines 컬렉션을 반복합니다. 그러나 자식 북마크도 가져오려면 첫 번째 루프에서 얻은 각 [OutlineItemCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlineitemcollection) 객체의 모든 북마크를 반복해야 합니다. 다음 코드 스니펫은 PDF 문서에서 자식 북마크를 가져오는 방법을 보여줍니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -294,7 +294,7 @@ private static void GetChildBookmarks()
 
 ## PDF 문서에서 북마크 업데이트하기
 
-PDF 파일에서 북마크를 업데이트하려면 먼저 북마크의 인덱스를 지정하여 Document 객체의 OutlineColletion 컬렉션에서 특정 북마크를 가져옵니다. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 객체로 북마크를 검색한 후에는 해당 속성을 업데이트하고 Save 메서드를 사용하여 업데이트된 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 PDF 문서에서 북마크를 업데이트하는 방법을 보여줍니다.
+PDF 파일에서 북마크를 업데이트하려면 먼저 북마크의 인덱스를 지정하여 Document 객체의 OutlineColletion 컬렉션에서 특정 북마크를 가져옵니다. [OutlineItemCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlineitemcollection) 객체로 북마크를 검색한 후에는 해당 속성을 업데이트하고 Save 메서드를 사용하여 업데이트된 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 PDF 문서에서 북마크를 업데이트하는 방법을 보여줍니다.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -350,7 +350,7 @@ private static void UpdateBookmarks()
 자식 북마크를 업데이트하려면:
 
 1. 먼저 부모 북마크를 가져온 다음 적절한 인덱스 값을 사용하여 업데이트할 자식 북마크를 PDF 파일에서 검색합니다.
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
+1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/1) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
 
 {{% alert color="primary" %}}
 
@@ -417,7 +417,7 @@ private static void UpdateChildBookmarks()
 
 ## 문서 보기 시 확장된 북마크
 
-북마크는 Document 객체의 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 컬렉션에 보관되며, 이는 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션 내에 있습니다. 그러나 PDF 파일을 볼 때 모든 북마크가 확장된 상태여야 할 필요가 있을 수 있습니다.
+북마크는 Document 객체의 [OutlineItemCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlineitemcollection) 컬렉션에 보관되며, 이는 [OutlineCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection) 컬렉션 내에 있습니다. 그러나 PDF 파일을 볼 때 모든 북마크가 확장된 상태여야 할 필요가 있을 수 있습니다.
 
 이 요구 사항을 충족하기 위해 각 개요/북마크 항목의 열기 상태를 Open으로 설정할 수 있습니다. 다음 코드 스니펫은 PDF 문서에서 각 북마크의 열기 상태를 확장된 상태로 설정하는 방법을 보여줍니다.
 

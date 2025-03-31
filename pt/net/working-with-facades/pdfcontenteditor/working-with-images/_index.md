@@ -76,7 +76,7 @@ lastmod: "2021-06-24"
 
 ## Excluir Imagens de uma Página Particular do PDF (Facades)
 
-Para excluir as imagens de uma página particular, você precisa chamar o método [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) com os parâmetros pageNumber e index. O parâmetro index representa um array de inteiros – os índices das imagens a serem excluídas. Primeiro de tudo, você precisa criar um objeto da classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) e então chamar o método [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). Depois disso, você pode salvar o arquivo PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Para excluir as imagens de uma página particular, você precisa chamar o método [DeleteImage](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) com os parâmetros pageNumber e index. O parâmetro index representa um array de inteiros – os índices das imagens a serem excluídas. Primeiro de tudo, você precisa criar um objeto da classe [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor) e então chamar o método [DeleteImage](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). Depois disso, você pode salvar o arquivo PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/methods/save/index).
 
 O seguinte trecho de código mostra como excluir imagens de uma página particular do PDF.
 
@@ -123,7 +123,7 @@ private static void DeleteImage()
 
 ## Excluir Todas as Imagens de um Arquivo PDF (Facades)
 
-Todas as imagens podem ser excluídas de um arquivo PDF usando o método [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) da classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Chame o método [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – a sobrecarga sem parâmetros – para excluir todas as imagens e, em seguida, salve o arquivo PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Todas as imagens podem ser excluídas de um arquivo PDF usando o método [DeleteImage](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) da classe [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor). Chame o método [DeleteImage](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – a sobrecarga sem parâmetros – para excluir todas as imagens e, em seguida, salve o arquivo PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/methods/save/index).
 
 O seguinte trecho de código mostra como excluir todas as imagens de um arquivo PDF.
 
@@ -170,7 +170,7 @@ private static void DeleteImages()
 
 ## Substituir Imagem em um Arquivo PDF (Facades)
 
-a [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) permite que você substitua sua imagem em um arquivo PDF, chame para isso o método [ReplaceImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) e salve o resultado.
+a [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor) permite que você substitua sua imagem em um arquivo PDF, chame para isso o método [ReplaceImage](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) e salve o resultado.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

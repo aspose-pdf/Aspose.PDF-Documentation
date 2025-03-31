@@ -79,9 +79,9 @@ sitemap:
 
 ## تعديل التعليق
 
-تتيح لك طريقة [ModifyAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) تغيير السمات الأساسية للتعليق مثل الموضوع، تاريخ التعديل، المؤلف، لون التعليق، وعلم الفتح. يمكنك أيضًا تعيين المؤلف مباشرة باستخدام طريقة ModifyAnnotations. توفر هذه الفئة أيضًا طريقتين مفرطتين لحذف التعليقات. الطريقة الأولى المسماة DeleteAnnotations تحذف جميع التعليقات من ملف PDF.
+تتيح لك طريقة [ModifyAnnotations](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) تغيير السمات الأساسية للتعليق مثل الموضوع، تاريخ التعديل، المؤلف، لون التعليق، وعلم الفتح. يمكنك أيضًا تعيين المؤلف مباشرة باستخدام طريقة ModifyAnnotations. توفر هذه الفئة أيضًا طريقتين مفرطتين لحذف التعليقات. الطريقة الأولى المسماة DeleteAnnotations تحذف جميع التعليقات من ملف PDF.
 
-على سبيل المثال، في الكود التالي، اعتبر تغيير المؤلف في تعليقنا باستخدام [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
+على سبيل المثال، في الكود التالي، اعتبر تغيير المؤلف في تعليقنا باستخدام [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

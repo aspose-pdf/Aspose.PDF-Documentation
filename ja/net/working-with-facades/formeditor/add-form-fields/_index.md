@@ -77,7 +77,7 @@ draft: false
 
 ## 既存のPDFファイルにフォームフィールドを追加
 
-既存のPDFファイルにフォームフィールドを追加するには、[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)クラスの[AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index)メソッドを使用する必要があります。このメソッドでは、追加したいフィールドのタイプとフィールドの名前および位置を指定する必要があります。[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)クラスのオブジェクトを作成し、[AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index)メソッドを使用してPDFに新しいフィールドを追加します。また、[SetFieldLimit](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldlimit)を使用してフィールド内の文字数の制限を指定し、最後に[Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index)メソッドを使用して更新されたPDFファイルを保存します。以下のコードスニペットは、既存のPDFファイルにフォームフィールドを追加する方法を示しています。
+既存のPDFファイルにフォームフィールドを追加するには、[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor)クラスの[AddField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/addfield/index)メソッドを使用する必要があります。このメソッドでは、追加したいフィールドのタイプとフィールドの名前および位置を指定する必要があります。[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor)クラスのオブジェクトを作成し、[AddField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/addfield/index)メソッドを使用してPDFに新しいフィールドを追加します。また、[SetFieldLimit](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/setfieldlimit)を使用してフィールド内の文字数の制限を指定し、最後に[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/save/index)メソッドを使用して更新されたPDFファイルを保存します。以下のコードスニペットは、既存のPDFファイルにフォームフィールドを追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -107,7 +107,7 @@ private static void AddField()
 
 ## 既存のPDFファイルに送信ボタンのURLを追加
 
-[AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn)メソッドを使用すると、PDFファイル内の送信ボタンのURLを設定できます。これは、送信ボタンがクリックされたときにデータが送信されるURLです。例のコードでは、URL、フィールドの名前、追加したいページ番号、およびボタンの配置座標を指定します。[AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn)メソッドには、送信ボタンフィールドの名前とURLが必要です。このメソッドは[FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor)クラスによって提供されます。以下のコードスニペットは、送信ボタンのURLを設定する方法を示しています。
+[AddSubmitBtn](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn)メソッドを使用すると、PDFファイル内の送信ボタンのURLを設定できます。これは、送信ボタンがクリックされたときにデータが送信されるURLです。例のコードでは、URL、フィールドの名前、追加したいページ番号、およびボタンの配置座標を指定します。[AddSubmitBtn](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn)メソッドには、送信ボタンフィールドの名前とURLが必要です。このメソッドは[FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor)クラスによって提供されます。以下のコードスニペットは、送信ボタンのURLを設定する方法を示しています。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -135,7 +135,7 @@ private static void AddField()
 
 ## プッシュボタン用のJavaScriptを追加
 
-[AddFieldScript](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfieldscript)メソッドを使用すると、PDFファイル内のプッシュボタンにJavaScriptを追加できます。このメソッドでは、プッシュボタンの名前とJavaScriptが必要です。このメソッドは[FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor)クラスによって提供されます。以下のコードスニペットは、プッシュボタンにJavaScriptを設定する方法を示しています。
+[AddFieldScript](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/addfieldscript)メソッドを使用すると、PDFファイル内のプッシュボタンにJavaScriptを追加できます。このメソッドでは、プッシュボタンの名前とJavaScriptが必要です。このメソッドは[FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor)クラスによって提供されます。以下のコードスニペットは、プッシュボタンにJavaScriptを設定する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,7 +83,7 @@ sitemap:
 
 > 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-[リンク注釈](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)は、ハイパーリンク、他の場所への宛先、およびドキュメントを表します。PDF標準によれば、リンク注釈は次の3つのケースで使用できます：ページビューを開く、ファイルを開く、Webページを開く。
+[リンク注釈](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/linkannotation)は、ハイパーリンク、他の場所への宛先、およびドキュメントを表します。PDF標準によれば、リンク注釈は次の3つのケースで使用できます：ページビューを開く、ファイルを開く、Webページを開く。
 
 ### ページビューを開くためのリンク注釈の使用
 

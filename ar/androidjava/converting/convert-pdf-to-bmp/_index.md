@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-تسمح لك فئة [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) بتحويل صفحات PDF إلى صور <abbr title="ملف صورة نقطية">BMP</abbr>. توفر هذه الفئة طريقة تسمى [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) والتي تتيح لك تحويل صفحة معينة من ملف PDF إلى تنسيق صورة Bmp.
+تسمح لك فئة [BmpDevice](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/bmpdevice) بتحويل صفحات PDF إلى صور <abbr title="ملف صورة نقطية">BMP</abbr>. توفر هذه الفئة طريقة تسمى [Process](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/bmpdevice/methods/process) والتي تتيح لك تحويل صفحة معينة من ملف PDF إلى تنسيق صورة Bmp.
 
 {{% alert color="primary" %}}
 

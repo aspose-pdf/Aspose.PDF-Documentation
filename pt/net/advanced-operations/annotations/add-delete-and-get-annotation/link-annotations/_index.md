@@ -83,7 +83,7 @@ sitemap:
 
 > O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-Uma [Anotação de Link](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) representa um hyperlink, um destino em outro lugar e um documento. De acordo com o Padrão PDF, a anotação de link pode ser usada em três casos: abrir visualização de página, abrir arquivo e abrir página da web.
+Uma [Anotação de Link](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/linkannotation) representa um hyperlink, um destino em outro lugar e um documento. De acordo com o Padrão PDF, a anotação de link pode ser usada em três casos: abrir visualização de página, abrir arquivo e abrir página da web.
 
 ### Usando Anotação de Link para abrir visualização de página
 

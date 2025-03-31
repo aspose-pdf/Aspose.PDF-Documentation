@@ -84,7 +84,7 @@ Este artigo mostrará como gerar um documento PDF usando o Aspose.PDF for .NET.
 
 ## Fundamentos da geração de PDF com Aspose.PDF
 
-Uma das classes mais importantes no Aspose.PDF é a [classe Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Esta classe é um mecanismo de renderização de PDF. Para apresentar uma estrutura PDF, a biblioteca Aspose.PDF utiliza o modelo Documento-Página, onde:
+Uma das classes mais importantes no Aspose.PDF é a [classe Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document). Esta classe é um mecanismo de renderização de PDF. Para apresentar uma estrutura PDF, a biblioteca Aspose.PDF utiliza o modelo Documento-Página, onde:
 
 * Documento - contém as propriedades do documento PDF, incluindo a coleção de páginas.
 * Página - contém as propriedades de uma página específica e várias coleções de elementos associados a essa página.
@@ -175,7 +175,7 @@ private static void AddTable()
 {{< /tab >}}
 {{< /tabs >}}
 
-O problema mais comum é a saída de dados em formato de tabela. A [classe Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) é usada para processar tabelas. Esta classe nos dá a capacidade de criar tabelas e colocá-las no documento, usando [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) e [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). Assim, para criar a tabela, você precisa adicionar o número necessário de linhas e preenchê-las com o número apropriado de células.
+O problema mais comum é a saída de dados em formato de tabela. A [classe Table](https://reference.aspose.com/pdf/pt/net/aspose.pdf/table) é usada para processar tabelas. Esta classe nos dá a capacidade de criar tabelas e colocá-las no documento, usando [Rows](https://reference.aspose.com/pdf/pt/net/aspose.pdf/rows) e [Cells](https://reference.aspose.com/pdf/pt/net/aspose.pdf/cell). Assim, para criar a tabela, você precisa adicionar o número necessário de linhas e preenchê-las com o número apropriado de células.
 
 O seguinte exemplo cria a tabela 4x10.
 
@@ -284,10 +284,10 @@ private static void AddTable()
 
 Ao inicializar o objeto Table, foram usadas as configurações mínimas de aparência:
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - largura das colunas (por padrão).
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - os campos padrão para a célula da tabela.
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - atributos da moldura da tabela (estilo, espessura, cor).
-* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - atributos da moldura da célula (estilo, espessura, cor).
+* [ColumnWidths](https://reference.aspose.com/pdf/pt/net/aspose.pdf/table/properties/columnwidths) - largura das colunas (por padrão).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/pt/net/aspose.pdf/table/properties/defaultcellpadding) - os campos padrão para a célula da tabela.
+* [Border](https://reference.aspose.com/pdf/pt/net/aspose.pdf/table/properties/border) - atributos da moldura da tabela (estilo, espessura, cor).
+* [DefaultCellBorder](https://reference.aspose.com/pdf/pt/net/aspose.pdf/table/properties/defaultcellborder) - atributos da moldura da célula (estilo, espessura, cor).
 
 Como resultado, obtemos a tabela 4x10 com colunas de largura igual.
 
@@ -295,7 +295,7 @@ Como resultado, obtemos a tabela 4x10 com colunas de largura igual.
 
 ## Exportando Dados de Objetos ADO.NET
 
-A classe Table fornece métodos para interagir com fontes de dados ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) e [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). O primeiro método importa dados do DataTable, o segundo do DataView.
+A classe Table fornece métodos para interagir com fontes de dados ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/pt/net/aspose.pdf.table/importdatatable/methods/1) e [ImportDataView](https://reference.aspose.com/pdf/pt/net/aspose.pdf/table/methods/importdataview). O primeiro método importa dados do DataTable, o segundo do DataView.
 Premetendo que esses objetos não são muito convenientes para trabalhar no modelo MVC, nos limitaremos a um breve exemplo. Neste exemplo (linha 50), o método ImportDataTable é chamado e recebe como parâmetros uma instância de DataTable e configurações adicionais, como a flag de cabeçalho e a posição inicial (linhas/colunas) para a saída de dados.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

@@ -85,16 +85,16 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ### Ajouter un champ de formulaire dans un document PDF
 
-La classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) fournit une collection nommée [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) qui vous aide à gérer les champs de formulaire dans un document PDF.
+La classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) fournit une collection nommée [Form](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/properties/form) qui vous aide à gérer les champs de formulaire dans un document PDF.
 
 Pour ajouter un champ de formulaire :
 
 1. Créez le champ de formulaire que vous souhaitez ajouter.
-1. Appelez la méthode Add de la collection [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form).
+1. Appelez la méthode Add de la collection [Form](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/properties/form).
 
 ### Ajouter un TextBoxField
 
-L'exemple ci-dessous montre comment ajouter un [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
+L'exemple ci-dessous montre comment ajouter un [TextBoxField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/textboxfield).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### Ajouter un RadioButtonField
 
-Les extraits de code suivants montrent comment ajouter un [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) dans un document PDF.
+Les extraits de code suivants montrent comment ajouter un [RadioButtonField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/radiobuttonfield) dans un document PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -164,7 +164,7 @@ private static void AddRadioButtonToPdf()
 }
 ```
 
-[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) peut être ajouté avec quelques annotations de widget.
+[TextBoxField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/textboxfield) peut être ajouté avec quelques annotations de widget.
 ```csharp
 // For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()

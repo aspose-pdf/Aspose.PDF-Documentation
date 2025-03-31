@@ -77,13 +77,13 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 클래스는 페이지를 회전할 수 있는 기능을 제공합니다.
+[PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor) 클래스는 페이지를 회전할 수 있는 기능을 제공합니다.
 
 {{% /alert %}}
 
 ## PageRotations를 사용하여 페이지 회전
 
-문서에서 페이지를 회전하려면 [PageRotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations)를 사용할 수 있습니다.
+문서에서 페이지를 회전하려면 [PageRotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations)를 사용할 수 있습니다.
 `PageRotations`는 페이지 번호와 회전 각도를 포함하며, 키는 페이지 번호를 나타내고, 키의 값은 각도에서의 회전을 나타냅니다.
 
 ```csharp
@@ -114,7 +114,7 @@ draft: false
 
 ## Rotation을 사용하여 페이지 회전
 
-[Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation) 속성도 사용할 수 있습니다. 회전은 0, 90, 180 또는 270이어야 합니다.
+[Rotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/properties/rotation) 속성도 사용할 수 있습니다. 회전은 0, 90, 180 또는 270이어야 합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

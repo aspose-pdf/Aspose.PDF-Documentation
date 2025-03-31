@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-PDF 문서에는 때때로 AcroForm으로 알려진 상호작용 양식이 포함되어 있습니다. 이는 웹 페이지에서 사용되는 양식과 유사합니다. 이러한 양식에는 텍스트 상자, 체크 박스 및 버튼 등 다양한 유형의 컨트롤이 포함되어 있습니다. PDF 파일로 작업하는 개발자는 때때로 이러한 양식을 편집해야 할 수도 있습니다. 이 기사에서는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)가 이를 가능하게 하는 방법에 대해 자세히 살펴보겠습니다.
+PDF 문서에는 때때로 AcroForm으로 알려진 상호작용 양식이 포함되어 있습니다. 이는 웹 페이지에서 사용되는 양식과 유사합니다. 이러한 양식에는 텍스트 상자, 체크 박스 및 버튼 등 다양한 유형의 컨트롤이 포함되어 있습니다. PDF 파일로 작업하는 개발자는 때때로 이러한 양식을 편집해야 할 수도 있습니다. 이 기사에서는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)가 이를 가능하게 하는 방법에 대해 자세히 살펴보겠습니다.
 
 {{% /alert %}}
 
 ## 구현 세부정보
 
-개발자는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)를 사용하여 PDF 문서에 새로운 양식 및 양식 필드를 추가할 뿐만 아니라 기존 필드를 편집할 수 있습니다. 이 기사의 범위는 양식 편집과 관련된 [Aspose.PDF for .NET](/pdf/ko/net/)의 기능으로 제한됩니다.
+개발자는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)를 사용하여 PDF 문서에 새로운 양식 및 양식 필드를 추가할 뿐만 아니라 기존 필드를 편집할 수 있습니다. 이 기사의 범위는 양식 편집과 관련된 [Aspose.PDF for .NET](/pdf/ko/net/)의 기능으로 제한됩니다.
 
-[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 클래스는 개발자가 양식 필드를 편집할 수 있도록 하는 대부분의 메서드와 속성을 포함하고 있습니다. 새로운 필드를 추가할 뿐만 아니라 기존 필드를 제거하고, 한 필드를 다른 위치로 이동하고, 필드 이름이나 속성을 변경하는 등의 작업을 수행할 수 있습니다. 이 클래스에서 제공하는 기능 목록은 매우 포괄적이며, 이 클래스를 사용하여 양식 필드로 작업하는 것은 매우 쉽습니다.
+[FormEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor) 클래스는 개발자가 양식 필드를 편집할 수 있도록 하는 대부분의 메서드와 속성을 포함하고 있습니다. 새로운 필드를 추가할 뿐만 아니라 기존 필드를 제거하고, 한 필드를 다른 위치로 이동하고, 필드 이름이나 속성을 변경하는 등의 작업을 수행할 수 있습니다. 이 클래스에서 제공하는 기능 목록은 매우 포괄적이며, 이 클래스를 사용하여 양식 필드로 작업하는 것은 매우 쉽습니다.
 
 이러한 메서드는 두 가지 주요 범주로 나눌 수 있으며, 하나는 필드를 조작하는 데 사용되고, 다른 하나는 이러한 필드의 새로운 속성을 설정하는 데 사용됩니다. 첫 번째 범주에 포함될 수 있는 메서드는 AddField, AddListItem, RemoveListItem, CopyInnerField, CopyOuterField, DelListItem, MoveField, RemoveField 및 RenameField 등이 있습니다. 두 번째 범주에는 SetFieldAlignment, SetFieldAppearance, SetFieldAttribute, SetFieldLimit, SetFieldScript 메서드가 포함될 수 있습니다. 다음 코드 스니펫은 FormEditor 클래스의 일부 메서드가 작동하는 모습을 보여줍니다:
 

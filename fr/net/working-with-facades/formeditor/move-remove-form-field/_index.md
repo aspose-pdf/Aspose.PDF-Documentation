@@ -77,7 +77,7 @@ draft: false
 
 ## Déplacer un Champ de Formulaire vers un Nouvel Emplacement dans un Fichier PDF Existant
 
-Si vous souhaitez déplacer un champ de formulaire vers un nouvel emplacement, vous pouvez utiliser la méthode [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) de la classe [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Vous devez simplement fournir le nom du champ et le nouvel emplacement de ce champ à la méthode [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield). Vous devez également enregistrer le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) de la classe [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Le code suivant vous montre comment déplacer un champ de formulaire à un nouvel emplacement dans un fichier PDF.
+Si vous souhaitez déplacer un champ de formulaire vers un nouvel emplacement, vous pouvez utiliser la méthode [MoveField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/formeditor/methods/movefield) de la classe [FormEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/formeditor). Vous devez simplement fournir le nom du champ et le nouvel emplacement de ce champ à la méthode [MoveField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/formeditor/methods/movefield). Vous devez également enregistrer le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/form/methods/save/index) de la classe [FormEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/formeditor). Le code suivant vous montre comment déplacer un champ de formulaire à un nouvel emplacement dans un fichier PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -98,7 +98,7 @@ private static void MoveField()
 
 ## Supprimer un Champ de Formulaire d'un Fichier PDF Existant
 
-Pour supprimer un champ de formulaire d'un fichier PDF existant, vous pouvez utiliser la méthode RemoveField de la classe FormEditor. Cette méthode prend un seul argument : le nom du champ. Vous devez créer un objet de la classe FormEditor, appeler la méthode [RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield) pour supprimer un champ particulier du PDF, puis appeler la méthode Save pour enregistrer le fichier PDF mis à jour. Le code suivant vous montre comment supprimer des champs de formulaire d'un fichier PDF existant.
+Pour supprimer un champ de formulaire d'un fichier PDF existant, vous pouvez utiliser la méthode RemoveField de la classe FormEditor. Cette méthode prend un seul argument : le nom du champ. Vous devez créer un objet de la classe FormEditor, appeler la méthode [RemoveField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/formeditor/methods/removefield) pour supprimer un champ particulier du PDF, puis appeler la méthode Save pour enregistrer le fichier PDF mis à jour. Le code suivant vous montre comment supprimer des champs de formulaire d'un fichier PDF existant.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -119,7 +119,7 @@ private static void RemoveFields()
 
 ## Renommer des Champs de Formulaire dans un PDF
 
-Vous pouvez également renommer votre champ en utilisant la méthode [RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield) de la classe [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor).
+Vous pouvez également renommer votre champ en utilisant la méthode [RenameField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/formeditor/methods/renamefield) de la classe [FormEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/formeditor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

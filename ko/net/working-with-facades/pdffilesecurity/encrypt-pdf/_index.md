@@ -83,9 +83,9 @@ Aspose.PDF 라이브러리를 사용하여 PDF 암호화가 어떻게 작동하�
 
 ## 다양한 암호화 유형 및 알고리즘을 사용하여 PDF 파일 암호화
 
-PDF 파일을 암호화하려면 [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) 객체를 생성한 다음 [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) 메서드를 호출해야 합니다. [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) 메서드에 사용자 비밀번호, 소유자 비밀번호 및 권한을 전달할 수 있습니다. 이 메서드에 KeySize 및 Algorithm 값을 전달해야 합니다.
+PDF 파일을 암호화하려면 [PdfFileSecurity](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity) 객체를 생성한 다음 [EncryptFile](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) 메서드를 호출해야 합니다. [EncryptFile](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile) 메서드에 사용자 비밀번호, 소유자 비밀번호 및 권한을 전달할 수 있습니다. 이 메서드에 KeySize 및 Algorithm 값을 전달해야 합니다.
 
-다음은 가능한 [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm) 목록입니다:
+다음은 가능한 [CryptoAlgorithm](https://reference.aspose.com/pdf/ko/net/aspose.pdf/cryptoalgorithm) 목록입니다:
 
 |**멤버 이름**|**값**|**설명**|
 | :- | :- | :- |

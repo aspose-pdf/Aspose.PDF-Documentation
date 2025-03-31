@@ -83,15 +83,15 @@ sitemap:
 
 Если мы создаем документ с нуля, нам нужно следовать определенным шагам:
 
-1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). На этом этапе мы создадим пустой PDF-документ с некоторыми метаданными, но без страниц.
-1. Добавьте [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) в объект документа. Теперь у нашего документа будет одна страница.
-1. Добавьте [Image](https://reference.aspose.com/pdf/net/aspose.pdf/image/methods/index) на страницу.
-1. Создайте [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) для заголовка. Для заголовка мы будем использовать шрифт Arial размером 24pt и центрированное выравнивание.
-1. Добавьте заголовок в [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) страницы.
-1. Создайте [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) для описания. Для описания мы будем использовать шрифт Arial размером 24pt и центрированное выравнивание.
+1. Создайте объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). На этом этапе мы создадим пустой PDF-документ с некоторыми метаданными, но без страниц.
+1. Добавьте [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) в объект документа. Теперь у нашего документа будет одна страница.
+1. Добавьте [Image](https://reference.aspose.com/pdf/ru/net/aspose.pdf/image/methods/index) на страницу.
+1. Создайте [TextFragment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textfragment) для заголовка. Для заголовка мы будем использовать шрифт Arial размером 24pt и центрированное выравнивание.
+1. Добавьте заголовок в [Paragraphs](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/properties/paragraphs) страницы.
+1. Создайте [TextFragment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textfragment) для описания. Для описания мы будем использовать шрифт Arial размером 24pt и центрированное выравнивание.
 1. Добавьте (описание) в абзацы страницы.
 1. Создайте таблицу, добавьте свойства таблицы.
-1. Добавьте (таблицу) в [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) страницы.
+1. Добавьте (таблицу) в [Paragraphs](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/properties/paragraphs) страницы.
 1. Сохраните документ "Complex.pdf".
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).

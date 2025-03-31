@@ -83,13 +83,13 @@ sitemap:
 
 ## PDF 문서에 북마크 추가
 
-북마크는 Document 객체의 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 컬렉션에 저장되며, 이 컬렉션은 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션에 포함되어 있습니다.
+북마크는 Document 객체의 [OutlineItemCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlineitemcollection) 컬렉션에 저장되며, 이 컬렉션은 [OutlineCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection) 컬렉션에 포함되어 있습니다.
 
 PDF에 북마크를 추가하려면:
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 사용하여 PDF 문서를 엽니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 사용하여 PDF 문서를 엽니다.
 1. 북마크를 생성하고 그 속성을 정의합니다.
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 컬렉션을 Outlines 컬렉션에 추가합니다.
+1. [OutlineItemCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlineitemcollection) 컬렉션을 Outlines 컬렉션에 추가합니다.
 
 다음 코드 스니펫은 PDF 문서에 북마크를 추가하는 방법을 보여줍니다.
 
@@ -161,8 +161,8 @@ private static void AddBookmark()
 PDF 파일에 자식 북마크를 추가하려면 먼저 부모 북마크를 추가합니다:
 
 1. 문서를 엽니다.
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)에 북마크를 추가하고 그 속성을 정의합니다.
-1. OutlineItemCollection을 Document 객체의 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션에 추가합니다.
+1. [OutlineItemCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlineitemcollection)에 북마크를 추가하고 그 속성을 정의합니다.
+1. OutlineItemCollection을 Document 객체의 [OutlineCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection) 컬렉션에 추가합니다.
 
 자식 북마크는 위에서 설명한 부모 북마크와 동일하게 생성되지만, 부모 북마크의 Outlines 컬렉션에 추가됩니다.
 
@@ -243,12 +243,12 @@ private static void AddChildBookmark()
 
 ## PDF 문서에서 모든 북마크 삭제
 
-PDF의 모든 북마크는 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션에 저장됩니다. 이 문서에서는 PDF 파일에서 모든 북마크를 삭제하는 방법을 설명합니다.
+PDF의 모든 북마크는 [OutlineCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection) 컬렉션에 저장됩니다. 이 문서에서는 PDF 파일에서 모든 북마크를 삭제하는 방법을 설명합니다.
 
 PDF 파일에서 모든 북마크를 삭제하려면:
 
-1. [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션의 Delete 메서드를 호출합니다.
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 수정된 파일을 저장합니다.
+1. [OutlineCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection) 컬렉션의 Delete 메서드를 호출합니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 수정된 파일을 저장합니다.
 
 다음 코드 스니펫은 PDF 문서에서 모든 북마크를 삭제하는 방법을 보여줍니다.
 
@@ -299,10 +299,10 @@ private static void DeleteBookmarks()
 
 PDF 파일에서 특정 북마크를 삭제하려면:
 
-1. 북마크의 제목을 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션의 Delete 메서드에 매개변수로 전달합니다.
+1. 북마크의 제목을 [OutlineCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection) 컬렉션의 Delete 메서드에 매개변수로 전달합니다.
 1. 그런 다음 Document 객체의 Save 메서드를 사용하여 업데이트된 파일을 저장합니다.
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스는 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션을 제공합니다. [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) 메서드는 메서드에 전달된 제목을 가진 모든 북마크를 제거합니다.
+[Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스는 [OutlineCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection) 컬렉션을 제공합니다. [Delete](https://reference.aspose.com/pdf/ko/net/aspose.pdf/outlinecollection/methods/delete) 메서드는 메서드에 전달된 제목을 가진 모든 북마크를 제거합니다.
 
 다음 코드 스니펫은 PDF 문서에서 특정 북마크를 삭제하는 방법을 보여줍니다.
 

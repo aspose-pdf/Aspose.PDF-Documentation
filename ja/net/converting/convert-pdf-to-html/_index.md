@@ -113,11 +113,11 @@ Aspose.PDF for .NETは、機能と品質を調査するために試すことが�
 [![Aspose.PDF PDFをHTMLに変換する無料アプリ](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
-Aspose.PDF for .NETは、ソースPDFファイルをHTMLに変換するための2行のコードを提供します。[`SaveFormat列挙型`](https://reference.aspose.com/pdf/net/aspose.pdf/saveformat)には、ソースファイルをHTMLとして保存するための値Htmlが含まれています。以下のコードスニペットは、PDFファイルをHTMLに変換するプロセスを示しています。
+Aspose.PDF for .NETは、ソースPDFファイルをHTMLに変換するための2行のコードを提供します。[`SaveFormat列挙型`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/saveformat)には、ソースファイルをHTMLとして保存するための値Htmlが含まれています。以下のコードスニペットは、PDFファイルをHTMLに変換するプロセスを示しています。
 
 <a name="csharp-pdf-to-html"><strong>手順: C#でPDFをHTMLに変換する</strong></a>
 
-1. ソースPDF文書を持つ[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/)オブジェクトのインスタンスを作成します。
+1. ソースPDF文書を持つ[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)オブジェクトのインスタンスを作成します。
 2. **Document.Save()**メソッドを呼び出して、**SaveFormat.Html**形式で保存します。
 
 ```csharp
@@ -165,7 +165,7 @@ private static void ConvertPDFtoMultiPageHTML()
 
 ### SVGファイルを保存するフォルダーを指定する
 
-PDFからHTMLへの変換中に、SVG画像を保存するフォルダーを指定することが可能です。[`HtmlSaveOptionクラス`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions)の[`SpecialFolderForSvgImagesプロパティ`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages)を使用して、特別なSVG画像ディレクトリを指定します。このプロパティは、変換中に遭遇したSVG画像を保存するディレクトリへのパスを取得または設定します。パラメーターが空またはnullの場合、SVGファイルは他の画像ファイルと一緒に保存されます。
+PDFからHTMLへの変換中に、SVG画像を保存するフォルダーを指定することが可能です。[`HtmlSaveOptionクラス`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlsaveoptions)の[`SpecialFolderForSvgImagesプロパティ`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages)を使用して、特別なSVG画像ディレクトリを指定します。このプロパティは、変換中に遭遇したSVG画像を保存するディレクトリへのパスを取得または設定します。パラメーターが空またはnullの場合、SVGファイルは他の画像ファイルと一緒に保存されます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

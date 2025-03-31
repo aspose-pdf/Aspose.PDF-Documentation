@@ -79,16 +79,16 @@ sitemap:
 }
 </script>
 
-PDFドキュメントの注釈は、[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトのAnnotationsコレクションに含まれています。このコレクションには、その個々のページのすべての注釈が含まれています：各ページには独自のAnnotationsコレクションがあります。特定のページに注釈を追加するには、そのページのAnnotationsコレクションにAddメソッドを使用して追加します。
+PDFドキュメントの注釈は、[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトのAnnotationsコレクションに含まれています。このコレクションには、その個々のページのすべての注釈が含まれています：各ページには独自のAnnotationsコレクションがあります。特定のページに注釈を追加するには、そのページのAnnotationsコレクションにAddメソッドを使用して追加します。
 
-PDFドキュメントにSWFファイルを注釈として含めるには、Aspose.PDF.InteractiveFeatures.Annotations名前空間の[ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation)クラスを使用します。画面注釈は、メディアクリップが再生されるページの領域を指定します。
+PDFドキュメントにSWFファイルを注釈として含めるには、Aspose.PDF.InteractiveFeatures.Annotations名前空間の[ScreenAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/screenannotation)クラスを使用します。画面注釈は、メディアクリップが再生されるページの領域を指定します。
 
-PDFドキュメントに外部ビデオリンクを追加する必要がある場合は、[MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation)を使用できます。
+PDFドキュメントに外部ビデオリンクを追加する必要がある場合は、[MovieAnnotaiton](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/movieannotation)を使用できます。
 ムービー注釈には、コンピュータの画面とスピーカーで表示されるアニメーショングラフィックスと音声が含まれます。
 
-[Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation)は、テキスト注釈に類似していますが、テキストノートの代わりにコンピュータのマイクから録音された音声またはファイルからインポートされた音声が含まれています。注釈がアクティブになると、音声が再生されます。注釈は、ほとんどの点でテキスト注釈のように振る舞い、音声を表すことを示すために異なるアイコン（デフォルトではスピーカー）を持ちます。
+[Sound Annotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/soundannotation)は、テキスト注釈に類似していますが、テキストノートの代わりにコンピュータのマイクから録音された音声またはファイルからインポートされた音声が含まれています。注釈がアクティブになると、音声が再生されます。注釈は、ほとんどの点でテキスト注釈のように振る舞い、音声を表すことを示すために異なるアイコン（デフォルトではスピーカー）を持ちます。
 
-ただし、PDFドキュメント内にメディアを埋め込む必要がある場合は、[RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation)を使用する必要があります。
+ただし、PDFドキュメント内にメディアを埋め込む必要がある場合は、[RichMediaAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/richmediaannotation)を使用する必要があります。
 
 RichMediaAnnotationクラスの以下のメソッド/プロパティを使用できます。
 
@@ -292,7 +292,7 @@ private static void DeletePolyAnnotation()
 
 ## ウィジェット注釈を追加
 
-インタラクティブフォームは、[Widget Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation)を使用してフィールドの外観を表現し、ユーザーのインタラクションを管理します。
+インタラクティブフォームは、[Widget Annotations](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/widgetannotation)を使用してフィールドの外観を表現し、ユーザーのインタラクションを管理します。
 これらのフォーム要素をPDFに追加して、情報の入力、送信、または他のユーザーインタラクションを容易にします。
 
 ウィジェット注釈は、特定のページ上のフォームフィールドのグラフィカルな表現であるため、注釈として直接作成することはできません。
@@ -453,14 +453,14 @@ PDFドキュメントでは、3D CADまたは3Dモデリングソフトウェア
 
 3D注釈は、U3D形式で作成されたモデルを使用して追加されます。
 
-1. 新しい[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)を作成します。
-1. 必要な3Dモデル（この場合は「Ring.u3d」）のデータを読み込み、[PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent)を作成します。
-1. [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork)オブジェクトを作成し、ドキュメントと3DContentにリンクします。
+1. 新しい[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)を作成します。
+1. 必要な3Dモデル（この場合は「Ring.u3d」）のデータを読み込み、[PDF3DContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/pdf3dcontent)を作成します。
+1. [3dArtWork](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/pdf3dartwork)オブジェクトを作成し、ドキュメントと3DContentにリンクします。
 1. pdf3dArtWorkオブジェクトを調整します：
 
     - 3DLightingScheme - （例では`CAD`を設定します）
     - 3DRenderMode - （例では`Solid`を設定します）
-    - Fill `ViewArray`、少なくとも1つの[3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview)を作成し、配列に追加します。
+    - Fill `ViewArray`、少なくとも1つの[3D View](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/pdf3dview)を作成し、配列に追加します。
 
 1. 注釈の3つの基本パラメータを設定します：
     - 注釈が配置される`page`。
@@ -469,7 +469,7 @@ PDFドキュメントでは、3D CADまたは3Dモデリングソフトウェア
 1. 3Dオブジェクトのより良いプレゼンテーションのために、ボーダーフレームを設定します。
 1. デフォルトビューを設定します（例 - TOP）。
 1. 追加のパラメータを設定します：名前、プレビューのポスターなど。
-1. [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)に注釈を追加します。
+1. [Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)に注釈を追加します。
 1. 結果を保存します。
 
 ### 例

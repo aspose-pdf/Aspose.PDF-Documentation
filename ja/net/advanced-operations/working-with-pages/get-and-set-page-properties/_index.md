@@ -83,8 +83,8 @@ Aspose.PDF for .NETを使用すると、.NETアプリケーション内のPDFフ
 
 PDFファイルのページ数を取得するには：
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスを使用してPDFファイルを開きます。
-1. 次に、[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションのCountプロパティ（Documentオブジェクトから）を使用して、ドキュメント内のページの総数を取得します。
+1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスを使用してPDFファイルを開きます。
+1. 次に、[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションのCountプロパティ（Documentオブジェクトから）を使用して、ドキュメント内のページの総数を取得します。
 
 次のコードスニペットは、PDFファイルのページ数を取得する方法を示しています。
 
@@ -106,7 +106,7 @@ private static void GetNumberOfPagesInAPdfFile()
 
 ### ドキュメントを保存せずにページ数を取得
 
-時には、PDFファイルを動的に生成し、PDFファイルの作成中に、ファイルをシステムやストリームに保存せずにページ数を取得する必要が生じることがあります（目次の作成など）。この要件に対応するために、Documentクラスに[ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs)メソッドが導入されました。以下のコードスニペットを参照して、ドキュメントを保存せずにページ数を取得する手順を示します。
+時には、PDFファイルを動的に生成し、PDFファイルの作成中に、ファイルをシステムやストリームに保存せずにページ数を取得する必要が生じることがあります（目次の作成など）。この要件に対応するために、Documentクラスに[ProcessParagraphs](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/processparagraphs)メソッドが導入されました。以下のコードスニペットを参照して、ドキュメントを保存せずにページ数を取得する手順を示します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ PDFファイルの各ページには、幅、高さ、ブリードボックス�
 
 ### **ページプロパティへのアクセス**
 
-[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)クラスは、特定のPDFページに関連するすべてのプロパティを提供します。PDFファイルのすべてのページは、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションに含まれています。
+[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)クラスは、特定のPDFページに関連するすべてのプロパティを提供します。PDFファイルのすべてのページは、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションに含まれています。
 
 そこから、インデックスを使用して個々のPageオブジェクトにアクセスするか、foreachループを使用してコレクションをループし、すべてのページを取得できます。個々のページにアクセスすると、そのプロパティを取得できます。次のコードスニペットは、ページプロパティを取得する方法を示しています。
 
@@ -190,12 +190,12 @@ private static void AccessingPageProperties()
 
 Aspose.PDFを使用すると、[PDFを個々のページに分割](/pdf/ja/net/split-pdf-document/)し、それらをPDFファイルとして保存できます。PDFファイル内の指定されたページを取得し、新しいPDFとして保存することは非常に似た操作です：ソースドキュメントを開き、ページにアクセスし、新しいドキュメントを作成し、そのページを追加します。
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)は、PDFファイル内のページを保持します。このコレクションから特定のページを取得するには：
+[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)は、PDFファイル内のページを保持します。このコレクションから特定のページを取得するには：
 
 1. Pagesプロパティを使用してページインデックスを指定します。
-1. 新しい[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成します。
-1. 新しい[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトに[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトを追加します。
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力を保存します。
+1. 新しい[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトを作成します。
+1. 新しい[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトに[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトを追加します。
+1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力を保存します。
 
 次のコードスニペットは、PDFファイルから特定のページを取得し、新しいファイルとして保存する方法を示しています。
 
@@ -224,9 +224,9 @@ private static void GetAParticularPageOfThePdfFile()
 
 ## ページの色を決定
 
-[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)クラスは、PDFドキュメント内の特定のページに関連するプロパティを提供し、ページが使用する色のタイプ（RGB、白黒、グレースケール、または未定義）を含みます。
+[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)クラスは、PDFドキュメント内の特定のページに関連するプロパティを提供し、ページが使用する色のタイプ（RGB、白黒、グレースケール、または未定義）を含みます。
 
-PDFファイルのすべてのページは、[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションに含まれています。ColorTypeプロパティは、ページ上の要素の色を指定します。特定のPDFページの色情報を取得または決定するには、[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトの[ColorType](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/colortype)プロパティを使用します。
+PDFファイルのすべてのページは、[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションに含まれています。ColorTypeプロパティは、ページ上の要素の色を指定します。特定のPDFページの色情報を取得または決定するには、[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトの[ColorType](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page/properties/colortype)プロパティを使用します。
 
 次のコードスニペットは、PDFファイルの個々のページをループして色情報を取得する方法を示しています。
 

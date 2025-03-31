@@ -85,7 +85,7 @@ sitemap:
 
 ## タグ付きPDFの作成（シンプルなシナリオ）
 
-タグ付きPDFドキュメントに構造要素を作成するために、Aspose.PDFは[ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent)インターフェースを使用して構造要素を作成するメソッドを提供します。以下のコードスニペットは、ヘッダーと段落の2つの要素を含むタグ付きPDFを作成する方法を示しています。
+タグ付きPDFドキュメントに構造要素を作成するために、Aspose.PDFは[ITaggedContent](https://reference.aspose.com/pdf/ja/net/aspose.pdf.tagged/itaggedcontent)インターフェースを使用して構造要素を作成するメソッドを提供します。以下のコードスニペットは、ヘッダーと段落の2つの要素を含むタグ付きPDFを作成する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -181,7 +181,7 @@ private static void CreateTaggedPdfDocument01()
 ## ネストされた要素を持つタグ付きPDFの作成（構造要素ツリーの作成）
 
 場合によっては、段落内に引用を配置するなど、より複雑な構造を作成する必要があります。 
-構造要素ツリーを作成するためには、[AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild)メソッドを使用する必要があります。
+構造要素ツリーを作成するためには、[AppendChild](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/element/methods/appendchild)メソッドを使用する必要があります。
 以下のコードスニペットは、タグ付きPDFドキュメントの構造要素ツリーを作成する方法を示しています：
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -294,7 +294,7 @@ private static void CreateTaggedPdfDocument02()
 
 ## テキスト構造のスタイリング
 
-タグ付きPDFドキュメント内のテキスト構造をスタイリングするために、Aspose.PDFは[Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)、[FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)、[FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle)、および[ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor)プロパティを[StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate)クラスで提供しています。以下のコードスニペットは、タグ付きPDFドキュメント内のテキスト構造をスタイリングする方法を示しています：
+タグ付きPDFドキュメント内のテキスト構造をスタイリングするために、Aspose.PDFは[Font](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)、[FontSize](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)、[FontStyle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle)、および[ForegroundColor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor)プロパティを[StructureTextState](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/structuretextstate)クラスで提供しています。以下のコードスニペットは、タグ付きPDFドキュメント内のテキスト構造をスタイリングする方法を示しています：
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -367,7 +367,7 @@ private static void AddStyle()
 
 ## 構造要素の図示
 
-タグ付きPDFドキュメント内の構造要素を図示するために、Aspose.PDFは[IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement)クラスを提供しています。以下のコードスニペットは、タグ付きPDFドキュメント内の構造要素を図示する方法を示しています：
+タグ付きPDFドキュメント内の構造要素を図示するために、Aspose.PDFは[IllustrationElement](https://reference.aspose.com/pdf/ja/net/aspose.pdf.logicalstructure/illustrationelement)クラスを提供しています。以下のコードスニペットは、タグ付きPDFドキュメント内の構造要素を図示する方法を示しています：
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -77,13 +77,13 @@ draft: false
 
 ## 기존 PDF 파일의 뷰어 기본 설정 설정
 
-[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) 클래스는 PDF 파일의 표시 모드를 나타냅니다. 예를 들어, 문서 창을 화면 중앙에 배치하거나 뷰어 애플리케이션의 메뉴 바를 숨기는 등의 기능이 있습니다.
+[ViewerPreference](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/viewerpreference) 클래스는 PDF 파일의 표시 모드를 나타냅니다. 예를 들어, 문서 창을 화면 중앙에 배치하거나 뷰어 애플리케이션의 메뉴 바를 숨기는 등의 기능이 있습니다.
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 [ChangeViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) 메서드를 사용하면 뷰어 기본 설정을 변경할 수 있습니다. 이를 위해서는 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다.
+[PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 [ChangeViewerPreference](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) 메서드를 사용하면 뷰어 기본 설정을 변경할 수 있습니다. 이를 위해서는 [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다.
 
-그 후, [ChangeViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) 메서드를 호출하여 원하는 기본 설정을 설정할 수 있습니다. 마지막으로, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 기존 PDF 파일에서 뷰어 기본 설정을 변경하는 방법을 보여줍니다.
+그 후, [ChangeViewerPreference](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) 메서드를 호출하여 원하는 기본 설정을 설정할 수 있습니다. 마지막으로, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save/index) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 기존 PDF 파일에서 뷰어 기본 설정을 변경하는 방법을 보여줍니다.
 
-예를 들어, [CenterWindow](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/centerwindow) 매개변수를 지정하여 창을 중앙에 배치하고, [HideMenubar](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar)로 상단 툴바를 제거한 후, [PageModeUseNone](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone)로 전체 화면 모드를 엽니다.
+예를 들어, [CenterWindow](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/viewerpreference/fields/centerwindow) 매개변수를 지정하여 창을 중앙에 배치하고, [HideMenubar](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar)로 상단 툴바를 제거한 후, [PageModeUseNone](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone)로 전체 화면 모드를 엽니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

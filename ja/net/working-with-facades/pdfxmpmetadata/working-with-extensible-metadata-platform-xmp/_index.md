@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-拡張メタデータプラットフォーム（XMP）は、Adobe Systems Inc.によって作成された標準です。この標準は、標準化されたメタデータと独自のメタデータを処理および保存するために開発されました。このメタデータはさまざまなファイル形式に埋め込むことができますが、この記事ではPDFファイル形式にのみ焦点を当てます。Aspose.Pdf.Facades名前空間を使用してPDFファイルにメタデータを埋め込む方法を見ていきます。[PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata)クラスを使用して、PDF文書内のXMPを操作します。
+拡張メタデータプラットフォーム（XMP）は、Adobe Systems Inc.によって作成された標準です。この標準は、標準化されたメタデータと独自のメタデータを処理および保存するために開発されました。このメタデータはさまざまなファイル形式に埋め込むことができますが、この記事ではPDFファイル形式にのみ焦点を当てます。Aspose.Pdf.Facades名前空間を使用してPDFファイルにメタデータを埋め込む方法を見ていきます。[PdfXmpMetadata](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfxmpmetadata)クラスを使用して、PDF文書内のXMPを操作します。
 
 {{% /alert %}}
 
@@ -88,7 +88,7 @@ PDFファイルは、そのライフサイクルの中で多くの段階を経�
 ## 説明
 
 Aspose.Pdf.Facadesを使用してXMPを操作するために、[PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class)クラスを使用します。このクラスを使用して、事前定義されたメタデータプロパティを操作します。[PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class)クラスは、これらのプロパティをPDFファイルに追加します。また、メタデータを追加するPDFファイルを開いて保存するのにも役立ちます。したがって、[PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class)クラスを使用することで、PDFファイル内のXMPを簡単に操作できます。
-以下のコードスニペットは、[PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata)クラスを使用してXMPを操作する方法を理解するのに役立ちます。
+以下のコードスニペットは、[PdfXmpMetadata](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfxmpmetadata)クラスを使用してXMPを操作する方法を理解するのに役立ちます。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

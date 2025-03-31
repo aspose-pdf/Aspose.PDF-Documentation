@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity)クラスは、例外を制御することを可能にします。これを行うには、[AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions)プロパティをfalseまたはtrueに設定する必要があります。操作をfalseに設定すると、[DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile)の結果は、パスワードの正しさに応じてtrueまたはfalseを返します。
+[PdfFileSecurity](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity)クラスは、例外を制御することを可能にします。これを行うには、[AllowExceptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions)プロパティをfalseまたはtrueに設定する必要があります。操作をfalseに設定すると、[DecryptFile](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile)の結果は、パスワードの正しさに応じてtrueまたはfalseを返します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -103,7 +103,7 @@ private static void ControlExceptionPDFFile()
 }
 ```
 
-[AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions)プロパティをtrueに設定すると、try-catch演算子を使用して操作の結果を取得できます。
+[AllowExceptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions)プロパティをtrueに設定すると、try-catch演算子を使用して操作の結果を取得できます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -94,9 +94,9 @@ PDFドキュメント管理アプリは、ドキュメントに注釈を付け�
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-1. PDFファイルをロードするか、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)を使用して新しいファイルを作成します。
+1. PDFファイルをロードするか、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)を使用して新しいファイルを作成します。
 1. 新しい注釈を作成し、パラメータ（新しいRectangle、新しいPoint、タイトル、色、幅など）を設定します。
-1. 新しい[PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index)を作成します。
+1. 新しい[PopupAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/popupannotation/methods/index)を作成します。
 1. ポップアップ注釈を元の注釈にリンクします。
 1. 注釈をページに追加します。
 
@@ -154,7 +154,7 @@ private static void AddLineAnnotation()
 
 ## 四角形または円を追加する
 
-[Square](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation)および[Circle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation)注釈は、ページに矩形または楕円を表示します。開くと、関連するメモのテキストを含むポップアップウィンドウが表示されます。四角形の注釈は、円の注釈（Aspose.Pdf.Annotations.CircleAnnotationクラスのインスタンス）と形状を除いて同じです。
+[Square](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/squareannotation)および[Circle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/circleannotation)注釈は、ページに矩形または楕円を表示します。開くと、関連するメモのテキストを含むポップアップウィンドウが表示されます。四角形の注釈は、円の注釈（Aspose.Pdf.Annotations.CircleAnnotationクラスのインスタンス）と形状を除いて同じです。
 
 ### 円の注釈を追加する
 
@@ -544,7 +544,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 
 インク注釈は、1つ以上の離散的なパスで構成された手書きの「落書き」を表します。開くと、関連するメモのテキストを含むポップアップウィンドウが表示されます。
 
-[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation)は、1つ以上の離散的なポイントで構成された手書きの落書きを表します。以下のコードスニペットを使用して、PDFドキュメントにInkAnnotationを追加してみてください。
+[InkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/inkannotation)は、1つ以上の離散的なポイントで構成された手書きの落書きを表します。以下のコードスニペットを使用して、PDFドキュメントにInkAnnotationを追加してみてください。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -600,7 +600,7 @@ private static void AddInkAnnotation()
 
 ### InkAnnotationの線幅を設定する
 
-[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation)の幅は、LineInfoおよびBorderオブジェクトを使用して変更できます。
+[InkAnnotation](https://reference.aspose.com/pdf/ja/net/aspose.pdf.annotations/inkannotation)の幅は、LineInfoおよびBorderオブジェクトを使用して変更できます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

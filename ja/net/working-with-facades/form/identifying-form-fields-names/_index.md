@@ -75,23 +75,23 @@ draft: false
 }
 </script>
 
-[Aspose.PDF for .NET](/pdf/ja/net/)は、PDFフォームを作成、編集、既に作成されたPDFフォームに記入する機能を提供します。[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)名前空間には、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)クラスが含まれており、[FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index)という名前の関数があり、フィールド名とフィールド値の2つの引数を取ります。したがって、フォームフィールドに記入するには、正確なフォームフィールド名を知っている必要があります。
+[Aspose.PDF for .NET](/pdf/ja/net/)は、PDFフォームを作成、編集、既に作成されたPDFフォームに記入する機能を提供します。[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)名前空間には、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form)クラスが含まれており、[FillField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/fillfield/index)という名前の関数があり、フィールド名とフィールド値の2つの引数を取ります。したがって、フォームフィールドに記入するには、正確なフォームフィールド名を知っている必要があります。
 
 ## 実装の詳細
 
-私たちはしばしば、Adobe Designerなどのツールで作成されたフォームに記入する必要があるシナリオに直面しますが、フォームフィールド名が不明な場合があります。したがって、フォームフィールドに記入するためには、まずすべてのPDFフォームフィールドの名前を読み取る必要があります。[Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)クラスは、すべてのフィールド名を返す[FieldNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/properties/fieldnames)というプロパティを提供しており、PDFにフィールドが含まれていない場合はnullを返します。ただし、このプロパティを使用すると、PDFフォーム内のすべてのフィールド名が取得されますが、どの名前がどのフィールドに対応しているかは不明な場合があります。
+私たちはしばしば、Adobe Designerなどのツールで作成されたフォームに記入する必要があるシナリオに直面しますが、フォームフィールド名が不明な場合があります。したがって、フォームフィールドに記入するためには、まずすべてのPDFフォームフィールドの名前を読み取る必要があります。[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form)クラスは、すべてのフィールド名を返す[FieldNames](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/properties/fieldnames)というプロパティを提供しており、PDFにフィールドが含まれていない場合はnullを返します。ただし、このプロパティを使用すると、PDFフォーム内のすべてのフィールド名が取得されますが、どの名前がどのフィールドに対応しているかは不明な場合があります。
 
-この問題の解決策として、各フィールドの外観属性を使用します。Formクラスには、位置、色、境界スタイル、フォント、リスト項目などの属性を返す[GetFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getfieldfacade)という名前の関数があります。これらの値を保存するために、フィールドの視覚的属性を記録するために使用される[FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormFieldFacade)クラスを使用する必要があります。これらの属性を取得したら、各フィールドの下にフィールド名を表示するテキストフィールドを追加できます。
+この問題の解決策として、各フィールドの外観属性を使用します。Formクラスには、位置、色、境界スタイル、フォント、リスト項目などの属性を返す[GetFieldFacade](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/getfieldfacade)という名前の関数があります。これらの値を保存するために、フィールドの視覚的属性を記録するために使用される[FormFieldFacade](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/FormFieldFacade)クラスを使用する必要があります。これらの属性を取得したら、各フィールドの下にフィールド名を表示するテキストフィールドを追加できます。
 
 {{% alert color="primary" %}}
 この時点で、「テキストフィールドを追加する位置をどのように決定するか？」という疑問が生じます。
 {{% /alert %}}
 
 {{% alert color="primary" %}}
-この問題の解決策は、フィールドの位置を保持する[FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormFieldFacade)クラスのBoxプロパティです。これらの値を長方形型の配列に保存し、新しいテキストフィールドを追加する位置を特定するためにこれらの値を使用する必要があります。
+この問題の解決策は、フィールドの位置を保持する[FormFieldFacade](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/FormFieldFacade)クラスのBoxプロパティです。これらの値を長方形型の配列に保存し、新しいテキストフィールドを追加する位置を特定するためにこれらの値を使用する必要があります。
 {{% /alert %}}
 
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)名前空間には、PDFフォームを操作する機能を提供する[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor)というクラスがあります。PDFフォームを開き、既存の各フォームフィールドの下にテキストフィールドを追加し、新しい名前でPDFフォームを保存します。
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)名前空間には、PDFフォームを操作する機能を提供する[FormEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/FormEditor)というクラスがあります。PDFフォームを開き、既存の各フォームフィールドの下にテキストフィールドを追加し、新しい名前でPDFフォームを保存します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

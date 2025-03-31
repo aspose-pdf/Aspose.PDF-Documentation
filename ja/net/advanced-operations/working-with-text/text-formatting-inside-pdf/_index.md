@@ -82,7 +82,7 @@ sitemap:
 
 ## PDFに行のインデントを追加する方法
 
-Aspose.PDF for .NETは、[TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions)クラスにSubsequentLinesIndentプロパティを提供します。これは、TextFragmentおよびParagraphsコレクションを使用したPDF生成シナリオで行のインデントを指定するために使用できます。
+Aspose.PDF for .NETは、[TextFormattingOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textformattingoptions)クラスにSubsequentLinesIndentプロパティを提供します。これは、TextFragmentおよびParagraphsコレクションを使用したPDF生成シナリオで行のインデントを指定するために使用できます。
 
 次のコードスニペットを使用してプロパティを使用してください：
 
@@ -203,7 +203,7 @@ private static void AddUnderlineText()
 
 ## 追加したテキストの周りに境界線を追加する方法
 
-追加したテキストの外観を制御できます。以下の例では、追加したテキストの周りに矩形を描画して境界線を追加する方法を示しています。[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスについて詳しくは、こちらをご覧ください。
+追加したテキストの外観を制御できます。以下の例では、追加したテキストの周りに矩形を描画して境界線を追加する方法を示しています。[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスについて詳しくは、こちらをご覧ください。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

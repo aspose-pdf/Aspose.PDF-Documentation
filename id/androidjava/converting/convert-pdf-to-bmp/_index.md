@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Kelas [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) memungkinkan Anda untuk mengubah halaman PDF menjadi gambar <abbr title="Bitmap Image File">BMP</abbr>. Kelas ini menyediakan metode bernama [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) yang memungkinkan Anda untuk mengubah halaman tertentu dari file PDF ke format gambar BMP.
+Kelas [BmpDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/bmpdevice) memungkinkan Anda untuk mengubah halaman PDF menjadi gambar <abbr title="Bitmap Image File">BMP</abbr>. Kelas ini menyediakan metode bernama [Process](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/bmpdevice/methods/process) yang memungkinkan Anda untuk mengubah halaman tertentu dari file PDF ke format gambar BMP.
 
 {{% alert color="primary" %}}
 

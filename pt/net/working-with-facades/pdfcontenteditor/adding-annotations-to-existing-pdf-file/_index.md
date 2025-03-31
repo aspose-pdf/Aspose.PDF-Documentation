@@ -79,11 +79,11 @@ sitemap:
 
 ## Adicionar Anotação de Texto Livre em um Arquivo PDF Existente (facades)
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) permite que você adicione anotações de diferentes tipos em um arquivo PDF existente. Você pode usar o método respectivo para adicionar uma anotação específica. Por exemplo, no seguinte trecho de código, usamos o método [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) para adicionar uma anotação do tipo [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation).
+[PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor) permite que você adicione anotações de diferentes tipos em um arquivo PDF existente. Você pode usar o método respectivo para adicionar uma anotação específica. Por exemplo, no seguinte trecho de código, usamos o método [CreateFreeText](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) para adicionar uma anotação do tipo [FreeText](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/freetextannotation).
 
-Qualquer tipo de anotações pode ser adicionado ao arquivo PDF da mesma forma. Primeiro de tudo, você precisa criar um objeto do tipo [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) e vincular o arquivo PDF de entrada usando o método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Em segundo lugar, você deve criar um objeto Rectangle para especificar a área da anotação.
+Qualquer tipo de anotações pode ser adicionado ao arquivo PDF da mesma forma. Primeiro de tudo, você precisa criar um objeto do tipo [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor) e vincular o arquivo PDF de entrada usando o método [BindPdf](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.facade/bindpdf/methods/3). Em segundo lugar, você deve criar um objeto Rectangle para especificar a área da anotação.
 
-Depois disso, você pode chamar o método [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) para adicionar a anotação [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) e, em seguida, usar o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) para salvar o arquivo PDF atualizado.
+Depois disso, você pode chamar o método [CreateFreeText](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) para adicionar a anotação [FreeText](https://reference.aspose.com/pdf/pt/net/aspose.pdf.annotations/freetextannotation) e, em seguida, usar o método [Save](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/methods/save) para salvar o arquivo PDF atualizado.
 
 O seguinte trecho de código mostra como adicionar uma anotação de texto livre em um arquivo PDF.
 
@@ -160,7 +160,7 @@ private static void AddFreeTextAnnotation()
 
 ## Adicionar Anotação de Texto em um Arquivo PDF Existente (facades)
 
-Neste exemplo também, você precisa criar um objeto do tipo [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) e vincular o arquivo PDF de entrada usando o método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Em segundo lugar, você deve criar um objeto Rectangle para especificar a área da anotação. Depois disso, você pode chamar o método [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) para adicionar a anotação FreeText, criar o título de suas anotações e o número da página em que a anotação está localizada.
+Neste exemplo também, você precisa criar um objeto do tipo [PdfContentEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor) e vincular o arquivo PDF de entrada usando o método [BindPdf](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.facade/bindpdf/methods/3). Em segundo lugar, você deve criar um objeto Rectangle para especificar a área da anotação. Depois disso, você pode chamar o método [CreateFreeText](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) para adicionar a anotação FreeText, criar o título de suas anotações e o número da página em que a anotação está localizada.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

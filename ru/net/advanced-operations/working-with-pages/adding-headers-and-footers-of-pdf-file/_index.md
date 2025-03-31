@@ -84,7 +84,7 @@ sitemap:
 
 ## Добавление текста в заголовок PDF-файла
 
-Вы можете использовать класс [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) для добавления текста в заголовок PDF-файла. Класс TextStamp предоставляет свойства, необходимые для создания текстового штампа, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить текст в заголовок, вам нужно создать объект Document и объект TextStamp с использованием необходимых свойств. После этого вы можете вызвать метод AddStamp страницы, чтобы добавить текст в заголовок PDF.
+Вы можете использовать класс [TextStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/textstamp) для добавления текста в заголовок PDF-файла. Класс TextStamp предоставляет свойства, необходимые для создания текстового штампа, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить текст в заголовок, вам нужно создать объект Document и объект TextStamp с использованием необходимых свойств. После этого вы можете вызвать метод AddStamp страницы, чтобы добавить текст в заголовок PDF.
 
 Вам нужно установить свойство TopMargin таким образом, чтобы оно регулировало текст в области заголовка вашего PDF. Вам также нужно установить HorizontalAlignment в Center и VerticalAlignment в Top.
 
@@ -164,7 +164,7 @@ private static void AddFooterText()
 
 ## Добавление изображения в заголовок PDF-файла
 
-Вы можете использовать класс [ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp) для добавления изображения в заголовок PDF-файла. Класс Image Stamp предоставляет свойства, необходимые для создания штампа на основе изображения, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить изображение в заголовок, вам нужно создать объект Document и объект Image Stamp с использованием необходимых свойств. После этого вы можете вызвать метод [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) страницы, чтобы добавить изображение в заголовок PDF.
+Вы можете использовать класс [ImageStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/ImageStamp) для добавления изображения в заголовок PDF-файла. Класс Image Stamp предоставляет свойства, необходимые для создания штампа на основе изображения, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить изображение в заголовок, вам нужно создать объект Document и объект Image Stamp с использованием необходимых свойств. После этого вы можете вызвать метод [AddStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/methods/addstamp) страницы, чтобы добавить изображение в заголовок PDF.
 
 {{% alert color="primary" %}}
 
@@ -210,7 +210,7 @@ private static void AddImageHeader()
 
 {{% alert color="primary" %}}
 
-Вам нужно установить свойство [BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin) таким образом, чтобы оно регулировало изображение в области нижнего колонтитула вашего PDF. Вам также нужно установить [HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment) в `Center` и [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment) в `Bottom`.
+Вам нужно установить свойство [BottomMargin](https://reference.aspose.com/pdf/ru/net/aspose.pdf/stamp/properties/bottommargin) таким образом, чтобы оно регулировало изображение в области нижнего колонтитула вашего PDF. Вам также нужно установить [HorizontalAlignment](https://reference.aspose.com/pdf/ru/net/aspose.pdf/stamp/properties/horizontalalignment) в `Center` и [VerticalAlignment](https://reference.aspose.com/pdf/ru/net/aspose.pdf/stamp/properties/verticalalignment) в `Bottom`.
 
 {{% /alert %}}
 
@@ -250,7 +250,7 @@ private static void AddImageFooter()
 
 Мы знаем, что можем добавлять TextStamp в раздел заголовка/нижнего колонтитула документа, используя свойства TopMargin или Bottom Margin, но иногда у нас может возникнуть необходимость добавить несколько заголовков/нижних колонтитулов в один PDF-документ. **Aspose.PDF for .NET** объясняет, как это сделать.
 
-Чтобы выполнить это требование, мы создадим отдельные объекты TextStamp (количество объектов зависит от количества необходимых заголовков/нижних колонтитулов) и добавим их в PDF-документ. Мы также можем указать различную информацию о форматировании для каждого отдельного объекта штампа. В следующем примере мы создали объект Document и три объекта TextStamp, а затем использовали метод [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) страницы, чтобы добавить текст в раздел заголовка PDF. Следующий фрагмент кода показывает, как добавить изображение в нижний колонтитул PDF-файла с помощью Aspose.PDF for .NET.
+Чтобы выполнить это требование, мы создадим отдельные объекты TextStamp (количество объектов зависит от количества необходимых заголовков/нижних колонтитулов) и добавим их в PDF-документ. Мы также можем указать различную информацию о форматировании для каждого отдельного объекта штампа. В следующем примере мы создали объект Document и три объекта TextStamp, а затем использовали метод [AddStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/methods/addstamp) страницы, чтобы добавить текст в раздел заголовка PDF. Следующий фрагмент кода показывает, как добавить изображение в нижний колонтитул PDF-файла с помощью Aspose.PDF for .NET.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -155,7 +155,7 @@ private static void AddImageToPDF()
 
 ## 既存のPDFファイルに画像を追加（ファサード）
 
-PDFファイルに画像を追加するための別の簡単な方法もあります。[PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend)クラスの[AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)メソッドを使用できます。[AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)メソッドは、追加する画像、画像を追加するページ番号、および座標情報を必要とします。その後、Closeメソッドを使用して更新されたPDFファイルを保存します。次のコードスニペットは、既存のPDFファイルに画像を追加する方法を示しています。
+PDFファイルに画像を追加するための別の簡単な方法もあります。[PdfFileMend](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend)クラスの[AddImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)メソッドを使用できます。[AddImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)メソッドは、追加する画像、画像を追加するページ番号、および座標情報を必要とします。その後、Closeメソッドを使用して更新されたPDFファイルを保存します。次のコードスニペットは、既存のPDFファイルに画像を追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -324,7 +324,7 @@ private static void ExtractImageTypesFromPDF()
 
 ## 画像の品質を制御する
 
-PDFファイルに追加される画像の品質を制御することが可能です。[XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection)クラスのオーバーロードされた[Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1)メソッドを使用します。
+PDFファイルに追加される画像の品質を制御することが可能です。[XImageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/ximagecollection)クラスのオーバーロードされた[Replace](https://reference.aspose.com/pdf/ja/net/aspose.pdf.ximagecollection/replace/methods/1)メソッドを使用します。
 
 次のコードスニペットは、すべてのドキュメント画像をJPEGに変換し、圧縮に80%の品質を使用する方法を示しています。
 

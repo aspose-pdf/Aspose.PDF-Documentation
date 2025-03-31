@@ -85,7 +85,7 @@ sitemap:
 
 이 주제는 문서 창, 뷰어 애플리케이션의 속성과 페이지가 표시되는 방식을 이해하는 데 도움이 됩니다. 이러한 속성을 설정하려면:
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 PDF 파일을 엽니다. 이제 Document 객체의 속성을 설정할 수 있습니다.
+[Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스를 사용하여 PDF 파일을 엽니다. 이제 Document 객체의 속성을 설정할 수 있습니다.
 
 - CenterWindow – 화면 중앙에 문서 창을 배치합니다. 기본값: false.
 - Direction – 읽기 순서. 페이지가 나란히 표시될 때 레이아웃을 결정합니다. 기본값: 왼쪽에서 오른쪽.
@@ -99,7 +99,7 @@ sitemap:
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-다음 코드 스니펫은 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 속성을 가져오는 방법을 보여줍니다.
+다음 코드 스니펫은 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스를 사용하여 속성을 가져오는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -154,7 +154,7 @@ private static void GetDocumentWindowProperties()
 
 이 주제는 문서 창, 뷰어 애플리케이션 및 페이지 표시의 속성을 설정하는 방법을 설명합니다. 이러한 다양한 속성을 설정하려면:
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 PDF 파일을 엽니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스를 사용하여 PDF 파일을 엽니다.
 1. Document 객체의 속성을 설정합니다.
 1. Save 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
 
@@ -171,7 +171,7 @@ private static void GetDocumentWindowProperties()
 - PageLayout.
 - PageMode.
 
-각 속성은 아래 코드에서 사용되고 설명됩니다. 다음 코드 스니펫은 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 속성을 설정하는 방법을 보여줍니다.
+각 속성은 아래 코드에서 사용되고 설명됩니다. 다음 코드 스니펫은 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스를 사용하여 속성을 설정하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -229,7 +229,7 @@ private static void SetDocumentWindowProperties()
 
 PDF 리더는 문서가 표시되는 플랫폼에 관계없이 문서가 동일한 방식으로 표시될 수 있도록 [14개의 핵심 글꼴](https://en.wikipedia.org/wiki/PDF#Text)을 지원합니다. PDF에 14개의 핵심 글꼴 중 하나가 아닌 글꼴이 포함된 경우, 글꼴 대체를 피하기 위해 PDF 파일에 글꼴을 포함해야 합니다.
 
-Aspose.PDF for .NET은 기존 PDF 파일에 글꼴 포함을 지원합니다. 전체 글꼴 또는 글꼴의 하위 집합을 포함할 수 있습니다. 글꼴을 포함하려면 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 PDF 파일을 엽니다. 그런 다음 [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) 클래스를 사용하여 PDF 파일에 글꼴을 포함합니다. 전체 글꼴을 포함하려면 Font 클래스의 IsEmbeded 속성을 사용하고, 글꼴의 하위 집합을 사용하려면 IsSubset 속성을 사용합니다.
+Aspose.PDF for .NET은 기존 PDF 파일에 글꼴 포함을 지원합니다. 전체 글꼴 또는 글꼴의 하위 집합을 포함할 수 있습니다. 글꼴을 포함하려면 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스를 사용하여 PDF 파일을 엽니다. 그런 다음 [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text) 클래스를 사용하여 PDF 파일에 글꼴을 포함합니다. 전체 글꼴을 포함하려면 Font 클래스의 IsEmbeded 속성을 사용하고, 글꼴의 하위 집합을 사용하려면 IsSubset 속성을 사용합니다.
 
 {{% alert color="primary" %}}
 
@@ -241,7 +241,7 @@ Aspose.PDF for .NET은 기존 PDF 파일에 글꼴 포함을 지원합니다. �
 
 ### 표준 타입 1 글꼴 포함하기
 
-일부 PDF 문서에는 특별한 Adobe 글꼴 세트의 글꼴이 포함되어 있습니다. 이 세트의 글꼴을 "표준 타입 1 글꼴"이라고 합니다. 이 세트에는 14개의 글꼴이 포함되어 있으며, 이러한 유형의 글꼴을 포함하려면 특별한 플래그인 [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts)를 사용해야 합니다. 다음은 표준 타입 1 글꼴을 포함하여 모든 글꼴이 포함된 문서를 얻기 위해 사용할 수 있는 코드 스니펫입니다:
+일부 PDF 문서에는 특별한 Adobe 글꼴 세트의 글꼴이 포함되어 있습니다. 이 세트의 글꼴을 "표준 타입 1 글꼴"이라고 합니다. 이 세트에는 14개의 글꼴이 포함되어 있으며, 이러한 유형의 글꼴을 포함하려면 특별한 플래그인 [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/properties/embedstandardfonts)를 사용해야 합니다. 다음은 표준 타입 1 글꼴을 포함하여 모든 글꼴이 포함된 문서를 얻기 위해 사용할 수 있는 코드 스니펫입니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
 
 ### PDF 문서에서 모든 글꼴 가져오기
 
-PDF 문서에서 모든 글꼴을 가져오려면 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스에서 제공하는 FontUtilities.GetAllFonts() 메서드를 사용할 수 있습니다. 기존 PDF 문서에서 모든 글꼴을 가져오기 위한 다음 코드 스니펫을 확인하세요:
+PDF 문서에서 모든 글꼴을 가져오려면 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스에서 제공하는 FontUtilities.GetAllFonts() 메서드를 사용할 수 있습니다. 기존 PDF 문서에서 모든 글꼴을 가져오기 위한 다음 코드 스니펫을 확인하세요:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -450,7 +450,7 @@ private static void SetFontSubsetStrategy()
 
 때때로 PDF 문서의 현재 확대/축소 비율을 확인하고 싶을 수 있습니다. Aspose.Pdf를 사용하면 현재 값을 확인하고 설정할 수 있습니다.
 
-[GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) 클래스의 Destination 속성을 사용하여 PDF 파일과 관련된 확대/축소 값을 가져올 수 있습니다. 마찬가지로 파일의 확대/축소 비율을 설정하는 데 사용할 수 있습니다.
+[GoToAction](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/gotoaction) 클래스의 Destination 속성을 사용하여 PDF 파일과 관련된 확대/축소 값을 가져올 수 있습니다. 마찬가지로 파일의 확대/축소 비율을 설정하는 데 사용할 수 있습니다.
 
 #### 확대/축소 비율 설정
 

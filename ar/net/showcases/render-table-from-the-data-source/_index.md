@@ -80,7 +80,7 @@ sitemap:
 
 تسمح لك Aspose.PDF بإنشاء الجدول باستخدام مصدر البيانات من DataSet و Data Table والمصفوفات وكائنات IEnumerable باستخدام فئة PdfLightTable
 
-تُستخدم [فئة الجدول](https://reference.aspose.com/pdf/net/aspose.pdf/table) لمعالجة الجداول. تمنحنا هذه الفئة القدرة على إنشاء الجداول ووضعها في المستند، باستخدام [الصفوف](https://reference.aspose.com/pdf/net/aspose.pdf/rows) و [الخلايا](https://reference.aspose.com/pdf/net/aspose.pdf/cell). لذلك، لإنشاء الجدول، تحتاج إلى إضافة العدد المطلوب من الصفوف وملئها بالعدد المناسب من الخلايا.
+تُستخدم [فئة الجدول](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table) لمعالجة الجداول. تمنحنا هذه الفئة القدرة على إنشاء الجداول ووضعها في المستند، باستخدام [الصفوف](https://reference.aspose.com/pdf/ar/net/aspose.pdf/rows) و [الخلايا](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cell). لذلك، لإنشاء الجدول، تحتاج إلى إضافة العدد المطلوب من الصفوف وملئها بالعدد المناسب من الخلايا.
 
 المثال التالي ينشئ الجدول 4x10.
 
@@ -189,14 +189,14 @@ private static void AddTable()
 
 عند تهيئة كائن الجدول، تم استخدام إعدادات الحد الأدنى:
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - عرض الأعمدة (بشكل افتراضي).
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - الحقول الافتراضية لخلايا الجدول.
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - سمات إطار الجدول (النمط، السماكة، اللون).
-* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - سمات إطار الخلية (النمط، السماكة، اللون).
+* [ColumnWidths](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/columnwidths) - عرض الأعمدة (بشكل افتراضي).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/defaultcellpadding) - الحقول الافتراضية لخلايا الجدول.
+* [Border](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/border) - سمات إطار الجدول (النمط، السماكة، اللون).
+* [DefaultCellBorder](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/defaultcellborder) - سمات إطار الخلية (النمط، السماكة، اللون).
 
 ## تصدير البيانات من مصفوفة الكائنات
 
-توفر فئة الجدول طرقًا للتفاعل مع مصادر بيانات ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) و [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). تستورد الطريقة الأولى البيانات من DataTable، والثانية من DataView.
+توفر فئة الجدول طرقًا للتفاعل مع مصادر بيانات ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/ar/net/aspose.pdf.table/importdatatable/methods/1) و [ImportDataView](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/methods/importdataview). تستورد الطريقة الأولى البيانات من DataTable، والثانية من DataView.
 مع الأخذ في الاعتبار أن هذه الكائنات ليست مريحة جدًا للعمل في قالب MVC، سنقتصر على مثال موجز. في هذا المثال (السطر 50)، يتم استدعاء طريقة ImportDataTable وتستقبل كمعلمات مثيل DataTable وإعدادات إضافية مثل علامة الرأس والموقع الأولي (صفوف/أعمدة) لعرض البيانات.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

@@ -87,13 +87,13 @@ Aspose.PDF for .NET mendukung fitur untuk menambahkan objek grafis (misalnya gra
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat instance [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Buat [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) dengan dimensi tertentu.
-1. Atur [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) untuk objek Drawing.
-1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) ke koleksi paragraf halaman.
+1. Buat instance [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Buat [Drawing object](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing) dengan dimensi tertentu.
+1. Atur [Border](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/graph/properties/border) untuk objek Drawing.
+1. Tambahkan objek [Graph](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/graph) ke koleksi paragraf halaman.
 1. Simpan file PDF kita.
 
-Potongan kode berikut menunjukkan cara menambahkan objek [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc).
+Potongan kode berikut menunjukkan cara menambahkan objek [Arc](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/arc).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

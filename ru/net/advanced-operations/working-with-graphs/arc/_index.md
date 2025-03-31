@@ -87,13 +87,13 @@ Aspose.PDF for .NET поддерживает функцию добавления
 
 Выполните следующие действия:
 
-1. Создайте экземпляр [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Создайте [объект Drawing](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) с определёнными размерами.
-1. Установите [границу](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) для объекта Drawing.
-1. Добавьте [графический](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) объект в коллекцию абзацев страницы.
+1. Создайте экземпляр [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Создайте [объект Drawing](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing) с определёнными размерами.
+1. Установите [границу](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/graph/properties/border) для объекта Drawing.
+1. Добавьте [графический](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/graph) объект в коллекцию абзацев страницы.
 1. Сохраните наш PDF-файл.
 
-Следующий фрагмент кода показывает, как добавить [дуговой](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc) объект.
+Следующий фрагмент кода показывает, как добавить [дуговой](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/arc) объект.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

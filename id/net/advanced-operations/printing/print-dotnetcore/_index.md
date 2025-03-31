@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
  
 Sejak rilis 24.4, memilih sumber kertas berdasarkan ukuran halaman PDF di dialog cetak adalah mungkin. Potongan kode berikut memungkinkan pemilihan baki printer berdasarkan ukuran halaman PDF.
 
-Preferensi ini dapat diaktifkan dan dinonaktifkan menggunakan properti [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+Preferensi ini dapat diaktifkan dan dinonaktifkan menggunakan properti [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## Preset Dialog Cetak Penskalaan Halaman
 
-Potongan kode berikut dimaksudkan untuk memastikan bahwa properti [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) diterapkan dan disimpan dengan benar di PDF.
+Potongan kode berikut dimaksudkan untuk memastikan bahwa properti [PrintScaling](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/printscaling/) diterapkan dan disimpan dengan benar di PDF.
 
-Properti [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) telah ditambahkan ke kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan nilai `Aspose.Pdf.PrintScaling.AppDefault` atau `Aspose.Pdf.PrintScaling.None`.
+Properti [PrintScaling](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/printscaling/) telah ditambahkan ke kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dengan nilai `Aspose.Pdf.PrintScaling.AppDefault` atau `Aspose.Pdf.PrintScaling.None`.
 
 Opsi penskalaan halaman yang harus dipilih ketika dialog cetak ditampilkan untuk dokumen ini. Nilai yang valid adalah `None`, yang menunjukkan tidak ada penskalaan halaman, dan `AppDefault`, yang menunjukkan penskalaan cetak default pembaca yang sesuai. Jika entri ini memiliki nilai yang tidak dikenali, `AppDefault` harus digunakan. Nilai default: `AppDefault`.
 

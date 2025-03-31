@@ -152,8 +152,8 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["EPUB ke PDF"](https
 
 <a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi EPUB ke PDF di C#</strong></a>
 
-1. Buat instance dari kelas [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions).
-2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance dari kelas [EpubLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/epubloadoptions).
+2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
 Potongan kode berikut menunjukkan cara mengonversi file EPUB ke format PDF dengan C#.
@@ -176,7 +176,7 @@ private static void ConvertEPUBtoPDF()
 }
 ```
 
-Anda juga dapat mengatur ukuran halaman untuk konversi. Untuk mendefinisikan ukuran halaman baru, Anda menggunakan objek `SizeF` dan meneruskannya ke konstruktor [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main).
+Anda juga dapat mengatur ukuran halaman untuk konversi. Untuk mendefinisikan ukuran halaman baru, Anda menggunakan objek `SizeF` dan meneruskannya ke konstruktor [EpubLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/epubloadoptions/constructors/main).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,15 +208,15 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["Markdown ke PDF"](h
 [![Aspose.PDF Konversi Markdown ke PDF dengan Aplikasi Gratis](markdown.png)](https://products.aspose.app/pdf/conversion/md-to-pdf)
 {{% /alert %}}
 
-Aspose.PDF for .NET menyediakan fungsionalitas untuk membuat dokumen PDF berdasarkan file data [Markdown](https://daringfireball.net/projects/markdown/syntax) input. Untuk mengonversi Markdown ke PDF, Anda perlu menginisialisasi [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menggunakan [MdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions).
+Aspose.PDF for .NET menyediakan fungsionalitas untuk membuat dokumen PDF berdasarkan file data [Markdown](https://daringfireball.net/projects/markdown/syntax) input. Untuk mengonversi Markdown ke PDF, Anda perlu menginisialisasi [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) menggunakan [MdLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/mdloadoptions).
 
 Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini dengan pustaka Aspose.PDF:
 
 <a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi Markdown ke PDF di C#</strong></a> |
 <a name="csharp-convert-md-to-pdf" id="csharp-convert-md-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi MD ke PDF di C#</strong></a>
 
-1. Buat instance dari kelas [MdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions/) .
-2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance dari kelas [MdLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/mdloadoptions/) .
+2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
 ```csharp
@@ -468,14 +468,14 @@ Aspose.PDF untuk .NET mempersembahkan aplikasi gratis online ["PCL ke PDF"](http
 
 ### Mengonversi file PCL ke format PDF
 
-Untuk memungkinkan konversi dari PCL ke PDF, Aspose.PDF memiliki kelas [`PclLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) yang digunakan untuk menginisialisasi objek LoadOptions. Kemudian objek ini diteruskan sebagai argumen selama inisialisasi objek Document dan membantu mesin rendering PDF untuk menentukan format input dokumen sumber.
+Untuk memungkinkan konversi dari PCL ke PDF, Aspose.PDF memiliki kelas [`PclLoadOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/pclloadoptions) yang digunakan untuk menginisialisasi objek LoadOptions. Kemudian objek ini diteruskan sebagai argumen selama inisialisasi objek Document dan membantu mesin rendering PDF untuk menentukan format input dokumen sumber.
 
 Potongan kode berikut menunjukkan proses mengonversi file PCL ke format PDF.
 
 <a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi PCL ke PDF di C#</strong></a>
 
-1. Buat instance dari kelas [PclLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions/) .
-2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance dari kelas [PclLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/pclloadoptions/) .
+2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
 ```csharp
@@ -554,10 +554,10 @@ Dalam kasus file teks biasa, kita dapat menggunakan teknik berikut:
 <a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi Teks Biasa ke PDF di C#</strong></a>
 
 1. Gunakan _TextReader_ untuk membaca seluruh teks.
-2. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dan tambahkan halaman baru di koleksi Pages.
-3. Buat objek baru dari [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment/) dan teruskan objek _TextReader_ ke konstruktor.
+2. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dan tambahkan halaman baru di koleksi Pages.
+3. Buat objek baru dari [TextFragment](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textfragment/) dan teruskan objek _TextReader_ ke konstruktor.
 4. Tambahkan objek _TextFragment_ sebagai paragraf dalam koleksi _Paragraphs_. Jika jumlah teks lebih besar dari halaman, algoritma pustaka secara otomatis menambahkan halaman tambahan.
-5. Gunakan metode **Save** dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/).
+5. Gunakan metode **Save** dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -595,8 +595,8 @@ Ikuti langkah-langkah ini untuk mengonversi teks terformat ke PDF dengan C#:
 <a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi TXT Terformat ke PDF di C#</strong></a>
 
 1. Baca seluruh teks sebagai array string.
-2. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dan tambahkan halaman baru di koleksi [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/pages/) .
-3. Jalankan loop melalui array string dan tambahkan setiap string sebagai paragraf dalam koleksi [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/paragraphs/) .
+2. Buat objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dan tambahkan halaman baru di koleksi [Pages](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/pages/) .
+3. Jalankan loop melalui array string dan tambahkan setiap string sebagai paragraf dalam koleksi [Paragraphs](https://reference.aspose.com/pdf/id/net/aspose.pdf/paragraphs/) .
 
 Dalam hal ini, algoritma pustaka juga menambahkan halaman tambahan, tetapi kita dapat mengontrol proses ini sendiri. Contoh berikut menunjukkan cara mengonversi file teks terformat ke dokumen PDF dengan ukuran halaman A4.
 
@@ -658,7 +658,7 @@ Format file pada dasarnya adalah file XML terkompresi yang terutama digunakan un
 
 {{% /alert %}}
 
-Untuk mengonversi XPS ke PDF dengan Aspose.PDF for .NET, kami telah memperkenalkan kelas bernama [XpsLoadOption](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions) yang digunakan untuk menginisialisasi objek [LoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) . Kemudian, objek ini diteruskan sebagai argumen selama inisialisasi objek Document dan membantu mesin rendering PDF untuk menentukan format input dokumen sumber.
+Untuk mengonversi XPS ke PDF dengan Aspose.PDF for .NET, kami telah memperkenalkan kelas bernama [XpsLoadOption](https://reference.aspose.com/pdf/id/net/aspose.pdf/xpsloadoptions) yang digunakan untuk menginisialisasi objek [LoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/loadoptions) . Kemudian, objek ini diteruskan sebagai argumen selama inisialisasi objek Document dan membantu mesin rendering PDF untuk menentukan format input dokumen sumber.
 
 {{% alert color="primary" %}}
 
@@ -670,8 +670,8 @@ Potongan kode berikut menunjukkan proses mengonversi file XPS ke format PDF deng
 
 <a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi XPS ke PDF di C#</strong></a>
 
-1. Buat instance dari kelas [XpsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions/) .
-2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance dari kelas [XpsLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/xpsloadoptions/) .
+2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen ke format PDF dengan nama file yang diinginkan.
 
 ```csharp
@@ -704,7 +704,7 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["XPS ke PDF"](https:
 
 **Aspose.PDF for .NET** mendukung fitur mengonversi file PostScript ke format PDF. Salah satu fitur dari Aspose.PDF adalah Anda dapat mengatur satu set folder font yang akan digunakan selama konversi.
 
-Untuk mengonversi file PostScript ke format PDF, Aspose.PDF for .NET menawarkan kelas [PsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/psloadoptions) yang digunakan untuk menginisialisasi objek LoadOptions. Kemudian objek ini dapat diteruskan sebagai argumen ke konstruktor objek Document, yang akan membantu Mesin Rendering PDF untuk menentukan format dokumen sumber.
+Untuk mengonversi file PostScript ke format PDF, Aspose.PDF for .NET menawarkan kelas [PsLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/psloadoptions) yang digunakan untuk menginisialisasi objek LoadOptions. Kemudian objek ini dapat diteruskan sebagai argumen ke konstruktor objek Document, yang akan membantu Mesin Rendering PDF untuk menentukan format dokumen sumber.
 
 Potongan kode berikut dapat digunakan untuk mengonversi file PostScript ke format PDF dengan Aspose.PDF for .NET:
 
@@ -768,7 +768,7 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["XML ke PDF"](https:
 
 ## Mengonversi XSL-FO ke PDF
 
-Konversi file XSL-FO ke PDF dapat diimplementasikan menggunakan teknik tradisional Aspose.PDF - menginstansiasi objek [Document](https://reference.aspose.com/page/net/aspose.page/document) dengan [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Tetapi terkadang Anda dapat menemui struktur file yang tidak benar. Untuk kasus ini, konverter XSL-FO memungkinkan pengaturan strategi penanganan kesalahan. Anda dapat memilih `ThrowExceptionImmediately`, `TryIgnore` atau `InvokeCustomHandler`.
+Konversi file XSL-FO ke PDF dapat diimplementasikan menggunakan teknik tradisional Aspose.PDF - menginstansiasi objek [Document](https://reference.aspose.com/page/net/aspose.page/document) dengan [XslFoLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/xslfoloadoptions). Tetapi terkadang Anda dapat menemui struktur file yang tidak benar. Untuk kasus ini, konverter XSL-FO memungkinkan pengaturan strategi penanganan kesalahan. Anda dapat memilih `ThrowExceptionImmediately`, `TryIgnore` atau `InvokeCustomHandler`.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -802,7 +802,7 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["LaTex ke PDF"](http
 [![Aspose.PDF Konversi LaTeX/TeX ke PDF dengan Aplikasi Gratis](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
 {{% /alert %}}
 
-Aspose.PDF for .NET mendukung fitur untuk mengonversi file TeX ke format PDF dan untuk memenuhi kebutuhan ini, namespace Aspose.Pdf memiliki kelas bernama [LatexLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexloadoptions) yang menyediakan kemampuan untuk memuat file LaTex dan merender output dalam format PDF menggunakan [kelas Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Aspose.PDF for .NET mendukung fitur untuk mengonversi file TeX ke format PDF dan untuk memenuhi kebutuhan ini, namespace Aspose.Pdf memiliki kelas bernama [LatexLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/latexloadoptions) yang menyediakan kemampuan untuk memuat file LaTex dan merender output dalam format PDF menggunakan [kelas Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 Potongan kode berikut menunjukkan proses mengonversi file LaTex ke format PDF dengan C#.
 
 ```csharp
@@ -826,7 +826,7 @@ private static void ConvertTeXtoPDF()
 
 Format OFD mengacu pada "Dokumen Tata Letak Tetap Terbuka," yang ditetapkan sebagai standar nasional Tiongkok untuk penyimpanan file elektronik, digunakan sebagai alternatif untuk format PDF yang populer. Ini mendukung dokumen dengan tata letak tetap, memastikan tampilan yang konsisten di berbagai platform. File OFD digunakan untuk berbagai tujuan, termasuk dokumen digital dan aplikasi bisnis.
 
-Aspose.PDF for .NET mendukung fitur untuk mengonversi file OFD ke format PDF dan untuk memenuhi kebutuhan ini, namespace Aspose.Pdf memiliki kelas bernama [OfdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/ofdloadoptions/) yang menyediakan kemampuan untuk memuat file OFD dan merender output dalam format PDF menggunakan [kelas Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Aspose.PDF for .NET mendukung fitur untuk mengonversi file OFD ke format PDF dan untuk memenuhi kebutuhan ini, namespace Aspose.Pdf memiliki kelas bernama [OfdLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/ofdloadoptions/) yang menyediakan kemampuan untuk memuat file OFD dan merender output dalam format PDF menggunakan [kelas Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 
 Potongan kode berikut menunjukkan proses mengonversi file OFD ke format PDF dengan C#. 
 

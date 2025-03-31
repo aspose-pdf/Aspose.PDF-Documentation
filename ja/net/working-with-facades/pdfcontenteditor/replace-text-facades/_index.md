@@ -77,7 +77,7 @@ draft: false
 
 ## 既存のPDFファイル内のテキストを置換する
 
-既存のPDFファイル内のテキストを置換するには、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[ReplaceText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index)メソッドを呼び出す必要があります。更新されたPDFファイルは、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスの[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して保存する必要があります。以下のコードスニペットは、既存のPDFファイル内のテキストを置換する方法を示しています。
+既存のPDFファイル内のテキストを置換するには、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/facade/methods/bindpdf/index)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[ReplaceText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index)メソッドを呼び出す必要があります。更新されたPDFファイルは、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して保存する必要があります。以下のコードスニペットは、既存のPDFファイル内のテキストを置換する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -179,7 +179,7 @@ private static void ReplaceText02()
 {{< /tab >}}
 {{< /tabs >}}
 
-テキストを操作するためのより高度な可能性については、[TextState](https://reference.aspose.com/pdf/net/aspose.pdf.text/textstate)メソッドを使用します。このメソッドを使用することで、テキストを太字、イタリック、色付きにすることができます。
+テキストを操作するためのより高度な可能性については、[TextState](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textstate)メソッドを使用します。このメソッドを使用することで、テキストを太字、イタリック、色付きにすることができます。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

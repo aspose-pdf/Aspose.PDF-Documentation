@@ -82,13 +82,13 @@ sitemap:
 
 以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
-使用 Adobe Acrobat 创建的水印称为工件（如 PDF 规范中的 14.8.2.2 真实内容和工件所述）。为了处理工件，Aspose.PDF 有两个类：[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 和 [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)。
+使用 Adobe Acrobat 创建的水印称为工件（如 PDF 规范中的 14.8.2.2 真实内容和工件所述）。为了处理工件，Aspose.PDF 有两个类：[Artifact](https://reference.aspose.com/pdf/zh/net/aspose.pdf/artifact) 和 [ArtifactCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/artifactcollection)。
 
-为了获取特定页面上的所有工件，[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 类具有 Artifacts 属性。此主题解释了如何在 PDF 文件中处理工件。
+为了获取特定页面上的所有工件，[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 类具有 Artifacts 属性。此主题解释了如何在 PDF 文件中处理工件。
 
 ## 处理工件
 
-[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 类包含以下属性：
+[Artifact](https://reference.aspose.com/pdf/zh/net/aspose.pdf/artifact) 类包含以下属性：
 
 - **Artifact.Type**：获取工件类型（支持 Artifact.ArtifactType 枚举的值，其中包括背景、布局、页面、分页和未定义）。
 - **Artifact.Subtype**：获取工件子类型（支持 Artifact.ArtifactSubtype 枚举的值，其中包括背景、页脚、页眉、未定义、水印）。

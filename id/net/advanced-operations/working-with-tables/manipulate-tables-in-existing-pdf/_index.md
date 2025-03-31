@@ -113,7 +113,7 @@ private static void ManipulateTable()
 
 ## Ganti Tabel Lama dengan yang Baru dalam Dokumen PDF
 
-Jika Anda perlu menemukan tabel tertentu dan menggantinya dengan yang diinginkan, Anda dapat menggunakan metode Replace() dari Kelas [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) untuk melakukannya. Contoh berikut menunjukkan fungsionalitas untuk mengganti tabel di dalam dokumen PDF:
+Jika Anda perlu menemukan tabel tertentu dan menggantinya dengan yang diinginkan, Anda dapat menggunakan metode Replace() dari Kelas [TableAbsorber](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/tableabsorber) untuk melakukannya. Contoh berikut menunjukkan fungsionalitas untuk mengganti tabel di dalam dokumen PDF:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

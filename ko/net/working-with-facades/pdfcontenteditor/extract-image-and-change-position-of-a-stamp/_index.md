@@ -77,7 +77,7 @@ draft: false
 
 ## 이미지 스탬프에서 이미지 추출
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스는 PDF 파일의 스탬프에서 이미지를 추출할 수 있게 해줍니다. 먼저, [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) 메서드를 호출하여 PDF 파일의 특정 페이지에서 StampInfo 객체 배열을 가져옵니다. 그런 다음 StampInfo.Image 속성을 사용하여 StampInfo에서 이미지를 가져올 수 있습니다. 이미지를 얻은 후에는 이미지를 저장하거나 이미지의 다양한 속성과 작업할 수 있습니다. 다음 코드 스니펫은 이미지 스탬프에서 이미지를 추출하는 방법을 보여줍니다.
+[PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스는 PDF 파일의 스탬프에서 이미지를 추출할 수 있게 해줍니다. 먼저, [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [GetStamps](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) 메서드를 호출하여 PDF 파일의 특정 페이지에서 StampInfo 객체 배열을 가져옵니다. 그런 다음 StampInfo.Image 속성을 사용하여 StampInfo에서 이미지를 가져올 수 있습니다. 이미지를 얻은 후에는 이미지를 저장하거나 이미지의 다양한 속성과 작업할 수 있습니다. 다음 코드 스니펫은 이미지 스탬프에서 이미지를 추출하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -136,7 +136,7 @@ private static void ExtractImageFromStamp()
 
 ## PDF 파일에서 스탬프 위치 변경
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스는 PDF 파일에서 스탬프의 위치를 변경할 수 있게 해줍니다. 먼저, [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, 특정 페이지에서 스탬프 인덱스와 새로운 위치를 사용하여 [MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) 메서드를 호출합니다. 그런 다음, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 파일을 저장할 수 있습니다. 다음 코드 스니펫은 특정 페이지에서 스탬프를 이동하는 방법을 보여줍니다.
+[PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스는 PDF 파일에서 스탬프의 위치를 변경할 수 있게 해줍니다. 먼저, [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, 특정 페이지에서 스탬프 인덱스와 새로운 위치를 사용하여 [MoveStamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) 메서드를 호출합니다. 그런 다음, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 파일을 저장할 수 있습니다. 다음 코드 스니펫은 특정 페이지에서 스탬프를 이동하는 방법을 보여줍니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void ChangeStampPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-또한, [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) 메서드를 사용하여 StampId를 사용하여 특정 스탬프를 이동할 수 있습니다.
+또한, [MoveStampById](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) 메서드를 사용하여 StampId를 사용하여 특정 스탬프를 이동할 수 있습니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

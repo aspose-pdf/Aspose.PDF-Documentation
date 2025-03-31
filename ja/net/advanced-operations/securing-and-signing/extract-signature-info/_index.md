@@ -83,9 +83,9 @@ sitemap:
 
 ## 署名フィールドからの画像の抽出
 
-Aspose.PDF for .NETは、[SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield)クラスを使用してPDFファイルにデジタル署名をする機能をサポートしており、文書に署名する際に`SignatureAppearance`の画像を設定することもできます。現在、このAPIは署名フィールドに関連付けられた画像と署名情報を抽出する機能も提供しています。
+Aspose.PDF for .NETは、[SignatureField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturefield)クラスを使用してPDFファイルにデジタル署名をする機能をサポートしており、文書に署名する際に`SignatureAppearance`の画像を設定することもできます。現在、このAPIは署名フィールドに関連付けられた画像と署名情報を抽出する機能も提供しています。
 
-署名情報を抽出するために、SignatureFieldクラスに[ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage)メソッドを導入しました。以下のコードスニペットは、`SignatureField`オブジェクトから画像を抽出する手順を示しています。
+署名情報を抽出するために、SignatureFieldクラスに[ExtractImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturefield/methods/extractimage)メソッドを導入しました。以下のコードスニペットは、`SignatureField`オブジェクトから画像を抽出する手順を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,7 +132,7 @@ private static void ExtractImagesFromSignatureField()
 
 Aspose.PDF for .NETは、SignatureFieldクラスを使用してPDFファイルにデジタル署名をする機能をサポートしています。現在、証明書の有効性を判断することもできますが、証明書全体を抽出することはできません。抽出できる情報は、公開鍵、サムプリント、発行者などです。
 
-署名情報を抽出するために、[ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate)メソッドを[SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield)クラスに導入しました。以下のコードスニペットは、SignatureFieldオブジェクトから証明書を抽出する手順を示しています。
+署名情報を抽出するために、[ExtractCertificate](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturefield/methods/extractcertificate)メソッドを[SignatureField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturefield)クラスに導入しました。以下のコードスニペットは、SignatureFieldオブジェクトから証明書を抽出する手順を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

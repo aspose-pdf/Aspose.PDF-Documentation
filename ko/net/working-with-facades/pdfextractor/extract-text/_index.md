@@ -74,11 +74,11 @@ lastmod: "2021-06-05"
 }
 </script>
 
-이 기사에서는 PDF 파일에서 텍스트를 추출하는 세부 사항을 살펴보겠습니다. 이러한 모든 추출 기능은 [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스에서 한 곳에서 제공됩니다. 이러한 기능을 코드에서 사용하는 방법을 살펴보겠습니다.
+이 기사에서는 PDF 파일에서 텍스트를 추출하는 세부 사항을 살펴보겠습니다. 이러한 모든 추출 기능은 [PdfExtractor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor) 클래스에서 한 곳에서 제공됩니다. 이러한 기능을 코드에서 사용하는 방법을 살펴보겠습니다.
 
-[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스는 세 가지 유형의 추출 기능을 제공합니다. 이 세 가지 범주는 텍스트, 이미지 및 첨부 파일입니다. 이 세 가지 범주 각각에서 추출을 수행하기 위해 PdfExtractor는 최종 출력을 제공하기 위해 함께 작동하는 다양한 메서드를 제공합니다.
+[PdfExtractor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor) 클래스는 세 가지 유형의 추출 기능을 제공합니다. 이 세 가지 범주는 텍스트, 이미지 및 첨부 파일입니다. 이 세 가지 범주 각각에서 추출을 수행하기 위해 PdfExtractor는 최종 출력을 제공하기 위해 함께 작동하는 다양한 메서드를 제공합니다.
 
-예를 들어, 텍스트를 추출하려면 [ExtractText, GetText, HasNextPageText 및 GetNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/index)와 같은 세 가지 메서드를 사용할 수 있습니다. 이제 텍스트 추출을 시작하려면 먼저 [ExtractText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extracttext/index) 메서드를 호출해야 합니다. 이 메서드는 PDF 파일에서 텍스트를 추출하여 메모리에 저장합니다. 그 후, [GetText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/gettext/index) 메서드는 이 추출된 텍스트를 가져와 지정된 위치의 파일에 저장합니다. [HasNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextpagetext) 메서드는 각 페이지를 반복하며 다음 페이지에 텍스트가 있는지 확인하는 데 도움을 줍니다. 텍스트가 포함되어 있으면 [GetNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getnextpagetext/index) 메서드는 개별 페이지의 텍스트를 파일에 저장하는 데 도움을 줍니다.
+예를 들어, 텍스트를 추출하려면 [ExtractText, GetText, HasNextPageText 및 GetNextPageText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor/methods/index)와 같은 세 가지 메서드를 사용할 수 있습니다. 이제 텍스트 추출을 시작하려면 먼저 [ExtractText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor/methods/extracttext/index) 메서드를 호출해야 합니다. 이 메서드는 PDF 파일에서 텍스트를 추출하여 메모리에 저장합니다. 그 후, [GetText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor/methods/gettext/index) 메서드는 이 추출된 텍스트를 가져와 지정된 위치의 파일에 저장합니다. [HasNextPageText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor/methods/hasnextpagetext) 메서드는 각 페이지를 반복하며 다음 페이지에 텍스트가 있는지 확인하는 데 도움을 줍니다. 텍스트가 포함되어 있으면 [GetNextPageText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfextractor/methods/getnextpagetext/index) 메서드는 개별 페이지의 텍스트를 파일에 저장하는 데 도움을 줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

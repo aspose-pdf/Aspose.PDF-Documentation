@@ -83,12 +83,12 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 ## Memperbarui Tautan di File PDF
 
-Seperti yang dibahas dalam Menambahkan Hyperlink di File PDF, kelas [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) memungkinkan untuk menambahkan tautan di file PDF. Ada juga kelas serupa yang digunakan untuk mendapatkan tautan yang ada dari dalam file PDF. Gunakan ini jika Anda perlu memperbarui tautan yang ada. Untuk memperbarui tautan yang ada:
+Seperti yang dibahas dalam Menambahkan Hyperlink di File PDF, kelas [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) memungkinkan untuk menambahkan tautan di file PDF. Ada juga kelas serupa yang digunakan untuk mendapatkan tautan yang ada dari dalam file PDF. Gunakan ini jika Anda perlu memperbarui tautan yang ada. Untuk memperbarui tautan yang ada:
 
 1. Muat file PDF.
 1. Pergi ke halaman tertentu di file PDF.
-1. Tentukan tujuan tautan menggunakan properti Destination dari objek [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction).
-1. Halaman tujuan ditentukan menggunakan konstruktor [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination).
+1. Tentukan tujuan tautan menggunakan properti Destination dari objek [GoToAction](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/gotoaction).
+1. Halaman tujuan ditentukan menggunakan konstruktor [XYZExplicitDestination](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/xyzexplicitdestination).
 
 ### Atur Target Tautan ke Halaman di Dokumen yang Sama
 
@@ -155,7 +155,7 @@ private static void UpdateLinkAnnotation()
 
 ### Atur Tujuan Tautan ke Alamat Web
 
-Untuk memperbarui hyperlink sehingga mengarah ke alamat web, buat objek [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) dan berikan ke properti Action dari LinkAnnotation. Potongan kode berikut menunjukkan cara memperbarui tautan di file PDF dan mengatur targetnya ke alamat web.
+Untuk memperbarui hyperlink sehingga mengarah ke alamat web, buat objek [GoToURIAction](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/gotouriaction) dan berikan ke properti Action dari LinkAnnotation. Potongan kode berikut menunjukkan cara memperbarui tautan di file PDF dan mengatur targetnya ke alamat web.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

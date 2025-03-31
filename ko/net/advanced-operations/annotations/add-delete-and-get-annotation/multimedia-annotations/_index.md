@@ -79,16 +79,16 @@ sitemap:
 }
 </script>
 
-PDF 문서의 주석은 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 객체의 Annotations 컬렉션에 포함되어 있습니다. 이 컬렉션은 해당 개별 페이지의 모든 주석을 포함합니다: 각 페이지는 고유한 Annotations 컬렉션을 가지고 있습니다. 특정 페이지에 주석을 추가하려면 Add 메서드를 사용하여 해당 페이지의 Annotations 컬렉션에 추가하십시오.
+PDF 문서의 주석은 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 객체의 Annotations 컬렉션에 포함되어 있습니다. 이 컬렉션은 해당 개별 페이지의 모든 주석을 포함합니다: 각 페이지는 고유한 Annotations 컬렉션을 가지고 있습니다. 특정 페이지에 주석을 추가하려면 Add 메서드를 사용하여 해당 페이지의 Annotations 컬렉션에 추가하십시오.
 
-Aspose.PDF.InteractiveFeatures.Annotations 네임스페이스의 [ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) 클래스를 사용하여 PDF 문서에 주석으로 SWF 파일을 포함할 수 있습니다. 화면 주석은 미디어 클립이 재생될 수 있는 페이지의 영역을 지정합니다.
+Aspose.PDF.InteractiveFeatures.Annotations 네임스페이스의 [ScreenAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/screenannotation) 클래스를 사용하여 PDF 문서에 주석으로 SWF 파일을 포함할 수 있습니다. 화면 주석은 미디어 클립이 재생될 수 있는 페이지의 영역을 지정합니다.
 
-PDF 문서에 외부 비디오 링크를 추가해야 할 때는 [MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation)을 사용할 수 있습니다.
+PDF 문서에 외부 비디오 링크를 추가해야 할 때는 [MovieAnnotaiton](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/movieannotation)을 사용할 수 있습니다.
 Movie Annotation은 컴퓨터 화면과 스피커에서 표시될 애니메이션 그래픽과 소리를 포함합니다.
 
-[Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation)은 텍스트 주석과 유사하지만 텍스트 노트 대신 컴퓨터의 마이크로폰에서 녹음된 소리 또는 파일에서 가져온 소리를 포함합니다. 주석이 활성화되면 소리가 재생됩니다. 주석은 대부분의 방식에서 텍스트 주석처럼 동작하며, 소리를 나타내는 다른 아이콘(기본적으로 스피커)을 사용합니다.
+[Sound Annotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/soundannotation)은 텍스트 주석과 유사하지만 텍스트 노트 대신 컴퓨터의 마이크로폰에서 녹음된 소리 또는 파일에서 가져온 소리를 포함합니다. 주석이 활성화되면 소리가 재생됩니다. 주석은 대부분의 방식에서 텍스트 주석처럼 동작하며, 소리를 나타내는 다른 아이콘(기본적으로 스피커)을 사용합니다.
 
-그러나 PDF 문서에 미디어를 임베드해야 할 경우 [RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation)을 사용해야 합니다.
+그러나 PDF 문서에 미디어를 임베드해야 할 경우 [RichMediaAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/richmediaannotation)을 사용해야 합니다.
 
 RichMediaAnnotation 클래스의 다음 메서드/속성을 사용할 수 있습니다.
 
@@ -292,7 +292,7 @@ private static void DeletePolyAnnotation()
 
 ## 위젯 주석 추가
 
-인터랙티브 양식은 [Widget Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation)를 사용하여 필드의 모양을 나타내고 사용자 상호작용을 관리합니다.
+인터랙티브 양식은 [Widget Annotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/widgetannotation)를 사용하여 필드의 모양을 나타내고 사용자 상호작용을 관리합니다.
 우리는 PDF에 추가되는 이러한 양식 요소를 사용하여 정보를 입력하고 제출하거나 다른 사용자 상호작용을 수행하기 쉽게 만듭니다.
 
 위젯 주석은 특정 페이지의 양식 필드를 그래픽적으로 나타내므로 주석으로 직접 생성할 수 없습니다.
@@ -453,14 +453,14 @@ PDF 문서에서는 3D CAD 또는 3D 모델링 소프트웨어로 생성된 고�
 
 3D 주석은 U3D 형식으로 생성된 모델을 사용하여 추가됩니다.
 
-1. 새로운 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)를 생성합니다.
-1. 원하는 3D 모델의 데이터를 로드합니다(우리의 경우 "Ring.u3d")하여 [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent)를 생성합니다.
-1. [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) 객체를 생성하고 문서 및 3DContent에 연결합니다.
+1. 새로운 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document)를 생성합니다.
+1. 원하는 3D 모델의 데이터를 로드합니다(우리의 경우 "Ring.u3d")하여 [PDF3DContent](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/pdf3dcontent)를 생성합니다.
+1. [3dArtWork](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/pdf3dartwork) 객체를 생성하고 문서 및 3DContent에 연결합니다.
 1. pdf3dArtWork 객체를 조정합니다:
 
     - 3DLightingScheme - (예제에서는 `CAD`로 설정합니다)
     - 3DRenderMode - (예제에서는 `Solid`로 설정합니다)
-    - Fill `ViewArray`, 최소한 하나의 [3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview)를 생성하고 배열에 추가합니다.
+    - Fill `ViewArray`, 최소한 하나의 [3D View](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/pdf3dview)를 생성하고 배열에 추가합니다.
 
 1. 주석의 3가지 기본 매개변수를 설정합니다:
     - 주석이 배치될 `page`.
@@ -469,7 +469,7 @@ PDF 문서에서는 3D CAD 또는 3D 모델링 소프트웨어로 생성된 고�
 1. 3D 객체의 더 나은 프레젠테이션을 위해 테두리 프레임을 설정합니다.
 1. 기본 보기를 설정합니다(예: - TOP).
 1. 추가 매개변수: 이름, 미리보기 포스터 등을 추가합니다.
-1. [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)에 주석을 추가합니다.
+1. [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page)에 주석을 추가합니다.
 1. 결과를 저장합니다.
 
 ### 예제

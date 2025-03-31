@@ -85,11 +85,11 @@ O próximo trecho de código também funciona com a biblioteca [Aspose.Drawing](
 
 1. Crie um novo projeto C#.
 1. Adicione uma referência ao DLL Aspose.PDF.
-1. Crie um objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Crie um objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) com o arquivo que você está adicionando e a descrição do arquivo.
-1. Adicione o objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) à coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), usando o método Add da coleção.
+1. Crie um objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
+1. Crie um objeto [FileSpecification](https://reference.aspose.com/pdf/pt/net/aspose.pdf/filespecification) com o arquivo que você está adicionando e a descrição do arquivo.
+1. Adicione o objeto [FileSpecification](https://reference.aspose.com/pdf/pt/net/aspose.pdf/filespecification) à coleção [EmbeddedFiles](https://reference.aspose.com/pdf/pt/net/aspose.pdf/embeddedfilecollection) do objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document), usando o método Add da coleção.
 
-A coleção [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contém todos os anexos no arquivo PDF. O seguinte trecho de código mostra como adicionar um anexo em um documento PDF.
+A coleção [EmbeddedFiles](https://reference.aspose.com/pdf/pt/net/aspose.pdf/embeddedfilecollection) contém todos os anexos no arquivo PDF. O seguinte trecho de código mostra como adicionar um anexo em um documento PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

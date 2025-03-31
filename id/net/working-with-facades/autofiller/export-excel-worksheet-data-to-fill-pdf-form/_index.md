@@ -77,8 +77,8 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Nama ruang Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) di [Aspose.PDF for .NET](/pdf/id/net/) menawarkan berbagai cara untuk mengisi formulir PDF. Anda dapat mengimpor data dari file XML, DFD, XFDF, menggunakan API dan bahkan dapat menggunakan data dari lembar kerja Excel.
-Kami akan menggunakan metode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) dari kelas [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) dari [Aspose.Cells](https://docs.aspose.com//cells/net) untuk mengekspor data dari lembar Excel ke objek DataTable. Kemudian kami perlu mengimpor data ini ke dalam formulir PDF menggunakan metode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) dari kelas [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Pastikan bahwa nama Kolom dari DataTable sama dengan nama field di formulir PDF.
+[Nama ruang Aspose.Pdf.Facades](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades) di [Aspose.PDF for .NET](/pdf/id/net/) menawarkan berbagai cara untuk mengisi formulir PDF. Anda dapat mengimpor data dari file XML, DFD, XFDF, menggunakan API dan bahkan dapat menggunakan data dari lembar kerja Excel.
+Kami akan menggunakan metode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) dari kelas [Cells](https://reference.aspose.com/pdf/id/net/aspose.pdf/cells) dari [Aspose.Cells](https://docs.aspose.com//cells/net) untuk mengekspor data dari lembar Excel ke objek DataTable. Kemudian kami perlu mengimpor data ini ke dalam formulir PDF menggunakan metode [ImportDataTable](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/autofiller/methods/importdatatable) dari kelas [AutoFiller](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/autofiller). Pastikan bahwa nama Kolom dari DataTable sama dengan nama field di formulir PDF.
 
 {{% /alert %}}
 
@@ -92,7 +92,7 @@ Dalam formulir yang disebutkan di atas memiliki satu halaman, dengan tiga field 
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
-Kami perlu membuat objek dari kelas [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) dan mengikat formulir PDF yang ada di gambar di atas dan menggunakan metode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) untuk mengisi field formulir menggunakan data yang ada di objek DataTable.
+Kami perlu membuat objek dari kelas [AutoFiller](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/autofiller) dan mengikat formulir PDF yang ada di gambar di atas dan menggunakan metode [ImportDataTable](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/autofiller/methods/importdatatable) untuk mengisi field formulir menggunakan data yang ada di objek DataTable.
 Setelah metode dipanggil, file formulir PDF baru dihasilkan, yang berisi lima halaman dengan formulir yang diisi berdasarkan data dari lembar Excel. Formulir PDF input adalah satu halaman dan hasilnya adalah lima halaman, karena jumlah baris data di lembar Excel adalah 5. Kelas DataTable menawarkan kemampuan untuk menggunakan baris pertama dari lembar sebagai ColumnName.
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
@@ -216,5 +216,5 @@ private static System.Data.DataTable GenerateDataTable()
 ## Kesimpulan
 
 {{% alert color="primary" %}}
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) juga menawarkan kemampuan untuk mengisi formulir PDF menggunakan data dari database tetapi fitur ini saat ini didukung dalam versi .NET.
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades) juga menawarkan kemampuan untuk mengisi formulir PDF menggunakan data dari database tetapi fitur ini saat ini didukung dalam versi .NET.
 {{% /alert %}}

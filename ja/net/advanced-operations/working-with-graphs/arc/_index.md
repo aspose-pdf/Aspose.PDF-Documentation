@@ -87,13 +87,13 @@ Aspose.PDF for .NETは、PDFドキュメントにグラフオブジェクト（�
 
 以下の手順に従ってください：
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)インスタンスを作成します。
-1. 特定の寸法で[Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)を作成します。
-1. Drawing objectの[Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border)を設定します。
-1. [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)オブジェクトをページの段落コレクションに追加します。
+1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)インスタンスを作成します。
+1. 特定の寸法で[Drawing object](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing)を作成します。
+1. Drawing objectの[Border](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/graph/properties/border)を設定します。
+1. [Graph](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/graph)オブジェクトをページの段落コレクションに追加します。
 1. PDFファイルを保存します。
 
-次のコードスニペットは、[Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc)オブジェクトを追加する方法を示しています。
+次のコードスニペットは、[Arc](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/arc)オブジェクトを追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

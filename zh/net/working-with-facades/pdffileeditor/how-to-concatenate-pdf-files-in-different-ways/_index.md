@@ -78,11 +78,11 @@ draft: false
 
 {{% alert color="primary" %}}
 
-本文描述了如何使用 [Aspose.PDF for .NET](/pdf/zh/net/) 组件将多个 PDF 文档 [合并](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 为一个单一的 PDF 文档。[Aspose.PDF for .NET](/pdf/zh/net/) 使这项工作变得轻而易举。
+本文描述了如何使用 [Aspose.PDF for .NET](/pdf/zh/net/) 组件将多个 PDF 文档 [合并](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 为一个单一的 PDF 文档。[Aspose.PDF for .NET](/pdf/zh/net/) 使这项工作变得轻而易举。
 
 {{% /alert %}}
 
-您只需调用 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类的 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法，所有输入的 PDF 文件将被合并在一起，并生成一个单一的 PDF 文件。让我们创建一个应用程序来练习 PDF 文件的合并。我们将使用 Visual Studio.NET 2019 创建一个应用程序。
+您只需调用 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类的 [Concatenate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 方法，所有输入的 PDF 文件将被合并在一起，并生成一个单一的 PDF 文件。让我们创建一个应用程序来练习 PDF 文件的合并。我们将使用 Visual Studio.NET 2019 创建一个应用程序。
 
 {{% alert color="primary" %}}
 
@@ -104,7 +104,7 @@ private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabe
 }
 ```
 
-展示了一个 Windows 窗体应用程序的视图，以演示 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类的 PDF 文件合并功能。
+展示了一个 Windows 窗体应用程序的视图，以演示 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类的 PDF 文件合并功能。
 
 ![合并 PDF 文件](how-to-concatenate-pdf-files-in-different-ways_1.png)
 

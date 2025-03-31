@@ -8,7 +8,7 @@ lastmod: "2021-07-01"
 draft: false
 ---
 
-Aspose.PDF 21.4では、画像を結合することができます。[画像をマージする](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages)メソッドは、特定のフォルダーの内容を確認し、その中の指定されたタイプのファイルを扱います。画像をマージする際には、'inputImagesStreams'、画像フォーマット、およびファイルの画像マージモード（例：垂直）を指定します。そして、結果をFileOutputStreamに保存します。
+Aspose.PDF 21.4では、画像を結合することができます。[画像をマージする](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfconverter/methods/mergeimages)メソッドは、特定のフォルダーの内容を確認し、その中の指定されたタイプのファイルを扱います。画像をマージする際には、'inputImagesStreams'、画像フォーマット、およびファイルの画像マージモード（例：垂直）を指定します。そして、結果をFileOutputStreamに保存します。
 
 次のコードスニペットに従ってタスクを解決してください：
 

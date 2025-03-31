@@ -101,7 +101,7 @@ _形式_: **PowerPoint**
 
 私たちには、PPT/PPTXプレゼンテーションを作成および操作する機能を提供するAPIであるAspose.Slidesがあります。このAPIは、PPT/PPTXファイルをPDF形式に変換する機能も提供します。最近、多くの顧客からPDFをPPTX形式に変換する機能をサポートする要求を受けました。Aspose.PDF for .NETのリリース10.3.0から、PDFドキュメントをPPTX形式に変換する機能を導入しました。この変換中に、PDFファイルの各ページがPPTXファイルの個別のスライドに変換されます。
 
-PDFから<abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>への変換中に、テキストは選択/更新可能なテキストとしてレンダリングされます。PDFファイルをPPTX形式に変換するには、Aspose.PDFが[`PptxSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions)というクラスを提供しています。PptxSaveOptionsクラスのオブジェクトは、[`Document.Save(..) method`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)の第2引数として渡されます。以下のコードスニペットは、PDFファイルをPPTX形式に変換するプロセスを示しています。
+PDFから<abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>への変換中に、テキストは選択/更新可能なテキストとしてレンダリングされます。PDFファイルをPPTX形式に変換するには、Aspose.PDFが[`PptxSaveOptions`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pptxsaveoptions)というクラスを提供しています。PptxSaveOptionsクラスのオブジェクトは、[`Document.Save(..) method`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)の第2引数として渡されます。以下のコードスニペットは、PDFファイルをPPTX形式に変換するプロセスを示しています。
 
 ## C#とAspose.PDF .NETを使用したPDFからPowerPointへの簡単な変換
 
@@ -109,8 +109,8 @@ PDFをPPTXに変換するには、Aspose.PDF for .NETは以下のコードステ
 
 <a name="csharp-pdf-to-powerpoint"><strong>手順: C#でPDFをPowerPointに変換する</strong></a> | <a name="csharp-pdf-to-pptx"><strong>手順: C#でPDFをPPTXに変換する</strong></a>
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのインスタンスを作成します。
-2. [PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions)クラスのインスタンスを作成します。
+1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのインスタンスを作成します。
+2. [PptxSaveOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pptxsaveoptions)クラスのインスタンスを作成します。
 3. **Document**オブジェクトの**Save**メソッドを使用して、PDFをPPTXとして保存します。
 
 ```csharp
@@ -142,7 +142,7 @@ Aspose.PDF for .NETは、オンラインの無料アプリケーション["PDF t
 [![Aspose.PDF PDFからPPTXへの変換無料アプリ](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
 
-検索可能なPDFを選択可能なテキストの代わりに画像としてPPTXに変換する必要がある場合、Aspose.PDFはその機能を[Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions)クラスを介して提供します。これを実現するには、[PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions)クラスのプロパティ[SlidesAsImages](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages)を'true'に設定します。以下のコードサンプルに示すように。
+検索可能なPDFを選択可能なテキストの代わりに画像としてPPTXに変換する必要がある場合、Aspose.PDFはその機能を[Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pptxsaveoptions)クラスを介して提供します。これを実現するには、[PptxSaveOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pptxsaveoptions)クラスのプロパティ[SlidesAsImages](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages)を'true'に設定します。以下のコードサンプルに示すように。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -168,7 +168,7 @@ private static void ConvertPDFToPPTWithSlidesAsImages()
 
 ## PPTX変換の進捗詳細
 
-Aspose.PDF for .NETは、PDFからPPTXへの変換の進捗を追跡できます。[Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions)クラスは、変換の進捗を追跡するためにカスタムメソッドを指定できる[CustomProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler)プロパティを提供します。以下のコードサンプルに示すように。
+Aspose.PDF for .NETは、PDFからPPTXへの変換の進捗を追跡できます。[Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pptxsaveoptions)クラスは、変換の進捗を追跡するためにカスタムメソッドを指定できる[CustomProgressHandler](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler)プロパティを提供します。以下のコードサンプルに示すように。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

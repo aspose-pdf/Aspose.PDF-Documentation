@@ -77,13 +77,13 @@ draft: false
 
 ## 既存のPDFファイルのビューワー設定
 
-[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference)クラスは、PDFファイルの表示モードを表します。たとえば、ドキュメントウィンドウを画面の中央に配置したり、ビューワーアプリケーションのメニューバーを非表示にしたりします。
+[ViewerPreference](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/viewerpreference)クラスは、PDFファイルの表示モードを表します。たとえば、ドキュメントウィンドウを画面の中央に配置したり、ビューワーアプリケーションのメニューバーを非表示にしたりします。
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスの[ChangeViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference)メソッドを使用すると、ビューワー設定を変更できます。そのためには、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/bindpdf/index)メソッドを使用して入力PDFファイルをバインドする必要があります。
+[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスの[ChangeViewerPreference](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference)メソッドを使用すると、ビューワー設定を変更できます。そのためには、[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/bindpdf/index)メソッドを使用して入力PDFファイルをバインドする必要があります。
 
-その後、[ChangeViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference)メソッドを呼び出して任意の設定を行うことができます。最後に、[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドを使用して更新されたPDFファイルを保存する必要があります。以下のコードスニペットは、既存のPDFファイルでビューワー設定を変更する方法を示しています。
+その後、[ChangeViewerPreference](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference)メソッドを呼び出して任意の設定を行うことができます。最後に、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドを使用して更新されたPDFファイルを保存する必要があります。以下のコードスニペットは、既存のPDFファイルでビューワー設定を変更する方法を示しています。
 
-たとえば、[CenterWindow](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/centerwindow)パラメータを指定してウィンドウを中央に配置し、[HideMenubar](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar)で上部ツールバーを非表示にし、[PageModeUseNone](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone)で全画面モードを開きます。
+たとえば、[CenterWindow](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/viewerpreference/fields/centerwindow)パラメータを指定してウィンドウを中央に配置し、[HideMenubar](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar)で上部ツールバーを非表示にし、[PageModeUseNone](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone)で全画面モードを開きます。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

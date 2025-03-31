@@ -113,7 +113,7 @@ private static void ManipulateTable()
 
 ## Substituir tabela antiga por uma nova no documento PDF
 
-Caso você precise encontrar uma tabela específica e substituí-la pela desejada, você pode usar o método Replace() da classe [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) para fazer isso. O exemplo a seguir demonstra a funcionalidade de substituir a tabela dentro do documento PDF:
+Caso você precise encontrar uma tabela específica e substituí-la pela desejada, você pode usar o método Replace() da classe [TableAbsorber](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/tableabsorber) para fazer isso. O exemplo a seguir demonstra a funcionalidade de substituir a tabela dentro do documento PDF:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

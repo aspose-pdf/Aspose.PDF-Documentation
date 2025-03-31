@@ -77,13 +77,13 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 类提供了旋转页面的功能。
+[PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 类提供了旋转页面的功能。
 
 {{% /alert %}}
 
 ## 使用 PageRotations 旋转页面
 
-要在文档中旋转页面，我们可以使用 [PageRotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations)。
+要在文档中旋转页面，我们可以使用 [PageRotations](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations)。
 `PageRotations` 包含页面编号和旋转角度，键表示页面编号，键的值表示旋转的度数。
 
 ```csharp
@@ -114,7 +114,7 @@ draft: false
 
 ## 使用 Rotation 旋转页面
 
-我们还可以使用 [Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation) 属性。旋转必须是 0、90、180 或 270。
+我们还可以使用 [Rotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/properties/rotation) 属性。旋转必须是 0、90、180 或 270。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

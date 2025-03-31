@@ -83,9 +83,9 @@ sitemap:
 
 ## 서명 필드에서 이미지 추출
 
-Aspose.PDF for .NET은 [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) 클래스를 사용하여 PDF 파일에 디지털 서명하는 기능을 지원하며, 문서에 서명하는 동안 `SignatureAppearance`에 대한 이미지를 설정할 수도 있습니다. 이제 이 API는 서명 필드와 관련된 이미지뿐만 아니라 서명 정보를 추출하는 기능도 제공합니다.
+Aspose.PDF for .NET은 [SignatureField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturefield) 클래스를 사용하여 PDF 파일에 디지털 서명하는 기능을 지원하며, 문서에 서명하는 동안 `SignatureAppearance`에 대한 이미지를 설정할 수도 있습니다. 이제 이 API는 서명 필드와 관련된 이미지뿐만 아니라 서명 정보를 추출하는 기능도 제공합니다.
 
-서명 정보를 추출하기 위해, 우리는 SignatureField 클래스에 [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) 메서드를 도입했습니다. 다음 코드 스니펫을 참조하여 `SignatureField` 객체에서 이미지를 추출하는 단계를 보여줍니다:
+서명 정보를 추출하기 위해, 우리는 SignatureField 클래스에 [ExtractImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturefield/methods/extractimage) 메서드를 도입했습니다. 다음 코드 스니펫을 참조하여 `SignatureField` 객체에서 이미지를 추출하는 단계를 보여줍니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,7 +132,7 @@ private static void ExtractImagesFromSignatureField()
 
 Aspose.PDF for .NET은 SignatureField 클래스를 사용하여 PDF 파일에 디지털 서명하는 기능을 지원합니다. 현재 우리는 인증서의 유효성을 판단할 수 있지만 전체 인증서를 추출할 수는 없습니다. 추출할 수 있는 정보는 공개 키, 지문, 발급자 등입니다.
 
-서명 정보를 추출하기 위해, 우리는 [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) 메서드를 [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) 클래스에 도입했습니다. 다음 코드 스니펫을 참조하여 SignatureField 객체에서 인증서를 추출하는 단계를 보여줍니다:
+서명 정보를 추출하기 위해, 우리는 [ExtractCertificate](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) 메서드를 [SignatureField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturefield) 클래스에 도입했습니다. 다음 코드 스니펫을 참조하여 SignatureField 객체에서 인증서를 추출하는 단계를 보여줍니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,7 +83,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## **PDF Para Postscript em C#**
 
-A classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) fornece a capacidade de imprimir documentos PDF e, com a ajuda dessa classe, também podemos converter arquivos PDF para o formato PostScript. Para converter um arquivo PDF em PostScript, primeiro instale qualquer impressora PS e apenas imprima para arquivo com a ajuda do PdfViewer. Para instalar uma impressora PS, consulte as instruções fornecidas pelo fornecedor da sua impressora. O seguinte trecho de código mostra como imprimir e converter um PDF para o formato PostScript.
+A classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/) fornece a capacidade de imprimir documentos PDF e, com a ajuda dessa classe, também podemos converter arquivos PDF para o formato PostScript. Para converter um arquivo PDF em PostScript, primeiro instale qualquer impressora PS e apenas imprima para arquivo com a ajuda do PdfViewer. Para instalar uma impressora PS, consulte as instruções fornecidas pelo fornecedor da sua impressora. O seguinte trecho de código mostra como imprimir e converter um PDF para o formato PostScript.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -158,7 +158,7 @@ private static void PrintToPostscriptFile()
 
 ## Verificando o Status do Trabalho de Impressão
 
-Um arquivo PDF pode ser impresso em uma impressora física, bem como no Microsoft XPS Document Writer, sem mostrar uma caixa de diálogo de impressão, usando a classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/). Ao imprimir arquivos PDF grandes, o processo pode demorar um pouco, então o usuário pode não ter certeza se o processo de impressão foi concluído ou encontrou um problema. Para determinar o status de um trabalho de impressão, use a propriedade [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). O seguinte trecho de código mostra como imprimir o arquivo PDF em um arquivo XPS e obter o status da impressão.
+Um arquivo PDF pode ser impresso em uma impressora física, bem como no Microsoft XPS Document Writer, sem mostrar uma caixa de diálogo de impressão, usando a classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/). Ao imprimir arquivos PDF grandes, o processo pode demorar um pouco, então o usuário pode não ter certeza se o processo de impressão foi concluído ou encontrou um problema. Para determinar o status de um trabalho de impressão, use a propriedade [PrintStatus](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/printstatus/). O seguinte trecho de código mostra como imprimir o arquivo PDF em um arquivo XPS e obter o status da impressão.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -299,7 +299,7 @@ private static void CheckingPrintJobStatus()
 
 ## Obter/Definir Nome do Proprietário do Trabalho de Impressão
 
-Às vezes, há a necessidade de obter ou definir o nome do proprietário do trabalho de impressão (ou seja, o usuário real que pressionou o botão de impressão em uma página da web). Essa informação é necessária ao imprimir o arquivo PDF. Para atender a essa necessidade, a propriedade [PrinterJobName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printerjobname/) é utilizada.
+Às vezes, há a necessidade de obter ou definir o nome do proprietário do trabalho de impressão (ou seja, o usuário real que pressionou o botão de impressão em uma página da web). Essa informação é necessária ao imprimir o arquivo PDF. Para atender a essa necessidade, a propriedade [PrinterJobName](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/printerjobname/) é utilizada.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

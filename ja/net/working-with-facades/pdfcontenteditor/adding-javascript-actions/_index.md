@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor)クラスは、Aspose.Pdf.Facadesパッケージに存在し、PDFファイルにJavaScriptアクションを追加する柔軟性を提供します。PDFビューア内のメニュー項目を実行するためのシリアルアクションに対応するリンクを作成できます。このクラスは、文書イベントのための追加アクションを作成する機能も提供します。
+[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/PdfContentEditor)クラスは、Aspose.Pdf.Facadesパッケージに存在し、PDFファイルにJavaScriptアクションを追加する柔軟性を提供します。PDFビューア内のメニュー項目を実行するためのシリアルアクションに対応するリンクを作成できます。このクラスは、文書イベントのための追加アクションを作成する機能も提供します。
 
-まず、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)内にオブジェクトを描画します。私たちの例では、[Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle)です。そして、Rectangleに[createJavaScriptLink](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink)アクションを設定します。その後、文書を保存できます。
+まず、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)内にオブジェクトを描画します。私たちの例では、[Rectangle](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/rectangle)です。そして、Rectangleに[createJavaScriptLink](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink)アクションを設定します。その後、文書を保存できます。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

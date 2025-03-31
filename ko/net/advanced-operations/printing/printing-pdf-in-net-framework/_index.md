@@ -85,7 +85,7 @@ sitemap:
 
 이 문서에서는 C#에서 프린터 및 페이지 설정을 사용하여 기본 프린터에 PDF 파일을 인쇄하는 방법을 설명합니다.
 
-[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) 클래스는 PDF 파일을 기본 프린터에 인쇄할 수 있도록 합니다. PdfViewer 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) 메서드를 사용하여 PDF를 엽니다. 다양한 인쇄 설정을 지정하려면 [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) 및 [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) 클래스를 사용하십시오. 마지막으로 [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) 메서드를 호출하여 PDF를 기본 프린터에 인쇄합니다. 다음 코드 스니펫은 프린터 및 페이지 설정으로 PDF를 기본 프린터에 인쇄하는 방법을 보여줍니다.
+[PdfViewer](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfviewer) 클래스는 PDF 파일을 기본 프린터에 인쇄할 수 있도록 합니다. PdfViewer 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) 메서드를 사용하여 PDF를 엽니다. 다양한 인쇄 설정을 지정하려면 [PageSettings](https://reference.aspose.com/pdf/ko/net/aspose.pdf.printing/pagesettings/) 및 [PrinterSettings](https://reference.aspose.com/pdf/ko/net/aspose.pdf.printing/printersettings/) 클래스를 사용하십시오. 마지막으로 [PrintDocumentWithSettings](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) 메서드를 호출하여 PDF를 기본 프린터에 인쇄합니다. 다음 코드 스니펫은 프린터 및 페이지 설정으로 PDF를 기본 프린터에 인쇄하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -261,7 +261,7 @@ private static void PrintWithPrintDialog()
  
 24.4 릴리스 이후, 인쇄 대화 상자에서 PDF 페이지 크기로 용지 출처를 선택할 수 있습니다. 다음 코드 스니펫은 PDF의 페이지 크기에 따라 프린터 트레이를 선택할 수 있게 합니다.
 
-이 선호도는 [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/) 속성을 사용하여 켜고 끌 수 있습니다.
+이 선호도는 [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/picktraybypdfsize/) 속성을 사용하여 켜고 끌 수 있습니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

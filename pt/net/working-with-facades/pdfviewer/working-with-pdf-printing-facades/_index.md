@@ -77,7 +77,7 @@ draft: false
 
 ## Imprimindo arquivo PDF na impressora padrão usando configurações de impressora e página
 
-Primeiro, o documento é convertido em imagem e, em seguida, impresso na impressora. Crie uma instância da classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer), que permite imprimir um arquivo PDF na impressora padrão, use o método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/bindpdf/) para abrir o documento nele e alterar as configurações necessárias. Este exemplo usa o formato A4, orientação retrato. Nas [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/), antes de tudo, o nome da impressora para a qual a impressão vai deve ser definido. Caso contrário, será impresso na impressora padrão. Em seguida, coloque o número necessário de cópias.
+Primeiro, o documento é convertido em imagem e, em seguida, impresso na impressora. Crie uma instância da classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer), que permite imprimir um arquivo PDF na impressora padrão, use o método [BindPdf](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/bindpdf/) para abrir o documento nele e alterar as configurações necessárias. Este exemplo usa o formato A4, orientação retrato. Nas [PrinterSettings](https://reference.aspose.com/pdf/pt/net/aspose.pdf.printing/printersettings/), antes de tudo, o nome da impressora para a qual a impressão vai deve ser definido. Caso contrário, será impresso na impressora padrão. Em seguida, coloque o número necessário de cópias.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -344,7 +344,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Ocultando o diálogo de impressão
 
-Aspose.PDF for .NET suporta a ocultação do diálogo de impressão. Para isso, use a propriedade [PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
+Aspose.PDF for .NET suporta a ocultação do diálogo de impressão. Para isso, use a propriedade [PrintPageDialog](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
 
 O seguinte trecho de código mostra como ocultar o diálogo de impressão.
 
@@ -435,7 +435,7 @@ private static void PrintingPDFHidePrintDialog()
 
 ## Imprimindo PDF colorido em arquivo XPS como escala de cinza
 
-Um documento PDF colorido pode ser impresso em uma impressora XPS como escala de cinza, usando [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Para isso, defina a propriedade [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) como *true*. O seguinte trecho de código demonstra o uso da propriedade `PdfViewer.PrintAsGrayscale`.
+Um documento PDF colorido pode ser impresso em uma impressora XPS como escala de cinza, usando [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer). Para isso, defina a propriedade [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) como *true*. O seguinte trecho de código demonstra o uso da propriedade `PdfViewer.PrintAsGrayscale`.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -528,7 +528,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## Conversão de PDF para PostScript
 
-A classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) fornece a capacidade de imprimir documentos PDF e, com a ajuda dessa classe, também é possível converter arquivos PDF para o formato PostScript. Para converter um arquivo PDF em PostScript, primeiro instale qualquer impressora PS e imprima para arquivo com a ajuda do `PdfViewer`.
+A classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer) fornece a capacidade de imprimir documentos PDF e, com a ajuda dessa classe, também é possível converter arquivos PDF para o formato PostScript. Para converter um arquivo PDF em PostScript, primeiro instale qualquer impressora PS e imprima para arquivo com a ajuda do `PdfViewer`.
 
 O seguinte trecho de código mostra como imprimir e converter um PDF para o formato PostScript.
 
@@ -631,7 +631,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Verificando o status do trabalho de impressão
 
-Um arquivo PDF pode ser impresso em uma impressora física, bem como no Microsoft XPS Document Writer, sem mostrar um diálogo de impressão, usando a classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Ao imprimir arquivos PDF grandes, o processo pode demorar muito, então o usuário pode não ter certeza se o processo de impressão foi concluído ou encontrou um problema. Para determinar o status de um trabalho de impressão, use a propriedade [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). O seguinte trecho de código mostra como imprimir o arquivo PDF em um arquivo XPS e obter o status da impressão.
+Um arquivo PDF pode ser impresso em uma impressora física, bem como no Microsoft XPS Document Writer, sem mostrar um diálogo de impressão, usando a classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer). Ao imprimir arquivos PDF grandes, o processo pode demorar muito, então o usuário pode não ter certeza se o processo de impressão foi concluído ou encontrou um problema. Para determinar o status de um trabalho de impressão, use a propriedade [PrintStatus](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/printstatus/). O seguinte trecho de código mostra como imprimir o arquivo PDF em um arquivo XPS e obter o status da impressão.
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

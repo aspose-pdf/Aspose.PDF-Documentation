@@ -146,7 +146,7 @@ Aspose.PDF.Drawingには追加のライセンスはなく、Aspose.PDFと同じ�
 
 ![Aspose.PDF.Drawing for .NET](nuget.png)
 
-Aspose.PDF.Drawingで利用可能なクラスについては、[APIリファレンス](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/)サイトを確認してください。
+Aspose.PDF.Drawingで利用可能なクラスについては、[APIリファレンス](https://reference.aspose.com/pdf/ja/net/aspose.pdf.drawing/)サイトを確認してください。
 
 さらに詳しく学ぶ：
 

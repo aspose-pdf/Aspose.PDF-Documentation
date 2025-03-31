@@ -75,11 +75,11 @@ draft: false
 }
 </script>
 
-기본 레이아웃으로 PDF 파일 내의 내용은 왼쪽 상단에서 오른쪽 하단으로 추가됩니다. 내용이 페이지 하단 여백을 초과하면 페이지 나누기가 발생합니다. 그러나 요구 사항에 따라 페이지 나누기를 삽입해야 할 필요가 있을 수 있습니다. 이 요구 사항을 충족하기 위해 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스에 AddPageBreak(...) 메서드가 추가되었습니다.
+기본 레이아웃으로 PDF 파일 내의 내용은 왼쪽 상단에서 오른쪽 하단으로 추가됩니다. 내용이 페이지 하단 여백을 초과하면 페이지 나누기가 발생합니다. 그러나 요구 사항에 따라 페이지 나누기를 삽입해야 할 필요가 있을 수 있습니다. 이 요구 사항을 충족하기 위해 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스에 AddPageBreak(...) 메서드가 추가되었습니다.
 
-1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
-1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
-1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
+1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
+1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
+1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
 
 - src는 소스 문서/문서에 대한 경로/소스 문서가 있는 스트림입니다.
 - dest는 문서가 저장될 목적지 문서/문서가 저장될 경로/스트림입니다.

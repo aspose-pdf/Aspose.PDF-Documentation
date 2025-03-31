@@ -77,7 +77,7 @@ draft: false
 
 ## ファイルパスを使用して2つの番号の間のPDFページを抽出
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスの[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドを使用すると、PDFファイルから指定されたページ範囲を抽出できます。このオーバーロードでは、ディスクからPDFファイルを操作しながらページを抽出できます。このオーバーロードには、入力ファイルパス、開始ページ、終了ページ、および出力ファイルパスのパラメータが必要です。開始ページから終了ページまでのページが抽出され、出力はディスクに保存されます。以下のコードスニペットは、ファイルパスを使用して2つの番号の間のPDFページを抽出する方法を示しています。
+[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスの[Extract](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドを使用すると、PDFファイルから指定されたページ範囲を抽出できます。このオーバーロードでは、ディスクからPDFファイルを操作しながらページを抽出できます。このオーバーロードには、入力ファイルパス、開始ページ、終了ページ、および出力ファイルパスのパラメータが必要です。開始ページから終了ページまでのページが抽出され、出力はディスクに保存されます。以下のコードスニペットは、ファイルパスを使用して2つの番号の間のPDFページを抽出する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -96,7 +96,7 @@ private static void Extract_PDFPages_FilePaths()
 
 ## ファイルパスを使用してPDFページの配列を抽出
 
-範囲のページを抽出したくない場合、特定のページのセットを抽出することもできます。[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドを使用すると、それも可能です。最初に、抽出する必要のあるすべてのページ番号を含む整数配列を作成する必要があります。この[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドのオーバーロードには、入力PDFファイル、抽出するページの整数配列、および出力PDFファイルのパラメータが必要です。以下のコードスニペットは、ファイルパスを使用してPDFページを抽出する方法を示しています。
+範囲のページを抽出したくない場合、特定のページのセットを抽出することもできます。[Extract](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドを使用すると、それも可能です。最初に、抽出する必要のあるすべてのページ番号を含む整数配列を作成する必要があります。この[Extract](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドのオーバーロードには、入力PDFファイル、抽出するページの整数配列、および出力PDFファイルのパラメータが必要です。以下のコードスニペットは、ファイルパスを使用してPDFページを抽出する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -122,7 +122,7 @@ private static void Extract_PDFPages_Streams()
 
 ## ストリームを使用して2つの番号の間のPDFページを抽出
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)クラスの[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドを使用すると、ストリームを使用してページの範囲を抽出できます。このオーバーロードには、次のパラメータを渡す必要があります：入力ストリーム、開始ページ、終了ページ、および出力ストリーム。開始ページと終了ページの間で指定された範囲のページが入力ストリームから抽出され、出力ストリームに保存されます。以下のコードスニペットは、ストリームを使用して2つの番号の間のPDFページを抽出する方法を示しています。
+[PdfFileEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor)クラスの[Extract](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドを使用すると、ストリームを使用してページの範囲を抽出できます。このオーバーロードには、次のパラメータを渡す必要があります：入力ストリーム、開始ページ、終了ページ、および出力ストリーム。開始ページと終了ページの間で指定された範囲のページが入力ストリームから抽出され、出力ストリームに保存されます。以下のコードスニペットは、ストリームを使用して2つの番号の間のPDFページを抽出する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -141,7 +141,7 @@ private static void Extract_ArrayPDFPages_FilePaths()
 
 ## ストリームを使用してPDFページの配列を抽出
 
-PDFストリームからページの配列を抽出し、出力ストリームに保存するには、[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドの適切なオーバーロードを使用します。範囲のページを抽出したくない場合、特定のページのセットを抽出することもできます。[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドを使用すると、それも可能です。最初に、抽出する必要のあるすべてのページ番号を含む整数配列を作成する必要があります。この[Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドのオーバーロードには、入力ストリーム、抽出するページの整数配列、および出力ストリームのパラメータが必要です。以下のコードスニペットは、ストリームを使用してPDFページを抽出する方法を示しています。
+PDFストリームからページの配列を抽出し、出力ストリームに保存するには、[Extract](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドの適切なオーバーロードを使用します。範囲のページを抽出したくない場合、特定のページのセットを抽出することもできます。[Extract](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドを使用すると、それも可能です。最初に、抽出する必要のあるすべてのページ番号を含む整数配列を作成する必要があります。この[Extract](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdffileeditor/methods/extract/index)メソッドのオーバーロードには、入力ストリーム、抽出するページの整数配列、および出力ストリームのパラメータが必要です。以下のコードスニペットは、ストリームを使用してPDFページを抽出する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

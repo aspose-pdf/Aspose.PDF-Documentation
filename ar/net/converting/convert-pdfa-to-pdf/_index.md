@@ -83,7 +83,7 @@ sitemap:
 ## تحويل مستند PDF/A إلى PDF
 
 تحويل مستند PDF/A إلى PDF يعني إزالة <abbr title="Portable Document Format Archive">PDF/A</abbr> القيود من المستند الأصلي. 
-تحتوي الفئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) على طريقة [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) لإزالة معلومات التوافق مع PDF من ملف الإدخال/المصدر.
+تحتوي الفئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) على طريقة [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/removepdfacompliance) لإزالة معلومات التوافق مع PDF من ملف الإدخال/المصدر.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

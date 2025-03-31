@@ -155,7 +155,7 @@ private static void AddImageToPDF()
 
 ## 기존 PDF 파일에 이미지 추가 (파사드)
 
-PDF 파일에 이미지를 추가하는 더 쉽고 대안적인 방법도 있습니다. [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) 클래스의 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드를 사용할 수 있습니다. [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드는 추가할 이미지, 이미지를 추가할 페이지 번호 및 좌표 정보를 요구합니다. 그 후 Close 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 조각은 기존 PDF 파일에 이미지를 추가하는 방법을 보여줍니다.
+PDF 파일에 이미지를 추가하는 더 쉽고 대안적인 방법도 있습니다. [PdfFileMend](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend) 클래스의 [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드를 사용할 수 있습니다. [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드는 추가할 이미지, 이미지를 추가할 페이지 번호 및 좌표 정보를 요구합니다. 그 후 Close 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 조각은 기존 PDF 파일에 이미지를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -324,7 +324,7 @@ private static void ExtractImageTypesFromPDF()
 
 ## 이미지 품질 제어
 
-PDF 파일에 추가되는 이미지의 품질을 제어할 수 있습니다. [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection) 클래스의 오버로드된 [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) 메서드를 사용하십시오.
+PDF 파일에 추가되는 이미지의 품질을 제어할 수 있습니다. [XImageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/ximagecollection) 클래스의 오버로드된 [Replace](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ximagecollection/replace/methods/1) 메서드를 사용하십시오.
 
 다음 코드 조각은 문서의 모든 이미지를 JPEG로 변환하여 압축에 80% 품질을 사용하는 방법을 보여줍니다.
 

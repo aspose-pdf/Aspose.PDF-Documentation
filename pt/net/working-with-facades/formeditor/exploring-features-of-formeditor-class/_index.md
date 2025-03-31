@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Documentos PDF às vezes contêm formulários interativos, que são conhecidos como AcroForm. É como um formulário usado em páginas da web. Esses formulários contêm diferentes tipos de controles, ou seja, caixas de texto, caixas de seleção e botões, etc. Um desenvolvedor que trabalha com arquivos PDF pode, às vezes, precisar editar esses formulários. Neste artigo, vamos analisar os detalhes de como o [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) nos permite fazer isso.
+Documentos PDF às vezes contêm formulários interativos, que são conhecidos como AcroForm. É como um formulário usado em páginas da web. Esses formulários contêm diferentes tipos de controles, ou seja, caixas de texto, caixas de seleção e botões, etc. Um desenvolvedor que trabalha com arquivos PDF pode, às vezes, precisar editar esses formulários. Neste artigo, vamos analisar os detalhes de como o [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades) nos permite fazer isso.
 
 {{% /alert %}}
 
 ## Detalhes da implementação
 
-Os desenvolvedores podem usar o [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) não apenas para adicionar novos formulários e campos de formulário em um documento PDF, mas também para editar campos existentes. O escopo deste artigo é limitado aos recursos de [Aspose.PDF for .NET](/pdf/pt/net/) que lidam com a edição de formulários.
+Os desenvolvedores podem usar o [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades) não apenas para adicionar novos formulários e campos de formulário em um documento PDF, mas também para editar campos existentes. O escopo deste artigo é limitado aos recursos de [Aspose.PDF for .NET](/pdf/pt/net/) que lidam com a edição de formulários.
 
-[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) é a classe que contém a maioria dos métodos e propriedades que permitem aos desenvolvedores editar campos de formulário. Você pode não apenas adicionar novos campos, mas também remover campos existentes, mover um campo para outra posição, alterar o nome do campo ou atributos, etc. A lista de recursos fornecidos por esta classe é bastante abrangente, e é muito fácil trabalhar com os campos de formulário usando esta classe.
+[FormEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/formeditor) é a classe que contém a maioria dos métodos e propriedades que permitem aos desenvolvedores editar campos de formulário. Você pode não apenas adicionar novos campos, mas também remover campos existentes, mover um campo para outra posição, alterar o nome do campo ou atributos, etc. A lista de recursos fornecidos por esta classe é bastante abrangente, e é muito fácil trabalhar com os campos de formulário usando esta classe.
 
 Esses métodos podem ser divididos em duas categorias principais, uma das quais é usada para manipular os campos, e a outra é usada para definir os novos atributos desses campos. Os métodos que podemos agrupar na primeira categoria incluem AddField, AddListItem, RemoveListItem, CopyInnerField, CopyOuterField, DelListItem, MoveField, RemoveField e RenameField, etc. Na segunda categoria de métodos, podem ser incluídos SetFieldAlignment, SetFieldAppearance, SetFieldAttribute, SetFieldLimit, SetFieldScript. O seguinte trecho de código mostra alguns dos métodos da classe FormEditor em funcionamento:
 

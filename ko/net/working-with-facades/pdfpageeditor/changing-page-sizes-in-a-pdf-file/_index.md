@@ -77,7 +77,7 @@ draft: false
 
 ## Implementation details
 
-[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 클래스는 [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) 내에 있으며, [PageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagesize) 속성을 통해 개별 페이지 또는 여러 페이지의 페이지 크기를 한 번에 변경할 수 있습니다. Pages 속성을 사용하여 새 페이지 크기를 적용할 페이지 번호를 지정할 수 있습니다. PageSize 클래스는 다양한 페이지 크기의 목록을 멤버로 포함하고 있습니다. 이 클래스의 멤버 중 어느 것이든 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 클래스의 PageSize 속성에 할당할 수 있습니다. 또한 GetPageSize 메서드를 호출하고 페이지 번호를 전달하여 페이지의 크기를 얻을 수도 있습니다.
+[PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor) 클래스는 [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) 내에 있으며, [PageSize](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor/properties/pagesize) 속성을 통해 개별 페이지 또는 여러 페이지의 페이지 크기를 한 번에 변경할 수 있습니다. Pages 속성을 사용하여 새 페이지 크기를 적용할 페이지 번호를 지정할 수 있습니다. PageSize 클래스는 다양한 페이지 크기의 목록을 멤버로 포함하고 있습니다. 이 클래스의 멤버 중 어느 것이든 [PdfPageEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfpageeditor) 클래스의 PageSize 속성에 할당할 수 있습니다. 또한 GetPageSize 메서드를 호출하고 페이지 번호를 전달하여 페이지의 크기를 얻을 수도 있습니다.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -84,7 +84,7 @@ sitemap:
 
 ## PDF 파일의 헤더에 텍스트 추가
 
-PDF 파일의 헤더에 텍스트를 추가하려면 [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) 클래스를 사용할 수 있습니다. TextStamp 클래스는 글꼴 크기, 글꼴 스타일 및 글꼴 색상 등과 같은 텍스트 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 헤더에 텍스트를 추가하려면 필요한 속성을 사용하여 Document 객체와 TextStamp 객체를 생성해야 합니다. 그 후, PDF의 헤더에 텍스트를 추가하기 위해 Page의 AddStamp 메서드를 호출할 수 있습니다.
+PDF 파일의 헤더에 텍스트를 추가하려면 [TextStamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf/textstamp) 클래스를 사용할 수 있습니다. TextStamp 클래스는 글꼴 크기, 글꼴 스타일 및 글꼴 색상 등과 같은 텍스트 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 헤더에 텍스트를 추가하려면 필요한 속성을 사용하여 Document 객체와 TextStamp 객체를 생성해야 합니다. 그 후, PDF의 헤더에 텍스트를 추가하기 위해 Page의 AddStamp 메서드를 호출할 수 있습니다.
 
 헤더 영역의 텍스트를 조정할 수 있도록 TopMargin 속성을 설정해야 합니다. 또한 HorizontalAlignment를 Center로, VerticalAlignment를 Top으로 설정해야 합니다.
 
@@ -164,7 +164,7 @@ private static void AddFooterText()
 
 ## PDF 파일의 헤더에 이미지 추가
 
-PDF 파일의 헤더에 이미지를 추가하려면 [ImageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/ImageStamp) 클래스를 사용할 수 있습니다. Image Stamp 클래스는 글꼴 크기, 글꼴 스타일 및 글꼴 색상 등과 같은 이미지 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 헤더에 이미지를 추가하려면 필요한 속성을 사용하여 Document 객체와 Image Stamp 객체를 생성해야 합니다. 그 후, PDF의 헤더에 이미지를 추가하기 위해 Page의 [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) 메서드를 호출할 수 있습니다.
+PDF 파일의 헤더에 이미지를 추가하려면 [ImageStamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf/ImageStamp) 클래스를 사용할 수 있습니다. Image Stamp 클래스는 글꼴 크기, 글꼴 스타일 및 글꼴 색상 등과 같은 이미지 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 헤더에 이미지를 추가하려면 필요한 속성을 사용하여 Document 객체와 Image Stamp 객체를 생성해야 합니다. 그 후, PDF의 헤더에 이미지를 추가하기 위해 Page의 [AddStamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page/methods/addstamp) 메서드를 호출할 수 있습니다.
 
 {{% alert color="primary" %}}
 
@@ -210,7 +210,7 @@ PDF 파일의 푸터에 이미지를 추가하려면 Image Stamp 클래스를 �
 
 {{% alert color="primary" %}}
 
-PDF의 푸터 영역의 이미지를 조정할 수 있도록 [BottomMargin](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/bottommargin) 속성을 설정해야 합니다. 또한 [HorizontalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/horizontalalignment)를 `Center`로, [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf/stamp/properties/verticalalignment)를 `Bottom`으로 설정해야 합니다.
+PDF의 푸터 영역의 이미지를 조정할 수 있도록 [BottomMargin](https://reference.aspose.com/pdf/ko/net/aspose.pdf/stamp/properties/bottommargin) 속성을 설정해야 합니다. 또한 [HorizontalAlignment](https://reference.aspose.com/pdf/ko/net/aspose.pdf/stamp/properties/horizontalalignment)를 `Center`로, [VerticalAlignment](https://reference.aspose.com/pdf/ko/net/aspose.pdf/stamp/properties/verticalalignment)를 `Bottom`으로 설정해야 합니다.
 
 {{% /alert %}}
 
@@ -250,7 +250,7 @@ private static void AddImageFooter()
 
 우리는 TopMargin 또는 Bottom Margin 속성을 사용하여 문서의 헤더/푸터 섹션에 TextStamp를 추가할 수 있다는 것을 알고 있지만, 때때로 하나의 PDF 문서에 여러 개의 헤더/푸터를 추가해야 할 필요가 있을 수 있습니다. **Aspose.PDF for .NET**은 이를 수행하는 방법을 설명합니다.
 
-이 요구 사항을 달성하기 위해 개별 TextStamp 객체를 생성하고 (객체 수는 필요한 헤더/푸터 수에 따라 다름) PDF 문서에 추가할 것입니다. 또한 개별 스탬프 객체에 대해 서로 다른 형식 정보를 지정할 수 있습니다. 다음 예제에서는 Document 객체와 세 개의 TextStamp 객체를 생성한 후, PDF의 헤더 섹션에 텍스트를 추가하기 위해 Page의 [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) 메서드를 사용했습니다. 다음 코드 스니펫은 Aspose.PDF for .NET을 사용하여 PDF 파일의 푸터에 이미지를 추가하는 방법을 보여줍니다.
+이 요구 사항을 달성하기 위해 개별 TextStamp 객체를 생성하고 (객체 수는 필요한 헤더/푸터 수에 따라 다름) PDF 문서에 추가할 것입니다. 또한 개별 스탬프 객체에 대해 서로 다른 형식 정보를 지정할 수 있습니다. 다음 예제에서는 Document 객체와 세 개의 TextStamp 객체를 생성한 후, PDF의 헤더 섹션에 텍스트를 추가하기 위해 Page의 [AddStamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page/methods/addstamp) 메서드를 사용했습니다. 다음 코드 스니펫은 Aspose.PDF for .NET을 사용하여 PDF 파일의 푸터에 이미지를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

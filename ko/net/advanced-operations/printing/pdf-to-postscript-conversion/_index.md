@@ -83,7 +83,7 @@ sitemap:
 
 ## **C#에서 PDF를 PostScript로 변환하기**
 
-[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) 클래스는 PDF 문서를 인쇄할 수 있는 기능을 제공하며, 이 클래스를 사용하여 PDF 파일을 PostScript 형식으로 변환할 수도 있습니다. PDF 파일을 PostScript로 변환하려면 먼저 PS 프린터를 설치하고 PdfViewer의 도움으로 파일로 인쇄하면 됩니다. PS 프린터를 설치하려면 프린터 공급업체에서 제공하는 지침을 참조하세요. 다음 코드 스니펫은 PDF를 PostScript 형식으로 인쇄하고 변환하는 방법을 보여줍니다.
+[PdfViewer](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfviewer/) 클래스는 PDF 문서를 인쇄할 수 있는 기능을 제공하며, 이 클래스를 사용하여 PDF 파일을 PostScript 형식으로 변환할 수도 있습니다. PDF 파일을 PostScript로 변환하려면 먼저 PS 프린터를 설치하고 PdfViewer의 도움으로 파일로 인쇄하면 됩니다. PS 프린터를 설치하려면 프린터 공급업체에서 제공하는 지침을 참조하세요. 다음 코드 스니펫은 PDF를 PostScript 형식으로 인쇄하고 변환하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -158,7 +158,7 @@ private static void PrintToPostscriptFile()
 
 ## 인쇄 작업 상태 확인
 
-PDF 파일은 물리적 프린터뿐만 아니라 Microsoft XPS Document Writer에도 인쇄할 수 있으며, [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) 클래스를 사용하여 인쇄 대화 상자를 표시하지 않고도 가능합니다. 큰 PDF 파일을 인쇄할 때는 프로세스가 오랜 시간이 걸릴 수 있으므로 사용자는 인쇄 프로세스가 완료되었는지 또는 문제가 발생했는지 확신하지 못할 수 있습니다. 인쇄 작업의 상태를 확인하려면 [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/) 속성을 사용하세요. 다음 코드 스니펫은 PDF 파일을 XPS 파일로 인쇄하고 인쇄 상태를 가져오는 방법을 보여줍니다.
+PDF 파일은 물리적 프린터뿐만 아니라 Microsoft XPS Document Writer에도 인쇄할 수 있으며, [PdfViewer](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfviewer/) 클래스를 사용하여 인쇄 대화 상자를 표시하지 않고도 가능합니다. 큰 PDF 파일을 인쇄할 때는 프로세스가 오랜 시간이 걸릴 수 있으므로 사용자는 인쇄 프로세스가 완료되었는지 또는 문제가 발생했는지 확신하지 못할 수 있습니다. 인쇄 작업의 상태를 확인하려면 [PrintStatus](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfviewer/printstatus/) 속성을 사용하세요. 다음 코드 스니펫은 PDF 파일을 XPS 파일로 인쇄하고 인쇄 상태를 가져오는 방법을 보여줍니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -299,7 +299,7 @@ private static void CheckingPrintJobStatus()
 
 ## 인쇄 작업 소유자 이름 가져오기/설정하기
 
-때때로 인쇄 작업 소유자 이름(즉, 웹 페이지에서 인쇄 버튼을 누른 실제 사용자)을 가져오거나 설정해야 할 필요가 있습니다. 이 정보는 PDF 파일을 인쇄할 때 필요합니다. 이 요구 사항을 충족하기 위해 [PrinterJobName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printerjobname/) 속성이 사용됩니다.
+때때로 인쇄 작업 소유자 이름(즉, 웹 페이지에서 인쇄 버튼을 누른 실제 사용자)을 가져오거나 설정해야 할 필요가 있습니다. 이 정보는 PDF 파일을 인쇄할 때 필요합니다. 이 요구 사항을 충족하기 위해 [PrinterJobName](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfviewer/printerjobname/) 속성이 사용됩니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

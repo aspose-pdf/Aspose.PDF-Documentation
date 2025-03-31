@@ -79,9 +79,9 @@ sitemap:
 
 ## Modifikasi anotasi
 
-Metode [ModifyAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) memungkinkan Anda untuk mengubah atribut dasar dari sebuah anotasi yaitu Subjek, Tanggal modifikasi, Penulis, Warna anotasi, dan Bendera terbuka. Anda juga dapat mengatur Penulis secara langsung dengan menggunakan metode ModifyAnnotations. Kelas ini juga menyediakan dua metode yang di-overload untuk menghapus anotasi. Metode pertama yang disebut DeleteAnnotations menghapus semua anotasi dari file PDF.  
+Metode [ModifyAnnotations](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) memungkinkan Anda untuk mengubah atribut dasar dari sebuah anotasi yaitu Subjek, Tanggal modifikasi, Penulis, Warna anotasi, dan Bendera terbuka. Anda juga dapat mengatur Penulis secara langsung dengan menggunakan metode ModifyAnnotations. Kelas ini juga menyediakan dua metode yang di-overload untuk menghapus anotasi. Metode pertama yang disebut DeleteAnnotations menghapus semua anotasi dari file PDF.  
 
-Sebagai contoh, dalam kode berikut, pertimbangkan untuk mengubah penulis dalam anotasi kami menggunakan [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
+Sebagai contoh, dalam kode berikut, pertimbangkan untuk mengubah penulis dalam anotasi kami menggunakan [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

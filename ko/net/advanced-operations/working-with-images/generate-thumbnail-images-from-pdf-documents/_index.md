@@ -204,7 +204,7 @@ Aspose.PDF는 뚜렷한 이점이 있습니다:
 - PDF 파일을 작업하기 위해 시스템에 Adobe Acrobat을 설치할 필요가 없습니다.
 - Aspose.PDF for .NET는 Acrobat Automation에 비해 간단하고 이해하기 쉽습니다.
 
-PDF 페이지를 JPEG로 변환해야 하는 경우, [Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices) 네임스페이스는 PDF 페이지를 JPEG 이미지로 렌더링하기 위한 [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice)라는 클래스를 제공합니다. 다음 코드 스니펫을 살펴보세요.
+PDF 페이지를 JPEG로 변환해야 하는 경우, [Aspose.PDF.Devices](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices) 네임스페이스는 PDF 페이지를 JPEG 이미지로 렌더링하기 위한 [JpegDevice](https://reference.aspose.com/pdf/ko/net/aspose.pdf.devices/jpegdevice)라는 클래스를 제공합니다. 다음 코드 스니펫을 살펴보세요.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

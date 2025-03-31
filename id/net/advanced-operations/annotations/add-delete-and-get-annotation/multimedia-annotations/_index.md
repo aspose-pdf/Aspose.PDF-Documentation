@@ -79,16 +79,16 @@ sitemap:
 }
 </script>
 
-Anotasi dalam dokumen PDF terdapat dalam koleksi Annotations objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Koleksi ini berisi semua anotasi untuk halaman individu tersebut saja: setiap halaman memiliki koleksi Annotations-nya sendiri. Untuk menambahkan anotasi ke halaman tertentu, tambahkan ke koleksi Annotations halaman tersebut menggunakan metode Add.
+Anotasi dalam dokumen PDF terdapat dalam koleksi Annotations objek [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page). Koleksi ini berisi semua anotasi untuk halaman individu tersebut saja: setiap halaman memiliki koleksi Annotations-nya sendiri. Untuk menambahkan anotasi ke halaman tertentu, tambahkan ke koleksi Annotations halaman tersebut menggunakan metode Add.
 
-Gunakan kelas [ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) dalam namespace Aspose.PDF.InteractiveFeatures.Annotations untuk menyertakan file SWF sebagai anotasi dalam dokumen PDF. Anotasi layar menentukan area halaman di mana klip media dapat diputar.
+Gunakan kelas [ScreenAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/screenannotation) dalam namespace Aspose.PDF.InteractiveFeatures.Annotations untuk menyertakan file SWF sebagai anotasi dalam dokumen PDF. Anotasi layar menentukan area halaman di mana klip media dapat diputar.
 
-Ketika Anda perlu menambahkan tautan video eksternal dalam dokumen PDF, Anda dapat menggunakan [MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation).
+Ketika Anda perlu menambahkan tautan video eksternal dalam dokumen PDF, Anda dapat menggunakan [MovieAnnotaiton](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/movieannotation).
 Anotasi Film berisi grafik animasi dan suara yang ditampilkan di layar komputer dan melalui speaker.
 
-Anotasi [Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) akan serupa dengan anotasi teks kecuali bahwa alih-alih catatan teks, ia berisi suara yang direkam dari mikrofon komputer atau diimpor dari file. Ketika anotasi diaktifkan, suara akan diputar. Anotasi akan berperilaku seperti anotasi teks dalam banyak hal, dengan ikon yang berbeda (secara default, sebuah speaker) untuk menunjukkan bahwa ia mewakili suara.
+Anotasi [Sound Annotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/soundannotation) akan serupa dengan anotasi teks kecuali bahwa alih-alih catatan teks, ia berisi suara yang direkam dari mikrofon komputer atau diimpor dari file. Ketika anotasi diaktifkan, suara akan diputar. Anotasi akan berperilaku seperti anotasi teks dalam banyak hal, dengan ikon yang berbeda (secara default, sebuah speaker) untuk menunjukkan bahwa ia mewakili suara.
 
-Namun, ketika ada kebutuhan untuk menyematkan media di dalam dokumen PDF, Anda perlu menggunakan [RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
+Namun, ketika ada kebutuhan untuk menyematkan media di dalam dokumen PDF, Anda perlu menggunakan [RichMediaAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/richmediaannotation).
 
 Metode/properti berikut dari kelas RichMediaAnnotation dapat digunakan.
 
@@ -292,7 +292,7 @@ private static void DeletePolyAnnotation()
 
 ## Tambahkan Anotasi Widget
 
-Formulir interaktif menggunakan [Widget Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) untuk mewakili penampilan bidang dan untuk mengelola interaksi pengguna.
+Formulir interaktif menggunakan [Widget Annotations](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/widgetannotation) untuk mewakili penampilan bidang dan untuk mengelola interaksi pengguna.
 Kami menggunakan elemen formulir ini yang ditambahkan ke PDF untuk memudahkan memasukkan, mengirim informasi, atau melakukan beberapa interaksi pengguna lainnya.
 
 Anotasi Widget adalah representasi grafis dari bidang formulir di halaman tertentu, jadi kami tidak dapat membuatnya langsung sebagai anotasi.
@@ -453,14 +453,14 @@ Tugas utama pemodelan 3D adalah ide objek atau objek masa depan karena, untuk me
 
 Anotasi 3D ditambahkan menggunakan model yang dibuat dalam format U3D.
 
-1. Buat [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
-1. Muat data model 3D yang diinginkan (dalam kasus kami "Ring.u3d") untuk membuat [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent).
-1. Buat objek [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) dan tautkan ke dokumen dan 3DContent.
+1. Buat [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) baru.
+1. Muat data model 3D yang diinginkan (dalam kasus kami "Ring.u3d") untuk membuat [PDF3DContent](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/pdf3dcontent).
+1. Buat objek [3dArtWork](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/pdf3dartwork) dan tautkan ke dokumen dan 3DContent.
 1. Atur objek pdf3dArtWork:
 
     - 3DLightingScheme - (kami akan mengatur `CAD` dalam contoh)
     - 3DRenderMode - (kami akan mengatur `Solid` dalam contoh)
-    - Isi `ViewArray`, buat setidaknya satu [3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) dan tambahkan ke array.
+    - Isi `ViewArray`, buat setidaknya satu [3D View](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/pdf3dview) dan tambahkan ke array.
 
 1. Atur 3 parameter dasar dalam anotasi:
     - `page` di mana anotasi akan ditempatkan.
@@ -469,7 +469,7 @@ Anotasi 3D ditambahkan menggunakan model yang dibuat dalam format U3D.
 1. Untuk presentasi yang lebih baik dari objek 3D, atur bingkai Batas.
 1. Atur tampilan default (misalnya - TOP).
 1. Tambahkan beberapa parameter tambahan: nama, poster pratinjau, dll.
-1. Tambahkan Anotasi ke [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. Tambahkan Anotasi ke [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page).
 1. Simpan hasilnya.
 
 ### Contoh

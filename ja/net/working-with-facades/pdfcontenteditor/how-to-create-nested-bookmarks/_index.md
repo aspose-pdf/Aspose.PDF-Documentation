@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-ブックマークを使用すると、PDFドキュメント内の特定のページを追跡/リンクするオプションが提供されます。[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor)クラスは、[Aspose.Pdf.Facades名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)内で、既存のPDFファイル内の特定のページまたはすべてのページに自分のブックマークを洗練された直感的な方法で作成する機能を提供します。
+ブックマークを使用すると、PDFドキュメント内の特定のページを追跡/リンクするオプションが提供されます。[PdfContentEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/PdfContentEditor)クラスは、[Aspose.Pdf.Facades名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)内で、既存のPDFファイル内の特定のページまたはすべてのページに自分のブックマークを洗練された直感的な方法で作成する機能を提供します。
 
 ## 実装の詳細
 

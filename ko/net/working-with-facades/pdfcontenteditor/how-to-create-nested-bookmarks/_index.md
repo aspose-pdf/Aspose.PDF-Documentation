@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-북마크는 PDF 문서 내의 특정 페이지를 추적/링크할 수 있는 옵션을 제공합니다. [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) 클래스는 [Aspose.Pdf.Facades 네임스페이스](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)에서 기존 PDF 파일 내의 특정 페이지 또는 모든 페이지에 자신만의 북마크를 정교하면서도 직관적인 방식으로 생성할 수 있는 기능을 제공합니다.
+북마크는 PDF 문서 내의 특정 페이지를 추적/링크할 수 있는 옵션을 제공합니다. [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/PdfContentEditor) 클래스는 [Aspose.Pdf.Facades 네임스페이스](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)에서 기존 PDF 파일 내의 특정 페이지 또는 모든 페이지에 자신만의 북마크를 정교하면서도 직관적인 방식으로 생성할 수 있는 기능을 제공합니다.
 
 ## 구현 세부사항
 

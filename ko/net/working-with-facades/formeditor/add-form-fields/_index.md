@@ -77,7 +77,7 @@ draft: false
 
 ## 기존 PDF 파일에 양식 필드 추가
 
-기존 PDF 파일에 양식 필드를 추가하려면 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 클래스의 [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) 메서드를 사용해야 합니다. 이 메서드는 추가하려는 필드의 유형과 필드의 이름 및 위치를 지정해야 합니다. [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 클래스의 객체를 생성하고, [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) 메서드를 사용하여 PDF에 새 필드를 추가합니다. 또한 [SetFieldLimit](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) 메서드를 사용하여 필드의 문자 수에 제한을 지정할 수 있으며, 마지막으로 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 기존 PDF 파일에 양식 필드를 추가하는 방법을 보여줍니다.
+기존 PDF 파일에 양식 필드를 추가하려면 [FormEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor) 클래스의 [AddField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/addfield/index) 메서드를 사용해야 합니다. 이 메서드는 추가하려는 필드의 유형과 필드의 이름 및 위치를 지정해야 합니다. [FormEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor) 클래스의 객체를 생성하고, [AddField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/addfield/index) 메서드를 사용하여 PDF에 새 필드를 추가합니다. 또한 [SetFieldLimit](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) 메서드를 사용하여 필드의 문자 수에 제한을 지정할 수 있으며, 마지막으로 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/form/methods/save/index) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 기존 PDF 파일에 양식 필드를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -107,7 +107,7 @@ private static void AddField()
 
 ## 기존 PDF 파일에 제출 버튼 URL 추가
 
-[AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) 메서드는 PDF 파일에서 제출 버튼의 URL을 설정할 수 있게 해줍니다. 이는 제출 버튼이 클릭될 때 데이터가 게시되는 URL입니다. 예제 코드에서는 URL, 필드의 이름, 추가할 페이지 번호 및 버튼 배치 좌표를 지정합니다. [AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) 메서드는 제출 버튼 필드의 이름과 URL을 요구합니다. 이 메서드는 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 제출 버튼 URL을 설정하는 방법을 보여줍니다.
+[AddSubmitBtn](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) 메서드는 PDF 파일에서 제출 버튼의 URL을 설정할 수 있게 해줍니다. 이는 제출 버튼이 클릭될 때 데이터가 게시되는 URL입니다. 예제 코드에서는 URL, 필드의 이름, 추가할 페이지 번호 및 버튼 배치 좌표를 지정합니다. [AddSubmitBtn](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) 메서드는 제출 버튼 필드의 이름과 URL을 요구합니다. 이 메서드는 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 제출 버튼 URL을 설정하는 방법을 보여줍니다.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -135,7 +135,7 @@ private static void AddField()
 
 ## 푸시 버튼에 JavaScript 추가
 
-[AddFieldScript](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfieldscript) 메서드는 PDF 파일의 푸시 버튼에 JavaScript를 추가할 수 있게 해줍니다. 이 메서드는 푸시 버튼의 이름과 JavaScript를 요구합니다. 이 메서드는 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 푸시 버튼에 JavaScript를 설정하는 방법을 보여줍니다.
+[AddFieldScript](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formeditor/methods/addfieldscript) 메서드는 PDF 파일의 푸시 버튼에 JavaScript를 추가할 수 있게 해줍니다. 이 메서드는 푸시 버튼의 이름과 JavaScript를 요구합니다. 이 메서드는 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 클래스에서 제공됩니다. 다음 코드 스니펫은 푸시 버튼에 JavaScript를 설정하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -81,7 +81,7 @@ sitemap:
 
 ## Buat Tabel di PDF Berlabel
 
-Aspose.PDF for .NET memungkinkan pembuatan tabel di dokumen PDF Berlabel. Untuk bekerja dengan tabel, API menyediakan kelas [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Untuk membuat tabel, Anda dapat menggunakan metode [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Selain itu, Anda dapat menggunakan metode [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) dan [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) dari kelas TableElement untuk membuat Table Head, Table Body, dan Table Foot masing-masing. Untuk membuat baris tabel, Anda dapat menggunakan metode [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) dari kelas [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Anda juga dapat memeriksa apakah dokumen PDF yang dibuat memenuhi kepatuhan PDF/UA menggunakan metode Validate() dari kelas Document.
+Aspose.PDF for .NET memungkinkan pembuatan tabel di dokumen PDF Berlabel. Untuk bekerja dengan tabel, API menyediakan kelas [TableElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement). Untuk membuat tabel, Anda dapat menggunakan metode [CreateTableElement()](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent). Selain itu, Anda dapat menggunakan metode [CreateTHead()](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) dan [CreateTFoot()](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) dari kelas TableElement untuk membuat Table Head, Table Body, dan Table Foot masing-masing. Untuk membuat baris tabel, Anda dapat menggunakan metode [CreateTR()](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) dari kelas [TableRowCollectionElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Anda juga dapat memeriksa apakah dokumen PDF yang dibuat memenuhi kepatuhan PDF/UA menggunakan metode Validate() dari kelas Document.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -357,23 +357,23 @@ private static void CreateTable()
 
 ## Gaya Elemen Tabel
 
-Aspose.PDF for .NET memungkinkan penataan tabel di dokumen PDF Berlabel. Untuk menata tabel, Anda dapat membuat tabel menggunakan metode [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) dan mengatur gaya tabel menggunakan properti dari kelas [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Berikut adalah daftar properti yang dapat Anda gunakan untuk menata tabel:
+Aspose.PDF for .NET memungkinkan penataan tabel di dokumen PDF Berlabel. Untuk menata tabel, Anda dapat membuat tabel menggunakan metode [CreateTableElement()](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent) dan mengatur gaya tabel menggunakan properti dari kelas [TableElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement). Berikut adalah daftar properti yang dapat Anda gunakan untuk menata tabel:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/border).
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
-- [CornerStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
-- [Broken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
-- [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
-- [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
-- [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
-- [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
-- [DefaultColumnWidth](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
-- [IsBroken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
-- [IsBordersIncluded](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
-- [Left](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/left).
-- [Top](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/top).
+- [BackgroundColor](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/border).
+- [Alignment](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
+- [CornerStyle](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
+- [Broken](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
+- [ColumnAdjustment](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
+- [ColumnWidths](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
+- [DefaultCellBorder](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
+- [DefaultCellPadding](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
+- [DefaultColumnWidth](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
+- [IsBroken](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
+- [IsBordersIncluded](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
+- [Left](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/left).
+- [Top](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tableelement/properties/top).
 
 Potongan kode berikut menunjukkan cara menata tabel di dokumen PDF Berlabel:
 
@@ -575,7 +575,7 @@ private static void StyleTable()
 
 ## Gaya Baris Tabel
 
-Aspose.PDF for .NET memungkinkan penataan baris tabel di dokumen PDF Berlabel. Untuk menata baris tabel, Anda dapat menggunakan properti dari kelas [TableTRElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tabletrelement). Berikut adalah daftar properti yang dapat Anda gunakan untuk menata baris tabel:
+Aspose.PDF for .NET memungkinkan penataan baris tabel di dokumen PDF Berlabel. Untuk menata baris tabel, Anda dapat menggunakan properti dari kelas [TableTRElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tabletrelement). Berikut adalah daftar properti yang dapat Anda gunakan untuk menata baris tabel:
 
 - BackgroundColor.
 - Border.
@@ -772,18 +772,18 @@ private static void StyleTableRow()
 
 ## Gaya Sel Tabel
 
-Aspose.PDF for .NET memungkinkan penataan sel tabel di dokumen PDF Berlabel. Untuk menata sel tabel, Anda dapat menggunakan properti dari kelas [TableCellElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement). Berikut adalah daftar properti yang dapat Anda gunakan untuk menata sel tabel:
+Aspose.PDF for .NET memungkinkan penataan sel tabel di dokumen PDF Berlabel. Untuk menata sel tabel, Anda dapat menggunakan properti dari kelas [TableCellElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement). Berikut adalah daftar properti yang dapat Anda gunakan untuk menata sel tabel:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
-- [IsNoBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
-- [Margin](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
-- [IsWordWrapped](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
-- [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
-- [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
-- [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
+- [BackgroundColor](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
+- [IsNoBorder](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
+- [Margin](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
+- [Alignment](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
+- [IsWordWrapped](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
+- [VerticalAlignment](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
+- [ColSpan](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
+- [RowSpan](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
 
 Potongan kode berikut menunjukkan cara menata sel tabel di dokumen PDF Berlabel:
 

@@ -84,7 +84,7 @@ Artikel ini akan menunjukkan kepada Anda cara menghasilkan dokumen PDF menggunak
 
 ## Dasar-dasar generasi PDF dengan Aspose.PDF
 
-Salah satu kelas terpenting dalam Aspose.PDF adalah [Kelas Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Kelas ini adalah mesin rendering PDF. Untuk menyajikan struktur PDF, pustaka Aspose.PDF menggunakan model Document-Page, di mana:
+Salah satu kelas terpenting dalam Aspose.PDF adalah [Kelas Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Kelas ini adalah mesin rendering PDF. Untuk menyajikan struktur PDF, pustaka Aspose.PDF menggunakan model Document-Page, di mana:
 
 * Document - berisi properti dokumen PDF termasuk koleksi halaman.
 * Page - berisi properti halaman tertentu dan berbagai koleksi elemen yang terkait dengan halaman ini.
@@ -175,7 +175,7 @@ private static void AddTable()
 {{< /tab >}}
 {{< /tabs >}}
 
-Masalah yang paling umum adalah output data dalam format tabel. Kelas [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) digunakan untuk memproses tabel. Kelas ini memberi kita kemampuan untuk membuat tabel dan menempatkannya dalam dokumen, menggunakan [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) dan [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). Jadi, untuk membuat tabel, Anda perlu menambahkan jumlah baris yang diperlukan dan mengisinya dengan jumlah sel yang sesuai.
+Masalah yang paling umum adalah output data dalam format tabel. Kelas [Table](https://reference.aspose.com/pdf/id/net/aspose.pdf/table) digunakan untuk memproses tabel. Kelas ini memberi kita kemampuan untuk membuat tabel dan menempatkannya dalam dokumen, menggunakan [Rows](https://reference.aspose.com/pdf/id/net/aspose.pdf/rows) dan [Cells](https://reference.aspose.com/pdf/id/net/aspose.pdf/cell). Jadi, untuk membuat tabel, Anda perlu menambahkan jumlah baris yang diperlukan dan mengisinya dengan jumlah sel yang sesuai.
 
 Contoh berikut membuat tabel 4x10.
 
@@ -284,10 +284,10 @@ private static void AddTable()
 
 Saat menginisialisasi objek Table, pengaturan kulit minimal digunakan:
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - lebar kolom (secara default).
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - bidang default untuk sel tabel.
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - atribut bingkai tabel (gaya, ketebalan, warna).
-* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - atribut bingkai sel (gaya, ketebalan, warna).
+* [ColumnWidths](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/columnwidths) - lebar kolom (secara default).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/defaultcellpadding) - bidang default untuk sel tabel.
+* [Border](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/border) - atribut bingkai tabel (gaya, ketebalan, warna).
+* [DefaultCellBorder](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/defaultcellborder) - atribut bingkai sel (gaya, ketebalan, warna).
 
 Sebagai hasilnya, kami mendapatkan tabel 4x10 dengan kolom lebar yang sama.
 
@@ -295,7 +295,7 @@ Sebagai hasilnya, kami mendapatkan tabel 4x10 dengan kolom lebar yang sama.
 
 ## Mengekspor Data dari Objek ADO.NET
 
-Kelas Table menyediakan metode untuk berinteraksi dengan sumber data ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) dan [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). Metode pertama mengimpor data dari DataTable, yang kedua dari DataView.
+Kelas Table menyediakan metode untuk berinteraksi dengan sumber data ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/id/net/aspose.pdf.table/importdatatable/methods/1) dan [ImportDataView](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/methods/importdataview). Metode pertama mengimpor data dari DataTable, yang kedua dari DataView.
 Dengan premis bahwa objek-objek ini tidak terlalu nyaman untuk bekerja dalam template MVC, kami akan membatasi diri pada contoh singkat. Dalam contoh ini (baris 50), metode ImportDataTable dipanggil dan menerima sebagai parameter sebuah instance DataTable dan pengaturan tambahan seperti flag header dan posisi awal (baris/kolom) untuk output data.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

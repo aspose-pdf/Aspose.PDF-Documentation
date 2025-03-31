@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-PDF 파일의 특정 정보를 얻으려면 [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) 클래스의 객체를 생성해야 합니다. 그 후, 주제, 제목, 키워드 및 작성자와 같은 개별 속성의 값을 가져올 수 있습니다.
+PDF 파일의 특정 정보를 얻으려면 [PdfFileInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileinfo) 클래스의 객체를 생성해야 합니다. 그 후, 주제, 제목, 키워드 및 작성자와 같은 개별 속성의 값을 가져올 수 있습니다.
 
 다음 코드 스니펫은 PDF 파일 정보를 가져오는 방법을 보여줍니다.
 
@@ -110,7 +110,7 @@ private static void GetPdfInfo()
 
 ## 메타 정보 가져오기
 
-정보를 얻기 위해 [Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header) 속성을 사용합니다. 'Hashtable'을 사용하여 가능한 모든 값을 가져옵니다.
+정보를 얻기 위해 [Header](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileinfo/properties/header) 속성을 사용합니다. 'Hashtable'을 사용하여 가능한 모든 값을 가져옵니다.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

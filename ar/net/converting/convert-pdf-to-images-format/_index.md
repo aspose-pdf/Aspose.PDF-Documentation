@@ -272,15 +272,15 @@ private static void ConvertPDFtoTiffBradleyBinarization()
 
 `ImageDevice` هو السلف لـ `BmpDevice` و `JpegDevice` و `GifDevice` و `PngDevice` و `EmfDevice`.
 
-- تسمح لك فئة [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) بتحويل صفحات PDF إلى صور <abbr title="Bitmap Image File">BMP</abbr>.
-- تسمح لك فئة [EmfDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/emfdevice) بتحويل صفحات PDF إلى صور <abbr title="Enhanced Meta File">EMF</abbr>.
-- تسمح لك فئة [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) بتحويل صفحات PDF إلى صور JPEG.
-- تسمح لك فئة [PngDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice) بتحويل صفحات PDF إلى صور <abbr title="Portable Network Graphics">PNG</abbr>.
-- تسمح لك فئة [GifDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/gifdevice) بتحويل صفحات PDF إلى صور <abbr title="Graphics Interchange Format">GIF</abbr>.
+- تسمح لك فئة [BmpDevice](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/bmpdevice) بتحويل صفحات PDF إلى صور <abbr title="Bitmap Image File">BMP</abbr>.
+- تسمح لك فئة [EmfDevice](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/emfdevice) بتحويل صفحات PDF إلى صور <abbr title="Enhanced Meta File">EMF</abbr>.
+- تسمح لك فئة [JpegDevice](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/jpegdevice) بتحويل صفحات PDF إلى صور JPEG.
+- تسمح لك فئة [PngDevice](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/pngdevice) بتحويل صفحات PDF إلى صور <abbr title="Portable Network Graphics">PNG</abbr>.
+- تسمح لك فئة [GifDevice](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/gifdevice) بتحويل صفحات PDF إلى صور <abbr title="Graphics Interchange Format">GIF</abbr>.
 
 دعونا نلقي نظرة على كيفية تحويل صفحة PDF إلى صورة.
 
-توفر فئة `BmpDevice` طريقة تسمى [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) التي تتيح لك تحويل صفحة معينة من ملف PDF إلى تنسيق صورة BMP. تحتوي الفئات الأخرى على نفس الطريقة. لذا، إذا كنا بحاجة إلى تحويل صفحة PDF إلى صورة، نقوم فقط بإنشاء كائن من الفئة المطلوبة.
+توفر فئة `BmpDevice` طريقة تسمى [Process](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/bmpdevice/methods/process) التي تتيح لك تحويل صفحة معينة من ملف PDF إلى تنسيق صورة BMP. تحتوي الفئات الأخرى على نفس الطريقة. لذا، إذا كنا بحاجة إلى تحويل صفحة PDF إلى صورة، نقوم فقط بإنشاء كائن من الفئة المطلوبة.
 
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
@@ -375,7 +375,7 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 
 تُعرّف صور SVG وسلوكياتها في ملفات نصية XML. وهذا يعني أنه يمكن البحث عنها وفهرستها وبرمجتها وإذا لزم الأمر، ضغطها. كملفات XML، يمكن إنشاء صور SVG وتحريرها باستخدام أي محرر نصوص، ولكن غالبًا ما يكون من الأسهل إنشاؤها باستخدام برامج الرسم مثل Inkscape.
 
-Aspose.PDF for .NET يدعم ميزة تحويل صورة SVG إلى تنسيق PDF ويقدم أيضًا القدرة على تحويل ملفات PDF إلى تنسيق SVG. لتحقيق هذا المتطلب، تم تقديم فئة [`SvgSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/svgsaveoptions/methods/index) في مساحة أسماء Aspose.PDF. قم بإنشاء كائن من SvgSaveOptions ومرره كوسيط ثانٍ إلى طريقة [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Aspose.PDF for .NET يدعم ميزة تحويل صورة SVG إلى تنسيق PDF ويقدم أيضًا القدرة على تحويل ملفات PDF إلى تنسيق SVG. لتحقيق هذا المتطلب، تم تقديم فئة [`SvgSaveOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/svgsaveoptions/methods/index) في مساحة أسماء Aspose.PDF. قم بإنشاء كائن من SvgSaveOptions ومرره كوسيط ثانٍ إلى طريقة [`Document.Save(..)`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index).
 
 تظهر مقتطفات التعليمات البرمجية التالية الخطوات لتحويل ملف PDF إلى تنسيق SVG باستخدام .NET.
 

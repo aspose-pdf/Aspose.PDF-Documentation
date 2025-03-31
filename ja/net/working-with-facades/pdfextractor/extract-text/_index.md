@@ -74,11 +74,11 @@ lastmod: "2021-06-05"
 }
 </script>
 
-この記事では、PDFファイルからテキストを抽出する詳細について見ていきます。これらの抽出機能はすべて、[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor)クラスにまとめられています。これらの機能をコードでどのように使用するかを見ていきましょう。
+この記事では、PDFファイルからテキストを抽出する詳細について見ていきます。これらの抽出機能はすべて、[PdfExtractor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor)クラスにまとめられています。これらの機能をコードでどのように使用するかを見ていきましょう。
 
-[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor)クラスは、3種類の抽出機能を提供します。これらの3つのカテゴリは、テキスト、画像、および添付ファイルです。これらの3つのカテゴリのそれぞれで抽出を行うために、PdfExtractorはさまざまなメソッドを提供しており、最終的な出力を得るために連携して機能します。
+[PdfExtractor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor)クラスは、3種類の抽出機能を提供します。これらの3つのカテゴリは、テキスト、画像、および添付ファイルです。これらの3つのカテゴリのそれぞれで抽出を行うために、PdfExtractorはさまざまなメソッドを提供しており、最終的な出力を得るために連携して機能します。
 
-たとえば、テキストを抽出するには、[ExtractText、GetText、HasNextPageText、GetNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/index)の3つのメソッドを使用できます。テキストの抽出を開始するには、まず[ExtractText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extracttext/index)メソッドを呼び出す必要があります。これにより、PDFファイルからテキストが抽出され、メモリに保存されます。その後、[GetText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/gettext/index)メソッドがこの抽出されたテキストを取得し、指定された場所にファイルとしてディスクに保存します。[HasNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextpagetext)は、各ページをループして次のページにテキストがあるかどうかを確認するのに役立ちます。テキストが含まれている場合、[GetNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getnextpagetext/index)が個々のページのテキストをファイルに保存するのに役立ちます。
+たとえば、テキストを抽出するには、[ExtractText、GetText、HasNextPageText、GetNextPageText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor/methods/index)の3つのメソッドを使用できます。テキストの抽出を開始するには、まず[ExtractText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor/methods/extracttext/index)メソッドを呼び出す必要があります。これにより、PDFファイルからテキストが抽出され、メモリに保存されます。その後、[GetText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor/methods/gettext/index)メソッドがこの抽出されたテキストを取得し、指定された場所にファイルとしてディスクに保存します。[HasNextPageText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor/methods/hasnextpagetext)は、各ページをループして次のページにテキストがあるかどうかを確認するのに役立ちます。テキストが含まれている場合、[GetNextPageText](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor/methods/getnextpagetext/index)が個々のページのテキストをファイルに保存するのに役立ちます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

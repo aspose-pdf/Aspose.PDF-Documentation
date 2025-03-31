@@ -88,10 +88,10 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Untuk menggabungkan dua file PDF:
 
-1. Buat dua objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), masing-masing berisi salah satu file PDF input.
-1. Kemudian panggil metode Add dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) untuk objek Document yang ingin Anda tambahkan file PDF lainnya.
+1. Buat dua objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document), masing-masing berisi salah satu file PDF input.
+1. Kemudian panggil metode Add dari koleksi [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection) untuk objek Document yang ingin Anda tambahkan file PDF lainnya.
 1. Lewati koleksi PageCollection dari objek Document kedua ke metode Add dari koleksi PageCollection pertama.
-1. Terakhir, simpan file PDF output menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Terakhir, simpan file PDF output menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
 
 Potongan kode berikut menunjukkan cara menggabungkan file PDF.
 

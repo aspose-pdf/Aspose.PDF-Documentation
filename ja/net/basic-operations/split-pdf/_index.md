@@ -86,9 +86,9 @@ sitemap:
 
 このトピックでは、C#を使用して.NETアプリケーション内でPDFページを個別のPDFファイルに分割する方法を示します。C#を使用してPDFページを単一ページのPDFファイルに分割するには、以下の手順に従うことができます。
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションを介してPDFドキュメントのページをループします。
-1. 各イテレーションで、新しいDocumentオブジェクトを作成し、空のドキュメントに個別の[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトを追加します。
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して新しいPDFを保存します。
+1. [Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトの[PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションを介してPDFドキュメントのページをループします。
+1. 各イテレーションで、新しいDocumentオブジェクトを作成し、空のドキュメントに個別の[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)オブジェクトを追加します。
+1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して新しいPDFを保存します。
 
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 

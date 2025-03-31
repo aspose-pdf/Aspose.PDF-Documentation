@@ -91,9 +91,9 @@ lastmod: "2021-06-05"
 
 ## 파일 경로를 사용하여 PDF 파일 연결하기
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)는 여러 PDF 파일을 연결할 수 있는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)의 클래스입니다. 파일 스트림을 사용하여 파일을 연결할 수 있을 뿐만 아니라 메모리 스트림을 사용하여도 가능합니다. 이 문서에서는 메모리 스트림을 사용하여 파일을 연결하는 과정을 설명하고 코드 스니펫을 통해 보여줍니다.
+[PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor)는 여러 PDF 파일을 연결할 수 있는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)의 클래스입니다. 파일 스트림을 사용하여 파일을 연결할 수 있을 뿐만 아니라 메모리 스트림을 사용하여도 가능합니다. 이 문서에서는 메모리 스트림을 사용하여 파일을 연결하는 과정을 설명하고 코드 스니펫을 통해 보여줍니다.
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드를 사용하여 두 개의 PDF 파일을 연결할 수 있습니다. [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드는 세 개의 매개변수를 전달할 수 있습니다: 첫 번째 입력 PDF, 두 번째 입력 PDF 및 출력 PDF. 최종 출력 PDF에는 두 개의 입력 PDF 파일이 포함됩니다.
+[PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Concatenate](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드를 사용하여 두 개의 PDF 파일을 연결할 수 있습니다. [Concatenate](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드는 세 개의 매개변수를 전달할 수 있습니다: 첫 번째 입력 PDF, 두 번째 입력 PDF 및 출력 PDF. 최종 출력 PDF에는 두 개의 입력 PDF 파일이 포함됩니다.
 
 다음 C# 코드 스니펫은 파일 경로를 사용하여 PDF 파일을 연결하는 방법을 보여줍니다.
 
@@ -129,7 +129,7 @@ private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 
 ## 메모리 스트림을 사용하여 여러 PDF 파일 연결하기
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드는 소스 PDF 파일과 대상 PDF 파일을 매개변수로 사용합니다. 이 매개변수는 디스크의 PDF 파일 경로일 수도 있고 메모리 스트림일 수도 있습니다. 이제 이 예제에서는 먼저 두 개의 파일 스트림을 생성하여 디스크에서 PDF 파일을 읽습니다. 그런 다음 이 파일들을 바이트 배열로 변환합니다. PDF 파일의 바이트 배열은 메모리 스트림으로 변환됩니다. PDF 파일에서 메모리 스트림을 얻은 후, 이를 concatenate 메서드에 전달하여 단일 출력 파일로 병합할 수 있습니다.
+[PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스의 [Concatenate](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드는 소스 PDF 파일과 대상 PDF 파일을 매개변수로 사용합니다. 이 매개변수는 디스크의 PDF 파일 경로일 수도 있고 메모리 스트림일 수도 있습니다. 이제 이 예제에서는 먼저 두 개의 파일 스트림을 생성하여 디스크에서 PDF 파일을 읽습니다. 그런 다음 이 파일들을 바이트 배열로 변환합니다. PDF 파일의 바이트 배열은 메모리 스트림으로 변환됩니다. PDF 파일에서 메모리 스트림을 얻은 후, 이를 concatenate 메서드에 전달하여 단일 출력 파일로 병합할 수 있습니다.
 
 다음 C# 코드 스니펫은 메모리 스트림을 사용하여 여러 PDF 파일을 연결하는 방법을 보여줍니다:
 
@@ -187,7 +187,7 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
 
 ## 파일 경로를 사용하여 PDF 파일 배열 연결하기
 
-여러 PDF 파일을 연결하려면 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드의 오버로드를 사용할 수 있으며, 이를 통해 PDF 파일 배열을 전달할 수 있습니다. 최종 출력은 배열의 모든 파일로부터 생성된 병합 파일로 저장됩니다. 다음 C# 코드 스니펫은 파일 경로를 사용하여 PDF 파일 배열을 연결하는 방법을 보여줍니다.
+여러 PDF 파일을 연결하려면 [Concatenate](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드의 오버로드를 사용할 수 있으며, 이를 통해 PDF 파일 배열을 전달할 수 있습니다. 최종 출력은 배열의 모든 파일로부터 생성된 병합 파일로 저장됩니다. 다음 C# 코드 스니펫은 파일 경로를 사용하여 PDF 파일 배열을 연결하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
 
 ## 스트림을 사용하여 PDF 파일 배열 연결하기
 
-PDF 파일 배열을 연결하는 것은 디스크에 있는 파일로만 제한되지 않습니다. 스트림에서 PDF 파일 배열을 연결할 수도 있습니다. 여러 PDF 파일을 연결하려면 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드의 적절한 오버로드를 사용할 수 있습니다. 먼저 입력 스트림의 배열과 출력 PDF를 위한 하나의 스트림을 생성한 후 [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드를 호출합니다. 출력은 출력 스트림에 저장됩니다. 다음 C# 코드 스니펫은 스트림을 사용하여 PDF 파일 배열을 연결하는 방법을 보여줍니다.
+PDF 파일 배열을 연결하는 것은 디스크에 있는 파일로만 제한되지 않습니다. 스트림에서 PDF 파일 배열을 연결할 수도 있습니다. 여러 PDF 파일을 연결하려면 [Concatenate](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드의 적절한 오버로드를 사용할 수 있습니다. 먼저 입력 스트림의 배열과 출력 PDF를 위한 하나의 스트림을 생성한 후 [Concatenate](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 메서드를 호출합니다. 출력은 출력 스트림에 저장됩니다. 다음 C# 코드 스니펫은 스트림을 사용하여 PDF 파일 배열을 연결하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -267,7 +267,7 @@ private static void ConcatenatingAllPdfFilesInParticularFolder()
 
 ## PDF 양식 연결 및 필드 이름 고유하게 유지하기
 
-[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)의 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스는 PDF 파일을 연결할 수 있는 기능을 제공합니다. 이제 연결할 PDF 파일에 유사한 필드 이름을 가진 양식 필드가 있는 경우, Aspose.PDF는 결과 PDF 파일에서 필드를 고유하게 유지하는 기능을 제공하며, 필드 이름을 고유하게 만들기 위해 접미사를 지정할 수도 있습니다. [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)의 [KeepFieldsUnique](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) 속성을 true로 설정하면 PDF 양식이 연결될 때 필드 이름이 고유하게 됩니다. 또한, [UniqueSuffix](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) 속성을 사용하여 양식이 연결될 때 필드 이름을 고유하게 만들기 위해 추가되는 접미사의 사용자 정의 형식을 지정할 수 있습니다. 이 문자열은 결과 파일의 숫자로 대체될 `%NUM%` 하위 문자열을 포함해야 합니다.
+[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)의 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스는 PDF 파일을 연결할 수 있는 기능을 제공합니다. 이제 연결할 PDF 파일에 유사한 필드 이름을 가진 양식 필드가 있는 경우, Aspose.PDF는 결과 PDF 파일에서 필드를 고유하게 유지하는 기능을 제공하며, 필드 이름을 고유하게 만들기 위해 접미사를 지정할 수도 있습니다. [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor)의 [KeepFieldsUnique](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) 속성을 true로 설정하면 PDF 양식이 연결될 때 필드 이름이 고유하게 됩니다. 또한, [UniqueSuffix](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) 속성을 사용하여 양식이 연결될 때 필드 이름을 고유하게 만들기 위해 추가되는 접미사의 사용자 정의 형식을 지정할 수 있습니다. 이 문자열은 결과 파일의 숫자로 대체될 `%NUM%` 하위 문자열을 포함해야 합니다.
 
 다음 간단한 코드 스니펫을 참조하여 이 기능을 구현하십시오.
 
@@ -347,7 +347,7 @@ private static void InsertBlankPage()
 
 ### 텍스트 스탬프 추가하기
 
-목차를 생성하기 위해 첫 페이지에 [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) 및 [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp) 객체를 사용하여 텍스트 스탬프를 추가해야 합니다. Stamp 클래스는 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)를 추가하기 위한 `BindLogo(...)` 메서드를 제공하며, `SetOrigin(..)` 메서드를 사용하여 이러한 텍스트 스탬프를 추가할 위치를 지정할 수 있습니다. 이 문서에서는 두 개의 PDF 파일을 연결하고 있으므로, 각 개별 문서를 가리키는 두 개의 텍스트 스탬프 객체를 생성해야 합니다.
+목차를 생성하기 위해 첫 페이지에 [PdfFileStamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilestamp) 및 [Stamp](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/stamp) 객체를 사용하여 텍스트 스탬프를 추가해야 합니다. Stamp 클래스는 [FormattedText](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/formattedtext)를 추가하기 위한 `BindLogo(...)` 메서드를 제공하며, `SetOrigin(..)` 메서드를 사용하여 이러한 텍스트 스탬프를 추가할 위치를 지정할 수 있습니다. 이 문서에서는 두 개의 PDF 파일을 연결하고 있으므로, 각 개별 문서를 가리키는 두 개의 텍스트 스탬프 객체를 생성해야 합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -368,7 +368,7 @@ private static void AddTextStampForTableOfContents()
 
 ### 로컬 링크 생성하기
 
-이제 연결된 파일 내의 페이지로의 링크를 추가해야 합니다. 이 요구 사항을 충족하기 위해 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 `CreateLocalLink(..)` 메서드를 사용할 수 있습니다. 다음 코드 스니펫에서는 링크 주위의 사각형이 보이지 않도록 4번째 인수로 Transparent를 전달했습니다.
+이제 연결된 파일 내의 페이지로의 링크를 추가해야 합니다. 이 요구 사항을 충족하기 위해 [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor) 클래스의 `CreateLocalLink(..)` 메서드를 사용할 수 있습니다. 다음 코드 스니펫에서는 링크 주위의 사각형이 보이지 않도록 4번째 인수로 Transparent를 전달했습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -484,7 +484,7 @@ private static void CompleteCode()
 
 ## 폴더 내 PDF 파일 연결하기
 
-[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)의 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 클래스는 PDF 파일을 연결할 수 있는 기능을 제공합니다. 특정 폴더 내의 모든 PDF 파일을 런타임에 읽고 파일 이름을 알지 못한 채로 연결할 수도 있습니다. 연결하고자 하는 PDF 문서가 포함된 디렉토리의 경로를 제공하기만 하면 됩니다.
+[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades)의 [PdfFileEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffileeditor) 클래스는 PDF 파일을 연결할 수 있는 기능을 제공합니다. 특정 폴더 내의 모든 PDF 파일을 런타임에 읽고 파일 이름을 알지 못한 채로 연결할 수도 있습니다. 연결하고자 하는 PDF 문서가 포함된 디렉토리의 경로를 제공하기만 하면 됩니다.
 
 다음 C# 코드 스니펫을 사용하여 Aspose.PDF에서 이 기능을 구현해 보십시오.
 

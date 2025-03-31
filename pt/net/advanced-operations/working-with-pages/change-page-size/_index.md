@@ -84,13 +84,13 @@ A Aspose.PDF for .NET permite que você altere o tamanho da página PDF com linh
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-A classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) contém o método SetPageSize(...) que permite definir o tamanho da página. O trecho de código abaixo atualiza as dimensões da página em alguns passos fáceis:
+A classe [Page](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) contém o método SetPageSize(...) que permite definir o tamanho da página. O trecho de código abaixo atualiza as dimensões da página em alguns passos fáceis:
 
 1. Carregue o arquivo PDF de origem.
-1. Obtenha as páginas no objeto [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. Obtenha as páginas no objeto [PageCollection](https://reference.aspose.com/pdf/pt/net/aspose.pdf/pagecollection).
 1. Obtenha uma página específica.
 1. Chame o método SetPageSize(..) para atualizar suas dimensões.
-1. Chame o método Save(..) da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) para gerar o arquivo PDF com as dimensões de página atualizadas.
+1. Chame o método Save(..) da classe [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document) para gerar o arquivo PDF com as dimensões de página atualizadas.
 
 {{% alert color="primary" %}}
 

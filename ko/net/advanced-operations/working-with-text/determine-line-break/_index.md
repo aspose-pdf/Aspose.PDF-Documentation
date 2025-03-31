@@ -82,7 +82,7 @@ sitemap:
 
 ## 다중 행 TextFragment의 줄 바꿈 추적
 
-Aspose.PDF for .NET는 텍스트 추가 시나리오에서 다중 행 텍스트 조각의 줄 바꿈을 로깅(추적)하는 백그라운드 처리를 제공합니다. 텍스트 조각의 줄 바꿈을 추적하기 위해 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스의 [GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)() 메서드를 다음과 같이 사용할 수 있습니다:
+Aspose.PDF for .NET는 텍스트 추가 시나리오에서 다중 행 텍스트 조각의 줄 바꿈을 로깅(추적)하는 백그라운드 처리를 제공합니다. 텍스트 조각의 줄 바꿈을 추적하기 위해 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 클래스의 [GetNotifications](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page/methods/getnotifications)() 메서드를 다음과 같이 사용할 수 있습니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

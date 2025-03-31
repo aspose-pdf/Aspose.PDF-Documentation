@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Untuk mengatur properti elemen struktur dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan metode [CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) dan [CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent).
+Untuk mengatur properti elemen struktur dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan metode [CreateSectElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) dan [CreateHeaderElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent).
 
 Potongan kode berikut menunjukkan cara mengatur properti elemen struktur dari Dokumen PDF Berlabel:
 
@@ -168,7 +168,7 @@ private static void SetProperties()
 
 ## Mengatur Elemen Struktur Teks
 
-Untuk mengatur elemen struktur teks dari Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Potongan kode berikut menunjukkan cara mengatur elemen struktur teks dari Dokumen PDF Berlabel:
+Untuk mengatur elemen struktur teks dari Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [ParagraphElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/paragraphelement). Potongan kode berikut menunjukkan cara mengatur elemen struktur teks dari Dokumen PDF Berlabel:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -241,7 +241,7 @@ private static void SetTextElements()
 
 ## Mengatur Elemen Struktur Blok Teks
 
-Untuk mengatur elemen struktur blok teks dari Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) dan [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Anda dapat menambahkan objek dari kelas ini sebagai anak dari objek [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement).
+Untuk mengatur elemen struktur blok teks dari Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [HeaderElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/headerelement) dan [ParagraphElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/paragraphelement). Anda dapat menambahkan objek dari kelas ini sebagai anak dari objek [StructureElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structureelement).
 Potongan kode berikut menunjukkan cara mengatur elemen struktur blok teks dari Dokumen PDF Berlabel:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -349,7 +349,7 @@ private static void SetTextBlockElements()
 
 ## Mengatur Elemen Struktur Inline
 
-Untuk mengatur elemen struktur inline dari Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) dan [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). Anda dapat menambahkan objek dari kelas ini sebagai anak dari objek [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Potongan kode berikut menunjukkan cara mengatur elemen struktur inline dari Dokumen PDF Berlabel:
+Untuk mengatur elemen struktur inline dari Dokumen PDF Berlabel, Aspose.PDF menawarkan kelas [SpanElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/spanelement) dan [ParagraphElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/paragraphelement). Anda dapat menambahkan objek dari kelas ini sebagai anak dari objek [StructureElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structureelement). Potongan kode berikut menunjukkan cara mengatur elemen struktur inline dari Dokumen PDF Berlabel:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -588,7 +588,7 @@ private static void SetInlineElements()
 
 ## Mengatur Nama Tag Kustom
 
-Untuk mengatur nama tag kustom dari elemen-elemen Dokumen PDF Berlabel, Aspose.PDF menawarkan metode [SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) dari kelas StructureElement untuk elemen. Potongan kode berikut menunjukkan cara mengatur nama tag kustom:
+Untuk mengatur nama tag kustom dari elemen-elemen Dokumen PDF Berlabel, Aspose.PDF menawarkan metode [SetTag](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/structureelement/methods/settag) dari kelas StructureElement untuk elemen. Potongan kode berikut menunjukkan cara mengatur nama tag kustom:
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -733,7 +733,7 @@ private static void SetTagName()
 
 **Fitur ini didukung oleh versi 19.4 atau lebih tinggi.**
 
-Untuk mengatur elemen struktur tautan dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan metode [CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Potongan kode berikut menunjukkan cara mengatur elemen struktur dalam paragraf dengan teks dari Dokumen PDF Berlabel:
+Untuk mengatur elemen struktur tautan dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan metode [CreateLinkElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/id/net/aspose.pdf.tagged/itaggedcontent). Potongan kode berikut menunjukkan cara mengatur elemen struktur dalam paragraf dengan teks dari Dokumen PDF Berlabel:
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1077,7 +1077,7 @@ private static void AddLinkElement()
 
 ## Mengatur Elemen Struktur Catatan
 
-API Aspose.PDF for .NET juga memungkinkan Anda untuk menambahkan [NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement) dalam dokumen PDF berlabel. Potongan kode berikut menunjukkan cara menambahkan elemen catatan dalam Dokumen PDF Berlabel:
+API Aspose.PDF for .NET juga memungkinkan Anda untuk menambahkan [NoteElement](https://reference.aspose.com/pdf/id/net/aspose.pdf.logicalstructure/noteelement) dalam dokumen PDF berlabel. Potongan kode berikut menunjukkan cara menambahkan elemen catatan dalam Dokumen PDF Berlabel:
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

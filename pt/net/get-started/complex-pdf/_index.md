@@ -83,15 +83,15 @@ Nosso documento conterá uma imagem, dois fragmentos de texto (cabeçalho e par�
 
 Se criarmos um documento do zero, precisamos seguir certas etapas:
 
-1. Instanciar um objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Nesta etapa, criaremos um documento PDF vazio com alguns metadados, mas sem páginas.
-1. Adicionar uma [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) ao objeto documento. Assim, agora nosso documento terá uma página.
-1. Adicionar uma [Image](https://reference.aspose.com/pdf/net/aspose.pdf/image/methods/index) à página.
-1. Criar um [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) para o cabeçalho. Para o cabeçalho, usaremos a fonte Arial com tamanho de fonte 24pt e alinhamento central.
-1. Adicionar o cabeçalho aos [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) da página.
-1. Criar um [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) para a descrição. Para a descrição, usaremos a fonte Arial com tamanho de fonte 24pt e alinhamento central.
+1. Instanciar um objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document). Nesta etapa, criaremos um documento PDF vazio com alguns metadados, mas sem páginas.
+1. Adicionar uma [Page](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page) ao objeto documento. Assim, agora nosso documento terá uma página.
+1. Adicionar uma [Image](https://reference.aspose.com/pdf/pt/net/aspose.pdf/image/methods/index) à página.
+1. Criar um [TextFragment](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/textfragment) para o cabeçalho. Para o cabeçalho, usaremos a fonte Arial com tamanho de fonte 24pt e alinhamento central.
+1. Adicionar o cabeçalho aos [Paragraphs](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page/properties/paragraphs) da página.
+1. Criar um [TextFragment](https://reference.aspose.com/pdf/pt/net/aspose.pdf.text/textfragment) para a descrição. Para a descrição, usaremos a fonte Arial com tamanho de fonte 24pt e alinhamento central.
 1. Adicionar (descrição) aos Paragraphs da página.
 1. Criar uma tabela, adicionar propriedades da tabela.
-1. Adicionar (tabela) aos [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) da página.
+1. Adicionar (tabela) aos [Paragraphs](https://reference.aspose.com/pdf/pt/net/aspose.pdf/page/properties/paragraphs) da página.
 1. Salvar um documento "Complex.pdf".
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).

@@ -83,7 +83,7 @@ sitemap:
 
 ## الحصول على معلومات ملف PDF
 
-للحصول على معلومات محددة عن ملف PDF، تحتاج أولاً إلى الحصول على كائن [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) باستخدام خاصية [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) . بمجرد استرجاع كائن [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) ، يمكنك الحصول على قيم الخصائص الفردية. يوضح مقتطف الشيفرة التالي كيفية الحصول على معلومات ملف PDF.
+للحصول على معلومات محددة عن ملف PDF، تحتاج أولاً إلى الحصول على كائن [DocumentInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf/documentinfo) باستخدام خاصية [Info](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/info) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) . بمجرد استرجاع كائن [DocumentInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf/documentinfo) ، يمكنك الحصول على قيم الخصائص الفردية. يوضح مقتطف الشيفرة التالي كيفية الحصول على معلومات ملف PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -142,7 +142,7 @@ private static void GetPDFFileInformation()
 
 Aspose.PDF for .NET يتيح لك تعيين معلومات محددة عن ملف PDF، مثل المؤلف، تاريخ الإنشاء، الموضوع، والعنوان. لتعيين هذه المعلومات:
 
-1. أنشئ كائن [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) .
+1. أنشئ كائن [DocumentInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf/documentinfo) .
 1. قم بتعيين قيم الخصائص.
 1. احفظ المستند المحدث باستخدام طريقة Save لفئة Document.
 
@@ -214,8 +214,8 @@ private static void SetFileInformation()
 
 Aspose.PDF يتيح لك الوصول إلى بيانات التعريف XMP لملف PDF. للحصول على بيانات التعريف لملف PDF:
 
-1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وافتح ملف PDF المدخل.
-1. احصل على بيانات التعريف للملف باستخدام خاصية [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) .
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) وافتح ملف PDF المدخل.
+1. احصل على بيانات التعريف للملف باستخدام خاصية [Metadata](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/metadata) .
 
 يظهر مقتطف الشيفرة التالي كيفية الحصول على بيانات التعريف من ملف PDF.
 
@@ -265,9 +265,9 @@ private static void GetXMPMetadata()
 
 Aspose.PDF يتيح لك تعيين بيانات التعريف في ملف PDF. لتعيين بيانات التعريف:
 
-1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
-1. قم بتعيين قيم بيانات التعريف باستخدام خاصية [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) .
-1. احفظ المستند المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
+1. قم بتعيين قيم بيانات التعريف باستخدام خاصية [Metadata](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/metadata) .
+1. احفظ المستند المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
 
 يظهر مقتطف الشيفرة التالي كيفية تعيين بيانات التعريف في ملف PDF.
 

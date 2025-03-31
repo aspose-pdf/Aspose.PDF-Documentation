@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-为了在标记 PDF 文档中设置结构元素属性，Aspose.PDF 提供了 [CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) 和 [CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) 方法，属于 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 接口。
+为了在标记 PDF 文档中设置结构元素属性，Aspose.PDF 提供了 [CreateSectElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) 和 [CreateHeaderElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) 方法，属于 [ITaggedContent](https://reference.aspose.com/pdf/zh/net/aspose.pdf.tagged/itaggedcontent) 接口。
 
 以下代码片段展示了如何设置标记 PDF 文档的结构元素属性：
 
@@ -168,7 +168,7 @@ private static void SetProperties()
 
 ## 设置文本结构元素
 
-为了设置标记 PDF 文档的文本结构元素，Aspose.PDF 提供了 [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) 类。以下代码片段展示了如何设置标记 PDF 文档的文本结构元素：
+为了设置标记 PDF 文档的文本结构元素，Aspose.PDF 提供了 [ParagraphElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/paragraphelement) 类。以下代码片段展示了如何设置标记 PDF 文档的文本结构元素：
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -241,7 +241,7 @@ private static void SetTextElements()
 
 ## 设置文本块结构元素
 
-为了设置标记 PDF 文档的文本块结构元素，Aspose.PDF 提供了 [HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) 和 [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) 类。您可以将这些类的对象作为 [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) 对象的子项附加。
+为了设置标记 PDF 文档的文本块结构元素，Aspose.PDF 提供了 [HeaderElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/headerelement) 和 [ParagraphElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/paragraphelement) 类。您可以将这些类的对象作为 [StructureElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structureelement) 对象的子项附加。
 以下代码片段展示了如何设置标记 PDF 文档的文本块结构元素：
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -349,7 +349,7 @@ private static void SetTextBlockElements()
 
 ## 设置行内结构元素
 
-为了设置标记 PDF 文档的行内结构元素，Aspose.PDF 提供了 [SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) 和 [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement) 类。您可以将这些类的对象作为 [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) 对象的子项附加。以下代码片段展示了如何设置标记 PDF 文档的行内结构元素：
+为了设置标记 PDF 文档的行内结构元素，Aspose.PDF 提供了 [SpanElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/spanelement) 和 [ParagraphElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/paragraphelement) 类。您可以将这些类的对象作为 [StructureElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structureelement) 对象的子项附加。以下代码片段展示了如何设置标记 PDF 文档的行内结构元素：
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -588,7 +588,7 @@ private static void SetInlineElements()
 
 ## 设置自定义标签名称
 
-为了设置标记 PDF 文档元素的自定义标签名称，Aspose.PDF 提供了 StructureElement 类的 [SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) 方法。以下代码片段展示了如何设置自定义标签名称：
+为了设置标记 PDF 文档元素的自定义标签名称，Aspose.PDF 提供了 StructureElement 类的 [SetTag](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structureelement/methods/settag) 方法。以下代码片段展示了如何设置自定义标签名称：
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -733,7 +733,7 @@ private static void SetTagName()
 
 **此功能支持版本 19.4 或更高版本。**
 
-为了在标记 PDF 文档中设置链接结构元素，Aspose.PDF 提供了 [CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) 方法，属于 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 接口。以下代码片段展示了如何在标记 PDF 文档的段落中设置结构元素：
+为了在标记 PDF 文档中设置链接结构元素，Aspose.PDF 提供了 [CreateLinkElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) 方法，属于 [ITaggedContent](https://reference.aspose.com/pdf/zh/net/aspose.pdf.tagged/itaggedcontent) 接口。以下代码片段展示了如何在标记 PDF 文档的段落中设置结构元素：
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1077,7 +1077,7 @@ private static void AddLinkElement()
 
 ## 设置注释结构元素
 
-Aspose.PDF for .NET API 还允许您在标记 PDF 文档中添加 [NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement)。以下代码片段展示了如何在标记 PDF 文档中添加注释元素：
+Aspose.PDF for .NET API 还允许您在标记 PDF 文档中添加 [NoteElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/noteelement)。以下代码片段展示了如何在标记 PDF 文档中添加注释元素：
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

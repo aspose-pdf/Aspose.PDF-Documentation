@@ -81,7 +81,7 @@ sitemap:
 
 이 옵션이 선택되면 주석이 PDF 표준 주석으로 내보내진 PDF에 포함됩니다.
 
-다음 코드 조각에서 사용된 [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) 메서드를 확인하십시오.
+다음 코드 조각에서 사용된 [flatteningAnnotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) 메서드를 확인하십시오.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

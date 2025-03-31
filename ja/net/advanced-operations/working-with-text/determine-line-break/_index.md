@@ -82,7 +82,7 @@ sitemap:
 
 ## マルチラインTextFragmentの行の改行を追跡する
 
-Aspose.PDF for .NETは、テキスト追加シナリオにおけるマルチラインテキストフラグメントの行の改行のログ（追跡）バックグラウンド処理を提供します。テキストフラグメントの行の改行を追跡するには、次のように[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)クラスの[GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)()メソッドを使用できます。
+Aspose.PDF for .NETは、テキスト追加シナリオにおけるマルチラインテキストフラグメントの行の改行のログ（追跡）バックグラウンド処理を提供します。テキストフラグメントの行の改行を追跡するには、次のように[Page](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page)クラスの[GetNotifications](https://reference.aspose.com/pdf/ja/net/aspose.pdf/page/methods/getnotifications)()メソッドを使用できます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

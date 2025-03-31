@@ -484,7 +484,7 @@ Aspose.PDF for .NETは、PDFドキュメントを作成する際にフォント�
 
 フォントを置き換えるには、次のアプローチを使用します：
 
-1. [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber)クラスを呼び出します。
+1. [TextFragmentAbsorber](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragmentabsorber)クラスを呼び出します。
 1. TextFragmentAbsorberクラスのTextEditOptions.FontReplace.RemoveUnusedFontsパラメータを呼び出します。（これにより、フォント置き換え中に未使用になったフォントが削除されます）。
 1. 各テキストフラグメントに対して個別にフォントを設定します。
 

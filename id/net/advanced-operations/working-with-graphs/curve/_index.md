@@ -83,7 +83,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Tambahkan objek Kurva
 
-Sebuah grafik [Kurva](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve) adalah gabungan terhubung dari garis proyektif, setiap garis bertemu dengan tiga garis lainnya di titik ganda biasa.
+Sebuah grafik [Kurva](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/curve) adalah gabungan terhubung dari garis proyektif, setiap garis bertemu dengan tiga garis lainnya di titik ganda biasa.
 
 Aspose.PDF for .NET menunjukkan cara menggunakan kurva Bézier dalam Grafik Anda.
 Kurva Bézier banyak digunakan dalam grafik komputer untuk memodelkan kurva yang halus. Kurva sepenuhnya terkandung dalam cangkang cembung dari titik kontrolnya, titik-titik tersebut dapat ditampilkan secara grafis dan digunakan untuk memanipulasi kurva secara intuitif.
@@ -93,10 +93,10 @@ Dalam artikel ini, kita akan menyelidiki kurva grafik sederhana, dan kurva teris
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat instance [Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Buat [objek Gambar](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) dengan dimensi tertentu.
-1. Atur [Batas](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) untuk objek Gambar.
-1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) ke koleksi paragraf halaman.
+1. Buat instance [Dokumen](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Buat [objek Gambar](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing) dengan dimensi tertentu.
+1. Atur [Batas](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/graph/properties/border) untuk objek Gambar.
+1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/graph) ke koleksi paragraf halaman.
 1. Simpan file PDF kita.
 
 ```csharp

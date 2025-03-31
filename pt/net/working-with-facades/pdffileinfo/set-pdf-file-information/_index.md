@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-A classe [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) permite que você defina informações específicas do arquivo de um arquivo PDF. Você precisa criar um objeto da classe [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) e, em seguida, definir diferentes propriedades específicas do arquivo, como Autor, Título, Palavra-chave e Criador, etc. Por fim, salve o arquivo PDF atualizado usando o método [SaveNewInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) do objeto [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo).
+A classe [PdfFileInfo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileinfo) permite que você defina informações específicas do arquivo de um arquivo PDF. Você precisa criar um objeto da classe [PdfFileInfo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileinfo) e, em seguida, definir diferentes propriedades específicas do arquivo, como Autor, Título, Palavra-chave e Criador, etc. Por fim, salve o arquivo PDF atualizado usando o método [SaveNewInfo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) do objeto [PdfFileInfo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileinfo).
 
 O seguinte trecho de código mostra como definir informações do arquivo PDF.
 
@@ -103,7 +103,7 @@ private static void SetPdfInfo()
 
 ## Definir Meta Informações
 
-O método [SetMetaInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) permite que você adicione qualquer informação. No nosso exemplo, adicionamos um campo. Confira o próximo trecho de código:
+O método [SetMetaInfo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) permite que você adicione qualquer informação. No nosso exemplo, adicionamos um campo. Confira o próximo trecho de código:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

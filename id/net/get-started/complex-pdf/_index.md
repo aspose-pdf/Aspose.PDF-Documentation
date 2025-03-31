@@ -83,15 +83,15 @@ Dokumen kita akan berisi sebuah gambar, dua fragmen teks (header dan paragraf), 
 
 Jika kita membuat dokumen dari awal, kita perlu mengikuti langkah-langkah tertentu:
 
-1. Menginstansiasi objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Dalam langkah ini kita akan membuat dokumen PDF kosong dengan beberapa metadata tetapi tanpa halaman.
-1. Menambahkan [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) ke objek dokumen. Jadi, sekarang dokumen kita akan memiliki satu halaman.
-1. Menambahkan [Image](https://reference.aspose.com/pdf/net/aspose.pdf/image/methods/index) ke Halaman.
-1. Membuat [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) untuk header. Untuk header kita akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
-1. Menambahkan header ke [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) halaman.
-1. Membuat [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) untuk deskripsi. Untuk deskripsi kita akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
+1. Menginstansiasi objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Dalam langkah ini kita akan membuat dokumen PDF kosong dengan beberapa metadata tetapi tanpa halaman.
+1. Menambahkan [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) ke objek dokumen. Jadi, sekarang dokumen kita akan memiliki satu halaman.
+1. Menambahkan [Image](https://reference.aspose.com/pdf/id/net/aspose.pdf/image/methods/index) ke Halaman.
+1. Membuat [TextFragment](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textfragment) untuk header. Untuk header kita akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
+1. Menambahkan header ke [Paragraphs](https://reference.aspose.com/pdf/id/net/aspose.pdf/page/properties/paragraphs) halaman.
+1. Membuat [TextFragment](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textfragment) untuk deskripsi. Untuk deskripsi kita akan menggunakan font Arial dengan ukuran font 24pt dan perataan tengah.
 1. Menambahkan (deskripsi) ke Paragraphs halaman.
 1. Membuat tabel, menambahkan properti tabel.
-1. Menambahkan (tabel) ke [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) halaman.
+1. Menambahkan (tabel) ke [Paragraphs](https://reference.aspose.com/pdf/id/net/aspose.pdf/page/properties/paragraphs) halaman.
 1. Menyimpan dokumen "Complex.pdf".
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).

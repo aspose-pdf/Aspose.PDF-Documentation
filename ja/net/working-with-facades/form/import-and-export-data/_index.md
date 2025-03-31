@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスを使用すると、[ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.form/importxml/methods/1)メソッドを使用してXMLファイルからPDFファイルにデータをインポートできます。XMLからデータをインポートするには、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxml/index)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、XMLファイルからデータをインポートする方法を示しています。
+[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスを使用すると、[ImportXml](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.form/importxml/methods/1)メソッドを使用してXMLファイルからPDFファイルにデータをインポートできます。XMLからデータをインポートするには、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ImportXml](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/importxml/index)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、XMLファイルからデータをインポートする方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -104,7 +104,7 @@ private static void ImportDataFromXml()
 
 ## PDFファイルからXMLにデータをエクスポート
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスを使用すると、[ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml)メソッドを使用してPDFファイルからXMLファイルにデータをエクスポートできます。XMLにデータをエクスポートするには、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml)メソッドを呼び出す必要があります。最後に、FileStreamオブジェクトを閉じて、Formオブジェクトを破棄できます。以下のコードスニペットは、XMLファイルにデータをエクスポートする方法を示しています。
+[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスを使用すると、[ExportXml](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/exportxml)メソッドを使用してPDFファイルからXMLファイルにデータをエクスポートできます。XMLにデータをエクスポートするには、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ExportXml](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/exportxml)メソッドを呼び出す必要があります。最後に、FileStreamオブジェクトを閉じて、Formオブジェクトを破棄できます。以下のコードスニペットは、XMLファイルにデータをエクスポートする方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -130,7 +130,7 @@ private static void ExportDataToXml()
 
 ## FDFからPDFファイルにデータをインポート
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスを使用すると、[ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf)メソッドを使用してFDFファイルからPDFファイルにデータをインポートできます。FDFからデータをインポートするには、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、FDFファイルからデータをインポートする方法を示しています。
+[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスを使用すると、[ImportFdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/importfdf)メソッドを使用してFDFファイルからPDFファイルにデータをインポートできます。FDFからデータをインポートするには、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ImportFdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/importfdf)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、FDFファイルからデータをインポートする方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -159,7 +159,7 @@ private static void ImportDataFromPdfIntoPdf()
 
 ## PDFファイルからFDFにデータをエクスポート
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスを使用すると、[ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf)メソッドを使用してPDFファイルからFDFファイルにデータをエクスポートできます。FDFにデータをエクスポートするには、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、FDFファイルにデータをエクスポートする方法を示しています。
+[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスを使用すると、[ExportFdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/exportfdf)メソッドを使用してPDFファイルからFDFファイルにデータをエクスポートできます。FDFにデータをエクスポートするには、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ExportFdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/exportfdf)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、FDFファイルにデータをエクスポートする方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -188,7 +188,7 @@ private static void ExportDataToPdfFromPdf()
 
 ## XFDFからPDFファイルにデータをインポート
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスを使用すると、[ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf)メソッドを使用してXFDFファイルからPDFファイルにデータをインポートできます。XFDFからデータをインポートするには、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、XFDFファイルからデータをインポートする方法を示しています。
+[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスを使用すると、[ImportXfdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/importxfdf)メソッドを使用してXFDFファイルからPDFファイルにデータをインポートできます。XFDFからデータをインポートするには、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ImportXfdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/importxfdf)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、XFDFファイルからデータをインポートする方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -217,7 +217,7 @@ private static void ImportDataFromXFDIntoPdf()
 
 ## PDFファイルからXFDFにデータをエクスポート
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスを使用すると、[ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf)メソッドを使用してPDFファイルからXFDFファイルにデータをエクスポートできます。XFDFにデータをエクスポートするには、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、XFDFファイルにデータをエクスポートする方法を示しています。
+[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスを使用すると、[ExportXfdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/exportxfdf)メソッドを使用してPDFファイルからXFDFファイルにデータをエクスポートできます。XFDFにデータをエクスポートするには、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスのオブジェクトを作成し、FileStreamオブジェクトを使用して[ExportXfdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/form/methods/exportxfdf)メソッドを呼び出す必要があります。最後に、[Form](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/form)クラスの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/formeditor/methods/save)メソッドを使用してPDFファイルを保存できます。以下のコードスニペットは、XFDFファイルにデータをエクスポートする方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

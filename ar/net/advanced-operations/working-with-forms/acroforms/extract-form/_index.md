@@ -111,7 +111,7 @@ private static void GetValuesFromFields()
 
 ### الحصول على قيمة من حقل فردي في مستند PDF
 
-تتيح لك خاصية Value لحقل النموذج الحصول على قيمة حقل معين. للحصول على القيمة، احصل على حقل النموذج من مجموعة Form لكائن Document. يختار هذا المثال C# [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) ويسترجع قيمته باستخدام خاصية Value.
+تتيح لك خاصية Value لحقل النموذج الحصول على قيمة حقل معين. للحصول على القيمة، احصل على حقل النموذج من مجموعة Form لكائن Document. يختار هذا المثال C# [TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield) ويسترجع قيمته باستخدام خاصية Value.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -160,7 +160,7 @@ private static void GetSubmitFormActionUrl()
 
 في بعض الأحيان، قد تعرف مكان وجود حقل النموذج في مستند، ولكن ليس لديك اسمه. على سبيل المثال، إذا كان كل ما لديك هو مخطط لنموذج مطبوع. مع Aspose.PDF for .NET، هذه ليست مشكلة. يمكنك معرفة الحقول الموجودة في منطقة معينة من ملف PDF. للحصول على حقول النموذج من منطقة معينة من ملف PDF:
 
-1. افتح ملف PDF باستخدام كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+1. افتح ملف PDF باستخدام كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
 1. احصل على النموذج من مجموعة Forms الخاصة بالمستند.
 1. حدد المنطقة المستطيلة ومررها إلى طريقة GetFieldsInRect لكائن Form. يتم إرجاع مجموعة Fields.
 1. استخدم هذا لمعالجة الحقول.

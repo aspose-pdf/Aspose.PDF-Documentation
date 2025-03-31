@@ -83,9 +83,9 @@ sitemap:
 
 ## **C#에서 PDF를 XPS 프린터로 인쇄하기**
 
-PDF 파일을 XPS 프린터 또는 다른 소프트 프린터로 인쇄할 수 있습니다. 이를 위해 [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) 클래스를 사용합니다. 그렇게 하려면 PdfViewer 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) 메서드를 사용하여 PDF 파일을 엽니다. [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) 및 [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) 클래스를 사용하여 다양한 인쇄 설정을 설정할 수 있습니다. 또한 설치된 XPS 또는 다른 소프트 프린터에 대해 [PrinterName](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/printername/) 속성을 설정해야 합니다.
+PDF 파일을 XPS 프린터 또는 다른 소프트 프린터로 인쇄할 수 있습니다. 이를 위해 [PdfViewer](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfviewer) 클래스를 사용합니다. 그렇게 하려면 PdfViewer 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) 메서드를 사용하여 PDF 파일을 엽니다. [PrinterSettings](https://reference.aspose.com/pdf/ko/net/aspose.pdf.printing/printersettings/) 및 [PageSettings](https://reference.aspose.com/pdf/ko/net/aspose.pdf.printing/pagesettings/) 클래스를 사용하여 다양한 인쇄 설정을 설정할 수 있습니다. 또한 설치된 XPS 또는 다른 소프트 프린터에 대해 [PrinterName](https://reference.aspose.com/pdf/ko/net/aspose.pdf.printing/printersettings/printername/) 속성을 설정해야 합니다.
 
-마지막으로 [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) 메서드를 사용하여 PDF를 XPS 또는 다른 소프트 프린터로 인쇄합니다. 다음 코드 스니펫은 PDF 파일을 XPS 프린터로 인쇄하는 방법을 보여줍니다.
+마지막으로 [PrintDocumentWithSettings](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) 메서드를 사용하여 PDF를 XPS 또는 다른 소프트 프린터로 인쇄합니다. 다음 코드 스니펫은 PDF 파일을 XPS 프린터로 인쇄하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -180,7 +180,7 @@ private static void PrintToXpsPrinter()
  
 24.4 릴리스 이후, 인쇄 대화 상자에서 PDF 페이지 크기에 따라 용지 출처를 선택할 수 있습니다. 다음 코드 스니펫은 PDF의 페이지 크기에 따라 프린터 트레이를 선택할 수 있게 합니다.
 
-이 선호도는 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/) 파사드를 사용하여 켜고 끌 수 있습니다.
+이 선호도는 [PdfContentEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfcontenteditor/) 파사드를 사용하여 켜고 끌 수 있습니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

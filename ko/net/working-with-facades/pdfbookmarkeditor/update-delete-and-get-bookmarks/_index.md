@@ -77,7 +77,7 @@ draft: false
 
 ## PDF 파일에서 기존 북마크 업데이트하기
 
-PDF 파일에서 기존 북마크를 업데이트하려면 [ModifyBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) 메서드를 사용해야 합니다. 이 메서드는 두 개의 인수를 받습니다: 소스 제목(수정할 북마크의 제목), 대상 제목(대체할 제목). [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후 [ModifyBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) 메서드를 호출하고, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에서 기존 북마크를 수정하는 방법을 보여줍니다.
+PDF 파일에서 기존 북마크를 업데이트하려면 [ModifyBookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) 메서드를 사용해야 합니다. 이 메서드는 두 개의 인수를 받습니다: 소스 제목(수정할 북마크의 제목), 대상 제목(대체할 제목). [PdfBookmarkEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후 [ModifyBookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) 메서드를 호출하고, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에서 기존 북마크를 수정하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -130,7 +130,7 @@ private static void UpdateExistingBookmark()
 
 ## PDF 파일에서 모든 북마크 삭제하기
 
-[DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 메서드를 사용하여 매개변수 없이 PDF 파일에서 모든 북마크를 삭제할 수 있습니다. 우선 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후 [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 메서드를 호출하고, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에서 모든 북마크를 삭제하는 방법을 보여줍니다.
+[DeleteBookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 메서드를 사용하여 매개변수 없이 PDF 파일에서 모든 북마크를 삭제할 수 있습니다. 우선 [PdfBookmarkEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후 [DeleteBookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 메서드를 호출하고, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에서 모든 북마크를 삭제하는 방법을 보여줍니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -183,7 +183,7 @@ private static void DeleteAllBookmarks()
 
 ## PDF 파일에서 특정 북마크 삭제하기
 
-특정 북마크를 삭제하려면 문자열(제목) 매개변수와 함께 [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 메서드를 호출해야 합니다. 여기서 *제목*은 PDF에서 삭제할 북마크를 나타냅니다. [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후 [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 메서드를 호출하고, [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에서 특정 북마크를 삭제하는 방법을 보여줍니다.
+특정 북마크를 삭제하려면 문자열(제목) 매개변수와 함께 [DeleteBookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 메서드를 호출해야 합니다. 여기서 *제목*은 PDF에서 삭제할 북마크를 나타냅니다. [PdfBookmarkEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후 [DeleteBookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 메서드를 호출하고, [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF 파일을 저장해야 합니다. 다음 코드 스니펫은 PDF 파일에서 특정 북마크를 삭제하는 방법을 보여줍니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -236,7 +236,7 @@ private static void DeleteParticularBookmark()
 
 ## PDF 문서 Facades에서 북마크 가져오기
 
-[PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 클래스는 기존 PDF 파일에서 북마크를 조작하는 기능을 제공합니다. 이 클래스는 북마크에 대한 정보를 가져오거나 설정할 수 있는 다양한 속성을 제공합니다. 다음 코드 스니펫은 PDF 파일에서 각 북마크와 관련된 정보를 가져오는 방법을 보여줍니다.
+[PdfBookmarkEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor) 클래스는 기존 PDF 파일에서 북마크를 조작하는 기능을 제공합니다. 이 클래스는 북마크에 대한 정보를 가져오거나 설정할 수 있는 다양한 속성을 제공합니다. 다음 코드 스니펫은 PDF 파일에서 각 북마크와 관련된 정보를 가져오는 방법을 보여줍니다.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -309,7 +309,7 @@ private static void GetBookmarksFromDocument()
 
 ## 기존 PDF 파일에서 북마크 추출하기
 
-[ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 메서드를 사용하면 PDF 파일에서 북마크를 추출할 수 있습니다. 북마크를 추출하려면 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 PDF 파일을 바인딩해야 합니다. 그 후 [ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 메서드를 호출해야 합니다. [ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 메서드는 [Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks/methods/index) 객체를 반환합니다. 그런 다음 이 북마크를 반복하여 개별 [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) 객체를 가져올 수 있습니다. 마지막으로 [ExportBookmarksToXML](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/exportbookmarkstoxml) 메서드를 사용하여 북마크를 XML 파일로 내보낼 수 있습니다. 다음 코드 스니펫은 북마크를 XML 파일로 내보내는 방법을 보여줍니다.
+[ExtractBookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 메서드를 사용하면 PDF 파일에서 북마크를 추출할 수 있습니다. 북마크를 추출하려면 [PdfBookmarkEditor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor) 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.facade/bindpdf/methods/3) 메서드를 사용하여 PDF 파일을 바인딩해야 합니다. 그 후 [ExtractBookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 메서드를 호출해야 합니다. [ExtractBookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 메서드는 [Bookmarks](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/bookmarks/methods/index) 객체를 반환합니다. 그런 다음 이 북마크를 반복하여 개별 [Bookmark](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/bookmark) 객체를 가져올 수 있습니다. 마지막으로 [ExportBookmarksToXML](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfbookmarkeditor/exportbookmarkstoxml) 메서드를 사용하여 북마크를 XML 파일로 내보낼 수 있습니다. 다음 코드 스니펫은 북마크를 XML 파일로 내보내는 방법을 보여줍니다.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

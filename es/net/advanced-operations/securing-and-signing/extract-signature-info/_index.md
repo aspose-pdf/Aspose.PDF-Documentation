@@ -83,9 +83,9 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Extracción de Imagen del Campo de Firma
 
-Aspose.PDF for .NET admite la función de firmar digitalmente los archivos PDF utilizando la clase [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) y al firmar el documento, también puede establecer una imagen para `SignatureAppearance`. Ahora, esta API también proporciona la capacidad de extraer información de la firma así como la imagen asociada con el campo de firma.
+Aspose.PDF for .NET admite la función de firmar digitalmente los archivos PDF utilizando la clase [SignatureField](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield) y al firmar el documento, también puede establecer una imagen para `SignatureAppearance`. Ahora, esta API también proporciona la capacidad de extraer información de la firma así como la imagen asociada con el campo de firma.
 
-Para extraer información de la firma, hemos introducido el método [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) en la clase SignatureField. Por favor, eche un vistazo al siguiente fragmento de código que demuestra los pasos para extraer una imagen del objeto `SignatureField`:
+Para extraer información de la firma, hemos introducido el método [ExtractImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield/methods/extractimage) en la clase SignatureField. Por favor, eche un vistazo al siguiente fragmento de código que demuestra los pasos para extraer una imagen del objeto `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -132,7 +132,7 @@ A veces puede tener la necesidad de reemplazar solo la imagen de un campo de fir
 
 Aspose.PDF for .NET admite la función de firmar digitalmente los archivos PDF utilizando la clase SignatureField. Actualmente, también podemos determinar la validez del certificado, pero no podemos extraer el certificado completo. La información que se puede extraer es una clave pública, huella digital, emisor, etc.
 
-Para extraer información de la firma, hemos introducido el método [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) en la clase [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield). Por favor, eche un vistazo al siguiente fragmento de código que demuestra los pasos para extraer el certificado del objeto SignatureField:
+Para extraer información de la firma, hemos introducido el método [ExtractCertificate](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) en la clase [SignatureField](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield). Por favor, eche un vistazo al siguiente fragmento de código que demuestra los pasos para extraer el certificado del objeto SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -85,14 +85,14 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Dengan menambahkan tautan ke aplikasi ke dalam dokumen, dimungkinkan untuk menghubungkan ke aplikasi dari dokumen. Ini berguna ketika Anda ingin pembaca melakukan tindakan tertentu pada titik tertentu dalam tutorial, misalnya, atau untuk membuat dokumen yang kaya fitur. Untuk membuat tautan aplikasi:
 
-1. [Buat objek Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Dapatkan [Halaman](https://reference.aspose.com/pdf/net/aspose.pdf/page) yang ingin Anda tambahkan tautan.
-1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) menggunakan objek Halaman dan [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
-1. Atur atribut tautan menggunakan objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
-1. Juga, atur properti Action objek [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction).
-1. Saat membuat objek [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction), tentukan aplikasi yang ingin Anda luncurkan.
-1. Tambahkan tautan ke properti [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations) objek Halaman.
-1. Terakhir, simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) objek Dokumen.
+1. [Buat objek Dokumen](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Dapatkan [Halaman](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) yang ingin Anda tambahkan tautan.
+1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) menggunakan objek Halaman dan [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf/rectangle).
+1. Atur atribut tautan menggunakan objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation).
+1. Juga, atur properti Action objek [LaunchAction](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/launchaction).
+1. Saat membuat objek [LaunchAction](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/launchaction), tentukan aplikasi yang ingin Anda luncurkan.
+1. Tambahkan tautan ke properti [Annotations](https://reference.aspose.com/pdf/id/net/aspose.pdf/page/properties/annotations) objek Halaman.
+1. Terakhir, simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save) objek Dokumen.
 
 Potongan kode berikut menunjukkan cara membuat tautan ke aplikasi dalam file PDF.
 
@@ -151,14 +151,14 @@ private static void CreateLinkAnnotation()
 
 Aspose.PDF for .NET memungkinkan Anda untuk menambahkan tautan ke file PDF eksternal sehingga Anda dapat menghubungkan beberapa dokumen bersama. Untuk membuat tautan dokumen PDF:
 
-1. Pertama, buat objek [Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Kemudian, dapatkan [Halaman](https://reference.aspose.com/pdf/net/aspose.pdf/page) tertentu yang ingin Anda tambahkan tautan.
-1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) menggunakan objek Halaman dan [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
-1. Atur atribut tautan menggunakan objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
-1. Atur properti Action ke objek [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction).
+1. Pertama, buat objek [Dokumen](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Kemudian, dapatkan [Halaman](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) tertentu yang ingin Anda tambahkan tautan.
+1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation) menggunakan objek Halaman dan [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf/rectangle).
+1. Atur atribut tautan menggunakan objek [LinkAnnotation](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/linkannotation).
+1. Atur properti Action ke objek [GoToRemoteAction](https://reference.aspose.com/pdf/id/net/aspose.pdf.annotations/gotoremoteaction).
 1. Saat membuat objek GoToRemoteAction, tentukan file PDF yang harus diluncurkan, serta nomor halaman yang harus dibuka.
 1. Tambahkan tautan ke koleksi Annotations objek Halaman.
-1. Simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) objek Dokumen.
+1. Simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save) objek Dokumen.
 
 Potongan kode berikut menunjukkan cara membuat tautan dokumen PDF dalam file PDF.
 

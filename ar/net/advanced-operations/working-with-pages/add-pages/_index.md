@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Aspose.PDF for .NET API يوفر مرونة كاملة للعمل مع الصفحات في مستند PDF باستخدام C# أو أي لغة .NET أخرى. يحتفظ بجميع صفحات مستند PDF في [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) التي يمكن استخدامها للعمل مع صفحات PDF.
+Aspose.PDF for .NET API يوفر مرونة كاملة للعمل مع الصفحات في مستند PDF باستخدام C# أو أي لغة .NET أخرى. يحتفظ بجميع صفحات مستند PDF في [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection) التي يمكن استخدامها للعمل مع صفحات PDF.
 تتيح لك Aspose.PDF for .NET إدراج صفحة في مستند PDF في أي موقع في الملف بالإضافة إلى إضافة صفحات إلى نهاية ملف PDF.
 توضح هذه القسم كيفية إضافة صفحات إلى PDF باستخدام C#.
 
@@ -93,9 +93,9 @@ Aspose.PDF for .NET API يوفر مرونة كاملة للعمل مع الصف�
 
 لإدراج صفحة فارغة في ملف PDF:
 
-1. أنشئ كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) باستخدام ملف PDF المدخل.
-1. استدعِ طريقة [Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) لمجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) مع الفهرس المحدد.
-1. احفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. أنشئ كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) باستخدام ملف PDF المدخل.
+1. استدعِ طريقة [Insert](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection/methods/insert) لمجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection) مع الفهرس المحدد.
+1. احفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
 
 توضح مقتطفات الكود التالية كيفية إدراج صفحة في ملف PDF.
 
@@ -140,9 +140,9 @@ private static void InsertAnEmptyPageWithParameters()
 
 لإدراج صفحة فارغة في نهاية ملف PDF:
 
-1. أنشئ كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) باستخدام ملف PDF المدخل.
-1. استدعِ طريقة [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) لمجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) بدون أي معلمات.
-1. احفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. أنشئ كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) باستخدام ملف PDF المدخل.
+1. استدعِ طريقة [Add](https://reference.aspose.com/pdf/ar/net/aspose.pdf.pagecollection/add/methods/1) لمجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection) بدون أي معلمات.
+1. احفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
 
 توضح مقتطفات الكود التالية كيفية إدراج صفحة فارغة في نهاية ملف PDF.
 

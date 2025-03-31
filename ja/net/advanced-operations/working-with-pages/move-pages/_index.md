@@ -86,13 +86,13 @@ sitemap:
 
 ページを移動するには、次の手順を実行します。
 
-1. ソースPDFファイルを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのオブジェクトを作成します。
-1. 目的地PDFファイルを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのオブジェクトを作成します。
-1. [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションからページを取得します。
-1. [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1)メソッドを使用して目的地ドキュメントにページを追加します。
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
-1. ソースドキュメントで[Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1)メソッドを使用してページを削除します。
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用してソースPDFを保存します。
+1. ソースPDFファイルを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのオブジェクトを作成します。
+1. 目的地PDFファイルを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのオブジェクトを作成します。
+1. [PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションからページを取得します。
+1. [Add](https://reference.aspose.com/pdf/ja/net/aspose.pdf.pagecollection/add/methods/1)メソッドを使用して目的地ドキュメントにページを追加します。
+1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
+1. ソースドキュメントで[Delete](https://reference.aspose.com/pdf/ja/net/aspose.pdf.pagecollection/delete/methods/1)メソッドを使用してページを削除します。
+1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用してソースPDFを保存します。
 
 次のコードスニペットは、1ページを移動する方法を示しています。
 
@@ -122,15 +122,15 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
 
 ## PDFドキュメントから別のPDFドキュメントへの複数ページの移動
 
-1. ソースPDFファイルを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのオブジェクトを作成します。
-1. 目的地PDFファイルを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのオブジェクトを作成します。
+1. ソースPDFファイルを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのオブジェクトを作成します。
+1. 目的地PDFファイルを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのオブジェクトを作成します。
 1. 移動するページ番号の配列を定義します。
 1. 配列をループします：
-    1. [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションからページを取得します。
-    1. [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1)メソッドを使用して目的地ドキュメントにページを追加します。
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
-1. 配列を使用してソースドキュメントで[Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2)メソッドを使用してページを削除します。
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用してソースPDFを保存します。
+    1. [PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションからページを取得します。
+    1. [Add](https://reference.aspose.com/pdf/ja/net/aspose.pdf.pagecollection/add/methods/1)メソッドを使用して目的地ドキュメントにページを追加します。
+1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
+1. 配列を使用してソースドキュメントで[Delete](https://reference.aspose.com/pdf/ja/net/aspose.pdf.pagecollection/delete/methods/2)メソッドを使用してページを削除します。
+1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用してソースPDFを保存します。
 
 次のコードスニペットは、1つのPDFドキュメントから別のPDFドキュメントに複数のページを移動する方法を示しています。
 
@@ -164,11 +164,11 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 
 ## 現在のPDFドキュメント内の新しい場所にページを移動する
 
-1. ソースPDFファイルを使用して[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのオブジェクトを作成します。
-1. [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションからページを取得します。
-1. 新しい場所（例えば、最後）にページを[Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1)メソッドを使用して追加します。
-1. 前の場所で[Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1)メソッドを使用してページを削除します。
-1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
+1. ソースPDFファイルを使用して[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)クラスのオブジェクトを作成します。
+1. [PageCollection](https://reference.aspose.com/pdf/ja/net/aspose.pdf/pagecollection)コレクションからページを取得します。
+1. 新しい場所（例えば、最後）にページを[Add](https://reference.aspose.com/pdf/ja/net/aspose.pdf.pagecollection/add/methods/1)メソッドを使用して追加します。
+1. 前の場所で[Delete](https://reference.aspose.com/pdf/ja/net/aspose.pdf.pagecollection/delete/methods/1)メソッドを使用してページを削除します。
+1. [Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

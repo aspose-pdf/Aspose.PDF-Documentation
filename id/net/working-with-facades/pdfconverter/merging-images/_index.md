@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Aspose.PDF 21.4 memungkinkan Anda untuk menggabungkan Gambar. [Metode Gabungkan Gambar](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) memeriksa konten dari folder tertentu dan bekerja dengan jenis file yang ditentukan di dalamnya. Saat bekerja dengan penggabungan gambar, kita menentukan 'inputImagesStreams', Format Gambar dan Mode Gabung Gambar (sebagai contoh - vertikal) dari file kita. Kemudian kita menyimpan hasil kita di FileOutputStream.
+Aspose.PDF 21.4 memungkinkan Anda untuk menggabungkan Gambar. [Metode Gabungkan Gambar](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) memeriksa konten dari folder tertentu dan bekerja dengan jenis file yang ditentukan di dalamnya. Saat bekerja dengan penggabungan gambar, kita menentukan 'inputImagesStreams', Format Gambar dan Mode Gabung Gambar (sebagai contoh - vertikal) dari file kita. Kemudian kita menyimpan hasil kita di FileOutputStream.
 
 Ikuti cuplikan kode berikut untuk menyelesaikan tugas Anda:
 

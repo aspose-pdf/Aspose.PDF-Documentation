@@ -85,7 +85,7 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 Este artigo descreve como imprimir um arquivo PDF na impressora padrão usando configurações de impressora e página em C#.
 
-A classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) permite que você imprima um arquivo PDF na impressora padrão. Você precisa criar um objeto PdfViewer e abrir o PDF usando o método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Para especificar diferentes configurações de impressão, use as classes [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) e [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/). Finalmente, chame o método [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) para imprimir o PDF na impressora padrão. O seguinte trecho de código mostra como imprimir PDF na impressora padrão com configurações de impressora e página.
+A classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer) permite que você imprima um arquivo PDF na impressora padrão. Você precisa criar um objeto PdfViewer e abrir o PDF usando o método [BindPdf](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Para especificar diferentes configurações de impressão, use as classes [PageSettings](https://reference.aspose.com/pdf/pt/net/aspose.pdf.printing/pagesettings/) e [PrinterSettings](https://reference.aspose.com/pdf/pt/net/aspose.pdf.printing/printersettings/). Finalmente, chame o método [PrintDocumentWithSettings](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) para imprimir o PDF na impressora padrão. O seguinte trecho de código mostra como imprimir PDF na impressora padrão com configurações de impressora e página.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -261,7 +261,7 @@ private static void PrintWithPrintDialog()
  
 Desde o lançamento 24.4, escolher a fonte de papel pelo tamanho da página PDF na caixa de diálogo de impressão é possível. O próximo trecho de código permite escolher uma bandeja de impressora com base no tamanho da página do PDF.
 
-Essa preferência pode ser ativada e desativada usando a propriedade [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+Essa preferência pode ser ativada e desativada usando a propriedade [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

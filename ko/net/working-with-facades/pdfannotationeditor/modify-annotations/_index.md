@@ -79,9 +79,9 @@ sitemap:
 
 ## 주석 수정
 
-[ModifyAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) 메서드는 주석의 기본 속성인 주제, 수정 날짜, 저자, 주석 색상 및 열기 플래그를 변경할 수 있게 해줍니다. ModifyAnnotations 메서드를 사용하여 저자를 직접 설정할 수도 있습니다. 이 클래스는 주석을 삭제하는 두 개의 오버로드된 메서드도 제공합니다. 첫 번째 메서드인 DeleteAnnotations는 PDF 파일에서 모든 주석을 삭제합니다.  
+[ModifyAnnotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) 메서드는 주석의 기본 속성인 주제, 수정 날짜, 저자, 주석 색상 및 열기 플래그를 변경할 수 있게 해줍니다. ModifyAnnotations 메서드를 사용하여 저자를 직접 설정할 수도 있습니다. 이 클래스는 주석을 삭제하는 두 개의 오버로드된 메서드도 제공합니다. 첫 번째 메서드인 DeleteAnnotations는 PDF 파일에서 모든 주석을 삭제합니다.  
 
-예를 들어, 다음 코드에서는 [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor)를 사용하여 주석의 저자를 변경하는 것을 고려해 보세요.
+예를 들어, 다음 코드에서는 [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor)를 사용하여 주석의 저자를 변경하는 것을 고려해 보세요.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

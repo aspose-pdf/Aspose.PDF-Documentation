@@ -138,7 +138,7 @@ Aspose.PDF for .NET는 ["PDF를 XLSX로 변환하기"](https://products.aspose.a
 [![Aspose.PDF PDF를 Excel로 변환하기 무료 앱](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-PDF 파일을 <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr> 형식으로 변환하기 위해 Aspose.PDF에는 [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)라는 클래스가 있습니다. ExcelSaveOptions 클래스의 객체는 Document.Save(..) 생성자의 두 번째 인수로 전달됩니다.
+PDF 파일을 <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr> 형식으로 변환하기 위해 Aspose.PDF에는 [ExcelSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/excelsaveoptions)라는 클래스가 있습니다. ExcelSaveOptions 클래스의 객체는 Document.Save(..) 생성자의 두 번째 인수로 전달됩니다.
 
 다음 코드 스니펫은 Aspose.PDF for .NET를 사용하여 PDF 파일을 XLS 또는 XLSX 형식으로 변환하는 과정을 보여줍니다.
 
@@ -235,7 +235,7 @@ private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 ### XML 스프레드시트 2003 형식으로 변환하기
 
-20.8 버전부터 Aspose.PDF는 데이터를 저장하기 위한 기본 형식으로 Microsoft Excel Open XML 스프레드시트 2007 파일 형식을 사용합니다. PDF 파일을 XML 스프레드시트 2003 형식으로 변환하기 위해 Aspose.PDF에는 [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) 클래스가 있으며, [Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format) 속성이 있습니다. [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) 클래스의 객체는 [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메서드의 두 번째 인수로 전달됩니다.
+20.8 버전부터 Aspose.PDF는 데이터를 저장하기 위한 기본 형식으로 Microsoft Excel Open XML 스프레드시트 2007 파일 형식을 사용합니다. PDF 파일을 XML 스프레드시트 2003 형식으로 변환하기 위해 Aspose.PDF에는 [ExcelSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/excelsaveoptions) 클래스가 있으며, [Format](https://reference.aspose.com/pdf/ko/net/aspose.pdf/excelsaveoptions/properties/format) 속성이 있습니다. [ExcelSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/excelsaveoptions) 클래스의 객체는 [Document.Save(..)](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save/index) 메서드의 두 번째 인수로 전달됩니다.
 
 다음 코드 스니펫은 PDF 파일을 XLS Excel 2003 XML 형식으로 변환하는 과정을 보여줍니다.
 

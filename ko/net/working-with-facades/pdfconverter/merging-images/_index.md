@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Aspose.PDF 21.4는 이미지를 결합할 수 있습니다. [Merge Images](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) 메서드는 특정 폴더의 내용을 확인하고 그 안의 지정된 유형의 파일로 작업합니다. 이미지를 병합할 때 'inputImagesStreams', 이미지 형식 및 이미지 병합 모드(예: 수직)를 지정합니다. 그런 다음 결과를 FileOutputStream에 저장합니다.
+Aspose.PDF 21.4는 이미지를 결합할 수 있습니다. [Merge Images](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) 메서드는 특정 폴더의 내용을 확인하고 그 안의 지정된 유형의 파일로 작업합니다. 이미지를 병합할 때 'inputImagesStreams', 이미지 형식 및 이미지 병합 모드(예: 수직)를 지정합니다. 그런 다음 결과를 FileOutputStream에 저장합니다.
 
 다음 코드 스니펫을 따라 작업을 해결하세요:
 

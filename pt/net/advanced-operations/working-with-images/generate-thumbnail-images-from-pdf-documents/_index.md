@@ -204,7 +204,7 @@ Aspose.PDF tem benefícios distintos:
 - Você não precisa ter o Adobe Acrobat instalado em seu sistema para trabalhar com arquivos PDF.
 - Usar Aspose.PDF for .NET é simples e fácil de entender em comparação com a Automação do Acrobat.
 
-Se precisarmos converter páginas PDF em JPEGs, o namespace [Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices) fornece uma classe chamada [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) para renderizar páginas PDF em imagens JPEG. Por favor, dê uma olhada no seguinte trecho de código.
+Se precisarmos converter páginas PDF em JPEGs, o namespace [Aspose.PDF.Devices](https://reference.aspose.com/pdf/pt/net/aspose.pdf.devices) fornece uma classe chamada [JpegDevice](https://reference.aspose.com/pdf/pt/net/aspose.pdf.devices/jpegdevice) para renderizar páginas PDF em imagens JPEG. Por favor, dê uma olhada no seguinte trecho de código.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

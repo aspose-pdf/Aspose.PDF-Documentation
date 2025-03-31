@@ -93,7 +93,7 @@ EPUB는 재흐름 가능한 콘텐츠를 위해 설계되었으며, 이는 EPUB 
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-Aspose.PDF for .NET는 PDF 문서를 EPUB 형식으로 변환하는 기능도 지원합니다. Aspose.PDF for .NET에는 EPUB 파일을 생성하기 위해 [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메서드의 두 번째 인수로 사용할 수 있는 EpubSaveOptions라는 클래스가 있습니다.
+Aspose.PDF for .NET는 PDF 문서를 EPUB 형식으로 변환하는 기능도 지원합니다. Aspose.PDF for .NET에는 EPUB 파일을 생성하기 위해 [`Document.Save(..)`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save/index) 메서드의 두 번째 인수로 사용할 수 있는 EpubSaveOptions라는 클래스가 있습니다.
 다음 코드 스니펫을 사용하여 C#으로 이 요구 사항을 달성해 보세요.
 
 ```csharp
@@ -130,7 +130,7 @@ Aspose.PDF for .NET는 온라인 무료 애플리케이션 ["PDF to LaTeX"](http
 [![Aspose.PDF PDF를 LaTeX/TeX로 변환하는 무료 앱](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-PDF 파일을 TeX로 변환하기 위해 Aspose.PDF는 변환 과정에서 임시 이미지를 저장하기 위한 OutDirectoryPath 속성을 제공하는 [LaTeXSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions) 클래스를 가지고 있습니다.
+PDF 파일을 TeX로 변환하기 위해 Aspose.PDF는 변환 과정에서 임시 이미지를 저장하기 위한 OutDirectoryPath 속성을 제공하는 [LaTeXSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/latexsaveoptions) 클래스를 가지고 있습니다.
 
 다음 코드 스니펫은 C#으로 PDF 파일을 TEX 형식으로 변환하는 과정을 보여줍니다.
 
@@ -165,7 +165,7 @@ private static void ConvertPDFtoTeX()
 
 ### 전체 PDF 문서를 텍스트 파일로 변환
 
-[TextAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber) 클래스의 [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber/methods/visit/index) 메서드를 사용하여 PDF 문서를 TXT 파일로 변환할 수 있습니다.
+[TextAbsorber](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textabsorber) 클래스의 [Visit](https://reference.aspose.com/pdf/ko/net/aspose.pdf.text/textabsorber/methods/visit/index) 메서드를 사용하여 PDF 문서를 TXT 파일로 변환할 수 있습니다.
 
 다음 코드 스니펫은 모든 페이지에서 텍스트를 추출하는 방법을 설명합니다.
 
@@ -239,7 +239,7 @@ Aspose.PDF for .NET는 온라인 무료 애플리케이션 ["PDF to XPS"](https:
 
 XPS 파일 형식은 주로 Microsoft Corporation의 XML Paper Specification과 관련이 있습니다. XML Paper Specification(XPS)은 이전에 Metro라는 코드명을 가지고 있었으며, 차세대 인쇄 경로(NGPP) 마케팅 개념을 포함하는 Microsoft의 문서 생성 및 보기 통합 이니셔티브입니다.
 
-PDF 파일을 XPS로 변환하기 위해 Aspose.PDF는 [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) 클래스를 가지고 있으며, 이는 XPS 파일을 생성하기 위해 [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 메서드의 두 번째 인수로 사용됩니다.
+PDF 파일을 XPS로 변환하기 위해 Aspose.PDF는 [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) 클래스를 가지고 있으며, 이는 XPS 파일을 생성하기 위해 [Document.Save(..)](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save/index) 메서드의 두 번째 인수로 사용됩니다.
 
 24.2 릴리스 이후, Aspose.PDF는 결과 XPS에서 텍스트 선택 가능성을 유지하면서 검색 가능한 PDF를 XPS로 변환하는 기능을 구현했습니다. 텍스트를 보존하려면 XpsSaveOptions.SaveTransparentTexts 속성을 true로 설정해야 합니다.
 

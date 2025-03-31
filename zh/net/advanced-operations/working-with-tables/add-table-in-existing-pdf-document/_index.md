@@ -80,7 +80,7 @@ sitemap:
 
 ## 使用 C# 创建表格
 
-在处理 PDF 文档时，表格非常重要。它们提供了以系统化方式显示信息的良好功能。Aspose.PDF 命名空间包含名为 [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table)、[Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) 和 [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) 的类，这些类提供了在从头生成 PDF 文档时创建表格的功能。
+在处理 PDF 文档时，表格非常重要。它们提供了以系统化方式显示信息的良好功能。Aspose.PDF 命名空间包含名为 [Table](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table)、[Cell](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cell) 和 [Row](https://reference.aspose.com/pdf/zh/net/aspose.pdf/row) 的类，这些类提供了在从头生成 PDF 文档时创建表格的功能。
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
@@ -140,7 +140,7 @@ private static void AddTable()
 
 ### 表格中的 ColSpan 和 RowSpan
 
-Aspose.PDF for .NET 提供了 [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) 属性以合并表格中的列，以及 [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) 属性以合并行。
+Aspose.PDF for .NET 提供了 [ColSpan](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cell/properties/colspan) 属性以合并表格中的列，以及 [RowSpan](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cell/properties/rowspan) 属性以合并行。
 
 我们在创建表格单元格的 `Cell` 对象上使用 `ColSpan` 或 `RowSpan` 属性。应用所需属性后，创建的单元格可以添加到表格中。
 
@@ -225,11 +225,11 @@ private static void AddTableRowColSpan()
 
 ### 边框
 
-要设置 Table、[Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) 和 [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) 对象的边框，请使用 Table.Border、Row.Border 和 Cell.Border 属性。单元格边框也可以使用 [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) 或 Row 类的 DefaultCellBorder 属性进行设置。所有与边框相关的属性都分配给 Row 类的一个实例，该实例是通过调用其构造函数创建的。Row 类有许多重载，几乎接受所有所需的参数以自定义边框。
+要设置 Table、[Row](https://reference.aspose.com/pdf/zh/net/aspose.pdf/row) 和 [Cell](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cell) 对象的边框，请使用 Table.Border、Row.Border 和 Cell.Border 属性。单元格边框也可以使用 [Table](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table) 或 Row 类的 DefaultCellBorder 属性进行设置。所有与边框相关的属性都分配给 Row 类的一个实例，该实例是通过调用其构造函数创建的。Row 类有许多重载，几乎接受所有所需的参数以自定义边框。
 
 ### 边距或填充
 
-单元格填充可以使用 Table 类的 [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) 属性进行管理。所有与填充相关的属性都分配给 [MarginInfo](https://reference.aspose.com/pdf/net/aspose.pdf/margininfo) 类的一个实例，该实例接受有关 `Left`、`Right`、`Top` 和 `Bottom` 参数的信息以创建自定义边距。
+单元格填充可以使用 Table 类的 [DefaultCellPadding](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table/properties/defaultcellpadding) 属性进行管理。所有与填充相关的属性都分配给 [MarginInfo](https://reference.aspose.com/pdf/zh/net/aspose.pdf/margininfo) 类的一个实例，该实例接受有关 `Left`、`Right`、`Top` 和 `Bottom` 参数的信息以创建自定义边距。
 
 在以下示例中，单元格边框的宽度设置为 0.1 点，表格边框的宽度设置为 1 点，单元格填充设置为 5 点。
 
@@ -369,7 +369,7 @@ private static void AddAutoFitToWindow()
 
 ### 获取表格宽度
 
-有时，需要动态获取表格宽度。Aspose.PDF.Table 类有一个 [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) 方法用于此目的。例如，您没有明确设置表格列宽，并将 [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) 设置为 AutoFitToContent。在这种情况下，您可以按如下方式获取表格宽度。
+有时，需要动态获取表格宽度。Aspose.PDF.Table 类有一个 [GetWidth](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table/methods/getwidth) 方法用于此目的。例如，您没有明确设置表格列宽，并将 [ColumnAdjustment](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table/properties/columnadjustment) 设置为 AutoFitToContent。在这种情况下，您可以按如下方式获取表格宽度。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -561,7 +561,7 @@ private static void InsertPageBreak()
 
 ### 示例：如何使用 C# 在新页面上渲染表格
 
-要在新页面上渲染表格，请使用 BaseParagraph 类中的 [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) 属性。以下代码片段展示了如何操作。
+要在新页面上渲染表格，请使用 BaseParagraph 类中的 [IsInNewPage](https://reference.aspose.com/pdf/zh/net/aspose.pdf/baseparagraph/properties/isinnewpage) 属性。以下代码片段展示了如何操作。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

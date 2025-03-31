@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Los marcadores te dan la opción de hacer un seguimiento/enlace a una página específica dentro del documento PDF. La clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) en el [espacio de nombres Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) proporciona una función que te permite crear tu propio marcador de una manera sofisticada pero intuitiva dentro de un archivo PDF existente, en una página dada o en todas las páginas.
+Los marcadores te dan la opción de hacer un seguimiento/enlace a una página específica dentro del documento PDF. La clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/PdfContentEditor) en el [espacio de nombres Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) proporciona una función que te permite crear tu propio marcador de una manera sofisticada pero intuitiva dentro de un archivo PDF existente, en una página dada o en todas las páginas.
 
 ## Detalles de implementación
 

@@ -77,7 +77,7 @@ draft: false
 
 ## Ekstrak Gambar dari Cap Gambar
 
-Kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) memungkinkan Anda untuk mengekstrak gambar dari cap dalam file PDF. Pertama, Anda perlu membuat objek dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Setelah itu, panggil metode [GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) untuk mendapatkan array objek StampInfo dari halaman tertentu dalam file PDF. Kemudian Anda dapat mendapatkan gambar dari StampInfo menggunakan properti StampInfo.Image. Setelah Anda mendapatkan gambar, Anda dapat menyimpan gambar tersebut atau bekerja dengan berbagai properti gambar. Potongan kode berikut menunjukkan cara mengekstrak gambar dari cap gambar.
+Kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) memungkinkan Anda untuk mengekstrak gambar dari cap dalam file PDF. Pertama, Anda perlu membuat objek dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.facade/bindpdf/methods/3). Setelah itu, panggil metode [GetStamps](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) untuk mendapatkan array objek StampInfo dari halaman tertentu dalam file PDF. Kemudian Anda dapat mendapatkan gambar dari StampInfo menggunakan properti StampInfo.Image. Setelah Anda mendapatkan gambar, Anda dapat menyimpan gambar tersebut atau bekerja dengan berbagai properti gambar. Potongan kode berikut menunjukkan cara mengekstrak gambar dari cap gambar.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -136,7 +136,7 @@ private static void ExtractImageFromStamp()
 
 ## Ubah Posisi Cap dalam file PDF
 
-Kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) memungkinkan Anda untuk mengubah posisi cap dalam file PDF. Pertama, Anda perlu membuat objek dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Setelah itu, panggil metode [MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) dengan indeks cap dan posisi baru di halaman tertentu dalam file PDF. Kemudian, Anda dapat menyimpan file yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save). Potongan kode berikut menunjukkan cara memindahkan cap di halaman tertentu.
+Kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) memungkinkan Anda untuk mengubah posisi cap dalam file PDF. Pertama, Anda perlu membuat objek dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor) dan mengikat file PDF input menggunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.facade/bindpdf/methods/3). Setelah itu, panggil metode [MoveStamp](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) dengan indeks cap dan posisi baru di halaman tertentu dalam file PDF. Kemudian, Anda dapat menyimpan file yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save). Potongan kode berikut menunjukkan cara memindahkan cap di halaman tertentu.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void ChangeStampPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-Selain itu, Anda dapat menggunakan metode [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) untuk memindahkan cap tertentu dengan menggunakan StampId.
+Selain itu, Anda dapat menggunakan metode [MoveStampById](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) untuk memindahkan cap tertentu dengan menggunakan StampId.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

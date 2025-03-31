@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) класс позволяет вам установить информацию о файле PDF. Вам нужно создать объект класса [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) и затем установить различные свойства, специфичные для файла, такие как Автор, Заголовок, Ключевое слово и Создатель и т.д. Наконец, сохраните обновленный PDF файл, используя метод [SaveNewInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) объекта [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo).
+[PdfFileInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileinfo) класс позволяет вам установить информацию о файле PDF. Вам нужно создать объект класса [PdfFileInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileinfo) и затем установить различные свойства, специфичные для файла, такие как Автор, Заголовок, Ключевое слово и Создатель и т.д. Наконец, сохраните обновленный PDF файл, используя метод [SaveNewInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) объекта [PdfFileInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileinfo).
 
 Следующий фрагмент кода показывает, как установить информацию о PDF файле.
 
@@ -103,7 +103,7 @@ private static void SetPdfInfo()
 
 ## Установить метаинформацию
 
-[SetMetaInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) метод позволяет вам добавлять любую информацию. В нашем примере мы добавили поле. Проверьте следующий фрагмент кода:
+[SetMetaInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) метод позволяет вам добавлять любую информацию. В нашем примере мы добавили поле. Проверьте следующий фрагмент кода:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

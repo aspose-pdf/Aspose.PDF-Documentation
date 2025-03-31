@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Se você deseja excluir um número de páginas do arquivo PDF que está no disco, pode usar a sobrecarga do método [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) que aceita os seguintes três parâmetros: caminho do arquivo de entrada, array de números de páginas a serem excluídas e caminho do arquivo PDF de saída. O segundo parâmetro é um array de inteiros representando todas as páginas que precisam ser excluídas. As páginas especificadas são removidas do arquivo de entrada e o resultado é salvo como arquivo de saída. O seguinte trecho de código mostra como excluir páginas PDF usando caminhos de arquivos.
+Se você deseja excluir um número de páginas do arquivo PDF que está no disco, pode usar a sobrecarga do método [Delete](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) que aceita os seguintes três parâmetros: caminho do arquivo de entrada, array de números de páginas a serem excluídas e caminho do arquivo PDF de saída. O segundo parâmetro é um array de inteiros representando todas as páginas que precisam ser excluídas. As páginas especificadas são removidas do arquivo de entrada e o resultado é salvo como arquivo de saída. O seguinte trecho de código mostra como excluir páginas PDF usando caminhos de arquivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void DeletePages()
 
 ## Excluir Páginas PDF Usando Streams
 
-O método [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) também fornece uma sobrecarga que permite excluir as páginas do arquivo PDF de entrada, enquanto ambos os arquivos de entrada e saída estão nos streams. Esta sobrecarga aceita os seguintes três parâmetros: stream de entrada, array de inteiros das páginas PDF a serem excluídas e stream de saída. O seguinte trecho de código mostra como excluir páginas PDF usando streams.
+O método [Delete](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) também fornece uma sobrecarga que permite excluir as páginas do arquivo PDF de entrada, enquanto ambos os arquivos de entrada e saída estão nos streams. Esta sobrecarga aceita os seguintes três parâmetros: stream de entrada, array de inteiros das páginas PDF a serem excluídas e stream de saída. O seguinte trecho de código mostra como excluir páginas PDF usando streams.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -168,7 +168,7 @@ private static void LoadingFontFromStream()
 
 ## TextParagraphを使用してテキストを追加
 
-次のコードスニペットは、[TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph)クラスを使用してPDFドキュメントにテキストを追加する方法を示しています。
+次のコードスニペットは、[TextParagraph](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textparagraph)クラスを使用してPDFドキュメントにテキストを追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void AddTextWithTextParagraph()
 
 ## TextSegmentにハイパーリンクを追加
 
-PDFページは1つ以上のTextFragmentオブジェクトで構成される場合があり、各TextFragmentオブジェクトには1つ以上のTextSegmentインスタンスを持つことができます。TextSegmentにハイパーリンクを設定するには、[TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment)クラスのHyperlinkプロパティを使用し、Aspose.Pdf.WebHyperlinkインスタンスのオブジェクトを提供します。次のコードスニペットを使用してこの要件を達成してください。
+PDFページは1つ以上のTextFragmentオブジェクトで構成される場合があり、各TextFragmentオブジェクトには1つ以上のTextSegmentインスタンスを持つことができます。TextSegmentにハイパーリンクを設定するには、[TextSegment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textsegment)クラスのHyperlinkプロパティを使用し、Aspose.Pdf.WebHyperlinkインスタンスのオブジェクトを提供します。次のコードスニペットを使用してこの要件を達成してください。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -291,7 +291,7 @@ private static void UseOTFFont()
 
 Aspose.Pdf.Generator.Textクラスには、PDFファイルにHTMLタグ/コンテンツを追加できるIsHtmlTagSupportedというプロパティがあります。追加されたコンテンツは、単純なテキスト文字列として表示されるのではなく、ネイティブHTMLタグでレンダリングされます。Aspose.Pdf名前空間の新しいドキュメントオブジェクトモデル（DOM）で同様の機能をサポートするために、HtmlFragmentクラスが導入されました。
 
-[HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment)インスタンスを使用して、PDFファイル内に配置するHTMLコンテンツを指定できます。TextFragmentと同様に、HtmlFragmentは段落レベルのオブジェクトであり、Pageオブジェクトの段落コレクションに追加できます。次のコードスニペットは、DOMアプローチを使用してPDFファイル内にHTMLコンテンツを配置する手順を示しています。
+[HtmlFragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf/htmlfragment)インスタンスを使用して、PDFファイル内に配置するHTMLコンテンツを指定できます。TextFragmentと同様に、HtmlFragmentは段落レベルのオブジェクトであり、Pageオブジェクトの段落コレクションに追加できます。次のコードスニペットは、DOMアプローチを使用してPDFファイル内にHTMLコンテンツを配置する手順を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -838,7 +838,7 @@ private static void CreateMultiColumnPdf()
 
 タブストップは、タブを押すための停止ポイントです。ワードプロセッシングでは、各行には定期的な間隔で配置されたタブストップの数があります（たとえば、毎インチ半）。ただし、ほとんどのワードプロセッサでは、タブストップを任意の場所に設定できるため、変更できます。タブキーを押すと、カーソルまたは挿入ポイントは次のタブストップにジャンプしますが、タブストップ自体は見えません。タブストップはテキストファイルには存在しませんが、ワードプロセッサはそれらを追跡して、タブキーに正しく反応できるようにします。
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/)は、PDFドキュメントでカスタムタブストップを使用することを許可します。Aspose.Pdf.Text.TabStopクラスは、[TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)クラスでカスタムタブストップを設定するために使用されます。
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/)は、PDFドキュメントでカスタムタブストップを使用することを許可します。Aspose.Pdf.Text.TabStopクラスは、[TextFragment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textfragment)クラスでカスタムタブストップを設定するために使用されます。
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/)は、TabLeaderTypeという列挙型としていくつかの事前定義されたタブリーダータイプも提供しており、その事前定義された値と説明は以下の通りです：
 
@@ -944,7 +944,7 @@ private static void AddTransparentText()
 
 ## フォントの行間隔を指定する
 
-すべてのフォントには、同じサイズのタイプの行間の意図された距離の高さを持つ抽象的な正方形があります。この正方形はem正方形と呼ばれ、グリフのアウトラインが定義されるデザイングリッドです。入力フォントの多くの文字には、フォントのem正方形の境界を超えて配置されたポイントがあります。そのため、フォントを正しく表示するには、特別な設定の使用が必要です。TextFragmentオブジェクトには、TextState.FormattingOptionsプロパティを介してアクセスできる一連のテキストフォーマットオプションがあります。このパスの最後のプロパティは、Aspose.Pdf.Text.TextFormattingOptions型のプロパティです。このクラスには、特定のフォント（例：入力フォント"HPSimplified.ttf"）用に設計された列挙型[LineSpacingMode](https://reference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode)があります。また、[Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions)クラスには、LineSpacingMode型の[LineSpacing](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing)プロパティがあります。LineSpacingをLineSpacingMode.FullSizeに設定するだけです。フォントを正しく表示するためのコードスニペットは次のようになります：
+すべてのフォントには、同じサイズのタイプの行間の意図された距離の高さを持つ抽象的な正方形があります。この正方形はem正方形と呼ばれ、グリフのアウトラインが定義されるデザイングリッドです。入力フォントの多くの文字には、フォントのem正方形の境界を超えて配置されたポイントがあります。そのため、フォントを正しく表示するには、特別な設定の使用が必要です。TextFragmentオブジェクトには、TextState.FormattingOptionsプロパティを介してアクセスできる一連のテキストフォーマットオプションがあります。このパスの最後のプロパティは、Aspose.Pdf.Text.TextFormattingOptions型のプロパティです。このクラスには、特定のフォント（例：入力フォント"HPSimplified.ttf"）用に設計された列挙型[LineSpacingMode](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text.textformattingoptions/linespacingmode)があります。また、[Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textformattingoptions)クラスには、LineSpacingMode型の[LineSpacing](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/textformattingoptions/properties/linespacing)プロパティがあります。LineSpacingをLineSpacingMode.FullSizeに設定するだけです。フォントを正しく表示するためのコードスニペットは次のようになります：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -993,7 +993,7 @@ private static void SpecifyLineSpacing()
 
 ## テキスト幅を動的に取得する
 
-時には、テキスト幅を動的に取得する必要があります。Aspose.PDF for .NETには、文字列の幅を測定するための2つのメソッドが含まれています。Aspose.Pdf.Text.FontまたはAspose.Pdf.Text.TextStateクラスの[MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring)メソッドを呼び出すことができます（または両方）。以下のコードスニペットは、この機能を使用する方法を示しています。
+時には、テキスト幅を動的に取得する必要があります。Aspose.PDF for .NETには、文字列の幅を測定するための2つのメソッドが含まれています。Aspose.Pdf.Text.FontまたはAspose.Pdf.Text.TextStateクラスの[MeasureString](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/font/methods/measurestring)メソッドを呼び出すことができます（または両方）。以下のコードスニペットは、この機能を使用する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

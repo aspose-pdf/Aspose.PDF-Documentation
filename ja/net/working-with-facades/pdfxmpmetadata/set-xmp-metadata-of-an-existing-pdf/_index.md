@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-PDFファイルにXMPメタデータを設定するには、[PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata)オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index)メソッドを使用してPDFファイルをバインドする必要があります。[PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata)クラスの[Add](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata/methods/add/index)メソッドを使用して、さまざまなプロパティを追加できます。最後に、[PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata)クラスの[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドを呼び出します。以下のコードスニペットは、PDFファイルにXMPメタデータを追加する方法を示しています。
+PDFファイルにXMPメタデータを設定するには、[PdfXmpMetadata](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfxmpmetadata)オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/facade/methods/bindpdf/index)メソッドを使用してPDFファイルをバインドする必要があります。[PdfXmpMetadata](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfxmpmetadata)クラスの[Add](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfxmpmetadata/methods/add/index)メソッドを使用して、さまざまなプロパティを追加できます。最後に、[PdfXmpMetadata](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfxmpmetadata)クラスの[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドを呼び出します。以下のコードスニペットは、PDFファイルにXMPメタデータを追加する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

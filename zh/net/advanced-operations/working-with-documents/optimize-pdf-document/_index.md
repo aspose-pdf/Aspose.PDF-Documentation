@@ -100,9 +100,9 @@ PDF 文档有时可能包含额外的数据。减少 PDF 文件的大小将帮�
 
 优化，或称为网络线性化，指的是使 PDF 文件适合使用网页浏览器在线浏览的过程。要为网页显示优化文件：
 
-1. 在 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象中打开输入文档。
-1. 使用 [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) 方法。
-1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存优化后的文档。
+1. 在 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象中打开输入文档。
+1. 使用 [Optimize](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/optimize) 方法。
+1. 使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存优化后的文档。
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
@@ -129,7 +129,7 @@ private static void OptimizeDocument()
 
 ## 减少 PDF 大小
 
-[OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) 方法允许您通过剔除不必要的信息来减少文档大小。默认情况下，此方法的工作方式如下：
+[OptimizeResources()](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/optimizeresources) 方法允许您通过剔除不必要的信息来减少文档大小。默认情况下，此方法的工作方式如下：
 
 - 删除文档页面上未使用的资源。
 - 将相等的资源合并为一个对象。
@@ -158,11 +158,11 @@ private static void ShrinkDocument()
 
 ## 优化策略管理
 
-我们还可以自定义优化策略。目前，[OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) 方法使用 5 种技术。这些技术可以通过带有 [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions) 参数的 OptimizeResources() 方法应用。
+我们还可以自定义优化策略。目前，[OptimizeResources()](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/optimizeresources/methods/1) 方法使用 5 种技术。这些技术可以通过带有 [OptimizationOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf.optimization/optimizationoptions) 参数的 OptimizeResources() 方法应用。
 
 ### 缩小或压缩所有图像
 
-我们有两种处理图像的方法：降低图像质量和/或更改其分辨率。在任何情况下，都应该应用 [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions)。在以下示例中，我们通过将 [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) 降低到 50 来缩小图像。
+我们有两种处理图像的方法：降低图像质量和/或更改其分辨率。在任何情况下，都应该应用 [ImageCompressionOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf.optimization/imagecompressionoptions)。在以下示例中，我们通过将 [ImageQuality](https://reference.aspose.com/pdf/zh/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) 降低到 50 来缩小图像。
 
 `ImageQuality` 的工作方式类似于 JPEG 质量，其中值 0 是最低的，值 100 是最高的。
 
@@ -230,7 +230,7 @@ private static void ResizeImages()
 }
 ```
 
-另一个重要问题是执行时间。但同样，我们也可以管理此设置。目前，我们可以使用两种算法 - 标准和快速。要控制执行时间，我们应该设置 [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) 属性。以下代码片段演示了快速算法：
+另一个重要问题是执行时间。但同样，我们也可以管理此设置。目前，我们可以使用两种算法 - 标准和快速。要控制执行时间，我们应该设置 [Version](https://reference.aspose.com/pdf/zh/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) 属性。以下代码片段演示了快速算法：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -356,7 +356,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 }
 ```
 
-此外，我们可以使用 [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) 设置。如果将此属性设置为 true，则在为相同页面优化文档时，页面内容将被重用。
+此外，我们可以使用 [AllowReusePageContent](https://reference.aspose.com/pdf/zh/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) 设置。如果将此属性设置为 true，则在为相同页面优化文档时，页面内容将被重用。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

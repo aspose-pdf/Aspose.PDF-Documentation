@@ -74,7 +74,7 @@ lastmod: "2021-06-05"
 }
 </script>
 
-[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)の抽出機能の主なカテゴリの1つは、添付ファイルの抽出です。このカテゴリは、添付ファイルを抽出するだけでなく、添付ファイルに関連する情報を提供するメソッドのセットを提供します。すなわち、[GetAttachmentInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getattachmentinfo)および[GetAttachName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getattachnames)メソッドは、それぞれ添付ファイル情報と添付ファイル名を提供します。添付ファイルを抽出し、取得するためには、[ExtractAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractattachment)および[GetAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getattachment)メソッドを使用します。
+[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)の抽出機能の主なカテゴリの1つは、添付ファイルの抽出です。このカテゴリは、添付ファイルを抽出するだけでなく、添付ファイルに関連する情報を提供するメソッドのセットを提供します。すなわち、[GetAttachmentInfo](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor/methods/getattachmentinfo)および[GetAttachName](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor/methods/getattachnames)メソッドは、それぞれ添付ファイル情報と添付ファイル名を提供します。添付ファイルを抽出し、取得するためには、[ExtractAttachment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor/methods/extractattachment)および[GetAttachment](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfextractor/methods/getattachment)メソッドを使用します。
 
 以下のコードスニペットは、PdfExtractorメソッドの使用方法を示しています：
 

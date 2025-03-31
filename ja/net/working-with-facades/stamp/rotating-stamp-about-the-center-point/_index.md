@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)は、[Aspose.PDF for .NET](/pdf/ja/net/)で既存のPDFファイルにスタンプを追加することを可能にします。時には、ユーザーがスタンプを回転させる必要があります。この記事では、スタンプを中心点の周りで回転させる方法を見ていきます。
+[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades)は、[Aspose.PDF for .NET](/pdf/ja/net/)で既存のPDFファイルにスタンプを追加することを可能にします。時には、ユーザーがスタンプを回転させる必要があります。この記事では、スタンプを中心点の周りで回転させる方法を見ていきます。
 
 {{% /alert %}}
 
 ## 実装の詳細
 
-[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスは、PDFファイルに透かしを追加することを可能にします。 [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.stamp/bindimage/methods/1)メソッドを使用して、スタンプとして追加する画像を指定できます。[SetOrigin](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setorigin)メソッドを使用すると、追加されたスタンプの原点を設定できます。この原点は、スタンプの左下の座標です。また、[SetImageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setimagesize)メソッドを使用して画像のサイズを設定することもできます。
+[Stamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf/stamp)クラスは、PDFファイルに透かしを追加することを可能にします。 [BindImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.stamp/bindimage/methods/1)メソッドを使用して、スタンプとして追加する画像を指定できます。[SetOrigin](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/stamp/methods/setorigin)メソッドを使用すると、追加されたスタンプの原点を設定できます。この原点は、スタンプの左下の座標です。また、[SetImageSize](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/stamp/methods/setimagesize)メソッドを使用して画像のサイズを設定することもできます。
 
-次に、スタンプをスタンプの中心の周りで回転させる方法を見ていきます。[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスは、Rotationという名前のプロパティを提供します。このプロパティは、スタンプコンテンツの回転を0から360の範囲で設定または取得します。0から360の任意の回転値を指定できます。回転値を指定することで、スタンプを中心点の周りで回転させることができます。StampがStamp型のオブジェクトである場合、回転値はaStamp.Rotation = 90として指定できます。この場合、スタンプはスタンプコンテンツの中心で90度回転します。以下のコードスニペットは、スタンプを中心点の周りで回転させる方法を示しています：
+次に、スタンプをスタンプの中心の周りで回転させる方法を見ていきます。[Stamp](https://reference.aspose.com/pdf/ja/net/aspose.pdf/stamp)クラスは、Rotationという名前のプロパティを提供します。このプロパティは、スタンプコンテンツの回転を0から360の範囲で設定または取得します。0から360の任意の回転値を指定できます。回転値を指定することで、スタンプを中心点の周りで回転させることができます。StampがStamp型のオブジェクトである場合、回転値はaStamp.Rotation = 90として指定できます。この場合、スタンプはスタンプコンテンツの中心で90度回転します。以下のコードスニペットは、スタンプを中心点の周りで回転させる方法を示しています：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

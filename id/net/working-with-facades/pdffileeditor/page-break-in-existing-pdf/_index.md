@@ -75,11 +75,11 @@ draft: false
 }
 </script>
 
-Sebagai tata letak default, konten di dalam file PDF ditambahkan dalam tata letak dari Kiri-Atas ke Kanan-Bawah. Setelah konten melebihi batas bawah halaman, pemisahan halaman terjadi. Namun, Anda mungkin menemui kebutuhan untuk menyisipkan pemisahan halaman tergantung pada kebutuhan. Sebuah metode bernama AddPageBreak(...) ditambahkan dalam kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) untuk memenuhi kebutuhan ini.
+Sebagai tata letak default, konten di dalam file PDF ditambahkan dalam tata letak dari Kiri-Atas ke Kanan-Bawah. Setelah konten melebihi batas bawah halaman, pemisahan halaman terjadi. Namun, Anda mungkin menemui kebutuhan untuk menyisipkan pemisahan halaman tergantung pada kebutuhan. Sebuah metode bernama AddPageBreak(...) ditambahkan dalam kelas [PdfFileEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor) untuk memenuhi kebutuhan ini.
 
-1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
-1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
-1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
+1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
+1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
+1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
 
 - src adalah dokumen sumber/jalur ke dokumen/aliran dengan dokumen sumber.
 - dest adalah dokumen tujuan/jalur di mana dokumen akan disimpan/aliran di mana dokumen akan disimpan.

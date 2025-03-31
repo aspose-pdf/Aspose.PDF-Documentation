@@ -109,8 +109,8 @@ O seguinte exemplo de código C# mostra como converter um documento HTML para um
 
 <a name="csharp-html-to-pdf"><strong>Passos: Converter HTML para PDF em C#</strong></a>
 
-1. Crie uma instância da classe [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/).
-2. Inicialize o objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/).
+1. Crie uma instância da classe [HtmlLoadOptions](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlloadoptions/).
+2. Inicialize o objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/).
 3. Salve o documento PDF de saída chamando o método **Document.Save()**.
 
 ```csharp
@@ -146,7 +146,7 @@ O mecanismo de conversão HTML possui várias opções que nos permitem controla
 
 ### Suporte a Consultas de Mídia
 
-Consultas de mídia são uma técnica popular para fornecer uma folha de estilo personalizada para diferentes dispositivos. Podemos definir o tipo de dispositivo usando a propriedade [`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype).
+Consultas de mídia são uma técnica popular para fornecer uma folha de estilo personalizada para diferentes dispositivos. Podemos definir o tipo de dispositivo usando a propriedade [`HtmlMediaType`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void ConvertHTMLtoPDFAdvancedMediaType()
 
 ### Habilitar (desabilitar) incorporação de fontes
 
-Páginas HTML frequentemente usam fontes (por exemplo, fontes da pasta local, Google Fonts, etc). Também podemos controlar a incorporação de fontes em um documento usando a propriedade [`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts).
+Páginas HTML frequentemente usam fontes (por exemplo, fontes da pasta local, Google Fonts, etc). Também podemos controlar a incorporação de fontes em um documento usando a propriedade [`IsEmbedFonts`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlloadoptions/properties/isembedfonts).
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ Páginas HTML frequentemente usam fontes (por exemplo, fontes da pasta local, Go
 
 ### Gerenciar o carregamento de recursos externos
 
-O mecanismo de conversão fornece um mecanismo que permite controlar o carregamento de certos recursos associados ao documento HTML. A classe [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) possui a propriedade [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) com a qual podemos definir o comportamento do carregador de recursos. Suponha que precisamos substituir todas as imagens PNG por uma única imagem `test.jpg` e substituir a URL externa por interna para outros recursos. Para fazer isso, podemos definir um carregador personalizado `SamePictureLoader` e apontar [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) para esse nome.
+O mecanismo de conversão fornece um mecanismo que permite controlar o carregamento de certos recursos associados ao documento HTML. A classe [`HtmlLoadOptions`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlloadoptions) possui a propriedade [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) com a qual podemos definir o comportamento do carregador de recursos. Suponha que precisamos substituir todas as imagens PNG por uma única imagem `test.jpg` e substituir a URL externa por interna para outros recursos. Para fazer isso, podemos definir um carregador personalizado `SamePictureLoader` e apontar [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) para esse nome.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -261,7 +261,7 @@ Ao converter uma página da web hospedada em um servidor web para PDF:
 <a name="csharp-webpage-to-pdf"><strong>Passos: Converter WebPage para PDF em C#</strong></a>
 
 1. Leia o conteúdo da página usando um objeto HttpClient.
-1. Instancie o objeto [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) e defina a URL base.
+1. Instancie o objeto [HtmlLoadOptions](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlloadoptions) e defina a URL base.
 1. Inicialize um objeto Document passando o objeto stream.
 1. Opcionalmente, defina o tamanho da página e/ou orientação.
 
@@ -305,7 +305,7 @@ private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredenti
 
 ### Fornecer credenciais para conversão de página da Web para PDF
 
-Às vezes, precisamos realizar a conversão de arquivos HTML que requerem autenticação e privilégios de acesso, para que apenas usuários autênticos possam buscar o conteúdo da página. Isso também inclui o cenário em que alguns recursos/dados referenciados dentro do HTML são buscados de algum servidor externo que requer autenticação e, para atender a essa necessidade, a propriedade [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) foi adicionada à classe [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions). O seguinte trecho de código mostra os passos para passar credenciais para solicitar HTML e seus respectivos recursos ao converter um arquivo HTML para PDF.
+Às vezes, precisamos realizar a conversão de arquivos HTML que requerem autenticação e privilégios de acesso, para que apenas usuários autênticos possam buscar o conteúdo da página. Isso também inclui o cenário em que alguns recursos/dados referenciados dentro do HTML são buscados de algum servidor externo que requer autenticação e, para atender a essa necessidade, a propriedade [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) foi adicionada à classe [`HtmlLoadOptions`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlloadoptions). O seguinte trecho de código mostra os passos para passar credenciais para solicitar HTML e seus respectivos recursos ao converter um arquivo HTML para PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -403,8 +403,8 @@ Aspose.PDF for .NET apresenta a você um aplicativo online gratuito ["MHTML para
 
 <a name="csharp-mhtml-to-pdf"><strong>Passos: Converter MHTML para PDF em C#</strong></a>
 
-1. Crie uma instância da classe [MhtLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mhtloadoptions/).
-2. Inicialize o objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/).
+1. Crie uma instância da classe [MhtLoadOptions](https://reference.aspose.com/pdf/pt/net/aspose.pdf/mhtloadoptions/).
+2. Inicialize o objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/).
 3. Salve o documento PDF de saída chamando o método **Document.Save()**.
 
 ```csharp

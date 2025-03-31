@@ -87,18 +87,18 @@ Il est possible d'ajouter des hyperliens aux fichiers PDF, soit pour permettre a
 
 Pour ajouter des hyperliens web aux documents PDF :
 
-1. Créez un objet de classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Obtenez la classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) à laquelle vous souhaitez ajouter le lien.
-1. Créez un objet [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) en utilisant les objets Page et [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle). L'objet rectangle est utilisé pour spécifier l'emplacement sur la page où le lien doit être ajouté.
-1. Définissez la propriété Action sur l'objet [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) qui spécifie l'emplacement de l'URI distant.
-1. Pour afficher un texte d'hyperlien, ajoutez une chaîne de texte à un emplacement similaire à celui où l'objet [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) est placé.
+1. Créez un objet de classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Obtenez la classe [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) à laquelle vous souhaitez ajouter le lien.
+1. Créez un objet [LinkAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/linkannotation) en utilisant les objets Page et [Rectangle](https://reference.aspose.com/pdf/fr/net/aspose.pdf/rectangle). L'objet rectangle est utilisé pour spécifier l'emplacement sur la page où le lien doit être ajouté.
+1. Définissez la propriété Action sur l'objet [GoToURIAction](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/gotouriaction) qui spécifie l'emplacement de l'URI distant.
+1. Pour afficher un texte d'hyperlien, ajoutez une chaîne de texte à un emplacement similaire à celui où l'objet [LinkAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/linkannotation) est placé.
 1. Pour ajouter un texte libre :
 
-- Instanciez un objet [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation). Il accepte également les objets Page et Rectangle comme arguments, il est donc possible de fournir les mêmes valeurs que celles spécifiées pour le constructeur LinkAnnotation.
-- À l'aide de la propriété Contents de l'objet [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation), spécifiez la chaîne qui doit être affichée dans le PDF de sortie.
-- En option, définissez la largeur de la bordure des objets [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) et FreeTextAnnotation à 0 afin qu'ils n'apparaissent pas dans le document PDF.
-- Une fois que les objets [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) et [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) ont été définis, ajoutez ces liens à la collection Annotations de l'objet [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
-- Enfin, enregistrez le PDF mis à jour à l'aide de la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+- Instanciez un objet [FreeTextAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/freetextannotation). Il accepte également les objets Page et Rectangle comme arguments, il est donc possible de fournir les mêmes valeurs que celles spécifiées pour le constructeur LinkAnnotation.
+- À l'aide de la propriété Contents de l'objet [FreeTextAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/freetextannotation), spécifiez la chaîne qui doit être affichée dans le PDF de sortie.
+- En option, définissez la largeur de la bordure des objets [LinkAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/linkannotation) et FreeTextAnnotation à 0 afin qu'ils n'apparaissent pas dans le document PDF.
+- Une fois que les objets [LinkAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/linkannotation) et [FreeTextAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/freetextannotation) ont été définis, ajoutez ces liens à la collection Annotations de l'objet [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page).
+- Enfin, enregistrez le PDF mis à jour à l'aide de la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/save) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 
 Le code suivant montre comment ajouter un hyperlien à un fichier PDF.
 
@@ -188,9 +188,9 @@ private static void AddHyperlink()
 
 ## Créer un hyperlien vers des pages dans le même PDF
 
-Aspose.PDF for .NET offre une excellente fonctionnalité pour la création de PDF ainsi que sa manipulation. Il propose également la fonctionnalité d'ajouter des liens vers des pages PDF et un lien peut soit diriger vers des pages dans un autre fichier PDF, une URL web, un lien pour lancer une application ou même un lien vers des pages dans le même fichier PDF. Pour ajouter des hyperliens locaux (liens vers des pages dans le même fichier PDF), une classe nommée [LocalHyperlink](https://reference.aspose.com/pdf/net/aspose.pdf/localhyperlink) a été ajoutée à l'espace de noms Aspose.PDF et cette classe a une propriété nommée TargetPageNumber, qui est utilisée pour spécifier la page cible/destination pour l'hyperlien.
+Aspose.PDF for .NET offre une excellente fonctionnalité pour la création de PDF ainsi que sa manipulation. Il propose également la fonctionnalité d'ajouter des liens vers des pages PDF et un lien peut soit diriger vers des pages dans un autre fichier PDF, une URL web, un lien pour lancer une application ou même un lien vers des pages dans le même fichier PDF. Pour ajouter des hyperliens locaux (liens vers des pages dans le même fichier PDF), une classe nommée [LocalHyperlink](https://reference.aspose.com/pdf/fr/net/aspose.pdf/localhyperlink) a été ajoutée à l'espace de noms Aspose.PDF et cette classe a une propriété nommée TargetPageNumber, qui est utilisée pour spécifier la page cible/destination pour l'hyperlien.
 
-Pour ajouter l'hyperlien local, nous devons créer un TextFragment afin que le lien puisse être associé au TextFragment. La classe [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) a une propriété nommée Hyperlink qui est utilisée pour associer une instance de LocalHyperlink. Le code suivant montre les étapes pour accomplir cette exigence.
+Pour ajouter l'hyperlien local, nous devons créer un TextFragment afin que le lien puisse être associé au TextFragment. La classe [TextFragment](https://reference.aspose.com/pdf/fr/net/aspose.pdf.text/textfragment) a une propriété nommée Hyperlink qui est utilisée pour associer une instance de LocalHyperlink. Le code suivant montre les étapes pour accomplir cette exigence.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -284,11 +284,11 @@ Les liens sont représentés comme des annotations dans un fichier PDF et ils pe
 
 Pour obtenir l'URL d'un lien :
 
-1. Créez un objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Obtenez la [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) dont vous souhaitez extraire les liens.
-1. Utilisez la classe [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) pour extraire tous les objets [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) de la page spécifiée.
-1. Passez l'objet [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) à la méthode Accept de l'objet [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
-1. Obtenez toutes les annotations de lien sélectionnées dans un objet IList à l'aide de la propriété Selected de l'objet [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector).
+1. Créez un objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Obtenez la [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) dont vous souhaitez extraire les liens.
+1. Utilisez la classe [AnnotationSelector](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/annotationselector) pour extraire tous les objets [LinkAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/linkannotation) de la page spécifiée.
+1. Passez l'objet [AnnotationSelector](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/annotationselector) à la méthode Accept de l'objet [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page).
+1. Obtenez toutes les annotations de lien sélectionnées dans un objet IList à l'aide de la propriété Selected de l'objet [AnnotationSelector](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/annotationselector).
 1. Enfin, extrayez l'action LinkAnnotation comme GoToURIAction.
 
 Le code suivant montre comment obtenir les destinations d'hyperliens (URL) d'un fichier PDF.
@@ -368,7 +368,7 @@ Un hyperlien a deux parties : le texte qui s'affiche dans le document et l'URL d
 
 Le texte et les annotations/actions dans un fichier PDF sont représentés par différentes entités. Le texte sur une page est juste un ensemble de mots et de caractères, tandis que les annotations apportent une certaine interactivité, comme celle inhérente à un hyperlien.
 
-Pour trouver le contenu de l'URL, vous devez travailler à la fois avec l'annotation et le texte. L'objet [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) n'a pas lui-même le texte mais se trouve sous le texte sur la page. Donc, pour obtenir le texte, l'annotation donne les limites de l'URL, tandis que l'objet Text donne le contenu de l'URL. Veuillez voir le code suivant.
+Pour trouver le contenu de l'URL, vous devez travailler à la fois avec l'annotation et le texte. L'objet [Annotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/annotation) n'a pas lui-même le texte mais se trouve sous le texte sur la page. Donc, pour obtenir le texte, l'annotation donne les limites de l'URL, tandis que l'objet Text donne le contenu de l'URL. Veuillez voir le code suivant.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -459,8 +459,8 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 Pour supprimer une action d'ouverture :
 
-1. Définissez la propriété [OpenAction](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) sur null.
-1. Enregistrez le PDF mis à jour à l'aide de la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) de l'objet Document.
+1. Définissez la propriété [OpenAction](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/properties/openaction) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) sur null.
+1. Enregistrez le PDF mis à jour à l'aide de la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/save) de l'objet Document.
 
 Le code suivant montre comment supprimer une action d'ouverture de document du fichier PDF.
 
@@ -511,7 +511,7 @@ private static void RemoveOpenAction()
 
 Lors de la visualisation de fichiers PDF dans un visualiseur PDF tel qu'Adobe Reader, les fichiers s'ouvrent généralement sur la première page. Cependant, il est possible de définir le fichier pour qu'il s'ouvre sur une page différente.
 
-La classe [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) vous permet de spécifier une page dans un fichier PDF que vous souhaitez ouvrir. En passant la valeur de l'objet GoToAction à la propriété OpenAction de la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), le document s'ouvre à la page spécifiée contre l'objet XYZExplicitDestination. Le code suivant montre comment spécifier une page comme action d'ouverture du document.
+La classe [XYZExplicitDestination](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/xyzexplicitdestination) vous permet de spécifier une page dans un fichier PDF que vous souhaitez ouvrir. En passant la valeur de l'objet GoToAction à la propriété OpenAction de la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document), le document s'ouvre à la page spécifiée contre l'objet XYZExplicitDestination. Le code suivant montre comment spécifier une page comme action d'ouverture du document.
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

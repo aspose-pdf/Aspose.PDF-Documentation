@@ -519,7 +519,7 @@ XSL-FOは、XMLデータのフォーマットを画面、紙、または他の�
 </xsl:stylesheet>
 ```
 
-Aspose.PDFには、XSL-FO変換を適用するための特別な[XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions)クラスがあります。
+Aspose.PDFには、XSL-FO変換を適用するための特別な[XslFoLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/xslfoloadoptions)クラスがあります。
 次のスニペットは、上記のサンプルファイルでこのクラスを使用する方法を示しています。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -660,7 +660,7 @@ XSL-FOマークアップファイルには、パラメータを追加します�
 ```
 
 XSLパラメータを追加するには、独自の[XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)を作成し、
-[XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions)のプロパティとして設定する必要があります。
+[XslFoLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/xslfoloadoptions)のプロパティとして設定する必要があります。
 次のスニペットは、上記のサンプルファイルでこのクラスを使用する方法を示しています。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -826,7 +826,7 @@ XMLからPDF文書を作成する別の方法は、Aspose.PDF XMLスキーマを
 </Document>
 ```
 
-PDF文書を生成するには、[BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index)メソッドを使用します。
+PDF文書を生成するには、[BindXml](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/bindxml/index)メソッドを使用します。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

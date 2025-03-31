@@ -118,7 +118,7 @@ Potongan kode C# berikut menunjukkan cara mengonversi file PDF menjadi format DO
 
 <a name="csharp-pdf-to-doc"><strong>Langkah: Mengonversi PDF ke DOC di C#</strong></a>
 
-1. Buat instance objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan dokumen PDF sumber.
+1. Buat instance objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dengan dokumen PDF sumber.
 2. Simpan ke format **SaveFormat.Doc** dengan memanggil metode **Document.Save()**.
 
 ```csharp
@@ -139,13 +139,13 @@ private static void ConvertPDFtoWord()
 
 ### Menggunakan Kelas DocSaveOptions
 
-Kelas [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) menyediakan banyak properti yang meningkatkan konversi file PDF ke format DOC. Di antara properti ini, Mode memungkinkan Anda untuk menentukan mode pengenalan untuk konten PDF. Anda dapat memilih nilai apa pun dari enumerasi RecognitionMode untuk properti ini. Setiap nilai ini memiliki manfaat dan batasan tertentu:
+Kelas [`DocSaveOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions) menyediakan banyak properti yang meningkatkan konversi file PDF ke format DOC. Di antara properti ini, Mode memungkinkan Anda untuk menentukan mode pengenalan untuk konten PDF. Anda dapat memilih nilai apa pun dari enumerasi RecognitionMode untuk properti ini. Setiap nilai ini memiliki manfaat dan batasan tertentu:
 
-- Mode [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) cepat dan baik untuk mempertahankan tampilan asli file PDF, tetapi kemampuan edit dokumen yang dihasilkan bisa terbatas. Setiap blok teks yang dikelompokkan secara visual dalam PDF asli diubah menjadi kotak teks dalam dokumen keluaran. Ini mencapai kemiripan maksimal dengan yang asli, sehingga dokumen keluaran terlihat baik, tetapi sepenuhnya terdiri dari kotak teks, yang dapat diedit di Microsoft Word, yang cukup menantang.
-- [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) adalah mode pengenalan penuh, di mana mesin melakukan pengelompokan dan analisis multi-level untuk mengembalikan dokumen asli sesuai dengan niat penulis sambil menghasilkan dokumen yang mudah diedit. Batasannya adalah dokumen keluaran mungkin terlihat berbeda dari yang asli.
+- Mode [`Textbox`](https://reference.aspose.com/pdf/id/net/aspose.pdf.docsaveoptions/recognitionmode) cepat dan baik untuk mempertahankan tampilan asli file PDF, tetapi kemampuan edit dokumen yang dihasilkan bisa terbatas. Setiap blok teks yang dikelompokkan secara visual dalam PDF asli diubah menjadi kotak teks dalam dokumen keluaran. Ini mencapai kemiripan maksimal dengan yang asli, sehingga dokumen keluaran terlihat baik, tetapi sepenuhnya terdiri dari kotak teks, yang dapat diedit di Microsoft Word, yang cukup menantang.
+- [`Flow`](https://reference.aspose.com/pdf/id/net/aspose.pdf.docsaveoptions/recognitionmode) adalah mode pengenalan penuh, di mana mesin melakukan pengelompokan dan analisis multi-level untuk mengembalikan dokumen asli sesuai dengan niat penulis sambil menghasilkan dokumen yang mudah diedit. Batasannya adalah dokumen keluaran mungkin terlihat berbeda dari yang asli.
 
-Properti [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) dapat digunakan untuk mengontrol kedekatan relatif antara elemen teks. Ini berarti bahwa jarak dinormalkan berdasarkan ukuran font. Font yang lebih besar mungkin memiliki ruang yang lebih besar antara suku kata dan masih dianggap sebagai satu kesatuan. Ini ditentukan sebagai persentase dari ukuran font; misalnya, 1 = 100%. Ini berarti bahwa dua karakter 12pt yang ditempatkan 12 pt terpisah adalah proximal.
-- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) digunakan untuk mengaktifkan pengenalan bullet selama konversi.
+Properti [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) dapat digunakan untuk mengontrol kedekatan relatif antara elemen teks. Ini berarti bahwa jarak dinormalkan berdasarkan ukuran font. Font yang lebih besar mungkin memiliki ruang yang lebih besar antara suku kata dan masih dianggap sebagai satu kesatuan. Ini ditentukan sebagai persentase dari ukuran font; misalnya, 1 = 100%. Ini berarti bahwa dua karakter 12pt yang ditempatkan 12 pt terpisah adalah proximal.
+- [`RecognitionBullets`](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions/properties/recognizebullets) digunakan untuk mengaktifkan pengenalan bullet selama konversi.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -190,7 +190,7 @@ Potongan kode C# berikut menunjukkan cara mengonversi file PDF menjadi format DO
 
 <a name="csharp-pdf-to-docx"><strong>Langkah: Mengonversi PDF ke DOCX di C#</strong></a>
 
-1. Buat instance objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan dokumen PDF sumber.
+1. Buat instance objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dengan dokumen PDF sumber.
 2. Simpan ke format **SaveFormat.DocX** dengan memanggil metode **Document.Save()**.
 
 ```csharp

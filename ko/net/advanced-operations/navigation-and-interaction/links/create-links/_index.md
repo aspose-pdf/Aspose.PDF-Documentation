@@ -85,14 +85,14 @@ sitemap:
 
 문서에 애플리케이션 링크를 추가하면 문서에서 애플리케이션에 링크할 수 있습니다. 이는 독자가 튜토리얼의 특정 지점에서 특정 작업을 수행하도록 하거나 기능이 풍부한 문서를 만들고자 할 때 유용합니다. 애플리케이션 링크를 만들려면:
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성합니다.
-1. 링크를 추가할 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)를 가져옵니다.
-1. Page 및 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) 객체를 사용하여 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 객체를 생성합니다.
-1. [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 객체를 사용하여 링크 속성을 설정합니다.
-1. 또한 [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) 객체의 Action 속성을 설정합니다.
-1. [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) 객체를 생성할 때 시작할 애플리케이션을 지정합니다.
-1. 링크를 Page 객체의 [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations) 속성에 추가합니다.
-1. 마지막으로 Document 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장합니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성합니다.
+1. 링크를 추가할 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page)를 가져옵니다.
+1. Page 및 [Rectangle](https://reference.aspose.com/pdf/ko/net/aspose.pdf/rectangle) 객체를 사용하여 [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 객체를 생성합니다.
+1. [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 객체를 사용하여 링크 속성을 설정합니다.
+1. 또한 [LaunchAction](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/launchaction) 객체의 Action 속성을 설정합니다.
+1. [LaunchAction](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/launchaction) 객체를 생성할 때 시작할 애플리케이션을 지정합니다.
+1. 링크를 Page 객체의 [Annotations](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page/properties/annotations) 속성에 추가합니다.
+1. 마지막으로 Document 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장합니다.
 
 다음 코드 스니펫은 PDF 파일에서 애플리케이션에 링크를 만드는 방법을 보여줍니다.
 
@@ -151,14 +151,14 @@ private static void CreateLinkAnnotation()
 
 Aspose.PDF for .NET은 외부 PDF 파일에 링크를 추가하여 여러 문서를 연결할 수 있도록 합니다. PDF 문서 링크를 만들려면:
 
-1. 먼저 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성합니다.
-1. 그런 다음 링크를 추가할 특정 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)를 가져옵니다.
-1. Page 및 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) 객체를 사용하여 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 객체를 생성합니다.
-1. [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 객체를 사용하여 링크 속성을 설정합니다.
-1. Action 속성을 [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction) 객체로 설정합니다.
+1. 먼저 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성합니다.
+1. 그런 다음 링크를 추가할 특정 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page)를 가져옵니다.
+1. Page 및 [Rectangle](https://reference.aspose.com/pdf/ko/net/aspose.pdf/rectangle) 객체를 사용하여 [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 객체를 생성합니다.
+1. [LinkAnnotation](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/linkannotation) 객체를 사용하여 링크 속성을 설정합니다.
+1. Action 속성을 [GoToRemoteAction](https://reference.aspose.com/pdf/ko/net/aspose.pdf.annotations/gotoremoteaction) 객체로 설정합니다.
 1. GoToRemoteAction 객체를 생성할 때 시작해야 할 PDF 파일과 열어야 할 페이지 번호를 지정합니다.
 1. 링크를 Page 객체의 Annotations 컬렉션에 추가합니다.
-1. Document 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장합니다.
+1. Document 객체의 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 업데이트된 PDF를 저장합니다.
 
 다음 코드 스니펫은 PDF 파일에서 PDF 문서 링크를 만드는 방법을 보여줍니다.
 

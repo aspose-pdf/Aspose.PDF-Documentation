@@ -82,7 +82,7 @@ PDF의 아티팩트는 문서의 실제 콘텐츠에 포함되지 않는 그래�
 
 PDF에서 아티팩트의 목적은 콘텐츠와 비콘텐츠 요소를 구분할 수 있도록 하는 것입니다. 이는 접근성에 중요하며, 스크린 리더 및 기타 보조 기술이 아티팩트를 무시하고 관련 콘텐츠에 집중할 수 있습니다. 아티팩트는 인쇄, 검색 또는 복사에서 생략될 수 있으므로 PDF 문서의 성능과 품질을 향상시킬 수 있습니다.
 
-PDF에서 요소를 아티팩트로 만들려면 [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 클래스를 사용해야 합니다.
+PDF에서 요소를 아티팩트로 만들려면 [Artifact](https://reference.aspose.com/pdf/ko/net/aspose.pdf/artifact) 클래스를 사용해야 합니다.
 다음과 같은 유용한 속성이 포함되어 있습니다:
 
 - **Artifact.Type** – 아티팩트 유형을 가져옵니다 (Artifact.ArtifactType 열거형의 값을 지원하며, 값에는 Background, Layout, Page, Pagination 및 Undefined가 포함됩니다).
@@ -97,17 +97,17 @@ PDF에서 요소를 아티팩트로 만들려면 [Artifact](https://reference.as
 
 다음 클래스도 아티팩트 작업에 유용할 수 있습니다:
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/watermarkartifact/)
+- [ArtifactCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/artifactcollection)
+- [BackgroundArtifact](https://reference.aspose.com/pdf/ko/net/aspose.pdf/backgroundartifact/)
+- [HeaderArtifact](https://reference.aspose.com/pdf/ko/net/aspose.pdf/headerartifact/)
+- [FooterArtifact](https://reference.aspose.com/pdf/ko/net/aspose.pdf/footerartifact/)
+- [WatermarkArtifact](https://reference.aspose.com/pdf/ko/net/aspose.pdf/watermarkartifact/)
 
 ## 기존 워터마크 작업하기
 
 Adobe Acrobat으로 생성된 워터마크는 아티팩트라고 불립니다 (PDF 사양의 14.8.2.2 실제 콘텐츠 및 아티팩트에서 설명됨).
 
-특정 페이지의 모든 워터마크를 가져오려면 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스의 Artifacts 속성을 사용합니다.
+특정 페이지의 모든 워터마크를 가져오려면 [Page](https://reference.aspose.com/pdf/ko/net/aspose.pdf/page) 클래스의 Artifacts 속성을 사용합니다.
 
 다음 코드 조각은 PDF 파일의 첫 번째 페이지에서 모든 워터마크를 가져오는 방법을 보여줍니다.
 
@@ -140,7 +140,7 @@ private static void ExtractWatermarkFromPDF()
 
 ## 아티팩트를 배경으로 작업하기
 
-배경 이미지는 문서에 워터마크 또는 기타 미세한 디자인을 추가하는 데 사용할 수 있습니다. Aspose.PDF for .NET에서 각 PDF 문서는 페이지의 컬렉션이며 각 페이지는 아티팩트의 컬렉션을 포함합니다. [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) 클래스를 사용하여 페이지 객체에 배경 이미지를 추가할 수 있습니다.
+배경 이미지는 문서에 워터마크 또는 기타 미세한 디자인을 추가하는 데 사용할 수 있습니다. Aspose.PDF for .NET에서 각 PDF 문서는 페이지의 컬렉션이며 각 페이지는 아티팩트의 컬렉션을 포함합니다. [BackgroundArtifact](https://reference.aspose.com/pdf/ko/net/aspose.pdf/backgroundartifact) 클래스를 사용하여 페이지 객체에 배경 이미지를 추가할 수 있습니다.
 
 다음 코드 조각은 BackgroundArtifact 객체를 사용하여 PDF 페이지에 배경 이미지를 추가하는 방법을 보여줍니다.
 

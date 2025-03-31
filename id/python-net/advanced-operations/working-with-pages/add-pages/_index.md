@@ -89,8 +89,8 @@ Untuk menyisipkan halaman kosong dalam file PDF:
 
 1. Buat objek kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) dengan file PDF masukan.
 
-1. Panggil metode [insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) dari koleksi [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) dengan indeks yang ditentukan.
-1. Simpan PDF keluaran menggunakan metode [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Panggil metode [insert](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection/methods/insert) dari koleksi [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) dengan indeks yang ditentukan.
+1. Simpan PDF keluaran menggunakan metode [save](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/save/methods/4).
 
 Cuplikan kode berikut menunjukkan cara menyisipkan halaman dalam file PDF.
 

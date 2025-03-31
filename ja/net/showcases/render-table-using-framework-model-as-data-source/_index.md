@@ -84,7 +84,7 @@ sitemap:
 
 ## Aspose.PDFを使用したPDF生成の基本
 
-Aspose.PDFで最も重要なクラスの1つは[Documentクラス](https://reference.aspose.com/pdf/net/aspose.pdf/document)です。このクラスはPDFレンダリングエンジンです。PDF構造を表現するために、Aspose.PDFライブラリはDocument-Pageモデルを使用します。ここで：
+Aspose.PDFで最も重要なクラスの1つは[Documentクラス](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)です。このクラスはPDFレンダリングエンジンです。PDF構造を表現するために、Aspose.PDFライブラリはDocument-Pageモデルを使用します。ここで：
 
 * Document - PDF文書のプロパティを含み、ページコレクションを持ちます。
 * Page - 特定のページのプロパティと、このページに関連するさまざまな要素のコレクションを含みます。
@@ -175,7 +175,7 @@ private static void AddTable()
 {{< /tab >}}
 {{< /tabs >}}
 
-最も一般的な問題は、テーブル形式でデータを出力することです。[Tableクラス](https://reference.aspose.com/pdf/net/aspose.pdf/table)はテーブルを処理するために使用されます。このクラスは、テーブルを作成し、[Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows)と[Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell)を使用して文書に配置する能力を提供します。したがって、テーブルを作成するには、必要な数の行を追加し、それらを適切な数のセルで埋める必要があります。
+最も一般的な問題は、テーブル形式でデータを出力することです。[Tableクラス](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table)はテーブルを処理するために使用されます。このクラスは、テーブルを作成し、[Rows](https://reference.aspose.com/pdf/ja/net/aspose.pdf/rows)と[Cells](https://reference.aspose.com/pdf/ja/net/aspose.pdf/cell)を使用して文書に配置する能力を提供します。したがって、テーブルを作成するには、必要な数の行を追加し、それらを適切な数のセルで埋める必要があります。
 
 次の例では、4x10のテーブルを作成します。
 
@@ -284,10 +284,10 @@ private static void AddTable()
 
 Tableオブジェクトを初期化する際には、最小限のスキン設定が使用されました：
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - 列の幅（デフォルト）。
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - テーブルセルのデフォルトフィールド。
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - テーブルフレームの属性（スタイル、厚さ、色）。
-* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - セルフレームの属性（スタイル、厚さ、色）。
+* [ColumnWidths](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table/properties/columnwidths) - 列の幅（デフォルト）。
+* [DefaultCellPadding](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table/properties/defaultcellpadding) - テーブルセルのデフォルトフィールド。
+* [Border](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table/properties/border) - テーブルフレームの属性（スタイル、厚さ、色）。
+* [DefaultCellBorder](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table/properties/defaultcellborder) - セルフレームの属性（スタイル、厚さ、色）。
 
 その結果、等幅の列を持つ4x10のテーブルが得られます。
 
@@ -295,7 +295,7 @@ Tableオブジェクトを初期化する際には、最小限のスキン設定
 
 ## ADO.NETオブジェクトからのデータのエクスポート
 
-Tableクラスは、ADO.NETデータソースと対話するためのメソッドを提供します - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1)と[ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview)。最初のメソッドはDataTableからデータをインポートし、2番目はDataViewからデータをインポートします。
+Tableクラスは、ADO.NETデータソースと対話するためのメソッドを提供します - [ImportDataTable](https://reference.aspose.com/pdf/ja/net/aspose.pdf.table/importdatatable/methods/1)と[ImportDataView](https://reference.aspose.com/pdf/ja/net/aspose.pdf/table/methods/importdataview)。最初のメソッドはDataTableからデータをインポートし、2番目はDataViewからデータをインポートします。
 これらのオブジェクトはMVCテンプレートで作業するにはあまり便利ではないため、簡単な例に制限します。この例では（行50）、ImportDataTableメソッドが呼び出され、DataTableインスタンスとヘッダーフラグ、データ出力の初期位置（行/列）などの追加設定をパラメータとして受け取ります。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

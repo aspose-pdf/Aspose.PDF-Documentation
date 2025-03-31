@@ -83,22 +83,22 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Tambahkan objek Persegi Panjang
 
-Aspose.PDF for .NET mendukung fitur untuk menambahkan objek grafik (misalnya grafik, garis, persegi panjang, dll.) ke dokumen PDF. Anda juga mendapatkan keuntungan untuk menambahkan objek [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) di mana Anda juga menawarkan fitur untuk mengisi objek persegi panjang dengan warna tertentu, mengontrol Z-Order, menambahkan pengisian warna gradien, dan lain-lain.
+Aspose.PDF for .NET mendukung fitur untuk menambahkan objek grafik (misalnya grafik, garis, persegi panjang, dll.) ke dokumen PDF. Anda juga mendapatkan keuntungan untuk menambahkan objek [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/rectangle) di mana Anda juga menawarkan fitur untuk mengisi objek persegi panjang dengan warna tertentu, mengontrol Z-Order, menambahkan pengisian warna gradien, dan lain-lain.
 
 Pertama, mari kita lihat kemungkinan membuat objek Persegi Panjang.
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) baru.
-1. Tambahkan [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) ke koleksi halaman file PDF.
-1. Tambahkan [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) ke koleksi paragraf dari instance halaman.
-1. Buat instance [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph).
-1. Atur batas untuk [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing).
+1. Buat PDF [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) baru.
+1. Tambahkan [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) ke koleksi halaman file PDF.
+1. Tambahkan [Text fragment](https://reference.aspose.com/pdf/id/net/aspose.pdf/texfragment) ke koleksi paragraf dari instance halaman.
+1. Buat instance [Graph](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/graph).
+1. Atur batas untuk [Drawing object](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing).
 1. Buat instance Persegi Panjang.
 
-1. Tambahkan objek [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) ke koleksi bentuk dari objek Graph.
+1. Tambahkan objek [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/rectangle) ke koleksi bentuk dari objek Graph.
 1. Tambahkan objek grafik ke koleksi paragraf dari instance halaman.
-1. Tambahkan [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) ke koleksi paragraf dari instance halaman.
+1. Tambahkan [Text fragment](https://reference.aspose.com/pdf/id/net/aspose.pdf/texfragment) ke koleksi paragraf dari instance halaman.
 
 1. Dan simpan file PDF Anda.
 
@@ -146,7 +146,7 @@ private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float w
 
 Aspose.PDF for .NET juga menawarkan fitur untuk mengisi objek persegi panjang dengan warna tertentu.
 
-Potongan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) yang diisi dengan warna.
+Potongan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/rectangle) yang diisi dengan warna.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -194,7 +194,7 @@ Lihat hasil persegi panjang yang diisi dengan warna solid:
 
 Aspose.PDF for .NET mendukung fitur untuk menambahkan objek grafik ke dokumen PDF dan terkadang diperlukan untuk mengisi objek grafik dengan Warna Gradien. Untuk mengisi objek grafik dengan Warna Gradien, kita perlu mengatur setPatterColorSpace dengan objek gradientAxialShading seperti berikut.
 
-Potongan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) yang diisi dengan Warna Gradien.
+Potongan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/rectangle) yang diisi dengan Warna Gradien.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -243,7 +243,7 @@ private static void CreateFilledRectangleGradientFill()
 
 ## Buat Persegi Panjang dengan Saluran warna Alpha
 
-Aspose.PDF for .NET mendukung pengisian objek persegi panjang dengan warna tertentu. Objek persegi panjang juga dapat memiliki saluran warna Alpha untuk memberikan penampilan transparan. Potongan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) dengan saluran warna Alpha.
+Aspose.PDF for .NET mendukung pengisian objek persegi panjang dengan warna tertentu. Objek persegi panjang juga dapat memiliki saluran warna Alpha untuk memberikan penampilan transparan. Potongan kode berikut menunjukkan cara menambahkan objek [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/rectangle) dengan saluran warna Alpha.
 
 Piksel gambar dapat menyimpan informasi tentang opasitas mereka bersama dengan nilai warna. Ini memungkinkan pembuatan gambar dengan area transparan atau semi-transparan.
 
@@ -304,7 +304,7 @@ private static void RectangleFilled_AlphaChannel()
 
 Aspose.PDF for .NET mendukung fitur untuk menambahkan objek grafik (misalnya grafik, garis, persegi panjang, dll.) ke dokumen PDF. Ketika menambahkan lebih dari satu instance dari objek yang sama di dalam file PDF, kita dapat mengontrol rendering mereka dengan menentukan Z-Order. Z-Order juga digunakan ketika kita perlu merender objek di atas satu sama lain.
 
-Potongan kode berikut menunjukkan langkah-langkah untuk merender objek [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) di atas satu sama lain.
+Potongan kode berikut menunjukkan langkah-langkah untuk merender objek [Rectangle](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/rectangle) di atas satu sama lain.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

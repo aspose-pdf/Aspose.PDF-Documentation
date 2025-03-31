@@ -80,7 +80,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Topik ini menjelaskan cara menggunakan kelas operator dalam namespace Aspose.PDF yang menyediakan kemampuan untuk mendapatkan informasi resolusi dan dimensi tentang gambar tanpa harus mengekstraknya.
 
-Ada berbagai cara untuk mencapai ini. Artikel ini menjelaskan cara menggunakan `arraylist` dan [kelas penempatan gambar](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement).
+Ada berbagai cara untuk mencapai ini. Artikel ini menjelaskan cara menggunakan `arraylist` dan [kelas penempatan gambar](https://reference.aspose.com/pdf/id/net/aspose.pdf/imageplacement).
 
 1. Pertama, muat file PDF sumber (dengan gambar).
 1. Kemudian buat objek ArrayList untuk menyimpan nama-nama gambar dalam dokumen.

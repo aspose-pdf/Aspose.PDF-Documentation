@@ -77,13 +77,13 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Kelas PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) menyediakan fasilitas untuk memutar halaman.
+[Kelas PdfPageEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfpageeditor) menyediakan fasilitas untuk memutar halaman.
 
 {{% /alert %}}
 
 ## Memutar halaman menggunakan PageRotations
 
-Untuk memutar halaman dalam dokumen kita dapat menggunakan [PageRotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
+Untuk memutar halaman dalam dokumen kita dapat menggunakan [PageRotations](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
 `PageRotations` berisi nomor halaman dan derajat rotasi, kunci mewakili nomor halaman, nilai dari kunci mewakili rotasi dalam derajat.
 
 ```csharp
@@ -114,7 +114,7 @@ Untuk memutar halaman dalam dokumen kita dapat menggunakan [PageRotations](https
 
 ## Memutar halaman menggunakan Rotasi
 
-Kita juga dapat menggunakan properti [Rotasi](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation). Rotasi harus 0, 90, 180 atau 270
+Kita juga dapat menggunakan properti [Rotasi](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfpageeditor/properties/rotation). Rotasi harus 0, 90, 180 atau 270
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

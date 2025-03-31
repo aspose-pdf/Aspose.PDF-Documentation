@@ -113,7 +113,7 @@ private static void ManipulateTable()
 
 ## PDFドキュメント内の古いテーブルを新しいテーブルに置き換える
 
-特定のテーブルを見つけて、望ましいテーブルに置き換える必要がある場合は、[TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber)クラスのReplace()メソッドを使用してそれを行うことができます。以下の例は、PDFドキュメント内のテーブルを置き換える機能を示しています。
+特定のテーブルを見つけて、望ましいテーブルに置き換える必要がある場合は、[TableAbsorber](https://reference.aspose.com/pdf/ja/net/aspose.pdf.text/tableabsorber)クラスのReplace()メソッドを使用してそれを行うことができます。以下の例は、PDFドキュメント内のテーブルを置き換える機能を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

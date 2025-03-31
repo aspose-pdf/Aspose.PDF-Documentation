@@ -83,7 +83,7 @@ Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawi
 
 ## Tambahkan objek Ellipse
 
-Aspose.PDF for .NET mendukung penambahan objek [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) ke dokumen PDF. Ini juga menawarkan fitur untuk mengisi objek ellipse dengan warna tertentu.
+Aspose.PDF for .NET mendukung penambahan objek [Ellipse](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/ellipse) ke dokumen PDF. Ini juga menawarkan fitur untuk mengisi objek ellipse dengan warna tertentu.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,7 +133,7 @@ private static void Ellipse()
 
 ## Buat Objek Ellipse Terisi
 
-Potongan kode berikut menunjukkan cara menambahkan objek [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) yang terisi dengan warna.
+Potongan kode berikut menunjukkan cara menambahkan objek [Ellipse](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/ellipse) yang terisi dengan warna.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

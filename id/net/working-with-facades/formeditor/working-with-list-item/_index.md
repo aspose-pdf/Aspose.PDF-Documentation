@@ -77,7 +77,7 @@ draft: false
 
 ## Tambahkan Item Daftar di File PDF yang Ada
 
-[AddListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addlistitem) metode memungkinkan Anda untuk menambahkan item di bidang [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield). Argumen pertama adalah nama bidang dan argumen kedua adalah item bidang. Anda dapat melewatkan satu item bidang atau Anda dapat melewatkan array string yang berisi daftar item. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Cuplikan kode berikut menunjukkan cara menambahkan item daftar di file PDF.
+[AddListItem](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/addlistitem) metode memungkinkan Anda untuk menambahkan item di bidang [ListBox](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/listboxfield). Argumen pertama adalah nama bidang dan argumen kedua adalah item bidang. Anda dapat melewatkan satu item bidang atau Anda dapat melewatkan array string yang berisi daftar item. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor). Cuplikan kode berikut menunjukkan cara menambahkan item daftar di file PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -110,7 +110,7 @@ draft: false
 
 ## Hapus Item Daftar dari File PDF yang Ada
 
-[DelListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/dellistitem) metode memungkinkan Anda untuk menghapus item tertentu dari [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield). Parameter pertama adalah nama bidang sementara parameter kedua adalah item yang ingin Anda hapus dari daftar. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Cuplikan kode berikut menunjukkan cara menghapus item daftar dari file PDF.
+[DelListItem](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor/methods/dellistitem) metode memungkinkan Anda untuk menghapus item tertentu dari [ListBox](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/listboxfield). Parameter pertama adalah nama bidang sementara parameter kedua adalah item yang ingin Anda hapus dari daftar. Metode ini disediakan oleh kelas [FormEditor](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/formeditor). Cuplikan kode berikut menunjukkan cara menghapus item daftar dari file PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

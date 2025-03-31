@@ -77,7 +77,7 @@ draft: false
 
 ## PDFファイル内の既存のブックマークを更新する
 
-PDFファイル内の既存のブックマークを更新するには、[ModifyBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks)メソッドを使用する必要があります。このメソッドは、2つの引数を取ります: ソースタイトル（変更するブックマークのタイトル）、宛先タイトル（置き換えるタイトル）。[PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[ModifyBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks)メソッドを呼び出し、[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFを保存します。以下のコードスニペットは、PDFファイル内の既存のブックマークを変更する方法を示しています。
+PDFファイル内の既存のブックマークを更新するには、[ModifyBookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks)メソッドを使用する必要があります。このメソッドは、2つの引数を取ります: ソースタイトル（変更するブックマークのタイトル）、宛先タイトル（置き換えるタイトル）。[PdfBookmarkEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[ModifyBookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks)メソッドを呼び出し、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFを保存します。以下のコードスニペットは、PDFファイル内の既存のブックマークを変更する方法を示しています。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -130,7 +130,7 @@ private static void UpdateExistingBookmark()
 
 ## PDFファイルからすべてのブックマークを削除する
 
-[DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks)メソッドを使用して、パラメータなしでPDFファイルからすべてのブックマークを削除できます。まず、[PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks)メソッドを呼び出し、[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。以下のコードスニペットは、PDFファイルからすべてのブックマークを削除する方法を示しています。
+[DeleteBookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks)メソッドを使用して、パラメータなしでPDFファイルからすべてのブックマークを削除できます。まず、[PdfBookmarkEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドする必要があります。その後、[DeleteBookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks)メソッドを呼び出し、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。以下のコードスニペットは、PDFファイルからすべてのブックマークを削除する方法を示しています。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -183,7 +183,7 @@ private static void DeleteAllBookmarks()
 
 ## PDFファイルから特定のブックマークを削除する
 
-特定のブックマークを削除するには、文字列（タイトル）パラメータを持つ[DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks)メソッドを呼び出す必要があります。ここでの*タイトル*は、PDFから削除されるブックマークを表します。[PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドします。その後、[DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks)メソッドを呼び出し、[Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。以下のコードスニペットは、PDFファイルから特定のブックマークを削除する方法を示しています。
+特定のブックマークを削除するには、文字列（タイトル）パラメータを持つ[DeleteBookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks)メソッドを呼び出す必要があります。ここでの*タイトル*は、PDFから削除されるブックマークを表します。[PdfBookmarkEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor)クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用して入力PDFファイルをバインドします。その後、[DeleteBookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks)メソッドを呼び出し、[Save](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save)メソッドを使用して更新されたPDFファイルを保存します。以下のコードスニペットは、PDFファイルから特定のブックマークを削除する方法を示しています。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -236,7 +236,7 @@ private static void DeleteParticularBookmark()
 
 ## PDFドキュメントファサードからブックマークを取得する
 
-[PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor)クラスは、既存のPDFファイル内のブックマークを操作する機能を提供します。ブックマークに関する情報を取得/設定するためのさまざまなプロパティを提供します。以下のコードスニペットは、PDFファイル内の各ブックマークに関連する情報を取得する方法を示しています。
+[PdfBookmarkEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor)クラスは、既存のPDFファイル内のブックマークを操作する機能を提供します。ブックマークに関する情報を取得/設定するためのさまざまなプロパティを提供します。以下のコードスニペットは、PDFファイル内の各ブックマークに関連する情報を取得する方法を示しています。
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -309,7 +309,7 @@ private static void GetBookmarksFromDocument()
 
 ## 既存のPDFファイルからブックマークを抽出する
 
-[ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3)メソッドを使用すると、PDFファイルからブックマークを抽出できます。ブックマークを抽出するには、[PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor)オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用してPDFファイルをバインドする必要があります。その後、[ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3)メソッドを呼び出す必要があります。[ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3)メソッドは[Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks/methods/index)オブジェクトを返します。これらのブックマークをループして、個々の[Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark)オブジェクトを取得できます。最後に、[ExportBookmarksToXML](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/exportbookmarkstoxml)メソッドを使用して、ブックマークをXMLファイルにエクスポートできます。以下のコードスニペットは、ブックマークをXMLファイルにエクスポートする方法を示しています。
+[ExtractBookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3)メソッドを使用すると、PDFファイルからブックマークを抽出できます。ブックマークを抽出するには、[PdfBookmarkEditor](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor)オブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.facade/bindpdf/methods/3)メソッドを使用してPDFファイルをバインドする必要があります。その後、[ExtractBookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3)メソッドを呼び出す必要があります。[ExtractBookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3)メソッドは[Bookmarks](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/bookmarks/methods/index)オブジェクトを返します。これらのブックマークをループして、個々の[Bookmark](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/bookmark)オブジェクトを取得できます。最後に、[ExportBookmarksToXML](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfbookmarkeditor/exportbookmarkstoxml)メソッドを使用して、ブックマークをXMLファイルにエクスポートできます。以下のコードスニペットは、ブックマークをXMLファイルにエクスポートする方法を示しています。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -77,7 +77,7 @@ draft: false
 
 ## Dividir Páginas PDF a Partir da Primeira Usando Caminhos de Arquivo
 
-O método [SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você divida o arquivo PDF começando pela primeira página e terminando no número da página especificada. Se você quiser manipular os arquivos PDF do disco, pode passar os caminhos dos arquivos PDF de entrada e saída para este método. O seguinte trecho de código mostra como dividir páginas PDF a partir da primeira usando caminhos de arquivo.
+O método [SplitFromFirst](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você divida o arquivo PDF começando pela primeira página e terminando no número da página especificada. Se você quiser manipular os arquivos PDF do disco, pode passar os caminhos dos arquivos PDF de entrada e saída para este método. O seguinte trecho de código mostra como dividir páginas PDF a partir da primeira usando caminhos de arquivo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void SplitPdfPagesFromFirstUsingFilePaths()
 
 ## Dividir Páginas PDF a Partir da Primeira Usando Streams de Arquivo
 
-O método [SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você divida o arquivo PDF começando pela primeira página e terminando no número da página especificada. Se você quiser manipular os arquivos PDF a partir dos streams, pode passar os streams de entrada e saída PDF para este método. O seguinte trecho de código mostra como dividir páginas PDF a partir da primeira usando streams de arquivo.
+O método [SplitFromFirst](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você divida o arquivo PDF começando pela primeira página e terminando no número da página especificada. Se você quiser manipular os arquivos PDF a partir dos streams, pode passar os streams de entrada e saída PDF para este método. O seguinte trecho de código mostra como dividir páginas PDF a partir da primeira usando streams de arquivo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -118,7 +118,7 @@ private static void SplitPdfPagesFromFirstUsingFileStreams()
 
 ## Dividir Páginas PDF em Lotes Usando Caminhos de Arquivo
 
-O método [SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você divida o arquivo PDF em vários conjuntos de páginas. Neste exemplo, precisamos de dois conjuntos de páginas (1, 2) e (5, 6). Se você quiser acessar o arquivo PDF do disco, precisará passar o PDF de entrada como caminho de arquivo. Este método retorna um array de MemoryStream. Você pode percorrer este array e salvar os conjuntos individuais de páginas como arquivos separados. O seguinte trecho de código mostra como dividir páginas PDF em lotes usando caminhos de arquivo.
+O método [SplitToBulks](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você divida o arquivo PDF em vários conjuntos de páginas. Neste exemplo, precisamos de dois conjuntos de páginas (1, 2) e (5, 6). Se você quiser acessar o arquivo PDF do disco, precisará passar o PDF de entrada como caminho de arquivo. Este método retorna um array de MemoryStream. Você pode percorrer este array e salvar os conjuntos individuais de páginas como arquivos separados. O seguinte trecho de código mostra como dividir páginas PDF em lotes usando caminhos de arquivo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -147,7 +147,7 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
 
 ## Dividir Páginas PDF em Lotes Usando Streams
 
-O método [SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você divida o arquivo PDF em vários conjuntos de páginas. Neste exemplo, precisamos de dois conjuntos de páginas (1, 2) e (5, 6). Você pode passar um stream para este método em vez de acessar o arquivo do disco. Este método retorna um array de MemoryStream. Você pode percorrer este array e salvar os conjuntos individuais de páginas como arquivos separados. O seguinte trecho de código mostra como dividir páginas PDF em lotes usando streams.
+O método [SplitToBulks](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você divida o arquivo PDF em vários conjuntos de páginas. Neste exemplo, precisamos de dois conjuntos de páginas (1, 2) e (5, 6). Você pode passar um stream para este método em vez de acessar o arquivo do disco. Este método retorna um array de MemoryStream. Você pode percorrer este array e salvar os conjuntos individuais de páginas como arquivos separados. O seguinte trecho de código mostra como dividir páginas PDF em lotes usando streams.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -180,7 +180,7 @@ private static void SplitPdfPagesToBulkUsingStreams()
 
 ## Dividir Páginas PDF até o Fim Usando Caminhos de Arquivo
 
-O método [SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você divida o PDF a partir do número da página especificada até o final do arquivo PDF e salve-o como um novo PDF. Para fazer isso, usando caminhos de arquivo, você precisa passar os caminhos dos arquivos de entrada e saída e o número da página a partir da qual a divisão deve ser iniciada. O PDF de saída será salvo no disco. O seguinte trecho de código mostra como dividir páginas PDF até o fim usando caminhos de arquivo.
+O método [SplitToEnd](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você divida o PDF a partir do número da página especificada até o final do arquivo PDF e salve-o como um novo PDF. Para fazer isso, usando caminhos de arquivo, você precisa passar os caminhos dos arquivos de entrada e saída e o número da página a partir da qual a divisão deve ser iniciada. O PDF de saída será salvo no disco. O seguinte trecho de código mostra como dividir páginas PDF até o fim usando caminhos de arquivo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -197,7 +197,7 @@ private static void SplitPdfPagesToEndUsingFilePaths()
 
 ## Dividir Páginas PDF até o Fim Usando Streams
 
-O método [SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite que você divida o PDF a partir do número da página especificada até o final do arquivo PDF e salve-o como um novo PDF. Para fazer isso, usando streams, você precisa passar os streams de entrada e saída e o número da página a partir da qual a divisão deve ser iniciada. O PDF de saída será salvo no stream de saída. O seguinte trecho de código mostra como dividir páginas PDF até o fim usando streams.
+O método [SplitToEnd](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) da classe [PdfFileEditor](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor) permite que você divida o PDF a partir do número da página especificada até o final do arquivo PDF e salve-o como um novo PDF. Para fazer isso, usando streams, você precisa passar os streams de entrada e saída e o número da página a partir da qual a divisão deve ser iniciada. O PDF de saída será salvo no stream de saída. O seguinte trecho de código mostra como dividir páginas PDF até o fim usando streams.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -227,7 +227,7 @@ Você pode tentar dividir o documento PDF e visualizar os resultados online nest
 
 [products.aspose.app/pdf/splitter](https://products.aspose.app/pdf/splitter) {{% /alert %}}
 
-Para dividir o arquivo PDF em páginas individuais, você precisa passar o PDF como caminho de arquivo para o método [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Este método retornará um array de MemoryStream contendo páginas individuais do arquivo PDF. Você pode percorrer este array de MemoryStream e salvar páginas individuais como arquivos PDF individuais no disco. O seguinte trecho de código mostra como dividir PDF em páginas individuais usando caminhos de arquivo.
+Para dividir o arquivo PDF em páginas individuais, você precisa passar o PDF como caminho de arquivo para o método [SplitToPages](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Este método retornará um array de MemoryStream contendo páginas individuais do arquivo PDF. Você pode percorrer este array de MemoryStream e salvar páginas individuais como arquivos PDF individuais no disco. O seguinte trecho de código mostra como dividir PDF em páginas individuais usando caminhos de arquivo.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -254,7 +254,7 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
 
 ## Dividir PDF em Páginas Individuais Usando Streams
 
-Para dividir o arquivo PDF em páginas individuais, você precisa passar o PDF como stream para o método [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Este método retornará um array de MemoryStream contendo páginas individuais do arquivo PDF. Você pode percorrer este array de MemoryStream e salvar páginas individuais como arquivos PDF individuais no disco, ou pode manter essas páginas individuais no stream de memória para uso posterior em sua aplicação. O seguinte trecho de código mostra como dividir PDF em páginas individuais usando streams.
+Para dividir o arquivo PDF em páginas individuais, você precisa passar o PDF como stream para o método [SplitToPages](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Este método retornará um array de MemoryStream contendo páginas individuais do arquivo PDF. Você pode percorrer este array de MemoryStream e salvar páginas individuais como arquivos PDF individuais no disco, ou pode manter essas páginas individuais no stream de memória para uso posterior em sua aplicação. O seguinte trecho de código mostra como dividir PDF em páginas individuais usando streams.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

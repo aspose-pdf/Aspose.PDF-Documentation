@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-Класс [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor), представленный в пакете Aspose.Pdf.Facades, предоставляет гибкость для добавления действий Javascript в PDF файл. Вы можете создать ссылку с последовательными действиями, соответствующими выполнению пункта меню в просмотрщике PDF. Этот класс также предоставляет возможность создавать дополнительные действия для событий документа.
+Класс [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/PdfContentEditor), представленный в пакете Aspose.Pdf.Facades, предоставляет гибкость для добавления действий Javascript в PDF файл. Вы можете создать ссылку с последовательными действиями, соответствующими выполнению пункта меню в просмотрщике PDF. Этот класс также предоставляет возможность создавать дополнительные действия для событий документа.
 
-Прежде всего, объект рисуется в [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), в нашем примере это [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle). И устанавливается действие [createJavaScriptLink](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) для прямоугольника. После этого вы можете сохранить ваш документ.
+Прежде всего, объект рисуется в [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document), в нашем примере это [Rectangle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/rectangle). И устанавливается действие [createJavaScriptLink](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) для прямоугольника. После этого вы можете сохранить ваш документ.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

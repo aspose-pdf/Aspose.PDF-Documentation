@@ -77,7 +77,7 @@ draft: false
 
 ## استخراج صفحات PDF بين رقمين باستخدام مسارات الملفات
 
-تتيح لك طريقة [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) استخراج نطاق محدد من الصفحات من ملف PDF. يسمح لك هذا التحميل الزائد باستخراج الصفحات أثناء معالجة ملفات PDF من القرص. يتطلب هذا التحميل الزائد المعلمات التالية: مسار ملف الإدخال، الصفحة الأولى، الصفحة الأخيرة، ومسار ملف الإخراج. سيتم استخراج الصفحات من الصفحة الأولى إلى الصفحة الأخيرة وسيتم حفظ الإخراج على القرص. يوضح لك مقتطف الكود التالي كيفية استخراج صفحات PDF بين رقمين باستخدام مسارات الملفات.
+تتيح لك طريقة [Extract](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) استخراج نطاق محدد من الصفحات من ملف PDF. يسمح لك هذا التحميل الزائد باستخراج الصفحات أثناء معالجة ملفات PDF من القرص. يتطلب هذا التحميل الزائد المعلمات التالية: مسار ملف الإدخال، الصفحة الأولى، الصفحة الأخيرة، ومسار ملف الإخراج. سيتم استخراج الصفحات من الصفحة الأولى إلى الصفحة الأخيرة وسيتم حفظ الإخراج على القرص. يوضح لك مقتطف الكود التالي كيفية استخراج صفحات PDF بين رقمين باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -96,7 +96,7 @@ private static void Extract_PDFPages_FilePaths()
 
 ## استخراج مصفوفة من صفحات PDF باستخدام مسارات الملفات
 
-إذا كنت لا ترغب في استخراج نطاق من الصفحات، بل مجموعة من صفحات معينة، فإن طريقة [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) تتيح لك القيام بذلك أيضًا. تحتاج أولاً إلى إنشاء مصفوفة صحيحة تحتوي على جميع أرقام الصفحات التي تحتاج إلى استخراجها. يأخذ هذا التحميل الزائد من طريقة [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) المعلمات التالية: ملف PDF المدخل، مصفوفة صحيحة من الصفحات التي سيتم استخراجها، وملف PDF الناتج. يوضح لك مقتطف الكود التالي كيفية استخراج صفحات PDF باستخدام مسارات الملفات.
+إذا كنت لا ترغب في استخراج نطاق من الصفحات، بل مجموعة من صفحات معينة، فإن طريقة [Extract](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) تتيح لك القيام بذلك أيضًا. تحتاج أولاً إلى إنشاء مصفوفة صحيحة تحتوي على جميع أرقام الصفحات التي تحتاج إلى استخراجها. يأخذ هذا التحميل الزائد من طريقة [Extract](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) المعلمات التالية: ملف PDF المدخل، مصفوفة صحيحة من الصفحات التي سيتم استخراجها، وملف PDF الناتج. يوضح لك مقتطف الكود التالي كيفية استخراج صفحات PDF باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -122,7 +122,7 @@ private static void Extract_PDFPages_Streams()
 
 ## استخراج صفحات PDF بين رقمين باستخدام التدفقات
 
-تتيح لك طريقة [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) استخراج نطاق من الصفحات باستخدام التدفقات. تحتاج إلى تمرير المعلمات التالية إلى هذا التحميل الزائد: تدفق الإدخال، الصفحة الأولى، الصفحة الأخيرة، وتدفق الإخراج. سيتم استخراج الصفحات المحددة بواسطة النطاق بين الصفحة الأولى والصفحة الأخيرة من تدفق الإدخال وحفظها في تدفق الإخراج. يوضح لك مقتطف الكود التالي كيفية استخراج صفحات PDF بين رقمين باستخدام التدفقات.
+تتيح لك طريقة [Extract](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) استخراج نطاق من الصفحات باستخدام التدفقات. تحتاج إلى تمرير المعلمات التالية إلى هذا التحميل الزائد: تدفق الإدخال، الصفحة الأولى، الصفحة الأخيرة، وتدفق الإخراج. سيتم استخراج الصفحات المحددة بواسطة النطاق بين الصفحة الأولى والصفحة الأخيرة من تدفق الإدخال وحفظها في تدفق الإخراج. يوضح لك مقتطف الكود التالي كيفية استخراج صفحات PDF بين رقمين باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -141,7 +141,7 @@ private static void Extract_ArrayPDFPages_FilePaths()
 
 ## استخراج مصفوفة من صفحات PDF باستخدام التدفقات
 
-يمكن استخراج مصفوفة من الصفحات من تدفق PDF وحفظها في تدفق الإخراج باستخدام التحميل الزائد المناسب لطريقة [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index). إذا كنت لا ترغب في استخراج نطاق من الصفحات، بل مجموعة من صفحات معينة، فإن طريقة [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) تتيح لك القيام بذلك أيضًا. تحتاج أولاً إلى إنشاء مصفوفة صحيحة تحتوي على جميع أرقام الصفحات التي تحتاج إلى استخراجها. يأخذ هذا التحميل الزائد من طريقة [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) المعلمات التالية: تدفق الإدخال، مصفوفة صحيحة من الصفحات التي سيتم استخراجها وتدفق الإخراج. يوضح لك مقتطف الكود التالي كيفية استخراج صفحات PDF باستخدام التدفقات.
+يمكن استخراج مصفوفة من الصفحات من تدفق PDF وحفظها في تدفق الإخراج باستخدام التحميل الزائد المناسب لطريقة [Extract](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/extract/index). إذا كنت لا ترغب في استخراج نطاق من الصفحات، بل مجموعة من صفحات معينة، فإن طريقة [Extract](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) تتيح لك القيام بذلك أيضًا. تحتاج أولاً إلى إنشاء مصفوفة صحيحة تحتوي على جميع أرقام الصفحات التي تحتاج إلى استخراجها. يأخذ هذا التحميل الزائد من طريقة [Extract](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) المعلمات التالية: تدفق الإدخال، مصفوفة صحيحة من الصفحات التي سيتم استخراجها وتدفق الإخراج. يوضح لك مقتطف الكود التالي كيفية استخراج صفحات PDF باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

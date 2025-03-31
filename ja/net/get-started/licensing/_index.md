@@ -93,13 +93,13 @@ sitemap:
 
 ライセンスはファイルまたはストリームオブジェクトから読み込むことができます。ライセンスを設定する最も簡単な方法は、ライセンスファイルをAspose.PDF.dllファイルと同じフォルダーに置き、パスなしでファイル名を指定することです。以下の例に示すように。
 
-Aspose.PDF for .NET と一緒に他のAspose for .NETコンポーネントを使用する場合は、ライセンスの名前空間を [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license) のように指定してください。
+Aspose.PDF for .NET と一緒に他のAspose for .NETコンポーネントを使用する場合は、ライセンスの名前空間を [Aspose.Pdf.License](https://reference.aspose.com/pdf/ja/net/aspose.pdf/license) のように指定してください。
 
 ### ファイルからライセンスを読み込む
 
 ライセンスを適用する最も簡単な方法は、ライセンスファイルをAspose.PDF.dllファイルと同じフォルダーに置き、パスなしでファイル名を指定することです。
 
-[SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) メソッドを呼び出すとき、渡すライセンス名はライセンスファイルの名前である必要があります。たとえば、ライセンスファイル名を「Aspose.PDF.lic.xml」に変更した場合、そのファイル名をPdf.SetLicense(…)メソッドに渡します。
+[SetLicense](https://reference.aspose.com/pdf/ja/net/aspose.pdf/license/methods/setlicense/index) メソッドを呼び出すとき、渡すライセンス名はライセンスファイルの名前である必要があります。たとえば、ライセンスファイル名を「Aspose.PDF.lic.xml」に変更した場合、そのファイル名をPdf.SetLicense(…)メソッドに渡します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

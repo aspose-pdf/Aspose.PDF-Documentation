@@ -80,7 +80,7 @@ lastmod: "2024-10-23"
 </script>
 
 {{% alert color="primary" %}}
-**Aspose.PDF AI Copilot API**는 사용자가 다양한 공급자의 LLM을 사용하여 PDF 문서를 처리할 수 있도록 설계되었습니다. 이 [API](https://reference.aspose.com/pdf/net/aspose.pdf.ai/)는 사용자가 챗봇 애플리케이션을 구축하고 PDF 솔루션을 LLM과 통합하는 데 도움을 줄 것입니다.
+**Aspose.PDF AI Copilot API**는 사용자가 다양한 공급자의 LLM을 사용하여 PDF 문서를 처리할 수 있도록 설계되었습니다. 이 [API](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ai/)는 사용자가 챗봇 애플리케이션을 구축하고 PDF 솔루션을 LLM과 통합하는 데 도움을 줄 것입니다.
 {{% /alert %}}
 
 ## 주요 기능
@@ -93,7 +93,7 @@ lastmod: "2024-10-23"
 
 현재 사용할 수 있는 다음의 코파일럿이 있습니다:
 
-[**OpenAI Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaisummarycopilot/)는 사용자가 문서에서 요약을 생성할 수 있도록 합니다. 모델, 온도, 토큰 수, 모델 지침, 문서 첨부 파일 등과 같은 옵션을 구성하여 요약을 생성하는 편리한 방법을 제공합니다. 코파일럿은 비동기적으로 텍스트, 문서로 요약을 생성하고 다양한 형식으로 요약을 저장할 수 있습니다. 제공된 데모 코드는 OpenAI 클라이언트 생성, 코파일럿 옵션 구성 및 SummaryCopilot을 사용하여 요약을 생성하고 저장하는 방법을 보여줍니다.
+[**OpenAI Summary**](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ai/openaisummarycopilot/)는 사용자가 문서에서 요약을 생성할 수 있도록 합니다. 모델, 온도, 토큰 수, 모델 지침, 문서 첨부 파일 등과 같은 옵션을 구성하여 요약을 생성하는 편리한 방법을 제공합니다. 코파일럿은 비동기적으로 텍스트, 문서로 요약을 생성하고 다양한 형식으로 요약을 저장할 수 있습니다. 제공된 데모 코드는 OpenAI 클라이언트 생성, 코파일럿 옵션 구성 및 SummaryCopilot을 사용하여 요약을 생성하고 저장하는 방법을 보여줍니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -178,7 +178,7 @@ private static async Task GetSummary()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**OpenAI Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaichatcopilot/)는 문서와의 채팅 상호작용을 위해 설계된 AI 코파일럿입니다. 사용자 쿼리에 대한 응답을 생성하고 컨텍스트를 관리하는 데 도움을 줍니다. 사용자는 모델, 온도, 토큰 수, 모델 지침, 문서 첨부 파일 등과 같은 코파일럿 옵션을 구성할 수 있습니다. 코파일럿은 단일 또는 여러 쿼리에 대한 응답을 제공하고, 다양한 형식으로 응답을 저장하며, 컨텍스트를 저장하고 삭제할 수 있습니다.
+[**OpenAI Chat**](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ai/openaichatcopilot/)는 문서와의 채팅 상호작용을 위해 설계된 AI 코파일럿입니다. 사용자 쿼리에 대한 응답을 생성하고 컨텍스트를 관리하는 데 도움을 줍니다. 사용자는 모델, 온도, 토큰 수, 모델 지침, 문서 첨부 파일 등과 같은 코파일럿 옵션을 구성할 수 있습니다. 코파일럿은 단일 또는 여러 쿼리에 대한 응답을 제공하고, 다양한 형식으로 응답을 저장하며, 컨텍스트를 저장하고 삭제할 수 있습니다.
 
 제공된 코드는 OpenAI 클라이언트 생성, ChatCopilot 옵션 구성 및 ChatCopilot을 사용하여 사용자 쿼리와 상호작용하고 컨텍스트를 관리하는 방법을 보여줍니다.
 
@@ -303,7 +303,7 @@ private static async Task ChatWithDocument()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**OpenAI Image Description**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaiimagedescriptioncopilot/)는 PDF 문서 내의 이미지 및 별도의 이미지 파일에 대한 이미지 설명을 생성하기 위해 설계된 AI 코파일럿입니다. 사용자는 모델, 온도, 토큰 수, 모델 지침, 문서 첨부 파일 등과 같은 코파일럿 옵션을 구성할 수 있습니다. 코파일럿은 모든 첨부 문서에 대한 이미지 설명을 한 번에 가져올 수 있는 기능을 제공합니다.
+[**OpenAI Image Description**](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ai/openaiimagedescriptioncopilot/)는 PDF 문서 내의 이미지 및 별도의 이미지 파일에 대한 이미지 설명을 생성하기 위해 설계된 AI 코파일럿입니다. 사용자는 모델, 온도, 토큰 수, 모델 지침, 문서 첨부 파일 등과 같은 코파일럿 옵션을 구성할 수 있습니다. 코파일럿은 모든 첨부 문서에 대한 이미지 설명을 한 번에 가져올 수 있는 기능을 제공합니다.
 
 제공된 코드 조각은 OpenAI 클라이언트 생성, ImageDescriptionCopilot 옵션 구성 및 첨부 문서에 대한 이미지 설명을 얻기 위해 코파일럿을 사용하는 방법을 보여줍니다. 또한, 첨부 문서의 이미지에 이미지 설명을 추가하고 제공된 디렉토리에 새 문서를 저장할 수 있는 확장 메서드가 있습니다.
 
@@ -394,7 +394,7 @@ private static async Task CreateImageDescriptions()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/)는 Llama 채팅 완료 API에 요청을 보내기 위한 클라이언트를 생성할 수 있습니다.
+[**Llama Chat**](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ai/llamaclient/)는 Llama 채팅 완료 API에 요청을 보내기 위한 클라이언트를 생성할 수 있습니다.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -443,7 +443,7 @@ private static async Task ChatWithLlama()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/)는 Summary Copilot을 생성하는 데 사용할 수 있는 클라이언트를 제공합니다.
+[**Llama Summary**](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ai/llamaclient/)는 Summary Copilot을 생성하는 데 사용할 수 있는 클라이언트를 제공합니다.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -83,14 +83,14 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Adicionar objeto Círculo
 
-Assim como gráficos de barras, gráficos de círculos podem ser usados para exibir dados em várias categorias separadas. No entanto, ao contrário dos gráficos de barras, os gráficos de círculos podem ser usados apenas quando você tem dados para todas as categorias que compõem o todo. Então, vamos dar uma olhada em como adicionar um objeto [Círculo](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/circle) com Aspose.PDF for .NET.
+Assim como gráficos de barras, gráficos de círculos podem ser usados para exibir dados em várias categorias separadas. No entanto, ao contrário dos gráficos de barras, os gráficos de círculos podem ser usados apenas quando você tem dados para todas as categorias que compõem o todo. Então, vamos dar uma olhada em como adicionar um objeto [Círculo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/circle) com Aspose.PDF for .NET.
 
 Siga os passos abaixo:
 
-1. Crie uma instância de [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Crie um [objeto Drawing](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) com certas dimensões.
-1. Defina a [Borda](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) para o objeto Drawing.
-1. Adicione um objeto [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) à coleção de parágrafos da página.
+1. Crie uma instância de [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
+1. Crie um [objeto Drawing](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing) com certas dimensões.
+1. Defina a [Borda](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/graph/properties/border) para o objeto Drawing.
+1. Adicione um objeto [Graph](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/graph) à coleção de parágrafos da página.
 1. Salve nosso arquivo PDF.
 
 ```csharp

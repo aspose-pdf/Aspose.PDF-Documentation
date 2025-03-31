@@ -83,14 +83,14 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Tambahkan objek Lingkaran
 
-Seperti grafik batang, grafik lingkaran dapat digunakan untuk menampilkan data dalam sejumlah kategori terpisah. Namun, berbeda dengan grafik batang, grafik lingkaran hanya dapat digunakan ketika Anda memiliki data untuk semua kategori yang membentuk keseluruhan. Jadi mari kita lihat cara menambahkan objek [Lingkaran](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/circle) dengan Aspose.PDF for .NET.
+Seperti grafik batang, grafik lingkaran dapat digunakan untuk menampilkan data dalam sejumlah kategori terpisah. Namun, berbeda dengan grafik batang, grafik lingkaran hanya dapat digunakan ketika Anda memiliki data untuk semua kategori yang membentuk keseluruhan. Jadi mari kita lihat cara menambahkan objek [Lingkaran](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/circle) dengan Aspose.PDF for .NET.
 
 Ikuti langkah-langkah di bawah ini:
 
-1. Buat instance [Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Buat [Objek Gambar](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) dengan dimensi tertentu.
-1. Atur [Batas](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) untuk objek Gambar.
-1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) ke koleksi paragraf halaman.
+1. Buat instance [Dokumen](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Buat [Objek Gambar](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing) dengan dimensi tertentu.
+1. Atur [Batas](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/graph/properties/border) untuk objek Gambar.
+1. Tambahkan objek [Grafik](https://reference.aspose.com/pdf/id/net/aspose.pdf.drawing/graph) ke koleksi paragraf halaman.
 1. Simpan file PDF kami.
 
 ```csharp

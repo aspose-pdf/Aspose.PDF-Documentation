@@ -82,7 +82,7 @@ sitemap:
 
 ## Как добавить отступ строки в PDF
 
-Aspose.PDF for .NET предлагает свойство SubsequentLinesIndent в классе [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions), которое можно использовать для указания отступа строки в сценариях генерации PDF с TextFragment и коллекцией Paragraphs.
+Aspose.PDF for .NET предлагает свойство SubsequentLinesIndent в классе [TextFormattingOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textformattingoptions), которое можно использовать для указания отступа строки в сценариях генерации PDF с TextFragment и коллекцией Paragraphs.
 
 Пожалуйста, используйте следующий фрагмент кода, чтобы использовать это свойство:
 
@@ -203,7 +203,7 @@ private static void AddUnderlineText()
 
 ## Как добавить рамку вокруг добавленного текста
 
-Вы можете контролировать внешний вид добавляемого текста. В примере ниже показано, как добавить рамку вокруг фрагмента текста, который вы добавили, нарисовав вокруг него прямоугольник. Узнайте больше о классе [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor).
+Вы можете контролировать внешний вид добавляемого текста. В примере ниже показано, как добавить рамку вокруг фрагмента текста, который вы добавили, нарисовав вокруг него прямоугольник. Узнайте больше о классе [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

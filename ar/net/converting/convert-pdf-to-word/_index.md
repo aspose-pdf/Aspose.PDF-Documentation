@@ -118,7 +118,7 @@ _التنسيق_: **Word**
 
 <a name="csharp-pdf-to-doc"><strong>الخطوات: تحويل PDF إلى DOC في C#</strong></a>
 
-1. إنشاء مثيل من كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) مع مستند PDF المصدر.
+1. إنشاء مثيل من كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) مع مستند PDF المصدر.
 2. حفظه بتنسيق **SaveFormat.Doc** عن طريق استدعاء **Document.Save()**.
 
 ```csharp
@@ -139,13 +139,13 @@ private static void ConvertPDFtoWord()
 
 ### استخدام فئة DocSaveOptions
 
-توفر فئة [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) العديد من الخصائص التي تحسن تحويل ملفات PDF إلى تنسيق DOC. من بين هذه الخصائص، يتيح لك الوضع تحديد وضع التعرف على محتوى PDF. يمكنك اختيار أي قيمة من تعداد RecognitionMode لهذه الخاصية. كل من هذه القيم لها فوائد وقيود محددة:
+توفر فئة [`DocSaveOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/docsaveoptions) العديد من الخصائص التي تحسن تحويل ملفات PDF إلى تنسيق DOC. من بين هذه الخصائص، يتيح لك الوضع تحديد وضع التعرف على محتوى PDF. يمكنك اختيار أي قيمة من تعداد RecognitionMode لهذه الخاصية. كل من هذه القيم لها فوائد وقيود محددة:
 
-- وضع [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) سريع وجيد للحفاظ على المظهر الأصلي لملف PDF، ولكن قابلية تعديل المستند الناتج قد تكون محدودة. يتم تحويل كل كتلة نصية مرئية في ملف PDF الأصلي إلى مربع نص في المستند الناتج. وهذا يحقق أقصى تشابه مع الأصل، لذا يبدو المستند الناتج جيدًا، لكنه يتكون بالكامل من مربعات نصية، والتي يمكن تعديلها في Microsoft Word، وهو أمر صعب للغاية.
-- [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) هو وضع التعرف الكامل، حيث يقوم المحرك بأداء التجميع والتحليل متعدد المستويات لاستعادة المستند الأصلي وفقًا لنية المؤلف مع إنتاج مستند سهل التعديل. القيود هي أن المستند الناتج قد يبدو مختلفًا عن الأصل.
+- وضع [`Textbox`](https://reference.aspose.com/pdf/ar/net/aspose.pdf.docsaveoptions/recognitionmode) سريع وجيد للحفاظ على المظهر الأصلي لملف PDF، ولكن قابلية تعديل المستند الناتج قد تكون محدودة. يتم تحويل كل كتلة نصية مرئية في ملف PDF الأصلي إلى مربع نص في المستند الناتج. وهذا يحقق أقصى تشابه مع الأصل، لذا يبدو المستند الناتج جيدًا، لكنه يتكون بالكامل من مربعات نصية، والتي يمكن تعديلها في Microsoft Word، وهو أمر صعب للغاية.
+- [`Flow`](https://reference.aspose.com/pdf/ar/net/aspose.pdf.docsaveoptions/recognitionmode) هو وضع التعرف الكامل، حيث يقوم المحرك بأداء التجميع والتحليل متعدد المستويات لاستعادة المستند الأصلي وفقًا لنية المؤلف مع إنتاج مستند سهل التعديل. القيود هي أن المستند الناتج قد يبدو مختلفًا عن الأصل.
 
-يمكن استخدام خاصية [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) للتحكم في القرب النسبي بين العناصر النصية. يعني ذلك أن المسافة يتم قياسها حسب حجم الخط. قد تحتوي الخطوط الأكبر على مسافات أكبر بين المقاطع ولا تزال تعتبر ككل واحد. يتم تحديدها كنسبة مئوية من حجم الخط؛ على سبيل المثال، 1 = 100%. وهذا يعني أن حرفين بحجم 12pt موضوعة على بعد 12 pt تعتبر قريبة.
-- يتم استخدام [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) لتفعيل التعرف على النقاط أثناء التحويل.
+يمكن استخدام خاصية [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) للتحكم في القرب النسبي بين العناصر النصية. يعني ذلك أن المسافة يتم قياسها حسب حجم الخط. قد تحتوي الخطوط الأكبر على مسافات أكبر بين المقاطع ولا تزال تعتبر ككل واحد. يتم تحديدها كنسبة مئوية من حجم الخط؛ على سبيل المثال، 1 = 100%. وهذا يعني أن حرفين بحجم 12pt موضوعة على بعد 12 pt تعتبر قريبة.
+- يتم استخدام [`RecognitionBullets`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/docsaveoptions/properties/recognizebullets) لتفعيل التعرف على النقاط أثناء التحويل.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -190,7 +190,7 @@ private static void ConvertPDFtoWordDocAdvanced()
 
 <a name="csharp-pdf-to-docx"><strong>الخطوات: تحويل PDF إلى DOCX في C#</strong></a>
 
-1. إنشاء مثيل من كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) مع مستند PDF المصدر.
+1. إنشاء مثيل من كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) مع مستند PDF المصدر.
 2. حفظه بتنسيق **SaveFormat.DocX** عن طريق استدعاء **Document.Save()**.
 
 ```csharp

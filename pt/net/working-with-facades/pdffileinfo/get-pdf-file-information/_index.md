@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Para obter informações específicas de um arquivo PDF, você precisa criar um objeto da classe [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo). Depois disso, você pode obter os valores das propriedades individuais, como Assunto, Título, Palavras-chave e Criador, etc.
+Para obter informações específicas de um arquivo PDF, você precisa criar um objeto da classe [PdfFileInfo](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileinfo). Depois disso, você pode obter os valores das propriedades individuais, como Assunto, Título, Palavras-chave e Criador, etc.
 
 O seguinte trecho de código mostra como obter informações do arquivo PDF.
 
@@ -110,7 +110,7 @@ private static void GetPdfInfo()
 
 ## Obter Meta Informações
 
-Para obter informações, usamos a propriedade [Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header). Com 'Hashtable' obtemos todos os valores possíveis.
+Para obter informações, usamos a propriedade [Header](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdffileinfo/properties/header). Com 'Hashtable' obtemos todos os valores possíveis.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

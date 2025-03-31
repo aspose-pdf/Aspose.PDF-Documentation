@@ -85,7 +85,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 Artikel ini menjelaskan cara Mencetak File PDF ke Printer Default menggunakan Pengaturan Printer dan Halaman di C#.
 
-Kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) memungkinkan Anda untuk mencetak file PDF ke printer default. Anda perlu membuat objek PdfViewer dan membuka PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Untuk menentukan pengaturan cetak yang berbeda, gunakan kelas [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) dan [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/). Terakhir, panggil metode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) untuk mencetak PDF ke printer default. Potongan kode berikut menunjukkan cara mencetak PDF ke printer default dengan pengaturan printer dan halaman.
+Kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer) memungkinkan Anda untuk mencetak file PDF ke printer default. Anda perlu membuat objek PdfViewer dan membuka PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Untuk menentukan pengaturan cetak yang berbeda, gunakan kelas [PageSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf.printing/pagesettings/) dan [PrinterSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf.printing/printersettings/). Terakhir, panggil metode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) untuk mencetak PDF ke printer default. Potongan kode berikut menunjukkan cara mencetak PDF ke printer default dengan pengaturan printer dan halaman.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -261,7 +261,7 @@ private static void PrintWithPrintDialog()
  
 Sejak rilis 24.4, memilih sumber kertas berdasarkan ukuran halaman PDF di dialog cetak adalah mungkin. Potongan kode berikut memungkinkan pemilihan baki printer berdasarkan ukuran halaman PDF.
 
-Preferensi ini dapat dihidupkan dan dimatikan menggunakan properti [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+Preferensi ini dapat dihidupkan dan dimatikan menggunakan properti [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Многие пользователи хотят ставить многострочный текст на свои PDF-документы. Обычно они пытаются использовать `\n` и `<br>`, но такие символы не поддерживаются пространством имен Aspose.Pdf.Facades. Поэтому, чтобы сделать это возможным, мы добавили еще один метод под названием [AddNewLineText()](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) в класс [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) пространства имен Aspose.Pdf.Facades.
+Многие пользователи хотят ставить многострочный текст на свои PDF-документы. Обычно они пытаются использовать `\n` и `<br>`, но такие символы не поддерживаются пространством имен Aspose.Pdf.Facades. Поэтому, чтобы сделать это возможным, мы добавили еще один метод под названием [AddNewLineText()](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) в класс [FormattedText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formattedtext) пространства имен Aspose.Pdf.Facades.
 
 {{% /alert %}}
 

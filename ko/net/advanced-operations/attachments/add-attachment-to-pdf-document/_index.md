@@ -85,11 +85,11 @@ sitemap:
 
 1. 새 C# 프로젝트를 만듭니다.
 1. Aspose.PDF DLL에 대한 참조를 추가합니다.
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성합니다.
-1. 추가할 파일과 파일 설명으로 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 객체를 생성합니다.
-1. [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 객체를 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션에 추가합니다. 컬렉션의 Add 메서드를 사용합니다.
+1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체를 생성합니다.
+1. 추가할 파일과 파일 설명으로 [FileSpecification](https://reference.aspose.com/pdf/ko/net/aspose.pdf/filespecification) 객체를 생성합니다.
+1. [FileSpecification](https://reference.aspose.com/pdf/ko/net/aspose.pdf/filespecification) 객체를 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체의 [EmbeddedFiles](https://reference.aspose.com/pdf/ko/net/aspose.pdf/embeddedfilecollection) 컬렉션에 추가합니다. 컬렉션의 Add 메서드를 사용합니다.
 
-[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션은 PDF 파일의 모든 첨부파일을 포함합니다. 다음 코드 스니펫은 PDF 문서에 첨부파일을 추가하는 방법을 보여줍니다.
+[EmbeddedFiles](https://reference.aspose.com/pdf/ko/net/aspose.pdf/embeddedfilecollection) 컬렉션은 PDF 파일의 모든 첨부파일을 포함합니다. 다음 코드 스니펫은 PDF 문서에 첨부파일을 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

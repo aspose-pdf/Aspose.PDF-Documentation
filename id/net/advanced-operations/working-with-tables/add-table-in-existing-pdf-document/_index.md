@@ -80,7 +80,7 @@ sitemap:
 
 ## Membuat Tabel menggunakan C\#
 
-Tabel sangat penting saat bekerja dengan dokumen PDF. Mereka menyediakan fitur hebat untuk menampilkan informasi secara sistematis. Ruang nama Aspose.PDF berisi kelas-kelas bernama [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), dan [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) yang menyediakan fungsionalitas untuk membuat tabel saat menghasilkan dokumen PDF dari awal.
+Tabel sangat penting saat bekerja dengan dokumen PDF. Mereka menyediakan fitur hebat untuk menampilkan informasi secara sistematis. Ruang nama Aspose.PDF berisi kelas-kelas bernama [Table](https://reference.aspose.com/pdf/id/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/id/net/aspose.pdf/cell), dan [Row](https://reference.aspose.com/pdf/id/net/aspose.pdf/row) yang menyediakan fungsionalitas untuk membuat tabel saat menghasilkan dokumen PDF dari awal.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -140,7 +140,7 @@ private static void AddTable()
 
 ### ColSpan dan RowSpan di Tabel
 
-Aspose.PDF for .NET menyediakan properti [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) untuk menggabungkan kolom dalam tabel dan properti [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) untuk menggabungkan baris.
+Aspose.PDF for .NET menyediakan properti [ColSpan](https://reference.aspose.com/pdf/id/net/aspose.pdf/cell/properties/colspan) untuk menggabungkan kolom dalam tabel dan properti [RowSpan](https://reference.aspose.com/pdf/id/net/aspose.pdf/cell/properties/rowspan) untuk menggabungkan baris.
 
 Kami menggunakan properti `ColSpan` atau `RowSpan` pada objek `Cell` yang membuat sel tabel. Setelah menerapkan properti yang diperlukan, sel yang dibuat dapat ditambahkan ke tabel.
 
@@ -225,11 +225,11 @@ Dalam gambar di atas, Anda dapat melihat bahwa batas tabel, baris, dan sel tumpa
 
 ### Batas
 
-Untuk mengatur batas Tabel, [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) dan [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) objek, gunakan properti Table.Border, Row.Border, dan Cell.Border. Batas sel juga dapat diatur menggunakan properti DefaultCellBorder dari kelas [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) atau Row. Semua properti terkait batas yang dibahas di atas ditugaskan ke sebuah instance dari kelas Row, yang dibuat dengan memanggil konstruktornya. Kelas Row memiliki banyak overload yang mengambil hampir semua parameter yang diperlukan untuk menyesuaikan batas.
+Untuk mengatur batas Tabel, [Row](https://reference.aspose.com/pdf/id/net/aspose.pdf/row) dan [Cell](https://reference.aspose.com/pdf/id/net/aspose.pdf/cell) objek, gunakan properti Table.Border, Row.Border, dan Cell.Border. Batas sel juga dapat diatur menggunakan properti DefaultCellBorder dari kelas [Table](https://reference.aspose.com/pdf/id/net/aspose.pdf/table) atau Row. Semua properti terkait batas yang dibahas di atas ditugaskan ke sebuah instance dari kelas Row, yang dibuat dengan memanggil konstruktornya. Kelas Row memiliki banyak overload yang mengambil hampir semua parameter yang diperlukan untuk menyesuaikan batas.
 
 ### Margin atau Padding
 
-Padding sel dapat dikelola menggunakan properti [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) dari kelas Tabel. Semua properti terkait padding ditugaskan ke sebuah instance dari kelas [MarginInfo](https://reference.aspose.com/pdf/net/aspose.pdf/margininfo) yang mengambil informasi tentang parameter `Kiri`, `Kanan`, `Atas`, dan `Bawah` untuk membuat margin kustom.
+Padding sel dapat dikelola menggunakan properti [DefaultCellPadding](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/defaultcellpadding) dari kelas Tabel. Semua properti terkait padding ditugaskan ke sebuah instance dari kelas [MarginInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf/margininfo) yang mengambil informasi tentang parameter `Kiri`, `Kanan`, `Atas`, dan `Bawah` untuk membuat margin kustom.
 
 Dalam contoh berikut, lebar batas sel diatur menjadi 0,1 poin, lebar batas tabel diatur menjadi 1 poin, dan padding sel diatur menjadi 5 poin.
 
@@ -369,7 +369,7 @@ private static void AddAutoFitToWindow()
 
 ### Mendapatkan Lebar Tabel
 
-Terkadang, diperlukan untuk mendapatkan lebar tabel secara dinamis. Kelas Aspose.PDF.Table memiliki metode [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) untuk tujuan ini. Misalnya, Anda belum mengatur lebar kolom tabel secara eksplisit dan mengatur [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) ke AutoFitToContent. Dalam hal ini, Anda dapat mendapatkan lebar tabel sebagai berikut.
+Terkadang, diperlukan untuk mendapatkan lebar tabel secara dinamis. Kelas Aspose.PDF.Table memiliki metode [GetWidth](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/methods/getwidth) untuk tujuan ini. Misalnya, Anda belum mengatur lebar kolom tabel secara eksplisit dan mengatur [ColumnAdjustment](https://reference.aspose.com/pdf/id/net/aspose.pdf/table/properties/columnadjustment) ke AutoFitToContent. Dalam hal ini, Anda dapat mendapatkan lebar tabel sebagai berikut.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -561,7 +561,7 @@ Secara default, paragraf ditambahkan ke koleksi Paragraf objek Halaman. Namun, d
 
 ### Contoh: Cara Merender Tabel di Halaman Baru menggunakan C\#
 
-Untuk merender tabel di halaman baru, gunakan properti [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) di kelas BaseParagraph. Potongan kode berikut menunjukkan caranya.
+Untuk merender tabel di halaman baru, gunakan properti [IsInNewPage](https://reference.aspose.com/pdf/id/net/aspose.pdf/baseparagraph/properties/isinnewpage) di kelas BaseParagraph. Potongan kode berikut menunjukkan caranya.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

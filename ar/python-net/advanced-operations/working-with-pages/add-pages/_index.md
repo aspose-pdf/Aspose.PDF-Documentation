@@ -91,8 +91,8 @@ Aspose.PDF لـ Python عبر .NET يتيح لك إدراج صفحة في مست
 
 1. قم بإنشاء كائن فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع ملف PDF المدخل.
 
-1. استدعاء طريقة [insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) لمجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) مع الفهرس المحدد.
-1. احفظ ملف PDF الناتج باستخدام طريقة [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. استدعاء طريقة [insert](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection/methods/insert) لمجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) مع الفهرس المحدد.
+1. احفظ ملف PDF الناتج باستخدام طريقة [save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
 
 يوضح لك مقطع الشيفرة البرمجية التالي كيفية إدراج صفحة في ملف PDF.
 

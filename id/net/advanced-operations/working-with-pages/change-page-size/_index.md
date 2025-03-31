@@ -84,13 +84,13 @@ Aspose.PDF for .NET memungkinkan Anda mengubah ukuran halaman PDF dengan baris k
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) berisi metode SetPageSize(...) yang memungkinkan Anda mengatur ukuran halaman. Potongan kode di bawah ini memperbarui dimensi halaman dalam beberapa langkah mudah:
+Kelas [Page](https://reference.aspose.com/pdf/id/net/aspose.pdf/page) berisi metode SetPageSize(...) yang memungkinkan Anda mengatur ukuran halaman. Potongan kode di bawah ini memperbarui dimensi halaman dalam beberapa langkah mudah:
 
 1. Muat file PDF sumber.
-1. Dapatkan halaman ke dalam objek [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. Dapatkan halaman ke dalam objek [PageCollection](https://reference.aspose.com/pdf/id/net/aspose.pdf/pagecollection).
 1. Dapatkan halaman tertentu.
 1. Panggil metode SetPageSize(..) untuk memperbarui dimensinya.
-1. Panggil metode Save(..) dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) untuk menghasilkan file PDF dengan dimensi halaman yang diperbarui.
+1. Panggil metode Save(..) dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) untuk menghasilkan file PDF dengan dimensi halaman yang diperbarui.
 
 {{% alert color="primary" %}}
 
