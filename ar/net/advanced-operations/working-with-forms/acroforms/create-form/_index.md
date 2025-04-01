@@ -2,6 +2,8 @@
 title: إنشاء AcroForm - إنشاء PDF قابل للتعبئة في C#
 linktitle: إنشاء AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/create-form/
 description: مع Aspose.PDF for .NET يمكنك إنشاء نموذج من الصفر في ملف PDF الخاص بك
