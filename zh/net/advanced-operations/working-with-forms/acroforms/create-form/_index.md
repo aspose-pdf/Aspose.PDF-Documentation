@@ -1,10 +1,10 @@
 ---
-title: 创建AcroForm - 在C#中生成可填写PDF
-linktitle: 创建AcroForm
+title: 创建 AcroForm - 在 C# 中创建可填写 PDF
+linktitle: 创建 AcroForm
 type: docs
 weight: 10
 url: /zh/net/create-form/
-description: 通过Aspose.PDF for .NET，您可以在PDF文件中从头开始创建表单
+description: 使用 Aspose.PDF for .NET，您可以在 PDF 文件中从头开始创建表单
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET引入了从零开始创建可填写PDF表单的能力，允许开发者无缝集成可定制的表单字段，如文本框、单选按钮和组合框到PDF中。此功能使用户能够增强文档交互性并优化应用程序内的数据收集",
+    "abstract": "Aspose.PDF for .NET 引入了从头开始创建可填写 PDF 表单的能力，使开发人员能够无缝地将可自定义的表单字段（如文本框、单选按钮和组合框）集成到他们的 PDF 中。这一功能使用户能够增强文档的互动性，并改善其应用程序中的数据收集",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "3819",
+    "wordcount": "3870",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,27 +72,27 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-31",
-    "description": "通过Aspose.PDF for .NET，您可以在PDF文件中从头开始创建表单"
+    "dateModified": "2025-04-01",
+    "description": "使用 Aspose.PDF for .NET，您可以在 PDF 文件中从头开始创建表单"
 }
 </script>
 
-以下代码片段同样适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
-## 从零创建表单
+## 从头创建表单
 
-### 在PDF文档中添加表单字段
+### 在 PDF 文档中添加表单字段
 
-[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)类提供了一个名为[Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/form)的集合，帮助您管理PDF文档中的表单字段。
+[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类提供了一个名为 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/form) 的集合，帮助您管理 PDF 文档中的表单字段。
 
-添加表单字段的步骤：
+要添加表单字段：
 
 1. 创建您想要添加的表单字段。
-1. 调用[Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/form)集合的Add方法。
+1. 调用 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/form) 集合的 Add 方法。
 
-### 添加TextBoxField
+### 添加 TextBoxField
 
-以下示例展示如何添加[TextBoxField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/textboxfield)。
+以下示例演示如何添加 [TextBoxField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/textboxfield)。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -167,9 +167,9 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 添加RadioButtonField
+### 添加 RadioButtonField
 
-以下代码片段展示如何在PDF文档中添加[RadioButtonField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/radiobuttonfield)。
+以下代码片段演示如何在 PDF 文档中添加 [RadioButtonField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/radiobuttonfield)。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -240,7 +240,7 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-[TextBoxField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/textboxfield)可以添加一些部件注解。
+[TextBoxField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/textboxfield) 可以与一些小部件注释一起添加。
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -259,7 +259,7 @@ private static void AddTextBoxFieldToPdf()
 
         // Defining an array with rectangle data for widget annotations. 
         // The number of elements in the array determines the number of widget annotations to add.
-        var rects = new Rectangle[]
+        var rects = new Aspose.Pdf.Rectangle[]
         {
             new Aspose.Pdf.Rectangle(10, 600, 110, 620),
             new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -312,7 +312,7 @@ private static void AddTextBoxFieldToPdf()
 
     // Defining an array with rectangle data for widget annotations. 
     // The number of elements in the array determines the number of widget annotations to add.
-    var rects = new Rectangle[]
+    var rects = new Aspose.Pdf.Rectangle[]
     {
         new Aspose.Pdf.Rectangle(10, 600, 110, 620),
         new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -348,7 +348,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-以下代码片段展示了添加带有三个选项的RadioButtonField并将其放置在表格单元格中的步骤。
+以下代码片段演示了将具有三个选项的 RadioButtonField 添加到表格单元格中的步骤。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -525,9 +525,9 @@ private static void AddRadioButtonWithOptionsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 为RadioButtonField添加标题
+### 为 RadioButtonField 添加标题
 
-以下代码片段展示如何添加与RadioButtonField关联的标题：
+以下代码片段演示如何为与 RadioButtonField 关联的标题添加：
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -644,9 +644,9 @@ private static void AddingCaptionToRadioButtonField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 另一种添加分组复选框的方法
+### 添加分组复选框的另一种变体
 
-以下代码片段展示如何在PDF文档中添加分组复选框字段。
+以下代码片段演示如何在 PDF 文档中添加分组复选框字段。
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -660,7 +660,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-		// Add page to PDF file
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         var radioButtonField = new Aspose.Pdf.Forms.RadioButtonField(page);
@@ -756,9 +756,9 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 添加ComboBox字段
+### 添加 ComboBox 字段
 
-以下代码片段展示如何在PDF文档中添加ComboBox字段。
+以下代码片段演示如何在 PDF 文档中添加 ComboBox 字段。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -829,9 +829,9 @@ private static void AddComboBoxToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 添加CheckboxField
+### 添加 CheckboxField
 
-以下代码片段展示如何在PDF文档中添加CheckboxField。
+以下代码片段演示如何在 PDF 文档中添加 CheckboxField。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -894,9 +894,9 @@ private static void AddCheckBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 添加ListBoxField
+### 添加 ListBoxField
 
-以下代码片段展示如何在PDF文档中添加ListBoxField。
+以下代码片段演示如何在 PDF 文档中添加 ListBoxField。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -961,9 +961,9 @@ private static void AddListBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 使用SignatureField
+### 使用 SignatureField
 
-以下代码片段展示如何通过SignatureField签署PDF文档。
+以下代码片段演示如何通过 SignatureField 签署 PDF 文档。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1032,11 +1032,11 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 为表单字段添加提示
+### 为表单字段添加工具提示
 
-Document类提供了一个名为Form的集合，用于管理PDF文档中的表单字段。要为表单字段添加提示，使用Field类的AlternateName属性。Adobe Acrobat使用'alternate name'作为字段提示。
+Document 类提供了一个名为 Form 的集合，用于管理 PDF 文档中的表单字段。要为表单字段添加工具提示，请使用 Field 类的 AlternateName。Adobe Acrobat 使用“替代名称”作为字段工具提示。
 
-以下代码片段展示如何为表单字段添加提示，首先是C#，然后是Visual Basic。
+以下代码片段演示了如何为表单字段添加工具提示，首先使用 C#，然后使用 Visual Basic。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

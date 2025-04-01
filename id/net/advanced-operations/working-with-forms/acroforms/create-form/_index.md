@@ -4,7 +4,7 @@ linktitle: Buat AcroForm
 type: docs
 weight: 10
 url: /id/net/create-form/
-description: Dengan Aspose.PDF for .NET Anda dapat membuat formulir dari awal dalam file PDF Anda
+description: Dengan Aspose.PDF for .NET Anda dapat membuat formulir dari awal di file PDF Anda
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET memperkenalkan kemampuan untuk membuat formulir PDF yang dapat diisi dari awal, memungkinkan pengembang untuk mengintegrasikan dengan mulus bidang formulir yang dapat disesuaikan seperti kotak teks, tombol radio, dan kotak kombo ke dalam PDF mereka. Fungsi ini memberdayakan pengguna untuk meningkatkan interaktivitas dokumen dan memperbaiki pengumpulan data dalam aplikasi mereka.",
+    "abstract": "Aspose.PDF for .NET memperkenalkan kemampuan untuk membuat formulir PDF yang dapat diisi dari awal, memungkinkan pengembang untuk mengintegrasikan bidang formulir yang dapat disesuaikan seperti kotak teks, tombol radio, dan kotak kombo ke dalam PDF mereka. Fungsionalitas ini memberdayakan pengguna untuk meningkatkan interaktivitas dokumen dan memperbaiki pengumpulan data dalam aplikasi mereka",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "3999",
+    "wordcount": "4004",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-31",
+    "dateModified": "2025-04-01",
     "description": "Dengan Aspose.PDF for .NET Anda dapat membuat formulir dari awal di file PDF Anda"
 }
 </script>
@@ -81,18 +81,18 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Buat formulir dari awal
 
-### Tambahkan Field Formulir dalam Dokumen PDF
+### Tambahkan Bidang Formulir di Dokumen PDF
 
-Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menyediakan koleksi bernama [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) yang membantu Anda mengelola field formulir dalam dokumen PDF.
+Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menyediakan koleksi bernama [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) yang membantu Anda mengelola bidang formulir dalam dokumen PDF.
 
-Untuk menambahkan field formulir:
+Untuk menambahkan bidang formulir:
 
-1. Buat field formulir yang ingin Anda tambahkan.
+1. Buat bidang formulir yang ingin Anda tambahkan.
 1. Panggil metode Add dari koleksi [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form).
 
 ### Menambahkan TextBoxField
 
-Contoh di bawah menunjukkan cara menambahkan [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
+Contoh di bawah ini menunjukkan cara menambahkan [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -259,7 +259,7 @@ private static void AddTextBoxFieldToPdf()
 
         // Defining an array with rectangle data for widget annotations. 
         // The number of elements in the array determines the number of widget annotations to add.
-        var rects = new Rectangle[]
+        var rects = new Aspose.Pdf.Rectangle[]
         {
             new Aspose.Pdf.Rectangle(10, 600, 110, 620),
             new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -312,7 +312,7 @@ private static void AddTextBoxFieldToPdf()
 
     // Defining an array with rectangle data for widget annotations. 
     // The number of elements in the array determines the number of widget annotations to add.
-    var rects = new Rectangle[]
+    var rects = new Aspose.Pdf.Rectangle[]
     {
         new Aspose.Pdf.Rectangle(10, 600, 110, 620),
         new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -644,9 +644,9 @@ private static void AddingCaptionToRadioButtonField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Variasi lain untuk menambahkan Checkbox yang dikelompokkan
+### Varian lain untuk menambahkan Checkbox yang dikelompokkan
 
-Potongan kode berikut menunjukkan cara menambahkan field CheckBox yang dikelompokkan dalam dokumen PDF.
+Potongan kode berikut menunjukkan cara menambahkan bidang checkBox yang dikelompokkan dalam dokumen PDF.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -660,7 +660,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-		// Add page to PDF file
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         var radioButtonField = new Aspose.Pdf.Forms.RadioButtonField(page);
@@ -756,9 +756,9 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Menambahkan field ComboBox
+### Menambahkan bidang ComboBox
 
-Potongan kode berikut menunjukkan cara menambahkan field ComboBox dalam dokumen PDF.
+Potongan kode berikut menunjukkan cara menambahkan bidang ComboBox dalam dokumen PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1032,11 +1032,11 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Tambahkan Tooltip ke Field Formulir
+### Tambahkan Tooltip ke Bidang Formulir
 
-Kelas Document menyediakan koleksi bernama Form yang mengelola field formulir dalam dokumen PDF. Untuk menambahkan tooltip ke field formulir, gunakan AlternateName dari kelas Field. Adobe Acrobat menggunakan 'alternate name' sebagai tooltip field.
+Kelas Document menyediakan koleksi bernama Form yang mengelola bidang formulir dalam dokumen PDF. Untuk menambahkan tooltip ke bidang formulir, gunakan kelas Field AlternateName. Adobe Acrobat menggunakan 'nama alternatif' sebagai tooltip bidang.
 
-Potongan kode berikut menunjukkan cara menambahkan tooltip ke field formulir, pertama menggunakan C# dan kemudian Visual Basic.
+Potongan kode yang mengikuti menunjukkan cara menambahkan tooltip ke bidang formulir, pertama menggunakan C# dan kemudian Visual Basic.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

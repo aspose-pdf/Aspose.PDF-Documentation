@@ -1,6 +1,6 @@
 ---
-title: Créer un AcroForm - Créer un PDF remplissable en C#
-linktitle: Créer un AcroForm
+title: Créer AcroForm - Créer un PDF remplissable en C#
+linktitle: Créer AcroForm
 type: docs
 weight: 10
 url: /fr/net/create-form/
@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET introduit la capacité de créer des formulaires PDF remplissables à partir de zéro, permettant aux développeurs d'intégrer de manière transparente des champs de formulaire personnalisables tels que des zones de texte, des boutons radio et des listes déroulantes dans leurs PDF. Cette fonctionnalité permet aux utilisateurs d'améliorer l'interactivité des documents et de faciliter la collecte de données dans leurs applications.",
+    "abstract": "Aspose.PDF for .NET introduit la possibilité de créer des formulaires PDF remplissables à partir de zéro, permettant aux développeurs d'intégrer sans effort des champs de formulaire personnalisables tels que des zones de texte, des boutons radio et des listes déroulantes dans leurs PDF. Cette fonctionnalité permet aux utilisateurs d'améliorer l'interactivité des documents et d'améliorer la collecte de données au sein de leurs applications",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "4109",
+    "wordcount": "4104",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,12 +72,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-31",
+    "dateModified": "2025-04-01",
     "description": "Avec Aspose.PDF for .NET, vous pouvez créer un formulaire à partir de zéro dans votre fichier PDF"
 }
 </script>
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Créer un formulaire à partir de zéro
 
@@ -90,7 +90,7 @@ Pour ajouter un champ de formulaire :
 1. Créez le champ de formulaire que vous souhaitez ajouter.
 1. Appelez la méthode Add de la collection [Form](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/properties/form).
 
-### Ajout d'un TextBoxField
+### Ajouter un TextBoxField
 
 L'exemple ci-dessous montre comment ajouter un [TextBoxField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/textboxfield).
 
@@ -167,7 +167,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajout d'un RadioButtonField
+### Ajouter un RadioButtonField
 
 Les extraits de code suivants montrent comment ajouter un [RadioButtonField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/radiobuttonfield) dans un document PDF.
 
@@ -240,7 +240,7 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-[TextBoxField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/textboxfield) peut être ajouté avec des annotations de widget.
+[TextBoxField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/textboxfield) peut être ajouté avec certaines annotations de widget.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -259,7 +259,7 @@ private static void AddTextBoxFieldToPdf()
 
         // Defining an array with rectangle data for widget annotations. 
         // The number of elements in the array determines the number of widget annotations to add.
-        var rects = new Rectangle[]
+        var rects = new Aspose.Pdf.Rectangle[]
         {
             new Aspose.Pdf.Rectangle(10, 600, 110, 620),
             new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -312,7 +312,7 @@ private static void AddTextBoxFieldToPdf()
 
     // Defining an array with rectangle data for widget annotations. 
     // The number of elements in the array determines the number of widget annotations to add.
-    var rects = new Rectangle[]
+    var rects = new Aspose.Pdf.Rectangle[]
     {
         new Aspose.Pdf.Rectangle(10, 600, 110, 620),
         new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -348,7 +348,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-L'extrait de code suivant montre les étapes pour ajouter un RadioButtonField avec trois options et les placer dans des cellules de tableau.
+L'extrait de code suivant montre les étapes pour ajouter un RadioButtonField avec trois options et les placer à l'intérieur des cellules d'un tableau.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -525,9 +525,9 @@ private static void AddRadioButtonWithOptionsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajout d'une légende à un RadioButtonField
+### Ajouter une légende à RadioButtonField
 
-L'extrait de code suivant montre comment ajouter une légende qui sera associée au RadioButtonField :
+L'extrait de code suivant montre comment ajouter une légende qui sera associée à RadioButtonField :
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -646,7 +646,7 @@ private static void AddingCaptionToRadioButtonField()
 
 ### Une autre variante pour ajouter des cases à cocher groupées
 
-Les extraits de code suivants montrent comment ajouter des champs de cases à cocher groupées dans un document PDF.
+Les extraits de code suivants montrent comment ajouter des champs de case à cocher groupés dans un document PDF.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -660,7 +660,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-		// Add page to PDF file
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         var radioButtonField = new Aspose.Pdf.Forms.RadioButtonField(page);
@@ -756,7 +756,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajout d'un champ ComboBox
+### Ajouter un champ ComboBox
 
 Les extraits de code suivants montrent comment ajouter un champ ComboBox dans un document PDF.
 
@@ -829,7 +829,7 @@ private static void AddComboBoxToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajout d'un CheckboxField
+### Ajouter un CheckboxField
 
 L'extrait de code suivant montre comment ajouter un CheckboxField dans un document PDF.
 
@@ -894,7 +894,7 @@ private static void AddCheckBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajout d'un ListBoxField
+### Ajouter un ListBoxField
 
 L'extrait de code suivant montre comment ajouter un ListBoxField dans un document PDF.
 
@@ -961,9 +961,9 @@ private static void AddListBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Utilisation d'un SignatureField
+### Utiliser SignatureField
 
-L'extrait de code suivant montre comment signer un document PDF avec un SignatureField.
+L'extrait de code suivant montre comment signer un document PDF par SignatureField.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1032,11 +1032,11 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajout d'une info-bulle à un champ de formulaire
+### Ajouter une info-bulle à un champ de formulaire
 
-La classe Document fournit une collection nommée Form qui gère les champs de formulaire dans un document PDF. Pour ajouter une info-bulle à un champ de formulaire, utilisez la propriété AlternateName de la classe Field. Adobe Acrobat utilise le 'nom alternatif' comme info-bulle de champ.
+La classe Document fournit une collection nommée Form qui gère les champs de formulaire dans un document PDF. Pour ajouter une info-bulle à un champ de formulaire, utilisez la propriété AlternateName de la classe Field. Adobe Acrobat utilise le « nom alternatif » comme info-bulle de champ.
 
-Les extraits de code suivants montrent comment ajouter une info-bulle à un champ de formulaire, d'abord en C# puis en Visual Basic.
+Les extraits de code qui suivent montrent comment ajouter une info-bulle à un champ de formulaire, d'abord en utilisant C# puis Visual Basic.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

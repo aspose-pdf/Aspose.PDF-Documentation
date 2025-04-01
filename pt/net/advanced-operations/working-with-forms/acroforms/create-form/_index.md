@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET introduz a capacidade de criar formulários PDF preenchíveis do zero, permitindo que os desenvolvedores integrem perfeitamente campos de formulário personalizáveis, como caixas de texto, botões de rádio e caixas combinadas, em seus PDFs. Essa funcionalidade capacita os usuários a melhorar a interatividade dos documentos e aprimorar a coleta de dados em suas aplicações",
+    "abstract": "Aspose.PDF for .NET introduz a capacidade de criar formulários PDF preenchíveis do zero, permitindo que os desenvolvedores integrem perfeitamente campos de formulário personalizáveis, como caixas de texto, botões de opção e caixas de combinação em seus PDFs. Essa funcionalidade capacita os usuários a melhorar a interatividade do documento e aprimorar a coleta de dados em suas aplicações",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "4064",
+    "wordcount": "4063",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -72,8 +72,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2025-03-31",
-    "description": "With Aspose.PDF for .NET you may create a form from scratch in your PDF file"
+    "dateModified": "2025-04-01",
+    "description": "Com Aspose.PDF for .NET você pode criar um formulário do zero em seu arquivo PDF"
 }
 </script>
 
@@ -169,7 +169,7 @@ private static void AddTextBoxFieldToPdf()
 
 ### Adicionando RadioButtonField
 
-Os trechos de código a seguir mostram como adicionar [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) em um documento PDF.
+Os seguintes trechos de código mostram como adicionar [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) em um documento PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -259,7 +259,7 @@ private static void AddTextBoxFieldToPdf()
 
         // Defining an array with rectangle data for widget annotations. 
         // The number of elements in the array determines the number of widget annotations to add.
-        var rects = new Rectangle[]
+        var rects = new Aspose.Pdf.Rectangle[]
         {
             new Aspose.Pdf.Rectangle(10, 600, 110, 620),
             new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -312,7 +312,7 @@ private static void AddTextBoxFieldToPdf()
 
     // Defining an array with rectangle data for widget annotations. 
     // The number of elements in the array determines the number of widget annotations to add.
-    var rects = new Rectangle[]
+    var rects = new Aspose.Pdf.Rectangle[]
     {
         new Aspose.Pdf.Rectangle(10, 600, 110, 620),
         new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -348,7 +348,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-O seguinte trecho de código mostra as etapas para adicionar RadioButtonField com três opções e colocá-las dentro de células de Tabela.
+O seguinte trecho de código mostra os passos para adicionar RadioButtonField com três opções e colocá-los dentro de células de tabela.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -525,7 +525,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Adicionando Legenda a RadioButtonField
+### Adicionando Legenda ao RadioButtonField
 
 O seguinte trecho de código mostra como adicionar uma legenda que será associada ao RadioButtonField:
 
@@ -644,9 +644,9 @@ private static void AddingCaptionToRadioButtonField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Outra variante para adicionar Checkboxes agrupados
+### Outro variante para adicionar Checkboxes agrupados
 
-Os trechos de código a seguir mostram como adicionar campos de CheckBox agrupados em um documento PDF.
+Os seguintes trechos de código mostram como adicionar campos de checkbox agrupados em um documento PDF.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -660,7 +660,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-		// Add page to PDF file
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         var radioButtonField = new Aspose.Pdf.Forms.RadioButtonField(page);
@@ -758,7 +758,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 
 ### Adicionando campo ComboBox
 
-Os trechos de código a seguir mostram como adicionar um campo ComboBox em um documento PDF.
+Os seguintes trechos de código mostram como adicionar um campo ComboBox em um documento PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -963,7 +963,7 @@ private static void AddListBoxFieldToPdf()
 
 ### Usando SignatureField
 
-O seguinte trecho de código mostra como assinar um documento PDF com SignatureField.
+O seguinte trecho de código mostra como assinar um documento PDF usando SignatureField.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1034,9 +1034,9 @@ private static void SignPdfBySignatureField()
 
 ### Adicionar Tooltip ao Campo de Formulário
 
-A classe Document fornece uma coleção chamada Form que gerencia campos de formulário em um documento PDF. Para adicionar um tooltip a um campo de formulário, use a propriedade AlternateName da classe Field. O Adobe Acrobat usa o 'alternate name' como um tooltip de campo.
+A classe Document fornece uma coleção chamada Form que gerencia campos de formulário em um documento PDF. Para adicionar um tooltip a um campo de formulário, use a classe Field AlternateName. O Adobe Acrobat usa o 'nome alternativo' como um tooltip de campo.
 
-Os trechos de código a seguir mostram como adicionar um tooltip a um campo de formulário, primeiro usando C# e depois Visual Basic.
+Os trechos de código que seguem mostram como adicionar um tooltip a um campo de formulário, primeiro usando C# e depois Visual Basic.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
