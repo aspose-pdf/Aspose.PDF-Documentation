@@ -222,7 +222,7 @@ private static void ResizeImages()
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set ResizeImage option
-        // If this flag set to true and CompressImages is true images will be resized if image resoultion is greater then specified MaxResolution parameter
+        // If this flag set to true and CompressImages is true images will be resized if image resolution is greater then specified MaxResolution parameter
         optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 
         // Set MaxResolution option
