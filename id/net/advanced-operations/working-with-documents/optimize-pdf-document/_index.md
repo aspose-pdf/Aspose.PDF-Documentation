@@ -9,8 +9,8 @@ url: /id/net/optimize-pdf/
 description: Optimalkan file PDF, perkecil semua gambar, kurangi ukuran PDF, Lepaskan font, Hapus objek yang tidak digunakan dengan C#.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "monthly"
-    priority: 0.7
+changefreq: "monthly"
+priority: 0.7
 ---
 <script type="application/ld+json">
 {
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Optimize, Compress or Reduce PDF Size in C#",
     "alternativeHeadline": "Optimize PDF Files Efficiently with C#",
-    "abstract": "Fitur optimasi PDF baru di C# memungkinkan pengembang untuk secara signifikan mengurangi ukuran file PDF dengan menggunakan beberapa strategi, seperti mengompres gambar, melepaskan font, dan menghapus objek yang tidak digunakan. Peningkatan ini meningkatkan efisiensi untuk penerbitan web, berbagi email, dan penyimpanan, memberikan solusi efektif untuk mengelola dokumen PDF besar.",
+    "abstract": "Fitur optimasi PDF baru di C# memungkinkan pengembang untuk secara signifikan mengurangi ukuran file PDF dengan menggunakan berbagai strategi, seperti mengompresi gambar, melepaskan font, dan menghapus objek yang tidak digunakan. Peningkatan ini meningkatkan efisiensi untuk penerbitan web, berbagi email, dan penyimpanan, memberikan solusi efektif untuk mengelola dokumen PDF besar.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "optimize pdf, compress pdf size, reduce pdf size, optimize pdf c#, unembed fonts, remove unused objects, shrink images, optimization methods, pdf document generation, Aspose.PDF",
-    "wordcount": "2282",
+    "wordcount": "2697",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/optimize-pdf/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-01",
     "description": "Optimalkan file PDF, perkecil semua gambar, kurangi ukuran PDF, Lepaskan font, Hapus objek yang tidak digunakan dengan C#."
 }
 </script>
@@ -87,12 +87,12 @@ Dokumen PDF terkadang mungkin mengandung data tambahan. Mengurangi ukuran file P
 - Gabungkan aliran duplikat.
 - Lepaskan font.
 - Hapus objek yang tidak digunakan.
-- Hapus atau ratakan bidang formulir.
+- Hapus bidang formulir yang diratakan.
 - Hapus atau ratakan anotasi.
 
 {{% alert color="primary" %}}
 
- Penjelasan rinci tentang metode optimasi dapat ditemukan di halaman Ikhtisar Metode Optimasi.
+Penjelasan rinci tentang metode optimasi dapat ditemukan di halaman Ikhtisar Metode Optimasi.
 
 {{% /alert %}}
 
@@ -100,9 +100,9 @@ Dokumen PDF terkadang mungkin mengandung data tambahan. Mengurangi ukuran file P
 
 Optimasi, atau linearization untuk Web, mengacu pada proses membuat file PDF cocok untuk penelusuran online menggunakan browser web. Untuk mengoptimalkan file untuk tampilan web:
 
-1. Buka dokumen input dalam objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Gunakan metode [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
-1. Simpan dokumen yang telah dioptimalkan menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
+1. Buka dokumen input dalam objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+1. Gunakan metode [Optimize](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/optimize).
+1. Simpan dokumen yang dioptimalkan menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save).
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -129,13 +129,13 @@ private static void OptimizeDocument()
 
 ## Kurangi Ukuran PDF
 
-Metode [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) memungkinkan Anda untuk mengurangi ukuran dokumen dengan menghapus informasi yang tidak perlu. Secara default, metode ini bekerja sebagai berikut:
+Metode [OptimizeResources()](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/optimizeresources) memungkinkan Anda mengurangi ukuran dokumen dengan menghapus informasi yang tidak perlu. Secara default, metode ini bekerja sebagai berikut:
 
 - Sumber daya yang tidak digunakan pada halaman dokumen dihapus.
 - Sumber daya yang sama digabungkan menjadi satu objek.
 - Objek yang tidak digunakan dihapus.
 
-Potongan kode di bawah ini adalah contohnya. Namun, perlu dicatat bahwa metode ini tidak dapat menjamin pengurangan ukuran dokumen.
+Potongan berikut adalah contohnya. Namun, perlu dicatat bahwa metode ini tidak dapat menjamin pengurangan dokumen.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -158,11 +158,11 @@ private static void ShrinkDocument()
 
 ## Manajemen Strategi Optimasi
 
-Kita juga dapat menyesuaikan strategi optimasi. Saat ini, metode [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) menggunakan 5 teknik. Teknik-teknik ini dapat diterapkan menggunakan metode OptimizeResources() dengan parameter [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions).
+Kita juga dapat menyesuaikan strategi optimasi. Saat ini, metode [OptimizeResources()](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/optimizeresources/methods/1) menggunakan 5 teknik. Teknik-teknik ini dapat diterapkan menggunakan metode OptimizeResources() dengan parameter [OptimizationOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/optimizationoptions).
 
 ### Mengurangi atau Mengompres Semua Gambar
 
-Kita memiliki dua cara untuk bekerja dengan gambar: mengurangi kualitas gambar dan/atau mengubah resolusinya. Dalam hal ini, [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions) harus diterapkan. Dalam contoh berikut, kita memperkecil gambar dengan mengurangi [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) menjadi 50.
+Kita memiliki dua cara untuk bekerja dengan gambar: mengurangi kualitas gambar dan/atau mengubah resolusinya. Dalam hal ini, [ImageCompressionOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/imagecompressionoptions) harus diterapkan. Dalam contoh berikut, kita memperkecil gambar dengan mengurangi [ImageQuality](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) menjadi 50.
 
 `ImageQuality` bekerja mirip dengan kualitas JPEG, di mana nilai 0 adalah yang terendah dan nilai 100 adalah yang tertinggi.
 
@@ -180,9 +180,11 @@ private static void ShrinkImage()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
 
         // Optimize PDF document using OptimizationOptions
@@ -194,7 +196,7 @@ private static void ShrinkImage()
 }
 ```
 
-Cara lain adalah dengan mengubah ukuran gambar dengan resolusi yang lebih rendah. Dalam hal ini, kita harus mengatur ResizeImages menjadi true dan MaxResolution ke nilai yang sesuai.
+Cara lain adalah mengubah ukuran gambar dengan resolusi yang lebih rendah. Dalam hal ini, kita harus mengatur ResizeImages menjadi true dan MaxResolution ke nilai yang sesuai.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -210,15 +212,19 @@ private static void ResizeImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set ResizeImage option
+        // If this flag set to true and CompressImages is true images will be resized if image resoultion is greater then specified MaxResolution parameter
         optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 
         // Set MaxResolution option
+        // Specifies maximum resolution of images. If image has higher resolition it will be scaled
         optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
 
         // Optimize PDF document using OptimizationOptions
@@ -230,7 +236,7 @@ private static void ResizeImages()
 }
 ```
 
-Masalah penting lainnya adalah waktu eksekusi. Namun, kita juga dapat mengelola pengaturan ini. Saat ini, kita dapat menggunakan dua algoritma - Standar dan Cepat. Untuk mengontrol waktu eksekusi, kita harus mengatur properti [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Potongan kode berikut menunjukkan algoritma Cepat:
+Masalah penting lainnya adalah waktu eksekusi. Namun, kita juga dapat mengelola pengaturan ini. Saat ini, kita dapat menggunakan dua algoritma - Standar dan Cepat. Untuk mengontrol waktu eksekusi, kita harus mengatur properti [Version](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Potongan berikut menunjukkan algoritma Cepat:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -249,12 +255,15 @@ private static void FastShrinkImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set Image Compression Version to fast
+        // Version of compression algorithm. Possible values are: 1. standard compression, 2. fast (improved compression which is faster then standard but may be applicable not for all images), 3. mixed (standard compression is applied to images which can not be compressed by  faster algorithm, this may give best compression but more slow then "fast" algorithm. Version "Fast" is not applicable for resizing images (standard method will be used). Default is "Standard"
         optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
 
         // Optimize PDF document using OptimizationOptions
@@ -300,7 +309,7 @@ private static void OptimizeDocument()
 
 ### Menghapus Aliran yang Tidak Digunakan
 
-Terkadang dokumen mengandung aliran sumber daya yang tidak digunakan. Aliran ini bukan "objek yang tidak digunakan" karena mereka dirujuk dari kamus sumber daya halaman. Oleh karena itu, mereka tidak dihapus dengan metode "hapus objek yang tidak digunakan". Namun, aliran ini tidak pernah digunakan dengan konten halaman. Ini dapat terjadi dalam kasus ketika sebuah gambar telah dihapus dari halaman tetapi tidak dari sumber daya halaman. Selain itu, situasi ini sering terjadi ketika halaman diekstrak dari dokumen dan halaman dokumen memiliki sumber daya "umum", yaitu, objek Resources yang sama. Konten halaman dianalisis untuk menentukan apakah aliran sumber daya digunakan atau tidak. Aliran yang tidak digunakan dihapus. Ini kadang-kadang mengurangi ukuran dokumen. Penggunaan teknik ini mirip dengan langkah sebelumnya:
+Terkadang dokumen mengandung aliran sumber daya yang tidak digunakan. Aliran ini bukan "objek yang tidak digunakan" karena mereka dirujuk dari kamus sumber daya halaman. Oleh karena itu, mereka tidak dihapus dengan metode "hapus objek yang tidak digunakan". Namun, aliran ini tidak pernah digunakan dengan konten halaman. Ini dapat terjadi dalam kasus ketika sebuah gambar telah dihapus dari halaman tetapi tidak dari sumber daya halaman. Selain itu, situasi ini sering terjadi ketika halaman diekstrak dari dokumen dan halaman dokumen memiliki sumber daya "umum", yaitu, objek Sumber Daya yang sama. Konten halaman dianalisis untuk menentukan apakah aliran sumber daya digunakan atau tidak. Aliran yang tidak digunakan dihapus. Ini terkadang mengurangi ukuran dokumen. Penggunaan teknik ini mirip dengan langkah sebelumnya:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -329,7 +338,7 @@ private static void OptimizePdfDocument()
 
 ### Menghubungkan Aliran Duplikat
 
-Beberapa dokumen dapat mengandung beberapa aliran sumber daya identik (seperti gambar, misalnya). Ini dapat terjadi, misalnya, ketika sebuah dokumen digabungkan dengan dirinya sendiri. Dokumen keluaran mengandung dua salinan independen dari aliran sumber daya yang sama. Kita menganalisis semua aliran sumber daya dan membandingkannya. Jika aliran tersebut duplikat, mereka digabungkan, yaitu, hanya satu salinan yang tersisa. Referensi diubah sesuai, dan salinan objek dihapus. Dalam beberapa kasus, ini membantu mengurangi ukuran dokumen.
+Beberapa dokumen dapat mengandung beberapa aliran sumber daya identik (seperti gambar, misalnya). Ini dapat terjadi, katakanlah, ketika sebuah dokumen digabungkan dengan dirinya sendiri. Dokumen keluaran mengandung dua salinan independen dari aliran sumber daya yang sama. Kita menganalisis semua aliran sumber daya dan membandingkannya. Jika aliran tersebut duplikat, mereka digabungkan, yaitu, hanya satu salinan yang tersisa. Referensi diubah sesuai, dan salinan objek dihapus. Dalam beberapa kasus, ini membantu mengurangi ukuran dokumen.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -356,7 +365,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 }
 ```
 
-Selain itu, kita dapat menggunakan pengaturan [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent). Jika properti ini diatur ke true, konten halaman akan digunakan kembali saat mengoptimalkan dokumen untuk halaman yang identik.
+Selain itu, kita dapat menggunakan pengaturan [AllowReusePageContent](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent). Jika properti ini diatur ke true, konten halaman akan digunakan kembali saat mengoptimalkan dokumen untuk halaman yang identik.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -394,7 +403,7 @@ private static void OptimizePdfDocumentWithReusePageContent()
 
 ### Melepaskan Font
 
-Jika dokumen menggunakan font yang disematkan, itu berarti bahwa semua data font disimpan dalam dokumen. Keuntungannya adalah dokumen dapat dilihat terlepas dari apakah font terpasang di mesin pengguna atau tidak. Namun, menyematkan font membuat dokumen lebih besar. Metode melepaskan font menghapus semua font yang disematkan. Dengan demikian, ukuran dokumen berkurang tetapi dokumen itu sendiri mungkin menjadi tidak terbaca jika font yang benar tidak terpasang.
+Jika dokumen menggunakan font yang disematkan, itu berarti semua data font disimpan dalam dokumen. Keuntungannya adalah dokumen dapat dilihat terlepas dari apakah font diinstal di mesin pengguna atau tidak. Namun, menyematkan font membuat dokumen lebih besar. Metode melepaskan font menghapus semua font yang disematkan. Dengan demikian, ukuran dokumen berkurang tetapi dokumen itu sendiri mungkin menjadi tidak terbaca jika font yang benar tidak diinstal.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -430,13 +439,13 @@ private static void OptimizePdfDocumentWithUnembedFonts()
 }
 ```
 
-Sumber daya optimasi menerapkan metode ini pada dokumen. Jika salah satu dari metode ini diterapkan, ukuran dokumen kemungkinan besar akan berkurang. Jika tidak ada dari metode ini yang diterapkan, ukuran dokumen tidak akan berubah yang jelas.
+Sumber daya optimasi menerapkan metode ini ke dokumen. Jika salah satu dari metode ini diterapkan, ukuran dokumen kemungkinan besar akan berkurang. Jika tidak ada dari metode ini yang diterapkan, ukuran dokumen tidak akan berubah yang jelas.
 
 ## Cara Tambahan untuk Mengurangi Ukuran Dokumen PDF
 
 ### Menghapus atau Meratakan Anotasi
 
-Anotasi dapat dihapus ketika tidak diperlukan. Ketika mereka diperlukan tetapi tidak memerlukan pengeditan tambahan, mereka dapat diratakan. Kedua teknik ini akan mengurangi ukuran file.
+Anotasi dapat dihapus ketika mereka tidak diperlukan. Ketika mereka diperlukan tetapi tidak memerlukan pengeditan tambahan, mereka dapat diratakan. Kedua teknik ini akan mengurangi ukuran file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -494,7 +503,7 @@ private static void FlattenPdfForms()
 
 ### Mengonversi PDF dari ruang warna RGB ke grayscale
 
-File PDF terdiri dari Teks, Gambar, Lampiran, Anotasi, Grafik, dan objek lainnya. Anda mungkin menemui kebutuhan untuk mengonversi PDF dari ruang warna RGB ke grayscale sehingga lebih cepat saat mencetak file PDF tersebut. Selain itu, ketika file dikonversi ke grayscale, ukuran dokumen juga berkurang, tetapi ini juga dapat menyebabkan penurunan kualitas dokumen. Fitur ini saat ini didukung oleh fitur Pre-Flight dari Adobe Acrobat, tetapi ketika berbicara tentang otomatisasi Office, Aspose.PDF adalah solusi terbaik untuk memberikan keuntungan tersebut untuk manipulasi dokumen. Untuk memenuhi kebutuhan ini, potongan kode berikut dapat digunakan.
+File PDF terdiri dari Teks, Gambar, Lampiran, Anotasi, Grafik, dan objek lainnya. Anda mungkin menemui kebutuhan untuk mengonversi PDF dari ruang warna RGB ke grayscale sehingga lebih cepat saat mencetak file PDF tersebut. Juga, ketika file dikonversi ke grayscale, ukuran dokumen juga berkurang, tetapi ini juga dapat menyebabkan penurunan kualitas dokumen. Fitur ini saat ini didukung oleh fitur Pre-Flight dari Adobe Acrobat, tetapi ketika berbicara tentang otomatisasi Office, Aspose.PDF adalah solusi terbaik untuk memberikan keuntungan tersebut untuk manipulasi dokumen. Untuk memenuhi kebutuhan ini, potongan kode berikut dapat digunakan.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -529,7 +538,7 @@ private static void ConvertRgbToGrayScale()
 
 {{% alert color="primary" %}}
 
-Fitur ini didukung oleh versi 18.12 atau lebih tinggi.
+Fitur ini didukung oleh versi 18.12 atau lebih besar.
 
 {{% /alert %}}
 
@@ -562,7 +571,7 @@ private static void OptimizeDocumentImagesWithFlateCompression()
 
 ### Simpan Gambar dalam XImageCollection
 
-Aspose.PDF for .NET menyediakan kemampuan untuk menyimpan gambar baru ke dalam **XImageCollection** dengan kompresi FlateDecode. Untuk mengaktifkan opsi ini, Anda dapat menggunakan **ImageFilterType.Flate** flag. Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini:
+Aspose.PDF for .NET menyediakan kemampuan untuk menyimpan gambar baru ke dalam **XImageCollection** dengan kompresi FlateDecode. Untuk mengaktifkan opsi ini, Anda dapat menggunakan bendera **ImageFilterType.Flate**. Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

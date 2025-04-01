@@ -6,11 +6,11 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ru/net/optimize-pdf/
-description: Оптимизация PDF файла, уменьшение всех изображений, уменьшение размера PDF, извлечение шрифтов, удаление неиспользуемых объектов с помощью C#.
+description: Оптимизация PDF файла, сжатие всех изображений, уменьшение размера PDF, извлечение шрифтов, удаление неиспользуемых объектов с помощью C#.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "monthly"
-    priority: 0.7
+changefreq: "monthly"
+priority: 0.7
 ---
 <script type="application/ld+json">
 {
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "optimize pdf, compress pdf size, reduce pdf size, optimize pdf c#, unembed fonts, remove unused objects, shrink images, optimization methods, pdf document generation, Aspose.PDF",
-    "wordcount": "2282",
+    "wordcount": "2651",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,15 +74,15 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/optimize-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Оптимизация PDF файла, уменьшение всех изображений, уменьшение размера PDF, извлечение шрифтов, удаление неиспользуемых объектов с помощью C#."
+    "dateModified": "2025-04-01",
+    "description": "Оптимизация PDF файла, сжатие всех изображений, уменьшение размера PDF, извлечение шрифтов, удаление неиспользуемых объектов с помощью C#."
 }
 </script>
 
-PDF документ иногда может содержать дополнительные данные. Уменьшение размера PDF файла поможет вам оптимизировать сетевую передачу и хранение. Это особенно удобно для публикации на веб-страницах, обмена в социальных сетях, отправки по электронной почте или архивирования в хранилище. Мы можем использовать несколько техник для оптимизации PDF:
+PDF документ может иногда содержать дополнительные данные. Уменьшение размера PDF файла поможет вам оптимизировать сетевую передачу и хранение. Это особенно удобно для публикации на веб-страницах, обмена в социальных сетях, отправки по электронной почте или архивирования в хранилище. Мы можем использовать несколько техник для оптимизации PDF:
 
 - Оптимизация содержимого страниц для онлайн-просмотра.
-- Уменьшение или сжатие всех изображений.
+- Сжатие или уменьшение всех изображений.
 - Включение повторного использования содержимого страниц.
 - Объединение дублирующихся потоков.
 - Извлечение шрифтов.
@@ -92,7 +92,7 @@ PDF документ иногда может содержать дополнит
 
 {{% alert color="primary" %}}
 
- Подробное объяснение методов оптимизации можно найти на странице Обзор методов оптимизации.
+Подробное объяснение методов оптимизации можно найти на странице Обзор методов оптимизации.
 
 {{% /alert %}}
 
@@ -129,13 +129,13 @@ private static void OptimizeDocument()
 
 ## Уменьшение размера PDF
 
-Метод [OptimizeResources()](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/optimizeresources) позволяет уменьшить размер документа, устраняя ненужную информацию. По умолчанию этот метод работает следующим образом:
+Метод [OptimizeResources()](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/optimizeresources) позволяет вам уменьшить размер документа, устраняя ненужную информацию. По умолчанию этот метод работает следующим образом:
 
 - Ресурсы, которые не используются на страницах документа, удаляются.
 - Равные ресурсы объединяются в один объект.
 - Неиспользуемые объекты удаляются.
 
-Ниже приведен пример. Однако обратите внимание, что этот метод не может гарантировать уменьшение документа.
+Ниже приведен пример фрагмента кода. Однако обратите внимание, что этот метод не может гарантировать уменьшение документа.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -180,9 +180,11 @@ private static void ShrinkImage()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
 
         // Optimize PDF document using OptimizationOptions
@@ -210,15 +212,19 @@ private static void ResizeImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set ResizeImage option
+        // If this flag set to true and CompressImages is true images will be resized if image resoultion is greater then specified MaxResolution parameter
         optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 
         // Set MaxResolution option
+        // Specifies maximum resolution of images. If image has higher resolition it will be scaled
         optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
 
         // Optimize PDF document using OptimizationOptions
@@ -230,7 +236,7 @@ private static void ResizeImages()
 }
 ```
 
-Другой важный вопрос - это время выполнения. Но снова мы можем управлять этой настройкой. В настоящее время мы можем использовать два алгоритма - Standard и Fast. Чтобы контролировать время выполнения, мы должны установить свойство [Version](https://reference.aspose.com/pdf/ru/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Следующий фрагмент демонстрирует алгоритм Fast:
+Еще одной важной проблемой является время выполнения. Но снова мы можем управлять этой настройкой. В настоящее время мы можем использовать два алгоритма - Стандартный и Быстрый. Чтобы контролировать время выполнения, мы должны установить свойство [Version](https://reference.aspose.com/pdf/ru/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Следующий фрагмент демонстрирует быстрый алгоритм:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -249,12 +255,15 @@ private static void FastShrinkImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set Image Compression Version to fast
+        // Version of compression algorithm. Possible values are: 1. standard compression, 2. fast (improved compression which is faster then standard but may be applicable not for all images), 3. mixed (standard compression is applied to images which can not be compressed by  faster algorithm, this may give best compression but more slow then "fast" algorithm. Version "Fast" is not applicable for resizing images (standard method will be used). Default is "Standard"
         optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
 
         // Optimize PDF document using OptimizationOptions
@@ -271,7 +280,7 @@ private static void FastShrinkImages()
 
 ### Удаление неиспользуемых объектов
 
-PDF документ иногда содержит PDF объекты, которые не ссылаются ни на какой другой объект в документе. Это может произойти, например, когда страница удаляется из дерева страниц документа, но объект страницы сам не удаляется. Удаление этих объектов не делает документ недействительным, а скорее уменьшает его.
+PDF документ иногда содержит объекты PDF, которые не ссылаются ни на какой другой объект в документе. Это может произойти, например, когда страница удаляется из дерева страниц документа, но сам объект страницы не удаляется. Удаление этих объектов не делает документ недействительным, а скорее уменьшает его.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -394,7 +403,7 @@ private static void OptimizePdfDocumentWithReusePageContent()
 
 ### Извлечение шрифтов
 
-Если документ использует встроенные шрифты, это означает, что все данные шрифта хранятся в документе. Преимущество заключается в том, что документ можно просматривать независимо от того, установлен шрифт на машине пользователя или нет. Но встраивание шрифтов увеличивает размер документа. Метод извлечения шрифтов удаляет все встроенные шрифты. Таким образом, размер документа уменьшается, но сам документ может стать нечитаемым, если правильный шрифт не установлен.
+Если документ использует встроенные шрифты, это означает, что все данные шрифта хранятся в документе. Преимущество заключается в том, что документ можно просматривать независимо от того, установлен шрифт на компьютере пользователя или нет. Но встраивание шрифтов увеличивает размер документа. Метод извлечения шрифтов удаляет все встроенные шрифты. Таким образом, размер документа уменьшается, но сам документ может стать нечитаемым, если правильный шрифт не установлен.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

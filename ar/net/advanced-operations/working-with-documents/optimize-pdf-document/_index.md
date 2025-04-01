@@ -1,16 +1,16 @@
 ---
-title: تحسين، ضغط أو تقليل حجم PDF في C#
+title: تحسين أو ضغط أو تقليل حجم PDF في C#
 linktitle: تحسين PDF
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ar/net/optimize-pdf/
-description: تحسين ملف PDF، تقليل حجم جميع الصور، تقليل حجم PDF، إزالة الخطوط المدمجة، إزالة الكائنات غير المستخدمة باستخدام C#.
+description: تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة الخطوط المدمجة، إزالة الكائنات غير المستخدمة باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "monthly"
-    priority: 0.7
+changefreq: "monthly"
+priority: 0.7
 ---
 <script type="application/ld+json">
 {
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Optimize, Compress or Reduce PDF Size in C#",
     "alternativeHeadline": "Optimize PDF Files Efficiently with C#",
-    "abstract": "تتيح ميزة تحسين PDF الجديدة في C# للمطورين تقليل أحجام ملفات PDF بشكل كبير من خلال استخدام استراتيجيات متعددة، مثل ضغط الصور، وإزالة الخطوط المدمجة، وإزالة الكائنات غير المستخدمة. تعمل هذه التحسينات على تحسين الكفاءة للنشر على الويب، ومشاركة البريد الإلكتروني، والتخزين، مما يوفر حلاً فعالاً لإدارة مستندات PDF الكبيرة.",
+    "abstract": "تتيح ميزة تحسين PDF الجديدة في C# للمطورين تقليل أحجام ملفات PDF بشكل كبير من خلال استخدام استراتيجيات متعددة، مثل ضغط الصور، وإزالة الخطوط المدمجة، وإزالة الكائنات غير المستخدمة. تعزز هذه الميزة الكفاءة للنشر على الويب، ومشاركة البريد الإلكتروني، والتخزين، مما يوفر حلاً فعالاً لإدارة مستندات PDF الكبيرة.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "optimize pdf, compress pdf size, reduce pdf size, optimize pdf c#, unembed fonts, remove unused objects, shrink images, optimization methods, pdf document generation, Aspose.PDF",
-    "wordcount": "2282",
+    "wordcount": "2665",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,15 +74,15 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/optimize-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "تحسين ملف PDF، تقليل حجم جميع الصور، تقليل حجم PDF، إزالة الخطوط المدمجة، إزالة الكائنات غير المستخدمة باستخدام C#."
+    "dateModified": "2025-04-01",
+    "description": "تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة الخطوط المدمجة، إزالة الكائنات غير المستخدمة باستخدام C#."
 }
 </script>
 
 قد يحتوي مستند PDF أحيانًا على بيانات إضافية. سيساعد تقليل حجم ملف PDF في تحسين نقل الشبكة والتخزين. هذا مفيد بشكل خاص للنشر على صفحات الويب، والمشاركة على الشبكات الاجتماعية، والإرسال عبر البريد الإلكتروني، أو الأرشفة في التخزين. يمكننا استخدام عدة تقنيات لتحسين PDF:
 
 - تحسين محتوى الصفحة لتصفح الإنترنت.
-- تقليل أو ضغط جميع الصور.
+- تقليص أو ضغط جميع الصور.
 - تمكين إعادة استخدام محتوى الصفحة.
 - دمج التدفقات المكررة.
 - إزالة الخطوط المدمجة.
@@ -98,7 +98,7 @@ sitemap:
 
 ## تحسين مستند PDF للويب
 
-تشير عملية التحسين، أو الترتيب للويب، إلى جعل ملف PDF مناسبًا للتصفح عبر الإنترنت باستخدام متصفح الويب. لتحسين ملف للعرض على الويب:
+تشير عملية التحسين، أو الخطية للويب، إلى جعل ملف PDF مناسبًا للتصفح عبر الإنترنت باستخدام متصفح الويب. لتحسين ملف للعرض على الويب:
 
 1. افتح المستند المدخل في كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
 1. استخدم طريقة [Optimize](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/optimize).
@@ -129,13 +129,13 @@ private static void OptimizeDocument()
 
 ## تقليل حجم PDF
 
-تسمح لك طريقة [OptimizeResources()](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/optimizeresources) بتقليل حجم المستند عن طريق التخلص من المعلومات غير الضرورية. بشكل افتراضي، تعمل هذه الطريقة كما يلي:
+تتيح لك طريقة [OptimizeResources()](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/optimizeresources) تقليل حجم المستند عن طريق التخلص من المعلومات غير الضرورية. بشكل افتراضي، تعمل هذه الطريقة كما يلي:
 
-- يتم إزالة الموارد التي لا تستخدم في صفحات المستند.
+- تتم إزالة الموارد التي لا تستخدم في صفحات المستند.
 - يتم دمج الموارد المتساوية في كائن واحد.
 - يتم حذف الكائنات غير المستخدمة.
 
-المقتطف أدناه هو مثال. لاحظ، مع ذلك، أن هذه الطريقة لا يمكن أن تضمن تقليل حجم المستند.
+المقتطف أدناه هو مثال. لاحظ، مع ذلك، أن هذه الطريقة لا تضمن تقليل حجم المستند.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -160,9 +160,9 @@ private static void ShrinkDocument()
 
 يمكننا أيضًا تخصيص استراتيجية التحسين. حاليًا، تستخدم طريقة [OptimizeResources()](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/optimizeresources/methods/1) 5 تقنيات. يمكن تطبيق هذه التقنيات باستخدام طريقة OptimizeResources() مع معلمة [OptimizationOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/optimizationoptions).
 
-### تقليل أو ضغط جميع الصور
+### تقليص أو ضغط جميع الصور
 
-لدينا طريقتان للعمل مع الصور: تقليل جودة الصورة و/أو تغيير دقتها. في أي حال، يجب تطبيق [ImageCompressionOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/imagecompressionoptions). في المثال التالي، نقوم بتقليل الصور عن طريق تقليل [ImageQuality](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) إلى 50.
+لدينا طريقتان للعمل مع الصور: تقليل جودة الصورة و/أو تغيير دقتها. في أي حال، يجب تطبيق [ImageCompressionOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/imagecompressionoptions). في المثال التالي، نقوم بتقليص الصور عن طريق تقليل [ImageQuality](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) إلى 50.
 
 `ImageQuality` يعمل بشكل مشابه لجودة JPEG، حيث القيمة 0 هي الأدنى والقيمة 100 هي الأعلى.
 
@@ -180,9 +180,11 @@ private static void ShrinkImage()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
 
         // Optimize PDF document using OptimizationOptions
@@ -210,15 +212,19 @@ private static void ResizeImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set ResizeImage option
+        // If this flag set to true and CompressImages is true images will be resized if image resoultion is greater then specified MaxResolution parameter
         optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 
         // Set MaxResolution option
+        // Specifies maximum resolution of images. If image has higher resolition it will be scaled
         optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
 
         // Optimize PDF document using OptimizationOptions
@@ -230,7 +236,7 @@ private static void ResizeImages()
 }
 ```
 
-مسألة أخرى مهمة هي وقت التنفيذ. ولكن مرة أخرى، يمكننا إدارة هذا الإعداد أيضًا. حاليًا، يمكننا استخدام خوارزميتين - القياسية والسريعة. للتحكم في وقت التنفيذ، يجب علينا تعيين خاصية [Version](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). توضح المقتطفات التالية خوارزمية السريعة:
+مسألة أخرى مهمة هي وقت التنفيذ. ولكن مرة أخرى، يمكننا إدارة هذا الإعداد أيضًا. حاليًا، يمكننا استخدام خوارزميتين - القياسية والسريعة. للتحكم في وقت التنفيذ، يجب علينا تعيين خاصية [Version](https://reference.aspose.com/pdf/ar/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). يوضح المقتطف التالي خوارزمية السريعة:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -249,12 +255,15 @@ private static void FastShrinkImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set Image Compression Version to fast
+        // Version of compression algorithm. Possible values are: 1. standard compression, 2. fast (improved compression which is faster then standard but may be applicable not for all images), 3. mixed (standard compression is applied to images which can not be compressed by  faster algorithm, this may give best compression but more slow then "fast" algorithm. Version "Fast" is not applicable for resizing images (standard method will be used). Default is "Standard"
         optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
 
         // Optimize PDF document using OptimizationOptions
@@ -271,7 +280,7 @@ private static void FastShrinkImages()
 
 ### إزالة الكائنات غير المستخدمة
 
-قد يحتوي مستند PDF أحيانًا على كائنات PDF التي لا يتم الإشارة إليها من أي كائن آخر في المستند. قد يحدث هذا، على سبيل المثال، عندما تتم إزالة صفحة من شجرة صفحات المستند ولكن كائن الصفحة نفسه لم يتم إزالته. إزالة هذه الكائنات لا تجعل المستند غير صالح بل تقلل حجمه.
+قد يحتوي مستند PDF أحيانًا على كائنات PDF غير المرجعية من أي كائن آخر في المستند. قد يحدث هذا، على سبيل المثال، عندما تتم إزالة صفحة من شجرة صفحات المستند ولكن كائن الصفحة نفسه لم يتم إزالته. إزالة هذه الكائنات لا تجعل المستند غير صالح ولكنها تقلل حجمه.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -300,7 +309,7 @@ private static void OptimizeDocument()
 
 ### إزالة التدفقات غير المستخدمة
 
-أحيانًا يحتوي المستند على تدفقات موارد غير مستخدمة. هذه التدفقات ليست "كائنات غير مستخدمة" لأنها تشير من قاموس موارد الصفحة. وبالتالي، لا تتم إزالتها باستخدام طريقة "إزالة الكائنات غير المستخدمة". ولكن هذه التدفقات لا تستخدم أبدًا مع محتويات الصفحة. قد يحدث هذا في الحالات التي تمت فيها إزالة صورة من الصفحة ولكن ليس من موارد الصفحة. أيضًا، تحدث هذه الحالة غالبًا عندما يتم استخراج الصفحات من المستند وتكون صفحات المستند تحتوي على موارد "شائعة"، أي نفس كائن Resources. يتم تحليل محتويات الصفحة لتحديد ما إذا كانت تدفق مورد مستخدم أم لا. يتم إزالة التدفقات غير المستخدمة. أحيانًا يقلل ذلك من حجم المستند. استخدام هذه التقنية مشابه للخطوة السابقة:
+أحيانًا يحتوي المستند على تدفقات موارد غير مستخدمة. هذه التدفقات ليست "كائنات غير مستخدمة" لأنها مرجعية من قاموس موارد الصفحة. وبالتالي، لا تتم إزالتها باستخدام طريقة "إزالة الكائنات غير المستخدمة". ولكن هذه التدفقات لا تستخدم أبدًا مع محتويات الصفحة. قد يحدث هذا في الحالات التي تمت فيها إزالة صورة من الصفحة ولكن ليس من موارد الصفحة. أيضًا، تحدث هذه الحالة غالبًا عندما يتم استخراج الصفحات من المستند وتحتوي صفحات المستند على موارد "شائعة"، أي نفس كائن الموارد. يتم تحليل محتويات الصفحة لتحديد ما إذا كانت تدفق الموارد مستخدمة أم لا. تتم إزالة التدفقات غير المستخدمة. أحيانًا يقلل ذلك من حجم المستند. استخدام هذه التقنية مشابه للخطوة السابقة:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -329,7 +338,7 @@ private static void OptimizePdfDocument()
 
 ### ربط التدفقات المكررة
 
-يمكن أن تحتوي بعض المستندات على عدة تدفقات موارد متطابقة (مثل الصور، على سبيل المثال). قد يحدث هذا، على سبيل المثال، عندما يتم دمج مستند مع نفسه. يحتوي المستند الناتج على نسختين مستقلتين من نفس تدفق المورد. نقوم بتحليل جميع تدفقات الموارد ومقارنتها. إذا كانت التدفقات مكررة، يتم دمجها، أي تبقى نسخة واحدة فقط. يتم تغيير المراجع بشكل مناسب، ويتم إزالة نسخ الكائن. في بعض الحالات، يساعد ذلك في تقليل حجم المستند.
+يمكن أن تحتوي بعض المستندات على عدة تدفقات موارد متطابقة (مثل الصور، على سبيل المثال). قد يحدث هذا، على سبيل المثال، عندما يتم دمج مستند مع نفسه. يحتوي المستند الناتج على نسختين مستقلتين من نفس تدفق الموارد. نقوم بتحليل جميع تدفقات الموارد ومقارنتها. إذا كانت التدفقات مكررة، يتم دمجها، أي تبقى نسخة واحدة فقط. يتم تغيير المراجع بشكل مناسب، ويتم إزالة نسخ الكائن. في بعض الحالات، يساعد ذلك في تقليل حجم المستند.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -394,7 +403,7 @@ private static void OptimizePdfDocumentWithReusePageContent()
 
 ### إزالة الخطوط المدمجة
 
-إذا كان المستند يستخدم خطوطًا مدمجة، فهذا يعني أن جميع بيانات الخطوط مخزنة في المستند. الميزة هي أن المستند يمكن مشاهدته بغض النظر عما إذا كان الخط مثبتًا على جهاز المستخدم أم لا. ولكن يجعل تضمين الخطوط المستند أكبر. تقوم طريقة إزالة الخطوط المدمجة بإزالة جميع الخطوط المدمجة. وبالتالي، ينخفض حجم المستند ولكن قد يصبح المستند نفسه غير قابل للقراءة إذا لم يتم تثبيت الخط الصحيح.
+إذا كان المستند يستخدم خطوطًا مدمجة، فهذا يعني أن جميع بيانات الخطوط مخزنة في المستند. الميزة هي أن المستند يمكن مشاهدته بغض النظر عما إذا كان الخط مثبتًا على جهاز المستخدم أم لا. ولكن تضمين الخطوط يجعل المستند أكبر. تقوم طريقة إزالة الخطوط المدمجة بإزالة جميع الخطوط المدمجة. وبالتالي، ينخفض حجم المستند ولكن قد يصبح المستند نفسه غير قابل للقراءة إذا لم يتم تثبيت الخط الصحيح.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -436,7 +445,7 @@ private static void OptimizePdfDocumentWithUnembedFonts()
 
 ### إزالة أو تسطيح التعليقات
 
-يمكن حذف التعليقات عندما تكون غير ضرورية. عندما تكون مطلوبة ولكن لا تتطلب تحريرًا إضافيًا، يمكن تسطيحها. ستقلل كل من هاتين التقنيتين من حجم الملف.
+يمكن حذف التعليقات عندما تكون غير ضرورية. عندما تكون مطلوبة ولكن لا تتطلب تحريرًا إضافيًا، يمكن تسطيحها. ستقلل كلتا هاتين التقنيتين من حجم الملف.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -494,7 +503,7 @@ private static void FlattenPdfForms()
 
 ### تحويل PDF من مساحة ألوان RGB إلى تدرج الرمادي
 
-يتكون ملف PDF من نصوص وصور ومرفقات وتعليقات ورسوم بيانية وكائنات أخرى. قد تواجه متطلبات لتحويل PDF من مساحة ألوان RGB إلى تدرج الرمادي بحيث يكون أسرع عند طباعة تلك الملفات PDF. أيضًا، عندما يتم تحويل الملف إلى تدرج الرمادي، يتم تقليل حجم المستند أيضًا، ولكن يمكن أن يتسبب ذلك أيضًا في انخفاض جودة المستند. هذه الميزة مدعومة حاليًا من قبل ميزة Pre-Flight في Adobe Acrobat، ولكن عند الحديث عن أتمتة المكتب، تعتبر Aspose.PDF الحل النهائي لتوفير مثل هذه الميزات لتلاعب المستندات. لتحقيق هذا المتطلب، يمكن استخدام مقتطف الكود التالي.
+يتكون ملف PDF من نصوص وصور ومرفقات وتعليقات ورسوم بيانية وكائنات أخرى. قد تواجه متطلبات لتحويل PDF من مساحة ألوان RGB إلى تدرج الرمادي بحيث يكون أسرع عند طباعة تلك الملفات PDF. أيضًا، عندما يتم تحويل الملف إلى تدرج الرمادي، يتم تقليل حجم المستند أيضًا، ولكن يمكن أن يتسبب ذلك أيضًا في انخفاض جودة المستند. هذه الميزة مدعومة حاليًا من قبل ميزة Pre-Flight في Adobe Acrobat، ولكن عند الحديث عن أتمتة المكتب، تعتبر Aspose.PDF الحل النهائي لتوفير مثل هذه المزايا لتلاعب المستندات. لتحقيق هذا المتطلب، يمكن استخدام مقتطف الكود التالي.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -533,7 +542,7 @@ private static void ConvertRgbToGrayScale()
 
 {{% /alert %}}
 
-Aspose.PDF for .NET يوفر دعم ضغط FlateDecode لوظيفة تحسين PDF. توضح مقتطفات الكود التالية كيفية استخدام الخيار في التحسين لتخزين الصور مع ضغط **FlateDecode**:
+Aspose.PDF for .NET يوفر دعم ضغط FlateDecode لوظيفة تحسين PDF. يوضح مقتطف الكود أدناه كيفية استخدام الخيار في التحسين لتخزين الصور مع ضغط **FlateDecode**:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -562,7 +571,7 @@ private static void OptimizeDocumentImagesWithFlateCompression()
 
 ### تخزين الصورة في XImageCollection
 
-Aspose.PDF for .NET يوفر القدرة على تخزين صور جديدة في **XImageCollection** مع ضغط FlateDecode. لتمكين هذا الخيار يمكنك استخدام علامة **ImageFilterType.Flate**. توضح مقتطفات الكود التالية كيفية استخدام هذه الوظيفة:
+Aspose.PDF for .NET يوفر القدرة على تخزين صور جديدة في **XImageCollection** مع ضغط FlateDecode. لتمكين هذا الخيار يمكنك استخدام علامة **ImageFilterType.Flate**. يوضح مقتطف الكود التالي كيفية استخدام هذه الوظيفة:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

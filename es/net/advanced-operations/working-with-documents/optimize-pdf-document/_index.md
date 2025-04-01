@@ -9,8 +9,8 @@ url: /es/net/optimize-pdf/
 description: Optimizar archivo PDF, reducir el tamaño de PDF, desincrustar fuentes, eliminar objetos no utilizados con C#.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "monthly"
-    priority: 0.7
+changefreq: "monthly"
+priority: 0.7
 ---
 <script type="application/ld+json">
 {
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Optimize, Compress or Reduce PDF Size in C#",
     "alternativeHeadline": "Optimize PDF Files Efficiently with C#",
-    "abstract": "La nueva función de optimización de PDF en C# permite a los desarrolladores reducir significativamente el tamaño de los archivos PDF empleando múltiples estrategias, como comprimir imágenes, desincrustar fuentes y eliminar objetos no utilizados. Esta mejora mejora la eficiencia para la publicación web, el intercambio por correo electrónico y el almacenamiento, proporcionando una solución efectiva para gestionar documentos PDF grandes.",
+    "abstract": "La nueva función de optimización de PDF en C# permite a los desarrolladores reducir significativamente el tamaño de los archivos PDF empleando múltiples estrategias, como comprimir imágenes, desincrustar fuentes y eliminar objetos no utilizados. Esta mejora aumenta la eficiencia para la publicación web, el intercambio por correo electrónico y el almacenamiento, proporcionando una solución efectiva para gestionar documentos PDF grandes.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "optimize pdf, compress pdf size, reduce pdf size, optimize pdf c#, unembed fonts, remove unused objects, shrink images, optimization methods, pdf document generation, Aspose.PDF",
-    "wordcount": "2282",
+    "wordcount": "2909",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/optimize-pdf/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-01",
     "description": "Optimizar archivo PDF, reducir el tamaño de PDF, desincrustar fuentes, eliminar objetos no utilizados con C#."
 }
 </script>
@@ -92,7 +92,7 @@ Un documento PDF puede contener a veces datos adicionales. Reducir el tamaño de
 
 {{% alert color="primary" %}}
 
- Una explicación detallada de los métodos de optimización se puede encontrar en la página de Visión General de Métodos de Optimización.
+La explicación detallada de los métodos de optimización se puede encontrar en la página de Visión General de Métodos de Optimización.
 
 {{% /alert %}}
 
@@ -100,7 +100,7 @@ Un documento PDF puede contener a veces datos adicionales. Reducir el tamaño de
 
 La optimización, o linealización para la Web, se refiere al proceso de hacer que un archivo PDF sea adecuado para la navegación en línea utilizando un navegador web. Para optimizar un archivo para la visualización web:
 
-1. Abre el documento de entrada en un objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+1. Abre el documento de entrada en un [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) objeto.
 1. Usa el método [Optimize](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/optimize).
 1. Guarda el documento optimizado usando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save).
 
@@ -131,9 +131,9 @@ private static void OptimizeDocument()
 
 El método [OptimizeResources()](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/optimizeresources) te permite reducir el tamaño del documento eliminando la información innecesaria. Por defecto, este método funciona de la siguiente manera:
 
-- Se eliminan los recursos que no se utilizan en las páginas del documento.
-- Los recursos iguales se unen en un solo objeto.
-- Se eliminan los objetos no utilizados.
+- Los recursos que no se utilizan en las páginas del documento son eliminados.
+- Los recursos iguales se combinan en un solo objeto.
+- Los objetos no utilizados son eliminados.
 
 El fragmento a continuación es un ejemplo. Ten en cuenta, sin embargo, que este método no puede garantizar la reducción del documento.
 
@@ -180,9 +180,11 @@ private static void ShrinkImage()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
 
         // Optimize PDF document using OptimizationOptions
@@ -210,15 +212,19 @@ private static void ResizeImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set ResizeImage option
+        // If this flag set to true and CompressImages is true images will be resized if image resoultion is greater then specified MaxResolution parameter
         optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 
         // Set MaxResolution option
+        // Specifies maximum resolution of images. If image has higher resolition it will be scaled
         optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
 
         // Optimize PDF document using OptimizationOptions
@@ -249,12 +255,15 @@ private static void FastShrinkImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressIamges flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set Image Compression Version to fast
+        // Version of compression algorithm. Possible values are: 1. standard compression, 2. fast (improved compression which is faster then standard but may be applicable not for all images), 3. mixed (standard compression is applied to images which can not be compressed by  faster algorithm, this may give best compression but more slow then "fast" algorithm. Version "Fast" is not applicable for resizing images (standard method will be used). Default is "Standard"
         optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
 
         // Optimize PDF document using OptimizationOptions
@@ -269,7 +278,7 @@ private static void FastShrinkImages()
 }
 ```
 
-### Eliminación de Objetos No Utilizados
+### Eliminar Objetos No Utilizados
 
 Un documento PDF a veces contiene objetos PDF que no están referenciados desde ningún otro objeto en el documento. Esto puede suceder, por ejemplo, cuando se elimina una página del árbol de páginas del documento, pero el objeto de la página en sí no se elimina. Eliminar estos objetos no invalida el documento, sino que lo reduce.
 
@@ -298,9 +307,9 @@ private static void OptimizeDocument()
 }
 ```
 
-### Eliminación de Flujos No Utilizados
+### Eliminar Flujos No Utilizados
 
-A veces, el documento contiene flujos de recursos no utilizados. Estos flujos no son "objetos no utilizados" porque están referenciados desde un diccionario de recursos de página. Por lo tanto, no se eliminan con un método de "eliminar objetos no utilizados". Pero estos flujos nunca se utilizan con el contenido de la página. Esto puede suceder en casos cuando se ha eliminado una imagen de la página pero no de los recursos de la página. Además, esta situación ocurre a menudo cuando se extraen páginas del documento y las páginas del documento tienen recursos "comunes", es decir, el mismo objeto Resources. Se analiza el contenido de la página para determinar si un flujo de recursos se utiliza o no. Se eliminan los flujos no utilizados. A veces, esto disminuye el tamaño del documento. El uso de esta técnica es similar al paso anterior:
+A veces, el documento contiene flujos de recursos no utilizados. Estos flujos no son "objetos no utilizados" porque están referenciados desde un diccionario de recursos de página. Por lo tanto, no se eliminan con un método de "eliminar objetos no utilizados". Pero estos flujos nunca se utilizan con el contenido de la página. Esto puede suceder en casos cuando se ha eliminado una imagen de la página pero no de los recursos de la página. Además, esta situación ocurre a menudo cuando se extraen páginas del documento y las páginas del documento tienen recursos "comunes", es decir, el mismo objeto Resources. Se analizan los contenidos de la página para determinar si un flujo de recursos se utiliza o no. Se eliminan los flujos no utilizados. A veces, esto disminuye el tamaño del documento. El uso de esta técnica es similar al paso anterior:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -327,9 +336,9 @@ private static void OptimizePdfDocument()
 }
 ```
 
-### Vinculación de Flujos Duplicados
+### Vincular Flujos Duplicados
 
-Algunos documentos pueden contener varios flujos de recursos idénticos (como imágenes, por ejemplo). Esto puede suceder, digamos, cuando un documento se concatena consigo mismo. El documento de salida contiene dos copias independientes del mismo flujo de recursos. Analizamos todos los flujos de recursos y los comparamos. Si los flujos están duplicados, se fusionan, es decir, solo queda una copia. Las referencias se cambian adecuadamente y se eliminan las copias del objeto. En algunos casos, esto ayuda a disminuir el tamaño del documento.
+Algunos documentos pueden contener varios flujos de recursos idénticos (como imágenes, por ejemplo). Esto puede suceder, por ejemplo, cuando un documento se concatena consigo mismo. El documento de salida contiene dos copias independientes del mismo flujo de recursos. Analizamos todos los flujos de recursos y los comparamos. Si los flujos están duplicados, se fusionan, es decir, solo queda una copia. Las referencias se cambian adecuadamente y se eliminan las copias del objeto. En algunos casos, esto ayuda a disminuir el tamaño del documento.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -432,9 +441,9 @@ private static void OptimizePdfDocumentWithUnembedFonts()
 
 Los recursos de optimización aplican estos métodos al documento. Si se aplica alguno de estos métodos, es muy probable que el tamaño del documento disminuya. Si ninguno de estos métodos se aplica, el tamaño del documento no cambiará, lo cual es obvio.
 
-## Formas Adicionales de Reducir el Tamaño del Documento PDF
+## Maneras Adicionales de Reducir el Tamaño del Documento PDF
 
-### Eliminación o Aplanamiento de Anotaciones
+### Eliminar o Aplanar Anotaciones
 
 Las anotaciones pueden eliminarse cuando son innecesarias. Cuando son necesarias pero no requieren edición adicional, pueden aplanarse. Ambas técnicas reducirán el tamaño del archivo.
 
@@ -463,7 +472,7 @@ private static void FlattenAnnotationsInPdfDocument()
 }
 ```
 
-### Eliminación de Campos de Formulario
+### Eliminar Campos de Formulario
 
 Si el documento PDF contiene AcroForms, podemos intentar reducir el tamaño del archivo aplanando los campos de formulario.
 
