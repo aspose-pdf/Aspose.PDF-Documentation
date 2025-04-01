@@ -30,7 +30,7 @@ aliases:
     },
     "genre": "pdf document generation",
     "keywords": "optimize pdf, compress pdf size, reduce pdf size, optimize pdf c#, unembed fonts, remove unused objects, shrink images, optimization methods, pdf document generation, Aspose.PDF",
-    "wordcount": "2792",
+    "wordcount": "2771",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
