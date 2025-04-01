@@ -100,11 +100,11 @@ Penjelasan rinci tentang metode optimasi dapat ditemukan di halaman Ikhtisar Met
 
 Optimasi, atau linearization untuk Web, mengacu pada proses membuat file PDF cocok untuk penelusuran online menggunakan browser web. Untuk mengoptimalkan file untuk tampilan web:
 
-1. Buka dokumen input dalam objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
-1. Gunakan metode [Optimize](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/optimize).
-1. Simpan dokumen yang telah dioptimalkan menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save).
+1. Buka dokumen input dalam objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Gunakan metode [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
+1. Simpan dokumen yang telah dioptimalkan menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 Cuplikan kode berikut menunjukkan cara mengoptimalkan dokumen PDF untuk web.
 
@@ -129,7 +129,7 @@ private static void OptimizeDocument()
 
 ## Kurangi Ukuran PDF
 
-Metode [OptimizeResources()](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/optimizeresources) memungkinkan Anda untuk mengurangi ukuran dokumen dengan menghapus informasi yang tidak perlu. Secara default, metode ini bekerja sebagai berikut:
+Metode [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) memungkinkan Anda untuk mengurangi ukuran dokumen dengan menghapus informasi yang tidak perlu. Secara default, metode ini bekerja sebagai berikut:
 
 - Sumber daya yang tidak digunakan di halaman dokumen dihapus.
 - Sumber daya yang sama digabungkan menjadi satu objek.
@@ -158,11 +158,11 @@ private static void ShrinkDocument()
 
 ## Manajemen Strategi Optimasi
 
-Kita juga dapat menyesuaikan strategi optimasi. Saat ini, metode [OptimizeResources()](https://reference.aspose.com/pdf/id/net/aspose.pdf.document/optimizeresources/methods/1) menggunakan 5 teknik. Teknik-teknik ini dapat diterapkan menggunakan metode OptimizeResources() dengan parameter [OptimizationOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/optimizationoptions).
+Kita juga dapat menyesuaikan strategi optimasi. Saat ini, metode [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) menggunakan 5 teknik. Teknik-teknik ini dapat diterapkan menggunakan metode OptimizeResources() dengan parameter [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions).
 
 ### Mengurangi atau Mengompres Semua Gambar
 
-Kita memiliki dua cara untuk bekerja dengan gambar: mengurangi kualitas gambar dan/atau mengubah resolusinya. Dalam hal ini, [ImageCompressionOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/imagecompressionoptions) harus diterapkan. Dalam contoh berikut, kita memperkecil gambar dengan mengurangi [ImageQuality](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) menjadi 50.
+Kita memiliki dua cara untuk bekerja dengan gambar: mengurangi kualitas gambar dan/atau mengubah resolusinya. Dalam hal ini, [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions) harus diterapkan. Dalam contoh berikut, kita memperkecil gambar dengan mengurangi [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) menjadi 50.
 
 `ImageQuality` bekerja mirip dengan kualitas JPEG, di mana nilai 0 adalah yang terendah dan nilai 100 adalah yang tertinggi.
 
@@ -236,7 +236,7 @@ private static void ResizeImages()
 }
 ```
 
-Masalah penting lainnya adalah waktu eksekusi. Namun, kita juga dapat mengelola pengaturan ini. Saat ini, kita dapat menggunakan dua algoritma - Standar dan Cepat. Untuk mengontrol waktu eksekusi, kita harus mengatur properti [Version](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Cuplikan berikut menunjukkan algoritma Cepat:
+Masalah penting lainnya adalah waktu eksekusi. Namun, kita juga dapat mengelola pengaturan ini. Saat ini, kita dapat menggunakan dua algoritma - Standar dan Cepat. Untuk mengontrol waktu eksekusi, kita harus mengatur properti [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). Cuplikan berikut menunjukkan algoritma Cepat:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -370,7 +370,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 }
 ```
 
-Selain itu, kita dapat menggunakan pengaturan [AllowReusePageContent](https://reference.aspose.com/pdf/id/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent). Jika properti ini diatur ke true, konten halaman akan digunakan kembali saat mengoptimalkan dokumen untuk halaman yang identik.
+Selain itu, kita dapat menggunakan pengaturan [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent). Jika properti ini diatur ke true, konten halaman akan digunakan kembali saat mengoptimalkan dokumen untuk halaman yang identik.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

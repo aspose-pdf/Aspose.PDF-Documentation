@@ -100,11 +100,11 @@ PDF 문서에는 때때로 추가 데이터가 포함될 수 있습니다. PDF �
 
 웹을 위한 최적화 또는 선형화는 PDF 파일을 웹 브라우저에서 온라인 브라우징에 적합하게 만드는 과정을 의미합니다. 웹 표시를 위해 파일을 최적화하려면:
 
-1. [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 객체에서 입력 문서를 엽니다.
-1. [Optimize](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/optimize) 메서드를 사용합니다.
-1. [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/save) 메서드를 사용하여 최적화된 문서를 저장합니다.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체에서 입력 문서를 엽니다.
+1. [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) 메서드를 사용합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 최적화된 문서를 저장합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 웹을 위해 PDF 문서를 최적화하는 방법을 보여줍니다.
 
@@ -129,7 +129,7 @@ private static void OptimizeDocument()
 
 ## PDF 크기 축소
 
-[OptimizeResources()](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/optimizeresources) 메서드는 불필요한 정보를 제거하여 문서 크기를 줄일 수 있습니다. 기본적으로 이 메서드는 다음과 같이 작동합니다:
+[OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) 메서드는 불필요한 정보를 제거하여 문서 크기를 줄일 수 있습니다. 기본적으로 이 메서드는 다음과 같이 작동합니다:
 
 - 문서 페이지에서 사용되지 않는 리소스가 제거됩니다.
 - 동일한 리소스가 하나의 객체로 결합됩니다.
@@ -158,11 +158,11 @@ private static void ShrinkDocument()
 
 ## 최적화 전략 관리
 
-최적화 전략을 사용자 정의할 수도 있습니다. 현재 [OptimizeResources()](https://reference.aspose.com/pdf/ko/net/aspose.pdf.document/optimizeresources/methods/1) 메서드는 5가지 기술을 사용합니다. 이러한 기술은 [OptimizationOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf.optimization/optimizationoptions) 매개변수를 사용하여 OptimizeResources() 메서드에 적용할 수 있습니다.
+최적화 전략을 사용자 정의할 수도 있습니다. 현재 [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) 메서드는 5가지 기술을 사용합니다. 이러한 기술은 [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions) 매개변수를 사용하여 OptimizeResources() 메서드에 적용할 수 있습니다.
 
 ### 모든 이미지 축소 또는 압축
 
-이미지와 작업하는 두 가지 방법이 있습니다: 이미지 품질을 줄이거나 해상도를 변경하는 것입니다. 어떤 경우든 [ImageCompressionOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf.optimization/imagecompressionoptions)를 적용해야 합니다. 다음 예제에서는 [ImageQuality](https://reference.aspose.com/pdf/ko/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality)를 50으로 줄여 이미지를 축소합니다.
+이미지와 작업하는 두 가지 방법이 있습니다: 이미지 품질을 줄이거나 해상도를 변경하는 것입니다. 어떤 경우든 [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions)를 적용해야 합니다. 다음 예제에서는 [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality)를 50으로 줄여 이미지를 축소합니다.
 
 `ImageQuality`는 JPEG 품질과 유사하게 작동하며, 값 0은 가장 낮고 값 100은 가장 높습니다.
 
@@ -236,7 +236,7 @@ private static void ResizeImages()
 }
 ```
 
-또한 실행 시간도 중요한 문제입니다. 그러나 다시 말하지만, 이 설정도 관리할 수 있습니다. 현재 두 가지 알고리즘 - 표준 및 빠른 알고리즘을 사용할 수 있습니다. 실행 시간을 제어하려면 [Version](https://reference.aspose.com/pdf/ko/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) 속성을 설정해야 합니다. 다음 스니펫은 빠른 알고리즘을 보여줍니다:
+또한 실행 시간도 중요한 문제입니다. 그러나 다시 말하지만, 이 설정도 관리할 수 있습니다. 현재 두 가지 알고리즘 - 표준 및 빠른 알고리즘을 사용할 수 있습니다. 실행 시간을 제어하려면 [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) 속성을 설정해야 합니다. 다음 스니펫은 빠른 알고리즘을 보여줍니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -370,7 +370,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 }
 ```
 
-또한 [AllowReusePageContent](https://reference.aspose.com/pdf/ko/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) 설정을 사용할 수 있습니다. 이 속성이 true로 설정되면 동일한 페이지에 대해 문서를 최적화할 때 페이지 콘텐츠가 재사용됩니다.
+또한 [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) 설정을 사용할 수 있습니다. 이 속성이 true로 설정되면 동일한 페이지에 대해 문서를 최적화할 때 페이지 콘텐츠가 재사용됩니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
