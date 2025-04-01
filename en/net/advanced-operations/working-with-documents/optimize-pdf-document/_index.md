@@ -214,7 +214,7 @@ private static void ResizeImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
-        // If this flag set to true and CompressImages is true images will be resized if image resoultion is greater then specified MaxResolution parameter
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
@@ -257,7 +257,7 @@ private static void FastShrinkImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
-        // If this flag set to true and CompressImages is true images will be resized if image resoultion is greater then specified MaxResolution parameter.
+        // If this flag is set to true images will be compressed in the document. compression level is specfied with ImageQuality property
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
