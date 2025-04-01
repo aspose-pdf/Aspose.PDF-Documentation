@@ -2,6 +2,8 @@
 title: 创建 AcroForm - 在 C# 中创建可填写 PDF
 linktitle: 创建 AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /zh/net/create-form/
 description: 使用 Aspose.PDF for .NET，您可以在 PDF 文件中从头开始创建表单
@@ -16,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET 引入了从头开始创建可填写 PDF 表单的能力，使开发人员能够无缝地将可自定义的表单字段（如文本框、单选按钮和组合框）集成到他们的 PDF 中。这一功能使用户能够增强文档的互动性，并改善其应用程序中的数据收集",
+    "abstract": "Aspose.PDF for .NET 引入了从头开始创建可填写 PDF 表单的能力，使开发人员能够无缝地将可自定义的表单字段（如文本框、单选按钮和组合框）集成到他们的 PDF 中。这一功能使用户能够增强文档的交互性，并改善其应用程序中的数据收集",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "3870",
+    "wordcount": "3871",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -240,7 +242,7 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-[TextBoxField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/textboxfield) 可以与一些小部件注释一起添加。
+[TextBoxField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/textboxfield) 可以添加一些小部件注释。
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -348,7 +350,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-以下代码片段演示了将具有三个选项的 RadioButtonField 添加到表格单元格中的步骤。
+以下代码片段显示了添加具有三个选项的 RadioButtonField 的步骤，并将其放置在表格单元格内。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -527,7 +529,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 
 ### 为 RadioButtonField 添加标题
 
-以下代码片段演示如何为与 RadioButtonField 关联的标题添加：
+以下代码片段演示如何添加与 RadioButtonField 关联的标题：
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1036,7 +1038,7 @@ private static void SignPdfBySignatureField()
 
 Document 类提供了一个名为 Form 的集合，用于管理 PDF 文档中的表单字段。要为表单字段添加工具提示，请使用 Field 类的 AlternateName。Adobe Acrobat 使用“替代名称”作为字段工具提示。
 
-以下代码片段演示了如何为表单字段添加工具提示，首先使用 C#，然后使用 Visual Basic。
+以下代码片段展示了如何为表单字段添加工具提示，首先使用 C#，然后使用 Visual Basic。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

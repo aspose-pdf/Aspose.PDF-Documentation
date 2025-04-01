@@ -2,6 +2,8 @@
 title: Criar AcroForm - Criar PDF Preenchível em C#
 linktitle: Criar AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /pt/net/create-form/
 description: Com Aspose.PDF for .NET você pode criar um formulário do zero em seu arquivo PDF
@@ -26,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "4063",
+    "wordcount": "4064",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -87,7 +89,7 @@ A classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) fo
 
 Para adicionar um campo de formulário:
 
-1. Crie o campo de formulário que deseja adicionar.
+1. Crie o campo de formulário que você deseja adicionar.
 1. Chame o método Add da coleção [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form).
 
 ### Adicionando TextBoxField
@@ -644,7 +646,7 @@ private static void AddingCaptionToRadioButtonField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Outro variante para adicionar Checkboxes agrupados
+### Outra variante para adicionar Checkboxes agrupados
 
 Os seguintes trechos de código mostram como adicionar campos de checkbox agrupados em um documento PDF.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

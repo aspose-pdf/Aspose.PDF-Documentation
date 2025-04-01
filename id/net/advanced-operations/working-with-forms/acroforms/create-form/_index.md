@@ -2,6 +2,8 @@
 title: Buat AcroForm - Buat PDF yang Dapat Diisi di C#
 linktitle: Buat AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/create-form/
 description: Dengan Aspose.PDF for .NET Anda dapat membuat formulir dari awal di file PDF Anda
@@ -26,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "4004",
+    "wordcount": "4003",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -1036,7 +1038,7 @@ private static void SignPdfBySignatureField()
 
 Kelas Document menyediakan koleksi bernama Form yang mengelola bidang formulir dalam dokumen PDF. Untuk menambahkan tooltip ke bidang formulir, gunakan kelas Field AlternateName. Adobe Acrobat menggunakan 'nama alternatif' sebagai tooltip bidang.
 
-Potongan kode yang mengikuti menunjukkan cara menambahkan tooltip ke bidang formulir, pertama menggunakan C# dan kemudian Visual Basic.
+Potongan kode berikut menunjukkan cara menambahkan tooltip ke bidang formulir, pertama menggunakan C# dan kemudian Visual Basic.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -1,7 +1,9 @@
 ---
-title: Créer AcroForm - Créer un PDF remplissable en C#
-linktitle: Créer AcroForm
+title: Créer un AcroForm - Créer un PDF remplissable en C#
+linktitle: Créer un AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /fr/net/create-form/
 description: Avec Aspose.PDF for .NET, vous pouvez créer un formulaire à partir de zéro dans votre fichier PDF
@@ -26,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "4104",
+    "wordcount": "4103",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -240,7 +242,7 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-[TextBoxField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/textboxfield) peut être ajouté avec certaines annotations de widget.
+[TextBoxField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/textboxfield) peut être ajouté avec quelques annotations de widget.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -1032,7 +1034,7 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Ajouter une info-bulle à un champ de formulaire
+### Ajouter une info-bulle au champ de formulaire
 
 La classe Document fournit une collection nommée Form qui gère les champs de formulaire dans un document PDF. Pour ajouter une info-bulle à un champ de formulaire, utilisez la propriété AlternateName de la classe Field. Adobe Acrobat utilise le « nom alternatif » comme info-bulle de champ.
 

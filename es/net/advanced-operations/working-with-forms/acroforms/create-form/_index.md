@@ -2,6 +2,8 @@
 title: Crear AcroForm - Crear PDF Rellenable en C#
 linktitle: Crear AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /es/net/create-form/
 description: Con Aspose.PDF for .NET puedes crear un formulario desde cero en tu archivo PDF

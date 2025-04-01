@@ -2,6 +2,8 @@
 title: AcroForm 생성 - C#에서 작성 가능한 PDF 만들기
 linktitle: AcroForm 생성
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ko/net/create-form/
 description: Aspose.PDF for .NET을 사용하여 PDF 파일에서 처음부터 양식을 생성할 수 있습니다.
@@ -16,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET은 처음부터 작성 가능한 PDF 양식을 생성할 수 있는 기능을 도입하여 개발자가 텍스트 상자, 라디오 버튼 및 콤보 상자와 같은 사용자 정의 양식 필드를 PDF에 원활하게 통합할 수 있도록 합니다. 이 기능은 사용자가 문서의 상호작용을 향상시키고 애플리케이션 내에서 데이터 수집을 개선할 수 있도록 합니다.",
+    "abstract": "Aspose.PDF for .NET은 처음부터 작성 가능한 PDF 양식을 생성할 수 있는 기능을 도입하여 개발자가 텍스트 상자, 라디오 버튼 및 콤보 상자와 같은 사용자 정의 양식 필드를 PDF에 원활하게 통합할 수 있도록 합니다. 이 기능은 사용자가 문서의 상호작용을 향상시키고 애플리케이션 내 데이터 수집을 개선할 수 있도록 합니다.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "3976",
+    "wordcount": "3975",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -90,7 +92,7 @@ sitemap:
 1. 추가할 양식 필드를 생성합니다.
 1. [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) 컬렉션의 Add 메서드를 호출합니다.
 
-### TextBoxField 추가하기
+### TextBoxField 추가
 
 아래 예제는 [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)를 추가하는 방법을 보여줍니다.
 
@@ -167,7 +169,7 @@ private static void AddTextBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### RadioButtonField 추가하기
+### RadioButtonField 추가
 
 다음 코드 스니펫은 PDF 문서에 [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield)를 추가하는 방법을 보여줍니다.
 
@@ -525,7 +527,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### RadioButtonField에 캡션 추가하기
+### RadioButtonField에 캡션 추가
 
 다음 코드 스니펫은 RadioButtonField와 연결될 캡션을 추가하는 방법을 보여줍니다:
 
@@ -644,7 +646,7 @@ private static void AddingCaptionToRadioButtonField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 그룹화된 체크박스 추가를 위한 또 다른 변형
+### 그룹화된 체크박스 추가의 또 다른 변형
 
 다음 코드 스니펫은 PDF 문서에 그룹화된 체크박스 필드를 추가하는 방법을 보여줍니다.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -756,7 +758,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### ComboBox 필드 추가하기
+### ComboBox 필드 추가
 
 다음 코드 스니펫은 PDF 문서에 ComboBox 필드를 추가하는 방법을 보여줍니다.
 
@@ -829,7 +831,7 @@ private static void AddComboBoxToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### CheckboxField 추가하기
+### CheckboxField 추가
 
 다음 코드 스니펫은 PDF 문서에 CheckboxField를 추가하는 방법을 보여줍니다.
 
@@ -894,7 +896,7 @@ private static void AddCheckBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### ListBoxField 추가하기
+### ListBoxField 추가
 
 다음 코드 스니펫은 PDF 문서에 ListBoxField를 추가하는 방법을 보여줍니다.
 
@@ -961,7 +963,7 @@ private static void AddListBoxFieldToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### SignatureField 사용하기
+### SignatureField 사용
 
 다음 코드 스니펫은 SignatureField로 PDF 문서에 서명하는 방법을 보여줍니다.
 
@@ -1032,7 +1034,7 @@ private static void SignPdfBySignatureField()
 {{< /tab >}}
 {{< /tabs >}}
 
-### 양식 필드에 툴팁 추가하기
+### 양식 필드에 툴팁 추가
 
 Document 클래스는 PDF 문서에서 양식 필드를 관리하는 Form이라는 컬렉션을 제공합니다. 양식 필드에 툴팁을 추가하려면 Field 클래스의 AlternateName을 사용합니다. Adobe Acrobat은 '대체 이름'을 필드 툴팁으로 사용합니다.
 

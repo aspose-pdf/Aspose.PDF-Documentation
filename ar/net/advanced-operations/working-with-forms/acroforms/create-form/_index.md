@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET يقدم القدرة على إنشاء نماذج PDF قابلة للتعبئة من الصفر، مما يسمح للمطورين بدمج حقول نموذج قابلة للتخصيص مثل مربعات النص، وأزرار الراديو، ومربعات التحرير في ملفات PDF الخاصة بهم. هذه الوظيفة تمكن المستخدمين من تعزيز تفاعلية الوثائق وتحسين جمع البيانات داخل تطبيقاتهم",
+    "abstract": "Aspose.PDF for .NET يقدم القدرة على إنشاء نماذج PDF قابلة للتعبئة من الصفر، مما يسمح للمطورين بدمج حقول نماذج قابلة للتخصيص مثل مربعات النص، وأزرار الاختيار، ومربعات الجمع في ملفات PDF الخاصة بهم. هذه الوظيفة تمكن المستخدمين من تعزيز تفاعل الوثائق وتحسين جمع البيانات داخل تطبيقاتهم",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -242,7 +242,7 @@ private static void AddRadioButtonToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-يمكن إضافة [TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield) مع بعض تعليقات الأدوات.
+يمكن إضافة [TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield) مع بعض تعليقات الواجهة.
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
@@ -1036,7 +1036,7 @@ private static void SignPdfBySignatureField()
 
 ### إضافة تلميح إلى حقل النموذج
 
-تقدم فئة Document مجموعة تُسمى Form التي تدير حقول النموذج في مستند PDF. لإضافة تلميح إلى حقل النموذج، استخدم خاصية AlternateName في فئة Field. يستخدم Adobe Acrobat "الاسم البديل" كتلميح حقل.
+تقدم فئة Document مجموعة تُسمى Form والتي تدير حقول النموذج في مستند PDF. لإضافة تلميح إلى حقل النموذج، استخدم خاصية AlternateName في فئة Field. يستخدم Adobe Acrobat "الاسم البديل" كتلميح حقل.
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة تلميح إلى حقل النموذج، أولاً باستخدام C# ثم Visual Basic.
 

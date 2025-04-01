@@ -2,6 +2,8 @@
 title: Создание AcroForm - Создание заполняемого PDF в C#
 linktitle: Создание AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/create-form/
 description: С помощью Aspose.PDF for .NET вы можете создать форму с нуля в вашем PDF файле
@@ -16,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create AcroForm - Create Fillable PDF in C#",
     "alternativeHeadline": "Create Interactive Forms in PDF with C#",
-    "abstract": "Aspose.PDF for .NET предоставляет возможность создавать заполняемые PDF формы с нуля, позволяя разработчикам бесшовно интегрировать настраиваемые поля формы, такие как текстовые поля, радиокнопки и комбинированные поля в свои PDF. Эта функциональность позволяет пользователям улучшать интерактивность документов и улучшать сбор данных в своих приложениях",
+    "abstract": "Aspose.PDF for .NET вводит возможность создания заполняемых PDF форм с нуля, позволяя разработчикам бесшовно интегрировать настраиваемые поля формы, такие как текстовые поля, радиокнопки и комбинированные поля в свои PDF. Эта функциональность позволяет пользователям улучшать интерактивность документов и улучшать сбор данных в своих приложениях",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -26,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
-    "wordcount": "4013",
+    "wordcount": "4010",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -83,7 +85,7 @@ sitemap:
 
 ### Добавление поля формы в PDF документ
 
-Класс [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) предоставляет коллекцию под названием [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/form), которая помогает вам управлять полями формы в PDF документе.
+Класс [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) предоставляет коллекцию под названием [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/form), которая помогает управлять полями формы в PDF документе.
 
 Чтобы добавить поле формы:
 
@@ -92,7 +94,7 @@ sitemap:
 
 ### Добавление TextBoxField
 
-Ниже приведен пример, который показывает, как добавить [TextBoxField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/textboxfield).
+Ниже приведен пример, показывающий, как добавить [TextBoxField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/textboxfield).
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -525,9 +527,9 @@ private static void AddRadioButtonWithOptionsToPdf()
 {{< /tab >}}
 {{< /tabs >}}
 
-### Добавление заголовка к RadioButtonField
+### Добавление подписи к RadioButtonField
 
-Следующий фрагмент кода показывает, как добавить заголовок, который будет связан с RadioButtonField:
+Следующий фрагмент кода показывает, как добавить подпись, которая будет связана с RadioButtonField:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1036,7 +1038,7 @@ private static void SignPdfBySignatureField()
 
 Класс Document предоставляет коллекцию под названием Form, которая управляет полями формы в PDF документе. Чтобы добавить подсказку к полю формы, используйте свойство AlternateName класса Field. Adobe Acrobat использует «альтернативное имя» в качестве подсказки для поля.
 
-Следующие фрагменты кода показывают, как добавить подсказку к полю формы, сначала с использованием C#, а затем Visual Basic.
+Следующие фрагменты кода показывают, как добавить подсказку к полю формы, сначала используя C#, а затем Visual Basic.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
