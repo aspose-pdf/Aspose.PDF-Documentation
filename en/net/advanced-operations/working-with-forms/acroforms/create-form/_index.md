@@ -259,7 +259,7 @@ private static void AddTextBoxFieldToPdf()
 
         // Defining an array with rectangle data for widget annotations. 
         // The number of elements in the array determines the number of widget annotations to add.
-        var rects = new Rectangle[]
+        var rects = new Aspose.Pdf.Rectangle[]
         {
             new Aspose.Pdf.Rectangle(10, 600, 110, 620),
             new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -312,7 +312,7 @@ private static void AddTextBoxFieldToPdf()
 
     // Defining an array with rectangle data for widget annotations. 
     // The number of elements in the array determines the number of widget annotations to add.
-    var rects = new Rectangle[]
+    var rects = new Aspose.Pdf.Rectangle[]
     {
         new Aspose.Pdf.Rectangle(10, 600, 110, 620),
         new Aspose.Pdf.Rectangle(10, 630, 110, 650),
@@ -660,7 +660,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-		// Add page to PDF file
+        // Add page to PDF file
         var page = document.Pages.Add();
 
         var radioButtonField = new Aspose.Pdf.Forms.RadioButtonField(page);
