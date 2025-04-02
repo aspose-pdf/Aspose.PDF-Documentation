@@ -83,13 +83,13 @@ sitemap:
 
 ## Извлечение ссылок из PDF-файла
 
-Ссылки представлены в виде аннотаций в PDF-файле, поэтому для извлечения ссылок извлеките все объекты [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
+Ссылки представлены в виде аннотаций в PDF-файле, поэтому для извлечения ссылок извлеките все объекты [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation).
 
-1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Получите страницу [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page), с которой вы хотите извлечь ссылки.
-1. Используйте класс [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) для извлечения всех объектов [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) с указанной страницы.
-1. Передайте объект [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) методу Accept объекта Page.
-1. Получите все выбранные аннотации ссылок в объекте IList с помощью свойства Selected объекта [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector).
+1. Создайте объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Получите страницу [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page), с которой вы хотите извлечь ссылки.
+1. Используйте класс [AnnotationSelector](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationselector) для извлечения всех объектов [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation) с указанной страницы.
+1. Передайте объект [AnnotationSelector](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationselector) методу Accept объекта Page.
+1. Получите все выбранные аннотации ссылок в объекте IList с помощью свойства Selected объекта [AnnotationSelector](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationselector).
 
 Следующий фрагмент кода показывает, как извлечь ссылки из PDF-файла.
 

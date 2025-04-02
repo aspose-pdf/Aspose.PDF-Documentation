@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Расширяемая платформа метаданных (XMP) — это стандарт, созданный компанией Adobe Systems Inc. Этот стандарт был разработан для обработки и хранения стандартизированных и собственных метаданных. Эти метаданные могут быть встроены в различные форматы файлов, но в этой статье мы сосредоточимся только на формате PDF. Мы увидим, как мы можем встроить метаданные в PDF-файл, используя пространство имен Aspose.Pdf.Facades в Aspose.PDF for .NET. Мы будем использовать класс [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) для манипуляции XMP в PDF-документе.
+Расширяемая платформа метаданных (XMP) — это стандарт, созданный компанией Adobe Systems Inc. Этот стандарт был разработан для обработки и хранения стандартизированных и собственных метаданных. Эти метаданные могут быть встроены в различные форматы файлов, но в этой статье мы сосредоточимся только на формате PDF. Мы увидим, как мы можем встроить метаданные в PDF-файл, используя пространство имен Aspose.Pdf.Facades в Aspose.PDF for .NET. Мы будем использовать класс [PdfXmpMetadata](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfxmpmetadata) для манипуляции XMP в PDF-документе.
 
 {{% /alert %}}
 
@@ -88,7 +88,7 @@ PDF-файл проходит через множество этапов в те
 ## Объяснение
 
 Для манипуляции XMP с использованием Aspose.Pdf.Facades мы будем использовать класс [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class). Мы будем использовать этот класс для манипуляции предопределенными свойствами метаданных. Класс [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) добавляет эти свойства в PDF-файл. Он также помогает открывать и сохранять PDF-файлы, в которые мы добавляем метаданные. Таким образом, используя класс [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class), мы можем легко манипулировать XMP в PDF-файле.
-Следующий фрагмент кода поможет вам понять, как использовать класс [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) для работы с XMP:
+Следующий фрагмент кода поможет вам понять, как использовать класс [PdfXmpMetadata](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfxmpmetadata) для работы с XMP:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

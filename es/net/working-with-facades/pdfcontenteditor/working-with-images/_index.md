@@ -76,7 +76,7 @@ lastmod: "2021-06-24"
 
 ## Eliminar Imágenes de una Página Particular de PDF (Facades)
 
-Para eliminar las imágenes de una página particular, necesitas llamar al método [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) con los parámetros pageNumber e index. El parámetro index representa un array de enteros: los índices de las imágenes que se van a eliminar. Primero, necesitas crear un objeto de la clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) y luego llamar al método [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). Después de eso, puedes guardar el archivo PDF actualizado utilizando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Para eliminar las imágenes de una página particular, necesitas llamar al método [DeleteImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) con los parámetros pageNumber e index. El parámetro index representa un array de enteros: los índices de las imágenes que se van a eliminar. Primero, necesitas crear un objeto de la clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor) y luego llamar al método [DeleteImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). Después de eso, puedes guardar el archivo PDF actualizado utilizando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save/index).
 
 El siguiente fragmento de código te muestra cómo eliminar imágenes de una página particular de PDF.
 
@@ -123,7 +123,7 @@ private static void DeleteImage()
 
 ## Eliminar Todas las Imágenes de un Archivo PDF (Facades)
 
-Todas las imágenes pueden ser eliminadas de un archivo PDF utilizando el método [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) de la clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Llama al método [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – la sobrecarga sin parámetros – para eliminar todas las imágenes, y luego guarda el archivo PDF actualizado utilizando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Todas las imágenes pueden ser eliminadas de un archivo PDF utilizando el método [DeleteImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) de la clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor). Llama al método [DeleteImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – la sobrecarga sin parámetros – para eliminar todas las imágenes, y luego guarda el archivo PDF actualizado utilizando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save/index).
 
 El siguiente fragmento de código te muestra cómo eliminar todas las imágenes de un archivo PDF.
 
@@ -170,7 +170,7 @@ private static void DeleteImages()
 
 ## Reemplazar Imagen en un Archivo PDF (Facades)
 
-la [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) te permite reemplazar tu imagen en un archivo PDF, llama para esto al método [ReplaceImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) y guarda el resultado.
+la [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor) te permite reemplazar tu imagen en un archivo PDF, llama para esto al método [ReplaceImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) y guarda el resultado.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

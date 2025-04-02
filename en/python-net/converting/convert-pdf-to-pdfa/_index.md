@@ -4,11 +4,14 @@ linktitle: Convert PDF to PDF/A formats
 type: docs
 weight: 100
 url: /python-net/convert-pdf-to-pdfa/
-lastmod: "2022-12-23"
+lastmod: "2025-02-27"
 description: Learn how to convert PDF files to PDF/A format for compliance with archiving standards using Aspose.PDF in Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true 
+AlternativeHeadline: How to Convert PDF to PDF/A formats in Python
+Abstract: This article outlines the process of converting a PDF file to a PDF/A compliant format using Aspose.PDF for Python. The procedure includes validating the original PDF file according to Adobe Preflight standards, as various tools interpret PDF/A conformance differently. Once validated, the PDF is converted using the `Document` class's `Convert` method, with the validation results stored in an XML file. The conversion process allows for handling unconvertible elements via the `ConvertErrorAction` enumeration. Additionally, Aspose.PDF offers an online tool for converting PDFs to PDF/A-1A, enabling users to test the functionality and quality of the conversion process. A Python code snippet is provided to demonstrate converting a PDF to PDF/A-1b, illustrating the necessary steps and functions involved in the conversion.
 ---
 
 **Aspose.PDF for Python** allows you to convert a PDF file to a <abbr title="Portable Document Format / A">PDF/A</abbr> compliant PDF file. Before doing so, the file must be validated. This topic explains how.
@@ -36,16 +39,22 @@ The following code snippet shows how to convert PDF files to PDF/A-1b compliant 
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_pdfa.pdf"
-    output_log = DIR_OUTPUT + "convert_pdf_to_pdfa.log"
-    # Open PDF document
-    document = ap.Document(input_pdf)
-    # Convert to PDF/A compliant document
-    document.convert(output_log, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE)
-    # Save output document
-    document.save(output_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    document.convert(
+        self.dataDir + "pdf_pdfa.log",
+        apdf.PdfFormat.PDF_A_1B,
+        apdf.ConvertErrorAction.DELETE,
+    )
+    document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
 ```
 

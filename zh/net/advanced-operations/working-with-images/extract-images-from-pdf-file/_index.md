@@ -78,9 +78,9 @@ lastmod: "2022-02-17"
 
 以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
-图像保存在每个页面的 [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) 集合的 [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) 集合中。要提取特定页面，然后使用图像的特定索引从 Images 集合中获取图像。
+图像保存在每个页面的 [Resources](https://reference.aspose.com/pdf/zh/net/aspose.pdf/resources) 集合的 [Images](https://reference.aspose.com/pdf/zh/net/aspose.pdf/resources/properties/images) 集合中。要提取特定页面，然后使用图像的特定索引从 Images 集合中获取图像。
 
-图像的索引返回一个 [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage) 对象。该对象提供一个 Save 方法，可用于保存提取的图像。以下代码片段展示了如何从 PDF 文件中提取图像。
+图像的索引返回一个 [XImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf/ximage) 对象。该对象提供一个 Save 方法，可用于保存提取的图像。以下代码片段展示了如何从 PDF 文件中提取图像。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -77,7 +77,7 @@ draft: false
 
 ## Imprimir archivo PDF en impresora predeterminada utilizando configuraciones de impresora y página
 
-Primero, el documento se convierte en imagen y luego se imprime en la impresora. Crea una instancia de la clase [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer), que permite imprimir un archivo PDF en la impresora predeterminada, utiliza el método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/bindpdf/) para abrir el documento en él y cambia las configuraciones necesarias. Este ejemplo utiliza formato A4, orientación vertical. En [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/), primero que nada, se debe establecer el nombre de la impresora a la que se enviará la impresión. De lo contrario, se imprimirá en la impresora predeterminada. A continuación, indica el número requerido de copias.
+Primero, el documento se convierte en imagen y luego se imprime en la impresora. Crea una instancia de la clase [PdfViewer](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer), que permite imprimir un archivo PDF en la impresora predeterminada, utiliza el método [BindPdf](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer/bindpdf/) para abrir el documento en él y cambia las configuraciones necesarias. Este ejemplo utiliza formato A4, orientación vertical. En [PrinterSettings](https://reference.aspose.com/pdf/es/net/aspose.pdf.printing/printersettings/), primero que nada, se debe establecer el nombre de la impresora a la que se enviará la impresión. De lo contrario, se imprimirá en la impresora predeterminada. A continuación, indica el número requerido de copias.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -344,7 +344,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Ocultar diálogo de impresión
 
-Aspose.PDF for .NET admite ocultar el diálogo de impresión. Para esto, utiliza la propiedad [PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
+Aspose.PDF for .NET admite ocultar el diálogo de impresión. Para esto, utiliza la propiedad [PrintPageDialog](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
 
 El siguiente fragmento de código muestra cómo ocultar el diálogo de impresión.
 
@@ -435,7 +435,7 @@ private static void PrintingPDFHidePrintDialog()
 
 ## Imprimir PDF a archivo XPS en escala de grises
 
-Un documento PDF en color se puede imprimir en una impresora XPS en escala de grises, utilizando [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Para lograr esto, establece la propiedad [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) en *true*. El siguiente fragmento de código demuestra el uso de la propiedad `PdfViewer.PrintAsGrayscale`.
+Un documento PDF en color se puede imprimir en una impresora XPS en escala de grises, utilizando [PdfViewer](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer). Para lograr esto, establece la propiedad [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) en *true*. El siguiente fragmento de código demuestra el uso de la propiedad `PdfViewer.PrintAsGrayscale`.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -528,7 +528,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## Conversión de PDF a PostScript
 
-La clase [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) proporciona la capacidad de imprimir documentos PDF y, con la ayuda de esta clase, también se pueden convertir archivos PDF a formato PostScript. Para convertir un archivo PDF a PostScript, primero instala cualquier impresora PS y simplemente imprime en un archivo con la ayuda de `PdfViewer`.
+La clase [PdfViewer](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer) proporciona la capacidad de imprimir documentos PDF y, con la ayuda de esta clase, también se pueden convertir archivos PDF a formato PostScript. Para convertir un archivo PDF a PostScript, primero instala cualquier impresora PS y simplemente imprime en un archivo con la ayuda de `PdfViewer`.
 
 El siguiente fragmento de código muestra cómo imprimir y convertir un PDF a formato PostScript.
 
@@ -631,7 +631,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Comprobación del estado del trabajo de impresión
 
-Un archivo PDF se puede imprimir en una impresora física así como en el Microsoft XPS Document Writer, sin mostrar un diálogo de impresión, utilizando la clase [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Al imprimir archivos PDF grandes, el proceso puede tardar mucho tiempo, por lo que el usuario puede no estar seguro de si el proceso de impresión se completó o encontró un problema. Para determinar el estado de un trabajo de impresión, utiliza la propiedad [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). El siguiente fragmento de código muestra cómo imprimir el archivo PDF en un archivo XPS y obtener el estado de impresión.
+Un archivo PDF se puede imprimir en una impresora física así como en el Microsoft XPS Document Writer, sin mostrar un diálogo de impresión, utilizando la clase [PdfViewer](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer). Al imprimir archivos PDF grandes, el proceso puede tardar mucho tiempo, por lo que el usuario puede no estar seguro de si el proceso de impresión se completó o encontró un problema. Para determinar el estado de un trabajo de impresión, utiliza la propiedad [PrintStatus](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer/printstatus/). El siguiente fragmento de código muestra cómo imprimir el archivo PDF en un archivo XPS y obtener el estado de impresión.
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

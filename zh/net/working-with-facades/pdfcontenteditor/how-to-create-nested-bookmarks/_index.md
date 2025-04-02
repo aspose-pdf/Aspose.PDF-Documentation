@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-书签使您能够跟踪/链接到 PDF 文档中的特定页面。[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) 类在 [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) 中提供了一项功能，允许您以复杂但直观的方式在现有 PDF 文件中创建自己的书签，可以在特定页面或所有页面上进行操作。
+书签使您能够跟踪/链接到 PDF 文档中的特定页面。[PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/PdfContentEditor) 类在 [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) 中提供了一项功能，允许您以复杂但直观的方式在现有 PDF 文件中创建自己的书签，可以在特定页面或所有页面上进行操作。
 
 ## 实现细节
 

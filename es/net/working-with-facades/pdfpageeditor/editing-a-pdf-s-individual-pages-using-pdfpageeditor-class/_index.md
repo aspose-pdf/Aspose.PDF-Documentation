@@ -83,17 +83,17 @@ El espacio de nombres Aspose.Pdf.Facades en [Aspose.PDF for .NET](/pdf/es/net/) 
 
 ## Explicación
 
-La clase [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) es diferente de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) y de la clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Primero necesitamos entender la diferencia, y luego podremos comprender mejor la clase PdfPageEditor. La clase PdfFileEditor te permite manipular todas las páginas en un archivo, como agregar, eliminar o concatenar páginas, etc., mientras que la clase PdfContentEditor te ayuda a manipular el contenido de una página, es decir, texto y otros objetos, etc. Por otro lado, la clase PdfPageEditor solo trabaja con la página individual en sí, como rotar, hacer zoom y alinear una página, etc.
+La clase [PdfPageEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfpageeditor) es diferente de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) y de la clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor). Primero necesitamos entender la diferencia, y luego podremos comprender mejor la clase PdfPageEditor. La clase PdfFileEditor te permite manipular todas las páginas en un archivo, como agregar, eliminar o concatenar páginas, etc., mientras que la clase PdfContentEditor te ayuda a manipular el contenido de una página, es decir, texto y otros objetos, etc. Por otro lado, la clase PdfPageEditor solo trabaja con la página individual en sí, como rotar, hacer zoom y alinear una página, etc.
 
 Podemos dividir las características proporcionadas por esta clase en tres categorías principales, es decir, Transición, Alineación y Visualización. Vamos a discutir estas categorías a continuación:
 
 ### Transición
 
-Esta clase contiene dos propiedades relacionadas con la transición, es decir, [TransitionType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) y [TransitionDuration](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). TransitionType especifica el estilo de transición que se utilizará al pasar a esta página desde otra página durante una presentación. TransitionDuration especifica la duración de visualización para las páginas.
+Esta clase contiene dos propiedades relacionadas con la transición, es decir, [TransitionType](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) y [TransitionDuration](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). TransitionType especifica el estilo de transición que se utilizará al pasar a esta página desde otra página durante una presentación. TransitionDuration especifica la duración de visualización para las páginas.
 
 ### Alineación
 
-La clase PdfPageEditor admite tanto alineaciones horizontales como verticales. Proporciona dos propiedades para servir a este propósito, es decir, [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) y [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). La propiedad Alignment se utiliza para alinear el contenido horizontalmente. La propiedad Alignment toma un valor de AlignmentType, que contiene tres opciones, es decir, Centro, Izquierda y Derecha. La propiedad VerticalAlignment toma un valor de VerticalAlignmentType, que contiene tres opciones, es decir, Inferior, Centro y Superior.
+La clase PdfPageEditor admite tanto alineaciones horizontales como verticales. Proporciona dos propiedades para servir a este propósito, es decir, [Alignment](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) y [VerticalAlignment](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). La propiedad Alignment se utiliza para alinear el contenido horizontalmente. La propiedad Alignment toma un valor de AlignmentType, que contiene tres opciones, es decir, Centro, Izquierda y Derecha. La propiedad VerticalAlignment toma un valor de VerticalAlignmentType, que contiene tres opciones, es decir, Inferior, Centro y Superior.
 
 ### Visualización
 
@@ -164,5 +164,5 @@ private static void EditPdfPages()
 ## Conclusión
 
 {{% alert color="primary" %}}
-En este artículo, hemos examinado más de cerca la clase [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor). Hemos elaborado las propiedades y métodos proporcionados por esta clase. Hace que la manipulación de páginas individuales en una clase sea una tarea muy fácil y simple.
+En este artículo, hemos examinado más de cerca la clase [PdfPageEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfpageeditor). Hemos elaborado las propiedades y métodos proporcionados por esta clase. Hace que la manipulación de páginas individuales en una clase sea una tarea muy fácil y simple.
 {{% /alert %}}

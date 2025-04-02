@@ -5,76 +5,14 @@ type: docs
 weight: 100
 url: /python-net/move-pages/
 description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for Python via .NET.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Moving Pages between PDF documents using Python
+Abstract: The article provides a comprehensive guide on moving pages between PDF documents or within a single PDF document using Python, specifically utilizing the Aspose.PDF library. It outlines step-by-step processes for three scenarios - moving a single page from one PDF to another, transferring multiple pages, and relocating a page within the same document. Each scenario involves creating `Document` class objects for source and destination PDFs, manipulating pages through the `PageCollection` class, and utilizing the `add`, `delete`, and `save` methods to achieve the desired page reorganization. Code snippets are provided for practical implementation, demonstrating how to move pages efficiently using Python scripts.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Move PDF Pages programmatically Python",
-    "alternativeHeadline": "How to move PDF Pages with Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, move pdf page",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/move-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/move-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for Python via .NET."
-}
-</script>
 
 ## Moving a Page from one PDF Document to Another
 
@@ -93,16 +31,17 @@ The following code snippet shows you how to move one page.
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from os import path
 
-    srcDocument = ap.Document(src_file_name)
-    dstDocument = ap.Document(dst_File_name)
-    page = srcDocument.pages[2]
-    dstDocument.pages.add(page)
-    # Save output file
-    dstDocument.save(dst_File_name_new)
-    srcDocument.pages.delete(2)
-    srcDocument.save(src_file_name_new)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, outfile)
+
+    document = apdf.Document(path_infile)
+    page = document.pages[2]
+    document.pages.add(page)
+    document.pages.delete(2)
+    document.save(path_outfile)
 ```
 
 ## Moving bunch of Pages from one PDF Document to Another
@@ -157,66 +96,3 @@ The following code snippet shows you how to insert an empty page at the end of a
     srcDocument.save(output_pdf)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

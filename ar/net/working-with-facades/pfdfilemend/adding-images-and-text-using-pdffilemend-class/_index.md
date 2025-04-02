@@ -75,21 +75,21 @@ draft: false
 }
 </script>
 
-يمكن أن تساعدك فئة [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) في إضافة الصور والنصوص في مستند PDF موجود، في موقع محدد. توفر طريقتين تحملان أسماء [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) و [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index). تتيح لك طريقة [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) إضافة صور من نوع JPG و GIF و PNG و BMP. تأخذ طريقة [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) وسيطًا من نوع [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) وتضيفه في ملف PDF الموجود. يمكن إضافة الصور والنصوص في منطقة مستطيلة محددة بواسطة إحداثيات النقاط السفلية اليسرى والعلوية اليمنى. أثناء إضافة الصور، يمكنك تحديد إما مسار ملف الصورة أو دفق ملف الصورة. لتحديد رقم الصفحة التي تحتاج إلى إضافة الصورة أو النص فيها، توفر كلتا الطريقتين وسيطًا لرقم الصفحة. لذا، يمكنك إضافة الصور والنصوص ليس فقط في الموقع المحدد ولكن أيضًا في صفحة محددة.
+يمكن أن تساعدك فئة [PdfFileMend](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend) في إضافة الصور والنصوص في مستند PDF موجود، في موقع محدد. توفر طريقتين تحملان أسماء [AddImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) و [AddText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend/methods/addtext/index). تتيح لك طريقة [AddImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) إضافة صور من نوع JPG و GIF و PNG و BMP. تأخذ طريقة [AddText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) وسيطًا من نوع [FormattedText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formattedtext) وتضيفه في ملف PDF الموجود. يمكن إضافة الصور والنصوص في منطقة مستطيلة محددة بواسطة إحداثيات النقاط السفلية اليسرى والعلوية اليمنى. أثناء إضافة الصور، يمكنك تحديد إما مسار ملف الصورة أو دفق ملف الصورة. لتحديد رقم الصفحة التي تحتاج إلى إضافة الصورة أو النص فيها، توفر كلتا الطريقتين وسيطًا لرقم الصفحة. لذا، يمكنك إضافة الصور والنصوص ليس فقط في الموقع المحدد ولكن أيضًا في صفحة محددة.
 
-تعتبر الصور جزءًا مهمًا من محتويات مستند PDF. إن معالجة الصور في ملف PDF موجود هي متطلب شائع للأشخاص الذين يعملون مع ملفات PDF. في هذه المقالة، سنستكشف كيفية معالجة الصور في ملف PDF موجود، بمساعدة [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) من [Aspose.PDF for .NET](/pdf/ar/net/). تم تجميع جميع العمليات المتعلقة بالصور من [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في هذه المقالة.
+تعتبر الصور جزءًا مهمًا من محتويات مستند PDF. إن معالجة الصور في ملف PDF موجود هي متطلب شائع للأشخاص الذين يعملون مع ملفات PDF. في هذه المقالة، سنستكشف كيفية معالجة الصور في ملف PDF موجود، بمساعدة [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) من [Aspose.PDF for .NET](/pdf/ar/net/). تم تجميع جميع العمليات المتعلقة بالصور من [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) في هذه المقالة.
 
 ## تفاصيل التنفيذ
 
-تتيح لك [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) إضافة صور جديدة في ملف PDF موجود. يمكنك أيضًا استبدال صورة موجودة أو إزالتها. يمكن أيضًا تحويل ملف PDF إلى صور. يمكنك إما تحويل كل صفحة فردية إلى صورة واحدة أو تحويل ملف PDF كامل إلى صورة واحدة. يسمح لك بتنسيقات مثل JPEG و BMP و PNG و TIFF وغيرها. يمكنك أيضًا استخراج الصور من ملف PDF. يمكنك استخدام أربع فئات من [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) لتنفيذ هذه العمليات وهي [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend)، [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)، [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) و [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter).
+تتيح لك [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) إضافة صور جديدة في ملف PDF موجود. يمكنك أيضًا استبدال صورة موجودة أو إزالتها. يمكن أيضًا تحويل ملف PDF إلى صور. يمكنك إما تحويل كل صفحة فردية إلى صورة واحدة أو تحويل ملف PDF كامل إلى صورة واحدة. يسمح لك بتنسيقات مثل JPEG و BMP و PNG و TIFF وغيرها. يمكنك أيضًا استخراج الصور من ملف PDF. يمكنك استخدام أربع فئات من [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) لتنفيذ هذه العمليات وهي [PdfFileMend](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend)، [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor)، [PdfExtractor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfextractor) و [PdfConverter](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfconverter).
 
 ## عمليات الصورة
 
-في هذا القسم، سنلقي نظرة مفصلة على هذه العمليات المتعلقة بالصور. سنرى أيضًا مقتطفات من التعليمات البرمجية لإظهار استخدام الفئات والطرق ذات الصلة. أولاً، دعونا نلقي نظرة على إضافة صورة في ملف PDF موجود. يمكننا استخدام طريقة [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) من فئة [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) لإضافة صورة جديدة. باستخدام هذه الطريقة، يمكنك تحديد رقم الصفحة التي تريد إضافة الصورة عليها، ولكن أيضًا يمكن تحديد موقع الصورة.
+في هذا القسم، سنلقي نظرة مفصلة على هذه العمليات المتعلقة بالصور. سنرى أيضًا مقتطفات من التعليمات البرمجية لإظهار استخدام الفئات والطرق ذات الصلة. أولاً، دعونا نلقي نظرة على إضافة صورة في ملف PDF موجود. يمكننا استخدام طريقة [AddImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) من فئة [PdfFileMend](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend) لإضافة صورة جديدة. باستخدام هذه الطريقة، يمكنك تحديد رقم الصفحة التي تريد إضافة الصورة عليها، ولكن أيضًا يمكن تحديد موقع الصورة.
 
 ## إضافة صورة في ملف PDF موجود (Facades)
 
-يمكنك استخدام طريقة [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) من فئة [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend). تتطلب طريقة [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) الصورة التي سيتم إضافتها، ورقم الصفحة التي تحتاج إلى إضافة الصورة فيها ومعلومات الإحداثيات. بعد ذلك، احفظ ملف PDF المحدث باستخدام طريقة [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/close).
+يمكنك استخدام طريقة [AddImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend/methods/addimage) من فئة [PdfFileMend](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend). تتطلب طريقة [AddImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend/methods/addimage) الصورة التي سيتم إضافتها، ورقم الصفحة التي تحتاج إلى إضافة الصورة فيها ومعلومات الإحداثيات. بعد ذلك، احفظ ملف PDF المحدث باستخدام طريقة [Close](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/close).
 
 في المثال التالي، نضيف صورة إلى الصفحة باستخدام imageStream:
 
@@ -124,7 +124,7 @@ private static void AddImage01()
 
 ![إضافة صورة](/pdf/ar/net/images/add_image1.png)
 
-بمساعدة [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)، يمكننا وضع صورة فوق أخرى:
+بمساعدة [CompositingParameters](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)، يمكننا وضع صورة فوق أخرى:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +248,7 @@ private static void AddImage04()
 
 ## إضافة نص في ملف PDF موجود (facades)
 
-يمكننا إضافة نص بعدة طرق. لنأخذ الطريقة الأولى. نأخذ [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) ونضيفه إلى الصفحة. بعد ذلك، نشير إلى إحداثيات الزاوية السفلية اليسرى، ثم نضيف نصنا إلى الصفحة.
+يمكننا إضافة نص بعدة طرق. لنأخذ الطريقة الأولى. نأخذ [FormattedText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formattedtext) ونضيفه إلى الصفحة. بعد ذلك، نشير إلى إحداثيات الزاوية السفلية اليسرى، ثم نضيف نصنا إلى الصفحة.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -279,7 +279,7 @@ private static void AddText01()
 
 ![إضافة نص](/pdf/ar/net/images/add_text.png)
 
-الطريقة الثانية لإضافة [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). بالإضافة إلى ذلك، نشير إلى مستطيل يجب أن يتناسب فيه نصنا.
+الطريقة الثانية لإضافة [FormattedText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formattedtext). بالإضافة إلى ذلك، نشير إلى مستطيل يجب أن يتناسب فيه نصنا.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

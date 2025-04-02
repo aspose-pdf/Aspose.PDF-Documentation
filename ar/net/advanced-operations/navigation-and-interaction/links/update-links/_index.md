@@ -83,12 +83,12 @@ sitemap:
 
 ## تحديث الروابط في ملف PDF
 
-كما تم مناقشته في إضافة رابط تشعبي في ملف PDF، فإن فئة [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) تجعل من الممكن إضافة روابط في ملف PDF. هناك أيضًا فئة مشابهة تُستخدم للحصول على الروابط الموجودة داخل ملفات PDF. استخدم هذا إذا كنت بحاجة إلى تحديث رابط موجود. لتحديث رابط موجود:
+كما تم مناقشته في إضافة رابط تشعبي في ملف PDF، فإن فئة [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) تجعل من الممكن إضافة روابط في ملف PDF. هناك أيضًا فئة مشابهة تُستخدم للحصول على الروابط الموجودة داخل ملفات PDF. استخدم هذا إذا كنت بحاجة إلى تحديث رابط موجود. لتحديث رابط موجود:
 
 1. قم بتحميل ملف PDF.
 1. انتقل إلى صفحة معينة في ملف PDF.
-1. حدد وجهة الرابط باستخدام خاصية Destination لكائن [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) .
-1. يتم تحديد الصفحة الوجهة باستخدام مُنشئ [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) .
+1. حدد وجهة الرابط باستخدام خاصية Destination لكائن [GoToAction](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/gotoaction) .
+1. يتم تحديد الصفحة الوجهة باستخدام مُنشئ [XYZExplicitDestination](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/xyzexplicitdestination) .
 
 ### تعيين هدف الرابط إلى صفحة في نفس المستند
 
@@ -155,7 +155,7 @@ private static void UpdateLinkAnnotation()
 
 ### تعيين وجهة الرابط إلى عنوان ويب
 
-لتحديث الرابط التشعبي بحيث يشير إلى عنوان ويب، قم بإنشاء كائن [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) ومرره إلى خاصية Action لفئة LinkAnnotation. تُظهر مقتطفات الشيفرة التالية كيفية تحديث رابط في ملف PDF وتعيين هدفه إلى عنوان ويب.
+لتحديث الرابط التشعبي بحيث يشير إلى عنوان ويب، قم بإنشاء كائن [GoToURIAction](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/gotouriaction) ومرره إلى خاصية Action لفئة LinkAnnotation. تُظهر مقتطفات الشيفرة التالية كيفية تحديث رابط في ملف PDF وتعيين هدفه إلى عنوان ويب.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

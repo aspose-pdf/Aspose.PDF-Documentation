@@ -11,6 +11,22 @@ sitemap:
 lastmod: "2021-12-22"
 ---
 
+## What's new in Aspose.PDF 25.3
+
+Since 25.2 added the ability to convert PDF to Markdown format:
+
+```cpp
+
+    using namespace System;
+    using namespace Aspose::Pdf; 
+
+    void SaveToMarkdownExample()
+    {    
+        auto doc = MakeObject<Document>(u"Example.pdf");    
+        doc->Save(u"example.md", SaveFormat::Markdown);
+    }
+```
+
 ## What's new in Aspose.PDF 24.11
 
 The loading of DJVU images is implemented:

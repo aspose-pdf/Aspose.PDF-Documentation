@@ -80,7 +80,7 @@ sitemap:
 
 Aspose.PDF 允许您使用 PdfLightTable 类从 DataSet、数据表、数组和 IEnumerable 对象创建带有数据源的表格。
 
-[Table 类](https://reference.aspose.com/pdf/net/aspose.pdf/table) 用于处理表格。此类使我们能够创建表格并将其放置在文档中，使用 [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) 和 [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell)。因此，要创建表格，您需要添加所需数量的行并用适当数量的单元格填充它们。
+[Table 类](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table) 用于处理表格。此类使我们能够创建表格并将其放置在文档中，使用 [Rows](https://reference.aspose.com/pdf/zh/net/aspose.pdf/rows) 和 [Cells](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cell)。因此，要创建表格，您需要添加所需数量的行并用适当数量的单元格填充它们。
 
 以下示例创建了一个 4x10 的表格。
 
@@ -189,14 +189,14 @@ private static void AddTable()
 
 在初始化 Table 对象时，使用了最小的皮肤设置：
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - 列的宽度（默认）。
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - 表格单元格的默认字段。
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - 表格框架属性（样式、厚度、颜色）。
-* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - 单元格框架的属性（样式、厚度、颜色）。
+* [ColumnWidths](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table/properties/columnwidths) - 列的宽度（默认）。
+* [DefaultCellPadding](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table/properties/defaultcellpadding) - 表格单元格的默认字段。
+* [Border](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table/properties/border) - 表格框架属性（样式、厚度、颜色）。
+* [DefaultCellBorder](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table/properties/defaultcellborder) - 单元格框架的属性（样式、厚度、颜色）。
 
 ## 从对象数组导出数据
 
-Table 类提供了与 ADO.NET 数据源交互的方法 - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) 和 [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview)。第一个方法从 DataTable 导入数据，第二个方法从 DataView 导入数据。
+Table 类提供了与 ADO.NET 数据源交互的方法 - [ImportDataTable](https://reference.aspose.com/pdf/zh/net/aspose.pdf.table/importdatatable/methods/1) 和 [ImportDataView](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table/methods/importdataview)。第一个方法从 DataTable 导入数据，第二个方法从 DataView 导入数据。
 假设这些对象在 MVC 模板中不太方便使用，我们将限制在一个简短的示例中。在此示例中（第 50 行），调用 ImportDataTable 方法，并接收 DataTable 实例和其他设置（如标题标志和数据输出的初始位置（行/列））作为参数。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

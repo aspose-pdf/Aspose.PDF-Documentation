@@ -77,7 +77,7 @@ draft: false
 
 ## 更改 PDF 文件的密码
 
-为了更改 PDF 文件的密码，您需要创建 [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) 对象，然后调用 [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) 方法。您需要将现有的所有者密码和新的用户及所有者密码传递给 [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) 方法。
+为了更改 PDF 文件的密码，您需要创建 [PdfFileSecurity](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity) 对象，然后调用 [ChangePassword](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) 方法。您需要将现有的所有者密码和新的用户及所有者密码传递给 [ChangePassword](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2) 方法。
 
 {{% alert color="primary" %}}
 

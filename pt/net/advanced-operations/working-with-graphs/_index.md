@@ -84,7 +84,7 @@ priority: 0.7
 Adicionar gráficos a documentos PDF é uma tarefa muito comum para desenvolvedores ao trabalhar com Adobe Acrobat Writer ou outras aplicações de processamento de PDF. Existem muitos tipos de gráficos que podem ser usados em aplicações PDF.
 [Aspose.PDF for .NET](/pdf/pt/net/) também suporta a adição de gráficos a documentos PDF. Para esse propósito, a classe Gráfico é fornecida. Gráfico é um elemento de nível de parágrafo e pode ser adicionado à coleção de Parágrafos em uma instância de Página. Uma instância de Gráfico contém uma coleção de Formas.
 
-Os seguintes tipos de formas são suportados pela classe [Gráfico](https://reference.aspose.com/pdf/pt/net/aspose.pdf.drawing/graph):
+Os seguintes tipos de formas são suportados pela classe [Gráfico](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph):
 
 - [Arco](/pdf/pt/net/add-arc/) - às vezes também chamado de bandeira, é um par ordenado de vértices adjacentes, mas às vezes também chamado de linha direcionada.
 - [Círculo](/pdf/pt/net/add-circle/) - exibe dados usando um círculo dividido em setores. Usamos um gráfico de círculo (também chamado de gráfico de pizza) para mostrar como os dados representam porções de um todo ou de um grupo.

@@ -79,16 +79,16 @@ sitemap:
 }
 </script>
 
-التعليقات في مستند PDF موجودة في مجموعة التعليقات الخاصة بكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). تحتوي هذه المجموعة على جميع التعليقات لتلك الصفحة الفردية فقط: كل صفحة لها مجموعتها الخاصة من التعليقات. لإضافة تعليق إلى صفحة معينة، أضفه إلى مجموعة التعليقات الخاصة بتلك الصفحة باستخدام طريقة Add.
+التعليقات في مستند PDF موجودة في مجموعة التعليقات الخاصة بكائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page). تحتوي هذه المجموعة على جميع التعليقات لتلك الصفحة الفردية فقط: كل صفحة لها مجموعتها الخاصة من التعليقات. لإضافة تعليق إلى صفحة معينة، أضفه إلى مجموعة التعليقات الخاصة بتلك الصفحة باستخدام طريقة Add.
 
-استخدم فئة [ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) في مساحة أسماء Aspose.PDF.InteractiveFeatures.Annotations لتضمين ملفات SWF كتعليقات في مستند PDF بدلاً من ذلك. يحدد التعليق على الشاشة منطقة من الصفحة يمكن تشغيل مقاطع الوسائط عليها.
+استخدم فئة [ScreenAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/screenannotation) في مساحة أسماء Aspose.PDF.InteractiveFeatures.Annotations لتضمين ملفات SWF كتعليقات في مستند PDF بدلاً من ذلك. يحدد التعليق على الشاشة منطقة من الصفحة يمكن تشغيل مقاطع الوسائط عليها.
 
-عندما تحتاج إلى إضافة رابط فيديو خارجي في مستند PDF، يمكنك استخدام [MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation).
+عندما تحتاج إلى إضافة رابط فيديو خارجي في مستند PDF، يمكنك استخدام [MovieAnnotaiton](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/movieannotation).
 يحتوي التعليق على الفيلم على رسومات متحركة وصوت ليتم تقديمه على شاشة الكمبيوتر ومن خلال مكبرات الصوت.
 
-يجب أن يكون [Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) مشابهًا لتعليق نصي باستثناء أنه بدلاً من ملاحظة نصية، يحتوي على صوت مسجل من ميكروفون الكمبيوتر أو مستورد من ملف. عند تفعيل التعليق، سيتم تشغيل الصوت. يجب أن يتصرف التعليق مثل التعليق النصي في معظم النواحي، مع أيقونة مختلفة (بشكل افتراضي، مكبر صوت) للإشارة إلى أنه يمثل صوتًا.
+يجب أن يكون [Sound Annotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/soundannotation) مشابهًا لتعليق نصي باستثناء أنه بدلاً من ملاحظة نصية، يحتوي على صوت مسجل من ميكروفون الكمبيوتر أو مستورد من ملف. عند تفعيل التعليق، سيتم تشغيل الصوت. يجب أن يتصرف التعليق مثل التعليق النصي في معظم النواحي، مع أيقونة مختلفة (بشكل افتراضي، مكبر صوت) للإشارة إلى أنه يمثل صوتًا.
 
-ومع ذلك، عندما تكون هناك حاجة لتضمين الوسائط داخل مستند PDF، تحتاج إلى استخدام [RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
+ومع ذلك، عندما تكون هناك حاجة لتضمين الوسائط داخل مستند PDF، تحتاج إلى استخدام [RichMediaAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/richmediaannotation).
 
 يمكن استخدام الطرق/الخصائص التالية من فئة RichMediaAnnotation.
 
@@ -292,7 +292,7 @@ private static void DeletePolyAnnotation()
 
 ## إضافة تعليقات الأدوات
 
-تستخدم النماذج التفاعلية [تعليقات الأدوات](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) لتمثيل مظهر الحقول وإدارة تفاعلات المستخدم.
+تستخدم النماذج التفاعلية [تعليقات الأدوات](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/widgetannotation) لتمثيل مظهر الحقول وإدارة تفاعلات المستخدم.
 نستخدم هذه العناصر النموذجية التي تضيف إلى PDF لتسهيل إدخال المعلومات أو تقديمها، أو إجراء بعض التفاعلات الأخرى مع المستخدم.
 
 تعليقات الأدوات هي تمثيل رسومي لحقل نموذج على صفحات معينة، لذا لا يمكننا إنشاؤها مباشرة كتعليق.
@@ -453,14 +453,14 @@ private static void AddNavigationButtons()
 
 يتم إضافة التعليق ثلاثي الأبعاد باستخدام نموذج تم إنشاؤه بتنسيق U3D.
 
-1. إنشاء [مستند](https://reference.aspose.com/pdf/net/aspose.pdf/document) جديد.
-1. تحميل بيانات نموذج ثلاثي الأبعاد المطلوب (في حالتنا "Ring.u3d") لإنشاء [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent).
-1. إنشاء كائن [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) وربطه بالمستند و3DContent.
+1. إنشاء [مستند](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) جديد.
+1. تحميل بيانات نموذج ثلاثي الأبعاد المطلوب (في حالتنا "Ring.u3d") لإنشاء [PDF3DContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/pdf3dcontent).
+1. إنشاء كائن [3dArtWork](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/pdf3dartwork) وربطه بالمستند و3DContent.
 1. ضبط كائن pdf3dArtWork:
 
     - 3DLightingScheme - (سنقوم بتعيين `CAD` في المثال)
     - 3DRenderMode - (سنقوم بتعيين `Solid` في المثال)
-    - ملء `ViewArray`، وإنشاء على الأقل [عرض ثلاثي الأبعاد](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) وإضافته إلى المصفوفة.
+    - ملء `ViewArray`، وإنشاء على الأقل [عرض ثلاثي الأبعاد](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/pdf3dview) وإضافته إلى المصفوفة.
 
 1. تعيين 3 معلمات أساسية في التعليق:
     - `page` التي سيتم وضع التعليق عليها.
@@ -469,7 +469,7 @@ private static void AddNavigationButtons()
 1. للحصول على عرض أفضل للكائن ثلاثي الأبعاد، قم بتعيين إطار الحدود.
 1. تعيين العرض الافتراضي (على سبيل المثال - TOP).
 1. إضافة بعض المعلمات الإضافية: الاسم، ملصق المعاينة، إلخ.
-1. إضافة التعليق إلى [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. إضافة التعليق إلى [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page).
 1. حفظ النتيجة.
 
 ### مثال

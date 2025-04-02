@@ -77,13 +77,13 @@ draft: false
 
 {{% alert color="primary" %}}
 
-فئة [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) توفر إمكانية تدوير صفحة.
+فئة [PdfPageEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor) توفر إمكانية تدوير صفحة.
 
 {{% /alert %}}
 
 ## تدوير الصفحة باستخدام PageRotations
 
-لتدوير الصفحات في المستند يمكننا استخدام [PageRotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
+لتدوير الصفحات في المستند يمكننا استخدام [PageRotations](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
 `PageRotations` تحتوي على رقم الصفحة ودرجة التدوير، المفتاح يمثل رقم الصفحة، وقيمة المفتاح تمثل التدوير بالدرجات.
 
 ```csharp
@@ -114,7 +114,7 @@ draft: false
 
 ## تدوير الصفحة باستخدام Rotation
 
-يمكننا أيضًا استخدام خاصية [Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation). يجب أن يكون التدوير 0 أو 90 أو 180 أو 270
+يمكننا أيضًا استخدام خاصية [Rotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor/properties/rotation). يجب أن يكون التدوير 0 أو 90 أو 180 أو 270
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

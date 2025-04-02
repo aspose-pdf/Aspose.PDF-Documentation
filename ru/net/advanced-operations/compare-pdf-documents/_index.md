@@ -199,7 +199,7 @@ private static void ComparingEntireDocuments()
 
 При сотрудничестве над документами, особенно в профессиональной среде, вы часто получаете несколько версий одного и того же файла.
 
-Вы можете использовать класс [GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) для сравнения PDF документов и страниц. Класс подходит для сравнения изменений в графическом содержимом страницы.
+Вы можете использовать класс [GraphicalPdfComparer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) для сравнения PDF документов и страниц. Класс подходит для сравнения изменений в графическом содержимом страницы.
 
 С Aspose.PDF for .NET возможно сравнивать документы и страницы и выводить результат сравнения в PDF документ или файл изображения.
 
@@ -211,13 +211,13 @@ private static void ComparingEntireDocuments()
 
 Класс имеет метод, который позволяет получить различия изображений страниц в форме, подходящей для дальнейшей обработки: **ImagesDifference GetDifference(Page page1, Page page2)**.
 
-Этот метод возвращает объект класса [ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/), который содержит изображение первой страницы, которая сравнивается, и массив различий. Массив различий и оригинальное изображение имеют формат пикселей **RGB24bpp**.
+Этот метод возвращает объект класса [ImagesDifference](https://reference.aspose.com/pdf/ru/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/), который содержит изображение первой страницы, которая сравнивается, и массив различий. Массив различий и оригинальное изображение имеют формат пикселей **RGB24bpp**.
 
 ImagesDifference позволяет вам сгенерировать другое изображение и получить изображение второй страницы, которая сравнивается, добавив массив различий к оригинальному изображению. Для этого используйте методы **ImagesDifference.GetDestinationImage и ImagesDifference.DifferenceToImage**.
 
 ### Сравнение PDF с методом GetDifference
 
-Предоставленный код определяет метод [GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods), который сравнивает два PDF документа и генерирует визуальные представления различий между ними.
+Предоставленный код определяет метод [GetDifference](https://reference.aspose.com/pdf/ru/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods), который сравнивает два PDF документа и генерирует визуальные представления различий между ними.
 
 Этот метод сравнивает первые страницы двух PDF файлов и генерирует два PNG изображения:
 
@@ -259,7 +259,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 
 ### Сравнение PDF с методом CompareDocumentsToPdf
 
-Предоставленный фрагмент кода использует метод [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/), который сравнивает два документа и генерирует PDF отчет о результатах сравнения.
+Предоставленный фрагмент кода использует метод [CompareDocumentsToPdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/), который сравнивает два документа и генерирует PDF отчет о результатах сравнения.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

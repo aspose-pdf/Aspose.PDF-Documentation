@@ -79,7 +79,7 @@ draft: false
 
 عندما يتم إضافة توقيع إلى ملفات PDF، من الممكن إزالته. يمكنك إزالة توقيع معين، أو جميع التوقيعات في ملف. أسرع طريقة لإزالة التوقيع تزيل أيضًا خانة التوقيع، ولكن من الممكن إزالة التوقيع فقط، مع الاحتفاظ بخانة التوقيع حتى يمكن توقيع الملف مرة أخرى.
 
-تتيح لك طريقة RemoveSignature في فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) إزالة توقيع من ملف PDF. تأخذ هذه الطريقة اسم التوقيع كمدخل. إما أن تحدد اسم التوقيع مباشرة، لإزالة جميع التوقيعات، أو الحصول على أسماء التوقيعات باستخدام طريقة [GetSignNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
+تتيح لك طريقة RemoveSignature في فئة [PdfFileSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature) إزالة توقيع من ملف PDF. تأخذ هذه الطريقة اسم التوقيع كمدخل. إما أن تحدد اسم التوقيع مباشرة، لإزالة جميع التوقيعات، أو الحصول على أسماء التوقيعات باستخدام طريقة [GetSignNames](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
 
 تظهر الشيفرة التالية كيفية إزالة التوقيع الرقمي من ملف PDF.
 
@@ -111,7 +111,7 @@ private static void RemoveSignature()
 
 ### إزالة التوقيع ولكن الاحتفاظ بخانة التوقيع
 
-كما هو موضح أعلاه، تتيح لك طريقة [RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) في فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) إزالة خانات التوقيع من ملفات PDF. عند استخدام هذه الطريقة مع الإصدارات السابقة لـ 9.3.0، تتم إزالة كل من التوقيع وخانة التوقيع. يرغب بعض المطورين في إزالة التوقيع فقط والاحتفاظ بخانة التوقيع حتى يمكن استخدامها لإعادة توقيع الوثيقة. للاحتفاظ بخانة التوقيع وإزالة التوقيع فقط، يرجى استخدام الشيفرة التالية.
+كما هو موضح أعلاه، تتيح لك طريقة [RemoveSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) في فئة [PdfFileSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature) إزالة خانات التوقيع من ملفات PDF. عند استخدام هذه الطريقة مع الإصدارات السابقة لـ 9.3.0، تتم إزالة كل من التوقيع وخانة التوقيع. يرغب بعض المطورين في إزالة التوقيع فقط والاحتفاظ بخانة التوقيع حتى يمكن استخدامها لإعادة توقيع الوثيقة. للاحتفاظ بخانة التوقيع وإزالة التوقيع فقط، يرجى استخدام الشيفرة التالية.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

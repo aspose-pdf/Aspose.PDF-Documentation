@@ -95,12 +95,12 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 Pour ajouter une annotation de balisage de texte au document PDF, nous devons effectuer les actions suivantes :
 
-1. Charger le fichier PDF - nouvel objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Charger le fichier PDF - nouvel objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 1. Créer des annotations :
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) et définir les paramètres (titre, couleur).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) et définir les paramètres (titre, couleur).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) et définir les paramètres (titre, couleur).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) et définir les paramètres (titre, couleur).
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/highlightannotation) et définir les paramètres (titre, couleur).
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/strikeoutannotation) et définir les paramètres (titre, couleur).
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/squigglyannotation) et définir les paramètres (titre, couleur).
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/underlineannotation) et définir les paramètres (titre, couleur).
 1. Ensuite, nous devrions ajouter toutes les annotations à la page.
 
 ```csharp

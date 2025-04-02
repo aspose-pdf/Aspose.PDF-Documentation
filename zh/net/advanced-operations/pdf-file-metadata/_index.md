@@ -83,7 +83,7 @@ sitemap:
 
 ## 获取 PDF 文件信息
 
-为了获取 PDF 文件的特定信息，您首先需要使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) 属性获取 [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) 对象。一旦检索到 [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) 对象，您可以获取各个属性的值。以下代码片段向您展示如何获取 PDF 文件信息。
+为了获取 PDF 文件的特定信息，您首先需要使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [Info](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/info) 属性获取 [DocumentInfo](https://reference.aspose.com/pdf/zh/net/aspose.pdf/documentinfo) 对象。一旦检索到 [DocumentInfo](https://reference.aspose.com/pdf/zh/net/aspose.pdf/documentinfo) 对象，您可以获取各个属性的值。以下代码片段向您展示如何获取 PDF 文件信息。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -142,7 +142,7 @@ private static void GetPDFFileInformation()
 
 Aspose.PDF for .NET 允许您为 PDF 设置特定的信息，例如作者、创建日期、主题和标题。要设置此信息：
 
-1. 创建一个 [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) 对象。
+1. 创建一个 [DocumentInfo](https://reference.aspose.com/pdf/zh/net/aspose.pdf/documentinfo) 对象。
 1. 设置属性的值。
 1. 使用 Document 类的 Save 方法保存更新后的文档。
 
@@ -214,8 +214,8 @@ private static void SetFileInformation()
 
 Aspose.PDF 允许您访问 PDF 文件的 XMP 元数据。要获取 PDF 文件的元数据：
 
-1. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象并打开输入的 PDF 文件。
-1. 使用 [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) 属性获取文件的元数据。
+1. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象并打开输入的 PDF 文件。
+1. 使用 [Metadata](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/metadata) 属性获取文件的元数据。
 
 以下代码片段向您展示如何从 PDF 文件获取元数据。
 
@@ -265,9 +265,9 @@ private static void GetXMPMetadata()
 
 Aspose.PDF 允许您在 PDF 文件中设置元数据。要设置元数据：
 
-1. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。
-1. 使用 [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) 属性设置元数据值。
-1. 使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的文档。
+1. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
+1. 使用 [Metadata](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/metadata) 属性设置元数据值。
+1. 使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的文档。
 
 以下代码片段向您展示如何在 PDF 文件中设置元数据。
 

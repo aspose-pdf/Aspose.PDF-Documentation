@@ -87,13 +87,13 @@ sitemap:
 
 اتبع الخطوات أدناه:
 
-1. إنشاء مثيل [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. إنشاء [كائن رسم](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) بأبعاد معينة.
-1. تعيين [الحدود](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) لكائن الرسم.
-1. إضافة [كائن رسم بياني](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) إلى مجموعة الفقرات في الصفحة.
+1. إنشاء مثيل [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. إنشاء [كائن رسم](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing) بأبعاد معينة.
+1. تعيين [الحدود](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/graph/properties/border) لكائن الرسم.
+1. إضافة [كائن رسم بياني](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/graph) إلى مجموعة الفقرات في الصفحة.
 1. حفظ ملف PDF الخاص بنا.
 
-تظهر مقتطفات الشيفرة التالية كيفية إضافة كائن [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc) .
+تظهر مقتطفات الشيفرة التالية كيفية إضافة كائن [Arc](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/arc) .
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

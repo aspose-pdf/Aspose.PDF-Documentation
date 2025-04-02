@@ -85,7 +85,7 @@ sitemap:
 
 تساعدك هذه الموضوعات على فهم كيفية الحصول على خصائص نافذة المستند، وتطبيق العرض، وكيفية عرض الصفحات. لتعيين هذه الخصائص:
 
-افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. الآن، يمكنك تعيين خصائص كائن Document، مثل
+افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) class. الآن، يمكنك تعيين خصائص كائن Document، مثل
 
 - CenterWindow – مركز نافذة المستند على الشاشة. الافتراضي: false.
 - Direction – ترتيب القراءة. يحدد كيفية عرض الصفحات عند عرضها جنبًا إلى جنب. الافتراضي: من اليسار إلى اليمين.
@@ -99,7 +99,7 @@ sitemap:
 
 يعمل مقتطف الشيفرة التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-يظهر مقتطف الشيفرة التالي كيفية الحصول على الخصائص باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
+يظهر مقتطف الشيفرة التالي كيفية الحصول على الخصائص باستخدام [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) class.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -154,7 +154,7 @@ private static void GetDocumentWindowProperties()
 
 تشرح هذه الموضوعات كيفية تعيين خصائص نافذة المستند، وتطبيق العرض، وعرض الصفحة. لتعيين هذه الخصائص المختلفة:
 
-1. افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
+1. افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) class.
 1. قم بتعيين خصائص كائن Document.
 1. احفظ ملف PDF المحدث باستخدام طريقة Save.
 
@@ -171,7 +171,7 @@ private static void GetDocumentWindowProperties()
 - PageLayout.
 - PageMode.
 
-يتم استخدام كل منها ووصفها في الشيفرة أدناه. يظهر مقتطف الشيفرة التالي كيفية تعيين الخصائص باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
+يتم استخدام كل منها ووصفها في الشيفرة أدناه. يظهر مقتطف الشيفرة التالي كيفية تعيين الخصائص باستخدام [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) class.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -229,7 +229,7 @@ private static void SetDocumentWindowProperties()
 
 تدعم قارئات PDF [مجموعة أساسية من 14 خطًا](https://en.wikipedia.org/wiki/PDF#Text) بحيث يمكن عرض المستندات بنفس الطريقة بغض النظر عن النظام الأساسي الذي يتم عرض المستند عليه. عندما يحتوي PDF على خط ليس من بين الخطوط الأربعة عشر الأساسية، يجب تضمين الخط في ملف PDF لتجنب استبدال الخط.
 
-يدعم Aspose.PDF for .NET تضمين الخطوط في ملفات PDF الموجودة. يمكنك تضمين خط كامل أو مجموعة فرعية من الخط. لتضمين الخط، افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. ثم استخدم [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) class لتضمين الخط في ملف PDF. لتضمين الخط الكامل، استخدم خاصية IsEmbeded لفئة Font؛ لاستخدام مجموعة فرعية من الخط، استخدم خاصية IsSubset.
+يدعم Aspose.PDF for .NET تضمين الخطوط في ملفات PDF الموجودة. يمكنك تضمين خط كامل أو مجموعة فرعية من الخط. لتضمين الخط، افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) class. ثم استخدم [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text) class لتضمين الخط في ملف PDF. لتضمين الخط الكامل، استخدم خاصية IsEmbeded لفئة Font؛ لاستخدام مجموعة فرعية من الخط، استخدم خاصية IsSubset.
 
 {{% alert color="primary" %}}
 
@@ -241,7 +241,7 @@ private static void SetDocumentWindowProperties()
 
 ### تضمين الخطوط القياسية من النوع 1
 
-تحتوي بعض مستندات PDF على خطوط من مجموعة خطوط Adobe الخاصة. تُسمى الخطوط من هذه المجموعة "خطوط قياسية من النوع 1". تتضمن هذه المجموعة 14 خطًا ويتطلب تضمين هذا النوع من الخطوط استخدام علامات خاصة أي [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). فيما يلي مقتطف الشيفرة الذي يمكن استخدامه للحصول على مستند مع جميع الخطوط المضمنة بما في ذلك خطوط قياسية من النوع 1:
+تحتوي بعض مستندات PDF على خطوط من مجموعة خطوط Adobe الخاصة. تُسمى الخطوط من هذه المجموعة "خطوط قياسية من النوع 1". تتضمن هذه المجموعة 14 خطًا ويتطلب تضمين هذا النوع من الخطوط استخدام علامات خاصة أي [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/embedstandardfonts). فيما يلي مقتطف الشيفرة الذي يمكن استخدامه للحصول على مستند مع جميع الخطوط المضمنة بما في ذلك خطوط قياسية من النوع 1:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
 
 ### الحصول على جميع الخطوط من مستند PDF
 
-في حالة رغبتك في الحصول على جميع الخطوط من مستند PDF، يمكنك استخدام طريقة FontUtilities.GetAllFonts() المقدمة في [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. يرجى مراجعة مقتطف الشيفرة التالي للحصول على جميع الخطوط من مستند PDF موجود:
+في حالة رغبتك في الحصول على جميع الخطوط من مستند PDF، يمكنك استخدام طريقة FontUtilities.GetAllFonts() المقدمة في [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) class. يرجى مراجعة مقتطف الشيفرة التالي للحصول على جميع الخطوط من مستند PDF موجود:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -450,7 +450,7 @@ private static void SetFontSubsetStrategy()
 
 في بعض الأحيان، تريد تحديد ما هو عامل التكبير الحالي لمستند PDF. مع Aspose.Pdf، يمكنك معرفة القيمة الحالية وكذلك تعيين واحدة.
 
-تسمح خاصية Destination لفئة [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) بالحصول على قيمة التكبير المرتبطة بملف PDF. وبالمثل، يمكن استخدامها لتعيين عامل تكبير الملف.
+تسمح خاصية Destination لفئة [GoToAction](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/gotoaction) بالحصول على قيمة التكبير المرتبطة بملف PDF. وبالمثل، يمكن استخدامها لتعيين عامل تكبير الملف.
 
 #### تعيين عامل التكبير
 

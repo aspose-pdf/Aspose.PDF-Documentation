@@ -77,9 +77,9 @@ draft: false
 
 ## الحصول على تفضيلات عرض ملف PDF موجود
 
-[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) تمثل فئة أوضاع عرض ملفات PDF؛ على سبيل المثال، وضع نافذة المستند في وسط الشاشة، إخفاء شريط قائمة تطبيق العرض، إلخ.
+[ViewerPreference](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/viewerpreference) تمثل فئة أوضاع عرض ملفات PDF؛ على سبيل المثال، وضع نافذة المستند في وسط الشاشة، إخفاء شريط قائمة تطبيق العرض، إلخ.
 
-من أجل قراءة الإعدادات، نستخدم [GetViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference) الفئة. تُرجع هذه الطريقة متغيرًا حيث يتم حفظ جميع الإعدادات.
+من أجل قراءة الإعدادات، نستخدم [GetViewerPreference](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference) الفئة. تُرجع هذه الطريقة متغيرًا حيث يتم حفظ جميع الإعدادات.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

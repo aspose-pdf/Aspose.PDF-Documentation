@@ -77,7 +77,7 @@ draft: false
 
 ## Добавить элемент списка в существующий PDF файл
 
-[AddListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addlistitem) метод позволяет вам добавить элемент в поле [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield). Первый аргумент — это имя поля, а второй аргумент — элемент поля. Вы можете передать либо один элемент поля, либо массив строк, содержащий список элементов. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Следующий фрагмент кода показывает, как добавить элементы списка в PDF файл.
+[AddListItem](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/addlistitem) метод позволяет вам добавить элемент в поле [ListBox](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/listboxfield). Первый аргумент — это имя поля, а второй аргумент — элемент поля. Вы можете передать либо один элемент поля, либо массив строк, содержащий список элементов. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor). Следующий фрагмент кода показывает, как добавить элементы списка в PDF файл.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -110,7 +110,7 @@ draft: false
 
 ## Удалить элемент списка из существующего PDF файла
 
-[DelListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/dellistitem) метод позволяет вам удалить определенный элемент из [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield). Первый параметр — это имя поля, а второй параметр — это элемент, который вы хотите удалить из списка. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Следующий фрагмент кода показывает, как удалить элемент списка из PDF файла.
+[DelListItem](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/dellistitem) метод позволяет вам удалить определенный элемент из [ListBox](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/listboxfield). Первый параметр — это имя поля, а второй параметр — это элемент, который вы хотите удалить из списка. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor). Следующий фрагмент кода показывает, как удалить элемент списка из PDF файла.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

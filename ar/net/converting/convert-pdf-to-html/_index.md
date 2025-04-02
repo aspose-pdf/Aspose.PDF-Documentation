@@ -113,11 +113,11 @@ _التنسيق_: **HTML**
 [![Aspose.PDF تحويل PDF إلى HTML مع تطبيق مجاني](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
-توفر Aspose.PDF for .NET كودًا من سطرين لتحويل ملف PDF المصدر إلى HTML. تحتوي [`SaveFormat enumeration`](https://reference.aspose.com/pdf/net/aspose.pdf/saveformat) على القيمة Html التي تتيح لك حفظ الملف المصدر بتنسيق HTML. يوضح مقتطف الكود التالي عملية تحويل ملف PDF إلى HTML.
+توفر Aspose.PDF for .NET كودًا من سطرين لتحويل ملف PDF المصدر إلى HTML. تحتوي [`SaveFormat enumeration`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/saveformat) على القيمة Html التي تتيح لك حفظ الملف المصدر بتنسيق HTML. يوضح مقتطف الكود التالي عملية تحويل ملف PDF إلى HTML.
 
 <a name="csharp-pdf-to-html"><strong>الخطوات: تحويل PDF إلى HTML في C#</strong></a>
 
-1. إنشاء مثيل من كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) مع مستند PDF المصدر.
+1. إنشاء مثيل من كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/) مع مستند PDF المصدر.
 2. حفظه بتنسيق **SaveFormat.Html** عن طريق استدعاء **Document.Save()**.
 
 ```csharp
@@ -165,7 +165,7 @@ private static void ConvertPDFtoMultiPageHTML()
 
 ### تحديد مجلد لتخزين ملفات SVG
 
-أثناء تحويل PDF إلى HTML، من الممكن تحديد المجلد الذي يجب حفظ صور SVG فيه. استخدم [`HtmlSaveOption class`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions) [`SpecialFolderForSvgImages property`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) لتحديد دليل خاص لصور SVG. هذه الخاصية تحصل أو تضبط المسار إلى الدليل الذي يجب حفظ صور SVG فيه عند مواجهتها أثناء التحويل. إذا كانت المعلمة فارغة أو null، فسيتم حفظ أي ملفات SVG مع ملفات الصور الأخرى.
+أثناء تحويل PDF إلى HTML، من الممكن تحديد المجلد الذي يجب حفظ صور SVG فيه. استخدم [`HtmlSaveOption class`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlsaveoptions) [`SpecialFolderForSvgImages property`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) لتحديد دليل خاص لصور SVG. هذه الخاصية تحصل أو تضبط المسار إلى الدليل الذي يجب حفظ صور SVG فيه عند مواجهتها أثناء التحويل. إذا كانت المعلمة فارغة أو null، فسيتم حفظ أي ملفات SVG مع ملفات الصور الأخرى.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

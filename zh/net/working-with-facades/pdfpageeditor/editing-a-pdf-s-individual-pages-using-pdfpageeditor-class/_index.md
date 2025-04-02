@@ -83,17 +83,17 @@ Aspose.Pdf.Facades 命名空间在 [Aspose.PDF for .NET](/pdf/zh/net/) 中允许
 
 ## 说明
 
-[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 类与 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 和 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类不同。首先，我们需要了解它们之间的区别，然后我们才能更好地理解 PdfPageEditor 类。PdfFileEditor 类允许您操作文件中的所有页面，例如添加、删除或连接页面等，而 PdfContentEditor 类帮助您操作页面的内容，即文本和其他对象等。而 PdfPageEditor 类仅处理单独页面本身，例如旋转、缩放和对齐页面等。
+[PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 类与 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 和 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类不同。首先，我们需要了解它们之间的区别，然后我们才能更好地理解 PdfPageEditor 类。PdfFileEditor 类允许您操作文件中的所有页面，例如添加、删除或连接页面等，而 PdfContentEditor 类帮助您操作页面的内容，即文本和其他对象等。而 PdfPageEditor 类仅处理单独页面本身，例如旋转、缩放和对齐页面等。
 
 我们可以将此类提供的功能分为三个主要类别，即过渡、对齐和显示。我们将在下面讨论这些类别：
 
 ### 过渡
 
-此类包含两个与过渡相关的属性，即 [TransitionType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) 和 [TransitionDuration](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration)。TransitionType 指定在演示期间从另一页面移动到此页面时使用的过渡样式。TransitionDuration 指定页面的显示持续时间。
+此类包含两个与过渡相关的属性，即 [TransitionType](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) 和 [TransitionDuration](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration)。TransitionType 指定在演示期间从另一页面移动到此页面时使用的过渡样式。TransitionDuration 指定页面的显示持续时间。
 
 ### 对齐
 
-PdfPageEditor 类支持水平和垂直对齐。它提供两个属性来实现此目的，即 [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) 和 [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment)。Alignment 属性用于水平对齐内容。Alignment 属性接受 AlignmentType 的值，其中包含三个选项：居中、左对齐和右对齐。VerticalAlignment 属性接受 VerticalAlignmentType 的值，其中包含三个选项：底部、居中和顶部。
+PdfPageEditor 类支持水平和垂直对齐。它提供两个属性来实现此目的，即 [Alignment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) 和 [VerticalAlignment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment)。Alignment 属性用于水平对齐内容。Alignment 属性接受 AlignmentType 的值，其中包含三个选项：居中、左对齐和右对齐。VerticalAlignment 属性接受 VerticalAlignmentType 的值，其中包含三个选项：底部、居中和顶部。
 
 ### 显示
 
@@ -162,5 +162,5 @@ private static void EditPdfPages()
 ## 结论
 
 {{% alert color="primary" %}}
-在本文中，我们更详细地查看了 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 类。我们详细说明了此类提供的属性和方法。它使得在类中操作单独页面变得非常简单易行。
+在本文中，我们更详细地查看了 [PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 类。我们详细说明了此类提供的属性和方法。它使得在类中操作单独页面变得非常简单易行。
 {{% /alert %}}

@@ -82,7 +82,7 @@ sitemap:
 
 ## 在现有 PDF 文件上设置权限
 
-要在 PDF 文件上设置权限，请创建 [DocumentPrivilege](https://reference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege) 类的对象，并指定要应用于文档的权限。一旦定义了权限，将此对象作为参数传递给 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) 方法。以下代码片段演示了如何设置 PDF 文件的权限。
+要在 PDF 文件上设置权限，请创建 [DocumentPrivilege](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/documentprivilege) 类的对象，并指定要应用于文档的权限。一旦定义了权限，将此对象作为参数传递给 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [Encrypt](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/encrypt/methods/1) 方法。以下代码片段演示了如何设置 PDF 文件的权限。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void SetPrivilegesOnExistingPdfFile()
 
 ## 使用不同的加密类型和算法加密 PDF 文件
 
-您可以使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) 方法来加密 PDF 文件。您可以将用户密码、所有者密码和权限传递给 [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) 方法。此外，您可以传递 [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm) 枚举的任何值。该枚举提供了不同的加密算法和密钥大小的组合。您可以传递您选择的值。最后，使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存加密的 PDF 文件。
+您可以使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [Encrypt](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/encrypt/methods/1) 方法来加密 PDF 文件。您可以将用户密码、所有者密码和权限传递给 [Encrypt](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/encrypt/methods/1) 方法。此外，您可以传递 [CryptoAlgorithm](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cryptoalgorithm) 枚举的任何值。该枚举提供了不同的加密算法和密钥大小的组合。您可以传递您选择的值。最后，使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存加密的 PDF 文件。
 
 >在加密 PDF 文件时，请指定不同的用户和所有者密码。
 
@@ -145,7 +145,7 @@ private static void EncryptPdfFile()
 
 最好通过使用 Aspose.PDF 库一次性解决此问题。
 
-要解密 PDF 文件，您首先需要创建 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象，并使用所有者密码打开 PDF。之后，您需要调用 [Decrypt](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/decrypt) 方法。最后，使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存更新后的 PDF 文件。以下代码片段演示了如何解密 PDF 文件。
+要解密 PDF 文件，您首先需要创建 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象，并使用所有者密码打开 PDF。之后，您需要调用 [Decrypt](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/decrypt) 方法。最后，使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存更新后的 PDF 文件。以下代码片段演示了如何解密 PDF 文件。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -167,7 +167,7 @@ private static void DecryptPdfFile()
 
 ## 更改 PDF 文件的密码
 
-如果您想更改 PDF 文件的密码，您首先需要使用所有者密码打开 PDF 文件，并使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。之后，您需要调用 [ChangePasswords](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords) 方法。您需要将当前所有者密码与新用户密码和新所有者密码一起传递给此方法。最后，使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存更新后的 PDF 文件。
+如果您想更改 PDF 文件的密码，您首先需要使用所有者密码打开 PDF 文件，并使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。之后，您需要调用 [ChangePasswords](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/changepasswords) 方法。您需要将当前所有者密码与新用户密码和新所有者密码一起传递给此方法。最后，使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存更新后的 PDF 文件。
 
 >- 用户密码，如果设置，则是您打开 PDF 所需提供的密码。Acrobat/Reader 将提示用户输入用户密码。如果不正确，文档将无法打开。
 >- 所有者密码，如果设置，则控制权限，例如打印、编辑、提取、评论等。Acrobat/Reader 将根据权限设置禁止这些操作。如果您想设置/更改权限，Acrobat 将要求输入此密码。

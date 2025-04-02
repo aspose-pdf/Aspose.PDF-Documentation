@@ -15,6 +15,111 @@ Abstract: The What’s New section of the Aspose.PDF for Java documentation prov
 SoftwareApplication: java
 ---
 
+## What's new in Aspose.PDF 25.3
+
+Since 25.2 added the ability to detect compromise of PDF digital signatures. You can use the 'SignaturesCompromiseDetector' class to verify digital signatures for compromise. Call the check() method to check the document’s signatures. If no signature compromise is detected, the method will return true. To verify whether the existing signatures cover the entire document, use the 'SignaturesCoverage property'.
+
+```java
+
+    void check(String pdfFile) {
+        final Document document = new Document(pdfFile);
+        try {
+            SignaturesCompromiseDetector detector = new SignaturesCompromiseDetector(document);
+
+            CompromiseCheckResult result = null;
+            CompromiseCheckResult[] referenceToResult = {result};
+            System.out.println(detector.check(referenceToResult));
+            if (detector.check(referenceToResult)){
+                System.out.println("No signature compromise detected");
+            }
+            result = referenceToResult[0];
+            System.out.println(SignaturesCoverage.PartiallySigned == result.getSignaturesCoverage());
+            System.out.println(result.hasCompromisedSignatures());
+        } finally {
+            if (document != null) {
+                (document).close();
+            }
+        }
+    }
+```
+
+## What's new in Aspose.PDF 25.2
+
+Since 25.2 added the ability to convert PDF into the PDF/X-4 file format:
+
+```java
+
+    String iccProfile = "PSO_MFC_Paper_eci";
+    String outputConditionIdentifier = "FOGRA41";
+    String inputPdf= dataDir + "PDFToPDFX.pdf";
+    String outputPdf= dataDir + "PDFToPDFX_out.pdf";
+    PdfFormat format = PdfFormat.PDF_X_4;
+
+    Document document = new Document(inputPdf);
+    PdfFormatConversionOptions options = new PdfFormatConversionOptions(format, ConvertErrorAction.Delete);
+    options.setIccProfileFileName(dataDir + iccProfile + ".icc");
+    options.setOutputIntent(new OutputIntent(outputConditionIdentifier));
+
+    document.convert(options);
+    document.save(outputPdf);
+```
+
+Since version 25.2, it has been possible to center align output HTML:
+
+```java
+
+    Document doc = new Document(dataDir + "pdf_sample.pdf");
+    // Instantiate HTML Save options object
+    HtmlSaveOptions newOptions = new HtmlSaveOptions();
+
+    // Enable option to embed all resources inside the HTML
+    newOptions.PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml;
+
+    // This is just optimization for IE and can be omitted
+    newOptions.LettersPositioningMethod = LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss;
+    newOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
+    newOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.SaveInAllFormats;
+    newOptions.AntialiasingProcessing = HtmlSaveOptions.AntialiasingProcessingType.TryCorrectResultHtml;
+    newOptions.setSplitIntoPages(false);// force write HTMLs of all pages into one output document  
+    newOptions.setUseZOrder(true);
+
+    com.aspose.pdf.SaveOptions.BorderPartStyle style = new com.aspose.pdf.SaveOptions.BorderPartStyle();
+    style.LineType = com.aspose.pdf.SaveOptions.HtmlBorderLineType.Solid;
+    style.color = java.awt.Color.BLACK;
+    style.setWidthInPoints(1);        
+    newOptions.PageBorderIfAny = new com.aspose.pdf.SaveOptions.BorderInfo(style);        
+    doc.save(dataDir + "HTML_19.6.html", newOptions);
+```
+
+Also, since version 25.2, it has been possible to get the ascent and descent of a text given font and size with Aspose.PDF. The new feature has been implemented into the class 'com.aspose.pdf.Font'.
+
+Added methods:
+
+**Measures the max Ascent Point**
+
+-public double getAscentPoint(String str, float fontSize)
+
+**Measures the max Descent Point**
+
+- public double getDescentPoint(String str, float fontSize)
+
+```java
+
+    String someText = "Testing text";
+    float fontSize = 10;
+    TextFragment tf = new TextFragment(someText);
+    Font f1 = tf.getTextState().getFont();
+
+    double getWidthPoint = f1.measureString(someText, fontSize);
+    double getAscentPoint = f1.getAscentPoint(someText, fontSize);
+    double getDescentPoint = f1.getDescentPoint(someText, fontSize);
+
+    System.out.println(f1.getFontName());
+    System.out.println(getWidthPoint);
+    System.out.println(getAscentPoint);
+    System.out.println(getDescentPoint);
+```
+
 ## What's new in Aspose.PDF 25.1
 
 The ability to pass the path to the external ICC profile for PDF/X and PDF/A conversion has already existed in the library for some years, enabled by the PdfFormatConversionOptions.IccProfileFileName property. Now it's also possible to pass data to fill OutputIntent properties using an object of the OutputIntent class.

@@ -89,10 +89,10 @@ sitemap:
 
 要连接两个 PDF 文件：
 
-1. 创建两个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象，每个对象包含一个输入 PDF 文件。
-1. 然后调用要添加其他 PDF 文件的 Document 对象的 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合的 Add 方法。
+1. 创建两个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象，每个对象包含一个输入 PDF 文件。
+1. 然后调用要添加其他 PDF 文件的 Document 对象的 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 集合的 Add 方法。
 1. 将第二个 Document 对象的 PageCollection 集合传递给第一个 PageCollection 集合的 Add 方法。
-1. 最后，使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存输出 PDF 文件。
+1. 最后，使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存输出 PDF 文件。
 
 以下代码片段展示了如何连接 PDF 文件。
 

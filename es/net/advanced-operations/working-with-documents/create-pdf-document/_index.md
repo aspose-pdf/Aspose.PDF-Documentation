@@ -91,9 +91,9 @@ La API de Aspose.PDF for .NET te permite crear y leer archivos PDF usando C# y V
 
 Para crear un archivo PDF usando C#, se pueden seguir los siguientes pasos.
 
-1. Crear un objeto de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Agregar un objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) a la colección [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) del objeto Document.
-1. Agregar [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) a la colección [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la página.
+1. Crear un objeto de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+1. Agregar un objeto [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page) a la colección [Pages](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/properties/pages) del objeto Document.
+1. Agregar [TextFragment](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textfragment) a la colección [Paragraphs](https://reference.aspose.com/pdf/es/net/aspose.pdf/page/properties/paragraphs) de la página.
 1. Guardar el documento PDF resultante.
 
 ```csharp

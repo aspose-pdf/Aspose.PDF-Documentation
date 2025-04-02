@@ -83,12 +83,12 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Actualizar enlaces en archivo PDF
 
-Como se discutió en Agregar hiperenlace en un archivo PDF, la clase [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) hace posible agregar enlaces en un archivo PDF. También hay una clase similar utilizada para obtener enlaces existentes dentro de archivos PDF. Utiliza esto si necesitas actualizar un enlace existente. Para actualizar un enlace existente:
+Como se discutió en Agregar hiperenlace en un archivo PDF, la clase [LinkAnnotation](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/linkannotation) hace posible agregar enlaces en un archivo PDF. También hay una clase similar utilizada para obtener enlaces existentes dentro de archivos PDF. Utiliza esto si necesitas actualizar un enlace existente. Para actualizar un enlace existente:
 
 1. Carga un archivo PDF.
 1. Ve a una página específica en el archivo PDF.
-1. Especifica el destino del enlace utilizando la propiedad Destination del objeto [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction).
-1. La página de destino se especifica utilizando el constructor [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination).
+1. Especifica el destino del enlace utilizando la propiedad Destination del objeto [GoToAction](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/gotoaction).
+1. La página de destino se especifica utilizando el constructor [XYZExplicitDestination](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/xyzexplicitdestination).
 
 ### Establecer el destino del enlace a una página en el mismo documento
 
@@ -155,7 +155,7 @@ private static void UpdateLinkAnnotation()
 
 ### Establecer el destino del enlace a una dirección web
 
-Para actualizar el hiperenlace de modo que apunte a una dirección web, instancia el objeto [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) y pásalo a la propiedad Action de LinkAnnotation. El siguiente fragmento de código muestra cómo actualizar un enlace en un archivo PDF y establecer su destino en una dirección web.
+Para actualizar el hiperenlace de modo que apunte a una dirección web, instancia el objeto [GoToURIAction](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/gotouriaction) y pásalo a la propiedad Action de LinkAnnotation. El siguiente fragmento de código muestra cómo actualizar un enlace en un archivo PDF y establecer su destino en una dirección web.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

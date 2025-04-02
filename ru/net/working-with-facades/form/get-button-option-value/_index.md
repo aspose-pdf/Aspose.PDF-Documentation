@@ -77,7 +77,7 @@ draft: false
 
 ## Получить значения параметров кнопок из существующего PDF-файла
 
-Радиокнопки предоставляют способ отображения различных опций. Класс [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) позволяет вам получить все значения параметров кнопок для конкретной радиокнопки. Вы можете получить эти значения, используя метод [GetButtonOptionValues](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). Этот метод требует имя радиокнопки в качестве входного параметра и возвращает Hashtable. Вы можете перебрать этот Hashtable, чтобы получить значения параметров. Следующий фрагмент кода показывает, как получить значения параметров кнопок из существующего PDF-файла.
+Радиокнопки предоставляют способ отображения различных опций. Класс [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form) позволяет вам получить все значения параметров кнопок для конкретной радиокнопки. Вы можете получить эти значения, используя метод [GetButtonOptionValues](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). Этот метод требует имя радиокнопки в качестве входного параметра и возвращает Hashtable. Вы можете перебрать этот Hashtable, чтобы получить значения параметров. Следующий фрагмент кода показывает, как получить значения параметров кнопок из существующего PDF-файла.
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetButtonOptions()
@@ -105,7 +105,7 @@ private static void GetButtonOptions()
 
 ## Получить текущее значение параметра кнопки из существующего PDF-файла
 
-Радиокнопки предоставляют способ установки значений параметров, однако может быть выбрана только одна из них. Если вы хотите получить текущее выбранное значение параметра, вы можете использовать метод [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue). Класс [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) предоставляет этот метод. Метод [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) требует имя радиокнопки в качестве входного параметра и возвращает значение в виде строки. Следующий фрагмент кода показывает, как получить текущее значение параметра кнопки из существующего PDF-файла.
+Радиокнопки предоставляют способ установки значений параметров, однако может быть выбрана только одна из них. Если вы хотите получить текущее выбранное значение параметра, вы можете использовать метод [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue). Класс [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form) предоставляет этот метод. Метод [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) требует имя радиокнопки в качестве входного параметра и возвращает значение в виде строки. Следующий фрагмент кода показывает, как получить текущее значение параметра кнопки из существующего PDF-файла.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

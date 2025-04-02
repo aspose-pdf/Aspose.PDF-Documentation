@@ -138,7 +138,7 @@ Aspose.PDF for .NET هي مكون لمعالجة PDF، وقد قدمنا ميز�
 [![تحويل Aspose.PDF PDF إلى Excel مع تطبيق مجاني](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-لتحويل ملفات PDF إلى تنسيق <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>، تحتوي Aspose.PDF على فئة تسمى [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions). يتم تمرير كائن من فئة ExcelSaveOptions كوسيط ثانٍ إلى مُنشئ Document.Save(..).
+لتحويل ملفات PDF إلى تنسيق <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>، تحتوي Aspose.PDF على فئة تسمى [ExcelSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/excelsaveoptions). يتم تمرير كائن من فئة ExcelSaveOptions كوسيط ثانٍ إلى مُنشئ Document.Save(..).
 
 تظهر مقتطفات الشيفرة التالية العملية لتحويل ملف PDF إلى تنسيق XLS أو XLSX باستخدام Aspose.PDF for .NET.
 
@@ -235,7 +235,7 @@ private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 ### التحويل إلى تنسيق XML Spreadsheet 2003
 
-منذ الإصدار 20.8، تستخدم Aspose.PDF تنسيق ملف Microsoft Excel Open XML Spreadsheet 2007 كافتراضي لتخزين البيانات. لتحويل ملفات PDF إلى تنسيق XML Spreadsheet 2003، تحتوي Aspose.PDF على فئة تسمى [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) مع [Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format). يتم تمرير كائن من فئة [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) كوسيط ثانٍ إلى طريقة [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+منذ الإصدار 20.8، تستخدم Aspose.PDF تنسيق ملف Microsoft Excel Open XML Spreadsheet 2007 كافتراضي لتخزين البيانات. لتحويل ملفات PDF إلى تنسيق XML Spreadsheet 2003، تحتوي Aspose.PDF على فئة تسمى [ExcelSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/excelsaveoptions) مع [Format](https://reference.aspose.com/pdf/ar/net/aspose.pdf/excelsaveoptions/properties/format). يتم تمرير كائن من فئة [ExcelSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/excelsaveoptions) كوسيط ثانٍ إلى طريقة [Document.Save(..)](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index).
 
 تظهر مقتطفات الشيفرة التالية العملية لتحويل ملف PDF إلى تنسيق XLS Excel 2003 XML.
 

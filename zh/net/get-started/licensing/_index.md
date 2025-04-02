@@ -93,13 +93,13 @@ sitemap:
 
 许可证可以从文件或流对象中加载。设置许可证的最简单方法是将许可证文件放在与 Aspose.PDF.dll 文件相同的文件夹中，并指定文件名而不带路径，如下面的示例所示。
 
-如果您与 Aspose.PDF for .NET 一起使用任何其他 Aspose for .NET 组件，请指定许可证的命名空间，如 [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license)。
+如果您与 Aspose.PDF for .NET 一起使用任何其他 Aspose for .NET 组件，请指定许可证的命名空间，如 [Aspose.Pdf.License](https://reference.aspose.com/pdf/zh/net/aspose.pdf/license)。
 
 ### 从文件加载许可证
 
 应用许可证的最简单方法是将许可证文件放在与 Aspose.PDF.dll 文件相同的文件夹中，并仅指定文件名而不带路径。
 
-当您调用 [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) 方法时，您传递的许可证名称应为您的许可证文件的名称。例如，如果您将许可证文件名更改为“Aspose.PDF.lic.xml”，则将该文件名传递给 Pdf.SetLicense(…) 方法。
+当您调用 [SetLicense](https://reference.aspose.com/pdf/zh/net/aspose.pdf/license/methods/setlicense/index) 方法时，您传递的许可证名称应为您的许可证文件的名称。例如，如果您将许可证文件名更改为“Aspose.PDF.lic.xml”，则将该文件名传递给 Pdf.SetLicense(…) 方法。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

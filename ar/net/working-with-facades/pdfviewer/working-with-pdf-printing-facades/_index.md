@@ -78,7 +78,7 @@ draft: false
 ## طباعة ملف PDF إلى الطابعة الافتراضية باستخدام إعدادات الطابعة والصفحة
 
 أولاً، يتم تحويل المستند إلى صورة، ثم يتم طباعته على الطابعة.
-قم بإنشاء مثيل من فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) التي تمكن من طباعة ملف PDF إلى الطابعة الافتراضية، استخدم طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/bindpdf/) لفتح المستند فيها، وتغيير الإعدادات اللازمة. يستخدم هذا المثال تنسيق A4، واتجاه عمودي. في [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/)، يجب أولاً تعيين اسم الطابعة التي سيتم الطباعة عليها. أو ستتم الطباعة إلى الطابعة الافتراضية. بعد ذلك، ضع العدد المطلوب من النسخ.
+قم بإنشاء مثيل من فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer) التي تمكن من طباعة ملف PDF إلى الطابعة الافتراضية، استخدم طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/bindpdf/) لفتح المستند فيها، وتغيير الإعدادات اللازمة. يستخدم هذا المثال تنسيق A4، واتجاه عمودي. في [PrinterSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf.printing/printersettings/)، يجب أولاً تعيين اسم الطابعة التي سيتم الطباعة عليها. أو ستتم الطباعة إلى الطابعة الافتراضية. بعد ذلك، ضع العدد المطلوب من النسخ.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -345,7 +345,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## إخفاء حوار الطباعة
 
-Aspose.PDF for .NET يدعم إخفاء حوار الطباعة. لذلك، استخدم خاصية [PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
+Aspose.PDF for .NET يدعم إخفاء حوار الطباعة. لذلك، استخدم خاصية [PrintPageDialog](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
 
 يوضح مقتطف الكود التالي كيفية إخفاء حوار الطباعة.
 
@@ -436,7 +436,7 @@ private static void PrintingPDFHidePrintDialog()
 
 ## طباعة PDF ملون إلى ملف XPS بالألوان الرمادية
 
-يمكن طباعة مستند PDF ملون إلى طابعة XPS بالألوان الرمادية، باستخدام [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). لتحقيق ذلك، قم بتعيين خاصية [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) إلى *true*. يوضح مقتطف الكود التالي استخدام خاصية `PdfViewer.PrintAsGrayscale`.
+يمكن طباعة مستند PDF ملون إلى طابعة XPS بالألوان الرمادية، باستخدام [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer). لتحقيق ذلك، قم بتعيين خاصية [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) إلى *true*. يوضح مقتطف الكود التالي استخدام خاصية `PdfViewer.PrintAsGrayscale`.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -529,7 +529,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## تحويل PDF إلى PostScript
 
-توفر فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) القدرة على طباعة مستندات PDF وبمساعدة هذه الفئة، يمكن أيضًا تحويل ملفات PDF إلى تنسيق PostScript. لتحويل ملف PDF إلى PostScript، قم أولاً بتثبيت أي طابعة PS واطبع إلى ملف بمساعدة `PdfViewer`.
+توفر فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer) القدرة على طباعة مستندات PDF وبمساعدة هذه الفئة، يمكن أيضًا تحويل ملفات PDF إلى تنسيق PostScript. لتحويل ملف PDF إلى PostScript، قم أولاً بتثبيت أي طابعة PS واطبع إلى ملف بمساعدة `PdfViewer`.
 
 يوضح مقتطف الكود التالي كيفية الطباعة وتحويل PDF إلى تنسيق PostScript.
 
@@ -632,7 +632,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## التحقق من حالة مهمة الطباعة
 
-يمكن طباعة ملف PDF إلى طابعة فعلية وكذلك إلى كاتب مستندات Microsoft XPS، دون إظهار حوار الطباعة، باستخدام فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). عند طباعة ملفات PDF الكبيرة، قد تستغرق العملية وقتًا طويلاً لذا قد لا يكون المستخدم متأكدًا مما إذا كانت عملية الطباعة قد اكتملت أو واجهت مشكلة. لتحديد حالة مهمة الطباعة، استخدم خاصية [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). يوضح مقتطف الكود التالي كيفية طباعة ملف PDF إلى ملف XPS والحصول على حالة الطباعة.
+يمكن طباعة ملف PDF إلى طابعة فعلية وكذلك إلى كاتب مستندات Microsoft XPS، دون إظهار حوار الطباعة، باستخدام فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer). عند طباعة ملفات PDF الكبيرة، قد تستغرق العملية وقتًا طويلاً لذا قد لا يكون المستخدم متأكدًا مما إذا كانت عملية الطباعة قد اكتملت أو واجهت مشكلة. لتحديد حالة مهمة الطباعة، استخدم خاصية [PrintStatus](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/printstatus/). يوضح مقتطف الكود التالي كيفية طباعة ملف PDF إلى ملف XPS والحصول على حالة الطباعة.
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -85,8 +85,8 @@ sitemap:
 
 لحذف جميع المرفقات المرتبطة بملف PDF:
 
-1. استدعِ طريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) لمجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection).
-1. احفظ الملف المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. استدعِ طريقة [Delete](https://reference.aspose.com/pdf/ar/net/aspose.pdf/embeddedfilecollection/methods/delete) لمجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/ar/net/aspose.pdf/embeddedfilecollection).
+1. احفظ الملف المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
 
 تظهر مقتطفات الشيفرة التالية كيفية إزالة المرفقات من مستند PDF.
 
