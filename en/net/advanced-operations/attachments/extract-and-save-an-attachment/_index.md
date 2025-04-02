@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "extract attachments, save attachments, Aspose.PDF for .NET, PDF document, individual attachment, embedded files collection, FileSpecification object, PDF manipulation, document instance, get all attachments",
-    "wordcount": "604",
+    "wordcount": "1203",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
