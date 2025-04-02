@@ -297,7 +297,7 @@ private static void GetIndividualAttachment()
 
 ## Get Attachments that contains in FileAttachmentAnnotation objects
 
-In addition to the Document object’s EmbeddedFiles collection, Attachments can also be contained in FileAttachmentAnnotation objects. Below is the code for viewing the number and details of such Attachments
+In addition to the Document object’s EmbeddedFiles collection, Attachments can also be contained in FileAttachmentAnnotation objects. Below is the code for viewing the number and details of such Attachments.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
