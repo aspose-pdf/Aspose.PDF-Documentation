@@ -9,8 +9,8 @@ url: /ru/net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for .NET позволяет добавлять заголовки и нижние колонтитулы в ваш PDF-файл с помощью класса TextStamp.
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "monthly"
-    priority: 0.7
+changefreq: "monthly"
+priority: 0.7
 ---
 <script type="application/ld+json">
 {
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1549",
+    "wordcount": "1076",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,229 +73,345 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-headers-and-footers-of-pdf-file/"
     },
-    "dateModified": "2024-11-26",
+    "dateModified": "2025-03-27",
     "description": "Aspose.PDF for .NET позволяет добавлять заголовки и нижние колонтитулы в ваш PDF-файл с помощью класса TextStamp."
 }
 </script>
 
-**Aspose.PDF for .NET** позволяет вам добавлять заголовок и нижний колонтитул в ваш существующий PDF-файл. Вы можете добавлять изображения или текст в PDF-документ. Также попробуйте добавить разные заголовки в один PDF-файл с помощью C#.
+**Aspose.PDF for .NET** позволяет добавлять заголовки и нижние колонтитулы в существующий PDF-файл. Вы можете вставлять как изображения, так и текст в документ.
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-## Добавление текста в заголовок PDF-файла
+## Добавление заголовков и нижних колонтитулов в виде текстовых фрагментов
 
-Вы можете использовать класс [TextStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/textstamp) для добавления текста в заголовок PDF-файла. Класс TextStamp предоставляет свойства, необходимые для создания текстового штампа, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить текст в заголовок, вам нужно создать объект Document и объект TextStamp с использованием необходимых свойств. После этого вы можете вызвать метод AddStamp страницы, чтобы добавить текст в заголовок PDF.
+Следующий фрагмент кода демонстрирует, как добавить заголовки и нижние колонтитулы в виде текстовых фрагментов в PDF с использованием C#.
 
-Вам нужно установить свойство TopMargin таким образом, чтобы оно регулировало текст в области заголовка вашего PDF. Вам также нужно установить HorizontalAlignment в Center и VerticalAlignment в Top.
-
-Следующий фрагмент кода показывает, как добавить текст в заголовок PDF-файла с помощью C#.
-
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddHeaderText()
+private static void AddHeaderAndFooterAsText()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "TextinHeader.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsTextInput.pdf"))
     {
-        // Create header as a TextStamp
-        var textStamp = new Aspose.Pdf.TextStamp("Header Text")
+        for (var i = 1; i <= document.Pages.Count; i++)
         {
-            TopMargin = 10,
-            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center,
-            VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top
-        };
-
-        // Add header on all pages
-        foreach (var page in document.Pages)
-        {
-            page.AddStamp(textStamp);
+            // Create header text
+            var headerText = new Aspose.Pdf.Text.TextFragment("header");
+            
+            // Create header
+            var header = new Aspose.Pdf.HeaderFooter();
+            header.Paragraphs.Add(headerText);
+                    
+            // Create footer text
+            var footerText = new Aspose.Pdf.Text.TextFragment("footer");
+            
+            // Create footer 
+            var footer = new Aspose.Pdf.HeaderFooter();
+            footer.Paragraphs.Add(footerText);
+            
+            // Set header margin
+            header.Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 50,
+                Top = 20
+            };
+            
+            // Set footer margin
+            footer.Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 50,
+                Top = 20
+            };
+                    
+            // Bind the header and footer to the page
+            document.Pages[i].Header = header;
+            document.Pages[i].Footer = footer;
         }
-
+            
         // Save PDF document
-        document.Save(dataDir + "TextinHeader_out.pdf");
+        document.Save(dataDir + "AddHeaderAndFooterAsText_out.pdf");
     }
 }
 ```
-
-## Добавление текста в нижний колонтитул PDF-файла
-
-Вы можете использовать класс TextStamp для добавления текста в нижний колонтитул PDF-файла. Класс TextStamp предоставляет свойства, необходимые для создания текстового штампа, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить текст в нижний колонтитул, вам нужно создать объект Document и объект TextStamp с использованием необходимых свойств. После этого вы можете вызвать метод AddStamp страницы, чтобы добавить текст в нижний колонтитул PDF.
-
-{{% alert color="primary" %}}
-
-Вам нужно установить свойство Bottom Margin таким образом, чтобы оно регулировало текст в области нижнего колонтитула вашего PDF. Вам также нужно установить HorizontalAlignment в Center и VerticalAlignment в Bottom.
-
-{{% /alert %}}
-
-Следующий фрагмент кода показывает, как добавить текст в нижний колонтитул PDF-файла с помощью C#.
-
+{{< /tab >}}
+{{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddFooterText()
+private static void AddHeaderAndFooterAsText()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "TextinFooter.pdf"))
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsTextInput.pdf");
+    
+    for (var i = 1; i <= document.Pages.Count; i++)
     {
-        // Create footer as a TextStamp
-        var textStamp = new Aspose.Pdf.TextStamp("Footer Text")
+        // Create header text
+        var headerText = new Aspose.Pdf.Text.TextFragment("header");
+    
+        // Create header
+        var header = new Aspose.Pdf.HeaderFooter();
+        header.Paragraphs.Add(headerText);
+            
+        // Create footer text
+        var footerText = new Aspose.Pdf.Text.TextFragment("footer");
+    
+        // Create footer 
+        var footer = new Aspose.Pdf.HeaderFooter();
+        footer.Paragraphs.Add(footerText);
+    
+        // Set header margin
+        header.Margin = new Aspose.Pdf.MarginInfo
         {
-            BottomMargin = 10,
-            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center,
-            VerticalAlignment = Aspose.Pdf.VerticalAlignment.Bottom
+            Left = 50,
+            Top = 20
         };
-
-        // Add footer on all pages
-        foreach (var page in document.Pages)
+    
+        // Set footer margin
+        footer.Margin = new Aspose.Pdf.MarginInfo
         {
-            page.AddStamp(textStamp);
-        }
-
-        // Save PDF document
-        document.Save(dataDir + "TextinFooter_out.pdf");
-    }
-}
-```
-
-## Добавление изображения в заголовок PDF-файла
-
-Вы можете использовать класс [ImageStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/ImageStamp) для добавления изображения в заголовок PDF-файла. Класс Image Stamp предоставляет свойства, необходимые для создания штампа на основе изображения, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить изображение в заголовок, вам нужно создать объект Document и объект Image Stamp с использованием необходимых свойств. После этого вы можете вызвать метод [AddStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/methods/addstamp) страницы, чтобы добавить изображение в заголовок PDF.
-
-{{% alert color="primary" %}}
-
-Вам нужно установить свойство TopMargin таким образом, чтобы оно регулировало изображение в области заголовка вашего PDF. Вам также нужно установить HorizontalAlignment в Center и VerticalAlignment в Top.
-
-{{% /alert %}}
-
-Следующий фрагмент кода показывает, как добавить изображение в заголовок PDF-файла с помощью C#.
-
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddImageHeader()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "ImageinHeader.pdf"))
-    {
-        // Create header as an ImageStamp
-        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg")
-        {
-            TopMargin = 10,
-            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center,
-            VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top
+            Left = 50,
+            Top = 20
         };
+            
+        // Bind the header and footer to the page
+        document.Pages[i].Header = header;
+        document.Pages[i].Footer = footer;
+    }
+    
+    // Save PDF document
+    document.Save(dataDir + "AddHeaderAndFooterAsText_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
-        // Add image header on all pages
-        foreach (var page in document.Pages)
+
+## Добавление заголовков и нижних колонтитулов в виде HTML-фрагментов
+
+Следующий фрагмент кода демонстрирует, как добавить заголовки и нижние колонтитулы в виде HTML-фрагментов в PDF с использованием C#.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHeaderAndFooterAsHTML()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsHTMLInput.pdf"))
+    {
+        for (var i = 1; i <= document.Pages.Count; i++)
         {
-            page.AddStamp(imageStamp);
+            // Create header HTML
+            var headerHTML = new Aspose.Pdf.HtmlFragment("<span>header</span>");
+            
+            // Create header
+            var header = new Aspose.Pdf.HeaderFooter();
+            header.Paragraphs.Add(headerHTML);
+                    
+            // Create footer HTML
+            var footerHTML = new Aspose.Pdf.HtmlFragment("<span>footer</span>");
+            
+            // Create footer 
+            var footer = new Aspose.Pdf.HeaderFooter();
+            footer.Paragraphs.Add(footerHTML);
+            
+            // Set header margin
+            header.Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 50,
+                Top = 20
+            };
+            
+            // Set footer margin
+            footer.Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 50,
+                Top = 20
+            };
+                    
+            // Bind the header and footer to the page
+            document.Pages[i].Header = header;
+            document.Pages[i].Footer = footer;
         }
-
+            
         // Save PDF document
-        document.Save(dataDir + "ImageinHeader_out.pdf");
+        document.Save(dataDir + "AddHeaderAndFooterAsHTML_out.pdf");
     }
 }
 ```
-
-## Добавление изображения в нижний колонтитул PDF-файла
-
-Вы можете использовать класс Image Stamp для добавления изображения в нижний колонтитул PDF-файла. Класс Image Stamp предоставляет свойства, необходимые для создания штампа на основе изображения, такие как размер шрифта, стиль шрифта и цвет шрифта и т. д. Чтобы добавить изображение в нижний колонтитул, вам нужно создать объект Document и объект Image Stamp с использованием необходимых свойств. После этого вы можете вызвать метод AddStamp страницы, чтобы добавить изображение в нижний колонтитул PDF.
-
-{{% alert color="primary" %}}
-
-Вам нужно установить свойство [BottomMargin](https://reference.aspose.com/pdf/ru/net/aspose.pdf/stamp/properties/bottommargin) таким образом, чтобы оно регулировало изображение в области нижнего колонтитула вашего PDF. Вам также нужно установить [HorizontalAlignment](https://reference.aspose.com/pdf/ru/net/aspose.pdf/stamp/properties/horizontalalignment) в `Center` и [VerticalAlignment](https://reference.aspose.com/pdf/ru/net/aspose.pdf/stamp/properties/verticalalignment) в `Bottom`.
-
-{{% /alert %}}
-
-Следующий фрагмент кода показывает, как добавить изображение в нижний колонтитул PDF-файла с помощью C#.
-
+{{< /tab >}}
+{{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddImageFooter()
+private static void AddHeaderAndFooterAsHTML()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "ImageInFooter.pdf"))
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsHTMLInput.pdf");
+    
+    for (var i = 1; i <= document.Pages.Count; i++)
     {
-        // Create footer as an ImageStamp
-        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg")
+        // Create header HTML
+        var headerHTML = new Aspose.Pdf.HtmlFragment("<span>header</span>");
+    
+        // Create header
+        var header = new Aspose.Pdf.HeaderFooter();
+        header.Paragraphs.Add(headerHTML);
+            
+        // Create footer HTML
+        var footerHTML = new Aspose.Pdf.HtmlFragment("<span>footer</span>");
+    
+        // Create footer 
+        var footer = new Aspose.Pdf.HeaderFooter();
+        footer.Paragraphs.Add(footerHTML);
+    
+        // Set header margin
+        header.Margin = new Aspose.Pdf.MarginInfo
         {
-            BottomMargin = 10,
-            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center,
-            VerticalAlignment = Aspose.Pdf.VerticalAlignment.Bottom
+            Left = 50,
+            Top = 20
         };
-
-        // Add image footer on all pages
-        foreach (var page in document.Pages)
+    
+        // Set footer margin
+        footer.Margin = new Aspose.Pdf.MarginInfo
         {
-            page.AddStamp(imageStamp);
-        }
-
-        // Save PDF document
-        document.Save(dataDir + "ImageInFooter_out.pdf");
+            Left = 50,
+            Top = 20
+        };
+            
+        // Bind the header and footer to the page
+        document.Pages[i].Header = header;
+        document.Pages[i].Footer = footer;
     }
+    
+    // Save PDF document
+    document.Save(dataDir + "AddHeaderAndFooterAsHTML_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-## Добавление разных заголовков в один PDF-файл
+## Добавление заголовков и нижних колонтитулов в виде изображений
 
-Мы знаем, что можем добавлять TextStamp в раздел заголовка/нижнего колонтитула документа, используя свойства TopMargin или Bottom Margin, но иногда у нас может возникнуть необходимость добавить несколько заголовков/нижних колонтитулов в один PDF-документ. **Aspose.PDF for .NET** объясняет, как это сделать.
+Следующий фрагмент кода демонстрирует, как добавить заголовки и нижние колонтитулы в виде изображений в PDF с использованием C#.
 
-Чтобы выполнить это требование, мы создадим отдельные объекты TextStamp (количество объектов зависит от количества необходимых заголовков/нижних колонтитулов) и добавим их в PDF-документ. Мы также можем указать различную информацию о форматировании для каждого отдельного объекта штампа. В следующем примере мы создали объект Document и три объекта TextStamp, а затем использовали метод [AddStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/methods/addstamp) страницы, чтобы добавить текст в раздел заголовка PDF. Следующий фрагмент кода показывает, как добавить изображение в нижний колонтитул PDF-файла с помощью Aspose.PDF for .NET.
-
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddDifferentHeaders()
+private static void AddHeaderAndFooterAsImage()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddingDifferentHeaders.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsImageInput.pdf"))
     {
-        // Create three stamps
-        var stamp1 = new Aspose.Pdf.TextStamp("Header 1");
-        var stamp2 = new Aspose.Pdf.TextStamp("Header 2");
-        var stamp3 = new Aspose.Pdf.TextStamp("Header 3");
-
-        // Set stamp1 properties (Header 1)
-        stamp1.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
-        stamp1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-        stamp1.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
-        stamp1.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-        stamp1.TextState.FontSize = 14;
-
-        // Set stamp2 properties (Header 2)
-        stamp2.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
-        stamp2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-        stamp2.Zoom = 10;
-
-        // Set stamp3 properties (Header 3)
-        stamp3.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
-        stamp3.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-        stamp3.RotateAngle = 35;
-        stamp3.TextState.BackgroundColor = Aspose.Pdf.Color.Pink;
-        stamp3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
-
-        // Add the stamps to specific pages
-        document.Pages[1].AddStamp(stamp1);
-        document.Pages[2].AddStamp(stamp2);
-        document.Pages[3].AddStamp(stamp3);
-
+        for (var i = 1; i <= document.Pages.Count; i++)
+        {
+            // Create header image
+            var headerImage = new Aspose.Pdf.Image();
+            headerImage.File = dataDir + "ImageExample.png";
+            
+            // Create header
+            var header = new Aspose.Pdf.HeaderFooter();
+            header.Paragraphs.Add(headerImage);
+                    
+            // Create footer image
+            var footerImage = new Aspose.Pdf.Image();
+            footerImage.File = dataDir + "ImageExample.png";
+            
+            // Create footer 
+            var footer = new Aspose.Pdf.HeaderFooter();
+            footer.Paragraphs.Add(footerImage);
+            
+            // Set header margin
+            header.Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 50
+            };
+            
+            // Set footer margin
+            footer.Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 50
+            };
+                    
+            // Bind the header and footer to the page
+            document.Pages[i].Header = header;
+            document.Pages[i].Footer = footer;
+        }
+            
         // Save PDF document
-        document.Save(dataDir + "MultiHeader_out.pdf");
+        document.Save(dataDir + "AddHeaderAndFooterAsImage_out.pdf");
     }
 }
 ```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHeaderAndFooterAsImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_HeaderFooter();
+  
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHeaderAndFooterAsImageInput.pdf");
+    
+    for (var i = 1; i <= document.Pages.Count; i++)
+    {
+        // Create header image
+        var headerImage = new Aspose.Pdf.Image();
+        headerImage.File = dataDir + "ImageExample.png";
+            
+        // Create header
+        var header = new Aspose.Pdf.HeaderFooter();
+        header.Paragraphs.Add(headerImage);
+                    
+        // Create footer image
+        var footerImage = new Aspose.Pdf.Image();
+        footerImage.File = dataDir + "ImageExample.png";
+            
+        // Create footer 
+        var footer = new Aspose.Pdf.HeaderFooter();
+        footer.Paragraphs.Add(footerImage);
+            
+        // Set header margin
+        header.Margin = new Aspose.Pdf.MarginInfo
+        {
+            Left = 50
+        };
+            
+        // Set footer margin
+        footer.Margin = new Aspose.Pdf.MarginInfo
+        {
+            Left = 50
+        };
+                    
+        // Bind the header and footer to the page
+        document.Pages[i].Header = header;
+        document.Pages[i].Footer = footer;
+    }
+            
+    // Save PDF document
+    document.Save(dataDir + "AddHeaderAndFooterAsImage_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
