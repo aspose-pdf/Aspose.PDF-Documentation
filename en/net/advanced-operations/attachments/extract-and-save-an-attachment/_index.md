@@ -92,6 +92,9 @@ The following code snippets show how to get all the attachments from a PDF docum
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetAllAttachments()
@@ -131,9 +134,9 @@ private static void GetAllAttachments()
             }
 
             // Get the attachment and write to file or stream
-            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            var fileContent = new byte[fileSpecification.Contents.Length];
             fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-            using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+            using (var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
             {
                 fileStream.Write(fileContent, 0, fileContent.Length);
             }
@@ -142,10 +145,69 @@ private static void GetAllAttachments()
     }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllAttachments()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf");
+
+    // Get embedded files collection
+    Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
+
+    // Get count of the embedded files
+    Console.WriteLine("Total files : {0}", embeddedFiles.Count);
+
+    int count = 1;
+
+    // Loop through the collection to get all the attachments
+    foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+    {
+        Console.WriteLine("Name: {0}", fileSpecification.Name);
+        Console.WriteLine("Description: {0}",
+        fileSpecification.Description);
+        Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+        // Check if parameter object contains the parameters
+        if (fileSpecification.Params != null)
+        {
+            Console.WriteLine("CheckSum: {0}",
+            fileSpecification.Params.CheckSum);
+            Console.WriteLine("Creation Date: {0}",
+            fileSpecification.Params.CreationDate);
+            Console.WriteLine("Modification Date: {0}",
+            fileSpecification.Params.ModDate);
+            Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+        }
+
+        // Get the attachment and write to file or stream
+        var fileContent = new byte[fileSpecification.Contents.Length];
+        fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+        using (var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+        {
+            fileStream.Write(fileContent, 0, fileContent.Length);
+        }
+        count += 1;
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 
 ## Get Individual Attachment
 
 In order to get an individual attachment, we can specify the index of attachment in `EmbeddedFiles` object of Document instance. Please try using following code snippet.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -178,16 +240,133 @@ private static void GetIndividualAttachment()
         }
 
         // Get the attachment and write to file or stream
-        byte[] fileContent = new byte[fileSpecification.Contents.Length];
+        var fileContent = new byte[fileSpecification.Contents.Length];
         fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-        using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+        using (var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
         {
             fileStream.Write(fileContent, 0, fileContent.Length);
         }
     }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetIndividualAttachment()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetIndividualAttachment.pdf");
+
+    // Get particular embedded file
+    Aspose.Pdf.FileSpecification fileSpecification = document.EmbeddedFiles[1];
+
+    // Get the file properties
+    Console.WriteLine("Name: {0}", fileSpecification.Name);
+    Console.WriteLine("Description: {0}", fileSpecification.Description);
+    Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+    // Check if parameter object contains the parameters
+    if (fileSpecification.Params != null)
+    {
+        Console.WriteLine("CheckSum: {0}",
+        fileSpecification.Params.CheckSum);
+        Console.WriteLine("Creation Date: {0}",
+        fileSpecification.Params.CreationDate);
+        Console.WriteLine("Modification Date: {0}",
+        fileSpecification.Params.ModDate);
+        Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+    }
+
+    // Get the attachment and write to file or stream
+    var fileContent = new byte[fileSpecification.Contents.Length];
+    fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+
+    using (var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+    {
+        fileStream.Write(fileContent, 0, fileContent.Length);
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+
+## Get Attachments that contains in FileAttachmentAnnotation objects
+
+In addition to the Document object’s EmbeddedFiles collection, Attachments can also be contained in FileAttachmentAnnotation objects. Below is the code for viewing the number and details of such Attachments
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ViewAttachmentsInFileAttachmentAnnotations()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf"))
+    {
+        for (int i = 1; i <= document.Pages.Count; i++)
+        {
+            foreach (Aspose.Pdf.Annotations.Annotation annotation in document.Pages[i].Annotations)
+            {
+                var fileAttachmentAnnotation = annotation as Aspose.Pdf.Annotations.FileAttachmentAnnotation;
+                if (fileAttachmentAnnotation != null)
+                {
+                    Aspose.Pdf.FileSpecification file = fileAttachmentAnnotation.File;
+                    if (file != null && file.Name != null)
+                    {
+                        Console.WriteLine($"Name: {file.Name} on page {i}");
+                    }
+                }
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ViewAttachmentsInFileAttachmentAnnotations()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf");
+
+    for (int i = 1; i <= document.Pages.Count; i++)
+    {
+        foreach (Aspose.Pdf.Annotations.Annotation annotation in document.Pages[i].Annotations)
+        {
+            var fileAttachmentAnnotation = annotation as Aspose.Pdf.Annotations.FileAttachmentAnnotation;
+            if (fileAttachmentAnnotation != null)
+            {
+                Aspose.Pdf.FileSpecification file = fileAttachmentAnnotation.File;
+                if (file != null && file.Name != null)
+                {
+                    Console.WriteLine($"Name: {file.Name} on page {i}");
+                }
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 
 <script type="application/ld+json">
 {
