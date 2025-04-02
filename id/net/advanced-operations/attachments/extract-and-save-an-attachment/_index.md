@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
     "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
-    "abstract": "Aspose.PDF for .NET memperkenalkan fitur yang kuat yang memungkinkan pengguna untuk dengan mudah mengekstrak dan menyimpan lampiran dari dokumen PDF. Fungsionalitas ini memungkinkan pengambilan semua file yang disematkan atau lampiran tertentu, meningkatkan manajemen dokumen dan aksesibilitas bagi pengembang yang bekerja dengan file PDF. Optimalkan alur kerja PDF Anda dengan menangani lampiran dengan mudah menggunakan alat inovatif ini.",
+    "abstract": "Aspose.PDF for .NET memperkenalkan fitur yang kuat yang memungkinkan pengguna untuk dengan mudah mengekstrak dan menyimpan lampiran dari dokumen PDF. Fungsionalitas ini memungkinkan pengambilan semua file yang ter嵌入 atau lampiran tertentu, meningkatkan manajemen dokumen dan aksesibilitas bagi pengembang yang bekerja dengan file PDF. Optimalkan alur kerja PDF Anda dengan menangani lampiran secara effortless menggunakan alat inovatif ini",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -86,7 +86,7 @@ Dengan Aspose.PDF, dimungkinkan untuk mendapatkan semua lampiran dari dokumen PD
 Untuk mendapatkan semua lampiran dari file PDF:
 
 1. Loop melalui koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran. Setiap elemen dari koleksi ini mewakili objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Setiap iterasi dari loop foreach melalui koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) mengembalikan objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
-1. Setelah objek tersedia, ambil baik semua properti file yang dilampirkan atau file itu sendiri.
+1. Setelah objek tersedia, ambil baik semua properti file yang terlampir atau file itu sendiri.
 
 Potongan kode berikut menunjukkan cara mendapatkan semua lampiran dari dokumen PDF.
 
@@ -203,7 +203,7 @@ private static void GetAllAttachments()
 
 ## Dapatkan Lampiran Individu
 
-Untuk mendapatkan lampiran individu, kita dapat menentukan indeks lampiran dalam objek `EmbeddedFiles` dari instansi Document. Silakan coba menggunakan potongan kode berikut.
+Untuk mendapatkan lampiran individu, kita dapat menentukan indeks lampiran dalam objek `EmbeddedFiles` dari instance Dokumen. Silakan coba menggunakan potongan kode berikut.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

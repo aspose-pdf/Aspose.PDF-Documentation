@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
     "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
-    "abstract": "Aspose.PDF for .NET 引入了一项强大的功能，使用户能够无缝提取和保存 PDF 文档中的附件。此功能允许检索所有嵌入文件或特定附件，提高了文档管理和可访问性，方便开发人员处理 PDF 文件。通过这个创新工具，轻松处理附件，优化您的 PDF 工作流程。",
+    "abstract": "Aspose.PDF for .NET 引入了一项强大的功能，使用户能够无缝提取和保存 PDF 文档中的附件。此功能允许检索所有嵌入文件或特定附件，增强了处理 PDF 文件的开发人员的文档管理和可访问性。通过轻松处理附件来优化您的 PDF 工作流程，使用这个创新工具",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -81,11 +81,11 @@ sitemap:
 
 ## 获取所有附件
 
-使用 Aspose.PDF，可以从 PDF 文档中获取所有附件。这在您希望将文档单独保存于 PDF 之外，或需要从 PDF 中剥离附件时非常有用。
+使用 Aspose.PDF，可以从 PDF 文档中获取所有附件。这在您想要将文档单独保存到 PDF 中，或者需要从 PDF 中删除附件时非常有用。
 
 要从 PDF 文件中获取所有附件：
 
-1. 遍历 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合。[EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合包含所有附件。该集合的每个元素代表一个 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 对象。通过 [EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合的 foreach 循环的每次迭代返回一个 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 对象。
+1. 遍历 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合。 [EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合包含所有附件。此集合的每个元素代表一个 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 对象。通过 [EmbeddedFiles](https://reference.aspose.com/pdf/zh/net/aspose.pdf/embeddedfilecollection) 集合的 foreach 循环的每次迭代返回一个 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 对象。
 1. 一旦对象可用，检索附加文件的所有属性或文件本身。
 
 以下代码片段展示了如何从 PDF 文档中获取所有附件。
@@ -203,7 +203,7 @@ private static void GetAllAttachments()
 
 ## 获取单个附件
 
-为了获取单个附件，我们可以在 Document 实例的 `EmbeddedFiles` 对象中指定附件的索引。请尝试使用以下代码片段。
+为了获取单个附件，我们可以指定 Document 实例的 `EmbeddedFiles` 对象中的附件索引。请尝试使用以下代码片段。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -297,7 +297,7 @@ private static void GetIndividualAttachment()
 
 ## 获取包含在 FileAttachmentAnnotation 对象中的附件
 
-除了 Document 对象的 EmbeddedFiles 集合，附件还可以包含在 FileAttachmentAnnotation 对象中。以下是查看此类附件数量和详细信息的代码
+除了 Document 对象的 EmbeddedFiles 集合外，附件还可以包含在 FileAttachmentAnnotation 对象中。以下是查看此类附件的数量和详细信息的代码。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
     "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
-    "abstract": "Aspose.PDF for .NET introduce una poderosa característica que permite a los usuarios extraer y guardar archivos adjuntos de documentos PDF sin problemas. Esta funcionalidad permite la recuperación de todos los archivos incrustados o archivos adjuntos específicos, mejorando la gestión de documentos y la accesibilidad para los desarrolladores que trabajan con archivos PDF. Optimiza tus flujos de trabajo PDF manejando archivos adjuntos sin esfuerzo con esta herramienta innovadora.",
+    "abstract": "Aspose.PDF for .NET presenta una poderosa función que permite a los usuarios extraer y guardar archivos adjuntos de documentos PDF sin problemas. Esta funcionalidad permite la recuperación de todos los archivos incrustados o archivos adjuntos específicos, mejorando la gestión de documentos y la accesibilidad para los desarrolladores que trabajan con archivos PDF. Optimiza tus flujos de trabajo PDF manejando archivos adjuntos sin esfuerzo con esta herramienta innovadora.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -297,7 +297,7 @@ private static void GetIndividualAttachment()
 
 ## Obtener Archivos Adjuntos que Contienen Objetos FileAttachmentAnnotation
 
-Además de la colección EmbeddedFiles del objeto Document, los archivos adjuntos también pueden estar contenidos en objetos FileAttachmentAnnotation. A continuación se muestra el código para ver el número y los detalles de tales archivos adjuntos.
+Además de la colección EmbeddedFiles del objeto Document, los archivos adjuntos también pueden estar contenidos en objetos FileAttachmentAnnotation. A continuación se muestra el código para ver el número y los detalles de dichos archivos adjuntos.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

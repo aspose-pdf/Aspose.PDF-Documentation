@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
     "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
-    "abstract": "Aspose.PDF for .NET يقدم ميزة قوية تتيح للمستخدمين استخراج وحفظ المرفقات من مستندات PDF بسلاسة. تتيح هذه الوظيفة استرجاع جميع الملفات المضمنة أو مرفقات محددة، مما يعزز إدارة المستندات والوصول إليها للمطورين الذين يعملون مع ملفات PDF. قم بتحسين سير العمل الخاص بك في PDF من خلال التعامل بسهولة مع المرفقات باستخدام هذه الأداة المبتكرة",
+    "abstract": "Aspose.PDF for .NET يقدم ميزة قوية تتيح للمستخدمين استخراج وحفظ المرفقات من مستندات PDF بسلاسة. تتيح هذه الوظيفة استرجاع جميع الملفات المضمنة أو مرفقات محددة، مما يعزز إدارة المستندات وسهولة الوصول للمطورين الذين يعملون مع ملفات PDF. قم بتحسين سير عمل PDF الخاص بك من خلال التعامل مع المرفقات بسهولة باستخدام هذه الأداة المبتكرة",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -203,7 +203,7 @@ private static void GetAllAttachments()
 
 ## الحصول على مرفق فردي
 
-من أجل الحصول على مرفق فردي، يمكننا تحديد فهرس المرفق في كائن `EmbeddedFiles` لمثيل Document. يرجى محاولة استخدام مقتطف الكود التالي.
+من أجل الحصول على مرفق فردي، يمكننا تحديد فهرس المرفق في كائن `EmbeddedFiles` لمثيل Document. يرجى تجربة استخدام مقتطف الكود التالي.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -297,7 +297,7 @@ private static void GetIndividualAttachment()
 
 ## الحصول على المرفقات الموجودة في كائنات FileAttachmentAnnotation
 
-بالإضافة إلى مجموعة EmbeddedFiles لكائن Document، يمكن أن تحتوي المرفقات أيضًا على كائنات FileAttachmentAnnotation. أدناه هو الكود لعرض عدد وتفاصيل مثل هذه المرفقات
+بالإضافة إلى مجموعة EmbeddedFiles لكائن Document، يمكن أن تحتوي المرفقات أيضًا على كائنات FileAttachmentAnnotation. أدناه هو الكود لعرض عدد وتفاصيل مثل هذه المرفقات.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -86,7 +86,7 @@ sitemap:
 Чтобы получить все вложения из PDF-файла:
 
 1. Пройдите по коллекции [EmbeddedFiles](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Коллекция [EmbeddedFiles](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection) содержит все вложения. Каждый элемент этой коллекции представляет собой объект [FileSpecification](https://reference.aspose.com/pdf/ru/net/aspose.pdf/filespecification). Каждая итерация цикла foreach по коллекции [EmbeddedFiles](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection) возвращает объект [FileSpecification](https://reference.aspose.com/pdf/ru/net/aspose.pdf/filespecification).
-1. Как только объект доступен, получите либо все свойства прикрепленного файла, либо сам файл.
+1. Как только объект доступен, извлеките либо все свойства прикрепленного файла, либо сам файл.
 
 Следующие фрагменты кода показывают, как получить все вложения из PDF-документа.
 

@@ -85,7 +85,7 @@ Aspose.PDFを使用すると、PDFドキュメントからすべての添付フ�
 
 PDFファイルからすべての添付ファイルを取得するには：
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションをループします。[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションにはすべての添付ファイルが含まれています。このコレクションの各要素は[FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification)オブジェクトを表します。[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションを通じてのforeachループの各反復は[FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification)オブジェクトを返します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションをループします。[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションにはすべての添付ファイルが含まれています。このコレクションの各要素は[FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification)オブジェクトを表します。[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションを通じてのforeachループの各イテレーションは[FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification)オブジェクトを返します。
 1. オブジェクトが利用可能になったら、添付ファイルのプロパティまたはファイル自体を取得します。
 
 以下のコードスニペットは、PDFドキュメントからすべての添付ファイルを取得する方法を示しています。
@@ -297,7 +297,7 @@ private static void GetIndividualAttachment()
 
 ## FileAttachmentAnnotationオブジェクトに含まれる添付ファイルを取得
 
-DocumentオブジェクトのEmbeddedFilesコレクションに加えて、添付ファイルはFileAttachmentAnnotationオブジェクトにも含まれる場合があります。以下は、そのような添付ファイルの数と詳細を表示するためのコードです。
+DocumentオブジェクトのEmbeddedFilesコレクションに加えて、添付ファイルはFileAttachmentAnnotationオブジェクトにも含まれることがあります。以下は、そのような添付ファイルの数と詳細を表示するためのコードです。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
