@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
     "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
-    "abstract": "Aspose.PDF for .NET يقدم ميزة قوية تتيح للمستخدمين استخراج وحفظ المرفقات من مستندات PDF بسلاسة. تتيح هذه الوظيفة استرجاع جميع الملفات المدمجة أو مرفقات محددة، مما يعزز إدارة المستندات وسهولة الوصول للمطورين الذين يعملون مع ملفات PDF. قم بتحسين سير عمل PDF الخاص بك من خلال التعامل بسهولة مع المرفقات باستخدام هذه الأداة المبتكرة",
+    "abstract": "Aspose.PDF for .NET يقدم ميزة قوية تتيح للمستخدمين استخراج وحفظ المرفقات من مستندات PDF بسلاسة. تتيح هذه الوظيفة استرجاع جميع الملفات المضمنة أو مرفقات محددة، مما يعزز إدارة المستندات والوصول إليها للمطورين الذين يعملون مع ملفات PDF. قم بتحسين سير العمل الخاص بك في PDF من خلال التعامل بسهولة مع المرفقات باستخدام هذه الأداة المبتكرة",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -190,10 +190,9 @@ private static void GetAllAttachments()
         // Get the attachment and write to file or stream
         var fileContent = new byte[fileSpecification.Contents.Length];
         fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-        using (var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
-        {
-            fileStream.Write(fileContent, 0, fileContent.Length);
-        }
+        using var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create);
+        fileStream.Write(fileContent, 0, fileContent.Length);
+
         count += 1;
     }
 }
@@ -204,7 +203,7 @@ private static void GetAllAttachments()
 
 ## الحصول على مرفق فردي
 
-من أجل الحصول على مرفق فردي، يمكننا تحديد فهرس المرفق في كائن `EmbeddedFiles` لمثيل المستند. يرجى محاولة استخدام مقتطف الكود التالي.
+من أجل الحصول على مرفق فردي، يمكننا تحديد فهرس المرفق في كائن `EmbeddedFiles` لمثيل Document. يرجى محاولة استخدام مقتطف الكود التالي.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -288,10 +287,8 @@ private static void GetIndividualAttachment()
     var fileContent = new byte[fileSpecification.Contents.Length];
     fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-    using (var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
-    {
-        fileStream.Write(fileContent, 0, fileContent.Length);
-    }
+    using var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
+    fileStream.Write(fileContent, 0, fileContent.Length);
 }
 ```
 {{< /tab >}}

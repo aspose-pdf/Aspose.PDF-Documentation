@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
     "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
-    "abstract": "Aspose.PDF for .NET introduce una poderosa función que permite a los usuarios extraer y guardar archivos adjuntos de documentos PDF sin problemas. Esta funcionalidad permite la recuperación de todos los archivos incrustados o archivos adjuntos específicos, mejorando la gestión de documentos y la accesibilidad para los desarrolladores que trabajan con archivos PDF. Optimiza tus flujos de trabajo PDF manejando archivos adjuntos sin esfuerzo con esta herramienta innovadora.",
+    "abstract": "Aspose.PDF for .NET introduce una poderosa característica que permite a los usuarios extraer y guardar archivos adjuntos de documentos PDF sin problemas. Esta funcionalidad permite la recuperación de todos los archivos incrustados o archivos adjuntos específicos, mejorando la gestión de documentos y la accesibilidad para los desarrolladores que trabajan con archivos PDF. Optimiza tus flujos de trabajo PDF manejando archivos adjuntos sin esfuerzo con esta herramienta innovadora.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -190,10 +190,9 @@ private static void GetAllAttachments()
         // Get the attachment and write to file or stream
         var fileContent = new byte[fileSpecification.Contents.Length];
         fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-        using (var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
-        {
-            fileStream.Write(fileContent, 0, fileContent.Length);
-        }
+        using var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create);
+        fileStream.Write(fileContent, 0, fileContent.Length);
+
         count += 1;
     }
 }
@@ -288,10 +287,8 @@ private static void GetIndividualAttachment()
     var fileContent = new byte[fileSpecification.Contents.Length];
     fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-    using (var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
-    {
-        fileStream.Write(fileContent, 0, fileContent.Length);
-    }
+    using var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
+    fileStream.Write(fileContent, 0, fileContent.Length);
 }
 ```
 {{< /tab >}}

@@ -1,6 +1,6 @@
 ---
-title: 提取和保存附件
-linktitle: 提取和保存附件
+title: 提取并保存附件
+linktitle: 提取并保存附件
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
     "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
-    "abstract": "Aspose.PDF for .NET 引入了一项强大的功能，使用户能够无缝提取和保存 PDF 文档中的附件。此功能允许检索所有嵌入文件或特定附件，从而增强了开发人员处理 PDF 文件的文档管理和可访问性。通过轻松处理附件来优化您的 PDF 工作流程，使用这个创新工具",
+    "abstract": "Aspose.PDF for .NET 引入了一项强大的功能，使用户能够无缝提取和保存 PDF 文档中的附件。此功能允许检索所有嵌入文件或特定附件，提高了文档管理和可访问性，方便开发人员处理 PDF 文件。通过这个创新工具，轻松处理附件，优化您的 PDF 工作流程。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -81,7 +81,7 @@ sitemap:
 
 ## 获取所有附件
 
-使用 Aspose.PDF，可以从 PDF 文档中获取所有附件。这在您希望将文档单独保存于 PDF 之外，或需要从 PDF 中去除附件时非常有用。
+使用 Aspose.PDF，可以从 PDF 文档中获取所有附件。这在您希望将文档单独保存于 PDF 之外，或需要从 PDF 中剥离附件时非常有用。
 
 要从 PDF 文件中获取所有附件：
 
@@ -190,10 +190,9 @@ private static void GetAllAttachments()
         // Get the attachment and write to file or stream
         var fileContent = new byte[fileSpecification.Contents.Length];
         fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-        using (var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
-        {
-            fileStream.Write(fileContent, 0, fileContent.Length);
-        }
+        using var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create);
+        fileStream.Write(fileContent, 0, fileContent.Length);
+
         count += 1;
     }
 }
@@ -204,7 +203,7 @@ private static void GetAllAttachments()
 
 ## 获取单个附件
 
-为了获取单个附件，我们可以指定 Document 实例的 `EmbeddedFiles` 对象中的附件索引。请尝试使用以下代码片段。
+为了获取单个附件，我们可以在 Document 实例的 `EmbeddedFiles` 对象中指定附件的索引。请尝试使用以下代码片段。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -288,10 +287,8 @@ private static void GetIndividualAttachment()
     var fileContent = new byte[fileSpecification.Contents.Length];
     fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-    using (var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
-    {
-        fileStream.Write(fileContent, 0, fileContent.Length);
-    }
+    using var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
+    fileStream.Write(fileContent, 0, fileContent.Length);
 }
 ```
 {{< /tab >}}

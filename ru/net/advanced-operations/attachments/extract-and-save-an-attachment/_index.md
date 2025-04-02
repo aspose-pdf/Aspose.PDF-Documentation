@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "extract attachments, save attachments, Aspose.PDF for .NET, PDF document, individual attachment, embedded files collection, FileSpecification object, PDF manipulation, document instance, get all attachments",
-    "wordcount": "1173",
+    "wordcount": "1169",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -81,12 +81,12 @@ sitemap:
 
 ## Получить все вложения
 
-С помощью Aspose.PDF можно получить все вложения из PDF-документа. Это полезно как в случае, если вы хотите сохранить документы отдельно от PDF, так и если вам нужно удалить вложения из PDF.
+С помощью Aspose.PDF можно получить все вложения из PDF-документа. Это полезно, когда вы хотите сохранить документы отдельно от PDF или если вам нужно удалить вложения из PDF.
 
 Чтобы получить все вложения из PDF-файла:
 
 1. Пройдите по коллекции [EmbeddedFiles](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Коллекция [EmbeddedFiles](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection) содержит все вложения. Каждый элемент этой коллекции представляет собой объект [FileSpecification](https://reference.aspose.com/pdf/ru/net/aspose.pdf/filespecification). Каждая итерация цикла foreach по коллекции [EmbeddedFiles](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection) возвращает объект [FileSpecification](https://reference.aspose.com/pdf/ru/net/aspose.pdf/filespecification).
-1. Как только объект доступен, извлеките либо все свойства прикрепленного файла, либо сам файл.
+1. Как только объект доступен, получите либо все свойства прикрепленного файла, либо сам файл.
 
 Следующие фрагменты кода показывают, как получить все вложения из PDF-документа.
 
@@ -190,10 +190,9 @@ private static void GetAllAttachments()
         // Get the attachment and write to file or stream
         var fileContent = new byte[fileSpecification.Contents.Length];
         fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-        using (var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
-        {
-            fileStream.Write(fileContent, 0, fileContent.Length);
-        }
+        using var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create);
+        fileStream.Write(fileContent, 0, fileContent.Length);
+
         count += 1;
     }
 }
@@ -288,10 +287,8 @@ private static void GetIndividualAttachment()
     var fileContent = new byte[fileSpecification.Contents.Length];
     fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-    using (var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
-    {
-        fileStream.Write(fileContent, 0, fileContent.Length);
-    }
+    using var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
+    fileStream.Write(fileContent, 0, fileContent.Length);
 }
 ```
 {{< /tab >}}

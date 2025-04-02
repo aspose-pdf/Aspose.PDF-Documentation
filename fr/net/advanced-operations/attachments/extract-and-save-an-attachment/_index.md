@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
     "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
-    "abstract": "Aspose.PDF for .NET introduit une fonctionnalité puissante qui permet aux utilisateurs d'extraire et d'enregistrer sans effort des pièces jointes de documents PDF. Cette fonctionnalité permet de récupérer tous les fichiers intégrés ou des pièces jointes spécifiques, améliorant ainsi la gestion des documents et l'accessibilité pour les développeurs travaillant avec des fichiers PDF. Optimisez vos flux de travail PDF en gérant sans effort les pièces jointes avec cet outil innovant",
+    "abstract": "Aspose.PDF for .NET introduit une fonctionnalité puissante qui permet aux utilisateurs d'extraire et d'enregistrer sans effort des pièces jointes à partir de documents PDF. Cette fonctionnalité permet de récupérer tous les fichiers intégrés ou des pièces jointes spécifiques, améliorant ainsi la gestion des documents et l'accessibilité pour les développeurs travaillant avec des fichiers PDF. Optimisez vos flux de travail PDF en gérant sans effort les pièces jointes avec cet outil innovant",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "extract attachments, save attachments, Aspose.PDF for .NET, PDF document, individual attachment, embedded files collection, FileSpecification object, PDF manipulation, document instance, get all attachments",
-    "wordcount": "1237",
+    "wordcount": "1240",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -190,10 +190,9 @@ private static void GetAllAttachments()
         // Get the attachment and write to file or stream
         var fileContent = new byte[fileSpecification.Contents.Length];
         fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-        using (var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
-        {
-            fileStream.Write(fileContent, 0, fileContent.Length);
-        }
+        using var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create);
+        fileStream.Write(fileContent, 0, fileContent.Length);
+
         count += 1;
     }
 }
@@ -288,10 +287,8 @@ private static void GetIndividualAttachment()
     var fileContent = new byte[fileSpecification.Contents.Length];
     fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-    using (var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
-    {
-        fileStream.Write(fileContent, 0, fileContent.Length);
-    }
+    using var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
+    fileStream.Write(fileContent, 0, fileContent.Length);
 }
 ```
 {{< /tab >}}
@@ -300,7 +297,7 @@ private static void GetIndividualAttachment()
 
 ## Obtenir les pièces jointes contenues dans des objets FileAttachmentAnnotation
 
-En plus de la collection EmbeddedFiles de l'objet Document, les pièces jointes peuvent également être contenues dans des objets FileAttachmentAnnotation. Voici le code pour visualiser le nombre et les détails de telles pièces jointes.
+En plus de la collection EmbeddedFiles de l'objet Document, les pièces jointes peuvent également être contenues dans des objets FileAttachmentAnnotation. Ci-dessous se trouve le code pour visualiser le nombre et les détails de ces pièces jointes.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
     "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
-    "abstract": "Aspose.PDF for .NET memperkenalkan fitur yang kuat yang memungkinkan pengguna untuk dengan mudah mengekstrak dan menyimpan lampiran dari dokumen PDF. Fungsionalitas ini memungkinkan pengambilan semua file yang ter嵌入 atau lampiran tertentu, meningkatkan manajemen dokumen dan aksesibilitas bagi pengembang yang bekerja dengan file PDF. Optimalkan alur kerja PDF Anda dengan menangani lampiran ini menggunakan alat inovatif",
+    "abstract": "Aspose.PDF for .NET memperkenalkan fitur yang kuat yang memungkinkan pengguna untuk dengan mudah mengekstrak dan menyimpan lampiran dari dokumen PDF. Fungsionalitas ini memungkinkan pengambilan semua file yang disematkan atau lampiran tertentu, meningkatkan manajemen dokumen dan aksesibilitas bagi pengembang yang bekerja dengan file PDF. Optimalkan alur kerja PDF Anda dengan menangani lampiran dengan mudah menggunakan alat inovatif ini.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -190,10 +190,9 @@ private static void GetAllAttachments()
         // Get the attachment and write to file or stream
         var fileContent = new byte[fileSpecification.Contents.Length];
         fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-        using (var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
-        {
-            fileStream.Write(fileContent, 0, fileContent.Length);
-        }
+        using var fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create);
+        fileStream.Write(fileContent, 0, fileContent.Length);
+
         count += 1;
     }
 }
@@ -204,7 +203,7 @@ private static void GetAllAttachments()
 
 ## Dapatkan Lampiran Individu
 
-Untuk mendapatkan lampiran individu, kita dapat menentukan indeks lampiran dalam objek `EmbeddedFiles` dari instance Document. Silakan coba menggunakan potongan kode berikut.
+Untuk mendapatkan lampiran individu, kita dapat menentukan indeks lampiran dalam objek `EmbeddedFiles` dari instansi Document. Silakan coba menggunakan potongan kode berikut.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -288,10 +287,8 @@ private static void GetIndividualAttachment()
     var fileContent = new byte[fileSpecification.Contents.Length];
     fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-    using (var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
-    {
-        fileStream.Write(fileContent, 0, fileContent.Length);
-    }
+    using var fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
+    fileStream.Write(fileContent, 0, fileContent.Length);
 }
 ```
 {{< /tab >}}
