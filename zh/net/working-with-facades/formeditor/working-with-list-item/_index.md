@@ -77,7 +77,7 @@ draft: false
 
 ## 在现有 PDF 文件中添加列表项
 
-[AddListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addlistitem) 方法允许您在 [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield) 字段中添加项目。第一个参数是字段名称，第二个参数是字段项。您可以传递单个字段项，也可以传递包含项目列表的字符串数组。此方法由 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 类提供。以下代码片段演示了如何在 PDF 文件中添加列表项。
+[AddListItem](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/addlistitem) 方法允许您在 [ListBox](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/listboxfield) 字段中添加项目。第一个参数是字段名称，第二个参数是字段项。您可以传递单个字段项，也可以传递包含项目列表的字符串数组。此方法由 [FormEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor) 类提供。以下代码片段演示了如何在 PDF 文件中添加列表项。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -110,7 +110,7 @@ draft: false
 
 ## 从现有 PDF 文件中删除列表项
 
-[DelListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/dellistitem) 方法允许您从 [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield) 中删除特定项目。第一个参数是字段名称，第二个参数是您想从列表中删除的项目。此方法由 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 类提供。以下代码片段演示了如何从 PDF 文件中删除列表项。
+[DelListItem](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/dellistitem) 方法允许您从 [ListBox](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/listboxfield) 中删除特定项目。第一个参数是字段名称，第二个参数是您想从列表中删除的项目。此方法由 [FormEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor) 类提供。以下代码片段演示了如何从 PDF 文件中删除列表项。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

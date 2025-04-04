@@ -82,7 +82,7 @@ sitemap:
 
 ## 使用 Rotation 属性在 PDF 中旋转文本
 
-通过使用 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) 类的 Rotation 属性，您可以以各种角度旋转文本。文本旋转可以用于文档生成的不同场景。您可以指定旋转角度（以度为单位）来根据您的需求旋转文本。请查看以下不同场景，您可以在其中实现文本旋转。
+通过使用 [TextFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragment) 类的 Rotation 属性，您可以以各种角度旋转文本。文本旋转可以用于文档生成的不同场景。您可以指定旋转角度（以度为单位）来根据您的需求旋转文本。请查看以下不同场景，您可以在其中实现文本旋转。
 
 ## 使用 TextFragment 和 TextBuilder 实现旋转
 

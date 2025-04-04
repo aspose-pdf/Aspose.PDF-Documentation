@@ -83,14 +83,14 @@ sitemap:
 
 ## 添加圆形对象
 
-与条形图一样，圆形图可以用于显示多个单独类别的数据。然而，与条形图不同的是，圆形图只能在您拥有构成整体的所有类别的数据时使用。因此，让我们来看看如何使用Aspose.PDF for .NET添加一个[Circle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/circle)对象。
+与条形图一样，圆形图可以用于显示多个单独类别的数据。然而，与条形图不同的是，圆形图只能在您拥有构成整体的所有类别的数据时使用。因此，让我们来看看如何使用Aspose.PDF for .NET添加一个[Circle](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/circle)对象。
 
 请按照以下步骤操作：
 
-1. 创建[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)实例。
-1. 创建具有特定尺寸的[Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)。
-1. 为Drawing对象设置[Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border)。
-1. 将[Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)对象添加到页面的段落集合中。
+1. 创建[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)实例。
+1. 创建具有特定尺寸的[Drawing object](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing)。
+1. 为Drawing对象设置[Border](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph/properties/border)。
+1. 将[Graph](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph)对象添加到页面的段落集合中。
 1. 保存我们的PDF文件。
 
 ```csharp

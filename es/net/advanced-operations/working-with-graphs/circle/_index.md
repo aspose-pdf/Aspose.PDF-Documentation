@@ -83,14 +83,14 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Agregar objeto círculo
 
-Al igual que los gráficos de barras, los gráficos de círculos se pueden utilizar para mostrar datos en varias categorías separadas. Sin embargo, a diferencia de los gráficos de barras, los gráficos de círculos solo se pueden usar cuando tiene datos para todas las categorías que componen el todo. Así que echemos un vistazo a cómo agregar un objeto [Círculo](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/circle) con Aspose.PDF for .NET.
+Al igual que los gráficos de barras, los gráficos de círculos se pueden utilizar para mostrar datos en varias categorías separadas. Sin embargo, a diferencia de los gráficos de barras, los gráficos de círculos solo se pueden usar cuando tiene datos para todas las categorías que componen el todo. Así que echemos un vistazo a cómo agregar un objeto [Círculo](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/circle) con Aspose.PDF for .NET.
 
 Siga los pasos a continuación:
 
-1. Cree una instancia de [Documento](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Cree un [objeto de dibujo](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) con ciertas dimensiones.
-1. Establezca el [Borde](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) para el objeto de dibujo.
-1. Agregue el objeto [Gráfico](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) a la colección de párrafos de la página.
+1. Cree una instancia de [Documento](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+1. Cree un [objeto de dibujo](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing) con ciertas dimensiones.
+1. Establezca el [Borde](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/graph/properties/border) para el objeto de dibujo.
+1. Agregue el objeto [Gráfico](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/graph) a la colección de párrafos de la página.
 1. Guarde nuestro archivo PDF.
 
 ```csharp

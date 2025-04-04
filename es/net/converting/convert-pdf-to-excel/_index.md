@@ -138,7 +138,7 @@ Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["PDF a XLSX"
 [![Aspose.PDF Conversión PDF a Excel con aplicación gratuita](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-Para convertir archivos PDF a formato <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>, Aspose.PDF tiene una clase llamada [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions). Un objeto de la clase ExcelSaveOptions se pasa como segundo argumento al constructor Document.Save(..).
+Para convertir archivos PDF a formato <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>, Aspose.PDF tiene una clase llamada [ExcelSaveOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/excelsaveoptions). Un objeto de la clase ExcelSaveOptions se pasa como segundo argumento al constructor Document.Save(..).
 
 El siguiente fragmento de código muestra el proceso para convertir un archivo PDF en formato XLS o XLSX con Aspose.PDF for .NET.
 
@@ -235,7 +235,7 @@ private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 ### Convertir a formato XML Spreadsheet 2003
 
-Desde la versión 20.8, Aspose.PDF utiliza el formato de archivo Microsoft Excel Open XML Spreadsheet 2007 como predeterminado para almacenar datos. Para convertir archivos PDF a formato XML Spreadsheet 2003, Aspose.PDF tiene una clase llamada [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) con [Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format). Un objeto de la clase [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) se pasa como segundo argumento al método [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Desde la versión 20.8, Aspose.PDF utiliza el formato de archivo Microsoft Excel Open XML Spreadsheet 2007 como predeterminado para almacenar datos. Para convertir archivos PDF a formato XML Spreadsheet 2003, Aspose.PDF tiene una clase llamada [ExcelSaveOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/excelsaveoptions) con [Format](https://reference.aspose.com/pdf/es/net/aspose.pdf/excelsaveoptions/properties/format). Un objeto de la clase [ExcelSaveOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/excelsaveoptions) se pasa como segundo argumento al método [Document.Save(..)](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save/index).
 
 El siguiente fragmento de código muestra el proceso para convertir un archivo PDF en formato XLS Excel 2003 XML.
 

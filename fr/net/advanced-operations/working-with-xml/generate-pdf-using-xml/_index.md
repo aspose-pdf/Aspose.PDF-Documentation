@@ -519,7 +519,7 @@ Créons encore un autre fichier - le fichier de balisage XSL-FO pour transformer
 </xsl:stylesheet>
 ```
 
-Aspose.PDF a une classe spéciale [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) qui permet d'appliquer la transformation XSL-FO. Le snippet suivant montre comment utiliser cette classe avec les fichiers d'exemple décrits ci-dessus.
+Aspose.PDF a une classe spéciale [XslFoLoadOptions](https://reference.aspose.com/pdf/fr/net/aspose.pdf/xslfoloadoptions) qui permet d'appliquer la transformation XSL-FO. Le snippet suivant montre comment utiliser cette classe avec les fichiers d'exemple décrits ci-dessus.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -659,7 +659,7 @@ mais dans le fichier de balisage XSL-FO, nous ajouterons le paramètre : `<xsl:p
 ```
 
 Pour ajouter des paramètres XSL, nous devons créer notre propre [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) et
-le définir comme propriété dans [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Le snippet suivant montre comment utiliser cette classe avec les fichiers d'exemple décrits ci-dessus.
+le définir comme propriété dans [XslFoLoadOptions](https://reference.aspose.com/pdf/fr/net/aspose.pdf/xslfoloadoptions). Le snippet suivant montre comment utiliser cette classe avec les fichiers d'exemple décrits ci-dessus.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -824,7 +824,7 @@ Définissons la page avec des paramètres par défaut. Notre page aura un format
 </Document>
 ```
 
-Pour générer un document PDF, nous utiliserons la méthode [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index).
+Pour générer un document PDF, nous utiliserons la méthode [BindXml](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/bindxml/index).
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

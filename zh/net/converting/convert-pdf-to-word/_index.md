@@ -118,7 +118,7 @@ _格式_: **Word**
 
 <a name="csharp-pdf-to-doc"><strong>步骤：在 C# 中将 PDF 转换为 DOC</strong></a>
 
-1. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 对象的实例，使用源 PDF 文档。
+1. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/) 对象的实例，使用源 PDF 文档。
 2. 通过调用 **Document.Save()** 方法将其保存为 **SaveFormat.Doc** 格式。
 
 ```csharp
@@ -139,13 +139,13 @@ private static void ConvertPDFtoWord()
 
 ### 使用 DocSaveOptions 类
 
-[`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) 类提供了许多属性，可以改善将 PDF 文件转换为 DOC 格式的效果。在这些属性中，Mode 使您能够指定 PDF 内容的识别模式。您可以为此属性选择 RecognitionMode 枚举中的任何值。每个值都有特定的优点和限制：
+[`DocSaveOptions`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/docsaveoptions) 类提供了许多属性，可以改善将 PDF 文件转换为 DOC 格式的效果。在这些属性中，Mode 使您能够指定 PDF 内容的识别模式。您可以为此属性选择 RecognitionMode 枚举中的任何值。每个值都有特定的优点和限制：
 
-- [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) 模式速度快，适合保留 PDF 文件的原始外观，但生成文档的可编辑性可能有限。原始 PDF 中的每个视觉分组文本块都转换为输出文档中的文本框。这实现了与原始文档的最大相似性，因此输出文档看起来不错，但完全由文本框组成，这在 Microsoft Word 中编辑起来相当困难。
-- [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) 是完全识别模式，引擎执行分组和多级分析，以根据作者的意图恢复原始文档，同时生成易于编辑的文档。限制是输出文档可能与原始文档看起来不同。
+- [`Textbox`](https://reference.aspose.com/pdf/zh/net/aspose.pdf.docsaveoptions/recognitionmode) 模式速度快，适合保留 PDF 文件的原始外观，但生成文档的可编辑性可能有限。原始 PDF 中的每个视觉分组文本块都转换为输出文档中的文本框。这实现了与原始文档的最大相似性，因此输出文档看起来不错，但完全由文本框组成，这在 Microsoft Word 中编辑起来相当困难。
+- [`Flow`](https://reference.aspose.com/pdf/zh/net/aspose.pdf.docsaveoptions/recognitionmode) 是完全识别模式，引擎执行分组和多级分析，以根据作者的意图恢复原始文档，同时生成易于编辑的文档。限制是输出文档可能与原始文档看起来不同。
 
-[`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) 属性可用于控制文本元素之间的相对接近度。这意味着距离是以字体大小为标准的。较大的字体可能在音节之间有更大的间距，但仍被视为一个整体。它以字体大小的百分比表示；例如，1 = 100%。这意味着两个 12pt 的字符相距 12 pt 是接近的。
-- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) 用于在转换过程中开启项目符号识别。
+[`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) 属性可用于控制文本元素之间的相对接近度。这意味着距离是以字体大小为标准的。较大的字体可能在音节之间有更大的间距，但仍被视为一个整体。它以字体大小的百分比表示；例如，1 = 100%。这意味着两个 12pt 的字符相距 12 pt 是接近的。
+- [`RecognitionBullets`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/docsaveoptions/properties/recognizebullets) 用于在转换过程中开启项目符号识别。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -190,7 +190,7 @@ Aspose.PDF for .NET API 允许您使用 C# 和任何 .NET 语言读取和转换 
 
 <a name="csharp-pdf-to-docx"><strong>步骤：在 C# 中将 PDF 转换为 DOCX</strong></a>
 
-1. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 对象的实例，使用源 PDF 文档。
+1. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/) 对象的实例，使用源 PDF 文档。
 2. 通过调用 **Document.Save()** 方法将其保存为 **SaveFormat.DocX** 格式。
 
 ```csharp

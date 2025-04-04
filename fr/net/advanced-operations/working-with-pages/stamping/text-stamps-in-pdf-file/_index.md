@@ -80,7 +80,7 @@ sitemap:
 
 ## Ajouter un tampon de texte
 
-Vous pouvez utiliser la classe [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) pour ajouter un tampon de texte dans un fichier PDF. La classe TextStamp fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter un tampon de texte, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la Page pour ajouter le tampon dans le PDF.
+Vous pouvez utiliser la classe [TextStamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf/TextStamp) pour ajouter un tampon de texte dans un fichier PDF. La classe TextStamp fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter un tampon de texte, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la Page pour ajouter le tampon dans le PDF.
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
@@ -121,7 +121,7 @@ private static void AddTextStamp()
 
 ## Définir l'alignement pour l'objet TextStamp
 
-Ajouter des filigranes aux documents PDF est l'une des fonctionnalités les plus demandées et Aspose.PDF for .NET est entièrement capable d'ajouter des filigranes d'image ainsi que des filigranes de texte. Nous avons une classe nommée [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) qui fournit la fonctionnalité d'ajouter des tampons de texte sur le fichier PDF. Récemment, il y a eu une demande pour prendre en charge la fonctionnalité de spécifier l'alignement du texte lors de l'utilisation de l'objet TextStamp. Ainsi, pour répondre à cette exigence, nous avons introduit la propriété TextAlignment dans la classe TextStamp. En utilisant cette propriété, nous pouvons spécifier l'alignement horizontal du texte.
+Ajouter des filigranes aux documents PDF est l'une des fonctionnalités les plus demandées et Aspose.PDF for .NET est entièrement capable d'ajouter des filigranes d'image ainsi que des filigranes de texte. Nous avons une classe nommée [TextStamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf/textstamp) qui fournit la fonctionnalité d'ajouter des tampons de texte sur le fichier PDF. Récemment, il y a eu une demande pour prendre en charge la fonctionnalité de spécifier l'alignement du texte lors de l'utilisation de l'objet TextStamp. Ainsi, pour répondre à cette exigence, nous avons introduit la propriété TextAlignment dans la classe TextStamp. En utilisant cette propriété, nous pouvons spécifier l'alignement horizontal du texte.
 
 Le code suivant montre un exemple de la façon de charger un document PDF existant et d'ajouter un TextStamp dessus.
 

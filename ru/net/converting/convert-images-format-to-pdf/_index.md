@@ -155,7 +155,7 @@ _Формат_: **DJVU**
 
 <a name="csharp-bmp-to-pdf" id="csharp-bmp-to-pdf"><strong>Шаги: Конвертация BMP в PDF на C#</strong></a>
 
-1. Инициализируйте новый объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Инициализируйте новый объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 2. Загрузите входное **BMP** изображение.
 3. Наконец, сохраните выходной PDF-файл.
 
@@ -201,8 +201,8 @@ Aspose предлагает вам онлайн бесплатное прило�
 
 <a name="csharp-cgm-to-pdf" id="csharp-cgm-to-pdf"><strong>Шаги: Конвертация CGM в PDF на C#</strong></a>
 
-1. Создайте экземпляр класса [CgmLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions).
-2. Создайте экземпляр класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) с указанным именем исходного файла и параметрами.
+1. Создайте экземпляр класса [CgmLoadOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cgmloadoptions).
+2. Создайте экземпляр класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с указанным именем исходного файла и параметрами.
 3. Сохраните документ с желаемым именем файла.
 
 ```csharp
@@ -233,7 +233,7 @@ private static void ConvertCGMtoPDF()
 
 1. Создайте объект класса Image.
 2. Добавьте изображение в коллекцию Paragraphs страницы.
-3. Укажите свойство [FileType](https://reference.aspose.com/pdf/net/aspose.pdf/image/properties/filetype).
+3. Укажите свойство [FileType](https://reference.aspose.com/pdf/ru/net/aspose.pdf/image/properties/filetype).
 4. Укажите путь или источник файла.
     - Если изображение находится на жестком диске, укажите путь, используя свойство Image.File.
     - Если изображение помещено в MemoryStream, передайте объект, содержащий изображение, в свойство Image.ImageStream.
@@ -280,7 +280,7 @@ Aspose предлагает вам онлайн бесплатное прило�
 
 <a name="csharp-emf-to-pdf" id="csharp-emf-to-pdf"><strong>Шаги: Конвертация EMF в PDF на C#</strong></a>
 
-1. Во-первых, инициализируйте объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Во-первых, инициализируйте объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 2. Загрузите файл **EMF** изображения.
 3. Добавьте загруженное изображение EMF на страницу.
 4. Сохраните PDF-документ.
@@ -336,7 +336,7 @@ Aspose предлагает вам онлайн бесплатное прило�
 
 <a name="csharp-gif-to-pdf" id="csharp-gif-to-pdf"><strong>Шаги: Конвертация GIF в PDF на C#</strong></a>
 
-1. Инициализируйте новый объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Инициализируйте новый объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 2. Загрузите входное **GIF** изображение.
 3. Наконец, сохраните выходной PDF-файл.
 
@@ -536,12 +536,12 @@ Aspose.PDF for .NET предлагает вам онлайн бесплатно�
 [![Aspose.PDF Конвертация SVG в PDF с бесплатным приложением](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
-Чтобы конвертировать файлы SVG в PDF, используйте класс с именем [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions), который используется для инициализации объекта [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions). Позже этот объект передается в качестве аргумента при инициализации объекта Document и помогает движку рендеринга PDF определить входной формат исходного документа.
+Чтобы конвертировать файлы SVG в PDF, используйте класс с именем [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions), который используется для инициализации объекта [`LoadOptions`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/loadoptions). Позже этот объект передается в качестве аргумента при инициализации объекта Document и помогает движку рендеринга PDF определить входной формат исходного документа.
 
 <a name="csharp-svg-to-pdf" id="csharp-svg-to-pdf"><strong>Шаги: Конвертация SVG в PDF на C#</strong></a>
 
-1. Создайте экземпляр класса [`SvgLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions).
-2. Создайте экземпляр класса [`Document`](https://reference.aspose.com/pdf/net/aspose.pdf/document) с указанным именем исходного файла и параметрами.
+1. Создайте экземпляр класса [`SvgLoadOptions`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/loadoptions).
+2. Создайте экземпляр класса [`Document`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с указанным именем исходного файла и параметрами.
 3. Сохраните документ с желаемым именем файла.
 
 Следующий фрагмент кода показывает процесс конвертации файла SVG в формат PDF с помощью Aspose.PDF for .NET.
@@ -788,7 +788,7 @@ TIFF или TIF, формат файла с тегами изображений,
 
 <a name="csharp-tiff-to-pdf" id="csharp-tiff-to-pdf"><strong>Шаги: Конвертация TIFF в PDF на C#</strong></a>
 
-1. Создайте новый объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) и добавьте страницу.
+1. Создайте новый объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) и добавьте страницу.
 2. Загрузите входное **TIFF** изображение.
 3. Сохраните PDF-документ.
 
@@ -877,8 +877,8 @@ private static void ConvertTIFFtoPDF()
 
 <a name="csharp-cdr-to-pdf" id="csharp-cdr-to-pdf"><strong>Шаги: Конвертация CDR в PDF на C#</strong></a>
 
-1. Создайте экземпляр класса [CdrLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cdrloadoptions/) .
-2. Создайте экземпляр класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) с указанным именем исходного файла и параметрами.
+1. Создайте экземпляр класса [CdrLoadOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cdrloadoptions/) .
+2. Создайте экземпляр класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с указанным именем исходного файла и параметрами.
 3. Сохраните документ с желаемым именем файла.
 
 ```csharp
@@ -905,8 +905,8 @@ private static void ConvertCDRtoPDF()
 
 <a name="csharp-djvu-to-pdf" id="csharp-djvu-to-pdf"><strong>Шаги: Конвертация DJVU в PDF на C#</strong></a>
 
-1. Создайте экземпляр класса [DjvuLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/djvuloadoptions/) .
-2. Создайте экземпляр класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) с указанным именем исходного файла и параметрами.
+1. Создайте экземпляр класса [DjvuLoadOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf/djvuloadoptions/) .
+2. Создайте экземпляр класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с указанным именем исходного файла и параметрами.
 3. Сохраните документ с желаемым именем файла.
 
 ```csharp

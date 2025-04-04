@@ -83,12 +83,12 @@ sitemap:
 
 ## Обновление ссылок в файле PDF
 
-Как обсуждалось в разделе «Добавление гиперссылки в файл PDF», класс [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) позволяет добавлять ссылки в файл PDF. Существует аналогичный класс, используемый для получения существующих ссылок из файлов PDF. Используйте его, если вам нужно обновить существующую ссылку. Чтобы обновить существующую ссылку:
+Как обсуждалось в разделе «Добавление гиперссылки в файл PDF», класс [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation) позволяет добавлять ссылки в файл PDF. Существует аналогичный класс, используемый для получения существующих ссылок из файлов PDF. Используйте его, если вам нужно обновить существующую ссылку. Чтобы обновить существующую ссылку:
 
 1. Загрузите PDF-файл.
 1. Перейдите на определённую страницу в PDF-файле.
-1. Укажите пункт назначения ссылки с помощью свойства Destination объекта [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction).
-1. Страница назначения указывается с помощью конструктора [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination).
+1. Укажите пункт назначения ссылки с помощью свойства Destination объекта [GoToAction](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/gotoaction).
+1. Страница назначения указывается с помощью конструктора [XYZExplicitDestination](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/xyzexplicitdestination).
 
 ### Установка цели ссылки на страницу в том же документе
 
@@ -155,7 +155,7 @@ private static void UpdateLinkAnnotation()
 
 ### Установка пункта назначения ссылки на веб-адрес
 
-Чтобы обновить гиперссылку так, чтобы она указывала на веб-адрес, создайте экземпляр объекта [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) и передайте его свойству Action объекта LinkAnnotation. В следующем фрагменте кода показано, как обновить ссылку в файле PDF и установить её целевое назначение на веб-адрес.
+Чтобы обновить гиперссылку так, чтобы она указывала на веб-адрес, создайте экземпляр объекта [GoToURIAction](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/gotouriaction) и передайте его свойству Action объекта LinkAnnotation. В следующем фрагменте кода показано, как обновить ссылку в файле PDF и установить её целевое назначение на веб-адрес.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

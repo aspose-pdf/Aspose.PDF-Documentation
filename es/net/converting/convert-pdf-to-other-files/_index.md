@@ -93,7 +93,7 @@ EPUB está diseñado para contenido refluido, lo que significa que un lector de 
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-Aspose.PDF for .NET también admite la función de convertir documentos PDF a formato EPUB. Aspose.PDF for .NET tiene una clase llamada EpubSaveOptions que se puede usar como el segundo argumento del método [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) para generar un archivo EPUB.
+Aspose.PDF for .NET también admite la función de convertir documentos PDF a formato EPUB. Aspose.PDF for .NET tiene una clase llamada EpubSaveOptions que se puede usar como el segundo argumento del método [`Document.Save(..)`](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save/index) para generar un archivo EPUB.
 Por favor, intenta usar el siguiente fragmento de código para cumplir con este requisito con C#.
 
 ```csharp
@@ -130,7 +130,7 @@ Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["PDF a LaTeX
 [![Aspose.PDF Conversión PDF a LaTeX/TeX con Aplicación Gratuita](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-Para convertir archivos PDF a TeX, Aspose.PDF tiene la clase [LaTeXSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions) que proporciona la propiedad OutDirectoryPath para guardar imágenes temporales durante el proceso de conversión.
+Para convertir archivos PDF a TeX, Aspose.PDF tiene la clase [LaTeXSaveOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/latexsaveoptions) que proporciona la propiedad OutDirectoryPath para guardar imágenes temporales durante el proceso de conversión.
 
 El siguiente fragmento de código muestra el proceso de conversión de archivos PDF al formato TEX con C#.
 
@@ -165,7 +165,7 @@ private static void ConvertPDFtoTeX()
 
 ### Convertir todo el documento PDF a archivo de Texto
 
-Puedes convertir un documento PDF a un archivo TXT utilizando el método [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber/methods/visit/index) de la clase [TextAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber).
+Puedes convertir un documento PDF a un archivo TXT utilizando el método [Visit](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textabsorber/methods/visit/index) de la clase [TextAbsorber](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textabsorber).
 
 El siguiente fragmento de código explica cómo extraer los textos de todas las páginas.
 
@@ -239,7 +239,7 @@ Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["PDF a XPS"]
 
 El tipo de archivo XPS está asociado principalmente con la Especificación de Papel XML de Microsoft Corporation. La Especificación de Papel XML (XPS), anteriormente conocida como Metro y que abarca el concepto de marketing del Camino de Impresión de Nueva Generación (NGPP), es la iniciativa de Microsoft para integrar la creación y visualización de documentos en el sistema operativo Windows.
 
-Para convertir archivos PDF a XPS, Aspose.PDF tiene la clase [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) que se utiliza como el segundo argumento del método [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) para generar el archivo XPS.
+Para convertir archivos PDF a XPS, Aspose.PDF tiene la clase [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) que se utiliza como el segundo argumento del método [Document.Save(..)](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save/index) para generar el archivo XPS.
 
 Desde la versión 24.2, Aspose.PDF ha implementado la conversión de PDF Buscable a XPS mientras mantiene el Texto Seleccionable en el XPS resultante. Para preservar el texto, es necesario establecer la propiedad XpsSaveOptions.SaveTransparentTexts en true.
 

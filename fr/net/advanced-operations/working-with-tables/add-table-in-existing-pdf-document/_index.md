@@ -80,7 +80,7 @@ sitemap:
 
 ## Création de Tableau en utilisant C\#
 
-Les tableaux sont importants lors de la manipulation de documents PDF. Ils offrent d'excellentes fonctionnalités pour afficher des informations de manière systématique. L'espace de noms Aspose.PDF contient des classes nommées [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), et [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) qui fournissent des fonctionnalités pour créer des tableaux lors de la génération de documents PDF à partir de zéro.
+Les tableaux sont importants lors de la manipulation de documents PDF. Ils offrent d'excellentes fonctionnalités pour afficher des informations de manière systématique. L'espace de noms Aspose.PDF contient des classes nommées [Table](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/fr/net/aspose.pdf/cell), et [Row](https://reference.aspose.com/pdf/fr/net/aspose.pdf/row) qui fournissent des fonctionnalités pour créer des tableaux lors de la génération de documents PDF à partir de zéro.
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
@@ -140,7 +140,7 @@ private static void AddTable()
 
 ### ColSpan et RowSpan dans les Tableaux
 
-Aspose.PDF for .NET fournit la propriété [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) pour fusionner les colonnes dans un tableau et la propriété [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) pour fusionner les lignes.
+Aspose.PDF for .NET fournit la propriété [ColSpan](https://reference.aspose.com/pdf/fr/net/aspose.pdf/cell/properties/colspan) pour fusionner les colonnes dans un tableau et la propriété [RowSpan](https://reference.aspose.com/pdf/fr/net/aspose.pdf/cell/properties/rowspan) pour fusionner les lignes.
 
 Nous utilisons la propriété `ColSpan` ou `RowSpan` sur l'objet `Cell` qui crée la cellule du tableau. Après avoir appliqué les propriétés requises, la cellule créée peut être ajoutée au tableau.
 
@@ -225,11 +225,11 @@ Dans la figure ci-dessus, vous pouvez voir que les bordures du tableau, de la li
 
 ### Bordures
 
-Pour définir les bordures des objets Table, [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) et [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), utilisez les propriétés Table.Border, Row.Border et Cell.Border. Les bordures des cellules peuvent également être définies en utilisant la propriété DefaultCellBorder de la classe [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) ou Row. Toutes les propriétés liées aux bordures discutées ci-dessus sont assignées à une instance de la classe Row, qui est créée en appelant son constructeur. La classe Row a de nombreuses surcharges qui prennent presque tous les paramètres nécessaires pour personnaliser la bordure.
+Pour définir les bordures des objets Table, [Row](https://reference.aspose.com/pdf/fr/net/aspose.pdf/row) et [Cell](https://reference.aspose.com/pdf/fr/net/aspose.pdf/cell), utilisez les propriétés Table.Border, Row.Border et Cell.Border. Les bordures des cellules peuvent également être définies en utilisant la propriété DefaultCellBorder de la classe [Table](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table) ou Row. Toutes les propriétés liées aux bordures discutées ci-dessus sont assignées à une instance de la classe Row, qui est créée en appelant son constructeur. La classe Row a de nombreuses surcharges qui prennent presque tous les paramètres nécessaires pour personnaliser la bordure.
 
 ### Marges ou Espacement
 
-L'espacement des cellules peut être géré en utilisant la propriété [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) de la classe Table. Toutes les propriétés liées à l'espacement sont assignées à une instance de la classe [MarginInfo](https://reference.aspose.com/pdf/net/aspose.pdf/margininfo) qui prend des informations sur les paramètres `Gauche`, `Droite`, `Haut` et `Bas` pour créer des marges personnalisées.
+L'espacement des cellules peut être géré en utilisant la propriété [DefaultCellPadding](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table/properties/defaultcellpadding) de la classe Table. Toutes les propriétés liées à l'espacement sont assignées à une instance de la classe [MarginInfo](https://reference.aspose.com/pdf/fr/net/aspose.pdf/margininfo) qui prend des informations sur les paramètres `Gauche`, `Droite`, `Haut` et `Bas` pour créer des marges personnalisées.
 
 Dans l'exemple suivant, la largeur de la bordure de la cellule est définie à 0,1 point, la largeur de la bordure du tableau est définie à 1 point et l'espacement des cellules est défini à 5 points.
 
@@ -369,7 +369,7 @@ private static void AddAutoFitToWindow()
 
 ### Obtenir la Largeur du Tableau
 
-Parfois, il est nécessaire d'obtenir la largeur du tableau de manière dynamique. La classe Aspose.PDF.Table a une méthode [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) à cet effet. Par exemple, vous n'avez pas défini explicitement la largeur des colonnes du tableau et avez défini [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) sur AutoFitToContent. Dans ce cas, vous pouvez obtenir la largeur du tableau comme suit.
+Parfois, il est nécessaire d'obtenir la largeur du tableau de manière dynamique. La classe Aspose.PDF.Table a une méthode [GetWidth](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table/methods/getwidth) à cet effet. Par exemple, vous n'avez pas défini explicitement la largeur des colonnes du tableau et avez défini [ColumnAdjustment](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table/properties/columnadjustment) sur AutoFitToContent. Dans ce cas, vous pouvez obtenir la largeur du tableau comme suit.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -561,7 +561,7 @@ Par défaut, les paragraphes sont ajoutés à la collection Paragraphs d'un obje
 
 ### Exemple : Comment Rendre un Tableau sur une Nouvelle Page en utilisant C\#
 
-Pour rendre un tableau sur une nouvelle page, utilisez la propriété [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) dans la classe BaseParagraph. L'extrait de code suivant montre comment.
+Pour rendre un tableau sur une nouvelle page, utilisez la propriété [IsInNewPage](https://reference.aspose.com/pdf/fr/net/aspose.pdf/baseparagraph/properties/isinnewpage) dans la classe BaseParagraph. L'extrait de code suivant montre comment.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

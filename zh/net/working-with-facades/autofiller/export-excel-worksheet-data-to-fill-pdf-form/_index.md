@@ -77,8 +77,8 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/zh/net/) 中提供了多种填写 PDF 表单的方法。您可以从 XML 文件、DFD、XFDF 导入数据，使用 API，甚至可以使用 Excel 工作表中的数据。
-我们将使用 [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) 方法从 [Aspose.Cells](https://docs.aspose.com//cells/net) 的 [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) 类中将数据导出到 DataTable 对象中。然后，我们需要使用 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 类的 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 方法将这些数据导入 PDF 表单。确保 DataTable 的列名与 PDF 表单上的字段名相同。
+[Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/zh/net/) 中提供了多种填写 PDF 表单的方法。您可以从 XML 文件、DFD、XFDF 导入数据，使用 API，甚至可以使用 Excel 工作表中的数据。
+我们将使用 [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) 方法从 [Aspose.Cells](https://docs.aspose.com//cells/net) 的 [Cells](https://reference.aspose.com/pdf/zh/net/aspose.pdf/cells) 类中将数据导出到 DataTable 对象中。然后，我们需要使用 [AutoFiller](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/autofiller) 类的 [ImportDataTable](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/autofiller/methods/importdatatable) 方法将这些数据导入 PDF 表单。确保 DataTable 的列名与 PDF 表单上的字段名相同。
 
 {{% /alert %}}
 
@@ -92,7 +92,7 @@ draft: false
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
-我们需要创建一个 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 类的对象，并绑定上述图片中的 PDF 表单，并使用 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 方法使用 DataTable 对象中的数据填写表单字段。
+我们需要创建一个 [AutoFiller](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/autofiller) 类的对象，并绑定上述图片中的 PDF 表单，并使用 [ImportDataTable](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/autofiller/methods/importdatatable) 方法使用 DataTable 对象中的数据填写表单字段。
 一旦调用该方法，将生成一个新的 PDF 表单文件，其中包含五页，表单根据 Excel 工作表中的数据填写。输入的 PDF 表单是单页的，而结果是五页，因为 Excel 工作表中的数据行数为 5。DataTable 类提供了使用工作表的第一行作为列名的能力。
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
@@ -216,5 +216,5 @@ private static System.Data.DataTable GenerateDataTable()
 ## 结论
 
 {{% alert color="primary" %}}
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 还提供了使用数据库中的数据填写 PDF 表单的能力，但此功能目前仅在 .NET 版本中支持。
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 还提供了使用数据库中的数据填写 PDF 表单的能力，但此功能目前仅在 .NET 版本中支持。
 {{% /alert %}}

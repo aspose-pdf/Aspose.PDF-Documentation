@@ -155,7 +155,7 @@ private static void AddImageToPDF()
 
 ## إضافة صورة في ملف PDF موجود (واجهات)
 
-هناك أيضًا طريقة بديلة وأسهل لإضافة صورة إلى ملف PDF. يمكنك استخدام طريقة [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) من فئة [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend). تتطلب طريقة [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) الصورة التي يجب إضافتها، ورقم الصفحة التي تحتاج إلى إضافة الصورة إليها ومعلومات الإحداثيات. بعد ذلك، احفظ ملف PDF المحدث باستخدام طريقة Close. تظهر مقتطفات الكود التالية كيفية إضافة صورة في ملف PDF موجود.
+هناك أيضًا طريقة بديلة وأسهل لإضافة صورة إلى ملف PDF. يمكنك استخدام طريقة [AddImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) من فئة [PdfFileMend](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend). تتطلب طريقة [AddImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) الصورة التي يجب إضافتها، ورقم الصفحة التي تحتاج إلى إضافة الصورة إليها ومعلومات الإحداثيات. بعد ذلك، احفظ ملف PDF المحدث باستخدام طريقة Close. تظهر مقتطفات الكود التالية كيفية إضافة صورة في ملف PDF موجود.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -324,7 +324,7 @@ private static void ExtractImageTypesFromPDF()
 
 ## التحكم في جودة الصورة
 
-من الممكن التحكم في جودة الصورة التي تتم إضافتها إلى ملف PDF. استخدم طريقة [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) المحملة في فئة [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection).
+من الممكن التحكم في جودة الصورة التي تتم إضافتها إلى ملف PDF. استخدم طريقة [Replace](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ximagecollection/replace/methods/1) المحملة في فئة [XImageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/ximagecollection).
 
 تظهر مقتطفات الكود التالية كيفية تحويل جميع صور المستند إلى JPEGs تستخدم جودة 80% للضغط.
 

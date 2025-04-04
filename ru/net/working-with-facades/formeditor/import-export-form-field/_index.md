@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Aspose.PDF for .NET предоставляет широкие возможности для создания и управления полями форм внутри PDF-документа. Используя этот API, вы можете программно заполнять поля форм внутри PDF-файла, заполнять поля форм путём [импорта данных из FDF в PDF-файл](/pdf/ru/net/import-and-export-data/), [импорта данных из XFDF в PDF-файл](/pdf/ru/net/import-and-export-data/), [импорта данных из XML в PDF-файл](/pdf/ru/net/import-and-export-data/) или даже импортировать данные из объекта [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF for .NET предоставляет широкие возможности для создания и управления полями форм внутри PDF-документа. Используя этот API, вы можете программно заполнять поля форм внутри PDF-файла, заполнять поля форм путём [импорта данных из FDF в PDF-файл](/pdf/ru/net/import-and-export-data/), [импорта данных из XFDF в PDF-файл](/pdf/ru/net/import-and-export-data/), [импорта данных из XML в PDF-файл](/pdf/ru/net/import-and-export-data/) или даже импортировать данные из объекта [System.Data.DataTable](https://reference.aspose.com/pdf/ru/net/aspose.pdf.table/importdatatable/methods/1).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

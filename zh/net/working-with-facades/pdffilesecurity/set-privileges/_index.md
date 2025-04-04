@@ -77,7 +77,7 @@ draft: false
 
 ## 在现有 PDF 文件上设置权限
 
-要设置 PDF 文件的权限，请创建一个 [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) 对象并调用 SetPrivilege 方法。您可以使用 DocumentPrivilege 对象指定权限，然后将此对象传递给 SetPrivilege 方法。以下代码片段演示了如何设置 PDF 文件的权限。
+要设置 PDF 文件的权限，请创建一个 [PdfFileSecurity](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity) 对象并调用 SetPrivilege 方法。您可以使用 DocumentPrivilege 对象指定权限，然后将此对象传递给 SetPrivilege 方法。以下代码片段演示了如何设置 PDF 文件的权限。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

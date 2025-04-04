@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) класс позволяет вам импортировать данные из XML файла в PDF файл, используя метод [ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.form/importxml/methods/1). Для импорта данных из XML вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form), а затем вызвать метод [ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxml/index), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как импортировать данные из XML файла.
+[Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form) класс позволяет вам импортировать данные из XML файла в PDF файл, используя метод [ImportXml](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.form/importxml/methods/1). Для импорта данных из XML вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form), а затем вызвать метод [ImportXml](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/importxml/index), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как импортировать данные из XML файла.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -104,7 +104,7 @@ private static void ImportDataFromXml()
 
 ## Экспорт данных в XML из PDF файла
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) класс позволяет вам экспортировать данные в XML файл из PDF файла, используя метод [ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml). Для экспорта данных в XML вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form), а затем вызвать метод [ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml), используя объект FileStream. Наконец, вы можете закрыть объект FileStream и освободить объект Form. Следующий фрагмент кода показывает, как экспортировать данные в XML файл.
+[Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form) класс позволяет вам экспортировать данные в XML файл из PDF файла, используя метод [ExportXml](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/exportxml). Для экспорта данных в XML вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form), а затем вызвать метод [ExportXml](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/exportxml), используя объект FileStream. Наконец, вы можете закрыть объект FileStream и освободить объект Form. Следующий фрагмент кода показывает, как экспортировать данные в XML файл.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -130,7 +130,7 @@ private static void ExportDataToXml()
 
 ## Импорт данных из FDF в PDF файл
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) класс позволяет вам импортировать данные из FDF файла в PDF файл, используя метод [ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf). Для импорта данных из FDF вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form), а затем вызвать метод [ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как импортировать данные из FDF файла.
+[Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form) класс позволяет вам импортировать данные из FDF файла в PDF файл, используя метод [ImportFdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/importfdf). Для импорта данных из FDF вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form), а затем вызвать метод [ImportFdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/importfdf), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как импортировать данные из FDF файла.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -159,7 +159,7 @@ private static void ImportDataFromPdfIntoPdf()
 
 ## Экспорт данных в FDF из PDF файла
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) класс позволяет вам экспортировать данные в FDF файл из PDF файла, используя метод [ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf). Для экспорта данных в FDF вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form), а затем вызвать метод [ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как экспортировать данные в FDF файл.
+[Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form) класс позволяет вам экспортировать данные в FDF файл из PDF файла, используя метод [ExportFdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/exportfdf). Для экспорта данных в FDF вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form), а затем вызвать метод [ExportFdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/exportfdf), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как экспортировать данные в FDF файл.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -188,7 +188,7 @@ private static void ExportDataToPdfFromPdf()
 
 ## Импорт данных из XFDF в PDF файл
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) класс позволяет вам импортировать данные из XFDF файла в PDF файл, используя метод [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf). Для импорта данных из XFDF вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form), а затем вызвать метод [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как импортировать данные из XFDF файла.
+[Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form) класс позволяет вам импортировать данные из XFDF файла в PDF файл, используя метод [ImportXfdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/importxfdf). Для импорта данных из XFDF вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form), а затем вызвать метод [ImportXfdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/importxfdf), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как импортировать данные из XFDF файла.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -217,7 +217,7 @@ private static void ImportDataFromXFDIntoPdf()
 
 ## Экспорт данных в XFDF из PDF файла
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) класс позволяет вам экспортировать данные в XFDF файл из PDF файла, используя метод [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf). Для экспорта данных в XFDF вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form), а затем вызвать метод [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как экспортировать данные в XFDF файл.
+[Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form) класс позволяет вам экспортировать данные в XFDF файл из PDF файла, используя метод [ExportXfdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/exportxfdf). Для экспорта данных в XFDF вам нужно создать объект класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form), а затем вызвать метод [ExportXfdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/exportxfdf), используя объект FileStream. Наконец, вы можете сохранить PDF файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/save) класса [Form](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/form). Следующий фрагмент кода показывает, как экспортировать данные в XFDF файл.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

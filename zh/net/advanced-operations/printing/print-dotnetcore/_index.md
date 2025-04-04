@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
  
 自 24.4 版本以来，可以在打印对话框中按 PDF 页面大小选择纸张来源。下一个代码片段使得可以根据 PDF 的页面大小选择打印机托盘。
 
-此偏好可以通过 [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/) 属性开启和关闭。
+此偏好可以通过 [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/picktraybypdfsize/) 属性开启和关闭。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## 打印对话框预设页面缩放
 
-下一个代码片段旨在确保 [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) 属性正确应用并保存在 PDF 中。
+下一个代码片段旨在确保 [PrintScaling](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/printscaling/) 属性正确应用并保存在 PDF 中。
 
-[PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) 属性已添加到 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 类中，值为 `Aspose.Pdf.PrintScaling.AppDefault` 或 `Aspose.Pdf.PrintScaling.None`。
+[PrintScaling](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/printscaling/) 属性已添加到 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/) 类中，值为 `Aspose.Pdf.PrintScaling.AppDefault` 或 `Aspose.Pdf.PrintScaling.None`。
 
 在为此文档显示打印对话框时应选择的页面缩放选项。有效值为 `None`，表示不进行页面缩放，以及 `AppDefault`，表示符合阅读器的默认打印缩放。如果此条目具有无法识别的值，则应使用 `AppDefault`。默认值：`AppDefault`。
 

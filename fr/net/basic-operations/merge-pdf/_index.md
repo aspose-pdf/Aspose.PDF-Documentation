@@ -89,10 +89,10 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 Pour concaténer deux fichiers PDF :
 
-1. Créez deux objets [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), chacun contenant l'un des fichiers PDF d'entrée.
-1. Ensuite, appelez la méthode Add de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) pour l'objet Document auquel vous souhaitez ajouter l'autre fichier PDF.
+1. Créez deux objets [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document), chacun contenant l'un des fichiers PDF d'entrée.
+1. Ensuite, appelez la méthode Add de la collection [PageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection) pour l'objet Document auquel vous souhaitez ajouter l'autre fichier PDF.
 1. Passez la collection PageCollection de l'objet Document second à la méthode Add de la première collection PageCollection.
-1. Enfin, enregistrez le fichier PDF de sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Enfin, enregistrez le fichier PDF de sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4).
 
 Le code suivant montre comment concaténer des fichiers PDF.
 

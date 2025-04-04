@@ -91,9 +91,9 @@ Aspose.PDF for .NET поддерживает возможность цифров
 
 Мы можем использовать следующие классы и методы для подписания PDF
 
-- Класс [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature).
-- Перечисление [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions).
-- Свойство [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) в классе [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature).
+- Класс [DocMDPSignature](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/docmdpsignature).
+- Перечисление [DocMDPAccessPermissions](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/docmdpaccesspermissions).
+- Свойство [IsCertified](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) в классе [PdfFileSignature](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesignature).
 
 Чтобы создать цифровую подпись на основе сертификатов PKCS12 (расширения файлов .p12, pfx), вы должны создать экземпляр класса `PdfFileSignature`, передав ему объект документа.
 Затем вы должны указать желаемый метод цифровой подписи, создав объект одного из классов:
@@ -203,7 +203,7 @@ private static void Verify()
 
 Aspose.PDF for .NET поддерживает цифровую подпись PDF с сервером временных меток или веб-службой.
 
-Чтобы выполнить это требование, в пространство имен Aspose.PDF был добавлен класс [TimestampSettings](https://reference.aspose.com/pdf/net/aspose.pdf/timestampsettings). Пожалуйста, посмотрите следующий фрагмент кода, который получает временную метку и добавляет ее к PDF-документу:
+Чтобы выполнить это требование, в пространство имен Aspose.PDF был добавлен класс [TimestampSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf/timestampsettings). Пожалуйста, посмотрите следующий фрагмент кода, который получает временную метку и добавляет ее к PDF-документу:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

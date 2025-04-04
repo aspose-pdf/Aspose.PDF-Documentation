@@ -83,7 +83,7 @@ sitemap:
 
 ## 添加曲线对象
 
-图形[曲线](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve)是投影线的连接联合，每条线在普通双点上与三条其他线相交。
+图形[曲线](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/curve)是投影线的连接联合，每条线在普通双点上与三条其他线相交。
 
 Aspose.PDF for .NET展示了如何在您的图形中使用贝塞尔曲线。
 贝塞尔曲线广泛用于计算机图形学中建模平滑曲线。曲线完全包含在其控制点的凸包中，这些点可以图形化显示并用于直观地操作曲线。
@@ -93,10 +93,10 @@ Aspose.PDF for .NET展示了如何在您的图形中使用贝塞尔曲线。
 
 请按照以下步骤操作：
 
-1. 创建[文档](https://reference.aspose.com/pdf/net/aspose.pdf/document)实例。
-1. 创建具有特定尺寸的[绘图对象](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)。
-1. 为绘图对象设置[边框](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border)。
-1. 将[图形](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph)对象添加到页面的段落集合中。
+1. 创建[文档](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)实例。
+1. 创建具有特定尺寸的[绘图对象](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing)。
+1. 为绘图对象设置[边框](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph/properties/border)。
+1. 将[图形](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/graph)对象添加到页面的段落集合中。
 1. 保存我们的PDF文件。
 
 ```csharp

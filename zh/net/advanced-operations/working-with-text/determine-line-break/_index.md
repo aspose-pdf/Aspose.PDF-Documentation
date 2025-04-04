@@ -82,7 +82,7 @@ sitemap:
 
 ## 跟踪多行 TextFragment 的换行
 
-Aspose.PDF for .NET 提供了多行文本片段在文本添加场景中的日志（跟踪）后台处理（换行）。您可以使用 [GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)() 方法的 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 类，如下所示，以跟踪文本片段的换行：
+Aspose.PDF for .NET 提供了多行文本片段在文本添加场景中的日志（跟踪）后台处理（换行）。您可以使用 [GetNotifications](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/methods/getnotifications)() 方法的 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 类，如下所示，以跟踪文本片段的换行：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

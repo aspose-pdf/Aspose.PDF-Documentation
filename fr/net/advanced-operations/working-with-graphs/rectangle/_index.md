@@ -83,22 +83,22 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Ajouter un objet Rectangle
 
-Aspose.PDF for .NET prend en charge la fonctionnalité d'ajout d'objets graphiques (par exemple graphique, ligne, rectangle, etc.) aux documents PDF. Vous avez également la possibilité d'ajouter un objet [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) où vous pouvez également remplir l'objet rectangle avec une certaine couleur, contrôler le Z-Order, ajouter un remplissage de couleur dégradée, etc.
+Aspose.PDF for .NET prend en charge la fonctionnalité d'ajout d'objets graphiques (par exemple graphique, ligne, rectangle, etc.) aux documents PDF. Vous avez également la possibilité d'ajouter un objet [Rectangle](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/rectangle) où vous pouvez également remplir l'objet rectangle avec une certaine couleur, contrôler le Z-Order, ajouter un remplissage de couleur dégradée, etc.
 
 Tout d'abord, examinons la possibilité de créer un objet Rectangle.
 
 Suivez les étapes ci-dessous :
 
-1. Créez un nouveau [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) PDF.
-1. Ajoutez une [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) à la collection de pages du fichier PDF.
-1. Ajoutez un [fragment de texte](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) à la collection de paragraphes de l'instance de page.
-1. Créez une instance de [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph).
-1. Définissez la bordure pour l'[objet de dessin](https://reference.aspose.com/pdf/net/aspose.pdf.drawing).
+1. Créez un nouveau [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) PDF.
+1. Ajoutez une [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) à la collection de pages du fichier PDF.
+1. Ajoutez un [fragment de texte](https://reference.aspose.com/pdf/fr/net/aspose.pdf/texfragment) à la collection de paragraphes de l'instance de page.
+1. Créez une instance de [Graph](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/graph).
+1. Définissez la bordure pour l'[objet de dessin](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing).
 1. Créez une instance de Rectangle.
 
-1. Ajoutez un objet [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) à la collection de formes de l'objet Graph.
+1. Ajoutez un objet [Rectangle](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/rectangle) à la collection de formes de l'objet Graph.
 1. Ajoutez l'objet graphique à la collection de paragraphes de l'instance de page.
-1. Ajoutez un [fragment de texte](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) à la collection de paragraphes de l'instance de page.
+1. Ajoutez un [fragment de texte](https://reference.aspose.com/pdf/fr/net/aspose.pdf/texfragment) à la collection de paragraphes de l'instance de page.
 
 1. Et enregistrez votre fichier PDF.
 
@@ -146,7 +146,7 @@ private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float w
 
 Aspose.PDF for .NET offre également la fonctionnalité de remplir un objet rectangle avec une certaine couleur.
 
-Le code suivant montre comment ajouter un objet [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) qui est rempli de couleur.
+Le code suivant montre comment ajouter un objet [Rectangle](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/rectangle) qui est rempli de couleur.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -194,7 +194,7 @@ Regardez le résultat du rectangle rempli d'une couleur unie :
 
 Aspose.PDF for .NET prend en charge la fonctionnalité d'ajout d'objets graphiques aux documents PDF et il est parfois nécessaire de remplir des objets graphiques avec une couleur dégradée. Pour remplir des objets graphiques avec une couleur dégradée, nous devons définir setPatterColorSpace avec l'objet gradientAxialShading comme suit.
 
-Le code suivant montre comment ajouter un objet [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) qui est rempli avec une couleur dégradée.
+Le code suivant montre comment ajouter un objet [Rectangle](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/rectangle) qui est rempli avec une couleur dégradée.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -243,7 +243,7 @@ private static void CreateFilledRectangleGradientFill()
 
 ## Créer un Rectangle avec un canal de couleur alpha
 
-Aspose.PDF for .NET prend en charge le remplissage d'un objet rectangle avec une certaine couleur. Un objet rectangle peut également avoir un canal de couleur alpha pour donner une apparence transparente. Le code suivant montre comment ajouter un objet [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) avec un canal de couleur alpha.
+Aspose.PDF for .NET prend en charge le remplissage d'un objet rectangle avec une certaine couleur. Un objet rectangle peut également avoir un canal de couleur alpha pour donner une apparence transparente. Le code suivant montre comment ajouter un objet [Rectangle](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/rectangle) avec un canal de couleur alpha.
 
 Les pixels de l'image peuvent stocker des informations sur leur opacité ainsi que sur la valeur de couleur. Cela permet de créer des images avec des zones transparentes ou semi-transparentes.
 
@@ -304,7 +304,7 @@ private static void RectangleFilled_AlphaChannel()
 
 Aspose.PDF for .NET prend en charge la fonctionnalité d'ajout d'objets graphiques (par exemple graphique, ligne, rectangle, etc.) aux documents PDF. Lors de l'ajout de plus d'une instance du même objet dans le fichier PDF, nous pouvons contrôler leur rendu en spécifiant le Z-Order. Le Z-Order est également utilisé lorsque nous devons rendre des objets les uns sur les autres.
 
-Le code suivant montre les étapes pour rendre des objets [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) les uns sur les autres.
+Le code suivant montre les étapes pour rendre des objets [Rectangle](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/rectangle) les uns sur les autres.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

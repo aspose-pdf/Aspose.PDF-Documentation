@@ -82,7 +82,7 @@ Les artefacts dans PDF sont des objets graphiques ou d’autres éléments qui n
 
 L’objectif des artefacts dans PDF est de permettre la distinction entre les éléments de contenu et les éléments non liés au contenu. Cela est important pour l’accessibilité, car les lecteurs d’écran et autres technologies d’assistance peuvent ignorer les artefacts et se concentrer sur le contenu pertinent. Les artefacts peuvent également améliorer la performance et la qualité des documents PDF, puisqu’ils peuvent être omis lors de l’impression, de la recherche ou de la copie.
 
-Pour créer un élément en tant qu’artefact dans un PDF, vous devez utiliser la classe [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact).
+Pour créer un élément en tant qu’artefact dans un PDF, vous devez utiliser la classe [Artifact](https://reference.aspose.com/pdf/fr/net/aspose.pdf/artifact).
 Il contient les propriétés utiles suivantes:
 
 - **Artifact.Type** – renvoie le type d’artefact (prend en charge les valeurs de l’énumération Artifact.ArtifactType, où les valeurs incluent Background, Layout, Page, Pagination et Undefined).
@@ -97,17 +97,17 @@ Il contient les propriétés utiles suivantes:
 
 Les classes suivantes peuvent également être utiles pour travailler avec des artefacts:
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/watermarkartifact/)
+- [ArtifactCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/artifactcollection)
+- [BackgroundArtifact](https://reference.aspose.com/pdf/fr/net/aspose.pdf/backgroundartifact/)
+- [HeaderArtifact](https://reference.aspose.com/pdf/fr/net/aspose.pdf/headerartifact/)
+- [FooterArtifact](https://reference.aspose.com/pdf/fr/net/aspose.pdf/footerartifact/)
+- [WatermarkArtifact](https://reference.aspose.com/pdf/fr/net/aspose.pdf/watermarkartifact/)
 
 ## Travailler avec les filigranes existants
 
 Un filigrane créé avec Adobe Acrobat est appelé un artefact (tel que décrit dans la section 14.8.2.2 Contenu réel et artefacts de la spécification PDF).
 
-Pour obtenir tous les filigranes d'une page particulière, la classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) possède la propriété Artifacts.
+Pour obtenir tous les filigranes d'une page particulière, la classe [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) possède la propriété Artifacts.
 
 L'extrait de code suivant montre comment obtenir tous les filigranes sur la première page d'un fichier PDF.
 
@@ -140,7 +140,7 @@ private static void ExtractWatermarkFromPDF()
 
 ## Travailler avec les arrière-plans en tant qu’artefacts
 
-Les images d'arrière-plan peuvent être utilisées pour ajouter un filigrane ou un autre design subtil aux documents. Dans Aspose.PDF for .NET, chaque document PDF est une collection de pages et chaque page contient une collection d’artefacts. La classe [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) peut être utilisée pour ajouter une image d'arrière-plan à un objet page.
+Les images d'arrière-plan peuvent être utilisées pour ajouter un filigrane ou un autre design subtil aux documents. Dans Aspose.PDF for .NET, chaque document PDF est une collection de pages et chaque page contient une collection d’artefacts. La classe [BackgroundArtifact](https://reference.aspose.com/pdf/fr/net/aspose.pdf/backgroundartifact) peut être utilisée pour ajouter une image d'arrière-plan à un objet page.
 
 L'extrait de code suivant montre comment ajouter une image d'arrière-plan aux pages PDF en utilisant l'objet BackgroundArtifact.
 

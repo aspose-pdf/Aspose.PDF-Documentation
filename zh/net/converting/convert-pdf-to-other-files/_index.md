@@ -93,7 +93,7 @@ EPUB 旨在用于可重排内容，这意味着 EPUB 阅读器可以针对特定
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
-Aspose.PDF for .NET 还支持将 PDF 文档转换为 EPUB 格式的功能。Aspose.PDF for .NET 有一个名为 EpubSaveOptions 的类，可以作为 [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法的第二个参数，用于生成 EPUB 文件。
+Aspose.PDF for .NET 还支持将 PDF 文档转换为 EPUB 格式的功能。Aspose.PDF for .NET 有一个名为 EpubSaveOptions 的类，可以作为 [`Document.Save(..)`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法的第二个参数，用于生成 EPUB 文件。
 请尝试使用以下代码片段使用 C# 完成此要求。
 
 ```csharp
@@ -130,7 +130,7 @@ Aspose.PDF for .NET 向您提供在线免费应用程序 ["PDF to LaTeX"](https:
 [![Aspose.PDF 将 PDF 转换为 LaTeX/TeX 的免费应用](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-要将 PDF 文件转换为 TeX，Aspose.PDF 提供了类 [LaTeXSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions)，该类提供了属性 OutDirectoryPath，用于在转换过程中保存临时图像。
+要将 PDF 文件转换为 TeX，Aspose.PDF 提供了类 [LaTeXSaveOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/latexsaveoptions)，该类提供了属性 OutDirectoryPath，用于在转换过程中保存临时图像。
 
 以下代码片段展示了如何使用 C# 将 PDF 文件转换为 TEX 格式的过程。
 
@@ -165,7 +165,7 @@ private static void ConvertPDFtoTeX()
 
 ### 将整个 PDF 文档转换为文本文件
 
-您可以使用 [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber/methods/visit/index) 方法将 PDF 文档转换为 TXT 文件，方法属于 [TextAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber) 类。
+您可以使用 [Visit](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textabsorber/methods/visit/index) 方法将 PDF 文档转换为 TXT 文件，方法属于 [TextAbsorber](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textabsorber) 类。
 
 以下代码片段解释了如何从所有页面中提取文本。
 
@@ -239,7 +239,7 @@ Aspose.PDF for .NET 向您提供在线免费应用程序 ["PDF to XPS"](https://
 
 XPS 文件类型主要与微软公司的 XML Paper Specification 相关。XML Paper Specification (XPS)，前称 Metro，并包含下一代打印路径 (NGPP) 营销概念，是微软将文档创建和查看集成到 Windows 操作系统中的倡议。
 
-要将 PDF 文件转换为 XPS，Aspose.PDF 提供了类 [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions)，该类用作 [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法的第二个参数，以生成 XPS 文件。
+要将 PDF 文件转换为 XPS，Aspose.PDF 提供了类 [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions)，该类用作 [Document.Save(..)](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法的第二个参数，以生成 XPS 文件。
 
 自 24.2 版本以来，Aspose.PDF 实现了将可搜索 PDF 转换为 XPS，同时保持结果 XPS 中的文本可选择。为了保留文本，必须将 XpsSaveOptions.SaveTransparentTexts 属性设置为 true。
 

@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "C#, PDF actions, hyperlink creation, LinkAnnotation, LocalHyperlink, FreeTextAnnotation, document open action, XYZExplicitDestination, Aspose.PDF, PDF manipulation",
-    "wordcount": "2007",
+    "wordcount": "3425",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -178,6 +178,97 @@ private static void AddHyperlink()
     textAnnotation.Border = border;
     // Add FreeText annotation to annotations collection of first page of Document
     document.Pages[1].Annotations.Add(textAnnotation);
+
+    // Save PDF document
+    document.Save(dataDir + "AddHyperlink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+Another common scenario is to find a given text in the document using TextFragmentAbsorber and set its region as hyperlinks to the site. Below is a code snippet that implements this.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHyperlinkForExistingText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf"))
+    {
+        // Get page
+        var page = document.Pages[1];
+
+        // The text in the document for which we want to create a link
+        string textForLink = "Portable Document Format";
+
+        // Finding the location of text on a page
+        var textFragmentAbsosrber = new Aspose.Pdf.Text.TextFragmentAbsorber(textForLink);
+        page.Accept(textFragmentAbsosrber);
+        foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
+        {
+            // Create Link annotation object
+            var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, textFragment.Rectangle);
+            // Create border object for LinkAnnotation
+            var border = new Aspose.Pdf.Annotations.Border(link);
+            // Set the border width value as 0
+            border.Width = 0;
+            // Set the border for LinkAnnotation
+            link.Border = border;
+            // Specify the link type as remote URI
+            link.Action = new Aspose.Pdf.Annotations.GoToURIAction("https://www.pdfa-inc.org/");
+            // Add link annotation to annotations collection of first page of PDF file
+            page.Annotations.Add(link);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddHyperlink_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHyperlinkForExistingText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf");
+
+    // Get page
+    var page = document.Pages[1];
+
+    // The text in the document for which we want to create a link
+    string textForLink = "Portable Document Format";
+
+    // Finding the location of text on a page
+    var textFragmentAbsosrber = new Aspose.Pdf.Text.TextFragmentAbsorber(textForLink);
+    page.Accept(textFragmentAbsosrber);
+    foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
+    {
+        // Create Link annotation object
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, textFragment.Rectangle);
+        // Create border object for LinkAnnotation
+        var border = new Aspose.Pdf.Annotations.Border(link);
+        // Set the border width value as 0
+        border.Width = 0;
+        // Set the border for LinkAnnotation
+        link.Border = border;
+        // Specify the link type as remote URI
+        link.Action = new Aspose.Pdf.Annotations.GoToURIAction("https://www.pdfa-inc.org/");
+        // Add link annotation to annotations collection of first page of PDF file
+        page.Annotations.Add(link);
+    }
 
     // Save PDF document
     document.Save(dataDir + "AddHyperlink_out.pdf");

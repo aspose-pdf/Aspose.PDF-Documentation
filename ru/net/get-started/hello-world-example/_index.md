@@ -86,11 +86,11 @@ Aspose.PDF for .NET — это многофункциональный PDF API, �
 
 Ниже приведён фрагмент кода, который следует этим шагам:
 
-1. Создать объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Добавить [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) к объекту документа.
-1. Создать [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) объект.
-1. Добавить TextFragment в [Paragraph](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) коллекцию страницы.
-1. [Сохранить](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) результирующий PDF-документ.
+1. Создать объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Добавить [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) к объекту документа.
+1. Создать [TextFragment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textfragment) объект.
+1. Добавить TextFragment в [Paragraph](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/properties/paragraphs) коллекцию страницы.
+1. [Сохранить](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4) результирующий PDF-документ.
 
 Приведённый ниже фрагмент кода представляет собой программу Hello World, демонстрирующую работу API Aspose.PDF for .NET.
 

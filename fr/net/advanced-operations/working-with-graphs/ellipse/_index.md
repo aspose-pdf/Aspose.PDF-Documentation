@@ -83,7 +83,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Ajouter un objet Ellipse
 
-Aspose.PDF for .NET prend en charge l'ajout d'objets [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) aux documents PDF. Il offre également la fonctionnalité de remplir un objet ellipse avec une certaine couleur.
+Aspose.PDF for .NET prend en charge l'ajout d'objets [Ellipse](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/ellipse) aux documents PDF. Il offre également la fonctionnalité de remplir un objet ellipse avec une certaine couleur.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,7 +133,7 @@ private static void Ellipse()
 
 ## Créer un objet Ellipse rempli
 
-Le code suivant montre comment ajouter un objet [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) qui est rempli de couleur.
+Le code suivant montre comment ajouter un objet [Ellipse](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/ellipse) qui est rempli de couleur.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

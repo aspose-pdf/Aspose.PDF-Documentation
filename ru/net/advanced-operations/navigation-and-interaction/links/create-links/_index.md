@@ -85,14 +85,14 @@ sitemap:
 
 Добавляя ссылку на приложение в документ, можно связать документ с приложениями. Это полезно, когда вы хотите, чтобы читатели выполнили определённое действие в определённой точке учебного пособия или создать многофункциональный документ. Чтобы создать ссылку на приложение:
 
-1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Получите нужную [страницу](https://reference.aspose.com/pdf/net/aspose.pdf/page).
-1. Создайте объект [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation), используя объекты Page и [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
-1. Установите атрибуты ссылки с помощью объекта [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
-1. Также установите свойство Action объекта [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction).
-1. При создании объекта [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) укажите приложение, которое хотите запустить.
-1. Добавьте ссылку в коллекцию [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations) объекта Page.
-1. Наконец, сохраните обновлённый PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта Document.
+1. Создайте объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Получите нужную [страницу](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page).
+1. Создайте объект [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation), используя объекты Page и [Rectangle](https://reference.aspose.com/pdf/ru/net/aspose.pdf/rectangle).
+1. Установите атрибуты ссылки с помощью объекта [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation).
+1. Также установите свойство Action объекта [LaunchAction](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/launchaction).
+1. При создании объекта [LaunchAction](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/launchaction) укажите приложение, которое хотите запустить.
+1. Добавьте ссылку в коллекцию [Annotations](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/properties/annotations) объекта Page.
+1. Наконец, сохраните обновлённый PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save) объекта Document.
 
 Следующий фрагмент кода показывает, как создать ссылку на приложение в PDF-файле.
 
@@ -151,14 +151,14 @@ private static void CreateLinkAnnotation()
 
 Aspose.PDF for .NET позволяет добавить ссылку на внешний PDF-файл, чтобы связать несколько документов вместе. Чтобы создать ссылку на PDF-документ:
 
-1. Сначала создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Затем получите конкретную [страницу](https://reference.aspose.com/pdf/net/aspose.pdf/page), на которую хотите добавить ссылку.
-1. Создайте объект [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation), используя объекты Page и [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
-1. Установите атрибуты ссылки с помощью объекта [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
-1. Установите свойство Action для объекта [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction).
+1. Сначала создайте объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Затем получите конкретную [страницу](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page), на которую хотите добавить ссылку.
+1. Создайте объект [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation), используя объекты Page и [Rectangle](https://reference.aspose.com/pdf/ru/net/aspose.pdf/rectangle).
+1. Установите атрибуты ссылки с помощью объекта [LinkAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/linkannotation).
+1. Установите свойство Action для объекта [GoToRemoteAction](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/gotoremoteaction).
 1. Создавая объект GoToRemoteAction, укажите PDF-файл, который должен быть запущен, а также страницу, которую он должен открыть.
 1. Добавьте ссылку в коллекцию Annotations объекта Page.
-1. Сохраните обновлённый PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта Document.
+1. Сохраните обновлённый PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save) объекта Document.
 
 Следующий фрагмент кода показывает, как создать ссылку на PDF-документ в PDF-файле.
 

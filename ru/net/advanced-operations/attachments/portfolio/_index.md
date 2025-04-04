@@ -81,7 +81,7 @@ sitemap:
 
 ## Как создать портфолио PDF
 
-Aspose.PDF позволяет создавать документы портфолио PDF с использованием класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Добавьте файл в объект Document.Collection после его получения с помощью класса [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Когда файлы будут добавлены, используйте метод Save класса Document для сохранения документа портфолио.
+Aspose.PDF позволяет создавать документы портфолио PDF с использованием класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Добавьте файл в объект Document.Collection после его получения с помощью класса [FileSpecification](https://reference.aspose.com/pdf/ru/net/aspose.pdf/filespecification). Когда файлы будут добавлены, используйте метод Save класса Document для сохранения документа портфолио.
 
 В следующем примере используется файл Microsoft Excel, документ Word и файл изображения для создания портфолио PDF.
 
@@ -129,7 +129,7 @@ private static void CreatePortfolio()
 
 Портфолио PDF позволяет объединить содержимое из различных источников (например, PDF, Word, Excel, файлы JPEG) в один унифицированный контейнер. Исходные файлы сохраняют свою индивидуальность, но собираются в файл портфолио PDF. Пользователи могут открывать, читать, редактировать и форматировать каждый компонентный файл независимо от других компонентных файлов.
 
-Aspose.PDF позволяет создавать документы PDF Portfolio с использованием класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) и предлагает возможность извлекать файлы из PDF-портфолио.
+Aspose.PDF позволяет создавать документы PDF Portfolio с использованием класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) и предлагает возможность извлекать файлы из PDF-портфолио.
 
 Следующий фрагмент кода показывает, как извлечь файлы из PDF-портфолио.
 

@@ -91,9 +91,9 @@ lastmod: "2021-06-05"
 
 ## دمج ملفات PDF باستخدام مسارات الملفات
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) هي الفئة في [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) التي تتيح لك دمج عدة ملفات PDF. يمكنك دمج الملفات باستخدام FileStreams وكذلك باستخدام MemoryStreams. في هذه المقالة، سيتم شرح عملية دمج الملفات باستخدام MemoryStreams ثم عرضها باستخدام مقتطف الشيفرة.
+[PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) هي الفئة في [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) التي تتيح لك دمج عدة ملفات PDF. يمكنك دمج الملفات باستخدام FileStreams وكذلك باستخدام MemoryStreams. في هذه المقالة، سيتم شرح عملية دمج الملفات باستخدام MemoryStreams ثم عرضها باستخدام مقتطف الشيفرة.
 
-يمكن استخدام طريقة [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) لدمج ملفين PDF. تتيح لك طريقة [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) تمرير ثلاثة معلمات: ملف PDF المدخل الأول، ملف PDF المدخل الثاني، وملف PDF الناتج. يحتوي ملف PDF الناتج النهائي على كلا ملفي PDF المدخلين.
+يمكن استخدام طريقة [Concatenate](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) لدمج ملفين PDF. تتيح لك طريقة [Concatenate](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) تمرير ثلاثة معلمات: ملف PDF المدخل الأول، ملف PDF المدخل الثاني، وملف PDF الناتج. يحتوي ملف PDF الناتج النهائي على كلا ملفي PDF المدخلين.
 
 يوضح مقتطف الشيفرة C# التالي كيفية دمج ملفات PDF باستخدام مسارات الملفات.
 
@@ -129,7 +129,7 @@ private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 
 ## دمج عدة ملفات PDF باستخدام MemoryStreams
 
-تأخذ طريقة [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) ملفات PDF المصدر وملف PDF الوجهة كمعلمات. يمكن أن تكون هذه المعلمات إما مسارات إلى ملفات PDF على القرص أو يمكن أن تكون MemoryStreams. الآن، في هذا المثال، سنقوم أولاً بإنشاء تدفقين لقراءة ملفات PDF من القرص. ثم سنقوم بتحويل هذه الملفات إلى مصفوفات بايت. سيتم تحويل هذه المصفوفات البايتية من ملفات PDF إلى MemoryStreams. بمجرد أن نحصل على MemoryStreams من ملفات PDF، سنكون قادرين على تمريرها إلى طريقة الدمج ودمجها في ملف ناتج واحد.
+تأخذ طريقة [Concatenate](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) ملفات PDF المصدر وملف PDF الوجهة كمعلمات. يمكن أن تكون هذه المعلمات إما مسارات إلى ملفات PDF على القرص أو يمكن أن تكون MemoryStreams. الآن، في هذا المثال، سنقوم أولاً بإنشاء تدفقين لقراءة ملفات PDF من القرص. ثم سنقوم بتحويل هذه الملفات إلى مصفوفات بايت. سيتم تحويل هذه المصفوفات البايتية من ملفات PDF إلى MemoryStreams. بمجرد أن نحصل على MemoryStreams من ملفات PDF، سنكون قادرين على تمريرها إلى طريقة الدمج ودمجها في ملف ناتج واحد.
 
 يوضح مقتطف الشيفرة C# التالي كيفية دمج عدة ملفات PDF باستخدام MemoryStreams:
 
@@ -187,7 +187,7 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
 
 ## دمج مصفوفة من ملفات PDF باستخدام مسارات الملفات
 
-إذا كنت ترغب في دمج عدة ملفات PDF، يمكنك استخدام التحميل الزائد لطريقة [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) التي تتيح لك تمرير مصفوفة من ملفات PDF. يتم حفظ الناتج النهائي كملف مدمج تم إنشاؤه من جميع الملفات في المصفوفة. يوضح مقتطف الشيفرة C# التالي كيفية دمج مصفوفة من ملفات PDF باستخدام مسارات الملفات.
+إذا كنت ترغب في دمج عدة ملفات PDF، يمكنك استخدام التحميل الزائد لطريقة [Concatenate](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) التي تتيح لك تمرير مصفوفة من ملفات PDF. يتم حفظ الناتج النهائي كملف مدمج تم إنشاؤه من جميع الملفات في المصفوفة. يوضح مقتطف الشيفرة C# التالي كيفية دمج مصفوفة من ملفات PDF باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
 
 ## دمج مصفوفة من ملفات PDF باستخدام التدفقات
 
-لا يقتصر دمج مصفوفة من ملفات PDF على الملفات الموجودة فقط على القرص. يمكنك أيضًا دمج مصفوفة من ملفات PDF من التدفقات. إذا كنت ترغب في دمج عدة ملفات PDF، يمكنك استخدام التحميل الزائد المناسب لطريقة [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). أولاً، تحتاج إلى إنشاء مصفوفة من التدفقات المدخلة وتدفق واحد لملف PDF الناتج ثم استدعاء طريقة [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). سيتم حفظ الناتج في تدفق الناتج. يوضح مقتطف الشيفرة C# التالي كيفية دمج مصفوفة من ملفات PDF باستخدام التدفقات.
+لا يقتصر دمج مصفوفة من ملفات PDF على الملفات الموجودة فقط على القرص. يمكنك أيضًا دمج مصفوفة من ملفات PDF من التدفقات. إذا كنت ترغب في دمج عدة ملفات PDF، يمكنك استخدام التحميل الزائد المناسب لطريقة [Concatenate](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). أولاً، تحتاج إلى إنشاء مصفوفة من التدفقات المدخلة وتدفق واحد لملف PDF الناتج ثم استدعاء طريقة [Concatenate](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). سيتم حفظ الناتج في تدفق الناتج. يوضح مقتطف الشيفرة C# التالي كيفية دمج مصفوفة من ملفات PDF باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -267,7 +267,7 @@ private static void ConcatenatingAllPdfFilesInParticularFolder()
 
 ## دمج نماذج PDF والحفاظ على أسماء الحقول فريدة
 
-تقدم فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) في [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) القدرة على دمج ملفات PDF. الآن، إذا كانت ملفات PDF التي سيتم دمجها تحتوي على حقول نموذج بأسماء حقول مشابهة، توفر Aspose.PDF ميزة الحفاظ على الحقول في ملف PDF الناتج كفريدة، ويمكنك أيضًا تحديد اللاحقة لجعل أسماء الحقول فريدة. ستجعل خاصية [KeepFieldsUnique](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) من [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) أسماء الحقول فريدة عند دمج نماذج PDF. أيضًا، يمكن استخدام خاصية [UniqueSuffix](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) من PdfFileEditor لتحديد تنسيق اللاحقة المحدد من قبل المستخدم الذي يضاف إلى اسم الحقل لجعله فريدًا عند دمج النماذج. يجب أن تحتوي هذه السلسلة على جزء `%NUM%` الذي سيتم استبداله بأرقام في الملف الناتج.
+تقدم فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) في [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) القدرة على دمج ملفات PDF. الآن، إذا كانت ملفات PDF التي سيتم دمجها تحتوي على حقول نموذج بأسماء حقول مشابهة، توفر Aspose.PDF ميزة الحفاظ على الحقول في ملف PDF الناتج كفريدة، ويمكنك أيضًا تحديد اللاحقة لجعل أسماء الحقول فريدة. ستجعل خاصية [KeepFieldsUnique](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) من [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) أسماء الحقول فريدة عند دمج نماذج PDF. أيضًا، يمكن استخدام خاصية [UniqueSuffix](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) من PdfFileEditor لتحديد تنسيق اللاحقة المحدد من قبل المستخدم الذي يضاف إلى اسم الحقل لجعله فريدًا عند دمج النماذج. يجب أن تحتوي هذه السلسلة على جزء `%NUM%` الذي سيتم استبداله بأرقام في الملف الناتج.
 
 يرجى الاطلاع على مقتطف الشيفرة البسيط التالي لتحقيق هذه الوظيفة.
 
@@ -347,7 +347,7 @@ private static void InsertBlankPage()
 
 ### إضافة طوابع نصية
 
-لإنشاء جدول محتويات، نحتاج إلى إضافة طوابع نصية على الصفحة الأولى باستخدام [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) وكائنات [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp). توفر فئة Stamp طريقة `BindLogo(...)` لإضافة [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) ويمكننا أيضًا تحديد الموقع لإضافة هذه الطوابع النصية باستخدام طريقة `SetOrigin(..)`. في هذه المقالة، نقوم بدمج ملفين PDF، لذا نحتاج إلى إنشاء كائنين لطابع نصي يشيران إلى هذين المستندين الفرديين.
+لإنشاء جدول محتويات، نحتاج إلى إضافة طوابع نصية على الصفحة الأولى باستخدام [PdfFileStamp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilestamp) وكائنات [Stamp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/stamp). توفر فئة Stamp طريقة `BindLogo(...)` لإضافة [FormattedText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formattedtext) ويمكننا أيضًا تحديد الموقع لإضافة هذه الطوابع النصية باستخدام طريقة `SetOrigin(..)`. في هذه المقالة، نقوم بدمج ملفين PDF، لذا نحتاج إلى إنشاء كائنين لطابع نصي يشيران إلى هذين المستندين الفرديين.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -368,7 +368,7 @@ private static void AddTextStampForTableOfContents()
 
 ### إنشاء روابط محلية
 
-الآن نحتاج إلى إضافة روابط نحو الصفحات داخل الملف المدمج. لتحقيق هذا المتطلب، يمكننا استخدام طريقة `CreateLocalLink(..)` من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). في مقتطف الشيفرة التالي، قمنا بتمرير Transparent كوسيط رابع بحيث لا يكون المستطيل حول الرابط مرئيًا.
+الآن نحتاج إلى إضافة روابط نحو الصفحات داخل الملف المدمج. لتحقيق هذا المتطلب، يمكننا استخدام طريقة `CreateLocalLink(..)` من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor). في مقتطف الشيفرة التالي، قمنا بتمرير Transparent كوسيط رابع بحيث لا يكون المستطيل حول الرابط مرئيًا.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -484,7 +484,7 @@ private static void CompleteCode()
 
 ## دمج ملفات PDF في المجلد
 
-تقدم فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) في مساحة أسماء Aspose.Pdf.Facades القدرة على دمج ملف PDF. يمكنك حتى قراءة جميع ملفات PDF في مجلد معين في وقت التشغيل ودمجها، دون حتى معرفة أسماء الملفات. ببساطة قدم مسار الدليل الذي يحتوي على مستندات PDF التي ترغب في دمجها.
+تقدم فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) في مساحة أسماء Aspose.Pdf.Facades القدرة على دمج ملف PDF. يمكنك حتى قراءة جميع ملفات PDF في مجلد معين في وقت التشغيل ودمجها، دون حتى معرفة أسماء الملفات. ببساطة قدم مسار الدليل الذي يحتوي على مستندات PDF التي ترغب في دمجها.
 
 يرجى تجربة استخدام مقتطف الشيفرة C# التالي لتحقيق هذه الوظيفة من Aspose.PDF:
 

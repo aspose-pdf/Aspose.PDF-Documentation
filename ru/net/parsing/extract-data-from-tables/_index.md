@@ -84,11 +84,11 @@ sitemap:
 
 У Aspose.PDF for .NET есть инструмент, который упрощает извлечение табличных данных. Чтобы извлечь данные таблицы, выполните следующие действия:
 
-1. Откройте документ — создайте экземпляр объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Создайте объект [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber).
-1. Решите, какие страницы нужно проанализировать, и примените [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/visit) к нужным страницам. Табличные данные будут отсканированы, а результат будет сохранён в [TableList](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/properties/tablelist).
-1. `TableList` — это список [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). Чтобы получить данные, переберите `TableList` и обработайте [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) и [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
-1. Каждый [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) содержит коллекцию [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). Вы можете обработать её для своих целей.
+1. Откройте документ — создайте экземпляр объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Создайте объект [TableAbsorber](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/tableabsorber).
+1. Решите, какие страницы нужно проанализировать, и примените [Visit](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/tableabsorber/methods/visit) к нужным страницам. Табличные данные будут отсканированы, а результат будет сохранён в [TableList](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/tableabsorber/properties/tablelist).
+1. `TableList` — это список [AbsorbedTable](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/absorbedtable). Чтобы получить данные, переберите `TableList` и обработайте [RowList](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/absorbedtable/properties/rowlist) и [CellList](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/absorbedrow/properties/celllist).
+1. Каждый [AbsorbedCell](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/absorbedcell) содержит коллекцию [TextFragments](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/absorbedcell/properties/textfragments). Вы можете обработать её для своих целей.
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
@@ -135,7 +135,7 @@ private static void ExtractTable()
 
 ## Извлечение таблицы в определённой области страницы PDF
 
-Каждая поглощённая таблица имеет свойство [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle), которое описывает положение таблицы на странице.
+Каждая поглощённая таблица имеет свойство [Rectangle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/absorbedtable/properties/rectangle), которое описывает положение таблицы на странице.
 
 Если вам нужно извлечь таблицы, расположенные в определённой области, вам придётся работать с конкретными координатами.
 

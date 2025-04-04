@@ -83,9 +83,9 @@ Veamos cómo funciona el cifrado de PDF con la biblioteca Aspose.PDF.
 
 ## Cifrar archivo PDF utilizando diferentes tipos de cifrado y algoritmos
 
-Para cifrar un archivo PDF, necesitas crear un objeto [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) y luego llamar al método [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Puedes pasar la contraseña de usuario, la contraseña de propietario y los privilegios al método [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). También necesitas pasar los valores de KeySize y Algorithm a este método.
+Para cifrar un archivo PDF, necesitas crear un objeto [PdfFileSecurity](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesecurity) y luego llamar al método [EncryptFile](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Puedes pasar la contraseña de usuario, la contraseña de propietario y los privilegios al método [EncryptFile](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). También necesitas pasar los valores de KeySize y Algorithm a este método.
 
-Revisa una posible lista de tales [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm):
+Revisa una posible lista de tales [CryptoAlgorithm](https://reference.aspose.com/pdf/es/net/aspose.pdf/cryptoalgorithm):
 
 |**Nombre del miembro**|**Valor**|**Descripción**|
 | :- | :- | :- |

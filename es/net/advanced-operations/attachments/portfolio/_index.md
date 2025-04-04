@@ -81,7 +81,7 @@ sitemap:
 
 ## Cómo crear un portafolio PDF
 
-Aspose.PDF permite crear documentos de portafolio PDF utilizando la [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) clase. Agregue un archivo a un objeto Document.Collection después de obtenerlo con la [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) clase. Cuando se han agregado los archivos, use el método Save de la clase Document para guardar el documento del portafolio.
+Aspose.PDF permite crear documentos de portafolio PDF utilizando la [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) clase. Agregue un archivo a un objeto Document.Collection después de obtenerlo con la [FileSpecification](https://reference.aspose.com/pdf/es/net/aspose.pdf/filespecification) clase. Cuando se han agregado los archivos, use el método Save de la clase Document para guardar el documento del portafolio.
 
 El siguiente ejemplo utiliza un archivo de Microsoft Excel, un documento de Word y un archivo de imagen para crear un portafolio PDF.
 
@@ -131,7 +131,7 @@ private static void CreatePortfolio()
 
 Los portafolios PDF le permiten reunir contenido de una variedad de fuentes (por ejemplo, archivos PDF, Word, Excel, JPEG) en un solo contenedor unificado. Los archivos originales mantienen sus identidades individuales pero se ensamblan en un archivo de portafolio PDF. Los usuarios pueden abrir, leer, editar y formatear cada archivo componente de forma independiente de los otros archivos componentes.
 
-Aspose.PDF permite la creación de documentos de portafolio PDF utilizando la [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) clase. También ofrece la capacidad de extraer archivos de un portafolio PDF.
+Aspose.PDF permite la creación de documentos de portafolio PDF utilizando la [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) clase. También ofrece la capacidad de extraer archivos de un portafolio PDF.
 
 El siguiente fragmento de código muestra los pasos para extraer archivos de un portafolio PDF.
 

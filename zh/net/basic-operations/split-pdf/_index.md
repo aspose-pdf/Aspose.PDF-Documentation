@@ -86,9 +86,9 @@ sitemap:
 
 本主题展示了如何在您的 .NET 应用程序中将 PDF 页面拆分为单独的 PDF 文件。要使用 C# 将 PDF 页面拆分为单页 PDF 文件，可以按照以下步骤进行：
 
-1. 通过 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合循环遍历 PDF 文档的页面。
-1. 在每次迭代中，创建一个新的 Document 对象，并将单个 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象添加到空文档中。
-1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存新的 PDF。
+1. 通过 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 集合循环遍历 PDF 文档的页面。
+1. 在每次迭代中，创建一个新的 Document 对象，并将单个 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象添加到空文档中。
+1. 使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存新的 PDF。
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 

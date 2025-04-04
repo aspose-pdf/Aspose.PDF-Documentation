@@ -78,9 +78,9 @@ sitemap:
 }
 </script>
 
-Изображения хранятся в коллекции [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) коллекции [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) каждой страницы. Чтобы извлечь конкретную страницу, затем получите изображение из коллекции Images, используя конкретный индекс изображения.
+Изображения хранятся в коллекции [Images](https://reference.aspose.com/pdf/ru/net/aspose.pdf/resources/properties/images) коллекции [Resources](https://reference.aspose.com/pdf/ru/net/aspose.pdf/resources) каждой страницы. Чтобы извлечь конкретную страницу, затем получите изображение из коллекции Images, используя конкретный индекс изображения.
 
-Индекс изображения возвращает объект [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Этот объект предоставляет метод Save, который можно использовать для сохранения извлечённого изображения. Следующий фрагмент кода показывает, как извлекать изображения из файла PDF.
+Индекс изображения возвращает объект [XImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf/ximage). Этот объект предоставляет метод Save, который можно использовать для сохранения извлечённого изображения. Следующий фрагмент кода показывает, как извлекать изображения из файла PDF.
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 

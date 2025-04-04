@@ -83,8 +83,8 @@ Aspose.PDF for .NET يتيح لك قراءة وتعيين خصائص الصفح�
 
 للحصول على عدد الصفحات في ملف PDF:
 
-1. افتح ملف PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. ثم استخدم خاصية Count لمجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) (من كائن Document) للحصول على العدد الإجمالي للصفحات في المستند.
+1. افتح ملف PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. ثم استخدم خاصية Count لمجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection) (من كائن Document) للحصول على العدد الإجمالي للصفحات في المستند.
 
 تظهر مقتطفات التعليمات البرمجية التالية كيفية الحصول على عدد صفحات ملف PDF.
 
@@ -106,7 +106,7 @@ private static void GetNumberOfPagesInAPdfFile()
 
 ### الحصول على عدد الصفحات دون حفظ المستند
 
-أحيانًا نقوم بإنشاء ملفات PDF على الفور وأثناء إنشاء ملف PDF، قد نواجه الحاجة (إنشاء جدول المحتويات، إلخ) للحصول على عدد الصفحات في ملف PDF دون حفظ الملف على النظام أو التدفق. لذلك، من أجل تلبية هذه الحاجة، تم تقديم طريقة [ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs) في فئة Document. يرجى إلقاء نظرة على مقتطف التعليمات البرمجية التالية التي توضح الخطوات للحصول على عدد الصفحات دون حفظ المستند.
+أحيانًا نقوم بإنشاء ملفات PDF على الفور وأثناء إنشاء ملف PDF، قد نواجه الحاجة (إنشاء جدول المحتويات، إلخ) للحصول على عدد الصفحات في ملف PDF دون حفظ الملف على النظام أو التدفق. لذلك، من أجل تلبية هذه الحاجة، تم تقديم طريقة [ProcessParagraphs](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/processparagraphs) في فئة Document. يرجى إلقاء نظرة على مقتطف التعليمات البرمجية التالية التي توضح الخطوات للحصول على عدد الصفحات دون حفظ المستند.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ private static void GetPageCountWithoutSavingTheDocument()
 
 ### **الوصول إلى خصائص الصفحة**
 
-توفر فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) جميع الخصائص المتعلقة بصفحة PDF معينة. جميع صفحات ملفات PDF موجودة في مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+توفر فئة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) جميع الخصائص المتعلقة بصفحة PDF معينة. جميع صفحات ملفات PDF موجودة في مجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
 
 من هناك، من الممكن الوصول إلى كائنات Page الفردية باستخدام فهرسها، أو التكرار عبر المجموعة، باستخدام حلقة foreach، للحصول على جميع الصفحات. بمجرد الوصول إلى صفحة فردية، يمكننا الحصول على خصائصها. توضح مقتطفات التعليمات البرمجية التالية كيفية الحصول على خصائص الصفحة.
 
@@ -190,12 +190,12 @@ private static void AccessingPageProperties()
 
 يتيح لك Aspose.PDF [تقسيم PDF إلى صفحات فردية](/pdf/ar/net/split-pdf-document/) وحفظها كملفات PDF. الحصول على صفحة محددة في ملف PDF وحفظها كملف PDF جديد هو عملية مشابهة جدًا: افتح المستند المصدر، والوصول إلى الصفحة، وإنشاء مستند جديد وإضافة الصفحة إلى هذا المستند.
 
-تحتوي مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) على الصفحات في ملف PDF. للحصول على صفحة معينة من هذه المجموعة:
+تحتوي مجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) على الصفحات في ملف PDF. للحصول على صفحة معينة من هذه المجموعة:
 
 1. حدد فهرس الصفحة باستخدام خاصية Pages.
-1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) جديد.
-1. أضف كائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) إلى كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) الجديد.
-1. احفظ الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) جديد.
+1. أضف كائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) إلى كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) الجديد.
+1. احفظ الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
 
 تظهر مقتطفات التعليمات البرمجية التالية كيفية الحصول على صفحة معينة من ملف PDF وحفظها كملف جديد.
 
@@ -224,9 +224,9 @@ private static void GetAParticularPageOfThePdfFile()
 
 ## تحديد لون الصفحة
 
-توفر فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) الخصائص المتعلقة بصفحة معينة في مستند PDF، بما في ذلك نوع اللون - RGB، بالأبيض والأسود، تدرج الرمادي أو غير محدد - الذي تستخدمه الصفحة.
+توفر فئة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) الخصائص المتعلقة بصفحة معينة في مستند PDF، بما في ذلك نوع اللون - RGB، بالأبيض والأسود، تدرج الرمادي أو غير محدد - الذي تستخدمه الصفحة.
 
-تحتوي جميع صفحات ملفات PDF على مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection). تحدد خاصية ColorType لون العناصر على الصفحة. للحصول على معلومات اللون أو تحديدها لصفحة PDF معينة، استخدم خاصية [ColorType](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/colortype) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+تحتوي جميع صفحات ملفات PDF على مجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection). تحدد خاصية ColorType لون العناصر على الصفحة. للحصول على معلومات اللون أو تحديدها لصفحة PDF معينة، استخدم خاصية [ColorType](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page/properties/colortype) لكائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page).
 
 تظهر مقتطفات التعليمات البرمجية التالية كيفية التكرار عبر صفحة فردية من ملف PDF للحصول على معلومات اللون.
 

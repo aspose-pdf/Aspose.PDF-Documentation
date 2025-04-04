@@ -83,7 +83,7 @@ sitemap:
 
 ## 验证 PDF 文档是否符合 PDF A 标准 (A 1A 和 A 1B)
 
-要验证 PDF 文档是否符合 PDF/A-1a 或 PDF/A-1b 兼容性，请使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类的 Validate 方法。此方法允许您指定结果要保存的文件名和所需的验证类型 [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat) 枚举：PDF_A_1A 或 PDF_A_1B。
+要验证 PDF 文档是否符合 PDF/A-1a 或 PDF/A-1b 兼容性，请使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的 Validate 方法。此方法允许您指定结果要保存的文件名和所需的验证类型 [PdfFormat](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pdfformat) 枚举：PDF_A_1A 或 PDF_A_1B。
 
 {{% alert color="primary" %}}
 
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### 在目录中隐藏页码
 
-如果您不想在目录中显示页码，可以将 [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) 类的 [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) 属性设置为 false。请查看以下代码片段以在目录中隐藏页码：
+如果您不想在目录中显示页码，可以将 [TOCInfo](https://reference.aspose.com/pdf/zh/net/aspose.pdf/tocinfo) 类的 [IsShowPageNumbers](https://reference.aspose.com/pdf/zh/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) 属性设置为 false。请查看以下代码片段以在目录中隐藏页码：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -453,7 +453,7 @@ private static void SetExpiryDate()
 
 客户要求我们添加一个功能，允许开发人员确定 PDF 文件生成的进度。以下是对此请求的响应。
 
-[DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) 类的 [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) 字段允许您确定 PDF 生成的进度。处理程序具有以下类型：
+[DocSaveOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/docsaveoptions) 类的 [CustomerProgressHandler](https://reference.aspose.com/pdf/zh/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) 字段允许您确定 PDF 生成的进度。处理程序具有以下类型：
 
 - DocSaveOptions.ConversionProgessEventHandler。
 - DocSaveOptions.ProgressEventHandlerInfo。

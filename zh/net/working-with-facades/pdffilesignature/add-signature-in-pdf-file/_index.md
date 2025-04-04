@@ -77,9 +77,9 @@ draft: false
 
 ## 在 PDF 文件中添加数字签名
 
-[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类允许您在 PDF 文件中添加签名。您需要使用输入和输出 PDF 文件创建 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的对象。您还需要创建一个 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) 对象，以指定您希望添加签名的位置，并且为了设置外观，您可以使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 对象的 [SignatureAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/signatureappearance) 属性指定图像。Aspose.Pdf.Facades 还提供不同类型的签名，如 PKCS#1、PKCS#7 和 PKCS#7Detached。为了创建特定类型的签名，您需要使用证书文件和密码创建特定类的对象，如 **PKCS1**、**PKCS7** 或 **PKCS7Detached**。
+[PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类允许您在 PDF 文件中添加签名。您需要使用输入和输出 PDF 文件创建 [PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类的对象。您还需要创建一个 [Rectangle](https://reference.aspose.com/pdf/zh/net/aspose.pdf/rectangle) 对象，以指定您希望添加签名的位置，并且为了设置外观，您可以使用 [PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 对象的 [SignatureAppearance](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature/properties/signatureappearance) 属性指定图像。Aspose.Pdf.Facades 还提供不同类型的签名，如 PKCS#1、PKCS#7 和 PKCS#7Detached。为了创建特定类型的签名，您需要使用证书文件和密码创建特定类的对象，如 **PKCS1**、**PKCS7** 或 **PKCS7Detached**。
 
-一旦创建了特定签名类型的对象，您可以使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的 [Sign](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/sign/index) 方法对 PDF 进行签名，并将特定签名对象传递给该类。您还可以为此方法指定其他属性。最后，您需要使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法保存签名后的 PDF。以下代码片段向您展示了如何在 PDF 文件中添加签名。
+一旦创建了特定签名类型的对象，您可以使用 [PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类的 [Sign](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature/methods/sign/index) 方法对 PDF 进行签名，并将特定签名对象传递给该类。您还可以为此方法指定其他属性。最后，您需要使用 [PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法保存签名后的 PDF。以下代码片段向您展示了如何在 PDF 文件中添加签名。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void AddTwoSignature()
 ```
 
 对于需要签名的表单或 acroforms 文档，请参见以下示例。
-您需要使用输入和输出 PDF 文件创建 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的对象。使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1) 进行绑定。创建一个签名，并能够添加所需的属性。在我们的示例中，它们是 'Reason' 和 'CustomAppearance'。
+您需要使用输入和输出 PDF 文件创建 [PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类的对象。使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1) 进行绑定。创建一个签名，并能够添加所需的属性。在我们的示例中，它们是 'Reason' 和 'CustomAppearance'。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

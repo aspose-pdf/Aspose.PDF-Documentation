@@ -79,16 +79,16 @@ sitemap:
 }
 </script>
 
-PDF 文档中的注释包含在 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象的 Annotations 集合中。该集合仅包含该单个页面的所有注释：每个页面都有自己的 Annotations 集合。要向特定页面添加注释，请使用 Add 方法将其添加到该页面的 Annotations 集合中。
+PDF 文档中的注释包含在 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象的 Annotations 集合中。该集合仅包含该单个页面的所有注释：每个页面都有自己的 Annotations 集合。要向特定页面添加注释，请使用 Add 方法将其添加到该页面的 Annotations 集合中。
 
-使用 Aspose.PDF.InteractiveFeatures.Annotations 命名空间中的 [ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) 类，将 SWF 文件作为注释包含在 PDF 文档中。屏幕注释指定页面上的一个区域，可以播放媒体剪辑。
+使用 Aspose.PDF.InteractiveFeatures.Annotations 命名空间中的 [ScreenAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/screenannotation) 类，将 SWF 文件作为注释包含在 PDF 文档中。屏幕注释指定页面上的一个区域，可以播放媒体剪辑。
 
-当您需要在 PDF 文档中添加外部视频链接时，可以使用 [MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation)。
+当您需要在 PDF 文档中添加外部视频链接时，可以使用 [MovieAnnotaiton](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/movieannotation)。
 Movie Annotation 包含动画图形和声音，通过计算机屏幕和扬声器呈现。
 
-[Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) 类似于文本注释，只是它包含从计算机的麦克风录制或从文件导入的声音，而不是文本注释。当激活注释时，声音将被播放。该注释在大多数方面的行为类似于文本注释，具有不同的图标（默认情况下为扬声器），以指示它表示声音。
+[Sound Annotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/soundannotation) 类似于文本注释，只是它包含从计算机的麦克风录制或从文件导入的声音，而不是文本注释。当激活注释时，声音将被播放。该注释在大多数方面的行为类似于文本注释，具有不同的图标（默认情况下为扬声器），以指示它表示声音。
 
-但是，当需要将媒体嵌入 PDF 文档时，您需要使用 [RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation)。
+但是，当需要将媒体嵌入 PDF 文档时，您需要使用 [RichMediaAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/richmediaannotation)。
 
 RichMediaAnnotation 类的以下方法/属性可以使用。
 
@@ -292,7 +292,7 @@ private static void DeletePolyAnnotation()
 
 ## 添加小部件注释
 
-交互式表单使用 [Widget Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) 来表示字段的外观并管理用户交互。
+交互式表单使用 [Widget Annotations](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/widgetannotation) 来表示字段的外观并管理用户交互。
 我们使用这些表单元素添加到 PDF 中，以便更容易输入、提交信息或执行其他用户交互。
 
 小部件注释是特定页面上表单字段的图形表示，因此我们不能直接将其创建为注释。
@@ -453,14 +453,14 @@ private static void AddNavigationButtons()
 
 3D 注释是使用以 U3D 格式创建的模型添加的。
 
-1. 创建一个新的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)。
-1. 加载所需 3D 模型的数据（在我们的例子中为 "Ring.u3d"），以创建 [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent)。
-1. 创建 [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) 对象并将其链接到文档和 3DContent。
+1. 创建一个新的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)。
+1. 加载所需 3D 模型的数据（在我们的例子中为 "Ring.u3d"），以创建 [PDF3DContent](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/pdf3dcontent)。
+1. 创建 [3dArtWork](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/pdf3dartwork) 对象并将其链接到文档和 3DContent。
 1. 调整 pdf3dArtWork 对象：
 
     - 3DLightingScheme - （我们将在示例中设置为 `CAD`）
     - 3DRenderMode - （我们将在示例中设置为 `Solid`）
-    - 填充 `ViewArray`，创建至少一个 [3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) 并将其添加到数组中。
+    - 填充 `ViewArray`，创建至少一个 [3D View](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/pdf3dview) 并将其添加到数组中。
 
 1. 在注释中设置 3 个基本参数：
     - 注释将放置的 `page`。
@@ -469,7 +469,7 @@ private static void AddNavigationButtons()
 1. 为了更好地展示 3D 对象，设置边框框架。
 1. 设置默认视图（例如 - 顶部）。
 1. 添加一些附加参数：名称、预览海报等。
-1. 将注释添加到 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)。
+1. 将注释添加到 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)。
 1. 保存结果。
 
 ### 示例

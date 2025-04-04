@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) clase permite controlar excepciones. Para hacer esto, necesita establecer la propiedad [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) en falso o verdadero. Si establece la operación en falso, el resultado de [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) devolverá verdadero o falso dependiendo de la corrección de la contraseña.
+[PdfFileSecurity](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesecurity) clase permite controlar excepciones. Para hacer esto, necesita establecer la propiedad [AllowExceptions](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) en falso o verdadero. Si establece la operación en falso, el resultado de [DecryptFile](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) devolverá verdadero o falso dependiendo de la corrección de la contraseña.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -103,7 +103,7 @@ private static void ControlExceptionPDFFile()
 }
 ```
 
-Si establece la propiedad [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) en verdadero, entonces puede obtener el resultado de la operación utilizando el operador try-catch.
+Si establece la propiedad [AllowExceptions](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) en verdadero, entonces puede obtener el resultado de la operación utilizando el operador try-catch.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

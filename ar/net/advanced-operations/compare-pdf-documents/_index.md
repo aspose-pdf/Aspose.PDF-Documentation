@@ -199,7 +199,7 @@ private static void ComparingEntireDocuments()
 
 عند التعاون في المستندات، خاصة في البيئات المهنية، غالبًا ما ينتهي بك الأمر مع إصدارات متعددة من نفس الملف.
 
-يمكنك استخدام فئة [GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) لمقارنة مستندات PDF وصفحاتها. الفئة مناسبة لمقارنة التغييرات في محتوى الصفحة الرسومي.
+يمكنك استخدام فئة [GraphicalPdfComparer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) لمقارنة مستندات PDF وصفحاتها. الفئة مناسبة لمقارنة التغييرات في محتوى الصفحة الرسومي.
 
 مع Aspose.PDF for .NET، من الممكن مقارنة المستندات والصفحات وإخراج نتيجة المقارنة إلى مستند PDF أو ملف صورة.
 
@@ -211,13 +211,13 @@ private static void ComparingEntireDocuments()
 
 تحتوي الفئة على طريقة تتيح لك الحصول على اختلافات صورة الصفحة في شكل مناسب لمزيد من المعالجة: **ImagesDifference GetDifference(Page page1, Page page2)**.
 
-ترجع هذه الطريقة كائنًا من فئة [ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/)، والذي يحتوي على صورة الصفحة الأولى التي تتم مقارنتها ومصفوفة من الاختلافات. تحتوي مصفوفة الاختلافات والصورة الأصلية على تنسيق بكسل **RGB24bpp**.
+ترجع هذه الطريقة كائنًا من فئة [ImagesDifference](https://reference.aspose.com/pdf/ar/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/)، والذي يحتوي على صورة الصفحة الأولى التي تتم مقارنتها ومصفوفة من الاختلافات. تحتوي مصفوفة الاختلافات والصورة الأصلية على تنسيق بكسل **RGB24bpp**.
 
 تتيح لك ImagesDifference إنشاء صورة مختلفة والحصول على صورة الصفحة الثانية التي تتم مقارنتها عن طريق إضافة مصفوفة الاختلافات إلى الصورة الأصلية. للقيام بذلك، استخدم طرق **ImagesDifference.GetDestinationImage و ImagesDifference.DifferenceToImage**.
 
 ### مقارنة PDF باستخدام طريقة GetDifference
 
-تحدد الشيفرة المقدمة طريقة [GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) التي تقارن مستندين PDF وتولد تمثيلات بصرية للاختلافات بينهما.
+تحدد الشيفرة المقدمة طريقة [GetDifference](https://reference.aspose.com/pdf/ar/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) التي تقارن مستندين PDF وتولد تمثيلات بصرية للاختلافات بينهما.
 
 تقارن هذه الطريقة الصفحات الأولى من ملفي PDF وتولد صورتين PNG:
 
@@ -259,7 +259,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 
 ### مقارنة PDF باستخدام طريقة CompareDocumentsToPdf
 
-يستخدم مقتطف الشيفرة المقدمة طريقة [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) التي تقارن مستندين وتولد تقرير PDF بنتائج المقارنة.
+يستخدم مقتطف الشيفرة المقدمة طريقة [CompareDocumentsToPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) التي تقارن مستندين وتولد تقرير PDF بنتائج المقارنة.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

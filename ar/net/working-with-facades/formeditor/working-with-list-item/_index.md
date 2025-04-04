@@ -77,7 +77,7 @@ draft: false
 
 ## إضافة عنصر قائمة في ملف PDF موجود
 
-تسمح لك طريقة [AddListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addlistitem) بإضافة عنصر في حقل [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield). الحجة الأولى هي اسم الحقل والحجة الثانية هي عنصر الحقل. يمكنك إما تمرير عنصر حقل واحد أو يمكنك تمرير مصفوفة من السلاسل تحتوي على قائمة من العناصر. يتم توفير هذه الطريقة بواسطة فئة [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). يوضح لك مقتطف الكود التالي كيفية إضافة عناصر قائمة في ملف PDF.
+تسمح لك طريقة [AddListItem](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/addlistitem) بإضافة عنصر في حقل [ListBox](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/listboxfield). الحجة الأولى هي اسم الحقل والحجة الثانية هي عنصر الحقل. يمكنك إما تمرير عنصر حقل واحد أو يمكنك تمرير مصفوفة من السلاسل تحتوي على قائمة من العناصر. يتم توفير هذه الطريقة بواسطة فئة [FormEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor). يوضح لك مقتطف الكود التالي كيفية إضافة عناصر قائمة في ملف PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -110,7 +110,7 @@ draft: false
 
 ## حذف عنصر قائمة من ملف PDF موجود
 
-تسمح لك طريقة [DelListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/dellistitem) بحذف عنصر معين من [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield). المعامل الأول هو اسم الحقل بينما المعامل الثاني هو العنصر الذي تريد حذفه من القائمة. يتم توفير هذه الطريقة بواسطة فئة [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). يوضح لك مقتطف الكود التالي كيفية حذف عنصر قائمة من ملف PDF.
+تسمح لك طريقة [DelListItem](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/dellistitem) بحذف عنصر معين من [ListBox](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/listboxfield). المعامل الأول هو اسم الحقل بينما المعامل الثاني هو العنصر الذي تريد حذفه من القائمة. يتم توفير هذه الطريقة بواسطة فئة [FormEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor). يوضح لك مقتطف الكود التالي كيفية حذف عنصر قائمة من ملف PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

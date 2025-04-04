@@ -82,7 +82,7 @@ sitemap:
 
 ## تتبع فواصل الأسطر في TextFragment متعدد الأسطر
 
-تقدم Aspose.PDF for .NET تسجيل (تتبع) معالجة خلفية (فواصل الأسطر) لأجزاء النص متعددة الأسطر في سيناريوهات إضافة النص. يمكنك استخدام طريقة [GetNotifications](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/getnotifications)() من فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) كما يلي، من أجل تتبع فواصل الأسطر في جزء النص:
+تقدم Aspose.PDF for .NET تسجيل (تتبع) معالجة خلفية (فواصل الأسطر) لأجزاء النص متعددة الأسطر في سيناريوهات إضافة النص. يمكنك استخدام طريقة [GetNotifications](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page/methods/getnotifications)() من فئة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) كما يلي، من أجل تتبع فواصل الأسطر في جزء النص:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

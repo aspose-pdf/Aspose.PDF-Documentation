@@ -78,7 +78,7 @@ draft: false
 ## 使用打印机和页面设置将 PDF 文件打印到默认打印机
 
 首先，将文档转换为图像，然后在打印机上打印。
-创建一个 [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) 类的实例，该实例可以将 PDF 文件打印到默认打印机，使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/bindpdf/) 方法将文档打开，并更改必要的设置。此示例使用 A4 格式，纵向方向。在 [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) 中，首先应设置打印机的名称，打印将发送到该打印机。否则，它将打印到默认打印机。接下来，填写所需的副本数量。
+创建一个 [PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer) 类的实例，该实例可以将 PDF 文件打印到默认打印机，使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer/bindpdf/) 方法将文档打开，并更改必要的设置。此示例使用 A4 格式，纵向方向。在 [PrinterSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf.printing/printersettings/) 中，首先应设置打印机的名称，打印将发送到该打印机。否则，它将打印到默认打印机。接下来，填写所需的副本数量。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -345,7 +345,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## 隐藏打印对话框
 
-Aspose.PDF for .NET 支持隐藏打印对话框。为此，请使用 [PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog) 属性。
+Aspose.PDF for .NET 支持隐藏打印对话框。为此，请使用 [PrintPageDialog](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog) 属性。
 
 以下代码片段演示了如何隐藏打印对话框。
 
@@ -436,7 +436,7 @@ private static void PrintingPDFHidePrintDialog()
 
 ## 将彩色 PDF 打印为灰度的 XPS 文件
 
-可以使用 [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) 将彩色 PDF 文档打印为灰度到 XPS 打印机。为此，将属性 [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) 设置为 *true*。以下代码片段演示了 `PdfViewer.PrintAsGrayscale` 属性的用法。
+可以使用 [PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer) 将彩色 PDF 文档打印为灰度到 XPS 打印机。为此，将属性 [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) 设置为 *true*。以下代码片段演示了 `PdfViewer.PrintAsGrayscale` 属性的用法。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -529,7 +529,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## PDF 转 PostScript 转换
 
-[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) 类提供打印 PDF 文档的功能，并且借助此类，可以将 PDF 文件转换为 PostScript 格式。要将 PDF 文件转换为 PostScript，首先安装任何 PS 打印机，然后只需使用 `PdfViewer` 打印到文件。
+[PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer) 类提供打印 PDF 文档的功能，并且借助此类，可以将 PDF 文件转换为 PostScript 格式。要将 PDF 文件转换为 PostScript，首先安装任何 PS 打印机，然后只需使用 `PdfViewer` 打印到文件。
 
 以下代码片段演示了如何打印并将 PDF 转换为 PostScript 格式。
 
@@ -632,7 +632,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## 检查打印作业状态
 
-PDF 文件可以打印到物理打印机，也可以打印到 Microsoft XPS Document Writer，而无需显示打印对话框，使用 [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) 类。当打印大型 PDF 文件时，过程可能需要很长时间，因此用户可能不确定打印过程是否完成或遇到问题。要确定打印作业的状态，请使用 [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/) 属性。以下代码片段演示了如何将 PDF 文件打印到 XPS 文件并获取打印状态。
+PDF 文件可以打印到物理打印机，也可以打印到 Microsoft XPS Document Writer，而无需显示打印对话框，使用 [PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer) 类。当打印大型 PDF 文件时，过程可能需要很长时间，因此用户可能不确定打印过程是否完成或遇到问题。要确定打印作业的状态，请使用 [PrintStatus](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer/printstatus/) 属性。以下代码片段演示了如何将 PDF 文件打印到 XPS 文件并获取打印状态。
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
