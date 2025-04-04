@@ -92,7 +92,7 @@ In Aspose.PDF 25.3 we have added:
 
 **Other Notable Enhancements**
 
-We have improved both performance and memory consumption in the conversion of image-heavy PDFs. The processing speed is now twice as fast, and memory consumption is reduced by 10% in tested scenarios.
+We have enhanced performance and reduced memory consumption in converting image-heavy PDFs. The processing speed is twice as fast, and memory usage has decreased by 10% in tested scenarios.
 
 ## What's new in Aspose.PDF 25.2
 
