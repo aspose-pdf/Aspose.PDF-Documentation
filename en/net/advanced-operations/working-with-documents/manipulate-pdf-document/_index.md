@@ -533,6 +533,68 @@ private static void FlattenForms()
 }
 ```
 
+## Analyzing PDF document for Incremental Updates
+To check if a document has been incrementally updated, use the `HasIncrementalUpdate` method of the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. This method analyzes the PDF file and returns a boolean value indicating whether incremental updates were detected. Note that when a document is saved using the parameterless [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/save/#save) method, it is saved incrementally.
+
+The following C# code demonstrates how to use the `HasIncrementalUpdate` method:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Check for incremental updates
+        bool updatedIncrementally = document.HasIncrementalUpdate();
+
+        // Output the result
+        if (updatedIncrementally)
+        {
+            Console.WriteLine("This document has been incrementally updated.");
+        }
+        else
+        {
+            Console.WriteLine("This document has no incremental updates.");
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Check for incremental updates
+    bool updatedIncrementally = document.HasIncrementalUpdate();
+
+    // Output the result
+    if (updatedIncrementally)
+    {
+        Console.WriteLine("This document has been incrementally updated.");
+    }
+    else
+    {
+        Console.WriteLine("This document has no incremental updates.");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
