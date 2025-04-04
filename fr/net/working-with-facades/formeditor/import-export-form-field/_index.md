@@ -5,7 +5,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /fr/net/import-export-form-field/
-description: Remplir des champs de formulaire en utilisant DataTable avec la classe FormEditor par Aspose.PDF for .NET
+description: Remplir les champs de formulaire en utilisant DataTable avec la classe FormEditor par Aspose.PDF for .NET
 lastmod: "2021-06-05"
 draft: false
 ---
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "252",
+    "wordcount": "337",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,12 +70,14 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/import-export-form-field/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
 
-Aspose.PDF for .NET offre de grandes capacités pour créer/manipuler des champs de formulaire à l'intérieur d'un document PDF. En utilisant cette API, vous pouvez remplir programmatique des champs de formulaire à l'intérieur d'un fichier PDF, remplir des champs de formulaire en [Importation de données depuis FDF dans un fichier PDF](/pdf/fr/net/import-and-export-data/), [Importation de données depuis XFDF dans un fichier PDF](/pdf/fr/net/import-and-export-data/), [Importation de données depuis XML dans un fichier PDF](/pdf/fr/net/import-and-export-data/) ou même vous pouvez importer des données depuis un objet [System.Data.DataTable](https://reference.aspose.com/pdf/fr/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF for .NET offre de grandes capacités pour créer/manipuler des champs de formulaire à l'intérieur d'un document PDF. En utilisant cette API, vous pouvez remplir programmatique les champs de formulaire à l'intérieur d'un fichier PDF, remplir les champs de formulaire par [Importer des données de FDF dans un fichier PDF](/pdf/fr/net/import-and-export-data/), [Importer des données de XFDF dans un fichier PDF](/pdf/fr/net/import-and-export-data/), [Importer des données de XML dans un fichier PDF](/pdf/fr/net/import-and-export-data/) ou même vous pouvez importer des données à partir d'un objet [System.Data.DataTable](https://reference.aspose.com/pdf/fr/net/aspose.pdf.table/importdatatable/methods/1).
+
+## Importer des données de PDF dans FDF
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
@@ -113,7 +115,7 @@ private static void ImportData()
 }
 ```
 
-## Exporter des données depuis FDF dans un fichier PDF
+## Exporter des données de FDF dans un fichier PDF
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
