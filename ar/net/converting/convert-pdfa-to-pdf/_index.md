@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF/A to PDF format",
     "alternativeHeadline": "Remove PDF/A Compliance for Enhanced Document Flexibility in C#",
-    "abstract": "تقدم Aspose.PDF الآن ميزة لتحويل ملفات PDF/A بسلاسة إلى مستندات PDF قياسية باستخدام مكتبتها .NET. تتيح هذه الوظيفة للمستخدمين إزالة قيود التوافق مع PDF/A، مما يسهل تحرير وتعديل محتوى PDF دون القيود المفروضة بواسطة معايير PDF/A",
+    "abstract": "تقدم Aspose.PDF الآن ميزة لتحويل ملفات PDF/A بسلاسة إلى مستندات PDF قياسية باستخدام مكتبتها .NET. تتيح هذه الوظيفة للمستخدمين إزالة قيود التوافق مع PDF/A، مما يسهل تحرير وتعديل محتوى PDF دون القيود المفروضة بواسطة معايير PDF/A.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "259",
+    "wordcount": "399",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,17 +73,17 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdfa-to-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسريعة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+    "dateModified": "2025-04-04",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
+يعمل مقتطف الشيفرة التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تحويل مستند PDF/A إلى PDF
 
 تحويل مستند PDF/A إلى PDF يعني إزالة <abbr title="Portable Document Format Archive">PDF/A</abbr> القيود من المستند الأصلي. 
-تحتوي الفئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) على طريقة [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/removepdfacompliance) لإزالة معلومات التوافق مع PDF من ملف الإدخال/المصدر.
+تحتوي فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) على طريقة [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/removepdfacompliance) لإزالة معلومات التوافق مع PDF من ملف الإدخال/المصدر.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -128,7 +128,7 @@ private static void ConvertPDFAtoPDF()
 {{< /tab >}}
 {{< /tabs >}}
 
-يمكن أيضًا إزالة التوافق مع PDF/A إذا قمت بإجراء أي تغييرات في المستند (مثل إضافة صفحات). في المثال التالي، يفقد المستند الناتج التوافق مع PDF/A بعد إضافة صفحة جديدة.
+يمكن أيضًا إزالة توافق PDF/A إذا قمت بإجراء أي تغييرات في المستند (مثل إضافة صفحات). في المثال التالي، يفقد المستند الناتج توافق PDF/A بعد إضافة صفحة جديدة.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

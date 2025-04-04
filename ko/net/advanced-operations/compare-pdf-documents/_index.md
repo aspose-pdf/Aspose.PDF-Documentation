@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Compare PDF documents",
     "alternativeHeadline": "Enhanced PDF Document Comparison with Visual Highlights",
-    "abstract": "Aspose.PDF for .NET의 새로운 PDF 비교 기능은 사용자가 특정 페이지 또는 전체 콘텐츠를 통해 두 PDF 문서 간의 차이를 효율적으로 식별할 수 있도록 합니다. 나란히 출력 및 추가 변경 마커와 다양한 비교 모드와 같은 사용자 정의 옵션을 통해 이 강력한 도구는 수정 사항을 쉽게 추적하고 검토할 수 있도록 하여 협업을 향상시킵니다.",
+    "abstract": "Aspose.PDF for .NET의 새로운 PDF 비교 기능은 사용자가 특정 페이지 또는 전체 콘텐츠를 통해 두 PDF 문서 간의 차이를 효율적으로 식별할 수 있게 해줍니다. 나란히 출력 및 추가 변경 마커와 다양한 비교 모드와 같은 사용자 정의 옵션을 통해 이 강력한 도구는 수정 사항을 쉽게 추적하고 검토할 수 있도록 하여 협업을 향상시킵니다.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Compare PDF documents, PDF comparison, Aspose.PDF for .NET, comparing specific pages, comparing entire documents, graphical PDF comparer, side-by-side comparison, change markers, document accuracy, ImagesDifference",
-    "wordcount": "1180",
+    "wordcount": "1047",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/compare-pdf-documents/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 수행할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하십시오."
 }
 </script>
@@ -83,11 +83,11 @@ sitemap:
 
 ## PDF 문서 비교 방법
 
-PDF 문서 작업 시 두 문서의 내용을 비교하여 차이를 식별해야 할 때가 있습니다. Aspose.PDF for .NET 라이브러리는 이를 위한 강력한 도구 세트를 제공합니다. 이 문서에서는 간단한 코드 스니펫을 사용하여 PDF 문서를 비교하는 방법을 살펴보겠습니다.
+PDF 문서 작업을 할 때 두 문서의 내용을 비교하여 차이를 식별해야 할 때가 있습니다. Aspose.PDF for .NET 라이브러리는 이를 위한 강력한 도구 세트를 제공합니다. 이 문서에서는 간단한 코드 스니펫을 사용하여 PDF 문서를 비교하는 방법을 살펴보겠습니다.
 
 Aspose.PDF의 비교 기능을 사용하면 두 PDF 문서를 페이지별로 비교할 수 있습니다. 특정 페이지 또는 전체 문서를 비교하도록 선택할 수 있습니다. 결과 비교 문서는 차이를 강조 표시하여 두 파일 간의 변경 사항을 쉽게 식별할 수 있도록 합니다.
 
-다음은 Aspose.PDF for .NET 라이브러리를 사용하여 PDF 문서를 비교하는 가능한 방법 목록입니다:
+다음은 Aspose.PDF for .NET 라이브러리를 사용하여 PDF 문서를 비교하는 가능한 방법의 목록입니다:
 
 1. **특정 페이지 비교** - 두 PDF 문서의 첫 페이지를 비교합니다.
 
@@ -103,12 +103,10 @@ Aspose.PDF의 비교 기능을 사용하면 두 PDF 문서를 페이지별로 �
 
 첫 번째 코드 스니펫은 두 PDF 문서의 첫 페이지를 비교하는 방법을 보여줍니다.
 
-단계:
-
 1. 문서 초기화.
 코드는 각 PDF 문서를 해당 파일 경로(documentPath1 및 documentPath2)를 사용하여 초기화하는 것으로 시작합니다. 경로는 현재 빈 문자열로 지정되어 있지만, 실제로는 이를 실제 파일 경로로 교체해야 합니다.
 
-2. 비교 프로세스.
+2. 비교 과정.
 
 - 페이지 선택 - 비교는 각 문서의 첫 페이지('Pages[1]')로 제한됩니다.
 - 비교 옵션:
@@ -146,19 +144,6 @@ private static void ComparingSpecificPages()
 
 두 번째 코드 스니펫은 두 PDF 문서의 전체 내용을 비교하는 범위를 확장합니다.
 
-단계:
-
-1. 문서 초기화.
-첫 번째 예제와 마찬가지로 두 PDF 문서가 파일 경로로 초기화됩니다.
-
-2. 비교 프로세스.
-
-- 전체 문서 비교 - 첫 번째 스니펫과 달리 이 코드는 두 문서의 전체 내용을 비교합니다.
-
-- 비교 옵션 - 옵션은 첫 번째 스니펫과 동일하여 공백이 무시되고 추가 변경 마커가 표시됩니다.
-
-3. 두 문서의 모든 페이지에서 차이를 강조 표시하는 비교 결과는 'resultPdfPath'에 지정된 파일에 저장됩니다.
-
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparingEntireDocuments()
@@ -186,7 +171,7 @@ private static void ComparingEntireDocuments()
 }
 ```
 
-이 스니펫에서 생성된 비교 결과는 Adobe Acrobat과 같은 뷰어에서 열 수 있는 PDF 문서입니다. Adobe Acrobat에서 두 페이지 보기를 사용하면 변경 사항을 나란히 볼 수 있습니다:
+이 스니펫에서 생성된 비교 결과는 Adobe Acrobat과 같은 뷰어에서 열 수 있는 PDF 문서입니다. Adobe Acrobat에서 두 페이지 보기 모드를 사용하면 변경 사항을 나란히 볼 수 있습니다:
 
 - 삭제 - 왼쪽 페이지에 기록됩니다.
 - 삽입 - 오른쪽 페이지에 기록됩니다.
@@ -199,7 +184,7 @@ private static void ComparingEntireDocuments()
 
 문서에서 협업할 때, 특히 전문 환경에서는 동일한 파일의 여러 버전을 갖게 되는 경우가 많습니다.
 
-[GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) 클래스를 사용하여 PDF 문서와 페이지를 비교할 수 있습니다. 이 클래스는 페이지의 그래픽 콘텐츠에서 변경 사항을 비교하는 데 적합합니다.
+[GraphicalPdfComparer](https://reference.aspose.com/pdf/ko/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) 클래스를 사용하여 PDF 문서와 페이지를 비교할 수 있습니다. 이 클래스는 페이지의 그래픽 콘텐츠에서 변경 사항을 비교하는 데 적합합니다.
 
 Aspose.PDF for .NET을 사용하면 문서와 페이지를 비교하고 비교 결과를 PDF 문서 또는 이미지 파일로 출력할 수 있습니다.
 
@@ -207,24 +192,24 @@ Aspose.PDF for .NET을 사용하면 문서와 페이지를 비교하고 비교 �
 
 - 해상도 - 출력 이미지 및 비교 중 생성된 이미지의 DPI 단위 해상도.
 - 색상 - 변경 마커의 색상.
-- 임계값 - 변경 임계값(백분율). 기본값은 0입니다. 0이 아닌 값을 설정하면 중요하지 않은 그래픽 변경 사항을 무시할 수 있습니다.
+- 임계값 - 변경 임계값(백분율). 기본값은 0입니다. 0이 아닌 값을 설정하면 귀하에게 중요하지 않은 그래픽 변경 사항을 무시할 수 있습니다.
 
 이 클래스에는 추가 처리를 위해 적합한 형태로 페이지 이미지 차이를 가져오는 메서드가 있습니다: **ImagesDifference GetDifference(Page page1, Page page2)**.
 
-이 메서드는 비교 중인 첫 번째 페이지의 이미지와 차이 배열을 포함하는 [ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) 클래스의 객체를 반환합니다. 차이 배열과 원본 이미지는 **RGB24bpp** 픽셀 형식을 가집니다.
+이 메서드는 비교되는 첫 번째 페이지의 이미지와 차이 배열을 포함하는 [ImagesDifference](https://reference.aspose.com/pdf/ko/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) 클래스의 객체를 반환합니다. 차이 배열과 원본 이미지는 **RGB24bpp** 픽셀 형식을 가집니다.
 
-ImagesDifference를 사용하면 다른 이미지를 생성하고 차이 배열을 원본 이미지에 추가하여 비교 중인 두 번째 페이지의 이미지를 얻을 수 있습니다. 이를 위해 **ImagesDifference.GetDestinationImage 및 ImagesDifference.DifferenceToImage** 메서드를 사용합니다.
+ImagesDifference를 사용하면 다른 이미지를 생성하고 차이 배열을 원본 이미지에 추가하여 비교되는 두 번째 페이지의 이미지를 얻을 수 있습니다. 이를 위해 **ImagesDifference.GetDestinationImage 및 ImagesDifference.DifferenceToImage** 메서드를 사용합니다.
 
 ### GetDifference 메서드를 사용하여 PDF 비교
 
-제공된 코드는 두 PDF 문서를 비교하고 그들 간의 차이를 시각적으로 표현하는 [GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) 메서드를 정의합니다.
+제공된 코드는 두 PDF 문서를 비교하고 그들 간의 차이를 시각적으로 표현하는 [GetDifference](https://reference.aspose.com/pdf/ko/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) 메서드를 정의합니다.
 
 이 메서드는 두 PDF 파일의 첫 페이지를 비교하고 두 개의 PNG 이미지를 생성합니다:
 
 - 하나의 이미지는(diffPngFilePath) 페이지 간의 차이를 빨간색으로 강조 표시합니다.
 - 다른 이미지는(destPngFilePath) 대상(두 번째) PDF 페이지의 시각적 표현입니다.
 
-이 과정은 두 버전의 문서 간의 변경 사항이나 차이를 시각적으로 비교하는 데 유용할 수 있습니다.
+이 과정은 두 문서 버전 간의 변경 사항이나 차이를 시각적으로 비교하는 데 유용할 수 있습니다.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -259,7 +244,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 
 ### CompareDocumentsToPdf 메서드를 사용하여 PDF 비교
 
-제공된 코드 스니펫은 두 문서를 비교하고 비교 결과의 PDF 보고서를 생성하는 [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) 메서드를 사용했습니다.
+제공된 코드 스니펫은 두 문서를 비교하고 비교 결과의 PDF 보고서를 생성하는 [CompareDocumentsToPdf](https://reference.aspose.com/pdf/ko/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) 메서드를 사용했습니다.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

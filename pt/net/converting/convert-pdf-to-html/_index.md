@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1368",
+    "wordcount": "1569",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-html/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados."
 }
 </script>
@@ -82,10 +82,7 @@ sitemap:
 
 Este artigo explica como **converter PDF para HTML usando C#**. Ele cobre os seguintes tópicos.
 
-_Formatação_: **HTML**
-- [C# PDF para HTML](#csharp-pdf-to-html)
-- [C# Converter PDF para HTML](#csharp-pdf-to-html)
-- [C# Como converter arquivo PDF para HTML](#csharp-pdf-to-html)
+- [Converter PDF para HTML](#csharp-pdf-to-html)
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
@@ -110,14 +107,14 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 Aspose.PDF for .NET apresenta a você um aplicativo online gratuito ["PDF para HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), onde você pode tentar investigar a funcionalidade e a qualidade com que funciona.
 
-[![Aspose.PDF Conversão PDF para HTML com Aplicativo Gratuito](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
+[![Aspose.PDF Conversão de PDF para HTML com Aplicativo Gratuito](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
-Aspose.PDF for .NET fornece um código de duas linhas para transformar um arquivo PDF de origem em HTML. A [`enumeração SaveFormat`](https://reference.aspose.com/pdf/net/aspose.pdf/saveformat) contém o valor Html que permite salvar o arquivo de origem em HTML. O seguinte trecho de código mostra o processo de conversão de um arquivo PDF em HTML.
+Aspose.PDF for .NET fornece um código de duas linhas para transformar um arquivo PDF de origem em HTML. A [`enumeração SaveFormat`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/saveformat) contém o valor Html que permite salvar o arquivo de origem em HTML. O seguinte trecho de código mostra o processo de conversão de um arquivo PDF em HTML.
 
-<a name="csharp-pdf-to-html"><strong>Passos: Converter PDF para HTML em C#</strong></a>
+<a name="csharp-pdf-to-html" id="cshart-pdf-to-html"><strong>Converter PDF para HTML</strong></a>
 
-1. Crie uma instância do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) com o documento PDF de origem.
+1. Crie uma instância do objeto [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/) com o documento PDF de origem.
 2. Salve-o no formato **SaveFormat.Html** chamando o método **Document.Save()**.
 
 ```csharp
@@ -165,7 +162,7 @@ private static void ConvertPDFtoMultiPageHTML()
 
 ### Especificar a pasta para armazenar arquivos SVG
 
-Durante a conversão de PDF para HTML, é possível especificar a pasta onde as imagens SVG devem ser salvas. Use a [`classe HtmlSaveOption`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions) [`propriedade SpecialFolderForSvgImages`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) para especificar um diretório especial para imagens SVG. Esta propriedade obtém ou define o caminho para o diretório onde as imagens SVG devem ser salvas quando encontradas durante a conversão. Se o parâmetro estiver vazio ou nulo, então quaisquer arquivos SVG são salvos junto com outros arquivos de imagem.
+Durante a conversão de PDF para HTML, é possível especificar a pasta onde as imagens SVG devem ser salvas. Use a [`classe HtmlSaveOption`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlsaveoptions) [`propriedade SpecialFolderForSvgImages`](https://reference.aspose.com/pdf/pt/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) para especificar um diretório especial para imagens SVG. Essa propriedade obtém ou define o caminho para o diretório onde as imagens SVG devem ser salvas quando encontradas durante a conversão. Se o parâmetro estiver vazio ou nulo, então quaisquer arquivos SVG são salvos junto com outros arquivos de imagem.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -272,9 +269,9 @@ private static void SavePDFtoHTMLWithSeparateImageFolder()
 
 Recentemente, fomos solicitados a introduzir um recurso onde arquivos PDF são convertidos em HTML e o usuário pode obter apenas o conteúdo da tag `<body>` para cada página. Isso produziria um arquivo com detalhes de CSS, `<html>`, `<head>` e todas as páginas em outros arquivos apenas com conteúdos de `<body>`.
 
-Para atender a essa necessidade, uma nova propriedade, HtmlMarkupGenerationMode, foi introduzida na classe HtmlSaveOptions.
+Para atender a essa exigência, uma nova propriedade, HtmlMarkupGenerationMode, foi introduzida na classe HtmlSaveOptions.
 
-Com o seguinte trecho de código simples, você pode dividir a saída HTML em páginas. Nas páginas de saída, todos os objetos HTML devem ir exatamente para onde vão agora (processamento e saída de fontes, criação e saída de CSS, criação e saída de imagens), exceto que o HTML de saída conterá conteúdos atualmente colocados dentro das tags (agora as tags “body” serão omitidas). No entanto, ao usar essa abordagem, o link para o CSS é responsabilidade do seu código, pois coisas como serão removidas. Para esse propósito, você pode ler o CSS via File.ReadAllText() e enviá-lo via AJAX para uma página da web onde será aplicado pelo jQuery.
+Com o seguinte trecho de código simples, você pode dividir a saída HTML em páginas. Nas páginas de saída, todos os objetos HTML devem ir exatamente para onde vão agora (processamento e saída de fontes, criação e saída de CSS, criação e saída de imagens), exceto que o HTML de saída conterá conteúdos atualmente colocados dentro das tags (agora as tags “body” serão omitidas). No entanto, ao usar essa abordagem, o link para o CSS é responsabilidade do seu código, porque coisas como serão removidas. Para esse propósito, você pode ler o CSS via File.ReadAllText() e enviá-lo via AJAX para uma página da web onde será aplicado pelo jQuery.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -357,17 +354,3 @@ private static void ConvertPDFToHTMLWithLayersRendering()
     }
 }
 ```
-
-## Veja Também 
-
-Este artigo também cobre estes tópicos. Os códigos são os mesmos que acima.
-
-_Formatação_: **HTML**
-- [C# PDF para HTML Código](#csharp-pdf-to-html)
-- [C# PDF para HTML API](#csharp-pdf-to-html)
-- [C# PDF para HTML Programaticamente](#csharp-pdf-to-html)
-- [C# PDF para HTML Biblioteca](#csharp-pdf-to-html)
-- [C# Salvar PDF como HTML](#csharp-pdf-to-html)
-- [C# Gerar HTML a partir de PDF](#csharp-pdf-to-html)
-- [C# Criar HTML a partir de PDF](#csharp-pdf-to-html)
-- [C# PDF para HTML Conversor](#csharp-pdf-to-html)

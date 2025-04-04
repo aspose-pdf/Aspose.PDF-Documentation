@@ -255,7 +255,7 @@ Aspose.PDF for .NET presents you online free application ["PDF to XPS"](https://
 
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into the Windows operating system.
 
-To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) that is used as the second argument to the [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method to generate the XPS file.
+To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xpssaveoptions) that is used as the second argument to the [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method to generate the XPS file.
 
 Since the 24.2 release, Aspose.PDF has implemented converting Searchable PDF to XPS while keeping Text Selectable in the resultant XPS. To preserve text, it's necessary to set the XpsSaveOptions.SaveTransparentTexts property to true.
 

@@ -491,7 +491,7 @@ Aspose.PDF for .NET presents you online free application ["SVG to PDF"](https://
 [![Aspose.PDF Convertion SVG to PDF with Free App](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
-To convert SVG files to PDF, use the class named [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) which is used to initialize the [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
+To convert SVG files to PDF, use the class named [SvgLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/svgloadoptions) which is used to initialize the [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
 
 <a name="csharp-svg-to-pdf" id="csharp-svg-to-pdf"><strong>Convert SVG to PDF</strong></a>
 

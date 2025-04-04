@@ -1,6 +1,6 @@
 ---
-title: PDF를 PDF/A 형식으로 변환하기
-linktitle: PDF를 PDF/A 형식으로 변환하기
+title: PDF를 PDF/A 형식으로 변환
+linktitle: PDF를 PDF/A 형식으로 변환
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to PDF/A formats",
     "alternativeHeadline": "Effortless PDF to PDF/A Conversion with Validation in C#",
-    "abstract": "Aspose.PDF for .NET의 기능은 표준 PDF 파일을 PDF/A-1b, PDF/A-2u 및 PDF/A-3a를 포함한 다양한 PDF/A 준수 형식으로 원활하게 변환할 수 있게 해줍니다. 이 기능은 포괄적인 검증을 통해 PDF/A 표준 준수를 보장할 뿐만 아니라 추가 파일 첨부 및 누락된 글꼴 대체를 허용하여 문서의 무결성과 접근성을 향상시킵니다. 효율적이고 신뢰할 수 있는 PDF/A 변환을 위한 Aspose.PDF의 강력한 기능을 탐색해보세요.",
+    "abstract": "Aspose.PDF for .NET의 기능은 표준 PDF 파일을 PDF/A-1b, PDF/A-2u 및 PDF/A-3a를 포함한 다양한 PDF/A 준수 형식으로 원활하게 변환할 수 있게 해줍니다. 이 기능은 포괄적인 검증을 통해 PDF/A 표준 준수를 보장할 뿐만 아니라 추가 파일 첨부 및 누락된 글꼴 대체를 허용하여 문서의 무결성과 접근성을 향상시킵니다. 효율적이고 신뢰할 수 있는 PDF/A 변환을 위한 Aspose.PDF의 강력한 기능을 탐색하세요.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "1737",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,16 +73,20 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하세요."
 }
 </script>
 
-**Aspose.PDF for .NET**는 PDF 파일을 <abbr title="Portable Document Format / A">PDF/A</abbr> 준수 PDF 파일로 변환할 수 있게 해줍니다. 이를 수행하기 전에 파일을 검증해야 합니다. 이 주제에서는 그 방법을 설명합니다.
+**Aspose.PDF for .NET**은 PDF 파일을 <abbr title="Portable Document Format / A">PDF/A</abbr> 준수 PDF 파일로 변환할 수 있게 해줍니다. 이를 수행하기 전에 파일을 검증해야 합니다. 이 주제에서는 그 방법을 설명합니다.
+
+- [PDF를 PDF/A-1b로 변환](#csharp-convert-pdf-to-a1b)
+- [PDF를 PDF/A-3b로 변환](#csharp-convert-pdf-to-a3b)
+- [PDF를 PDF/A-4로 변환](#csharp-convert-pdf-to-a4)
 
 {{% alert color="primary" %}}
 
-PDF/A 준수를 검증하기 위해 Adobe Preflight 및 veraPDF를 따릅니다. 시장의 모든 도구는 PDF/A 준수에 대한 고유한 "표현"을 가지고 있습니다. 참조용으로 PDF/A 검증 도구에 대한 이 기사를 확인하세요. Aspose.PDF가 PDF 파일을 생성하는 방식을 검증하기 위해 Adobe 제품을 선택했습니다. Adobe는 PDF와 관련된 모든 것의 중심에 있습니다.
+PDF/A 준수를 검증하기 위해 Adobe Preflight 및 veraPDF를 따릅니다. 시장의 모든 도구는 PDF/A 준수에 대한 고유한 "표현"을 가지고 있습니다. 참조를 위해 PDF/A 검증 도구에 대한 이 기사를 확인하세요. Aspose.PDF가 PDF 파일을 생성하는 방식을 검증하기 위해 Adobe 제품을 선택했습니다. Adobe는 PDF와 관련된 모든 것의 중심에 있습니다.
 
 {{% /alert %}}
 
@@ -91,7 +95,7 @@ Document 클래스의 Convert 메서드를 사용하여 파일을 변환합니�
 {{% alert color="success" %}}
 **온라인에서 PDF를 PDF/A로 변환해 보세요**
 
-Aspose.PDF for .NET는 ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)라는 온라인 무료 애플리케이션을 제공하여 기능과 품질을 조사해 볼 수 있습니다.
+Aspose.PDF for .NET은 ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)라는 온라인 무료 애플리케이션을 제공하여 기능과 품질을 조사해 볼 수 있습니다.
 
 [![Aspose.PDF PDF를 PDF/A로 변환하는 무료 앱](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
@@ -101,7 +105,9 @@ Aspose.PDF for .NET는 ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conve
 ## 지원되는 표준
 다음 표준을 지원합니다: PDF/A-1b, PDF/A-1a, PDF/A-2b, PDF/A-2u, PDF/A-2a, PDF/A-3b, PDF/A-3u, PDF/A-3a, PDF/A-4, PDF/A-4e, PDF/A-4f.
 
-## PDF 파일을 PDF/A-1b로 변환하기
+## PDF 파일을 PDF/A-1b로 변환
+
+<a name="csharp-convert-pdf-to-a1b" id="csharp-convert-pdf-to-a1b"><strong>PDF를 PDF/A-1b로 변환</strong></a>
 
 다음 코드 스니펫은 PDF 파일을 PDF/A-1b 준수 PDF로 변환하는 방법을 보여줍니다.
 
@@ -189,9 +195,11 @@ private static void ValidatePdfAStandard()
 {{< /tab >}}
 {{< /tabs >}}
 
-## PDF 파일을 PDF/A-3b로 변환하기
+## PDF 파일을 PDF/A-3b로 변환
 
-Aspose.PDF for .NET는 PDF 파일을 PDF/A-3b 형식으로 변환하는 기능도 지원합니다.
+<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>PDF를 PDF/A-3b로 변환</strong></a>
+
+Aspose.PDF for .NET은 PDF 파일을 PDF/A-3b 형식으로 변환하는 기능도 지원합니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -236,9 +244,11 @@ private static void ConvertPdfToPdfA3b()
 {{< /tab >}}
 {{< /tabs >}}
 
-## PDF 파일을 PDF/A-4로 변환하기
+## PDF 파일을 PDF/A-4로 변환
 
-Aspose.PDF for .NET는 PDF 파일을 PDF/A-4 형식으로 변환하는 기능도 지원합니다.
+<a name="csharp-convert-pdf-to-a4" id="csharp-convert-pdf-to-a4"><strong>PDF를 PDF/A-4로 변환</strong></a>
+
+Aspose.PDF for .NET은 PDF 파일을 PDF/A-4 형식으로 변환하는 기능도 지원합니다.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -289,9 +299,10 @@ private static void ConvertPdfToPdfA4()
 {{< /tab >}}
 {{< /tabs >}}
 
-## PDF/A 파일에 첨부 파일 추가하기
+## PDF/A 파일에 첨부 파일 추가
 
-PDF/A 준수 문서에 파일을 첨부해야 하는 경우, Aspose.PDF.PdfFormat 열거형에서 PDF_A_3A 값을 사용하는 것을 권장합니다. PDF/A-3a는 PDF/A 준수 파일에 모든 파일 형식을 첨부할 수 있는 기능을 제공하는 형식입니다.
+PDF/A 준수 문서에 파일을 첨부해야 하는 경우, Aspose.PDF.PdfFormat 열거형에서 PDF_A_3A 값을 사용하는 것을 권장합니다.
+PDF/A-3a는 PDF/A 준수 파일에 모든 파일 형식을 첨부할 수 있는 기능을 제공하는 형식입니다.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -349,9 +360,9 @@ private static void AddAttachmentToPdfA()
 {{< /tab >}}
 {{< /tabs >}}
 
-## 누락된 글꼴을 대체 글꼴로 교체하기
+## 누락된 글꼴을 대체 글꼴로 교체
 
-PDF/A 표준에 따라 글꼴은 PDF/A 문서에 포함되어야 합니다. 그러나 소스 문서에 글꼴이 포함되어 있지 않거나 기계에 존재하지 않는 경우 PDF/A 변환이 실패합니다. 이 경우, 누락된 글꼴을 기계에 존재하는 대체 글꼴로 교체해야 합니다. 누락된 글꼴은 PDF에서 PDF/A로 변환하는 동안 SimpleFontSubsitution 클래스를 사용하여 대체할 수 있습니다.
+PDF/A 표준에 따라 글꼴은 PDF/A 문서에 포함되어야 합니다. 그러나 소스 문서에 글꼴이 포함되어 있지 않거나 기계에 존재하지 않으면 PDF/A 변환이 실패합니다. 이 경우, 누락된 글꼴을 기계에 존재하는 대체 글꼴로 교체해야 합니다. 누락된 글꼴은 PDF에서 PDF/A로 변환하는 동안 SimpleFontSubsitution 클래스를 사용하여 대체할 수 있습니다.
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
