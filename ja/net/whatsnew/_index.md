@@ -18,7 +18,7 @@ lastmod: "2025-01-31"
     "@type": "TechArticle",
     "headline": "Whats new",
     "alternativeHeadline": "Discover the latest enhancements in Aspose.PDF for .NET",
-    "abstract": "Aspose.PDF for .NETの最新の強化を発見してください。これには、堅牢な文書署名と検証のための楕円曲線デジタル署名アルゴリズム（ECDSA）の導入と、複数の楕円曲線のサポートが含まれます。さらに、新機能により、PDFへの挿入時に画像をトリミングできるようになり、エラー処理の改善のためのクラッシュレポートの生成が可能になります。これらの更新により、PDF管理が効率化され、文書ワークフローのセキュリティが強化されます。",
+    "abstract": "Aspose.PDF for .NETの最新の強化を発見してください。これには、堅牢な文書署名と検証のための楕円曲線デジタル署名アルゴリズム（ECDSA）の導入と、複数の楕円曲線のサポートが含まれます。さらに、新機能により、PDFへの挿入時に画像をトリミングし、エラー処理を改善するためのクラッシュレポートを生成することができます。これらの更新により、PDF管理が効率化され、文書ワークフローのセキュリティが強化されます。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ lastmod: "2025-01-31"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "8022",
+    "wordcount": "8743",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,10 +73,26 @@ lastmod: "2025-01-31"
         "@type": "WebPage",
         "@id": "/net/whatsnew/"
     },
-    "dateModified": "2024-12-04",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
 }
 </script>
+
+## Aspose.PDF 25.3の新機能
+
+**最も重要な変更点**
+
+Aspose.PDF 25.3では、以下を追加しました：
+* 19の[ハイコードプラグイン製品](https://products.aspose.net/pdf/)。
+* [侵害された](https://docs.aspose.com/pdf/net/extract-image-and-signature-information/#checking-signatures-for-compromise)PDFデジタル署名の検出。
+* [ベイツ番号のアーティファクト](https://docs.aspose.com/pdf/net/artifacts/#adding-bates-numbering-artifact)。
+* タグ付き要素の作成のための[位置設定](https://docs.aspose.com/pdf/net/create-tagged-pdf/#adjust-position-of-text-structure)。
+* PDFページに追加する際の[グラフィカルシェイプの境界を検証する](https://docs.aspose.com/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/)機能。
+> 変更の詳細情報と使用例については、[Aspose.PDF 25.3リリースノート](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/)ページをご覧ください。
+
+**その他の注目すべき強化**
+
+画像が多いPDFの変換において、パフォーマンスとメモリ消費を改善しました。処理速度は現在2倍速く、テストされたシナリオではメモリ消費が10%削減されました。
 
 ## Aspose.PDF 25.2の新機能
 
@@ -84,17 +100,16 @@ lastmod: "2025-01-31"
 
 Aspose.PDF 25.2では、以下を追加しました：
 * [PDFからPDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/)標準への変換のサポート。
-* 署名中にCustomSignHashデリゲートを二度呼び出さないための[オプション](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function)。
+* 署名中にCustomSignHashデリゲートの二重呼び出しを回避するための[オプション](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function)。
 * PDFの[digital signatures](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures)に関する情報を取得するための新しい`GetSignatureNames()`メソッド。
 * 複数のウィジェット注釈を持つ[TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield)の作成の可能性。
-> [!NOTE]
-> 変更に関する詳細情報と使用例は、[Aspose.PDF 25.2リリースノート](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/)ページで確認できます。
+> 変更の詳細情報と使用例については、[Aspose.PDF 25.2リリースノート](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/)ページをご覧ください。
 
 **その他の注目すべき強化**
 
-* [PDF最適化](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images)における品質損失なしの画像圧縮が強化されました。圧縮された文書のサイズが削減されました。
-* 文書の[Repair](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/)メソッドが改善されました。これにより、Annotation.Rect配列内の値をチェックして修正できるようになりました。
-* システムのText.Json依存関係のバージョンが更新され、潜在的な脆弱性CVE-2024-43485を回避しました。
+* [PDF最適化](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images)における品質損失のない画像圧縮が強化されました。圧縮された文書のサイズが削減されました。
+* [ドキュメント`Repair`メソッド](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/repair/)が改善されました。これにより、Annotation.Rect配列の値をチェックして修正できるようになりました。
+* システム.Text.Json依存関係のバージョンが更新され、潜在的な脆弱性CVE-2024-43485を回避しました。
 * PDF署名攻撃の検出が改善され、誤検知の結果を防止します。
 * リソース辞書を削除するための公開APIが提供されました：
 
@@ -142,11 +157,11 @@ Aspose.PDF 25.1では、以下を追加しました：
 * 証明書機関（CA）サーバーを使用してPDF署名を検証する機能。
 * SHA-3ハッシュアルゴリズムを使用したクロスプラットフォームPDF署名検証。
 
-変更に関する詳細情報と使用例は、[Aspose.PDF 25.1リリースノート](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/)ページで確認できます。
+変更の詳細情報と使用例については、[Aspose.PDF 25.1リリースノート](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/)ページをご覧ください。
 
 ## Aspose.PDF 24.12の新機能
 
-PDF/XおよびPDF/A変換のための外部ICCプロファイルへのパスを渡す機能は、PdfFormatConversionOptions.IccProfileFileNameプロパティによって数年前からライブラリに存在していました。現在、OutputIntentクラスのオブジェクトを使用してOutputIntentプロパティにデータを渡すことも可能です。
+PDF/XおよびPDF/A変換のための外部ICCプロファイルへのパスを渡す機能は、数年前からライブラリに存在しており、PdfFormatConversionOptions.IccProfileFileNameプロパティによって有効になっています。現在、OutputIntentクラスのオブジェクトを使用してOutputIntentプロパティを埋めるデータを渡すことも可能です。
 
 次のスニペットは、注釈FOGRA39 ICCプロファイルを使用して注釈文書をPDF/X-1に変換する方法を示しています：
 ```csharp
@@ -180,9 +195,9 @@ private static void ConvertPdfToPdfx1UsingCustomIccProfile()
 }
 ```
 
-文書生成、変換、およびテキスト置換のために最も適したフォントを見つけるためのアナライザーが追加されました。最も適したフォントの検索は、ソースPDFに要求された操作を実行するためのフォント情報が不足している場合に行われます。「最も適した」フォントは、PDFフォントに関する情報と要求されたテキスト言語および文字セットに基づいて、環境にインストールされているフォントの中から決定されます。
+文書生成、変換、およびテキスト置換のために最も適したフォントを見つけるためのアナライザーが追加されました。最も適したフォントの検索は、ソースPDFに要求された操作を完了するためのフォント情報が不足している場合に実行されます。「最も適した」フォントは、PDFフォントに関する情報と要求されたテキスト言語および文字セットに基づいて、環境にインストールされているフォントの中から決定されます。
 
-次のサンプルは、テキストが空白の四角に変わらないようにPDFからPNGへの変換でこれをどのように使用できるかを示しています。
+次のサンプルは、テキストが空白の四角に変わるのを避けるためにPDFからPNGへの変換でこれをどのように使用できるかを示しています。
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void PdfToPngWithAnalyzingFonts()
@@ -265,7 +280,7 @@ private static void AutoSetTheFontSizeOfTextStampToFitPage()
 
 ## Aspose.PDF 24.11の新機能
 
-新しいページを追加または挿入する際にページ番号と日付のヘッダー/フッターのアーティファクトを更新するための`PageCollection`拡張メソッドが追加されました。ページ番号と日付形式の設定は、Adobe Acrobatによって実装されたPDF仕様に従って元の文書に保存される必要があります。
+`PageCollection`拡張メソッドが追加され、新しいページを追加または挿入する際にページ番号と日付のヘッダー/フッターアーティファクトを更新できるようになりました。ページ番号と日付形式の設定は、Adobe Acrobatによって実装されたPDF仕様に従って元の文書に保存される必要があります。
 
 次のコードスニペットは、文書内のページ付けを更新する方法を示しています：
 ```csharp
@@ -322,9 +337,9 @@ private static void SignWithManualDigestHashAlgorithm(string cert, string pass)
 }
 ```
 
-`HtmlSaveOptions`クラスに新しい`FontEncodingStrategy`プロパティが追加されました。PDF仕様では、PDFからテキストコンテンツを抽出するために`ToUnicode`テーブルを使用することを推奨しています。ただし、フォントのCMapテーブルを使用すると、特定のタイプの文書に対してより良い結果が得られる場合があります。バージョン24.11以降、どのテーブルをデコードに使用するかを選択できます。デフォルトでは、`ToUnicode`テーブルが使用されます。
+`HtmlSaveOptions`クラスに新しい`FontEncodingStrategy`プロパティが追加されました。PDF仕様では、PDFからテキストコンテンツを抽出するために`ToUnicode`テーブルを使用することを推奨しています。ただし、フォントのCMapテーブルを使用すると、特定のタイプの文書に対してより良い結果が得られる場合があります。バージョン24.11以降、デコードに使用するテーブルを選択できます。デフォルトでは、`ToUnicode`テーブルが使用されます。
 
-次のサンプルは、新しいオプションの使用方法を示しています：
+次のサンプルは、新しいオプションを使用する方法を示しています：
 ```csharp
 private static void ConvertPdfToHtmlUsingCMap()
 {
@@ -348,7 +363,7 @@ private static void ConvertPdfToHtmlUsingCMap()
 
 ## Aspose.PDF 24.10の新機能
 
-楕円曲線デジタル署名アルゴリズム（ECDSA）は、従来のアルゴリズムと比較して小さなキーサイズで強力なセキュリティを提供することで知られる現代の暗号アルゴリズムです。バージョン24.10以降、ECDSAを使用してPDF文書に署名し、ECDSA署名を検証することが可能になりました。デジタル署名の作成と検証にサポートされている楕円曲線は次のとおりです：
+楕円曲線デジタル署名アルゴリズム（ECDSA）は、従来のアルゴリズムに比べて小さいキーサイズで強力なセキュリティを提供することで知られる現代の暗号アルゴリズムです。バージョン24.10以降、ECDSAを使用してPDF文書に署名し、ECDSA署名を検証することが可能になりました。デジタル署名の作成と検証にサポートされている楕円曲線は次のとおりです：
 * P-256 (secp256r1)。
 * P-384 (secp384r1)。
 * P-521 (secp521r1)。
@@ -492,7 +507,7 @@ private static void ExtractPdfLayer()
 }
 ```
 
-`GraphicalPdfComparer`クラスが追加され、PDF文書とページのグラフィック比較が可能になりました。グラフィック比較は、文書ページの画像を扱います。結果は`ImagesDifference`オブジェクトまたは、元の画像と差分をマージしたPDF文書として返されます。グラフィック比較は、テキストやグラフィックコンテンツにわずかな違いがある文書に最も役立ちます。
+`GraphicalPdfComparer`クラスが追加され、PDF文書とページのグラフィック比較が可能になりました。グラフィック比較は、文書ページの画像を扱います。結果は`ImagesDifference`オブジェクトまたは元の画像と差分をマージしたPDF文書として返されます。グラフィック比較は、テキストやグラフィックコンテンツにわずかな違いがある文書に最も役立ちます。
 
 次のコードスニペットは、2つのPDF文書のグラフィック比較を示し、差分を含む画像を結果のPDF文書に保存します：
 
@@ -521,7 +536,7 @@ private static void ComparePDFWithCompareDocumentsToPdfMethod()
 }
 ```
 
-APIがFileFormat.HEICとAspose.PDFの統合のために実装されました。HEIC（High-Efficiency Image Coding）は、2017年にAppleによってiOS 11で導入された現代の画像ファイル形式で、iPhoneやiPadのデフォルトの画像形式です。
+ファイルフォーマット.HEICとAspose.PDFを統合するためのAPIが実装されました。HEIC（High-Efficiency Image Coding）は、2017年にAppleによってiOS 11で導入された現代の画像ファイル形式で、iPhoneやiPadのデフォルトの画像形式です。
 
 HEIC画像をPDFに変換するには、`FileFormat.HEIC` NuGetパッケージへの参照を追加し、次のコードスニペットを使用する必要があります：
 
@@ -613,7 +628,7 @@ private static void FlattenTransparency()
 
 Aspose.PDF for .NETを使用してPDF文書を比較する
 
-24.7以降、注釈マークと並列出力を使用してPDF文書の内容を比較することが可能になりました：
+24.7以降、注釈マークと並べて出力を持つPDF文書の内容を比較することが可能になりました：
 
 最初のコードスニペットは、2つのPDF文書の最初のページを比較する方法を示しています。
 
@@ -705,9 +720,9 @@ plugin.Process(opt);
 - RemoveChild
 - ClearChilds
 
-また、このリリースでは、低レベルの関数を使用してアクセシブルなPDFを作成することが可能になりました：
+また、このリリースでは、低レベルの機能を使用してアクセシブルなPDFを作成することが可能になりました：
 
-次のコードスニペットは、PDF文書とそのタグ付きコンテンツを処理するためにAspose.PDFライブラリを利用します。
+次のコードスニペットは、PDF文書とそのタグ付きコンテンツを処理するためにAspose.PDFライブラリを利用しています。
 
 ```cs
 private static void CreateAnAccessibleDocument()
@@ -870,7 +885,7 @@ private static void FlattenPdfLayers()
 }
 ```
 
-'Layer.Flatten(bool cleanupContentStream)'メソッドは、オプショナルコンテンツグループマーカーをコンテンツストリームから削除するかどうかを指定するブールパラメータを受け入れます。cleanupContentStreamパラメータをfalseに設定すると、フラット化のプロセスが高速化されます。
+`Layer.Flatten(bool cleanupContentStream)`メソッドは、オプショナルコンテンツグループマーカーをコンテンツストリームから削除するかどうかを指定するブールパラメータを受け取ります。cleanupContentStreamパラメータをfalseに設定すると、フラット化のプロセスが高速化されます。
 
 ### PDF内のすべてのレイヤーを1つにマージする
 
@@ -1046,7 +1061,7 @@ var plugin = new PdfAConverter();
 plugin.Process(options);
 ```
 
-- TextFragmentAbsorber内のフレーズのリストを検索する機能を実装：
+- TextFragmentAbsorber内のフレーズのリストを検索する実装：
 
 ```cs
 private static void SearchMultipleRegex()
@@ -1125,7 +1140,7 @@ private static void AddEmptySignatureFieldOnEveryPage()
 
 24.2以降、PDFファイルからベクターデータを取得することが可能になりました。
 
-GraphicsAbsorberを実装して文書からベクターデータを取得します：
+文書からベクターデータを取得するためにGraphicsAbsorberが実装されました：
 
 ```cs
 private static void UsingGraphicsAbsorber()
@@ -1159,7 +1174,7 @@ private static void UsingGraphicsAbsorber()
 
 ## Aspose.PDF 24.1の新機能
 
-24.1リリース以降、FDF形式の注釈をPDFにインポートすることが可能になりました。
+24.1リリース以降、FDF形式の注釈をPDFにインポートすることが可能になりました：
 
 ```cs
 private static void ImportFDFByForm()
@@ -1184,7 +1199,7 @@ private static void ImportFDFByForm()
 
 DictionaryEditorのコード例は次のとおりです：
 
-- 新しい値を追加
+- 新しい値を追加する
 
 ```cs
 /private static void AddNewKeysToPdfPageDicrionary()
@@ -1215,7 +1230,7 @@ DictionaryEditorのコード例は次のとおりです：
 }
 ```
 
-- 辞書に値を追加して設定
+- 辞書に値を追加して設定する
 
 ```cs
 private static void ModifyKeysInPdfPageDicrionary()
@@ -1240,7 +1255,7 @@ private static void ModifyKeysInPdfPageDicrionary()
 }
 ```
 
-- 辞書から値を取得
+- 辞書から値を取得する
 
 ```cs
 private static void GetValuesFromPdfPageDicrionary()
@@ -1260,7 +1275,7 @@ private static void GetValuesFromPdfPageDicrionary()
 }
 ```
 
-- 辞書から値を削除
+- 辞書から値を削除する
 
 ```cs
 private static void RemoveFromPdfPageDicrionary()
@@ -1286,7 +1301,7 @@ private static void RemoveFromPdfPageDicrionary()
 
 ## Aspose.PDF 23.12の新機能
 
-フォームを見つけてテキストを置き換えるには、次のコードスニペットを使用します：
+フォームを見つけてテキストを置き換えることができる次のコードスニペットを使用できます：
 
 ```cs
 private static void ReplaceTextInPdfForm()
@@ -1323,7 +1338,7 @@ private static void ReplaceTextInPdfForm()
 }
 ```            
 
-または、フォームを完全に削除することもできます：
+また、フォームを完全に削除することもできます：
 
 ```cs
 private static void DeleteSpecifiedForm1()
@@ -1382,7 +1397,7 @@ private static void DeleteSpecifiedForm2()
 }
 ``` 
 
-- 次のコードスニペットを使用してすべてのフォームを削除できます：
+- 次のコードスニペットを使用して、すべてのフォームを削除できます：
 
 ```cs
 private static void RemoveAllForms()
@@ -1629,9 +1644,9 @@ private class RowSpanWorker
 
 ## Aspose.PDF 23.10の新機能
 
-現在の更新では、タグ付きPDFからタグを削除する3つのバージョンが紹介されています。
+現在の更新では、タグ付きPDFからタグを削除する3つのバージョンが提供されています。
 
-- documentElement（ルートツリー要素）からいくつかのノード要素を削除：
+- ドキュメント要素（ルートツリー要素）から一部のノード要素を削除：
 
 ```cs
 private static void RemoveStructElement()
@@ -1662,7 +1677,7 @@ private static void RemoveStructElement()
 }
 ```
 
-- 文書からすべてのマークされた要素のタグを削除しますが、構造要素は保持します：
+- ドキュメントからすべてのマークされた要素のタグを削除しますが、構造要素は保持します：
 
 ```cs
 private static void RemoveMarkedElementsTags()
@@ -1698,7 +1713,7 @@ private static void RemoveMarkedElementsTags()
 }
 ```
 
-- すべてのタグを削除：
+- タグをすべて削除：
 
 ```cs
 private static void RemoveTags()
@@ -1743,7 +1758,7 @@ private static void DisplayCharacterHeight()
 }
 ```
 
-測定は文書に埋め込まれたフォントに基づいていることに注意してください。寸法に関する情報が不足している場合、このメソッドは0を返します。
+測定は、文書に埋め込まれたフォントに基づいていることに注意してください。寸法に関する情報が不足している場合、このメソッドは0を返します。
 
 また、このリリースでは、署名されたHASHを使用してPDFに署名する機能が提供されます：
 
@@ -1818,7 +1833,7 @@ private static void SetPrintScaling()
 
 ## Aspose.PDF 23.9の新機能
 
-23.9以降、フィル可能なフィールドから子注釈を削除するサポートが追加されました。
+23.9以降、フィル可能なフィールドから子注釈を削除するサポートがあります。
 
 ```cs
 private static void RemoveChildAnnotationFromFillableField()
@@ -1844,7 +1859,7 @@ private static void RemoveChildAnnotationFromFillableField()
 
 ## Aspose.PDF 23.8の新機能
 
-23.8以降、増分更新の検出を追加するサポートが追加されました。
+23.8以降、増分更新の検出を追加するサポートがあります。
 
 PDF文書内の増分更新を検出する機能が追加されました。この機能は、文書が増分更新で保存された場合に'true'を返し、そうでない場合は'false'を返します。
 
@@ -1937,7 +1952,7 @@ private static void GetAndSetValueOfMultivalueCheckboxField()
 
 ## Aspose.PDF 23.7の新機能
 
-Aspose.PDF 23.7以降、形状抽出を追加するサポートが追加されました：
+Aspose.PDF 23.7以降、形状抽出を追加するサポートがあります：
 
 ```cs
 private static void CopyShape()
@@ -1966,7 +1981,7 @@ private static void CopyShape()
 }
 ```
 
-また、テキストを追加する際のオーバーフローを検出する機能がサポートされています：
+また、テキストを追加する際にオーバーフローを検出する機能もサポートされています：
 
 ```cs
 private static void FitTextIntoRectangle()
@@ -2013,17 +2028,17 @@ private static void FitTextIntoRectangle()
 
 ## Aspose.PDF 23.6の新機能
 
-Aspose.PDF 23.6以降、次のプラグインを追加するサポートが追加されました：
+Aspose.PDF 23.6以降、次のプラグインを追加するサポートがあります：
 
-- Aspose PdfConverter Html to PDF 
-- Aspose PdfOrganizer Resize API
-- Aspose PdfOrganizer Compress API
+- Aspose PdfConverter HTMLからPDF 
+- Aspose PdfOrganizer リサイズAPI
+- Aspose PdfOrganizer 圧縮API
 
 Aspose.PdfFormを更新 
-- 文書内のフィールドから「値」をCSVファイルにエクスポートする機能を追加
+- ドキュメント内のフィールドから「値をCSVファイルにエクスポート」する機能を追加
 - 個別のフィールドのプロパティを設定する機能を追加
 
-また、HTML、Epubページのタイトルを設定する機能が追加されました：
+また、HTML、Epubページのタイトルを設定する機能も追加されました：
 
 ```cs
 private static void SetHtmlTitle()
@@ -2057,7 +2072,7 @@ private static void SetHtmlTitle()
 
 ## Aspose.PDF 23.5の新機能
 
-23.5以降、RedactionAnnotation FontSizeオプションを追加するサポートが追加されました。このタスクを解決するために次のコードスニペットを使用します：
+23.5以降、RedactionAnnotation FontSizeオプションを追加するサポートがあります。このタスクを解決するために次のコードスニペットを使用します：
 
 ```cs
 private static void AddRedactionAnnotationFontSize() 
@@ -2100,17 +2115,17 @@ Aspose.PDFは.NET 7 SDKのリリースを発表しました。
 
 ## Aspose.PDF 23.3.1の新機能
 
-Aspose.PDF 23.3以降、次のプラグインを追加するサポートが追加されました：
+Aspose.PDF 23.3以降、次のプラグインを追加するサポートがあります：
 
 - Aspose.PdfForm
-- Aspose.PdfConverter PDF to HTML
-- Aspose.PdfConverter PDF to XLSX
-- Aspose.PdfOrganizer Rotate
+- Aspose.PdfConverter PDFからHTML
+- Aspose.PdfConverter PDFからXLSX
+- Aspose.PdfOrganizer 回転
 - Aspose.PdfExtrator for Images
 
 ## Aspose.PDF 23.3の新機能
 
-バージョン23.3では、ページに挿入する際に画像の比率と解像度を保持するサポートが追加されました。この問題を解決するために2つのメソッドを使用できます：
+バージョン23.3では、ページに挿入する際に画像の比率と解像度を保持するサポートが追加されました。次の2つのメソッドを使用してこの問題を解決できます：
 
 ```cs
 private static void InsertImageWithNativeResolutionAsTable()
@@ -2179,22 +2194,22 @@ private static void InsertImageWithNativeResolutionAsParagraph()
 
 ## Aspose.PDF 23.1.1の新機能
 
-Aspose.PDF 23.1.1以降、次のプラグインを追加するサポートが追加されました：
+Aspose.PDF 23.1.1以降、次のプラグインを追加するサポートがあります：
 
 - Aspose.PdfOrganizerプラグイン
 - Aspose.PdfExtractorプラグイン
 
 ## Aspose.PDF 23.1の新機能
 
-23.1バージョン以降、PrinterMark注釈を作成するサポートが追加されました。
+23.1バージョン以降、PrinterMark注釈を作成するサポートがあります。
 
-プリンターのマークは、複数のプレートジョブのコンポーネントを特定し、生産中の一貫した出力を維持するために、ページに追加されるグラフィックシンボルまたはテキストです。印刷業界で一般的に使用される例には、次のようなものがあります：
+プリンターのマークは、複数のプレートジョブのコンポーネントを特定し、製造中に一貫した出力を維持するためにページに追加されるグラフィックシンボルまたはテキストです。印刷業界で一般的に使用される例には、次のようなものがあります：
 
 - プレートを整列させるための登録ターゲット
 - 色とインク密度を測定するためのグレーランプとカラーバー
 - 出力媒体がトリミングされる場所を示すカットマーク
 
-色とインク密度を測定するためのカラーバーのオプションの例を示します。基本的な抽象クラスPrinterMarkAnnotationから、これらのストライプをすでに実装している子クラスColorBarAnnotationがあります。例を確認しましょう：
+色とインク密度を測定するためのカラーバーのオプションの例を示します。基本的な抽象クラスPrinterMarkAnnotationから、これらのストライプをすでに実装している子クラスColorBarAnnotationがあります。例を確認してみましょう：
 
 ```cs
 private static void AddPrinterMarkAnnotation()
@@ -2230,7 +2245,7 @@ private static void AddPrinterMarkAnnotation()
     }
 }
 ```
-また、ベクター画像の抽出もサポートしています。次のコードを使用してベクターグラフィックスを検出および抽出してみてください：
+また、ベクター画像の抽出もサポートされています。次のコードを使用してベクターグラフィックスを検出して抽出してみてください：
 
 ```cs
 private static void SavePdfVectorGraphicToSvg()
@@ -2249,7 +2264,7 @@ private static void SavePdfVectorGraphicToSvg()
 
 ## Aspose.PDF 22.12の新機能
 
-このリリースから、PDFをDICOM画像に変換するサポートが追加されました。
+このリリースから、PDFをDICOM画像に変換するサポートがあります。
 
 ```cs
 private static void PdfToDicom()
@@ -2269,7 +2284,7 @@ private static void PdfToDicom()
 
 ## Aspose.PDF 22.09の新機能
 
-22.09以降、署名内の主題の見出しの順序（E=、CN=、O=、OU=）を変更するプロパティを追加するサポートが追加されました。
+22.09以降、署名の主題のルビックの順序（E=、CN=、O=、OU=、）を変更するプロパティを追加するサポートがあります。
 
 ```cs
 private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath, string password)
@@ -2305,10 +2320,9 @@ private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath,
 
 ## Aspose.PDF 22.6の新機能
 
-22.5以降、PDFから下付き文字および上付き文字のテキストを抽出するサポートが追加されました。
+22.5以降、PDFから下付き文字と上付き文字のテキストを抽出するサポートがあります。
 
-PDF文書にH2Oのような下付き文字および上付き文字のテキストが含まれている場合、PDFからテキストを抽出する際には、そのフォーマット情報も抽出する必要があります（抽出されたプレーンテキストにおいて）。
-PDFにイタリック体のテキストが含まれている場合、それも抽出されたコンテンツに含める必要があります。
+PDF文書にH2Oのような下付き文字と上付き文字のテキストが含まれている場合、PDFからテキストを抽出する際には、その書式情報も抽出する必要があります（抽出されたプレーンテキストに）。PDFにイタリック体のテキストが含まれている場合、それも抽出されたコンテンツに含める必要があります。
 
 ```cs
 private static void ExtractTextSuperscript()
@@ -2337,9 +2351,9 @@ private static void ExtractTextSuperscript()
 
 ## Aspose.PDF 22.4の新機能
 
-このリリースには、Aspose.PDF for .NETに関する情報が含まれています：
+このリリースにはAspose.PDF for .NETに関する情報が含まれています：
 
-- PDFからODS：下付き文字および上付き文字のテキストを認識します；
+- PDFからODS：下付き文字と上付き文字のテキストを認識します；
 
 **例**
 
@@ -2365,9 +2379,9 @@ private static void ConvertPdfToOds()
 }
 ```
 
-- PDFからXMLSpreadSheet2003：下付き文字および上付き文字のテキストを認識します；
+- PDFからXMLSpreadSheet2003：下付き文字と上付き文字のテキストを認識します；
 
-- PDFからExcel：下付き文字および上付き文字のテキストを認識します；
+- PDFからExcel：下付き文字と上付き文字のテキストを認識します；
 
 - 文書を保存する際にUR署名を削除します；
 
@@ -2377,7 +2391,7 @@ private static void ConvertPdfToOds()
 
 ## Aspose.PDF 22.3の新機能
 
-このリリースには、以下の更新が含まれています：
+このリリースには次の更新が含まれています：
 
 - AFRelationshipのサポート；
 
@@ -2510,7 +2524,7 @@ private static void GetPdfLayers()
 
 ## Aspose.PDF 21.9の新機能
 
-Aspose.PDF for .NETを使用して署名領域のラベルのフォント色と署名の外観の背景色をカスタマイズします。
+Aspose.PDF for .NETを使用して、署名領域内のラベルの背景色とフォント色をカスタマイズします。
 
 ```csharp
 private static void SignPdfWithCustomColorsInAppearance(string pfxFilePath, string password)
@@ -2581,7 +2595,7 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 
 ### パラメータ付きXMLおよびXLSに基づくPDF作成
 
-XSLパラメータを追加するには、独自の[XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)を作成し、[XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions)のプロパティとして設定する必要があります。次のスニペットは、上記のサンプルファイルとともにこのクラスを使用する方法を示しています。
+XSLパラメータを追加するには、独自の[XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)を作成し、[XslFoLoadOptions](https://reference.aspose.com/pdf/ja/net/aspose.pdf/xslfoloadoptions)のプロパティとして設定する必要があります。次のスニペットは、上記のサンプルファイルでこのクラスを使用する方法を示しています。
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()
@@ -2607,7 +2621,7 @@ private static void ConvertXslfoToPdfWithArgumentList()
 
 ## Aspose.PDF 21.6の新機能
 
-Aspose.PDF for .NETを使用して、ImagePlacementAbsorberを使用して文書内の画像を非表示にすることができます：
+Aspose.PDF for .NETを使用して、ドキュメントからImagePlacementAbsorberを使用して画像を非表示にすることができます：
 
 ```csharp
 private static void HideImageInPdf()
@@ -2666,7 +2680,7 @@ private static void DisplayFontFullNames()
 
 ## Aspose.PDF 21.4の新機能
 
-### 画像をマージするAPIを追加
+### 画像をマージするためのAPIを追加
 
 Aspose.PDF 21.4では、画像を結合することができます。次のコードスニペットに従ってください：
 
@@ -2741,7 +2755,7 @@ private static void MergeAsTiff()
 
 ### Azure Information Protectionを検出するためのプロパティの公開
 
-次のコードスニペットを使用すると、Azure Information Protectionで保護されたPDFファイルの暗号化されたペイロードにアクセスできるはずです：
+次のコードスニペットを使用すると、Azure Information Protectionで保護されたPDFファイルの暗号化されたペイロードにアクセスできるようになります：
 
 ```csharp
 private static void AzureInformationProtection()
@@ -2807,7 +2821,7 @@ private static void DisplayPdfTextBackgroundColor()
 
 ### HTMLに変換後、フォントが出力に完全に埋め込まれる
 
-また、Aspose.PDF 21.1では、PDFをHTMLに変換した後、出力HTML文書に埋め込まれたフォントが利用可能になりました。これは、新しいブール保存オプションHtmlSaveParameter.SaveFullFontによって可能です。
+また、Aspose.PDF 21.1では、PDFをHTMLに変換した後、出力HTML文書に埋め込まれたフォントが利用可能になりました。これは、新しいブール値の保存オプションHtmlSaveParameter.SaveFullFontによって可能です。
 
 次のコードスニペットを示します：
 

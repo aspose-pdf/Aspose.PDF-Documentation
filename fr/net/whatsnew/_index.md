@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /fr/net/whatsnew/
-description: Cette page présente les fonctionnalités les plus populaires de Aspose.PDF for .NET qui ont été introduites dans les versions récentes.
+description: Cette page présente les nouvelles fonctionnalités les plus populaires dans Aspose.PDF for .NET qui ont été introduites dans les versions récentes.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -27,7 +27,7 @@ lastmod: "2025-01-31"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "8022",
+    "wordcount": "11936",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,10 +73,26 @@ lastmod: "2025-01-31"
         "@type": "WebPage",
         "@id": "/net/whatsnew/"
     },
-    "dateModified": "2024-12-04",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
+
+## Quoi de neuf dans Aspose.PDF 25.3
+
+**Changements les plus significatifs**
+
+Dans Aspose.PDF 25.3, nous avons ajouté :
+* 19 [produits High Code Plugin](https://products.aspose.net/pdf/).
+* [Détection des signatures numériques PDF compromises](https://docs.aspose.com/pdf/net/extract-image-and-signature-information/#checking-signatures-for-compromise).
+* [Artifacts de numérotation Bates](https://docs.aspose.com/pdf/net/artifacts/#adding-bates-numbering-artifact).
+* [Paramètres de position](https://docs.aspose.com/pdf/net/create-tagged-pdf/#adjust-position-of-text-structure) pour la création d'éléments étiquetés.
+* Capacité à vérifier les [limites des formes graphiques](https://docs.aspose.com/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) lors de leur ajout à la page PDF.
+> Des informations détaillées sur les changements et des exemples d'utilisation peuvent être trouvés sur la page des [Notes de version d'Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+
+**Autres améliorations notables**
+
+Nous avons amélioré à la fois les performances et la consommation de mémoire lors de la conversion de PDF riches en images. La vitesse de traitement est désormais deux fois plus rapide, et la consommation de mémoire est réduite de 10 % dans les scénarios testés.
 
 ## Quoi de neuf dans Aspose.PDF 25.2
 
@@ -85,17 +101,16 @@ lastmod: "2025-01-31"
 Dans Aspose.PDF 25.2, nous avons ajouté :
 * support de la conversion standard [PDF à PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/).
 * [une option](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) pour éviter d'appeler deux fois le délégué CustomSignHash lors de la signature.
-* nouvelle méthode `GetSignatureNames()` pour obtenir des informations sur les [signatures numériques](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) d'un PDF.
+* nouvelle méthode `GetSignatureNames()` pour obtenir des informations sur les [signatures numériques](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) du PDF.
 * possibilité de créer un [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) avec plusieurs annotations de widget.
-> [!NOTE]
 > Des informations détaillées sur les changements et des exemples d'utilisation peuvent être trouvés sur la page des [Notes de version d'Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
 **Autres améliorations notables**
 
 * Compression d'image sans perte de qualité lors de l'[optimisation PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) améliorée. Taille du document compressé réduite.
-* La méthode [Repair](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/repair/) du Document améliorée. Elle peut désormais vérifier et corriger les valeurs dans le tableau Annotation.Rect.
+* [La méthode `Repair` du Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/repair/) améliorée. Elle peut désormais vérifier et corriger les valeurs dans le tableau Annotation.Rect.
 * Version de dépendance System.Text.Json mise à jour pour éviter une vulnérabilité potentielle CVE-2024-43485.
-* Détection des attaques de signature PDF améliorée pour éviter d'obtenir de faux résultats positifs.
+* Détection des attaques de signature PDF améliorée pour éviter d'obtenir de faux positifs.
 * Une API publique pour la rédaction du dictionnaire des ressources fournie :
 
 ```csharp
@@ -138,7 +153,7 @@ private static void AddingNewExtGState()
 ## Quoi de neuf dans Aspose.PDF 25.1
 
 Dans Aspose.PDF 25.1, nous avons ajouté :
-* une option pour enregistrer un PDF en HTML en sautant toutes les images raster.
+* une option pour enregistrer le PDF en HTML en sautant toutes les images raster.
 * possibilité de valider une signature PDF en utilisant un serveur d'autorité de certification (CA).
 * validation de signature PDF multiplateforme utilisant des algorithmes de hachage SHA-3.
 
@@ -203,7 +218,7 @@ private static void PdfToPngWithAnalyzingFonts()
 }
 ```
 
-À partir d'Aspose.PDF 24.12, l'ajustement automatique de la taille de la police peut être appliqué à l'ajout d'un tampon de texte dans un fichier PDF d'annotation.
+À partir d'Aspose.PDF 24.12, l'ajustement automatique de la taille de la police peut être appliqué lors de l'ajout d'un tampon de texte dans un fichier PDF d'annotation.
 
 Le snippet de code suivant démontre comment ajouter un tampon de texte d'annotation à un fichier PDF d'annotation et ajuster automatiquement la taille de la police pour s'adapter au rectangle du tampon.
 ```csharp
@@ -292,7 +307,7 @@ private static void UpdatePagination()
 
 Depuis la version 24.11, nous avons ajouté la possibilité de choisir un algorithme de hachage pour Pkcs7Detached. La valeur par défaut est SHA-256. Pour les signatures numériques ECDSA, l'algorithme de hachage par défaut dépend de la longueur de la clé.
 
-ECDSA prend en charge SHA-1, SHA-256, SHA-384, SHA-512, SHA3-256, SHA3-384 et SHA3-512. Les algorithmes SHA3-256, SHA3-384 et SHA3-512 ne sont pris en charge que pour .NET 8 et les versions plus récentes. Pour plus de détails sur les plateformes prises en charge pour SHA-3, consultez la [documentation](https://learn.microsoft.com/en-us/dotnet/standard/security/cross-platform-cryptography#sha-3).
+ECDSA prend en charge SHA-1, SHA-256, SHA-384, SHA-512, SHA3-256, SHA3-384 et SHA3-512. Les algorithmes SHA3-256, SHA3-384 et SHA3-512 ne sont pris en charge que pour .NET 8 et les versions plus récentes. Pour plus de détails sur les plateformes prises en charge pour SHA-3, reportez-vous à la [documentation](https://learn.microsoft.com/en-us/dotnet/standard/security/cross-platform-cryptography#sha-3).
 
 RSA prend en charge SHA-1, SHA-256, SHA-384 et SHA-512.
 
@@ -446,7 +461,7 @@ private static void AddCroppedImageToPDF()
 
 ## Quoi de neuf dans Aspose.PDF 24.9
 
-Depuis la version 24.9, il est possible de générer un rapport de plantage lorsque la bibliothèque lance une exception. Un rapport de plantage comprend des informations sur le type d'exception, le titre de l'application, la version d'Aspose.PDF, la version du système d'exploitation, le message d'erreur et la trace de la pile.
+Depuis la version 24.9, il est possible de générer un rapport de plantage lorsque la bibliothèque lance une exception. Un rapport de plantage comprend des informations sur le type d'exception, le titre de l'application, la version d'Aspose.PDF, la version de l'OS, le message d'erreur et la trace de la pile.
 
 Le snippet de code suivant démontre un scénario courant pour générer un rapport de plantage :
 
@@ -469,7 +484,7 @@ private static void GenerateCrashReportExample()
 }
 ```
 
-L'extraction des éléments de couche d'un document PDF et leur sauvegarde dans un nouveau flux PDF sont désormais disponibles. Dans les documents PDF, les couches (également connues sous le nom de groupes de contenu optionnels ou OCG) sont utilisées à diverses fins, principalement pour gérer et contrôler la visibilité du contenu au sein du document. Cette fonctionnalité est particulièrement utile dans le design, l'ingénierie et l'édition. Par exemple : aspects de plan, composants de diagramme complexes, versions linguistiques du même contenu.
+L'extraction des éléments de couche d'un document PDF et leur sauvegarde dans un nouveau flux PDF sont désormais disponibles. Dans les documents PDF, les couches (également connues sous le nom de groupes de contenu optionnels ou OCG) sont utilisées à diverses fins, principalement pour gérer et contrôler la visibilité du contenu dans le document. Cette fonctionnalité est particulièrement utile dans le design, l'ingénierie et l'édition. Par exemple : aspects de plan, composants de diagramme complexes, versions linguistiques du même contenu.
 
 ```cs
 private static void ExtractPdfLayer()
@@ -611,7 +626,7 @@ private static void FlattenTransparency()
 
 ## Quoi de neuf dans Aspose.PDF 24.7
 
-Comparer des documents PDF avec Aspose.PDF for .NET
+Comparaison de documents PDF avec Aspose.PDF for .NET
 
 Depuis 24.7, il est possible de comparer le contenu des documents PDF avec des marques d'annotation et une sortie côte à côte :
 
@@ -700,14 +715,14 @@ plugin.Process(opt);
 
 Depuis la version 24.6, dans le cadre de l'édition de PDF étiquetés, des méthodes ont été ajoutées sur **Aspose.Pdf.LogicalStructure.Element** :
 
-- Tag (ajouter des balises à des opérateurs spécifiques comme des images, du texte et des liens)
+- Tag (ajouter des balises à des opérateurs spécifiques comme les images, le texte et les liens)
 - InsertChild
 - RemoveChild
 - ClearChilds
 
 De plus, dans cette version, il est possible de créer un PDF accessible en utilisant des fonctions de bas niveau :
 
-Le snippet de code suivant fonctionne avec un document PDF et son contenu étiqueté, en utilisant une bibliothèque Aspose.PDF pour le traiter.
+Le snippet de code suivant fonctionne avec un document PDF et son contenu étiqueté, utilisant une bibliothèque Aspose.PDF pour le traiter.
 
 ```cs
 private static void CreateAnAccessibleDocument()
@@ -791,7 +806,7 @@ Depuis la version 24.5, vous pouvez ouvrir un PDF, verrouiller une couche spéci
 
 Layer.Lock(); - Verrouille la couche.
 Layer.Unlock(); - Déverrouille la couche.
-Layer.Locked; - Propriété, indiquant l'état de verrouillage de la couche.
+Layer.Locked; - Propriété, indiquant l'état verrouillé de la couche.
 
 ```cs
 private static void LockLayerInPDF()
@@ -874,7 +889,7 @@ La méthode 'Layer.Flatten(bool cleanupContentStream)' accepte le paramètre boo
 
 ### Fusionner toutes les couches à l'intérieur du PDF en une seule
 
-La bibliothèque Aspose.PDF for .NET permet de fusionner toutes les couches PDF ou une couche spécifique sur la première page en une nouvelle couche et de sauvegarder le document mis à jour.
+La bibliothèque Aspose.PDF for .NET permet de fusionner toutes les couches PDF ou une couche spécifique sur la première page en une nouvelle couche et d'enregistrer le document mis à jour.
 
 Deux méthodes ont été ajoutées pour fusionner toutes les couches sur la page :
 
@@ -987,7 +1002,7 @@ private static void PickTrayByPdfSizeFacade()
 
 À partir de cette version, le plugin Aspose.PDF Signature pour .NET a été ajouté :
 
-- Exemple de création d'un nouveau champ et d'options :
+- Exemple de création d'un nouveau champ et options :
 
 ```cs
 // create Signature
@@ -1286,7 +1301,7 @@ private static void RemoveFromPdfPageDicrionary()
 
 ## Quoi de neuf dans Aspose.PDF 23.12
 
-Le formulaire peut être trouvé et le texte peut être remplacé à l'aide du snippet de code suivant :
+Le formulaire peut être trouvé et le texte peut être remplacé en utilisant le snippet de code suivant :
 
 ```cs
 private static void ReplaceTextInPdfForm()
@@ -1382,7 +1397,7 @@ private static void DeleteSpecifiedForm2()
 }
 ``` 
 
-- Tous les formulaires peuvent être supprimés à l'aide du snippet de code suivant :
+- Tous les formulaires peuvent être supprimés en utilisant le snippet de code suivant :
 
 ```cs
 private static void RemoveAllForms()
@@ -1544,7 +1559,7 @@ private static void RemoveHiddenText()
 }
 ```
 
-Depuis 23.11, il prend en charge l'interruption de thread :
+Depuis 23.11, prise en charge de l'interruption de thread :
 
 ```cs
 private static void InterruptExample()
@@ -1793,7 +1808,7 @@ private static void SignPdfUsingSignedHash(string certP12, string pfxPassword)
 }
 ```
 
-Une autre nouvelle fonctionnalité est les paramètres de mise à l'échelle de page de la boîte de dialogue d'impression :
+Une autre nouvelle fonctionnalité est les préréglages de mise à l'échelle de page de la boîte de dialogue d'impression :
 
 ```cs
 private static void SetPrintScaling()
@@ -1937,7 +1952,7 @@ private static void GetAndSetValueOfMultivalueCheckboxField()
 
 ## Quoi de neuf dans Aspose.PDF 23.7
 
-Depuis Aspose.PDF 23.7, prise en charge de l'ajout de l'extraction de forme :
+Depuis Aspose.PDF 23.7, prise en charge de l'ajout de l'extraction de formes :
 
 ```cs
 private static void CopyShape()
@@ -1966,7 +1981,7 @@ private static void CopyShape()
 }
 ```
 
-Prend également en charge la capacité de détecter le débordement lors de l'ajout de texte :
+Prise en charge également de la détection de débordement lors de l'ajout de texte :
 
 ```cs
 private static void FitTextIntoRectangle()
@@ -2016,14 +2031,14 @@ private static void FitTextIntoRectangle()
 Depuis Aspose.PDF 23.6, prise en charge de l'ajout des plugins suivants :
 
 - Aspose PdfConverter Html vers PDF 
-- Aspose PdfOrganizer API de redimensionnement
-- Aspose PdfOrganizer API de compression
+- Aspose PdfOrganizer Redimensionner API
+- Aspose PdfOrganizer Compresser API
 
 Mise à jour de l'Aspose.PdfForm 
 - ajouter la fonctionnalité 'Exporter "Valeurs des champs dans le document vers un fichier CSV"
-- ajouter la capacité de définir des propriétés pour des champs séparés
+- ajouter la possibilité de définir des propriétés pour des champs séparés
 
-Prend également en charge l'ajout de la capacité de définir le titre de la page HTML, Epub :
+Prise en charge également de l'ajout de la possibilité de définir le titre de la page HTML, Epub :
 
 ```cs
 private static void SetHtmlTitle()
@@ -2057,7 +2072,7 @@ private static void SetHtmlTitle()
 
 ## Quoi de neuf dans Aspose.PDF 23.5
 
-Depuis 23.5, prise en charge de l'ajout de l'option FontSize pour RedactionAnnotation. Utilisez le snippet de code suivant pour résoudre cette tâche :
+Depuis 23.5, prise en charge de l'ajout de l'option FontSize de RedactionAnnotation. Utilisez le snippet de code suivant pour résoudre cette tâche :
 
 ```cs
 private static void AddRedactionAnnotationFontSize() 
@@ -2103,14 +2118,14 @@ Aspose.PDF a annoncé la sortie du SDK .NET 7.
 Depuis Aspose.PDF 23.3, prise en charge de l'ajout des plugins suivants :
 
 - Aspose.PdfForm
-- Aspose.PdfConverter PDF en HTML
-- Aspose.PdfConverter PDF en XLSX
-- Aspose.PdfOrganizer Rotation
+- Aspose.PdfConverter PDF vers HTML
+- Aspose.PdfConverter PDF vers XLSX
+- Aspose.PdfOrganizer Faire pivoter
 - Aspose.PdfExtrator pour Images
 
 ## Quoi de neuf dans Aspose.PDF 23.3
 
-La version 23.3 a introduit la prise en charge du maintien des proportions et de la résolution des images lors de leur insertion sur la page. Deux méthodes peuvent être utilisées pour résoudre ce problème :
+La version 23.3 a introduit la prise en charge du maintien des proportions et de la résolution des images lors de l'insertion sur la page. Deux méthodes peuvent être utilisées pour résoudre ce problème :
 
 ```cs
 private static void InsertImageWithNativeResolutionAsTable()
@@ -2175,7 +2190,7 @@ private static void InsertImageWithNativeResolutionAsParagraph()
 }
 ```
 
-L'image sera placée dans une taille mise à l'échelle et une résolution native. Vous pouvez définir les propriétés FixedWidth ou FixedHeight en combinaison avec IsApplyResolution.
+L'image sera placée à une taille mise à l'échelle et à une résolution native. Vous pouvez définir les propriétés FixedWidth ou FixedHeight en combinaison avec IsApplyResolution.
 
 ## Quoi de neuf dans Aspose.PDF 23.1.1
 
@@ -2194,7 +2209,7 @@ Les marques d'imprimeur sont des symboles graphiques ou du texte ajoutés à une
 - Rampes grises et barres de couleur pour mesurer les couleurs et les densités d'encre
 - Marques de coupe montrant où le support de sortie doit être découpé
 
-Nous allons montrer l'exemple de l'option avec des barres de couleur pour mesurer les couleurs et les densités d'encre. Il existe une classe abstraite de base PrinterMarkAnnotation et à partir de celle-ci, l'enfant ColorBarAnnotation - qui implémente déjà ces bandes. Vérifions l'exemple :
+Nous allons montrer l'exemple de l'option avec des barres de couleur pour mesurer les couleurs et les densités d'encre. Il existe une classe abstraite de base PrinterMarkAnnotation et à partir de celle-ci, une classe enfant ColorBarAnnotation - qui implémente déjà ces bandes. Vérifions l'exemple :
 
 ```cs
 private static void AddPrinterMarkAnnotation()
@@ -2230,7 +2245,7 @@ private static void AddPrinterMarkAnnotation()
     }
 }
 ```
-Prend également en charge l'extraction d'images vectorielles. Essayez d'utiliser le code suivant pour détecter et extraire des graphiques vectoriels :
+Prise en charge également de l'extraction d'images vectorielles. Essayez d'utiliser le code suivant pour détecter et extraire des graphiques vectoriels :
 
 ```cs
 private static void SavePdfVectorGraphicToSvg()
@@ -2305,9 +2320,9 @@ private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath,
 
 ## Quoi de neuf dans Aspose.PDF 22.6
 
-Depuis 22.5, prise en charge de l'extraction de texte en subscript et superscript à partir de PDF.
+Depuis 22.5, prise en charge de l'extraction de texte SubScript et SuperScript à partir de PDF.
 
-Si le document PDF contient du texte en subscript et superscript tel que H2O, alors l'extraction du texte à partir du PDF doit également extraire leurs informations de formatage (dans le texte brut extrait).
+Si le document PDF contient du texte SubScript et SuperScript tel que H2O, alors l'extraction du texte à partir du PDF doit également extraire leurs informations de formatage (dans le texte brut extrait).
 Si le PDF contient du texte en italique, il doit également être inclus dans le contenu extrait.
 
 ```cs
@@ -2339,7 +2354,7 @@ private static void ExtractTextSuperscript()
 
 Cette version comprend des informations pour Aspose.PDF for .NET :
 
-- PDF à ODS : Reconnaître le texte en subscript et superscript ;
+- PDF à ODS : Reconnaître le texte en exposant et en indice ;
 
 **exemple**
 
@@ -2365,9 +2380,9 @@ private static void ConvertPdfToOds()
 }
 ```
 
-- PDF à XMLSpreadSheet2003 : Reconnaître le texte en subscript et superscript ;
+- PDF à XMLSpreadSheet2003 : Reconnaître le texte en exposant et en indice ;
 
-- PDF à Excel : Reconnaître le texte en subscript et superscript ;
+- PDF à Excel : Reconnaître le texte en exposant et en indice ;
 
 - Supprimer les signatures UR lors de l'enregistrement du document ;
 
@@ -2607,7 +2622,7 @@ private static void ConvertXslfoToPdfWithArgumentList()
 
 ## Quoi de neuf dans Aspose.PDF 21.6
 
-Avec Aspose.PDF for .NET, vous pouvez masquer des images en utilisant ImagePlacementAbsorber à partir du document :
+Avec Aspose.PDF for .NET, vous pouvez masquer des images en utilisant ImagePlacementAbsorber du document :
 
 ```csharp
 private static void HideImageInPdf()
@@ -2638,7 +2653,7 @@ private static void HideImageInPdf()
 
 ## Quoi de neuf dans Aspose.PDF 21.5
 
-### Comment extraire le nom complet de la police à partir de sa description/ressource dans PDF ?
+### Comment extraire le nom complet de la police à partir de sa description/ressource dans le PDF ?
 
 Vous pouvez obtenir une police complète avec le préfixe avec la propriété BaseFont pour la classe Font.
 
@@ -2769,7 +2784,7 @@ private static void AzureInformationProtection()
 
 ### Ajouter la prise en charge de la récupération de la couleur de fond de TextFragment
 
-Dans cette version d'Aspose.PDF, la fonction est devenue disponible pour récupérer la couleur de fond. Vous devez spécifier searchOptions.SearchForTextRelatedGraphics = true ; dans les options de l'objet TextFragmentAbsorber.
+Dans cette version d'Aspose.PDF, la fonction est devenue disponible pour récupérer la couleur de fond. Vous devez spécifier searchOptions.SearchForTextRelatedGraphics = true; dans les options de l'objet TextFragmentAbsorber.
 
 Veuillez considérer le code suivant :
 
@@ -2807,7 +2822,7 @@ private static void DisplayPdfTextBackgroundColor()
 
 ### Après conversion en HTML, la police est entièrement intégrée dans la sortie
 
-De plus, dans Aspose.PDF 21.1, après la conversion de PDF en HTML, les polices intégrées sont devenues disponibles dans le document HTML de sortie. Cela est possible avec la nouvelle option booléenne d'enregistrement HtmlSaveParameter.SaveFullFont.
+De plus, dans Aspose.PDF 21.1, après la conversion de PDF en HTML, les polices intégrées sont devenues disponibles dans le document HTML de sortie. Cela est possible avec la nouvelle option booléenne save option HtmlSaveParameter.SaveFullFont.
 
 Voici le snippet de code :
 
