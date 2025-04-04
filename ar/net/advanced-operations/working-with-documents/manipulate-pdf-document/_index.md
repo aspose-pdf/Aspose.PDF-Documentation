@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Manipulate PDF Document in C#",
     "alternativeHeadline": "Enhanced PDF Manipulation Features in C# Library",
-    "abstract": "اكتشف القدرات القوية لمعالجة مستندات PDF في C#، بما في ذلك التحقق من معايير PDF/A، والقدرة على إنشاء وتخصيص جداول المحتويات، وتعيين تواريخ انتهاء صلاحية المستندات. هذه الميزة لا تعزز فقط إدارة المستندات ولكنها تضمن أيضًا الامتثال لمعايير الصناعة، مما يجعلها ضرورية للمطورين الذين يسعون إلى حلول قوية لمعالجة PDF.",
+    "abstract": "اكتشف القدرات القوية لمعالجة مستندات PDF في C#، بما في ذلك التحقق من معايير PDF/A، والقدرة على إنشاء وتخصيص جداول المحتويات، وتعيين تواريخ انتهاء صلاحية المستندات. هذه الميزة لا تعزز فقط إدارة المستندات ولكنها تضمن أيضًا الامتثال لمعايير الصناعة، مما يجعلها ضرورية للمطورين الذين يسعون إلى حلول قوية لمعالجة PDF",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "manipulate PDF, C#, validate PDF/A, TOC, set PDF expiry date, flatten fillable PDF, Aspose.PDF, PDF generation progress, customize page numbers, PDF encryption",
-    "wordcount": "2170",
+    "wordcount": "2493",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-pdf-document/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "تحتوي هذه المقالة على معلومات حول كيفية التحقق من مستند PDF لمعيار PDF A، وكيفية العمل مع جدول المحتويات، وكيفية تعيين تاريخ انتهاء صلاحية PDF، وما إلى ذلك."
 }
 </script>
@@ -91,9 +91,9 @@ sitemap:
 
 {{% /alert %}}
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-تظهر مقتطفات الكود التالية كيفية التحقق من مستند PDF لمعيار PDF/A-1A.
+تظهر مقتطفات الشيفرة التالية كيفية التحقق من مستند PDF لمعيار PDF/A-1A.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void ValidateToPdfA1aStandard()
 }
 ```
 
-تظهر مقتطفات الكود التالية كيفية التحقق من مستند PDF لمعيار PDF/A-1b.
+تظهر مقتطفات الشيفرة التالية كيفية التحقق من مستند PDF لمعيار PDF/A-1b.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void ValidateToPdfA1bStandard()
 
 {{% alert color="primary" %}}
 
-يمكن استخدام Aspose.PDF for .NET لتحديد ما إذا كان المستند المحمّل هو PDF صالح وأيضًا [إذا كان مشفرًا أم لا](https://docs.aspose.com/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/). من أجل توسيع قدرات فئة Document، تمت إضافة خاصية *IsPdfaCompliant* لتحديد ما إذا كان الملف المدخل متوافقًا مع PDF/A وتم تقديم خاصية باسم *PdfaFormat* لتحديد تنسيق PDF/A.
+يمكن استخدام Aspose.PDF for .NET لتحديد ما إذا كان المستند المحمل هو PDF صالح وأيضًا [إذا كان مشفرًا أم لا](https://docs.aspose.com/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/). من أجل توسيع قدرات فئة Document، تمت إضافة خاصية *IsPdfaCompliant* لتحديد ما إذا كان الملف المدخل متوافقًا مع PDF/A وتم تقديم خاصية باسم *PdfaFormat* لتحديد تنسيق PDF/A.
 
 {{% /alert %}}
 
@@ -141,7 +141,7 @@ private static void ValidateToPdfA1bStandard()
 
 تتيح لك واجهة برمجة تطبيقات Aspose.PDF إضافة جدول محتويات إما عند إنشاء PDF، أو إلى ملف موجود. تتيح لك فئة ListSection في مساحة أسماء Aspose.Pdf.Generator إنشاء جدول محتويات عند إنشاء PDF من الصفر. لإضافة العناوين، وهي عناصر من جدول المحتويات، استخدم فئة Aspose.Pdf.Generator.Heading.
 
-لإضافة جدول محتويات إلى ملف PDF موجود، استخدم فئة Heading في مساحة أسماء Aspose.PDF. يمكن لمساحة أسماء Aspose.Pdf إنشاء ملفات PDF جديدة والتلاعب بالملفات الموجودة. لإضافة جدول محتويات إلى PDF موجود، استخدم مساحة أسماء Aspose.PDF. تظهر مقتطفات الكود التالية كيفية إنشاء جدول محتويات داخل ملف PDF موجود.
+لإضافة جدول محتويات إلى ملف PDF موجود، استخدم فئة Heading في مساحة أسماء Aspose.PDF. يمكن لمساحة أسماء Aspose.Pdf إنشاء ملفات PDF جديدة والتلاعب بالملفات الموجودة. لإضافة جدول محتويات إلى PDF موجود، استخدم مساحة أسماء Aspose.PDF. تظهر مقتطفات الشيفرة التالية كيفية إنشاء جدول محتويات داخل ملف PDF موجود.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### إخفاء أرقام الصفحات في جدول المحتويات
 
-في حال كنت لا ترغب في عرض أرقام الصفحات، جنبًا إلى جنب مع العناوين في جدول المحتويات، يمكنك استخدام خاصية [IsShowPageNumbers](https://reference.aspose.com/pdf/ar/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) من فئة [TOCInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf/tocinfo) كـ false. يرجى مراجعة مقتطف الكود التالي لإخفاء أرقام الصفحات في جدول المحتويات:
+في حال كنت لا ترغب في عرض أرقام الصفحات، جنبًا إلى جنب مع العناوين في جدول المحتويات، يمكنك استخدام خاصية [IsShowPageNumbers](https://reference.aspose.com/pdf/ar/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) من فئة [TOCInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf/tocinfo) كـ false. يرجى مراجعة مقتطف الشيفرة التالي لإخفاء أرقام الصفحات في جدول المحتويات:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void CreateTocWithHiddenPageNumbers()
 
 ### تخصيص أرقام الصفحات أثناء إضافة جدول المحتويات
 
-من الشائع تخصيص ترقيم الصفحات في جدول المحتويات أثناء إضافة جدول المحتويات في مستند PDF. على سبيل المثال، قد نحتاج إلى إضافة بعض البادئات قبل رقم الصفحة مثل P1، P2، P3 وما إلى ذلك. في هذه الحالة، يوفر Aspose.PDF for .NET خاصية PageNumbersPrefix من فئة TocInfo التي يمكن استخدامها لتخصيص أرقام الصفحات كما هو موضح في مقتطف الكود التالي.
+من الشائع تخصيص ترقيم الصفحات في جدول المحتويات أثناء إضافة جدول المحتويات في مستند PDF. على سبيل المثال، قد نحتاج إلى إضافة بعض البادئات قبل رقم الصفحة مثل P1، P2، P3 وما إلى ذلك. في هذه الحالة، توفر Aspose.PDF for .NET خاصية PageNumbersPrefix من فئة TocInfo التي يمكن استخدامها لتخصيص أرقام الصفحات كما هو موضح في مقتطف الشيفرة التالي.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -412,7 +412,7 @@ private static void CustomizePageNumbersAddingToC()
 
 نطبق صلاحيات الوصول على ملفات PDF بحيث يمكن لمجموعة معينة من المستخدمين الوصول إلى ميزات/كائنات معينة من مستندات PDF. من أجل تقييد الوصول إلى ملف PDF، عادةً ما نقوم بتطبيق التشفير وقد يكون لدينا متطلبات لتعيين انتهاء صلاحية ملف PDF، بحيث يحصل المستخدم الذي يصل إلى/يستعرض المستند على تنبيه صالح بشأن انتهاء صلاحية ملف PDF.
 
-لتحقيق المتطلبات المذكورة أعلاه، يمكننا استخدام كائن *JavascriptAction*. يرجى إلقاء نظرة على مقتطف الكود التالي.
+لتحقيق المتطلبات المذكورة أعلاه، يمكننا استخدام كائن *JavascriptAction*. يرجى إلقاء نظرة على مقتطف الشيفرة التالي.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -451,7 +451,7 @@ private static void SetExpiryDate()
 
 ## تحديد تقدم توليد ملف PDF
 
-طلب منا أحد العملاء إضافة ميزة تتيح للمطورين تحديد تقدم توليد ملف PDF. إليك الرد على ذلك الطلب.
+طلب منا عميل إضافة ميزة تتيح للمطورين تحديد تقدم توليد ملف PDF. إليك الرد على هذا الطلب.
 
 تتيح لك حقل [CustomerProgressHandler](https://reference.aspose.com/pdf/ar/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) من فئة [DocSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/docsaveoptions) تحديد كيفية تقدم توليد PDF. يحتوي المعالج على الأنواع التالية:
 
@@ -459,7 +459,7 @@ private static void SetExpiryDate()
 - DocSaveOptions.ProgressEventHandlerInfo.
 - DocSaveOptions.ProgressEventType.
 
-تظهر مقتطفات الكود أدناه كيفية استخدام CustomerProgressHandler.
+تظهر مقتطفات الشيفرة أدناه كيفية استخدام CustomerProgressHandler.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -505,8 +505,8 @@ private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.Progress
 
 ## تسطيح PDF القابل للتعبئة
 
-غالبًا ما تتضمن مستندات PDF نماذج تحتوي على عناصر تفاعلية قابلة للتعبئة مثل أزرار الاختيار، وصناديق الاختيار، وصناديق النص، والقوائم، وما إلى ذلك. لجعلها غير قابلة للتعديل لأغراض تطبيقية مختلفة، نحتاج إلى تسطيح ملف PDF.
-توفر Aspose.PDF وظيفة لتسطيح PDF الخاص بك في C# مع بضع أسطر من الكود:
+غالبًا ما تتضمن مستندات PDF نماذج تحتوي على عناصر تفاعلية قابلة للتعبئة مثل أزرار الاختيار، مربعات الاختيار، صناديق النص، القوائم، إلخ. لجعلها غير قابلة للتعديل لأغراض تطبيقية مختلفة، نحتاج إلى تسطيح ملف PDF.
+توفر Aspose.PDF وظيفة لتسطيح PDF الخاص بك في C# مع بضع أسطر من الشيفرة:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -532,6 +532,68 @@ private static void FlattenForms()
     }
 }
 ```
+
+## تحليل مستند PDF للتحديثات التزايدية
+للتحقق مما إذا كان المستند قد تم تحديثه بشكل تزايدي، استخدم طريقة `HasIncrementalUpdate` من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document). تقوم هذه الطريقة بتحليل ملف PDF وتعيد قيمة منطقية تشير إلى ما إذا تم اكتشاف تحديثات تزايدية. لاحظ أنه عند حفظ مستند باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/save/#save) بدون معلمات، يتم حفظه بشكل تزايدي.
+
+توضح الشيفرة التالية في C# كيفية استخدام طريقة `HasIncrementalUpdate`:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Check for incremental updates
+        bool updatedIncrementally = document.HasIncrementalUpdate();
+
+        // Output the result
+        if (updatedIncrementally)
+        {
+            Console.WriteLine("This document has been incrementally updated.");
+        }
+        else
+        {
+            Console.WriteLine("This document has no incremental updates.");
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Check for incremental updates
+    bool updatedIncrementally = document.HasIncrementalUpdate();
+
+    // Output the result
+    if (updatedIncrementally)
+    {
+        Console.WriteLine("This document has been incrementally updated.");
+    }
+    else
+    {
+        Console.WriteLine("This document has no incremental updates.");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

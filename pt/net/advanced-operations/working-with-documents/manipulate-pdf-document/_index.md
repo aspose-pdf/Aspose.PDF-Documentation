@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Manipulate PDF Document in C#",
     "alternativeHeadline": "Enhanced PDF Manipulation Features in C# Library",
-    "abstract": "Descubra as poderosas capacidades de manipulação de documentos PDF em C#, incluindo validação para padrões PDF/A, a capacidade de criar e personalizar tabelas de conteúdo, e definir datas de expiração para documentos. Este recurso não apenas melhora a gestão de documentos, mas também garante conformidade com os padrões da indústria, tornando-se essencial para desenvolvedores que buscam soluções robustas de manipulação de PDF.",
+    "abstract": "Descubra as poderosas capacidades de manipulação de documentos PDF em C#, incluindo validação para padrões PDF/A, a capacidade de criar e personalizar tabelas de conteúdo e definir datas de expiração para documentos. Este recurso não apenas melhora a gestão de documentos, mas também garante conformidade com os padrões da indústria, tornando-se essencial para desenvolvedores que buscam soluções robustas de manipulação de PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "manipulate PDF, C#, validate PDF/A, TOC, set PDF expiry date, flatten fillable PDF, Aspose.PDF, PDF generation progress, customize page numbers, PDF encryption",
-    "wordcount": "2170",
+    "wordcount": "2607",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-pdf-document/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Este artigo contém informações sobre como validar um Documento PDF para o Padrão PDF A, como trabalhar com TOC, como definir a data de expiração do PDF, etc."
 }
 </script>
@@ -83,7 +83,7 @@ sitemap:
 
 ## Validar Documento PDF para o Padrão PDF A (A 1A e A 1B)
 
-Para validar um documento PDF para compatibilidade com PDF/A-1a ou PDF/A-1b, use o método Validate da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Este método permite especificar o nome do arquivo no qual o resultado deve ser salvo e o tipo de validação necessária da enumeração [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat): PDF_A_1A ou PDF_A_1B.
+Para validar um documento PDF para compatibilidade com PDF/A-1a ou PDF/A-1b, use o método Validate da classe [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document). Este método permite que você especifique o nome do arquivo no qual o resultado deve ser salvo e o tipo de validação necessária da enumeração [PdfFormat](https://reference.aspose.com/pdf/pt/net/aspose.pdf/pdfformat): PDF_A_1A ou PDF_A_1B.
 
 {{% alert color="primary" %}}
 
@@ -139,9 +139,9 @@ Aspose.PDF for .NET pode ser usado para determinar se o documento carregado é u
 
 ### Adicionar TOC a um PDF Existente
 
-A API Aspose.PDF permite adicionar uma tabela de conteúdo tanto ao criar um PDF quanto a um arquivo existente. A classe ListSection no namespace Aspose.Pdf.Generator permite criar uma tabela de conteúdo ao criar um PDF do zero. Para adicionar cabeçalhos, que são elementos do TOC, use a classe Aspose.Pdf.Generator.Heading.
+A API Aspose.PDF permite que você adicione uma tabela de conteúdo ao criar um PDF ou a um arquivo existente. A classe ListSection no namespace Aspose.Pdf.Generator permite que você crie uma tabela de conteúdos ao criar um PDF do zero. Para adicionar cabeçalhos, que são elementos do TOC, use a classe Aspose.Pdf.Generator.Heading.
 
-Para adicionar um TOC a um arquivo PDF existente, use a classe Heading no namespace Aspose.PDF. O namespace Aspose.Pdf pode tanto criar novos arquivos PDF quanto manipular arquivos PDF existentes. O seguinte trecho de código mostra como criar uma tabela de conteúdo dentro de um arquivo PDF existente.
+Para adicionar um TOC a um arquivo PDF existente, use a classe Heading no namespace Aspose.PDF. O namespace Aspose.Pdf pode tanto criar novos arquivos PDF quanto manipular arquivos PDF existentes. O seguinte trecho de código mostra como criar uma tabela de conteúdos dentro de um arquivo PDF existente.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### Ocultar Números de Página no TOC
 
-Caso você não queira exibir números de página, juntamente com os cabeçalhos no TOC, pode usar a propriedade [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) da classe [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) como falsa. Por favor, verifique o seguinte trecho de código para ocultar números de página na tabela de conteúdo:
+Caso você não queira exibir números de página, juntamente com os cabeçalhos no TOC, pode usar a propriedade [IsShowPageNumbers](https://reference.aspose.com/pdf/pt/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) da classe [TOCInfo](https://reference.aspose.com/pdf/pt/net/aspose.pdf/tocinfo) como falsa. Por favor, verifique o seguinte trecho de código para ocultar números de página na tabela de conteúdos:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void CreateTocWithHiddenPageNumbers()
 
 ### Personalizar Números de Página ao adicionar TOC
 
-É comum personalizar a numeração das páginas no TOC ao adicionar TOC em um documento PDF. Por exemplo, podemos precisar adicionar um prefixo antes do número da página, como P1, P2, P3 e assim por diante. Nesse caso, Aspose.PDF for .NET fornece a propriedade PageNumbersPrefix da classe TocInfo que pode ser usada para personalizar números de página, conforme mostrado no seguinte exemplo de código.
+É comum personalizar a numeração das páginas no TOC ao adicionar TOC em um documento PDF. Por exemplo, podemos precisar adicionar algum prefixo antes do número da página, como P1, P2, P3 e assim por diante. Nesse caso, Aspose.PDF for .NET fornece a propriedade PageNumbersPrefix da classe TocInfo que pode ser usada para personalizar números de página, conforme mostrado no seguinte exemplo de código.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -451,9 +451,9 @@ private static void SetExpiryDate()
 
 ## Determinar o Progresso da Geração do Arquivo PDF
 
-Um cliente nos pediu para adicionar um recurso que permite aos desenvolvedores determinar o progresso da geração do arquivo PDF. Aqui está a resposta a esse pedido.
+Um cliente nos pediu para adicionar um recurso que permita aos desenvolvedores determinar o progresso da geração do arquivo PDF. Aqui está a resposta a esse pedido.
 
-O campo [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) da classe [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) permite que você determine como está a geração do PDF. O manipulador tem os seguintes tipos:
+O campo [CustomerProgressHandler](https://reference.aspose.com/pdf/pt/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) da classe [DocSaveOptions](https://reference.aspose.com/pdf/pt/net/aspose.pdf/docsaveoptions) permite que você determine como está a geração do PDF. O manipulador tem os seguintes tipos:
 
 - DocSaveOptions.ConversionProgessEventHandler.
 - DocSaveOptions.ProgressEventHandlerInfo.
@@ -505,8 +505,7 @@ private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.Progress
 
 ## Achatar PDF Preenchível
 
-Documentos PDF frequentemente incluem formulários com widgets interativos preenchíveis, como botões de opção, caixas de seleção, caixas de texto, listas, etc. Para torná-lo não editável para vários propósitos de aplicação, precisamos achatar o arquivo PDF. 
-Aspose.PDF fornece a função para achatar seu PDF em C# com apenas algumas linhas de código:
+Documentos PDF frequentemente incluem formulários com widgets interativos preenchíveis, como botões de opção, caixas de seleção, caixas de texto, listas, etc. Para torná-lo não editável para vários propósitos de aplicação, precisamos achatar o arquivo PDF. Aspose.PDF fornece a função para achatar seu PDF em C# com apenas algumas linhas de código:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -532,6 +531,68 @@ private static void FlattenForms()
     }
 }
 ```
+
+## Analisando documento PDF para Atualizações Incrementais
+Para verificar se um documento foi atualizado incrementalmente, use o método `HasIncrementalUpdate` da classe [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document). Este método analisa o arquivo PDF e retorna um valor booleano indicando se atualizações incrementais foram detectadas. Observe que, quando um documento é salvo usando o método [Save](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/save/#save) sem parâmetros, ele é salvo de forma incremental.
+
+O seguinte código C# demonstra como usar o método `HasIncrementalUpdate`:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Check for incremental updates
+        bool updatedIncrementally = document.HasIncrementalUpdate();
+
+        // Output the result
+        if (updatedIncrementally)
+        {
+            Console.WriteLine("This document has been incrementally updated.");
+        }
+        else
+        {
+            Console.WriteLine("This document has no incremental updates.");
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Check for incremental updates
+    bool updatedIncrementally = document.HasIncrementalUpdate();
+
+    // Output the result
+    if (updatedIncrementally)
+    {
+        Console.WriteLine("This document has been incrementally updated.");
+    }
+    else
+    {
+        Console.WriteLine("This document has no incremental updates.");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

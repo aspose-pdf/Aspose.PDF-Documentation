@@ -1,6 +1,6 @@
 ---
-title: Memanipulasi Dokumen PDF di C#
-linktitle: Memanipulasi Dokumen PDF
+title: Manipulasi Dokumen PDF di C#
+linktitle: Manipulasi Dokumen PDF
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "manipulate PDF, C#, validate PDF/A, TOC, set PDF expiry date, flatten fillable PDF, Aspose.PDF, PDF generation progress, customize page numbers, PDF encryption",
-    "wordcount": "2170",
+    "wordcount": "2499",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,16 +74,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-pdf-document/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Artikel ini berisi informasi tentang cara memvalidasi Dokumen PDF untuk Standar PDF A, cara bekerja dengan TOC, cara mengatur tanggal kedaluwarsa PDF, dan lain-lain."
 }
 </script>
 
-## **Memanipulasi Dokumen PDF di C#**
+## **Manipulasi Dokumen PDF di C#**
 
-## Memvalidasi Dokumen PDF untuk Standar PDF A (A 1A dan A 1B)
+## Validasi Dokumen PDF untuk Standar PDF A (A 1A dan A 1B)
 
-Untuk memvalidasi dokumen PDF untuk kompatibilitas PDF/A-1a atau PDF/A-1b, gunakan metode Validate dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Metode ini memungkinkan Anda untuk menentukan nama file tempat hasil akan disimpan dan jenis validasi yang diperlukan dari enumerasi [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat): PDF_A_1A atau PDF_A_1B.
+Untuk memvalidasi dokumen PDF untuk kompatibilitas PDF/A-1a atau PDF/A-1b, gunakan metode Validate dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Metode ini memungkinkan Anda untuk menentukan nama file tempat hasil akan disimpan dan jenis validasi yang diperlukan enumerasi [PdfFormat](https://reference.aspose.com/pdf/id/net/aspose.pdf/pdfformat): PDF_A_1A atau PDF_A_1B.
 
 {{% alert color="primary" %}}
 
@@ -137,7 +137,7 @@ Aspose.PDF for .NET dapat digunakan untuk menentukan apakah dokumen yang dimuat 
 
 ## Bekerja dengan TOC
 
-### Menambahkan TOC ke PDF yang Ada
+### Tambahkan TOC ke PDF yang Ada
 
 API Aspose.PDF memungkinkan Anda untuk menambahkan tabel isi baik saat membuat PDF, atau ke file yang sudah ada. Kelas ListSection dalam namespace Aspose.Pdf.Generator memungkinkan Anda untuk membuat tabel isi saat membuat PDF dari awal. Untuk menambahkan judul, yang merupakan elemen dari TOC, gunakan kelas Aspose.Pdf.Generator.Heading.
 
@@ -196,7 +196,7 @@ private static void AddTOCToPdf()
 }
 ```
 
-### Mengatur TabLeaderType yang berbeda untuk tingkat TOC yang berbeda
+### Atur TabLeaderType yang berbeda untuk Tingkat TOC yang berbeda
 
 Aspose.PDF juga memungkinkan pengaturan TabLeaderType yang berbeda untuk tingkat TOC yang berbeda. Anda perlu mengatur properti LineDash dari FormatArray dengan nilai yang sesuai dari enum TabLeaderType sebagai berikut.
 
@@ -279,9 +279,9 @@ private static void CreateTocWithCustomFormatting()
 }
 ```
 
-### Menyembunyikan Nomor Halaman di TOC
+### Sembunyikan Nomor Halaman di TOC
 
-Jika Anda tidak ingin menampilkan nomor halaman, bersama dengan judul di TOC, Anda dapat menggunakan properti [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) dari kelas [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) sebagai false. Silakan periksa potongan kode berikut untuk menyembunyikan nomor halaman di tabel isi:
+Jika Anda tidak ingin menampilkan nomor halaman, bersama dengan judul di TOC, Anda dapat menggunakan properti [IsShowPageNumbers](https://reference.aspose.com/pdf/id/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) dari Kelas [TOCInfo](https://reference.aspose.com/pdf/id/net/aspose.pdf/tocinfo) sebagai false. Silakan periksa potongan kode berikut untuk menyembunyikan nomor halaman di tabel isi:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -352,7 +352,7 @@ private static void CreateTocWithHiddenPageNumbers()
 }
 ```
 
-### Menyesuaikan Nomor Halaman saat menambahkan TOC
+### Sesuaikan Nomor Halaman saat menambahkan TOC
 
 Umum untuk menyesuaikan penomoran halaman di TOC saat menambahkan TOC dalam dokumen PDF. Misalnya, kita mungkin perlu menambahkan beberapa awalan sebelum nomor halaman seperti P1, P2, P3 dan seterusnya. Dalam hal ini, Aspose.PDF for .NET menyediakan properti PageNumbersPrefix dari kelas TocInfo yang dapat digunakan untuk menyesuaikan nomor halaman seperti yang ditunjukkan dalam contoh kode berikut.
 
@@ -412,7 +412,7 @@ private static void CustomizePageNumbersAddingToC()
 
 Kami menerapkan hak akses pada file PDF sehingga sekelompok pengguna tertentu dapat mengakses fitur/objek tertentu dari dokumen PDF. Untuk membatasi akses file PDF, kami biasanya menerapkan enkripsi dan kami mungkin memiliki kebutuhan untuk mengatur kedaluwarsa file PDF, sehingga pengguna yang mengakses/melihat dokumen mendapatkan prompt yang valid mengenai kedaluwarsa file PDF.
 
-Untuk memenuhi kebutuhan yang disebutkan di atas, kami dapat menggunakan objek *JavascriptAction*. Silakan lihat potongan kode berikut.
+Untuk memenuhi kebutuhan yang dinyatakan di atas, kami dapat menggunakan objek *JavascriptAction*. Silakan lihat potongan kode berikut.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -453,7 +453,7 @@ private static void SetExpiryDate()
 
 Seorang pelanggan meminta kami untuk menambahkan fitur yang memungkinkan pengembang untuk menentukan kemajuan generasi file PDF. Berikut adalah tanggapan terhadap permintaan itu.
 
-Bidang [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) dari kelas [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) memungkinkan Anda untuk menentukan bagaimana kemajuan generasi PDF. Penangan memiliki tipe berikut:
+Bidang [CustomerProgressHandler](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) dari kelas [DocSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions) memungkinkan Anda untuk menentukan bagaimana kemajuan generasi PDF. Penangan memiliki jenis berikut:
 
 - DocSaveOptions.ConversionProgessEventHandler.
 - DocSaveOptions.ProgressEventHandlerInfo.
@@ -503,9 +503,9 @@ private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.Progress
 }
 ```
 
-## Meratakan PDF yang Dapat Diisi
+## Ratakan PDF yang Dapat Diisi
 
-Dokumen PDF sering kali menyertakan formulir dengan widget interaktif yang dapat diisi seperti tombol radio, kotak centang, kotak teks, daftar, dll. Untuk membuatnya tidak dapat diedit untuk berbagai tujuan aplikasi, kita perlu meratakan file PDF.
+Dokumen PDF sering kali menyertakan formulir dengan widget interaktif yang dapat diisi seperti tombol radio, kotak centang, kotak teks, daftar, dll. Untuk membuatnya tidak dapat diedit untuk berbagai tujuan aplikasi, kami perlu meratakan file PDF.
 Aspose.PDF menyediakan fungsi untuk meratakan PDF Anda di C# hanya dengan beberapa baris kode:
 
 ```csharp
@@ -532,6 +532,68 @@ private static void FlattenForms()
     }
 }
 ```
+
+## Menganalisis dokumen PDF untuk Pembaruan Inkremental
+Untuk memeriksa apakah dokumen telah diperbarui secara inkremental, gunakan metode `HasIncrementalUpdate` dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document). Metode ini menganalisis file PDF dan mengembalikan nilai boolean yang menunjukkan apakah pembaruan inkremental terdeteksi. Perhatikan bahwa ketika dokumen disimpan menggunakan metode [Save](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/save/#save) tanpa parameter, dokumen disimpan secara inkremental.
+
+Potongan kode C# berikut menunjukkan cara menggunakan metode `HasIncrementalUpdate`:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Check for incremental updates
+        bool updatedIncrementally = document.HasIncrementalUpdate();
+
+        // Output the result
+        if (updatedIncrementally)
+        {
+            Console.WriteLine("This document has been incrementally updated.");
+        }
+        else
+        {
+            Console.WriteLine("This document has no incremental updates.");
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Check for incremental updates
+    bool updatedIncrementally = document.HasIncrementalUpdate();
+
+    // Output the result
+    if (updatedIncrementally)
+    {
+        Console.WriteLine("This document has been incrementally updated.");
+    }
+    else
+    {
+        Console.WriteLine("This document has no incremental updates.");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

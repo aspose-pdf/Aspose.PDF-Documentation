@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Manipulate PDF Document in C#",
     "alternativeHeadline": "Enhanced PDF Manipulation Features in C# Library",
-    "abstract": "发现使用 C# 操作 PDF 文档的强大功能，包括对 PDF/A 标准的验证、创建和自定义目录的能力，以及设置文档到期日期。此功能不仅增强了文档管理，还确保符合行业标准，使其成为寻求强大 PDF 处理解决方案的开发人员的必备工具。",
+    "abstract": "发现 C# 中操作 PDF 文档的强大功能，包括对 PDF/A 标准的验证、创建和自定义目录的能力，以及设置文档到期日期。此功能不仅增强了文档管理，还确保符合行业标准，使其成为寻求强大 PDF 处理解决方案的开发人员的必备工具。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "manipulate PDF, C#, validate PDF/A, TOC, set PDF expiry date, flatten fillable PDF, Aspose.PDF, PDF generation progress, customize page numbers, PDF encryption",
-    "wordcount": "2170",
+    "wordcount": "2092",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-pdf-document/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "本文包含有关如何验证 PDF 文档是否符合 PDF A 标准、如何处理目录、如何设置 PDF 到期日期等信息。"
 }
 </script>
@@ -93,7 +93,7 @@ sitemap:
 
 以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
-以下代码片段演示了如何验证 PDF 文档是否符合 PDF/A-1A。
+以下代码片段演示如何验证 PDF 文档是否符合 PDF/A-1A。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void ValidateToPdfA1aStandard()
 }
 ```
 
-以下代码片段演示了如何验证 PDF 文档是否符合 PDF/A-1b。
+以下代码片段演示如何验证 PDF 文档是否符合 PDF/A-1b。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -141,7 +141,7 @@ Aspose.PDF for .NET 可用于确定加载的文档是否为有效 PDF，以及 [
 
 Aspose.PDF API 允许您在创建 PDF 时或向现有文件添加目录。Aspose.Pdf.Generator 命名空间中的 ListSection 类允许您在从头创建 PDF 时创建目录。要添加目录的元素（即标题），请使用 Aspose.Pdf.Generator.Heading 类。
 
-要向现有 PDF 文件添加目录，请使用 Aspose.PDF 命名空间中的 Heading 类。Aspose.Pdf 命名空间可以创建新 PDF 也可以操作现有 PDF 文件。以下代码片段演示了如何在现有 PDF 文件中创建目录。
+要向现有 PDF 文件添加目录，请使用 Aspose.PDF 命名空间中的 Heading 类。Aspose.Pdf 命名空间可以创建新 PDF 也可以操作现有 PDF 文件。以下代码片段演示如何在现有 PDF 文件中创建目录。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -410,7 +410,7 @@ private static void CustomizePageNumbersAddingToC()
 
 ## 如何设置 PDF 到期日期
 
-我们对 PDF 文件应用访问权限，以便某一特定用户组可以访问 PDF 文档的特定功能/对象。为了限制 PDF 文件的访问，我们通常会应用加密，并且可能需要设置 PDF 文件的到期日期，以便访问/查看文档的用户能够获得有关 PDF 文件到期的有效提示。
+我们对 PDF 文件应用访问权限，以便某一特定用户组可以访问 PDF 文档的特定功能/对象。为了限制 PDF 文件的访问，我们通常会应用加密，并且可能需要设置 PDF 文件的到期日期，以便访问/查看文档的用户获得有关 PDF 文件到期的有效提示。
 
 为了实现上述要求，我们可以使用 *JavascriptAction* 对象。请查看以下代码片段。
 
@@ -449,7 +449,7 @@ private static void SetExpiryDate()
 }
 ```
 
-## 确定 PDF 文件生成进度
+## 确定 PDF 文件生成的进度
 
 客户要求我们添加一个功能，允许开发人员确定 PDF 文件生成的进度。以下是对此请求的响应。
 
@@ -459,7 +459,7 @@ private static void SetExpiryDate()
 - DocSaveOptions.ProgressEventHandlerInfo。
 - DocSaveOptions.ProgressEventType。
 
-以下代码片段演示了如何使用 CustomerProgressHandler。
+以下代码片段演示如何使用 CustomerProgressHandler。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -505,7 +505,7 @@ private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.Progress
 
 ## 扁平化可填写 PDF
 
-PDF 文档通常包含带有交互式可填写小部件（如单选按钮、复选框、文本框、列表等）的表单。为了使其在各种应用程序中不可编辑，我们需要扁平化 PDF 文件。
+PDF 文档通常包含带有交互式可填写小部件的表单，例如单选按钮、复选框、文本框、列表等。为了使其在各种应用程序中不可编辑，我们需要扁平化 PDF 文件。
 Aspose.PDF 提供了在 C# 中扁平化 PDF 的功能，只需几行代码：
 
 ```csharp
@@ -532,6 +532,68 @@ private static void FlattenForms()
     }
 }
 ```
+
+## 分析 PDF 文档以进行增量更新
+要检查文档是否已增量更新，请使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的 `HasIncrementalUpdate` 方法。此方法分析 PDF 文件并返回一个布尔值，指示是否检测到增量更新。请注意，当使用无参数的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/save/#save) 方法保存文档时，它是以增量方式保存的。
+
+以下 C# 代码演示如何使用 `HasIncrementalUpdate` 方法：
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Check for incremental updates
+        bool updatedIncrementally = document.HasIncrementalUpdate();
+
+        // Output the result
+        if (updatedIncrementally)
+        {
+            Console.WriteLine("This document has been incrementally updated.");
+        }
+        else
+        {
+            Console.WriteLine("This document has no incremental updates.");
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Check for incremental updates
+    bool updatedIncrementally = document.HasIncrementalUpdate();
+
+    // Output the result
+    if (updatedIncrementally)
+    {
+        Console.WriteLine("This document has been incrementally updated.");
+    }
+    else
+    {
+        Console.WriteLine("This document has no incremental updates.");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
