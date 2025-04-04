@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "252",
+    "wordcount": "292",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,12 +70,14 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/import-export-form-field/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하십시오."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF는 단순하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하십시오."
 }
 </script>
 
-Aspose.PDF for .NET는 PDF 문서 내에서 양식 필드를 생성/조작할 수 있는 훌륭한 기능을 제공합니다. 이 API를 사용하면 프로그래밍 방식으로 PDF 파일 내의 양식 필드를 채우고, [FDF에서 PDF 파일로 데이터 가져오기](/pdf/ko/net/import-and-export-data/), [XFDF에서 PDF 파일로 데이터 가져오기](/pdf/ko/net/import-and-export-data/), [XML에서 PDF 파일로 데이터 가져오기](/pdf/ko/net/import-and-export-data/) 또는 [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) 객체에서 데이터를 가져올 수 있습니다.
+Aspose.PDF for .NET는 PDF 문서 내에서 양식 필드를 생성/조작할 수 있는 훌륭한 기능을 제공합니다. 이 API를 사용하면 프로그래밍 방식으로 PDF 파일 내의 양식 필드를 채우고, [FDF에서 PDF 파일로 데이터 가져오기](/pdf/ko/net/import-and-export-data/), [XFDF에서 PDF 파일로 데이터 가져오기](/pdf/ko/net/import-and-export-data/), [XML에서 PDF 파일로 데이터 가져오기](/pdf/ko/net/import-and-export-data/) 또는 [System.Data.DataTable](https://reference.aspose.com/pdf/ko/net/aspose.pdf.table/importdatatable/methods/1) 객체에서 데이터를 가져올 수 있습니다.
+
+## PDF에서 FDF로 데이터 가져오기
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
