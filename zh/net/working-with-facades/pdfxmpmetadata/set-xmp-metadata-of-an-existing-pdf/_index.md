@@ -105,10 +105,10 @@ private static void AddXmpMetadata()
         xmpMetaData.Remove(Aspose.Pdf.Facades.DefaultMetadataProperties.ModifyDate);
 
         // Add user defined property
-        // Step #1: register namespace prefix and URI
+        // Register namespace prefix and URI
         xmpMetaData.RegisterNamespaceURI("customNamespace", "http:// Www.customNameSpaces.com/ns/");
 
-        // Step #2: add user property with the prefix
+        // Add user property with the prefix
         xmpMetaData.Add("customNamespace:UserPropertyName", "UserPropertyValue");
 
         // Change user defined property
@@ -148,10 +148,10 @@ private static void AddXmpMetadata()
     xmpMetaData.Remove(Aspose.Pdf.Facades.DefaultMetadataProperties.ModifyDate);
 
     // Add user defined property
-    // Step #1: register namespace prefix and URI
+    // register namespace prefix and URI
     xmpMetaData.RegisterNamespaceURI("customNamespace", "http:// Www.customNameSpaces.com/ns/");
 
-    // Step #2: add user property with the prefix
+    // Add user property with the prefix
     xmpMetaData.Add("customNamespace:UserPropertyName", "UserPropertyValue");
 
     // Change user defined property

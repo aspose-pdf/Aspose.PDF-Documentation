@@ -84,68 +84,22 @@ This article explains how to convert various Images formats to PDF using C#. It 
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-_Format_: **BMP**
-- [C# BMP to PDF](#csharp-bmp-to-pdf)
-- [C# Convert BMP to PDF](#csharp-bmp-to-pdf)
-- [C# How to convert BMP image to PDF](#csharp-bmp-to-pdf)
-
-_Format_: **CGM**
-- [C# CGM to PDF](#csharp-cgm-to-pdf)
-- [C# Convert CGM to PDF](#csharp-cgm-to-pdf)
-- [C# How to convert CGM image to PDF](#csharp-cgm-to-pdf)
-
-_Format_: **DICOM**
-- [C# DICOM to PDF](#csharp-dicom-to-pdf)
-- [C# Convert DICOM to PDF](#csharp-dicom-to-pdf)
-- [C# How to convert DICOM image to PDF](#csharp-dicom-to-pdf)
-
-_Format_: **EMF**
-- [C# EMF to PDF](#csharp-emf-to-pdf)
-- [C# Convert EMF to PDF](#csharp-emf-to-pdf)
-- [C# How to convert EMF image to PDF](#csharp-emf-to-pdf)
-
-_Format_: **GIF**
-- [C# GIF to PDF](#csharp-gif-to-pdf)
-- [C# Convert GIF to PDF](#csharp-gif-to-pdf)
-- [C# How to convert GIF image to PDF](#csharp-gif-to-pdf)
-
-_Format_: **JPG**
-- [C# JPG to PDF](#csharp-jpg-to-pdf)
-- [C# Convert JPG to PDF](#csharp-jpg-to-pdf)
-- [C# How to convert JPG image to PDF](#csharp-jpg-to-pdf)
-
-_Format_: **PNG**
-- [C# PNG to PDF](#csharp-png-to-pdf)
-- [C# Convert PNG to PDF](#csharp-png-to-pdf)
-- [C# How to convert PNG image to PDF](#csharp-png-to-pdf)
-
-_Format_: **SVG**
-- [C# SVG to PDF](#csharp-svg-to-pdf)
-- [C# Convert SVG to PDF](#csharp-svg-to-pdf)
-- [C# How to convert SVG image to PDF](#csharp-svg-to-pdf)
-
-_Format_: **TIFF**
-- [C# TIFF to PDF](#csharp-tiff-to-pdf)
-- [C# Convert TIFF to PDF](#csharp-tiff-to-pdf)
-- [C# How to convert TIFF image to PDF](#csharp-tiff-to-pdf)
-
-_Format_: **CDR**
-- [C# CDR to PDF](#csharp-cdr-to-pdf)
-- [C# Convert CDR to PDF](#csharp-cdr-to-pdf)
-- [C# How to convert CDR image to PDF](#csharp-cdr-to-pdf)
-
-_Format_: **DJVU**
-- [C# DJVU to PDF](#csharp-djvu-to-pdf)
-- [C# Convert DJVU to PDF](#csharp-djvu-to-pdf)
-- [C# How to convert DJVU image to PDF](#csharp-djvu-to-pdf)
-
-Other topics covered by this article
-- [See Also](#see-also)
-
+- [Convert BMP to PDF](#csharp-bmp-to-pdf)
+- [Convert CGM to PDF](#csharp-cgm-to-pdf)
+- [Convert DICOM to PDF](#csharp-dicom-to-pdf)
+- [Convert EMF to PDF](#csharp-emf-to-pdf)
+- [Convert GIF to PDF](#csharp-gif-to-pdf)
+- [Convert JPG to PDF](#csharp-jpg-to-pdf)
+- [Convert PNG to PDF](#csharp-png-to-pdf)
+- [Convert SVG to PDF](#csharp-svg-to-pdf)
+- [Convert TIFF to PDF](#csharp-tiff-to-pdf)
+- [Convert CDR to PDF](#csharp-cdr-to-pdf)
+- [Convert DJVU to PDF](#csharp-djvu-to-pdf)
+- [Convert HEIC to PDF](#csharp-heic-to-pdf)
 
 ## C# Images to PDF Conversions
 
-**Aspose.PDF for .NET**  allows you to convert different formats of images to PDF files. Our library demonstrates code snippets for converting the most popular image formats, such as - BMP, CGM, DICOM, EMF, JPG, PNG, SVG and TIFF formats.
+**Aspose.PDF for .NET**  allows you to convert different formats of images to PDF files. Our library demonstrates code snippets for converting the most popular image formats, such as - BMP, CGM, DICOM, EMF, JPG, PNG, SVG, CDR, HEIC and TIFF formats.
 
 ## Convert BMP to PDF
 
@@ -154,7 +108,7 @@ Convert BMP files to PDF document using **Aspose.PDF for .NET** library.
 <abbr title="Bitmap Image File">BMP</abbr> images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
 You can convert BMP to PDF files with Aspose.PDF for .NET API. Therefore, you can follow the following steps to convert BMP images:
 
-<a name="csharp-bmp-to-pdf" id="csharp-bmp-to-pdf"><strong>Steps: Convert BMP to PDF in C#</strong></a>
+<a name="csharp-bmp-to-pdf" id="csharp-bmp-to-pdf"><strong>Convert BMP to PDF</strong></a>
 
 1. Initialize a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class object.
 2. Load input **BMP** image.
@@ -200,7 +154,7 @@ Aspose presents you online free application ["BMP to PDF"](https://products.aspo
 
 Check next code snippet for converting CGM files to PDF format.
 
-<a name="csharp-cgm-to-pdf" id="csharp-cgm-to-pdf"><strong>Steps: Convert CGM to PDF in C#</strong></a>
+<a name="csharp-cgm-to-pdf" id="csharp-cgm-to-pdf"><strong>Convert CGM to PDF</strong></a>
 
 1. Create an instance of [CgmLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
@@ -230,7 +184,7 @@ private static void ConvertCGMtoPDF()
 
 **Aspsoe.PDF for .NET** allows you to convert DICOM and SVG images, but for technical reasons to add images you need to specify the type of file to be added to PDF:
 
-<a name="csharp-dicom-to-pdf" id="csharp-dicom-to-pdf"><strong>Steps: Convert DICOM to PDF in C#</strong></a>
+<a name="csharp-dicom-to-pdf" id="csharp-dicom-to-pdf"><strong>Convert DICOM to PDF</strong></a>
 
 1. Create an object of the Image class.
 2. Add the image to a page's Paragraphs collection.
@@ -279,7 +233,7 @@ Aspose presents you online free application ["DICOM to PDF"](https://products.as
 
 <abbr title="Enhanced metafile format">EMF</abbr> stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device. Furthermore, you can convert EMF to PDF image using the below steps:
 
-<a name="csharp-emf-to-pdf" id="csharp-emf-to-pdf"><strong>Steps: Convert EMF to PDF in C#</strong></a>
+<a name="csharp-emf-to-pdf" id="csharp-emf-to-pdf"><strong>Convert EMF to PDF</strong></a>
 
 1. Firstly, initialize [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class object.
 2. Load **EMF** image file.
@@ -335,7 +289,7 @@ Convert GIF files to PDF document using **Aspose.PDF for .NET** library.
 <abbr title="Graphics Interchange Format">GIF</abbr> is able to store compressed data without loss of quality in a format of no more than 256 colors. The hardware-independent GIF format was developed in 1987 (GIF87a) by CompuServe for transmitting bitmap images over networks.
 You can convert GIF to PDF files with Aspose.PDF for .NET API. Therefore, you can follow the following steps to convert GIF images:
 
-<a name="csharp-gif-to-pdf" id="csharp-gif-to-pdf"><strong>Steps: Convert GIF to PDF in C#</strong></a>
+<a name="csharp-gif-to-pdf" id="csharp-gif-to-pdf"><strong>Convert GIF to PDF</strong></a>
 
 1. Initialize a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class object.
 2. Load input **GIF** image.
@@ -381,7 +335,7 @@ No need to wonder how to convert JPG to PDF, because **Apose.PDF for .NET** libr
 
 You can very easy convert a JPG images to PDF with Aspose.PDF for .NET by following steps:
 
-<a name="csharp-jpg-to-pdf" id="csharp-jpg-to-pdf"><strong>Steps: Convert JPG to PDF in C#</strong></a>
+<a name="csharp-jpg-to-pdf" id="csharp-jpg-to-pdf"><strong>Convert JPG to PDF</strong></a>
 
 1. Initialize object of [Document](https://reference.aspose.com/page/net/aspose.page/document) class.
 2. Add a new Page to PDF document.
@@ -471,7 +425,7 @@ Aspose presents you online free application ["JPG to PDF"](https://products.aspo
 
 You can convert PNG to PDF image using the below steps:
 
-<a name="csharp-png-to-pdf" id="csharp-png-to-pdf"><strong>Steps: Convert PNG to PDF in C#</strong></a>
+<a name="csharp-png-to-pdf" id="csharp-png-to-pdf"><strong>Convert PNG to PDF</strong></a>
 
 1. Load input **PNG** image.
 2. Read height and width values.
@@ -537,9 +491,9 @@ Aspose.PDF for .NET presents you online free application ["SVG to PDF"](https://
 [![Aspose.PDF Convertion SVG to PDF with Free App](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
-To convert SVG files to PDF, use the class named [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) which is used to initialize the [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
+To convert SVG files to PDF, use the class named [SvgLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/svgloadoptions) which is used to initialize the [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.
 
-<a name="csharp-svg-to-pdf" id="csharp-svg-to-pdf"><strong>Steps: Convert SVG to PDF in C#</strong></a>
+<a name="csharp-svg-to-pdf" id="csharp-svg-to-pdf"><strong>Convert SVG to PDF</strong></a>
 
 1. Create an instance of [`SvgLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) class.
 2. Create an instance of [`Document`](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
@@ -787,7 +741,7 @@ TIFF or TIF, Tagged Image File Format, represents raster images that are meant f
 
 You can convert TIFF to PDF in the same manner as the rest raster file formats graphics:
 
-<a name="csharp-tiff-to-pdf" id="csharp-tiff-to-pdf"><strong>Steps: Convert TIFF to PDF in C#</strong></a>
+<a name="csharp-tiff-to-pdf" id="csharp-tiff-to-pdf"><strong>Convert TIFF to PDF</strong></a>
 
 1. Create new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class object and add Page.
 2. Load input **TIFF** image.
@@ -876,7 +830,7 @@ private static void ConvertTIFFtoPDF()
 
 Check next code snippet for converting CDR files to PDF format.
 
-<a name="csharp-cdr-to-pdf" id="csharp-cdr-to-pdf"><strong>Steps: Convert CDR to PDF in C#</strong></a>
+<a name="csharp-cdr-to-pdf" id="csharp-cdr-to-pdf"><strong>Convert CDR to PDF</strong></a>
 
 1. Create an instance of [CdrLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cdrloadoptions/) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
@@ -904,7 +858,7 @@ private static void ConvertCDRtoPDF()
 
 Check next code snippet for converting DJVU files to PDF format.
 
-<a name="csharp-djvu-to-pdf" id="csharp-djvu-to-pdf"><strong>Steps: Convert DJVU to PDF in C#</strong></a>
+<a name="csharp-djvu-to-pdf" id="csharp-djvu-to-pdf"><strong>Convert DJVU to PDF</strong></a>
 
 1. Create an instance of [DjvuLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/djvuloadoptions/) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
@@ -927,6 +881,8 @@ private static void ConvertDJVUtoPDF()
 ```
 
 ## Convert HEIC to PDF
+
+<a name="csharp-heic-to-pdf" id="csharp-heic-to-pdf"><strong>Convert HEIC to PDF</strong></a>
 
 A HEIC file is a High-Efficiency Container Image file format that can store multiple images as a collection in a single file.
 For loading heic images you need to add a reference to the https://www.nuget.org/packages/FileFormat.Heic/ nuget package.
@@ -967,77 +923,3 @@ private static void ConvertHEICtoPDF()
     }
 }
 ```
-
-## Applies to
-
-|**Platform**|**Supported**|**Comments**|
-| :- | :- |:- |
-|Windows .NET Framework|2.0-4.6| |
-|Windows .NET Core |2.0-3.1| |
-|.NET 5 Windows| |
-|Linux .NET Core|2.0-3.1 | |
-|.NET 5 Linux | |
-
-## See Also
-
-This article also covers these topics. The codes are same as above.
-
-_Format_: **BMP**
-- [C# BMP to PDF Code](#csharp-bmp-to-pdf)
-- [C# BMP to PDF API](#csharp-bmp-to-pdf)
-- [C# BMP to PDF Programmatically](#csharp-bmp-to-pdf)
-- [C# BMP to PDF Library](#csharp-bmp-to-pdf)
-- [C# Save BMP as PDF](#csharp-bmp-to-pdf)
-- [C# Generate PDF from BMP](#csharp-bmp-to-pdf)
-- [C# Create PDF from BMP](#csharp-bmp-to-pdf)
-- [C# BMP to PDF Converter](#csharp-bmp-to-pdf)
-
-_Format_: **CGM**
-- [C# CGM to PDF Code](#csharp-cgm-to-pdf)
-- [C# CGM to PDF API](#csharp-cgm-to-pdf)
-- [C# CGM to PDF Programmatically](#csharp-cgm-to-pdf)
-- [C# CGM to PDF Library](#csharp-cgm-to-pdf)
-- [C# Save CGM as PDF](#csharp-cgm-to-pdf)
-- [C# Generate PDF from CGM](#csharp-cgm-to-pdf)
-- [C# Create PDF from CGM](#csharp-cgm-to-pdf)
-- [C# CGM to PDF Converter](#csharp-cgm-to-pdf)
-
-_Format_: **DICOM**
-- [C# DICOM to PDF Code](#csharp-dicom-to-pdf)
-- [C# DICOM to PDF API](#csharp-dicom-to-pdf)
-- [C# DICOM to PDF Programmatically](#csharp-dicom-to-pdf)
-- [C# DICOM to PDF Library](#csharp-dicom-to-pdf)
-- [C# Save DICOM as PDF](#csharp-dicom-to-pdf)
-- [C# Generate PDF from DICOM](#csharp-dicom-to-pdf)
-- [C# Create PDF from DICOM](#csharp-dicom-to-pdf)
-- [C# DICOM to PDF Converter](#csharp-dicom-to-pdf)
-
-_Format_: **EMF**
-- [C# EMF to PDF Code](#csharp-emf-to-pdf)
-- [C# EMF to PDF API](#csharp-emf-to-pdf)
-- [C# EMF to PDF Programmatically](#csharp-emf-to-pdf)
-- [C# EMF to PDF Library](#csharp-emf-to-pdf)
-- [C# Save EMF as PDF](#csharp-emf-to-pdf)
-- [C# Generate PDF from EMF](#csharp-emf-to-pdf)
-- [C# Create PDF from EMF](#csharp-emf-to-pdf)
-- [C# EMF to PDF Converter](#csharp-emf-to-pdf)
-
-_Format_: **DjVu**
-- [C# DjVu to PDF Code](#csharp-djvu-to-pdf)
-- [C# DjVu to PDF API](#csharp-djvu-to-pdf)
-- [C# DjVu to PDF Programmatically](#csharp-djvu-to-pdf)
-- [C# DjVu to PDF Library](#csharp-djvu-to-pdf)
-- [C# Save DjVu as PDF](#csharp-djvu-to-pdf)
-- [C# Generate PDF from DjVu](#csharp-djvu-to-pdf)
-- [C# Create PDF from DjVu](#csharp-djvu-to-pdf)
-- [C# DjVu to PDF Converter](#csharp-djvu-to-pdf)
-
-_Format_: **CDR**
-- [C# CDR to PDF Code](#csharp-cdr-to-pdf)
-- [C# CDR to PDF API](#csharp-cdr-to-pdf)
-- [C# CDR to PDF Programmatically](#csharp-cdr-to-pdf)
-- [C# CDR to PDF Library](#csharp-cdr-to-pdf)
-- [C# Save CDR as PDF](#csharp-cdr-to-pdf)
-- [C# Generate PDF from CDR](#csharp-cdr-to-pdf)
-- [C# Create PDF from CDR](#csharp-cdr-to-pdf)
-- [C# CDR to PDF Converter](#csharp-cdr-to-pdf)

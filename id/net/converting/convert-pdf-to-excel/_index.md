@@ -7,7 +7,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /id/net/convert-pdf-to-excel/
 lastmod: "2021-11-01"
-description: Aspose.PDF for .NET library memungkinkan Anda untuk mengonversi PDF ke format Excel menggunakan C#. Format ini termasuk XLS, XLSX, XML 2003 Spreadsheet, CSV, ODS.
+description: Aspose.PDF for .NET library memungkinkan Anda untuk mengonversi PDF ke format Excel menggunakan C#. Format ini mencakup XLS, XLSX, XML 2003 Spreadsheet, CSV, ODS.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to Excel in .NET",
     "alternativeHeadline": "Convert PDF Files to Excel Formats with C#",
-    "abstract": "Temukan kemampuan kuat dari Aspose.PDF for .NET untuk dengan mudah mengonversi dokumen PDF menjadi berbagai format Excel, termasuk XLS, XLSX, CSV, dan ODS, menggunakan C#. Fitur ini tidak hanya memungkinkan transformasi halaman PDF individu menjadi lembar kerja Excel terpisah tetapi juga menawarkan opsi untuk lembar gabungan, memberikan fleksibilitas bagi pengguna untuk mengelola data PDF mereka dengan efisien.",
+    "abstract": "Temukan kemampuan kuat dari Aspose.PDF for .NET untuk dengan mudah mengonversi dokumen PDF menjadi berbagai format Excel, termasuk XLS, XLSX, CSV, dan ODS, menggunakan C#. Fitur ini tidak hanya memungkinkan transformasi halaman PDF individu menjadi lembar kerja Excel terpisah tetapi juga menawarkan opsi untuk lembar gabungan, memberikan fleksibilitas bagi pengguna untuk mengelola data PDF mereka dengan efisien",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1780",
+    "wordcount": "1445",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,82 +73,52 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-excel/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
 ## Ikhtisar
 
-Artikel ini menjelaskan bagaimana **mengonversi PDF ke format Excel menggunakan C#**. Ini mencakup topik berikut.
+Artikel ini menjelaskan bagaimana **mengonversi PDF ke format Excel menggunakan C#**. Ini mencakup topik-topik berikut.
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
+Potongan kode berikut juga bekerja dengan library [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-_Format_: **XLS**
+- [Mengonversi PDF ke XLS](#csharp-pdf-to-xls)
+- [Mengonversi PDF ke XLSX](#csharp-pdf-to-xlsx)
+- [Mengonversi PDF ke Excel](#csharp-pdf-to-xlsx)
+- [Mengonversi PDF ke XLS dengan Lembar Kerja Tunggal](#csharp-pdf-to-excel-single)
+- [Mengonversi PDF ke XLSX dengan Lembar Kerja Tunggal](#csharp-pdf-to-excel-single)
+- [Mengonversi PDF ke XML Excel](#csharp-pdf-to-excel-xml-2003)
+- [Mengonversi PDF ke CSV](#csharp-pdf-to-csv)
+- [Mengonversi PDF ke ODS](#csharp-pdf-to-ods)
+- [Mengonversi PDF ke XLSM](#csharp-pdf-to-xlsm)
 
-- [C# PDF ke XLS](#csharp-pdf-to-xls)
-- [C# Mengonversi PDF ke XLS](#csharp-pdf-to-xls)
-- [C# Cara mengonversi file PDF ke XLS](#csharp-pdf-to-xls)
+## Konversi PDF ke Excel C#
 
-_Format_: **XLSX**
-
-- [C# PDF ke XLSX](#csharp-pdf-to-xlsx)
-- [C# Mengonversi PDF ke XLSX](#csharp-pdf-to-xlsx)
-- [C# Cara mengonversi file PDF ke XLSX](#csharp-pdf-to-xlsx)
-
-_Format_: **Excel**
-
-- [C# PDF ke Excel](#csharp-pdf-to-xlsx)
-- [C# PDF ke Excel XLS](#csharp-pdf-to-xls)
-- [C# PDF ke Excel XLSX](#csharp-pdf-to-xlsx)
-
-_Format_: **Lembar Kerja Excel Tunggal**
-
-- [C# Mengonversi PDF ke XLS dengan Lembar Kerja Tunggal](#csharp-pdf-to-excel-single)
-- [C# Mengonversi PDF ke XLSX dengan Lembar Kerja Tunggal](#csharp-pdf-to-excel-single)
-
-_Format_: **Format Spreadsheet XML 2003**
-
-- [C# PDF ke XML Excel](#csharp-pdf-to-excel-xml-2003)
-- [C# Mengonversi PDF ke XML Excel Spreadsheet](#csharp-pdf-to-excel-xml-2003)
-
-_Format_: **CSV**
-
-- [C# PDF ke CSV](#csharp-pdf-to-csv)
-- [C# Mengonversi PDF ke CSV](#csharp-pdf-to-csv)
-- [C# Cara mengonversi file PDF ke CSV](#csharp-pdf-to-csv)
-
-_Format_: **ODS**
-
-- [C# PDF ke ODS](#csharp-pdf-to-ods)
-- [C# Mengonversi PDF ke ODS](#csharp-pdf-to-ods)
-- [C# Cara mengonversi file PDF ke ODS](#csharp-pdf-to-ods)
-
-## Konversi C# PDF ke Excel
-
-**Aspose.PDF for .NET** mendukung fitur mengonversi file PDF ke format Excel 2007, CSV dan SpeadsheetML.
+**Aspose.PDF for .NET** mendukung fitur mengonversi file PDF ke format Excel 2007, CSV, dan SpeadsheetML.
 
 Aspose.PDF for .NET adalah komponen manipulasi PDF, kami telah memperkenalkan fitur yang merender file PDF ke workbook Excel (file XLSX). Selama konversi ini, halaman-halaman individu dari file PDF dikonversi menjadi lembar kerja Excel.
 
 {{% alert color="success" %}}
-**Cobalah untuk mengonversi PDF ke Excel secara online**
+**Cobalah mengonversi PDF ke Excel secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke Excel dengan Aplikasi Gratis](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-Untuk mengonversi file PDF ke format <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>, Aspose.PDF memiliki kelas bernama [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions). Sebuah objek dari kelas ExcelSaveOptions diteruskan sebagai argumen kedua ke konstruktor Document.Save(..).
+Untuk mengonversi file PDF ke format <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>, Aspose.PDF memiliki kelas yang disebut [ExcelSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/excelsaveoptions). Sebuah objek dari kelas ExcelSaveOptions diteruskan sebagai argumen kedua ke konstruktor Document.Save(..).
 
 Potongan kode berikut menunjukkan proses untuk mengonversi file PDF menjadi format XLS atau XLSX dengan Aspose.PDF for .NET.
 
-<a name="csharp-pdf-to-xls"><strong>Langkah: Mengonversi PDF ke XLS di C#</strong></a>
+<a name="csharp-pdf-to-xls" id="cshart-pdf-to-xls"><strong>Mengonversi PDF ke XLS</strong></a>
 
 1. Buat sebuah instance dari objek **Document** dengan dokumen PDF sumber.
 2. Buat sebuah instance dari **ExcelSaveOptions**.
 3. Simpan ke format **XLS** dengan menentukan **.xls extension** dengan memanggil metode **Document.Save()** dan meneruskan **ExcelSaveOptions**.
 
-<a name="csharp-pdf-to-xlsx"><strong>Langkah: Mengonversi PDF ke XLSX di C#</strong></a>
+<a name="csharp-pdf-to-xlsx" id="cshart-pdf-to-xlsx"><strong>Mengonversi PDF ke XLSX</strong></a>
 
 1. Buat sebuah instance dari objek **Document** dengan dokumen PDF sumber.
 2. Buat sebuah instance dari **ExcelSaveOptions**.
@@ -203,7 +173,7 @@ private static void ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst()
 
 Saat mengekspor file PDF dengan banyak halaman ke XLS, setiap halaman diekspor ke lembar yang berbeda dalam file Excel. Ini karena properti MinimizeTheNumberOfWorksheets diatur ke false secara default. Untuk memastikan bahwa semua halaman diekspor ke satu lembar tunggal dalam file Excel output, atur properti MinimizeTheNumberOfWorksheets ke true.
 
-<a name="csharp-pdf-to-excel-single"><strong>Langkah: Mengonversi PDF ke XLS atau XLSX Lembar Kerja Tunggal di C#</strong></a>
+<a name="csharp-pdf-to-excel-single" id="cshart-pdf-to-excel-single"><strong>Mengonversi PDF ke XLS atau XLSX Lembar Kerja Tunggal</strong></a>
 
 1. Buat sebuah instance dari objek **Document** dengan dokumen PDF sumber.
 2. Buat sebuah instance dari **ExcelSaveOptions** dengan **MinimizeTheNumberOfWorksheets = true**.
@@ -235,11 +205,11 @@ private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 ### Mengonversi ke format XML Spreadsheet 2003
 
-Sejak versi 20.8 Aspose.PDF menggunakan format file Microsoft Excel Open XML Spreadsheet 2007 sebagai default untuk menyimpan data. Untuk mengonversi file PDF ke format XML Spreadsheet 2003, Aspose.PDF memiliki kelas bernama [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) dengan [Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format). Sebuah objek dari kelas [ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions) diteruskan sebagai argumen kedua ke metode [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Sejak versi 20.8 Aspose.PDF menggunakan format file Microsoft Excel Open XML Spreadsheet 2007 sebagai default untuk menyimpan data. Untuk mengonversi file PDF ke format XML Spreadsheet 2003, Aspose.PDF memiliki kelas yang disebut [ExcelSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/excelsaveoptions) dengan [Format](https://reference.aspose.com/pdf/id/net/aspose.pdf/excelsaveoptions/properties/format). Sebuah objek dari kelas [ExcelSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/excelsaveoptions) diteruskan sebagai argumen kedua ke metode [Document.Save(..)](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index).
 
 Potongan kode berikut menunjukkan proses untuk mengonversi file PDF menjadi format XLS Excel 2003 XML.
 
-<a name="csharp-pdf-to-excel-xml-2003"><strong>Langkah: Mengonversi PDF ke Format Excel 2003 XML di C#</strong></a>
+<a name="csharp-pdf-to-excel-xml-2003" id="cshart-pdf-to-excel-xml-2003"><strong>Mengonversi PDF ke Format Excel 2003 XML</strong></a>
 
 1. Buat sebuah instance dari objek **Document** dengan dokumen PDF sumber.
 2. Buat sebuah instance dari **ExcelSaveOptions** dengan **Format = ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003**.
@@ -271,11 +241,12 @@ Potongan kode berikut menunjukkan proses untuk mengonversi file PDF menjadi form
 
 Konversi ke format CSV dilakukan dengan cara yang sama seperti di atas. Semua yang Anda butuhkan - atur format yang sesuai.
 
-<a name="csharp-pdf-to-csv"><strong>Langkah: Mengonversi PDF ke CSV di C#</strong></a>
+<a name="csharp-pdf-to-csv"  id="cshart-pdf-to-csv"><strong>Mengonversi PDF ke CSV</strong></a>
 
 1. Buat sebuah instance dari objek **Document** dengan dokumen PDF sumber.
 2. Buat sebuah instance dari **ExcelSaveOptions** dengan **Format = ExcelSaveOptions.ExcelFormat.CSV**.
 3. Simpan ke format **CSV** dengan memanggil metode **Document.Save()** dan meneruskan **ExcelSaveOptions**.
+
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -301,11 +272,12 @@ private static void ConvertPDFToCSV()
 
 ### Mengonversi ke ODS
 
-<a name="csharp-pdf-to-ods"><strong>Langkah: Mengonversi PDF ke ODS di C#</strong></a>
+<a name="csharp-pdf-to-ods"  id="cshart-pdf-to-ods"><strong>Mengonversi PDF ke ODS</strong></a>
 
 1. Buat sebuah instance dari objek **Document** dengan dokumen PDF sumber.
 2. Buat sebuah instance dari **ExcelSaveOptions** dengan **Format = ExcelSaveOptions.ExcelFormat.ODS**.
 3. Simpan ke format **ODS** dengan memanggil metode **Document.Save()** dan meneruskan **ExcelSaveOptions**.
+
 
 Konversi ke format ODS dilakukan dengan cara yang sama seperti semua format lainnya.
 
@@ -331,56 +303,34 @@ private static void ConvertPDFToODS()
 }
 ```
 
-## Lihat Juga 
+### Mengonversi ke XLSM
 
-Artikel ini juga mencakup topik-topik ini. Kode sama seperti di atas.
+<a name="csharp-pdf-to-xlsm" id="cshart-pdf-to-xlsm"><strong>Mengonversi PDF ke XLSM</strong></a>
 
-_Format_: **Excel**
-- [C# PDF ke Kode Excel](#csharp-pdf-to-xlsx)
-- [C# PDF ke API Excel](#csharp-pdf-to-xlsx)
-- [C# PDF ke Excel Secara Programatik](#csharp-pdf-to-xlsx)
-- [C# PDF ke Library Excel](#csharp-pdf-to-xlsx)
-- [C# Simpan PDF sebagai Excel](#csharp-pdf-to-xlsx)
-- [C# Hasilkan Excel dari PDF](#csharp-pdf-to-xlsx)
-- [C# Buat Excel dari PDF](#csharp-pdf-to-xlsx)
-- [C# PDF ke Konverter Excel](#csharp-pdf-to-xlsx)
+1. Buat sebuah instance dari objek **Document** dengan dokumen PDF sumber.
+2. Buat sebuah instance dari **ExcelSaveOptions** dengan **Format = ExcelSaveOptions.ExcelFormat.XLSM**.
+3. Simpan ke format **XLSM** dengan memanggil metode **Document.Save()** dan meneruskan **ExcelSaveOptions**.
 
-_Format_: **XLS**
-- [C# PDF ke Kode XLS](#csharp-pdf-to-xls)
-- [C# PDF ke API XLS](#csharp-pdf-to-xls)
-- [C# PDF ke XLS Secara Programatik](#csharp-pdf-to-xls)
-- [C# PDF ke Library XLS](#csharp-pdf-to-xls)
-- [C# Simpan PDF sebagai XLS](#csharp-pdf-to-xls)
-- [C# Hasilkan XLS dari PDF](#csharp-pdf-to-xls)
-- [C# Buat XLS dari PDF](#csharp-pdf-to-xls)
-- [C# PDF ke Konverter XLS](#csharp-pdf-to-xls)
+Konversi ke format XLSM dilakukan dengan cara yang sama seperti semua format lainnya.
 
-_Format_: **XLSX**
-- [C# PDF ke Kode XLSX](#csharp-pdf-to-xlsx)
-- [C# PDF ke API XLSX](#csharp-pdf-to-xlsx)
-- [C# PDF ke XLSX Secara Programatik](#csharp-pdf-to-xlsx)
-- [C# PDF ke Library XLSX](#csharp-pdf-to-xlsx)
-- [C# Simpan PDF sebagai XLSX](#csharp-pdf-to-xlsx)
-- [C# Hasilkan XLSX dari PDF](#csharp-pdf-to-xlsx)
-- [C# Buat XLSX dari PDF](#csharp-pdf-to-xlsx)
-- [C# PDF ke Konverter XLSX](#csharp-pdf-to-xlsx)
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToXLSM()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate ExcelSaveOptions object
+        var saveOptions = new Aspose.Pdf.ExcelSaveOptions
+        {
+            Format = Aspose.Pdf.ExcelSaveOptions.ExcelFormat.XLSM
+        };
 
-_Format_: **CSV**
-- [C# PDF ke Kode CSV](#csharp-pdf-to-csv)
-- [C# PDF ke API CSV](#csharp-pdf-to-csv)
-- [C# PDF ke CSV Secara Programatik](#csharp-pdf-to-csv)
-- [C# PDF ke Library CSV](#csharp-pdf-to-csv)
-- [C# Simpan PDF sebagai CSV](#csharp-pdf-to-csv)
-- [C# Hasilkan CSV dari PDF](#csharp-pdf-to-csv)
-- [C# Buat CSV dari PDF](#csharp-pdf-to-csv)
-- [C# PDF ke Konverter CSV](#csharp-pdf-to-csv)
-
-_Format_: **ODS**
-- [C# PDF ke Kode ODS](#csharp-pdf-to-ods)
-- [C# PDF ke API ODS](#csharp-pdf-to-ods)
-- [C# PDF ke ODS Secara Programatik](#csharp-pdf-to-ods)
-- [C# PDF ke Library ODS](#csharp-pdf-to-ods)
-- [C# Simpan PDF sebagai ODS](#csharp-pdf-to-ods)
-- [C# Hasilkan ODS dari PDF](#csharp-pdf-to-ods)
-- [C# Buat ODS dari PDF](#csharp-pdf-to-ods)
-- [C# PDF ke Konverter ODS](#csharp-pdf-to-ods)
+        // Save the file in ODS format
+        document.Save(dataDir + "PDFToODS_out.xlsm", saveOptions);
+    }
+}
+```

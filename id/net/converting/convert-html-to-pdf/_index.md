@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert HTML to PDF in .NET",
     "alternativeHeadline": "Convert HTML and MHTML to PDF with C#",
-    "abstract": "Fitur konversi di Aspose.PDF for .NET memungkinkan transformasi dokumen HTML dan MHTML menjadi file PDF berkualitas tinggi secara mulus. Dengan opsi kustomisasi yang canggih, pengguna dapat mengontrol penyematan font, kueri media, dan manajemen sumber daya eksternal sambil memastikan bahwa halaman web atau file HTML lokal dirender dengan akurat ke dalam format PDF dengan fleksibilitas yang disesuaikan dengan kebutuhan spesifik mereka.",
+    "abstract": "Fitur konversi di Aspose.PDF for .NET memungkinkan transformasi tanpa hambatan dari dokumen HTML dan MHTML menjadi file PDF berkualitas tinggi. Dengan opsi kustomisasi yang canggih, pengguna dapat mengontrol penyematan font, kueri media, dan manajemen sumber daya eksternal sambil memastikan bahwa halaman web atau file HTML lokal dirender dengan akurat ke dalam format PDF dengan fleksibilitas yang disesuaikan dengan kebutuhan spesifik mereka.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1889",
+    "wordcount": "1828",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-html-to-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
@@ -84,33 +84,20 @@ Artikel ini menjelaskan cara **mengonversi HTML ke PDF menggunakan C#**. Ini men
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-_Format_: **HTML**
-- [C# HTML ke PDF](#csharp-html-to-pdf)
-- [C# Mengonversi HTML ke PDF](#csharp-html-to-pdf)
-- [C# Cara mengonversi HTML ke PDF](#csharp-html-to-pdf)
+- [Mengonversi HTML ke PDF](#csharp-html-to-pdf)
+- [Mengonversi WebPage ke PDF](#csharp-webpage-to-pdf)
+- [Mengonversi MHTML ke PDF](#csharp-mhtml-to-pdf)
 
-_Format_: **MHTML**
-- [C# MHTML ke PDF](#csharp-mhtml-to-pdf)
-- [C# Mengonversi MHTML ke PDF](#csharp-mhtml-to-pdf)
-- [C# Cara mengonversi MHTML ke PDF](#csharp-mhtml-to-pdf)
-
-_Format_: **WebPage**
-- [C# WebPage ke PDF](#csharp-webpage-to-pdf)
-- [C# Mengonversi WebPage ke PDF](#csharp-webpage-to-pdf)
-- [C# Cara mengonversi WebPage ke PDF](#csharp-webpage-to-pdf)
-
-## Konversi C# HTML ke PDF
-
-**Aspose.PDF for .NET** adalah API manipulasi PDF yang memungkinkan Anda mengonversi dokumen HTML yang ada ke PDF secara mulus. Proses mengonversi HTML ke PDF dapat disesuaikan dengan fleksibel.
+**Aspose.PDF for .NET** adalah API manipulasi PDF yang memungkinkan Anda mengonversi dokumen HTML yang ada ke PDF tanpa hambatan. Proses mengonversi HTML ke PDF dapat disesuaikan dengan fleksibel.
 
 ## Mengonversi HTML ke PDF
 
 Contoh kode C# berikut menunjukkan cara mengonversi dokumen HTML ke PDF.
 
-<a name="csharp-html-to-pdf"><strong>Langkah: Mengonversi HTML ke PDF di C#</strong></a>
+<a name="csharp-html-to-pdf"><strong>Mengonversi HTML ke PDF</strong></a>
 
-1. Buat instance dari kelas [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/).
-2. Inisialisasi objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/).
+1. Buat instance dari kelas [HtmlLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/).
+2. Inisialisasi objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/).
 3. Simpan dokumen PDF keluaran dengan memanggil metode **Document.Save()**.
 
 ```csharp
@@ -133,9 +120,9 @@ private static void ConvertHTMLtoPDF()
 ```
 
 {{% alert color="success" %}}
-**Cobalah untuk mengonversi HTML ke PDF secara online**
+**Cobalah mengonversi HTML ke PDF secara online**
 
-Aspose mempersembahkan aplikasi gratis online ["HTML ke PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose mempersembahkan aplikasi gratis online ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi HTML ke PDF menggunakan Aplikasi Gratis](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
 {{% /alert %}}
@@ -146,7 +133,7 @@ Mesin Konversi HTML memiliki beberapa opsi yang memungkinkan kita mengontrol pro
 
 ### Dukungan Kueri Media
 
-Kueri media adalah teknik populer untuk menyampaikan lembar gaya yang disesuaikan ke perangkat yang berbeda. Kita dapat mengatur jenis perangkat menggunakan properti [`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype).
+Kueri media adalah teknik populer untuk menyampaikan lembar gaya yang disesuaikan ke perangkat yang berbeda. Kita dapat mengatur jenis perangkat menggunakan properti [`HtmlMediaType`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -171,9 +158,9 @@ private static void ConvertHTMLtoPDFAdvancedMediaType()
 }
 ```
 
-### Mengaktifkan (menonaktifkan) penyematan font
+### Aktifkan (nonaktifkan) penyematan font
 
-Halaman HTML sering menggunakan font (misalnya, font dari folder lokal, Google Fonts, dll). Kita juga dapat mengontrol penyematan font dalam dokumen menggunakan properti [`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts).
+Halaman HTML sering menggunakan font (misalnya, font dari folder lokal, Google Fonts, dll). Kita juga dapat mengontrol penyematan font dalam dokumen menggunakan properti [`IsEmbedFonts`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/properties/isembedfonts).
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -198,9 +185,9 @@ Halaman HTML sering menggunakan font (misalnya, font dari folder lokal, Google F
  }
 ```
 
-### Mengelola pemuatan sumber daya eksternal
+### Kelola pemuatan sumber daya eksternal
 
-Mesin Konversi menyediakan mekanisme yang memungkinkan Anda mengontrol pemuatan sumber daya tertentu yang terkait dengan dokumen HTML. Kelas [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) memiliki properti [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) di mana kita dapat mendefinisikan perilaku pemuat sumber daya. Misalkan kita perlu mengganti semua gambar PNG dengan gambar tunggal `test.jpg` dan mengganti URL eksternal menjadi internal untuk sumber daya lainnya. Untuk melakukan ini, kita dapat mendefinisikan pemuat kustom `SamePictureLoader` dan mengarahkan [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) ke nama ini.
+Mesin Konversi menyediakan mekanisme yang memungkinkan Anda mengontrol pemuatan sumber daya tertentu yang terkait dengan dokumen HTML. Kelas [`HtmlLoadOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions) memiliki properti [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) di mana kita dapat mendefinisikan perilaku pemuat sumber daya. Misalkan kita perlu mengganti semua gambar PNG dengan gambar tunggal `test.jpg` dan mengganti URL eksternal menjadi internal untuk sumber daya lainnya. Untuk melakukan ini, kita dapat mendefinisikan pemuat kustom `SamePictureLoader` dan menunjuk [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) ke nama ini.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -254,14 +241,14 @@ private static byte[] GetContentFromUrl(string url)
 
 ## Mengonversi Halaman Web ke PDF
 
-Mengonversi halaman web sedikit berbeda dari mengonversi dokumen HTML lokal. Untuk mengonversi konten halaman Web ke format PDF, kita dapat terlebih dahulu mengambil konten halaman HTML menggunakan instance HttpClient, membuat objek Stream, meneruskan konten ke objek Document, dan merender keluaran dalam format PDF.
+Mengonversi halaman web sedikit berbeda dari mengonversi dokumen HTML lokal. Untuk mengonversi konten halaman Web ke format PDF, kita dapat terlebih dahulu mengambil konten halaman HTML menggunakan instance HttpClient, membuat objek Stream, meneruskan konten ke objek Document dan merender keluaran dalam format PDF.
 
 Saat mengonversi halaman web yang dihosting di server web ke PDF:
 
-<a name="csharp-webpage-to-pdf"><strong>Langkah: Mengonversi WebPage ke PDF di C#</strong></a>
+<a name="csharp-webpage-to-pdf"><strong>Mengonversi WebPage ke PDF</strong></a>
 
 1. Baca konten halaman menggunakan objek HttpClient.
-1. Buat objek [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) dan atur URL dasar.
+1. Buat objek [HtmlLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions) dan atur URL dasar.
 1. Inisialisasi objek Document sambil meneruskan objek stream.
 1. Opsional, atur ukuran halaman dan/atau orientasi.
 
@@ -303,9 +290,9 @@ private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredenti
 }
 ```
 
-### Berikan kredensial untuk konversi Halaman Web ke PDF
+### Berikan kredensial untuk konversi halaman web ke PDF
 
-Terkadang kita perlu melakukan konversi file HTML yang memerlukan otentikasi dan hak akses, sehingga hanya pengguna yang sah yang dapat mengambil konten halaman. Ini juga mencakup skenario di mana beberapa sumber daya/data yang dirujuk di dalam HTML diambil dari server eksternal yang memerlukan otentikasi dan untuk memenuhi kebutuhan ini, properti [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) ditambahkan ke kelas [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions). Potongan kode berikut menunjukkan langkah-langkah untuk meneruskan kredensial untuk meminta HTML & sumber daya terkait saat mengonversi file HTML ke PDF.
+Terkadang kita perlu melakukan konversi file HTML yang memerlukan otentikasi dan hak akses, sehingga hanya pengguna yang sah yang dapat mengambil konten halaman. Ini juga mencakup skenario di mana beberapa sumber daya/data yang dirujuk di dalam HTML diambil dari server eksternal yang memerlukan otentikasi dan untuk memenuhi persyaratan ini, properti [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) ditambahkan ke kelas [`HtmlLoadOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlloadoptions). Potongan kode berikut menunjukkan langkah-langkah untuk meneruskan kredensial untuk meminta HTML & sumber daya terkait saat mengonversi file HTML ke konversi PDF.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -341,7 +328,7 @@ private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredenti
 
 ### Render semua konten HTML dalam satu Halaman
 
-Aspose.PDF for .NET memberikan kemampuan untuk merender semua konten dalam satu halaman saat mengonversi file HTML ke format PDF. Misalnya, jika Anda memiliki beberapa konten HTML yang ukuran keluarnya lebih besar dari satu halaman, Anda dapat menggunakan opsi untuk merender data keluaran ke dalam satu halaman PDF. Untuk menggunakan opsi ini, kelas HtmlLoadOptions diperluas dengan flag IsRenderToSinglePage. Potongan kode di bawah ini menunjukkan cara menggunakan fungsionalitas ini.
+Aspose.PDF for .NET memberikan kemampuan untuk merender semua konten dalam satu halaman saat mengonversi file HTML ke format PDF. Misalnya, jika Anda memiliki beberapa konten HTML yang ukuran outputnya lebih besar dari satu halaman, Anda dapat menggunakan opsi untuk merender data keluaran ke dalam satu halaman PDF. Untuk menggunakan opsi ini, kelas HtmlLoadOptions diperluas dengan flag IsRenderToSinglePage. Potongan kode di bawah ini menunjukkan cara menggunakan fungsionalitas ini.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -368,7 +355,7 @@ Aspose.PDF for .NET memberikan kemampuan untuk merender semua konten dalam satu 
 
 ### Render HTML dengan Data SVG
 
-Aspose.PDF for .NET memberikan kemampuan untuk mengonversi halaman HTML menjadi dokumen PDF. Karena HTML memungkinkan penambahan elemen grafik SVG sebagai tag di halaman, Aspose.PDF juga mendukung konversi data semacam itu ke dalam file PDF yang dihasilkan. Potongan kode berikut menunjukkan cara mengonversi file HTML dengan tag grafik SVG menjadi Dokumen PDF Berlabel.
+Aspose.PDF for .NET memberikan kemampuan untuk mengonversi halaman HTML menjadi dokumen PDF. Karena HTML memungkinkan penambahan elemen grafis SVG sebagai tag di halaman, Aspose.PDF juga mendukung konversi data semacam itu ke dalam file PDF yang dihasilkan. Potongan kode berikut menunjukkan cara mengonversi file HTML dengan tag grafis SVG ke Dokumen PDF Berlabel.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -392,19 +379,19 @@ private static void ConvertHTMLtoPDFWithSVG()
 ## Mengonversi MHTML ke PDF 
 
 {{% alert color="success" %}}
-**Cobalah untuk mengonversi MHTML ke PDF secara online**
+**Cobalah mengonversi MHTML ke PDF secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["MHTML ke PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["MHTML to PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi MHTML ke PDF menggunakan Aplikasi Gratis](mhtml.png)](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)
 {{% /alert %}}
 
 <abbr title="MIME encapsulation of aggregate HTML documents">MHTML</abbr>, singkatan dari MIME HTML, adalah format arsip halaman web yang digunakan untuk menggabungkan sumber daya yang biasanya diwakili oleh tautan eksternal (seperti gambar, animasi Flash, applet Java, dan file audio) dengan kode HTML menjadi satu file. Konten file MHTML dikodekan seolah-olah itu adalah pesan email HTML, menggunakan tipe MIME multipart/related. Aspose.PDF for .NET dapat mengonversi file HTML ke format PDF dan dengan rilis Aspose.PDF for .NET 9.0.0, kami telah memperkenalkan fitur baru yang memungkinkan Anda mengonversi file MHTML ke format PDF. Potongan kode berikut menunjukkan cara mengonversi file MHTML ke format PDF dengan C#:
 
-<a name="csharp-mhtml-to-pdf"><strong>Langkah: Mengonversi MHTML ke PDF di C#</strong></a>
+<a name="csharp-mhtml-to-pdf"><strong>Mengonversi MHTML ke PDF</strong></a>
 
-1. Buat instance dari kelas [MhtLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mhtloadoptions/).
-2. Inisialisasi objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/).
+1. Buat instance dari kelas [MhtLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/mhtloadoptions/).
+2. Inisialisasi objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/).
 3. Simpan dokumen PDF keluaran dengan memanggil metode **Document.Save()**.
 
 ```csharp
@@ -428,37 +415,3 @@ private static void ConvertMHTtoPDF()
     }
 }
 ```
-
-## Lihat Juga 
-
-Artikel ini juga mencakup topik-topik ini. Kode sama seperti di atas.
-
-_Format_: **HTML**
-- [C# Kode HTML ke PDF](#csharp-html-to-pdf)
-- [C# API HTML ke PDF](#csharp-html-to-pdf)
-- [C# HTML ke PDF Secara Programatis](#csharp-html-to-pdf)
-- [C# Perpustakaan HTML ke PDF](#csharp-html-to-pdf)
-- [C# Simpan HTML sebagai PDF](#csharp-html-to-pdf)
-- [C# Hasilkan PDF dari HTML](#csharp-html-to-pdf)
-- [C# Buat PDF dari HTML](#csharp-html-to-pdf)
-- [C# Konverter HTML ke PDF](#csharp-html-to-pdf)
-
-_Format_: **MHTML**
-- [C# Kode MHTML ke PDF](#csharp-mhtml-to-pdf)
-- [C# API MHTML ke PDF](#csharp-mhtml-to-pdf)
-- [C# MHTML ke PDF Secara Programatis](#csharp-mhtml-to-pdf)
-- [C# Perpustakaan MHTML ke PDF](#csharp-mhtml-to-pdf)
-- [C# Simpan MHTML sebagai PDF](#csharp-mhtml-to-pdf)
-- [C# Hasilkan PDF dari MHTML](#csharp-mhtml-to-pdf)
-- [C# Buat PDF dari MHTML](#csharp-mhtml-to-pdf)
-- [C# Konverter MHTML ke PDF](#csharp-mhtml-to-pdf)
-
-_Format_: **WebPage**
-- [C# Kode WebPage ke PDF](#csharp-webpage-to-pdf)
-- [C# API WebPage ke PDF](#csharp-webpage-to-pdf)
-- [C# WebPage ke PDF Secara Programatis](#csharp-webpage-to-pdf)
-- [C# Perpustakaan WebPage ke PDF](#csharp-webpage-to-pdf)
-- [C# Simpan WebPage sebagai PDF](#csharp-webpage-to-pdf)
-- [C# Hasilkan PDF dari WebPage](#csharp-webpage-to-pdf)
-- [C# Buat PDF dari WebPage](#csharp-webpage-to-pdf)
-- [C# Konverter WebPage ke PDF](#csharp-webpage-to-pdf)

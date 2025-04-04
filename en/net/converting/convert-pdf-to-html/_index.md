@@ -82,10 +82,7 @@ sitemap:
 
 This article explains how to **convert PDF to HTML using C#**. It covers these topics.
 
-_Format_: **HTML**
-- [C# PDF to HTML](#csharp-pdf-to-html)
-- [C# Convert PDF to HTML](#csharp-pdf-to-html)
-- [C# How to convert PDF file to HTML](#csharp-pdf-to-html)
+- [Convert PDF to HTML](#csharp-pdf-to-html)
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
@@ -115,7 +112,7 @@ Aspose.PDF for .NET presents you online free application ["PDF to HTML"](https:/
 
 Aspose.PDF for .NET provides a two-line code for transforming a source PDF file to HTML. The [`SaveFormat enumeration`](https://reference.aspose.com/pdf/net/aspose.pdf/saveformat) contains the value Html which lets you save the source file to HTML. The following code snippet shows the process of converting a PDF file into HTML.
 
-<a name="csharp-pdf-to-html"><strong>Steps: Convert PDF to HTML in C#</strong></a>
+<a name="csharp-pdf-to-html" id="cshart-pdf-to-html"><strong>Convert PDF to HTML</strong></a>
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object with the source PDF document.
 2. Save it to **SaveFormat.Html** format by calling **Document.Save()** method.
@@ -357,17 +354,3 @@ private static void ConvertPDFToHTMLWithLayersRendering()
     }
 }
 ```
-
-## See Also 
-
-This article also covers these topics. The codes are same as above.
-
-_Format_: **HTML**
-- [C# PDF to HTML Code](#csharp-pdf-to-html)
-- [C# PDF to HTML API](#csharp-pdf-to-html)
-- [C# PDF to HTML Programmatically](#csharp-pdf-to-html)
-- [C# PDF to HTML Library](#csharp-pdf-to-html)
-- [C# Save PDF as HTML](#csharp-pdf-to-html)
-- [C# Generate HTML from PDF](#csharp-pdf-to-html)
-- [C# Create HTML from PDF](#csharp-pdf-to-html)
-- [C# PDF to HTML Converter](#csharp-pdf-to-html)

@@ -1,5 +1,5 @@
 ---
-title: Convertir des PDF en documents Microsoft Word dans .NET
+title: Convertir des fichiers PDF en documents Microsoft Word dans .NET
 linktitle: Convertir PDF en Word
 type: docs
 ai_search_scope: pdf_net
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1495",
+    "wordcount": "1378",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,50 +73,35 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-word/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
 
 ## Aperçu
 
-Cet article explique comment **convertir des PDF en documents Microsoft Word en utilisant C#**. Il couvre ces sujets.
+Cet article explique comment **convertir des fichiers PDF en documents Microsoft Word en utilisant C#**. Il couvre ces sujets.
 
-_Format_: **DOC**
-
-- [C# PDF en DOC](#csharp-pdf-to-doc)
-- [C# Convertir PDF en DOC](#csharp-pdf-to-doc)
-- [C# Comment convertir un fichier PDF en DOC](#csharp-pdf-to-doc)
-
-_Format_: **DOCX**
-
-- [C# PDF en DOCX](#csharp-pdf-to-docx)
-- [C# Convertir PDF en DOCX](#csharp-pdf-to-docx)
-- [C# Comment convertir un fichier PDF en DOCX](#csharp-pdf-to-docx)
-
-_Format_: **Word**
-
-- [C# PDF en Word](#csharp-pdf-to-docx)
-- [C# Convertir PDF en Word](#csharp-pdf-to-doc)
-- [C# Comment convertir un fichier PDF en Word](#csharp-pdf-to-docx)
+- [Convertir PDF en DOC](#csharp-pdf-to-doc)
+- [Convertir PDF en DOCX](#csharp-pdf-to-docx)
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Conversion PDF en DOC et DOCX
 
-L'une des fonctionnalités les plus populaires est la conversion de PDF en DOC Microsoft Word, ce qui rend la gestion du contenu plus facile. **Aspose.PDF for .NET** vous permet de convertir des fichiers PDF en format DOC et DOCX rapidement et efficacement.
+L'une des fonctionnalités les plus populaires est la conversion PDF en DOC Microsoft Word, qui facilite la gestion du contenu. **Aspose.PDF for .NET** vous permet de convertir des fichiers PDF en format DOC et DOCX rapidement et efficacement.
 
 ## Convertir un fichier PDF en DOC (Microsoft Word 97-2003)
 
-Convertissez des fichiers PDF en format DOC avec facilité et contrôle total. Aspose.PDF for .NET est flexible et prend en charge une grande variété de conversions. La conversion de pages de documents PDF en images, par exemple, est une fonctionnalité très populaire.
+Convertissez des fichiers PDF en format DOC avec facilité et contrôle total. Aspose.PDF for .NET est flexible et prend en charge une grande variété de conversions. Par exemple, la conversion de pages de documents PDF en images est une fonctionnalité très populaire.
 
-Beaucoup de nos clients ont demandé une conversion de PDF en DOC : convertir un fichier PDF en document Microsoft Word. Les clients souhaitent cela parce que les fichiers PDF ne peuvent pas être facilement modifiés, tandis que les documents Word le peuvent. Certaines entreprises souhaitent que leurs utilisateurs puissent manipuler du texte, des tableaux et des images dans des fichiers qui ont commencé comme des PDF.
+Beaucoup de nos clients ont demandé une conversion de PDF en DOC : convertir un fichier PDF en document Microsoft Word. Les clients souhaitent cela car les fichiers PDF ne peuvent pas être facilement modifiés, tandis que les documents Word le peuvent. Certaines entreprises veulent que leurs utilisateurs puissent manipuler du texte, des tableaux et des images dans des fichiers qui ont commencé comme des PDF.
 
 En gardant vivante la tradition de rendre les choses simples et compréhensibles, Aspose.PDF for .NET vous permet de transformer un fichier PDF source en un fichier DOC avec deux lignes de code. Pour réaliser cette fonctionnalité, nous avons introduit une énumération nommée SaveFormat et sa valeur .Doc vous permet d'enregistrer le fichier source au format Microsoft Word.
 
 Le code C# suivant montre comment convertir un fichier PDF en format DOC.
 
-<a name="csharp-pdf-to-doc"><strong>Étapes : Convertir PDF en DOC en C#</strong></a>
+<a name="csharp-pdf-to-doc" id="csharp-pdf-to-doc"><strong>Convertir PDF en DOC</strong></a>
 
 1. Créez une instance de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/) avec le document PDF source.
 2. Enregistrez-le au format **SaveFormat.Doc** en appelant la méthode **Document.Save()**.
@@ -141,8 +126,8 @@ private static void ConvertPDFtoWord()
 
 La classe [`DocSaveOptions`](https://reference.aspose.com/pdf/fr/net/aspose.pdf/docsaveoptions) fournit de nombreuses propriétés qui améliorent la conversion des fichiers PDF en format DOC. Parmi ces propriétés, Mode vous permet de spécifier le mode de reconnaissance pour le contenu PDF. Vous pouvez sélectionner n'importe quelle valeur de l'énumération RecognitionMode pour cette propriété. Chacune de ces valeurs a des avantages et des limitations spécifiques :
 
-- Le mode [`Textbox`](https://reference.aspose.com/pdf/fr/net/aspose.pdf.docsaveoptions/recognitionmode) est rapide et bon pour préserver l'apparence originale du fichier PDF, mais l'éditabilité du document résultant pourrait être limitée. Chaque bloc de texte visuellement groupé dans le PDF original est converti en une zone de texte dans le document de sortie. Cela atteint une ressemblance maximale avec l'original, donc le document de sortie a une bonne apparence, mais il est entièrement composé de zones de texte, ce qui pourrait être modifié dans Microsoft Word, ce qui est assez difficile.
-- Le mode [`Flow`](https://reference.aspose.com/pdf/fr/net/aspose.pdf.docsaveoptions/recognitionmode) est un mode de reconnaissance complet, où le moteur effectue un regroupement et une analyse multi-niveaux pour restaurer le document original selon l'intention de l'auteur tout en produisant un document facilement modifiable. La limitation est que le document de sortie pourrait avoir une apparence différente de l'original.
+- Le mode [`Textbox`](https://reference.aspose.com/pdf/fr/net/aspose.pdf.docsaveoptions/recognitionmode) est rapide et bon pour préserver l'apparence originale du fichier PDF, mais l'éditabilité du document résultant pourrait être limitée. Chaque bloc de texte visuellement groupé dans le PDF original est converti en une zone de texte dans le document de sortie. Cela atteint une ressemblance maximale avec l'original, donc le document de sortie a une bonne apparence, mais il est entièrement composé de zones de texte, ce qui pourrait être difficile à modifier dans Microsoft Word.
+- Le mode [`Flow`](https://reference.aspose.com/pdf/fr/net/aspose.pdf.docsaveoptions/recognitionmode) est un mode de reconnaissance complet, où le moteur effectue un regroupement et une analyse multi-niveaux pour restaurer le document original selon l'intention de l'auteur tout en produisant un document facilement modifiable. La limitation est que le document de sortie pourrait sembler différent de l'original.
 
 La propriété [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/fr/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) peut être utilisée pour contrôler la proximité relative entre les éléments textuels. Cela signifie que la distance est normalisée par la taille de la police. Les polices plus grandes peuvent avoir des espaces plus grands entre les syllabes et être considérées comme un tout unique. Elle est spécifiée en pourcentage de la taille de la police ; par exemple, 1 = 100 %. Cela signifie que deux caractères de 12pt placés à 12 pt de distance sont proximaux.
 - [`RecognitionBullets`](https://reference.aspose.com/pdf/fr/net/aspose.pdf/docsaveoptions/properties/recognizebullets) est utilisé pour activer la reconnaissance des puces lors de la conversion.
@@ -184,11 +169,11 @@ Aspose.PDF for .NET vous présente une application en ligne gratuite ["PDF to DO
 
 ## Convertir un fichier PDF en DOCX (Microsoft Word 2007-2024)
 
-L'API Aspose.PDF for .NET vous permet de lire et de convertir des documents PDF en DOCX en utilisant C# et n'importe quel langage .NET. DOCX est un format bien connu pour les documents Microsoft Word dont la structure a été modifiée d'un binaire simple à une combinaison de fichiers XML et binaires. Les fichiers Docx peuvent être ouverts avec Word 2007 et les versions ultérieures, mais pas avec les versions antérieures de MS Word, qui prennent en charge les extensions de fichiers DOC.
+L'API Aspose.PDF for .NET vous permet de lire et de convertir des documents PDF en DOCX en utilisant C# et n'importe quel langage .NET. DOCX est un format bien connu pour les documents Microsoft Word dont la structure a été modifiée d'un binaire simple à une combinaison de fichiers XML et binaires. Les fichiers Docx peuvent être ouverts avec Word 2007 et les versions ultérieures, mais pas avec les versions antérieures de MS Word, qui prennent en charge les extensions de fichier DOC.
 
 Le code C# suivant montre comment convertir un fichier PDF en format DOCX.
 
-<a name="csharp-pdf-to-docx"><strong>Étapes : Convertir PDF en DOCX en C#</strong></a>
+<a name="csharp-pdf-to-docx" id="csharp-pdf-to-docx"><strong>Convertir PDF en DOCX</strong></a>
 
 1. Créez une instance de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/) avec le document PDF source.
 2. Enregistrez-le au format **SaveFormat.DocX** en appelant la méthode **Document.Save()**.
@@ -210,9 +195,9 @@ private static void ConvertPDFtoWord_DOCX_Format()
 
 ### Convertir PDF en DOCX en mode amélioré
 
-Pour obtenir de meilleurs résultats de conversion de PDF en DOCX, vous pouvez utiliser le mode `EnhancedFlow`.
+Pour obtenir de meilleurs résultats de conversion PDF en DOCX, vous pouvez utiliser le mode `EnhancedFlow`.
 La principale différence entre Flow et Enhanced Flow est que les tableaux (avec et sans bordures) sont reconnus comme de véritables tableaux, et non comme du texte avec une image en arrière-plan.
-Il y a également la reconnaissance des listes numérotées et de nombreuses autres petites choses.
+Il y a également reconnaissance des listes numérotées et de nombreuses autres petites choses.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -243,43 +228,6 @@ private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF for .NET vous présente une application en ligne gratuite ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
 
-[![Application gratuite de conversion PDF en Word Aspose.PDF](/pdf/fr/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Conversion PDF en Word Application Gratuite](/pdf/fr/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
-
-## Voir aussi
-
-Cet article couvre également ces sujets. Les codes sont les mêmes que ci-dessus.
-
-_Format_: **Word**
-
-- [C# PDF en code Word](#csharp-pdf-to-docx)
-- [C# PDF en API Word](#csharp-pdf-to-docx)
-- [C# PDF en Word par programmation](#csharp-pdf-to-docx)
-- [C# PDF en bibliothèque Word](#csharp-pdf-to-docx)
-- [C# Enregistrer PDF en Word](#csharp-pdf-to-docx)
-- [C# Générer Word à partir de PDF](#csharp-pdf-to-docx)
-- [C# Créer Word à partir de PDF](#csharp-pdf-to-docx)
-- [C# Convertisseur PDF en Word](#csharp-pdf-to-docx)
-
-_Format_: **DOC**
-
-- [C# PDF en code DOC](#csharp-pdf-to-doc)
-- [C# PDF en API DOC](#csharp-pdf-to-doc)
-- [C# PDF en DOC par programmation](#csharp-pdf-to-doc)
-- [C# PDF en bibliothèque DOC](#csharp-pdf-to-doc)
-- [C# Enregistrer PDF en DOC](#csharp-pdf-to-doc)
-- [C# Générer DOC à partir de PDF](#csharp-pdf-to-doc)
-- [C# Créer DOC à partir de PDF](#csharp-pdf-to-doc)
-- [C# Convertisseur PDF en DOC](#csharp-pdf-to-doc)
-
-_Format_: **DOCX**
-
-- [C# PDF en code DOCX](#csharp-pdf-to-docx)
-- [C# PDF en API DOCX](#csharp-pdf-to-docx)
-- [C# PDF en DOCX par programmation](#csharp-pdf-to-docx)
-- [C# PDF en bibliothèque DOCX](#csharp-pdf-to-docx)
-- [C# Enregistrer PDF en DOCX](#csharp-pdf-to-docx)
-- [C# Générer DOCX à partir de PDF](#csharp-pdf-to-docx)
-- [C# Créer DOCX à partir de PDF](#csharp-pdf-to-docx)
-- [C# Convertisseur PDF en DOCX](#csharp-pdf-to-docx)

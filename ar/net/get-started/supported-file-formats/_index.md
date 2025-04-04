@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /ar/net/supported-file-formats/
-description: تظهر هذه الصفحة التنسيقات التي يمكن لـ Aspose.PDF for .NET تحميلها وحفظها.
+description: توضح هذه الصفحة التنسيقات التي يمكن لـ Aspose.PDF for .NET تحميلها وحفظها.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Supported File Formats",
     "alternativeHeadline": "Aspose.PDF for .NET Supports Extensive File Formats in C#",
-    "abstract": "يدعم Aspose.PDF for .NET الآن مجموعة واسعة من تنسيقات الملفات لكل من التحميل والحفظ، مما يعزز المرونة للمطورين. تشمل هذه الوظيفة تنسيقات شائعة مثل PDF و EPUB و HTML و SVG، لتلبية احتياجات معالجة المستندات المختلفة. اكتشف دعم تنسيقات الملفات الشامل الذي يبسط معالجة PDF داخل تطبيقاتك.",
+    "abstract": "يدعم Aspose.PDF for .NET الآن مجموعة واسعة من تنسيقات الملفات لكل من التحميل والحفظ، مما يعزز المرونة للمطورين. تشمل هذه الوظيفة تنسيقات شائعة مثل PDF و EPUB و HTML و SVG، لتلبية احتياجات معالجة المستندات المختلفة. اكتشف دعم تنسيقات الملفات الشامل الذي يسهل معالجة PDF داخل تطبيقاتك.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "566",
+    "wordcount": "554",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/supported-file-formats/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
@@ -98,6 +98,7 @@ sitemap:
 |[OFD](https://en.wikipedia.org/wiki/OFD)|يشير تنسيق OFD إلى "مستند ثابت التخطيط المفتوح"، الذي تم تأسيسه كمعيار وطني للصين لتخزين الملفات الإلكترونية، ويستخدم كبديل للتنسيق الشائع PDF.|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|يحفظ المستند في جدول بيانات Microsoft Excel| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|يحفظ المستند في تنسيق Microsoft Excel 2007| |{{< emoticons/tick >}}| |
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Saves المستند في تنسيق XLSM الذي هو نوع من ملفات جدول البيانات التي تدعم الماكرو.| |{{< emoticons/tick >}}| |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|يحفظ المستند في تنسيق عروض Microsoft PowerPoint| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|يحفظ المستند في تنسيق Microsoft Word| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|يحفظ المستند في تنسيق Microsoft Word| |{{< emoticons/tick >}}| |

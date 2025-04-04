@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 130
 url: /es/net/compare-pdf-documents/
-description: Desde el lanzamiento 24.7 es posible comparar el contenido de documentos PDF con marcas de anotación y salida lado a lado
+description: Desde la versión 24.7 es posible comparar el contenido de documentos PDF con marcas de anotación y salida lado a lado
 lastmod: "2024-08-17"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Compare PDF documents",
     "alternativeHeadline": "Enhanced PDF Document Comparison with Visual Highlights",
-    "abstract": "La nueva función de comparación de PDF en Aspose.PDF for .NET permite a los usuarios identificar eficientemente las diferencias entre dos documentos PDF, ya sea por páginas específicas o por todo el contenido. Con salidas lado a lado y opciones personalizables como marcadores de cambio adicionales y varios modos de comparación, esta poderosa herramienta mejora la colaboración al facilitar el seguimiento y la revisión de revisiones",
+    "abstract": "La nueva función de comparación de PDF en Aspose.PDF for .NET permite a los usuarios identificar eficientemente las diferencias entre dos documentos PDF, ya sea por páginas específicas o por todo el contenido. Con salidas lado a lado y opciones personalizables como marcadores de cambio adicionales y varios modos de comparación, esta poderosa herramienta mejora la colaboración al facilitar el seguimiento y la revisión de las revisiones.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Compare PDF documents, PDF comparison, Aspose.PDF for .NET, comparing specific pages, comparing entire documents, graphical PDF comparer, side-by-side comparison, change markers, document accuracy, ImagesDifference",
-    "wordcount": "1180",
+    "wordcount": "1288",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/compare-pdf-documents/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulta la siguiente sección para usuarios avanzados y desarrolladores."
 }
 </script>
@@ -99,11 +99,9 @@ Aquí hay una lista de posibles formas de comparar documentos PDF utilizando Asp
 
 - Comparar PDF con el método CompareDocumentsToPdf - documento PDF con imágenes donde se marcan los cambios.
 
-## Comparar Páginas Específicas
+## Comparando Páginas Específicas
 
 El primer fragmento de código demuestra cómo comparar las primeras páginas de dos documentos PDF.
-
-Pasos:
 
 1. Inicialización del Documento.
 El código comienza inicializando dos documentos PDF utilizando sus respectivas rutas de archivo (documentPath1 y documentPath2). Las rutas se especifican como cadenas vacías por ahora, pero en la práctica, reemplazarías estas con las rutas de archivo reales.
@@ -115,7 +113,7 @@ El código comienza inicializando dos documentos PDF utilizando sus respectivas 
 
 'AdditionalChangeMarks = true' - esta opción asegura que se muestren marcadores de cambio adicionales. Estos marcadores resaltan diferencias que podrían estar presentes en otras páginas, incluso si no están en la página actual que se está comparando.
 
-'ComparisonMode = ComparisonMode.IgnoreSpaces' - este modo le dice al comparador que ignore los espacios en el texto, enfocándose solo en los cambios dentro de las palabras.
+'ComparisonMode = ComparisonMode.IgnoreSpaces' - este modo le indica al comparador que ignore los espacios en el texto, enfocándose solo en los cambios dentro de las palabras.
 
 3. El documento de comparación resultante, que resalta las diferencias entre las dos páginas, se guarda en la ruta de archivo especificada en 'resultPdfPath'.
 
@@ -142,22 +140,9 @@ private static void ComparingSpecificPages()
 }
 ```
 
-## Comparar Documentos Completos
+## Comparando Documentos Completos
 
 El segundo fragmento de código amplía el alcance para comparar todo el contenido de dos documentos PDF.
-
-Pasos:
-
-1. Inicialización del Documento.
-Al igual que en el primer ejemplo, se inicializan dos documentos PDF con sus rutas de archivo.
-
-2. Proceso de Comparación.
-
-- Comparación de Documento Completo - a diferencia del primer fragmento, este código compara todo el contenido de los dos documentos.
-
-- Opciones de Comparación - las opciones son las mismas que en el primer fragmento, asegurando que se ignoren los espacios y se muestren marcadores de cambio adicionales.
-
-3. El resultado de la comparación, que resalta las diferencias en todas las páginas de los dos documentos, se guarda en el archivo especificado por 'resultPdfPath'.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -191,9 +176,9 @@ Los resultados de comparación generados por estos fragmentos son documentos PDF
 - Eliminaciones - estas se anotan en la página izquierda.
 - Inserciones - estas se anotan en la página derecha.
 
-Al establecer 'AdditionalChangeMarks' en 'true', también puedes ver marcadores para cambios que pueden ocurrir en otras páginas, incluso si esos cambios no están en la página actual que se está viendo.
+Al establecer 'AdditionalChangeMarks' en 'true', también puedes ver marcadores para cambios que pueden ocurrir en otras páginas, incluso si esos cambios no están en la página actual que se está visualizando.
 
-**Aspose.PDF for .NET** proporciona herramientas robustas para comparar documentos PDF, ya sea que necesites comparar páginas específicas o documentos completos. Al usar opciones como 'AdditionalChangeMarks' y diferentes configuraciones de 'ComparisonMode', puedes adaptar el proceso de comparación a tus necesidades específicas. El documento resultante proporciona una vista clara, lado a lado de los cambios, facilitando el seguimiento de revisiones y asegurando la precisión del documento.
+**Aspose.PDF for .NET** proporciona herramientas robustas para comparar documentos PDF, ya sea que necesites comparar páginas específicas o documentos completos. Al usar opciones como 'AdditionalChangeMarks' y diferentes configuraciones de 'ComparisonMode', puedes adaptar el proceso de comparación a tus necesidades específicas. El documento resultante proporciona una vista clara, lado a lado de los cambios, facilitando el seguimiento de las revisiones y asegurando la precisión del documento.
 
 ## Comparar documentos PDF usando GraphicalPdfComparer
 
@@ -211,9 +196,9 @@ Puedes establecer las siguientes propiedades de la clase:
 
 La clase tiene un método que te permite obtener diferencias de imagen de página en una forma adecuada para un procesamiento posterior: **ImagesDifference GetDifference(Page page1, Page page2)**.
 
-Este método devuelve un objeto de la clase [ImagesDifference](https://reference.aspose.com/pdf/es/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) que contiene una imagen de la primera página que se compara y un array de diferencias. El array de diferencias y la imagen original tienen el formato de píxel **RGB24bpp**.
+Este método devuelve un objeto de la clase [ImagesDifference](https://reference.aspose.com/pdf/es/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) que contiene una imagen de la primera página que se está comparando y un array de diferencias. El array de diferencias y la imagen original tienen el formato de píxel **RGB24bpp**.
 
-ImagesDifference te permite generar una imagen diferente y obtener una imagen de la segunda página que se compara al agregar un array de diferencias a la imagen original. Para hacer esto, utiliza los métodos **ImagesDifference.GetDestinationImage y ImagesDifference.DifferenceToImage**.
+ImagesDifference te permite generar una imagen diferente y obtener una imagen de la segunda página que se está comparando al agregar un array de diferencias a la imagen original. Para hacer esto, utiliza los métodos **ImagesDifference.GetDestinationImage y ImagesDifference.DifferenceToImage**.
 
 ### Comparar PDF con el método GetDifference
 

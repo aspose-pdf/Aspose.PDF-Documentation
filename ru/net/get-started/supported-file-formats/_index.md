@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /ru/net/supported-file-formats/
-description: Эта страница показывает, какие форматы файлов может загружать и сохранять Aspose.PDF for .NET.
+description: Эта страница показывает, какие Aspose.PDF for .NET может загружать и сохранять форматы файлов.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Supported File Formats",
     "alternativeHeadline": "Aspose.PDF for .NET Supports Extensive File Formats in C#",
-    "abstract": "Aspose.PDF for .NET теперь поддерживает широкий спектр форматов файлов как для загрузки, так и для сохранения, что повышает универсальность для разработчиков. Эта функциональность включает популярные форматы, такие как PDF, EPUB, HTML и SVG, удовлетворяющие различные потребности в обработке документов. Узнайте о комплексной поддержке форматов файлов, которая упрощает манипуляции с PDF в ваших приложениях.",
+    "abstract": "Aspose.PDF for .NET теперь поддерживает широкий диапазон форматов файлов как для загрузки, так и для сохранения, что повышает универсальность для разработчиков. Эта функциональность включает популярные форматы, такие как PDF, EPUB, HTML и SVG, удовлетворяющие различные потребности в обработке документов. Узнайте о комплексной поддержке форматов файлов, которая упрощает манипуляции с PDF в ваших приложениях.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "566",
+    "wordcount": "548",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/supported-file-formats/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для опытных пользователей и разработчиков."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но также справляться с более сложными целями. Проверьте следующий раздел для опытных пользователей и разработчиков."
 }
 </script>
 
@@ -98,6 +98,7 @@ sitemap:
 |[OFD](https://en.wikipedia.org/wiki/OFD)|Формат OFD относится к «Open Fixed-layout Document», установленному как национальный стандарт Китая для хранения электронных файлов, используемого в качестве альтернативы популярному формату PDF.|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Сохраняет документ в формате Microsoft Excel| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Сохраняет документ в формате Microsoft Excel 2007| |{{< emoticons/tick >}}| |
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Сохраняет документ в формате XLSM, который является типом файлов таблиц, поддерживающих макросы.| |{{< emoticons/tick >}}| |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Сохраняет документ в формате презентаций Microsoft PowerPoint| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Сохраняет документ в формате Microsoft Word| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Сохраняет документ в формате Microsoft Word| |{{< emoticons/tick >}}| |
