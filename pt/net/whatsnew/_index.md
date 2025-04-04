@@ -1,12 +1,12 @@
 ---
-title: Novidades
-linktitle: Novidades
+title: O que há de novo
+linktitle: O que há de novo
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /pt/net/whatsnew/
-description: Nesta página são apresentadas as funcionalidades novas mais populares no Aspose.PDF for .NET que foram introduzidas em lançamentos recentes.
+description: Nesta página, são apresentadas as funcionalidades novas mais populares no Aspose.PDF for .NET que foram introduzidas em lançamentos recentes.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -18,7 +18,7 @@ lastmod: "2025-01-31"
     "@type": "TechArticle",
     "headline": "Whats new",
     "alternativeHeadline": "Discover the latest enhancements in Aspose.PDF for .NET",
-    "abstract": "Descubra as últimas melhorias no Aspose.PDF for .NET, incluindo a introdução do Algoritmo de Assinatura Digital de Curva Elíptica (ECDSA) para assinatura e verificação robustas de documentos, juntamente com suporte para múltiplas curvas elípticas. Além disso, o novo recurso permite o recorte de imagens ao serem inseridas em PDFs e a geração de relatórios de falhas para melhorar o tratamento de erros. Essas atualizações simplificam a gestão de PDFs e fortalecem a segurança nos fluxos de trabalho de documentos.",
+    "abstract": "Descubra as últimas melhorias no Aspose.PDF for .NET, incluindo a introdução do Algoritmo de Assinatura Digital de Curva Elíptica (ECDSA) para assinatura e verificação robustas de documentos, juntamente com suporte para múltiplas curvas elípticas. Além disso, o novo recurso permite o recorte de imagens ao serem inseridas em PDFs e a geração de relatórios de falhas para melhorar o tratamento de erros. Essas atualizações simplificam a gestão de PDFs e reforçam a segurança nos fluxos de trabalho de documentos.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ lastmod: "2025-01-31"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "8022",
+    "wordcount": "11528",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,12 +73,28 @@ lastmod: "2025-01-31"
         "@type": "WebPage",
         "@id": "/net/whatsnew/"
     },
-    "dateModified": "2024-12-04",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados."
 }
 </script>
 
-## Novidades no Aspose.PDF 25.2
+## O que há de novo no Aspose.PDF 25.3
+
+**Mudanças mais significativas**
+
+No Aspose.PDF 25.3, adicionamos:
+* 19 [produtos de plugin de código alto](https://products.aspose.net/pdf/).
+* [Detecção de assinaturas digitais](https://docs.aspose.com/pdf/net/extract-image-and-signature-information/#checking-signatures-for-compromise) de PDF comprometidas.
+* [Artefatos de numeração Bates](https://docs.aspose.com/pdf/net/artifacts/#adding-bates-numbering-artifact).
+* [Configurações de posição](https://docs.aspose.com/pdf/net/create-tagged-pdf/#adjust-position-of-text-structure) para a criação de elementos marcados.
+* Capacidade de verificar os [limites de formas gráficas](https://docs.aspose.com/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) ao adicioná-las à página do PDF.
+> Informações detalhadas sobre as mudanças e exemplos de uso podem ser encontradas na página de [Notas de Lançamento do Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+
+**Outras melhorias notáveis**
+
+Melhoramos tanto o desempenho quanto o consumo de memória na conversão de PDFs com muitas imagens. A velocidade de processamento agora é duas vezes mais rápida, e o consumo de memória foi reduzido em 10% em cenários testados.
+
+## O que há de novo no Aspose.PDF 25.2
 
 **Mudanças mais significativas**
 
@@ -87,16 +103,15 @@ No Aspose.PDF 25.2, adicionamos:
 * [uma opção](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) para evitar a chamada dupla do delegado CustomSignHash durante a assinatura.
 * novo método `GetSignatureNames()` para obter informações sobre [assinaturas digitais](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) de PDF.
 * possibilidade de criar um [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) com várias anotações de widget.
-> [!NOTE]
-> Informações detalhadas sobre as mudanças e exemplos de uso podem ser encontradas na página [Notas de Lançamento do Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
+> Informações detalhadas sobre as mudanças e exemplos de uso podem ser encontradas na página de [Notas de Lançamento do Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
 **Outras melhorias notáveis**
 
 * Compressão de imagem sem perda de qualidade na [otimização de PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) aprimorada. Tamanho do documento comprimido reduzido.
-* O método [Repair](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) do Documento melhorado. Agora pode verificar e corrigir valores no array Annotation.Rect.
+* [O método `Repair` do Documento](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/repair/) melhorado. Agora pode verificar e corrigir valores no array Annotation.Rect.
 * Versão da dependência System.Text.Json atualizada para evitar possível vulnerabilidade CVE-2024-43485.
-* Detecção de ataque de assinatura PDF melhorada para evitar resultados falso-positivos.
-* Uma API pública para redigir o dicionário de recursos foi fornecida:
+* Detecção de ataque de assinatura PDF melhorada para evitar resultados falso positivos.
+* Uma API pública para redigir dicionário de recursos fornecida:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -135,18 +150,18 @@ private static void AddingNewExtGState()
 }
 ```
 
-## Novidades no Aspose.PDF 25.1
+## O que há de novo no Aspose.PDF 25.1
 
 No Aspose.PDF 25.1, adicionamos:
 * uma opção para salvar PDF em HTML pulando todas as imagens rasterizadas.
-* possibilidade de validar uma assinatura PDF usando um Servidor de Autoridade Certificadora (CA).
+* possibilidade de validar uma assinatura PDF usando um servidor de Autoridade Certificadora (CA).
 * validação de assinatura PDF multiplataforma usando algoritmos de hash SHA-3.
 
-Informações detalhadas sobre as mudanças e exemplos de uso podem ser encontradas na página [Notas de Lançamento do Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
+Informações detalhadas sobre as mudanças e exemplos de uso podem ser encontradas na página de [Notas de Lançamento do Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
 
-## Novidades no Aspose.PDF 24.12
+## O que há de novo no Aspose.PDF 24.12
 
-A capacidade de passar o caminho para o perfil ICC externo para conversão PDF/X e PDF/A já existia na biblioteca há alguns anos, habilitada pela propriedade PdfFormatConversionOptions.IccProfileFileName. Agora também é possível passar dados para preencher as propriedades OutputIntent usando um objeto da classe OutputIntent.
+A capacidade de passar o caminho para o perfil ICC externo para conversão PDF/X e PDF/A já existia na biblioteca há alguns anos, habilitada pela propriedade PdfFormatConversionOptions.IccProfileFileName. Agora também é possível passar dados para preencher propriedades OutputIntent usando um objeto da classe OutputIntent.
 
 O seguinte trecho mostra como converter um documento de anotação para PDF/X-1 usando o perfil ICC FOGRA39:
 ```csharp
@@ -180,7 +195,7 @@ private static void ConvertPdfToPdfx1UsingCustomIccProfile()
 }
 ```
 
-Um analisador foi adicionado para encontrar a fonte mais adequada para geração de documentos, conversão e substituição de texto. A busca pela fonte mais adequada é realizada no caso de o PDF de origem conter informações de fonte insuficientes para realizar a operação solicitada. A fonte "mais adequada" é determinada entre as fontes instaladas no ambiente com base nas informações sobre a fonte PDF e também na linguagem de texto solicitada e conjunto de caracteres.
+Um analisador foi adicionado para encontrar a fonte mais adequada para geração de documentos, conversão e substituição de texto. A busca pela fonte mais adequada é realizada no caso de o PDF de origem não conter informações de fonte suficientes para realizar a operação solicitada. A fonte "mais adequada" é determinada entre as fontes instaladas no ambiente com base nas informações sobre a fonte PDF e também na linguagem e conjunto de caracteres do texto solicitado.
 
 O seguinte exemplo mostra como isso pode ser usado na conversão de PDF para PNG para evitar que o texto se transforme em quadrados em branco.
 ```csharp
@@ -203,9 +218,9 @@ private static void PdfToPngWithAnalyzingFonts()
 }
 ```
 
-A partir do Aspose.PDF 24.12, o ajuste automático do tamanho da fonte pode ser aplicado ao adicionar um carimbo de texto no arquivo PDF de anotação.
+A partir do Aspose.PDF 24.12, o ajuste automático do tamanho da fonte pode ser aplicado ao adicionar um carimbo de texto em um arquivo PDF de anotação.
 
-O seguinte trecho de código demonstra como adicionar um carimbo de texto de anotação ao arquivo PDF de anotação e ajustar automaticamente o tamanho da fonte para caber no retângulo do carimbo.
+O seguinte trecho de código demonstra como adicionar um carimbo de texto de anotação a um arquivo PDF de anotação e ajustar automaticamente o tamanho da fonte para caber no retângulo do carimbo.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStamp()
@@ -235,7 +250,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
 }
 ```
 
-O seguinte trecho de código demonstra como adicionar um carimbo de texto de anotação ao arquivo PDF de anotação e ajustar automaticamente o tamanho da fonte para caber no tamanho da página.
+O seguinte trecho de código demonstra como adicionar um carimbo de texto de anotação a um arquivo PDF de anotação e ajustar automaticamente o tamanho da fonte para caber no tamanho da página.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStampToFitPage()
@@ -263,7 +278,7 @@ private static void AutoSetTheFontSizeOfTextStampToFitPage()
 }
 ```
 
-## Novidades no Aspose.PDF 24.11
+## O que há de novo no Aspose.PDF 24.11
 
 Um método de extensão `PageCollection` foi adicionado para atualizar o número da página e os artefatos de cabeçalho/rodapé de data ao adicionar ou inserir novas páginas. As configurações para o número da página e o formato da data devem ser armazenadas no documento original de acordo com a especificação PDF, conforme implementado pelo Adobe Acrobat.
 
@@ -322,7 +337,7 @@ private static void SignWithManualDigestHashAlgorithm(string cert, string pass)
 }
 ```
 
-Uma nova propriedade `FontEncodingStrategy` foi adicionada à classe `HtmlSaveOptions`. A especificação PDF recomenda o uso da tabela `ToUnicode` para extrair o conteúdo de texto de PDFs. No entanto, usar a tabela CMap da fonte pode produzir melhores resultados para certos tipos de documentos. A partir da versão 24.11, você pode escolher qual tabela usar para decodificação. Por padrão, a tabela `ToUnicode` é utilizada.
+Uma nova propriedade `FontEncodingStrategy` foi adicionada à classe `HtmlSaveOptions`. A especificação PDF recomenda o uso da tabela `ToUnicode` para extrair o conteúdo de texto de PDFs. No entanto, usar a tabela CMap da fonte pode produzir melhores resultados para certos tipos de documentos. A partir da versão 24.11, você pode escolher qual tabela usar para decodificação. Por padrão, a tabela `ToUnicode` é usada.
 
 O seguinte exemplo demonstra a nova opção usando:
 ```csharp
@@ -346,7 +361,7 @@ private static void ConvertPdfToHtmlUsingCMap()
 }
 ```
 
-## Novidades no Aspose.PDF 24.10
+## O que há de novo no Aspose.PDF 24.10
 
 O Algoritmo de Assinatura Digital de Curva Elíptica (ECDSA) é um algoritmo criptográfico moderno conhecido por fornecer forte segurança com tamanhos de chave menores em comparação com algoritmos tradicionais. Desde a versão 24.10, é possível assinar documentos PDF usando ECDSA, bem como verificar assinaturas ECDSA. As seguintes curvas elípticas são suportadas para criar e verificar assinaturas digitais:
 * P-256 (secp256r1).
@@ -444,11 +459,11 @@ private static void AddCroppedImageToPDF()
 }
 ```
 
-## Novidades no Aspose.PDF 24.9
+## O que há de novo no Aspose.PDF 24.9
 
-Desde a versão 24.9, é possível gerar um relatório de falha quando a biblioteca lança uma exceção. Um relatório de falha inclui informações sobre o tipo de exceção, título do aplicativo, versão do Aspose.PDF, versão do SO, mensagem de erro e rastreamento de pilha.
+Desde a versão 24.9, é possível gerar um relatório de falhas quando a biblioteca lança uma exceção. Um relatório de falhas inclui informações sobre o tipo de exceção, título do aplicativo, versão do Aspose.PDF, versão do SO, mensagem de erro e rastreamento de pilha.
 
-O seguinte trecho de código demonstra um cenário comum para gerar um relatório de falha:
+O seguinte trecho de código demonstra um cenário comum para gerar um relatório de falhas:
 
 ```cs
 private static void GenerateCrashReportExample()
@@ -492,7 +507,7 @@ private static void ExtractPdfLayer()
 }
 ```
 
-A classe `GraphicalPdfComparer` foi adicionada para a comparação gráfica de documentos e páginas PDF. A comparação gráfica lida com imagens de páginas de documentos. Ela retorna o resultado como um objeto `ImagesDifference` ou como um documento PDF que contém imagens mescladas do original e as diferenças. A comparação gráfica é mais útil para documentos que têm diferenças menores em texto ou conteúdo gráfico.
+A classe `GraphicalPdfComparer` foi adicionada para a comparação gráfica de documentos e páginas PDF. A comparação gráfica lida com imagens de páginas de documentos. Ela retorna o resultado como um objeto `ImagesDifference` ou como um documento PDF que contém imagens mescladas do original e as diferenças. A comparação gráfica é mais útil para documentos que têm pequenas diferenças em texto ou conteúdo gráfico.
 
 O seguinte trecho de código demonstra a comparação gráfica de dois documentos PDF e salva uma imagem com as diferenças no documento PDF resultante:
 
@@ -521,7 +536,7 @@ private static void ComparePDFWithCompareDocumentsToPdfMethod()
 }
 ```
 
-API implementada para integrar FileFormat.HEIC e Aspose.PDF. O HEIC (High-Efficiency Image Coding) é um formato de arquivo de imagem moderno introduzido pela Apple com o iOS 11 em 2017 como o formato de imagem padrão para iPhones e iPads.
+API implementada para integrar FileFormat.HEIC e Aspose.PDF. O HEIC (High-Efficiency Image Coding) é um formato de arquivo de imagem moderno introduzido pela Apple com iOS 11 em 2017 como o formato de imagem padrão para iPhones e iPads.
 
 Para converter imagens HEIC em PDF, o usuário deve adicionar a referência ao pacote NuGet `FileFormat.HEIC` e usar o seguinte trecho de código:
 
@@ -561,9 +576,9 @@ private static void ConvertHEICtoPDF()
 }
 ```
 
-## Novidades no Aspose.PDF 24.8
+## O que há de novo no Aspose.PDF 24.8
 
-Convertendo Documentos PDF para o formato PDF/A-4
+Convertendo documentos PDF para o formato PDF/A-4
 
 Desde a versão 24.8, é possível converter documentos PDF para PDF/A-4. A Parte 4 do padrão, baseada no PDF 2.0, foi publicada no final de 2020.
 
@@ -609,9 +624,9 @@ private static void FlattenTransparency()
 }
 ```
 
-## Novidades no Aspose.PDF 24.7
+## O que há de novo no Aspose.PDF 24.7
 
-Comparando Documentos PDF com Aspose.PDF for .NET
+Comparando documentos PDF com Aspose.PDF for .NET
 
 Desde 24.7, é possível comparar o conteúdo de documentos PDF com marcas de anotação e saída lado a lado:
 
@@ -696,7 +711,7 @@ opt.AddOutput(new FileDataSource(output));
 plugin.Process(opt);
 ```
 
-## Novidades no Aspose.PDF 24.6
+## O que há de novo no Aspose.PDF 24.6
 
 Desde o lançamento 24.6, como parte da edição de PDF marcado, foram adicionados métodos em **Aspose.Pdf.LogicalStructure.Element**:
 
@@ -705,7 +720,7 @@ Desde o lançamento 24.6, como parte da edição de PDF marcado, foram adicionad
 - RemoveChild
 - ClearChilds
 
-Além disso, neste lançamento, é possível criar um PDF acessível usando funções de baixo nível:
+Além disso, nesta versão, é possível criar um PDF acessível usando funções de baixo nível:
 
 O próximo trecho de código trabalha com um documento PDF e seu conteúdo marcado, utilizando a biblioteca Aspose.PDF para processá-lo.
 
@@ -776,7 +791,7 @@ private static void SignWithBase64Certificate(string pfxFilePath, string passwor
 }
 ```
 
-## Novidades no Aspose.PDF 24.5
+## O que há de novo no Aspose.PDF 24.5
 
 Este lançamento nos permite trabalhar com camadas PDF. Por exemplo:
 
@@ -791,7 +806,7 @@ Desde o lançamento 24.5, você pode abrir um PDF, bloquear uma camada específi
 
 Layer.Lock(); - Bloqueia a camada.
 Layer.Unlock(); - Desbloqueia a camada.
-Layer.Locked; - Propriedade, indicando o estado bloqueado da camada.
+Layer.Locked; - Propriedade que indica o estado bloqueado da camada.
 
 ```cs
 private static void LockLayerInPDF()
@@ -905,7 +920,7 @@ private static void MergePdfLayers()
 }
 ```
 
-## Novidades no Aspose.PDF 24.4
+## O que há de novo no Aspose.PDF 24.4
 
 Este lançamento suporta a aplicação de uma máscara de recorte a imagens:
 
@@ -987,7 +1002,7 @@ private static void PickTrayByPdfSizeFacade()
 
 A partir deste lançamento, foi adicionado o plugin Aspose.PDF Signature para .NET:
 
-- Exemplo com a criação de um novo campo e opções:
+- Exemplo com criação de novo campo e opções:
 
 ```cs
 // create Signature
@@ -1023,7 +1038,7 @@ opt.Name = "Signature1";
 plugin.Process(opt);
 ```
 
-## Novidades no Aspose.PDF 24.3
+## O que há de novo no Aspose.PDF 24.3
 
 A partir deste lançamento, foi adicionado o plugin PDF/A Converter para .NET:
 
@@ -1121,7 +1136,7 @@ private static void AddEmptySignatureFieldOnEveryPage()
 }
 ```
 
-## Novidades no Aspose.PDF 24.2
+## O que há de novo no Aspose.PDF 24.2
 
 Desde 24.2, é possível obter os dados vetoriais de um arquivo PDF.
 
@@ -1157,7 +1172,7 @@ private static void UsingGraphicsAbsorber()
 }
 ```
 
-## Novidades no Aspose.PDF 24.1
+## O que há de novo no Aspose.PDF 24.1
 
 Desde o lançamento 24.1, é possível importar anotações no formato FDF para PDF:
 
@@ -1180,7 +1195,7 @@ private static void ImportFDFByForm()
 }
 ```
 
-Além disso, suporta o acesso ao Dicionário de Página ou Catálogo de Documento.
+Além disso, suporta acesso ao Dicionário de Página ou Catálogo de Documento.
 
 Aqui estão exemplos de código para DictionaryEditor:
 
@@ -1284,7 +1299,7 @@ private static void RemoveFromPdfPageDicrionary()
 }
 ```
 
-## Novidades no Aspose.PDF 23.12
+## O que há de novo no Aspose.PDF 23.12
 
 O formulário pode ser encontrado e o texto pode ser substituído usando o seguinte trecho de código:
 
@@ -1508,7 +1523,7 @@ private static async void InvokeChatGptPlugin()
 }
 ```
 
-## Novidades no Aspose.PDF 23.11
+## O que há de novo no Aspose.PDF 23.11
 
 A partir deste lançamento, é possível remover texto oculto de um arquivo PDF:
 
@@ -1544,7 +1559,7 @@ private static void RemoveHiddenText()
 }
 ```
 
-Desde 23.11, suporte para interrupção de threads:
+Desde 23.11, suporte para interrupção de thread:
 
 ```cs
 private static void InterruptExample()
@@ -1627,7 +1642,7 @@ private class RowSpanWorker
 }
 ```
 
-## Novidades no Aspose.PDF 23.10
+## O que há de novo no Aspose.PDF 23.10
 
 A atualização atual apresenta três versões de remoção de tags de PDFs marcados.
 
@@ -1698,7 +1713,7 @@ private static void RemoveMarkedElementsTags()
 }
 ```
 
-- Remover tags em geral:
+- Remover tags completamente:
 
 ```cs
 private static void RemoveTags()
@@ -1816,7 +1831,7 @@ private static void SetPrintScaling()
 }
 ```
 
-## Novidades no Aspose.PDF 23.9
+## O que há de novo no Aspose.PDF 23.9
 
 Desde 23.9, suporte para remover uma anotação filha de um campo preenchível.
 
@@ -1842,7 +1857,7 @@ private static void RemoveChildAnnotationFromFillableField()
 }
 ```
 
-## Novidades no Aspose.PDF 23.8
+## O que há de novo no Aspose.PDF 23.8
 
 Desde 23.8, suporte para adicionar detecção de Atualizações Incrementais.
 
@@ -1866,9 +1881,9 @@ private static bool HasIncrementalUpdate()
 }
 ```
 
-Além disso, 23.8 suporta maneiras de trabalhar com campos de checkbox aninhados. Muitos formulários PDF preenchíveis têm campos de checkbox que atuam como grupos de rádio:
+Além disso, 23.8 suporta maneiras de trabalhar com campos de caixa de seleção aninhados. Muitos formulários PDF preenchíveis têm campos de caixa de seleção que atuam como grupos de rádio:
 
-- Criar campo de checkbox de múltiplos valores:
+- Criar campo de caixa de seleção de múltiplos valores:
 
 ```cs
 private static void CreateMultivalueCheckboxField()
@@ -1903,7 +1918,7 @@ private static void CreateMultivalueCheckboxField()
 }
 ```
 
-- Obter e definir valor de um checkbox de múltiplos valores:
+- Obter e definir valor de uma caixa de seleção de múltiplos valores:
 
 ```cs
 private static void GetAndSetValueOfMultivalueCheckboxField()
@@ -1935,7 +1950,7 @@ private static void GetAndSetValueOfMultivalueCheckboxField()
 }
 ```
 
-## Novidades no Aspose.PDF 23.7
+## O que há de novo no Aspose.PDF 23.7
 
 A partir do Aspose.PDF 23.7, suporte para adicionar a extração de formas:
 
@@ -2011,16 +2026,16 @@ private static void FitTextIntoRectangle()
 }
 ```
 
-## Novidades no Aspose.PDF 23.6
+## O que há de novo no Aspose.PDF 23.6
 
-A partir do Aspose.PDF 23.6, suporte para adicionar os próximos plugins:
+A partir do Aspose.PDF 23.6, suporte para adicionar os seguintes plugins:
 
 - Aspose PdfConverter Html para PDF 
 - Aspose PdfOrganizer Redimensionar API
 - Aspose PdfOrganizer Comprimir API
 
 Atualizar o Aspose.PdfForm 
-- adicionar recurso ‘Exportar "Valores dos campos no documento para arquivo CSV"
+- adicionar recurso ‘Exportar "Valores de campos no documento para arquivo CSV"
 - adicionar a capacidade de definir propriedades para campos separados
 
 Além disso, suporte para adicionar a capacidade de definir o título da página HTML, Epub:
@@ -2055,7 +2070,7 @@ private static void SetHtmlTitle()
 }
 ```
 
-## Novidades no Aspose.PDF 23.5
+## O que há de novo no Aspose.PDF 23.5
 
 Desde 23.5, suporte para adicionar a opção FontSize da RedactionAnnotation. Use o próximo trecho de código para resolver essa tarefa:
 
@@ -2094,13 +2109,13 @@ private static void AddRedactionAnnotationFontSize()
 }
 ```
 
-## Novidades no Aspose.PDF 23.4
+## O que há de novo no Aspose.PDF 23.4
 
 Aspose.PDF anunciou o lançamento do SDK .NET 7.
 
-## Novidades no Aspose.PDF 23.3.1
+## O que há de novo no Aspose.PDF 23.3.1
 
-A partir do Aspose.PDF 23.3, suporte para adicionar os próximos plugins:
+A partir do Aspose.PDF 23.3, suporte para adicionar os seguintes plugins:
 
 - Aspose.PdfForm
 - Aspose.PdfConverter PDF para HTML
@@ -2108,7 +2123,7 @@ A partir do Aspose.PDF 23.3, suporte para adicionar os próximos plugins:
 - Aspose.PdfOrganizer Rotacionar
 - Aspose.PdfExtrator para Imagens
 
-## Novidades no Aspose.PDF 23.3
+## O que há de novo no Aspose.PDF 23.3
 
 A versão 23.3 introduziu suporte para manter proporções e resolução de imagem ao inserir na página. Dois métodos podem ser usados para resolver esse problema:
 
@@ -2175,16 +2190,16 @@ private static void InsertImageWithNativeResolutionAsParagraph()
 }
 ```
 
-A imagem será colocada em um tamanho escalonado e resolução nativa. Você pode definir as propriedades FixedWidth ou FixedHeight em combinação com IsApplyResolution.
+A imagem será colocada em um tamanho escalonado e resolução nativa. Você pode definir propriedades FixedWidth ou FixedHeight em combinação com IsApplyResolution.
 
-## Novidades no Aspose.PDF 23.1.1
+## O que há de novo no Aspose.PDF 23.1.1
 
-A partir do Aspose.PDF 23.1.1, suporte para adicionar os próximos plugins:
+A partir do Aspose.PDF 23.1.1, suporte para adicionar os seguintes plugins:
 
 - Plugin Aspose.PdfOrganizer
 - Plugin Aspose.PdfExtractor
 
-## Novidades no Aspose.PDF 23.1
+## O que há de novo no Aspose.PDF 23.1
 
 Desde a versão 23.1, suporte para criar anotação PrinterMark.
 
@@ -2194,7 +2209,7 @@ As marcas do impressor são símbolos gráficos ou texto adicionados a uma pági
 - Rampas de cinza e barras de cores para medir cores e densidades de tinta
 - Marcas de corte mostrando onde o meio de saída deve ser cortado
 
-Mostraremos o exemplo da opção com barras de cores para medir cores e densidades de tinta. Há uma classe abstrata básica PrinterMarkAnnotation e dela a classe filha ColorBarAnnotation - que já implementa essas faixas. Vamos verificar o exemplo:
+Mostraremos o exemplo da opção com barras de cores para medir cores e densidades de tinta. Existe uma classe abstrata básica PrinterMarkAnnotation e dela a classe filha ColorBarAnnotation - que já implementa essas faixas. Vamos verificar o exemplo:
 
 ```cs
 private static void AddPrinterMarkAnnotation()
@@ -2247,9 +2262,9 @@ private static void SavePdfVectorGraphicToSvg()
 }
 ```
 
-## Novidades no Aspose.PDF 22.12
+## O que há de novo no Aspose.PDF 22.12
 
-A partir deste lançamento, suporte para converter PDF em Imagem DICOM.
+A partir deste lançamento, suporte para converter PDF em Imagem DICOM
 
 ```cs
 private static void PdfToDicom()
@@ -2267,7 +2282,7 @@ private static void PdfToDicom()
 }
 ```    
 
-## Novidades no Aspose.PDF 22.09
+## O que há de novo no Aspose.PDF 22.09
 
 Desde 22.09, suporte para adicionar propriedade para modificar a ordem das rubricas do assunto (E=, CN=, O=, OU=, ) na assinatura.
 
@@ -2303,12 +2318,12 @@ private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath,
 }
 ```
 
-## Novidades no Aspose.PDF 22.6
+## O que há de novo no Aspose.PDF 22.6
 
 Desde 22.5, suporte para extrair texto SubScript e SuperScript de PDF.
 
-Se o documento PDF contiver texto SubScript e SuperScript, como H2O, então a extração do texto do PDF também deve extrair suas informações de formatação (no texto extraído simples).
-Se o PDF contiver texto em itálico, isso também deve ser incluído no conteúdo extraído.
+Se o documento PDF contiver texto SubScript e SuperScript, como H2O, então a extração do texto do PDF deve também extrair suas informações de formatação (no texto extraído em texto simples).
+Se o PDF contiver texto em itálico, ele também deve ser incluído no conteúdo extraído.
 
 ```cs
 private static void ExtractTextSuperscript()
@@ -2335,7 +2350,7 @@ private static void ExtractTextSuperscript()
 }
 ```
 
-## Novidades no Aspose.PDF 22.4
+## O que há de novo no Aspose.PDF 22.4
 
 Este lançamento inclui informações para Aspose.PDF for .NET:
 
@@ -2369,13 +2384,13 @@ private static void ConvertPdfToOds()
 
 - PDF para Excel: Reconhecer texto em subscrito e sobrescrito;
 
-- Remover assinaturas UR ao salvar o documento;
+- Remover assinaturas UR ao salvar documento;
 
-- Remover a flag Suspects em MarkInfo ao salvar o documento;
+- Remover a flag Suspects em MarkInfo ao salvar documento;
 
-- Remover informações ao salvar o documento.
+- Remover informações ao salvar documento.
 
-## Novidades no Aspose.PDF 22.3
+## O que há de novo no Aspose.PDF 22.3
 
 Este lançamento inclui as seguintes atualizações:
 
@@ -2383,13 +2398,13 @@ Este lançamento inclui as seguintes atualizações:
 
 - Validação de cabeçalho PDF;
 
-- Remover subfiltro adbe.x509.rsa_sha1 ao salvar o documento;
+- Remover subfiltro adbe.x509.rsa_sha1 ao salvar documento;
 
 - Formatar Campo como Número e Formato de Data;
 
-- Proibir o uso de criptografia RC4 no FDF 2.0.
+- Proibir uso de criptografia RC4 em FDF 2.0.
 
-## Novidades no Aspose.PDF 22.2
+## O que há de novo no Aspose.PDF 22.2
 
 A partir da versão 22.2, é possível assinar um documento usando PdfFileSignature com LTV, e com a capacidade de mudar o hash de SHA1 para SHA256.
 
@@ -2420,11 +2435,11 @@ private static void SignPdfWithSha256(string pfxFilePath, string password)
 }
 ```
 
-## Novidades no Aspose.PDF 22.1
+## O que há de novo no Aspose.PDF 22.1
 
 Agora, Aspose.PDF for .NET suporta carregar documentos de um dos formatos de documento mais populares, Portable Document Format (PDF) versão 2.0.
 
-## Novidades no Aspose.PDF 21.11
+## O que há de novo no Aspose.PDF 21.11
 
 ### Permitir caracteres não latinos na senha
 
@@ -2448,7 +2463,7 @@ private static void EncriptPdfNonlatinPassCharacters()
 }
 ```
 
-## Novidades no Aspose.PDF 21.10
+## O que há de novo no Aspose.PDF 21.10
 
 ### Como detectar texto oculto?
 
@@ -2508,7 +2523,7 @@ private static void GetPdfLayers()
 }
 ```
 
-## Novidades no Aspose.PDF 21.9
+## O que há de novo no Aspose.PDF 21.9
 
 Personalize a cor de fundo para a aparência da assinatura e a cor da fonte dos rótulos na área de assinatura com Aspose.PDF for .NET.
 
@@ -2542,7 +2557,7 @@ private static void SignPdfWithCustomColorsInAppearance(string pfxFilePath, stri
 }
 ```
 
-## Novidades no Aspose.PDF 21.8
+## O que há de novo no Aspose.PDF 21.8
 
 ### Como mudar a cor do texto na Assinatura Digital?
 
@@ -2577,11 +2592,11 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 }
 ```
 
-## Novidades no Aspose.PDF 21.7
+## O que há de novo no Aspose.PDF 21.7
 
 ### Criação de PDF baseada em XML e XLS com parâmetros
 
-Para adicionar parâmetros XSL, precisamos criar nossa própria [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) e definir como propriedade em [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). O seguinte trecho mostra como usar esta classe com os arquivos de exemplo descritos acima.
+Para adicionar parâmetros XSL, precisamos criar nossa própria [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) e definir como propriedade em [XslFoLoadOptions](https://reference.aspose.com/pdf/pt/net/aspose.pdf/xslfoloadoptions). O seguinte trecho mostra como usar esta classe com os arquivos de exemplo descritos acima.
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()
@@ -2605,7 +2620,7 @@ private static void ConvertXslfoToPdfWithArgumentList()
 }
 ```
 
-## Novidades no Aspose.PDF 21.6
+## O que há de novo no Aspose.PDF 21.6
 
 Com Aspose.PDF for .NET, você pode ocultar imagens usando ImagePlacementAbsorber do documento:
 
@@ -2636,7 +2651,7 @@ private static void HideImageInPdf()
 }
 ```
 
-## Novidades no Aspose.PDF 21.5
+## O que há de novo no Aspose.PDF 21.5
 
 ### Como extrair o nome completo da fonte de sua descrição/recurso no PDF?
 
@@ -2664,11 +2679,11 @@ private static void DisplayFontFullNames()
 }
 ```
 
-## Novidades no Aspose.PDF 21.4
+## O que há de novo no Aspose.PDF 21.4
 
 ### Adicionar API para mesclar imagens
 
-Aspose.PDF 21.4 permite combinar Imagens. Siga o próximo trecho de código:
+Aspose.PDF 21.4 permite combinar imagens. Siga o próximo trecho de código:
 
 ```csharp
 private static void MergeAsJpeg()
@@ -2737,9 +2752,9 @@ private static void MergeAsTiff()
 }
 ```
 
-## Novidades no Aspose.PDF 21.3
+## O que há de novo no Aspose.PDF 21.3
 
-### Exposição pública da propriedade para detectar Proteção de Informação do Azure
+### Exposição pública de propriedade para detectar Proteção de Informação do Azure
 
 Com o próximo trecho de código, você deve ser capaz de acessar a carga criptografada de seus arquivos PDF, protegidos com a Proteção de Informação do Azure:
 
@@ -2765,7 +2780,7 @@ private static void AzureInformationProtection()
 }
 ```
 
-## Novidades no Aspose.PDF 21.1
+## O que há de novo no Aspose.PDF 21.1
 
 ### Adicionar suporte para recuperar a cor de fundo do TextFragment
 
@@ -2805,9 +2820,9 @@ private static void DisplayPdfTextBackgroundColor()
 }
 ```
 
-### Após a conversão para HTML, a fonte está totalmente incorporada na saída
+### Após a conversão para HTML, a fonte é totalmente incorporada na saída
 
-Além disso, no Aspose.PDF 21.1, após converter PDF para HTML, tornou-se disponível fontes incorporadas no documento HTML de saída. Isso é possível com a nova opção booleana de salvar HtmlSaveParameter.SaveFullFont.
+Além disso, no Aspose.PDF 21.1, após a conversão de PDF para HTML, as fontes incorporadas se tornaram disponíveis no documento HTML de saída. Isso é possível com a nova opção booleana de salvar HtmlSaveParameter.SaveFullFont.
 
 Aqui está o trecho de código:
 

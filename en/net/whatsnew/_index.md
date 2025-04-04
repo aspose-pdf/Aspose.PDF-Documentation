@@ -78,6 +78,22 @@ lastmod: "2025-01-31"
 }
 </script>
 
+## What's New in Aspose.PDF 25.3
+
+**Most Significant Changes**
+
+In Aspose.PDF 25.3 we have added:
+* 19 [High Code Plugin products](https://products.aspose.net/pdf/).
+* [Detection of compromised](https://docs.aspose.com/pdf/net/extract-image-and-signature-information/#checking-signatures-for-compromise) PDF digital signatures.
+* [Bates numbering artifacts](https://docs.aspose.com/pdf/net/artifacts/#adding-bates-numbering-artifact).
+* [Position settings](https://docs.aspose.com/pdf/net/create-tagged-pdf/#adjust-position-of-text-structure) for the creation of tagged elements.
+* Ability to verify the [boundaries of graphical shapes](https://docs.aspose.com/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) when adding them to the PDF page.
+> Detailed information about the changes and samples of using can be found on the [Aspose.PDF 25.3 Release Notes](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/) page.
+
+**Other Notable Enhancements**
+
+We have improved both performance and memory consumption in the conversion of image-heavy PDFs. The processing speed is now twice as fast, and memory consumption is reduced by 10% in tested scenarios.
+
 ## What's new in Aspose.PDF 25.2
 
 **Most significant changes**
@@ -87,13 +103,12 @@ In the Aspose.PDF 25.2 we have added:
 * [an option](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) to avoid twice call of the CustomSignHash delegate during signing.
 * new `GetSignatureNames()` method to get information about [digital signatures](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) of PDF.
 * possibility of creating a [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) with several widget annotations.
-> [!NOTE]
 > Detailed information about the changes and samples of using can be found on the [Aspose.PDF 25.2 Release Notes](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) page.
 
 **Other notable enhancements**
 
 * Image compression without quality loss on [PDF optimization](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) enhanced. Compressed document size reduced.
-* The Document [Repair](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) method improved. It can check and fix values in the Annotation.Rect array from now.
+* [The Document `Repair` method](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) improved. It can check and fix values in the Annotation.Rect array from now.
 * System.Text.Json dependency version updated to avoid possible vulnerability CVE-2024-43485.
 * PDF signature attack detection improved to prevent obtaining false positive results.
 * A public API for redacting resources dictionary provided:
