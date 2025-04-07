@@ -174,7 +174,7 @@ Aspose.PDF for .NET 提供基于输入 [Markdown](https://daringfireball.net/pro
 
 以下代码片段展示了如何使用 Aspose.PDF 库实现此功能：
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>将 Markdown 转换为 PDF</strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>将 Markdown 转换为 PDF</em></strong></a>
 
 1. 创建 [MdLoadOptions ](https://reference.aspose.com/pdf/zh/net/aspose.pdf/mdloadoptions/) 类的实例。
 2. 创建 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的实例，并提及源文件名和选项。

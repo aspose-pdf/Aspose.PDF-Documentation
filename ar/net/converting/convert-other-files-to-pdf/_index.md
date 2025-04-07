@@ -174,7 +174,7 @@ Aspose.PDF for .NET يوفر الوظيفة لإنشاء مستند PDF بناء
 
 يوضح مقتطف الكود التالي كيفية استخدام هذه الوظيفة مع مكتبة Aspose.PDF:
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>تحويل Markdown إلى PDF</strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>تحويل Markdown إلى PDF</em></strong></a>
 
 1. أنشئ مثيلًا من فئة [MdLoadOptions ](https://reference.aspose.com/pdf/ar/net/aspose.pdf/mdloadoptions/) .
 2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ذكر اسم ملف المصدر والخيارات.
