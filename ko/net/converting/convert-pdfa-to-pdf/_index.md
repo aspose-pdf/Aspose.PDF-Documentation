@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF/A to PDF format",
     "alternativeHeadline": "Remove PDF/A Compliance for Enhanced Document Flexibility in C#",
-    "abstract": "Aspose.PDF는 이제 .NET 라이브러리를 사용하여 PDF/A 파일을 표준 PDF 문서로 원활하게 변환하는 기능을 제공합니다. 이 기능은 사용자가 PDF/A 준수 제한을 제거할 수 있게 하여 PDF/A 표준에 의해 부과된 제한 없이 PDF 콘텐츠를 더 쉽게 편집하고 수정할 수 있도록 합니다.",
+    "abstract": "Aspose.PDF는 이제 .NET 라이브러리를 사용하여 PDF/A 파일을 표준 PDF 문서로 원활하게 변환하는 기능을 제공합니다. 이 기능은 사용자가 PDF/A 준수 제한을 제거하여 PDF/A 표준에 의해 부과된 제한 없이 PDF 콘텐츠를 더 쉽게 편집하고 수정할 수 있도록 합니다.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "259",
+    "wordcount": "392",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdfa-to-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하세요."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 수행할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하세요."
 }
 </script>
 
@@ -82,7 +82,8 @@ sitemap:
 
 ## PDF/A 문서를 PDF로 변환
 
-PDF/A 문서를 PDF로 변환하는 것은 원본 문서에서 <abbr title="Portable Document Format Archive">PDF/A</abbr> 제한을 제거하는 것을 의미합니다. 클래스 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)에는 입력/소스 파일에서 PDF 준수 정보를 제거하는 [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) 메서드가 있습니다.
+PDF/A 문서를 PDF로 변환하는 것은 원본 문서에서 <abbr title="Portable Document Format Archive">PDF/A</abbr> 제한을 제거하는 것을 의미합니다.
+클래스 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document)에는 입력/소스 파일에서 PDF 준수 정보를 제거하는 [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/methods/removepdfacompliance) 메서드가 있습니다.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -127,7 +128,7 @@ private static void ConvertPDFAtoPDF()
 {{< /tab >}}
 {{< /tabs >}}
 
-문서에 변경 사항을 추가하면 PDF/A 준수도 제거될 수 있습니다(예: 페이지 추가). 다음 예제에서는 새 페이지가 추가된 후 출력 문서가 PDF/A 준수를 잃습니다.
+문서에서 변경 사항(예: 페이지 추가)을 만들면 PDF/A 준수도 제거될 수 있습니다. 다음 예제에서는 새 페이지가 추가된 후 출력 문서가 PDF/A 준수를 잃습니다.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -13,7 +13,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Checking Element Bounds in Shapes Collection",
     "alternativeHeadline": "Configurable Bounds Checking for Aspose.PDF Shapes with Exception Mode",
-    "abstract": "La nueva función de verificación de límites de Aspose.PDF for .NET en la colección `Drawing.Graph.Shapes` valida automáticamente las dimensiones de los elementos contra los contenedores padres, evitando el desbordamiento del diseño. Se activan excepciones cuando los elementos superan los límites del contenedor, aplicando restricciones de tamaño estrictas durante la inserción para garantizar un formato PDF preciso y agilizar la precisión del diseño.",
+    "abstract": "La nueva función de verificación de límites de Aspose.PDF for .NET en la colección `Drawing.Graph.Shapes` valida automáticamente las dimensiones de los elementos contra los contenedores padres, previniendo el desbordamiento del diseño. Se activan excepciones cuando los elementos superan los límites del contenedor, aplicando restricciones de tamaño estrictas durante la inserción para asegurar un formato PDF preciso y optimizar la precisión del diseño.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -22,7 +22,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "832",
+    "wordcount": "378",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -68,13 +68,13 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/aspose-pdf-drawing-graph-shapes-bounds-check/"
     },
-    "dateModified": "2025-03-17",
+    "dateModified": "2025-04-04",
     "description": ""
 }
 </script>
 
 ## Introducción
-Este documento proporciona una guía detallada sobre el uso de la función de verificación de límites en la colección de Shapes. Esta función asegura que los elementos se ajusten dentro de su contenedor padre y se puede configurar para lanzar una excepción si el componente no se ajusta. Vamos a repasar los pasos para implementar esta funcionalidad y proporcionar un ejemplo completo.
+Este documento proporciona una guía detallada sobre el uso de la función de verificación de límites en la colección de Shapes. Esta función asegura que los elementos se ajusten dentro de su contenedor padre y se puede configurar para lanzar una excepción si el componente no se ajusta.
 
 ## Requisitos previos
 Necesitará lo siguiente:
@@ -83,82 +83,6 @@ Necesitará lo siguiente:
 * Un archivo PDF de muestra que contenga algunas páginas
 
 Puede descargar la biblioteca Aspose.PDF for .NET desde el sitio web oficial o instalarla utilizando el Administrador de paquetes NuGet en Visual Studio.
-
-## Pasos
-Aquí están los pasos para completar la tarea:
-1. Crear documento PDF.
-2. Crear un objeto `Graph` con dimensiones especificadas.
-3. Crear un objeto `Shape` con dimensiones especificadas.
-4. Establecer el `BoundsCheckMode` en `ThrowExceptionIfDoesNotFit`.
-5. Intentar agregar la forma al gráfico.
-
-Veamos cómo implementar estos pasos en código C#.
-
-### Paso 1: Crear documento PDF
-Primero, cree un nuevo documento PDF y agregue una página a él.
-
-```csharp
-using (var document = new Aspose.Pdf.Document())
-{
-    Aspose.Pdf.Page page = document.Pages.Add();
-}
-```
-
-### Paso 2: Crear un objeto Graph con dimensiones especificadas
-A continuación, cree un objeto `Graph` con un ancho y alto de 100 unidades. Posicione el gráfico a 10 unidades desde la parte superior y 15 unidades desde la izquierda de la página. Agregue un borde negro al gráfico.
-
-```csharp
-var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
-{
-    Top = 10,
-    Left = 15,
-    Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
-};
-page.Paragraphs.Add(graph);
-```
-
-### Paso 3: Crear un objeto Shape (por ejemplo, Rectángulo) con dimensiones especificadas
-Cree un objeto Rectángulo con un ancho y alto de 50 unidades. Posicione el rectángulo en (-1, 0), que está fuera de los límites del gráfico.
-
-```csharp
-var rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
-{
-    GraphInfo =
-    {
-        FillColor = Aspose.Pdf.Color.Tomato
-    }
-};
-```
-
-### Paso 4: Establecer el BoundsCheckMode en ThrowExceptionIfDoesNotFit
-Establezca el `BoundsCheckMode` en `ThrowExceptionIfDoesNotFit` para asegurarse de que se lance una excepción si el rectángulo no se ajusta dentro del gráfico.
-
-```csharp
-graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
-```
-
-### Paso 5: Agregar el rectángulo al gráfico
-Agregue el rectángulo al gráfico. Esto lanzará una `Aspose.Pdf.BoundsOutOfRangeException` porque el rectángulo no se ajusta dentro de las dimensiones del gráfico.
-
-```csharp
-graph.Shapes.Add(rect);
-```
-
-## Salida
-Después de ejecutar el código, la salida esperada será una `Aspose.Pdf.BoundsOutOfRangeException` con el mensaje:
-
-```
-Bounds not fit. Container dimensions: 100x100
-```
-
-## Solución de problemas
-En caso de problemas, aquí hay algunos consejos:
-* Asegúrese de que el `BoundsCheckMode` esté configurado correctamente.
-* Verifique que las dimensiones del elemento y del contenedor sean precisas.
-* Revise la posición del elemento dentro del contenedor.
-
-## Ejemplo completo
-A continuación se muestra un ejemplo completo que demuestra todos los pasos combinados:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -238,6 +162,3 @@ private static void CheckShapeBounds()
 ```
 {{< /tab >}}
 {{< /tabs >}}
-
-## Conclusión
-La función de verificación de límites en la colección de Shapes es una herramienta poderosa para asegurar que los elementos se ajusten dentro de los contenedores padres. Puede prevenir problemas de diseño en sus documentos PDF configurando el BoundsCheckMode en ThrowExceptionIfDoesNotFit. Esta función es particularmente útil en escenarios donde la posición y el tamaño precisos de los elementos son críticos. Para más detalles, visite la [documentación oficial](https://docs.aspose.com/pdf/net/).

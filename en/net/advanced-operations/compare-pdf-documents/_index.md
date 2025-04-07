@@ -103,8 +103,6 @@ Here is a list of possible ways to compare PDF documents using Aspose.PDF for  .
 
 The first code snippet demonstrates how to compare the first pages of two PDF documents.
 
-Steps:
-
 1. Document Initialization.
 The code starts by initializing two PDF documents using their respective file paths (documentPath1 and documentPath2). The paths are specified as empty strings for now, but in practice, you would replace these with the actual file paths.
 
@@ -145,19 +143,6 @@ private static void ComparingSpecificPages()
 ## Comparing Entire Documents
 
 The second code snippet expands the scope to compare the entire content of two PDF documents.
-
-Steps:
-
-1. Document Initialization.
-Just like in the first example, two PDF documents are initialized with their file paths.
-
-2. Comparison Process.
-
-- Entire Document Comparison - unlike the first snippet, this code compares the entire content of the two documents.
-
-- Comparison Options - the options are the same as in the first snippet, ensuring that spaces are ignored, and additional change markers are displayed.
-
-3. The comparison result, which highlights differences across all pages of the two documents, is saved in the file specified by 'resultPdfPath'.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

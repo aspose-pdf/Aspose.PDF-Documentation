@@ -1,5 +1,5 @@
 ---
-title: Mengonversi PDF ke EPUB, LaTeX, Teks, XPS di C#
+title: Mengonversi PDF ke EPUB, LaTeX, Teks, XPS dalam C#
 linktitle: Mengonversi PDF ke format lain
 type: docs
 ai_search_scope: pdf_net
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to EPUB, LaTeX, Text, XPS in C#",
     "alternativeHeadline": "Add PDF format conversion to EPUB, LaTeX, Text, XPS in C#",
-    "abstract": "Aspose.PDF for .NET memperkenalkan fitur kuat yang memungkinkan konversi file PDF ke berbagai format, termasuk EPUB, LaTeX, Teks, XPS, dan Markdown. Fungsionalitas ini meningkatkan aksesibilitas dan kegunaan dokumen dengan memungkinkan pengembang untuk dengan mudah mengintegrasikan konversi format file yang beragam ke dalam aplikasi C# mereka, sehingga memenuhi audiens yang lebih luas dan mengoptimalkan konten untuk berbagai platform",
+    "abstract": "Aspose.PDF for .NET memperkenalkan fitur kuat yang memungkinkan konversi file PDF ke berbagai format, termasuk EPUB, LaTeX, Teks, XPS, dan Markdown. Fungsionalitas ini meningkatkan aksesibilitas dan kegunaan dokumen dengan memungkinkan pengembang untuk dengan mudah mengintegrasikan konversi format file yang beragam ke dalam aplikasi C# mereka, sehingga memenuhi kebutuhan audiens yang lebih luas dan mengoptimalkan konten untuk berbagai platform.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1419",
+    "wordcount": "1671",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,27 +73,37 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-other-files/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
+
+Artikel ini menjelaskan cara mengonversi PDF ke berbagai format menggunakan C#. Ini mencakup topik berikut.
+
+- [Mengonversi PDF ke EPUB](#csharp-convert-pdf-to-epub)
+- [Mengonversi PDF ke LaTeX/TeX](#csharp-convert-pdf-to-latex)
+- [Mengonversi PDF ke Teks Biasa](#csharp-convert-pdf-to-plain-text)
+- [Mengonversi PDF ke XPS](#csharp-convert-pdf-to-xps)
+- [Mengonversi PDF ke Markdown](#csharp-convert-pdf-to-markdown)
 
 ## Mengonversi PDF ke EPUB
 
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke EPUB secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+<a name="csharp-convert-pdf-to-epub" id="csharp-convert-pdf-to-epub"><strong>Mengonversi PDF ke EPUB</strong></a>
+
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke EPUB dengan Aplikasi Gratis](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
 
 **<abbr title="Electronic Publication">EPUB</abbr>** adalah standar e-book gratis dan terbuka dari International Digital Publishing Forum (IDPF). File memiliki ekstensi .epub.
-EPUB dirancang untuk konten yang dapat mengalir, yang berarti bahwa pembaca EPUB dapat mengoptimalkan teks untuk perangkat tampilan tertentu. EPUB juga mendukung konten dengan tata letak tetap. Format ini dimaksudkan sebagai satu format yang dapat digunakan penerbit dan rumah konversi secara internal, serta untuk distribusi dan penjualan. Ini menggantikan standar Open eBook.
+EPUB dirancang untuk konten yang dapat mengalir, yang berarti bahwa pembaca EPUB dapat mengoptimalkan teks untuk perangkat tampilan tertentu. EPUB juga mendukung konten dengan tata letak tetap. Format ini dimaksudkan sebagai satu format yang dapat digunakan oleh penerbit dan rumah konversi di dalam rumah, serta untuk distribusi dan penjualan. Ini menggantikan standar Open eBook.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Aspose.PDF for .NET juga mendukung fitur untuk mengonversi dokumen PDF ke format EPUB. Aspose.PDF for .NET memiliki kelas bernama EpubSaveOptions yang dapat digunakan sebagai argumen kedua untuk metode [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index), untuk menghasilkan file EPUB.
+Aspose.PDF for .NET juga mendukung fitur untuk mengonversi dokumen PDF ke format EPUB. Aspose.PDF for .NET memiliki kelas bernama EpubSaveOptions yang dapat digunakan sebagai argumen kedua untuk [`Document.Save(..)`](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index) metode, untuk menghasilkan file EPUB.
 Silakan coba menggunakan potongan kode berikut untuk memenuhi kebutuhan ini dengan C#.
 
 ```csharp
@@ -119,18 +129,20 @@ private static void ConvertPDFtoEPUB()
 
 ## Mengonversi PDF ke LaTeX/TeX
 
-**Aspose.PDF for .NET** mendukung mengonversi PDF ke LaTeX/TeX.
+<a name="csharp-convert-pdf-to-latex" id="csharp-convert-pdf-to-latex"><strong>Mengonversi PDF ke LaTeX/TeX</strong></a>
+
+**Aspose.PDF for .NET** mendukung konversi PDF ke LaTeX/TeX.
 Format file LaTeX adalah format file teks dengan markup khusus dan digunakan dalam sistem persiapan dokumen berbasis TeX untuk penyetelan berkualitas tinggi.
 
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke LaTeX/TeX secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke LaTeX/TeX dengan Aplikasi Gratis](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-Untuk mengonversi file PDF ke TeX, Aspose.PDF memiliki kelas [LaTeXSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions) yang menyediakan properti OutDirectoryPath untuk menyimpan gambar sementara selama proses konversi.
+Untuk mengonversi file PDF ke TeX, Aspose.PDF memiliki kelas [LaTeXSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/latexsaveoptions) yang menyediakan properti OutDirectoryPath untuk menyimpan gambar sementara selama proses konversi.
 
 Potongan kode berikut menunjukkan proses mengonversi file PDF menjadi format TEX dengan C#.
 
@@ -161,11 +173,13 @@ private static void ConvertPDFtoTeX()
 
 ## Mengonversi PDF ke Teks
 
-**Aspose.PDF for .NET** mendukung mengonversi seluruh dokumen PDF dan halaman tunggal ke file Teks.
+<a name="csharp-convert-pdf-to-plain-text" id="csharp-convert-pdf-to-plain-text"><strong>Mengonversi PDF ke Teks Biasa</strong></a>
+
+**Aspose.PDF for .NET** mendukung konversi seluruh dokumen PDF dan halaman tunggal ke file Teks.
 
 ### Mengonversi seluruh dokumen PDF ke file Teks
 
-Anda dapat mengonversi dokumen PDF ke file TXT menggunakan metode [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber/methods/visit/index) dari kelas [TextAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber).
+Anda dapat mengonversi dokumen PDF ke file TXT menggunakan metode [Visit](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textabsorber/methods/visit/index) dari kelas [TextAbsorber](https://reference.aspose.com/pdf/id/net/aspose.pdf.text/textabsorber).
 
 Potongan kode berikut menjelaskan cara mengekstrak teks dari semua halaman.
 
@@ -191,7 +205,7 @@ private static void ConvertPDFtoTXT()
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke Teks secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke Teks"](https://products.aspose.app/pdf/conversion/pdf-to-txt), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke Teks dengan Aplikasi Gratis](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}
@@ -227,21 +241,23 @@ private static void ConvertPDFtoTXT()
 
 ## Mengonversi PDF ke XPS
 
+<a name="csharp-convert-pdf-to-xps" id="csharp-convert-pdf-to-xps"><strong>Mengonversi PDF ke XPS</strong></a>
+
 **Aspose.PDF for .NET** memberikan kemungkinan untuk mengonversi file PDF ke format <abbr title="XML Paper Specification">XPS</abbr>. Mari kita coba menggunakan potongan kode yang disajikan untuk mengonversi file PDF ke format XPS dengan C#.
 
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke XPS secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke XPS dengan Aplikasi Gratis](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
 {{% /alert %}}
 
-Tipe file XPS terutama terkait dengan Spesifikasi Kertas XML oleh Microsoft Corporation. Spesifikasi Kertas XML (XPS), sebelumnya bernama Metro dan mencakup konsep pemasaran Jalur Cetak Generasi Berikutnya (NGPP), adalah inisiatif Microsoft untuk mengintegrasikan pembuatan dan tampilan dokumen ke dalam sistem operasi Windows.
+Tipe file XPS terutama terkait dengan Spesifikasi Kertas XML oleh Microsoft Corporation. Spesifikasi Kertas XML (XPS), sebelumnya bernama kode Metro dan mencakup konsep pemasaran Jalur Cetak Generasi Berikutnya (NGPP), adalah inisiatif Microsoft untuk mengintegrasikan pembuatan dan tampilan dokumen ke dalam sistem operasi Windows.
 
-Untuk mengonversi file PDF ke XPS, Aspose.PDF memiliki kelas [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) yang digunakan sebagai argumen kedua untuk metode [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) untuk menghasilkan file XPS.
+Untuk mengonversi file PDF ke XPS, Aspose.PDF memiliki kelas [XpsSaveOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/xpssaveoptions) yang digunakan sebagai argumen kedua untuk metode [Document.Save(..)](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index) untuk menghasilkan file XPS.
 
-Sejak rilis 24.2, Aspose.PDF telah menerapkan konversi PDF yang Dapat Dicari ke XPS sambil menjaga Teks Dapat Dipilih di XPS yang dihasilkan. Untuk mempertahankan teks, perlu untuk mengatur properti XpsSaveOptions.SaveTransparentTexts ke true.
+Sejak rilis 24.2, Aspose.PDF telah menerapkan konversi PDF yang Dapat Dicari ke XPS sambil menjaga Teks Dapat Dipilih dalam XPS yang dihasilkan. Untuk mempertahankan teks, perlu untuk mengatur properti XpsSaveOptions.SaveTransparentTexts ke true.
 
 Potongan kode berikut menunjukkan proses mengonversi file PDF menjadi format XPS.
 
@@ -267,17 +283,19 @@ private static void ConvertPDFtoXPS()
 
 ## Mengonversi PDF ke Markdown
 
+<a name="csharp-convert-pdf-to-markdown" id="csharp-convert-pdf-to-markdown"><strong>Mengonversi PDF ke Markdown</strong></a>
+
 **Aspose.PDF for .NET** memberikan kemungkinan untuk mengonversi file PDF ke format <abbr title="Markdown">MD</abbr>. Mari kita coba menggunakan potongan kode yang disajikan untuk mengonversi file PDF ke format MD dengan C#.
 
-Markdown adalah bahasa markup ringan yang dirancang untuk mewakili format teks biasa dengan maksimum keterbacaan manusia dan keterbacaan mesin untuk bahasa penerbitan yang lebih maju.
+Markdown adalah bahasa markup ringan yang dirancang untuk mewakili format teks biasa dengan keterbacaan maksimum oleh manusia dan keterbacaan mesin untuk bahasa penerbitan yang lebih maju.
 
-### Optimalkan penggunaan gambar dengan konverter PDF ke Markdown
+### Optimalkan penggunaan gambar oleh konverter PDF ke Markdown
 
-Anda dapat memperhatikan bahwa di direktori dengan gambar, jumlah gambar lebih sedikit daripada jumlah gambar dalam file PDF.
+Anda dapat melihat bahwa di direktori dengan gambar, jumlah gambar lebih sedikit daripada jumlah gambar dalam file PDF.
 
 Karena file markdown tidak dapat mengatur ukuran gambar, tanpa opsi MarkdownSaveOptions.UseImageHtmlTag, jenis gambar yang sama dengan ukuran berbeda disimpan sebagai berbeda.
 
-Untuk opsi yang diaktifkan MarkdownSaveOptions.UseImageHtmlTag akan menyimpan gambar unik, yang diskalakan dalam dokumen dengan tag img.
+Untuk opsi yang diaktifkan MarkdownSaveOptions.UseImageHtmlTag akan menyimpan gambar unik, yang diskalakan dalam dokumen oleh tag img.
 
 Kode membuka dokumen PDF, mengonfigurasi parameter untuk mengonversinya menjadi file Markdown (menyimpan gambar apa pun di folder bernama "images"), dan menyimpan file Markdown yang dihasilkan di jalur output yang ditentukan.
 

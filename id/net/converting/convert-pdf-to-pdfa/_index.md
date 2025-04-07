@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to PDF/A formats",
     "alternativeHeadline": "Effortless PDF to PDF/A Conversion with Validation in C#",
-    "abstract": "Fitur dalam Aspose.PDF for .NET memungkinkan konversi tanpa hambatan dari file PDF standar ke berbagai format yang sesuai dengan PDF/A, termasuk PDF/A-1b, PDF/A-2u, dan PDF/A-3a. Fitur ini tidak hanya memastikan kepatuhan terhadap standar PDF/A melalui validasi yang komprehensif tetapi juga memungkinkan lampiran file tambahan dan penggantian font yang hilang, meningkatkan integritas dan aksesibilitas dokumen. Jelajahi kemampuan kuat Aspose.PDF untuk konversi PDF/A yang efisien dan dapat diandalkan",
+    "abstract": "Fitur dalam Aspose.PDF for .NET memungkinkan konversi tanpa hambatan dari file PDF standar ke berbagai format yang sesuai dengan PDF/A, termasuk PDF/A-1b, PDF/A-2u, dan PDF/A-3a. Fitur ini tidak hanya memastikan kepatuhan terhadap standar PDF/A melalui validasi yang komprehensif tetapi juga memungkinkan lampiran file tambahan dan penggantian font yang hilang, meningkatkan integritas dan aksesibilitas dokumen. Jelajahi kemampuan kuat Aspose.PDF untuk konversi PDF/A yang efisien dan andal.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "1819",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,25 +73,29 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
 **Aspose.PDF for .NET** memungkinkan Anda untuk mengonversi file PDF ke file PDF yang sesuai dengan <abbr title="Portable Document Format / A">PDF/A</abbr>. Sebelum melakukannya, file harus divalidasi. Topik ini menjelaskan bagaimana.
 
+- [Mengonversi PDF ke PDF/A-1b](#csharp-convert-pdf-to-a1b)
+- [Mengonversi PDF ke PDF/A-3b](#csharp-convert-pdf-to-a3b)
+- [Mengonversi PDF ke PDF/A-4](#csharp-convert-pdf-to-a4)
+
 {{% alert color="primary" %}}
 
-Harap dicatat bahwa kami mengikuti Adobe Preflight dan veraPDF untuk memvalidasi kepatuhan PDF/A. Semua alat di pasar memiliki "representasi" mereka sendiri tentang kepatuhan PDF/A. Silakan periksa artikel ini tentang alat validasi PDF/A untuk referensi. Kami memilih produk Adobe untuk memverifikasi bagaimana Aspose.PDF menghasilkan file PDF karena Adobe berada di pusat segala sesuatu yang terkait dengan PDF.
+Harap dicatat bahwa kami mengikuti Adobe Preflight dan veraPDF untuk memvalidasi kepatuhan PDF/A. Semua alat di pasar memiliki "representasi" mereka sendiri tentang kepatuhan PDF/A. Harap periksa artikel ini tentang alat validasi PDF/A untuk referensi. Kami memilih produk Adobe untuk memverifikasi bagaimana Aspose.PDF menghasilkan file PDF karena Adobe berada di pusat segala sesuatu yang terkait dengan PDF.
 
 {{% /alert %}}
 
 Konversi file menggunakan metode Convert dari kelas Document. Sebelum mengonversi PDF ke file yang sesuai dengan PDF/A, validasi PDF menggunakan metode Validate. Hasil validasi disimpan dalam file XML dan kemudian hasil ini juga diteruskan ke metode Convert. Anda juga dapat menentukan tindakan untuk elemen yang tidak dapat dikonversi menggunakan enumerasi ConvertErrorAction.
 
 {{% alert color="success" %}}
-**Cobalah mengonversi PDF ke PDF/A secara online**
+**Coba konversi PDF ke PDF/A secara online**
 
-Aspose.PDF for .NET menyajikan aplikasi gratis online ["PDF ke PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET menyajikan aplikasi gratis online ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke PDF/A dengan Aplikasi Gratis](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
@@ -102,6 +106,8 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 Kami mendukung standar berikut: PDF/A-1b, PDF/A-1a, PDF/A-2b, PDF/A-2u, PDF/A-2a, PDF/A-3b, PDF/A-3u, PDF/A-3a, PDF/A-4, PDF/A-4e, PDF/A-4f.
 
 ## Mengonversi file PDF ke PDF/A-1b
+
+<a name="csharp-convert-pdf-to-a1b" id="csharp-convert-pdf-to-a1b"><strong>Mengonversi PDF ke PDF/A-1b</strong></a>
 
 Potongan kode berikut menunjukkan cara mengonversi file PDF ke PDF yang sesuai dengan PDF/A-1b.
 
@@ -191,6 +197,8 @@ private static void ValidatePdfAStandard()
 
 ## Mengonversi file PDF ke PDF/A-3b
 
+<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>Mengonversi PDF ke PDF/A-3b</strong></a>
+
 Aspose.PDF for .NET juga mendukung fitur untuk mengonversi file PDF ke format PDF/A-3b.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -237,6 +245,8 @@ private static void ConvertPdfToPdfA3b()
 {{< /tabs >}}
 
 ## Mengonversi file PDF ke PDF/A-4
+
+<a name="csharp-convert-pdf-to-a4" id="csharp-convert-pdf-to-a4"><strong>Mengonversi PDF ke PDF/A-4</strong></a>
 
 Aspose.PDF for .NET juga mendukung fitur untuk mengonversi file PDF ke format PDF/A-4.
 
@@ -352,7 +362,7 @@ private static void AddAttachmentToPdfA()
 
 ## Mengganti font yang hilang dengan font alternatif
 
-Sesuai dengan standar PDF/A, font harus disematkan dalam dokumen PDF/A. Namun, jika font tidak disematkan dalam dokumen sumber dan tidak ada di mesin, maka konversi PDF/A gagal. Dalam hal ini, perlu untuk mengganti font yang hilang dengan beberapa font alternatif yang ada di mesin. Font yang hilang dapat diganti menggunakan kelas SimpleFontSubsitution selama konversi PDF ke PDF/A.
+Sesuai dengan standar PDF/A, font harus disematkan dalam dokumen PDF/A. Namun, jika font tidak disematkan dalam dokumen sumber dan tidak ada di mesin, maka konversi PDF/A akan gagal. Dalam hal ini, perlu untuk mengganti font yang hilang dengan beberapa font alternatif yang ada di mesin. Font yang hilang dapat diganti menggunakan kelas SimpleFontSubsitution selama konversi PDF ke PDF/A.
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

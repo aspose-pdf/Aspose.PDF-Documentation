@@ -84,22 +84,9 @@ This article explains how to **convert HTML to PDF using C#**. It covers the fol
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-_Format_: **HTML**
-- [C# HTML to PDF](#csharp-html-to-pdf)
-- [C# Convert HTML to PDF](#csharp-html-to-pdf)
-- [C# How to convert HTML to PDF](#csharp-html-to-pdf)
-
-_Format_: **MHTML**
-- [C# MHTML to PDF](#csharp-mhtml-to-pdf)
-- [C# Convert MHTML to PDF](#csharp-mhtml-to-pdf)
-- [C# How to convert MHTML to PDF](#csharp-mhtml-to-pdf)
-
-_Format_: **WebPage**
-- [C# WebPage to PDF](#csharp-webpage-to-pdf)
-- [C# Convert WebPage to PDF](#csharp-webpage-to-pdf)
-- [C# How to convert WebPage to PDF](#csharp-webpage-to-pdf)
-
-## C# HTML to PDF Conversion
+- [Convert HTML to PDF](#csharp-html-to-pdf)
+- [Convert WebPage to PDF](#csharp-webpage-to-pdf)
+- [Convert MHTML to PDF](#csharp-mhtml-to-pdf)
 
 **Aspose.PDF for .NET** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly. The process of converting HTML to PDF can be flexibly customized.
 
@@ -107,7 +94,7 @@ _Format_: **WebPage**
 
 The following C# code sample shows how to convert an HTML document to a PDF.
 
-<a name="csharp-html-to-pdf"><strong>Steps: Convert HTML to PDF in C#</strong></a>
+<a name="csharp-html-to-pdf"><strong>Convert HTML to PDF</strong></a>
 
 1. Create an instance of the [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/) class.
 2. Initialize [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object.
@@ -261,7 +248,7 @@ Converting a web page is slightly different than converting a local HTML documen
 
 When converting a web page hosted on a webserver to PDF:
 
-<a name="csharp-webpage-to-pdf"><strong>Steps: Convert WebPage to PDF in C#</strong></a>
+<a name="csharp-webpage-to-pdf"><strong>Convert WebPage to PDF</strong></a>
 
 1. Read the contents of the page using an HttpClient object.
 1. Instantiate the [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) object and set the base URL.
@@ -404,7 +391,7 @@ Aspose.PDF for .NET presents you online free application ["MHTML to PDF"](https:
 
 <abbr title="MIME encapsulation of aggregate HTML documents">MHTML</abbr>, short for MIME HTML, is a web page archive format used to combine resources that are typically represented by external links (such as images, Flash animations, Java applets, and audio files) with HTML code into a single file. The content of an MHTML file is encoded as if it were an HTML email message, using the MIME type multipart/related. Aspose.PDF for .NET can convert HTML files to PDF format and with the release of Aspose.PDF for .NET 9.0.0, we have introduced a new feature that lets you convert MHTML files to PDF format. Next code snippet show how to covert MHTML files to PDF format with C#:
 
-<a name="csharp-mhtml-to-pdf"><strong>Steps: Convert MHTML to PDF in C#</strong></a>
+<a name="csharp-mhtml-to-pdf"><strong>Convert MHTML to PDF</strong></a>
 
 1. Create an instance of the [MhtLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mhtloadoptions/) class.
 2. Initialize [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object.
@@ -431,38 +418,3 @@ private static void ConvertMHTtoPDF()
     }
 }
 ```
-
-## See Also 
-
-This article also covers these topics. The codes are same as above.
-
-_Format_: **HTML**
-- [C# HTML to PDF Code](#csharp-html-to-pdf)
-- [C# HTML to PDF API](#csharp-html-to-pdf)
-- [C# HTML to PDF Programmatically](#csharp-html-to-pdf)
-- [C# HTML to PDF Library](#csharp-html-to-pdf)
-- [C# Save HTML as PDF](#csharp-html-to-pdf)
-- [C# Generate PDF from HTML](#csharp-html-to-pdf)
-- [C# Create PDF from HTML](#csharp-html-to-pdf)
-- [C# HTML to PDF Converter](#csharp-html-to-pdf)
-
-_Format_: **MHTML**
-- [C# MHTML to PDF Code](#csharp-mhtml-to-pdf)
-- [C# MHTML to PDF API](#csharp-mhtml-to-pdf)
-- [C# MHTML to PDF Programmatically](#csharp-mhtml-to-pdf)
-- [C# MHTML to PDF Library](#csharp-mhtml-to-pdf)
-- [C# Save MHTML as PDF](#csharp-mhtml-to-pdf)
-- [C# Generate PDF from MHTML](#csharp-mhtml-to-pdf)
-- [C# Create PDF from MHTML](#csharp-mhtml-to-pdf)
-- [C# MHTML to PDF Converter](#csharp-mhtml-to-pdf)
-
-_Format_: **WebPage**
-- [C# WebPage to PDF Code](#csharp-webpage-to-pdf)
-- [C# WebPage to PDF API](#csharp-webpage-to-pdf)
-- [C# WebPage to PDF Programmatically](#csharp-webpage-to-pdf)
-- [C# WebPage to PDF Library](#csharp-webpage-to-pdf)
-- [C# Save WebPage as PDF](#csharp-webpage-to-pdf)
-- [C# Generate PDF from WebPage](#csharp-webpage-to-pdf)
-- [C# Create PDF from WebPage](#csharp-webpage-to-pdf)
-- [C# WebPage to PDF Converter](#csharp-webpage-to-pdf)
-

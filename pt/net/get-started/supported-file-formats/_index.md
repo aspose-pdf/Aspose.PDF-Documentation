@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Supported File Formats",
     "alternativeHeadline": "Aspose.PDF for .NET Supports Extensive File Formats in C#",
-    "abstract": "Aspose.PDF for .NET agora suporta uma ampla gama de formatos de arquivo tanto para carregamento quanto para salvamento, aumentando a versatilidade para desenvolvedores. Essa funcionalidade inclui formatos populares como PDF, EPUB, HTML e SVG, atendendo a várias necessidades de processamento de documentos. Descubra um suporte abrangente a formatos de arquivo que simplifica a manipulação de PDF dentro de suas aplicações",
+    "abstract": "Aspose.PDF for .NET agora suporta uma ampla gama de formatos de arquivo tanto para carregamento quanto para salvamento, aumentando a versatilidade para desenvolvedores. Essa funcionalidade inclui formatos populares como PDF, EPUB, HTML e SVG, atendendo a várias necessidades de processamento de documentos. Descubra um suporte abrangente a formatos de arquivo que simplifica a manipulação de PDF dentro de suas aplicações.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "566",
+    "wordcount": "605",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/supported-file-formats/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados."
 }
 </script>
@@ -98,17 +98,18 @@ A tabela a seguir indica os formatos de arquivo que Aspose.PDF for .NET pode car
 |[OFD](https://en.wikipedia.org/wiki/OFD)|O formato OFD refere-se a “Documento de Layout Fixo Aberto”, estabelecido como o padrão nacional da China para armazenamento de arquivos eletrônicos, usado como uma alternativa ao popular formato PDF.|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Salva o documento no Microsoft Excel SpreadSheet| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Salva o documento no formato Microsoft Excel 2007| |{{< emoticons/tick >}}| |
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Salva o documento no formato XLSM que é um tipo de arquivos de Planilha que suportam Macros.||{{< emoticons/tick >}} | |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Salva o documento no formato de Apresentações do Microsoft PowerPoint| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Salva o documento no formato Microsoft Word| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Salva o documento no formato Microsoft Word| |{{< emoticons/tick >}}| |
 |[DJVU](https://docs.fileformat.com/image/djvu/)|DjVu é um formato de arquivo gráfico destinado a documentos e livros digitalizados desenvolvido pelos Laboratórios AT&T|{{< emoticons/tick >}}| | |
-|[CDR](https://docs.fileformat.com/image/cdr/)|Um arquivo CDR é um arquivo de imagem de desenho vetorial que é criado nativamente com o CorelDRAW|{{< emoticons/tick >}}| | |
-|[MobiXML](https://docs.fileformat.com/ebook/mobi/)|Salva o documento no formato padrão de eBook MobiXML| |{{< emoticons/tick >}}| |
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|Salva o documento no formato JPEG|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
-|[EMF](https://docs.fileformat.com/image/emf/)|Formato de metafile aprimorado (EMF)|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
-|[PCL](https://docs.fileformat.com/page-description-language/pcl/)|Linguagem de Comando da Impressora que é uma Linguagem de Descrição de Página introduzida pela Hewlett Packard (HP)|{{< emoticons/tick >}}| | |
-|[PNG](https://docs.fileformat.com/image/png/)|Salva o documento no formato PNG|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
-|[BMP](https://docs.fileformat.com/image/bmp/)|Salva o documento no formato BMP|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
-|[GIF](https://docs.fileformat.com/image/gif/)|Formato de Intercâmbio Gráfico| |{{< emoticons/tick >}}| |
-|[TIFF](https://docs.fileformat.com/image/tiff/)|Salva o documento como Imagem TIFF de Página Única ou Múltipla|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
-|[Text](https://docs.fileformat.com/word-processing/txt/)|Salva o documento em Formato de Texto|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[CDR](https://docs.fileformat.com/image/cdr/)|A O arquivo CDR é um arquivo de imagem de desenho vetorial que é criado nativamente com o CorelDRAW|{{< emoticons/tick >}}| | |
+|[MobiXML](https://docs.fileformat.com/ebook/mobi/)|Saves o documento no formato padrão eBook MobiXML| |{{< emoticons/tick >}}| |
+|[JPEG](https://docs.fileformat.com/image/jpeg/)|Saves o documento no formato JPEG|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[EMF](https://docs.fileformat.com/image/emf/)|Enhanced formato de metafile (EMF)|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[PCL](https://docs.fileformat.com/page-description-language/pcl/)|Printer Linguagem de Comando que é uma Linguagem de Descrição de Página introduzida pela Hewlett Packard (HP)|{{< emoticons/tick >}}| | |
+|[PNG](https://docs.fileformat.com/image/png/)|Saves o documento no formato PNG|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[BMP](https://docs.fileformat.com/image/bmp/)|Saves o documento no formato BMP|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[GIF](https://docs.fileformat.com/image/gif/)|Graphic Formato de Intercâmbio| |{{< emoticons/tick >}}| |
+|[TIFF](https://docs.fileformat.com/image/tiff/)|Saves o documento como Imagem TIFF de Página Única ou Múltipla|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[Text](https://docs.fileformat.com/word-processing/txt/)|Save o documento no formato Texto|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |

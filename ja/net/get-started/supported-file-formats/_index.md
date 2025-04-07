@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Supported File Formats",
     "alternativeHeadline": "Aspose.PDF for .NET Supports Extensive File Formats in C#",
-    "abstract": "Aspose.PDF for .NETは、開発者のために柔軟性を高めるために、読み込みと保存の両方に対応した広範なファイル形式をサポートしています。この機能には、PDF、EPUB、HTML、SVGなどの人気のある形式が含まれ、さまざまな文書処理ニーズに対応しています。アプリケーション内でのPDF操作を効率化する包括的なファイル形式サポートを発見してください。",
+    "abstract": "Aspose.PDF for .NETは、開発者のために読み込みと保存の両方で広範なファイル形式をサポートするようになり、柔軟性が向上しました。この機能には、PDF、EPUB、HTML、SVGなどの人気のある形式が含まれ、さまざまな文書処理ニーズに対応しています。アプリケーション内でのPDF操作を効率化する包括的なファイル形式サポートを発見してください。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "566",
+    "wordcount": "415",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/supported-file-formats/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
 }
 </script>
@@ -98,6 +98,7 @@ sitemap:
 |[OFD](https://en.wikipedia.org/wiki/OFD)|OFD形式は「オープン固定レイアウト文書」を指し、中国の電子ファイル保存の国家標準として確立され、人気のあるPDF形式の代替として使用されます。|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Microsoft Excelスプレッドシート形式で文書を保存| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Microsoft Excel 2007形式で文書を保存| |{{< emoticons/tick >}}| |
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Saves マクロをサポートするスプレッドシートファイルの一種であるXLSM形式のドキュメント| |{{< emoticons/tick >}}| |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Microsoft PowerPointプレゼンテーション形式で文書を保存| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Microsoft Word形式で文書を保存| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Microsoft Word形式で文書を保存| |{{< emoticons/tick >}}| |

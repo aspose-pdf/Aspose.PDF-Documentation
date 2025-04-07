@@ -7,7 +7,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /ar/net/convert-pdf-to-pdfx/
 lastmod: "2025-01-16"
-description: تعلم كيفية تحويل ملف PDF إلى تنسيق PDF/X لأغراض تبادل الرسومات والطباعة باستخدام Aspose.PDF for .NET.
+description: تعلم كيفية تحويل ملف PDF إلى تنسيق PDF/X لأغراض تبادل الرسوم والطباعة باستخدام Aspose.PDF for .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to PDF/X exchange format",
     "alternativeHeadline": "Effortless PDF to PDF/X Conversion in C#",
-    "abstract": "يدعم Aspose.PDF for .NET تحويل ملفات PDF القياسية إلى تنسيقات متوافقة مع PDF/X بسهولة. هذه الميزة لا تضمن الامتثال لمعايير PDF/X من خلال التحقق الشامل فحسب، بل تسمح أيضًا باستخدام ملف ICC مخصص لضمان تبادل الرسومات بشكل صحيح في كل بيئة. استكشف القدرات القوية لـ Aspose.PDF لتحويل PDF/X بكفاءة وموثوقية",
+    "abstract": "يدعم Aspose.PDF for .NET تحويل ملفات PDF القياسية إلى تنسيقات متوافقة مع PDF/X بسهولة. تضمن هذه الميزة الامتثال لمعايير PDF/X من خلال التحقق الشامل، كما تتيح استخدام ملف ICC مخصص لضمان تبادل الرسوم بشكل صحيح في كل بيئة. استكشف القدرات القوية لـ Aspose.PDF لتحويل PDF/X بكفاءة وموثوقية",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "394",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,21 +73,25 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfx/"
     },
-    "dateModified": "2025-01-16",
+    "dateModified": "2025-04-04",
     "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
 
 **Aspose.PDF for .NET** يتيح لك تحويل ملف PDF إلى ملف PDF متوافق مع <abbr title="Portable Document Format eXchange">PDF/X</abbr>. يشرح هذا المقال كيفية القيام بذلك.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+- [تحويل PDF إلى PDF/X-4](#csharp-convert-pdf-to-x4)
+
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## المعايير المدعومة
 **Aspose.PDF for .NET** يدعم المعايير التالية: PDF/X-1a:2001، PDF/X-1a:2003، PDF/X-3:2003، PDF/X-4.
 
 ## تحويل ملف PDF إلى PDF/X-4 مع ملف ICC خارجي
 
-تظهر مقتطفات الكود التالية كيفية تحويل ملفات PDF إلى PDF متوافقة مع PDF/X-4 وتوفير ملف ICC خارجي لضمان تقديم الألوان بشكل صحيح.
+<a name="csharp-convert-pdf-to-x4" id="csharp-convert-pdf-to-x4"><strong>تحويل PDF إلى PDF/X4</strong></a>
+
+تظهر مقتطفات الشيفرة التالية كيفية تحويل ملفات PDF إلى PDF متوافقة مع PDF/X-4 وتوفير ملف ICC خارجي لضمان تقديم الألوان بشكل صحيح.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
