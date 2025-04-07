@@ -18,7 +18,7 @@ lastmod: "2025-01-31"
     "@type": "TechArticle",
     "headline": "Whats new",
     "alternativeHeadline": "Discover the latest enhancements in Aspose.PDF for .NET",
-    "abstract": "Aspose.PDF for .NET의 최신 개선 사항을 발견하세요. 여기에는 강력한 문서 서명 및 검증을 위한 타원 곡선 디지털 서명 알고리즘(ECDSA)의 도입과 여러 타원 곡선에 대한 지원이 포함됩니다. 또한, 새로운 기능은 PDF에 삽입할 때 이미지 자르기를 허용하고 오류 처리를 개선하기 위한 충돌 보고서를 생성합니다. 이러한 업데이트는 PDF 관리의 효율성을 높이고 문서 워크플로의 보안을 강화합니다.",
+    "abstract": "Aspose.PDF for .NET의 최신 개선 사항을 발견하세요. 여기에는 강력한 문서 서명 및 검증을 위한 타원 곡선 디지털 서명 알고리즘(ECDSA)의 도입과 여러 타원 곡선에 대한 지원이 포함됩니다. 또한, 새로운 기능은 PDF에 삽입할 때 이미지 자르기를 허용하고 오류 처리를 개선하기 위한 충돌 보고서를 생성합니다. 이러한 업데이트는 PDF 관리의 효율성을 높이고 문서 워크플로우의 보안을 강화합니다.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ lastmod: "2025-01-31"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "8022",
+    "wordcount": "10432",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,29 +73,44 @@ lastmod: "2025-01-31"
         "@type": "WebPage",
         "@id": "/net/whatsnew/"
     },
-    "dateModified": "2024-12-04",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 수행할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하세요."
 }
 </script>
+
+## Aspose.PDF 25.3의 새로운 기능
+
+**가장 중요한 변경 사항**
+
+Aspose.PDF 25.3에서는 다음을 추가했습니다:
+* 19 [고급 코드 플러그인 제품](https://products.aspose.net/pdf).
+* [손상된](https://docs.aspose.com/pdf/ko/net/extract-image-and-signature-information/#checking-signatures-for-compromise) PDF 디지털 서명 감지.
+* [베이츠 번호 매기기 아티팩트](https://docs.aspose.com/pdf/ko/net/artifacts/#adding-bates-numbering-artifact).
+* 태그 요소 생성을 위한 [위치 설정](https://docs.aspose.com/pdf/ko/net/create-tagged-pdf/#adjust-position-of-text-structure).
+* PDF 페이지에 추가할 때 [그래픽 모양의 경계](https://docs.aspose.com/pdf/ko/net/aspose-pdf-drawing-graph-shapes-bounds-check/)를 검증하는 기능.
+> 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.3 릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/) 페이지에서 확인할 수 있습니다.
+
+**기타 주목할 만한 개선 사항**
+
+이미지가 많은 PDF 변환에서 성능과 메모리 소비를 개선했습니다. 처리 속도가 이제 두 배 빨라졌고, 테스트된 시나리오에서 메모리 소비가 10% 감소했습니다.
 
 ## Aspose.PDF 25.2의 새로운 기능
 
 **가장 중요한 변경 사항**
 
 Aspose.PDF 25.2에서는 다음을 추가했습니다:
-* [PDF에서 PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/) 표준 변환 지원.
-* 서명 중 CustomSignHash 대리자의 두 번 호출을 피하는 [옵션](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function).
-* PDF의 [디지털 서명](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures)에 대한 정보를 얻기 위한 새로운 `GetSignatureNames()` 메서드.
-* 여러 위젯 주석이 있는 [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) 생성 가능성.
-> [!NOTE]
+* [PDF에서 PDF/X-4](https://docs.aspose.com/pdf/ko/net/convert-pdf-to-pdfx) 표준 변환 지원.
+* 서명 중 CustomSignHash 대리자의 두 번 호출을 피하는 [옵션](https://docs.aspose.com/pdf/ko/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function).
+* PDF의 [디지털 서명](https://docs.aspose.com/pdf/ko/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures)에 대한 정보를 얻기 위한 새로운 `GetSignatureNames()` 메서드.
+* 여러 위젯 주석이 있는 [TextBoxField](https://docs.aspose.com/pdf/ko/net/create-form/#adding-radiobuttonfield) 생성 가능성.
 > 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.2 릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) 페이지에서 확인할 수 있습니다.
 
 **기타 주목할 만한 개선 사항**
 
-* [PDF 최적화](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images)에서 품질 손실 없이 이미지 압축이 향상되었습니다. 압축된 문서 크기가 줄어들었습니다.
-* 문서 [수리](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) 메서드가 개선되었습니다. 이제 주석의 Rect 배열에서 값을 확인하고 수정할 수 있습니다.
-* 잠재적인 취약성 CVE-2024-43485를 피하기 위해 System.Text.Json 종속성 버전이 업데이트되었습니다.
-* PDF 서명 공격 탐지가 개선되어 잘못된 긍정 결과를 방지합니다.
+* 품질 손실 없이 이미지를 [PDF 최적화](https://docs.aspose.com/pdf/ko/net/optimize-pdf/#shrinking-or-compressing-all-images)하는 기능이 향상되었습니다. 압축된 문서 크기가 줄어들었습니다.
+* [문서 `Repair` 메서드](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/repair/)가 개선되었습니다. 이제 주석의 Rect 배열에서 값을 확인하고 수정할 수 있습니다.
+* 시스템.Text.Json 종속성 버전이 업데이트되어 가능한 취약성 CVE-2024-43485를 피할 수 있습니다.
+* PDF 서명 공격 감지가 개선되어 잘못된 긍정 결과를 방지합니다.
 * 리소스 사전을 수정하기 위한 공개 API가 제공되었습니다:
 
 ```csharp
@@ -147,9 +162,9 @@ Aspose.PDF 25.1에서는 다음을 추가했습니다:
 
 ## Aspose.PDF 24.12의 새로운 기능
 
-PDF/X 및 PDF/A 변환을 위한 외부 ICC 프로필 경로를 전달하는 기능은 몇 년 전부터 라이브러리에 존재했으며, PdfFormatConversionOptions.IccProfileFileName 속성으로 활성화되었습니다. 이제 OutputIntent 속성을 채우기 위한 데이터를 OutputIntent 클래스의 객체를 사용하여 전달할 수도 있습니다.
+PDF/X 및 PDF/A 변환을 위한 외부 ICC 프로필 경로를 전달하는 기능은 몇 년 전부터 라이브러리에 존재했으며, PdfFormatConversionOptions.IccProfileFileName 속성으로 활성화되었습니다. 이제 OutputIntent 속성을 채우기 위해 OutputIntent 클래스의 객체를 사용하여 데이터를 전달할 수도 있습니다.
 
-다음 스니펫은 주석 FOGRA39 ICC 프로필을 사용하여 주석 문서를 PDF/X-1로 변환하는 방법을 보여줍니다:
+다음 스니펫은 주석 문서를 PDF/X-1로 변환하는 방법을 보여줍니다:
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPdfToPdfx1UsingCustomIccProfile()
@@ -181,9 +196,9 @@ private static void ConvertPdfToPdfx1UsingCustomIccProfile()
 }
 ```
 
-문서 생성, 변환 및 텍스트 교체를 위한 가장 적합한 글꼴을 찾기 위한 분석기가 추가되었습니다. 가장 적합한 글꼴 검색은 요청된 작업을 수행하기에 충분한 글꼴 정보가 없는 경우 소스 PDF에서 수행됩니다. "가장 적합한" 글꼴은 PDF 글꼴에 대한 정보와 요청된 텍스트 언어 및 문자 집합을 기반으로 환경에 설치된 글꼴 간에서 결정됩니다.
+문서 생성, 변환 및 텍스트 교체를 위한 가장 적합한 글꼴을 찾기 위해 분석기가 추가되었습니다. 가장 적합한 글꼴 검색은 원본 PDF에 요청된 작업을 수행하기에 충분한 글꼴 정보가 없는 경우에 수행됩니다. "가장 적합한" 글꼴은 PDF 글꼴에 대한 정보와 요청된 텍스트 언어 및 문자 집합을 기반으로 환경에 설치된 글꼴 간에서 결정됩니다.
 
-다음 샘플은 텍스트가 빈 사각형으로 변환되는 것을 피하기 위해 PDF에서 PNG로 변환할 때 이를 사용하는 방법을 보여줍니다.
+다음 샘플은 텍스트가 빈 사각형으로 변환되는 것을 피하기 위해 PDF를 PNG로 변환할 때 이를 사용하는 방법을 보여줍니다.
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void PdfToPngWithAnalyzingFonts()
@@ -204,7 +219,7 @@ private static void PdfToPngWithAnalyzingFonts()
 }
 ```
 
-Aspose.PDF 24.12부터 주석 PDF 파일에 텍스트 스탬프를 추가할 때 자동으로 글꼴 크기를 조정할 수 있습니다.
+Aspose.PDF 24.12부터는 주석 PDF 파일에 텍스트 스탬프를 추가할 때 글꼴 크기를 자동으로 조정할 수 있습니다.
 
 다음 코드 스니펫은 주석 PDF 파일에 주석 텍스트 스탬프를 추가하고 스탬프 사각형에 맞게 글꼴 크기를 자동으로 조정하는 방법을 보여줍니다.
 ```csharp
@@ -267,7 +282,7 @@ private static void AutoSetTheFontSizeOfTextStampToFitPage()
 
 ## Aspose.PDF 24.11의 새로운 기능
 
-`PageCollection` 확장 메서드가 추가되어 새 페이지를 추가하거나 삽입할 때 페이지 번호 및 날짜 헤더/바닥글 아티팩트를 업데이트합니다. 페이지 번호 및 날짜 형식에 대한 설정은 PDF 사양에 따라 원본 문서에 저장되어야 하며, Adobe Acrobat에 의해 구현됩니다.
+`PageCollection` 확장 메서드가 추가되어 새 페이지를 추가하거나 삽입할 때 페이지 번호 및 날짜 머리글/바닥글 아티팩트를 업데이트합니다. 페이지 번호 및 날짜 형식에 대한 설정은 PDF 사양에 따라 원본 문서에 저장되어야 하며, Adobe Acrobat에 의해 구현됩니다.
 
 다음 코드 스니펫은 문서에서 페이지 매김을 업데이트하는 방법을 보여줍니다:
 ```csharp
@@ -324,7 +339,7 @@ private static void SignWithManualDigestHashAlgorithm(string cert, string pass)
 }
 ```
 
-`HtmlSaveOptions` 클래스에 새로운 `FontEncodingStrategy` 속성이 추가되었습니다. PDF 사양은 PDF에서 텍스트 콘텐츠를 추출하기 위해 `ToUnicode` 테이블을 사용하는 것을 권장합니다. 그러나 글꼴의 CMap 테이블을 사용하면 특정 유형의 문서에 대해 더 나은 결과를 얻을 수 있습니다. 24.11 버전부터 어떤 테이블을 디코딩에 사용할지 선택할 수 있습니다. 기본적으로 `ToUnicode` 테이블이 사용됩니다.
+`HtmlSaveOptions` 클래스에 새로운 `FontEncodingStrategy` 속성이 추가되었습니다. PDF 사양은 PDF에서 텍스트 콘텐츠를 추출하기 위해 `ToUnicode` 테이블을 사용하는 것을 권장합니다. 그러나 글꼴의 CMap 테이블을 사용하면 특정 유형의 문서에 대해 더 나은 결과를 얻을 수 있습니다. 버전 24.11부터 어떤 테이블을 디코딩에 사용할지 선택할 수 있습니다. 기본적으로 `ToUnicode` 테이블이 사용됩니다.
 
 다음 샘플은 새로운 옵션을 사용하는 방법을 보여줍니다:
 ```csharp
@@ -351,7 +366,7 @@ private static void ConvertPdfToHtmlUsingCMap()
 
 ## Aspose.PDF 24.10의 새로운 기능
 
-타원 곡선 디지털 서명 알고리즘(ECDSA)은 전통적인 알고리즘에 비해 더 작은 키 크기로 강력한 보안을 제공하는 현대 암호화 알고리즘입니다. 24.10 버전부터 ECDSA를 사용하여 PDF 문서에 서명하고 ECDSA 서명을 검증할 수 있게 되었습니다. 디지털 서명을 생성하고 검증하는 데 지원되는 다음 타원 곡선이 있습니다:
+타원 곡선 디지털 서명 알고리즘(ECDSA)은 전통적인 알고리즘에 비해 더 작은 키 크기로 강력한 보안을 제공하는 현대 암호화 알고리즘입니다. 버전 24.10부터 ECDSA를 사용하여 PDF 문서에 서명하고 ECDSA 서명을 검증할 수 있게 되었습니다. 디지털 서명을 생성하고 검증하는 데 지원되는 타원 곡선은 다음과 같습니다:
 * P-256 (secp256r1).
 * P-384 (secp384r1).
 * P-521 (secp521r1).
@@ -361,7 +376,7 @@ private static void ConvertPdfToHtmlUsingCMap()
 
 서명을 생성하는 데 SHA-256 해시 알고리즘이 사용됩니다. ECDSA 서명은 다음 해시 알고리즘을 사용하여 검증할 수 있습니다: SHA-256, SHA-384, SHA-512, SHA3-256, SHA3-384 및 SHA3-512.
 
-서명 및 서명 검증을 위해 일반적인 코드를 사용할 수 있습니다:
+서명 문서와 서명을 검증하는 데 일반적인 코드를 사용할 수 있습니다:
  
 ```cs
 private static void Sign(string cert, string pass)
@@ -449,7 +464,7 @@ private static void AddCroppedImageToPDF()
 
 ## Aspose.PDF 24.9의 새로운 기능
 
-24.9 버전부터 라이브러리가 예외를 발생시킬 때 충돌 보고서를 생성할 수 있게 되었습니다. 충돌 보고서에는 예외 유형, 애플리케이션 제목, Aspose.PDF 버전, OS 버전, 오류 메시지 및 스택 추적에 대한 정보가 포함됩니다.
+버전 24.9부터 라이브러리가 예외를 발생시킬 때 충돌 보고서를 생성할 수 있게 되었습니다. 충돌 보고서에는 예외 유형, 애플리케이션 제목, Aspose.PDF 버전, OS 버전, 오류 메시지 및 스택 추적에 대한 정보가 포함됩니다.
 
 다음 코드 스니펫은 충돌 보고서를 생성하는 일반적인 시나리오를 보여줍니다:
 
@@ -472,7 +487,7 @@ private static void GenerateCrashReportExample()
 }
 ```
 
-PDF 문서 레이어 요소를 추출하고 새로운 PDF 스트림으로 저장하는 기능이 이제 가능합니다. PDF 문서에서 레이어(선택적 콘텐츠 그룹 또는 OCG라고도 함)는 다양한 목적으로 사용되며, 주로 문서 내 콘텐츠의 가시성을 관리하고 제어하는 데 사용됩니다. 이 기능은 디자인, 엔지니어링 및 출판에서 특히 유용합니다. 예를 들어: 청사진 측면, 복잡한 다이어그램 구성 요소, 동일한 콘텐츠의 언어 버전.
+PDF 문서 레이어 요소를 추출하고 새 PDF 스트림에 저장하는 기능이 이제 가능합니다. PDF 문서에서 레이어(선택적 콘텐츠 그룹 또는 OCG라고도 함)는 주로 문서 내 콘텐츠의 가시성을 관리하고 제어하는 데 사용됩니다. 이 기능은 디자인, 엔지니어링 및 출판에서 특히 유용합니다. 예를 들어: 청사진 측면, 복잡한 다이어그램 구성 요소, 동일한 콘텐츠의 언어 버전.
 
 ```cs
 private static void ExtractPdfLayer()
@@ -495,7 +510,7 @@ private static void ExtractPdfLayer()
 }
 ```
 
-`GraphicalPdfComparer` 클래스가 PDF 문서 및 페이지의 그래픽 비교를 위해 추가되었습니다. 그래픽 비교는 문서 페이지 이미지를 다룹니다. 결과는 `ImagesDifference` 객체 또는 원본과 차이가 병합된 이미지를 포함하는 PDF 문서로 반환됩니다. 그래픽 비교는 텍스트나 그래픽 콘텐츠의 미세한 차이가 있는 문서에 가장 유용합니다.
+`GraphicalPdfComparer` 클래스가 PDF 문서 및 페이지의 그래픽 비교를 위해 추가되었습니다. 그래픽 비교는 문서 페이지 이미지를 다룹니다. 결과는 `ImagesDifference` 객체 또는 원본 및 차이점에서 병합된 이미지를 포함하는 PDF 문서로 반환됩니다. 그래픽 비교는 텍스트나 그래픽 콘텐츠의 미세한 차이가 있는 문서에 가장 유용합니다.
 
 다음 코드 스니펫은 두 PDF 문서의 그래픽 비교를 보여주고 차이가 있는 이미지를 결과 PDF 문서에 저장하는 방법을 보여줍니다:
 
@@ -524,7 +539,7 @@ private static void ComparePDFWithCompareDocumentsToPdfMethod()
 }
 ```
 
-파일 형식 HEIC와 Aspose.PDF 통합을 위한 API가 구현되었습니다. HEIC(고효율 이미지 코딩)는 2017년 iOS 11과 함께 Apple이 도입한 현대 이미지 파일 형식으로, iPhone 및 iPad의 기본 이미지 형식입니다.
+FileFormat.HEIC와 Aspose.PDF 통합을 위한 API가 구현되었습니다. HEIC(고효율 이미지 코딩)는 2017년 iOS 11과 함께 Apple이 도입한 현대 이미지 파일 형식으로, iPhone 및 iPad의 기본 이미지 형식입니다.
 
 HEIC 이미지를 PDF로 변환하려면 `FileFormat.HEIC` NuGet 패키지에 대한 참조를 추가하고 다음 코드 스니펫을 사용해야 합니다:
 
@@ -569,7 +584,7 @@ private static void ConvertHEICtoPDF()
 
 PDF 문서를 PDF/A-4 형식으로 변환
 
-24.8 버전부터 PDF 문서를 PDF/A-4로 변환할 수 있게 되었습니다. 표준의 4부는 PDF 2.0을 기반으로 하며, 2020년 말에 발표되었습니다.
+버전 24.8부터 PDF 문서를 PDF/A-4로 변환할 수 있게 되었습니다. 표준의 4부는 PDF 2.0을 기반으로 하며 2020년 말에 발표되었습니다.
 
 다음 코드 스니펫은 입력 문서가 2.0보다 이전 PDF 버전일 때 문서를 PDF/A-4 형식으로 변환하는 방법을 보여줍니다.
 
@@ -618,7 +633,7 @@ private static void FlattenTransparency()
 
 Aspose.PDF for .NET과 함께 PDF 문서 비교
 
-24.7부터 주석 마크와 나란히 출력으로 PDF 문서 콘텐츠를 비교할 수 있게 되었습니다:
+24.7부터 주석 마크 및 나란히 출력으로 PDF 문서 콘텐츠를 비교할 수 있게 되었습니다:
 
 첫 번째 코드 스니펫은 두 PDF 문서의 첫 페이지를 비교하는 방법을 보여줍니다.
 
@@ -703,7 +718,7 @@ plugin.Process(opt);
 
 ## Aspose.PDF 24.6의 새로운 기능
 
-24.6 릴리스부터 태그가 있는 PDF 편집의 일환으로 **Aspose.Pdf.LogicalStructure.Element**에서 다음 메서드가 추가되었습니다:
+24.6 릴리스부터 태그가 있는 PDF 편집의 일환으로 **Aspose.Pdf.LogicalStructure.Element**에서 메서드가 추가되었습니다:
 
 - 태그(이미지, 텍스트 및 링크와 같은 특정 연산자에 태그 추가)
 - InsertChild
@@ -712,7 +727,7 @@ plugin.Process(opt);
 
 또한, 이번 릴리스에서는 저수준 기능을 사용하여 접근 가능한 PDF를 생성할 수 있습니다:
 
-다음 코드 스니펫은 PDF 문서와 그 태그가 있는 콘텐츠를 처리하기 위해 Aspose.PDF 라이브러리를 사용하는 방법을 보여줍니다.
+다음 코드 스니펫은 PDF 문서와 해당 태그 콘텐츠를 처리하기 위해 Aspose.PDF 라이브러리를 사용하는 방법을 보여줍니다.
 
 ```cs
 private static void CreateAnAccessibleDocument()
@@ -824,7 +839,7 @@ private static void LockLayerInPDF()
 
 Aspose.PDF for .NET 라이브러리는 첫 페이지에서 각 레이어를 추출하고 각 레이어를 별도의 파일로 저장할 수 있습니다.
 
-레이어에서 새 PDF를 생성하기 위해 다음 코드 스니펫을 사용할 수 있습니다:
+레이어에서 새 PDF를 생성하려면 다음 코드 스니펫을 사용할 수 있습니다:
 
 ```cs
 private static void ExtractPdfLayer()
@@ -875,7 +890,7 @@ private static void FlattenPdfLayers()
 }
 ```
 
-'Layer.Flatten(bool cleanupContentStream)' 메서드는 선택적 콘텐츠 그룹 마커를 콘텐츠 스트림에서 제거할지 여부를 지정하는 부울 매개변수를 받습니다. cleanupContentStream 매개변수를 false로 설정하면 평면화 프로세스가 빨라집니다.
+'Layer.Flatten(bool cleanupContentStream)' 메서드는 선택적 콘텐츠 그룹 마커를 콘텐츠 스트림에서 제거할지 여부를 지정하는 부울 매개변수를 수락합니다. cleanupContentStream 매개변수를 false로 설정하면 평면화 프로세스가 빨라집니다.
 
 ### PDF 내 모든 레이어를 하나로 병합
 
@@ -886,7 +901,7 @@ Aspose.PDF for .NET 라이브러리는 모든 PDF 레이어 또는 첫 페이지
 - void MergeLayers(string newLayerName);
 - void MergeLayers(string newLayerName, string newOptionalContentGroupId); 
 
-두 번째 매개변수는 선택적 콘텐츠 그룹 마커의 이름을 바꿀 수 있습니다. 기본값은 "oc1" (/OC /oc1 BDC)입니다.
+두 번째 매개변수는 선택적 콘텐츠 그룹 마커의 이름을 변경할 수 있습니다. 기본값은 "oc1" (/OC /oc1 BDC)입니다.
 
 ```cs
 private static void MergePdfLayers()
@@ -1131,7 +1146,7 @@ private static void AddEmptySignatureFieldOnEveryPage()
 
 24.2부터 PDF 파일에서 벡터 데이터를 가져올 수 있습니다.
 
-GraphicsAbsorber가 문서에서 벡터 데이터를 가져오는 기능을 구현했습니다:
+GraphicsAbsorber를 구현하여 문서에서 벡터 데이터를 가져옵니다:
 
 ```cs
 private static void UsingGraphicsAbsorber()
@@ -1186,7 +1201,7 @@ private static void ImportFDFByForm()
 }
 ```
 
-또한 페이지 사전 또는 문서 카탈로그에 대한 접근을 지원합니다.
+또한 페이지 사전 또는 문서 카탈로그에 대한 액세스를 지원합니다.
 
 다음은 DictionaryEditor에 대한 코드 예제입니다:
 
@@ -1292,7 +1307,7 @@ private static void RemoveFromPdfPageDicrionary()
 
 ## Aspose.PDF 23.12의 새로운 기능
 
-양식을 찾고 텍스트를 교체하는 방법은 다음 코드 스니펫을 사용합니다:
+양식을 찾고 다음 코드 스니펫을 사용하여 텍스트를 교체할 수 있습니다:
 
 ```cs
 private static void ReplaceTextInPdfForm()
@@ -1388,7 +1403,7 @@ private static void DeleteSpecifiedForm2()
 }
 ``` 
 
-- 모든 양식을 삭제하는 방법은 다음 코드 스니펫을 사용합니다:
+- 다음 코드 스니펫을 사용하여 모든 양식을 삭제할 수 있습니다:
 
 ```cs
 private static void RemoveAllForms()
@@ -1638,7 +1653,7 @@ private class RowSpanWorker
 
 현재 업데이트는 태그가 있는 PDF에서 태그를 제거하는 세 가지 버전을 제공합니다.
 
-- 문서 요소(documentElement)에서 일부 노드 요소 제거:
+- 문서 요소에서 일부 노드 요소 제거 (루트 트리 요소):
 
 ```cs
 private static void RemoveStructElement()
@@ -1727,7 +1742,7 @@ private static void RemoveTags()
 }
 ```
 
-23.10부터 문자 높이를 측정하는 새로운 기능이 구현되었습니다. 다음 코드를 사용하여 문자의 높이를 측정합니다.
+23.10부터 문자 높이를 측정하는 새로운 기능이 구현되었습니다. 다음 코드를 사용하여 문자 높이를 측정합니다.
 
 ```cs
 private static void DisplayCharacterHeight()
@@ -1752,7 +1767,7 @@ private static void DisplayCharacterHeight()
 
 측정은 문서에 포함된 글꼴을 기반으로 합니다. 치수에 대한 정보가 누락된 경우 이 메서드는 0을 반환합니다.
 
-또한 이번 릴리스에서는 서명된 HASH를 사용하여 PDF에 서명하는 기능이 제공됩니다:
+또한 이번 릴리스에서는 서명된 해시를 사용하여 PDF에 서명하는 기능이 제공됩니다:
 
 ```cs
 private static void SignPdfUsingSignedHash(string certP12, string pfxPassword)
@@ -1825,7 +1840,7 @@ private static void SetPrintScaling()
 
 ## Aspose.PDF 23.9의 새로운 기능
 
-23.9부터 채우기 가능한 필드에서 자식 주석을 제거하는 기능을 지원합니다.
+23.9부터 채우기 가능한 필드에서 자식 주석을 제거하는 기능이 지원됩니다.
 
 ```cs
 private static void RemoveChildAnnotationFromFillableField()
@@ -1851,9 +1866,9 @@ private static void RemoveChildAnnotationFromFillableField()
 
 ## Aspose.PDF 23.8의 새로운 기능
 
-23.8부터 증분 업데이트 감지 추가를 지원합니다.
+23.8부터 증분 업데이트 감지 추가 지원.
 
-PDF 문서에서 증분 업데이트를 감지하는 기능이 추가되었습니다. 이 기능은 문서가 증분 업데이트로 저장된 경우 'true'를 반환하고, 그렇지 않으면 'false'를 반환합니다.
+PDF 문서에서 증분 업데이트를 감지하는 기능이 추가되었습니다. 이 기능은 문서가 증분 업데이트로 저장되었으면 'true'를 반환하고, 그렇지 않으면 'false'를 반환합니다.
 
 ```cs
 private static bool HasIncrementalUpdate()
@@ -1944,7 +1959,7 @@ private static void GetAndSetValueOfMultivalueCheckboxField()
 
 ## Aspose.PDF 23.7의 새로운 기능
 
-Aspose.PDF 23.7부터 도형 추출 추가를 지원합니다:
+Aspose.PDF 23.7부터 도형 추출 추가 지원:
 
 ```cs
 private static void CopyShape()
@@ -1973,7 +1988,7 @@ private static void CopyShape()
 }
 ```
 
-또한 텍스트 추가 시 오버플로우를 감지하는 기능을 지원합니다:
+또한 텍스트 추가 시 오버플로우 감지 기능이 지원됩니다:
 
 ```cs
 private static void FitTextIntoRectangle()
@@ -2020,7 +2035,7 @@ private static void FitTextIntoRectangle()
 
 ## Aspose.PDF 23.6의 새로운 기능
 
-Aspose.PDF 23.6부터 다음 플러그인을 추가하는 기능을 지원합니다:
+Aspose.PDF 23.6부터 다음 플러그인을 추가하는 기능이 지원됩니다:
 
 - Aspose PdfConverter HTML에서 PDF로 
 - Aspose PdfOrganizer 크기 조정 API
@@ -2030,7 +2045,7 @@ Aspose.PdfForm 업데이트
 - 문서의 필드에서 "값"을 CSV 파일로 내보내는 기능 추가
 - 개별 필드에 대한 속성 설정 기능 추가
 
-또한 HTML, Epub 페이지의 제목을 설정하는 기능을 추가합니다:
+또한 HTML, Epub 페이지의 제목을 설정하는 기능이 추가되었습니다:
 
 ```cs
 private static void SetHtmlTitle()
@@ -2064,7 +2079,7 @@ private static void SetHtmlTitle()
 
 ## Aspose.PDF 23.5의 새로운 기능
 
-23.5부터 RedactionAnnotation FontSize 옵션을 추가하는 기능을 지원합니다. 이 작업을 해결하기 위해 다음 코드 스니펫을 사용합니다:
+23.5부터 RedactionAnnotation FontSize 옵션 추가 지원. 이 작업을 해결하기 위해 다음 코드 스니펫을 사용하세요:
 
 ```cs
 private static void AddRedactionAnnotationFontSize() 
@@ -2107,7 +2122,7 @@ Aspose.PDF는 .NET 7 SDK의 출시를 발표했습니다.
 
 ## Aspose.PDF 23.3.1의 새로운 기능
 
-Aspose.PDF 23.3부터 다음 플러그인을 추가하는 기능을 지원합니다:
+Aspose.PDF 23.3부터 다음 플러그인을 추가하는 기능이 지원됩니다:
 
 - Aspose.PdfForm
 - Aspose.PdfConverter PDF에서 HTML로
@@ -2117,7 +2132,7 @@ Aspose.PDF 23.3부터 다음 플러그인을 추가하는 기능을 지원합니
 
 ## Aspose.PDF 23.3의 새로운 기능
 
-23.3 버전에서는 페이지에 삽입할 때 이미지 비율과 해상도를 유지하는 기능이 도입되었습니다. 이 문제를 해결하기 위해 두 가지 방법을 사용할 수 있습니다:
+버전 23.3에서는 페이지에 삽입할 때 이미지 비율과 해상도를 유지하는 기능이 추가되었습니다. 이 문제를 해결하기 위해 두 가지 방법을 사용할 수 있습니다:
 
 ```cs
 private static void InsertImageWithNativeResolutionAsTable()
@@ -2182,27 +2197,27 @@ private static void InsertImageWithNativeResolutionAsParagraph()
 }
 ```
 
-이미지는 크기가 조정된 크기와 원래 해상도로 배치됩니다. FixedWidth 또는 FixedHeight 속성을 IsApplyResolution과 조합하여 설정할 수 있습니다.
+이미지는 크기가 조정된 크기와 기본 해상도로 배치됩니다. FixedWidth 또는 FixedHeight 속성을 IsApplyResolution과 조합하여 설정할 수 있습니다.
 
 
 ## Aspose.PDF 23.1.1의 새로운 기능
 
-Aspose.PDF 23.1.1부터 다음 플러그인을 추가하는 기능을 지원합니다:
+Aspose.PDF 23.1.1부터 다음 플러그인을 추가하는 기능이 지원됩니다:
 
 - Aspose.PdfOrganizer 플러그인
 - Aspose.PdfExtractor 플러그인
 
 ## Aspose.PDF 23.1의 새로운 기능
 
-23.1 버전부터 PrinterMark 주석을 생성하는 기능을 지원합니다.
+23.1 버전부터 PrinterMark 주석을 생성하는 기능이 지원됩니다.
 
-프린터 마크는 다중 판 작업의 구성 요소를 식별하고 생산 중 일관된 출력을 유지하는 데 도움을 주기 위해 페이지에 추가된 그래픽 기호 또는 텍스트입니다. 인쇄 산업에서 일반적으로 사용되는 예로는:
+프린터 마크는 다중 판 작업의 구성 요소를 식별하고 생산 중 일관된 출력을 유지하는 데 도움을 주기 위해 페이지에 추가된 그래픽 기호 또는 텍스트입니다. 인쇄 산업에서 일반적으로 사용되는 예는 다음과 같습니다:
 
 - 판 정렬을 위한 등록 목표
 - 색상 및 잉크 밀도를 측정하기 위한 회색 램프 및 색상 막대
 - 출력 매체가 잘릴 위치를 나타내는 컷 마크
 
-색상 및 잉크 밀도를 측정하기 위한 색상 막대 옵션의 예를 보여드리겠습니다. 기본 추상 클래스 PrinterMarkAnnotation에서 자식 ColorBarAnnotation이 구현되어 있습니다. 예제를 확인해 보겠습니다:
+색상 및 잉크 밀도를 측정하기 위한 색상 막대 옵션의 예를 보여드리겠습니다. 기본 추상 클래스 PrinterMarkAnnotation와 그로부터 자식 ColorBarAnnotation이 있으며, 이미 이러한 줄무늬를 구현하고 있습니다. 예제를 확인해 보겠습니다:
 
 ```cs
 private static void AddPrinterMarkAnnotation()
@@ -2257,7 +2272,7 @@ private static void SavePdfVectorGraphicToSvg()
 
 ## Aspose.PDF 22.12의 새로운 기능
 
-이번 릴리스에서는 PDF를 DICOM 이미지로 변환하는 기능을 지원합니다.
+이번 릴리스부터 PDF를 DICOM 이미지로 변환하는 기능이 지원됩니다.
 
 ```cs
 private static void PdfToDicom()
@@ -2277,7 +2292,7 @@ private static void PdfToDicom()
 
 ## Aspose.PDF 22.09의 새로운 기능
 
-22.09부터 서명에서 주제 제목의 순서를 수정하는 속성을 추가하는 기능을 지원합니다 (E=, CN=, O=, OU=, ).
+22.09부터 서명에서 주제 제목의 순서를 수정하는 속성을 추가하는 기능이 지원됩니다 (E=, CN=, O=, OU=).
 
 ```cs
 private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath, string password)
@@ -2313,10 +2328,10 @@ private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath,
 
 ## Aspose.PDF 22.6의 새로운 기능
 
-22.5부터 PDF에서 SubScript 및 SuperScript 텍스트를 추출하는 기능을 지원합니다.
+22.5부터 PDF에서 SubScript 및 SuperScript 텍스트를 추출하는 기능이 지원됩니다.
 
-PDF 문서에 H2O와 같은 SubScript 및 SuperScript 텍스트가 포함된 경우 PDF에서 텍스트를 추출할 때 해당 서식 정보도 추출해야 합니다(추출된 일반 텍스트에서).
-PDF에 기울임꼴 텍스트가 포함된 경우에도 추출된 콘텐츠에 포함되어야 합니다.
+PDF 문서에 H2O와 같은 SubScript 및 SuperScript 텍스트가 포함되어 있는 경우 PDF에서 텍스트를 추출할 때 해당 서식 정보도 추출해야 합니다 (추출된 일반 텍스트에서).
+PDF에 기울임꼴 텍스트가 포함되어 있는 경우에도 추출된 콘텐츠에 포함되어야 합니다.
 
 ```cs
 private static void ExtractTextSuperscript()
@@ -2399,7 +2414,7 @@ private static void ConvertPdfToOds()
 
 ## Aspose.PDF 22.2의 새로운 기능
 
-22.2 버전부터 LTV와 함께 PdfFileSignature를 사용하여 문서에 서명할 수 있으며, SHA1에서 SHA256으로 해싱을 변경할 수 있습니다.
+22.2 버전부터 LTV와 함께 PdfFileSignature를 사용하여 문서에 서명할 수 있으며, 해싱을 SHA1에서 SHA256으로 변경할 수 있습니다.
 
 ```csharp
 private static void SignPdfWithSha256(string pfxFilePath, string password)
@@ -2460,9 +2475,9 @@ private static void EncriptPdfNonlatinPassCharacters()
 
 ### 숨겨진 텍스트를 감지하는 방법은?
 
-TextState.Invisible을 사용하여 렌더링 모드 설정에서 텍스트의 가시성에 대한 정보를 얻으십시오.
+TextState.Invisible을 사용하여 렌더링 모드 설정에서 텍스트의 비가시성에 대한 정보를 가져오세요.
 
-테스트에 사용한 코드는 다음과 같습니다:
+테스트를 위해 다음 코드를 사용했습니다:
 
 ```csharp
 private static void DisplayTextInvisibility()
@@ -2518,7 +2533,7 @@ private static void GetPdfLayers()
 
 ## Aspose.PDF 21.9의 새로운 기능
 
-Aspose.PDF for .NET을 사용하여 서명 영역의 레이블의 배경색과 글꼴 색상을 사용자 정의합니다.
+서명 영역의 레이블 텍스트 색상과 서명 외관의 배경 색상을 사용자 정의할 수 있습니다.
 
 ```csharp
 private static void SignPdfWithCustomColorsInAppearance(string pfxFilePath, string password)
@@ -2589,7 +2604,7 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 
 ### 매개변수를 사용하여 XML 및 XLS 기반 PDF 생성
 
-XSL 매개변수를 추가하려면 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)를 생성하고 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions)에서 속성으로 설정해야 합니다. 다음 스니펫은 위에서 설명한 샘플 파일과 함께 이 클래스를 사용하는 방법을 보여줍니다.
+XSL 매개변수를 추가하려면 자체 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)를 생성하고 [XslFoLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/xslfoloadoptions)에서 속성으로 설정해야 합니다. 다음 스니펫은 위에서 설명한 샘플 파일과 함께 이 클래스를 사용하는 방법을 보여줍니다.
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()
@@ -2648,7 +2663,7 @@ private static void HideImageInPdf()
 
 ### PDF에서 설명/리소스에서 글꼴 전체 이름을 추출하는 방법은?
 
-Font 클래스의 BaseFont 속성을 사용하여 접두사가 있는 전체 글꼴을 얻을 수 있습니다.
+Font 클래스의 BaseFont 속성을 사용하여 접두사가 있는 전체 글꼴을 가져올 수 있습니다.
 
 ```csharp
 private static void DisplayFontFullNames()
@@ -2676,7 +2691,7 @@ private static void DisplayFontFullNames()
 
 ### 이미지를 병합하는 API 추가
 
-Aspose.PDF 21.4에서는 이미지를 결합할 수 있습니다. 다음 코드 스니펫을 따르십시오:
+Aspose.PDF 21.4에서는 이미지를 결합할 수 있습니다. 다음 코드 스니펫을 따르세요:
 
 ```csharp
 private static void MergeAsJpeg()
@@ -2749,7 +2764,7 @@ private static void MergeAsTiff()
 
 ### Azure 정보 보호 감지를 위한 속성 공개
 
-다음 코드 스니펫을 사용하여 Azure 정보 보호로 보호된 PDF 파일의 암호화된 페이로드에 접근할 수 있어야 합니다:
+다음 코드 스니펫을 사용하여 Azure 정보 보호로 보호된 PDF 파일의 암호화된 페이로드에 액세스할 수 있어야 합니다:
 
 ```csharp
 private static void AzureInformationProtection()
@@ -2775,11 +2790,11 @@ private static void AzureInformationProtection()
 
 ## Aspose.PDF 21.1의 새로운 기능
 
-### TextFragment의 배경색을 검색하는 기능 추가
+### TextFragment의 배경 색상을 검색하는 지원 추가
 
-이 버전의 Aspose.PDF에서는 배경색을 검색하는 기능이 제공됩니다. TextFragmentAbsorber 객체의 옵션에서 searchOptions.SearchForTextRelatedGraphics = true;를 지정해야 합니다.
+이 버전의 Aspose.PDF에서는 배경 색상을 검색하는 기능이 제공됩니다. TextFragmentAbsorber 객체의 옵션에서 searchOptions.SearchForTextRelatedGraphics = true;를 지정해야 합니다.
 
-다음 코드를 고려하십시오:
+다음 코드를 고려하세요:
 
 ```csharp
 private static void DisplayPdfTextBackgroundColor()
