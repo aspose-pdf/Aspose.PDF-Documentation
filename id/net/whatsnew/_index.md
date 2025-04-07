@@ -88,7 +88,7 @@ Di Aspose.PDF 25.3 kami telah menambahkan:
 * [Artefak penomoran Bates](https://docs.aspose.com/pdf/id/net/artifacts/#adding-bates-numbering-artifact).
 * [Pengaturan posisi](https://docs.aspose.com/pdf/id/net/create-tagged-pdf/#adjust-position-of-text-structure) untuk pembuatan elemen bertag.
 * Kemampuan untuk memverifikasi [batas bentuk grafis](https://docs.aspose.com/pdf/id/net/aspose-pdf-drawing-graph-shapes-bounds-check/) saat menambahkannya ke halaman PDF.
-> Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.3](https://releases.aspose.com/pdf/id/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+> Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
 
 **Peningkatan Notable Lainnya**
 
@@ -103,7 +103,7 @@ Di Aspose.PDF 25.2 kami telah menambahkan:
 * [opsi](https://docs.aspose.com/pdf/id/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) untuk menghindari pemanggilan dua kali dari delegasi CustomSignHash selama penandatanganan.
 * metode baru `GetSignatureNames()` untuk mendapatkan informasi tentang [tanda tangan digital](https://docs.aspose.com/pdf/id/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) PDF.
 * kemungkinan untuk membuat [TextBoxField](https://docs.aspose.com/pdf/id/net/create-form/#adding-radiobuttonfield) dengan beberapa anotasi widget.
-> Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.2](https://releases.aspose.com/pdf/id/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
+> Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
 **Peningkatan Notable Lainnya**
 
@@ -157,7 +157,7 @@ Di Aspose.PDF 25.1 kami telah menambahkan:
 * kemungkinan untuk memvalidasi tanda tangan PDF menggunakan Server Otoritas Sertifikat (CA).
 * validasi tanda tangan PDF lintas platform menggunakan algoritma hashing SHA-3.
 
-Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.1](https://releases.aspose.com/pdf/id/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) halaman.
+Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) halaman.
 
 
 ## Apa yang baru di Aspose.PDF 24.12

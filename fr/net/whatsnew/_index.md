@@ -88,7 +88,7 @@ Dans Aspose.PDF 25.3, nous avons ajouté :
 * [Artifacts de numérotation Bates](https://docs.aspose.com/pdf/fr/net/artifacts/#adding-bates-numbering-artifact).
 * [Paramètres de position](https://docs.aspose.com/pdf/fr/net/create-tagged-pdf/#adjust-position-of-text-structure) pour la création d'éléments étiquetés.
 * Capacité à vérifier les [limites des formes graphiques](https://docs.aspose.com/pdf/fr/net/aspose-pdf-drawing-graph-shapes-bounds-check/) lors de leur ajout à la page PDF.
-> Des informations détaillées sur les changements et des exemples d'utilisation peuvent être trouvés sur la page des [Notes de version d'Aspose.PDF 25.3](https://releases.aspose.com/pdf/fr/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+> Des informations détaillées sur les changements et des exemples d'utilisation peuvent être trouvés sur la page des [Notes de version d'Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
 
 **Autres améliorations notables**
 
@@ -103,7 +103,7 @@ Dans Aspose.PDF 25.2, nous avons ajouté :
 * [une option](https://docs.aspose.com/pdf/fr/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) pour éviter d'appeler deux fois le délégué CustomSignHash lors de la signature.
 * nouvelle méthode `GetSignatureNames()` pour obtenir des informations sur les [signatures numériques](https://docs.aspose.com/pdf/fr/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) du PDF.
 * possibilité de créer un [TextBoxField](https://docs.aspose.com/pdf/fr/net/create-form/#adding-radiobuttonfield) avec plusieurs annotations de widget.
-> Des informations détaillées sur les changements et des exemples d'utilisation peuvent être trouvés sur la page des [Notes de version d'Aspose.PDF 25.2](https://releases.aspose.com/pdf/fr/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
+> Des informations détaillées sur les changements et des exemples d'utilisation peuvent être trouvés sur la page des [Notes de version d'Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
 **Autres améliorations notables**
 
@@ -157,7 +157,7 @@ Dans Aspose.PDF 25.1, nous avons ajouté :
 * possibilité de valider une signature PDF en utilisant un serveur d'autorité de certification (CA).
 * validation de signature PDF multiplateforme utilisant des algorithmes de hachage SHA-3.
 
-Des informations détaillées sur les changements et des exemples d'utilisation peuvent être trouvés sur la page des [Notes de version d'Aspose.PDF 25.1](https://releases.aspose.com/pdf/fr/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
+Des informations détaillées sur les changements et des exemples d'utilisation peuvent être trouvés sur la page des [Notes de version d'Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
 
 ## Quoi de neuf dans Aspose.PDF 24.12
 

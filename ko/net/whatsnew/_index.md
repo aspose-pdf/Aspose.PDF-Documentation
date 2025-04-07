@@ -88,7 +88,7 @@ Aspose.PDF 25.3에서는 다음을 추가했습니다:
 * [베이츠 번호 매기기 아티팩트](https://docs.aspose.com/pdf/ko/net/artifacts/#adding-bates-numbering-artifact).
 * 태그 요소 생성을 위한 [위치 설정](https://docs.aspose.com/pdf/ko/net/create-tagged-pdf/#adjust-position-of-text-structure).
 * PDF 페이지에 추가할 때 [그래픽 모양의 경계](https://docs.aspose.com/pdf/ko/net/aspose-pdf-drawing-graph-shapes-bounds-check/)를 검증하는 기능.
-> 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.3 릴리스 노트](https://releases.aspose.com/pdf/ko/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/) 페이지에서 확인할 수 있습니다.
+> 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.3 릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/) 페이지에서 확인할 수 있습니다.
 
 **기타 주목할 만한 개선 사항**
 
@@ -103,7 +103,7 @@ Aspose.PDF 25.2에서는 다음을 추가했습니다:
 * 서명 중 CustomSignHash 대리자의 두 번 호출을 피하는 [옵션](https://docs.aspose.com/pdf/ko/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function).
 * PDF의 [디지털 서명](https://docs.aspose.com/pdf/ko/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures)에 대한 정보를 얻기 위한 새로운 `GetSignatureNames()` 메서드.
 * 여러 위젯 주석이 있는 [TextBoxField](https://docs.aspose.com/pdf/ko/net/create-form/#adding-radiobuttonfield) 생성 가능성.
-> 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.2 릴리스 노트](https://releases.aspose.com/pdf/ko/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) 페이지에서 확인할 수 있습니다.
+> 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.2 릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) 페이지에서 확인할 수 있습니다.
 
 **기타 주목할 만한 개선 사항**
 
@@ -157,7 +157,7 @@ Aspose.PDF 25.1에서는 다음을 추가했습니다:
 * 인증 기관(CA) 서버를 사용하여 PDF 서명을 검증하는 가능성.
 * SHA-3 해싱 알고리즘을 사용한 크로스 플랫폼 PDF 서명 검증.
 
-변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.1 릴리스 노트](https://releases.aspose.com/pdf/ko/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) 페이지에서 확인할 수 있습니다.
+변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.1 릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) 페이지에서 확인할 수 있습니다.
 
 
 ## Aspose.PDF 24.12의 새로운 기능

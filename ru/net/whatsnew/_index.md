@@ -88,7 +88,7 @@ lastmod: "2025-01-31"
 * [Артефакты нумерации Бейтса](https://docs.aspose.com/pdf/ru/net/artifacts/#adding-bates-numbering-artifact).
 * [Настройки позиции](https://docs.aspose.com/pdf/ru/net/create-tagged-pdf/#adjust-position-of-text-structure) для создания помеченных элементов.
 * Возможность проверки [границ графических фигур](https://docs.aspose.com/pdf/ru/net/aspose-pdf-drawing-graph-shapes-bounds-check/) при добавлении их на страницу PDF.
-> Подробную информацию об изменениях и примеры использования можно найти на странице [Примечания к релизу Aspose.PDF 25.3](https://releases.aspose.com/pdf/ru/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+> Подробную информацию об изменениях и примеры использования можно найти на странице [Примечания к релизу Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
 
 **Другие заметные улучшения**
 
@@ -103,7 +103,7 @@ lastmod: "2025-01-31"
 * [опцию](https://docs.aspose.com/pdf/ru/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) для избежания двойного вызова делегата CustomSignHash во время подписания.
 * новый метод `GetSignatureNames()` для получения информации о [цифровых подписях](https://docs.aspose.com/pdf/ru/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) PDF.
 * возможность создания [TextBoxField](https://docs.aspose.com/pdf/ru/net/create-form/#adding-radiobuttonfield) с несколькими аннотациями виджетов.
-> Подробную информацию об изменениях и примеры использования можно найти на странице [Примечания к релизу Aspose.PDF 25.2](https://releases.aspose.com/pdf/ru/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
+> Подробную информацию об изменениях и примеры использования можно найти на странице [Примечания к релизу Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
 **Другие заметные улучшения**
 
@@ -157,7 +157,7 @@ private static void AddingNewExtGState()
 * возможность проверки цифровой подписи PDF с использованием сервера удостоверяющего центра (CA).
 * кроссплатформенную проверку цифровой подписи PDF с использованием алгоритмов хеширования SHA-3.
 
-Подробную информацию об изменениях и примеры использования можно найти на странице [Примечания к релизу Aspose.PDF 25.1](https://releases.aspose.com/pdf/ru/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
+Подробную информацию об изменениях и примеры использования можно найти на странице [Примечания к релизу Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
 
 ## Что нового в Aspose.PDF 24.12
 

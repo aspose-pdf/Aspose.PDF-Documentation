@@ -88,7 +88,7 @@ Aspose.PDF 25.3では、以下を追加しました：
 * [ベイツ番号のアーティファクト](https://docs.aspose.com/pdf/ja/net/artifacts/#adding-bates-numbering-artifact)。
 * タグ付き要素の作成のための[位置設定](https://docs.aspose.com/pdf/ja/net/create-tagged-pdf/#adjust-position-of-text-structure)。
 * PDFページに追加する際の[グラフィカルシェイプの境界を検証する](https://docs.aspose.com/pdf/ja/net/aspose-pdf-drawing-graph-shapes-bounds-check/)機能。
-> 変更の詳細情報と使用例については、[Aspose.PDF 25.3リリースノート](https://releases.aspose.com/pdf/ja/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/)ページをご覧ください。
+> 変更の詳細情報と使用例については、[Aspose.PDF 25.3リリースノート](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/)ページをご覧ください。
 
 **その他の注目すべき強化**
 
@@ -103,7 +103,7 @@ Aspose.PDF 25.2では、以下を追加しました：
 * 署名中にCustomSignHashデリゲートの二重呼び出しを回避するための[オプション](https://docs.aspose.com/pdf/ja/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function)。
 * PDFの[digital signatures](https://docs.aspose.com/pdf/ja/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures)に関する情報を取得するための新しい`GetSignatureNames()`メソッド。
 * 複数のウィジェット注釈を持つ[TextBoxField](https://docs.aspose.com/pdf/ja/net/create-form/#adding-radiobuttonfield)の作成の可能性。
-> 変更の詳細情報と使用例については、[Aspose.PDF 25.2リリースノート](https://releases.aspose.com/pdf/ja/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/)ページをご覧ください。
+> 変更の詳細情報と使用例については、[Aspose.PDF 25.2リリースノート](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/)ページをご覧ください。
 
 **その他の注目すべき強化**
 
@@ -157,7 +157,7 @@ Aspose.PDF 25.1では、以下を追加しました：
 * 証明書機関（CA）サーバーを使用してPDF署名を検証する機能。
 * SHA-3ハッシュアルゴリズムを使用したクロスプラットフォームPDF署名検証。
 
-変更の詳細情報と使用例については、[Aspose.PDF 25.1リリースノート](https://releases.aspose.com/pdf/ja/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/)ページをご覧ください。
+変更の詳細情報と使用例については、[Aspose.PDF 25.1リリースノート](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/)ページをご覧ください。
 
 ## Aspose.PDF 24.12の新機能
 
