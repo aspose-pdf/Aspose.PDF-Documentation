@@ -94,7 +94,6 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
-
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetAllAttachments()
@@ -148,7 +147,6 @@ private static void GetAllAttachments()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetAllAttachments()
@@ -207,7 +205,6 @@ In order to get an individual attachment, we can specify the index of attachment
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
-
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetIndividualAttachment()
@@ -252,7 +249,6 @@ private static void GetIndividualAttachment()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetIndividualAttachment()
@@ -301,7 +297,6 @@ In addition to the Document object’s EmbeddedFiles collection, Attachments can
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
-
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ViewAttachmentsInFileAttachmentAnnotations()
@@ -333,7 +328,6 @@ private static void ViewAttachmentsInFileAttachmentAnnotations()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ViewAttachmentsInFileAttachmentAnnotations()
