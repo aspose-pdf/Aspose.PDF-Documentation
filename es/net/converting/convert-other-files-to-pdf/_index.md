@@ -174,7 +174,7 @@ Aspose.PDF for .NET proporciona la funcionalidad para crear un documento PDF bas
 
 El siguiente fragmento de código muestra cómo usar esta funcionalidad con la biblioteca Aspose.PDF:
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Convertir Markdown a PDF</em></strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong>Convertir Markdown a PDF</strong></a>
 
 1. Crea una instancia de la clase [MdLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/mdloadoptions/) .
 2. Crea una instancia de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) mencionando el nombre del archivo fuente y las opciones.
