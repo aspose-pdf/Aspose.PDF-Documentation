@@ -174,7 +174,7 @@ Aspose.PDF for .NET은 입력 [Markdown](https://daringfireball.net/projects/mar
 
 다음 코드 스니펫은 Aspose.PDF 라이브러리와 함께 이 기능을 사용하는 방법을 보여줍니다:
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Markdown을 PDF로 변환하기</strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Markdown을 PDF로 변환하기</em></strong></a>
 
 1. [MdLoadOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/mdloadoptions/) 클래스의 인스턴스를 생성합니다.
 2. 소스 파일 이름과 옵션을 언급하여 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 인스턴스를 생성합니다.
