@@ -174,7 +174,7 @@ Aspose.PDF for .NET menyediakan fungsionalitas untuk membuat dokumen PDF berdasa
 
 Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini dengan pustaka Aspose.PDF:
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Mengonversi Markdown ke PDF</em></strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong>Mengonversi Markdown ke PDF</strong></a>
 
 1. Buat instance dari kelas [MdLoadOptions ](https://reference.aspose.com/pdf/id/net/aspose.pdf/mdloadoptions/) .
 2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.

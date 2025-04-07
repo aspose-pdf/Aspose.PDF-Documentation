@@ -174,7 +174,7 @@ Aspose.PDF for .NET предоставляет функциональность 
 
 Следующий фрагмент кода показывает, как использовать эту функциональность с библиотекой Aspose.PDF:
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Конвертация Markdown в PDF</em></strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong>Конвертация Markdown в PDF</strong></a>
 
 1. Создайте экземпляр класса [MdLoadOptions ](https://reference.aspose.com/pdf/ru/net/aspose.pdf/mdloadoptions/) .
 2. Создайте экземпляр класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с указанием имени исходного файла и параметров.
