@@ -5,7 +5,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /es/net/working-with-pdf-printing-facades/
-description: Esta sección explica cómo imprimir archivos PDF con Aspose.PDF Facades utilizando la clase PdfFileEditor.
+description: Esta sección explica cómo imprimir archivos PDF con Aspose.PDF Fachadas utilizando la clase PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false
 ---
@@ -15,7 +15,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Working with PDF printing - Facades",
     "alternativeHeadline": "Enhancing PDF Printing Capabilities with C#",
-    "abstract": "Aspose.PDF for .NET La función de Fachadas simplifica la impresión de PDF con un control mejorado sobre la configuración de la impresora y los formatos de salida. Los usuarios pueden imprimir documentos sin problemas en impresoras predeterminadas o virtuales, definir diseños de página e incluso gestionar trabajos de impresión en modos simplex o dúplex, mientras que opciones como imprimir en escala de grises y ocultar diálogos de impresión aumentan su versatilidad. Esta funcionalidad optimiza significativamente los flujos de trabajo de impresión para documentos PDF, lo que la hace ideal para desarrolladores y usuarios que buscan soluciones eficientes de gestión de documentos.",
+    "abstract": "Aspose.PDF for .NET La función de Fachadas simplifica la impresión de PDF con un control mejorado sobre la configuración de la impresora y los formatos de salida. Los usuarios pueden imprimir documentos sin problemas en impresoras predeterminadas o virtuales, definir diseños de página e incluso gestionar trabajos de impresión en modos simplex o dúplex, mientras que opciones como imprimir en escala de grises y ocultar diálogos de impresión añaden versatilidad. Esta funcionalidad optimiza significativamente los flujos de trabajo de impresión para documentos PDF, haciéndolo ideal para desarrolladores y usuarios que buscan soluciones eficientes de gestión de documentos.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1885",
+    "wordcount": "4303",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,12 +70,12 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/working-with-pdf-printing-facades/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-07",
     "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulta la siguiente sección para usuarios y desarrolladores avanzados."
 }
 </script>
 
-## Imprimir archivo PDF en impresora predeterminada utilizando configuraciones de impresora y página
+## Imprimir archivo PDF en la impresora predeterminada utilizando configuraciones de impresora y página
 
 Primero, el documento se convierte en imagen y luego se imprime en la impresora. Crea una instancia de la clase [PdfViewer](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer), que permite imprimir un archivo PDF en la impresora predeterminada, utiliza el método [BindPdf](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer/bindpdf/) para abrir el documento en él y cambia las configuraciones necesarias. Este ejemplo utiliza formato A4, orientación vertical. En [PrinterSettings](https://reference.aspose.com/pdf/es/net/aspose.pdf.printing/printersettings/), primero que nada, se debe establecer el nombre de la impresora a la que se enviará la impresión. De lo contrario, se imprimirá en la impresora predeterminada. A continuación, indica el número requerido de copias.
 
@@ -342,7 +342,7 @@ private static void PrintingPDFToSoftPrinter()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Ocultar diálogo de impresión
+## Ocultar el diálogo de impresión
 
 Aspose.PDF for .NET admite ocultar el diálogo de impresión. Para esto, utiliza la propiedad [PrintPageDialog](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
 
@@ -629,7 +629,7 @@ private static void PrintingPDFToSoftPrinter()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Comprobación del estado del trabajo de impresión
+## Comprobando el estado del trabajo de impresión
 
 Un archivo PDF se puede imprimir en una impresora física así como en el Microsoft XPS Document Writer, sin mostrar un diálogo de impresión, utilizando la clase [PdfViewer](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer). Al imprimir archivos PDF grandes, el proceso puede tardar mucho tiempo, por lo que el usuario puede no estar seguro de si el proceso de impresión se completó o encontró un problema. Para determinar el estado de un trabajo de impresión, utiliza la propiedad [PrintStatus](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer/printstatus/). El siguiente fragmento de código muestra cómo imprimir el archivo PDF en un archivo XPS y obtener el estado de impresión.
 
@@ -970,6 +970,78 @@ private static void PrintingPagesInSimplexAndDuplexMode()
 
     // Run the first print job
     viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Imprimir múltiples documentos PDF en un solo trabajo de impresión
+
+A veces, es necesario imprimir múltiples documentos relacionados juntos como un solo trabajo de impresión. Esto asegura que, especialmente con impresoras de red remotas, estos documentos no se mezclen con la salida de otros usuarios. Aspose.PDF admite la impresión de cualquier número de documentos en un solo trabajo de impresión con configuraciones de impresora compartidas a través de los métodos estáticos `PrintDocuments` de la clase [PdfViewer](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer). Los documentos a imprimir pueden proporcionarse como rutas de archivo, flujos de documentos o objetos [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+
+{{% alert color="primary" %}}
+
+Al imprimir múltiples documentos, se ignora la propiedad [PrinterSettings.PrintRange](https://reference.aspose.com/pdf/es/net/aspose.pdf.printing/printersettings/printrange/) y todos los documentos se imprimen en su totalidad.
+
+{{% /alert %}}
+
+{{< tabs tabID="9" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingMultipleDocumentsInSingleJob()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Paths to documents to be printed
+    var path1 = dataDir + "PrintDocument.pdf";
+    var path2 = dataDir + "Print-PageRange.pdf";
+    var path3 = dataDir + "35925_1_3.xps";
+    
+    // Set up printer and page settings
+    var printDocument = new PrintDocument();
+    Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
+    printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
+    
+    Aspose.Pdf.Printing.PageSettings pageSettings = new Aspose.Pdf.Printing.PageSettings();
+    pageSettings.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+    pageSettings.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+    
+    // Print multiple documents in a single print job
+    Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingMultipleDocumentsInSingleJob()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Paths to documents to be printed
+    var path1 = dataDir + "PrintDocument.pdf";
+    var path2 = dataDir + "Print-PageRange.pdf";
+    var path3 = dataDir + "35925_1_3.xps";
+    
+    // Set up printer and page settings
+    var printDocument = new PrintDocument();
+    Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
+    {
+        PrinterName = printDocument.PrinterSettings.PrinterName
+    };
+    
+    Aspose.Pdf.Printing.PageSettings pageSettings = new Aspose.Pdf.Printing.PageSettings
+    {
+        PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
+        Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
+    }
+    
+    // Print multiple documents in a single print job
+    Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);
 }
 ```
 {{< /tab >}}

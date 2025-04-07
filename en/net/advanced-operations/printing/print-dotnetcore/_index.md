@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "print PDF, .NET Core, convert PDF to XPS, print queue, Aspose.PDF, paper source by PDF page size, print dialog presets, page scaling, document printing, local printer",
-    "wordcount": "606",
+    "wordcount": "1343",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",

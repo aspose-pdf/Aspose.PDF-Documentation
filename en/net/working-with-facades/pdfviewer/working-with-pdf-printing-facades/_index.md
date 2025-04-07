@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1885",
+    "wordcount": "4254",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",

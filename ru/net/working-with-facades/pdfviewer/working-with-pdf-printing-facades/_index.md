@@ -15,7 +15,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Working with PDF printing - Facades",
     "alternativeHeadline": "Enhancing PDF Printing Capabilities with C#",
-    "abstract": "Aspose.PDF for .NET Функция фасадов упрощает печать PDF с улучшенным контролем над настройками принтера и форматами вывода. Пользователи могут без проблем печатать документы на стандартные или виртуальные принтеры, определять макеты страниц и даже управлять заданиями на печать в одностороннем или двустороннем режиме, в то время как такие опции, как печать в градациях серого и скрытие диалогов печати, добавляют универсальности. Эта функциональность значительно оптимизирует рабочие процессы печати для PDF-документов, что делает ее идеальной для разработчиков и пользователей, ищущих эффективные решения для управления документами.",
+    "abstract": "Aspose.PDF for .NET Функция фасадов упрощает печать PDF с улучшенным контролем над настройками принтера и форматами вывода. Пользователи могут без проблем печатать документы на стандартные или виртуальные принтеры, определять макеты страниц и даже управлять заданиями на печать в одностороннем или двустороннем режимах, в то время как такие опции, как печать в градациях серого и скрытие диалогов печати, добавляют универсальности. Эта функциональность значительно оптимизирует рабочие процессы печати для PDF-документов, что делает ее идеальной для разработчиков и пользователей, стремящихся к эффективным решениям для управления документами.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1885",
+    "wordcount": "4178",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,7 +70,7 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/working-with-pdf-printing-facades/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-07",
     "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков."
 }
 </script>
@@ -247,7 +247,7 @@ private static void PrintingPDFDisplayPrintDialog()
 
 ## Печать PDF на виртуальный принтер
 
-Существуют принтеры, которые печатают в файл. Чтобы использовать их, установите имя виртуального принтера и, аналогично предыдущему примеру, сделайте настройки.
+Существуют принтеры, которые печатают в файл. Чтобы использовать их, установите имя виртуального принтера и, аналогично предыдущему примеру, настройте параметры.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -764,7 +764,7 @@ private static void CheckingPrintJobStatus()
 
 ## Печать страниц в одностороннем и двустороннем режиме
 
-В рамках конкретного задания на печать страницы PDF-документа могут быть напечатаны либо в двустороннем, либо в одностороннем режиме, но вы не можете напечатать некоторые страницы в одностороннем, а некоторые страницы в двустороннем режиме в рамках одного задания на печать. Однако для выполнения этого требования можно использовать различные диапазоны страниц и объект PrintingJobSettings. Следующий фрагмент кода показывает, как напечатать некоторые страницы PDF-файла в одностороннем и некоторые страницы в двустороннем режиме.
+В рамках конкретного задания на печать страницы PDF-документа могут быть напечатаны либо в двустороннем, либо в одностороннем режиме, но вы не можете напечатать некоторые страницы в одностороннем, а некоторые страницы в двустороннем режиме в рамках одного задания на печать. Однако для выполнения этого требования можно использовать разные диапазоны страниц и объект PrintingJobSettings. Следующий фрагмент кода показывает, как напечатать некоторые страницы PDF-файла в одностороннем, а некоторые страницы в двустороннем режиме.
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -970,6 +970,78 @@ private static void PrintingPagesInSimplexAndDuplexMode()
 
     // Run the first print job
     viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Печать нескольких PDF-документов в одном задании на печать
+
+Иногда необходимо напечатать несколько связанных документов вместе в одном задании на печать. Это гарантирует, что, особенно при использовании удаленных сетевых принтеров, эти документы не будут перемешаны с выводом от других пользователей. Aspose.PDF поддерживает печать любого количества документов в одном задании на печать с общими настройками принтера через статические методы `PrintDocuments` класса [PdfViewer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer). Документы, которые необходимо напечатать, могут быть предоставлены в виде путей к файлам, потоков документов или объектов [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+
+{{% alert color="primary" %}}
+
+При печати нескольких документов свойство [PrinterSettings.PrintRange](https://reference.aspose.com/pdf/ru/net/aspose.pdf.printing/printersettings/printrange/) игнорируется, и все документы печатаются полностью.
+
+{{% /alert %}}
+
+{{< tabs tabID="9" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingMultipleDocumentsInSingleJob()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Paths to documents to be printed
+    var path1 = dataDir + "PrintDocument.pdf";
+    var path2 = dataDir + "Print-PageRange.pdf";
+    var path3 = dataDir + "35925_1_3.xps";
+    
+    // Set up printer and page settings
+    var printDocument = new PrintDocument();
+    Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
+    printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
+    
+    Aspose.Pdf.Printing.PageSettings pageSettings = new Aspose.Pdf.Printing.PageSettings();
+    pageSettings.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+    pageSettings.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+    
+    // Print multiple documents in a single print job
+    Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingMultipleDocumentsInSingleJob()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Paths to documents to be printed
+    var path1 = dataDir + "PrintDocument.pdf";
+    var path2 = dataDir + "Print-PageRange.pdf";
+    var path3 = dataDir + "35925_1_3.xps";
+    
+    // Set up printer and page settings
+    var printDocument = new PrintDocument();
+    Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
+    {
+        PrinterName = printDocument.PrinterSettings.PrinterName
+    };
+    
+    Aspose.Pdf.Printing.PageSettings pageSettings = new Aspose.Pdf.Printing.PageSettings
+    {
+        PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
+        Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
+    }
+    
+    // Print multiple documents in a single print job
+    Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);
 }
 ```
 {{< /tab >}}

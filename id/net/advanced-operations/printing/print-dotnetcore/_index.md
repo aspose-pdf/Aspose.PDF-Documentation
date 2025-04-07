@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "How to print PDF file in .NET Core",
     "alternativeHeadline": "Print PDFs as XPS in .NET Core with ease",
-    "abstract": "Temukan fungsionalitas baru di .NET Core yang menyederhanakan proses pencetakan dokumen PDF dengan mengonversinya ke format XPS dan mengelola pekerjaan cetak di antrean printer lokal Anda secara efisien. Fitur ini juga memungkinkan kontrol yang lebih baik atas sumber kertas berdasarkan ukuran halaman PDF, memastikan pengalaman pencetakan yang disesuaikan. Optimalkan manajemen dokumen Anda dengan opsi penskalaan yang tepat langsung dari dialog cetak.",
+    "abstract": "Temukan fungsionalitas baru di .NET Core yang menyederhanakan proses pencetakan dokumen PDF dengan mengonversinya ke format XPS dan mengelola pekerjaan cetak secara efisien di antrean printer lokal Anda. Fitur ini juga memungkinkan kontrol yang lebih baik atas sumber kertas berdasarkan ukuran halaman PDF, memastikan pengalaman pencetakan yang disesuaikan. Optimalkan manajemen dokumen Anda dengan opsi penskalaan yang tepat langsung dari dialog cetak",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "print PDF, .NET Core, convert PDF to XPS, print queue, Aspose.PDF, paper source by PDF page size, print dialog presets, page scaling, document printing, local printer",
-    "wordcount": "606",
+    "wordcount": "1302",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,16 +74,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/print-dotnetcore/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-07",
     "description": "Halaman ini menjelaskan cara mengonversi dokumen PDF menjadi XPS dan menambahkannya sebagai pekerjaan ke antrean printer lokal."
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-## **Cetak dokumen Pdf di .NET Core**
+## **Mencetak dokumen Pdf di .NET Core**
 
-Library Aspose.PDF memungkinkan kita untuk mengonversi file PDF ke XPS. Fungsi ini dapat berguna untuk mengatur pencetakan dokumen. Mari kita lihat contoh penggunaan printer default.
+Pustaka Aspose.PDF memungkinkan kita untuk mengonversi file PDF menjadi XPS. Fungsi ini dapat berguna untuk mengatur pencetakan dokumen. Mari kita lihat contoh penggunaan printer default.
 
 Dalam contoh ini, kita mengonversi dokumen PDF menjadi XPS dan menambahkannya sebagai pekerjaan ke antrean printer lokal:
 
@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
  
 Sejak rilis 24.4, memilih sumber kertas berdasarkan ukuran halaman PDF di dialog cetak adalah mungkin. Potongan kode berikut memungkinkan pemilihan baki printer berdasarkan ukuran halaman PDF.
 
-Preferensi ini dapat diaktifkan dan dinonaktifkan menggunakan properti [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+Preferensi ini dapat diaktifkan dan dinonaktifkan menggunakan properti [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## Preset Dialog Cetak Penskalaan Halaman
 
-Potongan kode berikut dimaksudkan untuk memastikan bahwa properti [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) diterapkan dan disimpan dengan benar di PDF.
+Potongan kode berikut dimaksudkan untuk memastikan bahwa properti [PrintScaling](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/printscaling/) diterapkan dan disimpan dengan benar dalam PDF.
 
-Properti [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) telah ditambahkan ke kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan nilai `Aspose.Pdf.PrintScaling.AppDefault` atau `Aspose.Pdf.PrintScaling.None`.
+Properti [PrintScaling](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/printscaling/) telah ditambahkan ke kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dengan nilai `​​Aspose.Pdf.PrintScaling.AppDefault` atau `Aspose.Pdf.PrintScaling.None`.
 
 Opsi penskalaan halaman yang harus dipilih ketika dialog cetak ditampilkan untuk dokumen ini. Nilai yang valid adalah `None`, yang menunjukkan tidak ada penskalaan halaman, dan `AppDefault`, yang menunjukkan penskalaan cetak default pembaca yang sesuai. Jika entri ini memiliki nilai yang tidak dikenali, `AppDefault` harus digunakan. Nilai default: `AppDefault`.
 
@@ -284,6 +284,78 @@ private static void SetPrintScaling()
 
     // Save PDF document
     document.Save(dataDir + "SetPrintScaling_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Mencetak beberapa dokumen PDF dalam satu pekerjaan cetak
+
+Terkadang, perlu untuk mencetak beberapa dokumen terkait bersama-sama sebagai satu pekerjaan cetak. Ini memastikan bahwa, terutama dengan printer jaringan jarak jauh, dokumen-dokumen ini tidak tercampur dengan output dari pengguna lain. Aspose.PDF mendukung pencetakan sejumlah dokumen dalam satu pekerjaan cetak dengan pengaturan printer yang dibagikan melalui metode statis `PrintDocuments` dari kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer). Dokumen yang akan dicetak dapat diberikan sebagai jalur file, aliran dokumen, atau objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+
+{{% alert color="primary" %}}
+
+Saat mencetak beberapa dokumen, properti [PrinterSettings.PrintRange](https://reference.aspose.com/pdf/id/net/aspose.pdf.printing/printersettings/printrange/) diabaikan, dan semua dokumen dicetak secara penuh.
+
+{{% /alert %}}
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingMultipleDocumentsInSingleJob()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Paths to documents to be printed
+    var path1 = dataDir + "PrintDocument.pdf";
+    var path2 = dataDir + "Print-PageRange.pdf";
+    var path3 = dataDir + "35925_1_3.xps";
+    
+    // Set up printer and page settings
+    var printDocument = new PrintDocument();
+    Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
+    printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
+    
+    Aspose.Pdf.Printing.PageSettings pageSettings = new Aspose.Pdf.Printing.PageSettings();
+    pageSettings.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+    pageSettings.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+    
+    // Print multiple documents in a single print job
+    Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingMultipleDocumentsInSingleJob()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Paths to documents to be printed
+    var path1 = dataDir + "PrintDocument.pdf";
+    var path2 = dataDir + "Print-PageRange.pdf";
+    var path3 = dataDir + "35925_1_3.xps";
+    
+    // Set up printer and page settings
+    var printDocument = new PrintDocument();
+    Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
+    {
+        PrinterName = printDocument.PrinterSettings.PrinterName
+    };
+    
+    Aspose.Pdf.Printing.PageSettings pageSettings = new Aspose.Pdf.Printing.PageSettings
+    {
+        PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
+        Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
+    }
+    
+    // Print multiple documents in a single print job
+    Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);
 }
 ```
 {{< /tab >}}
