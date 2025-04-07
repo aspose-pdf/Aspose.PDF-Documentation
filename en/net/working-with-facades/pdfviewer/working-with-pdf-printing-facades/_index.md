@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "4254",
+    "wordcount": "4259",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -978,7 +978,7 @@ private static void PrintingPagesInSimplexAndDuplexMode()
 
 ## Printing multiple PDF documents in a single print job
 
-Sometimes, it is necessary to print multiple related documents together as a single print job. This ensures that, especially with remote network printers, these documents do not get out interspersed with output from other users. Aspose.PDF supports printing any number of documents in a single print job with shared printer settings via the static `PrintDocuments` methods of the [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) class. The documents to be printed can be provided as file paths, document streams, or [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) objects.
+Sometimes, it is necessary to print multiple related documents together as a single print job. This ensures that these documents do not get interspersed with output from other users, especially with remote network printers. Aspose.PDF supports printing any number of documents in a single print job with shared printer settings via the static `PrintDocuments` methods of the [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) class. The documents to be printed can be provided as file paths, document streams, or [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) objects.
 
 {{% alert color="primary" %}}
 
@@ -1001,7 +1001,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
     printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
     
@@ -1029,7 +1029,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
     {
         PrinterName = printDocument.PrinterSettings.PrinterName
@@ -1039,7 +1039,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     {
         PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
         Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
-    }
+    };
     
     // Print multiple documents in a single print job
     Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);

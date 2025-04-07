@@ -15,7 +15,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Working with PDF printing - Facades",
     "alternativeHeadline": "Enhancing PDF Printing Capabilities with C#",
-    "abstract": "Aspose.PDF for .NET O recurso de Fachadas simplifica a impressão de PDF com controle aprimorado sobre as configurações da impressora e formatos de saída. Os usuários podem imprimir documentos de forma contínua para impressoras padrão ou virtuais, definir layouts de página e até gerenciar trabalhos de impressão em modos simplex ou duplex, enquanto opções como impressão em escala de cinza e ocultação de diálogos de impressão aumentam sua versatilidade. Essa funcionalidade otimiza significativamente os fluxos de trabalho de impressão para documentos PDF, tornando-a ideal para desenvolvedores e usuários que buscam soluções eficientes de gerenciamento de documentos.",
+    "abstract": "Aspose.PDF for .NET O recurso de Fachadas simplifica a impressão de PDF com controle aprimorado sobre as configurações da impressora e formatos de saída. Os usuários podem imprimir documentos de forma contínua em impressoras padrão ou virtuais, definir layouts de página e até gerenciar trabalhos de impressão em modos simplex ou duplex, enquanto opções como impressão em escala de cinza e ocultação de diálogos de impressão aumentam sua versatilidade. Essa funcionalidade otimiza significativamente os fluxos de trabalho de impressão para documentos PDF, tornando-o ideal para desenvolvedores e usuários que buscam soluções eficientes de gerenciamento de documentos.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "4287",
+    "wordcount": "4295",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -435,7 +435,7 @@ private static void PrintingPDFHidePrintDialog()
 
 ## Imprimindo PDF colorido em arquivo XPS como escala de cinza
 
-Um documento PDF colorido pode ser impresso em uma impressora XPS como escala de cinza, usando [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer). Para conseguir isso, defina a propriedade [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) como *true*. O seguinte trecho de código demonstra o uso da propriedade `PdfViewer.PrintAsGrayscale`.
+Um documento PDF colorido pode ser impresso em uma impressora XPS como escala de cinza, usando [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer). Para alcançar isso, defina a propriedade [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) como *true*. O seguinte trecho de código demonstra o uso da propriedade `PdfViewer.PrintAsGrayscale`.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -528,7 +528,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## Conversão de PDF para PostScript
 
-A classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer) fornece a capacidade de imprimir documentos PDF e, com a ajuda dessa classe, também é possível converter arquivos PDF para o formato PostScript. Para converter um arquivo PDF em PostScript, primeiro instale qualquer impressora PS e apenas imprima para arquivo com a ajuda do `PdfViewer`.
+A classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer) fornece a capacidade de imprimir documentos PDF e, com a ajuda dessa classe, também é possível converter arquivos PDF para o formato PostScript. Para converter um arquivo PDF em PostScript, primeiro instale qualquer impressora PS e apenas imprima para o arquivo com a ajuda do `PdfViewer`.
 
 O seguinte trecho de código mostra como imprimir e converter um PDF para o formato PostScript.
 
@@ -631,7 +631,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Verificando o status do trabalho de impressão
 
-Um arquivo PDF pode ser impresso em uma impressora física, bem como no Microsoft XPS Document Writer, sem mostrar um diálogo de impressão, usando a classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer). Ao imprimir arquivos PDF grandes, o processo pode demorar muito, então o usuário pode não ter certeza se o processo de impressão foi concluído ou encontrou um problema. Para determinar o status de um trabalho de impressão, use a propriedade [PrintStatus](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/printstatus/). O seguinte trecho de código mostra como imprimir o arquivo PDF em um arquivo XPS e obter o status da impressão.
+Um arquivo PDF pode ser impresso em uma impressora física, bem como no Microsoft XPS Document Writer, sem mostrar um diálogo de impressão, usando a classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer). Ao imprimir arquivos PDF grandes, o processo pode demorar um pouco, então o usuário pode não ter certeza se o processo de impressão foi concluído ou encontrou um problema. Para determinar o status de um trabalho de impressão, use a propriedade [PrintStatus](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer/printstatus/). O seguinte trecho de código mostra como imprimir o arquivo PDF em um arquivo XPS e obter o status da impressão.
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -764,7 +764,7 @@ private static void CheckingPrintJobStatus()
 
 ## Imprimindo páginas em modo Simplex e Duplex
 
-Em um determinado trabalho de impressão, as páginas do documento PDF podem ser impressas em modo Duplex ou em modo Simplex, mas você não pode imprimir algumas páginas como simplex e outras como duplex dentro de um único trabalho de impressão. No entanto, para cumprir o requisito, diferentes intervalos de páginas e o objeto PrintingJobSettings podem ser usados. O seguinte trecho de código mostra como imprimir algumas páginas de um arquivo PDF em Simplex e outras páginas em modo Duplex.
+Em um trabalho de impressão específico, as páginas do documento PDF podem ser impressas em modo Duplex ou em modo Simplex, mas você não pode imprimir algumas páginas como simplex e outras como duplex dentro de um único trabalho de impressão. No entanto, para cumprir a exigência, diferentes intervalos de páginas e o objeto PrintingJobSettings podem ser usados. O seguinte trecho de código mostra como imprimir algumas páginas de um arquivo PDF em Simplex e algumas páginas em modo Duplex.
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -977,7 +977,7 @@ private static void PrintingPagesInSimplexAndDuplexMode()
 
 ## Imprimindo múltiplos documentos PDF em um único trabalho de impressão
 
-Às vezes, é necessário imprimir vários documentos relacionados juntos como um único trabalho de impressão. Isso garante que, especialmente com impressoras de rede remotas, esses documentos não sejam intercalados com a saída de outros usuários. Aspose.PDF suporta a impressão de qualquer número de documentos em um único trabalho de impressão com configurações de impressora compartilhadas através dos métodos estáticos `PrintDocuments` da classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer). Os documentos a serem impressos podem ser fornecidos como caminhos de arquivo, fluxos de documentos ou objetos [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
+Às vezes, é necessário imprimir vários documentos relacionados juntos como um único trabalho de impressão. Isso garante que esses documentos não sejam intercalados com a saída de outros usuários, especialmente com impressoras de rede remotas. Aspose.PDF suporta a impressão de qualquer número de documentos em um único trabalho de impressão com configurações de impressora compartilhadas através dos métodos estáticos `PrintDocuments` da classe [PdfViewer](https://reference.aspose.com/pdf/pt/net/aspose.pdf.facades/pdfviewer). Os documentos a serem impressos podem ser fornecidos como caminhos de arquivo, fluxos de documentos ou objetos [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document).
 
 {{% alert color="primary" %}}
 
@@ -1000,7 +1000,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
     printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
     
@@ -1028,7 +1028,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
     {
         PrinterName = printDocument.PrinterSettings.PrinterName
@@ -1038,7 +1038,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     {
         PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
         Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
-    }
+    };
     
     // Print multiple documents in a single print job
     Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);

@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "print PDF, .NET Core, convert PDF to XPS, print queue, Aspose.PDF, paper source by PDF page size, print dialog presets, page scaling, document printing, local printer",
-    "wordcount": "1105",
+    "wordcount": "1110",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -79,13 +79,13 @@ sitemap:
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
 ## **.NET CoreでPDFドキュメントを印刷する**
 
 Aspose.PDFライブラリを使用すると、PDFファイルをXPSに変換できます。この機能は、ドキュメントの印刷を整理するのに役立ちます。デフォルトプリンターを使用する例を見てみましょう。
 
-この例では、PDFドキュメントをXPSに変換し、ローカルプリンターのキューにジョブとして追加します：
+この例では、PDFドキュメントをXPSに変換し、ローカルプリンターのキューにジョブとして追加します。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -177,9 +177,9 @@ private static void PrintPDF(string pdfFileName)
 
 ## PDFページサイズによる用紙ソースの選択
  
-24.4リリース以降、印刷ダイアログでPDFページサイズによる用紙ソースの選択が可能になりました。次のコードスニペットは、PDFのページサイズに基づいてプリンタートレイを選択することを可能にします。
+24.4リリース以降、印刷ダイアログでPDFページサイズに基づいて用紙ソースを選択することが可能になりました。次のコードスニペットは、PDFのページサイズに基づいてプリンタートレイを選択することを可能にします。
 
-この設定は、[Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/picktraybypdfsize/)プロパティを使用してオンとオフを切り替えることができます。
+この設定は、[Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/picktraybypdfsize/)プロパティを使用してオンまたはオフに切り替えることができます。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -236,9 +236,9 @@ private static void PickTrayByPdfSize()
 
 次のコードスニペットは、[PrintScaling](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/printscaling/)プロパティが正しく適用され、PDFに保存されることを保証するためのものです。
 
-[PrintScaling](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/printscaling/)プロパティは、値`Aspose.Pdf.PrintScaling.AppDefault`または`Aspose.Pdf.PrintScaling.None`を持つ[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)クラスに追加されました。
+[PrintScaling](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/printscaling/)プロパティは、[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/)クラスに`Aspose.Pdf.PrintScaling.AppDefault`または`Aspose.Pdf.PrintScaling.None`の値で追加されました。
 
-このドキュメントの印刷ダイアログが表示されるときに選択されるべきページスケーリングオプションです。有効な値は、ページスケーリングなしを示す`None`と、準拠するリーダーのデフォルト印刷スケーリングを示す`AppDefault`です。このエントリに認識されない値がある場合は、`AppDefault`を使用する必要があります。デフォルト値: `AppDefault`。
+このドキュメントの印刷ダイアログが表示されるときに選択されるべきページスケーリングオプションです。有効な値は、ページスケーリングなしを示す`None`と、準拠リーダーのデフォルト印刷スケーリングを示す`AppDefault`です。このエントリに認識されない値がある場合は、`AppDefault`を使用する必要があります。デフォルト値: `AppDefault`。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -291,7 +291,7 @@ private static void SetPrintScaling()
 
 ## 単一の印刷ジョブで複数のPDFドキュメントを印刷する
 
-時には、関連する複数のドキュメントを単一の印刷ジョブとして一緒に印刷する必要があります。これにより、特にリモートネットワークプリンターを使用する場合、これらのドキュメントが他のユーザーの出力と混在しないようにします。Aspose.PDFは、[PdfViewer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer)クラスの静的`PrintDocuments`メソッドを介して、共有プリンター設定で任意の数のドキュメントを単一の印刷ジョブで印刷することをサポートしています。印刷するドキュメントは、ファイルパス、ドキュメントストリーム、または[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトとして提供できます。
+時には、関連する複数のドキュメントを単一の印刷ジョブとして一緒に印刷する必要があります。これにより、これらのドキュメントが他のユーザーの出力と混在しないように、特にリモートネットワークプリンターでの印刷が保証されます。Aspose.PDFは、[PdfViewer](https://reference.aspose.com/pdf/ja/net/aspose.pdf.facades/pdfviewer)クラスの静的`PrintDocuments`メソッドを介して、共有プリンター設定で任意の数のドキュメントを単一の印刷ジョブで印刷することをサポートしています。印刷するドキュメントは、ファイルパス、ドキュメントストリーム、または[Document](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document)オブジェクトとして提供できます。
 
 {{% alert color="primary" %}}
 
@@ -314,7 +314,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
     printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
     
@@ -342,7 +342,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
     {
         PrinterName = printDocument.PrinterSettings.PrinterName
@@ -352,7 +352,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     {
         PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
         Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
-    }
+    };
     
     // Print multiple documents in a single print job
     Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);

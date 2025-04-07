@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "How to print PDF file in .NET Core",
     "alternativeHeadline": "Print PDFs as XPS in .NET Core with ease",
-    "abstract": "Descubre la nueva funcionalidad en .NET Core que simplifica el proceso de impresión de documentos PDF al convertirlos a formato XPS y gestionar eficientemente los trabajos de impresión en la cola de tu impresora local. Esta característica también permite un control mejorado sobre las fuentes de papel según los tamaños de página PDF, asegurando una experiencia de impresión personalizada. Optimiza la gestión de tus documentos con opciones de escalado precisas directamente desde el cuadro de diálogo de impresión.",
+    "abstract": "Descubre la nueva funcionalidad en .NET Core que simplifica el proceso de impresión de documentos PDF al convertirlos a formato XPS y gestionar eficientemente los trabajos de impresión en la cola de tu impresora local. Esta característica también permite un control mejorado sobre las fuentes de papel según los tamaños de página PDF, asegurando una experiencia de impresión personalizada. Optimiza tu gestión de documentos con opciones de escalado precisas directamente desde el cuadro de diálogo de impresión.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "print PDF, .NET Core, convert PDF to XPS, print queue, Aspose.PDF, paper source by PDF page size, print dialog presets, page scaling, document printing, local printer",
-    "wordcount": "1383",
+    "wordcount": "1390",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -238,7 +238,7 @@ El siguiente fragmento de código está destinado a asegurar que la propiedad [P
 
 La propiedad [PrintScaling](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/printscaling/) se ha añadido a la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/) con valores `Aspose.Pdf.PrintScaling.AppDefault` o `Aspose.Pdf.PrintScaling.None`.
 
-La opción de escalado de página que se seleccionará cuando se muestre un cuadro de diálogo de impresión para este documento. Los valores válidos son `None`, que indica que no hay escalado de página, y `AppDefault`, que indica el escalado de impresión predeterminado del lector conforme. Si esta entrada tiene un valor no reconocido, se debe usar `AppDefault`. Valor predeterminado: `AppDefault`.
+La opción de escalado de página que se debe seleccionar cuando se muestra un cuadro de diálogo de impresión para este documento. Los valores válidos son `None`, que indica que no hay escalado de página, y `AppDefault`, que indica el escalado de impresión predeterminado del lector conforme. Si esta entrada tiene un valor no reconocido, se debe usar `AppDefault`. Valor predeterminado: `AppDefault`.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -291,7 +291,7 @@ private static void SetPrintScaling()
 
 ## Imprimir múltiples documentos PDF en un solo trabajo de impresión
 
-A veces, es necesario imprimir múltiples documentos relacionados juntos como un solo trabajo de impresión. Esto asegura que, especialmente con impresoras de red remotas, estos documentos no se mezclen con la salida de otros usuarios. Aspose.PDF admite la impresión de cualquier número de documentos en un solo trabajo de impresión con configuraciones de impresora compartidas a través de los métodos estáticos `PrintDocuments` de la clase [PdfViewer](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer). Los documentos a imprimir se pueden proporcionar como rutas de archivo, flujos de documentos u objetos [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+A veces, es necesario imprimir múltiples documentos relacionados juntos como un solo trabajo de impresión. Esto asegura que estos documentos no se intercalen con la salida de otros usuarios, especialmente con impresoras de red remotas. Aspose.PDF admite la impresión de cualquier número de documentos en un solo trabajo de impresión con configuraciones de impresora compartidas a través de los métodos estáticos `PrintDocuments` de la clase [PdfViewer](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfviewer). Los documentos a imprimir se pueden proporcionar como rutas de archivo, flujos de documentos u objetos [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
 
 {{% alert color="primary" %}}
 
@@ -314,7 +314,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
     printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
     
@@ -342,7 +342,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
     {
         PrinterName = printDocument.PrinterSettings.PrinterName
@@ -352,7 +352,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     {
         PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
         Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
-    }
+    };
     
     // Print multiple documents in a single print job
     Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);

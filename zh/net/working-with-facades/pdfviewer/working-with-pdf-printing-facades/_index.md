@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "3870",
+    "wordcount": "3875",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -71,7 +71,7 @@ draft: false
         "@id": "/net/working-with-pdf-printing-facades/"
     },
     "dateModified": "2025-04-07",
-    "description": "Aspose.PDF 不仅可以执行简单易行的任务，还可以应对更复杂的目标。请查看下一节以获取高级用户和开发人员的信息。"
+    "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一节以获取高级用户和开发人员的信息。"
 }
 </script>
 
@@ -529,7 +529,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## PDF 转 PostScript 转换
 
-[PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer) 类提供了打印 PDF 文档的能力，并且借助此类，还可以将 PDF 文件转换为 PostScript 格式。要将 PDF 文件转换为 PostScript，首先安装任何 PS 打印机，然后只需使用 `PdfViewer` 打印到文件。
+[PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer) 类提供打印 PDF 文档的能力，并且借助此类，可以将 PDF 文件转换为 PostScript 格式。要将 PDF 文件转换为 PostScript，首先安装任何 PS 打印机，然后只需使用 `PdfViewer` 打印到文件。
 
 以下代码片段演示了如何打印并将 PDF 转换为 PostScript 格式。
 
@@ -978,7 +978,7 @@ private static void PrintingPagesInSimplexAndDuplexMode()
 
 ## 在单个打印作业中打印多个 PDF 文档
 
-有时，需要将多个相关文档作为单个打印作业一起打印。这确保了，特别是在远程网络打印机上，这些文档不会与其他用户的输出交错。Aspose.PDF 支持通过 [PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer) 类的静态 `PrintDocuments` 方法在单个打印作业中打印任意数量的文档，使用共享的打印机设置。要打印的文档可以作为文件路径、文档流或 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象提供。
+有时，需要将多个相关文档作为单个打印作业一起打印。这确保这些文档不会与其他用户的输出交错，特别是在远程网络打印机上。Aspose.PDF 支持通过 [PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer) 类的静态 `PrintDocuments` 方法在单个打印作业中打印任意数量的文档，使用共享的打印机设置。要打印的文档可以作为文件路径、文档流或 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象提供。
 
 {{% alert color="primary" %}}
 
@@ -1001,7 +1001,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
     printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
     
@@ -1029,7 +1029,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
     {
         PrinterName = printDocument.PrinterSettings.PrinterName
@@ -1039,7 +1039,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     {
         PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
         Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
-    }
+    };
     
     // Print multiple documents in a single print job
     Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);

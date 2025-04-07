@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "print PDF, .NET Core, convert PDF to XPS, print queue, Aspose.PDF, paper source by PDF page size, print dialog presets, page scaling, document printing, local printer",
-    "wordcount": "1302",
+    "wordcount": "1308",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -83,7 +83,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## **Mencetak dokumen Pdf di .NET Core**
 
-Pustaka Aspose.PDF memungkinkan kita untuk mengonversi file PDF menjadi XPS. Fungsi ini dapat berguna untuk mengatur pencetakan dokumen. Mari kita lihat contoh penggunaan printer default.
+Pustaka Aspose.PDF memungkinkan kita untuk mengonversi file PDF ke XPS. Fungsi ini dapat berguna untuk mengatur pencetakan dokumen. Mari kita lihat contoh penggunaan printer default.
 
 Dalam contoh ini, kita mengonversi dokumen PDF menjadi XPS dan menambahkannya sebagai pekerjaan ke antrean printer lokal:
 
@@ -291,7 +291,7 @@ private static void SetPrintScaling()
 
 ## Mencetak beberapa dokumen PDF dalam satu pekerjaan cetak
 
-Terkadang, perlu untuk mencetak beberapa dokumen terkait bersama-sama sebagai satu pekerjaan cetak. Ini memastikan bahwa, terutama dengan printer jaringan jarak jauh, dokumen-dokumen ini tidak tercampur dengan output dari pengguna lain. Aspose.PDF mendukung pencetakan sejumlah dokumen dalam satu pekerjaan cetak dengan pengaturan printer yang dibagikan melalui metode statis `PrintDocuments` dari kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer). Dokumen yang akan dicetak dapat diberikan sebagai jalur file, aliran dokumen, atau objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+Terkadang, perlu untuk mencetak beberapa dokumen terkait bersama-sama sebagai satu pekerjaan cetak. Ini memastikan bahwa dokumen-dokumen ini tidak tercampur dengan output dari pengguna lain, terutama dengan printer jaringan jarak jauh. Aspose.PDF mendukung pencetakan sejumlah dokumen dalam satu pekerjaan cetak dengan pengaturan printer yang dibagikan melalui metode statis `PrintDocuments` dari kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer). Dokumen yang akan dicetak dapat diberikan sebagai jalur file, aliran dokumen, atau objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 
 {{% alert color="primary" %}}
 
@@ -314,7 +314,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
     printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
     
@@ -342,7 +342,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
     {
         PrinterName = printDocument.PrinterSettings.PrinterName
@@ -352,7 +352,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     {
         PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
         Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
-    }
+    };
     
     // Print multiple documents in a single print job
     Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);

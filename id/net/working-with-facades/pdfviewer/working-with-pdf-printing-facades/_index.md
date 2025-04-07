@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "4174",
+    "wordcount": "4176",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -77,8 +77,7 @@ draft: false
 
 ## Mencetak File PDF ke Printer Default menggunakan Pengaturan Printer dan Halaman
 
-Pertama, dokumen dikonversi menjadi gambar, dan kemudian, dicetak pada printer.
-Buat instance dari kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer) yang memungkinkan pencetakan file PDF ke printer default, gunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/bindpdf/) untuk membuka dokumen ke dalamnya, dan ubah pengaturan yang diperlukan. Contoh ini menggunakan format A4, orientasi potret. Di [PrinterSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf.printing/printersettings/), pertama-tama, nama printer, ke mana pencetakan dilakukan, harus diatur. Jika tidak, itu akan mencetak ke printer default. Selanjutnya, masukkan jumlah salinan yang diperlukan.
+Pertama, dokumen dikonversi menjadi gambar, dan kemudian, dicetak pada printer. Buat instance dari kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer) yang memungkinkan pencetakan file PDF ke printer default, gunakan metode [BindPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/bindpdf/) untuk membuka dokumen ke dalamnya, dan ubah pengaturan yang diperlukan. Contoh ini menggunakan format A4, orientasi potret. Dalam [PrinterSettings](https://reference.aspose.com/pdf/id/net/aspose.pdf.printing/printersettings/), pertama-tama, nama printer, ke mana pencetakan dilakukan, harus diatur. Jika tidak, itu akan mencetak ke printer default. Selanjutnya, tuliskan jumlah salinan yang diperlukan.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -248,7 +247,7 @@ private static void PrintingPDFDisplayPrintDialog()
 
 ## Mencetak PDF ke Printer Virtual
 
-Ada printer yang mencetak ke file. Untuk menggunakannya, atur nama printer virtual, dan, sama seperti contoh sebelumnya, buat pengaturannya.
+Ada printer yang mencetak ke file. Untuk menggunakannya, atur nama printer virtual, dan, sama seperti contoh sebelumnya, buat pengaturan.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -632,7 +631,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Memeriksa Status Pekerjaan Cetak
 
-File PDF dapat dicetak ke printer fisik serta ke Microsoft XPS Document Writer, tanpa menampilkan dialog cetak, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer). Ketika mencetak file PDF besar, prosesnya mungkin memakan waktu lama sehingga pengguna mungkin tidak yakin apakah proses pencetakan selesai atau mengalami masalah. Untuk menentukan status pekerjaan pencetakan, gunakan properti [PrintStatus](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/printstatus/). Potongan kode berikut menunjukkan cara mencetak file PDF ke file XPS dan mendapatkan status pencetakan.
+File PDF dapat dicetak ke printer fisik serta ke Microsoft XPS Document Writer, tanpa menampilkan dialog cetak, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer). Ketika mencetak file PDF besar, proses mungkin memakan waktu lama sehingga pengguna mungkin tidak yakin apakah proses pencetakan selesai atau mengalami masalah. Untuk menentukan status pekerjaan pencetakan, gunakan properti [PrintStatus](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer/printstatus/). Potongan kode berikut menunjukkan cara mencetak file PDF ke file XPS dan mendapatkan status pencetakan.
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -765,7 +764,7 @@ private static void CheckingPrintJobStatus()
 
 ## Mencetak halaman dalam mode Simplex dan Duplex
 
-Dalam pekerjaan pencetakan tertentu, halaman dokumen PDF dapat dicetak baik dalam mode Duplex atau dalam mode Simplex tetapi Anda tidak dapat mencetak beberapa halaman sebagai simplex dan beberapa halaman sebagai duplex dalam satu pekerjaan cetak. Namun, untuk memenuhi kebutuhan tersebut, rentang halaman yang berbeda dan objek PrintingJobSettings dapat digunakan. Potongan kode berikut menunjukkan cara mencetak beberapa halaman dari file PDF dalam mode Simplex dan beberapa halaman dalam mode Duplex.
+Dalam pekerjaan pencetakan tertentu, halaman dokumen PDF dapat dicetak dalam mode Duplex atau dalam mode Simplex tetapi Anda tidak dapat mencetak beberapa halaman sebagai simplex dan beberapa halaman sebagai duplex dalam satu pekerjaan cetak. Namun, untuk memenuhi persyaratan, rentang halaman yang berbeda dan objek PrintingJobSettings dapat digunakan. Potongan kode berikut menunjukkan cara mencetak beberapa halaman file PDF dalam mode Simplex dan beberapa halaman dalam mode Duplex.
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -978,7 +977,7 @@ private static void PrintingPagesInSimplexAndDuplexMode()
 
 ## Mencetak beberapa dokumen PDF dalam satu pekerjaan cetak
 
-Terkadang, perlu untuk mencetak beberapa dokumen terkait bersama-sama sebagai satu pekerjaan cetak. Ini memastikan bahwa, terutama dengan printer jaringan jarak jauh, dokumen-dokumen ini tidak tercampur dengan output dari pengguna lain. Aspose.PDF mendukung pencetakan sejumlah dokumen dalam satu pekerjaan cetak dengan pengaturan printer yang dibagikan melalui metode statis `PrintDocuments` dari kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer). Dokumen yang akan dicetak dapat diberikan sebagai jalur file, aliran dokumen, atau objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
+Terkadang, perlu untuk mencetak beberapa dokumen terkait bersama sebagai satu pekerjaan cetak. Ini memastikan bahwa dokumen-dokumen ini tidak tercampur dengan output dari pengguna lain, terutama dengan printer jaringan jarak jauh. Aspose.PDF mendukung pencetakan sejumlah dokumen dalam satu pekerjaan cetak dengan pengaturan printer yang dibagikan melalui metode statis `PrintDocuments` dari kelas [PdfViewer](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdfviewer). Dokumen yang akan dicetak dapat diberikan sebagai jalur file, aliran dokumen, atau objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document).
 
 {{% alert color="primary" %}}
 
@@ -1001,7 +1000,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
     printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
     
@@ -1029,7 +1028,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     var path3 = dataDir + "35925_1_3.xps";
     
     // Set up printer and page settings
-    var printDocument = new PrintDocument();
+    var printDocument = new System.Drawing.Printing.PrintDocument();
     Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
     {
         PrinterName = printDocument.PrinterSettings.PrinterName
@@ -1039,7 +1038,7 @@ private static void PrintingMultipleDocumentsInSingleJob()
     {
         PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
         Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
-    }
+    };
     
     // Print multiple documents in a single print job
     Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);
