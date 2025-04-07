@@ -84,11 +84,11 @@ lastmod: "2025-01-31"
 
 在 Aspose.PDF 25.3 中，我们添加了：
 * 19 个 [高代码插件产品](https://products.aspose.net/pdf/)。
-* [检测被破坏的](https://docs.aspose.com/pdf/net/extract-image-and-signature-information/#checking-signatures-for-compromise) PDF 数字签名。
-* [贝茨编号伪影](https://docs.aspose.com/pdf/net/artifacts/#adding-bates-numbering-artifact)。
-* [创建标记元素的位置信息设置](https://docs.aspose.com/pdf/net/create-tagged-pdf/#adjust-position-of-text-structure)。
-* 在将图形形状添加到 PDF 页面时验证 [图形形状的边界](https://docs.aspose.com/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) 的能力。
-> 有关更改的详细信息和使用示例，请参阅 [Aspose.PDF 25.3 发布说明](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/) 页面。
+* [检测被破坏的](https://docs.aspose.com/pdf/zh/net/extract-image-and-signature-information/#checking-signatures-for-compromise) PDF 数字签名。
+* [贝茨编号伪影](https://docs.aspose.com/pdf/zh/net/artifacts/#adding-bates-numbering-artifact)。
+* [创建标记元素的位置信息设置](https://docs.aspose.com/pdf/zh/net/create-tagged-pdf/#adjust-position-of-text-structure)。
+* 在将图形形状添加到 PDF 页面时验证 [图形形状的边界](https://docs.aspose.com/pdf/zh/net/aspose-pdf-drawing-graph-shapes-bounds-check/) 的能力。
+> 有关更改的详细信息和使用示例，请参阅 [Aspose.PDF 25.3 发布说明](https://releases.aspose.com/pdf/zh/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/) 页面。
 
 **其他显著增强**
 
@@ -99,15 +99,15 @@ lastmod: "2025-01-31"
 **最重要的变化**
 
 在 Aspose.PDF 25.2 中，我们添加了：
-* 支持 [PDF 到 PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/) 标准转换。
-* [一个选项](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) 以避免在签名时两次调用 CustomSignHash 委托。
-* 新的 `GetSignatureNames()` 方法以获取 PDF 的 [数字签名](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) 信息。
-* 创建具有多个小部件注释的 [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) 的可能性。
-> 有关更改的详细信息和使用示例，请参阅 [Aspose.PDF 25.2 发布说明](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) 页面。
+* 支持 [PDF 到 PDF/X-4](https://docs.aspose.com/pdf/zh/net/convert-pdf-to-pdfx/) 标准转换。
+* [一个选项](https://docs.aspose.com/pdf/zh/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) 以避免在签名时两次调用 CustomSignHash 委托。
+* 新的 `GetSignatureNames()` 方法以获取 PDF 的 [数字签名](https://docs.aspose.com/pdf/zh/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) 信息。
+* 创建具有多个小部件注释的 [TextBoxField](https://docs.aspose.com/pdf/zh/net/create-form/#adding-radiobuttonfield) 的可能性。
+> 有关更改的详细信息和使用示例，请参阅 [Aspose.PDF 25.2 发布说明](https://releases.aspose.com/pdf/zh/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) 页面。
 
 **其他显著增强**
 
-* 在 [PDF 优化](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) 中增强了无质量损失的图像压缩。压缩文档的大小减少。
+* 在 [PDF 优化](https://docs.aspose.com/pdf/zh/net/optimize-pdf/#shrinking-or-compressing-all-images) 中增强了无质量损失的图像压缩。压缩文档的大小减少。
 * [文档 `Repair` 方法](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/repair/) 改进。现在可以检查并修复 Annotation.Rect 数组中的值。
 * 更新了 System.Text.Json 依赖项版本，以避免可能的漏洞 CVE-2024-43485。
 * 改进了 PDF 签名攻击检测，以防止获得误报结果。
@@ -157,7 +157,7 @@ private static void AddingNewExtGState()
 * 使用证书颁发机构 (CA) 服务器验证 PDF 签名的可能性。
 * 使用 SHA-3 哈希算法进行跨平台 PDF 签名验证。
 
-有关更改的详细信息和使用示例，请参阅 [Aspose.PDF 25.1 发布说明](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) 页面。
+有关更改的详细信息和使用示例，请参阅 [Aspose.PDF 25.1 发布说明](https://releases.aspose.com/pdf/zh/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) 页面。
 
 ## Aspose.PDF 24.12 中的新功能
 

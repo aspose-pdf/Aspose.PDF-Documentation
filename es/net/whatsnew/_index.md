@@ -84,11 +84,11 @@ lastmod: "2025-01-31"
 
 En Aspose.PDF 25.3 hemos añadido:
 * 19 [productos de plugin de código alto](https://products.aspose.net/pdf/).
-* [Detección de firmas digitales PDF comprometidas](https://docs.aspose.com/pdf/net/extract-image-and-signature-information/#checking-signatures-for-compromise).
-* [Artefactos de numeración Bates](https://docs.aspose.com/pdf/net/artifacts/#adding-bates-numbering-artifact).
-* [Configuraciones de posición](https://docs.aspose.com/pdf/net/create-tagged-pdf/#adjust-position-of-text-structure) para la creación de elementos etiquetados.
-* Capacidad para verificar los [límites de formas gráficas](https://docs.aspose.com/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) al agregarlas a la página PDF.
-> La información detallada sobre los cambios y ejemplos de uso se puede encontrar en la página de [Notas de la versión de Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+* [Detección de firmas digitales PDF comprometidas](https://docs.aspose.com/pdf/es/net/extract-image-and-signature-information/#checking-signatures-for-compromise).
+* [Artefactos de numeración Bates](https://docs.aspose.com/pdf/es/net/artifacts/#adding-bates-numbering-artifact).
+* [Configuraciones de posición](https://docs.aspose.com/pdf/es/net/create-tagged-pdf/#adjust-position-of-text-structure) para la creación de elementos etiquetados.
+* Capacidad para verificar los [límites de formas gráficas](https://docs.aspose.com/pdf/es/net/aspose-pdf-drawing-graph-shapes-bounds-check/) al agregarlas a la página PDF.
+> La información detallada sobre los cambios y ejemplos de uso se puede encontrar en la página de [Notas de la versión de Aspose.PDF 25.3](https://releases.aspose.com/pdf/es/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
 
 **Otras mejoras notables**
 
@@ -99,15 +99,15 @@ Hemos mejorado tanto el rendimiento como el consumo de memoria en la conversión
 **Cambios más significativos**
 
 En Aspose.PDF 25.2 hemos añadido:
-* soporte para la conversión estándar [PDF a PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/).
-* [una opción](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) para evitar la llamada doble del delegado CustomSignHash durante la firma.
-* nuevo método `GetSignatureNames()` para obtener información sobre [firmas digitales](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) de PDF.
-* posibilidad de crear un [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) con varias anotaciones de widget.
-> La información detallada sobre los cambios y ejemplos de uso se puede encontrar en la página de [Notas de la versión de Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
+* soporte para la conversión estándar [PDF a PDF/X-4](https://docs.aspose.com/pdf/es/net/convert-pdf-to-pdfx/).
+* [una opción](https://docs.aspose.com/pdf/es/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) para evitar la llamada doble del delegado CustomSignHash durante la firma.
+* nuevo método `GetSignatureNames()` para obtener información sobre [firmas digitales](https://docs.aspose.com/pdf/es/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) de PDF.
+* posibilidad de crear un [TextBoxField](https://docs.aspose.com/pdf/es/net/create-form/#adding-radiobuttonfield) con varias anotaciones de widget.
+> La información detallada sobre los cambios y ejemplos de uso se puede encontrar en la página de [Notas de la versión de Aspose.PDF 25.2](https://releases.aspose.com/pdf/es/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
 **Otras mejoras notables**
 
-* Compresión de imágenes sin pérdida de calidad en la [optimización de PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) mejorada. Tamaño del documento comprimido reducido.
+* Compresión de imágenes sin pérdida de calidad en la [optimización de PDF](https://docs.aspose.com/pdf/es/net/optimize-pdf/#shrinking-or-compressing-all-images) mejorada. Tamaño del documento comprimido reducido.
 * [El método `Repair` del documento](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/repair/) mejorado. Ahora puede verificar y corregir valores en el arreglo Annotation.Rect.
 * Versión de dependencia de System.Text.Json actualizada para evitar posibles vulnerabilidades CVE-2024-43485.
 * Detección de ataques de firma PDF mejorada para prevenir la obtención de resultados falsos positivos.
@@ -157,7 +157,7 @@ En Aspose.PDF 25.1 hemos añadido:
 * posibilidad de validar una firma PDF utilizando un servidor de Autoridad de Certificación (CA).
 * validación de firma PDF multiplataforma utilizando algoritmos de hash SHA-3.
 
-La información detallada sobre los cambios y ejemplos de uso se puede encontrar en la página de [Notas de la versión de Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
+La información detallada sobre los cambios y ejemplos de uso se puede encontrar en la página de [Notas de la versión de Aspose.PDF 25.1](https://releases.aspose.com/pdf/es/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
 
 ## Novedades en Aspose.PDF 24.12
 

@@ -84,11 +84,11 @@ lastmod: "2025-01-31"
 
 Aspose.PDF 25.3에서는 다음을 추가했습니다:
 * 19 [고급 코드 플러그인 제품](https://products.aspose.net/pdf).
-* [손상된](https://docs.aspose.com/pdf/net/extract-image-and-signature-information/#checking-signatures-for-compromise) PDF 디지털 서명 감지.
-* [베이츠 번호 매기기 아티팩트](https://docs.aspose.com/pdf/net/artifacts/#adding-bates-numbering-artifact).
-* 태그 요소 생성을 위한 [위치 설정](https://docs.aspose.com/pdf/net/create-tagged-pdf/#adjust-position-of-text-structure).
-* PDF 페이지에 추가할 때 [그래픽 모양의 경계](https://docs.aspose.com/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/)를 검증하는 기능.
-> 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.3 릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/) 페이지에서 확인할 수 있습니다.
+* [손상된](https://docs.aspose.com/pdf/ko/net/extract-image-and-signature-information/#checking-signatures-for-compromise) PDF 디지털 서명 감지.
+* [베이츠 번호 매기기 아티팩트](https://docs.aspose.com/pdf/ko/net/artifacts/#adding-bates-numbering-artifact).
+* 태그 요소 생성을 위한 [위치 설정](https://docs.aspose.com/pdf/ko/net/create-tagged-pdf/#adjust-position-of-text-structure).
+* PDF 페이지에 추가할 때 [그래픽 모양의 경계](https://docs.aspose.com/pdf/ko/net/aspose-pdf-drawing-graph-shapes-bounds-check/)를 검증하는 기능.
+> 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.3 릴리스 노트](https://releases.aspose.com/pdf/ko/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/) 페이지에서 확인할 수 있습니다.
 
 **기타 주목할 만한 개선 사항**
 
@@ -99,15 +99,15 @@ Aspose.PDF 25.3에서는 다음을 추가했습니다:
 **가장 중요한 변경 사항**
 
 Aspose.PDF 25.2에서는 다음을 추가했습니다:
-* [PDF에서 PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx) 표준 변환 지원.
-* 서명 중 CustomSignHash 대리자의 두 번 호출을 피하는 [옵션](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function).
-* PDF의 [디지털 서명](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures)에 대한 정보를 얻기 위한 새로운 `GetSignatureNames()` 메서드.
-* 여러 위젯 주석이 있는 [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) 생성 가능성.
-> 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.2 릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) 페이지에서 확인할 수 있습니다.
+* [PDF에서 PDF/X-4](https://docs.aspose.com/pdf/ko/net/convert-pdf-to-pdfx) 표준 변환 지원.
+* 서명 중 CustomSignHash 대리자의 두 번 호출을 피하는 [옵션](https://docs.aspose.com/pdf/ko/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function).
+* PDF의 [디지털 서명](https://docs.aspose.com/pdf/ko/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures)에 대한 정보를 얻기 위한 새로운 `GetSignatureNames()` 메서드.
+* 여러 위젯 주석이 있는 [TextBoxField](https://docs.aspose.com/pdf/ko/net/create-form/#adding-radiobuttonfield) 생성 가능성.
+> 변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.2 릴리스 노트](https://releases.aspose.com/pdf/ko/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) 페이지에서 확인할 수 있습니다.
 
 **기타 주목할 만한 개선 사항**
 
-* 품질 손실 없이 이미지를 [PDF 최적화](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images)하는 기능이 향상되었습니다. 압축된 문서 크기가 줄어들었습니다.
+* 품질 손실 없이 이미지를 [PDF 최적화](https://docs.aspose.com/pdf/ko/net/optimize-pdf/#shrinking-or-compressing-all-images)하는 기능이 향상되었습니다. 압축된 문서 크기가 줄어들었습니다.
 * [문서 `Repair` 메서드](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/repair/)가 개선되었습니다. 이제 주석의 Rect 배열에서 값을 확인하고 수정할 수 있습니다.
 * 시스템.Text.Json 종속성 버전이 업데이트되어 가능한 취약성 CVE-2024-43485를 피할 수 있습니다.
 * PDF 서명 공격 감지가 개선되어 잘못된 긍정 결과를 방지합니다.
@@ -157,7 +157,7 @@ Aspose.PDF 25.1에서는 다음을 추가했습니다:
 * 인증 기관(CA) 서버를 사용하여 PDF 서명을 검증하는 가능성.
 * SHA-3 해싱 알고리즘을 사용한 크로스 플랫폼 PDF 서명 검증.
 
-변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.1 릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) 페이지에서 확인할 수 있습니다.
+변경 사항에 대한 자세한 정보와 사용 샘플은 [Aspose.PDF 25.1 릴리스 노트](https://releases.aspose.com/pdf/ko/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) 페이지에서 확인할 수 있습니다.
 
 
 ## Aspose.PDF 24.12의 새로운 기능

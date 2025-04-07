@@ -84,11 +84,11 @@ lastmod: "2025-01-31"
 
 Di Aspose.PDF 25.3 kami telah menambahkan:
 * 19 [produk Plugin Kode Tinggi](https://products.aspose.net/pdf/).
-* [Deteksi tanda tangan digital PDF yang terkompromi](https://docs.aspose.com/pdf/net/extract-image-and-signature-information/#checking-signatures-for-compromise).
-* [Artefak penomoran Bates](https://docs.aspose.com/pdf/net/artifacts/#adding-bates-numbering-artifact).
-* [Pengaturan posisi](https://docs.aspose.com/pdf/net/create-tagged-pdf/#adjust-position-of-text-structure) untuk pembuatan elemen bertag.
-* Kemampuan untuk memverifikasi [batas bentuk grafis](https://docs.aspose.com/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) saat menambahkannya ke halaman PDF.
-> Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+* [Deteksi tanda tangan digital PDF yang terkompromi](https://docs.aspose.com/pdf/id/net/extract-image-and-signature-information/#checking-signatures-for-compromise).
+* [Artefak penomoran Bates](https://docs.aspose.com/pdf/id/net/artifacts/#adding-bates-numbering-artifact).
+* [Pengaturan posisi](https://docs.aspose.com/pdf/id/net/create-tagged-pdf/#adjust-position-of-text-structure) untuk pembuatan elemen bertag.
+* Kemampuan untuk memverifikasi [batas bentuk grafis](https://docs.aspose.com/pdf/id/net/aspose-pdf-drawing-graph-shapes-bounds-check/) saat menambahkannya ke halaman PDF.
+> Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.3](https://releases.aspose.com/pdf/id/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
 
 **Peningkatan Notable Lainnya**
 
@@ -99,15 +99,15 @@ Kami telah meningkatkan baik kinerja maupun konsumsi memori dalam konversi PDF y
 **Perubahan paling signifikan**
 
 Di Aspose.PDF 25.2 kami telah menambahkan:
-* dukungan untuk konversi standar [PDF ke PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/).
-* [opsi](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) untuk menghindari pemanggilan dua kali dari delegasi CustomSignHash selama penandatanganan.
-* metode baru `GetSignatureNames()` untuk mendapatkan informasi tentang [tanda tangan digital](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) PDF.
-* kemungkinan untuk membuat [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) dengan beberapa anotasi widget.
-> Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
+* dukungan untuk konversi standar [PDF ke PDF/X-4](https://docs.aspose.com/pdf/id/net/convert-pdf-to-pdfx/).
+* [opsi](https://docs.aspose.com/pdf/id/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) untuk menghindari pemanggilan dua kali dari delegasi CustomSignHash selama penandatanganan.
+* metode baru `GetSignatureNames()` untuk mendapatkan informasi tentang [tanda tangan digital](https://docs.aspose.com/pdf/id/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) PDF.
+* kemungkinan untuk membuat [TextBoxField](https://docs.aspose.com/pdf/id/net/create-form/#adding-radiobuttonfield) dengan beberapa anotasi widget.
+> Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.2](https://releases.aspose.com/pdf/id/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
 **Peningkatan Notable Lainnya**
 
-* Kompresi gambar tanpa kehilangan kualitas pada [optimisasi PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) ditingkatkan. Ukuran dokumen terkompresi berkurang.
+* Kompresi gambar tanpa kehilangan kualitas pada [optimisasi PDF](https://docs.aspose.com/pdf/id/net/optimize-pdf/#shrinking-or-compressing-all-images) ditingkatkan. Ukuran dokumen terkompresi berkurang.
 * [Metode `Repair` Dokumen](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/repair/) ditingkatkan. Sekarang dapat memeriksa dan memperbaiki nilai dalam array Annotation.Rect.
 * Versi ketergantungan System.Text.Json diperbarui untuk menghindari kemungkinan kerentanan CVE-2024-43485.
 * Deteksi serangan tanda tangan PDF ditingkatkan untuk mencegah hasil positif palsu.
@@ -157,7 +157,7 @@ Di Aspose.PDF 25.1 kami telah menambahkan:
 * kemungkinan untuk memvalidasi tanda tangan PDF menggunakan Server Otoritas Sertifikat (CA).
 * validasi tanda tangan PDF lintas platform menggunakan algoritma hashing SHA-3.
 
-Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) halaman.
+Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.1](https://releases.aspose.com/pdf/id/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) halaman.
 
 
 ## Apa yang baru di Aspose.PDF 24.12

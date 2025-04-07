@@ -84,11 +84,11 @@ lastmod: "2025-01-31"
 
 في Aspose.PDF 25.3 أضفنا:
 * 19 [منتج من High Code Plugin](https://products.aspose.net/pdf/).
-* [كشف التوقيعات الرقمية المهددة](https://docs.aspose.com/pdf/net/extract-image-and-signature-information/#checking-signatures-for-compromise).
-* [آثار ترقيم Bates](https://docs.aspose.com/pdf/net/artifacts/#adding-bates-numbering-artifact).
-* [إعدادات الموضع](https://docs.aspose.com/pdf/net/create-tagged-pdf/#adjust-position-of-text-structure) لإنشاء العناصر المعنونة.
-* القدرة على التحقق من [حدود الأشكال الرسومية](https://docs.aspose.com/pdf/net/aspose-pdf-drawing-graph-shapes-bounds-check/) عند إضافتها إلى صفحة PDF.
-> يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام على صفحة [ملاحظات إصدار Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+* [كشف التوقيعات الرقمية المهددة](https://docs.aspose.com/pdf/ar/net/extract-image-and-signature-information/#checking-signatures-for-compromise).
+* [آثار ترقيم Bates](https://docs.aspose.com/pdf/ar/net/artifacts/#adding-bates-numbering-artifact).
+* [إعدادات الموضع](https://docs.aspose.com/pdf/ar/net/create-tagged-pdf/#adjust-position-of-text-structure) لإنشاء العناصر المعنونة.
+* القدرة على التحقق من [حدود الأشكال الرسومية](https://docs.aspose.com/pdf/ar/net/aspose-pdf-drawing-graph-shapes-bounds-check/) عند إضافتها إلى صفحة PDF.
+> يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام على صفحة [ملاحظات إصدار Aspose.PDF 25.3](https://releases.aspose.com/pdf/ar/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
 
 **تحسينات ملحوظة أخرى**
 
@@ -99,15 +99,15 @@ lastmod: "2025-01-31"
 **أهم التغييرات**
 
 في Aspose.PDF 25.2 أضفنا:
-* دعم تحويل [PDF إلى معيار PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/).
-* [خيار](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) لتجنب استدعاء delegate CustomSignHash مرتين أثناء التوقيع.
-* طريقة جديدة `GetSignatureNames()` للحصول على معلومات حول [التوقيعات الرقمية](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) لملف PDF.
-* إمكانية إنشاء [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) مع عدة تعليقات توضيحية للعنصر.
-> يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام على صفحة [ملاحظات إصدار Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
+* دعم تحويل [PDF إلى معيار PDF/X-4](https://docs.aspose.com/pdf/ar/net/convert-pdf-to-pdfx/).
+* [خيار](https://docs.aspose.com/pdf/ar/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) لتجنب استدعاء delegate CustomSignHash مرتين أثناء التوقيع.
+* طريقة جديدة `GetSignatureNames()` للحصول على معلومات حول [التوقيعات الرقمية](https://docs.aspose.com/pdf/ar/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) لملف PDF.
+* إمكانية إنشاء [TextBoxField](https://docs.aspose.com/pdf/ar/net/create-form/#adding-radiobuttonfield) مع عدة تعليقات توضيحية للعنصر.
+> يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام على صفحة [ملاحظات إصدار Aspose.PDF 25.2](https://releases.aspose.com/pdf/ar/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
 **تحسينات ملحوظة أخرى**
 
-* تم تحسين ضغط الصور دون فقدان الجودة في [تحسين PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images). تم تقليل حجم المستند المضغوط.
+* تم تحسين ضغط الصور دون فقدان الجودة في [تحسين PDF](https://docs.aspose.com/pdf/ar/net/optimize-pdf/#shrinking-or-compressing-all-images). تم تقليل حجم المستند المضغوط.
 * تم تحسين [طريقة `Repair` للمستند](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/repair/). يمكنها الآن التحقق وإصلاح القيم في مصفوفة Annotation.Rect.
 * تم تحديث إصدار الاعتماد على System.Text.Json لتجنب الثغرات المحتملة CVE-2024-43485.
 * تم تحسين كشف هجمات توقيع PDF لمنع الحصول على نتائج إيجابية كاذبة.
@@ -157,7 +157,7 @@ private static void AddingNewExtGState()
 * إمكانية التحقق من توقيع PDF باستخدام خادم سلطة الشهادة (CA).
 * التحقق من توقيع PDF عبر الأنظمة الأساسية باستخدام خوارزميات تجزئة SHA-3.
 
-يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام على صفحة [ملاحظات إصدار Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
+يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام على صفحة [ملاحظات إصدار Aspose.PDF 25.1](https://releases.aspose.com/pdf/ar/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
 
 
 ## ما الجديد في Aspose.PDF 24.12
