@@ -197,7 +197,7 @@ private static void ValidatePdfAStandard()
 
 ## Convert PDF file to PDF/A-3b
 
-<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>Convert PDF to PDF/A-1b</strong></a>
+<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>Convert PDF to PDF/A-3b</strong></a>
 
 Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b format.
 
