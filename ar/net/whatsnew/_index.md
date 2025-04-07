@@ -1145,7 +1145,7 @@ private static void UsingGraphicsAbsorber()
             // Use the `Visit` method to extract graphics from the page
             graphicsAbsorber.Visit(page);
 
-            // Step 5: Display information about the extracted elements
+            // Display information about the extracted elements
             foreach (var element in graphicsAbsorber.Elements)
             {
                 Console.WriteLine($"Page Number: {element.SourcePage.Number}");

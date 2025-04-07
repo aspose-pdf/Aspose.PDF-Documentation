@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "412",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,12 +73,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfx/"
     },
-    "dateModified": "2025-01-16",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
 
 **Aspose.PDF for .NET** vous permet de convertir un fichier PDF en un fichier PDF conforme à <abbr title="Portable Document Format eXchange">PDF/X</abbr>. Cet article explique comment.
+
+- [Convertir PDF en PDF/X-4](#csharp-convert-pdf-to-x4)
 
 Les extraits de code suivants fonctionnent également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
@@ -86,6 +88,8 @@ Les extraits de code suivants fonctionnent également avec la bibliothèque [Asp
 **Aspose.PDF for .NET** prend en charge les normes suivantes : PDF/X-1a:2001, PDF/X-1a:2003, PDF/X-3:2003, PDF/X-4.
 
 ## Convertir un fichier PDF en PDF/X-4 avec un profil ICC externe
+
+<a name="csharp-convert-pdf-to-x4" id="csharp-convert-pdf-to-x4"><strong>Convertir PDF en PDF/X4</strong></a>
 
 L'extrait de code suivant montre comment convertir des fichiers PDF en PDF conforme à PDF/X-4 et fournir un profil ICC externe pour garantir une bonne restitution des couleurs.
 

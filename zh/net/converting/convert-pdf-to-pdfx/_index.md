@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to PDF/X exchange format",
     "alternativeHeadline": "Effortless PDF to PDF/X Conversion in C#",
-    "abstract": "Aspose.PDF for .NET 中的 PDF/X 支持使标准 PDF 文件轻松转换为各种 PDF/X 合规格式。此功能不仅通过全面验证确保符合 PDF/X 标准，还允许使用自定义 ICC 配置文件以确保在每个环境中正确的图形交换。探索 Aspose.PDF 的强大功能，以实现高效和可靠的 PDF/X 转换",
+    "abstract": "Aspose.PDF for .NET 中的 PDF/X 支持使标准 PDF 文件轻松转换为各种符合 PDF/X 的格式。此功能不仅通过全面验证确保符合 PDF/X 标准，还允许使用自定义 ICC 配置文件，以确保在每个环境中正确的图形交换。探索 Aspose.PDF 的强大功能，以实现高效可靠的 PDF/X 转换",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "358",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,12 +73,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfx/"
     },
-    "dateModified": "2025-01-16",
-    "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF 不仅可以执行简单易行的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
 }
 </script>
 
-**Aspose.PDF for .NET** 使您能够将 PDF 文件转换为符合 <abbr title="Portable Document Format eXchange">PDF/X</abbr> 的 PDF 文件。本文将解释如何进行转换。
+**Aspose.PDF for .NET** 使您能够将 PDF 文件转换为符合 <abbr title="可移植文档格式交换">PDF/X</abbr> 的 PDF 文件。本文将解释如何操作。
+
+- [将 PDF 转换为 PDF/X-4](#csharp-convert-pdf-to-x4)
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
@@ -86,6 +88,8 @@ sitemap:
 **Aspose.PDF for .NET** 支持以下标准：PDF/X-1a:2001、PDF/X-1a:2003、PDF/X-3:2003、PDF/X-4。
 
 ## 使用外部 ICC 配置文件将 PDF 文件转换为 PDF/X-4
+
+<a name="csharp-convert-pdf-to-x4" id="csharp-convert-pdf-to-x4"><strong>将 PDF 转换为 PDF/X4</strong></a>
 
 以下代码片段演示了如何将 PDF 文件转换为符合 PDF/X-4 的 PDF，并提供外部 ICC 配置文件以确保正确的颜色呈现。
 

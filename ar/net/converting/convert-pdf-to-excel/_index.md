@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to Excel in .NET",
     "alternativeHeadline": "Convert PDF Files to Excel Formats with C#",
-    "abstract": "اكتشف القدرة القوية لمكتبة Aspose.PDF for .NET لتحويل مستندات PDF بسهولة إلى تنسيقات Excel متنوعة، بما في ذلك XLS و XLSX و CSV و ODS، باستخدام C#. لا تتيح هذه الميزة فقط تحويل صفحات PDF الفردية إلى أوراق عمل Excel منفصلة، بل تقدم أيضًا خيارات للأوراق المدمجة، مما يوفر مرونة للمستخدمين لإدارة بيانات PDF بكفاءة.",
+    "abstract": "اكتشف القدرة القوية لمكتبة Aspose.PDF for .NET لتحويل مستندات PDF بسهولة إلى تنسيقات Excel المختلفة، بما في ذلك XLS و XLSX و CSV و ODS، باستخدام C#. هذه الميزة لا تسمح فقط بتحويل صفحات PDF الفردية إلى أوراق عمل Excel منفصلة ولكنها تقدم أيضًا خيارات للأوراق المدمجة، مما يوفر مرونة للمستخدمين لإدارة بيانات PDF الخاصة بهم بكفاءة.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1780",
+    "wordcount": "1411",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-excel/"
     },
-    "dateModified": "2024-11-25",
-    "description": "يمكن لمكتبة Aspose.PDF أداء المهام البسيطة والسلسة، ولكنها أيضًا قادرة على التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+    "dateModified": "2025-04-04",
+    "description": "يمكن لمكتبة Aspose.PDF أداء المهام البسيطة والسلسة ولكنها أيضًا قادرة على التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
 
@@ -84,71 +84,41 @@ sitemap:
 
 تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-_التنسيق_: **XLS**
+- [تحويل PDF إلى XLS](#csharp-pdf-to-xls)
+- [تحويل PDF إلى XLSX](#csharp-pdf-to-xlsx)
+- [تحويل PDF إلى Excel](#csharp-pdf-to-xlsx)
+- [تحويل PDF إلى XLS مع ورقة عمل واحدة](#csharp-pdf-to-excel-single)
+- [تحويل PDF إلى XLSX مع ورقة عمل واحدة](#csharp-pdf-to-excel-single)
+- [تحويل PDF إلى XML Excel](#csharp-pdf-to-excel-xml-2003)
+- [تحويل PDF إلى CSV](#csharp-pdf-to-csv)
+- [تحويل PDF إلى ODS](#csharp-pdf-to-ods)
+- [تحويل PDF إلى XLSM](#csharp-pdf-to-xlsm)
 
-- [C# PDF إلى XLS](#csharp-pdf-to-xls)
-- [C# تحويل PDF إلى XLS](#csharp-pdf-to-xls)
-- [C# كيفية تحويل ملف PDF إلى XLS](#csharp-pdf-to-xls)
-
-_التنسيق_: **XLSX**
-
-- [C# PDF إلى XLSX](#csharp-pdf-to-xlsx)
-- [C# تحويل PDF إلى XLSX](#csharp-pdf-to-xlsx)
-- [C# كيفية تحويل ملف PDF إلى XLSX](#csharp-pdf-to-xlsx)
-
-_التنسيق_: **Excel**
-
-- [C# PDF إلى Excel](#csharp-pdf-to-xlsx)
-- [C# PDF إلى Excel XLS](#csharp-pdf-to-xls)
-- [C# PDF إلى Excel XLSX](#csharp-pdf-to-xlsx)
-
-_التنسيق_: **ورقة عمل Excel واحدة**
-
-- [C# تحويل PDF إلى XLS مع ورقة عمل واحدة](#csharp-pdf-to-excel-single)
-- [C# تحويل PDF إلى XLSX مع ورقة عمل واحدة](#csharp-pdf-to-excel-single)
-
-_التنسيق_: **تنسيق XML Spreadsheet 2003**
-
-- [C# PDF إلى XML Excel](#csharp-pdf-to-excel-xml-2003)
-- [C# تحويل PDF إلى XML Excel Spreadsheet](#csharp-pdf-to-excel-xml-2003)
-
-_التنسيق_: **CSV**
-
-- [C# PDF إلى CSV](#csharp-pdf-to-csv)
-- [C# تحويل PDF إلى CSV](#csharp-pdf-to-csv)
-- [C# كيفية تحويل ملف PDF إلى CSV](#csharp-pdf-to-csv)
-
-_التنسيق_: **ODS**
-
-- [C# PDF إلى ODS](#csharp-pdf-to-ods)
-- [C# تحويل PDF إلى ODS](#csharp-pdf-to-ods)
-- [C# كيفية تحويل ملف PDF إلى ODS](#csharp-pdf-to-ods)
-
-## تحويلات C# PDF إلى Excel
+## تحويل PDF إلى Excel باستخدام C#
 
 **Aspose.PDF for .NET** تدعم ميزة تحويل ملفات PDF إلى تنسيقات Excel 2007 و CSV و SpeadsheetML.
 
-Aspose.PDF for .NET هي مكون لمعالجة PDF، وقد قدمنا ميزة تقوم بتحويل ملف PDF إلى مصنف Excel (ملفات XLSX). خلال هذا التحويل، يتم تحويل الصفحات الفردية من ملف PDF إلى أوراق عمل Excel.
+Aspose.PDF for .NET هو مكون لمعالجة PDF، وقد قدمنا ميزة تقوم بتحويل ملف PDF إلى مصنف Excel (ملفات XLSX). خلال هذا التحويل، يتم تحويل الصفحات الفردية من ملف PDF إلى أوراق عمل Excel.
 
 {{% alert color="success" %}}
 **حاول تحويل PDF إلى Excel عبر الإنترنت**
 
-تقدم لك Aspose.PDF for .NET تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
+Aspose.PDF for .NET تقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)، حيث يمكنك محاولة استكشاف الوظائف وجودة العمل.
 
-[![تحويل Aspose.PDF PDF إلى Excel مع تطبيق مجاني](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+[![Aspose.PDF تحويل PDF إلى Excel مع تطبيق مجاني](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
 لتحويل ملفات PDF إلى تنسيق <abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>، تحتوي Aspose.PDF على فئة تسمى [ExcelSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/excelsaveoptions). يتم تمرير كائن من فئة ExcelSaveOptions كوسيط ثانٍ إلى مُنشئ Document.Save(..).
 
 تظهر مقتطفات الشيفرة التالية العملية لتحويل ملف PDF إلى تنسيق XLS أو XLSX باستخدام Aspose.PDF for .NET.
 
-<a name="csharp-pdf-to-xls"><strong>الخطوات: تحويل PDF إلى XLS في C#</strong></a>
+<a name="csharp-pdf-to-xls" id="cshart-pdf-to-xls"><strong>تحويل PDF إلى XLS</strong></a>
 
 1. إنشاء مثيل من كائن **Document** مع مستند PDF المصدر.
 2. إنشاء مثيل من **ExcelSaveOptions**.
 3. حفظه بتنسيق **XLS** مع تحديد **.xls extension** عن طريق استدعاء **Document.Save()** وتمرير **ExcelSaveOptions**.
 
-<a name="csharp-pdf-to-xlsx"><strong>الخطوات: تحويل PDF إلى XLSX في C#</strong></a>
+<a name="csharp-pdf-to-xlsx" id="cshart-pdf-to-xlsx"><strong>تحويل PDF إلى XLSX</strong></a>
 
 1. إنشاء مثيل من كائن **Document** مع مستند PDF المصدر.
 2. إنشاء مثيل من **ExcelSaveOptions**.
@@ -203,11 +173,11 @@ private static void ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst()
 
 عند تصدير ملف PDF يحتوي على العديد من الصفحات إلى XLS، يتم تصدير كل صفحة إلى ورقة مختلفة في ملف Excel. وذلك لأن خاصية MinimizeTheNumberOfWorksheets تم تعيينها على false بشكل افتراضي. لضمان تصدير جميع الصفحات إلى ورقة واحدة فقط في ملف Excel الناتج، قم بتعيين خاصية MinimizeTheNumberOfWorksheets إلى true.
 
-<a name="csharp-pdf-to-excel-single"><strong>الخطوات: تحويل PDF إلى XLS أو XLSX ورقة عمل واحدة في C#</strong></a>
+<a name="csharp-pdf-to-excel-single" id="cshart-pdf-to-excel-single"><strong>تحويل PDF إلى XLS أو XLSX ورقة عمل واحدة</strong></a>
 
 1. إنشاء مثيل من كائن **Document** مع مستند PDF المصدر.
 2. إنشاء مثيل من **ExcelSaveOptions** مع **MinimizeTheNumberOfWorksheets = true**.
-3. حفظه بتنسيق **XLS** أو **XLSX** مع وجود ورقة عمل واحدة عن طريق استدعاء **Document.Save()** وتمرير **ExcelSaveOptions**.
+3. حفظه بتنسيق **XLS** أو **XLSX** مع ورقة عمل واحدة عن طريق استدعاء **Document.Save()** وتمرير **ExcelSaveOptions**.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,13 +203,13 @@ private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 
 ## التحويل إلى تنسيقات جداول بيانات أخرى
 
-### التحويل إلى تنسيق XML Spreadsheet 2003
+### تحويل إلى تنسيق XML Spreadsheet 2003
 
 منذ الإصدار 20.8، تستخدم Aspose.PDF تنسيق ملف Microsoft Excel Open XML Spreadsheet 2007 كافتراضي لتخزين البيانات. لتحويل ملفات PDF إلى تنسيق XML Spreadsheet 2003، تحتوي Aspose.PDF على فئة تسمى [ExcelSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/excelsaveoptions) مع [Format](https://reference.aspose.com/pdf/ar/net/aspose.pdf/excelsaveoptions/properties/format). يتم تمرير كائن من فئة [ExcelSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/excelsaveoptions) كوسيط ثانٍ إلى طريقة [Document.Save(..)](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index).
 
 تظهر مقتطفات الشيفرة التالية العملية لتحويل ملف PDF إلى تنسيق XLS Excel 2003 XML.
 
-<a name="csharp-pdf-to-excel-xml-2003"><strong>الخطوات: تحويل PDF إلى تنسيق Excel 2003 XML في C#</strong></a>
+<a name="csharp-pdf-to-excel-xml-2003" id="cshart-pdf-to-excel-xml-2003"><strong>تحويل PDF إلى تنسيق Excel 2003 XML</strong></a>
 
 1. إنشاء مثيل من كائن **Document** مع مستند PDF المصدر.
 2. إنشاء مثيل من **ExcelSaveOptions** مع **Format = ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003**.
@@ -267,11 +237,11 @@ private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
  }
 ```
 
-### التحويل إلى CSV
+### تحويل إلى CSV
 
 يتم التحويل إلى تنسيق CSV بنفس الطريقة المذكورة أعلاه. كل ما تحتاجه هو تعيين التنسيق المناسب.
 
-<a name="csharp-pdf-to-csv"><strong>الخطوات: تحويل PDF إلى CSV في C#</strong></a>
+<a name="csharp-pdf-to-csv"  id="cshart-pdf-to-csv"><strong>تحويل PDF إلى CSV</strong></a>
 
 1. إنشاء مثيل من كائن **Document** مع مستند PDF المصدر.
 2. إنشاء مثيل من **ExcelSaveOptions** مع **Format = ExcelSaveOptions.ExcelFormat.CSV**.
@@ -299,9 +269,9 @@ private static void ConvertPDFToCSV()
 }
 ```
 
-### التحويل إلى ODS
+### تحويل إلى ODS
 
-<a name="csharp-pdf-to-ods"><strong>الخطوات: تحويل PDF إلى ODS في C#</strong></a>
+<a name="csharp-pdf-to-ods"  id="cshart-pdf-to-ods"><strong>تحويل PDF إلى ODS</strong></a>
 
 1. إنشاء مثيل من كائن **Document** مع مستند PDF المصدر.
 2. إنشاء مثيل من **ExcelSaveOptions** مع **Format = ExcelSaveOptions.ExcelFormat.ODS**.
@@ -331,56 +301,34 @@ private static void ConvertPDFToODS()
 }
 ```
 
-## انظر أيضًا 
+### تحويل إلى XLSM
 
-تغطي هذه المقالة أيضًا هذه المواضيع. الشيفرات هي نفسها كما هو مذكور أعلاه.
+<a name="csharp-pdf-to-xlsm" id="cshart-pdf-to-xlsm"><strong>تحويل PDF إلى XLSM</strong></a>
 
-_التنسيق_: **Excel**
-- [C# PDF إلى Excel Code](#csharp-pdf-to-xlsx)
-- [C# PDF إلى Excel API](#csharp-pdf-to-xlsx)
-- [C# PDF إلى Excel برمجيًا](#csharp-pdf-to-xlsx)
-- [C# PDF إلى Excel Library](#csharp-pdf-to-xlsx)
-- [C# حفظ PDF كـ Excel](#csharp-pdf-to-xlsx)
-- [C# توليد Excel من PDF](#csharp-pdf-to-xlsx)
-- [C# إنشاء Excel من PDF](#csharp-pdf-to-xlsx)
-- [C# PDF إلى Excel Converter](#csharp-pdf-to-xlsx)
+1. إنشاء مثيل من كائن **Document** مع مستند PDF المصدر.
+2. إنشاء مثيل من **ExcelSaveOptions** مع **Format = ExcelSaveOptions.ExcelFormat.XLSM**.
+3. حفظه بتنسيق **XLSM** عن طريق استدعاء **Document.Save()** وتمرير **ExcelSaveOptions**.
 
-_التنسيق_: **XLS**
-- [C# PDF إلى XLS Code](#csharp-pdf-to-xls)
-- [C# PDF إلى XLS API](#csharp-pdf-to-xls)
-- [C# PDF إلى XLS برمجيًا](#csharp-pdf-to-xls)
-- [C# PDF إلى XLS Library](#csharp-pdf-to-xls)
-- [C# حفظ PDF كـ XLS](#csharp-pdf-to-xls)
-- [C# توليد XLS من PDF](#csharp-pdf-to-xls)
-- [C# إنشاء XLS من PDF](#csharp-pdf-to-xls)
-- [C# PDF إلى XLS Converter](#csharp-pdf-to-xls)
+يتم التحويل إلى تنسيق XLSM بنفس الطريقة كما هو الحال مع جميع التنسيقات الأخرى.
 
-_التنسيق_: **XLSX**
-- [C# PDF إلى XLSX Code](#csharp-pdf-to-xlsx)
-- [C# PDF إلى XLSX API](#csharp-pdf-to-xlsx)
-- [C# PDF إلى XLSX برمجيًا](#csharp-pdf-to-xlsx)
-- [C# PDF إلى XLSX Library](#csharp-pdf-to-xlsx)
-- [C# حفظ PDF كـ XLSX](#csharp-pdf-to-xlsx)
-- [C# توليد XLSX من PDF](#csharp-pdf-to-xlsx)
-- [C# إنشاء XLSX من PDF](#csharp-pdf-to-xlsx)
-- [C# PDF إلى XLSX Converter](#csharp-pdf-to-xlsx)
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToXLSM()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate ExcelSaveOptions object
+        var saveOptions = new Aspose.Pdf.ExcelSaveOptions
+        {
+            Format = Aspose.Pdf.ExcelSaveOptions.ExcelFormat.XLSM
+        };
 
-_التنسيق_: **CSV**
-- [C# PDF إلى CSV Code](#csharp-pdf-to-csv)
-- [C# PDF إلى CSV API](#csharp-pdf-to-csv)
-- [C# PDF إلى CSV برمجيًا](#csharp-pdf-to-csv)
-- [C# PDF إلى CSV Library](#csharp-pdf-to-csv)
-- [C# حفظ PDF كـ CSV](#csharp-pdf-to-csv)
-- [C# توليد CSV من PDF](#csharp-pdf-to-csv)
-- [C# إنشاء CSV من PDF](#csharp-pdf-to-csv)
-- [C# PDF إلى CSV Converter](#csharp-pdf-to-csv)
-
-_التنسيق_: **ODS**
-- [C# PDF إلى ODS Code](#csharp-pdf-to-ods)
-- [C# PDF إلى ODS API](#csharp-pdf-to-ods)
-- [C# PDF إلى ODS برمجيًا](#csharp-pdf-to-ods)
-- [C# PDF إلى ODS Library](#csharp-pdf-to-ods)
-- [C# حفظ PDF كـ ODS](#csharp-pdf-to-ods)
-- [C# توليد ODS من PDF](#csharp-pdf-to-ods)
-- [C# إنشاء ODS من PDF](#csharp-pdf-to-ods)
-- [C# PDF إلى ODS Converter](#csharp-pdf-to-ods)
+        // Save the file in XLSM format
+        document.Save(dataDir + "PDFToODS_out.xlsm", saveOptions);
+    }
+}
+```

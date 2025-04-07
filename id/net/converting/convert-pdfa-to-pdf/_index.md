@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF/A to PDF format",
     "alternativeHeadline": "Remove PDF/A Compliance for Enhanced Document Flexibility in C#",
-    "abstract": "Aspose.PDF sekarang menyediakan fitur untuk mengonversi file PDF/A menjadi dokumen PDF standar dengan menggunakan pustaka .NET-nya. Fungsionalitas ini memungkinkan pengguna untuk menghapus batasan kepatuhan PDF/A, memungkinkan pengeditan dan modifikasi konten PDF yang lebih mudah tanpa batasan yang diberlakukan oleh standar PDF/A",
+    "abstract": "Aspose.PDF sekarang menyediakan fitur untuk mengonversi file PDF/A menjadi dokumen PDF standar dengan menggunakan pustaka .NET-nya. Fungsionalitas ini memungkinkan pengguna untuk menghapus batasan kepatuhan PDF/A, memungkinkan pengeditan dan modifikasi konten PDF yang lebih mudah tanpa batasan yang dikenakan oleh standar PDF/A",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "259",
+    "wordcount": "399",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdfa-to-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
@@ -83,7 +83,7 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 ## Mengonversi dokumen PDF/A ke PDF
 
 Mengonversi dokumen PDF/A ke PDF berarti menghapus <abbr title="Portable Document Format Archive">PDF/A</abbr> batasan dari dokumen asli. 
-Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) memiliki metode [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) untuk menghapus informasi kepatuhan PDF dari file input/sumber.
+Kelas [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document) memiliki metode [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/removepdfacompliance) untuk menghapus informasi kepatuhan PDF dari file input/sumber.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -128,7 +128,7 @@ private static void ConvertPDFAtoPDF()
 {{< /tab >}}
 {{< /tabs >}}
 
-Kepatuhan PDF/A juga dapat dihapus jika Anda melakukan perubahan apa pun pada dokumen (misalnya, menambahkan halaman). Dalam contoh berikut, dokumen keluaran kehilangan kepatuhan PDF/A setelah halaman baru ditambahkan.
+Kepatuhan PDF/A juga dapat dihapus jika Anda melakukan perubahan apa pun dalam dokumen (misalnya menambahkan halaman). Dalam contoh berikut, dokumen keluaran kehilangan kepatuhan PDF/A setelah halaman baru ditambahkan.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

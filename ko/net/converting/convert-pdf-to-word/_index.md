@@ -7,7 +7,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ko/net/convert-pdf-to-word/
 lastmod: "2022-08-04"
-description: PDF를 Microsoft Word 형식으로 변환하기 위한 C# 코드 작성 방법을 배우고 PDF를 DOC(DOCX)로 변환하는 방법을 조정하세요.
+description: C# 코드를 사용하여 Aspose.PDF for .NET와 함께 PDF를 Microsoft Word 형식으로 변환하는 방법과 PDF를 DOC(DOCX)로 변환하는 기능을 조정하는 방법을 알아보세요.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1495",
+    "wordcount": "1114",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,52 +73,37 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-word/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하세요."
 }
 </script>
 
 ## 개요
 
-이 문서에서는 **C#을 사용하여 PDF를 Microsoft Word 문서로 변환하는 방법**을 설명합니다. 다음 주제를 다룹니다.
+이 기사에서는 **C#을 사용하여 PDF를 Microsoft Word 문서로 변환하는 방법**에 대해 설명합니다. 다음 주제를 다룹니다.
 
-_형식_: **DOC**
+- [PDF를 DOC로 변환하기](#csharp-pdf-to-doc)
+- [PDF를 DOCX로 변환하기](#csharp-pdf-to-docx)
 
-- [C# PDF를 DOC로 변환하기](#csharp-pdf-to-doc)
-- [C# PDF를 DOC로 변환하기](#csharp-pdf-to-doc)
-- [C# PDF 파일을 DOC로 변환하는 방법](#csharp-pdf-to-doc)
-
-_형식_: **DOCX**
-
-- [C# PDF를 DOCX로 변환하기](#csharp-pdf-to-docx)
-- [C# PDF를 DOCX로 변환하기](#csharp-pdf-to-docx)
-- [C# PDF 파일을 DOCX로 변환하는 방법](#csharp-pdf-to-docx)
-
-_형식_: **Word**
-
-- [C# PDF를 Word로 변환하기](#csharp-pdf-to-docx)
-- [C# PDF를 Word로 변환하기](#csharp-pdf-to-doc)
-- [C# PDF 파일을 Word로 변환하는 방법](#csharp-pdf-to-docx)
-
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ## PDF를 DOC 및 DOCX로 변환하기
 
-가장 인기 있는 기능 중 하나는 PDF를 Microsoft Word DOC로 변환하는 것으로, 콘텐츠 관리를 더 쉽게 만들어 줍니다. **Aspose.PDF for .NET**는 PDF 파일을 DOC 및 DOCX 형식으로 빠르고 효율적으로 변환할 수 있게 해줍니다.
+가장 인기 있는 기능 중 하나는 PDF를 Microsoft Word DOC 포맷으로 변환하는 기능으로, 콘텐츠 관리를 보다 쉽게 만들어 줍니다. **Aspose.PDF for .NET**을(를) 사용하면 PDF 파일을 DOC 및 DOCX 형식으로 빠르고 효율적으로 변환할 수 있습니다.
 
 ## PDF를 DOC (Microsoft Word 97-2003) 파일로 변환하기
 
-PDF 파일을 DOC 형식으로 쉽게 변환하고 완벽한 제어를 할 수 있습니다. Aspose.PDF for .NET는 유연하며 다양한 변환을 지원합니다. 예를 들어, PDF 문서의 페이지를 이미지로 변환하는 것은 매우 인기 있는 기능입니다.
+PDF 파일을 손쉽게 DOC 형식으로 변환하고 완벽한 제어를 할 수 있습니다. Aspose.PDF for .NET은(는) 유연하며 다양한 변환을 지원합니다. 예를 들어, PDF 문서의 페이지를 이미지로 변환하는 기능은 매우 인기 있는 기능입니다.
 
-많은 고객들이 PDF에서 DOC로의 변환을 요청했습니다: PDF 파일을 Microsoft Word 문서로 변환하는 것입니다. 고객들은 PDF 파일은 쉽게 편집할 수 없고 Word 문서는 편집할 수 있기 때문에 이를 원합니다. 일부 회사는 사용자가 PDF에서 시작된 파일의 텍스트, 표 및 이미지를 조작할 수 있기를 원합니다.
+많은 고객들이 PDF를 DOC로 변환하는 기능을 요청해 왔습니다: PDF 파일을 Microsoft Word 문서로 변환하는 것입니다. 이는 PDF 파일은 쉽게 편집할 수 없지만 Word 문서는 편집할 수 있기 때문입니다. 일부 회사는 사용자들이 PDF로 시작된 파일의 텍스트, 표 및 이미지를 조작할 수 있기를 원합니다.
 
-간단하고 이해하기 쉽게 만드는 전통을 이어가며, Aspose.PDF for .NET는 소스 PDF 파일을 DOC 파일로 변환하는 데 두 줄의 코드만 필요합니다. 이 기능을 구현하기 위해 SaveFormat이라는 열거형을 도입하였으며, 그 값 .Doc은 소스 파일을 Microsoft Word 형식으로 저장할 수 있게 해줍니다.
+모든 것을 간단하고 이해하기 쉽게 만드는 전통을 이어가며, Aspose.PDF for .NET은 소스 PDF 파일을 두 줄의 코드로 DOC 파일로 변환할 수 있게 해줍니다. 이 기능을 구현하기 위해 SaveFormat이라는 열거형이 도입되었으며, 그 값인 .Doc을 사용하면 소스 파일을 Microsoft Word 형식으로 저장할 수 있습니다.
 
-다음 C# 코드 스니펫은 PDF 파일을 DOC 형식으로 변환하는 방법을 보여줍니다.
+다음 C# 코드 스니펫은 PDF 파일을 DOC 형식으로 변환하는 예를 보여줍니다.
 
-<a name="csharp-pdf-to-doc"><strong>단계: C#에서 PDF를 DOC로 변환하기</strong></a>
+<a name="csharp-pdf-to-doc" id="csharp-pdf-to-doc"><strong>PDF를 DOC로 변환하기</strong></a>
 
-1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
+1. 소스 PDF 문서를 사용하여 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
 2. **Document.Save()** 메서드를 호출하여 **SaveFormat.Doc** 형식으로 저장합니다.
 
 ```csharp
@@ -137,15 +122,15 @@ private static void ConvertPDFtoWord()
 }
 ```
 
-### DocSaveOptions 클래스 사용하기
+### DocSaveOptions 클래스를 사용하는 방법
 
-[`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) 클래스는 PDF 파일을 DOC 형식으로 변환하는 데 도움이 되는 여러 속성을 제공합니다. 이러한 속성 중 Mode는 PDF 콘텐츠의 인식 모드를 지정할 수 있게 해줍니다. 이 속성에 대해 RecognitionMode 열거형의 값을 선택할 수 있습니다. 이러한 값 각각은 특정 이점과 제한이 있습니다:
+[`DocSaveOptions`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions) 클래스는 PDF 파일을 DOC 형식으로 변환하는 기능을 향상시키는 다양한 속성을 제공합니다. 이러한 속성 중 Mode는 PDF 콘텐츠의 인식 모드를 지정할 수 있게 해줍니다. 이 속성에는 RecognitionMode 열거형의 값을 선택할 수 있습니다. 각각의 값은 특정한 장점과 한계를 가지고 있습니다:
 
-- [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) 모드는 빠르고 PDF 파일의 원래 모양을 유지하는 데 좋지만, 결과 문서의 편집 가능성이 제한될 수 있습니다. 원본 PDF의 시각적으로 그룹화된 텍스트 블록은 출력 문서에서 텍스트 상자로 변환됩니다. 이는 원본과 최대한 유사하게 만들어 주므로 출력 문서가 보기 좋지만, 전적으로 텍스트 상자로 구성되어 있어 Microsoft Word에서 편집하기가 상당히 어렵습니다.
-- [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) 모드는 전체 인식 모드로, 엔진이 그룹화 및 다단계 분석을 수행하여 원본 문서를 작성자의 의도에 따라 복원하면서 쉽게 편집할 수 있는 문서를 생성합니다. 제한 사항은 출력 문서가 원본과 다르게 보일 수 있다는 것입니다.
+- [`Textbox`](https://reference.aspose.com/pdf/ko/net/aspose.pdf.docsaveoptions/recognitionmode) 모드는 빠르며 PDF 파일의 원본 모양을 보존하는 데 좋지만, 결과 문서의 편집 가능성은 제한적일 수 있습니다. 원본 PDF에 있는 시각적으로 그룹화된 모든 텍스트 블록이 출력 문서에서 텍스트 상자로 변환됩니다. 이로 인해 출력 문서가 원본과 최대한 유사하게 보이지만, 완전히 텍스트 상자로 구성되어 있어 Microsoft Word에서 편집하기가 상당히 어렵습니다.
+- [`Flow`](https://reference.aspose.com/pdf/ko/net/aspose.pdf.docsaveoptions/recognitionmode) 모드는 전체 인식 모드로, 엔진이 그룹화 및 다단계 분석을 수행하여 작성자의 의도에 맞게 원본 문서를 복원하면서 쉽게 편집 가능한 문서를 생성합니다. 단점은 출력 문서가 원본과 다르게 보일 수 있다는 점입니다.
 
-[`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) 속성은 텍스트 요소 간의 상대적 근접성을 제어하는 데 사용할 수 있습니다. 이는 거리가 글꼴 크기로 정규화된다는 것을 의미합니다. 더 큰 글꼴은 음절 간의 간격이 더 클 수 있으며 여전히 하나의 전체로 간주됩니다. 이는 글꼴 크기의 백분율로 지정됩니다; 예를 들어, 1 = 100%. 이는 12pt 간격으로 배치된 12pt의 두 문자가 근접하다는 것을 의미합니다.
-- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets)는 변환 중에 글머리 기호 인식을 활성화하는 데 사용됩니다.
+[`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) 속성은 텍스트 요소들 간의 상대적 간격을 조절하는 데 사용할 수 있습니다. 이는 거리가 글꼴 크기에 의해 정규화된다는 의미입니다. 더 큰 글꼴은 음절 사이에 더 큰 간격을 가질 수 있으며 여전히 하나의 단위로 간주될 수 있습니다. 글꼴 크기의 백분율로 지정되며, 예를 들어 1은 100%를 의미합니다. 즉, 12pt 크기의 두 문자가 12pt 간격으로 배치되면 서로 근접한 것으로 간주됩니다.
+- [`RecognitionBullets`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions/properties/recognizebullets)은 변환 중에 글머리표 인식을 활성화하는 데 사용됩니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,22 +160,22 @@ private static void ConvertPDFtoWordDocAdvanced()
 ```
 
 {{% alert color="success" %}}
-**PDF를 DOC로 온라인 변환해 보세요**
+**온라인에서 PDF를 DOC로 변환해보세요**
 
-Aspose.PDF for .NET는 온라인 무료 애플리케이션 ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)를 제공하여 기능과 품질을 확인해 볼 수 있습니다.
+Aspose.PDF for .NET은(는) 온라인 무료 애플리케이션 ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)를 제공하여 기능과 품질을 확인해 볼 수 있습니다.
 
 [![PDF를 DOC로 변환하기](/pdf/ko/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## PDF를 DOCX (Microsoft Word 2007-2024) 파일로 변환하기
 
-Aspose.PDF for .NET API는 C# 및 모든 .NET 언어를 사용하여 PDF 문서를 DOCX로 읽고 변환할 수 있게 해줍니다. DOCX는 구조가 일반 이진 파일에서 XML 및 이진 파일의 조합으로 변경된 Microsoft Word 문서의 잘 알려진 형식입니다. Docx 파일은 Word 2007 및 이후 버전에서 열 수 있지만, 이전 버전의 MS Word에서는 DOC 파일 확장자를 지원하지 않습니다.
+Aspose.PDF for .NET API를 사용하면 C# 및 모든 .NET 언어를 사용하여 PDF 문서를 DOCX로 읽고 변환할 수 있습니다. DOCX는 Microsoft Word 문서에 널리 알려진 형식으로, 구조가 순수 이진 형식에서 XML과 이진 파일의 조합으로 변경되었습니다. Docx 파일은 Word 2007 이상 버전에서 열 수 있지만, DOC 파일 확장자를 지원하는 이전 버전의 MS Word에서는 열 수 없습니다.
 
-다음 C# 코드 스니펫은 PDF 파일을 DOCX 형식으로 변환하는 방법을 보여줍니다.
+다음 C# 코드 스니펫은 PDF 파일을 DOCX 형식으로 변환하는 예를 보여줍니다.
 
-<a name="csharp-pdf-to-docx"><strong>단계: C#에서 PDF를 DOCX로 변환하기</strong></a>
+<a name="csharp-pdf-to-docx" id="csharp-pdf-to-docx"><strong>PDF를 DOCX로 변환하기</strong></a>
 
-1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
+1. 소스 PDF 문서를 사용하여 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
 2. **Document.Save()** 메서드를 호출하여 **SaveFormat.DocX** 형식으로 저장합니다.
 
 ```csharp
@@ -208,11 +193,11 @@ private static void ConvertPDFtoWord_DOCX_Format()
 }
 ```
 
-### 향상된 모드에서 PDF를 DOCX로 변환하기
+### 향상된 모드로 PDF를 DOCX로 변환하기
 
-PDF를 DOCX로 변환할 때 더 나은 결과를 얻으려면 `EnhancedFlow` 모드를 사용할 수 있습니다.
-Flow와 Enhanced Flow의 주요 차이점은 테이블(테두리가 있는 것과 없는 것 모두)이 실제 테이블로 인식된다는 것입니다. 즉, 배경에 그림이 있는 텍스트가 아닙니다.
-번호 매기기 목록 및 기타 여러 작은 항목도 인식됩니다.
+PDF를 DOCX로 변환할 때 더 나은 결과를 얻기 위해 `EnhancedFlow` 모드를 사용할 수 있습니다.
+Flow 모드와 EnhancedFlow 모드의 주요 차이점은 테이블(테두리가 있거나 없는)이 배경의 이미지와 함께 있는 텍스트가 아닌 실제 테이블로 인식된다는 것입니다.
+또한 번호 매기기 목록 및 기타 여러 소소한 요소들이 인식됩니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -239,47 +224,10 @@ private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 ```
 
 {{% alert color="warning" %}}
-**PDF를 DOCX로 온라인 변환해 보세요**
+**온라인에서 PDF를 DOCX로 변환해보세요**
 
-Aspose.PDF for .NET는 온라인 무료 애플리케이션 ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)를 제공하여 기능과 품질을 확인해 볼 수 있습니다.
+Aspose.PDF for .NET은(는) 온라인 무료 애플리케이션 ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)를 제공하여 기능과 품질을 확인해 볼 수 있습니다.
 
-[![Aspose.PDF PDF를 Word로 변환하기 무료 앱](/pdf/ko/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF를 사용한 PDF를 Word로 변환하는 무료 앱](/pdf/ko/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
-{{% /alert %}}
-
-## 참조
-
-이 문서에서는 다음 주제도 다룹니다. 코드는 위와 동일합니다.
-
-_형식_: **Word**
-
-- [C# PDF를 Word로 변환하기 코드](#csharp-pdf-to-docx)
-- [C# PDF를 Word로 변환하기 API](#csharp-pdf-to-docx)
-- [C# PDF를 Word로 프로그래밍 방식으로 변환하기](#csharp-pdf-to-docx)
-- [C# PDF를 Word로 변환하기 라이브러리](#csharp-pdf-to-docx)
-- [C# PDF를 Word로 저장하기](#csharp-pdf-to-docx)
-- [C# PDF에서 Word 생성하기](#csharp-pdf-to-docx)
-- [C# PDF에서 Word 만들기](#csharp-pdf-to-docx)
-- [C# PDF를 Word로 변환하기](#csharp-pdf-to-docx)
-
-_형식_: **DOC**
-
-- [C# PDF를 DOC로 변환하기 코드](#csharp-pdf-to-doc)
-- [C# PDF를 DOC로 변환하기 API](#csharp-pdf-to-doc)
-- [C# PDF를 DOC로 프로그래밍 방식으로 변환하기](#csharp-pdf-to-doc)
-- [C# PDF를 DOC로 변환하기 라이브러리](#csharp-pdf-to-doc)
-- [C# PDF를 DOC로 저장하기](#csharp-pdf-to-doc)
-- [C# PDF에서 DOC 생성하기](#csharp-pdf-to-doc)
-- [C# PDF에서 DOC 만들기](#csharp-pdf-to-doc)
-- [C# PDF를 DOC로 변환하기](#csharp-pdf-to-doc)
-
-_형식_: **DOCX**
-
-- [C# PDF를 DOCX로 변환하기 코드](#csharp-pdf-to-docx)
-- [C# PDF를 DOCX로 변환하기 API](#csharp-pdf-to-docx)
-- [C# PDF를 DOCX로 프로그래밍 방식으로 변환하기](#csharp-pdf-to-docx)
-- [C# PDF를 DOCX로 변환하기 라이브러리](#csharp-pdf-to-docx)
-- [C# PDF를 DOCX로 저장하기](#csharp-pdf-to-docx)
-- [C# PDF에서 DOCX 생성하기](#csharp-pdf-to-docx)
-- [C# PDF에서 DOCX 만들기](#csharp-pdf-to-docx)
-- [C# PDF를 DOCX로 변환하기](#csharp-pdf-to-docx)
+{{% /alert %}
