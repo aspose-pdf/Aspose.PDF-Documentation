@@ -394,9 +394,86 @@ private static async Task CreateImageDescriptions()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) allows the creation of a client to send requests to the Llama chat completion API.
+**OpenAI OCR** is an AI copilot designed for extracting text from scanned documents and images. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, and others.
+
+The provided code snippet demonstrates the creation of an OpenAI client, configuration of OpenAIOcrCopilotOptions options and usage of the copilot to obtain text from scanned documents and images.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static async Task ExtractText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
+    // Create AI client
+    using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
+        //.WithOrganization("org_123")
+        .Build()) // Build
+    {
+        // Create copilot options
+        var options = Aspose.Pdf.AI.OpenAIOcrCopilotOptions
+            .Create() // Create options like this, or...
+            //.Create(options => { options.Model = OpenAIModels.Gpt4OMini; }) // ...create using delegate
+            .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4OMini) // The model should have vision capabilities
+            .WithDocument(dataDir + "ScannedDocument.pdf") // Attach document paths
+            .WithDocument(dataDir + "ImageWithText.jpg"); // Attach images
+
+        // Create copilot
+        var copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
+
+        // Get text recognitions
+        List<Aspose.Pdf.AI.TextRecognitionResult> textRecognitions = await copilot.GetTextRecognitionResultAsync();
+
+        // Access to the extracted text
+        string text = textRecognitions[0].OcrDetails[0].ExtractedText;
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static async Task ExtractText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
+    // Create AI client
+    using var openAiClient = Aspose.Pdf.AI.OpenAIClient
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
+        //.WithOrganization("org_123")
+        .Build(); // Build
+
+    // Create copilot options
+    var options = Aspose.Pdf.AI.OpenAIOcrCopilotOptions
+        .Create() // Create options like this, or...
+        //.Create(options => { options.Model = OpenAIModels.Gpt4OMini; }) // ...create using delegate
+        .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4OMini) // The model should have vision capabilities
+        .WithDocument(dataDir + "ScannedDocument.pdf") // Attach document paths
+        .WithDocument(dataDir + "ImageWithText.jpg"); // Attach images
+
+    // Create copilot
+    var copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
+
+    // Get text recognitions
+    List<Aspose.Pdf.AI.TextRecognitionResult> textRecognitions = await copilot.GetTextRecognitionResultAsync();
+
+    // Access to the extracted text
+    string text = textRecognitions[0].OcrDetails[0].ExtractedText;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+[**Llama Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) allows the creation of a client to send requests to the Llama chat completion API.
+
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -445,7 +522,7 @@ private static async Task ChatWithLlama()
 
 [**Llama Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) allows client can be used to create the Summary Copilot.
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
