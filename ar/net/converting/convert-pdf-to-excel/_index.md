@@ -327,7 +327,7 @@ private static void ConvertPDFToXLSM()
             Format = Aspose.Pdf.ExcelSaveOptions.ExcelFormat.XLSM
         };
 
-        // Save the file in ODS format
+        // Save the file in XLSM format
         document.Save(dataDir + "PDFToODS_out.xlsm", saveOptions);
     }
 }
