@@ -311,6 +311,56 @@ private static void ConvertPDFtoImage(ImageDevice imageDevice,
 }
 ```
 
+### Convert PDF to image with transparent background
+
+PDF page can be converted into the PNG image with transparent background istead of white.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf"))
+    {
+        var pngDevice = new Aspose.Pdf.Devices.PngDevice();
+        pngDevice.TransparentBackground = true;
+        using (var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create))
+        {
+            // Convert page to PNG image
+            pngDevice.Process(document.Pages[1], pngStream);
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf");
+    var pngDevice = new Aspose.Pdf.Devices.PngDevice()
+    {
+        TransparentBackground = true
+    };
+    using var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create);
+    // Convert page to PNG image
+    pngDevice.Process(document.Pages[1], pngStream);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 {{% alert color="success" %}}
 **Try to convert PDF to PNG online**
 
