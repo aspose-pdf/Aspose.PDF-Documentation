@@ -313,7 +313,7 @@ private static void ConvertPDFtoImage(ImageDevice imageDevice,
 
 ### Convert PDF to image with transparent background
 
-PDF page can be converted into the PNG image with transparent background istead of white.
+A PDF page can be converted to a PNG image with a transparent background instead of a white one.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
