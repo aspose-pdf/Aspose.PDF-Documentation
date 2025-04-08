@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "Fungsi baru dalam pustaka Aspose.PDF memungkinkan pengguna untuk dengan mudah menambahkan gambar ke file PDF yang sudah ada menggunakan C#. Fitur ini menyederhanakan manipulasi PDF dengan memungkinkan penempatan dan skala gambar yang tepat langsung dalam dokumen, memastikan integrasi berkualitas tinggi dan kontrol atas elemen visual. Dengan dukungan untuk berbagai format dan konfigurasi gambar, alat ini meningkatkan fleksibilitas manajemen konten PDF.",
+    "abstract": "Fungsi baru dalam pustaka Aspose.PDF memungkinkan pengguna untuk dengan mudah menambahkan gambar ke file PDF yang sudah ada menggunakan C#. Fitur ini menyederhanakan manipulasi PDF dengan memungkinkan penempatan dan skala gambar yang tepat langsung dalam dokumen, memastikan integrasi berkualitas tinggi dan kontrol atas elemen visual. Dengan dukungan untuk berbagai format gambar dan konfigurasi, alat ini meningkatkan fleksibilitas manajemen konten PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "1923",
+    "wordcount": "2127",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -76,9 +76,9 @@ lastmod: "2022-02-17"
 }
 </script>
 
-## Tambahkan Gambar ke File PDF yang Sudah Ada
+## Tambahkan Gambar dalam File PDF yang Ada
 
-Setiap halaman PDF berisi properti Resources dan Contents. Resources dapat berupa gambar dan formulir misalnya, sementara konten diwakili oleh sekumpulan operator PDF. Setiap operator memiliki nama dan argumennya. Contoh ini menggunakan operator untuk menambahkan gambar ke file PDF.
+Setiap halaman PDF berisi properti Resources dan Contents. Resources dapat berupa gambar dan formulir, sementara konten diwakili oleh sekumpulan operator PDF. Setiap operator memiliki nama dan argumennya. Contoh ini menggunakan operator untuk menambahkan gambar ke file PDF.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -153,9 +153,9 @@ Secara default, kualitas JPEG diatur ke 100%. Untuk menerapkan kompresi dan kual
 - overload metode Replace ditambahkan ke kelas XImageCollection: public void Replace(int index, Stream stream, int quality)
 - overload metode Add ditambahkan ke kelas XImageCollection: public void Add(Stam stream, int quality)
 
-## Tambahkan Gambar ke File PDF yang Sudah Ada (Facade)
+## Tambahkan Gambar dalam File PDF yang Ada (Facade)
 
-Ada juga cara alternatif yang lebih mudah untuk menambahkan Gambar ke file PDF. Anda dapat menggunakan metode [AddImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) dari kelas [PdfFileMend](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend). Metode [AddImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) memerlukan gambar yang akan ditambahkan, nomor halaman di mana gambar perlu ditambahkan dan informasi koordinat. Setelah itu, simpan file PDF yang diperbarui menggunakan metode Close. Potongan kode berikut menunjukkan cara menambahkan gambar dalam file PDF yang sudah ada.
+Ada juga cara alternatif yang lebih mudah untuk menambahkan Gambar ke file PDF. Anda dapat menggunakan metode [AddImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) dari kelas [PdfFileMend](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend). Metode [AddImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) memerlukan gambar yang akan ditambahkan, nomor halaman di mana gambar perlu ditambahkan, dan informasi koordinat. Setelah itu, simpan file PDF yang diperbarui menggunakan metode Close. Potongan kode berikut menunjukkan cara menambahkan gambar dalam file PDF yang sudah ada.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -230,7 +230,7 @@ private static void AddCroppedImageToPDF()
 }
 ```
 
-## Tempatkan gambar di halaman dan pertahankan (kontrol) rasio aspek
+## Tempatkan gambar di halaman dan pertahankan (kendalikan) rasio aspek
 
 Jika kita tidak mengetahui dimensi gambar, ada kemungkinan besar mendapatkan gambar yang terdistorsi di halaman. Contoh berikut menunjukkan salah satu cara untuk menghindari hal ini.
 
@@ -270,6 +270,8 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 
 Terkadang, gambar besar mengalami masalah skala saat ditambahkan ke PDF. Potongan kode berikut menskalakan gambar sesuai dengan dimensi halaman PDF, memastikan gambar pas dengan baik dan terlihat lebih baik.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddingImageAndPreserveAspectRatioIntoPDF()
@@ -320,19 +322,71 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
     var newWidth = (int)(image.Width * ratio);
     var newHeight = (int)(image.Height * ratio);
     var newImage = new Bitmap(newWidth, newHeight);
-    using (var graphics = System.Drawing.Graphics.FromImage(newImage))
+    using (var graphics = Graphics.FromImage(newImage))
     {
         graphics.DrawImage(image, 0, 0, newWidth, newHeight);
     }
     return newImage;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var file = dataDir + "AddImageAccordingToPage.jpg";
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+    
+    // Add page
+    var pdfImageSection = document.Pages.Add();
+    using var stream = new FileStream(file, FileMode.Open);
+    // Open bitmap
+    using var img = new Bitmap(stream);
+    // Scale image according to page dimensions
+    using var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height);
+    using var ms = new MemoryStream();
+    scaledImg.Save(ms, ImageFormat.Jpeg);
+    ms.Seek(0, SeekOrigin.Begin);
+    var image = new Aspose.Pdf.Image
+    {
+        ImageStream = ms
+    };
+
+    // Add the image to the page
+    pdfImageSection.Paragraphs.Add(image);
+
+    // Save PDF document
+    document.Save("AddImageAccordingToPage.pdf");
+
+}
+
+private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
+{
+    var ratioX = (double)maxWidth / image.Width;
+    var ratioY = (double)maxHeight / image.Height;
+    var ratio = Math.Min(ratioX, ratioY);
+    var newWidth = (int)(image.Width * ratio);
+    var newHeight = (int)(image.Height * ratio);
+    var newImage = new Bitmap(newWidth, newHeight);
+    using var graphics = Graphics.FromImage(newImage);
+    graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+    return newImage;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Identifikasi apakah gambar di dalam PDF berwarna atau Hitam & Putih
 
-Berbagai jenis kompresi dapat diterapkan pada gambar untuk mengurangi ukurannya. Jenis kompresi yang diterapkan pada gambar tergantung pada ColorSpace dari gambar sumber yaitu jika gambar berwarna (RGB), maka terapkan kompresi JPEG2000, dan jika itu Hitam & Putih, maka kompresi JBIG2/JBIG2000 harus diterapkan. Oleh karena itu, mengidentifikasi setiap jenis gambar dan menggunakan jenis kompresi yang sesuai akan menghasilkan output terbaik/yang dioptimalkan.
+Berbagai jenis kompresi dapat diterapkan pada gambar untuk mengurangi ukurannya. Jenis kompresi yang diterapkan pada gambar tergantung pada ColorSpace gambar sumber, yaitu jika gambar berwarna (RGB), maka terapkan kompresi JPEG2000, dan jika hitam & putih, maka kompresi JBIG2/JBIG2000 harus diterapkan. Oleh karena itu, mengidentifikasi setiap jenis gambar dan menggunakan jenis kompresi yang sesuai akan menghasilkan output terbaik/yang dioptimalkan.
 
-File PDF dapat berisi elemen Teks, Gambar, Grafik, Lampiran, Anotasi, dll dan jika file PDF sumber berisi gambar, kita dapat menentukan ruang warna gambar dan menerapkan kompresi yang sesuai untuk gambar guna mengurangi ukuran file PDF. Potongan kode berikut menunjukkan langkah-langkah untuk mengidentifikasi apakah gambar di dalam PDF berwarna atau Hitam & Putih.
+File PDF dapat berisi elemen Teks, Gambar, Grafik, Lampiran, Anotasi, dll., dan jika file PDF sumber berisi gambar, kita dapat menentukan ruang warna gambar dan menerapkan kompresi yang sesuai untuk gambar guna mengurangi ukuran file PDF. Potongan kode berikut menunjukkan langkah-langkah untuk mengidentifikasi apakah gambar di dalam PDF berwarna atau Hitam & Putih.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -422,13 +476,13 @@ private static void ReplaceImagesInPDF()
 }
 ```
 
-## Dukungan penerapan Masker Pemotongan pada Gambar
+## Dukungan penerapan Topeng Pemotongan pada Gambar
 
-Menempatkan bentuk vektor di atas gambar bitmap dasar berfungsi sebagai masker, hanya mengekspos bagian desain dasar yang sejajar dengan bentuk vektor. Semua area di luar bentuk akan disembunyikan.
+Menempatkan bentuk vektor di atas gambar bitmap dasar berfungsi sebagai topeng, hanya mengekspos bagian desain dasar yang sejajar dengan bentuk vektor. Semua area di luar bentuk akan tersembunyi.
 
-Potongan kode memuat PDF, membuka dua file gambar, dan menerapkan gambar tersebut sebagai masker stensil pada dua gambar pertama di halaman pertama PDF.
+Potongan kode memuat PDF, membuka dua file gambar, dan menerapkan gambar tersebut sebagai topeng stensil pada dua gambar pertama di halaman pertama PDF.
 
-Masker stensil dapat ditambahkan dengan metode 'XImage.AddStencilMask(Stream maskStream)':
+Topeng stensil dapat ditambahkan dengan metode 'XImage.AddStencilMask(Stream maskStream)':
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

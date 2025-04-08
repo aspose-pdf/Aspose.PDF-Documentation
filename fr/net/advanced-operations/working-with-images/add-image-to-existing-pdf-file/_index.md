@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2117",
+    "wordcount": "2324",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -232,7 +232,7 @@ private static void AddCroppedImageToPDF()
 
 ## Placer l'image sur la page et préserver (contrôler) le rapport d'aspect
 
-Si nous ne connaissons pas les dimensions de l'image, il y a toutes les chances d'obtenir une image déformée sur la page. L'exemple suivant montre l'une des façons d'éviter cela.
+Si nous ne connaissons pas les dimensions de l'image, il y a de fortes chances d'obtenir une image déformée sur la page. L'exemple suivant montre l'une des façons d'éviter cela.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -270,6 +270,8 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 
 Parfois, une grande image rencontre des problèmes d'échelle lorsqu'elle est ajoutée à un PDF. Le code suivant redimensionne l'image en fonction des dimensions de la page PDF, garantissant que l'image s'adapte correctement et a un meilleur aspect.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddingImageAndPreserveAspectRatioIntoPDF()
@@ -320,13 +322,65 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
     var newWidth = (int)(image.Width * ratio);
     var newHeight = (int)(image.Height * ratio);
     var newImage = new Bitmap(newWidth, newHeight);
-    using (var graphics = System.Drawing.Graphics.FromImage(newImage))
+    using (var graphics = Graphics.FromImage(newImage))
     {
         graphics.DrawImage(image, 0, 0, newWidth, newHeight);
     }
     return newImage;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var file = dataDir + "AddImageAccordingToPage.jpg";
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+    
+    // Add page
+    var pdfImageSection = document.Pages.Add();
+    using var stream = new FileStream(file, FileMode.Open);
+    // Open bitmap
+    using var img = new Bitmap(stream);
+    // Scale image according to page dimensions
+    using var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height);
+    using var ms = new MemoryStream();
+    scaledImg.Save(ms, ImageFormat.Jpeg);
+    ms.Seek(0, SeekOrigin.Begin);
+    var image = new Aspose.Pdf.Image
+    {
+        ImageStream = ms
+    };
+
+    // Add the image to the page
+    pdfImageSection.Paragraphs.Add(image);
+
+    // Save PDF document
+    document.Save("AddImageAccordingToPage.pdf");
+
+}
+
+private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
+{
+    var ratioX = (double)maxWidth / image.Width;
+    var ratioY = (double)maxHeight / image.Height;
+    var ratio = Math.Min(ratioX, ratioY);
+    var newWidth = (int)(image.Width * ratio);
+    var newHeight = (int)(image.Height * ratio);
+    var newImage = new Bitmap(newWidth, newHeight);
+    using var graphics = Graphics.FromImage(newImage);
+    graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+    return newImage;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Identifier si l'image dans le PDF est en couleur ou en noir et blanc
 
@@ -422,7 +476,7 @@ private static void ReplaceImagesInPDF()
 }
 ```
 
-## Support pour l'application d'un masque de découpe aux images
+## Support pour appliquer un masque de découpe aux images
 
 Placer une forme vectorielle sur l'image bitmap de base fonctionne comme un masque, exposant uniquement la partie du design de base qui s'aligne avec la forme vectorielle. Toutes les zones en dehors de la forme seront dissimulées.
 

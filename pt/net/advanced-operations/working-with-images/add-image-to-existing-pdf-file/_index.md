@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "A nova funcionalidade na biblioteca Aspose.PDF permite que os usuários adicionem imagens a arquivos PDF existentes usando C#. Este recurso simplifica a manipulação de PDF ao permitir o posicionamento e escalonamento precisos de imagens diretamente dentro do documento, garantindo uma integração de alta qualidade e controle sobre elementos visuais. Com suporte para vários formatos de imagem e configurações, esta ferramenta aumenta a flexibilidade da gestão de conteúdo PDF.",
+    "abstract": "A nova funcionalidade na biblioteca Aspose.PDF permite que os usuários adicionem imagens a arquivos PDF existentes usando C#. Este recurso simplifica a manipulação de PDF ao permitir o posicionamento e escalonamento precisos de imagens diretamente dentro do documento, garantindo uma integração de alta qualidade e controle sobre os elementos visuais. Com suporte para vários formatos de imagem e configurações, esta ferramenta aumenta a flexibilidade da gestão de conteúdo PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2052",
+    "wordcount": "2258",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -91,7 +91,7 @@ Para adicionar uma imagem a um arquivo PDF existente:
 - Use o operador GSave para salvar o estado gráfico atual.
 - Use o operador ConcatenateMatrix para especificar onde a imagem deve ser colocada.
 - Use o operador Do para desenhar a imagem na página.
-- Por fim, use o operador GRestore para salvar o estado gráfico atualizado.
+- Finalmente, use o operador GRestore para salvar o estado gráfico atualizado.
 - Salve o arquivo.
 O seguinte trecho de código mostra como adicionar a imagem em um documento PDF.
 
@@ -268,8 +268,10 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
-Às vezes, uma imagem grande encontra problemas de escalonamento ao ser adicionada a um PDF. O seguinte trecho de código escala a imagem de acordo com as dimensões da página PDF, garantindo que a imagem se encaixe corretamente e tenha uma aparência melhor.
+Às vezes, uma imagem grande encontra problemas de escalonamento ao ser adicionada a um PDF. O seguinte trecho de código escala a imagem de acordo com as dimensões da página PDF, garantindo que a imagem se encaixe corretamente e fique melhor.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddingImageAndPreserveAspectRatioIntoPDF()
@@ -320,17 +322,69 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
     var newWidth = (int)(image.Width * ratio);
     var newHeight = (int)(image.Height * ratio);
     var newImage = new Bitmap(newWidth, newHeight);
-    using (var graphics = System.Drawing.Graphics.FromImage(newImage))
+    using (var graphics = Graphics.FromImage(newImage))
     {
         graphics.DrawImage(image, 0, 0, newWidth, newHeight);
     }
     return newImage;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var file = dataDir + "AddImageAccordingToPage.jpg";
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+    
+    // Add page
+    var pdfImageSection = document.Pages.Add();
+    using var stream = new FileStream(file, FileMode.Open);
+    // Open bitmap
+    using var img = new Bitmap(stream);
+    // Scale image according to page dimensions
+    using var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height);
+    using var ms = new MemoryStream();
+    scaledImg.Save(ms, ImageFormat.Jpeg);
+    ms.Seek(0, SeekOrigin.Begin);
+    var image = new Aspose.Pdf.Image
+    {
+        ImageStream = ms
+    };
+
+    // Add the image to the page
+    pdfImageSection.Paragraphs.Add(image);
+
+    // Save PDF document
+    document.Save("AddImageAccordingToPage.pdf");
+
+}
+
+private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
+{
+    var ratioX = (double)maxWidth / image.Width;
+    var ratioY = (double)maxHeight / image.Height;
+    var ratio = Math.Min(ratioX, ratioY);
+    var newWidth = (int)(image.Width * ratio);
+    var newHeight = (int)(image.Height * ratio);
+    var newImage = new Bitmap(newWidth, newHeight);
+    using var graphics = Graphics.FromImage(newImage);
+    graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+    return newImage;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Identificar se a imagem dentro do PDF é Colorida ou Preto & Branco
 
-Diferentes tipos de compressão podem ser aplicados sobre imagens para reduzir seu tamanho. O tipo de compressão aplicada à imagem depende do ColorSpace da imagem de origem, ou seja, se a imagem é Colorida (RGB), então aplique compressão JPEG2000, e se for Preto & Branco, então a compressão JBIG2/JBIG2000 deve ser aplicada. Portanto, identificar cada tipo de imagem e usar um tipo apropriado de compressão criará a melhor/otimizada saída.
+Diferentes tipos de compressão podem ser aplicados sobre imagens para reduzir seu tamanho. O tipo de compressão aplicado à imagem depende do ColorSpace da imagem de origem, ou seja, se a imagem é Colorida (RGB), então aplique compressão JPEG2000, e se for Preto & Branco, então a compressão JBIG2/JBIG2000 deve ser aplicada. Portanto, identificar cada tipo de imagem e usar um tipo apropriado de compressão criará a melhor/otimizada saída.
 
 Um arquivo PDF pode conter elementos como Texto, Imagem, Gráfico, Anexo, Anotação etc., e se o arquivo PDF de origem contiver imagens, podemos determinar o espaço de cor da imagem e aplicar a compressão apropriada para reduzir o tamanho do arquivo PDF. O seguinte trecho de código mostra os passos para identificar se a imagem dentro do PDF é Colorida ou Preto & Branco.
 

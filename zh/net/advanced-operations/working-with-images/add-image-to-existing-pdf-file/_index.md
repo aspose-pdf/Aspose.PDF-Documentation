@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "Aspose.PDF 库中的新功能允许用户无缝地使用 C# 将图像添加到现有 PDF 文件中。此功能通过直接在文档中启用图像的精确定位和缩放，简化了 PDF 操作，确保高质量的集成和对视觉元素的控制。该工具支持多种图像格式和配置，增强了 PDF 内容管理的灵活性。",
+    "abstract": "Aspose.PDF 库中的新功能允许用户无缝地使用 C# 将图像添加到现有 PDF 文件中。此功能通过直接在文档中启用图像的精确定位和缩放，简化了 PDF 操作，确保高质量的集成和对视觉元素的控制。支持多种图像格式和配置，此工具增强了 PDF 内容管理的灵活性。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "1538",
+    "wordcount": "1747",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -232,7 +232,7 @@ private static void AddCroppedImageToPDF()
 
 ## 在页面上放置图像并保持（控制）纵横比
 
-如果我们不知道图像的尺寸，就有可能在页面上得到失真的图像。以下示例展示了避免这种情况的方法之一。
+如果我们不知道图像的尺寸，就有可能在页面上得到失真的图像。以下示例展示了避免这种情况的一种方法。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -268,8 +268,10 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
-有时，大图像在添加到 PDF 时会遇到缩放问题。以下代码片段根据 PDF 页面尺寸缩放图像，确保图像适当适配并看起来更好。
+有时，添加到 PDF 的大图像在缩放时会遇到问题。以下代码片段根据 PDF 页面尺寸缩放图像，确保图像适合并看起来更好。
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddingImageAndPreserveAspectRatioIntoPDF()
@@ -320,13 +322,65 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
     var newWidth = (int)(image.Width * ratio);
     var newHeight = (int)(image.Height * ratio);
     var newImage = new Bitmap(newWidth, newHeight);
-    using (var graphics = System.Drawing.Graphics.FromImage(newImage))
+    using (var graphics = Graphics.FromImage(newImage))
     {
         graphics.DrawImage(image, 0, 0, newWidth, newHeight);
     }
     return newImage;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var file = dataDir + "AddImageAccordingToPage.jpg";
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+    
+    // Add page
+    var pdfImageSection = document.Pages.Add();
+    using var stream = new FileStream(file, FileMode.Open);
+    // Open bitmap
+    using var img = new Bitmap(stream);
+    // Scale image according to page dimensions
+    using var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height);
+    using var ms = new MemoryStream();
+    scaledImg.Save(ms, ImageFormat.Jpeg);
+    ms.Seek(0, SeekOrigin.Begin);
+    var image = new Aspose.Pdf.Image
+    {
+        ImageStream = ms
+    };
+
+    // Add the image to the page
+    pdfImageSection.Paragraphs.Add(image);
+
+    // Save PDF document
+    document.Save("AddImageAccordingToPage.pdf");
+
+}
+
+private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
+{
+    var ratioX = (double)maxWidth / image.Width;
+    var ratioY = (double)maxHeight / image.Height;
+    var ratio = Math.Min(ratioX, ratioY);
+    var newWidth = (int)(image.Width * ratio);
+    var newHeight = (int)(image.Height * ratio);
+    var newImage = new Bitmap(newWidth, newHeight);
+    using var graphics = Graphics.FromImage(newImage);
+    graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+    return newImage;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## 确定 PDF 中的图像是彩色还是黑白
 
