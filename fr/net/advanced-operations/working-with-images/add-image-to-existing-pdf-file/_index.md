@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "1433",
+    "wordcount": "2326",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -71,7 +71,7 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/add-image-to-existing-pdf-file/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-08",
     "description": "Cette section décrit comment ajouter une image à un fichier PDF existant en utilisant la bibliothèque C#."
 }
 </script>
@@ -268,9 +268,122 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
+Parfois, une grande image rencontre des problèmes d'échelle lorsqu'elle est ajoutée à un PDF. Le code suivant redimensionne l'image en fonction des dimensions de la page PDF, garantissant que l'image s'adapte correctement et a un meilleur aspect.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var file = dataDir + "AddImageAccordingToPage.jpg";
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var pdfImageSection = document.Pages.Add();
+        using (var stream = new FileStream(file, FileMode.Open))
+        {
+            // Open bitmap
+            using (var img = new Bitmap(stream))
+            {
+                // Scale image according to page dimensions
+                using (var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height))
+                {
+                    using (var ms = new MemoryStream())
+                    {
+                        scaledImg.Save(ms, ImageFormat.Jpeg);
+                        ms.Seek(0, SeekOrigin.Begin);
+                        var image = new Aspose.Pdf.Image
+                        {
+                            ImageStream = ms
+                        };
+
+                        // Add the image to the page
+                        pdfImageSection.Paragraphs.Add(image);
+
+                        // Save PDF document
+                        document.Save(dataDir + "AddImageAccordingToPage.pdf");
+                    }
+                }
+            }
+        }
+    }
+}
+
+private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
+{
+    var ratioX = (double)maxWidth / image.Width;
+    var ratioY = (double)maxHeight / image.Height;
+    var ratio = Math.Min(ratioX, ratioY);
+    var newWidth = (int)(image.Width * ratio);
+    var newHeight = (int)(image.Height * ratio);
+    var newImage = new Bitmap(newWidth, newHeight);
+    using (var graphics = Graphics.FromImage(newImage))
+    {
+        graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+    }
+    return newImage;
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var file = dataDir + "AddImageAccordingToPage.jpg";
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+    
+    // Add page
+    var pdfImageSection = document.Pages.Add();
+    using var stream = new FileStream(file, FileMode.Open);
+    // Open bitmap
+    using var img = new Bitmap(stream);
+    // Scale image according to page dimensions
+    using var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height);
+    using var ms = new MemoryStream();
+    scaledImg.Save(ms, ImageFormat.Jpeg);
+    ms.Seek(0, SeekOrigin.Begin);
+    var image = new Aspose.Pdf.Image
+    {
+        ImageStream = ms
+    };
+
+    // Add the image to the page
+    pdfImageSection.Paragraphs.Add(image);
+
+    // Save PDF document
+    document.Save(dataDir + "AddImageAccordingToPage.pdf");
+}
+
+private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
+{
+    var ratioX = (double)maxWidth / image.Width;
+    var ratioY = (double)maxHeight / image.Height;
+    var ratio = Math.Min(ratioX, ratioY);
+    var newWidth = (int)(image.Width * ratio);
+    var newHeight = (int)(image.Height * ratio);
+    var newImage = new Bitmap(newWidth, newHeight);
+    using var graphics = Graphics.FromImage(newImage);
+    graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+    return newImage;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Identifier si l'image dans le PDF est en couleur ou en noir et blanc
 
-Différents types de compression peuvent être appliqués sur les images pour réduire leur taille. Le type de compression appliqué sur l'image dépend de l'espace colorimétrique de l'image source, c'est-à-dire que si l'image est en couleur (RGB), alors appliquez la compression JPEG2000, et si elle est en noir et blanc, alors la compression JBIG2/JBIG2000 doit être appliquée. Par conséquent, identifier chaque type d'image et utiliser un type de compression approprié créera une sortie optimale.
+Différents types de compression peuvent être appliqués sur les images pour réduire leur taille. Le type de compression appliqué sur l'image dépend de l'espace colorimétrique de l'image source, c'est-à-dire que si l'image est en couleur (RGB), alors appliquez la compression JPEG2000, et si elle est en noir et blanc, alors la compression JBIG2/JBIG2000 doit être appliquée. Par conséquent, identifier chaque type d'image et utiliser un type de compression approprié créera la meilleure sortie optimisée.
 
 Un fichier PDF peut contenir des éléments tels que du texte, des images, des graphiques, des pièces jointes, des annotations, etc., et si le fichier PDF source contient des images, nous pouvons déterminer l'espace colorimétrique de l'image et appliquer une compression appropriée pour réduire la taille du fichier PDF. Le code suivant montre les étapes pour identifier si l'image dans le PDF est en couleur ou en noir et blanc.
 
@@ -326,7 +439,7 @@ private static void ExtractImageTypesFromPDF()
 
 Il est possible de contrôler la qualité d'une image qui est ajoutée à un fichier PDF. Utilisez la méthode surchargée [Replace](https://reference.aspose.com/pdf/fr/net/aspose.pdf.ximagecollection/replace/methods/1) dans la classe [XImageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/ximagecollection).
 
-Le code suivant démontre comment convertir toutes les images du document en JPEG utilisant une qualité de 80 % pour la compression.
+Le code suivant démontre comment convertir toutes les images du document en JPEG utilisant 80 % de qualité pour la compression.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -364,11 +477,11 @@ private static void ReplaceImagesInPDF()
 
 ## Support pour appliquer un masque de découpe aux images
 
-Placer une forme vectorielle au-dessus de l'image bitmap de base fonctionne comme un masque, exposant uniquement la partie du design de base qui s'aligne avec la forme vectorielle. Toutes les zones en dehors de la forme seront dissimulées.
+Placer une forme vectorielle sur l'image bitmap de base fonctionne comme un masque, exposant uniquement la partie du design de base qui s'aligne avec la forme vectorielle. Toutes les zones en dehors de la forme seront dissimulées.
 
-Le code charge un PDF, ouvre deux fichiers image et applique ces images comme masques de pochoir aux deux premières images de la première page du PDF.
+Le code suivant charge un PDF, ouvre deux fichiers image et applique ces images comme masques de pochoir aux deux premières images de la première page du PDF.
 
-Le masque de pochoir peut être ajouté par la méthode 'XImage.AddStencilMask(Stream maskStream)' :
+Un masque de pochoir peut être ajouté par la méthode 'XImage.AddStencilMask(Stream maskStream)' :
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
