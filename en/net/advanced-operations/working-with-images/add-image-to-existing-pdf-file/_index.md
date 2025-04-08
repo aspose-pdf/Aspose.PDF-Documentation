@@ -279,10 +279,10 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
     var file = dataDir + "AddImageAccordingToPage.jpg";
 
     // Create PDF document
-    using (var pdf = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        var pdfImageSection = pdf.Pages.Add();
+        var pdfImageSection = document.Pages.Add();
         using (var stream = new FileStream(file, FileMode.Open))
         {
             // Open bitmap
@@ -304,7 +304,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
                         pdfImageSection.Paragraphs.Add(image);
 
                         // Save PDF document
-                        pdf.Save("AddImageAccordingToPage.pdf");
+                        document.Save("AddImageAccordingToPage.pdf");
                     }
                 }
             }
