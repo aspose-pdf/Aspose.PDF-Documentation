@@ -27,8 +27,7 @@ lastmod: "2024-10-23"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "PDF AI Copilot, Aspose.PDF API, document summary, chat with documents, OpenAI Summary, OpenAI Chat, image descriptions, Llama Chat, AI document processing",
-    "wordcount": "1047",
+    "wordcount": "2651",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,8 +73,8 @@ lastmod: "2024-10-23"
         "@type": "WebPage",
         "@id": "/net/ai-copilot/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+    "dateModified": "2025-04-08",
+    "description": "The PDF AI Copilot feature empowers users to enhance PDF document processing by integrating advanced AI capabilities, including document summarization, interactive chat functionalities, and image description generation, streamlining workflows and improving productivity. This innovative API facilitates seamless interaction with PDF content, making it an essential tool for developers and businesses looking to optimize document management"
 }
 </script>
 
