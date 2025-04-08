@@ -270,6 +270,8 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 
 Sometimes, a large image encounters scaling issues when added to a PDF. The following code snippet scales the image according to the dimensions of the PDF page, ensuring the image fits properly and looks better.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddingImageAndPreserveAspectRatioIntoPDF()
@@ -320,13 +322,65 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
     var newWidth = (int)(image.Width * ratio);
     var newHeight = (int)(image.Height * ratio);
     var newImage = new Bitmap(newWidth, newHeight);
-    using (var graphics = System.Drawing.Graphics.FromImage(newImage))
+    using (var graphics = Graphics.FromImage(newImage))
     {
         graphics.DrawImage(image, 0, 0, newWidth, newHeight);
     }
     return newImage;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var file = dataDir + "AddImageAccordingToPage.jpg";
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+    
+    // Add page
+    var pdfImageSection = document.Pages.Add();
+    using var stream = new FileStream(file, FileMode.Open);
+    // Open bitmap
+    using var img = new Bitmap(stream);
+    // Scale image according to page dimensions
+    using var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height);
+    using var ms = new MemoryStream();
+    scaledImg.Save(ms, ImageFormat.Jpeg);
+    ms.Seek(0, SeekOrigin.Begin);
+    var image = new Aspose.Pdf.Image
+    {
+        ImageStream = ms
+    };
+
+    // Add the image to the page
+    pdfImageSection.Paragraphs.Add(image);
+
+    // Save PDF document
+    document.Save("AddImageAccordingToPage.pdf");
+
+}
+
+private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
+{
+    var ratioX = (double)maxWidth / image.Width;
+    var ratioY = (double)maxHeight / image.Height;
+    var ratio = Math.Min(ratioX, ratioY);
+    var newWidth = (int)(image.Width * ratio);
+    var newHeight = (int)(image.Height * ratio);
+    var newImage = new Bitmap(newWidth, newHeight);
+    using var graphics = Graphics.FromImage(newImage);
+    graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+    return newImage;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Identify if image inside PDF is Colored or Black & White
 
