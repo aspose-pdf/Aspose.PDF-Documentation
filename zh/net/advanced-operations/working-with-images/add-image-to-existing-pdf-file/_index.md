@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "Aspose.PDF 库中的新功能允许用户使用 C# 无缝地将图像添加到现有 PDF 文件中。此功能通过直接在文档中启用图像的精确定位和缩放，简化了 PDF 操作，确保高质量的集成和对视觉元素的控制。支持多种图像格式和配置，此工具增强了 PDF 内容管理的灵活性。",
+    "abstract": "Aspose.PDF 库中的新功能允许用户无缝地使用 C# 将图像添加到现有 PDF 文件中。此功能通过直接在文档中启用图像的精确定位和缩放，简化了 PDF 操作，确保高质量的集成和对视觉元素的控制。该工具支持多种图像格式和配置，增强了 PDF 内容管理的灵活性。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -155,7 +155,7 @@ private static void AddImageToPDF()
 
 ## 在现有 PDF 文件中添加图像（外观）
 
-还有一种替代的、更简单的方法可以将图像添加到 PDF 文件中。您可以使用 [PdfFileMend](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法。 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法需要添加的图像、需要添加图像的页面编号和坐标信息。之后，使用 Close 方法保存更新后的 PDF 文件。以下代码片段向您展示了如何在现有 PDF 文件中添加图像。
+还有一种替代的、更简单的方法可以将图像添加到 PDF 文件中。您可以使用 [PdfFileMend](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法。[AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法需要添加的图像、需要添加图像的页面编号和坐标信息。之后，使用 Close 方法保存更新后的 PDF 文件。以下代码片段演示了如何在现有 PDF 文件中添加图像。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -232,7 +232,7 @@ private static void AddCroppedImageToPDF()
 
 ## 在页面上放置图像并保持（控制）纵横比
 
-如果我们不知道图像的尺寸，则很有可能在页面上得到失真的图像。以下示例展示了避免这种情况的一种方法。
+如果我们不知道图像的尺寸，就有可能在页面上得到失真的图像。以下示例展示了避免这种情况的方法之一。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -288,7 +288,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
             // Open bitmap
             using (var img = new Bitmap(stream))
             {
-                //Scale image according to page dimensions
+                // Scale image according to page dimensions
                 using (var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height))
                 {
                     using (var ms = new MemoryStream())

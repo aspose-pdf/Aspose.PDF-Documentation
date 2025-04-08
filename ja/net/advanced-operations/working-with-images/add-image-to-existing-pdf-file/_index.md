@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "Aspose.PDFライブラリの新機能により、ユーザーはC#を使用して既存のPDFファイルに画像をシームレスに追加できます。この機能は、文書内で画像を正確に配置およびスケーリングできるようにすることで、PDF操作を簡素化し、高品質な統合と視覚要素の制御を保証します。さまざまな画像形式と構成をサポートするこのツールは、PDFコンテンツ管理の柔軟性を向上させます。",
+    "abstract": "Aspose.PDFライブラリの新機能により、ユーザーはC#を使用して既存のPDFファイルに画像をシームレスに追加できます。この機能は、文書内で画像の正確な配置とスケーリングを可能にし、高品質な統合と視覚要素の制御を保証することで、PDF操作を簡素化します。さまざまな画像形式と構成をサポートするこのツールは、PDFコンテンツ管理の柔軟性を向上させます。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "1483",
+    "wordcount": "1481",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -78,13 +78,13 @@ lastmod: "2022-02-17"
 
 ## 既存のPDFファイルに画像を追加
 
-すべてのPDFページには、リソースとコンテンツのプロパティが含まれています。リソースは画像やフォームなどであり、コンテンツはPDFオペレーターのセットで表されます。各オペレーターには名前と引数があります。この例では、オペレーターを使用してPDFファイルに画像を追加します。
+すべてのPDFページにはリソースとコンテンツのプロパティが含まれています。リソースには画像やフォームなどが含まれ、コンテンツはPDFオペレーターのセットによって表されます。各オペレーターには名前と引数があります。この例では、オペレーターを使用してPDFファイルに画像を追加します。
 
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 既存のPDFファイルに画像を追加するには：
 
-- ドキュメントオブジェクトを作成し、入力PDFドキュメントを開きます。
+- Documentオブジェクトを作成し、入力PDFドキュメントを開きます。
 - 画像を追加したいページを取得します。
 - ページのリソースコレクションに画像を追加します。
 - オペレーターを使用してページに画像を配置します：
@@ -151,7 +151,7 @@ private static void AddImageToPDF()
 {{% /alert %}}
 
 - XImageCollectionクラスに追加されたReplaceメソッドのオーバーロード：public void Replace(int index, Stream stream, int quality)
-- XImageCollectionクラスに追加されたAddメソッドのオーバーロード：public void Add(Stam stream, int quality)
+- XImageCollectionクラスに追加されたAddメソッドのオーバーロード：public void Add(Stream stream, int quality)
 
 ## 既存のPDFファイルに画像を追加（ファサード）
 
@@ -268,7 +268,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
-時には、大きな画像がPDFに追加されるとスケーリングの問題が発生します。次のコードスニペットは、PDFページの寸法に応じて画像をスケーリングし、画像が適切にフィットし、より良く見えるようにします。
+時には、大きな画像がPDFに追加されるときにスケーリングの問題が発生します。次のコードスニペットは、PDFページの寸法に応じて画像をスケーリングし、画像が適切にフィットし、より良く見えるようにします。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -288,7 +288,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
             // Open bitmap
             using (var img = new Bitmap(stream))
             {
-                //Scale image according to page dimensions
+                // Scale image according to page dimensions
                 using (var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height))
                 {
                     using (var ms = new MemoryStream())
@@ -330,9 +330,9 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 
 ## PDF内の画像がカラーか白黒かを識別する
 
-画像のサイズを減らすために、さまざまなタイプの圧縮を適用できます。画像に適用される圧縮のタイプは、ソース画像のColorSpaceに依存します。つまり、画像がカラー（RGB）の場合はJPEG2000圧縮を適用し、白黒の場合はJBIG2/JBIG2000圧縮を適用する必要があります。したがって、各画像タイプを識別し、適切な圧縮タイプを使用することで、最適な出力を作成できます。
+画像のサイズを減らすために、さまざまなタイプの圧縮を画像に適用できます。適用される圧縮のタイプは、ソース画像のColorSpaceに依存します。つまり、画像がカラー（RGB）の場合はJPEG2000圧縮を適用し、白黒の場合はJBIG2/JBIG2000圧縮を適用する必要があります。したがって、各画像タイプを識別し、適切な圧縮タイプを使用することで、最適化された出力を作成できます。
 
-PDFファイルには、テキスト、画像、グラフ、添付ファイル、注釈などの要素が含まれており、ソースPDFファイルに画像が含まれている場合、画像のカラースペースを判断し、PDFファイルサイズを減らすために適切な圧縮を適用できます。次のコードスニペットは、PDF内の画像がカラーか白黒かを識別する手順を示しています。
+PDFファイルにはテキスト、画像、グラフ、添付ファイル、注釈などの要素が含まれており、ソースPDFファイルに画像が含まれている場合、画像のカラースペースを特定し、PDFファイルサイズを減らすために適切な圧縮を適用できます。次のコードスニペットは、PDF内の画像がカラーか白黒かを識別する手順を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -426,7 +426,7 @@ private static void ReplaceImagesInPDF()
 
 ベースのビットマップ画像の上にベクター形状を配置することはマスクとして機能し、ベクター形状と一致するベースデザインの部分のみを露出させます。形状の外側のすべての領域は隠されます。
 
-コードスニペットは、PDFを読み込み、2つの画像ファイルを開き、これらの画像をPDFの最初のページの最初の2つの画像にステンシルマスクとして適用します。
+このコードスニペットは、PDFを読み込み、2つの画像ファイルを開き、それらの画像をPDFの最初のページの最初の2つの画像にステンシルマスクとして適用します。
 
 ステンシルマスクは、'XImage.AddStencilMask(Stream maskStream)'メソッドで追加できます：
 

@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "A nova funcionalidade na biblioteca Aspose.PDF permite que os usuários adicionem imagens a arquivos PDF existentes usando C#. Este recurso simplifica a manipulação de PDF ao permitir o posicionamento e escalonamento precisos de imagens diretamente dentro do documento, garantindo uma integração de alta qualidade e controle sobre os elementos visuais. Com suporte para vários formatos de imagem e configurações, esta ferramenta aumenta a flexibilidade da gestão de conteúdo PDF.",
+    "abstract": "A nova funcionalidade na biblioteca Aspose.PDF permite que os usuários adicionem imagens a arquivos PDF existentes usando C#. Este recurso simplifica a manipulação de PDF ao permitir o posicionamento e escalonamento precisos de imagens diretamente dentro do documento, garantindo uma integração de alta qualidade e controle sobre elementos visuais. Com suporte para vários formatos de imagem e configurações, esta ferramenta aumenta a flexibilidade da gestão de conteúdo PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2051",
+    "wordcount": "2052",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -268,7 +268,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
-Às vezes, uma imagem grande encontra problemas de escalonamento ao ser adicionada a um PDF. O seguinte trecho de código escala a imagem de acordo com as dimensões da página PDF, garantindo que a imagem se encaixe corretamente e fique melhor.
+Às vezes, uma imagem grande encontra problemas de escalonamento ao ser adicionada a um PDF. O seguinte trecho de código escala a imagem de acordo com as dimensões da página PDF, garantindo que a imagem se encaixe corretamente e tenha uma aparência melhor.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -288,7 +288,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
             // Open bitmap
             using (var img = new Bitmap(stream))
             {
-                //Scale image according to page dimensions
+                // Scale image according to page dimensions
                 using (var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height))
                 {
                     using (var ms = new MemoryStream())
@@ -330,9 +330,9 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 
 ## Identificar se a imagem dentro do PDF é Colorida ou Preto & Branco
 
-Diferentes tipos de compressão podem ser aplicados sobre imagens para reduzir seu tamanho. O tipo de compressão aplicado sobre a imagem depende do ColorSpace da imagem de origem, ou seja, se a imagem é Colorida (RGB), então aplique compressão JPEG2000, e se for Preto & Branco, então a compressão JBIG2/JBIG2000 deve ser aplicada. Portanto, identificar cada tipo de imagem e usar um tipo apropriado de compressão criará a melhor/otimizada saída.
+Diferentes tipos de compressão podem ser aplicados sobre imagens para reduzir seu tamanho. O tipo de compressão aplicada à imagem depende do ColorSpace da imagem de origem, ou seja, se a imagem é Colorida (RGB), então aplique compressão JPEG2000, e se for Preto & Branco, então a compressão JBIG2/JBIG2000 deve ser aplicada. Portanto, identificar cada tipo de imagem e usar um tipo apropriado de compressão criará a melhor/otimizada saída.
 
-Um arquivo PDF pode conter elementos como Texto, Imagem, Gráfico, Anexo, Anotação, etc., e se o arquivo PDF de origem contiver imagens, podemos determinar o espaço de cor da imagem e aplicar a compressão apropriada para reduzir o tamanho do arquivo PDF. O seguinte trecho de código mostra os passos para identificar se a imagem dentro do PDF é Colorida ou Preto & Branco.
+Um arquivo PDF pode conter elementos como Texto, Imagem, Gráfico, Anexo, Anotação etc., e se o arquivo PDF de origem contiver imagens, podemos determinar o espaço de cor da imagem e aplicar a compressão apropriada para reduzir o tamanho do arquivo PDF. O seguinte trecho de código mostra os passos para identificar se a imagem dentro do PDF é Colorida ou Preto & Branco.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -426,7 +426,7 @@ private static void ReplaceImagesInPDF()
 
 Colocar uma forma vetorial sobre a imagem bitmap base funciona como uma máscara, expondo apenas a parte do design base que se alinha com a forma vetorial. Todas as áreas fora da forma serão ocultadas.
 
-O trecho de código carrega um PDF, abre dois arquivos de imagem e aplica essas imagens como máscaras de estêncil nas duas primeiras imagens na primeira página do PDF.
+O trecho de código carrega um PDF, abre dois arquivos de imagem e aplica essas imagens como máscaras de estêncil às duas primeiras imagens na primeira página do PDF.
 
 A máscara de estêncil pode ser adicionada pelo método 'XImage.AddStencilMask(Stream maskStream)':
 

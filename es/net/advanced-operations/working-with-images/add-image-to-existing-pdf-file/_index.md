@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "La nueva funcionalidad en la biblioteca Aspose.PDF permite a los usuarios agregar imágenes a archivos PDF existentes de manera fluida utilizando C#. Esta característica simplifica la manipulación de PDF al permitir una colocación y escalado precisos de las imágenes directamente dentro del documento, asegurando una integración de alta calidad y control sobre los elementos visuales. Con soporte para varios formatos de imagen y configuraciones, esta herramienta mejora la flexibilidad de la gestión de contenido PDF.",
+    "abstract": "La nueva funcionalidad en la biblioteca Aspose.PDF permite a los usuarios agregar imágenes sin problemas a archivos PDF existentes utilizando C#. Esta característica simplifica la manipulación de PDF al permitir una colocación y escalado precisos de las imágenes directamente dentro del documento, asegurando una integración de alta calidad y control sobre los elementos visuales. Con soporte para varios formatos de imagen y configuraciones, esta herramienta mejora la flexibilidad de la gestión de contenido PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 ## Agregar imagen en un archivo PDF existente
 
-Cada página de PDF contiene propiedades de Recursos y Contenidos. Los recursos pueden ser imágenes y formularios, por ejemplo, mientras que el contenido está representado por un conjunto de operadores PDF. Cada operador tiene su nombre y argumento. Este ejemplo utiliza operadores para agregar una imagen a un archivo PDF.
+Cada página PDF contiene propiedades de Recursos y Contenidos. Los recursos pueden ser imágenes y formularios, por ejemplo, mientras que el contenido está representado por un conjunto de operadores PDF. Cada operador tiene su nombre y argumento. Este ejemplo utiliza operadores para agregar una imagen a un archivo PDF.
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
@@ -288,7 +288,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
             // Open bitmap
             using (var img = new Bitmap(stream))
             {
-                //Scale image according to page dimensions
+                // Scale image according to page dimensions
                 using (var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height))
                 {
                     using (var ms = new MemoryStream())
@@ -330,9 +330,9 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 
 ## Identificar si la imagen dentro del PDF es a color o en blanco y negro
 
-Se pueden aplicar diferentes tipos de compresión sobre las imágenes para reducir su tamaño. El tipo de compresión que se aplica a la imagen depende del ColorSpace de la imagen fuente, es decir, si la imagen es a color (RGB), entonces se debe aplicar compresión JPEG2000, y si es en blanco y negro, se debe aplicar compresión JBIG2/JBIG2000. Por lo tanto, identificar cada tipo de imagen y usar un tipo de compresión apropiado creará la mejor salida optimizada.
+Se pueden aplicar diferentes tipos de compresión sobre las imágenes para reducir su tamaño. El tipo de compresión que se aplica a la imagen depende del ColorSpace de la imagen fuente, es decir, si la imagen es a color (RGB), entonces se debe aplicar compresión JPEG2000, y si es en blanco y negro, entonces se debe aplicar compresión JBIG2/JBIG2000. Por lo tanto, identificar cada tipo de imagen y usar un tipo de compresión apropiado creará la mejor salida optimizada.
 
-Un archivo PDF puede contener elementos como texto, imagen, gráfico, adjunto, anotación, etc., y si el archivo PDF fuente contiene imágenes, podemos determinar el espacio de color de la imagen y aplicar la compresión apropiada para reducir el tamaño del archivo PDF. El siguiente fragmento de código muestra los pasos para identificar si la imagen dentro del PDF es a color o en blanco y negro.
+Un archivo PDF puede contener elementos como Texto, Imagen, Gráfico, Adjunto, Anotación, etc., y si el archivo PDF fuente contiene imágenes, podemos determinar el espacio de color de la imagen y aplicar la compresión apropiada para reducir el tamaño del archivo PDF. El siguiente fragmento de código muestra los pasos para identificar si la imagen dentro del PDF es a color o en blanco y negro.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

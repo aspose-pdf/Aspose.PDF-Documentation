@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "1886",
+    "wordcount": "1891",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 ## إضافة صورة في ملف PDF موجود
 
-تحتوي كل صفحة PDF على خصائص الموارد والمحتويات. يمكن أن تكون الموارد صورًا ونماذج على سبيل المثال، بينما يتم تمثيل المحتوى بمجموعة من مشغلات PDF. لكل مشغل اسم وحجة. يستخدم هذا المثال المشغلات لإضافة صورة إلى ملف PDF.
+كل صفحة PDF تحتوي على خصائص الموارد والمحتويات. يمكن أن تكون الموارد صورًا ونماذج على سبيل المثال، بينما يتم تمثيل المحتوى بمجموعة من مشغلات PDF. لكل مشغل اسم وحجة. يستخدم هذا المثال المشغلات لإضافة صورة إلى ملف PDF.
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
@@ -189,7 +189,7 @@ private static void AddImageToPDFUsingPdfFileMender()
 }
 ```
 
-أحيانًا، من الضروري قص صورة قبل إدراجها في PDF. يمكنك استخدام طريقة `AddImage()` لدعم إضافة الصور المقصوصة:
+في بعض الأحيان، من الضروري قص صورة قبل إدراجها في PDF. يمكنك استخدام طريقة `AddImage()` لدعم إضافة الصور المقصوصة:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -268,7 +268,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
-أحيانًا، تواجه صورة كبيرة مشاكل في تغيير الحجم عند إضافتها إلى PDF. تقوم مقتطفات الكود التالية بتغيير حجم الصورة وفقًا لأبعاد صفحة PDF، مما يضمن أن الصورة تناسب بشكل صحيح وتبدو أفضل.
+في بعض الأحيان، تواجه صورة كبيرة مشاكل في تغيير الحجم عند إضافتها إلى PDF. تقوم مقتطفات الكود التالية بتغيير حجم الصورة وفقًا لأبعاد صفحة PDF، مما يضمن أن الصورة تناسب بشكل صحيح وتبدو أفضل.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -288,7 +288,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
             // Open bitmap
             using (var img = new Bitmap(stream))
             {
-                //Scale image according to page dimensions
+                // Scale image according to page dimensions
                 using (var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height))
                 {
                     using (var ms = new MemoryStream())
@@ -330,9 +330,9 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 
 ## تحديد ما إذا كانت الصورة داخل PDF ملونة أو بالأبيض والأسود
 
-يمكن تطبيق أنواع مختلفة من الضغط على الصور لتقليل حجمها. يعتمد نوع الضغط المطبق على الصورة على مساحة اللون للصورة المصدر، أي إذا كانت الصورة ملونة (RGB)، فيجب تطبيق ضغط JPEG2000، وإذا كانت بالأبيض والأسود، فيجب تطبيق ضغط JBIG2/JBIG2000. لذلك، فإن تحديد نوع كل صورة واستخدام نوع الضغط المناسب سيخلق أفضل/أمثل إخراج.
+يمكن تطبيق نوع مختلف من الضغط على الصور لتقليل حجمها. يعتمد نوع الضغط المطبق على الصورة على مساحة اللون للصورة المصدر، أي إذا كانت الصورة ملونة (RGB)، فيجب تطبيق ضغط JPEG2000، وإذا كانت بالأبيض والأسود، فيجب تطبيق ضغط JBIG2/JBIG2000. لذلك، فإن تحديد كل نوع من الصور واستخدام نوع الضغط المناسب سيخلق أفضل/أمثل مخرجات.
 
-قد يحتوي ملف PDF على عناصر نصية وصور ورسوم بيانية ومرفقات وتعليقات وما إلى ذلك، وإذا كان ملف PDF المصدر يحتوي على صور، يمكننا تحديد مساحة لون الصورة وتطبيق الضغط المناسب للصورة لتقليل حجم ملف PDF. تظهر مقتطفات الكود التالية الخطوات لتحديد ما إذا كانت الصورة داخل PDF ملونة أو بالأبيض والأسود.
+قد يحتوي ملف PDF على عناصر نصية وصور ورسوم بيانية ومرفقات وتعليقات وما إلى ذلك، وإذا كان ملف PDF المصدر يحتوي على صور، يمكننا تحديد مساحة لون الصورة وتطبيق الضغط المناسب لتقليل حجم ملف PDF. تظهر مقتطفات الكود التالية الخطوات لتحديد ما إذا كانت الصورة داخل PDF ملونة أو بالأبيض والأسود.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -386,7 +386,7 @@ private static void ExtractImageTypesFromPDF()
 
 من الممكن التحكم في جودة الصورة التي تتم إضافتها إلى ملف PDF. استخدم طريقة [Replace](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ximagecollection/replace/methods/1) المحملة في فئة [XImageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/ximagecollection).
 
-توضح مقتطفات الكود التالية كيفية تحويل جميع صور المستند إلى JPEGs تستخدم جودة 80% للضغط.
+تظهر مقتطفات الكود التالية كيفية تحويل جميع صور المستند إلى JPEGs تستخدم جودة 80% للضغط.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -424,7 +424,7 @@ private static void ReplaceImagesInPDF()
 
 ## دعم تطبيق قناع قص على الصور
 
-يعمل وضع شكل متجه فوق الصورة الأساسية كقناع، مما يكشف فقط الجزء من التصميم الأساسي الذي يتماشى مع الشكل المتجه. ستظل جميع المناطق خارج الشكل مخفية.
+يعمل وضع شكل متجه فوق الصورة النقطية الأساسية كقناع، مما يكشف فقط الجزء من التصميم الأساسي الذي يتماشى مع الشكل المتجه. ستظل جميع المناطق خارج الشكل مخفية.
 
 تقوم مقتطفات الكود بتحميل PDF، وفتح ملفين للصورة، وتطبيق تلك الصور كأقنعة قوالب على أول صورتين في الصفحة الأولى من PDF.
 

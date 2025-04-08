@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "1921",
+    "wordcount": "1923",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-## Tambahkan Gambar dalam File PDF yang Ada
+## Tambahkan Gambar ke File PDF yang Sudah Ada
 
 Setiap halaman PDF berisi properti Resources dan Contents. Resources dapat berupa gambar dan formulir misalnya, sementara konten diwakili oleh sekumpulan operator PDF. Setiap operator memiliki nama dan argumennya. Contoh ini menggunakan operator untuk menambahkan gambar ke file PDF.
 
@@ -153,7 +153,7 @@ Secara default, kualitas JPEG diatur ke 100%. Untuk menerapkan kompresi dan kual
 - overload metode Replace ditambahkan ke kelas XImageCollection: public void Replace(int index, Stream stream, int quality)
 - overload metode Add ditambahkan ke kelas XImageCollection: public void Add(Stam stream, int quality)
 
-## Tambahkan Gambar dalam File PDF yang Ada (Facade)
+## Tambahkan Gambar ke File PDF yang Sudah Ada (Facade)
 
 Ada juga cara alternatif yang lebih mudah untuk menambahkan Gambar ke file PDF. Anda dapat menggunakan metode [AddImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) dari kelas [PdfFileMend](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend). Metode [AddImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) memerlukan gambar yang akan ditambahkan, nomor halaman di mana gambar perlu ditambahkan dan informasi koordinat. Setelah itu, simpan file PDF yang diperbarui menggunakan metode Close. Potongan kode berikut menunjukkan cara menambahkan gambar dalam file PDF yang sudah ada.
 
@@ -288,7 +288,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
             // Open bitmap
             using (var img = new Bitmap(stream))
             {
-                //Scale image according to page dimensions
+                // Scale image according to page dimensions
                 using (var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height))
                 {
                     using (var ms = new MemoryStream())
@@ -330,7 +330,7 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 
 ## Identifikasi apakah gambar di dalam PDF berwarna atau Hitam & Putih
 
-Berbagai jenis kompresi dapat diterapkan pada gambar untuk mengurangi ukurannya. Jenis kompresi yang diterapkan pada gambar tergantung pada ColorSpace dari gambar sumber yaitu jika gambar berwarna (RGB), maka terapkan kompresi JPEG2000, dan jika hitam & putih, maka kompresi JBIG2/JBIG2000 harus diterapkan. Oleh karena itu, mengidentifikasi setiap jenis gambar dan menggunakan jenis kompresi yang sesuai akan menghasilkan output terbaik/yang dioptimalkan.
+Berbagai jenis kompresi dapat diterapkan pada gambar untuk mengurangi ukurannya. Jenis kompresi yang diterapkan pada gambar tergantung pada ColorSpace dari gambar sumber yaitu jika gambar berwarna (RGB), maka terapkan kompresi JPEG2000, dan jika itu Hitam & Putih, maka kompresi JBIG2/JBIG2000 harus diterapkan. Oleh karena itu, mengidentifikasi setiap jenis gambar dan menggunakan jenis kompresi yang sesuai akan menghasilkan output terbaik/yang dioptimalkan.
 
 File PDF dapat berisi elemen Teks, Gambar, Grafik, Lampiran, Anotasi, dll dan jika file PDF sumber berisi gambar, kita dapat menentukan ruang warna gambar dan menerapkan kompresi yang sesuai untuk gambar guna mengurangi ukuran file PDF. Potongan kode berikut menunjukkan langkah-langkah untuk mengidentifikasi apakah gambar di dalam PDF berwarna atau Hitam & Putih.
 
@@ -422,13 +422,13 @@ private static void ReplaceImagesInPDF()
 }
 ```
 
-## Dukungan penerapan Topeng Pemotongan pada Gambar
+## Dukungan penerapan Masker Pemotongan pada Gambar
 
-Menempatkan bentuk vektor di atas gambar bitmap dasar berfungsi sebagai topeng, hanya mengekspos bagian dari desain dasar yang sejajar dengan bentuk vektor. Semua area di luar bentuk akan disembunyikan.
+Menempatkan bentuk vektor di atas gambar bitmap dasar berfungsi sebagai masker, hanya mengekspos bagian desain dasar yang sejajar dengan bentuk vektor. Semua area di luar bentuk akan disembunyikan.
 
-Potongan kode memuat PDF, membuka dua file gambar, dan menerapkan gambar tersebut sebagai topeng stensil pada dua gambar pertama di halaman pertama PDF.
+Potongan kode memuat PDF, membuka dua file gambar, dan menerapkan gambar tersebut sebagai masker stensil pada dua gambar pertama di halaman pertama PDF.
 
-Topeng stensil dapat ditambahkan dengan metode 'XImage.AddStencilMask(Stream maskStream)':
+Masker stensil dapat ditambahkan dengan metode 'XImage.AddStencilMask(Stream maskStream)':
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

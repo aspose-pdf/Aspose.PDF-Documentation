@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2115",
+    "wordcount": "2117",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -232,7 +232,7 @@ private static void AddCroppedImageToPDF()
 
 ## Placer l'image sur la page et préserver (contrôler) le rapport d'aspect
 
-Si nous ne connaissons pas les dimensions de l'image, il y a de fortes chances d'obtenir une image déformée sur la page. L'exemple suivant montre l'une des façons d'éviter cela.
+Si nous ne connaissons pas les dimensions de l'image, il y a toutes les chances d'obtenir une image déformée sur la page. L'exemple suivant montre l'une des façons d'éviter cela.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -288,7 +288,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
             // Open bitmap
             using (var img = new Bitmap(stream))
             {
-                //Scale image according to page dimensions
+                // Scale image according to page dimensions
                 using (var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height))
                 {
                     using (var ms = new MemoryStream())
@@ -422,7 +422,7 @@ private static void ReplaceImagesInPDF()
 }
 ```
 
-## Support pour appliquer un masque de découpe aux images
+## Support pour l'application d'un masque de découpe aux images
 
 Placer une forme vectorielle sur l'image bitmap de base fonctionne comme un masque, exposant uniquement la partie du design de base qui s'aligne avec la forme vectorielle. Toutes les zones en dehors de la forme seront dissimulées.
 
