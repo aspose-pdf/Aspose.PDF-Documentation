@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /zh/net/add-image-to-existing-pdf-file/
-description: 本节描述如何使用 C# 库将图像添加到现有 PDF 文件中。
+description: 本节描述了如何使用 C# 库将图像添加到现有 PDF 文件中。
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "Aspose.PDF 库中的新功能允许用户无缝地使用 C# 将图像添加到现有 PDF 文件中。此功能通过直接在文档中启用图像的精确定位和缩放，简化了 PDF 操作，确保高质量的集成和对视觉元素的控制。支持多种图像格式和配置，此工具增强了 PDF 内容管理的灵活性。",
+    "abstract": "Aspose.PDF 库中的新功能允许用户使用 C# 无缝地将图像添加到现有 PDF 文件中。此功能通过直接在文档中启用图像的精确定位和缩放，简化了 PDF 操作，确保高质量的集成和对视觉元素的控制。支持多种图像格式和配置，此工具增强了 PDF 内容管理的灵活性。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "1433",
+    "wordcount": "1538",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -71,8 +71,8 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/add-image-to-existing-pdf-file/"
     },
-    "dateModified": "2024-11-25",
-    "description": "本节描述如何使用 C# 库将图像添加到现有 PDF 文件中。"
+    "dateModified": "2025-04-08",
+    "description": "本节描述了如何使用 C# 库将图像添加到现有 PDF 文件中。"
 }
 </script>
 
@@ -93,7 +93,7 @@ lastmod: "2022-02-17"
 - 使用 Do 操作符在页面上绘制图像。
 - 最后，使用 GRestore 操作符保存更新后的图形状态。
 - 保存文件。
-以下代码片段演示如何在 PDF 文档中添加图像。
+以下代码片段演示了如何在 PDF 文档中添加图像。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -155,7 +155,7 @@ private static void AddImageToPDF()
 
 ## 在现有 PDF 文件中添加图像（外观）
 
-还有一种替代的、更简单的方法可以将图像添加到 PDF 文件中。您可以使用 [PdfFileMend](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法。 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法需要添加的图像、需要添加图像的页面编号和坐标信息。之后，使用 Close 方法保存更新后的 PDF 文件。以下代码片段向您展示如何在现有 PDF 文件中添加图像。
+还有一种替代的、更简单的方法可以将图像添加到 PDF 文件中。您可以使用 [PdfFileMend](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法。 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法需要添加的图像、需要添加图像的页面编号和坐标信息。之后，使用 Close 方法保存更新后的 PDF 文件。以下代码片段向您展示了如何在现有 PDF 文件中添加图像。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void AddImageToPDFUsingPdfFileMender()
 }
 ```
 
-有时，在将图像插入 PDF 之前，有必要裁剪图像。您可以使用 `AddImage()` 方法来支持添加裁剪后的图像：
+有时，在将图像插入 PDF 之前，需要裁剪图像。您可以使用 `AddImage()` 方法来支持添加裁剪后的图像：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -232,7 +232,7 @@ private static void AddCroppedImageToPDF()
 
 ## 在页面上放置图像并保持（控制）纵横比
 
-如果我们不知道图像的尺寸，那么在页面上可能会出现失真的图像。以下示例展示了避免这种情况的一种方法。
+如果我们不知道图像的尺寸，则很有可能在页面上得到失真的图像。以下示例展示了避免这种情况的一种方法。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -268,11 +268,71 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
+有时，大图像在添加到 PDF 时会遇到缩放问题。以下代码片段根据 PDF 页面尺寸缩放图像，确保图像适当适配并看起来更好。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var file = dataDir + "AddImageAccordingToPage.jpg";
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var pdfImageSection = document.Pages.Add();
+        using (var stream = new FileStream(file, FileMode.Open))
+        {
+            // Open bitmap
+            using (var img = new Bitmap(stream))
+            {
+                //Scale image according to page dimensions
+                using (var scaledImg = ScaleImage(img, (int)pdfImageSection.PageInfo.Width, (int)pdfImageSection.PageInfo.Height))
+                {
+                    using (var ms = new MemoryStream())
+                    {
+                        scaledImg.Save(ms, ImageFormat.Jpeg);
+                        ms.Seek(0, SeekOrigin.Begin);
+                        var image = new Aspose.Pdf.Image
+                        {
+                            ImageStream = ms
+                        };
+
+                        // Add the image to the page
+                        pdfImageSection.Paragraphs.Add(image);
+
+                        // Save PDF document
+                        document.Save("AddImageAccordingToPage.pdf");
+                    }
+                }
+            }
+        }
+    }
+}
+
+private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
+{
+    var ratioX = (double)maxWidth / image.Width;
+    var ratioY = (double)maxHeight / image.Height;
+    var ratio = Math.Min(ratioX, ratioY);
+    var newWidth = (int)(image.Width * ratio);
+    var newHeight = (int)(image.Height * ratio);
+    var newImage = new Bitmap(newWidth, newHeight);
+    using (var graphics = System.Drawing.Graphics.FromImage(newImage))
+    {
+        graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+    }
+    return newImage;
+}
+```
+
 ## 确定 PDF 中的图像是彩色还是黑白
 
 可以对图像应用不同类型的压缩以减少其大小。应用于图像的压缩类型取决于源图像的 ColorSpace，即如果图像是彩色（RGB），则应用 JPEG2000 压缩，如果是黑白，则应应用 JBIG2/JBIG2000 压缩。因此，识别每种图像类型并使用适当的压缩类型将产生最佳/优化的输出。
 
-PDF 文件可能包含文本、图像、图形、附件、注释等元素，如果源 PDF 文件包含图像，我们可以确定图像的颜色空间并应用适当的压缩以减少 PDF 文件大小。以下代码片段展示了识别 PDF 中的图像是彩色还是黑白的步骤。
+PDF 文件可能包含文本、图像、图形、附件、注释等元素，如果源 PDF 文件包含图像，我们可以确定图像的颜色空间并应用适当的压缩以减少 PDF 文件大小。以下代码片段展示了识别 PDF 中图像是彩色还是黑白的步骤。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -326,7 +386,7 @@ private static void ExtractImageTypesFromPDF()
 
 可以控制添加到 PDF 文件中的图像的质量。使用 [XImageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/ximagecollection) 类中的重载 [Replace](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ximagecollection/replace/methods/1) 方法。
 
-以下代码片段演示如何将文档中的所有图像转换为使用 80% 质量进行压缩的 JPEG。
+以下代码片段演示了如何将文档中的所有图像转换为使用 80% 质量进行压缩的 JPEG。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
