@@ -98,6 +98,7 @@ It is recommended to avoid digital signatures with the SHA-1 digest algorithm du
 - [Set Privileges, Encrypt and Decrypt PDF File](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [Extract Image and Signature Information](/pdf/net/extract-image-and-signature-information/)
 - [Sign PDF Document From Smart Card](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Custom security handler](/pdf/net/custom-security-handler/)
 
 <script type="application/ld+json">
 {

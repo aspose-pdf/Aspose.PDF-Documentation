@@ -2,7 +2,7 @@
 title: Add digital signature with a custom security handler in C#
 linktitle: Custom security handler
 type: docs
-weight: 10
+weight: 40
 url: /net/custom-security-handler/
 description: Add digital signature with a custom security handler in C#
 lastmod: "2025-04-08"
