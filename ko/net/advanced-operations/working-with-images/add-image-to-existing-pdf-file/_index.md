@@ -1,5 +1,5 @@
 ---
-title: C#를 사용하여 PDF에 이미지 추가
+title: PDF에 이미지 추가하기 C#
 linktitle: 이미지 추가
 type: docs
 ai_search_scope: pdf_net
@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "Aspose.PDF 라이브러리의 새로운 기능을 통해 사용자는 C#을 사용하여 기존 PDF 파일에 이미지를 원활하게 추가할 수 있습니다. 이 기능은 문서 내에서 이미지를 정확하게 배치하고 크기를 조정할 수 있게 하여 PDF 조작을 간소화하며, 시각적 요소에 대한 고품질 통합 및 제어를 보장합니다. 다양한 이미지 형식 및 구성에 대한 지원을 통해 이 도구는 PDF 콘텐츠 관리의 유연성을 향상시킵니다.",
+    "abstract": "Aspose.PDF 라이브러리의 새로운 기능을 통해 사용자는 C#을 사용하여 기존 PDF 파일에 이미지를 원활하게 추가할 수 있습니다. 이 기능은 문서 내에서 이미지를 정확하게 배치하고 크기를 조정할 수 있게 하여 PDF 조작을 단순화하며, 시각적 요소에 대한 고품질 통합 및 제어를 보장합니다. 다양한 이미지 형식 및 구성에 대한 지원을 통해 이 도구는 PDF 콘텐츠 관리의 유연성을 향상시킵니다.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2018",
+    "wordcount": "2019",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-## 기존 PDF 파일에 이미지 추가
+## 기존 PDF 파일에 이미지 추가하기
 
 모든 PDF 페이지는 리소스 및 콘텐츠 속성을 포함합니다. 리소스는 이미지 및 양식과 같은 요소일 수 있으며, 콘텐츠는 PDF 연산자의 집합으로 표현됩니다. 각 연산자는 이름과 인수를 가집니다. 이 예제에서는 연산자를 사용하여 PDF 파일에 이미지를 추가합니다.
 
@@ -153,9 +153,9 @@ private static void AddImageToPDF()
 - XImageCollection 클래스에 추가된 Replace 메서드 오버로드: public void Replace(int index, Stream stream, int quality)
 - XImageCollection 클래스에 추가된 Add 메서드 오버로드: public void Add(Stam stream, int quality)
 
-## 기존 PDF 파일에 이미지 추가 (파사드)
+## 기존 PDF 파일에 이미지 추가하기 (파사드)
 
-PDF 파일에 이미지를 추가하는 더 쉽고 대안적인 방법도 있습니다. [PdfFileMend](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend) 클래스의 [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드를 사용할 수 있습니다. [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드는 추가할 이미지, 이미지를 추가할 페이지 번호 및 좌표 정보를 요구합니다. 그 후, Close 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 기존 PDF 파일에 이미지를 추가하는 방법을 보여줍니다.
+PDF 파일에 이미지를 추가하는 더 간단한 방법도 있습니다. [PdfFileMend](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend) 클래스의 [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드를 사용할 수 있습니다. [AddImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 메서드는 추가할 이미지, 이미지가 추가될 페이지 번호 및 좌표 정보를 요구합니다. 그 후 Close 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다. 다음 코드 스니펫은 기존 PDF 파일에 이미지를 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -230,9 +230,9 @@ private static void AddCroppedImageToPDF()
 }
 ```
 
-## 페이지에 이미지를 배치하고 종횡비 유지 (제어)
+## 페이지에 이미지를 배치하고 종횡비 유지하기 (제어하기)
 
-이미지의 크기를 모르는 경우 페이지에 왜곡된 이미지가 나타날 가능성이 있습니다. 다음 예제는 이를 피하는 방법 중 하나를 보여줍니다.
+이미지의 크기를 모르는 경우 페이지에 왜곡된 이미지가 나타날 가능성이 높습니다. 다음 예제는 이를 피하는 방법 중 하나를 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -306,7 +306,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
                         pdfImageSection.Paragraphs.Add(image);
 
                         // Save PDF document
-                        document.Save("AddImageAccordingToPage.pdf");
+                        document.Save(dataDir + "AddImageAccordingToPage.pdf");
                     }
                 }
             }
@@ -362,8 +362,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
     pdfImageSection.Paragraphs.Add(image);
 
     // Save PDF document
-    document.Save("AddImageAccordingToPage.pdf");
-
+    document.Save(dataDir + "AddImageAccordingToPage.pdf");
 }
 
 private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
@@ -382,9 +381,9 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 {{< /tab >}}
 {{< /tabs >}}
 
-## PDF 내 이미지가 컬러인지 흑백인지 식별
+## PDF 내 이미지가 컬러인지 흑백인지 식별하기
 
-이미지 크기를 줄이기 위해 다양한 유형의 압축을 적용할 수 있습니다. 이미지에 적용되는 압축 유형은 원본 이미지의 ColorSpace에 따라 다릅니다. 즉, 이미지가 컬러(RGB)인 경우 JPEG2000 압축을 적용하고, 흑백인 경우 JBIG2/JBIG2000 압축을 적용해야 합니다. 따라서 각 이미지 유형을 식별하고 적절한 압축 유형을 사용하면 최상의 최적화된 출력을 생성할 수 있습니다.
+이미지의 크기를 줄이기 위해 다양한 유형의 압축을 적용할 수 있습니다. 이미지에 적용되는 압축 유형은 원본 이미지의 ColorSpace에 따라 다릅니다. 즉, 이미지가 컬러(RGB)인 경우 JPEG2000 압축을 적용하고, 흑백인 경우 JBIG2/JBIG2000 압축을 적용해야 합니다. 따라서 각 이미지 유형을 식별하고 적절한 압축 유형을 사용하면 최적화된 출력을 생성할 수 있습니다.
 
 PDF 파일에는 텍스트, 이미지, 그래프, 첨부 파일, 주석 등 요소가 포함될 수 있으며, 원본 PDF 파일에 이미지가 포함되어 있는 경우 이미지의 색상 공간을 결정하고 PDF 파일 크기를 줄이기 위해 적절한 압축을 적용할 수 있습니다. 다음 코드 스니펫은 PDF 내 이미지가 컬러인지 흑백인지 식별하는 단계를 보여줍니다.
 
@@ -440,7 +439,7 @@ private static void ExtractImageTypesFromPDF()
 
 PDF 파일에 추가되는 이미지의 품질을 제어할 수 있습니다. [XImageCollection](https://reference.aspose.com/pdf/ko/net/aspose.pdf/ximagecollection) 클래스의 오버로드된 [Replace](https://reference.aspose.com/pdf/ko/net/aspose.pdf.ximagecollection/replace/methods/1) 메서드를 사용하십시오.
 
-다음 코드 스니펫은 모든 문서 이미지를 JPEG로 변환하여 80% 품질로 압축하는 방법을 보여줍니다.
+다음 코드 스니펫은 모든 문서 이미지를 JPEG로 변환하여 압축에 80% 품질을 사용하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -480,9 +479,9 @@ private static void ReplaceImagesInPDF()
 
 벡터 모양을 기본 비트맵 이미지 위에 배치하면 마스크로 작용하여 벡터 모양과 정렬된 기본 디자인의 일부만 노출됩니다. 모양 외부의 모든 영역은 숨겨집니다.
 
-코드 스니펫은 PDF를 로드하고 두 개의 이미지 파일을 열어 첫 페이지의 첫 번째 두 이미지에 스텐실 마스크로 적용합니다.
+코드 스니펫은 PDF를 로드하고 두 개의 이미지 파일을 열어 첫 페이지의 첫 두 이미지에 스텐실 마스크로 적용합니다.
 
-스텐실 마스크는 'XImage.AddStencilMask(Stream maskStream)' 메서드로 추가할 수 있습니다:
+스텐실 마스크는 'XImage.AddStencilMask(Stream maskStream)' 메서드를 통해 추가할 수 있습니다:
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "Fungsi baru dalam pustaka Aspose.PDF memungkinkan pengguna untuk dengan mudah menambahkan gambar ke file PDF yang sudah ada menggunakan C#. Fitur ini menyederhanakan manipulasi PDF dengan memungkinkan penempatan dan skala gambar yang tepat langsung dalam dokumen, memastikan integrasi berkualitas tinggi dan kontrol atas elemen visual. Dengan dukungan untuk berbagai format gambar dan konfigurasi, alat ini meningkatkan fleksibilitas manajemen konten PDF.",
+    "abstract": "Fungsi baru dalam pustaka Aspose.PDF memungkinkan pengguna untuk dengan mudah menambahkan gambar ke file PDF yang sudah ada menggunakan C#. Fitur ini menyederhanakan manipulasi PDF dengan memungkinkan penempatan dan skala gambar yang tepat langsung dalam dokumen, memastikan integrasi berkualitas tinggi dan kontrol atas elemen visual. Dengan dukungan untuk berbagai format dan konfigurasi gambar, alat ini meningkatkan fleksibilitas manajemen konten PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2127",
+    "wordcount": "2132",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 ## Tambahkan Gambar dalam File PDF yang Ada
 
-Setiap halaman PDF berisi properti Resources dan Contents. Resources dapat berupa gambar dan formulir, sementara konten diwakili oleh sekumpulan operator PDF. Setiap operator memiliki nama dan argumennya. Contoh ini menggunakan operator untuk menambahkan gambar ke file PDF.
+Setiap halaman PDF mengandung properti Resources dan Contents. Resources dapat berupa gambar dan formulir misalnya, sementara konten diwakili oleh sekumpulan operator PDF. Setiap operator memiliki nama dan argumennya. Contoh ini menggunakan operator untuk menambahkan gambar ke file PDF.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -86,7 +86,7 @@ Untuk menambahkan gambar ke file PDF yang sudah ada:
 
 - Buat objek Document dan buka dokumen PDF input.
 - Ambil halaman yang ingin Anda tambahkan gambar.
-- Tambahkan gambar ke koleksi Resources halaman.
+- Tambahkan gambar ke dalam koleksi Resources halaman.
 - Gunakan operator untuk menempatkan gambar di halaman:
 - Gunakan operator GSave untuk menyimpan keadaan grafis saat ini.
 - Gunakan operator ConcatenateMatrix untuk menentukan di mana gambar akan ditempatkan.
@@ -230,7 +230,7 @@ private static void AddCroppedImageToPDF()
 }
 ```
 
-## Tempatkan gambar di halaman dan pertahankan (kendalikan) rasio aspek
+## Tempatkan gambar di halaman dan pertahankan (kontrol) rasio aspek
 
 Jika kita tidak mengetahui dimensi gambar, ada kemungkinan besar mendapatkan gambar yang terdistorsi di halaman. Contoh berikut menunjukkan salah satu cara untuk menghindari hal ini.
 
@@ -268,7 +268,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
-Terkadang, gambar besar mengalami masalah skala saat ditambahkan ke PDF. Potongan kode berikut menskalakan gambar sesuai dengan dimensi halaman PDF, memastikan gambar pas dengan baik dan terlihat lebih baik.
+Terkadang, gambar besar mengalami masalah skala saat ditambahkan ke PDF. Potongan kode berikut mengubah skala gambar sesuai dengan dimensi halaman PDF, memastikan gambar pas dengan baik dan terlihat lebih baik.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -306,7 +306,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
                         pdfImageSection.Paragraphs.Add(image);
 
                         // Save PDF document
-                        document.Save("AddImageAccordingToPage.pdf");
+                        document.Save(dataDir + "AddImageAccordingToPage.pdf");
                     }
                 }
             }
@@ -362,8 +362,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
     pdfImageSection.Paragraphs.Add(image);
 
     // Save PDF document
-    document.Save("AddImageAccordingToPage.pdf");
-
+    document.Save(dataDir + "AddImageAccordingToPage.pdf");
 }
 
 private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
@@ -384,9 +383,9 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 
 ## Identifikasi apakah gambar di dalam PDF berwarna atau Hitam & Putih
 
-Berbagai jenis kompresi dapat diterapkan pada gambar untuk mengurangi ukurannya. Jenis kompresi yang diterapkan pada gambar tergantung pada ColorSpace gambar sumber, yaitu jika gambar berwarna (RGB), maka terapkan kompresi JPEG2000, dan jika hitam & putih, maka kompresi JBIG2/JBIG2000 harus diterapkan. Oleh karena itu, mengidentifikasi setiap jenis gambar dan menggunakan jenis kompresi yang sesuai akan menghasilkan output terbaik/yang dioptimalkan.
+Berbagai jenis kompresi dapat diterapkan pada gambar untuk mengurangi ukurannya. Jenis kompresi yang diterapkan pada gambar tergantung pada ColorSpace gambar sumber yaitu jika gambar berwarna (RGB), maka terapkan kompresi JPEG2000, dan jika Hitam & Putih, maka kompresi JBIG2/JBIG2000 harus diterapkan. Oleh karena itu, mengidentifikasi setiap jenis gambar dan menggunakan jenis kompresi yang sesuai akan menghasilkan output terbaik/yang dioptimalkan.
 
-File PDF dapat berisi elemen Teks, Gambar, Grafik, Lampiran, Anotasi, dll., dan jika file PDF sumber berisi gambar, kita dapat menentukan ruang warna gambar dan menerapkan kompresi yang sesuai untuk gambar guna mengurangi ukuran file PDF. Potongan kode berikut menunjukkan langkah-langkah untuk mengidentifikasi apakah gambar di dalam PDF berwarna atau Hitam & Putih.
+File PDF dapat berisi elemen Teks, Gambar, Grafik, Lampiran, Anotasi, dll dan jika file PDF sumber berisi gambar, kita dapat menentukan ruang warna gambar dan menerapkan kompresi yang sesuai untuk gambar guna mengurangi ukuran file PDF. Potongan kode berikut menunjukkan langkah-langkah untuk mengidentifikasi apakah gambar di dalam PDF berwarna atau Hitam & Putih.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -476,13 +475,13 @@ private static void ReplaceImagesInPDF()
 }
 ```
 
-## Dukungan penerapan Topeng Pemotongan pada Gambar
+## Dukungan penerapan Masker Pemotongan pada Gambar
 
-Menempatkan bentuk vektor di atas gambar bitmap dasar berfungsi sebagai topeng, hanya mengekspos bagian desain dasar yang sejajar dengan bentuk vektor. Semua area di luar bentuk akan tersembunyi.
+Menempatkan bentuk vektor di atas gambar bitmap dasar berfungsi sebagai masker, hanya mengekspos bagian desain dasar yang sejajar dengan bentuk vektor. Semua area di luar bentuk akan disembunyikan.
 
-Potongan kode memuat PDF, membuka dua file gambar, dan menerapkan gambar tersebut sebagai topeng stensil pada dua gambar pertama di halaman pertama PDF.
+Potongan kode memuat PDF, membuka dua file gambar, dan menerapkan gambar tersebut sebagai masker stensil pada dua gambar pertama di halaman pertama PDF.
 
-Topeng stensil dapat ditambahkan dengan metode 'XImage.AddStencilMask(Stream maskStream)':
+Masker stensil dapat ditambahkan dengan metode 'XImage.AddStencilMask(Stream maskStream)':
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

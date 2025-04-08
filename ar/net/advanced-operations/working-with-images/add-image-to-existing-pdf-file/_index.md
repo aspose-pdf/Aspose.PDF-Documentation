@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "تتيح الوظيفة الجديدة في مكتبة Aspose.PDF للمستخدمين إضافة صور بسلاسة إلى ملفات PDF الموجودة باستخدام C#. تبسط هذه الميزة معالجة PDF من خلال تمكين تحديد المواقع الدقيقة وتغيير حجم الصور مباشرة داخل المستند، مما يضمن تكاملًا عالي الجودة والتحكم في العناصر المرئية. مع دعم تنسيقات الصور المختلفة والتكوينات، تعزز هذه الأداة مرونة إدارة محتوى PDF",
+    "abstract": "تتيح الوظيفة الجديدة في مكتبة Aspose.PDF للمستخدمين إضافة الصور بسلاسة إلى ملفات PDF الموجودة باستخدام C#. تبسط هذه الميزة معالجة PDF من خلال تمكين تحديد المواقع الدقيقة وتغيير حجم الصور مباشرة داخل المستند، مما يضمن تكاملًا عالي الجودة والتحكم في العناصر المرئية. مع دعم تنسيقات الصور المختلفة والتكوينات، تعزز هذه الأداة مرونة إدارة محتوى PDF",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2095",
+    "wordcount": "2099",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 ## إضافة صورة في ملف PDF موجود
 
-كل صفحة PDF تحتوي على خصائص الموارد والمحتويات. يمكن أن تكون الموارد صورًا ونماذج على سبيل المثال، بينما يتم تمثيل المحتوى بمجموعة من مشغلات PDF. لكل مشغل اسم وحجة. يستخدم هذا المثال المشغلات لإضافة صورة إلى ملف PDF.
+تحتوي كل صفحة PDF على خصائص الموارد والمحتويات. يمكن أن تكون الموارد صورًا ونماذج على سبيل المثال، بينما يتم تمثيل المحتوى بمجموعة من مشغلات PDF. لكل مشغل اسم وحجة. يستخدم هذا المثال المشغلات لإضافة صورة إلى ملف PDF.
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
@@ -189,7 +189,7 @@ private static void AddImageToPDFUsingPdfFileMender()
 }
 ```
 
-أحيانًا، من الضروري قص صورة قبل إدراجها في PDF. يمكنك استخدام طريقة `AddImage()` لدعم إضافة الصور المقصوصة:
+في بعض الأحيان، من الضروري قص صورة قبل إدراجها في PDF. يمكنك استخدام طريقة `AddImage()` لدعم إضافة الصور المقطوعة:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -268,7 +268,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
-أحيانًا، تواجه صورة كبيرة مشاكل في تغيير الحجم عند إضافتها إلى PDF. تقوم مقتطفات الكود التالية بتغيير حجم الصورة وفقًا لأبعاد صفحة PDF، مما يضمن أن الصورة تناسب بشكل صحيح وتبدو أفضل.
+في بعض الأحيان، تواجه الصورة الكبيرة مشاكل في تغيير الحجم عند إضافتها إلى PDF. تقوم مقتطفات الكود التالية بتغيير حجم الصورة وفقًا لأبعاد صفحة PDF، مما يضمن أن الصورة تناسب بشكل صحيح وتبدو أفضل.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -306,7 +306,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
                         pdfImageSection.Paragraphs.Add(image);
 
                         // Save PDF document
-                        document.Save("AddImageAccordingToPage.pdf");
+                        document.Save(dataDir + "AddImageAccordingToPage.pdf");
                     }
                 }
             }
@@ -362,8 +362,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
     pdfImageSection.Paragraphs.Add(image);
 
     // Save PDF document
-    document.Save("AddImageAccordingToPage.pdf");
-
+    document.Save(dataDir + "AddImageAccordingToPage.pdf");
 }
 
 private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
@@ -384,9 +383,9 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 
 ## تحديد ما إذا كانت الصورة داخل PDF ملونة أو بالأبيض والأسود
 
-يمكن تطبيق نوع مختلف من الضغط على الصور لتقليل حجمها. يعتمد نوع الضغط المطبق على الصورة على ColorSpace للصورة المصدر، أي إذا كانت الصورة ملونة (RGB)، فيجب تطبيق ضغط JPEG2000، وإذا كانت بالأبيض والأسود، فيجب تطبيق ضغط JBIG2/JBIG2000. لذلك، فإن تحديد كل نوع من الصور واستخدام نوع الضغط المناسب سيخلق أفضل/أمثل مخرجات.
+يمكن تطبيق أنواع مختلفة من الضغط على الصور لتقليل حجمها. يعتمد نوع الضغط المطبق على الصورة على ColorSpace للصورة المصدر، أي إذا كانت الصورة ملونة (RGB)، فيجب تطبيق ضغط JPEG2000، وإذا كانت بالأبيض والأسود، فيجب تطبيق ضغط JBIG2/JBIG2000. لذلك، فإن تحديد نوع كل صورة واستخدام نوع الضغط المناسب سيخلق أفضل/أمثل إخراج.
 
-قد يحتوي ملف PDF على عناصر نصوص وصور ورسوم بيانية ومرفقات وتعليقات وما إلى ذلك، وإذا كان ملف PDF المصدر يحتوي على صور، يمكننا تحديد مساحة لون الصورة وتطبيق الضغط المناسب لتقليل حجم ملف PDF. تظهر مقتطفات الكود التالية الخطوات لتحديد ما إذا كانت الصورة داخل PDF ملونة أو بالأبيض والأسود.
+قد يحتوي ملف PDF على عناصر مثل النصوص والصور والرسوم البيانية والمرفقات والتعليقات التوضيحية، وإذا كان ملف PDF المصدر يحتوي على صور، يمكننا تحديد مساحة لون الصورة وتطبيق الضغط المناسب لتقليل حجم ملف PDF. تظهر مقتطفات الكود التالية الخطوات لتحديد ما إذا كانت الصورة داخل PDF ملونة أو بالأبيض والأسود.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -480,7 +479,7 @@ private static void ReplaceImagesInPDF()
 
 يعمل وضع شكل متجه فوق الصورة النقطية الأساسية كقناع، مما يكشف فقط الجزء من التصميم الأساسي الذي يتماشى مع الشكل المتجه. ستظل جميع المناطق خارج الشكل مخفية.
 
-تقوم مقتطفات الكود بتحميل PDF، وفتح ملفي صورة، وتطبيق تلك الصور كأقنعة قوالب على أول صورتين في الصفحة الأولى من PDF.
+تقوم مقتطفات الكود بتحميل PDF، وفتح ملفين للصورة، وتطبيق تلك الصور كأقنعة قوالب على أول صورتين في الصفحة الأولى من PDF.
 
 يمكن إضافة قناع القالب بواسطة طريقة 'XImage.AddStencilMask(Stream maskStream)':
 

@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2324",
+    "wordcount": "2326",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -306,7 +306,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
                         pdfImageSection.Paragraphs.Add(image);
 
                         // Save PDF document
-                        document.Save("AddImageAccordingToPage.pdf");
+                        document.Save(dataDir + "AddImageAccordingToPage.pdf");
                     }
                 }
             }
@@ -362,8 +362,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
     pdfImageSection.Paragraphs.Add(image);
 
     // Save PDF document
-    document.Save("AddImageAccordingToPage.pdf");
-
+    document.Save(dataDir + "AddImageAccordingToPage.pdf");
 }
 
 private static Image ScaleImage(Image image, int maxWidth, int maxHeight)

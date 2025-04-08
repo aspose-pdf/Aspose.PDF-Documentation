@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2110",
+    "wordcount": "2112",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -85,7 +85,7 @@ lastmod: "2022-02-17"
 Чтобы добавить изображение в существующий PDF файл:
 
 - Создайте объект Document и откройте входной PDF документ.
-- Получите страницу, в которую вы хотите добавить изображение.
+- Получите страницу, на которую вы хотите добавить изображение.
 - Добавьте изображение в коллекцию ресурсов страницы.
 - Используйте операторы для размещения изображения на странице:
 - Используйте оператор GSave, чтобы сохранить текущее графическое состояние.
@@ -232,7 +232,7 @@ private static void AddCroppedImageToPDF()
 
 ## Разместить изображение на странице и сохранить (контролировать) соотношение сторон
 
-Если мы не знаем размеры изображения, есть все шансы получить искаженное изображение на странице. Следующий пример показывает один из способов избежать этого.
+Если мы не знаем размеры изображения, есть большая вероятность получить искаженное изображение на странице. Следующий пример показывает один из способов избежать этого.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -306,7 +306,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
                         pdfImageSection.Paragraphs.Add(image);
 
                         // Save PDF document
-                        document.Save("AddImageAccordingToPage.pdf");
+                        document.Save(dataDir + "AddImageAccordingToPage.pdf");
                     }
                 }
             }
@@ -362,8 +362,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
     pdfImageSection.Paragraphs.Add(image);
 
     // Save PDF document
-    document.Save("AddImageAccordingToPage.pdf");
-
+    document.Save(dataDir + "AddImageAccordingToPage.pdf");
 }
 
 private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
@@ -480,7 +479,7 @@ private static void ReplaceImagesInPDF()
 
 Размещение векторной формы поверх базового растрового изображения функционирует как маска, открывая только ту часть базового дизайна, которая совпадает с векторной формой. Все области вне формы будут скрыты.
 
-Фрагмент кода загружает PDF, открывает два файла изображений и применяет эти изображения в качестве трафаретных масок к первым двум изображениям на первой странице PDF.
+Фрагмент кода загружает PDF, открывает два файла изображений и применяет эти изображения в качестве масок трафаретов к первым двум изображениям на первой странице PDF.
 
 Маска трафарета может быть добавлена с помощью метода 'XImage.AddStencilMask(Stream maskStream)':
 

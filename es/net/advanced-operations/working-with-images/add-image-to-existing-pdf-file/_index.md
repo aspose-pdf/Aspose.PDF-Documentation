@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "La nueva funcionalidad en la biblioteca Aspose.PDF permite a los usuarios agregar imágenes a archivos PDF existentes de manera fluida utilizando C#. Esta característica simplifica la manipulación de PDF al permitir la colocación y escalado precisos de imágenes directamente dentro del documento, asegurando una integración de alta calidad y control sobre los elementos visuales. Con soporte para varios formatos de imagen y configuraciones, esta herramienta mejora la flexibilidad de la gestión de contenido PDF.",
+    "abstract": "La nueva funcionalidad en la biblioteca Aspose.PDF permite a los usuarios agregar imágenes sin problemas a archivos PDF existentes utilizando C#. Esta característica simplifica la manipulación de PDF al permitir una colocación y escalado precisos de las imágenes directamente dentro del documento, asegurando una integración de alta calidad y control sobre los elementos visuales. Con soporte para varios formatos de imagen y configuraciones, esta herramienta mejora la flexibilidad de la gestión de contenido PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "2306",
+    "wordcount": "2308",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -84,15 +84,15 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 Para agregar una imagen a un archivo PDF existente:
 
-- Cree un objeto Document y abra el documento PDF de entrada.
-- Obtenga la página a la que desea agregar una imagen.
-- Agregue la imagen a la colección de Recursos de la página.
-- Use operadores para colocar la imagen en la página:
-- Use el operador GSave para guardar el estado gráfico actual.
-- Use el operador ConcatenateMatrix para especificar dónde se debe colocar la imagen.
-- Use el operador Do para dibujar la imagen en la página.
-- Finalmente, use el operador GRestore para guardar el estado gráfico actualizado.
-- Guarde el archivo.
+- Crea un objeto Document y abre el documento PDF de entrada.
+- Obtén la página a la que deseas agregar una imagen.
+- Agrega la imagen a la colección de Recursos de la página.
+- Usa operadores para colocar la imagen en la página:
+- Usa el operador GSave para guardar el estado gráfico actual.
+- Usa el operador ConcatenateMatrix para especificar dónde se debe colocar la imagen.
+- Usa el operador Do para dibujar la imagen en la página.
+- Finalmente, usa el operador GRestore para guardar el estado gráfico actualizado.
+- Guarda el archivo.
 El siguiente fragmento de código muestra cómo agregar la imagen en un documento PDF.
 
 ```csharp
@@ -146,7 +146,7 @@ private static void AddImageToPDF()
 
 {{% alert color="primary" %}}
 
-Por defecto, la calidad JPEG se establece en 100%. Para aplicar una mejor compresión y calidad, use las siguientes sobrecargas:
+Por defecto, la calidad JPEG se establece en 100%. Para aplicar una mejor compresión y calidad, utiliza las siguientes sobrecargas:
 
 {{% /alert %}}
 
@@ -155,7 +155,7 @@ Por defecto, la calidad JPEG se establece en 100%. Para aplicar una mejor compre
 
 ## Agregar imagen en un archivo PDF existente (Facades)
 
-También hay una forma alternativa y más fácil de agregar una imagen a un archivo PDF. Puede usar el método [AddImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) de la clase [PdfFileMend](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilemend). El método [AddImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) requiere la imagen que se va a agregar, el número de página en la que se necesita agregar la imagen y la información de coordenadas. Después de eso, guarde el archivo PDF actualizado utilizando el método Close. El siguiente fragmento de código le muestra cómo agregar una imagen en un archivo PDF existente.
+También hay una forma alternativa y más fácil de agregar una imagen a un archivo PDF. Puedes usar el método [AddImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) de la clase [PdfFileMend](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilemend). El método [AddImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) requiere la imagen que se va a agregar, el número de página en la que se necesita agregar la imagen y la información de coordenadas. Después de eso, guarda el archivo PDF actualizado utilizando el método Close. El siguiente fragmento de código te muestra cómo agregar una imagen en un archivo PDF existente.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void AddImageToPDFUsingPdfFileMender()
 }
 ```
 
-A veces, es necesario recortar una imagen antes de insertarla en un PDF. Puede usar el método `AddImage()` para admitir la adición de imágenes recortadas:
+A veces, es necesario recortar una imagen antes de insertarla en un PDF. Puedes usar el método `AddImage()` para soportar la adición de imágenes recortadas:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -306,7 +306,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
                         pdfImageSection.Paragraphs.Add(image);
 
                         // Save PDF document
-                        document.Save("AddImageAccordingToPage.pdf");
+                        document.Save(dataDir + "AddImageAccordingToPage.pdf");
                     }
                 }
             }
@@ -362,8 +362,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
     pdfImageSection.Paragraphs.Add(image);
 
     // Save PDF document
-    document.Save("AddImageAccordingToPage.pdf");
-
+    document.Save(dataDir + "AddImageAccordingToPage.pdf");
 }
 
 private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
@@ -384,9 +383,9 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 
 ## Identificar si la imagen dentro del PDF es a color o en blanco y negro
 
-Se pueden aplicar diferentes tipos de compresión sobre las imágenes para reducir su tamaño. El tipo de compresión que se aplica a la imagen depende del ColorSpace de la imagen fuente, es decir, si la imagen es a color (RGB), entonces se debe aplicar compresión JPEG2000, y si es en blanco y negro, entonces se debe aplicar compresión JBIG2/JBIG2000. Por lo tanto, identificar cada tipo de imagen y usar un tipo de compresión apropiado creará la mejor salida optimizada.
+Se pueden aplicar diferentes tipos de compresión sobre las imágenes para reducir su tamaño. El tipo de compresión que se aplica a la imagen depende del ColorSpace de la imagen fuente, es decir, si la imagen es de color (RGB), entonces se debe aplicar compresión JPEG2000, y si es en blanco y negro, entonces se debe aplicar compresión JBIG2/JBIG2000. Por lo tanto, identificar cada tipo de imagen y usar un tipo de compresión apropiado creará la mejor/salida optimizada.
 
-Un archivo PDF puede contener elementos como texto, imagen, gráfico, adjunto, anotación, etc., y si el archivo PDF fuente contiene imágenes, podemos determinar el espacio de color de la imagen y aplicar la compresión apropiada para reducir el tamaño del archivo PDF. El siguiente fragmento de código muestra los pasos para identificar si la imagen dentro del PDF es a color o en blanco y negro.
+Un archivo PDF puede contener elementos como Texto, Imagen, Gráfico, Adjunto, Anotación, etc., y si el archivo PDF fuente contiene imágenes, podemos determinar el espacio de color de la imagen y aplicar la compresión apropiada para reducir el tamaño del archivo PDF. El siguiente fragmento de código muestra los pasos para identificar si la imagen dentro del PDF es a color o en blanco y negro.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -438,7 +437,7 @@ private static void ExtractImageTypesFromPDF()
 
 ## Controlar la calidad de la imagen
 
-Es posible controlar la calidad de una imagen que se está agregando a un archivo PDF. Use el método sobrecargado [Replace](https://reference.aspose.com/pdf/es/net/aspose.pdf.ximagecollection/replace/methods/1) en la clase [XImageCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/ximagecollection).
+Es posible controlar la calidad de una imagen que se está agregando a un archivo PDF. Usa el método sobrecargado [Replace](https://reference.aspose.com/pdf/es/net/aspose.pdf.ximagecollection/replace/methods/1) en la clase [XImageCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/ximagecollection).
 
 El siguiente fragmento de código demuestra cómo convertir todas las imágenes del documento en JPEG que utilizan un 80% de calidad para la compresión.
 

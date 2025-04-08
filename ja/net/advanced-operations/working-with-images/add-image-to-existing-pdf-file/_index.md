@@ -15,7 +15,7 @@ lastmod: "2022-02-17"
     "@type": "TechArticle",
     "headline": "Add Image to PDF using C#",
     "alternativeHeadline": "Add Images PDFs in C#",
-    "abstract": "Aspose.PDFライブラリの新機能により、ユーザーはC#を使用して既存のPDFファイルに画像をシームレスに追加できます。この機能は、文書内で画像を正確に配置およびスケーリングできるようにすることで、PDF操作を簡素化し、高品質な統合と視覚要素の制御を保証します。さまざまな画像形式と構成をサポートするこのツールは、PDFコンテンツ管理の柔軟性を向上させます。",
+    "abstract": "Aspose.PDFライブラリの新機能により、ユーザーはC#を使用して既存のPDFファイルに画像をシームレスに追加できます。この機能は、文書内で画像の正確な配置とスケーリングを可能にし、高品質な統合と視覚要素の制御を確保することで、PDF操作を簡素化します。さまざまな画像形式と構成をサポートするこのツールは、PDFコンテンツ管理の柔軟性を向上させます。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -25,7 +25,7 @@ lastmod: "2022-02-17"
     },
     "genre": "pdf document generation",
     "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
-    "wordcount": "1692",
+    "wordcount": "1694",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 ## 既存のPDFファイルに画像を追加
 
-すべてのPDFページには、リソースとコンテンツのプロパティが含まれています。リソースには画像やフォームなどが含まれ、コンテンツはPDFオペレーターのセットで表されます。各オペレーターには名前と引数があります。この例では、オペレーターを使用してPDFファイルに画像を追加します。
+すべてのPDFページには、リソースとコンテンツのプロパティが含まれています。リソースには画像やフォームなどが含まれ、コンテンツはPDFオペレーターのセットによって表されます。各オペレーターには名前と引数があります。この例では、オペレーターを使用してPDFファイルに画像を追加します。
 
 次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
@@ -146,7 +146,7 @@ private static void AddImageToPDF()
 
 {{% alert color="primary" %}}
 
-デフォルトでは、JPEGの品質は100%に設定されています。より良い圧縮と品質を適用するには、次のオーバーロードを使用します：
+デフォルトでは、JPEGの品質は100%に設定されています。より良い圧縮と品質を適用するには、次のオーバーロードを使用してください：
 
 {{% /alert %}}
 
@@ -268,7 +268,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
 }
 ```
 
-時には、大きな画像がPDFに追加されるときにスケーリングの問題が発生します。次のコードスニペットは、PDFページの寸法に応じて画像をスケーリングし、画像が適切にフィットし、見栄えが良くなるようにします。
+時には、大きな画像がPDFに追加されるときにスケーリングの問題が発生します。次のコードスニペットは、PDFページの寸法に応じて画像をスケーリングし、画像が適切にフィットし、より良く見えるようにします。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -306,7 +306,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
                         pdfImageSection.Paragraphs.Add(image);
 
                         // Save PDF document
-                        document.Save("AddImageAccordingToPage.pdf");
+                        document.Save(dataDir + "AddImageAccordingToPage.pdf");
                     }
                 }
             }
@@ -362,8 +362,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
     pdfImageSection.Paragraphs.Add(image);
 
     // Save PDF document
-    document.Save("AddImageAccordingToPage.pdf");
-
+    document.Save(dataDir + "AddImageAccordingToPage.pdf");
 }
 
 private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
@@ -384,9 +383,9 @@ private static Image ScaleImage(Image image, int maxWidth, int maxHeight)
 
 ## PDF内の画像がカラーか白黒かを識別する
 
-画像のサイズを減らすために、さまざまなタイプの圧縮を画像に適用できます。画像に適用される圧縮のタイプは、ソース画像のColorSpaceに依存します。つまり、画像がカラー（RGB）の場合はJPEG2000圧縮を適用し、白黒の場合はJBIG2/JBIG2000圧縮を適用する必要があります。したがって、各画像タイプを識別し、適切な圧縮タイプを使用することで、最適化された出力を作成できます。
+画像のサイズを減らすために、さまざまなタイプの圧縮を画像に適用できます。適用される圧縮のタイプは、ソース画像のColorSpaceに依存します。つまり、画像がカラー（RGB）の場合はJPEG2000圧縮を適用し、白黒の場合はJBIG2/JBIG2000圧縮を適用する必要があります。したがって、各画像タイプを識別し、適切な圧縮タイプを使用することで、最適化された出力を作成できます。
 
-PDFファイルには、テキスト、画像、グラフ、添付ファイル、注釈などの要素が含まれており、ソースPDFファイルに画像が含まれている場合、画像のカラースペースを特定し、PDFファイルサイズを減らすために適切な圧縮を適用できます。次のコードスニペットは、PDF内の画像がカラーか白黒かを識別する手順を示しています。
+PDFファイルには、テキスト、画像、グラフ、添付ファイル、注釈などの要素が含まれている可能性があり、ソースPDFファイルに画像が含まれている場合、画像のカラースペースを特定し、PDFファイルサイズを減らすために適切な圧縮を適用できます。次のコードスニペットは、PDF内の画像がカラーか白黒かを識別する手順を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -478,7 +477,7 @@ private static void ReplaceImagesInPDF()
 
 ## 画像にクリッピングマスクを適用するサポート
 
-ベースのビットマップ画像の上にベクター形状を配置することはマスクとして機能し、ベクター形状と一致するベースデザインの部分のみを露出させます。形状の外側のすべての領域は隠されます。
+ベースのビットマップ画像の上にベクターシェイプを配置することはマスクとして機能し、ベクターシェイプと一致するベースデザインの部分のみを露出させます。シェイプの外側のすべての領域は隠されます。
 
 コードスニペットは、PDFを読み込み、2つの画像ファイルを開き、これらの画像をPDFの最初のページの最初の2つの画像にステンシルマスクとして適用します。
 
