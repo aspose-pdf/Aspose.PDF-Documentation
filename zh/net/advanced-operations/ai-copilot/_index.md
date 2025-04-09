@@ -18,7 +18,7 @@ lastmod: "2024-10-23"
     "@type": "TechArticle",
     "headline": "PDF AI Copilot",
     "alternativeHeadline": "Seamlessly Integrate AI with PDF Document Processing",
-    "abstract": "PDF AI Copilot 功能利用先进的 AI 技术，通过文档摘要、与 PDF 内容的互动聊天能力以及从文档生成图像描述等功能来增强文档处理。这个创新的 API 简化了用户与 PDF 文档的互动和洞察提取，使其成为提高生产力和用户参与度的必备工具。",
+    "abstract": "PDF AI Copilot 功能利用先进的 AI 技术，通过文档摘要、与 PDF 内容的互动聊天功能以及从文档生成图像描述等功能增强文档处理。这个创新的 API 简化了用户与 PDF 文档的交互和洞察提取，使其成为提高生产力和用户参与度的必备工具。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,8 +27,7 @@ lastmod: "2024-10-23"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "PDF AI Copilot, Aspose.PDF API, document summary, chat with documents, OpenAI Summary, OpenAI Chat, image descriptions, Llama Chat, AI document processing",
-    "wordcount": "1047",
+    "wordcount": "2374",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,8 +73,8 @@ lastmod: "2024-10-23"
         "@type": "WebPage",
         "@id": "/net/ai-copilot/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
+    "dateModified": "2025-04-08",
+    "description": "PDF AI Copilot 功能使用户能够通过集成先进的 AI 功能来增强 PDF 文档处理，包括文档摘要、互动聊天功能和图像描述生成，简化工作流程并提高生产力。这个创新的 API 促进了与 PDF 内容的无缝交互，使其成为希望优化文档管理的开发者和企业的必备工具。"
 }
 </script>
 
@@ -93,7 +92,7 @@ lastmod: "2024-10-23"
 
 目前，以下 copilots 可用：
 
-[**OpenAI Summary**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/openaisummarycopilot/) 允许用户从文档生成摘要。它提供了一种方便的方式，通过配置选项如模型、温度、令牌数量、模型指令、文档附件等来创建摘要。该 copilot 可以异步生成文本、文档格式的摘要，并将摘要保存为各种格式。提供的演示代码展示了如何创建 OpenAI 客户端、配置 copilot 选项以及使用 SummaryCopilot 生成和保存摘要。
+[**OpenAI 摘要**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/openaisummarycopilot/) 允许用户从文档中生成摘要。它通过配置选项（如模型、温度、令牌数量、模型指令、文档附件等）提供了一种方便的创建摘要的方式。该 copilot 可以异步生成文本、文档的摘要，并以各种格式保存摘要。提供的演示代码展示了如何创建 OpenAI 客户端、配置 copilot 选项以及使用 SummaryCopilot 生成和保存摘要。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -394,9 +393,86 @@ private static async Task CreateImageDescriptions()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Chat**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/llamaclient/) 允许创建一个客户端以向 Llama 聊天完成 API 发送请求。
+**OpenAI OCR** 是一个旨在从扫描文档和图像中提取文本的 AI copilot。用户可以配置 copilot 选项，如模型、温度、令牌数量、模型指令、文档附件等。
+
+提供的代码片段演示了如何创建 OpenAI 客户端、配置 ```OpenAIOcrCopilotOptions``` 选项以及使用 copilot 从扫描文档和图像中获取文本。
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static async Task ExtractText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
+    // Create AI client
+    using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
+        //.WithOrganization("org_123")
+        .Build()) // Build
+    {
+        // Create copilot options
+        var options = Aspose.Pdf.AI.OpenAIOcrCopilotOptions
+            .Create() // Create options like this, or...
+            //.Create(options => { options.Model = OpenAIModels.Gpt4OMini; }) // ...create using delegate
+            .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4OMini) // The model should have vision capabilities
+            .WithDocument(dataDir + "ScannedDocument.pdf") // Attach document paths
+            .WithDocument(dataDir + "ImageWithText.jpg"); // Attach images
+
+        // Create copilot
+        var copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
+
+        // Get text recognitions
+        List<Aspose.Pdf.AI.TextRecognitionResult> textRecognitions = await copilot.GetTextRecognitionResultAsync();
+
+        // Access to the extracted text
+        string text = textRecognitions[0].OcrDetails[0].ExtractedText;
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static async Task ExtractText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
+    // Create AI client
+    using var openAiClient = Aspose.Pdf.AI.OpenAIClient
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
+        //.WithOrganization("org_123")
+        .Build(); // Build
+
+    // Create copilot options
+    var options = Aspose.Pdf.AI.OpenAIOcrCopilotOptions
+        .Create() // Create options like this, or...
+        //.Create(options => { options.Model = OpenAIModels.Gpt4OMini; }) // ...create using delegate
+        .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4OMini) // The model should have vision capabilities
+        .WithDocument(dataDir + "ScannedDocument.pdf") // Attach document paths
+        .WithDocument(dataDir + "ImageWithText.jpg"); // Attach images
+
+    // Create copilot
+    var copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
+
+    // Get text recognitions
+    List<Aspose.Pdf.AI.TextRecognitionResult> textRecognitions = await copilot.GetTextRecognitionResultAsync();
+
+    // Access to the extracted text
+    string text = textRecognitions[0].OcrDetails[0].ExtractedText;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+[**Llama Chat**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/llamaclient/) 允许创建一个客户端以向 Llama 聊天完成 API 发送请求。
+
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -445,7 +521,7 @@ private static async Task ChatWithLlama()
 
 [**Llama Summary**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/llamaclient/) 允许客户端用于创建 Summary Copilot。
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
