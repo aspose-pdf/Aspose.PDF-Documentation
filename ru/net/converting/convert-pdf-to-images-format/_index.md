@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to Different Image Formats in C#",
     "alternativeHeadline": "Convert PDF Files to Multiple Image Formats in C#",
-    "abstract": "Функция в Aspose.PDF for .NET позволяет пользователям без проблем конвертировать PDF файлы в несколько форматов изображений, таких как TIFF, BMP, EMF, JPEG, PNG, GIF и SVG. Эта функциональность упрощает обработку документов, позволяя конвертацию всего за несколько строк кода на C#, что делает ее незаменимым инструментом для разработчиков, стремящихся улучшить свои приложения с помощью универсальных возможностей обработки PDF.",
+    "abstract": "Функция в Aspose.PDF for .NET позволяет пользователям без проблем конвертировать PDF файлы в несколько форматов изображений, таких как TIFF, BMP, EMF, JPEG, PNG, GIF и SVG. Эта функциональность упрощает обработку документов, позволяя конвертацию всего лишь с помощью нескольких строк кода на C#, что делает её незаменимым инструментом для разработчиков, стремящихся улучшить свои приложения с помощью универсальных возможностей обработки PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1969",
+    "wordcount": "2279",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -107,9 +107,9 @@ sitemap:
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в TIFF онлайн**
 
-Aspose.PDF for .NET представляет вам онлайн бесплатное приложение ["PDF в TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), где вы можете попробовать исследовать функциональность и качество его работы.
+Aspose.PDF for .NET предлагает вам онлайн бесплатное приложение ["PDF в TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), где вы можете попробовать исследовать функциональность и качество его работы.
 
-[![Aspose.PDF конвертация PDF в TIFF с бесплатным приложением](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
+[![Aspose.PDF конвертация PDF в TIFF с помощью бесплатного приложения](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
 
 ### Конвертация страниц PDF в одно изображение TIFF
@@ -162,7 +162,7 @@ Aspose.PDF for .NET позволяет конвертировать конкре
 
 1. Создайте объект класса **Document**.
 2. Создайте объекты **TiffSettings** и **TiffDevice**.
-3. Вызовите перегруженный метод **TiffDevice.Process()** с параметрами **fromPage** и **toPage** для конвертации страниц документа PDF в TIFF.
+3. Вызовите перегруженный метод **TiffDevice.Process()** с параметрами **fromPage** и **toPage** для конвертации страниц PDF документа в TIFF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -196,7 +196,7 @@ private static void ConvertPDFtoTiffSinglePage()
 
 ### Использование алгоритма Бредли во время конвертации
 
-Aspose.PDF for .NET поддерживает функцию конвертации PDF в TIF с использованием сжатия LZW, а затем с использованием AForge можно применить бинаризацию. Однако один из клиентов запросил, чтобы для некоторых изображений они хотели получить порог с использованием метода Оцу, поэтому они также хотели бы использовать Бредли.
+Aspose.PDF for .NET поддерживает функцию конвертации PDF в TIF с использованием сжатия LZW, а затем с использованием AForge можно применить бинаризацию. Однако один из клиентов запросил, чтобы для некоторых изображений они хотели получить порог с использованием метода Оцу, поэтому они также хотели бы использовать алгоритм Бредли.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -360,12 +360,78 @@ private static void ConvertPDFtoImageWithTransparentBackground()
 {{< /tab >}}
 {{< /tabs >}}
 
+### Конвертация определенной области страницы в изображение
+
+Определенная область страницы может быть конвертирована в изображение с использованием CropBox страницы.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertParticularPageRegionToImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertParticularPageRegionToImage.pdf"))
+    {
+        // Get rectangle of particular XImage
+        var imagePlacementAbsorber = new Aspose.Pdf.ImagePlacementAbsorber();
+        document.Pages[1].Accept(imagePlacementAbsorber);
+        var imageRectangle = imagePlacementAbsorber.ImagePlacements[1].Rectangle;
+        var pageRect = new Aspose.Pdf.Rectangle(imageRectangle.LLX, imageRectangle.LLY, imageRectangle.URX, imageRectangle.URY);
+
+        // Set CropBox value as per rectangle of desired page region
+        document.Pages[1].CropBox = pageRect;
+        var resolution = new Aspose.Pdf.Devices.Resolution(300);
+
+        // Create PNG device with specified attributes
+        var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+
+        // Convert a particular page and save the image
+        pngDevice.Process(document.Pages[1], dataDir + "ConvertParticularPageRegionToImage_out.png");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertParticularPageRegionToImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ConvertParticularPageRegionToImage.pdf");
+    // Get rectangle of particular XImage
+    var imagePlacementAbsorber = new Aspose.Pdf.ImagePlacementAbsorber();
+    document.Pages[1].Accept(imagePlacementAbsorber);
+    var imageRectangle = imagePlacementAbsorber.ImagePlacements[1].Rectangle;
+    var pageRect = new Aspose.Pdf.Rectangle(imageRectangle.LLX, imageRectangle.LLY, imageRectangle.URX, imageRectangle.URY);
+
+    // Set CropBox value as per rectangle of desired page region
+    document.Pages[1].CropBox = pageRect;
+    var resolution = new Aspose.Pdf.Devices.Resolution(300);
+
+    // Create PNG device with specified attributes
+    var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+
+    // Convert a particular page and save the image
+    pngDevice.Process(document.Pages[1], dataDir + "ConvertParticularPageRegionToImage_out.png");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в PNG онлайн**
 
 В качестве примера того, как работают наши бесплатные приложения, пожалуйста, проверьте следующую функцию.
 
-Aspose.PDF for .NET представляет вам онлайн бесплатное приложение ["PDF в PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), где вы можете попробовать исследовать функциональность и качество его работы.
+Aspose.PDF for .NET предлагает вам онлайн бесплатное приложение ["PDF в PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), где вы можете попробовать исследовать функциональность и качество его работы.
 
 [![Как конвертировать PDF в PNG с помощью бесплатного приложения](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
 {{% /alert %}}
@@ -377,18 +443,18 @@ Aspose.PDF for .NET представляет вам онлайн бесплат�
 {{% alert color="success" %}}
 **Попробуйте конвертировать PDF в SVG онлайн**
 
-Aspose.PDF for .NET представляет вам онлайн бесплатное приложение ["PDF в SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), где вы можете попробовать исследовать функциональность и качество его работы.
+Aspose.PDF for .NET предлагает вам онлайн бесплатное приложение ["PDF в SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), где вы можете попробовать исследовать функциональность и качество его работы.
 
-[![Aspose.PDF Конвертация PDF в SVG с бесплатным приложением](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
+[![Aspose.PDF Конвертация PDF в SVG с помощью бесплатного приложения](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 {{% /alert %}}
 
 **Масштабируемая векторная графика (SVG)** - это семейство спецификаций формата файла на основе XML для двумерной векторной графики, как статической, так и динамической (интерактивной или анимированной). Спецификация SVG является открытым стандартом, который разрабатывается Консорциумом Всемирной паутины (W3C) с 1999 года.
 
-SVG изображения и их поведение определяются в текстовых файлах XML. Это означает, что их можно искать, индексировать, скриптовать и, если необходимо, сжимать. Как XML файлы, SVG изображения могут быть созданы и отредактированы с помощью любого текстового редактора, но часто удобнее создавать их с помощью графических программ, таких как Inkscape.
+Изображения SVG и их поведение определяются в текстовых файлах XML. Это означает, что их можно искать, индексировать, скриптовать и, если необходимо, сжимать. Как XML файлы, изображения SVG могут быть созданы и отредактированы с помощью любого текстового редактора, но часто удобнее создавать их с помощью графических программ, таких как Inkscape.
 
-Aspose.PDF for .NET поддерживает функцию конвертации SVG изображения в формат PDF и также предлагает возможность конвертации PDF файлов в формат SVG. Для выполнения этого требования в пространство имен Aspose.PDF был введен класс [`SvgSaveOptions`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/svgsaveoptions/methods/index). Создайте объект SvgSaveOptions и передайте его в качестве второго аргумента методу [`Document.Save(..)`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save/index).
+Aspose.PDF for .NET поддерживает функцию конвертации изображения SVG в формат PDF и также предлагает возможность конвертации PDF файлов в формат SVG. Для выполнения этого требования в пространстве имен Aspose.PDF был введен класс [`SvgSaveOptions`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/svgsaveoptions/methods/index). Создайте объект SvgSaveOptions и передайте его в качестве второго аргумента методу [`Document.Save(..)`](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save/index).
 
-Следующий фрагмент кода показывает шаги для конвертации PDF файла в формат SVG с .NET.
+Следующий фрагмент кода показывает шаги для конвертации PDF файла в формат SVG с использованием .NET.
 
 <a name="csharp-pdf-to-svg"><strong>Конвертация PDF в SVG</strong></a>
 
