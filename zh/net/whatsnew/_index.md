@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /zh/net/whatsnew/
-description: 本页面介绍了在最近的版本中引入的Aspose.PDF for .NET中最受欢迎的新功能。
+description: 本页面介绍了在最近发布的 Aspose.PDF for .NET 中引入的最受欢迎的新功能。
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -18,7 +18,7 @@ lastmod: "2025-01-31"
     "@type": "TechArticle",
     "headline": "Whats new",
     "alternativeHeadline": "Discover the latest enhancements in Aspose.PDF for .NET",
-    "abstract": "发现Aspose.PDF for .NET中的最新增强功能，包括引入椭圆曲线数字签名算法（ECDSA）以实现强大的文档签名和验证，以及对多种椭圆曲线的支持。此外，新功能允许在插入PDF时裁剪图像，并生成崩溃报告以改善错误处理。这些更新简化了PDF管理并增强了文档工作流中的安全性。",
+    "abstract": "发现 Aspose.PDF for .NET 中的最新增强功能，包括引入椭圆曲线数字签名算法 (ECDSA) 以实现强大的文档签名和验证，以及对多种椭圆曲线的支持。此外，新功能允许在插入 PDF 时裁剪图像，并生成崩溃报告以改善错误处理。这些更新简化了 PDF 管理并增强了文档工作流中的安全性。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ lastmod: "2025-01-31"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "8022",
+    "wordcount": "9191",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,30 +73,45 @@ lastmod: "2025-01-31"
         "@type": "WebPage",
         "@id": "/net/whatsnew/"
     },
-    "dateModified": "2024-12-04",
-    "description": "Aspose.PDF不仅可以执行简单易行的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
 }
 </script>
 
-## Aspose.PDF 25.2中的新功能
+## Aspose.PDF 25.3 中的新功能
 
 **最重要的变化**
 
-在Aspose.PDF 25.2中，我们添加了：
-* 支持[PDF到PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/)标准转换。
-* [一个选项](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function)以避免在签名时两次调用CustomSignHash委托。
-* 新的`GetSignatureNames()`方法以获取PDF的[数字签名](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures)信息。
-* 创建具有多个小部件注释的[TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield)的可能性。
-> [!NOTE]
-> 有关更改的详细信息和使用示例，请参见[Aspose.PDF 25.2发布说明](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/)页面。
+在 Aspose.PDF 25.3 中，我们添加了：
+* 19 个 [高代码插件产品](https://products.aspose.net/pdf/)。
+* [检测被破坏的](https://docs.aspose.com/pdf/zh/net/extract-image-and-signature-information/#checking-signatures-for-compromise) PDF 数字签名。
+* [贝茨编号伪影](https://docs.aspose.com/pdf/zh/net/artifacts/#adding-bates-numbering-artifact)。
+* [创建标记元素的位置信息设置](https://docs.aspose.com/pdf/zh/net/create-tagged-pdf/#adjust-position-of-text-structure)。
+* 在将图形形状添加到 PDF 页面时验证 [图形形状的边界](https://docs.aspose.com/pdf/zh/net/aspose-pdf-drawing-graph-shapes-bounds-check/) 的能力。
+> 有关更改的详细信息和使用示例，请参阅 [Aspose.PDF 25.3 发布说明](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/) 页面。
 
 **其他显著增强**
 
-* 在[PDF优化](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images)中增强了无质量损失的图像压缩。压缩文档大小减少。
-* 文档[修复](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/repair/)方法改进。现在可以检查并修复Annotation.Rect数组中的值。
-* 更新了System.Text.Json依赖项版本，以避免可能的漏洞CVE-2024-43485。
-* 改进了PDF签名攻击检测，以防止获得误报结果。
-* 提供了用于编辑资源字典的公共API：
+我们改善了图像密集型 PDF 的转换性能和内存消耗。处理速度现在快了两倍，内存消耗在测试场景中减少了 10%。
+
+## Aspose.PDF 25.2 中的新功能
+
+**最重要的变化**
+
+在 Aspose.PDF 25.2 中，我们添加了：
+* 支持 [PDF 到 PDF/X-4](https://docs.aspose.com/pdf/zh/net/convert-pdf-to-pdfx/) 标准转换。
+* [一个选项](https://docs.aspose.com/pdf/zh/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) 以避免在签名时两次调用 CustomSignHash 委托。
+* 新的 `GetSignatureNames()` 方法以获取 PDF 的 [数字签名](https://docs.aspose.com/pdf/zh/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) 信息。
+* 创建具有多个小部件注释的 [TextBoxField](https://docs.aspose.com/pdf/zh/net/create-form/#adding-radiobuttonfield) 的可能性。
+> 有关更改的详细信息和使用示例，请参阅 [Aspose.PDF 25.2 发布说明](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) 页面。
+
+**其他显著增强**
+
+* 在 [PDF 优化](https://docs.aspose.com/pdf/zh/net/optimize-pdf/#shrinking-or-compressing-all-images) 中增强了无质量损失的图像压缩。压缩文档的大小减少。
+* [文档 `Repair` 方法](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/repair/) 改进。现在可以检查并修复 Annotation.Rect 数组中的值。
+* 更新了 System.Text.Json 依赖项版本，以避免可能的漏洞 CVE-2024-43485。
+* 改进了 PDF 签名攻击检测，以防止获得误报结果。
+* 提供了用于编辑资源字典的公共 API：
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -135,20 +150,20 @@ private static void AddingNewExtGState()
 }
 ```
 
-## Aspose.PDF 25.1中的新功能
+## Aspose.PDF 25.1 中的新功能
 
-在Aspose.PDF 25.1中，我们添加了：
-* 一个选项以将PDF保存为HTML，同时跳过所有光栅图像。
-* 使用证书颁发机构（CA）服务器验证PDF签名的可能性。
-* 使用SHA-3哈希算法进行跨平台PDF签名验证。
+在 Aspose.PDF 25.1 中，我们添加了：
+* 将 PDF 保存为 HTML 的选项，跳过所有光栅图像。
+* 使用证书颁发机构 (CA) 服务器验证 PDF 签名的可能性。
+* 使用 SHA-3 哈希算法进行跨平台 PDF 签名验证。
 
-有关更改的详细信息和使用示例，请参见[Aspose.PDF 25.1发布说明](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/)页面。
+有关更改的详细信息和使用示例，请参阅 [Aspose.PDF 25.1 发布说明](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) 页面。
 
-## Aspose.PDF 24.12中的新功能
+## Aspose.PDF 24.12 中的新功能
 
-传递外部ICC配置文件路径以进行PDF/X和PDF/A转换的能力在库中已经存在多年，通过PdfFormatConversionOptions.IccProfileFileName属性启用。现在，还可以使用OutputIntent类的对象传递数据以填充OutputIntent属性。
+传递外部 ICC 配置文件的路径以进行 PDF/X 和 PDF/A 转换的能力在库中已经存在了几年，通过 PdfFormatConversionOptions.IccProfileFileName 属性启用。现在还可以使用 OutputIntent 类的对象传递数据以填充 OutputIntent 属性。
 
-以下代码片段展示了如何使用注释FOGRA39 ICC配置文件将注释文档转换为PDF/X-1：
+以下代码片段展示了如何使用注释 FOGRA39 ICC 配置文件将注释文档转换为 PDF/X-1：
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPdfToPdfx1UsingCustomIccProfile()
@@ -180,9 +195,9 @@ private static void ConvertPdfToPdfx1UsingCustomIccProfile()
 }
 ```
 
-添加了一个分析器，以查找最适合文档生成、转换和文本替换的字体。当源PDF中包含的信息不足以完成请求的操作时，将执行最合适字体的搜索。“最合适”的字体是在环境中安装的字体之间确定的，基于PDF字体的信息以及请求的文本语言和字符集。
+添加了一个分析器，以查找最适合文档生成、转换和文本替换的字体。当源 PDF 中包含不足的字体信息以完成请求的操作时，将执行最合适字体的搜索。“最合适”的字体是在环境中安装的字体之间确定的，基于 PDF 字体的信息以及请求的文本语言和字符集。
 
-以下示例展示了如何在PDF到PNG转换中使用此功能，以避免文本变成空白方块。
+以下示例展示了如何在 PDF 到 PNG 转换中使用此功能，以避免文本变成空白方块。
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void PdfToPngWithAnalyzingFonts()
@@ -203,9 +218,9 @@ private static void PdfToPngWithAnalyzingFonts()
 }
 ```
 
-从Aspose.PDF 24.12开始，自动调整字体大小可以应用于将文本印章添加到注释PDF文件中。
+从 Aspose.PDF 24.12 开始，自动调整字体大小可以应用于将文本印章添加到注释 PDF 文件中。
 
-以下代码片段演示了如何将注释文本印章添加到注释PDF文件中，并自动调整字体大小以适应印章矩形。
+以下代码片段演示了如何将注释文本印章添加到注释 PDF 文件中，并自动调整字体大小以适应印章矩形。
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStamp()
@@ -235,7 +250,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
 }
 ```
 
-以下代码片段演示了如何将注释文本印章添加到注释PDF文件中，并自动调整字体大小以适应页面大小。
+以下代码片段演示了如何将注释文本印章添加到注释 PDF 文件中，并自动调整字体大小以适应页面大小。
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStampToFitPage()
@@ -263,9 +278,9 @@ private static void AutoSetTheFontSizeOfTextStampToFitPage()
 }
 ```
 
-## Aspose.PDF 24.11中的新功能
+## Aspose.PDF 24.11 中的新功能
 
-添加了一个`PageCollection`扩展方法，以在添加或插入新页面时更新页码和日期页眉/页脚工件。页码和日期格式的设置应根据PDF规范存储在原始文档中，如Adobe Acrobat所实现。
+添加了 `PageCollection` 扩展方法，以在添加或插入新页面时更新页码和日期页眉/页脚伪影。页码和日期格式的设置应根据 PDF 规范存储在原始文档中，如 Adobe Acrobat 所实现的那样。
 
 以下代码片段演示了如何更新文档中的分页：
 ```csharp
@@ -290,15 +305,15 @@ private static void UpdatePagination()
 }
 ```
 
-自版本24.11以来，我们添加了选择Pkcs7Detached的哈希算法的能力。默认值为SHA-256。对于ECDSA数字签名，默认摘要算法取决于密钥长度。
+自版本 24.11 起，我们添加了选择 Pkcs7Detached 哈希算法的能力。默认值为 SHA-256。对于 ECDSA 数字签名，默认摘要算法取决于密钥长度。
 
-ECDSA支持SHA-1、SHA-256、SHA-384、SHA-512、SHA3-256、SHA3-384和SHA3-512。SHA3-256、SHA3-384和SHA3-512算法仅支持.NET 8及更高版本。有关SHA-3支持的平台的详细信息，请参见[文档](https://learn.microsoft.com/en-us/dotnet/standard/security/cross-platform-cryptography#sha-3)。
+ECDSA 支持 SHA-1、SHA-256、SHA-384、SHA-512、SHA3-256、SHA3-384 和 SHA3-512。SHA3-256、SHA3-384 和 SHA3-512 算法仅支持 .NET 8 及更高版本。有关 SHA-3 支持的平台的详细信息，请参阅 [文档](https://learn.microsoft.com/en-us/dotnet/standard/security/cross-platform-cryptography#sha-3)。
 
-RSA支持SHA-1、SHA-256、SHA-384和SHA-512。
+RSA 支持 SHA-1、SHA-256、SHA-384 和 SHA-512。
 
-DSA仅支持SHA-1。请注意，SHA-1已过时，不符合当前的安全标准。
+DSA 仅支持 SHA-1。请注意，SHA-1 已过时，不符合当前的安全标准。
 
-以下代码片段演示了如何为Pkcs7Detached设置哈希算法：
+以下代码片段演示了如何为 Pkcs7Detached 设置哈希算法：
 ```csharp
 private static void SignWithManualDigestHashAlgorithm(string cert, string pass)
 {
@@ -322,9 +337,9 @@ private static void SignWithManualDigestHashAlgorithm(string cert, string pass)
 }
 ```
 
-`HtmlSaveOptions`类中添加了一个新的`FontEncodingStrategy`属性。PDF规范建议使用`ToUnicode`表从PDF中提取文本内容。然而，使用字体的CMap表可以为某些类型的文档产生更好的结果。从版本24.11开始，您可以选择用于解码的表。默认情况下，使用`ToUnicode`表。
+在 `HtmlSaveOptions` 类中添加了新的 `FontEncodingStrategy` 属性。PDF 规范建议使用 `ToUnicode` 表来提取 PDF 中的文本内容。然而，使用字体的 CMap 表对于某些类型的文档可能会产生更好的结果。从版本 24.11 开始，您可以选择使用哪个表进行解码。默认情况下，使用 `ToUnicode` 表。
 
-以下示例演示了如何使用新选项：
+以下示例演示了使用新选项：
 ```csharp
 private static void ConvertPdfToHtmlUsingCMap()
 {
@@ -346,19 +361,19 @@ private static void ConvertPdfToHtmlUsingCMap()
 }
 ```
 
-## Aspose.PDF 24.10中的新功能
+## Aspose.PDF 24.10 中的新功能
 
-椭圆曲线数字签名算法（ECDSA）是一种现代加密算法，以比传统算法提供更强的安全性和更小的密钥大小而闻名。从版本24.10开始，可以使用ECDSA签署PDF文档，并验证ECDSA签名。支持以下椭圆曲线以创建和验证数字签名：
-* P-256（secp256r1）。
-* P-384（secp384r1）。
-* P-521（secp521r1）。
+椭圆曲线数字签名算法 (ECDSA) 是一种现代加密算法，以较小的密钥大小提供强大的安全性，与传统算法相比。从版本 24.10 开始，可以使用 ECDSA 签署 PDF 文档，并验证 ECDSA 签名。支持以下椭圆曲线以创建和验证数字签名：
+* P-256 (secp256r1)。
+* P-384 (secp384r1)。
+* P-521 (secp521r1)。
 * brainpoolP256r1。
 * brainpoolP384r1。
 * brainpoolP512r1。
 
-SHA-256哈希算法用于生成签名。ECDSA签名可以使用以下哈希算法进行验证：SHA-256、SHA-384、SHA-512、SHA3-256、SHA3-384和SHA3-512。
+SHA-256 哈希算法用于生成签名。ECDSA 签名可以使用以下哈希算法进行验证：SHA-256、SHA-384、SHA-512、SHA3-256、SHA3-384 和 SHA3-512。
 
-您可以使用您通常的代码使用ECDSA签署文档并验证签名：
+您可以使用您通常的代码使用 ECDSA 签署文档并验证签名：
  
 ```cs
 private static void Sign(string cert, string pass)
@@ -408,7 +423,7 @@ private static void Verify()
 }
 ```
 
-有时，在将图像插入PDF之前，需要裁剪图像。我们添加了一个重载版本的`AddImage()`方法，以支持添加裁剪后的图像：
+有时，在将图像插入 PDF 之前，需要裁剪图像。我们添加了一个重载版本的 `AddImage()` 方法，以支持添加裁剪后的图像：
 
 ```cs
 private static void AddCroppedImageToPDF()
@@ -444,9 +459,9 @@ private static void AddCroppedImageToPDF()
 }
 ```
 
-## Aspose.PDF 24.9中的新功能
+## Aspose.PDF 24.9 中的新功能
 
-自版本24.9以来，当库抛出异常时，可以生成崩溃报告。崩溃报告包括有关异常类型、应用程序标题、Aspose.PDF版本、操作系统版本、错误消息和堆栈跟踪的信息。
+自版本 24.9 起，当库抛出异常时，可以生成崩溃报告。崩溃报告包括有关异常类型、应用程序标题、Aspose.PDF 版本、操作系统版本、错误消息和堆栈跟踪的信息。
 
 以下代码片段演示了生成崩溃报告的常见场景：
 
@@ -469,7 +484,7 @@ private static void GenerateCrashReportExample()
 }
 ```
 
-现在可以提取PDF文档的图层元素并将其保存到新的PDF流中。在PDF文档中，图层（也称为可选内容组或OCGs）用于各种目的，主要用于管理和控制文档中内容的可见性。此功能在设计、工程和出版中尤其有用。例如：蓝图方面、复杂图表组件、相同内容的语言版本。
+现在可以提取 PDF 文档层元素并将其保存到新的 PDF 流中。在 PDF 文档中，层（也称为可选内容组或 OCG）用于各种目的，主要用于管理和控制文档中内容的可见性。此功能在设计、工程和出版中尤其有用。例如：蓝图方面、复杂图表组件、相同内容的语言版本。
 
 ```cs
 private static void ExtractPdfLayer()
@@ -492,9 +507,9 @@ private static void ExtractPdfLayer()
 }
 ```
 
-添加了`GraphicalPdfComparer`类，用于PDF文档和页面的图形比较。图形比较处理文档页面图像。它返回结果作为`ImagesDifference`对象或包含来自原始图像和差异的图像合并的PDF文档。图形比较对于文本或图形内容有细微差异的文档最为有用。
+添加了 `GraphicalPdfComparer` 类，用于 PDF 文档和页面的图形比较。图形比较处理文档页面图像。它返回结果作为 `ImagesDifference` 对象或包含来自原始图像和差异的图像合并的 PDF 文档。图形比较对于文本或图形内容有细微差异的文档最为有用。
 
-以下代码片段演示了两个PDF文档的图形比较，并将差异图像保存到结果PDF文档中：
+以下代码片段演示了两个 PDF 文档的图形比较，并将差异图像保存到结果 PDF 文档中：
 
 ```cs
 private static void ComparePDFWithCompareDocumentsToPdfMethod()
@@ -521,9 +536,9 @@ private static void ComparePDFWithCompareDocumentsToPdfMethod()
 }
 ```
 
-实现了用于集成FileFormat.HEIC和Aspose.PDF的API。HEIC（高效图像编码）是一种现代图像文件格式，由Apple在2017年与iOS 11一起引入，作为iPhone和iPad的默认图像格式。
+实现了将 FileFormat.HEIC 与 Aspose.PDF 集成的 API。HEIC（高效图像编码）是一种现代图像文件格式，由 Apple 于 2017 年在 iOS 11 中引入，作为 iPhone 和 iPad 的默认图像格式。
 
-要将HEIC图像转换为PDF，用户应添加对`FileFormat.HEIC` NuGet包的引用，并使用以下代码片段：
+要将 HEIC 图像转换为 PDF，用户应添加对 `FileFormat.HEIC` NuGet 包的引用，并使用以下代码片段：
 
 ```cs
 private static void ConvertHEICtoPDF()
@@ -561,13 +576,13 @@ private static void ConvertHEICtoPDF()
 }
 ```
 
-## Aspose.PDF 24.8中的新功能
+## Aspose.PDF 24.8 中的新功能
 
-将PDF文档转换为PDF/A-4格式
+将 PDF 文档转换为 PDF/A-4 格式
 
-自版本24.8以来，可以将PDF文档转换为PDF/A-4。该标准的第4部分基于PDF 2.0，于2020年底发布。
+自版本 24.8 起，可以将 PDF 文档转换为 PDF/A-4。该标准的第 4 部分基于 PDF 2.0，于 2020 年底发布。
 
-以下代码片段演示了如何在输入文档早于PDF 2.0版本时将文档转换为PDF/A-4格式。
+以下代码片段演示了如何在输入文档版本早于 2.0 时将文档转换为 PDF/A-4 格式。
 
 ```cs
 private static void ConvertPdfToPdfA4()
@@ -590,7 +605,7 @@ private static void ConvertPdfToPdfA4()
 }
 ```
 
-自24.8以来，我们引入了一种用于扁平化PDF文档中透明内容的方法：
+自 24.8 起，我们引入了一种在 PDF 文档中扁平化透明内容的方法：
 
 ```cs
 private static void FlattenTransparency()
@@ -609,13 +624,13 @@ private static void FlattenTransparency()
 }
 ```
 
-## Aspose.PDF 24.7中的新功能
+## Aspose.PDF 24.7 中的新功能
 
-比较PDF文档与Aspose.PDF for .NET
+比较 PDF 文档与 Aspose.PDF for .NET
 
-自24.7以来，可以比较PDF文档内容，带有注释标记和并排输出：
+自 24.7 起，可以比较 PDF 文档内容及其注释标记，并进行并排输出：
 
-第一个代码片段演示了如何比较两个PDF文档的第一页。
+第一个代码片段演示了如何比较两个 PDF 文档的第一页。
 
 ```cs
 private static void ComparingSpecificPagesSideBySide()
@@ -640,7 +655,7 @@ private static void ComparingSpecificPagesSideBySide()
 }
 ```
 
-第二个代码片段扩展了范围，以比较两个PDF文档的整个内容。
+第二个代码片段扩展了范围，以比较两个 PDF 文档的整个内容。
 
 ```cs
 private static void ComparingEntireDocumentsSideBySide()
@@ -668,7 +683,7 @@ private static void ComparingEntireDocumentsSideBySide()
 }
 ```
 
-此外，从此版本开始添加了Aspose.PDF Security for .NET插件：
+此外，从此版本开始添加了 Aspose.PDF Security for .NET 插件：
 
 加密功能：
 
@@ -696,18 +711,18 @@ opt.AddOutput(new FileDataSource(output));
 plugin.Process(opt);
 ```
 
-## Aspose.PDF 24.6中的新功能
+## Aspose.PDF 24.6 中的新功能
 
-自24.6版本以来，作为编辑标记PDF的一部分，添加了**Aspose.Pdf.LogicalStructure.Element**上的方法：
+自 24.6 版本以来，作为编辑标记 PDF 的一部分，添加了 **Aspose.Pdf.LogicalStructure.Element** 上的方法：
 
-- 标签（为特定操作符（如图像、文本和链接）添加标签）
+- 标签（将标签添加到特定操作符，如图像、文本和链接）
 - InsertChild
 - RemoveChild
 - ClearChilds
 
-此外，在此版本中，可以使用低级函数创建可访问的PDF：
+此外，在此版本中，可以使用低级函数创建可访问的 PDF：
 
-下一个代码片段处理PDF文档及其标记内容，利用Aspose.PDF库进行处理。
+下一个代码片段处理 PDF 文档及其标记内容，利用 Aspose.PDF 库进行处理。
 
 ```cs
 private static void CreateAnAccessibleDocument()
@@ -739,7 +754,7 @@ private static void CreateAnAccessibleDocument()
 }
 ```
 
-自24.6以来，Aspose.PDF for .NET允许使用base64格式的X509Certificate2签署PDF：
+自 24.6 起，Aspose.PDF for .NET 允许使用 base64 格式的 X509Certificate2 签署 PDF：
 
 ```cs
 private static void SignWithBase64Certificate(string pfxFilePath, string password)
@@ -776,22 +791,22 @@ private static void SignWithBase64Certificate(string pfxFilePath, string passwor
 }
 ```
 
-## Aspose.PDF 24.5中的新功能
+## Aspose.PDF 24.5 中的新功能
 
-此版本允许我们处理PDF图层。例如：
+此版本允许我们处理 PDF 层。例如：
 
-- 锁定PDF图层
-- 提取PDF图层元素
-- 扁平化分层PDF
-- 将PDF中的所有图层合并为一个
+- 锁定 PDF 层
+- 提取 PDF 层元素
+- 扁平化分层 PDF
+- 将 PDF 中的所有层合并为一个
 
-### 锁定PDF图层
+### 锁定 PDF 层
 
-自24.5版本以来，您可以打开PDF，锁定第一页上的特定图层，并保存更改后的文档。添加了两个新方法和一个属性：
+自 24.5 版本以来，您可以打开 PDF，锁定第一页上的特定层，并保存更改后的文档。添加了两个新方法和一个属性：
 
-Layer.Lock(); - 锁定图层。
-Layer.Unlock(); - 解锁图层。
-Layer.Locked; - 属性，指示图层锁定状态。
+Layer.Lock(); - 锁定层。
+Layer.Unlock(); - 解锁层。
+Layer.Locked; - 属性，指示层的锁定状态。
 
 ```cs
 private static void LockLayerInPDF()
@@ -815,11 +830,11 @@ private static void LockLayerInPDF()
 }
 ```
 
-### 提取PDF图层元素
+### 提取 PDF 层元素
 
-Aspose.PDF for .NET库允许从第一页提取每个图层，并将每个图层保存到单独的文件中。
+Aspose.PDF for .NET 库允许从第一页提取每个层，并将每个层保存到单独的文件中。
 
-要从图层创建新PDF，可以使用以下代码片段：
+要从层创建新 PDF，可以使用以下代码片段：
 
 ```cs
 private static void ExtractPdfLayer()
@@ -842,9 +857,9 @@ private static void ExtractPdfLayer()
 }
 ```
 
-### 扁平化分层PDF
+### 扁平化分层 PDF
 
-Aspose.PDF for .NET库打开PDF，遍历第一页上的每个图层，并扁平化每个图层，使其在页面上永久存在。
+Aspose.PDF for .NET 库打开 PDF，遍历第一页上的每个层，并扁平化每个层，使其在页面上永久存在。
 
 ```cs
 private static void FlattenPdfLayers()
@@ -870,18 +885,18 @@ private static void FlattenPdfLayers()
 }
 ```
 
-`Layer.Flatten(bool cleanupContentStream)`方法接受一个布尔参数，指定是否从内容流中删除可选内容组标记。将cleanupContentStream参数设置为false可以加快扁平化过程。
+'Layer.Flatten(bool cleanupContentStream)' 方法接受一个布尔参数，指定是否从内容流中删除可选内容组标记。将 cleanupContentStream 参数设置为 false 可以加快扁平化过程。
 
-### 将PDF中的所有图层合并为一个
+### 将 PDF 中的所有层合并为一个
 
-Aspose.PDF for .NET库允许将所有PDF图层或第一页上的特定图层合并为一个新图层，并保存更新后的文档。
+Aspose.PDF for .NET 库允许将所有 PDF 层或第一页上的特定层合并为新层，并保存更新后的文档。
 
-添加了两个方法以合并页面上的所有图层：
+添加了两个方法以合并页面上的所有层：
 
 - void MergeLayers(string newLayerName);
 - void MergeLayers(string newLayerName, string newOptionalContentGroupId); 
 
-第二个参数允许重命名可选内容组标记。默认值为"oc1" (/OC /oc1 BDC)。
+第二个参数允许重命名可选内容组标记。默认值为 "oc1" (/OC /oc1 BDC)。
 
 ```cs
 private static void MergePdfLayers()
@@ -905,9 +920,9 @@ private static void MergePdfLayers()
 }
 ```
 
-## Aspose.PDF 24.4中的新功能
+## Aspose.PDF 24.4 中的新功能
 
-此版本支持对图像应用剪裁蒙版：
+此版本支持对图像应用剪切蒙版：
 
 ```cs
 private static void AddStencilMasksToImages()
@@ -938,9 +953,9 @@ private static void AddStencilMasksToImages()
 }
 ```
 
-自24.4以来，您可以在打印对话框中根据PDF页面大小选择纸张来源。
+自 24.4 起，您可以在打印对话框中根据 PDF 页面大小选择纸张来源，使用 API
 
-从Aspose.PDF 24.4开始，可以使用Document.PickTrayByPdfSize属性或PdfContentEditor外观来切换此首选项：
+从 Aspose.PDF 24.4 开始，可以使用 Document.PickTrayByPdfSize 属性或 PdfContentEditor 外观来打开和关闭此首选项：
 
 ```cs
 private static void PickTrayByPdfSize()
@@ -985,7 +1000,7 @@ private static void PickTrayByPdfSizeFacade()
 }
 ```
 
-从此版本开始添加了Aspose.PDF Signature for .NET插件：
+从此版本开始添加了 Aspose.PDF Signature for .NET 插件：
 
 - 创建新字段和选项的示例：
 
@@ -1023,9 +1038,9 @@ opt.Name = "Signature1";
 plugin.Process(opt);
 ```
 
-## Aspose.PDF 24.3中的新功能
+## Aspose.PDF 24.3 中的新功能
 
-从此版本开始添加了PDF/A Converter for .NET插件：
+从此版本开始添加了 PDF/A Converter for .NET 插件：
 
 ```cs
 var options = new PdfAConvertOptions
@@ -1046,7 +1061,7 @@ var plugin = new PdfAConverter();
 plugin.Process(options);
 ```
 
-- 在TextFragmentAbsorber中实现通过短语列表进行搜索：
+- 在 TextFragmentAbsorber 中实现通过短语列表进行搜索：
 
 ```cs
 private static void SearchMultipleRegex()
@@ -1077,7 +1092,7 @@ private static void SearchMultipleRegex()
 }
 ```
 
-自24.3以来，可以在PDF/A文件的每一页上添加一个空签名字段。
+自 24.3 起，可以在 PDF/A 文件的每一页上添加一个空签名字段。
 
 ```cs
 private static void AddEmptySignatureFieldOnEveryPage()
@@ -1121,11 +1136,11 @@ private static void AddEmptySignatureFieldOnEveryPage()
 }
 ```
 
-## Aspose.PDF 24.2中的新功能
+## Aspose.PDF 24.2 中的新功能
 
-自24.2以来，可以从PDF文件中获取矢量数据。
+自 24.2 起，可以从 PDF 文件中获取矢量数据。
 
-实现了GraphicsAbsorber以从文档中获取矢量数据：
+实现了 GraphicsAbsorber 以从文档中获取矢量数据：
 
 ```cs
 private static void UsingGraphicsAbsorber()
@@ -1145,7 +1160,7 @@ private static void UsingGraphicsAbsorber()
             // Use the `Visit` method to extract graphics from the page
             graphicsAbsorber.Visit(page);
 
-            // Step 5: Display information about the extracted elements
+            // Display information about the extracted elements
             foreach (var element in graphicsAbsorber.Elements)
             {
                 Console.WriteLine($"Page Number: {element.SourcePage.Number}");
@@ -1157,9 +1172,9 @@ private static void UsingGraphicsAbsorber()
 }
 ```
 
-## Aspose.PDF 24.1中的新功能
+## Aspose.PDF 24.1 中的新功能
 
-自24.1版本以来，可以将FDF格式注释导入PDF：
+自 24.1 版本起，可以将 FDF 格式注释导入 PDF：
 
 ```cs
 private static void ImportFDFByForm()
@@ -1182,7 +1197,7 @@ private static void ImportFDFByForm()
 
 此外，支持访问页面字典或文档目录。
 
-以下是DictionaryEditor的代码示例：
+以下是 DictionaryEditor 的代码示例：
 
 - 添加新值
 
@@ -1284,7 +1299,7 @@ private static void RemoveFromPdfPageDicrionary()
 }
 ```
 
-## Aspose.PDF 23.12中的新功能
+## Aspose.PDF 23.12 中的新功能
 
 可以找到表单并使用以下代码片段替换文本：
 
@@ -1405,7 +1420,7 @@ private static void RemoveAllForms()
 }
 ```
 
-- 实现PDF到Markdown的转换：
+- 实现 PDF 到 Markdown 转换：
 
 ```cs
 private static void ConvertPDFtoMarkup()
@@ -1432,7 +1447,7 @@ private static void ConvertPDFtoMarkup()
 }
 ```
 
-- 实现OFD到PDF的转换：
+- 实现 OFD 到 PDF 转换：
 
 ```cs
 private static void ConvertOFDToPDF()
@@ -1451,7 +1466,7 @@ private static void ConvertOFDToPDF()
 }
 ```
 
-从此版本开始添加了Merger插件：
+从此版本开始添加了 Merger 插件：
 
 ```cs
 private static void PdfMergeUsingPlugin()
@@ -1473,7 +1488,7 @@ private static void PdfMergeUsingPlugin()
 }
 ```
 
-此外，从此版本开始添加了ChatGPT插件：
+此外，从此版本开始添加了 ChatGPT 插件：
 
 ```cs
 private static async void InvokeChatGptPlugin()
@@ -1508,9 +1523,9 @@ private static async void InvokeChatGptPlugin()
 }
 ```
 
-## Aspose.PDF 23.11中的新功能
+## Aspose.PDF 23.11 中的新功能
 
-从此版本开始，可以从PDF文件中删除隐藏文本：
+从此版本开始，可以从 PDF 文件中删除隐藏文本：
 
 ```cs
 private static void RemoveHiddenText()
@@ -1544,7 +1559,7 @@ private static void RemoveHiddenText()
 }
 ```
 
-自23.11以来，支持线程中断：
+自 23.11 起，支持线程中断：
 
 ```cs
 private static void InterruptExample()
@@ -1627,11 +1642,11 @@ private class RowSpanWorker
 }
 ```
 
-## Aspose.PDF 23.10中的新功能
+## Aspose.PDF 23.10 中的新功能
 
-当前更新提供了三种从标记PDF中移除标签的版本。
+当前更新提供了三种从标记 PDF 中删除标签的版本。
 
-- 从documentElement（根树元素）中移除某些节点元素：
+- 从 documentElement（根树元素）中删除某些节点元素：
 
 ```cs
 private static void RemoveStructElement()
@@ -1662,7 +1677,7 @@ private static void RemoveStructElement()
 }
 ```
 
-- 从文档中移除所有标记元素标签，但保留结构元素：
+- 从文档中删除所有标记元素标签，但保留结构元素：
 
 ```cs
 private static void RemoveMarkedElementsTags()
@@ -1698,7 +1713,7 @@ private static void RemoveMarkedElementsTags()
 }
 ```
 
-- 完全移除标签：
+- 完全删除标签：
 
 ```cs
 private static void RemoveTags()
@@ -1720,7 +1735,7 @@ private static void RemoveTags()
 }
 ```
 
-自23.10以来，实现了一项新功能以测量字符高度。使用以下代码测量字符的高度。
+自 23.10 起，实现了一项新功能以测量字符高度。使用以下代码测量字符的高度。
 
 ```cs
 private static void DisplayCharacterHeight()
@@ -1743,9 +1758,9 @@ private static void DisplayCharacterHeight()
 }
 ```
 
-请注意，测量基于文档中嵌入的字体。如果缺少任何维度信息，此方法将返回0。
+请注意，测量基于文档中嵌入的字体。如果缺少任何维度的信息，此方法将返回 0。
 
-此外，此版本提供了使用已签名的HASH签署PDF的功能：
+此外，此版本提供了使用签名 HASH 签署 PDF 的功能：
 
 ```cs
 private static void SignPdfUsingSignedHash(string certP12, string pfxPassword)
@@ -1816,9 +1831,9 @@ private static void SetPrintScaling()
 }
 ```
 
-## Aspose.PDF 23.9中的新功能
+## Aspose.PDF 23.9 中的新功能
 
-自23.9以来，支持从可填写字段中删除子注释。
+自 23.9 起，支持从可填写字段中删除子注释。
 
 ```cs
 private static void RemoveChildAnnotationFromFillableField()
@@ -1842,11 +1857,11 @@ private static void RemoveChildAnnotationFromFillableField()
 }
 ```
 
-## Aspose.PDF 23.8中的新功能
+## Aspose.PDF 23.8 中的新功能
 
-自23.8以来，支持添加增量更新检测。
+自 23.8 起，支持添加增量更新检测。
 
-在PDF文档中添加了检测增量更新的功能。如果文档是以增量更新保存的，则该功能返回'true'；否则返回'false'。
+在 PDF 文档中添加了检测增量更新的功能。此功能返回 'true' 如果文档是以增量更新保存的；否则返回 'false'。
 
 ```cs
 private static bool HasIncrementalUpdate()
@@ -1866,7 +1881,7 @@ private static bool HasIncrementalUpdate()
 }
 ```
 
-此外，23.8支持处理嵌套复选框字段的方式。许多可填写的PDF表单具有作为单选组的复选框字段：
+此外，23.8 支持处理嵌套复选框字段的方式。许多可填写的 PDF 表单具有作为单选组的复选框字段：
 
 - 创建多值复选框字段：
 
@@ -1935,9 +1950,9 @@ private static void GetAndSetValueOfMultivalueCheckboxField()
 }
 ```
 
-## Aspose.PDF 23.7中的新功能
+## Aspose.PDF 23.7 中的新功能
 
-从Aspose.PDF 23.7开始，支持添加形状提取：
+从 Aspose.PDF 23.7 开始，支持添加形状提取：
 
 ```cs
 private static void CopyShape()
@@ -2011,19 +2026,19 @@ private static void FitTextIntoRectangle()
 }
 ```
 
-## Aspose.PDF 23.6中的新功能
+## Aspose.PDF 23.6 中的新功能
 
-从Aspose.PDF 23.6开始，支持添加以下插件：
+从 Aspose.PDF 23.6 开始，支持添加以下插件：
 
-- Aspose PdfConverter Html到PDF 
-- Aspose PdfOrganizer 调整大小API
-- Aspose PdfOrganizer 压缩API
+- Aspose PdfConverter Html 到 PDF 
+- Aspose PdfOrganizer 调整大小 API
+- Aspose PdfOrganizer 压缩 API
 
-更新Aspose.PdfForm 
-- 添加功能“将文档中的字段值导出到CSV文件”
+更新 Aspose.PdfForm 
+- 添加功能 ‘将文档中的字段值导出到 CSV 文件’
 - 添加为单个字段设置属性的能力
 
-还支持设置HTML、Epub页面的标题：
+还支持设置 HTML、Epub 页面的标题：
 
 ```cs
 private static void SetHtmlTitle()
@@ -2055,9 +2070,9 @@ private static void SetHtmlTitle()
 }
 ```
 
-## Aspose.PDF 23.5中的新功能
+## Aspose.PDF 23.5 中的新功能
 
-自23.5以来，支持添加RedactionAnnotation FontSize选项。使用以下代码片段解决此任务：
+自 23.5 起，支持添加 RedactionAnnotation FontSize 选项。使用以下代码片段解决此任务：
 
 ```cs
 private static void AddRedactionAnnotationFontSize() 
@@ -2094,23 +2109,23 @@ private static void AddRedactionAnnotationFontSize()
 }
 ```
 
-## Aspose.PDF 23.4中的新功能
+## Aspose.PDF 23.4 中的新功能
 
-Aspose.PDF宣布发布.NET 7 SDK。
+Aspose.PDF 宣布发布 .NET 7 SDK。
 
-## Aspose.PDF 23.3.1中的新功能
+## Aspose.PDF 23.3.1 中的新功能
 
-从Aspose.PDF 23.3开始，支持添加以下插件：
+从 Aspose.PDF 23.3 开始，支持添加以下插件：
 
 - Aspose.PdfForm
-- Aspose.PdfConverter PDF到HTML
-- Aspose.PdfConverter PDF到XLSX
+- Aspose.PdfConverter PDF 到 HTML
+- Aspose.PdfConverter PDF 到 XLSX
 - Aspose.PdfOrganizer 旋转
-- Aspose.PdfExtrator用于图像
+- Aspose.PdfExtrator 用于图像
 
-## Aspose.PDF 23.3中的新功能
+## Aspose.PDF 23.3 中的新功能
 
-版本23.3引入了在页面插入时保持图像比例和分辨率的支持。可以使用两种方法解决此问题：
+版本 23.3 引入了在页面插入时保持图像比例和分辨率的支持。可以使用两种方法解决此问题：
 
 ```cs
 private static void InsertImageWithNativeResolutionAsTable()
@@ -2175,26 +2190,26 @@ private static void InsertImageWithNativeResolutionAsParagraph()
 }
 ```
 
-图像将以缩放大小和原生分辨率放置。您可以结合使用FixedWidth或FixedHeight属性和IsApplyResolution。
+图像将以缩放大小和原生分辨率放置。您可以结合使用 FixedWidth 或 FixedHeight 属性与 IsApplyResolution。
 
-## Aspose.PDF 23.1.1中的新功能
+## Aspose.PDF 23.1.1 中的新功能
 
-从Aspose.PDF 23.1.1开始，支持添加以下插件：
+从 Aspose.PDF 23.1.1 开始，支持添加以下插件：
 
-- Aspose.PdfOrganizer插件
-- Aspose.PdfExtractor插件
+- Aspose.PdfOrganizer 插件
+- Aspose.PdfExtractor 插件
 
-## Aspose.PDF 23.1中的新功能
+## Aspose.PDF 23.1 中的新功能
 
-自23.1版本以来，支持创建PrinterMark注释。
+自 23.1 版本起，支持创建 PrinterMark 注释。
 
-打印机标记是添加到页面上的图形符号或文本，以帮助生产人员识别多版作业的组件，并在生产过程中保持一致的输出。印刷行业常用的示例包括：
+打印机标记是添加到页面的图形符号或文本，以帮助生产人员识别多版作业的组件，并在生产过程中保持一致的输出。印刷行业常用的示例包括：
 
 - 对齐版的注册目标
 - 测量颜色和墨水密度的灰色渐变和色条
 - 显示输出介质应修剪位置的切割标记
 
-我们将展示带有测量颜色和墨水密度的色条的选项示例。存在一个基本抽象类PrinterMarkAnnotation，从中派生出子类ColorBarAnnotation - 它已经实现了这些条纹。让我们检查示例：
+我们将展示带有测量颜色和墨水密度的色条的选项示例。基本抽象类 PrinterMarkAnnotation 及其子类 ColorBarAnnotation - 已实现这些条纹。让我们检查示例：
 
 ```cs
 private static void AddPrinterMarkAnnotation()
@@ -2247,9 +2262,9 @@ private static void SavePdfVectorGraphicToSvg()
 }
 ```
 
-## Aspose.PDF 22.12中的新功能
+## Aspose.PDF 22.12 中的新功能
 
-从此版本开始，支持将PDF转换为DICOM图像。
+从此版本开始，支持将 PDF 转换为 DICOM 图像。
 
 ```cs
 private static void PdfToDicom()
@@ -2267,9 +2282,9 @@ private static void PdfToDicom()
 }
 ```    
 
-## Aspose.PDF 22.09中的新功能
+## Aspose.PDF 22.09 中的新功能
 
-自22.09以来，支持添加属性以修改签名中的主题标题顺序（E=、CN=、O=、OU=）。
+自 22.09 起，支持添加属性以修改签名中的主题标题顺序 (E=, CN=, O=, OU=)。
 
 ```cs
 private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath, string password)
@@ -2303,12 +2318,12 @@ private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath,
 }
 ```
 
-## Aspose.PDF 22.6中的新功能
+## Aspose.PDF 22.6 中的新功能
 
-自22.5以来，支持从PDF中提取下标和上标文本。
+自 22.5 起，支持从 PDF 中提取下标和上标文本。
 
-如果PDF文档包含下标和上标文本，例如H2O，则从PDF中提取文本时也必须提取其格式信息（在提取的纯文本中）。
-如果PDF中包含斜体文本，则也必须包含在提取的内容中。
+如果 PDF 文档包含下标和上标文本，例如 H2O，则从 PDF 中提取文本时也必须提取其格式信息（在提取的纯文本中）。
+如果 PDF 中包含斜体文本，则也必须包含在提取的内容中。
 
 ```cs
 private static void ExtractTextSuperscript()
@@ -2335,11 +2350,11 @@ private static void ExtractTextSuperscript()
 }
 ```
 
-## Aspose.PDF 22.4中的新功能
+## Aspose.PDF 22.4 中的新功能
 
-此版本包括Aspose.PDF for .NET的信息：
+此版本包括 Aspose.PDF for .NET 的信息：
 
-- PDF到ODS：识别下标和上标中的文本；
+- PDF 到 ODS：识别下标和上标中的文本；
 
 **示例**
 
@@ -2365,33 +2380,33 @@ private static void ConvertPdfToOds()
 }
 ```
 
-- PDF到XMLSpreadSheet2003：识别下标和上标中的文本；
+- PDF 到 XMLSpreadSheet2003：识别下标和上标中的文本；
 
-- PDF到Excel：识别下标和上标中的文本；
+- PDF 到 Excel：识别下标和上标中的文本；
 
-- 保存文档时删除UR签名；
+- 保存文档时删除 UR 签名；
 
-- 保存文档时删除MarkInfo中的Suspects标志；
+- 保存文档时删除 MarkInfo 中的 Suspects 标志；
 
 - 保存文档时删除信息。
 
-## Aspose.PDF 22.3中的新功能
+## Aspose.PDF 22.3 中的新功能
 
 此版本包括以下更新：
 
-- 支持AFRelationship；
+- 支持 AFRelationship；
 
-- PDF头验证；
+- PDF 头部验证；
 
-- 保存文档时删除adbe.x509.rsa_sha1子过滤器；
+- 保存文档时删除 adbe.x509.rsa_sha1 子过滤器；
 
 - 将字段格式化为数字和日期格式；
 
-- 禁止在FDF 2.0中使用RC4加密。
+- 禁止在 FDF 2.0 中使用 RC4 加密。
 
-## Aspose.PDF 22.2中的新功能
+## Aspose.PDF 22.2 中的新功能
 
-从22.2版本开始，可以使用PdfFileSignature进行签名，并能够将哈希从SHA1更改为SHA256。
+从 22.2 版本开始，可以使用 PdfFileSignature 签署文档，并能够将哈希从 SHA1 更改为 SHA256。
 
 ```csharp
 private static void SignPdfWithSha256(string pfxFilePath, string password)
@@ -2420,11 +2435,11 @@ private static void SignPdfWithSha256(string pfxFilePath, string password)
 }
 ```
 
-## Aspose.PDF 22.1中的新功能
+## Aspose.PDF 22.1 中的新功能
 
-现在，Aspose.PDF for .NET支持从最流行的文档格式之一，即可移植文档格式（PDF）版本2.0加载文档。
+现在，Aspose.PDF for .NET 支持从最流行的文档格式之一，即可移植文档格式 (PDF) 版本 2.0 加载文档。
 
-## Aspose.PDF 21.11中的新功能
+## Aspose.PDF 21.11 中的新功能
 
 ### 允许密码中使用非拉丁字符
 
@@ -2448,11 +2463,11 @@ private static void EncriptPdfNonlatinPassCharacters()
 }
 ```
 
-## Aspose.PDF 21.10中的新功能
+## Aspose.PDF 21.10 中的新功能
 
 ### 如何检测隐藏文本？
 
-请使用TextState.Invisible获取有关文本不可见性的信息，超出渲染模式设置。
+请使用 TextState.Invisible 获取有关文本不可见性的信息，超出渲染模式设置。
 
 我们使用以下代码进行测试：
 
@@ -2486,7 +2501,7 @@ private static void DisplayTextInvisibility()
 }
 ```
 
-### 如何获取PDF文档中图层的数量信息？
+### 如何获取 PDF 文档中层的数量信息？
 
 ```csharp
 private static void GetPdfLayers()
@@ -2508,9 +2523,9 @@ private static void GetPdfLayers()
 }
 ```
 
-## Aspose.PDF 21.9中的新功能
+## Aspose.PDF 21.9 中的新功能
 
-自Aspose.PDF for .NET以来，定制签名外观中的背景颜色和标签字体颜色。
+自 21.9 起，支持自定义签名外观的背景颜色和签名区域标签的字体颜色。
 
 ```csharp
 private static void SignPdfWithCustomColorsInAppearance(string pfxFilePath, string password)
@@ -2542,11 +2557,11 @@ private static void SignPdfWithCustomColorsInAppearance(string pfxFilePath, stri
 }
 ```
 
-## Aspose.PDF 21.8中的新功能
+## Aspose.PDF 21.8 中的新功能
 
 ### 如何更改数字签名中的文本颜色？
 
-在21.8版本中，ForegroundColor属性允许更改数字签名中的文本颜色。
+在 21.8 版本中，ForegroundColor 属性允许更改数字签名中的文本颜色。
 
 ```csharp
 private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, string password)
@@ -2577,11 +2592,11 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 }
 ```
 
-## Aspose.PDF 21.7中的新功能
+## Aspose.PDF 21.7 中的新功能
 
-### 基于XML和XLS的PDF创建，带参数
+### 基于 XML 和 XLS 的 PDF 创建
 
-要添加XSL参数，我们需要创建自己的[XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)，并将其设置为[XslFoLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/xslfoloadoptions)中的属性。以下代码片段展示了如何使用此类与上述示例文件。
+要添加 XSL 参数，我们需要创建自己的 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) 并将其设置为 [XslFoLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/xslfoloadoptions) 中的属性。以下代码片段展示了如何使用此类与上述示例文件。
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()
@@ -2605,9 +2620,9 @@ private static void ConvertXslfoToPdfWithArgumentList()
 }
 ```
 
-## Aspose.PDF 21.6中的新功能
+## Aspose.PDF 21.6 中的新功能
 
-使用Aspose.PDF for .NET，您可以使用ImagePlacementAbsorber从文档中隐藏图像：
+使用 Aspose.PDF for .NET，您可以使用 ImagePlacementAbsorber 从文档中隐藏图像：
 
 ```csharp
 private static void HideImageInPdf()
@@ -2636,11 +2651,11 @@ private static void HideImageInPdf()
 }
 ```
 
-## Aspose.PDF 21.5中的新功能
+## Aspose.PDF 21.5 中的新功能
 
-### 如何从PDF的描述/资源中提取字体全名？
+### 如何从 PDF 的描述/资源中提取字体全名？
 
-您可以通过Font类的BaseFont属性获取带前缀的完整字体。
+您可以通过 Font 类的 BaseFont 属性获取带前缀的完整字体。
 
 ```csharp
 private static void DisplayFontFullNames()
@@ -2664,11 +2679,11 @@ private static void DisplayFontFullNames()
 }
 ```
 
-## Aspose.PDF 21.4中的新功能
+## Aspose.PDF 21.4 中的新功能
 
-### 添加合并图像的API
+### 添加合并图像的 API
 
-Aspose.PDF 21.4允许您合并图像。请遵循以下代码片段：
+Aspose.PDF 21.4 允许您合并图像。请遵循以下代码片段：
 
 ```csharp
 private static void MergeAsJpeg()
@@ -2703,7 +2718,7 @@ private static void MergeAsJpeg()
 }
 ```
 
-您还可以将图像合并为Tiff格式：
+您还可以将图像合并为 Tiff 格式：
 
 ```csharp
 private static void MergeAsTiff()
@@ -2737,11 +2752,11 @@ private static void MergeAsTiff()
 }
 ```
 
-## Aspose.PDF 21.3中的新功能
+## Aspose.PDF 21.3 中的新功能
 
-### 公共暴露属性以检测Azure信息保护
+### 公开检测 Azure 信息保护的属性
 
-使用以下代码片段，您应该能够访问受Azure信息保护保护的PDF文件的加密有效负载：
+使用以下代码片段，您应该能够访问受 Azure 信息保护保护的 PDF 文件的加密有效负载：
 
 ```csharp
 private static void AzureInformationProtection()
@@ -2765,11 +2780,11 @@ private static void AzureInformationProtection()
 }
 ```
 
-## Aspose.PDF 21.1中的新功能
+## Aspose.PDF 21.1 中的新功能
 
-### 添加检索TextFragment背景颜色的支持
+### 添加检索 TextFragment 背景颜色的支持
 
-在此版本的Aspose.PDF中，检索背景颜色的功能变得可用。您需要在TextFragmentAbsorber对象的选项中指定searchOptions.SearchForTextRelatedGraphics = true;。
+在此版本的 Aspose.PDF 中，检索背景颜色的功能变得可用。您需要在 TextFragmentAbsorber 对象的选项中指定 searchOptions.SearchForTextRelatedGraphics = true;。
 
 请考虑以下代码：
 
@@ -2805,9 +2820,9 @@ private static void DisplayPdfTextBackgroundColor()
 }
 ```
 
-### 转换为HTML后，字体完全嵌入输出中
+### 转换为 HTML 后，字体完全嵌入输出中
 
-此外，在Aspose.PDF 21.1中，将PDF转换为HTML后，输出HTML文档中可用嵌入字体。通过新的布尔保存选项HtmlSaveParameter.SaveFullFont实现。
+此外，在 Aspose.PDF 21.1 中，将 PDF 转换为 HTML 后，输出 HTML 文档中可用嵌入字体。通过新的布尔保存选项 HtmlSaveParameter.SaveFullFont 实现。
 
 以下是代码片段：
 

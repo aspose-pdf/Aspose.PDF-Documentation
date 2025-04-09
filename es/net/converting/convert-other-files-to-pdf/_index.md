@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "4627",
+    "wordcount": "4929",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,70 +73,32 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-other-files-to-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también hacer frente a objetivos más complejos. Consulta la siguiente sección para usuarios avanzados y desarrolladores."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también hacer frente a objetivos más complejos. Consulta la siguiente sección para usuarios y desarrolladores avanzados."
 }
 </script>
 
-## Descripción general
+## Resumen
 
 Este artículo explica cómo **convertir varios otros tipos de formatos de archivo a PDF usando C#**. Cubre los siguientes temas.
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-_Formato_: **EPUB**
-- [C# EPUB a PDF](#csharp-convert-epub-to-pdf)
-- [C# Convertir EPUB a PDF](#csharp-convert-epub-to-pdf)
-- [C# Cómo convertir archivo EPUB a PDF](#csharp-convert-epub-to-pdf)
-
-_Formato_: **Markdown**
-- [C# Markdown a PDF](#csharp-convert-markdown-to-pdf)
-- [C# Convertir Markdown a PDF](#csharp-convert-markdown-to-pdf)
-- [C# Cómo convertir archivo Markdown a PDF](#csharp-convert-markdown-to-pdf)
-
-_Formato_: **MD**
-- [C# MD a PDF](#csharp-convert-md-to-pdf)
-- [C# Convertir MD a PDF](#csharp-convert-md-to-pdf)
-- [C# Cómo convertir archivo MD a PDF](#csharp-convert-md-to-pdf)
-
-_Formato_: **PCL**
-- [C# PCL a PDF](#csharp-convert-pcl-to-pdf)
-- [C# Convertir PCL a PDF](#csharp-convert-pcl-to-pdf)
-- [C# Cómo convertir archivo PCL a PDF](#csharp-convert-pcl-to-pdf)
-
-_Formato_: **Texto**
-- [C# Texto a PDF](#csharp-convert-text-to-pdf)
-- [C# Convertir Texto a PDF](#csharp-convert-text-to-pdf)
-- [C# Cómo convertir archivo de Texto a PDF](#csharp-convert-text-to-pdf)
-
-_Formato_: **TXT**
-- [C# TXT a PDF](#csharp-convert-txt-to-pdf)
-- [C# Convertir TXT a PDF](#csharp-convert-txt-to-pdf)
-- [C# Cómo convertir archivo TXT a PDF](#csharp-convert-txt-to-pdf)
-
-_Formato_: **Texto plano**
-- [C# Texto plano a PDF](#csharp-convert-plain-text-to-pdf)
-- [C# Convertir Texto plano a PDF](#csharp-convert-plain-text-to-pdf)
-- [C# Cómo convertir archivo de Texto plano a PDF](#csharp-convert-plain-text-to-pdf)
-
-_Formato_: **TXT preformateado**
-- [C# Texto preformateado a PDF](#csharp-convert-pre-formatted-txt-to-pdf)
-- [C# Convertir Texto preformateado a PDF](#csharp-convert-pre-formatted-txt-to-pdf)
-- [C# Cómo convertir archivo de Texto preformateado a PDF](#csharp-convert-pre-formatted-txt-to-pdf)
-
-_Formato_: **Texto Pre**
-- [C# Texto Pre a PDF](#csharp-convert-pre-text-to-pdf)
-- [C# Convertir Texto Pre a PDF](#csharp-convert-pre-text-to-pdf)
-- [C# Cómo convertir archivo de Texto Pre a PDF](#csharp-convert-pre-text-to-pdf)
-
-_Formato_: **XPS**
-- [C# XPS a PDF](#csharp-convert-xps-to-pdf)
-- [C# Convertir XPS a PDF](#csharp-convert-xps-to-pdf)
-- [C# Cómo convertir archivo XPS a PDF](#csharp-convert-xps-to-pdf)
+- [Convertir EPUB a PDF](#csharp-convert-epub-to-pdf)
+- [Convertir Markdown a PDF](#csharp-convert-markdown-to-pdf)
+- [Convertir PCL a PDF](#csharp-convert-pcl-to-pdf)
+- [Convertir Texto a PDF](#csharp-convert-text-to-pdf)
+- [Convertir texto preformateado a PDF](#csharp-convert-pre-formatted-text-to-pdf)
+- [Convertir XPS a PDF](#csharp-convert-xps-to-pdf)
+- [Convertir PostScript a PDF](#csharp-convert-ps-to-pdf)
+- [Convertir XML a PDF](#csharp-convert-xml-to-pdf)
+- [Convertir XLS-FO a PDF](#csharp-convert-xlsfo-to-pdf)
+- [Convertir LaTeX/TeX a PDF](#csharp-convert-latex-to-pdf)
+- [Convertir OFD a PDF](#csharp-convert-ofd-to-pdf)
 
 ## Convertir EPUB a PDF
 
-**Aspose.PDF for .NET** te permite convertir archivos EPUB a formato PDF de manera sencilla.
+**Aspose.PDF for .NET** te permite convertir fácilmente archivos EPUB a formato PDF.
 
 <abbr title="publicación electrónica">EPUB</abbr> (abreviatura de publicación electrónica) es un estándar de libro electrónico gratuito y abierto del Foro Internacional de Publicación Digital (IDPF). Los archivos tienen la extensión .epub. EPUB está diseñado para contenido refluido, lo que significa que un lector EPUB puede optimizar el texto para un dispositivo de visualización particular.
 
@@ -147,10 +109,10 @@ EPUB también admite contenido de diseño fijo. El formato está destinado a ser
 
 Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["EPUB a PDF"](https://products.aspose.app/pdf/conversion/epub-to-pdf), donde puedes investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión EPUB a PDF con aplicación gratuita](epub.png)](https://products.aspose.app/pdf/conversion/epub-to-pdf)
+[![Aspose.PDF Conversión EPUB a PDF con Aplicación Gratuita](epub.png)](https://products.aspose.app/pdf/conversion/epub-to-pdf)
 {{% /alert %}}
 
-<a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong><em>Pasos:</em> Convertir EPUB a PDF en C#</strong></a>
+<a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong>Convertir EPUB a PDF</strong></a>
 
 1. Crea una instancia de la clase [EpubLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/epubloadoptions).
 2. Crea una instancia de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) mencionando el nombre del archivo fuente y las opciones.
@@ -205,15 +167,14 @@ private static void ConvertEPUBtoPDFAdv()
 
 Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["Markdown a PDF"](https://products.aspose.app/pdf/conversion/md-to-pdf), donde puedes investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión Markdown a PDF con aplicación gratuita](markdown.png)](https://products.aspose.app/pdf/conversion/md-to-pdf)
+[![Aspose.PDF Conversión Markdown a PDF con Aplicación Gratuita](markdown.png)](https://products.aspose.app/pdf/conversion/md-to-pdf)
 {{% /alert %}}
 
-Aspose.PDF for .NET proporciona la funcionalidad para crear un documento PDF basado en el archivo de datos de entrada [Markdown](https://daringfireball.net/projects/markdown/syntax). Para convertir Markdown a PDF, necesitas inicializar el [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) utilizando [MdLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/mdloadoptions).
+Aspose.PDF for .NET proporciona la funcionalidad para crear un documento PDF basado en el archivo de datos de entrada [Markdown](https://daringfireball.net/projects/markdown/syntax). Para convertir el Markdown a PDF, necesitas inicializar el [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) usando [MdLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/mdloadoptions).
 
-El siguiente fragmento de código muestra cómo utilizar esta funcionalidad con la biblioteca Aspose.PDF:
+El siguiente fragmento de código muestra cómo usar esta funcionalidad con la biblioteca Aspose.PDF:
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Pasos:</em> Convertir Markdown a PDF en C#</strong></a> |
-<a name="csharp-convert-md-to-pdf" id="csharp-convert-md-to-pdf"><strong><em>Pasos:</em> Convertir MD a PDF en C#</strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong>Convertir Markdown a PDF</strong></a>
 
 1. Crea una instancia de la clase [MdLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/mdloadoptions/) .
 2. Crea una instancia de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) mencionando el nombre del archivo fuente y las opciones.
@@ -239,14 +200,14 @@ private static void ConvertMarkdownToPDF()
 
 ## Convertir PCL a PDF
 
-<abbr title="Lenguaje de Comando de Impresora">PCL</abbr> (Lenguaje de Comando de Impresora) es un lenguaje de impresora de Hewlett-Packard desarrollado para acceder a las características estándar de la impresora. Los niveles PCL 1 a 5e/5c son lenguajes basados en comandos que utilizan secuencias de control que se procesan e interpretan en el orden en que se reciben. A nivel del consumidor, los flujos de datos PCL son generados por un controlador de impresión. La salida PCL también puede ser generada fácilmente por aplicaciones personalizadas.
+<abbr title="Lenguaje de Comando de Impresora">PCL</abbr> (Lenguaje de Comando de Impresora) es un lenguaje de impresora de Hewlett-Packard desarrollado para acceder a las características estándar de la impresora. Los niveles PCL 1 a 5e/5c son lenguajes basados en comandos que utilizan secuencias de control que se procesan e interpretan en el orden en que se reciben. A nivel de consumidor, los flujos de datos PCL son generados por un controlador de impresión. La salida PCL también puede ser generada fácilmente por aplicaciones personalizadas.
 
 {{% alert color="success" %}}
 **Intenta convertir PCL a PDF en línea**
 
 Aspose.PDF para .NET te presenta una aplicación gratuita en línea ["PCL a PDF"](https://products.aspose.app/pdf/conversion/pcl-to-pdf), donde puedes investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión PCL a PDF con aplicación gratuita](pcl_to_pdf.png)](https://products.aspose.app/pdf/conversion/pcl-to-pdf)
+[![Aspose.PDF Conversión PCL a PDF con Aplicación Gratuita](pcl_to_pdf.png)](https://products.aspose.app/pdf/conversion/pcl-to-pdf)
 {{% /alert %}}
 
 **Actualmente solo se admiten PCL5 y versiones anteriores**
@@ -255,7 +216,7 @@ Aspose.PDF para .NET te presenta una aplicación gratuita en línea ["PCL a PDF"
     <thead>
         <tr>
             <th>
-                Conjuntos de comandos
+                Conjuntos de Comandos
             </th>
             <th>
                 Soporte
@@ -323,7 +284,7 @@ Aspose.PDF para .NET te presenta una aplicación gratuita en línea ["PCL a PDF"
                     <li>Comando de datos de impresión transparente.</li>
                     <li>Fuentes suaves incrustadas. En la versión actual, en lugar de crear una fuente suave, nuestra biblioteca selecciona una fuente adecuada de las fuentes TrueType "duras" existentes instaladas en la máquina de destino. <br/>
                         La idoneidad se define por la relación ancho/alto.<br/>
-                        Esta función solo funciona para fuentes de mapa de bits y TrueType y no garantiza que el texto impreso con la fuente suave sea relevante para el de un archivo fuente.<br/>
+                        Esta función solo funciona para fuentes de mapa de bits y TrueType y no garantiza que el texto impreso con una fuente suave sea relevante para el de un archivo fuente.<br/>
                         Debido a que los códigos de caracteres en la fuente suave pueden no coincidir con los predeterminados.
                     </li>
                     <li>Conjuntos de símbolos definidos por el usuario.</li>
@@ -374,8 +335,8 @@ Aspose.PDF para .NET te presenta una aplicación gratuita en línea ["PCL a PDF"
             </td>
             <td>
                 Permitir rellenar texto, imágenes rasterizadas y áreas rectangulares con un patrón rasterizado predefinido y <br>
-                patrones definidos por el usuario, especificar el modo de transparencia para patrones e
-                imágenes rasterizadas de origen. <br> Los patrones predefinidos son de tramas, tramas cruzadas
+                patrones definidos por el usuario, especificar el modo de transparencia para patrones y
+                la imagen rasterizada de origen. <br> Los patrones predefinidos son de tramas, tramas cruzadas
                 y de sombreado.
             </td>
         </tr>
@@ -407,13 +368,15 @@ Aspose.PDF para .NET te presenta una aplicación gratuita en línea ["PCL a PDF"
                 versión beta.
             </td>
             <td>
-                Permitir cargar imágenes vectoriales HP-GL/2 desde el archivo PCL en memoria. La imagen vectorial tiene un origen en la esquina inferior
+                Permitir cargar imágenes vectoriales HP-GL/2 desde el archivo PCL en la memoria. La imagen vectorial tiene un origen en la esquina inferior
                 izquierda del área imprimible, puede ser escalada, trasladada, rotada y recortada. <br>
                 La imagen vectorial puede contener texto, como etiquetas, y figuras geométricas como
-                rectángulos, círculos, elipses, líneas, arcos, curvas de Bezier y figuras complejas compuestas de figuras simples. <br> Las figuras cerradas, incluidas las letras de las etiquetas, pueden ser rellenadas con
+                rectángulos, círculos, elipses, líneas, arcos, curvas de Bezier y figuras complejas compuestas de las simples. <br> Las figuras cerradas, incluidas las letras de las etiquetas, pueden ser rellenadas con
                 relleno sólido o patrón vectorial. <br> El patrón puede ser
-                de tramas, tramas cruzadas, sombreado, rasterizado definido por el usuario, tramas PCL o tramas cruzadas y definidas por el usuario de PCL. Los patrones PCL son rasterizados. Las etiquetas pueden ser rotadas, escaladas y dirigidas individualmente en
-                cuatro direcciones: arriba, abajo, izquierda y derecha. Las direcciones izquierda y derecha implican un arreglo de letras uno tras otro. Las direcciones arriba y abajo implican un arreglo de letras una debajo de la otra.
+                de tramas, tramas cruzadas, sombreado, rasterizado definido por el usuario, tramas PCL o tramas cruzadas y PCL
+                definidas por el usuario. Los patrones PCL son rasterizados. Las etiquetas pueden ser rotadas, escaladas y dirigidas individualmente en
+                cuatro direcciones: arriba, abajo, izquierda y derecha. Las direcciones izquierda y derecha implican la disposición de letras una tras otra.
+                Las direcciones arriba y abajo implican la disposición de letras una debajo de otra.
             </td>
         </tr>
         <tr>
@@ -427,7 +390,7 @@ Aspose.PDF para .NET te presenta una aplicación gratuita en línea ["PCL a PDF"
                 &nbsp;
             </td>
             <td>
-                Permitir cargar una secuencia de comandos PCL en memoria y usar esta secuencia muchas veces, por ejemplo,
+                Permitir cargar una secuencia de comandos PCL en la memoria y usar esta secuencia muchas veces, por ejemplo,
                 para imprimir el encabezado de la página o establecer un formato para un conjunto de páginas.
             </td>
         </tr>
@@ -471,7 +434,7 @@ Para permitir la conversión de PCL a PDF, Aspose.PDF tiene la clase [`PclLoadOp
 
 El siguiente fragmento de código muestra el proceso de conversión de un archivo PCL a formato PDF.
 
-<a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong><em>Pasos:</em> Convertir PCL a PDF en C#</strong></a>
+<a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong>Convertir PCL a PDF</strong></a>
 
 1. Crea una instancia de la clase [PclLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/pclloadoptions/) .
 2. Crea una instancia de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/) mencionando el nombre del archivo fuente y las opciones.
@@ -495,7 +458,7 @@ private static void ConvertPCLtoPDF()
 }
 ```
 
-También puedes monitorear la detección de errores durante el proceso de conversión. Para ello, necesitas configurar el objeto PclLoadOptions: establecer o desactivar SupressErrors.
+También puedes monitorear la detección de errores durante el proceso de conversión. Para hacer esto, necesitas configurar el objeto PclLoadOptions: establecer o desactivar SupressErrors.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -522,11 +485,11 @@ private static void ConvertPCLtoPDFAdvanced()
 }
 ```
 
-### Problemas conocidos
+### Problemas Conocidos
 
-1. El origen de las cadenas de texto e imágenes puede diferir ligeramente de las del archivo PCL fuente si la dirección de impresión no es 0°. Lo mismo se refiere a las imágenes vectoriales si el sistema de coordenadas del gráfico vectorial está rotado (precedido por el comando RO).
-2. El origen de las etiquetas en las imágenes vectoriales puede diferir de las del archivo PCL fuente si las etiquetas están influenciadas por una secuencia de comandos: Origen de etiqueta (LO), Definir ruta de texto variable (DV), Dirección absoluta (DI) o Dirección relativa (DR).
-3. Un texto puede ser leído incorrectamente si debe ser renderizado con una fuente suave (incrustada) de mapa de bits o TrueType, porque actualmente estas fuentes solo son parcialmente compatibles (ver excepciones en la "tabla de características compatibles"). En esta situación, el texto puede ser leído correctamente solo si los códigos de caracteres en una fuente suave corresponden a los predeterminados. El estilo del texto leído también puede diferir del del archivo PCL fuente porque no es necesario establecer el estilo en el encabezado de la fuente suave.
+1. El origen de las cadenas de texto e imágenes puede diferir ligeramente de los de un archivo PCL fuente si la dirección de impresión no es 0°. Lo mismo se refiere a las imágenes vectoriales si el sistema de coordenadas del gráfico vectorial está rotado (precedido por el comando RO).
+2. El origen de las etiquetas en imágenes vectoriales puede diferir de los de un archivo PCL fuente si las etiquetas están influenciadas por una secuencia de comandos: Origen de Etiqueta (LO), Definir Ruta de Texto Variable (DV), Dirección Absoluta (DI) o Dirección Relativa (DR).
+3. Un texto puede ser leído incorrectamente si debe ser renderizado con una fuente suave (incrustada) de mapa de bits o TrueType, porque actualmente estas fuentes solo son parcialmente compatibles (ver excepciones en la "tabla de características compatibles"). En esta situación, el texto solo puede ser leído correctamente si los códigos de caracteres en una fuente suave corresponden a los predeterminados. El estilo del texto leído también puede diferir del del archivo PCL fuente porque no es necesario establecer el estilo en el encabezado de la fuente suave.
 4. Si el archivo PCL analizado contiene fuentes suaves Intellifont o Universal, se lanzará una excepción, porque las fuentes Intellifont y Universal no son compatibles en absoluto.
 5. Si el archivo PCL analizado contiene comandos de macros, el resultado del análisis diferirá significativamente del archivo fuente, porque los comandos de macros no son compatibles.
 
@@ -541,16 +504,14 @@ Convertir texto a PDF significa agregar fragmentos de texto a la página PDF. En
 
 Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["Texto a PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), donde puedes investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión TEXTO a PDF con aplicación gratuita](text_to_pdf.png)](https://products.aspose.app/pdf/conversion/txt-to-pdf)
+[![Aspose.PDF Conversión TEXTO a PDF con Aplicación Gratuita](text_to_pdf.png)](https://products.aspose.app/pdf/conversion/txt-to-pdf)
 {{% /alert %}}
 
 ### Convertir archivo de texto plano a PDF
 
 En el caso del archivo de texto plano, podemos usar la siguiente técnica:
 
-<a name="csharp-convert-text-to-pdf" id="csharp-convert-text-to-pdf"><strong><em>Pasos:</em> Convertir Texto a PDF en C#</strong></a> |
-<a name="csharp-convert-txt-to-pdf" id="csharp-convert-txt-to-pdf"><strong><em>Pasos:</em> Convertir TXT a PDF en C#</strong></a> |
-<a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong><em>Pasos:</em> Convertir Texto plano a PDF en C#</strong></a>
+<a name="csharp-convert-text-to-pdf" id="csharp-convert-text-to-pdf"><strong>Convertir Texto a PDF</strong></a>
 
 1. Usa un _TextReader_ para leer todo el texto.
 2. Instancia el objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/) y agrega una nueva página en la colección Pages.
@@ -590,8 +551,7 @@ Convertir texto preformateado es similar a texto plano, pero necesitas realizar 
 
 Sigue estos pasos para convertir texto preformateado a PDF con C#:
 
-<a name="csharp-convert-pre-text-to-pdf" id="csharp-convert-pre-text-to-pdf"><strong><em>Pasos:</em> Convertir Texto Pre a PDF en C#</strong></a> |
-<a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong><em>Pasos:</em> Convertir TXT preformateado a PDF en C#</strong></a>
+<a name="csharp-convert-pre-formatted-text-to-pdf" id="csharp-convert-pre-formatted-text-to-pdf"><strong>Convertir TXT Preformateado a PDF</strong></a>
 
 1. Lee todo el texto como un arreglo de cadenas.
 2. Instancia el objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/) y agrega una nueva página en la colección [Pages](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/pages/).
@@ -658,17 +618,17 @@ El formato de archivo es básicamente un archivo XML comprimido que se utiliza p
 
 {{% /alert %}}
 
-Para convertir XPS a PDF con Aspose.PDF for .NET, hemos introducido una clase llamada [XpsLoadOption](https://reference.aspose.com/pdf/es/net/aspose.pdf/xpsloadoptions) que se utiliza para inicializar un objeto [LoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/loadoptions) . Posteriormente, este objeto se pasa como argumento durante la inicialización del objeto Document y ayuda al motor de renderizado PDF a determinar el formato de entrada del documento fuente.
+Para convertir XPS a PDF con Aspose.PDF for .NET, hemos introducido una clase llamada [XpsLoadOption](https://reference.aspose.com/pdf/es/net/aspose.pdf/xpsloadoptions) que se utiliza para inicializar un objeto [LoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/loadoptions). Posteriormente, este objeto se pasa como argumento durante la inicialización del objeto Document y ayuda al motor de renderizado PDF a determinar el formato de entrada del documento fuente.
 
 {{% alert color="primary" %}}
 
-En ambos XP y Windows 7, deberías encontrar una impresora XPS preinstalada si miras en el Panel de Control y luego en Impresoras. Para crear estos archivos, puedes usar esa impresora como dispositivo de salida. En Windows 7, deberías poder simplemente hacer doble clic en el archivo para abrirlo en un visor XPS. También puedes descargar el visor XPS desde el sitio web de Microsoft.
+En ambos XP y Windows 7, deberías encontrar una impresora XPS preinstalada si miras en el Panel de Control y luego en Impresoras. Para crear estos archivos, puedes usar esa impresora como dispositivo de salida. En Windows 7, deberías poder hacer doble clic en el archivo para abrirlo en un visor XPS. También puedes descargar el visor XPS desde el sitio web de Microsoft.
 
 {{% /alert %}}
 
 El siguiente fragmento de código muestra el proceso de conversión de un archivo XPS a formato PDF con C#.
 
-<a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong><em>Pasos:</em> Convertir XPS a PDF en C#</strong></a>
+<a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong>Convertir XPS a PDF</strong></a>
 
 1. Crea una instancia de la clase [XpsLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/xpsloadoptions/) .
 2. Crea una instancia de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/) mencionando el nombre del archivo fuente y las opciones.
@@ -697,16 +657,18 @@ private static void ConvertXPSToPDF()
 
 Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["XPS a PDF"](https://products.aspose.app/pdf/conversion/xps-to-pdf/), donde puedes investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión XPS a PDF con aplicación gratuita](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
+[![Aspose.PDF Conversión XPS a PDF con Aplicación Gratuita](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
 {{% /alert %}}
 
 ## Convertir PostScript a PDF
 
+<a name="csharp-convert-ps-to-pdf" id="csharp-convert-ps-to-pdf"><strong>Convertir PostScript a PDF</strong></a>
+
 **Aspose.PDF for .NET** admite funciones para convertir archivos PostScript a formato PDF. Una de las características de Aspose.PDF es que puedes establecer un conjunto de carpetas de fuentes que se utilizarán durante la conversión.
 
-Para convertir un archivo PostScript a formato PDF, Aspose.PDF for .NET ofrece la clase [PsLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/psloadoptions) que se utiliza para inicializar el objeto LoadOptions. Posteriormente, este objeto puede pasarse como argumento al constructor del objeto Document, lo que ayudará al motor de renderizado PDF a determinar el formato del documento fuente.
+Para convertir un archivo PostScript a formato PDF, Aspose.PDF for .NET ofrece la clase [PsLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/psloadoptions) que se utiliza para inicializar el objeto LoadOptions. Posteriormente, este objeto puede ser pasado como argumento al constructor del objeto Document, lo que ayudará al Motor de Renderizado PDF a determinar el formato del documento fuente.
 
-El siguiente fragmento de código se puede utilizar para convertir un archivo PostScript a formato PDF con Aspose.PDF for .NET:
+El siguiente fragmento de código puede ser utilizado para convertir un archivo PostScript a formato PDF con Aspose.PDF for .NET:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -751,22 +713,25 @@ private static void ConvertPostscriptToPDFAdvanced()
 
 ## Convertir XML a PDF
 
+<a name="csharp-convert-xml-to-pdf" id="csharp-convert-xml-to-pdf"><strong>Convertir XML a PDF</strong></a>
+
 El formato XML se utiliza para almacenar datos estructurados. Hay varias formas de convertir <abbr title="Lenguaje de Marcado Extensible">XML</abbr> a PDF en Aspose.PDF:
 
-1. Transformar cualquier dato XML a HTML utilizando XSLT y convertir HTML a PDF como se describe a continuación.
-2. Generar un documento XML utilizando el esquema XSD de Aspose.PDF.
-3. Utilizar un documento XML basado en el estándar XSL-FO.
+1. Transformar cualquier dato XML a HTML usando XSLT y convertir HTML a PDF como se describe a continuación.
+2. Generar un documento XML usando el esquema XSD de Aspose.PDF.
+3. Usar un documento XML basado en el estándar XSL-FO.
 
 {{% alert color="success" %}}
 **Intenta convertir XML a PDF en línea**
 
 Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["XML a PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf), donde puedes investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión XML a PDF con aplicación gratuita](xml_to_pdf.png)](https://products.aspose.app/pdf/conversion/xml-to-pdf)
+[![Aspose.PDF Conversión XML a PDF con Aplicación Gratuita](xml_to_pdf.png)](https://products.aspose.app/pdf/conversion/xml-to-pdf)
 {{% /alert %}}
 
-
 ## Convertir XSL-FO a PDF
+
+<a name="csharp-convert-xslfo-to-pdf" id="csharp-convert-xslfo-to-pdf"><strong>Convertir XSL-FO a PDF</strong></a>
 
 La conversión de archivos XSL-FO a PDF se puede implementar utilizando la técnica tradicional de Aspose.PDF: instanciar el objeto [Document](https://reference.aspose.com/page/net/aspose.page/document) con [XslFoLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/xslfoloadoptions). Pero a veces puedes encontrarte con una estructura de archivo incorrecta. Para este caso, el convertidor XSL-FO permite establecer la estrategia de manejo de errores. Puedes elegir `ThrowExceptionImmediately`, `TryIgnore` o `InvokeCustomHandler`.
 
@@ -792,14 +757,16 @@ private static void Convert_XSLFO_to_PDF()
 
 ## Convertir LaTeX/TeX a PDF
 
-El formato de archivo LaTeX es un formato de archivo de texto con marcado en el derivado de LaTeX de la familia de lenguajes TeX y LaTeX es un formato derivado del sistema TeX. LaTeX (ˈleɪtɛk/lay-tek o lah-tek) es un sistema de preparación de documentos y un lenguaje de marcado de documentos. Se utiliza ampliamente para la comunicación y publicación de documentos científicos en muchos campos, incluidos matemáticas, física y ciencias de la computación. También tiene un papel destacado en la preparación y publicación de libros y artículos que contienen materiales multilingües complejos, como sánscrito y árabe, incluidas ediciones críticas. LaTeX utiliza el programa de composición TeX para formatear su salida y está escrito en el lenguaje de macros TeX.
+<a name="csharp-convert-latex-to-pdf" id="csharp-convert-latext-to-pdf"><strong>Convertir LaTeX/TeX a PDF</strong></a>
+
+El formato de archivo LaTeX es un formato de archivo de texto con marcado en el derivado de LaTeX de la familia de lenguajes TeX y LaTeX es un formato derivado del sistema TeX. LaTeX (ˈleɪtɛk/lay-tek o lah-tek) es un sistema de preparación de documentos y un lenguaje de marcado de documentos. Se utiliza ampliamente para la comunicación y publicación de documentos científicos en muchos campos, incluidos matemáticas, física y ciencias de la computación. También tiene un papel destacado en la preparación y publicación de libros y artículos que contienen materiales complejos multilingües, como sánscrito y árabe, incluidas ediciones críticas. LaTeX utiliza el programa de composición TeX para formatear su salida y está escrito en el lenguaje de macros TeX.
 
 {{% alert color="success" %}}
 **Intenta convertir LaTeX/TeX a PDF en línea**
 
 Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["LaTex a PDF"](https://products.aspose.app/pdf/conversion/tex-to-pdf), donde puedes investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión LaTeX/TeX a PDF con aplicación gratuita](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
+[![Aspose.PDF Conversión LaTeX/TeX a PDF con Aplicación Gratuita](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
 {{% /alert %}}
 
 Aspose.PDF for .NET admite la función de convertir archivos TeX a formato PDF y, para cumplir con este requisito, el espacio de nombres Aspose.Pdf tiene una clase llamada [LatexLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/latexloadoptions) que proporciona las capacidades para cargar archivos LaTex y renderizar la salida en formato PDF utilizando la [clase Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
@@ -823,6 +790,8 @@ private static void ConvertTeXtoPDF()
 ```
 
 ## Convertir OFD a PDF
+
+<a name="csharp-convert-ofd-to-pdf" id="csharp-convert-ofd-to-pdf"><strong>Convertir OFD a PDF</strong></a>
 
 El formato OFD se refiere a "Documento de Diseño Fijo Abierto", establecido como el estándar nacional de China para el almacenamiento de archivos electrónicos, utilizado como alternativa al popular formato PDF. Admite documentos de diseño fijo, asegurando una visualización consistente en diferentes plataformas. Los archivos OFD se utilizan para diversos propósitos, incluidos documentos digitales y aplicaciones comerciales.
 

@@ -7,7 +7,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /id/net/convert-pdf-to-images-format/
 lastmod: "2021-11-01"
-description: Topik ini menunjukkan cara menggunakan Aspose.PDF untuk mengonversi PDF ke berbagai format gambar seperti TIFF, BMP, EMF, JPEG, PNG, GIF, SVG dengan beberapa baris kode.
+description: Topik ini menunjukkan kepada Anda cara menggunakan Aspose.PDF untuk mengonversi PDF ke berbagai format gambar seperti TIFF, BMP, EMF, JPEG, PNG, GIF, SVG dengan beberapa baris kode.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "2012",
+    "wordcount": "1776",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-images-format/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
@@ -82,40 +82,13 @@ sitemap:
 
 Artikel ini menjelaskan cara mengonversi PDF ke berbagai format gambar menggunakan C#. Ini mencakup topik berikut.
 
-_Format Gambar_: **TIFF**
-- [C# PDF ke TIFF](#csharp-pdf-to-tiff)
-- [C# Mengonversi PDF ke TIFF](#csharp-pdf-to-tiff)
-- [C# Mengonversi Halaman Tunggal atau Tertentu dari PDF ke TIFF](#csharp-pdf-to-tiff-pages)
-
-_Format Gambar_: **BMP**
-- [C# PDF ke BMP](#csharp-pdf-to-bmp)
-- [C# Mengonversi PDF ke BMP](#csharp-pdf-to-bmp)
-- [C# PDF ke Konverter BMP](#csharp-pdf-to-bmp)
-
-_Format Gambar_: **EMF**
-- [C# PDF ke EMF](#csharp-pdf-to-emf)
-- [C# Mengonversi PDF ke EMF](#csharp-pdf-to-emf)
-- [C# PDF ke Konverter EMF](#csharp-pdf-to-emf)
-
-_Format Gambar_: **JPG**
-- [C# PDF ke JPG](#csharp-pdf-to-jpg)
-- [C# Mengonversi PDF ke JPG](#csharp-pdf-to-jpg)
-- [C# PDF ke Konverter JPG](#csharp-pdf-to-jpg)
-
-_Format Gambar_: **PNG**
-- [C# PDF ke PNG](#csharp-pdf-to-png)
-- [C# Mengonversi PDF ke PNG](#csharp-pdf-to-png)
-- [C# PDF ke Konverter PNG](#csharp-pdf-to-png)
-
-_Format Gambar_: **GIF**
-- [C# PDF ke GIF](#csharp-pdf-to-gif)
-- [C# Mengonversi PDF ke GIF](#csharp-pdf-to-gif)
-- [C# PDF ke Konverter GIF](#csharp-pdf-to-gif)
-
-_Format Gambar_: **SVG**
-- [C# PDF ke SVG](#csharp-pdf-to-svg)
-- [C# Mengonversi PDF ke SVG](#csharp-pdf-to-svg)
-- [C# PDF ke Konverter SVG](#csharp-pdf-to-svg)
+- [Mengonversi PDF ke TIFF](#csharp-pdf-to-tiff)
+- [Mengonversi PDF ke BMP](#csharp-pdf-to-bmp)
+- [Mengonversi PDF ke EMF](#csharp-pdf-to-emf)
+- [Mengonversi PDF ke JPG](#csharp-pdf-to-jpg)
+- [Mengonversi PDF ke PNG](#csharp-pdf-to-png)
+- [Mengonversi PDF ke GIF](#csharp-pdf-to-gif)
+- [Mengonversi PDF ke SVG](#csharp-pdf-to-svg)
 
 ## C# Mengonversi PDF ke Gambar
 
@@ -134,7 +107,7 @@ Kelas TiffDevice (berbasis DocumentDevice) memungkinkan Anda mengonversi halaman
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke TIFF secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF konversi PDF ke TIFF dengan Aplikasi Gratis](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
@@ -143,7 +116,7 @@ Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke TIFF"](https
 
 Aspose.PDF for .NET menjelaskan cara mengonversi semua halaman dalam file PDF menjadi satu gambar TIFF:
 
-<a name="csharp-pdf-to-tiff"><strong>Langkah: Mengonversi PDF ke TIFF di C#</strong></a>
+<a name="csharp-pdf-to-tiff"><strong>Mengonversi PDF ke TIFF</strong></a>
 
 1. Buat objek dari kelas **Document**.
 2. Buat objek **TiffSettings** dan **TiffDevice**.
@@ -186,8 +159,6 @@ private static void ConvertPDFtoTIFF()
 ### Mengonversi Satu Halaman ke Gambar TIFF
 
 Aspose.PDF for .NET memungkinkan untuk mengonversi halaman tertentu dalam file PDF menjadi gambar TIFF, gunakan versi overload dari metode Process(..) yang mengambil nomor halaman sebagai argumen untuk konversi. Potongan kode berikut menunjukkan cara mengonversi halaman pertama dari PDF ke format TIFF.
-
-<a name="csharp-pdf-to-tiff-pages"><strong>Langkah: Mengonversi Halaman Tunggal atau Tertentu dari PDF ke TIFF di C#</strong></a>
 
 1. Buat objek dari kelas **Document**.
 2. Buat objek **TiffSettings** dan **TiffDevice**.
@@ -272,31 +243,21 @@ private static void ConvertPDFtoTiffBradleyBinarization()
 
 `ImageDevice` adalah nenek moyang untuk `BmpDevice`, `JpegDevice`, `GifDevice`, `PngDevice` dan `EmfDevice`.
 
-- Kelas [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Bitmap Image File">BMP</abbr>.
-- Kelas [EmfDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/emfdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Enhanced Meta File">EMF</abbr>.
-- Kelas [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) memungkinkan Anda mengonversi halaman PDF ke gambar JPEG.
-- Kelas [PngDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Portable Network Graphics">PNG</abbr>.
-- Kelas [GifDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/gifdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Graphics Interchange Format">GIF</abbr>.
+- Kelas [BmpDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/bmpdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Bitmap Image File">BMP</abbr>.
+- Kelas [EmfDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/emfdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Enhanced Meta File">EMF</abbr>.
+- Kelas [JpegDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/jpegdevice) memungkinkan Anda mengonversi halaman PDF ke gambar JPEG.
+- Kelas [PngDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/pngdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Portable Network Graphics">PNG</abbr>.
+- Kelas [GifDevice](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/gifdevice) memungkinkan Anda mengonversi halaman PDF ke gambar <abbr title="Graphics Interchange Format">GIF</abbr>.
 
 Mari kita lihat bagaimana cara mengonversi halaman PDF menjadi gambar.
 
-Kelas `BmpDevice` menyediakan metode bernama [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) yang memungkinkan Anda mengonversi halaman tertentu dari file PDF ke format gambar BMP. Kelas lainnya memiliki metode yang sama. Jadi, jika kita perlu mengonversi halaman PDF menjadi gambar, kita hanya perlu menginstansiasi kelas yang diperlukan.
+Kelas `BmpDevice` menyediakan metode bernama [Process](https://reference.aspose.com/pdf/id/net/aspose.pdf.devices/bmpdevice/methods/process) yang memungkinkan Anda mengonversi halaman tertentu dari file PDF ke format gambar BMP. Kelas lainnya memiliki metode yang sama. Jadi, jika kita perlu mengonversi halaman PDF menjadi gambar, kita hanya perlu menginstansiasi kelas yang diperlukan.
 
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
 <a name="csharp-pdf-to-jpg"></a>
 <a name="csharp-pdf-to-png"></a>
 <a name="csharp-pdf-to-gif"></a>
-    
-Langkah-langkah dan potongan kode berikut dalam C# menunjukkan kemungkinan ini
- 
- - [Mengonversi PDF ke BMP di C#](#csharp-pdf-to-image)
- - [Mengonversi PDF ke EMF di C#](#csharp-pdf-to-image)
- - [Mengonversi PDF ke JPG di C#](#csharp-pdf-to-image)
- - [Mengonversi PDF ke PNG di C#](#csharp-pdf-to-image)
- - [Mengonversi PDF ke GIF di C#](#csharp-pdf-to-image)
-
-<a name="csharp-pdf-to-image"><strong>Langkah: PDF ke Gambar (BMP, EMF, JPG, PNG, GIF) di C#</strong></a>
 
 1. Muat file PDF menggunakan kelas **Document**.
 2. Buat instance dari subclass **ImageDevice** yaitu:
@@ -354,32 +315,32 @@ private static void ConvertPDFtoImage(ImageDevice imageDevice,
 
 Sebagai contoh bagaimana aplikasi gratis kami bekerja, silakan periksa fitur berikut.
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Cara mengonversi PDF ke PNG menggunakan Aplikasi Gratis](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
 {{% /alert %}}
 
 ## Mengonversi PDF menggunakan kelas SaveOptions
 
-Bagian artikel ini menunjukkan cara mengonversi PDF ke <abbr title="Scalable Vector Graphics">SVG</abbr> menggunakan C# dan kelas SaveOptions.
+Bagian artikel ini menunjukkan kepada Anda cara mengonversi PDF ke <abbr title="Scalable Vector Graphics">SVG</abbr> menggunakan C# dan kelas SaveOptions.
 
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke SVG secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke SVG dengan Aplikasi Gratis](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 {{% /alert %}}
 
 **Scalable Vector Graphics (SVG)** adalah sekumpulan spesifikasi format file berbasis XML untuk grafik vektor dua dimensi, baik statis maupun dinamis (interaktif atau animasi). Spesifikasi SVG adalah standar terbuka yang telah dikembangkan oleh World Wide Web Consortium (W3C) sejak 1999.
 
-Gambar SVG dan perilakunya didefinisikan dalam file teks XML. Ini berarti bahwa mereka dapat dicari, diindeks, diskrip, dan jika diperlukan, dikompresi. Sebagai file XML, gambar SVG dapat dibuat dan diedit dengan editor teks apa pun, tetapi seringkali lebih nyaman untuk membuatnya dengan program menggambar seperti Inkscape.
+Gambar SVG dan perilakunya didefinisikan dalam file teks XML. Ini berarti bahwa mereka dapat dicari, diindeks, diprogram, dan jika diperlukan, dikompresi. Sebagai file XML, gambar SVG dapat dibuat dan diedit dengan editor teks apa pun, tetapi seringkali lebih nyaman untuk membuatnya dengan program menggambar seperti Inkscape.
 
-Aspose.PDF for .NET mendukung fitur untuk mengonversi gambar SVG ke format PDF dan juga menawarkan kemampuan untuk mengonversi file PDF ke format SVG. Untuk memenuhi kebutuhan ini, kelas [`SvgSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/svgsaveoptions/methods/index) telah diperkenalkan ke dalam namespace Aspose.PDF. Buat objek dari SvgSaveOptions dan berikan sebagai argumen kedua ke metode [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Aspose.PDF for .NET mendukung fitur untuk mengonversi gambar SVG ke format PDF dan juga menawarkan kemampuan untuk mengonversi file PDF ke format SVG. Untuk memenuhi kebutuhan ini, kelas [`SvgSaveOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/svgsaveoptions/methods/index) telah diperkenalkan ke dalam namespace Aspose.PDF. Buat objek dari SvgSaveOptions dan berikan sebagai argumen kedua ke metode [`Document.Save(..)`](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/methods/save/index).
 
 Potongan kode berikut menunjukkan langkah-langkah untuk mengonversi file PDF ke format SVG dengan .NET.
 
-<a name="csharp-pdf-to-svg"><strong>Langkah: Mengonversi PDF ke SVG di C#</strong></a>
+<a name="csharp-pdf-to-svg"><strong>Mengonversi PDF ke SVG</strong></a>
 
 1. Buat objek dari kelas **Document**.
 2. Buat objek **SvgSaveOptions** dengan pengaturan yang diperlukan.

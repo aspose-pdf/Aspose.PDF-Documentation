@@ -7,7 +7,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /fr/net/convert-pdf-to-powerpoint/
 lastmod: "2021-11-01"
-description: Aspose.PDF vous permet de convertir des PDF en format PPT (PowerPoint) en utilisant .NET. Une façon d'y parvenir est de convertir des PDF en PPTX avec des diapositives en tant qu'images.
+description: Aspose.PDF vous permet de convertir des PDF en format PPT (PowerPoint) en utilisant .NET. Une façon de le faire est de convertir des PDF en PPTX avec des diapositives en tant qu'images.
 lastmod: "2021-10-18"
 sitemap:
     changefreq: "monthly"
@@ -28,7 +28,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1174",
+    "wordcount": "964",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,8 +74,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-powerpoint/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
 
@@ -83,31 +83,25 @@ sitemap:
 
 Cet article explique comment **convertir PDF en PowerPoint en utilisant C#**. Il couvre ces sujets.
 
-_Format_: **PPTX**
-- [C# PDF en PPTX](#csharp-pdf-to-pptx)
-- [C# Convertir PDF en PPTX](#csharp-pdf-to-pptx)
-- [C# Comment convertir un fichier PDF en PPTX](#csharp-pdf-to-pptx)
-
-_Format_: **PowerPoint**
-- [C# PDF en PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# Convertir PDF en PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# Comment convertir un fichier PDF en PowerPoint](#csharp-pdf-to-powerpoint)
+- [Convertir PDF en PowerPoint](#csharp-pdf-to-powerpoint)
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Conversion C# PDF en PowerPoint et PPTX
 
+<a name="csharp-convert-pdf-to-powerpoint" id="csharp-convert-pdf-to-powerpoint"><strong>Convertir PDF en PowerPoint</strong></a>
+
 **Aspose.PDF for .NET** vous permet de suivre l'avancement de la conversion de PDF en PPTX.
 
 Nous avons une API nommée Aspose.Slides qui offre la fonctionnalité de créer ainsi que de manipuler des présentations PPT/PPTX. Cette API fournit également la fonctionnalité de convertir des fichiers PPT/PPTX en format PDF. Récemment, nous avons reçu des demandes de nombreux clients pour prendre en charge la capacité de transformation de PDF en format PPTX. À partir de la version Aspose.PDF for .NET 10.3.0, nous avons introduit une fonctionnalité pour transformer des documents PDF en format PPTX. Lors de cette conversion, les pages individuelles du fichier PDF sont converties en diapositives séparées dans le fichier PPTX.
 
-Lors de la conversion de PDF en <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>, le texte est rendu en tant que texte que vous pouvez sélectionner/met à jour. Veuillez noter que pour convertir des fichiers PDF en format PPTX, Aspose.PDF fournit une classe nommée [`PptxSaveOptions`](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pptxsaveoptions). Un objet de la classe PptxSaveOptions est passé comme deuxième argument à la [`Document.Save(..) méthode`](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/save). Le code suivant montre le processus de conversion des fichiers PDF en format PPTX.
+Lors de la conversion de PDF en <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>, le texte est rendu en tant que texte que vous pouvez sélectionner/mettre à jour. Veuillez noter que pour convertir des fichiers PDF en format PPTX, Aspose.PDF fournit une classe nommée [`PptxSaveOptions`](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pptxsaveoptions). Un objet de la classe PptxSaveOptions est passé comme deuxième argument à la méthode [`Document.Save(..) method`](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/save). Le code suivant montre le processus de conversion des fichiers PDF en format PPTX.
 
 ## Conversion simple PDF en PowerPoint en utilisant C# et Aspose.PDF .NET
 
 Pour convertir PDF en PPTX, Aspose.PDF for .NET conseille d'utiliser les étapes de code suivantes.
 
-<a name="csharp-pdf-to-powerpoint"><strong>Étapes : Convertir PDF en PowerPoint en C#</strong></a> | <a name="csharp-pdf-to-pptx"><strong>Étapes : Convertir PDF en PPTX en C#</strong></a>
+<a name="csharp-pdf-to-powerpoint"><strong>Convertir PDF en PowerPoint</strong></a>
 
 1. Créez une instance de la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 2. Créez une instance de la classe [PptxSaveOptions](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pptxsaveoptions).
@@ -137,9 +131,9 @@ private static void ConvertPDFToPPTX()
 {{% alert color="success" %}}
 **Essayez de convertir PDF en PowerPoint en ligne**
 
-Aspose.PDF for .NET vous présente une application gratuite en ligne ["PDF en PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
+Aspose.PDF for .NET vous présente une application gratuite en ligne ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
 
-[![Aspose.PDF Conversion PDF en PPTX avec l'application gratuite](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
+[![Aspose.PDF Conversion PDF en PPTX avec application gratuite](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
 
 Dans le cas où vous devez convertir un PDF consultable en PPTX sous forme d'images au lieu de texte sélectionnable, Aspose.PDF fournit une telle fonctionnalité via la classe [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pptxsaveoptions). Pour ce faire, définissez la propriété [SlidesAsImages](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) de la classe [PptxSaveOptios](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pptxsaveoptions) sur 'true' comme indiqué dans l'exemple de code suivant.
@@ -222,27 +216,3 @@ private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.Progress
     }
 }
 ```
-
-## Voir aussi 
-
-Cet article couvre également ces sujets. Les codes sont les mêmes que ci-dessus.
-
-_Format_: **PowerPoint**
-- [C# Code PDF en PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# API PDF en PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# PDF en PowerPoint par programmation](#csharp-pdf-to-powerpoint)
-- [C# Bibliothèque PDF en PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# Enregistrer PDF en tant que PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# Générer PowerPoint à partir de PDF](#csharp-pdf-to-powerpoint)
-- [C# Créer PowerPoint à partir de PDF](#csharp-pdf-to-powerpoint)
-- [C# Convertisseur PDF en PowerPoint](#csharp-pdf-to-powerpoint)
-
-_Format_: **PPTX**
-- [C# Code PDF en PPTX](#csharp-pdf-to-pptx)
-- [C# API PDF en PPTX](#csharp-pdf-to-pptx)
-- [C# PDF en PPTX par programmation](#csharp-pdf-to-pptx)
-- [C# Bibliothèque PDF en PPTX](#csharp-pdf-to-pptx)
-- [C# Enregistrer PDF en tant que PPTX](#csharp-pdf-to-pptx)
-- [C# Générer PPTX à partir de PDF](#csharp-pdf-to-pptx)
-- [C# Créer PPTX à partir de PDF](#csharp-pdf-to-pptx)
-- [C# Convertisseur PDF en PPTX](#csharp-pdf-to-pptx)

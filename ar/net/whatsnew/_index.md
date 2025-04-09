@@ -18,7 +18,7 @@ lastmod: "2025-01-31"
     "@type": "TechArticle",
     "headline": "Whats new",
     "alternativeHeadline": "Discover the latest enhancements in Aspose.PDF for .NET",
-    "abstract": "اكتشف أحدث التحسينات في Aspose.PDF for .NET، بما في ذلك تقديم خوارزمية توقيع الرقمية باستخدام منحنيات إهليلجية (ECDSA) لتوقيع الوثائق والتحقق منها بشكل قوي، بالإضافة إلى دعم عدة منحنيات إهليلجية. بالإضافة إلى ذلك، تتيح الميزة الجديدة قص الصور عند إدراجها في ملفات PDF وتوليد تقارير الأعطال لتحسين معالجة الأخطاء. تعمل هذه التحديثات على تبسيط إدارة PDF وتعزيز الأمان في سير العمل الوثائقي.",
+    "abstract": "اكتشف أحدث التحسينات في Aspose.PDF for .NET، بما في ذلك تقديم خوارزمية توقيع المستندات الرقمية باستخدام منحنيات إهليلجية (ECDSA) لتوقيع المستندات والتحقق منها بشكل قوي، بالإضافة إلى دعم عدة منحنيات إهليلجية. بالإضافة إلى ذلك، تتيح الميزة الجديدة قص الصور عند إدراجها في ملفات PDF وتوليد تقارير الأعطال لتحسين معالجة الأخطاء. تعمل هذه التحديثات على تبسيط إدارة PDF وتعزيز الأمان في سير العمل المستندات.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ lastmod: "2025-01-31"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "8022",
+    "wordcount": "10748",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,29 +73,44 @@ lastmod: "2025-01-31"
         "@type": "WebPage",
         "@id": "/net/whatsnew/"
     },
-    "dateModified": "2024-12-04",
-    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة ولكن أيضًا التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+    "dateModified": "2025-04-04",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسريعة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
+
+## ما الجديد في Aspose.PDF 25.3
+
+**أهم التغييرات**
+
+في Aspose.PDF 25.3 أضفنا:
+* 19 [منتج من High Code Plugin](https://products.aspose.net/pdf/).
+* [كشف التوقيعات الرقمية المهددة](https://docs.aspose.com/pdf/ar/net/extract-image-and-signature-information/#checking-signatures-for-compromise).
+* [آثار ترقيم Bates](https://docs.aspose.com/pdf/ar/net/artifacts/#adding-bates-numbering-artifact).
+* [إعدادات الموضع](https://docs.aspose.com/pdf/ar/net/create-tagged-pdf/#adjust-position-of-text-structure) لإنشاء العناصر المعنونة.
+* القدرة على التحقق من [حدود الأشكال الرسومية](https://docs.aspose.com/pdf/ar/net/aspose-pdf-drawing-graph-shapes-bounds-check/) عند إضافتها إلى صفحة PDF.
+> يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام على صفحة [ملاحظات إصدار Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+
+**تحسينات ملحوظة أخرى**
+
+لقد قمنا بتحسين كل من الأداء واستهلاك الذاكرة في تحويل ملفات PDF التي تحتوي على صور كثيرة. سرعة المعالجة الآن أسرع بمقدار الضعف، وتم تقليل استهلاك الذاكرة بنسبة 10% في السيناريوهات المختبرة.
 
 ## ما الجديد في Aspose.PDF 25.2
 
 **أهم التغييرات**
 
 في Aspose.PDF 25.2 أضفنا:
-* دعم تحويل [PDF إلى PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/) القياسي.
-* [خيار](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) لتجنب استدعاء مفوض CustomSignHash مرتين أثناء التوقيع.
-* طريقة جديدة `GetSignatureNames()` للحصول على معلومات حول [التوقيعات الرقمية](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) لملف PDF.
-* إمكانية إنشاء [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) مع عدة تعليقات توضيحية للعنصر.
-> [!NOTE]
-> يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام في صفحة [ملاحظات إصدار Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) .
+* دعم تحويل [PDF إلى معيار PDF/X-4](https://docs.aspose.com/pdf/ar/net/convert-pdf-to-pdfx/).
+* [خيار](https://docs.aspose.com/pdf/ar/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) لتجنب استدعاء delegate CustomSignHash مرتين أثناء التوقيع.
+* طريقة جديدة `GetSignatureNames()` للحصول على معلومات حول [التوقيعات الرقمية](https://docs.aspose.com/pdf/ar/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) لملف PDF.
+* إمكانية إنشاء [TextBoxField](https://docs.aspose.com/pdf/ar/net/create-form/#adding-radiobuttonfield) مع عدة تعليقات توضيحية للعنصر.
+> يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام على صفحة [ملاحظات إصدار Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
 **تحسينات ملحوظة أخرى**
 
-* تحسين ضغط الصور دون فقدان الجودة عند [تحسين PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images). تم تقليل حجم الوثيقة المضغوطة.
-* تحسين طريقة [إصلاح](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/repair/) الوثيقة. يمكنها الآن التحقق وإصلاح القيم في مصفوفة Annotation.Rect.
-* تحديث إصدار الاعتماد على System.Text.Json لتجنب الثغرات المحتملة CVE-2024-43485.
-* تحسين اكتشاف هجمات توقيع PDF لمنع الحصول على نتائج إيجابية كاذبة.
+* تم تحسين ضغط الصور دون فقدان الجودة في [تحسين PDF](https://docs.aspose.com/pdf/ar/net/optimize-pdf/#shrinking-or-compressing-all-images). تم تقليل حجم المستند المضغوط.
+* تم تحسين [طريقة `Repair` للمستند](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/repair/). يمكنها الآن التحقق وإصلاح القيم في مصفوفة Annotation.Rect.
+* تم تحديث إصدار الاعتماد على System.Text.Json لتجنب الثغرات المحتملة CVE-2024-43485.
+* تم تحسين كشف هجمات توقيع PDF لمنع الحصول على نتائج إيجابية كاذبة.
 * تم توفير واجهة برمجة تطبيقات عامة لتعديل قاموس الموارد:
 
 ```csharp
@@ -142,11 +157,12 @@ private static void AddingNewExtGState()
 * إمكانية التحقق من توقيع PDF باستخدام خادم سلطة الشهادة (CA).
 * التحقق من توقيع PDF عبر الأنظمة الأساسية باستخدام خوارزميات تجزئة SHA-3.
 
-يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام في صفحة [ملاحظات إصدار Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) .
+يمكن العثور على معلومات مفصلة حول التغييرات وعينات الاستخدام على صفحة [ملاحظات إصدار Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
+
 
 ## ما الجديد في Aspose.PDF 24.12
 
-كانت القدرة على تمرير المسار إلى ملف تعريف ICC الخارجي لتحويل PDF/X و PDF/A موجودة بالفعل في المكتبة لعدة سنوات، وتم تفعيلها بواسطة خاصية PdfFormatConversionOptions.IccProfileFileName. الآن من الممكن أيضًا تمرير بيانات لملء خصائص OutputIntent باستخدام كائن من فئة OutputIntent.
+لقد كانت القدرة على تمرير المسار إلى ملف تعريف ICC الخارجي لتحويل PDF/X و PDF/A موجودة في المكتبة لعدة سنوات، وتم تفعيلها بواسطة خاصية PdfFormatConversionOptions.IccProfileFileName. الآن من الممكن أيضًا تمرير بيانات لملء خصائص OutputIntent باستخدام كائن من فئة OutputIntent.
 
 تظهر الشيفرة التالية كيفية تحويل مستند التعليق إلى PDF/X-1 باستخدام ملف تعريف ICC FOGRA39:
 ```csharp
@@ -203,9 +219,9 @@ private static void PdfToPngWithAnalyzingFonts()
 }
 ```
 
-بدءًا من Aspose.PDF 24.12، يمكن تطبيق ضبط تلقائي لحجم الخط عند إضافة ختم نصي إلى ملف PDF التعليقي.
+بدءًا من Aspose.PDF 24.12، يمكن تطبيق ضبط تلقائي لحجم الخط عند إضافة ختم نص إلى ملف PDF التعليقي.
 
-توضح الشيفرة التالية كيفية إضافة ختم نصي إلى ملف PDF التعليقي وضبط حجم الخط تلقائيًا ليتناسب مع مستطيل الختم.
+توضح الشيفرة التالية كيفية إضافة ختم نص تعليقي إلى ملف PDF التعليقي وضبط حجم الخط تلقائيًا ليتناسب مع مستطيل الختم.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStamp()
@@ -235,7 +251,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
 }
 ```
 
-توضح الشيفرة التالية كيفية إضافة ختم نصي إلى ملف PDF التعليقي وضبط حجم الخط تلقائيًا ليتناسب مع حجم الصفحة.
+توضح الشيفرة التالية كيفية إضافة ختم نص تعليقي إلى ملف PDF التعليقي وضبط حجم الخط تلقائيًا ليتناسب مع حجم الصفحة.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStampToFitPage()
@@ -263,11 +279,12 @@ private static void AutoSetTheFontSizeOfTextStampToFitPage()
 }
 ```
 
+
 ## ما الجديد في Aspose.PDF 24.11
 
-تمت إضافة طريقة توسيع `PageCollection` لتحديث رقم الصفحة وتاريخ رأس/تذييل الوثيقة عند إضافة أو إدراج صفحات جديدة. يجب تخزين إعدادات رقم الصفحة وتنسيق التاريخ في الوثيقة الأصلية وفقًا لمواصفات PDF، كما هو مطبق بواسطة Adobe Acrobat.
+تمت إضافة طريقة توسيع `PageCollection` لتحديث رقم الصفحة وتاريخ رأس/تذييل الصفحات عند إضافة أو إدراج صفحات جديدة. يجب تخزين إعدادات رقم الصفحة وتنسيق التاريخ في المستند الأصلي وفقًا لمواصفات PDF، كما هو مطبق بواسطة Adobe Acrobat.
 
-توضح الشيفرة التالية كيفية تحديث الترقيم في الوثيقة:
+توضح الشيفرة التالية كيفية تحديث الترقيم في المستند:
 ```csharp
 private static void UpdatePagination()
 {
@@ -290,11 +307,11 @@ private static void UpdatePagination()
 }
 ```
 
-منذ الإصدار 24.11، أضفنا القدرة على اختيار خوارزمية تجزئة لـ Pkcs7Detached. الافتراضي هو SHA-256. بالنسبة للتوقيعات الرقمية ECDSA، تعتمد خوارزمية التجزئة الافتراضية على طول المفتاح.
+منذ الإصدار 24.11، أضفنا القدرة على اختيار خوارزمية التجزئة لـ Pkcs7Detached. الافتراضي هو SHA-256. بالنسبة لتوقيعات ECDSA الرقمية، تعتمد خوارزمية التجزئة الافتراضية على طول المفتاح.
 
-يدعم ECDSA SHA-1 وSHA-256 وSHA-384 وSHA-512 وSHA3-256 وSHA3-384 وSHA3-512. تدعم خوارزميات SHA3-256 وSHA3-384 وSHA3-512 فقط لـ .NET 8 والإصدارات الأحدث. لمزيد من التفاصيل حول الأنظمة الأساسية المدعومة لـ SHA-3، يرجى الرجوع إلى [التوثيق](https://learn.microsoft.com/en-us/dotnet/standard/security/cross-platform-cryptography#sha-3).
+يدعم ECDSA SHA-1 و SHA-256 و SHA-384 و SHA-512 و SHA3-256 و SHA3-384 و SHA3-512. تدعم خوارزميات SHA3-256 و SHA3-384 و SHA3-512 فقط لـ .NET 8 والإصدارات الأحدث. للحصول على تفاصيل حول المنصات المدعومة لـ SHA-3، يرجى الرجوع إلى [التوثيق](https://learn.microsoft.com/en-us/dotnet/standard/security/cross-platform-cryptography#sha-3).
 
-يدعم RSA SHA-1 وSHA-256 وSHA-384 وSHA-512.
+يدعم RSA SHA-1 و SHA-256 و SHA-384 و SHA-512.
 
 يدعم DSA فقط SHA-1. يرجى ملاحظة أن SHA-1 قديم ولا يتوافق مع معايير الأمان الحالية.
 
@@ -322,7 +339,7 @@ private static void SignWithManualDigestHashAlgorithm(string cert, string pass)
 }
 ```
 
-تمت إضافة خاصية جديدة `FontEncodingStrategy` إلى فئة `HtmlSaveOptions`. توصي مواصفات PDF باستخدام جدول `ToUnicode` لاستخراج محتوى النص من ملفات PDF. ومع ذلك، يمكن أن يؤدي استخدام جدول CMap الخاص بالخط إلى إنتاج نتائج أفضل لبعض أنواع الوثائق. بدءًا من الإصدار 24.11، يمكنك اختيار الجدول الذي سيتم استخدامه لفك التشفير. بشكل افتراضي، يتم استخدام جدول `ToUnicode`.
+تمت إضافة خاصية جديدة `FontEncodingStrategy` إلى فئة `HtmlSaveOptions`. توصي مواصفات PDF باستخدام جدول `ToUnicode` لاستخراج محتوى النص من ملفات PDF. ومع ذلك، يمكن أن يؤدي استخدام جدول CMap للخط إلى نتائج أفضل لبعض أنواع المستندات. بدءًا من الإصدار 24.11، يمكنك اختيار الجدول الذي تريد استخدامه لفك التشفير. بشكل افتراضي، يتم استخدام جدول `ToUnicode`.
 
 توضح العينة التالية الخيار الجديد باستخدام:
 ```csharp
@@ -346,9 +363,10 @@ private static void ConvertPdfToHtmlUsingCMap()
 }
 ```
 
+
 ## ما الجديد في Aspose.PDF 24.10
 
-تعد خوارزمية توقيع الرقمية باستخدام منحنيات إهليلجية (ECDSA) خوارزمية تشفير حديثة معروفة بتوفير أمان قوي مع أحجام مفاتيح أصغر مقارنة بالخوارزميات التقليدية. منذ الإصدار 24.10، أصبح من الممكن توقيع مستندات PDF باستخدام ECDSA، بالإضافة إلى التحقق من توقيعات ECDSA. المنحنيات الإهليلجية التالية مدعومة لإنشاء والتحقق من التوقيعات الرقمية:
+تعتبر خوارزمية توقيع المستندات الرقمية باستخدام منحنيات إهليلجية (ECDSA) خوارزمية تشفير حديثة معروفة بتوفير أمان قوي مع أحجام مفاتيح أصغر مقارنة بالخوارزميات التقليدية. منذ الإصدار 24.10، أصبح من الممكن توقيع مستندات PDF باستخدام ECDSA، بالإضافة إلى التحقق من توقيعات ECDSA. المنحنيات الإهليلجية التالية مدعومة لإنشاء والتحقق من التوقيعات الرقمية:
 * P-256 (secp256r1).
 * P-384 (secp384r1).
 * P-521 (secp521r1).
@@ -356,7 +374,7 @@ private static void ConvertPdfToHtmlUsingCMap()
 * brainpoolP384r1.
 * brainpoolP512r1.
 
-تستخدم خوارزمية تجزئة SHA-256 لتوليد التوقيع. يمكن التحقق من توقيعات ECDSA باستخدام خوارزميات التجزئة التالية: SHA-256 وSHA-384 وSHA-512 وSHA3-256 وSHA3-384 وSHA3-512.
+تستخدم خوارزمية تجزئة SHA-256 لتوليد التوقيع. يمكن التحقق من توقيعات ECDSA باستخدام خوارزميات التجزئة التالية: SHA-256 و SHA-384 و SHA-512 و SHA3-256 و SHA3-384 و SHA3-512.
 
 يمكنك استخدام الشيفرة المعتادة لتوقيع المستندات باستخدام ECDSA والتحقق من التوقيعات:
  
@@ -408,7 +426,7 @@ private static void Verify()
 }
 ```
 
-في بعض الأحيان، من الضروري قص صورة قبل إدراجها في PDF. لقد أضفنا إصدارًا مفرطًا من طريقة `AddImage()` لدعم إضافة الصور المقصوصة:
+في بعض الأحيان، من الضروري قص صورة قبل إدراجها في PDF. لقد أضفنا نسخة مفرطة من طريقة `AddImage()` لدعم إضافة الصور المقصوصة:
 
 ```cs
 private static void AddCroppedImageToPDF()
@@ -446,9 +464,9 @@ private static void AddCroppedImageToPDF()
 
 ## ما الجديد في Aspose.PDF 24.9
 
-منذ الإصدار 24.9، أصبح من الممكن توليد تقرير عن الأعطال عندما تلقي المكتبة استثناء. يتضمن تقرير الأعطال معلومات حول نوع الاستثناء، عنوان التطبيق، إصدار Aspose.PDF، إصدار نظام التشغيل، رسالة الخطأ، وأثر المكدس.
+منذ الإصدار 24.9، أصبح من الممكن توليد تقرير أعطال عندما تلقي المكتبة استثناء. يتضمن تقرير الأعطال معلومات حول نوع الاستثناء، عنوان التطبيق، إصدار Aspose.PDF، إصدار نظام التشغيل، رسالة الخطأ، وأثر المكدس.
 
-توضح الشيفرة التالية سيناريو شائع لتوليد تقرير عن الأعطال:
+توضح الشيفرة التالية سيناريو شائع لتوليد تقرير أعطال:
 
 ```cs
 private static void GenerateCrashReportExample()
@@ -469,7 +487,7 @@ private static void GenerateCrashReportExample()
 }
 ```
 
-استخراج عناصر طبقة مستند PDF وحفظها في تدفق PDF جديد متاح الآن. في مستندات PDF، تُستخدم الطبقات (المعروفة أيضًا بمجموعات المحتوى الاختيارية أو OCGs) لأغراض مختلفة، بشكل أساسي لإدارة والتحكم في رؤية المحتوى داخل الوثيقة. هذه الوظيفة مفيدة بشكل خاص في التصميم والهندسة والنشر. على سبيل المثال: جوانب المخطط، مكونات الرسم البياني المعقدة، إصدارات اللغة من نفس المحتوى.
+استخراج عناصر طبقة مستند PDF وحفظها في تدفق PDF جديد متاح الآن. في مستندات PDF، تُستخدم الطبقات (المعروفة أيضًا باسم مجموعات المحتوى الاختيارية أو OCGs) لأغراض مختلفة، بشكل أساسي لإدارة والتحكم في رؤية المحتوى داخل المستند. هذه الوظيفة مفيدة بشكل خاص في التصميم والهندسة والنشر. على سبيل المثال: جوانب المخطط، مكونات الرسم البياني المعقدة، إصدارات لغوية من نفس المحتوى.
 
 ```cs
 private static void ExtractPdfLayer()
@@ -492,7 +510,7 @@ private static void ExtractPdfLayer()
 }
 ```
 
-تمت إضافة فئة `GraphicalPdfComparer` للمقارنة الرسومية لمستندات وصفحات PDF. تتعامل المقارنة الرسومية مع صور صفحات الوثيقة. تعيد النتيجة ككائن `ImagesDifference` أو كوثيقة PDF تحتوي على صور مدمجة من الأصل والاختلافات. تعتبر المقارنة الرسومية الأكثر فائدة للمستندات التي تحتوي على اختلافات طفيفة في النص أو المحتوى الرسومي.
+تمت إضافة فئة `GraphicalPdfComparer` للمقارنة الرسومية لمستندات وصفحات PDF. تتعامل المقارنة الرسومية مع صور صفحات المستند. تعيد النتيجة ككائن `ImagesDifference` أو كمستند PDF يحتوي على الصور المدمجة من الأصل والاختلافات. تعتبر المقارنة الرسومية مفيدة جدًا للمستندات التي تحتوي على اختلافات طفيفة في النص أو المحتوى الرسومي.
 
 توضح الشيفرة التالية المقارنة الرسومية بين مستندين PDF وتخزين صورة بالاختلافات في مستند PDF الناتج:
 
@@ -521,7 +539,7 @@ private static void ComparePDFWithCompareDocumentsToPdfMethod()
 }
 ```
 
-تم تنفيذ واجهة برمجة التطبيقات لدمج FileFormat.HEIC وAspose.PDF. HEIC (ترميز الصورة عالي الكفاءة) هو تنسيق ملف صورة حديث قدمته Apple مع iOS 11 في عام 2017 كتنسيق الصورة الافتراضي لأجهزة iPhone وiPad.
+تم تنفيذ واجهة برمجة التطبيقات لدمج FileFormat.HEIC و Aspose.PDF. HEIC (ترميز الصور عالي الكفاءة) هو تنسيق ملف صورة حديث تم تقديمه بواسطة Apple مع iOS 11 في عام 2017 كتنسيق الصورة الافتراضي لأجهزة iPhone و iPad.
 
 لتحويل صور HEIC إلى PDF، يجب على المستخدم إضافة المرجع إلى حزمة NuGet `FileFormat.HEIC` واستخدام الشيفرة التالية:
 
@@ -561,13 +579,14 @@ private static void ConvertHEICtoPDF()
 }
 ```
 
+
 ## ما الجديد في Aspose.PDF 24.8
 
 تحويل مستندات PDF إلى تنسيق PDF/A-4
 
 منذ الإصدار 24.8، أصبح من الممكن تحويل مستندات PDF إلى PDF/A-4. تم نشر الجزء 4 من المعيار، المستند إلى PDF 2.0، في أواخر عام 2020.
 
-توضح الشيفرة التالية كيفية تحويل مستند إلى تنسيق PDF/A-4 عندما يكون مستند الإدخال إصدار PDF أقدم من 2.0.
+توضح الشيفرة التالية كيفية تحويل مستند إلى تنسيق PDF/A-4 عندما يكون المستند المدخل إصدار PDF سابق للإصدار 2.0.
 
 ```cs
 private static void ConvertPdfToPdfA4()
@@ -590,7 +609,7 @@ private static void ConvertPdfToPdfA4()
 }
 ```
 
-منذ 24.8 قدمنا طريقة لتسوية المحتوى الشفاف في مستندات PDF:
+منذ 24.8، قدمنا طريقة لتسوية المحتوى الشفاف في مستندات PDF:
 
 ```cs
 private static void FlattenTransparency()
@@ -608,6 +627,7 @@ private static void FlattenTransparency()
     }
 }
 ```
+
 
 ## ما الجديد في Aspose.PDF 24.7
 
@@ -700,7 +720,7 @@ plugin.Process(opt);
 
 منذ إصدار 24.6، كجزء من تحرير PDF المعنونة، تمت إضافة طرق على **Aspose.Pdf.LogicalStructure.Element**:
 
-- علامة (إضافة علامات إلى مشغلين محددين مثل الصور والنصوص والروابط)
+- Tag (إضافة علامات إلى مشغلات محددة مثل الصور والنصوص والروابط)
 - InsertChild
 - RemoveChild
 - ClearChilds
@@ -787,7 +807,7 @@ private static void SignWithBase64Certificate(string pfxFilePath, string passwor
 
 ### قفل طبقة PDF
 
-منذ إصدار 24.5، يمكنك فتح PDF، قفل طبقة معينة في الصفحة الأولى، وحفظ الوثيقة مع التغييرات. تمت إضافة طريقتين جديدتين وخصيصة واحدة:
+منذ إصدار 24.5، يمكنك فتح PDF، وقفل طبقة معينة في الصفحة الأولى، وحفظ المستند مع التغييرات. تمت إضافة طريقتين جديدتين وواحدة من الخصائص:
 
 Layer.Lock(); - يقفل الطبقة.
 Layer.Unlock(); - يفتح الطبقة.
@@ -844,7 +864,7 @@ private static void ExtractPdfLayer()
 
 ### تسوية PDF متعدد الطبقات
 
-تفتح مكتبة Aspose.PDF for .NET PDF، وتقوم بالتكرار عبر كل طبقة في الصفحة الأولى، وتسوي كل طبقة، مما يجعلها دائمة على الصفحة.
+تفتح مكتبة Aspose.PDF for .NET PDF، وتقوم بالتكرار عبر كل طبقة في الصفحة الأولى، وتقوم بتسوية كل طبقة، مما يجعلها دائمة على الصفحة.
 
 ```cs
 private static void FlattenPdfLayers()
@@ -874,7 +894,7 @@ private static void FlattenPdfLayers()
 
 ### دمج جميع الطبقات داخل PDF في واحدة
 
-تسمح مكتبة Aspose.PDF for .NET بدمج جميع طبقات PDF أو طبقة معينة في الصفحة الأولى في طبقة جديدة وحفظ الوثيقة المحدثة.
+تسمح مكتبة Aspose.PDF for .NET بدمج جميع طبقات PDF أو طبقة معينة في الصفحة الأولى إلى طبقة جديدة وحفظ المستند المحدث.
 
 تمت إضافة طريقتين لدمج جميع الطبقات في الصفحة:
 
@@ -1023,6 +1043,7 @@ opt.Name = "Signature1";
 plugin.Process(opt);
 ```
 
+
 ## ما الجديد في Aspose.PDF 24.3
 
 من هذا الإصدار تمت إضافة PDF/A Converter لـ .NET plugin:
@@ -1046,7 +1067,7 @@ var plugin = new PdfAConverter();
 plugin.Process(options);
 ```
 
-- تنفيذ بحث عبر قائمة العبارات في TextFragmentAbsorber:
+- تنفيذ بحث عبر قائمة من العبارات في TextFragmentAbsorber:
 
 ```cs
 private static void SearchMultipleRegex()
@@ -1077,7 +1098,7 @@ private static void SearchMultipleRegex()
 }
 ```
 
-منذ 24.3 أصبح من الممكن إضافة حقل توقيع فارغ على كل صفحة إلى ملف PDF/A
+منذ 24.3، أصبح من الممكن إضافة حقل توقيع فارغ على كل صفحة إلى ملف PDF/A
 
 ```cs
 private static void AddEmptySignatureFieldOnEveryPage()
@@ -1123,9 +1144,9 @@ private static void AddEmptySignatureFieldOnEveryPage()
 
 ## ما الجديد في Aspose.PDF 24.2
 
-منذ 24.2 أصبح من الممكن الحصول على بيانات المتجه من ملف PDF
+منذ 24.2، أصبح من الممكن الحصول على بيانات المتجه من ملف PDF
 
-تم تنفيذ GraphicsAbsorber للحصول على بيانات المتجه من الوثائق:
+تم تنفيذ GraphicsAbsorber للحصول على بيانات المتجه من المستندات:
 
 ```cs
 private static void UsingGraphicsAbsorber()
@@ -1145,7 +1166,7 @@ private static void UsingGraphicsAbsorber()
             // Use the `Visit` method to extract graphics from the page
             graphicsAbsorber.Visit(page);
 
-            // Step 5: Display information about the extracted elements
+            // Display information about the extracted elements
             foreach (var element in graphicsAbsorber.Elements)
             {
                 Console.WriteLine($"Page Number: {element.SourcePage.Number}");
@@ -1159,7 +1180,7 @@ private static void UsingGraphicsAbsorber()
 
 ## ما الجديد في Aspose.PDF 24.1
 
-منذ إصدار 24.1 أصبح من الممكن استيراد التعليقات التوضيحية بتنسيق FDF إلى PDF:
+منذ إصدار 24.1، أصبح من الممكن استيراد تعليقات بتنسيق FDF إلى PDF:
 
 ```cs
 private static void ImportFDFByForm()
@@ -1180,9 +1201,9 @@ private static void ImportFDFByForm()
 }
 ```
 
-أيضًا، يدعم الوصول إلى قاموس الصفحة أو فهرس الوثيقة.
+أيضًا، يدعم الوصول إلى قاموس الصفحة أو كتالوج المستند.
 
-إليك أمثلة على الشيفرة لـ DictionaryEditor:
+إليك أمثلة من الشيفرة لـ DictionaryEditor:
 
 - إضافة قيم جديدة
 
@@ -1627,6 +1648,7 @@ private class RowSpanWorker
 }
 ```
 
+
 ## ما الجديد في Aspose.PDF 23.10
 
 تقدم التحديث الحالي ثلاث نسخ من إزالة العلامات من ملفات PDF المعنونة.
@@ -1662,7 +1684,7 @@ private static void RemoveStructElement()
 }
 ```
 
-- إزالة جميع عناصر العلامات من الوثيقة، ولكن الاحتفاظ بعناصر الهيكل:
+- إزالة جميع علامات العناصر المميزة من المستند، ولكن الاحتفاظ بعناصر الهيكل:
 
 ```cs
 private static void RemoveMarkedElementsTags()
@@ -1698,7 +1720,7 @@ private static void RemoveMarkedElementsTags()
 }
 ```
 
-- إزالة العلامات بالكامل:
+- إزالة العلامات تمامًا:
 
 ```cs
 private static void RemoveTags()
@@ -1743,9 +1765,9 @@ private static void DisplayCharacterHeight()
 }
 ```
 
-لاحظ أن القياس يعتمد على الخط المضمن في الوثيقة. إذا كانت أي معلومات عن بُعد مفقودة، فإن هذه الطريقة تعيد 0.
+لاحظ أن القياس يعتمد على الخط المضمن في المستند. إذا كانت أي معلومات عن بُعد مفقودة، فإن هذه الطريقة تعيد 0.
 
-أيضًا، يوفر هذا الإصدار توقيع PDF باستخدام HASH الموقع:
+أيضًا، يوفر هذا الإصدار إمكانية توقيع PDF باستخدام HASH الموقع:
 
 ```cs
 private static void SignPdfUsingSignedHash(string certP12, string pfxPassword)
@@ -1793,7 +1815,7 @@ private static void SignPdfUsingSignedHash(string certP12, string pfxPassword)
 }
 ```
 
-ميزة جديدة أخرى هي إعدادات طباعة مربع الحوار لتكبير الصفحة:
+ميزة جديدة أخرى هي إعدادات حجم الصفحة في مربع حوار الطباعة:
 
 ```cs
 private static void SetPrintScaling()
@@ -1844,9 +1866,9 @@ private static void RemoveChildAnnotationFromFillableField()
 
 ## ما الجديد في Aspose.PDF 23.8
 
-منذ 23.8 دعم إضافة اكتشاف التحديثات التزايدية.
+منذ 23.8 دعم إضافة كشف التحديثات التدريجية.
 
-تمت إضافة وظيفة لاكتشاف التحديثات التزايدية في مستند PDF. تعيد هذه الوظيفة 'true' إذا تم حفظ مستند مع تحديثات تزايدية؛ خلاف ذلك، تعيد 'false'.
+تمت إضافة وظيفة لكشف التحديثات التدريجية في مستند PDF. تعيد هذه الوظيفة 'true' إذا تم حفظ المستند مع تحديثات تدريجية؛ وإلا، تعيد 'false'.
 
 ```cs
 private static bool HasIncrementalUpdate()
@@ -1937,7 +1959,7 @@ private static void GetAndSetValueOfMultivalueCheckboxField()
 
 ## ما الجديد في Aspose.PDF 23.7
 
-من Aspose.PDF 23.7 دعم إضافة استخراج الشكل:
+من Aspose.PDF 23.7 دعم إضافة استخراج الأشكال:
 
 ```cs
 private static void CopyShape()
@@ -1966,7 +1988,7 @@ private static void CopyShape()
 }
 ```
 
-كما يدعم القدرة على اكتشاف Overflow عند إضافة نص:
+كما يدعم القدرة على كشف Overflow عند إضافة نص:
 
 ```cs
 private static void FitTextIntoRectangle()
@@ -2020,7 +2042,7 @@ private static void FitTextIntoRectangle()
 - Aspose PdfOrganizer Compress API
 
 تحديث Aspose.PdfForm 
-- إضافة ميزة "تصدير القيم من الحقول في الوثيقة إلى ملف CSV"
+- إضافة ميزة "تصدير القيم من الحقول في المستند إلى ملف CSV"
 - إضافة القدرة على تعيين الخصائص لحقول منفصلة
 
 كما يدعم إضافة القدرة على تعيين عنوان HTML، صفحة Epub:
@@ -2110,7 +2132,7 @@ private static void AddRedactionAnnotationFontSize()
 
 ## ما الجديد في Aspose.PDF 23.3
 
-قدمت النسخة 23.3 دعمًا للحفاظ على نسب الصورة والدقة أثناء الإدراج على الصفحة. يمكن استخدام طريقتين لحل هذه المشكلة:
+قدمت النسخة 23.3 دعم الحفاظ على نسب الصورة والدقة أثناء الإدراج على الصفحة. يمكن استخدام طريقتين لحل هذه المشكلة:
 
 ```cs
 private static void InsertImageWithNativeResolutionAsTable()
@@ -2177,6 +2199,7 @@ private static void InsertImageWithNativeResolutionAsParagraph()
 
 سيتم وضع الصورة بحجم مقاس ومعدل دقة أصلي. يمكنك تعيين خصائص FixedWidth أو FixedHeight بالاشتراك مع IsApplyResolution.
 
+
 ## ما الجديد في Aspose.PDF 23.1.1
 
 من Aspose.PDF 23.1.1 دعم إضافة المكونات الإضافية التالية:
@@ -2191,10 +2214,10 @@ private static void InsertImageWithNativeResolutionAsParagraph()
 علامات الطابعة هي رموز رسومية أو نصوص تُضاف إلى صفحة لمساعدة موظفي الإنتاج في تحديد مكونات وظيفة متعددة الألواح والحفاظ على إنتاج متسق أثناء الإنتاج. تشمل الأمثلة الشائعة المستخدمة في صناعة الطباعة:
 
 - أهداف التسجيل لمحاذاة الألواح
-- درجات الرمادي وأشرطة الألوان لقياس الألوان وكثافات الحبر
-- علامات القطع التي توضح مكان تقليم الوسيط الناتج
+- تدرجات الرمادي وأشرطة الألوان لقياس الألوان وكثافات الحبر
+- علامات القطع التي تظهر أين يجب تقليم الوسيط الناتج
 
-سنظهر مثالًا على الخيار مع أشرطة الألوان لقياس الألوان وكثافات الحبر. هناك فئة مجردة أساسية PrinterMarkAnnotation ومن ثم فئة فرعية ColorBarAnnotation - التي تنفذ بالفعل هذه الشرائط. دعونا نتحقق من المثال:
+سنظهر مثالًا على الخيار مع أشرطة الألوان لقياس الألوان وكثافات الحبر. هناك فئة أساسية مجردة PrinterMarkAnnotation ومن ثم فئة فرعية ColorBarAnnotation - التي تنفذ بالفعل هذه الشرائط. دعونا نتحقق من المثال:
 
 ```cs
 private static void AddPrinterMarkAnnotation()
@@ -2269,7 +2292,7 @@ private static void PdfToDicom()
 
 ## ما الجديد في Aspose.PDF 22.09
 
-منذ 22.09 دعم إضافة خاصية لتعديل ترتيب العناوين الموضوعية (E=، CN=، O=، OU=،) في التوقيع.
+منذ 22.09 دعم إضافة خاصية لتعديل ترتيب عناوين الموضوع (E=، CN=، O=، OU=، ) في التوقيع.
 
 ```cs
 private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath, string password)
@@ -2305,9 +2328,9 @@ private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath,
 
 ## ما الجديد في Aspose.PDF 22.6
 
-منذ 22.5 دعم استخراج نص SubScript وSuperScript من PDF.
+منذ 22.5 دعم استخراج نص SubScript و SuperScript من PDF.
 
-إذا كان مستند PDF يحتوي على نص SubScript وSuperScript مثل H2O، فإن استخراج النص من PDF يجب أن يستخرج أيضًا معلومات التنسيق الخاصة بهم (في النص المستخرج).
+إذا كان مستند PDF يحتوي على نص SubScript و SuperScript مثل H2O، فإن استخراج النص من PDF يجب أن يستخرج أيضًا معلومات التنسيق الخاصة بهم (في النص المستخرج العادي).
 إذا كان PDF يحتوي على نص مائل، يجب أيضًا تضمينه في المحتوى المستخرج.
 
 ```cs
@@ -2369,11 +2392,11 @@ private static void ConvertPdfToOds()
 
 - PDF إلى Excel: التعرف على النص في النص الفرعي والنص الفوقي؛
 
-- إزالة توقيعات UR أثناء حفظ الوثيقة؛
+- إزالة توقيعات UR أثناء حفظ المستند؛
 
-- إزالة علامة الشك في MarkInfo أثناء حفظ الوثيقة؛
+- إزالة علامة الشك في MarkInfo أثناء حفظ المستند؛
 
-- إزالة المعلومات أثناء حفظ الوثيقة
+- إزالة المعلومات أثناء حفظ المستند
 
 ## ما الجديد في Aspose.PDF 22.3
 
@@ -2383,7 +2406,7 @@ private static void ConvertPdfToOds()
 
 - التحقق من رأس PDF؛
 
-- إزالة adbe.x509.rsa_sha1 subfilter أثناء حفظ الوثيقة؛
+- إزالة adbe.x509.rsa_sha1 subfilter أثناء حفظ المستند؛
 
 - تنسيق الحقل كرقم وتنسيق التاريخ؛
 
@@ -2426,7 +2449,7 @@ private static void SignPdfWithSha256(string pfxFilePath, string password)
 
 ## ما الجديد في Aspose.PDF 21.11
 
-### السماح بحروف غير لاتينية في كلمة المرور
+### السماح بالحروف غير اللاتينية في كلمة المرور
 
 ```csharp
 private static void EncriptPdfNonlatinPassCharacters()
@@ -2450,7 +2473,7 @@ private static void EncriptPdfNonlatinPassCharacters()
 
 ## ما الجديد في Aspose.PDF 21.10
 
-### كيفية اكتشاف النص المخفي؟
+### كيفية كشف النص المخفي؟
 
 يرجى استخدام TextState.Invisible للحصول على معلومات حول عدم وضوح النص خارج إعداد وضع العرض.
 
@@ -2607,7 +2630,7 @@ private static void ConvertXslfoToPdfWithArgumentList()
 
 ## ما الجديد في Aspose.PDF 21.6
 
-مع Aspose.PDF for .NET يمكنك إخفاء الصور باستخدام ImagePlacementAbsorber من الوثيقة:
+مع Aspose.PDF for .NET يمكنك إخفاء الصور باستخدام ImagePlacementAbsorber من المستند:
 
 ```csharp
 private static void HideImageInPdf()
@@ -2739,7 +2762,7 @@ private static void MergeAsTiff()
 
 ## ما الجديد في Aspose.PDF 21.3
 
-### الكشف العام عن خاصية لاكتشاف حماية المعلومات من Azure
+### الكشف العام عن خاصية للكشف عن حماية المعلومات من Azure
 
 مع الشيفرة التالية، يجب أن تكون قادرًا على الوصول إلى الحمولة المشفرة لملفات PDF الخاصة بك، المحمية بواسطة حماية المعلومات من Azure:
 
@@ -2807,7 +2830,7 @@ private static void DisplayPdfTextBackgroundColor()
 
 ### بعد التحويل إلى HTML، يتم تضمين الخط بالكامل في الناتج
 
-أيضًا، في Aspose.PDF 21.1، بعد تحويل PDF إلى HTML، أصبحت الخطوط المضمنة متاحة في مستند HTML الناتج. يمكن تحقيق ذلك مع خيار الحفظ الجديد البولياني HtmlSaveParameter.SaveFullFont.
+أيضًا، في Aspose.PDF 21.1، بعد تحويل PDF إلى HTML، أصبحت الخطوط المضمنة متاحة في مستند HTML الناتج. يمكن تحقيق ذلك مع خيار الحفظ الجديد boolean HtmlSaveParameter.SaveFullFont.
 
 إليك الشيفرة:
 
