@@ -422,7 +422,7 @@ private static async Task ExtractText()
             .WithDocument(dataDir + "ImageWithText.jpg"); // Attach images
 
         // Create copilot
-        var copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
+        Aspose.Pdf.AI.IOcrCopilot copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
 
         // Get text recognitions
         List<Aspose.Pdf.AI.TextRecognitionResult> textRecognitions = await copilot.GetTextRecognitionResultAsync();
@@ -458,7 +458,7 @@ private static async Task ExtractText()
         .WithDocument(dataDir + "ImageWithText.jpg"); // Attach images
 
     // Create copilot
-    var copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
+    Aspose.Pdf.AI.IOcrCopilot copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
 
     // Get text recognitions
     List<Aspose.Pdf.AI.TextRecognitionResult> textRecognitions = await copilot.GetTextRecognitionResultAsync();
