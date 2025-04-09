@@ -85,31 +85,31 @@ To create a handler, you should implement the interface:
 public interface ICustomSecurityHandler
 {   
     string Filter { get; }     
-	
+    
     string SubFilter { get; }  
-	
+    
     int Version { get; }     
-	
+    
     int Revision { get; }
-   
+    
     int KeyLength { get; }
-   
+    
     byte[] EncryptPermissions(int permissions);
-	
+    
     byte[] GetOwnerKey(string userPassword, string ownerPassword);
-  
+    
     byte[] GetUserKey(string userPassword);
-  
+    
     void Initialize(EncryptionParameters parameters);
-   
+    
     byte[] CalculateEncryptionKey(string password);
-   
+    
     byte[] Encrypt(byte[] data, int objectNumber, int generation, byte[] key);
-	
+    
     byte[] Decrypt(byte[] data, int objectNumber, int generation, byte[] key);
-   
+    
     bool IsOwnerPassword(string password);
-   
+    
     bool IsUserPassword(string password);
 }
 ```
