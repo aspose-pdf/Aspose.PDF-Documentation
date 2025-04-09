@@ -127,12 +127,12 @@ class CustomSecurityHandler : ICustomSecurityHandler
     /// <summary>
     /// Gets the filter name.
     /// </summary>
-    public string Filter { "TestFilter";}
+    public string Filter { "TestFilter"; }
     
     /// <summary>
     /// Gets the sub-filter name.
     /// </summary>
-    public string SubFilter { "TestSubFilter";}
+    public string SubFilter { "TestSubFilter"; }
     
     /// <summary>
     /// Gets the handler or encryption algorithm version.
