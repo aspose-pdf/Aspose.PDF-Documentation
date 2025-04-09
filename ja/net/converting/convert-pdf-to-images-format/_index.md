@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to Different Image Formats in C#",
     "alternativeHeadline": "Convert PDF Files to Multiple Image Formats in C#",
-    "abstract": "Aspose.PDF for .NETの機能により、ユーザーはPDFファイルをTIFF、BMP、EMF、JPEG、PNG、GIF、SVGなどの複数の画像形式にシームレスに変換できます。この機能は、C#の数行のコードで変換を可能にすることで文書処理を簡素化し、柔軟なPDF処理機能をアプリケーションに追加したい開発者にとって不可欠なツールとなります。",
+    "abstract": "Aspose.PDF for .NETの機能により、ユーザーはPDFファイルをTIFF、BMP、EMF、JPEG、PNG、GIF、SVGなどの複数の画像形式にシームレスに変換できます。この機能は、C#の数行のコードで変換を可能にすることで文書の取り扱いを簡素化し、汎用的なPDF処理機能をアプリケーションに追加したい開発者にとって不可欠なツールとなります。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1171",
+    "wordcount": "1345",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-images-format/"
     },
-    "dateModified": "2025-04-04",
-    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーや開発者向けの情報を確認してください。"
+    "dateModified": "2025-04-09",
+    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
 }
 </script>
 
@@ -162,7 +162,7 @@ Aspose.PDF for .NETは、PDFファイル内の特定のページをTIFF画像に
 
 1. **Document**クラスのオブジェクトを作成します。
 2. **TiffSettings**および**TiffDevice**オブジェクトを作成します。
-3. **fromPage**および**toPage**パラメータを使用してオーバーロードされた**TiffDevice.Process()**メソッドを呼び出し、PDF文書ページをTIFFに変換します。
+3. **fromPage**および**toPage**パラメータを使用してオーバーロードされた**TiffDevice.Process()**メソッドを呼び出し、PDF文書のページをTIFFに変換します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -196,7 +196,7 @@ private static void ConvertPDFtoTiffSinglePage()
 
 ### 変換中にブラッドリーアルゴリズムを使用
 
-Aspose.PDF for .NETは、LZW圧縮を使用してPDFをTIFに変換する機能をサポートしており、その後AForgeを使用して二値化を適用できます。ただし、顧客の1人が特定の画像について、オツのしきい値を取得する必要があるため、ブラッドリーも使用したいとリクエストしました。
+Aspose.PDF for .NETは、LZW圧縮を使用してPDFをTIFに変換する機能をサポートしており、その後AForgeを使用して二値化を適用できます。ただし、顧客の1人が特定の画像について、Otsuを使用してしきい値を取得する必要があるため、ブラッドリーも使用したいとリクエストしました。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -259,7 +259,7 @@ PDFページを画像に変換する方法を見てみましょう。
 <a name="csharp-pdf-to-png"></a>
 <a name="csharp-pdf-to-gif"></a>
 
-1. **Document**クラスを使用してPDFファイルを読み込みます。
+1. **Document**クラスを使用してPDFファイルをロードします。
 2. **ImageDevice**のサブクラスのインスタンスを作成します。
    * **BmpDevice**（PDFをBMPに変換するため）。
    * **EmfDevice**（PDFをEmfに変換するため）。
@@ -310,6 +310,56 @@ private static void ConvertPDFtoImage(ImageDevice imageDevice,
 }
 ```
 
+### 透明な背景でPDFを画像に変換
+
+PDFページは、白い背景の代わりに透明な背景を持つPNG画像に変換できます。
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf"))
+    {
+        var pngDevice = new Aspose.Pdf.Devices.PngDevice();
+        pngDevice.TransparentBackground = true;
+        using (var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create))
+        {
+            // Convert page to PNG image
+            pngDevice.Process(document.Pages[1], pngStream);
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf");
+    var pngDevice = new Aspose.Pdf.Devices.PngDevice()
+    {
+        TransparentBackground = true
+    };
+    using var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create);
+    // Convert page to PNG image
+    pngDevice.Process(document.Pages[1], pngStream);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 {{% alert color="success" %}}
 **PDFをPNGにオンラインで変換してみてください**
 
@@ -334,7 +384,7 @@ Aspose.PDF for .NETは、機能と品質を調査するために試すことが�
 
 **スケーラブルベクターグラフィックス（SVG）**は、静的および動的（インタラクティブまたはアニメーション）の2次元ベクターグラフィックス用のXMLベースのファイル形式の仕様のファミリーです。SVG仕様は、1999年からWorld Wide Web Consortium（W3C）によって開発されているオープンスタンダードです。
 
-SVG画像とその動作はXMLテキストファイルで定義されています。これは、検索、インデックス作成、スクリプト化、必要に応じて圧縮できることを意味します。XMLファイルとして、SVG画像は任意のテキストエディタで作成および編集できますが、Inkscapeなどの描画プログラムで作成する方が便利です。
+SVG画像とその動作はXMLテキストファイルで定義されています。これは、検索、インデックス作成、スクリプト化、必要に応じて圧縮できることを意味します。XMLファイルとして、SVG画像は任意のテキストエディタで作成および編集できますが、Inkscapeなどの描画プログラムを使用して作成する方が便利です。
 
 Aspose.PDF for .NETは、SVG画像をPDF形式に変換する機能をサポートしており、PDFファイルをSVG形式に変換する機能も提供します。この要件を達成するために、[`SvgSaveOptions`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/svgsaveoptions/methods/index)クラスがAspose.PDF名前空間に導入されました。SvgSaveOptionsのオブジェクトをインスタンス化し、[`Document.Save(..)`](https://reference.aspose.com/pdf/ja/net/aspose.pdf/document/methods/save/index)メソッドの第2引数として渡します。
 

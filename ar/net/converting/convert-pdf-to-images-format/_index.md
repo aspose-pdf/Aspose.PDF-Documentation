@@ -7,7 +7,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /ar/net/convert-pdf-to-images-format/
 lastmod: "2021-11-01"
-description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF لتحويل PDF إلى تنسيقات صور متنوعة مثل TIFF و BMP و EMF و JPEG و PNG و GIF و SVG مع بضع سطور من التعليمات البرمجية.
+description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF لتحويل PDF إلى تنسيقات صور متنوعة مثل TIFF و BMP و EMF و JPEG و PNG و GIF و SVG مع بضع أسطر من التعليمات البرمجية.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to Different Image Formats in C#",
     "alternativeHeadline": "Convert PDF Files to Multiple Image Formats in C#",
-    "abstract": "تتيح الميزة في Aspose.PDF for .NET للمستخدمين تحويل ملفات PDF بسلاسة إلى تنسيقات صور متعددة مثل TIFF و BMP و EMF و JPEG و PNG و GIF و SVG. تبسط هذه الوظيفة معالجة المستندات من خلال تمكين التحويل باستخدام بضع سطور من كود C#، مما يجعلها أداة أساسية للمطورين الذين يتطلعون إلى تعزيز تطبيقاتهم بقدرات معالجة PDF متعددة الاستخدامات.",
+    "abstract": "تتيح الميزة في Aspose.PDF for .NET للمستخدمين تحويل ملفات PDF بسلاسة إلى تنسيقات صور متعددة مثل TIFF و BMP و EMF و JPEG و PNG و GIF و SVG. تبسط هذه الوظيفة التعامل مع الوثائق من خلال تمكين التحويل باستخدام بضع أسطر من كود C#، مما يجعلها أداة أساسية للمطورين الذين يتطلعون إلى تعزيز تطبيقاتهم بقدرات معالجة PDF متعددة الاستخدامات.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1746",
+    "wordcount": "1936",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-images-format/"
     },
-    "dateModified": "2025-04-04",
-    "description": "يمكن لـ Aspose.PDF تنفيذ المهام البسيطة والسريعة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+    "dateModified": "2025-04-09",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسريعة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
 
@@ -94,7 +94,7 @@ sitemap:
 
 تعمل مقتطفات التعليمات البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-**Aspose.PDF for .NET** يستخدم عدة طرق لتحويل PDF إلى صورة. بشكل عام، نستخدم طريقتين: التحويل باستخدام طريقة Device والتحويل باستخدام SaveOption. ستوضح لك هذه القسم كيفية تحويل مستندات PDF إلى تنسيقات صور مثل BMP و JPEG و GIF و PNG و EMF و TIFF و SVG باستخدام واحدة من تلك الطرق.
+**Aspose.PDF for .NET** يستخدم عدة طرق لتحويل PDF إلى صورة. بشكل عام، نستخدم طريقتين: التحويل باستخدام طريقة Device والتحويل باستخدام SaveOption. ستوضح لك هذه القسم كيفية تحويل مستندات PDF إلى تنسيقات صور مثل BMP و JPEG و GIF و PNG و EMF و TIFF و SVG باستخدام إحدى هذه الطرق.
 
 هناك عدة فئات في المكتبة تسمح لك باستخدام جهاز افتراضي لتحويل الصور. DocumentDevice موجه لتحويل المستند بالكامل، ولكن ImageDevice - لصفحة معينة.
 
@@ -114,7 +114,7 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 
 ### تحويل صفحات PDF إلى صورة TIFF واحدة
 
-Aspose.PDF for .NET يوضح كيفية تحويل جميع الصفحات في ملف PDF إلى صورة TIFF واحدة:
+Aspose.PDF for .NET يشرح كيفية تحويل جميع الصفحات في ملف PDF إلى صورة TIFF واحدة:
 
 <a name="csharp-pdf-to-tiff"><strong>تحويل PDF إلى TIFF</strong></a>
 
@@ -158,11 +158,11 @@ private static void ConvertPDFtoTIFF()
 
 ### تحويل صفحة واحدة إلى صورة TIFF
 
-Aspose.PDF for .NET يسمح بتحويل صفحة معينة في ملف PDF إلى صورة TIFF، استخدم إصدارًا مفرط التحميل من طريقة Process(..) التي تأخذ رقم الصفحة كوسيط للتحويل. تظهر مقتطفات التعليمات البرمجية التالية كيفية تحويل الصفحة الأولى من PDF إلى تنسيق TIFF.
+Aspose.PDF for .NET يسمح بتحويل صفحة معينة في ملف PDF إلى صورة TIFF، استخدم إصدارًا مفرطًا من طريقة Process(..) التي تأخذ رقم الصفحة كوسيط للتحويل. تظهر مقتطفات التعليمات البرمجية التالية كيفية تحويل الصفحة الأولى من PDF إلى تنسيق TIFF.
 
 1. إنشاء كائن من فئة **Document**.
 2. إنشاء كائنات **TiffSettings** و **TiffDevice**.
-3. استدعاء طريقة **TiffDevice.Process()** المفرطة التحميل مع معلمات **fromPage** و **toPage** لتحويل صفحات مستند PDF إلى TIFF.
+3. استدعاء طريقة **TiffDevice.Process()** المفرطة مع معلمات **fromPage** و **toPage** لتحويل صفحات مستند PDF إلى TIFF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -251,7 +251,7 @@ private static void ConvertPDFtoTiffBradleyBinarization()
 
 دعونا نلقي نظرة على كيفية تحويل صفحة PDF إلى صورة.
 
-تقدم فئة `BmpDevice` طريقة تسمى [Process](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/bmpdevice/methods/process) التي تتيح لك تحويل صفحة معينة من ملف PDF إلى تنسيق صورة BMP. تحتوي الفئات الأخرى على نفس الطريقة. لذا، إذا كنا بحاجة إلى تحويل صفحة PDF إلى صورة، نقوم فقط بإنشاء كائن من الفئة المطلوبة.
+توفر فئة `BmpDevice` طريقة تسمى [Process](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/bmpdevice/methods/process) التي تتيح لك تحويل صفحة معينة من ملف PDF إلى تنسيق صورة BMP. تحتوي الفئات الأخرى على نفس الطريقة. لذا، إذا كنا بحاجة إلى تحويل صفحة PDF إلى صورة، نقوم فقط بإنشاء كائن من الفئة المطلوبة.
 
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
@@ -266,7 +266,7 @@ private static void ConvertPDFtoTiffBradleyBinarization()
    * **JpegDevice** (لتحويل PDF إلى JPG).
    * **PngDevice** (لتحويل PDF إلى PNG).
    * **GifDevice** (لتحويل PDF إلى GIF).
-3. استدعاء طريقة **ImageDevice.Process()** لتنفيذ تحويل PDF إلى صورة.
+3. استدعاء طريقة **ImageDevice.Process()** لأداء تحويل PDF إلى صورة.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -310,6 +310,56 @@ private static void ConvertPDFtoImage(ImageDevice imageDevice,
 }
 ```
 
+### تحويل PDF إلى صورة بخلفية شفافة
+
+يمكن تحويل صفحة PDF إلى صورة PNG بخلفية شفافة بدلاً من خلفية بيضاء.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf"))
+    {
+        var pngDevice = new Aspose.Pdf.Devices.PngDevice();
+        pngDevice.TransparentBackground = true;
+        using (var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create))
+        {
+            // Convert page to PNG image
+            pngDevice.Process(document.Pages[1], pngStream);
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf");
+    var pngDevice = new Aspose.Pdf.Devices.PngDevice()
+    {
+        TransparentBackground = true
+    };
+    using var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create);
+    // Convert page to PNG image
+    pngDevice.Process(document.Pages[1], pngStream);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 {{% alert color="success" %}}
 **حاول تحويل PDF إلى PNG عبر الإنترنت**
 
@@ -332,18 +382,18 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 [![تحويل Aspose.PDF PDF إلى SVG مع تطبيق مجاني](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 {{% /alert %}}
 
-**رسومات متجهة قابلة للتطوير (SVG)** هي مجموعة من المواصفات لصيغة ملف قائمة على XML للرسومات المتجهة ثنائية الأبعاد، سواء الثابتة أو الديناميكية (التفاعلية أو المتحركة). تعتبر مواصفة SVG معيارًا مفتوحًا تم تطويره بواسطة اتحاد الويب العالمي (W3C) منذ عام 1999.
+**رسومات متجهة قابلة للتطوير (SVG)** هي عائلة من المواصفات لصيغة ملف قائمة على XML للرسومات المتجهة ثنائية الأبعاد، سواء الثابتة أو الديناميكية (التفاعلية أو المتحركة). تعتبر مواصفة SVG معيارًا مفتوحًا تم تطويره بواسطة اتحاد الويب العالمي (W3C) منذ عام 1999.
 
-تُعرّف صور SVG وسلوكياتها في ملفات نصية XML. وهذا يعني أنه يمكن البحث عنها وفهرستها وبرمجتها وإذا لزم الأمر، ضغطها. كملفات XML، يمكن إنشاء وتحرير صور SVG باستخدام أي محرر نصوص، ولكن من الأكثر ملاءمة غالبًا إنشاؤها باستخدام برامج الرسم مثل Inkscape.
+تُعرّف صور SVG وسلوكياتها في ملفات نصية XML. وهذا يعني أنه يمكن البحث عنها وفهرستها وبرمجتها وإذا لزم الأمر، ضغطها. كملفات XML، يمكن إنشاء وتحرير صور SVG باستخدام أي محرر نصوص، ولكن غالبًا ما يكون من الأكثر ملاءمة إنشاؤها باستخدام برامج الرسم مثل Inkscape.
 
-Aspose.PDF for .NET يدعم ميزة تحويل صورة SVG إلى تنسيق PDF ويقدم أيضًا القدرة على تحويل ملفات PDF إلى تنسيق SVG. لتحقيق هذا المتطلب، تم تقديم فئة [`SvgSaveOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/svgsaveoptions/methods/index) في مساحة أسماء Aspose.PDF. قم بإنشاء كائن من SvgSaveOptions ومرره كوسيط ثانٍ إلى طريقة [`Document.Save(..)`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index).
+يدعم Aspose.PDF for .NET ميزة تحويل صورة SVG إلى تنسيق PDF ويقدم أيضًا القدرة على تحويل ملفات PDF إلى تنسيق SVG. لتحقيق هذا المتطلب، تم تقديم فئة [`SvgSaveOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/svgsaveoptions/methods/index) في مساحة أسماء Aspose.PDF. قم بإنشاء كائن من SvgSaveOptions ومرره كوسيط ثانٍ إلى طريقة [`Document.Save(..)`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index).
 
-تظهر مقتطفات التعليمات البرمجية التالية الخطوات لتحويل ملف PDF إلى تنسيق SVG باستخدام .NET.
+تظهر مقتطفات التعليمات البرمجية التالية خطوات تحويل ملف PDF إلى تنسيق SVG باستخدام .NET.
 
 <a name="csharp-pdf-to-svg"><strong>تحويل PDF إلى SVG</strong></a>
 
 1. إنشاء كائن من فئة **Document**.
-2. إنشاء كائن **SvgSaveOptions** بالإعدادات المطلوبة.
+2. إنشاء كائن **SvgSaveOptions** مع الإعدادات المطلوبة.
 3. استدعاء طريقة **Document.Save()** وتمرير كائن **SvgSaveOptions** لتحويل مستند PDF إلى SVG.
 
 ```csharp
