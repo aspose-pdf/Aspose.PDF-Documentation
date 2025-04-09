@@ -393,9 +393,9 @@ private static async Task CreateImageDescriptions()
 {{< /tab >}}
 {{< /tabs >}}
 
-**OpenAI OCR** is an AI copilot designed for extracting text from scanned documents and images. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, and others.
+**OpenAI OCR** is an AI copilot designed to extract text from scanned documents and images. Users can configure the copilot options, such as the model, temperature, number of tokens, model instructions, document attachments, etc.
 
-The provided code snippet demonstrates the creation of an OpenAI client, configuration of OpenAIOcrCopilotOptions options and usage of the copilot to obtain text from scanned documents and images.
+The provided code snippet demonstrates the creation of an OpenAI client, the configuration of ```OpenAIOcrCopilotOptions```, and the use of the copilot to extract text from scanned documents and images.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
