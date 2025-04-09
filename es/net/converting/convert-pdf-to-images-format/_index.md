@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1914",
+    "wordcount": "2111",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-images-format/"
     },
-    "dateModified": "2025-04-04",
+    "dateModified": "2025-04-09",
     "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también hacer frente a objetivos más complejos. Consulta la siguiente sección para usuarios avanzados y desarrolladores."
 }
 </script>
@@ -94,7 +94,7 @@ Este artículo explica cómo convertir PDF a diferentes formatos de imagen usand
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-**Aspose.PDF for .NET** utiliza varios enfoques para convertir PDF a imagen. En términos generales, utilizamos dos enfoques: conversión utilizando el enfoque de Dispositivo y conversión utilizando SaveOption. Esta sección te mostrará cómo convertir documentos PDF a formatos de imagen como BMP, JPEG, GIF, PNG, EMF, TIFF y SVG utilizando uno de esos enfoques.
+**Aspose.PDF for .NET** utiliza varios enfoques para convertir PDF a imagen. En términos generales, usamos dos enfoques: conversión utilizando el enfoque de Dispositivo y conversión utilizando SaveOption. Esta sección te mostrará cómo convertir documentos PDF a formatos de imagen como BMP, JPEG, GIF, PNG, EMF, TIFF y SVG utilizando uno de esos enfoques.
 
 Hay varias clases en la biblioteca que te permiten usar un dispositivo virtual para transformar imágenes. DocumentDevice está orientado a la conversión de todo el documento, pero ImageDevice - para una página en particular.
 
@@ -196,7 +196,7 @@ private static void ConvertPDFtoTiffSinglePage()
 
 ### Usar el algoritmo de Bradley durante la conversión
 
-Aspose.PDF for .NET ha estado apoyando la función para convertir PDF a TIF usando compresión LZW y luego con el uso de AForge, se puede aplicar la Binarización. Sin embargo, uno de los clientes solicitó que para algunas imágenes, necesitan obtener el Umbral usando Otsu, por lo que también les gustaría usar Bradley.
+Aspose.PDF for .NET ha estado apoyando la función de convertir PDF a TIF usando compresión LZW y luego, con el uso de AForge, se puede aplicar la Binarización. Sin embargo, uno de los clientes solicitó que para algunas imágenes, necesitan obtener el Umbral usando Otsu, por lo que también les gustaría usar Bradley.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -309,6 +309,56 @@ private static void ConvertPDFtoImage(ImageDevice imageDevice,
     }
 }
 ```
+
+### Convertir PDF a imagen con fondo transparente
+
+Una página PDF se puede convertir a una imagen PNG con un fondo transparente en lugar de uno blanco.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf"))
+    {
+        var pngDevice = new Aspose.Pdf.Devices.PngDevice();
+        pngDevice.TransparentBackground = true;
+        using (var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create))
+        {
+            // Convert page to PNG image
+            pngDevice.Process(document.Pages[1], pngStream);
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf");
+    var pngDevice = new Aspose.Pdf.Devices.PngDevice()
+    {
+        TransparentBackground = true
+    };
+    using var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create);
+    // Convert page to PNG image
+    pngDevice.Process(document.Pages[1], pngStream);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 {{% alert color="success" %}}
 **Intenta convertir PDF a PNG en línea**
