@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to Different Image Formats in C#",
     "alternativeHeadline": "Convert PDF Files to Multiple Image Formats in C#",
-    "abstract": "Aspose.PDF for .NET 中的功能允许用户无缝地将 PDF 文件转换为多种图像格式，如 TIFF、BMP、EMF、JPEG、PNG、GIF 和 SVG。此功能通过仅使用几行 C# 代码简化了文档处理，使其成为希望通过多功能 PDF 处理能力增强其应用程序的开发人员的必备工具。",
+    "abstract": "该功能允许用户无缝地将 PDF 文件转换为多种图像格式，例如 TIFF、BMP、EMF、JPEG、PNG、GIF 和 SVG。此功能通过仅使用几行 C# 代码简化了文档处理，使其成为希望增强其应用程序的开发人员的必备工具，具备多功能的 PDF 处理能力。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1541",
+    "wordcount": "1833",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@id": "/net/convert-pdf-to-images-format/"
     },
     "dateModified": "2025-04-09",
-    "description": "Aspose.PDF 不仅可以执行简单易行的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
+    "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
 }
 </script>
 
@@ -100,14 +100,14 @@ sitemap:
 
 ## 使用 DocumentDevice 类转换 PDF
 
-**Aspose.PDF for .NET** 使得将 PDF 页面转换为 TIFF 图像成为可能。
+**Aspose.PDF for .NET** 使将 PDF 页面转换为 TIFF 图像成为可能。
 
-TiffDevice（基于 DocumentDevice）类允许您将 PDF 页面转换为 TIFF 图像。该类提供了一个名为 `Process` 的方法，允许您将 PDF 文件中的所有页面转换为单个 TIFF 图像。
+TiffDevice（基于 DocumentDevice）类允许您将 PDF 页面转换为 TIFF 图像。该类提供一个名为 `Process` 的方法，允许您将 PDF 文件中的所有页面转换为单个 TIFF 图像。
 
 {{% alert color="success" %}}
 **尝试在线将 PDF 转换为 TIFF**
 
-Aspose.PDF for .NET 向您展示在线免费应用程序 ["PDF to TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff)，您可以尝试探索其功能和工作质量。
+Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff)，您可以尝试探索其功能和工作质量。
 
 [![Aspose.PDF 转换 PDF 到 TIFF 的免费应用](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
@@ -123,7 +123,7 @@ Aspose.PDF for .NET 解释了如何将 PDF 文件中的所有页面转换为单�
 3. 调用 **TiffDevice.Process()** 方法将 PDF 文档转换为 TIFF。
 4. 要设置输出文件的属性，请使用 **TiffSettings** 类。
 
-以下代码片段演示了如何将所有 PDF 页面转换为单个 TIFF 图像。
+以下代码片段显示了如何将所有 PDF 页面转换为单个 TIFF 图像。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -158,7 +158,7 @@ private static void ConvertPDFtoTIFF()
 
 ### 将一页转换为 TIFF 图像
 
-Aspose.PDF for .NET 允许将 PDF 文件中的特定页面转换为 TIFF 图像，使用重载的 Process(..) 方法，该方法将页面编号作为参数进行转换。以下代码片段演示了如何将 PDF 的第一页转换为 TIFF 格式。
+Aspose.PDF for .NET 允许将 PDF 文件中的特定页面转换为 TIFF 图像，使用重载的 Process(..) 方法，该方法将页面编号作为参数进行转换。以下代码片段显示了如何将 PDF 的第一页转换为 TIFF 格式。
 
 1. 创建 **Document** 类的对象。
 2. 创建 **TiffSettings** 和 **TiffDevice** 对象。
@@ -251,7 +251,7 @@ private static void ConvertPDFtoTiffBradleyBinarization()
 
 让我们看看如何将 PDF 页面转换为图像。
 
-`BmpDevice` 类提供了一个名为 [Process](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/bmpdevice/methods/process) 的方法，允许您将 PDF 文件的特定页面转换为 BMP 图像格式。其他类也有相同的方法。因此，如果我们需要将 PDF 页面转换为图像，我们只需实例化所需的类。
+`BmpDevice` 类提供一个名为 [Process](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/bmpdevice/methods/process) 的方法，允许您将 PDF 文件的特定页面转换为 BMP 图像格式。其他类也有相同的方法。因此，如果我们需要将 PDF 页面转换为图像，只需实例化所需的类。
 
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
@@ -360,35 +360,101 @@ private static void ConvertPDFtoImageWithTransparentBackground()
 {{< /tab >}}
 {{< /tabs >}}
 
+### 将特定页面区域转换为图像
+
+页面的某个区域可以使用页面的 CropBox 转换为图像。
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertParticularPageRegionToImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertParticularPageRegionToImage.pdf"))
+    {
+        // Get rectangle of particular XImage
+        var imagePlacementAbsorber = new Aspose.Pdf.ImagePlacementAbsorber();
+        document.Pages[1].Accept(imagePlacementAbsorber);
+        var imageRectangle = imagePlacementAbsorber.ImagePlacements[1].Rectangle;
+        var pageRect = new Aspose.Pdf.Rectangle(imageRectangle.LLX, imageRectangle.LLY, imageRectangle.URX, imageRectangle.URY);
+
+        // Set CropBox value as per rectangle of desired page region
+        document.Pages[1].CropBox = pageRect;
+        var resolution = new Aspose.Pdf.Devices.Resolution(300);
+
+        // Create PNG device with specified attributes
+        var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+
+        // Convert a particular page and save the image
+        pngDevice.Process(document.Pages[1], dataDir + "ConvertParticularPageRegionToImage_out.png");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertParticularPageRegionToImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ConvertParticularPageRegionToImage.pdf");
+    // Get rectangle of particular XImage
+    var imagePlacementAbsorber = new Aspose.Pdf.ImagePlacementAbsorber();
+    document.Pages[1].Accept(imagePlacementAbsorber);
+    var imageRectangle = imagePlacementAbsorber.ImagePlacements[1].Rectangle;
+    var pageRect = new Aspose.Pdf.Rectangle(imageRectangle.LLX, imageRectangle.LLY, imageRectangle.URX, imageRectangle.URY);
+
+    // Set CropBox value as per rectangle of desired page region
+    document.Pages[1].CropBox = pageRect;
+    var resolution = new Aspose.Pdf.Devices.Resolution(300);
+
+    // Create PNG device with specified attributes
+    var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+
+    // Convert a particular page and save the image
+    pngDevice.Process(document.Pages[1], dataDir + "ConvertParticularPageRegionToImage_out.png");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 {{% alert color="success" %}}
 **尝试在线将 PDF 转换为 PNG**
 
 作为我们免费应用程序工作原理的示例，请查看下一个功能。
 
-Aspose.PDF for .NET 向您展示在线免费应用程序 ["PDF to PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png)，您可以尝试探索其功能和工作质量。
+Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png)，您可以尝试探索其功能和工作质量。
 
 [![如何使用免费应用将 PDF 转换为 PNG](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
 {{% /alert %}}
 
 ## 使用 SaveOptions 类转换 PDF
 
-本文部分向您展示如何使用 C# 和 SaveOptions 类将 PDF 转换为 <abbr title="可缩放矢量图形">SVG</abbr>。
+本文的这一部分向您展示如何使用 C# 和 SaveOptions 类将 PDF 转换为 <abbr title="可缩放矢量图形">SVG</abbr>。
 
 {{% alert color="success" %}}
 **尝试在线将 PDF 转换为 SVG**
 
-Aspose.PDF for .NET 向您展示在线免费应用程序 ["PDF to SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg)，您可以尝试探索其功能和工作质量。
+Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg)，您可以尝试探索其功能和工作质量。
 
 [![Aspose.PDF 转换 PDF 到 SVG 的免费应用](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 {{% /alert %}}
 
-**可缩放矢量图形 (SVG)** 是一种基于 XML 的文件格式的规范系列，用于二维矢量图形，包括静态和动态（交互式或动画）。SVG 规范是一个开放标准，自 1999 年以来一直由万维网联盟 (W3C) 开发。
+**可缩放矢量图形 (SVG)** 是一种基于 XML 的文件格式的规范系列，用于二维矢量图形，包括静态和动态（交互式或动画）。SVG 规范是一个开放标准，自 1999 年以来由万维网联盟 (W3C) 开发。
 
-SVG 图像及其行为在 XML 文本文件中定义。这意味着它们可以被搜索、索引、脚本化，并在需要时进行压缩。作为 XML 文件，SVG 图像可以使用任何文本编辑器创建和编辑，但通常使用绘图程序（如 Inkscape）创建它们更方便。
+SVG 图像及其行为在 XML 文本文件中定义。这意味着它们可以被搜索、索引、脚本化，并在需要时进行压缩。作为 XML 文件，SVG 图像可以使用任何文本编辑器创建和编辑，但通常使用绘图程序（如 Inkscape）创建更方便。
 
 Aspose.PDF for .NET 支持将 SVG 图像转换为 PDF 格式的功能，并且还提供将 PDF 文件转换为 SVG 格式的能力。为了实现这一要求，[`SvgSaveOptions`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/svgsaveoptions/methods/index) 类已被引入到 Aspose.PDF 命名空间中。实例化一个 SvgSaveOptions 对象，并将其作为第二个参数传递给 [`Document.Save(..)`](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法。
 
-以下代码片段展示了将 PDF 文件转换为 SVG 格式的步骤。
+以下代码片段显示了将 PDF 文件转换为 SVG 格式的步骤。
 
 <a name="csharp-pdf-to-svg"><strong>将 PDF 转换为 SVG</strong></a>
 
