@@ -230,6 +230,8 @@ The possible statuses are: `Valid`, `Invalid`, and `Undefined`.
 Setting both `CheckCertificateChain` and `ValidationMode = ValidationMode.Strict` corresponds to Adobe Acrobat’s behavior.  
 If Adobe Acrobat cannot find the certificate chain, it does not check the revocation status, and the signature is considered invalid.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void VerifySignatureWithCertificateCheck(string filePath)
@@ -260,6 +262,39 @@ private static void VerifySignatureWithCertificateCheck(string filePath)
     }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(filePath));
+    
+    // Create an instance of PdfFileSignature for working with signatures in the document
+    using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document));
+    
+    // Find all signatures
+    foreach (var signName in pdfSign.GetSignatureNames())
+    {
+        // Create a certificate validation option
+        var options = new Aspose.Pdf.Security.ValidationOptions();
+        options.ValidationMode = ValidationMode.Strict;
+        options.ValidationMethod = ValidationMethod.Auto;
+        options.CheckCertificateChain = true;
+        options.RequestTimeout = 20000;
+
+        Aspose.Pdf.Security.ValidationResult validationResult;
+        // Verify a digital signature
+        bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+        Console.WriteLine($"Certificate validation resul: {validationResult.Status}");
+        Console.WriteLine($"Is verified: {verified}" );
+    }             
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Add timestamp to digital signature
 
