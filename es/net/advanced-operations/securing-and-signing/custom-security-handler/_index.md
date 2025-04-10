@@ -124,15 +124,27 @@ class CustomSecurityHandler : ICustomSecurityHandler
 {
     private EncryptionParameters _parameters;
     
-    /// <summary>
+   /// <summary>
     /// Gets the filter name.
     /// </summary>
-    public string Filter { "TestFilter";}
+    public string Filter 
+    { 
+        get 
+        {
+            return "TestFilter";
+        } 
+    }
     
     /// <summary>
     /// Gets the sub-filter name.
     /// </summary>
-    public string SubFilter { "TestSubFilter";}
+    public string SubFilter 
+    { 
+        get 
+        {
+            return "TestsSubFilter";
+        } 
+    }
     
     /// <summary>
     /// Gets the handler or encryption algorithm version.
