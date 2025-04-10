@@ -197,6 +197,105 @@ private static void Verify()
 }
 ```
 
+## 証明書チェックによるデジタル署名の検証
+
+デジタル署名を検証する際、署名証明書の取り消しを確認できます。
+
+残念ながら、Aspose.PDFは証明書チェーン内のルートまたは中間証明書の真正性を検証できません。  
+したがって、署名証明書の取り消し状態のみがCRLおよびOCSPを使用して確認されます。
+
+証明書検証を構成するには、`ValidationOptions`パラメータを使用できます。
+
+`ValidationMode`オプションは、3つの検証モードを提供します。
+
+- **なし** – 証明書はチェックされません。
+- **厳密** – 証明書の取り消しは`Verify`メソッドの結果に影響します。
+- **OnlyCheck** – 署名検証結果に影響を与えずに証明書をチェックできます。
+
+`ValidationMethod`は、証明書をチェックするために使用されるメソッドを指定します。
+
+- **自動** – 自動メソッド選択。OCSPが優先されます。取り消し状態は、チェックを正常に実行したメソッドによって決定されます。
+- **Ocsp** – OCSPを使用して取り消しがチェックされます。
+- **Crl** – CRLを使用して取り消しがチェックされます。
+- **すべて** – 両方のメソッドが証明書をチェックするために使用されます。検証が通過するためには、両方のメソッドが証明書が取り消されていないことを確認する必要があります。
+
+`CheckCertificateChain`オプションは、署名内の証明書チェーンの存在をチェックすることを可能にします。  
+証明書チェーンが見つからない場合、証明書検証結果は`未定義`になります。
+
+検証の結果は、`ValidationResult`型の出力パラメータを通じて取得できます。  
+可能なステータスは、`有効`、`無効`、および`未定義`です。  
+`未定義`は通常、証明書を検証できなかったか、証明書チェーンが欠落していることを意味します。
+
+`CheckCertificateChain`と`ValidationMode = ValidationMode.Strict`の両方を設定することは、Adobe Acrobatの動作に対応します。  
+Adobe Acrobatが証明書チェーンを見つけられない場合、取り消し状態はチェックされず、署名は無効と見なされます。
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(filePath))
+    {
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Find all signatures
+            foreach (var signName in pdfSign.GetSignatureNames())
+            {
+                // Create a certificate validation option
+                var options = new Aspose.Pdf.Security.ValidationOptions();
+                options.ValidationMode = ValidationMode.Strict;
+                options.ValidationMethod = ValidationMethod.Auto;
+                options.CheckCertificateChain = true;
+                options.RequestTimeout = 20000;
+
+                Aspose.Pdf.Security.ValidationResult validationResult;
+                // Verify a digital signature
+                bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+                Console.WriteLine("Certificate validation resul: " + validationResult.Status);
+                Console.WriteLine("Is verified: " + verified);
+            } 
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(filePath);
+    
+    // Create an instance of PdfFileSignature for working with signatures in the document
+    using var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document);
+    
+    // Find all signatures
+    foreach (var signName in pdfSign.GetSignatureNames())
+    {
+        // Create a certificate validation option
+        var options = new Aspose.Pdf.Security.ValidationOptions();
+        options.ValidationMode = ValidationMode.Strict;
+        options.ValidationMethod = ValidationMethod.Auto;
+        options.CheckCertificateChain = true;
+        options.RequestTimeout = 20000;
+
+        Aspose.Pdf.Security.ValidationResult validationResult;
+        // Verify a digital signature
+        bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+        Console.WriteLine($"Certificate validation resul: {validationResult.Status}");
+        Console.WriteLine($"Is verified: {verified}" );
+    }             
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+
 ## デジタル署名にタイムスタンプを追加する
 
 ### タイムスタンプ付きでPDFにデジタル署名する方法

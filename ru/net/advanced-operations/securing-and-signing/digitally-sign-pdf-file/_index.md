@@ -197,6 +197,105 @@ private static void Verify()
 }
 ```
 
+## Проверка цифровых подписей с проверкой сертификата
+
+При проверке цифровой подписи вы можете проверить сертификат подписи на отзыв.
+
+К сожалению, Aspose.PDF не может проверить подлинность корневых или промежуточных сертификатов в цепочке сертификатов.  
+Поэтому проверяется только статус отзыва сертификата подписи с использованием CRL и OCSP.
+
+Чтобы настроить проверку сертификата, вы можете использовать параметр `ValidationOptions`.
+
+Опция `ValidationMode` предлагает три режима проверки:
+
+- **None** – сертификат не проверяется.
+- **Strict** – отзыв сертификата влияет на результат метода `Verify`.
+- **OnlyCheck** – позволяет проверять сертификат, не влияя на результат проверки подписи.
+
+`ValidationMethod` указывает метод, используемый для проверки сертификата:
+
+- **Auto** – автоматический выбор метода. Предпочтение отдается OCSP. Статус отзыва определяется методом, который успешно выполняет проверку.
+- **Ocsp** – отзыв проверяется с использованием OCSP.
+- **Crl** – отзыв проверяется с использованием CRL.
+- **All** – оба метода используются для проверки сертификата. Для успешной проверки оба метода должны подтвердить, что сертификат не отозван.
+
+Опция `CheckCertificateChain` позволяет проверять наличие цепочки сертификатов в подписи.  
+Если цепочка сертификатов не найдена, результат проверки сертификата будет `Undefined`.
+
+Результат проверки можно получить через выходной параметр типа `ValidationResult`.  
+Возможные статусы: `Valid`, `Invalid` и `Undefined`.  
+`Undefined` обычно означает, что сертификат не удалось проверить или цепочка сертификатов отсутствует.
+
+Установка как `CheckCertificateChain`, так и `ValidationMode = ValidationMode.Strict` соответствует поведению Adobe Acrobat.  
+Если Adobe Acrobat не может найти цепочку сертификатов, он не проверяет статус отзыва, и подпись считается недействительной.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(filePath))
+    {
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Find all signatures
+            foreach (var signName in pdfSign.GetSignatureNames())
+            {
+                // Create a certificate validation option
+                var options = new Aspose.Pdf.Security.ValidationOptions();
+                options.ValidationMode = ValidationMode.Strict;
+                options.ValidationMethod = ValidationMethod.Auto;
+                options.CheckCertificateChain = true;
+                options.RequestTimeout = 20000;
+
+                Aspose.Pdf.Security.ValidationResult validationResult;
+                // Verify a digital signature
+                bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+                Console.WriteLine("Certificate validation resul: " + validationResult.Status);
+                Console.WriteLine("Is verified: " + verified);
+            } 
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(filePath);
+    
+    // Create an instance of PdfFileSignature for working with signatures in the document
+    using var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document);
+    
+    // Find all signatures
+    foreach (var signName in pdfSign.GetSignatureNames())
+    {
+        // Create a certificate validation option
+        var options = new Aspose.Pdf.Security.ValidationOptions();
+        options.ValidationMode = ValidationMode.Strict;
+        options.ValidationMethod = ValidationMethod.Auto;
+        options.CheckCertificateChain = true;
+        options.RequestTimeout = 20000;
+
+        Aspose.Pdf.Security.ValidationResult validationResult;
+        // Verify a digital signature
+        bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+        Console.WriteLine($"Certificate validation resul: {validationResult.Status}");
+        Console.WriteLine($"Is verified: {verified}" );
+    }             
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+
 ## Добавить временную метку к цифровой подписи
 
 ### Как цифровая подпись PDF с временной меткой
