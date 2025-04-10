@@ -141,7 +141,7 @@ private static void TrimWhiteSpaceAroundPage()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf"))
     {
-        var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+        var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
         using (var imageStr = new MemoryStream())
         {
@@ -257,7 +257,7 @@ private static void TrimWhiteSpaceAroundPage()
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf");
-    var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+    var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
     using var imageStr = new MemoryStream();
 
