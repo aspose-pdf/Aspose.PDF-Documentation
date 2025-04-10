@@ -270,10 +270,10 @@ private static void VerifySignatureWithCertificateCheck(string filePath)
 private static void VerifySignatureWithCertificateCheck(string filePath)
 {
     // Open PDF document
-    using var document = new Aspose.Pdf.Document(filePath));
+    using var document = new Aspose.Pdf.Document(filePath);
     
     // Create an instance of PdfFileSignature for working with signatures in the document
-    using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document));
+    using var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document);
     
     // Find all signatures
     foreach (var signName in pdfSign.GetSignatureNames())
