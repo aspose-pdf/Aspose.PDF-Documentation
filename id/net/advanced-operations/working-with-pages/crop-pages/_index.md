@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Crop PDF Pages programmatically C#",
     "alternativeHeadline": "Crop PDF Pages Easily with Aspose.PDF for .NET",
-    "abstract": "Aspose.PDF for .NET memperkenalkan fitur baru yang kuat yang memungkinkan pengembang untuk mengakses dan memanipulasi berbagai properti halaman dari PDF secara programatik, termasuk media box, bleed box, trim box, art box, dan crop box. Fungsionalitas ini menyederhanakan proses kustomisasi tata letak PDF, memastikan presisi dalam presentasi dokumen dan meningkatkan kualitas cetak sambil meminimalkan tepi putih. Dengan potongan kode yang mudah digunakan, pengguna dapat dengan mulus mengintegrasikan kemampuan ini ke dalam aplikasi mereka, meningkatkan manajemen dan manipulasi PDF.",
+    "abstract": "Aspose.PDF for .NET memperkenalkan fitur baru yang kuat yang memungkinkan pengembang untuk mengakses dan memanipulasi berbagai properti halaman dari PDF secara programatik, termasuk media box, bleed box, trim box, art box, dan crop box. Fungsionalitas ini menyederhanakan proses penyesuaian tata letak PDF, memastikan presisi dalam presentasi dokumen dan meningkatkan kualitas cetak sambil meminimalkan tepi putih. Dengan potongan kode yang mudah digunakan, pengguna dapat dengan mulus mengintegrasikan kemampuan ini ke dalam aplikasi mereka, meningkatkan manajemen dan manipulasi PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1130",
+    "wordcount": "1134",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -83,14 +83,14 @@ sitemap:
 Setiap halaman dalam file PDF memiliki sejumlah properti, seperti lebar, tinggi, bleed-, crop- dan trimbox. Aspose.PDF memungkinkan Anda untuk mengakses properti ini.
 
 - **Media box**: Media box adalah kotak halaman terbesar. Ini sesuai dengan ukuran halaman (misalnya A4, A5, US Letter, dll.) yang dipilih saat dokumen dicetak ke PostScript atau PDF. Dengan kata lain, media box menentukan ukuran fisik media di mana dokumen PDF ditampilkan atau dicetak.
-- **Bleed box**: Jika dokumen memiliki bleed, PDF juga akan memiliki bleed box. Bleed adalah jumlah warna (atau karya seni) yang meluas di luar tepi halaman. Ini digunakan untuk memastikan bahwa ketika dokumen dicetak dan dipotong sesuai ukuran ("trimmed"), tinta akan sampai ke tepi halaman. Bahkan jika halaman dipotong tidak tepat - sedikit terpotong dari tanda trim - tidak akan ada tepi putih yang muncul di halaman.
-- **Trim box**: Trim box menunjukkan ukuran akhir dari dokumen setelah dicetak dan dipotong.
+- **Bleed box**: Jika dokumen memiliki bleed, PDF juga akan memiliki bleed box. Bleed adalah jumlah warna (atau karya seni) yang meluas di luar tepi halaman. Ini digunakan untuk memastikan bahwa ketika dokumen dicetak dan dipotong sesuai ukuran ("trimmed"), tinta akan sampai ke tepi halaman. Bahkan jika halaman dipotong salah - sedikit di luar tanda potong - tidak akan ada tepi putih yang muncul di halaman.
+- **Trim box**: Trim box menunjukkan ukuran akhir dokumen setelah dicetak dan dipotong.
 - **Art box**: Art box adalah kotak yang digambar di sekitar konten aktual halaman dalam dokumen Anda. Kotak halaman ini digunakan saat mengimpor dokumen PDF ke aplikasi lain.
 - **Crop box**: Crop box adalah ukuran "halaman" di mana dokumen PDF Anda ditampilkan di Adobe Acrobat. Dalam tampilan normal, hanya konten dari crop box yang ditampilkan di Adobe Acrobat. Untuk deskripsi rinci tentang properti ini, baca spesifikasi Adobe.Pdf, khususnya 10.10.1 Batas Halaman.
-- **Page.Rect**: perpotongan (persegi panjang yang umumnya terlihat) dari MediaBox dan DropBox. Gambar di bawah ini menggambarkan properti ini.
+- **Page.Rect**: perpotongan (umumnya persegi panjang yang terlihat) dari MediaBox dan DropBox. Gambar di bawah ini menggambarkan properti ini.
 Untuk detail lebih lanjut, silakan kunjungi [halaman ini](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
 Potongan di bawah ini menunjukkan cara memotong halaman:
 
@@ -127,7 +127,7 @@ Setelah perubahan, halaman akan terlihat seperti Gambar 2.
 
 ### Memotong ruang putih di sekitar halaman
 
-Sebagai contoh, Anda dapat memotong ruang putih di sekitar halaman menggunakan pustaka grafis apa pun yang dapat memuat bitmap:
+Sebagai contoh, Anda dapat memotong ruang putih di sekitar halaman menggunakan pustaka grafik apa pun yang dapat memuat bitmap:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -141,7 +141,7 @@ private static void TrimWhiteSpaceAroundPage()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf"))
     {
-        var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+        var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
         using (var imageStr = new MemoryStream())
         {
@@ -257,7 +257,7 @@ private static void TrimWhiteSpaceAroundPage()
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf");
-    var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+    var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
     using var imageStr = new MemoryStream();
 

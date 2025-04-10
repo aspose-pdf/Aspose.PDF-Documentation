@@ -1,12 +1,12 @@
 ---
 title: Recortar páginas PDF programáticamente C#
-linktitle: Recortar páginas
+linktitle: Recortar Páginas
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /es/net/crop-pages/
-description: Puede obtener propiedades de página, como el ancho, la altura, el sangrado, el recorte y el trimbox utilizando Aspose.PDF for .NET.
+description: Puede obtener propiedades de página, como el ancho, la altura, el sangrado, el recorte y el trimbox usando Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Crop PDF Pages programmatically C#",
     "alternativeHeadline": "Crop PDF Pages Easily with Aspose.PDF for .NET",
-    "abstract": "Aspose.PDF for .NET introduce una poderosa nueva característica que permite a los desarrolladores acceder y manipular programáticamente varias propiedades de página de un PDF, incluyendo el media box, bleed box, trim box, art box y crop box. Esta funcionalidad agiliza el proceso de personalización de diseños PDF, asegurando precisión en la presentación de documentos y mejorando la calidad de impresión mientras minimiza los bordes blancos. Con fragmentos de código fáciles de usar, los usuarios pueden integrar sin problemas estas capacidades en sus aplicaciones, mejorando la gestión y manipulación de PDF.",
+    "abstract": "Aspose.PDF for .NET introduce una nueva característica poderosa que permite a los desarrolladores acceder y manipular programáticamente varias propiedades de página de un PDF, incluyendo el media box, bleed box, trim box, art box y crop box. Esta funcionalidad agiliza el proceso de personalización de diseños PDF, asegurando precisión en la presentación de documentos y mejorando la calidad de impresión mientras minimiza los bordes blancos. Con fragmentos de código fáciles de usar, los usuarios pueden integrar sin problemas estas capacidades en sus aplicaciones, mejorando la gestión y manipulación de PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1197",
+    "wordcount": "1205",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@id": "/net/crop-pages/"
     },
     "dateModified": "2025-04-10",
-    "description": "Puede obtener propiedades de página, como el ancho, la altura, el sangrado, el recorte y el trimbox utilizando Aspose.PDF for .NET."
+    "description": "Puede obtener propiedades de página, como el ancho, la altura, el sangrado, el recorte y el trimbox usando Aspose.PDF for .NET."
 }
 </script>
 
@@ -82,8 +82,8 @@ sitemap:
 
 Cada página en un archivo PDF tiene una serie de propiedades, como el ancho, la altura, el sangrado, el recorte y el trimbox. Aspose.PDF le permite acceder a estas propiedades.
 
-- **Media box**: El media box es la caja de página más grande. Corresponde al tamaño de la página (por ejemplo, A4, A5, US Letter, etc.) seleccionado cuando el documento fue impreso en PostScript o PDF. En otras palabras, el media box determina el tamaño físico del medio en el que se muestra o imprime el documento PDF.
-- **Bleed box**: Si el documento tiene sangrado, el PDF también tendrá un bleed box. El sangrado es la cantidad de color (o arte) que se extiende más allá del borde de una página. Se utiliza para asegurarse de que cuando el documento se imprima y se corte a tamaño ("recortado"), la tinta llegue hasta el borde de la página. Incluso si la página está mal recortada - cortada ligeramente fuera de las marcas de recorte - no aparecerán bordes blancos en la página.
+- **Media box**: El media box es la caja de página más grande. Corresponde al tamaño de la página (por ejemplo, A4, A5, Carta de EE. UU., etc.) seleccionado cuando el documento fue impreso en PostScript o PDF. En otras palabras, el media box determina el tamaño físico del medio en el que se muestra o imprime el documento PDF.
+- **Bleed box**: Si el documento tiene sangrado, el PDF también tendrá un bleed box. El sangrado es la cantidad de color (o arte) que se extiende más allá del borde de una página. Se utiliza para asegurarse de que cuando el documento se imprime y se corta a tamaño ("recortado"), la tinta llegue hasta el borde de la página. Incluso si la página está mal recortada - cortada ligeramente fuera de las marcas de recorte - no aparecerán bordes blancos en la página.
 - **Trim box**: El trim box indica el tamaño final de un documento después de imprimir y recortar.
 - **Art box**: El art box es la caja dibujada alrededor del contenido real de las páginas en sus documentos. Esta caja de página se utiliza al importar documentos PDF en otras aplicaciones.
 - **Crop box**: El crop box es el tamaño de "página" en el que se muestra su documento PDF en Adobe Acrobat. En la vista normal, solo se muestran los contenidos del crop box en Adobe Acrobat. Para descripciones detalladas de estas propiedades, lea la especificación de Adobe.Pdf, particularmente 10.10.1 Límites de página.
@@ -121,7 +121,7 @@ private static void CropPage()
 }
 ```
 
-En este ejemplo utilizamos un archivo de muestra [aquí](crop_page.pdf). Inicialmente, nuestra página se ve como se muestra en la Figura 1.
+En este ejemplo usamos un archivo de muestra [aquí](crop_page.pdf). Inicialmente, nuestra página se ve como se muestra en la Figura 1.
 
 Después del cambio, la página se verá como en la Figura 2.
 
@@ -141,7 +141,7 @@ private static void TrimWhiteSpaceAroundPage()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf"))
     {
-        var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+        var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
         using (var imageStr = new MemoryStream())
         {
@@ -257,7 +257,7 @@ private static void TrimWhiteSpaceAroundPage()
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf");
-    var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+    var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
     using var imageStr = new MemoryStream();
 

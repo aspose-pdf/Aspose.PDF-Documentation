@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Crop PDF Pages programmatically C#",
     "alternativeHeadline": "Crop PDF Pages Easily with Aspose.PDF for .NET",
-    "abstract": "Aspose.PDF for .NETは、開発者がPDFのさまざまなページプロパティにプログラムでアクセスし操作できる強力な新機能を紹介します。これには、メディアボックス、ブリードボックス、トリムボックス、アートボックス、クロップボックスが含まれます。この機能により、PDFレイアウトのカスタマイズプロセスが効率化され、文書のプレゼンテーションの精度が確保され、印刷品質が向上し、白いエッジが最小限に抑えられます。使いやすいコードスニペットを使用することで、ユーザーはこれらの機能をアプリケーションにシームレスに統合し、PDFの管理と操作を改善できます。",
+    "abstract": "Aspose.PDF for .NETは、開発者がPDFのさまざまなページプロパティにプログラムでアクセスし、操作できる強力な新機能を紹介します。これには、メディアボックス、ブリードボックス、トリムボックス、アートボックス、クロップボックスが含まれます。この機能により、PDFレイアウトのカスタマイズプロセスが効率化され、文書のプレゼンテーションの精度が確保され、印刷品質が向上し、白いエッジが最小限に抑えられます。使いやすいコードスニペットを使用することで、ユーザーはこれらの機能をアプリケーションにシームレスに統合し、PDFの管理と操作を改善できます。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "901",
+    "wordcount": "907",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -78,15 +78,15 @@ sitemap:
 }
 </script>
 
-## ページプロパティを取得する
+## ページプロパティの取得
 
-PDFファイルの各ページには、幅、高さ、ブリード、クロップ、トリムボックスなどのいくつかのプロパティがあります。Aspose.PDFを使用すると、これらのプロパティにアクセスできます。
+PDFファイルの各ページには、幅、高さ、ブリード、クロップ、トリムボックスなどのプロパティがあります。Aspose.PDFを使用すると、これらのプロパティにアクセスできます。
 
-- **メディアボックス**: メディアボックスは、最も大きなページボックスです。これは、文書がPostScriptまたはPDFに印刷されたときに選択されたページサイズ（例えばA4、A5、USレターなど）に対応します。言い換えれば、メディアボックスはPDF文書が表示または印刷されるメディアの物理的なサイズを決定します。
-- **ブリードボックス**: 文書にブリードがある場合、PDFにもブリードボックスがあります。ブリードは、ページの端を超えて延びる色（またはアートワーク）の量です。これは、文書が印刷され、サイズに切り取られたとき（「トリム」されたとき）、インクがページの端まで届くことを保証するために使用されます。たとえページがトリムマークからわずかにずれて切り取られても、ページに白いエッジは現れません。
-- **トリムボックス**: トリムボックスは、印刷およびトリミング後の文書の最終サイズを示します。
-- **アートボックス**: アートボックスは、文書内のページの実際の内容の周りに描かれたボックスです。このページボックスは、他のアプリケーションでPDF文書をインポートする際に使用されます。
-- **クロップボックス**: クロップボックスは、Adobe AcrobatでPDF文書が表示される「ページ」サイズです。通常の表示では、Adobe Acrobatではクロップボックスの内容のみが表示されます。これらのプロパティの詳細な説明については、Adobe.Pdf仕様書、特に10.10.1ページ境界を参照してください。
+- **メディアボックス**: メディアボックスは、最も大きなページボックスです。これは、ドキュメントがPostScriptまたはPDFに印刷されたときに選択されたページサイズ（例えばA4、A5、USレターなど）に対応します。言い換えれば、メディアボックスはPDFドキュメントが表示または印刷されるメディアの物理的なサイズを決定します。
+- **ブリードボックス**: ドキュメントにブリードがある場合、PDFにもブリードボックスがあります。ブリードは、ページの端を超えて延びる色（またはアートワーク）の量です。これは、ドキュメントが印刷され、サイズにカット（「トリム」）されるときに、インクがページの端まで届くことを保証するために使用されます。たとえページがトリムマークからわずかに外れてカットされても、ページに白いエッジは現れません。
+- **トリムボックス**: トリムボックスは、印刷およびトリミング後のドキュメントの最終サイズを示します。
+- **アートボックス**: アートボックスは、ドキュメント内のページの実際の内容の周りに描かれたボックスです。このページボックスは、他のアプリケーションでPDFドキュメントをインポートする際に使用されます。
+- **クロップボックス**: クロップボックスは、Adobe AcrobatでPDFドキュメントが表示される「ページ」サイズです。通常の表示では、Adobe Acrobatに表示されるのはクロップボックスの内容のみです。これらのプロパティの詳細な説明については、Adobe.Pdf仕様書、特に10.10.1ページ境界を参照してください。
 - **Page.Rect**: メディアボックスとドロップボックスの交差点（一般的に見える長方形）です。以下の図はこれらのプロパティを示しています。
 詳細については、[このページ](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)をご覧ください。
 
@@ -141,7 +141,7 @@ private static void TrimWhiteSpaceAroundPage()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf"))
     {
-        var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+        var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
         using (var imageStr = new MemoryStream())
         {
@@ -257,7 +257,7 @@ private static void TrimWhiteSpaceAroundPage()
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf");
-    var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+    var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
     using var imageStr = new MemoryStream();
 

@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /ko/net/crop-pages/
-description: Aspose.PDF for .NET를 사용하여 너비, 높이, 여백, 자르기 및 트림 박스와 같은 페이지 속성을 얻을 수 있습니다.
+description: Aspose.PDF for .NET를 사용하여 너비, 높이, 여백, 자르기 및 트림 박스와 같은 페이지 속성을 가져올 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1073",
+    "wordcount": "1079",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@id": "/net/crop-pages/"
     },
     "dateModified": "2025-04-10",
-    "description": "Aspose.PDF for .NET를 사용하여 너비, 높이, 여백, 자르기 및 트림 박스와 같은 페이지 속성을 얻을 수 있습니다."
+    "description": "Aspose.PDF for .NET를 사용하여 너비, 높이, 여백, 자르기 및 트림 박스와 같은 페이지 속성을 가져올 수 있습니다."
 }
 </script>
 
@@ -86,7 +86,7 @@ PDF 파일의 각 페이지는 너비, 높이, 여백, 자르기 및 트림 박�
 - **여백 박스**: 문서에 여백이 있는 경우 PDF에도 여백 박스가 있습니다. 여백은 페이지의 가장자리를 넘어 확장되는 색상(또는 아트워크)의 양입니다. 이는 문서가 인쇄되고 크기에 맞게 잘릴 때("트림") 잉크가 페이지의 가장자리까지 가도록 보장하는 데 사용됩니다. 페이지가 잘못 잘리더라도 - 트림 마크에서 약간 벗어나 잘리더라도 - 페이지에 흰색 가장자가 나타나지 않습니다.
 - **트림 박스**: 트림 박스는 인쇄 및 트림 후 문서의 최종 크기를 나타냅니다.
 - **아트 박스**: 아트 박스는 문서의 페이지에 실제 내용 주위에 그려진 박스입니다. 이 페이지 박스는 다른 애플리케이션에서 PDF 문서를 가져올 때 사용됩니다.
-- **자르기 박스**: 자르기 박스는 PDF 문서가 Adobe Acrobat에서 표시되는 "페이지" 크기입니다. 일반 보기에서는 Adobe Acrobat에서 자르기 박스의 내용만 표시됩니다. 이러한 속성에 대한 자세한 설명은 Adobe.Pdf 사양, 특히 10.10.1 페이지 경계를 읽어보십시오.
+- **자르기 박스**: 자르기 박스는 PDF 문서가 Adobe Acrobat에서 표시되는 "페이지" 크기입니다. 일반 보기에서는 Adobe Acrobat에서 자르기 박스의 내용만 표시됩니다. 이러한 속성에 대한 자세한 설명은 Adobe.Pdf 사양, 특히 10.10.1 페이지 경계를 참조하십시오.
 - **Page.Rect**: 미디어 박스와 드롭 박스의 교차점(일반적으로 보이는 사각형)입니다. 아래 그림은 이러한 속성을 설명합니다.
 자세한 내용은 [이 페이지](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)를 방문하십시오.
 
@@ -141,7 +141,7 @@ private static void TrimWhiteSpaceAroundPage()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf"))
     {
-        var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+        var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
         using (var imageStr = new MemoryStream())
         {
@@ -257,7 +257,7 @@ private static void TrimWhiteSpaceAroundPage()
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf");
-    var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
+    var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
 
     using var imageStr = new MemoryStream();
 
