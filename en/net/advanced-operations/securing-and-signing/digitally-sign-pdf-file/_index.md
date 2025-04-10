@@ -200,10 +200,6 @@ private static void Verify()
 
 ## Verify digital signatures with a certificate check
 
-Here is the English translation of your documentation text:
-
----
-
 When verifying a digital signature, you can check the signing certificate for revocation.
 
 Unfortunately, Aspose.PDF cannot verify the authenticity of the root or intermediate certificates in the certificate chain.  
@@ -239,22 +235,22 @@ If Adobe Acrobat cannot find the certificate chain, it does not check the revoca
 private static void VerifySignatureWithCertificateCheck(string filePath)
 {
     // Open PDF document
-    using (Document document = new Document(filePath))
+    using (var document = new Aspose.Pdf.Document(filePath))
     {
-         // Create an instance of PdfFileSignature for working with signatures in the document
-        using (PdfFileSignature pdfSign = new PdfFileSignature(document))
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
             // Find all signatures
-            foreach (string signName in pdfSign.GetSignNames())
+            foreach (var signName in pdfSign.GetSignatureNames())
             {
                 // Create a certificate validation option
-                ValidationOptions options = new ValidationOptions();
+                var options = new Aspose.Pdf.Security.ValidationOptions();
                 options.ValidationMode = ValidationMode.Strict;
                 options.ValidationMethod = ValidationMethod.Auto;
                 options.CheckCertificateChain = true;
                 options.RequestTimeout = 20000;
 
-                ValidationResult validationResult;
+                Aspose.Pdf.Security.ValidationResult validationResult;
                 // Verify a digital signature
                 bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
                 Console.WriteLine("Certificate validation resul: " + validationResult.Status);
@@ -264,7 +260,6 @@ private static void VerifySignatureWithCertificateCheck(string filePath)
     }
 }
 ```
-
 
 ## Add timestamp to digital signature
 
