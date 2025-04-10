@@ -125,6 +125,8 @@ In this example we used a sample file [here](crop_page.pdf). Initially our page 
 
 After the change, the page will look like Figure 2.
 
+### Trim white spaces around a page
+
 For example, you can trim white spaces around a page using any graphics library that can load bitmaps:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -158,8 +160,8 @@ private static void TrimWhiteSpaceAroundPage()
 // Determine white areas with System.Drawing
 private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.Rectangle prevCropBox)
 {
-    System.Drawing.Imaging.BitmapData imageBitmapData = pageBitmap.LockBits(new System.Drawing.Rectangle(0, 0, pageBitmap.Width, pageBitmap.Height),
-                            System.Drawing.Imaging.ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppRgb);
+    var imageBitmapData = pageBitmap.LockBits(new Rectangle(0, 0, pageBitmap.Width, pageBitmap.Height),
+                            ImageLockMode.ReadOnly, PixelFormat.Format32bppRgb);
 
     int toHeight = pageBitmap.Height;
     int toWidth = pageBitmap.Width;
@@ -169,18 +171,18 @@ private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.
     int? topNonWhite = null;
     int? bottomNonWhite = null;
 
-    byte[] imageRowBytes = new byte[imageBitmapData.Stride];
+    var imageRowBytes = new byte[imageBitmapData.Stride];
     for (int y = 0; y < toHeight; y++)
     {
 
         // Copy the row data to byte array
         if (IntPtr.Size == 4)
         {
-            System.Runtime.InteropServices.Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt32() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt32() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
         }
         else
         {
-            System.Runtime.InteropServices.Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt64() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt64() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
         }
 
         int? leftNonWhite_row = null;
@@ -257,13 +259,13 @@ private static void TrimWhiteSpaceAroundPage()
     using var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf");
     var device = new Aspose.Pdf.Devices.PngDevice(new Resolution(300));
 
-    using (var imageStr = new MemoryStream())
-    {
-        // Convert page to PNG image
-        device.Process(document.Pages[1], imageStr);
-        using var pageBitmap = new Bitmap(imageStr);
-        document.Pages[1].CropBox = GetNewCropBox(pageBitmap, document.Pages[1].CropBox);
-    }
+    using var imageStr = new MemoryStream();
+
+    // Convert page to PNG image
+    device.Process(document.Pages[1], imageStr);
+    using var pageBitmap = new Bitmap(imageStr);
+    document.Pages[1].CropBox = GetNewCropBox(pageBitmap, document.Pages[1].CropBox);
+
     // Save PDF document
     document.Save(dataDir + "TrimWhiteSpaceAroundPage_out.pdf");
 }
@@ -271,8 +273,8 @@ private static void TrimWhiteSpaceAroundPage()
 // Determine white areas with System.Drawing
 private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.Rectangle prevCropBox)
 {
-    System.Drawing.Imaging.BitmapData imageBitmapData = pageBitmap.LockBits(new System.Drawing.Rectangle(0, 0, pageBitmap.Width, pageBitmap.Height),
-                            System.Drawing.Imaging.ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppRgb);
+    var imageBitmapData = pageBitmap.LockBits(new Rectangle(0, 0, pageBitmap.Width, pageBitmap.Height),
+                            ImageLockMode.ReadOnly, PixelFormat.Format32bppRgb);
 
     int toHeight = pageBitmap.Height;
     int toWidth = pageBitmap.Width;
@@ -282,18 +284,18 @@ private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.
     int? topNonWhite = null;
     int? bottomNonWhite = null;
 
-    byte[] imageRowBytes = new byte[imageBitmapData.Stride];
+    var imageRowBytes = new byte[imageBitmapData.Stride];
     for (int y = 0; y < toHeight; y++)
     {
 
         // Copy the row data to byte array
         if (IntPtr.Size == 4)
         {
-            System.Runtime.InteropServices.Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt32() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt32() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
         }
         else
         {
-            System.Runtime.InteropServices.Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt64() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt64() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
         }
 
         int? leftNonWhite_row = null;
