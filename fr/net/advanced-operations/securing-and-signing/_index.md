@@ -1,13 +1,11 @@
 ---
-title: Sécuriser et signer des PDF en C#
-linktitle: Sécuriser et signer en PDF
+title: Sécurisation et signature de PDF en C#
+linktitle: Sécurisation et signature dans PDF
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 210
 url: /fr/net/securing-and-signing/
 description: Cette section décrit les fonctionnalités d'utilisation d'une signature et de sécurisation de votre document PDF en utilisant C#
-lastmod: "2024-02-07"
+lastmod: "2024-11-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Securing and signing PDF in C#",
     "alternativeHeadline": "Securely Digitally Sign PDFs with C#",
-    "abstract": "Découvrez les capacités avancées de sécurisation et de signature numérique des documents PDF en utilisant C#. Cette fonctionnalité permet aux utilisateurs d'appliquer des signatures numériques robustes avec divers algorithmes et options de hachage, garantissant l'intégrité et l'authenticité du document. Améliorez la sécurité de votre PDF avec les fonctionnalités de signature complètes d'Aspose.PDF adaptées pour une intégration transparente dans les applications .NET",
+    "abstract": "Découvrez les capacités avancées de sécurisation et de signature numérique des documents PDF en utilisant C#. Cette fonctionnalité permet aux utilisateurs d'appliquer des signatures numériques robustes avec divers algorithmes et options de hachage, garantissant l'intégrité et l'authenticité du document. Améliorez la sécurité de votre PDF avec les fonctionnalités de signature complètes d'Aspose.PDF adaptées à une intégration transparente dans les applications .NET",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
-    "wordcount": "302",
+    "wordcount": "259",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2024-02-07",
+    "dateModified": "2025-04-09",
     "description": "Cette section décrit les fonctionnalités d'utilisation d'une signature et de sécurisation de votre document PDF en utilisant C#"
 }
 </script>
@@ -96,8 +94,9 @@ Il est recommandé d'éviter les signatures numériques avec l'algorithme de hac
 
 - [Signer numériquement un fichier PDF](/pdf/fr/net/digitally-sign-pdf-file/)
 - [Définir des privilèges, chiffrer et déchiffrer un fichier PDF](/pdf/fr/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extraire des informations sur les images et les signatures](/pdf/fr/net/extract-image-and-signature-information/)
+- [Extraire des informations sur l'image et la signature](/pdf/fr/net/extract-image-and-signature-information/)
 - [Signer un document PDF depuis une carte intelligente](/pdf/fr/net/sign-pdf-document-from-smart-card/)
+- [Gestionnaire de sécurité personnalisé](/pdf/fr/net/custom-security-handler/)
 
 <script type="application/ld+json">
 {
