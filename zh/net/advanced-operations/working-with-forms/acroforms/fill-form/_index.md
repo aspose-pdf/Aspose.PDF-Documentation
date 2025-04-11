@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Fill PDF Form, AcroForm, Aspose.PDF for .NET, fill PDF forms C#, TextBoxField, PDF document generation, form field value, PDF manipulation library, fill form field, C# PDF library",
-    "wordcount": "177",
+    "wordcount": "328",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/fill-form/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "您可以使用 Aspose.PDF for .NET 库在 PDF 文档中填充表单。"
 }
 </script>
@@ -83,9 +83,12 @@ sitemap:
 
 ## 在 PDF 文档中填充表单字段
 
-要填充表单字段，请从 Document 对象的 Form 集合中获取该字段。然后使用字段的 Value 属性设置字段值。
+要填充表单字段，从 Document 对象的 Form 集合中获取字段，并使用适合字段类型的属性设置其值（例如，文本字段的 Value，复选框的 Checked，或列表框的 Selected）。
 
-此示例选择一个 TextBoxField，并使用 Value 属性设置其值。
+在此示例中，选择了各种字段并设置了它们的属性。
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -95,20 +98,68 @@ private static void FillFormField()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "FillFormField.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithSomeFields.pdf"))
     {
-        // Get a field
-        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
-        {
-            // Modify field value
-            textBoxField.Value = "Value to be filled in the field";
-        }
+        // Set value for TextBoxField
+        var textBoxField = document.Form["textField"] as Aspose.Pdf.Forms.TextBoxField;
+        textBoxField.Value = "Value to be filled in the field";
+
+        // Add option for ListBoxField and select it
+        var listBoxField = document.Form["listField"] as Aspose.Pdf.Forms.ListBoxField;
+        listBoxField.AddOption("Orange");
+        listBoxField.Selected = listBoxField.Options.Count;
+
+        // Set check for CheckboxField
+        var checkboxField = document.Form["checkField"] as Aspose.Pdf.Forms.CheckboxField;
+        checkboxField.Checked = true;
+
+        // Set check for first option of RadioButtonField
+        var radioField = document.Form["radioGroup"] as Aspose.Pdf.Forms.RadioButtonField;
+        radioField.Options[1].Selected = true;
 
         // Save PDF document
-        document.Save(dataDir + "FillFormField_out.pdf");
+        document.Save(dataDir + "DocumentWithSomeFields_out.pdf");
     }
 }
 ```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillFormField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "DocumentWithSomeFields.pdf");
+
+    // Set value for TextBoxField
+    var textBoxField = document.Form.OfType<Aspose.Pdf.Forms.TextBoxField>().First();
+    textBoxField.Value = "Value to be filled in the field";
+
+    // Add option for ListBoxField and select it
+    var listBoxField = document.Form.OfType<Aspose.Pdf.Forms.ListBoxField>().First();
+    listBoxField.AddOption("Orange");
+    listBoxField.Selected = listBoxField.Options.Count;
+
+    // Set check for CheckboxField
+    var checkboxField = document.Form.OfType<Aspose.Pdf.Forms.CheckboxField>().First();
+    checkboxField.Checked = true;
+
+    // Set check for first option of RadioButtonField
+    var radioField = document.Form.OfType<Aspose.Pdf.Forms.RadioButtonField>().First();
+    radioField.Options[1].Selected = true;
+
+    // Save PDF document
+    document.Save(dataDir + "DocumentWithSomeFields_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
