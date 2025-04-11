@@ -188,7 +188,7 @@ private static void AddHyperlink()
 
 Другой распространенный сценарий — найти данный текст в документе с помощью TextFragmentAbsorber и установить его область как гиперссылки на сайт. Ниже приведен фрагмент кода, который реализует это.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -283,7 +283,7 @@ Aspose.PDF for .NET предоставляет отличную функцию �
 
 Чтобы добавить локальную гиперссылку, нам нужно создать TextFragment, чтобы ссылка могла быть связана с TextFragment. Класс [TextFragment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textfragment) имеет свойство Hyperlink, которое используется для связывания экземпляра LocalHyperlink. Следующий фрагмент кода показывает шаги для выполнения этого требования.
 
-{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -384,7 +384,7 @@ private static void AddHyperlink()
 
 Следующий фрагмент кода показывает, как получить назначения гиперссылок (URL) из PDF файла.
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -461,7 +461,7 @@ private static void GetHyperlink()
 
 Чтобы найти содержимое URL, вам нужно работать как с аннотацией, так и с текстом. Объект [Annotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotation) сам по себе не содержит текста, но находится под текстом на странице. Поэтому, чтобы получить текст, аннотация дает границы URL, в то время как объект Text дает содержимое URL. Пожалуйста, смотрите следующий фрагмент кода.
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -555,7 +555,7 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 Следующий фрагмент кода показывает, как удалить действие открытия документа из PDF файла.
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -604,7 +604,7 @@ private static void RemoveOpenAction()
 
 Класс [XYZExplicitDestination](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/xyzexplicitdestination) позволяет вам указать страницу в PDF файле, которую вы хотите открыть. При передаче значения объекта GoToAction в свойство OpenAction класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document), документ открывается на странице, указанной для объекта XYZExplicitDestination. Следующий фрагмент кода показывает, как указать страницу в качестве действия открытия документа.
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

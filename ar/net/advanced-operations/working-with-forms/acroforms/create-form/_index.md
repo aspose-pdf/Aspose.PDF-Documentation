@@ -173,7 +173,7 @@ private static void AddTextBoxFieldToPdf()
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة [RadioButtonField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/radiobuttonfield) في مستند PDF.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -243,7 +243,7 @@ private static void AddRadioButtonToPdf()
 {{< /tabs >}}
 
 يمكن إضافة [TextBoxField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/textboxfield) مع بعض تعليقات الواجهة.
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -352,7 +352,7 @@ private static void AddTextBoxFieldToPdf()
 
 تظهر مقتطفات الشيفرة التالية الخطوات لإضافة RadioButtonField مع ثلاثة خيارات ووضعها داخل خلايا الجدول.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -531,7 +531,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة عنوان سيتم ربطه بـ RadioButtonField:
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -649,7 +649,7 @@ private static void AddingCaptionToRadioButtonField()
 ### خيار آخر لإضافة مربعات اختيار مجمعة
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة حقول checkBox مجمعة في مستند PDF.
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -762,7 +762,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة حقل ComboBox في مستند PDF.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -835,7 +835,7 @@ private static void AddComboBoxToPdf()
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة CheckboxField في مستند PDF.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -900,7 +900,7 @@ private static void AddCheckBoxFieldToPdf()
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة ListBoxField في مستند PDF.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="9" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -967,7 +967,7 @@ private static void AddListBoxFieldToPdf()
 
 تظهر مقتطفات الشيفرة التالية كيفية توقيع مستند PDF بواسطة SignatureField.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="10" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -1040,7 +1040,7 @@ private static void SignPdfBySignatureField()
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة تلميح إلى حقل النموذج، أولاً باستخدام C# ثم Visual Basic.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="11" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp

@@ -205,7 +205,7 @@ private static void GetAllAttachments()
 
 Untuk mendapatkan lampiran individu, kita dapat menentukan indeks lampiran dalam objek `EmbeddedFiles` dari instance Dokumen. Silakan coba menggunakan potongan kode berikut.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -299,7 +299,7 @@ private static void GetIndividualAttachment()
 
 Selain koleksi EmbeddedFiles dari objek Document, Lampiran juga dapat terdapat dalam objek FileAttachmentAnnotation. Di bawah ini adalah kode untuk melihat jumlah dan detail dari Lampiran tersebut.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp

@@ -173,7 +173,7 @@ private static void AddTextBoxFieldToPdf()
 
 다음 코드 스니펫은 PDF 문서에 [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield)를 추가하는 방법을 보여줍니다.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -243,7 +243,7 @@ private static void AddRadioButtonToPdf()
 {{< /tabs >}}
 
 [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)는 일부 위젯 주석과 함께 추가할 수 있습니다.
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -352,7 +352,7 @@ private static void AddTextBoxFieldToPdf()
 
 다음 코드 스니펫은 세 가지 옵션이 있는 RadioButtonField를 추가하고 이를 테이블 셀 안에 배치하는 단계를 보여줍니다.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -531,7 +531,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 
 다음 코드 스니펫은 RadioButtonField와 연결될 캡션을 추가하는 방법을 보여줍니다:
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -649,7 +649,7 @@ private static void AddingCaptionToRadioButtonField()
 ### 그룹화된 체크박스 추가의 또 다른 변형
 
 다음 코드 스니펫은 PDF 문서에 그룹화된 체크박스 필드를 추가하는 방법을 보여줍니다.
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -762,7 +762,7 @@ private static void AddGroupedCheckBoxFieldsToPdf()
 
 다음 코드 스니펫은 PDF 문서에 ComboBox 필드를 추가하는 방법을 보여줍니다.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -835,7 +835,7 @@ private static void AddComboBoxToPdf()
 
 다음 코드 스니펫은 PDF 문서에 CheckboxField를 추가하는 방법을 보여줍니다.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -900,7 +900,7 @@ private static void AddCheckBoxFieldToPdf()
 
 다음 코드 스니펫은 PDF 문서에 ListBoxField를 추가하는 방법을 보여줍니다.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="9" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -967,7 +967,7 @@ private static void AddListBoxFieldToPdf()
 
 다음 코드 스니펫은 SignatureField로 PDF 문서에 서명하는 방법을 보여줍니다.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="10" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -1040,7 +1040,7 @@ Document 클래스는 PDF 문서에서 양식 필드를 관리하는 Form이라�
 
 다음 코드 스니펫은 C#을 사용하여 양식 필드에 툴팁을 추가하는 방법과 Visual Basic을 사용하는 방법을 보여줍니다.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="11" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
