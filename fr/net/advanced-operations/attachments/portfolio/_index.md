@@ -81,7 +81,7 @@ sitemap:
 
 ## Comment créer un portfolio PDF
 
-Aspose.PDF permet de créer des documents de portfolio PDF en utilisant la [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) classe. Ajoutez un fichier dans un objet Document.Collection après l'avoir obtenu avec la [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) classe. Lorsque les fichiers ont été ajoutés, utilisez la méthode Save de la classe Document pour enregistrer le document de portfolio.
+Aspose.PDF permet de créer des documents de portfolio PDF en utilisant la [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) classe. Ajoutez un fichier dans un objet Document.Collection après l'avoir obtenu avec la [FileSpecification](https://reference.aspose.com/pdf/fr/net/aspose.pdf/filespecification) classe. Lorsque les fichiers ont été ajoutés, utilisez la méthode Save de la classe Document pour enregistrer le document de portfolio.
 
 L'exemple suivant utilise un fichier Microsoft Excel, un document Word et un fichier image pour créer un portfolio PDF.
 
@@ -131,7 +131,7 @@ private static void CreatePortfolio()
 
 Les portfolios PDF vous permettent de rassembler du contenu provenant de diverses sources (par exemple, fichiers PDF, Word, Excel, JPEG) dans un conteneur unifié. Les fichiers originaux conservent leur identité individuelle mais sont assemblés dans un fichier de portfolio PDF. Les utilisateurs peuvent ouvrir, lire, éditer et formater chaque fichier composant indépendamment des autres fichiers composants.
 
-Aspose.PDF permet la création de documents de portfolio PDF en utilisant la [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) classe. Il offre également la possibilité d'extraire des fichiers d'un portfolio PDF.
+Aspose.PDF permet la création de documents de portfolio PDF en utilisant la [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) classe. Il offre également la possibilité d'extraire des fichiers d'un portfolio PDF.
 
 Le code suivant montre les étapes pour extraire des fichiers d'un portfolio PDF.
 

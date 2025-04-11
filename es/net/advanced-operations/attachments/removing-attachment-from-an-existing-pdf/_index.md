@@ -85,8 +85,8 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 Para eliminar todos los archivos adjuntos asociados con un archivo PDF:
 
-1. Llame al método [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) de la colección [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection).
-1. Guarde el archivo actualizado utilizando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) del objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Llame al método [Delete](https://reference.aspose.com/pdf/es/net/aspose.pdf/embeddedfilecollection/methods/delete) de la colección [EmbeddedFiles](https://reference.aspose.com/pdf/es/net/aspose.pdf/embeddedfilecollection).
+1. Guarde el archivo actualizado utilizando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf.document/save/methods/4) del objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
 
 El siguiente fragmento de código muestra cómo eliminar archivos adjuntos de un documento PDF.
 

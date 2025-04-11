@@ -77,8 +77,8 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[L'espace de noms Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/fr/net/) offre diverses façons de remplir les formulaires PDF. Vous pouvez importer des données à partir d'un fichier XML, DFD, XFDF, utiliser l'API et même utiliser les données d'une feuille de calcul Excel.
-Nous utiliserions la méthode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) de la classe [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) pour exporter les données de la feuille Excel dans un objet DataTable. Ensuite, nous devrions importer ces données dans le formulaire PDF en utilisant la méthode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) de la classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Assurez-vous que le nom de la colonne du DataTable est le même que le nom du champ dans le formulaire PDF.
+[L'espace de noms Aspose.Pdf.Facades](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/fr/net/) offre diverses façons de remplir les formulaires PDF. Vous pouvez importer des données à partir d'un fichier XML, DFD, XFDF, utiliser l'API et même utiliser les données d'une feuille de calcul Excel.
+Nous utiliserions la méthode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) de la classe [Cells](https://reference.aspose.com/pdf/fr/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) pour exporter les données de la feuille Excel dans un objet DataTable. Ensuite, nous devrions importer ces données dans le formulaire PDF en utilisant la méthode [ImportDataTable](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/autofiller/methods/importdatatable) de la classe [AutoFiller](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/autofiller). Assurez-vous que le nom de la colonne du DataTable est le même que le nom du champ dans le formulaire PDF.
 
 {{% /alert %}}
 
@@ -92,7 +92,7 @@ Le formulaire spécifié ci-dessus a une page, avec trois champs nommés "ID", "
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
-Nous devons créer un objet de la classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) et lier le formulaire PDF présent dans les images ci-dessus et utiliser la méthode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) pour remplir les champs du formulaire en utilisant les données présentes dans l'objet DataTable.
+Nous devons créer un objet de la classe [AutoFiller](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/autofiller) et lier le formulaire PDF présent dans les images ci-dessus et utiliser la méthode [ImportDataTable](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/autofiller/methods/importdatatable) pour remplir les champs du formulaire en utilisant les données présentes dans l'objet DataTable.
 Une fois la méthode appelée, un nouveau fichier de formulaire PDF est généré, qui contient cinq pages avec le formulaire rempli en fonction des données de la feuille Excel. Le formulaire PDF d'entrée était une seule page et le résultat est cinq pages, car le nombre de lignes de données dans la feuille Excel est de 5. La classe DataTable offre la capacité d'utiliser la première ligne de la feuille comme nom de colonne.
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
@@ -216,5 +216,5 @@ private static System.Data.DataTable GenerateDataTable()
 ## Conclusion
 
 {{% alert color="primary" %}}
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) offre également la possibilité de remplir un formulaire PDF en utilisant des données provenant d'une base de données, mais cette fonctionnalité est actuellement prise en charge dans la version .NET.
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades) offre également la possibilité de remplir un formulaire PDF en utilisant des données provenant d'une base de données, mais cette fonctionnalité est actuellement prise en charge dans la version .NET.
 {{% /alert %}}

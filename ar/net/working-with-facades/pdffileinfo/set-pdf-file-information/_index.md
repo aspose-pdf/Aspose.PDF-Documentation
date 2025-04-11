@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) تتيح لك تعيين معلومات محددة لملف PDF. تحتاج إلى إنشاء كائن من فئة [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) ثم تعيين خصائص مختلفة محددة للملف مثل المؤلف، العنوان، الكلمات الرئيسية، والمبدع، إلخ. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [SaveNewInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) لكائن [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo).
+[PdfFileInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileinfo) تتيح لك تعيين معلومات محددة لملف PDF. تحتاج إلى إنشاء كائن من فئة [PdfFileInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileinfo) ثم تعيين خصائص مختلفة محددة للملف مثل المؤلف، العنوان، الكلمات الرئيسية، والمبدع، إلخ. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [SaveNewInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) لكائن [PdfFileInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileinfo).
 
 تظهر لك مقتطفات الكود التالية كيفية تعيين معلومات ملف PDF.
 
@@ -103,7 +103,7 @@ private static void SetPdfInfo()
 
 ## تعيين معلومات البيانات الوصفية
 
-تتيح لك طريقة [SetMetaInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) إضافة أي معلومات. في مثالنا، أضفنا حقلًا. تحقق من مقتطف الكود التالي:
+تتيح لك طريقة [SetMetaInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) إضافة أي معلومات. في مثالنا، أضفنا حقلًا. تحقق من مقتطف الكود التالي:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

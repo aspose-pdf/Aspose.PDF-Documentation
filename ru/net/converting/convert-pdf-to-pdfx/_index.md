@@ -1,13 +1,13 @@
 ---
-title: Преобразование PDF в формат обмена PDF/X
-linktitle: Преобразование PDF в формат обмена PDF/X
+title: Конвертация PDF в формат обмена PDF/X
+linktitle: Конвертация PDF в формат обмена PDF/X
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /ru/net/convert-pdf-to-pdfx/
 lastmod: "2025-01-16"
-description: Узнайте, как преобразовать файл PDF в формат PDF/X для обмена графикой и печати с помощью Aspose.PDF for .NET.
+description: Узнайте, как конвертировать файл PDF в формат PDF/X для обмена графикой и печати с использованием Aspose.PDF for .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to PDF/X exchange format",
     "alternativeHeadline": "Effortless PDF to PDF/X Conversion in C#",
-    "abstract": "Поддержка PDF/X в Aspose.PDF для .NET позволяет легко преобразовывать стандартные PDF-файлы в различные форматы, совместимые с PDF/X. Эта функция не только обеспечивает соответствие стандартам PDF/X за счёт комплексной проверки, но и позволяет использовать пользовательский ICC-профиль для обеспечения корректного обмена графикой в любой среде. Изучите надёжные возможности Aspose.PDF для эффективного и надёжного преобразования PDF/X",
+    "abstract": "Поддержка PDF/X в Aspose.PDF for .NET позволяет легко конвертировать стандартные файлы PDF в различные форматы, соответствующие PDF/X. Эта функция не только обеспечивает соответствие стандартам PDF/X через комплексную валидацию, но и позволяет использовать пользовательский ICC профиль для обеспечения правильного обмена графикой в каждой среде. Изучите мощные возможности Aspose.PDF для эффективной и надежной конвертации PDF/X",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "389",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,21 +73,25 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfx/"
     },
-    "dateModified": "2025-01-16",
-    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков."
 }
 </script>
 
-**Aspose.PDF for .NET** позволяет преобразовать PDF-файл в PDF-файл, совместимый с форматом обмена **PDF/X**. В этой статье объясняется, как это сделать.
+**Aspose.PDF for .NET** позволяет вам конвертировать файл PDF в файл, соответствующий <abbr title="Portable Document Format eXchange">PDF/X</abbr>. Эта статья объясняет, как это сделать.
+
+- [Конвертировать PDF в PDF/X-4](#csharp-convert-pdf-to-x4)
 
 Следующие фрагменты кода также работают с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Поддерживаемые стандарты
 **Aspose.PDF for .NET** поддерживает следующие стандарты: PDF/X-1a:2001, PDF/X-1a:2003, PDF/X-3:2003, PDF/X-4.
 
-## Преобразование PDF-файла в PDF/X-4 с использованием внешнего профиля ICC
+## Конвертация файла PDF в PDF/X-4 с внешним ICC профилем
 
-Следующий фрагмент кода показывает, как преобразовывать PDF-файлы в совместимые с PDF/X-4 PDF-файлы и предоставлять внешний профиль ICC для обеспечения правильного воспроизведения цветов.
+<a name="csharp-convert-pdf-to-x4" id="csharp-convert-pdf-to-x4"><strong>Конвертировать PDF в PDF/X4</strong></a>
+
+Следующий фрагмент кода показывает, как конвертировать файлы PDF в PDF/X-4 и предоставить внешний ICC профиль для обеспечения правильной цветопередачи.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

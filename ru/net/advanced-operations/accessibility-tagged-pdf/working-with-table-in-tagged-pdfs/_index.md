@@ -81,7 +81,7 @@ sitemap:
 
 ## Создание таблицы в помеченном PDF
 
-Aspose.PDF for .NET позволяет создавать таблицу в помеченных PDF-документах. Для работы с таблицами API предоставляет класс [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Чтобы создать таблицу, вы можете использовать метод [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Кроме того, вы можете использовать методы [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) и [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) класса TableElement для создания заголовка таблицы, тела таблицы и подвала таблицы соответственно. Чтобы создать строку таблицы, вы можете использовать метод [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) класса [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Вы также можете проверить, соответствует ли созданный PDF-документ требованиям PDF/UA, используя метод Validate() класса Document.
+Aspose.PDF for .NET позволяет создавать таблицу в помеченных PDF-документах. Для работы с таблицами API предоставляет класс [TableElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement). Чтобы создать таблицу, вы можете использовать метод [CreateTableElement()](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent). Кроме того, вы можете использовать методы [CreateTHead()](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) и [CreateTFoot()](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) класса TableElement для создания заголовка таблицы, тела таблицы и подвала таблицы соответственно. Чтобы создать строку таблицы, вы можете использовать метод [CreateTR()](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) класса [TableRowCollectionElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Вы также можете проверить, соответствует ли созданный PDF-документ требованиям PDF/UA, используя метод Validate() класса Document.
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
@@ -357,23 +357,23 @@ private static void CreateTable()
 
 ## Стилизация элемента таблицы
 
-Aspose.PDF for .NET позволяет стилизовать таблицу в помеченном PDF-документе. Чтобы стилизовать таблицу, вы можете создать таблицу, используя метод [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent), и установить стиль таблицы, используя свойства класса [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Следующий список свойств, которые вы можете использовать для стилизации таблицы:
+Aspose.PDF for .NET позволяет стилизовать таблицу в помеченном PDF-документе. Чтобы стилизовать таблицу, вы можете создать таблицу, используя метод [CreateTableElement()](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent), и установить стиль таблицы, используя свойства класса [TableElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement). Следующий список свойств, которые вы можете использовать для стилизации таблицы:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/border).
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
-- [CornerStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
-- [Broken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
-- [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
-- [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
-- [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
-- [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
-- [DefaultColumnWidth](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
-- [IsBroken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
-- [IsBordersIncluded](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
-- [Left](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/left).
-- [Top](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/top).
+- [BackgroundColor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/border).
+- [Alignment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
+- [CornerStyle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
+- [Broken](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
+- [ColumnAdjustment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
+- [ColumnWidths](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
+- [DefaultCellBorder](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
+- [DefaultCellPadding](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
+- [DefaultColumnWidth](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
+- [IsBroken](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
+- [IsBordersIncluded](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
+- [Left](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/left).
+- [Top](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tableelement/properties/top).
 
 Следующий фрагмент кода показывает, как стилизовать таблицу в помеченном PDF-документе:
 
@@ -575,7 +575,7 @@ private static void StyleTable()
 
 ## Стилизация строки таблицы
 
-Aspose.PDF for .NET позволяет стилизовать строку таблицы в помеченном PDF-документе. Чтобы стилизовать строку таблицы, вы можете использовать свойства класса [TableTRElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tabletrelement). Следующий список свойств, которые вы можете использовать для стилизации строки таблицы:
+Aspose.PDF for .NET позволяет стилизовать строку таблицы в помеченном PDF-документе. Чтобы стилизовать строку таблицы, вы можете использовать свойства класса [TableTRElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tabletrelement). Следующий список свойств, которые вы можете использовать для стилизации строки таблицы:
 
 - BackgroundColor.
 - Border.
@@ -772,18 +772,18 @@ private static void StyleTableRow()
 
 ## Стилизация ячейки таблицы
 
-Aspose.PDF for .NET позволяет стилизовать ячейку таблицы в помеченном PDF-документе. Чтобы стилизовать ячейку таблицы, вы можете использовать свойства класса [TableCellElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement). Следующий список свойств, которые вы можете использовать для стилизации ячейки таблицы:
+Aspose.PDF for .NET позволяет стилизовать ячейку таблицы в помеченном PDF-документе. Чтобы стилизовать ячейку таблицы, вы можете использовать свойства класса [TableCellElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement). Следующий список свойств, которые вы можете использовать для стилизации ячейки таблицы:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
-- [IsNoBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
-- [Margin](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
-- [IsWordWrapped](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
-- [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
-- [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
-- [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
+- [BackgroundColor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
+- [IsNoBorder](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
+- [Margin](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
+- [Alignment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
+- [IsWordWrapped](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
+- [VerticalAlignment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
+- [ColSpan](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
+- [RowSpan](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
 
 Следующий фрагмент кода показывает, как стилизовать ячейку таблицы в помеченном PDF-документе:
 

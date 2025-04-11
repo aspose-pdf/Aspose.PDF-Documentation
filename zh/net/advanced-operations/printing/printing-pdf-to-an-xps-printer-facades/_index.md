@@ -83,9 +83,9 @@ sitemap:
 
 ## **在 C# 中将 PDF 打印到 XPS 打印机**
 
-您可以使用 [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) 类将 PDF 文件打印到 XPS 打印机或其他虚拟打印机。为此，创建 PdfViewer 类的对象并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) 方法打开 PDF 文件。您可以使用 [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) 和 [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) 类设置不同的打印设置。您还需要将 [PrinterName](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/printername/) 属性设置为您安装的 XPS 或其他虚拟打印机。
+您可以使用 [PdfViewer](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer) 类将 PDF 文件打印到 XPS 打印机或其他虚拟打印机。为此，创建 PdfViewer 类的对象并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) 方法打开 PDF 文件。您可以使用 [PrinterSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf.printing/printersettings/) 和 [PageSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf.printing/pagesettings/) 类设置不同的打印设置。您还需要将 [PrinterName](https://reference.aspose.com/pdf/zh/net/aspose.pdf.printing/printersettings/printername/) 属性设置为您安装的 XPS 或其他虚拟打印机。
 
-最后，使用 [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) 方法将 PDF 打印到 XPS 或其他虚拟打印机。以下代码片段展示了如何将 PDF 文件打印到 XPS 打印机。
+最后，使用 [PrintDocumentWithSettings](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) 方法将 PDF 打印到 XPS 或其他虚拟打印机。以下代码片段展示了如何将 PDF 文件打印到 XPS 打印机。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -180,7 +180,7 @@ private static void PrintToXpsPrinter()
  
 自 24.4 版本以来，在打印对话框中可以根据 PDF 页面大小选择纸张来源。下一个代码片段使得可以根据 PDF 的页面大小选择打印机纸盘。
 
-此偏好可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/) 外观进行开关。
+此偏好可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/) 外观进行开关。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

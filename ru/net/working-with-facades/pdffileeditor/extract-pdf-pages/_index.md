@@ -77,7 +77,7 @@ draft: false
 
 ## Извлечение страниц PDF между двумя номерами с использованием путей к файлам
 
-[Метод Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет извлекать заданный диапазон страниц из PDF файла. Этот перегруженный метод позволяет извлекать страницы, манипулируя PDF файлами с диска. Этот перегруженный метод требует следующие параметры: путь к входному файлу, начальная страница, конечная страница и путь к выходному файлу. Страницы от начальной до конечной будут извлечены, а выходные данные будут сохранены на диске. Следующий фрагмент кода показывает, как извлечь страницы PDF между двумя номерами, используя пути к файлам.
+[Метод Extract](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет извлекать заданный диапазон страниц из PDF файла. Этот перегруженный метод позволяет извлекать страницы, манипулируя PDF файлами с диска. Этот перегруженный метод требует следующие параметры: путь к входному файлу, начальная страница, конечная страница и путь к выходному файлу. Страницы от начальной до конечной будут извлечены, а выходные данные будут сохранены на диске. Следующий фрагмент кода показывает, как извлечь страницы PDF между двумя номерами, используя пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -96,7 +96,7 @@ private static void Extract_PDFPages_FilePaths()
 
 ## Извлечение массива страниц PDF с использованием путей к файлам
 
-Если вы не хотите извлекать диапазон страниц, а набор конкретных страниц, метод [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) также позволяет это сделать. Сначала вам нужно создать массив целых чисел со всеми номерами страниц, которые необходимо извлечь. Этот перегруженный метод [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) принимает следующие параметры: входной PDF файл, массив целых чисел страниц для извлечения и выходной PDF файл. Следующий фрагмент кода показывает, как извлечь страницы PDF, используя пути к файлам.
+Если вы не хотите извлекать диапазон страниц, а набор конкретных страниц, метод [Extract](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) также позволяет это сделать. Сначала вам нужно создать массив целых чисел со всеми номерами страниц, которые необходимо извлечь. Этот перегруженный метод [Extract](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) принимает следующие параметры: входной PDF файл, массив целых чисел страниц для извлечения и выходной PDF файл. Следующий фрагмент кода показывает, как извлечь страницы PDF, используя пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -122,7 +122,7 @@ private static void Extract_PDFPages_Streams()
 
 ## Извлечение страниц PDF между двумя номерами с использованием потоков
 
-[Метод Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет извлекать диапазон страниц, используя потоки. Вам нужно передать следующие параметры этому перегруженному методу: входной поток, начальная страница, конечная страница и выходной поток. Страницы, указанные в диапазоне между начальной и конечной страницами, будут извлечены из входного потока и сохранены в выходном потоке. Следующий фрагмент кода показывает, как извлечь страницы PDF между двумя номерами, используя потоки.
+[Метод Extract](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет извлекать диапазон страниц, используя потоки. Вам нужно передать следующие параметры этому перегруженному методу: входной поток, начальная страница, конечная страница и выходной поток. Страницы, указанные в диапазоне между начальной и конечной страницами, будут извлечены из входного потока и сохранены в выходном потоке. Следующий фрагмент кода показывает, как извлечь страницы PDF между двумя номерами, используя потоки.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -141,7 +141,7 @@ private static void Extract_ArrayPDFPages_FilePaths()
 
 ## Извлечение массива страниц PDF с использованием потоков
 
-Массив страниц может быть извлечен из PDF потока и сохранен в выходном потоке с использованием соответствующего перегруженного метода [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index). Если вы не хотите извлекать диапазон страниц, а набор конкретных страниц, метод [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) также позволяет это сделать. Сначала вам нужно создать массив целых чисел со всеми номерами страниц, которые необходимо извлечь. Этот перегруженный метод [Extract](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) принимает следующие параметры: входной поток, массив целых чисел страниц для извлечения и выходной поток. Следующий фрагмент кода показывает, как извлечь страницы PDF, используя потоки.
+Массив страниц может быть извлечен из PDF потока и сохранен в выходном потоке с использованием соответствующего перегруженного метода [Extract](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/extract/index). Если вы не хотите извлекать диапазон страниц, а набор конкретных страниц, метод [Extract](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) также позволяет это сделать. Сначала вам нужно создать массив целых чисел со всеми номерами страниц, которые необходимо извлечь. Этот перегруженный метод [Extract](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/extract/index) принимает следующие параметры: входной поток, массив целых чисел страниц для извлечения и выходной поток. Следующий фрагмент кода показывает, как извлечь страницы PDF, используя потоки.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

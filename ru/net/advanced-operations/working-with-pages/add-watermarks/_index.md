@@ -82,13 +82,13 @@ sitemap:
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Водяной знак, созданный в Adobe Acrobat, называется артефактом (как описано в разделе 14.8.2.2 Реальное содержимое и артефакты спецификации PDF). Для работы с артефактами в Aspose.PDF есть два класса: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) и [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
+Водяной знак, созданный в Adobe Acrobat, называется артефактом (как описано в разделе 14.8.2.2 Реальное содержимое и артефакты спецификации PDF). Для работы с артефактами в Aspose.PDF есть два класса: [Artifact](https://reference.aspose.com/pdf/ru/net/aspose.pdf/artifact) и [ArtifactCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/artifactcollection).
 
-Чтобы получить все артефакты на определённой странице, класс [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) имеет свойство Artifacts. Этот раздел объясняет, как работать с артефактами в файлах PDF.
+Чтобы получить все артефакты на определённой странице, класс [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) имеет свойство Artifacts. Этот раздел объясняет, как работать с артефактами в файлах PDF.
 
 ## Работа с артефактами
 
-Класс [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) содержит следующие свойства:
+Класс [Artifact](https://reference.aspose.com/pdf/ru/net/aspose.pdf/artifact) содержит следующие свойства:
 
 - **Тип артефакта**: получает тип артефакта (поддерживает значения перечисления Artifact.ArtifactType, где значения включают Background, Layout, Page, Pagination и Undefined).
 - **Подтип артефакта**: получает подтип артефакта (поддерживает значения перечисления Artifact.ArtifactSubtype, где значения включают Background, Footer, Header, Undefined, Watermark).

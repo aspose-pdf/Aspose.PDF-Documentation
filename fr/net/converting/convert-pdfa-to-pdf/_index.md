@@ -83,7 +83,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 ## Convertir un document PDF/A en PDF
 
 Convertir un document PDF/A en PDF signifie supprimer la <abbr title="Portable Document Format Archive">conformité PDF/A</abbr> du document original. 
-La classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) a la méthode [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) pour supprimer les informations de conformité PDF du fichier d'entrée/source.
+La classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) a la méthode [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/removepdfacompliance) pour supprimer les informations de conformité PDF du fichier d'entrée/source.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -86,9 +86,9 @@ sitemap:
 
 Este tema muestra cómo dividir páginas PDF en archivos PDF individuales en sus aplicaciones .NET. Para dividir páginas PDF en archivos PDF de una sola página utilizando C#, se pueden seguir los siguientes pasos:
 
-1. Recorrer las páginas del documento PDF a través de la colección [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) del objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Para cada iteración, crear un nuevo objeto Document y agregar el objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) individual al documento vacío.
-1. Guardar el nuevo PDF utilizando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Recorrer las páginas del documento PDF a través de la colección [PageCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/pagecollection) del objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+1. Para cada iteración, crear un nuevo objeto Document y agregar el objeto [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page) individual al documento vacío.
+1. Guardar el nuevo PDF utilizando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf.document/save/methods/4).
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 

@@ -79,16 +79,16 @@ sitemap:
 }
 </script>
 
-Аннотации в PDF-документе содержатся в коллекции аннотаций объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Эта коллекция содержит все аннотации только для этой отдельной страницы: каждая страница имеет свою собственную коллекцию аннотаций. Чтобы добавить аннотацию на определенную страницу, добавьте ее в коллекцию аннотаций этой страницы с помощью метода Add.
+Аннотации в PDF-документе содержатся в коллекции аннотаций объекта [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page). Эта коллекция содержит все аннотации только для этой отдельной страницы: каждая страница имеет свою собственную коллекцию аннотаций. Чтобы добавить аннотацию на определенную страницу, добавьте ее в коллекцию аннотаций этой страницы с помощью метода Add.
 
-Используйте класс [ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) в пространстве имен Aspose.PDF.InteractiveFeatures.Annotations, чтобы включить файлы SWF в качестве аннотаций в PDF-документ. Аннотация экрана указывает область страницы, на которой могут воспроизводиться медиафайлы.
+Используйте класс [ScreenAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/screenannotation) в пространстве имен Aspose.PDF.InteractiveFeatures.Annotations, чтобы включить файлы SWF в качестве аннотаций в PDF-документ. Аннотация экрана указывает область страницы, на которой могут воспроизводиться медиафайлы.
 
-Когда вам нужно добавить внешнюю видеоссылку в PDF-документ, вы можете использовать [MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation).
+Когда вам нужно добавить внешнюю видеоссылку в PDF-документ, вы можете использовать [MovieAnnotaiton](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/movieannotation).
 Аннотация фильма содержит анимационную графику и звук, которые будут представлены на экране компьютера и через динамики.
 
-[Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) аналогична текстовой аннотации, за исключением того, что вместо текстовой заметки она содержит звук, записанный с микрофона компьютера или импортированный из файла. Когда аннотация активируется, звук воспроизводится. Аннотация ведет себя как текстовая аннотация во многих отношениях, с другим значком (по умолчанию, динамик), чтобы указать, что она представляет звук.
+[Sound Annotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/soundannotation) аналогична текстовой аннотации, за исключением того, что вместо текстовой заметки она содержит звук, записанный с микрофона компьютера или импортированный из файла. Когда аннотация активируется, звук воспроизводится. Аннотация ведет себя как текстовая аннотация во многих отношениях, с другим значком (по умолчанию, динамик), чтобы указать, что она представляет звук.
 
-Однако, когда требуется встроить медиа в PDF-документ, вам нужно использовать [RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
+Однако, когда требуется встроить медиа в PDF-документ, вам нужно использовать [RichMediaAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/richmediaannotation).
 
 Следующие методы/свойства класса RichMediaAnnotation могут быть использованы.
 
@@ -292,7 +292,7 @@ private static void DeletePolyAnnotation()
 
 ## Добавить аннотации виджетов
 
-Интерактивные формы используют [Widget Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) для представления внешнего вида полей и управления взаимодействиями с пользователем.
+Интерактивные формы используют [Widget Annotations](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/widgetannotation) для представления внешнего вида полей и управления взаимодействиями с пользователем.
 Мы используем эти элементы формы, которые добавляются в PDF, чтобы упростить ввод, отправку информации или выполнение других взаимодействий с пользователем.
 
 Аннотации виджетов являются графическим представлением поля формы на конкретных страницах, поэтому мы не можем создать их напрямую как аннотацию.
@@ -453,14 +453,14 @@ private static void AddNavigationButtons()
 
 3D-аннотация добавляется с использованием модели, созданной в формате U3D.
 
-1. Создайте новый [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Загрузите данные желаемой 3D-модели (в нашем случае "Ring.u3d") для создания [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent).
-1. Создайте объект [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) и свяжите его с документом и 3DContent.
+1. Создайте новый [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Загрузите данные желаемой 3D-модели (в нашем случае "Ring.u3d") для создания [PDF3DContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/pdf3dcontent).
+1. Создайте объект [3dArtWork](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/pdf3dartwork) и свяжите его с документом и 3DContent.
 1. Настройте объект pdf3dArtWork:
 
     - 3DLightingScheme - (в примере мы установим `CAD`)
     - 3DRenderMode - (в примере мы установим `Solid`)
-    - Заполните `ViewArray`, создайте как минимум один [3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) и добавьте его в массив.
+    - Заполните `ViewArray`, создайте как минимум один [3D View](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/pdf3dview) и добавьте его в массив.
 
 1. Установите 3 основных параметра в аннотации:
     - `page`, на которой будет размещена аннотация.
@@ -469,7 +469,7 @@ private static void AddNavigationButtons()
 1. Для лучшего представления 3D-объекта установите рамку границы.
 1. Установите вид по умолчанию (например - TOP).
 1. Добавьте некоторые дополнительные параметры: имя, предварительный постер и т.д.
-1. Добавьте аннотацию на [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. Добавьте аннотацию на [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page).
 1. Сохраните результат.
 
 ### Пример

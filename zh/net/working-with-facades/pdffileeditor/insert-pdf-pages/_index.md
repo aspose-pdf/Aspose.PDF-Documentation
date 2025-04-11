@@ -77,7 +77,7 @@ draft: false
 
 ## 使用文件路径在两个数字之间插入 PDF 页面
 
-可以使用 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类的 [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 方法将特定范围的页面从一个 PDF 插入到另一个 PDF 中。为此，您需要一个输入 PDF 文件，您希望在其中插入页面，一个源文件，从中提取要插入的页面，一个要插入页面的位置，以及要插入到输入 PDF 文件中的源文件的页面范围。此范围通过起始页面和结束页面参数指定。最后，输出 PDF 文件将保存指定范围的页面插入到输入文件中。以下代码片段演示了如何使用文件流在两个数字之间插入 PDF 页面。
+可以使用 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类的 [Insert](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 方法将特定范围的页面从一个 PDF 插入到另一个 PDF 中。为此，您需要一个输入 PDF 文件，您希望在其中插入页面，一个源文件，从中提取要插入的页面，一个要插入页面的位置，以及要插入到输入 PDF 文件中的源文件的页面范围。此范围通过起始页面和结束页面参数指定。最后，输出 PDF 文件将保存指定范围的页面插入到输入文件中。以下代码片段演示了如何使用文件流在两个数字之间插入 PDF 页面。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -97,7 +97,7 @@ private static void InsertPdfPagesBetweenTwoNumbersUsingFilePaths()
 
 ## 使用文件路径插入 PDF 页面数组
 
-如果您想将一些特定页面插入到另一个 PDF 文件中，则可以使用 [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 方法的一个重载，该重载需要一个整数数组来指定页面。在此数组中，您可以指定希望插入到输入 PDF 文件中的特定页面。为此，您需要一个输入 PDF 文件，您希望在其中插入页面，一个源文件，从中提取要插入的页面，一个要插入页面的位置，以及要插入到输入 PDF 文件中的源文件的页面的整数数组。此数组包含您希望插入到输入 PDF 文件中的特定页面列表。最后，输出 PDF 文件将保存指定的页面数组插入到输入文件中。以下代码片段演示了如何使用文件路径插入 PDF 页面数组。
+如果您想将一些特定页面插入到另一个 PDF 文件中，则可以使用 [Insert](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 方法的一个重载，该重载需要一个整数数组来指定页面。在此数组中，您可以指定希望插入到输入 PDF 文件中的特定页面。为此，您需要一个输入 PDF 文件，您希望在其中插入页面，一个源文件，从中提取要插入的页面，一个要插入页面的位置，以及要插入到输入 PDF 文件中的源文件的页面的整数数组。此数组包含您希望插入到输入 PDF 文件中的特定页面列表。最后，输出 PDF 文件将保存指定的页面数组插入到输入文件中。以下代码片段演示了如何使用文件路径插入 PDF 页面数组。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -118,7 +118,7 @@ private static void InsertArrayOfPdfPagesUsingFilePaths()
 
 ## 使用流在两个数字之间插入 PDF 页面
 
-如果您想使用流插入页面范围，只需使用 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类的 [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 方法的适当重载。为此，您需要一个输入 PDF 流，您希望在其中插入页面，一个源流，从中提取要插入的页面，一个要插入页面的位置，以及要插入到输入 PDF 流中的源流的页面范围。此范围通过起始页面和结束页面参数指定。最后，输出 PDF 流将保存指定范围的页面插入到输入流中。以下代码片段演示了如何使用流在两个数字之间插入 PDF 页面。
+如果您想使用流插入页面范围，只需使用 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类的 [Insert](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) 方法的适当重载。为此，您需要一个输入 PDF 流，您希望在其中插入页面，一个源流，从中提取要插入的页面，一个要插入页面的位置，以及要插入到输入 PDF 流中的源流的页面范围。此范围通过起始页面和结束页面参数指定。最后，输出 PDF 流将保存指定范围的页面插入到输入流中。以下代码片段演示了如何使用流在两个数字之间插入 PDF 页面。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

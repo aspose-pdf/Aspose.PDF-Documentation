@@ -81,7 +81,7 @@ El proceso de aplanamiento significa que cuando una anotación se elimina de un 
 
 Cuando se selecciona esta opción, tus anotaciones se incluirán en tu PDF exportado como anotaciones estándar de PDF.
 
-Consulta cómo se utiliza el método [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) en el siguiente fragmento de código.
+Consulta cómo se utiliza el método [flatteningAnnotations](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) en el siguiente fragmento de código.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

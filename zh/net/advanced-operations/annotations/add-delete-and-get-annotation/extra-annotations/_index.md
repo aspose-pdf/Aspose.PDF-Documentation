@@ -87,10 +87,10 @@ sitemap:
 
 创建插入符注释的步骤：
 
-1. 加载 PDF 文件 - new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)。
-1. 创建新的 [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) 并设置插入符参数（new Rectangle, title, Subject, Flags, color, width, StartingStyle 和 EndingStyle）。此注释用于指示文本的插入。
-1. 创建新的 [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) 并设置插入符参数（new Rectangle, title, Subject, Flags, color, width, StartingStyle 和 EndingStyle）。此注释用于指示文本的替换。
-1. 创建新的 [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) 并设置参数（new Rectangle, title, color, new QuadPoints 和 new points, Subject, InReplyTo, ReplyType）。
+1. 加载 PDF 文件 - new [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)。
+1. 创建新的 [Caret Annotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/caretannotation) 并设置插入符参数（new Rectangle, title, Subject, Flags, color, width, StartingStyle 和 EndingStyle）。此注释用于指示文本的插入。
+1. 创建新的 [Caret Annotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/caretannotation) 并设置插入符参数（new Rectangle, title, Subject, Flags, color, width, StartingStyle 和 EndingStyle）。此注释用于指示文本的替换。
+1. 创建新的 [StrikeOutAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/strikeoutannotation) 并设置参数（new Rectangle, title, color, new QuadPoints 和 new points, Subject, InReplyTo, ReplyType）。
 1. 然后我们可以将注释添加到页面。
 
 以下代码片段演示如何将插入符注释添加到 PDF 文件中：
@@ -249,7 +249,7 @@ private static void RedactPage()
 
 ### 外观方法
 
-Aspose.Pdf.Facades 命名空间中还有一个名为 [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 的类，提供了在 PDF 文件中操作现有注释的功能。该类包含一个名为 [RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) 的方法，提供了删除特定页面区域的能力。
+Aspose.Pdf.Facades 命名空间中还有一个名为 [PdfAnnotationEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor) 的类，提供了在 PDF 文件中操作现有注释的功能。该类包含一个名为 [RedactArea(..)](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) 的方法，提供了删除特定页面区域的能力。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

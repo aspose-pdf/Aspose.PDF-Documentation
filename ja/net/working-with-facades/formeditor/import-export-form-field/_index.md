@@ -5,7 +5,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /ja/net/import-export-form-field/
-description: FormEditorクラスを使用してDataTableでフォームフィールドを埋める Aspose.PDF for .NET
+description: FormEditorクラスを使用してDataTableを使ってフォームフィールドを埋める Aspose.PDF for .NET
 lastmod: "2021-06-05"
 draft: false
 ---
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "252",
+    "wordcount": "251",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,12 +70,14 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/import-export-form-field/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
 }
 </script>
 
-Aspose.PDF for .NETは、PDFドキュメント内のフォームフィールドを作成/操作するための優れた機能を提供します。このAPIを使用すると、プログラム的にPDFファイル内のフォームフィールドを埋めたり、[FDFからPDFファイルにデータをインポートする](/pdf/ja/net/import-and-export-data/)、[XFDFからPDFファイルにデータをインポートする](/pdf/ja/net/import-and-export-data/)、[XMLからPDFファイルにデータをインポートする](/pdf/ja/net/import-and-export-data/)ことができます。また、[System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1)オブジェクトからデータをインポートすることもできます。
+Aspose.PDF for .NETは、PDF文書内のフォームフィールドを作成/操作するための優れた機能を提供します。このAPIを使用すると、プログラム的にPDFファイル内のフォームフィールドを埋めたり、[FDFからPDFファイルへのデータのインポート](/pdf/ja/net/import-and-export-data/)、[XFDFからPDFファイルへのデータのインポート](/pdf/ja/net/import-and-export-data/)、[XMLからPDFファイルへのデータのインポート](/pdf/ja/net/import-and-export-data/)を行ったり、さらには[System.Data.DataTable](https://reference.aspose.com/pdf/ja/net/aspose.pdf.table/importdatatable/methods/1)オブジェクトからデータをインポートすることもできます。
+
+## PDFからFDFへのデータのインポート
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
@@ -113,7 +115,7 @@ private static void ImportData()
 }
 ```
 
-## FDFからPDFファイルにデータをエクスポートする
+## FDFからPDFファイルへのデータのエクスポート
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

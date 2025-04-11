@@ -76,7 +76,7 @@ lastmod: "2021-06-24"
 
 ## حذف الصور من صفحة معينة من PDF (Facades)
 
-لحذف الصور من صفحة معينة، تحتاج إلى استدعاء [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) مع معلمات pageNumber و index. تمثل معلمة index مصفوفة من الأعداد الصحيحة - مؤشرات الصور التي سيتم حذفها. أولاً، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) ثم استدعاء طريقة [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). بعد ذلك، يمكنك حفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+لحذف الصور من صفحة معينة، تحتاج إلى استدعاء [DeleteImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) مع معلمات pageNumber و index. تمثل معلمة index مصفوفة من الأعداد الصحيحة - مؤشرات الصور التي سيتم حذفها. أولاً، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) ثم استدعاء طريقة [DeleteImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). بعد ذلك، يمكنك حفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index).
 
 تظهر لك الشيفرة التالية كيفية حذف الصور من صفحة معينة من PDF.
 
@@ -123,7 +123,7 @@ private static void DeleteImage()
 
 ## حذف جميع الصور من ملف PDF (Facades)
 
-يمكن حذف جميع الصور من ملف PDF باستخدام طريقة [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). استدعِ طريقة [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) - النسخة التي لا تحتوي على أي معلمات - لحذف جميع الصور، ثم احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+يمكن حذف جميع الصور من ملف PDF باستخدام طريقة [DeleteImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor). استدعِ طريقة [DeleteImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) - النسخة التي لا تحتوي على أي معلمات - لحذف جميع الصور، ثم احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save/index).
 
 تظهر لك الشيفرة التالية كيفية حذف جميع الصور من ملف PDF.
 
@@ -170,7 +170,7 @@ private static void DeleteImages()
 
 ## استبدال صورة في ملف PDF (Facades)
 
-تتيح لك [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) استبدال صورتك في ملف PDF، استدعِ لذلك طريقة [ReplaceImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) واحفظ النتيجة.
+تتيح لك [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) استبدال صورتك في ملف PDF، استدعِ لذلك طريقة [ReplaceImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) واحفظ النتيجة.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

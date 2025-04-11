@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Para obtener metadatos XMP de un archivo PDF, necesita crear un objeto [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) y vincular el archivo PDF utilizando el método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). Puede pasar propiedades específicas de metadatos XMP al objeto [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) para obtener sus valores. El siguiente fragmento de código le muestra cómo obtener metadatos XMP de un archivo PDF.
+Para obtener metadatos XMP de un archivo PDF, necesita crear un objeto [PdfXmpMetadata](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfxmpmetadata) y vincular el archivo PDF utilizando el método [BindPdf](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/facade/methods/bindpdf/index). Puede pasar propiedades específicas de metadatos XMP al objeto [PdfXmpMetadata](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfxmpmetadata) para obtener sus valores. El siguiente fragmento de código le muestra cómo obtener metadatos XMP de un archivo PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

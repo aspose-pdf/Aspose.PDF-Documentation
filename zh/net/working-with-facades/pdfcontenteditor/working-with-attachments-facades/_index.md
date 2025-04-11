@@ -79,7 +79,7 @@ draft: false
 
 ## 从现有 PDF 文件中添加附件
 
-您可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类在现有 PDF 文件中添加附件。附件可以通过文件路径从磁盘上的文件添加。您可以使用 [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 方法添加附件。该方法接受两个参数：文件路径和附件描述。首先，您需要打开现有的 PDF 文件并将附件添加到其中。然后，您可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法保存输出 PDF 文件。
+您可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类在现有 PDF 文件中添加附件。附件可以通过文件路径从磁盘上的文件添加。您可以使用 [AddDocumentAttachment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 方法添加附件。该方法接受两个参数：文件路径和附件描述。首先，您需要打开现有的 PDF 文件并将附件添加到其中。然后，您可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法保存输出 PDF 文件。
 
 以下代码片段演示了如何从文件中添加附件。例如，让我们添加 MP3 文件。
 
@@ -125,7 +125,7 @@ private static void AddAttachment()
 
 ## 从现有 PDF 文件中的流添加附件
 
-可以使用 [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 方法从流 - FileStream - 在 PDF 文件中添加附件。该方法接受三个参数：流、附件名称和附件描述。为了添加附件，您需要创建 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 方法绑定输入 PDF 文件。之后，您可以调用 [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 方法来添加附件。最后，您可以调用 Save 方法来保存更新后的 PDF 文件。以下代码片段演示了如何从流中添加附件。
+可以使用 [AddDocumentAttachment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 方法从流 - FileStream - 在 PDF 文件中添加附件。该方法接受三个参数：流、附件名称和附件描述。为了添加附件，您需要创建 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/facade/methods/bindpdf/index) 方法绑定输入 PDF 文件。之后，您可以调用 [AddDocumentAttachment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) 方法来添加附件。最后，您可以调用 Save 方法来保存更新后的 PDF 文件。以下代码片段演示了如何从流中添加附件。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -172,7 +172,7 @@ private static void AddAttachment()
 
 ## 从现有 PDF 文件中删除所有附件
 
-[DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) 方法允许您从现有 PDF 文件中删除所有附件。调用 [DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) 方法。最后，您必须调用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法以保存更新后的 PDF 文件。以下代码片段演示了如何从现有 PDF 文件中删除所有附件。
+[DeleteAttachments](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) 方法允许您从现有 PDF 文件中删除所有附件。调用 [DeleteAttachments](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) 方法。最后，您必须调用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法以保存更新后的 PDF 文件。以下代码片段演示了如何从现有 PDF 文件中删除所有附件。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

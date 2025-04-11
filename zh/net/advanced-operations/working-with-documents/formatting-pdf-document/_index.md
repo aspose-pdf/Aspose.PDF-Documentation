@@ -85,7 +85,7 @@ sitemap:
 
 本主题帮助您了解如何获取文档窗口、查看应用程序的属性，以及页面的显示方式。要设置这些属性：
 
-使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类打开 PDF 文件。现在，您可以设置 Document 对象的属性，例如
+使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类打开 PDF 文件。现在，您可以设置 Document 对象的属性，例如
 
 - CenterWindow – 将文档窗口居中显示在屏幕上。默认值：false。
 - Direction – 阅读顺序。这决定了页面在并排显示时的布局。默认值：从左到右。
@@ -99,7 +99,7 @@ sitemap:
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
-以下代码片段演示了如何使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类获取属性。
+以下代码片段演示了如何使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类获取属性。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -154,7 +154,7 @@ private static void GetDocumentWindowProperties()
 
 本主题解释如何设置文档窗口、查看应用程序和页面显示的属性。要设置这些不同的属性：
 
-1. 使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类打开 PDF 文件。
+1. 使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类打开 PDF 文件。
 1. 设置 Document 对象的属性。
 1. 使用 Save 方法保存更新后的 PDF 文件。
 
@@ -171,7 +171,7 @@ private static void GetDocumentWindowProperties()
 - PageLayout。
 - PageMode。
 
-每个属性在下面的代码中使用并描述。以下代码片段演示了如何使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类设置属性。
+每个属性在下面的代码中使用并描述。以下代码片段演示了如何使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类设置属性。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -229,7 +229,7 @@ private static void SetDocumentWindowProperties()
 
 PDF 阅读器支持 [14 种核心字体](https://en.wikipedia.org/wiki/PDF#Text)，以便文档可以在不同平台上以相同的方式显示。当 PDF 包含不属于 14 种核心字体的字体时，请将字体嵌入 PDF 文件，以避免字体替换。
 
-Aspose.PDF for .NET 支持在现有 PDF 文件中嵌入字体。您可以嵌入完整字体或字体的子集。要嵌入字体，请使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类打开 PDF 文件。然后使用 [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) 类将字体嵌入 PDF 文件。要嵌入完整字体，请使用 Font 类的 IsEmbeded 属性；要使用字体的子集，请使用 IsSubset 属性。
+Aspose.PDF for .NET 支持在现有 PDF 文件中嵌入字体。您可以嵌入完整字体或字体的子集。要嵌入字体，请使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类打开 PDF 文件。然后使用 [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text) 类将字体嵌入 PDF 文件。要嵌入完整字体，请使用 Font 类的 IsEmbeded 属性；要使用字体的子集，请使用 IsSubset 属性。
 
 {{% alert color="primary" %}}
 
@@ -241,7 +241,7 @@ Aspose.PDF for .NET 支持在现有 PDF 文件中嵌入字体。您可以嵌入�
 
 ### 嵌入标准类型 1 字体
 
-某些 PDF 文档使用特殊的 Adobe 字体集中的字体。来自此集合的字体称为“标准类型 1 字体”。此集合包括 14 种字体，嵌入此类型的字体需要使用特殊标志，即 [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts)。以下是可以用于获取包含所有字体（包括标准类型 1 字体）的文档的代码片段：
+某些 PDF 文档使用特殊的 Adobe 字体集中的字体。来自此集合的字体称为“标准类型 1 字体”。此集合包括 14 种字体，嵌入此类型的字体需要使用特殊标志，即 [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/embedstandardfonts)。以下是可以用于获取包含所有字体（包括标准类型 1 字体）的文档的代码片段：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
 
 ### 从 PDF 文档中获取所有字体
 
-如果您想从 PDF 文档中获取所有字体，可以使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类提供的 FontUtilities.GetAllFonts() 方法。请查看以下代码片段以获取现有 PDF 文档中的所有字体：
+如果您想从 PDF 文档中获取所有字体，可以使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类提供的 FontUtilities.GetAllFonts() 方法。请查看以下代码片段以获取现有 PDF 文档中的所有字体：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -450,7 +450,7 @@ private static void SetFontSubsetStrategy()
 
 有时，您想确定 PDF 文档的当前缩放因子。使用 Aspose.Pdf，您可以找出当前值并设置一个。
 
-[GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) 类的 Destination 属性允许您获取与 PDF 文件关联的缩放值。同样，它可以用于设置文件的缩放因子。
+[GoToAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/gotoaction) 类的 Destination 属性允许您获取与 PDF 文件关联的缩放值。同样，它可以用于设置文件的缩放因子。
 
 #### 设置缩放因子
 

@@ -83,9 +83,9 @@ draft: false
 
 ## تشفير ملف PDF باستخدام أنواع وخوارزميات تشفير مختلفة
 
-لتشفير ملف PDF، تحتاج إلى إنشاء كائن [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) ثم استدعاء طريقة [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). يمكنك تمرير كلمة مرور المستخدم، وكلمة مرور المالك، والامتيازات إلى طريقة [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). تحتاج أيضًا إلى تمرير قيم KeySize و Algorithm إلى هذه الطريقة.
+لتشفير ملف PDF، تحتاج إلى إنشاء كائن [PdfFileSecurity](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesecurity) ثم استدعاء طريقة [EncryptFile](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). يمكنك تمرير كلمة مرور المستخدم، وكلمة مرور المالك، والامتيازات إلى طريقة [EncryptFile](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). تحتاج أيضًا إلى تمرير قيم KeySize و Algorithm إلى هذه الطريقة.
 
-راجع قائمة ممكنة من مثل هذه [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm):
+راجع قائمة ممكنة من مثل هذه [CryptoAlgorithm](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cryptoalgorithm):
 
 |**اسم العضو**|**القيمة**|**الوصف**|
 | :- | :- | :- |

@@ -82,7 +82,7 @@ sitemap:
 
 ## البحث والحصول على النص من جميع صفحات مستند PDF
 
-تسمح لك فئة [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) بالعثور على نص يتطابق مع عبارة معينة، من جميع صفحات مستند PDF. للبحث عن نص من المستند بالكامل، تحتاج إلى استدعاء طريقة Accept لمجموعة الصفحات. تأخذ طريقة [Accept](https://reference.aspose.com/pdf/net/aspose.pdf.page/accept/methods/3) كائن TextFragmentAbsorber كمعامل، والذي يعيد مجموعة من كائنات TextFragment. يمكنك التكرار عبر جميع الأجزاء والحصول على خصائصها مثل النص، الموضع (XIndent، YIndent)، اسم الخط، حجم الخط، قابلية الوصول، مضمّن، مجموعة فرعية، لون المقدمة، إلخ.
+تسمح لك فئة [TextFragmentAbsorber](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragmentabsorber) بالعثور على نص يتطابق مع عبارة معينة، من جميع صفحات مستند PDF. للبحث عن نص من المستند بالكامل، تحتاج إلى استدعاء طريقة Accept لمجموعة الصفحات. تأخذ طريقة [Accept](https://reference.aspose.com/pdf/ar/net/aspose.pdf.page/accept/methods/3) كائن TextFragmentAbsorber كمعامل، والذي يعيد مجموعة من كائنات TextFragment. يمكنك التكرار عبر جميع الأجزاء والحصول على خصائصها مثل النص، الموضع (XIndent، YIndent)، اسم الخط، حجم الخط، قابلية الوصول، مضمّن، مجموعة فرعية، لون المقدمة، إلخ.
 
 تظهر لك مقتطفات الشيفرة التالية كيفية البحث عن نص من جميع الصفحات.
 

@@ -83,19 +83,13 @@ sitemap:
 
 This article explains how to **convert PDF to PowerPoint using C#**. It covers these topics.
 
-_Format_: **PPTX**
-- [C# PDF to PPTX](#csharp-pdf-to-pptx)
-- [C# Convert PDF to PPTX](#csharp-pdf-to-pptx)
-- [C# How to convert PDF file to PPTX](#csharp-pdf-to-pptx)
-
-_Format_: **PowerPoint**
-- [C# PDF to PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# Convert PDF to PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# How to convert PDF file to PowerPoint](#csharp-pdf-to-powerpoint)
+- [Convert PDF to PowerPoint](#csharp-pdf-to-powerpoint)
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ## C# PDF to PowerPoint and PPTX Conversion
+
+<a name="csharp-convert-pdf-to-powerpoint" id="csharp-convert-pdf-to-powerpoint"><strong>Convert PDF to PowerPoint</strong></a>
 
 **Aspose.PDF for .NET** lets you track the progress of PDF to PPTX conversion.
 
@@ -107,7 +101,7 @@ During PDF to <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abb
 
 In order to convert PDF to PPTX, Aspose.PDF for .NET advice to use the following code steps.
 
-<a name="csharp-pdf-to-powerpoint"><strong>Steps: Convert PDF to PowerPoint in C#</strong></a> | <a name="csharp-pdf-to-pptx"><strong>Steps: Convert PDF to PPTX in C#</strong></a>
+<a name="csharp-pdf-to-powerpoint"><strong>Convert PDF to PowerPoint</strong></a>
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 2. Create an instance of [PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class.
@@ -222,27 +216,3 @@ private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.Progress
     }
 }
 ```
-
-## See Also 
-
-This article also covers these topics. The codes are same as above.
-
-_Format_: **PowerPoint**
-- [C# PDF to PowerPoint Code](#csharp-pdf-to-powerpoint)
-- [C# PDF to PowerPoint API](#csharp-pdf-to-powerpoint)
-- [C# PDF to PowerPoint Programmatically](#csharp-pdf-to-powerpoint)
-- [C# PDF to PowerPoint Library](#csharp-pdf-to-powerpoint)
-- [C# Save PDF as PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# Generate PowerPoint from PDF](#csharp-pdf-to-powerpoint)
-- [C# Create PowerPoint from PDF](#csharp-pdf-to-powerpoint)
-- [C# PDF to PowerPoint Converter](#csharp-pdf-to-powerpoint)
-
-_Format_: **PPTX**
-- [C# PDF to PPTX Code](#csharp-pdf-to-pptx)
-- [C# PDF to PPTX API](#csharp-pdf-to-pptx)
-- [C# PDF to PPTX Programmatically](#csharp-pdf-to-pptx)
-- [C# PDF to PPTX Library](#csharp-pdf-to-pptx)
-- [C# Save PDF as PPTX](#csharp-pdf-to-pptx)
-- [C# Generate PPTX from PDF](#csharp-pdf-to-pptx)
-- [C# Create PPTX from PDF](#csharp-pdf-to-pptx)
-- [C# PDF to PPTX Converter](#csharp-pdf-to-pptx)

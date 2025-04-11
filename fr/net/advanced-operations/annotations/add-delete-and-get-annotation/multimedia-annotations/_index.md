@@ -79,16 +79,16 @@ sitemap:
 }
 </script>
 
-Les annotations dans un document PDF sont contenues dans la collection Annotations d'un objet [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Cette collection contient toutes les annotations pour cette page individuelle uniquement : chaque page a sa propre collection Annotations. Pour ajouter une annotation à une page particulière, ajoutez-la à la collection Annotations de cette page en utilisant la méthode Add.
+Les annotations dans un document PDF sont contenues dans la collection Annotations d'un objet [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page). Cette collection contient toutes les annotations pour cette page individuelle uniquement : chaque page a sa propre collection Annotations. Pour ajouter une annotation à une page particulière, ajoutez-la à la collection Annotations de cette page en utilisant la méthode Add.
 
-Utilisez la classe [ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) dans l'espace de noms Aspose.PDF.InteractiveFeatures.Annotations pour inclure des fichiers SWF en tant qu'annotations dans un document PDF à la place. Une annotation d'écran spécifie une région d'une page sur laquelle des clips multimédias peuvent être lus.
+Utilisez la classe [ScreenAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/screenannotation) dans l'espace de noms Aspose.PDF.InteractiveFeatures.Annotations pour inclure des fichiers SWF en tant qu'annotations dans un document PDF à la place. Une annotation d'écran spécifie une région d'une page sur laquelle des clips multimédias peuvent être lus.
 
-Lorsque vous devez ajouter un lien vidéo externe dans un document PDF, vous pouvez utiliser [MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation).
+Lorsque vous devez ajouter un lien vidéo externe dans un document PDF, vous pouvez utiliser [MovieAnnotaiton](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/movieannotation).
 Une annotation de film contient des graphiques animés et du son à présenter sur l'écran de l'ordinateur et à travers les haut-parleurs.
 
-Une [Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) est analogue à une annotation de texte, sauf qu'au lieu d'une note textuelle, elle contient un son enregistré à partir du microphone de l'ordinateur ou importé d'un fichier. Lorsque l'annotation est activée, le son est joué. L'annotation se comporte comme une annotation de texte dans la plupart des cas, avec une icône différente (par défaut, un haut-parleur) pour indiquer qu'elle représente un son.
+Une [Sound Annotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/soundannotation) est analogue à une annotation de texte, sauf qu'au lieu d'une note textuelle, elle contient un son enregistré à partir du microphone de l'ordinateur ou importé d'un fichier. Lorsque l'annotation est activée, le son est joué. L'annotation se comporte comme une annotation de texte dans la plupart des cas, avec une icône différente (par défaut, un haut-parleur) pour indiquer qu'elle représente un son.
 
-Cependant, lorsqu'il est nécessaire d'intégrer des médias dans un document PDF, vous devez utiliser [RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
+Cependant, lorsqu'il est nécessaire d'intégrer des médias dans un document PDF, vous devez utiliser [RichMediaAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/richmediaannotation).
 
 Les méthodes/propriétés suivantes de la classe RichMediaAnnotation peuvent être utilisées.
 
@@ -292,7 +292,7 @@ private static void DeletePolyAnnotation()
 
 ## Ajouter des annotations de widget
 
-Les formulaires interactifs utilisent des [Widget Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) pour représenter l'apparence des champs et gérer les interactions des utilisateurs.
+Les formulaires interactifs utilisent des [Widget Annotations](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/widgetannotation) pour représenter l'apparence des champs et gérer les interactions des utilisateurs.
 Nous utilisons ces éléments de formulaire qui s'ajoutent à un PDF pour faciliter la saisie, la soumission d'informations ou effectuer d'autres interactions utilisateur.
 
 Les annotations de widget sont une représentation graphique d'un champ de formulaire sur des pages spécifiques, donc nous ne pouvons pas les créer directement en tant qu'annotation.
@@ -453,14 +453,14 @@ La tâche principale de la modélisation 3D est l'idée d'un objet futur ou d'un
 
 L'annotation 3D est ajoutée à l'aide d'un modèle créé au format U3D.
 
-1. Créez un nouveau [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Chargez les données du modèle 3D souhaité (dans notre cas "Ring.u3d") pour créer [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent).
-1. Créez un objet [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) et liez-le au document et au 3DContent.
+1. Créez un nouveau [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Chargez les données du modèle 3D souhaité (dans notre cas "Ring.u3d") pour créer [PDF3DContent](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/pdf3dcontent).
+1. Créez un objet [3dArtWork](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/pdf3dartwork) et liez-le au document et au 3DContent.
 1. Réglez l'objet pdf3dArtWork :
 
     - 3DLightingScheme - (nous allons définir `CAD` dans l'exemple)
     - 3DRenderMode - (nous allons définir `Solid` dans l'exemple)
-    - Remplissez `ViewArray`, créez au moins une [3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) et ajoutez-la au tableau.
+    - Remplissez `ViewArray`, créez au moins une [3D View](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/pdf3dview) et ajoutez-la au tableau.
 
 1. Définissez 3 paramètres de base dans l'annotation :
     - la `page` sur laquelle l'annotation sera placée.
@@ -469,7 +469,7 @@ L'annotation 3D est ajoutée à l'aide d'un modèle créé au format U3D.
 1. Pour une meilleure présentation de l'objet 3D, définissez le cadre de bordure.
 1. Définissez la vue par défaut (par exemple - TOP).
 1. Ajoutez quelques paramètres supplémentaires : nom, affiche de prévisualisation, etc.
-1. Ajoutez l'annotation à la [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. Ajoutez l'annotation à la [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page).
 1. Enregistrez le résultat.
 
 ### Exemple

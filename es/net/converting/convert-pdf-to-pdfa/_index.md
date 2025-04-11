@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to PDF/A formats",
     "alternativeHeadline": "Effortless PDF to PDF/A Conversion with Validation in C#",
-    "abstract": "La función en Aspose.PDF for .NET permite la conversión sin problemas de archivos PDF estándar en varios formatos compatibles con PDF/A, incluyendo PDF/A-1b, PDF/A-2u y PDF/A-3a. Esta función no solo asegura el cumplimiento de los estándares PDF/A a través de una validación exhaustiva, sino que también permite la adjunción de archivos adicionales y la sustitución de fuentes faltantes, mejorando la integridad y accesibilidad del documento. Explore las robustas capacidades de Aspose.PDF para conversiones PDF/A eficientes y confiables.",
+    "abstract": "La función en Aspose.PDF for .NET permite la conversión sin problemas de archivos PDF estándar a varios formatos compatibles con PDF/A, incluyendo PDF/A-1b, PDF/A-2u y PDF/A-3a. Esta función no solo asegura el cumplimiento de los estándares PDF/A a través de una validación exhaustiva, sino que también permite la adjunción de archivos adicionales y la sustitución de fuentes faltantes, mejorando la integridad y accesibilidad del documento. Explore las robustas capacidades de Aspose.PDF para conversiones PDF/A eficientes y confiables.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "1885",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,16 +73,20 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulte la siguiente sección para usuarios avanzados y desarrolladores."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulte la siguiente sección para usuarios y desarrolladores avanzados."
 }
 </script>
 
-**Aspose.PDF for .NET** le permite convertir un archivo PDF a un archivo PDF que cumple con <abbr title="Portable Document Format / A">PDF/A</abbr>. Antes de hacerlo, el archivo debe ser validado. Este tema explica cómo.
+**Aspose.PDF for .NET** le permite convertir un archivo PDF a un archivo PDF compatible con <abbr title="Portable Document Format / A">PDF/A</abbr>. Antes de hacerlo, el archivo debe ser validado. Este tema explica cómo.
+
+- [Convertir PDF a PDF/A-1b](#csharp-convert-pdf-to-a1b)
+- [Convertir PDF a PDF/A-3b](#csharp-convert-pdf-to-a3b)
+- [Convertir PDF a PDF/A-4](#csharp-convert-pdf-to-a4)
 
 {{% alert color="primary" %}}
 
-Tenga en cuenta que seguimos Adobe Preflight y veraPDF para validar la conformidad con PDF/A. Todas las herramientas en el mercado tienen su propia “representación” de la conformidad con PDF/A. Consulte este artículo sobre herramientas de validación PDF/A para referencia. Elegimos productos de Adobe para verificar cómo Aspose.PDF produce archivos PDF porque Adobe está en el centro de todo lo relacionado con PDF.
+Tenga en cuenta que seguimos Adobe Preflight y veraPDF para validar la conformidad con PDF/A. Todas las herramientas en el mercado tienen su propia “representación” de la conformidad con PDF/A. Consulte este artículo sobre herramientas de validación de PDF/A para referencia. Elegimos productos de Adobe para verificar cómo Aspose.PDF produce archivos PDF porque Adobe está en el centro de todo lo relacionado con PDF.
 
 {{% /alert %}}
 
@@ -103,7 +107,9 @@ Soportamos los siguientes estándares: PDF/A-1b, PDF/A-1a, PDF/A-2b, PDF/A-2u, P
 
 ## Convertir archivo PDF a PDF/A-1b
 
-El siguiente fragmento de código muestra cómo convertir archivos PDF a PDF/A-1b compatibles.
+<a name="csharp-convert-pdf-to-a1b" id="csharp-convert-pdf-to-a1b"><strong>Convertir PDF a PDF/A-1b</strong></a>
+
+El siguiente fragmento de código muestra cómo convertir archivos PDF a PDF compatibles con PDF/A-1b.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -191,7 +197,9 @@ private static void ValidatePdfAStandard()
 
 ## Convertir archivo PDF a PDF/A-3b
 
-Aspose.PDF for .NET también admite la función de convertir un archivo PDF a formato PDF/A-3b.
+<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>Convertir PDF a PDF/A-3b</strong></a>
+
+Aspose.PDF for .NET también admite la función de convertir un archivo PDF al formato PDF/A-3b.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -238,7 +246,9 @@ private static void ConvertPdfToPdfA3b()
 
 ## Convertir archivo PDF a PDF/A-4
 
-Aspose.PDF for .NET también admite la función de convertir un archivo PDF a formato PDF/A-4.
+<a name="csharp-convert-pdf-to-a4" id="csharp-convert-pdf-to-a4"><strong>Convertir PDF a PDF/A-4</strong></a>
+
+Aspose.PDF for .NET también admite la función de convertir un archivo PDF al formato PDF/A-4.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

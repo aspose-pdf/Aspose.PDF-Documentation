@@ -87,7 +87,7 @@ XFDF 代表 XML 表单数据格式。它是一种基于 XML 的文件格式。�
 
 **Aspose.PDF for .NET** 是一个功能丰富的组件，用于编辑 PDF 文档。正如我们所知，XFDF 是 PDF 表单操作的重要方面，Aspose.PDF for .NET 中的 Aspose.Pdf.Facades 命名空间对此进行了很好的考虑，并提供了将注释数据导入和导出到 XFDF 文件的方法。
 
-[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 类包含两个方法，用于处理注释的导入和导出到 XFDF 文件。[ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) 方法提供了将注释从 PDF 文档导出到 XFDF 文件的功能，而 [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) 方法允许您从现有的 XFDF 文件导入注释。为了导入或导出注释，我们需要指定注释类型。我们可以以枚举的形式指定这些类型，然后将此枚举作为参数传递给这些方法中的任何一个。这样，只有指定类型的注释才会被导入或导出到 XFDF 文件。
+[PDFAnnotationEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor) 类包含两个方法，用于处理注释的导入和导出到 XFDF 文件。[ExportAnnotationsXfdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) 方法提供了将注释从 PDF 文档导出到 XFDF 文件的功能，而 [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) 方法允许您从现有的 XFDF 文件导入注释。为了导入或导出注释，我们需要指定注释类型。我们可以以枚举的形式指定这些类型，然后将此枚举作为参数传递给这些方法中的任何一个。这样，只有指定类型的注释才会被导入或导出到 XFDF 文件。
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 

@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-许多用户希望在其 PDF 文档上盖上多行文本。他们通常尝试使用 `\n` 和 `<br>`，但这些类型的字符不被 Aspose.Pdf.Facades 命名空间支持。因此，为了使其成为可能，我们在 Aspose.Pdf.Facades 命名空间的 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 类中添加了另一个名为 [AddNewLineText()](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) 的方法。
+许多用户希望在其 PDF 文档上盖上多行文本。他们通常尝试使用 `\n` 和 `<br>`，但这些类型的字符不被 Aspose.Pdf.Facades 命名空间支持。因此，为了使其成为可能，我们在 Aspose.Pdf.Facades 命名空间的 [FormattedText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formattedtext) 类中添加了另一个名为 [AddNewLineText()](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) 的方法。
 
 {{% /alert %}}
 

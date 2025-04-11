@@ -85,7 +85,7 @@ sitemap:
 
 ## 创建标记 PDF（简单场景）
 
-为了在标记 PDF 文档中创建结构元素，Aspose.PDF 提供了使用 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 接口创建结构元素的方法。以下代码片段显示了如何创建包含 2 个元素：标题和段落的标记 PDF。
+为了在标记 PDF 文档中创建结构元素，Aspose.PDF 提供了使用 [ITaggedContent](https://reference.aspose.com/pdf/zh/net/aspose.pdf.tagged/itaggedcontent) 接口创建结构元素的方法。以下代码片段显示了如何创建包含 2 个元素：标题和段落的标记 PDF。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -180,7 +180,7 @@ private static void CreateTaggedPdfDocument01()
 
 ## 创建带有嵌套元素的标记 PDF（创建结构元素树）
 
-在某些情况下，我们需要创建更复杂的结构，例如在段落中放置引号。为了创建结构元素树，我们应该使用 [AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild) 方法。以下代码片段显示了如何创建标记 PDF 文档的结构元素树：
+在某些情况下，我们需要创建更复杂的结构，例如在段落中放置引号。为了创建结构元素树，我们应该使用 [AppendChild](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/element/methods/appendchild) 方法。以下代码片段显示了如何创建标记 PDF 文档的结构元素树：
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -292,7 +292,7 @@ private static void CreateTaggedPdfDocument02()
 
 ## 样式文本结构
 
-为了在标记 PDF 文档中样式文本结构，Aspose.PDF 提供了 [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)、[FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)、[FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) 和 [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) 属性的 [StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate) 类。以下代码片段显示了如何在标记 PDF 文档中样式文本结构：
+为了在标记 PDF 文档中样式文本结构，Aspose.PDF 提供了 [Font](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)、[FontSize](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)、[FontStyle](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) 和 [ForegroundColor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) 属性的 [StructureTextState](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structuretextstate) 类。以下代码片段显示了如何在标记 PDF 文档中样式文本结构：
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -365,7 +365,7 @@ private static void AddStyle()
 
 ## 说明结构元素
 
-为了在标记 PDF 文档中说明结构元素，Aspose.PDF 提供了 [IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement) 类。以下代码片段显示了如何在标记 PDF 文档中说明结构元素：
+为了在标记 PDF 文档中说明结构元素，Aspose.PDF 提供了 [IllustrationElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/illustrationelement) 类。以下代码片段显示了如何在标记 PDF 文档中说明结构元素：
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

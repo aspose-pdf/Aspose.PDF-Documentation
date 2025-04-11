@@ -86,7 +86,7 @@ PDF документ, зашифрованный паролем или серт�
 
 {{% /alert %}}
 
-Чтобы дешифровать PDF файл, вам нужно создать объект [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) и затем вызвать метод [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Вам также нужно передать пароль владельца в метод [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Следующий фрагмент кода показывает, как дешифровать PDF файл.
+Чтобы дешифровать PDF файл, вам нужно создать объект [PdfFileSecurity](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity) и затем вызвать метод [DecryptFile](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Вам также нужно передать пароль владельца в метод [DecryptFile](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Следующий фрагмент кода показывает, как дешифровать PDF файл.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

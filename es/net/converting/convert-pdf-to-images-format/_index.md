@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "2012",
+    "wordcount": "2428",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-images-format/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también hacer frente a objetivos más complejos. Consulta la siguiente sección para usuarios y desarrolladores avanzados."
+    "dateModified": "2025-04-09",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también hacer frente a objetivos más complejos. Consulta la siguiente sección para usuarios avanzados y desarrolladores."
 }
 </script>
 
@@ -82,54 +82,27 @@ sitemap:
 
 Este artículo explica cómo convertir PDF a diferentes formatos de imagen usando C#. Cubre los siguientes temas.
 
-_Formato de Imagen_: **TIFF**
-- [C# PDF a TIFF](#csharp-pdf-to-tiff)
-- [C# Convertir PDF a TIFF](#csharp-pdf-to-tiff)
-- [C# Convertir Páginas Únicas o Particulares de PDF a TIFF](#csharp-pdf-to-tiff-pages)
-
-_Formato de Imagen_: **BMP**
-- [C# PDF a BMP](#csharp-pdf-to-bmp)
-- [C# Convertir PDF a BMP](#csharp-pdf-to-bmp)
-- [C# Convertidor de PDF a BMP](#csharp-pdf-to-bmp)
-
-_Formato de Imagen_: **EMF**
-- [C# PDF a EMF](#csharp-pdf-to-emf)
-- [C# Convertir PDF a EMF](#csharp-pdf-to-emf)
-- [C# Convertidor de PDF a EMF](#csharp-pdf-to-emf)
-
-_Formato de Imagen_: **JPG**
-- [C# PDF a JPG](#csharp-pdf-to-jpg)
-- [C# Convertir PDF a JPG](#csharp-pdf-to-jpg)
-- [C# Convertidor de PDF a JPG](#csharp-pdf-to-jpg)
-
-_Formato de Imagen_: **PNG**
-- [C# PDF a PNG](#csharp-pdf-to-png)
-- [C# Convertir PDF a PNG](#csharp-pdf-to-png)
-- [C# Convertidor de PDF a PNG](#csharp-pdf-to-png)
-
-_Formato de Imagen_: **GIF**
-- [C# PDF a GIF](#csharp-pdf-to-gif)
-- [C# Convertir PDF a GIF](#csharp-pdf-to-gif)
-- [C# Convertidor de PDF a GIF](#csharp-pdf-to-gif)
-
-_Formato de Imagen_: **SVG**
-- [C# PDF a SVG](#csharp-pdf-to-svg)
-- [C# Convertir PDF a SVG](#csharp-pdf-to-svg)
-- [C# Convertidor de PDF a SVG](#csharp-pdf-to-svg)
+- [Convertir PDF a TIFF](#csharp-pdf-to-tiff)
+- [Convertir PDF a BMP](#csharp-pdf-to-bmp)
+- [Convertir PDF a EMF](#csharp-pdf-to-emf)
+- [Convertir PDF a JPG](#csharp-pdf-to-jpg)
+- [Convertir PDF a PNG](#csharp-pdf-to-png)
+- [Convertir PDF a GIF](#csharp-pdf-to-gif)
+- [Convertir PDF a SVG](#csharp-pdf-to-svg)
 
 ## C# Convertir PDF a Imagen
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-**Aspose.PDF for .NET** utiliza varios enfoques para convertir PDF a imagen. En términos generales, utilizamos dos enfoques: conversión utilizando el enfoque de Dispositivo y conversión utilizando SaveOption. Esta sección te mostrará cómo convertir documentos PDF a formatos de imagen como BMP, JPEG, GIF, PNG, EMF, TIFF y SVG utilizando uno de esos enfoques.
+**Aspose.PDF for .NET** utiliza varios enfoques para convertir PDF a imagen. En términos generales, usamos dos enfoques: conversión utilizando el enfoque de Dispositivo y conversión utilizando SaveOption. Esta sección te mostrará cómo convertir documentos PDF a formatos de imagen como BMP, JPEG, GIF, PNG, EMF, TIFF y SVG utilizando uno de esos enfoques.
 
-Hay varias clases en la biblioteca que te permiten usar un dispositivo virtual para transformar imágenes. DocumentDevice está orientado a la conversión de todo el documento, pero ImageDevice - para una página particular.
+Hay varias clases en la biblioteca que te permiten usar un dispositivo virtual para transformar imágenes. DocumentDevice está orientado a la conversión de todo el documento, pero ImageDevice - para una página en particular.
 
 ## Convertir PDF usando la clase DocumentDevice
 
 **Aspose.PDF for .NET** hace posible convertir páginas PDF a imágenes TIFF.
 
-La clase TiffDevice (basada en DocumentDevice) permite convertir páginas PDF a imágenes TIFF. Esta clase proporciona un método llamado `Process` que te permite convertir todas las páginas de un archivo PDF a una sola imagen TIFF.
+La clase TiffDevice (basada en DocumentDevice) te permite convertir páginas PDF a imágenes TIFF. Esta clase proporciona un método llamado `Process` que te permite convertir todas las páginas en un archivo PDF a una sola imagen TIFF.
 
 {{% alert color="success" %}}
 **Intenta convertir PDF a TIFF en línea**
@@ -143,7 +116,7 @@ Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["PDF a TIFF"
 
 Aspose.PDF for .NET explica cómo convertir todas las páginas en un archivo PDF a una sola imagen TIFF:
 
-<a name="csharp-pdf-to-tiff"><strong>Pasos: Convertir PDF a TIFF en C#</strong></a>
+<a name="csharp-pdf-to-tiff"><strong>Convertir PDF a TIFF</strong></a>
 
 1. Crea un objeto de la clase **Document**.
 2. Crea objetos **TiffSettings** y **TiffDevice**.
@@ -187,8 +160,6 @@ private static void ConvertPDFtoTIFF()
 
 Aspose.PDF for .NET permite convertir una página particular en un archivo PDF a una imagen TIFF, utiliza una versión sobrecargada del método Process(..) que toma un número de página como argumento para la conversión. El siguiente fragmento de código muestra cómo convertir la primera página de un PDF a formato TIFF.
 
-<a name="csharp-pdf-to-tiff-pages"><strong>Pasos: Convertir Páginas Únicas o Particulares de PDF a TIFF en C#</strong></a>
-
 1. Crea un objeto de la clase **Document**.
 2. Crea objetos **TiffSettings** y **TiffDevice**.
 3. Llama al método sobrecargado **TiffDevice.Process()** con los parámetros **fromPage** y **toPage** para convertir las páginas del documento PDF a TIFF.
@@ -223,9 +194,9 @@ private static void ConvertPDFtoTiffSinglePage()
 }
 ```
 
-### Usar el algoritmo de Bradley durante la conversión
+### Usar el algoritmo Bradley durante la conversión
 
-Aspose.PDF for .NET ha estado apoyando la función de convertir PDF a TIF utilizando compresión LZW y luego, con el uso de AForge, se puede aplicar la Binarización. Sin embargo, uno de los clientes solicitó que para algunas imágenes, necesitan obtener el Umbral utilizando Otsu, por lo que también les gustaría usar Bradley.
+Aspose.PDF for .NET ha estado soportando la función de convertir PDF a TIF usando compresión LZW y luego con el uso de AForge, se puede aplicar Binarización. Sin embargo, uno de los clientes solicitó que para algunas imágenes, necesitan obtener el Umbral usando Otsu, por lo que también les gustaría usar Bradley.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -272,33 +243,23 @@ private static void ConvertPDFtoTiffBradleyBinarization()
 
 `ImageDevice` es el ancestro de `BmpDevice`, `JpegDevice`, `GifDevice`, `PngDevice` y `EmfDevice`.
 
-- La clase [BmpDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice) permite convertir páginas PDF a imágenes <abbr title="Bitmap Image File">BMP</abbr>.
-- La clase [EmfDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/emfdevice) permite convertir páginas PDF a imágenes <abbr title="Enhanced Meta File">EMF</abbr>.
-- La clase [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) permite convertir páginas PDF a imágenes JPEG.
-- La clase [PngDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice) permite convertir páginas PDF a imágenes <abbr title="Portable Network Graphics">PNG</abbr>.
-- La clase [GifDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/gifdevice) permite convertir páginas PDF a imágenes <abbr title="Graphics Interchange Format">GIF</abbr>.
+- La clase [BmpDevice](https://reference.aspose.com/pdf/es/net/aspose.pdf.devices/bmpdevice) te permite convertir páginas PDF a imágenes <abbr title="Bitmap Image File">BMP</abbr>.
+- La clase [EmfDevice](https://reference.aspose.com/pdf/es/net/aspose.pdf.devices/emfdevice) te permite convertir páginas PDF a imágenes <abbr title="Enhanced Meta File">EMF</abbr>.
+- La clase [JpegDevice](https://reference.aspose.com/pdf/es/net/aspose.pdf.devices/jpegdevice) te permite convertir páginas PDF a imágenes JPEG.
+- La clase [PngDevice](https://reference.aspose.com/pdf/es/net/aspose.pdf.devices/pngdevice) te permite convertir páginas PDF a imágenes <abbr title="Portable Network Graphics">PNG</abbr>.
+- La clase [GifDevice](https://reference.aspose.com/pdf/es/net/aspose.pdf.devices/gifdevice) te permite convertir páginas PDF a imágenes <abbr title="Graphics Interchange Format">GIF</abbr>.
 
 Veamos cómo convertir una página PDF a una imagen.
 
-La clase `BmpDevice` proporciona un método llamado [Process](https://reference.aspose.com/pdf/net/aspose.pdf.devices/bmpdevice/methods/process) que permite convertir una página particular del archivo PDF a formato de imagen BMP. Las otras clases tienen el mismo método. Así que, si necesitamos convertir una página PDF a una imagen, simplemente instanciamos la clase requerida.
+La clase `BmpDevice` proporciona un método llamado [Process](https://reference.aspose.com/pdf/es/net/aspose.pdf.devices/bmpdevice/methods/process) que te permite convertir una página particular del archivo PDF a formato de imagen BMP. Las otras clases tienen el mismo método. Así que, si necesitamos convertir una página PDF a una imagen, simplemente instanciamos la clase requerida.
 
 <a name="csharp-pdf-to-bmp"></a>
 <a name="csharp-pdf-to-emf"></a>
 <a name="csharp-pdf-to-jpg"></a>
 <a name="csharp-pdf-to-png"></a>
 <a name="csharp-pdf-to-gif"></a>
-    
-Los siguientes pasos y el fragmento de código en C# muestran esta posibilidad
- 
- - [Convertir PDF a BMP en C#](#csharp-pdf-to-image)
- - [Convertir PDF a EMF en C#](#csharp-pdf-to-image)
- - [Convertir PDF a JPG en C#](#csharp-pdf-to-image)
- - [Convertir PDF a PNG en C#](#csharp-pdf-to-image)
- - [Convertir PDF a GIF en C#](#csharp-pdf-to-image)
 
-<a name="csharp-pdf-to-image"><strong>Pasos: PDF a Imagen (BMP, EMF, JPG, PNG, GIF) en C#</strong></a>
-
-1. Carga el archivo PDF utilizando la clase **Document**.
+1. Carga el archivo PDF usando la clase **Document**.
 2. Crea una instancia de la subclase de **ImageDevice**, es decir,
    * **BmpDevice** (para convertir PDF a BMP).
    * **EmfDevice** (para convertir PDF a Emf).
@@ -349,6 +310,122 @@ private static void ConvertPDFtoImage(ImageDevice imageDevice,
 }
 ```
 
+### Convertir PDF a imagen con fondo transparente
+
+Una página PDF se puede convertir a una imagen PNG con un fondo transparente en lugar de uno blanco.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf"))
+    {
+        var pngDevice = new Aspose.Pdf.Devices.PngDevice();
+        pngDevice.TransparentBackground = true;
+        using (var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create))
+        {
+            // Convert page to PNG image
+            pngDevice.Process(document.Pages[1], pngStream);
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoImageWithTransparentBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ConvertPDFtoImageWithTransparentBackground.pdf");
+    var pngDevice = new Aspose.Pdf.Devices.PngDevice()
+    {
+        TransparentBackground = true
+    };
+    using var pngStream = new FileStream(dataDir + "ConvertPDFtoImageWithTransparentBackground.png", FileMode.Create);
+    // Convert page to PNG image
+    pngDevice.Process(document.Pages[1], pngStream);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Convertir una región particular de la página a una imagen
+
+Una cierta área de la página se puede convertir en una imagen utilizando el CropBox de la página.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertParticularPageRegionToImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertParticularPageRegionToImage.pdf"))
+    {
+        // Get rectangle of particular XImage
+        var imagePlacementAbsorber = new Aspose.Pdf.ImagePlacementAbsorber();
+        document.Pages[1].Accept(imagePlacementAbsorber);
+        var imageRectangle = imagePlacementAbsorber.ImagePlacements[1].Rectangle;
+        var pageRect = new Aspose.Pdf.Rectangle(imageRectangle.LLX, imageRectangle.LLY, imageRectangle.URX, imageRectangle.URY);
+
+        // Set CropBox value as per rectangle of desired page region
+        document.Pages[1].CropBox = pageRect;
+        var resolution = new Aspose.Pdf.Devices.Resolution(300);
+
+        // Create PNG device with specified attributes
+        var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+
+        // Convert a particular page and save the image
+        pngDevice.Process(document.Pages[1], dataDir + "ConvertParticularPageRegionToImage_out.png");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertParticularPageRegionToImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ConvertParticularPageRegionToImage.pdf");
+    // Get rectangle of particular XImage
+    var imagePlacementAbsorber = new Aspose.Pdf.ImagePlacementAbsorber();
+    document.Pages[1].Accept(imagePlacementAbsorber);
+    var imageRectangle = imagePlacementAbsorber.ImagePlacements[1].Rectangle;
+    var pageRect = new Aspose.Pdf.Rectangle(imageRectangle.LLX, imageRectangle.LLY, imageRectangle.URX, imageRectangle.URY);
+
+    // Set CropBox value as per rectangle of desired page region
+    document.Pages[1].CropBox = pageRect;
+    var resolution = new Aspose.Pdf.Devices.Resolution(300);
+
+    // Create PNG device with specified attributes
+    var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+
+    // Convert a particular page and save the image
+    pngDevice.Process(document.Pages[1], dataDir + "ConvertParticularPageRegionToImage_out.png");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 {{% alert color="success" %}}
 **Intenta convertir PDF a PNG en línea**
 
@@ -375,11 +452,11 @@ Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["PDF a SVG"]
 
 Las imágenes SVG y sus comportamientos se definen en archivos de texto XML. Esto significa que pueden ser buscadas, indexadas, guionizadas y, si es necesario, comprimidas. Como archivos XML, las imágenes SVG pueden ser creadas y editadas con cualquier editor de texto, pero a menudo es más conveniente crearlas con programas de dibujo como Inkscape.
 
-Aspose.PDF for .NET admite la función de convertir imágenes SVG a formato PDF y también ofrece la capacidad de convertir archivos PDF a formato SVG. Para lograr este requisito, se ha introducido la clase [`SvgSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/svgsaveoptions/methods/index) en el espacio de nombres Aspose.PDF. Instancia un objeto de SvgSaveOptions y pásalo como segundo argumento al método [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) para convertir el documento PDF a SVG.
+Aspose.PDF for .NET soporta la función de convertir imágenes SVG a formato PDF y también ofrece la capacidad de convertir archivos PDF a formato SVG. Para lograr este requisito, se ha introducido la clase [`SvgSaveOptions`](https://reference.aspose.com/pdf/es/net/aspose.pdf/svgsaveoptions/methods/index) en el espacio de nombres Aspose.PDF. Instancia un objeto de SvgSaveOptions y pásalo como segundo argumento al método [`Document.Save(..)`](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save/index).
 
 El siguiente fragmento de código muestra los pasos para convertir un archivo PDF a formato SVG con .NET.
 
-<a name="csharp-pdf-to-svg"><strong>Pasos: Convertir PDF a SVG en C#</strong></a>
+<a name="csharp-pdf-to-svg"><strong>Convertir PDF a SVG</strong></a>
 
 1. Crea un objeto de la clase **Document**.
 2. Crea un objeto **SvgSaveOptions** con la configuración necesaria.

@@ -80,12 +80,12 @@ sitemap:
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-Vous pouvez supprimer des pages d'un fichier PDF en utilisant Aspose.PDF for .NET. Pour supprimer une page particulière de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+Vous pouvez supprimer des pages d'un fichier PDF en utilisant Aspose.PDF for .NET. Pour supprimer une page particulière de la collection [PageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection).
 
 ## Supprimer une page d'un fichier PDF
 
-1. Appelez la méthode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) et spécifiez l'index de la page.
-1. Appelez la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) pour enregistrer le fichier PDF mis à jour.
+1. Appelez la méthode [Delete](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection/methods/delete) et spécifiez l'index de la page.
+1. Appelez la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4) pour enregistrer le fichier PDF mis à jour.
 Le code suivant montre comment supprimer une page particulière du fichier PDF en utilisant C#.
 
 ```csharp

@@ -80,7 +80,7 @@ sitemap:
 
 ## Ajouter un tampon de page avec C\#
 
-Un [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) peut être utilisé lorsque vous devez appliquer un tampon composite contenant des graphiques, du texte, des tableaux. L'exemple suivant montre comment utiliser un tampon pour créer une papeterie comme dans Adobe InDesign, Illustrator, Microsoft Word. Supposons que nous ayons un document d'entrée et que nous souhaitions appliquer 2 types de bordures avec des couleurs bleu et prune.
+Un [PdfPageStamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf/PdfPageStamp) peut être utilisé lorsque vous devez appliquer un tampon composite contenant des graphiques, du texte, des tableaux. L'exemple suivant montre comment utiliser un tampon pour créer une papeterie comme dans Adobe InDesign, Illustrator, Microsoft Word. Supposons que nous ayons un document d'entrée et que nous souhaitions appliquer 2 types de bordures avec des couleurs bleu et prune.
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 

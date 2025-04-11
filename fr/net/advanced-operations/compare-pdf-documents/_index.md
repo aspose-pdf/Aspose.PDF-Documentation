@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Compare PDF documents, PDF comparison, Aspose.PDF for .NET, comparing specific pages, comparing entire documents, graphical PDF comparer, side-by-side comparison, change markers, document accuracy, ImagesDifference",
-    "wordcount": "1180",
+    "wordcount": "1367",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,8 +74,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/compare-pdf-documents/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
 
@@ -85,7 +85,7 @@ Veuillez noter que tous les outils de comparaison sont disponibles dans la bibli
 
 Lorsque vous travaillez avec des documents PDF, il y a des moments où vous devez comparer le contenu de deux documents pour identifier les différences. La bibliothèque Aspose.PDF for .NET fournit un ensemble d'outils puissant à cet effet. Dans cet article, nous allons explorer comment comparer des documents PDF en utilisant quelques extraits de code simples.
 
-La fonctionnalité de comparaison dans Aspose.PDF vous permet de comparer deux documents PDF page par page. Vous pouvez choisir de comparer soit des pages spécifiques, soit des documents entiers. Le document de comparaison résultant met en évidence les différences, facilitant ainsi l'identification des changements entre les deux fichiers.
+La fonctionnalité de comparaison dans Aspose.PDF vous permet de comparer deux documents PDF page par page. Vous pouvez choisir de comparer soit des pages spécifiques, soit des documents entiers. Le document de comparaison résultant met en évidence les différences, ce qui facilite l'identification des changements entre les deux fichiers.
 
 Voici une liste des façons possibles de comparer des documents PDF en utilisant Aspose.PDF pour la bibliothèque .NET :
 
@@ -103,10 +103,8 @@ Voici une liste des façons possibles de comparer des documents PDF en utilisant
 
 Le premier extrait de code démontre comment comparer les premières pages de deux documents PDF.
 
-Étapes :
-
 1. Initialisation du document.
-Le code commence par initialiser deux documents PDF en utilisant leurs chemins de fichiers respectifs (documentPath1 et documentPath2). Les chemins sont spécifiés comme des chaînes vides pour l'instant, mais en pratique, vous remplaceriez ceux-ci par les chemins de fichiers réels.
+Le code commence par initialiser deux documents PDF en utilisant leurs chemins de fichiers respectifs (documentPath1 et documentPath2). Les chemins sont spécifiés comme des chaînes vides pour l'instant, mais en pratique, vous les remplaceriez par les chemins de fichiers réels.
 
 2. Processus de comparaison.
 
@@ -115,7 +113,7 @@ Le code commence par initialiser deux documents PDF en utilisant leurs chemins d
 
 'AdditionalChangeMarks = true' - cette option garantit que des marqueurs de changement supplémentaires sont affichés. Ces marqueurs mettent en évidence les différences qui pourraient être présentes sur d'autres pages, même si elles ne se trouvent pas sur la page actuelle en cours de comparaison.
 
-'ComparisonMode = ComparisonMode.IgnoreSpaces' - ce mode indique au comparateur d'ignorer les espaces dans le texte, en se concentrant uniquement sur les changements au sein des mots.
+'ComparisonMode = ComparisonMode.IgnoreSpaces' - ce mode indique au comparateur d'ignorer les espaces dans le texte, se concentrant uniquement sur les changements au sein des mots.
 
 3. Le document de comparaison résultant, qui met en évidence les différences entre les deux pages, est enregistré dans le chemin de fichier spécifié dans 'resultPdfPath'.
 
@@ -145,19 +143,6 @@ private static void ComparingSpecificPages()
 ## Comparer des documents entiers
 
 Le deuxième extrait de code élargit le champ d'application pour comparer l'ensemble du contenu de deux documents PDF.
-
-Étapes :
-
-1. Initialisation du document.
-Tout comme dans le premier exemple, deux documents PDF sont initialisés avec leurs chemins de fichiers.
-
-2. Processus de comparaison.
-
-- Comparaison de l'ensemble du document - contrairement au premier extrait, ce code compare l'ensemble du contenu des deux documents.
-
-- Options de comparaison - les options sont les mêmes que dans le premier extrait, garantissant que les espaces sont ignorés et que des marqueurs de changement supplémentaires sont affichés.
-
-3. Le résultat de la comparaison, qui met en évidence les différences sur toutes les pages des deux documents, est enregistré dans le fichier spécifié par 'resultPdfPath'.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +184,7 @@ En définissant 'AdditionalChangeMarks' sur 'true', vous pouvez également voir 
 
 Lors de la collaboration sur des documents, en particulier dans des environnements professionnels, vous vous retrouvez souvent avec plusieurs versions du même fichier.
 
-Vous pouvez utiliser la classe [GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) pour comparer des documents et des pages PDF. La classe est adaptée pour comparer les changements dans le contenu graphique d'une page.
+Vous pouvez utiliser la classe [GraphicalPdfComparer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) pour comparer des documents et des pages PDF. La classe est adaptée pour comparer les changements dans le contenu graphique d'une page.
 
 Avec Aspose.PDF for .NET, il est possible de comparer des documents et des pages et de produire le résultat de la comparaison dans un document PDF ou un fichier image.
 
@@ -209,15 +194,15 @@ Vous pouvez définir les propriétés de classe suivantes :
 - Couleur - la couleur des marques de changement.
 - Seuil - seuil de changement en pourcentage. La valeur par défaut est zéro. Définir une valeur autre que zéro vous permet d'ignorer les changements graphiques qui sont insignifiants pour vous.
 
-La classe dispose d'une méthode qui vous permet d'obtenir les différences d'image de page sous une forme adaptée à un traitement ultérieur : **ImagesDifference GetDifference(Page page1, Page page2)**.
+La classe a une méthode qui vous permet d'obtenir les différences d'image de page sous une forme adaptée à un traitement ultérieur : **ImagesDifference GetDifference(Page page1, Page page2)**.
 
-Cette méthode renvoie un objet de la classe [ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) qui contient une image de la première page comparée et un tableau de différences. Le tableau de différences et l'image originale ont le format de pixel **RGB24bpp**.
+Cette méthode retourne un objet de la classe [ImagesDifference](https://reference.aspose.com/pdf/fr/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) qui contient une image de la première page comparée et un tableau de différences. Le tableau de différences et l'image originale ont le format de pixel **RGB24bpp**.
 
 ImagesDifference vous permet de générer une image différente et d'obtenir une image de la deuxième page comparée en ajoutant un tableau de différences à l'image originale. Pour ce faire, utilisez les méthodes **ImagesDifference.GetDestinationImage et ImagesDifference.DifferenceToImage**.
 
 ### Comparer PDF avec la méthode GetDifference
 
-Le code fourni définit une méthode [GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) qui compare deux documents PDF et génère des représentations visuelles des différences entre eux.
+Le code fourni définit une méthode [GetDifference](https://reference.aspose.com/pdf/fr/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) qui compare deux documents PDF et génère des représentations visuelles des différences entre eux.
 
 Cette méthode compare les premières pages de deux fichiers PDF et génère deux images PNG :
 
@@ -259,7 +244,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 
 ### Comparer PDF avec la méthode CompareDocumentsToPdf
 
-L'extrait de code fourni utilise la méthode [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) qui compare deux documents et génère un rapport PDF des résultats de la comparaison.
+L'extrait de code fourni utilise la méthode [CompareDocumentsToPdf](https://reference.aspose.com/pdf/fr/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) qui compare deux documents et génère un rapport PDF des résultats de la comparaison.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

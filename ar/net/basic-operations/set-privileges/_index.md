@@ -82,7 +82,7 @@ sitemap:
 
 ## تعيين الامتيازات على ملف PDF موجود
 
-لتعيين الامتيازات على ملف PDF، قم بإنشاء كائن من فئة [DocumentPrivilege](https://reference.aspose.com/pdf/net/aspose.pdf.facades/documentprivilege) وحدد الحقوق التي تريد تطبيقها على المستند. بمجرد تعريف الامتيازات، قم بتمرير هذا الكائن كوسيط إلى طريقة [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) . يوضح مقتطف الشيفرة التالي كيفية تعيين امتيازات ملف PDF.
+لتعيين الامتيازات على ملف PDF، قم بإنشاء كائن من فئة [DocumentPrivilege](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/documentprivilege) وحدد الحقوق التي تريد تطبيقها على المستند. بمجرد تعريف الامتيازات، قم بتمرير هذا الكائن كوسيط إلى طريقة [Encrypt](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/encrypt/methods/1) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) . يوضح مقتطف الشيفرة التالي كيفية تعيين امتيازات ملف PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void SetPrivilegesOnExistingPdfFile()
 
 ## تشفير ملف PDF باستخدام أنواع وخوارزميات تشفير مختلفة
 
-يمكنك استخدام طريقة [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) لتشفير ملف PDF. يمكنك تمرير كلمة مرور المستخدم، وكلمة مرور المالك، والأذونات إلى طريقة [Encrypt](https://reference.aspose.com/pdf/net/aspose.pdf.document/encrypt/methods/1) . بالإضافة إلى ذلك، يمكنك تمرير أي قيمة من تعداد [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm) . يوفر هذا التعداد مجموعات مختلفة من خوارزميات التشفير وأحجام المفاتيح. يمكنك تمرير القيمة التي تختارها. أخيرًا، احفظ ملف PDF المشفر باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+يمكنك استخدام طريقة [Encrypt](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/encrypt/methods/1) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) لتشفير ملف PDF. يمكنك تمرير كلمة مرور المستخدم، وكلمة مرور المالك، والأذونات إلى طريقة [Encrypt](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/encrypt/methods/1) . بالإضافة إلى ذلك، يمكنك تمرير أي قيمة من تعداد [CryptoAlgorithm](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cryptoalgorithm) . يوفر هذا التعداد مجموعات مختلفة من خوارزميات التشفير وأحجام المفاتيح. يمكنك تمرير القيمة التي تختارها. أخيرًا، احفظ ملف PDF المشفر باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
 
 >يرجى تحديد كلمات مرور مستخدم ومالك مختلفة أثناء تشفير ملف PDF.
 
@@ -145,7 +145,7 @@ private static void EncryptPdfFile()
 
 من الأفضل حل هذه المشكلة مرة واحدة باستخدام مكتبة Aspose.PDF.
 
-لفك تشفير ملف PDF، تحتاج أولاً إلى إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وفتح PDF باستخدام كلمة مرور المالك. بعد ذلك، تحتاج إلى استدعاء طريقة [Decrypt](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/decrypt) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) . أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) . يوضح مقتطف الشيفرة التالي كيفية فك تشفير ملف PDF.
+لفك تشفير ملف PDF، تحتاج أولاً إلى إنشاء كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) وفتح PDF باستخدام كلمة مرور المالك. بعد ذلك، تحتاج إلى استدعاء طريقة [Decrypt](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/decrypt) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) . أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) . يوضح مقتطف الشيفرة التالي كيفية فك تشفير ملف PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -167,7 +167,7 @@ private static void DecryptPdfFile()
 
 ## تغيير كلمة مرور ملف PDF
 
-إذا كنت ترغب في تغيير كلمة مرور ملف PDF، تحتاج أولاً إلى فتح ملف PDF باستخدام كلمة مرور المالك مع كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) . بعد ذلك، تحتاج إلى استدعاء طريقة [ChangePasswords](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/changepasswords) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) . تحتاج إلى تمرير كلمة مرور المالك الحالية مع كلمة مرور المستخدم الجديدة وكلمة مرور المالك الجديدة إلى هذه الطريقة. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+إذا كنت ترغب في تغيير كلمة مرور ملف PDF، تحتاج أولاً إلى فتح ملف PDF باستخدام كلمة مرور المالك مع كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) . بعد ذلك، تحتاج إلى استدعاء طريقة [ChangePasswords](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/changepasswords) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) . تحتاج إلى تمرير كلمة مرور المالك الحالية مع كلمة مرور المستخدم الجديدة وكلمة مرور المالك الجديدة إلى هذه الطريقة. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
 
 >- كلمة مرور المستخدم، إذا تم تعيينها، هي ما تحتاج إلى تقديمه لفتح ملف PDF. سيطلب Acrobat/Reader من المستخدم إدخال كلمة مرور المستخدم. إذا لم تكن صحيحة، فلن يفتح المستند.
 >- كلمة مرور المالك، إذا تم تعيينها، تتحكم في الأذونات، مثل الطباعة، والتحرير، والاستخراج، والتعليق، وما إلى ذلك. سيمنع Acrobat/Reader هذه الأشياء بناءً على إعدادات الأذونات. سيطلب Acrobat هذه الكلمة إذا كنت تريد تعيين/تغيير الأذونات.

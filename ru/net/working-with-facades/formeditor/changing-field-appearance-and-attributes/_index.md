@@ -77,17 +77,17 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) класс пространства имен [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) позволяет вам не только изменить внешний вид поля формы, но и поведение поля. В этой статье мы увидим, как мы можем использовать класс FormEditor для изменения внешнего вида поля, атрибутов поля и ограничения поля.
+[FormEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/FormEditor) класс пространства имен [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) позволяет вам не только изменить внешний вид поля формы, но и поведение поля. В этой статье мы увидим, как мы можем использовать класс FormEditor для изменения внешнего вида поля, атрибутов поля и ограничения поля.
 
 {{% /alert %}}
 
 ## Подробности реализации
 
-Метод [SetFieldAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldappearance) используется для изменения внешнего вида поля формы. Он принимает AnnotationFlag в качестве параметра. AnnotationFlag — это перечисление, которое имеет различные члены, такие как Hidden или NoRotate и т. д.
+Метод [SetFieldAppearance](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/setfieldappearance) используется для изменения внешнего вида поля формы. Он принимает AnnotationFlag в качестве параметра. AnnotationFlag — это перечисление, которое имеет различные члены, такие как Hidden или NoRotate и т. д.
 
-Метод [SetFieldAttributes](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldattribute) используется для изменения атрибута поля формы. Параметр, передаваемый этому методу, — это перечисление PropertyFlag, которое содержит члены, такие как ReadOnly или Required и т. д.
+Метод [SetFieldAttributes](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/setfieldattribute) используется для изменения атрибута поля формы. Параметр, передаваемый этому методу, — это перечисление PropertyFlag, которое содержит члены, такие как ReadOnly или Required и т. д.
 
-Класс [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) также предоставляет метод для установки ограничения поля. Он сообщает полю, сколько символов можно заполнить. Приведенный ниже фрагмент кода показывает, как все эти методы могут быть использованы.
+Класс [FormEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/FormEditor) также предоставляет метод для установки ограничения поля. Он сообщает полю, сколько символов можно заполнить. Приведенный ниже фрагмент кода показывает, как все эти методы могут быть использованы.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

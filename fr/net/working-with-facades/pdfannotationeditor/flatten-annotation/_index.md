@@ -81,7 +81,7 @@ Le processus d'aplatissement signifie que lorsqu'une annotation est supprimée d
 
 Lorsque cette option est sélectionnée, vos annotations seront incluses dans votre PDF exporté en tant qu'annotations standard PDF.
 
-Vérifiez comment la méthode [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) utilisée dans l'extrait de code suivant. 
+Vérifiez comment la méthode [flatteningAnnotations](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) utilisée dans l'extrait de code suivant. 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

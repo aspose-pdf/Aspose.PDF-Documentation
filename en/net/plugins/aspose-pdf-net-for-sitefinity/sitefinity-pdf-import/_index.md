@@ -165,14 +165,14 @@ You can download Aspose .NET Pdf Import for Sitefinity from one of the following
 
 Once downloaded, please follow these steps to install the Add-on into your Sitefinity website:
 
-##### Step 1: Copy files to your Sitefinity installation
+##### Copy files to your Sitefinity installation
 
 Please extract the downloaded ZIP file. You will need FTP or direct access to the Sitefinity installation folder on the server to perform the following:
 
 1. Copy Aspose.PDF.dll and Aspose.SiteFinity.PDFImport.dll into the **bin** folder of the Sitefinity installation.
 1. Copy the **Addons** folder on the root of the Sitefinity installation where the **bin** folder is located.
 
-##### Step 2: Register the Aspose .NET PDF Import for Sitefinity add-on in Sitefinity
+##### Register the Aspose .NET PDF Import for Sitefinity add-on in Sitefinity
 
 1. Log into your Sitefinity CMS with an **Administrator** account. The login page can be reached by <http://www.mywebsite.com/sitefinity>
 1. Click **Administration** and then **Settings**.

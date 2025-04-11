@@ -84,7 +84,7 @@ sitemap:
 
 {{% /alert %}}
 
-لإزالة الجداول، نحتاج إلى استخدام فئة [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) للسيطرة على الجداول في PDF الموجود ثم استدعاء [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
+لإزالة الجداول، نحتاج إلى استخدام فئة [TableAbsorber](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/tableabsorber) للسيطرة على الجداول في PDF الموجود ثم استدعاء [Remove](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/tableabsorber/methods/remove).
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 

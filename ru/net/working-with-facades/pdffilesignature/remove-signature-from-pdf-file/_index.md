@@ -79,7 +79,7 @@ draft: false
 
 Когда подпись была добавлена в PDF файл, ее можно удалить. Вы можете удалить либо конкретную подпись, либо все подписи в файле. Самый быстрый способ удаления подписи также удаляет поле подписи, но возможно просто удалить подпись, сохранив поле подписи, чтобы файл можно было подписать снова.
 
-Метод RemoveSignature класса [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) позволяет вам удалить подпись из PDF файла. Этот метод принимает имя подписи в качестве входных данных. Либо укажите имя подписи напрямую, чтобы удалить все подписи, получите имена подписей, используя метод [GetSignNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
+Метод RemoveSignature класса [PdfFileSignature](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesignature) позволяет вам удалить подпись из PDF файла. Этот метод принимает имя подписи в качестве входных данных. Либо укажите имя подписи напрямую, чтобы удалить все подписи, получите имена подписей, используя метод [GetSignNames](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
 
 Следующий фрагмент кода показывает, как удалить цифровую подпись из PDF файла.
 
@@ -111,7 +111,7 @@ private static void RemoveSignature()
 
 ### Удалить подпись, но сохранить поле подписи
 
-Как показано выше, метод [RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) класса [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) позволяет вам удалять поля подписи из PDF файлов. При использовании этого метода с версиями до 9.3.0 как подпись, так и поле подписи удаляются. Некоторые разработчики хотят удалить только подпись и сохранить поле подписи, чтобы его можно было использовать для повторной подписи документа. Чтобы сохранить поле подписи и удалить только подпись, пожалуйста, используйте следующий фрагмент кода.
+Как показано выше, метод [RemoveSignature](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) класса [PdfFileSignature](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesignature) позволяет вам удалять поля подписи из PDF файлов. При использовании этого метода с версиями до 9.3.0 как подпись, так и поле подписи удаляются. Некоторые разработчики хотят удалить только подпись и сохранить поле подписи, чтобы его можно было использовать для повторной подписи документа. Чтобы сохранить поле подписи и удалить только подпись, пожалуйста, используйте следующий фрагмент кода.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

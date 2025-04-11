@@ -85,11 +85,11 @@ Le prochain extrait de code fonctionne également avec la bibliothèque [Aspose.
 
 1. Créez un nouveau projet C#.
 1. Ajoutez une référence à la DLL Aspose.PDF.
-1. Créez un objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Créez un objet [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) avec le fichier que vous ajoutez et la description du fichier.
-1. Ajoutez l'objet [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) à la collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), avec la méthode Add de la collection.
+1. Créez un objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Créez un objet [FileSpecification](https://reference.aspose.com/pdf/fr/net/aspose.pdf/filespecification) avec le fichier que vous ajoutez et la description du fichier.
+1. Ajoutez l'objet [FileSpecification](https://reference.aspose.com/pdf/fr/net/aspose.pdf/filespecification) à la collection [EmbeddedFiles](https://reference.aspose.com/pdf/fr/net/aspose.pdf/embeddedfilecollection) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document), avec la méthode Add de la collection.
 
-La collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contient toutes les pièces jointes dans le fichier PDF. L'extrait de code suivant vous montre comment ajouter une pièce jointe dans un document PDF.
+La collection [EmbeddedFiles](https://reference.aspose.com/pdf/fr/net/aspose.pdf/embeddedfilecollection) contient toutes les pièces jointes dans le fichier PDF. L'extrait de code suivant vous montre comment ajouter une pièce jointe dans un document PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

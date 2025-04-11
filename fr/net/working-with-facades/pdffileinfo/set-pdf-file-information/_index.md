@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-La classe [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) vous permet de définir des informations spécifiques au fichier d'un fichier PDF. Vous devez créer un objet de la classe [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) puis définir différentes propriétés spécifiques au fichier telles que l'auteur, le titre, le mot-clé et le créateur, etc. Enfin, enregistrez le fichier PDF mis à jour en utilisant la méthode [SaveNewInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) de l'objet [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo).
+La classe [PdfFileInfo](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileinfo) vous permet de définir des informations spécifiques au fichier d'un fichier PDF. Vous devez créer un objet de la classe [PdfFileInfo](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileinfo) puis définir différentes propriétés spécifiques au fichier telles que l'auteur, le titre, le mot-clé et le créateur, etc. Enfin, enregistrez le fichier PDF mis à jour en utilisant la méthode [SaveNewInfo](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) de l'objet [PdfFileInfo](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileinfo).
 
 Le code suivant vous montre comment définir les informations sur le fichier PDF.
 
@@ -103,7 +103,7 @@ private static void SetPdfInfo()
 
 ## Définir les informations méta
 
-La méthode [SetMetaInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) vous permet d'ajouter n'importe quelle information. Dans notre exemple, nous avons ajouté un champ. Consultez le code suivant : 
+La méthode [SetMetaInfo](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) vous permet d'ajouter n'importe quelle information. Dans notre exemple, nous avons ajouté un champ. Consultez le code suivant : 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,22 +83,22 @@ sitemap:
 
 ## إضافة كائن مستطيل
 
-يدعم Aspose.PDF for .NET ميزة إضافة كائنات الرسم (مثل الرسم، الخط، المستطيل، إلخ) إلى مستندات PDF. يمكنك أيضًا الاستفادة من إضافة كائن [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) حيث تقدم أيضًا ميزة ملء كائن المستطيل بلون معين، والتحكم في ترتيب Z، وإضافة ملء تدرج لوني، وما إلى ذلك.
+يدعم Aspose.PDF for .NET ميزة إضافة كائنات الرسم (مثل الرسم، الخط، المستطيل، إلخ) إلى مستندات PDF. يمكنك أيضًا الاستفادة من إضافة كائن [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle) حيث تقدم أيضًا ميزة ملء كائن المستطيل بلون معين، والتحكم في ترتيب Z، وإضافة ملء تدرج لوني، وما إلى ذلك.
 
 أولاً، دعنا نلقي نظرة على إمكانية إنشاء كائن مستطيل.
 
 اتبع الخطوات أدناه:
 
-1. إنشاء مستند PDF جديد [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. إضافة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) إلى مجموعة الصفحات في ملف PDF.
-1. إضافة [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) إلى مجموعة الفقرات في مثيل الصفحة.
-1. إنشاء مثيل [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) .
-1. تعيين الحدود لكائن [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) .
+1. إنشاء مستند PDF جديد [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. إضافة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) إلى مجموعة الصفحات في ملف PDF.
+1. إضافة [Text fragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf/texfragment) إلى مجموعة الفقرات في مثيل الصفحة.
+1. إنشاء مثيل [Graph](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/graph) .
+1. تعيين الحدود لكائن [Drawing object](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing) .
 1. إنشاء مثيل مستطيل.
 
-1. إضافة كائن [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) إلى مجموعة الأشكال في كائن Graph.
+1. إضافة كائن [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle) إلى مجموعة الأشكال في كائن Graph.
 1. إضافة كائن الرسم إلى مجموعة الفقرات في مثيل الصفحة.
-1. إضافة [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) إلى مجموعة الفقرات في مثيل الصفحة.
+1. إضافة [Text fragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf/texfragment) إلى مجموعة الفقرات في مثيل الصفحة.
 
 1. وحفظ ملف PDF الخاص بك.
 
@@ -146,7 +146,7 @@ private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float w
 
 يقدم Aspose.PDF for .NET أيضًا ميزة ملء كائن المستطيل بلون معين.
 
-تظهر مقتطفات الكود التالية كيفية إضافة كائن [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) مملوء بلون.
+تظهر مقتطفات الكود التالية كيفية إضافة كائن [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle) مملوء بلون.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -194,7 +194,7 @@ private static void RectangleFilled()
 
 يدعم Aspose.PDF for .NET ميزة إضافة كائنات الرسم إلى مستندات PDF وأحيانًا يتطلب ملء كائنات الرسم بتدرج لوني. لملء كائنات الرسم بتدرج لوني، نحتاج إلى تعيين setPatterColorSpace مع كائن gradientAxialShading كما يلي.
 
-تظهر مقتطفات الكود التالية كيفية إضافة كائن [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) مملوء بتدرج لوني.
+تظهر مقتطفات الكود التالية كيفية إضافة كائن [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle) مملوء بتدرج لوني.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -243,7 +243,7 @@ private static void CreateFilledRectangleGradientFill()
 
 ## إنشاء مستطيل مع قناة لون ألفا
 
-يدعم Aspose.PDF for .NET ملء كائن المستطيل بلون معين. يمكن أن يحتوي كائن المستطيل أيضًا على قناة لون ألفا لإعطاء مظهر شفاف. تظهر مقتطفات الكود التالية كيفية إضافة كائن [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) مع قناة لون ألفا.
+يدعم Aspose.PDF for .NET ملء كائن المستطيل بلون معين. يمكن أن يحتوي كائن المستطيل أيضًا على قناة لون ألفا لإعطاء مظهر شفاف. تظهر مقتطفات الكود التالية كيفية إضافة كائن [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle) مع قناة لون ألفا.
 
 يمكن أن تخزن بكسلات الصورة معلومات حول شفافيتها جنبًا إلى جنب مع قيمة اللون. وهذا يسمح بإنشاء صور تحتوي على مناطق شفافة أو شبه شفافة.
 
@@ -304,7 +304,7 @@ private static void RectangleFilled_AlphaChannel()
 
 يدعم Aspose.PDF for .NET ميزة إضافة كائنات الرسم (مثل الرسم، الخط، المستطيل، إلخ) إلى مستندات PDF. عند إضافة أكثر من مثيل لنفس الكائن داخل ملف PDF، يمكننا التحكم في عرضها عن طريق تحديد ترتيب Z. يُستخدم ترتيب Z أيضًا عندما نحتاج إلى عرض الكائنات فوق بعضها البعض.
 
-تظهر مقتطفات الكود التالية الخطوات اللازمة لعرض كائنات [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) فوق بعضها البعض.
+تظهر مقتطفات الكود التالية الخطوات اللازمة لعرض كائنات [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle) فوق بعضها البعض.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

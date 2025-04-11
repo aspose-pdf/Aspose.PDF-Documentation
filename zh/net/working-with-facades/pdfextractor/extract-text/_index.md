@@ -74,11 +74,11 @@ lastmod: "2021-06-05"
 }
 </script>
 
-在本文中，我们将详细探讨如何从 PDF 文件中提取文本。所有这些提取功能都集中在 [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 类中。我们将看到如何在代码中使用这些功能。
+在本文中，我们将详细探讨如何从 PDF 文件中提取文本。所有这些提取功能都集中在 [PdfExtractor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfextractor) 类中。我们将看到如何在代码中使用这些功能。
 
-[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 类提供三种类型的提取能力。这三类分别是文本、图像和附件。为了在这三类中进行提取，PdfExtractor 提供了各种方法，这些方法协同工作以提供最终输出。
+[PdfExtractor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfextractor) 类提供三种类型的提取能力。这三类分别是文本、图像和附件。为了在这三类中进行提取，PdfExtractor 提供了各种方法，这些方法协同工作以提供最终输出。
 
-例如，为了提取文本，您可以使用三种方法，即 [ExtractText, GetText, HasNextPageText 和 GetNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/index)。现在，为了开始提取文本，首先需要调用 [ExtractText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extracttext/index) 方法；这将从 PDF 文件中提取文本并将其存储在内存中。之后，[GetText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/gettext/index) 方法将提取的文本保存到指定位置的文件中。[HasNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextpagetext) 帮助您循环遍历每一页并检查下一页是否有文本。如果包含一些文本，则 [GetNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getnextpagetext/index) 将帮助您将单个页面的文本保存到文件中。
+例如，为了提取文本，您可以使用三种方法，即 [ExtractText, GetText, HasNextPageText 和 GetNextPageText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfextractor/methods/index)。现在，为了开始提取文本，首先需要调用 [ExtractText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfextractor/methods/extracttext/index) 方法；这将从 PDF 文件中提取文本并将其存储在内存中。之后，[GetText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfextractor/methods/gettext/index) 方法将提取的文本保存到指定位置的文件中。[HasNextPageText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfextractor/methods/hasnextpagetext) 帮助您循环遍历每一页并检查下一页是否有文本。如果包含一些文本，则 [GetNextPageText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfextractor/methods/getnextpagetext/index) 将帮助您将单个页面的文本保存到文件中。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

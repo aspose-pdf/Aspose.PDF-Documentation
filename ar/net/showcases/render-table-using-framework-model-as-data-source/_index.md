@@ -84,7 +84,7 @@ sitemap:
 
 ## أساسيات توليد PDF باستخدام Aspose.PDF
 
-واحدة من أهم الفئات في Aspose.PDF هي [فئة Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). هذه الفئة هي محرك عرض PDF. لعرض هيكل PDF، تستخدم مكتبة Aspose.PDF نموذج Document-Page، حيث:
+واحدة من أهم الفئات في Aspose.PDF هي [فئة Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document). هذه الفئة هي محرك عرض PDF. لعرض هيكل PDF، تستخدم مكتبة Aspose.PDF نموذج Document-Page، حيث:
 
 * Document - يحتوي على خصائص مستند PDF بما في ذلك مجموعة الصفحات.
 * Page - يحتوي على خصائص صفحة معينة ومجموعات متنوعة من العناصر المرتبطة بهذه الصفحة.
@@ -175,7 +175,7 @@ private static void AddTable()
 {{< /tab >}}
 {{< /tabs >}}
 
-المشكلة الأكثر شيوعًا هي إخراج البيانات في تنسيق جدول. تُستخدم [فئة Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) لمعالجة الجداول. تمنحنا هذه الفئة القدرة على إنشاء جداول ووضعها في المستند، باستخدام [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) و [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). لذا، لإنشاء الجدول، تحتاج إلى إضافة العدد المطلوب من الصفوف وملئها بالعدد المناسب من الخلايا.
+المشكلة الأكثر شيوعًا هي إخراج البيانات في تنسيق جدول. تُستخدم [فئة Table](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table) لمعالجة الجداول. تمنحنا هذه الفئة القدرة على إنشاء جداول ووضعها في المستند، باستخدام [Rows](https://reference.aspose.com/pdf/ar/net/aspose.pdf/rows) و [Cells](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cell). لذا، لإنشاء الجدول، تحتاج إلى إضافة العدد المطلوب من الصفوف وملئها بالعدد المناسب من الخلايا.
 
 المثال التالي ينشئ الجدول 4x10.
 
@@ -284,10 +284,10 @@ private static void AddTable()
 
 عند تهيئة كائن Table، تم استخدام إعدادات الحد الأدنى للواجهة:
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - عرض الأعمدة (بشكل افتراضي).
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - الحقول الافتراضية لخلايا الجدول.
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - سمات إطار الجدول (النمط، السماكة، اللون).
-* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - سمات إطار الخلية (النمط، السماكة، اللون).
+* [ColumnWidths](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/columnwidths) - عرض الأعمدة (بشكل افتراضي).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/defaultcellpadding) - الحقول الافتراضية لخلايا الجدول.
+* [Border](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/border) - سمات إطار الجدول (النمط، السماكة، اللون).
+* [DefaultCellBorder](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/defaultcellborder) - سمات إطار الخلية (النمط، السماكة، اللون).
 
 نتيجة لذلك، نحصل على الجدول 4x10 مع أعمدة ذات عرض متساوي.
 
@@ -295,7 +295,7 @@ private static void AddTable()
 
 ## تصدير البيانات من كائنات ADO.NET
 
-توفر فئة Table طرقًا للتفاعل مع مصادر بيانات ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) و [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). تستورد الطريقة الأولى البيانات من DataTable، والثانية من DataView.
+توفر فئة Table طرقًا للتفاعل مع مصادر بيانات ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/ar/net/aspose.pdf.table/importdatatable/methods/1) و [ImportDataView](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/methods/importdataview). تستورد الطريقة الأولى البيانات من DataTable، والثانية من DataView.
 مفترضين أن هذه الكائنات ليست مريحة جدًا للعمل في قالب MVC، سنقتصر على مثال موجز. في هذا المثال (السطر 50)، يتم استدعاء طريقة ImportDataTable وتستقبل كمعلمات مثيل DataTable وإعدادات إضافية مثل علامة الرأس والموقع الأولي (صفوف/أعمدة) لإخراج البيانات.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

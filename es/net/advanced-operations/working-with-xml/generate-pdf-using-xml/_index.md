@@ -519,7 +519,7 @@ Creamos otro archivo: el archivo de marcado XSL-FO para transformar los datos de
 </xsl:stylesheet>
 ```
 
-Aspose.PDF tiene una clase especial [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) que permite aplicar la transformación XSL-FO.
+Aspose.PDF tiene una clase especial [XslFoLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/xslfoloadoptions) que permite aplicar la transformación XSL-FO.
 El siguiente fragmento muestra cómo usar esta clase con los archivos de muestra descritos anteriormente.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -660,7 +660,7 @@ pero en el archivo de marcado XSL-FO agregaremos el parámetro: `<xsl:param name
 ```
 
 Para agregar parámetros XSL, necesitamos crear nuestra propia [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) y
-establecerla como propiedad en [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
+establecerla como propiedad en [XslFoLoadOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf/xslfoloadoptions).
 El siguiente fragmento muestra cómo usar esta clase con los archivos de muestra descritos anteriormente.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -826,7 +826,7 @@ Definamos la página con parámetros predeterminados. Nuestra página tendrá un
 </Document>
 ```
 
-Para generar el documento PDF, utilizaremos el método [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index).
+Para generar el documento PDF, utilizaremos el método [BindXml](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/bindxml/index).
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

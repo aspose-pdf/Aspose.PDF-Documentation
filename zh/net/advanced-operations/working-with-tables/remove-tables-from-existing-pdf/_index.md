@@ -84,7 +84,7 @@ Aspose.PDF for NET提供了在生成PDF文档时插入/创建表格的功能，�
 
 {{% /alert %}}
 
-为了移除表格，我们需要使用[TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber)类来获取现有PDF中的表格，然后调用[Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove)。
+为了移除表格，我们需要使用[TableAbsorber](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/tableabsorber)类来获取现有PDF中的表格，然后调用[Remove](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/tableabsorber/methods/remove)。
 
 以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 

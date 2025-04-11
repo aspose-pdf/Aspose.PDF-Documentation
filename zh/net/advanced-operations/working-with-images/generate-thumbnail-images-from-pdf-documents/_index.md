@@ -204,7 +204,7 @@ Aspose.PDF具有明显的优势：
 - 您不需要在系统上安装Adobe Acrobat即可处理PDF文件。
 - 使用Aspose.PDF for .NET相较于Acrobat自动化更简单易懂。
 
-如果我们需要将PDF页面转换为JPEG，[Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices)命名空间提供了一个名为[JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice)的类，用于将PDF页面渲染为JPEG图像。请查看以下代码片段。
+如果我们需要将PDF页面转换为JPEG，[Aspose.PDF.Devices](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices)命名空间提供了一个名为[JpegDevice](https://reference.aspose.com/pdf/zh/net/aspose.pdf.devices/jpegdevice)的类，用于将PDF页面渲染为JPEG图像。请查看以下代码片段。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

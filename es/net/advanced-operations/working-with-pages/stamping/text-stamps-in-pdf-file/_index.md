@@ -80,7 +80,7 @@ sitemap:
 
 ## Agregar sello de texto
 
-Puede usar la clase [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) para agregar un sello de texto en un archivo PDF. La clase TextStamp proporciona propiedades necesarias para crear un sello basado en texto como tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar un sello de texto, necesita crear un objeto Document y un objeto TextStamp utilizando las propiedades requeridas. Después de eso, puede llamar al método AddStamp de la página para agregar el sello en el PDF.
+Puede usar la clase [TextStamp](https://reference.aspose.com/pdf/es/net/aspose.pdf/TextStamp) para agregar un sello de texto en un archivo PDF. La clase TextStamp proporciona propiedades necesarias para crear un sello basado en texto como tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar un sello de texto, necesita crear un objeto Document y un objeto TextStamp utilizando las propiedades requeridas. Después de eso, puede llamar al método AddStamp de la página para agregar el sello en el PDF.
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
@@ -121,7 +121,7 @@ private static void AddTextStamp()
 
 ## Definir alineación para el objeto TextStamp
 
-Agregar marcas de agua a documentos PDF es una de las características más solicitadas y Aspose.PDF for .NET es totalmente capaz de agregar marcas de agua de imagen así como de texto. Tenemos una clase llamada [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) que proporciona la función para agregar sellos de texto sobre el archivo PDF. Recientemente ha habido una necesidad de soportar la función de especificar la alineación del texto al usar el objeto TextStamp. Por lo tanto, para cumplir con este requisito, hemos introducido la propiedad TextAlignment en la clase TextStamp. Usando esta propiedad, podemos especificar la alineación horizontal del texto.
+Agregar marcas de agua a documentos PDF es una de las características más solicitadas y Aspose.PDF for .NET es totalmente capaz de agregar marcas de agua de imagen así como de texto. Tenemos una clase llamada [TextStamp](https://reference.aspose.com/pdf/es/net/aspose.pdf/textstamp) que proporciona la función para agregar sellos de texto sobre el archivo PDF. Recientemente ha habido una necesidad de soportar la función de especificar la alineación del texto al usar el objeto TextStamp. Por lo tanto, para cumplir con este requisito, hemos introducido la propiedad TextAlignment en la clase TextStamp. Usando esta propiedad, podemos especificar la alineación horizontal del texto.
 
 El siguiente fragmento de código muestra un ejemplo de cómo cargar un documento PDF existente y agregar un TextStamp sobre él.
 

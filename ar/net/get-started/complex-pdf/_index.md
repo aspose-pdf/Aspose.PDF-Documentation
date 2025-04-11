@@ -83,15 +83,15 @@ sitemap:
 
 إذا قمنا بإنشاء مستند من الصفر، نحتاج إلى اتباع خطوات معينة:
 
-1. إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). في هذه الخطوة، سنقوم بإنشاء مستند PDF فارغ مع بعض البيانات الوصفية ولكن بدون صفحات.
-1. إضافة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) إلى كائن المستند. لذا، الآن سيكون لمستندنا صفحة واحدة.
-1. إضافة [Image](https://reference.aspose.com/pdf/net/aspose.pdf/image/methods/index) إلى الصفحة.
-1. إنشاء [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) للعنوان. بالنسبة للعنوان، سنستخدم خط Arial بحجم 24pt ومحاذاة مركزية.
-1. إضافة العنوان إلى [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) الصفحة.
-1. إنشاء [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) للوصف. بالنسبة للوصف، سنستخدم خط Arial بحجم 24pt ومحاذاة مركزية.
+1. إنشاء كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document). في هذه الخطوة، سنقوم بإنشاء مستند PDF فارغ مع بعض البيانات الوصفية ولكن بدون صفحات.
+1. إضافة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) إلى كائن المستند. لذا، الآن سيكون لمستندنا صفحة واحدة.
+1. إضافة [Image](https://reference.aspose.com/pdf/ar/net/aspose.pdf/image/methods/index) إلى الصفحة.
+1. إنشاء [TextFragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragment) للعنوان. بالنسبة للعنوان، سنستخدم خط Arial بحجم 24pt ومحاذاة مركزية.
+1. إضافة العنوان إلى [Paragraphs](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page/properties/paragraphs) الصفحة.
+1. إنشاء [TextFragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragment) للوصف. بالنسبة للوصف، سنستخدم خط Arial بحجم 24pt ومحاذاة مركزية.
 1. إضافة (الوصف) إلى فقرات الصفحة.
 1. إنشاء جدول، إضافة خصائص الجدول.
-1. إضافة (الجدول) إلى [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) الصفحة.
+1. إضافة (الجدول) إلى [Paragraphs](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page/properties/paragraphs) الصفحة.
 1. حفظ المستند "Complex.pdf".
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).

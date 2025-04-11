@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) класс позволяет вам управлять исключениями. Для этого вам нужно установить свойство [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) в false или true. Если вы установите операцию в false, результат [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) вернет true или false в зависимости от правильности пароля.
+[PdfFileSecurity](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity) класс позволяет вам управлять исключениями. Для этого вам нужно установить свойство [AllowExceptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) в false или true. Если вы установите операцию в false, результат [DecryptFile](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) вернет true или false в зависимости от правильности пароля.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -103,7 +103,7 @@ private static void ControlExceptionPDFFile()
 }
 ```
 
-Если вы установите свойство [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) в true, то вы сможете получить результат операции, используя оператор try-catch.
+Если вы установите свойство [AllowExceptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) в true, то вы сможете получить результат операции, используя оператор try-catch.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

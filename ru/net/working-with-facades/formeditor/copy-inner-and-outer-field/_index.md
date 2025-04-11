@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[CopyInnerField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) метод позволяет вам копировать поле в том же файле, в тех же координатах, на указанной странице. Этот метод требует имя поля, которое вы хотите скопировать, новое имя поля и номер страницы, на которой поле должно быть скопировано. [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) класс предоставляет этот метод. Следующий фрагмент кода показывает, как скопировать поле в том же месте в том же файле.
+[CopyInnerField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) метод позволяет вам копировать поле в том же файле, в тех же координатах, на указанной странице. Этот метод требует имя поля, которое вы хотите скопировать, новое имя поля и номер страницы, на которой поле должно быть скопировано. [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) класс предоставляет этот метод. Следующий фрагмент кода показывает, как скопировать поле в том же месте в том же файле.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -108,7 +108,7 @@ private static void CopyInnerField()
 
 ## Копирование внешнего поля в существующем PDF файле
 
-[CopyOuterField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) метод позволяет вам копировать поле формы из внешнего PDF файла и затем добавлять его в входной PDF файл в том же месте и на указанном номере страницы. Этот метод требует PDF файл, из которого поле должно быть скопировано, имя поля и номер страницы, на которой поле должно быть скопировано. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Следующий фрагмент кода показывает, как скопировать поле из внешнего PDF файла.
+[CopyOuterField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) метод позволяет вам копировать поле формы из внешнего PDF файла и затем добавлять его в входной PDF файл в том же месте и на указанном номере страницы. Этот метод требует PDF файл, из которого поле должно быть скопировано, имя поля и номер страницы, на которой поле должно быть скопировано. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Следующий фрагмент кода показывает, как скопировать поле из внешнего PDF файла.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

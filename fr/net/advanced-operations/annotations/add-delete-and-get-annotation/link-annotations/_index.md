@@ -83,7 +83,7 @@ sitemap:
 
 > Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-Une [annotation de lien](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) représente un hyperlien, une destination ailleurs et un document. Selon la norme PDF, l'annotation de lien peut être utilisée dans trois cas : ouvrir la vue de page, ouvrir un fichier et ouvrir une page web.
+Une [annotation de lien](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/linkannotation) représente un hyperlien, une destination ailleurs et un document. Selon la norme PDF, l'annotation de lien peut être utilisée dans trois cas : ouvrir la vue de page, ouvrir un fichier et ouvrir une page web.
 
 ### Utilisation de l'annotation de lien pour ouvrir la vue de page
 

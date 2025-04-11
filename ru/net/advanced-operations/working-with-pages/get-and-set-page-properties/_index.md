@@ -83,8 +83,8 @@ Aspose.PDF for .NET позволяет вам читать и устанавли
 
 Чтобы получить количество страниц в PDF-файле:
 
-1. Откройте PDF-файл с помощью класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Затем используйте свойство Count коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) (из объекта Document), чтобы получить общее количество страниц в документе.
+1. Откройте PDF-файл с помощью класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Затем используйте свойство Count коллекции [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection) (из объекта Document), чтобы получить общее количество страниц в документе.
 
 Следующий фрагмент кода показывает, как получить количество страниц PDF-файла.
 
@@ -106,7 +106,7 @@ private static void GetNumberOfPagesInAPdfFile()
 
 ### Получение количества страниц без сохранения документа
 
-Иногда мы генерируем PDF-файлы на лету, и во время создания PDF-файла у нас может возникнуть необходимость (создание оглавления и т. д.) получить количество страниц PDF-файла без сохранения файла в системе или потоке. Поэтому, чтобы удовлетворить эту потребность, в классе Document был введен метод [ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs). Пожалуйста, посмотрите следующий фрагмент кода, который показывает шаги для получения количества страниц без сохранения документа.
+Иногда мы генерируем PDF-файлы на лету, и во время создания PDF-файла у нас может возникнуть необходимость (создание оглавления и т. д.) получить количество страниц PDF-файла без сохранения файла в системе или потоке. Поэтому, чтобы удовлетворить эту потребность, в классе Document был введен метод [ProcessParagraphs](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/processparagraphs). Пожалуйста, посмотрите следующий фрагмент кода, который показывает шаги для получения количества страниц без сохранения документа.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ private static void GetPageCountWithoutSavingTheDocument()
 
 ### **Доступ к свойствам страницы**
 
-Класс [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) предоставляет все свойства, связанные с конкретной страницей PDF. Все страницы PDF-файлов содержатся в коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Класс [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) предоставляет все свойства, связанные с конкретной страницей PDF. Все страницы PDF-файлов содержатся в коллекции [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 Оттуда можно получить доступ либо к отдельным объектам Page, используя их индекс, либо перебрать коллекцию, используя цикл foreach, чтобы получить все страницы. Как только доступ к отдельной странице получен, мы можем получить ее свойства. Следующий фрагмент кода показывает, как получить свойства страницы.
 
@@ -190,12 +190,12 @@ private static void AccessingPageProperties()
 
 Aspose.PDF позволяет вам [разделить PDF на отдельные страницы](/pdf/ru/net/split-pdf-document/) и сохранить их как PDF-файлы. Получение указанной страницы в PDF-файле и сохранение ее как нового PDF является очень похожей операцией: откройте исходный документ, получите доступ к странице, создайте новый документ и добавьте страницу в него.
 
-Коллекция [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) содержит страницы в PDF-файле. Чтобы получить конкретную страницу из этой коллекции:
+Коллекция [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) содержит страницы в PDF-файле. Чтобы получить конкретную страницу из этой коллекции:
 
 1. Укажите индекс страницы, используя свойство Pages.
-1. Создайте новый объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Добавьте объект [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) в новый объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Сохраните выходные данные, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Создайте новый объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Добавьте объект [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) в новый объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Сохраните выходные данные, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
 
 Следующий фрагмент кода показывает, как получить конкретную страницу из PDF-файла и сохранить ее как новый файл.
 
@@ -224,9 +224,9 @@ private static void GetAParticularPageOfThePdfFile()
 
 ## Определение цвета страницы
 
-Класс [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) предоставляет свойства, связанные с конкретной страницей в PDF-документе, включая тип цвета - RGB, черно-белый, градации серого или неопределенный - который использует страница.
+Класс [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) предоставляет свойства, связанные с конкретной страницей в PDF-документе, включая тип цвета - RGB, черно-белый, градации серого или неопределенный - который использует страница.
 
-Все страницы PDF-файлов содержатся в коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection). Свойство ColorType указывает цвет элементов на странице. Чтобы получить или определить информацию о цвете для конкретной страницы PDF, используйте свойство [ColorType](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/colortype) объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+Все страницы PDF-файлов содержатся в коллекции [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection). Свойство ColorType указывает цвет элементов на странице. Чтобы получить или определить информацию о цвете для конкретной страницы PDF, используйте свойство [ColorType](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/properties/colortype) объекта [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page).
 
 Следующий фрагмент кода показывает, как перебрать отдельные страницы PDF-файла, чтобы получить информацию о цвете.
 

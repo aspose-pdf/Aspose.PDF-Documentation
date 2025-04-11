@@ -77,7 +77,7 @@ draft: false
 
 ## 更新 PDF 文件中的现有书签
 
-为了更新 PDF 文件中的现有书签，您需要使用 [ModifyBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) 方法。该方法接受两个参数：源标题（要修改的书签的标题）、目标标题（要替换的标题）。您需要创建一个 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入的 PDF 文件。之后，您需要调用 [ModifyBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) 方法，然后使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF。以下代码片段展示了如何在 PDF 文件中修改现有书签。
+为了更新 PDF 文件中的现有书签，您需要使用 [ModifyBookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) 方法。该方法接受两个参数：源标题（要修改的书签的标题）、目标标题（要替换的标题）。您需要创建一个 [PdfBookmarkEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入的 PDF 文件。之后，您需要调用 [ModifyBookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) 方法，然后使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF。以下代码片段展示了如何在 PDF 文件中修改现有书签。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -130,7 +130,7 @@ private static void UpdateExistingBookmark()
 
 ## 从 PDF 文件中删除所有书签
 
-您可以使用不带任何参数的 [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 方法删除 PDF 文件中的所有书签。首先，您需要创建一个 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入的 PDF 文件。之后，您需要调用 [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 方法，然后使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段展示了如何从 PDF 文件中删除所有书签。
+您可以使用不带任何参数的 [DeleteBookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 方法删除 PDF 文件中的所有书签。首先，您需要创建一个 [PdfBookmarkEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入的 PDF 文件。之后，您需要调用 [DeleteBookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 方法，然后使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段展示了如何从 PDF 文件中删除所有书签。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -183,7 +183,7 @@ private static void DeleteAllBookmarks()
 
 ## 从 PDF 文件中删除特定书签
 
-为了删除特定书签，您需要使用字符串（标题）参数调用 [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 方法。这里的 *title* 表示要从 PDF 中删除的书签。创建一个 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入的 PDF 文件。之后，调用 [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 方法，然后使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段展示了如何从 PDF 文件中删除特定书签。
+为了删除特定书签，您需要使用字符串（标题）参数调用 [DeleteBookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 方法。这里的 *title* 表示要从 PDF 中删除的书签。创建一个 [PdfBookmarkEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入的 PDF 文件。之后，调用 [DeleteBookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) 方法，然后使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段展示了如何从 PDF 文件中删除特定书签。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -236,7 +236,7 @@ private static void DeleteParticularBookmark()
 
 ## 从 PDF 文档 Facades 获取书签
 
-[PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 类提供了在现有 PDF 文件中操作书签的功能。它提供了各种属性来获取/设置与书签相关的信息。以下代码片段展示了如何获取与 PDF 文件中每个书签相关的信息。
+[PdfBookmarkEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor) 类提供了在现有 PDF 文件中操作书签的功能。它提供了各种属性来获取/设置与书签相关的信息。以下代码片段展示了如何获取与 PDF 文件中每个书签相关的信息。
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -309,7 +309,7 @@ private static void GetBookmarksFromDocument()
 
 ## 从现有 PDF 文件中提取书签
 
-[ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 方法允许您从 PDF 文件中提取书签。为了提取书签，您需要创建 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) 对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定 PDF 文件。之后，您需要调用 [ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 方法。[ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 方法返回 [Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks/methods/index) 对象。然后，您可以遍历这些书签并获取单个 [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) 对象。最后，您可以使用 [ExportBookmarksToXML](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/exportbookmarkstoxml) 方法将书签导出到 XML 文件。以下代码片段展示了如何将书签导出到 XML 文件。
+[ExtractBookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 方法允许您从 PDF 文件中提取书签。为了提取书签，您需要创建 [PdfBookmarkEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor) 对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定 PDF 文件。之后，您需要调用 [ExtractBookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 方法。[ExtractBookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) 方法返回 [Bookmarks](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/bookmarks/methods/index) 对象。然后，您可以遍历这些书签并获取单个 [Bookmark](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/bookmark) 对象。最后，您可以使用 [ExportBookmarksToXML](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfbookmarkeditor/exportbookmarkstoxml) 方法将书签导出到 XML 文件。以下代码片段展示了如何将书签导出到 XML 文件。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

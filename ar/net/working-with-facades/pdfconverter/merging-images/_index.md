@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Aspose.PDF 21.4 يتيح لك دمج الصور. طريقة [Merge Images](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) تتحقق من محتويات مجلد معين وتعمل مع نوع الملفات المحدد فيه. عند العمل على دمج الصور، نحدد 'inputImagesStreams'، تنسيق الصورة ووضع دمج الصورة (كمثال - عمودي) لملفنا. ثم نقوم بحفظ النتيجة في FileOutputStream.
+Aspose.PDF 21.4 يتيح لك دمج الصور. طريقة [Merge Images](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) تتحقق من محتويات مجلد معين وتعمل مع نوع الملفات المحدد فيه. عند العمل على دمج الصور، نحدد 'inputImagesStreams'، تنسيق الصورة ووضع دمج الصورة (كمثال - عمودي) لملفنا. ثم نقوم بحفظ النتيجة في FileOutputStream.
 
 اتبع مقتطف الكود التالي لحل مهمتك:
 

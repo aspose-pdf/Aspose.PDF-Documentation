@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-随着 Aspose.PDF for .NET 7.0.0 的发布，我们引入了名为 [ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement)、[ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) 和 [ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection) 的类，这些类提供了与上述类类似的功能，以获取 PDF 文档中图像的分辨率和位置。
+随着 Aspose.PDF for .NET 7.0.0 的发布，我们引入了名为 [ImagePlacement](https://reference.aspose.com/pdf/zh/net/aspose.pdf/imageplacement)、[ImagePlacementAbsorber](https://reference.aspose.com/pdf/zh/net/aspose.pdf/imageplacementabsorber) 和 [ImagePlacementCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/imageplacementcollection) 的类，这些类提供了与上述类类似的功能，以获取 PDF 文档中图像的分辨率和位置。
 
 - ImagePlacementAbsorber 执行图像使用搜索，作为 ImagePlacement 对象集合。
 - ImagePlacement 提供成员 Resolution 和 Rectangle，返回实际的图像放置值。

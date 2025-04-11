@@ -83,9 +83,9 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Obtenir des Signets
 
-La collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) contient tous les signets d'un fichier PDF. Cet article explique comment obtenir des signets d'un fichier PDF et comment savoir sur quelle page se trouve un signet particulier.
+La collection [OutlineCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) contient tous les signets d'un fichier PDF. Cet article explique comment obtenir des signets d'un fichier PDF et comment savoir sur quelle page se trouve un signet particulier.
 
-Pour obtenir les signets, parcourez la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) et obtenez chaque signet dans l'OutlineItemCollection. L'OutlineItemCollection donne accès à tous les attributs du signet. Le code suivant vous montre comment obtenir des signets à partir du fichier PDF.
+Pour obtenir les signets, parcourez la collection [OutlineCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection) et obtenez chaque signet dans l'OutlineItemCollection. L'OutlineItemCollection donne accès à tous les attributs du signet. Le code suivant vous montre comment obtenir des signets à partir du fichier PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -213,7 +213,7 @@ private static void GetBookmarkPageNumber()
 
 ## Obtenir des Signets Enfants d'un Document PDF
 
-Les signets peuvent être organisés dans une structure hiérarchique, avec des parents et des enfants. Pour obtenir tous les signets, parcourez les collections Outlines de l'objet Document. Cependant, pour obtenir également les signets enfants, parcourez tous les signets dans chaque objet [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) obtenu dans la première boucle. Les extraits de code suivants montrent comment obtenir des signets enfants d'un document PDF.
+Les signets peuvent être organisés dans une structure hiérarchique, avec des parents et des enfants. Pour obtenir tous les signets, parcourez les collections Outlines de l'objet Document. Cependant, pour obtenir également les signets enfants, parcourez tous les signets dans chaque objet [OutlineItemCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlineitemcollection) obtenu dans la première boucle. Les extraits de code suivants montrent comment obtenir des signets enfants d'un document PDF.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -294,7 +294,7 @@ private static void GetChildBookmarks()
 
 ## Mettre à Jour des Signets dans un Document PDF
 
-Pour mettre à jour un signet dans un fichier PDF, d'abord, obtenez le signet particulier de la collection OutlineColletion de l'objet Document en spécifiant l'index du signet. Une fois que vous avez récupéré le signet dans l'objet [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), vous pouvez mettre à jour ses propriétés et ensuite enregistrer le fichier PDF mis à jour en utilisant la méthode Save. Les extraits de code suivants montrent comment mettre à jour des signets dans un document PDF.
+Pour mettre à jour un signet dans un fichier PDF, d'abord, obtenez le signet particulier de la collection OutlineColletion de l'objet Document en spécifiant l'index du signet. Une fois que vous avez récupéré le signet dans l'objet [OutlineItemCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlineitemcollection), vous pouvez mettre à jour ses propriétés et ensuite enregistrer le fichier PDF mis à jour en utilisant la méthode Save. Les extraits de code suivants montrent comment mettre à jour des signets dans un document PDF.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -350,7 +350,7 @@ private static void UpdateBookmarks()
 Pour mettre à jour un signet enfant :
 
 1. Récupérez le signet enfant que vous souhaitez mettre à jour à partir du fichier PDF en obtenant d'abord le signet parent puis le signet enfant en utilisant les valeurs d'index appropriées.
-1. Enregistrez le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1).
+1. Enregistrez le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/1).
 
 {{% alert color="primary" %}}
 
@@ -417,7 +417,7 @@ private static void UpdateChildBookmarks()
 
 ## Signets Développés lors de la Visualisation du Document
 
-Les signets sont conservés dans la collection [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) de l'objet Document, lui-même dans la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Cependant, nous pouvons avoir besoin que tous les signets soient développés lors de la visualisation du fichier PDF.
+Les signets sont conservés dans la collection [OutlineItemCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlineitemcollection) de l'objet Document, lui-même dans la collection [OutlineCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection). Cependant, nous pouvons avoir besoin que tous les signets soient développés lors de la visualisation du fichier PDF.
 
 Pour répondre à cette exigence, nous pouvons définir le statut d'ouverture pour chaque élément de signet comme Ouvert. Le code suivant vous montre comment définir le statut d'ouverture pour chaque signet comme développé dans un document PDF.
 

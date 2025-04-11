@@ -83,13 +83,13 @@ sitemap:
 
 ## 向 PDF 文档添加书签
 
-书签保存在 Document 对象的 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 集合中，该集合本身在 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 集合中。
+书签保存在 Document 对象的 [OutlineItemCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlineitemcollection) 集合中，该集合本身在 [OutlineCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection) 集合中。
 
 要向 PDF 添加书签：
 
-1. 使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象打开 PDF 文档。
+1. 使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象打开 PDF 文档。
 1. 创建书签并定义其属性。
-1. 将 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 集合添加到 Outlines 集合中。
+1. 将 [OutlineItemCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlineitemcollection) 集合添加到 Outlines 集合中。
 
 以下代码片段演示如何在 PDF 文档中添加书签。
 
@@ -161,8 +161,8 @@ private static void AddBookmark()
 要向 PDF 文件添加子书签，首先添加父书签：
 
 1. 打开文档。
-1. 向 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 添加书签，定义其属性。
-1. 将 OutlineItemCollection 添加到 Document 对象的 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 集合中。
+1. 向 [OutlineItemCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlineitemcollection) 添加书签，定义其属性。
+1. 将 OutlineItemCollection 添加到 Document 对象的 [OutlineCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection) 集合中。
 
 子书签的创建方式与上述父书签相同，但添加到父书签的 Outlines 集合中。
 
@@ -243,12 +243,12 @@ private static void AddChildBookmark()
 
 ## 从 PDF 文档中删除所有书签
 
-PDF 中的所有书签都保存在 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 集合中。本文解释如何从 PDF 文件中删除所有书签。
+PDF 中的所有书签都保存在 [OutlineCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection) 集合中。本文解释如何从 PDF 文件中删除所有书签。
 
 要从 PDF 文件中删除所有书签：
 
-1. 调用 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 集合的 Delete 方法。
-1. 使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存修改后的文件。
+1. 调用 [OutlineCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection) 集合的 Delete 方法。
+1. 使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存修改后的文件。
 
 以下代码片段演示如何从 PDF 文档中删除所有书签。
 
@@ -299,10 +299,10 @@ private static void DeleteBookmarks()
 
 要从 PDF 文件中删除特定书签：
 
-1. 将书签的标题作为参数传递给 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 集合的 Delete 方法。
+1. 将书签的标题作为参数传递给 [OutlineCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection) 集合的 Delete 方法。
 1. 然后使用 Document 对象的 Save 方法保存更新后的文件。
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类提供了 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 集合。 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) 方法删除传递给该方法的任何书签。
+[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类提供了 [OutlineCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection) 集合。 [Delete](https://reference.aspose.com/pdf/zh/net/aspose.pdf/outlinecollection/methods/delete) 方法删除传递给该方法的任何书签。
 
 以下代码片段演示如何从 PDF 文档中删除特定书签。
 

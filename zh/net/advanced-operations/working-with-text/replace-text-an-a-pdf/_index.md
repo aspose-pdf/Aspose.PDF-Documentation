@@ -484,7 +484,7 @@ Aspose.PDF for .NET支持在创建PDF文档时嵌入字体的功能，以及在�
 
 要替换字体，请使用以下方法：
 
-1. 调用[TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber)类。
+1. 调用[TextFragmentAbsorber](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragmentabsorber)类。
 1. 调用TextFragmentAbsorber类的TextEditOptions.FontReplace.RemoveUnusedFonts参数。（这将删除在字体替换过程中变为未使用的字体）。
 1. 为每个文本片段单独设置字体。
 

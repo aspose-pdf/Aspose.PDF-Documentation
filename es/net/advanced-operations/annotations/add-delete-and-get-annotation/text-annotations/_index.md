@@ -85,13 +85,13 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 Una Anotación de Texto es una anotación adjunta a una ubicación específica en un documento PDF. Cuando está cerrada, la anotación se muestra como un ícono; cuando se abre, debe mostrar una ventana emergente que contenga el texto de la nota en la fuente y tamaño elegidos por el lector.
 
-Las anotaciones están contenidas en la colección de [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) de una Página particular. Esta colección contiene las anotaciones solo para esa página individual; cada página tiene su propia colección de Annotations.
+Las anotaciones están contenidas en la colección de [Annotations](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations) de una Página particular. Esta colección contiene las anotaciones solo para esa página individual; cada página tiene su propia colección de Annotations.
 
-Para agregar una anotación a una página particular, agrégala a la colección de Annotations de esa página con el método [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add).
+Para agregar una anotación a una página particular, agrégala a la colección de Annotations de esa página con el método [Add](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/annotationcollection/methods/add).
 
 1. Primero, crea una anotación que deseas agregar al PDF.
 1. Luego abre el PDF de entrada.
-1. Agrega la anotación a la colección de Annotations del objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. Agrega la anotación a la colección de Annotations del objeto [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page).
 
 El siguiente fragmento de código te muestra cómo agregar una anotación en una página PDF.
 
@@ -136,7 +136,7 @@ Una Anotación Emergente muestra texto en una ventana emergente para entrada y e
 
 No debe tener un flujo de apariencia o acciones asociadas propias y debe ser identificada por la entrada Popup en el diccionario de anotaciones del padre.
 
-El siguiente fragmento de código te muestra cómo agregar una [Anotación Emergente](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) en una página PDF usando un ejemplo de agregar una [anotación de Línea](/pdf/es/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) del padre.
+El siguiente fragmento de código te muestra cómo agregar una [Anotación Emergente](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/popupannotation) en una página PDF usando un ejemplo de agregar una [anotación de Línea](/pdf/es/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) del padre.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void AddLineAnnotation()
 
 ## Cómo agregar (o Crear) una nueva Anotación de Texto Libre
 
-Una anotación de texto libre muestra texto directamente en la página. El método [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) permite crear este tipo de anotación. En el siguiente fragmento, agregamos una anotación de texto libre sobre la primera ocurrencia de la cadena.
+Una anotación de texto libre muestra texto directamente en la página. El método [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) permite crear este tipo de anotación. En el siguiente fragmento, agregamos una anotación de texto libre sobre la primera ocurrencia de la cadena.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -216,7 +216,7 @@ private static void AddFreeTextAnnotationDemo()
 
 ### Establecer la Propiedad de Llamada para FreeTextAnnotation
 
-Para una configuración más flexible de la anotación en el documento PDF, Aspose.PDF for .NET proporciona la propiedad [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) de la clase [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) que permite especificar un Array de puntos de la línea de llamada. El siguiente fragmento de código muestra cómo usar esta funcionalidad:
+Para una configuración más flexible de la anotación en el documento PDF, Aspose.PDF for .NET proporciona la propiedad [Callout](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/freetextannotation/properties/callout) de la clase [FreeTextAnnotation](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/freetextannotation) que permite especificar un Array de puntos de la línea de llamada. El siguiente fragmento de código muestra cómo usar esta funcionalidad:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -351,9 +351,9 @@ private static void AddInvisibleAnnotation()
 
 Esta parte analiza cómo formatear el texto en una anotación de texto libre.
 
-Las anotaciones están contenidas en la colección [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) del objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Al agregar una [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) a un documento PDF, puedes especificar la información de formato como fuente, tamaño, color, etc., utilizando la clase [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index). También es posible especificar la información de formato utilizando la propiedad TextStyle. Además, puedes actualizar el formato de cualquier FreeTextAnnotation que ya esté en el documento PDF.
+Las anotaciones están contenidas en la colección [AnnotationCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/annotationcollection) del objeto [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page). Al agregar una [FreeTextAnnotation](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/freetextannotation) a un documento PDF, puedes especificar la información de formato como fuente, tamaño, color, etc., utilizando la clase [DefaultAppearance](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/defaultappearance/methods/index). También es posible especificar la información de formato utilizando la propiedad TextStyle. Además, puedes actualizar el formato de cualquier FreeTextAnnotation que ya esté en el documento PDF.
 
-La clase [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) admite trabajar con la entrada de estilo predeterminado. Esta clase te permite establecer color, tamaño de fuente y nombre de fuente:
+La clase [TextStyle](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/textstyle) admite trabajar con la entrada de estilo predeterminado. Esta clase te permite establecer color, tamaño de fuente y nombre de fuente:
 
 - La propiedad FontName obtiene o establece el nombre de la fuente (cadena).
 - La propiedad FontSize obtiene y establece el tamaño de texto predeterminado (doble).
@@ -434,7 +434,7 @@ Cuando cambias el contenido o el estilo de texto de una anotación de texto libr
 
 ### Tachar Palabras usando StrikeOutAnnotation
 
-Aspose.PDF for .NET te permite agregar, eliminar y actualizar anotaciones en documentos PDF. Una de las clases también te permite tachar anotaciones. Esto es útil cuando deseas tachar uno o más fragmentos de texto en un documento. Las anotaciones se mantienen en la colección [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) del objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Se puede usar una clase llamada [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) para agregar anotaciones de tachado a un documento PDF.
+Aspose.PDF for .NET te permite agregar, eliminar y actualizar anotaciones en documentos PDF. Una de las clases también te permite tachar anotaciones. Esto es útil cuando deseas tachar uno o más fragmentos de texto en un documento. Las anotaciones se mantienen en la colección [AnnotationCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/annotationcollection) del objeto [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page). Se puede usar una clase llamada [StrikeOutAnnotation](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/strikeoutannotation) para agregar anotaciones de tachado a un documento PDF.
 
 Para tachar un cierto TextFragment:
 
@@ -502,7 +502,7 @@ private void StrikeOutTextInDocument()
 
 ## Eliminar Todas las Anotaciones de la Página de un Archivo PDF
 
-La colección [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) del objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) contiene todas las anotaciones para esa página particular. Para eliminar todas las anotaciones de una página, llama al método *Delete* de la colección AnnotationCollectoin.
+La colección [AnnotationCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/annotationcollection) del objeto [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page) contiene todas las anotaciones para esa página particular. Para eliminar todas las anotaciones de una página, llama al método *Delete* de la colección AnnotationCollectoin.
 
 El siguiente fragmento de código te muestra cómo eliminar todas las anotaciones de una página particular.
 
@@ -536,7 +536,7 @@ Puedes verificar la calidad de Aspose.PDF y obtener los resultados en línea en 
 
 Aspose.PDF te permite eliminar una Anotación particular de un archivo PDF. Este tema explica cómo.
 
-Para eliminar una anotación particular de un PDF, llama al [método Delete de la colección AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). Esta colección pertenece al objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). El método Delete requiere el índice de la anotación que deseas eliminar. Luego, guarda el archivo PDF actualizado. El siguiente fragmento de código muestra cómo eliminar una anotación particular.
+Para eliminar una anotación particular de un PDF, llama al [método Delete de la colección AnnotationCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). Esta colección pertenece al objeto [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page). El método Delete requiere el índice de la anotación que deseas eliminar. Luego, guarda el archivo PDF actualizado. El siguiente fragmento de código muestra cómo eliminar una anotación particular.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -559,7 +559,7 @@ private static void DeleteParticularAnnotation()
 
 ## Obtener Todas las Anotaciones de la Página de un Documento PDF
 
-Aspose.PDF te permite obtener anotaciones de un documento completo o de una página dada. Para obtener todas las anotaciones de la página en un documento PDF, recorre la colección [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) de los recursos de la página deseada. El siguiente fragmento de código te muestra cómo obtener todas las anotaciones de una página.
+Aspose.PDF te permite obtener anotaciones de un documento completo o de una página dada. Para obtener todas las anotaciones de la página en un documento PDF, recorre la colección [AnnotationCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/annotationcollection) de los recursos de la página deseada. El siguiente fragmento de código te muestra cómo obtener todas las anotaciones de una página.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -587,7 +587,7 @@ Ten en cuenta que para obtener todas las anotaciones del PDF completo, debes rec
 
 ## Obtener una Anotación Particular de un Archivo PDF
 
-Las anotaciones están asociadas con páginas individuales y se almacenan en la colección [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) del objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Para obtener una anotación particular, especifica su índice. Esto devuelve un objeto [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) que necesita ser convertido a un tipo de anotación particular, por ejemplo [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). El siguiente fragmento de código muestra cómo obtener una anotación particular y sus propiedades.
+Las anotaciones están asociadas con páginas individuales y se almacenan en la colección [AnnotationCOllection](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/annotationcollection) del objeto [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page). Para obtener una anotación particular, especifica su índice. Esto devuelve un objeto [Annotation](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/annotation) que necesita ser convertido a un tipo de anotación particular, por ejemplo [TextAnnotation](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/textannotation). El siguiente fragmento de código muestra cómo obtener una anotación particular y sus propiedades.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -612,7 +612,7 @@ private static void GetParticularAnnotation()
 
 ## Obtener el Recurso de la Anotación
 
-Aspose.PDF te permite obtener un recurso de anotación de un documento completo o de una página dada. El siguiente fragmento de código te muestra cómo obtener el recurso de anotación como un objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) del archivo PDF de entrada.
+Aspose.PDF te permite obtener un recurso de anotación de un documento completo o de una página dada. El siguiente fragmento de código te muestra cómo obtener el recurso de anotación como un objeto [FileSpecification](https://reference.aspose.com/pdf/es/net/aspose.pdf/filespecification) del archivo PDF de entrada.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

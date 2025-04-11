@@ -95,12 +95,12 @@ sitemap:
 
 Чтобы добавить аннотацию разметки текста в PDF-документ, необходимо выполнить следующие действия:
 
-1. Загрузить PDF-файл - новый [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) объект.
+1. Загрузить PDF-файл - новый [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) объект.
 1. Создать аннотации:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) и установить параметры (название, цвет).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) и установить параметры (название, цвет).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) и установить параметры (название, цвет).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) и установить параметры (название, цвет).
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/highlightannotation) и установить параметры (название, цвет).
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/strikeoutannotation) и установить параметры (название, цвет).
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/squigglyannotation) и установить параметры (название, цвет).
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/underlineannotation) и установить параметры (название, цвет).
 1. После этого необходимо добавить все аннотации на страницу.
 
 ```csharp

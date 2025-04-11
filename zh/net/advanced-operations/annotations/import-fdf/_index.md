@@ -85,9 +85,9 @@ FDF（表单数据格式）是一种文件格式，用于存储和传输 PDF 文
 
 {{% /alert %}}
 
-[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/) 类包含用于处理从 FDF 文件导入注释的方法。[PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) 方法提供了将注释从 FDF 文档导入到 PDF 文件的功能。
+[PDFAnnotationEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor/) 类包含用于处理从 FDF 文件导入注释的方法。[PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) 方法提供了将注释从 FDF 文档导入到 PDF 文件的功能。
 
-此外，[Class Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/) 包含 [Form.ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/importfdf/) 方法 - 从 FDF 文件导入字段内容并将其放入新的 PDF 中。
+此外，[Class Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/) 包含 [Form.ImportFdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/importfdf/) 方法 - 从 FDF 文件导入字段内容并将其放入新的 PDF 中。
 
 以下代码片段演示了如何使用 Form.ImportFdf() 方法将 FDF 格式注释导入 PDF：
 

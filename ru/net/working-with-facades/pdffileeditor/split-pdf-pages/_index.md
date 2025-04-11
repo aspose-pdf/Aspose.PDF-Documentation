@@ -77,7 +77,7 @@ draft: false
 
 ## Разделение страниц PDF с первой страницы с использованием путей к файлам
 
-[SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF-файл, начиная с первой страницы и заканчивая указанным номером страницы. Если вы хотите манипулировать PDF-файлами с диска, вы можете передать пути к входным и выходным PDF-файлам этому методу. Следующий фрагмент кода показывает, как разделить страницы PDF с первой страницы, используя пути к файлам.
+[SplitFromFirst](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF-файл, начиная с первой страницы и заканчивая указанным номером страницы. Если вы хотите манипулировать PDF-файлами с диска, вы можете передать пути к входным и выходным PDF-файлам этому методу. Следующий фрагмент кода показывает, как разделить страницы PDF с первой страницы, используя пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void SplitPdfPagesFromFirstUsingFilePaths()
 
 ## Разделение страниц PDF с первой страницы с использованием потоков файлов
 
-[SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF-файл, начиная с первой страницы и заканчивая указанным номером страницы. Если вы хотите манипулировать PDF-файлами из потоков, вы можете передать входные и выходные PDF-потоки этому методу. Следующий фрагмент кода показывает, как разделить страницы PDF с первой страницы, используя потоки файлов.
+[SplitFromFirst](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF-файл, начиная с первой страницы и заканчивая указанным номером страницы. Если вы хотите манипулировать PDF-файлами из потоков, вы можете передать входные и выходные PDF-потоки этому методу. Следующий фрагмент кода показывает, как разделить страницы PDF с первой страницы, используя потоки файлов.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -118,7 +118,7 @@ private static void SplitPdfPagesFromFirstUsingFileStreams()
 
 ## Разделение страниц PDF на большие наборы с использованием путей к файлам
 
-[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF-файл на несколько наборов страниц. В этом примере нам нужны два набора страниц (1, 2) и (5, 6). Если вы хотите получить доступ к PDF-файлу с диска, вам нужно передать входной PDF в качестве пути к файлу. Этот метод возвращает массив MemoryStream. Вы можете пройтись по этому массиву и сохранить отдельные наборы страниц как отдельные файлы. Следующий фрагмент кода показывает, как разделить страницы PDF на большие наборы, используя пути к файлам.
+[SplitToBulks](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF-файл на несколько наборов страниц. В этом примере нам нужны два набора страниц (1, 2) и (5, 6). Если вы хотите получить доступ к PDF-файлу с диска, вам нужно передать входной PDF в качестве пути к файлу. Этот метод возвращает массив MemoryStream. Вы можете пройтись по этому массиву и сохранить отдельные наборы страниц как отдельные файлы. Следующий фрагмент кода показывает, как разделить страницы PDF на большие наборы, используя пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -147,7 +147,7 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
 
 ## Разделение страниц PDF на большие наборы с использованием потоков
 
-[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF-файл на несколько наборов страниц. В этом примере нам нужны два набора страниц (1, 2) и (5, 6). Вы можете передать поток этому методу вместо доступа к файлу с диска. Этот метод возвращает массив MemoryStream. Вы можете пройтись по этому массиву и сохранить отдельные наборы страниц как отдельные файлы. Следующий фрагмент кода показывает, как разделить страницы PDF на большие наборы, используя потоки.
+[SplitToBulks](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF-файл на несколько наборов страниц. В этом примере нам нужны два набора страниц (1, 2) и (5, 6). Вы можете передать поток этому методу вместо доступа к файлу с диска. Этот метод возвращает массив MemoryStream. Вы можете пройтись по этому массиву и сохранить отдельные наборы страниц как отдельные файлы. Следующий фрагмент кода показывает, как разделить страницы PDF на большие наборы, используя потоки.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -180,7 +180,7 @@ private static void SplitPdfPagesToBulkUsingStreams()
 
 ## Разделение страниц PDF до конца с использованием путей к файлам
 
-[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF с указанного номера страницы до конца PDF-файла и сохранить его как новый PDF. Для этого, используя пути к файлам, вам нужно передать входные и выходные пути к файлам и номер страницы, с которой нужно начать разделение. Выходной PDF будет сохранен на диске. Следующий фрагмент кода показывает, как разделить страницы PDF до конца, используя пути к файлам.
+[SplitToEnd](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF с указанного номера страницы до конца PDF-файла и сохранить его как новый PDF. Для этого, используя пути к файлам, вам нужно передать входные и выходные пути к файлам и номер страницы, с которой нужно начать разделение. Выходной PDF будет сохранен на диске. Следующий фрагмент кода показывает, как разделить страницы PDF до конца, используя пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -197,7 +197,7 @@ private static void SplitPdfPagesToEndUsingFilePaths()
 
 ## Разделение страниц PDF до конца с использованием потоков
 
-[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF с указанного номера страницы до конца PDF-файла и сохранить его как новый PDF. Для этого, используя потоки, вам нужно передать входные и выходные потоки и номер страницы, с которой нужно начать разделение. Выходной PDF будет сохранен в выходном потоке. Следующий фрагмент кода показывает, как разделить страницы PDF до конца, используя потоки.
+[SplitToEnd](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам разделить PDF с указанного номера страницы до конца PDF-файла и сохранить его как новый PDF. Для этого, используя потоки, вам нужно передать входные и выходные потоки и номер страницы, с которой нужно начать разделение. Выходной PDF будет сохранен в выходном потоке. Следующий фрагмент кода показывает, как разделить страницы PDF до конца, используя потоки.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -227,7 +227,7 @@ private static void SplitPdfPagesToEndUsingStreams()
 
 [products.aspose.app/pdf/splitter](https://products.aspose.app/pdf/splitter) {{% /alert %}}
 
-Чтобы разделить PDF-файл на отдельные страницы, вам нужно передать PDF в качестве пути к файлу методу [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Этот метод вернет массив MemoryStream, содержащий отдельные страницы PDF-файла. Вы можете пройтись по этому массиву MemoryStream и сохранить отдельные страницы как отдельные PDF-файлы на диске. Следующий фрагмент кода показывает, как разделить PDF на отдельные страницы, используя пути к файлам.
+Чтобы разделить PDF-файл на отдельные страницы, вам нужно передать PDF в качестве пути к файлу методу [SplitToPages](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Этот метод вернет массив MemoryStream, содержащий отдельные страницы PDF-файла. Вы можете пройтись по этому массиву MemoryStream и сохранить отдельные страницы как отдельные PDF-файлы на диске. Следующий фрагмент кода показывает, как разделить PDF на отдельные страницы, используя пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -254,7 +254,7 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
 
 ## Разделение PDF на отдельные страницы с использованием потоков
 
-Чтобы разделить PDF-файл на отдельные страницы, вам нужно передать PDF в качестве потока методу [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Этот метод вернет массив MemoryStream, содержащий отдельные страницы PDF-файла. Вы можете пройтись по этому массиву MemoryStream и сохранить отдельные страницы как отдельные PDF-файлы на диске, или вы можете сохранить эти отдельные страницы в памяти для последующего использования в вашем приложении. Следующий фрагмент кода показывает, как разделить PDF на отдельные страницы, используя потоки.
+Чтобы разделить PDF-файл на отдельные страницы, вам нужно передать PDF в качестве потока методу [SplitToPages](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Этот метод вернет массив MemoryStream, содержащий отдельные страницы PDF-файла. Вы можете пройтись по этому массиву MemoryStream и сохранить отдельные страницы как отдельные PDF-файлы на диске, или вы можете сохранить эти отдельные страницы в памяти для последующего использования в вашем приложении. Следующий фрагмент кода показывает, как разделить PDF на отдельные страницы, используя потоки.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

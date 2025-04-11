@@ -77,7 +77,7 @@ draft: false
 
 ## Hacer un folleto de PDF utilizando rutas de archivos
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando rutas de archivos. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando rutas de archivos.
+[MakeBooklet](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando rutas de archivos. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
 
 ## Hacer un folleto de PDF utilizando tamaño de página y rutas de archivos
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando tamaño de página y rutas de archivos.
+[MakeBooklet](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando tamaño de página y rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
 
 ## Hacer un folleto de PDF utilizando tamaño de página, páginas izquierda y derecha especificadas, y rutas de archivos
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida y especificar páginas particulares para los lados izquierdo y derecho del archivo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando tamaño de página, páginas izquierda y derecha especificadas y rutas de archivos.
+[MakeBooklet](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida y especificar páginas particulares para los lados izquierdo y derecho del archivo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando tamaño de página, páginas izquierda y derecha especificadas y rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## Hacer un folleto de PDF utilizando páginas izquierda y derecha especificadas, y rutas de archivos
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando rutas de archivos. También puedes especificar páginas particulares para los lados izquierdo y derecho del archivo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando páginas izquierda y derecha especificadas y rutas de archivos.
+[MakeBooklet](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando rutas de archivos. También puedes especificar páginas particulares para los lados izquierdo y derecho del archivo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando páginas izquierda y derecha especificadas y rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
 
 ## Hacer un folleto de PDF utilizando flujos
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del flujo PDF de entrada y guardarlo en los flujos PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando flujos en lugar de rutas de archivos. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando flujos.
+[MakeBooklet](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del flujo PDF de entrada y guardarlo en los flujos PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando flujos en lugar de rutas de archivos. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,7 +175,7 @@ private static void MakeBookletOfPdfUsingStreams()
 
 ## Hacer un folleto de PDF utilizando tamaño de página y flujos
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando flujos en lugar de rutas de archivos. También puedes establecer el tamaño de página del flujo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando tamaño de página y flujos.
+[MakeBooklet](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando flujos en lugar de rutas de archivos. También puedes establecer el tamaño de página del flujo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando tamaño de página y flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
 
 ## Hacer un folleto de PDF utilizando tamaño de página, páginas izquierda y derecha especificadas, y flujos
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando flujos en lugar de rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida y especificar páginas particulares para los lados izquierdo y derecho del flujo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando tamaño de página, páginas izquierda y derecha especificadas, y flujos.
+[MakeBooklet](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando flujos en lugar de rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida y especificar páginas particulares para los lados izquierdo y derecho del flujo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando tamaño de página, páginas izquierda y derecha especificadas, y flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +226,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
 
 ## Hacer un folleto de PDF utilizando páginas izquierda y derecha especificadas, y flujos
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando flujos en lugar de rutas de archivos. También puedes especificar páginas particulares para los lados izquierdo y derecho del flujo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando páginas izquierda y derecha especificadas y flujos.
+[MakeBooklet](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer un folleto del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer un folleto utilizando flujos en lugar de rutas de archivos. También puedes especificar páginas particulares para los lados izquierdo y derecho del flujo PDF de salida con esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer un folleto utilizando páginas izquierda y derecha especificadas y flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-为了获取 PDF 文件的特定信息，您需要创建一个 [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) 类的对象。之后，您可以获取各个属性的值，如主题、标题、关键字和创建者等。
+为了获取 PDF 文件的特定信息，您需要创建一个 [PdfFileInfo](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileinfo) 类的对象。之后，您可以获取各个属性的值，如主题、标题、关键字和创建者等。
 
 以下代码片段向您展示如何获取 PDF 文件信息。
 
@@ -110,7 +110,7 @@ private static void GetPdfInfo()
 
 ## 获取元信息
 
-为了获取信息，我们使用 [Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header) 属性。通过 'Hashtable' 我们获取所有可能的值。
+为了获取信息，我们使用 [Header](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileinfo/properties/header) 属性。通过 'Hashtable' 我们获取所有可能的值。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

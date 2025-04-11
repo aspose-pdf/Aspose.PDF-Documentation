@@ -77,7 +77,7 @@ draft: false
 
 ## Obtener Valores de Opción del Botón de un Archivo PDF Existente
 
-Los botones de opción proporcionan una forma de mostrar diferentes opciones. La clase [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) te permite obtener todos los valores de opción del botón para un botón de opción particular. Puedes obtener estos valores utilizando el método [GetButtonOptionValues](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). Este método requiere el nombre del botón de opción como parámetro de entrada y devuelve un Hashtable. Puedes iterar a través de este Hashtable para obtener los valores de opción. El siguiente fragmento de código te muestra cómo obtener los valores de opción del botón de un archivo PDF existente.
+Los botones de opción proporcionan una forma de mostrar diferentes opciones. La clase [Form](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/form) te permite obtener todos los valores de opción del botón para un botón de opción particular. Puedes obtener estos valores utilizando el método [GetButtonOptionValues](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues). Este método requiere el nombre del botón de opción como parámetro de entrada y devuelve un Hashtable. Puedes iterar a través de este Hashtable para obtener los valores de opción. El siguiente fragmento de código te muestra cómo obtener los valores de opción del botón de un archivo PDF existente.
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetButtonOptions()
@@ -105,7 +105,7 @@ private static void GetButtonOptions()
 
 ## Obtener el Valor de Opción del Botón Actual de un Archivo PDF Existente
 
-Los botones de opción proporcionan una forma de establecer valores de opción, sin embargo, solo uno de ellos puede ser seleccionado a la vez. Si deseas obtener el valor de opción actualmente seleccionado, puedes utilizar el método [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue). La clase [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) proporciona este método. El método [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) requiere el nombre del botón de opción como parámetro de entrada y devuelve el valor como cadena. El siguiente fragmento de código te muestra cómo obtener el valor de opción del botón actual de un archivo PDF existente.
+Los botones de opción proporcionan una forma de establecer valores de opción, sin embargo, solo uno de ellos puede ser seleccionado a la vez. Si deseas obtener el valor de opción actualmente seleccionado, puedes utilizar el método [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue). La clase [Form](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/form) proporciona este método. El método [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) requiere el nombre del botón de opción como parámetro de entrada y devuelve el valor como cadena. El siguiente fragmento de código te muestra cómo obtener el valor de opción del botón actual de un archivo PDF existente.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Aspose.PDF for .NET API提供了使用C#或其他任何.NET语言处理PDF文档中页面的完全灵活性。它在[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)中维护PDF文档的所有页面，可以用于处理PDF页面。
+Aspose.PDF for .NET API提供了使用C#或其他任何.NET语言处理PDF文档中页面的完全灵活性。它在[PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection)中维护PDF文档的所有页面，可以用于处理PDF页面。
 Aspose.PDF for .NET允许您在文件的任何位置向PDF文档插入页面，以及将页面添加到PDF文件的末尾。
 本节展示了如何使用C#向PDF添加页面。
 
@@ -93,9 +93,9 @@ Aspose.PDF for .NET允许您在文件的任何位置向PDF文档插入页面，�
 
 要在PDF文件中插入空白页面：
 
-1. 创建一个带有输入PDF文件的[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)类对象。
-1. 调用[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)集合的[Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert)方法，并指定索引。
-1. 使用[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)方法保存输出PDF。
+1. 创建一个带有输入PDF文件的[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)类对象。
+1. 调用[PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection)集合的[Insert](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection/methods/insert)方法，并指定索引。
+1. 使用[Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4)方法保存输出PDF。
 
 以下代码片段展示了如何在PDF文件中插入页面。
 
@@ -139,9 +139,9 @@ private static void InsertAnEmptyPageWithParameters()
 
 要在PDF文件末尾插入空白页面：
 
-1. 创建一个带有输入PDF文件的[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)类对象。
-1. 调用[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)集合的[Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1)方法，不带任何参数。
-1. 使用[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)方法保存输出PDF。
+1. 创建一个带有输入PDF文件的[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)类对象。
+1. 调用[PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection)集合的[Add](https://reference.aspose.com/pdf/zh/net/aspose.pdf.pagecollection/add/methods/1)方法，不带任何参数。
+1. 使用[Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4)方法保存输出PDF。
 
 以下代码片段展示了如何在PDF文件末尾插入空白页面。
 

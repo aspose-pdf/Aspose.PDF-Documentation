@@ -78,11 +78,11 @@ draft: false
 
 {{% alert color="primary" %}}
 
-يصف هذا المقال كيفية [دمج](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) عدة مستندات PDF في مستند PDF واحد بمساعدة [Aspose.PDF for .NET](/pdf/ar/net/) المكون. يجعل [Aspose.PDF for .NET](/pdf/ar/net/) هذه المهمة سهلة للغاية.
+يصف هذا المقال كيفية [دمج](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) عدة مستندات PDF في مستند PDF واحد بمساعدة [Aspose.PDF for .NET](/pdf/ar/net/) المكون. يجعل [Aspose.PDF for .NET](/pdf/ar/net/) هذه المهمة سهلة للغاية.
 
 {{% /alert %}}
 
-كل ما عليك فعله هو استدعاء طريقة [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) وسيتم دمج جميع ملفات PDF المدخلة الخاصة بك معًا وسيتم إنشاء ملف PDF واحد. دعنا ننشئ تطبيقًا لممارسة دمج ملفات PDF. سنقوم بإنشاء تطبيق باستخدام Visual Studio.NET 2019.
+كل ما عليك فعله هو استدعاء طريقة [Concatenate](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) وسيتم دمج جميع ملفات PDF المدخلة الخاصة بك معًا وسيتم إنشاء ملف PDF واحد. دعنا ننشئ تطبيقًا لممارسة دمج ملفات PDF. سنقوم بإنشاء تطبيق باستخدام Visual Studio.NET 2019.
 
 {{% alert color="primary" %}}
 
@@ -104,7 +104,7 @@ private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabe
 }
 ```
 
-يظهر عرض تطبيق نموذج Windows لتوضيح فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) لدمج ملفات PDF.
+يظهر عرض تطبيق نموذج Windows لتوضيح فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) لدمج ملفات PDF.
 
 ![دمج ملفات PDF](how-to-concatenate-pdf-files-in-different-ways_1.png)
 

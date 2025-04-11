@@ -80,7 +80,7 @@ lastmod: "2022-02-17"
 
 本主题解释了如何使用 Aspose.PDF 命名空间中的操作符类，这些类提供了获取图像的分辨率和尺寸信息的能力，而无需提取它们。
 
-实现这一点有不同的方法。本文解释了如何使用 `arraylist` 和 [图像放置类](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement)。
+实现这一点有不同的方法。本文解释了如何使用 `arraylist` 和 [图像放置类](https://reference.aspose.com/pdf/zh/net/aspose.pdf/imageplacement)。
 
 1. 首先，加载源 PDF 文件（包含图像）。
 1. 然后创建一个 ArrayList 对象来保存文档中任何图像的名称。

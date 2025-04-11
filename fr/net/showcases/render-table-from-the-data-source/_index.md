@@ -80,7 +80,7 @@ sitemap:
 
 Aspose.PDF vous permet de créer le tableau avec DataSource à partir de DataSet, Data Table, tableaux et objets IEnumerable en utilisant la classe PdfLightTable.
 
-La [classe Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) est utilisée pour traiter les tableaux. Cette classe nous donne la possibilité de créer des tableaux et de les placer dans le document, en utilisant [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) et [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). Donc, pour créer le tableau, vous devez ajouter le nombre requis de lignes et les remplir avec le nombre approprié de cellules.
+La [classe Table](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table) est utilisée pour traiter les tableaux. Cette classe nous donne la possibilité de créer des tableaux et de les placer dans le document, en utilisant [Rows](https://reference.aspose.com/pdf/fr/net/aspose.pdf/rows) et [Cells](https://reference.aspose.com/pdf/fr/net/aspose.pdf/cell). Donc, pour créer le tableau, vous devez ajouter le nombre requis de lignes et les remplir avec le nombre approprié de cellules.
 
 L'exemple suivant crée le tableau 4x10.
 
@@ -189,14 +189,14 @@ private static void AddTable()
 
 Lors de l'initialisation de l'objet Table, les paramètres de base minimaux ont été utilisés :
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - largeur des colonnes (par défaut).
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - les champs par défaut pour la cellule du tableau.
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - attributs du cadre du tableau (style, épaisseur, couleur).
-* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - attributs du cadre de la cellule (style, épaisseur, couleur).
+* [ColumnWidths](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table/properties/columnwidths) - largeur des colonnes (par défaut).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table/properties/defaultcellpadding) - les champs par défaut pour la cellule du tableau.
+* [Border](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table/properties/border) - attributs du cadre du tableau (style, épaisseur, couleur).
+* [DefaultCellBorder](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table/properties/defaultcellborder) - attributs du cadre de la cellule (style, épaisseur, couleur).
 
 ## Exportation de données à partir d'un tableau d'objets
 
-La classe Table fournit des méthodes pour interagir avec les sources de données ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) et [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). La première méthode importe des données à partir du DataTable, la seconde à partir du DataView. 
+La classe Table fournit des méthodes pour interagir avec les sources de données ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/fr/net/aspose.pdf.table/importdatatable/methods/1) et [ImportDataView](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table/methods/importdataview). La première méthode importe des données à partir du DataTable, la seconde à partir du DataView. 
 En supposant que ces objets ne sont pas très pratiques pour travailler dans le modèle MVC, nous nous limiterons à un bref exemple. Dans cet exemple (ligne 50), la méthode ImportDataTable est appelée et reçoit comme paramètres une instance de DataTable et des paramètres supplémentaires comme le drapeau d'en-tête et la position initiale (lignes/colonnes) pour la sortie des données.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

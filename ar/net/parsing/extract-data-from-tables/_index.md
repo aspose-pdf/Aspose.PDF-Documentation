@@ -84,11 +84,11 @@ sitemap:
 
 Aspose.PDF for .NET لديها أداة لتسهيل استرجاع الجداول. لاستخراج بيانات الجدول، يجب عليك تنفيذ الخطوات التالية:
 
-1. فتح المستند - إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. إنشاء كائن [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber).
-1. تحديد الصفحات التي سيتم تحليلها وتطبيق [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/visit) على الصفحات المطلوبة. سيتم مسح البيانات الجدولية وتخزين النتيجة في [TableList](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/properties/tablelist).
-1. `TableList` هو قائمة من [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). للحصول على البيانات، قم بالتكرار عبر `TableList` وتعامل مع [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) و [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
-1. كل [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) يحتوي على مجموعة من [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). يمكنك معالجتها لأغراضك الخاصة.
+1. فتح المستند - إنشاء كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. إنشاء كائن [TableAbsorber](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/tableabsorber).
+1. تحديد الصفحات التي سيتم تحليلها وتطبيق [Visit](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/tableabsorber/methods/visit) على الصفحات المطلوبة. سيتم مسح البيانات الجدولية وتخزين النتيجة في [TableList](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/tableabsorber/properties/tablelist).
+1. `TableList` هو قائمة من [AbsorbedTable](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/absorbedtable). للحصول على البيانات، قم بالتكرار عبر `TableList` وتعامل مع [RowList](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/absorbedtable/properties/rowlist) و [CellList](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/absorbedrow/properties/celllist).
+1. كل [AbsorbedCell](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/absorbedcell) يحتوي على مجموعة من [TextFragments](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/absorbedcell/properties/textfragments). يمكنك معالجتها لأغراضك الخاصة.
 
 تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
@@ -135,7 +135,7 @@ private static void ExtractTable()
 
 ## استخراج الجدول في منطقة محددة من صفحة PDF
 
-كل جدول تم امتصاصه لديه خاصية [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle) التي تصف موقع الجدول على الصفحة.
+كل جدول تم امتصاصه لديه خاصية [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/absorbedtable/properties/rectangle) التي تصف موقع الجدول على الصفحة.
 
 إذا كنت بحاجة إلى استخراج الجداول الموجودة في منطقة محددة، يجب عليك العمل مع إحداثيات محددة.
 

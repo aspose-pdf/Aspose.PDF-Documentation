@@ -77,7 +77,7 @@ draft: false
 
 ## استبدال النص في ملف PDF موجود
 
-لكي تستبدل النص في ملف PDF موجود، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). بعد ذلك، تحتاج إلى استدعاء طريقة [ReplaceText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index). تحتاج إلى حفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) من فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). يوضح لك مقتطف الكود التالي كيفية استبدال النص في ملف PDF موجود.
+لكي تستبدل النص في ملف PDF موجود، تحتاج إلى إنشاء كائن من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/facade/methods/bindpdf/index). بعد ذلك، تحتاج إلى استدعاء طريقة [ReplaceText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index). تحتاج إلى حفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save) من فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor). يوضح لك مقتطف الكود التالي كيفية استبدال النص في ملف PDF موجود.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -179,7 +179,7 @@ private static void ReplaceText02()
 {{< /tab >}}
 {{< /tabs >}}
 
-لإمكانيات أكثر تقدمًا للعمل مع نصنا، سنستخدم طريقة [TextState](https://reference.aspose.com/pdf/net/aspose.pdf.text/textstate). باستخدام هذه الطريقة، يمكننا جعل النص عريضًا، مائلًا، ملونًا، وهكذا.
+لإمكانيات أكثر تقدمًا للعمل مع نصنا، سنستخدم طريقة [TextState](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textstate). باستخدام هذه الطريقة، يمكننا جعل النص عريضًا، مائلًا، ملونًا، وهكذا.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

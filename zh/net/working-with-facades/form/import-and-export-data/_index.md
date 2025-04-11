@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类允许您使用 [ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.form/importxml/methods/1) 方法从 XML 文件导入数据到 PDF 文件。为了从 XML 导入数据，您需要创建一个 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxml/index) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何从 XML 文件导入数据。
+[Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类允许您使用 [ImportXml](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.form/importxml/methods/1) 方法从 XML 文件导入数据到 PDF 文件。为了从 XML 导入数据，您需要创建一个 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ImportXml](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/importxml/index) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何从 XML 文件导入数据。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -104,7 +104,7 @@ private static void ImportDataFromXml()
 
 ## 从 PDF 文件导出数据到 XML
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类允许您使用 [ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml) 方法从 PDF 文件导出数据到 XML 文件。为了导出数据到 XML，您需要创建一个 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml) 方法。最后，您可以关闭 FileStream 对象并释放 Form 对象。以下代码片段演示了如何导出数据到 XML 文件。
+[Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类允许您使用 [ExportXml](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/exportxml) 方法从 PDF 文件导出数据到 XML 文件。为了导出数据到 XML，您需要创建一个 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ExportXml](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/exportxml) 方法。最后，您可以关闭 FileStream 对象并释放 Form 对象。以下代码片段演示了如何导出数据到 XML 文件。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -130,7 +130,7 @@ private static void ExportDataToXml()
 
 ## 从 FDF 导入数据到 PDF 文件
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类允许您使用 [ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf) 方法从 FDF 文件导入数据到 PDF 文件。为了从 FDF 导入数据，您需要创建一个 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何从 FDF 文件导入数据。
+[Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类允许您使用 [ImportFdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/importfdf) 方法从 FDF 文件导入数据到 PDF 文件。为了从 FDF 导入数据，您需要创建一个 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ImportFdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/importfdf) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何从 FDF 文件导入数据。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -159,7 +159,7 @@ private static void ImportDataFromPdfIntoPdf()
 
 ## 从 PDF 文件导出数据到 FDF
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类允许您使用 [ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf) 方法从 PDF 文件导出数据到 FDF 文件。为了导出数据到 FDF，您需要创建一个 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何导出数据到 FDF 文件。
+[Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类允许您使用 [ExportFdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/exportfdf) 方法从 PDF 文件导出数据到 FDF 文件。为了导出数据到 FDF，您需要创建一个 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ExportFdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/exportfdf) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何导出数据到 FDF 文件。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -188,7 +188,7 @@ private static void ExportDataToPdfFromPdf()
 
 ## 从 XFDF 导入数据到 PDF 文件
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类允许您使用 [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf) 方法从 XFDF 文件导入数据到 PDF 文件。为了从 XFDF 导入数据，您需要创建一个 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何从 XFDF 文件导入数据。
+[Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类允许您使用 [ImportXfdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/importxfdf) 方法从 XFDF 文件导入数据到 PDF 文件。为了从 XFDF 导入数据，您需要创建一个 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ImportXfdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/importxfdf) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何从 XFDF 文件导入数据。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -217,7 +217,7 @@ private static void ImportDataFromXFDIntoPdf()
 
 ## 从 PDF 文件导出数据到 XFDF
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类允许您使用 [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf) 方法从 PDF 文件导出数据到 XFDF 文件。为了导出数据到 XFDF，您需要创建一个 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何导出数据到 XFDF 文件。
+[Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类允许您使用 [ExportXfdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/exportxfdf) 方法从 PDF 文件导出数据到 XFDF 文件。为了导出数据到 XFDF，您需要创建一个 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的对象，然后使用 FileStream 对象调用 [ExportXfdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/exportxfdf) 方法。最后，您可以使用 [Form](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/form) 类的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/save) 方法保存 PDF 文件。以下代码片段演示了如何导出数据到 XFDF 文件。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,7 +83,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Ajouter un objet Courbe
 
-Une courbe [Curve](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve) est une union connectée de lignes projectives, chaque ligne rencontrant trois autres en points doubles ordinaires.
+Une courbe [Curve](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/curve) est une union connectée de lignes projectives, chaque ligne rencontrant trois autres en points doubles ordinaires.
 
 Aspose.PDF for .NET montre comment utiliser des courbes de Bézier dans vos Graphes.
 Les courbes de Bézier sont largement utilisées en infographie pour modéliser des courbes fluides. La courbe est complètement contenue dans l'enveloppe convexe de ses points de contrôle, les points peuvent être affichés graphiquement et utilisés pour manipuler la courbe de manière intuitive.
@@ -93,10 +93,10 @@ Dans cet article, nous allons examiner les courbes graphiques simples et les cou
 
 Suivez les étapes ci-dessous :
 
-1. Créez une instance de [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Créez un [objet de dessin](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) avec certaines dimensions.
-1. Définissez la [bordure](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) pour l'objet de dessin.
-1. Ajoutez un objet [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) à la collection de paragraphes de la page.
+1. Créez une instance de [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Créez un [objet de dessin](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing) avec certaines dimensions.
+1. Définissez la [bordure](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/graph/properties/border) pour l'objet de dessin.
+1. Ajoutez un objet [Graph](https://reference.aspose.com/pdf/fr/net/aspose.pdf.drawing/graph) à la collection de paragraphes de la page.
 1. Enregistrez notre fichier PDF.
 
 ```csharp

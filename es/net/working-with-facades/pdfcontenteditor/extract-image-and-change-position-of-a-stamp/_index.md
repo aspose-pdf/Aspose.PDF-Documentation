@@ -77,7 +77,7 @@ draft: false
 
 ## Extraer imagen de un sello de imagen
 
-La clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) permite extraer imágenes de un sello en un archivo PDF. Primero, necesitas crear un objeto de la clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) y vincular el archivo PDF de entrada utilizando el método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Después de eso, llama al método [GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) para obtener un array de objetos StampInfo de una página particular del archivo PDF. Luego puedes obtener la imagen de un StampInfo utilizando la propiedad StampInfo.Image. Una vez que obtengas la imagen, puedes guardarla o trabajar con diferentes propiedades de la imagen. El siguiente fragmento de código te muestra cómo extraer una imagen de un sello de imagen.
+La clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor) permite extraer imágenes de un sello en un archivo PDF. Primero, necesitas crear un objeto de la clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor) y vincular el archivo PDF de entrada utilizando el método [BindPdf](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.facade/bindpdf/methods/3). Después de eso, llama al método [GetStamps](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) para obtener un array de objetos StampInfo de una página particular del archivo PDF. Luego puedes obtener la imagen de un StampInfo utilizando la propiedad StampInfo.Image. Una vez que obtengas la imagen, puedes guardarla o trabajar con diferentes propiedades de la imagen. El siguiente fragmento de código te muestra cómo extraer una imagen de un sello de imagen.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -136,7 +136,7 @@ private static void ExtractImageFromStamp()
 
 ## Cambiar la posición de un sello en un archivo PDF
 
-La clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) permite cambiar la posición de un sello en un archivo PDF. Primero, necesitas crear un objeto de la clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) y vincular el archivo PDF de entrada utilizando el método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Después de eso, llama al método [MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) con el índice del sello y la nueva posición en una página particular del archivo PDF. Luego, puedes guardar el archivo actualizado utilizando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save). El siguiente fragmento de código te muestra cómo mover un sello en una página particular.
+La clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor) permite cambiar la posición de un sello en un archivo PDF. Primero, necesitas crear un objeto de la clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor) y vincular el archivo PDF de entrada utilizando el método [BindPdf](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.facade/bindpdf/methods/3). Después de eso, llama al método [MoveStamp](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) con el índice del sello y la nueva posición en una página particular del archivo PDF. Luego, puedes guardar el archivo actualizado utilizando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save). El siguiente fragmento de código te muestra cómo mover un sello en una página particular.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void ChangeStampPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-Además, puedes usar el método [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) para mover un sello específico utilizando StampId.
+Además, puedes usar el método [MoveStampById](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) para mover un sello específico utilizando StampId.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

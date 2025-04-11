@@ -77,7 +77,7 @@ draft: false
 
 ## تقسيم صفحات PDF من البداية باستخدام مسارات الملفات
 
-تتيح لك طريقة [SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تقسيم ملف PDF بدءًا من الصفحة الأولى وانتهاءً برقم الصفحة المحدد. إذا كنت ترغب في معالجة ملفات PDF من القرص، يمكنك تمرير مسارات الملفات لملفات PDF المدخلة والمخرجة إلى هذه الطريقة. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF من البداية باستخدام مسارات الملفات.
+تتيح لك طريقة [SplitFromFirst](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تقسيم ملف PDF بدءًا من الصفحة الأولى وانتهاءً برقم الصفحة المحدد. إذا كنت ترغب في معالجة ملفات PDF من القرص، يمكنك تمرير مسارات الملفات لملفات PDF المدخلة والمخرجة إلى هذه الطريقة. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF من البداية باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void SplitPdfPagesFromFirstUsingFilePaths()
 
 ## تقسيم صفحات PDF من البداية باستخدام تدفقات الملفات
 
-تتيح لك طريقة [SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تقسيم ملف PDF بدءًا من الصفحة الأولى وانتهاءً برقم الصفحة المحدد. إذا كنت ترغب في معالجة ملفات PDF من التدفقات، يمكنك تمرير تدفقات PDF المدخلة والمخرجة إلى هذه الطريقة. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF من البداية باستخدام تدفقات الملفات.
+تتيح لك طريقة [SplitFromFirst](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تقسيم ملف PDF بدءًا من الصفحة الأولى وانتهاءً برقم الصفحة المحدد. إذا كنت ترغب في معالجة ملفات PDF من التدفقات، يمكنك تمرير تدفقات PDF المدخلة والمخرجة إلى هذه الطريقة. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF من البداية باستخدام تدفقات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -118,7 +118,7 @@ private static void SplitPdfPagesFromFirstUsingFileStreams()
 
 ## تقسيم صفحات PDF إلى مجموعات كبيرة باستخدام مسارات الملفات
 
-تتيح لك طريقة [SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تقسيم ملف PDF إلى مجموعات متعددة من الصفحات. في هذا المثال، نحتاج إلى مجموعتين من الصفحات (1، 2) و(5، 6). إذا كنت ترغب في الوصول إلى ملف PDF من القرص، تحتاج إلى تمرير ملف PDF المدخل كمسار ملف. ترجع هذه الطريقة مصفوفة من MemoryStream. يمكنك التكرار عبر هذه المصفوفة وحفظ مجموعات الصفحات الفردية كملفات منفصلة. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF إلى مجموعات كبيرة باستخدام مسارات الملفات.
+تتيح لك طريقة [SplitToBulks](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تقسيم ملف PDF إلى مجموعات متعددة من الصفحات. في هذا المثال، نحتاج إلى مجموعتين من الصفحات (1، 2) و(5، 6). إذا كنت ترغب في الوصول إلى ملف PDF من القرص، تحتاج إلى تمرير ملف PDF المدخل كمسار ملف. ترجع هذه الطريقة مصفوفة من MemoryStream. يمكنك التكرار عبر هذه المصفوفة وحفظ مجموعات الصفحات الفردية كملفات منفصلة. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF إلى مجموعات كبيرة باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -147,7 +147,7 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
 
 ## تقسيم صفحات PDF إلى مجموعات كبيرة باستخدام التدفقات
 
-تتيح لك طريقة [SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تقسيم ملف PDF إلى مجموعات متعددة من الصفحات. في هذا المثال، نحتاج إلى مجموعتين من الصفحات (1، 2) و(5، 6). يمكنك تمرير تدفق إلى هذه الطريقة بدلاً من الوصول إلى الملف من القرص. ترجع هذه الطريقة مصفوفة من MemoryStream. يمكنك التكرار عبر هذه المصفوفة وحفظ مجموعات الصفحات الفردية كملفات منفصلة. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF إلى مجموعات كبيرة باستخدام التدفقات.
+تتيح لك طريقة [SplitToBulks](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تقسيم ملف PDF إلى مجموعات متعددة من الصفحات. في هذا المثال، نحتاج إلى مجموعتين من الصفحات (1، 2) و(5، 6). يمكنك تمرير تدفق إلى هذه الطريقة بدلاً من الوصول إلى الملف من القرص. ترجع هذه الطريقة مصفوفة من MemoryStream. يمكنك التكرار عبر هذه المصفوفة وحفظ مجموعات الصفحات الفردية كملفات منفصلة. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF إلى مجموعات كبيرة باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -180,7 +180,7 @@ private static void SplitPdfPagesToBulkUsingStreams()
 
 ## تقسيم صفحات PDF إلى النهاية باستخدام مسارات الملفات
 
-تتيح لك طريقة [SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تقسيم PDF من رقم الصفحة المحدد إلى نهاية ملف PDF وحفظه كملف PDF جديد. للقيام بذلك، باستخدام مسارات الملفات، تحتاج إلى تمرير مسارات الملفات المدخلة والمخرجة ورقم الصفحة التي يجب أن يبدأ منها التقسيم. سيتم حفظ ملف PDF الناتج على القرص. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF إلى النهاية باستخدام مسارات الملفات.
+تتيح لك طريقة [SplitToEnd](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تقسيم PDF من رقم الصفحة المحدد إلى نهاية ملف PDF وحفظه كملف PDF جديد. للقيام بذلك، باستخدام مسارات الملفات، تحتاج إلى تمرير مسارات الملفات المدخلة والمخرجة ورقم الصفحة التي يجب أن يبدأ منها التقسيم. سيتم حفظ ملف PDF الناتج على القرص. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF إلى النهاية باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -197,7 +197,7 @@ private static void SplitPdfPagesToEndUsingFilePaths()
 
 ## تقسيم صفحات PDF إلى النهاية باستخدام التدفقات
 
-تتيح لك طريقة [SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تقسيم PDF من رقم الصفحة المحدد إلى نهاية ملف PDF وحفظه كملف PDF جديد. للقيام بذلك، باستخدام التدفقات، تحتاج إلى تمرير التدفقات المدخلة والمخرجة ورقم الصفحة التي يجب أن يبدأ منها التقسيم. سيتم حفظ ملف PDF الناتج إلى تدفق المخرجات. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF إلى النهاية باستخدام التدفقات.
+تتيح لك طريقة [SplitToEnd](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تقسيم PDF من رقم الصفحة المحدد إلى نهاية ملف PDF وحفظه كملف PDF جديد. للقيام بذلك، باستخدام التدفقات، تحتاج إلى تمرير التدفقات المدخلة والمخرجة ورقم الصفحة التي يجب أن يبدأ منها التقسيم. سيتم حفظ ملف PDF الناتج إلى تدفق المخرجات. يوضح لك مقتطف الكود التالي كيفية تقسيم صفحات PDF إلى النهاية باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -227,7 +227,7 @@ private static void SplitPdfPagesToEndUsingStreams()
 
 [products.aspose.app/pdf/splitter](https://products.aspose.app/pdf/splitter) {{% /alert %}}
 
-لتقسيم ملف PDF إلى صفحات فردية، تحتاج إلى تمرير PDF كمسار ملف إلى طريقة [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). ستعيد هذه الطريقة مصفوفة من MemoryStream تحتوي على الصفحات الفردية من ملف PDF. يمكنك التكرار عبر هذه المصفوفة من MemoryStream وحفظ الصفحات الفردية كملفات PDF فردية على القرص. يوضح لك مقتطف الكود التالي كيفية تقسيم PDF إلى صفحات فردية باستخدام مسارات الملفات.
+لتقسيم ملف PDF إلى صفحات فردية، تحتاج إلى تمرير PDF كمسار ملف إلى طريقة [SplitToPages](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). ستعيد هذه الطريقة مصفوفة من MemoryStream تحتوي على الصفحات الفردية من ملف PDF. يمكنك التكرار عبر هذه المصفوفة من MemoryStream وحفظ الصفحات الفردية كملفات PDF فردية على القرص. يوضح لك مقتطف الكود التالي كيفية تقسيم PDF إلى صفحات فردية باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -254,7 +254,7 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
 
 ## تقسيم PDF إلى صفحات فردية باستخدام التدفقات
 
-لتقسيم ملف PDF إلى صفحات فردية، تحتاج إلى تمرير PDF كتدفق إلى طريقة [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). ستعيد هذه الطريقة مصفوفة من MemoryStream تحتوي على الصفحات الفردية من ملف PDF. يمكنك التكرار عبر هذه المصفوفة من MemoryStream وحفظ الصفحات الفردية كملفات PDF فردية على القرص، أو يمكنك الاحتفاظ بهذه الصفحات الفردية في تدفق الذاكرة لاستخدامها لاحقًا في تطبيقك. يوضح لك مقتطف الكود التالي كيفية تقسيم PDF إلى صفحات فردية باستخدام التدفقات.
+لتقسيم ملف PDF إلى صفحات فردية، تحتاج إلى تمرير PDF كتدفق إلى طريقة [SplitToPages](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). ستعيد هذه الطريقة مصفوفة من MemoryStream تحتوي على الصفحات الفردية من ملف PDF. يمكنك التكرار عبر هذه المصفوفة من MemoryStream وحفظ الصفحات الفردية كملفات PDF فردية على القرص، أو يمكنك الاحتفاظ بهذه الصفحات الفردية في تدفق الذاكرة لاستخدامها لاحقًا في تطبيقك. يوضح لك مقتطف الكود التالي كيفية تقسيم PDF إلى صفحات فردية باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

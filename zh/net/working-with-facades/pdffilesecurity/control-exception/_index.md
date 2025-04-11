@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) 类允许您控制异常。为此，您需要将 [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) 属性设置为 false 或 true。如果您将操作设置为 false，则 [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 的结果将根据密码的正确性返回 true 或 false。
+[PdfFileSecurity](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity) 类允许您控制异常。为此，您需要将 [AllowExceptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) 属性设置为 false 或 true。如果您将操作设置为 false，则 [DecryptFile](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) 的结果将根据密码的正确性返回 true 或 false。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -103,7 +103,7 @@ private static void ControlExceptionPDFFile()
 }
 ```
 
-如果您将 [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) 属性设置为 true，则可以使用 try-catch 操作符获取操作的结果。
+如果您将 [AllowExceptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) 属性设置为 true，则可以使用 try-catch 操作符获取操作的结果。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

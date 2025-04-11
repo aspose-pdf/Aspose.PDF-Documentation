@@ -519,7 +519,7 @@ XSL-FO هي لغة وسوم قائمة على XML تصف تنسيق بيانات
 </xsl:stylesheet>
 ```
 
-تحتوي Aspose.PDF على فئة خاصة [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) التي تسمح بتطبيق تحويل XSL-FO.
+تحتوي Aspose.PDF على فئة خاصة [XslFoLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/xslfoloadoptions) التي تسمح بتطبيق تحويل XSL-FO.
 المقتطف التالي يوضح كيفية استخدام هذه الفئة مع الملفات النموذجية الموضحة أعلاه.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -659,7 +659,7 @@ private static void ExampleXslfoToPdf()
 </xsl:stylesheet>
 ```
 
-لإضافة معلمات XSL، نحتاج إلى إنشاء [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) الخاصة بنا وتعيينها كخاصية في [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
+لإضافة معلمات XSL، نحتاج إلى إنشاء [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) الخاصة بنا وتعيينها كخاصية في [XslFoLoadOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/xslfoloadoptions).
 المقتطف التالي يوضح كيفية استخدام هذه الفئة مع الملفات النموذجية الموضحة أعلاه.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -825,7 +825,7 @@ public static MemoryStream TransformXsl(string inputXml, string xsltString)
 </Document>
 ```
 
-لإنشاء مستند PDF، سنستخدم طريقة [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index).
+لإنشاء مستند PDF، سنستخدم طريقة [BindXml](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/bindxml/index).
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

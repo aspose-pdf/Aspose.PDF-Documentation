@@ -77,7 +77,7 @@ draft: false
 
 ## Печать PDF-файла на стандартный принтер с использованием настроек принтера и страницы
 
-Сначала документ преобразуется в изображение, а затем печатается на принтере. Создайте экземпляр класса [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer), который позволяет печатать PDF-файл на стандартный принтер, используйте метод [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/bindpdf/) для открытия документа в нем и измените необходимые настройки. Этот пример использует формат A4, портретную ориентацию. В [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) в первую очередь должно быть установлено имя принтера, на который идет печать. В противном случае печать будет производиться на стандартный принтер. Далее укажите необходимое количество копий.
+Сначала документ преобразуется в изображение, а затем печатается на принтере. Создайте экземпляр класса [PdfViewer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer), который позволяет печатать PDF-файл на стандартный принтер, используйте метод [BindPdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/bindpdf/) для открытия документа в нем и измените необходимые настройки. Этот пример использует формат A4, портретную ориентацию. В [PrinterSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf.printing/printersettings/) в первую очередь должно быть установлено имя принтера, на который идет печать. В противном случае печать будет производиться на стандартный принтер. Далее укажите необходимое количество копий.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -344,7 +344,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Скрытие диалога печати
 
-Aspose.PDF for .NET поддерживает скрытие диалога печати. Для этого используйте свойство [PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
+Aspose.PDF for .NET поддерживает скрытие диалога печати. Для этого используйте свойство [PrintPageDialog](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
 
 Следующий фрагмент кода показывает, как скрыть диалог печати.
 
@@ -435,7 +435,7 @@ private static void PrintingPDFHidePrintDialog()
 
 ## Печать цветного PDF в файл XPS в градациях серого
 
-Цветной PDF-документ можно напечатать на принтере XPS в градациях серого, используя [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Для этого установите свойство [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) в *true*. Следующий фрагмент кода демонстрирует использование свойства `PdfViewer.PrintAsGrayscale`.
+Цветной PDF-документ можно напечатать на принтере XPS в градациях серого, используя [PdfViewer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer). Для этого установите свойство [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) в *true*. Следующий фрагмент кода демонстрирует использование свойства `PdfViewer.PrintAsGrayscale`.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -528,7 +528,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## Конвертация PDF в PostScript
 
-Класс [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) предоставляет возможность печатать PDF-документы, и с помощью этого класса можно также конвертировать PDF-файлы в формат PostScript. Чтобы конвертировать PDF-файл в PostScript, сначала установите любой PS-принтер и просто напечатайте в файл с помощью `PdfViewer`.
+Класс [PdfViewer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer) предоставляет возможность печатать PDF-документы, и с помощью этого класса можно также конвертировать PDF-файлы в формат PostScript. Чтобы конвертировать PDF-файл в PostScript, сначала установите любой PS-принтер и просто напечатайте в файл с помощью `PdfViewer`.
 
 Следующий фрагмент кода показывает, как напечатать и конвертировать PDF в формат PostScript.
 
@@ -631,7 +631,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## Проверка статуса задания на печать
 
-PDF-файл можно напечатать как на физическом принтере, так и на Microsoft XPS Document Writer, не показывая диалог печати, используя класс [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). При печати больших PDF-файлов процесс может занять много времени, поэтому пользователь может не быть уверенным, завершился ли процесс печати или возникла проблема. Чтобы определить статус задания на печать, используйте свойство [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). Следующий фрагмент кода показывает, как напечатать PDF-файл в файл XPS и получить статус печати.
+PDF-файл можно напечатать как на физическом принтере, так и на Microsoft XPS Document Writer, не показывая диалог печати, используя класс [PdfViewer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer). При печати больших PDF-файлов процесс может занять много времени, поэтому пользователь может не быть уверенным, завершился ли процесс печати или возникла проблема. Чтобы определить статус задания на печать, используйте свойство [PrintStatus](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/printstatus/). Следующий фрагмент кода показывает, как напечатать PDF-файл в файл XPS и получить статус печати.
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

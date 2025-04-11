@@ -77,7 +77,7 @@ draft: false
 
 ## Добавить поле формы в существующий PDF файл
 
-Чтобы добавить поле формы в существующий PDF файл, вам нужно использовать метод [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) класса [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Этот метод требует от вас указать тип поля, которое вы хотите добавить, вместе с именем и местоположением поля. Вам нужно создать объект класса [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor), использовать метод [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) для добавления нового поля в PDF. Также вы можете указать ограничение на количество символов в вашем поле с помощью [SetFieldLimit](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) и, наконец, использовать метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) для сохранения обновленного PDF файла. Следующий фрагмент кода показывает, как добавить поле формы в существующий PDF файл.
+Чтобы добавить поле формы в существующий PDF файл, вам нужно использовать метод [AddField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/addfield/index) класса [FormEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor). Этот метод требует от вас указать тип поля, которое вы хотите добавить, вместе с именем и местоположением поля. Вам нужно создать объект класса [FormEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor), использовать метод [AddField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/addfield/index) для добавления нового поля в PDF. Также вы можете указать ограничение на количество символов в вашем поле с помощью [SetFieldLimit](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) и, наконец, использовать метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/form/methods/save/index) для сохранения обновленного PDF файла. Следующий фрагмент кода показывает, как добавить поле формы в существующий PDF файл.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -107,7 +107,7 @@ private static void AddField()
 
 ## Добавить URL кнопки отправки в существующий PDF файл
 
-Метод [AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) позволяет вам установить URL кнопки отправки в PDF файле. Это URL, по которому данные отправляются, когда кнопка отправки нажата. В нашем примере кода мы указываем URL, имя нашего поля, номер страницы, на которую мы хотим добавить, и координаты размещения кнопки. Метод [AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) требует имя поля кнопки отправки и URL. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Следующий фрагмент кода показывает, как установить URL кнопки отправки.
+Метод [AddSubmitBtn](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) позволяет вам установить URL кнопки отправки в PDF файле. Это URL, по которому данные отправляются, когда кнопка отправки нажата. В нашем примере кода мы указываем URL, имя нашего поля, номер страницы, на которую мы хотим добавить, и координаты размещения кнопки. Метод [AddSubmitBtn](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) требует имя поля кнопки отправки и URL. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Следующий фрагмент кода показывает, как установить URL кнопки отправки.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -135,7 +135,7 @@ private static void AddField()
 
 ## Добавить JavaScript для кнопки
 
-Метод [AddFieldScript](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfieldscript) позволяет вам добавить JavaScript к кнопке в PDF файле. Этот метод требует имя кнопки и JavaScript. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Следующий фрагмент кода показывает, как установить JavaScript для кнопки. 
+Метод [AddFieldScript](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formeditor/methods/addfieldscript) позволяет вам добавить JavaScript к кнопке в PDF файле. Этот метод требует имя кнопки и JavaScript. Этот метод предоставляется классом [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). Следующий фрагмент кода показывает, как установить JavaScript для кнопки. 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

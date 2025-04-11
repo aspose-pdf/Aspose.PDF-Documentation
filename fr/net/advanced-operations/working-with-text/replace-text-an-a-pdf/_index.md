@@ -484,7 +484,7 @@ Aspose.PDF for .NET prend en charge la fonctionnalité d'incorporation de police
 
 Pour remplacer les polices, utilisez l'approche suivante :
 
-1. Appelez la classe [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber).
+1. Appelez la classe [TextFragmentAbsorber](https://reference.aspose.com/pdf/fr/net/aspose.pdf.text/textfragmentabsorber).
 1. Appelez le paramètre TextEditOptions.FontReplace.RemoveUnusedFonts de la classe TextFragmentAbsorber. (Cela supprime les polices qui sont devenues inutilisées lors du remplacement de polices).
 1. Définissez la police individuellement pour chaque fragment de texte.
 

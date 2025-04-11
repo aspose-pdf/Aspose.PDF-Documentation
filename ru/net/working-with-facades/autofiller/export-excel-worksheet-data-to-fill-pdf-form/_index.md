@@ -77,8 +77,8 @@ draft: false
 
 {{% alert color="основной" %}}
 
-[Пространство имён Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/ru/net/) предлагает различные способы заполнения форм Pdf. Вы можете импортировать данные из XML-файла, DFD, XFDF, использовать API и даже можете использовать данные из листа Excel.
-Мы будем использовать метод [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) класса [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) из [Aspose.Cells](https://docs.aspose.com//cells/net), чтобы экспортировать данные из таблицы Excel в объект DataTable. Затем нам нужно будет импортировать эти данные в форму Pdf с помощью метода [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) класса [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Убедитесь, что имя столбца DataTable совпадает с именем поля в форме PDF.
+[Пространство имён Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/ru/net/) предлагает различные способы заполнения форм Pdf. Вы можете импортировать данные из XML-файла, DFD, XFDF, использовать API и даже можете использовать данные из листа Excel.
+Мы будем использовать метод [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) класса [Cells](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cells) из [Aspose.Cells](https://docs.aspose.com//cells/net), чтобы экспортировать данные из таблицы Excel в объект DataTable. Затем нам нужно будет импортировать эти данные в форму Pdf с помощью метода [ImportDataTable](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/autofiller/methods/importdatatable) класса [AutoFiller](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/autofiller). Убедитесь, что имя столбца DataTable совпадает с именем поля в форме PDF.
 
 {{% /alert %}}
 
@@ -92,7 +92,7 @@ draft: false
 
 На указанной выше форме одна страница с тремя полями, названными «ID», «Name» и «Gender» соответственно. Мы извлечём данные из следующей таблицы Excel в объект DataTable.
 
-Нам нужно создать объект класса [AutoFiller] (https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) и связать форму Pdf, представленную на рисунках выше, и использовать метод [ImportDataTable], чтобы заполнить поля формы данными, содержащимися в объекте DataTable. После вызова метода создаётся новый файл формы Pdf, который содержит пять страниц с заполненными формами на основе данных из таблицы Excel. Исходная форма Pdf была на одной странице, а итоговая — на пяти, потому что количество строк данных в таблице Excel равно 5. Класс DataTable позволяет использовать первую строку листа в качестве имени столбца.
+Нам нужно создать объект класса [AutoFiller] (https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/autofiller) и связать форму Pdf, представленную на рисунках выше, и использовать метод [ImportDataTable], чтобы заполнить поля формы данными, содержащимися в объекте DataTable. После вызова метода создаётся новый файл формы Pdf, который содержит пять страниц с заполненными формами на основе данных из таблицы Excel. Исходная форма Pdf была на одной странице, а итоговая — на пяти, потому что количество строк данных в таблице Excel равно 5. Класс DataTable позволяет использовать первую строку листа в качестве имени столбца.
 
 | ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_5.png)  | ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_6.png) |
 |:-- | :-- |
@@ -214,5 +214,5 @@ private static System.Data.DataTable GenerateDataTable()
 ## Заключение
 
 {{% alert color="основной" %}}
-[Aspose.Pdf.Facades] (https://reference.aspose.com/pdf/net/aspose.pdf.facades) также позволяет заполнять формы PDF данными из базы данных, но эта функция в настоящее время поддерживается в версии .NET.
+[Aspose.Pdf.Facades] (https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) также позволяет заполнять формы PDF данными из базы данных, но эта функция в настоящее время поддерживается в версии .NET.
 {{% /alert %}}

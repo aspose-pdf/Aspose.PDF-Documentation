@@ -77,7 +77,7 @@ draft: false
 
 ## جعل NUp من PDF باستخدام مسارات الملفات
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من ملف PDF المدخل وحفظه في ملف PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية جعل NUP باستخدام مسارات الملفات.
+[MakeNUp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من ملف PDF المدخل وحفظه في ملف PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية جعل NUP باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeNupOfPdfUsingFilePaths()
 
 ## جعل NUp باستخدام حجم الصفحة ومسارات الملفات
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من ملف PDF المدخل وحفظه في ملف PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج باستخدام هذه النسخة الزائدة. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام حجم الصفحة ومسارات الملفات.
+[MakeNUp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من ملف PDF المدخل وحفظه في ملف PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج باستخدام هذه النسخة الزائدة. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام حجم الصفحة ومسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeNupUsingPageSizeAndFilePaths()
 
 ## جعل NUp من PDF باستخدام حجم الصفحة والقيم الأفقية والعمودية ومسارات الملفات
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من ملف PDF المدخل وحفظه في ملف PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج وعدد الصفحات الأفقية والعمودية على كل صفحة ناتجة باستخدام هذه النسخة الزائدة. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام حجم الصفحة والقيم الأفقية والعمودية ومسارات الملفات.
+[MakeNUp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من ملف PDF المدخل وحفظه في ملف PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج وعدد الصفحات الأفقية والعمودية على كل صفحة ناتجة باستخدام هذه النسخة الزائدة. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام حجم الصفحة والقيم الأفقية والعمودية ومسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -128,7 +128,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFileP
 
 ## جعل NUp من PDF باستخدام مصفوفة من ملفات PDF ومسارات الملفات
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من مصفوفة من ملفات PDF المدخلة وحفظها في ملف PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام مصفوفة من ملفات PDF ومسارات الملفات.
+[MakeNUp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من مصفوفة من ملفات PDF المدخلة وحفظها في ملف PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام مصفوفة من ملفات PDF ومسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
 
 ## جعل NUp من PDF باستخدام التدفقات
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام التدفقات بدلاً من مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام التدفقات.
+[MakeNUp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام التدفقات بدلاً من مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -176,7 +176,7 @@ private static void MakeNupOfPdfUsingStreams()
 
 ## جعل NUp من PDF باستخدام حجم الصفحة والتدفقات
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لتدفق PDF الناتج باستخدام هذه النسخة الزائدة. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام حجم الصفحة والتدفقات.
+[MakeNUp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لتدفق PDF الناتج باستخدام هذه النسخة الزائدة. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام حجم الصفحة والتدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ private static void MakeNupOfPdfUsingPageSizeAndStreams()
 
 ## جعل NUp من PDF باستخدام حجم الصفحة والقيم الأفقية والعمودية والتدفقات
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لتدفق PDF الناتج وعدد الصفحات الأفقية والعمودية على كل صفحة ناتجة باستخدام هذه النسخة الزائدة. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام حجم الصفحة والقيم الأفقية والعمودية والتدفقات.
+[MakeNUp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لتدفق PDF الناتج وعدد الصفحات الأفقية والعمودية على كل صفحة ناتجة باستخدام هذه النسخة الزائدة. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام حجم الصفحة والقيم الأفقية والعمودية والتدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -224,7 +224,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStrea
 
 ## جعل NUp من PDF باستخدام مصفوفة من ملفات PDF والتدفقات
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من مصفوفة من تدفقات PDF المدخلة وحفظها في تدفق PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام التدفقات بدلاً من مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام مصفوفة من ملفات PDF باستخدام التدفقات.
+[MakeNUp](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) طريقة من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) تتيح لك جعل NUp من مصفوفة من تدفقات PDF المدخلة وحفظها في تدفق PDF الناتج. تتيح لك هذه النسخة الزائدة جعل NUp باستخدام التدفقات بدلاً من مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية جعل NUp باستخدام مصفوفة من ملفات PDF باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

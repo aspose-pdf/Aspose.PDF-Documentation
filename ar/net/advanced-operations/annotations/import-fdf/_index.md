@@ -85,9 +85,9 @@ FDF (تنسيق بيانات النماذج) هو تنسيق ملف يخزن و�
 
 {{% /alert %}}
 
-[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/) تحتوي على طريقة للعمل مع استيراد التعليقات من ملف FDF. توفر طريقة [PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) الوظائف اللازمة لاستيراد التعليقات من مستند FDF إلى ملف PDF.
+[PDFAnnotationEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfannotationeditor/) تحتوي على طريقة للعمل مع استيراد التعليقات من ملف FDF. توفر طريقة [PdfAnnotationEditor.ImportAnnotationsFromFdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfannotationeditor/importannotationsfromfdf/) الوظائف اللازمة لاستيراد التعليقات من مستند FDF إلى ملف PDF.
 
-أيضًا، [فئة Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/) تتضمن طريقة [Form.ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/importfdf/) - تستورد محتوى الحقول من ملف FDF وتضعه في PDF جديد.
+أيضًا، [فئة Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/) تتضمن طريقة [Form.ImportFdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/importfdf/) - تستورد محتوى الحقول من ملف FDF وتضعه في PDF جديد.
 
 تظهر مقتطفات الشيفرة التالية كيفية استيراد تعليقات تنسيق FDF إلى PDF باستخدام طريقة Form.ImportFdf():
 

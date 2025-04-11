@@ -519,7 +519,7 @@ XSL-FO — это основанный на XML язык разметки, оп�
 </xsl:stylesheet>
 ```
 
-Aspose.PDF имеет специальный класс [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions), который позволяет применять трансформацию XSL-FO.
+Aspose.PDF имеет специальный класс [XslFoLoadOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf/xslfoloadoptions), который позволяет применять трансформацию XSL-FO.
 Следующий фрагмент показывает, как использовать этот класс с образцами файлов, описанными выше.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -660,7 +660,7 @@ private static void ExampleXslfoToPdf()
 ```
 
 Чтобы добавить параметры XSL, нам нужно создать собственный [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) и
-установить его как свойство в [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
+установить его как свойство в [XslFoLoadOptions](https://reference.aspose.com/pdf/ru/net/aspose.pdf/xslfoloadoptions).
 Следующий фрагмент показывает, как использовать этот класс с образцами файлов, описанными выше.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -826,7 +826,7 @@ public static MemoryStream TransformXsl(string inputXml, string xsltString)
 </Document>
 ```
 
-Чтобы сгенерировать PDF документ, мы будем использовать метод [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index).
+Чтобы сгенерировать PDF документ, мы будем использовать метод [BindXml](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/bindxml/index).
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

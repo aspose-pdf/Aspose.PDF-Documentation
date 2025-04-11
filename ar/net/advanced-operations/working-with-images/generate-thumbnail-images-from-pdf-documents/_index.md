@@ -204,7 +204,7 @@ private static void GenerateThumbnailImagesFromPDF()
 - لا تحتاج إلى تثبيت Adobe Acrobat على نظامك للعمل مع ملفات PDF.
 - استخدام Aspose.PDF for .NET بسيط وسهل الفهم مقارنةً بأتمتة Acrobat.
 
-إذا كنا بحاجة إلى تحويل صفحات PDF إلى JPEGs، فإن مساحة أسماء [Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices) توفر فئة تسمى [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) لعرض صفحات PDF كصور JPEG. يرجى إلقاء نظرة على نموذج الكود التالي.
+إذا كنا بحاجة إلى تحويل صفحات PDF إلى JPEGs، فإن مساحة أسماء [Aspose.PDF.Devices](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices) توفر فئة تسمى [JpegDevice](https://reference.aspose.com/pdf/ar/net/aspose.pdf.devices/jpegdevice) لعرض صفحات PDF كصور JPEG. يرجى إلقاء نظرة على نموذج الكود التالي.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

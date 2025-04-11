@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-تقدم فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) الموجودة تحت حزمة Aspose.Pdf.Facades المرونة لإضافة إجراءات جافا سكريبت إلى ملف PDF. يمكنك إنشاء رابط مع الإجراءات التسلسلية المقابلة لتنفيذ عنصر قائمة في عارض PDF. توفر هذه الفئة أيضًا ميزة إنشاء إجراءات إضافية لأحداث الوثيقة.
+تقدم فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/PdfContentEditor) الموجودة تحت حزمة Aspose.Pdf.Facades المرونة لإضافة إجراءات جافا سكريبت إلى ملف PDF. يمكنك إنشاء رابط مع الإجراءات التسلسلية المقابلة لتنفيذ عنصر قائمة في عارض PDF. توفر هذه الفئة أيضًا ميزة إنشاء إجراءات إضافية لأحداث الوثيقة.
 
-أولاً وقبل كل شيء، يتم رسم كائن في [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)، في مثالنا [مستطيل](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle). ثم يتم تعيين الإجراء [createJavaScriptLink](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) إلى المستطيل. بعد ذلك يمكنك حفظ مستندك.
+أولاً وقبل كل شيء، يتم رسم كائن في [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document)، في مثالنا [مستطيل](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/rectangle). ثم يتم تعيين الإجراء [createJavaScriptLink](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) إلى المستطيل. بعد ذلك يمكنك حفظ مستندك.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
  
 Depuis la version 24.4, il est possible de choisir la source de papier par taille de page PDF dans la boîte de dialogue d'impression. Le code suivant permet de sélectionner un bac d'imprimante en fonction de la taille de page du PDF.
 
-Cette préférence peut être activée ou désactivée à l'aide de la propriété [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+Cette préférence peut être activée ou désactivée à l'aide de la propriété [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## Préréglages de boîte de dialogue d'impression Mise à l'échelle de page
 
-Le code suivant est destiné à garantir que la propriété [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) est correctement appliquée et enregistrée dans le PDF.
+Le code suivant est destiné à garantir que la propriété [PrintScaling](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/printscaling/) est correctement appliquée et enregistrée dans le PDF.
 
-La propriété [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) a été ajoutée à la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) avec les valeurs `Aspose.Pdf.PrintScaling.AppDefault` ou `Aspose.Pdf.PrintScaling.None`.
+La propriété [PrintScaling](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/printscaling/) a été ajoutée à la classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/) avec les valeurs `Aspose.Pdf.PrintScaling.AppDefault` ou `Aspose.Pdf.PrintScaling.None`.
 
 L'option de mise à l'échelle de page qui doit être sélectionnée lorsque la boîte de dialogue d'impression est affichée pour ce document. Les valeurs valides sont `None`, ce qui indique aucune mise à l'échelle de page, et `AppDefault`, ce qui indique la mise à l'échelle d'impression par défaut du lecteur conforme. Si cette entrée a une valeur non reconnue, `AppDefault` doit être utilisé. Valeur par défaut : `AppDefault`.
 

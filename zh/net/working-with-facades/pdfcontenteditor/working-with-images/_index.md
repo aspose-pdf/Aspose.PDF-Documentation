@@ -76,7 +76,7 @@ lastmod: "2021-06-24"
 
 ## 从 PDF 的特定页面删除图像 (Facades)
 
-为了从特定页面删除图像，您需要调用 [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) 方法，并传入 pageNumber 和 index 参数。index 参数表示一个整数数组——要删除的图像的索引。首先，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，然后调用 [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) 方法。之后，您可以使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法保存更新后的 PDF 文件。
+为了从特定页面删除图像，您需要调用 [DeleteImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) 方法，并传入 pageNumber 和 index 参数。index 参数表示一个整数数组——要删除的图像的索引。首先，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，然后调用 [DeleteImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) 方法。之后，您可以使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法保存更新后的 PDF 文件。
 
 以下代码片段演示了如何从 PDF 的特定页面删除图像。
 
@@ -123,7 +123,7 @@ private static void DeleteImage()
 
 ## 从 PDF 文件中删除所有图像 (Facades)
 
-可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 的 [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) 方法从 PDF 文件中删除所有图像。调用 [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) 方法——不带任何参数的重载——以删除所有图像，然后使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法保存更新后的 PDF 文件。
+可以使用 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 的 [DeleteImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) 方法从 PDF 文件中删除所有图像。调用 [DeleteImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) 方法——不带任何参数的重载——以删除所有图像，然后使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法保存更新后的 PDF 文件。
 
 以下代码片段演示了如何从 PDF 文件中删除所有图像。
 
@@ -170,7 +170,7 @@ private static void DeleteImages()
 
 ## 在 PDF 文件中替换图像 (Facades)
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 允许您在 PDF 文件中替换图像，调用 [ReplaceImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) 方法，并保存结果。
+[PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 允许您在 PDF 文件中替换图像，调用 [ReplaceImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) 方法，并保存结果。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

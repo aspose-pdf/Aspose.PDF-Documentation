@@ -77,7 +77,7 @@ draft: false
 
 ## 使用文件路径制作 PDF 的 NUp
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的 NUp 并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作 NUp。以下代码片段展示了如何使用文件路径制作 NUP。
+[MakeNUp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的 NUp 并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作 NUp。以下代码片段展示了如何使用文件路径制作 NUP。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeNupOfPdfUsingFilePaths()
 
 ## 使用页面大小和文件路径制作 NUp
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的 NUp 并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作 NUp。您还可以使用此重载设置输出 PDF 文件的页面大小。以下代码片段展示了如何使用页面大小和文件路径制作 NUp。
+[MakeNUp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的 NUp 并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作 NUp。您还可以使用此重载设置输出 PDF 文件的页面大小。以下代码片段展示了如何使用页面大小和文件路径制作 NUp。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeNupUsingPageSizeAndFilePaths()
 
 ## 使用页面大小、水平和垂直值以及文件路径制作 PDF 的 NUp
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的 NUp 并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作 NUp。您还可以使用此重载设置输出 PDF 文件的页面大小以及每个输出页面上的水平和垂直页面数量。以下代码片段展示了如何使用页面大小、水平和垂直值以及文件路径制作 NUp。
+[MakeNUp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件的 NUp 并将其保存到输出 PDF 文件中。此重载允许您使用文件路径制作 NUp。您还可以使用此重载设置输出 PDF 文件的页面大小以及每个输出页面上的水平和垂直页面数量。以下代码片段展示了如何使用页面大小、水平和垂直值以及文件路径制作 NUp。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -128,7 +128,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFileP
 
 ## 使用 PDF 文件数组和文件路径制作 NUp
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件数组的 NUp 并将其保存到单个输出 PDF 文件中。此重载允许您使用文件路径制作 NUp。以下代码片段展示了如何使用 PDF 文件数组和文件路径制作 NUp。
+[MakeNUp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 文件数组的 NUp 并将其保存到单个输出 PDF 文件中。此重载允许您使用文件路径制作 NUp。以下代码片段展示了如何使用 PDF 文件数组和文件路径制作 NUp。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
 
 ## 使用流制作 PDF 的 NUp
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的 NUp 并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作 NUp。以下代码片段展示了如何使用流制作 NUp。
+[MakeNUp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的 NUp 并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作 NUp。以下代码片段展示了如何使用流制作 NUp。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -176,7 +176,7 @@ private static void MakeNupOfPdfUsingStreams()
 
 ## 使用页面大小和流制作 NUp
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的 NUp 并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作 NUp。您还可以使用此重载设置输出 PDF 流的页面大小。以下代码片段展示了如何使用页面大小和流制作 NUp。
+[MakeNUp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的 NUp 并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作 NUp。您还可以使用此重载设置输出 PDF 流的页面大小。以下代码片段展示了如何使用页面大小和流制作 NUp。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ private static void MakeNupOfPdfUsingPageSizeAndStreams()
 
 ## 使用页面大小、水平和垂直值以及流制作 PDF 的 NUp
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的 NUp 并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作 NUp。您还可以使用此重载设置输出 PDF 流的页面大小以及每个输出页面上的水平和垂直页面数量。以下代码片段展示了如何使用页面大小、水平和垂直值以及流制作 NUp。
+[MakeNUp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流的 NUp 并将其保存到输出 PDF 流中。此重载允许您使用流而不是文件路径制作 NUp。您还可以使用此重载设置输出 PDF 流的页面大小以及每个输出页面上的水平和垂直页面数量。以下代码片段展示了如何使用页面大小、水平和垂直值以及流制作 NUp。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -224,7 +224,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStrea
 
 ## 使用 PDF 文件数组和流制作 NUp
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流数组的 NUp 并将其保存到单个输出 PDF 流中。此重载允许您使用流而不是文件路径制作 NUp。以下代码片段展示了如何使用流制作 PDF 文件数组的 NUp。
+[MakeNUp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) 方法的 [PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类允许您制作输入 PDF 流数组的 NUp 并将其保存到单个输出 PDF 流中。此重载允许您使用流而不是文件路径制作 NUp。以下代码片段展示了如何使用流制作 PDF 文件数组的 NUp。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

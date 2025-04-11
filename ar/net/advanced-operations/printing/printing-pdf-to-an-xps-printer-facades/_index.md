@@ -83,9 +83,9 @@ sitemap:
 
 ## **طباعة PDF إلى طابعة XPS في C#**
 
-يمكنك طباعة ملف PDF إلى طابعة XPS، أو أي طابعة افتراضية أخرى، باستخدام فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) . للقيام بذلك، قم بإنشاء كائن من فئة PdfViewer وافتح ملف PDF باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) . يمكنك تعيين إعدادات طباعة مختلفة باستخدام فئات [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) و [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) . تحتاج أيضًا إلى تعيين خاصية [PrinterName](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/printername/) إلى طابعة XPS أو أي طابعة افتراضية أخرى قمت بتثبيتها.
+يمكنك طباعة ملف PDF إلى طابعة XPS، أو أي طابعة افتراضية أخرى، باستخدام فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer) . للقيام بذلك، قم بإنشاء كائن من فئة PdfViewer وافتح ملف PDF باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) . يمكنك تعيين إعدادات طباعة مختلفة باستخدام فئات [PrinterSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf.printing/printersettings/) و [PageSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf.printing/pagesettings/) . تحتاج أيضًا إلى تعيين خاصية [PrinterName](https://reference.aspose.com/pdf/ar/net/aspose.pdf.printing/printersettings/printername/) إلى طابعة XPS أو أي طابعة افتراضية أخرى قمت بتثبيتها.
 
-أخيرًا، استخدم طريقة [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) لطباعة PDF إلى طابعة XPS أو أي طابعة افتراضية أخرى. يوضح مقتطف الشيفرة التالي كيفية طباعة ملف PDF إلى طابعة XPS.
+أخيرًا، استخدم طريقة [PrintDocumentWithSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) لطباعة PDF إلى طابعة XPS أو أي طابعة افتراضية أخرى. يوضح مقتطف الشيفرة التالي كيفية طباعة ملف PDF إلى طابعة XPS.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -180,7 +180,7 @@ private static void PrintToXpsPrinter()
 
 منذ إصدار 24.4، أصبح من الممكن اختيار مصدر الورق حسب حجم صفحة PDF في مربع حوار الطباعة. يمكّن مقتطف الشيفرة التالي من اختيار درج الطابعة بناءً على حجم صفحة PDF.
 
-يمكن تبديل هذه الميزة تشغيلًا وإيقافًا باستخدام واجهة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/) .
+يمكن تبديل هذه الميزة تشغيلًا وإيقافًا باستخدام واجهة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/) .
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

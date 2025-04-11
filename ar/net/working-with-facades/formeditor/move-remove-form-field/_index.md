@@ -77,7 +77,7 @@ draft: false
 
 ## نقل حقل النموذج إلى موقع جديد في ملف PDF موجود
 
-إذا كنت ترغب في نقل حقل نموذج إلى موقع جديد، يمكنك استخدام [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) من فئة [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). تحتاج فقط إلى تقديم اسم الحقل والموقع الجديد لهذا الحقل إلى طريقة [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield). تحتاج أيضًا إلى حفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) من فئة [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). يوضح لك مقتطف الكود التالي كيفية نقل حقل نموذج إلى موقع جديد في ملف PDF.
+إذا كنت ترغب في نقل حقل نموذج إلى موقع جديد، يمكنك استخدام [MoveField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/movefield) من فئة [FormEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor). تحتاج فقط إلى تقديم اسم الحقل والموقع الجديد لهذا الحقل إلى طريقة [MoveField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/movefield). تحتاج أيضًا إلى حفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/save/index) من فئة [FormEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor). يوضح لك مقتطف الكود التالي كيفية نقل حقل نموذج إلى موقع جديد في ملف PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -98,7 +98,7 @@ private static void MoveField()
 
 ## حذف حقل النموذج من ملف PDF موجود
 
-لحذف حقل نموذج من ملف PDF موجود، يمكنك استخدام طريقة RemoveField من فئة FormEditor. تأخذ هذه الطريقة حجة واحدة فقط: اسم الحقل. تحتاج إلى إنشاء كائن من فئة FormEditor، واستدعاء طريقة [RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield) لإزالة حقل معين من PDF ثم استدعاء طريقة Save لحفظ ملف PDF المحدث. يوضح لك مقتطف الكود التالي كيفية حذف حقول النموذج من ملف PDF موجود.
+لحذف حقل نموذج من ملف PDF موجود، يمكنك استخدام طريقة RemoveField من فئة FormEditor. تأخذ هذه الطريقة حجة واحدة فقط: اسم الحقل. تحتاج إلى إنشاء كائن من فئة FormEditor، واستدعاء طريقة [RemoveField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/removefield) لإزالة حقل معين من PDF ثم استدعاء طريقة Save لحفظ ملف PDF المحدث. يوضح لك مقتطف الكود التالي كيفية حذف حقول النموذج من ملف PDF موجود.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -119,7 +119,7 @@ private static void RemoveFields()
 
 ## إعادة تسمية حقول النموذج في PDF
 
-يمكنك أيضًا إعادة تسمية حقل باستخدام طريقة [RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield) من فئة [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor).
+يمكنك أيضًا إعادة تسمية حقل باستخدام طريقة [RenameField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/renamefield) من فئة [FormEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

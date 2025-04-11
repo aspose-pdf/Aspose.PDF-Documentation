@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Библиотека Aspose.PDF for .NET предоставляет полную гибкость для работы со страницами в PDF-документе с использованием C# или любого другого языка .NET. Она хранит все страницы PDF-документа в [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection), который можно использовать для работы со страницами PDF.
+Библиотека Aspose.PDF for .NET предоставляет полную гибкость для работы со страницами в PDF-документе с использованием C# или любого другого языка .NET. Она хранит все страницы PDF-документа в [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection), который можно использовать для работы со страницами PDF.
 Aspose.PDF for .NET позволяет вставлять страницу в PDF-документ в любое место файла, а также добавлять страницы в конец PDF-файла.
 В этом разделе показано, как добавить страницы в PDF с помощью C#.
 
@@ -93,9 +93,9 @@ Aspose.PDF for .NET позволяет вставлять страницу в PD
 
 Чтобы вставить пустую страницу в PDF-файл:
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) с входным PDF-файлом.
-1. Вызовите метод [Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) с указанным индексом.
-1. Сохраните выходной PDF-файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Создайте объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с входным PDF-файлом.
+1. Вызовите метод [Insert](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection/methods/insert) коллекции [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection) с указанным индексом.
+1. Сохраните выходной PDF-файл с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
 
 Следующий фрагмент кода показывает, как вставить страницу в PDF-файл.
 
@@ -140,9 +140,9 @@ private static void InsertAnEmptyPageWithParameters()
 
 Чтобы вставить пустую страницу в конец PDF-файла:
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) с входным PDF-файлом.
-1. Вызовите метод [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) без каких-либо параметров.
-1. Сохраните выходной PDF-файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Создайте объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с входным PDF-файлом.
+1. Вызовите метод [Add](https://reference.aspose.com/pdf/ru/net/aspose.pdf.pagecollection/add/methods/1) коллекции [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection) без каких-либо параметров.
+1. Сохраните выходной PDF-файл с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
 
 Следующий фрагмент кода показывает, как вставить пустую страницу в конец PDF-файла.
 

@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Para establecer metadatos XMP en un archivo PDF, necesitas crear un [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) objeto y vincular el archivo PDF utilizando el método [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). Puedes usar el método [Add](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata/methods/add/index) de la clase [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) para agregar diferentes propiedades. Finalmente, llama al método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) de la clase [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata). El siguiente fragmento de código te muestra cómo agregar metadatos XMP en un archivo PDF.
+Para establecer metadatos XMP en un archivo PDF, necesitas crear un [PdfXmpMetadata](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfxmpmetadata) objeto y vincular el archivo PDF utilizando el método [BindPdf](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/facade/methods/bindpdf/index). Puedes usar el método [Add](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfxmpmetadata/methods/add/index) de la clase [PdfXmpMetadata](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfxmpmetadata) para agregar diferentes propiedades. Finalmente, llama al método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save/index) de la clase [PdfXmpMetadata](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfxmpmetadata). El siguiente fragmento de código te muestra cómo agregar metadatos XMP en un archivo PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -105,10 +105,10 @@ private static void AddXmpMetadata()
         xmpMetaData.Remove(Aspose.Pdf.Facades.DefaultMetadataProperties.ModifyDate);
 
         // Add user defined property
-        // Step #1: register namespace prefix and URI
+        // Register namespace prefix and URI
         xmpMetaData.RegisterNamespaceURI("customNamespace", "http:// Www.customNameSpaces.com/ns/");
 
-        // Step #2: add user property with the prefix
+        // Add user property with the prefix
         xmpMetaData.Add("customNamespace:UserPropertyName", "UserPropertyValue");
 
         // Change user defined property
@@ -148,10 +148,10 @@ private static void AddXmpMetadata()
     xmpMetaData.Remove(Aspose.Pdf.Facades.DefaultMetadataProperties.ModifyDate);
 
     // Add user defined property
-    // Step #1: register namespace prefix and URI
+    // register namespace prefix and URI
     xmpMetaData.RegisterNamespaceURI("customNamespace", "http:// Www.customNameSpaces.com/ns/");
 
-    // Step #2: add user property with the prefix
+    // Add user property with the prefix
     xmpMetaData.Add("customNamespace:UserPropertyName", "UserPropertyValue");
 
     // Change user defined property

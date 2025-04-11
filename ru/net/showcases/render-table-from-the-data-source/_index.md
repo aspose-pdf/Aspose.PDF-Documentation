@@ -80,7 +80,7 @@ sitemap:
 
 Aspose.PDF позволяет вам создавать таблицу с источником данных из DataSet, Data Table, массивов и объектов IEnumerable с использованием класса PdfLightTable.
 
-Класс [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) используется для обработки таблиц. Этот класс дает нам возможность создавать таблицы и размещать их в документе, используя [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) и [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). Таким образом, чтобы создать таблицу, вам нужно добавить необходимое количество строк и заполнить их соответствующим количеством ячеек.
+Класс [Table](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table) используется для обработки таблиц. Этот класс дает нам возможность создавать таблицы и размещать их в документе, используя [Rows](https://reference.aspose.com/pdf/ru/net/aspose.pdf/rows) и [Cells](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cell). Таким образом, чтобы создать таблицу, вам нужно добавить необходимое количество строк и заполнить их соответствующим количеством ячеек.
 
 Следующий пример создает таблицу 4x10.
 
@@ -189,14 +189,14 @@ private static void AddTable()
 
 При инициализации объекта Table использовались минимальные настройки:
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - ширина столбцов (по умолчанию).
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - поля по умолчанию для ячейки таблицы.
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - атрибуты рамки таблицы (стиль, толщина, цвет).
-* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - атрибуты рамки ячейки (стиль, толщина, цвет).
+* [ColumnWidths](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/columnwidths) - ширина столбцов (по умолчанию).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/defaultcellpadding) - поля по умолчанию для ячейки таблицы.
+* [Border](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/border) - атрибуты рамки таблицы (стиль, толщина, цвет).
+* [DefaultCellBorder](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/defaultcellborder) - атрибуты рамки ячейки (стиль, толщина, цвет).
 
 ## Экспорт данных из массива объектов
 
-Класс Table предоставляет методы для взаимодействия с источниками данных ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) и [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). Первый метод импортирует данные из DataTable, второй - из DataView. Предполагая, что эти объекты не очень удобны для работы в шаблоне MVC, мы ограничимся кратким примером. В этом примере (строка 50) вызывается метод ImportDataTable и получает в качестве параметров экземпляр DataTable и дополнительные настройки, такие как флаг заголовка и начальная позиция (строки/столбцы) для вывода данных.
+Класс Table предоставляет методы для взаимодействия с источниками данных ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/ru/net/aspose.pdf.table/importdatatable/methods/1) и [ImportDataView](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/methods/importdataview). Первый метод импортирует данные из DataTable, второй - из DataView. Предполагая, что эти объекты не очень удобны для работы в шаблоне MVC, мы ограничимся кратким примером. В этом примере (строка 50) вызывается метод ImportDataTable и получает в качестве параметров экземпляр DataTable и дополнительные настройки, такие как флаг заголовка и начальная позиция (строки/столбцы) для вывода данных.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

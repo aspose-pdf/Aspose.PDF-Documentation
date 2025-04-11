@@ -86,13 +86,13 @@ sitemap:
 
 Чтобы переместить страницу, нам необходимо:
 
-1. Создать объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) с исходным PDF-файлом.
-1. Создать объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) с целевым PDF-файлом.
-1. Получить страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [Добавить](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) страницу в целевой документ.
-1. Сохранить выходной PDF-файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [Удалить](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) страницу в исходном документе.
-1. Сохранить исходный PDF-файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Создать объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с исходным PDF-файлом.
+1. Создать объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с целевым PDF-файлом.
+1. Получить страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection).
+1. [Добавить](https://reference.aspose.com/pdf/ru/net/aspose.pdf.pagecollection/add/methods/1) страницу в целевой документ.
+1. Сохранить выходной PDF-файл с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
+1. [Удалить](https://reference.aspose.com/pdf/ru/net/aspose.pdf.pagecollection/delete/methods/1) страницу в исходном документе.
+1. Сохранить исходный PDF-файл с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
 
 Следующий фрагмент кода показывает, как переместить одну страницу.
 
@@ -122,15 +122,15 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
 
 ## Перемещение нескольких страниц из одного PDF-документа в другой
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) для исходного PDF-файла.
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) для целевого PDF-файла.
+1. Создайте объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) для исходного PDF-файла.
+1. Создайте объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) для целевого PDF-файла.
 1. Определите массив с номерами страниц для перемещения.
 1. Пройдитесь по массиву:
-    1. Получите страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-    1. [Добавьте](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) страницу в целевой документ.
-1. Сохраните выходной PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. Используйте массив для [удаления](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) страницы в исходном документе.
-1. Сохраните исходный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+    1. Получите страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection).
+    1. [Добавьте](https://reference.aspose.com/pdf/ru/net/aspose.pdf.pagecollection/add/methods/1) страницу в целевой документ.
+1. Сохраните выходной PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
+1. Используйте массив для [удаления](https://reference.aspose.com/pdf/ru/net/aspose.pdf.pagecollection/delete/methods/2) страницы в исходном документе.
+1. Сохраните исходный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
 
 Следующий фрагмент кода демонстрирует, как перенести несколько страниц из одного PDF-документа в другой.
 
@@ -164,11 +164,11 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 
 ## Перемещение страницы в новое место в текущем PDF-документе
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) для исходного PDF-файла.
-1. Получите страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [Добавьте](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) страницу в новое место (например, в конец).
-1. [Удалите](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) страницу из предыдущего места.
-1. Сохраните выходной PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Создайте объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) для исходного PDF-файла.
+1. Получите страницу из коллекции [PageCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pagecollection).
+1. [Добавьте](https://reference.aspose.com/pdf/ru/net/aspose.pdf.pagecollection/add/methods/1) страницу в новое место (например, в конец).
+1. [Удалите](https://reference.aspose.com/pdf/ru/net/aspose.pdf.pagecollection/delete/methods/1) страницу из предыдущего места.
+1. Сохраните выходной PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

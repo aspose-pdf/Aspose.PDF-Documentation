@@ -77,7 +77,7 @@ draft: false
 
 ## 实现细节
 
-[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 类在 [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) 中包含一个名为 [PageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagesize) 的属性，该属性可用于更改单个页面或多个页面的页面尺寸。Pages 属性可用于指定需要应用新页面尺寸的页面号码。PageSize 类包含一个不同页面尺寸的列表，作为其成员。该类的任何成员都可以分配给 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 类的 PageSize 属性。您还可以使用 GetPageSize 方法并传递页面号码来获取任意页面的页面尺寸。
+[PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 类在 [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) 中包含一个名为 [PageSize](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/properties/pagesize) 的属性，该属性可用于更改单个页面或多个页面的页面尺寸。Pages 属性可用于指定需要应用新页面尺寸的页面号码。PageSize 类包含一个不同页面尺寸的列表，作为其成员。该类的任何成员都可以分配给 [PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 类的 PageSize 属性。您还可以使用 GetPageSize 方法并传递页面号码来获取任意页面的页面尺寸。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

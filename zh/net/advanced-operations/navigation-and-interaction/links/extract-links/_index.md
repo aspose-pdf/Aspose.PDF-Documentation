@@ -83,13 +83,13 @@ sitemap:
 
 ## 从 PDF 文件中提取链接
 
-链接在 PDF 文件中表示为注释，因此要提取链接，请提取所有 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 对象。
+链接在 PDF 文件中表示为注释，因此要提取链接，请提取所有 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 对象。
 
-1. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。
-1. 获取您想要提取链接的 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)。
-1. 使用 [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) 类从指定页面提取所有 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 对象。
-1. 将 [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) 对象传递给 Page 对象的 Accept 方法。
-1. 使用 [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) 对象的 Selected 属性将所有选定的链接注释获取到 IList 对象中。
+1. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
+1. 获取您想要提取链接的 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)。
+1. 使用 [AnnotationSelector](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationselector) 类从指定页面提取所有 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 对象。
+1. 将 [AnnotationSelector](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationselector) 对象传递给 Page 对象的 Accept 方法。
+1. 使用 [AnnotationSelector](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationselector) 对象的 Selected 属性将所有选定的链接注释获取到 IList 对象中。
 
 以下代码片段向您展示如何从 PDF 文件中提取链接。
 

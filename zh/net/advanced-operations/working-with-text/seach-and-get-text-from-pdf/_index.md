@@ -82,7 +82,7 @@ sitemap:
 
 ## 从PDF文档的所有页面搜索和获取文本
 
-[TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber)类允许您从PDF文档的所有页面中找到匹配特定短语的文本。为了从整个文档中搜索文本，您需要调用页面集合的Accept方法。[Accept](https://reference.aspose.com/pdf/net/aspose.pdf.page/accept/methods/3)方法将TextFragmentAbsorber对象作为参数，该对象返回TextFragment对象的集合。您可以遍历所有片段并获取它们的属性，如Text、Position (XIndent, YIndent)、FontName、FontSize、IsAccessible、IsEmbedded、IsSubset、ForegroundColor等。
+[TextFragmentAbsorber](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragmentabsorber)类允许您从PDF文档的所有页面中找到匹配特定短语的文本。为了从整个文档中搜索文本，您需要调用页面集合的Accept方法。[Accept](https://reference.aspose.com/pdf/zh/net/aspose.pdf.page/accept/methods/3)方法将TextFragmentAbsorber对象作为参数，该对象返回TextFragment对象的集合。您可以遍历所有片段并获取它们的属性，如Text、Position (XIndent, YIndent)、FontName、FontSize、IsAccessible、IsEmbedded、IsSubset、ForegroundColor等。
 
 以下代码片段向您展示了如何从所有页面搜索文本。
 

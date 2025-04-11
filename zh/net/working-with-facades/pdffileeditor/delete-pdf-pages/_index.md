@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-如果您想从位于磁盘上的 PDF 文件中删除多个页面，则可以使用 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) 方法的重载，该方法接受以下三个参数：输入文件路径、要删除的页面编号数组和输出 PDF 文件路径。第二个参数是一个整数数组，表示需要删除的所有页面。指定的页面将从输入文件中删除，结果将保存为输出文件。以下代码片段演示了如何使用文件路径删除 PDF 页面。
+如果您想从位于磁盘上的 PDF 文件中删除多个页面，则可以使用 [Delete](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) 方法的重载，该方法接受以下三个参数：输入文件路径、要删除的页面编号数组和输出 PDF 文件路径。第二个参数是一个整数数组，表示需要删除的所有页面。指定的页面将从输入文件中删除，结果将保存为输出文件。以下代码片段演示了如何使用文件路径删除 PDF 页面。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void DeletePages()
 
 ## 使用流删除 PDF 页面
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) 类的 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) 方法还提供了一个重载，允许您在输入和输出文件都在流中的情况下，从输入 PDF 文件中删除页面。此重载接受以下三个参数：输入流、要删除的 PDF 页面整数数组和输出流。以下代码片段演示了如何使用流删除 PDF 页面。
+[PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor) 类的 [Delete](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) 方法还提供了一个重载，允许您在输入和输出文件都在流中的情况下，从输入 PDF 文件中删除页面。此重载接受以下三个参数：输入流、要删除的 PDF 页面整数数组和输出流。以下代码片段演示了如何使用流删除 PDF 页面。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

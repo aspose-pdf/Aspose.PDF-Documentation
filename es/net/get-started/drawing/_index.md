@@ -146,7 +146,7 @@ Para probar **Aspose.PDF.Drawing para .NET**, simplemente ejecute `Install-Packa
 
 ![Aspose.PDF.Drawing para .NET](nuget.png)
 
-Conozca las clases disponibles en Aspose.PDF.Drawing en el sitio de [Referencia de API](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/).
+Conozca las clases disponibles en Aspose.PDF.Drawing en el sitio de [Referencia de API](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/).
 
 Conozca más sobre:
 

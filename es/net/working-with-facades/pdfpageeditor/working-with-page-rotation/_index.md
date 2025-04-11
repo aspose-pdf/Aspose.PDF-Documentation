@@ -77,13 +77,13 @@ draft: false
 
 {{% alert color="primary" %}}
 
-La clase [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) proporciona la facilidad de rotar una página.
+La clase [PdfPageEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfpageeditor) proporciona la facilidad de rotar una página.
 
 {{% /alert %}}
 
 ## Rotar página usando PageRotations
 
-Para rotar páginas en el documento podemos usar [PageRotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
+Para rotar páginas en el documento podemos usar [PageRotations](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
 `PageRotations` contiene el número de página y el grado de rotación, la clave representa el número de página, el valor de la clave representa la rotación en grados.
 
 ```csharp
@@ -114,7 +114,7 @@ Para rotar páginas en el documento podemos usar [PageRotations](https://referen
 
 ## Rotar página usando Rotation
 
-También podemos usar la propiedad [Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation). La rotación debe ser 0, 90, 180 o 270.
+También podemos usar la propiedad [Rotation](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfpageeditor/properties/rotation). La rotación debe ser 0, 90, 180 o 270.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

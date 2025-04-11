@@ -76,7 +76,7 @@ lastmod: "2021-06-24"
 
 ## Удаление изображений с определенной страницы PDF (Facades)
 
-Чтобы удалить изображения с определенной страницы, вам нужно вызвать метод [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) с параметрами pageNumber и index. Параметр index представляет собой массив целых чисел – индексы изображений, которые необходимо удалить. Прежде всего, вам нужно создать объект класса [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor), а затем вызвать метод [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). После этого вы можете сохранить обновленный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Чтобы удалить изображения с определенной страницы, вам нужно вызвать метод [DeleteImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) с параметрами pageNumber и index. Параметр index представляет собой массив целых чисел – индексы изображений, которые необходимо удалить. Прежде всего, вам нужно создать объект класса [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor), а затем вызвать метод [DeleteImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). После этого вы можете сохранить обновленный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save/index).
 
 Следующий фрагмент кода показывает, как удалить изображения с определенной страницы PDF.
 
@@ -123,7 +123,7 @@ private static void DeleteImage()
 
 ## Удаление всех изображений из PDF-файла (Facades)
 
-Все изображения могут быть удалены из PDF-файла с помощью метода [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) класса [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Вызовите метод [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – перегрузку без каких-либо параметров – чтобы удалить все изображения, а затем сохраните обновленный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Все изображения могут быть удалены из PDF-файла с помощью метода [DeleteImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) класса [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor). Вызовите метод [DeleteImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – перегрузку без каких-либо параметров – чтобы удалить все изображения, а затем сохраните обновленный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save/index).
 
 Следующий фрагмент кода показывает, как удалить все изображения из PDF-файла.
 
@@ -170,7 +170,7 @@ private static void DeleteImages()
 
 ## Замена изображения в PDF-файле (Facades)
 
-Класс [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) позволяет вам заменить изображение в PDF-файле, для этого вызовите метод [ReplaceImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) и сохраните результат.
+Класс [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor) позволяет вам заменить изображение в PDF-файле, для этого вызовите метод [ReplaceImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) и сохраните результат.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

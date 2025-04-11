@@ -84,7 +84,7 @@ priority: 0.7
 PDF 문서에 그래프를 추가하는 것은 Adobe Acrobat Writer 또는 기타 PDF 처리 애플리케이션을 사용할 때 개발자에게 매우 일반적인 작업입니다. PDF 애플리케이션에서 사용할 수 있는 그래프의 종류는 다양합니다.
 [Aspose.PDF for .NET](/pdf/ko/net/)는 PDF 문서에 그래프를 추가하는 것도 지원합니다. 이를 위해 그래프 클래스가 제공됩니다. 그래프는 단락 수준 요소이며 페이지 인스턴스의 단락 컬렉션에 추가할 수 있습니다. 그래프 인스턴스는 모양의 컬렉션을 포함합니다.
 
-다음과 같은 모양 유형이 [그래프](https://reference.aspose.com/pdf/ko/net/aspose.pdf.drawing/graph) 클래스에서 지원됩니다:
+다음과 같은 모양 유형이 [그래프](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) 클래스에서 지원됩니다:
 
 - [아크](/pdf/ko/net/add-arc/) - 때때로 플래그라고도 하며 인접한 정점의 순서쌍이지만 때때로 방향선이라고도 합니다.
 - [원](/pdf/ko/net/add-circle/) - 부문으로 나누어진 원을 사용하여 데이터를 표시합니다. 데이터가 전체 또는 한 그룹의 일부를 나타내는 방식을 보여주기 위해 원 그래프(파이 차트라고도 함)를 사용합니다.

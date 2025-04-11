@@ -82,7 +82,7 @@ sitemap:
 
 ## 将表格与数据库集成
 
-数据库用于存储和管理数据。程序员通常会用数据库中的数据填充不同的对象。本文讨论了如何将数据库中的数据添加到表格中。可以使用 Aspose.PDF for .NET 从任何数据源填充 [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) 对象。而且这不仅是可能的，而且非常简单。
+数据库用于存储和管理数据。程序员通常会用数据库中的数据填充不同的对象。本文讨论了如何将数据库中的数据添加到表格中。可以使用 Aspose.PDF for .NET 从任何数据源填充 [Table](https://reference.aspose.com/pdf/zh/net/aspose.pdf/table) 对象。而且这不仅是可能的，而且非常简单。
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) 允许开发人员从以下来源导入数据：
 

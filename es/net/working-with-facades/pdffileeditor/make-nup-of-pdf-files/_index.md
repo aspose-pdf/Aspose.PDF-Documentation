@@ -77,7 +77,7 @@ draft: false
 
 ## Hacer NUp de PDF Usando Rutas de Archivos
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando rutas de archivos. El siguiente fragmento de código te muestra cómo hacer NUP utilizando rutas de archivos.
+[MakeNUp](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando rutas de archivos. El siguiente fragmento de código te muestra cómo hacer NUP utilizando rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeNupOfPdfUsingFilePaths()
 
 ## Hacer NUp Usando Tamaño de Página y Rutas de Archivos
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida utilizando esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer NUp utilizando tamaño de página y rutas de archivos.
+[MakeNUp](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida utilizando esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer NUp utilizando tamaño de página y rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeNupUsingPageSizeAndFilePaths()
 
 ## Hacer NUp de PDF Usando Tamaño de Página, Valores Horizontales y Verticales, y Rutas de Archivos
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida y el número horizontal y vertical de páginas en cada página de salida utilizando esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer NUp utilizando tamaño de página, valores horizontales y verticales, y rutas de archivos.
+[MakeNUp](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del archivo PDF de entrada y guardarlo en el archivo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando rutas de archivos. También puedes establecer el tamaño de página del archivo PDF de salida y el número horizontal y vertical de páginas en cada página de salida utilizando esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer NUp utilizando tamaño de página, valores horizontales y verticales, y rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -128,7 +128,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFileP
 
 ## Hacer NUp de PDF Usando Array de Archivos PDF y Rutas de Archivos
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp de un array de archivos PDF de entrada y guardarlos en un solo archivo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando rutas de archivos. El siguiente fragmento de código te muestra cómo hacer NUp utilizando un array de archivos PDF y rutas de archivos.
+[MakeNUp](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp de un array de archivos PDF de entrada y guardarlos en un solo archivo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando rutas de archivos. El siguiente fragmento de código te muestra cómo hacer NUp utilizando un array de archivos PDF y rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
 
 ## Hacer NUp de PDF Usando Flujos
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando flujos en lugar de rutas de archivos. El siguiente fragmento de código te muestra cómo hacer NUp utilizando flujos.
+[MakeNUp](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando flujos en lugar de rutas de archivos. El siguiente fragmento de código te muestra cómo hacer NUp utilizando flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -176,7 +176,7 @@ private static void MakeNupOfPdfUsingStreams()
 
 ## Hacer NUp de PDF Usando Tamaño de Página y Flujos
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando flujos en lugar de rutas de archivos. También puedes establecer el tamaño de página del flujo PDF de salida utilizando esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer NUp utilizando tamaño de página y flujos.
+[MakeNUp](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando flujos en lugar de rutas de archivos. También puedes establecer el tamaño de página del flujo PDF de salida utilizando esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer NUp utilizando tamaño de página y flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ private static void MakeNupOfPdfUsingPageSizeAndStreams()
 
 ## Hacer NUp de PDF Usando Tamaño de Página, Valores Horizontales y Verticales, y Flujos
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando flujos en lugar de rutas de archivos. También puedes establecer el tamaño de página del flujo PDF de salida y el número horizontal y vertical de páginas en cada página de salida utilizando esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer NUp utilizando tamaño de página, valores horizontales y verticales, y flujos.
+[MakeNUp](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp del flujo PDF de entrada y guardarlo en el flujo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando flujos en lugar de rutas de archivos. También puedes establecer el tamaño de página del flujo PDF de salida y el número horizontal y vertical de páginas en cada página de salida utilizando esta sobrecarga. El siguiente fragmento de código te muestra cómo hacer NUp utilizando tamaño de página, valores horizontales y verticales, y flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -224,7 +224,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStrea
 
 ## Hacer NUp de PDF Usando Array de Archivos PDF y Flujos
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp de un array de flujos PDF de entrada y guardarlos en un solo flujo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando flujos en lugar de rutas de archivos. El siguiente fragmento de código te muestra cómo hacer NUp utilizando un array de archivos PDF utilizando flujos.
+[MakeNUp](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffileeditor) te permite hacer NUp de un array de flujos PDF de entrada y guardarlos en un solo flujo PDF de salida. Esta sobrecarga te permite hacer NUp utilizando flujos en lugar de rutas de archivos. El siguiente fragmento de código te muestra cómo hacer NUp utilizando un array de archivos PDF utilizando flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -168,7 +168,7 @@ private static void LoadingFontFromStream()
 
 ## Agregar texto usando TextParagraph
 
-El siguiente fragmento de código le muestra cómo agregar texto en un documento PDF usando la clase [TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph).
+El siguiente fragmento de código le muestra cómo agregar texto en un documento PDF usando la clase [TextParagraph](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textparagraph).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void AddTextWithTextParagraph()
 
 ## Agregar hipervínculo a TextSegment
 
-Una página PDF puede constar de uno o más objetos TextFragment, donde cada objeto TextFragment puede tener una o más instancias de TextSegment. Para establecer un hipervínculo para TextSegment, se puede usar la propiedad Hyperlink de la clase [TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment) mientras se proporciona el objeto de la instancia Aspose.Pdf.WebHyperlink. Intente usar el siguiente fragmento de código para lograr este requisito.
+Una página PDF puede constar de uno o más objetos TextFragment, donde cada objeto TextFragment puede tener una o más instancias de TextSegment. Para establecer un hipervínculo para TextSegment, se puede usar la propiedad Hyperlink de la clase [TextSegment](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textsegment) mientras se proporciona el objeto de la instancia Aspose.Pdf.WebHyperlink. Intente usar el siguiente fragmento de código para lograr este requisito.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -291,7 +291,7 @@ private static void UseOTFFont()
 
 La clase Aspose.Pdf.Generator.Text contiene una propiedad llamada IsHtmlTagSupported que hace posible agregar etiquetas/contenidos HTML en archivos PDF. El contenido agregado se renderiza en etiquetas HTML nativas en lugar de aparecer como una simple cadena de texto. Para soportar una característica similar en el nuevo Modelo de Objetos de Documento (DOM) del espacio de nombres Aspose.Pdf, se ha introducido la clase HtmlFragment.
 
-La instancia de [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) se puede usar para especificar los contenidos HTML que deben colocarse dentro del archivo PDF. Similar a TextFragment, HtmlFragment es un objeto a nivel de párrafo y se puede agregar a la colección de párrafos del objeto Page. Los siguientes fragmentos de código muestran los pasos para colocar contenidos HTML dentro del archivo PDF usando el enfoque DOM.
+La instancia de [HtmlFragment](https://reference.aspose.com/pdf/es/net/aspose.pdf/htmlfragment) se puede usar para especificar los contenidos HTML que deben colocarse dentro del archivo PDF. Similar a TextFragment, HtmlFragment es un objeto a nivel de párrafo y se puede agregar a la colección de párrafos del objeto Page. Los siguientes fragmentos de código muestran los pasos para colocar contenidos HTML dentro del archivo PDF usando el enfoque DOM.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -838,7 +838,7 @@ private static void CreateMultiColumnPdf()
 
 Un Tab Stop es un punto de parada para tabular. En el procesamiento de texto, cada línea contiene un número de tab stops colocados a intervalos regulares (por ejemplo, cada media pulgada). Sin embargo, pueden cambiarse, ya que la mayoría de los procesadores de texto permiten establecer tab stops donde desee. Cuando presiona la tecla Tab, el cursor o punto de inserción salta al siguiente tab stop, que en sí mismo es invisible. Aunque los tab stops no existen en el archivo de texto, el procesador de texto los rastrea para que pueda reaccionar correctamente a la tecla Tab.
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) permite a los desarrolladores usar tab stops personalizados en documentos PDF. La clase Aspose.Pdf.Text.TabStop se utiliza para establecer tab stops personalizados en la clase [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) permite a los desarrolladores usar tab stops personalizados en documentos PDF. La clase Aspose.Pdf.Text.TabStop se utiliza para establecer tab stops personalizados en la clase [TextFragment](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textfragment).
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) también ofrece algunos tipos de tab leader predefinidos como una enumeración llamada TabLeaderType cuyos valores predefinidos y sus descripciones se dan a continuación:
 
@@ -944,7 +944,7 @@ private static void AddTransparentText()
 
 ## Especificar LineSpacing para fuentes
 
-Cada fuente tiene un cuadrado abstracto, cuya altura es la distancia prevista entre líneas de tipo en el mismo tamaño de tipo. Este cuadrado se llama el cuadrado em y es la cuadrícula de diseño en la que se definen los contornos de los glifos. Muchas letras de la fuente de entrada tienen puntos que se colocan fuera de los límites del cuadrado em de la fuente, por lo que para mostrar la fuente correctamente, se necesita el uso de una configuración especial. El objeto TextFragment tiene un conjunto de opciones de formato de texto que son accesibles a través de las propiedades TextState.FormattingOptions. La última propiedad de este camino es una propiedad de tipo Aspose.Pdf.Text.TextFormattingOptions. Esta clase tiene una enumeración [LineSpacingMode](https://reference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode) que está diseñada para fuentes específicas, por ejemplo, la fuente de entrada "HPSimplified.ttf". También la clase [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) tiene una propiedad [LineSpacing](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing) de tipo LineSpacingMode. Solo necesita establecer LineSpacing en LineSpacingMode.FullSize. El fragmento de código para mostrar una fuente correctamente sería como sigue:
+Cada fuente tiene un cuadrado abstracto, cuya altura es la distancia prevista entre líneas de tipo en el mismo tamaño de tipo. Este cuadrado se llama el cuadrado em y es la cuadrícula de diseño en la que se definen los contornos de los glifos. Muchas letras de la fuente de entrada tienen puntos que se colocan fuera de los límites del cuadrado em de la fuente, por lo que para mostrar la fuente correctamente, se necesita el uso de una configuración especial. El objeto TextFragment tiene un conjunto de opciones de formato de texto que son accesibles a través de las propiedades TextState.FormattingOptions. La última propiedad de este camino es una propiedad de tipo Aspose.Pdf.Text.TextFormattingOptions. Esta clase tiene una enumeración [LineSpacingMode](https://reference.aspose.com/pdf/es/net/aspose.pdf.text.textformattingoptions/linespacingmode) que está diseñada para fuentes específicas, por ejemplo, la fuente de entrada "HPSimplified.ttf". También la clase [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textformattingoptions) tiene una propiedad [LineSpacing](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textformattingoptions/properties/linespacing) de tipo LineSpacingMode. Solo necesita establecer LineSpacing en LineSpacingMode.FullSize. El fragmento de código para mostrar una fuente correctamente sería como sigue:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -993,7 +993,7 @@ private static void SpecifyLineSpacing()
 
 ## Obtener el ancho del texto dinámicamente
 
-A veces, es necesario obtener el ancho del texto dinámicamente. Aspose.PDF for .NET incluye dos métodos para medir el ancho de la cadena. Puede invocar el método [MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) de las clases Aspose.Pdf.Text.Font o Aspose.Pdf.Text.TextState (o ambas). El siguiente fragmento de código muestra cómo usar esta funcionalidad.
+A veces, es necesario obtener el ancho del texto dinámicamente. Aspose.PDF for .NET incluye dos métodos para medir el ancho de la cadena. Puede invocar el método [MeasureString](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/font/methods/measurestring) de las clases Aspose.Pdf.Text.Font o Aspose.Pdf.Text.TextState (o ambas). El siguiente fragmento de código muestra cómo usar esta funcionalidad.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

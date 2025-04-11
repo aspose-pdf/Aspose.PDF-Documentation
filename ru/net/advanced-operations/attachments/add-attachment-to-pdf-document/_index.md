@@ -85,11 +85,11 @@ sitemap:
 
 1. Создайте новый проект на C#.
 1. Добавьте ссылку на DLL Aspose.PDF.
-1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Создайте объект [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) с добавляемым файлом и описанием файла.
-1. Добавьте объект [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) в коллекцию [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) с помощью метода Add коллекции.
+1. Создайте объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Создайте объект [FileSpecification](https://reference.aspose.com/pdf/ru/net/aspose.pdf/filespecification) с добавляемым файлом и описанием файла.
+1. Добавьте объект [FileSpecification](https://reference.aspose.com/pdf/ru/net/aspose.pdf/filespecification) в коллекцию [EmbeddedFiles](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) с помощью метода Add коллекции.
 
-Коллекция [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) содержит все вложения в файле PDF. Следующий фрагмент кода показывает, как добавить вложение в документ PDF.
+Коллекция [EmbeddedFiles](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection) содержит все вложения в файле PDF. Следующий фрагмент кода показывает, как добавить вложение в документ PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

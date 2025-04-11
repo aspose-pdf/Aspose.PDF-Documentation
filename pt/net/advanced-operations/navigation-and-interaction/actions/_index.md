@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Working with Actions in PDF",
     "alternativeHeadline": "Programmatic Actions in PDF with C#",
-    "abstract": "O novo recurso em Aspose.PDF for .NET permite que os desenvolvedores adicionem programaticamente ações aos PDFs, aumentando a interatividade dentro dos documentos. Os usuários podem implementar hyperlinks para navegar dentro do documento ou para URLs externas, bem como manipular ações de abertura de documentos para controlar como os PDFs são exibidos ao serem abertos. Essa funcionalidade poderosa simplifica a criação e interação de documentos para aplicações C#",
+    "abstract": "O novo recurso em Aspose.PDF for .NET permite que os desenvolvedores adicionem programaticamente ações aos PDFs, aumentando a interatividade dentro dos documentos. Os usuários podem implementar hyperlinks para navegar dentro do documento ou para URLs externas, além de manipular ações de abertura de documentos para controlar como os PDFs são exibidos ao serem abertos. Essa funcionalidade poderosa simplifica a criação e interação de documentos para aplicações C#",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "C#, PDF actions, hyperlink creation, LinkAnnotation, LocalHyperlink, FreeTextAnnotation, document open action, XYZExplicitDestination, Aspose.PDF, PDF manipulation",
-    "wordcount": "2007",
+    "wordcount": "3427",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/actions/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-02",
     "description": "Esta seção explica como adicionar ações ao documento e campos de formulário programaticamente com C#."
 }
 </script>
@@ -94,10 +94,10 @@ Para adicionar hyperlinks da web a documentos PDF:
 1. Para exibir um texto de hyperlink, adicione uma string de texto em uma localização semelhante à onde o objeto [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) está colocado.
 1. Para adicionar um texto livre:
 
-- Instancie um objeto [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation). Ele também aceita objetos Page e Rectangle como argumento, então é possível fornecer os mesmos valores especificados contra o construtor LinkAnnotation.
+- Instancie um objeto [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation). Ele também aceita objetos Page e Rectangle como argumento, portanto, é possível fornecer os mesmos valores especificados contra o construtor LinkAnnotation.
 - Usando a propriedade Contents do objeto [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation), especifique a string que deve ser exibida no PDF de saída.
 - Opcionalmente, defina a largura da borda de ambos os objetos [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) e FreeTextAnnotation para 0, para que não apareçam no documento PDF.
-- Uma vez que os objetos [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) e [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) tenham sido definidos, adicione esses links à coleção Annotations do objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+- Uma vez que os objetos [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) e [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) tenham sido definidos, adicione esses links à coleção de Annotations do objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
 - Finalmente, salve o PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 O seguinte trecho de código mostra como adicionar um hyperlink a um arquivo PDF.
@@ -186,13 +186,104 @@ private static void AddHyperlink()
 {{< /tab >}}
 {{< /tabs >}}
 
+Outro cenário comum é encontrar um determinado texto no documento usando TextFragmentAbsorber e definir sua região como hyperlinks para o site. Abaixo está um trecho de código que implementa isso.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHyperlinkForExistingText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf"))
+    {
+        // Get page
+        var page = document.Pages[1];
+
+        // The text in the document for which we want to create a link
+        string textForLink = "Portable Document Format";
+
+        // Finding the location of text on a page
+        var textFragmentAbsosrber = new Aspose.Pdf.Text.TextFragmentAbsorber(textForLink);
+        page.Accept(textFragmentAbsosrber);
+        foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
+        {
+            // Create Link annotation object
+            var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, textFragment.Rectangle);
+            // Create border object for LinkAnnotation
+            var border = new Aspose.Pdf.Annotations.Border(link);
+            // Set the border width value as 0
+            border.Width = 0;
+            // Set the border for LinkAnnotation
+            link.Border = border;
+            // Specify the link type as remote URI
+            link.Action = new Aspose.Pdf.Annotations.GoToURIAction("https://www.pdfa-inc.org/");
+            // Add link annotation to annotations collection of first page of PDF file
+            page.Annotations.Add(link);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddHyperlink_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHyperlinkForExistingText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf");
+
+    // Get page
+    var page = document.Pages[1];
+
+    // The text in the document for which we want to create a link
+    string textForLink = "Portable Document Format";
+
+    // Finding the location of text on a page
+    var textFragmentAbsosrber = new Aspose.Pdf.Text.TextFragmentAbsorber(textForLink);
+    page.Accept(textFragmentAbsosrber);
+    foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
+    {
+        // Create Link annotation object
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, textFragment.Rectangle);
+        // Create border object for LinkAnnotation
+        var border = new Aspose.Pdf.Annotations.Border(link);
+        // Set the border width value as 0
+        border.Width = 0;
+        // Set the border for LinkAnnotation
+        link.Border = border;
+        // Specify the link type as remote URI
+        link.Action = new Aspose.Pdf.Annotations.GoToURIAction("https://www.pdfa-inc.org/");
+        // Add link annotation to annotations collection of first page of PDF file
+        page.Annotations.Add(link);
+    }
+
+    // Save PDF document
+    document.Save(dataDir + "AddHyperlink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Criar Hyperlink para páginas no mesmo PDF
 
-Aspose.PDF for .NET fornece um ótimo recurso para a criação de PDF, bem como sua manipulação. Ele também oferece a funcionalidade de adicionar links a páginas PDF e um link pode direcionar para páginas em outro arquivo PDF, uma URL da web, link para iniciar um aplicativo ou até mesmo link para páginas no mesmo arquivo PDF. Para adicionar hyperlinks locais (links para páginas no mesmo arquivo PDF), uma classe chamada [LocalHyperlink](https://reference.aspose.com/pdf/net/aspose.pdf/localhyperlink) foi adicionada ao namespace Aspose.PDF e essa classe possui uma propriedade chamada TargetPageNumber, que é usada para especificar a página de destino para o hyperlink.
+Aspose.PDF for .NET fornece um ótimo recurso para a criação de PDF, bem como sua manipulação. Ele também oferece a funcionalidade de adicionar links a páginas PDF e um link pode direcionar para páginas em outro arquivo PDF, uma URL da web, um link para iniciar um aplicativo ou até mesmo links para páginas no mesmo arquivo PDF. Para adicionar hyperlinks locais (links para páginas no mesmo arquivo PDF), uma classe chamada [LocalHyperlink](https://reference.aspose.com/pdf/net/aspose.pdf/localhyperlink) foi adicionada ao namespace Aspose.PDF e essa classe possui uma propriedade chamada TargetPageNumber, que é usada para especificar a página de destino para o hyperlink.
 
 Para adicionar o hyperlink local, precisamos criar um TextFragment para que o link possa ser associado ao TextFragment. A classe [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) possui uma propriedade chamada Hyperlink que é usada para associar a instância LocalHyperlink. O seguinte trecho de código mostra os passos para cumprir esse requisito.
 
-{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -278,9 +369,9 @@ private static void AddHyperlink()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Obter Destino de Hyperlink PDF (URL)
+## Obter Destino do Hyperlink PDF (URL)
 
-Os links são representados como anotações em um arquivo PDF e podem ser adicionados, atualizados ou excluídos. Aspose.PDF for .NET também suporta a obtenção do destino (URL) do hyperlink em um arquivo PDF.
+Os links são representados como anotações em um arquivo PDF e podem ser adicionados, atualizados ou excluídos. Aspose.PDF for .NET também suporta a obtenção do destino (URL) do hyperlink no arquivo PDF.
 
 Para obter a URL de um link:
 
@@ -293,7 +384,7 @@ Para obter a URL de um link:
 
 O seguinte trecho de código mostra como obter destinos de hyperlink (URL) de um arquivo PDF.
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -362,7 +453,7 @@ private static void GetHyperlink()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Obter Texto de Hyperlink
+## Obter Texto do Hyperlink
 
 Um hyperlink tem duas partes: o texto que aparece no documento e a URL de destino. Em alguns casos, é o texto em vez da URL que precisamos.
 
@@ -370,7 +461,7 @@ Texto e anotações/ações em um arquivo PDF são representados por diferentes 
 
 Para encontrar o conteúdo da URL, você precisa trabalhar com tanto a anotação quanto o texto. O objeto [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) não possui o texto em si, mas está localizado sob o texto na página. Portanto, para obter o texto, a Anotação fornece os limites da URL, enquanto o objeto Texto fornece o conteúdo da URL. Veja o seguinte trecho de código.
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -459,12 +550,12 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 Para remover uma ação de abertura:
 
-1. Defina a propriedade [OpenAction](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) como null.
+1. Defina a propriedade [OpenAction](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) como nula.
 1. Salve o PDF atualizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) do objeto Document.
 
 O seguinte trecho de código mostra como remover uma ação de abertura de documento do arquivo PDF.
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -511,9 +602,9 @@ private static void RemoveOpenAction()
 
 Ao visualizar arquivos PDF em um visualizador de PDF como o Adobe Reader, os arquivos geralmente abrem na primeira página. No entanto, é possível definir o arquivo para abrir em uma página diferente.
 
-A classe [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) permite que você especifique uma página em um arquivo PDF que deseja abrir. Ao passar o valor do objeto GoToAction para a propriedade OpenAction da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), o documento é aberto na página especificada contra o objeto XYZExplicitDestination. O seguinte trecho de código mostra como especificar uma página como a ação de abertura do documento.
+A classe [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) permite que você especifique uma página em um arquivo PDF que deseja abrir. Ao passar o valor do objeto GoToAction para a propriedade OpenAction da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), o documento abre na página especificada contra o objeto XYZExplicitDestination. O seguinte trecho de código mostra como especificar uma página como a ação de abertura do documento.
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

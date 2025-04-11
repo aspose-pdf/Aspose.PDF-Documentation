@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-تتيح لك الإشارات المرجعية خيار تتبع/ربط صفحة معينة داخل مستند PDF. توفر فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) في [مساحة أسماء Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) ميزة تتيح لك إنشاء إشارة مرجعية خاصة بك بطريقة متطورة ولكن بديهية داخل ملف PDF موجود، في صفحة معينة أو جميع الصفحات.
+تتيح لك الإشارات المرجعية خيار تتبع/ربط صفحة معينة داخل مستند PDF. توفر فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/PdfContentEditor) في [مساحة أسماء Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) ميزة تتيح لك إنشاء إشارة مرجعية خاصة بك بطريقة متطورة ولكن بديهية داخل ملف PDF موجود، في صفحة معينة أو جميع الصفحات.
 
 ## تفاصيل التنفيذ
 

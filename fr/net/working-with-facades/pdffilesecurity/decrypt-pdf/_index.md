@@ -86,7 +86,7 @@ Vous pouvez essayer de déverrouiller le document en utilisant Aspose.PDF et obt
 
 {{% /alert %}}
 
-Pour déchiffrer un fichier PDF, vous devez créer un objet [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) puis appeler la méthode [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Vous devez également passer le mot de passe propriétaire à la méthode [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Le code suivant vous montre comment déchiffrer un fichier PDF.
+Pour déchiffrer un fichier PDF, vous devez créer un objet [PdfFileSecurity](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesecurity) puis appeler la méthode [DecryptFile](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Vous devez également passer le mot de passe propriétaire à la méthode [DecryptFile](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile). Le code suivant vous montre comment déchiffrer un fichier PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,8 +83,8 @@ Aspose.PDF for .NET 让您在 .NET 应用程序中读取和设置 PDF 文件中�
 
 要获取 PDF 文件中的页面数量：
 
-1. 使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类打开 PDF 文件。
-1. 然后使用 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合的 Count 属性（来自 Document 对象）获取文档中的总页面数。
+1. 使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类打开 PDF 文件。
+1. 然后使用 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 集合的 Count 属性（来自 Document 对象）获取文档中的总页面数。
 
 以下代码片段展示了如何获取 PDF 文件的页面数量。
 
@@ -106,7 +106,7 @@ private static void GetNumberOfPagesInAPdfFile()
 
 ### 在不保存文档的情况下获取页面计数
 
-有时我们会动态生成 PDF 文件，在创建 PDF 文件时，可能会遇到需求（创建目录等）需要在不将文件保存到系统或流中的情况下获取 PDF 文件的页面计数。因此，为了满足这一需求，在 Document 类中引入了一个方法 [ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs)。请查看以下代码片段，展示了如何在不保存文档的情况下获取页面计数的步骤。
+有时我们会动态生成 PDF 文件，在创建 PDF 文件时，可能会遇到需求（创建目录等）需要在不将文件保存到系统或流中的情况下获取 PDF 文件的页面计数。因此，为了满足这一需求，在 Document 类中引入了一个方法 [ProcessParagraphs](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/processparagraphs)。请查看以下代码片段，展示了如何在不保存文档的情况下获取页面计数的步骤。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ PDF 文件中的每个页面都有多个属性，例如宽度、高度、出血�
 
 ### **访问页面属性**
 
-[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 类提供与特定 PDF 页面相关的所有属性。PDF 文件的所有页面都包含在 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合中。
+[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 类提供与特定 PDF 页面相关的所有属性。PDF 文件的所有页面都包含在 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 集合中。
 
 从那里，可以使用索引访问单个 Page 对象，或使用 foreach 循环遍历集合以获取所有页面。一旦访问了单个页面，我们可以获取其属性。以下代码片段展示了如何获取页面属性。
 
@@ -190,12 +190,12 @@ private static void AccessingPageProperties()
 
 Aspose.PDF 允许您 [将 PDF 拆分为单个页面](/pdf/zh/net/split-pdf-document/) 并将其保存为 PDF 文件。获取 PDF 文件中的指定页面并将其保存为新 PDF 是一个非常相似的操作：打开源文档，访问页面，创建新文档并将页面添加到此文档中。
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 保存 PDF 文件中的页面。要从此集合中获取特定页面：
+[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象的 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 保存 PDF 文件中的页面。要从此集合中获取特定页面：
 
 1. 使用 Pages 属性指定页面索引。
-1. 创建一个新的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。
-1. 将 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象添加到新的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象中。
-1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存输出。
+1. 创建一个新的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
+1. 将 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象添加到新的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象中。
+1. 使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存输出。
 
 以下代码片段展示了如何从 PDF 文件中获取特定页面并将其保存为新文件。
 
@@ -224,9 +224,9 @@ private static void GetAParticularPageOfThePdfFile()
 
 ## 确定页面颜色
 
-[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 类提供与 PDF 文档中特定页面相关的属性，包括页面使用的颜色类型 - RGB、黑白、灰度或未定义。
+[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 类提供与 PDF 文档中特定页面相关的属性，包括页面使用的颜色类型 - RGB、黑白、灰度或未定义。
 
-PDF 文件的所有页面都包含在 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合中。ColorType 属性指定页面上元素的颜色。要获取或确定特定 PDF 页面的颜色信息，请使用 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象的 [ColorType](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/colortype) 属性。
+PDF 文件的所有页面都包含在 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 集合中。ColorType 属性指定页面上元素的颜色。要获取或确定特定 PDF 页面的颜色信息，请使用 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象的 [ColorType](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/properties/colortype) 属性。
 
 以下代码片段展示了如何遍历 PDF 文件的每个页面以获取颜色信息。
 

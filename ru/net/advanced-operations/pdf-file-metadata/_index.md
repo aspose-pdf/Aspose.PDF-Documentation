@@ -83,7 +83,7 @@ sitemap:
 
 ## Получение информации о PDF-файле
 
-Чтобы получить специфическую информацию о PDF-файле, вам сначала нужно получить объект [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) с помощью свойства [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). После получения объекта [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) вы можете получить значения отдельных свойств. Следующий фрагмент кода показывает, как получить информацию о PDF-файле.
+Чтобы получить специфическую информацию о PDF-файле, вам сначала нужно получить объект [DocumentInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf/documentinfo) с помощью свойства [Info](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/info) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). После получения объекта [DocumentInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf/documentinfo) вы можете получить значения отдельных свойств. Следующий фрагмент кода показывает, как получить информацию о PDF-файле.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -142,7 +142,7 @@ private static void GetPDFFileInformation()
 
 Aspose.PDF for .NET позволяет вам устанавливать специфическую информацию о файле для PDF, такую как автор, дата создания, тема и заголовок. Чтобы установить эту информацию:
 
-1. Создайте объект [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo).
+1. Создайте объект [DocumentInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf/documentinfo).
 1. Установите значения свойств.
 1. Сохраните обновленный документ с помощью метода Save класса Document.
 
@@ -167,6 +167,8 @@ private static void SetFileInformation()
         docInfo.CreationDate = DateTime.Now;
         docInfo.Keywords = "Aspose.Pdf, DOM, API";
         docInfo.ModDate = DateTime.Now;
+        // Specify custom timezone
+        docInfo.CreationTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Tokyo Standard Time").GetUtcOffset(docInfo.CreationDate);
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
         docInfo.Producer = "Custom producer";
@@ -197,6 +199,8 @@ private static void SetFileInformation()
         docInfo.CreationDate = DateTime.Now;
         docInfo.Keywords = "Aspose.Pdf, DOM, API";
         docInfo.ModDate = DateTime.Now;
+        // Specify custom timezone
+        docInfo.CreationTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Tokyo Standard Time").GetUtcOffset(docInfo.CreationDate);
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
         docInfo.Producer = "Custom producer";
@@ -214,8 +218,8 @@ private static void SetFileInformation()
 
 Aspose.PDF позволяет вам получить доступ к метаданным XMP PDF-файла. Чтобы получить метаданные PDF-файла:
 
-1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) и откройте входной PDF-файл.
-1. Получите метаданные файла с помощью свойства [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
+1. Создайте объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) и откройте входной PDF-файл.
+1. Получите метаданные файла с помощью свойства [Metadata](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/metadata).
 
 Следующий фрагмент кода показывает, как получить метаданные из PDF-файла.
 
@@ -265,9 +269,9 @@ private static void GetXMPMetadata()
 
 Aspose.PDF позволяет вам устанавливать метаданные в PDF-файл. Чтобы установить метаданные:
 
-1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Установите значения метаданных с помощью свойства [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
-1. Сохраните обновленный документ с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Создайте объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Установите значения метаданных с помощью свойства [Metadata](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/metadata).
+1. Сохраните обновленный документ с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 Следующий фрагмент кода показывает, как установить метаданные в PDF-файл.
 

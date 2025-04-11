@@ -75,11 +75,11 @@ draft: false
 }
 </script>
 
-作为默认布局，PDF文件中的内容是从左上角到右下角添加的。一旦内容超过页面底部边距，就会发生分页符。然而，您可能会遇到根据需求插入分页符的要求。为了满足这一要求，在[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor)类中添加了一个名为AddPageBreak(...)的方法。
+作为默认布局，PDF文件中的内容是从左上角到右下角添加的。一旦内容超过页面底部边距，就会发生分页符。然而，您可能会遇到根据需求插入分页符的要求。为了满足这一要求，在[PdfFileEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor)类中添加了一个名为AddPageBreak(...)的方法。
 
-1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
-1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
-1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
+1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
+1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
+1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
 
 - src是源文档/文档路径/包含源文档的流。
 - dest是目标文档/文档将保存的路径/文档将保存的流。

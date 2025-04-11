@@ -84,7 +84,7 @@ Aspose.PDF для NET предлагает возможности вставки
 
 {{% /alert %}}
 
-Чтобы удалить таблицы, нам нужно использовать класс [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber), чтобы получить таблицы в существующем PDF-файле, а затем вызвать [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
+Чтобы удалить таблицы, нам нужно использовать класс [TableAbsorber](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/tableabsorber), чтобы получить таблицы в существующем PDF-файле, а затем вызвать [Remove](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/tableabsorber/methods/remove).
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 

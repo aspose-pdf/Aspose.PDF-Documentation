@@ -77,7 +77,7 @@ draft: false
 
 ## Установка прав доступа к существующему файлу PDF
 
-Чтобы установить права доступа к файлу PDF, создайте объект [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) и вызовите метод SetPrivilege. Вы можете указать права доступа с помощью объекта DocumentPrivilege, а затем передать этот объект методу SetPrivilege. В следующем фрагменте кода показано, как установить права доступа к файлу PDF.
+Чтобы установить права доступа к файлу PDF, создайте объект [PdfFileSecurity](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity) и вызовите метод SetPrivilege. Вы можете указать права доступа с помощью объекта DocumentPrivilege, а затем передать этот объект методу SetPrivilege. В следующем фрагменте кода показано, как установить права доступа к файлу PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

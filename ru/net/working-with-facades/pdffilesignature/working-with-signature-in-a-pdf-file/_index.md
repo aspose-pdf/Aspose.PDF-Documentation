@@ -158,7 +158,7 @@ private static void ExtractSignatureImage()
 
 ## Скрытие местоположения и причины
 
-Функциональность Aspose.PDF позволяет гибко настраивать экземпляр цифровой подписи. Класс [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) предоставляет возможность подписывать PDF файл. Реализация метода Sign позволяет подписывать PDF и передавать конкретный объект подписи в этот класс. Метод Sign содержит набор атрибутов для настройки выходной цифровой подписи. В случае, если вам нужно скрыть некоторые текстовые атрибуты из результирующей подписи, вы можете оставить их пустыми. Следующий фрагмент кода демонстрирует, как скрыть местоположение и причину из блока подписи:
+Функциональность Aspose.PDF позволяет гибко настраивать экземпляр цифровой подписи. Класс [PdfFileSignature](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesignature) предоставляет возможность подписывать PDF файл. Реализация метода Sign позволяет подписывать PDF и передавать конкретный объект подписи в этот класс. Метод Sign содержит набор атрибутов для настройки выходной цифровой подписи. В случае, если вам нужно скрыть некоторые текстовые атрибуты из результирующей подписи, вы можете оставить их пустыми. Следующий фрагмент кода демонстрирует, как скрыть местоположение и причину из блока подписи:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void SupressLocationReason()
 
 ## Функции настройки для цифровой подписи
 
-Aspose.PDF for .NET позволяет настраивать функции для цифровой подписи. Метод Sign класса [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) реализован с 6 перегрузками для вашего удобства. Например, вы можете настроить результирующую подпись только с помощью экземпляра класса SignatureCustomAppearance и значений его свойств. Следующий фрагмент кода демонстрирует, как скрыть заголовок "Цифровая подпись от" из выходной цифровой подписи вашего PDF.
+Aspose.PDF for .NET позволяет настраивать функции для цифровой подписи. Метод Sign класса [SignatureCustomAppearance](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturecustomappearance) реализован с 6 перегрузками для вашего удобства. Например, вы можете настроить результирующую подпись только с помощью экземпляра класса SignatureCustomAppearance и значений его свойств. Следующий фрагмент кода демонстрирует, как скрыть заголовок "Цифровая подпись от" из выходной цифровой подписи вашего PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,7 +233,7 @@ private static void CustomizationFeaturesForDigitalSign()
 - PKCS#7.
 - PKCS#12.
 
-Каждая из предоставленных подписей содержит набор свойств конфигурации, реализованных для вашего удобства (локализация, формат даты и времени, семейство шрифтов и т.д.). Класс [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) предоставляет соответствующую функциональность. Следующий фрагмент кода демонстрирует, как изменить язык в тексте цифровой подписи:
+Каждая из предоставленных подписей содержит набор свойств конфигурации, реализованных для вашего удобства (локализация, формат даты и времени, семейство шрифтов и т.д.). Класс [SignatureCustomAppearance](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturecustomappearance) предоставляет соответствующую функциональность. Следующий фрагмент кода демонстрирует, как изменить язык в тексте цифровой подписи:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -82,7 +82,7 @@ Artifacts in PDF هي كائنات رسومية أو عناصر أخرى ليس�
 
 الغرض من Artifacts في PDF هو التمييز بين عناصر المحتوى وغير المحتوى. وهذا مهم لإمكانية الوصول، حيث يمكن لبرامج قارئات الشاشة والتقنيات المساعدة تجاهل Artifacts والتركيز على المحتوى ذي الصلة. كما يمكن أن تحسن Artifacts من أداء وجودة مستندات PDF، إذ يمكن حذفها عند الطباعة أو البحث أو النسخ.
 
-لإنشاء عنصر كـ Artifact في PDF، تحتاج إلى استخدام فئة [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact).
+لإنشاء عنصر كـ Artifact في PDF، تحتاج إلى استخدام فئة [Artifact](https://reference.aspose.com/pdf/ar/net/aspose.pdf/artifact).
 تحتوي على الخصائص المفيدة التالية:
 
 - **Artifact.Type** – يحصل على نوع Artifact (يدعم القيم من تعداد Artifact.ArtifactType حيث تشمل القيم Background، Layout، Page، Pagination و Undefined).
@@ -97,17 +97,17 @@ Artifacts in PDF هي كائنات رسومية أو عناصر أخرى ليس�
 
 الفئات التالية قد تكون مفيدة أيضًا للعمل مع Artifacts:
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/watermarkartifact/)
+- [ArtifactCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/artifactcollection)
+- [BackgroundArtifact](https://reference.aspose.com/pdf/ar/net/aspose.pdf/backgroundartifact/)
+- [HeaderArtifact](https://reference.aspose.com/pdf/ar/net/aspose.pdf/headerartifact/)
+- [FooterArtifact](https://reference.aspose.com/pdf/ar/net/aspose.pdf/footerartifact/)
+- [WatermarkArtifact](https://reference.aspose.com/pdf/ar/net/aspose.pdf/watermarkartifact/)
 
 ## Working with Existing Watermarks
 
 العلامة المائية المُنشأة باستخدام Adobe Acrobat تُسمى Artifact (كما هو موضح في 14.8.2.2 Real Content and Artifacts من مواصفات PDF).
 
-للحصول على جميع العلامات المائية على صفحة معينة، تحتوي فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) على خاصية Artifacts.
+للحصول على جميع العلامات المائية على صفحة معينة، تحتوي فئة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) على خاصية Artifacts.
 
 تُظهر الشيفرة التالية كيفية الحصول على جميع العلامات المائية في الصفحة الأولى من ملف PDF.
 
@@ -140,7 +140,7 @@ private static void ExtractWatermarkFromPDF()
 
 ## Working with Backgrounds as Artifacts
 
-يمكن استخدام الصور الخلفية لإضافة علامة مائية أو تصميم دقيق إلى المستندات. في Aspose.PDF for .NET، كل مستند PDF عبارة عن مجموعة من الصفحات، وتحتوي كل صفحة على مجموعة من Artifacts. يمكن استخدام فئة [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) لإضافة صورة خلفية إلى كائن الصفحة.
+يمكن استخدام الصور الخلفية لإضافة علامة مائية أو تصميم دقيق إلى المستندات. في Aspose.PDF for .NET، كل مستند PDF عبارة عن مجموعة من الصفحات، وتحتوي كل صفحة على مجموعة من Artifacts. يمكن استخدام فئة [BackgroundArtifact](https://reference.aspose.com/pdf/ar/net/aspose.pdf/backgroundartifact) لإضافة صورة خلفية إلى كائن الصفحة.
 
 تُظهر الشيفرة التالية كيفية إضافة صورة خلفية إلى صفحات PDF باستخدام كائن BackgroundArtifact.
 

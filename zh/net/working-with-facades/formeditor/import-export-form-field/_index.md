@@ -5,7 +5,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /zh/net/import-export-form-field/
-description: 使用 FormEditor 类通过 DataTable 填充表单字段 Aspose.PDF for .NET
+description: 使用 FormEditor 类通过 DataTable 填充表单字段，编号 Aspose.PDF for .NET
 lastmod: "2021-06-05"
 draft: false
 ---
@@ -15,7 +15,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Import and Export Form Field",
     "alternativeHeadline": "Streamline PDF Form Management with Import/Export Features",
-    "abstract": "Aspose.PDF for .NET 中的导入和导出表单字段功能允许用户使用各种数据源（如 FDF、XFDF、XML，甚至 System.Data.DataTable 对象）无缝填充和操作 PDF 表单字段。这个强大的 API 使自动化数据处理成为可能，提高了 PDF 表单管理的效率，并简化了数据输入过程。",
+    "abstract": "Aspose.PDF for .NET 中的导入和导出表单字段功能允许用户使用各种数据源（如 FDF、XFDF、XML，甚至 System.Data.DataTable 对象）无缝填充和操作 PDF 表单字段。这个强大的 API 使得自动化数据处理成为可能，提高了 PDF 表单管理的效率，并简化了数据输入过程。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "252",
+    "wordcount": "275",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,12 +70,14 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/import-export-form-field/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发者的信息。"
 }
 </script>
 
-Aspose.PDF for .NET 提供了在 PDF 文档中创建/操作表单字段的强大功能。使用此 API，您可以以编程方式填充 PDF 文件中的表单字段，通过 [从 FDF 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/)、[从 XFDF 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/)、[从 XML 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/) 填充表单字段，甚至可以从 [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) 对象导入数据。
+Aspose.PDF for .NET 提供了在 PDF 文档中创建/操作表单字段的强大功能。使用此 API，您可以以编程方式填充 PDF 文件中的表单字段，通过 [从 FDF 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/)、[从 XFDF 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/)、[从 XML 导入数据到 PDF 文件](/pdf/zh/net/import-and-export-data/) 或者您甚至可以从 [System.Data.DataTable](https://reference.aspose.com/pdf/zh/net/aspose.pdf.table/importdatatable/methods/1) 对象导入数据。
+
+## 从 PDF 导入数据到 FDF
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

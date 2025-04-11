@@ -83,14 +83,14 @@ sitemap:
 
 ## إضافة كائن دائرة
 
-مثل الرسوم البيانية الشريطية، يمكن استخدام الرسوم البيانية الدائرية لعرض البيانات في عدد من الفئات المنفصلة. ومع ذلك، على عكس الرسوم البيانية الشريطية، يمكن استخدام الرسوم البيانية الدائرية فقط عندما يكون لديك بيانات لجميع الفئات التي تشكل الكل. لذا دعونا نلقي نظرة على إضافة كائن [دائرة](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/circle) باستخدام Aspose.PDF for .NET.
+مثل الرسوم البيانية الشريطية، يمكن استخدام الرسوم البيانية الدائرية لعرض البيانات في عدد من الفئات المنفصلة. ومع ذلك، على عكس الرسوم البيانية الشريطية، يمكن استخدام الرسوم البيانية الدائرية فقط عندما يكون لديك بيانات لجميع الفئات التي تشكل الكل. لذا دعونا نلقي نظرة على إضافة كائن [دائرة](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/circle) باستخدام Aspose.PDF for .NET.
 
 اتبع الخطوات أدناه:
 
-1. إنشاء مثيل [مستند](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
-1. إنشاء [كائن رسم](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) بأبعاد معينة.
-1. تعيين [حدود](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) لكائن الرسم.
-1. إضافة كائن [رسم](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) إلى مجموعة الفقرات في الصفحة.
+1. إنشاء مثيل [مستند](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
+1. إنشاء [كائن رسم](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing) بأبعاد معينة.
+1. تعيين [حدود](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/graph/properties/border) لكائن الرسم.
+1. إضافة كائن [رسم](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/graph) إلى مجموعة الفقرات في الصفحة.
 1. حفظ ملف PDF الخاص بنا.
 
 ```csharp

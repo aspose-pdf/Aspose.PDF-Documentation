@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Les signets vous donnent la possibilité de suivre/lier à une page spécifique à l'intérieur du document PDF. La classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) dans l'[espace de noms Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) fournit une fonctionnalité qui vous permet de créer votre propre signet de manière sophistiquée mais intuitive dans un fichier PDF existant, à une page donnée ou sur toutes les pages.
+Les signets vous donnent la possibilité de suivre/lier à une page spécifique à l'intérieur du document PDF. La classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/PdfContentEditor) dans l'[espace de noms Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) fournit une fonctionnalité qui vous permet de créer votre propre signet de manière sophistiquée mais intuitive dans un fichier PDF existant, à une page donnée ou sur toutes les pages.
 
 ## Détails de mise en œuvre
 

@@ -85,8 +85,8 @@ Aspose.PDF может удалять вложения из PDF-файлов. В�
 
 Чтобы удалить все вложения, связанные с PDF-файлом:
 
-1. Вызовите метод [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) коллекции [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection).
-1. Сохраните обновленный файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Вызовите метод [Delete](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection/methods/delete) коллекции [EmbeddedFiles](https://reference.aspose.com/pdf/ru/net/aspose.pdf/embeddedfilecollection).
+1. Сохраните обновленный файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 Следующий фрагмент кода показывает, как удалить вложения из PDF-документа.
 

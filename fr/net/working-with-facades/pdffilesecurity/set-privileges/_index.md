@@ -77,7 +77,7 @@ draft: false
 
 ## Définir des privilèges sur un fichier PDF existant
 
-Pour définir les privilèges d'un fichier PDF, créez un objet [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) et appelez la méthode SetPrivilege. Vous pouvez spécifier les privilèges à l'aide de l'objet DocumentPrivilege, puis passer cet objet à la méthode SetPrivilege. L'extrait de code suivant vous montre comment définir les privilèges d'un fichier PDF.
+Pour définir les privilèges d'un fichier PDF, créez un objet [PdfFileSecurity](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesecurity) et appelez la méthode SetPrivilege. Vous pouvez spécifier les privilèges à l'aide de l'objet DocumentPrivilege, puis passer cet objet à la méthode SetPrivilege. L'extrait de code suivant vous montre comment définir les privilèges d'un fichier PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -79,11 +79,11 @@ sitemap:
 
 ## إضافة تعليق نصي حر في ملف PDF موجود (facades)
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) يتيح لك إضافة تعليقات من أنواع مختلفة في ملف PDF موجود. يمكنك استخدام الطريقة المناسبة لإضافة تعليق معين. على سبيل المثال، في مقتطف التعليمات البرمجية التالي، استخدمنا [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) لإضافة تعليق من نوع [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation).
+[PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) يتيح لك إضافة تعليقات من أنواع مختلفة في ملف PDF موجود. يمكنك استخدام الطريقة المناسبة لإضافة تعليق معين. على سبيل المثال، في مقتطف التعليمات البرمجية التالي، استخدمنا [CreateFreeText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) لإضافة تعليق من نوع [FreeText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/freetextannotation).
 
-يمكن إضافة أي نوع من التعليقات إلى ملف PDF بنفس الطريقة. أولاً، تحتاج إلى إنشاء كائن من نوع [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). ثانيًا، يجب عليك إنشاء كائن Rectangle لتحديد منطقة التعليق.
+يمكن إضافة أي نوع من التعليقات إلى ملف PDF بنفس الطريقة. أولاً، تحتاج إلى إنشاء كائن من نوع [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.facade/bindpdf/methods/3). ثانيًا، يجب عليك إنشاء كائن Rectangle لتحديد منطقة التعليق.
 
-بعد ذلك، يمكنك استدعاء [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) لإضافة تعليق [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation)، ثم استخدم [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لحفظ ملف PDF المحدث.
+بعد ذلك، يمكنك استدعاء [CreateFreeText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) لإضافة تعليق [FreeText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/freetextannotation)، ثم استخدم [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save) لحفظ ملف PDF المحدث.
 
 مقتطف التعليمات البرمجية التالي يوضح لك كيفية إضافة تعليق نصي حر في ملف PDF.
 
@@ -160,7 +160,7 @@ private static void AddFreeTextAnnotation()
 
 ## إضافة تعليق نصي في ملف PDF موجود (facades)
 
-في هذا المثال أيضًا، تحتاج إلى إنشاء كائن من نوع [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). ثانيًا، يجب عليك إنشاء كائن Rectangle لتحديد منطقة التعليق. بعد ذلك، يمكنك استدعاء [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) لإضافة تعليق FreeText، وإنشاء عنوان لتعليقاتك، ورقم الصفحة التي يقع عليها التعليق.
+في هذا المثال أيضًا، تحتاج إلى إنشاء كائن من نوع [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) وربط ملف PDF المدخل باستخدام [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.facade/bindpdf/methods/3). ثانيًا، يجب عليك إنشاء كائن Rectangle لتحديد منطقة التعليق. بعد ذلك، يمكنك استدعاء [CreateFreeText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) لإضافة تعليق FreeText، وإنشاء عنوان لتعليقاتك، ورقم الصفحة التي يقع عليها التعليق.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

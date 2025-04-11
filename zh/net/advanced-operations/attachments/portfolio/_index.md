@@ -81,7 +81,7 @@ sitemap:
 
 ## 如何创建 PDF 投资组合
 
-Aspose.PDF 允许使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类创建 PDF 投资组合文档。在使用 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 类获取文件后，将文件添加到 Document.Collection 对象中。当文件添加完成后，使用 Document 类的 Save 方法保存投资组合文档。
+Aspose.PDF 允许使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类创建 PDF 投资组合文档。在使用 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 类获取文件后，将文件添加到 Document.Collection 对象中。当文件添加完成后，使用 Document 类的 Save 方法保存投资组合文档。
 
 以下示例使用 Microsoft Excel 文件、Word 文档和图像文件创建 PDF 投资组合。
 
@@ -131,7 +131,7 @@ private static void CreatePortfolio()
 
 PDF 投资组合允许您将来自多种来源的内容（例如 PDF、Word、Excel、JPEG 文件）汇集到一个统一的容器中。原始文件保留其各自的身份，但被组装成一个 PDF 投资组合文件。用户可以独立于其他组件文件打开、阅读、编辑和格式化每个组件文件。
 
-Aspose.PDF 允许使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类创建 PDF 投资组合文档。它还提供从 PDF 投资组合中提取文件的能力。
+Aspose.PDF 允许使用 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类创建 PDF 投资组合文档。它还提供从 PDF 投资组合中提取文件的能力。
 
 以下代码片段展示了从 PDF 投资组合中提取文件的步骤。
 

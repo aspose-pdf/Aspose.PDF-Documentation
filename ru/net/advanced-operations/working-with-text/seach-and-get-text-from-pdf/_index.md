@@ -82,7 +82,7 @@ sitemap:
 
 ## Поиск и получение текста со всех страниц PDF-документа
 
-Класс [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber) позволяет находить текст, соответствующий определенной фразе, со всех страниц PDF-документа. Чтобы искать текст по всему документу, необходимо вызвать метод Accept коллекции Pages. Метод [Accept](https://reference.aspose.com/pdf/net/aspose.pdf.page/accept/methods/3) принимает объект TextFragmentAbsorber в качестве параметра, который возвращает коллекцию объектов TextFragment. Вы можете пройтись по всем фрагментам и получить их свойства, такие как Text, Position (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor и т.д.
+Класс [TextFragmentAbsorber](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textfragmentabsorber) позволяет находить текст, соответствующий определенной фразе, со всех страниц PDF-документа. Чтобы искать текст по всему документу, необходимо вызвать метод Accept коллекции Pages. Метод [Accept](https://reference.aspose.com/pdf/ru/net/aspose.pdf.page/accept/methods/3) принимает объект TextFragmentAbsorber в качестве параметра, который возвращает коллекцию объектов TextFragment. Вы можете пройтись по всем фрагментам и получить их свойства, такие как Text, Position (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor и т.д.
 
 Следующий фрагмент кода показывает, как искать текст со всех страниц.
 

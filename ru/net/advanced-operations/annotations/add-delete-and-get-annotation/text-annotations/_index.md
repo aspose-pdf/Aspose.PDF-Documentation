@@ -85,13 +85,13 @@ sitemap:
 
 Аннотация текста — это аннотация, прикрепленная к конкретному месту в PDF-документе. Когда она закрыта, аннотация отображается как значок; когда открыта, она должна отображать всплывающее окно с текстом заметки в шрифте и размере, выбранных читателем.
 
-Аннотации содержатся в коллекции [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) конкретной страницы. Эта коллекция содержит аннотации только для этой отдельной страницы; каждая страница имеет свою собственную коллекцию аннотаций.
+Аннотации содержатся в коллекции [Annotations](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations) конкретной страницы. Эта коллекция содержит аннотации только для этой отдельной страницы; каждая страница имеет свою собственную коллекцию аннотаций.
 
-Чтобы добавить аннотацию на конкретную страницу, добавьте ее в коллекцию аннотаций этой страницы с помощью метода [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add).
+Чтобы добавить аннотацию на конкретную страницу, добавьте ее в коллекцию аннотаций этой страницы с помощью метода [Add](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationcollection/methods/add).
 
 1. Сначала создайте аннотацию, которую вы хотите добавить в PDF.
 1. Затем откройте входной PDF.
-1. Добавьте аннотацию в коллекцию аннотаций объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. Добавьте аннотацию в коллекцию аннотаций объекта [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page).
 
 Следующий фрагмент кода показывает, как добавить аннотацию на страницу PDF.
 
@@ -136,7 +136,7 @@ private static void AddTextAnnotationToPdf()
 
 У нее не должно быть собственного потока внешнего вида или связанных действий и она должна быть идентифицирована по записи Popup в словаре аннотации родителя.
 
-Следующий фрагмент кода показывает, как добавить [всплывающую аннотацию](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) на страницу PDF, используя пример добавления родительской [линейной аннотации](/pdf/ru/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
+Следующий фрагмент кода показывает, как добавить [всплывающую аннотацию](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/popupannotation) на страницу PDF, используя пример добавления родительской [линейной аннотации](/pdf/ru/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void AddLineAnnotation()
 
 ## Как добавить (или создать) новую свободную текстовую аннотацию
 
-Свободная текстовая аннотация отображает текст непосредственно на странице. Метод [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) позволяет создавать этот тип аннотации. В следующем фрагменте мы добавляем свободную текстовую аннотацию над первым вхождением строки.
+Свободная текстовая аннотация отображает текст непосредственно на странице. Метод [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) позволяет создавать этот тип аннотации. В следующем фрагменте мы добавляем свободную текстовую аннотацию над первым вхождением строки.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -216,7 +216,7 @@ private static void AddFreeTextAnnotationDemo()
 
 ### Установить свойство Callout для FreeTextAnnotation
 
-Для более гибкой настройки аннотации в PDF-документе Aspose.PDF for .NET предоставляет свойство [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) класса [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation), которое позволяет указывать массив точек линии вызова. Следующий фрагмент кода показывает, как использовать эту функциональность:
+Для более гибкой настройки аннотации в PDF-документе Aspose.PDF for .NET предоставляет свойство [Callout](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/freetextannotation/properties/callout) класса [FreeTextAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/freetextannotation), которое позволяет указывать массив точек линии вызова. Следующий фрагмент кода показывает, как использовать эту функциональность:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -351,9 +351,9 @@ private static void AddInvisibleAnnotation()
 
 Эта часть рассматривает, как форматировать текст в свободной текстовой аннотации.
 
-Аннотации содержатся в коллекции [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). При добавлении [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) в PDF-документ вы можете указать информацию о форматировании, такую как шрифт, размер, цвет и так далее, используя класс [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index). Также возможно указать информацию о форматировании, используя свойство TextStyle. Более того, вы можете обновить форматирование любой FreeTextAnnotation, уже находящейся в PDF-документе.
+Аннотации содержатся в коллекции [AnnotationCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationcollection) объекта [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page). При добавлении [FreeTextAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/freetextannotation) в PDF-документ вы можете указать информацию о форматировании, такую как шрифт, размер, цвет и так далее, используя класс [DefaultAppearance](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/defaultappearance/methods/index). Также возможно указать информацию о форматировании, используя свойство TextStyle. Более того, вы можете обновить форматирование любой FreeTextAnnotation, уже находящейся в PDF-документе.
 
-Класс [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) поддерживает работу с записью стиля по умолчанию. Этот класс позволяет установить цвет, размер шрифта и имя шрифта:
+Класс [TextStyle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/textstyle) поддерживает работу с записью стиля по умолчанию. Этот класс позволяет установить цвет, размер шрифта и имя шрифта:
 
 - Свойство FontName получает или устанавливает имя шрифта (строка).
 - Свойство FontSize получает и устанавливает размер текста по умолчанию (двойное).
@@ -434,7 +434,7 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
 
 ### Зачеркнуть слова с помощью StrikeOutAnnotation
 
-Aspose.PDF for .NET позволяет добавлять, удалять и обновлять аннотации в PDF-документах. Один из классов также позволяет зачеркивать аннотации. Это полезно, когда вы хотите зачеркивать один или несколько фрагментов текста в документе. Аннотации хранятся в коллекции [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Класс с именем [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) может быть использован для добавления зачеркивающих аннотаций в PDF-документ.
+Aspose.PDF for .NET позволяет добавлять, удалять и обновлять аннотации в PDF-документах. Один из классов также позволяет зачеркивать аннотации. Это полезно, когда вы хотите зачеркивать один или несколько фрагментов текста в документе. Аннотации хранятся в коллекции [AnnotationCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationcollection) объекта [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page). Класс с именем [StrikeOutAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/strikeoutannotation) может быть использован для добавления зачеркивающих аннотаций в PDF-документ.
 
 Чтобы зачеркивать определенный TextFragment:
 
@@ -502,7 +502,7 @@ private void StrikeOutTextInDocument()
 
 ## Удалить все аннотации со страницы PDF-файла
 
-Коллекция [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) содержит все аннотации для этой конкретной страницы. Чтобы удалить все аннотации со страницы, вызовите метод *Delete* коллекции AnnotationCollectoin.
+Коллекция [AnnotationCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationcollection) объекта [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) содержит все аннотации для этой конкретной страницы. Чтобы удалить все аннотации со страницы, вызовите метод *Delete* коллекции AnnotationCollectoin.
 
 Следующий фрагмент кода показывает, как удалить все аннотации с определенной страницы.
 
@@ -536,7 +536,7 @@ private static void DeleteAllAnnotationsFromPage()
 
 Aspose.PDF позволяет вам удалить конкретную аннотацию из PDF-файла. Эта тема объясняет, как это сделать.
 
-Чтобы удалить конкретную аннотацию из PDF, вызовите метод Delete коллекции [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). Эта коллекция принадлежит объекту [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Метод Delete требует индекс аннотации, которую вы хотите удалить. Затем сохраните обновленный PDF-файл. Следующий фрагмент кода показывает, как удалить конкретную аннотацию.
+Чтобы удалить конкретную аннотацию из PDF, вызовите метод Delete коллекции [AnnotationCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). Эта коллекция принадлежит объекту [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page). Метод Delete требует индекс аннотации, которую вы хотите удалить. Затем сохраните обновленный PDF-файл. Следующий фрагмент кода показывает, как удалить конкретную аннотацию.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -559,7 +559,7 @@ private static void DeleteParticularAnnotation()
 
 ## Получить все аннотации со страницы PDF-документа
 
-Aspose.PDF позволяет вам получать аннотации из всего документа или с заданной страницы. Чтобы получить все аннотации со страницы в PDF-документе, пройдите по коллекции [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) ресурсов желаемой страницы. Следующий фрагмент кода показывает, как получить все аннотации страницы.
+Aspose.PDF позволяет вам получать аннотации из всего документа или с заданной страницы. Чтобы получить все аннотации со страницы в PDF-документе, пройдите по коллекции [AnnotationCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationcollection) ресурсов желаемой страницы. Следующий фрагмент кода показывает, как получить все аннотации страницы.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -587,7 +587,7 @@ private static void GetAllAnnotationsFromPage()
 
 ## Получить конкретную аннотацию из PDF-файла
 
-Аннотации связаны с отдельными страницами и хранятся в коллекции [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Чтобы получить конкретную аннотацию, укажите ее индекс. Это возвращает объект [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation), который необходимо привести к конкретному типу аннотации, например [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). Следующий фрагмент кода показывает, как получить конкретную аннотацию и ее свойства.
+Аннотации связаны с отдельными страницами и хранятся в коллекции [AnnotationCOllection](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotationcollection) объекта [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page). Чтобы получить конкретную аннотацию, укажите ее индекс. Это возвращает объект [Annotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/annotation), который необходимо привести к конкретному типу аннотации, например [TextAnnotation](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/textannotation). Следующий фрагмент кода показывает, как получить конкретную аннотацию и ее свойства.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -612,7 +612,7 @@ private static void GetParticularAnnotation()
 
 ## Получить ресурс аннотации
 
-Aspose.PDF позволяет вам получить ресурс аннотации из всего документа или с заданной страницы. Следующий фрагмент кода показывает, как получить ресурс аннотации в виде объекта [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) входного PDF-файла.
+Aspose.PDF позволяет вам получить ресурс аннотации из всего документа или с заданной страницы. Следующий фрагмент кода показывает, как получить ресурс аннотации в виде объекта [FileSpecification](https://reference.aspose.com/pdf/ru/net/aspose.pdf/filespecification) входного PDF-файла.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

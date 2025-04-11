@@ -83,9 +83,9 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Obtener Marcadores
 
-La colección [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) del objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) contiene todos los marcadores de un archivo PDF. Este artículo explica cómo obtener marcadores de un archivo PDF y cómo saber en qué página se encuentra un marcador en particular.
+La colección [OutlineCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/outlinecollection) del objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) contiene todos los marcadores de un archivo PDF. Este artículo explica cómo obtener marcadores de un archivo PDF y cómo saber en qué página se encuentra un marcador en particular.
 
-Para obtener los marcadores, recorre la colección [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) y obtén cada marcador en la OutlineItemCollection. La OutlineItemCollection proporciona acceso a todos los atributos del marcador. El siguiente fragmento de código te muestra cómo obtener marcadores del archivo PDF.
+Para obtener los marcadores, recorre la colección [OutlineCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/outlinecollection) y obtén cada marcador en la OutlineItemCollection. La OutlineItemCollection proporciona acceso a todos los atributos del marcador. El siguiente fragmento de código te muestra cómo obtener marcadores del archivo PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -213,7 +213,7 @@ private static void GetBookmarkPageNumber()
 
 ## Obtener Marcadores Hijos de un Documento PDF
 
-Los marcadores pueden organizarse en una estructura jerárquica, con padres e hijos. Para obtener todos los marcadores, recorre las colecciones Outlines del objeto Document. Sin embargo, para obtener también los marcadores hijos, recorre todos los marcadores en cada objeto [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) obtenido en el primer bucle. Los siguientes fragmentos de código muestran cómo obtener marcadores hijos de un documento PDF.
+Los marcadores pueden organizarse en una estructura jerárquica, con padres e hijos. Para obtener todos los marcadores, recorre las colecciones Outlines del objeto Document. Sin embargo, para obtener también los marcadores hijos, recorre todos los marcadores en cada objeto [OutlineItemCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/outlineitemcollection) obtenido en el primer bucle. Los siguientes fragmentos de código muestran cómo obtener marcadores hijos de un documento PDF.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -294,7 +294,7 @@ private static void GetChildBookmarks()
 
 ## Actualizar Marcadores en un Documento PDF
 
-Para actualizar un marcador en un archivo PDF, primero, obtén el marcador particular de la colección OutlineColletion del objeto Document especificando el índice del marcador. Una vez que hayas recuperado el marcador en el objeto [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), puedes actualizar sus propiedades y luego guardar el archivo PDF actualizado utilizando el método Save. Los siguientes fragmentos de código muestran cómo actualizar marcadores en un documento PDF.
+Para actualizar un marcador en un archivo PDF, primero, obtén el marcador particular de la colección OutlineColletion del objeto Document especificando el índice del marcador. Una vez que hayas recuperado el marcador en el objeto [OutlineItemCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/outlineitemcollection), puedes actualizar sus propiedades y luego guardar el archivo PDF actualizado utilizando el método Save. Los siguientes fragmentos de código muestran cómo actualizar marcadores en un documento PDF.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -350,7 +350,7 @@ private static void UpdateBookmarks()
 Para actualizar un marcador hijo:
 
 1. Recupera el marcador hijo que deseas actualizar del archivo PDF obteniendo primero el marcador padre y luego el marcador hijo utilizando los valores de índice apropiados.
-1. Guarda el archivo PDF actualizado utilizando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1).
+1. Guarda el archivo PDF actualizado utilizando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf.document/save/methods/1).
 
 {{% alert color="primary" %}}
 
@@ -417,7 +417,7 @@ private static void UpdateChildBookmarks()
 
 ## Marcadores Expandido al Ver el Documento
 
-Los marcadores se mantienen en la colección [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) del objeto Document, que a su vez está en la colección [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Sin embargo, podemos tener el requisito de que todos los marcadores estén expandidos al ver el archivo PDF.
+Los marcadores se mantienen en la colección [OutlineItemCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/outlineitemcollection) del objeto Document, que a su vez está en la colección [OutlineCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/outlinecollection). Sin embargo, podemos tener el requisito de que todos los marcadores estén expandidos al ver el archivo PDF.
 
 Para cumplir con este requisito, podemos establecer el estado de apertura para cada elemento de contorno/marcador como Abierto. El siguiente fragmento de código te muestra cómo establecer el estado de apertura para cada marcador como expandido en un documento PDF.
 

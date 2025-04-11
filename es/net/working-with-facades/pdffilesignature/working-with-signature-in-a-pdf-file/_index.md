@@ -158,7 +158,7 @@ private static void ExtractSignatureImage()
 
 ## Suprimir Ubicación y Razón
 
-La funcionalidad de Aspose.PDF permite una configuración flexible para la instancia de firma digital. La clase [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) proporciona la capacidad de firmar un archivo PDF. La implementación del método Sign permite firmar el PDF y pasar el objeto de firma particular a esta clase. El método Sign contiene un conjunto de atributos para la personalización de la firma digital de salida. En caso de que necesites suprimir algunos atributos de texto de la firma resultante, puedes dejarlos vacíos. El siguiente fragmento de código demuestra cómo suprimir las dos filas de Ubicación y Razón del bloque de firma:
+La funcionalidad de Aspose.PDF permite una configuración flexible para la instancia de firma digital. La clase [PdfFileSignature](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesignature) proporciona la capacidad de firmar un archivo PDF. La implementación del método Sign permite firmar el PDF y pasar el objeto de firma particular a esta clase. El método Sign contiene un conjunto de atributos para la personalización de la firma digital de salida. En caso de que necesites suprimir algunos atributos de texto de la firma resultante, puedes dejarlos vacíos. El siguiente fragmento de código demuestra cómo suprimir las dos filas de Ubicación y Razón del bloque de firma:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void SupressLocationReason()
 
 ## Características de Personalización para Firma Digital
 
-Aspose.PDF for .NET permite características de personalización para una firma digital. El método Sign de la clase [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) se implementa con 6 sobrecargas para tu uso cómodo. Por ejemplo, puedes configurar la firma resultante solo mediante la instancia de la clase SignatureCustomAppearance y los valores de sus propiedades. El siguiente fragmento de código demuestra cómo ocultar la leyenda "Firmado digitalmente por" de la firma digital de salida de tu PDF.
+Aspose.PDF for .NET permite características de personalización para una firma digital. El método Sign de la clase [SignatureCustomAppearance](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturecustomappearance) se implementa con 6 sobrecargas para tu uso cómodo. Por ejemplo, puedes configurar la firma resultante solo mediante la instancia de la clase SignatureCustomAppearance y los valores de sus propiedades. El siguiente fragmento de código demuestra cómo ocultar la leyenda "Firmado digitalmente por" de la firma digital de salida de tu PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,7 +233,7 @@ Usando la API Aspose.PDF for .NET, puedes firmar un archivo PDF utilizando cualq
 - PKCS#7.
 - PKCS#12.
 
-Cada una de las firmas proporcionadas contiene un conjunto de propiedades de configuración implementadas para tu conveniencia (localización, formato de fecha y hora, familia de fuentes, etc.). La clase [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) proporciona la funcionalidad correspondiente. El siguiente fragmento de código demuestra cómo cambiar el idioma en el texto de la firma digital:
+Cada una de las firmas proporcionadas contiene un conjunto de propiedades de configuración implementadas para tu conveniencia (localización, formato de fecha y hora, familia de fuentes, etc.). La clase [SignatureCustomAppearance](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturecustomappearance) proporciona la funcionalidad correspondiente. El siguiente fragmento de código demuestra cómo cambiar el idioma en el texto de la firma digital:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "494",
+    "wordcount": "917",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/crop-pages/"
     },
-    "dateModified": "2024-11-26",
+    "dateModified": "2025-04-11",
     "description": "您可以使用 Aspose.PDF for .NET 获取页面属性，例如宽度、高度、出血框、裁剪框和修整框。"
 }
 </script>
@@ -83,16 +83,16 @@ sitemap:
 每个 PDF 文件中的页面都有多个属性，例如宽度、高度、出血框、裁剪框和修整框。Aspose.PDF 允许您访问这些属性。
 
 - **媒体框**：媒体框是最大的页面框。它对应于在将文档打印为 PostScript 或 PDF 时选择的页面大小（例如 A4、A5、美国信纸等）。换句话说，媒体框决定了 PDF 文档显示或打印的介质的物理大小。
-- **出血框**：如果文档有出血，PDF 也将有出血框。出血是指超出页面边缘的颜色（或艺术作品）量。它用于确保在打印文档并裁剪到大小（“修整”）时，墨水会一直延伸到页面边缘。即使页面裁剪不当 - 稍微偏离修整标记 - 页面上也不会出现白边。
+- **出血框**：如果文档有出血，PDF 也将有一个出血框。出血是指超出页面边缘的颜色（或艺术作品）量。它用于确保在文档打印并裁剪到大小（“修整”）时，墨水会延伸到页面的边缘。即使页面被错误裁剪 - 稍微偏离修整标记 - 页面上也不会出现白边。
 - **修整框**：修整框指的是文档在打印和修整后最终的大小。
-- **艺术框**：艺术框是围绕文档中实际内容绘制的框。此页面框在将 PDF 文档导入其他应用程序时使用。
+- **艺术框**：艺术框是绘制在文档页面实际内容周围的框。此页面框在将 PDF 文档导入其他应用程序时使用。
 - **裁剪框**：裁剪框是您的 PDF 文档在 Adobe Acrobat 中显示的“页面”大小。在正常视图中，只有裁剪框的内容在 Adobe Acrobat 中显示。有关这些属性的详细描述，请阅读 Adobe.Pdf 规范，特别是 10.10.1 页面边界。
-- **Page.Rect**：媒体框和出血框的交集（通常可见的矩形）。下图说明了这些属性。
+- **Page.Rect**：媒体框和裁剪框的交集（通常可见的矩形）。下图说明了这些属性。
 有关更多详细信息，请访问 [此页面](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)。
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
-下面的代码片段演示了如何裁剪页面：
+下面的代码片段展示了如何裁剪页面：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -124,6 +124,240 @@ private static void CropPage()
 在此示例中，我们使用了一个示例文件 [这里](crop_page.pdf)。最初我们的页面看起来如图 1 所示。
 
 更改后，页面将看起来像图 2。
+
+### 修整页面周围的白边
+
+例如，您可以使用任何可以加载位图的图形库修整页面周围的白边：
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void TrimWhiteSpaceAroundPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf"))
+    {
+        var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
+
+        using (var imageStr = new MemoryStream())
+        {
+            // Convert page to PNG image
+            device.Process(document.Pages[1], imageStr);
+            using (var pageBitmap = new Bitmap(imageStr))
+            {
+                document.Pages[1].CropBox = GetNewCropBox(pageBitmap, document.Pages[1].CropBox);
+            }
+        }
+        // Save PDF document
+        document.Save(dataDir + "TrimWhiteSpaceAroundPage_out.pdf");
+    }
+}
+
+// Determine white areas with System.Drawing
+private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.Rectangle prevCropBox)
+{
+    var imageBitmapData = pageBitmap.LockBits(new Rectangle(0, 0, pageBitmap.Width, pageBitmap.Height),
+                            ImageLockMode.ReadOnly, PixelFormat.Format32bppRgb);
+
+    int toHeight = pageBitmap.Height;
+    int toWidth = pageBitmap.Width;
+
+    int? leftNonWhite = null;
+    int? rightNonWhite = null;
+    int? topNonWhite = null;
+    int? bottomNonWhite = null;
+
+    var imageRowBytes = new byte[imageBitmapData.Stride];
+    for (int y = 0; y < toHeight; y++)
+    {
+        // Copy the row data to byte array
+        if (IntPtr.Size == 4)
+        {
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt32() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+        }
+        else
+        {
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt64() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+        }
+
+        int? leftNonWhite_row = null;
+        int? rightNonWhite_row = null;
+
+        for (int x = 0; x < toWidth; x++)
+        {
+            if (imageRowBytes[x * 4] != 255
+                || imageRowBytes[x * 4 + 1] != 255
+                || imageRowBytes[x * 4 + 2] != 255)
+            {
+                if (leftNonWhite_row == null)
+                {
+                    leftNonWhite_row = x;
+                }
+
+                rightNonWhite_row = x;
+            }
+        }
+
+        if (leftNonWhite_row != null || rightNonWhite_row != null)
+        {
+            if (topNonWhite == null)
+            {
+                topNonWhite = y;
+            }
+
+            bottomNonWhite = y;
+        }
+
+        if (leftNonWhite_row != null
+            && (leftNonWhite == null || leftNonWhite > leftNonWhite_row))
+        {
+            leftNonWhite = leftNonWhite_row;
+        }
+        if (rightNonWhite_row != null
+            && (rightNonWhite == null || rightNonWhite < rightNonWhite_row))
+        {
+            rightNonWhite = rightNonWhite_row;
+        }
+    }
+
+    leftNonWhite = leftNonWhite ?? 0;
+    rightNonWhite = rightNonWhite ?? toWidth;
+    topNonWhite = topNonWhite ?? 0;
+    bottomNonWhite = bottomNonWhite ?? toHeight;
+
+    double xCoef = prevCropBox.Width / toWidth;
+    double yCoef = prevCropBox.Height / toHeight;
+
+    pageBitmap.UnlockBits(imageBitmapData);
+    
+    // Create crop box with correction to previous crop box
+    return
+        new Aspose.Pdf.Rectangle(
+            leftNonWhite.Value * xCoef + prevCropBox.LLX,
+            (toHeight * yCoef + prevCropBox.LLY) - bottomNonWhite.Value * yCoef,
+            rightNonWhite.Value * xCoef + prevCropBox.LLX,
+            (toHeight * yCoef + prevCropBox.LLY) - topNonWhite.Value * yCoef
+        );
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void TrimWhiteSpaceAroundPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf");
+    var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
+
+    using var imageStr = new MemoryStream();
+
+    // Convert page to PNG image
+    device.Process(document.Pages[1], imageStr);
+    using var pageBitmap = new Bitmap(imageStr);
+    document.Pages[1].CropBox = GetNewCropBox(pageBitmap, document.Pages[1].CropBox);
+
+    // Save PDF document
+    document.Save(dataDir + "TrimWhiteSpaceAroundPage_out.pdf");
+}
+
+// Determine white areas with System.Drawing
+private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.Rectangle prevCropBox)
+{
+    var imageBitmapData = pageBitmap.LockBits(new Rectangle(0, 0, pageBitmap.Width, pageBitmap.Height),
+                            ImageLockMode.ReadOnly, PixelFormat.Format32bppRgb);
+
+    int toHeight = pageBitmap.Height;
+    int toWidth = pageBitmap.Width;
+
+    int? leftNonWhite = null;
+    int? rightNonWhite = null;
+    int? topNonWhite = null;
+    int? bottomNonWhite = null;
+
+    var imageRowBytes = new byte[imageBitmapData.Stride];
+    for (int y = 0; y < toHeight; y++)
+    {
+        // Copy the row data to byte array
+        if (IntPtr.Size == 4)
+        {
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt32() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+        }
+        else
+        {
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt64() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+        }
+
+        int? leftNonWhite_row = null;
+        int? rightNonWhite_row = null;
+
+        for (int x = 0; x < toWidth; x++)
+        {
+            if (imageRowBytes[x * 4] != 255
+                || imageRowBytes[x * 4 + 1] != 255
+                || imageRowBytes[x * 4 + 2] != 255)
+            {
+                if (leftNonWhite_row == null)
+                {
+                    leftNonWhite_row = x;
+                }
+
+                rightNonWhite_row = x;
+            }
+        }
+
+        if (leftNonWhite_row != null || rightNonWhite_row != null)
+        {
+            if (topNonWhite == null)
+            {
+                topNonWhite = y;
+            }
+
+            bottomNonWhite = y;
+        }
+
+        if (leftNonWhite_row != null
+            && (leftNonWhite == null || leftNonWhite > leftNonWhite_row))
+        {
+            leftNonWhite = leftNonWhite_row;
+        }
+        if (rightNonWhite_row != null
+            && (rightNonWhite == null || rightNonWhite < rightNonWhite_row))
+        {
+            rightNonWhite = rightNonWhite_row;
+        }
+    }
+
+    leftNonWhite = leftNonWhite ?? 0;
+    rightNonWhite = rightNonWhite ?? toWidth;
+    topNonWhite = topNonWhite ?? 0;
+    bottomNonWhite = bottomNonWhite ?? toHeight;
+
+    double xCoef = prevCropBox.Width / toWidth;
+    double yCoef = prevCropBox.Height / toHeight;
+
+    pageBitmap.UnlockBits(imageBitmapData);
+    
+    // Create crop box with correction to previous crop box
+    return
+        new Aspose.Pdf.Rectangle(
+            leftNonWhite.Value * xCoef + prevCropBox.LLX,
+            (toHeight * yCoef + prevCropBox.LLY) - bottomNonWhite.Value * yCoef,
+            rightNonWhite.Value * xCoef + prevCropBox.LLX,
+            (toHeight * yCoef + prevCropBox.LLY) - topNonWhite.Value * yCoef
+        );
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

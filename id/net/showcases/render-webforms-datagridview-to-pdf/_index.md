@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "266",
+    "wordcount": "224",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/render-webforms-datagridview-to-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+    "dateModified": "2025-04-11",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
@@ -110,7 +110,7 @@ Ada dua alat Aspose yang dapat digunakan untuk merender HTML ke PDF:
 
 ## Berkas Sumber
 
-Dalam contoh ini kami memiliki 2 laporan demo.
+Anda dapat menemukan kode untuk seluruh proyek [di sini](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Visual%20Studio/Aspose.Pdf.GridViewExport).
 
 - _Default.aspx_ mendemonstrasikan ekspor ke PDF menggunakan Aspose.PDF.
 - _Report2.aspx_ mendemonstrasikan ekspor ke PDF menggunakan kontrol Aspose Export GridView (berbasis Aspose.PDF).

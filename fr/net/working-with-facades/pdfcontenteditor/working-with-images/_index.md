@@ -76,7 +76,7 @@ lastmod: "2021-06-24"
 
 ## Supprimer des images d'une page particulière d'un PDF (Façades)
 
-Pour supprimer les images d'une page particulière, vous devez appeler la méthode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) avec les paramètres pageNumber et index. Le paramètre index représente un tableau d'entiers – les index des images à supprimer. Tout d'abord, vous devez créer un objet de la classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) puis appeler la méthode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). Après cela, vous pouvez enregistrer le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Pour supprimer les images d'une page particulière, vous devez appeler la méthode [DeleteImage](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) avec les paramètres pageNumber et index. Le paramètre index représente un tableau d'entiers – les index des images à supprimer. Tout d'abord, vous devez créer un objet de la classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor) puis appeler la méthode [DeleteImage](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1). Après cela, vous pouvez enregistrer le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/save/index).
 
 Le code suivant vous montre comment supprimer des images d'une page particulière d'un PDF.
 
@@ -123,7 +123,7 @@ private static void DeleteImage()
 
 ## Supprimer toutes les images d'un fichier PDF (Façades)
 
-Toutes les images peuvent être supprimées d'un fichier PDF en utilisant la méthode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) de la classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Appelez la méthode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – la surcharge sans aucun paramètre – pour supprimer toutes les images, puis enregistrez le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index).
+Toutes les images peuvent être supprimées d'un fichier PDF en utilisant la méthode [DeleteImage](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) de la classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor). Appelez la méthode [DeleteImage](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.pdfcontenteditor/deleteimage/methods/1) – la surcharge sans aucun paramètre – pour supprimer toutes les images, puis enregistrez le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/save/index).
 
 Le code suivant vous montre comment supprimer toutes les images d'un fichier PDF.
 
@@ -170,7 +170,7 @@ private static void DeleteImages()
 
 ## Remplacer une image dans un fichier PDF (Façades)
 
-la [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) vous permet de remplacer votre image dans un fichier PDF, appelez pour cela la méthode [ReplaceImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) et enregistrez le résultat.
+la [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor) vous permet de remplacer votre image dans un fichier PDF, appelez pour cela la méthode [ReplaceImage](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) et enregistrez le résultat.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

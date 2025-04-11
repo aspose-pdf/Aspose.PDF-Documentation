@@ -77,7 +77,7 @@ draft: false
 
 ## 从现有 PDF 文件获取 PDF 页面属性
 
-[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 允许您处理 PDF 文件的单个页面。它帮助您获取单个页面的属性，如不同的页面框大小、页面旋转、页面缩放等。为了获取这些属性，您需要创建 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 对象并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入 PDF 文件。之后，您可以使用不同的方法获取页面属性，如 [GetPageRotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpagerotation)、[GetPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpages)、[GetPageBoxSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpageboxsize) 等。
+[PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 允许您处理 PDF 文件的单个页面。它帮助您获取单个页面的属性，如不同的页面框大小、页面旋转、页面缩放等。为了获取这些属性，您需要创建 [PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 对象并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入 PDF 文件。之后，您可以使用不同的方法获取页面属性，如 [GetPageRotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/methods/getpagerotation)、[GetPages](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/methods/getpages)、[GetPageBoxSize](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor/methods/getpageboxsize) 等。
 
 以下代码片段演示了如何从现有 PDF 文件获取 PDF 页面属性。
 
@@ -108,7 +108,7 @@ private static void GetPdfPageProperties()
 
 ## 在现有 PDF 文件中设置 PDF 页面属性
 
-为了设置页面属性，如页面旋转、缩放或原点，您需要使用 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 类。该类提供了不同的方法和属性来设置这些页面属性。首先，您需要创建 [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入 PDF 文件。之后，您可以使用这些方法和属性来设置页面属性。最后，使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。
+为了设置页面属性，如页面旋转、缩放或原点，您需要使用 [PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 类。该类提供了不同的方法和属性来设置这些页面属性。首先，您需要创建 [PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入 PDF 文件。之后，您可以使用这些方法和属性来设置页面属性。最后，使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。
 
 以下代码片段演示了如何在现有 PDF 文件中设置 PDF 页面属性。
 
@@ -148,7 +148,7 @@ private static void SetPdfPageProperties()
 
 ## 调整 PDF 文件中特定页面的内容大小
 
-[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) 类的 ResizeContents 方法允许您调整 PDF 文件中页面内容的大小。[ContentsResizeParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/contentsresizeparameters) 类用于指定用于调整页面大小的参数，例如百分比或单位等的边距。您可以调整所有页面的大小，或使用 ResizeContents 方法指定要调整大小的页面数组。
+[PdfPageEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfpageeditor) 类的 ResizeContents 方法允许您调整 PDF 文件中页面内容的大小。[ContentsResizeParameters](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdffileeditor/contentsresizeparameters) 类用于指定用于调整页面大小的参数，例如百分比或单位等的边距。您可以调整所有页面的大小，或使用 ResizeContents 方法指定要调整大小的页面数组。
 
 以下代码片段演示了如何调整 PDF 文件中特定页面的内容大小。
 

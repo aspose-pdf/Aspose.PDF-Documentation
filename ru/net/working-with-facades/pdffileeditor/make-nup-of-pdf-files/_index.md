@@ -77,7 +77,7 @@ draft: false
 
 ## Создание NUp из PDF с использованием путей к файлам
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF файла и сохранить его в выходной PDF файл. Этот перегруз позволяет вам создать NUp, используя пути к файлам. Следующий фрагмент кода показывает, как создать NUP, используя пути к файлам.
+[MakeNUp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF файла и сохранить его в выходной PDF файл. Этот перегруз позволяет вам создать NUp, используя пути к файлам. Следующий фрагмент кода показывает, как создать NUP, используя пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeNupOfPdfUsingFilePaths()
 
 ## Создание NUp с использованием размера страницы и путей к файлам
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF файла и сохранить его в выходной PDF файл. Этот перегруз позволяет вам создать NUp, используя пути к файлам. Вы также можете установить размер страницы выходного PDF файла, используя этот перегруз. Следующий фрагмент кода показывает, как создать NUp, используя размер страницы и пути к файлам.
+[MakeNUp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF файла и сохранить его в выходной PDF файл. Этот перегруз позволяет вам создать NUp, используя пути к файлам. Вы также можете установить размер страницы выходного PDF файла, используя этот перегруз. Следующий фрагмент кода показывает, как создать NUp, используя размер страницы и пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeNupUsingPageSizeAndFilePaths()
 
 ## Создание NUp из PDF с использованием размера страницы, горизонтальных и вертикальных значений и путей к файлам
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF файла и сохранить его в выходной PDF файл. Этот перегруз позволяет вам создать NUp, используя пути к файлам. Вы также можете установить размер страницы выходного PDF файла и горизонтальное и вертикальное количество страниц на каждой выходной странице, используя этот перегруз. Следующий фрагмент кода показывает, как создать NUp, используя размер страницы, горизонтальные и вертикальные значения и пути к файлам.
+[MakeNUp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF файла и сохранить его в выходной PDF файл. Этот перегруз позволяет вам создать NUp, используя пути к файлам. Вы также можете установить размер страницы выходного PDF файла и горизонтальное и вертикальное количество страниц на каждой выходной странице, используя этот перегруз. Следующий фрагмент кода показывает, как создать NUp, используя размер страницы, горизонтальные и вертикальные значения и пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -128,7 +128,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFileP
 
 ## Создание NUp из PDF с использованием массива PDF файлов и путей к файлам
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из массива входных PDF файлов и сохранить их в один выходной PDF файл. Этот перегруз позволяет вам создать NUp, используя пути к файлам. Следующий фрагмент кода показывает, как создать NUp, используя массив PDF файлов и пути к файлам.
+[MakeNUp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из массива входных PDF файлов и сохранить их в один выходной PDF файл. Этот перегруз позволяет вам создать NUp, используя пути к файлам. Следующий фрагмент кода показывает, как создать NUp, используя массив PDF файлов и пути к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -149,7 +149,7 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
 
 ## Создание NUp из PDF с использованием потоков
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF потока и сохранить его в выходной PDF поток. Этот перегруз позволяет вам создать NUp, используя потоки вместо путей к файлам. Следующий фрагмент кода показывает, как создать NUp, используя потоки.
+[MakeNUp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF потока и сохранить его в выходной PDF поток. Этот перегруз позволяет вам создать NUp, используя потоки вместо путей к файлам. Следующий фрагмент кода показывает, как создать NUp, используя потоки.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -176,7 +176,7 @@ private static void MakeNupOfPdfUsingStreams()
 
 ## Создание NUp из PDF с использованием размера страницы и потоков
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF потока и сохранить его в выходной PDF поток. Этот перегруз позволяет вам создать NUp, используя потоки вместо путей к файлам. Вы также можете установить размер страницы выходного PDF потока, используя этот перегруз. Следующий фрагмент кода показывает, как создать NUp, используя размер страницы и потоки.
+[MakeNUp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF потока и сохранить его в выходной PDF поток. Этот перегруз позволяет вам создать NUp, используя потоки вместо путей к файлам. Вы также можете установить размер страницы выходного PDF потока, используя этот перегруз. Следующий фрагмент кода показывает, как создать NUp, используя размер страницы и потоки.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -200,7 +200,7 @@ private static void MakeNupOfPdfUsingPageSizeAndStreams()
 
 ## Создание NUp из PDF с использованием размера страницы, горизонтальных и вертикальных значений и потоков
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF потока и сохранить его в выходной PDF поток. Этот перегруз позволяет вам создать NUp, используя потоки вместо путей к файлам. Вы также можете установить размер страницы выходного PDF потока и горизонтальное и вертикальное количество страниц на каждой выходной странице, используя этот перегруз. Следующий фрагмент кода показывает, как создать NUp, используя размер страницы, горизонтальные и вертикальные значения и потоки.
+[MakeNUp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из входного PDF потока и сохранить его в выходной PDF поток. Этот перегруз позволяет вам создать NUp, используя потоки вместо путей к файлам. Вы также можете установить размер страницы выходного PDF потока и горизонтальное и вертикальное количество страниц на каждой выходной странице, используя этот перегруз. Следующий фрагмент кода показывает, как создать NUp, используя размер страницы, горизонтальные и вертикальные значения и потоки.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -224,7 +224,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStrea
 
 ## Создание NUp из PDF с использованием массива PDF файлов и потоков
 
-[MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из массива входных PDF потоков и сохранить их в один выходной PDF поток. Этот перегруз позволяет вам создать NUp, используя потоки вместо путей к файлам. Следующий фрагмент кода показывает, как создать NUp, используя массив PDF файлов с использованием потоков.
+[MakeNUp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) метод класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать NUp из массива входных PDF потоков и сохранить их в один выходной PDF поток. Этот перегруз позволяет вам создать NUp, используя потоки вместо путей к файлам. Следующий фрагмент кода показывает, как создать NUp, используя массив PDF файлов с использованием потоков.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

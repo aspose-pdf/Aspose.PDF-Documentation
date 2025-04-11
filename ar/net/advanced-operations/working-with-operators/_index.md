@@ -87,7 +87,7 @@ sitemap:
 
 ### تفاصيل التنفيذ
 
-يشرح هذا الموضوع كيفية استخدام المشغلين مع Aspose.PDF. يضيف المثال المختار صورة إلى ملف PDF لتوضيح المفهوم. لإضافة صورة في ملف PDF، هناك حاجة إلى مشغلين مختلفين. يستخدم هذا المثال [GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28)، [ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10)، [Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14)، و [GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26).
+يشرح هذا الموضوع كيفية استخدام المشغلين مع Aspose.PDF. يضيف المثال المختار صورة إلى ملف PDF لتوضيح المفهوم. لإضافة صورة في ملف PDF، هناك حاجة إلى مشغلين مختلفين. يستخدم هذا المثال [GSave](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ioperatorselector/visit/methods/28)، [ConcatenateMatrix](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ioperatorselector/visit/methods/10)، [Do](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ioperatorselector/visit/methods/14)، و [GRestore](https://reference.aspose.com/pdf/ar/net/aspose.pdf.ioperatorselector/visit/methods/26).
 
 - يقوم مشغل **GSave** بحفظ الحالة الرسومية الحالية لـ PDF.
 - يستخدم مشغل **ConcatenateMatrix** (دمج المصفوفة) لتحديد كيفية وضع الصورة على صفحة PDF.
@@ -96,7 +96,7 @@ sitemap:
 
 لإضافة صورة إلى ملف PDF:
 
-1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وافتح مستند PDF المدخل.
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) وافتح مستند PDF المدخل.
 1. احصل على الصفحة المحددة التي ستتم إضافة الصورة إليها.
 1. أضف الصورة إلى مجموعة موارد الصفحة.
 1. استخدم المشغلين لوضع الصورة على الصفحة:
@@ -235,7 +235,7 @@ private static void DrawXFormOnPage()
 
 ## إزالة كائنات الرسومات باستخدام فئات المشغلين
 
-توفر فئات المشغلين ميزات رائعة لمعالجة PDF. عندما يحتوي ملف PDF على رسومات لا يمكن إزالتها باستخدام طريقة [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) لفئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)، يمكن استخدام فئات المشغلين لإزالتها بدلاً من ذلك.
+توفر فئات المشغلين ميزات رائعة لمعالجة PDF. عندما يحتوي ملف PDF على رسومات لا يمكن إزالتها باستخدام طريقة [DeleteImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) لفئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor)، يمكن استخدام فئات المشغلين لإزالتها بدلاً من ذلك.
 
 تظهر مقتطفات الكود التالية كيفية إزالة الرسومات. يرجى ملاحظة أنه إذا كان ملف PDF يحتوي على تسميات نصية للرسومات، فقد تستمر في ملف PDF باستخدام هذه الطريقة. لذلك ابحث عن مشغلات الرسومات للحصول على طريقة بديلة لحذف مثل هذه الصور.
 

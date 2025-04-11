@@ -85,7 +85,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Creando PDF Etiquetado (Escenario Simple)
 
-Para crear elementos de estructura en un Documento PDF Etiquetado, Aspose.PDF ofrece métodos para crear elementos de estructura usando la interfaz [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). El siguiente fragmento de código muestra cómo crear un PDF etiquetado que contiene 2 elementos: encabezado y párrafo.
+Para crear elementos de estructura en un Documento PDF Etiquetado, Aspose.PDF ofrece métodos para crear elementos de estructura usando la interfaz [ITaggedContent](https://reference.aspose.com/pdf/es/net/aspose.pdf.tagged/itaggedcontent). El siguiente fragmento de código muestra cómo crear un PDF etiquetado que contiene 2 elementos: encabezado y párrafo.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -181,7 +181,7 @@ Obtendremos el siguiente documento después de la creación:
 ## Creando PDF Etiquetado con elementos anidados (Creando Árbol de Elementos de Estructura)
 
 En algunos casos, necesitamos crear una estructura más compleja, por ejemplo, colocar citas en un párrafo. 
-Para crear un árbol de elementos de estructura, debemos usar el método [AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild).
+Para crear un árbol de elementos de estructura, debemos usar el método [AppendChild](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/element/methods/appendchild).
 El siguiente fragmento de código muestra cómo crear un árbol de elementos de estructura de un Documento PDF Etiquetado:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -294,7 +294,7 @@ Obtendremos el siguiente documento después de la creación:
 
 ## Estilizando la Estructura del Texto
 
-Para estilizar la estructura del texto en un Documento PDF Etiquetado, Aspose.PDF ofrece las propiedades [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) y [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) de la Clase [StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate). El siguiente fragmento de código muestra cómo estilizar la estructura del texto en un Documento PDF Etiquetado:
+Para estilizar la estructura del texto en un Documento PDF Etiquetado, Aspose.PDF ofrece las propiedades [Font](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) y [ForegroundColor](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) de la Clase [StructureTextState](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/structuretextstate). El siguiente fragmento de código muestra cómo estilizar la estructura del texto en un Documento PDF Etiquetado:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -367,7 +367,7 @@ private static void AddStyle()
 
 ## Ilustrando Elementos de Estructura
 
-Para ilustrar elementos de estructura en un Documento PDF Etiquetado, Aspose.PDF ofrece la clase [IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement). El siguiente fragmento de código muestra cómo ilustrar elementos de estructura en un Documento PDF Etiquetado:
+Para ilustrar elementos de estructura en un Documento PDF Etiquetado, Aspose.PDF ofrece la clase [IllustrationElement](https://reference.aspose.com/pdf/es/net/aspose.pdf.logicalstructure/illustrationelement). El siguiente fragmento de código muestra cómo ilustrar elementos de estructura en un Documento PDF Etiquetado:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

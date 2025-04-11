@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-[ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) 方法允许您从 PDF 文件中提取注释。为了提取注释，您需要创建 [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 对象并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定 PDF 文件。之后，您需要创建一个要从 PDF 文件中提取的注释类型的枚举。
+[ExtractAnnotations](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) 方法允许您从 PDF 文件中提取注释。为了提取注释，您需要创建 [PdfAnnotationEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor) 对象并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定 PDF 文件。之后，您需要创建一个要从 PDF 文件中提取的注释类型的枚举。
 
-然后，您可以使用 [ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) 方法将注释提取到 ArrayList 中。之后，您可以遍历此列表并获取单个注释。最后，使用 [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 对象的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段向您展示如何从 PDF 文件中提取注释。
+然后，您可以使用 [ExtractAnnotations](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) 方法将注释提取到 ArrayList 中。之后，您可以遍历此列表并获取单个注释。最后，使用 [PdfAnnotationEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor) 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段向您展示如何从 PDF 文件中提取注释。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

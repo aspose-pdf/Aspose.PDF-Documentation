@@ -77,7 +77,7 @@ draft: false
 
 ## 在现有 PDF 文件中添加表单字段
 
-为了在现有 PDF 文件中添加表单字段，您需要使用 [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) 方法的 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 类。此方法要求您指定要添加的字段类型，以及字段的名称和位置。您需要创建一个 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 类的对象，使用 [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) 方法在 PDF 中添加新字段。此外，您可以使用 [SetFieldLimit](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) 方法指定字段中的字符数限制，最后使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) 方法保存更新后的 PDF 文件。以下代码片段演示了如何在现有 PDF 文件中添加表单字段。
+为了在现有 PDF 文件中添加表单字段，您需要使用 [AddField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/addfield/index) 方法的 [FormEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor) 类。此方法要求您指定要添加的字段类型，以及字段的名称和位置。您需要创建一个 [FormEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor) 类的对象，使用 [AddField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/addfield/index) 方法在 PDF 中添加新字段。此外，您可以使用 [SetFieldLimit](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) 方法指定字段中的字符数限制，最后使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/save/index) 方法保存更新后的 PDF 文件。以下代码片段演示了如何在现有 PDF 文件中添加表单字段。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -107,7 +107,7 @@ private static void AddField()
 
 ## 在现有 PDF 文件中添加提交按钮 URL
 
-[AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) 方法允许您在 PDF 文件中设置提交按钮的 URL。这是提交按钮被点击时数据发布的 URL。在我们的示例代码中，我们指定 URL、字段名称、要添加的页面编号以及按钮放置坐标。[AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) 方法需要提交按钮字段的名称和 URL。此方法由 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 类提供。以下代码片段演示了如何设置提交按钮 URL。
+[AddSubmitBtn](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) 方法允许您在 PDF 文件中设置提交按钮的 URL。这是提交按钮被点击时数据发布的 URL。在我们的示例代码中，我们指定 URL、字段名称、要添加的页面编号以及按钮放置坐标。[AddSubmitBtn](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) 方法需要提交按钮字段的名称和 URL。此方法由 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 类提供。以下代码片段演示了如何设置提交按钮 URL。
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -135,7 +135,7 @@ private static void AddField()
 
 ## 为按钮添加 JavaScript
 
-[AddFieldScript](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfieldscript) 方法允许您在 PDF 文件中的按钮上添加 JavaScript。此方法需要按钮的名称和 JavaScript。此方法由 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 类提供。以下代码片段演示了如何为按钮设置 JavaScript。
+[AddFieldScript](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/addfieldscript) 方法允许您在 PDF 文件中的按钮上添加 JavaScript。此方法需要按钮的名称和 JavaScript。此方法由 [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) 类提供。以下代码片段演示了如何为按钮设置 JavaScript。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

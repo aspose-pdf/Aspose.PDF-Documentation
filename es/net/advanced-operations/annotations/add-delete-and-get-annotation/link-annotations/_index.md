@@ -83,7 +83,7 @@ sitemap:
 
 > El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-Una [Anotación de Enlace](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) representa un hipervínculo, un destino en otro lugar y un documento. Según el Estándar PDF, la anotación de enlace se puede utilizar en tres casos: vista de página abierta, abrir archivo y abrir página web.
+Una [Anotación de Enlace](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/linkannotation) representa un hipervínculo, un destino en otro lugar y un documento. Según el Estándar PDF, la anotación de enlace se puede utilizar en tres casos: vista de página abierta, abrir archivo y abrir página web.
 
 ### Usando Anotación de Enlace para abrir vista de página
 

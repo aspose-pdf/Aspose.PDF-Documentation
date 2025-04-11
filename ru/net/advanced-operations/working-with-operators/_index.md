@@ -87,7 +87,7 @@ sitemap:
 
 ### Детали реализации
 
-В этом разделе объясняется, как использовать операторы с Aspose.PDF. Для иллюстрации концепции выбран пример добавления изображения в PDF-файл. Чтобы добавить изображение в PDF-файл, необходимы различные операторы. В этом примере используются [GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14) и [GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26).
+В этом разделе объясняется, как использовать операторы с Aspose.PDF. Для иллюстрации концепции выбран пример добавления изображения в PDF-файл. Чтобы добавить изображение в PDF-файл, необходимы различные операторы. В этом примере используются [GSave](https://reference.aspose.com/pdf/ru/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/ru/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/ru/net/aspose.pdf.ioperatorselector/visit/methods/14) и [GRestore](https://reference.aspose.com/pdf/ru/net/aspose.pdf.ioperatorselector/visit/methods/26).
 
 - Оператор **GSave** сохраняет текущее графическое состояние PDF.
 - Оператор **ConcatenateMatrix** (объединение матриц) используется для определения положения изображения на странице PDF.
@@ -96,7 +96,7 @@ sitemap:
 
 Чтобы добавить изображение в PDF-файл:
 
-1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) и откройте входной PDF-документ.
+1. Создайте объект [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) и откройте входной PDF-документ.
 1. Получите конкретную страницу, на которую будет добавлено изображение.
 1. Добавьте изображение в коллекцию ресурсов страницы.
 1. Используйте операторы для размещения изображения на странице:
@@ -235,7 +235,7 @@ private static void DrawXFormOnPage()
 
 ## Удаление графических объектов с помощью классов операторов
 
-Классы операторов предоставляют широкие возможности для управления PDF-файлами. Если PDF-файл содержит графику, которую невозможно удалить с помощью метода [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) класса [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor), вместо этого можно использовать классы операторов для её удаления.
+Классы операторов предоставляют широкие возможности для управления PDF-файлами. Если PDF-файл содержит графику, которую невозможно удалить с помощью метода [DeleteImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) класса [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor), вместо этого можно использовать классы операторов для её удаления.
 
 Следующий фрагмент кода показывает, как удалить графику. Обратите внимание, что если PDF-файл содержит текстовые метки для графики, они могут сохраниться в PDF-файле при использовании этого подхода. Поэтому ищите альтернативные методы удаления таких изображений с помощью графических операторов.
 

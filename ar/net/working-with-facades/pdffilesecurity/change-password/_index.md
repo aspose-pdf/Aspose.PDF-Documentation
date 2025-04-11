@@ -77,7 +77,7 @@ draft: false
 
 ## تغيير كلمة مرور ملف PDF
 
-لتغيير كلمة مرور ملف PDF، تحتاج إلى إنشاء كائن [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) ثم استدعاء طريقة [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). تحتاج إلى تمرير كلمة مرور المالك الحالية وكلمات المرور الجديدة للمستخدم والمالك إلى طريقة [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
+لتغيير كلمة مرور ملف PDF، تحتاج إلى إنشاء كائن [PdfFileSecurity](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesecurity) ثم استدعاء طريقة [ChangePassword](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). تحتاج إلى تمرير كلمة مرور المالك الحالية وكلمات المرور الجديدة للمستخدم والمالك إلى طريقة [ChangePassword](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
 
 {{% alert color="primary" %}}
 

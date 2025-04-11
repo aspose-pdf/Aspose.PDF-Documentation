@@ -77,7 +77,7 @@ draft: false
 
 ## 从图像印章中提取图像
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类允许您从 PDF 文件中的印章提取图像。首先，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入 PDF 文件。之后，调用 [GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) 方法从 PDF 文件的特定页面获取 StampInfo 对象数组。然后，您可以使用 StampInfo.Image 属性从 StampInfo 中获取图像。一旦获取图像，您可以保存图像或处理图像的不同属性。以下代码片段演示了如何从图像印章中提取图像。
+[PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类允许您从 PDF 文件中的印章提取图像。首先，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入 PDF 文件。之后，调用 [GetStamps](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) 方法从 PDF 文件的特定页面获取 StampInfo 对象数组。然后，您可以使用 StampInfo.Image 属性从 StampInfo 中获取图像。一旦获取图像，您可以保存图像或处理图像的不同属性。以下代码片段演示了如何从图像印章中提取图像。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -136,7 +136,7 @@ private static void ExtractImageFromStamp()
 
 ## 更改 PDF 文件中印章的位置
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类允许您更改 PDF 文件中印章的位置。首先，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入 PDF 文件。之后，调用 [MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) 方法，传入印章索引和 PDF 文件特定页面上的新位置。然后，您可以使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的文件。以下代码片段演示了如何在特定页面中移动印章。
+[PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类允许您更改 PDF 文件中印章的位置。首先，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法绑定输入 PDF 文件。之后，调用 [MoveStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) 方法，传入印章索引和 PDF 文件特定页面上的新位置。然后，您可以使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的文件。以下代码片段演示了如何在特定页面中移动印章。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void ChangeStampPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-此外，您还可以使用 [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) 方法通过使用 StampId 移动特定印章。
+此外，您还可以使用 [MoveStampById](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) 方法通过使用 StampId 移动特定印章。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

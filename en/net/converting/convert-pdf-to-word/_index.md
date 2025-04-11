@@ -82,23 +82,8 @@ sitemap:
 
 This article explains how to **convert PDF to Microsoft Word Documents using C#**. It covers these topics.
 
-_Format_: **DOC**
-
-- [C# PDF to DOC](#csharp-pdf-to-doc)
-- [C# Convert PDF to DOC](#csharp-pdf-to-doc)
-- [C# How to convert PDF file to DOC](#csharp-pdf-to-doc)
-
-_Format_: **DOCX**
-
-- [C# PDF to DOCX](#csharp-pdf-to-docx)
-- [C# Convert PDF to DOCX](#csharp-pdf-to-docx)
-- [C# How to convert PDF file to DOCX](#csharp-pdf-to-docx)
-
-_Format_: **Word**
-
-- [C# PDF to Word](#csharp-pdf-to-docx)
-- [C# Convert PDF to Word](#csharp-pdf-to-doc)
-- [C# How to convert PDF file to Word](#csharp-pdf-to-docx)
+- [Convert PDF to DOC](#csharp-pdf-to-doc)
+- [Convert PDF to DOCX](#csharp-pdf-to-docx)
 
 The following code snippet also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
@@ -116,7 +101,7 @@ Keeping alive the tradition of making things simple and understandable, Aspose.P
 
 The following C# code snippet shows converting a PDF file into DOC format.
 
-<a name="csharp-pdf-to-doc"><strong>Steps: Convert PDF to DOC in C#</strong></a>
+<a name="csharp-pdf-to-doc" id="csharp-pdf-to-doc"><strong>Convert PDF to DOC</strong></a>
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object with the source PDF document.
 2. Save it to **SaveFormat.Doc** format by calling **Document.Save()** method.
@@ -188,7 +173,7 @@ Aspose.PDF for .NET API lets you read and convert PDF documents to DOCX using C#
 
 The following C# code snippet shows converting a PDF file into DOCX format.
 
-<a name="csharp-pdf-to-docx"><strong>Steps: Convert PDF to DOCX in C#</strong></a>
+<a name="csharp-pdf-to-docx" id="csharp-pdf-to-docx"><strong>Convert PDF to DOCX</strong></a>
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object with the source PDF document.
 2. Save it to **SaveFormat.DocX** format by calling **Document.Save()** method.
@@ -246,40 +231,3 @@ Aspose.PDF for .NET presents you online free application ["PDF to Word"](https:/
 [![Aspose.PDF Convertion PDF to Word Free App](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
-
-## See Also
-
-This article also covers these topics. The codes are the same as above.
-
-_Format_: **Word**
-
-- [C# PDF to Word Code](#csharp-pdf-to-docx)
-- [C# PDF to Word API](#csharp-pdf-to-docx)
-- [C# PDF to Word Programmatically](#csharp-pdf-to-docx)
-- [C# PDF to Word Library](#csharp-pdf-to-docx)
-- [C# Save PDF as Word](#csharp-pdf-to-docx)
-- [C# Generate Word from PDF](#csharp-pdf-to-docx)
-- [C# Create Word from PDF](#csharp-pdf-to-docx)
-- [C# PDF to Word Converter](#csharp-pdf-to-docx)
-
-_Format_: **DOC**
-
-- [C# PDF to DOC Code](#csharp-pdf-to-doc)
-- [C# PDF to DOC API](#csharp-pdf-to-doc)
-- [C# PDF to DOC Programmatically](#csharp-pdf-to-doc)
-- [C# PDF to DOC Library](#csharp-pdf-to-doc)
-- [C# Save PDF as DOC](#csharp-pdf-to-doc)
-- [C# Generate DOC from PDF](#csharp-pdf-to-doc)
-- [C# Create DOC from PDF](#csharp-pdf-to-doc)
-- [C# PDF to DOC Converter](#csharp-pdf-to-doc)
-
-_Format_: **DOCX**
-
-- [C# PDF to DOCX Code](#csharp-pdf-to-docx)
-- [C# PDF to DOCX API](#csharp-pdf-to-docx)
-- [C# PDF to DOCX Programmatically](#csharp-pdf-to-docx)
-- [C# PDF to DOCX Library](#csharp-pdf-to-docx)
-- [C# Save PDF as DOCX](#csharp-pdf-to-docx)
-- [C# Generate DOCX from PDF](#csharp-pdf-to-docx)
-- [C# Create DOCX from PDF](#csharp-pdf-to-docx)
-- [C# PDF to DOCX Converter](#csharp-pdf-to-docx)

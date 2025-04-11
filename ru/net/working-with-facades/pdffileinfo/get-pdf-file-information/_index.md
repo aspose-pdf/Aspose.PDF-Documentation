@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Чтобы получить специфическую информацию о файле PDF, вам нужно создать объект класса [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo). После этого вы можете получить значения отдельных свойств, таких как Тема, Заголовок, Ключевые слова и Автор и т.д.
+Чтобы получить специфическую информацию о файле PDF, вам нужно создать объект класса [PdfFileInfo](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileinfo). После этого вы можете получить значения отдельных свойств, таких как Тема, Заголовок, Ключевые слова и Автор и т.д.
 
 Следующий фрагмент кода показывает, как получить информацию о PDF файле.
 
@@ -110,7 +110,7 @@ private static void GetPdfInfo()
 
 ## Получение метаинформации
 
-Чтобы получить информацию, мы используем свойство [Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header). С помощью 'Hashtable' мы получаем все возможные значения.
+Чтобы получить информацию, мы используем свойство [Header](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileinfo/properties/header). С помощью 'Hashtable' мы получаем все возможные значения.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

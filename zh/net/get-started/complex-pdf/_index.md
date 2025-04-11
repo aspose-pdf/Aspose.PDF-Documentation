@@ -83,15 +83,15 @@ sitemap:
 
 如果我们从头开始创建文档，我们需要遵循以下步骤：
 
-1. 实例化一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。在这一步中，我们将创建一个带有一些元数据但没有页面的空 PDF 文档。
-1. 向文档对象添加一个 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)。现在我们的文档将有一页。
-1. 向页面添加一个 [Image](https://reference.aspose.com/pdf/net/aspose.pdf/image/methods/index)。
-1. 为标题创建一个 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)。对于标题，我们将使用 Arial 字体，字体大小为 24pt，居中对齐。
-1. 将标题添加到页面的 [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)。
-1. 为描述创建一个 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)。对于描述，我们将使用 Arial 字体，字体大小为 24pt，居中对齐。
+1. 实例化一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。在这一步中，我们将创建一个带有一些元数据但没有页面的空 PDF 文档。
+1. 向文档对象添加一个 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)。现在我们的文档将有一页。
+1. 向页面添加一个 [Image](https://reference.aspose.com/pdf/zh/net/aspose.pdf/image/methods/index)。
+1. 为标题创建一个 [TextFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragment)。对于标题，我们将使用 Arial 字体，字体大小为 24pt，居中对齐。
+1. 将标题添加到页面的 [Paragraphs](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/properties/paragraphs)。
+1. 为描述创建一个 [TextFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragment)。对于描述，我们将使用 Arial 字体，字体大小为 24pt，居中对齐。
 1. 将（描述）添加到页面的段落中。
 1. 创建一个表格，添加表格属性。
-1. 将（表格）添加到页面的 [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)。
+1. 将（表格）添加到页面的 [Paragraphs](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/properties/paragraphs)。
 1. 保存文档为 "Complex.pdf"。
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。

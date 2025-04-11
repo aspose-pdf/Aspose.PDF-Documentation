@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-يرغب الكثير من المستخدمين في ختم مستندات PDF الخاصة بهم بنص متعدد الأسطر. عادةً ما يحاولون استخدام `\n` و `<br>` ولكن هذه الأنواع من الأحرف غير مدعومة من قبل مساحة أسماء Aspose.Pdf.Facades. لذلك، لجعل ذلك ممكنًا، أضفنا طريقة أخرى تسمى [AddNewLineText()](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) في فئة [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) من مساحة أسماء Aspose.Pdf.Facades.
+يرغب الكثير من المستخدمين في ختم مستندات PDF الخاصة بهم بنص متعدد الأسطر. عادةً ما يحاولون استخدام `\n` و `<br>` ولكن هذه الأنواع من الأحرف غير مدعومة من قبل مساحة أسماء Aspose.Pdf.Facades. لذلك، لجعل ذلك ممكنًا، أضفنا طريقة أخرى تسمى [AddNewLineText()](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) في فئة [FormattedText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formattedtext) من مساحة أسماء Aspose.Pdf.Facades.
 
 {{% /alert %}}
 

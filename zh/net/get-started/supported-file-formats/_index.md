@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Supported File Formats",
     "alternativeHeadline": "Aspose.PDF for .NET Supports Extensive File Formats in C#",
-    "abstract": "Aspose.PDF for .NET现在支持广泛的文件格式用于加载和保存，增强了开发人员的多功能性。此功能包括PDF、EPUB、HTML和SVG等流行格式，满足各种文档处理需求。发现全面的文件格式支持，简化您应用程序中的PDF操作。",
+    "abstract": "Aspose.PDF for .NET现在支持广泛的文件格式用于加载和保存，增强了开发者的多功能性。此功能包括PDF、EPUB、HTML和SVG等流行格式，满足各种文档处理需求。发现全面的文件格式支持，使您的应用程序中的PDF操作更加高效",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "566",
+    "wordcount": "416",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/supported-file-formats/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发者的信息。"
 }
 </script>
 
@@ -98,6 +98,7 @@ sitemap:
 |[OFD](https://en.wikipedia.org/wiki/OFD)|OFD格式指“开放固定布局文档”，作为中国电子文件存储的国家标准，用作流行PDF格式的替代品。|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|将文档保存为Microsoft Excel电子表格| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|将文档保存为Microsoft Excel 2007格式| |{{< emoticons/tick >}}| |
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|将文档保存为XLSM格式的文档，是支持宏的电子表格文件类型。||{{< emoticons/tick >}} | |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|将文档保存为Microsoft PowerPoint演示文稿格式| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|将文档保存为Microsoft Word格式| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|将文档保存为Microsoft Word格式| |{{< emoticons/tick >}}| |

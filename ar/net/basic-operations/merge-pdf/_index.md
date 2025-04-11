@@ -89,10 +89,10 @@ sitemap:
 
 لدمج ملفين PDF:
 
-1. أنشئ كائنين [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) ، يحتوي كل منهما على أحد ملفات PDF المدخلة.
-1. ثم استدعِ طريقة Add لمجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) للكائن Document الذي تريد إضافة ملف PDF الآخر إليه.
+1. أنشئ كائنين [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) ، يحتوي كل منهما على أحد ملفات PDF المدخلة.
+1. ثم استدعِ طريقة Add لمجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection) للكائن Document الذي تريد إضافة ملف PDF الآخر إليه.
 1. مرر مجموعة PageCollection للكائن Document الثاني إلى طريقة Add لمجموعة PageCollection الأولى.
-1. أخيرًا، احفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. أخيرًا، احفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
 
 توضح مقتطفات الشيفرة التالية كيفية دمج ملفات PDF.
 

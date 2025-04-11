@@ -84,7 +84,7 @@ Aspose.PDF para NET ofrece las capacidades para insertar/crear tablas dentro de 
 
 {{% /alert %}}
 
-Para eliminar las tablas, necesitamos usar la clase [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) para obtener las tablas en el PDF existente y luego llamar a [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
+Para eliminar las tablas, necesitamos usar la clase [TableAbsorber](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/tableabsorber) para obtener las tablas en el PDF existente y luego llamar a [Remove](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/tableabsorber/methods/remove).
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 

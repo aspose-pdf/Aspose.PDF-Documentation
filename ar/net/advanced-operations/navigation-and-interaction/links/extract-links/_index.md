@@ -83,13 +83,13 @@ sitemap:
 
 ## استخراج الروابط من ملف PDF
 
-تمثل الروابط كتعليقات توضيحية في ملف PDF، لذا لاستخراج الروابط، استخرج جميع كائنات [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) .
+تمثل الروابط كتعليقات توضيحية في ملف PDF، لذا لاستخراج الروابط، استخرج جميع كائنات [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) .
 
-1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
-1. احصل على [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) التي تريد استخراج الروابط منها.
-1. استخدم فئة [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) لاستخراج جميع كائنات [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) من الصفحة المحددة.
-1. مرر كائن [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) إلى طريقة Accept الخاصة بكائن Page.
-1. احصل على جميع تعليقات الروابط المحددة في كائن IList باستخدام خاصية Selected الخاصة بكائن [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) .
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
+1. احصل على [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) التي تريد استخراج الروابط منها.
+1. استخدم فئة [AnnotationSelector](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationselector) لاستخراج جميع كائنات [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) من الصفحة المحددة.
+1. مرر كائن [AnnotationSelector](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationselector) إلى طريقة Accept الخاصة بكائن Page.
+1. احصل على جميع تعليقات الروابط المحددة في كائن IList باستخدام خاصية Selected الخاصة بكائن [AnnotationSelector](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationselector) .
 
 تظهر مقتطفات الشيفرة التالية كيفية استخراج الروابط من ملف PDF.
 

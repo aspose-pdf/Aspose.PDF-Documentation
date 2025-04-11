@@ -85,13 +85,13 @@ sitemap:
 
 التعليق النصي هو تعليق مرتبط بموقع معين في مستند PDF. عند إغلاقه، يتم عرض التعليق كأيقونة؛ عند فتحه، يجب أن يظهر نافذة منبثقة تحتوي على نص الملاحظة بالخط والحجم الذي اختاره القارئ.
 
-تحتوي التعليقات على مجموعة [التعليقات](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) لصفحة معينة. تحتوي هذه المجموعة على التعليقات لتلك الصفحة الفردية فقط؛ كل صفحة لديها مجموعة التعليقات الخاصة بها.
+تحتوي التعليقات على مجموعة [التعليقات](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations) لصفحة معينة. تحتوي هذه المجموعة على التعليقات لتلك الصفحة الفردية فقط؛ كل صفحة لديها مجموعة التعليقات الخاصة بها.
 
-لإضافة تعليق إلى صفحة معينة، أضفه إلى مجموعة التعليقات الخاصة بتلك الصفحة باستخدام طريقة [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add).
+لإضافة تعليق إلى صفحة معينة، أضفه إلى مجموعة التعليقات الخاصة بتلك الصفحة باستخدام طريقة [Add](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationcollection/methods/add).
 
 1. أولاً، أنشئ تعليقًا تريد إضافته إلى ملف PDF.
 1. ثم افتح ملف PDF المدخل.
-1. أضف التعليق إلى مجموعة التعليقات الخاصة بكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. أضف التعليق إلى مجموعة التعليقات الخاصة بكائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page).
 
 تظهر مقتطفات الشيفرة التالية كيفية إضافة تعليق في صفحة PDF.
 
@@ -136,7 +136,7 @@ private static void AddTextAnnotationToPdf()
 
 يجب ألا يحتوي على تدفق مظهر أو إجراءات مرتبطة به ويجب التعرف عليه من خلال إدخال Popup في قاموس تعليق الأب.
 
-تظهر مقتطفات الشيفرة التالية كيفية إضافة [تعليق منبثق](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) في صفحة PDF باستخدام مثال لإضافة [تعليق خط](/pdf/ar/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) للأب.
+تظهر مقتطفات الشيفرة التالية كيفية إضافة [تعليق منبثق](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/popupannotation) في صفحة PDF باستخدام مثال لإضافة [تعليق خط](/pdf/ar/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) للأب.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void AddLineAnnotation()
 
 ## كيفية إضافة (أو إنشاء) تعليق نصي مجاني جديد
 
-يعرض التعليق النصي المجاني النص مباشرة على الصفحة. تتيح طريقة [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) إنشاء هذا النوع من التعليقات. في المقتطف التالي، نضيف تعليق نصي مجاني فوق أول ظهور للسلسلة.
+يعرض التعليق النصي المجاني النص مباشرة على الصفحة. تتيح طريقة [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) إنشاء هذا النوع من التعليقات. في المقتطف التالي، نضيف تعليق نصي مجاني فوق أول ظهور للسلسلة.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -216,7 +216,7 @@ private static void AddFreeTextAnnotationDemo()
 
 ### تعيين خاصية Callout لتعليق FreeTextAnnotation
 
-لإعداد تكوين أكثر مرونة للتعليق في مستند PDF، يوفر Aspose.PDF for .NET خاصية [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) لفئة [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) التي تسمح بتحديد مصفوفة من نقاط خط الاستدعاء. تظهر مقتطفات الشيفرة التالية كيفية استخدام هذه الوظيفة:
+لإعداد تكوين أكثر مرونة للتعليق في مستند PDF، يوفر Aspose.PDF for .NET خاصية [Callout](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/freetextannotation/properties/callout) لفئة [FreeTextAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/freetextannotation) التي تسمح بتحديد مصفوفة من نقاط خط الاستدعاء. تظهر مقتطفات الشيفرة التالية كيفية استخدام هذه الوظيفة:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -351,9 +351,9 @@ private static void AddInvisibleAnnotation()
 
 تتناول هذه الجزء كيفية تنسيق النص في تعليق نصي مجاني.
 
-تحتوي التعليقات على مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). عند إضافة [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) إلى مستند PDF، يمكنك تحديد معلومات التنسيق مثل الخط، الحجم، اللون، وما إلى ذلك باستخدام فئة [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index). من الممكن أيضًا تحديد معلومات التنسيق باستخدام خاصية TextStyle. علاوة على ذلك، يمكنك تحديث تنسيق أي FreeTextAnnotation موجود بالفعل في مستند PDF.
+تحتوي التعليقات على مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page). عند إضافة [FreeTextAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/freetextannotation) إلى مستند PDF، يمكنك تحديد معلومات التنسيق مثل الخط، الحجم، اللون، وما إلى ذلك باستخدام فئة [DefaultAppearance](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/defaultappearance/methods/index). من الممكن أيضًا تحديد معلومات التنسيق باستخدام خاصية TextStyle. علاوة على ذلك، يمكنك تحديث تنسيق أي FreeTextAnnotation موجود بالفعل في مستند PDF.
 
-تدعم فئة [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) العمل مع إدخال النمط الافتراضي. تتيح لك هذه الفئة تعيين اللون، حجم الخط واسم الخط:
+تدعم فئة [TextStyle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/textstyle) العمل مع إدخال النمط الافتراضي. تتيح لك هذه الفئة تعيين اللون، حجم الخط واسم الخط:
 
 - خاصية FontName تحصل أو تعين اسم الخط (سلسلة).
 - خاصية FontSize تحصل وتعين حجم النص الافتراضي (مزدوج).
@@ -434,7 +434,7 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
 
 ### شطب الكلمات باستخدام StrikeOutAnnotation
 
-Aspose.PDF for .NET يتيح لك إضافة، حذف وتحديث التعليقات في مستندات PDF. واحدة من الفئات تتيح لك أيضًا شطب التعليقات. هذا مفيد عندما تريد شطب جزء أو أكثر من النص في مستند. يتم الاحتفاظ بالتعليقات في مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). يمكن استخدام فئة تسمى [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) لإضافة تعليقات شطب إلى مستند PDF.
+Aspose.PDF for .NET يتيح لك إضافة، حذف وتحديث التعليقات في مستندات PDF. واحدة من الفئات تتيح لك أيضًا شطب التعليقات. هذا مفيد عندما تريد شطب جزء أو أكثر من النص في مستند. يتم الاحتفاظ بالتعليقات في مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page). يمكن استخدام فئة تسمى [StrikeOutAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/strikeoutannotation) لإضافة تعليقات شطب إلى مستند PDF.
 
 لشطب جزء معين من TextFragment:
 
@@ -502,7 +502,7 @@ private void StrikeOutTextInDocument()
 
 ## حذف جميع التعليقات من صفحة ملف PDF
 
-تحتوي مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) على جميع التعليقات لتلك الصفحة المعينة. لحذف جميع التعليقات من صفحة، استدعِ طريقة *Delete* لمجموعة AnnotationCollectoin.
+تحتوي مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) على جميع التعليقات لتلك الصفحة المعينة. لحذف جميع التعليقات من صفحة، استدعِ طريقة *Delete* لمجموعة AnnotationCollectoin.
 
 تظهر مقتطفات الشيفرة التالية كيفية حذف جميع التعليقات من صفحة معينة.
 
@@ -536,7 +536,7 @@ private static void DeleteAllAnnotationsFromPage()
 
 Aspose.PDF يتيح لك إزالة تعليق معين من ملف PDF. يشرح هذا الموضوع كيفية القيام بذلك.
 
-لحذف تعليق معين من PDF، استدعِ [طريقة Delete لمجموعة AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). تنتمي هذه المجموعة إلى كائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). تتطلب طريقة Delete فهرس التعليق الذي تريد حذفه. ثم، احفظ ملف PDF المحدث. تظهر مقتطفات الشيفرة التالية كيفية حذف تعليق معين.
+لحذف تعليق معين من PDF، استدعِ [طريقة Delete لمجموعة AnnotationCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). تنتمي هذه المجموعة إلى كائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page). تتطلب طريقة Delete فهرس التعليق الذي تريد حذفه. ثم، احفظ ملف PDF المحدث. تظهر مقتطفات الشيفرة التالية كيفية حذف تعليق معين.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -559,7 +559,7 @@ private static void DeleteParticularAnnotation()
 
 ## الحصول على جميع التعليقات من صفحة مستند PDF
 
-Aspose.PDF يتيح لك الحصول على التعليقات من مستند كامل، أو من صفحة معينة. للحصول على جميع التعليقات من الصفحة في مستند PDF، قم بالتكرار عبر مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لموارد الصفحة المطلوبة. تظهر مقتطفات الشيفرة التالية كيفية الحصول على جميع التعليقات من صفحة.
+Aspose.PDF يتيح لك الحصول على التعليقات من مستند كامل، أو من صفحة معينة. للحصول على جميع التعليقات من الصفحة في مستند PDF، قم بالتكرار عبر مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationcollection) لموارد الصفحة المطلوبة. تظهر مقتطفات الشيفرة التالية كيفية الحصول على جميع التعليقات من صفحة.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -587,7 +587,7 @@ private static void GetAllAnnotationsFromPage()
 
 ## الحصول على تعليق معين من ملف PDF
 
-التعليقات مرتبطة بالصفحات الفردية ومخزنة في مجموعة [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). للحصول على تعليق معين، حدد فهرسه. هذا يعيد كائن [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) الذي يحتاج إلى تحويله إلى نوع تعليق معين، على سبيل المثال [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). تظهر مقتطفات الشيفرة التالية كيفية الحصول على تعليق معين وخصائصه.
+التعليقات مرتبطة بالصفحات الفردية ومخزنة في مجموعة [AnnotationCOllection](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page). للحصول على تعليق معين، حدد فهرسه. هذا يعيد كائن [Annotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotation) الذي يحتاج إلى تحويله إلى نوع تعليق معين، على سبيل المثال [TextAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/textannotation). تظهر مقتطفات الشيفرة التالية كيفية الحصول على تعليق معين وخصائصه.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -612,7 +612,7 @@ private static void GetParticularAnnotation()
 
 ## الحصول على مورد التعليق
 
-Aspose.PDF يتيح لك الحصول على مورد التعليق من مستند كامل، أو من صفحة معينة. تظهر مقتطفات الشيفرة التالية كيفية الحصول على مورد التعليق ككائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) من ملف PDF المدخل.
+Aspose.PDF يتيح لك الحصول على مورد التعليق من مستند كامل، أو من صفحة معينة. تظهر مقتطفات الشيفرة التالية كيفية الحصول على مورد التعليق ككائن [FileSpecification](https://reference.aspose.com/pdf/ar/net/aspose.pdf/filespecification) من ملف PDF المدخل.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

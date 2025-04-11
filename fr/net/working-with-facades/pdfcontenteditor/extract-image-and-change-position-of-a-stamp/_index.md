@@ -77,7 +77,7 @@ draft: false
 
 ## Extraire une image d'un tampon d'image
 
-La classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) vous permet d'extraire des images d'un tampon dans un fichier PDF. Tout d'abord, vous devez créer un objet de la classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) et lier le fichier PDF d'entrée en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Après cela, appelez la méthode [GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) pour obtenir un tableau d'objets StampInfo à partir d'une page particulière du fichier PDF. Ensuite, vous pouvez obtenir l'image d'un StampInfo en utilisant la propriété StampInfo.Image. Une fois que vous avez l'image, vous pouvez la sauvegarder ou travailler avec différentes propriétés de l'image. Le code suivant montre comment extraire une image d'un tampon d'image.
+La classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor) vous permet d'extraire des images d'un tampon dans un fichier PDF. Tout d'abord, vous devez créer un objet de la classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor) et lier le fichier PDF d'entrée en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.facade/bindpdf/methods/3). Après cela, appelez la méthode [GetStamps](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) pour obtenir un tableau d'objets StampInfo à partir d'une page particulière du fichier PDF. Ensuite, vous pouvez obtenir l'image d'un StampInfo en utilisant la propriété StampInfo.Image. Une fois que vous avez l'image, vous pouvez la sauvegarder ou travailler avec différentes propriétés de l'image. Le code suivant montre comment extraire une image d'un tampon d'image.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -136,7 +136,7 @@ private static void ExtractImageFromStamp()
 
 ## Changer la position d'un tampon dans un fichier PDF
 
-La classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) vous permet de changer la position d'un tampon dans un fichier PDF. Tout d'abord, vous devez créer un objet de la classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) et lier le fichier PDF d'entrée en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Après cela, appelez la méthode [MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) avec l'index du tampon et la nouvelle position sur une page particulière du fichier PDF. Ensuite, vous pouvez sauvegarder le fichier mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save). Le code suivant montre comment déplacer un tampon dans une page particulière.
+La classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor) vous permet de changer la position d'un tampon dans un fichier PDF. Tout d'abord, vous devez créer un objet de la classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor) et lier le fichier PDF d'entrée en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.facade/bindpdf/methods/3). Après cela, appelez la méthode [MoveStamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) avec l'index du tampon et la nouvelle position sur une page particulière du fichier PDF. Ensuite, vous pouvez sauvegarder le fichier mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/save). Le code suivant montre comment déplacer un tampon dans une page particulière.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void ChangeStampPosition()
 {{< /tab >}}
 {{< /tabs >}}
 
-De plus, vous pouvez utiliser la méthode [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) pour déplacer un tampon spécifique en utilisant StampId.
+De plus, vous pouvez utiliser la méthode [MoveStampById](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) pour déplacer un tampon spécifique en utilisant StampId.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -83,12 +83,12 @@ sitemap:
 
 ## 更新 PDF 文件中的链接
 
-如在《在 PDF 文件中添加超链接》中所讨论的， [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 类使得在 PDF 文件中添加链接成为可能。还有一个类似的类用于获取 PDF 文件中的现有链接。如果您需要更新现有链接，请使用此类。要更新现有链接：
+如在《在 PDF 文件中添加超链接》中所讨论的， [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 类使得在 PDF 文件中添加链接成为可能。还有一个类似的类用于获取 PDF 文件中的现有链接。如果您需要更新现有链接，请使用此类。要更新现有链接：
 
 1. 加载 PDF 文件。
 1. 转到 PDF 文件中的特定页面。
-1. 使用 [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) 对象的 Destination 属性指定链接目标。
-1. 使用 [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) 构造函数指定目标页面。
+1. 使用 [GoToAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/gotoaction) 对象的 Destination 属性指定链接目标。
+1. 使用 [XYZExplicitDestination](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/xyzexplicitdestination) 构造函数指定目标页面。
 
 ### 将链接目标设置为同一文档中的页面
 
@@ -155,7 +155,7 @@ private static void UpdateLinkAnnotation()
 
 ### 将链接目标设置为网页地址
 
-要更新超链接以指向网页地址，请实例化 [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) 对象并将其传递给 LinkAnnotation 的 Action 属性。以下代码片段演示如何在 PDF 文件中更新链接并将其目标设置为网页地址。
+要更新超链接以指向网页地址，请实例化 [GoToURIAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/gotouriaction) 对象并将其传递给 LinkAnnotation 的 Action 属性。以下代码片段演示如何在 PDF 文件中更新链接并将其目标设置为网页地址。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

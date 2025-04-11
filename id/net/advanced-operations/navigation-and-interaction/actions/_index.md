@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "C#, PDF actions, hyperlink creation, LinkAnnotation, LocalHyperlink, FreeTextAnnotation, document open action, XYZExplicitDestination, Aspose.PDF, PDF manipulation",
-    "wordcount": "2007",
+    "wordcount": "3253",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,12 +74,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/actions/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-02",
     "description": "Bagian ini menjelaskan cara menambahkan aksi ke dokumen dan bidang formulir secara programatis dengan C#."
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan Hyperlink di File PDF
 
@@ -89,16 +89,16 @@ Untuk menambahkan hyperlink web ke dokumen PDF:
 
 1. Buat objek Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Dapatkan Kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) yang ingin Anda tambahkan tautan.
-1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) menggunakan objek Page dan [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle). Objek rectangle digunakan untuk menentukan lokasi di halaman tempat tautan harus ditambahkan.
+1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) menggunakan objek Page dan [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle). Objek persegi panjang digunakan untuk menentukan lokasi di halaman tempat tautan harus ditambahkan.
 1. Atur properti Action ke objek [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) yang menentukan lokasi URI jarak jauh.
-1. Untuk menampilkan teks hyperlink, tambahkan string teks di lokasi yang mirip dengan tempat objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) ditempatkan.
+1. Untuk menampilkan teks hyperlink, tambahkan string teks pada lokasi yang mirip dengan tempat objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) ditempatkan.
 1. Untuk menambahkan teks bebas:
 
 - Buat objek [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation). Ini juga menerima objek Page dan Rectangle sebagai argumen, sehingga mungkin untuk memberikan nilai yang sama seperti yang ditentukan terhadap konstruktor LinkAnnotation.
 - Menggunakan properti Contents objek [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation), tentukan string yang harus ditampilkan di PDF keluaran.
 - Opsional, atur lebar batas dari objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) dan FreeTextAnnotation ke 0 sehingga tidak muncul di dokumen PDF.
 - Setelah objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) dan [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) didefinisikan, tambahkan tautan ini ke koleksi Annotations objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
-- Terakhir, simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+- Terakhir, simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 Potongan kode berikut menunjukkan cara menambahkan hyperlink ke file PDF.
 
@@ -186,13 +186,104 @@ private static void AddHyperlink()
 {{< /tab >}}
 {{< /tabs >}}
 
+Skenario umum lainnya adalah menemukan teks tertentu dalam dokumen menggunakan TextFragmentAbsorber dan menetapkan wilayahnya sebagai hyperlink ke situs. Di bawah ini adalah potongan kode yang mengimplementasikan ini.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHyperlinkForExistingText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf"))
+    {
+        // Get page
+        var page = document.Pages[1];
+
+        // The text in the document for which we want to create a link
+        string textForLink = "Portable Document Format";
+
+        // Finding the location of text on a page
+        var textFragmentAbsosrber = new Aspose.Pdf.Text.TextFragmentAbsorber(textForLink);
+        page.Accept(textFragmentAbsosrber);
+        foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
+        {
+            // Create Link annotation object
+            var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, textFragment.Rectangle);
+            // Create border object for LinkAnnotation
+            var border = new Aspose.Pdf.Annotations.Border(link);
+            // Set the border width value as 0
+            border.Width = 0;
+            // Set the border for LinkAnnotation
+            link.Border = border;
+            // Specify the link type as remote URI
+            link.Action = new Aspose.Pdf.Annotations.GoToURIAction("https://www.pdfa-inc.org/");
+            // Add link annotation to annotations collection of first page of PDF file
+            page.Annotations.Add(link);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddHyperlink_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHyperlinkForExistingText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf");
+
+    // Get page
+    var page = document.Pages[1];
+
+    // The text in the document for which we want to create a link
+    string textForLink = "Portable Document Format";
+
+    // Finding the location of text on a page
+    var textFragmentAbsosrber = new Aspose.Pdf.Text.TextFragmentAbsorber(textForLink);
+    page.Accept(textFragmentAbsosrber);
+    foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentAbsosrber.TextFragments)
+    {
+        // Create Link annotation object
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, textFragment.Rectangle);
+        // Create border object for LinkAnnotation
+        var border = new Aspose.Pdf.Annotations.Border(link);
+        // Set the border width value as 0
+        border.Width = 0;
+        // Set the border for LinkAnnotation
+        link.Border = border;
+        // Specify the link type as remote URI
+        link.Action = new Aspose.Pdf.Annotations.GoToURIAction("https://www.pdfa-inc.org/");
+        // Add link annotation to annotations collection of first page of PDF file
+        page.Annotations.Add(link);
+    }
+
+    // Save PDF document
+    document.Save(dataDir + "AddHyperlink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Buat Hyperlink ke halaman di PDF yang sama
 
 Aspose.PDF for .NET menyediakan fitur hebat untuk pembuatan PDF serta manipulasi. Ini juga menawarkan fitur untuk menambahkan tautan ke halaman PDF dan tautan dapat mengarahkan ke halaman di file PDF lain, URL web, tautan untuk meluncurkan Aplikasi atau bahkan tautan ke halaman di file PDF yang sama. Untuk menambahkan hyperlink lokal (tautan ke halaman di file PDF yang sama), sebuah kelas bernama [LocalHyperlink](https://reference.aspose.com/pdf/net/aspose.pdf/localhyperlink) ditambahkan ke namespace Aspose.PDF dan kelas ini memiliki properti bernama TargetPageNumber, yang digunakan untuk menentukan halaman target/tujuan untuk hyperlink.
 
-Untuk menambahkan hyperlink lokal, kita perlu membuat TextFragment sehingga tautan dapat diasosiasikan dengan TextFragment. Kelas [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) memiliki properti bernama Hyperlink yang digunakan untuk mengasosiasikan instance LocalHyperlink. Potongan kode berikut menunjukkan langkah-langkah untuk memenuhi persyaratan ini.
+Untuk menambahkan hyperlink lokal, kita perlu membuat TextFragment sehingga tautan dapat dikaitkan dengan TextFragment. Kelas [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) memiliki properti bernama Hyperlink yang digunakan untuk mengaitkan instance LocalHyperlink. Potongan kode berikut menunjukkan langkah-langkah untuk memenuhi persyaratan ini.
 
-{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -280,7 +371,7 @@ private static void AddHyperlink()
 
 ## Dapatkan Tujuan Hyperlink PDF (URL)
 
-Tautan direpresentasikan sebagai anotasi dalam file PDF dan mereka dapat ditambahkan, diperbarui, atau dihapus. Aspose.PDF for .NET juga mendukung mendapatkan tujuan (URL) dari hyperlink dalam file PDF.
+Tautan direpresentasikan sebagai anotasi dalam file PDF dan dapat ditambahkan, diperbarui, atau dihapus. Aspose.PDF for .NET juga mendukung mendapatkan tujuan (URL) dari hyperlink dalam file PDF.
 
 Untuk mendapatkan URL tautan:
 
@@ -288,12 +379,12 @@ Untuk mendapatkan URL tautan:
 1. Dapatkan [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) yang ingin Anda ekstrak tautan darinya.
 1. Gunakan kelas [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) untuk mengekstrak semua objek [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) dari halaman yang ditentukan.
 1. Lewati objek [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) ke metode Accept objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
-1. Dapatkan semua anotasi tautan yang dipilih ke dalam objek IList menggunakan properti Selected dari objek [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector).
+1. Dapatkan semua anotasi tautan yang dipilih ke dalam objek IList menggunakan properti Selected objek [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector).
 1. Terakhir, ekstrak Aksi LinkAnnotation sebagai GoToURIAction.
 
 Potongan kode berikut menunjukkan cara mendapatkan tujuan hyperlink (URL) dari file PDF.
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -370,7 +461,7 @@ Teks dan anotasi/aksi dalam file PDF direpresentasikan oleh entitas yang berbeda
 
 Untuk menemukan konten URL, Anda perlu bekerja dengan anotasi dan teks. Objek [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) tidak memiliki teks itu sendiri tetapi berada di bawah teks di halaman. Jadi untuk mendapatkan teks, Anotasi memberikan batas URL, sementara objek Teks memberikan konten URL. Silakan lihat potongan kode berikut.
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -455,16 +546,16 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 ## Hapus Aksi Buka Dokumen dari File PDF
 
-[Bagaimana Menentukan Halaman PDF saat Melihat Dokumen](#how-to-specify-pdf-page-when-viewing-document) menjelaskan bagaimana memberi tahu dokumen untuk dibuka di halaman yang berbeda dari halaman pertama. Ketika menggabungkan beberapa dokumen, dan satu atau lebih memiliki aksi GoTo yang diatur, Anda mungkin ingin menghapusnya. Misalnya, jika menggabungkan dua dokumen dan dokumen kedua memiliki aksi GoTo yang membawa Anda ke halaman kedua, dokumen keluaran akan terbuka di halaman kedua dari dokumen kedua alih-alih halaman pertama dari dokumen gabungan. Untuk menghindari perilaku ini, hapus perintah aksi buka.
+[Bagaimana Menentukan Halaman PDF saat Melihat Dokumen](#how-to-specify-pdf-page-when-viewing-document) menjelaskan bagaimana memberi tahu dokumen untuk dibuka di halaman yang berbeda dari halaman pertama. Ketika menggabungkan beberapa dokumen, dan satu atau lebih memiliki aksi GoTo yang diatur, Anda mungkin ingin menghapusnya. Misalnya, jika menggabungkan dua dokumen dan yang kedua memiliki aksi GoTo yang membawa Anda ke halaman kedua, dokumen keluaran akan terbuka di halaman kedua dari dokumen kedua alih-alih halaman pertama dari dokumen gabungan. Untuk menghindari perilaku ini, hapus perintah aksi buka.
 
 Untuk menghapus aksi buka:
 
 1. Atur properti [OpenAction](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/openaction) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) ke null.
-1. Simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) dari objek Document.
+1. Simpan PDF yang diperbarui menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) objek Document.
 
 Potongan kode berikut menunjukkan cara menghapus aksi buka dokumen dari file PDF.
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -513,7 +604,7 @@ Saat melihat file PDF di penampil PDF seperti Adobe Reader, file biasanya terbuk
 
 Kelas [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) memungkinkan Anda untuk menentukan halaman dalam file PDF yang ingin Anda buka. Saat melewatkan nilai objek GoToAction ke properti OpenAction kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), dokumen terbuka di halaman yang ditentukan terhadap objek XYZExplicitDestination. Potongan kode berikut menunjukkan cara menentukan halaman sebagai aksi buka dokumen.
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

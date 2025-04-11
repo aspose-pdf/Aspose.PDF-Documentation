@@ -77,7 +77,7 @@ draft: false
 
 ## تحقق مما إذا كان ملف PDF موقعًا باستخدام توقيع
 
-للتحقق مما إذا كان ملف PDF موقعًا باستخدام [توقيع معين](/pdf/ar/net/working-with-signature-in-a-pdf-file/)، استخدم طريقة VerifySigned من فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). تتطلب هذه الطريقة اسم التوقيع وتعيد true إذا كان ملف PDF موقعًا باستخدام اسم التوقيع هذا. من الممكن أيضًا التحقق من أن [ملف PDF موقع](/pdf/ar/net/working-with-signature-in-a-pdf-file/)، دون التحقق من التوقيع الذي تم التوقيع به.
+للتحقق مما إذا كان ملف PDF موقعًا باستخدام [توقيع معين](/pdf/ar/net/working-with-signature-in-a-pdf-file/)، استخدم طريقة VerifySigned من فئة [PdfFileSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature). تتطلب هذه الطريقة اسم التوقيع وتعيد true إذا كان ملف PDF موقعًا باستخدام اسم التوقيع هذا. من الممكن أيضًا التحقق من أن [ملف PDF موقع](/pdf/ar/net/working-with-signature-in-a-pdf-file/)، دون التحقق من التوقيع الذي تم التوقيع به.
 
 ### التحقق من أن ملف PDF موقع بتوقيع معين
 
@@ -127,7 +127,7 @@ private static void IsPdfSignedWithGivenSignature()
 
 ## تحقق مما إذا كان التوقيع صالحًا
 
-تتيح لك طريقة [VerifySignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) من فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) التحقق من صحة توقيع معين. تتطلب هذه الطريقة اسم التوقيع كمدخل وتعيد true إذا كان التوقيع صالحًا. تظهر مقتطفات الكود التالية كيفية التحقق من صحة التوقيع.
+تتيح لك طريقة [VerifySignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) من فئة [PdfFileSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature) التحقق من صحة توقيع معين. تتطلب هذه الطريقة اسم التوقيع كمدخل وتعيد true إذا كان التوقيع صالحًا. تظهر مقتطفات الكود التالية كيفية التحقق من صحة التوقيع.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

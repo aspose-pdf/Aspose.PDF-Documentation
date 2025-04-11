@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 130
 url: /id/net/compare-pdf-documents/
-description: Sejak rilis 24.7, sekarang dimungkinkan untuk membandingkan konten dokumen PDF dengan tanda anotasi dan output berdampingan
+description: Sejak rilis 24.7, kini dimungkinkan untuk membandingkan konten dokumen PDF dengan tanda anotasi dan output berdampingan
 lastmod: "2024-08-17"
 sitemap:
     changefreq: "weekly"
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Compare PDF documents, PDF comparison, Aspose.PDF for .NET, comparing specific pages, comparing entire documents, graphical PDF comparer, side-by-side comparison, change markers, document accuracy, ImagesDifference",
-    "wordcount": "1180",
+    "wordcount": "1165",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,20 +74,20 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/compare-pdf-documents/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
-Harap dicatat bahwa semua alat perbandingan tersedia di [Aspose.PDF.Drawing](https://docs.aspose.com/pdf/net/drawing/) perpustakaan.
+Harap dicatat bahwa semua alat perbandingan tersedia di [Aspose.PDF.Drawing](https://docs.aspose.com/pdf/net/drawing/) library.
 
 ## Cara membandingkan Dokumen PDF
 
-Saat bekerja dengan dokumen PDF, ada kalanya Anda perlu membandingkan konten dua dokumen untuk mengidentifikasi perbedaan. Perpustakaan Aspose.PDF for .NET menyediakan seperangkat alat yang kuat untuk tujuan ini. Dalam artikel ini, kita akan menjelajahi cara membandingkan dokumen PDF menggunakan beberapa cuplikan kode sederhana.
+Saat bekerja dengan dokumen PDF, terkadang Anda perlu membandingkan konten dari dua dokumen untuk mengidentifikasi perbedaan. Library Aspose.PDF for .NET menyediakan seperangkat alat yang kuat untuk tujuan ini. Dalam artikel ini, kita akan menjelajahi cara membandingkan dokumen PDF menggunakan beberapa potongan kode sederhana.
 
 Fungsi perbandingan di Aspose.PDF memungkinkan Anda untuk membandingkan dua dokumen PDF halaman demi halaman. Anda dapat memilih untuk membandingkan halaman tertentu atau seluruh dokumen. Dokumen perbandingan yang dihasilkan menyoroti perbedaan, sehingga lebih mudah untuk mengidentifikasi perubahan antara kedua file.
 
-Berikut adalah daftar cara yang mungkin untuk membandingkan dokumen PDF menggunakan Aspose.PDF untuk perpustakaan .NET:
+Berikut adalah daftar cara yang mungkin untuk membandingkan dokumen PDF menggunakan Aspose.PDF untuk .NET library:
 
 1. **Membandingkan Halaman Tertentu** - Bandingkan halaman pertama dari dua dokumen PDF.
 
@@ -101,19 +101,17 @@ Berikut adalah daftar cara yang mungkin untuk membandingkan dokumen PDF mengguna
 
 ## Membandingkan Halaman Tertentu
 
-Cuplikan kode pertama menunjukkan cara membandingkan halaman pertama dari dua dokumen PDF.
-
-Langkah-langkah:
+Potongan kode pertama menunjukkan cara membandingkan halaman pertama dari dua dokumen PDF.
 
 1. Inisialisasi Dokumen.
-Kode dimulai dengan menginisialisasi dua dokumen PDF menggunakan jalur file masing-masing (documentPath1 dan documentPath2). Jalur tersebut saat ini ditentukan sebagai string kosong, tetapi dalam praktiknya, Anda akan menggantinya dengan jalur file yang sebenarnya.
+Kode dimulai dengan menginisialisasi dua dokumen PDF menggunakan jalur file masing-masing (documentPath1 dan documentPath2). Jalur tersebut ditentukan sebagai string kosong untuk saat ini, tetapi dalam praktiknya, Anda akan menggantinya dengan jalur file yang sebenarnya.
 
 2. Proses Perbandingan.
 
 - Pemilihan Halaman - perbandingan dibatasi pada halaman pertama dari setiap dokumen ('Pages[1]').
 - Opsi Perbandingan:
 
-'AdditionalChangeMarks = true' - opsi ini memastikan bahwa penanda perubahan tambahan ditampilkan. Penanda ini menyoroti perbedaan yang mungkin ada di halaman lain, meskipun tidak ada di halaman saat ini yang dibandingkan.
+'AdditionalChangeMarks = true' - opsi ini memastikan bahwa penanda perubahan tambahan ditampilkan. Penanda ini menyoroti perbedaan yang mungkin ada di halaman lain, bahkan jika mereka tidak ada di halaman saat ini yang dibandingkan.
 
 'ComparisonMode = ComparisonMode.IgnoreSpaces' - mode ini memberi tahu pembanding untuk mengabaikan spasi dalam teks, hanya fokus pada perubahan dalam kata.
 
@@ -144,20 +142,7 @@ private static void ComparingSpecificPages()
 
 ## Membandingkan Seluruh Dokumen
 
-Cuplikan kode kedua memperluas cakupan untuk membandingkan seluruh konten dari dua dokumen PDF.
-
-Langkah-langkah:
-
-1. Inisialisasi Dokumen.
-Sama seperti pada contoh pertama, dua dokumen PDF diinisialisasi dengan jalur file mereka.
-
-2. Proses Perbandingan.
-
-- Perbandingan Seluruh Dokumen - tidak seperti cuplikan pertama, kode ini membandingkan seluruh konten dari kedua dokumen.
-
-- Opsi Perbandingan - opsi sama seperti di cuplikan pertama, memastikan bahwa spasi diabaikan, dan penanda perubahan tambahan ditampilkan.
-
-3. Hasil perbandingan, yang menyoroti perbedaan di seluruh halaman dari kedua dokumen, disimpan di file yang ditentukan oleh 'resultPdfPath'.
+Potongan kode kedua memperluas cakupan untuk membandingkan seluruh konten dari dua dokumen PDF.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -186,20 +171,20 @@ private static void ComparingEntireDocuments()
 }
 ```
 
-Hasil perbandingan yang dihasilkan oleh cuplikan ini adalah dokumen PDF yang dapat Anda buka di penampil seperti Adobe Acrobat. Jika Anda menggunakan tampilan Dua halaman di Adobe Acrobat, Anda akan melihat perubahan berdampingan:
+Hasil perbandingan yang dihasilkan oleh potongan kode ini adalah dokumen PDF yang dapat Anda buka di penampil seperti Adobe Acrobat. Jika Anda menggunakan tampilan Dua halaman di Adobe Acrobat, Anda akan melihat perubahan berdampingan:
 
 - Penghapusan - ini dicatat di halaman kiri.
 - Penyisipan - ini dicatat di halaman kanan.
 
-Dengan mengatur 'AdditionalChangeMarks' ke 'true', Anda juga dapat melihat penanda untuk perubahan yang mungkin terjadi di halaman lain, meskipun perubahan tersebut tidak ada di halaman saat ini yang sedang dilihat.
+Dengan mengatur 'AdditionalChangeMarks' ke 'true', Anda juga dapat melihat penanda untuk perubahan yang mungkin terjadi di halaman lain, bahkan jika perubahan tersebut tidak ada di halaman saat ini yang sedang dilihat.
 
-**Aspose.PDF for .NET** menyediakan alat yang kuat untuk membandingkan dokumen PDF, apakah Anda perlu membandingkan halaman tertentu atau seluruh dokumen. Dengan menggunakan opsi seperti 'AdditionalChangeMarks' dan pengaturan 'ComparisonMode' yang berbeda, Anda dapat menyesuaikan proses perbandingan sesuai kebutuhan spesifik Anda. Dokumen yang dihasilkan memberikan tampilan yang jelas, berdampingan dari perubahan, sehingga lebih mudah untuk melacak revisi dan memastikan akurasi dokumen.
+**Aspose.PDF for .NET** menyediakan alat yang kuat untuk membandingkan dokumen PDF, baik Anda perlu membandingkan halaman tertentu atau seluruh dokumen. Dengan menggunakan opsi seperti 'AdditionalChangeMarks' dan pengaturan 'ComparisonMode' yang berbeda, Anda dapat menyesuaikan proses perbandingan sesuai dengan kebutuhan spesifik Anda. Dokumen yang dihasilkan memberikan tampilan yang jelas, berdampingan dari perubahan, sehingga lebih mudah untuk melacak revisi dan memastikan akurasi dokumen.
 
 ## Bandingkan dokumen PDF menggunakan GraphicalPdfComparer
 
 Saat berkolaborasi pada dokumen, terutama di lingkungan profesional, Anda sering kali berakhir dengan beberapa versi dari file yang sama.
 
-Anda dapat menggunakan kelas [GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) untuk membandingkan dokumen dan halaman PDF. Kelas ini cocok untuk membandingkan perubahan dalam konten grafis sebuah halaman.
+Anda dapat menggunakan kelas [GraphicalPdfComparer](https://reference.aspose.com/pdf/id/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) untuk membandingkan dokumen dan halaman PDF. Kelas ini cocok untuk membandingkan perubahan dalam konten grafis halaman.
 
 Dengan Aspose.PDF for .NET, dimungkinkan untuk membandingkan dokumen dan halaman serta mengeluarkan hasil perbandingan ke dokumen PDF atau file gambar.
 
@@ -211,20 +196,20 @@ Anda dapat mengatur properti kelas berikut:
 
 Kelas ini memiliki metode yang memungkinkan Anda untuk mendapatkan perbedaan gambar halaman dalam bentuk yang cocok untuk pemrosesan lebih lanjut: **ImagesDifference GetDifference(Page page1, Page page2)**.
 
-Metode ini mengembalikan objek dari kelas [ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) yang berisi gambar dari halaman pertama yang dibandingkan dan array perbedaan. Array perbedaan dan gambar asli memiliki format piksel **RGB24bpp**.
+Metode ini mengembalikan objek dari kelas [ImagesDifference](https://reference.aspose.com/pdf/id/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) yang berisi gambar dari halaman pertama yang dibandingkan dan array perbedaan. Array perbedaan dan gambar asli memiliki format piksel **RGB24bpp**.
 
 ImagesDifference memungkinkan Anda untuk menghasilkan gambar yang berbeda dan mendapatkan gambar dari halaman kedua yang dibandingkan dengan menambahkan array perbedaan ke gambar asli. Untuk melakukan ini, gunakan metode **ImagesDifference.GetDestinationImage dan ImagesDifference.DifferenceToImage**.
 
 ### Bandingkan PDF dengan metode GetDifference
 
-Kode yang disediakan mendefinisikan metode [GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) yang membandingkan dua dokumen PDF dan menghasilkan representasi visual dari perbedaan antara keduanya.
+Kode yang disediakan mendefinisikan metode [GetDifference](https://reference.aspose.com/pdf/id/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) yang membandingkan dua dokumen PDF dan menghasilkan representasi visual dari perbedaan antara keduanya.
 
 Metode ini membandingkan halaman pertama dari dua file PDF dan menghasilkan dua gambar PNG:
 
 - Satu gambar (diffPngFilePath) menyoroti perbedaan antara halaman dalam warna merah.
 - Gambar lainnya (destPngFilePath) adalah representasi visual dari halaman PDF tujuan (kedua).
 
-Proses ini dapat berguna untuk membandingkan perubahan atau perbedaan secara visual antara dua versi dokumen.
+Proses ini dapat berguna untuk membandingkan secara visual perubahan atau perbedaan antara dua versi dokumen.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -259,7 +244,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 
 ### Bandingkan PDF dengan metode CompareDocumentsToPdf
 
-Cuplikan kode yang disediakan menggunakan metode [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) yang membandingkan dua dokumen dan menghasilkan laporan PDF dari hasil perbandingan.
+Potongan kode yang disediakan menggunakan metode [CompareDocumentsToPdf](https://reference.aspose.com/pdf/id/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) yang membandingkan dua dokumen dan menghasilkan laporan PDF dari hasil perbandingan.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

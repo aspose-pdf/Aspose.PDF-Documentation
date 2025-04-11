@@ -7,7 +7,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ko/net/convert-pdf-to-html/
 lastmod: "2021-11-01"
-description: 이 주제는 Aspose.PDF C# 라이브러리를 사용하여 PDF 파일을 HTML 형식으로 변환하는 방법을 보여줍니다.
+description: 이 주제에서는 Aspose.PDF C# 라이브러리를 사용하여 PDF 파일을 HTML 형식으로 변환하는 방법을 보여줍니다.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1368",
+    "wordcount": "1349",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-html/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하십시오."
 }
 </script>
@@ -82,10 +82,7 @@ sitemap:
 
 이 문서에서는 **C#을 사용하여 PDF를 HTML로 변환하는 방법**을 설명합니다. 다음 주제를 다룹니다.
 
-_형식_: **HTML**
-- [C# PDF를 HTML로 변환하기](#csharp-pdf-to-html)
-- [C# PDF를 HTML로 변환하기](#csharp-pdf-to-html)
-- [C# PDF 파일을 HTML로 변환하는 방법](#csharp-pdf-to-html)
+- [PDF를 HTML로 변환하기](#csharp-pdf-to-html)
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
@@ -113,11 +110,11 @@ Aspose.PDF for .NET은 ["PDF to HTML"](https://products.aspose.app/pdf/conversio
 [![Aspose.PDF PDF를 HTML로 변환하는 무료 앱](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
-Aspose.PDF for .NET은 소스 PDF 파일을 HTML로 변환하는 두 줄의 코드를 제공합니다. [`SaveFormat enumeration`](https://reference.aspose.com/pdf/net/aspose.pdf/saveformat)에는 소스 파일을 HTML로 저장할 수 있는 값 Html이 포함되어 있습니다. 다음 코드 스니펫은 PDF 파일을 HTML로 변환하는 과정을 보여줍니다.
+Aspose.PDF for .NET은 소스 PDF 파일을 HTML로 변환하기 위한 두 줄의 코드를 제공합니다. [`SaveFormat enumeration`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/saveformat)에는 소스 파일을 HTML로 저장할 수 있는 값 Html이 포함되어 있습니다. 다음 코드 스니펫은 PDF 파일을 HTML로 변환하는 과정을 보여줍니다.
 
-<a name="csharp-pdf-to-html"><strong>단계: C#에서 PDF를 HTML로 변환하기</strong></a>
+<a name="csharp-pdf-to-html" id="cshart-pdf-to-html"><strong>PDF를 HTML로 변환하기</strong></a>
 
-1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
+1. 소스 PDF 문서로 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/) 객체의 인스턴스를 생성합니다.
 2. **Document.Save()** 메서드를 호출하여 **SaveFormat.Html** 형식으로 저장합니다.
 
 ```csharp
@@ -138,7 +135,7 @@ private static void ConvertPDFtoHTML()
 
 ### 출력 다중 페이지 HTML로 분할하기
 
-여러 페이지가 있는 큰 PDF 파일을 HTML 형식으로 변환할 때 출력은 단일 HTML 페이지로 나타납니다. 매우 길어질 수 있습니다. 페이지 크기를 제어하기 위해 PDF를 HTML로 변환하는 동안 출력을 여러 페이지로 분할할 수 있습니다. 다음 코드 스니펫을 사용해 보십시오.
+여러 페이지가 있는 큰 PDF 파일을 HTML 형식으로 변환할 때 출력은 단일 HTML 페이지로 나타납니다. 이는 매우 길어질 수 있습니다. 페이지 크기를 제어하기 위해 PDF를 HTML로 변환하는 동안 출력을 여러 페이지로 분할할 수 있습니다. 다음 코드 스니펫을 사용해 보십시오.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -165,7 +162,7 @@ private static void ConvertPDFtoMultiPageHTML()
 
 ### SVG 파일 저장을 위한 폴더 지정하기
 
-PDF를 HTML로 변환하는 동안 SVG 이미지를 저장할 폴더를 지정할 수 있습니다. [`HtmlSaveOption class`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions)에서 [`SpecialFolderForSvgImages property`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages)를 사용하여 특별한 SVG 이미지 디렉토리를 지정합니다. 이 속성은 변환 중에 SVG 이미지를 저장해야 하는 디렉토리의 경로를 가져오거나 설정합니다. 매개변수가 비어 있거나 null인 경우 모든 SVG 파일은 다른 이미지 파일과 함께 저장됩니다.
+PDF를 HTML로 변환하는 동안 SVG 이미지를 저장할 폴더를 지정할 수 있습니다. [`HtmlSaveOption class`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlsaveoptions) [`SpecialFolderForSvgImages property`](https://reference.aspose.com/pdf/ko/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages)를 사용하여 특별한 SVG 이미지 디렉토리를 지정합니다. 이 속성은 변환 중에 SVG 이미지를 저장해야 하는 디렉토리의 경로를 가져오거나 설정합니다. 매개변수가 비어 있거나 null인 경우 모든 SVG 파일은 다른 이미지 파일과 함께 저장됩니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -219,7 +216,7 @@ private static void SavePDFtoCompressedHTMLWithSVG()
 
 ### 이미지를 PNG 배경으로 저장하기
 
-이미지를 저장하기 위한 기본 출력 형식은 SVG입니다. 변환 중 PDF의 일부 이미지는 SVG 벡터 이미지로 변환됩니다. 이는 느릴 수 있습니다. 대신 각 페이지에 대해 하나의 PNG 배경 파일로 이미지를 변환할 수 있습니다.
+이미지를 저장하기 위한 기본 출력 형식은 SVG입니다. 변환 중에 PDF의 일부 이미지는 SVG 벡터 이미지로 변환됩니다. 이는 느릴 수 있습니다. 대신 각 페이지에 대해 하나의 PNG 배경 파일로 이미지를 변환할 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -243,7 +240,7 @@ private static void PdfToHtmlSaveImagesAsPngBackground()
 
 ### 이미지 폴더 지정하기
 
-PDF를 HTML로 변환하는 동안 이미지가 저장될 폴더를 지정할 수도 있습니다:
+PDF를 HTML로 변환하는 동안 이미지를 저장할 폴더를 지정할 수도 있습니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -270,11 +267,11 @@ private static void SavePDFtoHTMLWithSeparateImageFolder()
 
 ### 본문 내용만 포함된 후속 파일 생성하기
 
-최근에 PDF 파일을 HTML로 변환하고 사용자가 각 페이지의 `<body>` 태그의 내용만 가져올 수 있는 기능을 도입해 달라는 요청을 받았습니다. 이렇게 하면 CSS, `<html>`, `<head>` 세부 정보가 포함된 하나의 파일과 다른 파일에는 `<body>` 내용만 포함된 모든 페이지가 생성됩니다.
+최근에 PDF 파일을 HTML로 변환하고 사용자가 각 페이지의 `<body>` 태그의 내용만 가져올 수 있는 기능을 도입해 달라는 요청을 받았습니다. 이는 CSS, `<html>`, `<head>` 세부 사항이 포함된 하나의 파일과 다른 파일에 `<body>` 내용만 포함된 모든 페이지를 생성합니다.
 
 이 요구 사항을 충족하기 위해 HtmlSaveOptions 클래스에 HtmlMarkupGenerationMode라는 새로운 속성이 도입되었습니다.
 
-다음 간단한 코드 스니펫을 사용하여 출력 HTML을 페이지로 분할할 수 있습니다. 출력 페이지에서는 모든 HTML 객체가 현재 위치에 정확히 배치되어야 합니다(글꼴 처리 및 출력, CSS 생성 및 출력, 이미지 생성 및 출력), 단 출력 HTML에는 현재 태그 안에 있는 내용만 포함됩니다(현재 "body" 태그는 생략됩니다). 그러나 이 접근 방식을 사용할 때 CSS에 대한 링크는 귀하의 코드의 책임입니다. 왜냐하면와 같은 것들이 제거될 것이기 때문입니다. 이를 위해 File.ReadAllText()를 통해 CSS를 읽고 AJAX를 통해 웹 페이지로 전송하여 jQuery로 적용할 수 있습니다.
+다음 간단한 코드 스니펫을 사용하여 출력 HTML을 페이지로 분할할 수 있습니다. 출력 페이지에서 모든 HTML 객체는 현재 위치에 정확히 배치되어야 합니다(글꼴 처리 및 출력, CSS 생성 및 출력, 이미지 생성 및 출력), 단 출력 HTML은 현재 태그 내에 있는 내용을 포함하게 됩니다(현재 "body" 태그는 생략됩니다). 그러나 이 접근 방식을 사용할 때 CSS에 대한 링크는 귀하의 코드의 책임입니다. 왜냐하면 것과 같은 것들은 제거될 것이기 때문입니다. 이를 위해 File.ReadAllText()를 통해 CSS를 읽고 AJAX를 통해 웹 페이지로 전송하여 jQuery로 적용할 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -305,7 +302,7 @@ private static void ConvertPDFToHTMLWithBodyContent()
 
 ### 투명 텍스트 렌더링
 
-소스/입력 PDF 파일에 전경 이미지에 의해 그림자가 있는 투명 텍스트가 포함된 경우 텍스트 렌더링 문제 발생할 수 있습니다. 따라서 이러한 시나리오를 처리하기 위해 SaveShadowedTextsAsTransparentTexts 및 SaveTransparentTexts 속성을 사용할 수 있습니다.
+소스/입력 PDF 파일에 전경 이미지에 의해 그림자가 드리워진 투명 텍스트가 포함된 경우 텍스트 렌더링 문제가 발생할 수 있습니다. 따라서 이러한 시나리오를 처리하기 위해 SaveShadowedTextsAsTransparentTexts 및 SaveTransparentTexts 속성을 사용할 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -357,17 +354,3 @@ private static void ConvertPDFToHTMLWithLayersRendering()
     }
 }
 ```
-
-## 참조
-
-이 문서에서는 다음 주제도 다룹니다. 코드는 위와 동일합니다.
-
-_형식_: **HTML**
-- [C# PDF를 HTML로 변환하기 코드](#csharp-pdf-to-html)
-- [C# PDF를 HTML로 변환하기 API](#csharp-pdf-to-html)
-- [C# PDF를 HTML로 프로그래밍 방식으로 변환하기](#csharp-pdf-to-html)
-- [C# PDF를 HTML로 변환하기 라이브러리](#csharp-pdf-to-html)
-- [C# PDF를 HTML로 저장하기](#csharp-pdf-to-html)
-- [C# PDF에서 HTML 생성하기](#csharp-pdf-to-html)
-- [C# PDF에서 HTML 만들기](#csharp-pdf-to-html)
-- [C# PDF를 HTML로 변환하는 도구](#csharp-pdf-to-html)

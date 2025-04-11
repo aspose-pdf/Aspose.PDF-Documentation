@@ -83,15 +83,15 @@ Nuestro documento contendrá una imagen, dos fragmentos de texto (encabezado y p
 
 Si creamos un documento desde cero, necesitamos seguir ciertos pasos:
 
-1. Instanciar un objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). En este paso crearemos un documento PDF vacío con algunos metadatos pero sin páginas.
-1. Agregar una [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) al objeto documento. Así, ahora nuestro documento tendrá una página.
-1. Agregar una [Image](https://reference.aspose.com/pdf/net/aspose.pdf/image/methods/index) a la página.
-1. Crear un [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) para el encabezado. Para el encabezado utilizaremos la fuente Arial con un tamaño de fuente de 24pt y alineación centrada.
-1. Agregar el encabezado a los [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la página.
-1. Crear un [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) para la descripción. Para la descripción utilizaremos la fuente Arial con un tamaño de fuente de 24pt y alineación centrada.
+1. Instanciar un objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document). En este paso crearemos un documento PDF vacío con algunos metadatos pero sin páginas.
+1. Agregar una [Page](https://reference.aspose.com/pdf/es/net/aspose.pdf/page) al objeto documento. Así, ahora nuestro documento tendrá una página.
+1. Agregar una [Image](https://reference.aspose.com/pdf/es/net/aspose.pdf/image/methods/index) a la página.
+1. Crear un [TextFragment](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textfragment) para el encabezado. Para el encabezado utilizaremos la fuente Arial con un tamaño de fuente de 24pt y alineación centrada.
+1. Agregar el encabezado a los [Paragraphs](https://reference.aspose.com/pdf/es/net/aspose.pdf/page/properties/paragraphs) de la página.
+1. Crear un [TextFragment](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textfragment) para la descripción. Para la descripción utilizaremos la fuente Arial con un tamaño de fuente de 24pt y alineación centrada.
 1. Agregar (descripción) a los párrafos de la página.
 1. Crear una tabla, agregar propiedades a la tabla.
-1. Agregar (tabla) a los [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la página.
+1. Agregar (tabla) a los [Paragraphs](https://reference.aspose.com/pdf/es/net/aspose.pdf/page/properties/paragraphs) de la página.
 1. Guardar el documento como "Complex.pdf".
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/). 

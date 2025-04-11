@@ -85,14 +85,14 @@ sitemap:
 
 من خلال إضافة رابط إلى تطبيق في مستند، من الممكن الربط بالتطبيقات من مستند. هذا مفيد عندما تريد من القراء اتخاذ إجراء معين في نقطة معينة في درس، على سبيل المثال، أو لإنشاء مستند غني بالميزات. لإنشاء رابط تطبيق:
 
-1. [إنشاء مستند](https://reference.aspose.com/pdf/net/aspose.pdf/document) كائن.
-1. احصل على [الصفحة](https://reference.aspose.com/pdf/net/aspose.pdf/page) التي تريد إضافة الرابط إليها.
-1. أنشئ كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) باستخدام كائنات الصفحة و [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) .
-1. قم بتعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) .
-1. أيضًا، قم بتعيين خاصية Action لكائن [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) .
-1. عند إنشاء كائن [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) ، حدد التطبيق الذي تريد تشغيله.
-1. أضف الرابط إلى خاصية [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations) لكائن الصفحة.
-1. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن المستند.
+1. [إنشاء مستند](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) كائن.
+1. احصل على [الصفحة](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) التي تريد إضافة الرابط إليها.
+1. أنشئ كائن [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) باستخدام كائنات الصفحة و [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf/rectangle) .
+1. قم بتعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) .
+1. أيضًا، قم بتعيين خاصية Action لكائن [LaunchAction](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/launchaction) .
+1. عند إنشاء كائن [LaunchAction](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/launchaction) ، حدد التطبيق الذي تريد تشغيله.
+1. أضف الرابط إلى خاصية [Annotations](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page/properties/annotations) لكائن الصفحة.
+1. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save) لكائن المستند.
 
 تظهر مقتطفات الشيفرة التالية كيفية إنشاء رابط لتطبيق في ملف PDF.
 
@@ -151,14 +151,14 @@ private static void CreateLinkAnnotation()
 
 تتيح لك Aspose.PDF for .NET إضافة رابط إلى ملف PDF خارجي بحيث يمكنك ربط عدة مستندات معًا. لإنشاء رابط مستند PDF:
 
-1. أولاً، أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
-1. ثم، احصل على [الصفحة](https://reference.aspose.com/pdf/net/aspose.pdf/page) المحددة التي تريد إضافة الرابط إليها.
-1. أنشئ كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) باستخدام كائنات الصفحة و [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) .
-1. قم بتعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) .
-1. قم بتعيين خاصية Action لكائن [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction) .
+1. أولاً، أنشئ كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
+1. ثم، احصل على [الصفحة](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) المحددة التي تريد إضافة الرابط إليها.
+1. أنشئ كائن [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) باستخدام كائنات الصفحة و [Rectangle](https://reference.aspose.com/pdf/ar/net/aspose.pdf/rectangle) .
+1. قم بتعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/linkannotation) .
+1. قم بتعيين خاصية Action لكائن [GoToRemoteAction](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/gotoremoteaction) .
 1. أثناء إنشاء كائن GoToRemoteAction، حدد ملف PDF الذي يجب تشغيله، بالإضافة إلى رقم الصفحة التي يجب فتحها.
 1. أضف الرابط إلى مجموعة Annotations لكائن الصفحة.
-1. احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن المستند.
+1. احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save) لكائن المستند.
 
 تظهر مقتطفات الشيفرة التالية كيفية إنشاء رابط مستند PDF في ملف PDF.
 

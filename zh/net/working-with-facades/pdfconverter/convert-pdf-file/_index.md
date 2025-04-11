@@ -77,7 +77,7 @@ draft: false
 
 ## 将 PDF 页面转换为不同的图像格式 (Facades)
 
-为了将 PDF 页面转换为不同的图像格式，您需要创建 [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) 对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法打开 PDF 文件。之后，您需要调用 [DoConvert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/doconvert) 方法进行初始化任务。然后，您可以使用 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/hasnextimage) 和 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) 方法循环遍历所有页面。[GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) 方法允许您创建特定页面的图像。您还需要将 ImageFormat 传递给此方法，以便创建特定类型的图像，即 JPEG、GIF 或 PNG 等。最后，调用 [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) 类的 [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/close) 方法。以下代码片段向您展示如何将 PDF 页面转换为图像。
+为了将 PDF 页面转换为不同的图像格式，您需要创建 [PdfConverter](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter) 对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法打开 PDF 文件。之后，您需要调用 [DoConvert](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter/methods/doconvert) 方法进行初始化任务。然后，您可以使用 [HasNextImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter/methods/hasnextimage) 和 [GetNextImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) 方法循环遍历所有页面。[GetNextImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) 方法允许您创建特定页面的图像。您还需要将 ImageFormat 传递给此方法，以便创建特定类型的图像，即 JPEG、GIF 或 PNG 等。最后，调用 [PdfConverter](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter) 类的 [Close](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter/methods/close) 方法。以下代码片段向您展示如何将 PDF 页面转换为图像。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -107,7 +107,7 @@ private static void ConvertPdfPagesToImages01()
 }
 ```
 
-在下一个代码片段中，我们将展示如何更改一些参数。通过 [CoordinateType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/coordinatetype) 我们设置框架为 'CropBox'。此外，我们可以通过指定每英寸的点数来更改 [Resolution](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/resolution)。下一个 [FormPresentationMode](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/formpresentationmode) - 表单呈现模式。然后我们指明 [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/startpage)，设置转换开始的页面编号。我们还可以通过设置范围来指定最后一页。
+在下一个代码片段中，我们将展示如何更改一些参数。通过 [CoordinateType](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter/properties/coordinatetype) 我们设置框架为 'CropBox'。此外，我们可以通过指定每英寸的点数来更改 [Resolution](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter/properties/resolution)。下一个 [FormPresentationMode](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter/properties/formpresentationmode) - 表单呈现模式。然后我们指明 [StartPage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter/properties/startpage)，设置转换开始的页面编号。我们还可以通过设置范围来指定最后一页。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,9 +83,9 @@ sitemap:
 
 ## الحصول على الإشارات المرجعية
 
-تحتوي مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) على جميع إشارات مرجعية لملف PDF. تشرح هذه المقالة كيفية الحصول على الإشارات المرجعية من ملف PDF، وكيفية معرفة الصفحة التي توجد عليها إشارة مرجعية معينة.
+تحتوي مجموعة [OutlineCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) على جميع إشارات مرجعية لملف PDF. تشرح هذه المقالة كيفية الحصول على الإشارات المرجعية من ملف PDF، وكيفية معرفة الصفحة التي توجد عليها إشارة مرجعية معينة.
 
-للحصول على الإشارات المرجعية، قم بالتكرار عبر مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) واحصل على كل إشارة مرجعية في OutlineItemCollection. توفر OutlineItemCollection الوصول إلى جميع خصائص الإشارة المرجعية. يوضح جزء الكود التالي كيفية الحصول على الإشارات المرجعية من ملف PDF.
+للحصول على الإشارات المرجعية، قم بالتكرار عبر مجموعة [OutlineCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection) واحصل على كل إشارة مرجعية في OutlineItemCollection. توفر OutlineItemCollection الوصول إلى جميع خصائص الإشارة المرجعية. يوضح جزء الكود التالي كيفية الحصول على الإشارات المرجعية من ملف PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -213,7 +213,7 @@ private static void GetBookmarkPageNumber()
 
 ## الحصول على الإشارات المرجعية الفرعية من مستند PDF
 
-يمكن تنظيم الإشارات المرجعية في هيكل هرمي، مع وجود آباء وأبناء. للحصول على جميع الإشارات المرجعية، قم بالتكرار عبر مجموعات Outlines لكائن Document. ومع ذلك، للحصول على الإشارات المرجعية الفرعية أيضًا، قم بالتكرار عبر جميع الإشارات المرجعية في كل كائن [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) تم الحصول عليه في الحلقة الأولى. توضح أجزاء الكود التالية كيفية الحصول على الإشارات المرجعية الفرعية من مستند PDF.
+يمكن تنظيم الإشارات المرجعية في هيكل هرمي، مع وجود آباء وأبناء. للحصول على جميع الإشارات المرجعية، قم بالتكرار عبر مجموعات Outlines لكائن Document. ومع ذلك، للحصول على الإشارات المرجعية الفرعية أيضًا، قم بالتكرار عبر جميع الإشارات المرجعية في كل كائن [OutlineItemCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlineitemcollection) تم الحصول عليه في الحلقة الأولى. توضح أجزاء الكود التالية كيفية الحصول على الإشارات المرجعية الفرعية من مستند PDF.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -294,7 +294,7 @@ private static void GetChildBookmarks()
 
 ## تحديث الإشارات المرجعية في مستند PDF
 
-لتحديث إشارة مرجعية في ملف PDF، أولاً، احصل على الإشارة المرجعية المحددة من مجموعة OutlineColletion لكائن Document عن طريق تحديد فهرس الإشارة المرجعية. بمجرد استرجاع الإشارة المرجعية إلى كائن [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)، يمكنك تحديث خصائصها ثم حفظ ملف PDF المحدث باستخدام طريقة Save. توضح أجزاء الكود التالية كيفية تحديث الإشارات المرجعية في مستند PDF.
+لتحديث إشارة مرجعية في ملف PDF، أولاً، احصل على الإشارة المرجعية المحددة من مجموعة OutlineColletion لكائن Document عن طريق تحديد فهرس الإشارة المرجعية. بمجرد استرجاع الإشارة المرجعية إلى كائن [OutlineItemCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlineitemcollection)، يمكنك تحديث خصائصها ثم حفظ ملف PDF المحدث باستخدام طريقة Save. توضح أجزاء الكود التالية كيفية تحديث الإشارات المرجعية في مستند PDF.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -350,7 +350,7 @@ private static void UpdateBookmarks()
 لتحديث إشارة مرجعية فرعية:
 
 1. استرجع الإشارة المرجعية الفرعية التي تريد تحديثها من ملف PDF عن طريق أولاً الحصول على الإشارة المرجعية الرئيسية ثم الإشارة المرجعية الفرعية باستخدام قيم الفهرس المناسبة.
-1. احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1).
+1. احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/1).
 
 {{% alert color="primary" %}}
 
@@ -417,7 +417,7 @@ private static void UpdateChildBookmarks()
 
 ## توسيع الإشارات المرجعية عند عرض المستند
 
-تحتفظ الإشارات المرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) لكائن Document، والتي توجد بدورها في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). ومع ذلك، قد يكون لدينا متطلبات لجعل جميع الإشارات المرجعية موسعة عند عرض ملف PDF.
+تحتفظ الإشارات المرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlineitemcollection) لكائن Document، والتي توجد بدورها في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/outlinecollection). ومع ذلك، قد يكون لدينا متطلبات لجعل جميع الإشارات المرجعية موسعة عند عرض ملف PDF.
 
 لتحقيق هذا المتطلب، يمكننا تعيين حالة الفتح لكل عنصر مرجعي/إشارة مرجعية كـ Open. يوضح جزء الكود التالي كيفية تعيين حالة الفتح لكل إشارة مرجعية كـ موسعة في مستند PDF.
 

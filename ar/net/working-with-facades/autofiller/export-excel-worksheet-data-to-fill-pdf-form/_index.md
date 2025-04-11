@@ -77,8 +77,8 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) تقدم طرقًا متنوعة لملء نماذج PDF. يمكنك استيراد البيانات من ملف XML، DFD، XFDF، استخدام API وحتى استخدام البيانات من ورقة عمل Excel.
-سنستخدم طريقة [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) من فئة [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) من [Aspose.Cells](https://docs.aspose.com//cells/net) لتصدير البيانات من ورقة Excel إلى كائن DataTable. ثم سنقوم باستيراد هذه البيانات إلى نموذج PDF باستخدام طريقة [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) من فئة [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). تأكد من أن اسم العمود في DataTable هو نفسه اسم الحقل في نموذج PDF.
+[مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) تقدم طرقًا متنوعة لملء نماذج PDF. يمكنك استيراد البيانات من ملف XML، DFD، XFDF، استخدام API وحتى استخدام البيانات من ورقة عمل Excel.
+سنستخدم طريقة [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) من فئة [Cells](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cells) من [Aspose.Cells](https://docs.aspose.com//cells/net) لتصدير البيانات من ورقة Excel إلى كائن DataTable. ثم سنقوم باستيراد هذه البيانات إلى نموذج PDF باستخدام طريقة [ImportDataTable](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/autofiller/methods/importdatatable) من فئة [AutoFiller](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/autofiller). تأكد من أن اسم العمود في DataTable هو نفسه اسم الحقل في نموذج PDF.
 
 {{% /alert %}}
 
@@ -92,7 +92,7 @@ draft: false
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
-نحتاج إلى إنشاء كائن من فئة [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) وربط نموذج PDF الموجود في الصور أعلاه واستخدام طريقة [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) لملء حقول النموذج باستخدام البيانات الموجودة في كائن DataTable.
+نحتاج إلى إنشاء كائن من فئة [AutoFiller](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/autofiller) وربط نموذج PDF الموجود في الصور أعلاه واستخدام طريقة [ImportDataTable](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/autofiller/methods/importdatatable) لملء حقول النموذج باستخدام البيانات الموجودة في كائن DataTable.
 بمجرد استدعاء الطريقة، يتم إنشاء ملف نموذج PDF جديد يحتوي على خمس صفحات مع نموذج مملوء بناءً على البيانات من ورقة Excel. كان نموذج PDF المدخل صفحة واحدة والنتيجة هي خمس صفحات، لأن عدد صفوف البيانات في ورقة Excel هو 5. توفر فئة DataTable القدرة على استخدام الصف الأول من الورقة كاسم العمود.
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
@@ -216,5 +216,5 @@ private static System.Data.DataTable GenerateDataTable()
 ## الخاتمة
 
 {{% alert color="primary" %}}
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) تقدم أيضًا القدرة على ملء نموذج PDF باستخدام البيانات من قاعدة البيانات، ولكن هذه الميزة مدعومة حاليًا في إصدار .NET فقط.
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) تقدم أيضًا القدرة على ملء نموذج PDF باستخدام البيانات من قاعدة البيانات، ولكن هذه الميزة مدعومة حاليًا في إصدار .NET فقط.
 {{% /alert %}}

@@ -86,9 +86,9 @@ sitemap:
 
 يظهر هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات .NET الخاصة بك. لتقسيم صفحات PDF إلى ملفات PDF صفحة واحدة باستخدام C#، يمكن اتباع الخطوات التالية:
 
-1. قم بالتكرار عبر صفحات مستند PDF من خلال مجموعة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) الخاصة بكائن [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. في كل تكرار، قم بإنشاء كائن Document جديد وأضف كائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) الفردي إلى المستند الفارغ.
-1. احفظ PDF الجديد باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. قم بالتكرار عبر صفحات مستند PDF من خلال مجموعة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) الخاصة بكائن [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection).
+1. في كل تكرار، قم بإنشاء كائن Document جديد وأضف كائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) الفردي إلى المستند الفارغ.
+1. احفظ PDF الجديد باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 

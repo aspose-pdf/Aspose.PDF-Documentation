@@ -7,7 +7,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /zh/net/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
-description: 了解如何使用 Aspose.PDF 在 .NET 中将 PDF 文件转换为 PDF/A 格式以进行归档。
+description: 学习如何使用 Aspose.PDF 在 .NET 中将 PDF 文件转换为 PDF/A 格式以进行归档。
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to PDF/A formats",
     "alternativeHeadline": "Effortless PDF to PDF/A Conversion with Validation in C#",
-    "abstract": "Aspose.PDF for .NET 中的功能实现了标准 PDF 文件与各种 PDF/A 合规格式之间的无缝转换，包括 PDF/A-1b、PDF/A-2u 和 PDF/A-3a。此功能不仅通过全面验证确保符合 PDF/A 标准，还允许附加文件和替换缺失字体，从而增强文档的完整性和可访问性。探索 Aspose.PDF 的强大功能，以实现高效可靠的 PDF/A 转换。",
+    "abstract": "Aspose.PDF for .NET 中的功能实现了标准 PDF 文件无缝转换为各种 PDF/A 合规格式，包括 PDF/A-1b、PDF/A-2u 和 PDF/A-3a。此功能不仅通过全面验证确保符合 PDF/A 标准，还允许附加文件和替换缺失字体，从而增强文档的完整性和可访问性。探索 Aspose.PDF 的强大功能，以实现高效可靠的 PDF/A 转换。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "1623",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,12 +73,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF 不仅可以执行简单易行的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
 }
 </script>
 
-**Aspose.PDF for .NET** 允许您将 PDF 文件转换为符合 <abbr title="可移植文档格式 / A">PDF/A</abbr> 的 PDF 文件。在此之前，必须对文件进行验证。本文将解释如何进行验证。
+**Aspose.PDF for .NET** 允许您将 PDF 文件转换为 <abbr title="Portable Document Format / A">PDF/A</abbr> 合规的 PDF 文件。在此之前，必须对文件进行验证。本文将解释如何进行验证。
+
+- [将 PDF 转换为 PDF/A-1b](#csharp-convert-pdf-to-a1b)
+- [将 PDF 转换为 PDF/A-3b](#csharp-convert-pdf-to-a3b)
+- [将 PDF 转换为 PDF/A-4](#csharp-convert-pdf-to-a4)
 
 {{% alert color="primary" %}}
 
@@ -91,7 +95,7 @@ sitemap:
 {{% alert color="success" %}}
 **尝试在线将 PDF 转换为 PDF/A**
 
-Aspose.PDF for .NET 为您提供了在线免费应用程序 ["PDF 到 PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)，您可以尝试探索其功能和工作质量。
+Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)，您可以尝试探索其功能和工作质量。
 
 [![Aspose.PDF 将 PDF 转换为 PDF/A 的免费应用](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
@@ -102,6 +106,8 @@ Aspose.PDF for .NET 为您提供了在线免费应用程序 ["PDF 到 PDF/A-1A"]
 我们支持以下标准：PDF/A-1b、PDF/A-1a、PDF/A-2b、PDF/A-2u、PDF/A-2a、PDF/A-3b、PDF/A-3u、PDF/A-3a、PDF/A-4、PDF/A-4e、PDF/A-4f。
 
 ## 将 PDF 文件转换为 PDF/A-1b
+
+<a name="csharp-convert-pdf-to-a1b" id="csharp-convert-pdf-to-a1b"><strong>将 PDF 转换为 PDF/A-1b</strong></a>
 
 以下代码片段演示如何将 PDF 文件转换为 PDF/A-1b 合规的 PDF。
 
@@ -191,6 +197,8 @@ private static void ValidatePdfAStandard()
 
 ## 将 PDF 文件转换为 PDF/A-3b
 
+<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>将 PDF 转换为 PDF/A-3b</strong></a>
+
 Aspose.PDF for .NET 还支持将 PDF 文件转换为 PDF/A-3b 格式的功能。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -237,6 +245,8 @@ private static void ConvertPdfToPdfA3b()
 {{< /tabs >}}
 
 ## 将 PDF 文件转换为 PDF/A-4
+
+<a name="csharp-convert-pdf-to-a4" id="csharp-convert-pdf-to-a4"><strong>将 PDF 转换为 PDF/A-4</strong></a>
 
 Aspose.PDF for .NET 还支持将 PDF 文件转换为 PDF/A-4 格式的功能。
 

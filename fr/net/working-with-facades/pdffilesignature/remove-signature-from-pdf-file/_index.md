@@ -79,7 +79,7 @@ draft: false
 
 Lorsqu'une signature a été ajoutée à un fichier PDF, il est possible de la supprimer. Vous pouvez supprimer soit une signature particulière, soit toutes les signatures d'un fichier. La méthode la plus rapide pour supprimer la signature supprime également le champ de signature, mais il est possible de simplement supprimer la signature, en conservant le champ de signature afin que le fichier puisse être signé à nouveau.
 
-La méthode RemoveSignature de la classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) vous permet de supprimer une signature d'un fichier PDF. Cette méthode prend le nom de la signature comme entrée. Soit spécifiez le nom de la signature directement, pour supprimer toutes les signatures, obtenez les noms des signatures en utilisant la méthode [GetSignNames](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
+La méthode RemoveSignature de la classe [PdfFileSignature](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesignature) vous permet de supprimer une signature d'un fichier PDF. Cette méthode prend le nom de la signature comme entrée. Soit spécifiez le nom de la signature directement, pour supprimer toutes les signatures, obtenez les noms des signatures en utilisant la méthode [GetSignNames](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesignature/methods/getsignername).
 
 L'extrait de code suivant montre comment supprimer la signature numérique du fichier PDF.
 
@@ -111,7 +111,7 @@ private static void RemoveSignature()
 
 ### Supprimer la signature mais conserver le champ de signature
 
-Comme indiqué ci-dessus, la méthode [RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) de la classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) vous permet de supprimer des champs de signature des fichiers PDF. Lorsque vous utilisez cette méthode avec des versions antérieures à 9.3.0, la signature et le champ de signature sont tous deux supprimés. Certains développeurs souhaitent supprimer uniquement la signature et conserver le champ de signature afin qu'il puisse être utilisé pour resigné le document. Pour conserver le champ de signature et supprimer uniquement la signature, veuillez utiliser l'extrait de code suivant.
+Comme indiqué ci-dessus, la méthode [RemoveSignature](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) de la classe [PdfFileSignature](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesignature) vous permet de supprimer des champs de signature des fichiers PDF. Lorsque vous utilisez cette méthode avec des versions antérieures à 9.3.0, la signature et le champ de signature sont tous deux supprimés. Certains développeurs souhaitent supprimer uniquement la signature et conserver le champ de signature afin qu'il puisse être utilisé pour resigné le document. Pour conserver le champ de signature et supprimer uniquement la signature, veuillez utiliser l'extrait de code suivant.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

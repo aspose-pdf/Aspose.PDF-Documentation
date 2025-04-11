@@ -168,7 +168,7 @@ private static void LoadingFontFromStream()
 
 ## 使用 TextParagraph 添加文本
 
-以下代码片段展示了如何使用 [TextParagraph](https://reference.aspose.com/pdf/net/aspose.pdf.text/textparagraph) 类在 PDF 文档中添加文本。
+以下代码片段展示了如何使用 [TextParagraph](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textparagraph) 类在 PDF 文档中添加文本。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void AddTextWithTextParagraph()
 
 ## 向 TextSegment 添加超链接
 
-一个 PDF 页面可以包含一个或多个 TextFragment 对象，其中每个 TextFragment 对象可以有一个或多个 TextSegment 实例。为了为 TextSegment 设置超链接，可以使用 [TextSegment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textsegment) 类的 Hyperlink 属性，同时提供 Aspose.Pdf.WebHyperlink 实例的对象。请尝试使用以下代码片段来实现此要求。
+一个 PDF 页面可以包含一个或多个 TextFragment 对象，其中每个 TextFragment 对象可以有一个或多个 TextSegment 实例。为了为 TextSegment 设置超链接，可以使用 [TextSegment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textsegment) 类的 Hyperlink 属性，同时提供 Aspose.Pdf.WebHyperlink 实例的对象。请尝试使用以下代码片段来实现此要求。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -291,7 +291,7 @@ private static void UseOTFFont()
 
 Aspose.Pdf.Generator.Text 类包含一个名为 IsHtmlTagSupported 的属性，使得可以将 HTML 标签/内容添加到 PDF 文件中。添加的内容以原生 HTML 标签呈现，而不是作为简单的文本字符串出现。为了在 Aspose.Pdf 命名空间的新文档对象模型 (DOM) 中支持类似功能，引入了 HtmlFragment 类。
 
-[HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment) 实例可用于指定应放置在 PDF 文件中的 HTML 内容。与 TextFragment 类似，HtmlFragment 是一个段落级对象，可以添加到 Page 对象的段落集合中。以下代码片段展示了使用 DOM 方法将 HTML 内容放置在 PDF 文件中的步骤。
+[HtmlFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf/htmlfragment) 实例可用于指定应放置在 PDF 文件中的 HTML 内容。与 TextFragment 类似，HtmlFragment 是一个段落级对象，可以添加到 Page 对象的段落集合中。以下代码片段展示了使用 DOM 方法将 HTML 内容放置在 PDF 文件中的步骤。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -838,7 +838,7 @@ private static void CreateMultiColumnPdf()
 
 制表符停止是制表的停止点。在文字处理过程中，每行包含若干个以规则间隔放置的制表符停止（例如，每半英寸）。然而，它们可以被更改，因为大多数文字处理器允许您在任何位置设置制表符停止。当您按下 Tab 键时，光标或插入点跳到下一个制表符停止，而制表符停止本身是不可见的。尽管制表符停止在文本文件中不存在，但文字处理器会跟踪它们，以便能够正确响应 Tab 键。
 
-[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) 允许开发人员在 PDF 文档中使用自定义制表符停止。Aspose.Pdf.Text.TabStop 类用于在 [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) 类中设置自定义制表符停止。
+[Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) 允许开发人员在 PDF 文档中使用自定义制表符停止。Aspose.Pdf.Text.TabStop 类用于在 [TextFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragment) 类中设置自定义制表符停止。
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) 还提供了一些预定义的制表符引导类型，作为名为 TabLeaderType 的枚举，其预定义值及其描述如下：
 
@@ -944,7 +944,7 @@ private static void AddTransparentText()
 
 ## 为字体指定行间距
 
-每种字体都有一个抽象的正方形，其高度是同一字号的行间距。这个正方形称为 em 正方形，它是定义字形轮廓的设计网格。许多输入字体的字母有些点位于字体的 em 正方形边界之外，因此为了正确显示字体，需要使用特殊设置。TextFragment 对象具有一组可通过属性 TextState.FormattingOptions 访问的文本格式选项。此路径的最后一个属性是类型为 Aspose.Pdf.Text.TextFormattingOptions 的属性。该类具有一个枚举 [LineSpacingMode](https://reference.aspose.com/pdf/net/aspose.pdf.text.textformattingoptions/linespacingmode)，专为特定字体设计，例如输入字体 "HPSimplified.ttf"。此外，类 [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions) 具有一个类型为 LineSpacingMode 的属性 [LineSpacing](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions/properties/linespacing)。您只需将 LineSpacing 设置为 LineSpacingMode.FullSize。获取正确显示字体的代码片段如下：
+每种字体都有一个抽象的正方形，其高度是同一字号的行间距。这个正方形称为 em 正方形，它是定义字形轮廓的设计网格。许多输入字体的字母有些点位于字体的 em 正方形边界之外，因此为了正确显示字体，需要使用特殊设置。TextFragment 对象具有一组可通过属性 TextState.FormattingOptions 访问的文本格式选项。此路径的最后一个属性是类型为 Aspose.Pdf.Text.TextFormattingOptions 的属性。该类具有一个枚举 [LineSpacingMode](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text.textformattingoptions/linespacingmode)，专为特定字体设计，例如输入字体 "HPSimplified.ttf"。此外，类 [Aspose.Pdf.Text.TextFormattingOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textformattingoptions) 具有一个类型为 LineSpacingMode 的属性 [LineSpacing](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textformattingoptions/properties/linespacing)。您只需将 LineSpacing 设置为 LineSpacingMode.FullSize。获取正确显示字体的代码片段如下：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -993,7 +993,7 @@ private static void SpecifyLineSpacing()
 
 ## 动态获取文本宽度
 
-有时，需要动态获取文本宽度。Aspose.PDF for .NET 包含两种字符串宽度测量方法。您可以调用 Aspose.Pdf.Text.Font 或 Aspose.Pdf.Text.TextState 类的 [MeasureString](https://reference.aspose.com/pdf/net/aspose.pdf.text/font/methods/measurestring) 方法（或两者）。以下代码片段展示了如何使用此功能。
+有时，需要动态获取文本宽度。Aspose.PDF for .NET 包含两种字符串宽度测量方法。您可以调用 Aspose.Pdf.Text.Font 或 Aspose.Pdf.Text.TextState 类的 [MeasureString](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/font/methods/measurestring) 方法（或两者）。以下代码片段展示了如何使用此功能。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

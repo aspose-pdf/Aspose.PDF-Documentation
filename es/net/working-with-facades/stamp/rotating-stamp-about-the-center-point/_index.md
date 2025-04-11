@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[El espacio de nombres Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) en [Aspose.PDF for .NET](/pdf/es/net/) le permite agregar un sello en un archivo PDF existente. A veces, los usuarios necesitan rotar el sello. En este artículo, veremos cómo rotar un sello alrededor de su punto central.
+[El espacio de nombres Aspose.Pdf.Facades](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades) en [Aspose.PDF for .NET](/pdf/es/net/) le permite agregar un sello en un archivo PDF existente. A veces, los usuarios necesitan rotar el sello. En este artículo, veremos cómo rotar un sello alrededor de su punto central.
 
 {{% /alert %}}
 
 ## Detalles de implementación
 
-La clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) le permite agregar una marca de agua en un archivo PDF. Puede especificar la imagen que se agregará como un sello utilizando el método [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.stamp/bindimage/methods/1). El método [SetOrigin](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setorigin) le permite establecer el origen del sello agregado; este origen son las coordenadas inferiores izquierdas del sello. También puede establecer el tamaño de la imagen utilizando el método [SetImageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setimagesize).
+La clase [Stamp](https://reference.aspose.com/pdf/es/net/aspose.pdf/stamp) le permite agregar una marca de agua en un archivo PDF. Puede especificar la imagen que se agregará como un sello utilizando el método [BindImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades.stamp/bindimage/methods/1). El método [SetOrigin](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/stamp/methods/setorigin) le permite establecer el origen del sello agregado; este origen son las coordenadas inferiores izquierdas del sello. También puede establecer el tamaño de la imagen utilizando el método [SetImageSize](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/stamp/methods/setimagesize).
 
-Ahora, veremos cómo se puede rotar el sello alrededor del centro del sello. La clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) proporciona una propiedad llamada Rotation. Esta propiedad establece o obtiene la rotación de 0 a 360 del contenido del sello. Podemos especificar cualquier valor de rotación de 0 a 360. Al especificar el valor de rotación, podemos rotar el sello alrededor de su punto central. Si un Sello es un objeto del tipo Stamp, entonces el valor de rotación se puede especificar como aStamp.Rotation = 90. En este caso, el sello se rotará 90 grados alrededor del centro del contenido del sello. El siguiente fragmento de código le muestra cómo rotar el sello alrededor del punto central:
+Ahora, veremos cómo se puede rotar el sello alrededor del centro del sello. La clase [Stamp](https://reference.aspose.com/pdf/es/net/aspose.pdf/stamp) proporciona una propiedad llamada Rotation. Esta propiedad establece o obtiene la rotación de 0 a 360 del contenido del sello. Podemos especificar cualquier valor de rotación de 0 a 360. Al especificar el valor de rotación, podemos rotar el sello alrededor de su punto central. Si un Sello es un objeto del tipo Stamp, entonces el valor de rotación se puede especificar como aStamp.Rotation = 90. En este caso, el sello se rotará 90 grados alrededor del centro del contenido del sello. El siguiente fragmento de código le muestra cómo rotar el sello alrededor del punto central:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

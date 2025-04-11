@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/zh/net/) 中允许您在现有PDF文件中添加印章。有时，用户确实需要旋转印章。在本文中，我们将看到如何围绕其中心点旋转印章。
+[Aspose.Pdf.Facades命名空间](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/zh/net/) 中允许您在现有PDF文件中添加印章。有时，用户确实需要旋转印章。在本文中，我们将看到如何围绕其中心点旋转印章。
 
 {{% /alert %}}
 
 ## 实现细节
 
-[印章](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) 类允许您在PDF文件中添加水印。您可以使用 [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.stamp/bindimage/methods/1) 方法指定要作为印章添加的图像。[SetOrigin](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setorigin) 方法允许您设置添加的印章的原点；该原点是印章的左下角坐标。您还可以使用 [SetImageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setimagesize) 方法设置图像的大小。
+[印章](https://reference.aspose.com/pdf/zh/net/aspose.pdf/stamp) 类允许您在PDF文件中添加水印。您可以使用 [BindImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.stamp/bindimage/methods/1) 方法指定要作为印章添加的图像。[SetOrigin](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/stamp/methods/setorigin) 方法允许您设置添加的印章的原点；该原点是印章的左下角坐标。您还可以使用 [SetImageSize](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/stamp/methods/setimagesize) 方法设置图像的大小。
 
-现在，我们来看一下如何围绕印章的中心旋转印章。[印章](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) 类提供了一个名为 Rotation 的属性。该属性设置或获取印章内容的旋转角度，范围从0到360。我们可以指定从0到360的任何旋转值。通过指定旋转值，我们可以围绕其中心点旋转印章。如果一个印章是印章类型的对象，则可以指定旋转值为 aStamp.Rotation = 90。在这种情况下，印章将围绕印章内容的中心旋转90度。以下代码片段向您展示了如何围绕中心点旋转印章：
+现在，我们来看一下如何围绕印章的中心旋转印章。[印章](https://reference.aspose.com/pdf/zh/net/aspose.pdf/stamp) 类提供了一个名为 Rotation 的属性。该属性设置或获取印章内容的旋转角度，范围从0到360。我们可以指定从0到360的任何旋转值。通过指定旋转值，我们可以围绕其中心点旋转印章。如果一个印章是印章类型的对象，则可以指定旋转值为 aStamp.Rotation = 90。在这种情况下，印章将围绕印章内容的中心旋转90度。以下代码片段向您展示了如何围绕中心点旋转印章：
 
 
 ```csharp

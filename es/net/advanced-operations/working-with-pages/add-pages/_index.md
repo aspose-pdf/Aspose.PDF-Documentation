@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Aspose.PDF for .NET API proporciona total flexibilidad para trabajar con páginas en un documento PDF usando C# o cualquier otro lenguaje .NET. Mantiene todas las páginas de un documento PDF en [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) que se puede usar para trabajar con páginas PDF.
+Aspose.PDF for .NET API proporciona total flexibilidad para trabajar con páginas en un documento PDF usando C# o cualquier otro lenguaje .NET. Mantiene todas las páginas de un documento PDF en [PageCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/pagecollection) que se puede usar para trabajar con páginas PDF.
 Aspose.PDF for .NET te permite insertar una página en un documento PDF en cualquier ubicación del archivo, así como agregar páginas al final de un archivo PDF.
 Esta sección muestra cómo agregar páginas a un PDF usando C#.
 
@@ -93,9 +93,9 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 Para insertar una página vacía en un archivo PDF:
 
-1. Crea un objeto de clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) con el archivo PDF de entrada.
-1. Llama al método [Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) de la colección [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) con el índice especificado.
-1. Guarda el PDF de salida usando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Crea un objeto de clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) con el archivo PDF de entrada.
+1. Llama al método [Insert](https://reference.aspose.com/pdf/es/net/aspose.pdf/pagecollection/methods/insert) de la colección [PageCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/pagecollection) con el índice especificado.
+1. Guarda el PDF de salida usando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf.document/save/methods/4).
 
 El siguiente fragmento de código te muestra cómo insertar una página en un archivo PDF.
 
@@ -140,9 +140,9 @@ A veces, deseas asegurarte de que un documento termine en una página vacía. Es
 
 Para insertar una página vacía al final de un archivo PDF:
 
-1. Crea un objeto de clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) con el archivo PDF de entrada.
-1. Llama al método [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) de la colección [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection), sin ningún parámetro.
-1. Guarda el PDF de salida usando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Crea un objeto de clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) con el archivo PDF de entrada.
+1. Llama al método [Add](https://reference.aspose.com/pdf/es/net/aspose.pdf.pagecollection/add/methods/1) de la colección [PageCollection](https://reference.aspose.com/pdf/es/net/aspose.pdf/pagecollection), sin ningún parámetro.
+1. Guarda el PDF de salida usando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf.document/save/methods/4).
 
 El siguiente fragmento de código te muestra cómo insertar una página vacía al final de un archivo PDF.
 

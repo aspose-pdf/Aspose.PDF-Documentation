@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-إذا كنت ترغب في حذف عدد من الصفحات من ملف PDF الموجود على القرص، يمكنك استخدام التحميل الزائد لطريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) التي تأخذ المعلمات الثلاث التالية: مسار ملف الإدخال، مصفوفة من أرقام الصفحات المراد حذفها، ومسار ملف PDF الناتج. المعلمة الثانية هي مصفوفة صحيحة تمثل جميع الصفحات التي تحتاج إلى الحذف. يتم إزالة الصفحات المحددة من ملف الإدخال ويتم حفظ النتيجة كملف ناتج. يوضح لك مقتطف الكود التالي كيفية حذف صفحات PDF باستخدام مسارات الملفات.
+إذا كنت ترغب في حذف عدد من الصفحات من ملف PDF الموجود على القرص، يمكنك استخدام التحميل الزائد لطريقة [Delete](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) التي تأخذ المعلمات الثلاث التالية: مسار ملف الإدخال، مصفوفة من أرقام الصفحات المراد حذفها، ومسار ملف PDF الناتج. المعلمة الثانية هي مصفوفة صحيحة تمثل جميع الصفحات التي تحتاج إلى الحذف. يتم إزالة الصفحات المحددة من ملف الإدخال ويتم حفظ النتيجة كملف ناتج. يوضح لك مقتطف الكود التالي كيفية حذف صفحات PDF باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void DeletePages()
 
 ## حذف صفحات PDF باستخدام التدفقات
 
-توفر طريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) أيضًا تحميلًا زائدًا يسمح لك بحذف الصفحات من ملف PDF المدخل، بينما تكون كل من الملفات المدخلة والناتجة في التدفقات. يأخذ هذا التحميل الزائد المعلمات الثلاث التالية: تدفق الإدخال، مصفوفة صحيحة من صفحات PDF المراد حذفها، وتدفق الناتج. يوضح لك مقتطف الكود التالي كيفية حذف صفحات PDF باستخدام التدفقات.
+توفر طريقة [Delete](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/delete/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) أيضًا تحميلًا زائدًا يسمح لك بحذف الصفحات من ملف PDF المدخل، بينما تكون كل من الملفات المدخلة والناتجة في التدفقات. يأخذ هذا التحميل الزائد المعلمات الثلاث التالية: تدفق الإدخال، مصفوفة صحيحة من صفحات PDF المراد حذفها، وتدفق الناتج. يوضح لك مقتطف الكود التالي كيفية حذف صفحات PDF باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

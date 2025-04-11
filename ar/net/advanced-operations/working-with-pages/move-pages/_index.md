@@ -86,13 +86,13 @@ sitemap:
 
 لنقل صفحة يجب علينا:
 
-1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF المصدر.
-1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF الوجهة.
-1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [إضافة](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى المستند الوجهة.
-1. حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [حذف](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) الصفحة في المستند المصدر.
-1. حفظ ملف PDF المصدر باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ملف PDF المصدر.
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ملف PDF الوجهة.
+1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection).
+1. [إضافة](https://reference.aspose.com/pdf/ar/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى المستند الوجهة.
+1. حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
+1. [حذف](https://reference.aspose.com/pdf/ar/net/aspose.pdf.pagecollection/delete/methods/1) الصفحة في المستند المصدر.
+1. حفظ ملف PDF المصدر باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
 
 تظهر مقتطفات الكود التالية كيفية نقل صفحة واحدة.
 
@@ -122,15 +122,15 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
 
 ## نقل مجموعة من الصفحات من مستند PDF إلى آخر
 
-1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF المصدر.
-1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF الوجهة.
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ملف PDF المصدر.
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ملف PDF الوجهة.
 1. تعريف مصفوفة بأرقام الصفحات التي سيتم نقلها.
 1. تشغيل حلقة عبر المصفوفة:
-    1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-    1. [إضافة](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى المستند الوجهة.
-1. حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [حذف](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) الصفحة في المستند المصدر باستخدام المصفوفة.
-1. حفظ ملف PDF المصدر باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+    1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection).
+    1. [إضافة](https://reference.aspose.com/pdf/ar/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى المستند الوجهة.
+1. حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
+1. [حذف](https://reference.aspose.com/pdf/ar/net/aspose.pdf.pagecollection/delete/methods/2) الصفحة في المستند المصدر باستخدام المصفوفة.
+1. حفظ ملف PDF المصدر باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
 
 تظهر مقتطفات الكود التالية كيفية نقل مجموعة من الصفحات من مستند PDF إلى آخر.
 
@@ -164,11 +164,11 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 
 ## نقل صفحة إلى موقع جديد في مستند PDF الحالي
 
-1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF المصدر.
-1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [إضافة](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى الموقع الجديد (على سبيل المثال إلى النهاية).
-1. [حذف](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) الصفحة في الموقع السابق.
-1. حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) مع ملف PDF المصدر.
+1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection).
+1. [إضافة](https://reference.aspose.com/pdf/ar/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى الموقع الجديد (على سبيل المثال إلى النهاية).
+1. [حذف](https://reference.aspose.com/pdf/ar/net/aspose.pdf.pagecollection/delete/methods/1) الصفحة في الموقع السابق.
+1. حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

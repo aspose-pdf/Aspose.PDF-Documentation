@@ -77,7 +77,7 @@ draft: false
 
 ## Создание буклета из PDF с использованием путей к файлам
 
-Метод [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-файла и сохранить его в выходной PDF-файл. Этот перегруз позволяет создавать буклет с использованием путей к файлам. Следующий фрагмент кода показывает, как создать буклет с использованием путей к файлам.
+Метод [MakeBooklet](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-файла и сохранить его в выходной PDF-файл. Этот перегруз позволяет создавать буклет с использованием путей к файлам. Следующий фрагмент кода показывает, как создать буклет с использованием путей к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
 
 ## Создание буклета из PDF с использованием размера страницы и путей к файлам
 
-Метод [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-файла и сохранить его в выходной PDF-файл. Этот перегруз позволяет создавать буклет с использованием путей к файлам. Вы также можете установить размер страницы выходного PDF-файла с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием размера страницы и путей к файлам.
+Метод [MakeBooklet](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-файла и сохранить его в выходной PDF-файл. Этот перегруз позволяет создавать буклет с использованием путей к файлам. Вы также можете установить размер страницы выходного PDF-файла с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием размера страницы и путей к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
 
 ## Создание буклета из PDF с использованием размера страницы, указанных левых и правых страниц и путей к файлам
 
-Метод [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-файла и сохранить его в выходной PDF-файл. Этот перегруз позволяет создавать буклет с использованием путей к файлам. Вы также можете установить размер страницы выходного PDF-файла и указать конкретные страницы для левой и правой сторон выходного PDF-файла с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием размера страницы, указанных левых и правых страниц и путей к файлам.
+Метод [MakeBooklet](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-файла и сохранить его в выходной PDF-файл. Этот перегруз позволяет создавать буклет с использованием путей к файлам. Вы также можете установить размер страницы выходного PDF-файла и указать конкретные страницы для левой и правой сторон выходного PDF-файла с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием размера страницы, указанных левых и правых страниц и путей к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## Создание буклета из PDF с использованием указанных левых и правых страниц и путей к файлам
 
-Метод [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-файла и сохранить его в выходной PDF-файл. Этот перегруз позволяет создавать буклет с использованием путей к файлам. Вы также можете указать конкретные страницы для левой и правой сторон выходного PDF-файла с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием указанных левых и правых страниц и путей к файлам.
+Метод [MakeBooklet](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-файла и сохранить его в выходной PDF-файл. Этот перегруз позволяет создавать буклет с использованием путей к файлам. Вы также можете указать конкретные страницы для левой и правой сторон выходного PDF-файла с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием указанных левых и правых страниц и путей к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
 
 ## Создание буклета из PDF с использованием потоков
 
-Метод [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-потока и сохранить его в выходные PDF-потоки. Этот перегруз позволяет создавать буклет с использованием потоков вместо путей к файлам. Следующий фрагмент кода показывает, как создать буклет с использованием потоков.
+Метод [MakeBooklet](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-потока и сохранить его в выходные PDF-потоки. Этот перегруз позволяет создавать буклет с использованием потоков вместо путей к файлам. Следующий фрагмент кода показывает, как создать буклет с использованием потоков.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,7 +175,7 @@ private static void MakeBookletOfPdfUsingStreams()
 
 ## Создание буклета из PDF с использованием размера страницы и потоков
 
-Метод [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-потока и сохранить его в выходной PDF-поток. Этот перегруз позволяет создавать буклет с использованием потоков вместо путей к файлам. Вы также можете установить размер страницы выходного PDF-потока с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием размера страницы и потоков.
+Метод [MakeBooklet](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-потока и сохранить его в выходной PDF-поток. Этот перегруз позволяет создавать буклет с использованием потоков вместо путей к файлам. Вы также можете установить размер страницы выходного PDF-потока с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием размера страницы и потоков.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
 
 ## Создание буклета из PDF с использованием размера страницы, указанных левых и правых страниц и потоков
 
-Метод [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-потока и сохранить его в выходной PDF-поток. Этот перегруз позволяет создавать буклет с использованием потоков вместо путей к файлам. Вы также можете установить размер страницы выходного PDF-файла и указать конкретные страницы для левой и правой сторон выходного PDF-потока с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием размера страницы, указанных левых и правых страниц и потоков.
+Метод [MakeBooklet](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-потока и сохранить его в выходной PDF-поток. Этот перегруз позволяет создавать буклет с использованием потоков вместо путей к файлам. Вы также можете установить размер страницы выходного PDF-файла и указать конкретные страницы для левой и правой сторон выходного PDF-потока с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием размера страницы, указанных левых и правых страниц и потоков.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +226,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
 
 ## Создание буклета из PDF с использованием указанных левых и правых страниц и потоков
 
-Метод [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-потока и сохранить его в выходной PDF-поток. Этот перегруз позволяет создавать буклет с использованием потоков вместо путей к файлам. Вы также можете указать конкретные страницы для левой и правой сторон выходного PDF-потока с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием указанных левых и правых страниц и потоков.
+Метод [MakeBooklet](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) позволяет вам создать буклет из входного PDF-потока и сохранить его в выходной PDF-поток. Этот перегруз позволяет создавать буклет с использованием потоков вместо путей к файлам. Вы также можете указать конкретные страницы для левой и правой сторон выходного PDF-потока с помощью этого перегруза. Следующий фрагмент кода показывает, как создать буклет с использованием указанных левых и правых страниц и потоков.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

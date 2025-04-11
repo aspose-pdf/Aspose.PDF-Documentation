@@ -94,9 +94,9 @@ sitemap:
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-1. تحميل ملف PDF أو إنشاء جديد بواسطة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. تحميل ملف PDF أو إنشاء جديد بواسطة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
 1. إنشاء التعليق الجديد وتعيين المعلمات (مستطيل جديد، نقطة جديدة، عنوان، لون، عرض، إلخ).
-1. إنشاء [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index) جديد.
+1. إنشاء [PopupAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/popupannotation/methods/index) جديد.
 1. ربط التعليق المنبثق بالتعليق الأصلي.
 1. إضافة التعليق إلى الصفحة.
 
@@ -154,7 +154,7 @@ private static void AddLineAnnotation()
 
 ## إضافة مربع أو دائرة
 
-ستعرض تعليقات [Square](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation) و [Circle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) مستطيلًا أو بيضاويًا على الصفحة. عند الفتح، ستعرض نافذة منبثقة تحتوي على نص الملاحظة المرتبطة. تشبه تعليقات المربعات تعليقات الدوائر (حالات من فئة Aspose. Pdf. Annotations. CircleAnnotation) باستثناء الشكل.
+ستعرض تعليقات [Square](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/squareannotation) و [Circle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/circleannotation) مستطيلًا أو بيضاويًا على الصفحة. عند الفتح، ستعرض نافذة منبثقة تحتوي على نص الملاحظة المرتبطة. تشبه تعليقات المربعات تعليقات الدوائر (حالات من فئة Aspose. Pdf. Annotations. CircleAnnotation) باستثناء الشكل.
 
 ### إضافة تعليق دائرة
 
@@ -544,7 +544,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 
 يمثل تعليق الحبر "خربشة" حرة تتكون من مسار واحد أو أكثر غير متصل. عند الفتح، ستظهر نافذة منبثقة تحتوي على نص الملاحظة المرتبطة.
 
-يمثل [InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) خربشة حرة تتكون من نقطة واحدة أو أكثر غير متصلة. يرجى تجربة استخدام مقتطف الكود التالي لإضافة InkAnnotation في مستند PDF.
+يمثل [InkAnnotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/inkannotation) خربشة حرة تتكون من نقطة واحدة أو أكثر غير متصلة. يرجى تجربة استخدام مقتطف الكود التالي لإضافة InkAnnotation في مستند PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -600,7 +600,7 @@ private static void AddInkAnnotation()
 
 ### تعيين عرض خط InkAnnotation
 
-يمكن تغيير عرض [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) باستخدام كائنات LineInfo و Border.
+يمكن تغيير عرض [InkAnnottion](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/inkannotation) باستخدام كائنات LineInfo و Border.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

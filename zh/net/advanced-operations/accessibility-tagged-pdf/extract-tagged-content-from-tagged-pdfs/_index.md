@@ -85,7 +85,7 @@ sitemap:
 
 ## 获取标记PDF内容
 
-为了获取带有标记文本的PDF文档内容，Aspose.PDF提供了[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)类的[TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent)属性。
+为了获取带有标记文本的PDF文档内容，Aspose.PDF提供了[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)类的[TaggedContent](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/properties/taggedcontent)属性。
 
 以下代码片段演示了如何获取带有标记文本的PDF文档内容：
 
@@ -144,7 +144,7 @@ private static void GetTaggedContent()
 
 ## 获取根结构
 
-为了获取标记PDF文档的根结构，Aspose.PDF提供了[ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent)接口的[StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement)属性和[StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement)。以下代码片段演示了如何获取标记PDF文档的根结构：
+为了获取标记PDF文档的根结构，Aspose.PDF提供了[ITaggedContent](https://reference.aspose.com/pdf/zh/net/aspose.pdf.tagged/itaggedcontent)接口的[StructTreeRootElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement)属性和[StructureElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structureelement)。以下代码片段演示了如何获取标记PDF文档的根结构：
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void GetRootStructure()
 
 ## 访问子元素
 
-为了访问标记PDF文档的子元素，Aspose.PDF提供了[ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist)类。以下代码片段演示了如何访问标记PDF文档的子元素：
+为了访问标记PDF文档的子元素，Aspose.PDF提供了[ElementList](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/elementlist)类。以下代码片段演示了如何访问标记PDF文档的子元素：
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -316,7 +316,7 @@ private static void AccessChildElements()
 
 ## 在现有PDF中标记图像
 
-为了在现有PDF文档中标记图像，Aspose.PDF提供了[StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement)类的[FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1)方法。您可以使用[FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement)类的[AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext)属性为图形添加替代文本。
+为了在现有PDF文档中标记图像，Aspose.PDF提供了[StructureElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structureelement)类的[FindElements](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/element/methods/findelements/_1)方法。您可以使用[FigureElement](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/figureelement)类的[AlternativeText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext)属性为图形添加替代文本。
 
 以下代码片段演示了如何在现有PDF文档中标记图像：
 

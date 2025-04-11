@@ -85,7 +85,7 @@ sitemap:
 
 ## Создание помеченного PDF (Простой сценарий)
 
-Для создания элементов структуры в помеченном PDF-документе Aspose.PDF предлагает методы для создания элемента структуры с использованием интерфейса [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Следующий фрагмент кода показывает, как создать помеченный PDF, который содержит 2 элемента: заголовок и абзац.
+Для создания элементов структуры в помеченном PDF-документе Aspose.PDF предлагает методы для создания элемента структуры с использованием интерфейса [ITaggedContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent). Следующий фрагмент кода показывает, как создать помеченный PDF, который содержит 2 элемента: заголовок и абзац.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -181,7 +181,7 @@ private static void CreateTaggedPdfDocument01()
 ## Создание помеченного PDF с вложенными элементами (Создание дерева элементов структуры)
 
 В некоторых случаях нам нужно создать более сложную структуру, например, разместить цитаты в абзаце. 
-Для создания дерева элементов структуры мы должны использовать метод [AppendChild](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/appendchild).
+Для создания дерева элементов структуры мы должны использовать метод [AppendChild](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/element/methods/appendchild).
 Следующий фрагмент кода показывает, как создать дерево элементов структуры помеченного PDF-документа:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -294,7 +294,7 @@ private static void CreateTaggedPdfDocument02()
 
 ## Стилизация структуры текста
 
-Для стилизации структуры текста в помеченном PDF-документе Aspose.PDF предлагает свойства [Font](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) и [ForegroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) класса [StructureTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structuretextstate). Следующий фрагмент кода показывает, как стилизовать структуру текста в помеченном PDF-документе:
+Для стилизации структуры текста в помеченном PDF-документе Aspose.PDF предлагает свойства [Font](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) и [ForegroundColor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) класса [StructureTextState](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate). Следующий фрагмент кода показывает, как стилизовать структуру текста в помеченном PDF-документе:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -367,7 +367,7 @@ private static void AddStyle()
 
 ## Иллюстрация элементов структуры
 
-Для иллюстрации элементов структуры в помеченном PDF-документе Aspose.PDF предлагает класс [IllustrationElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/illustrationelement). Следующий фрагмент кода показывает, как иллюстрировать элементы структуры в помеченном PDF-документе:
+Для иллюстрации элементов структуры в помеченном PDF-документе Aspose.PDF предлагает класс [IllustrationElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/illustrationelement). Следующий фрагмент кода показывает, как иллюстрировать элементы структуры в помеченном PDF-документе:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

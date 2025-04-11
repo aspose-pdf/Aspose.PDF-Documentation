@@ -83,9 +83,9 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## **Imprimer un PDF sur une imprimante XPS en C#**
 
-Vous pouvez imprimer un fichier PDF sur une imprimante XPS, ou toute autre imprimante virtuelle d'ailleurs, en utilisant la classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Pour ce faire, créez un objet de la classe PdfViewer et ouvrez le fichier PDF en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Vous pouvez définir différents paramètres d'impression en utilisant les classes [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) et [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/). Vous devez également définir la propriété [PrinterName](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/printername/) sur l'imprimante XPS ou autre imprimante virtuelle que vous avez installée.
+Vous pouvez imprimer un fichier PDF sur une imprimante XPS, ou toute autre imprimante virtuelle d'ailleurs, en utilisant la classe [PdfViewer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfviewer). Pour ce faire, créez un objet de la classe PdfViewer et ouvrez le fichier PDF en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Vous pouvez définir différents paramètres d'impression en utilisant les classes [PrinterSettings](https://reference.aspose.com/pdf/fr/net/aspose.pdf.printing/printersettings/) et [PageSettings](https://reference.aspose.com/pdf/fr/net/aspose.pdf.printing/pagesettings/). Vous devez également définir la propriété [PrinterName](https://reference.aspose.com/pdf/fr/net/aspose.pdf.printing/printersettings/printername/) sur l'imprimante XPS ou autre imprimante virtuelle que vous avez installée.
 
-Enfin, utilisez la méthode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) pour imprimer le PDF sur l'imprimante XPS ou autre imprimante virtuelle. Le code suivant vous montre comment imprimer le fichier PDF sur une imprimante XPS.
+Enfin, utilisez la méthode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) pour imprimer le PDF sur l'imprimante XPS ou autre imprimante virtuelle. Le code suivant vous montre comment imprimer le fichier PDF sur une imprimante XPS.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -180,7 +180,7 @@ private static void PrintToXpsPrinter()
  
 Depuis la version 24.4, il est possible de choisir la source de papier par taille de page PDF dans la boîte de dialogue d'impression. Le code suivant permet de choisir un bac d'imprimante en fonction de la taille de page du PDF.
 
-Cette préférence peut être activée et désactivée en utilisant la façade [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/).
+Cette préférence peut être activée et désactivée en utilisant la façade [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor/).
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -1,6 +1,6 @@
 ---
 title: C#でPDFサイズを最適化、圧縮、または削減する
-linktitle: PDFを最適化
+linktitle: PDFの最適化
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
@@ -9,8 +9,8 @@ url: /ja/net/optimize-pdf/
 description: C#を使用してPDFファイルを最適化し、すべての画像を縮小し、PDFのサイズを削減し、フォントをアンエンベッドし、未使用のオブジェクトを削除します。
 lastmod: "2022-02-17"
 sitemap:
-    changefreq: "monthly"
-    priority: 0.7
+changefreq: "monthly"
+priority: 0.7
 ---
 <script type="application/ld+json">
 {
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Optimize, Compress or Reduce PDF Size in C#",
     "alternativeHeadline": "Optimize PDF Files Efficiently with C#",
-    "abstract": "C#の新しいPDF最適化機能により、開発者は画像の圧縮、フォントのアンエンベッド、未使用オブジェクトの削除など、複数の戦略を使用してPDFファイルのサイズを大幅に削減できます。この改善により、ウェブ出版、メール共有、ストレージの効率が向上し、大きなPDFドキュメントの管理に効果的なソリューションを提供します。",
+    "abstract": "C#の新しいPDF最適化機能により、開発者は画像の圧縮、フォントのアンエンベッド、未使用オブジェクトの削除など、複数の戦略を用いてPDFファイルのサイズを大幅に削減できます。この改善により、ウェブ出版、メール共有、ストレージの効率が向上し、大きなPDFドキュメントの管理に効果的なソリューションを提供します。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "optimize pdf, compress pdf size, reduce pdf size, optimize pdf c#, unembed fonts, remove unused objects, shrink images, optimization methods, pdf document generation, Aspose.PDF",
-    "wordcount": "2282",
+    "wordcount": "1938",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/optimize-pdf/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-01",
     "description": "C#を使用してPDFファイルを最適化し、すべての画像を縮小し、PDFのサイズを削減し、フォントをアンエンベッドし、未使用のオブジェクトを削除します。"
 }
 </script>
@@ -83,11 +83,11 @@ PDFドキュメントには、時折追加データが含まれることがあ�
 
 - オンラインブラウジング用にページコンテンツを最適化します。
 - すべての画像を縮小または圧縮します。
-- ページコンテンツの再利用を有効にします。
+- ページコンテンツの再利用を可能にします。
 - 重複ストリームをマージします。
 - フォントをアンエンベッドします。
 - 未使用のオブジェクトを削除します。
-- フラッティングフォームフィールドを削除します。
+- フラット化されたフォームフィールドを削除します。
 - 注釈を削除またはフラット化します。
 
 {{% alert color="primary" %}}
@@ -104,7 +104,7 @@ PDFドキュメントには、時折追加データが含まれることがあ�
 1. [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize)メソッドを使用します。
 1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して最適化されたドキュメントを保存します。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも機能します。
 
 以下のコードスニペットは、ウェブ用にPDFドキュメントを最適化する方法を示しています。
 
@@ -162,7 +162,7 @@ private static void ShrinkDocument()
 
 ### すべての画像を縮小または圧縮する
 
-画像で作業する方法は2つあります：画像の品質を低下させるか、解像度を変更するかです。いずれの場合でも、[ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions)を適用する必要があります。次の例では、[ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality)を50に設定して画像を縮小します。
+画像を扱う方法は2つあります：画像の品質を低下させることと、解像度を変更することです。いずれの場合でも、[ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions)を適用する必要があります。以下の例では、[ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality)を50に設定して画像を縮小します。
 
 `ImageQuality`はJPEG品質と同様に機能し、値0が最低、値100が最高です。
 
@@ -180,9 +180,11 @@ private static void ShrinkImage()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressImages flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
 
         // Optimize PDF document using OptimizationOptions
@@ -210,15 +212,19 @@ private static void ResizeImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressImages flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set ResizeImage option
+        // If this flag set to true and CompressImages is true images will be resized if image resolution is greater then specified MaxResolution parameter
         optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 
         // Set MaxResolution option
+        // Specifies maximum resolution of images. If image has higher resolition it will be scaled
         optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
 
         // Optimize PDF document using OptimizationOptions
@@ -230,7 +236,7 @@ private static void ResizeImages()
 }
 ```
 
-もう1つの重要な問題は、実行時間です。しかし、再度、この設定も管理できます。現在、2つのアルゴリズム - 標準と高速を使用できます。実行時間を制御するには、[Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version)プロパティを設定する必要があります。以下のスニペットは、高速アルゴリズムを示しています：
+もう1つの重要な問題は実行時間です。しかし、再び、この設定も管理できます。現在、2つのアルゴリズム - StandardとFastを使用できます。実行時間を制御するには、[Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version)プロパティを設定する必要があります。以下のスニペットはFastアルゴリズムを示しています：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -249,12 +255,20 @@ private static void FastShrinkImages()
         var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
         // Set CompressImages option
+        // If this flag is set to true images will be compressed in the document
         optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
         // Set ImageQuality option
+        // Specifies level of image compression when CompressImages flag is used
         optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
         // Set Image Compression Version to fast
+        // Version of compression algorithm. Possible values are:
+        // 1. standard compression
+        // 2. fast (improved compression which is faster then standard but may be applicable not for all images)
+        // 3. mixed (standard compression is applied to images which can not be compressed by faster algorithm, 
+        // this may give best compression but more slow then "fast" algorithm. Version "Fast" is not applicable for 
+        // resizing images (standard method will be used). Default is "Standard"
         optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
 
         // Optimize PDF document using OptimizationOptions
@@ -271,7 +285,7 @@ private static void FastShrinkImages()
 
 ### 未使用のオブジェクトを削除する
 
-PDFドキュメントには、他のオブジェクトから参照されていないPDFオブジェクトが含まれていることがあります。これは、たとえば、ドキュメントページツリーからページが削除されたが、ページオブジェクト自体が削除されていない場合に発生することがあります。これらのオブジェクトを削除してもドキュメントが無効になることはありませんが、むしろサイズが縮小されます。
+PDFドキュメントには、他のオブジェクトから参照されていないPDFオブジェクトが含まれていることがあります。これは、たとえば、ページがドキュメントページツリーから削除されたが、ページオブジェクト自体は削除されていない場合に発生することがあります。これらのオブジェクトを削除してもドキュメントが無効になることはありませんが、むしろサイズが縮小されます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -300,7 +314,7 @@ private static void OptimizeDocument()
 
 ### 未使用のストリームを削除する
 
-時々、ドキュメントには未使用のリソースストリームが含まれています。これらのストリームは、ページリソース辞書から参照されているため、「未使用オブジェクト」ではありません。したがって、「未使用のオブジェクトを削除する」メソッドでは削除されません。しかし、これらのストリームはページコンテンツでは決して使用されません。これは、ページから画像が削除されたが、ページリソースからは削除されていない場合に発生することがあります。また、この状況は、ページがドキュメントから抽出され、ドキュメントページが「共通」リソース、つまり同じResourcesオブジェクトを持つ場合によく発生します。リソースストリームが使用されているかどうかを判断するためにページコンテンツが分析されます。未使用のストリームが削除されます。これにより、ドキュメントサイズが減少することがあります。この技術の使用は前のステップと似ています：
+時々、ドキュメントには未使用のリソースストリームが含まれています。これらのストリームは「未使用のオブジェクト」ではなく、ページリソース辞書から参照されています。したがって、「未使用のオブジェクトを削除する」メソッドでは削除されません。しかし、これらのストリームはページコンテンツでは決して使用されません。これは、画像がページから削除されたが、ページリソースからは削除されていない場合に発生することがあります。また、この状況は、ページがドキュメントから抽出され、ドキュメントページが「共通」リソース、つまり同じResourcesオブジェクトを持つ場合によく発生します。リソースストリームが使用されているかどうかを判断するためにページコンテンツが分析されます。未使用のストリームが削除されます。これにより、ドキュメントサイズが減少することがあります。この技術の使用は前のステップと似ています：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -329,7 +343,7 @@ private static void OptimizePdfDocument()
 
 ### 重複ストリームをリンクする
 
-一部のドキュメントには、同一のリソースストリーム（たとえば画像など）が複数含まれていることがあります。これは、たとえば、ドキュメントが自分自身と連結された場合に発生することがあります。出力ドキュメントには、同じリソースストリームの2つの独立したコピーが含まれています。すべてのリソースストリームを分析し、比較します。ストリームが重複している場合、それらはマージされ、つまり1つのコピーだけが残ります。参照は適切に変更され、オブジェクトのコピーは削除されます。場合によっては、これによりドキュメントサイズが減少するのに役立ちます。
+一部のドキュメントには、同一のリソースストリーム（たとえば画像）が複数含まれていることがあります。これは、たとえば、ドキュメントが自分自身と連結された場合に発生することがあります。出力ドキュメントには、同じリソースストリームの2つの独立したコピーが含まれています。すべてのリソースストリームを分析し、比較します。ストリームが重複している場合、それらはマージされ、つまり1つのコピーだけが残ります。参照は適切に変更され、オブジェクトのコピーは削除されます。場合によっては、これによりドキュメントサイズが減少します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -394,7 +408,7 @@ private static void OptimizePdfDocumentWithReusePageContent()
 
 ### フォントのアンエンベッド
 
-ドキュメントが埋め込まれたフォントを使用している場合、すべてのフォントデータがドキュメントに保存されていることを意味します。利点は、フォントがユーザーのマシンにインストールされているかどうかに関係なく、ドキュメントが表示可能であることです。しかし、フォントを埋め込むとドキュメントが大きくなります。フォントのアンエンベッドメソッドは、すべての埋め込まれたフォントを削除します。これにより、ドキュメントサイズが減少しますが、正しいフォントがインストールされていない場合、ドキュメント自体が読めなくなる可能性があります。
+ドキュメントが埋め込まれたフォントを使用している場合、それはすべてのフォントデータがドキュメントに保存されていることを意味します。利点は、ユーザーのマシンにフォントがインストールされているかどうかに関係なく、ドキュメントが表示可能であることです。しかし、フォントを埋め込むとドキュメントが大きくなります。フォントのアンエンベッドメソッドは、すべての埋め込まれたフォントを削除します。したがって、ドキュメントサイズは減少しますが、正しいフォントがインストールされていない場合、ドキュメント自体が読めなくなる可能性があります。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -436,7 +450,7 @@ private static void OptimizePdfDocumentWithUnembedFonts()
 
 ### 注釈を削除またはフラット化する
 
-注釈は、不要な場合に削除できます。必要だが追加の編集を必要としない場合は、フラット化できます。これらの技術の両方は、ファイルサイズを削減します。
+注釈は不要な場合に削除できます。必要だが追加の編集を必要としない場合は、フラット化できます。これらの技術の両方がファイルサイズを削減します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -494,7 +508,7 @@ private static void FlattenPdfForms()
 
 ### PDFをRGBカラースペースからグレースケールに変換する
 
-PDFファイルは、テキスト、画像、添付ファイル、注釈、グラフ、その他のオブジェクトで構成されています。PDFをRGBカラースペースからグレースケールに変換する必要がある場合があります。これにより、これらのPDFファイルを印刷する際に速度が向上します。また、ファイルがグレースケールに変換されると、ドキュメントサイズも削減されますが、ドキュメントの品質が低下する可能性もあります。この機能は現在、Adobe AcrobatのPre-Flight機能によってサポートされていますが、Office自動化について話すと、Aspose.PDFはドキュメント操作のための究極のソリューションです。この要件を達成するために、以下のコードスニペットを使用できます。
+PDFファイルは、テキスト、画像、添付ファイル、注釈、グラフ、およびその他のオブジェクトで構成されています。PDFをRGBカラースペースからグレースケールに変換する必要がある場合があります。これにより、これらのPDFファイルを印刷する際に速度が向上します。また、ファイルがグレースケールに変換されると、ドキュメントサイズも削減されますが、ドキュメントの品質が低下する可能性もあります。この機能は現在、Adobe AcrobatのPre-Flight機能によってサポートされていますが、Office自動化について話すと、Aspose.PDFはドキュメント操作のための究極のソリューションです。この要件を達成するために、以下のコードスニペットを使用できます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -533,7 +547,7 @@ private static void ConvertRgbToGrayScale()
 
 {{% /alert %}}
 
-Aspose.PDF for .NETは、PDF最適化機能のためのFlateDecode圧縮をサポートしています。以下のコードスニペットは、**FlateDecode**圧縮で画像を保存するためのオプションを最適化で使用する方法を示しています：
+Aspose.PDF for .NETはPDF最適化機能のためのFlateDecode圧縮をサポートしています。以下のコードスニペットは、**FlateDecode**圧縮で画像を保存するための最適化オプションの使用方法を示しています：
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -562,7 +576,7 @@ private static void OptimizeDocumentImagesWithFlateCompression()
 
 ### XImageCollectionに画像を保存する
 
-Aspose.PDF for .NETは、FlateDecode圧縮で新しい画像を**XImageCollection**に保存する機能を提供します。このオプションを有効にするには、**ImageFilterType.Flate**フラグを使用できます。以下のコードスニペットは、この機能を使用する方法を示しています：
+Aspose.PDF for .NETは、FlateDecode圧縮で新しい画像を**XImageCollection**に保存する機能を提供します。このオプションを有効にするには、**ImageFilterType.Flate**フラグを使用できます。以下のコードスニペットは、この機能の使用方法を示しています：
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

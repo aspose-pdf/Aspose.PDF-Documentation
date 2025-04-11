@@ -79,11 +79,11 @@ sitemap:
 
 ## Добавление аннотации свободного текста в существующий PDF файл (facades)
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) позволяет добавлять аннотации различных типов в существующий PDF файл. Вы можете использовать соответствующий метод для добавления конкретной аннотации. Например, в следующем фрагменте кода мы использовали метод [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) для добавления аннотации типа [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation).
+[PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor) позволяет добавлять аннотации различных типов в существующий PDF файл. Вы можете использовать соответствующий метод для добавления конкретной аннотации. Например, в следующем фрагменте кода мы использовали метод [CreateFreeText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) для добавления аннотации типа [FreeText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/freetextannotation).
 
-Любой тип аннотаций можно добавить в PDF файл тем же способом. Прежде всего, вам нужно создать объект типа [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Во-вторых, вам нужно создать объект Rectangle, чтобы указать область аннотации.
+Любой тип аннотаций можно добавить в PDF файл тем же способом. Прежде всего, вам нужно создать объект типа [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.facade/bindpdf/methods/3). Во-вторых, вам нужно создать объект Rectangle, чтобы указать область аннотации.
 
-После этого вы можете вызвать метод [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) для добавления аннотации [FreeText](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation), а затем использовать метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) для сохранения обновленного PDF файла.
+После этого вы можете вызвать метод [CreateFreeText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) для добавления аннотации [FreeText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/freetextannotation), а затем использовать метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save) для сохранения обновленного PDF файла.
 
 Следующий фрагмент кода показывает, как добавить аннотацию свободного текста в PDF файл.
 
@@ -160,7 +160,7 @@ private static void AddFreeTextAnnotation()
 
 ## Добавление текстовой аннотации в существующий PDF файл (facades)
 
-В этом примере также необходимо создать объект типа [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). Во-вторых, вам нужно создать объект Rectangle, чтобы указать область аннотации. После этого вы можете вызвать метод [CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) для добавления аннотации FreeText, создать заголовок ваших аннотаций и номер страницы, на которой находится аннотация.
+В этом примере также необходимо создать объект типа [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.facade/bindpdf/methods/3). Во-вторых, вам нужно создать объект Rectangle, чтобы указать область аннотации. После этого вы можете вызвать метод [CreateFreeText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) для добавления аннотации FreeText, создать заголовок ваших аннотаций и номер страницы, на которой находится аннотация.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

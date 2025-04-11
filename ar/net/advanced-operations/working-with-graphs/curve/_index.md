@@ -83,7 +83,7 @@ sitemap:
 
 ## إضافة كائن منحنى
 
-المنحنى [Curve](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve) هو اتحاد متصل من الخطوط الإسقاطية، حيث يلتقي كل خط بثلاثة خطوط أخرى في نقاط مزدوجة عادية.
+المنحنى [Curve](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/curve) هو اتحاد متصل من الخطوط الإسقاطية، حيث يلتقي كل خط بثلاثة خطوط أخرى في نقاط مزدوجة عادية.
 
 يوضح Aspose.PDF for .NET كيفية استخدام منحنيات بيزير في الرسوم البيانية الخاصة بك.
 تستخدم منحنيات بيزير على نطاق واسع في الرسوميات الحاسوبية لنمذجة المنحنيات السلسة. يتم احتواء المنحنى بالكامل في الغلاف المحدب لنقاط التحكم الخاصة به، ويمكن عرض النقاط رسوميًا واستخدامها للتلاعب بالمنحنى بشكل بديهي.
@@ -93,10 +93,10 @@ sitemap:
 
 اتبع الخطوات أدناه:
 
-1. إنشاء مثيل [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
-1. إنشاء [كائن رسم](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) بأبعاد معينة.
-1. تعيين [حدود](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) لكائن الرسم.
-1. إضافة [كائن رسم بياني](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) إلى مجموعة الفقرات في الصفحة.
+1. إنشاء مثيل [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) .
+1. إنشاء [كائن رسم](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing) بأبعاد معينة.
+1. تعيين [حدود](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/graph/properties/border) لكائن الرسم.
+1. إضافة [كائن رسم بياني](https://reference.aspose.com/pdf/ar/net/aspose.pdf.drawing/graph) إلى مجموعة الفقرات في الصفحة.
 1. حفظ ملف PDF الخاص بنا.
 
 ```csharp

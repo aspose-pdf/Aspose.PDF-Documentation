@@ -15,7 +15,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Import and Export Form Field",
     "alternativeHeadline": "Streamline PDF Form Management with Import/Export Features",
-    "abstract": "Fitur Impor dan Ekspor Bidang Formulir di Aspose.PDF for .NET memungkinkan pengguna untuk mengisi dan memanipulasi bidang formulir PDF dengan lancar menggunakan berbagai sumber data seperti FDF, XFDF, XML, dan bahkan objek System.Data.DataTable. API yang kuat ini memungkinkan penanganan data otomatis, meningkatkan efisiensi manajemen formulir PDF dan memperlancar proses input data.",
+    "abstract": "Fitur Impor dan Ekspor Bidang Formulir di Aspose.PDF for .NET memungkinkan pengguna untuk mengisi dan memanipulasi bidang formulir PDF dengan mulus menggunakan berbagai sumber data seperti FDF, XFDF, XML, dan bahkan objek System.Data.DataTable. API yang kuat ini memungkinkan penanganan data otomatis, meningkatkan efisiensi manajemen formulir PDF dan memperlancar proses input data",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "252",
+    "wordcount": "311",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,12 +70,14 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/import-export-form-field/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga dapat mengatasi tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
-Aspose.PDF for .NET menyediakan kemampuan hebat untuk membuat/memanipulasi bidang formulir di dalam dokumen PDF. Menggunakan API ini, Anda dapat mengisi bidang formulir di dalam file PDF secara programatis, mengisi bidang formulir dengan [Impor Data dari FDF ke File PDF](/pdf/id/net/import-and-export-data/), [Impor Data dari XFDF ke File PDF](/pdf/id/net/import-and-export-data/), [Impor Data dari XML ke File PDF](/pdf/id/net/import-and-export-data/) atau bahkan Anda dapat mengimpor data dari objek [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF for .NET menyediakan kemampuan hebat untuk membuat/memanipulasi bidang formulir di dalam dokumen PDF. Menggunakan API ini, Anda dapat mengisi bidang formulir secara programatis di dalam file PDF, mengisi bidang formulir dengan [Impor Data dari FDF ke File PDF](/pdf/id/net/import-and-export-data/), [Impor Data dari XFDF ke File PDF](/pdf/id/net/import-and-export-data/), [Impor Data dari XML ke File PDF](/pdf/id/net/import-and-export-data/) atau bahkan Anda dapat mengimpor data dari objek [System.Data.DataTable](https://reference.aspose.com/pdf/id/net/aspose.pdf.table/importdatatable/methods/1).
+
+## Impor Data dari PDF ke FDF
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

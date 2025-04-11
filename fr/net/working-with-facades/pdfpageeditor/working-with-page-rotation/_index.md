@@ -77,13 +77,13 @@ draft: false
 
 {{% alert color="primary" %}}
 
-La classe [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) fournit la possibilité de faire pivoter une page.
+La classe [PdfPageEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfpageeditor) fournit la possibilité de faire pivoter une page.
 
 {{% /alert %}}
 
 ## Faire pivoter une page en utilisant PageRotations
 
-Pour faire pivoter des pages dans un document, nous pouvons utiliser [PageRotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
+Pour faire pivoter des pages dans un document, nous pouvons utiliser [PageRotations](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfpageeditor/properties/pagerotations).
 `PageRotations` contient le numéro de page et le degré de rotation, la clé représente le numéro de page, la valeur de la clé représente la rotation en degrés.
 
 ```csharp
@@ -114,7 +114,7 @@ Pour faire pivoter des pages dans un document, nous pouvons utiliser [PageRotati
 
 ## Faire pivoter une page en utilisant Rotation
 
-Nous pouvons également utiliser la propriété [Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation). La rotation doit être 0, 90, 180 ou 270.
+Nous pouvons également utiliser la propriété [Rotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfpageeditor/properties/rotation). La rotation doit être 0, 90, 180 ou 270.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

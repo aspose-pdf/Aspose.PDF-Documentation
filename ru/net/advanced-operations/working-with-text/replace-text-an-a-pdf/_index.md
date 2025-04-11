@@ -484,7 +484,7 @@ Aspose.PDF for .NET поддерживает функцию встраивани
 
 Чтобы заменить шрифты, используйте следующий подход:
 
-1. Вызовите класс [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber).
+1. Вызовите класс [TextFragmentAbsorber](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textfragmentabsorber).
 1. Вызовите параметр TextFragmentAbsorber класса TextEditOptions.FontReplace.RemoveUnusedFonts. (Это удаляет шрифты, которые стали неиспользуемыми во время замены шрифтов).
 1. Установите шрифт индивидуально для каждого текстового фрагмента.
 

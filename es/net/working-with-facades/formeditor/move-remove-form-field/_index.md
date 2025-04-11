@@ -77,7 +77,7 @@ draft: false
 
 ## Mover Campo de Formulario a una Nueva Ubicación en un Archivo PDF Existente
 
-Si deseas mover un campo de formulario a una nueva ubicación, puedes utilizar el método [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) de la clase [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). Solo necesitas proporcionar el nombre del campo y la nueva ubicación de este campo al método [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield). También necesitas guardar el archivo PDF actualizado utilizando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) de la clase [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). El siguiente fragmento de código te muestra cómo mover un campo de formulario a una nueva ubicación en un archivo PDF.
+Si deseas mover un campo de formulario a una nueva ubicación, puedes utilizar el método [MoveField](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/formeditor/methods/movefield) de la clase [FormEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/formeditor). Solo necesitas proporcionar el nombre del campo y la nueva ubicación de este campo al método [MoveField](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/formeditor/methods/movefield). También necesitas guardar el archivo PDF actualizado utilizando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/form/methods/save/index) de la clase [FormEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/formeditor). El siguiente fragmento de código te muestra cómo mover un campo de formulario a una nueva ubicación en un archivo PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -98,7 +98,7 @@ private static void MoveField()
 
 ## Eliminar Campo de Formulario de un Archivo PDF Existente
 
-Para eliminar un campo de formulario de un archivo PDF existente, puedes utilizar el método RemoveField de la clase FormEditor. Este método toma solo un argumento: el nombre del campo. Necesitas crear un objeto de la clase FormEditor, llamar al método [RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield) para eliminar un campo particular del PDF y luego llamar al método Save para guardar el archivo PDF actualizado. El siguiente fragmento de código te muestra cómo eliminar campos de formulario de un archivo PDF existente.
+Para eliminar un campo de formulario de un archivo PDF existente, puedes utilizar el método RemoveField de la clase FormEditor. Este método toma solo un argumento: el nombre del campo. Necesitas crear un objeto de la clase FormEditor, llamar al método [RemoveField](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/formeditor/methods/removefield) para eliminar un campo particular del PDF y luego llamar al método Save para guardar el archivo PDF actualizado. El siguiente fragmento de código te muestra cómo eliminar campos de formulario de un archivo PDF existente.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -119,7 +119,7 @@ private static void RemoveFields()
 
 ## Renombrar Campos de Formulario en PDF
 
-También puedes renombrar tu campo utilizando el método [RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield) de la clase [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor).
+También puedes renombrar tu campo utilizando el método [RenameField](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/formeditor/methods/renamefield) de la clase [FormEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/formeditor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

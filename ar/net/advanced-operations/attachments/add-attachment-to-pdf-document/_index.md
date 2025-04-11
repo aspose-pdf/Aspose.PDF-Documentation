@@ -85,11 +85,11 @@ sitemap:
 
 1. أنشئ مشروع C# جديد.
 1. أضف مرجعًا إلى DLL Aspose.PDF.
-1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. أنشئ كائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) مع الملف الذي تضيفه، ووصف الملف.
-1. أضف كائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) إلى مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) باستخدام طريقة Add الخاصة بالمجموعة.
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. أنشئ كائن [FileSpecification](https://reference.aspose.com/pdf/ar/net/aspose.pdf/filespecification) مع الملف الذي تضيفه، ووصف الملف.
+1. أضف كائن [FileSpecification](https://reference.aspose.com/pdf/ar/net/aspose.pdf/filespecification) إلى مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/ar/net/aspose.pdf/embeddedfilecollection) لكائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document) باستخدام طريقة Add الخاصة بالمجموعة.
 
-تحتوي مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) على جميع المرفقات في ملف PDF. يوضح لك مقتطف الكود التالي كيفية إضافة مرفق في مستند PDF.
+تحتوي مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/ar/net/aspose.pdf/embeddedfilecollection) على جميع المرفقات في ملف PDF. يوضح لك مقتطف الكود التالي كيفية إضافة مرفق في مستند PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

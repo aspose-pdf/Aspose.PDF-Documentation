@@ -77,7 +77,7 @@ draft: false
 
 ## إنشاء كتيب من PDF باستخدام مسارات الملفات
 
-تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من ملف PDF المدخل وحفظه في ملف PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام مسارات الملفات.
+تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من ملف PDF المدخل وحفظه في ملف PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام مسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
 
 ## إنشاء كتيب من PDF باستخدام حجم الصفحة ومسارات الملفات
 
-تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من ملف PDF المدخل وحفظه في ملف PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام حجم الصفحة ومسارات الملفات.
+تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من ملف PDF المدخل وحفظه في ملف PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام حجم الصفحة ومسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
 
 ## إنشاء كتيب من PDF باستخدام حجم الصفحة، والصفحات اليسرى واليمنى المحددة، ومسارات الملفات
 
-تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من ملف PDF المدخل وحفظه في ملف PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج وتحديد صفحات معينة للجانب الأيسر والأيمن من ملف PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام حجم الصفحة، والصفحات اليسرى واليمنى المحددة، ومسارات الملفات.
+تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من ملف PDF المدخل وحفظه في ملف PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج وتحديد صفحات معينة للجانب الأيسر والأيمن من ملف PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام حجم الصفحة، والصفحات اليسرى واليمنى المحددة، ومسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## إنشاء كتيب من PDF باستخدام الصفحات اليسرى واليمنى المحددة، ومسارات الملفات
 
-تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من ملف PDF المدخل وحفظه في ملف PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام مسارات الملفات. يمكنك أيضًا تحديد صفحات معينة للجانب الأيسر والأيمن من ملف PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام الصفحات اليسرى واليمنى المحددة ومسارات الملفات.
+تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من ملف PDF المدخل وحفظه في ملف PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام مسارات الملفات. يمكنك أيضًا تحديد صفحات معينة للجانب الأيسر والأيمن من ملف PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام الصفحات اليسرى واليمنى المحددة ومسارات الملفات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
 
 ## إنشاء كتيب من PDF باستخدام التدفقات
 
-تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من تدفق PDF المدخل وحفظه في تدفقات PDF الناتجة. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام التدفقات بدلاً من مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام التدفقات.
+تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من تدفق PDF المدخل وحفظه في تدفقات PDF الناتجة. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام التدفقات بدلاً من مسارات الملفات. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام التدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,7 +175,7 @@ private static void MakeBookletOfPdfUsingStreams()
 
 ## إنشاء كتيب من PDF باستخدام حجم الصفحة والتدفقات
 
-تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لتدفق PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام حجم الصفحة والتدفقات.
+تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لتدفق PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام حجم الصفحة والتدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
 
 ## إنشاء كتيب من PDF باستخدام حجم الصفحة، والصفحات اليسرى واليمنى المحددة، والتدفقات
 
-تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج وتحديد صفحات معينة للجانب الأيسر والأيمن من تدفق PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام حجم الصفحة، والصفحات اليسرى واليمنى المحددة، والتدفقات.
+تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تعيين حجم الصفحة لملف PDF الناتج وتحديد صفحات معينة للجانب الأيسر والأيمن من تدفق PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام حجم الصفحة، والصفحات اليسرى واليمنى المحددة، والتدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +226,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
 
 ## إنشاء كتيب من PDF باستخدام الصفحات اليسرى واليمنى المحددة، والتدفقات
 
-تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تحديد صفحات معينة للجانب الأيسر والأيمن من تدفق PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام الصفحات اليسرى واليمنى المحددة والتدفقات.
+تتيح لك طريقة [MakeBooklet](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) من فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) إنشاء كتيب من تدفق PDF المدخل وحفظه في تدفق PDF الناتج. يسمح لك هذا التحميل الزائد بإنشاء كتيب باستخدام التدفقات بدلاً من مسارات الملفات. يمكنك أيضًا تحديد صفحات معينة للجانب الأيسر والأيمن من تدفق PDF الناتج مع هذا التحميل الزائد. يوضح لك مقتطف الكود التالي كيفية إنشاء كتيب باستخدام الصفحات اليسرى واليمنى المحددة والتدفقات.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

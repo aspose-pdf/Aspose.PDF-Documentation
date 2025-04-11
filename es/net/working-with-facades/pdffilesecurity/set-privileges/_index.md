@@ -77,7 +77,7 @@ draft: false
 
 ## Establecer Privilegios en un Archivo PDF Existente
 
-Para establecer los privilegios de un archivo PDF, crea un objeto [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) y llama al método SetPrivilege. Puedes especificar los privilegios utilizando el objeto DocumentPrivilege y luego pasar este objeto al método SetPrivilege. El siguiente fragmento de código te muestra cómo establecer los privilegios de un archivo PDF.
+Para establecer los privilegios de un archivo PDF, crea un objeto [PdfFileSecurity](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdffilesecurity) y llama al método SetPrivilege. Puedes especificar los privilegios utilizando el objeto DocumentPrivilege y luego pasar este objeto al método SetPrivilege. El siguiente fragmento de código te muestra cómo establecer los privilegios de un archivo PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

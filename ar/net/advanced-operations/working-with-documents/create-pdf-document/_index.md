@@ -91,9 +91,9 @@ sitemap:
 
 لإنشاء ملف PDF باستخدام C#، يمكن استخدام الخطوات التالية.
 
-1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. إضافة كائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) إلى مجموعة [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) لكائن Document.
-1. إضافة [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) إلى مجموعة [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) للصفحة.
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. إضافة كائن [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) إلى مجموعة [Pages](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/properties/pages) لكائن Document.
+1. إضافة [TextFragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragment) إلى مجموعة [Paragraphs](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page/properties/paragraphs) للصفحة.
 1. حفظ مستند PDF الناتج.
 
 ```csharp

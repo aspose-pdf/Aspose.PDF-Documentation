@@ -75,21 +75,21 @@ draft: false
 }
 </script>
 
-[PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) 类可以帮助您在现有 PDF 文档中指定位置添加图像和文本。它提供了两个方法，分别是 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 和 [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)。 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法允许您添加 JPG、GIF、PNG 和 BMP 类型的图像。 [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) 方法接受一个类型为 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 类的参数，并将其添加到现有 PDF 文件中。图像和文本可以添加到由左下角和右上角坐标指定的矩形区域。在添加图像时，您可以指定图像文件路径或图像文件的流。为了指定需要添加图像或文本的页面编号，这两个方法都提供了页面编号的参数。因此，您不仅可以在指定位置添加图像和文本，还可以在指定页面上添加。
+[PdfFileMend](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend) 类可以帮助您在现有 PDF 文档中指定位置添加图像和文本。它提供了两个方法，分别是 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 和 [AddText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)。 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法允许您添加 JPG、GIF、PNG 和 BMP 类型的图像。 [AddText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) 方法接受一个类型为 [FormattedText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formattedtext) 类的参数，并将其添加到现有 PDF 文件中。图像和文本可以添加到由左下角和右上角坐标指定的矩形区域。在添加图像时，您可以指定图像文件路径或图像文件的流。为了指定需要添加图像或文本的页面编号，这两个方法都提供了页面编号的参数。因此，您不仅可以在指定位置添加图像和文本，还可以在指定页面上添加。
 
-图像是 PDF 文档内容的重要组成部分。在现有 PDF 文件中操作图像是处理 PDF 文件的人员的常见需求。在本文中，我们将探讨如何借助 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 操作现有 PDF 文件中的图像。所有与图像相关的操作都已在本文中整合。
+图像是 PDF 文档内容的重要组成部分。在现有 PDF 文件中操作图像是处理 PDF 文件的人员的常见需求。在本文中，我们将探讨如何借助 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 操作现有 PDF 文件中的图像。所有与图像相关的操作都已在本文中整合。
 
 ## 实现细节
 
-[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 允许您在现有 PDF 文件中添加新图像。您还可以替换或删除现有图像。PDF 文件也可以转换为图像。您可以将每个单独的页面转换为单个图像，或将整个 PDF 文件转换为一张图像。它支持 JPEG、BMP、PNG 和 TIFF 等格式。您还可以从 PDF 文件中提取图像。您可以使用 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 的四个类来实现这些操作，即 [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend)、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)、[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 和 [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter)。
+[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 允许您在现有 PDF 文件中添加新图像。您还可以替换或删除现有图像。PDF 文件也可以转换为图像。您可以将每个单独的页面转换为单个图像，或将整个 PDF 文件转换为一张图像。它支持 JPEG、BMP、PNG 和 TIFF 等格式。您还可以从 PDF 文件中提取图像。您可以使用 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades) 的四个类来实现这些操作，即 [PdfFileMend](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend)、[PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor)、[PdfExtractor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfextractor) 和 [PdfConverter](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter)。
 
 ## 图像操作
 
-在本节中，我们将详细了解这些图像操作。我们还将查看代码片段以展示相关类和方法的使用。首先，让我们看看如何在现有 PDF 文件中添加图像。我们可以使用 [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法来添加新图像。使用此方法，您不仅可以指定要添加图像的页面编号，还可以指定图像的位置。
+在本节中，我们将详细了解这些图像操作。我们还将查看代码片段以展示相关类和方法的使用。首先，让我们看看如何在现有 PDF 文件中添加图像。我们可以使用 [PdfFileMend](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法来添加新图像。使用此方法，您不仅可以指定要添加图像的页面编号，还可以指定图像的位置。
 
 ## 在现有 PDF 文件中添加图像（外观）
 
-您可以使用 [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) 方法。 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage) 方法需要添加的图像、需要添加图像的页面编号和坐标信息。之后，使用 [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/close) 方法保存更新后的 PDF 文件。
+您可以使用 [PdfFileMend](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend) 类的 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage) 方法。 [AddImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilemend/methods/addimage) 方法需要添加的图像、需要添加图像的页面编号和坐标信息。之后，使用 [Close](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/close) 方法保存更新后的 PDF 文件。
 
 在以下示例中，我们使用 imageStream 向页面添加图像：
 
@@ -124,7 +124,7 @@ private static void AddImage01()
 
 ![添加图像](/pdf/zh/net/images/add_image1.png)
 
-借助 [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)，我们可以将一张图像叠加在另一张图像上：
+借助 [CompositingParameters](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)，我们可以将一张图像叠加在另一张图像上：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +248,7 @@ private static void AddImage04()
 
 ## 在现有 PDF 文件中添加文本（外观）
 
-我们可以通过几种方式添加文本。考虑第一种。我们获取 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 并将其添加到页面。之后，我们指明左下角的坐标，然后将文本添加到页面。
+我们可以通过几种方式添加文本。考虑第一种。我们获取 [FormattedText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formattedtext) 并将其添加到页面。之后，我们指明左下角的坐标，然后将文本添加到页面。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -279,7 +279,7 @@ private static void AddText01()
 
 ![添加文本](/pdf/zh/net/images/add_text.png)
 
-第二种添加 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 的方法。此外，我们指明一个矩形，以便我们的文本适合其中。
+第二种添加 [FormattedText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formattedtext) 的方法。此外，我们指明一个矩形，以便我们的文本适合其中。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

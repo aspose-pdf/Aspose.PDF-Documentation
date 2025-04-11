@@ -86,11 +86,11 @@ Aspose.PDF for .NET هو واجهة برمجة تطبيقات PDF غنية با�
 
 عينة الكود التالية تتبع هذه الخطوات:
 
-1. إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. إضافة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) إلى كائن المستند.
-1. إنشاء كائن [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
-1. إضافة TextFragment إلى مجموعة [Paragraph](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) في الصفحة.
-1. [حفظ](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) مستند PDF الناتج.
+1. إنشاء كائن [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+1. إضافة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) إلى كائن المستند.
+1. إنشاء كائن [TextFragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragment).
+1. إضافة TextFragment إلى مجموعة [Paragraph](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page/properties/paragraphs) في الصفحة.
+1. [حفظ](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4) مستند PDF الناتج.
 
 عينة الكود التالية هي برنامج مرحبا بالعالم لعرض عمل واجهة برمجة تطبيقات Aspose.PDF for .NET.
 

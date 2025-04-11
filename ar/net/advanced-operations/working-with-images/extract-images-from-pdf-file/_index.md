@@ -78,9 +78,9 @@ lastmod: "2022-02-17"
 
 تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
-تحتوي الصور على مجموعة [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) الخاصة بكل صفحة في مجموعة [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) . لاستخراج صفحة معينة، ثم الحصول على الصورة من مجموعة الصور باستخدام الفهرس المحدد للصورة.
+تحتوي الصور على مجموعة [Resources](https://reference.aspose.com/pdf/ar/net/aspose.pdf/resources) الخاصة بكل صفحة في مجموعة [Images](https://reference.aspose.com/pdf/ar/net/aspose.pdf/resources/properties/images) . لاستخراج صفحة معينة، ثم الحصول على الصورة من مجموعة الصور باستخدام الفهرس المحدد للصورة.
 
-يعيد فهرس الصورة كائن [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage) . يوفر هذا الكائن طريقة Save يمكن استخدامها لحفظ الصورة المستخرجة. يوضح مقتطف الشيفرة التالي كيفية استخراج الصور من ملف PDF.
+يعيد فهرس الصورة كائن [XImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf/ximage) . يوفر هذا الكائن طريقة Save يمكن استخدامها لحفظ الصورة المستخرجة. يوضح مقتطف الشيفرة التالي كيفية استخراج الصور من ملف PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

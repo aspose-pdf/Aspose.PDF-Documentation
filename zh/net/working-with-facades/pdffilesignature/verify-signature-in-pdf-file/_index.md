@@ -77,7 +77,7 @@ draft: false
 
 ## 验证 PDF 文件是否使用签名进行签署
 
-要验证 PDF 文件是否使用 [特定签名](/pdf/zh/net/working-with-signature-in-a-pdf-file/) 进行签署，请使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的 VerifySigned 方法。此方法需要签名名称，如果 PDF 使用该签名名称进行签署，则返回 true。也可以验证 [PDF 是否已签署](/pdf/zh/net/working-with-signature-in-a-pdf-file/)，而无需验证使用的是哪个签名。
+要验证 PDF 文件是否使用 [特定签名](/pdf/zh/net/working-with-signature-in-a-pdf-file/) 进行签署，请使用 [PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类的 VerifySigned 方法。此方法需要签名名称，如果 PDF 使用该签名名称进行签署，则返回 true。也可以验证 [PDF 是否已签署](/pdf/zh/net/working-with-signature-in-a-pdf-file/)，而无需验证使用的是哪个签名。
 
 ### 验证 PDF 是否使用给定签名进行签署
 
@@ -127,7 +127,7 @@ private static void IsPdfSignedWithGivenSignature()
 
 ## 验证签名是否有效
 
-[VerifySignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) 方法属于 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类，允许您验证特定签名。此方法需要签名名称作为输入，如果签名有效，则返回 true。以下代码片段演示如何验证签名。
+[VerifySignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) 方法属于 [PdfFileSignature](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdffilesignature) 类，允许您验证特定签名。此方法需要签名名称作为输入，如果签名有效，则返回 true。以下代码片段演示如何验证签名。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

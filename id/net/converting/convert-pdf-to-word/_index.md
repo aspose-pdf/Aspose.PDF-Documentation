@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF to Microsoft Word Documents in .NET",
     "alternativeHeadline": "Seamlessly Convert PDFs to Word Documents with C#",
-    "abstract": "Aspose.PDF for .NET memperkenalkan fitur yang kuat untuk mengonversi file PDF ke format Microsoft Word (DOC dan DOCX) menggunakan C#. Fungsionalitas ini tidak hanya meningkatkan pengeditan dokumen tetapi juga menyediakan opsi fleksibel untuk pengenalan teks dan pemformatan, memastikan kesetiaan tinggi antara PDF sumber dan dokumen Word yang dihasilkan.",
+    "abstract": "Aspose.PDF for .NET memperkenalkan fitur kuat untuk mengonversi file PDF ke format Microsoft Word (DOC dan DOCX) menggunakan C#. Fungsionalitas ini tidak hanya meningkatkan pengeditan dokumen tetapi juga menyediakan opsi fleksibel untuk pengenalan teks dan pemformatan, memastikan kesetiaan tinggi antara PDF sumber dan dokumen Word yang dihasilkan.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1495",
+    "wordcount": "1208",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-word/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF tidak hanya dapat melakukan tugas sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
@@ -82,23 +82,8 @@ sitemap:
 
 Artikel ini menjelaskan cara **mengonversi PDF ke Dokumen Microsoft Word menggunakan C#**. Ini mencakup topik-topik berikut.
 
-_Format_: **DOC**
-
-- [C# PDF ke DOC](#csharp-pdf-to-doc)
-- [C# Mengonversi PDF ke DOC](#csharp-pdf-to-doc)
-- [C# Cara mengonversi file PDF ke DOC](#csharp-pdf-to-doc)
-
-_Format_: **DOCX**
-
-- [C# PDF ke DOCX](#csharp-pdf-to-docx)
-- [C# Mengonversi PDF ke DOCX](#csharp-pdf-to-docx)
-- [C# Cara mengonversi file PDF ke DOCX](#csharp-pdf-to-docx)
-
-_Format_: **Word**
-
-- [C# PDF ke Word](#csharp-pdf-to-docx)
-- [C# Mengonversi PDF ke Word](#csharp-pdf-to-doc)
-- [C# Cara mengonversi file PDF ke Word](#csharp-pdf-to-docx)
+- [Mengonversi PDF ke DOC](#csharp-pdf-to-doc)
+- [Mengonversi PDF ke DOCX](#csharp-pdf-to-docx)
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -110,15 +95,15 @@ Salah satu fitur paling populer adalah konversi PDF ke Microsoft Word DOC, yang 
 
 Mengonversi file PDF ke format DOC dengan mudah dan kontrol penuh. Aspose.PDF for .NET fleksibel dan mendukung berbagai konversi. Mengonversi halaman dari dokumen PDF ke gambar, misalnya, adalah fitur yang sangat populer.
 
-Banyak pelanggan kami telah meminta konversi dari PDF ke DOC: mengonversi file PDF ke dokumen Microsoft Word. Pelanggan menginginkan ini karena file PDF tidak dapat diedit dengan mudah, sedangkan dokumen Word dapat. Beberapa perusahaan ingin pengguna mereka dapat memanipulasi teks, tabel, dan gambar dalam file yang berasal dari PDF.
+Banyak pelanggan kami telah meminta konversi dari PDF ke DOC: mengonversi file PDF ke dokumen Microsoft Word. Pelanggan menginginkan ini karena file PDF tidak dapat diedit dengan mudah, sedangkan dokumen Word dapat. Beberapa perusahaan ingin pengguna mereka dapat memanipulasi teks, tabel, dan gambar dalam file yang dimulai sebagai PDF.
 
-Dengan mempertahankan tradisi membuat hal-hal sederhana dan dapat dipahami, Aspose.PDF for .NET memungkinkan Anda untuk mengubah file PDF sumber menjadi file DOC dengan dua baris kode. Untuk mencapai fitur ini, kami telah memperkenalkan enumerasi bernama SaveFormat dan nilainya .Doc memungkinkan Anda menyimpan file sumber ke format Microsoft Word.
+Dengan menjaga tradisi membuat segala sesuatu sederhana dan dapat dipahami, Aspose.PDF for .NET memungkinkan Anda untuk mengubah file PDF sumber menjadi file DOC dengan dua baris kode. Untuk mencapai fitur ini, kami telah memperkenalkan enumerasi bernama SaveFormat dan nilainya .Doc memungkinkan Anda menyimpan file sumber ke format Microsoft Word.
 
 Potongan kode C# berikut menunjukkan cara mengonversi file PDF menjadi format DOC.
 
-<a name="csharp-pdf-to-doc"><strong>Langkah: Mengonversi PDF ke DOC di C#</strong></a>
+<a name="csharp-pdf-to-doc" id="csharp-pdf-to-doc"><strong>Mengonversi PDF ke DOC</strong></a>
 
-1. Buat instance objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan dokumen PDF sumber.
+1. Buat instance objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dengan dokumen PDF sumber.
 2. Simpan ke format **SaveFormat.Doc** dengan memanggil metode **Document.Save()**.
 
 ```csharp
@@ -139,13 +124,13 @@ private static void ConvertPDFtoWord()
 
 ### Menggunakan Kelas DocSaveOptions
 
-Kelas [`DocSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) menyediakan banyak properti yang meningkatkan konversi file PDF ke format DOC. Di antara properti ini, Mode memungkinkan Anda untuk menentukan mode pengenalan untuk konten PDF. Anda dapat memilih nilai apa pun dari enumerasi RecognitionMode untuk properti ini. Setiap nilai ini memiliki manfaat dan batasan tertentu:
+Kelas [`DocSaveOptions`](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions) menyediakan banyak properti yang meningkatkan konversi file PDF ke format DOC. Di antara properti ini, Mode memungkinkan Anda untuk menentukan mode pengenalan untuk konten PDF. Anda dapat memilih nilai apa pun dari enumerasi RecognitionMode untuk properti ini. Setiap nilai ini memiliki manfaat dan batasan tertentu:
 
-- Mode [`Textbox`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) cepat dan baik untuk mempertahankan tampilan asli file PDF, tetapi kemampuan edit dokumen yang dihasilkan bisa terbatas. Setiap blok teks yang dikelompokkan secara visual dalam PDF asli diubah menjadi kotak teks dalam dokumen keluaran. Ini mencapai kemiripan maksimal dengan yang asli, sehingga dokumen keluaran terlihat baik, tetapi sepenuhnya terdiri dari kotak teks, yang dapat diedit di Microsoft Word, yang cukup menantang.
-- [`Flow`](https://reference.aspose.com/pdf/net/aspose.pdf.docsaveoptions/recognitionmode) adalah mode pengenalan penuh, di mana mesin melakukan pengelompokan dan analisis multi-level untuk mengembalikan dokumen asli sesuai dengan niat penulis sambil menghasilkan dokumen yang mudah diedit. Batasannya adalah dokumen keluaran mungkin terlihat berbeda dari yang asli.
+- Mode [`Textbox`](https://reference.aspose.com/pdf/id/net/aspose.pdf.docsaveoptions/recognitionmode) cepat dan baik untuk mempertahankan tampilan asli file PDF, tetapi kemampuan edit dokumen yang dihasilkan bisa terbatas. Setiap blok teks yang dikelompokkan secara visual dalam PDF asli diubah menjadi kotak teks dalam dokumen keluaran. Ini mencapai kemiripan maksimal dengan yang asli, sehingga dokumen keluaran terlihat baik, tetapi sepenuhnya terdiri dari kotak teks, yang bisa diedit di Microsoft Word, yang cukup menantang.
+- [`Flow`](https://reference.aspose.com/pdf/id/net/aspose.pdf.docsaveoptions/recognitionmode) adalah mode pengenalan penuh, di mana mesin melakukan pengelompokan dan analisis multi-level untuk mengembalikan dokumen asli sesuai dengan niat penulis sambil menghasilkan dokumen yang mudah diedit. Batasannya adalah dokumen keluaran mungkin terlihat berbeda dari yang asli.
 
-Properti [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) dapat digunakan untuk mengontrol kedekatan relatif antara elemen teks. Ini berarti bahwa jarak dinormalkan berdasarkan ukuran font. Font yang lebih besar mungkin memiliki ruang yang lebih besar antara suku kata dan masih dianggap sebagai satu kesatuan. Ini ditentukan sebagai persentase dari ukuran font; misalnya, 1 = 100%. Ini berarti bahwa dua karakter 12pt yang ditempatkan 12 pt terpisah adalah proximal.
-- [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) digunakan untuk mengaktifkan pengenalan bullet selama konversi.
+Properti [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions/properties/relativehorizontalproximity) dapat digunakan untuk mengontrol kedekatan relatif antara elemen teks. Ini berarti bahwa jarak dinormalkan berdasarkan ukuran font. Font yang lebih besar mungkin memiliki ruang yang lebih besar antara suku kata dan tetap dianggap sebagai satu kesatuan. Ini ditentukan sebagai persentase dari ukuran font; misalnya, 1 = 100%. Ini berarti bahwa dua karakter 12pt yang ditempatkan 12 pt terpisah adalah proximal.
+- [`RecognitionBullets`](https://reference.aspose.com/pdf/id/net/aspose.pdf/docsaveoptions/properties/recognizebullets) digunakan untuk mengaktifkan pengenalan peluru selama konversi.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -177,7 +162,7 @@ private static void ConvertPDFtoWordDocAdvanced()
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke DOC secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Mengonversi PDF ke DOC](/pdf/id/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
@@ -188,9 +173,9 @@ API Aspose.PDF for .NET memungkinkan Anda membaca dan mengonversi dokumen PDF ke
 
 Potongan kode C# berikut menunjukkan cara mengonversi file PDF menjadi format DOCX.
 
-<a name="csharp-pdf-to-docx"><strong>Langkah: Mengonversi PDF ke DOCX di C#</strong></a>
+<a name="csharp-pdf-to-docx" id="csharp-pdf-to-docx"><strong>Mengonversi PDF ke DOCX</strong></a>
 
-1. Buat instance objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan dokumen PDF sumber.
+1. Buat instance objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dengan dokumen PDF sumber.
 2. Simpan ke format **SaveFormat.DocX** dengan memanggil metode **Document.Save()**.
 
 ```csharp
@@ -241,45 +226,8 @@ private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 {{% alert color="warning" %}}
 **Cobalah untuk mengonversi PDF ke DOCX secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
-[![Aplikasi Gratis Konversi PDF ke Word Aspose.PDF](/pdf/id/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aplikasi Gratis Aspose.PDF Mengonversi PDF ke Word](/pdf/id/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
-
-## Lihat Juga
-
-Artikel ini juga mencakup topik-topik berikut. Kode-kode sama seperti di atas.
-
-_Format_: **Word**
-
-- [C# Kode PDF ke Word](#csharp-pdf-to-docx)
-- [C# API PDF ke Word](#csharp-pdf-to-docx)
-- [C# PDF ke Word Secara Programatik](#csharp-pdf-to-docx)
-- [C# Perpustakaan PDF ke Word](#csharp-pdf-to-docx)
-- [C# Simpan PDF sebagai Word](#csharp-pdf-to-docx)
-- [C# Hasilkan Word dari PDF](#csharp-pdf-to-docx)
-- [C# Buat Word dari PDF](#csharp-pdf-to-docx)
-- [C# Konverter PDF ke Word](#csharp-pdf-to-docx)
-
-_Format_: **DOC**
-
-- [C# Kode PDF ke DOC](#csharp-pdf-to-doc)
-- [C# API PDF ke DOC](#csharp-pdf-to-doc)
-- [C# PDF ke DOC Secara Programatik](#csharp-pdf-to-doc)
-- [C# Perpustakaan PDF ke DOC](#csharp-pdf-to-doc)
-- [C# Simpan PDF sebagai DOC](#csharp-pdf-to-doc)
-- [C# Hasilkan DOC dari PDF](#csharp-pdf-to-doc)
-- [C# Buat DOC dari PDF](#csharp-pdf-to-doc)
-- [C# Konverter PDF ke DOC](#csharp-pdf-to-doc)
-
-_Format_: **DOCX**
-
-- [C# Kode PDF ke DOCX](#csharp-pdf-to-docx)
-- [C# API PDF ke DOCX](#csharp-pdf-to-docx)
-- [C# PDF ke DOCX Secara Programatik](#csharp-pdf-to-docx)
-- [C# Perpustakaan PDF ke DOCX](#csharp-pdf-to-docx)
-- [C# Simpan PDF sebagai DOCX](#csharp-pdf-to-docx)
-- [C# Hasilkan DOCX dari PDF](#csharp-pdf-to-docx)
-- [C# Buat DOCX dari PDF](#csharp-pdf-to-docx)
-- [C# Konverter PDF ke DOCX](#csharp-pdf-to-docx)

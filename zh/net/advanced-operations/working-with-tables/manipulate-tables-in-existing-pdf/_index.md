@@ -113,7 +113,7 @@ private static void ManipulateTable()
 
 ## 在PDF文档中用新表替换旧表
 
-如果您需要找到特定表格并用所需的表格替换它，可以使用[TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber)类的Replace()方法来实现。以下示例演示了在PDF文档中替换表格的功能：
+如果您需要找到特定表格并用所需的表格替换它，可以使用[TableAbsorber](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/tableabsorber)类的Replace()方法来实现。以下示例演示了在PDF文档中替换表格的功能：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

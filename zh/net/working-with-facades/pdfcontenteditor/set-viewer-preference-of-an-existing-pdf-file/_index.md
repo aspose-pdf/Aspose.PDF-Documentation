@@ -77,13 +77,13 @@ draft: false
 
 ## 设置现有 PDF 文件的查看器偏好
 
-[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) 类表示 PDF 文件的显示模式；例如，将文档窗口定位在屏幕中心、隐藏查看器应用程序的菜单栏等。
+[ViewerPreference](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/viewerpreference) 类表示 PDF 文件的显示模式；例如，将文档窗口定位在屏幕中心、隐藏查看器应用程序的菜单栏等。
 
-[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类中的 [ChangeViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) 方法允许您更改查看器偏好。为此，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/bindpdf/index) 方法绑定输入的 PDF 文件。
+[PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类中的 [ChangeViewerPreference](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) 方法允许您更改查看器偏好。为此，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/bindpdf/index) 方法绑定输入的 PDF 文件。
 
-之后，您可以调用 [ChangeViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) 方法来设置任何偏好。最后，您必须使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法保存更新后的 PDF 文件。以下代码片段展示了如何在现有 PDF 文件中更改查看器偏好。
+之后，您可以调用 [ChangeViewerPreference](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/changeviewerpreference) 方法来设置任何偏好。最后，您必须使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save/index) 方法保存更新后的 PDF 文件。以下代码片段展示了如何在现有 PDF 文件中更改查看器偏好。
 
-例如，我们指定参数 [CenterWindow](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/centerwindow)，使窗口居中，然后使用 [HideMenubar](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar) 移除顶部工具栏，并使用 [PageModeUseNone](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone) 打开全屏模式。
+例如，我们指定参数 [CenterWindow](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/viewerpreference/fields/centerwindow)，使窗口居中，然后使用 [HideMenubar](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar) 移除顶部工具栏，并使用 [PageModeUseNone](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone) 打开全屏模式。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

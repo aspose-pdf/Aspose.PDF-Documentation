@@ -146,7 +146,7 @@ Aspose.PDF.Drawing 没有额外的许可证，使用与 Aspose.PDF 相同的许�
 
 ![Aspose.PDF.Drawing for .NET](nuget.png)
 
-在 [API 参考](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/) 网站上了解 Aspose.PDF.Drawing 中可用的类。
+在 [API 参考](https://reference.aspose.com/pdf/zh/net/aspose.pdf.drawing/) 网站上了解 Aspose.PDF.Drawing 中可用的类。
 
 了解更多内容：
 

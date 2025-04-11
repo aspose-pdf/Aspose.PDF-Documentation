@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/whatsnew/
-description: Halaman ini memperkenalkan fitur-fitur baru yang paling populer di Aspose.PDF for .NET yang telah diperkenalkan dalam rilis terbaru.
+description: Di halaman ini memperkenalkan fitur-fitur baru yang paling populer di Aspose.PDF for .NET yang telah diperkenalkan dalam rilis terbaru.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -18,7 +18,7 @@ lastmod: "2025-01-31"
     "@type": "TechArticle",
     "headline": "Whats new",
     "alternativeHeadline": "Discover the latest enhancements in Aspose.PDF for .NET",
-    "abstract": "Temukan peningkatan terbaru di Aspose.PDF for .NET, termasuk pengenalan Algoritma Tanda Tangan Digital Kurva Eliptik (ECDSA) untuk penandatanganan dan verifikasi dokumen yang kuat, bersama dengan dukungan untuk beberapa kurva eliptik. Selain itu, fitur baru memungkinkan pemotongan gambar saat dimasukkan ke dalam PDF dan pembuatan laporan kerusakan untuk penanganan kesalahan yang lebih baik. Pembaruan ini menyederhanakan manajemen PDF dan memperkuat keamanan dalam alur kerja dokumen.",
+    "abstract": "Temukan peningkatan terbaru di Aspose.PDF for .NET, termasuk pengenalan Algoritma Tanda Tangan Digital Kurva Eliptik (ECDSA) untuk penandatanganan dan verifikasi dokumen yang kuat, bersama dengan dukungan untuk beberapa kurva eliptik. Selain itu, fitur baru ini memungkinkan pemotongan gambar saat dimasukkan ke dalam PDF dan pembuatan laporan kerusakan untuk penanganan kesalahan yang lebih baik. Pembaruan ini menyederhanakan manajemen PDF dan memperkuat keamanan dalam alur kerja dokumen.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ lastmod: "2025-01-31"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "8022",
+    "wordcount": "10927",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,30 +73,45 @@ lastmod: "2025-01-31"
         "@type": "WebPage",
         "@id": "/net/whatsnew/"
     },
-    "dateModified": "2024-12-04",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
+
+## Apa yang Baru di Aspose.PDF 25.3
+
+**Perubahan Paling Signifikan**
+
+Di Aspose.PDF 25.3 kami telah menambahkan:
+* 19 [produk Plugin Kode Tinggi](https://products.aspose.net/pdf/).
+* [Deteksi tanda tangan digital PDF yang terkompromi](https://docs.aspose.com/pdf/id/net/extract-image-and-signature-information/#checking-signatures-for-compromise).
+* [Artefak penomoran Bates](https://docs.aspose.com/pdf/id/net/artifacts/#adding-bates-numbering-artifact).
+* [Pengaturan posisi](https://docs.aspose.com/pdf/id/net/create-tagged-pdf/#adjust-position-of-text-structure) untuk pembuatan elemen bertag.
+* Kemampuan untuk memverifikasi [batas bentuk grafis](https://docs.aspose.com/pdf/id/net/aspose-pdf-drawing-graph-shapes-bounds-check/) saat menambahkannya ke halaman PDF.
+> Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.3](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-3-release-notes/).
+
+**Peningkatan Notable Lainnya**
+
+Kami telah meningkatkan baik kinerja maupun konsumsi memori dalam konversi PDF yang banyak gambar. Kecepatan pemrosesan sekarang dua kali lebih cepat, dan konsumsi memori berkurang sebesar 10% dalam skenario yang diuji.
 
 ## Apa yang baru di Aspose.PDF 25.2
 
 **Perubahan paling signifikan**
 
 Di Aspose.PDF 25.2 kami telah menambahkan:
-* dukungan [konversi PDF ke PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/) standar.
-* [opsi](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) untuk menghindari pemanggilan dua kali dari delegasi CustomSignHash selama penandatanganan.
-* metode baru `GetSignatureNames()` untuk mendapatkan informasi tentang [tanda tangan digital](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) dari PDF.
-* kemungkinan untuk membuat [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) dengan beberapa anotasi widget.
-> [!NOTE]
+* dukungan untuk konversi standar [PDF ke PDF/X-4](https://docs.aspose.com/pdf/id/net/convert-pdf-to-pdfx/).
+* [opsi](https://docs.aspose.com/pdf/id/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) untuk menghindari pemanggilan dua kali dari delegasi CustomSignHash selama penandatanganan.
+* metode baru `GetSignatureNames()` untuk mendapatkan informasi tentang [tanda tangan digital](https://docs.aspose.com/pdf/id/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) PDF.
+* kemungkinan untuk membuat [TextBoxField](https://docs.aspose.com/pdf/id/net/create-form/#adding-radiobuttonfield) dengan beberapa anotasi widget.
 > Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.2](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/).
 
-**Peningkatan notable lainnya**
+**Peningkatan Notable Lainnya**
 
-* Kompresi gambar tanpa kehilangan kualitas pada [optimisasi PDF](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) ditingkatkan. Ukuran dokumen yang dikompresi berkurang.
-* Metode [Perbaikan](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) Dokumen ditingkatkan. Sekarang dapat memeriksa dan memperbaiki nilai dalam array Annotation.Rect.
+* Kompresi gambar tanpa kehilangan kualitas pada [optimisasi PDF](https://docs.aspose.com/pdf/id/net/optimize-pdf/#shrinking-or-compressing-all-images) ditingkatkan. Ukuran dokumen terkompresi berkurang.
+* [Metode `Repair` Dokumen](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/repair/) ditingkatkan. Sekarang dapat memeriksa dan memperbaiki nilai dalam array Annotation.Rect.
 * Versi ketergantungan System.Text.Json diperbarui untuk menghindari kemungkinan kerentanan CVE-2024-43485.
 * Deteksi serangan tanda tangan PDF ditingkatkan untuk mencegah hasil positif palsu.
-* API publik untuk mendeklarasikan kamus sumber daya disediakan:
+* API publik untuk mengedit kamus sumber daya disediakan:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -142,7 +157,8 @@ Di Aspose.PDF 25.1 kami telah menambahkan:
 * kemungkinan untuk memvalidasi tanda tangan PDF menggunakan Server Otoritas Sertifikat (CA).
 * validasi tanda tangan PDF lintas platform menggunakan algoritma hashing SHA-3.
 
-Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/).
+Informasi rinci tentang perubahan dan contoh penggunaan dapat ditemukan di halaman [Catatan Rilis Aspose.PDF 25.1](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-1-release-notes/) halaman.
+
 
 ## Apa yang baru di Aspose.PDF 24.12
 
@@ -203,9 +219,9 @@ private static void PdfToPngWithAnalyzingFonts()
 }
 ```
 
-Mulai dari Aspose.PDF 24.12, penyesuaian otomatis ukuran font dapat diterapkan saat menambahkan cap teks ke dalam file PDF anotasi.
+Mulai dari Aspose.PDF 24.12, penyesuaian otomatis ukuran font dapat diterapkan untuk menambahkan cap teks ke dalam file PDF anotasi.
 
-Cuplikan kode berikut menunjukkan cara menambahkan cap teks anotasi ke dalam file PDF anotasi dan secara otomatis menyesuaikan ukuran font agar sesuai dengan persegi panjang cap.
+Cuplikan kode berikut menunjukkan cara menambahkan cap teks anotasi ke file PDF anotasi dan secara otomatis menyesuaikan ukuran font agar sesuai dengan persegi panjang cap.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStamp()
@@ -235,7 +251,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
 }
 ```
 
-Cuplikan kode berikut menunjukkan cara menambahkan cap teks anotasi ke dalam file PDF anotasi dan secara otomatis menyesuaikan ukuran font agar sesuai dengan ukuran halaman.
+Cuplikan kode berikut menunjukkan cara menambahkan cap teks anotasi ke file PDF anotasi dan secara otomatis menyesuaikan ukuran font agar sesuai dengan ukuran halaman.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStampToFitPage()
@@ -262,6 +278,7 @@ private static void AutoSetTheFontSizeOfTextStampToFitPage()
     }
 }
 ```
+
 
 ## Apa yang baru di Aspose.PDF 24.11
 
@@ -322,7 +339,7 @@ private static void SignWithManualDigestHashAlgorithm(string cert, string pass)
 }
 ```
 
-Properti baru `FontEncodingStrategy` telah ditambahkan ke kelas `HtmlSaveOptions`. Spesifikasi PDF merekomendasikan menggunakan tabel `ToUnicode` untuk mengekstrak konten teks dari PDF. Namun, menggunakan tabel CMap font dapat menghasilkan hasil yang lebih baik untuk jenis dokumen tertentu. Mulai dari versi 24.11, Anda dapat memilih tabel mana yang akan digunakan untuk decoding. Secara default, tabel `ToUnicode` digunakan.
+Sebuah properti baru `FontEncodingStrategy` telah ditambahkan ke kelas `HtmlSaveOptions`. Spesifikasi PDF merekomendasikan menggunakan tabel `ToUnicode` untuk mengekstrak konten teks dari PDF. Namun, menggunakan tabel CMap font dapat menghasilkan hasil yang lebih baik untuk jenis dokumen tertentu. Mulai dari versi 24.11, Anda dapat memilih tabel mana yang akan digunakan untuk decoding. Secara default, tabel `ToUnicode` digunakan.
 
 Cuplikan berikut menunjukkan opsi baru menggunakan:
 ```csharp
@@ -345,6 +362,7 @@ private static void ConvertPdfToHtmlUsingCMap()
     }
 }
 ```
+
 
 ## Apa yang baru di Aspose.PDF 24.10
 
@@ -469,7 +487,7 @@ private static void GenerateCrashReportExample()
 }
 ```
 
-Mengambil elemen lapisan dokumen PDF dan menyimpannya ke dalam aliran PDF baru tersedia mulai sekarang. Dalam dokumen PDF, lapisan (juga dikenal sebagai Grup Konten Opsional atau OCG) digunakan untuk berbagai tujuan, terutama untuk mengelola dan mengontrol visibilitas konten dalam dokumen. Fungsionalitas ini sangat berguna dalam desain, rekayasa, dan penerbitan. Misalnya: aspek cetak biru, komponen diagram yang kompleks, versi bahasa dari konten yang sama.
+Mengekstrak elemen lapisan dokumen PDF dan menyimpannya ke dalam aliran PDF baru tersedia mulai sekarang. Dalam dokumen PDF, lapisan (juga dikenal sebagai Grup Konten Opsional atau OCG) digunakan untuk berbagai tujuan, terutama untuk mengelola dan mengontrol visibilitas konten dalam dokumen. Fungsionalitas ini sangat berguna dalam desain, rekayasa, dan penerbitan. Misalnya: aspek cetak biru, komponen diagram kompleks, versi bahasa dari konten yang sama.
 
 ```cs
 private static void ExtractPdfLayer()
@@ -561,6 +579,7 @@ private static void ConvertHEICtoPDF()
 }
 ```
 
+
 ## Apa yang baru di Aspose.PDF 24.8
 
 Mengonversi Dokumen PDF ke dalam format PDF/A-4
@@ -608,6 +627,7 @@ private static void FlattenTransparency()
     }
 }
 ```
+
 
 ## Apa yang baru di Aspose.PDF 24.7
 
@@ -670,7 +690,7 @@ private static void ComparingEntireDocumentsSideBySide()
 
 Juga, dari rilis ini ditambahkan plugin Aspose.PDF Security untuk .NET:
 
-Fitur Enkripsi:
+Fitur enkripsi:
 
 ```cs
 var input = "sample.pdf";
@@ -683,7 +703,7 @@ opt.AddOutput(new FileDataSource(output));
 plugin.Process(opt);
 ```
 
-Fitur Dekripsi:
+Fitur dekripsi:
 
 ```cs
 var input = "encrypted.pdf";
@@ -817,9 +837,9 @@ private static void LockLayerInPDF()
 
 ### Mengekstrak elemen lapisan PDF
 
-Perpustakaan Aspose.PDF for .NET memungkinkan ekstraksi setiap lapisan dari halaman pertama dan menyimpan setiap lapisan ke dalam file terpisah.
+Perpustakaan Aspose.PDF for .NET memungkinkan ekstraksi setiap lapisan dari halaman pertama dan menyimpan setiap lapisan ke file terpisah.
 
-Untuk membuat PDF baru dari sebuah lapisan, cuplikan kode berikut dapat digunakan:
+Untuk membuat PDF baru dari lapisan, cuplikan kode berikut dapat digunakan:
 
 ```cs
 private static void ExtractPdfLayer()
@@ -844,7 +864,7 @@ private static void ExtractPdfLayer()
 
 ### Meratakan PDF berlapis
 
-Perpustakaan Aspose.PDF for .NET membuka PDF, mengiterasi melalui setiap lapisan di halaman pertama, dan meratakan setiap lapisan, menjadikannya permanen di halaman.
+Perpustakaan Aspose.PDF for .NET membuka PDF, iterasi melalui setiap lapisan di halaman pertama, dan meratakan setiap lapisan, menjadikannya permanen di halaman.
 
 ```cs
 private static void FlattenPdfLayers()
@@ -938,9 +958,9 @@ private static void AddStencilMasksToImages()
 }
 ```
 
-Sejak 24.4 Anda dapat memilih Sumber kertas yang dipilih berdasarkan ukuran halaman PDF di dialog cetak menggunakan API
+Sejak 24.4 Anda dapat memilih Sumber kertas yang Dipilih berdasarkan ukuran halaman PDF di dialog cetak menggunakan API
 
-Mulai dari Aspose.PDF 24.4 preferensi ini dapat diaktifkan dan dinonaktifkan menggunakan properti Document.PickTrayByPdfSize atau facade PdfContentEditor:
+Mulai dengan Aspose.PDF 24.4 preferensi ini dapat dihidupkan dan dimatikan menggunakan properti Document.PickTrayByPdfSize atau facade PdfContentEditor:
 
 ```cs
 private static void PickTrayByPdfSize()
@@ -1023,6 +1043,7 @@ opt.Name = "Signature1";
 plugin.Process(opt);
 ```
 
+
 ## Apa yang baru di Aspose.PDF 24.3
 
 Dari rilis ini ditambahkan PDF/A Converter untuk plugin .NET:
@@ -1046,7 +1067,7 @@ var plugin = new PdfAConverter();
 plugin.Process(options);
 ```
 
-- Mengimplementasikan pencarian melalui daftar frasa dalam TextFragmentAbsorber:
+- Implementasikan pencarian melalui daftar frasa dalam TextFragmentAbsorber:
 
 ```cs
 private static void SearchMultipleRegex()
@@ -1145,7 +1166,7 @@ private static void UsingGraphicsAbsorber()
             // Use the `Visit` method to extract graphics from the page
             graphicsAbsorber.Visit(page);
 
-            // Step 5: Display information about the extracted elements
+            // Display information about the extracted elements
             foreach (var element in graphicsAbsorber.Elements)
             {
                 Console.WriteLine($"Page Number: {element.SourcePage.Number}");
@@ -1184,7 +1205,7 @@ Juga, mendukung akses ke Kamus Halaman atau Katalog Dokumen.
 
 Berikut adalah contoh kode untuk DictionaryEditor:
 
-- Menambahkan nilai baru
+- Tambahkan nilai baru
 
 ```cs
 /private static void AddNewKeysToPdfPageDicrionary()
@@ -1215,7 +1236,7 @@ Berikut adalah contoh kode untuk DictionaryEditor:
 }
 ```
 
-- Menambahkan dan mengatur nilai ke kamus
+- Tambahkan dan atur nilai ke kamus
 
 ```cs
 private static void ModifyKeysInPdfPageDicrionary()
@@ -1240,7 +1261,7 @@ private static void ModifyKeysInPdfPageDicrionary()
 }
 ```
 
-- Mendapatkan nilai dari kamus
+- Dapatkan nilai dari kamus
 
 ```cs
 private static void GetValuesFromPdfPageDicrionary()
@@ -1260,7 +1281,7 @@ private static void GetValuesFromPdfPageDicrionary()
 }
 ```
 
-- Menghapus nilai dari kamus
+- Hapus nilai dari kamus
 
 ```cs
 private static void RemoveFromPdfPageDicrionary()
@@ -1352,7 +1373,7 @@ private static void DeleteSpecifiedForm1()
 }
 ```            
 
-Varian lain untuk menghapus formulir:
+Variasi lain dari menghapus formulir:
 
 ```cs
 private static void DeleteSpecifiedForm2()
@@ -1405,7 +1426,7 @@ private static void RemoveAllForms()
 }
 ```
 
-- Mengimplementasikan konversi PDF ke Markdown:
+- Implementasikan konversi PDF ke Markdown:
 
 ```cs
 private static void ConvertPDFtoMarkup()
@@ -1432,7 +1453,7 @@ private static void ConvertPDFtoMarkup()
 }
 ```
 
-- Mengimplementasikan konversi OFD ke PDF:
+- Implementasikan konversi OFD ke PDF:
 
 ```cs
 private static void ConvertOFDToPDF()
@@ -1544,7 +1565,7 @@ private static void RemoveHiddenText()
 }
 ```
 
-Sejak 23.11 mendukung interupsi thread:
+Sejak 23.11 mendukung interupsi utas:
 
 ```cs
 private static void InterruptExample()
@@ -1627,11 +1648,12 @@ private class RowSpanWorker
 }
 ```
 
+
 ## Apa yang baru di Aspose.PDF 23.10
 
 Pembaruan saat ini menyajikan tiga versi Menghapus tag dari PDF bertag.
 
-- Menghapus beberapa elemen node dari documentElement (elemen pohon akar):
+- Hapus beberapa elemen node dari documentElement (elemen pohon akar):
 
 ```cs
 private static void RemoveStructElement()
@@ -1662,7 +1684,7 @@ private static void RemoveStructElement()
 }
 ```
 
-- Menghapus semua elemen yang ditandai dari dokumen, tetapi mempertahankan elemen struktur:
+- Hapus semua tag elemen yang ditandai dari dokumen, tetapi pertahankan elemen struktur:
 
 ```cs
 private static void RemoveMarkedElementsTags()
@@ -1698,7 +1720,7 @@ private static void RemoveMarkedElementsTags()
 }
 ```
 
-- Menghapus tag sama sekali:
+- Hapus tag sama sekali:
 
 ```cs
 private static void RemoveTags()
@@ -1793,7 +1815,7 @@ private static void SignPdfUsingSignedHash(string certP12, string pfxPassword)
 }
 ```
 
-Satu fitur baru lagi adalah Pengaturan Skala Halaman Dialog Cetak:
+Satu fitur baru lagi adalah Pengaturan Skala Halaman Preset Dialog Cetak:
 
 ```cs
 private static void SetPrintScaling()
@@ -1868,7 +1890,7 @@ private static bool HasIncrementalUpdate()
 
 Juga, 23.8 mendukung cara untuk bekerja dengan bidang kotak centang bersarang. Banyak formulir PDF yang dapat diisi memiliki bidang kotak centang yang bertindak sebagai grup radio:
 
-- Membuat bidang kotak centang multi-nilai:
+- Buat bidang kotak centang multi-nilai:
 
 ```cs
 private static void CreateMultivalueCheckboxField()
@@ -1903,7 +1925,7 @@ private static void CreateMultivalueCheckboxField()
 }
 ```
 
-- Mendapatkan dan mengatur nilai dari kotak centang multi-nilai:
+- Dapatkan dan atur nilai dari kotak centang multi-nilai:
 
 ```cs
 private static void GetAndSetValueOfMultivalueCheckboxField()
@@ -2020,8 +2042,8 @@ Dari Aspose.PDF 23.6 mendukung untuk menambahkan plugin berikut:
 - Aspose PdfOrganizer Compress API
 
 Perbarui Aspose.PdfForm 
-- menambahkan fitur ‘Ekspor "Nilai" dari bidang dalam dokumen ke file CSV"
-- menambahkan kemampuan untuk mengatur properti untuk bidang terpisah
+- tambahkan fitur ‘Ekspor "Nilai dari bidang dalam dokumen ke file CSV"
+- tambahkan kemampuan untuk mengatur properti untuk bidang terpisah
 
 Juga mendukung menambahkan kemampuan untuk mengatur judul halaman HTML, Epub:
 
@@ -2105,7 +2127,7 @@ Dari Aspose.PDF 23.3 mendukung untuk menambahkan plugin berikut:
 - Aspose.PdfForm
 - Aspose.PdfConverter PDF ke HTML
 - Aspose.PdfConverter PDF ke XLSX
-- Aspose.PdfOrganizer Putar
+- Aspose.PdfOrganizer Rotate
 - Aspose.PdfExtrator untuk Gambar
 
 ## Apa yang baru di Aspose.PDF 23.3
@@ -2177,6 +2199,7 @@ private static void InsertImageWithNativeResolutionAsParagraph()
 
 Gambar akan ditempatkan dalam ukuran yang diskalakan dan resolusi asli. Anda dapat mengatur properti FixedWidth atau FixedHeight dalam kombinasi dengan IsApplyResolution.
 
+
 ## Apa yang baru di Aspose.PDF 23.1.1
 
 Dari Aspose.PDF 23.1.1 mendukung untuk menambahkan plugin berikut:
@@ -2188,7 +2211,7 @@ Dari Aspose.PDF 23.1.1 mendukung untuk menambahkan plugin berikut:
 
 Sejak versi 23.1 mendukung untuk membuat anotasi PrinterMark.
 
-Tanda printer adalah simbol grafis atau teks yang ditambahkan ke halaman untuk membantu personel produksi dalam mengidentifikasi komponen dari pekerjaan multi-plat dan mempertahankan output yang konsisten selama produksi. Contoh yang umum digunakan dalam industri percetakan meliputi:
+Tanda pencetak adalah simbol grafis atau teks yang ditambahkan ke halaman untuk membantu personel produksi dalam mengidentifikasi komponen dari pekerjaan multi-plat dan mempertahankan output yang konsisten selama produksi. Contoh yang umum digunakan dalam industri percetakan meliputi:
 
 - Target pendaftaran untuk menyelaraskan pelat
 - Rampa abu-abu dan batang warna untuk mengukur warna dan kepadatan tinta
@@ -2269,7 +2292,7 @@ private static void PdfToDicom()
 
 ## Apa yang baru di Aspose.PDF 22.09
 
-Sejak 22.09 mendukung menambahkan properti untuk memodifikasi urutan rubrik subjek (E=, CN=, O=, OU=, ) ke dalam tanda tangan.
+Sejak 22.09 mendukung penambahan properti untuk memodifikasi urutan rubrik subjek (E=, CN=, O=, OU=, ) ke dalam tanda tangan.
 
 ```cs
 private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath, string password)
@@ -2369,11 +2392,11 @@ private static void ConvertPdfToOds()
 
 - PDF ke Excel: Mengenali teks dalam subscript dan superscript;
 
-- Menghapus tanda tangan UR saat menyimpan dokumen;
+- Hapus tanda tangan UR saat menyimpan dokumen;
 
-- Menghapus bendera Suspects di MarkInfo saat menyimpan dokumen;
+- Hapus bendera Suspects di MarkInfo saat menyimpan dokumen;
 
-- Menghapus Info saat menyimpan dokumen
+- Hapus Info saat menyimpan dokumen
 
 ## Apa yang baru di Aspose.PDF 22.3
 
@@ -2383,15 +2406,15 @@ Rilis ini mencakup pembaruan berikut:
 
 - Validasi header PDF;
 
-- Menghapus subfilter adbe.x509.rsa_sha1 saat menyimpan dokumen;
+- Hapus subfilter adbe.x509.rsa_sha1 saat menyimpan dokumen;
 
 - Format Field sebagai Format Angka dan Tanggal;
 
-- Melarang penggunaan enkripsi RC4 dalam FDF 2.0.
+- Larang penggunaan enkripsi RC4 dalam FDF 2.0.
 
 ## Apa yang baru di Aspose.PDF 22.2
 
-Dari versi 22.2 dimungkinkan untuk menandatangani dokumen menggunakan PdfFileSignature dengan LTV, dan dengan kemampuan untuk mengubah hashing dari SHA1 ke SHA256.
+Sejak versi 22.2 dimungkinkan untuk menandatangani dokumen menggunakan PdfFileSignature dengan LTV, dan dengan kemampuan untuk mengubah hashing dari SHA1 ke SHA256.
 
 ```csharp
 private static void SignPdfWithSha256(string pfxFilePath, string password)
@@ -2426,7 +2449,7 @@ Sekarang, Aspose.PDF for .NET mendukung memuat dokumen dari salah satu format do
 
 ## Apa yang baru di Aspose.PDF 21.11
 
-### Mengizinkan karakter non-latin dalam kata sandi
+### Izinkan karakter non-latin dalam kata sandi
 
 ```csharp
 private static void EncriptPdfNonlatinPassCharacters()
@@ -2510,7 +2533,7 @@ private static void GetPdfLayers()
 
 ## Apa yang baru di Aspose.PDF 21.9
 
-Kustomisasi warna latar belakang untuk penampilan tanda tangan dan warna font label di area tanda tangan dengan Aspose.PDF for .NET.
+Sesuaikan warna latar belakang untuk penampilan tanda tangan dan warna font label di area tanda tangan dengan Aspose.PDF for .NET.
 
 ```csharp
 private static void SignPdfWithCustomColorsInAppearance(string pfxFilePath, string password)
@@ -2581,7 +2604,7 @@ private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, s
 
 ### Pembuatan PDF berdasarkan XML dan XLS dengan parameter
 
-Untuk menambahkan parameter XSL kami perlu membuat [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) sendiri dan mengatur sebagai properti dalam [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Cuplikan berikut menunjukkan cara menggunakan kelas ini dengan file contoh yang dijelaskan di atas.
+Untuk menambahkan parameter XSL kami perlu membuat [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) sendiri dan mengatur sebagai properti di [XslFoLoadOptions](https://reference.aspose.com/pdf/id/net/aspose.pdf/xslfoloadoptions). Cuplikan berikut menunjukkan cara menggunakan kelas ini dengan file contoh yang dijelaskan di atas.
 
 ```csharp
 private static void ConvertXslfoToPdfWithArgumentList()
@@ -2769,7 +2792,7 @@ private static void AzureInformationProtection()
 
 ### Tambahkan dukungan untuk mengambil warna latar belakang dari TextFragment
 
-Dalam versi Aspose.PDF ini, fungsi untuk mengambil warna latar belakang menjadi tersedia. Anda perlu menentukan searchOptions.SearchForTextRelatedGraphics = true; dalam opsi objek TextFragmentAbsorber.
+Dalam versi Aspose.PDF ini, fungsi menjadi tersedia untuk mengambil warna latar belakang. Anda perlu menentukan searchOptions.SearchForTextRelatedGraphics = true; dalam opsi objek TextFragmentAbsorber.
 
 Silakan pertimbangkan kode berikut:
 
@@ -2807,7 +2830,7 @@ private static void DisplayPdfTextBackgroundColor()
 
 ### Setelah konversi ke HTML font sepenuhnya disematkan dalam output
 
-Juga, di Aspose.PDF 21.1, setelah mengonversi PDF ke HTML, font yang disematkan menjadi tersedia dalam dokumen HTML output. Ini dimungkinkan dengan opsi penyimpanan boolean baru HtmlSaveParameter.SaveFullFont.
+Juga, di Aspose.PDF 21.1, setelah mengonversi PDF ke HTML, font yang disematkan menjadi tersedia dalam dokumen HTML output. Ini dimungkinkan dengan opsi boolean baru HtmlSaveParameter.SaveFullFont.
 
 Berikut adalah cuplikan kode:
 

@@ -77,9 +77,9 @@ sitemap:
 }
 </script>
 
-La clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/PdfContentEditor) presente en el paquete Aspose.Pdf.Facades proporciona la flexibilidad para agregar acciones de Javascript a un archivo PDF. Puedes crear un enlace con las acciones en serie correspondientes para ejecutar un elemento de menú en el visor de PDF. Esta clase también ofrece la función de crear acciones adicionales para eventos del documento.
+La clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/PdfContentEditor) presente en el paquete Aspose.Pdf.Facades proporciona la flexibilidad para agregar acciones de Javascript a un archivo PDF. Puedes crear un enlace con las acciones en serie correspondientes para ejecutar un elemento de menú en el visor de PDF. Esta clase también ofrece la función de crear acciones adicionales para eventos del documento.
 
-Primero que nada, se dibuja un objeto en el [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), en nuestro ejemplo un [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle). Y se establece la acción [createJavaScriptLink](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) al Rectángulo. Después puedes guardar tu documento.
+Primero que nada, se dibuja un objeto en el [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document), en nuestro ejemplo un [Rectangle](https://reference.aspose.com/pdf/es/net/aspose.pdf.drawing/rectangle). Y se establece la acción [createJavaScriptLink](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) al Rectángulo. Después puedes guardar tu documento.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

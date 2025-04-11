@@ -84,11 +84,11 @@ sitemap:
 
 Aspose.PDF for .NET 提供了一种工具，使检索表格变得简单。要提取表格数据，您应执行以下步骤：
 
-1. 打开文档 - 实例化一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。
-1. 创建一个 [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) 对象。
-1. 决定要分析哪些页面，并将 [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/visit) 应用到所需页面。表格数据将被扫描，结果将存储在 [TableList](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/properties/tablelist) 中。
-1. `TableList` 是一个 [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable) 的列表。要获取数据，请遍历 `TableList` 并处理 [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) 和 [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)。
-1. 每个 [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) 包含 [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments) 集合。您可以根据自己的需要处理它。
+1. 打开文档 - 实例化一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
+1. 创建一个 [TableAbsorber](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/tableabsorber) 对象。
+1. 决定要分析哪些页面，并将 [Visit](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/tableabsorber/methods/visit) 应用到所需页面。表格数据将被扫描，结果将存储在 [TableList](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/tableabsorber/properties/tablelist) 中。
+1. `TableList` 是一个 [AbsorbedTable](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/absorbedtable) 的列表。要获取数据，请遍历 `TableList` 并处理 [RowList](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/absorbedtable/properties/rowlist) 和 [CellList](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/absorbedrow/properties/celllist)。
+1. 每个 [AbsorbedCell](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/absorbedcell) 包含 [TextFragments](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/absorbedcell/properties/textfragments) 集合。您可以根据自己的需要处理它。
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
@@ -135,7 +135,7 @@ private static void ExtractTable()
 
 ## 从 PDF 页面特定区域提取表格
 
-每个吸收的表格都有 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle) 属性，描述表格在页面上的位置。
+每个吸收的表格都有 [Rectangle](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/absorbedtable/properties/rectangle) 属性，描述表格在页面上的位置。
 
 如果您需要提取位于特定区域的表格，您必须使用特定坐标。
 

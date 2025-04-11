@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Convert PDF/A to PDF format",
     "alternativeHeadline": "Remove PDF/A Compliance for Enhanced Document Flexibility in C#",
-    "abstract": "Aspose.PDF ahora proporciona una función para convertir sin problemas archivos PDF/A a documentos PDF estándar utilizando su biblioteca .NET. Esta funcionalidad permite a los usuarios eliminar las restricciones de conformidad con PDF/A, lo que facilita la edición y modificación del contenido PDF sin las limitaciones impuestas por los estándares PDF/A.",
+    "abstract": "Aspose.PDF ahora proporciona una función para convertir sin problemas archivos PDF/A a documentos PDF estándar utilizando su biblioteca .NET. Esta funcionalidad permite a los usuarios eliminar las restricciones de conformidad PDF/A, lo que facilita la edición y modificación del contenido PDF sin las limitaciones impuestas por los estándares PDF/A.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "259",
+    "wordcount": "418",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdfa-to-pdf/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulta la siguiente sección para usuarios y desarrolladores avanzados."
 }
 </script>
@@ -82,8 +82,8 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Convertir documento PDF/A a PDF
 
-Convertir un documento PDF/A a PDF significa eliminar la <abbr title="Portable Document Format Archive">conformidad PDF/A</abbr> del documento original. 
-La clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) tiene el método [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) para eliminar la información de conformidad PDF del archivo de entrada/origen.
+Convertir un documento PDF/A a PDF significa eliminar la <abbr title="Portable Document Format Archive">restricción PDF/A</abbr> del documento original. 
+La clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) tiene el método [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/removepdfacompliance) para eliminar la información de conformidad PDF del archivo de entrada/origen.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -128,7 +128,7 @@ private static void ConvertPDFAtoPDF()
 {{< /tab >}}
 {{< /tabs >}}
 
-La conformidad con PDF/A también puede ser eliminada si realizas algún cambio en el documento (por ejemplo, agregar páginas). En el siguiente ejemplo, el documento de salida pierde la conformidad PDF/A después de que se agrega una nueva página.
+La conformidad PDF/A también puede ser eliminada si realizas cambios en el documento (por ejemplo, agregar páginas). En el siguiente ejemplo, el documento de salida pierde la conformidad PDF/A después de que se agrega una nueva página.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

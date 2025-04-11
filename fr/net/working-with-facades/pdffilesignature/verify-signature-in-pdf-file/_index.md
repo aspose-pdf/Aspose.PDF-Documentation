@@ -77,7 +77,7 @@ draft: false
 
 ## Vérifier si le fichier PDF est signé à l'aide d'une signature
 
-Pour vérifier si un fichier PDF est signé à l'aide d'une [signature particulière](/pdf/fr/net/working-with-signature-in-a-pdf-file/), utilisez la méthode VerifySigned de la classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). Cette méthode nécessite le nom de la signature et renvoie true si le PDF est signé avec ce nom de signature. Il est également possible de vérifier qu'un [PDF est signé](/pdf/fr/net/working-with-signature-in-a-pdf-file/), sans vérifier avec quelle signature il est signé.
+Pour vérifier si un fichier PDF est signé à l'aide d'une [signature particulière](/pdf/fr/net/working-with-signature-in-a-pdf-file/), utilisez la méthode VerifySigned de la classe [PdfFileSignature](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesignature). Cette méthode nécessite le nom de la signature et renvoie true si le PDF est signé avec ce nom de signature. Il est également possible de vérifier qu'un [PDF est signé](/pdf/fr/net/working-with-signature-in-a-pdf-file/), sans vérifier avec quelle signature il est signé.
 
 ### Vérifier qu'un PDF est signé avec une signature donnée
 
@@ -127,7 +127,7 @@ private static void IsPdfSignedWithGivenSignature()
 
 ## Vérifier si la signature est valide
 
-La méthode [VerifySignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) de la classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) vous permet de valider une signature particulière. Cette méthode nécessite le nom de la signature en entrée et renvoie true si la signature est valide. Le code suivant vous montre comment valider une signature.
+La méthode [VerifySignature](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) de la classe [PdfFileSignature](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilesignature) vous permet de valider une signature particulière. Cette méthode nécessite le nom de la signature en entrée et renvoie true si la signature est valide. Le code suivant vous montre comment valider une signature.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

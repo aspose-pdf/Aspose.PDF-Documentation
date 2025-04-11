@@ -77,7 +77,7 @@ draft: false
 
 ## Смена пароля PDF-файла
 
-Чтобы изменить пароль PDF-файла, вам нужно создать объект [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) и затем вызвать метод [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Вам нужно передать существующий владельческий пароль и новые пользовательский и владельческий пароли в метод [ChangePassword](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
+Чтобы изменить пароль PDF-файла, вам нужно создать объект [PdfFileSecurity](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity) и затем вызвать метод [ChangePassword](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2). Вам нужно передать существующий владельческий пароль и новые пользовательский и владельческий пароли в метод [ChangePassword](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdffilesecurity/changepassword/methods/2).
 
 {{% alert color="primary" %}}
 

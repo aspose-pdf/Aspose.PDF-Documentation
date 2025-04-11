@@ -83,13 +83,13 @@ sitemap:
 
 ## Добавить закладку в PDF-документ
 
-Закладки хранятся в коллекции [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) объекта Document, которая сама находится в коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+Закладки хранятся в коллекции [OutlineItemCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlineitemcollection) объекта Document, которая сама находится в коллекции [OutlineCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection).
 
 Чтобы добавить закладку в PDF:
 
-1. Откройте PDF-документ с помощью объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Откройте PDF-документ с помощью объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 1. Создайте закладку и определите ее свойства.
-1. Добавьте коллекцию [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) в коллекцию Outlines.
+1. Добавьте коллекцию [OutlineItemCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlineitemcollection) в коллекцию Outlines.
 
 Следующий фрагмент кода показывает, как добавить закладку в PDF-документ.
 
@@ -161,8 +161,8 @@ private static void AddBookmark()
 Чтобы добавить дочернюю закладку в PDF-файл, сначала добавьте родительскую закладку:
 
 1. Откройте документ.
-1. Добавьте закладку в [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), определив ее свойства.
-1. Добавьте OutlineItemCollection в коллекцию [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) объекта Document.
+1. Добавьте закладку в [OutlineItemCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlineitemcollection), определив ее свойства.
+1. Добавьте OutlineItemCollection в коллекцию [OutlineCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection) объекта Document.
 
 Дочерняя закладка создается так же, как и родительская закладка, описанная выше, но добавляется в коллекцию Outlines родительской закладки.
 
@@ -243,12 +243,12 @@ private static void AddChildBookmark()
 
 ## Удалить все закладки из PDF-документа
 
-Все закладки в PDF хранятся в коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Эта статья объясняет, как удалить все закладки из PDF-файла.
+Все закладки в PDF хранятся в коллекции [OutlineCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection). Эта статья объясняет, как удалить все закладки из PDF-файла.
 
 Чтобы удалить все закладки из PDF-файла:
 
-1. Вызовите метод Delete коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. Сохраните измененный файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Вызовите метод Delete коллекции [OutlineCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection).
+1. Сохраните измененный файл с помощью метода [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 Следующие фрагменты кода показывают, как удалить все закладки из PDF-документа.
 
@@ -299,10 +299,10 @@ private static void DeleteBookmarks()
 
 Чтобы удалить конкретную закладку из PDF-файла:
 
-1. Передайте заголовок закладки в качестве параметра методу Delete коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+1. Передайте заголовок закладки в качестве параметра методу Delete коллекции [OutlineCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection).
 1. Затем сохраните обновленный файл с помощью метода Save объекта Document.
 
-Класс [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) предоставляет коллекцию [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Метод [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) удаляет любую закладку с заголовком, переданным в метод.
+Класс [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document) предоставляет коллекцию [OutlineCollection](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection). Метод [Delete](https://reference.aspose.com/pdf/ru/net/aspose.pdf/outlinecollection/methods/delete) удаляет любую закладку с заголовком, переданным в метод.
 
 Следующие фрагменты кода показывают, как удалить конкретную закладку из PDF-документа.
 

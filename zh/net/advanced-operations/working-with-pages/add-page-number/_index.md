@@ -84,7 +84,7 @@ sitemap:
 
 以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
-您可以使用[PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp)类在PDF文件中添加页码印章。[PageNumber Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp)类提供了创建基于页码的印章所需的属性，如格式、边距、对齐、起始编号等。为了添加页码印章，您需要使用所需属性创建一个[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)对象和一个[PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp)对象。之后，您可以调用[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)的[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp)方法将印章添加到PDF中。您还可以设置页码印章的字体属性。以下代码片段向您展示如何在PDF文件中添加页码。
+您可以使用[PageNumberStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagenumberstamp)类在PDF文件中添加页码印章。[PageNumber Stamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagenumberstamp)类提供了创建基于页码的印章所需的属性，如格式、边距、对齐、起始编号等。为了添加页码印章，您需要使用所需属性创建一个[Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document)对象和一个[PageNumberStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagenumberstamp)对象。之后，您可以调用[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)的[AddStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/methods/addstamp)方法将印章添加到PDF中。您还可以设置页码印章的字体属性。以下代码片段向您展示如何在PDF文件中添加页码。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

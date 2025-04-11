@@ -85,7 +85,7 @@ sitemap:
 
 Эта тема поможет вам понять, как получить свойства окна документа, приложения просмотра и как отображаются страницы. Чтобы установить эти свойства:
 
-Откройте PDF файл с помощью класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Теперь вы можете установить свойства объекта Document, такие как
+Откройте PDF файл с помощью класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Теперь вы можете установить свойства объекта Document, такие как
 
 - CenterWindow – Центрировать окно документа на экране. По умолчанию: false.
 - Direction – Порядок чтения. Это определяет, как страницы располагаются при отображении рядом. По умолчанию: слева направо.
@@ -99,7 +99,7 @@ sitemap:
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Следующий фрагмент кода показывает, как получить свойства с использованием класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Следующий фрагмент кода показывает, как получить свойства с использованием класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -154,7 +154,7 @@ private static void GetDocumentWindowProperties()
 
 Эта тема объясняет, как установить свойства окна документа, приложения просмотра и отображения страниц. Чтобы установить эти различные свойства:
 
-1. Откройте PDF файл с помощью класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Откройте PDF файл с помощью класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 1. Установите свойства объекта Document.
 1. Сохраните обновленный PDF файл с помощью метода Save.
 
@@ -171,7 +171,7 @@ private static void GetDocumentWindowProperties()
 - PageLayout.
 - PageMode.
 
-Каждое из них используется и описано в коде ниже. Следующий фрагмент кода показывает, как установить свойства с использованием класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Каждое из них используется и описано в коде ниже. Следующий фрагмент кода показывает, как установить свойства с использованием класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -229,7 +229,7 @@ private static void SetDocumentWindowProperties()
 
 Читатели PDF поддерживают [ядро из 14 шрифтов](https://en.wikipedia.org/wiki/PDF#Text), чтобы документы могли отображаться одинаково независимо от платформы, на которой документ отображается. Когда PDF содержит шрифт, который не является одним из 14 основных шрифтов, встраивайте шрифт в PDF файл, чтобы избежать замены шрифта.
 
-Aspose.PDF for .NET поддерживает встраивание шрифтов в существующие PDF файлы. Вы можете встроить полный шрифт или подмножество шрифта. Чтобы встроить шрифт, откройте PDF файл с помощью класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Затем используйте класс [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text), чтобы встроить шрифт в PDF файл. Чтобы встроить полный шрифт, используйте свойство IsEmbeded класса Font; чтобы использовать подмножество шрифта, используйте свойство IsSubset.
+Aspose.PDF for .NET поддерживает встраивание шрифтов в существующие PDF файлы. Вы можете встроить полный шрифт или подмножество шрифта. Чтобы встроить шрифт, откройте PDF файл с помощью класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Затем используйте класс [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text), чтобы встроить шрифт в PDF файл. Чтобы встроить полный шрифт, используйте свойство IsEmbeded класса Font; чтобы использовать подмножество шрифта, используйте свойство IsSubset.
 
 {{% alert color="primary" %}}
 
@@ -241,7 +241,7 @@ Aspose.PDF for .NET поддерживает встраивание шрифто
 
 ### Встраивание стандартных шрифтов типа 1
 
-Некоторые PDF документы имеют шрифты из специального набора шрифтов Adobe. Шрифты из этого набора называются "Стандартные шрифты типа 1". Этот набор включает 14 шрифтов, и встраивание шрифтов этого типа требует использования специальных флагов, т.е. [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). Следующий фрагмент кода можно использовать для получения документа со всеми встроенными шрифтами, включая стандартные шрифты типа 1:
+Некоторые PDF документы имеют шрифты из специального набора шрифтов Adobe. Шрифты из этого набора называются "Стандартные шрифты типа 1". Этот набор включает 14 шрифтов, и встраивание шрифтов этого типа требует использования специальных флагов, т.е. [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/embedstandardfonts). Следующий фрагмент кода можно использовать для получения документа со всеми встроенными шрифтами, включая стандартные шрифты типа 1:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
 
 ### Получение всех шрифтов из PDF документа
 
-В случае, если вы хотите получить все шрифты из PDF документа, вы можете использовать метод FontUtilities.GetAllFonts(), предоставленный в классе [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Пожалуйста, проверьте следующий фрагмент кода, чтобы получить все шрифты из существующего PDF документа:
+В случае, если вы хотите получить все шрифты из PDF документа, вы можете использовать метод FontUtilities.GetAllFonts(), предоставленный в классе [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Пожалуйста, проверьте следующий фрагмент кода, чтобы получить все шрифты из существующего PDF документа:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -450,7 +450,7 @@ private static void SetFontSubsetStrategy()
 
 Иногда вы хотите определить, каков текущий коэффициент масштабирования PDF документа. С помощью Aspose.Pdf вы можете узнать текущее значение, а также установить его.
 
-Свойство Destination класса [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) позволяет получить значение масштабирования, связанное с PDF файлом. Аналогично, оно может быть использовано для установки коэффициента масштабирования файла.
+Свойство Destination класса [GoToAction](https://reference.aspose.com/pdf/ru/net/aspose.pdf.annotations/gotoaction) позволяет получить значение масштабирования, связанное с PDF файлом. Аналогично, оно может быть использовано для установки коэффициента масштабирования файла.
 
 #### Установка коэффициента масштабирования
 

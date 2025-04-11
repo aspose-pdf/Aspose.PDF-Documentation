@@ -77,7 +77,7 @@ draft: false
 
 ## 在现有PDF文件中将表单字段移动到新位置
 
-如果您想将表单字段移动到新位置，则可以使用[MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield)方法的[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)类。您只需提供字段名称和该字段的新位置给[MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield)方法。您还需要使用[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)类的[Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index)方法保存更新后的PDF文件。以下代码片段向您展示了如何在PDF文件中将表单字段移动到新位置。
+如果您想将表单字段移动到新位置，则可以使用[MoveField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/movefield)方法的[FormEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor)类。您只需提供字段名称和该字段的新位置给[MoveField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/movefield)方法。您还需要使用[FormEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor)类的[Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/form/methods/save/index)方法保存更新后的PDF文件。以下代码片段向您展示了如何在PDF文件中将表单字段移动到新位置。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -98,7 +98,7 @@ private static void MoveField()
 
 ## 从现有PDF文件中删除表单字段
 
-为了从现有PDF文件中删除表单字段，您可以使用FormEditor类的RemoveField方法。此方法只接受一个参数：字段名称。您需要创建FormEditor类的对象，调用[RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield)方法以从PDF中删除特定字段，然后调用Save方法以保存更新后的PDF文件。以下代码片段向您展示了如何从现有PDF文件中删除表单字段。
+为了从现有PDF文件中删除表单字段，您可以使用FormEditor类的RemoveField方法。此方法只接受一个参数：字段名称。您需要创建FormEditor类的对象，调用[RemoveField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/removefield)方法以从PDF中删除特定字段，然后调用Save方法以保存更新后的PDF文件。以下代码片段向您展示了如何从现有PDF文件中删除表单字段。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -119,7 +119,7 @@ private static void RemoveFields()
 
 ## 在PDF中重命名表单字段
 
-您还可以使用[FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)类的[RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield)方法重命名您的字段。
+您还可以使用[FormEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor)类的[RenameField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/formeditor/methods/renamefield)方法重命名您的字段。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

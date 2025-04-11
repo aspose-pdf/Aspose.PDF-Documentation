@@ -77,15 +77,15 @@ draft: false
 
 {{% alert color="основной" %}}
 
-[Пространство имён Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/ru/net/) позволяет добавлять штамп в существующий PDF-файл. Иногда пользователям необходимо повернуть штамп. В этой статье мы увидим, как повернуть штамп относительно его центральной точки.
+[Пространство имён Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/ru/net/) позволяет добавлять штамп в существующий PDF-файл. Иногда пользователям необходимо повернуть штамп. В этой статье мы увидим, как повернуть штамп относительно его центральной точки.
 
 {{% /alert %}}
 
 ## Детали реализации
 
-Класс [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) позволяет добавлять водяной знак в PDF-файл. Вы можете указать изображение, которое будет добавлено в качестве штампа, с помощью метода [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.stamp/bindimage/methods/1). Метод [SetOrigin](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setorigin) позволяет установить начало добавленного штампа; это начало координат — координаты нижнего левого угла штампа. Вы также можете задать размер изображения с помощью метода [SetImageSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/setimagesize).
+Класс [Stamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/stamp) позволяет добавлять водяной знак в PDF-файл. Вы можете указать изображение, которое будет добавлено в качестве штампа, с помощью метода [BindImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.stamp/bindimage/methods/1). Метод [SetOrigin](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/stamp/methods/setorigin) позволяет установить начало добавленного штампа; это начало координат — координаты нижнего левого угла штампа. Вы также можете задать размер изображения с помощью метода [SetImageSize](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/stamp/methods/setimagesize).
 
-Теперь мы видим, как штамп можно повернуть относительно центра штампа. Класс [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) предоставляет свойство с именем Rotation. Это свойство устанавливает или получает поворот от 0 до 360 содержимого штампа. Мы можем указать любое значение поворота от 0 до 360. Указав значение поворота, мы можем повернуть штамп относительно его центра. Если Stamp является объектом типа Stamp, то значение поворота можно указать как aStamp.Rotation = 90. В этом случае штамп будет повёрнут на 90 градусов относительно центра содержимого штампа. Следующий фрагмент кода показывает, как повернуть штамп относительно центральной точки:
+Теперь мы видим, как штамп можно повернуть относительно центра штампа. Класс [Stamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf/stamp) предоставляет свойство с именем Rotation. Это свойство устанавливает или получает поворот от 0 до 360 содержимого штампа. Мы можем указать любое значение поворота от 0 до 360. Указав значение поворота, мы можем повернуть штамп относительно его центра. Если Stamp является объектом типа Stamp, то значение поворота можно указать как aStamp.Rotation = 90. В этом случае штамп будет повёрнут на 90 градусов относительно центра содержимого штампа. Следующий фрагмент кода показывает, как повернуть штамп относительно центральной точки:
 
 
 ```csharp

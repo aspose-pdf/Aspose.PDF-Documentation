@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Render WebForms DataGridView to PDF",
     "alternativeHeadline": "Effortlessly Convert WebForms DataGridView to PDF",
-    "abstract": "Функция позволяет легко преобразовывать DataGridView веб-форм в PDF с помощью библиотеки Aspose.PDF для .NET. Эта функция упрощает процесс экспорта данных за счёт интеграции специального элемента управления экспортом GridView, обеспечивая высококачественное отображение PDF непосредственно из веб-приложений. Идеально подходит для разработчиков, ищущих эффективные решения для создания документов",
+    "abstract": "Эта функция позволяет бесшовно конвертировать WebForms DataGridView в PDF с использованием библиотеки Aspose.PDF for .NET. Эта функциональность упрощает процесс экспорта данных, интегрируя специализированный контроль экспорта GridView, обеспечивая высококачественный рендеринг PDF непосредственно из веб-приложений. Идеально подходит для разработчиков, ищущих эффективные решения для генерации документов.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "266",
+    "wordcount": "226",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/render-webforms-datagridview-to-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
+    "dateModified": "2025-04-11",
+    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но также справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков."
 }
 </script>
 
@@ -82,11 +82,11 @@ sitemap:
 
 ### Введение
 
-Обычно для преобразования WebForm в документ PDF используются дополнительные инструменты. Этот пример показывает, как использовать библиотеку Aspose.PDF для рендеринга WebForm в PDF. В этот пример также включён элемент управления Aspose Export GridView To Pdf для демонстрации того, как отобразить элемент управления _GridView в документе PDF._
+В общем, для конвертации WebForm в PDF документ используются дополнительные инструменты. Этот пример показывает, как использовать библиотеку Aspose.PDF для рендеринга WebForm в PDF. Контроль экспорта Aspose GridView в PDF также включен в этот пример, чтобы показать, как рендерить _контроль GridView в PDF документ._
 
-## Как отобразить WebForm в PDF
+## Как рендерить WebForm в PDF
 
-Основная идея отображения WebForm в PDF заключается в создании вспомогательного класса, который наследуется от [System.Web.UI.Page](https://msdn.microsoft.com/en-US/library/System.Web.UI.Page.aspx), и переопределении метода Render.</em></p>
+Изначальная идея рендеринга WebForm в PDF заключается в создании вспомогательного класса, который наследуется от [System.Web.UI.Page](https://msdn.microsoft.com/en-US/library/System.Web.UI.Page.aspx) и переопределяет метод Render.</em></p>
 
 ```csharp
 void Render(HtmlTextWriter writer)
@@ -103,20 +103,20 @@ void Render(HtmlTextWriter writer)
 }
 ```
 
-Для отображения HTML в PDF можно использовать два инструмента Aspose:
+Существует два инструмента Aspose, которые можно использовать для рендеринга HTML в PDF:
 
 - Aspose.PDF for .NET.
-- Элемент управления Aspose Export GridView (на основе Aspose.PDF).
+- Контроль экспорта Aspose GridView (на основе Aspose.PDF).
 
 ## Исходные файлы
 
-В этом примере у нас есть два демонстрационных отчёта.
+Вы можете найти код для всего проекта [здесь](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Visual%20Studio/Aspose.Pdf.GridViewExport).
 
 - _Default.aspx_ демонстрирует экспорт в PDF с использованием Aspose.PDF.
-- _Report2.aspx_ демонстрирует экспорт в PDF с использованием элемента управления Aspose Export GridView (на основе Aspose.PDF).
+- _Report2.aspx_ демонстрирует экспорт в PDF с использованием контроля экспорта Aspose GridView (на основе Aspose.PDF).
 
 ## Дополнительные файлы
 
-`Helpers\PdfPage.cs` — содержит вспомогательный класс, который показывает, как использовать API Aspose.PDF.</em>
+`Helpers\PdfPage.cs` - содержит вспомогательный класс, который показывает, как использовать API Aspose.PDF.</em>
 
-Проект Aspose.Pdf.GridViewExport содержит расширенный элемент управления GridView для демонстрации в `Report2.aspx`
+Проект Aspose.Pdf.GridViewExport содержит расширенный контроль GridView для демонстрации в `Report2.aspx`

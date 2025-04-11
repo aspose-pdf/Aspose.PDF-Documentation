@@ -79,9 +79,9 @@ sitemap:
 
 ## 修改注释
 
-[ModifyAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) 方法允许您更改注释的基本属性，即主题、修改日期、作者、注释颜色和打开标志。您还可以通过使用 ModifyAnnotations 方法直接设置作者。此类还提供了两个重载方法来删除注释。第一个方法称为 DeleteAnnotations，从 PDF 文件中删除所有注释。
+[ModifyAnnotations](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) 方法允许您更改注释的基本属性，即主题、修改日期、作者、注释颜色和打开标志。您还可以通过使用 ModifyAnnotations 方法直接设置作者。此类还提供了两个重载方法来删除注释。第一个方法称为 DeleteAnnotations，从 PDF 文件中删除所有注释。
 
-例如，在以下代码中，考虑使用 [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor) 更改我们注释中的作者。
+例如，在以下代码中，考虑使用 [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor) 更改我们注释中的作者。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

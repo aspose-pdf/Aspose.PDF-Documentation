@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ko/net/manipulate-pdf-document/
-description: 이 문서에는 PDF A 표준에 대한 PDF 문서 검증 방법, TOC 작업 방법, PDF 만료 날짜 설정 방법 등이 포함되어 있습니다.
+description: 이 문서에는 PDF A 표준에 대한 PDF 문서 유효성 검사 방법, TOC 작업 방법, PDF 만료 날짜 설정 방법 등이 포함되어 있습니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Manipulate PDF Document in C#",
     "alternativeHeadline": "Enhanced PDF Manipulation Features in C# Library",
-    "abstract": "C#에서 PDF 문서를 조작하는 강력한 기능을 발견하세요. PDF/A 표준 검증, 목차 생성 및 사용자 정의, 문서 만료 날짜 설정 등을 포함합니다. 이 기능은 문서 관리뿐만 아니라 산업 표준 준수를 보장하여 강력한 PDF 처리 솔루션을 찾는 개발자에게 필수적입니다.",
+    "abstract": "C#에서 PDF 문서를 조작하는 강력한 기능을 발견하십시오. 여기에는 PDF/A 표준에 대한 유효성 검사, 목차 생성 및 사용자 정의, 문서의 만료 날짜 설정 기능이 포함됩니다. 이 기능은 문서 관리를 향상시킬 뿐만 아니라 산업 표준 준수를 보장하여 강력한 PDF 처리 솔루션을 찾는 개발자에게 필수적입니다.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "manipulate PDF, C#, validate PDF/A, TOC, set PDF expiry date, flatten fillable PDF, Aspose.PDF, PDF generation progress, customize page numbers, PDF encryption",
-    "wordcount": "2170",
+    "wordcount": "2382",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,16 +74,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-pdf-document/"
     },
-    "dateModified": "2024-11-25",
-    "description": "이 문서에는 PDF A 표준에 대한 PDF 문서 검증 방법, TOC 작업 방법, PDF 만료 날짜 설정 방법 등이 포함되어 있습니다."
+    "dateModified": "2025-04-04",
+    "description": "이 문서에는 PDF A 표준에 대한 PDF 문서 유효성 검사 방법, TOC 작업 방법, PDF 만료 날짜 설정 방법 등이 포함되어 있습니다."
 }
 </script>
 
 ## **C#에서 PDF 문서 조작**
 
-## PDF A 표준에 대한 PDF 문서 검증 (A 1A 및 A 1B)
+## PDF A 표준에 대한 PDF 문서 유효성 검사 (A 1A 및 A 1B)
 
-PDF/A-1a 또는 PDF/A-1b 호환성을 위해 PDF 문서를 검증하려면 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 Validate 메서드를 사용하세요. 이 메서드는 결과를 저장할 파일의 이름과 필요한 검증 유형 [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat) 열거형: PDF_A_1A 또는 PDF_A_1B를 지정할 수 있습니다.
+PDF/A-1a 또는 PDF/A-1b 호환성을 위해 PDF 문서를 유효성 검사하려면 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 Validate 메서드를 사용하십시오. 이 메서드는 결과를 저장할 파일의 이름과 필요한 유효성 검사 유형 [PdfFormat](https://reference.aspose.com/pdf/ko/net/aspose.pdf/pdfformat) 열거형: PDF_A_1A 또는 PDF_A_1B를 지정할 수 있습니다.
 
 {{% alert color="primary" %}}
 
@@ -93,7 +93,7 @@ PDF/A-1a 또는 PDF/A-1b 호환성을 위해 PDF 문서를 검증하려면 [Docu
 
 다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-다음 코드 조각은 PDF/A-1A에 대한 PDF 문서를 검증하는 방법을 보여줍니다.
+다음 코드 조각은 PDF/A-1A에 대한 PDF 문서를 유효성 검사하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void ValidateToPdfA1aStandard()
 }
 ```
 
-다음 코드 조각은 PDF/A-1b에 대한 PDF 문서를 검증하는 방법을 보여줍니다.
+다음 코드 조각은 PDF/A-1b에 대한 PDF 문서를 유효성 검사하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,17 +131,17 @@ private static void ValidateToPdfA1bStandard()
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for .NET은 로드된 문서가 유효한 PDF인지 여부를 결정하는 데 사용할 수 있으며, [암호화 여부](https://docs.aspose.com/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)도 확인할 수 있습니다. Document 클래스의 기능을 확장하기 위해 *IsPdfaCompliant* 속성이 추가되어 입력 파일이 PDF/A 준수 여부를 결정하고, *PdfaFormat*이라는 속성이 PDF/A 형식을 식별하는 데 도입되었습니다.
+Aspose.PDF for .NET을 사용하여 로드된 문서가 유효한 PDF인지 여부를 확인할 수 있으며, [암호화되어 있는지 여부](https://docs.aspose.com/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)도 확인할 수 있습니다. Document 클래스의 기능을 확장하기 위해 *IsPdfaCompliant* 속성이 추가되어 입력 파일이 PDF/A 준수 여부를 확인하고, *PdfaFormat*이라는 속성이 PDF/A 형식을 식별하는 데 도입되었습니다.
 
 {{% /alert %}}
 
-## TOC 작업하기
+## TOC 작업
 
 ### 기존 PDF에 TOC 추가
 
-Aspose.PDF API를 사용하면 PDF를 생성할 때 또는 기존 파일에 목차를 추가할 수 있습니다. Aspose.Pdf.Generator 네임스페이스의 ListSection 클래스는 PDF를 처음부터 생성할 때 목차를 만들 수 있게 해줍니다. TOC의 요소인 제목을 추가하려면 Aspose.Pdf.Generator.Heading 클래스를 사용하세요.
+Aspose.PDF API를 사용하면 PDF를 생성할 때 또는 기존 파일에 목차를 추가할 수 있습니다. Aspose.Pdf.Generator 네임스페이스의 ListSection 클래스는 PDF를 처음부터 생성할 때 목차를 만들 수 있게 해줍니다. TOC의 요소인 제목을 추가하려면 Aspose.Pdf.Generator.Heading 클래스를 사용하십시오.
 
-기존 PDF 파일에 TOC를 추가하려면 Aspose.PDF 네임스페이스의 Heading 클래스를 사용하세요. Aspose.Pdf 네임스페이스는 새 PDF를 생성하고 기존 PDF 파일을 조작할 수 있습니다. 기존 PDF 파일 내에 목차를 만드는 방법은 다음 코드 조각을 참조하세요.
+기존 PDF 파일에 TOC를 추가하려면 Aspose.PDF 네임스페이스의 Heading 클래스를 사용하십시오. Aspose.Pdf 네임스페이스는 새 PDF를 생성하고 기존 PDF 파일을 조작할 수 있습니다. 기존 PDF 파일 내에 목차를 생성하는 방법은 다음 코드 조각을 참조하십시오.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -281,7 +281,7 @@ private static void CreateTocWithCustomFormatting()
 
 ### TOC에서 페이지 번호 숨기기
 
-TOC에서 제목과 함께 페이지 번호를 표시하고 싶지 않은 경우 [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) 클래스의 [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) 속성을 false로 설정할 수 있습니다. TOC에서 페이지 번호를 숨기기 위한 다음 코드 조각을 확인하세요:
+TOC에서 제목과 함께 페이지 번호를 표시하고 싶지 않은 경우 [TOCInfo](https://reference.aspose.com/pdf/ko/net/aspose.pdf/tocinfo) 클래스의 [IsShowPageNumbers](https://reference.aspose.com/pdf/ko/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) 속성을 false로 설정할 수 있습니다. TOC에서 페이지 번호를 숨기기 위한 다음 코드 조각을 확인하십시오:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void CreateTocWithHiddenPageNumbers()
 
 ### TOC 추가 시 페이지 번호 사용자 정의
 
-PDF 문서에 TOC를 추가할 때 TOC의 페이지 번호를 사용자 정의하는 것이 일반적입니다. 예를 들어, 페이지 번호 앞에 P1, P2, P3와 같은 접두사를 추가해야 할 수 있습니다. 이 경우, Aspose.PDF for .NET은 페이지 번호를 사용자 정의하는 데 사용할 수 있는 TocInfo 클래스의 PageNumbersPrefix 속성을 제공합니다. 다음 코드 샘플을 참조하세요.
+PDF 문서에 TOC를 추가할 때 TOC의 페이지 번호를 사용자 정의하는 것이 일반적입니다. 예를 들어, 페이지 번호 앞에 P1, P2, P3와 같은 접두사를 추가해야 할 수 있습니다. 이 경우, Aspose.PDF for .NET은 TocInfo 클래스의 PageNumbersPrefix 속성을 제공하여 페이지 번호를 사용자 정의할 수 있습니다. 다음 코드 샘플을 참조하십시오.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -410,9 +410,9 @@ private static void CustomizePageNumbersAddingToC()
 
 ## PDF 만료 날짜 설정 방법
 
-PDF 파일에 접근 권한을 적용하여 특정 사용자 그룹이 PDF 문서의 특정 기능/객체에 접근할 수 있도록 합니다. PDF 파일 접근을 제한하기 위해 일반적으로 암호화를 적용하며, 사용자가 문서를 접근/보기할 때 PDF 파일 만료에 대한 유효한 알림을 받도록 PDF 파일 만료 날짜를 설정해야 할 수 있습니다.
+PDF 파일에 대한 액세스 권한을 적용하여 특정 사용자 그룹이 PDF 문서의 특정 기능/객체에 액세스할 수 있도록 합니다. PDF 파일 액세스를 제한하기 위해 일반적으로 암호화를 적용하며, 문서를 액세스/보기하는 사용자가 PDF 파일 만료에 대한 유효한 알림을 받도록 PDF 파일 만료 날짜를 설정해야 할 수 있습니다.
 
-위의 요구 사항을 달성하기 위해 *JavascriptAction* 객체를 사용할 수 있습니다. 다음 코드 조각을 참조하세요.
+위의 요구 사항을 달성하기 위해 *JavascriptAction* 객체를 사용할 수 있습니다. 다음 코드 조각을 참조하십시오.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -453,7 +453,7 @@ private static void SetExpiryDate()
 
 고객이 PDF 파일 생성 진행 상황을 확인할 수 있는 기능을 추가해 달라고 요청했습니다. 이에 대한 응답은 다음과 같습니다.
 
-[DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) 클래스의 [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) 필드는 PDF 생성 진행 상황을 확인할 수 있게 해줍니다. 핸들러는 다음과 같은 유형을 가집니다:
+[DocSaveOptions](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions) 클래스의 [CustomerProgressHandler](https://reference.aspose.com/pdf/ko/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) 필드를 사용하면 PDF 생성 진행 상황을 확인할 수 있습니다. 핸들러는 다음과 같은 유형을 가집니다:
 
 - DocSaveOptions.ConversionProgessEventHandler.
 - DocSaveOptions.ProgressEventHandlerInfo.
@@ -505,7 +505,7 @@ private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.Progress
 
 ## 작성 가능한 PDF 평탄화
 
-PDF 문서에는 종종 라디오 버튼, 체크박스, 텍스트 상자, 목록 등과 같은 대화형 작성 가능한 위젯이 포함됩니다. 다양한 응용 프로그램 목적을 위해 편집할 수 없도록 PDF 파일을 평탄화해야 합니다. Aspose.PDF는 몇 줄의 코드로 C#에서 PDF를 평탄화하는 기능을 제공합니다:
+PDF 문서에는 종종 라디오 버튼, 체크박스, 텍스트 상자, 목록 등과 같은 대화형 작성 가능한 위젯이 포함된 양식이 포함됩니다. 다양한 응용 프로그램 목적을 위해 편집할 수 없도록 PDF 파일을 평탄화해야 합니다. Aspose.PDF는 몇 줄의 코드로 C#에서 PDF를 평탄화하는 기능을 제공합니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -531,6 +531,68 @@ private static void FlattenForms()
     }
 }
 ```
+
+## 증분 업데이트를 위한 PDF 문서 분석
+문서가 증분 업데이트되었는지 확인하려면 [Document](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document) 클래스의 `HasIncrementalUpdate` 메서드를 사용하십시오. 이 메서드는 PDF 파일을 분석하고 증분 업데이트가 감지되었는지 여부를 나타내는 부울 값을 반환합니다. 매개변수가 없는 [Save](https://reference.aspose.com/pdf/ko/net/aspose.pdf/document/save/#save) 메서드를 사용하여 문서를 저장하면 증분으로 저장됩니다.
+
+다음 C# 코드는 `HasIncrementalUpdate` 메서드를 사용하는 방법을 보여줍니다:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Check for incremental updates
+        bool updatedIncrementally = document.HasIncrementalUpdate();
+
+        // Output the result
+        if (updatedIncrementally)
+        {
+            Console.WriteLine("This document has been incrementally updated.");
+        }
+        else
+        {
+            Console.WriteLine("This document has no incremental updates.");
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IncrementalUpdatesCheck()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Check for incremental updates
+    bool updatedIncrementally = document.HasIncrementalUpdate();
+
+    // Output the result
+    if (updatedIncrementally)
+    {
+        Console.WriteLine("This document has been incrementally updated.");
+    }
+    else
+    {
+        Console.WriteLine("This document has no incremental updates.");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Supported File Formats",
     "alternativeHeadline": "Aspose.PDF for .NET Supports Extensive File Formats in C#",
-    "abstract": "Aspose.PDF for .NET ahora soporta una amplia gama de formatos de archivo tanto para cargar como para guardar, mejorando la versatilidad para los desarrolladores. Esta funcionalidad incluye formatos populares como PDF, EPUB, HTML y SVG, atendiendo a diversas necesidades de procesamiento de documentos. Descubre un soporte completo de formatos de archivo que simplifica la manipulación de PDF dentro de tus aplicaciones",
+    "abstract": "Aspose.PDF for .NET ahora soporta una amplia gama de formatos de archivo tanto para cargar como para guardar, mejorando la versatilidad para los desarrolladores. Esta funcionalidad incluye formatos populares como PDF, EPUB, HTML y SVG, atendiendo a diversas necesidades de procesamiento de documentos. Descubre un soporte integral de formatos de archivo que simplifica la manipulación de PDF dentro de tus aplicaciones.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "566",
+    "wordcount": "623",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/supported-file-formats/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulta la siguiente sección para usuarios y desarrolladores avanzados."
 }
 </script>
@@ -98,6 +98,8 @@ La siguiente tabla indica los formatos de archivo que Aspose.PDF for .NET puede 
 |[OFD](https://en.wikipedia.org/wiki/OFD)|El formato OFD se refiere a "Documento de Diseño Fijo Abierto", establecido como el estándar nacional de China para el almacenamiento de archivos electrónicos, utilizado como una alternativa al popular formato PDF.|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Guarda el documento en la Hoja de Cálculo de Microsoft Excel| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Guarda el documento en el formato de Microsoft Excel 2007| |{{< emoticons/tick >}}| |
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Guarda el documento en el formato XLSM que es un tipo de archivos de hoja de cálculo que soporta Macros.||{{< emoticons/tick >}} | |
+|[PPTX](https://docs.fileformat.com/p
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Guarda el documento en el formato de Presentaciones de Microsoft PowerPoint| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Guarda el documento en el formato de Microsoft Word| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Guarda el documento en el formato de Microsoft Word| |{{< emoticons/tick >}}| |

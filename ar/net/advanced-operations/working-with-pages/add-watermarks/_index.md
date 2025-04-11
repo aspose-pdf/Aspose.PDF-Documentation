@@ -82,13 +82,13 @@ sitemap:
 
 تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-تسمى العلامة المائية التي تم إنشاؤها باستخدام Adobe Acrobat عنصرًا (كما هو موضح في 14.8.2.2 المحتوى الحقيقي والعناصر في مواصفات PDF). للعمل مع العناصر، تحتوي Aspose.PDF على فئتين: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) و [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
+تسمى العلامة المائية التي تم إنشاؤها باستخدام Adobe Acrobat عنصرًا (كما هو موضح في 14.8.2.2 المحتوى الحقيقي والعناصر في مواصفات PDF). للعمل مع العناصر، تحتوي Aspose.PDF على فئتين: [Artifact](https://reference.aspose.com/pdf/ar/net/aspose.pdf/artifact) و [ArtifactCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/artifactcollection).
 
-للحصول على جميع العناصر في صفحة معينة، تحتوي فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) على خاصية Artifacts. تشرح هذه الموضوع كيفية العمل مع العناصر في ملفات PDF.
+للحصول على جميع العناصر في صفحة معينة، تحتوي فئة [Page](https://reference.aspose.com/pdf/ar/net/aspose.pdf/page) على خاصية Artifacts. تشرح هذه الموضوع كيفية العمل مع العناصر في ملفات PDF.
 
 ## العمل مع العناصر
 
-تحتوي فئة [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) على الخصائص التالية:
+تحتوي فئة [Artifact](https://reference.aspose.com/pdf/ar/net/aspose.pdf/artifact) على الخصائص التالية:
 
 - **Artifact.Type**: يحصل على نوع العنصر (يدعم قيم تعداد Artifact.ArtifactType حيث تشمل القيم الخلفية، والتخطيط، والصفحة، والترقيم وغير محدد).
 - **Artifact.Subtype**: يحصل على نوع العنصر الفرعي (يدعم قيم تعداد Artifact.ArtifactSubtype حيث تشمل القيم الخلفية، والتذييل، والرأس، وغير محدد، والعلامة المائية).

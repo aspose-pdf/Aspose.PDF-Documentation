@@ -179,7 +179,7 @@ private static void PrintPDF(string pdfFileName)
  
 Desde la versión 24.4, es posible elegir la fuente de papel por tamaño de página PDF en el diálogo de impresión. El siguiente fragmento de código permite seleccionar una bandeja de impresora según el tamaño de página del PDF.
 
-Esta preferencia se puede activar y desactivar utilizando la propiedad [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+Esta preferencia se puede activar y desactivar utilizando la propiedad [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -234,9 +234,9 @@ private static void PickTrayByPdfSize()
 
 ## Preajustes de diálogo de impresión Escalado de página
 
-El siguiente fragmento de código está destinado a asegurar que la propiedad [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) se aplique y guarde correctamente en el PDF.
+El siguiente fragmento de código está destinado a asegurar que la propiedad [PrintScaling](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/printscaling/) se aplique y guarde correctamente en el PDF.
 
-La propiedad [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/printscaling/) se ha agregado a la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) con los valores `Aspose.Pdf.PrintScaling.AppDefault` o `Aspose.Pdf.PrintScaling.None`.
+La propiedad [PrintScaling](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/printscaling/) se ha agregado a la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/) con los valores `Aspose.Pdf.PrintScaling.AppDefault` o `Aspose.Pdf.PrintScaling.None`.
 
 La opción de escalado de página que se debe seleccionar cuando se muestra un diálogo de impresión para este documento. Los valores válidos son `None`, que indica que no hay escalado de página, y `AppDefault`, que indica el escalado de impresión predeterminado del lector conforme. Si esta entrada tiene un valor no reconocido, se debe usar `AppDefault`. Valor predeterminado: `AppDefault`.
 

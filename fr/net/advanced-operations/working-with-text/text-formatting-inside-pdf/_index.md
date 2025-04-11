@@ -82,7 +82,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Comment ajouter un retrait de ligne à un PDF
 
-Aspose.PDF for .NET offre la propriété SubsequentLinesIndent dans la classe [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions). Elle peut être utilisée pour spécifier le retrait de ligne dans les scénarios de génération de PDF avec TextFragment et la collection de Paragraphes.
+Aspose.PDF for .NET offre la propriété SubsequentLinesIndent dans la classe [TextFormattingOptions](https://reference.aspose.com/pdf/fr/net/aspose.pdf.text/textformattingoptions). Elle peut être utilisée pour spécifier le retrait de ligne dans les scénarios de génération de PDF avec TextFragment et la collection de Paragraphes.
 
 Veuillez utiliser le code suivant pour utiliser la propriété :
 
@@ -203,7 +203,7 @@ private static void AddUnderlineText()
 
 ## Comment ajouter une bordure autour du texte ajouté
 
-Vous avez le contrôle sur l'apparence du texte que vous ajoutez. L'exemple ci-dessous montre comment ajouter une bordure autour d'un morceau de texte que vous avez ajouté en traçant un rectangle autour. Découvrez-en plus sur la classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor).
+Vous avez le contrôle sur l'apparence du texte que vous ajoutez. L'exemple ci-dessous montre comment ajouter une bordure autour d'un morceau de texte que vous avez ajouté en traçant un rectangle autour. Découvrez-en plus sur la classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,21 +83,21 @@ sitemap:
 
 ## Добавление объекта Line
 
-Aspose.PDF for .NET поддерживает функцию добавления графических объектов (например, графика, линии, прямоугольника и т. д.) в PDF-документы. Вы также можете добавить объект [Line](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/line), где вы также можете указать шаблон пунктира, цвет и другие параметры форматирования для элемента Line.
+Aspose.PDF for .NET поддерживает функцию добавления графических объектов (например, графика, линии, прямоугольника и т. д.) в PDF-документы. Вы также можете добавить объект [Line](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/line), где вы также можете указать шаблон пунктира, цвет и другие параметры форматирования для элемента Line.
 
 Выполните следующие действия:
 
-1. Создайте новый PDF [документ](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Добавьте [страницу](https://reference.aspose.com/pdf/net/aspose.pdf/page) в коллекцию страниц PDF-файла.
-1. Создайте экземпляр [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph).
+1. Создайте новый PDF [документ](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Добавьте [страницу](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) в коллекцию страниц PDF-файла.
+1. Создайте экземпляр [Graph](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/graph).
 1. Добавьте объект Graph в коллекцию абзацев экземпляра страницы.
-1. Создайте экземпляр [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle).
+1. Создайте экземпляр [Rectangle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/rectangle).
 1. Установите ширину линии.
-1. Добавьте объект [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) в коллекцию фигур объекта Graph.
+1. Добавьте объект [Rectangle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/rectangle) в коллекцию фигур объекта Graph.
 
 1. Сохраните PDF-файл.
 
-В следующем фрагменте кода показано, как добавить объект [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle), заполненный цветом.
+В следующем фрагменте кода показано, как добавить объект [Rectangle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/rectangle), заполненный цветом.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -82,7 +82,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Intégrer le tableau avec la base de données
 
-Les bases de données sont conçues pour stocker et gérer des données. Il est courant pour les programmeurs de peupler différents objets avec des données provenant de bases de données. Cet article traite de l'ajout de données d'une base de données dans un tableau. Il est possible de peupler un objet [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) avec des données de n'importe quelle source de données en utilisant Aspose.PDF for .NET. Et ce n'est pas seulement possible, mais c'est très facile.
+Les bases de données sont conçues pour stocker et gérer des données. Il est courant pour les programmeurs de peupler différents objets avec des données provenant de bases de données. Cet article traite de l'ajout de données d'une base de données dans un tableau. Il est possible de peupler un objet [Table](https://reference.aspose.com/pdf/fr/net/aspose.pdf/table) avec des données de n'importe quelle source de données en utilisant Aspose.PDF for .NET. Et ce n'est pas seulement possible, mais c'est très facile.
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) permet aux développeurs d'importer des données à partir de :
 

@@ -83,13 +83,13 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Ajouter un Signet à un Document PDF
 
-Les signets sont conservés dans la collection [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) de l'objet Document, lui-même dans la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+Les signets sont conservés dans la collection [OutlineItemCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlineitemcollection) de l'objet Document, lui-même dans la collection [OutlineCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection).
 
 Pour ajouter un signet à un PDF :
 
-1. Ouvrez un document PDF en utilisant l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Ouvrez un document PDF en utilisant l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 1. Créez un signet et définissez ses propriétés.
-1. Ajoutez la collection [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) à la collection des Outlines.
+1. Ajoutez la collection [OutlineItemCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlineitemcollection) à la collection des Outlines.
 
 Le code suivant vous montre comment ajouter un signet dans un document PDF.
 
@@ -161,8 +161,8 @@ Les signets peuvent être imbriqués, indiquant une relation hiérarchique avec 
 Pour ajouter un signet enfant à un fichier PDF, ajoutez d'abord un signet parent :
 
 1. Ouvrez un document.
-1. Ajoutez un signet à la [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), en définissant ses propriétés.
-1. Ajoutez la OutlineItemCollection à la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) de l'objet Document.
+1. Ajoutez un signet à la [OutlineItemCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlineitemcollection), en définissant ses propriétés.
+1. Ajoutez la OutlineItemCollection à la collection [OutlineCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection) de l'objet Document.
 
 Le signet enfant est créé de la même manière que le signet parent, expliqué ci-dessus, mais est ajouté à la collection des Outlines du signet parent.
 
@@ -243,12 +243,12 @@ private static void AddChildBookmark()
 
 ## Supprimer Tous les Signets d'un Document PDF
 
-Tous les signets dans un PDF sont conservés dans la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Cet article explique comment supprimer tous les signets d'un fichier PDF.
+Tous les signets dans un PDF sont conservés dans la collection [OutlineCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection). Cet article explique comment supprimer tous les signets d'un fichier PDF.
 
 Pour supprimer tous les signets d'un fichier PDF :
 
-1. Appelez la méthode Delete de la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. Enregistrez le fichier modifié en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Appelez la méthode Delete de la collection [OutlineCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection).
+1. Enregistrez le fichier modifié en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 
 Les extraits de code suivants montrent comment supprimer tous les signets d'un document PDF.
 
@@ -299,10 +299,10 @@ private static void DeleteBookmarks()
 
 Pour supprimer un signet particulier d'un fichier PDF :
 
-1. Passez le titre du signet en paramètre à la méthode Delete de la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+1. Passez le titre du signet en paramètre à la méthode Delete de la collection [OutlineCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection).
 1. Ensuite, enregistrez le fichier mis à jour avec la méthode Save de l'objet Document.
 
-La classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) fournit la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). La méthode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) supprime tout signet avec le titre passé à la méthode.
+La classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) fournit la collection [OutlineCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection). La méthode [Delete](https://reference.aspose.com/pdf/fr/net/aspose.pdf/outlinecollection/methods/delete) supprime tout signet avec le titre passé à la méthode.
 
 Les extraits de code suivants montrent comment supprimer un signet particulier du document PDF.
 

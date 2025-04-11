@@ -94,9 +94,9 @@ PDF 文档管理应用程序提供了多种工具用于注释文档。从 PDF �
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
-1. 加载 PDF 文件或通过 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 创建新文件。
+1. 加载 PDF 文件或通过 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 创建新文件。
 1. 创建新的注释并设置参数（新的矩形、新的点、标题、颜色、宽度等）。
-1. 创建新的 [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index)。
+1. 创建新的 [PopupAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/popupannotation/methods/index)。
 1. 将弹出注释与原始注释链接。
 1. 将注释添加到页面
 
@@ -154,7 +154,7 @@ private static void AddLineAnnotation()
 
 ## 添加方形或圆形
 
-[Square](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation) 和 [Circle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) 注释将在页面上显示一个矩形或椭圆。当打开时，它们将显示一个弹出窗口，包含相关注释的文本。方形注释与圆形注释（Aspose. Pdf. Annotations. CircleAnnotation 类的实例）除了形状外是相似的。
+[Square](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/squareannotation) 和 [Circle](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/circleannotation) 注释将在页面上显示一个矩形或椭圆。当打开时，它们将显示一个弹出窗口，包含相关注释的文本。方形注释与圆形注释（Aspose. Pdf. Annotations. CircleAnnotation 类的实例）除了形状外是相似的。
 
 ### 添加圆形注释
 
@@ -544,7 +544,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 
 墨水注释表示由一个或多个不相连的路径组成的手写“涂鸦”。打开时，它将显示一个弹出窗口，包含相关注释的文本。
 
-[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) 表示由一个或多个不相连的点组成的手写涂鸦。请尝试使用以下代码片段在 PDF 文档中添加 InkAnnotation。
+[InkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/inkannotation) 表示由一个或多个不相连的点组成的手写涂鸦。请尝试使用以下代码片段在 PDF 文档中添加 InkAnnotation。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -600,7 +600,7 @@ private static void AddInkAnnotation()
 
 ### 设置 InkAnnotation 的线宽
 
-[InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) 的宽度可以使用 LineInfo 和 Border 对象进行更改。
+[InkAnnottion](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/inkannotation) 的宽度可以使用 LineInfo 和 Border 对象进行更改。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

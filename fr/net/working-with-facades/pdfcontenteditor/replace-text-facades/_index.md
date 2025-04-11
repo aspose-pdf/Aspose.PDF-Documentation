@@ -77,7 +77,7 @@ draft: false
 
 ## Remplacer du texte dans un fichier PDF existant
 
-Pour remplacer du texte dans un fichier PDF existant, vous devez créer un objet de la classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) et lier un fichier PDF d'entrée en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). Après cela, vous devez appeler la méthode [ReplaceText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index). Vous devez enregistrer le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) de la classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Le code suivant vous montre comment remplacer du texte dans un fichier PDF existant.
+Pour remplacer du texte dans un fichier PDF existant, vous devez créer un objet de la classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor) et lier un fichier PDF d'entrée en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/facade/methods/bindpdf/index). Après cela, vous devez appeler la méthode [ReplaceText](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index). Vous devez enregistrer le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/save) de la classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor). Le code suivant vous montre comment remplacer du texte dans un fichier PDF existant.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -179,7 +179,7 @@ private static void ReplaceText02()
 {{< /tab >}}
 {{< /tabs >}}
 
-Pour des possibilités plus avancées de travail avec notre texte, nous utiliserons la méthode [TextState](https://reference.aspose.com/pdf/net/aspose.pdf.text/textstate). Avec cette méthode, nous pouvons rendre le texte gras, italique, coloré, etc.
+Pour des possibilités plus avancées de travail avec notre texte, nous utiliserons la méthode [TextState](https://reference.aspose.com/pdf/fr/net/aspose.pdf.text/textstate). Avec cette méthode, nous pouvons rendre le texte gras, italique, coloré, etc.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

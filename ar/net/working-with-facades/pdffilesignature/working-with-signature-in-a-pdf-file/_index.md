@@ -158,7 +158,7 @@ private static void ExtractSignatureImage()
 
 ## إخفاء الموقع والسبب
 
-تسمح وظيفة Aspose.PDF بتكوين مرن لنسخة التوقيع الرقمية. توفر فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) القدرة على توقيع ملف PDF. يسمح تنفيذ طريقة التوقيع بتوقيع PDF وتمرير كائن التوقيع المحدد إلى هذه الفئة. تحتوي طريقة التوقيع على مجموعة من الخصائص لتخصيص التوقيع الرقمي الناتج. في حالة الحاجة إلى إخفاء بعض الخصائص النصية من نتيجة التوقيع، يمكنك تركها فارغة. يوضح مقتطف الكود التالي كيفية إخفاء موقع وسبب السطرين من كتلة التوقيع:
+تسمح وظيفة Aspose.PDF بتكوين مرن لنسخة التوقيع الرقمية. توفر فئة [PdfFileSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature) القدرة على توقيع ملف PDF. يسمح تنفيذ طريقة التوقيع بتوقيع PDF وتمرير كائن التوقيع المحدد إلى هذه الفئة. تحتوي طريقة التوقيع على مجموعة من الخصائص لتخصيص التوقيع الرقمي الناتج. في حالة الحاجة إلى إخفاء بعض الخصائص النصية من نتيجة التوقيع، يمكنك تركها فارغة. يوضح مقتطف الكود التالي كيفية إخفاء موقع وسبب السطرين من كتلة التوقيع:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -189,7 +189,7 @@ private static void SupressLocationReason()
 
 ## ميزات التخصيص للتوقيع الرقمي
 
-يتيح Aspose.PDF for .NET ميزات التخصيص لتوقيع رقمي. تحتوي طريقة التوقيع في فئة [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) على 6 تحميلات مفرطة لراحتك. على سبيل المثال، يمكنك تكوين التوقيع الناتج فقط من خلال مثيل فئة SignatureCustomAppearance وقيم خصائصها. يوضح مقتطف الكود التالي كيفية إخفاء عنوان "تم التوقيع رقميًا بواسطة" من التوقيع الرقمي الناتج لملف PDF الخاص بك.
+يتيح Aspose.PDF for .NET ميزات التخصيص لتوقيع رقمي. تحتوي طريقة التوقيع في فئة [SignatureCustomAppearance](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturecustomappearance) على 6 تحميلات مفرطة لراحتك. على سبيل المثال، يمكنك تكوين التوقيع الناتج فقط من خلال مثيل فئة SignatureCustomAppearance وقيم خصائصها. يوضح مقتطف الكود التالي كيفية إخفاء عنوان "تم التوقيع رقميًا بواسطة" من التوقيع الرقمي الناتج لملف PDF الخاص بك.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -233,7 +233,7 @@ private static void CustomizationFeaturesForDigitalSign()
 - PKCS#7.
 - PKCS#12.
 
-تحتوي كل من التوقيعات المقدمة على مجموعة من خصائص التكوين المطبقة لراحتك (التعريب، تنسيق التاريخ والوقت، عائلة الخط، إلخ). توفر فئة [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) الوظيفة المقابلة. يوضح مقتطف الكود التالي كيفية تغيير اللغة في نص التوقيع الرقمي: 
+تحتوي كل من التوقيعات المقدمة على مجموعة من خصائص التكوين المطبقة لراحتك (التعريب، تنسيق التاريخ والوقت، عائلة الخط، إلخ). توفر فئة [SignatureCustomAppearance](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturecustomappearance) الوظيفة المقابلة. يوضح مقتطف الكود التالي كيفية تغيير اللغة في نص التوقيع الرقمي: 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

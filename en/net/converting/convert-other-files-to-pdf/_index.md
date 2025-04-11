@@ -84,55 +84,17 @@ This article explains how to **convert various other types of file formats to PD
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-_Format_: **EPUB**
-- [C# EPUB to PDF](#csharp-convert-epub-to-pdf)
-- [C# Convert EPUB to PDF](#csharp-convert-epub-to-pdf)
-- [C# How to convert EPUB file to PDF](#csharp-convert-epub-to-pdf)
-
-_Format_: **Markdown**
-- [C# Markdown to PDF](#csharp-convert-markdown-to-pdf)
-- [C# Convert Markdown to PDF](#csharp-convert-markdown-to-pdf)
-- [C# How to convert Markdown file to PDF](#csharp-convert-markdown-to-pdf)
-
-_Format_: **MD**
-- [C# MD to PDF](#csharp-convert-md-to-pdf)
-- [C# Convert MD to PDF](#csharp-convert-md-to-pdf)
-- [C# How to convert MD file to PDF](#csharp-convert-md-to-pdf)
-
-_Format_: **PCL**
-- [C# PCL to PDF](#csharp-convert-pcl-to-pdf)
-- [C# Convert PCL to PDF](#csharp-convert-pcl-to-pdf)
-- [C# How to convert PCL file to PDF](#csharp-convert-pcl-to-pdf)
-
-_Format_: **Text**
-- [C# Text to PDF](#csharp-convert-text-to-pdf)
-- [C# Convert Text to PDF](#csharp-convert-text-to-pdf)
-- [C# How to convert Text file to PDF](#csharp-convert-text-to-pdf)
-
-_Format_: **TXT**
-- [C# TXT to PDF](#csharp-convert-txt-to-pdf)
-- [C# Convert TXT to PDF](#csharp-convert-txt-to-pdf)
-- [C# How to convert TXT file to PDF](#csharp-convert-txt-to-pdf)
-
-_Format_: **Plain Text**
-- [C# Plain Text to PDF](#csharp-convert-plain-text-to-pdf)
-- [C# Convert Plain Text to PDF](#csharp-convert-plain-text-to-pdf)
-- [C# How to convert Plain Text file to PDF](#csharp-convert-plain-text-to-pdf)
-
-_Format_: **Preformatted TXT**
-- [C# Preformatted Text to PDF](#csharp-convert-pre-formatted-txt-to-pdf)
-- [C# Convert Preformatted Text to PDF](#csharp-convert-pre-formatted-txt-to-pdf)
-- [C# How to convert Preformatted Text file to PDF](#csharp-convert-pre-formatted-txt-to-pdf)
-
-_Format_: **Pre Text**
-- [C# Pre Text to PDF](#csharp-convert-pre-text-to-pdf)
-- [C# Convert Pre Text to PDF](#csharp-convert-pre-text-to-pdf)
-- [C# How to convert Pre Text file to PDF](#csharp-convert-pre-text-to-pdf)
-
-_Format_: **XPS**
-- [C# XPS to PDF](#csharp-convert-xps-to-pdf)
-- [C# Convert XPS to PDF](#csharp-convert-xps-to-pdf)
-- [C# How to convert XPS file to PDF](#csharp-convert-xps-to-pdf)
+- [Convert EPUB to PDF](#csharp-convert-epub-to-pdf)
+- [Convert Markdown to PDF](#csharp-convert-markdown-to-pdf)
+- [Convert PCL to PDF](#csharp-convert-pcl-to-pdf)
+- [Convert Text to PDF](#csharp-convert-text-to-pdf)
+- [Convert Pre-formatted text to PDF](#csharp-convert-pre-formatted-text-to-pdf)
+- [Convert XPS to PDF](#csharp-convert-xps-to-pdf)
+- [Convert PostScript to PDF](#csharp-convert-ps-to-pdf)
+- [Convert XML to PDF](#csharp-convert-xml-to-pdf)
+- [Convert XLS-FO to PDF](#csharp-convert-xlsfo-to-pdf)
+- [Convert LaTeX/TeX to PDF](#csharp-convert-latex-to-pdf)
+- [Convert OFD to PDF](#csharp-convert-ofd-to-pdf)
 
 ## Convert EPUB to PDF
 
@@ -150,7 +112,7 @@ Aspose.PDF for .NET presents you online free application ["EPUB to PDF"](https:/
 [![Aspose.PDF Convertion EPUB to PDF with Free App](epub.png)](https://products.aspose.app/pdf/conversion/epub-to-pdf)
 {{% /alert %}}
 
-<a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong><em>Steps:</em> Convert EPUB to PDF in C#</strong></a>
+<a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong>Convert EPUB to PDF</strong></a>
 
 1. Create an instance of [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
@@ -212,8 +174,7 @@ Aspose.PDF for .NET provides the functionality to create a PDF document based on
 
 The following code snippet shows how to use this functionality with Aspose.PDF library:
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Steps:</em> Convert Markdown to PDF in C#</strong></a> |
-<a name="csharp-convert-md-to-pdf" id="csharp-convert-md-to-pdf"><strong><em>Steps:</em> Convert MD to PDF in C#</strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong>Convert Markdown to PDF</strong></a>
 
 1. Create an instance of [MdLoadOptions ](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions/) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class with mention source filename and options.
@@ -477,7 +438,7 @@ To allow conversion from PCL to PDF, Aspose.PDF has the class [`PclLoadOptions`]
 
 The following code snippet shows the process of converting a PCL file into PDF format.
 
-<a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong><em>Steps:</em> Convert PCL to PDF in C#</strong></a>
+<a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong>Convert PCL to PDF</strong></a>
 
 1. Create an instance of [PclLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions/) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) class with mention source filename and options.
@@ -554,9 +515,7 @@ Aspose.PDF for .NET presents you online free application ["Text to PDF"](https:/
 
 In case of the plain text file, we can use the following technique:
 
-<a name="csharp-convert-text-to-pdf" id="csharp-convert-text-to-pdf"><strong><em>Steps:</em> Convert Text to PDF in C#</strong></a> |
-<a name="csharp-convert-txt-to-pdf" id="csharp-convert-txt-to-pdf"><strong><em>Steps:</em> Convert TXT to PDF in C#</strong></a> |
-<a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong><em>Steps:</em> Convert Plain Text to PDF in C#</strong></a>
+<a name="csharp-convert-text-to-pdf" id="csharp-convert-text-to-pdf"><strong>Convert Text to PDF</strong></a>
 
 1. Use a _TextReader_ to read the whole text.
 2. Instantiate [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object and add a new page in Pages collection.
@@ -596,8 +555,7 @@ Converting pre-formatted text is like plain text but you need to make some addit
 
 Follow these steps to convert pre-formatted text to PDF with C#:
 
-<a name="csharp-convert-pre-text-to-pdf" id="csharp-convert-pre-text-to-pdf"><strong><em>Steps:</em> Convert Pre Text to PDF in C#</strong></a> |
-<a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong><em>Steps:</em> Convert Pre-formatted TXT to PDF in C#</strong></a>
+<a name="csharp-convert-pre-formatted-text-to-pdf" id="csharp-convert-pre-formatted-text-to-pdf"><strong>Convert Pre-formatted TXT to PDF</strong></a>
 
 1. Read the whole text as an array of strings.
 2. Instantiate [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object and add a new page in [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/pages/) collection.
@@ -674,7 +632,7 @@ In both XP and Windows 7, you should find an XPS Printer pre-installed if you lo
 
 The following code snippet shows the process of converting XPS file into PDF format with C#.
 
-<a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong><em>Steps:</em> Convert XPS to PDF in C#</strong></a>
+<a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong>Convert XPS to PDF</strong></a>
 
 1. Create an instance of [XpsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions/) class.
 2. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) class with mention source filename and options.
@@ -707,6 +665,8 @@ Aspose.PDF for .NET presents you online free application ["XPS to PDF"](https://
 {{% /alert %}}
 
 ## Convert PostScript to PDF
+
+<a name="csharp-convert-ps-to-pdf" id="csharp-convert-ps-to-pdf"><strong>Convert PostScript to PDF</strong></a>
 
 **Aspose.PDF for .NET** support features converting PostScript files to PDF format. One of the features from Aspose.PDF is that you can set a set of font folders to be used during conversion.
 
@@ -757,6 +717,8 @@ private static void ConvertPostscriptToPDFAdvanced()
 
 ## Convert XML to PDF
 
+<a name="csharp-convert-xml-to-pdf" id="csharp-convert-xml-to-pdf"><strong>Convert XML to PDF</strong></a>
+
 The XML format used to store structured data. There are several ways to convert <abbr title="Extensible Markup Language">XML</abbr> to PDF in Aspose.PDF:
 
 1. Transform any XML data to HTML using XSLT and convert HTML to PDF as described below.
@@ -771,8 +733,9 @@ Aspose.PDF for .NET presents you online free application ["XML to PDF"](https://
 [![Aspose.PDF Convertion XML to PDF with Free App](xml_to_pdf.png)](https://products.aspose.app/pdf/conversion/xml-to-pdf)
 {{% /alert %}}
 
-
 ## Convert XSL-FO to PDF
+
+<a name="csharp-convert-xslfo-to-pdf" id="csharp-convert-xslfo-to-pdf"><strong>Convert XSL-FO to PDF</strong></a>
 
 The conversion of XSL-FO files to PDF can be implemented using the traditional Aspose.PDF technique - instantiate [Document](https://reference.aspose.com/page/net/aspose.page/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). But sometimes you can meet with the incorrect file structure. For this case, XSL-FO converter allows setting the error handling strategy. You can choose `ThrowExceptionImmediately`, `TryIgnore` or `InvokeCustomHandler`.
 
@@ -797,6 +760,8 @@ private static void Convert_XSLFO_to_PDF()
 ```
 
 ## Convert LaTeX/TeX to PDF
+
+<a name="csharp-convert-latex-to-pdf" id="csharp-convert-latext-to-pdf"><strong>Convert LaTeX/TeX to PDF</strong></a>
 
 The LaTeX file format is a text file format with markup in the LaTeX derivative of the TeX family of languages and LaTeX is a derived format of the TeX system. LaTeX (ˈleɪtɛk/lay-tek or lah-tek) is a document preparation system and document markup language. It is widely used for the communication and publication of scientific documents in many fields, including mathematics, physics, and computer science. It also has a prominent role in the preparation and publication of books and articles that contain complex multilingual materials, such as Sanskrit and Arabic, including critical editions. LaTeX uses the TeX typesetting program for formatting its output, and is itself written in the TeX macro language.
 
@@ -829,6 +794,8 @@ private static void ConvertTeXtoPDF()
 ```
 
 ## Convert OFD to PDF
+
+<a name="csharp-convert-ofd-to-pdf" id="csharp-convert-ofd-to-pdf"><strong>Convert OFD to PDF</strong></a>
 
 OFD format refers to "Open Fixed-layout Document," established as China's national standard for electronic file storage,  used as an alternative to the popular PDF format. It supports fixed-layout documents, ensuring consistent display across different platforms. OFD files are utilized for various purposes, including digital documents and business applications.
 

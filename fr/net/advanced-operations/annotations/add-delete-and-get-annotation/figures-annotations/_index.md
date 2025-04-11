@@ -94,9 +94,9 @@ L'approche pour ajouter l'annotation est typique pour chacune d'elles.
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-1. Chargez le fichier PDF ou créez-en un nouveau avec [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Chargez le fichier PDF ou créez-en un nouveau avec [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 1. Créez la nouvelle annotation et définissez les paramètres (nouveau Rectangle, nouveau Point, titre, couleur, largeur, etc.).
-1. Créez la nouvelle [PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index).
+1. Créez la nouvelle [PopupAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/popupannotation/methods/index).
 1. Liez l'annotation Popup à l'originale.
 1. Ajoutez l'annotation à la page.
 
@@ -153,7 +153,7 @@ private static void AddLineAnnotation()
 
 ## Ajouter un carré ou un cercle
 
-Les annotations [Square](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation) et [Circle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) afficheront un rectangle ou une ellipse sur la page. Lorsqu'elles sont ouvertes, elles afficheront une fenêtre contextuelle contenant le texte de la note associée. Les annotations carrées sont similaires aux annotations circulaires (instances de la classe Aspose. Pdf. Annotations. CircleAnnotation) à part la forme.
+Les annotations [Square](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/squareannotation) et [Circle](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/circleannotation) afficheront un rectangle ou une ellipse sur la page. Lorsqu'elles sont ouvertes, elles afficheront une fenêtre contextuelle contenant le texte de la note associée. Les annotations carrées sont similaires aux annotations circulaires (instances de la classe Aspose. Pdf. Annotations. CircleAnnotation) à part la forme.
 
 ### Ajouter une annotation de cercle
 
@@ -543,7 +543,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 
 Une annotation d'encre représente un "gribouillage" à main levée composé d'un ou plusieurs chemins disjoints. Lorsqu'elle est ouverte, elle affichera une fenêtre contextuelle contenant le texte de la note associée.
 
-L'[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) représente un gribouillage à main levée composé d'un ou plusieurs points disjoints. Veuillez essayer d'utiliser le code suivant pour ajouter InkAnnotation dans le document PDF.
+L'[InkAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/inkannotation) représente un gribouillage à main levée composé d'un ou plusieurs points disjoints. Veuillez essayer d'utiliser le code suivant pour ajouter InkAnnotation dans le document PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -599,7 +599,7 @@ private static void AddInkAnnotation()
 
 ### Définir la largeur de ligne de l'InkAnnotation
 
-La largeur de l'[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) peut être modifiée à l'aide des objets LineInfo et Border.
+La largeur de l'[InkAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/inkannotation) peut être modifiée à l'aide des objets LineInfo et Border.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

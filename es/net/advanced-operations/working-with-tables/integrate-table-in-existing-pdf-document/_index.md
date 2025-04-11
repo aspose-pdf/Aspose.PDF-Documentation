@@ -82,7 +82,7 @@ El siguiente fragmento de código también funciona con la biblioteca [Aspose.PD
 
 ## Integrar Tabla con Base de Datos
 
-Las bases de datos están diseñadas para almacenar y gestionar datos. Es una práctica común para los programadores poblar diferentes objetos con datos de bases de datos. Este artículo discute cómo agregar datos de una base de datos a una tabla. Es posible poblar un objeto [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) con datos de cualquier fuente de datos usando Aspose.PDF for .NET. Y no solo es posible, sino que es muy fácil.
+Las bases de datos están diseñadas para almacenar y gestionar datos. Es una práctica común para los programadores poblar diferentes objetos con datos de bases de datos. Este artículo discute cómo agregar datos de una base de datos a una tabla. Es posible poblar un objeto [Table](https://reference.aspose.com/pdf/es/net/aspose.pdf/table) con datos de cualquier fuente de datos usando Aspose.PDF for .NET. Y no solo es posible, sino que es muy fácil.
 
 [Aspose.PDF for .NET](https://docs.aspose.com/pdf/net/) permite a los desarrolladores importar datos de:
 

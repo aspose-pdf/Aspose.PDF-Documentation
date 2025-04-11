@@ -83,14 +83,14 @@ sitemap:
 
 ## Добавление объекта «Круг»
 
-Подобно столбчатым диаграммам, круговые диаграммы могут использоваться для отображения данных по ряду отдельных категорий. Однако, в отличие от столбчатых диаграмм, круговые диаграммы можно использовать только тогда, когда у вас есть данные по всем категориям, составляющим целое. Итак, давайте рассмотрим добавление объекта [Circle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/circle) с помощью Aspose.PDF for .NET.
+Подобно столбчатым диаграммам, круговые диаграммы могут использоваться для отображения данных по ряду отдельных категорий. Однако, в отличие от столбчатых диаграмм, круговые диаграммы можно использовать только тогда, когда у вас есть данные по всем категориям, составляющим целое. Итак, давайте рассмотрим добавление объекта [Circle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/circle) с помощью Aspose.PDF for .NET.
 
 Выполните следующие действия:
 
-1. Создайте экземпляр [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Создайте объект [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) с определёнными размерами.
-1. Установите [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) для объекта Drawing.
-1. Добавьте объект [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) в коллекцию абзацев страницы.
+1. Создайте экземпляр [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Создайте объект [Drawing object](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing) с определёнными размерами.
+1. Установите [Border](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/graph/properties/border) для объекта Drawing.
+1. Добавьте объект [Graph](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/graph) в коллекцию абзацев страницы.
 1. Сохраните наш PDF-файл.
 
 ```csharp

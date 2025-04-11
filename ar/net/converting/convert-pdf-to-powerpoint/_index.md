@@ -28,7 +28,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1174",
+    "wordcount": "860",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,8 +74,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-powerpoint/"
     },
-    "dateModified": "2024-11-25",
-    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسريعة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+    "dateModified": "2025-04-04",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة ولكن أيضًا التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
 
@@ -83,35 +83,29 @@ sitemap:
 
 تشرح هذه المقالة كيفية **تحويل PDF إلى PowerPoint باستخدام C#**. تغطي هذه المواضيع.
 
-_التنسيق_: **PPTX**
-- [C# PDF إلى PPTX](#csharp-pdf-to-pptx)
-- [C# تحويل PDF إلى PPTX](#csharp-pdf-to-pptx)
-- [C# كيفية تحويل ملف PDF إلى PPTX](#csharp-pdf-to-pptx)
+- [تحويل PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
 
-_التنسيق_: **PowerPoint**
-- [C# PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# تحويل PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# كيفية تحويل ملف PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
+## تحويل PDF إلى PowerPoint و PPTX باستخدام C#
 
-## تحويل C# PDF إلى PowerPoint و PPTX
+<a name="csharp-convert-pdf-to-powerpoint" id="csharp-convert-pdf-to-powerpoint"><strong>تحويل PDF إلى PowerPoint</strong></a>
 
 **Aspose.PDF for .NET** يتيح لك تتبع تقدم تحويل PDF إلى PPTX.
 
 لدينا واجهة برمجة تطبيقات تسمى Aspose.Slides التي تقدم ميزة إنشاء وتعديل عروض PPT/PPTX. توفر هذه الواجهة أيضًا ميزة تحويل ملفات PPT/PPTX إلى تنسيق PDF. مؤخرًا، تلقينا متطلبات من العديد من عملائنا لدعم القدرة على تحويل PDF إلى تنسيق PPTX. بدءًا من إصدار Aspose.PDF for .NET 10.3.0، قدمنا ميزة لتحويل مستندات PDF إلى تنسيق PPTX. خلال هذا التحويل، يتم تحويل الصفحات الفردية من ملف PDF إلى شرائح منفصلة في ملف PPTX.
 
-أثناء تحويل PDF إلى <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>، يتم عرض النص كنص حيث يمكنك تحديده/تحديثه. يرجى ملاحظة أنه من أجل تحويل ملفات PDF إلى تنسيق PPTX، يوفر Aspose.PDF فئة تسمى [`PptxSaveOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions). يتم تمرير كائن من فئة PptxSaveOptions كوسيط ثانٍ إلى [`Document.Save(..) method`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save). توضح مقتطفات الكود التالية العملية لتحويل ملفات PDF إلى تنسيق PPTX.
+أثناء تحويل PDF إلى <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>، يتم عرض النص كنص حيث يمكنك تحديده/تحديثه. يرجى ملاحظة أنه من أجل تحويل ملفات PDF إلى تنسيق PPTX، يوفر Aspose.PDF فئة تسمى [`PptxSaveOptions`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pptxsaveoptions). يتم تمرير كائن من فئة PptxSaveOptions كوسيط ثانٍ إلى [`Document.Save(..) method`](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save). توضح مقتطفات الكود التالية العملية لتحويل ملفات PDF إلى تنسيق PPTX.
 
-## تحويل بسيط PDF إلى PowerPoint باستخدام C# و Aspose.PDF .NET
+## تحويل بسيط من PDF إلى PowerPoint باستخدام C# و Aspose.PDF .NET
 
-من أجل تحويل PDF إلى PPTX، ينصح Aspose.PDF for .NET باستخدام خطوات الكود التالية.
+لتحويل PDF إلى PPTX، ينصح Aspose.PDF for .NET باستخدام خطوات الكود التالية.
 
-<a name="csharp-pdf-to-powerpoint"><strong>الخطوات: تحويل PDF إلى PowerPoint في C#</strong></a> | <a name="csharp-pdf-to-pptx"><strong>الخطوات: تحويل PDF إلى PPTX في C#</strong></a>
+<a name="csharp-pdf-to-powerpoint"><strong>تحويل PDF إلى PowerPoint</strong></a>
 
-1. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
-2. إنشاء مثيل من فئة [PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) .
-3. استخدم طريقة **Save** لكائن **Document** لحفظ PDF كـ PPTX.
+1. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+2. إنشاء مثيل من فئة [PptxSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pptxsaveoptions).
+3. استخدم طريقة **Save** من كائن **Document** لحفظ PDF كـ PPTX.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -137,12 +131,12 @@ private static void ConvertPDFToPPTX()
 {{% alert color="success" %}}
 **حاول تحويل PDF إلى PowerPoint عبر الإنترنت**
 
-يقدم لك Aspose.PDF for .NET تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
+Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx)، حيث يمكنك محاولة استكشاف الوظائف وجودة العمل.
 
 [![تحويل Aspose.PDF PDF إلى PPTX مع تطبيق مجاني](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
 
-في حالة احتياجك لتحويل PDF قابل للبحث إلى PPTX كصور بدلاً من نص قابل للاختيار، يوفر Aspose.PDF مثل هذه الميزة عبر فئة [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) . لتحقيق ذلك، قم بتعيين خاصية [SlidesAsImages](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) من فئة [PptxSaveOptios](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) إلى 'true' كما هو موضح في عينة الكود التالية.
+في حال كنت بحاجة إلى تحويل PDF قابل للبحث إلى PPTX كصور بدلاً من نص قابل للاختيار، يوفر Aspose.PDF مثل هذه الميزة عبر فئة [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pptxsaveoptions). لتحقيق ذلك، قم بتعيين خاصية [SlidesAsImages](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) من فئة [PptxSaveOptios](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pptxsaveoptions) إلى 'true' كما هو موضح في مقتطف كود التالي.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -168,7 +162,7 @@ private static void ConvertPDFToPPTWithSlidesAsImages()
 
 ## تفاصيل تقدم تحويل PPTX
 
-يتيح لك Aspose.PDF for .NET تتبع تقدم تحويل PDF إلى PPTX. توفر فئة [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) خاصية [CustomProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler) التي يمكن تحديدها لطريقة مخصصة لتتبع تقدم التحويل كما هو موضح في عينة الكود التالية.
+Aspose.PDF for .NET يتيح لك تتبع تقدم تحويل PDF إلى PPTX. توفر فئة [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pptxsaveoptions) خاصية [CustomProgressHandler](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler) التي يمكن تحديدها لطريقة مخصصة لتتبع تقدم التحويل كما هو موضح في مقتطف كود التالي.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -222,27 +216,3 @@ private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.Progress
     }
 }
 ```
-
-## انظر أيضًا 
-
-تغطي هذه المقالة أيضًا هذه المواضيع. الأكواد هي نفسها كما هو مذكور أعلاه.
-
-_التنسيق_: **PowerPoint**
-- [C# كود PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# واجهة برمجة تطبيقات PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# PDF إلى PowerPoint برمجيًا](#csharp-pdf-to-powerpoint)
-- [C# مكتبة PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# حفظ PDF كـ PowerPoint](#csharp-pdf-to-powerpoint)
-- [C# توليد PowerPoint من PDF](#csharp-pdf-to-powerpoint)
-- [C# إنشاء PowerPoint من PDF](#csharp-pdf-to-powerpoint)
-- [C# محول PDF إلى PowerPoint](#csharp-pdf-to-powerpoint)
-
-_التنسيق_: **PPTX**
-- [C# كود PDF إلى PPTX](#csharp-pdf-to-pptx)
-- [C# واجهة برمجة تطبيقات PDF إلى PPTX](#csharp-pdf-to-pptx)
-- [C# PDF إلى PPTX برمجيًا](#csharp-pdf-to-pptx)
-- [C# مكتبة PDF إلى PPTX](#csharp-pdf-to-pptx)
-- [C# حفظ PDF كـ PPTX](#csharp-pdf-to-pptx)
-- [C# توليد PPTX من PDF](#csharp-pdf-to-pptx)
-- [C# إنشاء PPTX من PDF](#csharp-pdf-to-pptx)
-- [C# محول PDF إلى PPTX](#csharp-pdf-to-pptx)

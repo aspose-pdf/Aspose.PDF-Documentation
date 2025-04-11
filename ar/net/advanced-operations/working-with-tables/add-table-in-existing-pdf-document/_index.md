@@ -80,7 +80,7 @@ sitemap:
 
 ## إنشاء جدول باستخدام C\#
 
-الجداول مهمة عند العمل مع مستندات PDF. إنها توفر ميزات رائعة لعرض المعلومات بطريقة منظمة. يحتوي مساحة أسماء Aspose.PDF على فئات تُسمى [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table)، [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell)، و[Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) التي توفر وظائف لإنشاء الجداول عند توليد مستندات PDF من الصفر.
+الجداول مهمة عند العمل مع مستندات PDF. إنها توفر ميزات رائعة لعرض المعلومات بطريقة منظمة. يحتوي مساحة أسماء Aspose.PDF على فئات تُسمى [Table](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table)، [Cell](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cell)، و[Row](https://reference.aspose.com/pdf/ar/net/aspose.pdf/row) التي توفر وظائف لإنشاء الجداول عند توليد مستندات PDF من الصفر.
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
@@ -140,7 +140,7 @@ private static void AddTable()
 
 ### ColSpan وRowSpan في الجداول
 
-توفر Aspose.PDF for .NET خاصية [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) لدمج الأعمدة في جدول و[RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) لدمج الصفوف.
+توفر Aspose.PDF for .NET خاصية [ColSpan](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cell/properties/colspan) لدمج الأعمدة في جدول و[RowSpan](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cell/properties/rowspan) لدمج الصفوف.
 
 نستخدم خاصية `ColSpan` أو `RowSpan` على كائن `Cell` الذي ينشئ خلية الجدول. بعد تطبيق الخصائص المطلوبة، يمكن إضافة الخلية التي تم إنشاؤها إلى الجدول.
 
@@ -225,11 +225,11 @@ private static void AddTableRowColSpan()
 
 ### الحدود
 
-لتعيين حدود الجدول، [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) و[Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) الكائنات، استخدم خصائص Table.Border وRow.Border وCell.Border. يمكن أيضًا تعيين حدود الخلايا باستخدام خاصية DefaultCellBorder لفئة [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) أو Row. جميع الخصائص المتعلقة بالحدود التي تم مناقشتها أعلاه يتم تعيينها على كائن من فئة Row، التي يتم إنشاؤها عن طريق استدعاء مُنشئها. تحتوي فئة Row على العديد من التحميلات الزائدة التي تأخذ تقريبًا جميع المعلمات المطلوبة لتخصيص الحدود.
+لتعيين حدود الجدول، [Row](https://reference.aspose.com/pdf/ar/net/aspose.pdf/row) و[Cell](https://reference.aspose.com/pdf/ar/net/aspose.pdf/cell) الكائنات، استخدم خصائص Table.Border وRow.Border وCell.Border. يمكن أيضًا تعيين حدود الخلايا باستخدام خاصية DefaultCellBorder لفئة [Table](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table) أو Row. جميع الخصائص المتعلقة بالحدود التي تم مناقشتها أعلاه يتم تعيينها على كائن من فئة Row، التي يتم إنشاؤها عن طريق استدعاء مُنشئها. تحتوي فئة Row على العديد من التحميلات الزائدة التي تأخذ تقريبًا جميع المعلمات المطلوبة لتخصيص الحدود.
 
 ### الهوامش أو التعبئة
 
-يمكن إدارة تعبئة الخلايا باستخدام خاصية [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) لفئة Table. جميع الخصائص المتعلقة بالتعبئة يتم تعيينها على كائن من فئة [MarginInfo](https://reference.aspose.com/pdf/net/aspose.pdf/margininfo) التي تأخذ معلومات حول معلمات `Left` و`Right` و`Top` و`Bottom` لإنشاء هوامش مخصصة.
+يمكن إدارة تعبئة الخلايا باستخدام خاصية [DefaultCellPadding](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/defaultcellpadding) لفئة Table. جميع الخصائص المتعلقة بالتعبئة يتم تعيينها على كائن من فئة [MarginInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf/margininfo) التي تأخذ معلومات حول معلمات `Left` و`Right` و`Top` و`Bottom` لإنشاء هوامش مخصصة.
 
 في المثال التالي، يتم تعيين عرض حدود الخلية إلى 0.1 نقطة، وعرض حدود الجدول إلى 1 نقطة وتعيين تعبئة الخلية إلى 5 نقاط.
 
@@ -369,7 +369,7 @@ private static void AddAutoFitToWindow()
 
 ### الحصول على عرض الجدول
 
-أحيانًا، يكون من الضروري الحصول على عرض الجدول ديناميكيًا. تحتوي فئة Aspose.PDF.Table على طريقة [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) لهذا الغرض. على سبيل المثال، إذا لم تقم بتعيين عرض أعمدة الجدول بشكل صريح وقمت بتعيين [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) إلى AutoFitToContent. في هذه الحالة، يمكنك الحصول على عرض الجدول كما يلي.
+أحيانًا، يكون من الضروري الحصول على عرض الجدول ديناميكيًا. تحتوي فئة Aspose.PDF.Table على طريقة [GetWidth](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/methods/getwidth) لهذا الغرض. على سبيل المثال، إذا لم تقم بتعيين عرض أعمدة الجدول بشكل صريح وقمت بتعيين [ColumnAdjustment](https://reference.aspose.com/pdf/ar/net/aspose.pdf/table/properties/columnadjustment) إلى AutoFitToContent. في هذه الحالة، يمكنك الحصول على عرض الجدول كما يلي.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -561,7 +561,7 @@ private static void InsertPageBreak()
 
 ### عينة: كيفية عرض جدول في صفحة جديدة باستخدام C\#
 
-لعرض الجدول في صفحة جديدة، استخدم خاصية [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) في فئة BaseParagraph. تظهر مقتطفات الكود التالية كيفية القيام بذلك.
+لعرض الجدول في صفحة جديدة، استخدم خاصية [IsInNewPage](https://reference.aspose.com/pdf/ar/net/aspose.pdf/baseparagraph/properties/isinnewpage) في فئة BaseParagraph. تظهر مقتطفات الكود التالية كيفية القيام بذلك.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

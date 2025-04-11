@@ -85,13 +85,13 @@ sitemap:
 
 文本注释是附加到PDF文档中特定位置的注释。关闭时，注释显示为图标；打开时，应显示一个弹出窗口，其中包含读者选择的字体和大小的注释文本。
 
-注释由特定页面的 [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) 集合包含。该集合仅包含该单独页面的注释；每个页面都有自己的注释集合。
+注释由特定页面的 [Annotations](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations) 集合包含。该集合仅包含该单独页面的注释；每个页面都有自己的注释集合。
 
-要将注释添加到特定页面，请使用 [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add) 方法将其添加到该页面的注释集合中。
+要将注释添加到特定页面，请使用 [Add](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationcollection/methods/add) 方法将其添加到该页面的注释集合中。
 
 1. 首先，创建要添加到PDF的注释。
 1. 然后打开输入PDF。
-1. 将注释添加到 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象的注释集合中。
+1. 将注释添加到 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象的注释集合中。
 
 以下代码片段演示了如何在PDF页面中添加注释。
 
@@ -136,7 +136,7 @@ private static void AddTextAnnotationToPdf()
 
 它不应具有自己的外观流或相关操作，并应通过父注释字典中的Popup条目进行标识。
 
-以下代码片段演示了如何在PDF页面中添加 [Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation)，以添加父注释的 [Line annotation](/pdf/zh/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) 为例。
+以下代码片段演示了如何在PDF页面中添加 [Popup Annotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/popupannotation)，以添加父注释的 [Line annotation](/pdf/zh/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) 为例。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +173,7 @@ private static void AddLineAnnotation()
 
 ## 如何添加（或创建）新的自由文本注释
 
-自由文本注释直接在页面上显示文本。 [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 方法允许创建这种类型的注释。在以下代码片段中，我们在字符串的第一次出现上方添加自由文本注释。
+自由文本注释直接在页面上显示文本。 [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) 方法允许创建这种类型的注释。在以下代码片段中，我们在字符串的第一次出现上方添加自由文本注释。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -216,7 +216,7 @@ private static void AddFreeTextAnnotationDemo()
 
 ### 为FreeTextAnnotation设置标注属性
 
-为了更灵活地配置PDF文档中的注释，Aspose.PDF for .NET 提供了 [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 类的 [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) 属性，该属性允许指定标注线的点数组。以下代码片段展示了如何使用此功能：
+为了更灵活地配置PDF文档中的注释，Aspose.PDF for .NET 提供了 [FreeTextAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation) 类的 [Callout](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation/properties/callout) 属性，该属性允许指定标注线的点数组。以下代码片段展示了如何使用此功能：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -351,9 +351,9 @@ private static void AddInvisibleAnnotation()
 
 这一部分介绍了如何格式化自由文本注释中的文本。
 
-注释包含在 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象的 [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 集合中。当将 [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) 添加到PDF文档时，可以使用 [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index) 类指定格式信息，例如字体、大小、颜色等。还可以使用 TextStyle 属性指定格式信息。此外，您可以更新PDF文档中任何已存在的FreeTextAnnotation的格式。
+注释包含在 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象的 [AnnotationCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationcollection) 集合中。当将 [FreeTextAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/freetextannotation) 添加到PDF文档时，可以使用 [DefaultAppearance](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/defaultappearance/methods/index) 类指定格式信息，例如字体、大小、颜色等。还可以使用 TextStyle 属性指定格式信息。此外，您可以更新PDF文档中任何已存在的FreeTextAnnotation的格式。
 
-[TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) 类支持处理默认样式条目。该类允许您设置颜色、字体大小和字体名称：
+[TextStyle](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/textstyle) 类支持处理默认样式条目。该类允许您设置颜色、字体大小和字体名称：
 
 - FontName 属性获取或设置字体名称（字符串）。
 - FontSize 属性获取和设置默认文本大小（双精度）。
@@ -434,7 +434,7 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
 
 ### 使用StrikeOutAnnotation划掉单词
 
-Aspose.PDF for .NET 允许您在PDF文档中添加、删除和更新注释。一个类允许您划掉注释。这在您想要划掉文档中的一个或多个文本片段时非常有用。注释保存在 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象的 [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 集合中。可以使用名为 [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) 的类将划掉注释添加到PDF文档中。
+Aspose.PDF for .NET 允许您在PDF文档中添加、删除和更新注释。一个类允许您划掉注释。这在您想要划掉文档中的一个或多个文本片段时非常有用。注释保存在 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象的 [AnnotationCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationcollection) 集合中。可以使用名为 [StrikeOutAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/strikeoutannotation) 的类将划掉注释添加到PDF文档中。
 
 要划掉特定的TextFragment：
 
@@ -502,7 +502,7 @@ private void StrikeOutTextInDocument()
 
 ## 从PDF文件的页面删除所有注释
 
-[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象的 [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 集合包含该特定页面的所有注释。要从页面中删除所有注释，请调用 AnnotationCollectoin 集合的 *Delete* 方法。
+[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象的 [AnnotationCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationcollection) 集合包含该特定页面的所有注释。要从页面中删除所有注释，请调用 AnnotationCollectoin 集合的 *Delete* 方法。
 
 以下代码片段展示了如何从特定页面删除所有注释。
 
@@ -536,7 +536,7 @@ private static void DeleteAllAnnotationsFromPage()
 
 Aspose.PDF 允许您从PDF文件中删除特定注释。此主题解释了如何操作。
 
-要从PDF中删除特定注释，请调用 [AnnotationCollection 集合的 Delete 方法](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1)。该集合属于 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象。Delete 方法需要您要删除的注释的索引。然后，保存更新后的PDF文件。以下代码片段展示了如何删除特定注释。
+要从PDF中删除特定注释，请调用 [AnnotationCollection 集合的 Delete 方法](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations.annotationcollection/delete/methods/1)。该集合属于 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象。Delete 方法需要您要删除的注释的索引。然后，保存更新后的PDF文件。以下代码片段展示了如何删除特定注释。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -559,7 +559,7 @@ private static void DeleteParticularAnnotation()
 
 ## 从PDF文档的页面获取所有注释
 
-Aspose.PDF 允许您从整个文档或给定页面获取注释。要从PDF文档的页面获取所有注释，请循环遍历所需页面资源的 [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 集合。以下代码片段展示了如何获取页面的所有注释。
+Aspose.PDF 允许您从整个文档或给定页面获取注释。要从PDF文档的页面获取所有注释，请循环遍历所需页面资源的 [AnnotationCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationcollection) 集合。以下代码片段展示了如何获取页面的所有注释。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -587,7 +587,7 @@ private static void GetAllAnnotationsFromPage()
 
 ## 从PDF文件中获取特定注释
 
-注释与单独的页面相关联，并存储在 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象的 [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) 集合中。要获取特定注释，请指定其索引。这将返回一个 [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) 对象，需要将其转换为特定的注释类型，例如 [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation)。以下代码片段展示了如何获取特定注释及其属性。
+注释与单独的页面相关联，并存储在 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 对象的 [AnnotationCOllection](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotationcollection) 集合中。要获取特定注释，请指定其索引。这将返回一个 [Annotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotation) 对象，需要将其转换为特定的注释类型，例如 [TextAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/textannotation)。以下代码片段展示了如何获取特定注释及其属性。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -612,7 +612,7 @@ private static void GetParticularAnnotation()
 
 ## 获取注释的资源
 
-Aspose.PDF 允许您从整个文档或给定页面获取注释的资源。以下代码片段展示了如何获取输入PDF文件的注释资源作为 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 对象。
+Aspose.PDF 允许您从整个文档或给定页面获取注释的资源。以下代码片段展示了如何获取输入PDF文件的注释资源作为 [FileSpecification](https://reference.aspose.com/pdf/zh/net/aspose.pdf/filespecification) 对象。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

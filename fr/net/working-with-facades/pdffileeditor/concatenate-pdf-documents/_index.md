@@ -91,9 +91,9 @@ Cet article explique comment fusionner, combiner ou concaténer différents fich
 
 ## Concaténer des fichiers PDF en utilisant des chemins de fichiers
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) est la classe dans le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) qui vous permet de concaténer plusieurs fichiers PDF. Vous pouvez non seulement concaténer des fichiers en utilisant des FileStreams mais aussi en utilisant des MemoryStreams. Dans cet article, le processus de concaténation des fichiers en utilisant des MemoryStreams sera expliqué et ensuite montré à l'aide d'un extrait de code.
+[PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) est la classe dans le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades) qui vous permet de concaténer plusieurs fichiers PDF. Vous pouvez non seulement concaténer des fichiers en utilisant des FileStreams mais aussi en utilisant des MemoryStreams. Dans cet article, le processus de concaténation des fichiers en utilisant des MemoryStreams sera expliqué et ensuite montré à l'aide d'un extrait de code.
 
-La méthode [Concaténer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) peut être utilisée pour concaténer deux fichiers PDF. La méthode [Concaténer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) vous permet de passer trois paramètres : le premier PDF d'entrée, le deuxième PDF d'entrée et le PDF de sortie. Le PDF de sortie final contient les deux fichiers PDF d'entrée.
+La méthode [Concaténer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) peut être utilisée pour concaténer deux fichiers PDF. La méthode [Concaténer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) vous permet de passer trois paramètres : le premier PDF d'entrée, le deuxième PDF d'entrée et le PDF de sortie. Le PDF de sortie final contient les deux fichiers PDF d'entrée.
 
 L'extrait de code C# suivant vous montre comment concaténer des fichiers PDF en utilisant des chemins de fichiers.
 
@@ -129,7 +129,7 @@ private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 
 ## Concaténer plusieurs fichiers PDF en utilisant des MemoryStreams
 
-La méthode [Concaténer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) prend les fichiers PDF source et le fichier PDF de destination comme paramètres. Ces paramètres peuvent être soit des chemins vers les fichiers PDF sur le disque, soit des MemoryStreams. Maintenant, pour cet exemple, nous allons d'abord créer deux flux de fichiers pour lire les fichiers PDF depuis le disque. Ensuite, nous allons convertir ces fichiers en tableaux d'octets. Ces tableaux d'octets des fichiers PDF seront convertis en MemoryStreams. Une fois que nous avons les MemoryStreams des fichiers PDF, nous pourrons les passer à la méthode de concaténation et les fusionner en un seul fichier de sortie.
+La méthode [Concaténer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) prend les fichiers PDF source et le fichier PDF de destination comme paramètres. Ces paramètres peuvent être soit des chemins vers les fichiers PDF sur le disque, soit des MemoryStreams. Maintenant, pour cet exemple, nous allons d'abord créer deux flux de fichiers pour lire les fichiers PDF depuis le disque. Ensuite, nous allons convertir ces fichiers en tableaux d'octets. Ces tableaux d'octets des fichiers PDF seront convertis en MemoryStreams. Une fois que nous avons les MemoryStreams des fichiers PDF, nous pourrons les passer à la méthode de concaténation et les fusionner en un seul fichier de sortie.
 
 L'extrait de code C# suivant vous montre comment concaténer plusieurs fichiers PDF en utilisant des MemoryStreams :
 
@@ -187,7 +187,7 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
 
 ## Concaténer un tableau de fichiers PDF en utilisant des chemins de fichiers
 
-Si vous souhaitez concaténer plusieurs fichiers PDF, vous pouvez utiliser la surcharge de la méthode [Concaténer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index), qui vous permet de passer un tableau de fichiers PDF. Le fichier de sortie final est enregistré en tant que fichier fusionné créé à partir de tous les fichiers du tableau. L'extrait de code C# suivant vous montre comment concaténer un tableau de fichiers PDF en utilisant des chemins de fichiers.
+Si vous souhaitez concaténer plusieurs fichiers PDF, vous pouvez utiliser la surcharge de la méthode [Concaténer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index), qui vous permet de passer un tableau de fichiers PDF. Le fichier de sortie final est enregistré en tant que fichier fusionné créé à partir de tous les fichiers du tableau. L'extrait de code C# suivant vous montre comment concaténer un tableau de fichiers PDF en utilisant des chemins de fichiers.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
 
 ## Concaténer un tableau de fichiers PDF en utilisant des flux
 
-La concaténation d'un tableau de fichiers PDF n'est pas limitée uniquement aux fichiers résidant sur le disque. Vous pouvez également concaténer un tableau de fichiers PDF à partir de flux. Si vous souhaitez concaténer plusieurs fichiers PDF, vous pouvez utiliser la surcharge appropriée de la méthode [Concaténer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Tout d'abord, vous devez créer un tableau de flux d'entrée et un flux pour le PDF de sortie, puis appeler la méthode [Concaténer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). La sortie sera enregistrée dans le flux de sortie. L'extrait de code C# suivant vous montre comment concaténer un tableau de fichiers PDF en utilisant des flux.
+La concaténation d'un tableau de fichiers PDF n'est pas limitée uniquement aux fichiers résidant sur le disque. Vous pouvez également concaténer un tableau de fichiers PDF à partir de flux. Si vous souhaitez concaténer plusieurs fichiers PDF, vous pouvez utiliser la surcharge appropriée de la méthode [Concaténer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Tout d'abord, vous devez créer un tableau de flux d'entrée et un flux pour le PDF de sortie, puis appeler la méthode [Concaténer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). La sortie sera enregistrée dans le flux de sortie. L'extrait de code C# suivant vous montre comment concaténer un tableau de fichiers PDF en utilisant des flux.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -267,7 +267,7 @@ private static void ConcatenatingAllPdfFilesInParticularFolder()
 
 ## Concaténer des formulaires PDF et garder les noms de champs uniques
 
-La classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) dans le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) offre la capacité de concaténer les fichiers PDF. Maintenant, si les fichiers PDF qui doivent être concaténés ont des champs de formulaire avec des noms de champs similaires, Aspose.PDF fournit la fonctionnalité de garder les champs dans le fichier PDF résultant uniques et vous pouvez également spécifier le suffixe pour rendre les noms de champs uniques. La propriété [KeepFieldsUnique](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) de [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) définie sur true rendra les noms de champs uniques lorsque les formulaires PDF sont concaténés. De plus, la propriété [UniqueSuffix](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) de PdfFileEditor peut être utilisée pour spécifier le format défini par l'utilisateur du suffixe qui est ajouté au nom de champ pour le rendre unique lorsque les formulaires sont concaténés. Cette chaîne doit contenir la sous-chaîne `%NUM%` qui sera remplacée par des chiffres dans le fichier résultant.
+La classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) dans le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades) offre la capacité de concaténer les fichiers PDF. Maintenant, si les fichiers PDF qui doivent être concaténés ont des champs de formulaire avec des noms de champs similaires, Aspose.PDF fournit la fonctionnalité de garder les champs dans le fichier PDF résultant uniques et vous pouvez également spécifier le suffixe pour rendre les noms de champs uniques. La propriété [KeepFieldsUnique](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) de [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) définie sur true rendra les noms de champs uniques lorsque les formulaires PDF sont concaténés. De plus, la propriété [UniqueSuffix](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) de PdfFileEditor peut être utilisée pour spécifier le format défini par l'utilisateur du suffixe qui est ajouté au nom de champ pour le rendre unique lorsque les formulaires sont concaténés. Cette chaîne doit contenir la sous-chaîne `%NUM%` qui sera remplacée par des chiffres dans le fichier résultant.
 
 Veuillez consulter l'extrait de code simple suivant pour réaliser cette fonctionnalité.
 
@@ -347,7 +347,7 @@ private static void InsertBlankPage()
 
 ### Ajouter des tampons de texte
 
-Pour créer une table des matières, nous devons ajouter des tampons de texte sur la première page en utilisant [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) et des objets [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp). La classe Stamp fournit la méthode `BindLogo(...)` pour ajouter [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) et nous pouvons également spécifier l'emplacement pour ajouter ces tampons de texte en utilisant la méthode `SetOrigin(..)`. Dans cet article, nous concaténons deux fichiers PDF, donc nous devons créer deux objets de tampon de texte pointant vers ces documents individuels.
+Pour créer une table des matières, nous devons ajouter des tampons de texte sur la première page en utilisant [PdfFileStamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffilestamp) et des objets [Stamp](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/stamp). La classe Stamp fournit la méthode `BindLogo(...)` pour ajouter [FormattedText](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/formattedtext) et nous pouvons également spécifier l'emplacement pour ajouter ces tampons de texte en utilisant la méthode `SetOrigin(..)`. Dans cet article, nous concaténons deux fichiers PDF, donc nous devons créer deux objets de tampon de texte pointant vers ces documents individuels.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -368,7 +368,7 @@ private static void AddTextStampForTableOfContents()
 
 ### Créer des liens locaux
 
-Maintenant, nous devons ajouter des liens vers les pages à l'intérieur du fichier concaténé. Pour accomplir cette exigence, nous pouvons utiliser la méthode `CreateLocalLink(..)` de la classe [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Dans l'extrait de code suivant, nous avons passé Transparent comme 4ème argument afin que le rectangle autour du lien ne soit pas visible.
+Maintenant, nous devons ajouter des liens vers les pages à l'intérieur du fichier concaténé. Pour accomplir cette exigence, nous pouvons utiliser la méthode `CreateLocalLink(..)` de la classe [PdfContentEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfcontenteditor). Dans l'extrait de code suivant, nous avons passé Transparent comme 4ème argument afin que le rectangle autour du lien ne soit pas visible.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -484,7 +484,7 @@ private static void CompleteCode()
 
 ## Concaténer des fichiers PDF dans un dossier
 
-La classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) dans le namespace Aspose.Pdf.Facades vous offre la capacité de concaténer le fichier PDF. Vous pouvez même lire tous les fichiers PDF dans un dossier particulier à l'exécution et les concaténer, sans même connaître les noms de fichiers. Il suffit de fournir le chemin du répertoire qui contient les documents PDF que vous souhaitez concaténer.
+La classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) dans le namespace Aspose.Pdf.Facades vous offre la capacité de concaténer le fichier PDF. Vous pouvez même lire tous les fichiers PDF dans un dossier particulier à l'exécution et les concaténer, sans même connaître les noms de fichiers. Il suffit de fournir le chemin du répertoire qui contient les documents PDF que vous souhaitez concaténer.
 
 Veuillez essayer d'utiliser l'extrait de code C# suivant pour réaliser cette fonctionnalité à partir d'Aspose.PDF :
 

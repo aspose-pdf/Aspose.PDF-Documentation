@@ -519,7 +519,7 @@ XSL-FO 是一种基于 XML 的标记语言，用于描述 XML 数据的格式，
 </xsl:stylesheet>
 ```
 
-Aspose.PDF 有一个特殊的 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) 类，允许应用 XSL-FO 转换。
+Aspose.PDF 有一个特殊的 [XslFoLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/xslfoloadoptions) 类，允许应用 XSL-FO 转换。
 以下代码片段展示了如何使用这个类与上述示例文件。
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -659,7 +659,7 @@ private static void ExampleXslfoToPdf()
 </xsl:stylesheet>
 ```
 
-要添加 XSL 参数，我们需要创建自己的 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) 并将其设置为 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) 中的属性。
+要添加 XSL 参数，我们需要创建自己的 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) 并将其设置为 [XslFoLoadOptions](https://reference.aspose.com/pdf/zh/net/aspose.pdf/xslfoloadoptions) 中的属性。
 以下代码片段展示了如何使用这个类与上述示例文件。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -825,7 +825,7 @@ public static MemoryStream TransformXsl(string inputXml, string xsltString)
 </Document>
 ```
 
-要生成 PDF 文档，我们将使用 [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index) 方法。
+要生成 PDF 文档，我们将使用 [BindXml](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/bindxml/index) 方法。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

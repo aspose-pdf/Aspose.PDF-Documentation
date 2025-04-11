@@ -75,11 +75,11 @@ draft: false
 }
 </script>
 
-كإعداد افتراضي، يتم إضافة المحتويات داخل ملفات PDF في تخطيط من أعلى اليسار إلى أسفل اليمين. بمجرد أن يتجاوز المحتوى هامش أسفل الصفحة، يحدث فاصل الصفحة. ومع ذلك، قد تواجه متطلبات لإدراج فاصل صفحة حسب الحاجة. تم إضافة طريقة تسمى AddPageBreak(...) في فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) لتحقيق هذا المتطلب.
+كإعداد افتراضي، يتم إضافة المحتويات داخل ملفات PDF في تخطيط من أعلى اليسار إلى أسفل اليمين. بمجرد أن يتجاوز المحتوى هامش أسفل الصفحة، يحدث فاصل الصفحة. ومع ذلك، قد تواجه متطلبات لإدراج فاصل صفحة حسب الحاجة. تم إضافة طريقة تسمى AddPageBreak(...) في فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) لتحقيق هذا المتطلب.
 
-1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
-1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
-1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
+1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
+1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
+1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
 
 - src هو مستند المصدر/مسار إلى المستند/تدفق مع مستند المصدر.
 - dest هو مستند الوجهة/مسار حيث سيتم حفظ المستند/تدفق حيث سيتم حفظ المستند.

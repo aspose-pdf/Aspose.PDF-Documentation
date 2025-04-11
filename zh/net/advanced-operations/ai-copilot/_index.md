@@ -80,7 +80,7 @@ lastmod: "2024-10-23"
 </script>
 
 {{% alert color="primary" %}}
-**Aspose.PDF AI Copilot API** 旨在允许用户使用来自不同提供商的 LLM 处理 PDF 文档。这个 [API](https://reference.aspose.com/pdf/net/aspose.pdf.ai/) 将帮助用户构建聊天机器人应用程序并将 PDF 解决方案与 LLM 集成。
+**Aspose.PDF AI Copilot API** 旨在允许用户使用来自不同提供商的 LLM 处理 PDF 文档。这个 [API](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/) 将帮助用户构建聊天机器人应用程序并将 PDF 解决方案与 LLM 集成。
 {{% /alert %}}
 
 ## 主要特性
@@ -93,7 +93,7 @@ lastmod: "2024-10-23"
 
 目前，以下 copilots 可用：
 
-[**OpenAI Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaisummarycopilot/) 允许用户从文档生成摘要。它提供了一种方便的方式，通过配置选项如模型、温度、令牌数量、模型指令、文档附件等来创建摘要。该 copilot 可以异步生成文本、文档格式的摘要，并将摘要保存为各种格式。提供的演示代码展示了如何创建 OpenAI 客户端、配置 copilot 选项以及使用 SummaryCopilot 生成和保存摘要。
+[**OpenAI Summary**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/openaisummarycopilot/) 允许用户从文档生成摘要。它提供了一种方便的方式，通过配置选项如模型、温度、令牌数量、模型指令、文档附件等来创建摘要。该 copilot 可以异步生成文本、文档格式的摘要，并将摘要保存为各种格式。提供的演示代码展示了如何创建 OpenAI 客户端、配置 copilot 选项以及使用 SummaryCopilot 生成和保存摘要。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -178,7 +178,7 @@ private static async Task GetSummary()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**OpenAI Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaichatcopilot/) 是一个设计用于与文档进行聊天交互的 AI copilot。它促进了对用户查询的响应生成和上下文管理。用户可以配置 copilot 选项，如模型、温度、令牌数量、模型指令、文档附件等。该 copilot 可以对单个或多个查询提供响应，保存响应为各种格式，保存和删除上下文。
+[**OpenAI Chat**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/openaichatcopilot/) 是一个设计用于与文档进行聊天交互的 AI copilot。它促进了对用户查询的响应生成和上下文管理。用户可以配置 copilot 选项，如模型、温度、令牌数量、模型指令、文档附件等。该 copilot 可以对单个或多个查询提供响应，保存响应为各种格式，保存和删除上下文。
 
 提供的代码演示了如何创建 OpenAI 客户端、配置 ChatCopilot 选项以及使用 ChatCopilot 与用户查询进行交互和管理上下文。
 
@@ -303,7 +303,7 @@ private static async Task ChatWithDocument()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**OpenAI Image Description**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaiimagedescriptioncopilot/) 是一个设计用于生成 PDF 文档内图像以及单独图像文件的图像描述的 AI copilot。用户可以配置 copilot 选项，如模型、温度、令牌数量、模型指令、文档附件等。该 copilot 提供了一次获取所有附加文档的图像描述的能力。
+[**OpenAI Image Description**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/openaiimagedescriptioncopilot/) 是一个设计用于生成 PDF 文档内图像以及单独图像文件的图像描述的 AI copilot。用户可以配置 copilot 选项，如模型、温度、令牌数量、模型指令、文档附件等。该 copilot 提供了一次获取所有附加文档的图像描述的能力。
 
 提供的代码片段演示了如何创建 OpenAI 客户端、配置 ImageDescriptionCopilot 选项以及使用 copilot 获取附加文档的图像描述。此外，还有一个扩展方法，允许将图像描述添加到附加文档中的图像，并在提供的目录中保存新文档。
 
@@ -394,7 +394,7 @@ private static async Task CreateImageDescriptions()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) 允许创建一个客户端以向 Llama 聊天完成 API 发送请求。
+[**Llama Chat**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/llamaclient/) 允许创建一个客户端以向 Llama 聊天完成 API 发送请求。
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -443,7 +443,7 @@ private static async Task ChatWithLlama()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) 允许客户端用于创建 Summary Copilot。
+[**Llama Summary**](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ai/llamaclient/) 允许客户端用于创建 Summary Copilot。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

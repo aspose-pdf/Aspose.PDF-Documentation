@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1368",
+    "wordcount": "1446",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-html/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
@@ -82,10 +82,7 @@ sitemap:
 
 Artikel ini menjelaskan cara **mengonversi PDF ke HTML menggunakan C#**. Ini mencakup topik-topik berikut.
 
-_Format_: **HTML**
-- [C# PDF ke HTML](#csharp-pdf-to-html)
-- [C# Mengonversi PDF ke HTML](#csharp-pdf-to-html)
-- [C# Cara mengonversi file PDF ke HTML](#csharp-pdf-to-html)
+- [Mengonversi PDF ke HTML](#csharp-pdf-to-html)
 
 Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -101,23 +98,23 @@ Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 - Mengompresi Gambar SVG Selama Konversi.
 - Menyimpan gambar sebagai latar belakang PNG.
 - Menentukan Folder Gambar.
-- Membuat File Berikutnya dengan Konten Body Saja.
-- Rendering Teks Transparan.
+- Membuat File Selanjutnya dengan Konten Body Saja.
+- Rendering teks transparan.
 - Rendering lapisan dokumen PDF.
 
 {{% alert color="success" %}}
 **Cobalah mengonversi PDF ke HTML secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF to HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke HTML dengan Aplikasi Gratis](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
-Aspose.PDF for .NET menyediakan kode dua baris untuk mengubah file PDF sumber menjadi HTML. Enumerasi [`SaveFormat`](https://reference.aspose.com/pdf/net/aspose.pdf/saveformat) berisi nilai Html yang memungkinkan Anda menyimpan file sumber ke HTML. Cuplikan kode berikut menunjukkan proses mengonversi file PDF menjadi HTML.
+Aspose.PDF for .NET menyediakan kode dua baris untuk mengubah file PDF sumber menjadi HTML. Enumerasi [`SaveFormat`](https://reference.aspose.com/pdf/id/net/aspose.pdf/saveformat) berisi nilai Html yang memungkinkan Anda menyimpan file sumber ke HTML. Cuplikan kode berikut menunjukkan proses mengonversi file PDF menjadi HTML.
 
-<a name="csharp-pdf-to-html"><strong>Langkah: Mengonversi PDF ke HTML di C#</strong></a>
+<a name="csharp-pdf-to-html" id="cshart-pdf-to-html"><strong>Mengonversi PDF ke HTML</strong></a>
 
-1. Buat instance objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan dokumen PDF sumber.
+1. Buat instance objek [Document](https://reference.aspose.com/pdf/id/net/aspose.pdf/document/) dengan dokumen PDF sumber.
 2. Simpan ke format **SaveFormat.Html** dengan memanggil metode **Document.Save()**.
 
 ```csharp
@@ -165,7 +162,7 @@ private static void ConvertPDFtoMultiPageHTML()
 
 ### Menentukan Folder untuk Menyimpan File SVG
 
-Selama konversi PDF ke HTML, dimungkinkan untuk menentukan folder tempat gambar SVG harus disimpan. Gunakan kelas [`HtmlSaveOption`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions) properti [`SpecialFolderForSvgImages`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) untuk menentukan direktori gambar SVG khusus. Properti ini mendapatkan atau mengatur jalur ke direktori tempat gambar SVG harus disimpan saat ditemukan selama konversi. Jika parameter kosong atau null, maka file SVG apa pun disimpan bersama dengan file gambar lainnya.
+Selama konversi PDF ke HTML, dimungkinkan untuk menentukan folder tempat gambar SVG harus disimpan. Gunakan kelas [`HtmlSaveOption`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlsaveoptions) [`SpecialFolderForSvgImages property`](https://reference.aspose.com/pdf/id/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) untuk menentukan direktori gambar SVG khusus. Properti ini mendapatkan atau mengatur jalur ke direktori tempat gambar SVG harus disimpan saat ditemukan selama konversi. Jika parameter kosong atau null, maka file SVG apa pun disimpan bersama dengan file gambar lainnya.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -268,9 +265,9 @@ private static void SavePDFtoHTMLWithSeparateImageFolder()
 }
 ```
 
-### Membuat File Berikutnya dengan Konten Body Saja
+### Membuat File Selanjutnya dengan Konten Body Saja
 
-Baru-baru ini, kami diminta untuk memperkenalkan fitur di mana file PDF diubah menjadi HTML dan pengguna dapat mendapatkan hanya konten dari tag `<body>` untuk setiap halaman. Ini akan menghasilkan satu file dengan CSS, detail `<html>`, `<head>` dan semua halaman di file lain hanya dengan konten `<body>`.
+Baru-baru ini, kami diminta untuk memperkenalkan fitur di mana file PDF diubah menjadi HTML dan pengguna hanya dapat mendapatkan konten dari tag `<body>` untuk setiap halaman. Ini akan menghasilkan satu file dengan detail CSS, `<html>`, `<head>` dan semua halaman di file lain hanya dengan konten `<body>`.
 
 Untuk memenuhi persyaratan ini, properti baru, HtmlMarkupGenerationMode, diperkenalkan ke kelas HtmlSaveOptions.
 
@@ -303,9 +300,9 @@ private static void ConvertPDFToHTMLWithBodyContent()
 }
 ```
 
-### Rendering Teks Transparan
+### Rendering teks transparan
 
-Jika file PDF sumber/input mengandung teks transparan yang dibayangi oleh gambar latar depan, maka mungkin ada masalah rendering teks. Jadi untuk mengatasi skenario seperti itu, properti SaveShadowedTextsAsTransparentTexts dan SaveTransparentTexts dapat digunakan.
+Jika file PDF sumber/input berisi teks transparan yang terhalang oleh gambar latar depan, maka mungkin ada masalah rendering teks. Jadi untuk mengatasi skenario semacam itu, properti SaveShadowedTextsAsTransparentTexts dan SaveTransparentTexts dapat digunakan.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -357,17 +354,3 @@ private static void ConvertPDFToHTMLWithLayersRendering()
     }
 }
 ```
-
-## Lihat Juga 
-
-Artikel ini juga mencakup topik-topik berikut. Kode sama seperti di atas.
-
-_Format_: **HTML**
-- [C# Kode PDF ke HTML](#csharp-pdf-to-html)
-- [C# API PDF ke HTML](#csharp-pdf-to-html)
-- [C# PDF ke HTML Secara Programatis](#csharp-pdf-to-html)
-- [C# Pustaka PDF ke HTML](#csharp-pdf-to-html)
-- [C# Simpan PDF sebagai HTML](#csharp-pdf-to-html)
-- [C# Hasilkan HTML dari PDF](#csharp-pdf-to-html)
-- [C# Buat HTML dari PDF](#csharp-pdf-to-html)
-- [C# Pengonversi PDF ke HTML](#csharp-pdf-to-html)

@@ -81,7 +81,7 @@ sitemap:
 
 Когда эта опция выбрана, ваши аннотации будут включены в экспортируемый PDF как аннотации стандартов PDF.
 
-Проверьте, как используется метод [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) в следующем фрагменте кода.
+Проверьте, как используется метод [flatteningAnnotations](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) в следующем фрагменте кода.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

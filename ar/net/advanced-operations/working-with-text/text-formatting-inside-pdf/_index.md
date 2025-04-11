@@ -82,7 +82,7 @@ sitemap:
 
 ## كيفية إضافة مسافة بادئة إلى PDF
 
-تقدم Aspose.PDF for .NET خاصية SubsequentLinesIndent في فئة [TextFormattingOptions](https://reference.aspose.com/pdf/net/aspose.pdf.text/textformattingoptions). والتي يمكن استخدامها لتحديد المسافة البادئة في سيناريوهات توليد PDF مع TextFragment ومجموعة الفقرات.
+تقدم Aspose.PDF for .NET خاصية SubsequentLinesIndent في فئة [TextFormattingOptions](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textformattingoptions). والتي يمكن استخدامها لتحديد المسافة البادئة في سيناريوهات توليد PDF مع TextFragment ومجموعة الفقرات.
 
 يرجى استخدام مقتطف الشيفرة التالي لاستخدام الخاصية:
 
@@ -203,7 +203,7 @@ private static void AddUnderlineText()
 
 ## كيفية إضافة حدود حول النص المضاف
 
-لديك السيطرة على الشكل والمظهر للنص الذي تضيفه. المثال أدناه يوضح كيفية إضافة حدود حول قطعة من النص التي أضفتها عن طريق رسم مستطيل حولها. تعرف على المزيد حول فئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) .
+لديك السيطرة على الشكل والمظهر للنص الذي تضيفه. المثال أدناه يوضح كيفية إضافة حدود حول قطعة من النص التي أضفتها عن طريق رسم مستطيل حولها. تعرف على المزيد حول فئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor) .
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,17 +83,17 @@ draft: false
 
 ## الشرح
 
-تختلف فئة [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) عن فئة [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) وفئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). أولاً، نحتاج إلى فهم الفرق، ثم سنكون قادرين على فهم فئة PdfPageEditor بشكل أفضل. تتيح لك فئة PdfFileEditor التلاعب بجميع الصفحات في ملف مثل إضافة الصفحات أو حذفها أو دمجها، بينما تساعدك فئة PdfContentEditor في التلاعب بمحتويات الصفحة مثل النص والأشياء الأخرى. بينما تعمل فئة PdfPageEditor فقط مع الصفحة الفردية نفسها مثل التدوير والتكبير والمحاذاة وما إلى ذلك.
+تختلف فئة [PdfPageEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor) عن فئة [PdfFileEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileeditor) وفئة [PdfContentEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfcontenteditor). أولاً، نحتاج إلى فهم الفرق، ثم سنكون قادرين على فهم فئة PdfPageEditor بشكل أفضل. تتيح لك فئة PdfFileEditor التلاعب بجميع الصفحات في ملف مثل إضافة الصفحات أو حذفها أو دمجها، بينما تساعدك فئة PdfContentEditor في التلاعب بمحتويات الصفحة مثل النص والأشياء الأخرى. بينما تعمل فئة PdfPageEditor فقط مع الصفحة الفردية نفسها مثل التدوير والتكبير والمحاذاة وما إلى ذلك.
 
 يمكننا تقسيم الميزات التي توفرها هذه الفئة إلى ثلاث فئات رئيسية وهي: الانتقال، والمحاذاة، والعرض. سنناقش هذه الفئات أدناه:
 
 ### الانتقال
 
-تحتوي هذه الفئة على خاصيتين تتعلقان بالانتقال وهما [TransitionType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) و [TransitionDuration](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). تحدد TransitionType نمط الانتقال الذي سيتم استخدامه عند الانتقال إلى هذه الصفحة من صفحة أخرى أثناء العرض. تحدد TransitionDuration مدة عرض الصفحات.
+تحتوي هذه الفئة على خاصيتين تتعلقان بالانتقال وهما [TransitionType](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor/properties/transitiontype) و [TransitionDuration](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor/properties/transitionduration). تحدد TransitionType نمط الانتقال الذي سيتم استخدامه عند الانتقال إلى هذه الصفحة من صفحة أخرى أثناء العرض. تحدد TransitionDuration مدة عرض الصفحات.
 
 ### المحاذاة
 
-تدعم فئة PdfPageEditor كل من المحاذاة الأفقية والعمودية. توفر خاصيتين لخدمة هذا الغرض وهما [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) و [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). تُستخدم خاصية Alignment لمحاذاة المحتويات أفقيًا. تأخذ خاصية Alignment قيمة من AlignmentType، والتي تحتوي على ثلاث خيارات وهي: Center و Left و Right. تأخذ خاصية VerticalAlignment قيمة من VerticalAlignmentType، والتي تحتوي على ثلاث خيارات وهي: Bottom و Center و Top.
+تدعم فئة PdfPageEditor كل من المحاذاة الأفقية والعمودية. توفر خاصيتين لخدمة هذا الغرض وهما [Alignment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor/properties/alignment) و [VerticalAlignment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor/properties/VerticalAlignment). تُستخدم خاصية Alignment لمحاذاة المحتويات أفقيًا. تأخذ خاصية Alignment قيمة من AlignmentType، والتي تحتوي على ثلاث خيارات وهي: Center و Left و Right. تأخذ خاصية VerticalAlignment قيمة من VerticalAlignmentType، والتي تحتوي على ثلاث خيارات وهي: Bottom و Center و Top.
 
 ### العرض
 
@@ -164,5 +164,5 @@ private static void EditPdfPages()
 ## الخاتمة
 
 {{% alert color="primary" %}}
-في هذه المقالة، نظرنا عن كثب إلى فئة [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor). لقد أوضحنا الخصائص والأساليب التي توفرها هذه الفئة. يجعل التلاعب بالصفحات الفردية في الفئة مهمة سهلة وبسيطة للغاية.
+في هذه المقالة، نظرنا عن كثب إلى فئة [PdfPageEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor). لقد أوضحنا الخصائص والأساليب التي توفرها هذه الفئة. يجعل التلاعب بالصفحات الفردية في الفئة مهمة سهلة وبسيطة للغاية.
 {{% /alert %}}

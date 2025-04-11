@@ -83,7 +83,7 @@ sitemap:
 
 ## Добавление объекта кривой
 
-Графический [объект кривой](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/curve) представляет собой связное объединение проективных линий, каждая из которых встречается с тремя другими в обычных двойных точках.
+Графический [объект кривой](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/curve) представляет собой связное объединение проективных линий, каждая из которых встречается с тремя другими в обычных двойных точках.
 
 Aspose.PDF for .NET показывает, как использовать кривые Безье в ваших графиках.
 Кривые Безье широко используются в компьютерной графике для моделирования плавных кривых. Кривая полностью содержится в выпуклой оболочке своих контрольных точек, точки могут быть графически отображены и использованы для интуитивного управления кривой.
@@ -93,10 +93,10 @@ Aspose.PDF for .NET показывает, как использовать кри
 
 Выполните следующие действия:
 
-1. Создайте экземпляр [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Создайте [объект рисования](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) с определёнными размерами.
-1. Установите [границу](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) для объекта рисования.
-1. Добавьте [графический](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) объект в коллекцию абзацев страницы.
+1. Создайте экземпляр [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Создайте [объект рисования](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing) с определёнными размерами.
+1. Установите [границу](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/graph/properties/border) для объекта рисования.
+1. Добавьте [графический](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/graph) объект в коллекцию абзацев страницы.
 1. Сохраните наш PDF-файл.
 
 ```csharp

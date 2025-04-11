@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Pour obtenir les métadonnées XMP d'un fichier PDF, vous devez créer un objet [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) et lier le fichier PDF en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). Vous pouvez passer des propriétés spécifiques de métadonnées XMP à l'objet [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) pour obtenir leurs valeurs. Le code suivant vous montre comment obtenir les métadonnées XMP d'un fichier PDF.
+Pour obtenir les métadonnées XMP d'un fichier PDF, vous devez créer un objet [PdfXmpMetadata](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfxmpmetadata) et lier le fichier PDF en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/facade/methods/bindpdf/index). Vous pouvez passer des propriétés spécifiques de métadonnées XMP à l'objet [PdfXmpMetadata](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfxmpmetadata) pour obtenir leurs valeurs. Le code suivant vous montre comment obtenir les métadonnées XMP d'un fichier PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

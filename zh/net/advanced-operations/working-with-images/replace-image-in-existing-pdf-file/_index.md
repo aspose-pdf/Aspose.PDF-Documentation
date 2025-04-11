@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
-图像集合的 [Replace](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) 方法允许您在现有 PDF 文件中替换图像。
+图像集合的 [Replace](https://reference.aspose.com/pdf/zh/net/aspose.pdf/ximagecollection/methods/replace/index) 方法允许您在现有 PDF 文件中替换图像。
 
 图像集合可以在页面的资源集合中找到。要替换图像：
 

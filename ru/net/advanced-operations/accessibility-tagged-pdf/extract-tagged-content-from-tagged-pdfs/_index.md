@@ -85,7 +85,7 @@ sitemap:
 
 ## Получение содержимого помеченного PDF
 
-Чтобы получить содержимое PDF-документа с помеченным текстом, Aspose.PDF предлагает свойство [TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Чтобы получить содержимое PDF-документа с помеченным текстом, Aspose.PDF предлагает свойство [TaggedContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/taggedcontent) класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
 
 Следующий фрагмент кода показывает, как получить содержимое PDF-документа с помеченным текстом:
 
@@ -144,7 +144,7 @@ private static void GetTaggedContent()
 
 ## Получение корневой структуры
 
-Чтобы получить корневую структуру помеченного PDF-документа, Aspose.PDF предлагает свойство [StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) и [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Следующий фрагмент кода показывает, как получить корневую структуру помеченного PDF-документа:
+Чтобы получить корневую структуру помеченного PDF-документа, Aspose.PDF предлагает свойство [StructTreeRootElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent) и [StructureElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structureelement). Следующий фрагмент кода показывает, как получить корневую структуру помеченного PDF-документа:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -197,7 +197,7 @@ private static void GetRootStructure()
 
 ## Доступ к дочерним элементам
 
-Чтобы получить доступ к дочерним элементам помеченного PDF-документа, Aspose.PDF предлагает класс [ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist). Следующий фрагмент кода показывает, как получить доступ к дочерним элементам помеченного PDF-документа:
+Чтобы получить доступ к дочерним элементам помеченного PDF-документа, Aspose.PDF предлагает класс [ElementList](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/elementlist). Следующий фрагмент кода показывает, как получить доступ к дочерним элементам помеченного PDF-документа:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -316,7 +316,7 @@ private static void AccessChildElements()
 
 ## Пометка изображений в существующем PDF
 
-Чтобы пометить изображения в существующем PDF-документе, Aspose.PDF предлагает метод [FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) класса [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Вы можете добавить альтернативный текст для фигур, используя свойство [AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) класса [FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement).
+Чтобы пометить изображения в существующем PDF-документе, Aspose.PDF предлагает метод [FindElements](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) класса [StructureElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structureelement). Вы можете добавить альтернативный текст для фигур, используя свойство [AlternativeText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) класса [FigureElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/figureelement).
 
 Следующий фрагмент кода показывает, как пометить изображения в существующем PDF-документе:
 

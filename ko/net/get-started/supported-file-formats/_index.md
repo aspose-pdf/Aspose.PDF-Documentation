@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /ko/net/supported-file-formats/
-description: 이 페이지는 Aspose.PDF for .NET이 로드하고 저장할 수 있는 파일 형식을 보여줍니다.
+description: 이 페이지는 Aspose.PDF for .NET가 로드하고 저장할 수 있는 파일 형식을 보여줍니다.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Supported File Formats",
     "alternativeHeadline": "Aspose.PDF for .NET Supports Extensive File Formats in C#",
-    "abstract": "Aspose.PDF for .NET은 이제 로드 및 저장을 위한 광범위한 파일 형식을 지원하여 개발자에게 다재다능함을 향상시킵니다. 이 기능에는 PDF, EPUB, HTML 및 SVG와 같은 인기 있는 형식이 포함되어 다양한 문서 처리 요구를 충족합니다. 애플리케이션 내에서 PDF 조작을 간소화하는 포괄적인 파일 형식 지원을 발견하십시오.",
+    "abstract": "Aspose.PDF for .NET는 이제 로드 및 저장을 위한 광범위한 파일 형식을 지원하여 개발자의 다재다능성을 향상시킵니다. 이 기능에는 PDF, EPUB, HTML 및 SVG와 같은 인기 있는 형식이 포함되어 있으며, 다양한 문서 처리 요구를 충족합니다. 애플리케이션 내에서 PDF 조작을 간소화하는 포괄적인 파일 형식 지원을 발견하십시오.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "566",
+    "wordcount": "523",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,12 +73,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/supported-file-formats/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하십시오."
 }
 </script>
 
-다음 표는 Aspose.PDF for .NET이 로드하고 저장할 수 있는 파일 형식을 나타냅니다.
+다음 표는 Aspose.PDF for .NET가 로드하고 저장할 수 있는 파일 형식을 나타냅니다.
 
 |**형식**|**설명**|**로드**|**저장**|**비고**|
 | :- | :- | :- | :- | :- |
@@ -98,6 +98,7 @@ sitemap:
 |[OFD](https://en.wikipedia.org/wiki/OFD)|OFD 형식은 "Open Fixed-layout Document"를 의미하며, 전자 파일 저장을 위한 중국의 국가 표준으로 설정되어 있으며, 인기 있는 PDF 형식의 대안으로 사용됩니다.|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Microsoft Excel 스프레드시트 형식으로 문서를 저장합니다.| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Microsoft Excel 2007 형식으로 문서를 저장합니다.| |{{< emoticons/tick >}}| |
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|매크로를 지원하는 스프레드시트 파일의 일종인 XLSM 형식의 문서| |{{< emoticons/tick >}}| |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Microsoft PowerPoint 프레젠테이션 형식으로 문서를 저장합니다.| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Microsoft Word 형식으로 문서를 저장합니다.| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Microsoft Word 형식으로 문서를 저장합니다.| |{{< emoticons/tick >}}| |

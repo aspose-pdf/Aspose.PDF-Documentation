@@ -85,14 +85,14 @@ sitemap:
 
 通过向文档添加应用程序链接，可以从文档链接到应用程序。这在您希望读者在教程的特定点采取某些操作时非常有用，或者创建功能丰富的文档。要创建应用程序链接：
 
-1. [创建文档](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。
-1. 获取您想要添加链接的 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)。
-1. 使用 Page 和 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) 对象创建 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 对象。
-1. 使用 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 对象设置链接属性。
-1. 同样，设置 [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) 对象的 Action 属性。
-1. 创建 [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) 对象时，指定您要启动的应用程序。
-1. 将链接添加到 Page 对象的 [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations) 属性。
-1. 最后，使用 Document 对象的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF。
+1. [创建文档](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
+1. 获取您想要添加链接的 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)。
+1. 使用 Page 和 [Rectangle](https://reference.aspose.com/pdf/zh/net/aspose.pdf/rectangle) 对象创建 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 对象。
+1. 使用 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 对象设置链接属性。
+1. 同样，设置 [LaunchAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/launchaction) 对象的 Action 属性。
+1. 创建 [LaunchAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/launchaction) 对象时，指定您要启动的应用程序。
+1. 将链接添加到 Page 对象的 [Annotations](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page/properties/annotations) 属性。
+1. 最后，使用 Document 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF。
 
 以下代码片段显示如何在 PDF 文件中创建应用程序链接。
 
@@ -151,14 +151,14 @@ private static void CreateLinkAnnotation()
 
 Aspose.PDF for .NET 允许您添加指向外部 PDF 文件的链接，以便您可以将多个文档链接在一起。要创建 PDF 文档链接：
 
-1. 首先，创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象。
-1. 然后，获取您想要添加链接的特定 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)。
-1. 使用 Page 和 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) 对象创建 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 对象。
-1. 使用 [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 对象设置链接属性。
-1. 将 Action 属性设置为 [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction) 对象。
+1. 首先，创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象。
+1. 然后，获取您想要添加链接的特定 [Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page)。
+1. 使用 Page 和 [Rectangle](https://reference.aspose.com/pdf/zh/net/aspose.pdf/rectangle) 对象创建 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 对象。
+1. 使用 [LinkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/linkannotation) 对象设置链接属性。
+1. 将 Action 属性设置为 [GoToRemoteAction](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/gotoremoteaction) 对象。
 1. 创建 GoToRemoteAction 对象时，指定应启动的 PDF 文件以及应打开的页码。
 1. 将链接添加到 Page 对象的 Annotations 集合。
-1. 使用 Document 对象的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF。
+1. 使用 Document 对象的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF。
 
 以下代码片段显示如何在 PDF 文件中创建 PDF 文档链接。
 

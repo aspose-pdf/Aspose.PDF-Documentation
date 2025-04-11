@@ -77,7 +77,7 @@ draft: false
 
 ## إضافة حقل نموذج في ملف PDF موجود
 
-لإضافة حقل نموذج في ملف PDF موجود، تحتاج إلى استخدام [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) من فئة [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor). تتطلب هذه الطريقة منك تحديد نوع الحقل الذي تريد إضافته مع الاسم وموقع الحقل. تحتاج إلى إنشاء كائن من فئة [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)، واستخدام [AddField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfield/index) لإضافة حقل جديد في PDF، كما يمكنك تحديد حد لعدد الأحرف في حقل الخاص بك باستخدام [SetFieldLimit](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) وأخيرًا استخدام [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) لحفظ ملف PDF المحدث. يوضح لك مقتطف الكود التالي كيفية إضافة حقل نموذج في ملف PDF موجود.
+لإضافة حقل نموذج في ملف PDF موجود، تحتاج إلى استخدام [AddField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/addfield/index) من فئة [FormEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor). تتطلب هذه الطريقة منك تحديد نوع الحقل الذي تريد إضافته مع الاسم وموقع الحقل. تحتاج إلى إنشاء كائن من فئة [FormEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor)، واستخدام [AddField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/addfield/index) لإضافة حقل جديد في PDF، كما يمكنك تحديد حد لعدد الأحرف في حقل الخاص بك باستخدام [SetFieldLimit](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/setfieldlimit) وأخيرًا استخدام [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/save/index) لحفظ ملف PDF المحدث. يوضح لك مقتطف الكود التالي كيفية إضافة حقل نموذج في ملف PDF موجود.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -107,7 +107,7 @@ private static void AddField()
 
 ## إضافة عنوان URL لزر الإرسال في ملف PDF موجود
 
-تتيح لك طريقة [AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) تعيين عنوان URL لزر الإرسال في ملف PDF. هذا هو عنوان URL الذي يتم نشر البيانات عليه عند النقر على زر الإرسال. في كود المثال الخاص بنا، نحدد عنوان URL، واسم حقلنا، ورقم الصفحة التي نريد الإضافة إليها، وإحداثيات وضع الزر. تتطلب طريقة [AddSubmitBtn](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) اسم حقل زر الإرسال وعنوان URL. يتم توفير هذه الطريقة من قبل فئة [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). يوضح لك مقتطف الكود التالي كيفية تعيين عنوان URL لزر الإرسال.
+تتيح لك طريقة [AddSubmitBtn](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) تعيين عنوان URL لزر الإرسال في ملف PDF. هذا هو عنوان URL الذي يتم نشر البيانات عليه عند النقر على زر الإرسال. في كود المثال الخاص بنا، نحدد عنوان URL، واسم حقلنا، ورقم الصفحة التي نريد الإضافة إليها، وإحداثيات وضع الزر. تتطلب طريقة [AddSubmitBtn](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/addsubmitbtn) اسم حقل زر الإرسال وعنوان URL. يتم توفير هذه الطريقة من قبل فئة [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). يوضح لك مقتطف الكود التالي كيفية تعيين عنوان URL لزر الإرسال.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -135,7 +135,7 @@ private static void AddField()
 
 ## إضافة JavaScript لزر الدفع
 
-تتيح لك طريقة [AddFieldScript](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addfieldscript) إضافة JavaScript إلى زر دفع في ملف PDF. تتطلب هذه الطريقة اسم زر الدفع وJavaScript. يتم توفير هذه الطريقة من قبل فئة [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). يوضح لك مقتطف الكود التالي كيفية تعيين JavaScript لزر الدفع.
+تتيح لك طريقة [AddFieldScript](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/addfieldscript) إضافة JavaScript إلى زر دفع في ملف PDF. تتطلب هذه الطريقة اسم زر الدفع وJavaScript. يتم توفير هذه الطريقة من قبل فئة [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor). يوضح لك مقتطف الكود التالي كيفية تعيين JavaScript لزر الدفع.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

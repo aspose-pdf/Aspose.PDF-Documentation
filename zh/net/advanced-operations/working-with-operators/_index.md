@@ -87,7 +87,7 @@ sitemap:
 
 ### 实现细节
 
-本主题解释了如何与 Aspose.PDF 一起使用操作符。所选示例将图像添加到 PDF 文件中以说明该概念。要在 PDF 文件中添加图像，需要不同的操作符。此示例使用 [GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28)、[ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10)、[Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14) 和 [GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26)。
+本主题解释了如何与 Aspose.PDF 一起使用操作符。所选示例将图像添加到 PDF 文件中以说明该概念。要在 PDF 文件中添加图像，需要不同的操作符。此示例使用 [GSave](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ioperatorselector/visit/methods/28)、[ConcatenateMatrix](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ioperatorselector/visit/methods/10)、[Do](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ioperatorselector/visit/methods/14) 和 [GRestore](https://reference.aspose.com/pdf/zh/net/aspose.pdf.ioperatorselector/visit/methods/26)。
 
 - **GSave** 操作符保存 PDF 的当前图形状态。
 - **ConcatenateMatrix**（连接矩阵）操作符用于定义图像在 PDF 页面上的放置方式。
@@ -96,7 +96,7 @@ sitemap:
 
 要在 PDF 文件中添加图像：
 
-1. 创建一个 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象并打开输入 PDF 文档。
+1. 创建一个 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 对象并打开输入 PDF 文档。
 1. 获取要添加图像的特定页面。
 1. 将图像添加到页面的资源集合中。
 1. 使用操作符将图像放置在页面上：
@@ -235,7 +235,7 @@ private static void DrawXFormOnPage()
 
 ## 使用操作符类移除图形对象
 
-操作符类为 PDF 操作提供了很好的功能。当 PDF 文件包含无法使用 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的 [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) 方法移除的图形时，可以使用操作符类来移除它们。
+操作符类为 PDF 操作提供了很好的功能。当 PDF 文件包含无法使用 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的 [DeleteImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) 方法移除的图形时，可以使用操作符类来移除它们。
 
 以下代码片段演示了如何移除图形。请注意，如果 PDF 文件包含图形的文本标签，它们可能会在 PDF 文件中保留，因此请搜索图形操作符以找到删除此类图像的替代方法。
 

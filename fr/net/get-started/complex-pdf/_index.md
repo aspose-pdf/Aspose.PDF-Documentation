@@ -82,15 +82,15 @@ L'exemple [Hello, World](/pdf/fr/net/hello-world-example/) a montré des étapes
 
 Si nous créons un document à partir de zéro, nous devons suivre certaines étapes :
 
-1. Instancier un objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). À cette étape, nous créerons un document PDF vide avec quelques métadonnées mais sans pages.
-1. Ajouter une [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) à l'objet document. Ainsi, notre document aura maintenant une page.
-1. Ajouter une [Image](https://reference.aspose.com/pdf/net/aspose.pdf/image/methods/index) à la Page.
-1. Créer un [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) pour l'en-tête. Pour l'en-tête, nous utiliserons la police Arial avec une taille de police de 24pt et un alignement centré.
-1. Ajouter l'en-tête aux [Paragraphes](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la page.
-1. Créer un [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) pour la description. Pour la description, nous utiliserons la police Arial avec une taille de police de 24pt et un alignement centré.
+1. Instancier un objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document). À cette étape, nous créerons un document PDF vide avec quelques métadonnées mais sans pages.
+1. Ajouter une [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) à l'objet document. Ainsi, notre document aura maintenant une page.
+1. Ajouter une [Image](https://reference.aspose.com/pdf/fr/net/aspose.pdf/image/methods/index) à la Page.
+1. Créer un [TextFragment](https://reference.aspose.com/pdf/fr/net/aspose.pdf.text/textfragment) pour l'en-tête. Pour l'en-tête, nous utiliserons la police Arial avec une taille de police de 24pt et un alignement centré.
+1. Ajouter l'en-tête aux [Paragraphes](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page/properties/paragraphs) de la page.
+1. Créer un [TextFragment](https://reference.aspose.com/pdf/fr/net/aspose.pdf.text/textfragment) pour la description. Pour la description, nous utiliserons la police Arial avec une taille de police de 24pt et un alignement centré.
 1. Ajouter (description) aux Paragraphes de la page.
 1. Créer un tableau, ajouter des propriétés au tableau.
-1. Ajouter (tableau) aux [Paragraphes](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la page.
+1. Ajouter (tableau) aux [Paragraphes](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page/properties/paragraphs) de la page.
 1. Enregistrer un document "Complex.pdf".
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).

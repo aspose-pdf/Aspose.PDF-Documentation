@@ -86,13 +86,13 @@ sitemap:
 
 要移动页面，我们应该：
 
-1. 创建一个包含源 PDF 文件的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类对象。
-1. 创建一个包含目标 PDF 文件的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类对象。
-1. 从 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合中获取页面。
-1. [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) 页面到目标文档。
-1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存输出 PDF。
-1. [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) 源文档中的页面。
-1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存源 PDF。
+1. 创建一个包含源 PDF 文件的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象。
+1. 创建一个包含目标 PDF 文件的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象。
+1. 从 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 集合中获取页面。
+1. [Add](https://reference.aspose.com/pdf/zh/net/aspose.pdf.pagecollection/add/methods/1) 页面到目标文档。
+1. 使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存输出 PDF。
+1. [Delete](https://reference.aspose.com/pdf/zh/net/aspose.pdf.pagecollection/delete/methods/1) 源文档中的页面。
+1. 使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存源 PDF。
 
 以下代码片段演示了如何移动一个页面。
 
@@ -122,15 +122,15 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
 
 ## 从一个 PDF 文档移动一组页面到另一个 PDF 文档
 
-1. 创建一个包含源 PDF 文件的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类对象。
-1. 创建一个包含目标 PDF 文件的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类对象。
+1. 创建一个包含源 PDF 文件的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象。
+1. 创建一个包含目标 PDF 文件的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象。
 1. 定义一个包含要移动的页面编号的数组。
 1. 遍历数组：
-    1. 从 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合中获取页面。
-    1. [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) 页面到目标文档。
-1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存输出 PDF。
-1. 使用数组在源文档中 [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) 页面。
-1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存源 PDF。
+    1. 从 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 集合中获取页面。
+    1. [Add](https://reference.aspose.com/pdf/zh/net/aspose.pdf.pagecollection/add/methods/1) 页面到目标文档。
+1. 使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存输出 PDF。
+1. 使用数组在源文档中 [Delete](https://reference.aspose.com/pdf/zh/net/aspose.pdf.pagecollection/delete/methods/2) 页面。
+1. 使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存源 PDF。
 
 以下代码片段演示了如何将一组页面从一个 PDF 文档移动到另一个 PDF 文档。
 
@@ -164,11 +164,11 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 
 ## 在当前 PDF 文档中将页面移动到新位置
 
-1. 创建一个包含源 PDF 文件的 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类对象。
-1. 从 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合中获取页面。
-1. [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) 页面到新位置（例如到末尾）。
-1. [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) 先前位置的页面。
-1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存输出 PDF。
+1. 创建一个包含源 PDF 文件的 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类对象。
+1. 从 [PageCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/pagecollection) 集合中获取页面。
+1. [Add](https://reference.aspose.com/pdf/zh/net/aspose.pdf.pagecollection/add/methods/1) 页面到新位置（例如到末尾）。
+1. [Delete](https://reference.aspose.com/pdf/zh/net/aspose.pdf.pagecollection/delete/methods/1) 先前位置的页面。
+1. 使用 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf.document/save/methods/4) 方法保存输出 PDF。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -91,9 +91,9 @@ lastmod: "2021-06-05"
 
 ## Объединение PDF файлов с использованием путей к файлам
 
-[PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) — это класс в [пространстве имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades), который позволяет вам объединять несколько PDF файлов. Вы можете объединять файлы не только с использованием FileStreams, но и с использованием MemoryStreams. В этой статье будет объяснен процесс объединения файлов с использованием MemoryStreams, а затем показан с помощью фрагмента кода.
+[PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) — это класс в [пространстве имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades), который позволяет вам объединять несколько PDF файлов. Вы можете объединять файлы не только с использованием FileStreams, но и с использованием MemoryStreams. В этой статье будет объяснен процесс объединения файлов с использованием MemoryStreams, а затем показан с помощью фрагмента кода.
 
-Метод [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) может быть использован для объединения двух PDF файлов. Метод [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) позволяет передавать три параметра: первый входной PDF, второй входной PDF и выходной PDF. Итоговый выходной PDF содержит оба входных PDF файла.
+Метод [Concatenate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) может быть использован для объединения двух PDF файлов. Метод [Concatenate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) позволяет передавать три параметра: первый входной PDF, второй входной PDF и выходной PDF. Итоговый выходной PDF содержит оба входных PDF файла.
 
 Следующий фрагмент кода на C# показывает, как объединить PDF файлы с использованием путей к файлам.
 
@@ -129,7 +129,7 @@ private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 
 ## Объединение нескольких PDF файлов с использованием MemoryStreams
 
-Метод [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) принимает исходные PDF файлы и целевой PDF файл в качестве параметров. Эти параметры могут быть либо путями к PDF файлам на диске, либо они могут быть MemoryStreams. Теперь, для этого примера, мы сначала создадим два файловых потока для чтения PDF файлов с диска. Затем мы преобразуем эти файлы в массивы байтов. Эти массивы байтов PDF файлов будут преобразованы в MemoryStreams. Как только мы получим MemoryStreams из PDF файлов, мы сможем передать их в метод объединения и объединить в один выходной файл.
+Метод [Concatenate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) принимает исходные PDF файлы и целевой PDF файл в качестве параметров. Эти параметры могут быть либо путями к PDF файлам на диске, либо они могут быть MemoryStreams. Теперь, для этого примера, мы сначала создадим два файловых потока для чтения PDF файлов с диска. Затем мы преобразуем эти файлы в массивы байтов. Эти массивы байтов PDF файлов будут преобразованы в MemoryStreams. Как только мы получим MemoryStreams из PDF файлов, мы сможем передать их в метод объединения и объединить в один выходной файл.
 
 Следующий фрагмент кода на C# показывает, как объединить несколько PDF файлов с использованием MemoryStreams:
 
@@ -187,7 +187,7 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
 
 ## Объединение массива PDF файлов с использованием путей к файлам
 
-Если вы хотите объединить несколько PDF файлов, вы можете использовать перегрузку метода [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index), которая позволяет передавать массив PDF файлов. Итоговый выход сохраняется как объединенный файл, созданный из всех файлов в массиве. Следующий фрагмент кода на C# показывает, как объединить массив PDF файлов с использованием путей к файлам.
+Если вы хотите объединить несколько PDF файлов, вы можете использовать перегрузку метода [Concatenate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index), которая позволяет передавать массив PDF файлов. Итоговый выход сохраняется как объединенный файл, созданный из всех файлов в массиве. Следующий фрагмент кода на C# показывает, как объединить массив PDF файлов с использованием путей к файлам.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -208,7 +208,7 @@ private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
 
 ## Объединение массива PDF файлов с использованием потоков
 
-Объединение массива PDF файлов не ограничивается только файлами, находящимися на диске. Вы также можете объединить массив PDF файлов из потоков. Если вы хотите объединить несколько PDF файлов, вы можете использовать соответствующую перегрузку метода [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Сначала вам нужно создать массив входных потоков и один поток для выходного PDF, а затем вызвать метод [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Выход будет сохранен в выходном потоке. Следующий фрагмент кода на C# показывает, как объединить массив PDF файлов с использованием потоков.
+Объединение массива PDF файлов не ограничивается только файлами, находящимися на диске. Вы также можете объединить массив PDF файлов из потоков. Если вы хотите объединить несколько PDF файлов, вы можете использовать соответствующую перегрузку метода [Concatenate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Сначала вам нужно создать массив входных потоков и один поток для выходного PDF, а затем вызвать метод [Concatenate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index). Выход будет сохранен в выходном потоке. Следующий фрагмент кода на C# показывает, как объединить массив PDF файлов с использованием потоков.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -267,7 +267,7 @@ private static void ConcatenatingAllPdfFilesInParticularFolder()
 
 ## Объединение PDF форм и сохранение уникальных имен полей
 
-Класс [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) в [пространстве имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) предлагает возможность объединять PDF файлы. Теперь, если PDF файлы, которые нужно объединить, имеют поля формы с одинаковыми именами полей, Aspose.PDF предоставляет возможность сохранить поля в результирующем PDF файле уникальными, а также вы можете указать суффикс, чтобы сделать имена полей уникальными. Свойство [KeepFieldsUnique](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) как true сделает имена полей уникальными, когда PDF формы объединяются. Также свойство [UniqueSuffix](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) класса PdfFileEditor может быть использовано для указания пользовательского формата суффикса, который добавляется к имени поля, чтобы сделать его уникальным при объединении форм. Эта строка должна содержать подстроку `%NUM%`, которая будет заменена числами в результирующем файле.
+Класс [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) в [пространстве имен Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades) предлагает возможность объединять PDF файлы. Теперь, если PDF файлы, которые нужно объединить, имеют поля формы с одинаковыми именами полей, Aspose.PDF предоставляет возможность сохранить поля в результирующем PDF файле уникальными, а также вы можете указать суффикс, чтобы сделать имена полей уникальными. Свойство [KeepFieldsUnique](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/properties/keepfieldsunique) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) как true сделает имена полей уникальными, когда PDF формы объединяются. Также свойство [UniqueSuffix](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/properties/uniquesuffix) класса PdfFileEditor может быть использовано для указания пользовательского формата суффикса, который добавляется к имени поля, чтобы сделать его уникальным при объединении форм. Эта строка должна содержать подстроку `%NUM%`, которая будет заменена числами в результирующем файле.
 
 Пожалуйста, посмотрите следующий простой фрагмент кода, чтобы достичь этой функциональности.
 
@@ -347,7 +347,7 @@ private static void InsertBlankPage()
 
 ### Добавление текстовых штампов
 
-Для создания оглавления нам нужно добавить текстовые штампы на первой странице, используя [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) и [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp) объекты. Класс Stamp предоставляет метод `BindLogo(...)` для добавления [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext), и мы также можем указать местоположение для добавления этих текстовых штампов, используя метод `SetOrigin(..)`. В этой статье мы объединяем два PDF файла, поэтому нам нужно создать два объекта текстового штампа, указывающих на эти отдельные документы.
+Для создания оглавления нам нужно добавить текстовые штампы на первой странице, используя [PdfFileStamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilestamp) и [Stamp](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/stamp) объекты. Класс Stamp предоставляет метод `BindLogo(...)` для добавления [FormattedText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/formattedtext), и мы также можем указать местоположение для добавления этих текстовых штампов, используя метод `SetOrigin(..)`. В этой статье мы объединяем два PDF файла, поэтому нам нужно создать два объекта текстового штампа, указывающих на эти отдельные документы.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -368,7 +368,7 @@ private static void AddTextStampForTableOfContents()
 
 ### Создание локальных ссылок
 
-Теперь нам нужно добавить ссылки на страницы внутри объединенного файла. Для выполнения этого требования мы можем использовать метод `CreateLocalLink(..)` класса [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). В следующем фрагменте кода мы передали Transparent в качестве 4-го аргумента, чтобы прямоугольник вокруг ссылки не был виден.
+Теперь нам нужно добавить ссылки на страницы внутри объединенного файла. Для выполнения этого требования мы можем использовать метод `CreateLocalLink(..)` класса [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor). В следующем фрагменте кода мы передали Transparent в качестве 4-го аргумента, чтобы прямоугольник вокруг ссылки не был виден.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -484,7 +484,7 @@ private static void CompleteCode()
 
 ## Объединение PDF файлов в папке
 
-Класс [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) в пространстве имен Aspose.Pdf.Facades предлагает вам возможность объединять PDF файлы. Вы даже можете прочитать все PDF файлы в определенной папке во время выполнения и объединить их, даже не зная имена файлов. Просто укажите путь к директории, которая содержит PDF документы, которые вы хотите объединить.
+Класс [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) в пространстве имен Aspose.Pdf.Facades предлагает вам возможность объединять PDF файлы. Вы даже можете прочитать все PDF файлы в определенной папке во время выполнения и объединить их, даже не зная имена файлов. Просто укажите путь к директории, которая содержит PDF документы, которые вы хотите объединить.
 
 Пожалуйста, попробуйте использовать следующий фрагмент кода на C#, чтобы достичь этой функциональности от Aspose.PDF:
 

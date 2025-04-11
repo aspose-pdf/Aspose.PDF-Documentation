@@ -83,7 +83,7 @@ sitemap:
 
 ## Добавление объекта «Эллипс»
 
-Aspose.PDF for .NET поддерживает добавление объектов [«Эллипс»](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) в PDF-документы. Он также предлагает возможность заполнить объект «Эллипс» определённым цветом.
+Aspose.PDF for .NET поддерживает добавление объектов [«Эллипс»](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/ellipse) в PDF-документы. Он также предлагает возможность заполнить объект «Эллипс» определённым цветом.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -133,7 +133,7 @@ private static void Ellipse()
 
 ## Создание заполненного объекта «Эллипс»
 
-В следующем фрагменте кода показано, как добавить объект [«Эллипс»](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse), заполненный цветом.
+В следующем фрагменте кода показано, как добавить объект [«Эллипс»](https://reference.aspose.com/pdf/ru/net/aspose.pdf.drawing/ellipse), заполненный цветом.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -80,7 +80,7 @@ sitemap:
 
 ## 添加文本印章
 
-您可以使用 [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) 类在 PDF 文件中添加文本印章。TextStamp 类提供了创建基于文本的印章所需的属性，如字体大小、字体样式和字体颜色等。为了添加文本印章，您需要使用所需的属性创建一个 Document 对象和一个 TextStamp 对象。之后，您可以调用 Page 的 AddStamp 方法将印章添加到 PDF 中。
+您可以使用 [TextStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/TextStamp) 类在 PDF 文件中添加文本印章。TextStamp 类提供了创建基于文本的印章所需的属性，如字体大小、字体样式和字体颜色等。为了添加文本印章，您需要使用所需的属性创建一个 Document 对象和一个 TextStamp 对象。之后，您可以调用 Page 的 AddStamp 方法将印章添加到 PDF 中。
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
@@ -121,7 +121,7 @@ private static void AddTextStamp()
 
 ## 为 TextStamp 对象定义对齐方式
 
-向 PDF 文档添加水印是一个经常被要求的功能，而 Aspose.PDF for .NET 完全能够添加图像和文本水印。我们有一个名为 [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) 的类，它提供了在 PDF 文件上添加文本印章的功能。最近，有一个需求是支持在使用 TextStamp 对象时指定文本的对齐方式。因此，为了满足这一需求，我们在 TextStamp 类中引入了 TextAlignment 属性。使用此属性，我们可以指定水平文本对齐方式。
+向 PDF 文档添加水印是一个经常被要求的功能，而 Aspose.PDF for .NET 完全能够添加图像和文本水印。我们有一个名为 [TextStamp](https://reference.aspose.com/pdf/zh/net/aspose.pdf/textstamp) 的类，它提供了在 PDF 文件上添加文本印章的功能。最近，有一个需求是支持在使用 TextStamp 对象时指定文本的对齐方式。因此，为了满足这一需求，我们在 TextStamp 类中引入了 TextAlignment 属性。使用此属性，我们可以指定水平文本对齐方式。
 
 以下代码片段展示了如何加载现有的 PDF 文档并在其上添加 TextStamp。
 

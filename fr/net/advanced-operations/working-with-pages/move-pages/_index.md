@@ -86,13 +86,13 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 Pour déplacer une page, nous devrions :
 
-1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) avec le fichier PDF source.
-1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) avec le fichier PDF de destination.
-1. Obtenir la page de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [Ajouter](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) la page au document de destination.
-1. Enregistrer le PDF de sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [Supprimer](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) la page dans le document source.
-1. Enregistrer le PDF source en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) avec le fichier PDF source.
+1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) avec le fichier PDF de destination.
+1. Obtenir la page de la collection [PageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection).
+1. [Ajouter](https://reference.aspose.com/pdf/fr/net/aspose.pdf.pagecollection/add/methods/1) la page au document de destination.
+1. Enregistrer le PDF de sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4).
+1. [Supprimer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.pagecollection/delete/methods/1) la page dans le document source.
+1. Enregistrer le PDF source en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4).
 
 Le code suivant vous montre comment déplacer une page.
 
@@ -122,15 +122,15 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
 
 ## Déplacer un ensemble de pages d'un document PDF à un autre
 
-1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) avec le fichier PDF source.
-1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) avec le fichier PDF de destination.
+1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) avec le fichier PDF source.
+1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) avec le fichier PDF de destination.
 1. Définir un tableau avec les numéros de pages à déplacer.
 1. Exécuter une boucle à travers le tableau :
-    1. Obtenir la page de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-    1. [Ajouter](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) la page au document de destination.
-1. Enregistrer le PDF de sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [Supprimer](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) la page dans le document source en utilisant le tableau.
-1. Enregistrer le PDF source en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+    1. Obtenir la page de la collection [PageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection).
+    1. [Ajouter](https://reference.aspose.com/pdf/fr/net/aspose.pdf.pagecollection/add/methods/1) la page au document de destination.
+1. Enregistrer le PDF de sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4).
+1. [Supprimer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.pagecollection/delete/methods/2) la page dans le document source en utilisant le tableau.
+1. Enregistrer le PDF source en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4).
 
 Le code suivant vous montre comment déplacer un ensemble de pages d'un document PDF à un autre.
 
@@ -164,11 +164,11 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 
 ## Déplacer une page à un nouvel emplacement dans le document PDF actuel
 
-1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) avec le fichier PDF source.
-1. Obtenir la page de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [Ajouter](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) la page à la nouvelle position (par exemple à la fin).
-1. [Supprimer](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) la page à l'emplacement précédent.
-1. Enregistrer le PDF de sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. Créer un objet de classe [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) avec le fichier PDF source.
+1. Obtenir la page de la collection [PageCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/pagecollection).
+1. [Ajouter](https://reference.aspose.com/pdf/fr/net/aspose.pdf.pagecollection/add/methods/1) la page à la nouvelle position (par exemple à la fin).
+1. [Supprimer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.pagecollection/delete/methods/1) la page à l'emplacement précédent.
+1. Enregistrer le PDF de sortie en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf.document/save/methods/4).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

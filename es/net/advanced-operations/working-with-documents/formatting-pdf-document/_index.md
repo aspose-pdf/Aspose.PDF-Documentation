@@ -85,7 +85,7 @@ sitemap:
 
 Este tema te ayuda a entender cómo obtener propiedades de la ventana del documento, la aplicación visualizadora y cómo se muestran las páginas. Para establecer estas propiedades:
 
-Abre el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Ahora, puedes establecer las propiedades del objeto Document, tales como
+Abre el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document). Ahora, puedes establecer las propiedades del objeto Document, tales como
 
 - CenterWindow – Centrar la ventana del documento en la pantalla. Predeterminado: false.
 - Direction – Orden de lectura. Esto determina cómo se disponen las páginas cuando se muestran una al lado de la otra. Predeterminado: de izquierda a derecha.
@@ -99,7 +99,7 @@ Abre el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-El siguiente fragmento de código te muestra cómo obtener las propiedades usando la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+El siguiente fragmento de código te muestra cómo obtener las propiedades usando la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -154,7 +154,7 @@ private static void GetDocumentWindowProperties()
 
 Este tema explica cómo establecer las propiedades de la ventana del documento, la aplicación visualizadora y la visualización de la página. Para establecer estas diferentes propiedades:
 
-1. Abre el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Abre el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
 1. Establece las propiedades del objeto Document.
 1. Guarda el archivo PDF actualizado usando el método Save.
 
@@ -171,7 +171,7 @@ Las propiedades disponibles son:
 - PageLayout.
 - PageMode.
 
-Cada una se utiliza y se describe en el código a continuación. El siguiente fragmento de código te muestra cómo establecer las propiedades usando la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Cada una se utiliza y se describe en el código a continuación. El siguiente fragmento de código te muestra cómo establecer las propiedades usando la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -229,7 +229,7 @@ private static void SetDocumentWindowProperties()
 
 Los lectores de PDF admiten [un núcleo de 14 fuentes](https://en.wikipedia.org/wiki/PDF#Text) para que los documentos se puedan mostrar de la misma manera independientemente de la plataforma en la que se muestre el documento. Cuando un PDF contiene una fuente que no es una de las 14 fuentes principales, incrusta la fuente en el archivo PDF para evitar la sustitución de fuentes.
 
-Aspose.PDF for .NET admite la incrustación de fuentes en archivos PDF existentes. Puedes incrustar una fuente completa o un subconjunto de la fuente. Para incrustar la fuente, abre el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Luego usa la clase [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) para incrustar la fuente en el archivo PDF. Para incrustar la fuente completa, usa la propiedad IsEmbeded de la clase Font; para usar un subconjunto de la fuente, usa la propiedad IsSubset.
+Aspose.PDF for .NET admite la incrustación de fuentes en archivos PDF existentes. Puedes incrustar una fuente completa o un subconjunto de la fuente. Para incrustar la fuente, abre el archivo PDF usando la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document). Luego usa la clase [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/es/net/aspose.pdf.text) para incrustar la fuente en el archivo PDF. Para incrustar la fuente completa, usa la propiedad IsEmbeded de la clase Font; para usar un subconjunto de la fuente, usa la propiedad IsSubset.
 
 {{% alert color="primary" %}}
 
@@ -241,7 +241,7 @@ El siguiente fragmento de código muestra cómo incrustar una fuente en un archi
 
 ### Incrustar Fuentes Estándar Tipo 1
 
-Algunos documentos PDF tienen fuentes de un conjunto especial de fuentes de Adobe. Las fuentes de este conjunto se llaman “Fuentes Estándar Tipo 1”. Este conjunto incluye 14 fuentes y la incrustación de este tipo de fuentes requiere el uso de banderas especiales, es decir, [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). A continuación se muestra el fragmento de código que se puede utilizar para obtener un documento con todas las fuentes incrustadas, incluidas las Fuentes Estándar Tipo 1:
+Algunos documentos PDF tienen fuentes de un conjunto especial de fuentes de Adobe. Las fuentes de este conjunto se llaman “Fuentes Estándar Tipo 1”. Este conjunto incluye 14 fuentes y la incrustación de este tipo de fuentes requiere el uso de banderas especiales, es decir, [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/properties/embedstandardfonts). A continuación se muestra el fragmento de código que se puede utilizar para obtener un documento con todas las fuentes incrustadas, incluidas las Fuentes Estándar Tipo 1:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -354,7 +354,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
 
 ### Obtener Todas las Fuentes del Documento PDF
 
-En caso de que desees obtener todas las fuentes de un documento PDF, puedes usar el método FontUtilities.GetAllFonts() proporcionado en la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Por favor, revisa el siguiente fragmento de código para obtener todas las fuentes de un documento PDF existente:
+En caso de que desees obtener todas las fuentes de un documento PDF, puedes usar el método FontUtilities.GetAllFonts() proporcionado en la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document). Por favor, revisa el siguiente fragmento de código para obtener todas las fuentes de un documento PDF existente:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -450,7 +450,7 @@ private static void SetFontSubsetStrategy()
 
 A veces, deseas determinar cuál es el factor de zoom actual de un documento PDF. Con Aspose.Pdf, puedes averiguar el valor actual así como establecer uno.
 
-La propiedad Destination de la clase [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) te permite obtener el valor de zoom asociado con un archivo PDF. De manera similar, se puede usar para establecer el factor de zoom de un archivo.
+La propiedad Destination de la clase [GoToAction](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/gotoaction) te permite obtener el valor de zoom asociado con un archivo PDF. De manera similar, se puede usar para establecer el factor de zoom de un archivo.
 
 #### Establecer Factor de Zoom
 

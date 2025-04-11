@@ -83,9 +83,9 @@ sitemap:
 
 ## **Печать PDF в XPS-принтер в C#**
 
-Вы можете напечатать PDF-файл на XPS-принтере или другом программном принтере, используя класс [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Для этого создайте объект класса PdfViewer и откройте PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Вы можете установить различные параметры печати с помощью классов [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) и [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/). Вам также необходимо установить свойство [PrinterName](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/printername/) на XPS или другой программный принтер, который у вас установлен.
+Вы можете напечатать PDF-файл на XPS-принтере или другом программном принтере, используя класс [PdfViewer](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer). Для этого создайте объект класса PdfViewer и откройте PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Вы можете установить различные параметры печати с помощью классов [PrinterSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf.printing/printersettings/) и [PageSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf.printing/pagesettings/). Вам также необходимо установить свойство [PrinterName](https://reference.aspose.com/pdf/ru/net/aspose.pdf.printing/printersettings/printername/) на XPS или другой программный принтер, который у вас установлен.
 
-Наконец, используйте метод [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings), чтобы напечатать PDF на XPS или другом программном принтере. Следующий фрагмент кода показывает, как напечатать PDF-файл на XPS-принтере.
+Наконец, используйте метод [PrintDocumentWithSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings), чтобы напечатать PDF на XPS или другом программном принтере. Следующий фрагмент кода показывает, как напечатать PDF-файл на XPS-принтере.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -180,7 +180,7 @@ private static void PrintToXpsPrinter()
 
 Начиная с версии 24.4, в диалоговом окне печати можно выбрать источник бумаги по размеру страницы PDF. Следующий фрагмент кода позволяет выбирать лоток принтера на основе размера страницы PDF.
 
-Эту настройку можно включить и отключить с помощью фасада [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/).
+Эту настройку можно включить и отключить с помощью фасада [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/).
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

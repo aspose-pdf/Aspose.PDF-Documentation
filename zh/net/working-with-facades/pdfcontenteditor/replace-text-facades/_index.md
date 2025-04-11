@@ -77,7 +77,7 @@ draft: false
 
 ## 在现有 PDF 文件中替换文本
 
-为了在现有 PDF 文件中替换文本，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 方法绑定输入 PDF 文件。之后，您需要调用 [ReplaceText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index) 方法。您需要使用 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) 类的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段向您展示如何在现有 PDF 文件中替换文本。
+为了在现有 PDF 文件中替换文本，您需要创建一个 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的对象，并使用 [BindPdf](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/facade/methods/bindpdf/index) 方法绑定输入 PDF 文件。之后，您需要调用 [ReplaceText](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index) 方法。您需要使用 [PdfContentEditor](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfcontenteditor) 类的 [Save](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document/methods/save) 方法保存更新后的 PDF 文件。以下代码片段向您展示如何在现有 PDF 文件中替换文本。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -179,7 +179,7 @@ private static void ReplaceText02()
 {{< /tab >}}
 {{< /tabs >}}
 
-对于更高级的文本处理功能，我们将使用 [TextState](https://reference.aspose.com/pdf/net/aspose.pdf.text/textstate) 方法。通过此方法，我们可以使文本变为粗体、斜体、彩色等。
+对于更高级的文本处理功能，我们将使用 [TextState](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textstate) 方法。通过此方法，我们可以使文本变为粗体、斜体、彩色等。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

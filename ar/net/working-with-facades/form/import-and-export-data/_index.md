@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class يسمح لك باستيراد البيانات من ملف XML إلى ملف PDF باستخدام [ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.form/importxml/methods/1) method. لاستيراد البيانات من XML، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class ثم استدعاء [ImportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxml/index) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية استيراد البيانات من ملف XML.
+[Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class يسمح لك باستيراد البيانات من ملف XML إلى ملف PDF باستخدام [ImportXml](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.form/importxml/methods/1) method. لاستيراد البيانات من XML، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class ثم استدعاء [ImportXml](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/importxml/index) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية استيراد البيانات من ملف XML.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -104,7 +104,7 @@ private static void ImportDataFromXml()
 
 ## تصدير البيانات إلى XML من ملف PDF
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class يسمح لك بتصدير البيانات إلى ملف XML من ملف PDF باستخدام [ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml) method. لتصدير البيانات إلى XML، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class ثم استدعاء [ExportXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxml) method باستخدام كائن FileStream. أخيرًا، يمكنك إغلاق كائن FileStream والتخلص من كائن Form. يوضح لك الكود التالي كيفية تصدير البيانات إلى ملف XML.
+[Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class يسمح لك بتصدير البيانات إلى ملف XML من ملف PDF باستخدام [ExportXml](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/exportxml) method. لتصدير البيانات إلى XML، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class ثم استدعاء [ExportXml](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/exportxml) method باستخدام كائن FileStream. أخيرًا، يمكنك إغلاق كائن FileStream والتخلص من كائن Form. يوضح لك الكود التالي كيفية تصدير البيانات إلى ملف XML.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -130,7 +130,7 @@ private static void ExportDataToXml()
 
 ## استيراد البيانات من FDF إلى ملف PDF
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class يسمح لك باستيراد البيانات من ملف FDF إلى ملف PDF باستخدام [ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf) method. لاستيراد البيانات من FDF، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class ثم استدعاء [ImportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importfdf) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية استيراد البيانات من ملف FDF.
+[Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class يسمح لك باستيراد البيانات من ملف FDF إلى ملف PDF باستخدام [ImportFdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/importfdf) method. لاستيراد البيانات من FDF، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class ثم استدعاء [ImportFdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/importfdf) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية استيراد البيانات من ملف FDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -159,7 +159,7 @@ private static void ImportDataFromPdfIntoPdf()
 
 ## تصدير البيانات إلى FDF من ملف PDF
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class يسمح لك بتصدير البيانات إلى ملف FDF من ملف PDF باستخدام [ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf) method. لتصدير البيانات إلى FDF، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class ثم استدعاء [ExportFdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportfdf) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية تصدير البيانات إلى ملف FDF.
+[Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class يسمح لك بتصدير البيانات إلى ملف FDF من ملف PDF باستخدام [ExportFdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/exportfdf) method. لتصدير البيانات إلى FDF، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class ثم استدعاء [ExportFdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/exportfdf) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية تصدير البيانات إلى ملف FDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -188,7 +188,7 @@ private static void ExportDataToPdfFromPdf()
 
 ## استيراد البيانات من XFDF إلى ملف PDF
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class يسمح لك باستيراد البيانات من ملف XFDF إلى ملف PDF باستخدام [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf) method. لاستيراد البيانات من XFDF، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class ثم استدعاء [ImportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/importxfdf) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية استيراد البيانات من ملف XFDF.
+[Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class يسمح لك باستيراد البيانات من ملف XFDF إلى ملف PDF باستخدام [ImportXfdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/importxfdf) method. لاستيراد البيانات من XFDF، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class ثم استدعاء [ImportXfdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/importxfdf) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية استيراد البيانات من ملف XFDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -217,7 +217,7 @@ private static void ImportDataFromXFDIntoPdf()
 
 ## تصدير البيانات إلى XFDF من ملف PDF
 
-[Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class يسمح لك بتصدير البيانات إلى ملف XFDF من ملف PDF باستخدام [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf) method. لتصدير البيانات إلى XFDF، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class ثم استدعاء [ExportXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/exportxfdf) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية تصدير البيانات إلى ملف XFDF.
+[Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class يسمح لك بتصدير البيانات إلى ملف XFDF من ملف PDF باستخدام [ExportXfdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/exportxfdf) method. لتصدير البيانات إلى XFDF، تحتاج إلى إنشاء كائن من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class ثم استدعاء [ExportXfdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/form/methods/exportxfdf) method باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/save) method من [Form](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/form) class. يوضح لك الكود التالي كيفية تصدير البيانات إلى ملف XFDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

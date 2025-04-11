@@ -84,7 +84,7 @@ sitemap:
 
 ## Основы генерации PDF с Aspose.PDF
 
-Одним из самых важных классов в Aspose.PDF является [класс Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Этот класс является движком рендеринга PDF. Для представления структуры PDF библиотека Aspose.PDF использует модель Document-Page, где:
+Одним из самых важных классов в Aspose.PDF является [класс Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document). Этот класс является движком рендеринга PDF. Для представления структуры PDF библиотека Aspose.PDF использует модель Document-Page, где:
 
 * Document - содержит свойства PDF-документа, включая коллекцию страниц.
 * Page - содержит свойства конкретной страницы и различные коллекции элементов, связанных с этой страницей.
@@ -175,7 +175,7 @@ private static void AddTable()
 {{< /tab >}}
 {{< /tabs >}}
 
-Наиболее распространенной проблемой является вывод данных в табличном формате. Для обработки таблиц используется [класс Table](https://reference.aspose.com/pdf/net/aspose.pdf/table). Этот класс дает нам возможность создавать таблицы и размещать их в документе, используя [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) и [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). Таким образом, чтобы создать таблицу, вам нужно добавить необходимое количество строк и заполнить их соответствующим количеством ячеек.
+Наиболее распространенной проблемой является вывод данных в табличном формате. Для обработки таблиц используется [класс Table](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table). Этот класс дает нам возможность создавать таблицы и размещать их в документе, используя [Rows](https://reference.aspose.com/pdf/ru/net/aspose.pdf/rows) и [Cells](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cell). Таким образом, чтобы создать таблицу, вам нужно добавить необходимое количество строк и заполнить их соответствующим количеством ячеек.
 
 Следующий пример создает таблицу 4x10.
 
@@ -284,10 +284,10 @@ private static void AddTable()
 
 При инициализации объекта Table использовались минимальные настройки оформления:
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - ширина столбцов (по умолчанию).
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - отступы по умолчанию для ячейки таблицы.
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - атрибуты рамки таблицы (стиль, толщина, цвет).
-* [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - атрибуты рамки ячейки (стиль, толщина, цвет).
+* [ColumnWidths](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/columnwidths) - ширина столбцов (по умолчанию).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/defaultcellpadding) - отступы по умолчанию для ячейки таблицы.
+* [Border](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/border) - атрибуты рамки таблицы (стиль, толщина, цвет).
+* [DefaultCellBorder](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/properties/defaultcellborder) - атрибуты рамки ячейки (стиль, толщина, цвет).
 
 В результате мы получаем таблицу 4x10 с равными по ширине столбцами.
 
@@ -295,7 +295,7 @@ private static void AddTable()
 
 ## Экспорт данных из объектов ADO.NET
 
-Класс Table предоставляет методы для взаимодействия с источниками данных ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) и [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). Первый метод импортирует данные из DataTable, второй - из DataView.
+Класс Table предоставляет методы для взаимодействия с источниками данных ADO.NET - [ImportDataTable](https://reference.aspose.com/pdf/ru/net/aspose.pdf.table/importdatatable/methods/1) и [ImportDataView](https://reference.aspose.com/pdf/ru/net/aspose.pdf/table/methods/importdataview). Первый метод импортирует данные из DataTable, второй - из DataView.
 Предполагая, что эти объекты не очень удобны для работы в шаблоне MVC, мы ограничимся кратким примером. В этом примере (строка 50) вызывается метод ImportDataTable и получает в качестве параметров экземпляр DataTable и дополнительные настройки, такие как флаг заголовка и начальная позиция (строки/столбцы) для вывода данных.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}

@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Crop PDF Pages programmatically C#",
     "alternativeHeadline": "Crop PDF Pages Easily with Aspose.PDF for .NET",
-    "abstract": "Aspose.PDF for .NET يقدم ميزة جديدة قوية تتيح للمطورين الوصول برمجياً والتلاعب بمختلف خصائص صفحات PDF، بما في ذلك صندوق الوسائط، صندوق النزيف، صندوق القطع، صندوق الفن، وصندوق القص. تسهل هذه الوظيفة عملية تخصيص تخطيطات PDF، مما يضمن الدقة في عرض المستندات وتحسين جودة الطباعة مع تقليل الحواف البيضاء. مع مقتطفات الشيفرة السهلة الاستخدام، يمكن للمستخدمين دمج هذه القدرات بسلاسة في تطبيقاتهم، مما يحسن إدارة PDF والتلاعب به.",
+    "abstract": "تقدم Aspose.PDF for .NET ميزة جديدة قوية تتيح للمطورين الوصول برمجياً والتلاعب بمختلف خصائص صفحات PDF، بما في ذلك صندوق الوسائط، صندوق النزيف، صندوق القطع، صندوق الفن، وصندوق القص. تسهل هذه الوظيفة عملية تخصيص تخطيطات PDF، مما يضمن الدقة في عرض المستندات وتحسين جودة الطباعة مع تقليل الحواف البيضاء. مع مقتطفات الشيفرة السهلة الاستخدام، يمكن للمستخدمين دمج هذه القدرات بسلاسة في تطبيقاتهم، مما يحسن إدارة PDF والتلاعب به.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "494",
+    "wordcount": "1127",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,24 +73,24 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/crop-pages/"
     },
-    "dateModified": "2024-11-26",
+    "dateModified": "2025-04-11",
     "description": "يمكنك الحصول على خصائص الصفحة، مثل العرض، الارتفاع، صندوق النزيف، صندوق القص وصندوق القطع باستخدام Aspose.PDF for .NET."
 }
 </script>
 
 ## الحصول على خصائص الصفحة
 
-كل صفحة في ملف PDF تحتوي على عدد من الخصائص، مثل العرض، الارتفاع، صندوق النزيف، صندوق القص وصندوق القطع. يتيح لك Aspose.PDF الوصول إلى هذه الخصائص.
+كل صفحة في ملف PDF لها عدد من الخصائص، مثل العرض، الارتفاع، صندوق النزيف، صندوق القص وصندوق القطع. يسمح لك Aspose.PDF بالوصول إلى هذه الخصائص.
 
 - **صندوق الوسائط**: صندوق الوسائط هو أكبر صندوق صفحة. يتوافق مع حجم الصفحة (مثل A4، A5، US Letter، إلخ) الذي تم اختياره عند طباعة المستند إلى PostScript أو PDF. بعبارة أخرى، يحدد صندوق الوسائط الحجم الفعلي للوسائط التي يتم عرض مستند PDF عليها أو طباعته.
-- **صندوق النزيف**: إذا كان المستند يحتوي على نزيف، فسيكون لدى PDF أيضاً صندوق نزيف. النزيف هو مقدار اللون (أو العمل الفني) الذي يمتد إلى ما وراء حافة الصفحة. يُستخدم لضمان أنه عند طباعة المستند وقطعه إلى الحجم ("قصه")، سيصل الحبر إلى حافة الصفحة. حتى إذا تم قص الصفحة بشكل غير دقيق - قطعها قليلاً بعيداً عن علامات القص - فلن تظهر أي حواف بيضاء على الصفحة.
-- **صندوق القطع**: يشير صندوق القطع إلى الحجم النهائي للمستند بعد الطباعة والقص.
+- **صندوق النزيف**: إذا كان المستند يحتوي على نزيف، فسيكون لدى PDF أيضاً صندوق نزيف. النزيف هو مقدار اللون (أو العمل الفني) الذي يمتد إلى ما وراء حافة الصفحة. يُستخدم لضمان أنه عند طباعة المستند وقطعه إلى الحجم ("قصه")، سيصل الحبر إلى حافة الصفحة. حتى إذا تم قص الصفحة بشكل غير دقيق - قطع قليلاً بعيداً عن علامات القص - فلن تظهر أي حواف بيضاء على الصفحة.
+- **صندوق القص**: يشير صندوق القص إلى الحجم النهائي للمستند بعد الطباعة والقص.
 - **صندوق الفن**: صندوق الفن هو الصندوق المرسوم حول المحتويات الفعلية للصفحات في مستنداتك. يُستخدم هذا الصندوق عند استيراد مستندات PDF في تطبيقات أخرى.
 - **صندوق القص**: صندوق القص هو حجم "الصفحة" الذي يتم عرض مستند PDF الخاص بك به في Adobe Acrobat. في العرض العادي، يتم عرض محتويات صندوق القص فقط في Adobe Acrobat. للحصول على أوصاف مفصلة لهذه الخصائص، اقرأ مواصفات Adobe.Pdf، وخاصة 10.10.1 حدود الصفحة.
 - **Page.Rect**: التقاطع (المستطيل المرئي عادةً) بين MediaBox وDropBox. توضح الصورة أدناه هذه الخصائص.
 للحصول على مزيد من التفاصيل، يرجى زيارة [هذه الصفحة](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-مقتطف الشيفرة التالي يعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+يعمل مقتطف الشيفرة التالي أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يوضح المقتطف أدناه كيفية قص الصفحة:
 
@@ -121,9 +121,243 @@ private static void CropPage()
 }
 ```
 
-في هذا المثال، استخدمنا ملف عينة [هنا](crop_page.pdf). في البداية، تبدو صفحتنا كما هو موضح في الشكل 1.
+في هذا المثال استخدمنا ملف عينة [هنا](crop_page.pdf). في البداية، تبدو صفحتنا كما هو موضح في الشكل 1.
 
-بعد التغيير، ستبدو الصفحة كما في الشكل 2.
+بعد التغيير، ستبدو الصفحة كما هو موضح في الشكل 2.
+
+### قص المساحات البيضاء حول الصفحة
+
+على سبيل المثال، يمكنك قص المساحات البيضاء حول الصفحة باستخدام أي مكتبة رسومات يمكنها تحميل الصور النقطية:
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void TrimWhiteSpaceAroundPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf"))
+    {
+        var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
+
+        using (var imageStr = new MemoryStream())
+        {
+            // Convert page to PNG image
+            device.Process(document.Pages[1], imageStr);
+            using (var pageBitmap = new Bitmap(imageStr))
+            {
+                document.Pages[1].CropBox = GetNewCropBox(pageBitmap, document.Pages[1].CropBox);
+            }
+        }
+        // Save PDF document
+        document.Save(dataDir + "TrimWhiteSpaceAroundPage_out.pdf");
+    }
+}
+
+// Determine white areas with System.Drawing
+private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.Rectangle prevCropBox)
+{
+    var imageBitmapData = pageBitmap.LockBits(new Rectangle(0, 0, pageBitmap.Width, pageBitmap.Height),
+                            ImageLockMode.ReadOnly, PixelFormat.Format32bppRgb);
+
+    int toHeight = pageBitmap.Height;
+    int toWidth = pageBitmap.Width;
+
+    int? leftNonWhite = null;
+    int? rightNonWhite = null;
+    int? topNonWhite = null;
+    int? bottomNonWhite = null;
+
+    var imageRowBytes = new byte[imageBitmapData.Stride];
+    for (int y = 0; y < toHeight; y++)
+    {
+        // Copy the row data to byte array
+        if (IntPtr.Size == 4)
+        {
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt32() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+        }
+        else
+        {
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt64() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+        }
+
+        int? leftNonWhite_row = null;
+        int? rightNonWhite_row = null;
+
+        for (int x = 0; x < toWidth; x++)
+        {
+            if (imageRowBytes[x * 4] != 255
+                || imageRowBytes[x * 4 + 1] != 255
+                || imageRowBytes[x * 4 + 2] != 255)
+            {
+                if (leftNonWhite_row == null)
+                {
+                    leftNonWhite_row = x;
+                }
+
+                rightNonWhite_row = x;
+            }
+        }
+
+        if (leftNonWhite_row != null || rightNonWhite_row != null)
+        {
+            if (topNonWhite == null)
+            {
+                topNonWhite = y;
+            }
+
+            bottomNonWhite = y;
+        }
+
+        if (leftNonWhite_row != null
+            && (leftNonWhite == null || leftNonWhite > leftNonWhite_row))
+        {
+            leftNonWhite = leftNonWhite_row;
+        }
+        if (rightNonWhite_row != null
+            && (rightNonWhite == null || rightNonWhite < rightNonWhite_row))
+        {
+            rightNonWhite = rightNonWhite_row;
+        }
+    }
+
+    leftNonWhite = leftNonWhite ?? 0;
+    rightNonWhite = rightNonWhite ?? toWidth;
+    topNonWhite = topNonWhite ?? 0;
+    bottomNonWhite = bottomNonWhite ?? toHeight;
+
+    double xCoef = prevCropBox.Width / toWidth;
+    double yCoef = prevCropBox.Height / toHeight;
+
+    pageBitmap.UnlockBits(imageBitmapData);
+    
+    // Create crop box with correction to previous crop box
+    return
+        new Aspose.Pdf.Rectangle(
+            leftNonWhite.Value * xCoef + prevCropBox.LLX,
+            (toHeight * yCoef + prevCropBox.LLY) - bottomNonWhite.Value * yCoef,
+            rightNonWhite.Value * xCoef + prevCropBox.LLX,
+            (toHeight * yCoef + prevCropBox.LLY) - topNonWhite.Value * yCoef
+        );
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void TrimWhiteSpaceAroundPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "TrimWhiteSpaceAroundPage.pdf");
+    var device = new Aspose.Pdf.Devices.PngDevice(new Aspose.Pdf.Devices.Resolution(300));
+
+    using var imageStr = new MemoryStream();
+
+    // Convert page to PNG image
+    device.Process(document.Pages[1], imageStr);
+    using var pageBitmap = new Bitmap(imageStr);
+    document.Pages[1].CropBox = GetNewCropBox(pageBitmap, document.Pages[1].CropBox);
+
+    // Save PDF document
+    document.Save(dataDir + "TrimWhiteSpaceAroundPage_out.pdf");
+}
+
+// Determine white areas with System.Drawing
+private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.Rectangle prevCropBox)
+{
+    var imageBitmapData = pageBitmap.LockBits(new Rectangle(0, 0, pageBitmap.Width, pageBitmap.Height),
+                            ImageLockMode.ReadOnly, PixelFormat.Format32bppRgb);
+
+    int toHeight = pageBitmap.Height;
+    int toWidth = pageBitmap.Width;
+
+    int? leftNonWhite = null;
+    int? rightNonWhite = null;
+    int? topNonWhite = null;
+    int? bottomNonWhite = null;
+
+    var imageRowBytes = new byte[imageBitmapData.Stride];
+    for (int y = 0; y < toHeight; y++)
+    {
+        // Copy the row data to byte array
+        if (IntPtr.Size == 4)
+        {
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt32() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+        }
+        else
+        {
+            Marshal.Copy(new IntPtr(imageBitmapData.Scan0.ToInt64() + y * imageBitmapData.Stride), imageRowBytes, 0, imageBitmapData.Stride);
+        }
+
+        int? leftNonWhite_row = null;
+        int? rightNonWhite_row = null;
+
+        for (int x = 0; x < toWidth; x++)
+        {
+            if (imageRowBytes[x * 4] != 255
+                || imageRowBytes[x * 4 + 1] != 255
+                || imageRowBytes[x * 4 + 2] != 255)
+            {
+                if (leftNonWhite_row == null)
+                {
+                    leftNonWhite_row = x;
+                }
+
+                rightNonWhite_row = x;
+            }
+        }
+
+        if (leftNonWhite_row != null || rightNonWhite_row != null)
+        {
+            if (topNonWhite == null)
+            {
+                topNonWhite = y;
+            }
+
+            bottomNonWhite = y;
+        }
+
+        if (leftNonWhite_row != null
+            && (leftNonWhite == null || leftNonWhite > leftNonWhite_row))
+        {
+            leftNonWhite = leftNonWhite_row;
+        }
+        if (rightNonWhite_row != null
+            && (rightNonWhite == null || rightNonWhite < rightNonWhite_row))
+        {
+            rightNonWhite = rightNonWhite_row;
+        }
+    }
+
+    leftNonWhite = leftNonWhite ?? 0;
+    rightNonWhite = rightNonWhite ?? toWidth;
+    topNonWhite = topNonWhite ?? 0;
+    bottomNonWhite = bottomNonWhite ?? toHeight;
+
+    double xCoef = prevCropBox.Width / toWidth;
+    double yCoef = prevCropBox.Height / toHeight;
+
+    pageBitmap.UnlockBits(imageBitmapData);
+    
+    // Create crop box with correction to previous crop box
+    return
+        new Aspose.Pdf.Rectangle(
+            leftNonWhite.Value * xCoef + prevCropBox.LLX,
+            (toHeight * yCoef + prevCropBox.LLY) - bottomNonWhite.Value * yCoef,
+            rightNonWhite.Value * xCoef + prevCropBox.LLX,
+            (toHeight * yCoef + prevCropBox.LLY) - topNonWhite.Value * yCoef
+        );
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

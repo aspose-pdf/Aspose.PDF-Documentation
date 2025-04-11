@@ -85,7 +85,7 @@ sitemap:
 
 水印注释应用于表示将在页面上以固定大小和位置打印的图形，无论打印页面的尺寸如何。
 
-您可以使用 [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) 在 PDF 页面上的特定位置添加水印文本。水印的不透明度也可以通过使用不透明度属性进行控制。
+您可以使用 [WatermarkAnnotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/watermarkannotation) 在 PDF 页面上的特定位置添加水印文本。水印的不透明度也可以通过使用不透明度属性进行控制。
 
 请查看以下代码片段以添加 WatermarkAnnotation。
 
