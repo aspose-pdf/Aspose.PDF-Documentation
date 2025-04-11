@@ -174,7 +174,6 @@ private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.
     var imageRowBytes = new byte[imageBitmapData.Stride];
     for (int y = 0; y < toHeight; y++)
     {
-
         // Copy the row data to byte array
         if (IntPtr.Size == 4)
         {
@@ -287,7 +286,6 @@ private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.
     var imageRowBytes = new byte[imageBitmapData.Stride];
     for (int y = 0; y < toHeight; y++)
     {
-
         // Copy the row data to byte array
         if (IntPtr.Size == 4)
         {
