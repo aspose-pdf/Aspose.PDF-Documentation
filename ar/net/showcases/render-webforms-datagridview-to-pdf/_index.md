@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "266",
+    "wordcount": "224",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/render-webforms-datagridview-to-pdf/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "يمكن لمكتبة Aspose.PDF أداء المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
@@ -82,7 +82,7 @@ sitemap:
 
 ### مقدمة
 
-بشكل عام، لتحويل WebForm إلى مستند PDF يستخدم أدوات إضافية. توضح هذه العينة كيفية استخدام مكتبة Aspose.PDF لتحويل WebForm إلى PDF. تم تضمين عنصر التحكم Aspose Export GridView To Pdf أيضًا في هذه العينة لإظهار كيفية تحويل _عنصر التحكم GridView إلى مستند PDF._
+بشكل عام، لتحويل WebForm إلى مستند PDF، يتم استخدام أدوات إضافية. توضح هذه العينة كيفية استخدام مكتبة Aspose.PDF لتحويل WebForm إلى PDF. تم تضمين عنصر تحكم Aspose Export GridView To Pdf أيضًا في هذه العينة لإظهار كيفية تحويل _عنصر تحكم GridView إلى مستند PDF_.
 
 ## كيفية تحويل WebForm إلى PDF
 
@@ -106,14 +106,14 @@ void Render(HtmlTextWriter writer)
 هناك أداتان من Aspose يمكن استخدامهما لتحويل HTML إلى PDF:
 
 - Aspose.PDF for .NET.
-- عنصر التحكم Aspose Export GridView (المبني على Aspose.PDF).
+- عنصر تحكم Aspose Export GridView (المبني على Aspose.PDF).
 
 ## ملفات المصدر
 
-في هذه العينة لدينا تقريرين تجريبيين.
+يمكنك العثور على الكود الخاص بالمشروع بالكامل [هنا](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Visual%20Studio/Aspose.Pdf.GridViewExport).
 
 - _Default.aspx_ توضح التصدير إلى PDF باستخدام Aspose.PDF.
-- _Report2.aspx_ توضح التصدير إلى PDF باستخدام عنصر التحكم Aspose Export GridView (المبني على Aspose.PDF).
+- _Report2.aspx_ توضح التصدير إلى PDF باستخدام عنصر تحكم Aspose Export GridView (المبني على Aspose.PDF).
 
 ## ملفات إضافية
 
