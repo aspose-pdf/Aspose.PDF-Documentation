@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /fr/net/crop-pages/
-description: Vous pouvez obtenir les propriétés des pages, telles que la largeur, la hauteur, le fond perdu, la zone de rognage et la zone de coupe en utilisant Aspose.PDF for .NET.
+description: Vous pouvez obtenir les propriétés des pages, telles que la largeur, la hauteur, le fond perdu, le rognage et la boîte de coupe en utilisant Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Crop PDF Pages programmatically C#",
     "alternativeHeadline": "Crop PDF Pages Easily with Aspose.PDF for .NET",
-    "abstract": "Aspose.PDF for .NET introduit une nouvelle fonctionnalité puissante qui permet aux développeurs d'accéder et de manipuler par programmation diverses propriétés des pages d'un PDF, y compris la zone média, la zone de fond perdu, la zone de coupe, la zone d'art et la zone de rognage. Cette fonctionnalité simplifie le processus de personnalisation des mises en page PDF, garantissant la précision dans la présentation des documents et améliorant la qualité d'impression tout en minimisant les bords blancs. Avec des extraits de code faciles à utiliser, les utilisateurs peuvent intégrer ces capacités dans leurs applications, améliorant ainsi la gestion et la manipulation des PDF.",
+    "abstract": "Aspose.PDF for .NET introduit une nouvelle fonctionnalité puissante qui permet aux développeurs d'accéder et de manipuler par programmation diverses propriétés des pages d'un PDF, y compris la boîte média, la boîte de fond perdu, la boîte de coupe, la boîte d'art et la boîte de rognage. Cette fonctionnalité simplifie le processus de personnalisation des mises en page PDF, garantissant la précision dans la présentation des documents et améliorant la qualité d'impression tout en minimisant les bords blancs. Avec des extraits de code faciles à utiliser, les utilisateurs peuvent intégrer ces capacités dans leurs applications, améliorant ainsi la gestion et la manipulation des PDF.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1246",
+    "wordcount": "1242",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,20 +73,20 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/crop-pages/"
     },
-    "dateModified": "2025-04-10",
-    "description": "Vous pouvez obtenir les propriétés des pages, telles que la largeur, la hauteur, le fond perdu, la zone de rognage et la zone de coupe en utilisant Aspose.PDF for .NET."
+    "dateModified": "2025-04-11",
+    "description": "Vous pouvez obtenir les propriétés des pages, telles que la largeur, la hauteur, le fond perdu, le rognage et la boîte de coupe en utilisant Aspose.PDF for .NET."
 }
 </script>
 
 ## Obtenir les propriétés des pages
 
-Chaque page d'un fichier PDF a un certain nombre de propriétés, telles que la largeur, la hauteur, le fond perdu, la zone de rognage et la zone de coupe. Aspose.PDF vous permet d'accéder à ces propriétés.
+Chaque page d'un fichier PDF a un certain nombre de propriétés, telles que la largeur, la hauteur, le fond perdu, le rognage et la boîte de coupe. Aspose.PDF vous permet d'accéder à ces propriétés.
 
-- **Zone média** : La zone média est la plus grande zone de page. Elle correspond à la taille de la page (par exemple A4, A5, US Letter, etc.) sélectionnée lorsque le document a été imprimé en PostScript ou en PDF. En d'autres termes, la zone média détermine la taille physique du support sur lequel le document PDF est affiché ou imprimé.
-- **Zone de fond perdu** : Si le document a un fond perdu, le PDF aura également une zone de fond perdu. Le fond perdu est la quantité de couleur (ou d'œuvre) qui s'étend au-delà du bord d'une page. Il est utilisé pour s'assurer que lorsque le document est imprimé et découpé à la taille ("rogné"), l'encre ira jusqu'au bord de la page. Même si la page est mal découpée - coupée légèrement en dehors des marques de coupe - aucun bord blanc n'apparaîtra sur la page.
-- **Zone de coupe** : La zone de coupe indique la taille finale d'un document après impression et découpe.
-- **Zone d'art** : La zone d'art est la zone dessinée autour des contenus réels des pages de vos documents. Cette zone de page est utilisée lors de l'importation de documents PDF dans d'autres applications.
-- **Zone de rognage** : La zone de rognage est la taille de la "page" à laquelle votre document PDF est affiché dans Adobe Acrobat. En vue normale, seuls les contenus de la zone de rognage sont affichés dans Adobe Acrobat. Pour des descriptions détaillées de ces propriétés, lisez la spécification Adobe.Pdf, en particulier 10.10.1 Limites des pages.
+- **Boîte média** : La boîte média est la plus grande boîte de page. Elle correspond à la taille de la page (par exemple A4, A5, US Letter, etc.) sélectionnée lors de l'impression du document en PostScript ou PDF. En d'autres termes, la boîte média détermine la taille physique du support sur lequel le document PDF est affiché ou imprimé.
+- **Boîte de fond perdu** : Si le document a un fond perdu, le PDF aura également une boîte de fond perdu. Le fond perdu est la quantité de couleur (ou d'œuvre) qui s'étend au-delà du bord d'une page. Il est utilisé pour s'assurer que lorsque le document est imprimé et découpé à la taille ("rogné"), l'encre ira jusqu'au bord de la page. Même si la page est mal rognée - coupée légèrement en dehors des marques de coupe - aucun bord blanc n'apparaîtra sur la page.
+- **Boîte de coupe** : La boîte de coupe indique la taille finale d'un document après impression et rognage.
+- **Boîte d'art** : La boîte d'art est la boîte dessinée autour des contenus réels des pages de vos documents. Cette boîte de page est utilisée lors de l'importation de documents PDF dans d'autres applications.
+- **Boîte de rognage** : La boîte de rognage est la taille de la "page" à laquelle votre document PDF est affiché dans Adobe Acrobat. En vue normale, seuls les contenus de la boîte de rognage sont affichés dans Adobe Acrobat. Pour des descriptions détaillées de ces propriétés, lisez la spécification Adobe.Pdf, en particulier 10.10.1 Limites de page.
 - **Page.Rect** : l'intersection (rectangle communément visible) de la MediaBox et de la DropBox. L'image ci-dessous illustre ces propriétés.
 Pour plus de détails, veuillez visiter [cette page](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
@@ -121,7 +121,7 @@ private static void CropPage()
 }
 ```
 
-Dans cet exemple, nous avons utilisé un fichier d'exemple [ici](crop_page.pdf). Au départ, notre page ressemble à celle montrée sur la Figure 1.
+Dans cet exemple, nous avons utilisé un fichier d'exemple [ici](crop_page.pdf). Initialement, notre page ressemble à celle montrée sur la Figure 1.
 
 Après le changement, la page ressemblera à la Figure 2.
 
@@ -174,7 +174,6 @@ private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.
     var imageRowBytes = new byte[imageBitmapData.Stride];
     for (int y = 0; y < toHeight; y++)
     {
-
         // Copy the row data to byte array
         if (IntPtr.Size == 4)
         {
@@ -287,7 +286,6 @@ private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.
     var imageRowBytes = new byte[imageBitmapData.Stride];
     for (int y = 0; y < toHeight; y++)
     {
-
         // Copy the row data to byte array
         if (IntPtr.Size == 4)
         {

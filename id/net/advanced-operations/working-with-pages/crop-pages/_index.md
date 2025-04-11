@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1134",
+    "wordcount": "1133",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/crop-pages/"
     },
-    "dateModified": "2025-04-10",
+    "dateModified": "2025-04-11",
     "description": "Anda dapat mendapatkan properti halaman, seperti lebar, tinggi, bleed-, crop- dan trimbox menggunakan Aspose.PDF for .NET."
 }
 </script>
@@ -83,14 +83,14 @@ sitemap:
 Setiap halaman dalam file PDF memiliki sejumlah properti, seperti lebar, tinggi, bleed-, crop- dan trimbox. Aspose.PDF memungkinkan Anda untuk mengakses properti ini.
 
 - **Media box**: Media box adalah kotak halaman terbesar. Ini sesuai dengan ukuran halaman (misalnya A4, A5, US Letter, dll.) yang dipilih saat dokumen dicetak ke PostScript atau PDF. Dengan kata lain, media box menentukan ukuran fisik media di mana dokumen PDF ditampilkan atau dicetak.
-- **Bleed box**: Jika dokumen memiliki bleed, PDF juga akan memiliki bleed box. Bleed adalah jumlah warna (atau karya seni) yang meluas di luar tepi halaman. Ini digunakan untuk memastikan bahwa ketika dokumen dicetak dan dipotong sesuai ukuran ("trimmed"), tinta akan sampai ke tepi halaman. Bahkan jika halaman dipotong salah - sedikit di luar tanda potong - tidak akan ada tepi putih yang muncul di halaman.
+- **Bleed box**: Jika dokumen memiliki bleed, PDF juga akan memiliki bleed box. Bleed adalah jumlah warna (atau karya seni) yang meluas di luar tepi halaman. Ini digunakan untuk memastikan bahwa ketika dokumen dicetak dan dipotong sesuai ukuran ("trimmed"), tinta akan sampai ke tepi halaman. Bahkan jika halaman dipotong tidak tepat - sedikit terpotong dari tanda trim - tidak akan ada tepi putih yang muncul di halaman.
 - **Trim box**: Trim box menunjukkan ukuran akhir dokumen setelah dicetak dan dipotong.
 - **Art box**: Art box adalah kotak yang digambar di sekitar konten aktual halaman dalam dokumen Anda. Kotak halaman ini digunakan saat mengimpor dokumen PDF ke aplikasi lain.
 - **Crop box**: Crop box adalah ukuran "halaman" di mana dokumen PDF Anda ditampilkan di Adobe Acrobat. Dalam tampilan normal, hanya konten dari crop box yang ditampilkan di Adobe Acrobat. Untuk deskripsi rinci tentang properti ini, baca spesifikasi Adobe.Pdf, khususnya 10.10.1 Batas Halaman.
-- **Page.Rect**: perpotongan (umumnya persegi panjang yang terlihat) dari MediaBox dan DropBox. Gambar di bawah ini menggambarkan properti ini.
+- **Page.Rect**: irisan (rectangle yang umumnya terlihat) dari MediaBox dan DropBox. Gambar di bawah ini menggambarkan properti ini.
 Untuk detail lebih lanjut, silakan kunjungi [halaman ini](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan di bawah ini menunjukkan cara memotong halaman:
 
@@ -121,13 +121,13 @@ private static void CropPage()
 }
 ```
 
-Dalam contoh ini kami menggunakan file contoh [di sini](crop_page.pdf). Awalnya halaman kami terlihat seperti yang ditunjukkan pada Gambar 1.
+Dalam contoh ini, kami menggunakan file contoh [di sini](crop_page.pdf). Awalnya halaman kami terlihat seperti yang ditunjukkan pada Gambar 1.
 
 Setelah perubahan, halaman akan terlihat seperti Gambar 2.
 
 ### Memotong ruang putih di sekitar halaman
 
-Sebagai contoh, Anda dapat memotong ruang putih di sekitar halaman menggunakan pustaka grafik apa pun yang dapat memuat bitmap:
+Misalnya, Anda dapat memotong ruang putih di sekitar halaman menggunakan pustaka grafis apa pun yang dapat memuat bitmap:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -174,7 +174,6 @@ private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.
     var imageRowBytes = new byte[imageBitmapData.Stride];
     for (int y = 0; y < toHeight; y++)
     {
-
         // Copy the row data to byte array
         if (IntPtr.Size == 4)
         {
@@ -287,7 +286,6 @@ private static Aspose.Pdf.Rectangle GetNewCropBox(Bitmap pageBitmap, Aspose.Pdf.
     var imageRowBytes = new byte[imageBitmapData.Stride];
     for (int y = 0; y < toHeight; y++)
     {
-
         // Copy the row data to byte array
         if (IntPtr.Size == 4)
         {
