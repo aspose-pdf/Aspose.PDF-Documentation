@@ -192,6 +192,105 @@ private static void Verify()
 }
 ```
 
+## Verifikasi tanda tangan digital dengan pemeriksaan sertifikat
+
+Saat memverifikasi tanda tangan digital, Anda dapat memeriksa sertifikat tanda tangan untuk pencabutan.
+
+Sayangnya, Aspose.PDF tidak dapat memverifikasi keaslian sertifikat root atau intermediate dalam rantai sertifikat.  
+Oleh karena itu, hanya status pencabutan dari sertifikat tanda tangan yang diperiksa menggunakan CRL dan OCSP.
+
+Untuk mengonfigurasi validasi sertifikat, Anda dapat menggunakan parameter `ValidationOptions`.
+
+Opsi `ValidationMode` menawarkan tiga mode validasi:
+
+- **None** – sertifikat tidak diperiksa.
+- **Strict** – pencabutan sertifikat mempengaruhi hasil metode `Verify`.
+- **OnlyCheck** – memungkinkan pemeriksaan sertifikat tanpa mempengaruhi hasil verifikasi tanda tangan.
+
+`ValidationMethod` menentukan metode yang digunakan untuk memeriksa sertifikat:
+
+- **Auto** – pemilihan metode otomatis. OCSP lebih disukai. Status pencabutan ditentukan oleh metode yang berhasil melakukan pemeriksaan.
+- **Ocsp** – pencabutan diperiksa menggunakan OCSP.
+- **Crl** – pencabutan diperiksa menggunakan CRL.
+- **All** – kedua metode digunakan untuk memeriksa sertifikat. Agar validasi berhasil, kedua metode harus mengonfirmasi bahwa sertifikat tidak dicabut.
+
+Opsi `CheckCertificateChain` memungkinkan pemeriksaan keberadaan rantai sertifikat dalam tanda tangan.  
+Jika rantai sertifikat tidak ditemukan, hasil verifikasi sertifikat akan `Undefined`.
+
+Hasil verifikasi dapat diperoleh melalui parameter keluaran bertipe `ValidationResult`.  
+Status yang mungkin adalah: `Valid`, `Invalid`, dan `Undefined`.  
+`Undefined` biasanya berarti bahwa sertifikat tidak dapat divalidasi atau rantai sertifikat hilang.
+
+Mengatur baik `CheckCertificateChain` dan `ValidationMode = ValidationMode.Strict` sesuai dengan perilaku Adobe Acrobat.  
+Jika Adobe Acrobat tidak dapat menemukan rantai sertifikat, ia tidak memeriksa status pencabutan, dan tanda tangan dianggap tidak valid.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(filePath))
+    {
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Find all signatures
+            foreach (var signName in pdfSign.GetSignatureNames())
+            {
+                // Create a certificate validation option
+                var options = new Aspose.Pdf.Security.ValidationOptions();
+                options.ValidationMode = ValidationMode.Strict;
+                options.ValidationMethod = ValidationMethod.Auto;
+                options.CheckCertificateChain = true;
+                options.RequestTimeout = 20000;
+
+                Aspose.Pdf.Security.ValidationResult validationResult;
+                // Verify a digital signature
+                bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+                Console.WriteLine("Certificate validation resul: " + validationResult.Status);
+                Console.WriteLine("Is verified: " + verified);
+            } 
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(filePath);
+    
+    // Create an instance of PdfFileSignature for working with signatures in the document
+    using var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document);
+    
+    // Find all signatures
+    foreach (var signName in pdfSign.GetSignatureNames())
+    {
+        // Create a certificate validation option
+        var options = new Aspose.Pdf.Security.ValidationOptions();
+        options.ValidationMode = ValidationMode.Strict;
+        options.ValidationMethod = ValidationMethod.Auto;
+        options.CheckCertificateChain = true;
+        options.RequestTimeout = 20000;
+
+        Aspose.Pdf.Security.ValidationResult validationResult;
+        // Verify a digital signature
+        bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+        Console.WriteLine($"Certificate validation resul: {validationResult.Status}");
+        Console.WriteLine($"Is verified: {verified}" );
+    }             
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+
 ## Tambahkan cap waktu ke tanda tangan digital
 
 ### Cara menandatangani PDF secara digital dengan cap waktu
