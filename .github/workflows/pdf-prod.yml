@@ -17,6 +17,7 @@ jobs:
       with:
         submodules: true
         fetch-depth: 0
+        token: ${{ secrets.GH_PAT1 }}
     - name: hugo build
       run: |
         git clone https://x-access-token:${{ secrets.GH_PAT1 }}@github.com/aspose-pdf/Aspose.PDF-Hugo-template.git || (cd Aspose.PDF-Hugo-template && git pull)
