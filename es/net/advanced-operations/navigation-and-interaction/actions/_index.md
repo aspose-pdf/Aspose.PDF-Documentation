@@ -188,7 +188,7 @@ private static void AddHyperlink()
 
 Otro escenario común es encontrar un texto dado en el documento usando TextFragmentAbsorber y establecer su región como hipervínculos al sitio. A continuación se muestra un fragmento de código que implementa esto.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -283,7 +283,7 @@ Aspose.PDF for .NET proporciona una gran característica para la creación de PD
 
 Para agregar el hipervínculo local, necesitamos crear un TextFragment para que el enlace pueda asociarse con el TextFragment. La clase [TextFragment](https://reference.aspose.com/pdf/es/net/aspose.pdf.text/textfragment) tiene una propiedad llamada Hyperlink que se utiliza para asociar la instancia de LocalHyperlink. El siguiente fragmento de código muestra los pasos para lograr este requisito.
 
-{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -384,7 +384,7 @@ Para obtener la URL de un enlace:
 
 El siguiente fragmento de código muestra cómo obtener destinos de hipervínculo (URL) de un archivo PDF.
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -461,7 +461,7 @@ El texto y las anotaciones/acciones en un archivo PDF están representados por d
 
 Para encontrar el contenido de la URL, necesita trabajar tanto con la anotación como con el texto. El objeto [Annotation](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/annotation) no tiene en sí mismo el texto, sino que se encuentra debajo del texto en la página. Así que para obtener el texto, la Anotación da los límites de la URL, mientras que el objeto Texto da el contenido de la URL. Por favor, vea el siguiente fragmento de código.
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -555,7 +555,7 @@ Para eliminar una acción de apertura:
 
 El siguiente fragmento de código muestra cómo eliminar una acción de apertura de documento del archivo PDF.
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -604,7 +604,7 @@ Al ver archivos PDF en un visor de PDF como Adobe Reader, los archivos generalme
 
 La clase [XYZExplicitDestination](https://reference.aspose.com/pdf/es/net/aspose.pdf.annotations/xyzexplicitdestination) le permite especificar una página en un archivo PDF que desea abrir. Al pasar el valor del objeto GoToAction a la propiedad OpenAction de la clase [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document), el documento se abre en la página especificada contra el objeto XYZExplicitDestination. El siguiente fragmento de código muestra cómo especificar una página como la acción de apertura del documento.
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

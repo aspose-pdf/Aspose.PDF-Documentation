@@ -188,7 +188,7 @@ private static void AddHyperlink()
 
 別の一般的なシナリオは、TextFragmentAbsorberを使用してドキュメント内の特定のテキストを見つけ、その領域をサイトへのハイパーリンクとして設定することです。以下はこれを実装するコードスニペットです。
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -283,7 +283,7 @@ Aspose.PDF for .NETは、PDFの作成と操作に優れた機能を提供しま�
 
 ローカルハイパーリンクを追加するには、リンクをTextFragmentに関連付けるためにTextFragmentを作成する必要があります。[TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)クラスには、LocalHyperlinkインスタンスを関連付けるために使用されるHyperlinkというプロパティがあります。以下のコードスニペットは、この要件を達成する手順を示しています。
 
-{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -384,7 +384,7 @@ private static void AddHyperlink()
 
 次のコードスニペットは、PDFファイルからハイパーリンクの宛先（URL）を取得する方法を示しています。
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -461,7 +461,7 @@ PDFファイル内のテキストと注釈/アクションは異なるエンテ�
 
 URLコンテンツを見つけるには、注釈とテキストの両方を操作する必要があります。[Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation)オブジェクト自体にはテキストがなく、ページ上のテキストの下に位置しています。したがって、テキストを取得するには、AnnotationがURLの境界を提供し、TextオブジェクトがURLの内容を提供します。以下のコードスニペットを参照してください。
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -555,7 +555,7 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 次のコードスニペットは、PDFファイルからドキュメントオープンアクションを削除する方法を示しています。
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -604,7 +604,7 @@ Adobe ReaderなどのPDFビューアでPDFファイルを表示する際、フ�
 
 [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination)クラスを使用すると、開きたいPDFファイル内のページを指定できます。GoToActionオブジェクトの値を[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスのOpenActionプロパティに渡すと、ドキュメントはXYZExplicitDestinationオブジェクトに対して指定されたページで開きます。以下のコードスニペットは、ドキュメントオープンアクションとしてページを指定する方法を示しています。
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
