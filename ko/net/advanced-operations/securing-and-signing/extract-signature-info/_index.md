@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
-    "wordcount": "583",
+    "wordcount": "797",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,8 +74,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2024-11-25",
-    "description": "C#을 사용하여 SignatureField 클래스를 통해 서명 필드에서 이미지를 추출하고 서명 정보를 추출할 수 있습니다."
+    "dateModified": "2025-04-11",
+    "description": "C#의 SignatureField 클래스를 사용하여 서명 필드에서 이미지를 추출하고 서명 정보를 추출할 수 있습니다."
 }
 </script>
 
@@ -83,9 +83,9 @@ sitemap:
 
 ## 서명 필드에서 이미지 추출
 
-Aspose.PDF for .NET은 [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) 클래스를 사용하여 PDF 파일에 디지털 서명하는 기능을 지원하며, 문서에 서명하는 동안 `SignatureAppearance`에 대한 이미지를 설정할 수도 있습니다. 이제 이 API는 서명 필드와 관련된 이미지뿐만 아니라 서명 정보를 추출하는 기능도 제공합니다.
+Aspose.PDF for .NET은 [SignatureField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturefield) 클래스를 사용하여 PDF 파일에 디지털 서명을 추가하는 기능을 지원하며, 문서에 서명하는 동안 `SignatureAppearance`에 대한 이미지를 설정할 수도 있습니다. 이제 이 API는 서명 필드와 관련된 이미지뿐만 아니라 서명 정보를 추출하는 기능도 제공합니다.
 
-서명 정보를 추출하기 위해, 우리는 SignatureField 클래스에 [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) 메서드를 도입했습니다. 다음 코드 스니펫을 참조하여 `SignatureField` 객체에서 이미지를 추출하는 단계를 보여줍니다:
+서명 정보를 추출하기 위해 [ExtractImage](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturefield/methods/extractimage) 메서드를 SignatureField 클래스에 도입했습니다. 다음 코드 스니펫을 참조하여 `SignatureField` 객체에서 이미지를 추출하는 단계를 보여줍니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -126,9 +126,9 @@ private static void ExtractImagesFromSignatureField()
 
 ## 서명 정보 추출
 
-Aspose.PDF for .NET은 SignatureField 클래스를 사용하여 PDF 파일에 디지털 서명하는 기능을 지원합니다. 현재 우리는 인증서의 유효성을 판단할 수 있지만 전체 인증서를 추출할 수는 없습니다. 추출할 수 있는 정보는 공개 키, 지문, 발급자 등입니다.
+Aspose.PDF for .NET은 SignatureField 클래스를 사용하여 PDF 파일에 디지털 서명을 추가하는 기능을 지원합니다. 현재 인증서의 유효성을 확인할 수 있지만 전체 인증서를 추출할 수는 없습니다. 추출할 수 있는 정보는 공개 키, 지문, 발급자 등입니다.
 
-서명 정보를 추출하기 위해, 우리는 [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) 메서드를 [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) 클래스에 도입했습니다. 다음 코드 스니펫을 참조하여 SignatureField 객체에서 인증서를 추출하는 단계를 보여줍니다:
+서명 정보를 추출하기 위해 [ExtractCertificate](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) 메서드를 [SignatureField](https://reference.aspose.com/pdf/ko/net/aspose.pdf.forms/signaturefield) 클래스에 도입했습니다. 다음 코드 스니펫을 참조하여 SignatureField 객체에서 인증서를 추출하는 단계를 보여줍니다:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -205,7 +205,6 @@ Pkcs7
 Signature1
 ```
 
-
 ## 서명의 손상 여부 확인
 
 **SignaturesCompromiseDetector** 클래스를 사용하여 디지털 서명의 손상 여부를 확인할 수 있습니다.
@@ -214,10 +213,10 @@ Signature1
 메서드가 false를 반환하면 **HasCompromisedSignatures** 속성을 사용하여 손상된 서명이 있는지 확인하고 **CompromisedSignatures** 속성을 통해 손상된 서명 목록을 검색할 수 있습니다.
 
 기존 서명이 전체 문서를 커버하는지 확인하려면 **SignaturesCoverage** 속성을 사용하십시오.
-이 속성은 다음 값을 가질 수 있습니다:
-- **Undefined** – 서명 중 하나가 명시적으로 손상되었거나 커버리지 확인이 실패한 경우.
-- **EntirelySigned** – 서명이 전체 문서를 커버하는 경우.
-- **PartiallySigned** – 서명이 전체 문서를 커버하지 않으며 서명되지 않은 내용이 있는 경우.
+이 속성은 다음과 같은 값을 가질 수 있습니다:
+- **정의되지 않음** – 서명 중 하나가 명시적으로 손상되었거나 커버리지 확인이 실패한 경우.
+- **전체 서명됨** – 서명이 전체 문서를 커버하는 경우.
+- **부분적으로 서명됨** – 서명이 전체 문서를 커버하지 않으며 서명되지 않은 내용이 있는 경우.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

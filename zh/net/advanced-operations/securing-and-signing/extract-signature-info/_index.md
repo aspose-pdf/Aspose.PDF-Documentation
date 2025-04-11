@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
-    "wordcount": "583",
+    "wordcount": "657",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "您可以使用 C# 的 SignatureField 类从签名字段中提取图像并提取签名信息。"
 }
 </script>
@@ -83,9 +83,9 @@ sitemap:
 
 ## 从签名字段提取图像
 
-Aspose.PDF for .NET 支持使用 [SignatureField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield) 类对 PDF 文件进行数字签名的功能，并且在签署文档时，您还可以为 `SignatureAppearance` 设置图像。现在，此 API 还提供提取签名信息以及与签名字段关联的图像的能力。
+Aspose.PDF for .NET 支持使用 [SignatureField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield) 类对 PDF 文件进行数字签名，并且在签署文档时，您还可以为 `SignatureAppearance` 设置图像。现在，此 API 还提供提取签名信息以及与签名字段关联的图像的能力。
 
-为了提取签名信息，我们已向 SignatureField 类引入了 [ExtractImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield/methods/extractimage) 方法。请查看以下代码片段，演示从 `SignatureField` 对象提取图像的步骤：
+为了提取签名信息，我们向 SignatureField 类引入了 [ExtractImage](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield/methods/extractimage) 方法。请查看以下代码片段，演示从 `SignatureField` 对象提取图像的步骤：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -126,9 +126,9 @@ private static void ExtractImagesFromSignatureField()
 
 ## 提取签名信息
 
-Aspose.PDF for .NET 支持使用 SignatureField 类对 PDF 文件进行数字签名的功能。目前，我们还可以确定证书的有效性，但无法提取整个证书。可以提取的信息包括公钥、指纹、颁发者等。
+Aspose.PDF for .NET 支持使用 SignatureField 类对 PDF 文件进行数字签名。目前，我们还可以确定证书的有效性，但无法提取整个证书。可以提取的信息包括公钥、指纹、颁发者等。
 
-为了提取签名信息，我们已向 [SignatureField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield) 类引入了 [ExtractCertificate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) 方法。请查看以下代码片段，演示从 SignatureField 对象提取证书的步骤：
+为了提取签名信息，我们向 [SignatureField](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield) 类引入了 [ExtractCertificate](https://reference.aspose.com/pdf/zh/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) 方法。请查看以下代码片段，演示从 SignatureField 对象提取证书的步骤：
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -207,16 +207,16 @@ Signature1
 
 ## 检查签名是否被篡改
 
-您可以使用 **SignaturesCompromiseDetector** 类来验证数字签名是否被篡改。
+您可以使用 **SignaturesCompromiseDetector** 类验证数字签名是否被篡改。
 调用 **Check()** 方法检查文档的签名。
-如果未检测到签名篡改，则该方法将返回 true。
-如果该方法返回 false，您可以通过 **HasCompromisedSignatures** 属性检查是否存在被篡改的签名，并通过 **CompromisedSignatures** 属性检索被篡改的签名列表。
+如果未检测到签名篡改，方法将返回 true。
+如果方法返回 false，您可以通过 **HasCompromisedSignatures** 属性检查是否存在被篡改的签名，并通过 **CompromisedSignatures** 属性检索被篡改的签名列表。
 
 要验证现有签名是否覆盖整个文档，请使用 **SignaturesCoverage** 属性。
 此属性可以具有以下值：
-- **Undefined** – 如果其中一个签名被明确篡改或覆盖检查失败。
-- **EntirelySigned** – 如果签名覆盖整个文档。
-- **PartiallySigned** – 如果签名未覆盖整个文档，并且存在未签名的内容。
+- **未定义** – 如果其中一个签名被明确篡改或覆盖检查失败。
+- **完全签署** – 如果签名覆盖整个文档。
+- **部分签署** – 如果签名未覆盖整个文档，并且存在未签名的内容。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -287,7 +287,6 @@ private static void Check(string pdfFile)
 ```
 {{< /tab >}}
 {{< /tabs >}}
-
 
 <script type="application/ld+json">
 {

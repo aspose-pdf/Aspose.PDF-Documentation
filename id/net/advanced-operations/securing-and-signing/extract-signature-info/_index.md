@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
-    "wordcount": "583",
+    "wordcount": "860",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "Anda dapat mengekstrak gambar dari bidang tanda tangan dan mengekstrak informasi tanda tangan menggunakan kelas SignatureField dengan C#."
 }
 </script>
@@ -83,9 +83,9 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 
 ## Mengekstrak Gambar dari Bidang Tanda Tangan
 
-Aspose.PDF for .NET mendukung fitur untuk menandatangani file PDF secara digital menggunakan kelas [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) dan saat menandatangani dokumen, Anda juga dapat menetapkan gambar untuk `SignatureAppearance`. Sekarang, API ini juga menyediakan kemampuan untuk mengekstrak informasi tanda tangan serta gambar yang terkait dengan bidang tanda tangan.
+Aspose.PDF for .NET mendukung fitur untuk menandatangani secara digital file PDF menggunakan kelas [SignatureField](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturefield) dan saat menandatangani dokumen, Anda juga dapat mengatur gambar untuk `SignatureAppearance`. Sekarang, API ini juga menyediakan kemampuan untuk mengekstrak informasi tanda tangan serta gambar yang terkait dengan bidang tanda tangan.
 
-Untuk mengekstrak informasi tanda tangan, kami telah memperkenalkan metode [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) ke kelas SignatureField. Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mengekstrak gambar dari objek `SignatureField`:
+Untuk mengekstrak informasi tanda tangan, kami telah memperkenalkan metode [ExtractImage](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturefield/methods/extractimage) ke kelas SignatureField. Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mengekstrak gambar dari objek `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -124,11 +124,11 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-## Ekstrak Informasi Tanda Tangan
+## Mengekstrak Informasi Tanda Tangan
 
-Aspose.PDF for .NET mendukung fitur untuk menandatangani file PDF secara digital menggunakan kelas SignatureField. Saat ini, kita juga dapat menentukan keabsahan sertifikat tetapi kita tidak dapat mengekstrak seluruh sertifikat. Informasi yang dapat diekstrak adalah kunci publik, sidik jari, penerbit, dll.
+Aspose.PDF for .NET mendukung fitur untuk menandatangani secara digital file PDF menggunakan kelas SignatureField. Saat ini, kita juga dapat menentukan keabsahan sertifikat tetapi kita tidak dapat mengekstrak seluruh sertifikat. Informasi yang dapat diekstrak adalah kunci publik, sidik jari, penerbit, dll.
 
-Untuk mengekstrak informasi tanda tangan, kami telah memperkenalkan metode [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) ke kelas [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield). Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mengekstrak sertifikat dari objek SignatureField:
+Untuk mengekstrak informasi tanda tangan, kami telah memperkenalkan metode [ExtractCertificate](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) ke kelas [SignatureField](https://reference.aspose.com/pdf/id/net/aspose.pdf.forms/signaturefield). Silakan lihat potongan kode berikut yang menunjukkan langkah-langkah untuk mengekstrak sertifikat dari objek SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -205,11 +205,10 @@ Pkcs7
 Signature1
 ```
 
-
 ## Memeriksa tanda tangan untuk kompromi
 
 Anda dapat menggunakan kelas **SignaturesCompromiseDetector** untuk memverifikasi tanda tangan digital untuk kompromi.
-Panggil metode **Check()** untuk memeriksa tanda tangan dokumen.
+Panggil metode **Check()** untuk memeriksa tanda tangan dokumen. 
 Jika tidak ada kompromi tanda tangan yang terdeteksi, metode ini akan mengembalikan true.
 Jika metode ini mengembalikan false, Anda dapat memeriksa apakah tanda tangan yang dikompromikan menggunakan properti **HasCompromisedSignatures** dan mengambil daftar tanda tangan yang dikompromikan melalui properti **CompromisedSignatures**.
 
