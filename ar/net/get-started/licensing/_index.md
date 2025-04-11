@@ -172,8 +172,6 @@ if (!isLicensed)
 تستخدم الطريقة `Metered.GetConsumptionCredit()` للحصول على معلومات حول أرصدة الاستهلاك.
 تستخدم الطريقة `Metered.GetConsumptionQuantity()` للحصول على معلومات حول حجم ملف الاستهلاك.
 
-مثال:
-
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetMeteredLicense()
@@ -184,24 +182,36 @@ private static void SetMeteredLicense()
     var metered = new Aspose.Pdf.Metered();
     // Access the setMeteredKey property and pass public and private keys as parameters
     metered.SetMeteredKey("your public key", "your private key");
+    // Get current Consumption Credit and Quantity
+    var currentMonthCreditsSpent = Aspose.Pdf.Metered.GetConsumptionCredit();
+    var currentMonthConsumedMegabytes = Aspose.Pdf.Metered.GetConsumptionQuantity();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-       // Add five pages
-       AddPages(document, 5);
-       // Save the document
-       document.Save(dataDir + "output.pdf")
+        // Add five pages
+        AddPages(document, 5);
+
+        // Save the document
+        document.Save(dataDir + "output.pdf");
+
+        // Wait to be sure the transaction completed
+        System.Threading.Thread.Sleep(10000);
+        // Get current Consumption Credit and Quantity
+        var nowCredit = Aspose.Pdf.Metered.GetConsumptionCredit();
+        var nowQuantity = Aspose.Pdf.Metered.GetConsumptionQuantity();
+        Console.WriteLine("Credit: was={0} now={1} difference={2}", currentMonthCreditsSpent, nowCredit, nowCredit - currentMonthCreditsSpent);
+        Console.WriteLine("Quantity: was={0} now={1} difference={2}", currentMonthConsumedMegabytes, nowQuantity, nowQuantity - currentMonthConsumedMegabytes); 
     }
 }
 
 private static void AddPages(Document document, int n)
 {
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         document.Pages.Add();
     }
-}   
+}
 ```
 
 __أفضل الممارسات للترخيص المقنن__
