@@ -124,10 +124,6 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### 替换签名图像
-
-有时您可能需要仅替换 PDF 文件中已存在的签名字段的图像。为了实现此要求，首先，我们需要在 PDF 文件中搜索表单字段，识别签名字段，获取签名字段的尺寸（矩形尺寸），然后在相同的尺寸上盖印图像。
-
 ## 提取签名信息
 
 Aspose.PDF for .NET 支持使用 SignatureField 类对 PDF 文件进行数字签名的功能。目前，我们还可以确定证书的有效性，但无法提取整个证书。可以提取的信息包括公钥、指纹、颁发者等。

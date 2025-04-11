@@ -124,10 +124,6 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### Ganti Gambar Tanda Tangan
-
-Terkadang Anda mungkin memiliki kebutuhan untuk hanya mengganti gambar dari bidang tanda tangan yang sudah ada di dalam file PDF. Untuk memenuhi kebutuhan ini, pertama-tama, kita perlu mencari bidang formulir di dalam file PDF, mengidentifikasi bidang Tanda Tangan, mendapatkan dimensi (dimensi persegi panjang) dari bidang tanda tangan dan kemudian menempelkan gambar di atas dimensi yang sama.
-
 ## Ekstrak Informasi Tanda Tangan
 
 Aspose.PDF for .NET mendukung fitur untuk menandatangani file PDF secara digital menggunakan kelas SignatureField. Saat ini, kita juga dapat menentukan keabsahan sertifikat tetapi kita tidak dapat mengekstrak seluruh sertifikat. Informasi yang dapat diekstrak adalah kunci publik, sidik jari, penerbit, dll.

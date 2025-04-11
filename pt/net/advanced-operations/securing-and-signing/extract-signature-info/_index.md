@@ -124,10 +124,6 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### Substituir Imagem da Assinatura
-
-Às vezes, você pode ter a necessidade de substituir apenas a imagem de um campo de assinatura já presente dentro do arquivo PDF. Para realizar esse requisito, primeiro, precisamos pesquisar os campos do formulário dentro do arquivo PDF, identificar os campos de assinatura, obter as dimensões (dimensões retangulares) do campo de assinatura e, em seguida, estampar uma imagem sobre as mesmas dimensões.
-
 ## Extrair Informações de Assinatura
 
 Aspose.PDF for .NET suporta a funcionalidade de assinar digitalmente os arquivos PDF usando a classe SignatureField. Atualmente, também podemos determinar a validade do certificado, mas não podemos extrair o certificado completo. As informações que podem ser extraídas são chave pública, impressão digital, emissor, etc.

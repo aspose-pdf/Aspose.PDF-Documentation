@@ -124,10 +124,6 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### Remplacer l'image de signature
-
-Parfois, vous pouvez avoir besoin de remplacer uniquement l'image d'un champ de signature déjà présent dans le fichier PDF. Pour accomplir cette exigence, nous devons d'abord rechercher les champs de formulaire dans le fichier PDF, identifier les champs de signature, obtenir les dimensions (dimensions rectangulaires) du champ de signature, puis tamponner une image sur les mêmes dimensions.
-
 ## Extraire des informations de signature
 
 Aspose.PDF for .NET prend en charge la fonctionnalité de signature numérique des fichiers PDF en utilisant la classe SignatureField. Actuellement, nous pouvons également déterminer la validité du certificat, mais nous ne pouvons pas extraire l'ensemble du certificat. Les informations qui peuvent être extraites sont une clé publique, une empreinte digitale, un émetteur, etc.
