@@ -205,7 +205,7 @@ private static void GetAllAttachments()
 
 Pour obtenir une pièce jointe individuelle, nous pouvons spécifier l'index de la pièce jointe dans l'objet `EmbeddedFiles` de l'instance Document. Veuillez essayer d'utiliser l'extrait de code suivant.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -299,7 +299,7 @@ private static void GetIndividualAttachment()
 
 En plus de la collection EmbeddedFiles de l'objet Document, les pièces jointes peuvent également être contenues dans des objets FileAttachmentAnnotation. Ci-dessous se trouve le code pour visualiser le nombre et les détails de telles pièces jointes.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp

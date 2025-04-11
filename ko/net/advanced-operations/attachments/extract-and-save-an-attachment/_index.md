@@ -205,7 +205,7 @@ private static void GetAllAttachments()
 
 개별 첨부 파일을 가져오려면 Document 인스턴스의 `EmbeddedFiles` 객체에서 첨부 파일의 인덱스를 지정할 수 있습니다. 다음 코드 조각을 사용해 보세요.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -299,7 +299,7 @@ private static void GetIndividualAttachment()
 
 Document 객체의 EmbeddedFiles 컬렉션 외에도, 첨부 파일은 FileAttachmentAnnotation 객체에 포함될 수 있습니다. 아래는 이러한 첨부 파일의 수와 세부 정보를 보는 코드입니다.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp

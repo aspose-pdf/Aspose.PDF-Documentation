@@ -205,7 +205,7 @@ private static void GetAllAttachments()
 
 Para obter um anexo individual, podemos especificar o índice do anexo no objeto `EmbeddedFiles` da instância do Documento. Por favor, tente usar o seguinte trecho de código.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -299,7 +299,7 @@ private static void GetIndividualAttachment()
 
 Além da coleção EmbeddedFiles do objeto Document, os Anexos também podem estar contidos em objetos FileAttachmentAnnotation. Abaixo está o código para visualizar o número e os detalhes de tais Anexos.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
