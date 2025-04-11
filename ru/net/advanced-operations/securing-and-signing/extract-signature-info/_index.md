@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
-    "wordcount": "583",
+    "wordcount": "834",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,8 +74,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Вы можете извлекать изображения из поля подписи и извлекать информацию о подписи с помощью класса SignatureField на языке C#"
+    "dateModified": "2025-04-11",
+    "description": "Вы можете извлекать изображения из поля подписи и извлекать информацию о подписи, используя класс SignatureField с C#."
 }
 </script>
 
@@ -83,9 +83,9 @@ sitemap:
 
 ## Извлечение изображения из поля подписи
 
-Aspose.PDF for .NET поддерживает функцию цифровой подписи PDF-файлов с помощью класса [SignatureField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield), и при подписании документа вы также можете установить изображение для `SignatureAppearance`. Теперь этот API также предоставляет возможность извлечения информации о подписи и связанного с ней изображения.
+Aspose.PDF for .NET поддерживает возможность цифровой подписи PDF файлов с использованием класса [SignatureField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield), и при подписании документа вы также можете установить изображение для `SignatureAppearance`. Теперь этот API также предоставляет возможность извлекать информацию о подписи, а также изображение, связанное с полем подписи.
 
-Чтобы извлечь информацию о подписи, мы добавили метод [ExtractImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield/methods/extractimage) в класс SignatureField. Пожалуйста, посмотрите следующий фрагмент кода, который демонстрирует шаги по извлечению изображения из объекта `SignatureField`:
+Чтобы извлечь информацию о подписи, мы представили метод [ExtractImage](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield/methods/extractimage) в классе SignatureField. Пожалуйста, посмотрите следующий фрагмент кода, который демонстрирует шаги для извлечения изображения из объекта `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -124,15 +124,11 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### Замена изображения подписи
-
-Иногда у вас может возникнуть требование заменить изображение уже существующего поля подписи внутри PDF-файла. Чтобы выполнить это требование, сначала нам нужно найти поля формы внутри PDF-файла, определить поля подписи, получить размеры (прямоугольные размеры) поля подписи и затем нанести изображение поверх тех же размеров.
-
 ## Извлечение информации о подписи
 
-Aspose.PDF for .NET поддерживает возможность цифровой подписи PDF-файлов с помощью класса SignatureField. В настоящее время мы также можем определить действительность сертификата, но не можем извлечь весь сертификат. Можно извлечь следующую информацию: открытый ключ, отпечаток, эмитент и т.д.
+Aspose.PDF for .NET поддерживает возможность цифровой подписи PDF файлов с использованием класса SignatureField. В настоящее время мы также можем определить действительность сертификата, но не можем извлечь весь сертификат. Информация, которую можно извлечь, включает открытый ключ, отпечаток, выпускателя и т.д.
 
-Для извлечения информации о подписи мы добавили метод [ExtractCertificate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) в класс [SignatureField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield). Пожалуйста, взгляните на следующий фрагмент кода, демонстрирующий шаги по извлечению сертификата из объекта SignatureField:
+Чтобы извлечь информацию о подписи, мы представили метод [ExtractCertificate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) в классе [SignatureField](https://reference.aspose.com/pdf/ru/net/aspose.pdf.forms/signaturefield). Пожалуйста, посмотрите следующий фрагмент кода, который демонстрирует шаги для извлечения сертификата из объекта SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +169,7 @@ private static void ExtractCertificate()
 }
 ```
 
-Вы можете получить информацию об алгоритмах подписи документов.
+Вы можете получить информацию о алгоритмах подписи документа.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -201,7 +197,7 @@ private void GetSignaturesInfo()
 }
 ```
 
-Пример вывода для приведённого выше примера:
+Пример вывода для приведенного выше примера:
 ```
 Sha256
 Rsa
@@ -214,9 +210,9 @@ Signature1
 Вы можете использовать класс **SignaturesCompromiseDetector** для проверки цифровых подписей на компрометацию. Вызовите метод **Check()**, чтобы проверить подписи документа. Если компрометация подписей не обнаружена, метод вернет true. Если метод возвращает false, вы можете проверить, есть ли компрометированные подписи, используя свойство **HasCompromisedSignatures**, и получить список компрометированных подписей через свойство **CompromisedSignatures**.
 
 Чтобы проверить, охватывают ли существующие подписи весь документ, используйте свойство **SignaturesCoverage**. Это свойство может иметь следующие значения:
-- **Undefined** – если одна из подписей явно скомпрометирована или проверка покрытия не удалась.
-- **EntirelySigned** – если подписи охватывают весь документ.
-- **PartiallySigned** – если подписи не охватывают весь документ и есть неподписанный контент.
+- **Неопределено** – если одна из подписей явно скомпрометирована или проверка покрытия не удалась.
+- **Полностью подписано** – если подписи охватывают весь документ.
+- **Частично подписано** – если подписи не охватывают весь документ и есть неподписанный контент.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

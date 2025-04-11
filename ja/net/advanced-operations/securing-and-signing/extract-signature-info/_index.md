@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
-    "wordcount": "583",
+    "wordcount": "639",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,18 +74,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2024-11-25",
-    "description": "C#を使用してSignatureFieldクラスを使って署名フィールドから画像を抽出し、署名情報を抽出できます。"
+    "dateModified": "2025-04-11",
+    "description": "C#を使用してSignatureFieldクラスを使用して署名フィールドから画像を抽出し、署名情報を抽出できます。"
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
 ## 署名フィールドからの画像の抽出
 
-Aspose.PDF for .NETは、[SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield)クラスを使用してPDFファイルにデジタル署名をする機能をサポートしており、文書に署名する際に`SignatureAppearance`の画像を設定することもできます。現在、このAPIは署名フィールドに関連付けられた画像と署名情報を抽出する機能も提供しています。
+Aspose.PDF for .NETは、[SignatureField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturefield)クラスを使用してPDFファイルにデジタル署名を行う機能をサポートしており、文書に署名する際に`SignatureAppearance`の画像を設定することもできます。現在、このAPIは署名フィールドに関連付けられた画像だけでなく、署名情報を抽出する機能も提供しています。
 
-署名情報を抽出するために、SignatureFieldクラスに[ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage)メソッドを導入しました。以下のコードスニペットは、`SignatureField`オブジェクトから画像を抽出する手順を示しています。
+署名情報を抽出するために、SignatureFieldクラスに[ExtractImage](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturefield/methods/extractimage)メソッドを導入しました。以下のコードスニペットは、`SignatureField`オブジェクトから画像を抽出する手順を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -124,15 +124,11 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### 署名画像の置き換え
-
-時には、PDFファイル内の既存の署名フィールドの画像のみを置き換える必要がある場合があります。この要件を達成するために、まずPDFファイル内のフォームフィールドを検索し、署名フィールドを特定し、署名フィールドの寸法（矩形寸法）を取得し、同じ寸法に画像をスタンプする必要があります。
-
 ## 署名情報の抽出
 
-Aspose.PDF for .NETは、SignatureFieldクラスを使用してPDFファイルにデジタル署名をする機能をサポートしています。現在、証明書の有効性を判断することもできますが、証明書全体を抽出することはできません。抽出できる情報は、公開鍵、サムプリント、発行者などです。
+Aspose.PDF for .NETは、SignatureFieldクラスを使用してPDFファイルにデジタル署名を行う機能をサポートしています。現在、証明書の有効性を判断することもできますが、証明書全体を抽出することはできません。抽出可能な情報は、公開鍵、サムプリント、発行者などです。
 
-署名情報を抽出するために、[ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate)メソッドを[SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield)クラスに導入しました。以下のコードスニペットは、SignatureFieldオブジェクトから証明書を抽出する手順を示しています。
+署名情報を抽出するために、[ExtractCertificate](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturefield/methods/extractcertificate)メソッドを[SignatureField](https://reference.aspose.com/pdf/ja/net/aspose.pdf.forms/signaturefield)クラスに導入しました。以下のコードスニペットは、SignatureFieldオブジェクトから証明書を抽出する手順を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -173,7 +169,7 @@ private static void ExtractCertificate()
 }
 ```
 
-文書署名アルゴリズムに関する情報を取得できます。
+文書の署名アルゴリズムに関する情報を取得できます。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -209,19 +205,18 @@ Pkcs7
 Signature1
 ```
 
-
 ## 署名の妥協を確認する
 
 **SignaturesCompromiseDetector**クラスを使用して、デジタル署名の妥協を検証できます。
-**Check()**メソッドを呼び出して、ドキュメントの署名を確認します。
+**Check()**メソッドを呼び出して、文書の署名を確認します。
 署名の妥協が検出されない場合、メソッドはtrueを返します。
 メソッドがfalseを返す場合、**HasCompromisedSignatures**プロパティを使用して妥協した署名があるかどうかを確認し、**CompromisedSignatures**プロパティを通じて妥協した署名のリストを取得できます。
 
-既存の署名がドキュメント全体をカバーしているかどうかを確認するには、**SignaturesCoverage**プロパティを使用します。
+既存の署名が文書全体をカバーしているかどうかを確認するには、**SignaturesCoverage**プロパティを使用します。
 このプロパティは次の値を持つことができます：
-- **Undefined** – 署名の1つが明示的に妥協されているか、カバレッジチェックが失敗した場合。
-- **EntirelySigned** – 署名がドキュメント全体をカバーしている場合。
-- **PartiallySigned** – 署名がドキュメント全体をカバーしておらず、署名されていないコンテンツがある場合。
+- **未定義** – 署名の1つが明示的に妥協されているか、カバレッジチェックが失敗した場合。
+- **完全に署名済み** – 署名が文書全体をカバーしている場合。
+- **部分的に署名済み** – 署名が文書全体をカバーしておらず、署名されていないコンテンツがある場合。
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

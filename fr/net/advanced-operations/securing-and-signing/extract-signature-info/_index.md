@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
-    "wordcount": "583",
+    "wordcount": "922",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,14 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "Vous pouvez extraire des images du champ de signature et extraire des informations de signature en utilisant la classe SignatureField avec C#."
 }
 </script>
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-## Extraction d'image à partir du champ de signature
+## Extraction d'image du champ de signature
 
 Aspose.PDF for .NET prend en charge la fonctionnalité de signature numérique des fichiers PDF en utilisant la classe [SignatureField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/signaturefield) et lors de la signature du document, vous pouvez également définir une image pour `SignatureAppearance`. Maintenant, cette API fournit également la capacité d'extraire des informations de signature ainsi que l'image associée au champ de signature.
 
@@ -124,13 +124,9 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### Remplacer l'image de signature
-
-Parfois, vous pouvez avoir besoin de remplacer uniquement l'image d'un champ de signature déjà présent dans le fichier PDF. Pour accomplir cette exigence, nous devons d'abord rechercher les champs de formulaire dans le fichier PDF, identifier les champs de signature, obtenir les dimensions (dimensions rectangulaires) du champ de signature, puis tamponner une image sur les mêmes dimensions.
-
 ## Extraire des informations de signature
 
-Aspose.PDF for .NET prend en charge la fonctionnalité de signature numérique des fichiers PDF en utilisant la classe SignatureField. Actuellement, nous pouvons également déterminer la validité du certificat, mais nous ne pouvons pas extraire l'ensemble du certificat. Les informations qui peuvent être extraites sont une clé publique, une empreinte digitale, un émetteur, etc.
+Aspose.PDF for .NET prend en charge la fonctionnalité de signature numérique des fichiers PDF en utilisant la classe SignatureField. Actuellement, nous pouvons également déterminer la validité du certificat mais nous ne pouvons pas extraire l'ensemble du certificat. Les informations qui peuvent être extraites sont une clé publique, une empreinte digitale, un émetteur, etc.
 
 Pour extraire des informations de signature, nous avons introduit la méthode [ExtractCertificate](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) à la classe [SignatureField](https://reference.aspose.com/pdf/fr/net/aspose.pdf.forms/signaturefield). Veuillez consulter le code suivant qui démontre les étapes pour extraire le certificat de l'objet SignatureField :
 
@@ -201,7 +197,7 @@ private void GetSignaturesInfo()
 }
 ```
 
-Exemple de sortie pour l'exemple ci-dessus :
+Sortie d'exemple pour l'exemple ci-dessus :
 ```
 Sha256
 Rsa
@@ -212,15 +208,15 @@ Signature1
 ## Vérification des signatures pour compromission
 
 Vous pouvez utiliser la classe **SignaturesCompromiseDetector** pour vérifier les signatures numériques pour compromission.
-Appelez la méthode **Check()** pour vérifier les signatures du document.
+Appelez la méthode **Check()** pour vérifier les signatures du document. 
 Si aucune compromission de signature n'est détectée, la méthode renverra true.
 Si la méthode renvoie false, vous pouvez vérifier si des signatures compromises utilisent la propriété **HasCompromisedSignatures** et récupérer la liste des signatures compromises via la propriété **CompromisedSignatures**.
 
 Pour vérifier si les signatures existantes couvrent l'ensemble du document, utilisez la propriété **SignaturesCoverage**.
 Cette propriété peut avoir les valeurs suivantes :
-- **Undefined** – si l'une des signatures est explicitement compromise ou si la vérification de couverture a échoué.
-- **EntirelySigned** – si les signatures couvrent l'ensemble du document.
-- **PartiallySigned** – si les signatures ne couvrent pas l'ensemble du document et qu'il y a du contenu non signé.
+- **Indéfini** – si l'une des signatures est explicitement compromise ou si la vérification de couverture a échoué.
+- **EntièrementSigné** – si les signatures couvrent l'ensemble du document.
+- **PartiellementSigné** – si les signatures ne couvrent pas l'ensemble du document et qu'il y a du contenu non signé.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
