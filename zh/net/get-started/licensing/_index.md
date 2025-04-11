@@ -192,7 +192,7 @@ private static void SetMeteredLicense()
         // Add five pages
         AddPages(document, 5);
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "output.pdf");
 
         // Wait to be sure the transaction completed
