@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "266",
+    "wordcount": "165",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/render-webforms-datagridview-to-pdf/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
 }
 </script>
@@ -82,11 +82,11 @@ sitemap:
 
 ### 介绍
 
-通常，将 WebForm 转换为 PDF 文档需要使用额外的工具。本示例展示了如何使用 Aspose.PDF 库将 WebForm 渲染为 PDF。此示例中还包含 Aspose 导出 GridView 到 PDF 控件，以展示如何将 _GridView 控件渲染为 PDF 文档_。
+通常，将 WebForm 转换为 PDF 文档需要额外的工具。本示例展示了如何使用 Aspose.PDF 库将 WebForm 渲染为 PDF。此示例中还包含 Aspose 导出 GridView 到 PDF 控件，以展示如何将 _GridView 控件渲染为 PDF 文档_。
 
 ## 如何将 WebForm 渲染为 PDF
 
-将 WebForm 渲染为 PDF 的原始想法是创建一个辅助类，该类继承自 [System.Web.UI.Page](https://msdn.microsoft.com/en-US/library/System.Web.UI.Page.aspx)，并重写 Render 方法。</em></p>
+将 WebForm 渲染为 PDF 的原始想法是创建一个帮助类，该类继承自 [System.Web.UI.Page](https://msdn.microsoft.com/en-US/library/System.Web.UI.Page.aspx)，并重写 Render 方法。</em></p>
 
 ```csharp
 void Render(HtmlTextWriter writer)
@@ -103,20 +103,20 @@ void Render(HtmlTextWriter writer)
 }
 ```
 
-可以使用两个 Aspose 工具将 HTML 渲染为 PDF：
+有两个 Aspose 工具可以用于将 HTML 渲染为 PDF：
 
 - Aspose.PDF for .NET。
 - Aspose 导出 GridView 控件（基于 Aspose.PDF）。
 
 ## 源文件
 
-在本示例中，我们有 2 个演示报告。
+您可以在 [这里](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Visual%20Studio/Aspose.Pdf.GridViewExport) 找到整个项目的代码。
 
-- _Default.aspx_ 演示使用 Aspose.PDF 导出为 PDF。
-- _Report2.aspx_ 演示使用 Aspose 导出 GridView 控件（基于 Aspose.PDF）导出为 PDF。
+- _Default.aspx_ 演示了如何使用 Aspose.PDF 导出为 PDF。
+- _Report2.aspx_ 演示了如何使用 Aspose 导出 GridView 控件（基于 Aspose.PDF）导出为 PDF。
 
 ## 附加文件
 
-`Helpers\PdfPage.cs` - 包含一个辅助类，展示如何使用 Aspose.PDF API。</em>
+`Helpers\PdfPage.cs` - 包含一个帮助类，展示了如何使用 Aspose.PDF API。</em>
 
 Aspose.Pdf.GridViewExport 项目包含扩展的 GridView 控件，用于在 `Report2.aspx` 中演示。
