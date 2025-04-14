@@ -2,12 +2,10 @@
 title: Securing and signing PDF in C#
 linktitle: Securing and signing in PDF
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 210
 url: /net/securing-and-signing/
 description: This section describes the features of using a signature and securing your PDF document using C#
-lastmod: "2024-02-07"
+lastmod: "2024-11-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -30,7 +28,7 @@ aliases:
     },
     "genre": "pdf document generation",
     "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
-    "wordcount": "302",
+    "wordcount": "269",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -76,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2024-02-07",
+    "dateModified": "2024-11-25",
     "description": "This section describes the features of using a signature and securing your PDF document using C#"
 }
 </script>
@@ -100,6 +98,7 @@ It is recommended to avoid digital signatures with the SHA-1 digest algorithm du
 - [Set Privileges, Encrypt and Decrypt PDF File](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [Extract Image and Signature Information](/pdf/net/extract-image-and-signature-information/)
 - [Sign PDF Document From Smart Card](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Custom security handler](/pdf/net/custom-security-handler/)
 
 <script type="application/ld+json">
 {

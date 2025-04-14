@@ -2,12 +2,10 @@
 title: تأمين وتوقيع PDF في C#
 linktitle: التأمين والتوقيع في PDF
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 210
 url: /ar/net/securing-and-signing/
 description: يصف هذا القسم ميزات استخدام التوقيع وتأمين مستند PDF الخاص بك باستخدام C#
-lastmod: "2024-02-07"
+lastmod: "2024-11-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -28,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
-    "wordcount": "302",
+    "wordcount": "202",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,12 +72,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2024-02-07",
+    "dateModified": "2025-04-09",
     "description": "يصف هذا القسم ميزات استخدام التوقيع وتأمين مستند PDF الخاص بك باستخدام C#"
 }
 </script>
 
-يصف هذا القسم كيفية توقيع مستندات PDF رقميًا بشكل آمن باستخدام C#. يتم استخدام مصطلحي التوقيع الإلكتروني والتوقيع الرقمي بالتبادل، لكنهما في الأساس مختلفان. بشكل عام، يأتي التوقيع الرقمي مع ختم معتمد من [سلطة التصديق](https://en.wikipedia.org/wiki/Certificate_authority) ويستخدم لحماية المستند الموقع من التلاعب. بدلاً من ذلك، غالبًا ما يُستخدم التوقيع الإلكتروني لإظهار النية في توقيع مستند.
+يصف هذا القسم كيفية توقيع مستندات PDF رقميًا بشكل آمن باستخدام C#. تُستخدم مصطلحات التوقيع الإلكتروني والتوقيع الرقمي بالتبادل، لكنهما في الأساس مختلفان. بشكل عام، يأتي التوقيع الرقمي مع ختم معتمد من [سلطة التصديق](https://en.wikipedia.org/wiki/Certificate_authority) ويستخدم لحماية المستند الموقع من التلاعب. بدلاً من ذلك، يُستخدم التوقيع الإلكتروني غالبًا لإظهار النية في توقيع مستند.
 
 يدعم Aspose.PDF التوقيعات الرقمية:
 - PKCS1 مع خوارزمية توقيع RSA وتجزيء SHA-1.
@@ -98,6 +96,7 @@ sitemap:
 - [تعيين الامتيازات، تشفير وفك تشفير ملف PDF](/pdf/ar/net/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [استخراج معلومات الصورة والتوقيع](/pdf/ar/net/extract-image-and-signature-information/)
 - [توقيع مستند PDF من بطاقة ذكية](/pdf/ar/net/sign-pdf-document-from-smart-card/)
+- [معالج أمان مخصص](/pdf/ar/net/custom-security-handler/)
 
 <script type="application/ld+json">
 {

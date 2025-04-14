@@ -2,12 +2,10 @@
 title: Mengamankan dan menandatangani PDF di C#
 linktitle: Mengamankan dan menandatangani di PDF
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 210
 url: /id/net/securing-and-signing/
 description: Bagian ini menjelaskan fitur-fitur menggunakan tanda tangan dan mengamankan dokumen PDF Anda menggunakan C#
-lastmod: "2024-02-07"
+lastmod: "2024-11-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -28,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
-    "wordcount": "302",
+    "wordcount": "228",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,12 +72,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2024-02-07",
+    "dateModified": "2025-04-09",
     "description": "Bagian ini menjelaskan fitur-fitur menggunakan tanda tangan dan mengamankan dokumen PDF Anda menggunakan C#"
 }
 </script>
 
-Bagian ini menjelaskan bagaimana cara menandatangani dokumen PDF secara digital dengan aman menggunakan C#. Istilah tanda tangan elektronik dan tanda tangan digital digunakan secara bergantian, tetapi pada dasarnya keduanya berbeda. Secara umum, tanda tangan digital dilengkapi dengan segel yang disetujui oleh [otoritas sertifikasi](https://en.wikipedia.org/wiki/Certificate_authority) dan digunakan untuk melindungi dokumen yang ditandatangani dari pemalsuan. Sebaliknya, tanda tangan elektronik sering digunakan untuk menunjukkan niat untuk menandatangani dokumen.
+Bagian ini menjelaskan cara menandatangani dokumen PDF secara digital dengan aman menggunakan C#. Istilah tanda tangan elektronik dan tanda tangan digital digunakan secara bergantian, tetapi pada dasarnya keduanya berbeda. Secara umum, tanda tangan digital dilengkapi dengan segel yang disetujui oleh [otoritas sertifikasi](https://en.wikipedia.org/wiki/Certificate_authority) dan digunakan untuk melindungi dokumen yang ditandatangani dari pemalsuan. Sebaliknya, tanda tangan elektronik sering digunakan untuk menunjukkan niat untuk menandatangani dokumen.
 
 Aspose.PDF mendukung tanda tangan digital:
 - PKCS1 dengan algoritma tanda tangan RSA dan digest SHA-1.
@@ -95,9 +93,10 @@ Algoritma digest untuk PKCS7 terpisah:
 Disarankan untuk menghindari tanda tangan digital dengan algoritma digest SHA-1 karena ketidakamanannya.
 
 - [Menandatangani file PDF secara digital](/pdf/id/net/digitally-sign-pdf-file/)
-- [Atur Hak Istimewa, Enkripsi dan Dekripsi File PDF](/pdf/id/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Ekstrak Informasi Gambar dan Tanda Tangan](/pdf/id/net/extract-image-and-signature-information/)
-- [Tandatangani Dokumen PDF Dari Kartu Pintar](/pdf/id/net/sign-pdf-document-from-smart-card/)
+- [Mengatur Hak Istimewa, Mengenkripsi dan Mendekripsi File PDF](/pdf/id/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Mengekstrak Informasi Gambar dan Tanda Tangan](/pdf/id/net/extract-image-and-signature-information/)
+- [Menandatangani Dokumen PDF Dari Kartu Pintar](/pdf/id/net/sign-pdf-document-from-smart-card/)
+- [Penangan keamanan kustom](/pdf/id/net/custom-security-handler/)
 
 <script type="application/ld+json">
 {

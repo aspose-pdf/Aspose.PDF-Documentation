@@ -197,6 +197,105 @@ private static void Verify()
 }
 ```
 
+## 인증서 확인으로 디지털 서명 검증
+
+디지털 서명을 검증할 때 서명 인증서의 폐기 여부를 확인할 수 있습니다.
+
+불행히도 Aspose.PDF는 인증서 체인의 루트 또는 중간 인증서의 진위를 검증할 수 없습니다.  
+따라서 서명 인증서의 폐기 상태만 CRL 및 OCSP를 사용하여 확인됩니다.
+
+인증서 검증을 구성하려면 `ValidationOptions` 매개변수를 사용할 수 있습니다.
+
+`ValidationMode` 옵션은 세 가지 검증 모드를 제공합니다:
+
+- **없음** – 인증서를 확인하지 않습니다.
+- **엄격** – 인증서 폐기는 `Verify` 메서드의 결과에 영향을 미칩니다.
+- **단지 확인** – 서명 검증 결과에 영향을 미치지 않고 인증서를 확인할 수 있습니다.
+
+`ValidationMethod`는 인증서를 확인하는 데 사용되는 방법을 지정합니다:
+
+- **자동** – 자동 방법 선택. OCSP가 우선합니다. 폐기 상태는 성공적으로 확인을 수행한 방법에 의해 결정됩니다.
+- **Ocsp** – OCSP를 사용하여 폐기를 확인합니다.
+- **Crl** – CRL을 사용하여 폐기를 확인합니다.
+- **모두** – 두 방법 모두 인증서를 확인하는 데 사용됩니다. 검증이 통과하려면 두 방법 모두 인증서가 폐기되지 않았다고 확인해야 합니다.
+
+`CheckCertificateChain` 옵션은 서명에서 인증서 체인의 존재 여부를 확인할 수 있게 합니다.  
+인증서 체인이 발견되지 않으면 인증서 검증 결과는 `정의되지 않음`이 됩니다.
+
+검증 결과는 `ValidationResult` 유형의 출력 매개변수를 통해 얻을 수 있습니다.  
+가능한 상태는: `유효`, `무효`, 및 `정의되지 않음`.  
+`정의되지 않음`은 일반적으로 인증서를 검증할 수 없거나 인증서 체인이 누락되었음을 의미합니다.
+
+`CheckCertificateChain`과 `ValidationMode = ValidationMode.Strict`를 모두 설정하면 Adobe Acrobat의 동작과 일치합니다.  
+Adobe Acrobat이 인증서 체인을 찾을 수 없는 경우 폐기 상태를 확인하지 않으며 서명은 무효로 간주됩니다.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(filePath))
+    {
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Find all signatures
+            foreach (var signName in pdfSign.GetSignatureNames())
+            {
+                // Create a certificate validation option
+                var options = new Aspose.Pdf.Security.ValidationOptions();
+                options.ValidationMode = ValidationMode.Strict;
+                options.ValidationMethod = ValidationMethod.Auto;
+                options.CheckCertificateChain = true;
+                options.RequestTimeout = 20000;
+
+                Aspose.Pdf.Security.ValidationResult validationResult;
+                // Verify a digital signature
+                bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+                Console.WriteLine("Certificate validation resul: " + validationResult.Status);
+                Console.WriteLine("Is verified: " + verified);
+            } 
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(filePath);
+    
+    // Create an instance of PdfFileSignature for working with signatures in the document
+    using var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document);
+    
+    // Find all signatures
+    foreach (var signName in pdfSign.GetSignatureNames())
+    {
+        // Create a certificate validation option
+        var options = new Aspose.Pdf.Security.ValidationOptions();
+        options.ValidationMode = ValidationMode.Strict;
+        options.ValidationMethod = ValidationMethod.Auto;
+        options.CheckCertificateChain = true;
+        options.RequestTimeout = 20000;
+
+        Aspose.Pdf.Security.ValidationResult validationResult;
+        // Verify a digital signature
+        bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+        Console.WriteLine($"Certificate validation resul: {validationResult.Status}");
+        Console.WriteLine($"Is verified: {verified}" );
+    }             
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+
 ## 디지털 서명에 타임스탬프 추가하기
 
 ### 타임스탬프와 함께 PDF에 디지털 서명하는 방법

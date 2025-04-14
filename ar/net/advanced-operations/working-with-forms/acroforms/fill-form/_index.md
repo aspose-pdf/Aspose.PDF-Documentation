@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Fill AcroForm - Fill PDF Form using C#",
     "alternativeHeadline": "Effortlessly Fill PDF Forms with C# Integration",
-    "abstract": "تتيح ميزة ملء AcroForm الجديدة في مكتبة Aspose.PDF for .NET للمطورين ملء نماذج PDF بكفاءة برمجياً باستخدام C#. تعمل هذه الوظيفة على تبسيط عملية ملء حقول النموذج، مما يعزز الإنتاجية والدقة في إدارة مستندات PDF",
+    "abstract": "تتيح ميزة ملء AcroForm الجديدة في مكتبة Aspose.PDF for .NET للمطورين ملء نماذج PDF بكفاءة برمجياً باستخدام C#. تعمل هذه الوظيفة على تبسيط عملية تعبئة حقول النموذج، مما يعزز الإنتاجية والدقة في إدارة مستندات PDF",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Fill PDF Form, AcroForm, Aspose.PDF for .NET, fill PDF forms C#, TextBoxField, PDF document generation, form field value, PDF manipulation library, fill form field, C# PDF library",
-    "wordcount": "177",
+    "wordcount": "359",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,18 +74,21 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/fill-form/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "يمكنك ملء النماذج في مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF for .NET."
 }
 </script>
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## ملء حقل النموذج في مستند PDF
 
-لملء حقل النموذج، احصل على الحقل من مجموعة النموذج في كائن المستند. ثم قم بتعيين قيمة الحقل باستخدام خاصية القيمة للحقل.
+لتعبئة حقل النموذج، احصل على الحقل من مجموعة النموذج الخاصة بكائن Document واضبط قيمته باستخدام الخاصية المناسبة لنوع الحقل (مثل Value لحقول النص، Checked لمربعات الاختيار، أو Selected لصناديق القائمة).
 
-هذا المثال يختار TextBoxField ويقوم بتعيين قيمته باستخدام خاصية القيمة.
+في هذا المثال، يتم اختيار حقول مختلفة وضبط خصائصها.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -95,20 +98,68 @@ private static void FillFormField()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "FillFormField.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithSomeFields.pdf"))
     {
-        // Get a field
-        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
-        {
-            // Modify field value
-            textBoxField.Value = "Value to be filled in the field";
-        }
+        // Set value for TextBoxField
+        var textBoxField = document.Form["textField"] as Aspose.Pdf.Forms.TextBoxField;
+        textBoxField.Value = "Value to be filled in the field";
+
+        // Add option for ListBoxField and select it
+        var listBoxField = document.Form["listField"] as Aspose.Pdf.Forms.ListBoxField;
+        listBoxField.AddOption("Orange");
+        listBoxField.Selected = listBoxField.Options.Count;
+
+        // Set check for CheckboxField
+        var checkboxField = document.Form["checkField"] as Aspose.Pdf.Forms.CheckboxField;
+        checkboxField.Checked = true;
+
+        // Set check for first option of RadioButtonField
+        var radioField = document.Form["radioGroup"] as Aspose.Pdf.Forms.RadioButtonField;
+        radioField.Options[1].Selected = true;
 
         // Save PDF document
-        document.Save(dataDir + "FillFormField_out.pdf");
+        document.Save(dataDir + "DocumentWithSomeFields_out.pdf");
     }
 }
 ```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillFormField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "DocumentWithSomeFields.pdf");
+
+    // Set value for TextBoxField
+    var textBoxField = document.Form.OfType<Aspose.Pdf.Forms.TextBoxField>().First();
+    textBoxField.Value = "Value to be filled in the field";
+
+    // Add option for ListBoxField and select it
+    var listBoxField = document.Form.OfType<Aspose.Pdf.Forms.ListBoxField>().First();
+    listBoxField.AddOption("Orange");
+    listBoxField.Selected = listBoxField.Options.Count;
+
+    // Set check for CheckboxField
+    var checkboxField = document.Form.OfType<Aspose.Pdf.Forms.CheckboxField>().First();
+    checkboxField.Checked = true;
+
+    // Set check for first option of RadioButtonField
+    var radioField = document.Form.OfType<Aspose.Pdf.Forms.RadioButtonField>().First();
+    radioField.Options[1].Selected = true;
+
+    // Save PDF document
+    document.Save(dataDir + "DocumentWithSomeFields_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

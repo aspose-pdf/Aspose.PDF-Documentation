@@ -2,12 +2,10 @@
 title: 在 C# 中保护和签署 PDF
 linktitle: 在 PDF 中保护和签署
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 210
 url: /zh/net/securing-and-signing/
 description: 本节描述了使用 C# 对 PDF 文档进行签名和保护的功能
-lastmod: "2024-02-07"
+lastmod: "2024-11-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Securing and signing PDF in C#",
     "alternativeHeadline": "Securely Digitally Sign PDFs with C#",
-    "abstract": "发现使用 C# 保护和数字签署 PDF 文档的高级功能。此功能使用户能够应用各种算法和摘要选项的强大数字签名，确保文档的完整性和真实性。通过 Aspose.PDF 的全面签署功能增强您的 PDF 安全性，旨在与 .NET 应用程序无缝集成",
+    "abstract": "发现使用 C# 保护和数字签署 PDF 文档的高级功能。此功能使用户能够应用各种算法和摘要选项的强大数字签名，确保文档的完整性和真实性。通过 Aspose.PDF 提供的全面签署功能增强您的 PDF 安全性，旨在与 .NET 应用程序无缝集成。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
-    "wordcount": "302",
+    "wordcount": "130",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,12 +72,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2024-02-07",
+    "dateModified": "2025-04-09",
     "description": "本节描述了使用 C# 对 PDF 文档进行签名和保护的功能"
 }
 </script>
 
-本节描述了如何使用 C# 安全地数字签署 PDF 文档。电子签名和数字签名这两个术语可以互换使用，但本质上两者是不同的。更一般地说，数字签名附带一个 [认证机构](https://en.wikipedia.org/wiki/Certificate_authority) 批准的印章，用于保护已签署的文档不被篡改。相反，电子签名通常用于表明签署文档的意图。
+本节描述了如何使用 C# 安全地数字签署 PDF 文档。电子签名和数字签名这两个术语可以互换使用，但本质上两者是不同的。更一般地说，数字签名附带一个[认证机构](https://en.wikipedia.org/wiki/Certificate_authority)批准的印章，用于保护已签署的文档不被篡改。相反，电子签名通常用于表明签署文档的意图。
 
 Aspose.PDF 支持数字签名：
 - PKCS1 使用 RSA 签名算法和 SHA-1 摘要。
@@ -92,12 +90,13 @@ PKCS7 分离的摘要算法：
 - RSA - SHA-1、SHA-256、SHA-384、SHA-512。
 - ECDSA - SHA-256、SHA-384、SHA-512、SHA3-256、SHA3-384、SHA3-512。
 
-建议避免使用 SHA-1 摘要算法的数字签名，因为其不安全。
+建议避免使用 SHA-1 摘要算法的数字签名，因为其安全性较差。
 
 - [数字签署 PDF 文件](/pdf/zh/net/digitally-sign-pdf-file/)
 - [设置权限，加密和解密 PDF 文件](/pdf/zh/net/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [提取图像和签名信息](/pdf/zh/net/extract-image-and-signature-information/)
 - [从智能卡签署 PDF 文档](/pdf/zh/net/sign-pdf-document-from-smart-card/)
+- [自定义安全处理程序](/pdf/zh/net/custom-security-handler/)
 
 <script type="application/ld+json">
 {

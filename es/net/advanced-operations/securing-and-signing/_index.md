@@ -2,12 +2,10 @@
 title: Asegurando y firmando PDF en C#
 linktitle: Asegurando y firmando en PDF
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 210
 url: /es/net/securing-and-signing/
 description: Esta sección describe las características de usar una firma y asegurar su documento PDF utilizando C#
-lastmod: "2024-02-07"
+lastmod: "2024-11-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Securing and signing PDF in C#",
     "alternativeHeadline": "Securely Digitally Sign PDFs with C#",
-    "abstract": "Descubra las capacidades avanzadas de asegurar y firmar digitalmente documentos PDF utilizando C#. Esta función permite a los usuarios aplicar firmas digitales robustas con varios algoritmos y opciones de resumen, asegurando la integridad y autenticidad del documento. Mejore la seguridad de su PDF con las funcionalidades de firma integrales de Aspose.PDF diseñadas para una integración fluida en aplicaciones .NET",
+    "abstract": "Descubre las capacidades avanzadas de asegurar y firmar digitalmente documentos PDF utilizando C#. Esta característica permite a los usuarios aplicar firmas digitales robustas con varios algoritmos y opciones de resumen, asegurando la integridad y autenticidad del documento. Mejora la seguridad de tu PDF con las funcionalidades de firma integrales de Aspose.PDF diseñadas para una integración fluida en aplicaciones .NET",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
-    "wordcount": "302",
+    "wordcount": "236",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,18 +72,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2024-02-07",
+    "dateModified": "2025-04-09",
     "description": "Esta sección describe las características de usar una firma y asegurar su documento PDF utilizando C#"
 }
 </script>
 
-Esta sección describe cómo firmar digitalmente documentos PDF de manera segura utilizando C#. Los términos firma electrónica y firma digital se utilizan indistintamente, pero esencialmente son diferentes. Más generalmente, una firma digital viene con un [organismo de certificación](https://en.wikipedia.org/wiki/Certificate_authority) aprobado y se utiliza para proteger el documento firmado de manipulaciones. En cambio, una firma electrónica se utiliza a menudo para demostrar la intención de firmar un documento.
+Esta sección describe cómo firmar digitalmente documentos PDF de manera segura utilizando C#. Los términos firma electrónica y firma digital se utilizan indistintamente, pero esencialmente son diferentes. Más generalmente, una firma digital viene con un [autoridad de certificación](https://en.wikipedia.org/wiki/Certificate_authority) aprobada y se utiliza para proteger el documento firmado de manipulaciones. En cambio, una firma electrónica se utiliza a menudo para demostrar la intención de firmar un documento.
 
 Aspose.PDF admite firmas digitales:
 - PKCS1 con algoritmo de firma RSA y resumen SHA-1.
 - PKCS7 con algoritmo de firma RSA y resumen SHA-1.
 - PKCS7 separado con algoritmos de firma DSA, RSA y ECDSA. Los algoritmos de resumen admitidos dependen del algoritmo de firma.
-- Firma de marca de tiempo.
+- Firma con sello de tiempo.
 
 Algoritmos de resumen para PKCS7 separado:
 - DSA - SHA-1.
@@ -98,6 +96,7 @@ Se recomienda evitar firmas digitales con el algoritmo de resumen SHA-1 debido a
 - [Establecer privilegios, cifrar y descifrar archivo PDF](/pdf/es/net/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [Extraer información de imagen y firma](/pdf/es/net/extract-image-and-signature-information/)
 - [Firmar documento PDF desde tarjeta inteligente](/pdf/es/net/sign-pdf-document-from-smart-card/)
+- [Manejador de seguridad personalizado](/pdf/es/net/custom-security-handler/)
 
 <script type="application/ld+json">
 {

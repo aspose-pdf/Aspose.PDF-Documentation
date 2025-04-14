@@ -27,8 +27,7 @@ lastmod: "2024-10-23"
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "PDF AI Copilot, Aspose.PDF API, document summary, chat with documents, OpenAI Summary, OpenAI Chat, image descriptions, Llama Chat, AI document processing",
-    "wordcount": "1047",
+    "wordcount": "2697",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,13 +73,13 @@ lastmod: "2024-10-23"
         "@type": "WebPage",
         "@id": "/net/ai-copilot/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados."
+    "dateModified": "2025-04-08",
+    "description": "O recurso PDF AI Copilot capacita os usuários a melhorar o processamento de documentos PDF integrando capacidades avançadas de IA, incluindo resumo de documentos, funcionalidades de chat interativo e geração de descrições de imagens, simplificando fluxos de trabalho e melhorando a produtividade. Esta API inovadora facilita a interação sem costura com o conteúdo PDF, tornando-se uma ferramenta essencial para desenvolvedores e empresas que buscam otimizar a gestão de documentos."
 }
 </script>
 
 {{% alert color="primary" %}}
-**Aspose.PDF AI Copilot API** projetado para permitir que os usuários processem documentos PDF usando LLMs de diferentes provedores. Esta [API](https://reference.aspose.com/pdf/net/aspose.pdf.ai/) ajudará os usuários a construir aplicações de chatbot e integrar soluções PDF com LLMs.
+**Aspose.PDF AI Copilot API** projetada para permitir que os usuários processem documentos PDF usando LLMs de diferentes provedores. Esta [API](https://reference.aspose.com/pdf/pt/net/aspose.pdf.ai/) ajudará os usuários a construir aplicações de chatbot e integrar soluções PDF com LLMs.
 {{% /alert %}}
 
 ## Principais Recursos
@@ -93,7 +92,7 @@ lastmod: "2024-10-23"
 
 Atualmente, os seguintes copilotos estão disponíveis:
 
-[**OpenAI Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaisummarycopilot/) permite que os usuários gerem resumos a partir de documentos. Ele fornece uma maneira conveniente de criar resumos configurando opções como o modelo, temperatura, número de tokens, instruções do modelo, anexos de documentos e outros. O copiloto pode gerar resumos de forma assíncrona como texto, documentos e salvar os resumos em vários formatos. O código de demonstração fornecido mostra a criação de um cliente OpenAI, a configuração das opções do copiloto e o uso do SummaryCopilot para gerar e salvar resumos.
+[**OpenAI Summary**](https://reference.aspose.com/pdf/pt/net/aspose.pdf.ai/openaisummarycopilot/) permite que os usuários gerem resumos a partir de documentos. Ele fornece uma maneira conveniente de criar resumos configurando opções como o modelo, temperatura, número de tokens, instruções do modelo, anexos de documentos e outros. O copiloto pode gerar resumos de forma assíncrona como texto, documentos e salvar os resumos em vários formatos. O código de demonstração fornecido mostra a criação de um cliente OpenAI, a configuração das opções do copiloto e o uso do SummaryCopilot para gerar e salvar resumos.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -178,9 +177,9 @@ private static async Task GetSummary()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**OpenAI Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaichatcopilot/) é um copiloto de IA projetado para interações de chat com documentos. Ele facilita a geração de respostas a consultas dos usuários e a gestão de contexto. Os usuários podem configurar as opções do copiloto, como o modelo, temperatura, número de tokens, instruções do modelo, anexos de documentos e outros. O copiloto pode fornecer respostas a uma ou várias consultas, salvar respostas em vários formatos, salvar e excluir o contexto.
+[**OpenAI Chat**](https://reference.aspose.com/pdf/pt/net/aspose.pdf.ai/openaichatcopilot/) é um copiloto de IA projetado para interações de chat com documentos. Ele facilita a geração de respostas a consultas dos usuários e a gestão de contexto. Os usuários podem configurar as opções do copiloto, como o modelo, temperatura, número de tokens, instruções do modelo, anexos de documentos e outros. O copiloto pode fornecer respostas a uma ou várias consultas, salvar respostas em vários formatos, salvar e excluir o contexto.
 
-O código fornecido demonstra a criação de um cliente OpenAI, a configuração das opções do ChatCopilot e o uso do ChatCopilot para interagir com consultas dos usuários e gerenciar o contexto.
+O código fornecido demonstra a criação de um cliente OpenAI, configuração das opções do ChatCopilot e uso do ChatCopilot para interagir com consultas dos usuários e gerenciar contexto.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -303,9 +302,9 @@ private static async Task ChatWithDocument()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**OpenAI Image Description**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/openaiimagedescriptioncopilot/) é um copiloto de IA projetado para gerar descrições de imagens de imagens dentro de documentos PDF, bem como arquivos de imagem separados. Os usuários podem configurar as opções do copiloto, como o modelo, temperatura, número de tokens, instruções do modelo, anexos de documentos e outros. O copiloto fornece a capacidade de obter descrições de imagens para todos os documentos anexados de uma só vez.
+[**OpenAI Image Description**](https://reference.aspose.com/pdf/pt/net/aspose.pdf.ai/openaiimagedescriptioncopilot/) é um copiloto de IA projetado para gerar descrições de imagens de imagens dentro de documentos PDF, bem como arquivos de imagem separados. Os usuários podem configurar as opções do copiloto, como o modelo, temperatura, número de tokens, instruções do modelo, anexos de documentos e outros. O copiloto fornece a capacidade de obter descrições de imagens para todos os documentos anexados de uma só vez.
 
-O trecho de código fornecido demonstra a criação de um cliente OpenAI, a configuração das opções do ImageDescriptionCopilot e o uso do copiloto para obter descrições de imagens para documentos anexados. Além disso, há um método de extensão que permite adicionar descrições de imagens a imagens nos documentos anexados e salvar novos documentos no diretório fornecido.
+O trecho de código fornecido demonstra a criação de um cliente OpenAI, configuração das opções do ImageDescriptionCopilot e uso do copiloto para obter descrições de imagens para documentos anexados. Além disso, há um método de extensão que permite adicionar descrições de imagens a imagens nos documentos anexados e salvar novos documentos no diretório fornecido.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -394,9 +393,86 @@ private static async Task CreateImageDescriptions()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Chat**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) permite a criação de um cliente para enviar solicitações à API de conclusão de chat Llama.
+**OpenAI OCR** é um copiloto de IA projetado para extrair texto de documentos e imagens digitalizadas. Os usuários podem configurar as opções do copiloto, como o modelo, temperatura, número de tokens, instruções do modelo, anexos de documentos e outros.
+
+O trecho de código fornecido demonstra a criação de um cliente OpenAI, configuração das opções do ```OpenAIOcrCopilotOptions``` e uso do copiloto para obter texto de documentos e imagens digitalizadas.
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static async Task ExtractText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
+    // Create AI client
+    using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
+        //.WithOrganization("org_123")
+        .Build()) // Build
+    {
+        // Create copilot options
+        var options = Aspose.Pdf.AI.OpenAIOcrCopilotOptions
+            .Create() // Create options like this, or...
+            //.Create(options => { options.Model = OpenAIModels.Gpt4OMini; }) // ...create using delegate
+            .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4OMini) // The model should have vision capabilities
+            .WithDocument(dataDir + "ScannedDocument.pdf") // Attach document paths
+            .WithDocument(dataDir + "ImageWithText.jpg"); // Attach images
+
+        // Create copilot
+        Aspose.Pdf.AI.IOcrCopilot copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
+
+        // Get text recognitions
+        List<Aspose.Pdf.AI.TextRecognitionResult> textRecognitions = await copilot.GetTextRecognitionResultAsync();
+
+        // Access to the extracted text
+        string text = textRecognitions[0].OcrDetails[0].ExtractedText;
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static async Task ExtractText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
+    // Create AI client
+    using var openAiClient = Aspose.Pdf.AI.OpenAIClient
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
+        //.WithOrganization("org_123")
+        .Build(); // Build
+
+    // Create copilot options
+    var options = Aspose.Pdf.AI.OpenAIOcrCopilotOptions
+        .Create() // Create options like this, or...
+        //.Create(options => { options.Model = OpenAIModels.Gpt4OMini; }) // ...create using delegate
+        .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4OMini) // The model should have vision capabilities
+        .WithDocument(dataDir + "ScannedDocument.pdf") // Attach document paths
+        .WithDocument(dataDir + "ImageWithText.jpg"); // Attach images
+
+    // Create copilot
+    Aspose.Pdf.AI.IOcrCopilot copilot = Aspose.Pdf.AI.AICopilotFactory.CreateOcrCopilot(openAiClient, options);
+
+    // Get text recognitions
+    List<Aspose.Pdf.AI.TextRecognitionResult> textRecognitions = await copilot.GetTextRecognitionResultAsync();
+
+    // Access to the extracted text
+    string text = textRecognitions[0].OcrDetails[0].ExtractedText;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+[**Llama Chat**](https://reference.aspose.com/pdf/pt/net/aspose.pdf.ai/llamaclient/) permite a criação de um cliente para enviar solicitações à API de conclusão de chat Llama.
+
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -443,9 +519,9 @@ private static async Task ChatWithLlama()
 {{< /tab >}}
 {{< /tabs >}}
 
-[**Llama Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) permite que o cliente seja usado para criar o Summary Copilot.
+[**Llama Summary**](https://reference.aspose.com/pdf/pt/net/aspose.pdf.ai/llamaclient/) permite que o cliente seja usado para criar o Summary Copilot.
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

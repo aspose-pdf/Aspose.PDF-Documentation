@@ -197,6 +197,105 @@ private static void Verify()
 }
 ```
 
+## 使用证书检查验证数字签名
+
+在验证数字签名时，您可以检查签名证书的撤销状态。
+
+不幸的是，Aspose.PDF 无法验证证书链中的根证书或中间证书的真实性。  
+因此，仅使用 CRL 和 OCSP 检查签名证书的撤销状态。
+
+要配置证书验证，您可以使用 `ValidationOptions` 参数。
+
+`ValidationMode` 选项提供三种验证模式：
+
+- **None** – 不检查证书。
+- **Strict** – 证书撤销会影响 `Verify` 方法的结果。
+- **OnlyCheck** – 允许检查证书而不影响签名验证结果。
+
+`ValidationMethod` 指定用于检查证书的方法：
+
+- **Auto** – 自动方法选择。优先使用 OCSP。撤销状态由成功执行检查的方法确定。
+- **Ocsp** – 使用 OCSP 检查撤销。
+- **Crl** – 使用 CRL 检查撤销。
+- **All** – 使用两种方法检查证书。为了通过验证，两种方法都必须确认证书未被撤销。
+
+`CheckCertificateChain` 选项启用检查签名中是否存在证书链。  
+如果未找到证书链，则证书验证结果将为 `Undefined`。
+
+可以通过类型为 `ValidationResult` 的输出参数获取验证结果。  
+可能的状态为：`Valid`、`Invalid` 和 `Undefined`。  
+`Undefined` 通常意味着无法验证证书或缺少证书链。
+
+同时设置 `CheckCertificateChain` 和 `ValidationMode = ValidationMode.Strict` 对应于 Adobe Acrobat 的行为。  
+如果 Adobe Acrobat 找不到证书链，则不检查撤销状态，签名被视为无效。
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(filePath))
+    {
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Find all signatures
+            foreach (var signName in pdfSign.GetSignatureNames())
+            {
+                // Create a certificate validation option
+                var options = new Aspose.Pdf.Security.ValidationOptions();
+                options.ValidationMode = ValidationMode.Strict;
+                options.ValidationMethod = ValidationMethod.Auto;
+                options.CheckCertificateChain = true;
+                options.RequestTimeout = 20000;
+
+                Aspose.Pdf.Security.ValidationResult validationResult;
+                // Verify a digital signature
+                bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+                Console.WriteLine("Certificate validation resul: " + validationResult.Status);
+                Console.WriteLine("Is verified: " + verified);
+            } 
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(filePath);
+    
+    // Create an instance of PdfFileSignature for working with signatures in the document
+    using var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document);
+    
+    // Find all signatures
+    foreach (var signName in pdfSign.GetSignatureNames())
+    {
+        // Create a certificate validation option
+        var options = new Aspose.Pdf.Security.ValidationOptions();
+        options.ValidationMode = ValidationMode.Strict;
+        options.ValidationMethod = ValidationMethod.Auto;
+        options.CheckCertificateChain = true;
+        options.RequestTimeout = 20000;
+
+        Aspose.Pdf.Security.ValidationResult validationResult;
+        // Verify a digital signature
+        bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+        Console.WriteLine($"Certificate validation resul: {validationResult.Status}");
+        Console.WriteLine($"Is verified: {verified}" );
+    }             
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+
 ## 向数字签名添加时间戳
 
 ### 如何使用时间戳数字签署 PDF

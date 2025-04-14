@@ -197,6 +197,104 @@ private static void Verify()
 }
 ```
 
+## تحقق من التوقيعات الرقمية مع فحص الشهادة
+
+عند التحقق من توقيع رقمي، يمكنك التحقق من شهادة التوقيع للإلغاء.
+
+لسوء الحظ، لا يمكن لـ Aspose.PDF التحقق من صحة الشهادات الجذرية أو الوسيطة في سلسلة الشهادات.  
+لذلك، يتم التحقق فقط من حالة إلغاء شهادة التوقيع باستخدام CRL و OCSP.
+
+لتكوين التحقق من الشهادة، يمكنك استخدام معلمة `ValidationOptions`.
+
+تقدم خيار `ValidationMode` ثلاثة أوضاع للتحقق:
+
+- **لا شيء** – لا يتم التحقق من الشهادة.
+- **صارم** – يؤثر إلغاء الشهادة على نتيجة طريقة `Verify`.
+- **فقط تحقق** – يسمح بالتحقق من الشهادة دون التأثير على نتيجة التحقق من التوقيع.
+
+يحدد `ValidationMethod` الطريقة المستخدمة للتحقق من الشهادة:
+
+- **تلقائي** – اختيار طريقة تلقائية. يفضل OCSP. يتم تحديد حالة الإلغاء بواسطة الطريقة التي تنجح في إجراء التحقق.
+- **Ocsp** – يتم التحقق من الإلغاء باستخدام OCSP.
+- **Crl** – يتم التحقق من الإلغاء باستخدام CRL.
+- **الكل** – يتم استخدام كلا الطريقتين للتحقق من الشهادة. لكي ينجح التحقق، يجب أن تؤكد الطريقتان أن الشهادة غير ملغاة.
+
+يتيح خيار `CheckCertificateChain` التحقق من وجود سلسلة شهادات في التوقيع.  
+إذا لم يتم العثور على سلسلة الشهادات، ستكون نتيجة التحقق من الشهادة `غير محددة`.
+
+يمكن الحصول على نتيجة التحقق من خلال معلمة إخراج من نوع `ValidationResult`.  
+الحالات الممكنة هي: `صالح`، `غير صالح`، و `غير محدد`.  
+عادةً ما تعني `غير محدد` أنه لم يكن من الممكن التحقق من الشهادة أو أن سلسلة الشهادات مفقودة.
+
+تعيين كل من `CheckCertificateChain` و `ValidationMode = ValidationMode.Strict` يتوافق مع سلوك Adobe Acrobat.  
+إذا لم تتمكن Adobe Acrobat من العثور على سلسلة الشهادات، فإنها لا تتحقق من حالة الإلغاء، ويعتبر التوقيع غير صالح.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(filePath))
+    {
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Find all signatures
+            foreach (var signName in pdfSign.GetSignatureNames())
+            {
+                // Create a certificate validation option
+                var options = new Aspose.Pdf.Security.ValidationOptions();
+                options.ValidationMode = ValidationMode.Strict;
+                options.ValidationMethod = ValidationMethod.Auto;
+                options.CheckCertificateChain = true;
+                options.RequestTimeout = 20000;
+
+                Aspose.Pdf.Security.ValidationResult validationResult;
+                // Verify a digital signature
+                bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+                Console.WriteLine("Certificate validation resul: " + validationResult.Status);
+                Console.WriteLine("Is verified: " + verified);
+            } 
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(filePath);
+    
+    // Create an instance of PdfFileSignature for working with signatures in the document
+    using var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document);
+    
+    // Find all signatures
+    foreach (var signName in pdfSign.GetSignatureNames())
+    {
+        // Create a certificate validation option
+        var options = new Aspose.Pdf.Security.ValidationOptions();
+        options.ValidationMode = ValidationMode.Strict;
+        options.ValidationMethod = ValidationMethod.Auto;
+        options.CheckCertificateChain = true;
+        options.RequestTimeout = 20000;
+
+        Aspose.Pdf.Security.ValidationResult validationResult;
+        // Verify a digital signature
+        bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+        Console.WriteLine($"Certificate validation resul: {validationResult.Status}");
+        Console.WriteLine($"Is verified: {verified}" );
+    }             
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## إضافة طابع زمني إلى التوقيع الرقمي
 
 ### كيفية توقيع PDF رقميًا مع طابع زمني
