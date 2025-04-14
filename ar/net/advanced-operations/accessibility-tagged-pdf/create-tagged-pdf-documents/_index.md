@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/create-tagged-pdf/
-description: يشرح هذا المقال كيفية إنشاء عناصر الهيكل لوثيقة PDF مع علامات برمجياً باستخدام Aspose.PDF for .NET.
+description: يشرح هذا المقال كيفية إنشاء عناصر الهيكل لوثيقة PDF مع علامات برمجيًا باستخدام Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create Tagged PDF using C#",
     "alternativeHeadline": "Programmatically create tagged PDFs using C#",
-    "abstract": "إنشاء وثائق PDF مع علامات برمجياً باستخدام C# و Aspose.PDF، مع ضمان الامتثال لمعايير PDF/UA. تتيح هذه الميزة إنشاء وثائق PDF منظمة مع عناصر مثل العناوين والفقرات، داعمة الهياكل المتداخلة وتنسيق النص للوصول. تتضمن المكتبة أيضًا التحقق للتأكد من تلبية معايير PDF/UA",
+    "abstract": "إنشاء وثائق PDF مع علامات برمجيًا باستخدام C# و Aspose.PDF، مع ضمان الامتثال لمعايير PDF/UA. تتيح هذه الميزة إنشاء وثائق PDF منظمة مع عناصر مثل العناوين والفقرات، تدعم الهياكل المتداخلة وتنسيق النص للوصول. تتضمن المكتبة أيضًا التحقق للتأكد من تلبية معايير PDF/UA",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
-    "wordcount": "1163",
+    "wordcount": "2921",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,18 +74,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-tagged-pdf/"
     },
-    "dateModified": "2022-11-25",
-    "description": "يشرح هذا المقال كيفية إنشاء عناصر الهيكل لوثيقة PDF مع علامات برمجياً باستخدام Aspose.PDF for .NET."
+    "dateModified": "2025-03-26",
+    "description": "يشرح هذا المقال كيفية إنشاء عناصر الهيكل لوثيقة PDF مع علامات برمجيًا باستخدام Aspose.PDF for .NET."
 }
 </script>
 
-إنشاء PDF مع علامات يعني إضافة (أو إنشاء) عناصر معينة إلى الوثيقة التي ستتيح التحقق من الوثيقة وفقًا لمتطلبات PDF/UA. تُسمى هذه العناصر غالبًا عناصر الهيكل.
+إنشاء PDF مع علامات يعني إضافة (أو إنشاء) عناصر معينة إلى الوثيقة التي ستمكن الوثيقة من التحقق وفقًا لمتطلبات PDF/UA. تُسمى هذه العناصر غالبًا عناصر الهيكل.
 
 تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## إنشاء PDF مع علامات (سيناريو بسيط)
 
-لإنشاء عناصر الهيكل في وثيقة PDF مع علامات، تقدم Aspose.PDF طرقًا لإنشاء عنصر الهيكل باستخدام واجهة [ITaggedContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent). توضح مقتطفات الكود التالية كيفية إنشاء PDF مع علامات يحتوي على عنصرين: عنوان وفقرة.
+لإنشاء عناصر الهيكل في وثيقة PDF مع علامات، تقدم Aspose.PDF طرقًا لإنشاء عناصر الهيكل باستخدام واجهة [ITaggedContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent). تُظهر مقتطفات الكود التالية كيفية إنشاء PDF مع علامات يحتوي على عنصرين: عنوان وفقرة.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -182,7 +182,7 @@ private static void CreateTaggedPdfDocument01()
 
 في بعض الحالات، نحتاج إلى إنشاء هيكل أكثر تعقيدًا، على سبيل المثال، وضع اقتباسات في فقرة. 
 لإنشاء شجرة عناصر الهيكل، يجب علينا استخدام طريقة [AppendChild](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/element/methods/appendchild).
-توضح مقتطفات الكود التالية كيفية إنشاء شجرة عناصر الهيكل لوثيقة PDF مع علامات:
+تُظهر مقتطفات الكود التالية كيفية إنشاء شجرة عناصر الهيكل لوثيقة PDF مع علامات:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -261,6 +261,7 @@ private static void CreateTaggedPdfDocument02()
 
     Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
     paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
+    
     paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
             Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
@@ -294,7 +295,7 @@ private static void CreateTaggedPdfDocument02()
 
 ## تنسيق هيكل النص
 
-لتهيئة هيكل النص في وثيقة PDF مع علامات، تقدم Aspose.PDF خصائص [Font](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)، [FontSize](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)، [FontStyle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) و [ForegroundColor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) من فئة [StructureTextState](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate). توضح مقتطفات الكود التالية كيفية تنسيق هيكل النص في وثيقة PDF مع علامات:
+لتهيئة هيكل النص في وثيقة PDF مع علامات، تقدم Aspose.PDF خصائص [Font](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/font)، [FontSize](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize)، [FontStyle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) و [ForegroundColor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) من فئة [StructureTextState](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structuretextstate). تُظهر مقتطفات الكود التالية كيفية تنسيق هيكل النص في وثيقة PDF مع علامات:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -367,7 +368,7 @@ private static void AddStyle()
 
 ## توضيح عناصر الهيكل
 
-لتوضيح عناصر الهيكل في وثيقة PDF مع علامات، تقدم Aspose.PDF فئة [IllustrationElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/illustrationelement). توضح مقتطفات الكود التالية كيفية توضيح عناصر الهيكل في وثيقة PDF مع علامات:
+لتوضيح عناصر الهيكل في وثيقة PDF مع علامات، تقدم Aspose.PDF فئة [IllustrationElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/illustrationelement). تُظهر مقتطفات الكود التالية كيفية توضيح عناصر الهيكل في وثيقة PDF مع علامات:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -394,7 +395,7 @@ private static void IllustrateStructureElements()
         figure1.Title = "Image 1";
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
-
+        
         // Adjust position
         figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
@@ -436,7 +437,7 @@ private static void IllustrateStructureElements()
     figure1.Title = "Image 1";
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
-
+    
     // Adjust position
     figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
     {
@@ -466,9 +467,9 @@ private static void IllustrateStructureElements()
 - التحقق من حقول نموذج XFA.
 - التحقق من إعدادات الأمان.
 - التحقق من التنقل.
-- التحقق من التعليقات التوضيحية.
+- التحقق من التعليقات.
 
-توضح مقتطفات الكود أدناه كيفية التحقق من وثيقة PDF مع علامات. ستظهر المشاكل المقابلة في تقرير سجل XML.
+تُظهر مقتطفات الكود أدناه كيفية التحقق من وثيقة PDF مع علامات. ستظهر المشاكل المقابلة في تقرير سجل XML.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -507,7 +508,7 @@ private static void ValidateTaggedPdf()
 
 ## ضبط موضع هيكل النص
 
-تظهر مقتطفات الشيفرة التالية كيفية ضبط موضع هيكل النص في مستند PDF المTagged:
+تُظهر مقتطفات الكود التالية كيفية ضبط موضع هيكل النص في وثيقة PDF مع علامات:
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -601,6 +602,92 @@ private static void AdjustPosition()
 
     // Save Tagged PDF Document
     document.Save(dataDir + "AdjustTextPosition_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## إنشاء PDF مع علامات تلقائيًا مع تحويل PDF/UA-1
+
+تتيح Aspose.PDF إنشاء ترميز هيكل منطقي أساسي تلقائيًا عند تحويل وثيقة إلى PDF/UA-1. يمكن للمستخدمين بعد ذلك تحسين هذا الهيكل المنطقي الأساسي يدويًا، مما يوفر رؤى إضافية حول محتويات الوثيقة.
+
+لإنشاء هيكل وثيقة منطقي، قم بإنشاء مثيل من فئة [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf/autotaggingsettings/)، واضبط خاصية [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/ar/net/aspose.pdf/autotaggingsettings/enableautotagging/) على `true`، وخصصها إلى خاصية [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/).
+
+{{% alert color="warning" %}}
+إذا كانت الوثيقة تحتوي بالفعل على علامات هيكل منطقي، فإن تمكين التمييز التلقائي سيدمر الهيكل المنطقي الحالي وينشئ هيكلًا جديدًا.
+{{% /alert %}}
+
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertToPdfUAWithAutomaticTagging()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    {
+        // Create conversion options
+        Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+        // Create auto-tagging settings
+        // Aspose.Pdf.AutoTaggingSettings.Default may be used to set the same settings as given below
+        Aspose.Pdf.AutoTaggingSettings autoTaggingSettings = new Aspose.Pdf.AutoTaggingSettings();
+
+        // Enable auto-tagging during the conversion process
+        autoTaggingSettings.EnableAutoTagging = true;
+
+        // Use the heading recognition strategy that's optimal for the given document structure
+        autoTaggingSettings.HeadingRecognitionStrategy = Aspose.Pdf.HeadingRecognitionStrategy.Auto;
+
+        // Assign auto-tagging settings to be used during the conversion process
+        options.AutoTaggingSettings = autoTaggingSettings;
+
+        // During the conversion, the document logical structure will be automatically created
+        document.Convert(options);
+
+        // Save PDF document
+        document.Save(dataDir + "ConvertToPdfUAWithAutomaticTagging_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertToPdfUAWithAutomaticTagging()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
+
+    // Create conversion options
+    Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+    // Create auto-tagging settings
+    // Aspose.Pdf.AutoTaggingSettings.Default may be used to set the same settings as given below
+    Aspose.Pdf.AutoTaggingSettings autoTaggingSettings = new Aspose.Pdf.AutoTaggingSettings
+    {
+        // Enable auto-tagging during the conversion process
+        EnableAutoTagging = true,
+
+        // Use the heading recognition strategy that's optimal for the given document structure
+        HeadingRecognitionStrategy = Aspose.Pdf.HeadingRecognitionStrategy.Auto
+    };
+
+    // Assign auto-tagging settings to be used during the conversion process
+    options.AutoTaggingSettings = autoTaggingSettings;
+
+    // During the conversion, the document logical structure will be automatically created
+    document.Convert(options);
+
+    // Save PDF document
+    document.Save(dataDir + "ConvertToPdfUAWithAutomaticTagging_out.pdf");
 }
 ```
 {{< /tab >}}
