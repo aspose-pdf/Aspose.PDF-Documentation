@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-تعتبر منصة البيانات الوصفية القابلة للتوسيع (XMP) معيارًا تم إنشاؤه بواسطة شركة أدوبي. تم تطوير هذا المعيار لمعالجة وتخزين البيانات الوصفية القياسية والملكية. يمكن تضمين هذه البيانات الوصفية في تنسيقات ملفات مختلفة، ولكن في هذه المقالة سنركز فقط على تنسيق ملف PDF. سنرى كيف يمكننا تضمين البيانات الوصفية في ملف PDF باستخدام مساحة أسماء Aspose.Pdf.Facades في Aspose.PDF for .NET. سنستخدم فئة [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) للتلاعب بـ XMP في مستند PDF.
+تعتبر منصة البيانات الوصفية القابلة للتوسيع (XMP) معيارًا تم إنشاؤه بواسطة شركة أدوبي. تم تطوير هذا المعيار لمعالجة وتخزين البيانات الوصفية القياسية والملكية. يمكن تضمين هذه البيانات الوصفية في تنسيقات ملفات مختلفة، ولكن في هذه المقالة سنركز فقط على تنسيق ملف PDF. سنرى كيف يمكننا تضمين البيانات الوصفية في ملف PDF باستخدام مساحة أسماء Aspose.Pdf.Facades في Aspose.PDF for .NET. سنستخدم فئة [PdfXmpMetadata](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfxmpmetadata) للتلاعب بـ XMP في مستند PDF.
 
 {{% /alert %}}
 
@@ -88,7 +88,7 @@ draft: false
 ## الشرح
 
 للتلاعب بـ XMP باستخدام Aspose.Pdf.Facades، سنستخدم فئة [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class). سنستخدم هذه الفئة للتلاعب بخصائص البيانات الوصفية المحددة مسبقًا. تضيف فئة [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) هذه الخصائص إلى ملف PDF. كما أنها تساعد في فتح وحفظ ملفات PDF التي نضيف فيها البيانات الوصفية. لذا، باستخدام فئة [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class)، يمكننا بسهولة التلاعب بـ XMP في ملف PDF.
-سيساعدك مقتطف الكود التالي على فهم كيفية استخدام فئة [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) للعمل مع XMP:
+سيساعدك مقتطف الكود التالي على فهم كيفية استخدام فئة [PdfXmpMetadata](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfxmpmetadata) للعمل مع XMP:
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

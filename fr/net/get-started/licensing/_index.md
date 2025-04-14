@@ -93,13 +93,13 @@ Dans la version d'évaluation, vous ne pouvez traiter que les quatre premières 
 
 La licence peut être chargée à partir d'un fichier ou d'un objet de flux. La manière la plus simple de définir une licence est de placer le fichier de licence dans le même dossier que le fichier Aspose.PDF.dll et de spécifier le nom du fichier sans chemin, comme indiqué dans l'exemple ci-dessous.
 
-Si vous utilisez un autre composant Aspose pour .NET avec Aspose.PDF for .NET, veuillez spécifier l'espace de noms pour la licence comme [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license).
+Si vous utilisez un autre composant Aspose pour .NET avec Aspose.PDF for .NET, veuillez spécifier l'espace de noms pour la licence comme [Aspose.Pdf.License](https://reference.aspose.com/pdf/fr/net/aspose.pdf/license).
 
 ### Chargement d'une licence à partir d'un fichier
 
 La manière la plus simple d'appliquer une licence est de placer le fichier de licence dans le même dossier que le fichier Aspose.PDF.dll et de spécifier simplement le nom du fichier sans chemin.
 
-Lorsque vous appelez la méthode [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index), le nom de la licence que vous passez doit être celui de votre fichier de licence. Par exemple, si vous changez le nom du fichier de licence en "Aspose.PDF.lic.xml", passez ce nom de fichier à la méthode Pdf.SetLicense(…).
+Lorsque vous appelez la méthode [SetLicense](https://reference.aspose.com/pdf/fr/net/aspose.pdf/license/methods/setlicense/index), le nom de la licence que vous passez doit être celui de votre fichier de licence. Par exemple, si vous changez le nom du fichier de licence en "Aspose.PDF.lic.xml", passez ce nom de fichier à la méthode Pdf.SetLicense(…).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -172,8 +172,6 @@ if (!isLicensed)
 La méthode `Metered.GetConsumptionCredit()` est utilisée pour obtenir des informations sur les crédits de consommation.
 La méthode `Metered.GetConsumptionQuantity()` est utilisée pour obtenir des informations sur la taille du fichier de consommation.
 
-Exemple :
-
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetMeteredLicense()
@@ -184,24 +182,36 @@ private static void SetMeteredLicense()
     var metered = new Aspose.Pdf.Metered();
     // Access the setMeteredKey property and pass public and private keys as parameters
     metered.SetMeteredKey("your public key", "your private key");
+    // Get current Consumption Credit and Quantity
+    var currentMonthCreditsSpent = Aspose.Pdf.Metered.GetConsumptionCredit();
+    var currentMonthConsumedMegabytes = Aspose.Pdf.Metered.GetConsumptionQuantity();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-       // Add five pages
-       AddPages(document, 5);
-       // Save the document
-       document.Save(dataDir + "output.pdf")
+        // Add five pages
+        AddPages(document, 5);
+
+        // Save PDF document
+        document.Save(dataDir + "output.pdf");
+
+        // Wait to be sure the transaction completed
+        System.Threading.Thread.Sleep(10000);
+        // Get current Consumption Credit and Quantity
+        var nowCredit = Aspose.Pdf.Metered.GetConsumptionCredit();
+        var nowQuantity = Aspose.Pdf.Metered.GetConsumptionQuantity();
+        Console.WriteLine("Credit: was={0} now={1} difference={2}", currentMonthCreditsSpent, nowCredit, nowCredit - currentMonthCreditsSpent);
+        Console.WriteLine("Quantity: was={0} now={1} difference={2}", currentMonthConsumedMegabytes, nowQuantity, nowQuantity - currentMonthConsumedMegabytes); 
     }
 }
 
 private static void AddPages(Document document, int n)
 {
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         document.Pages.Add();
     }
-}   
+} 
 ```
 
 __Meilleures pratiques pour la licence à la consommation__

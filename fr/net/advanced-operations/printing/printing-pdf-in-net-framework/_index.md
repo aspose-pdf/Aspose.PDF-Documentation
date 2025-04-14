@@ -85,7 +85,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 Cet article décrit comment imprimer un fichier PDF sur l'imprimante par défaut en utilisant les paramètres d'imprimante et de page en C#.
 
-La classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) vous permet d'imprimer un fichier PDF sur l'imprimante par défaut. Vous devez créer un objet PdfViewer et ouvrir le PDF en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Pour spécifier différents paramètres d'impression, utilisez les classes [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) et [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/). Enfin, appelez la méthode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) pour imprimer le PDF sur l'imprimante par défaut. Le code suivant montre comment imprimer un PDF sur l'imprimante par défaut avec les paramètres d'imprimante et de page.
+La classe [PdfViewer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfviewer) vous permet d'imprimer un fichier PDF sur l'imprimante par défaut. Vous devez créer un objet PdfViewer et ouvrir le PDF en utilisant la méthode [BindPdf](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Pour spécifier différents paramètres d'impression, utilisez les classes [PageSettings](https://reference.aspose.com/pdf/fr/net/aspose.pdf.printing/pagesettings/) et [PrinterSettings](https://reference.aspose.com/pdf/fr/net/aspose.pdf.printing/printersettings/). Enfin, appelez la méthode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) pour imprimer le PDF sur l'imprimante par défaut. Le code suivant montre comment imprimer un PDF sur l'imprimante par défaut avec les paramètres d'imprimante et de page.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -261,7 +261,7 @@ private static void PrintWithPrintDialog()
  
 Depuis la version 24.4, il est possible de choisir la source de papier par taille de page PDF dans la boîte de dialogue d'impression. Le code suivant permet de choisir un bac d'imprimante en fonction de la taille de la page PDF.
 
-Cette préférence peut être activée ou désactivée en utilisant la propriété [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/).
+Cette préférence peut être activée ou désactivée en utilisant la propriété [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/picktraybypdfsize/).
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

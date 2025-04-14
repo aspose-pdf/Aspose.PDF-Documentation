@@ -93,13 +93,13 @@ sitemap:
 
 Лицензия может быть загружена из файла или объекта потока. Самый простой способ установить лицензию — поместить файл лицензии в ту же папку, что и файл Aspose.PDF.dll, и указать имя файла без пути, как показано в примере ниже.
 
-Если вы используете любой другой компонент Aspose для .NET вместе с Aspose.PDF for .NET, пожалуйста, укажите пространство имен для лицензии, например [Aspose.Pdf.License](https://reference.aspose.com/pdf/net/aspose.pdf/license).
+Если вы используете любой другой компонент Aspose для .NET вместе с Aspose.PDF for .NET, пожалуйста, укажите пространство имен для лицензии, например [Aspose.Pdf.License](https://reference.aspose.com/pdf/ru/net/aspose.pdf/license).
 
 ### Загрузка лицензии из файла
 
 Самый простой способ применить лицензию — поместить файл лицензии в ту же папку, что и файл Aspose.PDF.dll, и указать только имя файла без пути.
 
-Когда вы вызываете метод [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index), имя лицензии, которое вы передаете, должно соответствовать имени вашего файла лицензии. Например, если вы измените имя файла лицензии на "Aspose.PDF.lic.xml", передайте это имя файла в метод Pdf.SetLicense(…).
+Когда вы вызываете метод [SetLicense](https://reference.aspose.com/pdf/ru/net/aspose.pdf/license/methods/setlicense/index), имя лицензии, которое вы передаете, должно соответствовать имени вашего файла лицензии. Например, если вы измените имя файла лицензии на "Aspose.PDF.lic.xml", передайте это имя файла в метод Pdf.SetLicense(…).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -172,8 +172,6 @@ if (!isLicensed)
 Метод `Metered.GetConsumptionCredit()` используется для получения информации о кредитах потребления.
 Метод `Metered.GetConsumptionQuantity()` используется для получения информации о размере файла потребления.
 
-Пример:
-
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetMeteredLicense()
@@ -184,24 +182,36 @@ private static void SetMeteredLicense()
     var metered = new Aspose.Pdf.Metered();
     // Access the setMeteredKey property and pass public and private keys as parameters
     metered.SetMeteredKey("your public key", "your private key");
+    // Get current Consumption Credit and Quantity
+    var currentMonthCreditsSpent = Aspose.Pdf.Metered.GetConsumptionCredit();
+    var currentMonthConsumedMegabytes = Aspose.Pdf.Metered.GetConsumptionQuantity();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-       // Add five pages
-       AddPages(document, 5);
-       // Save the document
-       document.Save(dataDir + "output.pdf")
+        // Add five pages
+        AddPages(document, 5);
+
+        // Save PDF document
+        document.Save(dataDir + "output.pdf");
+
+        // Wait to be sure the transaction completed
+        System.Threading.Thread.Sleep(10000);
+        // Get current Consumption Credit and Quantity
+        var nowCredit = Aspose.Pdf.Metered.GetConsumptionCredit();
+        var nowQuantity = Aspose.Pdf.Metered.GetConsumptionQuantity();
+        Console.WriteLine("Credit: was={0} now={1} difference={2}", currentMonthCreditsSpent, nowCredit, nowCredit - currentMonthCreditsSpent);
+        Console.WriteLine("Quantity: was={0} now={1} difference={2}", currentMonthConsumedMegabytes, nowQuantity, nowQuantity - currentMonthConsumedMegabytes); 
     }
 }
 
 private static void AddPages(Document document, int n)
 {
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         document.Pages.Add();
     }
-}   
+}
 ```
 
 __Лучшие практики для лицензирования с учетом использования__

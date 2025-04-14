@@ -1,12 +1,12 @@
 ---
-title: Formats de fichiers pris en charge
-linktitle: Formats de fichiers pris en charge
+title: Formats de Fichier Supportés
+linktitle: Formats de Fichier Supportés
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /fr/net/supported-file-formats/
-description: Cette page montre quels formats de fichiers Aspose.PDF for .NET peut charger et enregistrer.
+description: Cette page montre quels Aspose.PDF for .NET peuvent charger et enregistrer des formats de fichier.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Supported File Formats",
     "alternativeHeadline": "Aspose.PDF for .NET Supports Extensive File Formats in C#",
-    "abstract": "Aspose.PDF for .NET prend désormais en charge un large éventail de formats de fichiers pour le chargement et l'enregistrement, améliorant la polyvalence pour les développeurs. Cette fonctionnalité inclut des formats populaires tels que PDF, EPUB, HTML et SVG, répondant à divers besoins de traitement de documents. Découvrez un support complet des formats de fichiers qui rationalise la manipulation des PDF au sein de vos applications.",
+    "abstract": "Aspose.PDF for .NET prend désormais en charge une large gamme de formats de fichier pour le chargement et l'enregistrement, améliorant la polyvalence pour les développeurs. Cette fonctionnalité inclut des formats populaires tels que PDF, EPUB, HTML et SVG, répondant à divers besoins de traitement de documents. Découvrez un support complet des formats de fichier qui rationalise la manipulation de PDF au sein de vos applications.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "566",
+    "wordcount": "619",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,12 +73,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/supported-file-formats/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
 
-Le tableau suivant indique les formats de fichiers que Aspose.PDF for .NET peut charger et enregistrer.
+Le tableau suivant indique les formats de fichier que Aspose.PDF for .NET peut charger et enregistrer.
 
 |**Format**|**Description**|**Charger**|**Enregistrer**|**Remarques**|
 | :- | :- | :- | :- | :- |
@@ -98,6 +98,7 @@ Le tableau suivant indique les formats de fichiers que Aspose.PDF for .NET peut 
 |[OFD](https://en.wikipedia.org/wiki/OFD)|Le format OFD fait référence à "Document à mise en page fixe ouvert", établi comme norme nationale de la Chine pour le stockage de fichiers électroniques, utilisé comme alternative au format PDF populaire.|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Enregistre le document dans le tableur Microsoft Excel| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Enregistre le document dans le format Microsoft Excel 2007| |{{< emoticons/tick >}}| |
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Saves le document dans le format XLSM qui est un type de fichiers de tableur qui supportent les Macros.||{{< emoticons/tick >}} | |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Enregistre le document dans le format des présentations Microsoft PowerPoint| |{{< emoticons/tick >}}| |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Enregistre le document dans le format Microsoft Word| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Enregistre le document dans le format Microsoft Word| |{{< emoticons/tick >}}| |

@@ -1,6 +1,6 @@
 ---
-title: PDFをPDF/A形式に変換
-linktitle: PDFをPDF/A形式に変換
+title: PDFをPDF/A形式に変換する
+linktitle: PDFをPDF/A形式に変換する
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
@@ -73,12 +73,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2025-03-26",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
 }
 </script>
 
 **Aspose.PDF for .NET**は、PDFファイルを<abbr title="Portable Document Format / A">PDF/A</abbr>準拠のPDFファイルに変換することを可能にします。その前に、ファイルを検証する必要があります。このトピックでは、その方法を説明します。
+
+- [PDFをPDF/A-1bに変換](#csharp-convert-pdf-to-a1b)
+- [PDFをPDF/A-3bに変換](#csharp-convert-pdf-to-a3b)
+- [PDFをPDF/A-4に変換](#csharp-convert-pdf-to-a4)
 
 {{% alert color="primary" %}}
 
@@ -89,7 +93,7 @@ sitemap:
 DocumentクラスのConvertメソッドを使用してファイルを変換します。PDFをPDF/A準拠のファイルに変換する前に、Validateメソッドを使用してPDFを検証します。検証結果はXMLファイルに保存され、その結果もConvertメソッドに渡されます。また、ConvertErrorAction列挙体を使用して、変換できない要素のアクションを指定することもできます。
 
 {{% alert color="success" %}}
-**PDFをPDF/Aにオンラインで変換してみてください**
+**PDFをPDF/Aにオンラインで変換してみる**
 
 Aspose.PDF for .NETは、機能と品質を調査するために試すことができるオンライン無料アプリケーション["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)を提供しています。
 
@@ -102,6 +106,8 @@ Aspose.PDF for .NETは、機能と品質を調査するために試すことが�
 私たちは、次の標準をサポートしています：PDF/A-1b、PDF/A-1a、PDF/A-2b、PDF/A-2u、PDF/A-2a、PDF/A-3b、PDF/A-3u、PDF/A-3a、PDF/A-4、PDF/A-4e、PDF/A-4f。
 
 ## PDFファイルをPDF/A-1bに変換
+
+<a name="csharp-convert-pdf-to-a1b" id="csharp-convert-pdf-to-a1b"><strong>PDFをPDF/A-1bに変換</strong></a>
 
 次のコードスニペットは、PDFファイルをPDF/A-1b準拠のPDFに変換する方法を示しています。
 
@@ -191,6 +197,8 @@ private static void ValidatePdfAStandard()
 
 ## PDFファイルをPDF/A-3bに変換
 
+<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>PDFをPDF/A-3bに変換</strong></a>
+
 Aspose.PDF for .NETは、PDFファイルをPDF/A-3b形式に変換する機能もサポートしています。
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -237,6 +245,8 @@ private static void ConvertPdfToPdfA3b()
 {{< /tabs >}}
 
 ## PDFファイルをPDF/A-4に変換
+
+<a name="csharp-convert-pdf-to-a4" id="csharp-convert-pdf-to-a4"><strong>PDFをPDF/A-4に変換</strong></a>
 
 Aspose.PDF for .NETは、PDFファイルをPDF/A-4形式に変換する機能もサポートしています。
 
@@ -292,7 +302,7 @@ private static void ConvertPdfToPdfA4()
 ## PDF/Aファイルに添付ファイルを追加
 
 PDF/A準拠の文書にファイルを添付する必要がある場合は、Aspose.PDF.PdfFormat列挙体からPDF_A_3A値を使用することをお勧めします。
-PDF/A-3aは、PDF/A準拠のファイルに任意のファイル形式を添付ファイルとして添付する機能を提供する形式です。
+PDF/A-3aは、PDF/A準拠のファイルに任意のファイル形式を添付する機能を提供する形式です。
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

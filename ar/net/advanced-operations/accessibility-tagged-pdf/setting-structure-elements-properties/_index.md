@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-لتعيين خصائص عناصر الهيكل في مستند PDF مع علامات، تقدم Aspose.PDF طرق [CreateSectElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) و [CreateHeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) من واجهة [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent).
+لتعيين خصائص عناصر الهيكل في مستند PDF مع علامات، تقدم Aspose.PDF طرق [CreateSectElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent/methods/createsectelement) و [CreateHeaderElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent/methods/createheaderelement/index) من واجهة [ITaggedContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent).
 
 تظهر مقتطفات الكود التالية كيفية تعيين خصائص عناصر الهيكل لمستند PDF مع علامات:
 
@@ -168,7 +168,7 @@ private static void SetProperties()
 
 ## إعداد عناصر الهيكل النصية
 
-لتعيين عناصر الهيكل النصية لمستند PDF مع علامات، تقدم Aspose.PDF فئة [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). تظهر مقتطفات الكود التالية كيفية تعيين عناصر الهيكل النصية لمستند PDF مع علامات:
+لتعيين عناصر الهيكل النصية لمستند PDF مع علامات، تقدم Aspose.PDF فئة [ParagraphElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/paragraphelement). تظهر مقتطفات الكود التالية كيفية تعيين عناصر الهيكل النصية لمستند PDF مع علامات:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -241,7 +241,7 @@ private static void SetTextElements()
 
 ## إعداد عناصر الهيكل النصية الكتلية
 
-لتعيين عناصر الهيكل النصية الكتلية لمستند PDF مع علامات، تقدم Aspose.PDF فئات [HeaderElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/headerelement) و [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). يمكنك إضافة كائنات من هذه الفئات كأطفال لكائن [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement).
+لتعيين عناصر الهيكل النصية الكتلية لمستند PDF مع علامات، تقدم Aspose.PDF فئات [HeaderElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/headerelement) و [ParagraphElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/paragraphelement). يمكنك إضافة كائنات من هذه الفئات كأطفال لكائن [StructureElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structureelement).
 تظهر مقتطفات الكود التالية كيفية تعيين عناصر الهيكل النصية الكتلية لمستند PDF مع علامات:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -349,7 +349,7 @@ private static void SetTextBlockElements()
 
 ## إعداد عناصر الهيكل المضمنة
 
-لتعيين عناصر الهيكل المضمنة لمستند PDF مع علامات، تقدم Aspose.PDF فئات [SpanElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/spanelement) و [ParagraphElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/paragraphelement). يمكنك إضافة كائنات من هذه الفئات كأطفال لكائن [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement) . تظهر مقتطفات الكود التالية كيفية تعيين عناصر الهيكل المضمنة لمستند PDF مع علامات:
+لتعيين عناصر الهيكل المضمنة لمستند PDF مع علامات، تقدم Aspose.PDF فئات [SpanElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/spanelement) و [ParagraphElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/paragraphelement). يمكنك إضافة كائنات من هذه الفئات كأطفال لكائن [StructureElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structureelement) . تظهر مقتطفات الكود التالية كيفية تعيين عناصر الهيكل المضمنة لمستند PDF مع علامات:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -588,7 +588,7 @@ private static void SetInlineElements()
 
 ## إعداد اسم العلامة المخصصة
 
-لتعيين اسم علامة مخصصة لعناصر مستند PDF مع علامات، تقدم Aspose.PDF طريقة [SetTag](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/methods/settag) من فئة StructureElement للعناصر. تظهر مقتطفات الكود التالية كيفية تعيين اسم علامة مخصصة:
+لتعيين اسم علامة مخصصة لعناصر مستند PDF مع علامات، تقدم Aspose.PDF طريقة [SetTag](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/structureelement/methods/settag) من فئة StructureElement للعناصر. تظهر مقتطفات الكود التالية كيفية تعيين اسم علامة مخصصة:
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -733,7 +733,7 @@ private static void SetTagName()
 
 **تدعم هذه الميزة الإصدار 19.4 أو أعلى.**
 
-لتعيين عناصر الهيكل المرتبطة في مستند PDF مع علامات، تقدم Aspose.PDF طريقة [CreateLinkElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) من واجهة [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). تظهر مقتطفات الكود التالية كيفية تعيين عناصر الهيكل في فقرة مع نص مستند PDF مع علامات:
+لتعيين عناصر الهيكل المرتبطة في مستند PDF مع علامات، تقدم Aspose.PDF طريقة [CreateLinkElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent/methods/createlinkelement) من واجهة [ITaggedContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent). تظهر مقتطفات الكود التالية كيفية تعيين عناصر الهيكل في فقرة مع نص مستند PDF مع علامات:
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -1077,7 +1077,7 @@ private static void AddLinkElement()
 
 ## إعداد عنصر الهيكل الملاحظات
 
-تتيح لك واجهة برمجة التطبيقات Aspose.PDF for .NET أيضًا إضافة [NoteElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/noteelement) في مستند PDF مع علامات. تظهر مقتطفات الكود التالية كيفية إضافة عنصر الملاحظة في مستند PDF مع علامات:
+تتيح لك واجهة برمجة التطبيقات Aspose.PDF for .NET أيضًا إضافة [NoteElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/noteelement) في مستند PDF مع علامات. تظهر مقتطفات الكود التالية كيفية إضافة عنصر الملاحظة في مستند PDF مع علامات:
 
 {{< tabs tabID="8" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

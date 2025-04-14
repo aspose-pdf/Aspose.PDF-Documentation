@@ -2,12 +2,10 @@
 title: C#でのPDFのセキュリティと署名
 linktitle: PDFのセキュリティと署名
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 210
 url: /ja/net/securing-and-signing/
-description: このセクションでは、C#を使用してPDFドキュメントに署名を付け、セキュリティを確保する機能について説明します。
-lastmod: "2024-02-07"
+description: このセクションでは、C#を使用して署名を行い、PDFドキュメントを保護する機能について説明します。
+lastmod: "2024-11-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Securing and signing PDF in C#",
     "alternativeHeadline": "Securely Digitally Sign PDFs with C#",
-    "abstract": "C#を使用してPDFドキュメントのセキュリティとデジタル署名の高度な機能を発見してください。この機能により、ユーザーはさまざまなアルゴリズムとダイジェストオプションを使用して堅牢なデジタル署名を適用でき、ドキュメントの整合性と真正性を確保します。Aspose.PDFの包括的な署名機能を使用して、.NETアプリケーションにシームレスに統合されたPDFセキュリティを強化します。",
+    "abstract": "C#を使用してPDFドキュメントを保護し、デジタル署名する高度な機能を発見してください。この機能により、ユーザーはさまざまなアルゴリズムとダイジェストオプションを使用して堅牢なデジタル署名を適用でき、ドキュメントの整合性と真正性を確保します。Aspose.PDFの包括的な署名機能を使用して、.NETアプリケーションへのシームレスな統合を実現し、PDFのセキュリティを強化します。",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
-    "wordcount": "302",
+    "wordcount": "105",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,12 +72,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2024-02-07",
-    "description": "このセクションでは、C#を使用してPDFドキュメントに署名を付け、セキュリティを確保する機能について説明します。"
+    "dateModified": "2025-04-09",
+    "description": "このセクションでは、C#を使用して署名を行い、PDFドキュメントを保護する機能について説明します。"
 }
 </script>
 
-このセクションでは、C#を使用してPDFドキュメントに安全にデジタル署名する方法について説明します。電子署名とデジタル署名という用語は互換的に使用されますが、基本的には異なります。一般的に、デジタル署名は[認証機関](https://en.wikipedia.org/wiki/Certificate_authority)によって承認された印章を伴い、署名されたドキュメントを改ざんから保護するために使用されます。一方、電子署名は、ドキュメントに署名する意図を示すために使用されることがよくあります。
+このセクションでは、C#を使用してPDFドキュメントに安全にデジタル署名する方法について説明します。電子署名とデジタル署名という用語は互換的に使用されますが、基本的には異なります。一般的に、デジタル署名は[認証機関](https://en.wikipedia.org/wiki/Certificate_authority)によって承認された印章を伴い、署名されたドキュメントを改ざんから保護するために使用されます。一方、電子署名は、ドキュメントに署名する意図を示すために使用されることが多いです。
 
 Aspose.PDFはデジタル署名をサポートしています：
 - RSA署名アルゴリズムとSHA-1ダイジェストを使用したPKCS1。
@@ -98,6 +96,7 @@ SHA-1ダイジェストアルゴリズムを使用したデジタル署名は、
 - [権限を設定し、PDFファイルを暗号化および復号化する](/pdf/ja/net/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [画像と署名情報を抽出する](/pdf/ja/net/extract-image-and-signature-information/)
 - [スマートカードからPDFドキュメントに署名する](/pdf/ja/net/sign-pdf-document-from-smart-card/)
+- [カスタムセキュリティハンドラー](/pdf/ja/net/custom-security-handler/)
 
 <script type="application/ld+json">
 {

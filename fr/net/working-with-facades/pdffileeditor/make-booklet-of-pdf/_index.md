@@ -77,7 +77,7 @@ draft: false
 
 ## Créer un livret à partir d'un PDF en utilisant des chemins de fichiers
 
-La méthode [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du fichier PDF d'entrée et de l'enregistrer dans le fichier PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des chemins de fichiers. Le code suivant montre comment créer un livret en utilisant des chemins de fichiers.
+La méthode [MakeBooklet](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du fichier PDF d'entrée et de l'enregistrer dans le fichier PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des chemins de fichiers. Le code suivant montre comment créer un livret en utilisant des chemins de fichiers.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -94,7 +94,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
 
 ## Créer un livret à partir d'un PDF en utilisant la taille de page et des chemins de fichiers
 
-La méthode [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du fichier PDF d'entrée et de l'enregistrer dans le fichier PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des chemins de fichiers. Vous pouvez également définir la taille de page du fichier PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant la taille de page et des chemins de fichiers.
+La méthode [MakeBooklet](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du fichier PDF d'entrée et de l'enregistrer dans le fichier PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des chemins de fichiers. Vous pouvez également définir la taille de page du fichier PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant la taille de page et des chemins de fichiers.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -111,7 +111,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
 
 ## Créer un livret à partir d'un PDF en utilisant la taille de page, des pages gauche et droite spécifiées, et des chemins de fichiers
 
-La méthode [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du fichier PDF d'entrée et de l'enregistrer dans le fichier PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des chemins de fichiers. Vous pouvez également définir la taille de page du fichier PDF de sortie et spécifier des pages particulières pour les côtés gauche et droit du fichier PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant la taille de page, des pages gauche et droite spécifiées et des chemins de fichiers.
+La méthode [MakeBooklet](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du fichier PDF d'entrée et de l'enregistrer dans le fichier PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des chemins de fichiers. Vous pouvez également définir la taille de page du fichier PDF de sortie et spécifier des pages particulières pour les côtés gauche et droit du fichier PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant la taille de page, des pages gauche et droite spécifiées et des chemins de fichiers.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -131,7 +131,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## Créer un livret à partir d'un PDF en utilisant des pages gauche et droite spécifiées, et des chemins de fichiers
 
-La méthode [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du fichier PDF d'entrée et de l'enregistrer dans le fichier PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des chemins de fichiers. Vous pouvez également spécifier des pages particulières pour les côtés gauche et droit du fichier PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant des pages gauche et droite spécifiées et des chemins de fichiers.
+La méthode [MakeBooklet](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du fichier PDF d'entrée et de l'enregistrer dans le fichier PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des chemins de fichiers. Vous pouvez également spécifier des pages particulières pour les côtés gauche et droit du fichier PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant des pages gauche et droite spécifiées et des chemins de fichiers.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
 
 ## Créer un livret à partir d'un PDF en utilisant des flux
 
-La méthode [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du flux PDF d'entrée et de l'enregistrer dans les flux PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des flux au lieu de chemins de fichiers. Le code suivant montre comment créer un livret en utilisant des flux.
+La méthode [MakeBooklet](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du flux PDF d'entrée et de l'enregistrer dans les flux PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des flux au lieu de chemins de fichiers. Le code suivant montre comment créer un livret en utilisant des flux.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -175,7 +175,7 @@ private static void MakeBookletOfPdfUsingStreams()
 
 ## Créer un livret à partir d'un PDF en utilisant la taille de page et des flux
 
-La méthode [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du flux PDF d'entrée et de l'enregistrer dans le flux PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des flux au lieu de chemins de fichiers. Vous pouvez également définir la taille de page du flux PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant la taille de page et des flux.
+La méthode [MakeBooklet](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du flux PDF d'entrée et de l'enregistrer dans le flux PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des flux au lieu de chemins de fichiers. Vous pouvez également définir la taille de page du flux PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant la taille de page et des flux.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
 
 ## Créer un livret à partir d'un PDF en utilisant la taille de page, des pages gauche et droite spécifiées, et des flux
 
-La méthode [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du flux PDF d'entrée et de l'enregistrer dans le flux PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des flux au lieu de chemins de fichiers. Vous pouvez également définir la taille de page du fichier PDF de sortie et spécifier des pages particulières pour les côtés gauche et droit du flux PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant la taille de page, des pages gauche et droite spécifiées, et des flux.
+La méthode [MakeBooklet](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du flux PDF d'entrée et de l'enregistrer dans le flux PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des flux au lieu de chemins de fichiers. Vous pouvez également définir la taille de page du fichier PDF de sortie et spécifier des pages particulières pour les côtés gauche et droit du flux PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant la taille de page, des pages gauche et droite spécifiées, et des flux.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -226,7 +226,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
 
 ## Créer un livret à partir d'un PDF en utilisant des pages gauche et droite spécifiées, et des flux
 
-La méthode [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du flux PDF d'entrée et de l'enregistrer dans le flux PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des flux au lieu de chemins de fichiers. Vous pouvez également spécifier des pages particulières pour les côtés gauche et droit du flux PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant des pages gauche et droite spécifiées et des flux.
+La méthode [MakeBooklet](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) de la classe [PdfFileEditor](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdffileeditor) vous permet de créer un livret à partir du flux PDF d'entrée et de l'enregistrer dans le flux PDF de sortie. Cette surcharge vous permet de créer un livret en utilisant des flux au lieu de chemins de fichiers. Vous pouvez également spécifier des pages particulières pour les côtés gauche et droit du flux PDF de sortie avec cette surcharge. Le code suivant montre comment créer un livret en utilisant des pages gauche et droite spécifiées et des flux.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -77,17 +77,17 @@ draft: false
 
 {{% alert color="primary" %}}
 
-تتيح لك فئة [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) من [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) تغيير مظهر الحقل وسلوكه. في هذه المقالة، سنرى كيف يمكننا استخدام فئة FormEditor لتغيير مظهر الحقل، وسمات الحقل، وحدود الحقل أيضًا.
+تتيح لك فئة [FormEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/FormEditor) من [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades) تغيير مظهر الحقل وسلوكه. في هذه المقالة، سنرى كيف يمكننا استخدام فئة FormEditor لتغيير مظهر الحقل، وسمات الحقل، وحدود الحقل أيضًا.
 
 {{% /alert %}}
 
 ## تفاصيل التنفيذ
 
-تستخدم طريقة [SetFieldAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldappearance) لتغيير مظهر حقل النموذج. تأخذ AnnotationFlag كمعامل. AnnotationFlag هو تعداد يحتوي على أعضاء مختلفين مثل Hidden أو NoRotate إلخ.
+تستخدم طريقة [SetFieldAppearance](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/setfieldappearance) لتغيير مظهر حقل النموذج. تأخذ AnnotationFlag كمعامل. AnnotationFlag هو تعداد يحتوي على أعضاء مختلفين مثل Hidden أو NoRotate إلخ.
 
-تستخدم طريقة [SetFieldAttributes](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/setfieldattribute) لتغيير سمة حقل النموذج. المعامل الممرر إلى هذه الطريقة هو تعداد PropertyFlag الذي يحتوي على أعضاء مثل ReadOnly أو Required إلخ.
+تستخدم طريقة [SetFieldAttributes](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/formeditor/methods/setfieldattribute) لتغيير سمة حقل النموذج. المعامل الممرر إلى هذه الطريقة هو تعداد PropertyFlag الذي يحتوي على أعضاء مثل ReadOnly أو Required إلخ.
 
-توفر فئة [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) أيضًا طريقة لتعيين حد الحقل. تخبر الحقل بعدد الأحرف التي يمكن ملؤها. يوضح لك مقتطف الكود أدناه كيفية استخدام كل هذه الطرق.
+توفر فئة [FormEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/FormEditor) أيضًا طريقة لتعيين حد الحقل. تخبر الحقل بعدد الأحرف التي يمكن ملؤها. يوضح لك مقتطف الكود أدناه كيفية استخدام كل هذه الطرق.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

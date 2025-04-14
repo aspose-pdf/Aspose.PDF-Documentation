@@ -85,7 +85,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 Une annotation de filigrane doit être utilisée pour représenter des graphiques qui doivent être imprimés à une taille et une position fixes sur une page, quelle que soit les dimensions de la page imprimée.
 
-Vous pouvez ajouter du texte de filigrane en utilisant [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) à une position spécifique de la page PDF. L'opacité du filigrane peut également être contrôlée en utilisant la propriété d'opacité.
+Vous pouvez ajouter du texte de filigrane en utilisant [WatermarkAnnotation](https://reference.aspose.com/pdf/fr/net/aspose.pdf.annotations/watermarkannotation) à une position spécifique de la page PDF. L'opacité du filigrane peut également être contrôlée en utilisant la propriété d'opacité.
 
 Veuillez consulter le code suivant pour ajouter WatermarkAnnotation.
 

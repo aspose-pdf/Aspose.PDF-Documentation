@@ -81,7 +81,7 @@ sitemap:
 
 ## إنشاء جدول في PDF المعلّم
 
-Aspose.PDF for .NET يتيح إنشاء جدول في مستندات PDF المعلّمة. للعمل مع الجداول، توفر واجهة برمجة التطبيقات [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement) class. لإنشاء جدول، يمكنك استخدام [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) method of [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. علاوة على ذلك، يمكنك استخدام [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead)، [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) و [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) methods of TableElement class لإنشاء رأس الجدول، جسم الجدول، وتذييل الجدول على التوالي. لإنشاء صف جدول، يمكنك استخدام [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) method of [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement) class. يمكنك أيضًا التحقق مما إذا كان مستند PDF الذي تم إنشاؤه يتوافق مع PDF/UA باستخدام Validate() method of Document class.
+Aspose.PDF for .NET يتيح إنشاء جدول في مستندات PDF المعلّمة. للعمل مع الجداول، توفر واجهة برمجة التطبيقات [TableElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement) class. لإنشاء جدول، يمكنك استخدام [CreateTableElement()](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) method of [ITaggedContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent) interface. علاوة على ذلك، يمكنك استخدام [CreateTHead()](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/methods/createthead)، [CreateTBody()](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) و [CreateTFoot()](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) methods of TableElement class لإنشاء رأس الجدول، جسم الجدول، وتذييل الجدول على التوالي. لإنشاء صف جدول، يمكنك استخدام [CreateTR()](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) method of [TableRowCollectionElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablerowcollectionelement) class. يمكنك أيضًا التحقق مما إذا كان مستند PDF الذي تم إنشاؤه يتوافق مع PDF/UA باستخدام Validate() method of Document class.
 
 تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
@@ -357,23 +357,23 @@ private static void CreateTable()
 
 ## تنسيق عنصر الجدول
 
-Aspose.PDF for .NET يتيح تنسيق جدول في مستند PDF المعلّم. لتنسيق جدول، يمكنك إنشاء جدول باستخدام [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) method of [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface وتعيين تنسيق الجدول باستخدام خصائص [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement) class. فيما يلي قائمة الخصائص التي يمكنك استخدامها لتنسيق جدول:
+Aspose.PDF for .NET يتيح تنسيق جدول في مستند PDF المعلّم. لتنسيق جدول، يمكنك إنشاء جدول باستخدام [CreateTableElement()](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) method of [ITaggedContent](https://reference.aspose.com/pdf/ar/net/aspose.pdf.tagged/itaggedcontent) interface وتعيين تنسيق الجدول باستخدام خصائص [TableElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement) class. فيما يلي قائمة الخصائص التي يمكنك استخدامها لتنسيق جدول:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/border).
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
-- [CornerStyle](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
-- [Broken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
-- [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
-- [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
-- [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
-- [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
-- [DefaultColumnWidth](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
-- [IsBroken](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
-- [IsBordersIncluded](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
-- [Left](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/left).
-- [Top](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/properties/top).
+- [BackgroundColor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/border).
+- [Alignment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/alignment).
+- [CornerStyle](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/cornerstyle).
+- [Broken](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/broken).
+- [ColumnAdjustment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/columnadjustment).
+- [ColumnWidths](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/columnwidths).
+- [DefaultCellBorder](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellborder).
+- [DefaultCellPadding](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcellpadding).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcelltextstate).
+- [DefaultColumnWidth](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/defaultcolumnwidth).
+- [IsBroken](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/isbroken).
+- [IsBordersIncluded](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/isbordersincluded).
+- [Left](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/left).
+- [Top](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tableelement/properties/top).
 
 توضح مقتطفات الشيفرة التالية كيفية تنسيق جدول في مستند PDF المعلّم:
 
@@ -575,7 +575,7 @@ private static void StyleTable()
 
 ## تنسيق صف الجدول
 
-Aspose.PDF for .NET يتيح تنسيق صف جدول في مستند PDF المعلّم. لتنسيق صف جدول، يمكنك استخدام خصائص [TableTRElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tabletrelement) class. فيما يلي قائمة الخصائص التي يمكنك استخدامها لتنسيق صف جدول:
+Aspose.PDF for .NET يتيح تنسيق صف جدول في مستند PDF المعلّم. لتنسيق صف جدول، يمكنك استخدام خصائص [TableTRElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tabletrelement) class. فيما يلي قائمة الخصائص التي يمكنك استخدامها لتنسيق صف جدول:
 
 - BackgroundColor.
 - Border.
@@ -772,18 +772,18 @@ private static void StyleTableRow()
 
 ## تنسيق خلية الجدول
 
-Aspose.PDF for .NET يتيح تنسيق خلية جدول في مستند PDF المعلّم. لتنسيق خلية جدول، يمكنك استخدام خصائص [TableCellElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement) class. فيما يلي قائمة الخصائص التي يمكنك استخدامها لتنسيق خلية جدول:
+Aspose.PDF for .NET يتيح تنسيق خلية جدول في مستند PDF المعلّم. لتنسيق خلية جدول، يمكنك استخدام خصائص [TableCellElement](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement) class. فيما يلي قائمة الخصائص التي يمكنك استخدامها لتنسيق خلية جدول:
 
-- [BackgroundColor](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
-- [Border](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
-- [IsNoBorder](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
-- [Margin](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
-- [Alignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
-- [DefaultCellTextState](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
-- [IsWordWrapped](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
-- [VerticalAlignment](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
-- [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
-- [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
+- [BackgroundColor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/backgroundcolor).
+- [Border](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/border).
+- [IsNoBorder](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/isnoborder).
+- [Margin](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/margin).
+- [Alignment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/alignment).
+- [DefaultCellTextState](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/defaultcelltextstate).
+- [IsWordWrapped](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/iswordwrapped).
+- [VerticalAlignment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/verticalalignment).
+- [ColSpan](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/colspan).
+- [RowSpan](https://reference.aspose.com/pdf/ar/net/aspose.pdf.logicalstructure/tablecellelement/properties/rowspan).
 
 توضح مقتطفات الشيفرة التالية كيفية تنسيق خلية جدول في مستند PDF المعلّم:
 

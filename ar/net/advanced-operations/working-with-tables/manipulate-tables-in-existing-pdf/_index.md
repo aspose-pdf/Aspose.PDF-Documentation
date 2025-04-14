@@ -113,7 +113,7 @@ private static void ManipulateTable()
 
 ## استبدال الجدول القديم بجدول جديد في مستند PDF
 
-في حال كنت بحاجة إلى العثور على جدول معين واستبداله بالجدول المطلوب، يمكنك استخدام طريقة Replace() من فئة [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) للقيام بذلك. يوضح المثال التالي الوظيفة لاستبدال الجدول داخل مستند PDF:
+في حال كنت بحاجة إلى العثور على جدول معين واستبداله بالجدول المطلوب، يمكنك استخدام طريقة Replace() من فئة [TableAbsorber](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/tableabsorber) للقيام بذلك. يوضح المثال التالي الوظيفة لاستبدال الجدول داخل مستند PDF:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

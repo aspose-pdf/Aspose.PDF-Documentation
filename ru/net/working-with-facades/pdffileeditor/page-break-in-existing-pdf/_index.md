@@ -75,11 +75,11 @@ draft: false
 }
 </script>
 
-По умолчанию содержимое внутри PDF-файлов добавляется в макете Сверху-Слева к Снизу-Справа. Как только содержимое превышает нижний край страницы, происходит разрыв страницы. Однако вы можете столкнуться с необходимостью вставить разрыв страницы в зависимости от требований. Метод с именем AddPageBreak(...) добавлен в класс [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) для выполнения этой задачи.)
+По умолчанию содержимое внутри PDF-файлов добавляется в макете Сверху-Слева к Снизу-Справа. Как только содержимое превышает нижний край страницы, происходит разрыв страницы. Однако вы можете столкнуться с необходимостью вставить разрыв страницы в зависимости от требований. Метод с именем AddPageBreak(...) добавлен в класс [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) для выполнения этой задачи.)
 
-1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
-1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
-1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
+1. [public void AddPageBreak(Document src, Document dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/1).
+1. [public void AddPageBreak(string src, string dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades.pdffileeditor/addpagebreak/methods/2).
+1. [public void AddPageBreak(Stream src, Stream dest, PageBreak[] pageBreaks)](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/addpagebreak).
 
 - src — исходный документ/путь к документу/поток с исходным документом.
 - dest — целевой документ/путь, по которому документ будет сохранен/поток, в который документ будет сохранен.

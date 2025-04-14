@@ -78,9 +78,9 @@ lastmod: "2022-02-17"
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-Las imágenes se encuentran en la colección [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) de cada página en la colección [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Para extraer una página en particular, obtenga la imagen de la colección Images utilizando el índice particular de la imagen.
+Las imágenes se encuentran en la colección [Resources](https://reference.aspose.com/pdf/es/net/aspose.pdf/resources) de cada página en la colección [Images](https://reference.aspose.com/pdf/es/net/aspose.pdf/resources/properties/images). Para extraer una página en particular, obtenga la imagen de la colección Images utilizando el índice particular de la imagen.
 
-El índice de la imagen devuelve un objeto [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Este objeto proporciona un método Save que se puede utilizar para guardar la imagen extraída. El siguiente fragmento de código muestra cómo extraer imágenes de un archivo PDF.
+El índice de la imagen devuelve un objeto [XImage](https://reference.aspose.com/pdf/es/net/aspose.pdf/ximage). Este objeto proporciona un método Save que se puede utilizar para guardar la imagen extraída. El siguiente fragmento de código muestra cómo extraer imágenes de un archivo PDF.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

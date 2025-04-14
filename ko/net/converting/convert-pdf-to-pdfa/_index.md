@@ -73,12 +73,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2025-03-26",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하세요."
 }
 </script>
 
 **Aspose.PDF for .NET**은 PDF 파일을 <abbr title="Portable Document Format / A">PDF/A</abbr> 준수 PDF 파일로 변환할 수 있게 해줍니다. 이를 수행하기 전에 파일을 검증해야 합니다. 이 주제에서는 그 방법을 설명합니다.
+
+- [PDF를 PDF/A-1b로 변환](#csharp-convert-pdf-to-a1b)
+- [PDF를 PDF/A-3b로 변환](#csharp-convert-pdf-to-a3b)
+- [PDF를 PDF/A-4로 변환](#csharp-convert-pdf-to-a4)
 
 {{% alert color="primary" %}}
 
@@ -102,6 +106,8 @@ Aspose.PDF for .NET은 ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conve
 다음 표준을 지원합니다: PDF/A-1b, PDF/A-1a, PDF/A-2b, PDF/A-2u, PDF/A-2a, PDF/A-3b, PDF/A-3u, PDF/A-3a, PDF/A-4, PDF/A-4e, PDF/A-4f.
 
 ## PDF 파일을 PDF/A-1b로 변환
+
+<a name="csharp-convert-pdf-to-a1b" id="csharp-convert-pdf-to-a1b"><strong>PDF를 PDF/A-1b로 변환</strong></a>
 
 다음 코드 스니펫은 PDF 파일을 PDF/A-1b 준수 PDF로 변환하는 방법을 보여줍니다.
 
@@ -191,6 +197,8 @@ private static void ValidatePdfAStandard()
 
 ## PDF 파일을 PDF/A-3b로 변환
 
+<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>PDF를 PDF/A-3b로 변환</strong></a>
+
 Aspose.PDF for .NET은 PDF 파일을 PDF/A-3b 형식으로 변환하는 기능도 지원합니다.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -237,6 +245,8 @@ private static void ConvertPdfToPdfA3b()
 {{< /tabs >}}
 
 ## PDF 파일을 PDF/A-4로 변환
+
+<a name="csharp-convert-pdf-to-a4" id="csharp-convert-pdf-to-a4"><strong>PDF를 PDF/A-4로 변환</strong></a>
 
 Aspose.PDF for .NET은 PDF 파일을 PDF/A-4 형식으로 변환하는 기능도 지원합니다.
 

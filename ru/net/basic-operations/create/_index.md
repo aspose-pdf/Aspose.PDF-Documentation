@@ -80,9 +80,9 @@ API Aspose.PDF for .NET позволяет создавать и читать PD
 
 Для создания PDF-файла с помощью C# можно выполнить следующие шаги:
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Добавьте объект [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) в коллекцию [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) объекта Document.
-1. Добавьте [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) в коллекцию [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) страницы.
+1. Создайте объект класса [Document](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document).
+1. Добавьте объект [Page](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page) в коллекцию [Pages](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/properties/pages) объекта Document.
+1. Добавьте [TextFragment](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textfragment) в коллекцию [Paragraphs](https://reference.aspose.com/pdf/ru/net/aspose.pdf/page/properties/paragraphs) страницы.
 1. Сохраните полученный PDF-документ.
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.Drawing](/pdf/ru/net/drawing/).

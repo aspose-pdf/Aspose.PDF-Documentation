@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-لكي تحصل على معلومات محددة عن ملف PDF، تحتاج إلى إنشاء كائن من فئة [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo). بعد ذلك، يمكنك الحصول على قيم الخصائص الفردية مثل الموضوع، العنوان، الكلمات الرئيسية، والمبدع، إلخ.
+لكي تحصل على معلومات محددة عن ملف PDF، تحتاج إلى إنشاء كائن من فئة [PdfFileInfo](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileinfo). بعد ذلك، يمكنك الحصول على قيم الخصائص الفردية مثل الموضوع، العنوان، الكلمات الرئيسية، والمبدع، إلخ.
 
 تظهر لك الشيفرة البرمجية التالية كيفية الحصول على معلومات ملف PDF.
 
@@ -110,7 +110,7 @@ private static void GetPdfInfo()
 
 ## الحصول على معلومات التعريف
 
-لكي نحصل على المعلومات، نستخدم خاصية [Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header). باستخدام 'Hashtable' نحصل على جميع القيم الممكنة.
+لكي نحصل على المعلومات، نستخدم خاصية [Header](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffileinfo/properties/header). باستخدام 'Hashtable' نحصل على جميع القيم الممكنة.
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

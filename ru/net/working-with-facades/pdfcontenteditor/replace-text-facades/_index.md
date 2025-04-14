@@ -77,7 +77,7 @@ draft: false
 
 ## Замена текста в существующем PDF-файле
 
-Чтобы заменить текст в существующем PDF-файле, вам нужно создать объект класса [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). После этого вам нужно вызвать метод [ReplaceText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index). Вам нужно сохранить обновленный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) класса [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor). Следующий фрагмент кода показывает, как заменить текст в существующем PDF-файле.
+Чтобы заменить текст в существующем PDF-файле, вам нужно создать объект класса [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor) и связать входной PDF-файл с помощью метода [BindPdf](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/facade/methods/bindpdf/index). После этого вам нужно вызвать метод [ReplaceText](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index). Вам нужно сохранить обновленный PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/ru/net/aspose.pdf/document/methods/save) класса [PdfContentEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor). Следующий фрагмент кода показывает, как заменить текст в существующем PDF-файле.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -179,7 +179,7 @@ private static void ReplaceText02()
 {{< /tab >}}
 {{< /tabs >}}
 
-Для более продвинутых возможностей работы с нашим текстом мы будем использовать метод [TextState](https://reference.aspose.com/pdf/net/aspose.pdf.text/textstate). С помощью этого метода мы можем сделать текст жирным, курсивным, цветным и так далее.
+Для более продвинутых возможностей работы с нашим текстом мы будем использовать метод [TextState](https://reference.aspose.com/pdf/ru/net/aspose.pdf.text/textstate). С помощью этого метода мы можем сделать текст жирным, курсивным, цветным и так далее.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

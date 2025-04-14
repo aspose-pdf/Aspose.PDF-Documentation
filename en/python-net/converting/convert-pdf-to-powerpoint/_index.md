@@ -5,11 +5,15 @@ type: docs
 weight: 30
 url: /python-net/convert-pdf-to-powerpoint/
 description: Learn how to easily convert PDFs to PowerPoint presentations using Aspose.PDF for Python via .NET. Step-by-step guide for seamless PDF to PPTX transformation.
-lastmod: "2022-12-23"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to Convert PDF to PowerPoint in Python
+Abstract: This article provides a comprehensive guide on converting PDF files into PowerPoint presentations using Python, specifically focusing on the PPTX format. It introduces the use of Aspose.PDF for Python via .NET, which facilitates the conversion process by allowing PDF pages to be transformed into individual slides in a PPTX file. The article outlines the necessary steps for conversion, including creating instances of the Document and PptxSaveOptions classes and utilizing the Save method. Additionally, it highlights a feature to convert PDFs to PPTX with slides as images by setting a specific property in the PptxSaveOptions. Code snippets are provided to illustrate the conversion process. The article also references an online application for testing the PDF to PPTX conversion feature, offering users a hands-on experience. Furthermore, it lists various related topics and functionalities available within this context, emphasizing the versatility and programmatic approach to handling PDF to PowerPoint conversions using Python.
 ---
+
 ## Overview
 
 Is it possible to convert a PDF file into a PowerPoint? Yes, you can! And it's easy!
@@ -45,16 +49,19 @@ In order to convert PDF to PPTX, Aspose.PDF for Python advice to use the followi
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import pydicom
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_pptx.pptx"
-    # Open PDF document
-    document = ap.Document(input_pdf)
-    # Instantiate PptxSaveOptions instance
-    save_option = ap.PptxSaveOptions()
-    # Save the file into MS PowerPoint format
-    document.save(output_pdf, save_option)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    save_options = apdf.PptxSaveOptions()
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
 ```
 
 ## Convert PDF to PPTX with Slides as Images

@@ -5,7 +5,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/working-with-pdf-printing-facades/
-description: يشرح هذا القسم كيفية طباعة ملفات PDF باستخدام واجهات Aspose.PDF من خلال استخدام فئة PdfFileEditor.
+description: يشرح هذا القسم كيفية طباعة ملفات PDF باستخدام واجهات Aspose.PDF من خلال فئة PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false
 ---
@@ -15,7 +15,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Working with PDF printing - Facades",
     "alternativeHeadline": "Enhancing PDF Printing Capabilities with C#",
-    "abstract": "Aspose.PDF for .NET تسهل ميزة الواجهات طباعة PDF مع تحكم معزز في إعدادات الطابعة وصيغ الإخراج. يمكن للمستخدمين طباعة المستندات بسلاسة إلى الطابعات الافتراضية أو الافتراضية، وتحديد تخطيطات الصفحات، وحتى إدارة مهام الطباعة في أوضاع بسيطة أو مزدوجة، بينما تضيف خيارات مثل الطباعة بالألوان الرمادية وإخفاء حوارات الطباعة إلى مرونتها. تعمل هذه الوظيفة على تحسين سير العمل في الطباعة بشكل كبير لمستندات PDF، مما يجعلها مثالية للمطورين والمستخدمين الذين يبحثون عن حلول فعالة لإدارة المستندات.",
+    "abstract": "تسهل ميزات الواجهات طباعة PDF مع تحكم معزز في إعدادات الطابعة وصيغ الإخراج. يمكن للمستخدمين طباعة المستندات بسلاسة إلى الطابعات الافتراضية أو الافتراضية، وتحديد تخطيطات الصفحات، وحتى إدارة مهام الطباعة في أوضاع بسيطة أو مزدوجة، بينما تضيف خيارات مثل الطباعة بالألوان الرمادية وإخفاء حوارات الطباعة إلى مرونتها. تعمل هذه الوظيفة على تحسين سير العمل في الطباعة لمستندات PDF، مما يجعلها مثالية للمطورين والمستخدمين الذين يبحثون عن حلول فعالة لإدارة المستندات.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1885",
+    "wordcount": "4159",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,15 +70,15 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/working-with-pdf-printing-facades/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-07",
     "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
 
 ## طباعة ملف PDF إلى الطابعة الافتراضية باستخدام إعدادات الطابعة والصفحة
 
-أولاً، يتم تحويل المستند إلى صورة، ثم يتم طباعته على الطابعة.
-قم بإنشاء مثيل من فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) التي تمكن من طباعة ملف PDF إلى الطابعة الافتراضية، استخدم طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/bindpdf/) لفتح المستند فيها، وتغيير الإعدادات اللازمة. يستخدم هذا المثال تنسيق A4، واتجاه عمودي. في [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/)، يجب أولاً تعيين اسم الطابعة التي سيتم الطباعة عليها. أو ستتم الطباعة إلى الطابعة الافتراضية. بعد ذلك، ضع العدد المطلوب من النسخ.
+أولاً، يتم تحويل المستند إلى صورة، ثم يتم طباعته على الطابعة. 
+قم بإنشاء مثيل من فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer) التي تتيح طباعة ملف PDF إلى الطابعة الافتراضية، استخدم طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/bindpdf/) لفتح المستند فيها، وقم بتغيير الإعدادات اللازمة. يستخدم هذا المثال تنسيق A4، واتجاه عمودي. في [PrinterSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf.printing/printersettings/)، يجب أولاً تعيين اسم الطابعة التي ستتم الطباعة عليها. أو ستتم الطباعة إلى الطابعة الافتراضية. بعد ذلك، ضع العدد المطلوب من النسخ.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -167,7 +167,7 @@ private static void PrintingPDFFile()
 {{< /tab >}}
 {{< /tabs >}}
 
-لعرض حوار الطباعة، استخدم مقتطف الكود التالي:
+لإظهار حوار الطباعة، استخدم مقتطف الكود التالي:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -345,7 +345,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## إخفاء حوار الطباعة
 
-Aspose.PDF for .NET يدعم إخفاء حوار الطباعة. لذلك، استخدم خاصية [PrintPageDialog](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
+تدعم Aspose.PDF for .NET إخفاء حوار الطباعة. للقيام بذلك، استخدم خاصية [PrintPageDialog](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/properties/printpagedialog).
 
 يوضح مقتطف الكود التالي كيفية إخفاء حوار الطباعة.
 
@@ -436,7 +436,7 @@ private static void PrintingPDFHidePrintDialog()
 
 ## طباعة PDF ملون إلى ملف XPS بالألوان الرمادية
 
-يمكن طباعة مستند PDF ملون إلى طابعة XPS بالألوان الرمادية، باستخدام [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). لتحقيق ذلك، قم بتعيين خاصية [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) إلى *true*. يوضح مقتطف الكود التالي استخدام خاصية `PdfViewer.PrintAsGrayscale`.
+يمكن طباعة مستند PDF ملون إلى طابعة XPS بالألوان الرمادية، باستخدام [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer). لتحقيق ذلك، قم بتعيين خاصية [PdfViewer.PrintAsGrayscale](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/printasgrayscale/) إلى *true*. يوضح مقتطف الكود التالي استخدام خاصية `PdfViewer.PrintAsGrayscale`.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -529,7 +529,7 @@ private static void PrintingPDFAsGrayscale()
 
 ## تحويل PDF إلى PostScript
 
-توفر فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) القدرة على طباعة مستندات PDF وبمساعدة هذه الفئة، يمكن أيضًا تحويل ملفات PDF إلى تنسيق PostScript. لتحويل ملف PDF إلى PostScript، قم أولاً بتثبيت أي طابعة PS واطبع إلى ملف بمساعدة `PdfViewer`.
+توفر فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer) القدرة على طباعة مستندات PDF ومع مساعدة هذه الفئة، يمكن أيضًا تحويل ملفات PDF إلى تنسيق PostScript. لتحويل ملف PDF إلى PostScript، قم أولاً بتثبيت أي طابعة PS ثم اطبع إلى ملف بمساعدة `PdfViewer`.
 
 يوضح مقتطف الكود التالي كيفية الطباعة وتحويل PDF إلى تنسيق PostScript.
 
@@ -632,7 +632,7 @@ private static void PrintingPDFToSoftPrinter()
 
 ## التحقق من حالة مهمة الطباعة
 
-يمكن طباعة ملف PDF إلى طابعة فعلية وكذلك إلى كاتب مستندات Microsoft XPS، دون إظهار حوار الطباعة، باستخدام فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). عند طباعة ملفات PDF الكبيرة، قد تستغرق العملية وقتًا طويلاً لذا قد لا يكون المستخدم متأكدًا مما إذا كانت عملية الطباعة قد اكتملت أو واجهت مشكلة. لتحديد حالة مهمة الطباعة، استخدم خاصية [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). يوضح مقتطف الكود التالي كيفية طباعة ملف PDF إلى ملف XPS والحصول على حالة الطباعة.
+يمكن طباعة ملف PDF إلى طابعة فعلية وكذلك إلى كاتب مستندات Microsoft XPS، دون إظهار حوار الطباعة، باستخدام فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer). عند طباعة ملفات PDF الكبيرة، قد تستغرق العملية وقتًا طويلاً لذا قد لا يكون المستخدم متأكدًا مما إذا كانت عملية الطباعة قد اكتملت أو واجهت مشكلة. لتحديد حالة مهمة الطباعة، استخدم خاصية [PrintStatus](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/printstatus/). يوضح مقتطف الكود التالي كيفية طباعة ملف PDF إلى ملف XPS والحصول على حالة الطباعة.
 
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -971,6 +971,78 @@ private static void PrintingPagesInSimplexAndDuplexMode()
 
     // Run the first print job
     viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## طباعة مستندات PDF متعددة في مهمة طباعة واحدة
+
+أحيانًا، يكون من الضروري طباعة مستندات متعددة ذات صلة معًا كمهمة طباعة واحدة. يضمن ذلك عدم تداخل هذه المستندات مع مخرجات من مستخدمين آخرين، خاصة مع الطابعات الشبكية البعيدة. تدعم Aspose.PDF طباعة أي عدد من المستندات في مهمة طباعة واحدة مع إعدادات طابعة مشتركة عبر طرق `PrintDocuments` الثابتة من فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer). يمكن تقديم المستندات المراد طباعتها كمسارات ملفات، أو تدفقات مستندات، أو كائنات [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document).
+
+{{% alert color="primary" %}}
+
+عند طباعة مستندات متعددة، يتم تجاهل خاصية [PrinterSettings.PrintRange](https://reference.aspose.com/pdf/ar/net/aspose.pdf.printing/printersettings/printrange/) ويتم طباعة جميع المستندات بالكامل.
+
+{{% /alert %}}
+
+{{< tabs tabID="9" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingMultipleDocumentsInSingleJob()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Paths to documents to be printed
+    var path1 = dataDir + "PrintDocument.pdf";
+    var path2 = dataDir + "Print-PageRange.pdf";
+    var path3 = dataDir + "35925_1_3.xps";
+    
+    // Set up printer and page settings
+    var printDocument = new System.Drawing.Printing.PrintDocument();
+    Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
+    printerSettings.PrinterName = printDocument.PrinterSettings.PrinterName;
+    
+    Aspose.Pdf.Printing.PageSettings pageSettings = new Aspose.Pdf.Printing.PageSettings();
+    pageSettings.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+    pageSettings.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+    
+    // Print multiple documents in a single print job
+    Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintingMultipleDocumentsInSingleJob()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Paths to documents to be printed
+    var path1 = dataDir + "PrintDocument.pdf";
+    var path2 = dataDir + "Print-PageRange.pdf";
+    var path3 = dataDir + "35925_1_3.xps";
+    
+    // Set up printer and page settings
+    var printDocument = new System.Drawing.Printing.PrintDocument();
+    Aspose.Pdf.Printing.PrinterSettings printerSettings = new Aspose.Pdf.Printing.PrinterSettings
+    {
+        PrinterName = printDocument.PrinterSettings.PrinterName
+    };
+    
+    Aspose.Pdf.Printing.PageSettings pageSettings = new Aspose.Pdf.Printing.PageSettings
+    {
+        PaperSize = Aspose.Pdf.Printing.PaperSizes.A4,
+        Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0)
+    };
+    
+    // Print multiple documents in a single print job
+    Aspose.Pdf.Facades.PdfViewer.PrintDocuments(printerSettings, pageSettings, path1, path2, path3);
 }
 ```
 {{< /tab >}}

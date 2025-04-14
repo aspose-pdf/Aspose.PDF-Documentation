@@ -73,12 +73,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfa/"
     },
-    "dateModified": "2025-03-26",
+    "dateModified": "2025-04-04",
     "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
 
 **Aspose.PDF for .NET** vous permet de convertir un fichier PDF en un fichier PDF conforme à <abbr title="Portable Document Format / A">PDF/A</abbr>. Avant de le faire, le fichier doit être validé. Ce sujet explique comment.
+
+- [Convertir PDF en PDF/A-1b](#csharp-convert-pdf-to-a1b)
+- [Convertir PDF en PDF/A-3b](#csharp-convert-pdf-to-a3b)
+- [Convertir PDF en PDF/A-4](#csharp-convert-pdf-to-a4)
 
 {{% alert color="primary" %}}
 
@@ -103,7 +107,9 @@ Nous prenons en charge les normes suivantes : PDF/A-1b, PDF/A-1a, PDF/A-2b, PDF/
 
 ## Convertir un fichier PDF en PDF/A-1b
 
-Le code suivant montre comment convertir des fichiers PDF en PDF/A-1b conforme.
+<a name="csharp-convert-pdf-to-a1b" id="csharp-convert-pdf-to-a1b"><strong>Convertir PDF en PDF/A-1b</strong></a>
+
+Le code suivant montre comment convertir des fichiers PDF en PDF conforme à PDF/A-1b.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -191,6 +197,8 @@ private static void ValidatePdfAStandard()
 
 ## Convertir un fichier PDF en PDF/A-3b
 
+<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>Convertir PDF en PDF/A-3b</strong></a>
+
 Aspose.PDF for .NET prend également en charge la fonctionnalité de conversion d'un fichier PDF en format PDF/A-3b.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -237,6 +245,8 @@ private static void ConvertPdfToPdfA3b()
 {{< /tabs >}}
 
 ## Convertir un fichier PDF en PDF/A-4
+
+<a name="csharp-convert-pdf-to-a4" id="csharp-convert-pdf-to-a4"><strong>Convertir PDF en PDF/A-4</strong></a>
 
 Aspose.PDF for .NET prend également en charge la fonctionnalité de conversion d'un fichier PDF en format PDF/A-4.
 

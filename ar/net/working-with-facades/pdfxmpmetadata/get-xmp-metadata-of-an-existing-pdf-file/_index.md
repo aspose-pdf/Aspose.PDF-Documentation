@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-لكي تحصل على بيانات XMP الوصفية من ملف PDF، تحتاج إلى إنشاء كائن [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) وربط ملف PDF باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index). يمكنك تمرير خصائص بيانات XMP الوصفية المحددة إلى كائن [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) للحصول على قيمها. يوضح لك المقتطف البرمجي التالي كيفية الحصول على بيانات XMP الوصفية من ملف PDF.
+لكي تحصل على بيانات XMP الوصفية من ملف PDF، تحتاج إلى إنشاء كائن [PdfXmpMetadata](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfxmpmetadata) وربط ملف PDF باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/facade/methods/bindpdf/index). يمكنك تمرير خصائص بيانات XMP الوصفية المحددة إلى كائن [PdfXmpMetadata](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfxmpmetadata) للحصول على قيمها. يوضح لك المقتطف البرمجي التالي كيفية الحصول على بيانات XMP الوصفية من ملف PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

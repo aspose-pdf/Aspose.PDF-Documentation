@@ -78,12 +78,12 @@ sitemap:
 }
 </script>
 
-يمكنك حذف صفحات من ملف PDF باستخدام Aspose.PDF for .NET. لحذف صفحة معينة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+يمكنك حذف صفحات من ملف PDF باستخدام Aspose.PDF for .NET. لحذف صفحة معينة من مجموعة [PageCollection](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection).
 
 ## حذف صفحة من ملف PDF
 
-1. استدعِ طريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) وحدد فهرس الصفحة.
-1. استدعِ طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) لحفظ ملف PDF المحدث.
+1. استدعِ طريقة [Delete](https://reference.aspose.com/pdf/ar/net/aspose.pdf/pagecollection/methods/delete) وحدد فهرس الصفحة.
+1. استدعِ طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf.document/save/methods/4) لحفظ ملف PDF المحدث.
 تظهر الشيفرة البرمجية التالية كيفية حذف صفحة معينة من ملف PDF باستخدام C#.
 
 ```csharp

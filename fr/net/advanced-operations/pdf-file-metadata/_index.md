@@ -83,7 +83,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## Obtenir des informations sur le fichier PDF
 
-Pour obtenir des informations spécifiques à un fichier PDF, vous devez d'abord obtenir l'objet [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) en utilisant la propriété [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Une fois l'objet [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) récupéré, vous pouvez obtenir les valeurs des propriétés individuelles. Le code suivant vous montre comment obtenir des informations sur le fichier PDF.
+Pour obtenir des informations spécifiques à un fichier PDF, vous devez d'abord obtenir l'objet [DocumentInfo](https://reference.aspose.com/pdf/fr/net/aspose.pdf/documentinfo) en utilisant la propriété [Info](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/properties/info) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document). Une fois l'objet [DocumentInfo](https://reference.aspose.com/pdf/fr/net/aspose.pdf/documentinfo) récupéré, vous pouvez obtenir les valeurs des propriétés individuelles. Le code suivant vous montre comment obtenir des informations sur le fichier PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -142,7 +142,7 @@ private static void GetPDFFileInformation()
 
 Aspose.PDF for .NET vous permet de définir des informations spécifiques à un fichier pour un PDF, des informations telles que l'auteur, la date de création, le sujet et le titre. Pour définir ces informations :
 
-1. Créez un objet [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo).
+1. Créez un objet [DocumentInfo](https://reference.aspose.com/pdf/fr/net/aspose.pdf/documentinfo).
 1. Définissez les valeurs des propriétés.
 1. Enregistrez le document mis à jour en utilisant la méthode Save de la classe Document.
 
@@ -167,6 +167,8 @@ private static void SetFileInformation()
         docInfo.CreationDate = DateTime.Now;
         docInfo.Keywords = "Aspose.Pdf, DOM, API";
         docInfo.ModDate = DateTime.Now;
+        // Specify custom timezone
+        docInfo.CreationTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Tokyo Standard Time").GetUtcOffset(docInfo.CreationDate);
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
         docInfo.Producer = "Custom producer";
@@ -197,6 +199,8 @@ private static void SetFileInformation()
         docInfo.CreationDate = DateTime.Now;
         docInfo.Keywords = "Aspose.Pdf, DOM, API";
         docInfo.ModDate = DateTime.Now;
+        // Specify custom timezone
+        docInfo.CreationTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Tokyo Standard Time").GetUtcOffset(docInfo.CreationDate);
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
         docInfo.Producer = "Custom producer";
@@ -214,8 +218,8 @@ private static void SetFileInformation()
 
 Aspose.PDF vous permet d'accéder aux métadonnées XMP d'un fichier PDF. Pour obtenir les métadonnées d'un fichier PDF :
 
-1. Créez un objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) et ouvrez le fichier PDF d'entrée.
-1. Obtenez les métadonnées du fichier en utilisant la propriété [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
+1. Créez un objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document) et ouvrez le fichier PDF d'entrée.
+1. Obtenez les métadonnées du fichier en utilisant la propriété [Metadata](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/properties/metadata).
 
 Le code suivant vous montre comment obtenir des métadonnées du fichier PDF.
 
@@ -265,9 +269,9 @@ private static void GetXMPMetadata()
 
 Aspose.PDF vous permet de définir des métadonnées dans un fichier PDF. Pour définir des métadonnées :
 
-1. Créez un objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Définissez les valeurs des métadonnées en utilisant la propriété [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
-1. Enregistrez le document mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Créez un objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
+1. Définissez les valeurs des métadonnées en utilisant la propriété [Metadata](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/properties/metadata).
+1. Enregistrez le document mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document/methods/save) de l'objet [Document](https://reference.aspose.com/pdf/fr/net/aspose.pdf/document).
 
 Le code suivant vous montre comment définir des métadonnées dans un fichier PDF.
 

@@ -5,76 +5,14 @@ type: docs
 weight: 11
 url: /python-net/formatting-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for Python via .NET. Use the next code snippet to resolve your tasks.
-lastmod: "2023-04-12"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Formatting PDF documents using Python
+Abstract: The article provides a comprehensive guide on manipulating and formatting PDF documents using the Aspose.PDF library in Python. It covers various aspects of PDF customization, including setting document window and page display properties such as centering the window, reading direction, and hiding UI elements. The article explains how to retrieve and set these properties programmatically using the `Document` class. Additionally, it addresses font management, detailing how to embed Standard Type 1 fonts and other fonts into PDFs, ensuring document portability and visual consistency across systems. It also highlights techniques for setting a default font name, retrieving all fonts from a PDF, and enhancing font embedding using `FontSubsetStrategy`. Furthermore, the article elaborates on adjusting the zoom factor of PDF documents using the `GoToAction` class and configuring print dialog preset properties, including duplex printing options. Code snippets accompany each section, providing practical examples for implementing these features.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Formatting PDF Document using Python",
-    "alternativeHeadline": "How to format PDF Document in Python via .NET",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, dotnet, python,  format pdf document",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/formatting-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/formatting-pdf-document/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Create and format the PDF Document with Aspose.PDF for Python via .NET. Use the next code snippet to resolve your tasks."
-}
-</script>
 
 ## Formatting PDF Document
 

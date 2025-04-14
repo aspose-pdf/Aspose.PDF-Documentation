@@ -85,7 +85,7 @@ sitemap:
 
 تصف هذه المقالة كيفية طباعة ملف PDF إلى الطابعة الافتراضية باستخدام إعدادات الطابعة والصفحة في C#.
 
-تسمح لك فئة [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) بطباعة ملف PDF إلى الطابعة الافتراضية. تحتاج إلى إنشاء كائن PdfViewer وفتح PDF باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) . لتحديد إعدادات طباعة مختلفة، استخدم فئات [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) و [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) . أخيرًا، استدعِ طريقة [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) لطباعة PDF إلى الطابعة الافتراضية. يوضح مقتطف الكود التالي كيفية طباعة PDF إلى الطابعة الافتراضية مع إعدادات الطابعة والصفحة.
+تسمح لك فئة [PdfViewer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer) بطباعة ملف PDF إلى الطابعة الافتراضية. تحتاج إلى إنشاء كائن PdfViewer وفتح PDF باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) . لتحديد إعدادات طباعة مختلفة، استخدم فئات [PageSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf.printing/pagesettings/) و [PrinterSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf.printing/printersettings/) . أخيرًا، استدعِ طريقة [PrintDocumentWithSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) لطباعة PDF إلى الطابعة الافتراضية. يوضح مقتطف الكود التالي كيفية طباعة PDF إلى الطابعة الافتراضية مع إعدادات الطابعة والصفحة.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -261,7 +261,7 @@ private static void PrintWithPrintDialog()
 
 منذ إصدار 24.4، أصبح من الممكن اختيار مصدر الورق حسب حجم صفحة PDF في مربع حوار الطباعة. يمكّن مقتطف الكود التالي من اختيار درج الطابعة بناءً على حجم صفحة PDF.
 
-يمكن تشغيل هذه الميزة وإيقافها باستخدام خاصية [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/) .
+يمكن تشغيل هذه الميزة وإيقافها باستخدام خاصية [Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/picktraybypdfsize/) .
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

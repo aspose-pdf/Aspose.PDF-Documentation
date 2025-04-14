@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "259",
+    "wordcount": "417",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdfa-to-pdf/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-04",
     "description": "O Aspose.PDF pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados."
 }
 </script>
@@ -82,8 +82,8 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Converter documento PDF/A para PDF
 
-Converter documento PDF/A para PDF significa remover a <abbr title="Portable Document Format Archive">restrição PDF/A</abbr> do documento original. 
-A classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) possui o método [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) para remover as informações de conformidade PDF do arquivo de entrada/fonte.
+Converter documento PDF/A para PDF significa remover a restrição de <abbr title="Portable Document Format Archive">PDF/A</abbr> do documento original. 
+A classe [Document](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document) possui o método [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/pt/net/aspose.pdf/document/methods/removepdfacompliance) para remover as informações de conformidade PDF do arquivo de entrada/fonte.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

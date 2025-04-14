@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "266",
+    "wordcount": "207",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/render-webforms-datagridview-to-pdf/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하세요."
+    "dateModified": "2025-04-11",
+    "description": "Aspose.PDF는 단순하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하세요."
 }
 </script>
 
@@ -82,7 +82,7 @@ sitemap:
 
 ### 소개
 
-일반적으로 WebForm을 PDF 문서로 변환하려면 추가 도구가 필요합니다. 이 샘플은 Aspose.PDF 라이브러리를 사용하여 WebForm을 PDF로 렌더링하는 방법을 보여줍니다. Aspose Export GridView To Pdf Control도 이 샘플에 포함되어 있어 _GridView 컨트롤을 PDF 문서로 렌더링하는 방법을 보여줍니다._
+일반적으로 WebForm을 PDF 문서로 변환하려면 추가 도구가 필요합니다. 이 샘플은 Aspose.PDF 라이브러리를 사용하여 WebForm을 PDF로 렌더링하는 방법을 보여줍니다. Aspose Export GridView To Pdf Control도 이 샘플에 포함되어 있어 _GridView 컨트롤을 PDF 문서로 렌더링하는 방법_을 보여줍니다.
 
 ## WebForm을 PDF로 렌더링하는 방법
 
@@ -110,13 +110,13 @@ HTML을 PDF로 렌더링하는 데 사용할 수 있는 두 가지 Aspose 도구
 
 ## 소스 파일
 
-이 샘플에는 2개의 데모 보고서가 있습니다.
+전체 프로젝트의 코드는 [여기](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Visual%20Studio/Aspose.Pdf.GridViewExport)에서 찾을 수 있습니다.
 
 - _Default.aspx_는 Aspose.PDF를 사용하여 PDF로 내보내는 방법을 보여줍니다.
 - _Report2.aspx_는 Aspose Export GridView 컨트롤 (Aspose.PDF 기반)을 사용하여 PDF로 내보내는 방법을 보여줍니다.
 
 ## 추가 파일
 
-`Helpers\PdfPage.cs` - Aspose.PDF API를 사용하는 방법을 보여주는 도우미 클래스가 포함되어 있습니다.</em>
+`Helpers\PdfPage.cs` - Aspose.PDF API를 사용하는 방법을 보여주는 도우미 클래스를 포함합니다.</em>
 
 Aspose.Pdf.GridViewExport 프로젝트는 `Report2.aspx`에서 시연을 위한 확장된 GridView 컨트롤을 포함합니다.

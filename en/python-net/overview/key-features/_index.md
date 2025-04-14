@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /python-net/key-features/
 description: Aspose.PDF for Python via .NET demonstrates its general features. Its shows the supported PDF versions, and all the manipulations we can do with PDF.
-lastmod: "2022-12-21"
+lastmod: "2025-02-21"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: General Features of Aspose.PDF for Python
+Abstract: Aspose.PDF for Python via .NET is a robust library offering extensive features for managing and manipulating PDF documents. It supports established PDF standards and facilitates reading and exporting PDFs into various image formats such as BMP, GIF, JPEG, and PNG. Users can configure document properties, page attributes, and manage text, paragraphs, hyperlinks, graphs, and attachments. The library excels in conversion capabilities, allowing seamless transformation of PDFs to Word, Excel, PowerPoint, and HTML formats, among others, while also converting various formats back to PDF.
 ---
 
 ## General Features

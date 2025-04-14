@@ -83,7 +83,7 @@ El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF
 
 ## Obtener información del archivo PDF
 
-Para obtener información específica de un archivo PDF, primero necesitas obtener el objeto [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) utilizando la propiedad [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) del objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Una vez que se recupera el objeto [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo), puedes obtener los valores de las propiedades individuales. El siguiente fragmento de código te muestra cómo obtener información del archivo PDF.
+Para obtener información específica de un archivo PDF, primero necesitas obtener el objeto [DocumentInfo](https://reference.aspose.com/pdf/es/net/aspose.pdf/documentinfo) utilizando la propiedad [Info](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/properties/info) del objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document). Una vez que se recupera el objeto [DocumentInfo](https://reference.aspose.com/pdf/es/net/aspose.pdf/documentinfo), puedes obtener los valores de las propiedades individuales. El siguiente fragmento de código te muestra cómo obtener información del archivo PDF.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -142,7 +142,7 @@ private static void GetPDFFileInformation()
 
 Aspose.PDF for .NET te permite establecer información específica del archivo para un PDF, información como autor, fecha de creación, asunto y título. Para establecer esta información:
 
-1. Crea un objeto [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo).
+1. Crea un objeto [DocumentInfo](https://reference.aspose.com/pdf/es/net/aspose.pdf/documentinfo).
 1. Establece los valores de las propiedades.
 1. Guarda el documento actualizado utilizando el método Save de la clase Document.
 
@@ -167,6 +167,8 @@ private static void SetFileInformation()
         docInfo.CreationDate = DateTime.Now;
         docInfo.Keywords = "Aspose.Pdf, DOM, API";
         docInfo.ModDate = DateTime.Now;
+        // Specify custom timezone
+        docInfo.CreationTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Tokyo Standard Time").GetUtcOffset(docInfo.CreationDate);
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
         docInfo.Producer = "Custom producer";
@@ -197,6 +199,8 @@ private static void SetFileInformation()
         docInfo.CreationDate = DateTime.Now;
         docInfo.Keywords = "Aspose.Pdf, DOM, API";
         docInfo.ModDate = DateTime.Now;
+        // Specify custom timezone
+        docInfo.CreationTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Tokyo Standard Time").GetUtcOffset(docInfo.CreationDate);
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
         docInfo.Producer = "Custom producer";
@@ -214,8 +218,8 @@ private static void SetFileInformation()
 
 Aspose.PDF te permite acceder a los metadatos XMP de un archivo PDF. Para obtener los metadatos de un archivo PDF:
 
-1. Crea un objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) y abre el archivo PDF de entrada.
-1. Obtén los metadatos del archivo utilizando la propiedad [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
+1. Crea un objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) y abre el archivo PDF de entrada.
+1. Obtén los metadatos del archivo utilizando la propiedad [Metadata](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/properties/metadata).
 
 El siguiente fragmento de código te muestra cómo obtener metadatos del archivo PDF.
 
@@ -265,9 +269,9 @@ private static void GetXMPMetadata()
 
 Aspose.PDF te permite establecer metadatos en un archivo PDF. Para establecer metadatos:
 
-1. Crea un objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Establece los valores de metadatos utilizando la propiedad [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
-1. Guarda el documento actualizado utilizando el método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) del objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Crea un objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
+1. Establece los valores de metadatos utilizando la propiedad [Metadata](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/properties/metadata).
+1. Guarda el documento actualizado utilizando el método [Save](https://reference.aspose.com/pdf/es/net/aspose.pdf/document/methods/save) del objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document).
 
 El siguiente fragmento de código te muestra cómo establecer metadatos en un archivo PDF.
 

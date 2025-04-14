@@ -77,9 +77,9 @@ draft: false
 
 ## Получение предпочтений просмотра существующего PDF файла
 
-[ViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference) класс представляет режимы отображения PDF файлов; например, позиционирование окна документа в центре экрана, скрытие панели меню приложения просмотра и т.д.
+[ViewerPreference](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/viewerpreference) класс представляет режимы отображения PDF файлов; например, позиционирование окна документа в центре экрана, скрытие панели меню приложения просмотра и т.д.
 
-Для чтения настроек мы используем [GetViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference) класс. Этот метод возвращает переменную, в которой сохраняются все настройки.
+Для чтения настроек мы используем [GetViewerPreference](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference) класс. Этот метод возвращает переменную, в которой сохраняются все настройки.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -79,9 +79,9 @@ sitemap:
 
 ## Изменение аннотации
 
-[ModifyAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) метод позволяет вам изменять основные атрибуты аннотации, т.е. тему, дату изменения, автора, цвет аннотации и флаг открытия. Вы также можете установить автора напрямую, используя метод ModifyAnnotations. Этот класс также предоставляет два перегруженных метода для удаления аннотаций. Первый метод, называемый DeleteAnnotations, удаляет все аннотации из PDF файла.
+[ModifyAnnotations](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotations) метод позволяет вам изменять основные атрибуты аннотации, т.е. тему, дату изменения, автора, цвет аннотации и флаг открытия. Вы также можете установить автора напрямую, используя метод ModifyAnnotations. Этот класс также предоставляет два перегруженных метода для удаления аннотаций. Первый метод, называемый DeleteAnnotations, удаляет все аннотации из PDF файла.
 
-Например, в следующем коде рассмотрим изменение автора в нашей аннотации с использованием [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
+Например, в следующем коде рассмотрим изменение автора в нашей аннотации с использованием [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Aspose.PDF 21.4 允许您合并图像。 [Merge Images](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) 方法检查特定文件夹的内容，并处理其中指定类型的文件。在合并图片时，我们指定 'inputImagesStreams'、图像格式和图像合并模式（例如 - 垂直）我们的文件。然后我们将结果保存在 FileOutputStream 中。
+Aspose.PDF 21.4 允许您合并图像。 [Merge Images](https://reference.aspose.com/pdf/zh/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) 方法检查特定文件夹的内容，并处理其中指定类型的文件。在合并图片时，我们指定 'inputImagesStreams'、图像格式和图像合并模式（例如 - 垂直）我们的文件。然后我们将结果保存在 FileOutputStream 中。
 
 请遵循以下代码片段来解决您的任务：
 

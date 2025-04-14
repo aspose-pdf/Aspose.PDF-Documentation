@@ -124,10 +124,6 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### Replace signature Image
-
-Sometimes you may have a requirement to only replace the image of an already present signature field inside PDF file. In order to accomplish this requirement, first, we need to search form fields inside the PDF file, identify Signature fields, get the dimensions (Rectangular dimensions) of the signature field and then stamp an image over the same dimensions.
-
 ## Extract Signature Information
 
 Aspose.PDF for .NET supports the feature to digitally sign the PDF files using the SignatureField class. Currently, we can also determine the validity of the certificate but we cannot extract the whole certificate. The information which can be extracted is a public key, thumbprint, issuer, etc.

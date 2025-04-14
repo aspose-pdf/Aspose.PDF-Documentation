@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
-    "wordcount": "583",
+    "wordcount": "838",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,18 +74,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "يمكنك استخراج الصور من حقل التوقيع واستخراج معلومات التوقيع باستخدام فئة SignatureField مع C#."
 }
 </script>
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## استخراج الصورة من حقل التوقيع
 
-تدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) وأثناء توقيع المستند، يمكنك أيضًا تعيين صورة لـ `SignatureAppearance`. الآن، توفر هذه الواجهة البرمجية أيضًا القدرة على استخراج معلومات التوقيع بالإضافة إلى الصورة المرتبطة بحقل التوقيع.
+يدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة [SignatureField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturefield) وأثناء توقيع المستند، يمكنك أيضًا تعيين صورة لـ `SignatureAppearance`. الآن، توفر هذه الواجهة البرمجية أيضًا القدرة على استخراج معلومات التوقيع بالإضافة إلى الصورة المرتبطة بحقل التوقيع.
 
-لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) إلى فئة SignatureField. يرجى إلقاء نظرة على مقتطف الشيفرة التالي الذي يوضح الخطوات لاستخراج صورة من كائن `SignatureField`:
+لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractImage](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturefield/methods/extractimage) إلى فئة SignatureField. يرجى إلقاء نظرة على مقتطف الشيفرة التالية الذي يوضح الخطوات لاستخراج صورة من كائن `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -124,15 +124,11 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### استبدال صورة التوقيع
-
-في بعض الأحيان قد يكون لديك متطلبات لاستبدال صورة حقل التوقيع الموجود بالفعل داخل ملف PDF. لتحقيق هذا المتطلب، أولاً، نحتاج إلى البحث عن حقول النموذج داخل ملف PDF، وتحديد حقول التوقيع، والحصول على الأبعاد (الأبعاد المستطيلة) لحقل التوقيع ثم ختم صورة فوق نفس الأبعاد.
-
 ## استخراج معلومات التوقيع
 
-تدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة SignatureField. حاليًا، يمكننا أيضًا تحديد صلاحية الشهادة ولكن لا يمكننا استخراج الشهادة بالكامل. المعلومات التي يمكن استخراجها هي المفتاح العام، وبصمة الإصبع، والجهة المصدرة، إلخ.
+يدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة SignatureField. حاليًا، يمكننا أيضًا تحديد صلاحية الشهادة ولكن لا يمكننا استخراج الشهادة بالكامل. المعلومات التي يمكن استخراجها هي المفتاح العام، وبصمة الإصبع، والجهة المصدرة، إلخ.
 
-لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) إلى فئة [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) . يرجى إلقاء نظرة على مقتطف الشيفرة التالي الذي يوضح الخطوات لاستخراج الشهادة من كائن SignatureField:
+لاستخراج معلومات التوقيع، قدمنا طريقة [ExtractCertificate](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) إلى فئة [SignatureField](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/signaturefield). يرجى إلقاء نظرة على مقتطف الشيفرة التالية الذي يوضح الخطوات لاستخراج الشهادة من كائن SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -209,18 +205,18 @@ Pkcs7
 Signature1
 ```
 
-## التحقق من تعرض التوقيعات للتلاعب
+## التحقق من التوقيعات من أجل التلاعب
 
-يمكنك استخدام فئة **SignaturesCompromiseDetector** للتحقق من تعرض التوقيعات الرقمية للتلاعب.
+يمكنك استخدام فئة **SignaturesCompromiseDetector** للتحقق من التوقيعات الرقمية من أجل التلاعب.
 استدعِ طريقة **Check()** للتحقق من توقيعات المستند.
-إذا لم يتم اكتشاف أي تلاعب في التوقيعات، ستعيد الطريقة true.
-إذا أعادت الطريقة false، يمكنك التحقق مما إذا كانت التوقيعات المتعرضة للتلاعب تستخدم الخاصية **HasCompromisedSignatures** واسترجاع قائمة التوقيعات المتعرضة للتلاعب عبر الخاصية **CompromisedSignatures**.
+إذا لم يتم الكشف عن أي تلاعب في التوقيع، ستعيد الطريقة القيمة true.
+إذا أعادت الطريقة القيمة false، يمكنك التحقق مما إذا كانت التوقيعات المتلاعب بها تستخدم خاصية **HasCompromisedSignatures** واسترجاع قائمة التوقيعات المتلاعب بها من خلال خاصية **CompromisedSignatures**.
 
-للتحقق مما إذا كانت التوقيعات الحالية تغطي المستند بأكمله، استخدم الخاصية **SignaturesCoverage**.
-يمكن أن تأخذ هذه الخاصية القيم التالية:
-- **Undefined** – إذا تم التلاعب بإحدى التوقيعات صراحةً أو فشل فحص التغطية.
-- **EntirelySigned** – إذا كانت التوقيعات تغطي المستند بأكمله.
-- **PartiallySigned** – إذا لم تغطِ التوقيعات المستند بأكمله وكان هناك محتوى غير موقع.
+للتحقق مما إذا كانت التوقيعات الحالية تغطي المستند بالكامل، استخدم خاصية **SignaturesCoverage**.
+يمكن أن تحتوي هذه الخاصية على القيم التالية:
+- **غير محدد** – إذا تم التلاعب بأحد التوقيعات بشكل صريح أو فشلت عملية التحقق من التغطية.
+- **موقع بالكامل** – إذا كانت التوقيعات تغطي المستند بالكامل.
+- **موقع جزئيًا** – إذا كانت التوقيعات لا تغطي المستند بالكامل وهناك محتوى غير موقع.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

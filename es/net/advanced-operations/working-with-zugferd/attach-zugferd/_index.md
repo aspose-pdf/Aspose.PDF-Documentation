@@ -86,7 +86,7 @@ Recomendamos seguir los siguientes pasos para adjuntar ZUGFeRD a PDF:
 
 * Defina una variable de ruta que apunte a una carpeta donde se encuentran los archivos PDF de entrada y salida.
 * Cree un objeto de documento cargando un archivo PDF existente (por ejemplo, "ZUGFeRD-test.pdf") desde la ruta.
-* Cree un objeto [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification/) proporcionando la ruta y la descripción de otro archivo llamado "factur-x.xml", que contiene metadatos de factura conforme al estándar ZUGFeRD.
+* Cree un objeto [FileSpecification](https://reference.aspose.com/pdf/es/net/aspose.pdf/filespecification/) proporcionando la ruta y la descripción de otro archivo llamado "factur-x.xml", que contiene metadatos de factura conforme al estándar ZUGFeRD.
 * Agregue propiedades al objeto de especificación de archivo, como la descripción, el tipo MIME y la relación AF. La relación AF indica cómo se relaciona el archivo incrustado con el documento PDF. En este caso, se establece en "Alternativa", lo que significa que el archivo incrustado es una representación alternativa del contenido PDF.
 * Agregue el objeto de especificación de archivo a la colección de archivos incrustados del documento. El nombre del archivo debe especificarse según el estándar ZUGFeRD, por ejemplo, "factur-x.xml".
 * Convierta el documento al formato PDF/A-3B, un subconjunto de PDF que asegura la preservación a largo plazo de documentos electrónicos. PDF/A-3B permite incrustar archivos de cualquier formato en documentos PDF.

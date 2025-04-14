@@ -80,12 +80,16 @@ sitemap:
 
 **Aspose.PDF for .NET** enables you to convert a PDF file to a <abbr title="Portable Document Format eXchange">PDF/X</abbr> compliant PDF file. This article explains how.
 
+- [Convert PDF to PDF/X-4](#csharp-convert-pdf-to-x4)
+
 The following code snippets also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ## Supported standards
 **Aspose.PDF for .NET** supports the following standards: PDF/X-1a:2001, PDF/X-1a:2003, PDF/X-3:2003, PDF/X-4.
 
 ## Convert PDF file to PDF/X-4 with external ICC profile
+
+<a name="csharp-convert-pdf-to-x4" id="csharp-convert-pdf-to-x4"><strong>Convert PDF to PDF/X4</strong></a>
 
 The following code snippet shows how to convert PDF files to PDF/X-4 compliant PDF and provide an external ICC profile to ensure the proper color rendition.
 

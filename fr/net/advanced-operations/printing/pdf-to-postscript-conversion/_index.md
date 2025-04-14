@@ -83,7 +83,7 @@ Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing]
 
 ## **PDF en Postscript en C#**
 
-La classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/) fournit la capacité d'imprimer des documents PDF et avec l'aide de cette classe, nous pouvons également convertir des fichiers PDF en format PostScript. Pour convertir un fichier PDF en PostScript, installez d'abord une imprimante PS et imprimez simplement dans un fichier avec l'aide de PdfViewer. Pour installer une imprimante PS, référez-vous aux instructions fournies par votre fournisseur d'imprimante. Le code suivant vous montre comment imprimer et convertir un PDF en format PostScript.
+La classe [PdfViewer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfviewer/) fournit la capacité d'imprimer des documents PDF et avec l'aide de cette classe, nous pouvons également convertir des fichiers PDF en format PostScript. Pour convertir un fichier PDF en PostScript, installez d'abord une imprimante PS et imprimez simplement dans un fichier avec l'aide de PdfViewer. Pour installer une imprimante PS, référez-vous aux instructions fournies par votre fournisseur d'imprimante. Le code suivant vous montre comment imprimer et convertir un PDF en format PostScript.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -158,7 +158,7 @@ private static void PrintToPostscriptFile()
 
 ## Vérification du statut de la tâche d'impression
 
-Un fichier PDF peut être imprimé sur une imprimante physique ainsi que sur le Microsoft XPS Document Writer, sans afficher de boîte de dialogue d'impression, en utilisant la classe [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/). Lors de l'impression de grands fichiers PDF, le processus peut prendre beaucoup de temps, donc l'utilisateur peut ne pas être certain si le processus d'impression est terminé ou a rencontré un problème. Pour déterminer le statut d'une tâche d'impression, utilisez la propriété [PrintStatus](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printstatus/). Le code suivant vous montre comment imprimer le fichier PDF dans un fichier XPS et obtenir le statut d'impression.
+Un fichier PDF peut être imprimé sur une imprimante physique ainsi que sur le Microsoft XPS Document Writer, sans afficher de boîte de dialogue d'impression, en utilisant la classe [PdfViewer](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfviewer/). Lors de l'impression de grands fichiers PDF, le processus peut prendre beaucoup de temps, donc l'utilisateur peut ne pas être certain si le processus d'impression est terminé ou a rencontré un problème. Pour déterminer le statut d'une tâche d'impression, utilisez la propriété [PrintStatus](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfviewer/printstatus/). Le code suivant vous montre comment imprimer le fichier PDF dans un fichier XPS et obtenir le statut d'impression.
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -299,7 +299,7 @@ private static void CheckingPrintJobStatus()
 
 ## Obtenir/Définir le nom du propriétaire de la tâche d'impression
 
-Parfois, il est nécessaire d'obtenir ou de définir le nom du propriétaire de la tâche d'impression (c'est-à-dire, l'utilisateur réel qui a appuyé sur un bouton d'impression sur une page web). Cette information est requise lors de l'impression du fichier PDF. Pour accomplir cette exigence, la propriété [PrinterJobName](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/printerjobname/) est utilisée.
+Parfois, il est nécessaire d'obtenir ou de définir le nom du propriétaire de la tâche d'impression (c'est-à-dire, l'utilisateur réel qui a appuyé sur un bouton d'impression sur une page web). Cette information est requise lors de l'impression du fichier PDF. Pour accomplir cette exigence, la propriété [PrinterJobName](https://reference.aspose.com/pdf/fr/net/aspose.pdf.facades/pdfviewer/printerjobname/) est utilisée.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

@@ -77,7 +77,7 @@ draft: false
 
 ## الحصول على خصائص صفحة PDF من ملف PDF موجود
 
-[PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) يتيح لك العمل مع الصفحات الفردية من ملف PDF. يساعدك في الحصول على خصائص الصفحة الفردية مثل أحجام صناديق الصفحات المختلفة، دوران الصفحة، تكبير الصفحة، إلخ. للحصول على تلك الخصائص، تحتاج إلى إنشاء كائن [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، يمكنك استخدام طرق مختلفة للحصول على خصائص الصفحة مثل [GetPageRotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpagerotation)، [GetPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpages)، [GetPageBoxSize](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/methods/getpageboxsize) إلخ.
+[PdfPageEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor) يتيح لك العمل مع الصفحات الفردية من ملف PDF. يساعدك في الحصول على خصائص الصفحة الفردية مثل أحجام صناديق الصفحات المختلفة، دوران الصفحة، تكبير الصفحة، إلخ. للحصول على تلك الخصائص، تحتاج إلى إنشاء كائن [PdfPageEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، يمكنك استخدام طرق مختلفة للحصول على خصائص الصفحة مثل [GetPageRotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor/methods/getpagerotation)، [GetPages](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor/methods/getpages)، [GetPageBoxSize](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor/methods/getpageboxsize) إلخ.
 
 تظهر الشيفرة البرمجية التالية كيفية الحصول على خصائص صفحة PDF من ملف PDF موجود.
 
@@ -108,7 +108,7 @@ private static void GetPdfPageProperties()
 
 ## تعيين خصائص صفحة PDF في ملف PDF موجود
 
-لتعيين خصائص الصفحة مثل دوران الصفحة، التكبير أو نقطة الأصل، تحتاج إلى استخدام فئة [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor). توفر هذه الفئة طرقًا وخصائص مختلفة لتعيين هذه الخصائص. أولاً، تحتاج إلى إنشاء كائن من فئة [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، يمكنك استخدام هذه الطرق والخصائص لتعيين خصائص الصفحة. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
+لتعيين خصائص الصفحة مثل دوران الصفحة، التكبير أو نقطة الأصل، تحتاج إلى استخدام فئة [PdfPageEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor). توفر هذه الفئة طرقًا وخصائص مختلفة لتعيين هذه الخصائص. أولاً، تحتاج إلى إنشاء كائن من فئة [PdfPageEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor) وربط ملف PDF المدخل باستخدام طريقة [BindPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.facade/bindpdf/methods/3). بعد ذلك، يمكنك استخدام هذه الطرق والخصائص لتعيين خصائص الصفحة. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document/methods/save).
 
 تظهر الشيفرة البرمجية التالية كيفية تعيين خصائص صفحة PDF في ملف PDF موجود.
 
@@ -148,7 +148,7 @@ private static void SetPdfPageProperties()
 
 ## تغيير حجم محتويات الصفحة لصفحات معينة في ملف PDF
 
-تسمح لك طريقة ResizeContents من فئة [PdfPageEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor) بتغيير حجم محتويات الصفحة في ملف PDF. تُستخدم فئة [ContentsResizeParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/contentsresizeparameters) لتحديد المعلمات التي سيتم استخدامها لتغيير حجم الصفحة (الصفحات) مثل الهوامش بالنسبة المئوية أو الوحدات، إلخ. يمكنك تغيير حجم جميع الصفحات أو تحديد مصفوفة من الصفحات لتغيير حجمها باستخدام طريقة ResizeContents.
+تسمح لك طريقة ResizeContents من فئة [PdfPageEditor](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdfpageeditor) بتغيير حجم محتويات الصفحة في ملف PDF. تُستخدم فئة [ContentsResizeParameters](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades.pdffileeditor/contentsresizeparameters) لتحديد المعلمات التي سيتم استخدامها لتغيير حجم الصفحة (الصفحات) مثل الهوامش بالنسبة المئوية أو الوحدات، إلخ. يمكنك تغيير حجم جميع الصفحات أو تحديد مصفوفة من الصفحات لتغيير حجمها باستخدام طريقة ResizeContents.
 
 تظهر الشيفرة البرمجية التالية كيفية تغيير حجم محتويات بعض الصفحات المحددة من ملف PDF.
 

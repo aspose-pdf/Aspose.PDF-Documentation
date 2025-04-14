@@ -15,7 +15,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Import and Export Form Field",
     "alternativeHeadline": "Streamline PDF Form Management with Import/Export Features",
-    "abstract": "تتيح ميزة استيراد وتصدير حقل النموذج في Aspose.PDF for .NET للمستخدمين ملء وتعديل حقول نماذج PDF بسلاسة باستخدام مصادر بيانات متنوعة مثل FDF و XFDF و XML وحتى كائنات System.Data.DataTable. تمكّن هذه الواجهة البرمجية القوية من التعامل الآلي مع البيانات، مما يعزز كفاءة إدارة نماذج PDF ويسهل عملية إدخال البيانات",
+    "abstract": "تتيح ميزة استيراد وتصدير حقل النموذج في Aspose.PDF for .NET للمستخدمين ملء وتعديل حقول نماذج PDF بسلاسة باستخدام مصادر بيانات متنوعة مثل FDF و XFDF و XML وحتى كائنات System.Data.DataTable. تمكّن هذه الواجهة البرمجية القوية من التعامل الآلي مع البيانات، مما يعزز كفاءة إدارة نماذج PDF ويسهل عملية إدخال البيانات.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "252",
+    "wordcount": "307",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,12 +70,14 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/import-export-form-field/"
     },
-    "dateModified": "2024-11-25",
-    "description": "يمكن لـ Aspose.PDF تنفيذ المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+    "dateModified": "2025-04-04",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
 
-Aspose.PDF for .NET يوفر إمكانيات رائعة لإنشاء / تعديل حقول النموذج داخل مستند PDF. باستخدام هذه الواجهة البرمجية، يمكنك ملء حقول النموذج برمجيًا داخل ملف PDF، ملء حقول النموذج عن طريق [استيراد البيانات من FDF إلى ملف PDF](/pdf/ar/net/import-and-export-data/)، [استيراد البيانات من XFDF إلى ملف PDF](/pdf/ar/net/import-and-export-data/)، [استيراد البيانات من XML إلى ملف PDF](/pdf/ar/net/import-and-export-data/) أو حتى يمكنك استيراد البيانات من كائن [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF for .NET يوفر إمكانيات رائعة لإنشاء / تعديل حقول النموذج داخل مستند PDF. باستخدام هذه الواجهة البرمجية، يمكنك ملء حقول النموذج برمجيًا داخل ملف PDF، ملء حقول النموذج عن طريق [استيراد البيانات من FDF إلى ملف PDF](/pdf/ar/net/import-and-export-data/)، [استيراد البيانات من XFDF إلى ملف PDF](/pdf/ar/net/import-and-export-data/)، [استيراد البيانات من XML إلى ملف PDF](/pdf/ar/net/import-and-export-data/) أو حتى يمكنك استيراد البيانات من كائن [System.Data.DataTable](https://reference.aspose.com/pdf/ar/net/aspose.pdf.table/importdatatable/methods/1).
+
+## استيراد البيانات من PDF إلى FDF
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

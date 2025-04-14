@@ -87,7 +87,7 @@ Un flujo de contenido es un objeto de flujo PDF cuyos datos consisten en instruc
 
 ### Detalles de implementación
 
-Este tema explica cómo usar operadores con Aspose.PDF. El ejemplo seleccionado agrega una imagen a un archivo PDF para ilustrar el concepto. Para agregar una imagen en un archivo PDF, se necesitan diferentes operadores. Este ejemplo utiliza [GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14) y [GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26).
+Este tema explica cómo usar operadores con Aspose.PDF. El ejemplo seleccionado agrega una imagen a un archivo PDF para ilustrar el concepto. Para agregar una imagen en un archivo PDF, se necesitan diferentes operadores. Este ejemplo utiliza [GSave](https://reference.aspose.com/pdf/es/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/es/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/es/net/aspose.pdf.ioperatorselector/visit/methods/14) y [GRestore](https://reference.aspose.com/pdf/es/net/aspose.pdf.ioperatorselector/visit/methods/26).
 
 - El operador **GSave** guarda el estado gráfico actual del PDF.
 - El operador **ConcatenateMatrix** (matriz de concatenación) se utiliza para definir cómo se debe colocar una imagen en la página PDF.
@@ -96,7 +96,7 @@ Este tema explica cómo usar operadores con Aspose.PDF. El ejemplo seleccionado 
 
 Para agregar una imagen a un archivo PDF:
 
-1. Cree un objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) y abra el documento PDF de entrada.
+1. Cree un objeto [Document](https://reference.aspose.com/pdf/es/net/aspose.pdf/document) y abra el documento PDF de entrada.
 1. Obtenga la página particular a la que se va a agregar la imagen.
 1. Agregue la imagen a la colección de Recursos de la página.
 1. Use los operadores para colocar la imagen en la página:
@@ -235,7 +235,7 @@ private static void DrawXFormOnPage()
 
 ## Eliminar Objetos Gráficos usando Clases de Operadores
 
-Las clases de operadores proporcionan grandes características para la manipulación de PDF. Cuando un archivo PDF contiene gráficos que no se pueden eliminar utilizando el método [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) de la clase [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor), se pueden usar las clases de operadores para eliminarlos en su lugar.
+Las clases de operadores proporcionan grandes características para la manipulación de PDF. Cuando un archivo PDF contiene gráficos que no se pueden eliminar utilizando el método [DeleteImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) de la clase [PdfContentEditor](https://reference.aspose.com/pdf/es/net/aspose.pdf.facades/pdfcontenteditor), se pueden usar las clases de operadores para eliminarlos en su lugar.
 
 El siguiente fragmento de código muestra cómo eliminar gráficos. Tenga en cuenta que si el archivo PDF contiene etiquetas de texto para los gráficos, pueden persistir en el archivo PDF utilizando este enfoque. Por lo tanto, busque los operadores gráficos para un método alternativo para eliminar tales imágenes.
 

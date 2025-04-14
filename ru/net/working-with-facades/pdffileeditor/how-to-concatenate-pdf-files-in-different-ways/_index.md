@@ -78,11 +78,11 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Эта статья описывает, как вы можете [Объединить](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) несколько PDF документов в один PDF документ с помощью компонента [Aspose.PDF for .NET](/pdf/ru/net/). [Aspose.PDF for .NET](/pdf/ru/net/) делает эту работу легкой.
+Эта статья описывает, как вы можете [Объединить](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) несколько PDF документов в один PDF документ с помощью компонента [Aspose.PDF for .NET](/pdf/ru/net/). [Aspose.PDF for .NET](/pdf/ru/net/) делает эту работу легкой.
 
 {{% /alert %}}
 
-Все, что вам нужно сделать, это вызвать метод [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor), и все ваши входные PDF файлы будут объединены, и будет сгенерирован один PDF файл. Давайте создадим приложение, чтобы попрактиковаться в объединении PDF файлов. Мы создадим приложение с использованием Visual Studio.NET 2019.
+Все, что вам нужно сделать, это вызвать метод [Concatenate](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor), и все ваши входные PDF файлы будут объединены, и будет сгенерирован один PDF файл. Давайте создадим приложение, чтобы попрактиковаться в объединении PDF файлов. Мы создадим приложение с использованием Visual Studio.NET 2019.
 
 {{% alert color="primary" %}}
 
@@ -104,7 +104,7 @@ private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabe
 }
 ```
 
-Представлен вид приложения Windows Forms для демонстрации класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) для объединения PDF файлов.
+Представлен вид приложения Windows Forms для демонстрации класса [PdfFileEditor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffileeditor) для объединения PDF файлов.
 
 ![Объединить PDF файлы](how-to-concatenate-pdf-files-in-different-ways_1.png)
 

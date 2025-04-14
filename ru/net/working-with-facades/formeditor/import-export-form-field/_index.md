@@ -1,11 +1,11 @@
 ---
-title: Импорт и экспорт поля формы
+title: Импорт и экспорт полей формы
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /ru/net/import-export-form-field/
-description: Заполните поля формы с помощью DataTable с классом FormEditor Aspose.PDF for .NET
+description: Заполнение полей формы с использованием DataTable с помощью класса FormEditor от Aspose.PDF for .NET
 lastmod: "2021-06-05"
 draft: false
 ---
@@ -15,7 +15,7 @@ draft: false
     "@type": "TechArticle",
     "headline": "Import and Export Form Field",
     "alternativeHeadline": "Streamline PDF Form Management with Import/Export Features",
-    "abstract": "Функция поля формы импорта и экспорта в Aspose.PDF для .NET позволяет пользователям легко заполнять поля форм PDF-файлов и управлять ими, используя различные источники данных, такие как FDF, XFDF, XML и даже объекты System.Data.DataTable. Этот мощный API обеспечивает автоматизированную обработку данных, повышая эффективность управления PDF-формами и оптимизируя процесс ввода данных",
+    "abstract": "Функция импорта и экспорта полей формы в Aspose.PDF for .NET позволяет пользователям без проблем заполнять и изменять поля PDF-форм, используя различные источники данных, такие как FDF, XFDF, XML и даже объекты System.Data.DataTable. Этот мощный API позволяет автоматизировать обработку данных, повышая эффективность управления PDF-формами и упрощая процесс ввода данных.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -24,7 +24,7 @@ draft: false
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "252",
+    "wordcount": "302",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -70,12 +70,14 @@ draft: false
         "@type": "WebPage",
         "@id": "/net/import-export-form-field/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков."
 }
 </script>
 
-Aspose.PDF for .NET предоставляет широкие возможности для создания и управления полями форм внутри PDF-документа. Используя этот API, вы можете программно заполнять поля форм внутри PDF-файла, заполнять поля форм путём [импорта данных из FDF в PDF-файл](/pdf/ru/net/import-and-export-data/), [импорта данных из XFDF в PDF-файл](/pdf/ru/net/import-and-export-data/), [импорта данных из XML в PDF-файл](/pdf/ru/net/import-and-export-data/) или даже импортировать данные из объекта [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF for .NET предоставляет отличные возможности для создания/изменения полей формы внутри PDF-документа. С помощью этого API вы можете программно заполнять поля формы внутри PDF-файла, заполнять поля формы, импортируя данные из [FDF в PDF-файл](/pdf/ru/net/import-and-export-data/), [XFDF в PDF-файл](/pdf/ru/net/import-and-export-data/), [XML в PDF-файл](/pdf/ru/net/import-and-export-data/) или даже вы можете импортировать данные из объекта [System.Data.DataTable](https://reference.aspose.com/pdf/ru/net/aspose.pdf.table/importdatatable/methods/1).
+
+## Импорт данных из PDF в FDF
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
@@ -113,7 +115,7 @@ private static void ImportData()
 }
 ```
 
-## Экспорт данных из FDF в PDF-файл
+## Экспорт данных из FDF в PDF
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

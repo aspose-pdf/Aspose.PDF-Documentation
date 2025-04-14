@@ -11,6 +11,81 @@ sitemap:
 lastmod: "2023-04-14"
 ---
 
+## What's new in Aspose.PDF for JavaScript via C++ 25.3
+
+1. **AsposePdfMakeNUp** - [Make N-Up document from a PDF-file](/pdf/javascript-cpp/organize/asposepdfmakenup/)
+1. **AsposePdfDeleteBlankPages** - [Delete blank pages from a PDF-file](/pdf/javascript-cpp/organize/asposepdfdeleteblankpages/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 25.2
+
+1. **AsposePdfMakeBooklet** - [Make booklet from a PDF-file](/pdf/javascript-cpp/organize/asposepdfmakebooklet/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 25.1
+
+1. **AsposePdfReplaceTextPages** - [Replace text on pages in a PDF-file](/pdf/javascript-cpp/organize/asposepdfreplacetextpages/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.12
+
+1. **AsposePdfFlatten** - [Flatten a PDF-file](/pdf/javascript-cpp/organize/asposepdfflatten/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.11
+
+1. **AsposePdfMergeLayers** - [Merge layers a PDF-file](/pdf/javascript-cpp/organize/asposepdfmergelayers/)
+1. **AsposePdfGetPagesLayers** - [Get list layers from a PDF-file](/pdf/javascript-cpp/metadata/asposepdfgetpageslayers/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.10
+
+1. **AsposePdfAddWatermark** - [Add watermark to a PDF-file](/pdf/javascript-cpp/organize/asposepdfaddwatermark/)
+1. **AsposePdfDeleteWatermarks** - [Delete watermarks from a PDF-file](/pdf/javascript-cpp/organize/asposepdfdeletewatermarks/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.9
+
+1. **AsposePdfGetWordsCharactersCount** - [Get words and characters count in a PDF-file](/pdf/javascript-cpp/metadata/asposepdfgetwordscharacterscount/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.8
+
+1. **AsposePdfFindHiddenText** - [Find hidden text in a PDF-file](/pdf/javascript-cpp/organize/asposepdffindhiddentext/)
+1. **AsposePdfDeleteHiddenText** - [Delete hidden text from a PDF-file](/pdf/javascript-cpp/organize/asposepdfdeletehiddentext/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.7
+
+1. **AsposePdfPagesToJpg** - [Improved PDF to JPG conversion](/pdf/javascript-cpp/convert/asposepdfpagestojpg/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.6
+
+1. **AsposePdfValidatePDFA** - [Validate PDF/A compatibility a PDF-file](/pdf/javascript-cpp/organize/asposepdfvalidatepdfa/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.5
+
+1. **AsposePdfPagesToPDF** - [Convert a PDF-file to PDF](/pdf/javascript-cpp/convert/asposepdfpagestopdf/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.4
+
+1. **AsposePdfReplaceFont** - [Replace font in a PDF-file](/pdf/javascript-cpp/organize/asposepdfreplacefont/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.3
+
+1. **AsposePdfFromImage** - [Convert a Image-file to PDF](/pdf/javascript-cpp/convert/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.2
+
+Convert from PDF functions:
+
+1. **AsposePdfExportFdf** - [Export from a PDF-file with AcroForm to FDF](/pdf/javascript-cpp/convert/asposepdfexportfdf/)
+1. **AAsposePdfExportXfdf** - [Export from a PDF-file with AcroForm to XFDF](/pdf/javascript-cpp/convert/asposepdfexportxfdf/)
+1. **AAsposePdfExportXml** - [Export from a PDF-file with AcroForm to XML](/pdf/javascript-cpp/convert/asposepdfexportxml/)
+
+Organize PDF functions:
+
+1. **AsposePdfReplaceText** - [Replace text in a PDF-file](/pdf/javascript-cpp/organize/asposepdfreplacetext/)
+1. **AsposePdfFindText** - [Find text in a PDF-file](/pdf/javascript-cpp/organize/asposepdffindtext/)
+
+## What's new in Aspose.PDF for JavaScript via C++ 24.1
+
+1. **AsposePdfFromTxt** - [Convert a TXT-file to PDF](/pdf/javascript-cpp/convertpdf/asposepdffromtxt/)
+1. **AsposePdfAddAttachment** - [Add attachment to a PDF-file](/pdf/javascript-cpp/organize/asposepdfaddattachment/)
+1. **AsposePdfGetAttachment** - [Get attachment from a PDF-file](/pdf/javascript-cpp/organize/asposepdfgetattachment/)
+
 ## What's new in Aspose.PDF for JavaScript via C++ 23.10
 
 1. **AsposePdfAbout** - [Get info about Product](/pdf/javascript-cpp/get-info-about-product/)

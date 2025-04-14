@@ -91,9 +91,9 @@ Aspose.PDF for .NET يدعم ميزة توقيع ملفات PDF رقميًا ب�
 
 يمكننا استخدام الفئات والأساليب التالية لتوقيع PDF
 
-- فئة [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature).
-- تعداد [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions).
-- خاصية [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) في فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature).
+- فئة [DocMDPSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/docmdpsignature).
+- تعداد [DocMDPAccessPermissions](https://reference.aspose.com/pdf/ar/net/aspose.pdf.forms/docmdpaccesspermissions).
+- خاصية [IsCertified](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) في فئة [PdfFileSignature](https://reference.aspose.com/pdf/ar/net/aspose.pdf.facades/pdffilesignature).
 
 لإنشاء توقيع رقمي بناءً على شهادات PKCS12 (امتدادات الملفات .p12، pfx)، يجب عليك إنشاء مثيل من فئة `PdfFileSignature`، مع تمرير كائن المستند إليها.
 بعد ذلك، يجب عليك تحديد طريقة التوقيع الرقمي المطلوبة عن طريق إنشاء كائن من إحدى الفئات:
@@ -197,13 +197,111 @@ private static void Verify()
 }
 ```
 
+## تحقق من التوقيعات الرقمية مع فحص الشهادة
+
+عند التحقق من توقيع رقمي، يمكنك التحقق من شهادة التوقيع للإلغاء.
+
+لسوء الحظ، لا يمكن لـ Aspose.PDF التحقق من صحة الشهادات الجذرية أو الوسيطة في سلسلة الشهادات.  
+لذلك، يتم التحقق فقط من حالة إلغاء شهادة التوقيع باستخدام CRL و OCSP.
+
+لتكوين التحقق من الشهادة، يمكنك استخدام معلمة `ValidationOptions`.
+
+تقدم خيار `ValidationMode` ثلاثة أوضاع للتحقق:
+
+- **لا شيء** – لا يتم التحقق من الشهادة.
+- **صارم** – يؤثر إلغاء الشهادة على نتيجة طريقة `Verify`.
+- **فقط تحقق** – يسمح بالتحقق من الشهادة دون التأثير على نتيجة التحقق من التوقيع.
+
+يحدد `ValidationMethod` الطريقة المستخدمة للتحقق من الشهادة:
+
+- **تلقائي** – اختيار طريقة تلقائية. يفضل OCSP. يتم تحديد حالة الإلغاء بواسطة الطريقة التي تنجح في إجراء التحقق.
+- **Ocsp** – يتم التحقق من الإلغاء باستخدام OCSP.
+- **Crl** – يتم التحقق من الإلغاء باستخدام CRL.
+- **الكل** – يتم استخدام كلا الطريقتين للتحقق من الشهادة. لكي ينجح التحقق، يجب أن تؤكد الطريقتان أن الشهادة غير ملغاة.
+
+يتيح خيار `CheckCertificateChain` التحقق من وجود سلسلة شهادات في التوقيع.  
+إذا لم يتم العثور على سلسلة الشهادات، ستكون نتيجة التحقق من الشهادة `غير محددة`.
+
+يمكن الحصول على نتيجة التحقق من خلال معلمة إخراج من نوع `ValidationResult`.  
+الحالات الممكنة هي: `صالح`، `غير صالح`، و `غير محدد`.  
+عادةً ما تعني `غير محدد` أنه لم يكن من الممكن التحقق من الشهادة أو أن سلسلة الشهادات مفقودة.
+
+تعيين كل من `CheckCertificateChain` و `ValidationMode = ValidationMode.Strict` يتوافق مع سلوك Adobe Acrobat.  
+إذا لم تتمكن Adobe Acrobat من العثور على سلسلة الشهادات، فإنها لا تتحقق من حالة الإلغاء، ويعتبر التوقيع غير صالح.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(filePath))
+    {
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Find all signatures
+            foreach (var signName in pdfSign.GetSignatureNames())
+            {
+                // Create a certificate validation option
+                var options = new Aspose.Pdf.Security.ValidationOptions();
+                options.ValidationMode = ValidationMode.Strict;
+                options.ValidationMethod = ValidationMethod.Auto;
+                options.CheckCertificateChain = true;
+                options.RequestTimeout = 20000;
+
+                Aspose.Pdf.Security.ValidationResult validationResult;
+                // Verify a digital signature
+                bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+                Console.WriteLine("Certificate validation resul: " + validationResult.Status);
+                Console.WriteLine("Is verified: " + verified);
+            } 
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(filePath);
+    
+    // Create an instance of PdfFileSignature for working with signatures in the document
+    using var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document);
+    
+    // Find all signatures
+    foreach (var signName in pdfSign.GetSignatureNames())
+    {
+        // Create a certificate validation option
+        var options = new Aspose.Pdf.Security.ValidationOptions();
+        options.ValidationMode = ValidationMode.Strict;
+        options.ValidationMethod = ValidationMethod.Auto;
+        options.CheckCertificateChain = true;
+        options.RequestTimeout = 20000;
+
+        Aspose.Pdf.Security.ValidationResult validationResult;
+        // Verify a digital signature
+        bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+        Console.WriteLine($"Certificate validation resul: {validationResult.Status}");
+        Console.WriteLine($"Is verified: {verified}" );
+    }             
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## إضافة طابع زمني إلى التوقيع الرقمي
 
 ### كيفية توقيع PDF رقميًا مع طابع زمني
 
 Aspose.PDF for .NET يدعم توقيع PDF رقميًا مع خادم طابع زمني أو خدمة ويب.
 
-لتحقيق هذا المتطلب، تمت إضافة فئة [TimestampSettings](https://reference.aspose.com/pdf/net/aspose.pdf/timestampsettings) إلى مساحة أسماء Aspose.PDF. يرجى إلقاء نظرة على مقتطف الكود التالي الذي يحصل على الطابع الزمني ويضيفه إلى مستند PDF:
+لتحقيق هذا المتطلب، تمت إضافة فئة [TimestampSettings](https://reference.aspose.com/pdf/ar/net/aspose.pdf/timestampsettings) إلى مساحة أسماء Aspose.PDF. يرجى إلقاء نظرة على مقتطف الكود التالي الذي يحصل على الطابع الزمني ويضيفه إلى مستند PDF:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

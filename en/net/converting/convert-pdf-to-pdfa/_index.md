@@ -80,6 +80,10 @@ sitemap:
 
 **Aspose.PDF for .NET** allows you to convert a PDF file to a <abbr title="Portable Document Format / A">PDF/A</abbr> compliant PDF file. Before doing so, the file must be validated. This topic explains how.
 
+- [Convert PDF to PDF/A-1b](#csharp-convert-pdf-to-a1b)
+- [Convert PDF to PDF/A-3b](#csharp-convert-pdf-to-a3b)
+- [Convert PDF to PDF/A-4](#csharp-convert-pdf-to-a4)
+
 {{% alert color="primary" %}}
 
 We follow Adobe Preflight and veraPDF for validating PDF/A conformance. All tools on the market have their own “representation” of PDF/A conformance. Please check this article on PDF/A validation tools for reference. We chose Adobe products for verifying how Aspose.PDF produces PDF files because Adobe is at the center of everything connected to PDF.
@@ -102,6 +106,8 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 We support the following standards: PDF/A-1b, PDF/A-1a, PDF/A-2b, PDF/A-2u, PDF/A-2a, PDF/A-3b, PDF/A-3u, PDF/A-3a, PDF/A-4, PDF/A-4e, PDF/A-4f.
 
 ## Convert PDF file to PDF/A-1b
+
+<a name="csharp-convert-pdf-to-a1b" id="csharp-convert-pdf-to-a1b"><strong>Convert PDF to PDF/A-1b</strong></a>
 
 The following code snippet shows how to convert PDF files to PDF/A-1b compliant PDF.
 
@@ -191,6 +197,8 @@ private static void ValidatePdfAStandard()
 
 ## Convert PDF file to PDF/A-3b
 
+<a name="csharp-convert-pdf-to-a3b" id="csharp-convert-pdf-to-a3b"><strong>Convert PDF to PDF/A-3b</strong></a>
+
 Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b format.
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
@@ -237,6 +245,8 @@ private static void ConvertPdfToPdfA3b()
 {{< /tabs >}}
 
 ## Convert PDF file to PDF/A-4
+
+<a name="csharp-convert-pdf-to-a4" id="csharp-convert-pdf-to-a4"><strong>Convert PDF to PDF/A4</strong></a>
 
 Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-4 format.
 

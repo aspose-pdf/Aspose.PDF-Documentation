@@ -1,5 +1,6 @@
 name: Hugo-CI-stage
 on:
+  workflow_dispatch: null
   push:
     branches:
       - develop

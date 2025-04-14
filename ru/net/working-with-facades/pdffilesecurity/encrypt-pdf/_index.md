@@ -83,9 +83,9 @@ draft: false
 
 ## Шифрование PDF файла с использованием различных типов шифрования и алгоритмов
 
-Чтобы зашифровать PDF файл, вам нужно создать объект [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) и затем вызвать метод [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Вы можете передать пароль пользователя, пароль владельца и привилегии в метод [EncryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Вам также нужно передать значения KeySize и Algorithm в этот метод.
+Чтобы зашифровать PDF файл, вам нужно создать объект [PdfFileSecurity](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity) и затем вызвать метод [EncryptFile](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Вы можете передать пароль пользователя, пароль владельца и привилегии в метод [EncryptFile](https://reference.aspose.com/pdf/ru/net/aspose.pdf.facades/pdffilesecurity/methods/encryptfile). Вам также нужно передать значения KeySize и Algorithm в этот метод.
 
-Просмотрите возможный список таких [CryptoAlgorithm](https://reference.aspose.com/pdf/net/aspose.pdf/cryptoalgorithm):
+Просмотрите возможный список таких [CryptoAlgorithm](https://reference.aspose.com/pdf/ru/net/aspose.pdf/cryptoalgorithm):
 
 |**Имя члена**|**Значение**|**Описание**|
 | :- | :- | :- |

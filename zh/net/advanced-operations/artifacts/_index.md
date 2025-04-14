@@ -82,7 +82,7 @@ PDF 中的工件是图形对象或其他不属于文档实际内容的元素。�
 
 PDF 中工件的目的是区分内容元素和非内容元素。这对于辅助功能非常重要，因为屏幕阅读器和其他辅助技术可以忽略工件并专注于相关内容。工件还可以提高 PDF 文档的性能和质量，因为它们可以在打印、搜索或复制时省略。
 
-要在 PDF 中将元素创建为工件，您需要使用 [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 类。
+要在 PDF 中将元素创建为工件，您需要使用 [Artifact](https://reference.aspose.com/pdf/zh/net/aspose.pdf/artifact) 类。
 它包含以下有用的属性：
 
 - **Artifact.Type** – 获取工件类型（支持 Artifact.ArtifactType 枚举的值，其中包括 Background, Layout, Page, Pagination 和 Undefined）。
@@ -97,17 +97,17 @@ PDF 中工件的目的是区分内容元素和非内容元素。这对于辅助�
 
 以下类在处理工件时也可能有用：
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/watermarkartifact/)
+- [ArtifactCollection](https://reference.aspose.com/pdf/zh/net/aspose.pdf/artifactcollection)
+- [BackgroundArtifact](https://reference.aspose.com/pdf/zh/net/aspose.pdf/backgroundartifact/)
+- [HeaderArtifact](https://reference.aspose.com/pdf/zh/net/aspose.pdf/headerartifact/)
+- [FooterArtifact](https://reference.aspose.com/pdf/zh/net/aspose.pdf/footerartifact/)
+- [WatermarkArtifact](https://reference.aspose.com/pdf/zh/net/aspose.pdf/watermarkartifact/)
 
 ## 使用现有的水印
 
 使用 Adobe Acrobat 创建的水印被称为工件（如 PDF 规范的 14.8.2.2 实际内容和工件中所描述）。
 
-要获取特定页面上的所有水印，[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 类具有 Artifacts 属性。
+要获取特定页面上的所有水印，[Page](https://reference.aspose.com/pdf/zh/net/aspose.pdf/page) 类具有 Artifacts 属性。
 
 下面的代码片段显示了如何获取 PDF 文件第一页上的所有水印。
 
@@ -140,7 +140,7 @@ private static void ExtractWatermarkFromPDF()
 
 ## 作为工件使用背景
 
-背景图像可用于为文档添加水印或其他低调设计。在 Aspose.PDF for .NET 中，每个 PDF 文档都是页面的集合，每个页面包含一组工件。可以使用 [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) 类向页面对象添加背景图像。
+背景图像可用于为文档添加水印或其他低调设计。在 Aspose.PDF for .NET 中，每个 PDF 文档都是页面的集合，每个页面包含一组工件。可以使用 [BackgroundArtifact](https://reference.aspose.com/pdf/zh/net/aspose.pdf/backgroundartifact) 类向页面对象添加背景图像。
 
 下面的代码片段展示了如何使用 BackgroundArtifact 对象向 PDF 页面添加背景图像。
 

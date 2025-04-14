@@ -82,13 +82,13 @@ sitemap:
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-Un filigrane créé avec Adobe Acrobat est appelé un artefact (comme décrit dans 14.8.2.2 Contenu réel et artefacts de la spécification PDF). Afin de travailler avec des artefacts, Aspose.PDF a deux classes : [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) et [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
+Un filigrane créé avec Adobe Acrobat est appelé un artefact (comme décrit dans 14.8.2.2 Contenu réel et artefacts de la spécification PDF). Afin de travailler avec des artefacts, Aspose.PDF a deux classes : [Artifact](https://reference.aspose.com/pdf/fr/net/aspose.pdf/artifact) et [ArtifactCollection](https://reference.aspose.com/pdf/fr/net/aspose.pdf/artifactcollection).
 
-Pour obtenir tous les artefacts sur une page particulière, la classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) a la propriété Artifacts. Ce sujet explique comment travailler avec des artefacts dans des fichiers PDF.
+Pour obtenir tous les artefacts sur une page particulière, la classe [Page](https://reference.aspose.com/pdf/fr/net/aspose.pdf/page) a la propriété Artifacts. Ce sujet explique comment travailler avec des artefacts dans des fichiers PDF.
 
 ## Travailler avec des artefacts
 
-La classe [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) contient les propriétés suivantes :
+La classe [Artifact](https://reference.aspose.com/pdf/fr/net/aspose.pdf/artifact) contient les propriétés suivantes :
 
 - **Artifact.Type** : obtient le type d'artefact (prend en charge les valeurs de l'énumération Artifact.ArtifactType où les valeurs incluent Background, Layout, Page, Pagination et Undefined).
 - **Artifact.Subtype** : obtient le sous-type d'artefact (prend en charge les valeurs de l'énumération Artifact.ArtifactSubtype où les valeurs incluent Background, Footer, Header, Undefined, Watermark).

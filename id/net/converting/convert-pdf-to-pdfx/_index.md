@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "1064",
+    "wordcount": "398",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,12 +73,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/convert-pdf-to-pdfx/"
     },
-    "dateModified": "2025-01-16",
-    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+    "dateModified": "2025-04-04",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
 **Aspose.PDF for .NET** memungkinkan Anda untuk mengonversi file PDF ke file PDF yang sesuai dengan <abbr title="Portable Document Format eXchange">PDF/X</abbr>. Artikel ini menjelaskan caranya.
+
+- [Mengonversi PDF ke PDF/X-4](#csharp-convert-pdf-to-x4)
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
@@ -86,6 +88,8 @@ Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/n
 **Aspose.PDF for .NET** mendukung standar berikut: PDF/X-1a:2001, PDF/X-1a:2003, PDF/X-3:2003, PDF/X-4.
 
 ## Mengonversi file PDF ke PDF/X-4 dengan profil ICC eksternal
+
+<a name="csharp-convert-pdf-to-x4" id="csharp-convert-pdf-to-x4"><strong>Mengonversi PDF ke PDF/X4</strong></a>
 
 Potongan kode berikut menunjukkan cara mengonversi file PDF ke PDF yang sesuai dengan PDF/X-4 dan menyediakan profil ICC eksternal untuk memastikan penyajian warna yang tepat.
 

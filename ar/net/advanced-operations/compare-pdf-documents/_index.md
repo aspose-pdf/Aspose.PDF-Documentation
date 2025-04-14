@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 130
 url: /ar/net/compare-pdf-documents/
-description: منذ إصدار 24.7، أصبح من الممكن مقارنة محتوى مستندات PDF مع علامات توضيحية وإخراج جنبًا إلى جنب
+description: منذ إصدار 24.7، أصبح من الممكن مقارنة محتوى مستندات PDF مع علامات التوضيح وإخراج جنبًا إلى جنب
 lastmod: "2024-08-17"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Compare PDF documents",
     "alternativeHeadline": "Enhanced PDF Document Comparison with Visual Highlights",
-    "abstract": "تتيح ميزة مقارنة PDF الجديدة في Aspose.PDF for .NET للمستخدمين تحديد الاختلافات بين مستندين PDF بكفاءة، سواء من خلال صفحات محددة أو المحتوى الكامل. مع المخرجات جنبًا إلى جنب وخيارات قابلة للتخصيص مثل علامات التغيير الإضافية وأنماط المقارنة المختلفة، تعزز هذه الأداة القوية التعاون من خلال جعل المراجعات سهلة التتبع والمراجعة",
+    "abstract": "تتيح ميزة مقارنة PDF الجديدة في Aspose.PDF for .NET للمستخدمين تحديد الاختلافات بين مستندين PDF بكفاءة، سواء من خلال صفحات محددة أو المحتوى بالكامل. مع إخراج جنبًا إلى جنب وخيارات قابلة للتخصيص مثل علامات التغيير الإضافية وأنماط المقارنة المختلفة، تعزز هذه الأداة القوية التعاون من خلال جعل المراجعات سهلة التتبع والمراجعة",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Compare PDF documents, PDF comparison, Aspose.PDF for .NET, comparing specific pages, comparing entire documents, graphical PDF comparer, side-by-side comparison, change markers, document accuracy, ImagesDifference",
-    "wordcount": "1180",
+    "wordcount": "1091",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,8 +74,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/compare-pdf-documents/"
     },
-    "dateModified": "2024-11-25",
-    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسريعة، وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+    "dateModified": "2025-04-04",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
 
@@ -87,7 +87,7 @@ sitemap:
 
 تتيح وظيفة المقارنة في Aspose.PDF لك مقارنة مستندين PDF صفحة بصفحة. يمكنك اختيار مقارنة صفحات محددة أو مستندات كاملة. تسلط وثيقة المقارنة الناتجة الضوء على الاختلافات، مما يسهل تحديد التغييرات بين الملفين.
 
-إليك قائمة بطرق ممكنة لمقارنة مستندات PDF باستخدام Aspose.PDF لمكتبة .NET:
+إليك قائمة بالطرق الممكنة لمقارنة مستندات PDF باستخدام Aspose.PDF لمكتبة .NET:
 
 1. **مقارنة صفحات محددة** - مقارنة الصفحات الأولى من مستندين PDF.
 
@@ -95,15 +95,13 @@ sitemap:
 
 1. **مقارنة مستندات PDF رسوميًا**:
 
-- مقارنة PDF باستخدام طريقة GetDifference - صور فردية حيث يتم تمييز التغييرات.
+- مقارنة PDF باستخدام طريقة GetDifference - صور فردية حيث يتم وضع علامات على التغييرات.
 
-- مقارنة PDF باستخدام طريقة CompareDocumentsToPdf - مستند PDF مع صور حيث يتم تمييز التغييرات.
+- مقارنة PDF باستخدام طريقة CompareDocumentsToPdf - مستند PDF مع صور حيث يتم وضع علامات على التغييرات.
 
 ## مقارنة صفحات محددة
 
 توضح مقتطف الشيفرة الأول كيفية مقارنة الصفحات الأولى من مستندين PDF.
-
-خطوات:
 
 1. تهيئة المستند.
 تبدأ الشيفرة بتهيئة مستندين PDF باستخدام مسارات الملفات الخاصة بهما (documentPath1 و documentPath2). يتم تحديد المسارات كسلاسل فارغة في الوقت الحالي، ولكن في الممارسة العملية، ستستبدل هذه بالمسارات الفعلية للملفات.
@@ -113,9 +111,9 @@ sitemap:
 - اختيار الصفحة - تقتصر المقارنة على الصفحة الأولى من كل مستند ('Pages[1]').
 - خيارات المقارنة:
 
-'AdditionalChangeMarks = true' - تضمن هذه الخيار عرض علامات التغيير الإضافية. تبرز هذه العلامات الاختلافات التي قد تكون موجودة في صفحات أخرى، حتى لو لم تكن في الصفحة الحالية التي تتم مقارنتها.
+'AdditionalChangeMarks = true' - تضمن هذه الخيار عرض علامات التغيير الإضافية. تبرز هذه العلامات الاختلافات التي قد تكون موجودة في صفحات أخرى، حتى لو لم تكن على الصفحة الحالية التي تتم مقارنتها.
 
-'ComparisonMode = ComparisonMode.IgnoreSpaces' - تخبر هذه الوضعية المقارن بتجاهل المسافات في النص، والتركيز فقط على التغييرات داخل الكلمات.
+'ComparisonMode = ComparisonMode.IgnoreSpaces' - تخبر هذه الوضعية المقارن بتجاهل الفراغات في النص، والتركيز فقط على التغييرات داخل الكلمات.
 
 3. يتم حفظ وثيقة المقارنة الناتجة، التي تبرز الاختلافات بين الصفحتين، في مسار الملف المحدد في 'resultPdfPath'.
 
@@ -146,19 +144,6 @@ private static void ComparingSpecificPages()
 
 يوسع مقتطف الشيفرة الثاني النطاق لمقارنة المحتوى الكامل لمستندين PDF.
 
-خطوات:
-
-1. تهيئة المستند.
-تمامًا كما في المثال الأول، يتم تهيئة مستندين PDF مع مسارات الملفات الخاصة بهما.
-
-2. عملية المقارنة.
-
-- مقارنة المستند الكامل - على عكس المقتطف الأول، تقارن هذه الشيفرة المحتوى الكامل للمستندين.
-
-- خيارات المقارنة - الخيارات هي نفسها كما في المقتطف الأول، مما يضمن تجاهل المسافات، وعرض علامات التغيير الإضافية.
-
-3. يتم حفظ نتيجة المقارنة، التي تبرز الاختلافات عبر جميع صفحات المستندين، في الملف المحدد بواسطة 'resultPdfPath'.
-
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparingEntireDocuments()
@@ -186,12 +171,12 @@ private static void ComparingEntireDocuments()
 }
 ```
 
-تولد نتائج المقارنة الناتجة عن هذه المقتطفات مستندات PDF يمكنك فتحها في عارض مثل Adobe Acrobat. إذا كنت تستخدم عرض الصفحتين في Adobe Acrobat، سترى التغييرات جنبًا إلى جنب:
+تكون نتائج المقارنة التي تم إنشاؤها بواسطة هذه المقتطفات مستندات PDF يمكنك فتحها في عارض مثل Adobe Acrobat. إذا كنت تستخدم عرض الصفحتين في Adobe Acrobat، سترى التغييرات جنبًا إلى جنب:
 
-- الحذف - يتم ملاحظتها في الصفحة اليسرى.
-- الإضافات - يتم ملاحظتها في الصفحة اليمنى.
+- الحذف - يتم ملاحظتها على الصفحة اليسرى.
+- الإضافات - يتم ملاحظتها على الصفحة اليمنى.
 
-من خلال تعيين 'AdditionalChangeMarks' إلى 'true'، يمكنك أيضًا رؤية علامات للتغييرات التي قد تحدث في صفحات أخرى، حتى لو لم تكن تلك التغييرات في الصفحة الحالية المعروضة.
+من خلال تعيين 'AdditionalChangeMarks' إلى 'true'، يمكنك أيضًا رؤية علامات للتغييرات التي قد تحدث في صفحات أخرى، حتى لو لم تكن تلك التغييرات على الصفحة الحالية المعروضة.
 
 **Aspose.PDF for .NET** توفر أدوات قوية لمقارنة مستندات PDF، سواء كنت بحاجة إلى مقارنة صفحات محددة أو مستندات كاملة. من خلال استخدام خيارات مثل 'AdditionalChangeMarks' وإعدادات 'ComparisonMode' المختلفة، يمكنك تخصيص عملية المقارنة وفقًا لاحتياجاتك الخاصة. توفر الوثيقة الناتجة عرضًا واضحًا، جنبًا إلى جنب، للتغييرات، مما يسهل تتبع المراجعات وضمان دقة المستند.
 
@@ -199,7 +184,7 @@ private static void ComparingEntireDocuments()
 
 عند التعاون في المستندات، خاصة في البيئات المهنية، غالبًا ما ينتهي بك الأمر مع إصدارات متعددة من نفس الملف.
 
-يمكنك استخدام فئة [GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) لمقارنة مستندات PDF وصفحاتها. الفئة مناسبة لمقارنة التغييرات في محتوى الصفحة الرسومي.
+يمكنك استخدام فئة [GraphicalPdfComparer](https://reference.aspose.com/pdf/ar/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) لمقارنة مستندات PDF والصفحات. الفئة مناسبة لمقارنة التغييرات في محتوى الصفحة الرسومي.
 
 مع Aspose.PDF for .NET، من الممكن مقارنة المستندات والصفحات وإخراج نتيجة المقارنة إلى مستند PDF أو ملف صورة.
 
@@ -211,17 +196,17 @@ private static void ComparingEntireDocuments()
 
 تحتوي الفئة على طريقة تتيح لك الحصول على اختلافات صورة الصفحة في شكل مناسب لمزيد من المعالجة: **ImagesDifference GetDifference(Page page1, Page page2)**.
 
-ترجع هذه الطريقة كائنًا من فئة [ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/)، والذي يحتوي على صورة الصفحة الأولى التي تتم مقارنتها ومصفوفة من الاختلافات. تحتوي مصفوفة الاختلافات والصورة الأصلية على تنسيق بكسل **RGB24bpp**.
+ترجع هذه الطريقة كائنًا من فئة [ImagesDifference](https://reference.aspose.com/pdf/ar/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/) التي تحتوي على صورة الصفحة الأولى التي تتم مقارنتها ومصفوفة من الاختلافات. تحتوي مصفوفة الاختلافات والصورة الأصلية على تنسيق بكسل **RGB24bpp**.
 
 تتيح لك ImagesDifference إنشاء صورة مختلفة والحصول على صورة الصفحة الثانية التي تتم مقارنتها عن طريق إضافة مصفوفة الاختلافات إلى الصورة الأصلية. للقيام بذلك، استخدم طرق **ImagesDifference.GetDestinationImage و ImagesDifference.DifferenceToImage**.
 
 ### مقارنة PDF باستخدام طريقة GetDifference
 
-تحدد الشيفرة المقدمة طريقة [GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) التي تقارن مستندين PDF وتولد تمثيلات بصرية للاختلافات بينهما.
+تحدد الشيفرة المقدمة طريقة [GetDifference](https://reference.aspose.com/pdf/ar/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods) التي تقارن مستندين PDF وتولد تمثيلات بصرية للاختلافات بينهما.
 
 تقارن هذه الطريقة الصفحات الأولى من ملفي PDF وتولد صورتين PNG:
 
-- صورة واحدة (diffPngFilePath) تبرز الاختلافات بين الصفحات باللون الأحمر.
+- صورة واحدة (diffPngFilePath) تبرز الاختلافات بين الصفحتين باللون الأحمر.
 - الصورة الأخرى (destPngFilePath) هي تمثيل بصري للصفحة الثانية من PDF.
 
 يمكن أن تكون هذه العملية مفيدة للمقارنة البصرية للتغييرات أو الاختلافات بين إصدارين من مستند.
@@ -259,7 +244,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 
 ### مقارنة PDF باستخدام طريقة CompareDocumentsToPdf
 
-يستخدم مقتطف الشيفرة المقدمة طريقة [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) التي تقارن مستندين وتولد تقرير PDF بنتائج المقارنة.
+يستخدم مقتطف الشيفرة المقدمة طريقة [CompareDocumentsToPdf](https://reference.aspose.com/pdf/ar/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) التي تقارن مستندين وتولد تقرير PDF بنتائج المقارنة.
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
