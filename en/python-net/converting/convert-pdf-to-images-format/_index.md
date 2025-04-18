@@ -77,7 +77,7 @@ Aspose.PDF for Python via .NET presents you online free application ["PDF to TIF
 
 Aspose.PDF for Python explain how to convert all pages in a PDF file to a single TIFF image:
 
-<a name="csharp-pdf-to-tiff"><strong>Steps: Convert PDF to TIFF in Python</strong></a>
+<a name="python-pdf-to-tiff"><strong>Steps: Convert PDF to TIFF in Python</strong></a>
 
 1. Create an object of the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 2. Create [TiffSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffsettings/) and [TiffDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/tiffdevice/) objects
@@ -124,11 +124,11 @@ Let's take a look at how to convert a PDF page to an image.
 
 [BmpDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/) class provides a method named [process](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/bmpdevice/#methods) which allows you to convert a particular page of the PDF file to BMP image format. The other classes have the same method. So, if we need to convert a PDF page to an image, we just instantiate the required class.
 
-<a name="csharp-pdf-to-bmp"></a>
-<a name="csharp-pdf-to-emf"></a>
-<a name="csharp-pdf-to-jpg"></a>
-<a name="csharp-pdf-to-png"></a>
-<a name="csharp-pdf-to-gif"></a>
+<a name="python-pdf-to-bmp"></a>
+<a name="python-pdf-to-emf"></a>
+<a name="python-pdf-to-jpg"></a>
+<a name="python-pdf-to-png"></a>
+<a name="python-pdf-to-gif"></a>
     
 The following steps and code snippet in Python shows this possibility
  
@@ -138,7 +138,7 @@ The following steps and code snippet in Python shows this possibility
  - [Convert PDF to PNG in Python](#python-pdf-to-image)
  - [Convert PDF to GIF in Python](#python-pdf-to-image)
 
-<a name="csharp-pdf-to-image"><strong>Steps: PDF to Image (BMP, EMF, JPG, PNG, GIF) in Python</strong></a>
+<a name="python-pdf-to-image"><strong>Steps: PDF to Image (BMP, EMF, JPG, PNG, GIF) in Python</strong></a>
 
 1. Load the PDF file using [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 2. Create an instance of subclass of [ImageDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/) i.e.
@@ -305,7 +305,7 @@ Aspose.PDF for Python supports the feature to convert SVG image to PDF format an
 
 The following code snippet shows the steps for converting a PDF file to SVG format with Python.
 
-<a name="csharp-pdf-to-svg"><strong>Steps: Convert PDF to SVG in Python</strong></a>
+<a name="python-pdf-to-svg"><strong>Steps: Convert PDF to SVG in Python</strong></a>
 
 1. Create an object of the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 2. Create [SvgSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/svgsaveoptions/) object with needed settings.

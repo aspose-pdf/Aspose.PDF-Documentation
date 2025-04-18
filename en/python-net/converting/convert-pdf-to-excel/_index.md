@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to Convert PDF to Excel in Python
-Abstract: This article provides a comprehensive guide on converting PDF files to various Excel formats using Python, specifically with the Aspose.PDF for Python via .NET library. It details the conversion processes for XLS, XLSX, CSV, and ODS formats. The document explains the steps needed to convert PDF to XLS and XLSX, highlighting the creation of Document and ExcelSaveOptions instances, and the use of the Document.Save() method to specify output formats. The article also discusses features such as controlling the insertion of blank columns and minimizing worksheet numbers during conversion. Additionally, it provides examples of converting PDFs to single Excel worksheets and other formats like CSV and ODS, emphasizing the flexibility and functionality of Aspose.PDF. An online tool for PDF to XLSX conversion is also mentioned, allowing users to explore the conversion quality. The article concludes with a list of related topics and code snippets to further aid in understanding and implementing these conversions programmatically.
+Abstract: This article provides a comprehensive guide on converting PDF files to various Excel formats using Python, specifically with the Aspose.PDF for Python via .NET library. It details the conversion processes for XLS, XLSX, CSV, and ODS formats. The document explains the steps needed to convert PDF to XLS and XLSX, highlighting the creation of Document and ExcelSaveOptions instances, and the use of the Document.Save() method to specify output formats. The article also discusses features such as controlling the insertion of blank columns and minimizing worksheet numbers during conversion. Additionally, it provides examples of converting PDFs to single Excel worksheets and other formats like CSV and ODS, emphasizing the flexibility and functionality of Aspose.PDF for Python. An online tool for PDF to XLSX conversion is also mentioned, allowing users to explore the conversion quality. The article concludes with a list of related topics and code snippets to further aid in understanding and implementing these conversions programmatically.
 ---
 
 ## Overview
@@ -57,7 +57,7 @@ Aspose.PDF for Python via .NET is a PDF manipulation component, we have introduc
 {{% alert color="success" %}}
 **Try to convert PDF to Excel online**
 
-Aspose.PDF presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Python presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}

@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to Get and Set page properties using Python
-Abstract: This article discusses the capabilities of Aspose.PDF for Python via .NET, focusing on reading and setting page properties in PDF files using Python. The article covers various functionalities including determining the number of pages in a PDF, accessing and modifying page properties, and handling color information. To get the number of pages, the `Document` class and `PageCollection` collection are used, with code snippets demonstrating how to retrieve the page count, even without saving the document. The article explains different page properties such as MediaBox, BleedBox, TrimBox, ArtBox, and CropBox, and provides code examples for accessing these properties. Additionally, it covers retrieving a specific page from a PDF and saving it as a separate document, as well as determining the color type of each page. The examples throughout are implemented in Python, illustrating practical applications of these features.
+Abstract: This article discusses the capabilities of Aspose.PDF for Python via .NET, focusing on reading and setting page properties in PDF files using Python. The article covers various functionalities including determining the number of pages in a PDF, accessing and modifying page properties, and handling color information. To get the number of pages, the `Document` class and `PageCollection` collection are used, with code snippets demonstrating how to retrieve the page count, even without saving the document. The article explains different page properties such as media_box, bleed_box, TrimBox, art_box, and crop_box, and provides code examples for accessing these properties. Additionally, it covers retrieving a specific page from a PDF and saving it as a separate document, as well as determining the color type of each page. The examples throughout are implemented in Python, illustrating practical applications of these features.
 ---
 
 Aspose.PDF for Python via .NET lets you read and set properties of pages in a PDF file in your Python applications. This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties. The examples given are in Python.
@@ -64,7 +64,7 @@ Sometimes we generate the PDF files on the fly and during PDF file creation, we 
 
 Each page in a PDF file has a number of properties, such as the width, height, bleed-, crop- and trimbox. Aspose.PDF allows you to access these properties.
 
-### **Understanding Page Properties: the Difference between Artbox, BleedBox, CropBox, MediaBox, TrimBox and Rect property**
+### **Understanding Page Properties: the Difference between art_box, bleed_box, crop_box, media_box, TrimBox and rect property**
 
 - **Media box**: The media box is the largest page box. It corresponds to the page size (for example A4, A5, US Letter, etc.) selected when the document was printed to PostScript or PDF. In other words, the media box determines the physical size of the media on which the PDF document is displayed or printed.
 - **Bleed box**: If the document has bleed, the PDF will also have a bleed box. Bleed is the amount of color (or artwork) that extends beyond the edge of a page. It is used to make sure that when the document is printed and cut to size (“trimmed”), the ink will go all the way to the edge of the page. Even if the page is mistrimmed - cut slightly off the trim marks - no white edges will appear on the page.
@@ -72,7 +72,7 @@ Each page in a PDF file has a number of properties, such as the width, height, b
 - **Art box**: The art box is the box drawn around the actual contents of the pages in your documents. This page box is used when importing PDF documents in other applications.
 - **Crop box**: The crop box is the “page” size at which your PDF document is displayed in Adobe Acrobat. In normal view, only the contents of the crop box are displayed in Adobe Acrobat.
   For detailed descriptions of these properties, read the Adobe.Pdf specification, particularly 10.10.1 Page Boundaries.
-- **Page.Rect**: the intersection (commonly visible rectangle) of the MediaBox and DropBox. The picture below illustrates these properties.
+- **Page.Rect**: the intersection (commonly visible rectangle) of the media_box and DropBox. The picture below illustrates these properties.
 
 For further details, please visit [this page](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
@@ -92,7 +92,7 @@ From there, it is possible to access either individual Page objects using their 
     page = document.pages[1]
     # Get page properties
     print(
-        "ArtBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
+        "art_box : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
             page.art_box.height,
             page.art_box.width,
             page.art_box.llx,
@@ -102,7 +102,7 @@ From there, it is possible to access either individual Page objects using their 
         )
     )
     print(
-        "BleedBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
+        "bleed_box : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
             page.bleed_box.height,
             page.bleed_box.width,
             page.bleed_box.llx,
@@ -112,7 +112,7 @@ From there, it is possible to access either individual Page objects using their 
         )
     )
     print(
-        "CropBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
+        "crop_box : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
             page.crop_box.height,
             page.crop_box.width,
             page.crop_box.llx,
@@ -122,7 +122,7 @@ From there, it is possible to access either individual Page objects using their 
         )
     )
     print(
-        "MediaBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
+        "media_box : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
             page.media_box.height,
             page.media_box.width,
             page.media_box.llx,

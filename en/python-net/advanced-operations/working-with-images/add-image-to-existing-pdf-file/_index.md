@@ -35,7 +35,7 @@ The following code snippet shows how to add image in the PDF file.
 
 ## Add Image in an Existing PDF File (Facades)
 
-There is also an alternative, easier way to add a Image to a PDF file. You can use [AddImage](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method of the [PdfFileMend](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/) class. The [add_image()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file, and close the PdfFileMend object using [close()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) method. The following code snippet shows you how to add image in an existing PDF file.
+There is also an alternative, easier way to add a Image to a PDF file. You can use [add_image](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) method of the [PdfFileMend](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/) class. The [add_image()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file, and close the PdfFileMend object using [close()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) method. The following code snippet shows you how to add image in an existing PDF file.
 
 ```python
 

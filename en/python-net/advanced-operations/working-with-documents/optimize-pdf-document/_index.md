@@ -36,7 +36,7 @@ A PDF document may sometimes contain additional data. Reducing the size of a PDF
 Optimization, or linearization for Web, refers to the process of making a PDF file suitable for online browsing using a web browser. To optimize a file for web display:
 
 1. Open the input document in an [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
-1. Use the [Optimize](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
+1. Use the [optimize()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 1. Save the optimized document using the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 The following code snippet shows how to optimize a PDF document for the web.
@@ -55,7 +55,7 @@ The following code snippet shows how to optimize a PDF document for the web.
 
 ## Reduce Size PDF
 
-The [OptimizeResources()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
+The [optimize_resources()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
 
 - Resources that are not used on the document pages are removed
 - Equal resources are joined into one object
@@ -77,7 +77,7 @@ The snippet below is an example. Note, though, that this method cannot guarantee
 
 ## Optimization Strategy Management
 
-We can also customize the optimization strategy. Currently, the [OptimizeResources()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method uses 5 techniques. These techniques can be applied using the OptimizeResources() method with the [OptimizationOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.optimization/optimizationoptions/) parameter.
+We can also customize the optimization strategy. Currently, the [optimize_resources()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method uses 5 techniques. These techniques can be applied using the optimize_resources() method with the [OptimizationOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.optimization/optimizationoptions/) parameter.
 
 ### Shrinking or Compressing All Images
 

@@ -12,7 +12,7 @@ sitemap:
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Simple and complex examples of Aspose.PDF for Python
-Abstract: The article discusses the Portable Document Format (PDF), highlighting its creation by Adobe in the 1990s with the aim of ensuring document accessibility across various hardware and operating systems, and maintaining consistent document layout. It emphasizes the importance of not just opening PDFs but also creating, editing, and converting them. The article introduces Aspose.PDF for Python via .NET as a tool offering numerous advantages for handling PDFs, including a wide range of functions such as text and image manipulation, page management, and metadata handling. It also supports various PDF standards and specifications. The conversion capabilities of Aspose.PDF allow users to transform PDFs into formats like Word, Excel, PowerPoint, images, HTML, EPUB, and others, as well as convert different formats into PDFs. Additional resources are provided for further learning, including examples of simple and complex PDF handling using the tool.
+Abstract: The article discusses the Portable Document Format (PDF), highlighting its creation by Adobe in the 1990s with the aim of ensuring document accessibility across various hardware and operating systems, and maintaining consistent document layout. It emphasizes the importance of not just opening PDFs but also creating, editing, and converting them. The article introduces Aspose.PDF for Python via .NET as a tool offering numerous advantages for handling PDFs, including a wide range of functions such as text and image manipulation, page management, and metadata handling. It also supports various PDF standards and specifications. The conversion capabilities of Aspose.PDF for Python allow users to transform PDFs into formats like Word, Excel, PowerPoint, images, HTML, EPUB, and others, as well as convert different formats into PDFs. Additional resources are provided for further learning, including examples of simple and complex PDF handling using the tool.
 ---
 
 ## What is a PDF File?
@@ -32,12 +32,12 @@ Using Aspose.PDF for Python via .NET in your project gives you the following pro
 ## Wide variety of functions
 
 - Supports most established PDF standards and PDF specifications.
-- [Add, search, extract and replace text in PDF files]().
-- [Add/delete, extract and replace images]().
-- [Insert, delete, split PDF pages]().
-- [Set and get XMP metadata]().
-- [Validate (PDF/A-1a, PDF/A-1b)]().
-- Work with [bookmarks](), [annotations](), [PDF forms](), [stamps](), [watermarks]() and more.
+- [Add, search, extract and replace text in PDF files](https://docs.aspose.com/pdf/).
+- [Add/delete, extract and replace images](https://docs.aspose.com/pdf/).
+- [Insert, delete, split PDF pages](https://docs.aspose.com/pdf/).
+- [Set and get XMP metadata](https://docs.aspose.com/pdf/).
+- [Validate (PDF/A-1a, PDF/A-1b)](https://docs.aspose.com/pdf/).
+- Work with [bookmarks](https://docs.aspose.com/pdf/), [annotations](https://docs.aspose.com/pdf/), [PDF forms](https://docs.aspose.com/pdf/https://docs.aspose.com/pdf/), [stamps](https://docs.aspose.com/pdf/), [watermarks](https://docs.aspose.com/pdf/) and more.
 
 ## Conversion Features
 

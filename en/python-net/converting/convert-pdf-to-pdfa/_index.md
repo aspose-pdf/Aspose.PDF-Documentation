@@ -11,14 +11,14 @@ sitemap:
     priority: 0.8
 TechArticle: true 
 AlternativeHeadline: How to Convert PDF to PDF/A formats in Python
-Abstract: This article outlines the process of converting a PDF file to a PDF/A compliant format using Aspose.PDF for Python. The procedure includes validating the original PDF file according to Adobe Preflight standards, as various tools interpret PDF/A conformance differently. Once validated, the PDF is converted using the `Document` class's `Convert` method, with the validation results stored in an XML file. The conversion process allows for handling unconvertible elements via the `ConvertErrorAction` enumeration. Additionally, Aspose.PDF offers an online tool for converting PDFs to PDF/A-1A, enabling users to test the functionality and quality of the conversion process. A Python code snippet is provided to demonstrate converting a PDF to PDF/A-1b, illustrating the necessary steps and functions involved in the conversion.
+Abstract: This article outlines the process of converting a PDF file to a PDF/A compliant format using Aspose.PDF for Python. The procedure includes validating the original PDF file according to Adobe Preflight standards, as various tools interpret PDF/A conformance differently. Once validated, the PDF is converted using the `Document` class's `Convert` method, with the validation results stored in an XML file. The conversion process allows for handling unconvertible elements via the `ConvertErrorAction` enumeration. Additionally, Aspose.PDF for Python offers an online tool for converting PDFs to PDF/A-1A, enabling users to test the functionality and quality of the conversion process. A Python code snippet is provided to demonstrate converting a PDF to PDF/A-1b, illustrating the necessary steps and functions involved in the conversion.
 ---
 
 **Aspose.PDF for Python** allows you to convert a PDF file to a <abbr title="Portable Document Format / A">PDF/A</abbr> compliant PDF file. Before doing so, the file must be validated. This topic explains how.
 
 {{% alert color="primary" %}}
 
-Please note we follow Adobe Preflight for validating PDF/A conformance. All tools on the market have their own “representation” of PDF/A conformance. Please check this article on PDF/A validation tools for reference. We chose Adobe products for verifying how Aspose.PDF produces PDF files because Adobe is at the center of everything connected to PDF.
+Please note we follow Adobe Preflight for validating PDF/A conformance. All tools on the market have their own “representation” of PDF/A conformance. Please check this article on PDF/A validation tools for reference. We chose Adobe products for verifying how Aspose.PDF for Python produces PDF files because Adobe is at the center of everything connected to PDF.
 
 {{% /alert %}}
 
@@ -31,7 +31,6 @@ Aspose.PDF for Python presents you online free application ["PDF to PDF/A-1A"](h
 
 [![Aspose.PDF Convertion PDF to PDF/A with Free App](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
-
 
 ## Convert PDF file to PDF/A-1b
 

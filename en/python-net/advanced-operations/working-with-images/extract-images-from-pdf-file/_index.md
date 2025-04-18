@@ -15,7 +15,7 @@ Do you need to separate images from your PDF files? For simplified management, a
 
 Images are held in each page's [resources](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection's [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximagecollection/) collection. To extract a particular page, then get the image from the Images collection using the particular index of the image.
 
-The image's index returns an [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/) object. This object provides a [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.
+The image's index returns an [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/) object. This object provides a [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/#methods) method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.
 
 ```python
 

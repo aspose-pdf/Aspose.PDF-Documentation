@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to Extract Text from PDF via Python
-Abstract: The article provides a step-by-step guide on extracting text from PDF documents using two different methods. The first method involves converting the entire content of a PDF into plain text, which is useful for applications like text analysis, search indexing, or data extraction. This process includes loading the PDF, initializing a text absorber, extracting text from all pages, and writing the extracted text to a file. The second method focuses on extracting highlighted text from a PDF, which aids in reviewing key points or summarizing content. This involves identifying and printing text from highlight annotations found on specific pages of the document. Both methods utilize the Aspose.PDF library in Python to accomplish the tasks.
+Abstract: The article provides a step-by-step guide on extracting text from PDF documents using two different methods. The first method involves converting the entire content of a PDF into plain text, which is useful for applications like text analysis, search indexing, or data extraction. This process includes loading the PDF, initializing a text absorber, extracting text from all pages, and writing the extracted text to a file. The second method focuses on extracting highlighted text from a PDF, which aids in reviewing key points or summarizing content. This involves identifying and printing text from highlight annotations found on specific pages of the document. Both methods utilize the Aspose.PDF for Python library in Python to accomplish the tasks.
 ---
 
 ## Extract Text from PDF Document

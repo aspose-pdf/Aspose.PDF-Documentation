@@ -25,6 +25,6 @@ You are able to do the following:
 - [Manipulate PDF Document](/pdf/python-net/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.
 - [Optimize PDF](/pdf/python-net/optimize-pdf/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
 - [Merge PDF](/pdf/python-net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using Python.
-- [Split PDF](/pdf/python-net/split-document/) - split PDF pages into individual PDF files in your Python applications.
+- [Split PDF](/pdf/python-net/split-pdf-document/) - split PDF pages into individual PDF files in your Python applications.
 - [Working with Headings](/pdf/python-net/working-with-headings/) - you can create numbering in heading your PDF document with Python.
 

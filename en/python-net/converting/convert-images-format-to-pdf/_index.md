@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 TechArticle: true 
 AlternativeHeadline: How to Convert Images to PDF in Python
-Abstract: This article provides a comprehensive guide on converting various image formats to PDF using Python, specifically leveraging the Aspose.PDF library for Python via .NET. The article covers a range of image formats including BMP, CGM, DICOM, EMF, GIF, PNG, SVG, and TIFF. Each section details the steps required to perform the conversion, providing code snippets to illustrate the process. For example, converting BMP to PDF involves creating a new PDF document, defining image placement, inserting the image, and saving the document. Similarly, for formats like CGM, DICOM, and others, specific load options and processing steps are outlined. The article also highlights the advantages of using Aspose.PDF for such tasks, such as its support for different encoding methods and the ability to process both single-frame and multi-frame images. Additionally, it references online tools provided by Aspose for users to try out these conversions without code. Each format is discussed with its unique characteristics and requirements for conversion, providing a
+Abstract: This article provides a comprehensive guide on converting various image formats to PDF using Python, specifically leveraging the Aspose.PDF for Python library for Python via .NET. The article covers a range of image formats including BMP, CGM, DICOM, EMF, GIF, PNG, SVG, and TIFF. Each section details the steps required to perform the conversion, providing code snippets to illustrate the process. For example, converting BMP to PDF involves creating a new PDF document, defining image placement, inserting the image, and saving the document. Similarly, for formats like CGM, DICOM, and others, specific load options and processing steps are outlined. The article also highlights the advantages of using Aspose.PDF for Python for such tasks, such as its support for different encoding methods and the ability to process both single-frame and multi-frame images. Additionally, it references online tools provided by Aspose for users to try out these conversions without code. Each format is discussed with its unique characteristics and requirements for conversion, providing a
 ---
 
 ## Overview
@@ -142,7 +142,7 @@ Steps to Convert CGM to PDF in Python:
 
 **Aspose.PDF for Python** allows you to convert DICOM and SVG images, but for technical reasons to add images you need to specify the type of file to be added to PDF.
 
-The following code snippet shows how to convert DICOM files to PDF format with Aspose.PDF. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF.
+The following code snippet shows how to convert DICOM files to PDF format with Aspose.PDF for Python. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF.
 
 ```python
 
@@ -342,9 +342,9 @@ The following code snippet shows the process of converting SVG file into PDF for
 
 ## Convert TIFF to PDF
 
-**Aspose.PDF** file format supported, be it a single frame or multi-frame <abbr title="Tag Image File Format">TIFF</abbr> image. It means that you can convert the TIFF image to PDF.
+**Aspose.PDF for Python** file format supported, be it a single frame or multi-frame <abbr title="Tag Image File Format">TIFF</abbr> image. It means that you can convert the TIFF image to PDF.
 
-TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. TIFF image can contain several frames with different images. Aspose.PDF file format is also supported, be it a single frame or multi-frame TIFF image.
+TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. TIFF image can contain several frames with different images. Aspose.PDF for Python file format is also supported, be it a single frame or multi-frame TIFF image.
 
 You can convert TIFF to PDF in the same manner as the rest raster file formats graphics:
 

@@ -16,7 +16,7 @@ Abstract: Aspose.PDF for Python via .NET is a PDF processing API designed for de
 
 ## Overview
 
-Aspose.PDF for Python via .NET, PDF Processing API that allows the developers to work with PDF documents without needing Microsoft Office® or Adobe Acrobat Automation. Aspose.PDF for Python can be used to develop 32-bit and 64-bit Python applications for different operating systems (such as Windows and Linux) where Python 3.5 or later is installed.
+Aspose.PDF for Python via .NET, PDF Processing API that allows the developers to work with PDF documents without needing Microsoft Office® or Adobe Acrobat Automation. Aspose.PDF for Python can be used to develop 32-bit and 64-bit Python applications for different operating systems (such as Windows and Linux) where Python 3.7 and higher is installed.
 
 ## Supported Operating System
 
@@ -52,4 +52,13 @@ Aspose.PDF for Python via .NET, PDF Processing API that allows the developers to
 
 - libpython shared Python library. The --enable-shared Python build option is disabled by default, some Python distributions do not contain the libpython shared library. For some linux platforms, the libpython shared library can be installed using the package manager, for example: sudo apt-get install libpython3.7. The common issue is that libpython library is installed in a different location than the standard system location for shared libraries. The issue can be fixed by using the Python build options to set alternate library paths when compiling Python, or fixed by creating a symbolic link to the libpython library file in the system standard location for shared libraries. Typically, the libpython shared library file name is libpythonX.Ym.so.1.0 for Python 3.5-3.7, or libpythonX.Y.so.1.0 for Python 3.8 or later (for example: libpython3.7m.so.1.0, libpython3.9.so.1.0).
 
+To work our product in non-Windows environment, we recommend our customers to install:
 
+- libgdiplus package
+- package with Microsoft compatible fonts: **ttf-mscorefonts-installer**. (e.g. `sudo apt-get install ttf-mscorefonts-installer`)
+These fonts should be placed in "/usr/share/fonts/truetype/msttcorefonts" directory as Aspose.PDF for Python via .NET scans this folder on Linux like operating systems. In case operating system has other default folder/directory for fonts, you should use following line of code before performing any operation using Aspose.PDF for Python.
+
+```python
+
+    ap.text.FontRepository.sources.append(ap.text.FolderFontSource("<user's path to ms fonts>")) 
+``` 
