@@ -127,7 +127,7 @@ private static void ConvertPdfToPdfX()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ConvertPdfToPdfA()
+private static void ConvertPdfToPdfX()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();

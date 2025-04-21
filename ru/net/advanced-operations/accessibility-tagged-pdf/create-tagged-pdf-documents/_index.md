@@ -1,12 +1,12 @@
 ---
-title: Создание помеченного PDF с использованием C#
-linktitle: Создание помеченного PDF
+title: Создание тегированного PDF с использованием C#
+linktitle: Создание тегированного PDF
 type: docs
 ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/create-tagged-pdf/
-description: Эта статья объясняет, как программно создать элементы структуры для помеченного PDF-документа с использованием Aspose.PDF for .NET.
+description: Эта статья объясняет, как программно создать элементы структуры для тегированного PDF документа с использованием Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -18,7 +18,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Create Tagged PDF using C#",
     "alternativeHeadline": "Programmatically create tagged PDFs using C#",
-    "abstract": "Программное создание помеченных PDF-документов с использованием C# и Aspose.PDF, обеспечивая соответствие стандартам PDF/UA. Эта функция позволяет создавать структурированные PDF-документы с элементами, такими как заголовки и абзацы, поддерживая вложенные структуры и стили текста для доступности. Библиотека также включает валидацию для подтверждения соответствия стандартам PDF/UA.",
+    "abstract": "Программное создание тегированных PDF документов с использованием C# и Aspose.PDF, обеспечивая соответствие стандартам PDF/UA. Эта функция позволяет создавать структурированные PDF документы с элементами, такими как заголовки и абзацы, поддерживая вложенные структуры и стилизацию текста для доступности. Библиотека также включает валидацию для подтверждения соответствия стандартам PDF/UA.",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
-    "wordcount": "1163",
+    "wordcount": "2903",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,18 +74,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-tagged-pdf/"
     },
-    "dateModified": "2022-11-25",
-    "description": "Эта статья объясняет, как программно создать элементы структуры для помеченного PDF-документа с использованием Aspose.PDF for .NET."
+    "dateModified": "2025-03-26",
+    "description": "Эта статья объясняет, как программно создать элементы структуры для тегированного PDF документа с использованием Aspose.PDF for .NET."
 }
 </script>
 
-Создание помеченного PDF означает добавление (или создание) определенных элементов в документ, которые позволят документу быть проверенным в соответствии с требованиями PDF/UA. Эти элементы часто называются элементами структуры.
+Создание тегированного PDF означает добавление (или создание) определенных элементов в документ, которые позволят документу пройти проверку на соответствие с требованиями PDF/UA. Эти элементы часто называются элементами структуры.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующие фрагменты кода также работают с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-## Создание помеченного PDF (Простой сценарий)
+## Создание тегированного PDF (Простой сценарий)
 
-Для создания элементов структуры в помеченном PDF-документе Aspose.PDF предлагает методы для создания элемента структуры с использованием интерфейса [ITaggedContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent). Следующий фрагмент кода показывает, как создать помеченный PDF, который содержит 2 элемента: заголовок и абзац.
+Для создания элементов структуры в тегированном PDF документе Aspose.PDF предлагает методы для создания элементов структуры с использованием интерфейса [ITaggedContent](https://reference.aspose.com/pdf/ru/net/aspose.pdf.tagged/itaggedcontent). Следующий фрагмент кода показывает, как создать тегированный PDF, который содержит 2 элемента: заголовок и абзац.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -176,13 +176,13 @@ private static void CreateTaggedPdfDocument01()
 
 Мы получим следующий документ после создания:
 
-![Помеченный PDF-документ с 2 элементами - Заголовок и Абзац](taggedpdf-01.png)
+![Тегированный PDF документ с 2 элементами - Заголовок и Абзац](taggedpdf-01.png)
 
-## Создание помеченного PDF с вложенными элементами (Создание дерева элементов структуры)
+## Создание тегированного PDF с вложенными элементами (Создание дерева элементов структуры)
 
 В некоторых случаях нам нужно создать более сложную структуру, например, разместить цитаты в абзаце. 
 Для создания дерева элементов структуры мы должны использовать метод [AppendChild](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/element/methods/appendchild).
-Следующий фрагмент кода показывает, как создать дерево элементов структуры помеченного PDF-документа:
+Следующий фрагмент кода показывает, как создать дерево элементов структуры тегированного PDF документа:
 
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -261,6 +261,7 @@ private static void CreateTaggedPdfDocument02()
 
     Aspose.Pdf.LogicalStructure.ParagraphElement paragraphWithQuotes = taggedContent.CreateParagraphElement();
     paragraphWithQuotes.StructureTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Calibri");
+    
     paragraphWithQuotes.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
             Margin = new Aspose.Pdf.MarginInfo(10, 5, 10, 5)
@@ -290,11 +291,11 @@ private static void CreateTaggedPdfDocument02()
 {{< /tabs >}}
 
 Мы получим следующий документ после создания:
-![Помеченный PDF-документ с вложенными элементами - span и цитаты](taggedpdf-02.png)
+![Тегированный PDF документ с вложенными элементами - span и цитаты](taggedpdf-02.png)
 
 ## Стилизация структуры текста
 
-Для стилизации структуры текста в помеченном PDF-документе Aspose.PDF предлагает свойства [Font](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) и [ForegroundColor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) класса [StructureTextState](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate). Следующий фрагмент кода показывает, как стилизовать структуру текста в помеченном PDF-документе:
+Для стилизации структуры текста в тегированном PDF документе Aspose.PDF предлагает свойства [Font](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/font), [FontSize](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontsize), [FontStyle](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/fontstyle) и [ForegroundColor](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate/properties/foregroundcolor) класса [StructureTextState](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/structuretextstate). Следующий фрагмент кода показывает, как стилизовать структуру текста в тегированном PDF документе:
 
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -367,7 +368,7 @@ private static void AddStyle()
 
 ## Иллюстрация элементов структуры
 
-Для иллюстрации элементов структуры в помеченном PDF-документе Aspose.PDF предлагает класс [IllustrationElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/illustrationelement). Следующий фрагмент кода показывает, как иллюстрировать элементы структуры в помеченном PDF-документе:
+Для иллюстрации элементов структуры в тегированном PDF документе Aspose.PDF предлагает класс [IllustrationElement](https://reference.aspose.com/pdf/ru/net/aspose.pdf.logicalstructure/illustrationelement). Следующий фрагмент кода показывает, как иллюстрировать элементы структуры в тегированном PDF документе:
 
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -394,7 +395,7 @@ private static void IllustrateStructureElements()
         figure1.Title = "Image 1";
         figure1.SetTag("Fig1");
         figure1.SetImage(dataDir + "image.png");
-
+        
         // Adjust position
         figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
@@ -436,7 +437,7 @@ private static void IllustrateStructureElements()
     figure1.Title = "Image 1";
     figure1.SetTag("Fig1");
     figure1.SetImage(dataDir + "image.png");
-
+    
     // Adjust position
     figure1.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
     {
@@ -454,12 +455,12 @@ private static void IllustrateStructureElements()
 {{< /tab >}}
 {{< /tabs >}}
 
-## Проверка помеченного PDF
+## Проверка тегированного PDF
 
-Aspose.PDF for .NET предоставляет возможность проверять PDF/UA помеченный PDF-документ. Валидация стандарта PDF/UA поддерживает:
+Aspose.PDF for .NET предоставляет возможность проверять соответствие PDF/UA тегированного PDF. Валидация стандарта PDF/UA поддерживает:
 
 - Проверки для XObjects.
-- Проверки для действий.
+- Проверки для Actions.
 - Проверки для необязательного контента.
 - Проверки для встроенных файлов.
 - Проверки для полей Acroform (Проверка естественного языка и альтернативного имени и цифровых подписей).
@@ -468,7 +469,7 @@ Aspose.PDF for .NET предоставляет возможность прове
 - Проверки для навигации.
 - Проверки для аннотаций.
 
-Ниже приведен фрагмент кода, который показывает, как проверить помеченный PDF-документ. Соответствующие проблемы будут отображены в XML-отчете.
+Ниже приведен фрагмент кода, который показывает, как проверить тегированный PDF документ. Соответствующие проблемы будут отображены в XML отчете.
 
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -507,7 +508,7 @@ private static void ValidateTaggedPdf()
 
 ## Настройка позиции структуры текста
 
-Следующий фрагмент кода показывает, как настроить позицию структуры текста в документе Tagged PDF:
+Следующий фрагмент кода показывает, как настроить позицию структуры текста в тегированном PDF документе:
 
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
@@ -601,6 +602,92 @@ private static void AdjustPosition()
 
     // Save Tagged PDF Document
     document.Save(dataDir + "AdjustTextPosition_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Автоматическое создание тегированного PDF с преобразованием PDF/UA-1
+
+Aspose.PDF позволяет автоматически генерировать базовую разметку логической структуры при преобразовании документа в PDF/UA-1. Пользователи могут затем вручную улучшить эту базовую логическую структуру, предоставляя дополнительные сведения о содержимом документа.
+
+Чтобы сгенерировать логическую структуру документа, создайте экземпляр класса [Aspose.Pdf.AutoTaggingSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf/autotaggingsettings/), установите свойство [AutoTaggingSettings.EnableAutoTagging](https://reference.aspose.com/pdf/ru/net/aspose.pdf/autotaggingsettings/enableautotagging/) в `true` и назначьте его свойству [PdfFormatConversionOptions.AutoTaggingSettings](https://reference.aspose.com/pdf/ru/net/aspose.pdf/pdfformatconversionoptions/autotaggingsettings/).
+
+{{% alert color="warning" %}}
+Если документ уже имеет теги логической структуры, включение автоматического тегирования уничтожит существующую логическую структуру и создаст новую.
+{{% /alert %}}
+
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertToPdfUAWithAutomaticTagging()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
+    {
+        // Create conversion options
+        Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+        // Create auto-tagging settings
+        // Aspose.Pdf.AutoTaggingSettings.Default may be used to set the same settings as given below
+        Aspose.Pdf.AutoTaggingSettings autoTaggingSettings = new Aspose.Pdf.AutoTaggingSettings();
+
+        // Enable auto-tagging during the conversion process
+        autoTaggingSettings.EnableAutoTagging = true;
+
+        // Use the heading recognition strategy that's optimal for the given document structure
+        autoTaggingSettings.HeadingRecognitionStrategy = Aspose.Pdf.HeadingRecognitionStrategy.Auto;
+
+        // Assign auto-tagging settings to be used during the conversion process
+        options.AutoTaggingSettings = autoTaggingSettings;
+
+        // During the conversion, the document logical structure will be automatically created
+        document.Convert(options);
+
+        // Save PDF document
+        document.Save(dataDir + "ConvertToPdfUAWithAutomaticTagging_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertToPdfUAWithAutomaticTagging()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf");
+
+    // Create conversion options
+    Aspose.Pdf.PdfFormatConversionOptions options = new Aspose.Pdf.PdfFormatConversionOptions(dataDir + "ConvertToPdfUAWithAutomaticTagging.xml", PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+    // Create auto-tagging settings
+    // Aspose.Pdf.AutoTaggingSettings.Default may be used to set the same settings as given below
+    Aspose.Pdf.AutoTaggingSettings autoTaggingSettings = new Aspose.Pdf.AutoTaggingSettings
+    {
+        // Enable auto-tagging during the conversion process
+        EnableAutoTagging = true,
+
+        // Use the heading recognition strategy that's optimal for the given document structure
+        HeadingRecognitionStrategy = Aspose.Pdf.HeadingRecognitionStrategy.Auto
+    };
+
+    // Assign auto-tagging settings to be used during the conversion process
+    options.AutoTaggingSettings = autoTaggingSettings;
+
+    // During the conversion, the document logical structure will be automatically created
+    document.Convert(options);
+
+    // Save PDF document
+    document.Save(dataDir + "ConvertToPdfUAWithAutomaticTagging_out.pdf");
 }
 ```
 {{< /tab >}}
