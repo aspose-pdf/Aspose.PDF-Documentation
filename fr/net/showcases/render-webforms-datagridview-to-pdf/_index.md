@@ -27,7 +27,7 @@ sitemap:
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "wordcount": "266",
+    "wordcount": "254",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -73,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/render-webforms-datagridview-to-pdf/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs et développeurs avancés."
 }
 </script>
@@ -82,7 +82,7 @@ sitemap:
 
 ### Introduction
 
-En général, pour convertir WebForm en document PDF, des outils supplémentaires sont nécessaires. Cet exemple montre comment utiliser la bibliothèque Aspose.PDF pour rendre WebForm en PDF. Le contrôle Aspose Export GridView To Pdf est également inclus dans cet exemple pour montrer comment rendre _le contrôle GridView en document PDF_.
+En général, pour convertir WebForm en document PDF, des outils supplémentaires sont nécessaires. Cet exemple montre comment utiliser la bibliothèque Aspose.PDF pour rendre WebForm en PDF. Le contrôle Aspose Export GridView To Pdf est également inclus dans cet exemple pour montrer comment rendre _le contrôle GridView en document PDF._
 
 ## Comment rendre WebForm en PDF
 
@@ -110,7 +110,7 @@ Il existe deux outils Aspose qui peuvent être utilisés pour rendre HTML en PDF
 
 ## Fichiers sources
 
-Dans cet exemple, nous avons 2 rapports de démonstration.
+Vous pouvez trouver le code pour l'ensemble du projet [ici](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Visual%20Studio/Aspose.Pdf.GridViewExport).
 
 - _Default.aspx_ démontre l'exportation en PDF en utilisant Aspose.PDF.
 - _Report2.aspx_ démontre l'exportation en PDF en utilisant le contrôle d'exportation Aspose GridView (basé sur Aspose.PDF).

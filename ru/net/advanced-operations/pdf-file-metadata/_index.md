@@ -167,6 +167,8 @@ private static void SetFileInformation()
         docInfo.CreationDate = DateTime.Now;
         docInfo.Keywords = "Aspose.Pdf, DOM, API";
         docInfo.ModDate = DateTime.Now;
+        // Specify custom timezone
+        docInfo.CreationTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Tokyo Standard Time").GetUtcOffset(docInfo.CreationDate);
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
         docInfo.Producer = "Custom producer";
@@ -197,6 +199,8 @@ private static void SetFileInformation()
         docInfo.CreationDate = DateTime.Now;
         docInfo.Keywords = "Aspose.Pdf, DOM, API";
         docInfo.ModDate = DateTime.Now;
+        // Specify custom timezone
+        docInfo.CreationTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Tokyo Standard Time").GetUtcOffset(docInfo.CreationDate);
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
         docInfo.Producer = "Custom producer";

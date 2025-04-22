@@ -205,7 +205,7 @@ private static void GetAllAttachments()
 
 Чтобы получить отдельное вложение, мы можем указать индекс вложения в объекте `EmbeddedFiles` экземпляра документа. Пожалуйста, попробуйте использовать следующий фрагмент кода.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -299,7 +299,7 @@ private static void GetIndividualAttachment()
 
 В дополнение к коллекции EmbeddedFiles объекта Document, вложения также могут содержаться в объектах FileAttachmentAnnotation. Ниже приведен код для просмотра количества и деталей таких вложений.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp

@@ -205,7 +205,7 @@ private static void GetAllAttachments()
 
 من أجل الحصول على مرفق فردي، يمكننا تحديد فهرس المرفق في كائن `EmbeddedFiles` لمثيل Document. يرجى تجربة استخدام مقتطف الكود التالي.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -299,7 +299,7 @@ private static void GetIndividualAttachment()
 
 بالإضافة إلى مجموعة EmbeddedFiles لكائن Document، يمكن أن تحتوي المرفقات أيضًا على كائنات FileAttachmentAnnotation. أدناه هو الكود لعرض عدد وتفاصيل مثل هذه المرفقات.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp

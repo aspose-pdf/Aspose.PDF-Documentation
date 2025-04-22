@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
-    "wordcount": "583",
+    "wordcount": "892",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-04-11",
     "description": "Você pode extrair imagens do campo de assinatura e extrair informações de assinatura usando a classe SignatureField com C#."
 }
 </script>
@@ -83,9 +83,9 @@ O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawi
 
 ## Extraindo Imagem do Campo de Assinatura
 
-Aspose.PDF for .NET suporta a funcionalidade de assinar digitalmente os arquivos PDF usando a classe [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) e, ao assinar o documento, você também pode definir uma imagem para `SignatureAppearance`. Agora, esta API também fornece a capacidade de extrair informações de assinatura, bem como a imagem associada ao campo de assinatura.
+Aspose.PDF for .NET suporta a funcionalidade de assinar digitalmente os arquivos PDF usando a classe [SignatureField](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturefield) e, ao assinar o documento, você também pode definir uma imagem para `SignatureAppearance`. Agora, esta API também fornece a capacidade de extrair informações de assinatura, bem como a imagem associada ao campo de assinatura.
 
-Para extrair informações de assinatura, introduzimos o método [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) na classe SignatureField. Por favor, dê uma olhada no seguinte trecho de código que demonstra os passos para extrair uma imagem do objeto `SignatureField`:
+Para extrair informações de assinatura, introduzimos o método [ExtractImage](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturefield/methods/extractimage) na classe SignatureField. Por favor, dê uma olhada no seguinte trecho de código que demonstra os passos para extrair uma imagem do objeto `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -124,15 +124,11 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### Substituir Imagem da Assinatura
-
-Às vezes, você pode ter a necessidade de substituir apenas a imagem de um campo de assinatura já presente dentro do arquivo PDF. Para realizar esse requisito, primeiro, precisamos pesquisar os campos do formulário dentro do arquivo PDF, identificar os campos de assinatura, obter as dimensões (dimensões retangulares) do campo de assinatura e, em seguida, estampar uma imagem sobre as mesmas dimensões.
-
 ## Extrair Informações de Assinatura
 
-Aspose.PDF for .NET suporta a funcionalidade de assinar digitalmente os arquivos PDF usando a classe SignatureField. Atualmente, também podemos determinar a validade do certificado, mas não podemos extrair o certificado completo. As informações que podem ser extraídas são chave pública, impressão digital, emissor, etc.
+Aspose.PDF for .NET suporta a funcionalidade de assinar digitalmente os arquivos PDF usando a classe SignatureField. Atualmente, também podemos determinar a validade do certificado, mas não podemos extrair o certificado completo. As informações que podem ser extraídas incluem chave pública, impressão digital, emissor, etc.
 
-Para extrair informações de assinatura, introduzimos o método [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) na classe [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield). Por favor, dê uma olhada no seguinte trecho de código que demonstra os passos para extrair o certificado do objeto SignatureField:
+Para extrair informações de assinatura, introduzimos o método [ExtractCertificate](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) na classe [SignatureField](https://reference.aspose.com/pdf/pt/net/aspose.pdf.forms/signaturefield). Por favor, dê uma olhada no seguinte trecho de código que demonstra os passos para extrair o certificado do objeto SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -209,14 +205,18 @@ Pkcs7
 Signature1
 ```
 
-## Verificando assinaturas por comprometimento
+## Verificando assinaturas para comprometimento
 
-Você pode usar a classe **SignaturesCompromiseDetector** para verificar assinaturas digitais por comprometimento. Chame o método **Check()** para verificar as assinaturas do documento. Se nenhum comprometimento de assinatura for detectado, o método retornará verdadeiro. Se o método retornar falso, você pode verificar se as assinaturas comprometidas usam a propriedade **HasCompromisedSignatures** e recuperar a lista de assinaturas comprometidas através da propriedade **CompromisedSignatures**.
+Você pode usar a classe **SignaturesCompromiseDetector** para verificar assinaturas digitais quanto a comprometimento.
+Chame o método **Check()** para verificar as assinaturas do documento. 
+Se nenhum comprometimento de assinatura for detectado, o método retornará verdadeiro.
+Se o método retornar falso, você pode verificar se as assinaturas comprometidas usam a propriedade **HasCompromisedSignatures** e recuperar a lista de assinaturas comprometidas através da propriedade **CompromisedSignatures**.
 
-Para verificar se as assinaturas existentes cobrem todo o documento, use a propriedade **SignaturesCoverage**. Esta propriedade pode ter os seguintes valores:
-- **Undefined** – se uma das assinaturas estiver explicitamente comprometida ou se a verificação de cobertura falhar.
-- **EntirelySigned** – se as assinaturas cobrem todo o documento.
-- **PartiallySigned** – se as assinaturas não cobrem todo o documento e houver conteúdo não assinado.
+Para verificar se as assinaturas existentes cobrem todo o documento, use a propriedade **SignaturesCoverage**.
+Esta propriedade pode ter os seguintes valores:
+- **Indefinido** – se uma das assinaturas estiver explicitamente comprometida ou se a verificação de cobertura falhar.
+- **TotalmenteAssinado** – se as assinaturas cobrem todo o documento.
+- **ParcialmenteAssinado** – se as assinaturas não cobrem todo o documento e houver conteúdo não assinado.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

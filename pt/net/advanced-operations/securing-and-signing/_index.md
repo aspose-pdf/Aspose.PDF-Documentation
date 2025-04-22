@@ -2,12 +2,10 @@
 title: Protegendo e assinando PDF em C#
 linktitle: Protegendo e assinando em PDF
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 210
 url: /pt/net/securing-and-signing/
 description: Esta seção descreve os recursos de uso de uma assinatura e proteção do seu documento PDF usando C#
-lastmod: "2024-02-07"
+lastmod: "2024-11-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -28,7 +26,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
-    "wordcount": "302",
+    "wordcount": "244",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2024-02-07",
+    "dateModified": "2025-04-09",
     "description": "Esta seção descreve os recursos de uso de uma assinatura e proteção do seu documento PDF usando C#"
 }
 </script>
@@ -97,7 +95,8 @@ Algoritmos de resumo para PKCS7 destacado:
 - [Assinar digitalmente arquivo PDF](/pdf/pt/net/digitally-sign-pdf-file/)
 - [Definir privilégios, criptografar e descriptografar arquivo PDF](/pdf/pt/net/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [Extrair informações de imagem e assinatura](/pdf/pt/net/extract-image-and-signature-information/)
-- [Assinar documento PDF de cartão inteligente](/pdf/pt/net/sign-pdf-document-from-smart-card/)
+- [Assinar documento PDF a partir de cartão inteligente](/pdf/pt/net/sign-pdf-document-from-smart-card/)
+- [Manipulador de segurança personalizado](/pdf/pt/net/custom-security-handler/)
 
 <script type="application/ld+json">
 {

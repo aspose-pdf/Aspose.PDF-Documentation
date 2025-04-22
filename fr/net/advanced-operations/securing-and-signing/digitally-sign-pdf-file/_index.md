@@ -192,6 +192,105 @@ private static void Verify()
 }
 ```
 
+## Vérifier les signatures numériques avec une vérification de certificat
+
+Lors de la vérification d'une signature numérique, vous pouvez vérifier le certificat de signature pour révocation.
+
+Malheureusement, Aspose.PDF ne peut pas vérifier l'authenticité des certificats racine ou intermédiaires dans la chaîne de certificats.  
+Par conséquent, seul l'état de révocation du certificat de signature est vérifié à l'aide de CRL et OCSP.
+
+Pour configurer la validation des certificats, vous pouvez utiliser le paramètre `ValidationOptions`.
+
+L'option `ValidationMode` propose trois modes de validation :
+
+- **Aucun** – le certificat n'est pas vérifié.
+- **Strict** – la révocation du certificat affecte le résultat de la méthode `Verify`.
+- **OnlyCheck** – permet de vérifier le certificat sans affecter le résultat de la vérification de la signature.
+
+Le `ValidationMethod` spécifie la méthode utilisée pour vérifier le certificat :
+
+- **Auto** – sélection automatique de la méthode. OCSP est préféré. L'état de révocation est déterminé par la méthode qui effectue avec succès la vérification.
+- **Ocsp** – la révocation est vérifiée à l'aide d'OCSP.
+- **Crl** – la révocation est vérifiée à l'aide de CRL.
+- **All** – les deux méthodes sont utilisées pour vérifier le certificat. Pour que la validation réussisse, les deux méthodes doivent confirmer que le certificat n'est pas révoqué.
+
+L'option `CheckCertificateChain` permet de vérifier la présence d'une chaîne de certificats dans la signature.  
+Si la chaîne de certificats n'est pas trouvée, le résultat de la vérification du certificat sera `Undefined`.
+
+Le résultat de la vérification peut être obtenu par un paramètre de sortie de type `ValidationResult`.  
+Les statuts possibles sont : `Valid`, `Invalid`, et `Undefined`.  
+`Undefined` signifie généralement que le certificat n'a pas pu être validé ou que la chaîne de certificats est manquante.
+
+Définir à la fois `CheckCertificateChain` et `ValidationMode = ValidationMode.Strict` correspond au comportement d'Adobe Acrobat.  
+Si Adobe Acrobat ne peut pas trouver la chaîne de certificats, il ne vérifie pas l'état de révocation, et la signature est considérée comme invalide.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(filePath))
+    {
+        // Create an instance of PdfFileSignature for working with signatures in the document
+        using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
+        {
+            // Find all signatures
+            foreach (var signName in pdfSign.GetSignatureNames())
+            {
+                // Create a certificate validation option
+                var options = new Aspose.Pdf.Security.ValidationOptions();
+                options.ValidationMode = ValidationMode.Strict;
+                options.ValidationMethod = ValidationMethod.Auto;
+                options.CheckCertificateChain = true;
+                options.RequestTimeout = 20000;
+
+                Aspose.Pdf.Security.ValidationResult validationResult;
+                // Verify a digital signature
+                bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+                Console.WriteLine("Certificate validation resul: " + validationResult.Status);
+                Console.WriteLine("Is verified: " + verified);
+            } 
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void VerifySignatureWithCertificateCheck(string filePath)
+{
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(filePath);
+    
+    // Create an instance of PdfFileSignature for working with signatures in the document
+    using var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document);
+    
+    // Find all signatures
+    foreach (var signName in pdfSign.GetSignatureNames())
+    {
+        // Create a certificate validation option
+        var options = new Aspose.Pdf.Security.ValidationOptions();
+        options.ValidationMode = ValidationMode.Strict;
+        options.ValidationMethod = ValidationMethod.Auto;
+        options.CheckCertificateChain = true;
+        options.RequestTimeout = 20000;
+
+        Aspose.Pdf.Security.ValidationResult validationResult;
+        // Verify a digital signature
+        bool verified = pdfSign.VerifySignature(signName, options, out validationResult);
+        Console.WriteLine($"Certificate validation resul: {validationResult.Status}");
+        Console.WriteLine($"Is verified: {verified}" );
+    }             
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+
 ## Ajouter un timestamp à la signature numérique
 
 ### Comment signer numériquement un PDF avec un timestamp

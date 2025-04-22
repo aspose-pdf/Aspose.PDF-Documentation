@@ -205,7 +205,7 @@ private static void GetAllAttachments()
 
 为了获取单个附件，我们可以指定 Document 实例的 `EmbeddedFiles` 对象中的附件索引。请尝试使用以下代码片段。
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -299,7 +299,7 @@ private static void GetIndividualAttachment()
 
 除了 Document 对象的 EmbeddedFiles 集合外，附件还可以包含在 FileAttachmentAnnotation 对象中。以下是查看此类附件的数量和详细信息的代码。
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp

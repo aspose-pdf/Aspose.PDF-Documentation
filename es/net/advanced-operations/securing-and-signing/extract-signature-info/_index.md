@@ -6,7 +6,7 @@ ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /es/net/extract-image-and-signature-information/
-description: Puede extraer imágenes del campo de firma y extraer información de la firma utilizando la clase SignatureField con C#.
+description: Puede extraer imágenes del campo de firma y extraer información de firma utilizando la clase SignatureField con C#.
 lastmod: "2024-11-22"
 sitemap:
     changefreq: "weekly"
@@ -28,7 +28,7 @@ sitemap:
     },
     "genre": "pdf document generation",
     "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
-    "wordcount": "583",
+    "wordcount": "900",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,18 +74,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2024-11-25",
-    "description": "Puede extraer imágenes del campo de firma y extraer información de la firma utilizando la clase SignatureField con C#."
+    "dateModified": "2025-04-11",
+    "description": "Puede extraer imágenes del campo de firma y extraer información de firma utilizando la clase SignatureField con C#."
 }
 </script>
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-## Extracción de Imagen del Campo de Firma
+## Extracción de imagen del campo de firma
 
-Aspose.PDF for .NET admite la función de firmar digitalmente los archivos PDF utilizando la clase [SignatureField](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield) y al firmar el documento, también puede establecer una imagen para `SignatureAppearance`. Ahora, esta API también proporciona la capacidad de extraer información de la firma así como la imagen asociada con el campo de firma.
+Aspose.PDF for .NET admite la función de firmar digitalmente los archivos PDF utilizando la clase [SignatureField](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield) y al firmar el documento, también puede establecer una imagen para `SignatureAppearance`. Ahora, esta API también proporciona la capacidad de extraer información de firma así como la imagen asociada con el campo de firma.
 
-Para extraer información de la firma, hemos introducido el método [ExtractImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield/methods/extractimage) en la clase SignatureField. Por favor, eche un vistazo al siguiente fragmento de código que demuestra los pasos para extraer una imagen del objeto `SignatureField`:
+Para extraer información de firma, hemos introducido el método [ExtractImage](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield/methods/extractimage) a la clase SignatureField. Por favor, eche un vistazo al siguiente fragmento de código que demuestra los pasos para extraer una imagen del objeto `SignatureField`:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -124,15 +124,11 @@ private static void ExtractImagesFromSignatureField()
 }
 ```
 
-### Reemplazar Imagen de Firma
-
-A veces puede tener la necesidad de reemplazar solo la imagen de un campo de firma ya presente dentro del archivo PDF. Para cumplir con este requisito, primero necesitamos buscar campos de formulario dentro del archivo PDF, identificar los campos de firma, obtener las dimensiones (dimensiones rectangulares) del campo de firma y luego estampar una imagen sobre las mismas dimensiones.
-
-## Extraer Información de la Firma
+## Extraer información de firma
 
 Aspose.PDF for .NET admite la función de firmar digitalmente los archivos PDF utilizando la clase SignatureField. Actualmente, también podemos determinar la validez del certificado, pero no podemos extraer el certificado completo. La información que se puede extraer es una clave pública, huella digital, emisor, etc.
 
-Para extraer información de la firma, hemos introducido el método [ExtractCertificate](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) en la clase [SignatureField](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield). Por favor, eche un vistazo al siguiente fragmento de código que demuestra los pasos para extraer el certificado del objeto SignatureField:
+Para extraer información de firma, hemos introducido el método [ExtractCertificate](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) a la clase [SignatureField](https://reference.aspose.com/pdf/es/net/aspose.pdf.forms/signaturefield). Por favor, eche un vistazo al siguiente fragmento de código que demuestra los pasos para extraer el certificado del objeto SignatureField:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -212,15 +208,15 @@ Signature1
 ## Comprobación de firmas por compromiso
 
 Puede usar la clase **SignaturesCompromiseDetector** para verificar firmas digitales por compromiso.
-Llame al método **Check()** para verificar las firmas del documento.
+Llame al método **Check()** para verificar las firmas del documento. 
 Si no se detecta compromiso en ninguna firma, el método devolverá verdadero.
 Si el método devuelve falso, puede verificar si las firmas comprometidas utilizan la propiedad **HasCompromisedSignatures** y recuperar la lista de firmas comprometidas a través de la propiedad **CompromisedSignatures**.
 
 Para verificar si las firmas existentes cubren todo el documento, use la propiedad **SignaturesCoverage**.
 Esta propiedad puede tener los siguientes valores:
-- **Undefined** – si una de las firmas está explícitamente comprometida o la verificación de cobertura falló.
-- **EntirelySigned** – si las firmas cubren todo el documento.
-- **PartiallySigned** – si las firmas no cubren todo el documento y hay contenido no firmado.
+- **Indefinido** – si una de las firmas está explícitamente comprometida o la verificación de cobertura falló.
+- **Totalmente Firmado** – si las firmas cubren todo el documento.
+- **Parcialmente Firmado** – si las firmas no cubren todo el documento y hay contenido no firmado.
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}

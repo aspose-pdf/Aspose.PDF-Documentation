@@ -188,7 +188,7 @@ private static void AddHyperlink()
 
 另一个常见场景是使用 TextFragmentAbsorber 在文档中查找给定文本，并将其区域设置为指向网站的超链接。以下是实现此功能的代码片段。
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -283,7 +283,7 @@ Aspose.PDF for .NET 为 PDF 创建及其操作提供了一个很好的功能。�
 
 为了添加本地超链接，我们需要创建一个 TextFragment，以便链接可以与 TextFragment 关联。[TextFragment](https://reference.aspose.com/pdf/zh/net/aspose.pdf.text/textfragment) 类具有一个名为 Hyperlink 的属性，用于关联 LocalHyperlink 实例。以下代码片段展示了实现此要求的步骤。
 
-{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -384,7 +384,7 @@ private static void AddHyperlink()
 
 以下代码片段展示了如何从 PDF 文件中获取超链接目标 (URL)。
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -461,7 +461,7 @@ PDF 文件中的文本和注释/操作由不同的实体表示。页面上的文
 
 要查找 URL 内容，您需要同时处理注释和文本。[Annotation](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/annotation) 对象本身没有文本，而是位于页面文本下方。因此，要获取文本，注释提供了 URL 的边界，而文本对象提供了 URL 内容。请参见以下代码片段。
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -555,7 +555,7 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 以下代码片段展示了如何从 PDF 文件中移除文档打开操作。
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -604,7 +604,7 @@ private static void RemoveOpenAction()
 
 [XYZExplicitDestination](https://reference.aspose.com/pdf/zh/net/aspose.pdf.annotations/xyzexplicitdestination) 类允许您指定要打开的 PDF 文件中的页面。当将 GoToAction 对象值传递给 [Document](https://reference.aspose.com/pdf/zh/net/aspose.pdf/document) 类的 OpenAction 属性时，文档将在与 XYZExplicitDestination 对象指定的页面打开。以下代码片段展示了如何指定页面作为文档打开操作。
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

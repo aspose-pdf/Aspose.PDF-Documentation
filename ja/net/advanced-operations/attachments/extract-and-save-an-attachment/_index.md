@@ -205,7 +205,7 @@ private static void GetAllAttachments()
 
 個別の添付ファイルを取得するには、Documentインスタンスの`EmbeddedFiles`オブジェクト内の添付ファイルのインデックスを指定できます。以下のコードスニペットを使用してみてください。
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -299,7 +299,7 @@ private static void GetIndividualAttachment()
 
 DocumentオブジェクトのEmbeddedFilesコレクションに加えて、添付ファイルはFileAttachmentAnnotationオブジェクトにも含まれることがあります。以下は、そのような添付ファイルの数と詳細を表示するためのコードです。
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp

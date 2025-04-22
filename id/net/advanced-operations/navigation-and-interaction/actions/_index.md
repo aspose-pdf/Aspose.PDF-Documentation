@@ -188,7 +188,7 @@ private static void AddHyperlink()
 
 Skenario umum lainnya adalah menemukan teks tertentu dalam dokumen menggunakan TextFragmentAbsorber dan menetapkan wilayahnya sebagai hyperlink ke situs. Di bawah ini adalah potongan kode yang mengimplementasikan ini.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -283,7 +283,7 @@ Aspose.PDF for .NET menyediakan fitur hebat untuk pembuatan PDF serta manipulasi
 
 Untuk menambahkan hyperlink lokal, kita perlu membuat TextFragment sehingga tautan dapat dikaitkan dengan TextFragment. Kelas [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) memiliki properti bernama Hyperlink yang digunakan untuk mengaitkan instance LocalHyperlink. Potongan kode berikut menunjukkan langkah-langkah untuk memenuhi persyaratan ini.
 
-{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -384,7 +384,7 @@ Untuk mendapatkan URL tautan:
 
 Potongan kode berikut menunjukkan cara mendapatkan tujuan hyperlink (URL) dari file PDF.
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -461,7 +461,7 @@ Teks dan anotasi/aksi dalam file PDF direpresentasikan oleh entitas yang berbeda
 
 Untuk menemukan konten URL, Anda perlu bekerja dengan anotasi dan teks. Objek [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) tidak memiliki teks itu sendiri tetapi berada di bawah teks di halaman. Jadi untuk mendapatkan teks, Anotasi memberikan batas URL, sementara objek Teks memberikan konten URL. Silakan lihat potongan kode berikut.
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -555,7 +555,7 @@ Untuk menghapus aksi buka:
 
 Potongan kode berikut menunjukkan cara menghapus aksi buka dokumen dari file PDF.
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -604,7 +604,7 @@ Saat melihat file PDF di penampil PDF seperti Adobe Reader, file biasanya terbuk
 
 Kelas [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) memungkinkan Anda untuk menentukan halaman dalam file PDF yang ingin Anda buka. Saat melewatkan nilai objek GoToAction ke properti OpenAction kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), dokumen terbuka di halaman yang ditentukan terhadap objek XYZExplicitDestination. Potongan kode berikut menunjukkan cara menentukan halaman sebagai aksi buka dokumen.
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

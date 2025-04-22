@@ -205,7 +205,7 @@ private static void GetAllAttachments()
 
 In order to get an individual attachment, we can specify the index of attachment in `EmbeddedFiles` object of Document instance. Please try using following code snippet.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -299,7 +299,7 @@ private static void GetIndividualAttachment()
 
 In addition to the Document object’s EmbeddedFiles collection, Attachments can also be contained in FileAttachmentAnnotation objects. Below is the code for viewing the number and details of such Attachments.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp

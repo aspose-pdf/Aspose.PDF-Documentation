@@ -188,7 +188,7 @@ private static void AddHyperlink()
 
 또 다른 일반적인 시나리오는 TextFragmentAbsorber를 사용하여 문서에서 주어진 텍스트를 찾고 해당 영역을 사이트에 대한 하이퍼링크로 설정하는 것입니다. 아래는 이를 구현하는 코드 스니펫입니다.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -283,7 +283,7 @@ Aspose.PDF for .NET은 PDF 생성 및 조작을 위한 훌륭한 기능을 제�
 
 로컬 하이퍼링크를 추가하려면, 링크가 TextFragment와 연결될 수 있도록 TextFragment를 생성해야 합니다. [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) 클래스에는 LocalHyperlink 인스턴스를 연결하는 데 사용되는 Hyperlink라는 속성이 있습니다. 다음 코드 스니펫은 이 요구 사항을 충족하는 단계를 보여줍니다.
 
-{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -384,7 +384,7 @@ private static void AddHyperlink()
 
 다음 코드 스니펫은 PDF 파일에서 하이퍼링크 대상을(URL) 가져오는 방법을 보여줍니다.
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -461,7 +461,7 @@ PDF 파일의 텍스트와 주석/작업은 서로 다른 엔티티로 표현됩
 
 URL 콘텐츠를 찾으려면 주석과 텍스트 모두를 사용해야 합니다. [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) 객체는 자체적으로 텍스트를 가지고 있지 않지만 페이지의 텍스트 아래에 위치합니다. 따라서 텍스트를 얻으려면 Annotation이 URL의 경계를 제공하고, Text 객체가 URL 내용을 제공합니다. 다음 코드 스니펫을 참조하십시오.
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -555,7 +555,7 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 다음 코드 스니펫은 PDF 파일에서 문서 열기 작업을 제거하는 방법을 보여줍니다.
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -604,7 +604,7 @@ Adobe Reader와 같은 PDF 뷰어에서 PDF 파일을 볼 때, 파일은 일반�
 
 [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) 클래스는 열고자 하는 PDF 파일의 페이지를 지정할 수 있게 해줍니다. GoToAction 객체 값을 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스의 OpenAction 속성에 전달하면, 문서는 XYZExplicitDestination 객체에 지정된 페이지에서 열립니다. 다음 코드 스니펫은 문서 열기 작업으로 페이지를 지정하는 방법을 보여줍니다.
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

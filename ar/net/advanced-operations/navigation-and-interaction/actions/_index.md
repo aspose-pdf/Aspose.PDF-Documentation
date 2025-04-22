@@ -188,7 +188,7 @@ private static void AddHyperlink()
 
 سيناريو شائع آخر هو العثور على نص معين في المستند باستخدام TextFragmentAbsorber وتعيين منطقته كروابط إلى الموقع. أدناه مقتطف كود ينفذ ذلك.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 
 ```csharp
@@ -283,7 +283,7 @@ private static void AddHyperlinkForExistingText()
 
 لإضافة الرابط المحلي، نحتاج إلى إنشاء TextFragment بحيث يمكن ربط الرابط بـ TextFragment. تحتوي فئة [TextFragment](https://reference.aspose.com/pdf/ar/net/aspose.pdf.text/textfragment) على خاصية تسمى Hyperlink والتي تستخدم لربط مثيل LocalHyperlink. تظهر مقتطفات الكود التالية الخطوات لتحقيق هذا المتطلب.
 
-{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -384,7 +384,7 @@ private static void AddHyperlink()
 
 تظهر مقتطفات الكود التالية كيفية الحصول على وجهات الروابط (URL) من ملف PDF.
 
-{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -461,7 +461,7 @@ private static void GetHyperlink()
 
 للعثور على محتوى URL، تحتاج إلى العمل مع كل من التعليق والنص. لا يحتوي كائن [Annotation](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/annotation) على النص بنفسه ولكنه يقع تحت النص على الصفحة. لذا للحصول على النص، يعطي التعليق حدود URL، بينما يعطي كائن النص محتويات URL. يرجى الاطلاع على مقتطف الكود التالي.
 
-{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -555,7 +555,7 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 تظهر مقتطفات الكود التالية كيفية إزالة إجراء فتح المستند من ملف PDF.
 
-{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -604,7 +604,7 @@ private static void RemoveOpenAction()
 
 تسمح لك فئة [XYZExplicitDestination](https://reference.aspose.com/pdf/ar/net/aspose.pdf.annotations/xyzexplicitdestination) بتحديد صفحة في ملف PDF تريد فتحها. عند تمرير قيمة كائن GoToAction إلى خاصية OpenAction لفئة [Document](https://reference.aspose.com/pdf/ar/net/aspose.pdf/document)، يفتح المستند في الصفحة المحددة ضد كائن XYZExplicitDestination. تظهر مقتطفات الكود التالية كيفية تحديد صفحة كإجراء فتح المستند.
 
-{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
