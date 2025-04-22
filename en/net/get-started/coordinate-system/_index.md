@@ -160,6 +160,8 @@ page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
 In Example 1, you can see that attempting to render text at the corner coordinates of the page results in only the text at the origin being visible.
 The rest of the text falls outside the visible area and is clipped.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static string CoordinatesExample1()
@@ -203,6 +205,53 @@ private static void DrawText(string text, int x, int y, TextBuilder textBuilder)
     textBuilder.AppendText(textFragment);
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static string CoordinatesExample1()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    string outputFilePath = dataDir + "coordinates1.pdf";
+    
+    // Create new document
+    using var document = new Aspose.Pdf.Document();
+    
+    // Get particular page
+    var page = document.Pages.Add();
+
+    // Create TextBuilder object
+    var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
+
+    DrawText("Low left", 0, 0, textBuilder);
+    DrawText("Low right", (int)page.CropBox.URX, 0, textBuilder);
+    DrawText("Upper left", 0, (int)page.CropBox.URY, textBuilder);
+    DrawText("Upper right", (int)page.CropBox.URX, (int)page.CropBox.URY, textBuilder);
+
+    // Save PDF document
+    document.Save(outputFilePath);    
+
+    return outputFilePath;
+}
+
+private static void DrawText(string text, int x, int y, TextBuilder textBuilder)
+{
+    // Create text fragment
+    var textFragment = new Aspose.Pdf.Text.TextFragment(text);
+    textFragment.Position = new Aspose.Pdf.Text.Position(x, y);
+
+    // Set text properties
+    textFragment.TextState.FontSize = 12;
+    textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+
+    // Append the text fragment to the PDF page
+    textBuilder.AppendText(textFragment);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ![](example1_result.png)
 
@@ -210,6 +259,8 @@ Image 5. The result of the example 1 execution.
 
 In Example 2, we scale the coordinate system and shift it to the center of the page. 
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Example2()
@@ -251,6 +302,53 @@ private static void Example2()
       }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Example2()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    string sourcePdf = Example1();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(sourcePdf);
+    
+    Page page = document.Pages[1];
+    
+    // Get the page's dimensions
+    double pageWidth = page.CropBox.Width;
+    double pageHeight = page.CropBox.Height;
+
+    // Set the scale factor
+    double scale = 0.5;
+
+    // Calculate the offset
+    double offsetX = (pageWidth - pageWidth * scale) / 2;
+    double offsetY = (pageHeight - pageHeight * scale) / 2;
+    
+    // Get the page's contents
+    var contents = page.Contents;
+
+    // Add the current graphical state to the content's beginning
+    contents.Insert(1, new Aspose.Pdf.Operators.GSave());
+    // Scale and move the coordinate system to fit the content in the center of the page
+    contents.Insert(2,
+        new Aspose.Pdf.Operators.ConcatenateMatrix(scale, 0, 0, scale, offsetX, offsetY));
+   
+    contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+    // Save PDF document
+    document.Save(dataDir + "coordinates2.pdf");
+      
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ![](example2_result.png)
 
 Image 6. The result of the example 2 execution.
