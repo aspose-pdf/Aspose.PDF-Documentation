@@ -2,8 +2,6 @@
 title: Working with PDF File Metadata in Python
 linktitle: PDF File Metadata
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 200
 url: /pyhton-net/pdf-file-metadata/
 description: Explore how to extract and manage PDF metadata, such as author and title, in Python using Aspose.PDF.
