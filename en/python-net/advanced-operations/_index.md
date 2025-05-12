@@ -27,3 +27,4 @@ You'll learn different ways to:
 - [Working with Tables](/pdf/python-net/working-with-tables/) - insert, decorate table in PDF, extract tabular data.
 - [Working with Forms](/pdf/python-net/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.
 - [Working with Text](/pdf/python-net/working-with-text/) - add, format, search and replace text in PDF.
+- [Compare PDF documents](/pdf/python-net/compare-pdf-documents/) - possible to compare PDF documents content.
