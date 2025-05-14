@@ -3,7 +3,7 @@ title: Working with Artifacts in Python via .NET
 linktitle: Working with Artifacts
 type: docs
 weight: 170
-url: /net/artifacts/
+url: /python-net/artifacts/
 description: Aspose.PDF for Python via .NET allows you to add a background image to PDF pages, and get each watermark using Artifact class.
 lastmod: "2025-05-13"
 sitemap:
