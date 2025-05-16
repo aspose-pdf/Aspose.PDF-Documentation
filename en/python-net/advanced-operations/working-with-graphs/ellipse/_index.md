@@ -9,6 +9,9 @@ lastmod: "2025-05-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Adding Ellipse Object to PDF using Python
+Abstract: The article provides a comprehensive guide on how to use Aspose.PDF for Python via .NET to add and customize Ellipse objects within PDF documents. It explains the process of creating and manipulating ellipses, including setting their dimensions, colors, and positioning, using the drawing module. Demonstrates how to draw ellipses on a PDF page, showcasing the ability to control their appearance and position. The example includes setting border properties and adding multiple ellipses to a graph. Illustrates how to fill ellipses with specific colors, offering an example where two ellipses are filled with different colors and added to a PDF document. Explains how to insert text within Ellipse objects by utilizing the text property of the Graph Object. The example provided shows how to set font properties and add text to
 ---
 
 ## Add Ellipse object

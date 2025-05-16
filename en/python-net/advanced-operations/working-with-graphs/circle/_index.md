@@ -9,6 +9,9 @@ lastmod: "2025-05-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Adding Circle Object to PDF using Python
+Abstract: The article provides a guide on using Aspose.PDF for Python via .NET to create circle objects within PDF documents. It explains the process of adding both outlined and filled circle graphics, highlighting how circle graphs can be a useful tool for displaying data across multiple categories when the data represents a complete whole. The article includes step-by-step instructions for creating a `Document` instance, setting up a `Drawing` object with specific dimensions, applying a border, and adding a `Graph` object to a PDF page. The code examples demonstrate drawing a simple circle and a filled circle, with detailed instructions on setting colors and adding text to the circle. Visual results of these operations are also presented, showcasing the capabilities of Aspose.PDF in enhancing PDF content with dynamic graphical elements.
 ---
 
 ## Add Circle object

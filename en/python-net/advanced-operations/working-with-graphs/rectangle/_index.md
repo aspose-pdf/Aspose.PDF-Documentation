@@ -9,6 +9,9 @@ lastmod: "2025-05-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Adding Rectangle Object to PDF using Python
+Abstract: The article provides a comprehensive guide on how to add and manipulate Rectangle objects in PDF documents using Aspose.PDF for Python via .NET. It details the process of creating a Rectangle and integrating it into a PDF document, including setting borders and filling it with solid colors or gradient fills. The article includes step-by-step instructions with code snippets demonstrating the creation of a PDF document, adding pages, and inserting Rectangle objects with various visual properties, such as solid color fills, gradient fills, and transparency using alpha channels. Additionally, it explains how to control the Z-Order of Rectangle objects to manage their rendering order when multiple shapes are added to the same PDF. Each section is supported with visual examples to illustrate the output of the code snippets.
 ---
 
 ## Add Rectangle object

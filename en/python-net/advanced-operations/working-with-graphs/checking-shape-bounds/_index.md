@@ -6,6 +6,9 @@ url: /python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
 description: Learn how to check the bounds of an shape when inserted into the Shapes collection to ensure it fits within its parent container.
 lastmod: "2025-05-14"
 draft: false
+TechArticle: true 
+AlternativeHeadline: Guide on checking shape bounds in Shapes
+Abstract: This article offers a comprehensive guide on utilizing the bounds-checking feature in the Shapes collection, particularly within PDF documents using Python. The feature is instrumental in ensuring that graphical elements, such as shapes, fit appropriately within their parent containers. It can be configured to throw an exception if the component exceeds the container's bounds, ensuring robust error handling. The guide walks through creating a new PDF document, adding a page, and establishing a graphical element (a rectangle shape) within a graph object. Detailed instructions are provided for instantiating a `Document`, adding a `Page`, and creating a `Graph` object. It describes setting up a `Rectangle` shape and configuring the `BoundsCheckMode` to `ThrowExceptionIfDoesNotFit`, which ensures that an exception is thrown if the shape does not fit within the specified dimensions of the graph. The process is illustrated with a Python code example using the Aspose.PDF library, highlighting the practical implementation of these features.
 ---
 
 This article provides a detailed guide on using the bounds-checking feature in the Shapes collection. This feature ensures that elements fit within their parent container and can be configured to throw an exception if the component does not fit.

@@ -9,6 +9,9 @@ lastmod: "2025-05-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Adding Arc Object to PDF using Python
+Abstract: The article provides a detailed guide on how to add and customize arc objects within PDF documents using Aspose.PDF for Python via .NET. It highlights the capability of the library to incorporate graphical elements like arcs, crucial for applications needing dynamic PDF content generation such as technical diagrams and custom illustrations. The article includes step-by-step instructions and code snippets demonstrating how to create a `Document` instance, set up a `Drawing` object with specified dimensions and border properties, and add `Graph` and `Arc` objects to a PDF page. Additionally, it covers the process of filling arc objects with color, showcasing how to set fill properties for arcs and lines, and ultimately save the PDF document. The examples provided serve as a practical guide for developers seeking to leverage Aspose.PDF for precise graphical manipulations in PDF files.
 ---
 
 ## Add Arc object

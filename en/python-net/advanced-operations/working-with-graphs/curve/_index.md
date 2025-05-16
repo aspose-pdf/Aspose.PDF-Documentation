@@ -9,6 +9,9 @@ lastmod: "2025-05-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Adding Curve Object to PDF using Python
+Abstract: The article discusses the implementation of graph curves in PDF documents using the Aspose.PDF library for Python via .NET. It introduces the concept of a graph curve, which is a union of projective lines, and details the process of creating both simple and filled Bézier curves programmatically. The article provides step-by-step instructions and code snippets for drawing curves within a PDF, highlighting the manipulation of graphical elements using Aspose.PDF's drawing module. The process includes creating a `Document` instance, defining a `Drawing` object with specified dimensions, setting borders, and adding a `Graph` object to a PDF page. Visual outcomes of these code examples are illustrated through images showing the resultant curves. The article further explores the creation of filled curve objects, demonstrating how to set fill colors for curves, which is crucial for generating dynamic graphical content like technical diagrams, charts, or custom illustrations in PDFs.
 ---
 
 ## Add Curve object

@@ -9,6 +9,9 @@ lastmod: "2025-05-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Adding Graphs to PDF using Python
+Abstract: The article discusses the integration of graphs into PDF documents, a common requirement for developers using Adobe Acrobat Writer or similar PDF processing tools. It introduces the Graph class in Aspose.PDF for Python via .NET, which facilitates this task by allowing the addition of various types of shapes to PDF documents. The Graph class is a paragraph-level element that can be added to the Paragraphs collection in a Page instance and supports a collection of shapes, including Arc, Circle, Curve, Line, Rectangle, and Ellipse. Each shape serves a unique purpose, such as Arcs representing adjacency, Circles illustrating data portions, Curves depicting connected lines, Lines displaying continuous data trends, Rectangles solving spatial problems, and Ellipses forming oval shapes. The article also provides visual representations of these shapes to aid understanding.
 ---
 
 ## What is Graph

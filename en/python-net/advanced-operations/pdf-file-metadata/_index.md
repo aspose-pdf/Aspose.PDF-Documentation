@@ -9,6 +9,9 @@ lastmod: "2025-05-12"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Get and Set Metadata in PDF using Python
+Abstract: The article provides a comprehensive guide on manipulating PDF metadata using Aspose.PDF for Python via .NET. It outlines methods to extract and set metadata properties, including author, creation date, keywords, and more, which are crucial for document cataloging, search optimization, or validation. The code snippets demonstrate how to retrieve metadata from a PDF using the `Document` class and the `info` property, set new metadata using the `DocumentInfo` object, and save the changes. Additionally, it shows how to programmatically update XMP metadata, which enhances document organization and searchability. The article also explains how to insert metadata with a custom prefix by registering a namespace URI. These functionalities are essential for developers aiming to manage PDF document information effectively within applications.
 ---
 
 ## Get PDF File Information

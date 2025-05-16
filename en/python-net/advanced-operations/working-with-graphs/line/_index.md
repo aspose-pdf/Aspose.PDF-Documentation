@@ -9,6 +9,9 @@ lastmod: "2025-05-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Adding Line Object to PDF using Python
+Abstract: The article discusses how to add line objects to a PDF document using Aspose.PDF for Python via .NET. It explains the process of creating a `Document` instance and adding a `Graph` object to the PDF. The article provides detailed steps to create and configure a `Line` object, including specifying its dash pattern and color. It includes code snippets demonstrating how to add a simple line, a dotted dashed line, and how to draw lines across a page to form a cross pattern. Each section is accompanied by a visual representation of the resulting PDF. This guide serves as a practical resource for developers looking to enhance their PDF documents with graphical elements using Aspose.PDF.
 ---
 
 ## Add Line object
