@@ -200,7 +200,7 @@ Aspose.PDF for Python .NET supports to fill rectangle object with a certain colo
 
 ![Rectangle Alpha Channel Color](rectangle_color.png)
 
-## Control Z-Order of Rectangle
+## Control Z-Order of shapes
 
 Aspose.PDF for .NET supports the feature to add graph objects (for example graph, line, rectangle etc.) to PDF documents. When adding more than one instance of same object inside PDF file, we can control their rendering by specifying the Z-Order. Z-Order is also used when we need to render objects on top of each other.
 
