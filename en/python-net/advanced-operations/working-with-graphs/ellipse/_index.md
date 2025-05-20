@@ -112,7 +112,7 @@ The following code snippet shows how to add a [Ellipse](https://reference.aspose
 
 ## Add Text inside the Ellipse
 
-Aspose.PDF for Python via .NET supports to add text inside the Graph Object. Text property of Graph Object provides option to set text of the Graph Object. The following code snippet shows how to add text inside a Rectangle object.
+Aspose.PDF for Python via .NET supports to add text inside the Graph Object. Text property of Graph Object provides option to set text of the Graph Object. The following code snippet shows how to add text inside an Ellipse object.
 
 ```python
 
