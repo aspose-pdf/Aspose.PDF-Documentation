@@ -43,7 +43,7 @@ This article provides a detailed guide on using the bounds-checking feature in t
     rect = drawing.Rectangle(-1, 0, 50, 50)
     rect.graph_info.fill_color = ap.Color.tomato
 
-    # Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
+    # Set the BoundsCheck mode to THROW_EXCEPTION_IF_DOES_NOT_FIT
     graph.shapes.update_bounds_check_mode(ap.BoundsCheckMode.THROW_EXCEPTION_IF_DOES_NOT_FIT)
 
     # Add the rectangle to the graph
