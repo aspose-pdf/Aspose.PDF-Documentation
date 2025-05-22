@@ -4,7 +4,7 @@ type: docs
 weight: 100
 url: /reportingservices/pdf_a-conformance/
 description: Enable PDF/A conformance in Aspose.PDF for Reporting Services. Create archival-compliant documents effortlessly.
-lastmod: "2021-06-05"
+lastmod: "2025-05-22"
 ---
 
 {{% alert color="primary" %}}
@@ -20,7 +20,7 @@ If you want to create a PDF/A document, add the following report parameter.
 
 **Parameter Name**: PdfConformance  
 **Date Type**: String  
-**Values supported**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U  
+**Values supported**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
 
 **Example**
 {{< highlight csharp >}}
