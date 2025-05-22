@@ -3,7 +3,7 @@ title: PDF_A Conformance
 type: docs
 weight: 100
 url: /ru/reportingservices/pdf_a-conformance/
-lastmod: "2021-06-05"
+lastmod: "2025-05-22"
 ---
 
 {{% alert color="primary" %}}
@@ -19,7 +19,7 @@ lastmod: "2021-06-05"
 
 **Имя параметра**: PdfConformance  
 **Тип данных**: String  
-**Поддерживаемые значения**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U  
+**Поддерживаемые значения**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
 
 **Пример**
 {{< highlight csharp >}}

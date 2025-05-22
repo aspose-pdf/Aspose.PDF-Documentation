@@ -3,7 +3,7 @@ title: PDF_A Conformance
 type: docs
 weight: 100
 url: /ja/reportingservices/pdf_a-conformance/
-lastmod: "2021-06-05"
+lastmod: "2025-05-22"
 ---
 
 {{% alert color="primary" %}}
@@ -19,7 +19,7 @@ PDF/A ドキュメントを作成する場合は、次のレポートパラメ�
 
 **パラメータ名**: PdfConformance  
 **データ型**: String  
-**サポートされる値**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U  
+**サポートされる値**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
 
 **例**
 {{< highlight csharp >}}
