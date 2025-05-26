@@ -3,7 +3,7 @@ title: PDF_A Conformance
 type: docs
 weight: 100
 url: /fr/reportingservices/pdf_a-conformance/
-lastmod: "2021-06-05"
+lastmod: "2025-05-22"
 ---
 
 {{% alert color="primary" %}}
@@ -19,7 +19,7 @@ Si vous souhaitez créer un document PDF/A, ajoutez le paramètre de rapport sui
 
 **Nom du paramètre**: PdfConformance  
 **Type de données**: String  
-**Valeurs prises en charge**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U  
+**Valeurs prises en charge**: PdfA1A, PdfA1B, PdfA2A, PdfA2B, PdfA2U, PdfA3A, PdfA3B, PdfA3U, PdfA4, PdfA4E, PdfA4F  
 
 **Exemple**
 {{< highlight csharp >}}
