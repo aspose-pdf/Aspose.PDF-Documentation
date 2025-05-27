@@ -6,6 +6,9 @@ weight: 100
 url: /python-net/working-with-vector-graphics/
 description: This article describes the features of working with GraphicsAbsorber tool using Python.
 lastmod: "2025-05-17"
+TechArticle: true 
+AlternativeHeadline: Use the GraphicsAbsorber tool in PDF with Python
+Abstract: The Aspose.PDF for Python via .NET documentation on Working with Vector Graphics article  provides a comprehensive guide for developers aiming to manipulate vector graphics within PDF documents using the GraphicsAbsorber class. This class facilitates the extraction, movement, removal, and duplication of vector graphic elements across PDF pages.
 ---
 
 In this chapter, we'll explore how to use the powerful `GraphicsAbsorber` class to interact with vector graphics within PDF documents. Whether you need to move, remove, or add graphics, this guide will show you how to perform these tasks effectively.
