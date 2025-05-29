@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /python-net/replace-text-in-pdf/
 description: Learn more about various ways of replacing and removing text from Aspose.PDF for Python via .NET library.
-lastmod: "2025-02-27"
+lastmod: "2025-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -30,132 +30,125 @@ In order to replace text in all the pages of a PDF document, you first need to u
 
     import aspose.pdf as ap
 
-    # Open document
-    document = ap.Document(input_pdf)
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Create TextAbsorber object to find all instances of the input search phrase
+        absorber = ap.text.TextFragmentAbsorber("text")
+        # Accept the absorber for all the pages
+        document.pages.accept(absorber)
 
-    # Create TextAbsorber object to find all instances of the input search phrase
-    absorber = ap.text.TextFragmentAbsorber("format")
+        # Get the extracted text fragments
+        collection = absorber.text_fragments
 
-    # Accept the absorber for all the pages
-    document.pages.accept(absorber)
+        # Loop through the fragments
+        for text_fragment in collection:
+            # Update text and other properties
+            text_fragment.text = "TEXT"
+            text_fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
+            text_fragment.text_state.font_size = 22
+            text_fragment.text_state.foreground_color = ap.Color.from_rgb(drawing.Color.blue)
+            text_fragment.text_state.background_color = ap.Color.from_rgb(drawing.Color.green)
 
-    # Get the extracted text fragments
-    collection = absorber.text_fragments
-
-    # Loop through the fragments
-    for text_fragment in collection:
-        # Update text and other properties
-        text_fragment.text = "FORMAT"
-        text_fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
-        text_fragment.text_state.font_size = 22
-        text_fragment.text_state.foreground_color = ap.Color.blue
-        text_fragment.text_state.background_color = ap.Color.green
-
-    # Save the document
-    document.save(output_pdf)
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## Replace Text in particular page region
 
-In order to replace text in a particular page region, first, we need to instantiate TextFragmentAbsorber object, specify page region using TextSearchOptions.Rectangle property and then iterate through all the TextFragments to replace the text. Once these operations are completed, we only need to save the output PDF using the Save method of the Document object.  The following code snippet shows you how to replace text in all pages of PDF document.
+In order to replace text in a particular page region, first, we need to instantiate TextFragmentAbsorber object, specify page region using 'text_search_options.rectangle' property and then iterate through all the TextFragments to replace the text. Once these operations are completed, we only need to save the output PDF using the 'save' method of the Document object.
+
+The following code snippet shows you how to replace text in all pages of PDF document:
 
 ```python
-// load PDF file
-Aspose.PDF.Document pdf  = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
 
-// instantiate TextFragment Absorber object
-Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
+    import aspose.pdf as ap
 
-// search text within page bound
-TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # instantiate TextFragment Absorber object
+        absorber = ap.text.TextFragmentAbsorber()
 
-// specify the page region for TextSearch Options
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
+        # search text within page bound
+        absorber.text_search_options.limit_to_page_bounds = True
 
-// search text from first page of PDF file
-pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
+        # specify the page region for TextSearch Options
+        absorber.text_search_options.rectangle = ap.Rectangle(100, 100, 500, 500, False)
 
-// iterate through individual TextFragment
-foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
-{
-    // update text to blank characters
-    tf.Text = "";
-}
+        # search text from first page of PDF file
+        document.pages[1].accept(absorber)
 
-// save updated PDF file after text replace
-pdf.Save("c:/pdftest/TextUpdated.pdf");
+        # iterate through individual TextFragment
+        for text_fragment in absorber.text_fragments:
+            # update text to blank characters
+            text_fragment.text = ""
+
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## Replace Text Based on a Regular Expression
 
-If you want to replace some phrases based on regular expression, you first need to find all the phrases matching that particular regular expression using TextFragmentAbsorber. You will have to pass the regular expression as a parameter to the TextFragmentAbsorber constructor. You also need to create TextSearchOptions object which specifies whether the regular expression is being used or not. Once you get the matching phrases in TextFragments, you need to loop through all of them and update as required. Finally, you need to save the updated PDF using the Save method of the Document object. The following code snippet shows you how to replace text based on a regular expression.
+If you want to replace some phrases based on regular expression, you first need to find all the phrases matching that particular regular expression using TextFragmentAbsorber. This class is employed to search for text fragments that match a specific pattern or phrase. By setting text_search_options with TextSearchOptions(True), the absorber interprets the input string as a regular expression.
+
+The following code snippet shows you how to replace text based on a regular expression.
 
 ```python
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Open document
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionPage.pdf");
+    import aspose.pdf as ap
 
-// Create TextAbsorber object to find all the phrases matching the regular expression
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber("\\d{4}-\\d{4}") # Like 1999-2000
 
-// Set text search option to specify regular expression usage
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
+        # Set text search option to specify regular expression usage
+        absorber.text_search_options = ap.text.TextSearchOptions(True)
 
-// Accept the absorber for a single page
-pdfDocument.Pages[1].Accept(textFragmentAbsorber);
+        # Accept the absorber for a single page
+        document.pages[1].accept(absorber)
 
-// Get the extracted text fragments
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+        # Loop through the fragments
+        for text_fragment in absorber.text_fragments:
+            # Update text and other properties
+            text_fragment.text = "New Phrase"
+            # Set to an instance of an object.
+            text_fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
+            text_fragment.text_state.font_size = 22
+            text_fragment.text_state.foreground_color = ap.Color.from_rgb(drawing.Color.blue)
+            text_fragment.text_state.background_color = ap.Color.from_rgb(drawing.Color.green)
 
-// Loop through the fragments
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    // Update text and other properties
-    textFragment.Text = "New Phrase";
-    // Set to an instance of an object.
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
-dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-pdfDocument.Save(dataDir);
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## Replace fonts in existing PDF file
 
-Aspose.PDF for Python via .NET supports the capability to replace text in PDF document. However, sometimes you have a requirement to only replace the font being used inside PDF document. So instead of replacing the text, only font being used is replaced. One of the overloads of TextFragmentAbsorber constructor accepts TextEditOptions object as an argument and we can use RemoveUnusedFonts value from TextEditOptions.FontReplace enumeration to accomplish our requirements. The following code snippet shows how to replace the font inside PDF document.
+Aspose.PDF for Python via .NET supports the capability to replace text in PDF document. However, sometimes you have a requirement to only replace the font being used inside PDF document.
+
+TextFragmentAbsorber class is used to search and manipulate text fragments within a PDF. By initializing it with the specified TextEditOptions, it can process all text segments in the document accordingly.
+
+The following code snippet shows how to replace the font inside PDF document.
 
 ```python
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Load source PDF file
-Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
-// Search text fragments and set edit option as remove unused fonts
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
+    import aspose.pdf as ap
 
-// Accept the absorber for all the pages
-pdfDocument.Pages.Accept(absorber);
-// Traverse through all the TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    // If the font name is ArialMT, replace font name with Arial
-    if (textFragment.TextState.Font.FontName == "Arial,Bold")
-    {
-        textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    }
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Create text edit options
+        options = ap.text.TextEditOptions(ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS)
+        # Search text fragments and set edit option as remove unused fonts
+        absorber = ap.text.TextFragmentAbsorber(options)
+        # Accept the absorber for all the pages
+        document.pages.accept(absorber)
+        # Traverse through all the text_fragments
+        for text_fragment in absorber.text_fragments:
+            # If the font name is ArialMT, replace font name with Arial
+            if text_fragment.text_state.font.font_name == "Arial,Bold":
+                text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
 
-}
-
-dataDir = dataDir + "ReplaceFonts_out.pdf";
-// Save updated document
-pdfDocument.Save(dataDir);
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## Text Replacement should automatically re-arrange Page Contents
@@ -165,234 +158,228 @@ Aspose.PDF for Python via .NET supports the feature to search and replace text i
 In order to cater above-stated scenarios, Aspose.PDF for Python via .NET has been enhanced so that no such issues appear when replacing text inside PDF file. The following code snippet shows how to replace text inside PDF file and the page contents should be re-arranged automatically.
 
 ```python
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Load source PDF file
-Document doc = new Document(dataDir + "ExtractTextPage.pdf");
-// Create TextFragment Absorber object with regular expression
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-doc.Pages.Accept(textFragmentAbsorber);
-// Replace each TextFragment
-foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
-{
-    // Set font of text fragment being replaced
-    textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    // Set font size
-    textFragment.TextState.FontSize = 12;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
-    // Replace the text with larger string than placeholder
-    textFragment.Text = "This is a Larger String for the Testing of this issue";
-}
-dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
-// Save resultant PDF
-doc.Save(dataDir);
+    import aspose.pdf as ap
+
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Create TextFragment Absorber object with regular expression
+        absorber = ap.text.TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]")
+        document.pages.accept(absorber)
+        # Replace each TextFragment
+        for text_fragment in absorber.text_fragments:
+            # Set font of text fragment being replaced
+            text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
+            # Set font size
+            text_fragment.text_state.font_size = 12
+            text_fragment.text_state.foreground_color = ap.Color.navy
+            # Replace the text with larger string than placeholder
+            text_fragment.text = "This is a Larger String for the Testing of this issue"
+        # Save PDF document
+        document.save(path_outfile)
 ```
 
 ## Rendering Replaceable Symbols during PDF creation
 
-Replaceable symbols are special symbols in a text string that can be replaced with corresponding content at run time. Replaceable symbols currently support by new Document Object Model of Aspose.PDF namespace are `$P`, `$p,` `\n`, `\r`. The `$p` and `$P` are used to deal with the page numbering at run time. `$p` is replaced with the number of the page where the current Paragraph class is in. `$P` is replaced with the total number of pages in the document. When adding `TextFragment` to the paragraphs collection of PDF documents, it does not support line feed inside the text. However in order to add text with a line feed, please use `TextFragment` with `TextParagraph`:
+Replaceable symbols are special symbols in a text string that can be replaced with corresponding content at run time.
 
-- use "\r\n" or Environment.NewLine in TextFragment instead of single "\n";
 - create a TextParagraph object. It will add text with line splitting;
-- add the TextFragment with TextParagraph.AppendLine;
-- add the TextParagraph with TextBuilder.AppendParagraph.
+- add the TextFragment with 'paragraph.append_line';
+- add the TextParagraph with 'text_builder.append_paragraph'.
 
 ```python
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
+    import aspose.pdf as ap
 
-// Initialize new TextFragment with text containing required newline markers
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
+    # Create PDF document
+    with ap.Document() as document:
+        page = document.pages.add()
 
-// Set text fragment properties if necessary
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+        # Initialize new TextFragment with text containing required newline markers
+        text_fragment = ap.text.TextFragment("Applicant Name: " + os.linesep + " Joe Smoe")
 
-// Create TextParagraph object
-TextParagraph par = new TextParagraph();
+        # Set text fragment properties if necessary
+        text_fragment.text_state.font_size = 12
+        text_fragment.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment.text_state.background_color = ap.Color.light_gray
+        text_fragment.text_state.foreground_color = ap.Color.red
 
-// Add new TextFragment to paragraph
-par.AppendLine(textFragment);
+        # Create TextParagraph object
+        paragraph = ap.text.TextParagraph()
 
-// Set paragraph position
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
+        # Add new TextFragment to paragraph
+        paragraph.append_line(text_fragment)
 
-// Create TextBuilder object
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// Add the TextParagraph using TextBuilder
-textBuilder.AppendParagraph(par);
+        # Set paragraph position
+        paragraph.position = ap.text.Position(100, 600)
 
-dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
-pdfApplicationDoc.Save(dataDir);
+        # Create TextBuilder object
+        text_builder = ap.text.TextBuilder(page)
+        # Add the TextParagraph using TextBuilder
+        text_builder.append_paragraph(paragraph)
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## Replaceable symbols in Header/Footer area
 
-Replaceable symbols can also be placed inside the Header/Footer section of PDF file. Please take a look over the following code snippet for details on how to add replaceable symbol in the footer section.
+Replaceable symbols can also be placed inside the Header/Footer section of PDF file. 
+Please take a look over the following code snippet for details on how to add replaceable symbol in the footer section.
 
 ```python
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
+    import aspose.pdf as ap
 
-MarginInfo marginInfo = new MarginInfo();
-marginInfo.Top = 90;
-marginInfo.Bottom = 50;
-marginInfo.Left = 50;
-marginInfo.Right = 50;
-// Assign the marginInfo instance to Margin property of sec1.PageInfo
-page.PageInfo.Margin = marginInfo;
+    # Create PDF document
+    with ap.Document() as document:
+        page = document.pages.add()
+        margin_info = ap.MarginInfo()
+        margin_info.top = 90
+        margin_info.bottom = 50
+        margin_info.left = 50
+        margin_info.right = 50
+        # Assign the marginInfo instance to Margin property of sec1.PageInfo
+        page.page_info.margin = margin_info
 
-HeaderFooter hfFirst = new HeaderFooter();
-page.Header = hfFirst;
-hfFirst.Margin.Left = 50;
-hfFirst.Margin.Right = 50;
+        header_footer_first = ap.HeaderFooter()
+        page.header = header_footer_first
+        header_footer_first.margin.left = 50
+        header_footer_first.margin.right = 50
 
-// Instantiate a Text paragraph that will store the content to show as header
-TextFragment t1 = new TextFragment("report title");
-t1.TextState.Font = FontRepository.FindFont("Arial");
-t1.TextState.FontSize = 16;
-t1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t1.TextState.FontStyle = FontStyles.Bold;
-t1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t1.TextState.LineSpacing = 5f;
-hfFirst.Paragraphs.Add(t1);
+        # Instantiate a Text paragraph that will store the content to show as header
+        fragment_1 = ap.text.TextFragment("report title")
+        fragment_1.text_state.font = ap.text.FontRepository.find_font("Arial")
+        fragment_1.text_state.font_size = 16
+        fragment_1.text_state.foreground_color = ap.Color.black
+        fragment_1.text_state.font_style = ap.text.FontStyles.BOLD
+        fragment_1.text_state.horizontal_alignment = ap.HorizontalAlignment.CENTER
+        fragment_1.text_state.line_spacing = 5
+        header_footer_first.paragraphs.add(fragment_1)
 
-TextFragment t2 = new TextFragment("Report_Name");
-t2.TextState.Font = FontRepository.FindFont("Arial");
-t2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t2.TextState.LineSpacing = 5f;
-t2.TextState.FontSize = 12;
-hfFirst.Paragraphs.Add(t2);
+        fragment_2 = ap.text.TextFragment("Report_Name")
+        fragment_2.text_state.font = ap.text.FontRepository.find_font("Arial")
+        fragment_2.text_state.foreground_color = ap.Color.black
+        fragment_2.text_state.horizontal_alignment = ap.HorizontalAlignment.CENTER
+        fragment_2.text_state.line_spacing = 5
+        fragment_2.text_state.font_size = 12
+        header_footer_first.paragraphs.add(fragment_2)
 
-// Create a HeaderFooter object for the section
-HeaderFooter hfFoot = new HeaderFooter();
-// Set the HeaderFooter object to odd & even footer
-page.Footer = hfFoot;
-hfFoot.Margin.Left = 50;
-hfFoot.Margin.Right = 50;
+        # Create a HeaderFooter object for the section
+        header_footer_foot = ap.HeaderFooter()
+        # Set the HeaderFooter object to odd & even footer
+        page.footer = header_footer_foot
+        header_footer_foot.margin.left = 50
+        header_footer_foot.margin.right = 50
 
-// Add a text paragraph containing current page number of total number of pages
-TextFragment t3 = new TextFragment("Generated on test date");
-TextFragment t4 = new TextFragment("report name ");
-TextFragment t5 = new TextFragment("Page $p of $P");
+        # Add a text paragraph containing current page number of total number of pages
+        fragment_3 = ap.text.TextFragment("Generated on test date")
+        fragment_4 = ap.text.TextFragment("report name ")
+        fragment_5 = ap.text.TextFragment("Page $p of $P")
 
-// Instantiate a table object
-Table tab2 = new Table();
+        # Instantiate a table object
+        table2 = ap.Table()
 
-// Add the table in paragraphs collection of the desired section
-hfFoot.Paragraphs.Add(tab2);
+        # Add the table in paragraphs collection of the desired section
+        header_footer_foot.paragraphs.add(table2)
 
-// Set with column widths of the table
-tab2.ColumnWidths = "165 172 165";
+        # Set with column widths of the table
+        table2.column_widths = "165 172 165"
 
-// Create rows in the table and then cells in the rows
-Row row3 = tab2.Rows.Add();
+        # Create rows in the table and then cells in the rows
+        row3 = table2.rows.add()
 
-row3.Cells.Add();
-row3.Cells.Add();
-row3.Cells.Add();
+        row3.cells.add()
+        row3.cells.add()
+        row3.cells.add()
 
-// Set the vertical allignment of the text as center alligned
-row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
-row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
-row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
+        # Set the vertical alignment of the text as center aligned
+        row3.cells[0].alignment = ap.HorizontalAlignment.LEFT
+        row3.cells[1].alignment = ap.HorizontalAlignment.CENTER
+        row3.cells[2].alignment = ap.HorizontalAlignment.RIGHT
 
-row3.Cells[0].Paragraphs.Add(t3);
-row3.Cells[1].Paragraphs.Add(t4);
-row3.Cells[2].Paragraphs.Add(t5);
+        row3.cells[0].paragraphs.add(fragment_3)
+        row3.cells[1].paragraphs.add(fragment_4)
+        row3.cells[2].paragraphs.add(fragment_5)
 
-// Sec1.Paragraphs.Add(New Text("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL"))
-Table table = new Table();
+        # Instantiate a table object
+        table = ap.Table()
 
-table.ColumnWidths = "33% 33% 34%";
-table.DefaultCellPadding = new MarginInfo();
-table.DefaultCellPadding.Top = 10;
-table.DefaultCellPadding.Bottom = 10;
+        table.column_widths = "33% 33% 34%"
+        table.default_cell_padding = ap.MarginInfo()
+        table.default_cell_padding.top = 10
+        table.default_cell_padding.bottom = 10
 
-// Add the table in paragraphs collection of the desired section
-page.Paragraphs.Add(table);
+        # Add the table in paragraphs collection of the desired section
+        page.paragraphs.add(table)
 
-// Set default cell border using BorderInfo object
-table.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.1f);
+        # Set default cell border using BorderInfo object
+        table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
 
-// Set table border using another customized BorderInfo object
-table.Border = new BorderInfo(BorderSide.All, 1f);
+        # Set table border using another customized BorderInfo object
+        table.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
 
-table.RepeatingRowsCount = 1;
+        table.repeating_rows_count = 1
 
-// Create rows in the table and then cells in the rows
-Row row1 = table.Rows.Add();
+        # Create rows in the table and then cells in the rows
+        row1 = table.rows.add()
 
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add("col3");
-const string CRLF = "\r\n";
-for (int i = 0; i <= 10; i++)
-{
-    Row row = table.Rows.Add();
-    row.IsRowBroken = true;
-    for (int c = 0; c <= 2; c++)
-    {
-        Cell c1;
-        if (c == 2)
-            c1 = row.Cells.Add("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a" + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "Using Aspose.Total for Java developers can create a wide range of applications.");
-        else
-            c1 = row.Cells.Add("item1" + c);
-        c1.Margin = new MarginInfo();
-        c1.Margin.Left = 30;
-        c1.Margin.Top = 10;
-        c1.Margin.Bottom = 10;
-    }
-}
+        row1.cells.add("col1")
+        row1.cells.add("col2")
+        row1.cells.add("col3")
+        CRLF = "\r\n"
+        for i in range(10):
+            row = table.rows.add()
+            row.is_row_broken = True
+            for c in range(3):
+                if c == 2:
+                    c1 = row.cells.add(
+                        "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a"
+                        + CRLF
+                        + "daily basis to ensure it contains the most up to date versions of each of our Java components. "
+                        + CRLF
+                        + "daily basis to ensure it contains the most up to date versions of each of our Java components. "
+                        + CRLF
+                        + "Using Aspose.Total for Java developers can create a wide range of applications."
+                    )
+                else:
+                    c1 = row.cells.add("item1" + str(c))
+                c1.margin = ap.MarginInfo()
+                c1.margin.left = 30
+                c1.margin.top = 10
+                c1.margin.bottom = 10
 
-dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
-doc.Save(dataDir);
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## Remove Unused Fonts from PDF File
 
-Aspose.PDF for Python via .NET supports the feature to embed fonts while creating a PDF document, as well as the capability to embed fonts in existing PDF files. From Aspose.PDF for Python via .NET 7.3.0, it also lets you remove duplicate or unused fonts from PDF documents.
+Aspose.PDF for Python via .NET supports the feature to embed fonts while creating a PDF document, as well as the capability to embed fonts in existing PDF files. From Aspose.PDF for Python via .NET, it also lets you remove duplicate or unused fonts from PDF documents.
 
 To replace fonts, use the following approach:
 
 1. Call the [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber) class.
-1. Call the TextFragmentAbsorber class’ TextEditOptions.FontReplace.RemoveUnusedFonts parameter. (This removes fonts that have become unused during font replacement).
+1. Call the TextFragmentAbsorber class TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS parameter. (This removes fonts that have become unused during font replacement).
 1. Set font individually for each text fragment.
 
 The following code snippet replaces font for all text fragments of all document pages and removes unused fonts.
 
 ```python
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Load source PDF file
-Document doc = new Document(dataDir + "ReplaceTextPage.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-doc.Pages.Accept(absorber);
+    import aspose.pdf as ap
 
-// Iterate through all the TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
-}
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        options = ap.text.TextEditOptions(ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS)
+        absorber = ap.text.TextFragmentAbsorber(options)
+        document.pages.accept(absorber)
 
-dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
-// Save updated document
-doc.Save(dataDir);
+        # Iterate through all the text_fragments
+        for text_fragment in absorber.text_fragments:
+            text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial, Bold")
+
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## Remove All Text from PDF Document
@@ -403,24 +390,29 @@ In some text operation, you need to remove all text from PDF document and for th
 
 Therefore, we recommend using another approach for the scenario of removing all text from PDF pages. Please consider the following code snippet that works very fast.
 
-```python
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. Import the Library. The script imports aspose.pdf, a powerful library for handling PDF files programmatically.
+1. Open the PDF Document. The Document(path_infile) method loads the PDF file specified by path_infile.
+1. Iterate Through Pages. A loop runs from 1 to len(document.pages), meaning it processes all pages except the first one (since indexing starts at 1 here, this could be unintentional if the user wants to process the first page).
+1. Select Text Operators. The OperatorSelector is used with TextShowOperator(), which identifies all text elements on a page.
+1. Delete Text. The page.contents.delete(operator_selector.selected) command removes all identified text from the page.
+1. Save the Modified PDF. The processed document is saved using document.save(path_outfile).
 
-// Open document
-Document pdfDocument = new Document(dataDir + "RemoveAllText.pdf");
-// Loop through all pages of PDF Document
-for (int i = 1; i <= pdfDocument.Pages.Count; i++)
-{
-    Page page = pdfDocument.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
-    // Select all text on the page
-    page.Contents.Accept(operatorSelector);
-    // Delete all text
-    page.Contents.Delete(operatorSelector.Selected);
-}
-// Save the document
-pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+```python
+
+    import aspose.pdf as ap
+
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Loop through all pages of PDF Document
+        for i in range(1, len(document.pages)):
+            page = document.pages[i]
+            operator_selector = ap.OperatorSelector(ap.operators.TextShowOperator())
+            # Select all text on the page
+            page.contents.accept(operator_selector)
+            # Delete all text
+            page.contents.delete(operator_selector.selected)
+
+        # Save the document
+        document.save(path_outfile)
 ```
 

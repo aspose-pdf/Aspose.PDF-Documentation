@@ -5,292 +5,333 @@ type: docs
 weight: 30
 url: /python-net/text-formatting-inside-pdf/
 description: Explore text formatting options within PDF files in Python using Aspose.PDF for customized document styling.
-lastmod: "2025-02-27"
+lastmod: "2025-05-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to edit Text in PDF with Python
-Abstract: The article provides a comprehensive guide on various text formatting techniques in PDF documents using Aspose.PDF for .NET. It covers a range of functionalities including adding line indent, creating text borders, underlining text, and adding strikeout text, among others. Each section presents a specific feature with detailed C# code snippets to demonstrate its implementation. For instance, the article explains how to use the `SubsequentLinesIndent` property in the `TextFormattingOptions` class to set line indents, and how to draw borders around text using `TextBuilder` and `TextState`. It also delves into adding text with line feeds using `TextParagraph` and `TextBuilder`, applying gradient shading using `PatternColorSpace`, and aligning text within a `FloatingBox` element. The guide emphasizes practical usage by incorporating complete code examples available in the Aspose.PDF GitHub repository, enabling developers to enhance their PDF document editing capabilities efficiently.
+Abstract: The article provides a comprehensive guide on various text formatting techniques in PDF documents using Aspose.PDF for Python via .NET. It covers a range of functionalities including adding line indent, creating text borders, underlining text, and adding strikeout text, among others.
 ---
 
-## How to add Line Indent to PDF
+## Text Formatting inside PDF
 
-Aspose.PDF for .NET offers SubsequentLinesIndent property into [TextFormattingOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textformattingoptions) class. Which can be used to specify line indent in PDF generation scenarios with TextFragment and Paragraphs collection.
+This example demonstrates how to create and format a PDF document. It establishes a single-page PDF that includes lengthy, repetitive text with a specially formatted paragraph, configured so that any wrapped lines appear with an indent of 20 units. In addition, several separate lines of text are added as individual paragraphs below the main block. Finally, the modified PDF is saved to a designated output path. This approach is useful for creating documents with complex text layouts and formatting, ensuring that text appearance (like indented wrapped lines) is controlled programmatically.
 
-Please use the following code snippet to use the property:
+1. Create a New PDF Document.
+1. Adding a Page and Creating a Long Text Fragment.
+1. Applying Text Formatting Options.
+1. Adding the Text Fragments to the Page.
+1. Saving the PDF Document.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Create new document object
-Aspose.Pdf.Document document = new Aspose.Pdf.Document();
-Aspose.Pdf.Page page = document.Pages.Add();
+```python
 
-string textFragment = string.Concat(Enumerable.Repeat("A quick brown fox jumped over the lazy dog. ", 10));
+    import aspose.pdf as ap
 
-Aspose.Pdf.Text.TextFragment text = new Aspose.Pdf.Text.TextFragment(textFragment);
+    # Create PDF document
+    with ap.Document() as document:
+        # Add page to pages collection of PDF
+        page = document.pages.add()
+        text_fragment = "".join(["A quick brown fox jumped over the lazy dog. "] * 10)
 
-// Initilize TextFormattingOptions for the text fragment and specify SubsequentLinesIndent value
-text.TextState.FormattingOptions = new Aspose.Pdf.Text.TextFormattingOptions()
-{
-    SubsequentLinesIndent = 20
-};
+        text = ap.text.TextFragment(text_fragment)
 
-page.Paragraphs.Add(text);
+        # Initialize TextFormattingOptions for the text fragment and specify subsequent_lines_indent value
+        text.text_state.formatting_options = ap.text.TextFormattingOptions()
+        text.text_state.formatting_options.subsequent_lines_indent = 20
 
-text = new Aspose.Pdf.Text.TextFragment("Line2");
-page.Paragraphs.Add(text);
+        page.paragraphs.add(text)
 
-text = new Aspose.Pdf.Text.TextFragment("Line3");
-page.Paragraphs.Add(text);
+        text = ap.text.TextFragment("Line2")
+        page.paragraphs.add(text)
 
-text = new Aspose.Pdf.Text.TextFragment("Line4");
-page.Paragraphs.Add(text);
+        text = ap.text.TextFragment("Line3")
+        page.paragraphs.add(text)
 
-text = new Aspose.Pdf.Text.TextFragment("Line5");
-page.Paragraphs.Add(text);
+        text = ap.text.TextFragment("Line4")
+        page.paragraphs.add(text)
 
-document.Save(dataDir + "SubsequentIndent_out.pdf");
+        text = ap.text.TextFragment("Line5")
+        page.paragraphs.add(text)
+
+        document.save(path_outfile)
 ```
 
 ## How to add Text Border
 
 The following code snippet shows, how to add a border to a text using TextBuilder and setting DrawTextRectangleBorder property of TextState:
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Create new document object
-Document pdfDocument = new Document();
-// Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// Create text fragment
-TextFragment textFragment = new TextFragment("main text");
-textFragment.Position = new Position(100, 600);
-// Set text properties
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-// Set StrokingColor property for drawing border (stroking) around text rectangle
-textFragment.TextState.StrokingColor = Aspose.Pdf.Color.DarkRed;
-// Set DrawTextRectangleBorder property value to true
-textFragment.TextState.DrawTextRectangleBorder = true;
-TextBuilder tb = new TextBuilder(pdfPage);
-tb.AppendText(textFragment);
-// Save the document
-pdfDocument.Save(dataDir + "PDFWithTextBorder_out.pdf");
+1. Create a New PDF Document.
+1. Add a Page to the Document.
+1. Create a Text Fragment.
+1. Set the Position of the Text Fragment.
+1. Customize Text Appearance.
+1. Set Border (Stroking) Properties.
+1. Append the Text Fragment to the PDF Page.
+1. Save the PDF Document.
+
+```python
+
+    import aspose.pdf as ap
+
+    # Create PDF document
+    with ap.Document() as document:
+    # Add page to pages collection of PDF
+    page = document.pages.add()
+    # Create text fragment
+    text_fragment = ap.text.TextFragment("main text")
+    text_fragment.position = ap.text.Position(100, 600)
+    # Set text properties
+    text_fragment.text_state.font_size = 12
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+    text_fragment.text_state.background_color = ap.Color.light_gray
+    text_fragment.text_state.foreground_color = ap.Color.red
+    # Set stroking_color property for drawing border (stroking) around text rectangle
+    text_fragment.text_state.stroking_color = ap.Color.dark_red
+    # Set draw_text_rectangle_border property value to true
+    text_fragment.text_state.draw_text_rectangle_border = True
+    tb = ap.text.TextBuilder(page)
+    tb.append_text(text_fragment)
+    # Save the document
+    document.save(path_outfile)
 ```
 
 ## How to add Underline Text
 
 The following code snippet shows you how to add Underline text while creating a new PDF file.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. Create a New PDF Document.
+1. Add a New Page.
+1. Initialize a TextBuilder.
+1. Create and Configure a Text Fragment.
+1. Append the Text Fragment to the Page.
+1. Save the Document.
 
-// Create documentation object
-Document pdfDocument = new Document();
-// Add age page to PDF document
-pdfDocument.Pages.Add();
-// Create TextBuilder for first page
-TextBuilder tb = new TextBuilder(pdfDocument.Pages[1]);
-// TextFragment with sample text
-TextFragment fragment = new TextFragment("Test message");
-// Set the font for TextFragment
-fragment.TextState.Font = FontRepository.FindFont("Arial");
-fragment.TextState.FontSize = 10;
-// Set the formatting of text as Underline
-fragment.TextState.Underline = true;
-// Specify the position where TextFragment needs to be placed
-fragment.Position = new Position(10, 800);
-// Append TextFragment to PDF file
-tb.AppendText(fragment);
+```python
 
-dataDir = dataDir + "AddUnderlineText_out.pdf";
+    import aspose.pdf as ap
 
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
+    # Create PDF document
+    with ap.Document() as document:
+        # Add page to pages collection of PDF
+        page = document.pages.add()
+        # Create TextBuilder for first page
+        tb = ap.text.TextBuilder(page)
+        # Create text fragment with sample text
+        fragment = ap.text.TextFragment("Test message")
+        # Set the font for TextFragment
+        fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
+        fragment.text_state.font_size = 10
+        # Set the formatting of text as underline
+        fragment.text_state.underline = True
+        # Specify the position where TextFragment needs to be placed
+        fragment.position = ap.text.Position(10, 800)
+        # Append TextFragment to PDF file
+        tb.append_text(fragment)
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## How to add Border Around Added Text
 
 You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfcontenteditor) class.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```python
 
-PdfContentEditor editor = new PdfContentEditor();
-editor.BindPdf(dataDir + "input.pdf");
-LineInfo lineInfo = new LineInfo();
-lineInfo.LineWidth = 2;
-lineInfo.VerticeCoordinate = new float[] { 0, 0, 100, 100, 50, 100 };
-lineInfo.Visibility = true;
-editor.CreatePolygon(lineInfo, 1, new System.Drawing.Rectangle(0, 0, 0, 0), "");
+    import aspose.pdf as ap
 
-dataDir = dataDir + "AddingBorderAroundAddedText_out.pdf";
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
 
-// Save resulting PDF document.
-editor.Save(dataDir);
+    with ap.facades.PdfContentEditor() as editor:
+    # Bind PDF document
+    editor.bind_pdf(path_infile)
+    line_info = ap.facades.LineInfo()
+    line_info.line_width = 2
+    line_info.vertice_coordinate = [0, 0, 100, 100, 50, 100]
+    line_info.visibility = True
+    editor.create_polygon(line_info, 1, drawing.Rectangle(0, 0, 0, 0), "")
+
+    # Save resulting PDF document.
+    editor.save(path_outfile)
 ```
 
 ## How to add NewLine feed
 
 TextFragment doesn’t support line feed inside the text. However in order to add text with line feed, please use TextFragment with TextParagraph:
 
-- use "\r\n" or Environment.NewLine in TextFragment instead of single "\n";
-- create TextParagraph object. It will add text with line splitting;
-- add the TextFragment with TextParagraph.AppendLine;
-- add the TextParagraph with TextBuilder.AppendParagraph.
-Please use below code snippet.
+```python
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
+    import aspose.pdf as ap
 
-// Initialize new TextFragment with text containing required newline markers
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
+    # Create PDF document
+    with ap.Document() as document:
+        # Add page to pages collection of PDF
+        page = document.pages.add()
+        # Initialize new TextFragment with text containing required newline markers
+        text_fragment = ap.text.TextFragment("Applicant Name: " + os.linesep + " Joe Smoe")
 
-// Set text fragment properties if necessary
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+        # Set text fragment properties if necessary
+        text_fragment.text_state.font_size = 12
+        text_fragment.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment.text_state.background_color = ap.Color.light_gray
+        text_fragment.text_state.foreground_color = ap.Color.red
 
-// Create TextParagraph object
-TextParagraph par = new TextParagraph();
+        # Create TextParagraph object
+        paragraph = ap.text.TextParagraph()
 
-// Add new TextFragment to paragraph
-par.AppendLine(textFragment);
+        # Add new TextFragment to paragraph
+        paragraph.append_line(text_fragment)
 
-// Set paragraph position
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
+        # Set paragraph position
+        paragraph.position = ap.text.Position(100, 600)
 
-// Create TextBuilder object
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// Add the TextParagraph using TextBuilder
-textBuilder.AppendParagraph(par);
-
-
-dataDir = dataDir + "AddNewLineFeed_out.pdf";
-
-// Save resulting PDF document.
-pdfApplicationDoc.Save(dataDir);
+        # Create TextBuilder object
+        text_builder = ap.text.TextBuilder(page)
+        # Add the TextParagraph using TextBuilder
+        text_builder.append_paragraph(paragraph)
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## How to add StrikeOut Text
 
-The TextState class provides the capabilities to set formatting for TextFragments being placed inside PDF document. You can use this class to set text formatting as Bold, Italic, Underline and starting this release, the API has provided the capabilities to mark text formatting as Strikeout. Please try using the following code snippet to add TextFragment with Strikeout formatting.
+The TextState class provides the capabilities to set formatting for TextFragments being placed inside PDF document.
 
-Please use complete code snippet:
+1. Create a New PDF Document.
+1. Add a Page to the Document.
+1. Create and Position a Text Fragment.
+1. Set Text Styling Properties.
+1. Append the Text Fragment to the Page.
+1. Save the PDF Document.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Open document
-Document pdfDocument = new Document();
-// Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+```python
 
-// Create text fragment
-TextFragment textFragment = new TextFragment("main text");
-textFragment.Position = new Position(100, 600);
+    import aspose.pdf as ap
 
-// Set text properties
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-// Set StrikeOut property
-textFragment.TextState.StrikeOut = true;
-// Mark text as Bold
-textFragment.TextState.FontStyle = FontStyles.Bold;
+    # Create PDF document
+    with ap.Document() as document:
+        # Add page to pages collection of PDF
+        page = document.pages.add()
+        # Create text fragment
+        text_fragment = ap.text.TextFragment("main text")
+        text_fragment.position = ap.text.Position(100, 600)
 
-// Create TextBuilder object
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// Append the text fragment to the PDF page
-textBuilder.AppendText(textFragment);
+        # Set text properties
+        text_fragment.text_state.font_size = 12
+        text_fragment.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment.text_state.background_color = ap.Color.light_gray
+        text_fragment.text_state.foreground_color = ap.Color.red
+        # Set StrikeOut property
+        text_fragment.text_state.strike_out = True
+        # Mark text as Bold
+        text_fragment.text_state.font_style = ap.text.FontStyles.BOLD
 
+        # Create TextBuilder object
+        builder = ap.text.TextBuilder(page)
+        # Append the text fragment to the PDF page
+        builder.append_text(text_fragment)
 
-dataDir = dataDir + "AddStrikeOutText_out.pdf";
-
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## Apply Gradient Shading to the Text
 
-Text formatting has been further enhanced in the API for text editing scenarios and now you can add text with pattern colorspace inside PDF document. Aspose.Pdf.Color Class has further been enhanced by introducing new property of PatternColorSpace, which can be used to specify shading colors for the text. This new property adds different Gradient Shading to the text e.g. Axial Shading, Radial (Type 3) Shading as shown in the following code snippet:
+The next example illustrates how Aspose.PDF can be used for precise text formatting and placement in PDF generation, which is useful for creating documents with complex text layouts and visual styles.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```python
 
-using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
-{
-    TextFragmentAbsorber absorber = new TextFragmentAbsorber("Lorem ipsum");
-    pdfDocument.Pages.Accept(absorber);
+    import aspose.pdf as ap
 
-    TextFragment textFragment = absorber.TextFragments[1];
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        absorber = ap.text.TextFragmentAbsorber("Lorem ipsum")
+        document.pages.accept(absorber)
 
-    // Create new color with pattern colorspace
-    textFragment.TextState.ForegroundColor = new Aspose.Pdf.Color()
-    {
-        PatternColorSpace = new Aspose.Pdf.Drawing.GradientAxialShading(Color.Red, Color.Blue)
-    };
-    textFragment.TextState.Underline = true;
+        text_fragment = absorber.text_fragments[1]
 
-    pdfDocument.Save(dataDir + "text_out.pdf");
-}
+        # Create new color with pattern colorspace
+        color = ap.Color()
+        color.pattern_color_space = ap.drawing.GradientAxialShading(ap.Color.red, ap.Color.blue)
+        text_fragment.text_state.foreground_color = color
+        text_fragment.text_state.underline = True
+
+        # Save the document
+        document.save(path_outfile)
 ```
-
->In order to apply a Radial Gradient, you can set ‘PatternColorSpace’ property equal to ‘Aspose.Pdf.Drawing.GradientRadialShading(startingColor, endingColor)’ in the above code snippet.
 
 ## How to align text to float content
 
-Aspose.PDF supports setting text alignment for contents inside a Floating Box element. The alignment properties of Aspose.Pdf.FloatingBox instance can be used to achieve this as shown in the following code sample.
+Aspose.PDF supports setting text alignment for contents inside a FloatingBox element.
+This example demonstrates how to create a PDF document using Aspose.PDF and dynamically add multiple floating boxes to a page. Each floating box is configured with a fixed width and height and is aligned to different vertical positions (bottom, center, and top) while maintaining right horizontal alignment. Inside each floating box, a text fragment is inserted to indicate its position, and a blue border is applied to visually demarcate each box. Finally, all the content is saved into a PDF, showcasing how to programmatically control layout elements like floating boxes for customized PDF document design.
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+```python
 
-Aspose.Pdf.Document doc = new Document();
-doc.Pages.Add();
+    import aspose.pdf as ap
 
-Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox(100, 100);
-floatBox.VerticalAlignment = VerticalAlignment.Bottom;
-floatBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-floatBox.Paragraphs.Add(new TextFragment("FloatingBox_bottom"));
-floatBox.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox);
+    # Create PDF document
+    with ap.Document() as document:
+        # Add page to pages collection of PDF
+        page = document.pages.add()
 
-Aspose.Pdf.FloatingBox floatBox1 = new Aspose.Pdf.FloatingBox(100, 100);
-floatBox1.VerticalAlignment = VerticalAlignment.Center;
-floatBox1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-floatBox1.Paragraphs.Add(new TextFragment("FloatingBox_center"));
-floatBox1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox1);
+        # Create float box
+        float_box = ap.FloatingBox(100, 100)
+        # Set settings to float box
+        float_box.vertical_alignment = ap.VerticalAlignment.BOTTOM
+        float_box.horizontal_alignment = ap.HorizontalAlignment.RIGHT
+        float_box.paragraphs.add(ap.text.TextFragment("FloatingBox_bottom"))
+        float_box.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.blue)
+        # Add float box
+        page.paragraphs.add(float_box)
 
-Aspose.Pdf.FloatingBox floatBox2 = new Aspose.Pdf.FloatingBox(100, 100);
-floatBox2.VerticalAlignment = VerticalAlignment.Top;
-floatBox2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
-floatBox2.Paragraphs.Add(new TextFragment("FloatingBox_top"));
-floatBox2.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox2);
+        # Create float box
+        float_box_2 = ap.FloatingBox(100, 100)
+        # Set settings to float box
+        float_box_2.vertical_alignment = ap.VerticalAlignment.CENTER
+        float_box_2.horizontal_alignment = ap.HorizontalAlignment.RIGHT
+        float_box_2.paragraphs.add(ap.text.TextFragment("FloatingBox_center"))
+        float_box_2.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.blue)
+        # Add float box
+        page.paragraphs.add(float_box_2)
 
-doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
+        # Create float box
+        float_box_3 = ap.FloatingBox(100, 100)
+        # Set settings to float box
+        float_box_3.vertical_alignment = ap.VerticalAlignment.TOP
+        float_box_3.horizontal_alignment = ap.HorizontalAlignment.RIGHT
+        float_box_3.paragraphs.add(ap.text.TextFragment("FloatingBox_top"))
+        float_box_3.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.blue)
+        # Add float box
+        page.paragraphs.add(float_box_3)
+
+        # Save the document
+        document.save(path_outfile)
 ```
 
+## Remove Hidden text
+
+The next code snippet demonstrates how to remove hidden (invisible) text from a PDF document using the Aspose.PDF for Python library. It does so by:
+
+1. Opening an existing PDF document.
+1. Employing a TextFragmentAbsorber (with text replacement options set to avoid shifting visible content) to collect all text fragments.
+1. Iterating through the text fragments and clearing the text from any fragment that is marked as invisible.
+1. Saving the updated document to a new file.
+
+```python
+
+    import aspose.pdf as ap
+    
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        text_absorber = ap.text.TextFragmentAbsorber()
+        # This option can be used to prevent other text fragments from moving after hidden text replacement
+        text_absorber.text_replace_options = ap.text.TextReplaceOptions(ap.text.TextReplaceOptions.ReplaceAdjustment.NONE)
+        document.pages.accept(text_absorber)
+        # Remove hidden text
+        for fragment in text_absorber.text_fragments:
+            if fragment.text_state.invisible:
+                fragment.text = ""
+        # Save PDF document
+        document.save(path_outfile)
+```
