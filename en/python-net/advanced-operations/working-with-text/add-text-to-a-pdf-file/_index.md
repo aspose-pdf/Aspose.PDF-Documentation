@@ -29,6 +29,7 @@ The following code snippet shows you how to add text in an existing PDF file:
 ```python
 
     import aspose.pdf as ap
+    import aspose.pydrawing as drawing
 
     # Create PDF document
     with ap.Document() as document:
@@ -57,6 +58,7 @@ The following code snippet shows how to load Font from stream object when adding
 ```python
 
     import aspose.pdf as ap
+    import io
 
     # Create PDF document
     with ap.Document(path_infile) as document:
@@ -87,30 +89,30 @@ The following code snippet shows you how to add text in PDF document using [Text
 
     # Create PDF document
     with ap.Document() as document:
-    # Add page to pages collection of Document object
-    page = document.pages.add()
-    builder = ap.text.TextBuilder(page)
-    # Create text paragraph
-    paragraph = ap.text.TextParagraph()
-    # Set subsequent lines indent
-    paragraph.subsequent_lines_indent = 20
-    # Specify the location to add TextParagraph
-    paragraph.rectangle = ap.Rectangle(100, 300, 200, 700, False)
-    # Specify word wrapping mode
-    paragraph.formatting_options.wrap_mode = (
-        ap.text.TextFormattingOptions.WordWrapMode.BY_WORDS
-    )
-    # Create text fragment
-    fragment = ap.text.TextFragment("the quick brown fox jumps over the lazy dog")
-    fragment.text_state.font = ap.text.FontRepository.find_font("Times New Roman")
-    fragment.text_state.font_size = 12
-    # Add fragment to paragraph
-    paragraph.append_line(fragment)
-    # Add paragraph
-    builder.append_paragraph(paragraph)
+        # Add page to pages collection of Document object
+        page = document.pages.add()
+        builder = ap.text.TextBuilder(page)
+        # Create text paragraph
+        paragraph = ap.text.TextParagraph()
+        # Set subsequent lines indent
+        paragraph.subsequent_lines_indent = 20
+        # Specify the location to add TextParagraph
+        paragraph.rectangle = ap.Rectangle(100, 300, 200, 700, False)
+        # Specify word wrapping mode
+        paragraph.formatting_options.wrap_mode = (
+            ap.text.TextFormattingOptions.WordWrapMode.BY_WORDS
+        )
+        # Create text fragment
+        fragment = ap.text.TextFragment("the quick brown fox jumps over the lazy dog")
+        fragment.text_state.font = ap.text.FontRepository.find_font("Times New Roman")
+        fragment.text_state.font_size = 12
+        # Add fragment to paragraph
+        paragraph.append_line(fragment)
+        # Add paragraph
+        builder.append_paragraph(paragraph)
 
-    # Save resulting PDF document.
-    document.save(path_outfile)
+        # Save resulting PDF document.
+        document.save(path_outfile)
 ```
 
 ## Add Hyperlink to TextSegment
@@ -184,7 +186,7 @@ Aspose.PDF for Python via .NET offers the feature to use Custom/TrueType fonts w
 
 ## Add HTML String using DOM
 
-The next Python code utilizes the Aspose.PDF library to create a PDF document with an HTML fragment. 
+The next Python code utilizes the Aspose.PDF library to create a PDF document with an HTML fragment.
 
 1. Instantiate Document. An instance of the Document class is created, representing the PDF document.
 1. Add a New Page using the 'pages.add()' method.
@@ -705,6 +707,7 @@ The following code snippet shows how to add text with transparent color.
 ```python
 
     import aspose.pdf as ap
+    import aspose.pydrawing as drawing
 
     # Create PDF document
     with ap.Document() as document:
@@ -782,7 +785,8 @@ This Python code snippet performs a comparison between the measurements of strin
 
 ```python
 
-    import math as ap
+    import aspose.pdf as ap
+    import math as mt
 
     font = ap.text.FontRepository.find_font("Arial")
     ts = ap.text.TextState()

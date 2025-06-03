@@ -22,6 +22,8 @@ The following code snippet will show you the way to achieve this functionality:
 
 ```python
 
+    import aspose.pdf as ap
+
     # Create PDF document
     with ap.Document() as document:
         document.pages.add().paragraphs.add(
@@ -93,6 +95,7 @@ This code snippet provides a method to create interactive floating text elements
 ```python
 
     import aspose.pdf as ap
+    import aspose.pydrawing as drawing
 
     # Create PDF document
     with ap.Document() as document:

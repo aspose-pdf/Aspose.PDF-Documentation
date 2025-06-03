@@ -29,6 +29,7 @@ In order to replace text in all the pages of a PDF document, you first need to u
 ```python
 
     import aspose.pdf as ap
+    import aspose.pydrawing as drawing
 
     # Open PDF document
     with ap.Document(path_infile) as document:
@@ -95,6 +96,7 @@ The following code snippet shows you how to replace text based on a regular expr
 ```python
 
     import aspose.pdf as ap
+    import aspose.pydrawing as drawing
 
     # Open PDF document
     with ap.Document(path_infile) as document:
