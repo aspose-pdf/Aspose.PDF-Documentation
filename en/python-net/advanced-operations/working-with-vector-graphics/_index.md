@@ -17,7 +17,7 @@ In this chapter, we'll explore how to use the powerful `GraphicsAbsorber` class 
 
 Vector graphics are a crucial component of many PDF documents, used to represent images, shapes, and other graphical elements. Aspose.PDF provides the `GraphicsAbsorber` class, which allows developers to programmatically access and manipulate these graphics. By using the `Visit` method of `GraphicsAbsorber`, you can extract vector graphics from a specified page and perform various operations, such as moving, removing, or copying them to other pages.
 
-## Extracting Graphics with `GraphicsAbsorber`
+## Extracting Graphics
 
 The first step in working with vector graphics is to extract them from a PDF document. Here’s how you can do it using the `GraphicsAbsorber` class:
 
