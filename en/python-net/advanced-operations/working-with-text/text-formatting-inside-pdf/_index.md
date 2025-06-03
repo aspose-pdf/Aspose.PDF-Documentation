@@ -139,21 +139,22 @@ You have control over the look and feel of the text you add. The example below s
 ```python
 
     import aspose.pdf as ap
+    import aspose.pydrawing as drawing
 
     path_infile = self.data_dir + infile
     path_outfile = self.data_dir + outfile
 
     with ap.facades.PdfContentEditor() as editor:
-    # Bind PDF document
-    editor.bind_pdf(path_infile)
-    line_info = ap.facades.LineInfo()
-    line_info.line_width = 2
-    line_info.vertice_coordinate = [0, 0, 100, 100, 50, 100]
-    line_info.visibility = True
-    editor.create_polygon(line_info, 1, drawing.Rectangle(0, 0, 0, 0), "")
+        # Bind PDF document
+        editor.bind_pdf(path_infile)
+        line_info = ap.facades.LineInfo()
+        line_info.line_width = 2
+        line_info.vertice_coordinate = [0, 0, 100, 100, 50, 100]
+        line_info.visibility = True
+        editor.create_polygon(line_info, 1, drawing.Rectangle(0, 0, 0, 0), "")
 
-    # Save resulting PDF document.
-    editor.save(path_outfile)
+        # Save resulting PDF document.
+        editor.save(path_outfile)
 ```
 
 ## How to add NewLine feed

@@ -21,15 +21,15 @@ The Floating Box tool is a special tool for placing text and other content on a 
 
     # Create PDF document
     with ap.Document() as document:
-    # Add page to pages collection of PDF
-    page = document.pages.add()
-    # Create and fill box
-    box = ap.FloatingBox(400, 30)
-    box.border = ap.BorderInfo(ap.BorderSide.ALL, 1.5, ap.Color.dark_green)
-    box.is_need_repeating = False
-    box.paragraphs.add(ap.text.TextFragment("text example"))
-    # Add box
-    page.paragraphs.add(box)
+        # Add page to pages collection of PDF
+        page = document.pages.add()
+        # Create and fill box
+        box = ap.FloatingBox(400, 30)
+        box.border = ap.BorderInfo(ap.BorderSide.ALL, 1.5, ap.Color.dark_green)
+        box.is_need_repeating = False
+        box.paragraphs.add(ap.text.TextFragment("text example"))
+        # Add box
+        page.paragraphs.add(box)
 ```  
 
 In the example above, we are creating a FloatingBox with a width of 400 pt and a height of 30 pt.
@@ -151,13 +151,13 @@ You can set desired background color by using `background_color` property.
 The location of the FloatingBox on the generated page is determined by the `positioning_mode`, `left`, `top` properties.
 When the `positioning_mode` value is
 
-- `ParagraphPositioningMode.Default` (default value)
+- `ParagraphPositioningMode.DEFAULT` (default value)
 
 The location is determined by the previously placed elements.
 Adding an element is taken into account when determining the location of subsequent elements.
 If the value of at least one of the Left, Top properties is not zero, then they are also taken into account, but this uses a not entirely obvious logic and it is better not to use this.
 
-- `ParagraphPositioningMode.Absolute`
+- `ParagraphPositioningMode.ABSOLUTE`
 
 The location is specified by the Left and Top values, does not depend on previous elements and does not affect the location of subsequent ones.
 

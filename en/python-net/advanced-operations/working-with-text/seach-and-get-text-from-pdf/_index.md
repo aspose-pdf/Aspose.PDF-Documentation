@@ -216,20 +216,33 @@ Please take a look at the following code snippet. The following code snippet get
 ```python
 
     import aspose.pdf as ap
-
-    # Open PDF document
+    import aspose.pydrawing as drawing
+            
+    def search_and_draw(self, infile, outfile):
+        path_infile = self.data_dir + infile
+        path_outfile = self.data_dir + outfile
+        # Open PDF document 
     with ap.Document(path_infile) as document:
-        # Create TextAbsorber object to find all instances of the input search phrase
+        # Create TextAbsorber object to find all instances of the input search phrase        
         text_fragment_absorber = ap.text.TextFragmentAbsorber(".")
         text_search_options = ap.text.TextSearchOptions(True)
         text_fragment_absorber.text_search_options = text_search_options
-
-        document.pages.accept(text_fragment_absorber)
+        document.pages.accept(text_fragment_absorber) 
         for text_fragment in text_fragment_absorber.text_fragments:
             self.draw_rectangle_on_page(text_fragment.rectangle, text_fragment.page,
-                                    ap.operators.SetRGBColorStroke(drawing.Color.red))
-        # Save PDF document
+                                   ap.operators.SetRGBColorStroke(drawing.Color.red))
+        # Save PDF document        
         document.save(path_outfile)
+
+    def draw_rectangle_on_page(self, rectangle: ap.Rectangle, page: ap.Page, color_stroke: ap.operators.SetRGBColorStroke): 
+        if color_stroke is None: 
+            color_stroke = ap.operators.SetRGBColorStroke(0.7, 0, 0)
+        page.contents.append(ap.operators.GSave())
+        page.contents.append(ap.operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0))
+        page.contents.append(color_stroke)
+        page.contents.append(ap.operators.Re(rectangle.llx, rectangle.lly, rectangle.width, rectangle.height))
+        page.contents.append(ap.operators.ClosePathStroke())    
+        page.contents.append(ap.operators.GRestore())
 ```
 
 ## Highlight each character in PDF documen
@@ -239,6 +252,8 @@ Aspose.PDF for Python via .NET supports the feature to search and get the coordi
 ```python
 
     import aspose.pdf as ap
+    import aspose.pydrawing as drawing
+    import io
 
     # Open PDF document
     with ap.Document(path_infile) as document:
@@ -319,4 +334,30 @@ Sometimes we want to add hidden text in a PDF document and then search hidden te
         for fragment in absorber.text_fragments:
             # Do something with fragments
             print(f"Text '{fragment.text}' on pos {fragment.position} invisibility: {fragment.text_state.invisible} ")
+```
+
+## Searching bold text
+
+Aspose.PDF for Python via .NET allows users to search documents using font style properties. The 'text_fragment_absorber' can be used for this purpose, as shown in the code sample below.
+
+```python
+
+    import aspose.pdf as ap
+
+    path_infile = self.data_dir + infile
+
+    # Search text in the document
+    with ap.Document(path_infile) as document:
+        # Create TextFragmentAbsorber object to extract text
+        text_fragment_absorber = ap.text.TextFragmentAbsorber()
+        # Accept the absorber for all document
+        text_fragment_absorber.visit(document)
+        #  Loop through the fragments
+        for text_fragment in text_fragment_absorber.text_fragments:
+            # Get the text properties of the text fragment
+            text_state = text_fragment.text_state
+            # Check if text is bold
+            if text_state.font_style == ap.text.FontStyles.BOLD:
+                # Print the text from the text fragment
+                print(f"Text :- {text_fragment.text}")
 ```
