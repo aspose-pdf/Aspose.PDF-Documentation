@@ -153,7 +153,7 @@ The following code snippet shows how to replace the font inside PDF document.
         document.save(path_outfile)
 ```
 
-## Text Replacement should automatically re-arrange Page Contents
+## Automatically reordering content within a PDF file
 
 Aspose.PDF for Python via .NET supports the feature to search and replace text inside the PDF file. However recently some customers encountered issues during text replace when particular TextFragment is replaced with smaller contents and some extra spaces are displayed in resultant PDF or in case the TextFragment is replaced with some longer string, then words overlap existing page contents. So the requirement was to introduce a mechanism that once the text inside a PDF document is replaced, the contents should be re-arranged.
 
@@ -188,6 +188,8 @@ Replaceable symbols are special symbols in a text string that can be replaced wi
 - create a TextParagraph object. It will add text with line splitting;
 - add the TextFragment with 'paragraph.append_line';
 - add the TextParagraph with 'text_builder.append_paragraph'.
+
+The next example efficiently creates a PDF document with a structured text paragraph, demonstrating a clean and organized approach to formatting textual content. By incorporating newline markers, it ensures proper spacing in text presentation, making the document more readable. The use of properties such as font selection, size adjustments, and background/foreground colors adds a layer of customization, ensuring the text stands out visually. The process of wrapping the text fragment within a paragraph and defining its position on the page further enhances layout control. Finally, the document is saved, making this snippet a practical example of dynamically generating PDFs with structured content and styling.
 
 ```python
 

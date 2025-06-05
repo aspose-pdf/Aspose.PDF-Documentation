@@ -164,14 +164,14 @@ By using the Rotation property of [TextFragment](https://reference.aspose.com/pd
 
 ## Implement Rotation using TextParagraph and TextBuilder (Whole Paragraph Rotated)
 
-1. Create a New PDF Document.
+1. Create a new PDF document.
 1. A new page is appended to the document using document.pages.add().
-1. Loop to Create Multiple Paragraphs.
-1. Define Text Fragments.
-1. Set Text Styles.
-1. Append Text Fragments to Paragraph.
-1. Build and Append Paragraphs to PDF.
-1. Save the Document.
+1. Loop to create multiple paragraphs.
+1. Define text fragments.
+1. Set text styles.
+1. Append text fragments to paragraph.
+1. Build and append paragraphs to PDF.
+1. Save the document.
 
 ```python
 
