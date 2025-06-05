@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to Search and Get Text from Pages in PDF
-Abstract: The article provides an in-depth exploration of text extraction and manipulation capabilities within PDF documents using the Aspose.PDF for Python .NET library. It introduces the TextFragmentAbsorber class, which allows developers to search through an entire document or specific pages for designated phrases or regular expression patterns. The page outlines various practical scenarios—such as retrieving text content, determining its position (including coordinates and indent values), and extracting font properties like name, size, embed status, and color—from the matched text fragments. Detailed code examples demonstrate the process step-by-step, making it easier for developers to integrate text searching capabilities into their applications.
+Abstract: The article provides an in-depth exploration of text extraction and manipulation capabilities within PDF documents using the Aspose.PDF for Python via .NET library. It introduces the TextFragmentAbsorber class, which allows developers to search through an entire document or specific pages for designated phrases or regular expression patterns. The page outlines various practical scenarios—such as retrieving text content, determining its position (including coordinates and indent values), and extracting font properties like name, size, embed status, and color—from the matched text fragments. Detailed code examples demonstrate the process step-by-step, making it easier for developers to integrate text searching capabilities into their applications.
 ---
 
 ## Search and Get Text from All the Pages of PDF Document
@@ -245,7 +245,7 @@ Please take a look at the following code snippet. The following code snippet get
         page.contents.append(ap.operators.GRestore())
 ```
 
-## Highlight each character in PDF documen
+## Highlight each character in PDF document
 
 Aspose.PDF for Python via .NET supports the feature to search and get the coordinates of each character or text fragments. So in order to be certain about the coordinates being returned for each character, we may consider highlighting (adding rectangle) around each character. The following code snippet gets coordinates of each character and creates a rectangle around each character.
 
