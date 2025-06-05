@@ -6,7 +6,7 @@ weight: 20
 url: /java/delete-images-from-pdf-file/
 description: This section explain how to delete Images from PDF File using Aspose.PDF for Java.
 lastmod: "2025-02-17"
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Remove an image from a PDF file using the Aspose.PDF library for Java
 Abstract: This article provides a step-by-step guide on how to delete an image from a PDF file using the Aspose.PDF library for Java. The process begins by creating a `Document` object to open the input PDF file. The desired page containing the image is accessed through the `Pages` collection of the `Document` object. Images within a page are managed by the `Images` collection, which is part of the page's `Resources` collection. To remove an image, the `Delete` method of the `Images` collection is employed. After modifying the document, it is saved using the `Save` method of the `Document` object. The article includes a code snippet demonstrating the deletion of an image from a PDF file, showcasing the creation and configuration of a `PageNumberStamp` and its addition to a PDF page, followed by saving the updated document.
 SoftwareApplication: java
@@ -34,35 +34,17 @@ import com.aspose.pdf.PageNumberStamp;
 
 public class ExampleDeleteImages {
 
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
 
-    public static void ExampleAddPageNumber() {
+    public static void ExampleDeleteImage() {
 
         // Open document
-        Document pdfDocument = new Document(_dataDir + "PageNumberStamp.pdf");
-
-        // Create page number stamp
-        PageNumberStamp pageNumberStamp = new PageNumberStamp();
-
-        // Whether the stamp is background
-        pageNumberStamp.setBackground(false);
-        pageNumberStamp.setFormat("Page # of " + pdfDocument.getPages().size());
-        pageNumberStamp.setBottomMargin (10);
-        pageNumberStamp.setHorizontalAlignment ( HorizontalAlignment.Center);
-        pageNumberStamp.setStartingNumber(1);
-        // Set text properties
-        pageNumberStamp.getTextState().setFont (FontRepository.findFont("Arial"));
-        pageNumberStamp.getTextState().setFontSize (14.0F);
-        pageNumberStamp.getTextState().setFontStyle (FontStyles.Bold);        
-        pageNumberStamp.getTextState().setForegroundColor (Color.getAqua());
-
-        // Add stamp to particular page
-        pdfDocument.getPages().get_Item(1).addStamp(pageNumberStamp);
-
-        _dataDir = _dataDir + "PageNumberStamp_out.pdf";
-        // Save output document
-        pdfDocument.save(_dataDir);
-
+        String inputFile = Paths.get(_dataDir, "DeleteImages.pdf").toString();
+        String outputFile = Paths.get(_dataDir, "DeleteImages_out.pdf").toString();
+        Document pdfDocument = new Document(inputFile);
+        pdfDocument.getPages().get_Item(1).getResources().getImages().delete(1);
+        pdfDocument.save(outputFile);
+        pdfDocument.close();
     }
 }
 ```

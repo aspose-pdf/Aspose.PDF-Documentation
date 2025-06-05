@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /python-net/determine-line-break/
 description: Learn more about how to determinate a line break of multi-line TextFragment using Python
-lastmod: "2025-02-27"
+lastmod: "2025-05-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -34,25 +34,19 @@ This code snippet illustrates how to create a PDF document containing multi-line
 
     import aspose.pdf as ap
 
-    def track_line_breaking():
-        """Track Line Breaking of Multi-Line TextFragment"""
-        output_pdf = DIR_OUTPUT_TEXTS + "track_line_breaking.pdf"
-        output_txt = DIR_OUTPUT_TEXTS + "track_line_breaking.txt"
-
-        # Create new document object
-        document = ap.Document()
+    # Create PDF document
+    with ap.Document() as document:
         page = document.pages.add()
-
         for i in range(4):
             text = ap.text.TextFragment(
                 "Lorem ipsum \r\ndolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             )
             text.text_state.font_size = 20
             page.paragraphs.add(text)
-        document.save(output_pdf)
+        document.save(path_outfile)
 
         notifications = document.pages[1].get_notifications()
-        with open(output_txt, "w") as f:
+        with open(path_out_textfile, "w") as f:
             f.write(notifications)
 ```
 
