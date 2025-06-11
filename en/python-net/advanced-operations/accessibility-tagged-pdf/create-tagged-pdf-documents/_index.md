@@ -3,133 +3,53 @@ title: Create Tagged PDF using Python
 linktitle: Create Tagged PDF
 type: docs
 weight: 10
-url: /net/create-tagged-pdf/
-description: This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for .NET.
-lastmod: "2022-02-17"
+url: /python-net/create-tagged-pdf/
+description: This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for Python via .NET.
+lastmod: "2025-06-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Create Tagged PDF using C#",
-    "alternativeHeadline": "Programmatically create tagged PDFs using C#",
-    "abstract": "Programmatically create tagged PDF documents using C# and Aspose.PDF, ensuring PDF/UA compliance.  This feature enables the creation of structured PDF documents with elements like headers and paragraphs, supporting nested structures and text styling for accessibility.  The library also includes validation to confirm PDF/UA standards are met",
-    "author": {
-        "@type": "Person",
-        "name": "Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
-    "wordcount": "1163",
-    "proficiencyLevel": "Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF for .NET",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/net/create-tagged-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/net/create-tagged-pdf/"
-    },
-    "dateModified": "2022-11-25",
-    "description": "This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for .NET."
-}
-</script>
 
 Creating a Tagged PDF means adding (or creating) certain elements to the document that will enable the document to be validated in accordance with PDF/UA requirements. These elements are called often Structure Elements.
-
-The following code snippet also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ## Creating Tagged PDF (Simple Scenario)
 
 In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure elements using the [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. Following code snippet shows how to create Tagged PDF which contains 2 elements: header and paragraph.
 
-{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
-{{< tab tabNum="1" >}}
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CreateTaggedPdfDocument01()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+```python
 
-    // Create PDF document
-    using (var document = new Aspose.Pdf.Document())
-    {
-        // Get Content for work with TaggedPdf
-        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
-        var rootElement = taggedContent.RootElement;
+    import aspose.pdf as ap
 
-        // Set Title and Language for Document
-        taggedContent.SetTitle("Tagged Pdf Document");
-        taggedContent.SetLanguage("en-US");
+    # Create PDF Document
+    document = ap.Document()
 
-        Aspose.Pdf.LogicalStructure.HeaderElement mainHeader = taggedContent.CreateHeaderElement();
-        mainHeader.SetText("Main Header");
+    # Get Content for working with TaggedPdf
+    tagged_content = document.tagged_content
+    root_element = tagged_content.root_element
 
-        Aspose.Pdf.LogicalStructure.ParagraphElement paragraphElement = taggedContent.CreateParagraphElement();
-        paragraphElement.SetText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-            "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. " +
-            "Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet" +
-            "nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus." +
-            "Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat" +
-            "sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper" +
-            "pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus" +
-            "ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus," +
-            "ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
+    # Set Title and Language for Document
+    tagged_content.set_title("Tagged Pdf Document")
+    tagged_content.set_language("en-US")
+    main_header = tagged_content.create_header_element()
+    main_header.set_text("Main Header")
+    paragraph_element = tagged_content.create_paragraph_element()
+    paragraph_element.set_text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
+                                "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. " +
+                                "Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet" +
+                                "nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus." +
+                                "Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat" +
+                                "sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper" +
+                                "pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus" +
+                                "ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus," +
+                                "ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.")
+    root_element.append_child(main_header, True)
+    root_element.append_child(paragraph_element, True)
 
-        rootElement.AppendChild(mainHeader);
-        rootElement.AppendChild(paragraphElement);
-
-        // Save Tagged PDF Document
-        document.Save(dataDir + "TaggedPdfDocument_out.pdf");
-    }
-}
+    # Save Tagged PDF Document
+    document.save(path_outfile)
 ```
-{{< /tab >}}
 
-{{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateTaggedPdfDocument01()
@@ -688,71 +608,6 @@ private static void ConvertToPdfUAWithAutomaticTagging()
     document.Save(dataDir + "ConvertToPdfUAWithAutomaticTagging_out.pdf");
 }
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
 
 
