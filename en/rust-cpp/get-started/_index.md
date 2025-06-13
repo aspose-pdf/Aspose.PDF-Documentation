@@ -1,56 +1,34 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: /nodejs-cpp/get-started/
-description: This section describes the basic principles of work Aspose.PDF for Node.js via C++. Aspose.PDF for Node.js via C++ supports a wide variety of functions.
-lastmod: "2023-11-16"   
+url: /go-cpp/get-started/
+description: This section describes the basic principles of work and using Aspose.PDF for Go.
+lastmod: "2024-12-13"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Get Started of Aspose.PDF for Go
+Abstract: The Get Started guide for Aspose.PDF for Go via C++ provides an introduction to working with the library, covering the basic steps to create and manipulate PDF documents. It includes a 'Hello World' example demonstrating how to generate a simple PDF file with text content, helping developers quickly understand the API's core functionality.  
+SoftwareApplication: go-cpp      
 ---
 
-## What is a PDF File?
+Investigate the most basic features and requirements of the Aspose.PDF for Go library in this Getting Started section.
 
-PDF was created by Adobe in the 1990s to achieve two things. The first is that you should be able to open the documents on any hardware or operating system, without needing to have the app used to create them—all you need is a PDF reader, and these days most web browsers fit the bill. The second is that wherever you open a PDF, the layout of the document should look the same.
+To find out more about Aspose.PDF, select the appropriate section:
 
-However, it is not enough just to open your document. In working with PDF, you will face the need to create such a document anew, edit it, or convert it to the format you need.
+- [Installation](/pdf/go-cpp/installation/) – provides information on how to install Aspose.PDF.
+- [System Requirements](/pdf/go-cpp/system-requirements/) – provides information about system and development environment requirements.
+- [Hello World](/pdf/go-cpp/hello-world-example/) – provides information on how to create simple PDF document using Go and Aspose.PDF.
+- [Supported Document Formats](/pdf/go-cpp/supported-file-formats/) – provides information about supported formats.
+- [Supported Features](/pdf/go-cpp/key-features/) – provides information on what features are supported when loading or saving a document in various formats.
+- [Licensing and Subscription](/pdf/go-cpp/licensing/) – provides information on applying a license and using multiple Aspose products.
+- [Technical Support](/pdf/go-cpp/technical-support/) – This page gives recommendations for quick and quality to resolve your tasks.
 
-## Why use Aspose.PDF for Node.js via C++?
+## Learn more about
 
-Using Aspose.PDF for Node.js in your project gives you the following profits:
+- [Basics operations](/pdf/go-cpp/basic-operations/)
+- ["Hello, World" Go Example](/pdf/go-cpp/hello-world-example/)
 
-- wide variety of functions
-- toolkit used to work with PDF in the Node.js environment
-- based on Aspose.PDF for .NET
-
-## Wide variety of functions
-
-- [Extract a text from PDF](/pdf/nodejs-cpp/extract-text/)
-- [Optimize PDF document](/pdf/nodejs-cpp/optimize-pdf/)
-- [Add a stamp to PDF file](/pdf/nodejs-cpp/stamping/)
-- [Add a image to PDF file](/pdf/nodejs-cpp/add-image-to-pdf/)
-- [Split PDF to two files](/pdf/nodejs-cpp/split-pdf/)
-- [Merge two files to PDF](/pdf/nodejs-cpp/merge-pdf/)
-- [Encrypt PDF documents](/pdf/nodejs-cpp/encrypt-pdf/) 
-- [Decrypt PDF documents](/pdf/nodejs-cpp/decrypt-pdf/)
-
-## Conversion Features
-
-- [Convert PDF to JPEG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convert PDF to PNG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convert a PDF to TIFF](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convert a PDF to BMP](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convert a PDF to SVG](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convert a PDF to SVG(Zip)](/pdf/nodejs-cpp/convert-pdf-to-images-format/)
-- [Convert a PDF to TeX](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Convert a PDF to XPS](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Convert a PDF to CSV](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [Convert a PDF to TXT](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Convert PDF to Word](/pdf/nodejs-cpp/convert-pdf-to-doc/)
-- [Convert a PDF to XLSX](/pdf/nodejs-cpp/convert-pdf-to-xlsx/)
-- [Convert PDF to Grayscale PDF](/pdf/nodejs-cpp/convert-pdf-to-other-files/)
-- [Convert PDF to Microsoft PowerPoint](/pdf/nodejs-cpp/convert-pdf-to-powerpoint/)
-- [Convert PDF/A to PDF format](/pdf/nodejs-cpp/convert-pdfa-to-pdf/)
-- [Convert PDF to PDF/A format](/pdf/nodejs-cpp/convert-pdf-to-pdfa/)

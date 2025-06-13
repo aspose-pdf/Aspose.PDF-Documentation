@@ -1,20 +1,22 @@
 ---
-title: Basic operations with PDF by Aspose.PDF for Node.js via C++ 
+title: Basic operations with PDF with Aspose.PDF for Go via C++ 
 linktitle: Basic operations
 type: docs
 weight: 40
-url: /nodejs-cpp/basic-operations/
-lastmod: "2023-11-16"
-description: Basic operations section describes the possibilities of simplest operation with PDF documents using the Aspose.PDF for Node.js via C++.
+url: /go-cpp/basic-operations/
+lastmod: "2024-12-12"
+description: Basic operations section describes the possibilities of simplest operation with PDF documents using the Aspose.PDF for Go.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Basic operations for working with PDF documents
+Abstract: Aspose.PDF for Go via C++ provides basic operations for working with PDF documents, enabling developers to create, edit, and manipulate PDF files programmatically. The library supports essential functionalities such as adding text, images, and annotations, managing pages, setting document properties, and applying security features. These operations allow for flexible customization and automation of PDF workflows in Go applications. The documentation offers comprehensive guidance and code samples to help developers efficiently perform basic PDF operations with ease.  
+SoftwareApplication: go-cpp    
 ---
 
-**Basic operations** section describes the first and simplest operation with PDF documents in Aspose.PDF for Node.js via C++:
+**Basic operations** section describes the first and simplest operation with PDF documents in Aspose.PDF for Go via C++:
 
-- [Repair PDF](/pdf/nodejs-cpp/repair-pdf/)
-- [Optimize PDF File](/pdf/nodejs-cpp/optimize-pdf/)
-- [Optimize PDF Resources](/pdf/nodejs-cpp/optimize-pdf-resources/)
-
-
+- [Repair PDF](/pdf/go-cpp/repair-pdf/)
+- [Open PDF](/pdf/go-cpp/open-pdf-document/)
+- [Save PDF](/pdf/go-cpp/save-pdf-document/)

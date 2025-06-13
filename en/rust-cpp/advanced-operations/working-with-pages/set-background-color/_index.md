@@ -1,53 +1,51 @@
 ---
-title: Set the background color for PDF in Node.js
+title: Set the background color for PDF with Go via C++
 linktitle: Set background color 
 type: docs
 weight: 80
-url: /nodejs-cpp/set-background-color/
-description: Set background color for the your PDF file with Node.js via C++. 
-lastmod: "2023-11-16"
+url: /go-cpp/set-background-color/
+description: Set background color for the your PDF file with Go via C++. 
+lastmod: "2024-12-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Set the background color for PDF with Aspose.PDF for Go
+Abstract: Aspose.PDF for Go via C++ offers functionality to set the background color of PDF pages, allowing developers to customize the appearance of documents. This feature enables the application of solid colors to the entire page background, enhancing the document's visual presentation. Developers can easily specify color values using standard color models such as RGB or CMYK. The documentation provides detailed instructions and code samples to help developers implement background color customization effectively within their C++ applications.
+SoftwareApplication: go-cpp     
 ---
 
-In case you want to set background color of PDF, you can use [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/) function. 
+1. The provided code snippet demonstrates how to set a background color for a PDF file using the Aspose.PDF library in Go.
+1. The [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method loads the specified PDF file into memory, allowing further manipulations, such as modifying its appearance or content.
+1. The [SetBackground](https://reference.aspose.com/pdf/go-cpp/organize/setbackground/) method applies a new background color to the PDF document. The RGB values allow users to customize the document's visual style.
+1. The [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method saves the updated PDF under a new name.
 
-Please check the following code snippet in order to set background color of PDF in Node.js environment.
+This code is ideal for applications that need to automate PDF customizations, such as creating branded reports, adding watermarks, or enhancing visual consistency across multiple documents.
 
-**CommonJS:**
+```go
 
-1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
-1. Specify the name of the PDF file whose background color you want to set.
-1. Call `AsposePdf` as Promise and perform the operation for setting background color. Receive the object if successful.
-1. Call the function [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 
-1. Set the background color for the PDF file. You need to pass 3 arguments to this function: an input file name, a desired color in hexadecimal form, and an output file name. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultRotation.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+    package main
 
-```js
+    import "github.com/aspose-pdf/aspose-pdf-go-cpp"
+    import "log"
 
-  const AsposePdf = require('asposepdfnodejs');
-  const pdf_file = 'Aspose.pdf';
-  AsposePdf().then(AsposePdfModule => {
-      /*Set the background color for the PDF-file and save the "ResultPdfSetBackgroundColor.pdf"*/
-      const json = AsposePdfModule.AsposePdfSetBackgroundColor(pdf_file, "#426bf4", "ResultPdfSetBackgroundColor.pdf");
-      console.log("AsposePdfSetBackgroundColor => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
-  });
-```
-
-**ECMAScript/ES6:**
-
-1. Import the `asposepdfnodejs` module.
-1. Specify the name of the PDF file whose background color you want to set.
-1. Initialize the AsposePdf module. Receive the object if successful.
-1. Call the function [AsposePdfSetBackgroundColor](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfsetbackgroundcolor/). 
-1. Set the background color for the PDF file. The background color is set to "#426bf4," which is a hexadecimal color code representing a shade of blue. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultRotation.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
-
-```js
-
-  import AsposePdf from 'asposepdfnodejs';
-  const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'Aspose.pdf';
-  /*Set the background color for the PDF-file and save the "ResultPdfSetBackgroundColor.pdf"*/
-  const json = AsposePdfModule.AsposePdfSetBackgroundColor(pdf_file, "#426bf4", "ResultPdfSetBackgroundColor.pdf");
-  console.log("AsposePdfSetBackgroundColor => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
+    func main() {
+      // Open(filename string) opens a PDF-document with filename
+      pdf, err := asposepdf.Open("sample.pdf")
+      if err != nil {
+        log.Fatal(err)
+      }
+      // SetBackground(r, g, b int32) sets PDF-document background color
+      err = pdf.SetBackground(200, 100, 101)
+      if err != nil {
+        log.Fatal(err)
+      }
+      // SaveAs(filename string) saves previously opened PDF-document with new filename
+      err = pdf.SaveAs("sample_SetBackground.pdf")
+      if err != nil {
+        log.Fatal(err)
+      }
+      // Close() releases allocated resources for PDF-document
+      defer pdf.Close()
+    }
 ```

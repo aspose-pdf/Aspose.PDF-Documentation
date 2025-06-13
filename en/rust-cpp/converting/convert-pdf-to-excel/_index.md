@@ -1,67 +1,60 @@
 ---
-title: Convert PDF to Excel in Node.js
+title: Convert PDF to Excel in Go
 linktitle: Convert PDF to Excel
 type: docs
 weight: 20
-url: /nodejs-cpp/convert-pdf-to-xlsx/
-lastmod: "2023-11-16"
-description: Aspose.PDF for Node.js allows you to convert PDF to convert PDF to XLSX format.
+url: /go-cpp/convert-pdf-to-xlsx/
+lastmod: "2024-12-01"
+description: Aspose.PDF for Go allows you to convert PDF to XLSX format.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Golang Tool for Converting PDF to Excel documents 
+Abstract: The Aspose.PDF for Go via C++ library provides a robust solution for converting PDF documents to XLSX format with high accuracy and efficiency. This feature enables developers to extract tabular data from PDFs while preserving Excel spreadsheets original layout, structure, and formatting. The documentation offers detailed guidance on implementing the conversion process, including sample code and step-by-step instructions to facilitate seamless integration into Go applications.  
+SoftwareApplication: go-cpp
 ---
 
-## Creating spreadsheets from PDF using Node.js 
+**Aspose.PDF for Go** support the feature of converting PDF files to Excel format.
 
-**Aspose.PDF for Node.js via C++** support the feature of converting PDF files to Excel file.
+## Convert PDF to XLSX
+
+Excel provides advanced tools for sorting, filtering, and analyzing data, making it easier to perform tasks like trend analysis or financial modeling, which are difficult with static PDF files. Manually copying data from PDFs into Excel is time-consuming and error-prone. Conversion automates this process, saving significant time for large datasets.
+
+Aspose.PDF for Go uses [SaveXlsX](https://reference.aspose.com/pdf/go-cpp/convert/savexlsx/) to convert the downloaded PDF file into an Excel spreadsheet and save it.
+
+1. Import Required Packages.
+1. Open a PDF File.
+1. Convert the PDF to XLSX using [SaveXlsX](https://reference.aspose.com/pdf/go-cpp/convert/savexlsx/).
+1. Close the PDF Document.
+
+```go
+
+  package main
+
+  import "github.com/aspose-pdf/aspose-pdf-go-cpp"
+  import "log"
+
+  func main() {
+    // Open(filename string) opens a PDF-document with filename
+    pdf, err := asposepdf.Open("sample.pdf")
+    if err != nil {
+      log.Fatal(err)
+    }
+    // SaveXlsX(filename string) saves previously opened PDF-document as XlsX-document with filename
+    err = pdf.SaveXlsX("sample.xlsx")
+    if err != nil {
+      log.Fatal(err)
+    }
+    // Close() releases allocated resources for PDF-document
+    defer pdf.Close()
+  }
+```
 
 {{% alert color="success" %}}
 **Try to convert PDF to Excel online**
 
-Aspose.PDF for Node.js presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Go presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
-
-## Convert PDF to XLSX
-
-In case you want to convert PDF document, you can use [AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/) function. 
-Please check the following code snippet in order to convert in Node.js environment.
-
-**CommonJS:**
-
-1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
-1. Specify the name of the PDF file that will be converted.
-1. Call `AsposePdf` as Promise and perform the operation for converting file. Receive the object if successful.
-1. Call the function [AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/).
-1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoXlsX.xlsx". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
-
-```js
-
-  const AsposePdf = require('asposepdfnodejs');
-  const pdf_file = 'Aspose.pdf';
-  AsposePdf().then(AsposePdfModule => {
-      /*Convert a PDF-file to XlsX and save the "ResultPDFtoXlsX.xlsx"*/
-      const json = AsposePdfModule.AsposePdfToXlsX(pdf_file, "ResultPDFtoXlsX.xlsx");
-      console.log("AsposePdfToXlsX => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
-  });
-```
-
-**ECMAScript/ES6:**
-
-1. Import the `asposepdfnodejs` module.
-1. Specify the name of the PDF file that will be converted.
-1. Initialize the AsposePdf module. Receive the object if successful.
-1. Call the function [AsposePdfToXlsX](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdftoxlsx/).
-1. Convert PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPDFtoXlsX.xlsx". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
-
-```js
-
-  import AsposePdf from 'asposepdfnodejs';
-  const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'Aspose.pdf';
-  /*Convert a PDF-file to XlsX and save the "ResultPDFtoXlsX.xlsx"*/
-  const json = AsposePdfModule.AsposePdfToXlsX(pdf_file, "ResultPDFtoXlsX.xlsx");
-  console.log("AsposePdfToXlsX => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
-```
-

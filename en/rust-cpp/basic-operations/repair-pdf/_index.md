@@ -1,53 +1,56 @@
 ---
-title: Repair PDF in Node.js 
+title: Repair PDF with Go via C++ 
 linktitle: Repair PDF
 type: docs
 weight: 10
-url: /nodejs-cpp/repair-pdf/
-description: This topic describes how to Repair PDF in the Node.js environment.
-lastmod: "2023-11-16"
+url: /go-cpp/repair-pdf/
+description: This topic describes how to Repair PDF via Go via C++ 
+lastmod: "2024-12-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Repair PDF with Aspose.PDF for Go via C++
+Abstract: Aspose.PDF for Go via C++ provides a robust solution for repairing damaged or corrupted PDF documents, ensuring data integrity and accessibility. The library offers powerful features to analyze and fix structural issues, recover content, and restore the document to a usable state. It supports repairing PDFs affected by issues such as missing fonts, damaged metadata, and corrupted content streams. The documentation provides step-by-step guidance and code samples to assist developers in efficiently implementing PDF repair functionality within their applications.
+SoftwareApplication: go-cpp         
 ---
 
-Aspose.PDF for Node.js allows high-quality PDF repair. The PDF file may not open for any reason, regardless of the program or browser. In some cases the document can be restored, try the following code and see for yourself.
-In case you want to repair PDF document, you can use [AsposePdfRepair](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrepair/) function. 
-Please check following code snippet in order to repair PDF file in Node.js environment.
+Repair PDFs are necessary for maintaining and enhancing PDF documents, especially when dealing with corrupted files or making adjustments. Repairing a PDF file and saving it as a new document is a common requirement in scenarios like document management systems, where file integrity is critical.
 
-**CommonJS:**
+It includes error handling at every step, ensuring that any issues with opening, repairing, or saving the PDF document are logged and addressed promptly. This makes the code robust for real-world applications.
 
-1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
-1. Specify the name of the PDF file that will be repaired.
-1. Call `AsposePdf` as Promise and perform the operation for repairing file. Receive the object if successful.
-1. Call the function [AsposePdfRepair](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrepair/).
-1. Repair the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfRepair.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+The example is simple and concise, making it easy to understand and implement. It is a clear starting point for developers new to using PDF libraries like Aspose.PDF for Go.
 
-```js
+**Aspose.PDF for Go** allows high-quality PDF repair. The PDF file may not open for any reason, regardless of the program or browser. In some cases the document can be restored, try the following code and see for yourself.
 
-  const AsposePdf = require('asposepdfnodejs');
-  const pdf_file = 'Aspose.pdf';
-  AsposePdf().then(AsposePdfModule => {
-    /*Repair a PDF-file and save the "ResultPdfRepair.pdf"*/
-    const json = AsposePdfModule.AsposePdfRepair(pdf_file, "ResultPdfRepair.pdf");
-    console.log("AsposePdfRepair => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
-  });
-```
+1. Open a PDF document using [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) function.
+1. Repair the PDF document with [Repair](https://reference.aspose.com/pdf/go-cpp/organize/repair/) function.
+1. Save the repaired PDF document using [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method.
 
-**ECMAScript/ES6:**
+```go
 
-1. Import the `asposepdfnodejs` module.
-1. Specify the name of the PDF file that will be repaired.
-1. Initialize the AsposePdf module. Receive the object if successful.
-1. Call the function [AsposePdfRepair](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfrepair/).
-1. Repair the PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultPdfRepair.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+    package main
 
-```js
+    import "github.com/aspose-pdf/aspose-pdf-go-cpp"
+    import "log"
 
-  import AsposePdf from 'asposepdfnodejs';
-  const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'Aspose.pdf';
-  /*Repair a PDF-file and save the "ResultPdfRepair.pdf"*/
-  const json = AsposePdfModule.AsposePdfRepair(pdf_file, "ResultPdfRepair.pdf");
-  console.log("AsposePdfRepair => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
+    func main() {
+      // Open(filename string) opens a PDF-document with filename
+      pdf, err := asposepdf.Open("sample.pdf")
+      if err != nil {
+        log.Fatal(err)
+      }
+      // Repair() repaires PDF-document
+      err = pdf.Repair()
+      if err != nil {
+        log.Fatal(err)
+      }
+      // SaveAs(filename string) saves previously opened PDF-document with new filename
+      err = pdf.SaveAs("sample_Repair.pdf")
+      if err != nil {
+        log.Fatal(err)
+      }
+      // Close() releases allocated resources for PDF-document
+      defer pdf.Close()
+    }
 ```

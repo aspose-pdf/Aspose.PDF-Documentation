@@ -1,59 +1,56 @@
 ---
-title: Parse Text from PDF in Node.js
-linktitle: Parse text from PDF
+title: Extract Text from PDF using Go
+linktitle: Extract text from PDF
 type: docs
 weight: 30
-url: /nodejs-cpp/extract-text-from-pdf/
-description: This article describes various ways to parse text from PDF documents using Aspose.PDF for Node.js via C++. 
-lastmod: "2023-11-16"
+url: /go-cpp/extract-text-from-pdf/
+description: This article describes various ways to extract text from PDF documents using Aspose.PDF for Go. 
+lastmod: "2024-12-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Extract Text with Aspose.PDF for Go 
+Abstract: Aspose.PDF for Go via C++ provides a powerful and efficient way to extract text from PDF documents. The library supports multiple extraction techniques, allowing users to retrieve text from entire documents, specific pages, or predefined areas within a PDF.
+SoftwareApplication: go-cpp         
 ---
 
-## Parse Text From PDF Document
+## Extract Text From PDF Document
 
-Parsing text from the PDF document is a very common and useful task. 
-Extracting text from PDFs serves a variety of purposes, from improving search and availability to enabling analysis and automation of data in various fields such as business, research, and information management.
+Extracting text from the PDF document is a very common and useful task. PDFs often contain critical information that needs to be accessed, analyzed, or processed for various purposes. Extracting text enables easier reuse in databases, reports, or other documents.
 
-In case you want to extract text from PDF document, you can use [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/) function. 
-Please check following code snippet in order to extract text from PDF file using Node.js via C++.
+Extracting text makes PDF content searchable, allowing users to locate specific information quickly without manually reviewing the entire document.
 
-Check the code snippets and follow the steps to extract text from your PDF:
+In case you want to extract text from PDF document, you can use [ExtractText](https://reference.aspose.com/pdf/go-cpp/core/extracttext/) function.
+Please check following code snippet in order to extract text from PDF file using Go via C++.
 
-**CommonJS:**
+1. Open a PDF document with the given filename.
+1. [ExtractText](https://reference.aspose.com/pdf/go-cpp/core/extracttext/) extracts the text content from the PDF document.
+1. Print the extracted text to the console.
 
-1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
-1. Specify the name for the PDF file from which the text will be extracted.
-1. Call `AsposePdf` as Promise and perform the operation for extracting text. Receive the object if successful.
-1. Call the function [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).
-1. Extracted text is stored in the JSON object. Thus, if 'json.errorCode' is 0, the extracted text is displayed using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+```go
 
-```js
+    package main
 
-  const AsposePdf = require('asposepdfnodejs');
-  const pdf_file = 'Aspose.pdf';
-  AsposePdf().then(AsposePdfModule => {
-      /*Extract text from a PDF-file*/
-      const json = AsposePdfModule.AsposePdfExtractText(pdf_file);
-      console.log("AsposePdfExtractText => %O", json.errorCode == 0 ? json.extractText : json.errorText);
-  });
-```
+    import "github.com/aspose-pdf/aspose-pdf-go-cpp"
+    import "log"
+    import "fmt"
 
-**ECMAScript/ES6:**
+    func main() {
+        // Open(filename string) opens a PDF-document with filename
+        pdf, err := asposepdf.Open("sample.pdf")
+        if err != nil {
+            log.Fatal(err)
 
-1. Import the `asposepdfnodejs` module.
-1. Specify the name for the PDF file from which the text will be extracted.
-1. Initialize the AsposePdf module. Receive the object if successful.
-1. Call the function [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/).
-1. Extracted text is stored in the JSON object. Thus, if 'json.errorCode' is 0, the extracted text is displayed using console.log. If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
-
-```js
-
-  import AsposePdf from 'asposepdfnodejs';
-  const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'Aspose.pdf';
-  /*Extract text from a PDF-file*/
-  const json = AsposePdfModule.AsposePdfExtractText(pdf_file);
-  console.log("AsposePdfExtractText => %O", json.errorCode == 0 ? json.extractText : json.errorText);
+        }
+        // ExtractText() returns PDF-document contents as plain text
+        txt, err := pdf.ExtractText()
+        if err != nil {
+            log.Fatal(err)
+        }
+        // Print
+        fmt.Println("Extracted text:\n", txt)
+        // Close() releases allocated resources for PDF-document
+        defer pdf.Close()
+    }
 ```

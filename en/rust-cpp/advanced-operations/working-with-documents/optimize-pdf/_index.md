@@ -1,58 +1,54 @@
 ---
-title: Optimize PDF using Aspose.PDF for Node.js via C++ 
+title: Optimize PDF using Aspose.PDF for Go via C++ 
 linktitle: Optimize PDF File
 type: docs
 weight: 10
-url: /nodejs-cpp/optimize-pdf/
-description: Optimize and compress PDF files for fast web-view using the Node.js environment.
-lastmod: "2023-11-16"
+url: /go-cpp/optimize-pdf/
+description: Optimize and compress PDF files using Go tool.
+lastmod: "2024-12-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Optimize and compress PDF files using Aspose.PDF for Go
+Abstract: Aspose.PDF for Go via C++ offers powerful optimization features to reduce the size and improve the performance of PDF documents. The library provides various optimization options, including compressing images, removing unused objects, reducing font sizes, and optimizing content streams. These features help enhance document storage efficiency and ensure faster processing and loading times. The documentation provides step-by-step instructions and code samples to assist developers in implementing PDF optimization effectively within their applications.
+SoftwareApplication: go-cpp      
 ---
 
 ## Optimize PDF Document
 
-Toolkit by Aspose.PDF for Node.js via C++ allows you to optimize PDF content for the Node.js environment. 
+Toolkit with Aspose.PDF for Go via C++ allows you to optimize a PDF document.
 
-Optimization, or linearization refers to the process of making a PDF file suitable for online browsing using a web browser.
+This snippet is useful for applications where reducing the size or enhancing the efficiency of PDF files is critical, such as for web uploads, archiving, or sharing over limited bandwidth.
 
-In case you want to optimize PDF, you can use [AsposePdfOptimize](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimize/) function. 
-Please check the following code snippet in order to optimize PDF files in Node.js environment.
+1. The [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method loads the specified PDF file (sample.pdf) into memory.
+1. The [Optimize method](https://reference.aspose.com/pdf/go-cpp/organize/optimize/) reduces the file size by performing optimizations like removing unused objects, compressing images, flattening annotations, unembedding fonts, and enabling content reuse. These steps help reduce storage requirements and improve processing speed for the PDF document.
+1. The [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method saves the optimized PDF to a new file.
 
-**CommonJS:**
+```go
 
-1. Call `require` and import `asposepdfnodejs` module as `AsposePdf` variable.
-1. Specify the name of the PDF file which will be optimized.
-1. Call `AsposePdf` as Promise and perform the operation for optimizing file. Receive the object if successful.
-1. Call the function [AsposePdfOptimize](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimize/).
-1. Optimize a PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultOptimize.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
+    package main
 
-```js
+    import "github.com/aspose-pdf/aspose-pdf-go-cpp"
+    import "log"
 
-  const AsposePdf = require('asposepdfnodejs');
-  const pdf_file = 'Aspose.pdf';
-  AsposePdf().then(AsposePdfModule => {
-      /*Optimize a PDF-file and save the "ResultOptimize.pdf"*/
-      const json = AsposePdfModule.AsposePdfOptimize(pdf_file, "ResultOptimize.pdf");
-      console.log("AsposePdfOptimize => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
-  });
-```
-
-**ECMAScript/ES6:**
-
-1. Import the `asposepdfnodejs` module.
-1. Specify the name of the PDF file which will be optimized.
-1. Initialize the AsposePdf module. Receive the object if successful.
-1. Call the function [AsposePdfOptimize](https://reference.aspose.com/pdf/nodejs-cpp/organize/asposepdfoptimize/).
-1. Optimize a PDF file. Thus, if 'json.errorCode' is 0, the result of the operation is saved in "ResultOptimize.pdf". If the json.errorCode parameter is not 0 and, accordingly, an error appears in your file, the error information will be contained in 'json.errorText'.
-
-```js
-
-  import AsposePdf from 'asposepdfnodejs';
-  const AsposePdfModule = await AsposePdf();
-  const pdf_file = 'Aspose.pdf';
-  /*Optimize a PDF-file and save the "ResultOptimize.pdf"*/
-  const json = AsposePdfModule.AsposePdfOptimize(pdf_file, "ResultOptimize.pdf");
-  console.log("AsposePdfOptimize => %O", json.errorCode == 0 ? json.fileNameResult : json.errorText);
+    func main() {
+      // Open(filename string) opens a PDF-document with filename
+      pdf, err := asposepdf.Open("sample.pdf")
+      if err != nil {
+        log.Fatal(err)
+      }
+      // Optimize() optimizes PDF-document content
+      err = pdf.Optimize()
+      if err != nil {
+        log.Fatal(err)
+      }
+      // SaveAs(filename string) saves previously opened PDF-document with new filename
+      err = pdf.SaveAs("sample_Optimize.pdf")
+      if err != nil {
+        log.Fatal(err)
+      }
+      // Close() releases allocated resources for PDF-document
+      defer pdf.Close()
+    }
 ```
