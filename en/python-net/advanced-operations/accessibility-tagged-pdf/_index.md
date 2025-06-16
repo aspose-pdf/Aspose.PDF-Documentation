@@ -20,4 +20,3 @@ This section covers following topic:
 - [Extract Tagged Content from Tagged PDFs](/pdf/python-net/extract-tagged-content-from-tagged-pdfs/)
 - [Setting Structure Elements Properties](/pdf/python-net/setting-structure-elements-properties/)
 - [Working with Table in Tagged PDFs](/pdf/python-net/working-with-table-in-tagged-pdfs/)
-- [PDF-UA Compliance Test - Errors List](/pdf/python-net/pdf-ua-compliance-test-errors-list/)
