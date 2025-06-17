@@ -86,7 +86,7 @@ Aspose.PDF for Rust presents you online free application ["PDF to TIFF"](https:/
 [![Aspose.PDF conversion PDF to TIFF with Free App](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
 
-## Convert PDF to PNG
+### Convert PDF to PNG
 
 The provided Rust code snippet demonstrates how to convert the first page of a PDF document into a PNG image using the Aspose.PDF library:
 
