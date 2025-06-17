@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /rust-cpp/convert-pdf-to-powerpoint/
 lastmod: "2025-06-01"
-description: Aspose.PDF allows you to convert PDF to PPTX format using Rust via C++.
+description: Aspose.PDF allows you to convert PDF to PPTX format using Rust.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
