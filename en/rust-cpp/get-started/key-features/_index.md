@@ -1,31 +1,31 @@
 ---
-title: Key Features of Aspose.PDF for Go
+title: Key Features of Aspose.PDF for Rust
 linktitle: Key Features
 type: docs
 weight: 80
-url: /go-cpp/key-features/
-description: Aspose.PDF for Go demonstrates its general features. Its shows the supported PDF versions, and all the manipulations we can do with PDF.
-lastmod: "2024-12-05"
+url: /rust-cpp/key-features/
+description: Aspose.PDF for Rust demonstrates its general features. Its shows the supported PDF versions, and all the manipulations we can do with PDF.
+lastmod: "2025-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Main Features page of Aspose.PDF for Go via C++
-Abstract: The Key Features page of Aspose.PDF for Go via C++ outlines the capabilities of the library for working with PDF documents. It provides information about supported PDF versions and details the various operations that can be performed, such as text and image manipulation, document merging and splitting, annotation handling, and digital signature management.  
-SoftwareApplication: go-cpp    
+AlternativeHeadline: Main Features page of Aspose.PDF for Rust via C++
+Abstract: The Key Features page of Aspose.PDF for Rust via C++ outlines the capabilities of the library for working with PDF documents. It provides information about supported PDF versions and details the various operations that can be performed, such as text and image manipulation, document merging and splitting, annotation handling, and digital signature management.  
+SoftwareApplication: rust-cpp    
 ---
 
 ## Cross-platform software
 
-Supports various platforms and Go versions. See [System Requirements](/pdf/go-cpp/system-requirements/) for details.
+Supports various platforms and Rust versions. See [System Requirements](/pdf/rust-cpp/system-requirements/) for details.
 
 ## General Features
 
-Supports loading from and saving to a wide list of [file formats](/pdf/go-cpp/supported-file-formats/).
+Supports loading from and saving to a wide list of [file formats](/pdf/rust-cpp/supported-file-formats/).
 
 ## Supported PDF standards
 
-Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
+Aspose.PDF for Rust supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 
 ## Features by the function type
 
@@ -36,55 +36,52 @@ Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
         Core operation
       </th>
       <td>
-        New PDF.
+        new PDF.
       </td>
     </tr>
     <tr>
       <td>
-        Open PDF.
+        open PDF.
       </td>
     </tr>
     <tr>
       <td>
-        Save PDF.
+        save PDF.
       </td>
     </tr>
     <tr>
       <td>
-        SaveAs.
+        save_as.
       </td>
     </tr>
     <tr>
       <td>
-        Close
+        page_insert.
       </td>
     </tr>
     <tr>
       <td>
-        SetLicense
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        Page core operation
-      </th>
-     <td>
-        Add page.
+        page_add.
       </td>
     </tr>
     <tr>
       <td>
-        Insert page.
+        page_count.
       </td>
     </tr>
     <tr>
       <td>
-        Delete page.
+        page_delete.
       </td>
     </tr>
     <tr>
       <td>
-        Count page.
+        extract_text.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        set_license.
       </td>
     </tr>
     <tr>
@@ -92,63 +89,52 @@ Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
         Organize
       </th>
       <td>
-        Optimize.
+        optimize.
       </td>
     </tr>
     <tr>
       <td>
-        OptimizeResource.
+        optimize_resource.
       </td>
     </tr>
     <tr>
       <td>
-        Grayscale.
+        grayscale.
       </td>
     </tr>
     <tr>
       <td>
-        Rotate.
+        rotate.
       </td>
     </tr>
     <tr>
       <td>
-        SetBackground.
+        set_background.
       </td>
     </tr>
     <tr>
       <td>
-        Repair.
-      </td>
-    </tr>
-    <tr>
-      <th scope="col" rowspan="4">
-        Page organize
-      </th>
-      <td>
-        Rotate.
+        repair.
       </td>
     </tr>
     <tr>
       <td>
-        SetSize.
+        page_add_text.
       </td>
     </tr>
     <tr>
       <td>
-        Grayscale.
+        page_set_size.
       </td>
     </tr>
     <tr>
       <td>
-        AddText.
+        page_rotate.
       </td>
     </tr>
     <tr>
-      <th scope="col" rowspan="1">
-        Others
-      </th>
       <td>
-        Get contents as plain text.
+        page_grayscale.
       </td>
     </tr>
     <tr>
@@ -156,7 +142,7 @@ Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
         Converting and Saving
       </th>
       <td>
-        DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
+        PDF, DOC, DOCX, XLSX, PPTX, JPEG, PNG, BMP, TIFF, EPUB, DICOM, SVG, XPS, TEX, TXT.
       </td>
     </tr>
   </tbody>

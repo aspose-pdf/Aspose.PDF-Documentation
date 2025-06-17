@@ -19,76 +19,29 @@ SoftwareApplication: rust-cpp
 
 This package includes a large file which is stored as a bzip2 archive.
 
-1. Add the asposepdf package to Your Project:
+1. Download the archive Aspose.PDF for Rust via C++ from the official Aspose website. The latest (most recent) version is listed at the top and is downloaded by default when you click the Download button. It is recommended to use this latest version. Only download a previous version if needed. Example: Aspose.PDF-for-Rust-via-CPP-25.6.zip
 
+The archive filename format is: Aspose.PDF-for-Rust-via-CPP-YY.M.zip, where: - YY = last two digits of the year (e.g., 25 for 2025) - M = month number from 1 to 12
 
-releases //// 
+1. Extract the archive to your chosen directory {path} using a suitable tool:
 
+- On Linux/macOS: bash unzip Aspose.PDF-for-Rust-via-CPP-YY.M.zip -d {path}
+- On Windows, use built-in Explorer extraction or any unzip tool (7-Zip, WinRAR).
 
-2. Generate the large file: позже
+1. Add the library as a dependency in your Rust project. You can do this in two ways:
 
-For **macOS and linux**
+- Using the command line: bash cargo add asposepdf --path {path}/asposepdf
 
-  1. Open Terminal
+- Manually editing Cargo.toml: Open your project's Cargo.toml and add the following under [dependencies]: toml [dependencies] asposepdf = { path = "{path}/asposepdf" }
 
-  1. List the folders of the github.com/aspose-pdf within the Go module cache:
+1. Build your project (cargo build). On the first build, the dynamic library for your platform will be unpacked automatically from the .bz2 archive in the lib folder. This may cause a short delay.
 
-        ```sh
-        ls $(go env GOMODCACHE)/github.com/aspose-pdf/
-        ```
+## Notes
 
-  1. Change curent folder to the specific version folder of the package obtained in the previous step:
-
-      ```sh
-      cd $(go env GOMODCACHE)/github.com/aspose-pdf/aspose-pdf-go-cpp@vx.x.x
-      ```
-
-      Replace `@vx.x.x` with the actual package version.
-
-  1. Run go generate with superuser privileges:
-
-      ```sh
-      sudo go generate
-      ```
-
-For **Windows**
-
-  1. Open Command Prompt
-  
-  1. List the folders of the github.com/aspose-pdf within the Go module cache:
-
-      ```cmd
-      for /f "delims=" %G in ('go env GOMODCACHE') do for /d %a in ("%G\github.com\aspose-pdf\*") do echo %~fa
-      ```
-
-  1. Change curent folder to the specific version folder of the package obtained in the previous step:
-
-      ```cmd
-      cd <specific version folder of the package>
-      ```
-
-  1. Run go generate:
-
-      ```cmd
-      go generate
-      ```
-
-  1. Add specific version folder of the package to the %PATH% environment variable:
-
-      ```cmd
-      setx PATH "%PATH%;<specific version folder of the package>\lib\"
-      ```
-
-      Replace `<specific version folder of the package>` with the actual path obtained from step 2.
-
-## Testing
-
-The test run from the root package folder:
-
-```sh
-go test -v
-```
+- The lib folder contains all platform-specific .bz2 archives with corresponding .sha256 checksum files.
+- If the checksum file is missing or invalid, the build will fail.
+- Update the library by replacing the extracted files with a newer archive version.
 
 ## Quick Start
 
-All code snippets are contained in the [snippet](https://github.com/aspose-pdf/aspose-pdf-rust-cpp).
+All code snippets are contained in the [snippet](https://onedrive.live.com/examples).

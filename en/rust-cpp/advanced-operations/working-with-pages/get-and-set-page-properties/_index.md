@@ -1,89 +1,70 @@
 ---
 title: Get and Set Page Properties
 type: docs
-url: /go-cpp/get-and-set-page-properties/
-description: Learn how to get and set page properties for PDF documents using Aspose.PDF for Go, allowing for customized document formatting.
-lastmod: "2024-12-13"
+url: /rust-cpp/get-and-set-page-properties/
+description: Learn how to get and set page properties for PDF documents using Aspose.PDF for Rust, allowing for customized document formatting.
+lastmod: "2025-06-13"
 TechArticle: true
-AlternativeHeadline: Get and Set Page Properties with Aspose.PDF for Go
-Abstract: Aspose.PDF for Go via C++ provides comprehensive features to get and set page properties in PDF documents, allowing developers to access and modify various page attributes such as size, rotation, margins, and metadata. These capabilities enable precise control over the document layout and appearance to meet specific application requirements. The library ensures seamless customization and optimization of PDF pages. The documentation offers detailed guidance and code samples to help developers efficiently retrieve and update page properties within their applications.
-SoftwareApplication: go-cpp 
+AlternativeHeadline: Get and Set Page Properties with Aspose.PDF for Rust
+Abstract: Aspose.PDF for Rust via C++ provides comprehensive features to get and set page properties in PDF documents, allowing developers to access and modify various page attributes such as size, rotation, margins, and metadata. These capabilities enable precise control over the document layout and appearance to meet specific application requirements. The library ensures seamless customization and optimization of PDF pages. The documentation offers detailed guidance and code samples to help developers efficiently retrieve and update page properties within their applications.
+SoftwareApplication: rust-cpp 
 ---
 
 
-Aspose.PDF for Go lets you read and set properties of pages in a PDF file. This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties.
+Aspose.PDF for Rust lets you read and set properties of pages in a PDF file. This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties.
 
 ## Get Number of Pages in a PDF File
 
 When working with documents, you often want to know how many pages they contain. With Aspose.PDF this takes no more than two lines of code.
 
-**Aspose.PDF for Go via C++** allows you to count Pages with [PageCount](https://reference.aspose.com/pdf/go-cpp/core/pagecount/) function.
+**Aspose.PDF for Rust via C++** allows you to count Pages with [page_count](https://reference.aspose.com/pdf/rust-cpp/core/page_count/) function.
 
 The next code snippet is designed to open a PDF document, retrieve its page count, and then print the result.
 
-The [PageCount](https://reference.aspose.com/pdf/go-cpp/core/pagecount/) method is called to get the total number of pages in the PDF document. This is useful for tasks that need to know the length of the document, such as when extracting specific pages or performing operations across all pages. This method is a straightforward way to query the document’s structure.
+The [page_count](https://reference.aspose.com/pdf/rust-cpp/core/page_count/) method is called to get the total number of pages in the PDF document. This is useful for tasks that need to know the length of the document, such as when extracting specific pages or performing operations across all pages. This method is a straightforward way to query the document’s structure.
 
 To get the number of pages in a PDF file:
 
-```go
+```rs
 
-    package main
+  use asposepdf::Document;
 
-    import "github.com/aspose-pdf/aspose-pdf-go-cpp"
-    import "log"
-    import "fmt"
+  fn main() -> Result<(), Box<dyn std::error::Error>> {
+      // Open a PDF-document from file
+      let pdf = Document::open("sample.pdf")?;
 
-    func main() {
-      // Open(filename string) opens a PDF-document with filename
-      pdf, err := asposepdf.Open("sample.pdf")
-      if err != nil {
-        log.Fatal(err)
+      // Return page count in PDF-document
+      let count = pdf.page_count()?;
 
-      }
-      // PageCount() returns page count in PDF-document
-      count, err := pdf.PageCount()
-      if err != nil {
-        log.Fatal(err)
-      }
-      // Print
-      fmt.Println("Count:", count)
-      // Close() releases allocated resources for PDF-document
-      defer pdf.Close()
-    }
+      // Print the page count
+      println!("Count: {}", count);
+
+      Ok(())
+  }
 ```
 
 ## Set Page Size
 
 In this example the method pdf.PageSetSize() changes the size of the first page of the PDF document. The PageSizeA1 constant ensures that the first page is set to the A1 paper size. This is useful when converting documents to a standardized format or ensuring that specific content fits correctly on pages.
 
-1. Opening the PDF Document with [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method.
-1. Setting the Page Size with [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/) function.
-1. Saving the Document using [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method.
+1. Opening the PDF Document with [open](https://reference.aspose.com/pdf/rust-cpp/core/open/) method.
+1. Setting the Page Size with [page_set_size](https://reference.aspose.com/pdf/rust-cpp/organize/page_set_size/) function.
+1. Saving the Document using [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) method.
 
-```go
+```rs
 
-    package main
+    use asposepdf::{Document, PageSize};
 
-    import "github.com/aspose-pdf/aspose-pdf-go-cpp"
-    import "log"
+    fn main() -> Result<(), Box<dyn std::error::Error>> {
+        // Open a PDF-document with filename
+        let pdf = Document::open("sample.pdf")?;
 
-    func main() {
-        // Open(filename string) opens a PDF-document with filename
-        pdf, err := asposepdf.Open("sample.pdf")
-        if err != nil {
-            log.Fatal(err)
-        }
-        // PageSetSize(num int32, pageSize int32) sets size of page
-        err = pdf.PageSetSize(1, asposepdf.PageSizeA1)
-        if err != nil {
-            log.Fatal(err)
-        }
-        // SaveAs(filename string) saves previously opened PDF-document with new filename
-        err = pdf.SaveAs("sample_page1_SetSize_A1.pdf")
-        if err != nil {
-            log.Fatal(err)
-        }
-        // Close() releases allocated resources for PDF-document
-        defer pdf.Close()
+        // Set the size of a page in the PDF-document
+        pdf.page_set_size(1, PageSize::A1)?;
+
+        // Save the previously opened PDF-document with new filename
+        pdf.save_as("sample_page1_set_size_A1.pdf")?;
+
+        Ok(())
     }
 ```

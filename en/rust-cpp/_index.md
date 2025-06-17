@@ -17,7 +17,7 @@ sitemap:
 
 ## Welcome to Aspose.PDF for Rust via C++
 
-The **Aspose.PDF for Rust via C++** is a powerful toolkit that allows developers to manipulate PDF files directly and helps do various tasks for PDF. Contains unique features for converting PDF to other formats.
+The **Aspose.PDF for Rust via C++** is a powerful toolkit that enables developers to manipulate PDF files directly and perform various tasks on them. Contains unique features for converting PDF to other formats.
 
 ## Chapters
 
