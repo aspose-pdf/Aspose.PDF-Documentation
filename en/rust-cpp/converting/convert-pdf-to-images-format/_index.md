@@ -152,7 +152,7 @@ Aspose.PDF for Rust presents you online free application ["PDF to SVG"](https://
 [![Aspose.PDF Convertion PDF to SVG with Free App](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 {{% /alert %}}
 
-## Convert PDF to DICOM
+### Convert PDF to DICOM
 
 The provided Rust code snippet demonstrates how to convert the first page of a PDF document into a DICOM image using the Aspose.PDF library:
 
