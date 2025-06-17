@@ -121,7 +121,7 @@ Aspose.PDF for Rust presents you online free application ["PDF to PNG"](https://
 
 **Scalable Vector Graphics (SVG)** is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
 
-## Convert PDF to SVG
+### Convert PDF to SVG
 
 The provided Rust code snippet demonstrates how to convert the first page of a PDF document into a SVG image using the Aspose.PDF library:
 
