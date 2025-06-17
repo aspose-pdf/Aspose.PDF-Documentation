@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /rust-cpp/hello-world-example/
 description: This sample demonstrates how to create a simple PDF document with text Hello World using Aspose.PDF for Rust.
-lastmod: "2024-12-04"
+lastmod: "2025-05-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
