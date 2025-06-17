@@ -24,7 +24,7 @@ The most common task is when you need to save an entire PDF document or some spe
 
 **Aspose.PDF for Rust via C++** supports various PDF to image formats conversion. Please checks the section [Aspose.PDF Supported File Formats](https://docs.aspose.com/pdf/rust-cpp/supported-file-formats/).
 
-## Convert PDF to JPEG
+### Convert PDF to JPEG
 
 The provided Rust code snippet demonstrates how to convert the first page of a PDF document into a JPEG image using the Aspose.PDF library:
 
