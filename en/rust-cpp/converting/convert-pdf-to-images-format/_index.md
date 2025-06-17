@@ -15,7 +15,7 @@ Abstract: Aspose.PDF for Rust via C++ enables seamless conversion of PDF documen
 SoftwareApplication: rust-cpp    
 ---
 
-## Rust Convert PDF to Image
+## Convert PDF to Image
 
 In this article, we will show you the options for converting PDF to image formats.
 
