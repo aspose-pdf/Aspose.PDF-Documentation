@@ -175,7 +175,7 @@ The provided Rust code snippet demonstrates how to convert the first page of a P
   }
 ```
 
-## Convert PDF to BMP
+### Convert PDF to BMP
 
 The provided Rust code snippet demonstrates how to convert the first page of a PDF document into a BMP image using the Aspose.PDF library:
 
