@@ -1,6 +1,6 @@
 ---
 title: Documentation
-linktitle: Aspose.PDF for Rust
+linktitle: Aspose.PDF for Rust via C++
 second_title: Aspose.PDF for Rust via C++
 type: docs
 weight: 70
