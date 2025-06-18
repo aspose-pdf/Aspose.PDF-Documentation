@@ -53,7 +53,7 @@ The provided Go code snippet demonstrates how to convert a PDF document into a D
 
 Aspose.PDF for Go presents you online free application ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), where you may try to investigate the functionality and quality it works.
 
-[![Convert PDF to DOC](/cpp/converting/convert-pdf-to-word/pdf_to_doc.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) 
+[![Convert PDF to DOC](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) 
 {{% /alert %}}
 
 ## Convert PDF to DOCX
@@ -94,6 +94,6 @@ The provided Go code snippet demonstrates how to convert a PDF document into a D
 
 Aspose.PDF for Go presents you online free application ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to Word Free App](/cpp/converting/convert-pdf-to-word/pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Convertion PDF to Word Free App](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}

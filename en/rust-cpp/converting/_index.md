@@ -18,7 +18,7 @@ SoftwareApplication: rust-cpp
 The PDF was developed to provide a standard for presenting documents and other reference materials in a format that is independent of application software, hardware, and operating system. The content of PDF files is not limited to text, it can be hyperlinks, images, clickable buttons and forms, electronic signatures, watermarks, and more. Therefore, it is often necessary to convert PDF files to some other format in order to edit or change their content.
 **Our Aspose.PDF for Rust via C++** tool allows you to successfully, quickly and easily convert your PDF documents to the most popular formats. For a complete list of supported formats, see the section [Aspose.PDF Supported File Formats](https://docs.aspose.com/pdf/rust-cpp/supported-file-formats/).
 
-Aspose.PDF for Rust via C++* allows converting PDF documents to various formats. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn the sections of converting documents with code snippets.
+**Aspose.PDF for Rust via C++** allows converting PDF documents to various formats. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn the sections of converting documents with code snippets.
 
 ## How to use Rust via C++ for conversion
 
@@ -43,9 +43,6 @@ There are many image formats that need to be converted to PDF for different purp
 This section includes such formats as: EPUB, XPS, TeX, Text, and Grayscale PDF.
 
 - [Convert PDF file to other formats](/pdf/rust-cpp/convert-pdf-to-other-files/) - this topic describes way for conversion PDF document to various formats
-
-PDF/A is a version of PDF designed for the long-term archiving of electronic documents.
-If honestly, externally, it is very difficult to determine if it is PDF or PDF/A. To check this file, validators are used. Check the following articles for a quality converting PDF to PDF/A and vice versa.
 
 ## Try to convert PDF files online
 

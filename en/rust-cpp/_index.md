@@ -21,7 +21,6 @@ The **Aspose.PDF for Rust via C++** is a powerful toolkit that enables developer
 
 ## Chapters
 
-- [What's new](/pdf/rust-cpp/whatsnew/)
 - [Overview](/pdf/rust-cpp/overview/)
 - [Get Started](/pdf/rust-cpp/get-started/)
 - [Basic operations](/pdf/rust-cpp/basic-operations/)

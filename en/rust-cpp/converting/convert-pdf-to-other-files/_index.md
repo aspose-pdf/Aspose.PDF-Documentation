@@ -24,7 +24,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 1. Open a PDF document.
 1. Convert a PDF file to EPUB using [save_epub](https://reference.aspose.com/pdf/rust-cpp/convert/save_epub/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -58,7 +57,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 1. Open a PDF document.
 1. Convert a PDF file to TeX using [save_tex](https://reference.aspose.com/pdf/rust-cpp/convert/save_tex/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -89,7 +87,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 1. Open a PDF document.
 1. Convert a PDF file to TXT using [save_txt](https://reference.aspose.com/pdf/rust-cpp/convert/save_txt/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -124,7 +121,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 1. Open a PDF document.
 1. Convert a PDF file to XPS using [save_xps](https://reference.aspose.com/pdf/rust-cpp/convert/save_xps/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -155,7 +151,6 @@ The provided Rust code snippet demonstrates how to convert the first page of a P
 
 1. Open a PDF document.
 1. Convert a PDF Page to Grayscale PDF using [page_grayscale](https://reference.aspose.com/pdf/rust-cpp/organize/page_grayscale/) function.
-1. Close the PDF document and release any allocated resources.
 
 This example converts a specific page of your PDF to Grayscale:
 

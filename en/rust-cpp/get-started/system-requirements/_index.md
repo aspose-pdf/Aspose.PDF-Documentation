@@ -22,11 +22,9 @@ Contains unique features for converting PDF to other formats.
 
 Implemented support for Linux x64, macOS x86_64, macOS arm64 and Windows x64 platforms.
 
-The platform-specific version of the dynamic library from the 'lib'-folder in the package's root directory is required for distributing the resulting application:
+The platform-specific version of the dynamic library from the 'lib'-folder in the package's root directory is required for distributing the resulting application: 
 
-- **libAsposePDFforRust_linux_amd64.so** for Linux x64 platform.
-- **libAsposePDFforRust_darwin_arm64.dylib** for macOS arm64 platform.
-- **libAsposePDFforRust_darwin_amd64.dylib** for macOS x86_64 platform.
-- **AsposePDFforRust_windows_amd64.dll** for Windows x64 platform.
-
-Windows x64 platform requires [MinGW-W64](https://www.mingw-w64.org/) installed.
+- libAsposePDFforRust_linux_amd64.so for Linux x64 platform 
+- libAsposePDFforRust_darwin_arm64.dylib for macOS arm64 platform 
+- libAsposePDFforRust_darwin_amd64.dylib for macOS x86_64 platform 
+- AsposePDFforRust_windows_amd64.dll for Windows x64 platform.

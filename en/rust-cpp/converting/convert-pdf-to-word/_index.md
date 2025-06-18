@@ -23,7 +23,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 1. Open a PDF document.
 1. Convert a PDF file to DOC using [save_doc](https://reference.aspose.com/pdf/rust-cpp/convert/save_doc/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -45,7 +44,7 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 Aspose.PDF for Rust presents you online free application ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), where you may try to investigate the functionality and quality it works.
 
-[![Convert PDF to DOC](/cpp/converting/convert-pdf-to-word/pdf_to_doc.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) 
+[![Convert PDF to DOC](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) 
 {{% /alert %}}
 
 ## Convert PDF to DOCX
@@ -56,7 +55,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 1. Open a PDF document.
 1. Convert a PDF file to DOCX using [save_docx](https://reference.aspose.com/pdf/rust-cpp/convert/save_docx/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rust
 
@@ -78,6 +76,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 Aspose.PDF for Rust presents you online free application ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to Word Free App](/cpp/converting/convert-pdf-to-word/pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Convertion PDF to Word Free App](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
