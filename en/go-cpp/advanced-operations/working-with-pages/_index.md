@@ -3,7 +3,7 @@ title: Working with PDF Pages in Go
 linktitle: Working with Pages
 type: docs
 weight: 20
-url: go-cpp/working-with-pages/
+url: /go-cpp/working-with-pages/
 description: How to add pages, rotate pages, add page number, you can know in this section. Aspose.PDF for Go via C++ explain to you all details on this topic.
 lastmod: "2024-12-13"
 sitemap:
