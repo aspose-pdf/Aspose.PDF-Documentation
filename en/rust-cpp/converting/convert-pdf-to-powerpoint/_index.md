@@ -21,7 +21,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 1. Open a PDF document.
 1. Convert a PDF file to PPTX using [save_pptx](https://reference.aspose.com/pdf/rust-cpp/convert/save_pptx/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rust
 

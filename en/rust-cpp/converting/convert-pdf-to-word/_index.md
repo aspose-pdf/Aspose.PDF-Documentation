@@ -23,7 +23,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 1. Open a PDF document.
 1. Convert a PDF file to DOC using [save_doc](https://reference.aspose.com/pdf/rust-cpp/convert/save_doc/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -56,7 +55,6 @@ The provided Rust code snippet demonstrates how to convert a PDF document into a
 
 1. Open a PDF document.
 1. Convert a PDF file to DOCX using [save_docx](https://reference.aspose.com/pdf/rust-cpp/convert/save_docx/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rust
 

@@ -28,13 +28,18 @@ The archive filename format is: Aspose.PDF-for-Rust-via-CPP-YY.M.zip, where: - Y
 - On Linux/macOS: bash unzip Aspose.PDF-for-Rust-via-CPP-YY.M.zip -d {path}
 - On Windows, use built-in Explorer extraction or any unzip tool (7-Zip, WinRAR).
 
-1. Add the library as a dependency in your Rust project. You can do this in two ways:
+2. Add the library as a dependency in your Rust project. You can do this in two ways:
 
-- Using the command line: bash cargo add asposepdf --path {path}/asposepdf
+- Using the command line: 
+
+```bash 
+
+    cargo add asposepdf --path {path}/asposepdf
+```
 
 - Manually editing Cargo.toml: Open your project's Cargo.toml and add the following under [dependencies]: toml [dependencies] asposepdf = { path = "{path}/asposepdf" }
 
-1. Build your project (cargo build). On the first build, the dynamic library for your platform will be unpacked automatically from the .bz2 archive in the lib folder. This may cause a short delay.
+3. Build your project (cargo build). On the first build, the dynamic library for your platform will be unpacked automatically from the .bz2 archive in the lib folder. This may cause a short delay.
 
 ## Notes
 

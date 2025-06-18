@@ -26,7 +26,6 @@ Aspose.PDF for Rust uses [save_xlsx](https://reference.aspose.com/pdf/rust-cpp/c
 1. Import Required Packages.
 1. Open a PDF File.
 1. Convert the PDF to XLSX using [save_xlsx](https://reference.aspose.com/pdf/rust-cpp/convert/save_xlsx/).
-1. Close the PDF Document.
 
 ```rust
 

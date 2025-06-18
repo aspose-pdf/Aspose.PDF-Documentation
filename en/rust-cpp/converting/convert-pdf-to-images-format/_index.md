@@ -30,7 +30,6 @@ The provided Rust code snippet demonstrates how to convert the first page of a P
 
 1. Open a PDF document.
 1. Convert a Page to JPEG using [page_to_jpg](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_jpg/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -61,7 +60,6 @@ The provided Rust code snippet demonstrates how to convert the first page of a P
 
 1. Open a PDF document.
 1. Convert a Page to TIFF using [page_to_tiff](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_tiff/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -92,7 +90,6 @@ The provided Rust code snippet demonstrates how to convert the first page of a P
 
 1. Open a PDF document.
 1. Convert a Page to PNG using [page_to_png](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_png/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -127,7 +124,6 @@ The provided Rust code snippet demonstrates how to convert the first page of a P
 
 1. Open a PDF document.
 1. Convert a Page to SVG using [page_to_svg](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_svg/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -158,7 +154,6 @@ The provided Rust code snippet demonstrates how to convert the first page of a P
 
 1. Open a PDF document.
 1. Convert a Page to DICOM using [page_to_dicom](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_dicom/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 
@@ -181,7 +176,6 @@ The provided Rust code snippet demonstrates how to convert the first page of a P
 
 1. Open a PDF document.
 1. Convert a Page to BMP using [page_to_bmp](https://reference.aspose.com/pdf/rust-cpp/convert/page_to_bmp/) function.
-1. Close the PDF document and release any allocated resources.
 
 ```rs
 

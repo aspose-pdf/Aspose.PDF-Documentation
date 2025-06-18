@@ -32,7 +32,7 @@ Aspose.PDF for Rust supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 <table class="table table-bordered">
   <tbody>
     <tr>
-      <th scope="col" rowspan="6">
+      <th scope="col" rowspan="10">
         Core operation
       </th>
       <td>
@@ -85,7 +85,7 @@ Aspose.PDF for Rust supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
       </td>
     </tr>
     <tr>
-      <th scope="col" rowspan="6">
+      <th scope="col" rowspan="10">
         Organize
       </th>
       <td>

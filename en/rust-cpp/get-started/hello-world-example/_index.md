@@ -24,8 +24,7 @@ Below code snippet follows these steps:
 1. Add a new page to the PDF document using [page_add](https://reference.aspose.com/pdf/rust-cpp/core/page_add/) function.
 1. Set the page size using [page_set_size](https://reference.aspose.com/pdf/rust-cpp/organize/page_set_size/).
 1. Add "Hello World!" text to the first page using [page_add_text](https://reference.aspose.com/pdf/rust-cpp/organize/page_add_text/).
-1. Save the repaired PDF document using [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) method.
-1. Close the PDF document and release any allocated resources.
+1. Save the PDF document using [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/) method.
 
 Following code snippet is a Hello World program to exhibit working of Aspose.PDF for Rust API.
 
