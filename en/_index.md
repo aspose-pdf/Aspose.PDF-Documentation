@@ -215,6 +215,30 @@ The following links offer some useful resources you may need to accomplish your 
 
 {{% alert color="primary" %}}
 
+![Aspose.PDF for Rust via C++ Product Logo](aspose_pdf-for-rust-cpp.png)
+
+<h2>Welcome to the Aspose.PDF for Rust via C++ Documentation Section</h2>
+
+Aspose.PDF for Rust via C++ is a powerful toolkit that allows developers to manipulate PDF files directly and helps do various tasks for PDF. Contains unique features for converting PDF to other formats.
+
+{{% /alert %}}
+
+<h3>Aspose.PDF for Rust via C++ Resources</h3>
+
+The following links offer some useful resources you may need to accomplish your tasks.
+
+- [Aspose.PDF for Rust via C++ Online Documentation](/pdf/rust-cpp/)
+- [Aspose.PDF for Rust via C++ Features](/pdf/rust-cpp/key-features/)
+- [Aspose.PDF for Rust via C++ Release Notes](https://releases.aspose.com/pdf/rustcpp/)
+- [Aspose.PDF for Rust via C++ Product Page](https://products.aspose.com/pdf/rust-cpp/)
+- [Download Aspose.PDF for Rust via C++](https://releases.aspose.com/pdf/rustcpp/)
+- [Aspose.PDF for Rust via C++ API Reference Guide](https://reference.aspose.com/pdf/rust-cpp/)
+- [Download Examples at GitHub Repository](https://github.com/aspose-pdf/aspose-pdf-rust-cpp)
+- [Aspose.PDF for Rust via C++ Free Support Forum](https://forum.aspose.com/c/pdf/10)
+- [Aspose.PDF for Rust via C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+{{% alert color="primary" %}}
+
 ![Aspose.PDF for JavaScript via C++ Product Logo](aspose_pdf-for-javascript-cpp.png)
 
 <h2>Welcome to the Aspose.PDF for JavaScript via C++ Documentation Section</h2>
