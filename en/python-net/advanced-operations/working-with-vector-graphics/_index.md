@@ -89,7 +89,6 @@ Once you have extracted the graphics, you can move them to a different position 
             graphics_absorber.resume_update()
         # Save PDF document
         document.save(path_outfile)
-
 ```
 
 ## Removing Graphics
