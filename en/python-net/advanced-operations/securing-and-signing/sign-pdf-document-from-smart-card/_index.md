@@ -7,8 +7,11 @@ url: /python-net/sign-pdf-document-from-smart-card/
 description: Aspose.PDF for Python via .NET allows you to sign PDF documents from a smart card using signature field.
 lastmod: "2025-06-22"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Sign PDF documents from a Smart Card with Python
+Abstract: This guide explains how to digitally sign PDF documents using a smart card with Aspose.PDF for Python via .NET. It demonstrates how to access certificates stored on hardware devices (such as USB tokens or smart cards) through the Windows Certificate Store and apply them for signing PDF files. The documentation includes code examples that show how to locate the appropriate certificate, configure signature properties, and embed the digital signature into the PDF. This enables secure, hardware-backed signing in compliance with digital signature standards, suitable for high-trust enterprise and legal workflows.  
 ---
 
 Aspose.PDF provides robust capabilities for integrating visual and cryptographic signature components, ensuring both authenticity and professional presentation in digitally signed PDF documents.

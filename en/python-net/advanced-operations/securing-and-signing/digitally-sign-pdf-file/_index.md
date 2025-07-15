@@ -7,8 +7,11 @@ url: /python-net/digitally-sign-pdf-file/
 description: Digitally sign PDF documents, verify, or validate the digitally sign PDFs using Python.
 lastmod: "2025-06-07"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Digitally sign PDF files with Python
+Abstract: This guide explains how to digitally sign PDF documents using Aspose.PDF for Python via .NET. It details the process of applying standard and advanced digital signatures, utilizing certificates (PFX and PKCS#12), and customizing signature appearance and behavior. The documentation includes code examples that demonstrate how to sign existing PDFs, add timestamps, and verify signature validity. This enables developers to ensure document authenticity, integrity, and compliance with digital signature standards in their Python Applications.   
 ---
 
 ## Sign PDF with digital signatures
