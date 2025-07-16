@@ -21,17 +21,11 @@ Aspose.PDF provides robust capabilities for integrating visual and cryptographic
 This example demonstrates how to digitally sign a PDF document using an external certificate with Aspose.PDF for Python and apply a custom signature appearance image:
 
 1. Opening the PDF document.
-
 1. Creating a PdfFileSignature object and binding it to the document.
-
 1. Retrieving a local digital certificate using a custom method (get_local_certificate()).
-
 1. Setting up an ExternalSignature based on the selected certificate.
-
 1. Applying a custom signature appearance image (e.g., a company logo or handwritten signature).
-
 1. Digitally signing the first page of the document with specified metadata (reason, contact, location).
-
 1. Saving the signed document to a new output file.
 
 This method is ideal for cases where signatures must be applied programmatically using external certificates—such as hardware tokens, certificate stores, or trusted providers—and presented with a personalized visual layout.
@@ -68,13 +62,9 @@ Following are the code snippets to sign a PDF document from a smart card:
 This code snippet demonstrates how to verify digital signatures in a PDF document using Aspose.PDF for Python:
 
 1. Opening the PDF file.
-
 1. Creating a 'PdfFileSignature object' and binding it to the document.
-
 1. Retrieving the list of all signature field names using 'get_signature_names()'.
-
 1. Iterating through each signature and verifying its validity with 'verify_signature()'.
-
 1. Raising an exception if any signature fails verification.
 
 ```python
@@ -97,19 +87,12 @@ This code snippet demonstrates how to verify digital signatures in a PDF documen
 This code snippet demonstrates how to add and sign a digital signature field in a PDF document using Aspose.PDF for Python with an external certificate:
 
 1. Opening the PDF file as a binary stream.
-
 1. Creating a SignatureField and placing it on the first page of the document at a specified position.
-
 1. Retrieving a local digital certificate using a custom method (get_local_certificate()).
-
 1. Setting up an ExternalSignature with metadata such as authority, reason, and contact information.
-
 1. Assigning a unique field name to the signature field (partial_name = "sig1").
-
 1. Adding the signature field to the form fields of the PDF.
-
 1. Signing the field with the external certificate.
-
 1. Saving the signed document to an output file.
 
 ```python

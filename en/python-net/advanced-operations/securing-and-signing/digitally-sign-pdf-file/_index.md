@@ -62,10 +62,11 @@ The next example signs a PDF document using a PKCS#7 detached digital signature,
             signature.save(path_outfile)
 ```
 
-You can verify signatures by using file_sign.verify_signature() method.
-Previously, the `get_signature_names` method was used to get signature names. Starting with version 25.02, the `GetSignatureNames()` method should be used, which returns a list of `SignatureName`.
-The `SignatureName` prevents collisions when verifying signatures with the same names.
-Methods that accept the `SignatureName` type instead of a string signature name should also be used.
+This Python code snippet verifies a digital signature in a PDF file using 'file_sign.verify_signature()' method.
+
+1. Creates an instance of PdfFileSignature that allows you to interact with signatures in PDF.
+1. Get a list of signature names (get_signature_names(True)).
+1. Checks the first signature in the list (verify_signature) for compliance with the specified certificate.
 
 ```python
 

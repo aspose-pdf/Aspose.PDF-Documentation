@@ -14,15 +14,21 @@ AlternativeHeadline: Encrypt or Decrypt PDF File with Python
 Abstract: This documentation page explains how to set document privileges, apply encryption, and decrypt PDF files using Aspose.PDF for Python. It guides developers through configuring user and owner passwords, defining access restrictions (such as printing, copying, or editing). Code examples illustrate how to protect sensitive content and manage PDF security effectively within Python applications, ensuring controlled access and data confidentiality.     
 ---
 
+Managing document security is essential when working with sensitive or business-critical content. Aspose.PDF for Python via .NET provides a robust API for programmatically applying encryption, controlling access through permissions, and decrypting protected PDF files.
+
+This article walks Python developers through practical examples for setting privileges, applying and removing encryption, changing passwords, and detecting protection states — all within a PDF workflow.
+
+Aspose.PDF for Python via .NET gives developers full control over PDF security:
+
+**Set Privileges** - Fine-grained access control using permissions.
+**Encrypt File** - Apply AES or RC4 encryption with custom passwords.
+**Decrypt File** - Remove security using the owner password.
+**Change Passwords** - Rotate or update credentials without altering content.
+**Inspect Security** - Detect encryption status or required password types.
+
 ## Set Privileges on an Existing PDF File
 
-This code snippet demonstrates how to apply access restrictions to a PDF document using Aspose.PDF for Python. By configuring a DocumentPrivilege object to forbid all actions except screen reading, and then encrypting the file with both a user password and an owner password, the document is secured against unauthorized modifications or printing.
-
-This approach is beneficial when distributing sensitive content that should only be viewed using assistive technologies (such as screen readers), while preventing actions like editing, copying, or printing. The use of AES 128-bit encryption (AE_SX128) provides a strong level of security.
-
-With minimal code, developers can enforce strict access control on PDF files, supporting privacy, compliance, and content protection requirements in professional workflows. For more advanced control, Aspose.PDF also supports granular permissions and stronger encryption algorithms.
-
-To set privileges on a PDF file, create an object of the [DocumentPrivilege](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/documentprivilege/)class and specify the rights you want to apply to the document. Once the privileges have been defined, pass this object as an argument to the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object's [encrypt](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method. The following code snippet shows you how to set the privileges of a PDF file.
+You can restrict or allow specific operations (e.g., printing, copying, form filling) by assigning user and owner passwords along with access privileges.
 
 ```python
 
@@ -48,12 +54,15 @@ To set privileges on a PDF file, create an object of the [DocumentPrivilege](htt
 
 ## Encrypt PDF File using Different Encryption Types and Algorithms
 
-You can use the [encrypt](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method of the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object to encrypt a PDF file. You can pass the user password, owner password, and permissions to the [encrypt](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method. In addition to that, you can pass any value of the [crypto_algorithm](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) enum. This enum provides different combinations of encryption algorithms and key sizes. You can pass the value of your choice. Finally, save the encrypted PDF file using [save](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method of the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
+Encrypting a PDF ensures only users with valid credentials can open or modify the file.
 
->Please specify different user and owner passwords while encrypting the PDF file.
+>Key Terms:
 
-- The **user password**, if set, is what you need to provide in order to open a PDF. Acrobat/Reader will prompt a user to enter the user password. If it's not correct, the document will not open.
-- The **owner password**, if set, controls permissions, such as printing, editing, extracting, commenting, etc. Acrobat/Reader will disallow these things based on the permission settings. Acrobat will require this password if you want to set/change permissions.
+- User Password. Required to open the document.
+
+- Owner Password. Required to change permissions or remove encryption.
+
+- KeySize. Use AE_SX128 for maximum security in modern workflows.
 
 The following code snippet shows you how to encrypt PDF files.
 
@@ -74,9 +83,11 @@ The following code snippet shows you how to encrypt PDF files.
 
 ## Decrypt PDF File using Owner Password
 
-This code snippet demonstrates how to decrypt a password-protected PDF document using Aspose.PDF for Python. By opening the PDF with the correct password and calling the [decrypt()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method, all encryption and permission restrictions are removed. The resulting unprotected document is then saved to a new file.
+To remove password protection and restore full access:
 
-This functionality is useful in scenarios where secured documents need to be processed, edited, or redistributed without encryption. It also allows developers to automate PDF security management within larger workflows.
+1. Loads the encrypted PDF using the correct password ('password' is the user or owner password).
+1. Removes all password protection and encryption settings from the document.
+1. Saves the now unprotected PDF to the specified output file.
 
 ```python
 
@@ -95,13 +106,11 @@ This functionality is useful in scenarios where secured documents need to be pro
 
 ## Change Password of a PDF File
 
-This example demonstrates how to change the passwords of a secured PDF document using Aspose.PDF for Python. By opening the PDF with the current owner password and calling the [change_passwords(](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method, you can update both the user password and the owner password.
+To update the security credentials (user and owner passwords) of a PDF document while preserving its content and structure.
 
-This operation is especially useful when rotating credentials for secure documents or updating password policies. Once saved, the output PDF will be protected with the new credentials, while all original content and permissions are preserved.
-
-Aspose.PDF provides a reliable and efficient way to manage PDF security, making it easy to modify encryption settings programmatically as part of your document management or automation processes.
-
-The following code snippet shows you how to change the password of a PDF file.
+1. Opens the PDF using the existing owner password ('owner'), which gives full access including permission to change security settings.
+1. Replaces the old passwords with a new user password ('newuser') and a new owner password ('newowner').
+1. Saves the PDF with the updated password settings.
 
 ```python
 
@@ -122,23 +131,14 @@ The following code snippet shows you how to change the password of a PDF file.
 
 ### Determine correct password from Array
 
-Sometimes there is a requirement to determine the correct password from an array of passwords and open the document with the correct password. The following code snippet demonstrates the steps to iterate through the array of passwords and try opening the document with the correct password.
-
-This code snippet demonstrates how to check if a PDF is password protected and attempt to unlock it using a list of possible passwords with Aspose.PDF for Python.
+In some scenarios, you may need to identify the correct password from a list of potential candidates in order to access a secured PDF. The code snippet below demonstrates how to check whether a PDF file is password protected and then attempt to unlock it by iterating through a predefined list of passwords using Aspose.PDF for Python via .NET.
 
 The process includes:
 
 1. Using PdfFileInfo to detect whether the PDF is encrypted.
-
-1. Iterating through a list of password candidates and trying to open the document with each.
-
-1. If a password is correct, the document is opened successfully, and the number of pages is printed.
-
-1. If the password is incorrect, an error is caught and a message is displayed.
-
-This approach is useful when dealing with documents whose passwords are known only approximately or when automating workflows that involve validating and processing secured PDFs.
-
-Aspose.PDF for Python via .NET provides robust tools for programmatically inspecting, unlocking, and handling password-protected documents, enabling streamlined and secure PDF processing in enterprise applications.
+1. Tries to open the PDF with each password using ap.Document().
+1. If successful, it prints the number of pages.
+1. If not, it catches the exception and reports the failed password.
 
 ```python
 

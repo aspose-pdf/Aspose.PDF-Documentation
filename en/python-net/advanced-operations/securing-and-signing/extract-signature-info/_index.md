@@ -23,11 +23,8 @@ This code snippet demonstrates how to extract digital signature images from a PD
 Steps:
 
 1. Opening the PDF document.
-
 1. Iterating through the form fields to locate any SignatureField objects.
-
 1. Extracting the image associated with each signature (if available).
-
 1. Saving the extracted signature image as a JPEG file.
 
 ```python
@@ -113,13 +110,9 @@ This code snippet demonstrates how to detect compromised digital signatures in a
 The steps include:
 
 1. Opening the PDF document.
-
 1. Creating a 'SignaturesCompromiseDetector' instance to analyze the document.
-
 1. Checking for any compromised (invalid or altered) digital signatures.
-
 1. Printing the names of any compromised signatures found.
-
 1. Reporting the signature coverage—indicating how much of the document is protected by valid signatures.
 
 This feature is critical in use cases where document authenticity and integrity must be verified, such as legal, financial, and compliance-driven environments. It allows developers to automatically detect tampering or corruption of signed PDFs.
