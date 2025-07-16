@@ -85,7 +85,7 @@ Methods that accept the `SignatureName` type instead of a string signature name 
 
 ### How to digitally sign a PDF with timestamp
 
-Aspose.PDF for .NET supports to digitally sign the PDF with a timestamp server or Web service.
+Aspose.PDF for Python supports to digitally sign the PDF with a timestamp server or Web service.
 
 In order to accomplish this requirement, the [TimestampSettings](https://reference.aspose.com/pdf/python-net/aspose.pdf/timestampsettings/) class has been added to the Aspose.PDF namespace. Please take a look at the following code snippet which obtains timestamp and adds it to PDF document:
 
