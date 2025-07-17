@@ -65,8 +65,8 @@ The next example signs a PDF document using a PKCS#7 detached digital signature,
 This Python code snippet verifies a digital signature in a PDF file using 'file_sign.verify_signature()' method.
 
 1. Creates an instance of PdfFileSignature that allows you to interact with signatures in PDF.
-1. Get a list of signature names (get_signature_names(True)).
-1. Checks the first signature in the list (verify_signature) for compliance with the specified certificate.
+1. Get a list of signature names `get_signature_names(True)`.
+1. Checks the first signature in the list `verify_signature` for compliance with the specified certificate.
 
 ```python
 
