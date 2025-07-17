@@ -88,7 +88,7 @@ This code snippet demonstrates how to add and sign a digital signature field in 
 
 1. Opening the PDF file as a binary stream.
 1. Creating a SignatureField and placing it on the first page of the document at a specified position.
-1. Retrieving a local digital certificate using a custom method (get_local_certificate()).
+1. Retrieving a local digital certificate using a custom method `get_local_certificate()`.
 1. Setting up an ExternalSignature with metadata such as authority, reason, and contact information.
 1. Assigning a unique field name to the signature field (partial_name = "sig1").
 1. Adding the signature field to the form fields of the PDF.
