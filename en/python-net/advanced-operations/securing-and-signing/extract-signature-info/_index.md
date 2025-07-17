@@ -4,7 +4,7 @@ linktitle: Extract Image and Signature Information
 type: docs
 weight: 20
 url: /python-net/extract-image-and-signature-information/
-description: You may extract images Python.
+description: How to extract image and digital signature information from PDF documents using Aspose.PDF for Python.
 lastmod: "2025-06-22"
 sitemap:
     changefreq: "monthly"
