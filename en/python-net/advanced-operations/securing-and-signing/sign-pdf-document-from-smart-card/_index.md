@@ -22,7 +22,7 @@ This example demonstrates how to digitally sign a PDF document using an external
 
 1. Opening the PDF document.
 1. Creating a PdfFileSignature object and binding it to the document.
-1. Retrieving a local digital certificate using a custom method (get_local_certificate()).
+1. Retrieving a local digital certificate using a custom method `get_local_certificate()`.
 1. Setting up an ExternalSignature based on the selected certificate.
 1. Applying a custom signature appearance image (e.g., a company logo or handwritten signature).
 1. Digitally signing the first page of the document with specified metadata (reason, contact, location).
