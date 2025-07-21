@@ -81,27 +81,49 @@ document.save(path_outfile)
 The similar triggers are provided for pages: `on_open`, `on_close`.
 
 ```python
-document = ap.Document(path_infile)
 
-if len(document.pages) < 3:
-    print("Error: The document does not have at least 3 pages.")
-    return
+def add_page_actions(self, infile, outfile):
+    """
+    Add actions to the third page of the PDF.
 
-page = document.pages[3]
+    Adds two actions to page 3:
+    - On page open: Navigate to the top of the page with specific zoom
+    - On page close: Launch a URL with page-specific information
 
-# Add GoTo action on page open
-action = ap.annotations.GoToAction(page)
-action.destination = ap.annotations.XYZExplicitDestination(
-    page, 0, page.page_info.height, 1
-)
-page.actions.on_open = action
+    Args:
+        infile (str): Input PDF filename
+        outfile (str): Output PDF filename
 
-# Add JavaScript action on page close
-page.actions.on_close = ap.annotations.JavascriptAction(
-    "app.launchURL('http://localhost:3000/page/3');"
-)
+    Raises:
+        ValueError: If document has fewer than 3 pages
 
-document.save(path_outfile)
+    Example:
+        >>> actions.add_page_actions("multipage.pdf", "page_actions.pdf")
+    """
+    path_infile, path_outfile = self._get_file_paths(infile, outfile)
+
+    document = ap.Document(path_infile)
+
+    if len(document.pages) < 3:
+        print("Error: The document does not have at least 3 pages.")
+        return
+
+    page = document.pages[3]
+
+    # Add GoTo action on page open - navigate to top of page
+    action = ap.annotations.GoToAction(page)
+    action.destination = ap.annotations.XYZExplicitDestination(
+        page, 0, page.page_info.height, 1
+    )
+    page.actions.on_open = action
+
+    # Add JavaScript action on page close
+    page.actions.on_close = ap.annotations.JavascriptAction(
+        "app.launchURL('http://localhost:3000/page/3');"
+    )
+
+    document.save(path_outfile)
+
 ```
 
 We add two actions to this page. First, it creates a "GoTo" action that triggers when the page is opened. This action uses an explicit destination to jump to the top-left corner of the page at a specific zoom level. Second, it attaches a JavaScript action that runs when the page is closed, instructing the PDF viewer to open a specific URL in the browser. Finally, the modified document is saved to the specified output path.
@@ -113,6 +135,7 @@ A subtle point to watch for is the page indexing, as using the wrong index could
 Use `remove_actions` to remove action on page.
 
 ```python
+
 document = ap.Document(path_infile)
 
 if len(document.pages) < 3:
@@ -123,6 +146,7 @@ page = document.pages[3]
 page.actions.remove_actions()
 
 document.save(path_outfile)
+
 ```
 
 ## Actions in AcroForms
@@ -133,35 +157,62 @@ The PDF standard provides for a certain set of named actions. The meaning of suc
 In the following code we will use actions for navigations.
 
 ```python
-"""Add navigation buttons to each page of the PDF."""
-path_infile, path_outfile = self._get_file_paths(infile, outfile)
 
-button_config = [
-    ("First Page", 10.0, PredefinedAction.FIRST_PAGE, lambda p, t: p == 1),
-    ("Previous Page", 120.0, PredefinedAction.PREV_PAGE, lambda p, t: p == 1),
-    ("Next Page", 230.0, PredefinedAction.NEXT_PAGE, lambda p, t: p == t),
-    ("Last Page", 340.0, PredefinedAction.LAST_PAGE, lambda p, t: p == t),
-]
+def add_navigation_buttons(self, infile, outfile):
+    """
+    Add navigation buttons to each page of the PDF.
 
-try:
-    document = ap.Document(path_infile)
-    total_pages = len(document.pages)
+    Creates four navigation buttons on each page:
+    - First Page: Navigate to the first page
+    - Previous Page: Navigate to the previous page
+    - Next Page: Navigate to the next page
+    - Last Page: Navigate to the last page
 
-    for page in document.pages:
-        page_number = page.number
+    Buttons are automatically disabled when not applicable (e.g.,
+    "Previous" is disabled on the first page).
 
-        for name, x_pos, action, is_readonly_fn in button_config:
-            rect = Rectangle(x_pos, 10.0, x_pos + 100, 40.0, True)
-            button = ButtonField(page, rect)
-            button.partial_name = name
-            button.read_only = is_readonly_fn(page_number, total_pages)
-            button.actions.on_release_mouse_btn = NamedAction(action)
-            document.form.add(button)
+    Args:
+        infile (str): Input PDF filename
+        outfile (str): Output PDF filename
 
-    document.save(path_outfile)
+    Example:
+        >>> actions.add_navigation_buttons("multipage.pdf", "nav_buttons.pdf")
+    """
+    path_infile, path_outfile = self._get_file_paths(infile, outfile)
 
-except Exception as e:
-    print(f"Error adding navigation buttons: {e}")
+    # Configuration for each navigation button
+    button_config = [
+        ("First Page", 10.0, PredefinedAction.FIRST_PAGE, lambda p, t: p == 1),
+        ("Previous Page", 120.0, PredefinedAction.PREV_PAGE, lambda p, t: p == 1),
+        ("Next Page", 230.0, PredefinedAction.NEXT_PAGE, lambda p, t: p == t),
+        ("Last Page", 340.0, PredefinedAction.LAST_PAGE, lambda p, t: p == t),
+    ]
+
+    try:
+        document = ap.Document(path_infile)
+        total_pages = len(document.pages)
+
+        # Add navigation buttons to each page
+        for page in document.pages:
+            page_number = page.number
+
+            for name, x_pos, action, is_readonly_fn in button_config:
+                # Create button rectangle
+                rect = Rectangle(x_pos, 10.0, x_pos + 100, 40.0, True)
+                button = ButtonField(page, rect)
+                button.partial_name = name
+
+                # Disable button when not applicable
+                button.read_only = is_readonly_fn(page_number, total_pages)
+                button.actions.on_release_mouse_btn = NamedAction(action)
+
+                document.form.add(button)
+
+        document.save(path_outfile)
+
+    except Exception as e:
+        print(f"Error adding navigation buttons: {e}")
+
 ```
 
 This code adds navigation buttons to every page of a PDF document, making it easier for users to move between pages. It starts by determining the full file paths for the input and output files using a helper method. The button_config list defines four types of navigation buttons—First Page, Previous Page, Next Page, and Last Page—along with their horizontal positions, the predefined navigation actions they trigger, and a lambda function that determines if each button should be read-only on a given page (for example, the "First Page" and "Previous Page" buttons are read-only on the first page).
@@ -177,23 +228,43 @@ When using PDF forms, there is often a need to print such PDF documents. This ac
 In fact, this is yet another example of how to use named actions. We will use `PredefinedAction.FILE_PRINT` (simulating the use of the File->Print menu item), but you can also use `PredefinedAction.PRINT` or `PredefinedAction.PRINT_DIALOG`, depending on your own purposes.
 
 ```python
-document = ap.Document(path_infile)
-page = document.pages[1]
 
-# Create print button
-rect = Rectangle(10, 10, 100, 40, True)
-print_button = ButtonField(page, rect)
-print_button.partial_name = "printButton"
-print_button.value = "Print"
-print_button.actions.on_release_mouse_btn = NamedAction(PredefinedAction.FILE_PRINT)
+def add_named_action_print(self, infile, outfile):
+    """
+    Add a print button to the first page of the PDF.
 
-# Add border
-border = ap.annotations.Border(print_button)
-border.width = 1
-print_button.border = border
+    Creates a button labeled "Print" that triggers the system print dialog
+    when clicked. The button is positioned at the bottom-left corner of
+    the first page with a 1-pixel border.
 
-document.form.add(print_button, 1)
-document.save(path_outfile)
+    Args:
+        infile (str): Input PDF filename
+        outfile (str): Output PDF filename
+
+    Example:
+        >>> actions.add_named_action_print("input.pdf", "output.pdf")
+    """
+    path_infile, path_outfile = self._get_file_paths(infile, outfile)
+
+    document = ap.Document(path_infile)
+    page = document.pages[1]
+
+    # Create print button with specific dimensions and position
+    rect = Rectangle(10, 10, 100, 40, True)
+    print_button = ButtonField(page, rect)
+    print_button.partial_name = "printButton"
+    print_button.value = "Print"
+    print_button.actions.on_release_mouse_btn = NamedAction(PredefinedAction.FILE_PRINT)
+
+    # Add border for better visibility
+    border = ap.annotations.Border(print_button)
+    border.width = 1
+    print_button.border = border
+
+    # Add button to the form on page 1
+    document.form.add(print_button, 1)
+    document.save(path_outfile)
+
 ```
 
 This code snippet demonstrates how to add a "Print" button to the first page of a PDF document. It begins by loading the PDF from the specified input file path and selecting the first page (document.pages[1]).
@@ -205,12 +276,27 @@ To enhance the button's appearance, a border is created and assigned to the butt
 ### Using Hide action
 
 ```python
-def add_hide_action(self, infile, outfile):
+
+def add_named_action_hide(self, infile, outfile):
+    """
+    Add a hide button that toggles visibility of all checkbox fields.
+
+    Creates a button labeled "Hide Checkboxes" that can hide or show
+    all checkbox fields in the document. Useful for forms with many
+    checkboxes that might clutter the interface.
+
+    Args:
+        infile (str): Input PDF filename
+        outfile (str): Output PDF filename
+
+    Example:
+        >>> actions.add_named_action_hide("form.pdf", "form_with_hide.pdf")
+    """
     path_infile, path_outfile = self._get_file_paths(infile, outfile)
 
     try:
         document = ap.Document(path_infile)
-        # Collect all checkbox fields
+        # Collect all checkbox fields in the document
         checkboxes = [field for field in document.form if isinstance(field, ap.CheckboxField)]
 
         # Create the hide button
@@ -219,7 +305,7 @@ def add_hide_action(self, infile, outfile):
         hide_button.partial_name = "HideButton"
         hide_button.value = "Hide Checkboxes"
 
-        # Add HideAction to button
+        # Add HideAction to button - will hide all checkboxes when clicked
         hide_button.actions.on_release_mouse_btn = ap.HideAction(checkboxes, True)
 
         # Add button to the form on page 1
@@ -230,6 +316,7 @@ def add_hide_action(self, infile, outfile):
 
     except Exception as e:
         print(f"Error adding hide button: {e}")
+
 ```
 
 This code snippet adds a button to the first page of a PDF that, when clicked, hides all checkbox fields in the document. It starts by resolving the full input and output file paths using a helper method. The PDF is loaded, and all checkbox fields are collected by filtering the form fields for instances of `ap.CheckboxField`.
@@ -241,6 +328,7 @@ The button is then added to the form fields on the first page, and the modified 
 ### Appling Submit Action
 
 ```python
+
 def add_submit_action(self, infile, outfile):
     """
     Submit form.
@@ -277,6 +365,7 @@ def add_submit_action(self, infile, outfile):
 
     except Exception as e:
         print(f"Error adding submit button: {e}")
+
 ```
 
 This function adds a "Submit" button to the first page of a PDF form, allowing users to submit the form data to a specified web endpoint. It begins by constructing the full paths for the input and output PDF files, then loads the input PDF using the Aspose.PDF library.
