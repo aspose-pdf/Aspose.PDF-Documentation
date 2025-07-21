@@ -1,6 +1,6 @@
 ---
 title: Working with Actions in PDF document
-linktitle: Working with Actions
+linktitle: Actions
 type: docs
 weight: 20
 url: /python-net/actions/

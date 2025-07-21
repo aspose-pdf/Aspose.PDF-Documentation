@@ -9,12 +9,12 @@ lastmod: "2025-07-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to create Links in PDF
-Abstract: The Aspose.PDF for Python via .NET guide on creating links provides developers with practical instructions for adding interactive hyperlinks to PDF documents using Python. It covers how to create various types of links, including those that launch external applications, navigate to specific pages within the same document, or open other PDF files. The documentation explains how to use LinkAnnotation objects, define clickable areas with Rectangle, and assign actions like LaunchAction or GoToRemoteAction. With clear code examples and step-by-step guidance, this resource helps developers enhance PDF navigation and interactivity in their Python applications. 
+Abstract: The Aspose.PDF for Python via .NET guide on creating links provides developers with practical instructions for adding interactive hyperlinks to PDF documents using Python. It covers how to create various types of links, including those that launch external applications, navigate to specific pages within the same document, or open other PDF files. The documentation explains how to use LinkAnnotation objects, define clickable areas with Rectangle, and assign actions like LaunchAction or GoToRemoteAction. With clear code examples and step-by-step guidance, this resource helps developers enhance PDF navigation and interactivity in their Python applications.
 ---
 
-## Create Links
+## Links in PDF Documents
 
 According to the PDF 1.7 specification (ISO 32000-1:2008), a **Link annotation** can trigger several types of actions that define what happens when the annotation is activated. Here are the primary actions supported:
 
@@ -28,7 +28,7 @@ According to the PDF 1.7 specification (ISO 32000-1:2008), a **Link annotation**
 1. **ResetForm** – Resets form fields to their default values.
 1. **ImportData** – Imports data into the document from an external file.
 
-By adding a link to an application into a document, it is possible to link to applications from a document. This is useful when you want readers to take a certain action at a specific point in a tutorial, for example, or to create a feature-rich document. 
+By adding a link to an application into a document, it is possible to link to applications from a document. This is useful when you want readers to take a certain action at a specific point in a tutorial, for example, or to create a feature-rich document.
 
 To create an application link with 'LaunchAction':
 
@@ -42,36 +42,36 @@ To create an application link with 'LaunchAction':
 
     # Open the input PDF document
     document = ap.Document(path_infile)
-    
+
     # Select the second page (index 1)
     page = document.pages[1]
 
     # Create a link annotation with specific dimensions and position
     link = ap.annotations.LinkAnnotation(page, ap.Rectangle(10, 580, 120, 600, True))
-    
+
     # Configure the link's border
     border = ap.annotations.Border(link)
     border.width = 5  # Border width of 5 units
     border.dash = ap.annotations.Dash(1, 1)  # Dashed border style
-    
+
     # Set link appearance
     link.color = ap.Color.green  # Green color for the link
-    
+
     # Set the action to launch another PDF file
     # Note: Commented out system command demonstrates potential alternative launch actions
     # link.action = ap.annotations.LaunchAction(document, "start %windir%\explorer.exe")
     link.action = ap.annotations.LaunchAction(document, "sample.pdf")
-    
+
     # Add the link annotation to the page
     page.annotations.append(link)
-    
+
     # Save the modified document
     document.save(path_outfile)
-``` 
+```
 
-### Create PDF Document Link in a PDF File
+## Create PDF Document Link in a PDF File
 
-#### Using GoToRemoteAction
+### Using GoToRemoteAction
 
 This code snippet demonstrates how to add a link annotation to a specific page of a PDF document using a Python PDF library.
 
@@ -118,7 +118,7 @@ page.annotations.append(link)
 document.save(path_outfile)
 ```
 
-#### Using GoToAction
+### Using GoToAction
 
 This code demonstrates how to add a link annotation to a specific page of a PDF document using Aspose.PDF for Python. The link appears as a green, dashed-bordered rectangle and allows the user to navigate to another page within the same PDF. To create a PDF document link using 'GoToAction':
 
@@ -132,18 +132,18 @@ This code demonstrates how to add a link annotation to a specific page of a PDF 
 
     # Open the PDF document
     document = ap.Document(path_infile)
-    
+
     # Select the second page (index 1)
     page = document.pages[1]
 
     # Create a link annotation with specific coordinates
     link = ap.annotations.LinkAnnotation(page, ap.Rectangle(10, 580, 120, 600, True))
-    
+
     # Customize link annotation border
     border = ap.annotations.Border(link)
     border.width = 5  # Border width
     border.dash = ap.annotations.Dash(1, 1)  # Dashed border style
-    
+
     # Set link color to green
     link.color = ap.Color.green
 
@@ -154,15 +154,15 @@ This code demonstrates how to add a link annotation to a specific page of a PDF 
     else:
         # Fallback: link to the last page if less than 4 pages
         link.action = ap.annotations.GoToAction(document.pages[document.pages.count])
-    
+
     # Add the link annotation to the page
     page.annotations.append(link)
-    
+
     # Save the modified document
     document.save(path_outfile)
 ```
 
-#### Appling GoToURIAction
+### Appling GoToURIAction
 
 Next example demonstrates how to add a link annotation to a PDF document using Aspose.PDF for Python. The link appears as a green clickable area on the first page, and when clicked, it opens the Aspose.PDF for Python documentation in a web browser via a GoToURIAction.
 
