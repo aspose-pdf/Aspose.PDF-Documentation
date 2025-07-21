@@ -3,7 +3,7 @@ title: Working with Actions in PDF document
 linktitle: Working with Actions
 type: docs
 weight: 20
-url: /pyhton-net/actions/
+url: /python-net/actions/
 description: Explore how to extract and manage PDF metadata, such as author and title, in Python using Aspose.PDF.
 lastmod: "2025-07-10"
 sitemap:
