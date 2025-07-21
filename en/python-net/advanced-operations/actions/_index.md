@@ -35,6 +35,13 @@ PDF documents support several document-level actions, including code that runs o
 Let’s consider how to use `open_action.`
 
 ```python
+
+import aspose.pdf as ap
+from aspose.pdf import Rectangle
+from aspose.pdf.forms import ButtonField
+from aspose.pdf.annotations import NamedAction, PredefinedAction
+from os import path
+
 document = ap.Document(path_infile)
 document.open_action = ap.annotations.JavascriptAction(
     "app.launchURL('http://localhost:3000/open');"
@@ -47,6 +54,13 @@ In this example we call `launchURL` method from `app` obejct and open web site (
 Other actions can be added in the same way, but with minor changes:
 
 ```python
+
+import aspose.pdf as ap
+from aspose.pdf import Rectangle
+from aspose.pdf.forms import ButtonField
+from aspose.pdf.annotations import NamedAction, PredefinedAction
+from os import path
+
 document = ap.Document(path_infile)
 document.actions.before_saving = ap.annotations.JavascriptAction(
     "app.launchURL('http://localhost:3000/save');"
@@ -67,6 +81,13 @@ Next, two additional JavaScript actions are assigned to the document's `before_s
 To clean (or remove) actions just set handler to `None`.
 
 ```python
+
+import aspose.pdf as ap
+from aspose.pdf import Rectangle
+from aspose.pdf.forms import ButtonField
+from aspose.pdf.annotations import NamedAction, PredefinedAction
+from os import path
+
 document = ap.Document(path_infile)
 document.open_action = None
 document.actions.before_saving = None
@@ -81,6 +102,14 @@ document.save(path_outfile)
 The similar triggers are provided for pages: `on_open`, `on_close`.
 
 ```python
+
+import aspose.pdf as ap
+from aspose.pdf import Rectangle
+from aspose.pdf.forms import ButtonField
+from aspose.pdf.annotations import NamedAction, PredefinedAction
+from os import path
+
+# ...
 
 def add_page_actions(self, infile, outfile):
     """
@@ -136,6 +165,9 @@ Use `remove_actions` to remove action on page.
 
 ```python
 
+import aspose.pdf as ap
+from os import path
+
 document = ap.Document(path_infile)
 
 if len(document.pages) < 3:
@@ -157,6 +189,14 @@ The PDF standard provides for a certain set of named actions. The meaning of suc
 In the following code we will use actions for navigations.
 
 ```python
+
+import aspose.pdf as ap
+from aspose.pdf import Rectangle
+from aspose.pdf.forms import ButtonField
+from aspose.pdf.annotations import NamedAction, PredefinedAction
+from os import path
+
+# ...
 
 def add_navigation_buttons(self, infile, outfile):
     """
@@ -229,6 +269,14 @@ In fact, this is yet another example of how to use named actions. We will use `P
 
 ```python
 
+import aspose.pdf as ap
+from aspose.pdf import Rectangle
+from aspose.pdf.forms import ButtonField
+from aspose.pdf.annotations import NamedAction, PredefinedAction
+from os import path
+
+# ...
+
 def add_named_action_print(self, infile, outfile):
     """
     Add a print button to the first page of the PDF.
@@ -276,6 +324,14 @@ To enhance the button's appearance, a border is created and assigned to the butt
 ### Using Hide action
 
 ```python
+
+import aspose.pdf as ap
+from aspose.pdf import Rectangle
+from aspose.pdf.forms import ButtonField
+from aspose.pdf.annotations import NamedAction, PredefinedAction
+from os import path
+
+# ...
 
 def add_named_action_hide(self, infile, outfile):
     """
@@ -328,6 +384,14 @@ The button is then added to the form fields on the first page, and the modified 
 ### Appling Submit Action
 
 ```python
+
+import aspose.pdf as ap
+from aspose.pdf import Rectangle
+from aspose.pdf.forms import ButtonField
+from aspose.pdf.annotations import NamedAction, PredefinedAction
+from os import path
+
+# ...
 
 def add_submit_action(self, infile, outfile):
     """
