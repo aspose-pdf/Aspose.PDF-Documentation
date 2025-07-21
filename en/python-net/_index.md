@@ -7,18 +7,18 @@ weight: 40
 url: /python-net/
 is_root: true
 lastmod: "2025-02-24"
-description: Learn to use Aspose.PDF Python via .NET to create applications for PDF document processing on any platform using Python. Browse tutorials, sample codes, and more.    
+description: Learn to use Aspose.PDF Python via .NET to create applications for PDF document processing on any platform using Python. Browse tutorials, sample codes, and more.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Documentation Guide of Aspose.PDF for Python via .NET
 Abstract: Aspose.PDF for Python via .NET is a versatile component designed for developers to programmatically create and manipulate PDF documents using Python in conjunction with .NET. This tool supports a wide range of functionalities, including the insertion of tables, graphs, images, hyperlinks, and custom fonts, as well as PDF compression. It also offers robust security features to ensure document protection. Notably, developers can generate PDF documents through an API or from XML templates. The documentation is organized into several chapters covering new features, an overview, getting started guides, basic and advanced operations, document conversion, and parsing techniques. Additional resources include feature highlights, release notes, product pages, download links, installation instructions, an API reference guide, and access to support forums and helpdesks.
 ---
 
 ![Aspose.PDF for Python via .NET logo image](aspose_pdf-for-python-net.png)
 
-<h2>Welcome to Aspose.PDF for Python via .NET</h2>
+## Welcome to Aspose.PDF for Python via .NET
 
 {{% alert color="primary" %}}
 
@@ -26,7 +26,7 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 
 {{% /alert %}}
 
-<h2>Chapters</h2>
+## Chapters
 
 - [What's new](/pdf/python-net/whatsnew/)
 - [Overview](/pdf/python-net/overview/)

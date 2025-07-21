@@ -1,5 +1,5 @@
 ---
-title: Create or Add Table In PDF using Python 
+title: Create or Add Table In PDF using Python
 linktitle: Create or Add Table
 type: docs
 weight: 10
@@ -7,10 +7,10 @@ url: /python-net/add-table-in-existing-pdf-document/
 description: Aspose.PDF for Python via .NET is a library used to create, read, and edit PDF Tables. Check other advanced functions in this topic.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
-AlternativeHeadline: How to add Table In PDF using Python 
+TechArticle: true
+AlternativeHeadline: How to add Table In PDF using Python
 Abstract: This article provides a comprehensive guide to creating and manipulating tables in PDF documents using the Aspose.PDF for Python via .NET library. It details the steps to add tables to existing PDF files, including setting table borders, margins, and padding. Furthermore, it explores advanced functionalities like merging columns and rows using `col_span` and `row_span`, applying different AutoFit settings, and dynamically retrieving table width. The article also demonstrates inserting SVG images into table cells and enforcing page breaks or rendering tables on new pages. Code snippets illustrate each functionality, showcasing how to effectively manage table layout and content in PDF documents.
 ---
 
@@ -192,9 +192,9 @@ In the following example, the width of the cell border is set to 0.1 point, the 
 To create table with rounded corner, use the [BorderInfo class](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/) [rounded_border_radius](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/#properties) value and set the table corner style to round.
 
 ```python
-    
+
     import aspose.pdf as ap
-    
+
     tab1 = ap.Table()
     graph = ap.GraphInfo()
     graph.color = ap.Color.red

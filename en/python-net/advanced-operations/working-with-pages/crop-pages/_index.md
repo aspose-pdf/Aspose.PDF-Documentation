@@ -7,9 +7,9 @@ url: /python-net/crop-pages/
 description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for Python via .NET.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to access and modify page properties in PDF using Python
 Abstract: The article provides an overview of how to access and modify page properties in a PDF document using Aspose.PDF for Python. It describes several page properties, including the media box, bleed box, trim box, art box, and crop box, explaining their roles in defining the dimensions and boundaries of a PDF page for printing and display purposes. The media box represents the largest page size, while the bleed box ensures ink coverage beyond the page edge for trimming. The trim box marks the final document size post-trimming, and the art box encloses the actual page content. The crop box defines the visible area in Adobe Acrobat. The article includes a Python code snippet demonstrating how to set a new crop box, along with other boxes, for a specific page in a PDF document. Visual examples illustrate the page appearance before and after applying the crop, showcasing the practical application of modifying these properties.
 ---

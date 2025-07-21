@@ -7,7 +7,7 @@ url: /python-net/edit-pdf-file-tags/
 description: This article explains how to edit tags in the PDF documents using Aspose.PDF for Python via .NET library.
 lastmod: "2025-06-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

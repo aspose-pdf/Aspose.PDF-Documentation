@@ -7,7 +7,7 @@ url: /python-net/extract-text-from-pdf/
 description:  This section contains articles on text extraction from PDF documents using Aspose.PDF in Python.
 lastmod: "2025-03-13"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to Extract Text from PDF via Python

@@ -7,9 +7,9 @@ url: /python-net/annotations/
 description: Explore how to add, modify, and extract annotations from PDFs using Aspose.PDF in Python and .NET.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to add Annotations to PDF using Python
 Abstract: The article discusses the use of annotations in PDFs as interactive elements that enhance document interactivity and user engagement. It highlights the capabilities of the Aspose.PDF for Python Library in supporting various annotation types, including text, highlights, figures, and multimedia annotations. Annotations serve multiple purposes such as commenting, reviewing, marking documents, and providing feedback, which facilitates collaboration, communication, and a deeper understanding of document content. The article also mentions a section detailing how to add, delete, and retrieve annotations, offering guidance on managing these elements effectively within PDF documents.
 ---

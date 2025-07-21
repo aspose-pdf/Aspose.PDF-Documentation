@@ -7,7 +7,7 @@ url: /python-net/pdf-file-metadata/
 description: Explore how to extract and manage PDF metadata, such as author and title, in Python using Aspose.PDF.
 lastmod: "2025-05-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Get and Set Metadata in PDF using Python

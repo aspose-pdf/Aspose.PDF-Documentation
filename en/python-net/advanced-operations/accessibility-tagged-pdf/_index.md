@@ -7,7 +7,7 @@ url: /python-net/accessibility-tagged-pdf/
 description: Discover how to generate accessible Tagged PDFs with Aspose.PDF for Python via .NET. Comply with accessibility standards for inclusive document design.
 lastmod: "2025-06-07"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

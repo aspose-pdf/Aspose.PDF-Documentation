@@ -7,9 +7,9 @@ url: /python-net/change-page-size/
 description: Change Page Size from your PDF document using Aspose.PDF for Python via .NET library.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to change PDF Page Size using Python
 Abstract: The article provides a guide on how to change the page size of a PDF document using Aspose.PDF for Python via .NET. It outlines the process of updating the page dimensions of an existing PDF file by utilizing the `Page` class's `set_page_size()` method. The steps involve loading the source PDF, retrieving the pages into a `PageCollection` object, selecting a specific page, and then employing the `set_page_size()` method to adjust its dimensions. Finally, the modified PDF is saved using the `Document` class's `save()` method. A code snippet is provided to demonstrate the process, where the page size is set to A4 dimensions (11.7 x 8.3 inches), converted into points for use in Aspose.PDF.
 ---

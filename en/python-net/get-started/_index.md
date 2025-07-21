@@ -1,16 +1,16 @@
 ---
-title: Get Started 
+title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
 url: /python-net/get-started/
 description: This section describes the basic principles of work Aspose.PDF for Python via .NET. Python Library supports a wide variety of functions.
 is_node: true
-lastmod: "2025-02-20"   
+lastmod: "2025-02-20"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Simple and complex examples of Aspose.PDF for Python
 Abstract: The article discusses the Portable Document Format (PDF), highlighting its creation by Adobe in the 1990s with the aim of ensuring document accessibility across various hardware and operating systems, and maintaining consistent document layout. It emphasizes the importance of not just opening PDFs but also creating, editing, and converting them. The article introduces Aspose.PDF for Python via .NET as a tool offering numerous advantages for handling PDFs, including a wide range of functions such as text and image manipulation, page management, and metadata handling. It also supports various PDF standards and specifications. The conversion capabilities of Aspose.PDF allow users to transform PDFs into formats like Word, Excel, PowerPoint, images, HTML, EPUB, and others, as well as convert different formats into PDFs. Additional resources are provided for further learning, including examples of simple and complex PDF handling using the tool.
 ---

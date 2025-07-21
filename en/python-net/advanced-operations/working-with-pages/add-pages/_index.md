@@ -7,9 +7,9 @@ url: /python-net/add-pages/
 description: Discover how to add pages to a PDF document in Python using Aspose.PDF for flexible document creation and editing.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to add Pages in PDF using Python
 Abstract: The article provides a guide on using the Aspose.PDF for Python via .NET API to manipulate pages in a PDF document. It emphasizes the flexibility offered by the API, particularly through the `PageCollection` class, which manages all pages within a PDF. The document details procedures for adding or inserting pages at specific locations in a PDF file. It outlines two primary operations - inserting an empty page at a desired location within the document and adding an empty page at the end of the document. For both operations, the process involves creating a `Document` object, using the `PageCollection`'s `insert` or `add` methods, and saving the modified document. The article includes code snippets demonstrating these tasks, showcasing how straightforward it is to manipulate PDF documents using Python with this API.
 ---

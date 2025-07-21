@@ -7,9 +7,9 @@ url: /python-net/add-and-delete-bookmark/
 description: You can add a bookmark to a PDF document with Python. It is possible to delete all or particular bookmarks from a PDF document.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to add, and remove Bookmarks using Python
 Abstract: This article provides comprehensive instructions on managing bookmarks in PDF documents using the Aspose.PDF library for Python. It outlines the processes for adding, modifying, and deleting bookmarks within a PDF. The article begins with a guide on adding a bookmark by creating an `OutlineItemCollection` object and appending it to the document's `OutlineCollection`. It includes code examples demonstrating the creation and addition of both parent and child bookmarks, highlighting a hierarchical relationship. Additionally, the article covers methods for deleting all bookmarks or a specific bookmark by title. Each section includes Python code snippets to illustrate the operations, ensuring readers can easily implement the described functionalities in their PDF manipulation tasks.
 ---

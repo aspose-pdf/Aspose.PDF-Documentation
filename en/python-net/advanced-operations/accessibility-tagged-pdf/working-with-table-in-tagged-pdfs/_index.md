@@ -7,7 +7,7 @@ url: /python-net/working-with-table-in-tagged-pdfs/
 description: This article explains how to works with table in Tagged PDF document with Aspose.PDF for Python via .NET.
 lastmod: "2025-06-17"
 sitemap:
-changefreq: "weekly"
+changefreq: "monthly"
 priority: 0.7
 ---
 
@@ -136,7 +136,7 @@ The following code snippet shows, how to create a table in the Tagged PDF docume
     # Check PDF/UA compliance
         with ap.Document(path_outfile) as document:
             is_pdf_ua_compliance = document.validate(path_logfile, ap.PdfFormat.PDF_UA_1)
-            print(f"PDF/UA compliance: {is_pdf_ua_compliance}")    
+            print(f"PDF/UA compliance: {is_pdf_ua_compliance}")
 ```
 
 ## Style Table Element

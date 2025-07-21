@@ -7,7 +7,7 @@ url: /python-net/setting-structure-elements-properties/
 description: You may set different structure elements properties in PDF document with Aspose.PDF for Python via .NET.
 lastmod: "2025-06-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

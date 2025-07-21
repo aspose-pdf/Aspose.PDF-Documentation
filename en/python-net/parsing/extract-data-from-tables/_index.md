@@ -7,9 +7,9 @@ url: /python-net/extract-data-from-table-in-pdf/
 description: Learn how to extract tabular from PDF using Aspose.PDF for Python
 lastmod: "2025-03-13"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to Extract Data from Table in PDF via Python
 Abstract: This article provides a comprehensive guide on programmatically extracting and processing tables from PDF documents using Aspose.PDF, a Python library. The article presents a Python script that opens a PDF document, iterates through each page, and extracts tables by utilizing the `TableAbsorber` class. The extracted table data is then structured and printed for further analysis.This section describes how to extract tables from specific marked regions within a PDF, such as areas enclosed by square annotations. The script identifies these annotations, initializes the `TableAbsorber`, and checks if the tables fall within the annotated regions before extracting and printing the data. The final section details a method to convert extracted tabular data from a PDF into a CSV file format.
 ---

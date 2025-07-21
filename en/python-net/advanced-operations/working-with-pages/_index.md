@@ -7,9 +7,9 @@ url: /python-net/working-with-pages/
 description: How to add pages, add headers and footers, add watermarks  you can know in this section. Aspose.PDF for Python via .NET explain to you all details on this topic.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to work with pages in PDF using Python
 Abstract: Aspose.PDF for Python via .NET provides comprehensive tools for manipulating PDF files programmatically without the need for Acrobat Reader. The library enables users to insert pages at any location within a PDF document, add pages to the end of a file, and delete pages as needed. Users can enhance their documents by adding text or images to headers and footers and applying watermarks using the Artifact class. Additional features include changing page sizes, rotating page orientations, splitting documents, moving pages between files, and cropping pages with specified properties. The library also supports adding page numbers via the PageNumberStamp class and creating background images using watermarks. Stamping capabilities are provided through the ImageStamp and TextStamp classes, allowing for the addition of image and text stamps. Furthermore, users can access and modify PDF page properties, such as color and other attributes, ensuring detailed customization of PDF documents. The library offers a user-friendly interface and thorough documentation for each feature, facilitating easy integration and utilization within Python.
 ---

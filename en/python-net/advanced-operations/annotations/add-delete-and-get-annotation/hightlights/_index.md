@@ -7,9 +7,9 @@ url: /python-net/highlights-annotation/
 description: Learn how to add highlights annotations to PDF files in Python using Aspose.PDF for text emphasis.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Guide on how to manipulate Highlights annotations in PDF
 Abstract: The article provides a comprehensive guide on how to use text markup annotations in PDF documents, focusing on the functionalities provided by the Aspose.PDF library in Python. It explains the purpose and usage of different types of annotations, including highlight, underline, strikeout, and squiggly annotations, each designed to emphasize or modify text in various ways. The document outlines the steps required to add these annotations to a PDF, including loading the document, creating the annotations with specific parameters like title and color, and appending them to the desired page. Additionally, the article includes code snippets for retrieving annotations from a PDF, allowing users to filter and print annotation details based on type. Finally, it details the process for deleting annotations, providing code examples for removing each type of text markup annotation from the document. This guide serves as a practical resource for developers aiming to manipulate text annotations in PDF files programmatically using Python.
 ---

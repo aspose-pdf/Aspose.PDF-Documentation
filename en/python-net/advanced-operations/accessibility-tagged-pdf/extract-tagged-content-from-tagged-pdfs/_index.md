@@ -7,7 +7,7 @@ url: /python-net/extract-tagged-content-from-tagged-pdfs/
 description: This article explains how to extract tagged content PDF document using Aspose.PDF for Python via .NET
 lastmod: "2025-06-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
