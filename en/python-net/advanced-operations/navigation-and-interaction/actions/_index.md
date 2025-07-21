@@ -381,7 +381,7 @@ A rectangular area is defined for the new button's position near the top of the 
 
 The button is then added to the form fields on the first page, and the modified PDF is saved to the output file. If any errors occur during this process, they are caught and printed. This feature provides users with a way to quickly hide all checkboxes in the PDF, which can be useful for customizing the document's appearance or workflow.
 
-### Appling Submit Action
+### Applying Submit Action
 
 ```python
 
