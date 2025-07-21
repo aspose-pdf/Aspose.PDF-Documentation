@@ -7,7 +7,7 @@ url: /python-net/update-links/
 description: Update links in PDF programmatically. This guide is about how to update links in PDF in Python language.
 lastmod: "2025-07-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to update Links in PDF

@@ -7,7 +7,7 @@ url: /python-net/create-links/
 description: This section explains how to create links in your PDF document with Python.
 lastmod: "2025-07-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to create Links in PDF

@@ -7,7 +7,7 @@ url: /python-net/extract-links/
 description: Discover how to extract hyperlinks from PDF documents in Python using Aspose.PDF for content management and link analysis.
 lastmod: "2025-07-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to extract Links from PDF

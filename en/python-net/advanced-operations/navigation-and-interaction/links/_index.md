@@ -7,7 +7,7 @@ url: /python-net/links/
 description: This guide is about how to add an internal page link in PDF or insert an external website hyperlink to PDF in Python language.
 lastmod: "2025-07-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Manipulations with Links in PDF

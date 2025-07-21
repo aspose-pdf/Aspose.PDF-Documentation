@@ -7,7 +7,7 @@ url: /python-net/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks with Python Library.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Work with links, actions and bookmarks with Python
