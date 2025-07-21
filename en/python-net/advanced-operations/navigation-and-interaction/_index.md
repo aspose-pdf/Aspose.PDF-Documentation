@@ -7,7 +7,7 @@ url: /python-net/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks with Python Library.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Work with links, actions and bookmarks with Python
@@ -15,4 +15,6 @@ Abstract: This article discusses the functionality and benefits of bookmarks in 
 ---
 
 - [Bookmarks](/pdf/python-net/bookmarks/)- large publications usually include a framework of bookmarks that can be easily viewed and selected in the Bookmarks Pane, allowing you to click on a bookmark to jump to the page or chapter it represents. The Bookmarks Pane is a content-aware element, and is visible in the side-bar only if the open PDF document contains a bookmark structure.
+- [Links](/pdf/python-net/links/)- work with Links in the PDF documents using Python library.
 - [Actions](/pdf/python-net/actions/) - in this article, you will learn how to work with differnt types of actions.
+
