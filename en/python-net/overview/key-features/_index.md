@@ -4,7 +4,7 @@ linktitle: Key Features
 type: docs
 weight: 20
 url: /python-net/key-features/
-description: Aspose.PDF for Python via .NET demonstrates its general features. Its shows the supported PDF versions, and all the manipulations we can do with PDF.
+description: Aspose.PDF for Python via .NET highlights its main features, including supported PDF versions and available PDF manipulation options.
 lastmod: "2025-02-21"
 sitemap:
     changefreq: "monthly"
