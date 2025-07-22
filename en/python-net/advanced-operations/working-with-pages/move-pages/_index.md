@@ -7,9 +7,9 @@ url: /python-net/move-pages/
 description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for Python via .NET.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Moving Pages between PDF documents using Python
 Abstract: The article provides a comprehensive guide on moving pages between PDF documents or within a single PDF document using Python, specifically utilizing the Aspose.PDF library. It outlines step-by-step processes for three scenarios - moving a single page from one PDF to another, transferring multiple pages, and relocating a page within the same document. Each scenario involves creating `Document` class objects for source and destination PDFs, manipulating pages through the `PageCollection` class, and utilizing the `add`, `delete`, and `save` methods to achieve the desired page reorganization. Code snippets are provided for practical implementation, demonstrating how to move pages efficiently using Python scripts.
 ---

@@ -7,9 +7,9 @@ url: /python-net/working-with-operators/
 description: This topic explains how to use operators with Aspose.PDF for Python via .NET. The operator classes provide great features for PDF manipulation.
 lastmod: "2025-05-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Using Operators in PDF with Aspose.PDF for Python via .NET
 Abstract: The article provides an in-depth exploration of PDF operators and their applications in manipulating PDF content streams. Operators are specialized keywords in PDF that direct particular actions, such as rendering graphical elements on a page, and are only valid within content streams. The article details a method to exert precise control over image placement in PDFs by directly manipulating content streams using low-level graphics operators. This approach is beneficial for tasks requiring exact image positioning, such as adding watermarks, aligning overlays, and creating custom layouts. Specific operators like GSave, ConcatenateMatrix, Do, and GRestore are emphasized for their roles in managing graphical states and transformations, ensuring accurate rendering without affecting other page content.
 ---

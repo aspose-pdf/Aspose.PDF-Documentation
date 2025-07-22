@@ -7,7 +7,7 @@ url: /python-net/create-tagged-pdf/
 description: This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for Python via .NET.
 lastmod: "2025-06-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

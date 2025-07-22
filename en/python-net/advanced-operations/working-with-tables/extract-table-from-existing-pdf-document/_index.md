@@ -7,9 +7,9 @@ url: /python-net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for Python via .NET makes it possible to carry out various manipulations with the tables contained in your pdf document.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to extract Table from PDF using Python
 Abstract: This article discusses the process of extracting tables from PDF documents using Python, specifically leveraging the Aspose.PDF for Python via .NET Library. It provides a code example demonstrating how to load a PDF document, iterate through its pages, and utilize the `TableAbsorber` class to identify and extract table data. The code iterates through each table, row, and cell, collecting text fragments and printing the extracted text. This method is highlighted as a powerful tool for data extraction and analysis tasks involving tabular data within PDFs.
 ---

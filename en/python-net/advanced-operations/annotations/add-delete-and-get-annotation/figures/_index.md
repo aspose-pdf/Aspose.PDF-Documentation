@@ -7,9 +7,9 @@ url: /python-net/figures-annotation/
 description: This article describes how to add, get, and delete figures annotations from your PDF document with Aspose.PDF for Python via .NET
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Guide on how to manipulate Figures annotations in PDF
 Abstract: This article provides a comprehensive guide on adding, retrieving, and deleting square, circle, polygon, and polyline annotations in PDF documents using Aspose.PDF for Python. Square and circle annotations visually highlight specific areas on a PDF page with rectangular and elliptical shapes, respectively. The article includes step-by-step instructions and Python code snippets for creating these annotations by loading a PDF file, configuring annotation properties such as title, color, and opacity, and appending them to the PDF pages. Additionally, the article details methods to retrieve annotations by type, printing their rectangular dimensions, and deleting them from the PDF document. Polygon and polyline annotations are also covered, wherein polygons are defined by a series of connected vertices forming a closed shape, while polylines connect vertices in an open-ended manner. The document provides code examples to illustrate the processes of adding these annotations to a PDF, as well as methods for accessing and removing them.
 
@@ -19,7 +19,7 @@ Abstract: This article provides a comprehensive guide on adding, retrieving, and
 
 In PDF documents, a square annotation refers to a specific type of annotation that is represented by a square shape. Square annotations are used to highlight or draw attention to a specific area or section within the document.
 
-[Square](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) and [Circle](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) annotations shall display, respectively, a rectangle or an ellipse on the page. 
+[Square](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) and [Circle](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) annotations shall display, respectively, a rectangle or an ellipse on the page.
 
 Steps for creating Square or Circle Annotations:
 

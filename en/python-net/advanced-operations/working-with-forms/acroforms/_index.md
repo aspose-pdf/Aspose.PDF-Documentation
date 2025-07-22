@@ -7,9 +7,9 @@ url: /python-net/acroforms/
 description: With Aspose.PDF for Python you may create a form from scratch, fill the form field in a PDF document, extract data from the form, and etc.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to work with AcroForms with Python
 Abstract: AcroForms, introduced by Adobe in 1998, represent a unique PDF form technology that is page-oriented and compatible across all platforms. Unlike static or dynamic XFA forms, AcroForms allow for data input through FDF and xFDF formats. Supported by third-party providers, AcroForms can be used to add pages to PDF documents and populate forms with multiple database records, making them versatile for various applications. This technology, part of the PDF 1.2 format specification and supported up to PDF 1.7, offers two methods for integrating data with PDF forms. For practical applications and further learning, resources are available on creating, filling, and extracting AcroForms using Python.
 ---

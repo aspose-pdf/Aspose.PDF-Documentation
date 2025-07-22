@@ -7,9 +7,9 @@ url: /python-net/determine-line-break/
 description: Learn more about how to determinate a line break of multi-line TextFragment using Python
 lastmod: "2025-05-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to Determine Line Break in PDF using Python
 Abstract: This article presents a method for tracking the line-breaking behavior of multi-line `TextFragment` objects within a PDF document using a code snippet based on the Aspose.PDF library. The core function, `track_line_breaking()`, is designed to generate a PDF document and a corresponding text file that details the line-breaking notifications. The process involves creating a new PDF document, adding a page, and inserting four instances of `TextFragment` with pre-inserted line breaks to simulate multi-line text. Each text fragment is set to a font size of 20 points before being added to the document. After saving the PDF, the function extracts line-breaking notifications from the document's second page using the `get_notifications()` method and writes these to a text file. This example demonstrates how to programmatically create a PDF with multi-line text and analyze its layout by extracting line-break information, offering insights into text rendering within PDF documents.
 ---

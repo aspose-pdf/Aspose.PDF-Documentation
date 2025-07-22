@@ -7,9 +7,9 @@ url: /python-net/extract-text-from-pdf/
 description:  This section contains articles on text extraction from PDF documents using Aspose.PDF in Python.
 lastmod: "2025-03-13"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to Extract Text from PDF via Python
 Abstract: The article provides a step-by-step guide on extracting text from PDF documents using two different methods. The first method involves converting the entire content of a PDF into plain text, which is useful for applications like text analysis, search indexing, or data extraction. This process includes loading the PDF, initializing a text absorber, extracting text from all pages, and writing the extracted text to a file. The second method focuses on extracting highlighted text from a PDF, which aids in reviewing key points or summarizing content. This involves identifying and printing text from highlight annotations found on specific pages of the document. Both methods utilize the Aspose.PDF library in Python to accomplish the tasks.
 ---
@@ -62,4 +62,43 @@ This code snippet extracts highlighted text from a PDF document, which can help 
         if is_assignable(annotation, apdf.annotations.HighlightAnnotation):
             highlight_annotation = cast(apdf.annotations.HighlightAnnotation, annotation)
             print(highlight_annotation.get_marked_text())
+```
+
+## Extract Text from Stamp Annotations
+
+Aspose.PDF for Python lets you extract text from stamp annotations. In order to extract text from Stamp Annotations in a PDF, the following steps can be used:
+
+1. Load the PDF Document
+1. Access the First Page
+1. Iterate Through Annotations
+1. Check for Stamp Annotations
+1. Initialize a Text Absorber
+1. Extract Appearance Information
+1. Extract Text from the Appearance Stream
+1. Print the Extracted Text
+
+```python
+
+    import aspose.pdf as apdf
+    from io import FileIO
+    from os import path
+    import json
+    from aspose.pycore import cast, is_assignable
+
+    path_infile = path.join(self.dataDir, infile)
+
+    document = apdf.Document(path_infile)
+    page = document.pages[1]
+    # Get the annotation from the first page (index 0-based in Python)
+    for annotation in page.annotations:
+        if annotation.annotation_type == apdf.annotations.AnnotationType.STAMP:
+            absorber = apdf.text.TextAbsorber()
+            xforms = []
+            # Get the appearance of the annotation
+            if (annotation.appearance.try_get_value('N', xforms)):
+                # Extract text from the appearance
+                absorber.visit(xforms[0])
+
+                # Print extracted text
+                print(absorber.text)
 ```

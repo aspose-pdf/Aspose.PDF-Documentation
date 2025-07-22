@@ -7,9 +7,9 @@ url: /python-net/portfolio/
 description: How to Create a PDF Portfolio with Python. You should use a Microsoft Excel File, a Word document, and an image file to create a PDF Portfolio.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to work with Portfolio in PDF with Python
 Abstract: This article discusses the creation and management of PDF portfolios using Aspose.PDF for Python via .NET. A PDF portfolio facilitates the consolidation of various file types—such as text files, images, spreadsheets, and presentations—into a single, organized document, ensuring all relevant materials are stored collectively. The article outlines the process of creating a PDF portfolio, highlighting the use of the `Document` class and the `FileSpecification` class to add files to a document collection. An example is provided, demonstrating the inclusion of a Microsoft Excel file, a Word document, and an image file into a PDF portfolio. Additionally, the article includes code snippets for both creating a portfolio and removing files from it, illustrating the simplicity and efficiency of managing PDF portfolios with Aspose.PDF for Python.
 ---

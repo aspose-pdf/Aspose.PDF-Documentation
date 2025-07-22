@@ -7,9 +7,9 @@ url: /python-net/extract-fonts-from-pdf/
 description: Use the Aspose.PDF for Python library to extract all embedded fonts from your PDF document.
 lastmod: "2025-03-13"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to Extract Fonts from PDF using Python
 Abstract: This article provides guidance on extracting all fonts from a PDF document using a specific method from the Aspose.PDF library. It introduces the `font_utilities.get_all_fonts()` method available in the `Document` class, which facilitates the retrieval of font information. The article includes a Python code snippet demonstrating the process, which involves importing necessary modules, opening the PDF document, and iterating through the fonts to print each font's name. This approach is useful for developers needing to analyze or manipulate font data within PDF files.
 ---

@@ -7,9 +7,9 @@ url: /python-net/extract-form/
 description: Extract form from your PDF document with Aspose.PDF for Python library. Get value from an individual field of PDF file.
 lastmod: "2025-02-27"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: How to get Form Data from PDF using Python
 Abstract: This article provides a guide on extracting data from form fields within a PDF document using Python. It describes how to navigate through all the fields using the Aspose.PDF library, specifically by accessing the `Form` collection and utilizing the `Field` type and its `value` property. A sample Python code snippet is included, demonstrating how to open a PDF document, iterate through its form fields, and print each field's name and value. This method is useful for programmatically retrieving form data from PDF files.
 ---
