@@ -4,7 +4,7 @@ linktitle: Working with Pages
 type: docs
 weight: 20
 url: /python-net/working-with-pages/
-description: How to add pages, add headers and footers, add watermarks  you can know in this section. Aspose.PDF for Python via .NET explain to you all details on this topic.
+description: How to manipulate pages in PDF documents programmatically using Aspose.PDF for Python via .NET library.
 lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
