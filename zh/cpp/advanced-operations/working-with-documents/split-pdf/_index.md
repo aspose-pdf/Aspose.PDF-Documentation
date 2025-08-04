@@ -7,7 +7,7 @@ url: /zh/cpp/split-pdf-document/
 description: 本主题展示如何使用 C++ 将 PDF 页面拆分为单独的 PDF 文件。
 lastmod: "2022-09-01"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -31,7 +31,7 @@ void SplittingDocuments() {
 
     // 输入文件名的字符串
     String documentFileName("sample.pdf");
-    
+
     // 打开文档
     auto document = MakeObject<Document>(_dataDir + documentFileName);
 

@@ -7,7 +7,7 @@ url: /id/cpp/split-pdf-document/
 description: Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individu dengan C++.
 lastmod: "2022-09-01"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -33,7 +33,7 @@ void SplittingDocuments() {
 
     // String untuk nama file input
     String documentFileName("sample.pdf");
-    
+
     // Buka dokumen
     auto document = MakeObject<Document>(_dataDir + documentFileName);
 

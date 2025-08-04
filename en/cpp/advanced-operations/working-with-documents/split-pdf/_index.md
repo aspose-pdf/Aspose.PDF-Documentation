@@ -7,7 +7,7 @@ url: /cpp/split-pdf-document/
 description: This topic shows how to split PDF pages into individual PDF files with C++.
 lastmod: "2022-09-01"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -32,7 +32,7 @@ void SplittingDocuments() {
 
     // String for input file name
     String documentFileName("sample.pdf");
-    
+
     // Open document
     auto document = MakeObject<Document>(_dataDir + documentFileName);
 
