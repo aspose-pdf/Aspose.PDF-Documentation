@@ -7,7 +7,7 @@ url: /ko/cpp/split-pdf-document/
 description: 이 주제는 C++로 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다.
 lastmod: "2022-09-01"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -20,7 +20,7 @@ sitemap:
 이 주제는 C++ 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다. C++를 사용하여 PDF 페이지를 단일 페이지 PDF 파일로 분할하려면 다음 단계를 따를 수 있습니다:
 
 1. [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) 객체의 [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) 컬렉션을 통해 PDF 문서의 페이지를 반복합니다.
-1. 각 반복마다 새로운 Document 객체를 생성하고 개별 [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) 객체를 빈 문서에 복사합니다.  
+1. 각 반복마다 새로운 Document 객체를 생성하고 개별 [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) 객체를 빈 문서에 복사합니다.
 1. Save 메소드를 사용하여 새 PDF를 저장합니다.
 
 다음 C++ 코드 스니펫은 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다.
@@ -32,7 +32,7 @@ void SplittingDocuments() {
 
     // 입력 파일 이름을 위한 문자열
     String documentFileName("sample.pdf");
-    
+
     // 문서 열기
     auto document = MakeObject<Document>(_dataDir + documentFileName);
 

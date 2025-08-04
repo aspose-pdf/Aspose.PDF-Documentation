@@ -7,7 +7,7 @@ url: /ar/cpp/split-pdf-document/
 description: يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية باستخدام C++.
 lastmod: "2022-09-01"
 sitemap:
-    changefreq: "monthy"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -20,7 +20,7 @@ sitemap:
 يشرح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات C++ الخاصة بك. لتقسيم صفحات PDF إلى ملفات PDF ذات صفحة واحدة باستخدام C++، يمكن اتباع الخطوات التالية:
 
 1. قم بالتنقل عبر صفحات مستند PDF من خلال مجموعة [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) لكائن [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document)
-1. لكل تكرار، قم بإنشاء كائن Document جديد ونسخ كائن [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) الفردي إلى المستند الفارغ  
+1. لكل تكرار، قم بإنشاء كائن Document جديد ونسخ كائن [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) الفردي إلى المستند الفارغ
 1. احفظ ملف PDF الجديد باستخدام طريقة الحفظ
 
 يوضح لك مقتطف الشفرة C++ التالي كيفية تقسيم صفحات PDF إلى ملفات PDF فردية.
@@ -32,7 +32,7 @@ void SplittingDocuments() {
 
     // سلسلة لاسم الملف المدخل
     String documentFileName("sample.pdf");
-    
+
     // فتح المستند
     auto document = MakeObject<Document>(_dataDir + documentFileName);
 
