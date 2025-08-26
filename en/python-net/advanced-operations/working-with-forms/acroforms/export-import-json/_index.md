@@ -84,10 +84,35 @@ Use the following steps:
         form.export_xml(f)
 ```
 
-## 
+## Import Form field Data from an FDF
 
+The 'import_data_from_fdf' method imports form field data from an FDF (Forms Data Format) file into an existing PDF form and saves the updated document. This approach is useful for pre-filling or updating PDF forms programmatically without modifying the structure of the document.
 
+Use the following steps:
 
+1. Create Form Object.
+1. Bind the input PDF.
+1. Import the form data with import_fdf().
+1. Save the PDF with the imported data to the specified output file path.
+
+```python
+
+    from io import FileIO, StringIO
+    import json
+    from os import path
+    import aspose.pdf as ap
+
+    path_infile = path.join(self.workdir_path, infile)
+    path_datafile = path.join(self.workdir_path, datafile)
+    path_outfile = path.join(self.workdir_path, outfile)
+
+    form = ap.facades.Form()
+    form.bind_pdf(path_infile)
+
+    with FileIO(path_datafile, "r") as f:
+        form.import_fdf(f)
+        form.save(path_outfile)
+```
 
 
 
