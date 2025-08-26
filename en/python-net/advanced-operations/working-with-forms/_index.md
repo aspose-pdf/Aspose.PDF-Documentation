@@ -19,4 +19,4 @@ This section describes a quick and simple approach to programmatically completin
 AcroForms allows users to fill in, submit and store the forms electronically, making them a convenient and efficient way to collect information.
 
 - [AcroForms](/pdf/python-net/acroforms/) - create form, fill form field, extract data from form, add and remove fields in your PDF with Python library.
-
+- [XFA Forms](/pdf/python-net/xfa-forms/) - convert XFA, use of IgnoreNeedsRendering.
