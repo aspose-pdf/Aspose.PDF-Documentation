@@ -20,4 +20,3 @@ This section describes how to securely digitally sign PDF documents using Python
 - [Set Privileges, Encrypt and Decrypt PDF File](/pdf/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [Extract Image and Signature Information](/pdf/python-net/extract-image-and-signature-information/)
 - [Sign PDF Document From Smart Card](/pdf/python-net/sign-pdf-document-from-smart-card/)
-- [Set Privileges, Encrypt and Decrypt PDF](/pdf/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)
