@@ -86,7 +86,6 @@ Aspose.PDF for Python supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 2.
 - Get page count
 - Get a Particular Page
 
-
 ## Document
 
 - Create PDF File
@@ -134,6 +133,7 @@ Aspose.PDF for Python supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 2.
 - Modify fields.
 - Fill fields.
 - Get field values.
+- Support for XFA (XML based Forms) and AcroForms (Standard Forms).
 
 ## Stamp and Watermark
 
