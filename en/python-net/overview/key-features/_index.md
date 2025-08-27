@@ -23,6 +23,12 @@ Abstract: Aspose.PDF for Python via .NET is a robust library offering extensive 
 - Set page numbering, bookmark level, page sizes etc.
 - Ability to work with text, paragraphs, headings, hyperlinks, graphs, attachments etc.
 
+## Supported PDF standards
+
+- ISO 32000-1 (PDF 1.2, PDF 1.3, PDF 1.4, PDF 1.5, PDF 1.6, PDF 1.7).
+- ISO 32000-2 (PDF 2.0).
+- ISO 19005 (PDF/A), ISO 15930 (PDF/X), ISO 24517 (PDF/E), ISO 14289 (PDF/UA).
+
 ## Conversion Features
 
 Aspose.PDF for Python via .NET library allows you to successfully, quickly and easily convert your PDF documents to the most popular formats and vice versa.
@@ -43,6 +49,15 @@ Aspose.PDF for Python supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 2.
 - Search text from pages.
 - Replace text.
 - Add text in PDF file.
+
+## Fonts
+
+- 14 core fonts.
+- Type 1 fonts.
+- TrueType fonts.
+- Type 3 fonts.
+- CJK fonts.
+- Unicode support.
 
 ## Images
 
@@ -70,7 +85,6 @@ Aspose.PDF for Python supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 2.
 - Get Number of Pages
 - Get page count
 - Get a Particular Page
-
 
 ## Document
 
@@ -119,6 +133,7 @@ Aspose.PDF for Python supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 2.
 - Modify fields.
 - Fill fields.
 - Get field values.
+- Support for XFA (XML based Forms) and AcroForms (Standard Forms).
 
 ## Stamp and Watermark
 

@@ -34,8 +34,12 @@ The following table indicates the file formats that Aspose.PDF Python can load a
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Saves the document in the Microsoft Excel SpreadSheet| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Saves the document in the Microsoft Excel 2007 format| |{{< emoticons/tick >}}| |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Saves the document in the Microsoft PowerPoint Presentations format| |{{< emoticons/tick >}}| |
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Saves the document in the XLSM format that is a type of Spreadsheet files that support Macros.||{{< emoticons/tick >}} | |
 |[DOC](https://docs.fileformat.com/word-processing/doc/)|Saves the document in the Microsoft Word format| |{{< emoticons/tick >}}| |
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Saves the document in the Microsoft Word format| |{{< emoticons/tick >}}| |
+|[OFD](https://en.wikipedia.org/wiki/OFD)|OFD format refers to “Open Fixed-layout Document”, established as China’s national standard for electronic file storage, used as an alternative to the popular PDF format.|{{< emoticons/tick >}}| | |
+|[DJVU](https://docs.fileformat.com/image/djvu/)|DjVu is a graphics file format intended for scanned documents and books developed by AT&T Labs|{{< emoticons/tick >}}| | |
+|[CDR](https://docs.fileformat.com/image/cdr/)|A CDR file is a vector drawing image file that is natively created with CorelDRAW|{{< emoticons/tick >}}| | |
 |[MobiXML](https://docs.fileformat.com/ebook/mobi/)|Saves the document in eBook MobiXML Standard format| |{{< emoticons/tick >}}| |
 |[JPEG](https://docs.fileformat.com/image/jpeg/)|Saves the document in JPEG Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 |[EMF](https://docs.fileformat.com/image/emf/)|Enhanced metafile format (EMF)|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
