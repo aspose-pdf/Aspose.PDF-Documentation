@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-## Adding Link Annotation into existing PDF file
+## Add Link Annotation into existing PDF file
 
 [Links](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/linkannotation/) are annotations that open URLs or move to certain positions within the same or within an external document when you click.
 
