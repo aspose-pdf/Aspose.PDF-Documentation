@@ -21,65 +21,65 @@ This package includes a large file which is stored as a bzip2 archive.
 
 1. Add the asposepdf package to Your Project:
 
-    ```sh
-    go get github.com/aspose-pdf/aspose-pdf-go-cpp@latest
-    ```
+```sh
+go get github.com/aspose-pdf/aspose-pdf-go-cpp@latest
+```
 
 2. Generate the large file:
 
-For **macOS and linux**
+- **macOS and linux**
 
-  1. Open Terminal
+1. Open Terminal
 
-  1. List the folders of the github.com/aspose-pdf within the Go module cache:
+2. List the folders of the github.com/aspose-pdf within the Go module cache:
 
-        ```sh
-        ls $(go env GOMODCACHE)/github.com/aspose-pdf/
-        ```
+```sh
+ls $(go env GOMODCACHE)/github.com/aspose-pdf/
+```
 
-  1. Change curent folder to the specific version folder of the package obtained in the previous step:
+3. Change curent folder to the specific version folder of the package obtained in the previous step:
 
-      ```sh
-      cd $(go env GOMODCACHE)/github.com/aspose-pdf/aspose-pdf-go-cpp@vx.x.x
-      ```
+```sh
+cd $(go env GOMODCACHE)/github.com/aspose-pdf/aspose-pdf-go-cpp@vx.x.x
+```
 
-      Replace `@vx.x.x` with the actual package version.
+Replace `@vx.x.x` with the actual package version.
 
-  1. Run go generate with superuser privileges:
+4. Run go generate with superuser privileges:
 
-      ```sh
-      sudo go generate
-      ```
+```sh
+sudo go generate
+```
 
-For **Windows**
+- **Windows**
 
-  1. Open Command Prompt
-  
-  1. List the folders of the github.com/aspose-pdf within the Go module cache:
+1. Open Command Prompt
 
-      ```cmd
-      for /f "delims=" %G in ('go env GOMODCACHE') do for /d %a in ("%G\github.com\aspose-pdf\*") do echo %~fa
-      ```
+2. List the folders of the github.com/aspose-pdf within the Go module cache:
 
-  1. Change curent folder to the specific version folder of the package obtained in the previous step:
+```cmd
+for /f "delims=" %G in ('go env GOMODCACHE') do for /d %a in ("%G\github.com\aspose-pdf\*") do echo %~fa
+```
 
-      ```cmd
-      cd <specific version folder of the package>
-      ```
+3. Change curent folder to the specific version folder of the package obtained in the previous step:
 
-  1. Run go generate:
+```cmd
+cd <specific version folder of the package>
+```
 
-      ```cmd
-      go generate
-      ```
+4. Run go generate:
 
-  1. Add specific version folder of the package to the %PATH% environment variable:
+```cmd
+go generate
+```
 
-      ```cmd
-      setx PATH "%PATH%;<specific version folder of the package>\lib\"
-      ```
+5. Add specific version folder of the package to the %PATH% environment variable:
 
-      Replace `<specific version folder of the package>` with the actual path obtained from step 2.
+```cmd
+setx PATH "%PATH%;<specific version folder of the package>\lib\"
+```
+
+Replace `<specific version folder of the package>` with the actual path obtained from step 2.
 
 ## Testing
 
