@@ -24,5 +24,6 @@ We have combined the different kinds of annotation available for the Aspose.PDF 
 - [PDF Highlights Annotation](/pdf/python-net/highlights-annotation/)
 - [PDF Figures Annotation](/pdf/python-net/figures-annotation/)
 - [PDF sticky Annotations](/pdf/python-net/sticky-annotations/)
+- [Link Annotations](/pdf/python-net/link-annotations/)
 - [Extra Annotations](/pdf/python-net/extra-annotations/)
 
