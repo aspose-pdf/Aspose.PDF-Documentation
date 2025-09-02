@@ -26,13 +26,21 @@ The following Python code snippets show how to get the values of all the fields 
 
     import aspose.pdf as ap
 
-    # Open document
-    pdfDocument = ap.Document(input_file)
+    # Construct the full path to the input PDF file
+    path_infile = dataDir + infile
 
-    # Get values from all fields
-    for formField in pdfDocument.form.fields:
-        # Analyze names and values if need
-        print("Field Name : " + formField.partial_name)
-        print("Value : " + str(formField.value))
+    # Create a Form object from the PDF file
+    form = ap.facades.Form(path_infile)
+
+    # Initialize an empty dictionary to store form values
+    form_values = {}
+
+    # Iterate through all form fields in the PDF
+    for formField in form.field_names:
+        # Retrieve the value for each form field and store in the dictionary
+        form_values[formField] = form.get_field(formField)
+
+    # Print and return the extracted form values
+    print(form_values)
 ```
 
