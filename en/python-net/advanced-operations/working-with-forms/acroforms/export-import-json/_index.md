@@ -2,7 +2,7 @@
 title: Import and Export Form Data 
 type: docs
 weight: 80
-url: /python-net/import-export-json/
+url: /python-net/import-export-form-data/
 description: This section explains how to import and Export Form Data.
 lastmod: "2025-08-05"
 TechArticle: true
