@@ -1,10 +1,10 @@
 ---
-title: Modifing AcroForm
-linktitle: Modifing AcroForm
+title: Modifying AcroForm
+linktitle: Modifying AcroForm
 type: docs
 weight: 45
-url: /python-net/modifing-form/
-description: Modifing form in your PDF file with Aspose.PDF for Python via .NET library. You can Add or remove fields in existing form, getand set fieldlimit and etc.
+url: /python-net/modifying-form/
+description: Modifying form in your PDF file with Aspose.PDF for Python via .NET library. You can Add or remove fields in existing form, get and set field limit and etc.
 lastmod: "2025-02-17"
 sitemap:
     changefreq: "weekly"
