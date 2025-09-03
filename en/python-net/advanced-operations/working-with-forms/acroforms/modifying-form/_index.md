@@ -4,7 +4,7 @@ linktitle: Modifying AcroForm
 type: docs
 weight: 45
 url: /python-net/modifying-form/
-description: Modifying form in your PDF file with Aspose.PDF for Python via .NET library. You can Add or remove fields in existing form, get and set field limit and etc.
+description: Modifying form in your PDF file with Aspose.PDF for Python via .NET library. You can add or remove fields in existing form, get and set field limit and etc.
 lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
@@ -20,7 +20,7 @@ This example demonstrates how to clear text from Typewriter form fields in a PDF
 
 1. Load the input PDF document.
 1. Access forms on the first page.
-1. Iterate over each form and check if it is a “Typewriter” form.
+1. Iterate over each form and check if it is a `Typewriter` form.
 1. Use TextFragmentAbsorber to find text fragments in the form.
 1. Clear the text of each fragment.
 1. Save the modified PDF to the output file.
