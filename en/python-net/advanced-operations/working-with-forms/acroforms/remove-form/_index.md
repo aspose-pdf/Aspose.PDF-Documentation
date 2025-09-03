@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Remove Forms from PDF with Aspose.PDF for Python via .NET
-Abstract: This document presents two Python-based approaches for removing form elements from PDF files using Aspose.PDF for Python via .NET. The first method demonstrates how to clear all form objects from a specific page by accessing its resource dictionary and invoking the clear() method on the forms collection. The second method provides a more targeted solution by iterating through form annotations, identifying typewriter-style forms, and selectively deleting them based on their attributes. Both techniques conclude with saving the updated PDF to a specified output path, offering flexible options for form cleanup and document refinement in automated workflows.    
+Abstract: This document presents two Python-based approaches for removing form elements from PDF files using Aspose.PDF for Python via .NET. The first method demonstrates how to clear all form objects from a specific page by accessing its resource dictionary and invoking the clear() method on the forms collection. The second method provides a more targeted solution by iterating through form annotations, identifying typewriter-style forms, and selectively deleting them based on their attributes. Both techniques conclude with saving the updated PDF to a specified output path, offering flexible options for form cleanup and document refinement in automated workflows.
 ---
 
 ## Remove all Forms from PDF
@@ -28,8 +28,10 @@ This code removes all form elements from the first page of a PDF document and th
     import aspose.pdf as ap
     import os
 
-    path_infile = os.path.join(self.dataDir, infile)
-    path_outfile = os.path.join(self.dataDir, outfile)
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(data_dir, infile)
+    path_outfile = os.path.join(data_dir, outfile)
+
     document = ap.Document(path_infile)
     forms = document.pages[page_num].resources.forms
     forms.clear()
@@ -52,8 +54,10 @@ Next example iterates through the form objects on a given PDF page, identifies t
     import aspose.pdf as ap
     import os
 
-    path_infile = os.path.join(self.dataDir, infile)
-    path_outfile = os.path.join(self.dataDir, outfile)
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
+
     document = ap.Document(path_infile)
     forms = document.pages[page_num].resources.forms
     for form in forms:

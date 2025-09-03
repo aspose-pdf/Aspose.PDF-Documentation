@@ -63,8 +63,9 @@ The FormEditor class set_field_limit(field, limit) method allows you to set a fi
     from aspose.pycore import cast, is_assignable
 
     # The path to the documents directory
-    path_infile = self.dataDir + infile
-    path_outfile = self.dataDir + outfile
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
 
     # Create FormEditor instance
     form = ap.facades.FormEditor()
@@ -87,7 +88,8 @@ Similarly, Aspose.PDF has a method that gets the field limit.
     from aspose.pycore import cast, is_assignable
 
     # The path to the documents directory
-    path_infile = self.dataDir + infile
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
 
     document = ap.Document(path_infile)
     if is_assignable(document.form[1], ap.forms.TextBoxField):
@@ -108,8 +110,9 @@ The following code snippet shows how to set the default font for PDF form fields
     import aspose.pdf as ap
     from aspose.pycore import cast, is_assignable
 
-    path_infile = self.dataDir + infile
-    path_outfile = self.dataDir + outfile
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
 
     document = ap.Document(path_infile)
     if is_assignable(document.form[1], ap.forms.TextBoxField):
@@ -133,8 +136,9 @@ This code removes a specific form field (by its name) from a PDF document and sa
     import aspose.pdf as ap
     from aspose.pycore import cast, is_assignable
 
-    path_infile = self.dataDir + infile
-    path_outfile = self.dataDir + outfile
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
 
     document = ap.Document(path_infile)
     # Delete a particular field by name
