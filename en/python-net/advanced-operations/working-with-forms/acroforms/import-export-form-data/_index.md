@@ -29,10 +29,13 @@ Use the following steps:
     from os import path
     import aspose.pdf as ap
 
+    # Define the working directory path
+    workdir_path = "/path/to/working/directory"
+
     # Construct full file paths using the working directory
-    path_infile = path.join(self.workdir_path, infile)
-    path_datafile = path.join(self.workdir_path, datafile)
-    path_outfile = path.join(self.workdir_path, outfile)
+    path_infile = path.join(workdir_path, infile)
+    path_datafile = path.join(workdir_path, datafile)
+    path_outfile = path.join(workdir_path, outfile)
 
     # Create a Form object from Aspose.PDF
     form = ap.facades.Form()
