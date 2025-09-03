@@ -7,7 +7,7 @@ url: /python-net/modifying-form/
 description: Modifying form in your PDF file with Aspose.PDF for Python via .NET library. You can Add or remove fields in existing form, get and set field limit and etc.
 lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Managing and Customizing PDF Form Fields
