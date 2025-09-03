@@ -22,8 +22,11 @@ The next example fills PDF form fields with new values using Aspose.PDF for Pyth
 
     import aspose.pdf as ap
 
-    path_infile = self.dataDir + infile
-    path_outfile = self.dataDir + outfile
+    dataDir = "/path/to/your/pdf/files/"
+    infile = "input.pdf"
+    outfile = "output.pdf"
+    path_infile = dataDir + infile
+    path_outfile = dataDir + outfile
 
     # Define the new field values
     new_field_values = {
