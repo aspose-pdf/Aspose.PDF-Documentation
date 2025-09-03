@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Managing and Customizing PDF Form Fields
-Abstract: This collection of examples showcases various techniques for managing and customizing PDF form fields using Aspose.PDF for Python via .NET. It includes methods for clearing text from Typewriter-style form fields using TextFragmentAbsorber, setting and retrieving character limits with FormEditor, applying custom fonts and styling to text box fields, and removing specific form fields by name. These operations enable developers to sanitize, format, and tailor PDF forms for redistribution, branding, or data validation purposes, supporting both aesthetic and functional refinement in automated document workflows.    
+Abstract: This collection of examples showcases various techniques for managing and customizing PDF form fields using Aspose.PDF for Python via .NET. It includes methods for clearing text from Typewriter-style form fields using TextFragmentAbsorber, setting and retrieving character limits with FormEditor, applying custom fonts and styling to text box fields, and removing specific form fields by name. These operations enable developers to sanitize, format, and tailor PDF forms for redistribution, branding, or data validation purposes, supporting both aesthetic and functional refinement in automated document workflows.
 ---
 
 ## Clear Text in Form
@@ -96,7 +96,7 @@ Similarly, Aspose.PDF has a method that gets the field limit.
 
 ## Set Custom Font for the Form Field
 
-Form fields in Adobe PDF files can be configured to use specific default fonts. In the early versions of Aspose.PDF, only the 14 default fonts were supported. Later releases allowed developers to apply any font. 
+Form fields in Adobe PDF files can be configured to use specific default fonts. In the early versions of Aspose.PDF, only the 14 default fonts were supported. Later releases allowed developers to apply any font.
 
 This code updates the appearance of a text box field in a PDF form by setting a custom font, size, and color, and then saves the modified document using Aspose.PDF for Python via .NET.
 
