@@ -30,8 +30,9 @@ This example demonstrates how to clear text from Typewriter form fields in a PDF
     import aspose.pdf as ap
     from aspose.pycore import cast, is_assignable
 
-    path_infile = self.dataDir + infile
-    path_outfile = self.dataDir + outfile
+    dataDir = "path/to/your/data/dir/"
+    path_infile = dataDir + infile
+    path_outfile = dataDir + outfile
     document = ap.Document(path_infile)
 
     # Get the forms from the first page
