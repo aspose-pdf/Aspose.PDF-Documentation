@@ -44,4 +44,3 @@ The following Python code snippets show how to get the values of all the fields 
     # Print and return the extracted form values
     print(form_values)
 ```
-

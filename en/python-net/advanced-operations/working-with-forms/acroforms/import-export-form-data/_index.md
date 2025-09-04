@@ -1,5 +1,5 @@
 ---
-title: Import and Export Form Data 
+title: Import and Export Form Data
 type: docs
 weight: 80
 url: /python-net/import-export-form-data/
@@ -39,7 +39,7 @@ Use the following steps:
 
     # Create a Form object from Aspose.PDF
     form = ap.facades.Form()
-    
+
     # Bind the input PDF form
     form.bind_pdf(path_infile)
 
@@ -68,7 +68,7 @@ Use the following steps:
     import json
     from os import path
     import aspose.pdf as ap
-    
+
     # Combine the working directory path with the input PDF file name
     path_infile = path.join(self.workdir_path, infile)
 
@@ -255,7 +255,7 @@ This method extracts form fields from an input file and exports them to a JSON f
     from io import FileIO, StringIO
     import json
     from os import path
-    import aspose.pdf as ap 
+    import aspose.pdf as ap
 
     path_infile = path.join(self.workdir_path, infile)
     path_outfile = path.join(self.workdir_path, outfile)
@@ -265,7 +265,7 @@ This method extracts form fields from an input file and exports them to a JSON f
         form.export_json(json_file, True)
 ```
 
-## Extract Form Fields to Json DOC
+## Extract Form Fields to JSON Document
 
 1. Create a Form object from the input file.
 1. Initialize an empty dictionary to store form field data.
@@ -278,7 +278,7 @@ This method extracts form fields from an input file and exports them to a JSON f
     from io import FileIO, StringIO
     import json
     from os import path
-    import aspose.pdf as ap 
+    import aspose.pdf as ap
 
     path_infile = path.join(self.workdir_path, infile)
     path_outfile = path.join(self.workdir_path, outfile)
