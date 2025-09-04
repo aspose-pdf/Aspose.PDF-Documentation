@@ -27,7 +27,8 @@ The following Python code snippets show how to get the values of all the fields 
     import aspose.pdf as ap
 
     # Construct the full path to the input PDF file
-    path_infile = dataDir + infile
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
 
     # Create a Form object from the PDF file
     form = ap.facades.Form(path_infile)
