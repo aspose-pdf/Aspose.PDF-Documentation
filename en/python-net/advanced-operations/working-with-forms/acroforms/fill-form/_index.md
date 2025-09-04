@@ -16,23 +16,34 @@ Abstract: The article provides a guide on how to fill a form field in a PDF docu
 
 ## Fill Form Field in a PDF Document
 
-To fill a form field, get the field from the Document object's [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) collection. then set the field value using the field's [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#properties) property.
-
-This example selects a [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) and sets its value using the Value property.
+The next example fills PDF form fields with new values using Aspose.PDF for Python via .NET and saves the updated document. Supports updating multiple fields by specifying a dictionary of field names and values.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Open document
-    pdfDocument = ap.Document(input_file)
-    for formField in pdfDocument.form.fields:
-        if formField.partial_name == "Field 1":
-            # Modify field value
-            formField.value = "777"
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
 
-    # Save updated document
-    pdfDocument.save(output_pdf)
+    # Define the new field values
+    new_field_values = {
+        "First Name": "Alexander_New",
+        "Last Name": "Greenfield_New",
+        "City": "Yellowtown_New",
+        "Country": "Redland_New"
+    }
+
+    # Create a Form object from the input PDF file
+    form = ap.facades.Form(path_infile)
+
+    # Fill out the form fields with the new values
+    for formField in form.field_names:
+        if formField in new_field_values:
+            form.fill_field(formField, new_field_values[formField])
+
+    # Save the modified form to the output PDF file
+    form.save(path_outfile)
 ```
 
 

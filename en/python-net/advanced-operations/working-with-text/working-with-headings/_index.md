@@ -26,10 +26,12 @@ Headings are the important parts of any document. Writers always try to make hea
 |NumeralsRomanLowercase|Roman lower type, for example, i,i.ii, ...|
 |LettersUppercase|English upper type, for example, A,A.B, ...|
 |LettersLowercase|English lower type, for example, a,a.b, ...|
+
 The [style](https://reference.aspose.com/pdf/python-net/aspose.pdf/heading/#properties) property of [Heading](https://reference.aspose.com/pdf/python-net/aspose.pdf/heading/) class is used to set the numbering styles of the headings.
 
 |**Figure: Pre-defined numbering styles**|
 | :- |
+
 The source code, to obtain the output shown in the above figure, is given below in the example.
 
 ```python

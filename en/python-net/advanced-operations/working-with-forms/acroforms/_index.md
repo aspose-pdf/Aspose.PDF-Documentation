@@ -29,4 +29,6 @@ For more detailed learning of the capabilities of the Java library, see the foll
 - [Create AcroForm](/pdf/python-net/create-form) - create form from scratch with Python.
 - [Fill AcroForm](/pdf/python-net/fill-form) - fill form field in your PDF document.
 - [Extract AcroForm](/pdf/python-net/extract-form) - get value from all or an individual field of PDF document.
-
+- [Import and Export Form Data](/pdf/python-net/import-export-form-data/) - how to import and Export Form Data.
+- [Modifying AcroForm](/pdf/python-net/modifying-form/) - modifying AcroForm PDF form fields.
+- [Delete Forms from PDF](/pdf/python-net/remove-form/) - remove Forms from PDF.

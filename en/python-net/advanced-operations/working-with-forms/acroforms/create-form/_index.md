@@ -33,8 +33,12 @@ Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf
 
     import aspose.pdf as ap
 
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
+
     # Open document
-    pdfDocument = ap.Document(input_file)
+    pdfDocument = ap.Document(path_infile)
 
     # Create a field
     textBoxField = ap.forms.TextBoxField(pdfDocument.pages[1], ap.Rectangle(100, 200, 300, 300, True))
@@ -52,6 +56,6 @@ Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf
     pdfDocument.form.add(textBoxField, 1)
 
     # Save modified PDF
-    pdfDocument.save(output_pdf)
+    pdfDocument.save(path_outfile)
 ```
 
