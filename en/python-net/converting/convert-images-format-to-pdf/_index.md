@@ -404,9 +404,50 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
 
 ## Convert CDR to PDF
 
+```python
+
+    from io import FileIO
+    from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
+    import pydicom
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    load_options = apdf.CdrLoadOptions()
+    document = apdf.Document(path_infile, load_options)
+    document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
+```
 
 ## Convert JPEG to PDF
 
+
+```python
+
+    from io import FileIO
+    from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
+    import pydicom
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = apdf.Document()
+    page = document.pages.add()
+    rectangle = apdf.Rectangle(0, 0, 595, 842, True)  # A4 size in points
+    page.add_image(path_infile, rectangle)
+
+    document.save(path_outfile)
+    print(infile + " converted into " + outfile)
+```
 
 ## See Also
 
