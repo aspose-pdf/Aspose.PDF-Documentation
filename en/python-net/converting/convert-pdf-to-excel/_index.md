@@ -4,7 +4,7 @@ linktitle: Convert PDF to Excel
 type: docs
 weight: 20
 url: /python-net/convert-pdf-to-excel/
-lastmod: "2025-02-27"
+lastmod: "2025-09-27"
 description: Convert PDFs to Excel spreadsheets effortlessly with Aspose.PDF for Python via .NET. Follow this guide for accurate PDF to XLSX conversions
 sitemap:
     changefreq: "monthly"
@@ -64,21 +64,19 @@ Aspose.PDF presents you online free application ["PDF to XLSX"](https://products
 
 The following code snippet shows the process for converting PDF file into XLS or XLSX format with Aspose.PDF for Python via .NET.
 
-<a name="python-pdf-to-xls"><strong>Steps: Convert PDF to XLS in Python</strong></a>
+<a name="python-pdf-to-xls"><strong>Steps: Convert a PDF file to an Excel (XML Spreadsheet 2003) format</strong></a>
 
-1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
-2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-3. Save it to **XLS** format specifying **.xls extension** by calling [Document.Save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Load the PDF document.
+1. Set up Excel save options using [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Save the converted file.
 
 ```python
 
-    import aspose.pdf as apdf
-    from io import FileIO
     from os import path
-    import pydicom
+    import aspose.pdf as apdf
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     document = apdf.Document(path_infile)
     save_options = apdf.ExcelSaveOptions()
@@ -88,104 +86,123 @@ The following code snippet shows the process for converting PDF file into XLS or
     print(infile + " converted into " + outfile)
 ```
 
+<a name="python-pdf-to-xlsx"><strong>Steps: Convert a PDF file to an XLSX format (Excel 2007+)</strong></a>
 
-<a name="python-pdf-to-xlsx"><strong>Steps: Convert PDF to XLSX in Python</strong></a>
-
-1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
-2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-3. Save it to **XLSX** format specifying **.xlsx extension** by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Load the PDF document.
+1. Set up Excel save options using [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Save the converted file.
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf =  DIR_OUTPUT + "convert_pdf_to_xlsx.xlsx"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    save_option = ap.ExcelSaveOptions()
+    document = apdf.Document(path_infile)
+    save_options = apdf.ExcelSaveOptions()
+    save_options.format = apdf.ExcelSaveOptions.ExcelFormat.XLSX
+    document.save(path_outfile, save_options)
 
-    # Save the file into MS Excel format
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
 ## Convert PDF to XLS with control Column
 
-When converting a PDF to XLS format, a blank column is added to the output file as first column. The in 'ExcelSaveOptions class' InsertBlankColumnAtFirst option is used to control this column. Its default value is true.
+When converting a PDF to XLS format, a blank column is added to the output file as first column. The in 'ExcelSaveOptions class' 'insert_blank_column_at_first' option is used to control this column. Its default value is true.
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xlsx_with_control_column.xls"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
-    save_option.insert_blank_column_at_first = True
+    document = apdf.Document(path_infile)
+    save_options = apdf.ExcelSaveOptions()
+    save_options.format = apdf.ExcelSaveOptions.ExcelFormat.XLSX
+    save_options.insert_blank_column_at_first = True
+    document.save(path_outfile, save_options)
 
-    # Save the file into MS Excel format
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
 ## Convert PDF to Single Excel Worksheet
 
-When exporting a PDF file with a lot of pages to XLS, each page is exported to a different sheet in the Excel file. This is because the MinimizeTheNumberOfWorksheets property is set to false by default. To ensure that all pages are exported to one single sheet in the output Excel file, set the MinimizeTheNumberOfWorksheets property to true.
+Aspose.PDF for Python via .NET shows how to convert a PDF to an Excel (.xlsx) file, with the 'minimize_the_number_of_worksheets' option enabled.
 
 <a name="python-pdf-to-excel-single"><strong>Steps: Convert PDF to XLS or XLSX Single Worksheet in Python</strong></a>
 
-1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
-2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) with **MinimizeTheNumberOfWorksheets = true**.
-3. Save it to **XLS** or **XLSX** format having single worksheet by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. Load the PDF document.
+1. Set up Excel save options using [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
+1. The 'minimize_the_number_of_worksheets' option reduces the number of Excel sheets by combining PDF pages into fewer worksheets (e.g., one worksheet for the entire document if possible).
+1. Save the converted file.
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
 
-    input_pdf = DIR_INPUT + "many_pages.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xlsx_single_excel_worksheet.xls"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.XML_SPREAD_SHEET2003
-    save_option.minimize_the_number_of_worksheets = True
+    document = apdf.Document(path_infile)
+    save_options = apdf.ExcelSaveOptions()
+    save_options.format = apdf.ExcelSaveOptions.ExcelFormat.XLSX
+    save_options.minimize_the_number_of_worksheets = True
+    document.save(path_outfile, save_options)
 
-    # Save the file into MS Excel format
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
+```
 
+## Convert PDF file into an Excel file in XLSM format
+
+This Python example shows how to convert a PDF file into an Excel file in XLSM format (Excel Macro-Enabled Workbook).
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    save_options = apdf.ExcelSaveOptions()
+    save_options.format = apdf.ExcelSaveOptions.ExcelFormat.XLSM
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
 ```
 
 ## Convert to other spreadsheet formats
 
 ### Convert to CSV
 
-Conversion to CSV format performs in the same way as above. All is what you need - set the appropriate format.
+The 'convert_pdf_to_excel_2007_csv' function performs the same operation as before, but this time the target format is CSV (Comma-Separated Values) instead of XLSM.
 
 <a name="python-pdf-to-csv"><strong>Steps: Convert PDF to CSV in Python</strong></a>
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
-2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) with **Format = ExcelSaveOptions.ExcelFormat.CSV**
-3. Save it to **CSV** format by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)* method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-
+1. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) with **ExcelSaveOptions.ExcelFormat.CSV**
+1. Save it to **CSV** format by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)* method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_csv.csv"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.CSV
+    document = apdf.Document(path_infile)
+    save_options = apdf.ExcelSaveOptions()
+    save_options.format = apdf.ExcelSaveOptions.ExcelFormat.CSV
+    document.save(path_outfile, save_options)
 
-    # Save the file
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
 ### Convert to ODS
@@ -193,29 +210,28 @@ Conversion to CSV format performs in the same way as above. All is what you need
 <a name="python-pdf-to-ods"><strong>Steps: Convert PDF to ODS in Python</strong></a>
 
 1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object with the source PDF document.
-2. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) with **Format = ExcelSaveOptions.ExcelFormat.ODS**
-3. Save it to **ODS** format by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
-
+1. Create an instance of [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/) with **ExcelSaveOptions.ExcelFormat.ODS**
+1. Save it to **ODS** format by calling [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method and passing it [ExcelSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/excelsaveoptions/).
 
 Conversion to ODS format performs in the same way as all other formats.
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
     
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_ods.ods"
-    # Open PDF document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    save_option = ap.ExcelSaveOptions()
-    save_option.format = ap.ExcelSaveOptions.ExcelFormat.ODS
+    document = apdf.Document(path_infile)
+    save_options = apdf.ExcelSaveOptions()
+    save_options.format = apdf.ExcelSaveOptions.ExcelFormat.ODS
+    document.save(path_outfile, save_options)
 
-    # Save the file
-    document.save(output_pdf, save_option)
+    print(infile + " converted into " + outfile)
 ```
 
-## See Also 
+## See Also
 
 This article also covers these topics. The codes are same as above.
 
