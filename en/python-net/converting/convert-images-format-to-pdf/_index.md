@@ -404,6 +404,12 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
 
 ## Convert CDR to PDF
 
+Next code snippet shows how to load a CorelDRAW (CDR) file and save it as a PDF using 'CdrLoadOptions' in Aspose.PDF for Python via .NET.
+
+1. Initialize load options for CDR format.
+1. Load CDR file into Document object.
+1. Save the document in PDF format.
+
 ```python
 
     from io import FileIO
@@ -426,6 +432,13 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
 
 ## Convert JPEG to PDF
 
+This example shows how to create a new PDF document, add a blank A4-sized page, and insert an image into it using Aspose.PDF for Python via .NET.
+
+1. Create a new PDF document.
+1. Add a new page.
+1. Define the placement rectangle (A4 size: 595x842 points).
+1. Insert the image into the page.
+1. Save the PDF.
 
 ```python
 

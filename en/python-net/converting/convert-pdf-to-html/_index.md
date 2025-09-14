@@ -4,8 +4,8 @@ linktitle: Convert PDF to HTML format
 type: docs
 weight: 50
 url: /python-net/convert-pdf-to-html/
-lastmod: "2025-02-27"
-description: This topic show you how to convert PDF file to HTML format with  Aspose.PDF for Python .NET library.
+lastmod: "2025-09-27"
+description: This topic show you how to convert PDF file to HTML format with  Aspose.PDF for Python via .NET library.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -22,7 +22,6 @@ _Format_: **HTML**
 - [Python PDF to HTML](#python-pdf-to-html)
 - [Python Convert PDF to HTML](#python-pdf-to-html)
 - [Python How to convert PDF file to HTML](#python-pdf-to-html)
-
 
 ## Convert PDF to HTML
 
@@ -43,26 +42,218 @@ Aspose.PDF for Python presents you online free application ["PDF to HTML"](https
 
 ```python
 
-    import aspose.pdf as apdf
-    from io import FileIO
     from os import path
-    import pydicom
+    import aspose.pdf as apdf
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
-
-    # Open PDF document
-
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
     document = apdf.Document(path_infile)
-
-    # save document in HTML format
-
     save_options = apdf.HtmlSaveOptions()
-
     document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
 ```
 
-## See Also 
+### Convert PDF to HTML with Stored Images
+
+This function converts a PDF file into HTML format using Aspose.PDF for Python via .NET. All extracted images are stored in a specified folder instead of being embedded in the HTML file.
+
+1. Configure HTML save options.
+1. Save as HTML with external images.
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+    document = apdf.Document(path_infile)
+    save_options = apdf.HtmlSaveOptions()
+    save_options.special_folder_for_all_images = self.data_dir
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+### Convert PDF to Multi-Page HTML
+
+This function converts a PDF file into multi-page HTML, where each PDF page is exported as a separate HTML file. This makes the output easier to navigate and reduces loading time for large PDFs.
+
+1. Load the source PDF using 'apdf.Document'.
+1. Create 'HtmlSaveOptions' and 'set split_into_pages'.
+1. Save the document as HTML with pages split into separate files.
+1. Print a confirmation message.
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+    document = apdf.Document(path_infile)
+    save_options = apdf.HtmlSaveOptions()
+    save_options.split_into_pages = True
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+### Convert PDF to HTML with Stored SVG Images
+
+This function converts a PDF into HTML format while storing all images as SVG files in a specified folder, instead of embedding them directly in the HTML.
+
+1. Load the source PDF using 'apdf.Document'.
+1. Create 'HtmlSaveOptions' and 'set special_folder_for_svg_images' to the target folder.
+1. Save the document as HTML with external SVG images.
+1. Print a confirmation message.
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+    document = apdf.Document(path_infile)
+    save_options = apdf.HtmlSaveOptions()
+    save_options.special_folder_for_svg_images = self.data_dir
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+### Convert PDF to HTML with Compressed SVG Images
+
+This snippet converts a PDF into HTML format, storing all images as SVG files in a specified folder and compressing them to reduce file size.
+
+1. Load the PDF document using 'apdf.Document'.
+1. Create 'HtmlSaveOptions' and:
+   - Set 'special_folder_for_svg_images' to store SVG images externally.
+   - Enable 'compress_svg_graphics_if_any' to compress SVG images.
+1. Save the document as HTML with compressed external SVG images.
+1. Print a confirmation message.
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+    document = apdf.Document(path_infile)
+    save_options = apdf.HtmlSaveOptions()
+    save_options.special_folder_for_svg_images = self.data_dir
+    save_options.compress_svg_graphics_if_any = True
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+### Convert PDF to HTML with Embedded Raster Images
+
+This snippet converts a PDF into HTML format, embedding raster images as PNG page backgrounds. This approach preserves image quality and page layout within the HTML.
+
+1. Load the PDF document using 'apdf.Document'.
+1. Create 'HtmlSaveOptions' and 'set raster_images_saving_mode' to 'AS_EMBEDDED_PARTS_OF_PNG_PAGE_BACKGROUND'.
+1. Save the document as HTML with embedded raster images.
+1. Print a confirmation message.
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+    document = apdf.Document(path_infile)
+    save_options = apdf.HtmlSaveOptions()
+    save_options.raster_images_saving_mode = apdf.HtmlSaveOptions.RasterImagesSavingModes.AS_EMBEDDED_PARTS_OF_PNG_PAGE_BACKGROUND
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+### Convert PDF to HTML (Body Content Only, Multi-Page)
+
+This function converts a PDF into HTML format, generating only the 'body' content without extra 'html' or 'head' tags, and splits the output into separate pages.
+
+1. Load the PDF document using 'apdf.Document'.
+1. Create 'HtmlSaveOptions' and configure:
+   - 'html_markup_generation_mode = WRITE_ONLY_BODY_CONTENT' to generate only the 'body' content.
+   - 'split_into_pages' to create separate HTML files for each PDF page.
+1. Save the document as HTML with the specified options.
+1. Print a confirmation message.
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+    document = apdf.Document(path_infile)
+    save_options = apdf.HtmlSaveOptions()
+    save_options.html_markup_generation_mode = apdf.HtmlSaveOptions.HtmlMarkupGenerationModes.WRITE_ONLY_BODY_CONTENT
+    save_options.split_into_pages = True
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+### Convert PDF to HTML with Transparent Text Rendering
+
+This function converts a PDF into HTML format, rendering all text as transparent, including shadowed texts, which preserves visual fidelity while allowing flexible styling in the output HTML.
+
+1. Load the PDF document using 'apdf.Document'.
+1. Create 'HtmlSaveOptions' and configure:
+    - 'save_transparent_texts' to render normal text as transparent.
+    - 'save_shadowed_texts_as_transparent_texts' to render shadowed text as transparent.
+1. Save the document as HTML with transparent text rendering.
+1. Print a confirmation message.
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+    document = apdf.Document(path_infile)
+    save_options = apdf.HtmlSaveOptions()
+    save_options.save_transparent_texts = True
+    save_options.save_shadowed_texts_as_transparent_texts = True
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+### Convert PDF to HTML with Document Layers Rendering
+
+This function converts a PDF into HTML format, preserving document layers by converting marked content into separate layers in the output HTML. This allows layered elements (like annotations, backgrounds, and overlays) to be rendered accurately.
+
+1. Load the PDF document using 'apdf.Document'.
+1. Create 'HtmlSaveOptions' and enable 'convert_marked_content_to_layers' to preserve layers.
+1. Save the document as HTML with layered content.
+1. Print a confirmation message.
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+    document = apdf.Document(path_infile)
+    save_options = apdf.HtmlSaveOptions()
+    save_options.convert_marked_content_to_layers  = True
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+## See Also
 
 This article also covers these topics. The codes are same as above.
 
