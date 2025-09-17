@@ -27,4 +27,4 @@ You are able to do the following:
 - [Merge PDF](/pdf/python-net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using Python.
 - [Split PDF](/pdf/python-net/split-document/) - split PDF pages into individual PDF files in your Python applications.
 - [Working with Headings](/pdf/python-net/working-with-headings/) - you can create numbering in heading your PDF document with Python.
-- [Work with PDF layers](/pdf/python-net/work-with-pdf-layers/) - how to lock a PDF layer, extract PDF layer elements, flatten a layered PDF, and merge all layers inside PDF into one.
+- [Working with PDF layers](/pdf/python-net/working-with-pdf-layers/) - how to manage and manipulate PDF layers using the Aspose.PDF for Python via .NET library.
