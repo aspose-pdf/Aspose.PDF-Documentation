@@ -3,7 +3,7 @@ title: Work with PDF layers using Python
 linktitle: Work with PDF layers
 type: docs
 weight: 50
-url: /net/work-with-pdf-layers/
+url: /net/working-with-pdf-layers/
 description: The next task explains how to lock a PDF layer, extract PDF layer elements, flatten a layered PDF, and merge all layers inside PDF into one.
 lastmod: "2025-09-17"
 sitemap:
