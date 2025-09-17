@@ -244,7 +244,38 @@ The following steps and code snippet in Python shows this possibility:
         page_count = page_count + 1
 
     print(infile + " converted into " + outfile)
-``` 
+```
+
+### Convert PDF to PNG with default font
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+    from io import FileIO
+
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    resolution = apdf.devices.Resolution(300)
+
+    rendering_options = apdf.RenderingOptions()
+    rendering_options.default_font_name = "Arial"
+
+    device = apdf.devices.PngDevice(resolution)
+    device.rendering_options = rendering_options
+
+    page_count = 1
+    while page_count <= len(document.pages):
+        image_stream = FileIO(path_outfile + str(page_count) + "_out.png", "w")
+        device.process(document.pages[page_count], image_stream)
+        image_stream.close()
+        page_count = page_count + 1
+
+    print(infile + " converted into " + outfile)
+```
 
 ### Convert PDF to GIF
 

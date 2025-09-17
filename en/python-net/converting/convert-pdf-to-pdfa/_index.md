@@ -4,7 +4,7 @@ linktitle: Convert PDF to PDF/A formats
 type: docs
 weight: 100
 url: /python-net/convert-pdf-to-pdfa/
-lastmod: "2025-02-27"
+lastmod: "2025-09-27"
 description: Learn how to convert PDF files to PDF/A format for compliance with archiving standards using Aspose.PDF in Python via .NET.
 sitemap:
     changefreq: "monthly"

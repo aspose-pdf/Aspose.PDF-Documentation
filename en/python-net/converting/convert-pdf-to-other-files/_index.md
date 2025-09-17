@@ -4,7 +4,7 @@ linktitle: Convert PDF to other formats
 type: docs
 weight: 90
 url: /python-net/convert-pdf-to-other-files/
-lastmod: "2025-02-27"
+lastmod: "2025-09-27"
 description: This topic shows you how to convert PDF file to other file formats like EPUB, LaTeX, Text, XPS etc using Python.
 sitemap:
     changefreq: "monthly"
@@ -27,22 +27,22 @@ Aspose.PDF for Python presents you online free application ["PDF to EPUB"](https
 **<abbr title="Electronic Publication">EPUB</abbr>** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
 EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
 
-Aspose.PDF for Python also supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Python has a class named 'EpubSaveOptions' which can be used as the second argument to [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method, to generate an EPUB file.
+Aspose.PDF for Python also supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Python has a class named 'EpubSaveOptions' which can be used as the second argument to [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method, to generate an EPUB file.
 Please try using the following code snippet to accomplish this requirement with Python.
 
 ```python
 
-    import aspose.pdf as apdf
-    from io import FileIO
     from os import path
-    import pydicom
+    import aspose.pdf as ap
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    document = apdf.Document(path_infile)
-    save_options = apdf.EpubSaveOptions()
-    save_options.content_recognition_mode = apdf.EpubSaveOptions.RecognitionMode.FLOW
+    document = ap.Document(path_infile)
+    save_options = ap.EpubSaveOptions()
+    save_options.content_recognition_mode = (
+        ap.EpubSaveOptions.RecognitionMode.FLOW
+    )
     document.save(path_outfile, save_options)
 
     print(infile + " converted into " + outfile)
@@ -67,25 +67,14 @@ The following code snippet shows the process of converting PDF files into the TE
 
 ```python
 
-    import aspose.pdf as apdf
-    from io import FileIO
     from os import path
-    import pydicom
+    import aspose.pdf as ap
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    # Open PDF document
-
-    document = apdf.Document(path_infile)
-
-    # Instantiate an object of SvgSaveOptions
-
-    save_options = apdf.SvgSaveOptions()
-
-    # Instantiate an object of LaTeXSaveOptions
-
-    save_options = apdf.LaTeXSaveOptions()
+    document = ap.Document(path_infile)
+    save_options = ap.LaTeXSaveOptions()
 
     document.save(path_outfile, save_options)
     print(infile + " converted into " + outfile)
@@ -93,26 +82,18 @@ The following code snippet shows the process of converting PDF files into the TE
 
 ## Convert PDF to Text
 
-**Aspose.PDF for Python** support converting whole PDF document and single page to a Text file.
-
-### Convert PDF document to Text file
-
-You can convert PDF document to TXT file using 'TextDevice' class.
-
-The following code snippet explains how to extract the texts from the all pages.
+**Aspose.PDF for Python** support converting whole PDF document and single page to a Text file. You can convert PDF document to TXT file using 'TextDevice' class. The following code snippet explains how to extract the texts from the all pages.
 
 ```python
 
-    import aspose.pdf as apdf
-    from io import FileIO
     from os import path
-    import pydicom
+    import aspose.pdf as ap
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    document = apdf.Document(path_infile)
-    device = apdf.devices.TextDevice()
+    document = ap.Document(path_infile)
+    device = ap.devices.TextDevice()
     device.process(document.pages[1], path_outfile)
 
     print(infile + " converted into " + outfile)
@@ -140,22 +121,74 @@ Aspose.PDF for Python presents you online free application ["PDF to XPS"](https:
 
 The XPS file type is primarily associated with the XML Paper Specification by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into the Windows operating system.
 
-To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/xpssaveoptions/) that is used as the second argument to the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method to generate the XPS file.
+To convert PDF files to XPS, Aspose.PDF has the class [XpsSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/xpssaveoptions/) that is used as the second argument to the [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method to generate the XPS file.
 
 The following code snippet shows the process of converting PDF file into XPS format.
 
 ```python
 
-    import aspose.pdf as apdf
-    from io import FileIO
     from os import path
-    import pydicom
+    import aspose.pdf as ap
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
-    document = apdf.Document(path_infile)
-    save_options = apdf.XpsSaveOptions()
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = ap.Document(path_infile)
+    save_options = ap.XpsSaveOptions()
+    save_options.use_new_imaging_engine = True
     document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+## Convert PDF to MD
+
+Aspose.PDF has the class 'MarkdownSaveOptions(), which converts a PDF document into Markdown (MD) format while preserving images and resources.
+
+1. Load the source PDF using 'ap.Document'.
+1. Create an instance of 'MarkdownSaveOptions'.
+1. Set 'resources_directory_name' to 'images' – extracted images will be stored in this folder.
+1. Save the converted Markdown document using the configured options.
+1. Print a confirmation message after conversion.
+
+```python
+
+    from os import path
+    import aspose.pdf as ap
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = ap.Document(path_infile)
+    save_options = ap.MarkdownSaveOptions()
+    # save_options.extract_vector_graphics = True
+    save_options.resources_directory_name = "images"
+    save_options.use_image_html_tag = True
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+A Markdown file with text and linked images stored in the specified images folder.
+
+## Convert PDF to MobiXML
+
+This method converts a PDF document into the MOBI (MobiXML) format, which is commonly used for eBooks on Kindle devices.
+
+1. Load the source PDF document using 'ap.Document'.
+1. Save the document with the format 'ap.SaveFormat.MOBI_XML'.
+1. Print a confirmation message once the conversion is complete.
+
+```python
+
+    from os import path
+    import aspose.pdf as ap
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = ap.Document(path_infile)
+    document.save(path_outfile, ap.SaveFormat.MOBI_XML)
 
     print(infile + " converted into " + outfile)
 ```
@@ -175,19 +208,4 @@ Aspose.PDF for Python presents you online free application ["PDF to XML"](https:
 Aspose.PDF for Python also supports the feature to convert PDF documents to XML format. Aspose.PDF for Python has a class named 'XmlSaveOptions' which can be used as the second argument to [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method, to generate an XML file.
 Please try using the following code snippet to accomplish this requirement with Python.
 
-```python
 
-    import aspose.pdf as apdf
-    from io import FileIO
-    from os import path
-    import pydicom
-
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
-
-    document = apdf.Document(path_infile)
-    save_options = apdf.PdfXmlSaveOptions()
-    document.save(path_outfile, save_options)
-
-    print(infile + " converted into " + outfile)
-```
