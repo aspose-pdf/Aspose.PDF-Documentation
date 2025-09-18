@@ -41,18 +41,9 @@ Abstract: The article provides a comprehensive guide on converting PDF/UA, and P
 
 This function demonstrates a two-step conversion process: first removing PDF/UA (Universal Accessibility) compliance, and then converting the resulting PDF into PDF/A-1B format with automatic tagging for accessibility and semantic structure.
 
-1. Remove PDF/UA Compliance:
-    - Load the PDF document using 'ap.Document'.
-    - Call 'remove_pdf_ua_compliance(') to strip all PDF/UA-related compliance settings and metadata.
-    - Save the resulting PDF to the output path.
-1. Convert to PDF/A-1B with Automatic Tagging:
-    - Define the log file path (_log.xml) to store conversion details.
-    - Load the PDF document again.
-    - Create 'PdfFormatConversionOptions' specifying:
-    - Configure 'AutoTaggingSettings'
-    - Assign auto-tagging settings to the conversion options.
-    - Convert the document using 'document.convert()'.
-    - Save the PDF/A-1B compliant output.
+1. Load the PDF document using 'ap.Document()'.
+1. Call 'document.remove_pdfa_compliance()' to remove any PDF/A restrictions or compliance settings.
+1. Save the modified PDF to 'path_outfile'.
 
 ```python
 
