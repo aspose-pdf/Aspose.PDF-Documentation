@@ -91,7 +91,7 @@ This function analyzes all images on the first page of a PDF and counts how many
             rgb += 1
             print(f"Image {image_counter} is RGB...")
         image_counter += 1
-```    
+```
 
 ## Extract Detailed Image Information from a PDF
 

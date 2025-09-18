@@ -39,19 +39,12 @@ Do you need to separate images from your PDF files? For simplified management, a
 This method extracts images located within a specified rectangular region on a PDF page and saves them as separate files.
 
 1. Load the PDF document using 'ap.Document'.
-
 1. Create an 'ImagePlacementAbsorber' to collect all images on the first page.
-
 1. Call 'document.pages[1].accept(absorber)' to analyze image placements.
-
 1. Iterate through all images in 'absorber.image_placements':
-
     - Get the image bounding box (llx, lly, urx, ury).
-
     - Check if both corners of the image rectangle fall inside the target rectangle (rectangle.contains()).
-
     - If true, save the image to a file using FileIO, replacing 'index' in the filename with a sequential number.
-
 1. Increment the index for each saved image.
 
 ```python

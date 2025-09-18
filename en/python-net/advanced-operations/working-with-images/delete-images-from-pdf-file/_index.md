@@ -12,11 +12,9 @@ Abstract: The article discusses the various reasons for removing images from PDF
 ---
 
 There are many reasons for removing all or specific images from PDFs.
-
 Sometimes a PDF file may contain important images that need to be removed to protect privacy or prevent unauthorized access to certain information.
 
 Removing unwanted or redundant images can help reduce file size, making it easier to share or store PDFs. 
-
 If necessary, you can reduce the number of pages by removing all images from the document.
 Also, deleting images from the document will help prepare the PDF for compression or extraction of text information.
 
@@ -44,5 +42,3 @@ The following code snippet shows how to delete an image from a PDF file.
     document.pages[1].resources.images.delete(1)
     document.save(path_outfile)
 ```
-
-
