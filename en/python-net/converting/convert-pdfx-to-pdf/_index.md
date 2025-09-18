@@ -37,7 +37,7 @@ Abstract: The article provides a comprehensive guide on converting PDF/UA, and P
     print(infile + " converted into " + outfile)
 ```
 
-## Convert PDF/UA to PDF and PDF/A-1B
+## Removing PDF/UA compliance
 
 This function demonstrates a two-step conversion process: first removing PDF/UA (Universal Accessibility) compliance, and then converting the resulting PDF into PDF/A-1B format with automatic tagging for accessibility and semantic structure.
 
