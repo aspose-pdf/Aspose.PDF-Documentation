@@ -258,10 +258,10 @@ The following steps and code snippet in Python shows this possibility:
     path_infile = path.join(self.data_dir, infile)
     path_outfile = path.join(self.data_dir, "python", outfile)
 
-    document = apdf.Document(path_infile)
-    resolution = apdf.devices.Resolution(300)
+    document = ap.Document(path_infile)
+    resolution = ap.devices.Resolution(300)
 
-    rendering_options = apdf.RenderingOptions()
+    rendering_options = ap.RenderingOptions()
     rendering_options.default_font_name = "Arial"
 
     device = apdf.devices.PngDevice(resolution)
