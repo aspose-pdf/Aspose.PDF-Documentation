@@ -264,7 +264,7 @@ The following steps and code snippet in Python shows this possibility:
     rendering_options = ap.RenderingOptions()
     rendering_options.default_font_name = "Arial"
 
-    device = apdf.devices.PngDevice(resolution)
+    device = ap.devices.PngDevice(resolution)
     device.rendering_options = rendering_options
 
     page_count = 1
