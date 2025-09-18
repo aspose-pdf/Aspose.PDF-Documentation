@@ -251,7 +251,7 @@ The following steps and code snippet in Python shows this possibility:
 ```python
 
     from os import path
-    import aspose.pdf as apdf
+    import aspose.pdf as ap
     from io import FileIO
 
 
