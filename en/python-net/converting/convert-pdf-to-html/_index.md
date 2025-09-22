@@ -100,7 +100,7 @@ This function converts a PDF file into multi-page HTML, where each PDF page is e
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML with Stored SVG Images
+### Convert PDF to HTML with saving SVG images in specified folder
 
 This function converts a PDF into HTML format while storing all images as SVG files in a specified folder, instead of embedding them directly in the HTML.
 
