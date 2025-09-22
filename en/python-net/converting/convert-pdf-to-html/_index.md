@@ -177,7 +177,7 @@ This snippet converts a PDF into HTML format, embedding raster images as PNG pag
 
 ### Convert PDF to Body-Only content HTML page
 
-This function converts a PDF into HTML format, generating only the 'body' content without extra 'html' or 'head' tags, and splits the output into separate pages.
+This function converts a PDF into HTML format, generating 'body-only' content without extra 'html' or 'head' tags, and splits the output into separate pages.
 
 1. Load the PDF document using 'apdf.Document'.
 1. Create 'HtmlSaveOptions' and configure:
