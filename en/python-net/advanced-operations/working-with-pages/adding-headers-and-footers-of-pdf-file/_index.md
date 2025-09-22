@@ -31,6 +31,9 @@ The following code snippet demonstrates how to add headers and footers as text f
 
     import aspose.pdf as ap
 
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+
     # Open PDF document
     with ap.Document(path_infile) as document:
         for i in range(1, len(document.pages) + 1):
@@ -80,17 +83,20 @@ The following code snippet demonstrates how to add headers and footers as HTML f
 
     import aspose.pdf as ap
 
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+
     # Open PDF document
     with ap.Document(path_infile) as document:
         for i in range(1, len(document.pages) + 1):
             # Create header HTML
-            header_html = ap.HtmlFragment("<span>header</span>")
+            header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
             # Create header
             header = ap.HeaderFooter()
             header.paragraphs.add(header_html)
                 
             # Create footer HTML
-            footer_html = ap.HtmlFragment("<span>footer</span>")
+            footer_html = ap.HtmlFragment("Powered by <i>Aspose.PDF</i>")
         
             # Create footer 
             footer = ap.HeaderFooter()
@@ -131,6 +137,10 @@ This technique is ideal for branding documents with logos or watermarks in the h
 
     import aspose.pdf as ap
 
+    path_infile = self.data_dir + infile
+    path_imagefile = self.data_dir + imagefile
+    path_outfile = self.data_dir + outfile
+    
     # Open PDF document
     with ap.Document(path_infile) as document:
         for i in range(1, len(document.pages) + 1):
@@ -162,5 +172,107 @@ This technique is ideal for branding documents with logos or watermarks in the h
             document.pages[i].footer = footer
 
         # Save PDF document
+        document.save(path_outfile)
+```
+
+## Adding Headers and Footers as Table
+
+This code snippet adds headers and footers (using tables) to each page of a PDF document with Aspose.PDF for Python via .NET.
+
+1. Open the PDF document.
+1. Loop through all pages.
+1. Create text states for header and footer.
+1. Create header and footer objects.
+1. Build header table.
+1. Build footer table.
+1. Add tables to header and footer.
+1. Set footer margin.
+1. Bind header and footer to the page.
+1. Save the updated PDF.
+
+```python
+
+    import aspose.pdf as ap
+
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        for i in range(1, len(document.pages) + 1):
+            text_state_top_header = ap.text.TextState()
+            text_state_top_header.font = ap.text.FontRepository.find_font("Arial")
+            text_state_top_header.font_size = 12
+            text_state_top_header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+            text_state_info_footer = ap.text.TextState()
+            text_state_info_footer.font = ap.text.FontRepository.find_font("Arial")
+            text_state_info_footer.font_size = 12
+            text_state_info_footer.horizontal_alignment = ap.HorizontalAlignment.LEFT
+            # Create header
+            header = ap.HeaderFooter()
+            # Create footer
+            footer = ap.HeaderFooter()
+            # Create header Table
+            table_header = ap.Table()
+            table_header.column_widths = str(594 - header.margin.left - header.margin.right)
+            table_header.rows.add().cells.add("This is a Table Header", text_state_top_header)
+            # Create footer Table
+            table = ap.Table()
+            table.column_widths = str(594 - footer.margin.left - footer.margin.right)
+            table.rows.add().cells.add("Powered by Aspose.PDF", text_state_info_footer)
+            header.paragraphs.add(table_header)
+            footer.paragraphs.add(table)
+            # Set margin
+            margin = ap.MarginInfo()
+            margin.left = 50
+            # Set footer margin
+            footer.margin = margin
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+            # Save PDF document
+        document.save(path_outfile)
+```
+
+## Adding Headers and Footers as LaTex
+
+The following code snippet shows how to use LaTeX fragments in headers and footers for a PDF using Aspose.PDF for Python via .NET.
+
+1. Open the PDF document.
+1. Get the number of pages.
+1. Iterate over all pages.
+1. Create a header with LaTeX text.
+1. Create a footer with LaTeX text.
+1. Assign header and footer to the page.
+1. Save the modified PDF.
+
+```python
+
+    import aspose.pdf as ap
+
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        page_count = len(document.pages)
+        for i in range(1, page_count + 1):
+            # Create header
+            header = ap.HeaderFooter()
+            h_latex_text = "This is a LaTex Header. \\today\\"
+            h_l_text = ap.TeXFragment(h_latex_text, True)
+            # Create footer
+            footer = ap.HeaderFooter()
+            f_latex_text = f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            f_l_text = ap.TeXFragment(f_latex_text, True)
+
+            header.paragraphs.add(h_l_text)
+            footer.paragraphs.add(f_l_text)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+            # Save PDF document
         document.save(path_outfile)
 ```

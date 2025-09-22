@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /python-net/convert-pdf-to-powerpoint/
 description: Learn how to easily convert PDFs to PowerPoint presentations using Aspose.PDF for Python via .NET. Step-by-step guide for seamless PDF to PPTX transformation.
-lastmod: "2025-02-27"
+lastmod: "2025-09-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -37,25 +37,23 @@ We have an API named Aspose.Slides which offers the feature to create as well as
 
 During PDF to <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr> conversion, the text is rendered as Text where you can select/update it. Please note that in order to convert PDF files to PPTX format, Aspose.PDF provides a class named [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/). An object of the PptxSaveOptions class is passed as a second argument to the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods). The following code snippet shows the process for converting PDF files into PPTX format.
 
-## Simple conversion PDF to PowerPoint using Python and Aspose.PDF for Python
+## Simple conversion PDF to PowerPoint using Python and Aspose.PDF for Python via .NET
 
 In order to convert PDF to PPTX, Aspose.PDF for Python advice to use the following code steps.
 
 <a name="csharp-pdf-to-powerpoint"><strong>Steps: Convert PDF to PowerPoint in Python</strong></a> | <a name="csharp-pdf-to-pptx"><strong>Steps: Convert PDF to PPTX in Python</strong></a>
 
-1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class
-2. Create an instance of [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) class
-3. Use the **Save** method of the **Document** object to save the PDF as PPTX
+1. Create an instance of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
+1. Create an instance of [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) class.
+1. Call the [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 ```python
 
-    import aspose.pdf as apdf
-    from io import FileIO
     from os import path
-    import pydicom
+    import aspose.pdf as apdf
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     document = apdf.Document(path_infile)
     save_options = apdf.PptxSaveOptions()
@@ -69,7 +67,7 @@ In order to convert PDF to PPTX, Aspose.PDF for Python advice to use the followi
 {{% alert color="success" %}}
 **Try to convert PDF to PowerPoint online**
 
-Aspose.PDF for Python presents you online free application ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Python via .NET presents you online free application ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion PDF to PPTX with Free App](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
@@ -78,20 +76,48 @@ In case if you need to convert a searchable PDF to PPTX as images instead of sel
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf =  DIR_OUTPUT + "convert_pdf_to_pptx_with_slides_as_images.pptx"
-    # Open PDF document
-    document = ap.Document(input_pdf)
-    # Instantiate PptxSaveOptions instance
-    save_option = ap.PptxSaveOptions()
-    save_option.slides_as_images = True
-    # Save the file into MS PowerPoint format
-    document.save(output_pdf, save_option)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    save_options = apdf.PptxSaveOptions()
+    save_options.slides_as_images = True
+
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
 ```
 
-## See Also 
+## Convert PDF to PPTX with Custom Image Resolution
+
+This method converts a PDF document into a PowerPoint (PPTX) file while setting a custom image resolution (300 DPI) for improved quality.
+
+1. Load the PDF into an 'apdf.Document' object.
+1. Create a 'PptxSaveOptions' instance.
+1. Set the 'image_resolution' property to 300 DPI for high-quality rendering.
+1. Save the PDF as a PPTX file using the defined save options.
+
+```python
+
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    save_options = apdf.PptxSaveOptions()
+    save_options.image_resolution = 300
+
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+
+## See Also
 
 This article also covers these topics. The codes are same as above.
 

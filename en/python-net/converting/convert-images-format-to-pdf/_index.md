@@ -4,7 +4,7 @@ linktitle: Convert Images to PDF
 type: docs
 weight: 60
 url: /python-net/convert-images-format-to-pdf/
-lastmod: "2025-03-01"
+lastmod: "2025-09-01"
 description: Convert various images formats such as, BMP, CGM, DICOM, PNG, TIFF, EMF and SVG to PDF using Python.
 sitemap:
     changefreq: "monthly"
@@ -72,28 +72,31 @@ You can convert BMP to PDF files with Aspose.PDF for Python via .NET API. Theref
 
 Steps to Convert BMP to PDF in Python:
 
-1. Create a new PDF Document
-1. Define Image Placement
-1. Insert the Image into the PDF
-1. Save the PDF file
+1. Creates an empty PDF document.
+1. Adds a new A4-sized page.
+1. Places the image (from infile) inside the page using the defined rectangle.
+1. Saves the document as PDF.
 
 So the following code snippet follows these steps and shows how to convert BMP to PDF using Python:
 
 ```python
 
-    import aspose.pdf as apdf
     from io import FileIO
     from os import path
-    import pydicom
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     document = apdf.Document()
-    page = document.pages.add()
     rectangle = apdf.Rectangle(0, 0, 595, 842, True)  # A4 size in points
     page.add_image(path_infile, rectangle)
     document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
 ```
 
 {{% alert color="success" %}}
@@ -105,6 +108,8 @@ Aspose presents you online free application ["BMP to PDF"](https://products.aspo
 {{% /alert %}}
 
 ## Convert CGM to PDF
+
+Converts a CGM (Computer Graphics Metafile) into PDF (or another supported format) using Aspose.PDF for Python via .NET.
 
 <abbr title="Computer Graphics Metafile">CGM</abbr> is a file extension for a Computer Graphics Metafile format commonly used in CAD (computer-aided design) and presentation graphics applications. CGM is a vector graphics format that supports three different encoding methods: binary (best for program read speed), character-based (produces the smallest file size and allows for faster data transfers) or cleartext encoding (allows users to read and modify the file with a text editor).
 
@@ -119,14 +124,15 @@ Steps to Convert CGM to PDF in Python:
 
 ```python
 
-    import aspose.pdf as apdf
     from io import FileIO
     from os import path
-    import pydicom
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
 
-    # The path to the documents directory
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     options = apdf.CgmLoadOptions()
 
@@ -144,15 +150,29 @@ Steps to Convert CGM to PDF in Python:
 
 The following code snippet shows how to convert DICOM files to PDF format with Aspose.PDF. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF.
 
+1. Load the DICOM file.
+1. Extract image dimensions.
+1. Print image size.
+1. Create a new PDF document.
+1. Prepare the DICOM image for PDF.
+1. Set PDF page size and margins.
+1. Add the image to the page.
+1. Save the PDF.
+1. Print Conversion Message.
+
 ```python
 
-    import aspose.pdf as apdf
     from io import FileIO
     from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
     import pydicom
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     # Load the DICOM file
     dicom_file = pydicom.dcmread(path_infile)
@@ -201,13 +221,16 @@ The following code snippet shows how to convert an EMF to PDF with Python:
 
 ```python
 
-    import aspose.pdf as apdf
     from io import FileIO
     from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
     import pydicom
     
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     document = apdf.Document()
     page = document.pages.add()
@@ -238,13 +261,16 @@ So the following code snippet follows these steps and shows how to convert BMP t
 
 ```python
 
-    import aspose.pdf as apdf
     from io import FileIO
     from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
     import pydicom
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     document = apdf.Document()
     page = document.pages.add()
@@ -280,13 +306,16 @@ Moreover, the code snippet below shows how to convert PNG to PDF with Python:
 
 ```python
 
-    import aspose.pdf as apdf
     from io import FileIO
     from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
     import pydicom
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     document = apdf.Document()
     page = document.pages.add()
@@ -325,13 +354,16 @@ The following code snippet shows the process of converting SVG file into PDF for
 
 ```python
 
-    import aspose.pdf as apdf
     from io import FileIO
     from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
     import pydicom
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     load_options = apdf.SvgLoadOptions()
     document = apdf.Document(path_infile, load_options)
@@ -350,13 +382,16 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
 
 ```python
 
-    import aspose.pdf as apdf
     from io import FileIO
     from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
     import pydicom
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, "python", outfile)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
     document = apdf.Document()
     page = document.pages.add()
@@ -364,6 +399,66 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
     page.add_image(path_infile, rectangle)
     document.save(path_outfile)
 
+    print(infile + " converted into " + outfile)
+```
+
+## Convert CDR to PDF
+
+Next code snippet shows how to load a CorelDRAW (CDR) file and save it as a PDF using 'CdrLoadOptions' in Aspose.PDF for Python via .NET.
+
+1. Initialize load options for CDR format.
+1. Load CDR file into Document object.
+1. Save the document in PDF format.
+
+```python
+
+    from io import FileIO
+    from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
+    import pydicom
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    load_options = apdf.CdrLoadOptions()
+    document = apdf.Document(path_infile, load_options)
+    document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
+```
+
+## Convert JPEG to PDF
+
+This example shows how to create a new PDF document, add a blank A4-sized page, and insert an image into it using Aspose.PDF for Python via .NET.
+
+1. Create a new PDF document.
+1. Add a new page.
+1. Define the placement rectangle (A4 size: 595x842 points).
+1. Insert the image into the page.
+1. Save the PDF.
+
+```python
+
+    from io import FileIO
+    from os import path
+    import os
+    import shutil
+    import aspose.pdf as apdf
+    import inspect
+    import pydicom
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = apdf.Document()
+    page = document.pages.add()
+    rectangle = apdf.Rectangle(0, 0, 595, 842, True)  # A4 size in points
+    page.add_image(path_infile, rectangle)
+
+    document.save(path_outfile)
     print(infile + " converted into " + outfile)
 ```
 
