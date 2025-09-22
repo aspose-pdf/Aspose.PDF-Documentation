@@ -24,7 +24,7 @@ Aspose.PDF for Python presents you online free application ["PDF to EPUB"](https
 [![Aspose.PDF Convertion PDF to EPUB with Free App](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
 
-**EPUB** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
+<abbr title="Electronic Publication">EPUB</abbr> is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
 EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
 
 Aspose.PDF for Python also supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Python has a class named 'EpubSaveOptions' which can be used as the second argument to [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method, to generate an EPUB file.

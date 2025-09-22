@@ -22,7 +22,7 @@ Abstract: This article provides a comprehensive guide on converting various imag
 
 Convert BMP files to PDF document using **Aspose.PDF for Python via .NET** library.
 
-BMP images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
+<abbr title="Bitmap Image File">BMP</abbr>images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
 
 You can convert BMP to PDF files with Aspose.PDF for Python via .NET API. Therefore, you can follow the following steps to convert BMP images:
 
@@ -67,7 +67,7 @@ Aspose presents you online free application ["BMP to PDF"](https://products.aspo
 
 Convert a CGM (Computer Graphics Metafile) into PDF (or another supported format) using Aspose.PDF for Python via .NET.
 
-CGM is a file extension for a Computer Graphics Metafile format commonly used in CAD (computer-aided design) and presentation graphics applications. CGM is a vector graphics format that supports three different encoding methods: binary (best for program read speed), character-based (produces the smallest file size and allows for faster data transfers) or cleartext encoding (allows users to read and modify the file with a text editor).
+<abbr title="Computer Graphics Metafile">CGM</abbr> is a file extension for a Computer Graphics Metafile format commonly used in CAD (computer-aided design) and presentation graphics applications. CGM is a vector graphics format that supports three different encoding methods: binary (best for program read speed), character-based (produces the smallest file size and allows for faster data transfers) or cleartext encoding (allows users to read and modify the file with a text editor).
 
 Check next code snippet for converting CGM files to PDF format.
 
@@ -100,7 +100,7 @@ Steps to Convert CGM to PDF in Python:
 
 ## Convert DICOM to PDF
 
-DICOM format is the medical industry standard for the creation, storage, transmission, and visualization of digital medical images and documents of examined patients.
+<abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> format is the medical industry standard for the creation, storage, transmission, and visualization of digital medical images and documents of examined patients.
 
 **Aspose.PDF for Python** allows you to convert DICOM and SVG images, but for technical reasons to add images you need to specify the type of file to be added to PDF.
 
@@ -166,7 +166,7 @@ Aspose presents you online free application ["DICOM to PDF"](https://products.as
 
 ## Convert EMF to PDF
 
-EMF stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device.
+<abbr title="Enhanced metafile format">EMF</abbr> stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device.
 
 The following code snippet shows how to convert an EMF to PDF with Python:
 
@@ -206,7 +206,7 @@ Aspose presents you online free application ["EMF to PDF"](https://products.aspo
 
 Convert GIF files to PDF document using **Aspose.PDF for Python via .NET** library.
 
-GIF is able to store compressed data without loss of quality in a format of no more than 256 colors. The hardware-independent GIF format was developed in 1987 (GIF87a) by CompuServe for transmitting bitmap images over networks.
+<abbr title="Graphics Interchange Format">GIF</abbr> is able to store compressed data without loss of quality in a format of no more than 256 colors. The hardware-independent GIF format was developed in 1987 (GIF87a) by CompuServe for transmitting bitmap images over networks.
 
 So the following code snippet follows these steps and shows how to convert BMP to PDF using Python:
 
@@ -244,7 +244,7 @@ Aspose presents you online free application ["GIF to PDF"](https://products.aspo
 
 **Aspose.PDF for Python via .NET** support feature to convert PNG images to PDF format. Check the next code snippet for realizing you task.
 
-PNG refers to a type of raster image file format that use loseless compression, that makes it popular among its users.
+<abbr title="Portable Network Graphics">PNG</abbr> refers to a type of raster image file format that use loseless compression, that makes it popular among its users.
 
 You can convert PNG to PDF image using the below steps:
 
@@ -291,7 +291,7 @@ Aspose presents you online free application ["PNG to PDF"](https://products.aspo
 
 Scalable Vector Graphics (SVG) is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
 
-SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
+<abbr title="Scalable Vector Graphics">SVG</abbr> images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and if required, compressed. As XML files, SVG images can be created and edited with any text editor, but it is often more convenient to create them with drawing programs such as Inkscape.
 
 {{% alert color="success" %}}
 **Try to convert SVG format to PDF online**
