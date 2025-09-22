@@ -14,17 +14,6 @@ AlternativeHeadline: How to convert HTML to PDF using Aspose.PDF for Python
 Abstract: Aspose.PDF for Python via .NET offers a robust solution for creating PDF files from web pages and raw HTML code within applications. This article provides a guide on converting HTML to PDF using Python, outlining the use of Aspose.PDF for Python, a PDF manipulation API that enables seamless conversion of HTML documents to PDF format. The conversion process can be customized as needed. The article includes a Python code sample demonstrating the conversion process, which involves creating an instance of the HtmlLoadOptions class, initializing a Document object, and saving the output PDF document using the Document.Save() method. Additionally, Aspose offers an online tool for converting HTML to PDF, allowing users to explore the functionality and quality of the conversion process.
 ---
 
-## Overview
-
-Aspose.PDF for Python via .NET is a professional solution that allows you to create PDF files from web pages and raw HTML code in your applications.
-
-This article explains how to **convert HTML to PDF using Python**. It covers the following topics.
-
-_Format_: **HTML**
-- [Python HTML to PDF](#python-html-to-pdf)
-- [Python Convert HTML to PDF](#python-html-to-pdf)
-- [Python How to convert HTML to PDF](#python-html-to-pdf)
-
 ## Python HTML to PDF Conversion
 
 **Aspose.PDF for Python** is a PDF manipulation API that lets you convert any existing HTML documents to PDF seamlessly. The process of converting HTML to PDF can be flexibly customized.
@@ -64,9 +53,11 @@ Aspose presents you online free application ["HTML to PDF"](https://products.asp
 
 ## Convert HTML to PDF media type
 
-1. Create an instance of the [HtmlLoadOptions()](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlloadoptions/) class. 'html_media_type' applies CSS rules intended for on-screen display.
-1. Load and convert HTML.
-1. Save output PDF document by calling **document.save()** method.
+This example shows how to convert an HTML file to PDF using Aspose.PDF for Python via .NET with specific rendering options.
+
+1. Create an instance of the [HtmlLoadOptions()](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlloadoptions/) class. The 'html_media_type' applies CSS rules intended for on-screen display. The 'html_media_type' property can have multiple values. You can set it to HtmlMediaType.SCREEN or HtmlMediaType.PRINT.
+1. Load the HTML into an ap.Document using the load options.
+1. Save the document as a PDF.
 
 ```python
 
@@ -87,9 +78,12 @@ Aspose presents you online free application ["HTML to PDF"](https://products.asp
 
 ## Convert HTML to PDF priority CSS Page Rule
 
+Some documents may contain layout settings that utilize the Page rule, which can create ambiguity when generating the layout. You can control the priority using the 'is_priority_css_page_rule' property. If this property is set to 'True', the CSS rule is applied first.
+
 1. Create an instance of the [HtmlLoadOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlloadoptions/) class.
-1. Optionally sets how CSS is applied. The commented line 'is_priority_css_page_rule' can override how CSS rules affect page layout.
-1. Converts and saves it as a PDF.
+1. Set 'is_priority_css_page_rule = False' to disable prioritizing @page CSS rules, allowing other styles to take precedence.
+1. Load the HTML into an ap.Document with the configured options.
+1. Save the document as a PDF.
 
 ```python
 
@@ -108,11 +102,14 @@ Aspose presents you online free application ["HTML to PDF"](https://products.asp
     print(infile + " converted into " + outfile)
 ```
 
-## Convert HTML to PDF Embed Fonts
+## Convert HTML to PDF with Embeded Fonts
 
-1. Loads an HTML file.
-1. Embeds fonts into the resulting PDF to preserve appearance across devices.
-1. Saves the PDF to a specified output location.
+This example shows how to convert an HTML file to PDF while embedding fonts. If you need a PDF document with Embedded Fonts, you should set 'is_embed_fonts' to True.
+
+1. Create 'HtmlLoadOptions()' to configure HTML to PDF conversion.
+1. Set 'is_embed_fonts = True' to ensure that all fonts used in the HTML are embedded directly into the PDF, preserving visual fidelity.
+1. Load the HTML into an ap.Document with these options.
+1. Save the document as a PDF.
 
 ```python
 
@@ -131,13 +128,15 @@ Aspose presents you online free application ["HTML to PDF"](https://products.asp
     print(infile + " converted into " + outfile)
 ```
 
-## Convert HTML to PDF Render Content to same Page
+## Render Content on single Page during HTML to PDF conversion
 
-Aspose.PDF for Python via .NET to convert an HTML file into a single-page PDF.
+This example demonstrates how to convert an HTML file into a single-page PDF using Aspose.PDF for Python.
+You can display all content on one page using the 'is_render_to_single_page property'.
 
-1. Loads an HTML file.
-1. Configures Aspose to render everything on a single PDF page.
-1. Saves the PDF to a specified location.
+1. Create an instance of 'HtmlLoadOptions()' to configure the conversion process.
+1. Enable 'is_render_to_single_page' to render the entire HTML content onto a single continuous PDF page.
+1. Load the document with the configured options into an 'ap.Document'.
+1. Save the result as a PDF file.
 
 ```python
 
@@ -158,12 +157,12 @@ Aspose.PDF for Python via .NET to convert an HTML file into a single-page PDF.
 
 ## Convert MHTML to PDF
 
-Loads an MHT (MHTML) file from disk and converts it into a PDF using Aspose.PDF for Pyhton via .NET. Allows specifying custom page dimensions to ensure a consistent layout. With this operation, you can support embedded HTML, CSS, and images in MHT files, as well as Configurable page width and height, and save the converted document to a specified output folder.
+This example shows how to convert an MHT (MHTML) file into a PDF document using Aspose.PDF for Python with specific page dimensions.
 
-1. Loads an MHT (MHTML) file.
-1. Sets the page size for the converted document.
-1. Converts the content into PDF (or another format) using Aspose.PDF.
-1. Saves the file to a specific folder and prints a confirmation.
+1. Create an instance of ap.MhtLoadOptions() to configure MHT file processing.
+1. Set various parameters, such as page size.
+1. Initialize the document with the input file and configured loading options.
+1. Save the resulting document as a PDF.
 
 ```python
 

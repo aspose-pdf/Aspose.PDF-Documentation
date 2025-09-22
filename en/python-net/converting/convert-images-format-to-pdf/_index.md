@@ -11,52 +11,8 @@ sitemap:
     priority: 0.5
 TechArticle: true 
 AlternativeHeadline: How to Convert Images to PDF in Python
-Abstract: This article provides a comprehensive guide on converting various image formats to PDF using Python, specifically leveraging the Aspose.PDF library for Python via .NET. The article covers a range of image formats including BMP, CGM, DICOM, EMF, GIF, PNG, SVG, and TIFF. Each section details the steps required to perform the conversion, providing code snippets to illustrate the process. For example, converting BMP to PDF involves creating a new PDF document, defining image placement, inserting the image, and saving the document. Similarly, for formats like CGM, DICOM, and others, specific load options and processing steps are outlined. The article also highlights the advantages of using Aspose.PDF for such tasks, such as its support for different encoding methods and the ability to process both single-frame and multi-frame images. Additionally, it references online tools provided by Aspose for users to try out these conversions without code. Each format is discussed with its unique characteristics and requirements for conversion, providing a
+Abstract: This article provides a comprehensive guide on converting various image formats to PDF using Python, specifically leveraging the Aspose.PDF library for Python via .NET. The article covers a range of image formats including BMP, CGM, DICOM, EMF, GIF, PNG, SVG, and TIFF. Each section details the steps required to perform the conversion, providing code snippets to illustrate the process. For example, converting BMP to PDF involves creating a new PDF document, defining image placement, inserting the image, and saving the document. Similarly, for formats like CGM, DICOM, and others, specific load options and processing steps are outlined. The article also highlights the advantages of using Aspose.PDF for such tasks, such as its support for different encoding methods and the ability to process both single-frame and multi-frame images. 
 ---
-
-## Overview
-
-This article explains how to convert various Images formats to PDF using Python. It covers these topics.
-
-_Format_: **BMP**
-- [Python BMP to PDF](#python-bmp-to-pdf)
-- [Python Convert BMP to PDF](#python-bmp-to-pdf)
-- [Python How to convert BMP image to PDF](#python-bmp-to-pdf)
-
-_Format_: **CGM**
-- [Python CGM to PDF](#python-cgm-to-pdf)
-- [Python Convert CGM to PDF](#python-cgm-to-pdf)
-- [Python How to convert CGM image to PDF](#python-cgm-to-pdf)
-
-_Format_: **DICOM**
-- [Python DICOM to PDF](#python-dicom-to-pdf)
-- [Python Convert DICOM to PDF](#python-dicom-to-pdf)
-- [Python How to convert DICOM image to PDF](#python-dicom-to-pdf)
-
-_Format_: **EMF**
-- [Python EMF to PDF](#python-emf-to-pdf)
-- [Python Convert EMF to PDF](#python-emf-to-pdf)
-- [Python How to convert EMF image to PDF](#python-emf-to-pdf)
-
-_Format_: **GIF**
-- [Python GIF to PDF](#python-gif-to-pdf)
-- [Python Convert GIF to PDF](#python-gif-to-pdf)
-- [Python How to convert GIF image to PDF](#python-gif-to-pdf)
-
-_Format_: **PNG**
-- [Python PNG to PDF](#python-png-to-pdf)
-- [Python Convert PNG to PDF](#python-png-to-pdf)
-- [Python How to convert PNG image to PDF](#python-png-to-pdf)
-
-_Format_: **SVG**
-- [Python SVG to PDF](#python-svg-to-pdf)
-- [Python Convert SVG to PDF](#python-svg-to-pdf)
-- [Python How to convert SVG image to PDF](#python-svg-to-pdf)
-
-_Format_: **TIFF**
-- [Python TIFF to PDF](#python-tiff-to-pdf)
-- [Python Convert TIFF to PDF](#python-tiff-to-pdf)
-- [Python How to convert TIFF image to PDF](#python-tiff-to-pdf)
 
 ## Python Images to PDF Conversions
 
@@ -66,16 +22,16 @@ _Format_: **TIFF**
 
 Convert BMP files to PDF document using **Aspose.PDF for Python via .NET** library.
 
-<abbr title="Bitmap Image File">BMP</abbr> images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
+BMP images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
 
 You can convert BMP to PDF files with Aspose.PDF for Python via .NET API. Therefore, you can follow the following steps to convert BMP images:
 
 Steps to Convert BMP to PDF in Python:
 
-1. Creates an empty PDF document.
-1. Adds a new A4-sized page.
+1. Create an empty PDF document.
+1. Create the page you need, for example, we created A4, but you can specify your own format.
 1. Places the image (from infile) inside the page using the defined rectangle.
-1. Saves the document as PDF.
+1. Save the document as PDF.
 
 So the following code snippet follows these steps and shows how to convert BMP to PDF using Python:
 
@@ -109,9 +65,9 @@ Aspose presents you online free application ["BMP to PDF"](https://products.aspo
 
 ## Convert CGM to PDF
 
-Converts a CGM (Computer Graphics Metafile) into PDF (or another supported format) using Aspose.PDF for Python via .NET.
+Convert a CGM (Computer Graphics Metafile) into PDF (or another supported format) using Aspose.PDF for Python via .NET.
 
-<abbr title="Computer Graphics Metafile">CGM</abbr> is a file extension for a Computer Graphics Metafile format commonly used in CAD (computer-aided design) and presentation graphics applications. CGM is a vector graphics format that supports three different encoding methods: binary (best for program read speed), character-based (produces the smallest file size and allows for faster data transfers) or cleartext encoding (allows users to read and modify the file with a text editor).
+CGM is a file extension for a Computer Graphics Metafile format commonly used in CAD (computer-aided design) and presentation graphics applications. CGM is a vector graphics format that supports three different encoding methods: binary (best for program read speed), character-based (produces the smallest file size and allows for faster data transfers) or cleartext encoding (allows users to read and modify the file with a text editor).
 
 Check next code snippet for converting CGM files to PDF format.
 
@@ -144,7 +100,7 @@ Steps to Convert CGM to PDF in Python:
 
 ## Convert DICOM to PDF
 
-<abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> format is the medical industry standard for the creation, storage, transmission, and visualization of digital medical images and documents of examined patients.
+DICOM format is the medical industry standard for the creation, storage, transmission, and visualization of digital medical images and documents of examined patients.
 
 **Aspose.PDF for Python** allows you to convert DICOM and SVG images, but for technical reasons to add images you need to specify the type of file to be added to PDF.
 
@@ -152,8 +108,23 @@ The following code snippet shows how to convert DICOM files to PDF format with A
 
 1. Load the DICOM file.
 1. Extract image dimensions.
-1. Print image size.
 1. Create a new PDF document.
+
+мы используем дополнительную библиотеку pydicom чтобы установить размеры данного изображения. Если выхотите прост орасположить изображение на страницу, то данный код можно пропустить (под )
+
+```python
+
+    # Load the DICOM file
+    dicom_file = pydicom.dcmread(path_infile)
+
+    # Get the dimensions of the image
+    rows = dicom_file.Rows
+    columns = dicom_file.Columns
+
+    # Print the dimensions
+    print(f"DICOM image size: {rows} x {columns} pixels")
+```
+
 1. Prepare the DICOM image for PDF.
 1. Set PDF page size and margins.
 1. Add the image to the page.
@@ -215,7 +186,7 @@ Aspose presents you online free application ["DICOM to PDF"](https://products.as
 
 ## Convert EMF to PDF
 
-<abbr title="Enhanced metafile format">EMF</abbr> stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device.
+EMF stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device.
 
 The following code snippet shows how to convert an EMF to PDF with Python:
 
@@ -255,7 +226,7 @@ Aspose presents you online free application ["EMF to PDF"](https://products.aspo
 
 Convert GIF files to PDF document using **Aspose.PDF for Python via .NET** library.
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is able to store compressed data without loss of quality in a format of no more than 256 colors. The hardware-independent GIF format was developed in 1987 (GIF87a) by CompuServe for transmitting bitmap images over networks.
+GIF is able to store compressed data without loss of quality in a format of no more than 256 colors. The hardware-independent GIF format was developed in 1987 (GIF87a) by CompuServe for transmitting bitmap images over networks.
 
 So the following code snippet follows these steps and shows how to convert BMP to PDF using Python:
 
@@ -293,14 +264,14 @@ Aspose presents you online free application ["GIF to PDF"](https://products.aspo
 
 **Aspose.PDF for Python via .NET** support feature to convert PNG images to PDF format. Check the next code snippet for realizing you task.
 
-<abbr title="Portable Network Graphics">PNG</abbr> refers to a type of raster image file format that use loseless compression, that makes it popular among its users.
+PNG refers to a type of raster image file format that use loseless compression, that makes it popular among its users.
 
 You can convert PNG to PDF image using the below steps:
 
-1. Create a New PDF Document
-1. Define Image Placement
-1. Save the PDF
-1. Print Conversion Message
+1. Create a New PDF Document.
+1. Define Image Placement.
+1. Save the PDF.
+1. Print Conversion Message.
 
 Moreover, the code snippet below shows how to convert PNG to PDF with Python:
 
@@ -336,7 +307,7 @@ Aspose presents you online free application ["PNG to PDF"](https://products.aspo
 
 ## Convert SVG to PDF
 
-**Aspose.PDF for Python via .NET** explains how to convert SVG images to PDF format and how to get dimensions of the source <abbr title="Scalable Vector Graphics">SVG</abbr> file.
+**Aspose.PDF for Python via .NET** explains how to convert SVG images to PDF format and how to get dimensions of the source SVG file.
 
 Scalable Vector Graphics (SVG) is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
 
@@ -374,7 +345,7 @@ The following code snippet shows the process of converting SVG file into PDF for
 
 ## Convert TIFF to PDF
 
-**Aspose.PDF** file format supported, be it a single frame or multi-frame <abbr title="Tag Image File Format">TIFF</abbr> image. It means that you can convert the TIFF image to PDF.
+**Aspose.PDF** file format supported, be it a single frame or multi-frame TIFF image. It means that you can convert the TIFF image to PDF.
 
 TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. TIFF image can contain several frames with different images. Aspose.PDF file format is also supported, be it a single frame or multi-frame TIFF image.
 
@@ -404,11 +375,11 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
 
 ## Convert CDR to PDF
 
-Next code snippet shows how to load a CorelDRAW (CDR) file and save it as a PDF using 'CdrLoadOptions' in Aspose.PDF for Python via .NET.
+Following code snippet shows how to load a CorelDRAW (CDR) file and save it as a PDF using 'CdrLoadOptions' in Aspose.PDF for Python via .NET.
 
-1. Initialize load options for CDR format.
-1. Load CDR file into Document object.
-1. Save the document in PDF format.
+1. Create 'CdrLoadOptions()' to configure how the CDR file should be loaded.
+1. Initialize a Document object with the CDR file and load options.
+1. Save the document as a PDF.
 
 ```python
 
@@ -432,7 +403,7 @@ Next code snippet shows how to load a CorelDRAW (CDR) file and save it as a PDF 
 
 ## Convert JPEG to PDF
 
-This example shows how to create a new PDF document, add a blank A4-sized page, and insert an image into it using Aspose.PDF for Python via .NET.
+This example shows how to convert Jpeg to PDF file using Aspose.PDF for Python via .NET.
 
 1. Create a new PDF document.
 1. Add a new page.
@@ -461,47 +432,3 @@ This example shows how to create a new PDF document, add a blank A4-sized page, 
     document.save(path_outfile)
     print(infile + " converted into " + outfile)
 ```
-
-## See Also
-
-This article also covers these topics. The codes are same as above.
-
-_Format_: **BMP**
-- [Python BMP to PDF Code](#python-bmp-to-pdf)
-- [Python BMP to PDF API](#python-bmp-to-pdf)
-- [Python BMP to PDF Programmatically](#python-bmp-to-pdf)
-- [Python BMP to PDF Library](#python-bmp-to-pdf)
-- [Python Save BMP as PDF](#python-bmp-to-pdf)
-- [Python Generate PDF from BMP](#python-bmp-to-pdf)
-- [Python Create PDF from BMP](#python-bmp-to-pdf)
-- [Python BMP to PDF Converter](#python-bmp-to-pdf)
-
-_Format_: **CGM**
-- [Python CGM to PDF Code](#python-cgm-to-pdf)
-- [Python CGM to PDF API](#python-cgm-to-pdf)
-- [Python CGM to PDF Programmatically](#python-cgm-to-pdf)
-- [Python CGM to PDF Library](#python-cgm-to-pdf)
-- [Python Save CGM as PDF](#python-cgm-to-pdf)
-- [Python Generate PDF from CGM](#python-cgm-to-pdf)
-- [Python Create PDF from CGM](#python-cgm-to-pdf)
-- [Python CGM to PDF Converter](#python-cgm-to-pdf)
-
-_Format_: **DICOM**
-- [Python DICOM to PDF Code](#python-dicom-to-pdf)
-- [Python DICOM to PDF API](#python-dicom-to-pdf)
-- [Python DICOM to PDF Programmatically](#python-dicom-to-pdf)
-- [Python DICOM to PDF Library](#python-dicom-to-pdf)
-- [Python Save DICOM as PDF](#python-dicom-to-pdf)
-- [Python Generate PDF from DICOM](#python-dicom-to-pdf)
-- [Python Create PDF from DICOM](#python-dicom-to-pdf)
-- [Python DICOM to PDF Converter](#python-dicom-to-pdf)
-
-_Format_: **EMF**
-- [Python EMF to PDF Code](#python-emf-to-pdf)
-- [Python EMF to PDF API](#python-emf-to-pdf)
-- [Python EMF to PDF Programmatically](#python-emf-to-pdf)
-- [Python EMF to PDF Library](#python-emf-to-pdf)
-- [Python Save EMF as PDF](#python-emf-to-pdf)
-- [Python Generate PDF from EMF](#python-emf-to-pdf)
-- [Python Create PDF from EMF](#python-emf-to-pdf)
-- [Python EMF to PDF Converter](#python-emf-to-pdf)

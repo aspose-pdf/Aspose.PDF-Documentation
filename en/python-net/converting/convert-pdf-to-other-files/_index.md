@@ -24,7 +24,7 @@ Aspose.PDF for Python presents you online free application ["PDF to EPUB"](https
 [![Aspose.PDF Convertion PDF to EPUB with Free App](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
 
-**<abbr title="Electronic Publication">EPUB</abbr>** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
+**EPUB** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
 EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device. EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.
 
 Aspose.PDF for Python also supports the feature to convert PDF documents to EPUB format. Aspose.PDF for Python has a class named 'EpubSaveOptions' which can be used as the second argument to [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method, to generate an EPUB file.
@@ -109,7 +109,7 @@ Aspose.PDF for Python presents you online free application ["PDF to Text"](https
 
 ## Convert PDF to XPS
 
-**Aspose.PDF for Python** gives a possibility to convert PDF files to <abbr title="XML Paper Specification">XPS</abbr> format. Let try to use the presented code snippet for converting PDF files to XPS format with Python.
+**Aspose.PDF for Python** gives a possibility to convert PDF files to XPS format. Let try to use the presented code snippet for converting PDF files to XPS format with Python.
 
 {{% alert color="success" %}}
 **Try to convert PDF to XPS online**
@@ -192,20 +192,3 @@ This method converts a PDF document into the MOBI (MobiXML) format, which is com
 
     print(infile + " converted into " + outfile)
 ```
-
-## Convert PDF to XML
-
-{{% alert color="success" %}}
-**Try to convert PDF to XML online**
-
-Aspose.PDF for Python presents you online free application ["PDF to XML"](https://products.aspose.app/pdf/conversion/pdf-to-xml), where you may try to investigate the functionality and quality it works.
-
-[![Aspose.PDF Convertion PDF to XML with Free App](pdf_to_xml.png)](https://products.aspose.app/pdf/conversion/pdf-to-xml)
-{{% /alert %}}
-
-<abbr title="Extensible Markup Language">XML</abbr> is a markup language and file format for storing, transmitting, and reconstructing arbitrary data.
-
-Aspose.PDF for Python also supports the feature to convert PDF documents to XML format. Aspose.PDF for Python has a class named 'XmlSaveOptions' which can be used as the second argument to [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method, to generate an XML file.
-Please try using the following code snippet to accomplish this requirement with Python.
-
-
