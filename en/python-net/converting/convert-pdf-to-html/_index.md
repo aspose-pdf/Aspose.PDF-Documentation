@@ -54,7 +54,7 @@ Aspose.PDF for Python presents you online free application ["PDF to HTML"](https
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML with Stored Images
+### Convert PDF to HTML with saving images in the specified folder
 
 This function converts a PDF file into HTML format using Aspose.PDF for Python via .NET. All extracted images are stored in a specified folder instead of being embedded in the HTML file.
 
@@ -100,7 +100,7 @@ This function converts a PDF file into multi-page HTML, where each PDF page is e
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML with Stored SVG Images
+### Convert PDF to HTML with saving SVG images in specified folder
 
 This function converts a PDF into HTML format while storing all images as SVG files in a specified folder, instead of embedding them directly in the HTML.
 
@@ -124,7 +124,7 @@ This function converts a PDF into HTML format while storing all images as SVG fi
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML with Compressed SVG Images
+### Convert PDF to HTML and saving compressed SVG images
 
 This snippet converts a PDF into HTML format, storing all images as SVG files in a specified folder and compressing them to reduce file size.
 
@@ -151,7 +151,7 @@ This snippet converts a PDF into HTML format, storing all images as SVG files in
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML with Embedded Raster Images
+### Convert PDF to HTML with control of Embedded Raster Images
 
 This snippet converts a PDF into HTML format, embedding raster images as PNG page backgrounds. This approach preserves image quality and page layout within the HTML.
 
@@ -175,9 +175,9 @@ This snippet converts a PDF into HTML format, embedding raster images as PNG pag
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML (Body Content Only, Multi-Page)
+### Convert PDF to Body-Only content HTML page
 
-This function converts a PDF into HTML format, generating only the 'body' content without extra 'html' or 'head' tags, and splits the output into separate pages.
+This function converts a PDF into HTML format, generating 'body-only' content without extra 'html' or 'head' tags, and splits the output into separate pages.
 
 1. Load the PDF document using 'apdf.Document'.
 1. Create 'HtmlSaveOptions' and configure:
