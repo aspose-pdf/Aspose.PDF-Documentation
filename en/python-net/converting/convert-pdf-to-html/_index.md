@@ -151,7 +151,7 @@ This snippet converts a PDF into HTML format, storing all images as SVG files in
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML with Embedded Raster Images
+### Convert PDF to HTML with control of Embedded Raster Images
 
 This snippet converts a PDF into HTML format, embedding raster images as PNG page backgrounds. This approach preserves image quality and page layout within the HTML.
 
