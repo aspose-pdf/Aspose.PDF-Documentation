@@ -175,7 +175,7 @@ This snippet converts a PDF into HTML format, embedding raster images as PNG pag
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML (Body Content Only, Multi-Page)
+### Convert PDF to Body-Only content HTML page
 
 This function converts a PDF into HTML format, generating only the 'body' content without extra 'html' or 'head' tags, and splits the output into separate pages.
 
