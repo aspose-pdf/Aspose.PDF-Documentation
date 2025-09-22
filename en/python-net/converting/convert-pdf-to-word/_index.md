@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to Microsoft Word Documents in Python
-linktitle: Convert PDF to Word 2003/2019
+linktitle: Convert PDF to Word
 type: docs
 weight: 10
 url: /python-net/convert-pdf-to-word/
