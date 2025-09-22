@@ -124,7 +124,7 @@ This function converts a PDF into HTML format while storing all images as SVG fi
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML with Compressed SVG Images
+### Convert PDF to HTML and saving compressed SVG images
 
 This snippet converts a PDF into HTML format, storing all images as SVG files in a specified folder and compressing them to reduce file size.
 
