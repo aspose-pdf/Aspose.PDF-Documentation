@@ -131,7 +131,7 @@ Aspose presents you online free application ["HTML to PDF"](https://products.asp
     print(infile + " converted into " + outfile)
 ```
 
-## Convert HTML to PDF Render Content to same Page
+## Render content on single page during HTML to PDF conversion
 
 Aspose.PDF for Python via .NET to convert an HTML file into a single-page PDF.
 
