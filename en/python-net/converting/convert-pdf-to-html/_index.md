@@ -54,7 +54,7 @@ Aspose.PDF for Python presents you online free application ["PDF to HTML"](https
     print(infile + " converted into " + outfile)
 ```
 
-### Convert PDF to HTML with Stored Images
+### Convert PDF to HTML with saving images in the specified folder
 
 This function converts a PDF file into HTML format using Aspose.PDF for Python via .NET. All extracted images are stored in a specified folder instead of being embedded in the HTML file.
 
