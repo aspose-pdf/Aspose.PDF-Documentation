@@ -128,7 +128,11 @@ This example shows how to convert an HTML file to PDF while embedding fonts. If 
     print(infile + " converted into " + outfile)
 ```
 
+<<<<<<< HEAD
 ## Render Content on single Page during HTML to PDF conversion
+=======
+## Render content on single page during HTML to PDF conversion
+>>>>>>> develop
 
 This example demonstrates how to convert an HTML file into a single-page PDF using Aspose.PDF for Python.
 You can display all content on one page using the 'is_render_to_single_page property'.
