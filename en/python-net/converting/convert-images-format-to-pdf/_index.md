@@ -104,32 +104,12 @@ DICOM format is the medical industry standard for the creation, storage, transmi
 
 **Aspose.PDF for Python** allows you to convert DICOM and SVG images, but for technical reasons to add images you need to specify the type of file to be added to PDF.
 
-The following code snippet shows how to convert DICOM files to PDF format with Aspose.PDF. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF.
+The following code snippet shows how to convert DICOM files to PDF format with Aspose.PDF. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF. We use the additional pydicom library to set the dimensions of this image. If you want to position the image on the page, you can skip this code snippet.
 
-1. Load the DICOM file.
-1. Extract image dimensions.
-1. Create a new PDF document.
-
-мы используем дополнительную библиотеку pydicom чтобы установить размеры данного изображения. Если выхотите прост орасположить изображение на страницу, то данный код можно пропустить (под )
-
-```python
-
-    # Load the DICOM file
-    dicom_file = pydicom.dcmread(path_infile)
-
-    # Get the dimensions of the image
-    rows = dicom_file.Rows
-    columns = dicom_file.Columns
-
-    # Print the dimensions
-    print(f"DICOM image size: {rows} x {columns} pixels")
-```
-
-1. Prepare the DICOM image for PDF.
-1. Set PDF page size and margins.
-1. Add the image to the page.
-1. Save the PDF.
-1. Print Conversion Message.
+1. Initialize a new 'ap.Document()' and add a page
+1. Insert DICOM Image. Create an apdf.Image(), set its type to DICOM, and assign the file path.
+1. Adjust Page Size. Match the PDF page dimensions to the DICOM image size, remove margins.
+1. Add the image to the page, save the document to the output file.
 
 ```python
 
