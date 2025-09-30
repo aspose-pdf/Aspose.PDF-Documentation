@@ -101,7 +101,7 @@ Steps: PDF to Image (BMP, EMF, JPG, PNG, GIF) in Python
    * [JpegDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/jpegdevice/) (to convert PDF to JPG)
    * [PngDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/pngdevice/) (to convert PDF to PNG)
    * [GifDevice](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/gifdevice/) (to convert PDF to GIF)
-3. Call the [ImageDevice.process()](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/#methods) method to perform PDF to Image conversion.
+1. Call the [ImageDevice.process()](https://reference.aspose.com/pdf/python-net/aspose.pdf.devices/imagedevice/#methods) method to perform PDF to Image conversion.
 
 ### Convert PDF to BMP
 

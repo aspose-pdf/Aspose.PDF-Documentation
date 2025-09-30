@@ -143,7 +143,7 @@ The following code snippet shows the process of converting PDF file into XPS for
 
 ## Convert PDF to MD
 
-Aspose.PDF has the class 'MarkdownSaveOptions(), which converts a PDF document into Markdown (MD) format while preserving images and resources.
+Aspose.PDF has the class 'MarkdownSaveOptions()', which converts a PDF document into Markdown (MD) format while preserving images and resources.
 
 1. Load the source PDF using 'ap.Document'.
 1. Create an instance of 'MarkdownSaveOptions'.
