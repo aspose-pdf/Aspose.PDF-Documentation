@@ -77,7 +77,7 @@ This method extracts images located within a specified rectangular region on a P
 
 ## Extract Image Information from PDF
 
-This example demonstrates how to analyze images embedded in a PDF page and calculate their effective resolution.
+The example below demonstrates how to analyze images embedded in a PDF page and calculate their effective resolution.
 
 1. Open the PDF with 'ap.Document'.
 1. Track graphics state while reading page content.
