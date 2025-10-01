@@ -14,7 +14,7 @@ Abstract: This article discusses the process of extracting images from PDF files
 Do you need to separate images from your PDF files? For simplified management, archiving, analysis, or sharing images of your documents, use **Aspose.PDF for Python** and extract images from PDF files.
 
 1. Load the PDF document with 'ap.Document()'.
-1. Access the first page of the document (document.pages[1]).
+1. Access the desired page of the document (document.pages[1]).
 1. Select the first image from the page resources (resources.images[1]).
 1. Create an output stream (FileIO) for the target file.
 1. Save the extracted image using 'xImage.save(output_image)'.
