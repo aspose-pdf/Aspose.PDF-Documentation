@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 TechArticle: true 
 AlternativeHeadline: How to convert PDF to PDF/x formats
-Abstract: The article provides a comprehensive guide on converting PDF to PDF/A, PDF/E and PDF/X formats using Aspose.PDF for Python.
+Abstract: The article provides a comprehensive guide on converting PDF to PDF/A, PDF/E, and PDF/X formats using Aspose.PDF for Python.
 ---
 
 **PDF to PDF/x format means the ability to convert PDF to additional formats, namely PDF/A, PDF/E and PDF/X.**
