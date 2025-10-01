@@ -16,7 +16,7 @@ Abstract: This article provides a comprehensive guide on converting PDF files to
 
 ## Convert PDF to HTML
 
-**Aspose.PDF for Python via .NET** provides many features for converting various file formats into PDF documents and converting PDF files into various output formats. This article discusses how to convert a PDF file into HTML. You can use just a couple of lines of code Python for converting PDF To HTML. You may need to convert PDF to HTML if you want to create a website or add content to an online forum. One way to convert PDF to HTML is to programmatically use Python.
+**Aspose.PDF for Python via .NET** provides many features for converting various file formats into PDF documents and converting PDF files into various output formats. This article discusses how to convert a PDF file into <abbr title="HyperText Markup Language">HTML</abbr>. You can use just a couple of lines of code Python for converting PDF To HTML. You may need to convert PDF to HTML if you want to create a website or add content to an online forum. One way to convert PDF to HTML is to programmatically use Python.
 
 {{% alert color="success" %}}
 **Try to convert PDF to HTML online**

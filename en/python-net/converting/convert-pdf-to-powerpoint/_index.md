@@ -18,7 +18,7 @@ Abstract: This article provides a comprehensive guide on converting PDF files in
 
 **Aspose.PDF for Python via .NET** lets you track the progress of PDF to PPTX conversion.
 
-We have an API named Aspose.Slides which offers the feature to create as well as manipulate PPT/PPTX presentations. This API also provides the feature to convert PPT/PPTX files to PDF format. During this conversion, the individual pages of the PDF file are converted to separate slides in the PPTX file.
+We have an API named Aspose.Slides which offers the feature to create as well as manipulate PPT/PPTX presentations. This API also provides the feature to convert <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr> files to PDF format. During this conversion, the individual pages of the PDF file are converted to separate slides in the PPTX file.
 
 During PDF to PPTX conversion, the text is rendered as Text where you can select/update it. Please note that in order to convert PDF files to PPTX format, Aspose.PDF provides a class named [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/). An object of the PptxSaveOptions class is passed as a second argument to the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods). The following code snippet shows the process for converting PDF files into PPTX format.
 
