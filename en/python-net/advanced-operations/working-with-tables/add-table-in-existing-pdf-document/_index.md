@@ -843,7 +843,7 @@ This example shows how to create a table that spans multiple pages while keeping
 
 ### Repeating Columns
 
-The function 'add_repeating_columns' creates a PDF document with a table that has repeating columns. It sets up a bordered table, adds headers, fills in data rows, and saves the generated PDF file to the specified location.
+The function 'add_repeating_columns' creates a PDF document with a table that has repeating columns. It sets up a bordered table, adds headers, fills in data rows, and saves the generated PDF file to the specified location. Setting this property will cause the table to break to the next page column-wise and repeat the given column count at the start of the next page.
 
 1. Initializes a new PDF document.
 1. Adds a page with custom dimensions.
