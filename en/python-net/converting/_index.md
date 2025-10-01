@@ -64,6 +64,10 @@ If honestly, externally, it is very difficult to determine if it is PDF or PDF/A
 
 - [Convert other file formats to PDF](/pdf/python-net/convert-other-files-to-pdf/) - this topic describes conversion with various formats like EPUB, XPS, Postscript, text and others.
 
+- [Convert PDF/x to PDF](/pdf/python-net/convert-pdf_x-to-pdf/) - this topic describes converting PDF/UA, and PDF/A to PDF.
+
+- [Convert PDF to PDF/x](/pdf/python-net/convert-pdf-to-pdf_x/) - this topic describes converting PDF to PDF/A, PDF/E and PDF/X formats.
+
 ## Try to convert PDF files online
 
 {{% alert color="success" %}}
