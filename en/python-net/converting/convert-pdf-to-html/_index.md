@@ -179,7 +179,7 @@ This function converts a PDF into HTML format, generating 'body-only' content wi
 
 ```python
 
-    from os import path
+from os import path
     import aspose.pdf as apdf
 
     path_infile = path.join(self.data_dir, infile)

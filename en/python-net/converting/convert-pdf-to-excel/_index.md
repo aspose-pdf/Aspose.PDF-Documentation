@@ -139,7 +139,6 @@ This Python example shows how to convert a PDF file into an Excel file in XLSM f
     save_options = apdf.ExcelSaveOptions()
     save_options.format = apdf.ExcelSaveOptions.ExcelFormat.XLSM
     document.save(path_outfile, save_options)
-
     print(infile + " converted into " + outfile)
 ```
 
@@ -157,11 +156,12 @@ Steps: Convert PDF to CSV in Python
 
 ```python
 
-    from os import path
-    import aspose.pdf as apdf
+from os import path
+import aspose.pdf as apdf
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
+def convert_pdf_to_excel_2007_csv(infile, outfile):
+    path_infile = path.join(data_dir, infile)
+    path_outfile = path.join(data_dir, "python", outfile)
 
     document = apdf.Document(path_infile)
     save_options = apdf.ExcelSaveOptions()

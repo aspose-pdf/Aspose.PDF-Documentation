@@ -176,6 +176,7 @@ Steps: PDF to Image (BMP, EMF, JPG, PNG, GIF) in Python
     print(infile + " converted into " + outfile)
 ```
 
+
 ### Convert PDF to PNG
 
 ```python

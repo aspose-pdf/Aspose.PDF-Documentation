@@ -75,6 +75,63 @@ Steps Convert TEX to PDF in Python:
 
     print(infile + " converted into " + outfile)
 ```
+## Convert OFD to PDF
+
+OFD stands for Open Fixed-layout Document (sometimes called Open Fixed Document format). It is a Chinese national standard (GB/T 33190-2016) for electronic documents, introduced as an alternative to PDF.
+
+Steps Convert OFD to PDF in Python:
+
+1. Set up OFD load options using OfdLoadOptions().
+1. Load the OFD document.
+1. Save as PDF.
+
+```python
+
+    from os import path
+    import aspose.pdf as ap
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    load_options = ap.OfdLoadOptions()
+    document = ap.Document(path_infile, load_options)
+    document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
+```
+
+## Convert LaTeX/TeX to PDF
+
+The LaTeX file format is a text file format with markup in the LaTeX derivative of the TeX family of languages and LaTeX is a derived format of the TeX system. LaTeX (ˈleɪtɛk/lay-tek or lah-tek) is a document preparation system and document markup language. It is widely used for the communication and publication of scientific documents in many fields, including mathematics, physics, and computer science. It also has a prominent role in the preparation and publication of books and articles that contain complex multilingual materials, such as Sanskrit and Arabic, including critical editions. LaTeX uses the TeX typesetting program for formatting its output, and is itself written in the TeX macro language.
+
+{{% alert color="success" %}}
+**Try to convert LaTeX/TeX to PDF online**
+
+Aspose.PDF for Python via .NET presents you online free application ["LaTex to PDF"](https://products.aspose.app/pdf/conversion/tex-to-pdf), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion LaTeX/TeX to PDF with Free App](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
+{{% /alert %}}
+
+Steps Convert TEX to PDF in Python:
+
+1. Set up LaTeX load options using LatexLoadOptions().
+1. Load the LaTeX document.
+1. Save as PDF.
+
+```python
+
+    from os import path
+    import aspose.pdf as ap
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    load_options = ap.LatexLoadOptions()
+    document = ap.Document(path_infile, load_options)
+    document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
+```
 
 ## Convert EPUB to PDF
 
@@ -248,6 +305,30 @@ Steps Convert TEXT to PDF in Python:
     print(infile + " converted into " + outfile)
 ```
 
+## Convert PostScript to PDF
+
+This example demonstrates how to convert a PostScript file into a PDF document using Aspose.PDF for Python via .NET.
+
+1. Create an instance of 'PsLoadOptions' to correctly interpret the PS file.
+1. Load the 'PostScript' file into a Document object using the load options.
+1. Save the document in PDF format to the desired output path.
+
+```python
+
+    from os import path
+    import aspose.pdf as ap
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    load_options = ap.PsLoadOptions()
+
+    document = ap.Document(path_infile, load_options)
+    document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
+```
+
 ## Convert XPS to PDF
 
 **Aspose.PDF for Python via .NET** support feature converting <abbr title="XML Paper Specification">XPS</abbr> files to PDF format. Check this article to resolve your tasks.
@@ -274,7 +355,7 @@ The following code snippet shows the process of converting XPS file into PDF for
 {{% alert color="success" %}}
 **Try to convert XPS format to PDF online**
 
-Aspose.PDF for Python via .NET presents you online free application ["XPS to PDF"](https://products.aspose.app/pdf/conversion/xps-to-pdf/), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Python via .NET presents you online free appliPostScriptcation ["XPS to PDF"](https://products.aspose.app/pdf/conversion/xps-to-pdf/), where you may try to investigate the functionality and quality it works.
 
 [![Aspose.PDF Convertion XPS to PDF with Free App](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
 {{% /alert %}}
@@ -302,30 +383,6 @@ Following code snippet can be used to convert a XSLFO to PDF format with Aspose.
     print(xmlfile + " converted into " + outfile)
 ```
 
-## Convert PostScript to PDF
-
-This example demonstrates how to convert a PostScript file into a PDF document using Aspose.PDF for Python via .NET.
-
-1. Create an instance of 'PsLoadOptions' to correctly interpret the PS file.
-1. Load the 'PostScript' file into a Document object using the load options.
-1. Save the document in PDF format to the desired output path.
-
-```python
-
-    from os import path
-    import aspose.pdf as ap
-
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-
-    load_options = ap.PsLoadOptions()
-
-    document = ap.Document(path_infile, load_options)
-    document.save(path_outfile)
-
-    print(infile + " converted into " + outfile)
-```
-
 ## Convert XML with XSLT to PDF
 
 This example demonstrates how to convert an XML file into a PDF by first transforming it into HTML using an XSLT template and then loading the HTML into Aspose.PDF.
@@ -340,29 +397,40 @@ This example demonstrates how to convert an XML file into a PDF by first transfo
     from os import path
     import aspose.pdf as ap
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-    path_template = path.join(self.data_dir, template)
-    path_temp_file = path.join(self.data_dir, "temp.html")
+    def transform_xml_to_html(xml_file, xslt_file, html_file):
+        from lxml import etree
+        """
+        Transform XML to HTML using XSLT and return as a stream
+        """
+        # Parse XML document
+        xml_doc = etree.parse(xml_file)
 
-    load_options = ap.HtmlLoadOptions()
-    self.transform_xml_to_html(path_infile, path_template, path_temp_file)
+        # Parse XSLT stylesheet
+        xslt_doc = etree.parse(xslt_file)
+        transform = etree.XSLT(xslt_doc)
 
-    document = ap.Document(path_temp_file, load_options)
-    document.save(path_outfile)
+        # Apply transformation
+        result = transform(xml_doc)
 
-    if path.exists(path_temp_file):
-        os.remove(path_temp_file)
+        # Save result to HTML file
+        with open(html_file, 'w', encoding='utf-8') as f:
+            f.write(str(result))
 
-    print(infile + " converted into " + outfile)
 
-    xml_doc = etree.parse(xml_file)
+    def convert_XML_to_PDF(template, infile, outfile):
+        path_infile = path.join(data_dir, infile)
+        path_outfile = path.join(data_dir, "python", outfile)
+        path_template = path.join(data_dir, template)
+        path_temp_file = path.join(data_dir, "temp.html")
 
-    xslt_doc = etree.parse(xslt_file)
-    transform = etree.XSLT(xslt_doc)
+        load_options = ap.HtmlLoadOptions()
+        transform_xml_to_html(path_infile, path_template, path_temp_file)
 
-    result = transform(xml_doc)
+        document = ap.Document(path_temp_file, load_options)
+        document.save(path_outfile)
 
-    with open(html_file, 'w', encoding='utf-8') as f:
-        f.write(str(result))
+        if path.exists(path_temp_file):
+            os.remove(path_temp_file)
+
+        print(infile + " converted into " + outfile)
 ```

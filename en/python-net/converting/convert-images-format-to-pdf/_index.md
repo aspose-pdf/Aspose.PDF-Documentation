@@ -111,6 +111,16 @@ The following code snippet shows how to convert DICOM files to PDF format with A
 1. Adjust Page Size. Match the PDF page dimensions to the DICOM image size, remove margins.
 1. Add the image to the page, save the document to the output file.
 
+1. Load the DICOM file.
+1. Extract image dimensions.
+1. Print image size.
+1. Create a new PDF document.
+1. Prepare the DICOM image for PDF.
+1. Set PDF page size and margins.
+1. Add the image to the page.
+1. Save the PDF.
+1. Print Conversion Message.
+
 ```python
 
     from io import FileIO
@@ -383,7 +393,7 @@ Following code snippet shows how to load a CorelDRAW (CDR) file and save it as a
 
 ## Convert JPEG to PDF
 
-This example shows how to convert Jpeg to PDF file using Aspose.PDF for Python via .NET.
+This example shows how to convert JPEG to PDF file using Aspose.PDF for Python via .NET.
 
 1. Create a new PDF document.
 1. Add a new page.

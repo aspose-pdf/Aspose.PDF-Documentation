@@ -139,7 +139,6 @@ You can display all content on one page using the 'is_render_to_single_page prop
 1. Save the result as a PDF file.
 
 ```python
-
     from os import path
     import aspose.pdf as ap
     import requests

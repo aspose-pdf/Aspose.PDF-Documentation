@@ -52,7 +52,8 @@ Steps: Convert PDF to PowerPoint in Python
 {{% alert color="success" %}}
 **Try to convert PDF to PowerPoint online**
 
-Aspose.PDF for Python via .NET present you online free application ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), where you may try to investigate the functionality and quality it works.
+Aspose.PDF present you online free application ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), where you may try to investigate the functionality and quality it works.
+
 
 [![Aspose.PDF Convertion PDF to PPTX with Free App](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
