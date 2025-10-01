@@ -51,7 +51,7 @@ Aspose presents you online free application ["HTML to PDF"](https://products.asp
 [![Aspose.PDF Convertion HTML to PDF using Free App](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
 {{% /alert %}}
 
-## Convert HTML to PDF media type
+## Convert HTML to PDF using media type
 
 This example shows how to convert an HTML file to PDF using Aspose.PDF for Python via .NET with specific rendering options.
 
