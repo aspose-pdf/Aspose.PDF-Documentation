@@ -36,7 +36,7 @@ Do you need to separate images from your PDF files? For simplified management, a
 
 ## Extract Images from Specific Region in PDF
 
-This method extracts images located within a specified rectangular region on a PDF page and saves them as separate files.
+This example extracts images located within a specified rectangular region on a PDF page and saves them as separate files.
 
 1. Load the PDF document using 'ap.Document'.
 1. Create an 'ImagePlacementAbsorber' to collect all images on the first page.
