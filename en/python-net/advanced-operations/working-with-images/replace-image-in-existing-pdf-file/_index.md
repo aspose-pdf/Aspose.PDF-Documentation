@@ -13,7 +13,7 @@ Abstract: The Aspose.PDF for Python via .NET documentation provides a comprehens
 
 ## Replace an Image in PDF
 
-This example demonstrates how to replace an existing image on a PDF page with a new image using Aspose.PDF for Python via .NET.
+How to replace an existing image on a PDF page with a new image? Implement this using Aspose.PDF for Python via .NET.
 
 1. Import necessary modules (aspose.pdf, os.path, FileIO).
 1. Define paths for:

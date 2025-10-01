@@ -122,7 +122,7 @@ Steps:
 
 ## Add Image with Alternative Text
 
-This example demonstrates how to add an image to a PDF page and assign alternative text (alt text) for accessibility compliance (such as PDF/UA).
+This example shows how to add an image to a PDF page and assign alternative text (alt text) for accessibility compliance (such as PDF/UA).
 
 1. Create a new 'Document' and add a page (842 × 595, landscape A4).
 1. Place the image on the page using 'page.add_image()' with a rectangle that spans the full page.
