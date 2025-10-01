@@ -139,7 +139,7 @@ Next code snippet demonstrates how to embed external files into a PDF and then c
 
     fileSpecification = ap.FileSpecification(self.data_dir + "aspose-logo.jpg", "Large Image file")
     document.embedded_files.add(fileSpecification)
-    document.convert(path_logfile, ap.PdfFormat.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
+    document.convert(path_logfile, ap.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
     document.save(path_outfile)
     print(infile + " converted into " + outfile)
 ```
