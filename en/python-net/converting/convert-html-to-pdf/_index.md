@@ -78,7 +78,7 @@ This example shows how to convert an HTML file to PDF using Aspose.PDF for Pytho
 
 ## Convert HTML to PDF priority CSS Page Rule
 
-Some documents may contain layout settings that utilize the Page rule, which can create ambiguity when generating the layout. You can control the priority using the 'is_priority_css_page_rule' property. If this property is set to 'True', the CSS rule is applied first.
+Some documents may contain layout settings that utilize [the Page rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@page), which can create ambiguity when generating the layout. You can control the priority using the 'is_priority_css_page_rule' property. If this property is set to 'True', the CSS rule is applied first.
 
 1. Create an instance of the [HtmlLoadOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlloadoptions/) class.
 1. Set 'is_priority_css_page_rule = False' to disable prioritizing @page CSS rules, allowing other styles to take precedence.
