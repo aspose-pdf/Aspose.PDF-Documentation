@@ -22,7 +22,7 @@ Abstract: This article provides a comprehensive guide on converting various imag
 
 Convert BMP files to PDF document using **Aspose.PDF for Python via .NET** library.
 
-<abbr title="Bitmap Image File">BMP</abbr>images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
+<abbr title="Bitmap Image File">BMP</abbr> images are Files having extension. BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format.
 
 You can convert BMP to PDF files with Aspose.PDF for Python via .NET API. Therefore, you can follow the following steps to convert BMP images:
 
