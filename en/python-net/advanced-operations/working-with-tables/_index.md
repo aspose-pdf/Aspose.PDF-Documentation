@@ -22,6 +22,6 @@ You are able to do the following:
 - [Extracting Tables](/pdf/python-net/extracting-table/) - you can extract table from PDF file.
 - [Integrating Tables with Data Sources](/pdf/python-net/integrate-table/) - - integrate table with Database, integrate table with the Entity Framework source using Python library.
 - [Removing Tables](/pdf/python-net/removing-tables/) - remove table or multiple tables from PDF document.
-- [Manipulate Tables in existing PDF](/pdf/python-net/manipulating-tables/) - manipulate tables in your PDF using TableAbsorber.
+- [Manipulating Tables in existing PDF](/pdf/python-net/manipulating-tables/) - manipulate tables in your PDF using TableAbsorber.
 
 
