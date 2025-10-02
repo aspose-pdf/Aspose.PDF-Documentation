@@ -7,7 +7,7 @@ url: /python-net/search-and-get-images-from-pdf-document/
 description: Learn how to search and get images from the PDF document in Python using Aspose.PDF.
 lastmod: "2025-09-17"
 TechArticle: true
-AlternativeHeadline: Searching and Extracting Images from PDF 
+AlternativeHeadline: Searching and Extracting Images from PDF
 Abstract: The Aspose.PDF for Python via .NET library offers robust capabilities for searching and extracting images from PDF documents. Utilizing the 'ImagePlacementAbsorber' class, developers can efficiently locate and access images embedded across all pages of a PDF.
 ---
 
@@ -112,7 +112,6 @@ This function analyzes all images on the first page of a PDF and calculates thei
     from aspose.pycore import cast, is_assignable
     from os import path
 
-
     path_infile = path.join(self.data_dir, infile)
 
     document = ap.Document(path_infile)
@@ -120,23 +119,20 @@ This function analyzes all images on the first page of a PDF and calculates thei
     default_resolution = 72
     graphics_state = []
 
-    # Collect image names from page resources
     image_names = list(document.pages[1].resources.images.names)
 
-    # Push identity matrix to stack
-    graphics_state.append(Matrix23(1, 0, 0, 1, 0, 0))
+    graphics_state.append(drawing.drawing2d.Matrix(float(1), float(0), float(0), float(1), float(0), float(0)))
 
-    # Process operators on first page
     for op in document.pages[1].contents:
         if is_assignable(op, ap.operators.GSave):
-            graphics_state.append(graphics_state[-1])
+            graphics_state.append(cast(drawing.drawing2d.Matrix, graphics_state[-1]).clone())
 
         elif is_assignable(op, ap.operators.GRestore):
             graphics_state.pop()
 
         elif is_assignable(op, ap.operators.ConcatenateMatrix):
             opCM = cast(ap.operators.ConcatenateMatrix, op)
-            cm = Matrix23(
+            cm = drawing.drawing2d.Matrix(
                 float(opCM.matrix.a),
                 float(opCM.matrix.b),
                 float(opCM.matrix.c),
@@ -145,29 +141,25 @@ This function analyzes all images on the first page of a PDF and calculates thei
                 float(opCM.matrix.f),
             )
 
-            graphics_state[-1] = graphics_state[-1] * cm
+            graphics_state[-1].multiply(cm)
             continue
 
         elif is_assignable(op, ap.operators.Do):
             opDo = cast(ap.operators.Do, op)
             if opDo.name in image_names:
-                last_ctm = graphics_state[-1]
+                last_ctm = cast(drawing.drawing2d.Matrix, graphics_state[-1])
                 index = image_names.index(opDo.name) + 1
                 image = document.pages[1].resources.images[index]
 
-                # Calculate scaled dimensions
-                scaled_width = math.sqrt(last_ctm.a**2 + last_ctm.b**2)
-                scaled_height = math.sqrt(last_ctm.c**2 + last_ctm.d**2)
+                scaled_width = math.sqrt(last_ctm.elements[0] ** 2 + last_ctm.elements[1] ** 2)
+                scaled_height = math.sqrt(last_ctm.elements[2] ** 2 + last_ctm.elements[3] ** 2)
 
-                # Original dimensions
                 original_width = image.width
                 original_height = image.height
 
-                # Compute resolution
                 res_horizontal = original_width * default_resolution / scaled_width
                 res_vertical = original_height * default_resolution / scaled_height
 
-                # Output info
                 print(
                     f"{self.data_dir}image {opDo.name} "
                     f"({scaled_width:.2f}:{scaled_height:.2f}): "
@@ -208,4 +200,4 @@ This function retrieves alternative text (alt text) from all images on the first
         )
         lines = image_placement.image.get_alternative_text(page)
         print("Alt Text: " + lines[0])
-```    
+```
