@@ -14,50 +14,67 @@ AlternativeHeadline: How to Convert other file formats to PDF in Python
 Abstract: This article provides a comprehensive guide on converting various file formats to PDF using Python, leveraging the capabilities of Aspose.PDF for Python via .NET. The document outlines conversion processes for several formats, including EPUB, Markdown, PCL, Text, XPS, PostScript, XML, XSL-FO, and LaTeX/TeX. Each section provides specific code snippets and instructions for implementing these conversions. The article emphasizes the utility of Aspose.PDF's features, such as load options tailored for each file type, to ensure accurate and efficient conversion. Additionally, it highlights the availability of free online conversion applications for users to explore the functionality firsthand. The guide serves as a practical resource for developers seeking to integrate PDF conversion capabilities into their Python applications.
 ---
 
-## Overview
-
 This article explains how to **convert various other types of file formats to PDF using Python**. It covers the following topics.
 
-_Format_: **OFD**
-- [Python OFD to PDF](#python-convert-ofd-to-pdf)
-- [Python Convert OFD to PDF](#python-convert-ofd-to-pdf)
-- [Python How to convert OFD file to PDF](#python-convert-ofd-to-pdf)
+## Convert OFD to PDF
 
-_Format_: **EPUB**
-- [Python EPUB to PDF](#python-convert-epub-to-pdf)
-- [Python Convert EPUB to PDF](#python-convert-epub-to-pdf)
-- [Python How to convert EPUB file to PDF](#python-convert-epub-to-pdf)
+OFD stands for Open Fixed-layout Document (also called Open Fixed Document format). It is a Chinese national standard (GB/T 33190-2016) for electronic documents, introduced as an alternative to PDF.
 
-_Format_: **Markdown**
-- [Python Markdown to PDF](#python-convert-markdown-to-pdf)
-- [Python Convert Markdown to PDF](#python-convert-markdown-to-pdf)
-- [Python How to convert Markdown file to PDF](#python-convert-markdown-to-pdf)
+Steps Convert OFD to PDF in Python:
 
-_Format_: **MD**
-- [Python MD to PDF](#python-convert-md-to-pdf)
-- [Python Convert MD to PDF](#python-convert-md-to-pdf)
-- [Python How to convert MD file to PDF](#python-convert-md-to-pdf)
+1. Set up OFD load options using OfdLoadOptions().
+1. Load the OFD document.
+1. Save as PDF.
 
-_Format_: **PCL**
-- [Python PCL to PDF](#python-convert-pcl-to-pdf)
-- [Python Convert PCL to PDF](#python-convert-pcl-to-pdf)
-- [Python How to convert PCL file to PDF](#python-convert-pcl-to-pdf)
+```python
 
-_Format_: **Text**
-- [Python Text to PDF](#python-convert-text-to-pdf)
-- [Python Convert Text to PDF](#python-convert-text-to-pdf)
-- [Python How to convert Text file to PDF](#python-convert-text-to-pdf)
+    from os import path
+    import aspose.pdf as ap
 
-_Format_: **TXT**
-- [Python TXT to PDF](#python-convert-txt-to-pdf)
-- [Python Convert TXT to PDF](#python-convert-txt-to-pdf)
-- [Python How to convert TXT file to PDF](#python-convert-txt-to-pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-_Format_: **XPS**
-- [Python XPS to PDF](#python-convert-xps-to-pdf)
-- [Python Convert XPS to PDF](#python-convert-xps-to-pdf)
-- [Python How to convert XPS file to PDF](#python-convert-xps-to-pdf)
+    load_options = ap.OfdLoadOptions()
+    document = ap.Document(path_infile, load_options)
+    document.save(path_outfile)
 
+    print(infile + " converted into " + outfile)
+```
+
+## Convert LaTeX/TeX to PDF
+
+The LaTeX file format is a text file format with markup in the LaTeX derivative of the TeX family of languages and LaTeX is a derived format of the TeX system. LaTeX (ˈleɪtɛk/lay-tek or lah-tek) is a document preparation system and document markup language. It is widely used for the communication and publication of scientific documents in many fields, including mathematics, physics, and computer science. It also plays a key role in the preparation and publication of books and articles containing complex multilingual material, such as Korean, Japanese, Chinese characters, and Arabic, including special editions.
+
+LaTeX uses the TeX typesetting program for formatting its output, and is itself written in the TeX macro language.
+
+{{% alert color="success" %}}
+**Try to convert LaTeX/TeX to PDF online**
+
+Aspose.PDF for Python via .NET presents you online free application ["LaTex to PDF"](https://products.aspose.app/pdf/conversion/tex-to-pdf), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion LaTeX/TeX to PDF with Free App](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
+{{% /alert %}}
+
+Steps Convert TEX to PDF in Python:
+
+1. Set up LaTeX load options using LatexLoadOptions().
+1. Load the LaTeX document.
+1. Save as PDF.
+
+```python
+
+    from os import path
+    import aspose.pdf as ap
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    load_options = ap.LatexLoadOptions()
+    document = ap.Document(path_infile, load_options)
+    document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
+```
 ## Convert OFD to PDF
 
 OFD stands for Open Fixed-layout Document (sometimes called Open Fixed Document format). It is a Chinese national standard (GB/T 33190-2016) for electronic documents, introduced as an alternative to PDF.
@@ -120,9 +137,9 @@ Steps Convert TEX to PDF in Python:
 
 **Aspose.PDF for Python via .NET** allows you simply convert EPUB files to PDF format.
 
-<abbr title="electronic publication">EPUB</abbr> (short for electronic publication) is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub. EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device.
+EPUB (short for electronic publication) is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub. EPUB is designed for reflowable content, meaning that an EPUB reader can optimize text for a particular display device.
 
-EPUB also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.The version EPUB 3 is also endorsed by the Book Industry Study Group (BISG), a leading book trade association for standardized best practices, research, information and events, for packaging of content.
+<abbr title="electronic publication">EPUB</abbr> also supports fixed-layout content. The format is intended as a single format that publishers and conversion houses can use in-house, as well as for distribution and sale. It supersedes the Open eBook standard.The version EPUB 3 is also endorsed by the Book Industry Study Group (BISG), a leading book trade association for standardized best practices, research, information and events, for packaging of content.
 
 {{% alert color="success" %}}
 **Try to convert EPUB to PDF online**
@@ -224,7 +241,7 @@ Steps Convert PCL to PDF in Python:
     print(infile + " converted into " + outfile)
 ```
 
-## Convert Text to PDF
+## Convert Preformatted Text to PDF
 
 **Aspose.PDF for Python via .NET** support the feature converting plain text and pre-formatted text file to PDF format.
 
@@ -240,12 +257,12 @@ Aspose.PDF for Python via .NET presents you online free application ["Text to PD
 
 Steps Convert TEXT to PDF in Python:
 
-1. Read the text file.
-1. Set up font.
-1. Create PDF and first page.
-1. Page formatting.
-1. Loop through lines.
-1. Save PDF.
+1. Read the input text file line by line.
+1. Set up a monospaced font (Courier New) for consistent text alignment.
+1. Create a new PDF Document and add the first page with custom margins and font settings.
+1. Iterate through lines of the text file To simulate Typewriter, we use the 'monospace_font' font and size 12.
+1. Limit page creation to 4 pages.
+1. Save the final PDF to the specified path.
 
 ```python
 
@@ -283,6 +300,30 @@ Steps Convert TEXT to PDF in Python:
         if count == 4:
             break
 
+    document.save(path_outfile)
+
+    print(infile + " converted into " + outfile)
+```
+
+## Convert PostScript to PDF
+
+This example demonstrates how to convert a PostScript file into a PDF document using Aspose.PDF for Python via .NET.
+
+1. Create an instance of 'PsLoadOptions' to correctly interpret the PS file.
+1. Load the 'PostScript' file into a Document object using the load options.
+1. Save the document in PDF format to the desired output path.
+
+```python
+
+    from os import path
+    import aspose.pdf as ap
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    load_options = ap.PsLoadOptions()
+
+    document = ap.Document(path_infile, load_options)
     document.save(path_outfile)
 
     print(infile + " converted into " + outfile)
@@ -340,4 +381,56 @@ Following code snippet can be used to convert a XSLFO to PDF format with Aspose.
     document.save(path_outfile)
 
     print(xmlfile + " converted into " + outfile)
+```
+
+## Convert XML with XSLT to PDF
+
+This example demonstrates how to convert an XML file into a PDF by first transforming it into HTML using an XSLT template and then loading the HTML into Aspose.PDF.
+
+1. Create an instance of 'HtmlLoadOptions' to configure HTML-to-PDF conversion.
+1. Load the transformed HTML file into an Aspose.PDF Document object.
+1. Save the document as a PDF at the specified output path.
+1. Remove the temporary HTML file after successful conversion.
+
+```python
+
+    from os import path
+    import aspose.pdf as ap
+
+    def transform_xml_to_html(xml_file, xslt_file, html_file):
+        from lxml import etree
+        """
+        Transform XML to HTML using XSLT and return as a stream
+        """
+        # Parse XML document
+        xml_doc = etree.parse(xml_file)
+
+        # Parse XSLT stylesheet
+        xslt_doc = etree.parse(xslt_file)
+        transform = etree.XSLT(xslt_doc)
+
+        # Apply transformation
+        result = transform(xml_doc)
+
+        # Save result to HTML file
+        with open(html_file, 'w', encoding='utf-8') as f:
+            f.write(str(result))
+
+
+    def convert_XML_to_PDF(template, infile, outfile):
+        path_infile = path.join(data_dir, infile)
+        path_outfile = path.join(data_dir, "python", outfile)
+        path_template = path.join(data_dir, template)
+        path_temp_file = path.join(data_dir, "temp.html")
+
+        load_options = ap.HtmlLoadOptions()
+        transform_xml_to_html(path_infile, path_template, path_temp_file)
+
+        document = ap.Document(path_temp_file, load_options)
+        document.save(path_outfile)
+
+        if path.exists(path_temp_file):
+            os.remove(path_temp_file)
+
+        print(infile + " converted into " + outfile)
 ```

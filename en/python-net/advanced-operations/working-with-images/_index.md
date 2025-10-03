@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /python-net/working-with-images/
 description: This section describes the features of working with images in a PDF file using Python library.
-lastmod: "2025-02-27"
+lastmod: "2025-09-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -23,4 +23,6 @@ You are able to do the following:
 - [Add Image to Existing PDF File](/pdf/python-net/add-image-to-existing-pdf-file/) - add images and references of a single image in PDF document, after that control quality.
 - [Delete Images from PDF File](/pdf/python-net/delete-images-from-pdf-file/) - check code snippet for deleting images from PDF file.
 - [Extract Images from PDF File](/pdf/python-net/extract-images-from-pdf-file/) - the next article shows how to extract images from PDF file using Python library.
+- [Search and Get Images from PDF Document](/pdf/python-net/search-and-get-images-from-pdf-document/) - you can get an image from an individual page and search among images on all pages with Python.
+- [Replace Image in Existing PDF File](/pdf/python-net/replace-image-in-existing-pdf-file/) - check our code snippet, it shows you how to replace an image in a PDF file.
 
