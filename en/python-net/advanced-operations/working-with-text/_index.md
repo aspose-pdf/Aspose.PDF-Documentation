@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /python-net/working-with-text/
 description: This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF for Python.
-lastmod: "2025-02-27"
+lastmod: "2025-09-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
