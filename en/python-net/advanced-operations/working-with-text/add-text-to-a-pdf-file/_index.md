@@ -14,7 +14,7 @@ AlternativeHeadline: Adding Text into PDF using Python
 Abstract: This article provides a comprehensive guide on manipulating PDF documents using the Aspose.PDF library in Python. It covers various techniques for adding and formatting text, including setting text properties such as font size, type, color, and positioning. The article also demonstrates how to load fonts from stream objects, utilize the `TextParagraph` class for text addition, and create interactive content with hyperlinks using `TextSegment`. Additionally, it explains using custom fonts, adding HTML strings, and creating footnotes with custom line styles and labels. The document further explores advanced formatting options like adding images and tables to footnotes, using inline paragraphs for text and images, customizing character spacing, and creating multi-column layouts. The guide concludes with instructions on working with tab stops, adding transparent text, and specifying line spacing for fonts. The article is rich with example code snippets, illustrating each functionality in detail, making it a valuable resource for developers looking to enhance PDF documents programmatically.
 ---
 
-### Basic text operations
+### Basic Text Operations
 
 ### Adding Text
 
@@ -128,7 +128,7 @@ Additionally, this code snippet shows how to use multiple text segments within a
 
 [![Add Text with Font Styling](styled_text.png)]
 
-### Add Right-to-Left (RTL) Text to a PDF Document
+### Add Right-to-Left (RTL) Text to PDF Document
 
 RTL (from Right To Left) is a property that indicates the direction of text writing, where text is written from right to left.
 Aspose.PDF for Python via .NET. demonstrates how to add Right-to-Left (RTL) text, such as Arabic or Hebrew, to a PDF document.
@@ -320,7 +320,7 @@ You can also modify:
 
 ## HTML and LaTeX fragments
 
-### Add HTML Text to a PDF Document
+### Add HTML Text to PDF Document
 
 Aspose.PDF for Python via .NET library allows you to insert HTML-formatted content into a PDF document using the HtmlFragment class. By using HTML tags you can render styled, structured, or formula-like text directly in a PDF.
 
@@ -349,7 +349,7 @@ Aspose.PDF for Python via .NET library allows you to insert HTML-formatted conte
 
 [![Add HTML Text to a PDF Document](html_fragment.png)]
 
-### Add LaTeX Text to a PDF Document
+### Add LaTeX Text to PDF Document
 
 Add LaTeX-formatted mathematical expressions to a PDF document using the TeXFragment class in Aspose.PDF for Python via .NET.
 LaTeX is a powerful typesetting system widely used for creating scientific and mathematical documents. By using TeXFragment, you can directly render LaTeX math notation and symbols inside a PDF page.
@@ -379,7 +379,7 @@ LaTeX is a powerful typesetting system widely used for creating scientific and m
 
 [![Add LaTeX Text to a PDF Document](latex_fragment.png)]
 
-### Add HTML Fragment to a PDF Document
+### Add HTML Fragment to PDF Document
 
 Embed styled HTML content into a PDF document. This code snippet creates a new PDF file, adds a page, inserts an HTML fragment with various formatting elements (headings, paragraphs, links, and inline styles), and saves the result to the specified path.
 
