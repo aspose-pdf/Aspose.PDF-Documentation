@@ -410,6 +410,8 @@ Embed styled HTML content into a PDF document. This code snippet creates a new P
     document.save(path_outfile)
 ```
 
+[![Add HTML Content to a PDF Document](html_content.png)]
+
 ### Add HTML fragment override text state
 
 Insert styled HTML content into a PDF document, while overriding the default text formatting with a custom TextState. It explains how to apply global font, size, and color settings to an entire HTML fragment, regardless of inline HTML styles.
