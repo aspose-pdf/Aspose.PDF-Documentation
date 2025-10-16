@@ -22,19 +22,49 @@ The function 'create_pdf_from_dataframe' takes a  DataFrame and converts it into
 
 ```python
 
-    from os import path
-    import pandas as pd
-    import aspose.pdf as ap
+from os import path
+import pandas as pd
+import aspose.pdf as ap
 
-    # Load source PDF document
-    document = ap.Document()
-    page = document.pages.add()
+# Example DataFrame
+df = pd.DataFrame({
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35],
+    "City": ["New York", "Paris", "London"]
+})
 
-    table = self.create_table_from_dataframe(df, max_rows)
+max_rows = 3  # Number of rows to include in the table
+path_outfile = "output.pdf"
 
-    # Add table object to first page of input document
-    page.paragraphs.add(table)
-    document.save(path_outfile)
+# Define the function to create a table from DataFrame
+def create_table_from_dataframe(df, max_rows):
+    table = ap.Table()
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 1, ap.Color.light_gray)
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.BOTTOM, 1, ap.Color.light_gray
+    )
+    # Add header row with column names
+    header_row = table.rows.add()
+    header_row.is_row_broken = False
+    for column_name in df.columns:
+        cell = header_row.cells.add(str(column_name))
+        cell.background_color = ap.Color.light_gray
+    # Add data rows
+    for row_data in df.head(max_rows).itertuples(index=False):
+        row = table.rows.add()
+        for value in row_data:
+            row.cells.add(str(value))
+    return table
+
+# Load source PDF document
+document = ap.Document()
+page = document.pages.add()
+
+table = create_table_from_dataframe(df, max_rows)
+
+# Add table object to first page of input document
+page.paragraphs.add(table)
+document.save(path_outfile)
 ```
 
 ## Create Table from DataFrame
