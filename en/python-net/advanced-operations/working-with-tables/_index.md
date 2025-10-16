@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /python-net/working-with-tables/
 description: This section describes how to add and extract a table, how to manipulate and a table using the Python library.
-lastmod: "2025-02-27"
+lastmod: "2025-09-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,9 +18,8 @@ Abstract: The Aspose.PDF for Python via .NET is a versatile tool designed to enh
 
 You are able to do the following:
 
-- [Create or Add Table in existing PDF Document](/pdf/python-net/add-table-in-existing-pdf-document/) - create your table in pdf file with merging the columns or rows сonsidering borders, margins, and padding.
-- [Extract a Table from existing PDF Document](/pdf/python-net/extract-table-from-existing-pdf-document/) - you can extract table from PDF file.
-- [Manipulate Tables in existing PDF](/pdf/python-net/manipulate-tables-in-existing-pdf/) - manipulate tables in your PDF using TableAbsorber.
-- [Remove Tables from existing PDF](/pdf/python-net/remove-tables-from-existing-pdf/) - remove table or multiple tables from PDF document.
-
-
+- [Adding Tables](/pdf/python-net/adding-tables/) - create your table in pdf file with merging the columns or rows сonsidering borders, margins, and padding.
+- [Extracting Tables](/pdf/python-net/extracting-table/) - you can extract table from PDF file.
+- [Integrating Tables with Data Sources](/pdf/python-net/integrate-table/) - integrate table with Database, integrate table with Pandas DataFrame source using Python library.
+- [Removing Tables](/pdf/python-net/removing-tables/) - remove table or multiple tables from PDF document.
+- [Manipulating Tables in existing PDF](/pdf/python-net/manipulating-tables/) - manipulate tables in your PDF using TableAbsorber.
