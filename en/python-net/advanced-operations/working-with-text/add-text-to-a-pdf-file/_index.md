@@ -186,19 +186,19 @@ Add clickable hyperlinks to text in a PDF using Aspose.PDF for Python via .NET. 
     document = Document()
     page = document.pages.add()
 
-    fragment = TextFragment("Sample Text Fragment") # 1 fragment  в котором 1 segment
+    fragment = TextFragment("Sample Text Fragment") # 1 fragment containing 1 segment
 
     segment = TextSegment(" ... Text Segment 1...")
-    fragment.segments.append(segment) # 1 + 1
+    fragment.segments.append(segment) # fragment now contains 2 segments
 
     segment = TextSegment("Link to Google")
-    fragment.segments.append(segment) # 1 fragment  в котором 3 segment
+    fragment.segments.append(segment) # fragment now contains 3 segments
     segment.hyperlink = WebHyperlink("https://www.google.com")
     segment.text_state.foreground_color = Color.blue
     segment.text_state.font_style = FontStyles.ITALIC
 
     segment = TextSegment("TextSegment without hyperlink")
-    fragment.segments.append(segment) # 1 fragment  в котором 4 segment
+    fragment.segments.append(segment) # fragment now contains 4 segments
 
     page.paragraphs.add(fragment)
     document.save(path_outfile)
