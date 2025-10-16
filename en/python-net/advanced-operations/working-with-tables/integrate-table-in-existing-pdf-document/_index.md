@@ -54,8 +54,8 @@ This code converts DataFrame into an Aspose.PDF Table object. It sets up table b
     import pandas as pd
     import aspose.pdf as ap
 
-    # Initializes a new instance of the Table
-    table = ap.Table()
+    
+    table = ap.Table()  # Initializes a new instance of the Table
     # Set the table border color as LightGray
     table.border = ap.BorderInfo(ap.BorderSide.ALL, 1, ap.Color.light_gray)
     # Set the border for table cells
