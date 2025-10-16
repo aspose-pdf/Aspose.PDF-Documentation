@@ -461,7 +461,7 @@ We can define an HTML fragment and set the text style directly using HTML tags. 
 
 [![Add HTML Content to a PDF Document](html_content.png)]
 
-### Add HTML fragment override text state
+### Add HTML Fragment override text state
 
 Insert styled HTML content into a PDF document, while overriding the default text formatting with a custom TextState. It explains how to apply global font, size, and color settings to an entire HTML fragment, regardless of inline HTML styles.
 
@@ -676,6 +676,91 @@ Using TextParagraph is ideal when you need precise control over text placement a
 
 ## Create Lists
 
+### Create bullet list
+
+Create a custom bulleted list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
+Each list item is prefixed with a bullet character (•) and added as a separate TextFragment.
+
+1. Initialize a Document object and add a blank page.
+1. Define a Python list of strings that will be converted into bullet points.
+1. Create a TextBuilder and a TextParagraph.
+1. Use the 'TextBuilder' to add the configured paragraph to the page.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+    items = [
+        "First item in the list",
+        "Second item with more text to demonstrate wrapping behavior.",
+        "Third item",
+        "Fourth item",
+    ]
+
+    builder = TextBuilder(page)
+    paragraph = TextParagraph()
+    paragraph.rectangle = Rectangle(80, 200, 400, 800, True)
+    paragraph.formatting_options.wrap_mode = TextFormattingOptions.WordWrapMode.BY_WORDS
+
+    for item in items:
+        fragment = TextFragment("• " + item)
+        fragment.text_state.font = FontRepository.find_font("Times New Roman")
+        fragment.text_state.font_size = 12
+        paragraph.append_line(fragment)
+
+    builder.append_paragraph(paragraph)
+    document.save(path_outfile)
+```
+
+### Create numbered list
+
+Create a custom numbered (ordered) list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
+Each list item is prefixed with its number (e.g., 1., 2.) and added as a separate TextFragment.
+
+1. Initialize a Document object and add a blank page.
+1. Define a Python list of strings that will be converted into numbered list items.
+1. Create a TextBuilder and a TextParagraph.
+1. Add each item as a TextFragment with a number.
+1. Use the TextBuilder to add the configured paragraph to the page.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+    items = [
+        "First item in the list",
+        "Second item with more text to demonstrate wrapping behavior.",
+        "Third item",
+        "Fourth item",
+    ]
+
+    builder = TextBuilder(page)
+    paragraph = TextParagraph()
+    paragraph.rectangle = Rectangle(80, 200, 400, 800, True)
+    paragraph.formatting_options.wrap_mode = TextFormattingOptions.WordWrapMode.BY_WORDS
+
+    for i, item in enumerate(items):
+        fragment = TextFragment(f"{i + 1}. {item}")
+        fragment.text_state.font = FontRepository.find_font("Times New Roman")
+        fragment.text_state.font_size = 12
+        paragraph.append_line(fragment)
+
+    builder.append_paragraph(paragraph)
+    document.save(path_outfile)
+```
+
 ### Create a bullet list HTML version
 
 Our library shows how to create a bulleted (unordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML 'ul' element and inserts it into a PDF page as an HtmlFragment. Using HTML fragments allows you to leverage HTML formatting features (like lists, bold, italics) directly in the PDF.
@@ -819,91 +904,6 @@ Create a numbered (ordered) list in a PDF using LaTeX fragments (TeXFragment). I
 ```
 
 [![Numbered list LaTex](numbered_list_latex.png)]
-
-### Create bullet list
-
-Create a custom bulleted list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
-Each list item is prefixed with a bullet character (•) and added as a separate TextFragment.
-
-1. Initialize a Document object and add a blank page.
-1. Define a Python list of strings that will be converted into bullet points.
-1. Create a TextBuilder and a TextParagraph.
-1. Use the 'TextBuilder' to add the configured paragraph to the page.
-1. Save the PDF document.
-
-```python
-
-    import os
-    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
-
-    path_outfile = os.path.join(self.data_dir, outfile)
-    document = Document()
-    page = document.pages.add()
-    items = [
-        "First item in the list",
-        "Second item with more text to demonstrate wrapping behavior.",
-        "Third item",
-        "Fourth item",
-    ]
-
-    builder = TextBuilder(page)
-    paragraph = TextParagraph()
-    paragraph.rectangle = Rectangle(80, 200, 400, 800, True)
-    paragraph.formatting_options.wrap_mode = TextFormattingOptions.WordWrapMode.BY_WORDS
-
-    for item in items:
-        fragment = TextFragment("• " + item)
-        fragment.text_state.font = FontRepository.find_font("Times New Roman")
-        fragment.text_state.font_size = 12
-        paragraph.append_line(fragment)
-
-    builder.append_paragraph(paragraph)
-    document.save(path_outfile)
-```
-
-### Create numbered list
-
-Create a custom numbered (ordered) list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
-Each list item is prefixed with its number (e.g., 1., 2.) and added as a separate TextFragment.
-
-1. Initialize a Document object and add a blank page.
-1. Define a Python list of strings that will be converted into numbered list items.
-1. Create a TextBuilder and a TextParagraph.
-1. Add each item as a TextFragment with a number.
-1. Use the TextBuilder to add the configured paragraph to the page.
-1. Save the PDF document.
-
-```python
-
-    import os
-    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
-
-    path_outfile = os.path.join(self.data_dir, outfile)
-    document = Document()
-    page = document.pages.add()
-    items = [
-        "First item in the list",
-        "Second item with more text to demonstrate wrapping behavior.",
-        "Third item",
-        "Fourth item",
-    ]
-
-    builder = TextBuilder(page)
-    paragraph = TextParagraph()
-    paragraph.rectangle = Rectangle(80, 200, 400, 800, True)
-    paragraph.formatting_options.wrap_mode = TextFormattingOptions.WordWrapMode.BY_WORDS
-
-    for i, item in enumerate(items):
-        fragment = TextFragment(f"{i + 1}. {item}")
-        fragment.text_state.font = FontRepository.find_font("Times New Roman")
-        fragment.text_state.font_size = 12
-        paragraph.append_line(fragment)
-
-    builder.append_paragraph(paragraph)
-    document.save(path_outfile)
-```
 
 ## Using Custom Fonts
 
