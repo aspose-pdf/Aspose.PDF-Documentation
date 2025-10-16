@@ -9,7 +9,7 @@ lastmod: "2025-10-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true 
+TechArticle: true
 AlternativeHeadline: Adding Text into PDF using Python
 Abstract: This article provides a comprehensive guide on manipulating PDF documents using the Aspose.PDF library in Python. It covers various techniques for adding and formatting text, including setting text properties such as font size, type, color, and positioning. The article also demonstrates how to load fonts from stream objects, utilize the `TextParagraph` class for text addition, and create interactive content with hyperlinks using `TextSegment`. Additionally, it explains using custom fonts, adding HTML strings, and creating footnotes with custom line styles and labels. The document further explores advanced formatting options like adding images and tables to footnotes, using inline paragraphs for text and images, customizing character spacing, and creating multi-column layouts. The guide concludes with instructions on working with tab stops, adding transparent text, and specifying line spacing for fonts. The article is rich with example code snippets, illustrating each functionality in detail, making it a valuable resource for developers looking to enhance PDF documents programmatically.
 ---
@@ -1186,7 +1186,7 @@ How to enrich footnotes in a PDF document by embedding images, styled text, and 
     text.foot_note = note
 
     document.save(path_outfile)
-```    
+```
 
 ### Adding Endnotes to PDF Documents
 
