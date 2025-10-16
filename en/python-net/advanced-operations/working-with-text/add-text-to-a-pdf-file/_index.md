@@ -977,3 +977,305 @@ Each list item is prefixed with its number (e.g., 1., 2.) and added as a separat
 ```
 
 Embedding fonts ensures consistent rendering across platforms, making this approach ideal for branding, design fidelity, and multilingual support.
+
+## Using Footnotes and Endnotes
+
+### Add Footnotes
+
+Footnotes are used to reference notes within the body of a document by placing consecutive superscript numbers next to the relevant text. These numbers correspond to detailed notes that are typically indented and positioned at the bottom of the same page, providing additional context, citations, or commentary.
+
+Add a footnote to a text fragment in a PDF document using Aspose.PDF for Python via .NET. Footnotes are useful for providing supplementary information, citations, or clarifications without cluttering the main content. This method ensures that footnotes are visually and structurally integrated into the PDF layout.
+
+1. Create a New Document.
+1. Create a TextFragment with the main content.
+1. Add Inline Text. Create another TextFragment that continues in the same paragraph.
+1. Save the Document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = ap.Document()
+    page = document.pages.add()
+
+    text_fragment = ap.text.TextFragment("This is a sample text with a footnote.")
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_fragment.text_state.font_size = 14
+    text_fragment.foot_note = ap.Note("This is the footnote content.")
+    page.paragraphs.add(text_fragment)
+
+    inline_text = ap.text.TextFragment(" This is another text after footnote in the same paragraph.")
+    inline_text.is_in_line_paragraph = True
+    inline_text.text_state.font = ap.text.FontRepository.find_font("Arial")
+    inline_text.text_state.font_size = 14
+    page.paragraphs.add(inline_text)
+
+    document.save(path_outfile)
+```
+
+### Add Footnote with Custom Styling in PDF
+
+1. Initialize a new PDF document and add a blank page.
+1. Create Main Text Fragment.
+1. Create and Style the Footnote (Font, Size, Color, Style).
+1. Insert the styled text fragment with footnote into the page.
+1. Add another text fragment without a footnote.
+1. Save the Document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = ap.Document()
+    page = document.pages.add()
+
+    text_fragment = ap.text.TextFragment("This is a sample text with a footnote.")
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_fragment.text_state.font_size = 14
+
+    note = ap.Note("This is the footnote content with custom text style.")
+    note.text_state = ap.text.TextState()
+    note.text_state.font = ap.text.FontRepository.find_font("Times New Roman")
+    note.text_state.font_size = 10
+    note.text_state.foreground_color = ap.Color.red
+    note.text_state.font_style = ap.text.FontStyles.ITALIC
+    text_fragment.foot_note = note
+
+    page.paragraphs.add(text_fragment)
+
+    another_text = ap.text.TextFragment(" This is another text without footnote.")
+    another_text.text_state.font = ap.text.FontRepository.find_font("Arial")
+    another_text.text_state.font_size = 14
+    page.paragraphs.add(another_text)
+
+    document.save(path_outfile)
+```
+
+### Add Footnotes with Custom Symbols in PDF
+
+Add footnotes to text fragments in a PDF document using Aspose.PDF for Python via .NET, with the ability to customize the footnote marker symbol.
+
+1. Create PDF Document and Page.
+1. Add first Text Fragment with Custom Footnote Symbol.
+1. Add another Text Fragment that continues the paragraph without a footnote.
+1. Add second Text Fragment with Default Footnote.
+1. Save the Document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = ap.Document()
+    page = document.pages.add()
+
+    text_fragment = ap.text.TextFragment("This is a sample text with a footnote.")
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_fragment.text_state.font_size = 14
+
+    note = ap.Note("This is the footnote content with custom text style.")
+    note.text = "*"
+    text_fragment.foot_note = note
+    page.paragraphs.add(text_fragment)
+
+    another_text = ap.text.TextFragment(" This is another text without footnote.")
+    another_text.text_state.font = ap.text.FontRepository.find_font("Arial")
+    another_text.text_state.font_size = 14
+    page.paragraphs.add(another_text)
+
+    text_fragment = ap.text.TextFragment("This is a sample text with a footnote.")
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_fragment.text_state.font_size = 14
+    text_fragment.foot_note = ap.Note("This is the footnote content.")
+    page.paragraphs.add(text_fragment)
+
+    document.save(path_outfile)
+```
+
+### Add Footnotes with Custom Line Style in PDF
+
+Customize the visual appearance of footnote lines in a PDF document with Python library. Customizing footnote lines enhances visual clarity and allows for stylistic consistency in documents such as reports, academic papers, and annotated publications.
+
+1. Create a new PDF document and add a page.
+1. Define a custom line style for footnote connectors (color, width, and dash pattern).
+1. Add multiple text fragments with footnotes.
+1. Save the final document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Define custom line style
+    graph_info = ap.GraphInfo()
+    graph_info.line_width = 2
+    graph_info.color = ap.Color.red
+    graph_info.dash_array = [3]
+    graph_info.dash_phase = 1
+    page.note_line_style = graph_info
+
+    # First text fragment with footnote
+    text1 = ap.text.TextFragment("This is a sample text with a footnote.")
+    text1.foot_note = ap.Note("foot note for text 1")
+    page.paragraphs.add(text1)
+
+    # Second text fragment with footnote
+    text2 = ap.text.TextFragment("This is yet another sample text with a footnote.")
+    text2.foot_note = ap.Note("foot note for text 2")
+    page.paragraphs.add(text2)
+
+    document.save(path_outfile)
+```
+
+### Add Footnotes with Image and Table in PDF
+
+How to enrich footnotes in a PDF document by embedding images, styled text, and tables using Aspose.PDF for Python via .NET?
+
+1. Create a new PDF document and add a page.
+1. Add a text fragment with an attached footnote.
+1. Embed an image, styled text, and a table inside the footnote.
+1. Save the Document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = ap.Document()
+    page = document.pages.add()
+
+    text = ap.text.TextFragment("This is a sample text with a footnote.")
+    page.paragraphs.add(text)
+
+    note = ap.Note()
+
+    # Add image
+    image_note = ap.Image()
+    image_note.file = os.path.join(self.data_dir, "logo.jpg")
+    image_note.fix_height = 20
+    image_note.fix_width = 20
+    note.paragraphs.add(image_note)
+
+    # Add text
+    text_note = ap.text.TextFragment("This is the footnote content.")
+    text_note.text_state.font_size = 20
+    text_note.is_in_line_paragraph = True
+    note.paragraphs.add(text_note)
+
+    # Add table
+    table = ap.Table()
+    table.rows.add().cells.add("Cell 1,1")
+    table.rows.add().cells.add("Cell 1,2")
+    note.paragraphs.add(table)
+
+    text.foot_note = note
+
+    document.save(path_outfile)
+```    
+
+### Adding Endnotes to PDF Documents
+
+An Endnote is a type of citation that directs readers to a designated section at the end of a document, where they can find the full reference for a quote, paraphrased idea, or summarized content. When using endnotes, a superscript number is placed immediately after the referenced material, guiding the reader to the corresponding note at the end of the paper.
+
+This code snippet demonstrates how to add an endnote to a text fragment in a PDF document. Unlike footnotes, which appear near the referenced text, endnotes are typically placed at the end of a document or section. This method also simulates a longer document to illustrate how endnotes behave in extended content.
+
+1. Create PDF Document and Page.
+1. Add Text Fragment with Endnote.
+1. Load External Text Content.
+1. Simulate Long Document. Add the loaded text multiple times to simulate a longer document.
+1. Save the Document.
+
+```python
+
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = ap.Document()
+    page = document.pages.add()
+
+    text_fragment = ap.text.TextFragment("This is a sample text with an endnote.")
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_fragment.text_state.font_size = 14
+    text_fragment.end_note = ap.Note("This is the EndNote content.")
+    page.paragraphs.add(text_fragment)
+
+    lorem_path = os.path.join(self.data_dir, "lorem.txt")
+    text_content = (
+        open(lorem_path, encoding="utf-8").read()
+        if os.path.exists(lorem_path)
+        else "Lorem ipsum sample text not found."
+    )
+
+    # Simulate long text
+    for _ in range(5):
+        tf = ap.text.TextFragment(text_content)
+        tf.text_state.font = ap.text.FontRepository.find_font("Arial")
+        tf.text_state.font_size = 14
+        page.paragraphs.add(tf)
+
+    document.save(path_outfile)
+```
+
+### Add Endnotes with Custom Marker Text in PDF
+
+Add an endnote to a text fragment in a PDF document, with a custom marker symbol (e.g., "***"). Endnotes are typically placed at the end of a document or section and are useful for providing additional context, citations, or commentary.
+
+1. Create PDF Document and Page.
+1. Add a styled text fragment with an endnote.
+1. Customize the endnote marker text.
+1. Load external content from a .txt file.
+1. Simulate long-form content to illustrate endnote placement.
+1. Save the PDF document.
+
+```python
+
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = ap.Document()
+    page = document.pages.add()
+
+    text_fragment = ap.text.TextFragment("This is a sample text with an endnote.")
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
+    text_fragment.text_state.font_size = 14
+    text_fragment.end_note = ap.Note("This is the EndNote content.")
+    text_fragment.end_note.text = "***"
+    page.paragraphs.add(text_fragment)
+
+    lorem_path = os.path.join(self.data_dir, "lorem.txt")
+    text_content = (
+        open(lorem_path, encoding="utf-8").read()
+        if os.path.exists(lorem_path)
+        else "Lorem ipsum sample text not found."
+    )
+
+    # Simulate long text
+    for _ in range(5):
+        tf = ap.text.TextFragment(text_content)
+        tf.text_state.font = ap.text.FontRepository.find_font("Arial")
+        tf.text_state.font_size = 14
+        page.paragraphs.add(tf)
+
+        document.save(path_outfile)
+```
