@@ -206,6 +206,55 @@ Add clickable hyperlinks to text in a PDF using Aspose.PDF for Python via .NET. 
 
 [![Text with Hyperlinks](hyperlink_text.png)]
 
+## Add Text transparent
+
+Add semi-transparent shapes and text to a PDF document using Aspose.PDF for Python.
+It creates a colored rectangle with partial opacity and overlays a TextFragment with a transparent foreground color.
+
+1. Initialize a Document object and add a blank page for drawing content.
+1. Use 'ap.drawing.Graph' to create a canvas that allows you to draw shapes.
+1. Add a rectangle with semi-transparent fill.
+1. Prevent canvas position shift.
+1. Add the canvas to the page. Insert the graphical shapes into the page paragraphs collection.
+1. Create a transparent text fragment.
+1. Insert the text fragment into the page paragraphs collection.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    # Create PDF document
+    document = Document()
+    page = document.pages.add()
+
+    # Create Graph object
+    canvas = ap.drawing.Graph(100.0, 400.0)
+
+    # Create rectangle with semi-transparent fill
+    rect = ap.drawing.Rectangle(100, 100, 400, 400)
+    rect.graph_info.fill_color = ap.Color.from_argb(128, 0xC5, 0xB5, 0xFF)
+    canvas.shapes.add(rect)
+
+    # Prevent position shift
+    canvas.is_change_position = False
+    page.paragraphs.add(canvas)
+
+    # Create transparent text
+    text = ap.text.TextFragment(
+        "This is the transparent text. "
+        "This is the transparent text. "
+        "This is the transparent text."
+    )
+    text.text_state.foreground_color = ap.Color.from_argb(30, 0, 255, 0)
+    page.paragraphs.add(text)
+
+    document.save(path_outfile)
+```
+
 ## Text Paragraphs and Formatting
 
 ### Add Text using TextParagraph
@@ -381,7 +430,7 @@ LaTeX is a powerful typesetting system widely used for creating scientific and m
 
 ### Add HTML Fragment to PDF Document
 
-Embed styled HTML content into a PDF document. This code snippet creates a new PDF file, adds a page, inserts an HTML fragment with various formatting elements (headings, paragraphs, links, and inline styles), and saves the result to the specified path.
+We can define an HTML fragment and set the text style directly using HTML tags. Embed styled HTML content into a PDF document. This code snippet creates a new PDF file, adds a page, inserts an HTML fragment with various formatting elements (headings, paragraphs, links, and inline styles), and saves the result to the specified path.
 
 1. Initializes a new Document object to represent the PDF.
 1. Appends a blank page to the document where the HTML content will be placed.
@@ -450,5 +499,481 @@ Insert styled HTML content into a PDF document, while overriding the default tex
 
 [![Add HTML fragment override text state](html_override.png)]
 
+## Using Line Spacing
 
+### How to Format Text with Custom Line Spacing in Python - Simple case
 
+Aspose.PDF for Python illustrates a straightforward approach to controlling text layout and readability through line spacing adjustments.
+
+Our code snippet shows how to control line spacing in a PDF document. It reads text from a file (or uses a fallback message), applies custom font size and line spacing, and adds the formatted text to a new page in a PDF.
+
+1. Create a new PDF document.
+1. Load the source text.
+1. Initialize a TextFragment object and assign the loaded text to it.
+1. Set font and spacing properties for the text. These values determine how tightly or loosely the lines of text appear:
+ - Font size: 12 points
+ - Line spacing: 16 points
+1. Insert the formatted text fragment into the page’s paragraphs collection.
+1. Save the document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+
+    lorem_path = os.path.join(self.data_dir, "lorem.txt")
+    text = open(lorem_path, "r", encoding="utf-8").read() if os.path.exists(lorem_path) else "Lorem ipsum text not found."
+
+    text_fragment = TextFragment(text)
+    text_fragment.text_state.font_size = 12
+    text_fragment.text_state.line_spacing = 16
+    page.paragraphs.add(text_fragment)
+
+    document.save(path_outfile)
+```
+
+## ### How to Format Text with Custom Line Spacing in Python - Specific case
+
+Let's check how to apply different line spacing modes in a PDF document using a custom TrueType font (TTF).
+It loads text from a file, embeds a specific font, and renders the same text twice on a PDF page—each time using a different line spacing mode:
+
+- FONT_SIZE mode: The line spacing equals the font size.
+
+- FULL_SIZE mode: The line spacing accounts for the full height of the font, including ascenders and descenders.
+
+The example shows how line spacing behavior can vary depending on the selected mode.
+
+1. Create a new PDF document.
+1. Specify the paths for both the custom font file and the text source file.
+1. Load text content.
+1. Open the custom font.
+1. Create and configure the first TextFragment (FONT_SIZE mode). Set line_spacing to 'TextFormattingOptions.LineSpacingMode.FONT_SIZE', meaning line spacing equals the font size.
+1. Create and configure the second TextFragment (FULL_SIZE mode). Set line_spacing to 'TextFormattingOptions.LineSpacingMode.FULL_SIZE', which uses the font’s full height.
+1. Append both text fragments to the same PDF page.
+1. Save the finished document to the specified output location.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+
+    font_file = os.path.join(self.data_dir, "HPSimplified.ttf")
+    lorem_path = os.path.join(self.data_dir, "lorem.txt")
+    text = open(lorem_path, "r", encoding="utf-8").read() if os.path.exists(lorem_path) else "Lorem ipsum text not found."
+
+    with open(font_file, "rb") as font_stream:
+        font = FontRepository.open_font(font_stream, FontTypes.TTF)
+
+        fragment1 = TextFragment(text)
+        fragment1.text_state.font = font
+        fragment1.text_state.formatting_options = TextFormattingOptions()
+        fragment1.text_state.formatting_options.line_spacing = TextFormattingOptions.LineSpacingMode.FONT_SIZE
+        page.paragraphs.add(fragment1)
+
+        fragment2 = TextFragment(text)
+        fragment2.text_state.font = font
+        fragment2.text_state.formatting_options = TextFormattingOptions()
+        fragment2.text_state.formatting_options.line_spacing = TextFormattingOptions.LineSpacingMode.FULL_SIZE
+        page.paragraphs.add(fragment2)
+
+    document.save(path_outfile)
+```
+
+[![Custom Line Spacing](line_spacing.png)]
+
+## Using Character Spacing
+
+### How to control character spacing in PDF text using the TextFragment class
+
+Character spacing determines the distance between individual characters in a line of text—useful for fine-tuning text appearance or achieving specific typographic effects.
+
+1. Initializes a new Document object and adds a blank page for placing text.
+1. Define Fragment Generator. Implements a helper function make_fragment(spacing):
+ - create a TextFragment with the sample text.
+ - set the font.
+1. Add text fragments with different spacing values.
+1. Save the Document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+
+    def make_fragment(spacing):
+        fragment = TextFragment("Sample Text with character spacing")
+        fragment.text_state.font = FontRepository.find_font("Arial")
+        fragment.text_state.font_size = 14
+        fragment.text_state.character_spacing = spacing
+        return fragment
+
+    page.paragraphs.add(make_fragment(2.0))
+    page.paragraphs.add(make_fragment(1.0))
+    page.paragraphs.add(make_fragment(0.75))
+
+    document.save(path_outfile)
+```
+
+[![Character Spacing](character_spacing_simple.png)]
+
+### How to control character spacing in PDF text using the TextParagraph and TextBuilder
+
+Aspose.PDF allows applying custom character spacing when adding text to a PDF document using a TextParagraph and TextBuilder.
+It defines a specific area on the page, configures text wrapping, and renders a text fragment with adjusted spacing between characters.
+
+Using TextParagraph is ideal when you need precise control over text placement and layout, such as when building structured or multi-column text blocks.
+
+1. Create a new PDF document.
+1. Initialize a TextBuilder instance for the page.
+1. Create and configure a TextParagraph.
+- Set the word wrap mode to 'TextFormattingOptions.WordWrapMode.BY_WORDS'.
+1. Create a TextFragment with custom character spacing.
+ - Create a new TextFragment and set its text (e.g., "Sample Text with character spacing").
+ - Specify font attributes such as Arial and font size 14 pt.
+ - Apply character spacing = 2.0, which increases the space between characters.
+1. Add the TextFragment to the TextParagraph.
+1. Add the TextParagraph to the page.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+
+    builder = TextBuilder(page)
+    paragraph = TextParagraph()
+    paragraph.rectangle = Rectangle(100, 700, 500, 750, True)
+    paragraph.formatting_options.wrap_mode = TextFormattingOptions.WordWrapMode.BY_WORDS
+
+    fragment = TextFragment("Sample Text with character spacing")
+    fragment.text_state.font = FontRepository.find_font("Arial")
+    fragment.text_state.font_size = 14
+    fragment.text_state.character_spacing = 2.0
+
+    paragraph.append_line(fragment)
+    builder.append_paragraph(paragraph)
+    document.save(path_outfile)
+```
+
+## Create Lists
+
+### Create a bullet list HTML version
+
+Our library shows how to create a bulleted (unordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML 'ul' element and inserts it into a PDF page as an HtmlFragment. Using HTML fragments allows you to leverage HTML formatting features (like lists, bold, italics) directly in the PDF.
+
+1. Create a new PDF document and add a page.
+1. Prepare the list items.
+1. Convert the list to an HTML unordered list.
+ - Use the 'ul' tag for an unordered (bulleted) list.
+ - Wrap each item with 'li' tags using a list comprehension.
+1. Create an HtmlFragment. Convert the HTML string into an HtmlFragment object that can be added to the PDF page.
+1. Insert the HtmlFragment into the page’s paragraphs collection.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+    items = [
+    "First item in the list",
+    "Second item with more text to demonstrate wrapping behavior.",
+    "Third item",
+    "Fourth item",
+    ]
+    html_list = "<ul>" + "".join([f"<li>{item}</li>" for item in items]) + "</ul>"
+    html_fragment = HtmlFragment(html_list)
+    page.paragraphs.add(html_fragment)
+    document.save(path_outfile)
+```
+
+[![Bullet list HTML](bullet_list_html.png)]
+
+### Create numbered list HTML version
+
+Create a numbered (ordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML <ol> element and inserts it into a PDF page as an HtmlFragment.
+
+Using HTML fragments enables you to incorporate HTML-based formatting features, such as numbered lists, bold, italics, and more, directly in your PDF.
+
+1. Create a new PDF document and add a page.
+1. Prepare the list items.
+1. Convert the list to an HTML ordered list.
+ - Use the 'ol' tag for a numbered list.
+ - Wrap each item with 'li' tags using a list comprehension.
+1. Convert the HTML string into an HtmlFragment object that can be added to the PDF page.
+1. Insert the HtmlFragment into the page’s paragraphs collection.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+    items = [
+        "First item in the list",
+        "Second item with more text to demonstrate wrapping behavior.",
+        "Third item",
+        "Fourth item",
+    ]
+    html_list = "<ol>" + "".join([f"<li>{item}</li>" for item in items]) + "</ol>"
+    html_fragment = HtmlFragment(html_list)
+    page.paragraphs.add(html_fragment)
+    document.save(path_outfile)
+```
+
+[![Numbered list HTML ](numbered_list_html.png)]
+
+### Create a bullet list LaTeX version
+
+Create a bulleted (unordered) list in a PDF using LaTeX fragments (TeXFragment). It converts a Python list of strings into a LaTeX itemize environment and inserts it into a PDF page. Using LaTeX fragments is ideal when you want to render mathematical formulas, symbols, or structured lists with precise formatting.
+
+1. Create a new PDF document and add a page.
+1. Define a Python list of strings that will become bullet points in the LaTeX itemize environment.
+1. Convert the list into a LaTeX itemize environment:
+ - Wrap the items with \begin{itemize} and \end{itemize}.
+ - Each item is prefixed with \item using a list comprehension.
+1. Convert the LaTeX string into a TeXFragment object that can be rendered in the PDF.
+1. Add the LaTeX fragment to the page.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+    items = [
+        "First item",
+        "Second item with more text to demonstrate wrapping behavior.",
+        "Third item",
+        "Fourth item",
+    ]
+    tex_list = "Lists are easy to create: \\begin{itemize}" + "".join([f"\\item {i}" for i in items]) + "\\end{itemize}"
+    tex_fragment = TeXFragment(tex_list)
+    page.paragraphs.add(tex_fragment)
+    document.save(path_outfile)
+```
+
+[![Bullet list LaTex](bullet_list_latex.png)]
+
+### Create numbered list LaTeX version
+
+Create a numbered (ordered) list in a PDF using LaTeX fragments (TeXFragment). It converts a Python list of strings into a LaTeX enumerate environment and inserts it into a PDF page. Using LaTeX fragments is ideal when you want precise formatting, structured lists, or mathematical notation in PDFs.
+
+1. Create a new PDF document and add a page.
+1. Define a Python list of strings that will become numbered items in the LaTeX enumerate environment.
+1. Convert the list into a LaTeX enumerate environment.
+1. Convert the LaTeX string into a TeXFragment object that can be rendered in the PDF.
+1. Add the LaTeX fragment to the page.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+    items = [
+        "First item",
+        "Second item with more text to demonstrate wrapping behavior.",
+        "Third item",
+        "Fourth item",
+    ]
+    tex_list = "Lists are easy to create: \\begin{enumerate}" + "".join([f"\\item {i}" for i in items]) + "\\end{enumerate}"
+    tex_fragment = TeXFragment(tex_list)
+    page.paragraphs.add(tex_fragment)
+    document.save(path_outfile)
+```
+
+[![Numbered list LaTex](numbered_list_latex.png)]
+
+### Create bullet list
+
+Create a custom bulleted list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
+Each list item is prefixed with a bullet character (•) and added as a separate TextFragment.
+
+1. Initialize a Document object and add a blank page.
+1. Define a Python list of strings that will be converted into bullet points.
+1. Create a TextBuilder and a TextParagraph.
+1. Use the 'TextBuilder' to add the configured paragraph to the page.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+    items = [
+        "First item in the list",
+        "Second item with more text to demonstrate wrapping behavior.",
+        "Third item",
+        "Fourth item",
+    ]
+
+    builder = TextBuilder(page)
+    paragraph = TextParagraph()
+    paragraph.rectangle = Rectangle(80, 200, 400, 800, True)
+    paragraph.formatting_options.wrap_mode = TextFormattingOptions.WordWrapMode.BY_WORDS
+
+    for item in items:
+        fragment = TextFragment("• " + item)
+        fragment.text_state.font = FontRepository.find_font("Times New Roman")
+        fragment.text_state.font_size = 12
+        paragraph.append_line(fragment)
+
+    builder.append_paragraph(paragraph)
+    document.save(path_outfile)
+```
+
+### Create numbered list
+
+Create a custom numbered (ordered) list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
+Each list item is prefixed with its number (e.g., 1., 2.) and added as a separate TextFragment.
+
+1. Initialize a Document object and add a blank page.
+1. Define a Python list of strings that will be converted into numbered list items.
+1. Create a TextBuilder and a TextParagraph.
+1. Add each item as a TextFragment with a number.
+1. Use the TextBuilder to add the configured paragraph to the page.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    document = Document()
+    page = document.pages.add()
+    items = [
+        "First item in the list",
+        "Second item with more text to demonstrate wrapping behavior.",
+        "Third item",
+        "Fourth item",
+    ]
+
+    builder = TextBuilder(page)
+    paragraph = TextParagraph()
+    paragraph.rectangle = Rectangle(80, 200, 400, 800, True)
+    paragraph.formatting_options.wrap_mode = TextFormattingOptions.WordWrapMode.BY_WORDS
+
+    for i, item in enumerate(items):
+        fragment = TextFragment(f"{i + 1}. {item}")
+        fragment.text_state.font = FontRepository.find_font("Times New Roman")
+        fragment.text_state.font_size = 12
+        paragraph.append_line(fragment)
+
+    builder.append_paragraph(paragraph)
+    document.save(path_outfile)
+```
+
+## Using Custom Fonts
+
+### Use a custom Font from a file
+
+1. Create a new PDF document and add a page.
+1. Define the text content you want to add to the PDF.
+1. Set the position of the text.
+1. Add the TextFragment to the page.
+1. Save the PDF document.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    font_path = os.path.join(self.data_dir, "BriosoPro Italic.otf")
+    document = Document()
+    page = document.pages.add()
+
+    fragment = TextFragment("Hello, Aspose!")
+    fragment.position = Position(100, 600)
+    fragment.text_state.font = FontRepository.open_font(font_path)
+    fragment.text_state.font_size = 24
+    fragment.text_state.foreground_color = Color.blue
+    fragment.text_state.font_style = FontStyles.ITALIC
+
+    page.paragraphs.add(fragment)
+    document.save(path_outfile)
+```
+
+[![Custom Fonts](custom_font.png)]
+
+## Use a custom Font from a stream
+
+1. Load font file as a binary stream.
+1. Open and embed the font using 'FontRepository.open_font'.
+1. Create a new PDF document and add a page.
+1. Add a styled text fragment with:
+ - Embedded custom font.
+ - Italic style and blue color.
+ - Specific font size and position.
+1. Save the final document to a specified output path.
+
+```python
+
+    import os
+    from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
+    from aspose.pdf.text import ()
+
+    path_outfile = os.path.join(self.data_dir, outfile)
+    font_path = os.path.join(self.data_dir, "BriosoPro Italic.otf")
+    with open(font_path, "rb") as font_stream:
+        font = FontRepository.open_font(font_stream, FontTypes.OTF)
+        font.is_embedded = True
+
+        document = Document()
+        page = document.pages.add()
+
+        fragment = TextFragment("Hello, Aspose!")
+        fragment.position = Position(100, 600)
+        fragment.text_state.font = font
+        fragment.text_state.font_size = 14
+        fragment.text_state.foreground_color = Color.blue
+        fragment.text_state.font_style = FontStyles.ITALIC
+
+        page.paragraphs.add(fragment)
+        document.save(path_outfile)
+```
+
+Embedding fonts ensures consistent rendering across platforms, making this approach ideal for branding, design fidelity, and multilingual support.
