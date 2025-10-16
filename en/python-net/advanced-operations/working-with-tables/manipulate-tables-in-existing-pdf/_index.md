@@ -31,9 +31,14 @@ Aspose.PDF for Python shows how to modify the content of a specific cell within 
     import aspose.pdf as ap
     from os import path
 
+    # Define file names and data directory
+    data_dir = "."  # or specify your data directory
+    infile = "input.pdf"   # replace with your input PDF file name
+    outfile = "output.pdf" # replace with your desired output PDF file name
+
     # Open PDF document
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, outfile)
+    path_infile = path.join(data_dir, infile)
+    path_outfile = path.join(data_dir, outfile)
     document = ap.Document(path_infile)
 
     # Create TableAbsorber object to find tables
