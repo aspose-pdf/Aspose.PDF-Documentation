@@ -3,8 +3,8 @@ title: Remove Tables from existing PDF
 linktitle: Remove Tables
 type: docs
 weight: 50
-url: /python-net/remove-tables-from-existing-pdf/
-lastmod: "2025-02-27"
+url: /python-net/removing-tables/
+lastmod: "2025-09-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,56 +13,58 @@ AlternativeHeadline: How to delete tables from PDF using Python
 Abstract: This article discusses the functionality of Aspose.PDF for Python via .NET, specifically focusing on the manipulation of tables within PDF documents. The library allows users to insert or create tables in both new and existing PDF files, as well as manipulate or remove tables from existing PDFs. The article introduces the `TableAbsorber` class, which is crucial for identifying and interacting with tables in a PDF. A new method, `remove()`, has been added to enable the removal of tables. The document provides two code snippets - one demonstrating how to remove a single table from a PDF, and another illustrating the removal of multiple tables. These examples highlight the practical application of the `TableAbsorber` class to achieve table removal from PDF documents.
 ---
 
-{{% alert color="primary" %}}
-
-Aspose.PDF for Python via .NET offers the capabilities to insert/create Table inside PDF document while its being generated from scratch or you can also add the table object in any existing PDF document. However you may have a requirement to [Manipulate Tables in existing PDF](https://docs.aspose.com/pdf/python-net/manipulate-tables-in-existing-pdf/) where you can update the contents in existing table cells. However you may come across a requirement to remove table objects from existing PDF document.
-
-{{% /alert %}}
-
-In order to remove the tables, we need to use [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) class to get hold of tables in existing PDF and then call [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods).
-
 ## Remove Table from PDF document
 
-We have added new function i.e. [remove()](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods) to the existing [TableAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/) Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
+Aspose.PDF for Python allows you to remove a table from a PDF. It opens an existing PDF, detects the first table on the first page with TableAbsorber, deletes that table using the [remove_one_table](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/tableabsorber/#methods). After save the updated PDF to a new file.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, outfile)
 
     # Load existing PDF document
-    pdf_document = ap.Document(input_file)
+    document = ap.Document(path_infile)
+
     # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
     # Visit first page with absorber
-    absorber.visit(pdf_document.pages[1])
+    absorber.visit(document.pages[1])
     # Get first table on the page
     table = absorber.table_list[0]
     # Remove the table
     absorber.remove(table)
     # Save PDF
-    pdf_document.save(output_file)
+    document.save(path_outfile)
 ```
 
-## Remove Multiple Tables from PDF document
+## Remove all Tables from PDF document
 
-Sometimes a PDF document may contain more than one table and you may come up with a requirement to remove multiple tables from it. In order to remove multiple tables from PDF document, please use the following code snippet:
+With our library, you can remove all tables from a specific page in a PDF. The code opens an existing PDF, detects all tables on the second page with TableAbsorber, iterates through the detected tables, removes each one, and then saves the modified PDF to a new file. It is useful when you need to bulk-remove tables from a page while leaving the rest of the PDF content intact.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, outfile)
 
     # Load existing PDF document
-    pdf_document = ap.Document(input_file)
+    document = ap.Document(path_infile)
+
     # Create TableAbsorber object to find tables
     absorber = ap.text.TableAbsorber()
     # Visit second page with absorber
-    absorber.visit(pdf_document.pages[1])
-    # Get copy of table collection
-    tables = absorber.table_list
+    absorber.visit(document.pages[1])
     #  Loop through the copy of collection and removing tables
+    tables = list(absorber.table_list)
     for table in tables:
         absorber.remove(table)
+
     # Save document
-    pdf_document.save(output_file)
+    document.save(path_outfile)
 ```
 
