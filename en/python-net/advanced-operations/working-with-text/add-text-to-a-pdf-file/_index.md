@@ -34,7 +34,7 @@ The following code snippet shows you how to add text in an existing PDF file:
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import TextFragment, Position
 
     path_outfile = os.path.join(self.data_dir, outfile)
     # Create a new document
