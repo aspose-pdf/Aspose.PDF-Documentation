@@ -1,5 +1,5 @@
 ---
-title: Add Text to PDF using Python
+title: Adding Text to PDF
 linktitle: Add Text to PDF
 type: docs
 weight: 10
