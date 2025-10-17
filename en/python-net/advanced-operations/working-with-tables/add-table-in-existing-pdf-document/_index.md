@@ -429,7 +429,7 @@ This example shows how to create tables that span multiple pages, handle long te
 
 ![Borders, margins and padding](set-border-style-margins-and-padding-of-table_1.png)
 
-### Styling table corners
+### Styling Table Corners
 
 Aspose.PDF for Python via .NET shows how to apply rounded corners to a table and customize the border radius.
 
@@ -486,7 +486,7 @@ Aspose.PDF for Python via .NET shows how to apply rounded corners to a table and
 
 ## Adding Content to Tables
 
-### Using HTML fragments in Cells
+### Using HTML Fragments in Cells
 
 This example shows how to insert HTML-formatted content into table cells.
 
@@ -547,7 +547,7 @@ This example shows how to insert HTML-formatted content into table cells.
     document.save(path_outfile)
 ```
 
-### Using LaTeX fragments in Cells
+### Using LaTeX Fragments in Cells
 
 This example shows how to insert LaTeX-formatted content into table cells for mathematical or styled expressions.
 
@@ -610,7 +610,7 @@ This example shows how to insert LaTeX-formatted content into table cells for ma
 
 ## Advanced Table Features
 
-### Inserting tables across pages
+### Inserting Tables across Pages
 
 This example shows how to create multiple tables in a PDF, set page margins, and force a table to start on a new page.
 
@@ -682,7 +682,7 @@ This example shows how to create multiple tables in a PDF, set page margins, and
     document.save(path_outfile)
 ```
 
-### Creating borderless tables
+### Creating borderless Tables
 
 This example shows how to create a large table that can break vertically across pages, repeat columns, and apply different background colors to header cells.
 
@@ -764,7 +764,7 @@ This example shows how to create a large table that can break vertically across 
     document.save(path_outfile)
 ```
 
-### Repeating header rows on multiple pages
+### Repeating Header rows on multiple Pages
 
 This example shows how to create a table that spans multiple pages while keeping header rows visible on each page.
 
