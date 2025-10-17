@@ -511,8 +511,8 @@ Our code snippet shows how to control line spacing in a PDF document. It reads t
 1. Load the source text.
 1. Initialize a TextFragment object and assign the loaded text to it.
 1. Set font and spacing properties for the text. These values determine how tightly or loosely the lines of text appear:
- - Font size: 12 points
- - Line spacing: 16 points
+    - Font size: 12 points
+    - Line spacing: 16 points
 1. Insert the formatted text fragment into the page’s paragraphs collection.
 1. Save the document.
 
@@ -537,7 +537,7 @@ Our code snippet shows how to control line spacing in a PDF document. It reads t
     document.save(path_outfile)
 ```
 
-## ### How to Format Text with Custom Line Spacing in Python - Specific case
+### How to Format Text with Custom Line Spacing in Python - Specific case
 
 Let's check how to apply different line spacing modes in a PDF document using a custom TrueType font (TTF).
 It loads text from a file, embeds a specific font, and renders the same text twice on a PDF page—each time using a different line spacing mode:
@@ -599,8 +599,8 @@ Character spacing determines the distance between individual characters in a lin
 
 1. Initializes a new Document object and adds a blank page for placing text.
 1. Define Fragment Generator. Implements a helper function make_fragment(spacing):
- - create a TextFragment with the sample text.
- - set the font.
+    - create a TextFragment with the sample text.
+    - set the font.
 1. Add text fragments with different spacing values.
 1. Save the Document.
 
@@ -640,11 +640,11 @@ Using TextParagraph is ideal when you need precise control over text placement a
 1. Create a new PDF document.
 1. Initialize a TextBuilder instance for the page.
 1. Create and configure a TextParagraph.
-- Set the word wrap mode to 'TextFormattingOptions.WordWrapMode.BY_WORDS'.
+    - Set the word wrap mode to 'TextFormattingOptions.WordWrapMode.BY_WORDS'.
 1. Create a TextFragment with custom character spacing.
- - Create a new TextFragment and set its text (e.g., "Sample Text with character spacing").
- - Specify font attributes such as Arial and font size 14 pt.
- - Apply character spacing = 2.0, which increases the space between characters.
+    - Create a new TextFragment and set its text (e.g., "Sample Text with character spacing").
+    - Specify font attributes such as Arial and font size 14 pt.
+    - Apply character spacing = 2.0, which increases the space between characters.
 1. Add the TextFragment to the TextParagraph.
 1. Add the TextParagraph to the page.
 1. Save the PDF document.
@@ -768,8 +768,8 @@ Our library shows how to create a bulleted (unordered) list in a PDF document us
 1. Create a new PDF document and add a page.
 1. Prepare the list items.
 1. Convert the list to an HTML unordered list.
- - Use the 'ul' tag for an unordered (bulleted) list.
- - Wrap each item with 'li' tags using a list comprehension.
+    - Use the 'ul' tag for an unordered (bulleted) list.
+    - Wrap each item with 'li' tags using a list comprehension.
 1. Create an HtmlFragment. Convert the HTML string into an HtmlFragment object that can be added to the PDF page.
 1. Insert the HtmlFragment into the page’s paragraphs collection.
 1. Save the PDF document.
@@ -806,8 +806,8 @@ Using HTML fragments enables you to incorporate HTML-based formatting features, 
 1. Create a new PDF document and add a page.
 1. Prepare the list items.
 1. Convert the list to an HTML ordered list.
- - Use the 'ol' tag for a numbered list.
- - Wrap each item with 'li' tags using a list comprehension.
+    - Use the 'ol' tag for a numbered list.
+    - Wrap each item with 'li' tags using a list comprehension.
 1. Convert the HTML string into an HtmlFragment object that can be added to the PDF page.
 1. Insert the HtmlFragment into the page’s paragraphs collection.
 1. Save the PDF document.
@@ -842,8 +842,8 @@ Create a bulleted (unordered) list in a PDF using LaTeX fragments (TeXFragment).
 1. Create a new PDF document and add a page.
 1. Define a Python list of strings that will become bullet points in the LaTeX itemize environment.
 1. Convert the list into a LaTeX itemize environment:
- - Wrap the items with \begin{itemize} and \end{itemize}.
- - Each item is prefixed with \item using a list comprehension.
+    - Wrap the items with \begin{itemize} and \end{itemize}.
+    - Each item is prefixed with \item using a list comprehension.
 1. Convert the LaTeX string into a TeXFragment object that can be rendered in the PDF.
 1. Add the LaTeX fragment to the page.
 1. Save the PDF document.
@@ -945,9 +945,9 @@ Create a numbered (ordered) list in a PDF using LaTeX fragments (TeXFragment). I
 1. Open and embed the font using 'FontRepository.open_font'.
 1. Create a new PDF document and add a page.
 1. Add a styled text fragment with:
- - Embedded custom font.
- - Italic style and blue color.
- - Specific font size and position.
+    - Embedded custom font.
+    - Italic style and blue color.
+    - Specific font size and position.
 1. Save the final document to a specified output path.
 
 ```python
