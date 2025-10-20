@@ -1493,7 +1493,7 @@ def use_custom_font_from_file(outfile):
 
 [![Custom Fonts](custom_font.png)]
 
-## Use a custom Font from a stream
+### Use a custom Font from a stream
 
 This code snippet demonstrates how to add text to a PDF document using a custom embedded OpenType (OTF) font with Aspose.PDF for Python via .NET. It shows how to open a font file as a stream, embed it into the PDF to ensure font availability across different systems, and apply text formatting such as font size, color, and italic style. This approach is ideal for creating visually consistent PDFs that preserve typography even when shared or viewed on devices without the installed font.
 
