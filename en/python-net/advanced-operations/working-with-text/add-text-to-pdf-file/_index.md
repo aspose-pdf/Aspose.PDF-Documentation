@@ -1,17 +1,17 @@
 ---
-title: Add Text to PDF using Python
+title: Adding Text to PDF
 linktitle: Add Text to PDF
 type: docs
 weight: 10
 url: /python-net/add-text-to-pdf-file/
 description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
-lastmod: "2025-10-27"
+lastmod: "2025-09-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Adding Text into PDF using Python
-Abstract: This article provides a comprehensive guide on manipulating PDF documents using the Aspose.PDF library in Python. It covers various techniques for adding and formatting text, including setting text properties such as font size, type, color, and positioning. The article also demonstrates how to load fonts from stream objects, utilize the `TextParagraph` class for text addition, and create interactive content with hyperlinks using `TextSegment`. Additionally, it explains using custom fonts, adding HTML strings, and creating footnotes with custom line styles and labels. The document further explores advanced formatting options like adding images and tables to footnotes, using inline paragraphs for text and images, customizing character spacing, and creating multi-column layouts. The guide concludes with instructions on working with tab stops, adding transparent text, and specifying line spacing for fonts. The article is rich with example code snippets, illustrating each functionality in detail, making it a valuable resource for developers looking to enhance PDF documents programmatically.
+Abstract: This article provides a comprehensive guide on manipulating PDF documents using the Aspose.PDF library in Python. It covers various techniques for adding and formatting text, including setting text properties such as font size, type, color, and positioning.
 ---
 
 This guide explains how to add text content to PDF documents using Aspose.PDF for Python via .NET. You’ll learn core text-insertion techniques—from placing a simple text fragment at a specific position, to styling it (font, size, color, style), handling right-to-left (RTL) languages, embedding hyperlinks, and working with paragraph layouts, lists, and transparency effects. The article also covers advanced scenarios such as using HTML or LaTeX fragments, custom fonts, and text formatting options like line spacing and character spacing.
@@ -26,10 +26,10 @@ Aspose.PDF for Python via .NET. shows how to add a simple text fragment to a spe
 
 1. Create a new Document object
 1. Use 'document.pages.add()' to create a new blank page.
-1. Create a TextFragment().
-1. Set the text position using the Position() class. If you specify Position(), the text will be located in your document from left to right and shifted downwards.
+1. Create a `TextFragment`.
+1. Set the text position using the Position class. If you specify Position, the text will be located in your document from left to right and shifted downwards.
 1. Customize text appearance. You can set font size, color, font style, and more via text_fragment.text_state.
-1. Append the TextFragment to the page’s paragraph collection with page.paragraphs.add(text_fragment).
+1. Append the TextFragment to the page’s paragraph collection with `page.paragraphs.add(text_fragment)`.
 1. Save the document.
 
 The following code snippet shows you how to add text in an existing PDF file:
@@ -82,7 +82,17 @@ Additionally, this code snippet shows how to use multiple text segments within a
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -133,7 +143,7 @@ Additionally, this code snippet shows how to use multiple text segments within a
     document.save(path_outfile)
 ```
 
-[![Add Text with Font Styling](styled_text.png)]
+![Text fragment displayed with blue italic Arial font containing the text Hello, Aspose! followed by a mathematical formula showing S = a subscript 2n + a subscript 2n+1 + a subscript 2n+2 with blue main text and red subscript formatting](styled_text.png)
 
 ### Add Right-to-Left (RTL) Text to PDF Document
 
@@ -151,7 +161,17 @@ Set font and styling. Choose a font that supports the RTL script (e.g., Tahoma, 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -169,7 +189,7 @@ Set font and styling. Choose a font that supports the RTL script (e.g., Tahoma, 
     document.save(path_outfile)
 ```
 
-[![Right-to-Left Text](rtl_text.png)]
+![Right-to-Left Text](rtl_text.png)
 
 ### Add Text with Hyperlinks
 
@@ -187,7 +207,17 @@ Add clickable hyperlinks to text in a PDF using Aspose.PDF for Python via .NET. 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -211,7 +241,7 @@ Add clickable hyperlinks to text in a PDF using Aspose.PDF for Python via .NET. 
     document.save(path_outfile)
 ```
 
-[![Text with Hyperlinks](hyperlink_text.png)]
+![Text fragment displayed in a PDF showing mixed content with Sample Text Fragment followed by Text Segment 1, then a blue hyperlinked text reading Link to Google, and ending with TextSegment without hyperlink in regular black text formatting](hyperlink_text.png)
 
 ## Add Text transparent
 
@@ -231,7 +261,17 @@ It creates a colored rectangle with partial opacity and overlays a TextFragment 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     # Create PDF document
@@ -281,7 +321,17 @@ Create a TextParagraph. You can set wrap mode. In this example, we use the 'DISC
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -311,7 +361,7 @@ Create a TextParagraph. You can set wrap mode. In this example, we use the 'DISC
     document.save(path_outfile)
 ```
 
-[![Add Text using TextParagraph](text_paragraph.png)]
+![Add Text using TextParagraph](text_paragraph.png)
 
 ### Add Text with Indents in PDF
 
@@ -323,22 +373,30 @@ It shows how to control both the first line indent and the subsequent line inden
 1. Create and style a text fragment. Use TextFragment(text) to hold the content. Apply basic styling (font and size) via the text_state property.
 1. Initialize a TextBuilder. It used to place TextParagraph objects on a page.
 1. Add the first paragraph with 'first_line_indent'. It offsets only the first line of the paragraph. The rectangle defines the area where text will appear. Use 'wrap_mode = BY_WORDS' to ensure natural word wrapping.
-1. Add a second paragraph with 'subsequent_lines_indent'. It offsets all lines after the first.
+1. Add a second paragraph with `subsequent_lines_indent`. It offsets all lines after the first.
 1. Save the document.
 
 You can also modify:
 
-- 'fragment.text_state.foreground_color' - for text color.
-
-- 'fragment.text_state.font_style' - for bold/italic/underline.
-
-- 'fragment.text_state.line_spacing' - for spacing between lines.
+- `fragment.text_state.foreground_color` - for text color.
+- `fragment.text_state.font_style` - for bold/italic/underline.
+- `fragment.text_state.line_spacing` - for spacing between lines.
 
 ```python
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -389,7 +447,17 @@ Aspose.PDF for Python via .NET library allows you to insert HTML-formatted conte
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     # Create a new document
@@ -403,7 +471,7 @@ Aspose.PDF for Python via .NET library allows you to insert HTML-formatted conte
     document.save(path_outfile)
 ```
 
-[![Add HTML Text to a PDF Document](html_fragment.png)]
+![Add HTML Text to a PDF Document](html_fragment.png)
 
 ### Add LaTeX Text to PDF Document
 
@@ -419,7 +487,17 @@ LaTeX is a powerful typesetting system widely used for creating scientific and m
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     # Create a new document
@@ -433,7 +511,7 @@ LaTeX is a powerful typesetting system widely used for creating scientific and m
     document.save(path_outfile)
 ```
 
-[![Add LaTeX Text to a PDF Document](latex_fragment.png)]
+![Add LaTeX Text to a PDF Document](latex_fragment.png)
 
 ### Add HTML Fragment to PDF Document
 
@@ -450,7 +528,17 @@ We can define an HTML fragment and set the text style directly using HTML tags. 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -466,7 +554,7 @@ We can define an HTML fragment and set the text style directly using HTML tags. 
     document.save(path_outfile)
 ```
 
-[![Add HTML Content to a PDF Document](html_content.png)]
+![Add HTML Content to a PDF Document](html_content.png)
 
 ### Add HTML Fragment override text state
 
@@ -483,7 +571,17 @@ Insert styled HTML content into a PDF document, while overriding the default tex
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -504,7 +602,7 @@ Insert styled HTML content into a PDF document, while overriding the default tex
     document.save(path_outfile)
 ```
 
-[![Add HTML fragment override text state](html_override.png)]
+![Add HTML fragment override text state](html_override.png)
 
 ## Using Line Spacing
 
@@ -527,7 +625,17 @@ Our code snippet shows how to control line spacing in a PDF document. It reads t
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -568,7 +676,17 @@ The example shows how line spacing behavior can vary depending on the selected m
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -596,7 +714,7 @@ The example shows how line spacing behavior can vary depending on the selected m
     document.save(path_outfile)
 ```
 
-[![Custom Line Spacing](line_spacing.png)]
+![Custom Line Spacing](line_spacing.png)
 
 ## Using Character Spacing
 
@@ -615,7 +733,17 @@ Character spacing determines the distance between individual characters in a lin
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -635,7 +763,7 @@ Character spacing determines the distance between individual characters in a lin
     document.save(path_outfile)
 ```
 
-[![Character Spacing](character_spacing_simple.png)]
+![Character Spacing](character_spacing_simple.png)
 
 ### How to control character spacing in PDF text using the TextParagraph and TextBuilder
 
@@ -660,7 +788,17 @@ Using TextParagraph is ideal when you need precise control over text placement a
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -681,9 +819,11 @@ Using TextParagraph is ideal when you need precise control over text placement a
     document.save(path_outfile)
 ```
 
-## Create Lists
+## Creating Lists
 
-### Create bullet list
+There are several ways to create list. You can choose the one that best suits your data processing method. The library offers a choice of one of three options: Text
+
+### Create a bullet list
 
 Create a custom bulleted list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
 Each list item is prefixed with a bullet character (•) and added as a separate TextFragment.
@@ -698,7 +838,17 @@ Each list item is prefixed with a bullet character (•) and added as a separate
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -725,7 +875,7 @@ Each list item is prefixed with a bullet character (•) and added as a separate
     document.save(path_outfile)
 ```
 
-### Create numbered list
+### Create a numbered list
 
 Create a custom numbered (ordered) list in a PDF using TextParagraph and TextBuilder, without relying on HTML or LaTeX formatting.
 Each list item is prefixed with its number (e.g., 1., 2.) and added as a separate TextFragment.
@@ -741,7 +891,17 @@ Each list item is prefixed with its number (e.g., 1., 2.) and added as a separat
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -785,7 +945,6 @@ Our library shows how to create a bulleted (unordered) list in a PDF document us
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -802,11 +961,11 @@ Our library shows how to create a bulleted (unordered) list in a PDF document us
     document.save(path_outfile)
 ```
 
-[![Bullet list HTML](bullet_list_html.png)]
+![Bullet list HTML](bullet_list_html.png)
 
 ### Create numbered list HTML version
 
-Create a numbered (ordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML <ol> element and inserts it into a PDF page as an HtmlFragment.
+Create a numbered (ordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML `<ol>` element and inserts it into a PDF page as an HtmlFragment.
 
 Using HTML fragments enables you to incorporate HTML-based formatting features, such as numbered lists, bold, italics, and more, directly in your PDF.
 
@@ -823,7 +982,6 @@ Using HTML fragments enables you to incorporate HTML-based formatting features, 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -840,7 +998,7 @@ Using HTML fragments enables you to incorporate HTML-based formatting features, 
     document.save(path_outfile)
 ```
 
-[![Numbered list HTML ](numbered_list_html.png)]
+![Numbered list HTML ](numbered_list_html.png)
 
 ### Create a bullet list LaTeX version
 
@@ -859,7 +1017,6 @@ Create a bulleted (unordered) list in a PDF using LaTeX fragments (TeXFragment).
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -876,7 +1033,7 @@ Create a bulleted (unordered) list in a PDF using LaTeX fragments (TeXFragment).
     document.save(path_outfile)
 ```
 
-[![Bullet list LaTex](bullet_list_latex.png)]
+![Bullet list LaTex](bullet_list_latex.png)
 
 ### Create numbered list LaTeX version
 
@@ -893,7 +1050,6 @@ Create a numbered (ordered) list in a PDF using LaTeX fragments (TeXFragment). I
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = Document()
@@ -910,7 +1066,7 @@ Create a numbered (ordered) list in a PDF using LaTeX fragments (TeXFragment). I
     document.save(path_outfile)
 ```
 
-[![Numbered list LaTex](numbered_list_latex.png)]
+![Numbered list displayed in PDF showing LaTeX-rendered formatting with items 1. First item, 2. Second item with more text to demonstrate wrapping behavior, 3. Third item, and 4. Fourth item, preceded by the text Lists are easy to create](numbered_list_latex.png)
 
 ## Using Custom Fonts
 
@@ -928,8 +1084,18 @@ This example allows you to add text to a PDF file using a custom OpenType font i
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
-
+    from aspose.pdf.text import (
+        TextFragment,
+        TextSegment,
+        TextState,
+        TextParagraph,
+        TextBuilder,
+        TextFormattingOptions,
+        FontRepository,
+        FontStyles,
+        FontTypes,
+        Position
+    )
     path_outfile = os.path.join(self.data_dir, outfile)
     font_path = os.path.join(self.data_dir, "BriosoPro Italic.otf")
     document = Document()
@@ -965,7 +1131,17 @@ This code snippet demonstrates how to add text to a PDF document using a custom 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+        TextFragment,
+        TextSegment,
+        TextState,
+        TextParagraph,
+        TextBuilder,
+        TextFormattingOptions,
+        FontRepository,
+        FontStyles,
+        FontTypes,
+        Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     font_path = os.path.join(self.data_dir, "BriosoPro Italic.otf")
@@ -1006,7 +1182,17 @@ Add a footnote to a text fragment in a PDF document using Aspose.PDF for Python 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+        TextFragment,
+        TextSegment,
+        TextState,
+        TextParagraph,
+        TextBuilder,
+        TextFormattingOptions,
+        FontRepository,
+        FontStyles,
+        FontTypes,
+        Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = ap.Document()
@@ -1040,7 +1226,17 @@ Add a footnote to a text fragment in a PDF document using Aspose.PDF for Python 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = ap.Document()
@@ -1082,7 +1278,17 @@ Add footnotes to text fragments in a PDF document using Aspose.PDF for Python vi
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+        TextFragment,
+        TextSegment,
+        TextState,
+        TextParagraph,
+        TextBuilder,
+        TextFormattingOptions,
+        FontRepository,
+        FontStyles,
+        FontTypes,
+        Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = ap.Document()
@@ -1124,7 +1330,17 @@ Customize the visual appearance of footnote lines in a PDF document with Python 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = ap.Document()
@@ -1164,7 +1380,17 @@ How to enrich footnotes in a PDF document by embedding images, styled text, and 
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = ap.Document()
@@ -1216,7 +1442,17 @@ This code snippet demonstrates how to add an endnote to a text fragment in a PDF
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = ap.Document()
@@ -1261,7 +1497,17 @@ Add an endnote to a text fragment in a PDF document, with a custom marker symbol
 
     import os
     from aspose.pdf import Document, Color, Rectangle, License, HorizontalAlignment, WebHyperlink, HtmlFragment, TeXFragment
-    from aspose.pdf.text import ()
+    from aspose.pdf.text import (
+    TextFragment,
+    TextSegment,
+    TextState,
+    TextParagraph,
+    TextBuilder,
+    TextFormattingOptions,
+    FontRepository,
+    FontStyles,
+    FontTypes,
+    Position)
 
     path_outfile = os.path.join(self.data_dir, outfile)
     document = ap.Document()
