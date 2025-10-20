@@ -14,7 +14,11 @@ AlternativeHeadline: Adding Text into PDF using Python
 Abstract: This article provides a comprehensive guide on manipulating PDF documents using the Aspose.PDF library in Python. It covers various techniques for adding and formatting text, including setting text properties such as font size, type, color, and positioning. The article also demonstrates how to load fonts from stream objects, utilize the `TextParagraph` class for text addition, and create interactive content with hyperlinks using `TextSegment`. Additionally, it explains using custom fonts, adding HTML strings, and creating footnotes with custom line styles and labels. The document further explores advanced formatting options like adding images and tables to footnotes, using inline paragraphs for text and images, customizing character spacing, and creating multi-column layouts. The guide concludes with instructions on working with tab stops, adding transparent text, and specifying line spacing for fonts. The article is rich with example code snippets, illustrating each functionality in detail, making it a valuable resource for developers looking to enhance PDF documents programmatically.
 ---
 
-### Basic Text Operations
+This guide explains how to add text content to PDF documents using Aspose.PDF for Python via .NET. You’ll learn core text-insertion techniques—from placing a simple text fragment at a specific position, to styling it (font, size, color, style), handling right-to-left (RTL) languages, embedding hyperlinks, and working with paragraph layouts, lists, and transparency effects. The article also covers advanced scenarios such as using HTML or LaTeX fragments, custom fonts, and text formatting options like line spacing and character spacing.
+
+Whether you're building simple annotations or rich typographic layouts, this resource equips you with the fundamental building blocks for working with text in PDFs using Aspose.PDF.
+
+## Basic Text Operations
 
 ### Adding Text
 
@@ -50,15 +54,18 @@ The following code snippet shows you how to add text in an existing PDF file:
 ```
 
 This code example uses a TextFragment. But you can also add text to a PDF page using a TextParagraph. Let's explore the difference.
-The **TextFragment** is a single piece of Text. TextFragment represents a single unit of text — essentially, one text string that can be placed, styled, and positioned independently. It’s ideal when you need to add simple, small amounts of text.
+The **[TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/)** is a single piece of Text. TextFragment represents a single unit of text — essentially, one text string that can be placed, styled, and positioned independently. It’s ideal when you need to add simple, small amounts of text.
 
-The **TextParagraph** is a group of TextFragments. TextParagraph is a container or collection of one or more TextFragment objects. It’s ideal when you need to group multiple fragments — for example, to create a block of text with several lines, words, or formatted elements.
+The **[TextParagraph](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textparagraph/)** is a group of TextFragments. It can add multiple text lines. TextParagraph is a container or collection of one or more TextFragment objects. It’s ideal when you need to group multiple fragments — for example, to create a block of text with several lines, words, or formatted elements.
 A TextParagraph also manages text alignment, line spacing, and automatic layout on the page. The use of the red line is only possible with TextParagraph.
+
+For more information on Working with Text, please check the [Text Formatting inside PDF](/pdf/python-net/text-formatting-inside-pdf/) and [Extract Text from PDF using Python](/pdf/python-net/extract-text-from-pdf/) documentation sections.
 
 ### Add Text with Font Styling
 
 This is a more advanced example that demonstrates text styling, font customization, and mixed-format text (using subscript text segments). Aspose.PDF explains how to apply font properties such as font family, size, color, bold, italic, and underline to a text fragment.
 Additionally, this code snippet shows how to use multiple text segments within a single fragment to create complex text expressions — for instance, including subscript or superscript characters, often required in formulas or scientific notations.
+
 
 1. Create a new document and page using 'Document()', and 'document.pages.add()' to add a blank page.
 1. Create a TextFragment for simple styled text.
@@ -909,6 +916,8 @@ Create a numbered (ordered) list in a PDF using LaTeX fragments (TeXFragment). I
 
 ### Use a custom Font from a file
 
+This example allows you to add text to a PDF file using a custom OpenType font in Aspose.PDF for Python via .NET. It shows how to create a new PDF document, position text precisely on the page, and apply custom formatting such as font type, size, color, and italic style.
+
 1. Create a new PDF document and add a page.
 1. Define the text content you want to add to the PDF.
 1. Set the position of the text.
@@ -940,6 +949,8 @@ Create a numbered (ordered) list in a PDF using LaTeX fragments (TeXFragment). I
 [![Custom Fonts](custom_font.png)]
 
 ## Use a custom Font from a stream
+
+This code snippet demonstrates how to add text to a PDF document using a custom embedded OpenType (OTF) font with Aspose.PDF for Python via .NET. It shows how to open a font file as a stream, embed it into the PDF to ensure font availability across different systems, and apply text formatting such as font size, color, and italic style. This approach is ideal for creating visually consistent PDFs that preserve typography even when shared or viewed on devices without the installed font.
 
 1. Load font file as a binary stream.
 1. Open and embed the font using 'FontRepository.open_font'.
