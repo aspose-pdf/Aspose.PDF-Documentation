@@ -1072,7 +1072,22 @@ def character_spacing_using_text_paragraph(outfile):
 
 ## Creating Lists
 
-There are several ways to create list. You can choose the one that best suits your data processing method. The library offers a choice of one of three options: Text
+When working with PDF files, you may need to display structured information such as lists — whether they’re bulleted, numbered, or formatted with HTML or LaTeX.
+Aspose.PDF for Python via .NET provides several flexible ways to create and format lists directly within your PDF documents, giving you full control over layout, font, and style.
+
+This article demonstrates multiple approaches to creating lists in PDFs, from plain-text formatting to advanced HTML and LaTeX rendering. Each method serves a specific use case — whether you prefer precise programmatic control or convenient markup-based styling.
+
+By the end of this article, you’ll know how to:
+
+- Create custom bullet and numbered lists using TextParagraph and TextBuilder.
+
+- Use HTML fragments (HtmlFragment) to easily render '<ul>' and '<ol>' lists in PDFs.
+
+- Leverage LaTeX fragments (TeXFragment) for mathematical or scientific list formatting.
+
+- Control text wrapping, font styles, and layout positioning within a page.
+
+- Understand the difference between manual list construction and markup-driven approaches.
 
 ### Create a bullet list
 
@@ -1201,12 +1216,12 @@ def create_numbered_list(outfile):
 
 ### Create a bullet list HTML version
 
-Our library shows how to create a bulleted (unordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML 'ul' element and inserts it into a PDF page as an HtmlFragment. Using HTML fragments allows you to leverage HTML formatting features (like lists, bold, italics) directly in the PDF.
+Our library shows how to create a bulleted (unordered) list in a PDF document using HTML fragments. It converts a Python list of strings into an HTML `<ul>` element and inserts it into a PDF page as an HtmlFragment. Using HTML fragments allows you to leverage HTML formatting features (like lists, bold, italics) directly in the PDF.
 
 1. Create a new PDF document and add a page.
 1. Prepare the list items.
 1. Convert the list to an HTML unordered list.
-    - Use the 'ul' tag for an unordered (bulleted) list.
+    - Use the `<ul>` tag for an unordered (bulleted) list.
     - Wrap each item with 'li' tags using a list comprehension.
 1. Create an HtmlFragment. Convert the HTML string into an HtmlFragment object that can be added to the PDF page.
 1. Insert the HtmlFragment into the page’s paragraphs collection.
@@ -1272,7 +1287,7 @@ Using HTML fragments enables you to incorporate HTML-based formatting features, 
 1. Create a new PDF document and add a page.
 1. Prepare the list items.
 1. Convert the list to an HTML ordered list.
-    - Use the 'ol' tag for a numbered list.
+    - Use the `<ol>` tag for a numbered list.
     - Wrap each item with 'li' tags using a list comprehension.
 1. Convert the HTML string into an HtmlFragment object that can be added to the PDF page.
 1. Insert the HtmlFragment into the page’s paragraphs collection.
