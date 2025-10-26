@@ -594,66 +594,7 @@ def add_text_html_fragment(outfile):
 
 ![Add HTML Text to a PDF Document](html_fragment.png)
 
-### Add LaTeX Text to PDF Document
-
-Add LaTeX-formatted mathematical expressions to a PDF document using the TeXFragment class in Aspose.PDF for Python via .NET.
-LaTeX is a powerful typesetting system widely used for creating scientific and mathematical documents. By using TeXFragment, you can directly render LaTeX math notation and symbols inside a PDF page.
-
-1. Create a new document and page using 'Document()', and 'document.pages.add()' to add a blank page.
-1. Use the TeXFragment class to render LaTeX syntax directly.
-1. Add the LaTeX content to the PDF layout with 'page.paragraphs.add()'.
-1. Save the PDF.
-
-```python
-
-import os
-import aspose.pdf as ap
-
-# Global configuration
-DATA_DIR = "your path here"
-
-def add_text_latex_fragment(outfile):
-    """
-    Add LaTeX mathematical expression to a PDF document.
-
-    Creates a PDF document containing a complex mathematical expression rendered
-    from LaTeX markup. This demonstrates advanced mathematical typesetting
-    capabilities using LaTeX syntax within PDF documents.
-
-    Args:
-        outfile (str): The file path where the generated PDF document will be saved.
-
-    Returns:
-        None: The function saves the document to the specified output file.
-
-    Note:
-        - Uses LaTeX TeXFragment for mathematical expression rendering
-        - Expression includes overbrace and underbrace notation
-        - Formula: (a+b)⁶ · (c+d)⁷ with braces and labels = 42
-        - LaTeX commands: \\overbrace, \\underbrace, \\text, \\cdot
-        - Provides professional mathematical typography
-
-    Example:
-        >>> add_text_latex_fragment("latex_math.pdf")
-        # Creates a PDF with complex LaTeX mathematical expression
-    """
-
-    # Create a new document
-    document = ap.Document()
-    page = document.pages.add()
-
-    # Add a text fragment at a specific position
-    text_fragment = ap.TeXFragment(
-        "\\underbrace{\\overbrace{a+b}^6 \\cdot \\overbrace{c+d}^7}_\\text{example of text} = 42"
-    )
-
-    page.paragraphs.add(text_fragment)
-    document.save(outfile)
-```
-
-![Add LaTeX Text to a PDF Document](latex_fragment.png)
-
-### Add HTML Fragment to PDF Document
+#### Add styled HTML fragment with various formatting to a PDF document
 
 We can define an HTML fragment and set the text style directly using HTML tags. Embed styled HTML content into a PDF document. This code snippet creates a new PDF file, adds a page, inserts an HTML fragment with various formatting elements (headings, paragraphs, links, and inline styles), and saves the result to the specified path.
 
@@ -713,9 +654,10 @@ def add_html_fragment(outfile):
 
 ![Add HTML Content to a PDF Document](html_content.png)
 
-### Add HTML Fragment override text state
+#### Add HTML Fragment with overridden text state
 
-Insert styled HTML content into a PDF document, while overriding the default text formatting with a custom TextState. It explains how to apply global font, size, and color settings to an entire HTML fragment, regardless of inline HTML styles.
+As we saw in the previous example, it's possible to set styles directly in the HTML code. This has its advantages, but also some drawbacks. Suppose we're working with a customer's HTML and want to unify the appearance of our output.
+In this case, we can override the customer's styling by using our own TextState, as shown in the following example.
 
 1. Create a new document and page using 'Document()', and 'document.pages.add()' to add a blank page.
 1. Prepare HTML Content. The HTML string contains an h1 heading with Verdana font, a green-colored paragraph with bold, italic, and underlined text, and a hyperlink to a website with a larger font size.
@@ -777,6 +719,65 @@ def add_html_fragment_override_text_state(outfile):
 ```
 
 ![Add HTML fragment override text state](html_override.png)
+
+### Add LaTeX Text to PDF Document
+
+Add LaTeX-formatted mathematical expressions to a PDF document using the TeXFragment class in Aspose.PDF for Python via .NET.
+LaTeX is a powerful typesetting system widely used for creating scientific and mathematical documents. By using TeXFragment, you can directly render LaTeX math notation and symbols inside a PDF page.
+
+1. Create a new document and page using 'Document()', and 'document.pages.add()' to add a blank page.
+1. Use the TeXFragment class to render LaTeX syntax directly.
+1. Add the LaTeX content to the PDF layout with 'page.paragraphs.add()'.
+1. Save the PDF.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_text_latex_fragment(outfile):
+    """
+    Add LaTeX mathematical expression to a PDF document.
+
+    Creates a PDF document containing a complex mathematical expression rendered
+    from LaTeX markup. This demonstrates advanced mathematical typesetting
+    capabilities using LaTeX syntax within PDF documents.
+
+    Args:
+        outfile (str): The file path where the generated PDF document will be saved.
+
+    Returns:
+        None: The function saves the document to the specified output file.
+
+    Note:
+        - Uses LaTeX TeXFragment for mathematical expression rendering
+        - Expression includes overbrace and underbrace notation
+        - Formula: (a+b)⁶ · (c+d)⁷ with braces and labels = 42
+        - LaTeX commands: \\overbrace, \\underbrace, \\text, \\cdot
+        - Provides professional mathematical typography
+
+    Example:
+        >>> add_text_latex_fragment("latex_math.pdf")
+        # Creates a PDF with complex LaTeX mathematical expression
+    """
+
+    # Create a new document
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Add a text fragment at a specific position
+    text_fragment = ap.TeXFragment(
+        "\\underbrace{\\overbrace{a+b}^6 \\cdot \\overbrace{c+d}^7}_\\text{example of text} = 42"
+    )
+
+    page.paragraphs.add(text_fragment)
+    document.save(outfile)
+```
+
+![Complex mathematical expression displayed in a PDF showing the LaTeX formula with overbrace notation over (a+b)⁶, underbrace notation under the entire expression (a+b)⁶ · (c+d)⁷, labeled as example of text, and equals 42. The formula demonstrates advanced mathematical typesetting with proper spacing and bracket styling typical of LaTeX rendering](latex_fragment.png)
 
 ## Using Line Spacing
 
@@ -928,7 +929,7 @@ def specify_line_spacing_specific_case(outfile):
     document.save(outfile)
 ```
 
-![Custom Line Spacing](line_spacing.png)
+![PDF document displaying text with custom line spacing demonstrating 16-point spacing between lines for improved readability and text layout formatting](line_spacing.png)
 
 ## Using Character Spacing
 
@@ -994,7 +995,7 @@ def character_spacing_using_text_fragment(outfile):
     document.save(outfile)
 ```
 
-![Character Spacing](character_spacing_simple.png)
+![PDF document displaying three lines of identical text Sample Text with character spacing demonstrating progressively tighter character spacing from top to bottom, with the first line having wider spacing between letters, the middle line having moderate spacing, and the bottom line having the closest character spacing, illustrating the visual effect of different character spacing values in PDF text formatting](character_spacing_simple.png)
 
 ### How to control character spacing in PDF text using the TextParagraph and TextBuilder
 
@@ -1275,7 +1276,7 @@ def create_bullet_list_html_version(outfile):
     document.save(outfile)
 ```
 
-![Bullet list HTML](bullet_list_html.png)
+![Bulleted list displayed in a PDF document showing four items: First item in the list, Second item with more text to demonstrate wrapping behavior, Third item, and Fourth item. Each item is preceded by a standard bullet point and demonstrates HTML-formatted list rendering within the PDF structure with proper indentation and spacing](bullet_list_html.png)
 
 ### Create numbered list HTML version
 
@@ -1341,7 +1342,7 @@ def create_numbered_list_html_version(outfile):
     document.save(outfile)
 ```
 
-![Numbered list HTML ](numbered_list_html.png)
+![Numbered list displayed in a PDF document showing four automatically numbered items: 1. First item in the list, 2. Second item with more text to demonstrate wrapping behavior, 3. Third item, and 4. Fourth item. The list demonstrates HTML-formatted ordered list rendering within PDF structure with proper numeric sequencing, indentation, and spacing between items](numbered_list_html.png)
 
 ### Create a bullet list LaTeX version
 
@@ -1409,7 +1410,7 @@ def create_bullet_list_latex_version(outfile):
     document.save(outfile)
 ```
 
-![Bullet list LaTex](bullet_list_latex.png)
+![Bulleted list displayed in PDF showing LaTeX-rendered formatting with text Lists are easy to create: followed by four bullet-pointed items: First item, Second item with more text to demonstrate wrapping behavior, Third item, and Fourth item. The list demonstrates professional LaTeX typesetting with proper bullet formatting, consistent spacing, and text wrapping capabilities within a clean PDF document layout](bullet_list_latex.png)
 
 ### Create numbered list LaTeX version
 
@@ -1505,7 +1506,7 @@ def use_custom_font_from_file(outfile):
     document.save(outfile)
 ```
 
-[![Custom Fonts](custom_font.png)]
+![Text fragment displayed in a PDF document showing Hello, Aspose! rendered in blue italic BriosoPro font, demonstrating custom OpenType font integration and styling capabilities within PDF text formatting](custom_font.png)
 
 ### Use a custom Font from a stream
 
