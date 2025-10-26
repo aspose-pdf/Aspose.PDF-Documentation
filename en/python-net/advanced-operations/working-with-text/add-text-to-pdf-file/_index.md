@@ -282,19 +282,19 @@ def add_text_with_hyperlink(outfile):
 
     fragment = ap.text.TextFragment(
         "Sample Text Fragment"
-    )  # 1 fragment  в котором 1 segment
+    )  # 1 fragment containing 1 segment
 
     segment = ap.text.TextSegment(" ... Text Segment 1...")
     fragment.segments.append(segment)  # 1 + 1
 
     segment = ap.text.TextSegment("Link to Aspose")
-    fragment.segments.append(segment)  # 1 fragment  в котором 3 segment
+    fragment.segments.append(segment)  # 1 fragment containing 3 segments
     segment.hyperlink = ap.WebHyperlink("https://products.aspose.com/pdf")
     segment.text_state.foreground_color = ap.Color.blue
     segment.text_state.font_style = ap.text.FontStyles.ITALIC
 
     segment = ap.text.TextSegment("TextSegment without hyperlink")
-    fragment.segments.append(segment)  # 1 fragment  в котором 4 segment
+    fragment.segments.append(segment)  # 1 fragment containing 4 segments
 
     page.paragraphs.add(fragment)
     document.save(outfile)
