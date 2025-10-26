@@ -894,7 +894,6 @@ def specify_line_spacing_specific_case(outfile):
         - os module for file path operations
         - DATA_DIR constant must be defined
     """
-    """Specify line spacing with custom font."""
 
     document = ap.Document()
     page = document.pages.add()
