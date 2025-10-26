@@ -300,7 +300,7 @@ def add_text_with_hyperlink(outfile):
     document.save(outfile)
 ```
 
-![Text fragment displayed in a PDF showing mixed content with Sample Text Fragment followed by Text Segment 1, then a blue hyperlinked text reading Link to Google, and ending with TextSegment without hyperlink in regular black text formatting](hyperlink_text.png)
+![Text fragment displayed in a PDF showing mixed content with Sample Text Fragment followed by Text Segment 1, then a blue hyperlinked text reading Link to Aspose (linking to https://products.aspose.com/pdf), and ending with TextSegment without hyperlink in regular black text formatting](hyperlink_text.png)
 
 ## Add Text transparent
 
