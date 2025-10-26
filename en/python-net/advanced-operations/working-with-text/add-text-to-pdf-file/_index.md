@@ -1793,7 +1793,6 @@ def add_footnote_with_image_and_table(outfile):
         - Uses the Aspose.PDF library (imported as 'ap')
         - The footnote is attached to the main text fragment on the page
     """
-    """Add footnote with image and table."""
 
     document = ap.Document()
     page = document.pages.add()
