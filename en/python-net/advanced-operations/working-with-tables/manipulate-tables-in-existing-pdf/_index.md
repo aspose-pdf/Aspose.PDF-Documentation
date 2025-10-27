@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Manipulate tables in existing PDF
+## Manipulate Tables in existing PDF
 
 Aspose.PDF for Python shows how to modify the content of a specific cell within a table in a PDF document. It uses the TableAbsorber class to locate tables on the first page, accesses a particular text fragment within the first cell of the first table, updates its text, and saves the modified PDF to a new file.
 
