@@ -635,7 +635,7 @@ def apply_gradient_axial_shading_to_text(output_file_name):
     document.save(output_file_name)
 ```
 
-## Applying an Radial Gradient to Text in a PDF
+## Applying a Radial Gradient to Text in a PDF
 
 A radial gradient creates a circular color transition that radiates outward from the center of the text, offering a visually dynamic styling option for titles, headers, or decorative elements.
 
