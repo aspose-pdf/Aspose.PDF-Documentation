@@ -427,9 +427,7 @@ def replace_text_and_resize_and_shift_paragraph(infile, outfile):
         rect.urx -= 20
         rect.ury -= 20
         fragment.replace_options.rectangle = rect
-        fragment.replace_options.replace_adjustment_action = (
-             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
-        )
+        fragment.replace_options.replace_adjustment_action = ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
         fragment.text = f"{text} {text}"
         document.save(outfile)
 ```
