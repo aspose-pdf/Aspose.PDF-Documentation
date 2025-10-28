@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /python-net/replace-text-in-pdf/
 description: Learn more about various ways of replacing and removing text from Aspose.PDF for Python via .NET library.
-lastmod: "2025-05-27"
+lastmod: "2025-10-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -24,399 +24,459 @@ You can try to find in replace the text in the document using Aspose.PDF and get
 
 {{% /alert %}}
 
-In order to replace text in all the pages of a PDF document, you first need to use [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) to find the particular phrase you want to replace. After that, you need to go through all the TextFragments to replace the text and change any other attributes. Once you have done that, you only need to save the output PDF using the Save method of the Document object. The following code snippet shows you how to replace text in all pages of PDF document.
+Text replacement is a common requirement when updating or correcting content in existing PDF documents — for instance, changing product names, fixing typos, or updating terminology across multiple pages.
+
+Aspose.PDF for Python via .NET offers a powerful and efficient method for searching and replacing text programmatically through the [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) class.
+
+This example demonstrates how to find all occurrences of a specific phrase (in this case, "Black cat") and replace them with a new phrase ("White dog") throughout an entire PDF document.
+
+1. Specify Search and Replacement Phrases. Set the text you want to find and the text you want it replaced with.
+1. Load the PDF Document.
+1. Create a Text Absorber. A TextFragmentAbsorber is initialized with the search phrase. It scans the document for all instances of the given phrase.
+1. Apply the Absorber to All Pages. This iterates through all pages and collects text fragments matching the phrase.
+1. Replace each found fragment. Every instance of "Black cat" should be changed to "White dog".
+1. Save the Updated PDF.
 
 ```python
 
-    import aspose.pdf as ap
-    import aspose.pydrawing as drawing
+import os
+import aspose.pdf as ap
 
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        # Create TextAbsorber object to find all instances of the input search phrase
-        absorber = ap.text.TextFragmentAbsorber("text")
-        # Accept the absorber for all the pages
+# Global configuration
+DATA_DIR = "your path here"
+
+def replace_text_on_all_pages(infile, outfile):
+    """
+    Replace text on all pages of a PDF document.
+
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
+    search_phrase = "Black cat"
+    replace_phrase = "White dog"
+
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
         document.pages.accept(absorber)
 
-        # Get the extracted text fragments
-        collection = absorber.text_fragments
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
 
-        # Loop through the fragments
-        for text_fragment in collection:
-            # Update text and other properties
-            text_fragment.text = "TEXT"
-            text_fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
-            text_fragment.text_state.font_size = 22
-            text_fragment.text_state.foreground_color = ap.Color.from_rgb(drawing.Color.blue)
-            text_fragment.text_state.background_color = ap.Color.from_rgb(drawing.Color.green)
-
-        # Save the document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
 
 ## Replace Text in particular page region
 
-In order to replace text in a particular page region, first, we need to instantiate TextFragmentAbsorber object, specify page region using 'text_search_options.rectangle' property and then iterate through all the TextFragments to replace the text. Once these operations are completed, we only need to save the output PDF using the 'save' method of the Document object.
+Sometimes, you may need to replace text only within a specific area of a PDF page instead of searching the entire document — for example, updating a header, footer, or a table cell within a known position.
 
-The following code snippet shows you how to replace text in all pages of PDF document:
+The Aspose.PDF for Python via .NET library enables this functionality by utilizing the [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) in conjunction with region-based text searching.
+
+This example demonstrates how to find and replace all occurrences of a target phrase within a defined rectangular region on a specific page.
+
+1. Specify Search and Replacement Phrases.
+1. Load the PDF Document.
+1. Create a Text Absorber for Searching. Initialize a TextFragmentAbsorber to find the desired text.
+1. Restrict the Search Area. The rectangle specifies the x- and y-coordinate limits on the page.
+1. Apply the Absorber to a Specific Page. This performs the search and collects matching text fragments within the specified area.
+1. Replace the Found Text. Every occurrence of 'doc' in the defined region becomes 'DOC'.
+1. Save the Updated PDF.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        # instantiate TextFragment Absorber object
-        absorber = ap.text.TextFragmentAbsorber()
+# Global configuration
+DATA_DIR = "your path here"
 
-        # search text within page bound
+def replace_text_in_particular_page_region(infile, outfile):
+    """
+    Replace text in a particular region of a page.
+
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
+    search_phrase = "doc"
+    replace_phrase = "DOC"
+
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
         absorber.text_search_options.limit_to_page_bounds = True
-
-        # specify the page region for TextSearch Options
-        absorber.text_search_options.rectangle = ap.Rectangle(100, 100, 500, 500, False)
-
-        # search text from first page of PDF file
+        absorber.text_search_options.rectangle = ap.Rectangle(300, 442, 500, 742, True)
         document.pages[1].accept(absorber)
 
-        # iterate through individual TextFragment
-        for text_fragment in absorber.text_fragments:
-            # update text to blank characters
-            text_fragment.text = ""
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
 
-        # Save the document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
 
 ## Replace Text Based on a Regular Expression
 
-If you want to replace some phrases based on regular expression, you first need to find all the phrases matching that particular regular expression using TextFragmentAbsorber. This class is employed to search for text fragments that match a specific pattern or phrase. By setting text_search_options with TextSearchOptions(True), the absorber interprets the input string as a regular expression.
+When working with PDF documents, you may need to replace text that follows a pattern rather than a specific phrase — for example, phone numbers, codes, or date-like formats.
+
+Aspose.PDF for Python via .NET allows you to perform such replacements using regular expressions (regex) with the TextFragmentAbsorber class.
+
+This example demonstrates how to find text patterns (in this case, any text matching the format ####-####, such as 1234-5678) and replace them with a formatted string 'ABC1-2XZY'. It also shows how to customize the font, color, and size of the replaced text.
 
 The following code snippet shows you how to replace text based on a regular expression.
 
+1. Load the PDF Document.
+1. Create a Regex-Based Text Absorber. Initialize the TextFragmentAbsorber with a regular expression pattern.
+1. Enable Regular Expression Mode. The 'True' parameter activates regular expression search mode.
+1. Apply the Absorber to a Page. This scans the page for all text fragments that match the defined regex pattern.
+1. Replace each match with new text and apply custom styling.
+1. Save the Modified Document.
+
 ```python
 
-    import aspose.pdf as ap
-    import aspose.pydrawing as drawing
+import os
+import aspose.pdf as ap
 
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        # Create TextAbsorber object to find all the phrases matching the regular expression
-        absorber = ap.text.TextFragmentAbsorber("\\d{4}-\\d{4}") # Like 1999-2000
+# Global configuration
+DATA_DIR = "your path here"
 
-        # Set text search option to specify regular expression usage
+def replace_text_based_on_regex(infile, outfile):
+    """
+    Replace text based on a regular expression pattern.
+
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(r"\d{4}-\d{4}")
         absorber.text_search_options = ap.text.TextSearchOptions(True)
-
-        # Accept the absorber for a single page
         document.pages[1].accept(absorber)
 
-        # Loop through the fragments
-        for text_fragment in absorber.text_fragments:
-            # Update text and other properties
-            text_fragment.text = "New Phrase"
-            # Set to an instance of an object.
-            text_fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
-            text_fragment.text_state.font_size = 22
-            text_fragment.text_state.foreground_color = ap.Color.from_rgb(drawing.Color.blue)
-            text_fragment.text_state.background_color = ap.Color.from_rgb(drawing.Color.green)
+        for fragment in absorber.text_fragments:
+            fragment.text = "ABC1-2XZY"
+            fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
+            fragment.text_state.font_size = 12
+            fragment.text_state.foreground_color = ap.Color.blue
+            fragment.text_state.background_color = ap.Color.light_green
 
-        # Save the document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
 
 ## Replace fonts in existing PDF file
 
-Aspose.PDF for Python via .NET supports the capability to replace text in PDF document. However, sometimes you have a requirement to only replace the font being used inside PDF document.
+On occasion, you need to standardize or update fonts across a PDF — for instance, replacing an outdated or proprietary font with a more accessible one. The Aspose.PDF for Python via .NET library allows you to detect and replace fonts programmatically, ensuring consistent typography and document compatibility.
 
-TextFragmentAbsorber class is used to search and manipulate text fragments within a PDF. By initializing it with the specified TextEditOptions, it can process all text segments in the document accordingly.
+This example demonstrates how to replace all instances of a specific font (e.g., 'Arial-BoldMT') with another font (e.g., 'Verdana') throughout a PDF document.
 
-The following code snippet shows how to replace the font inside PDF document.
+The following code snippet shows how to replace the font inside PDF document:
+
+1. Open the PDF Document.
+1. Initialize a TextFragmentAbsorber.
+1. Use the Absorber to extract text fragments from every page in the document.
+1. Identify and Replace Fonts. The script checks if a fragment’s current font is 'Arial-BoldMT'. If true, it replaces it with the 'Verdana' font using the FontRepository.find_font() method.
+1. Save the Modified Document.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        # Create text edit options
-        options = ap.text.TextEditOptions(ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS)
-        # Search text fragments and set edit option as remove unused fonts
-        absorber = ap.text.TextFragmentAbsorber(options)
-        # Accept the absorber for all the pages
+# Global configuration
+DATA_DIR = "your path here"
+
+def replace_fonts(infile, outfile):
+    """
+    Replace specific fonts in a PDF document.
+
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
         document.pages.accept(absorber)
-        # Traverse through all the text_fragments
-        for text_fragment in absorber.text_fragments:
-            # If the font name is ArialMT, replace font name with Arial
-            if text_fragment.text_state.font.font_name == "Arial,Bold":
-                text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
 
-        # Save the document
-        document.save(path_outfile)
+        for fragment in absorber.text_fragments:
+            if fragment.text_state.font.font_name == "Arial-BoldMT":
+                fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
+
+        document.save(outfile)
 ```
 
-## Automatically reordering content within a PDF file
+## Remove unused fonts
 
-Aspose.PDF for Python via .NET supports the feature to search and replace text inside the PDF file. However recently some customers encountered issues during text replace when particular TextFragment is replaced with smaller contents and some extra spaces are displayed in resultant PDF or in case the TextFragment is replaced with some longer string, then words overlap existing page contents. So the requirement was to introduce a mechanism that once the text inside a PDF document is replaced, the contents should be re-arranged.
+Over time, PDF documents can accumulate unused or embedded fonts that increase file size and slow down processing. These unused fonts often remain even after text edits or replacements, especially when working with large or complex PDFs.
 
-In order to cater above-stated scenarios, Aspose.PDF for Python via .NET has been enhanced so that no such issues appear when replacing text inside PDF file. The following code snippet shows how to replace text inside PDF file and the page contents should be re-arranged automatically.
+The Aspose.PDF for Python via .NET library provides an efficient way to remove such redundant fonts using the TextEditOptions class. This not only optimizes your document but also ensures it uses only the fonts actually applied to visible text.
+
+The 'remove_unused_fonts()' method is a simple but powerful way to optimize PDF files by removing redundant font data.
+
+This example demonstrates how to:
+
+- Scan a PDF for unused fonts.
+- Remove them safely.
+- Reassign active text fragments to a consistent font (e.g., Times New Roman).
+
+1. Open the PDF Document.
+1. Configure Text Editing Options. This instructs the engine to eliminate any embedded fonts not currently used in the visible text.
+1. Create a Text Absorber with Options. A TextFragmentAbsorber extracts text fragments from the document for editing.
+1. Reassign a Standard Font. Once the absorber has collected all fragments, iterate through them and apply a consistent font.
+1. Save the Cleaned PDF.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def remove_unused_fonts(input_file, output_file):
+    """
+    Remove unused fonts from a PDF document.
+
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
 
     # Open PDF document
-    with ap.Document(path_infile) as document:
-        # Create TextFragment Absorber object with regular expression
-        absorber = ap.text.TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]")
-        document.pages.accept(absorber)
-        # Replace each TextFragment
-        for text_fragment in absorber.text_fragments:
-            # Set font of text fragment being replaced
-            text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial")
-            # Set font size
-            text_fragment.text_state.font_size = 12
-            text_fragment.text_state.foreground_color = ap.Color.navy
-            # Replace the text with larger string than placeholder
-            text_fragment.text = "This is a Larger String for the Testing of this issue"
-        # Save PDF document
-        document.save(path_outfile)
-```
+    document = ap.Document(input_file)
 
-## Rendering Replaceable Symbols during PDF creation
+    # Initialize text edit options to remove unused fonts
+    options = ap.text.TextEditOptions(ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS)
 
-Replaceable symbols are special symbols in a text string that can be replaced with corresponding content at run time.
+    # Create a TextFragmentAbsorber with the specified options
+    absorber = ap.text.TextFragmentAbsorber(options)
+    document.pages.accept(absorber)
 
-- create a TextParagraph object. It will add text with line splitting;
-- add the TextFragment with 'paragraph.append_line';
-- add the TextParagraph with 'text_builder.append_paragraph'.
-
-The next example efficiently creates a PDF document with a structured text paragraph, demonstrating a clean and organized approach to formatting textual content. By incorporating newline markers, it ensures proper spacing in text presentation, making the document more readable. The use of properties such as font selection, size adjustments, and background/foreground colors adds a layer of customization, ensuring the text stands out visually. The process of wrapping the text fragment within a paragraph and defining its position on the page further enhances layout control. Finally, the document is saved, making this snippet a practical example of dynamically generating PDFs with structured content and styling.
-
-```python
-
-    import aspose.pdf as ap
-
-    # Create PDF document
-    with ap.Document() as document:
-        page = document.pages.add()
-
-        # Initialize new TextFragment with text containing required newline markers
-        text_fragment = ap.text.TextFragment("Applicant Name: " + os.linesep + " Joe Smoe")
-
-        # Set text fragment properties if necessary
-        text_fragment.text_state.font_size = 12
+    # Iterate through all TextFragments
+    for text_fragment in absorber.text_fragments:
         text_fragment.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
-        text_fragment.text_state.background_color = ap.Color.light_gray
-        text_fragment.text_state.foreground_color = ap.Color.red
 
-        # Create TextParagraph object
-        paragraph = ap.text.TextParagraph()
-
-        # Add new TextFragment to paragraph
-        paragraph.append_line(text_fragment)
-
-        # Set paragraph position
-        paragraph.position = ap.text.Position(100, 600)
-
-        # Create TextBuilder object
-        text_builder = ap.text.TextBuilder(page)
-        # Add the TextParagraph using TextBuilder
-        text_builder.append_paragraph(paragraph)
-        # Save the document
-        document.save(path_outfile)
+    # Save the updated PDF document
+    document.save(output_file)
 ```
 
-## Replaceable symbols in Header/Footer area
+## Remove Text from PDF
 
-Replaceable symbols can also be placed inside the Header/Footer section of PDF file. 
-Please take a look over the following code snippet for details on how to add replaceable symbol in the footer section.
+There are times when you need to remove text from a PDF document — for example, redacting confidential data, cleaning placeholders, or preparing a layout for new content.
+The Aspose.PDF for Python via .NET library provides a powerful tool for this purpose: the TextFragmentAbsorber class.
+
+Our library supports three approaches to removing text from a PDF:
+
+- From the entire document. This version removes all text across all pages of a PDF.
+- From a specific page. This method targets a single page, allowing precise control when editing multipage PDFs.
+- From a specific rectangular region of a page. This approach limits text removal to a rectangular area within a specific page, defined by coordinates.
+
+Each approach uses the absorber’s 'remove_all_text()' method but applies it at different scopes.
+
+The next example demonstrates removing text from a specific page.
+
+1. Load the PDF Document.
+1. Create an instance of TextFragmentAbsorber, which is designed to capture and manipulate text fragments within a document.
+1. Remove All Text from One Page. The 'absorber.remove_all_text()' method removes all text fragments found on that page, effectively clearing the text layer while leaving images, lines, or vector graphics untouched.
+1. Save the Updated Document.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Create PDF document
-    with ap.Document() as document:
-        page = document.pages.add()
-        margin_info = ap.MarginInfo()
-        margin_info.top = 90
-        margin_info.bottom = 50
-        margin_info.left = 50
-        margin_info.right = 50
-        # Assign the marginInfo instance to Margin property of sec1.PageInfo
-        page.page_info.margin = margin_info
+# Global configuration
+DATA_DIR = "your path here"
 
-        header_footer_first = ap.HeaderFooter()
-        page.header = header_footer_first
-        header_footer_first.margin.left = 50
-        header_footer_first.margin.right = 50
+def remove_all_text_using_absorber(infile, outfile):
+    """
+    Remove all text from a PDF using TextFragmentAbsorber.
 
-        # Instantiate a Text paragraph that will store the content to show as header
-        fragment_1 = ap.text.TextFragment("report title")
-        fragment_1.text_state.font = ap.text.FontRepository.find_font("Arial")
-        fragment_1.text_state.font_size = 16
-        fragment_1.text_state.foreground_color = ap.Color.black
-        fragment_1.text_state.font_style = ap.text.FontStyles.BOLD
-        fragment_1.text_state.horizontal_alignment = ap.HorizontalAlignment.CENTER
-        fragment_1.text_state.line_spacing = 5
-        header_footer_first.paragraphs.add(fragment_1)
-
-        fragment_2 = ap.text.TextFragment("Report_Name")
-        fragment_2.text_state.font = ap.text.FontRepository.find_font("Arial")
-        fragment_2.text_state.foreground_color = ap.Color.black
-        fragment_2.text_state.horizontal_alignment = ap.HorizontalAlignment.CENTER
-        fragment_2.text_state.line_spacing = 5
-        fragment_2.text_state.font_size = 12
-        header_footer_first.paragraphs.add(fragment_2)
-
-        # Create a HeaderFooter object for the section
-        header_footer_foot = ap.HeaderFooter()
-        # Set the HeaderFooter object to odd & even footer
-        page.footer = header_footer_foot
-        header_footer_foot.margin.left = 50
-        header_footer_foot.margin.right = 50
-
-        # Add a text paragraph containing current page number of total number of pages
-        fragment_3 = ap.text.TextFragment("Generated on test date")
-        fragment_4 = ap.text.TextFragment("report name ")
-        fragment_5 = ap.text.TextFragment("Page $p of $P")
-
-        # Instantiate a table object
-        table2 = ap.Table()
-
-        # Add the table in paragraphs collection of the desired section
-        header_footer_foot.paragraphs.add(table2)
-
-        # Set with column widths of the table
-        table2.column_widths = "165 172 165"
-
-        # Create rows in the table and then cells in the rows
-        row3 = table2.rows.add()
-
-        row3.cells.add()
-        row3.cells.add()
-        row3.cells.add()
-
-        # Set the vertical alignment of the text as center aligned
-        row3.cells[0].alignment = ap.HorizontalAlignment.LEFT
-        row3.cells[1].alignment = ap.HorizontalAlignment.CENTER
-        row3.cells[2].alignment = ap.HorizontalAlignment.RIGHT
-
-        row3.cells[0].paragraphs.add(fragment_3)
-        row3.cells[1].paragraphs.add(fragment_4)
-        row3.cells[2].paragraphs.add(fragment_5)
-
-        # Instantiate a table object
-        table = ap.Table()
-
-        table.column_widths = "33% 33% 34%"
-        table.default_cell_padding = ap.MarginInfo()
-        table.default_cell_padding.top = 10
-        table.default_cell_padding.bottom = 10
-
-        # Add the table in paragraphs collection of the desired section
-        page.paragraphs.add(table)
-
-        # Set default cell border using BorderInfo object
-        table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
-
-        # Set table border using another customized BorderInfo object
-        table.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
-
-        table.repeating_rows_count = 1
-
-        # Create rows in the table and then cells in the rows
-        row1 = table.rows.add()
-
-        row1.cells.add("col1")
-        row1.cells.add("col2")
-        row1.cells.add("col3")
-        CRLF = "\r\n"
-        for i in range(10):
-            row = table.rows.add()
-            row.is_row_broken = True
-            for c in range(3):
-                if c == 2:
-                    c1 = row.cells.add(
-                        "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a"
-                        + CRLF
-                        + "daily basis to ensure it contains the most up to date versions of each of our Java components. "
-                        + CRLF
-                        + "daily basis to ensure it contains the most up to date versions of each of our Java components. "
-                        + CRLF
-                        + "Using Aspose.Total for Java developers can create a wide range of applications."
-                    )
-                else:
-                    c1 = row.cells.add("item1" + str(c))
-                c1.margin = ap.MarginInfo()
-                c1.margin.left = 30
-                c1.margin.top = 10
-                c1.margin.bottom = 10
-
-        # Save the document
-        document.save(path_outfile)
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document.pages[1])
+        document.save(outfile)
 ```
 
-## Remove Unused Fonts from PDF File
+## Replace Text and Fitting It into a Rectangle
 
-Aspose.PDF for Python via .NET supports the feature to embed fonts while creating a PDF document, as well as the capability to embed fonts in existing PDF files. From Aspose.PDF for Python via .NET, it also lets you remove duplicate or unused fonts from PDF documents.
+Sometimes, when updating or replacing text in a PDF, the new text may not naturally fit within the original layout boundaries.
+Aspose.PDF for Python provides options to automatically adjust font size and spacing so that the replaced text fits neatly within a defined rectangle, preserving the page layout.
 
-To replace fonts, use the following approach:
-
-1. Call the [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber) class.
-1. Call the TextFragmentAbsorber class TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS parameter. (This removes fonts that have become unused during font replacement).
-1. Set font individually for each text fragment.
-
-The following code snippet replaces font for all text fragments of all document pages and removes unused fonts.
+1. Load the PDF Document.
+1. Use a 'TextFragmentAbsorber' to collect all text fragments on the page.
+1. Select the Fragment to Replace.
+1. Set Rectangle Bounds for Replacement. This ensures the new text stays within the original text fragment’s layout area.
+1. Enable Font Size Adjustment. Automatically shrink the font if the new text is too long.
+1. Adjust Spacing if Needed. Optionally, adjust the spacing between words or letters to fit longer text.
+1. Replace the fragment text.
+1. Save the Updated Document.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        options = ap.text.TextEditOptions(ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS)
-        absorber = ap.text.TextFragmentAbsorber(options)
-        document.pages.accept(absorber)
+# Global configuration
+DATA_DIR = "your path here"
 
-        # Iterate through all the text_fragments
-        for text_fragment in absorber.text_fragments:
-            text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial, Bold")
+def replace_text_and_fit_text_into_rectangle(infile, outfile):
+    """
+    Fit text into a rectangle by adjusting font size.
 
-        # Save the document
-        document.save(path_outfile)
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = fragment.rectangle
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SHRINK_TO_FIT
+        )
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
 ```
 
-## Remove All Text from PDF Document
+## Resize and Shift Text Without Changing Font Size
 
-### Remove All Text using Operators
+When replacing text in a PDF, sometimes you want to fit or reposition the new text within a specific area without modifying the font size.
+Aspose.PDF for Python via .NET provides options to adjust text layout and spacing while keeping the original font size intact.
 
-In some text operation, you need to remove all text from PDF document and for that, you need to set found text as empty string value usually. The point is that changing the text for multitude text fragments invokes a number of checking and text position adjustment operations. They are essential in the text editing scenarios. The difficulty is that you cannot determine how many text fragments will be removed in the scenario where they are processed in a loop.
-
-Therefore, we recommend using another approach for the scenario of removing all text from PDF pages. Please consider the following code snippet that works very fast.
-
-1. Import the Library. The script imports aspose.pdf, a powerful library for handling PDF files programmatically.
-1. Open the PDF Document. The Document(path_infile) method loads the PDF file specified by path_infile.
-1. Iterate Through Pages. A loop runs from 1 to len(document.pages), meaning it processes all pages except the first one (since indexing starts at 1 here, this could be unintentional if the user wants to process the first page).
-1. Select Text Operators. The OperatorSelector is used with TextShowOperator(), which identifies all text elements on a page.
-1. Delete Text. The page.contents.delete(operator_selector.selected) command removes all identified text from the page.
-1. Save the Modified PDF. The processed document is saved using document.save(path_outfile).
+1. Load the PDF Document.
+1. Collect all text fragments on the page using a 'TextFragmentAbsorber'.
+1. Select the Fragment to Modify.
+1. Shift and resize the text rectangle.
+1. Adjust Text Spacing. Enable spacing adjustment to fit the text within the modified rectangle.
+1. Replace the fragment text.
+1. Save the Updated PDF.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Open PDF document
-    with ap.Document(path_infile) as document:
-        # Loop through all pages of PDF Document
-        for i in range(1, len(document.pages)):
-            page = document.pages[i]
-            operator_selector = ap.OperatorSelector(ap.operators.TextShowOperator())
-            # Select all text on the page
-            page.contents.accept(operator_selector)
-            # Delete all text
-            page.contents.delete(operator_selector.selected)
+# Global configuration
+DATA_DIR = "your path here"
 
-        # Save the document
-        document.save(path_outfile)
+def replace_text_and_resize_and_shift_without_changing_font_size(infile, outfile):
+    """
+    Resize and shift text without changing the font.
+
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = fragment.rectangle
+        rect.llx += 50
+        rect.urx -= 50
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
 ```
 
+## Resize and Shift a Paragraph in PDF
+
+When working with PDFs, sometimes you need to replace or expand a paragraph while keeping it visually aligned with the page layout. Aspose.PDF allows you to resize the paragraph’s bounding rectangle and adjust spacing to fit new text, all without changing the font size.
+
+1. Load the PDF Document.
+1. Use 'TextFragmentAbsorber' to collect all text fragments on the page.
+1. Select the Fragment to Modify.
+1. Resize and Shift the Paragraph. Use the page's media box to determine bounds and adjust the rectangle.
+1. Adjust Spacing. This modifies the spacing between words/letters instead of changing font size.
+1. Replace the fragment text.
+1. Save the Modified PDF.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def replace_text_and_resize_and_shift_paragraph(infile, outfile):
+    """
+    Resize and shift a paragraph in the document.
+
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = document.pages[1].media_box
+        rect.llx += 20
+        rect.urx -= 20
+        rect.ury -= 20
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+## Replace Text and Expand Font to Fill a Target Area
+
+When replacing text in a PDF, you want the new content to fill a specific area for better visual impact or alignment. Our library allows you to automatically scale the font size so the text fits a designated rectangle, while also optionally adjusting spacing between words.
+
+1. Load the PDF Document.
+1. Use 'TextFragmentAbsorber' to collect all text fragments on the page.
+1. Select the Fragment to Replace.
+1. Set the Target Rectangle. This rectangle determines the area the text will occupy on the page.
+1. Enable Font Scaling. Automatically scale the font size to fill the rectangle.
+1. Adjust Spacing Between Words. This ensures that longer text can fit the rectangle without shrinking the font unnecessarily.
+1. Replace the fragment text.
+1. Save the Modified PDF.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def replace_text_and_resize_and_expand_font(infile, outfile):
+    """
+    Resize and expand font to fill target area.
+
+    Parameters:
+    - infile (str): Path to input PDF file.
+    - outfile (str): Path to output PDF file.
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = ap.Rectangle(100, 300, 512, 692, True)
+        fragment.replace_options.replace_adjustment_action = (
+             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SCALE_TO_FILL
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
