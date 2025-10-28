@@ -384,9 +384,7 @@ def replace_text_and_resize_and_shift_without_changing_font_size(infile, outfile
         rect.llx += 50
         rect.urx -= 50
         fragment.replace_options.rectangle = rect
-        fragment.replace_options.replace_adjustment_action = (
-             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
-        )
+        fragment.replace_options.replace_adjustment_action = ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
         fragment.text = f"{text} {text}"
         document.save(outfile)
 ```
