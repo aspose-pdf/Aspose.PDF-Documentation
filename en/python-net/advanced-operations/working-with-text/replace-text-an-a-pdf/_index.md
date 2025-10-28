@@ -467,9 +467,7 @@ def replace_text_and_resize_and_expand_font(infile, outfile):
         fragment = absorber.text_fragments[1]
         text = fragment.text
         fragment.replace_options.rectangle = ap.Rectangle(100, 300, 512, 692, True)
-        fragment.replace_options.replace_adjustment_action = (
-             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
-        )
+        fragment.replace_options.replace_adjustment_action = ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
         fragment.replace_options.font_size_adjustment_action = (
             ap.text.TextReplaceOptions.FontSizeAdjustment.SCALE_TO_FILL
         )
