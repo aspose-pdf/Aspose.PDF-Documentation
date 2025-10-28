@@ -425,7 +425,7 @@ def add_text_invisible(outfile):
         "This is the invisible text. "
         "This is the invisible text."
     )
-    text2.text_state.invisibe = True
+    text2.text_state.invisible = True
     page.paragraphs.add(text2)
 
     document.save(outfile)
