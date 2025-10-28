@@ -267,7 +267,7 @@ With our library, you can add Cloud-Style Polygon Annotations in PDFs. Polygon a
             top = 270.0
             right = 420.0
             bottom = 80.0
-            cloud_polygon = ap.annotations.PolygonAnnotation(page,ap.Rectangle(left, top, right, bottom, True),
+            cloud_polygon = ap.annotations.PolygonAnnotation(page, ap.Rectangle(left, top, right, bottom, True),
                                                              [ap.Point(left, top),ap.Point(right, top),
                                                               ap.Point(right, bottom), ap.Point(left, bottom)])
             cloud_polygon.color = ap.Color.blue
