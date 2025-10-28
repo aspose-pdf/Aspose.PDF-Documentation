@@ -376,6 +376,332 @@ def add_text_transparent(outfile):
     document.save(outfile)
 ```
 
+## Add Invisible Text to PDF
+
+This example demonstrates how to create a PDF document containing both visible and invisible text. Invisible text remains part of the document structure but is hidden from view, making it useful for embedding metadata, accessibility tags, or searchable content without affecting layout.
+
+1. Create PDF Document and Page.
+1. Create a text fragment with repeated visible content.
+1. Add a second text fragment and mark it as invisible.
+1. Save the Document.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_text_invisible(outfile):
+    """
+    Creates a PDF document with both visible and invisible text.
+    This function generates a PDF file containing two text fragments:
+    one visible text that will be displayed normally, and one invisible
+    text that will be hidden from view but still present in the document.
+    Args:
+        outfile (str): The file path where the PDF document will be saved.
+    Returns:
+        None: The function saves the PDF to the specified file path.
+    Example:
+        add_text_invisible("output.pdf")
+    """
+
+    # Create PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Add visible text
+    text1 = ap.text.TextFragment(
+        "This is the visible text. "
+        "This is the visible text. "
+        "This is the visible text."
+    )
+    page.paragraphs.add(text1)
+
+    # Create transparent text
+    text2 = ap.text.TextFragment(
+        "This is the invisible text. "
+        "This is the invisible text. "
+        "This is the invisible text."
+    )
+    text2.text_state.invisibe = True
+    page.paragraphs.add(text2)
+
+    document.save(outfile)
+```
+
+## Add Strikeout Text to a PDF
+
+Add strikeout (strikethrough) formatting to a text fragment in a PDF document. Strikeout text is useful for indicating deletions, revisions, or emphasis in annotated documents.
+
+1. Create a new document and page using 'Document()', and 'document.pages.add()' to add a blank page.
+1. Create and Style Text Fragment.
+1. Apply Color and Strikeout Formatting. Set the background to light gray, the text color to red, and enable strikeout.
+1. Position the Text.
+1. Use 'TextBuilder' to append the styled text to the page.
+1. Save the Document.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_strikeout_text(output_file_name):
+    """
+    Add text with strikeout (strikethrough) formatting to a PDF document.
+
+    Creates a PDF document with a text fragment that has strikeout formatting applied.
+    The text appears with a line through it, along with additional styling including
+    background color, foreground color, and bold font style.
+
+    Args:
+        output_file_name (str): The file path where the generated PDF document will be saved.
+
+    Returns:
+        None: The function saves the document to the specified output file.
+
+    Note:
+        - Text: "This is sample strikeout text."
+        - Font: Times New Roman, 12pt, Bold
+        - Background: Light gray
+        - Foreground: Red text
+        - Strikeout: Enabled (line through text)
+        - Position: (100, 600)
+
+    Example:
+        >>> add_strikeout_text("strikeout_text.pdf")
+        # Creates a PDF with strikethrough text formatting
+    """
+    # Create PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Create text fragment
+    text_fragment = ap.text.TextFragment("This is sample strikeout text.")
+    # Set text properties
+    text_fragment.text_state.font_size = 12
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+    text_fragment.text_state.background_color = ap.Color.light_gray
+    text_fragment.text_state.foreground_color = ap.Color.red
+    text_fragment.text_state.strike_out = True
+    text_fragment.text_state.font_style = ap.text.FontStyles.BOLD
+    text_fragment.position = ap.text.Position(100, 600)
+
+    # Create TextBuilder object
+    text_builder = ap.text.TextBuilder(page)
+    text_builder.append_text(text_fragment)
+
+    # Save PDF document
+    document.save(output_file_name)
+```
+
+## Add Text with Border Styling in PDF
+
+Aspose.PDF library shows how to create a PDF document containing a styled text fragment with a visible border. The method applies background and foreground colors, font settings, and a stroke (border) around the text rectangle to enhance visual emphasis.
+
+1. Create a PDF Document and a Page.
+1. Create and Position Text Fragment. Add a text fragment with the message and set its position.
+1. Apply Text Styling. Set font to Times New Roman, size 12. Apply a light gray background and red foreground (text) color.
+1. Configure Border Styling.
+1. Add Text to Page. Use TextBuilder to append the styled text to the page.
+1. Save the Document.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_text_border(output_file_name):
+    """
+    Add text with border styling to a PDF document.
+
+    Creates a PDF document with a text fragment that has border styling applied.
+    The text includes background color, foreground color, and a configurable
+    border (stroke) around the text rectangle.
+
+    Args:
+        output_file_name (str): The file path where the generated PDF document will be saved.
+
+    Returns:
+        None: The function saves the document to the specified output file.
+
+    Note:
+        - Text: "This is sample text with border."
+        - Font: Times New Roman, 12pt
+        - Background: Light gray
+        - Foreground: Red text
+        - Border: Dark red stroke around text rectangle
+        - Position: (10, 700)
+        - Border is only visible when draw_text_rectangle_border is True
+
+    Example:
+        >>> add_text_border("bordered_text.pdf")
+        # Creates a PDF with bordered text styling
+    """
+    # Create PDF document
+    document = ap.Document()
+    # Get particular page
+    page = document.pages.add()
+    # Create text fragment
+    text_fragment = ap.text.TextFragment("This is sample text with border.")
+    text_fragment.position = ap.text.Position(10, 700)
+
+    # Set text properties
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("Times New Roman")
+    text_fragment.text_state.font_size = 12
+    text_fragment.text_state.background_color = ap.Color.light_gray
+    text_fragment.text_state.foreground_color = ap.Color.red
+    # Set StrokingColor property for drawing border (stroking) around text rectangle.
+    # Note: This only affects the border if draw_text_rectangle_border is set to True.
+    text_fragment.text_state.stroking_color = ap.Color.dark_red
+    # Enable drawing of the text rectangle border
+    text_fragment.text_state.draw_text_rectangle_border = True
+
+    text_builder = ap.text.TextBuilder(page)
+    text_builder.append_text(text_fragment)
+
+    # Save PDF document
+    document.save(output_file_name)
+```
+
+## Applying an Axial Gradient to Text in a PDF
+
+Aspose.PDF for Python via .NET demonstrates how to apply a linear gradient effect to text in a PDF document. The axial gradient smoothly transitions from red to blue throughout the text, creating a visually striking heading. This technique is ideal for stylized titles, branding, or decorative elements in PDF document layouts.
+
+1. Initialize a new document and add a blank page.
+1. Create and Style Text Fragment. Add title, set position, font, and size.
+1. Apply Axial Gradient Shading with 'GradientAxialShading'. Set the foreground color using GradientAxialShading from red to blue.
+1. Add Underline Styling.
+1. Insert the styled text fragment into the page.
+1. Save the Document.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def apply_gradient_axial_shading_to_text(output_file_name):
+    """
+    Apply axial gradient shading to text in a PDF document.
+
+    Creates a PDF document with large title text that has an axial (linear) gradient
+    effect applied. The gradient transitions from red to blue in a linear fashion
+    across the text. This demonstrates advanced text styling with gradient effects.
+
+    Args:
+        output_file_name (str): The file path where the generated PDF document will be saved.
+
+    Returns:
+        None: The function saves the document to the specified output file.
+
+    Note:
+        - Text: "PDF TITLE"
+        - Font: Arial Bold, 36pt
+        - Position: (100, 600)
+        - Gradient: Linear gradient from red to blue
+        - Additional styling: Underlined text
+        - Uses GradientAxialShading for linear gradient effect
+
+    Example:
+        >>> apply_gradient_axial_shading_to_text("gradient_axial.pdf")
+        # Creates a PDF with linear gradient text effect
+    """
+    # Create PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    text_fragment = ap.text.TextFragment("PDF TITLE")
+    text_fragment.position = ap.text.Position(100, 600)
+    text_fragment.text_state.font_size = 36
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial Bold")
+
+    text_fragment.text_state.foreground_color = ap.Color()
+    text_fragment.text_state.foreground_color.pattern_color_space = (
+        ap.drawing.GradientAxialShading(ap.Color.red, ap.Color.blue)
+    )
+    text_fragment.text_state.underline = True
+
+    page.paragraphs.add(text_fragment)
+    document.save(output_file_name)
+```
+
+## Applying an Radial Gradient to Text in a PDF
+
+A radial gradient creates a circular color transition that radiates outward from the center of the text, offering a visually dynamic styling option for titles, headers, or decorative elements.
+
+1. Initialize a new document and add a blank page.
+1. Create and Style Text Fragment. Add title, set position, font, and size.
+1. Apply Radial Gradient with 'GradientRadialShading'. Set the foreground color using GradientRadialShading from red to blue.
+1. Add Underline Styling.
+1. Insert the styled text fragment into the page.
+1. Save the Document.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def apply_gradient_radial_shading_to_text(output_file_name):
+    """
+    Apply radial gradient shading to text in a PDF document.
+
+    Creates a PDF document with large title text that has a radial (circular) gradient
+    effect applied. The gradient radiates from the center outward, transitioning from
+    red to blue. This demonstrates advanced text styling with radial gradient effects.
+
+    Args:
+        output_file_name (str): The file path where the generated PDF document will be saved.
+
+    Returns:
+        None: The function saves the document to the specified output file.
+
+    Note:
+        - Text: "PDF TITLE"
+        - Font: Arial Bold, 36pt
+        - Position: (100, 600)
+        - Gradient: Radial gradient from red to blue
+        - Additional styling: Underlined text
+        - Uses GradientRadialShading for circular gradient effect
+
+    Example:
+        >>> apply_gradient_radial_shading_to_text("gradient_radial.pdf")
+        # Creates a PDF with radial gradient text effect
+    """
+    # Create PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    text_fragment = ap.text.TextFragment("PDF TITLE")
+    text_fragment.position = ap.text.Position(100, 600)
+    text_fragment.text_state.font_size = 36
+    text_fragment.text_state.font = ap.text.FontRepository.find_font("Arial Bold")
+
+    # Apply radial gradient shading (red to blue)
+    text_fragment.text_state.foreground_color = ap.Color()
+    text_fragment.text_state.foreground_color.pattern_color_space = (
+        ap.drawing.GradientRadialShading(ap.Color.red, ap.Color.blue)
+    )
+    text_fragment.text_state.underline = True
+
+    page.paragraphs.add(text_fragment)
+    document.save(output_file_name)
+```
+
+![Apply radial gradient shading](gradient_radial_shading.png)
+
 ## Text Paragraphs and Formatting
 
 ### Add Text using TextParagraph
