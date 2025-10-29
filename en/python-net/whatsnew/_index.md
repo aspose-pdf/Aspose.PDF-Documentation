@@ -50,6 +50,7 @@ Add Tagged Images from a Stream in PDF. 25.9 version supports enhanced accessibi
 
 ```python
 
+import io
 import aspose.pdf as ap
 
 def add_tagged_image_from_stream(self, image_file, outfile):
