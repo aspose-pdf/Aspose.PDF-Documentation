@@ -25,14 +25,16 @@ If we create a document from scratch we need to follow certain steps:
 1. Add header to the page [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
 1. Create a [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) for description. For the description we will use Arial font with font size 24pt and center alignment.
 1. Add (description) to the page Paragraphs.
-1. Create a table, add table properties.
+1. Create and Style Table. Set column width, borders, padding, and font.
 1. Add (table) to the page [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
 1. Save a document "Complex.pdf".
 
 ```python
 
-    from datetime import timedelta
-    import aspose.pdf as apdf
+from datetime import timedelta
+import aspose.pdf as apdf
+
+def run_complex(self):
 
     # Initialize document object
     document = apdf.Document()
@@ -40,30 +42,27 @@ If we create a document from scratch we need to follow certain steps:
     page = document.pages.add()
 
     # Add image
-    imageFileName = self.dataDir + "logo.png"
-    page.add_image(imageFileName, apdf.Rectangle(20, 730, 120, 830))
+    imageFileName = self.data_dir + "logo.png"
+    page.add_image(imageFileName, apdf.Rectangle(20, 730, 120, 830, True))
 
     # Add Header
-    header = apdf.TextFragment("New ferry routes in Fall 2020")
-    header.TextState.Font = apdf.text.FontRepository.find_font("Arial")
-    header.TextState.FontSize = 24
-    header.HorizontalAlignment = apdf.HorizontalAlignment.CENTER
-    header.Position = apdf.Position(130, 720)
-    page.Paragraphs.Add(header)
+    header = apdf.text.TextFragment("New ferry routes in Fall 2020")
+    header.text_state.font = apdf.text.FontRepository.find_font("Arial")
+    header.text_state.font_size = 24
+    header.horizontal_alignment = apdf.HorizontalAlignment.CENTER
+    header.position = apdf.text.Position(130, 720)
+    page.paragraphs.add(header)
 
     # Add description
     descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. \
     Ferry service is operating at half capacity and on a reduced schedule. Expect lineups."
-    description = apdf.TextFragment(descriptionText)
-    description.TextState.Font = apdf.text.FontRepository.find_font(
+    description = apdf.text.TextFragment(descriptionText)
+    description.text_state.font = apdf.text.FontRepository.find_font(
         "Times New Roman"
     )
-    description.TextState.FontSize = 14
-    description.HorizontalAlignment = apdf.HorizontalAlignment.LEFT
-    page.Paragraphs.Add(description)
-
-    # Add table
-    table = apdf.Table()
+    description.text_state.font_size = 14
+    description.horizontal_alignment = apdf.HorizontalAlignment.LEFT
+    page.paragraphs.add(description)
 
     # Add table
     table = apdf.Table()
@@ -106,5 +105,5 @@ If we create a document from scratch we need to follow certain steps:
 
     page.paragraphs.add(table)
 
-    document.save(self.dataDir + "Complex.pdf")
+    document.save(self.data_dir + "Complex.pdf")
 ```

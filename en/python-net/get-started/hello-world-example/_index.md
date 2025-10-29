@@ -26,14 +26,16 @@ Below code snippet follows these steps:
 1. Set Text Colors
 1. Create a Text Builder
 1. Add [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) to the Page
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) resultant PDF document
+1. [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) resultant PDF document
 
 Following code snippet is a "Hello World" program to exhibit working of Aspose.PDF for Python via .NET API.
 
 ```python
 
-    from datetime import timedelta
-    import aspose.pdf as apdf
+from datetime import timedelta
+import aspose.pdf as apdf
+
+def run_simple(self):
 
     # Initialize document object
     document = apdf.Document()
@@ -43,12 +45,12 @@ Following code snippet is a "Hello World" program to exhibit working of Aspose.P
     textFragment = apdf.text.TextFragment("Hello, world!")
     textFragment.position = apdf.text.Position(100, 600)
 
-    textFragment.TextState.FontSize = 12
-    textFragment.TextState.Font = apdf.apdf.text.FontRepository.find_font(
+    textFragment.text_state.font_size = 12
+    textFragment.text_state.font = apdf.text.FontRepository.find_font(
         "TimesNewRoman"
     )
-    textFragment.TextState.background_color = apdf.Color.blue
-    textFragment.TextState.foreground_color = apdf.Color.yellow
+    textFragment.text_state.background_color = apdf.Color.blue
+    textFragment.text_state.foreground_color = apdf.Color.yellow
 
     # Create TextBuilder object
     textBuilder = apdf.text.TextBuilder(page)
@@ -56,5 +58,5 @@ Following code snippet is a "Hello World" program to exhibit working of Aspose.P
     # Append the text fragment to the PDF page
     textBuilder.append_text(textFragment)
 
-    document.save("HelloWorld_out.pdf")
+    document.save(self.data_dir + "HelloWorld_out.pdf")
 ```
