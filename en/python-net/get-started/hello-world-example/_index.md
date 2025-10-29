@@ -26,35 +26,36 @@ Below code snippet follows these steps:
 1. Set Text Colors
 1. Create a Text Builder
 1. Add [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) to the Page
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) resultant PDF document
+1. [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) resultant PDF document
 
-Following code snippet is a "Hello World" program to exhibit working of Aspose.PDF for Python via .NET API.
+The following code snippet is a "Hello World" program that demonstrates the functionality of Aspose.PDF for Python via the .NET API.
 
 ```python
 
-    from datetime import timedelta
-    import aspose.pdf as apdf
+from datetime import timedelta
+import aspose.pdf as ap
 
+def run_simple(self):
     # Initialize document object
-    document = apdf.Document()
+    document = ap.Document()
     # Add page
     page = document.pages.add()
     # Add text to new page
-    textFragment = apdf.text.TextFragment("Hello, world!")
-    textFragment.position = apdf.text.Position(100, 600)
+    textFragment = ap.text.TextFragment("Hello, world!")
+    textFragment.position = ap.text.Position(100, 600)
 
-    textFragment.TextState.FontSize = 12
-    textFragment.TextState.Font = apdf.apdf.text.FontRepository.find_font(
+    textFragment.text_state.font_size = 12
+    textFragment.text_state.font = ap.text.FontRepository.find_font(
         "TimesNewRoman"
     )
-    textFragment.TextState.background_color = apdf.Color.blue
-    textFragment.TextState.foreground_color = apdf.Color.yellow
+    textFragment.text_state.background_color = ap.Color.blue
+    textFragment.text_state.foreground_color = ap.Color.yellow
 
     # Create TextBuilder object
-    textBuilder = apdf.text.TextBuilder(page)
+    textBuilder = ap.text.TextBuilder(page)
 
     # Append the text fragment to the PDF page
     textBuilder.append_text(textFragment)
 
-    document.save("HelloWorld_out.pdf")
+    document.save(self.data_dir + "HelloWorld_out.pdf")
 ```
