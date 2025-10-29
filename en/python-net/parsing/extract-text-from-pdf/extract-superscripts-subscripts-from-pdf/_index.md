@@ -2,142 +2,93 @@
 title: Extract SuperScripts and SubScripts text from PDF
 linktitle: Extract SuperScripts and SubScripts 
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
-url: /net/extract-superscripts-subscripts-from-pdf/
-description: This article describes various ways to extract SuperScripts and SubScripts text from PDF using Aspose.PDF in C#. 
-lastmod: "2022-10-07"
+url: /python-net/extract-superscripts-subscripts-from-pdf/
+description: This article describes various ways to extract SuperScripts and SubScripts text from PDF using Aspose.PDF in Python. 
+lastmod: "2025-11-07"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Extract SuperScripts and SubScripts text from PDF",
-    "alternativeHeadline": "Extract SuperScripts and SubScripts from PDF Documents",
-    "abstract": "The new feature of extracting SuperScripts and SubScripts text from PDF documents using the Aspose.PDF for .NET library allows users to accurately retrieve specialized text formatting found in technical documents. This enhancement simplifies the process of handling mathematical expressions and chemical specifications by providing developers with tools to manipulate these textual elements easily",
-    "author": {
-        "@type": "Person",
-        "name": "Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "wordcount": "323",
-    "proficiencyLevel": "Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF for .NET",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/net/extract-superscripts-subscripts-from-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/net/extract-superscripts-subscripts-from-pdf/"
-    },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
-}
-</script>
 
 ## Extract SuperScripts and SubScripts Text
 
-Extracting text from a PDF document is a common thing. However, in such text, when extracted, the **SuperScripts and SubScripts** contained in them, which are typical for technical documents and articles, may not be displayed. A SubScript or SuperScript is a character, number, or letter placed below or above a regular line of text. It is usually smaller than the rest of the text.
-
 **SubScripts and SuperScripts** are most often used in formulas, mathematical expressions, and specifications of chemical compounds. It is tough to edit them when there can be many of them in the same passage of text.
-In one of the latest releases, the **Aspose.PDF for .NET** library added support for extracting SuperScripts and SubScripts text from PDF.
+In one of the latest releases, the **Aspose.PDF for Python via .NET** library added support for extracting SuperScripts and SubScripts text from PDF.
 
-Use the **TextFragmentAbsorber** class and you can already do anything with the found text, i.e., you can simply use the entire text. Try the next code snippet:
+### Simple Text Extraction
 
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+Extract all text (including superscripts and subscripts) from a specific page of a PDF document using 'TextFragmentAbsorber'.
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractSuperScriptsAndSubScripts()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf();
+1. Load the PDF document.
+1. Instantiate a 'TextFragmentAbsorber()', which supports detection of superscript/subscript text as per version capabilities.
+1. Call 'document.pages[page_number].accept(absorber)' to scan only the given page.
+1. Retrieve the extracted text via 'absorber.text'.
+1. Write the text into the output file using standard file I/O.
+1. Close the document to release resources.
 
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "SuperScriptExample.pdf"))
-    {
-        // Create an absorber
-        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
-        document.Pages[1].Accept(absorber);
-        using (StreamWriter writer = new StreamWriter(dataDir + "SuperScriptExample_out.txt"))
-        {
-            // Write the extracted text in text file
-            writer.WriteLine(absorber.Text);
-        }
-    }
-}
+```python
+
+import os
+import aspose.pdf as ap
+
+def extract_super_sub_text(infile, outfile, page_number=1):
+    """
+    Extract text (including superscript/subscript) from a specified page of a PDF and write to a text file.
+    Args:
+        infile (str): Path to input PDF file.
+        outfile (str): Path to output text file.
+        page_number (int): 1‑based index of the page to extract.
+    """
+    document = ap.Document(infile)
+    try:
+        absorber = ap.text.TextFragmentAbsorber()
+        # Accept only the specific page for extraction
+        document.pages[page_number].accept(absorber)
+        extracted_text = absorber.text
+        with open(outfile, "w", encoding="utf‑8") as f:
+            f.write(extracted_text)
+    finally:
+        document.close()
 ```
 
-Or use **TextFragments** separately and do all sorts of manipulations with them, for example, sort by coordinates or by size.
+### Iterate through TextFragments to Detect Superscript/Subscript
 
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+Loop through each text fragment in a page, check whether it is superscript or subscript, and process accordingly.
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractSuperScriptsAndSubScriptsWithTextFragments()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf();
+1. Load the PDF document.
+1. Create 'TextFragmentAbsorber()' and accept it on the chosen page.
+1. Access 'absorber.text_fragments', which returns a collection of fragments found on that page.
+1. For each fragment:
+ - Retrieve 'fragment.text'.
+ - Check 'fragment.text_state.superscript' and 'fragment.text_state.subscript'.
+ - Write a line to the output file with fragment text and flags.
+1. Close the file and document.
 
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "SuperScriptExample.pdf"))
-    {
-        // Create an absorber
-        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
-        document.Pages[1].Accept(absorber);
-        using (StreamWriter writer = new StreamWriter(dataDir + "SuperScriptExample_out.txt"))
-        {
-            foreach (var textFragment in absorber.TextFragments)
-            {
-                // Write the extracted text in text file
-                writer.Write(textFragment.Text);
-            }
+```python
 
-        }
-    }
-}
+import os
+import aspose.pdf as ap
+
+def extract_super_sub_details(infile, outfile, page_number=1):
+    """
+    Extract details of each text fragment on a page, identifying superscript and subscript items.
+    Args:
+        infile (str): Path to input PDF file.
+        outfile (str): Path to output text file.
+        page_number (int): 1‑based page index.
+    """
+    document = ap.Document(infile)
+    try:
+        absorber = ap.text.TextFragmentAbsorber()
+        document.pages[page_number].accept(absorber)
+        
+        with open(outfile, "w", encoding="utf‑8") as f:
+            for fragment in absorber.text_fragments:
+                text = fragment.text
+                is_sup = fragment.text_state.superscript  # True if superscript
+                is_sub = fragment.text_state.subscript    # True if subscript
+                f.write(f"Text: '{text}' | Superscript: {is_sup} | Subscript: {is_sub}\n")
+    finally:
+        document.close()
 ```
-
