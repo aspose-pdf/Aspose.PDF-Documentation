@@ -21,7 +21,7 @@ The 25.9 release introduces improved accessibility, enhanced compliance support,
 
 ### Convert PDF to PDF/E-1 Format
 
-In the 25.9 version of the Aspose.PDF for Python library, PDF/E-1 format conversion is available. You can find more information about this format on the (Wikipedia pages)[https://en.wikipedia.org/wiki/PDF/E]. 
+In the 25.9 version of the Aspose.PDF for Python library, PDF/E-1 format conversion is available. You can find more information about this format on the [(File Formats Docs)[https://docs.fileformat.com/pdf/e/]. 
 
 ```python
 
