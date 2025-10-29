@@ -50,6 +50,7 @@ Add Tagged Images from a Stream in PDF. 25.9 version supports enhanced accessibi
 
 ```python
 
+import io
 import aspose.pdf as ap
 
 def add_tagged_image_from_stream(self, image_file, outfile):
@@ -321,6 +322,7 @@ Automatically scale text to fit inside a defined rectangle. When updating or exp
 
 ```python
 
+import re
 import aspose.pdf as ap
 
 def fit_text_into_rectangle(self, infile, outfile):
@@ -555,7 +557,6 @@ Retrieve embedded certificates using 'extract_certificate()'.
 import aspose.pdf as ap
 
 def extract_certificate(self, infile):
-
     path_infile = self.data_dir + infile
 
     # Open PDF document
@@ -580,10 +581,10 @@ import aspose.pdf as ap
 
 def create_ordered_list(self, outfile):
 
-path_outfile = self.data_dir + outfile
+    path_outfile = self.data_dir + outfile
 
-# Create or open PDF document
-with ap.Document() as document:
+    # Create or open PDF document
+    with ap.Document() as document:
     content = document.tagged_content
     root_element = content.root_element
     content.set_language("en-US")
