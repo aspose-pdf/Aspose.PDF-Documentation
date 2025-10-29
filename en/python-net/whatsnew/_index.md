@@ -321,6 +321,7 @@ Automatically scale text to fit inside a defined rectangle. When updating or exp
 
 ```python
 
+import re
 import aspose.pdf as ap
 
 def fit_text_into_rectangle(self, infile, outfile):
