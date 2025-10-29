@@ -33,7 +33,7 @@ Following code snippet is a "Hello World" program to exhibit working of Aspose.P
 ```python
 
 from datetime import timedelta
-import aspose.pdf as apdf
+import aspose.pdf as ap
 
 def run_simple(self):
 

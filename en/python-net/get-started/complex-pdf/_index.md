@@ -32,7 +32,7 @@ If we create a document from scratch we need to follow certain steps:
 ```python
 
 from datetime import timedelta
-import aspose.pdf as apdf
+import aspose.pdf as ap
 
 def run_complex(self):
 
