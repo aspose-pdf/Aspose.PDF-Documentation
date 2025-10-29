@@ -93,8 +93,10 @@ Automatically generate accessible tables of contents (TOC) in tagged PDFs. Creat
 import aspose.pdf as ap
 
 def create_pdf_with_toc_page(self, outfile):
-    """ Supports generating fully accessible Tagged Table of Contents (TOC) pages with proper navigation to
-    corresponding sections, ensuring PDF/UA-1 compliance."""
+    """
+    Supports generating fully accessible Tagged Table of Contents (TOC) pages with proper navigation to
+    corresponding sections, ensuring PDF/UA-1 compliance.
+    """
 
     path_outfile = self.data_dir + outfile
 
