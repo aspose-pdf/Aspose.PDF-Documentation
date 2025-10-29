@@ -36,7 +36,6 @@ from datetime import timedelta
 import aspose.pdf as ap
 
 def run_simple(self):
-
     # Initialize document object
     document = ap.Document()
     # Add page

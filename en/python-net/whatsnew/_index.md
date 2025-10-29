@@ -53,27 +53,27 @@ Add Tagged Images from a Stream in PDF. 25.9 version supports enhanced accessibi
 import aspose.pdf as ap
 
 def add_tagged_image_from_stream(self, image_file, outfile):
-"""Enhanced Accessibility for Tagged Images: possible to add alternative text to images loaded from a memory stream."""
+    """Enhanced Accessibility for Tagged Images: possible to add alternative text to images loaded from a memory stream."""
 
-path_image = self.data_dir + image_file
-path_outfile = self.data_dir + outfile
+    path_image = self.data_dir + image_file
+    path_outfile = self.data_dir + outfile
 
-# Create the PDF document
-with ap.Document() as document:
+    # Create the PDF document
+    with ap.Document() as document:
 
-    page = document.pages.add()
-    # Tag the document for accessibility
-    tagged_content = document.tagged_content
-    tagged_content.set_title("Tagged Image from Stream")
-    tagged_content.set_language("en-US")
-    # Add an image from a stream to the page
-    image_stream = io.FileIO(path_image, "r")
-    page.add_image(image_stream, ap.Rectangle(100, 600, 300, 800, True), None, True)
-    # Get the added image and set its alternative text
-    img = page.resources.images[1]
-    img.try_set_alternative_text("Aspose Logo", page)
-    # Save the document
-    document.save(path_outfile)
+        page = document.pages.add()
+        # Tag the document for accessibility
+        tagged_content = document.tagged_content
+        tagged_content.set_title("Tagged Image from Stream")
+        tagged_content.set_language("en-US")
+        # Add an image from a stream to the page
+        image_stream = io.FileIO(path_image, "r")
+        page.add_image(image_stream, ap.Rectangle(100, 600, 300, 800, True), None, True)
+        # Get the added image and set its alternative text
+        img = page.resources.images[1]
+        img.try_set_alternative_text("Aspose Logo", page)
+        # Save the document
+        document.save(path_outfile)
 ```
 
 ## What's new in Aspose.PDF 25.8
@@ -139,7 +139,82 @@ Resize PDF pages while preserving layout and proportionally scaling content. Whe
 import aspose.pdf as ap
 
 def resize_page(self, document, page_number, target_width, target_height, width, height, outfile):
-    """Page content scaling and resizing with the PdfFileEditor.ResizeContents API"""
+    """
+    Resize and scale page content using PdfFileEditor.ResizeContents.
+
+    A high-level helper that scales and/or resizes the rendered content streams of one or more pages
+    without performing a full content reflow. Use this to make existing page contents larger or smaller,
+    fit content into a different page box, or uniformly scale content for printing or display.
+
+    Parameters (recommended)
+    ------------------------
+    pdf_editor : Aspose.Pdf.Facades.PdfFileEditor
+        The PdfFileEditor instance that exposes the ResizeContents API.
+    page_numbers : int | Iterable[int] | slice, optional
+        Page index (1-based) or collection of page indices to process. If omitted or None, all pages
+        in the document are processed.
+    scale : float, optional
+        Uniform scale factor to apply to content (e.g., 0.5 reduces content to 50%). Mutually exclusive
+        with target_width/target_height unless keep_aspect_ratio is explicitly handled.
+    target_width : float, optional
+        Desired content width in PDF points (1 point = 1/72 inch). When provided, content will be scaled
+        to match this width (subject to keep_aspect_ratio and fit_mode).
+    target_height : float, optional
+        Desired content height in PDF points.
+    keep_aspect_ratio : bool, default True
+        If True, preserve the original aspect ratio when scaling to a target width or height.
+    fit_mode : {'fit', 'fill', 'stretch'}, default 'fit'
+        'fit'   — scale so content fits entirely inside the target box, preserving aspect ratio;
+        'fill'  — scale so the target box is completely covered (may crop content);
+        'stretch' — scale independently in X and Y (may distort).
+    margins : tuple(float, float, float, float), optional
+        (left, top, right, bottom) margins in points to preserve inside the target box.
+    preserve_annotations : bool, default True
+        When True, attempt to preserve annotations/forms/interactive elements; some annotations may
+        require special handling after scaling.
+    preserve_transparency : bool, default True
+        Preserve transparency settings of page contents where possible.
+
+    Returns
+    -------
+    bool
+        True if the operation completed successfully. Some implementations operate in-place and may
+        return a status rather than a new document object.
+
+    Raises
+    ------
+    ValueError
+        If parameters are invalid (e.g., scale <= 0 or both scale and conflicting target dimensions).
+    IOError
+        If input/output streams cannot be read or written.
+    PdfProcessingError
+        If the PDF content streams cannot be interpreted or transformed by the editor.
+
+    Notes
+    -----
+    - All size and margin values are in PDF points (1/72 inch). Convert from inches or millimeters
+      before calling if necessary.
+    - This API scales content streams and their transform matrices; it does not reflow text or rebuild
+      page layout. Text encoded as vectors will scale; text drawn by layout engines may not reflow.
+    - Complex page objects such as XObjects, forms, and annotations may require additional post-processing.
+    - For raster-output use-cases (images/screenshots), consider exporting to an image at a target DPI
+      instead of scaling content streams.
+    - When targeting printing, compute target page size in points from the physical paper size and DPI.
+
+    Example (conceptual)
+    --------------------
+    # Scale pages 1-3 to 50%:
+    editor = PdfFileEditor(input_stream, output_stream)
+    editor.ResizeContents(page_numbers=[1,2,3], scale=0.5)
+    editor.Save()
+
+    # Fit page content into a letter-sized box while preserving aspect ratio:
+    editor.ResizeContents(page_numbers=None, target_width=612, target_height=792, fit_mode='fit')
+
+    See also
+    --------
+    PdfFileEditor.ResizeContents : Low-level API that performs content scaling and transform adjustments.
+    """
 
     path_outfile = self.data_dir + outfile
 
@@ -602,15 +677,14 @@ Validate digital signatures using external public key certs.
 import aspose.pdf as ap
 
 def verify_with_public_key_certificate1(self, certificate, infile):
+    path_infile = self.data_dir + infile
 
-path_infile = self.data_dir + infile
-
-# Create an instance of PdfFileSignature for working with signatures in the document
-with ap.facades.PdfFileSignature(path_infile) as file_sign:
-    # Get a list of signatures
-    signature_names = file_sign.get_signature_names(True)
-    # Verify the signature with the given name.
-    return file_sign.verify_signature(signature_names[0], certificate)
+    # Create an instance of PdfFileSignature for working with signatures in the document
+    with ap.facades.PdfFileSignature(path_infile) as file_sign:
+        # Get a list of signatures
+        signature_names = file_sign.get_signature_names(True)
+        # Verify the signature with the given name.
+        return file_sign.verify_signature(signature_names[0], certificate)
 ```
 
 ### Convert Dynamic XFA Forms to AcroForm PDFs
@@ -622,19 +696,18 @@ Standardize XFA forms with 'ignore_needs_rendering'.
 import aspose.pdf as ap
 
 def convert_xfa_form_with_ignore_needs_rendering(self, infile, outfile):
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-
-# Load dynamic XFA form
-with ap.Document(path_infile) as document:
-    # check if XFA is present & if rendering should be overwritten
-    if not document.form.needs_rendering and document.form.has_xfa:
-        document.form.ignore_needs_rendering = True
-    # Set the form fields type as standard AcroForm
-    document.form.type = ap.forms.FormType.STANDARD
-    # Save the resultant PDF
-    document.save(path_outfile)
+    # Load dynamic XFA form
+    with ap.Document(path_infile) as document:
+        # check if XFA is present & if rendering should be overwritten
+        if not document.form.needs_rendering and document.form.has_xfa:
+            document.form.ignore_needs_rendering = True
+        # Set the form fields type as standard AcroForm
+        document.form.type = ap.forms.FormType.STANDARD
+        # Save the resultant PDF
+        document.save(path_outfile)
 ```
 
 ### Font Replacement in PDF - XPS Conversion
@@ -646,20 +719,19 @@ Substitute missing fonts with a default fallback (e.g., “Courier New”).
 import aspose.pdf as ap
 
 def replace_font_when_converting_pdf_to_xps(self, infile, outfile):
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-
-# Create XpsSaveOptions instance
-xps_save_options = ap.XpsSaveOptions()
-# use_embedded_true_type_fonts option specifies whether to use embedded TrueType fonts
-xps_save_options.use_embedded_true_type_fonts = False
-# The specified default font will be used if the embedded font name cannot be found in the system
-xps_save_options.default_font = "Courier New"
-# Open PDF document
-doc = ap.Document(path_infile)
-# Save the resultant XPS
-doc.save(path_outfile, xps_save_options)
+    # Create XpsSaveOptions instance
+    xps_save_options = ap.XpsSaveOptions()
+    # use_embedded_true_type_fonts option specifies whether to use embedded TrueType fonts
+    xps_save_options.use_embedded_true_type_fonts = False
+    # The specified default font will be used if the embedded font name cannot be found in the system
+    xps_save_options.default_font = "Courier New"
+    # Open PDF document
+    doc = ap.Document(path_infile)
+    # Save the resultant XPS
+    doc.save(path_outfile, xps_save_options)
 ```
 
 ## What's new in Aspose.PDF 25.4
@@ -673,27 +745,26 @@ Convert PDFs to PDF/A-1b with automatic logical structure creation for improved 
 import aspose.pdf as ap
 
 def convert_to_pdfa_with_automatic_tagging(self, infile, outfile, outlogfile):
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+    path_outlogfile = self.data_dir + outlogfile
 
-path_infile = self.data_dir + infile
-path_outfile = self.data_dir + outfile
-path_outlogfile = self.data_dir + outlogfile
-
-# Open PDF document
-with ap.Document(path_infile) as document:
-    # Create conversion options
-    options = ap.PdfFormatConversionOptions(path_outlogfile, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE)
-    # Create auto-tagging settings
-    # aspose.pdf.AutoTaggingSettings.default may be used to set the same settings as given below
-    auto_tagging_settings = ap.AutoTaggingSettings()
-    # Enable auto-tagging during the conversion process
-    auto_tagging_settings.enable_auto_tagging = True
-    # Use the heading recognition strategy that's optimal for the given document structure
-    auto_tagging_settings.heading_recognition_strategy = ap.HeadingRecognitionStrategy.AUTO
-    # Assign auto-tagging settings to be used during the conversion process
-    options.auto_tagging_settings = auto_tagging_settings
-    # During the conversion, the document logical structure will be automatically created
-    document.convert(options)
-    # Save PDF document
-    document.save(path_outfile)
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Create conversion options
+        options = ap.PdfFormatConversionOptions(path_outlogfile, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE)
+        # Create auto-tagging settings
+        # aspose.pdf.AutoTaggingSettings.default may be used to set the same settings as given below
+        auto_tagging_settings = ap.AutoTaggingSettings()
+        # Enable auto-tagging during the conversion process
+        auto_tagging_settings.enable_auto_tagging = True
+        # Use the heading recognition strategy that's optimal for the given document structure
+        auto_tagging_settings.heading_recognition_strategy = ap.HeadingRecognitionStrategy.AUTO
+        # Assign auto-tagging settings to be used during the conversion process
+        options.auto_tagging_settings = auto_tagging_settings
+        # During the conversion, the document logical structure will be automatically created
+        document.convert(options)
+        # Save PDF document
+        document.save(path_outfile)
 ```
 
