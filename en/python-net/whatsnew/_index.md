@@ -556,18 +556,18 @@ import aspose.pdf as ap
 
 def extract_certificate(self, infile):
 
-path_infile = self.data_dir + infile
+    path_infile = self.data_dir + infile
 
-# Open PDF document
-with ap.Document(path_infile) as document:
-    with ap.facades.PdfFileSignature(document) as signature:
-        # Get signature names
-        signature_names = signature.get_signature_names(True)
-        for signature_name in signature_names:
-            # Extract certificate
-            certificate = []
-            if signature.try_extract_certificate(signature_name, certificate):
-                print(certificate[0] is not None)
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            # Get signature names
+            signature_names = signature.get_signature_names(True)
+            for signature_name in signature_names:
+                # Extract certificate
+                certificate = []
+                if signature.try_extract_certificate(signature_name, certificate):
+                    print(certificate[0] is not None)
 ```
 
 ### Create Structured Ordered Lists in Tagged PDFs
