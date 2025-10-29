@@ -38,22 +38,22 @@ import aspose.pdf as ap
 def run_simple(self):
 
     # Initialize document object
-    document = apdf.Document()
+    document = ap.Document()
     # Add page
     page = document.pages.add()
     # Add text to new page
-    textFragment = apdf.text.TextFragment("Hello, world!")
-    textFragment.position = apdf.text.Position(100, 600)
+    textFragment = ap.text.TextFragment("Hello, world!")
+    textFragment.position = ap.text.Position(100, 600)
 
     textFragment.text_state.font_size = 12
-    textFragment.text_state.font = apdf.text.FontRepository.find_font(
+    textFragment.text_state.font = ap.text.FontRepository.find_font(
         "TimesNewRoman"
     )
-    textFragment.text_state.background_color = apdf.Color.blue
-    textFragment.text_state.foreground_color = apdf.Color.yellow
+    textFragment.text_state.background_color = ap.Color.blue
+    textFragment.text_state.foreground_color = ap.Color.yellow
 
     # Create TextBuilder object
-    textBuilder = apdf.text.TextBuilder(page)
+    textBuilder = ap.text.TextBuilder(page)
 
     # Append the text fragment to the PDF page
     textBuilder.append_text(textFragment)

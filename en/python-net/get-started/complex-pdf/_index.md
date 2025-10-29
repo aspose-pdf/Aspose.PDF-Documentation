@@ -37,46 +37,46 @@ import aspose.pdf as ap
 def run_complex(self):
 
     # Initialize document object
-    document = apdf.Document()
+    document = ap.Document()
     # Add page
     page = document.pages.add()
 
     # Add image
     imageFileName = self.data_dir + "logo.png"
-    page.add_image(imageFileName, apdf.Rectangle(20, 730, 120, 830, True))
+    page.add_image(imageFileName, ap.Rectangle(20, 730, 120, 830, True))
 
     # Add Header
-    header = apdf.text.TextFragment("New ferry routes in Fall 2020")
-    header.text_state.font = apdf.text.FontRepository.find_font("Arial")
+    header = ap.text.TextFragment("New ferry routes in Fall 2029")
+    header.text_state.font = ap.text.FontRepository.find_font("Arial")
     header.text_state.font_size = 24
-    header.horizontal_alignment = apdf.HorizontalAlignment.CENTER
-    header.position = apdf.text.Position(130, 720)
+    header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+    header.position = ap.text.Position(130, 720)
     page.paragraphs.add(header)
 
     # Add description
     descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. \
     Ferry service is operating at half capacity and on a reduced schedule. Expect lineups."
-    description = apdf.text.TextFragment(descriptionText)
-    description.text_state.font = apdf.text.FontRepository.find_font(
+    description = ap.text.TextFragment(descriptionText)
+    description.text_state.font = ap.text.FontRepository.find_font(
         "Times New Roman"
     )
     description.text_state.font_size = 14
-    description.horizontal_alignment = apdf.HorizontalAlignment.LEFT
+    description.horizontal_alignment = ap.HorizontalAlignment.LEFT
     page.paragraphs.add(description)
 
     # Add table
-    table = apdf.Table()
+    table = ap.Table()
 
     table.column_widths = "200"
-    table.border = apdf.BorderInfo(
-        apdf.BorderSide.BOX, 1.0, apdf.Color.dark_slate_gray
+    table.border = ap.BorderInfo(
+        ap.BorderSide.BOX, 1.0, ap.Color.dark_slate_gray
     )
-    table.default_cell_border = apdf.BorderInfo(
-        apdf.BorderSide.BOX, 0.5, apdf.Color.black
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.BOX, 0.5, ap.Color.black
     )
-    table.default_cell_padding = apdf.MarginInfo(4.5, 4.5, 4.5, 4.5)
+    table.default_cell_padding = ap.MarginInfo(4.5, 4.5, 4.5, 4.5)
     table.margin.bottom = 10
-    table.default_cell_text_state.font = apdf.text.FontRepository.find_font(
+    table.default_cell_text_state.font = ap.text.FontRepository.find_font(
         "Helvetica"
     )
 
@@ -86,9 +86,9 @@ def run_complex(self):
 
     i = 0
     while i < headerRow.cells.count:
-        headerRow.cells[i].background_color = apdf.Color.gray
+        headerRow.cells[i].background_color = ap.Color.gray
         headerRow.cells[i].default_cell_text_state.foreground_color = (
-            apdf.Color.white_smoke
+            ap.Color.white_smoke
         )
         i += 1
 
