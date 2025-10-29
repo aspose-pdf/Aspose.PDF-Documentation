@@ -21,7 +21,7 @@ The 25.9 release introduces improved accessibility, enhanced compliance support,
 
 ### Convert PDF to PDF/E-1 Format
 
-In the 25.9 version of the Aspose.PDF for Python library, PDF/E-1 format conversion is available. You can find more information about this format on the (Wikipedia pages)[https://en.wikipedia.org/wiki/PDF/E]. 
+In the 25.9 version of the Aspose.PDF for Python library, PDF/E-1 format conversion is available. You can find more information about this format on the [(File Formats Docs)[https://docs.fileformat.com/pdf/e/]. 
 
 ```python
 
@@ -93,8 +93,10 @@ Automatically generate accessible tables of contents (TOC) in tagged PDFs. Creat
 import aspose.pdf as ap
 
 def create_pdf_with_toc_page(self, outfile):
-    """ Supports generating fully accessible Tagged Table of Contents (TOC) pages with proper navigation to
-    corresponding sections, ensuring PDF/UA-1 compliance."""
+    """
+    Supports generating fully accessible Tagged Table of Contents (TOC) pages with proper navigation to
+    corresponding sections, ensuring PDF/UA-1 compliance.
+    """
 
     path_outfile = self.data_dir + outfile
 

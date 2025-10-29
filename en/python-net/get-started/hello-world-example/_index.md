@@ -28,7 +28,7 @@ Below code snippet follows these steps:
 1. Add [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) to the Page
 1. [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) resultant PDF document
 
-Following code snippet is a "Hello World" program to exhibit working of Aspose.PDF for Python via .NET API.
+The following code snippet is a "Hello World" program that demonstrates the functionality of Aspose.PDF for Python via the .NET API.
 
 ```python
 
