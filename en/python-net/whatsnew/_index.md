@@ -555,7 +555,6 @@ Retrieve embedded certificates using 'extract_certificate()'.
 import aspose.pdf as ap
 
 def extract_certificate(self, infile):
-
     path_infile = self.data_dir + infile
 
     # Open PDF document
@@ -579,7 +578,6 @@ Generate accessible numbered lists (with nested items) inside tagged documents.
 import aspose.pdf as ap
 
 def create_ordered_list(self, outfile):
-
 path_outfile = self.data_dir + outfile
 
 # Create or open PDF document
