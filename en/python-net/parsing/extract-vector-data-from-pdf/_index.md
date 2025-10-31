@@ -1,227 +1,185 @@
 ---
-title:  Extract Vector Data from a PDF file using C#
+title:  Extract Vector Data from a PDF file using Python
 linktitle:  Extract Vector Data from PDF
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
-url: /net/extract-vector-data-from-pdf/
+url: /python-net/extract-vector-data-from-pdf/
 description: Aspose.PDF makes it easy to extract vector data from a PDF file. You can get the vector data (path, polygon, polyline), such as position, color, linewidth, etc.
-lastmod: "2024-09-05"
+lastmod: "2025-11-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Extract Vector Data from a PDF file using C#",
-    "alternativeHeadline": "Effortless Vector Data Extraction from PDF with C#",
-    "abstract": "Aspose.PDF for .NET now offers an innovative feature that enables users to seamlessly extract vector data from PDF files. This functionality includes detailed access to graphic elements, such as paths and polygons, along with their properties like position, color, and linewidth, empowering developers to handle vector graphics efficiently in their applications",
-    "author": {
-        "@type": "Person",
-        "name": "Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "wordcount": "361",
-    "proficiencyLevel": "Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF for .NET",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/net/extract-vector-data-from-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/net/extract-vector-data-from-pdf/"
-    },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
-}
-</script>
 
 ## Access to Vector Data from PDF document
 
-Since the the 24.2 release, Aspose.PDF for .NET library allows vector data extraction from a PDF file.
-The next code snippet creates a new Document object using some input data, initializes a 'GraphicsAbsorber'(the GraphicsAbsorber returns the vector data) to handle graphic elements, and then visits the second page of the document to extract and analyze these elements.
-It retrieves various properties of the second graphic element, such as its associated operators, rectangle, and position.
+The following code snippet uses the GraphicsAbsorber class to show how to extract vector graphic elements from a specific page of a PDF document and examine properties such as rectangle bounds, operators, and positions.
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ProcessGraphicsInPDF()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+1. Load the PDF document using 'ap.Document'.
+1. Initialize a 'GraphicsAbsorber' instance.
+1. Call 'gr_absorber.visit()' to inspect the second page.
+1. Retrieve the extracted elements via 'gr_absorber.elements'.
+1. Iterate through each element and log properties - rectangle, position, and number of operators.
+1. Write the information to a text output file.
+1. Close the document to free resources.
 
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-    {
-        // Instantiate a new GraphicsAbsorber object to process graphic elements
-        using (var grAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
-        {
-            // Visit the second page of the document to extract graphic elements
-            grAbsorber.Visit(document.Pages[1]);
+```python
 
-            // Retrieve the list of graphic elements from the GraphicsAbsorber
-            var elements = grAbsorber.Elements;
+import os
+import aspose.pdf as ap
 
-            // Access the operators associated with the second graphic element
-            var operations = elements[1].Operators;
-
-            // Retrieve the rectangle associated with the second graphic element
-            var rectangle = elements[1].Rectangle;
-
-            // Get the position of the second graphic element
-            var position = elements[1].Position;
-        }
-    }
-}
+def extract_graphics_elements(infile, outfile):
+    """
+    Extract vector graphic elements from a specified page of a PDF and log basic element properties.
+    Args:
+        infile (str): Path to input PDF file.
+        outfile (str): Path to output text file for logging element info.
+    """
+    document = ap.Document(infile)
+    try:
+        gr_absorber = ap.vector.GraphicsAbsorber()
+        # Visit page 1 (0-based index = 0) or page number as text expects
+        gr_absorber.visit(document.pages[1])
+        
+        elements = gr_absorber.elements
+        with open(outfile, "w", encoding="utf-8") as f:
+            for idx, elem in enumerate(elements, start=1):
+                # Basic properties
+                rect = elem.rectangle
+                pos = elem.position
+                ops_count = len(elem.operators)
+                f.write(f"Element {idx}: Rectangle = {rect}, Position = {pos}, Operators = {ops_count}\n")
+    finally:
+        document.close()
 ```
 
-## Extract Vector Data from PDF document
+## Save Vector Graphics from a Page to an SVG File
 
-For extraction of Vector Data from PDF, we can use SVG extractor:
+Export vector graphics from a PDF page into an SVG file, preserving vector shapes and paths:
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void SaveVectorGraphicsFromPage()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+1. Load the PDF document.
+1. Access the target page().
+1. Call 'page.try_save_vector_graphics()' which exports the page's vector paths into an SVG file.
+1. Close the document.
 
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
-    {
-        // Save vector graphics from the first page to an SVG file
-        document.Pages[1].TrySaveVectorGraphics(dataDir + "VectorGraphics_out.svg");
-    }
-}
+```python
+
+import os
+import aspose.pdf as ap
+
+def save_vector_graphics_to_svg(infile, svg_outfile):
+    """
+    Save vector graphics from a specified page of a PDF document into an SVG file.
+    Args:
+        infile (str): Path to input PDF file.
+        svg_outfile (str): Path to output SVG file.
+    """
+    document = ap.Document(infile)
+    try:
+        page = document.pages[1]
+        # Try to save vector graphics into SVG
+        page.try_save_vector_graphics(svg_outfile)
+    finally:
+        document.close()
 ```
 
-### Extract all subpaths to images separately
+### Extract Each Sub-path to a Separate SVG
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractAllSubpathsToImagesSeparately()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+Extract every sub-path (component) of vector graphics into separate SVG files by using an extraction options object.
 
-    // Path to the directory where SVGs will be saved
-    var svgDirPath = dataDir + "SvgOutput/";
+1. Load the PDF.
+1. Create 'SvgExtractionOptions' and set 'extract_every_subpath_to_svg'.
+1. Access the first page of the document.
+1. Instantiate 'SvgExtractor' with the options.
+1. Call 'extractor.extract()' to output separate SVG files for each vector sub-path.
+1. Close the document.
 
-    // Create extraction options
-    var options = new Aspose.Pdf.Vector.SvgExtractionOptions
-    {
-        ExtractEverySubPathToSvg = true
-    };
+```python
 
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
-    {
-        // Get the first page of the document
-        var page = document.Pages[1];
+import os
+import aspose.pdf as ap
 
-        // Create SVG extractor
-        var extractor = new Aspose.Pdf.Vector.SvgExtractor(options);
-        // Extract SVGs from the page
-        extractor.Extract(page, svgDirPath);
-    }
-}
+def extract_subpaths_to_svgs(infile, output_dir):
+    """
+    Extract each vector sub-path on a PDF page into separate SVG files using extraction options.
+    Args:
+        infile (str): Input PDF file path.
+        output_dir (str): Directory path where SVG files will be saved.
+    """
+    document = ap.Document(infile)
+    try:
+        options = ap.vector.SvgExtractionOptions()
+        options.extract_every_subpath_to_svg = True
+        
+        page = document.pages[0]
+        extractor = ap.vector.SvgExtractor(options)
+        extractor.extract(page, output_dir)
+    finally:
+        document.close()
 ```
 
 ### Extract list of elements to single image
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractListOfElementsToSingleImage()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+Extract multiple vector elements from a PDF page and save them as a single combined SVG image using Aspose.PDF for Python.
+This is useful when you want to preserve the visual structure of grouped shapes or drawings, such as diagrams or CAD exports.
 
-    // Initialize the list of graphic elements
-    var elements = new List<Aspose.Pdf.Vector.GraphicElement>();
+1. Open the PDF using 'Document'.
+1. Select a page and prepare a list of vector elements.
+1. Use 'SvgExtractor' to combine those elements into one SVG.
+1. Save the output file.
 
-    // Example: Fill elements list with needed graphic elements (implement your logic here)
+```python
 
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
-    {
-        // Get the first page of the document
-        var page = document.Pages[1];
+import os
+import aspose.pdf as ap
 
-        // Use SvgExtractor to extract SVGs
-        var svgExtractor = new Aspose.Pdf.Vector.SvgExtractor();
-
-        // Extract SVGs from graphic elements on the page
-        svgExtractor.Extract(elements, page, Path.Combine(dataDir, "SvgOutput", "VectorGraphics_out.svg"));
-    }
-}
+def extract_list_of_elements_to_single_image(infile, outfile):
+    """
+    Extracts multiple vector graphic elements from a PDF page and saves them as a single SVG image.
+    Args:
+        infile (str): Path to the input PDF file.
+        outfile (str): Path to the output SVG file.
+    """
+    document = ap.Document(infile)
+    try:
+        page = document.pages[1]
+        svg_extractor = ap.vector.SvgExtractor()
+        elements = []  # Fill this list with specific graphic elements as needed
+        svg_extractor.extract(elements, page, outfile)
+    finally:
+        document.close()
 ```
 
 ### Extract single element
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractSingleElement()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+Extract one specific vector element from a PDF and save it as an individual SVG file.
+It is beneficial for isolating and exporting logos, icons, or standalone shapes from complex vector-based PDFs.
 
+1. Create a 'GraphicsAbsorber' to capture vector data.
+1. Visit a specific page to collect its vector elements.
+1. Select a target element (e.g., an 'XFormPlacement').
+1. Save that single element to an SVG file.
 
-    // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
-    {
-        // Create a GraphicsAbsorber object to extract graphic elements
-        var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
+```python
 
-        // Get the first page of the document
-        var page = document.Pages[1];
+import os
+import aspose.pdf as ap
 
-        // Process the page to extract graphic elements
-        graphicsAbsorber.Visit(page);
-
-        // Extract the graphic element (XFormPlacement) and save it as SVG
-        var xFormPlacement = graphicsAbsorber.Elements[1] as Aspose.Pdf.Vector.XFormPlacement;
-        xFormPlacement.Elements[2].SaveToSvg(Path.Combine(dataDir, "SvgOutput", "VectorGraphics_out.svg"));
-    }
-}
+def extract_single_vector_element(infile, outfile):
+    """
+    Extracts a specific vector graphic element (e.g., an XFormPlacement) from a PDF page and saves it as an SVG file.
+    Args:
+        infile (str): Path to the input PDF file.
+        outfile (str): Path to the output SVG file.
+    """
+    document = ap.Document(infile)
+    try:
+        graphics_absorber = ap.vector.GraphicsAbsorber()
+        page = document.pages[1]
+        graphics_absorber.visit(page)
+        xform_placement = graphics_absorber.elements[1]
+        if isinstance(xform_placement, ap.vector.XFormPlacement):
+            xform_placement.elements[2].save_to_svg(outfile)
+    finally:
+        document.close()
 ```
