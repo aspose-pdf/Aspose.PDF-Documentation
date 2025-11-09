@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /python-net/rotate-text-inside-pdf/
 description: Explore how to rotate text inside a PDF document in Python for flexible document formatting with Aspose.PDF for Python.
-lastmod: "2025-05-27"
+lastmod: "2025-11-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -29,7 +29,12 @@ By using the Rotation property of [TextFragment](https://reference.aspose.com/pd
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
 
     # Create PDF document
     with ap.Document() as document:
