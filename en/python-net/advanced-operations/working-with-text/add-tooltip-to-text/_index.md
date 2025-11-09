@@ -1,5 +1,5 @@
 ---
-title: PDF Tooltip using Python
+title: Creating tooltips in Text
 linktitle: PDF Tooltip
 type: docs
 weight: 20
