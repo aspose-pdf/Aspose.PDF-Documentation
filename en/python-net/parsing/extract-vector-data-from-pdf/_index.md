@@ -111,7 +111,7 @@ def extract_subpaths_to_svgs(infile, output_dir):
         options = ap.vector.SvgExtractionOptions()
         options.extract_every_subpath_to_svg = True
         
-        page = document.pages[0]
+        page = document.pages[1]
         extractor = ap.vector.SvgExtractor(options)
         extractor.extract(page, output_dir)
     finally:
