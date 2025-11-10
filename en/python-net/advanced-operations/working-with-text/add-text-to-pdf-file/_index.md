@@ -519,11 +519,11 @@ Additionally, this code snippet shows how to use multiple text segments within a
 1. Create a TextFragment for simple styled text.
 1. Define text content.
 1. Set position using Position(x, y) coordinates.
-1. Apply styling via the text_state property - font, font_size, foreground_color, font_style, underline.
+1. Apply styling via the 'text_state property' - font, font_size, foreground_color, font_style, underline.
 1. Create a complex expression with multiple TextSegment objects. Each TextSegment represents a portion of text that can have its own style. This allows you to build expressions, such as mathematical or chemical formulas.
 1. Define multiple TextState objects. One for the main text (text_state_letters). Another for subscript or superscript text (text_state_index).
-1. Combine text segments. Append each segment to a TextFragment using segments.append().
-1. Add both text objects to the page. Use page.paragraphs.add() to place them in the document.
+1. Combine text segments. Append each segment to a 'TextFragment' using 'segments.append()'.
+1. Add both text objects to the page. Use 'page.paragraphs.add()' to place them in the document.
 1. Save the final document.
 
 ```python

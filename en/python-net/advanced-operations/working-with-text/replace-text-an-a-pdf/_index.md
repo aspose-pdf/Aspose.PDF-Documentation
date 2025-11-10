@@ -350,8 +350,8 @@ Using the Aspose.PDF for Python via .NET library, this function adjusts both the
 1. Access a Specific Text Fragment.
 1. Set the Replacement Area.
 1. Configure Text Adjustment Options. Set two key replacement options:
- - Font size adjustment - 'SHRINK_TO_FIT' automatically reduces font size if the new text is too long.
- - Spacing adjustment - 'ADJUST_SPACE_WIDTH' keeps spacing proportional.
+    - Font size adjustment - 'SHRINK_TO_FIT' automatically reduces font size if the new text is too long.
+    - Spacing adjustment - 'ADJUST_SPACE_WIDTH' keeps spacing proportional.
 1. Replace the Text.
 1. Save the Modified PDF.
 

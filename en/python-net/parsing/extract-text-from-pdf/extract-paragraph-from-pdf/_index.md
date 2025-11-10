@@ -71,10 +71,10 @@ This code snippet extracts paragraph-level text and layout information from a sp
 1. Call 'absorber.visit(page)' for the specific page you want.
 1. Get the first 'page_markup' from 'absorber.page_markups'.
 1. For each section in that markup:
- - Retrieve its 'rectangle'.
+    - Retrieve its 'rectangle'.
 1. For each paragraph in the section:
- - Get its 'points' (polygon).
- - Extract text by looping 'paragraph.lines' - 'fragment.text'.
+    - Get its 'points' (polygon).
+    - Extract text by looping 'paragraph.lines' - 'fragment.text'.
 1. Write geometry and text info to the output file.
 1. Close the document.
 

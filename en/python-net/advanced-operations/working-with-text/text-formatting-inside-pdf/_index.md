@@ -2,7 +2,7 @@
 title: Text Formatting inside PDF using Python
 linktitle: Text Formatting inside PDF
 type: docs
-weight: 30
+weight: 70
 url: /python-net/text-formatting-inside-pdf/
 description: Explore text formatting options within PDF files in Python using Aspose.PDF for customized document styling.
 lastmod: "2025-11-27"
@@ -93,7 +93,6 @@ Let's check how to apply different line spacing modes in a PDF document using a 
 It loads text from a file, embeds a specific font, and renders the same text twice on a PDF page—each time using a different line spacing mode:
 
 - FONT_SIZE mode: The line spacing equals the font size.
-
 - FULL_SIZE mode: The line spacing accounts for the full height of the font, including ascenders and descenders.
 
 The example shows how line spacing behavior can vary depending on the selected mode.

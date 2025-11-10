@@ -60,9 +60,9 @@ Loop through each text fragment in a page, check whether it is superscript or su
 1. Create 'TextFragmentAbsorber()' and accept it on the chosen page.
 1. Access 'absorber.text_fragments', which returns a collection of fragments found on that page.
 1. For each fragment:
- - Retrieve 'fragment.text'.
- - Check 'fragment.text_state.superscript' and 'fragment.text_state.subscript'.
- - Write a line to the output file with fragment text and flags.
+    - Retrieve 'fragment.text'.
+    - Check 'fragment.text_state.superscript' and 'fragment.text_state.subscript'.
+    - Write a line to the output file with fragment text and flags.
 1. Close the file and document.
 
 ```python

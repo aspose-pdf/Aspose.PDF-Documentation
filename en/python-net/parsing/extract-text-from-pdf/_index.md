@@ -13,7 +13,7 @@ sitemap:
 
 ## Articles in this section
 
-- [Extract Text from PDF](/pdf/python-net/extract-text-from-pdf/)
+- [Extract Text from PDF](/pdf/python-net/extract-text-from-pdf-file/)
 - [Extract Paragraph from PDF](/pdf/python-net/extract-paragraph-from-pdf/)
 - [Extract SuperScripts and SubScripts text from PDF](/pdf/python-net/extract-superscripts-subscripts-from-pdf/)
 
