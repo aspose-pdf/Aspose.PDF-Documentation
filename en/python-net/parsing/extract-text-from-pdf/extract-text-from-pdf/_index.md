@@ -16,7 +16,7 @@ Abstract: The article provides a step-by-step guide on extracting text from PDF 
 
 ## Extract text from all pages of a PDF document
 
-Aspose.PDF for Python learn you how to extract text from every page of a PDF document. It uses the TextAbsorber class to capture all textual content from the entire document and saves it into a separate text file.
+Aspose.PDF for Python teaches you how to extract text from every page of a PDF document. It uses the TextAbsorber class to capture all textual content from the entire document and saves it into a separate text file.
 Ideal for converting PDFs into searchable text, performing content analysis, or exporting text for indexing and processing tasks.
 
 1. Load the PDF file.
