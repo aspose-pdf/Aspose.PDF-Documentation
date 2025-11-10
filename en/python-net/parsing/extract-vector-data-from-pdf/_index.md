@@ -38,7 +38,7 @@ def extract_graphics_elements(infile, outfile):
     document = ap.Document(infile)
     try:
         gr_absorber = ap.vector.GraphicsAbsorber()
-        # Visit page 1 (0-based index = 0) or page number as text expects
+        # Visit page 2 (pages collection is 1-indexed; document.pages[1] is the second page)
         gr_absorber.visit(document.pages[1])
         
         elements = gr_absorber.elements
