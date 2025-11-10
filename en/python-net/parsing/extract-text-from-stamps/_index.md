@@ -3,7 +3,7 @@ title: Extract Text From Stamps using Python
 type: docs
 weight: 60
 url: /python-net/extract-text-from-stamps/
-description: Learn how to use special feature of Aspose.PDF for Python via .NET - text exstraction from stamp annotations
+description: Learn how to use special feature of Aspose.PDF for Python via .NET - text extraction from stamp annotations
 lastmod: "2025-10-30"
 sitemap:
     changefreq: "monthly"
