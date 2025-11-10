@@ -93,7 +93,7 @@ def extract_paragraphs_with_geometry(infile, outfile):
     document = ap.Document(infile)
     try:
         absorber = ap.text.ParagraphAbsorber()
-        absorber.visit(document.pages[1])  # e.g., on page 2 (index 1)
+        absorber.visit(document.pages[1])  # Visit page 2 (pages are 1-indexed)
         
         page_markup = absorber.page_markups[0]
         with open(outfile, "w", encoding="utf‑8") as tw:
