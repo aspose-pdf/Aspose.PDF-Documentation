@@ -24,5 +24,4 @@ Abstract: This article discusses the necessity and methods of adding and manipul
 - [Replace Text in PDF](/pdf/python-net/replace-text-in-pdf/) -  to replace text in all the pages of a PDF document. You first need to use TextFragmentAbsorber.
 - [Rotate Text Inside PDF](/pdf/python-net/rotate-text-inside-pdf/) - rotate text inside PDF using rotation property of TextFragment Class.
 - [Search and Get Text from Pages of PDF Document](/pdf/python-net/search-and-get-text-from-pdf/) - you can use TextFragmentAbsorber class for searching and getting a text from pages.
-- [Determine Line Break](/pdf/python-net/determine-line-break/) - this topic explains how to track line breaking of multi-kine text fragments.
 - [Using FloatingBox](/pdf/python-net/floating-box/) - this page explains how to format text inside floating box.
