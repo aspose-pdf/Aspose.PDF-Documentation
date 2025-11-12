@@ -1,11 +1,11 @@
 ---
-title: Add Pages in PDF with Python
-linktitle: Add Pages
+title: Adding Pages in PDF with Python
+linktitle: Adding Pages
 type: docs
 weight: 10
 url: /python-net/add-pages/
 description: Discover how to add pages to a PDF document in Python using Aspose.PDF for flexible document creation and editing.
-lastmod: "2025-02-27"
+lastmod: "2025-11-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -22,27 +22,28 @@ This section shows how to add pages to a PDF using Python.
 
 Aspose.PDF for Python via .NET lets you insert a page to a PDF document at any location in the file as well as add pages to the end of a PDF file.
 
-### Insert Empty Page in a PDF File at Desired Location
+### Insert Empty Page in a PDF File
 
 To insert an empty page in a PDF file:
 
-1. Create a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class object with the input PDF file.
-1. Call the [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) collection's [insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) method with specified index.
-1. Save the output PDF using the [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
+1. Open an existing PDF document using 'ap.Document()'.
+1. Insert a new empty page at a specific index using 'document.pages.insert(index)'.
+1. Save the modified document using 'document.save()' to the desired output path.
 
-The following code snippet shows you how to insert a page in a PDF file.
+Insert an empty page into an existing PDF file at a specified position:
 
 ```python
 
-    import aspose.pdf as apdf
-    from os import path
+import os
+import aspose.pdf as ap
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, outfile)
+# Global configuration
+DATA_DIR = "your path here"
 
-    document = apdf.Document(path_infile)
+def insert_empty_page(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
     document.pages.insert(2)
-    document.save(path_outfile)
+    document.save(output_file_name)
 ```
 
 ### Add an Empty Page at the End of a PDF File
@@ -51,23 +52,60 @@ Sometimes, you want to ensure that a document ends on an empty page. This topic 
 
 To insert an empty page at the end of a PDF file:
 
-1. Create a [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class object with the input PDF file.
-1. Call the [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) collection's [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) method, without any parameters.
-1. Save the output PDF using the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
+1. Open an existing PDF document using 'ap.Document()'.
+1. Add a new empty page to the end of the document using 'document.pages.add()'.
+1. Save the updated PDF file using 'document.save()'.
 
 The following code snippet shows you how to insert an empty page at the end of a PDF file.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_empty_page_to_end(input_file_name, output_file_name):
     # Open document
-    document = ap.Document(input_pdf)
+    document = ap.Document(input_file_name)
 
     # Insert an empty page at the end of a PDF file
     document.pages.add()
 
     # Save output file
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
+### Add a Page from Another PDF Document
+
+With Aspose.PDF for Python library, you create a new PDF, add an initial page, and then import a page from another PDF into it.
+
+1. Create a new PDF document.
+1. Add a new blank page and write some text on it.
+1. Open another existing PDF - 'input_file_name'.
+1. Copy a page from that document.
+1. Paste the copied page into your main document.
+1. Save the combined file as 'output_file_name'.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_page_from_another_document(input_file_name, output_file_name):
+    # Open document
+    document = ap.Document()
+    page = document.pages.add()
+    text_fragment = ap.text.TextFragment("This is first page!")
+    page.paragraphs.add(text_fragment)
+
+    another_document = ap.Document(input_file_name)
+    document.pages.add(another_document.pages[1])
+
+    # Save output file
+    document.save(output_file_name)
+```

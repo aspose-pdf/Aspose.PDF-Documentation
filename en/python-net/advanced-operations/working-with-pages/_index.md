@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /python-net/working-with-pages/
 description: How to manipulate pages in PDF documents programmatically using Aspose.PDF for Python via .NET library.
-lastmod: "2025-02-27"
+lastmod: "2025-11-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -23,17 +23,16 @@ Add Page number using [PageNumberStamp](https://reference.aspose.com/pdf/python-
 
 You are able to do the following:
 
-- [Add Pages](/pdf/python-net/add-pages/) - add pages at desired location or to the end of a PDF file and delete a page from you document.
-- [Move Pages](/pdf/python-net/move-pages/) - move pages from one document to another.
-- [Delete Pages](/pdf/python-net/delete-pages/) - delete page from your PDF file using PageCollection collection.
-- [Change Page size](/pdf/python-net/change-page-size/) - you can change PDF page size with code snippet using Aspose.PDF library.
-- [Rotate Pages](/pdf/python-net/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
-- [Split Pages](/pdf/python-net/split-document/) - you can split PDF files into one or multiple PDF.
-- [Add Headers and/or Footers](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file .
-- [Crop Pages](/pdf/python-net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
-- [Add Watermarks](/pdf/python-net/add-watermarks/) - add watermarks in your PDF file with Artifact Class.
-- [Add Page Numbering in PDF File](/pdf/python-net/add-page-number/) - PageNumberStamp class will help you to add a Page Number in your PDF file.
-- [Add Backgrounds](/pdf/python-net/add-backgrounds/) - background images can be used to add a watermark.
-- [Stamping](/pdf/python-net/stamping/) - you can use the ImageStamp class to add an image stamp to a PDF file and TextStamp class for adding a text.
-- [Get and Set Page Properties](/pdf/python-net/get-and-set-page-properties/) - this section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties.
+- [Adding Pages](/pdf/python-net/add-pages/) - add pages at desired location or to the end of a PDF file and delete a page from you document.
+- [Moving Pages](/pdf/python-net/move-pages/) - move pages from one document to another.
+- [Deleting Pages](/pdf/python-net/delete-pages/) - delete page from your PDF file using PageCollection collection.
+- [Extracting Pages](/pdf/python-net/extract-pages/) - 
+- [Rotating Pages](/pdf/python-net/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
+- [Changing Page Size](/pdf/python-net/change-page-size/) - 
+- [Adding Headers and Footers](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file.
+- [Cropping Pages](/pdf/python-net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
+
+
+
+
 
