@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /python-net/search-and-get-text-from-pdf/
 description: Learn how to search and extract text from PDF documents in Python using Aspose.PDF for document analysis.
-lastmod: "2025-11-27"
+lastmod: "2025-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

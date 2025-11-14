@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /python-net/add-text-to-pdf-file/
 description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
-lastmod: "2025-09-27"
+lastmod: "2025-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /python-net/replace-text-in-pdf/
 description: Learn more about various ways of replacing and removing text from Aspose.PDF for Python via .NET library.
-lastmod: "2025-10-27"
+lastmod: "2025-10-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
