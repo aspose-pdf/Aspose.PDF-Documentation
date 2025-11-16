@@ -26,13 +26,10 @@ You are able to do the following:
 - [Adding Pages](/pdf/python-net/add-pages/) - add pages at desired location or to the end of a PDF file and delete a page from you document.
 - [Moving Pages](/pdf/python-net/move-pages/) - move pages from one document to another.
 - [Deleting Pages](/pdf/python-net/delete-pages/) - delete page from your PDF file using PageCollection collection.
-- [Extracting Pages](/pdf/python-net/extract-pages/) - 
+- [Extracting Pages](/pdf/python-net/extract-pages/) - extract pages from your PDF file using Aspose.PDF for Python.
 - [Rotating Pages](/pdf/python-net/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
-- [Changing Page Size](/pdf/python-net/change-page-size/) - 
+- [Changing Page Size](/pdf/python-net/change-page-size/) - change page size from your PDF document.
 - [Adding Headers and Footers](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file.
-- [Cropping Pages](/pdf/python-net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
-
-
-
-
-
+- [Cropping PDF Pages](/pdf/python-net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
+- [Getting and Setting Page Properties](/pdf/python-net/get-and-set-page-properties/) - 
+- [Stamping](/pdf/python-net/stamping/) - add image stamps, page stamps, page number stamps, and text stamps to a PDF page via Python.

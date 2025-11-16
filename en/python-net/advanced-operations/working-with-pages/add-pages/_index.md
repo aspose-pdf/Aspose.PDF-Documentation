@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /python-net/add-pages/
 description: Discover how to add pages to a PDF document in Python using Aspose.PDF for flexible document creation and editing.
-lastmod: "2025-11-27"
+lastmod: "2025-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

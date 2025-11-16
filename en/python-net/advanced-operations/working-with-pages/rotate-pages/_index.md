@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /python-net/rotate-pages/
 description: This topic describes how to rotate the page orientation in an existing PDF file programmatically with Python.
-lastmod: "2025-11-27"
+lastmod: "2025-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /python-net/move-pages/
 description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for Python via .NET.
-lastmod: "2025-11-27"
+lastmod: "2025-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

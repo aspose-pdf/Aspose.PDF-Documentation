@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /python-net/stamping/
 description: This section describes how to add image stamps and text stamps to a PDF page via Python.
-lastmod: "2025-02-27"
+lastmod: "2025-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,9 @@ The Stamp in the PDF file gives the additional information for the PDF file, suc
 
 Check the following sections to learn how to add a stamp with Python:
 
-- [Add Image stamps in PDF page](/pdf/python-net/image-stamps-in-pdf-page/) - add image stamp, control image quality, image stamp as background your PDF file.
-- [Add Text stamps in the PDF File](/pdf/python-net/text-stamps-in-the-pdf-file/) - add text stamp, define alignment for TextStamp object, fill stroke text as stamp in PDF file.
+- [Adding Image stamps in PDF page](/pdf/python-net/image-stamps-in-pdf-page/) - add image stamp, control image quality, image stamp as background your PDF file.
+- [Adding Text stamps in the PDF File](/pdf/python-net/text-stamps-in-the-pdf-file/) - add text stamp, define alignment for TextStamp object, fill stroke text as stamp in PDF file.
+- [Adding Page stamps in the PDF File](/pdf/python-net/page-stamps-in-the-pdf-file/) - .
+- [Adding Page Number stamps in the PDF File](/pdf/python-net/add-page-number/) - .
 
 
