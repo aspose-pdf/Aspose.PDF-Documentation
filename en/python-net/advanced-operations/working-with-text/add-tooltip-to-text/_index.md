@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /python-net/pdf-tooltip/
 description: Learn how to add tooltip to the text fragment in PDF using Python and Aspose.PDF
-lastmod: "2025-11-27"
+lastmod: "2025-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

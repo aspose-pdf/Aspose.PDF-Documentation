@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /python-net/text-formatting-inside-pdf/
 description: Explore text formatting options within PDF files in Python using Aspose.PDF for customized document styling.
-lastmod: "2025-11-27"
+lastmod: "2025-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

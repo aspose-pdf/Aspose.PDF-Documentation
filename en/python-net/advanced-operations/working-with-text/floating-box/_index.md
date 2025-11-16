@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /python-net/floating-box/
 description: This page explains how to format text inside floating box. 
-lastmod: "2025-11-17"
+lastmod: "2025-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
