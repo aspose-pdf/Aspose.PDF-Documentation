@@ -1,45 +1,133 @@
 ---
-title: Change PDF Page Size with Python
-linktitle: Change PDF Page Size
+title: Changing Page Size with Python
+linktitle: Changing Page Size
 type: docs
-weight: 60
+weight: 40
 url: /python-net/change-page-size/
 description: Change Page Size from your PDF document using Aspose.PDF for Python via .NET library.
-lastmod: "2025-02-27"
+lastmod: "2025-11-16"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to change PDF Page Size using Python
-Abstract: The article provides a guide on how to change the page size of a PDF document using Aspose.PDF for Python via .NET. It outlines the process of updating the page dimensions of an existing PDF file by utilizing the `Page` class's `set_page_size()` method. The steps involve loading the source PDF, retrieving the pages into a `PageCollection` object, selecting a specific page, and then employing the `set_page_size()` method to adjust its dimensions. Finally, the modified PDF is saved using the `Document` class's `save()` method. A code snippet is provided to demonstrate the process, where the page size is set to A4 dimensions (11.7 x 8.3 inches), converted into points for use in Aspose.PDF.
+AlternativeHeadline: Changing Page Size using Python
+Abstract: This article demonstrates how to read and modify PDF page dimensions using Aspose.PDF. The Get Page Size example retrieves the width and height of a specific PDF page, enabling users to inspect page layout, validate formatting, or analyze document structure. The Set Page Size example shows how to change a page’s dimensions—such as converting the first page to A4 size—while also displaying box properties (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) before and after modification.    
 ---
 
-## Change PDF Page Size
+Aspose.PDF for Python via .NET lets you change PDF page size with simple lines of code in your .NET applications. This topic explains how to update/change the page dimensions (size) of an existing PDF file.
 
-Aspose.PDF for Python via .NET lets you change PDF page size with simple lines of code in your Python applications. This topic explains how to update/change the page dimensions (size) of an existing PDF file.
+{{% alert color="primary" %}}
 
-The [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) class contains the [set_page_size()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) method which lets you set the page size. The code snippet below updates page dimensions in a few easy steps:
+Please note that the height and width properties use points as basic unit, where 1 inch = 72 points and 1 cm = 1/2.54 inch = 0.3937 inch = 28.3 points.
 
-1. Load the source PDF file.
-1. Get the pages into the [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) object.
-1. Get a given page.
-1. Call the set_page_size() method to update its dimensions.
-1. Call the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method to generate the PDF file with updated page dimensions.
+{{% /alert %}}
+
+### Set the Page Size of a PDF Page to A4
+
+Python library updates the size of the first page in a PDF document to standard A4 dimensions. It also prints the page’s box dimensions (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) before and after resizing, allowing you to verify the changes.
+
+The following code snippet shows how to change the PDF page dimensions to A4 size:
+
+1. Access the first page of the document.
+1. Display the page’s box sizes before modification.
+1. Apply A4 dimensions (597.6 × 842.4 points).
+1. Display the updated page box sizes.
+1. Save the modified PDF to the specified output path.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
+def set_page_size(input_file_name, output_file_name):
+    """
+    Set the size of the first page in the PDF document to A4 and save the updated document.
+
+    Parameters:
+    - input_file_name (str): Path to the input PDF file.
+    - output_file_name (str): Path to save the output PDF file.
+    """
+    document = ap.Document(input_file_name)
     # Get particular page
     page = document.pages[1]
 
-    # Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points
-    # So A4 dimensions in points will be (842.4, 597.6)
+    # Set the page size as A4 (8.3 x 11.7 in) and in Aspose.Pdf, 1 inch = 72 points
+    # So A4 dimensions in points will be (597.6, 842.4) for portrait orientation
+    print("Before set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
+
     page.set_page_size(597.6, 842.4)
+    print("After set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
 
     # Save the updated document
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
+## Get PDF Page Size
+
+This code snippet reads a PDF document and retrieves the dimensions (width and height) of the first page. It uses Aspose.PDF for Python to extract the page’s bounding rectangle and prints its size to the console. This is useful for inspecting page layout, verifying page formats, or preparing documents for further processing.
+
+1. Load the PDF document from the given file path.
+1. Access the first page of the document.
+1. Retrieve the page’s bounding rectangle using 'get_page_rect()'.
+1. Extract the width and height values.
+1. Print the page dimensions to the console.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_size(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
+
+    # Get particular page
+    page = document.pages[1]
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```
+
+### Get PDF Page Size Before and After Rotation
+
+Retrieve the dimensions of a PDF page before and after applying a 90° rotation. It shows how page rotation affects the width and height measurements and how to use 'get_page_rect()' with or without rotation consideration.
+
+1. Open the PDF document using 'ap.Document()'.
+1. Access the specific page - first page in this example.
+1. Apply a 90° rotation using 'page.rotate = ap.Rotation.ON90'.
+1. Retrieve the page rectangle without considering rotation using 'get_page_rect(False)' and print its width and height.
+1. Get the page rectangle considering rotation using 'get_page_rect(True)' and print its width and height.
+1. Analyze how the dimensions change due to rotation.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_size_rotation(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
+    # Get particular page
+    page = document.pages[1]
+    page.rotate = ap.Rotation.ON90
+    rectangle = page.get_page_rect(False)
+    print(f"{rectangle.width} : {rectangle.height}")
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```

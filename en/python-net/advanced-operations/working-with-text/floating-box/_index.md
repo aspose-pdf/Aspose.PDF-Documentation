@@ -9,6 +9,9 @@ lastmod: "2025-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true
+AlternativeHeadline: The FloatingBox tool for text generation
+Abstract: This article provides a comprehensive guide to using the FloatingBox tool in Aspose.PDF for Python, which allows developers to place text and other content in movable, styled containers on PDF pages. It covers both basic and advanced usage, demonstrating how to create floating boxes, apply borders and background colors, control multi-column layouts, manage paragraph positioning, and align boxes vertically and horizontally. The article also highlights key features such as text clipping, repeated content across pages, absolute positioning, and enhanced layout control, enabling precise customization of PDF content. Through practical code examples, readers learn how to create visually appealing and well-structured PDFs that leverage the full capabilities of the FloatingBox container.      
 ---
 
 ## Basics of using the FloatingBox tool

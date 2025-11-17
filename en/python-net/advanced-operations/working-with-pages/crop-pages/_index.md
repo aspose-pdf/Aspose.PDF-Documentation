@@ -1,11 +1,11 @@
 ---
-title: Crop PDF Pages programmatically Python
-linktitle: Crop Pages
+title: Cropping PDF Pages using Python
+linktitle: Cropping PDF Pages
 type: docs
 weight: 70
 url: /python-net/crop-pages/
 description: You may change page properties, such as the width, height, Bleed-, Crop- and Trimbox using Aspose.PDF for Python via .NET.
-lastmod: "2025-02-27"
+lastmod: "2025-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -24,22 +24,46 @@ Each page in a PDF file has a number of properties, such as the width, height, b
 - **art_box**: The art box is the box drawn around the actual contents of the pages in your documents. This page box is used when importing PDF documents in other applications.
 - **crop_box**: The crop box is the "page" size at which your PDF document is displayed in Adobe Acrobat. In normal view, only the contents of the crop box are displayed in Adobe Acrobat. For detailed descriptions of these properties, read the Adobe.Pdf specification, particularly 10.10.1 Page Boundaries.
 
-The snippet below show how to crop the page:
+Crop the first page of a PDF to a specific rectangular area using Aspose.PDF for Python. The function adjusts multiple page boxes—crop_box, trim_box, art_box, and bleed_box—to ensure consistent visual results. Cropping can be useful for removing unwanted margins or focusing on a particular region of a page.
+
+1. Load the PDF document using 'ap.Document()'.
+1. Define the cropping rectangle with the desired coordinates (in points).
+1. Set the page's crop, trim, art, and bleed boxes to the defined rectangle.
+1. Save the modified PDF to a new output file.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Create new Box Rectagle
+def crop_page(input_file_name, output_file_name):
+    """
+    Crops the first page of a PDF document to a specified rectangular area.
+    This function loads a PDF document, defines a new rectangular boundary,
+    and applies this boundary to multiple box types (crop, trim, art, and bleed)
+    of the first page. The modified document is then saved to a new file.
+    Args:
+        input_file_name (str): Path to the input PDF file to be cropped.
+        output_file_name (str): Path where the cropped PDF will be saved.
+    Returns:
+        None
+    Note:
+        The cropping rectangle is set to coordinates (200, 220, 2170, 1520)
+        which defines the visible area of the page. All box types are set
+        to the same dimensions to ensure consistent cropping behavior.
+    """
+    document = ap.Document(input_file_name)
+
     new_box = ap.Rectangle(200, 220, 2170, 1520, True)
     document.pages[1].crop_box = new_box
     document.pages[1].trim_box = new_box
     document.pages[1].art_box = new_box
     document.pages[1].bleed_box = new_box
 
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
 In this example we used a sample file [here](crop_page.pdf). Initially our page looks like shown on the Figure 1.
@@ -48,3 +72,54 @@ In this example we used a sample file [here](crop_page.pdf). Initially our page 
 After the change, the page will look like Figure 2.
 ![Figure 2. Cropped Page](crop_page2.png)
 
+## Crop PDF Page Based on First Image Content
+
+Crop the first page of a PDF dynamically based on the bounds of the first image found on the page. By using 'ImagePlacementAbsorber', the script identifies the first image and adjusts the page's crop box to match the image’s dimensions. This approach is useful when you want to focus on specific visual content rather than predefined coordinates.
+
+1. Load the PDF document using 'ap.Document()'.
+1. Locate images on the first page using 'ImagePlacementAbsorber'.
+1. Check if images exist:
+  - If found, set the page's crop box to match the first image's rectangle.
+  - If not, keep the page unchanged and notify the user.
+1. Save the modified PDF to the specified output file.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def crop_page_by_content(input_file_name, output_file_name):
+    """
+    Crops the first page of a PDF document to the bounds of the first image found on that page.
+    This function opens a PDF document, locates the first image on the first page,
+    and sets the page's crop box to match the image's rectangle dimensions. If no
+    images are found, the page remains unchanged.
+    Args:
+        input_file_name (str): Path to the input PDF file to be processed.
+        output_file_name (str): Path where the cropped PDF will be saved.
+    Returns:
+        None
+    Raises:
+        Exception: May raise exceptions related to file I/O operations or PDF processing
+                  if the input file is invalid, corrupted, or inaccessible.
+    Note:
+        - Only processes the first page of the document
+        - Uses the first image found on the page for cropping dimensions
+        - If no images are found, prints a message and saves the document unchanged
+        - Requires the aspose.pdf library (imported as 'ap')
+    """
+    document = ap.Document(input_file_name)
+    # Find first image on first page using ImagePlacementAbsorber
+    absorber = ap.ImagePlacementAbsorber()
+    document.pages[1].accept(absorber)
+
+    if len(absorber.image_placements) > 0:
+        first_image = absorber.image_placements[1]
+        document.pages[1].crop_box = first_image.rectangle
+    else:
+        print("No images found on the first page")
+    document.save(output_file_name)
+```

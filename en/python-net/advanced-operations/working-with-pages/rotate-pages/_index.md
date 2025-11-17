@@ -1,11 +1,11 @@
 ---
-title: Rotate PDF Pages Using Python
-linktitle: Rotate PDF Pages
+title: Rotating PDF Pages Using Python
+linktitle: Rotating PDF Pages
 type: docs
 weight: 110
 url: /python-net/rotate-pages/
 description: This topic describes how to rotate the page orientation in an existing PDF file programmatically with Python.
-lastmod: "2025-02-27"
+lastmod: "2025-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,31 +18,47 @@ This topic describes how to update or change the page orientation of pages in an
 
 ## Change Page Orientation
 
-Aspose.PDF for Python via .NET support great features like changing the page orientation from landscape to portrait and vice versa. To change the page orientation, set the page's MediaBox using the following code snippet. You can also change page orientation by setting rotation angle using 'rotate' method.
+This function rotates every page of a PDF document 90 degrees clockwise using Aspose.PDF for Python.
+It is useful for correcting page orientation issues, such as scanned documents that are sideways. The original PDF remains unchanged, and the rotated version is saved as a new file.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    for page in doc.pages:
-        r = page.media_box
-        newHeight = r.width
-        newWidth = r.height
-        newLLX = r.llx
-        #  We must to move page upper in order to compensate changing page size
-        # (lower edge of the page is 0,0 and information is usually placed from the
-        #  Top of the page. That's why we move lover edge upper on difference between
-        #  Old and new height.
-        newLLY = r.lly + (r.height - newHeight)
-        page.media_box = ap.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight, True)
-        # Sometimes we also need to set CropBox (if it was set in original file)
-        page.crop_box = ap.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight, True)
+# Global configuration
+DATA_DIR = "your path here"
 
-        # Setting Rotation angle of page
+def rotate_page(infile, outfile):
+    """
+    Rotate all pages in a PDF document by 90 degrees clockwise.
+
+    Demonstrates how to rotate PDF pages using the Aspose.PDF library.
+    This function applies a 90-degree clockwise rotation to every page
+    in the input document and saves the result to a new file.
+
+    Args:
+        infile (str): Path to the input PDF file to rotate.
+        outfile (str): Path where the rotated PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF pages and saves to the output path.
+
+    Note:
+        - Applies 90-degree clockwise rotation (ap.Rotation.ON90) to all pages
+        - Rotates every page in the document uniformly
+        - The original document is not modified; a new file is created
+        - Rotation options include: ON90 (90°), ON180 (180°), ON270 (270°)
+        - Useful for correcting page orientation or adjusting layout
+
+    Example:
+        >>> rotate_page("input.pdf", "rotated_output.pdf")
+        # Rotates all pages 90 degrees clockwise and saves to rotated_output.pdf
+    """
+    document = ap.Document(infile)
+    for page in document.pages:
         page.rotate = ap.Rotation.ON90
 
-    # Save output file
-    doc.save(output_pdf)
+    document.save(outfile)
 ```
 

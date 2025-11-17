@@ -1,11 +1,11 @@
 ---
-title: Get and Set Page Properties using Python
-linktitle: Get and Set Page Properties
+title: Getting and Setting Page Properties using Python
+linktitle: Getting and Setting Page Properties
 type: docs
 weight: 90
 url: /python-net/get-and-set-page-properties/
 description: This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties.
-lastmod: "2025-02-27"
+lastmod: "2025-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -29,10 +29,25 @@ The following code snippet shows how to get the number of pages of a PDF file.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_count(input_file_name):
+    """
+    Get the total number of pages in a PDF document.
+    Args:
+        input_file_name (str): Path to the input PDF file.
+    Returns:
+        None: Prints the page count to console.
+    Example:
+        get_page_count("example.pdf")
+        # Output: Page Count: 10
+    """
     # Open document
-    document = ap.Document(input_pdf)
+    document = ap.Document(input_file_name)
 
     # Get page count
     print("Page Count:", str(len(document.pages)))
@@ -44,14 +59,36 @@ Sometimes we generate the PDF files on the fly and during PDF file creation, we 
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_count_without_saving(input_file_name):
+    """
+    Get the page count of a PDF document after adding content without saving the file.
+
+    This function opens an existing PDF document, adds a new page with 300 text fragments,
+    processes the paragraphs to ensure accurate page counting, and prints the total number
+    of pages in the document. The document is not saved to disk.
+
+    Args:
+        input_file_name (str): Path to the input PDF file to be processed.
+
+    Returns:
+        None: This function prints the page count but does not return a value.
+
+    Example:
+        >>> get_page_count_without_saving("sample.pdf")
+        Number of pages in document = 2
+    """
     # Instantiate Document instance
-    document = ap.Document()
+    document = ap.Document(input_file_name)
     # Add page to pages collection of PDF file
     page = document.pages.add()
     # Create loop instance
-    for i in range(0, 300):
+    for _ in range(0, 300):
         # Add TextFragment to paragraphs collection of page object
         page.paragraphs.add(ap.text.TextFragment("Pages count test"))
     # Process the paragraphs in PDF file to get accurate page count
@@ -84,104 +121,41 @@ From there, it is possible to access either individual Page objects using their 
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_properties(input_file_name):
+    """
+    Retrieves and displays various page properties for the first page of a PDF document.
+
+    Args:
+        input_file_name (str): Path to the PDF file to analyze.
+    """
     # Open document
-    document = ap.Document(input_pdf)
+    document = ap.Document(input_file_name)
     # Get particular page
     page = document.pages[1]
+
     # Get page properties
-    print(
-        "ArtBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.art_box.height,
-            page.art_box.width,
-            page.art_box.llx,
-            page.art_box.lly,
-            page.art_box.urx,
-            page.art_box.ury,
-        )
-    )
-    print(
-        "BleedBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.bleed_box.height,
-            page.bleed_box.width,
-            page.bleed_box.llx,
-            page.bleed_box.lly,
-            page.bleed_box.urx,
-            page.bleed_box.ury,
-        )
-    )
-    print(
-        "CropBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.crop_box.height,
-            page.crop_box.width,
-            page.crop_box.llx,
-            page.crop_box.lly,
-            page.crop_box.urx,
-            page.crop_box.ury,
-        )
-    )
-    print(
-        "MediaBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.media_box.height,
-            page.media_box.width,
-            page.media_box.llx,
-            page.media_box.lly,
-            page.media_box.urx,
-            page.media_box.ury,
-        )
-    )
-    print(
-        "TrimBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.trim_box.height,
-            page.trim_box.width,
-            page.trim_box.llx,
-            page.trim_box.lly,
-            page.trim_box.urx,
-            page.trim_box.ury,
-        )
-    )
-    print(
-        "Rect : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.rect.height,
-            page.rect.width,
-            page.rect.llx,
-            page.rect.lly,
-            page.rect.urx,
-            page.rect.ury,
-        )
-    )
-    print("Page Number :", page.number)
-    print("Rotate :", page.rotate)
-```
+    boxes = {
+        "ArtBox": page.art_box,
+        "BleedBox": page.bleed_box,
+        "CropBox": page.crop_box,
+        "MediaBox": page.media_box,
+        "TrimBox": page.trim_box,
+        "Rect": page.rect
+    }
 
-## Get a Particular Page of the PDF File
+    # Print box properties
+    for box_name, box in boxes.items():
+        print(f"{box_name} : Height={box.height},Width={box.width},LLX={box.llx},LLY={box.lly},URX={box.urx},URY={box.ury}")
 
-Aspose.PDF for Python allows you to [split a PDF into individual pages](/pdf/python-net/split-pdf-document/) and save them as PDF files. Getting a specified page in a PDF file and saving it as a new PDF is a very similar operation: open the source document, access the page, create a new document and add the page to this.
-
-The [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) object's [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection) holds the pages in the PDF file. To get a particular page from this collection:
-
-1. Specify the page index using the Pages property.
-1. Create a new [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
-1. Add the [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) object to the new Document object.
-1. Save the output using [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
-
-The following code snippet shows how to get a particular page from a PDF file and save it as a new file.
-
-```python
-
-    import aspose.pdf as ap
-
-    # Open document
-    document = ap.Document(input_pdf)
-
-    # Get particular page
-    page = document.pages[2]
-
-    # Save the page as PDF file
-    new_document = ap.Document()
-    new_document.pages.add(page)
-    new_document.save(output_pdf)
+    # Print other page properties
+    print(f"Page Number : {page.number}")
+    print(f"Rotate : {page.rotate}")
 ```
 
 ## Determine Page Color
@@ -194,25 +168,49 @@ The following code snippet shows how to iterate through individual page of PDF f
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_color_type(input_file_name):
+    """
+    Analyzes and prints the color type information for each page in a PDF document.
+
+    This function opens a PDF file and iterates through all pages to determine
+    the color type of each page (black and white, grayscale, RGB, or undefined).
+    The results are printed to the console with human-readable descriptions.
+
+    Args:
+        input_file_name (str): Path to the PDF file to analyze.
+
+    Returns:
+        None: This function prints results directly to console and doesn't return a value.
+
+    Example:
+        >>> get_page_color_type("sample.pdf")
+        Page # 1 is RGB.
+        Page # 2 is Gray Scale.
+        Page # 3 is Black and white.
+
+    Note:
+        Requires the aspose.pdf library (imported as ap) to be installed and available.
+        The PDF file must be accessible at the specified path.
+    """
     # Open source PDF file
-    document = ap.Document(input_pdf)
+    document = ap.Document(input_file_name)
     # Iterate through all the page of PDF file
-    for page_n in range(0, len(document.pages)):
-        page_number = page_n + 1
+    for page_number in range(1, len(document.pages) + 1):
         # Get the color type information for particular PDF page
         page_color_type = document.pages[page_number].color_type
-        if page_color_type == ap.ColorType.BLACK_AND_WHITE:
-            print("Page # " + str(page_number) + " is Black and white.")
-
-        if page_color_type == ap.ColorType.GRAYSCALE:
-            print("Page # " + str(page_number) + " is Gray Scale.")
-
-        if page_color_type == ap.ColorType.RGB:
-            print("Page # " + str(page_number) + " is RGB.")
-
-        if page_color_type == ap.ColorType.UNDEFINED:
-            print("Page # " + str(page_number) + " Color is undefined.")
+        color_type_map = {
+            ap.ColorType.BLACK_AND_WHITE: "Black and white",
+            ap.ColorType.GRAYSCALE: "Gray Scale",
+            ap.ColorType.RGB: "RGB",
+            ap.ColorType.UNDEFINED: "undefined"
+        }
+        color_description = color_type_map.get(page_color_type, "unknown")
+        print(f"Page # {page_number} is {color_description}.")
 ```
 
