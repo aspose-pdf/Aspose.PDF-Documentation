@@ -37,15 +37,15 @@ def extract_page(input_file_name, output_file_name):
     Extract a single page from a PDF document.
 
     Demonstrates how to extract a specific page from a PDF document using
-    the Aspose.PDF library. This function deletes page 2 from the input
-    document and saves the result to a new file.
+    the Aspose.PDF library. This function extracts page 2 from the input
+    document and saves it as a new file containing only that page.
 
     Args:
         input_file_name (str): Path to the input PDF file from which to extract a page.
-        output_file_name (str): Path where the modified PDF will be saved.
+        output_file_name (str): Path where the extracted page will be saved.
 
     Returns:
-        None: The function modifies the PDF and saves it to the output path.
+        None: The function creates a new PDF containing the extracted page and saves it to the output path.
 
     Note:
         - Extracts page 2 (1-based indexing) from the document
