@@ -31,5 +31,5 @@ You are able to do the following:
 - [Changing Page Size](/pdf/python-net/change-page-size/) - change page size from your PDF document.
 - [Adding Headers and Footers](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file.
 - [Cropping PDF Pages](/pdf/python-net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
-- [Getting and Setting Page Properties](/pdf/python-net/get-and-set-page-properties/) - 
+- [Getting and Setting Page Properties](/pdf/python-net/get-and-set-page-properties/) - access and modify various properties of PDF pages, such as size, rotation, and color attributes.
 - [Stamping](/pdf/python-net/stamping/) - add image stamps, page stamps, page number stamps, and text stamps to a PDF page via Python.
