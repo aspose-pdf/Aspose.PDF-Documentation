@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /python-net/working-with-pages/
 description: How to manipulate pages in PDF documents programmatically using Aspose.PDF for Python via .NET library.
-lastmod: "2025-11-27"
+lastmod: "2025-11-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
