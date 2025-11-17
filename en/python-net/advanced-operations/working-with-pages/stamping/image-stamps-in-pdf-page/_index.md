@@ -112,7 +112,7 @@ def add_image_as_background_in_floating_box(infile, input_image_file, outfile):
     # Set the Horizontal alignment for FloatingBox
     box.horizontal_alignment = ap.HorizontalAlignment.CENTER
     # Add text fragment to paragraphs collection of FloatingBox
-    box.paragraphs.add(ap.text.TextFragment("Text in  Floating Box"))
+    box.paragraphs.add(ap.text.TextFragment("Text in Floating Box"))
     # Set border for FloatingBox
     box.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
 
