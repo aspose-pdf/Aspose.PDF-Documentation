@@ -157,9 +157,9 @@ To calculate the total count of artifacts of a particular type (for example, the
 
 ## Adding Bates Numbering Artifact
 
-This example illustrates how to programmatically add Bates numbering to a PDF document using Aspose.PDF for Python via .NET. By configuring the BatesNArtifact with desired settings and applying it to the document's pages, you can automate the process of adding standardized identifiers to each page.
+This example shows how to programmatically add Bates numbering to a PDF document using Aspose.PDF for Python via .NET. By configuring a `BatesNArtifact` with the desired settings and applying it to the document's pages, you can automate the process of adding standardized identifiers to each page.
 
-To add a Bates numbering artifact to a document, call the `AddBatesNumbering(BatesNArtifact)` extension method on the `PageCollection`, passing the `BatesNArtifact` object as a parameter:
+To add a Bates-numbering artifact to a document, call the `AddBatesNumbering(BatesNArtifact)` extension method on the `PageCollection`, passing a `BatesNArtifact` instance as the parameter:
 
 ```python
 

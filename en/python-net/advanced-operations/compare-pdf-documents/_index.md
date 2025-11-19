@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Ways to compare PDF Documents
+## Ways to Compare PDF Documents
 
 When working with PDF documents, there are times when you need to compare the content of two documents to identify differences. The Aspose.PDF for Python via .NET library provides a powerful toolset for this purpose. In this article, we'll explore how to compare PDF documents using a couple of simple code snippets.
 
@@ -91,10 +91,10 @@ The second code snippet expands the scope to compare the entire content of two P
 
 The provided code demonstrates comparing two PDF documents using Aspose.PDF for Python via .NET. It utilizes the SideBySidePdfComparer class to perform a page-by-page comparison, generating a new PDF that displays the differences side by side. The comparison is configured with SideBySideComparisonOptions, where additional_change_marks is set to True to highlight changes not only on the current page but also on other pages, and comparison_mode is set to IgnoreSpaces to focus on meaningful content differences by ignoring whitespace variations.
 
-## Compare PDF documents using GraphicalPdfComparer
+## Compare Using GraphicalPdfComparer
 
 When collaborating on documents, especially in professional environments, you often end up with multiple versions of the same file.
-The provided code demonstrates how to visually compare specific pages of two PDF documents using Aspose.PDF for Python via .NET. By utilizing the [GraphicalPdfComparer]() class, it highlights differences between the first pages of the two PDFs and generates corresponding images to represent these differences.
+The provided code demonstrates how to visually compare specific pages of two PDF documents using Aspose.PDF for Python via .NET. By using the `GraphicalPdfComparer` class, it highlights differences between the first pages of the two PDFs and generates corresponding images to represent these differences.
 
 You can set the following class properties:
 
@@ -104,15 +104,15 @@ You can set the following class properties:
 
 With Aspose.PDF for Python via .NET, it's possible to compare documents and pages and output the comparison result to a PDF document or image file.
 
-The [GraphicalPdfComparer]() class has a method that allows you to get page image differences in a form suitable for further processing: **get_difference(document1.pages1, document2.pages1)**.
+The `GraphicalPdfComparer` class has a method that allows you to get page image differences in a form suitable for further processing: `get_difference(document1.pages[1], document2.pages[1])`.
 
-This method returns an object of the [images_difference](), which contains an image of the first page being compared and an array of differences.
+This method returns an object of the `images_difference` type, which contains an image of the first page being compared and an array of differences.
 
-**images_difference** allows you to generate a different image and get an image of the second page being compared by adding an array of differences to the original image. To do this, use the **difference_to_image and get_destination** methods.
+The `images_difference` object allows you to generate a different image and get an image of the second page being compared by applying an array of differences to the original image. To do this, use the `difference_to_image` and `get_destination_image` methods.
 
-### Compare PDF with Get Difference method
+### Compare PDF with Get Difference Method
 
-The provided code defines a method [get_difference]() that compares two PDF documents and generates visual representations of the differences between them.
+The provided code defines a method `get_difference` that compares two PDF documents and generates visual representations of the differences between them.
 
 This method compares the first pages of two PDF files and generates two PNG images:
 
@@ -149,9 +149,9 @@ This process can be useful for visually comparing changes or differences between
         dest_img.save(data_dir + "ComparePDFWithGetDifferenceMethodDestPngFilePath_out.png")
 ```
 
-### Compare PDF with CompareDocumentsToPdf method
+### Compare PDF with CompareDocumentsToPdf Method
 
-The provided code snippet used the [compare_documents_to_pdf]() method, which compares two documents and generates a PDF report of the comparison results.
+The provided code snippet uses the `compare_documents_to_pdf` method, which compares two documents and generates a PDF report of the comparison results.
 
 ```python
 
@@ -177,10 +177,10 @@ The provided code snippet used the [compare_documents_to_pdf]() method, which co
         comparer.compare_documents_to_pdf(document1, document2, data_dir + "compareDocumentsToPdf_out.pdf")
 ```
 
-This example demonstrates how to perform a graphical comparison of two entire PDF documents using Aspose.PDF for Python via .NET. By leveraging the [GraphicalPdfComparer]() class, it generates a new PDF file that visually highlights differences between the documents.
+This example demonstrates how to perform a graphical comparison of two entire PDF documents using Aspose.PDF for Python via .NET. By leveraging the `GraphicalPdfComparer` class, it generates a new PDF file that visually highlights differences between the documents.
 
 - The threshold property is set to 3.0, meaning that minor differences below this percentage are ignored during comparison, focusing on more significant changes.
 - Differences are marked in blue by setting the color property to ap.Color.blue, allowing for clear visual distinction.
 - The comparison is performed at a resolution of 300 DPI by setting the resolution property, ensuring detailed and clear output.
 
-The [compare_documents_to_pdf]() method compares all pages of both documents and outputs the result to a new PDF file, compareDocumentsToPdf_out.pdf, with differences visually highlighted. 
+The `compare_documents_to_pdf` method compares all pages of both documents and outputs the result to a new PDF file, compareDocumentsToPdf_out.pdf, with differences visually highlighted. 
