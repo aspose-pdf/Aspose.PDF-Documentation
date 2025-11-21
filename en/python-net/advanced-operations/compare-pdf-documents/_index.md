@@ -9,6 +9,9 @@ lastmod: "2025-05-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract:   
 ---
 
 ## Ways to Compare PDF Documents
