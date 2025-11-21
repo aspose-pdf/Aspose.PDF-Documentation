@@ -62,9 +62,9 @@ def save_layers(path_infile, path_outfile):
     with ap.Document(path_infile) as document:
         layers = document.pages[1].layers
 
-        # Save each layer to a new PDF
-        for layer in layers:
-            layer.save(path_outfile)
+        # Save each layer to a new PDF with a unique filename
+        for i, layer in enumerate(layers):
+            layer.save(f"{path_outfile}_layer_{i}.pdf")
 ```
 
 You can also save layers into a stream:
