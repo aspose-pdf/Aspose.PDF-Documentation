@@ -1,6 +1,6 @@
 ---
-title: Add background to PDF with Python
-linktitle: Add backgrounds
+title: Working with Backgrounds as Artifacts with Python
+linktitle: Adding backgrounds
 type: docs
 weight: 20
 url: /python-net/add-backgrounds/
@@ -20,24 +20,27 @@ The following code snippet shows how to add a background image to PDF pages usin
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+import io
 
-    # Create a new Document object
+def add_background_image(input_image_file, output_pdf):
+    # Create a new PDF document
     document = ap.Document()
 
-    # Add a new page to document object
+    # Add a blank page to the document
     page = document.pages.add()
 
-    # Create Background Artifact object
+    # Create a BackgroundArtifact object
     background = ap.BackgroundArtifact()
 
-    # Specify the image for backgroundartifact object
-    background.background_image = io.FileIO(input_image_file)
+    # Load the image as a binary stream
+    with open(input_image_file, "rb") as image_stream:
+        background.background_image = image_stream
 
-    # Add backgroundartifact to artifacts collection of page
-    page.artifacts.append(background)
+        # Add the background artifact to the page
+        page.artifacts.append(background)
 
-    # Save the document
+    # Save the resulting PDF
     document.save(output_pdf)
 ```
 

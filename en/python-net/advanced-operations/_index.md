@@ -32,3 +32,4 @@ You'll learn different ways to:
 - [Working with Graphs](/pdf/python-net/working-with-graphs/) - manipulate with shapes on the page.
 - [Working with Operators](/pdf/python-net/working-with-operators/) - make low-level operations in PDF.
 - [Artifacts](/pdf/python-net/artifacts/) - deal with watermarks and other special objects in PDF.
+- [Working with PDF layers](/python-net/work-with-pdf-layers/) - lock layers, extract elements, flatten, and merge PDF layers.
