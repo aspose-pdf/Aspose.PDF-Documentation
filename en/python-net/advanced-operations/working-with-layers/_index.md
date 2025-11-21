@@ -72,12 +72,18 @@ You can also save layers into a stream:
 ```python
 
 import aspose.pdf as ap
+import io
 
-def save_layers_to_stream(path_infile, output_stream):
+def save_layers_to_stream(path_infile):
     with ap.Document(path_infile) as document:
         layers = document.pages[1].layers
+        streams = []
         for layer in layers:
-            layer.save(output_stream)
+            layer_stream = io.BytesIO()
+            layer.save(layer_stream)
+            layer_stream.seek(0)
+            streams.append(layer_stream)
+        return streams
 ```
 
 ## Flatten a layered PDF
