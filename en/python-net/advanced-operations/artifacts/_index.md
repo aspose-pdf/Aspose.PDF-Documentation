@@ -54,7 +54,7 @@ The following classes may also be useful for work with artifacts:
 
 Please review the following sections of the article:
 
-- [Adding backgrounds](/pdf/python-net/add-backgrounds/) - add background image to the your PDF file with Python.
+- [Adding backgrounds](/pdf/python-net/add-backgrounds/) - add background image to your PDF file with Python.
 - [Adding Bates Numbering](/pdf/python-net/add-bates-numbering/) - add Bates Numbering to PDF.
 - [Adding Watermark](/pdf/python-net/add-watermarks/) - how to add watermark to PDF with Python.
 - [Counting Artifacts](/pdf/python-net/counting-artifacts/) - counting Artifacts in PDF using Python.
