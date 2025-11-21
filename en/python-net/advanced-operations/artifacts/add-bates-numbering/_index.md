@@ -108,29 +108,31 @@ Add a Bates numbering artifact using an action delegate:
 import aspose.pdf as ap
 
 def add_bates_numbering_delegate(path_outfile):
+    def configure_bates(b):
+        """Configure Bates numbering artifact with desired settings."""
+        b.start_page = 1
+        b.end_page = 0
+        b.subset = ap.Subset.ALL
+        b.number_of_digits = 6
+        b.start_number = 1
+        b.prefix = ""
+        b.suffix = ""
+        b.artifact_vertical_alignment = ap.VerticalAlignment.BOTTOM
+        b.artifact_horizontal_alignment = ap.HorizontalAlignment.RIGHT
+        b.right_margin = 72
+        b.left_margin = 72
+        b.top_margin = 36
+        b.bottom_margin = 36
+        b.text_state.font_size = 10
+    
     with ap.Document() as document:
 
         # Add 10 pages
         for _ in range(10):
             document.pages.add()
 
-        # Use delegate (lambda) to configure Bates artifact
-        document.pages.add_bates_numbering(lambda b: (
-            setattr(b, "start_page", 1),
-            setattr(b, "end_page", 0),
-            setattr(b, "subset", ap.Subset.ALL),
-            setattr(b, "number_of_digits", 6),
-            setattr(b, "start_number", 1),
-            setattr(b, "prefix", ""),
-            setattr(b, "suffix", ""),
-            setattr(b, "artifact_vertical_alignment", ap.VerticalAlignment.BOTTOM),
-            setattr(b, "artifact_horizontal_alignment", ap.HorizontalAlignment.RIGHT),
-            setattr(b, "right_margin", 72),
-            setattr(b, "left_margin", 72),
-            setattr(b, "top_margin", 36),
-            setattr(b, "bottom_margin", 36),
-            setattr(b.text_state, "font_size", 10)
-        ))
+        # Use delegate function to configure Bates artifact
+        document.pages.add_bates_numbering(configure_bates)
 
         # Save output PDF
         document.save(path_outfile)
