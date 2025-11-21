@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
-Abstract:       
+AlternativeHeadline: How to manage, lock, extract, flatten, and merge PDF layers in Python
+Abstract: This article explains how to work with PDF layers in Python using Aspose.PDF for .NET, including locking layers, extracting layer elements, flattening layered PDFs, and merging layers.
 ---
 
 PDF layers allow a document to contain multiple sets of content that can be selectively shown or hidden. Each layer may include text, images, or graphics, and users can toggle them on or off as needed. Layers are especially useful in complex documents where content must be organized or separated.
