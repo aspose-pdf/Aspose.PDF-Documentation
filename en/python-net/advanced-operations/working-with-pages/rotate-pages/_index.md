@@ -18,7 +18,7 @@ This topic describes how to update or change the page orientation of pages in an
 
 ## Change Page Orientation
 
-This function rotates every page of a PDF document 90 degrees clockwise using Aspose.PDF for Python.
+This function rotates every page of a PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 90 degrees clockwise using Aspose.PDF for Python.
 It is useful for correcting page orientation issues, such as scanned documents that are sideways. The original PDF remains unchanged, and the rotated version is saved as a new file.
 
 ```python
@@ -57,6 +57,7 @@ def rotate_page(infile, outfile):
     """
     document = ap.Document(infile)
     for page in document.pages:
+        # `page` is a `Page` object; `rotate` uses the `Rotation` enum
         page.rotate = ap.Rotation.ON90
 
     document.save(outfile)

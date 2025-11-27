@@ -14,15 +14,15 @@ AlternativeHeadline: How to delete pages from PDF using Python
 Abstract: This article provides a concise guide on how to delete pages from a PDF file using the Aspose.PDF library for Python via .NET. It focuses on utilizing the `PageCollection` class to remove specific pages. The process involves invoking the `delete()` method with the index of the page to be removed and then saving the updated document with the `save()` method. Additionally, a code snippet is provided to demonstrate the deletion of a page from a PDF file, illustrating the use of the Aspose.PDF library in a practical context.
 ---
 
-You can delete pages from a PDF file using Aspose.PDF for Python via .NET. To delete a particular page from the [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) collection.
+You can delete pages from a PDF file using Aspose.PDF for Python via .NET. To delete a particular page, use the [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) of a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
 ## Delete Page from PDF File
 
 Aspose.PDF for Python via .NET deletes page 2 from the input PDF and saves the updated document to a new file. This feature is helpful for removing unwanted or sensitive pages without altering the rest of the document.
 
-1. Load the input PDF.
-1. Delete page.
-1. Call the [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method to save the updated PDF file.
+1. Load the input PDF as a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Delete the page using the [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Call the [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method to save the updated PDF file.
 
 The following code snippet shows how to delete a particular page from the PDF file using Python.
 
@@ -59,8 +59,11 @@ def delete_page(input_file_name, output_file_name):
         >>> delete_page("input.pdf", "output.pdf")
         # Removes page 2 from input.pdf and saves result as output.pdf
     """
+    # Open the PDF as a Document
     document = ap.Document(input_file_name)
+    # Delete page using PageCollection API
     document.pages.delete(2)
+    # Save updated Document
     document.save(output_file_name)
 ```
 
@@ -68,9 +71,9 @@ def delete_page(input_file_name, output_file_name):
 
 Deleting multiple pages allows you to remove a set of specified pages in a single operation, which is more efficient than deleting pages one by one. The resulting PDF is saved to a new file, preserving the original document.
 
-1. Load the input PDF.
-1. Delete the pages listed in the pages array.
-1. Save the updated document to a new file.
+1. Load the input PDF as a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Delete the pages listed in the pages array using the [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Save the updated [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to a new file.
 
 ```python
 
@@ -107,9 +110,12 @@ def delete_bunch_pages(input_file_name, output_file_name):
         >>> delete_bunch_pages("input.pdf", "output.pdf")
         # Removes pages 2, 3, 4, 6, 7, and 9 from input.pdf
     """
+    # Open the PDF as a Document
     document = ap.Document(input_file_name)
     # Example: Deleting pages 2, 3, 4, 6, 7, and 9; modify this list as needed for your use case.
     pages = [2,3,4,6,7,9]
+    # Delete pages via PageCollection API
     document.pages.delete(pages)
+    # Save updated Document
     document.save(output_file_name)
 ```

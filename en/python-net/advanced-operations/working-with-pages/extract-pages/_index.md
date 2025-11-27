@@ -18,11 +18,11 @@ Abstract: This article demonstrates how to extract pages from a PDF document usi
 
 Extract a specific page from a PDF document and save it as a new file. Using the Aspose.PDF library, the script copies the desired page to a new PDF, leaving the original document unchanged. This is useful for splitting PDFs or isolating important pages for distribution.
 
-1. Load the source PDF using 'ap.Document()'.
-1. Create a new PDF document to hold the extracted page.
-1. Add the desired page from the source document to the new PDF:
-  - In this example, page 2 is extracted (1-based indexing).
-1. Save the new PDF with the extracted page to the specified output file.
+1. Load the source PDF using the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) API (`ap.Document()`).
+1. Create a new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to hold the extracted page.
+1. Add the desired [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) from the source document to the new PDF using the destination document's [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (`dst_document.pages.add(...)`).
+    - In this example, page 2 is extracted (1-based indexing).
+1. Save the new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) with the extracted page to the specified output file.
 
 ```python
 
@@ -57,9 +57,13 @@ def extract_page(input_file_name, output_file_name):
         >>> extract_page("input.pdf", "output.pdf")
         # Extracts page 2 from input.pdf and saves result as output.pdf
     """
+    # Open source PDF as Document
     src_document = ap.Document(input_file_name)
+    # Create destination Document to hold extracted pages
     dst_document = ap.Document()
+    # Add a Page from source to destination using PageCollection API
     dst_document.pages.add(src_document.pages[2])
+    # Save destination Document
     dst_document.save(output_file_name)
 ```
 
@@ -67,11 +71,11 @@ def extract_page(input_file_name, output_file_name):
 
 Extract multiple specific pages from a PDF document and save them into a new file. Using the Aspose.PDF library, selected pages are copied to a new PDF while leaving the original document intact. This is useful for creating smaller PDFs containing only relevant sections of a larger document.
 
-1. Load the source PDF using 'ap.Document()'.
-1. Create a new PDF document to hold the extracted pages.
+1. Load the source PDF using the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) API (`ap.Document()`).
+1. Create a new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to hold the extracted pages.
 1. Select the pages to extract (in this example, pages 2 and 3 using 1-based indexing).
-1. Add each selected page from the source document to the new PDF.
-1. Save the new PDF with the extracted pages to the specified output file.
+1. Add each selected [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) from the source document to the new PDF using its [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Save the new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) with the extracted pages to the specified output file.
 
 ```python
 
@@ -99,10 +103,14 @@ def extract_bunch_pages(input_file_name, output_file_name):
         The function specifically extracts pages 2 and 3 from the source document.
         Page indexing appears to be 1-based in this implementation.
     """
+    # Open source Document
     document = ap.Document(input_file_name)
     pages = [2,3]
+    # Create destination Document
     another_document = ap.Document()
+    # Copy selected Page objects via PageCollection API
     for page_index in pages:
         another_document.pages.add(document.pages[page_index])
+    # Save destination Document
     another_document.save(output_file_name)
 ```

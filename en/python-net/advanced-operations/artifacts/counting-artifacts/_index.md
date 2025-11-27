@@ -16,13 +16,13 @@ Abstract: Pagination artifacts such as watermarks, backgrounds, headers, and foo
 
 ## Counting Artifacts of a Particular Type
 
-Inspect and count pagination artifacts in a PDF document using Aspose.PDF for Python via .NET. Pagination artifacts include elements such as watermarks, backgrounds, headers, and footers that are applied to pages for layout and identification purposes. By filtering artifacts on a page and grouping them by subtype, developers can quickly analyze the document's structure and verify the presence of specific elements.
+Inspect and count pagination artifacts in a PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using Aspose.PDF for Python via .NET. Pagination artifacts include elements such as watermarks, backgrounds, headers, and footers that are applied to pages for layout and identification purposes. By filtering [`Artifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) objects on a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) and grouping them by subtype (`Artifact.ArtifactSubtype`), developers can quickly analyze the document's structure and verify the presence of specific elements.
 
-To calculate the total count of artifacts of a particular type (for example, the total number of watermarks), use the following code:
+To calculate the total count of artifacts of a particular type (for example, the total number of watermarks), use the following code. The example filters the page's [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection (an [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)) by [`Artifact.ArtifactType`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/#properties) and then counts subtypes (`Artifact.ArtifactSubtype`).
 
-1. Open the PDF document.
-1. Filter pagination artifacts.
-1. Count artifacts by subtype.
+1. Open the PDF document (see [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
+1. Filter pagination artifacts using the page's [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection.
+1. Count artifacts by subtype (`Artifact.ArtifactSubtype`).
 1. Print results.
 
 ```python

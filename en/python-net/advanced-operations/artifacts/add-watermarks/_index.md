@@ -16,14 +16,14 @@ Abstract: The article discusses the use of Aspose.PDF for Python via .NET to add
 
 ## Programming Samples: How To Add Watermark On PDF Files
 
-Add a watermark artifact to a PDF document using Aspose.PDF for Python via .NET. A watermark is a visual overlay applied to pages for branding, security, or informational purposes. The example shows how to configure text appearance, positioning, rotation, and transparency before applying the watermark to a page.
+Add a watermark artifact to a PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using Aspose.PDF for Python via .NET. A watermark is a visual overlay applied to pages for branding, security, or informational purposes. The example shows how to configure [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) appearance, positioning with [`HorizontalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/horizontalalignment/) and [`VerticalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/verticalalignment/), rotation, and transparency before applying the watermark to a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
 
-1. Create a watermark artifact.
-1. Configure text state.
-1. Bind text to watermark.
-1. Define positioning and style.
-1. Attach watermark to a page.
-1. Save the updated PDF.
+1. Create a watermark artifact (see [`WatermarkArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/watermarkartifact/)).
+1. Configure text state (see [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/)).
+1. Bind text to the watermark.
+1. Define positioning and style using [`HorizontalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/horizontalalignment/) and [`VerticalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/verticalalignment/).
+1. Attach watermark to a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) via the page's [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection (see [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)).
+1. Save the updated [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
 
