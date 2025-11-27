@@ -169,3 +169,44 @@ XpsSaveOptions saveOptions = new XpsSaveOptions();
 document.save(xpsDocumentFileName, saveOptions);
 document.close();
 ```
+
+
+## Convert PDF to MobiXml
+
+**Aspose.PDF for Java** gives a possibility to convert PDF files to <abbr title="XML Paper Specification">MobiXml</abbr> format. Let try to use the presented code snippet for converting PDF files to MobiXml format with Java.
+
+The MobiXML file type is primarily associated with the Mobipocket eBook format, originally developed by Mobipocket SA and later acquired by Amazon. MobiXML represents the XML-based internal structure used by the Mobipocket format for storing eBook content, metadata, styling, and navigation information.
+
+This format acts as an intermediate or source representation for compiling .mobi or .prc eBooks. MobiXML files typically contain XHTML-like markup, publication metadata, manifest entries, and other structural components that define how an eBook is displayed on compatible reading devices and applications.
+
+To convert PDF files to MobiXml, Aspose.PDF has the class [MobiXmlSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/MobiXmlSaveOptions) class that is used as the second argument to the Document.save(..) constructor to generate the MobiXml file. The following code snippet shows the process of converting PDF files into MobiXml format.
+
+Example using MobiXmlSaveOptions:
+```java
+String documentFileName = Paths.get(DATA_DIR.toString(), "sample.pdf").toString();
+String mobiDocumentFileName = Paths.get(DATA_DIR.toString(), "sample-res-mobi.mobi").toString();
+
+// Create Document object
+Document document = new Document(documentFileName);
+
+// Instantiate MobiXml Save options
+MobiXmlSaveOptions saveOptions = new MobiXmlSaveOptions();
+
+// Save output in MobiXml format
+document.save(mobiDocumentFileName, saveOptions);
+document.close();
+```
+
+Example using SaveFormat:
+```java
+String documentFileName = Paths.get(DATA_DIR.toString(), "sample.pdf").toString();
+String mobiDocumentFileName = Paths.get(DATA_DIR.toString(), "sample-res-mobi.mobi").toString();
+
+// Create Document object
+Document document = new Document(documentFileName);
+
+// Save output in MobiXml format
+document.save(mobiDocumentFileName, SaveFormat.MobiXml);
+document.close();
+```
+
