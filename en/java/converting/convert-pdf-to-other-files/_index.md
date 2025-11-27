@@ -175,7 +175,7 @@ document.close();
 
 **Aspose.PDF for Java** gives a possibility to convert PDF files to <abbr title="XML Paper Specification">MobiXml</abbr> format. Let try to use the presented code snippet for converting PDF files to MobiXml format with Java.
 
-The MobiXML file type is primarily associated with the Mobipocket eBook format, originally developed by Mobipocket SA and later acquired by Amazon. MobiXML represents the XML-based internal structure used by the Mobipocket format for storing eBook content, metadata, styling, and navigation information.
+MobiXML is a popular eBook format, designed to be usen on mobile platforms. The MobiXML file type is primarily associated with the Mobipocket eBook format, originally developed by Mobipocket SA and later acquired by Amazon. MobiXML represents the XML-based internal structure used by the Mobipocket format for storing eBook content, metadata, styling, and navigation information.
 
 This format acts as an intermediate or source representation for compiling .mobi or .prc eBooks. MobiXML files typically contain XHTML-like markup, publication metadata, manifest entries, and other structural components that define how an eBook is displayed on compatible reading devices and applications.
 
