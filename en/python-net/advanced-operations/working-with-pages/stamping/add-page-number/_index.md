@@ -20,7 +20,7 @@ All the documents must have page numbers in it. The page number makes it easier 
 
 ## Adding Page Number Stamp to a PDF
 
-Add dynamic page number stamps to a PDF document using Aspose.PDF for Python. The PageNumberStamp object allows you to automatically display the current page number along with the total number of pages. The example shows how to create a page number stamp, customize its appearance (font, size, style, color, alignment, and margins), and apply it to a specific page in the PDF. This functionality is useful for generating professional, numbered documents and automating pagination in PDF workflows.
+Add dynamic page number stamps to a PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using Aspose.PDF for Python. The [`PageNumberStamp`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/) object allows you to automatically display the current page number along with the total number of pages. The example shows how to create a page number stamp, customize its appearance (font, size, style, color, alignment, and margins) using [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/), and apply it to a specific [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) in the PDF via the [`Page.add_stamp()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) method. Alignment values come from the [`HorizontalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/horizontalalignment/) enum, and color/font/style are available through [`Color`](https://reference.aspose.com/pdf/python-net/aspose.pdf/color/) and [`FontStyles`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/fontstyles/) (fonts discovered via [`FontRepository.find_font()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/fontrepository/#methods)). This functionality is useful for generating professional, numbered documents and automating pagination in PDF workflows.
 
 1. Open the PDF document.
 1. Create a page number stamp.
@@ -65,7 +65,7 @@ def add_page_num_stamp(input_file_name, output_file_name):
 
 ## Adding Roman Numeral Page Numbers to a PDF
 
-Add page numbers in Roman numeral format to all pages of a PDF document. The page numbers are added as stamps, with customizable font, size, style, color, and alignment. The numbering can also start from any specified value.
+Add page numbers in Roman numeral format to all pages of a PDF document. The page numbers are added as stamps using [`PageNumberStamp`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/), with customizable font, size, style, color, and alignment. Use the [`NumberingStyle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/) enum to choose Roman numerals or other numbering schemes. The numbering can also start from any specified value.
 
 1. Open the PDF document.
 1. Create a page number stamp.

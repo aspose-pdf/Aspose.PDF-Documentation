@@ -27,12 +27,12 @@ Whether you need simple static labels, richly formatted content, multilingual te
 
 Aspose.PDF for Python via .NET shows how to add a simple text fragment to a specific position on a page. You will learn how to create a new PDF document, add a page, insert text at given coordinates, and save the resulting file.
 
-1. Create a new Document object.
-1. Use 'document.pages.add()' to create a new blank page.
-1. Create a 'TextFragment' with the text content.
-1. Set the text position using the Position class. If you specify Position, the text will be located in your document from left to right and shifted downwards.
-1. Customize text appearance. You can set font size, color, font style, and more via text_fragment.text_state.
-1. Append the TextFragment to the page’s paragraph collection with `page.paragraphs.add(text_fragment)`.
+1. Create a new [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
+1. Use `document.pages.add()` to create a new blank [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Create a [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) with the text content.
+1. Set the text position using the [`Position`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/position/) class. If you specify `Position`, the text will be located in your document from left to right and shifted downwards.
+1. Customize text appearance. You can set font size, color, font style, and more via the [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/).
+1. Append the `TextFragment` to the page’s paragraph collection with `page.paragraphs.add(text_fragment)`.
 1. Save the document.
 
 The following code snippet shows you how to add text in an existing PDF file:
@@ -81,15 +81,14 @@ For more information on Working with Text, please check the [Text Formatting ins
 
 ### Add Text using TextParagraph
 
-Aspose.PDF for Python via .NET can add a paragraph of text using TextBuilder and [TextParagraph](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textparagraph/) with wrapping options.
+Aspose.PDF for Python via .NET can add a paragraph of text using [`TextBuilder`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textbuilder/) and [`TextParagraph`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textparagraph/) with wrapping options.
 
-1. Create a new document and page using 'Document()', and 'document.pages.add()' to add a blank page.
+1. Create a new [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) and a blank [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) using `document.pages.add()`.
 1. Read text from a file or use default text.
-Create a TextBuilder. It allows adding paragraph-level content with layout and wrapping control.
-Create a TextParagraph. You can set wrap mode. In this example, we use the 'DISCRETIONARY HYPHENATION'(soft hyphen). Text wraps automatically, using discretionary hyphenation to split long words. Other options include 'BY WORDS' for standard wrapping.
-1. Create a TextFragment. Apply styles.
-1. Append the fragment to the paragraph.
-1. Append the paragraph to the page using 'TextBuilder'.
+1. Create a [`TextBuilder`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textbuilder/) to add paragraph-level content with layout and wrapping control.
+1. Create a [`TextParagraph`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textparagraph/) and set the wrap mode (the example uses `DISCRETIONARY_HYPHENATION`).
+1. Create a [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/), apply styles, and append the fragment to the paragraph.
+1. Append the paragraph to the page using the `TextBuilder`.
 1. Save the document.
 
 ```python

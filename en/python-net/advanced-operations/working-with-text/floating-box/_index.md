@@ -16,16 +16,16 @@ Abstract: This article provides a comprehensive guide to using the FloatingBox t
 
 ## Basics of using the FloatingBox tool
 
-The Floating Box tool is a special tool for placing text and other content on a PDF page. Its main feature is text clipping when it overlaps the size of the FloatingBox. Create and add a FloatingBox to a PDF document using Aspose.PDF for Python. A FloatingBox acts as a movable text container, allowing more control over layout positioning, borders, and styling compared to regular text paragraphs.
+The [`FloatingBox`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/) tool is a specialized container for placing text and other content on a PDF page. Its main feature is text clipping when content exceeds the box bounds. Create and add a `FloatingBox` to a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using Aspose.PDF for Python. A `FloatingBox` acts as a movable text container, allowing more control over layout positioning, borders, and styling compared to regular text paragraphs.
 
-1. Create a New PDF Document.
-1. Add a Page to the Document.
-1. Create a FloatingBox.
-1. Set the Box Border Style.
-1. Control Box Repetition.
-1. Add Text Content to the Box.
-1. Add the FloatingBox to the Page.
-1. Save the Final PDF Document.
+1. Create a new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Add a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) to the document.
+1. Create a [`FloatingBox`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/).
+1. Set the box border using [`BorderInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/) and [`BorderSide`](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderside/).
+1. Control box repetition with the [`is_need_repeating`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/#properties) property.
+1. Add text content using [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/).
+1. Add the `FloatingBox` to the [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Save the final PDF document using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
 
@@ -83,9 +83,9 @@ As a result, the text was cut off.
 
 ![Image 1](image01.png)
 
-Property `is_need_repeating` with `False` vaule limit text with 1 page.
+Property [`is_need_repeating`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/#properties) with `False` value limits text to a single page.
 
-If we set this property to `true` the text will be reflow to the next page in the same position.
+If we set this property to `True` the text will reflow to subsequent pages in the same position.
 
 ![Image 2](image02.png)
 
@@ -95,7 +95,7 @@ If we set this property to `true` the text will be reflow to the next page in th
 
 #### Multi-column layout (simple case)
 
-`FloatingBox` supports multi-column layout. To create such a layout, you must define the values ​​of the ColumnInfo properties.
+`FloatingBox` supports multi-column layout. To create such a layout, you must define the values of the [`ColumnInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/columninfo/) properties.
 
 * `column_widths` is a string with enumeration of width in pt.
 * `column_spacing` is a string with width of the gap between columns.
@@ -265,7 +265,7 @@ def multi_column_layout_2(outfile):
 ### Background support
 
 Apply a background color to a FloatingBox in a PDF document using Aspose.PDF for Python via .NET.
-A FloatingBox is a container for text or other elements, and by assigning a background color, you can make the content stand out visually — useful for headers, highlights, or styled sections.
+A `FloatingBox` is a container for text or other elements, and by assigning a [`Color`](https://reference.aspose.com/pdf/python-net/aspose.pdf/color/) as the background color, you can make the content stand out visually — useful for headers, highlights, or styled sections.
 
 This code snippet shows how to create a simple light green text box with sample content.
 
@@ -324,15 +324,13 @@ def background_support(outfile):
 The location of the FloatingBox on the generated page is determined by the `positioning_mode`, `left`, `top` properties.
 When the `positioning_mode` value is
 
- - `ParagraphPositioningMode.DEFAULT` (default value)
+ * [`ParagraphPositioningMode.DEFAULT`](https://reference.aspose.com/pdf/python-net/aspose.pdf/paragraphpositioningmode/) (default value)
 
-The location is determined by the previously placed elements.
-Adding an element is taken into account when determining the location of subsequent elements.
-If the value of at least one of the Left, Top properties is not zero, then they are also taken into account, but this uses a not entirely obvious logic and it is better not to use this.
+The location is determined by previously placed elements; adding an element affects the location of subsequent elements. If [`Left`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/#properties) or [`Top`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/#properties) are non-zero, they are considered too, but the combined logic can be non-obvious.
 
- - `ParagraphPositioningMode.ABSOLUTE`
+ * [`ParagraphPositioningMode.ABSOLUTE`](https://reference.aspose.com/pdf/python-net/aspose.pdf/paragraphpositioningmode/)
 
-The location is specified by the Left and Top values, does not depend on previous elements and does not affect the location of subsequent ones.
+The location is specified by the `Left` and `Top` values; it does not depend on previous elements and does not affect the location of subsequent ones.
 
 ```python
 
@@ -389,7 +387,7 @@ def offset_support(outfile):
 
 ### Align Floating Boxes with Vertical and Horizontal Alignment in PDF
 
-Align FloatingBox elements within a PDF page using different vertical and horizontal alignment options in Aspose.PDF for Python via . NET. It shows how to control layout positioning (top, center, bottom, left, right) to achieve precise visual alignment of floating containers. Each floating box is assigned a distinct position to showcase alignment flexibility for page layout, header/footer placement, or side annotations.
+Align `FloatingBox` elements within a PDF page using different [`VerticalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/verticalalignment/) and [`HorizontalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/horizontalalignment/) options in Aspose.PDF for Python via .NET. It shows how to control layout positioning (top, center, bottom, left, right) to achieve precise visual alignment of floating containers. Each floating box is assigned a distinct position to showcase alignment flexibility for page layout, header/footer placement, or side annotations.
 
 1. Create a New PDF Document.
 1. Add a Page to the Document.

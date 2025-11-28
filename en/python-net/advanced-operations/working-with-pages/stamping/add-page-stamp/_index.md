@@ -14,13 +14,13 @@ AlternativeHeadline: How to add Page Stamps to PDF using Python
 Abstract: This article explains how to add a page stamp to a PDF document using Aspose.PDF for Python. A page stamp allows you to overlay or underlay content—such as logos, watermarks, or annotations—onto a specific page in a PDF. The example shows how to open an existing PDF, create a PdfPageStamp object from another PDF page, configure it as a background stamp, and apply it to a particular page. The stamped PDF is then saved as a new document. This technique is useful for branding, watermarking, or emphasizing page-level content in automated PDF workflows.
 ---
 
-Aspose.PDF for Python via .NET shows how to apply a page stamp (watermark or overlay) to a specific page in a PDF document using Aspose.PDF for Python. The page stamp can be an existing PDF page used as a background or foreground layer. This is useful for adding logos, watermarks, or other repetitive page content.
+Aspose.PDF for Python via .NET shows how to apply a page stamp (watermark or overlay) to a specific page in a PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). The page stamp can be an existing PDF page used as a background or foreground layer (see [`PdfPageStamp`](https://reference.aspose.com/pdf/python-net/aspose.pdf.pdfpagestamp/)). This is useful for adding logos, watermarks, or other repetitive page content.
 
-1. Open the PDF document using 'ap.Document()'.
-1. Create a 'PdfPageStamp' object using the PDF page or file to use as the stamp.
-1. Set the stamp properties, e.g., 'background = True' to place it behind the content.
-1. Add the stamp to a specific page using 'document.pages[page_number].add_stamp(page_stamp)'.
-1. Save the modified PDF to the specified output file.
+1. Open the PDF document using `ap.Document()` (see [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
+1. Create a `PdfPageStamp` object using the PDF page or file to use as the stamp (see [`PdfPageStamp`](https://reference.aspose.com/pdf/python-net/aspose.pdf.pdfpagestamp/)).
+1. Set the stamp properties, e.g., `background = True` to place it behind the content.
+1. Add the stamp to a specific page using `document.pages[page_number].add_stamp(page_stamp)` (see [`Page.add_stamp()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) and [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)).
+1. Save the modified PDF to the specified output file using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
 
