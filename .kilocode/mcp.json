@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "local-server": {
+            "command": "D:\\Work\\Hugo\\Deploy\\apirefirenceData\\AsposeRefernceMcpTool.exe",
+            "alwaysAllow": [
+                "get_entity_api_reference"
+            ],
+            "disabled": false
+        }
+    }
+}
