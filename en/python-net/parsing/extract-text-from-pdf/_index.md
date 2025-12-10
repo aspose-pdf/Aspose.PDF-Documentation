@@ -16,6 +16,6 @@ sitemap:
 - [Extract Text from PDF](/pdf/python-net/extract-text-from-pdf-file/)
 - [Extract Paragraph from PDF](/pdf/python-net/extract-paragraph-from-pdf/)
 - [Extract SuperScripts and SubScripts text from PDF](/pdf/python-net/extract-superscripts-subscripts-from-pdf/)
-
+- [Extract Text From Stamps](/pdf/python-net/extract-text-from-stamps/)
 
 
