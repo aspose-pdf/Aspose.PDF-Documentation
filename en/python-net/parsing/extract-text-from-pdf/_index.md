@@ -15,5 +15,5 @@ sitemap:
 
 - [Basic Text Extraction](/pdf/python-net/basic-text-extraction/)
 - [Region-Based Extraction](/pdf/python-net/region-based-extraction/)
-- [Text Formatting and Scaling](/pdf/python-net/text-formatting-and-scaling/)
-- [Annotation and Special Text](/pdf/python-net/annotation-and-special-text/)
+- [Text Extraction from Multi‑Column PDFs](/pdf/python-net/text-extraction-from-multi‑column-pdf/)
+- [Annotations and Special Text](/pdf/python-net/annotations-and-special-text/)

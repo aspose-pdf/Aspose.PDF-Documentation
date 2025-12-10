@@ -1,13 +1,13 @@
 ---
-title: Text Formatting and Scaling using Python
-linktitle: Text Formatting and Scaling
+title: Improving of the Text Extraction from Multi‑Column PDFs
+linktitle: Text Extraction from Multi‑Column PDFs
 type: docs
 weight: 30
-url: /python-net/text-formatting-and-scaling/
+url: /python-net/text-extraction-from-multi‑column-pdf/
 description: This section contains articles on Text formatting and scaling using Aspose.PDF in Python.
 lastmod: "2025-11-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Annotation and Special Text using Python
-linktitle: Annotation and Special Text
+title: Annotations and Special Text using Python
+linktitle: Annotations and Special Text
 type: docs
 weight: 40
 url: /python-net/annotation-and-special-text/
@@ -49,6 +49,44 @@ def extract_text_from_stamp(infile, page_number, annotation_index, outfile):
                 f.write(extracted)
     finally:
         document.close()
+```
+
+## Extract Highlighted Text
+
+The PDF standard provides the ability to highlight parts of text in a document. To extract such highlighted content, follow these steps:
+
+1. Import `aspose.pdf as ap` and any helpers you use (`is_assignable`, `cast`).
+2. Call `ap.Document(infile)` to open the PDF.
+3. Select the desired page with `document.pages` (page collection is 1-based).
+4. Loop through `page.annotations` to examine each annotation on that page.
+5. Filter annotations so only highlight annotations are processed.
+6. Cast annotation to `HighlightAnnotation` and call `get_marked_text()` to read the highlighted text.
+7. Print or otherwise handle the returned text.
+
+```python
+def extract_highlight_text(infile):
+    """
+    Extract text from highlight annotations.
+
+    Args:
+        infile (str): Input PDF filename
+
+    Returns:
+        None
+
+    Example:
+        extract_highlight_text("sample.pdf")
+
+    Note:
+        Prints marked text from each highlight annotation on first page.
+    """
+    document = ap.Document(infile)
+    page = document.pages[1]
+
+    for annotation in page.annotations:
+        if is_assignable(annotation, ap.annotations.HighlightAnnotation):
+            highlight_annotation = cast(ap.annotations.HighlightAnnotation, annotation)
+            print(highlight_annotation.get_marked_text())
 ```
 
 ## Extract SuperScripts and SubScripts Text
@@ -118,7 +156,7 @@ def extract_super_sub_details(infile, outfile, page_number=1):
     try:
         absorber = ap.text.TextFragmentAbsorber()
         document.pages[page_number].accept(absorber)
-        
+
         with open(outfile, "w", encoding="utf‑8") as f:
             for fragment in absorber.text_fragments:
                 text = fragment.text
