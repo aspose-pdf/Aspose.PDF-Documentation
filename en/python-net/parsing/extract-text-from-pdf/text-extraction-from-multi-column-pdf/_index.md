@@ -3,7 +3,7 @@ title: Improving of the Text Extraction from Multi‑Column PDFs
 linktitle: Text Extraction from Multi‑Column PDFs
 type: docs
 weight: 30
-url: /python-net/text-extraction-from-multi‑column-pdf/
+url: /python-net/text-extraction-from-multi-column-pdf/
 description: This section contains articles on Text formatting and scaling using Aspose.PDF in Python.
 lastmod: "2025-11-05"
 sitemap:
