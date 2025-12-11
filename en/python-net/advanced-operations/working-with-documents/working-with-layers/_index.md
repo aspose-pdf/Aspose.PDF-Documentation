@@ -172,6 +172,9 @@ def flatten_layers(path_infile, path_outfile):
     with ap.Document(path_infile) as document:
         page = document.pages[1]
 
+        if not page.layers:
+            print("No layers found in the document.")
+            return
         # Flatten each layer
         for layer in page.layers:
             layer.flatten(cleanup_content_stream=True)
