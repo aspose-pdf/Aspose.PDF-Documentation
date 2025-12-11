@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add tooltip to the text fragment in PDF using Python
-Abstract: This article provides two Python code examples for enhancing interactivity in PDF documents using the Aspose.PDF library. The first example demonstrates how to add tooltips to specific text fragments within a PDF by creating invisible [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) elements over text and setting the `alternate_name` property as the tooltip. The second example shows how to create floating text blocks that become visible on hover: a [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) is located, a hidden [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) is created at its position, and [`HideAction`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/hideaction/) events are attached to an invisible `ButtonField` to show or hide the floating block.
+Abstract: This article provides two Python code examples for enhancing interactivity in PDF documents using the Aspose.PDF library. The first example demonstrates how to add tooltips to specific text fragments within a PDF by creating invisible ButtonField elements over text and setting the `alternate_name` property as the tooltip. The second example shows how to create floating text blocks that become visible on hover a `TextFragment` is located, a hidden `TextBoxField` is created at its position, and `HideAction` events are attached to an invisible `ButtonField` to show or hide the floating block.
 ---
 
 ## Add Tooltip to Searched Text in a PDF
