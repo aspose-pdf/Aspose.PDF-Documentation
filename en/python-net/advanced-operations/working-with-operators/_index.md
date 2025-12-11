@@ -24,11 +24,11 @@ A content stream is a PDF stream object whose data consists of instructions desc
 
 This method provides fine-grained control over image placement within a PDF by directly manipulating the content stream with low-level graphics operators. It is particularly useful when precise positioning and transformation of images are required, such as:
 
-- adding watermarks or logos at specific locations.
+ - adding watermarks or logos at specific locations.
 
-- overlaying images onto existing content with exact alignment.
+ - overlaying images onto existing content with exact alignment.
 
-- implementing custom layouts that are not achievable with higher-level abstractions.
+ - implementing custom layouts that are not achievable with higher-level abstractions.
 
 By using operators like GSave, ConcatenateMatrix, Do, and GRestore, developers can ensure that images are rendered accurately and without unintended side effects on other page content.
 
