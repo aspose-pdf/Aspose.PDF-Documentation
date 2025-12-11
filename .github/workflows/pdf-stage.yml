@@ -25,8 +25,7 @@ jobs:
         sudo npm install -D --save autoprefixer
         sudo npm install -D --save postcss-cli
         sudo npm install
-        rsync --recursive --delete --force --progress ../* content/
-        git clone --branch develop https://${{ secrets.GITLAB_USER }}:${{ secrets.GITLAB_TOKEN }}@${{ secrets.GITLAB_REPO }}
+        rsync --recursive --delete --force --progress ../* content/        
         for lang in $LANGUAGES; do rsync --recursive --delete --force --progress "user-documentation/$lang/net/" "content/$lang/net/"; done
         rm -rf user-documentation
         rm -rf content/Aspose.PDF-Hugo-template
