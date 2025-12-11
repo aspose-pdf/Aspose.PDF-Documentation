@@ -277,10 +277,10 @@ public static void GetAllFontsFromPDFDocument() {
 
 ### Get Warnings for Font Substitution
 
-Aspose.PDF for .NET provides methods to get notifications about font substitution for handling font substitution cases. The code snippets below show how to use corresponding functionality.
+Aspose.PDF for Java provides methods to get notifications about font substitution for handling font substitution cases. 
+The code snippets below show how to use corresponding functionality.
 
 ```java
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void NotificationFontSubstitution()
 {
     // Open PDF document
@@ -304,7 +304,8 @@ private static void NotificationFontSubstitution()
 
 ### Improve Fonts Embedding using FontSubsetStrategy
 
-The feature to embed the fonts as a subset can be accomplished by using the isSubset/setSubset property, but sometimes you want to reduce a fully embedded font set to only subsets that are used in the document. Document has property FontUtilities which includes method SubsetFonts(FontSubsetStrategy subsetStrategy). In the method subsetFonts(), the parameter subsetStrategy helps to tune the subset strategy. FontSubsetStrategy supports two following variants of font subsetting.
+The feature to embed the fonts as a subset can be accomplished by using the isSubset/setSubset property, but sometimes you want to reduce a fully embedded font set to only subsets that are used in the document. 
+Document has property FontUtilities which includes method SubsetFonts(FontSubsetStrategy subsetStrategy). In the method subsetFonts(), the parameter subsetStrategy helps to tune the subset strategy. FontSubsetStrategy supports two following variants of font subsetting.
 
 - SubsetAllFonts - This will subset all fonts, used in a document.
 - SubsetEmbeddedFontsOnly - This will subset only those fonts which are fully embedded into the document.
