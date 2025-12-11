@@ -1,4 +1,4 @@
-name: Hugo-CI-stage
+name: Hugo-CI-stage-short
 on:
   workflow_dispatch: null
   push:
