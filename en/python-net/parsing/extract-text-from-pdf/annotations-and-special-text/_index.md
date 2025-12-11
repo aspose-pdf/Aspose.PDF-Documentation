@@ -7,7 +7,7 @@ url: /python-net/annotation-and-special-text/
 description: This section contains articles on annotation and special Text extraction from PDF documents using Aspose.PDF in Python.
 lastmod: "2025-11-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -120,7 +120,7 @@ def extract_super_sub_text(infile, outfile, page_number=1):
         # Accept only the specific page for extraction
         document.pages[page_number].accept(absorber)
         extracted_text = absorber.text
-        with open(outfile, "w", encoding="utf‑8") as f:
+        with open(outfile, "w", encoding="utf-8") as f:
             f.write(extracted_text)
     finally:
         document.close()
@@ -157,7 +157,7 @@ def extract_super_sub_details(infile, outfile, page_number=1):
         absorber = ap.text.TextFragmentAbsorber()
         document.pages[page_number].accept(absorber)
 
-        with open(outfile, "w", encoding="utf‑8") as f:
+        with open(outfile, "w", encoding="utf-8") as f:
             for fragment in absorber.text_fragments:
                 text = fragment.text
                 is_sup = fragment.text_state.superscript  # True if superscript
