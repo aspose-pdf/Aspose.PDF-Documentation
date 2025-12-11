@@ -274,6 +274,61 @@ public static void GetAllFontsFromPDFDocument() {
   }
 ```
 
+### Get Warnings for Font Substitution
+
+Aspose.PDF for Java provides methods to get notifications about font substitution for handling font substitution cases. 
+The code snippets below show how to use corresponding functionality.
+
+```java
+private static void NotificationFontSubstitution()
+{
+    // Open PDF document
+        try (Document document = new Document(dataDir + "input.pdf"))
+        {
+            // Attach the FontSubstitution event handler
+            document.FontSubstitution.add(new Document.FontSubstitutionHandler() {
+                public void invoke(Font font, Font newFont) {
+                    // Handle the font substitution event here, as example - print substituted FontNames into console
+                    System.out.println("Warning: Font " + font.getFontName() + " was substituted with another font -> "
+                            + newFont.getFontName());
+                }
+            });
+
+            // Save PDF document
+            document.save(dataDir + "NotificationFontSubstitution_out.pdf");
+        }
+}
+```
+
+### Improve Fonts Embedding using FontSubsetStrategy
+
+The feature to embed the fonts as a subset can be accomplished by using the isSubset/setSubset property, but sometimes you want to reduce a fully embedded font set to only subsets that are used in the document. 
+Document has property FontUtilities which includes method SubsetFonts(FontSubsetStrategy subsetStrategy). In the method subsetFonts(), the parameter subsetStrategy helps to tune the subset strategy. FontSubsetStrategy supports two following variants of font subsetting.
+
+- SubsetAllFonts - This will subset all fonts, used in a document.
+- SubsetEmbeddedFontsOnly - This will subset only those fonts which are fully embedded into the document.
+
+Following code snippet shows how to set FontSubsetStrategy:
+
+```java
+
+private static void setFontSubsetStrategy()
+{
+    // Open PDF document
+        try (Document document = new Document(dataDir + "input.pdf"))
+        {
+            // All fonts will be embedded as subset into document in case of SubsetAllFonts.
+            document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
+
+            // Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
+            document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+
+            // Save PDF document
+            document.save(dataDir + "SetFontSubsetStrategy_out.pdf");
+        }
+}
+```
+
 ## Get-Set Zoom Factor of PDF File
 
 Sometimes, you want to set or get the zoom factor of a PDF document. You can easily accomplish this requirement with Aspose.PDF.
