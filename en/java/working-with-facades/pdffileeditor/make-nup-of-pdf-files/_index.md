@@ -140,7 +140,7 @@ This overload allows you to make NUp using streams instead of file paths. You ca
 private static void MakeNupOfPdfUsingPageSizeAndStreams()
 {
     // The path to the documents directory
-	String dataDir = "C:\Workspace\";
+	String dataDir = "C:\\Workspace\\";
 
 	// Create PdfFileEditor object
 	com.aspose.pdf.facades.PdfFileEditor pdfEditor = new com.aspose.pdf.facades.PdfFileEditor();
