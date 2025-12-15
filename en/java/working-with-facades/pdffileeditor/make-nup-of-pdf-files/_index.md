@@ -214,7 +214,7 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndStreams()
                     fileStreams[0] = inputStream1;
                     fileStreams[1] = inputStream2;
                     // Make NUp
-                    pdfEditor.makeNUp(inputStream1, inputStream2, outputStream);
+                    pdfEditor.makeNUp(fileStreams, outputStream);
                 }
             }
         } catch (IOException e) {
