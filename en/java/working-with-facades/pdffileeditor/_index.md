@@ -32,7 +32,7 @@ This section explores the capabilities of this class and explains the purpose of
 - [Insert PDF pages](/pdf/java/insert-pdf-pages/)
 - [Delete PDF pages](/pdf/java/delete-pdf-pages/)
 
-## Using Page Brakes
+## Using Page Breaks
 
 Page Break is a special feature that allows to reflow of the document.
 
