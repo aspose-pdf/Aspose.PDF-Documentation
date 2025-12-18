@@ -3,7 +3,7 @@ on:
   workflow_dispatch: null
   push:
     branches:
-      - dotnet
+      - develop
 
 jobs:
   job-one:
