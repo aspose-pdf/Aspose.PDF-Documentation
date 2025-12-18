@@ -31,7 +31,7 @@ private static void deletePages()
 
 ## Delete PDF Pages Using Streams
 
-The [Delete] method of [PdfFileEditor] class also provides an overload which allows you to delete the pages from the input PDF file, while both the input and output files are in the streams. 
+The `Delete` method of `PdfFileEditor` class also provides an overload which allows you to delete the pages from the input PDF file, while both the input and output files are in the streams. 
 This overload takes following three parameters: intput stream, integer array of PDF pages to be deleted, and output stream.
 The following code snippet shows you how to delete PDF pages using streams.
 
