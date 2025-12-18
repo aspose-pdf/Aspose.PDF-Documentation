@@ -6,7 +6,7 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /java/make-booklet-of-pdf/
 description: This section explains how to make booklet of PDF with com.aspose.pdf.facades using PdfFileEditor class.
-lastmod: "2025-12-11s"
+lastmod: "2025-12-11"
 draft: false
 ---
 
