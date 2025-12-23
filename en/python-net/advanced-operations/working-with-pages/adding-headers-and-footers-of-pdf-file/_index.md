@@ -14,11 +14,13 @@ AlternativeHeadline: How to add Header and Footer to PDF using Python
 Abstract: The article provides a comprehensive guide on using **Aspose.PDF for Python via .NET** to add headers and footers to PDF files, with the ability to incorporate text or images. It begins by detailing the use of the `TextStamp` class to insert text into the header of a PDF document. Key properties such as font size, style, and color are adjustable, and the method for adding text to the header is demonstrated with a Python code snippet. The article similarly explains how to add text to the footer, following the same procedural steps. For adding images, the `ImageStamp` class is employed, and the process is described for both headers and footers, again supported by Python code examples. Additionally, the article discusses adding multiple headers in a single PDF file. This includes creating multiple `TextStamp` objects, each with distinct formatting, and applying them to different pages. The explanation is complemented by a detailed code snippet demonstrating this functionality.
 ---
 
-**Aspose.PDF for Python via .NET** allows you to add header and footer in your existing PDF file. You may add images or text to a PDF document. Also, try to add different headers in one PDF File with Python.
+This page provides a concise overview of adding headers and footers to PDF documents using Aspose.PDF for Python via .NET, covering text, HTML, LaTeX, image, and table-based approaches as well as dynamic page numbering and multiple per‑page headers; it explains how to create and style [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objects (using [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/), [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/), [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/), [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/), etc.), adjust [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) and [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) for precise placement, and attach the results to pages with practical Python code examples.
+
+**Aspose.PDF for Python via .NET** allows you to add header and footer in your existing [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). You may add images or text to a PDF document. Also, try to add different headers in one PDF File with Python.
 
 ## Adding Headers and Footers as Text Fragments
 
-Add simple text headers and footers to all pages in a PDF. It creates header and footer objects, inserts text fragments into them, sets margins for proper positioning, and attaches them to each page in the document. The result is a PDF where every page displays consistent header and footer text.
+Add simple text headers and footers to all pages in a PDF. It creates [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objects, inserts [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) elements into them, sets [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) for proper positioning, and attaches them to each page in the document. The result is a PDF where every page displays consistent header and footer text.
 
 The following code snippet demonstrates how to add headers and footers as text fragments in a PDF using Python:  
 
@@ -99,7 +101,7 @@ This method is useful for adding consistent titles, page indicators, or legal di
 
 ## Adding Headers and Footers for Page Numbering
 
-Add automatic page numbering to the headers and footers of a PDF document using Aspose.PDF for Python. Using the built-in variables $p (current page number) and $P (total number of pages), the script dynamically inserts page numbering on every page. Headers display the format 'Page X from Y', while footers show 'Page X / Y'. The margins ensure proper placement on each page.
+Add automatic page numbering to the headers and footers of a PDF document using Aspose.PDF for Python. Using the built-in variables $p (current page number) and $P (total number of pages), the script dynamically inserts page numbering on every page. Headers display the format 'Page X from Y', while footers show 'Page X / Y'. The [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) ensures proper placement on each page.
 
 1. Create a TextFragment for the header using "Page $p from $P" to show current and total pages.
 1. Create a HeaderFooter object and add the header text to it.
@@ -181,7 +183,7 @@ def using_header_and_footer_for_page_numbering(input_file, output_file):
 
 ## Adding Headers and Footers as HTML Fragments
 
-Apply HTML-formatted headers and footers to every page of a PDF document using Aspose.PDF for Python. By using HtmlFragment, the script allows rich text styling—such as bold and italic—to appear in the header and footer. Margins are applied for proper placement, and the same formatted elements are attached to each page in the document.
+Apply HTML-formatted headers and footers to every page of a PDF document using Aspose.PDF for Python. By using [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), the script allows rich text styling—such as bold and italic—to appear in the header and footer. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) is applied for proper placement, and the same formatted elements are attached to each page in the document.
 
 The following code snippet demonstrates how to add headers and footers as HTML fragments to a PDF using Python:
 
@@ -262,9 +264,9 @@ def add_header_and_footer_as_html(input_file, output_file):
 
 Using HtmlFragment allows rich formatting with inline styles or HTML markup, giving you more design flexibility compared to plain text.
 
-## Adding Headers and Footers as images
+## Adding Headers and Footers as Images
 
-Add image-based headers and footers to each page of a PDF document using Aspose.PDF for Python. The same image file is used for both the header and footer on every page. Margins position the images, and the image automatically adjusts to fit within the header/footer area.
+Add image-based headers and footers to each page of a PDF document using Aspose.PDF for Python. The same image file is used for both the header and footer on every page. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) positions the images, and the image automatically adjusts to fit within the header/footer area.
 
 The following code snippet demonstrates how to add headers and footers as images to a PDF using Python:
 
@@ -351,19 +353,19 @@ def add_header_and_footer_as_image(input_file, image_file, output_file):
 
 ## Adding Headers and Footers as Table
 
-Add structured, table-based headers and footers to all pages of a PDF document using Aspose.PDF for Python. Tables provide better layout control, alignment, and consistent formatting for complex headers and footers. The header text is centered while the footer text is left-aligned, both using Arial 12pt font. Column widths are calculated dynamically based on page dimensions to ensure proper placement.
+Add structured, table-based headers and footers to all pages of a PDF document using Aspose.PDF for Python. [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) objects provide better layout control, alignment, and consistent formatting for complex headers and footers. The header text is centered while the footer text is left-aligned, both using Arial 12pt font. Column widths are calculated dynamically based on page dimensions to ensure proper placement.
 
 This code snippet adds headers and footers (using tables) to each page of a PDF document with Aspose.PDF for Python via .NET.
 
-1. Define text styles using 'ap.text.TextState' for header and footer (font, size, alignment).
-1. Create HeaderFooter objects for the header and footer.
-1. Build the header table with a single row and a cell containing the header text.
-1. Build the footer table with a single row and cell containing the footer text.
-1. Add the tables to the corresponding 'HeaderFooter' objects.
-1. Set footer margin for proper horizontal positioning.
-1. Open the PDF document using 'ap.Document()'.
+1. Define text styles using [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) for header and footer (font, size, alignment).
+1. Create [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objects for the header and footer.
+1. Build the header [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) with a single row and a cell containing the header text.
+1. Build the footer [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) with a single row and cell containing the footer text.
+1. Add the tables to the corresponding [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objects.
+1. Set footer [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) for proper horizontal positioning.
+1. Open the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using appropriate methods.
 1. Iterate through all pages and assign the table-based header and footer to each page.
-1. Save the modified PDF to the output file.
+1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the output file.
 
 ```python
 
@@ -435,22 +437,22 @@ def add_header_and_footer_as_table(input_file, output_file):
         document.save(output_file)
 ```
 
-## Adding Headers and Footers as LaTex
+## Adding Headers and Footers as LaTeX
 
 Add headers and footers containing LaTeX-formatted content to all pages of a PDF document using Aspose.PDF for Python. LaTeX allows rendering of mathematical symbols, dates, copyright marks, and other advanced formatting. The header includes a dynamic date, while the footer displays a copyright symbol along with the current page number and total page count.
 
-The following code snippet shows how to use LaTeX fragments in headers and footers for a PDF using Aspose.PDF for Python via .NET.
+The following code snippet shows how to use [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) in headers and footers for a PDF using Aspose.PDF for Python via .NET.
 
-1. Open the PDF document using 'ap.Document()'.
+1. Open the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using appropriate methods.
 1. Determine total page count to use in dynamic footers.
 1. Iterate through all pages of the document.
-1. Create a HeaderFooter object for the header.
-1. Create a TeXFragment for the header text containing LaTeX commands (e.g., \'today').
-1. Create a HeaderFooter object for the footer.
-1. Create a TeXFragment for the footer text including LaTeX symbols (e.g., \'copyright') and page numbering.
-1. Add the TeXFragment to the corresponding header/footer object.
+1. Create a [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) object for the header.
+1. Create a [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) for the header text containing LaTeX commands (e.g., `\\today\\`).
+1. Create a [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) object for the footer.
+1. Create a [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) for the footer text including LaTeX symbols and page numbering.
+1. Add the [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) to the corresponding header/footer object.
 1. Bind the header and footer to the current page.
-1. Save the modified PDF to the output file.
+1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the output file.
 
 ```python
 

@@ -11,21 +11,21 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Add tooltip to the text fragment in PDF using Python
-Abstract: This article provides two Python code examples for enhancing interactivity in PDF documents using the Aspose.PDF library. The first example demonstrates how to add tooltips to specific text fragments within a PDF. This is achieved by creating invisible button fields over the text fragments, where the `alternate_name` property is set to define the tooltip content. This allows tooltips to appear when users hover their mouse over the designated text. The second example extends this interactivity by showing how to create floating text blocks that become visible when the mouse hovers over a specified area. The process begins with creating a new PDF document containing a text fragment. This fragment's position is then used to define a hidden `TextBoxField` that displays specified text. An invisible button field is created at the position of the original text fragment, and HideAction events are assigned to it. These events dictate that the floating text block appears when the mouse enters the area and disappears when it exits.
+Abstract: This article provides two Python code examples for enhancing interactivity in PDF documents using the Aspose.PDF library. The first example demonstrates how to add tooltips to specific text fragments within a PDF by creating invisible ButtonField elements over text and setting the `alternate_name` property as the tooltip. The second example shows how to create floating text blocks that become visible on hover a `TextFragment` is located, a hidden `TextBoxField` is created at its position, and `HideAction` events are attached to an invisible `ButtonField` to show or hide the floating block.
 ---
 
 ## Add Tooltip to Searched Text in a PDF
 
-This code snippet shows how to overlay invisible button fields on specific text fragments in a PDF to display tooltips when the user hovers over them. It supports both short and long tooltip messages using the alternate_name property of ButtonField.
+This code snippet shows how to overlay invisible [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) elements on specific [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) objects in a PDF to display tooltips when the user hovers over them. It supports both short and long tooltip messages using the `alternate_name` property of `ButtonField`.
 
-1. Create a New PDF.
-1. Save the Initial Document.
-1. Reopen the PDF Document.
-1. Search for Target Text with 'TextFragmentAbsorber'.
-1. Add Invisible Button with Short Tooltip using 'ButtonField'.
-1. Search for Second Target Text.
-1. Add Invisible Button with Long Tooltip. Create another ButtonField over the matched fragment.
-1. Save the Final Document.
+1. Create a new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Save the initial document.
+1. Reopen the PDF document.
+1. Search for target text using [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. Add an invisible [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) with a short tooltip.
+1. Search for the second target text.
+1. Add an invisible [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) with a long tooltip over the matched fragment.
+1. Save the final document.
 
 ```python
 
@@ -117,16 +117,16 @@ def add_tool_tip_to_searched_text(outfile):
 
 ## Create a Hidden Text Block That Appears on Hover in a PDF
 
-Add interactive floating text to a PDF document. It overlays an invisible button on a target phrase and reveals a hidden text field when the user hovers over it. This technique is ideal for contextual help, annotations, or dynamic content presentation.
+Add interactive floating text to a PDF document. It overlays an invisible [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) on a target phrase and reveals a hidden [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) when the user hovers over it. This technique is ideal for contextual help, annotations, or dynamic content presentation.
 
 1. Create a New PDF Document.
 1. Save the PDF so it can be reopened for interactivity setup.
 1. Reopen the PDF Document.
-1. Locate the Target Text. Use 'TextFragmentAbsorber' to find the specific phrase on the page.
-1. Create a Hidden Text Field.
-1. Add the Hidden Field to the Document.
-1. Create an Invisible Button.
-1. Assign Mouse Actions. On mouse enter - show the hidden text field. On mouse exit - hide the text field again.
+1. Locate the target text using [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. Create a hidden [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/).
+1. Add the hidden field to the document's [`Form`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) collection.
+1. Create an invisible [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/).
+1. Assign mouse actions (`on_enter`, `on_exit`) using [`HideAction`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/hideaction/) to show/hide the hidden field.
 1. Save the Final Document.
 
 ```python

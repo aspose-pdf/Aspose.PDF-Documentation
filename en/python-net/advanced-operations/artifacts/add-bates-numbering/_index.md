@@ -16,17 +16,17 @@ Abstract: Bates numbering is a critical feature in legal, medical, and business 
 
 Bates numbering is widely used in legal, medical, and business workflows to assign unique, sequential identifiers to pages within a document set. Aspose.PDF for Python via .NET offers a simple and flexible API for automating this process, enabling you to apply standardized Bates numbers programmatically across any PDF.
 
-Using the BatesNArtifact class, developers can fully customize numbering behavior—including the starting number, digit count, prefixes and suffixes, alignment, and margins. Once configured, the artifact can be applied to the document through the 'add_bates_numbering' method on the 'PageCollection' or added as part of a list of pagination artifacts. Aspose.PDF also supports a delegate-based configuration style, allowing for dynamic control of artifact settings at runtime.
+Using the [`BatesNArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/) class, developers can fully customize numbering behavior—including the starting number, digit count, prefixes and suffixes, alignment, and margins. Once configured, the artifact can be applied to the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) through the `add_bates_numbering` method on the [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) or added as part of a list of [`PaginationArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/paginationartifact/) objects. Aspose.PDF also supports a delegate-based configuration style, allowing for dynamic control of artifact settings at runtime.
 
-In addition to creating Bates numbers, the API provides an easy way to remove them using 'delete_bates_numbering', offering complete flexibility in document processing workflows.
+In addition to creating Bates numbers, the API provides an easy way to remove them using `delete_bates_numbering`, offering complete flexibility in document processing workflows.
 
 This article shows multiple methods for adding and removing Bates numbering in a PDF using Aspose.PDF for Python via .NET, with clear examples of artifact configuration, application, and removal.
 
 ## Adding Bates Numbering Artifact
 
-This example shows how to programmatically add Bates numbering to a PDF document using Aspose.PDF for Python via .NET. By configuring a `BatesNArtifact` with the desired settings and applying it to the document's pages, you can automate the process of adding standardized identifiers to each page.
+This example shows how to programmatically add Bates numbering to a PDF document using Aspose.PDF for Python via .NET. By configuring a [`BatesNArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/) with the desired settings and applying it to the document's pages, you can automate the process of adding standardized identifiers to each page.
 
-To add a Bates-numbering artifact to a document, call the `AddBatesNumbering(BatesNArtifact)` extension method on the `PageCollection`, passing a `BatesNArtifact` instance as the parameter:
+To add a Bates-numbering artifact to a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), call the `AddBatesNumbering(BatesNArtifact)` extension method on the [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/), passing a [`BatesNArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/) instance as the parameter:
 
 ```python
 
@@ -64,7 +64,7 @@ def add_bates_numbering(path_outfile):
         document.save(path_outfile)
 ```
 
-Or, you can pass a collection of `PaginationArtifacts`:
+Or, you can pass a collection of [`PaginationArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/paginationartifact/) objects:
 
 ```python
 
@@ -139,6 +139,8 @@ def add_bates_numbering_delegate(path_outfile):
 ```
 
 ## Delete Bates Numbering
+
+To remove Bates numbering from a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), use the `delete_bates_numbering()` method on the [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/):
 
 ```python
 

@@ -7,7 +7,7 @@ url: /python-net/basic-text-extraction/
 description: This section contains articles on basic Text extraction from PDF documents using Aspose.PDF in Python.
 lastmod: "2025-11-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
@@ -23,7 +23,6 @@ Ideal for converting PDFs into searchable text, performing content analysis, or 
 1. Write the result into a text file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
@@ -36,18 +35,15 @@ def extract_text_from_all_pages(infile, outfile):
     """
     # Open the PDF document
     document = ap.Document(infile)
-    try:
-        # Create a TextAbsorber to extract text
-        text_absorber = ap.text.TextAbsorber()
-        # Accept the absorber for all pages
-        document.pages.accept(text_absorber)
-        # Get extracted text
-        extracted_text = text_absorber.text
-        # Write the text to an output file
-        with open(outfile, "w", encoding="utf-8") as tw:
-            tw.write(extracted_text)
-    finally:
-        document.close()
+    # Create a TextAbsorber to extract text
+    text_absorber = ap.text.TextAbsorber()
+    # Accept the absorber for all pages
+    document.pages.accept(text_absorber)
+    # Get extracted text
+    extracted_text = text_absorber.text
+    # Write the text to an output file
+    with open(outfile, "w", encoding="utf-8") as tw:
+        tw.write(extracted_text)
 ```
 
 ## Extract text from a particular page
@@ -66,22 +62,19 @@ Useful when you only need content from one page — for instance, extracting tex
 import os
 import aspose.pdf as ap
 
-def extract_text_from_page(infile, page_number, outfile):
+def extract_text_from_page(infile, outfile, page_number):
     """
     Extract text from a specific page number of the PDF.
     Args:
         infile (str): Path to input PDF file.
-        page_number (int): 1-based page index to extract.
         outfile (str): Path to output text file.
+        page_number (int): 1-based page index to extract.
     """
     document = ap.Document(infile)
-    try:
-        text_absorber = ap.text.TextAbsorber()
-        # Accept the absorber on only the specified page
-        document.pages[page_number].accept(text_absorber)
-        extracted_text = text_absorber.text
-        with open(outfile, "w", encoding="utf-8") as tw:
-            tw.write(extracted_text)
-    finally:
-        document.close()
+    text_absorber = ap.text.TextAbsorber()
+    # Accept the absorber on only the specified page
+    document.pages[page_number].accept(text_absorber)
+    extracted_text = text_absorber.text
+    with open(outfile, "w", encoding="utf-8") as tw:
+        tw.write(extracted_text)
 ```
