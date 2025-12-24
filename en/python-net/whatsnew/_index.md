@@ -12,16 +12,165 @@ lastmod: "2025-02-24"
 TechArticle: false 
 ---
 
+## What's new in Aspose.PDF 25.12
+
+Convert an HTML document into a PDF while preserving logical structure information. The resulting PDF is better suited for accessibility, tagging, and downstream processing that relies on structured document content.
+
+```python
+
+import aspose.pdf as ap
+
+def convert_html_to_pdf_with_logical_structure(self, infile, outfile):
+    # Initialize HtmlLoadOptions
+    options = ap.HtmlLoadOptions()
+    # Convert HTML markup to PDF logical structure elements
+    options.create_logical_structure = True
+    # Open PDF document
+    with ap.Document(infile, options) as document:
+        # Save PDF document
+        document.save(outfile)
+```
+
+Analyze a digitally signed PDF to identify and report content that is not covered by signatures. Use it to validate document integrity, audit signed PDFs, and detect post-signature modifications.
+
+```python
+
+import aspose.pdf as ap
+
+def extract_unsigned_content(self, infile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        # Create an instance of PdfFileSignature for working with signatures in the document
+        with ap.facades.PdfFileSignature(document) as signature:
+            # Create an instance of UnsignedContentAbsorber
+            unsigned_content = ap.security.UnsignedContentAbsorber(signature)
+            # Try to get unsigned content
+            result = unsigned_content.try_get_content()
+            # Print information about unsigned content
+            print(result.message)
+            print(result.coverage)
+            print(result.unsigned_content.pages.length)
+            print(result.unsigned_content.forms.length)
+```
+
+## What's new in Aspose.PDF 25.11
+
+This function compares a specific page from two PDF documents and produces a side-by-side visual diff. By customizing comparison options and colors, it highlights meaningful changes while ignoring insignificant differences such as whitespace.
+
+```python
+
+import aspose.pdf as ap
+
+def comparing_specific_pages(self, infile1, infile2, outfile):
+    # Open PDF documents
+    with ap.Document(infile1) as document1:
+        with ap.Document(infile2) as document2:
+            options = ap.comparison.SideBySideComparisonOptions()
+            options.additional_change_marks = True
+            options.comparison_mode = ap.comparison.ComparisonMode.IGNORE_SPACES
+            options.delete_color = ap.Color.dark_gray
+            options.insert_color = ap.Color.light_yellow
+            # Compare
+            ap.comparison.SideBySidePdfComparer.compare(document1.pages[1], document2.pages[1], outfile, options)
+```
+
+Removing hidden data and rasterizing pages in 25.11 version.
+
+```python
+
+import aspose.pdf as ap
+
+def clear_hidden_data(self, infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        # Create preconfigured “all-enabled” options (except conversion to images):
+        options = ap.security.hiddendatasanitization.HiddenDataSanitizationOptions.all()
+        # Additionally enable page conversion to images with a specified DPI:
+        options.convert_pages_to_images = True
+        options.image_dpi = 200
+        # Create the sanitizer with the specified options
+        sanitizer = ap.security.hiddendatasanitization.HiddenDataSanitizer(options)
+        # Sanitize the document
+        sanitizer.sanitize(document)
+        # Save the sanitized PDF document
+        document.save(outfile)
+```
+
+Optimizing resources with font subsetting and content stream compression 25.11 version.
+
+```python
+
+import aspose.pdf as ap
+
+def optimize_resources_with_font_subsetting(self, infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        # Configure optimization options
+        optimize_options = ap.optimization.OptimizationOptions()
+        optimize_options.subset_fonts = True
+        optimize_options.allow_reuse_page_content = True
+        optimize_options.compress_objects = True
+        optimize_options.link_duplicate_streams = True
+        optimize_options.remove_unused_objects = True
+        optimize_options.remove_unused_streams = True
+        optimize_options.compress_all_content_streams = True
+        # Optimize PDF document
+        document.optimize_resources(optimize_options)
+        # Save the optimized PDF document
+        document.save(outfile)
+    # Display file size reduction
+    original_file = os.path.getsize(infile)
+    optimized_file = os.path.getsize(outfile)
+    print(f"Original file size: {original_file} bytes. Optimized file size: {optimized_file} bytes.")
+```
+
+## What's new in Aspose.PDF 25.10
+
+Enhanced PDF Layer Visibility Control – this release introduces the ability to programmatically define the initial visibility state of PDF layers and lock them to prevent visibility changes in PDF viewers.
+
+A new 'layer.default_state' property allows setting a layer's default visibility to visible or hidden using the DefaultState property. This provides fine-grained control for managing complex layered PDF documents with predictable user visibility behavior.
+
+```python
+
+import aspose.pdf as ap
+
+def manage_layer_visibility(self, infile, outfile):
+    # Create a new PDF document
+    with ap.Document() as document:
+        # Add a page to the document
+        page = document.pages.add()
+        page.set_page_size(500, 500)
+        # Load an image from a file stream
+        with io.FileIO(infile, 'r') as stream:
+            # Create a new layer with an ID and a name
+            layer = ap.Layer("1", "testlayer")
+            # Set the initial visibility state of the layer to hidden
+            layer.default_state = ap.DefaultState.HIDDEN
+            # Add the image to the page's resources
+            image_name = page.resources.images.add(stream)
+            # Add operators to the layer's contents to display the image
+            layer.contents.append(ap.operators.GSave())
+            layer.contents.append(ap.operators.ConcatenateMatrix(500, 0, 0, 500, 0, 0))
+            layer.contents.append(ap.operators.Do(image_name))
+            layer.contents.append(ap.operators.GRestore())
+            # Lock the layer to prevent its visibility from being changed in the PDF viewer
+            layer.lock()
+            # Add the layer to the page
+            page.layers.append(layer)
+        # Save the PDF document
+        document.save(outfile)
+```
+
 ## What's new in Aspose.PDF 25.9
 
-The 25.9 release introduces improved accessibility, enhanced compliance support, and new API capabilities for working with tagged images and document standards. 
+The 25.9 release introduces improved accessibility, enhanced compliance support, and new API capabilities for working with tagged images and document standards.
 
 1. Convert PDFs to PDF/E-1 format.
 1. Add tagged images from memory streams.
 
 ### Convert PDF to PDF/E-1 Format
 
-In the 25.9 version of the Aspose.PDF for Python library, PDF/E-1 format conversion is available. You can find more information about this format on the [(File Formats Docs)[https://docs.fileformat.com/pdf/e/]. 
+In the 25.9 version of the Aspose.PDF for Python library, PDF/E-1 format conversion is available. You can find more information about this format on the [File Formats Docs](https://docs.fileformat.com/pdf/e/).
 
 ```python
 
