@@ -93,15 +93,11 @@ This example demonstrates how to replace an existing image in a PDF document. Th
 Replacing images is particularly useful in scenarios such as:
 
  - Updating outdated branding or logos in official documents.
-
  - Refreshing product photos in marketing materials.
-
  - Correcting or replacing placeholder graphics in templates.
-
  - Automating visual updates across large sets of PDFs.
 
 In this example, the code opens a PDF (sample_cats_dogs.pdf), replaces the image at page 2, index 4, with a new file (Image.jpg), and saves the updated document as PdfContentEditorDemo12.pdf.
-
 
 ```python
 

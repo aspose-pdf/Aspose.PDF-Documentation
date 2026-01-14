@@ -14,8 +14,8 @@ The Python library demonstrates how to configure viewer preferences in a PDF doc
 1. Load the input PDF using the Document class.
 1. Create an instance of PdfContentEditor to manage viewer preferences.
 1. Change viewer preferences. Call ChangeViewerPreference() with the desired options:
-    - CenterWindow 
-    - HideMenubar 
+    - CenterWindow
+    - HideMenubar
     - PageModeFullScreen
 1. Save the updated PDF.
 

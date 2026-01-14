@@ -48,7 +48,7 @@ get_button_options()
 
 ## Get Current Button Option Value from an Existing PDF File
 
-Retrieve the currently selected option value from a button field (such as a radio button group) in a PDF form. By binding a PDF document to the Form class and calling GetButtonOptionCurrentValue(), developers can determine which option is active for a given field. This is useful for validating user input, processing form submissions, or dynamically reading form data.
+Retrieve the currently selected option value from a button field (such as a radio button group) in a PDF form. By binding a PDF document to the Form class and calling [get_button_option_current_value()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form/#methods), developers can determine which option is active for a given field. This is useful for validating user input, processing form submissions, or dynamically reading form data.
 
 1. Create a Form object.
 1. Bind the target PDF form with BindPdf().
