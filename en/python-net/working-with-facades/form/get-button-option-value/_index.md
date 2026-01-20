@@ -1,8 +1,8 @@
 ---
-title: Get Button Option Value
+title: Get Button Options Value
 type: docs
 weight: 40
-url: /python-net/get-button-option-value/
+url: /python-net/get-button-options-value/
 description: This section explains how to get Button Option Value with Aspose.PDF Facades using Form Class.
 lastmod: "2025-11-05"
 ---
