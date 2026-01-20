@@ -190,7 +190,7 @@ When adding Image as stamp object, you can also control the quality of image. In
 
 1. Create a PdfFileStamp object and bind the source PDF.
 1. Create a Stamp object.
-1. ind an image to the stamp using bind_image().
+1. Bind an image to the stamp using bind_image().
 1. Configure stamp properties (origin, rotation, background, etc.).
 1. Specify the target pages using the pages property.
 1. Add the stamp and save the output PDF.

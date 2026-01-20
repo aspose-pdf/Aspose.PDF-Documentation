@@ -13,4 +13,4 @@ sitemap:
 - [Add Signature in PDF File](/pdf/python-net/add-signature-in-pdf/)
 - [Remove Signature from PDF File](/pdf/python-net/remove-signature-from-pdf/)
 - [Verify Signature in PDF File](/pdf/python-net/verify-signature-in-pdf/)
-- [Working with Signature in PDF File](/pdf/python-net/add-signature-in-pdf/)
+- [Working with Signature in PDF File](/pdf/python-net/working-with-signature-in-a-pdf-file/)

@@ -78,7 +78,7 @@ def set_privilege_with_password():
 
 PDF documents support the extended rights feature to enable end-user to fill data into form fields by using Adobe Acrobat Reader and then save a copy of the filled form. However, it ensures that PDF file is not modified and if any modification to the structure of the PDF is made, the extended rights feature is lost. When viewing such a document, an error message is displayed, stating that extended rights are removed because the document was modified. Recently, we received a requirement to remove extended rights from PDF document.
 
-The following code shows ho to remove usage rights from the document:
+The following code shows how to remove usage rights from the document:
 
 ```python
 

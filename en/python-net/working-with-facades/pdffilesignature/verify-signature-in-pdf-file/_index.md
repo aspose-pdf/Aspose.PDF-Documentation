@@ -32,7 +32,7 @@ def is_pdf_signed():
 
 ### Verifying that a PDF is Signed
 
-To determine if a file is singed, without providing the signature name, use the following code.
+To determine if a file is signed, without providing the signature name, use the following code.
 
 ```python
 

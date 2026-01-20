@@ -44,7 +44,7 @@ def remove_signature():
 
 ### Remove Signature but Keep the Signature field
 
-As shown above, the [PdfFileSignature](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilesignature) class [remove_signature](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilesignature/#methods) method lets you remove signature fields from PDF files. When using this method with versions prior to 9.3.0, both the signature and signature field are removed. Some develoeprs want to remove only the signature and keep the signature field so that it can be used to resign the document. To keep the signature field and only remove the signature, please use the following code snippet.
+As shown above, the [PdfFileSignature](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilesignature) class [remove_signature](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilesignature/#methods) method lets you remove signature fields from PDF files. When using this method with versions prior to 9.3.0, both the signature and signature field are removed. Some developers want to remove only the signature and keep the signature field so that it can be used to resign the document. To keep the signature field and only remove the signature, please use the following code snippet.
 
 ```python
 

@@ -351,125 +351,127 @@ def create_local_links():
 
 ```python
 
-from aspose.pdf.facades import ()
-from aspose.pdf import Document, Rectangle
+import aspose.pdf as ap
+from aspose.pdf.facades import (
+    PdfFileEditor,
+    PdfFileStamp,
+    PdfContentEditor,
+    PdfFileInfo,
+    Stamp,
+    FormattedText
+)
 from io import BytesIO
 
-def complete_code():
-    # The path to the documents directory
-    data_dir = get_data_dir_aspose_pdf_facades_concatenate()
 
-    input_file1 = data_dir + "ConcatenateInput1.pdf"
-    input_file2 = data_dir + "ConcatenateInput2.pdf"
-    output_file = data_dir + "Concatenated_Table_Of_Contents_out.pdf"
+def minimal_toc_sample():
+    data_dir = "./"  # <-- путь к PDF
 
-    # Create PdfFileEditor object
-    pdf_editor = PdfFileEditor()
+    input1 = data_dir + "ConcatenateInput1.pdf"
+    input2 = data_dir + "ConcatenateInput2.pdf"
+    output = data_dir + "result_with_toc.pdf"
 
-    # Hold the concatenated PDF in memory
-    with BytesIO() as concatenated_stream:
-        # Open input PDFs as streams
-        with open(input_file1, "rb") as f1, open(input_file2, "rb") as f2:
-            pdf_editor.concatenate(f1, f2, concatenated_stream)
+    # --- 1. Concatenate PDFs into memory ---
+    editor = PdfFileEditor()
+    concat_stream = BytesIO()
 
-        # Load concatenated PDF into Document
-        concatenated_stream.seek(0)
-        document = Document(concatenated_stream)
+    with open(input1, "rb") as f1, open(input2, "rb") as f2:
+        editor.concatenate(f1, f2, concat_stream)
 
-        # Insert a blank page at the beginning for TOC
-        document.pages.insert(1)
+    concat_stream.seek(0)
 
-        # Save document with blank page to memory
-        with BytesIO() as document_with_blank_page:
-            document.save(document_with_blank_page)
-            document_with_blank_page.seek(0)
+    # --- 2. Load as Document and insert TOC page ---
+    doc = ap.Document(concat_stream)
+    doc.pages.insert(1)
 
-            # Add TOC heading and items using stamps
-            with BytesIO() as document_with_toc_heading:
-                file_stamp = PdfFileStamp()
-                file_stamp.bind_pdf(document_with_blank_page)
+    doc_stream = BytesIO()
+    doc.save(doc_stream)
+    doc_stream.seek(0)
 
-                # ---- TOC Title ----
-                toc_title = Stamp()
-                toc_title.bind_logo(
-                    FormattedText(
-                        "Table Of Contents",
-                        Color.maroon,
-                        Color.transparent,
-                        FontStyle.Helvetica,
-                        EncodingType.Winansi,
-                        True,
-                        18
-                    )
-                )
+    # --- 3. Add TOC text using stamps ---
+    stampper = PdfFileStamp()
+    stampper.bind_pdf(doc_stream)
 
-                page_width = PdfFileInfo(document_with_blank_page).get_page_width(1)
-                toc_title.set_origin(page_width / 3, 700)
-                toc_title.pages = [1]
-                file_stamp.add_stamp(toc_title)
+    title = Stamp()
+    title.bind_logo(
+        FormattedText(
+            "Table of Contents",
+            ap.Color.black,
+            ap.Color.transparent,
+            ap.FontStyle.Helvetica,
+            ap.EncodingType.Winansi,
+            True,
+            18
+        )
+    )
+    title.set_origin(200, 750)
+    title.pages = [1]
+    stampper.add_stamp(title)
 
-                # ---- TOC Item 1 ----
-                doc1_stamp = Stamp()
-                doc1_stamp.bind_logo(
-                    FormattedText(
-                        "1 - Link to Document 1",
-                        Color.black,
-                        Color.transparent,
-                        FontStyle.Helvetica,
-                        EncodingType.Winansi,
-                        True,
-                        12
-                    )
-                )
-                doc1_stamp.set_origin(150, 650)
-                doc1_stamp.pages = [1]
-                file_stamp.add_stamp(doc1_stamp)
+    item1 = Stamp()
+    item1.bind_logo(
+        FormattedText(
+            "1. First document",
+            ap.Color.black,
+            ap.Color.transparent,
+            ap.FontStyle.Helvetica,
+            ap.EncodingType.Winansi,
+            False,
+            12
+        )
+    )
+    item1.set_origin(200, 700)
+    item1.pages = [1]
+    stampper.add_stamp(item1)
 
-                # ---- TOC Item 2 ----
-                doc2_stamp = Stamp()
-                doc2_stamp.bind_logo(
-                    FormattedText(
-                        "2 - Link to Document 2",
-                        Color.black,
-                        Color.transparent,
-                        FontStyle.Helvetica,
-                        EncodingType.Winansi,
-                        True,
-                        12
-                    )
-                )
-                doc2_stamp.set_origin(150, 620)
-                doc2_stamp.pages = [1]
-                file_stamp.add_stamp(doc2_stamp)
+    item2 = Stamp()
+    item2.bind_logo(
+        FormattedText(
+            "2. Second document",
+            ap.Color.black,
+            ap.Color.transparent,
+            ap.FontStyle.Helvetica,
+            ap.EncodingType.Winansi,
+            False,
+            12
+        )
+    )
+    item2.set_origin(200, 670)
+    item2.pages = [1]
+    stampper.add_stamp(item2)
 
-                # Save stamped document
-                file_stamp.save(document_with_toc_heading)
-                file_stamp.close()
-                document_with_toc_heading.seek(0)
+    stamped_stream = BytesIO()
+    stampper.save(stamped_stream)
+    stampper.close()
+    stamped_stream.seek(0)
 
-                # ---- Create local links for TOC ----
-                content_editor = PdfContentEditor()
-                content_editor.bind_pdf(document_with_toc_heading)
+    # --- 4. Create local links ---
+    content = PdfContentEditor()
+    content.bind_pdf(stamped_stream)
 
-                # Link to first document (starts on page 2)
-                content_editor.create_local_link(
-                    Rectangle(150, 650, 100, 20),
-                    2,
-                    1,
-                    Color.transparent
-                )
+    # Link to first document (starts at page 2)
+    content.create_local_link(
+        ap.Rectangle(200, 700, 350, 720),
+        2,
+        1,
+        ap.Color.transparent
+    )
 
-                # Link to second document
-                first_doc_pages = PdfFileInfo(input_file1).number_of_pages
-                content_editor.create_local_link(
-                    Rectangle(150, 620, 100, 20),
-                    first_doc_pages + 2,  # TOC page + first document pages
-                    1,
-                    Color.transparent
-                )
+    first_doc_pages = PdfFileInfo(input1).number_of_pages
 
-                # Save final PDF
-                content_editor.save(output_file)
+    # Link to second document
+    content.create_local_link(
+        ap.Rectangle(200, 670, 350, 690),
+        first_doc_pages + 2,
+        1,
+        ap.Color.transparent
+    )
+
+    content.save(output)
+    content.close()
+
+
+if __name__ == "__main__":
+    minimal_toc_sample()
 ```
 
 ## Concatenate PDF files in folder
