@@ -1,15 +1,12 @@
 ---
 title: PdfFileStamp Class
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 155
-url: /net/pdffilestamp-class/
+url: /python-net/pdffilestamp-class/
 description: This section explains how you can use PdfFileStamp Class by Aspose.PDF Facades in working with PDF.
-lastmod: "2021-06-05"
-draft: false
+lastmod: "2026-01-05"
 ---
 
-- [Add PDF Page Stamp](/pdf/net/add-pdf-page-stamp/)
-- [Add Text and Image Stamp](/pdf/net/add-text-and-image-stamp/)
-- [Manage Header and Footer](/pdf/net/manage-header-and-footer/)
+- [Add PDF Page Stamp](/pdf/python-net/add-pdf-page-stamp/)
+- [Add Text and Image Stamp](/pdf/python-net/add-text-and-image-stamp/)
+- [Manage Header and Footer](/pdf/python-net/manage-header-and-footer/)

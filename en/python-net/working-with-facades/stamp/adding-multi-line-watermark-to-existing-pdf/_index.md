@@ -1,106 +1,55 @@
 ---
 title: Adding multi line watermark 
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
-url: /net/adding-multi-line-watermark-to-existing-pdf/
+url: /python-net/adding-multi-line-watermark-to-existing-pdf/
 description: This section explains how to add multi line watermark to existing PDF using FormattedText Class.
-lastmod: "2021-06-05"
-draft: false
+lastmod: "2026-01-05"
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Adding multi line watermark",
-    "alternativeHeadline": "Enhance PDFs with Multi-Line Watermarks Easily",
-    "abstract": "Introducing the ability to add multi-line watermarks to existing PDFs using the Aspose.Pdf.Facades namespace. This new functionality simplifies the process, allowing users to easily incorporate multiple lines of text into their documents with the newly implemented AddNewLineText() method in the FormattedText class. Enhance your PDF presentations with customized multi-line watermarks effortlessly",
-    "author": {
-        "@type": "Person",
-        "name": "Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "wordcount": "188",
-    "proficiencyLevel": "Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF for .NET",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/net/adding-multi-line-watermark-to-existing-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/net/adding-multi-line-watermark-to-existing-pdf/"
-    },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
-}
-</script>
 
-{{% alert color="primary" %}}
+This example demonstrates how to create a multi-line text watermark (stamp) for an existing PDF document using Aspose.PDF for Python via .NET. The approach mirrors the .NET Facades API and is commonly used for adding watermarks, headers, or background text to PDF files.
 
-A lot of users want to stamp their PDF documents with multi-line text. They usually try to use `\n` and `<br>` but these types of characters are not supported by Aspose.Pdf.Facades namespace. So, to make it possible, we have added another method named [AddNewLineText()](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext/methods/addnewlinetext/index) in [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) class of Aspose.Pdf.Facades namespace.
+1. Create a Stamp object. A Stamp acts as a container for the content that will be placed onto the PDF pages.
 
-{{% /alert %}}
+1. The FormattedText class is used to define the appearance of the text, including:
 
-## Implementation details
+   - Text content
+   - Color and transparency (using ARGB)
+   - Font style (e.g., Times Italic)
+   - Text encoding
+   - Font size
 
-Please refer to the following code chunk to add multi-line watermark in existing PDF.
+    Additional lines can be appended using 'add_new_line_text()', allowing you to create multi-line watermarks such as titles with subtitles or messages spanning multiple rows.
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddTextStampToPdf()
-{
-    // Instantiate a stamp object
-    var logoStamp = new Aspose.Pdf.Facades.Stamp();
+1. Bind the text to the stamp. The formatted text is attached to the stamp using 'bind_logo()'. At this stage, the stamp is fully defined but not yet applied to a document.
 
-    // Instantiate an object of FormattedText class
-    var formatText = new Aspose.Pdf.Facades.FormattedText("Hello World!",
-        System.Drawing.Color.FromArgb(180, 0, 0), 
-        Aspose.Pdf.Facades.FontStyle.TimesItalic,
-        Aspose.Pdf.Facades.EncodingType.Winansi, false, 50);
+1. Apply the stamp to a PDF. The configured stamp is usually added to an existing PDF using PdfFileStamp, which applies the watermark to one or more pages and saves the result.
 
-    // Add another line for Stamp
-    formatText.AddNewLineText("Good Luck");
-    // BindLogo to PDF
-    logoStamp.BindLogo(formatText);
-}
+```python
+
+import aspose.pdf as pdf
+import System
+from System.Drawing import Color
+
+def add_text_stamp_to_pdf():
+    # Instantiate a Stamp object
+    logo_stamp = pdf.facades.Stamp()
+
+    # Create a FormattedText object (first line)
+    formatted_text = pdf.facades.FormattedText(
+        "Hello World!",
+        Color.FromArgb(180, 0, 0),                 # Semi-transparent red
+        pdf.facades.FontStyle.TimesItalic,         # Font style
+        pdf.facades.EncodingType.Winansi,          # Encoding
+        False,                                     # Embedded font
+        50                                         # Font size
+    )
+
+    # Add another line to the stamp
+    formatted_text.add_new_line_text("Good Luck")
+
+    # Bind formatted text to the stamp
+    logo_stamp.bind_logo(formatted_text)
+
+    return logo_stamp
 ```

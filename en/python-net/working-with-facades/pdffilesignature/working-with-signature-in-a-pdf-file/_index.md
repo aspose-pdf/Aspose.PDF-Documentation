@@ -1,280 +1,155 @@
 ---
 title: Working with Signature in PDF File
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
-url: /net/working-with-signature-in-a-pdf-file/
+url: /python-net/working-with-signature-in-a-pdf-file/
 description: This section explains how to to extract signature information, extract image from signature, change language, and etc using PdfFileSignature class.
-lastmod: "2021-06-05"
-draft: false
+lastmod: "2026-01-05"
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Working with Signature in PDF File",
-    "alternativeHeadline": "Extract Signature Details and Images from PDFs",
-    "abstract": "The new functionality in Aspose.PDF for .NET enhances PDF document security by allowing users to extract signature information and images with the PdfFileSignature class. This feature also includes the ability to customize digital signatures, suppress specific information like location and reason, and change language settings for signature text, providing a comprehensive toolset for managing PDF signatures efficiently",
-    "author": {
-        "@type": "Person",
-        "name": "Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "wordcount": "878",
-    "proficiencyLevel": "Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF for .NET",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/net/working-with-signature-in-a-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/net/working-with-signature-in-a-pdf-file/"
-    },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
-}
-</script>
 
 ## How to Extract Signature Information
 
-Aspose.PDF for .NET supports the feature to digitally sign PDF files using the PdfFileSignature class. Currently, it is also possible to determine the validity of a certificate but we cannot extract the whole certificate. The information that can be extracted is the public key, thumbprint, and issuer, etc.
+Aspose.PDF for Python via .NET supports the feature to digitally sign PDF files using the [PdfFileSignature](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilesignature/) class. Currently, it is also possible to determine the validity of a certificate but we cannot extract the whole certificate. The information that can be extracted is the public key, thumbprint, and issuer, etc.
 
-To extract signature information, we have introduced the ExtractCertificate(..) method to the PdfFileSignature class. Please take a look at the following code snippet which demonstrates the steps to extract certificate from the PdfFileSignature object:
+To extract signature information, we have introduced the [extract_certificate](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilesignature/#methods) method to the PdfFileSignature class. Please take a look at the following code snippet which demonstrates the steps to extract certificate from the PdfFileSignature object:
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractSignatureInfo()
-{ 
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
-    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
-    {
-        // Bind PDF document
-        pdfFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
-        // Get list of signature names
-        var sigNames = pdfFileSignature.GetSignatureNames();
-        if (sigNames.Count > 0)
-        {
-            SignatureName sigName = sigNames[0];            
-            // Extract signature certificate
-            Stream cerStream = pdfFileSignature.ExtractCertificate(sigName);
-            if (cerStream != null)
-            {
-                using (cerStream)
-                {
-                    using (FileStream fs = new FileStream(dataDir + "extracted_cert.pfx", FileMode.CreateNew))
-                    {
-                        cerStream.CopyTo(fs);
-                    }
-                }
-            }
-            
-        }
-    }
-}
+```python
+
+from aspose.pdf.facades import PdfFileSignature
+
+def extract_signature_info():
+    data_dir = RunExamples.get_data_dir_aspose_pdf_facades_security_signatures()
+
+    pdf_signature = PdfFileSignature()
+    pdf_signature.bind_pdf(data_dir + "signed_rsa.pdf")
+
+    signature_names = pdf_signature.get_signature_names()
+    if signature_names:
+        sig_name = signature_names[0]
+
+        # Extract certificate as a stream
+        cer_stream = pdf_signature.extract_certificate(sig_name)
+        if cer_stream is not None:
+            with open(data_dir + "extracted_cert.pfx", "wb") as fs:
+                fs.write(cer_stream.read())
 ```
 
 ## Extracting Image from Signature Field (PdfFileSignature)
 
-Aspose.PDF for .NET supports the feature to digitally sign the PDF files using the PdfFileSignature class and while signing the document, you can also set an image for SignatureAppearance. Now this API also provides the capability to extract signature information as well as the image associated with the signature field.
+Aspose.PDF for Python via .NET supports the feature to digitally sign the PDF files using the PdfFileSignature class and while signing the document, you can also set an image for SignatureAppearance. Now this API also provides the capability to extract signature information as well as the image associated with the signature field.
 
-In order to extract signature information, we have introduced the ExtractImage(..) method to the PdfFileSignature class. Please take a look at the following code snippet which demonstrates the steps to extract image from the PdfFileSignature object:
+In order to extract signature information, we have introduced the [extract_image](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilesignature/#methods) method to the PdfFileSignature class. Please take a look at the following code snippet which demonstrates the steps to extract image from the PdfFileSignature object:
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractSignatureImage()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
-    using (var signature = new Aspose.Pdf.Facades.PdfFileSignature())
-    {
-        // Bind PDF document
-        signature.BindPdf(dataDir + "ExtractingImage.pdf");
+```python
 
-        if (signature.ContainsSignature())
-        {
-            // Get list of signature names
-            foreach (string sigName in signature.GetSignatureNames())
-            {                
-                // Extract signature image
-                using (Stream imageStream = signature.ExtractImage(sigName))
-                {
-                    if (imageStream != null)
-                    {
-                        imageStream.Position = 0;
-                        using (FileStream fs = new FileStream(dataDir + "ExtractImages_out.jpg", FileMode.OpenOrCreate))
-                        {
-                            imageStream.CopyTo(fs);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+from aspose.pdf.facades import PdfFileSignature
+
+def extract_signature_image():
+    data_dir = RunExamples.get_data_dir_aspose_pdf_facades_security_signatures()
+
+    signature = PdfFileSignature()
+    signature.bind_pdf(data_dir + "ExtractingImage.pdf")
+
+    if signature.contains_signature():
+        for sig_name in signature.get_signature_names():
+            image_stream = signature.extract_image(sig_name)
+            if image_stream:
+                with open(data_dir + "ExtractedImage_out.jpg", "wb") as fs:
+                    fs.write(image_stream.read())
 ```
 
 ## Suppress Location and Reason
 
-Aspose.PDF functionality allows flexible configuration for digital sign instance. [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)class provides ability sign PDF file. Sign method implementation allows to sign the PDF and pass the particular signature object to this class. Sign method contains set of attributes for the customization of output digital sing. In case if you need to suppress some text attributes from result sing you can leave them empty. The following code snippet demonstrate how to suppress Location and Reason two rows from signature block:
+Aspose.PDF functionality allows flexible configuration for digital sign instance. [PdfFileSignature](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilesignature)class provides ability sign PDF file. Sign method implementation allows to sign the PDF and pass the particular signature object to this class. Sign method contains set of attributes for the customization of output digital sing. In case if you need to suppress some text attributes from result sing you can leave them empty. The following code snippet demonstrate how to suppress Location and Reason two rows from signature block:
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void SupressLocationReason()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
-    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
-    {
-        // Bind PDF document
-        pdfFileSignature.BindPdf(dataDir + "input.pdf");
+```python
 
-        // Create a rectangle for signature location
-        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
-        // Set signature appearance
-        pdfFileSignature.SignatureAppearance = dataDir + "aspose-logo.png";
+from aspose.pdf.facades import PdfFileSignature
+from aspose.pdf.forms import PKCS1
+from aspose.pdf import Rectangle
 
-        // Create any of the three signature types
-        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
+def suppress_location_and_reason():
+    data_dir = RunExamples.get_data_dir_aspose_pdf_facades_security_signatures()
 
-        pdfFileSignature.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
-        // Save PDF document
-        pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
-    }
-}
+    pdf_signature = PdfFileSignature()
+    pdf_signature.bind_pdf(data_dir + "input.pdf")
+
+    rect = Rectangle(10, 10, 300, 50)
+    signature = PKCS1(data_dir + "rsa_cert.pfx", "12345")
+
+    # Suppress reason and location by leaving empty strings
+    pdf_signature.sign(
+        1,
+        "",  # empty reason
+        "test01@aspose-pdf-demo.local",
+        "",  # empty location
+        True,
+        rect,
+        signature
+    )
+    pdf_signature.save(data_dir + "DigitallySign_out.pdf")
 ```
 
 ## Customization Features for Digital Sign
 
-Aspose.PDF for .NET allows customization features for a digital sign. The Sign method of class [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance)implements with 6 overloads for your comfortable usage. For example, you can configure result sign only by SignatureCustomAppearance class instance and its properties values. The following code snippet demonstrates how to hide "Digitally signed by" caption from output digital sign of your PDF. 
+This example demonstrates how to customize the visual appearance of a digital signature in a PDF document. It shows how to control signature text formatting—such as font size, font family, and the 'Signed by' label—while applying a PKCS#1 digital signature at a specified location on a page using the PdfFileSignature class.
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CustomizationFeaturesForDigitalSign()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
-    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
-    {
-        // Bind PDF document
-        pdfFileSignature.BindPdf(dataDir + "input.pdf");
+```python
 
-        // Create a rectangle for signature location
-        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
+from aspose.pdf.facades import PdfFileSignature
+from aspose.pdf.forms import PKCS1, SignatureCustomAppearance
+from aspose.pdf import Rectangle
 
-        // Create any of the three signature types
-        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
-        // Create signature appearance
-        var signatureCustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance
-        {
-            FontSize = 6,
-            FontFamilyName = "Times New Roman",
-            DigitalSignedLabel = "Signed by:"
-        };
-        // Set signature appearance
-        signature.CustomAppearance = signatureCustomAppearance;
+def customize_signature_appearance():
+    data_dir = RunExamples.get_data_dir_aspose_pdf_facades_security_signatures()
 
-        pdfFileSignature.Sign(1, true, rect, signature);
-        // Save PDF document
-        pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
-    }
-}
+    pdf_signature = PdfFileSignature()
+    pdf_signature.bind_pdf(data_dir + "input.pdf")
+
+    rect = Rectangle(10, 10, 300, 50)
+    signature = PKCS1(data_dir + "rsa_cert.pfx", "12345")
+
+    appearance = SignatureCustomAppearance()
+    appearance.font_size = 6
+    appearance.font_family_name = "Times New Roman"
+    appearance.digital_signed_label = "Signed by:"
+    signature.custom_appearance = appearance
+
+    pdf_signature.sign(1, True, rect, signature)
+    pdf_signature.save(data_dir + "DigitallySign_out.pdf")
 ```
 
 ## Change Language In Digital Sign Text
 
-Using Aspose.PDF for .NET API, you can sign a PDF file using any of the following three types of signatures:
+Our library shows how to apply a digital signature to a PDF document with a custom visual appearance that includes an image. It shows how to display a logo or graphic inside the signature field, configure text properties such as font and label, and place the signature at a specified location on the page using the PdfFileSignature class.
 
-- PKCS#1.
-- PKCS#7.
-- PKCS#12.
+```python
 
-Each of provided signatures contains a set of configuration properties implemented for your convenience(localization, date time format, font family etc). Class [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) provides corresponding functionality. The following code snippet demonstrates how to change language in digital sign text:
+from aspose.pdf.facades import PdfFileSignature
+from aspose.pdf.forms import PKCS1, SignatureCustomAppearance
+from aspose.pdf import Rectangle
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ChangeLanguageInDigitalSignText()
-{
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();   
-    
-    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
-    {
-        // Bind PDF document
-        pdfFileSignature.BindPdf(dataDir + "input.pdf");
-        // Create a rectangle for signature location
-        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
+def signature_with_image():
+    data_dir = RunExamples.get_data_dir_aspose_pdf_facades_security_signatures()
+    image_path = data_dir + "aspose-logo.jpg"
 
-        // Create any of the three signature types
-        var pkcs = new Aspose.Pdf.Forms.PKCS7(dataDir + "rsa_cert.pfx", "12345")
-        {
-            Reason = "Pruebas Firma",
-            ContactInfo = "Contacto Pruebas",
-            Location = "Población (Provincia)",
-            Date = DateTime.Now
-        };
-        
-        var signatureCustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance
-        {
-            DateSignedAtLabel = "Fecha",
-            DigitalSignedLabel = "Digitalmente firmado por",
-            ReasonLabel = "Razón",
-            LocationLabel = "Localización",
-            FontFamilyName = "Arial",
-            FontSize = 10d,
-            Culture = System.Globalization.CultureInfo.InvariantCulture,
-            DateTimeFormat = "yyyy.MM.dd HH:mm:ss"
-        };
-        // Set signature appearance
-        pkcs.CustomAppearance = signatureCustomAppearance;
-        // Sign the PDF file
-        pdfFileSignature.Sign(1, true, rect, pkcs);
-        // Save PDF document
-        pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
-    }
-}
+    pdf_signature = PdfFileSignature()
+    pdf_signature.bind_pdf(data_dir + "input.pdf")
+
+    rect = Rectangle(10, 10, 300, 50)
+    signature = PKCS1(data_dir + "rsa_cert.pfx", "12345")
+
+    appearance = SignatureCustomAppearance()
+    appearance.font_size = 6
+    appearance.font_family_name = "Times New Roman"
+    appearance.digital_signed_label = "Signed by:"
+    appearance.is_foreground_image = True  # show image on top
+
+    signature.custom_appearance = appearance
+
+    # Set the appearance image
+    pdf_signature.signature_appearance = image_path
+
+    pdf_signature.sign(1, True, rect, signature)
+    pdf_signature.save(data_dir + "DigitallySign_out.pdf")
 ```

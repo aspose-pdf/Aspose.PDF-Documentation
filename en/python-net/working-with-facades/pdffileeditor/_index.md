@@ -35,7 +35,7 @@ Page Break is a special feature that allows to reflow of the document.
 
 ## PDF Imposition
 
-Imposition is the process of arranging pages correctly prior to printing. `PdfFileEditor` provides two methods for this purpose i.e. `MakeBooklet` and `MakeNUp`. MakeBooklet method helps to arrange pages so that it'll be easy to fold or bind them after printing, however, MakeNUp method allows to print multiple pages on one page of the PDF file.
+Imposition is the process of arranging pages correctly prior to printing. `PdfFileEditor` provides two methods for this purpose i.e. `make_booklet` and `make_n_up`. MakeBooklet method helps to arrange pages so that it'll be easy to fold or bind them after printing, however, MakeNUp method allows to print multiple pages on one page of the PDF file.
 
 - [Make Booklet of PDF](/pdf/python-net/make-booklet-of-pdf/)
 - [Make NUp of PDF files](/pdf/python-net/make-nup-of-pdf-files/)

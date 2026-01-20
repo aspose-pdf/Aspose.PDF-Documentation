@@ -1,140 +1,64 @@
 ---
 title: Get PDF file information
 type: docs
-ai_search_scope: pdf_net
-ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
-url: /net/get-pdf-file-information/
+url: /python-net/get-pdf-file-information/
 description: This section explains how to get PDF File Information with Aspose.PDF Facades.
-lastmod: "2021-06-05"
-draft: false
+lastmod: "2026-01-05"
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Get PDF file information",
-    "alternativeHeadline": "Retrieve Detailed Information from PDF Files",
-    "abstract": "Unlock essential PDF metadata with the new feature that utilizes the PdfFileInfo class from Aspose.PDF for .NET Facades. This functionality allows developers to easily access and retrieve important file-specific details such as Subject, Title, Keywords, and Creator, enhancing document management and analysis processes. Streamline your PDF interactions by leveraging this powerful tool for comprehensive file information retrieval",
-    "author": {
-        "@type": "Person",
-        "name": "Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "wordcount": "285",
-    "proficiencyLevel": "Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF for .NET",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/net/get-pdf-file-information/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/net/get-pdf-file-information/"
-    },
-    "dateModified": "2024-11-25",
-    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
-}
-</script>
 
-In order to get file specific information of a PDF file, you need to create an object of [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class. After that, you can get values of the individual properties like Subject, Title, Keywords and Creator etc.
+In order to get file specific information of a PDF file, you need to create an object of [PdfFileInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffileinfo) class. After that, you can get values of the individual properties like Subject, Title, Keywords and Creator etc.
 
 The following code snippet shows you how to get PDF file information.
 
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void GetPdfInfo()
-{
-    // Define the directory for input files
-    var dataDir = RunExamples.GetDataDir_AsposePdf();
+```python
 
-    // Open PDF document
-    using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample.pdf"))
-    {
-        // Get and display PDF information
-        Console.WriteLine("Subject: {0}", fileInfo.Subject);
-        Console.WriteLine("Title: {0}", fileInfo.Title);
-        Console.WriteLine("Keywords: {0}", fileInfo.Keywords);
-        Console.WriteLine("Creator: {0}", fileInfo.Creator);
-        Console.WriteLine("Creation Date: {0}", fileInfo.CreationDate);
-        Console.WriteLine("Modification Date: {0}", fileInfo.ModDate);
+from aspose.pdf.facades import PdfFileInfo
 
-        // Check if the file is a valid PDF and if it is encrypted
-        Console.WriteLine("Is Valid PDF: {0}", fileInfo.IsPdfFile);
-        Console.WriteLine("Is Encrypted: {0}", fileInfo.IsEncrypted);
+def get_pdf_info():
+    data_dir = RunExamples.get_data_dir_aspose_pdf()
 
-        // Get dimensions of the first page
-        Console.WriteLine("Page width: {0}", fileInfo.GetPageWidth(1));
-        Console.WriteLine("Page height: {0}", fileInfo.GetPageHeight(1));
-    }
-}
+    # Open PDF document
+    pdf_info = PdfFileInfo(data_dir + "sample.pdf")
+
+    # Get and display PDF information
+    print(f"Subject: {pdf_info.subject}")
+    print(f"Title: {pdf_info.title}")
+    print(f"Keywords: {pdf_info.keywords}")
+    print(f"Creator: {pdf_info.creator}")
+    print(f"Creation Date: {pdf_info.creation_date}")
+    print(f"Modification Date: {pdf_info.mod_date}")
+
+    # Check PDF status
+    print(f"Is Valid PDF: {pdf_info.is_pdf_file}")
+    print(f"Is Encrypted: {pdf_info.is_encrypted}")
+
+    # Get dimensions of the first page (1-based index)
+    print(f"Page width: {pdf_info.get_page_width(1)}")
+    print(f"Page height: {pdf_info.get_page_height(1)}")
 ```
 
 ## Get Meta Info
 
-In order to get information, we use the [Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header) property. With 'Hashtable'  we get all the possible values.
+It shows how to read and enumerate custom metadata stored in a PDF document and how to retrieve a specific metadata entry using the PdfFileInfo class
 
-```csharp
- // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void GetMetaInfo()
-{
-    // Define the directory for input files
-    var dataDir = RunExamples.GetDataDir_AsposePdf();
+```python
 
-    // Create an instance of PdfFileInfo object
-    using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "SetMetaInfo_out.pdf"))
-    {
-        // Retrieve all existing custom attributes
-        var hashTable = new System.Collections.Hashtable(fileInfo.Header);
+from aspose.pdf.facades import PdfFileInfo
 
-        // Enumerate and display all custom attributes
-        var enumerator = hashTable.GetEnumerator();
-        while (enumerator.MoveNext())
-        {
-            string output = $"{enumerator.Key} {enumerator.Value}";
-            Console.WriteLine(output);
-        }
+def get_meta_info():
+    data_dir = RunExamples.get_data_dir_aspose_pdf()
 
-        // Retrieve and display a specific custom attribute
-        Console.WriteLine("Reviewer: " + fileInfo.GetMetaInfo("Reviewer"));
-    }
-}
+    # Create PdfFileInfo object
+    pdf_info = PdfFileInfo(data_dir + "SetMetaInfo_out.pdf")
+
+    # Retrieve all custom metadata (header dictionary)
+    meta_info = pdf_info.header
+
+    # Enumerate and display all custom attributes
+    for key, value in meta_info.items():
+        print(f"{key} {value}")
+
+    # Retrieve and display a specific custom attribute
+    print("Reviewer:", pdf_info.get_meta_info("Reviewer"))
 ```
