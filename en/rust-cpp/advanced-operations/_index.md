@@ -22,3 +22,4 @@ You'll learn different ways to:
 - [Working with Documents](/pdf/rust-cpp/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
 - [Working with Pages](/pdf/rust-cpp/working-with-pages/) - add, move or remove, rotate pages.
 - [Working with Text](/pdf/rust-cpp/working-with-text/) - add text into PDF using Aspose.PDF and Rust.
+- [Securing and Signing](/pdf/rust-cpp/securing-and-signing/) - protect and sign your PDF document programmatically
