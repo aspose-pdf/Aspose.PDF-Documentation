@@ -2,7 +2,7 @@
 title:  Encrypt PDF using Rust
 linktitle: Encrypt PDF File
 type: docs
-weight: 50
+weight: 10
 url: /rust-cpp/encrypt-pdf/
 description: Encrypt PDF File with Aspose.PDF for Rust via C++.
 lastmod: "2026-01-27"

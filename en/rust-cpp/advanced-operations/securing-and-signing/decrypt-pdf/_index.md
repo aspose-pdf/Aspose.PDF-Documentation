@@ -37,4 +37,3 @@ The PDF is opened with the owner password, decrypted to remove all security rest
       Ok(())
   }
 ```
-

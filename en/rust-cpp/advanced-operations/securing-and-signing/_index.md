@@ -2,7 +2,7 @@
 title: Securing and signing PDF in Rust
 linktitle: Securing and signing PDF
 type: docs
-weight: 140
+weight: 50
 url: /rust-cpp/securing-and-signing/
 description: This section describes the features of using a signature and securing your PDF document using Rust
 lastmod: "2026-01-27"
@@ -11,10 +11,9 @@ sitemap:
     priority: 0.7
 ---
 
-This section describes how to securely digitally sign PDF documents using Rust. The terms electronic signature and digital signature are used interchangeably, but essentially the two are different. More generally, a digital signature comes with a [certification authority](https://en.wikipedia.org/wiki/Certificate_authority) approved seal and is used to protect the signed document from tampering. Instead, an electronic signature is often used to demonstrate the intention to sign a document.
+This section explains how to encrypt and decrypt PDF documents using Rust with the Aspose.PDF for Rust library. It covers the complete workflow for securing PDF files with passwords, defining access permissions, and later removing encryption when unrestricted access is required.
 
-- [Digitally sign PDF file](/pdf/rust-cpp/sign-pdf/)
+You will learn how to create PDF documents, apply modern cryptographic protection using AES-based encryption, and control user capabilities such as printing, editing content, and filling forms. The article also demonstrates how to open password-protected PDFs using owner credentials and decrypt them to produce unrestricted documents suitable for further processing.
+
 - [Encrypt and PDF File](/pdf/rust-cpp/encrypt-pdf/)
 - [Decrypt PDF File](/pdf/rust-cpp/decrypt-pdf/)
-- [Change Password of a PDF File](/pdf/rust-cpp/change-password-pdf/)
-
