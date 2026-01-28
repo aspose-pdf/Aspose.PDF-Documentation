@@ -13,7 +13,7 @@ sitemap:
 
 ## Encrypt PDF File using using User or Owner Password
 
-If you are sending an email to someone with a PDF attachment that contains confidential  information, you might wish to add some security to it first to hold it falling into the incorrect hands. The best way to limit unauthorized access to a PDF document is to defend it with a password. To easily and securely encrypt documents, you can use Aspose.PDF for Rust via C++.
+To easily and securely encrypt documents, you can use Aspose.PDF for Rust via C++.
 
 - The **user_password**, if set, is what you need to provide in order to open a PDF. Acrobat/Reader will prompt a user to enter the user password. If it's not correct, the document will not open.
 - The **owner_password**, if set, controls permissions, such as printing, editing, extracting, commenting, etc. Acrobat/Reader will disallow these things based on the permission settings. Acrobat will require this password if you want to set/change permissions.
