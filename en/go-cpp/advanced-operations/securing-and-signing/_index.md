@@ -17,14 +17,14 @@ This section explains how to encrypt and decrypt PDF documents using Go with the
 
 | **Permission** | **Description** |
 | :- | :- |
-| Permissions:: PrintDocument | Allow printing |
-| Permissions:: ModifyContent | Allow modifying content (except forms/annotations) |
-| Permissions:: ExtractContent | Allow copying/extracting text and graphics |
-| Permissions:: ModifyTextAnnotations | Allow adding/modifying text annotations |
-| Permissions:: FillForm | Allow filling interactive forms |
-| Permissions:: ExtractContentWithDisabilities | Allow content extraction for accessibility |
-| Permissions:: AssembleDocument | Allow inserting/rotating/deleting pages or changing structure |
-| Permissions:: PrintingQuality | Allow high-quality / faithful printing |
+| PrintDocument | Allow printing |
+| ModifyContent | Allow modifying content (except forms/annotations) |
+| ExtractContent | Allow copying/extracting text and graphics |
+| ModifyTextAnnotations | Allow adding/modifying text annotations |
+| FillForm | Allow filling interactive forms |
+| ExtractContentWithDisabilities | Allow content extraction for accessibility |
+| AssembleDocument | Allow inserting/rotating/deleting pages or changing structure |
+| PrintingQuality | Allow high-quality / faithful printing |
 
 You will learn how to create PDF documents, apply modern cryptographic protection using AES-based encryption, and control user capabilities such as printing, editing content, and filling forms. The article also demonstrates how to open password-protected PDFs using owner credentials and decrypt them to produce unrestricted documents suitable for further processing.
 
