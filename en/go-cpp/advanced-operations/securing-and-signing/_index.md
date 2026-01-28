@@ -13,6 +13,19 @@ sitemap:
 
 This section explains how to encrypt and decrypt PDF documents using Go with the Aspose.PDF for Go library. It covers the complete workflow for securing PDF files with passwords, defining access permissions, and later removing encryption when unrestricted access is required.
 
+## PDF Permissions Reference
+
+| **Permission** | **Description** |
+| :- | :- |
+| PrintDocument | Allow printing |
+| ModifyContent | Allow modifying content (except forms/annotations) |
+| ExtractContent | Allow copying/extracting text and graphics |
+| ModifyTextAnnotations | Allow adding/modifying text annotations |
+| FillForm | Allow filling interactive forms |
+| ExtractContentWithDisabilities | Allow content extraction for accessibility |
+| AssembleDocument | Allow inserting/rotating/deleting pages or changing structure |
+| PrintingQuality | Allow high-quality / faithful printing |
+
 You will learn how to create PDF documents, apply modern cryptographic protection using AES-based encryption, and control user capabilities such as printing, editing content, and filling forms. The article also demonstrates how to open password-protected PDFs using owner credentials and decrypt them to produce unrestricted documents suitable for further processing.
 
 - [Encrypt and PDF File](/pdf/go-cpp/encrypt-pdf/)
