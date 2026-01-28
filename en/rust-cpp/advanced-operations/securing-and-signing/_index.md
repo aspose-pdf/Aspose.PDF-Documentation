@@ -17,3 +17,7 @@ You will learn how to create PDF documents, apply modern cryptographic protectio
 
 - [Encrypt and PDF File](/pdf/rust-cpp/encrypt-pdf/)
 - [Decrypt PDF File](/pdf/rust-cpp/decrypt-pdf/)
+- [Get Permissions](/pdf/get-permissions/)
+- [Set permissions](/pdf/rust-cpp/set_permissions/)
+- [Open a password-protected PDF](/pdf/rust-cpp/open-password-protected-pdf/)
+
