@@ -24,7 +24,7 @@ The PDF is protected with user and owner passwords, configured with specific acc
 1. Encrypt the PDF document with [encrypt](https://reference.aspose.com/pdf/go-cpp/security/encrypt/) method.
 1. Specify a user password to restrict opening the document.
 1. Specify an owner password to control permissions.
-1. Define allowed actions using a permissions bitmask.
+1. Define allowed actions using a permissions bitflag.
 1. Choose AES-128 as the encryption algorithm.
 1. Enable PDF 2.0 encryption for modern security compliance.
 1. Save the secured document using [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/), writing it to a new file.

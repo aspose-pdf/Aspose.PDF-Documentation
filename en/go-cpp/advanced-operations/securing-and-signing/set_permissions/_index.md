@@ -19,7 +19,7 @@ A new PDF document is created and protected with user and owner passwords, while
 1. Call [SetPermissions](https://reference.aspose.com/pdf/go-cpp/security/setpermissions/) to protect the document.
 1. Specify a user password to restrict access.
 1. Specify an owner password to control security settings.
-1. Define allowed operations using a permissions bitmask.
+1. Define allowed operations using a permissions bitflag.
 1. Save the PDF with permissions applied using [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/).
 
 ```go

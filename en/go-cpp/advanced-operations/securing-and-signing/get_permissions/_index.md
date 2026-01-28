@@ -20,7 +20,7 @@ The PDF is opened with the owner password, its permission flags are read, and ea
 1. Convert permission flags to readable text.
 1. Use [OpenWithPassword](https://reference.aspose.com/pdf/go-cpp/security/openwithpassword/) with the owner password to gain access to the document's security information.
 1. Ensure proper resource cleanup.
-1. Call [GetPermissions](https://reference.aspose.com/pdf/go-cpp/security/getpermissions/) to obtain the current permission bitmask assigned to the PDF.
+1. Call [GetPermissions](https://reference.aspose.com/pdf/go-cpp/security/getpermissions/) to obtain the current permission bitflag assigned to the PDF.
 1. Display the permissions.
 
 ```go
