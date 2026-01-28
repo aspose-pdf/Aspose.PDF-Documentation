@@ -11,7 +11,9 @@ sitemap:
     priority: 0.7
 ---
 
-This section explains how to encrypt and decrypt PDF documents using Rust with the Aspose.PDF for Rust library. It covers the complete workflow for securing PDF files with passwords, defining access permissions, and later removing encryption when unrestricted access is required.
+This section provides a comprehensive guide to working with secured PDF documents using Aspose.PDF for Rust via C++. It explains how to protect PDF files with passwords, manage access permissions, and safely open or unlock encrypted documents in Rust.
+
+The article walks through common security-related PDF tasks, including encrypting PDFs with modern cryptographic algorithms, decrypting password-protected files, and controlling user access through permission flags. You will also learn how to inspect existing permission settings and open secured documents using the owner's credentials for further processing.
 
 ## PDF Permissions Reference
 
