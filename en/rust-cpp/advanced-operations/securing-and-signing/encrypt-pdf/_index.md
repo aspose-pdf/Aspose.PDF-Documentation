@@ -24,7 +24,7 @@ The PDF is protected with both user and owner passwords, specific access permiss
 1. Encrypt the PDF document with [encrypt](https://reference.aspose.com/pdf/rust-cpp/security/encrypt/) method.
 1. Specify a user password to restrict opening the document.
 1. Specify an owner password to control permissions.
-1. Define allowed actions using a permissions bitmask.
+1. Define allowed actions using a permissions bitflag.
 1. Choose AES-128 as the encryption algorithm.
 1. Enable PDF 2.0 encryption for modern security compliance.
 1. Save the encrypted PDF using [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/). 
@@ -41,7 +41,7 @@ The PDF is protected with both user and owner passwords, specific access permiss
       pdf.encrypt(
           "userpass",  // User password
           "ownerpass", // Owner password
-          Permissions::PRINT_DOCUMENT | Permissions::MODIFY_CONTENT | Permissions::FILL_FORM, // Permissions bitmask
+          Permissions::PRINT_DOCUMENT | Permissions::MODIFY_CONTENT | Permissions::FILL_FORM, // Permissions bitflag
           CryptoAlgorithm::AESx128, // Encryption algorithm
           true,                     // Use PDF 2.0 encryption
       )?;

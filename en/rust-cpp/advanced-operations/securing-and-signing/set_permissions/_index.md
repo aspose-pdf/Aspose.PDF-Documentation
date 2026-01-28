@@ -19,7 +19,7 @@ A new PDF document is created and protected with user and owner passwords, while
 1. Call [set_permissions](https://reference.aspose.com/pdf/rust-cpp/security/set_permissions/) to protect the document.
 1. Specify a user password to restrict access.
 1. Specify an owner password to control security settings.
-1. Define allowed operations using a permissions bitmask.
+1. Define allowed operations using a permissions bitflag.
 1. Save the PDF with permissions applied using [save_as](https://reference.aspose.com/pdf/rust-cpp/core/save_as/).
 
 ```rs
@@ -34,7 +34,7 @@ A new PDF document is created and protected with user and owner passwords, while
         pdf.set_permissions(
             "userpass",  // User password
             "ownerpass", // Owner password
-            Permissions::PRINT_DOCUMENT | Permissions::MODIFY_CONTENT | Permissions::FILL_FORM, // Permissions bitmask
+            Permissions::PRINT_DOCUMENT | Permissions::MODIFY_CONTENT | Permissions::FILL_FORM, // Permissions bitflag
         )?;
 
         // Save the PDF-document with the updated permissions
