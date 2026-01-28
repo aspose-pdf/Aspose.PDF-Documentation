@@ -22,7 +22,7 @@ Extracting text from the PDF document is a very common and useful task. PDFs oft
 Extracting text makes PDF content searchable, allowing users to locate specific information quickly without manually reviewing the entire document.
 
 In case you want to extract text from PDF document, you can use [extract_text](https://reference.aspose.com/pdf/rust-cpp/core/extract_text/) function.
-Please check following code snippet in order to extract text from PDF file using Rust via C++.
+Please check following code snippet in order to extract text from PDF file using Rust.
 
 1. Open a PDF document with the given filename.
 1. [extract_text](https://reference.aspose.com/pdf/rust-cpp/core/extract_text/) extracts the text content from the PDF document.

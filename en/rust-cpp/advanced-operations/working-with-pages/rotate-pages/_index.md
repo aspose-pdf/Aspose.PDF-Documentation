@@ -15,7 +15,7 @@ Abstract: Aspose.PDF for Rust via C++ provides robust functionality to rotate pa
 SoftwareApplication: rust-cpp    
 ---
 
-This section describes how to change the page orientation from landscape to portrait and vice versa in an existing PDF file using Rust via C++.
+This section describes how to change the page orientation from landscape to portrait and vice versa in an existing PDF file using Rust.
 
 Rotating pages ensures proper alignment for printing or displaying PDFs in professional settings
 
