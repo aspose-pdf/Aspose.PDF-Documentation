@@ -1,5 +1,5 @@
 ---
-title: Optimize PDF Resources using Go via C++ 
+title: Optimize PDF Resources using Go
 linktitle: Optimize PDF Resources
 type: docs
 weight: 15

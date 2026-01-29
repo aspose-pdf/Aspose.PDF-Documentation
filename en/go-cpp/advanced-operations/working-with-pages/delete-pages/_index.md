@@ -1,5 +1,5 @@
 ---
-title: Delete PDF Pages with Go via C++ 
+title: Delete PDF Pages with Go
 linktitle: Delete PDF Pages
 type: docs
 weight: 30

@@ -20,7 +20,7 @@ The PDF was developed to provide a standard for presenting documents and other r
 
 Aspose.PDF for Go via C++* allows converting PDF documents to various formats. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn the sections of converting documents with code snippets.
 
-## How to use Go via C++ for conversion
+## How to use Go for conversion
 
 Word documents are the most versatile and editable possible. Converting PDF to DOC manually is a very time-consuming task. In this article, you will learn how to convert PDF to DOC and DOCX in Go.
 

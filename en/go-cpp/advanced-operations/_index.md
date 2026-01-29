@@ -1,5 +1,5 @@
 ---
-title: Advanced operations using Go via C++
+title: Advanced operations using Go
 linktitle: Advanced operations
 type: docs
 weight: 55

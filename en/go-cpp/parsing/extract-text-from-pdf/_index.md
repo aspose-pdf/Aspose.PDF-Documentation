@@ -22,7 +22,7 @@ Extracting text from the PDF document is a very common and useful task. PDFs oft
 Extracting text makes PDF content searchable, allowing users to locate specific information quickly without manually reviewing the entire document.
 
 In case you want to extract text from PDF document, you can use [ExtractText](https://reference.aspose.com/pdf/go-cpp/core/extracttext/) function.
-Please check following code snippet in order to extract text from PDF file using Go via C++.
+Please check following code snippet in order to extract text from PDF file using Go.
 
 1. Open a PDF document with the given filename.
 1. [ExtractText](https://reference.aspose.com/pdf/go-cpp/core/extracttext/) extracts the text content from the PDF document.
