@@ -6,7 +6,6 @@ weight: 30
 url: /ja/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: このセクションでは、PDF A標準に対するPDFドキュメントの検証、目次の操作、PDFの有効期限の設定、PDFファイル生成の進行状況の確認方法について説明します。
-lastmod: "2021-11-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -337,7 +336,7 @@ void ConversionProgressCallback(SharedPtr<UnifiedSaveOptions::ProgressEventHandl
         eventType = u"TotalProgress";
         break;
     }
-    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}", 
+    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}",
         eventType, eventInfo->Value, eventInfo->MaxValue));
 }
 ```

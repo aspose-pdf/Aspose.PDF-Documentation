@@ -1,12 +1,11 @@
 ---
-title: Манипулировать PDF-документом 
+title: Манипулировать PDF-документом
 linktitle: Манипулировать PDF-документом
 type: docs
 weight: 30
 url: /ru/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: Этот раздел объясняет проверку PDF-документа на соответствие стандарту PDF A, как работать с Оглавлением, как установить дату истечения срока действия PDF и как определить прогресс генерации PDF-файла.
-lastmod: "2021-11-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -282,7 +281,7 @@ void SetPDFexpiryDate() {
     // Строка для имени пути.
     String _dataDir("C:\\Samples\\");
 
-    // Строка для имени файла. 
+    // Строка для имени файла.
     String outputFileName("SetExpiryDate_out.pdf");
 
     // Создать объект Document
@@ -340,7 +339,7 @@ void ConversionProgressCallback(SharedPtr<UnifiedSaveOptions::ProgressEventHandl
         eventType = u"TotalProgress";
         break;
     }
-    Console::WriteLine(String::Format(u"Тип события: {0}, Значение: {1}, Максимальное значение: {2}", 
+    Console::WriteLine(String::Format(u"Тип события: {0}, Значение: {1}, Максимальное значение: {2}",
         eventType, eventInfo->Value, eventInfo->MaxValue));
 }
 ```
@@ -380,7 +379,7 @@ void FlattenFillablePDF() {
 
     auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-    // Преобразование заполняемых PDF 
+    // Преобразование заполняемых PDF
     if (document->get_Form()->get_Fields()->get_Count() > 0)
     {
         for (auto item : document->get_Form()->get_Fields())
