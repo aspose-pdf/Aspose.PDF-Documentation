@@ -39,3 +39,39 @@ To create a PDF using Python via .NET with Aspose.PDF, you can follow these step
     document.save(output_pdf)
 ```
 
+## How to Create a Searchable PDF document
+
+Aspose.PDF for Python via .NET allows creating and manipulating existing PDF documents. When adding Text elements to a PDF file, the resulting PDF is searchable. However, when converting an image containing text to a PDF file, the contents of the resulting PDF are not searchable. As a workaround, we can apply OCR to the resulting file so that it becomes searchable.
+
+The following is the complete code to accomplish this requirement:
+
+1. Load the PDF using 'ap.Document'.
+1. Configure rendering resolution.
+1. Use 'PngDevice.process' to convert the selected PDF page into an image.
+1. Run OCR on the generated image.
+1. Create a new PDF from OCR output.
+1. Save the searchable PDF.
+
+```python
+
+    import aspose.pdf as ap
+    import io
+    import pytesseract
+    from pathlib import Path
+
+    page_number = 1
+    image_stream = io.FileIO('image_file_path', 'x')
+    try:
+        document = ap.Document('input_file_path')
+        resolution = ap.devices.Resolution(300)
+        png_device = ap.devices.PngDevice(resolution)
+        png_device.process(document.pages[page_number], image_stream)
+        pdf = pytesseract.image_to_pdf_or_hocr(image_file_path, extension='pdf')
+        document = ap.Document(io.BytesIO(pdf))
+        document.save('output_file_path')
+    finally:
+        image_stream.close()
+        image_file = Path('image_file_path')
+        image_file.unlink(missing_ok=True)
+```
+
