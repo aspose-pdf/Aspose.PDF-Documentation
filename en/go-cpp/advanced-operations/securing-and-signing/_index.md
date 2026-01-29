@@ -32,7 +32,7 @@ You will learn how to create PDF documents, apply modern cryptographic protectio
 
 - [Encrypt and PDF File](/pdf/go-cpp/encrypt-pdf/)
 - [Decrypt PDF File](/pdf/go-cpp/decrypt-pdf/)
-- [Get Permissions](/pdf/get-permissions/)
+- [Get Permissions](/pdf/go-cpp/get-permissions/)
 - [Set permissions](/pdf/go-cpp/set_permissions/)
 - [Open a password-protected PDF](/pdf/go-cpp/open-password-protected-pdf/)
 
