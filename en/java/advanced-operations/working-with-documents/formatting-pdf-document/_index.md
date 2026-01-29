@@ -274,7 +274,6 @@ public static void GetAllFontsFromPDFDocument() {
   }
 ```
 
-
 ### Get Warnings for Font Substitution
 
 Aspose.PDF for Java provides methods to get notifications about font substitution for handling font substitution cases. 
@@ -300,7 +299,6 @@ private static void NotificationFontSubstitution()
         }
 }
 ```
-
 
 ### Improve Fonts Embedding using FontSubsetStrategy
 
