@@ -15,6 +15,16 @@ This section provides a comprehensive guide to working with secured PDF document
 
 The article walks through common security-related PDF tasks, including encrypting PDFs with modern cryptographic algorithms, decrypting password-protected files, and controlling user access through permission flags. You will also learn how to inspect existing permission settings and open secured documents using the owner's credentials for further processing.
 
+You will learn how to create PDF documents, apply modern cryptographic protection using AES-based encryption, and control user capabilities such as printing, editing content, and filling forms. The article also demonstrates how to open password-protected PDFs using owner credentials and decrypt them to produce unrestricted documents suitable for further processing.
+
+- [Encrypt and PDF File](/pdf/go-cpp/encrypt-pdf/)
+- [Decrypt PDF File](/pdf/go-cpp/decrypt-pdf/)
+- [Get Permissions](/pdf/go-cpp/get-permissions/)
+- [Set permissions](/pdf/go-cpp/set_permissions/)
+- [Open a password-protected PDF](/pdf/go-cpp/open-password-protected-pdf/)
+
+To work through the Set Permissions and Get Permissions, please refer to the PDF Permissions Reference table.  Which lists the available permission flags that can be applied to a PDF document to control how end users interact with it.
+
 ## PDF Permissions Reference
 
 | **Permission** | **Description** |
@@ -28,11 +38,4 @@ The article walks through common security-related PDF tasks, including encryptin
 | AssembleDocument | Allow inserting/rotating/deleting pages or changing structure |
 | PrintingQuality | Allow high-quality / faithful printing |
 
-You will learn how to create PDF documents, apply modern cryptographic protection using AES-based encryption, and control user capabilities such as printing, editing content, and filling forms. The article also demonstrates how to open password-protected PDFs using owner credentials and decrypt them to produce unrestricted documents suitable for further processing.
-
-- [Encrypt and PDF File](/pdf/go-cpp/encrypt-pdf/)
-- [Decrypt PDF File](/pdf/go-cpp/decrypt-pdf/)
-- [Get Permissions](/pdf/go-cpp/get-permissions/)
-- [Set permissions](/pdf/go-cpp/set_permissions/)
-- [Open a password-protected PDF](/pdf/go-cpp/open-password-protected-pdf/)
 
