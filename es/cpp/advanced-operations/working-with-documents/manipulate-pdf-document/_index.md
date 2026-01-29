@@ -1,12 +1,11 @@
 ---
-title: Manipular Documento PDF 
+title: Manipular Documento PDF
 linktitle: Manipular Documento PDF
 type: docs
 weight: 30
 url: /es/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: Esta sección explica sobre la validación del Documento PDF para el Estándar PDF A, cómo trabajar con TOC, cómo establecer la fecha de caducidad del PDF y cómo determinar el Progreso de la generación del archivo PDF.
-lastmod: "2021-11-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -235,7 +234,7 @@ void ExampleToc03() {
     // Establecer el título para la tabla de contenidos
     tocInfo->set_Title(title);
 
-    //Agregar la sección de la lista a la colección de secciones del documento Pdf  
+    //Agregar la sección de la lista a la colección de secciones del documento Pdf
     tocPage->set_TocInfo(tocInfo);
 
     tocInfo->set_IsShowPageNumbers(false);
@@ -282,7 +281,7 @@ void SetPDFexpiryDate() {
     // Cadena para el nombre de la ruta.
     String _dataDir("C:\\Samples\\");
 
-    // Cadena para el nombre del archivo. 
+    // Cadena para el nombre del archivo.
     String outputFileName("SetExpiryDate_out.pdf");
 
     // Instanciar objeto Document
@@ -340,7 +339,7 @@ void ConversionProgressCallback(SharedPtr<UnifiedSaveOptions::ProgressEventHandl
         eventType = u"TotalProgress";
         break;
     }
-    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}", 
+    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}",
         eventType, eventInfo->Value, eventInfo->MaxValue));
 }
 ```
@@ -379,7 +378,7 @@ void FlattenFillablePDF() {
 
     auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-    // Aplanar PDF Rellenable 
+    // Aplanar PDF Rellenable
     if (document->get_Form()->get_Fields()->get_Count() > 0)
     {
         for (auto item : document->get_Form()->get_Fields())
