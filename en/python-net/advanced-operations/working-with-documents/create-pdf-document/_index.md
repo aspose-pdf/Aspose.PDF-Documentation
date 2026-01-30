@@ -56,22 +56,31 @@ The following is the complete code to accomplish this requirement:
 
     import aspose.pdf as ap
     import io
+    # Requires: pip install pytesseract
+    # Also ensure the Tesseract OCR engine is installed and available on your system PATH.
     import pytesseract
     from pathlib import Path
 
+
+    # Path to the source PDF
+    input_pdf_path = "input.pdf"
+    # Path for the temporary image               
+    temp_image_path = "temp_image.png" 
+    # Path for the searchable PDF        
+    output_pdf_path = "output_searchable.pdf"  
     page_number = 1
-    image_stream = io.FileIO('image_file_path', 'x')
+    image_stream = io.FileIO(temp_image_path, 'w')
     try:
-        document = ap.Document('input_file_path')
+        document = ap.Document(input_pdf_path)
         resolution = ap.devices.Resolution(300)
         png_device = ap.devices.PngDevice(resolution)
         png_device.process(document.pages[page_number], image_stream)
-        pdf = pytesseract.image_to_pdf_or_hocr(image_file_path, extension='pdf')
-        document = ap.Document(io.BytesIO(pdf))
-        document.save('output_file_path')
-    finally:
         image_stream.close()
-        image_file = Path('image_file_path')
+        pdf = pytesseract.image_to_pdf_or_hocr(temp_image_path, extension='pdf')
+        document = ap.Document(io.BytesIO(pdf))
+        document.save(output_pdf_path)
+    finally:
+        image_file = Path(temp_image_path)
         image_file.unlink(missing_ok=True)
 ```
 
