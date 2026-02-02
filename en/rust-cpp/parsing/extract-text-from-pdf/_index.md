@@ -1,6 +1,6 @@
 ---
 title: Extract Text from PDF using Rust
-linktitle: Extract text from PDF
+linktitle: Extract Text from PDF
 type: docs
 weight: 30
 url: /rust-cpp/extract-text-from-pdf/
