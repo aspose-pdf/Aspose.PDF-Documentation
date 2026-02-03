@@ -12,6 +12,15 @@ lastmod: "2025-02-24"
 TechArticle: false 
 ---
 
+## What's new in Aspose.PDF 26.1
+
+In **Aspose.PDF for Python via .NET** 26.1, we have added:
+
+1. Performance improvements – resolved poor performance when adding text to documents and overall performance issues.
+1. Enhanced rendering accuracy – fixed missing vertical text on the left side of PDFs and corrected Chinese character rendering during PDF-to-PNG conversion.
+1. Improved HTML conversion – the API now respects line color in HTML-to-PDF conversion and fixed text overlap issues in XFA-to-Standard conversion.
+1. Bug fixes for document structure – NumberingStyle now works correctly for Heading objects, and PDF-to-HTML now preserves highlighted text color.
+
 ## What's new in Aspose.PDF 25.12
 
 Convert an HTML document into a PDF while preserving logical structure information. The resulting PDF is better suited for accessibility, tagging, and downstream processing that relies on structured document content.
