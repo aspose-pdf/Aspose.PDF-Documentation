@@ -171,3 +171,23 @@ This example converts a specific page of your PDF to Grayscale:
       Ok(())
   }
 ```
+
+## Convert PDF to booklet-style PDF
+
+Aspose.PDF for Rust via C++ explains how to convert a standard PDF document into a booklet-style PDF.
+The booklet format rearranges pages so that, when printed and folded, the document forms a proper booklet with pages in the correct order.
+
+```rs
+
+  use asposepdf::Document;
+
+  fn main() -> Result<(), Box<dyn std::error::Error>> {
+      // Open a PDF-document with filename
+      let pdf = Document::open("sample.pdf")?;
+
+      // Convert and save the previously opened PDF-document as booklet PDF-document
+      pdf.save_booklet("sample_booklet.pdf")?;
+
+      Ok(())
+  }
+```
