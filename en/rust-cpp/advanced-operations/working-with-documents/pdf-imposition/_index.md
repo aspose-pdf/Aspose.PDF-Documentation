@@ -15,7 +15,7 @@ Abstract: Aspose.PDF for Rust via C++ provides powerful tools for restructuring 
 SoftwareApplication: rust-cpp      
 ---
 
-## Make NUp of PDF files
+## Make NUp of PDF
 
 An N-Up PDF places multiple source pages onto a single output page. In this example, a 2 × 2 layout is used, so four original pages are combined into each page of the output document.
 
