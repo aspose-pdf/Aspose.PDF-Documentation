@@ -148,6 +148,28 @@ Aspose.PDF for Rust presents you online free application ["PDF to SVG"](https://
 [![Aspose.PDF Convertion PDF to SVG with Free App](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 {{% /alert %}}
 
+### Convert PDF to SVG ZIP archive
+
+The following example converts a PDF document into an SVG archive, where each page is saved as a separate SVG file inside a ZIP container.
+
+1. Open the source PDF document.
+1. Save the document as a ZIP archive containing SVG files.
+
+```rs
+
+  use asposepdf::Document;
+
+  fn main() -> Result<(), Box<dyn std::error::Error>> {
+      // Open a PDF-document with filename
+      let pdf = Document::open("sample.pdf")?;
+
+      // Convert and save the previously opened PDF-document as SVG-archive
+      pdf.save_svg_zip("sample_svg.zip")?;
+
+      Ok(())
+  }
+```
+
 ### Convert PDF to DICOM
 
 The provided Rust code snippet demonstrates how to convert the first page of a PDF document into a DICOM image using the Aspose.PDF library:
