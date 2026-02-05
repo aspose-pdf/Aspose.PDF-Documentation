@@ -27,4 +27,4 @@ You are able to do the following:
 
 - [Optimize PDF](/pdf/rust-cpp/optimize-pdf/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
 - [Optimize PDF Resources](/pdf/rust-cpp/optimize-pdf-resources/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
-- [PDF Imposition](/pdf/rust-cpp/pdf-imposition/) - how to make a Booklet or NUp of PDF files with Aspose.PDF.
+- [PDF Imposition](/pdf/rust-cpp/pdf-imposition/) - how to make a Booklet or N-Up of PDF files with Aspose.PDF.

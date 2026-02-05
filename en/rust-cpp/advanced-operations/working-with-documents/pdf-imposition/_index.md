@@ -10,12 +10,12 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to make a Booklet or NUp of PDF files
+AlternativeHeadline: How to make a Booklet or N-Up of PDF files
 Abstract: Aspose.PDF for Rust via C++ provides powerful tools for restructuring PDF documents to meet printing and layout requirements. This article demonstrates how to convert a standard PDF into a booklet, ensuring correct page order for folding, and how to create an N-Up PDF that combines multiple pages into a single sheet. Using concise Rust code examples, developers can quickly implement print-ready PDF transformations for documentation, publishing, and archival workflows.
 SoftwareApplication: rust-cpp      
 ---
 
-## Make NUp of PDF
+## Make N-Up of PDF
 
 An N-Up PDF places multiple source pages onto a single output page. In this example, a 2 × 2 layout is used, so four original pages are combined into each page of the output document.
 
