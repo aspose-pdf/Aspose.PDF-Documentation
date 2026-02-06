@@ -172,10 +172,13 @@ This example converts a specific page of your PDF to Grayscale:
   }
 ```
 
-## Convert PDF to booklet-style PDF
+## Convert PDF to Markdawn
 
-Aspose.PDF for Rust via C++ explains how to convert a standard PDF document into a booklet-style PDF.
-The booklet format rearranges pages so that, when printed and folded, the document forms a proper booklet with pages in the correct order.
+The provided Rust code snippet demonstrates how to convert PDF document into a Markdown (.md) file using Aspose.PDF for Rust.
+
+1. Open the source PDF file.
+1. Convert PDF to Markdown.
+1. Save the opened PDF document as a Markdown file.
 
 ```rs
 
@@ -185,9 +188,17 @@ The booklet format rearranges pages so that, when printed and folded, the docume
       // Open a PDF-document with filename
       let pdf = Document::open("sample.pdf")?;
 
-      // Convert and save the previously opened PDF-document as booklet PDF-document
-      pdf.save_booklet("sample_booklet.pdf")?;
+      // Convert and save the previously opened PDF-document as Markdown-document
+      pdf.save_markdown("sample.md")?;
 
       Ok(())
   }
 ```
+
+{{% alert color="success" %}}
+**Try to convert PDF to MD online**
+
+Aspose.PDF for Rust presents you online free application ["PDF to MD"](https://products.aspose.app/pdf/conversion/md), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to MD with Free App](pdf_to_md.png)](https://products.aspose.app/pdf/conversion/md)
+{{% /alert %}}
