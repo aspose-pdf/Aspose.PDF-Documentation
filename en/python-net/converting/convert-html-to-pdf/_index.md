@@ -154,6 +154,39 @@ You can display all content on one page using the 'is_render_to_single_page prop
     doc.save(path_outfile)
 ```
 
+## Create logical structure from HTML tags
+
+Logical structure (also called a tagged PDF) preserves the semantic hierarchy of the original HTML — such as headings, paragraphs, and lists — making the resulting PDF more accessible, searchable, and suitable for structured document workflows.
+
+By enabling logical structure during conversion, the HTML DOM is mapped into a PDF tag tree rather than rendered only as visual content.
+
+To meet accessibility requirements, a PDF document should include logical structure elements that define the reading order, provide alternate text for screen readers to describe illustrative parts of the document, and mark up the hierarchy of its contents.
+
+>The quality of the logical structure in the output PDF depends directly on the quality of the original HTML markup. Poorly structured or invalid HTML may result in incomplete or inaccurate logical structure in the converted PDF.
+
+1. Create an HtmlLoadOptions instance to control how the HTML is converted.
+1. Activate semantic tagging so the PDF contains structured elements.
+1. Open the HTML file using the configured options.
+1. Save the structured PDF.
+
+```python
+
+    import aspose.pdf as ap
+
+    # Path to the source HTML
+    input_html_path = "input.html"
+    # Path for the Logical Structure PDF        
+    output_pdf_path = "output_logical_structure.pdf"
+    # Initialize HtmlLoadOptions
+    options = ap.HtmlLoadOptions()
+    # Convert HTML markup to PDF logical structure elements
+    options.create_logical_structure = True
+    # Open PDF document
+    with ap.Document(input_html_path, options) as document:
+        # Save PDF document
+        document.save(output_pdf_path) 
+```
+
 ## Convert MHTML to PDF
 
 This example shows how to convert an MHT (MHTML) file into a PDF document using Aspose.PDF for Python with specific page dimensions.
