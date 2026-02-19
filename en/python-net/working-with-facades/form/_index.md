@@ -10,9 +10,9 @@ sitemap:
     priority: 0.7
 ---
 
-- [Identifying form fields names](/pdf/python-net/identifying-form-fields-names/)
-- [Justify Text in a Textbox Field](/pdf/python-net/justify-text-in-a-textbox-field/)
-- [Whats the Difference Between XML, FDF and XFDF](/pdf/python-net/whats-the-difference-between-xml-fdf-and-xfdf/)
-- [Get Button Option Value](/pdf/python-net/get-button-option-value/)
-- [Import and Export Data](/pdf/python-net/import-and-export-data/)
-
+- [Exporting Form Data](/pdf/python-net/exporting-form-data/)
+- [Importing Form Data](/pdf/python-net/importing-form-data/)
+- [Filling Form Fields](/pdf/python-net/filling-form-fields/)
+- [Button Fields and Images](/pdf/python-net/button-fields-and-images/)
+- [Managing Form Fields](/pdf/python-net/managing-form-fields/)
+- [Reading Form Values](/pdf/python-net/reading-form-values//)
