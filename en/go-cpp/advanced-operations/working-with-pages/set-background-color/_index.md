@@ -1,10 +1,10 @@
 ---
-title: Set the background color for PDF with Go via C++
+title: Set the background color for PDF with Go
 linktitle: Set background color 
 type: docs
 weight: 80
 url: /go-cpp/set-background-color/
-description: Set background color for the your PDF file with Go via C++. 
+description: Set background color for the your PDF file with Go. 
 lastmod: "2024-12-15"
 sitemap:
     changefreq: "monthly"

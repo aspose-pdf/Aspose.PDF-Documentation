@@ -79,3 +79,31 @@ Aspose.PDF for Rust presents you online free application ["PDF to Word"](https:/
 [![Aspose.PDF Convertion PDF to Word Free App](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
+
+## Convert PDF to DOCX with Enhanced Recognition Mode
+
+Convert a PDF document to a Microsoft Word (DOCX) file using Aspose.PDF for Rust with Enhanced Recognition Mode.
+
+Enhanced Recognition Mode produces a fully editable DOCX, preserving:
+
+ - Paragraph structure
+ - Tables as native Word tables
+ - Logical text flow and formatting
+
+1. Open the source PDF file.
+1. Save the PDF as a DOCX file with enhanced layout recognition enabled.
+
+```rs
+
+  use asposepdf::Document;
+
+  fn main() -> Result<(), Box<dyn std::error::Error>> {
+      // Open a PDF-document with filename
+      let pdf = Document::open("sample.pdf")?;
+
+      // Convert and save the previously opened PDF-document as DocX-document with Enhanced Recognition Mode (fully editable tables and paragraphs)
+      pdf.save_docx_enhanced("sample_enhanced.docx")?;
+
+      Ok(())
+  }
+```

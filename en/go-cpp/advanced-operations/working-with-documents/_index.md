@@ -1,5 +1,5 @@
 ---
-title: Working with PDF Documents using Go via C++
+title: Working with PDF Documents using Go
 linktitle: Working with Documents
 type: docs
 weight: 10

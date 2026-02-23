@@ -1,5 +1,5 @@
 ---
-title: Advanced operations using Go via C++
+title: Advanced operations using Go
 linktitle: Advanced operations
 type: docs
 weight: 55
@@ -22,3 +22,4 @@ You'll learn different ways to:
 - [Working with Documents](/pdf/go-cpp/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
 - [Working with Pages](/pdf/go-cpp/working-with-pages/) - add, move or remove, rotate pages.
 - [Working with Text](/pdf/go-cpp/working-with-text/) - add text into PDF using Aspose.PDF and Go.
+- [Securing and Signing](/pdf/go-cpp/securing-and-signing/) - protect and sign your PDF document programmatically.

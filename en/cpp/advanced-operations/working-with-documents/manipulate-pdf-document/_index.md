@@ -1,12 +1,11 @@
 ---
-title: Manipulate PDF Document 
+title: Manipulate PDF Document
 linktitle: Manipulate PDF Document
 type: docs
 weight: 30
 url: /cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: This section explains about validation PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and how to determine the Progress of PDF file generation.
-lastmod: "2021-11-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -234,7 +233,7 @@ void ExampleToc03() {
     // Set the title for TOC
     tocInfo->set_Title(title);
 
-    //Add the list section to the sections collection of the Pdf document  
+    //Add the list section to the sections collection of the Pdf document
     tocPage->set_TocInfo(tocInfo);
 
     tocInfo->set_IsShowPageNumbers(false);
@@ -281,7 +280,7 @@ void SetPDFexpiryDate() {
     // String for path name.
     String _dataDir("C:\\Samples\\");
 
-    // String for file name. 
+    // String for file name.
     String outputFileName("SetExpiryDate_out.pdf");
 
     // Instantiate Document object
@@ -339,7 +338,7 @@ void ConversionProgressCallback(SharedPtr<UnifiedSaveOptions::ProgressEventHandl
         eventType = u"TotalProgress";
         break;
     }
-    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}", 
+    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}",
         eventType, eventInfo->Value, eventInfo->MaxValue));
 }
 ```
@@ -379,7 +378,7 @@ void FlattenFillablePDF() {
 
     auto document = MakeObject<Document>(_dataDir + inputFileName);
 
-    // Flatten Flatten Fillable PDF 
+    // Flatten Flatten Fillable PDF
     if (document->get_Form()->get_Fields()->get_Count() > 0)
     {
         for (auto item : document->get_Form()->get_Fields())

@@ -1,12 +1,11 @@
 ---
-title: معالجة وثيقة PDF 
-linktitle: معالجة وثيقة PDF 
+title: معالجة وثيقة PDF
+linktitle: معالجة وثيقة PDF
 type: docs
 weight: 30
 url: /ar/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: تشرح هذه القسم عن التحقق من صحة وثيقة PDF لمعيار PDF A، كيفية العمل مع TOC، كيفية تعيين تاريخ انتهاء صلاحية PDF، وكيفية تحديد تقدم توليد ملف PDF.
-lastmod: "2021-11-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -281,7 +280,7 @@ void SetPDFexpiryDate() {
     // String for path name.
     String _dataDir("C:\\Samples\\");
 
-    // String for file name. 
+    // String for file name.
     String outputFileName("SetExpiryDate_out.pdf");
 
     // Instantiate Document object
@@ -339,7 +338,7 @@ void ConversionProgressCallback(SharedPtr<UnifiedSaveOptions::ProgressEventHandl
         eventType = u"TotalProgress";
         break;
     }
-    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}", 
+    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}",
         eventType, eventInfo->Value, eventInfo->MaxValue));
 }
 ```

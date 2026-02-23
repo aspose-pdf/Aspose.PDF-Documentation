@@ -6,7 +6,6 @@ weight: 30
 url: /id/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: Bagian ini menjelaskan tentang validasi Dokumen PDF untuk Standar PDF A, cara bekerja dengan TOC, cara mengatur tanggal kedaluwarsa PDF, dan cara menentukan Progres dari pembuatan file PDF.
-lastmod: "2021-11-11"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -235,7 +234,7 @@ void ExampleToc03() {
     // Atur judul untuk TOC
     tocInfo->set_Title(title);
 
-    //Tambahkan bagian daftar ke koleksi bagian dari dokumen Pdf  
+    //Tambahkan bagian daftar ke koleksi bagian dari dokumen Pdf
     tocPage->set_TocInfo(tocInfo);
 
     tocInfo->set_IsShowPageNumbers(false);
@@ -282,7 +281,7 @@ void SetPDFexpiryDate() {
     // String untuk nama path.
     String _dataDir("C:\\Samples\\");
 
-    // String untuk nama file. 
+    // String untuk nama file.
     String outputFileName("SetExpiryDate_out.pdf");
 
     // Instansiasi objek Document
@@ -340,7 +339,7 @@ void ConversionProgressCallback(SharedPtr<UnifiedSaveOptions::ProgressEventHandl
         eventType = u"TotalProgress";
         break;
     }
-    Console::WriteLine(String::Format(u"Jenis kejadian: {0}, Nilai: {1}, Nilai Maksimal: {2}", 
+    Console::WriteLine(String::Format(u"Jenis kejadian: {0}, Nilai: {1}, Nilai Maksimal: {2}",
         eventType, eventInfo->Value, eventInfo->MaxValue));
 }
 ```

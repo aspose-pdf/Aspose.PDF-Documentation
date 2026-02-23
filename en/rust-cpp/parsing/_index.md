@@ -18,3 +18,4 @@ SoftwareApplication: rust-cpp
 **Parse PDF** documents is a term releated to extraction variuous kind of information from PDF file. This section covers how to:
 
 - [Extract Text from PDF](/pdf/rust-cpp/extract-text-from-pdf/). The following example in Rust demonstrates how to use the Aspose.PDF library to extract text from a PDF file and display it in the console.
+- [Extract Data from AcroForm](/pdf/rust-cpp/extract-data-from-acroform/). The following example in Rust demonstrates how to extract form field data from PDF files.

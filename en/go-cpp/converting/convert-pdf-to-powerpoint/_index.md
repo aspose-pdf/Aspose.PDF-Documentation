@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /go-cpp/convert-pdf-to-powerpoint/
 lastmod: "2024-11-01"
-description: Aspose.PDF allows you to convert PDF to PPTX format using Go via C++.
+description: Aspose.PDF allows you to convert PDF to PPTX format using Go.
 sitemap:
     changefreq: "monthly"
     priority: 0.7

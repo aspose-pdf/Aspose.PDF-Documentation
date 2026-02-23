@@ -1,10 +1,10 @@
 ---
-title: Repair PDF with Go via C++ 
+title: Repair PDF with Go
 linktitle: Repair PDF
 type: docs
 weight: 10
 url: /go-cpp/repair-pdf/
-description: This topic describes how to Repair PDF via Go via C++ 
+description: This topic describes how to Repair PDF via Go
 lastmod: "2024-12-12"
 sitemap:
     changefreq: "monthly"
