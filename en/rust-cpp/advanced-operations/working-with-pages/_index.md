@@ -22,3 +22,6 @@ You are able to do the following:
 - [Rotate Pages](/pdf/rust-cpp/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
 - [Get and Set Page Properties](/pdf/rust-cpp/get-and-set-page-properties/) - learn how to get and set page properties for PDF documents.
 - [Set the background color for PDF](/pdf/rust-cpp/set-background-color/) - set background color for the your PDF file.
+- [Stamping](/pdf/rust-cpp/stamping/) - add text, images, number stamps into PDF.
+- [Add watermark](/pdf/rust-cpp/add-watermarks/) - add text watermark to PDF.
+- [Add Header and Footer](/pdf/rust-cpp/add-headers-and-footers-of-pdf-file/) - add headers and footers to your PDF file.
