@@ -1,114 +1,51 @@
 ---
-title: Anotación de Resaltados en PDF usando Python
-linktitle: Anotación de Resaltados
+title: Anotación de resaltados PDF usando Python
+linktitle: Anotación de resaltados
 type: docs
 weight: 20
 url: /es/python-net/highlights-annotation/
-description: Las anotaciones de marcado se presentan en el texto como resaltados, subrayados, tachados o subrayados irregulares en el texto de un documento.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Aprenda cómo agregar anotaciones de resaltado a archivos PDF en Python usando Aspose.PDF para enfatizar el texto.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guía sobre cómo manipular anotaciones de resaltados en PDF
+Abstract: El artículo ofrece una guía completa sobre cómo utilizar anotaciones de marcado de texto en documentos PDF, centrada en las funcionalidades proporcionadas por la biblioteca Aspose.PDF en Python. Explica el propósito y uso de diferentes tipos de anotaciones, incluidos los resaltados, subrayados, tachados y anotaciones onduladas, cada una diseñada para enfatizar o modificar el texto de diversas maneras. El documento describe los pasos necesarios para agregar estas anotaciones a un PDF, incluyendo la carga del documento, la creación de las anotaciones con parámetros específicos como título y color, y su inserción en la página deseada. Además, el artículo incluye fragmentos de código para recuperar anotaciones de un PDF, permitiendo a los usuarios filtrar e imprimir los detalles de las anotaciones según el tipo. Finalmente, detalla el proceso para eliminar anotaciones, proporcionando ejemplos de código para remover cada tipo de anotación de marcado de texto del documento. Esta guía sirve como un recurso práctico para desarrolladores que buscan manipular anotaciones de texto en archivos PDF de forma programática usando Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Anotación de Resaltados en PDF usando Python",
-    "alternativeHeadline": "Cómo agregar Anotaciones de Resaltados en PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, anotación de resaltados, anotación de marcado de texto",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/highlights-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/highlights-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Las anotaciones de marcado se presentan en el texto como resaltados, subrayados, tachados o subrayados irregulares en el texto de un documento."
-}
-</script>
 
+Las anotaciones de marcado de texto en PDF se utilizan para resaltar, subrayar, tachar o agregar notas al texto del documento. Estas anotaciones están destinadas a destacar o llamar la atención sobre partes específicas del texto. Tales anotaciones permiten a los usuarios marcar visualmente o modificar el contenido de un archivo PDF.
 
-Las anotaciones de marcado de texto en PDF se utilizan para resaltar, subrayar, omitir o agregar notas al texto en el documento. Estas anotaciones están destinadas a resaltar o llamar la atención sobre partes específicas del texto. Tales anotaciones permiten a los usuarios marcar o modificar visualmente el contenido de un archivo PDF.
+La anotación de resaltado se utiliza para marcar el texto con un fondo de color, usualmente amarillo, para indicar su importancia o relevancia.
 
-La anotación de resaltado se utiliza para marcar el texto con un fondo de color, generalmente amarillo, para indicar su importancia o relevancia.
+La anotación de subrayado es una línea colocada bajo el texto seleccionado para indicar importancia, énfasis o sugerir ediciones.
 
-La anotación de subrayado es una línea colocada debajo del texto seleccionado para indicar importancia, énfasis o sugerir ediciones.
+La anotación de tachado incluye la eliminación o el tachado de un texto particular para mostrar que ha sido borrado, reemplazado o que ya no es válido.
 
-La anotación de tachado incluye el tachado de un texto particular para mostrar que ha sido eliminado, reemplazado o ya no es válido.
-
-La línea ondulada se utiliza para subrayar el texto para indicar un tipo diferente de acento, como errores ortográficos, problemas potenciales o cambios propuestos.
+La línea ondulada se usa para subrayar el texto y señalar un tipo diferente de énfasis, como errores ortográficos, posibles problemas o cambios propuestos.
 
 ## Agregar anotación de marcado de texto
 
 Para agregar una anotación de marcado de texto al documento PDF, necesitamos realizar las siguientes acciones:
 
-1. Cargar el archivo PDF - nuevo objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Cargar el archivo PDF - nuevo objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) .
 1. Crear anotaciones:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) y establecer parámetros (título, color).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) y establecer parámetros (título, color).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) y establecer parámetros (título, color).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) y establecer parámetros (título, color).
-1. Después debemos añadir todas las anotaciones a la página.
+- [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) y establecer los parámetros (título, color).
+- [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) y establecer los parámetros (título, color).
+- [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) y establecer los parámetros (título, color).
+- [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) y establecer los parámetros (título, color).
+1. Después debemos agregar todas las anotaciones a la página.
 
-### Agregar Anotación de Resaltado
+### Agregar anotación de resaltado
 
 ```python
 
     import aspose.pdf as ap
 
-    # Abrir documento
+    # Open document
     document = ap.Document(input_file)
 
-    # Crear Anotación de Círculo
+    # Create Circle Annotation
     highlightAnnotation = ap.annotations.HighlightAnnotation(
         document.pages[1], ap.Rectangle(300, 750, 320, 770, True)
     )
@@ -116,8 +53,7 @@ Para agregar una anotación de marcado de texto al documento PDF, necesitamos re
     document.save(output_file)
 ```
 
-
-### Añadir Anotación de Tachado
+### Agregar anotación de tachado
 
 ```python
 
@@ -128,8 +64,8 @@ Para agregar una anotación de marcado de texto al documento PDF, necesitamos re
     strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    strikeoutAnnotation.title = "Usuario de Aspose"
-    strikeoutAnnotation.subject = "Texto insertado 1"
+    strikeoutAnnotation.title = "Aspose User"
+    strikeoutAnnotation.subject = "Inserted text 1"
     strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     strikeoutAnnotation.color = ap.Color.blue
 
@@ -137,7 +73,7 @@ Para agregar una anotación de marcado de texto al documento PDF, necesitamos re
     document.save(output_file)
 ```
 
-### Añadir Anotación de Zigzag
+### Agregar anotación ondulada
 
 ```python
 
@@ -154,7 +90,7 @@ Para agregar una anotación de marcado de texto al documento PDF, necesitamos re
     document.save(output_file)
 ```
 
-### Añadir Anotación de Subrayado
+### Agregar anotación de subrayado
 
 ```python
 
@@ -165,8 +101,8 @@ Para agregar una anotación de marcado de texto al documento PDF, necesitamos re
     underlineAnnotation = ap.annotations.UnderlineAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    underlineAnnotation.title = "Usuario de Aspose"
-    underlineAnnotation.subject = "Subrayado insertado 1"
+    underlineAnnotation.title = "Aspose User"
+    underlineAnnotation.subject = "Inserted Underline 1"
     underlineAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     underlineAnnotation.color = ap.Color.blue
 
@@ -174,12 +110,11 @@ Para agregar una anotación de marcado de texto al documento PDF, necesitamos re
     document.save(output_file)
 ```
 
-
 ## Obtener anotación de marcado de texto
 
-Intente usar el siguiente fragmento de código para obtener la anotación de marcado de texto del documento PDF.
+Por favor, intente usar el siguiente fragmento de código para obtener la anotación de marcado de texto del documento PDF.
 
-### Obtener anotación de resaltar
+### Obtener anotación de resaltado
 
 ```python
 
@@ -213,7 +148,8 @@ Intente usar el siguiente fragmento de código para obtener la anotación de mar
         print(pa.rect)
 ```
 
-### Obtener anotación de línea ondulada
+
+### Obtener anotación ondulada
 
 ```python
 
@@ -230,8 +166,7 @@ Intente usar el siguiente fragmento de código para obtener la anotación de mar
         print(pa.rect)
 ```
 
-
-### Obtener Anotación de Subrayado
+### Obtener anotación de subrayado
 
 ```python
 
@@ -248,17 +183,17 @@ Intente usar el siguiente fragmento de código para obtener la anotación de mar
         print(ta.rect)
 ```
 
-## Eliminar Anotación de Marcado de Texto
+## Eliminar anotación de marcado de texto
 
 El siguiente fragmento de código muestra cómo eliminar la anotación de marcado de texto de un archivo PDF.
 
-### Eliminar Anotación de Resaltado
+### Eliminar anotación de resaltado
 
 ```python
 
     import aspose.pdf as ap
 
-    # Cargar el archivo PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     highlightAnnotations = [
         a
@@ -272,7 +207,7 @@ El siguiente fragmento de código muestra cómo eliminar la anotación de marcad
     document.save(output_file)
 ```
 
-### Eliminar Anotación de Tachado
+### Eliminar anotación de tachado
 
 ```python
 
@@ -291,8 +226,7 @@ El siguiente fragmento de código muestra cómo eliminar la anotación de marcad
     document.save(output_file)
 ```
 
-
-### Eliminar Anotación de Línea Ondulada
+### Eliminar anotación ondulada
 
 ```python
 
@@ -311,7 +245,7 @@ El siguiente fragmento de código muestra cómo eliminar la anotación de marcad
     document.save(output_file)
 ```
 
-### Eliminar Anotación de Subrayado
+### Eliminar anotación de subrayado
 
 ```python
 
@@ -331,66 +265,4 @@ El siguiente fragmento de código muestra cómo eliminar la anotación de marcad
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

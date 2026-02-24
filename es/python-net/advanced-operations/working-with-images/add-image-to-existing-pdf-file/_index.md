@@ -1,186 +1,162 @@
 ---
-title: Añadir Imagen a PDF usando Python
-linktitle: Añadir Imagen
+title: Agregar imagen a PDF usando Python
+linktitle: Agregar imagen
 type: docs
 weight: 10
 url: /es/python-net/add-image-to-existing-pdf-file/
-description: Esta sección describe cómo añadir una imagen a un archivo PDF existente usando la biblioteca de Python.
-lastmod: "2022-02-17"
+description: Esta sección describe cómo agregar una imagen a un archivo PDF existente usando una biblioteca de Python.
+lastmod: "2025-09-27"
+TechArticle: true
+AlternativeHeadline: Cómo agregar imágenes a un PDF usando Python
+Abstract: Este artículo brinda orientación sobre cómo agregar imágenes a archivos PDF existentes usando Python con la biblioteca Aspose.PDF. Se describen dos métodos para lograrlo. El primer método implica usar la clase `Document` de Aspose.PDF, donde el usuario carga el PDF, especifica el número de página y utiliza el método `add_image` de la clase `Page` para posicionar la imagen. El documento se guarda luego con el método `save()`. El segundo método utiliza la clase `PdfFileMend` del espacio de nombres Aspose.PDF.Facades, que ofrece una interfaz más sencilla. Aquí se invoca el método `add_image()` para agregar la imagen a la página y coordenadas especificadas, seguido de guardar el PDF actualizado y cerrar el objeto `PdfFileMend`. Se proporcionan fragmentos de código para ambos métodos que demuestran el proceso.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Añadir Imagen a PDF usando Python",
-    "alternativeHeadline": "Cómo añadir Imagen a PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, añadir imagen a pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-image-to-existing-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-image-to-existing-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Esta sección describe cómo añadir una imagen a un archivo PDF existente usando la biblioteca de Python."
-}
-</script>
 
+## Agregar imagen en un archivo PDF existente
 
-## Añadir Imagen en un Archivo PDF Existente
+Este ejemplo muestra cómo insertar una imagen en una posición específica de una página PDF usando Aspose.PDF para Python a través de .NET.
 
-El siguiente fragmento de código muestra cómo añadir una imagen en el archivo PDF.
-
-1. Cargar el archivo PDF de entrada.
-1. Especificar el número de página en la que se colocará la imagen.
-1. Para definir la posición de la imagen en la página, llame al método [add_image](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) de la clase [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
-1. Llame al método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) de la clase [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Cargue el documento PDF con 'ap.Document'.
+1. Seleccione la página objetivo '(document.pages[1]' - la primera página).
+1. Utilice 'page.add_image()' para colocar la imagen:
+- Ruta del archivo de la imagen.
+- Un objeto 'Rectangle' que define las coordenadas de la imagen (left=20, bottom=730, right=120, top=830).
+1. Guarde el PDF actualizado.
 
 ```python
 
     import aspose.pdf as ap
+    from io import FileIO
+    from os import path
 
-    # Abrir documento
-    document = ap.Document(input_file)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    document.pages[1].add_image(image_file, ap.Rectangle(20, 730, 120, 830, True))
-
-    document.save(output_pdf)
+    document = ap.Document(path_infile)
+    page = document.pages[1]
+    page.add_image(
+        path.join(self.data_dir, image_file),
+        ap.Rectangle(20, 730, 120, 830, True),
+    )
+    document.save(path_outfile)
 ```
 
-## Añadir Imagen en un Archivo PDF Existente (Facades)
+## Agregar una imagen usando operadores
 
-También hay una manera alternativa, más fácil de añadir una Imagen a un archivo PDF.
- Puedes usar el método [AddImage](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/methods/addimage/index) de la clase [PdfFileMend](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/). El método [add_image()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) requiere la imagen que se va a añadir, el número de página en el que se necesita añadir la imagen y la información de coordenadas. Después de eso, guarda el archivo PDF actualizado y cierra el objeto PdfFileMend usando el método [close()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods). El siguiente fragmento de código te muestra cómo añadir una imagen en un archivo PDF existente.
+El siguiente fragmento de código muestra un enfoque de bajo nivel para agregar una imagen a una página PDF trabajando manualmente con operadores PDF en lugar de métodos auxiliares de alto nivel.
+
+Pasos:
+
+1. Cree un nuevo 'Document' en blanco.
+1. Añada una página y establezca su tamaño (842 × 595 - A4 horizontal).
+1. Acceda a los recursos de imágenes de la página (page.resources.images).
+1. Cargue el archivo de imagen en un flujo y agréguelo a los recursos.
+- El método devuelve un 'image_id'.
+- El nuevo objeto de imagen agregado se recupera de los recursos.
+1. Defina un rectángulo que mantenga la relación de aspecto de la imagen:
+1. Construya una secuencia de operadores:
+- 'GSave()' - Guardar el estado gráfico actual.
+- 'ConcatenateMatrix(matrix)' - Aplicar transformación (escalar y centrar verticalmente la imagen en la página).
+- 'Do(image_id)' - Renderizar la imagen.
+- 'GRestore()' - Restaurar el estado gráfico.
+1. Añada la secuencia de operadores a 'page.contents'.
+1. Guarde el PDF resultante.
 
 ```python
 
     import aspose.pdf as ap
+    from io import FileIO
+    from os import path
 
-    # Abrir documento
-    mender = ap.facades.PdfFileMend()
+    path_infile = path.join(self.data_dir, image_file)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    # Crear objeto PdfFileMend para añadir texto
-    mender.bind_pdf(input_file)
+    document = ap.Document()
+    page = document.pages.add()
+    page.set_page_size(842,595)
 
-    # Añadir imagen en el archivo PDF
-    mender.add_image(image_file, 1, 100.0, 600.0, 200.0, 700.0)
+    # Get page resources
+    resources_images = page.resources.images
 
-    # Guardar cambios
-    mender.save(output_pdf)
+    # Add image to resources
+    image_stream = FileIO(path.join(self.data_dir, path_infile), "rb")
+    image_id = resources_images.add(image_stream)
 
-    # Cerrar objeto PdfFileMend
-    mender.close()
+    x_image = list(resources_images)[-1]
 
+    rectangle = ap.Rectangle(
+        0,
+        0,
+        page.media_box.width,
+        (page.media_box.width * x_image.height) / x_image.width,
+        True,
+    )
+
+    # Create operator sequence for adding image
+    operators = []
+
+    # Save graphics state
+    operators.append(ap.operators.GSave())
+
+    # Set transformation matrix (position and size)
+    matrix = ap.Matrix(
+        rectangle.urx - rectangle.llx,
+        0,
+        0,
+        rectangle.ury - rectangle.lly,
+        rectangle.llx,
+        rectangle.llx + (page.media_box.height - rectangle.height) / 2,
+    )
+    operators.append(ap.operators.ConcatenateMatrix(matrix))
+
+    # Draw the image
+    operators.append(ap.operators.Do(image_id))
+
+    # Restore graphics state
+    operators.append(ap.operators.GRestore())
+
+    # Add operators to page contents
+    page.contents.add(operators)
+
+    document.save(path_outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Python a través de .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulación de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Agregar imagen con texto alternativo
+
+Este ejemplo muestra cómo agregar una imagen a una página PDF y asignar texto alternativo (alt text) para cumplir con la accesibilidad (como PDF/UA).
+
+1. Cree un nuevo 'Document' y añada una página (842 × 595, A4 horizontal).
+1. Coloque la imagen en la página usando 'page.add_image()' con un rectángulo que cubra toda la página.
+1. Acceda a los recursos de imágenes de la página ('page.resources.images').
+1. Defina una cadena de texto alternativo (p., ej., 'Alternative text for image').
+1. Recupere el primer objeto de imagen de los recursos ('x_image = resources_images[1]').
+1. Use 'try_set_alternative_text(alt_text, page)' para asignar texto alternativo a la imagen.
+1. Guarde el PDF resultante.
+
+```python
+
+    import aspose.pdf as ap
+    from io import FileIO
+    from os import path
+
+    path_image_file = path.join(self.data_dir, image_file)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = ap.Document()
+    page = document.pages.add()
+    page.set_page_size(842,595)
+
+    page.add_image(
+        path_image_file,
+        ap.Rectangle(0, 0, 842, 595, True),
+    )
+
+    resources_images = page.resources.images
+    alt_text = "Alternative text for image"
+    x_image = resources_images[1]
+    result = x_image.try_set_alternative_text(alt_text, page)
+
+    # If set is successful, then get the alternative text for the image
+    if (result):
+        print ("Text has been added successfuly")
+    document.save(path_outfile)
+```

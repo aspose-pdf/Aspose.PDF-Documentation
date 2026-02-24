@@ -1,105 +1,44 @@
 ---
-title: Añadiendo un archivo adjunto a un documento PDF utilizando Python
-linktitle: Añadiendo un archivo adjunto a un documento PDF
+title: Agregar un adjunto a un documento PDF usando Python
+linktitle: Agregar un adjunto a un documento PDF
 type: docs
 weight: 10
 url: /es/python-net/add-attachment-to-pdf-document/
-description: Esta página describe cómo agregar un archivo adjunto a un archivo PDF con Aspose.PDF para Python a través de la biblioteca .NET.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Esta página describe cómo agregar un adjunto a un archivo PDF con Aspose.PDF para Python a través de la biblioteca .NET.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cómo agregar adjuntos a PDF con Python
+Abstract: Este artículo ofrece una guía paso a paso sobre cómo agregar adjuntos a un archivo PDF usando Python y la biblioteca Aspose.PDF. Detalla el proceso de configurar un nuevo proyecto Python, importar el paquete necesario de Aspose.PDF y crear un objeto `Document`. El artículo explica cómo crear un objeto `FileSpecification` con el archivo deseado y la descripción, y cómo agregar este objeto a la `EmbeddedFileCollection` del documento PDF mediante el método `add`. La `EmbeddedFileCollection` contiene todos los adjuntos dentro del PDF. Se incluye un fragmento de código para demostrar el proceso de abrir un documento, configurar un archivo para adjuntar, añadirlo a la colección de adjuntos del documento y guardar el PDF actualizado.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Añadiendo un archivo adjunto a un documento PDF mediante Python",
-    "alternativeHeadline": "Cómo agregar archivos adjuntos a PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, archivos adjuntos en pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-attachment-to-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-attachment-to-pdf-document/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Esta página describe cómo agregar un archivo adjunto a un archivo PDF con Aspose.PDF para Python a través de la biblioteca .NET"
-}
-</script>
 
+Los adjuntos pueden contener una amplia variedad de información y pueden ser de diversos tipos de archivo. Este artículo explica cómo agregar un adjunto a un archivo PDF.
 
-Attachments pueden contener una amplia variedad de información y pueden ser de diversos tipos de archivos. Este artículo explica cómo agregar un adjunto a un archivo PDF.
+1. Crear un nuevo proyecto Python.
+1. Importar el paquete Aspose.PDF
+1. Crear un objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 
+1. Crear un objeto [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) con el archivo que está añadiendo y la descripción del archivo.
+1. Añadir el objeto [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) al objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) en la colección [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) usando el método [add](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) de la colección.
 
-1. Crea un nuevo proyecto de Python.
-1. Importa el paquete Aspose.PDF
-1. Crea un objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Crea un objeto [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) con el archivo que estás agregando y la descripción del archivo.
-1. Agrega el objeto [FileSpecification](https://reference.aspose.com/pdf/python-net/aspose.pdf/filespecification/) a la colección [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) del objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), con el método [add](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/#methods) de la colección.
-
-La colección [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) contiene todos los adjuntos en el archivo PDF.
- El siguiente fragmento de código te muestra cómo agregar un adjunto en un documento PDF.
+La colección [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) contiene todos los adjuntos en el archivo PDF. El siguiente fragmento de código le muestra cómo agregar un adjunto en un documento PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Abrir documento
+    # Open document
     document = ap.Document(input_pdf)
 
-    # Configurar nuevo archivo para ser agregado como adjunto
-    fileSpecification = ap.FileSpecification(attachment_file, "Archivo de texto de ejemplo")
+    # Setup new file to be added as attachment
+    fileSpecification = ap.FileSpecification(attachment_file, "Sample text file")
 
-    # Añadir adjunto a la colección de adjuntos del documento
+    # Add attachment to document's attachment collection
     document.embedded_files.append(fileSpecification)
 
-    # Guardar nuevo resultado
+    # Save new output
     document.save(output_pdf)
+```
+
+

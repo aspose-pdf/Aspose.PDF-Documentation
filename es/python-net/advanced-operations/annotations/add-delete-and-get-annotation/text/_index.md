@@ -1,96 +1,32 @@
 ---
-title: Uso de Anotación de Texto para PDF a través de Python
-linktitle: Anotación de Texto
+title: Uso de anotación de texto para PDF con Python
+linktitle: Anotación de texto
 type: docs
 weight: 10
 url: /es/python-net/text-annotation/
-description: Aspose.PDF para Python le permite Agregar, Obtener y Eliminar Anotación de Texto de su documento PDF.
-lastmod: "2023-02-17"
-sitemap:
+description: Aspose.PDF para Python le permite agregar, obtener y eliminar anotaciones de texto de su documento PDF.
+lastmod: "2025-02-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true
+AlternativeHeadline: Guía sobre cómo manipular anotaciones de texto en PDF
+Abstract: Este artículo proporciona una guía completa sobre cómo manipular anotaciones de texto dentro de archivos PDF utilizando la biblioteca Aspose.PDF para Python. Cubre la adición, recuperación y eliminación de varios tipos de anotaciones, incluyendo Text, Free Text y StrikeOutAnnotations. Las anotaciones de texto son notas adjuntas a una ubicación específica dentro de un PDF, mostradas como iconos que revelan el texto en una ventana emergente al abrirse. Las anotaciones de texto libre muestran el texto directamente en la página, mientras que las StrikeOutAnnotations tapan el texto con una línea para indicar su eliminación o desestimación. El proceso implica agregar anotaciones a la colección Annotations de una página usando el método `add()`, y se proporcionan ejemplos para cada tipo de anotación. Los fragmentos de código ilustran cómo implementar estas tareas, incluyendo la creación de anotaciones con propiedades específicas como título, asunto, color y banderas, así como la recuperación y eliminación de anotaciones de páginas PDF. Esta guía sirve como un recurso práctico para desarrolladores que buscan mejorar documentos PDF mediante la manipulación de anotaciones usando Aspose.PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Uso de Anotación de Texto para PDF a través de Python",
-    "alternativeHeadline": "Cómo agregar Anotación de Texto en PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, anotación de texto",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/text-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/text-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF para Python le permite Agregar, Obtener y Eliminar Anotación de Texto de su documento PDF."
-}
-</script>
 
+## Cómo agregar anotación de texto a un archivo PDF existente
 
-## Cómo agregar una anotación de texto a un archivo PDF existente
+Una anotación de texto es una anotación adjunta a una ubicación específica en un documento PDF. Cuando está cerrada, la anotación se muestra como un ícono; cuando se abre, debe mostrar una ventana emergente que contiene el texto de la nota con la fuente y el tamaño elegidos por el lector.
 
-Una anotación de texto es una anotación adjunta a una ubicación específica en un documento PDF. Cuando está cerrada, la anotación se muestra como un ícono; cuando está abierta, debería mostrar una ventana emergente que contenga el texto de la nota en la fuente y tamaño elegidos por el lector.
+Las anotaciones se encuentran en la colección [Anotaciones](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) de una página en particular. Esta colección contiene las anotaciones sólo de esa página individual; cada página tiene su propia colección de Anotaciones.
 
-Las anotaciones están contenidas en la colección [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) de una página en particular. Esta colección contiene las anotaciones solo para esa página individual; cada página tiene su propia colección de Annotations.
+Para agregar una anotación a una página concreta, agréguela a la colección de Anotaciones de esa página con el método [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods).
 
-Para agregar una anotación a una página en particular, agrégala a la colección Annotations de esa página con el método [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods).
+1. Primero, cree una anotación que desea agregar al PDF.
+1. Luego abra el PDF de entrada.
+1. Añada la anotación a la colección [Anotaciones](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) del objeto 'page'.
 
-1. Primero, crea una anotación que desees agregar al PDF.
-1. Luego abre el PDF de entrada.
-
-1. Agrega la anotación a la colección de [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) del objeto 'page'.
-
-El siguiente fragmento de código te muestra cómo agregar una anotación en una página PDF.
+El siguiente fragmento de código le muestra cómo agregar una anotación en una página PDF.
 
 ```python
 
@@ -101,8 +37,8 @@ El siguiente fragmento de código te muestra cómo agregar una anotación en una
     textAnnotation = ap.annotations.TextAnnotation(
         document.pages[1], ap.Rectangle(300, 700.664, 320, 720.769, True)
     )
-    textAnnotation.title = "Usuario de Aspose"
-    textAnnotation.subject = "Texto insertado 1"
+    textAnnotation.title = "Aspose User"
+    textAnnotation.subject = "Inserted text 1"
     textAnnotation.contents = "qwerty"
     textAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     textAnnotation.color = ap.Color.blue
@@ -111,7 +47,7 @@ El siguiente fragmento de código te muestra cómo agregar una anotación en una
     document.save(output_file)
 ```
 
-## Obtener anotación de texto del archivo PDF
+## Obtener anotación de texto de un archivo PDF
 
 ```python
 
@@ -127,7 +63,6 @@ El siguiente fragmento de código te muestra cómo agregar una anotación en una
     for ta in textAnnotations:
         print(ta.rect)
 ```
-
 
 ## Eliminar anotación de texto de un archivo PDF
 
@@ -148,15 +83,16 @@ El siguiente fragmento de código te muestra cómo agregar una anotación en una
     document.save(output_file)
 ```
 
+
 ## Cómo agregar (o crear) una nueva anotación de texto libre
 
-Una anotación de texto libre muestra texto directamente en la página. La clase [FreeTextAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) permite crear este tipo de anotación. En el siguiente fragmento, agregamos una anotación de texto libre sobre la primera aparición de la cadena.
+Una anotación de texto libre muestra texto directamente en la página. La clase [FreeTextAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) permite crear este tipo de anotación. En el siguiente fragmento, agregamos una anotación de texto libre encima de la primera aparición de la cadena.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Cargar el archivo PDF
+    # Load the PDF file
     document = ap.Document(input_file)
 
     freeTextAnnotation = ap.annotations.FreeTextAnnotation(
@@ -168,7 +104,6 @@ Una anotación de texto libre muestra texto directamente en la página. La clase
     document.pages[1].annotations.append(freeTextAnnotation)
     document.save(output_file)
 ```
-
 
 ## Obtener anotación de texto libre de un archivo PDF
 
@@ -193,7 +128,7 @@ Una anotación de texto libre muestra texto directamente en la página. La clase
 
     import aspose.pdf as ap
 
-    # Cargar el archivo PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     freeTextAnnotations = [
         a
@@ -207,10 +142,10 @@ Una anotación de texto libre muestra texto directamente en la página. La clase
     document.save(output_file)
 ```
 
-### Tachado de palabras usando StrikeOutAnnotation
 
-Aspose.PDF para Python te permite agregar, eliminar y actualizar anotaciones en documentos PDF.
- Una de las clases también te permite tachar anotaciones. Cuando se aplica una StrikeOutAnnotation a un PDF, se dibuja una línea a través del texto especificado, indicando que debe ser eliminado o ignorado.
+### Tachar palabras usando StrikeOutAnnotation
+
+Aspose.PDF para Python le permite agregar, eliminar y actualizar anotaciones en documentos PDF. Una de las clases también le permite tachar anotaciones. Cuando se aplica una StrikeOutAnnotation a un PDF, se dibuja una línea a través del texto especificado, indicando que debe ser eliminado o ignorado.
 
 El siguiente fragmento de código muestra cómo agregar una [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) a un PDF.
 
@@ -223,14 +158,15 @@ El siguiente fragmento de código muestra cómo agregar una [StrikeOutAnnotation
     strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    strikeoutAnnotation.title = "Usuario de Aspose"
-    strikeoutAnnotation.subject = "Texto insertado 1"
+    strikeoutAnnotation.title = "Aspose User"
+    strikeoutAnnotation.subject = "Inserted text 1"
     strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     strikeoutAnnotation.color = ap.Color.blue
 
     document.pages[1].annotations.append(strikeoutAnnotation)
     document.save(output_file)
 ```
+
 
 ## Obtener StrikeOutAnnotation de PDF
 
@@ -269,66 +205,4 @@ El siguiente fragmento de código muestra cómo agregar una [StrikeOutAnnotation
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulación de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+
