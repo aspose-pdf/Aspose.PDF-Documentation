@@ -20,6 +20,7 @@ Investigate the most basic features and requirements of the Aspose.PDF for Rust 
 To find out more about Aspose.PDF, select the appropriate section:
 
 - [Installation](/pdf/rust-cpp/installation/) – provides information on how to install Aspose.PDF.
+- [Runtime Configuration](/pdf/rust-cpp/runtime-configuration/) – how to configure RPATH in Rust to ensure your application can locate the Aspose.PDF native library at runtime on Linux and macOS, with project-level, environment-based, and system-wide setup options.
 - [System Requirements](/pdf/rust-cpp/system-requirements/) – provides information about system and development environment requirements.
 - [Hello World](/pdf/rust-cpp/hello-world-example/) – provides information on how to create simple PDF document using Rust and Aspose.PDF.
 - [Supported Document Formats](/pdf/rust-cpp/supported-file-formats/) – provides information about supported formats.
