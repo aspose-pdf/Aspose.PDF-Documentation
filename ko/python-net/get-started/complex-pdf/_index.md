@@ -4,76 +4,92 @@ linktitle: 복잡한 PDF 만들기
 type: docs
 weight: 30
 url: /ko/python-net/complex-pdf-example/
-description: Aspose.PDF for Python via .NET을 사용하면 하나의 문서에 이미지, 텍스트 조각 및 테이블이 포함된 더 복잡한 문서를 만들 수 있습니다.
-lastmod: "2022-12-22"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF for Python via .NET는 이미지, 텍스트 조각 및 표가 포함된 보다 복잡한 문서를 하나의 문서에 만들 수 있게 합니다.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python을 사용하여 복잡한 PDF 만들기
+Abstract: 이 문서는 "Hello, World" 예제에서 보여준 기본 PDF 생성 프로세스를 확장하여 Python과 Aspose.PDF를 사용해 보다 복잡한 PDF 문서를 만드는 방법을 설명합니다. 예제 문서는 가상의 여객 페리 서비스 회사를 위해 개발되었으며 이미지, 두 개의 텍스트 조각(헤더와 단락), 그리고 표를 포함합니다. 이 과정은 여러 단계로 이루어집니다 - 빈 PDF를 만들기 위해 `Document` 객체를 인스턴스화하고, `Page`를 추가한 뒤 페이지에 `Image`를 삽입합니다. 헤더를 위해 Arial 폰트 24pt 크기와 중앙 정렬을 사용하여 `TextFragment`를 생성하고 이를 페이지의 단락에 추가합니다. 설명을 위해 Times New Roman 폰트 14pt 크기와 왼쪽 정렬을 사용한 두 번째 `TextFragment`를 추가합니다. 그 다음, 특정 열 너비, 테두리 및 패딩으로 표를 생성하고 서식화합니다. 표는 강조된 셀을 가진 헤더 행과 반복을 통해 생성된 여러 데이터 행을 포함합니다.
 ---
 
-[Hello, World](/pdf/ko/python-net/hello-world-example/) 예제는 Python과 Aspose.PDF를 사용하여 PDF 문서를 만드는 간단한 단계를 보여주었습니다. 이 글에서는 Aspose.PDF for Python을 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예제로 여객 페리 서비스를 운영하는 가상의 회사의 문서를 가져오겠습니다. 우리의 문서에는 이미지, 두 개의 텍스트 조각(헤더 및 단락), 그리고 테이블이 포함될 것입니다.
+[안녕, 세상](/pdf/python-net/hello-world-example/) 예제는 Python과 Aspose.PDF를 사용하여 PDF 문서를 만드는 간단한 단계를 보여줍니다. 이 문서에서는 Aspose.PDF for Python으로 더 복잡한 문서를 만드는 방법을 살펴봅니다. 예제로, 여객 페리 서비스를 운영하는 가상의 회사 문서를 사용해 보겠습니다. 우리의 문서는 이미지 하나, 두 개의 텍스트 조각(헤더와 단락), 그리고 표를 포함합니다.
 
-문서를 처음부터 만들려면 특정 단계를 따라야 합니다:
+문서를 처음부터 만들 경우 특정 단계들을 따라야 합니다:
 
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 객체를 인스턴스화합니다. 이 단계에서는 메타데이터가 포함된 빈 PDF 문서를 생성하지만 페이지는 없습니다.
-1. 문서 객체에 [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)를 추가합니다. 이제 문서에 한 페이지가 추가됩니다.
-1. 페이지에 [Image](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/)를 추가합니다.
-1. 헤더를 위한 [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/)를 생성합니다. 헤더에는 Arial 폰트, 글꼴 크기 24pt, 가운데 정렬을 사용할 것입니다.
-1. 페이지 [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties)에 헤더를 추가합니다.
-1. 설명을 위한 [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/)를 생성합니다. 설명에는 Arial 폰트, 글꼴 크기 24pt, 가운데 정렬을 사용할 것입니다.
-1. 페이지의 Paragraphs에 설명을 추가합니다.
-1. 테이블을 생성하고, 테이블 속성을 추가합니다.
-
-1. 페이지에 (테이블)을 추가합니다 [단락](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties).
-1. 문서를 저장합니다 "Complex.pdf".
+1. [문서](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 객체를 인스턴스화합니다. 이 단계에서는 메타데이터가 포함된 빈 PDF 문서를 페이지 없이 생성합니다.
+1. 문서 객체에 [페이지](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)를 추가합니다. 이제 우리 문서는 한 페이지를 갖게 됩니다.
+1. [이미지](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/)를 페이지에 추가합니다.
+1. 헤더용 [텍스트 조각](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/)을 생성합니다. 헤더에는 Arial 폰트를 24pt 크기로 중앙 정렬하여 사용합니다.
+1. 헤더를 페이지의 [단락](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties)에 추가합니다.
+1. 설명용 [텍스트 조각](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/)을 생성합니다. 설명에는 Arial 폰트를 24pt 크기로 중앙 정렬하여 사용합니다.
+1. (description)를 페이지의 단락에 추가합니다.
+1. 표를 만들고 스타일을 지정합니다. 열 너비, 테두리, 패딩 및 폰트를 설정합니다.
+1. (table)를 페이지의 [단락](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties)에 추가합니다.
+1. 문서 "Complex.pdf"를 저장합니다.
 
 ```python
 
-    import aspose.pdf as ap
+from datetime import timedelta
+import aspose.pdf as ap
 
-    # 문서 객체 초기화
+def run_complex(self):
+
+    # Initialize document object
     document = ap.Document()
-    # 페이지 추가
+    # Add page
     page = document.pages.add()
 
-    # 이미지 추가
-    page.add_image(image_file, ap.Rectangle(20, 730, 120, 830, True))
+    # Add image
+    imageFileName = self.data_dir + "logo.png"
+    page.add_image(imageFileName, ap.Rectangle(20, 730, 120, 830, True))
 
-    # 헤더 추가
-    header = ap.text.TextFragment("2020년 가을 새로운 페리 노선")
+    # Add Header
+    header = ap.text.TextFragment("New ferry routes in Fall 2029")
     header.text_state.font = ap.text.FontRepository.find_font("Arial")
     header.text_state.font_size = 24
     header.horizontal_alignment = ap.HorizontalAlignment.CENTER
     header.position = ap.text.Position(130, 720)
     page.paragraphs.add(header)
 
-    # 설명 추가
-    descriptionText = "방문객은 온라인으로 티켓을 구매해야 하며, 티켓은 하루에 5,000개로 제한됩니다. \
-    페리 서비스는 절반 용량으로 운영되며 일정이 축소됩니다. 대기줄을 예상하세요."
+    # Add description
+    descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. \
+    Ferry service is operating at half capacity and on a reduced schedule. Expect lineups."
     description = ap.text.TextFragment(descriptionText)
-    description.text_state.font = ap.text.FontRepository.find_font("Times New Roman")
+    description.text_state.font = ap.text.FontRepository.find_font(
+        "Times New Roman"
+    )
     description.text_state.font_size = 14
     description.horizontal_alignment = ap.HorizontalAlignment.LEFT
     page.paragraphs.add(description)
 
-    # 테이블 추가
+    # Add table
     table = ap.Table()
 
     table.column_widths = "200"
-    table.border = ap.BorderInfo(ap.BorderSide.BOX, 1.0, ap.Color.dark_slate_gray)
-    table.default_cell_border = ap.BorderInfo(ap.BorderSide.BOX, 0.5, ap.Color.black)
+    table.border = ap.BorderInfo(
+        ap.BorderSide.BOX, 1.0, ap.Color.dark_slate_gray
+    )
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.BOX, 0.5, ap.Color.black
+    )
     table.default_cell_padding = ap.MarginInfo(4.5, 4.5, 4.5, 4.5)
     table.margin.bottom = 10
-    table.default_cell_text_state.font = ap.text.FontRepository.find_font("Helvetica")
+    table.default_cell_text_state.font = ap.text.FontRepository.find_font(
+        "Helvetica"
+    )
 
     headerRow = table.rows.add()
-    headerRow.cells.add("출발 도시")
-    headerRow.cells.add("출발 섬")
+    headerRow.cells.add("Departs City")
+    headerRow.cells.add("Departs Island")
 
     i = 0
     while i < headerRow.cells.count:
         headerRow.cells[i].background_color = ap.Color.gray
-        headerRow.cells[i].default_cell_text_state.foreground_color = ap.Color.white_smoke
+        headerRow.cells[i].default_cell_text_state.foreground_color = (
+            ap.Color.white_smoke
+        )
         i += 1
 
     time = timedelta(hours=6, minutes=0)
@@ -89,5 +105,6 @@ sitemap:
 
     page.paragraphs.add(table)
 
-    document.save(output_pdf)
+    document.save(self.data_dir + "Complex.pdf")
 ```
+

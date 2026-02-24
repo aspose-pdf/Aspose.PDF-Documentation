@@ -1,94 +1,30 @@
 ---
-title: Python을 통한 PDF의 텍스트 주석 사용
+title: Python을 사용한 PDF 텍스트 주석 활용
 linktitle: 텍스트 주석
 type: docs
 weight: 10
 url: /ko/python-net/text-annotation/
-description: Aspose.PDF for Python은 PDF 문서에서 텍스트 주석을 추가, 가져오기 및 삭제할 수 있도록 합니다.
-lastmod: "2023-02-17"
-sitemap:
+description: Aspose.PDF for Python을 사용하면 PDF 문서에서 텍스트 주석을 추가, 가져오기 및 삭제할 수 있습니다.
+lastmod: "2025-02-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true
+AlternativeHeadline: PDF에서 텍스트 주석을 조작하는 방법에 대한 가이드
+Abstract: 이 문서는 Aspose.PDF for Python 라이브러리를 사용하여 PDF 파일 내에서 텍스트 주석을 조작하는 포괄적인 가이드를 제공합니다. 여기에서는 Text, Free Text, StrikeOutAnnotations와 같은 다양한 주석 유형의 추가, 검색 및 삭제에 대해 다룹니다. 텍스트 주석은 PDF의 특정 위치에 첨부된 메모이며, 아이콘으로 표시되어 열면 팝업 창에 텍스트가 나타납니다. Free Text 주석은 페이지에 직접 텍스트를 표시하고, StrikeOutAnnotations는 텍스트에 선을 그어 제거하거나 무시함을 나타냅니다. 이 과정은 `add()` 메서드를 사용하여 페이지의 Annotations 컬렉션에 주석을 추가하는 것을 포함하며, 각 주석 유형에 대한 예제가 제공됩니다. 코드 스니펫은 제목, 주제, 색상 및 플래그와 같은 특정 속성을 가진 주석을 생성하고, PDF 페이지에서 주석을 검색 및 삭제하는 방법을 보여줍니다. 이 가이드는 Aspose.PDF를 사용하여 주석 조작을 통해 PDF 문서를 향상시키고자 하는 개발자에게 실용적인 자료가 됩니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Python을 통한 PDF의 텍스트 주석 사용",
-    "alternativeHeadline": "PDF에 텍스트 주석 추가하는 방법",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, text annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/text-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/text-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for Python은 PDF 문서에서 텍스트 주석을 추가, 가져오기 및 삭제할 수 있도록 합니다."
-}
-</script>
-
 
 ## 기존 PDF 파일에 텍스트 주석 추가하는 방법
 
-텍스트 주석은 PDF 문서의 특정 위치에 첨부된 주석입니다. 주석이 닫혀 있을 때는 아이콘으로 표시되고, 열리면 독자가 선택한 글꼴과 크기로 메모 텍스트가 포함된 팝업 창을 표시해야 합니다.
+텍스트 주석은 PDF 문서의 특정 위치에 첨부된 주석입니다. 닫힌 상태에서는 아이콘으로 표시되며, 열면 독자가 선택한 글꼴과 크기로 메모 텍스트가 포함된 팝업 창이 표시됩니다.
 
-주석은 특정 페이지의 [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) 컬렉션에 포함되어 있습니다. 이 컬렉션은 해당 개별 페이지에 대한 주석만 포함합니다. 각 페이지에는 고유한 Annotations 컬렉션이 있습니다.
+주석은 특정 페이지의 [주석](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) 컬렉션에 포함됩니다. 이 컬렉션은 해당 페이지에만 적용되는 주석을 포함하며, 모든 페이지는 자체 주석 컬렉션을 가집니다.
 
-특정 페이지에 주석을 추가하려면, 그 페이지의 Annotations 컬렉션에 [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods) 메서드를 사용하여 추가합니다.
+특정 페이지에 주석을 추가하려면, 해당 페이지의 Annotations 컬렉션에 [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods) 메서드를 사용하여 추가합니다.
 
-1. 먼저, PDF에 추가하려는 주석을 만듭니다.
-2. 그런 다음 입력 PDF를 엽니다.
-
-1. 'page' 객체의 [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) 컬렉션에 주석을 추가합니다.
+1. 먼저, PDF에 추가하려는 주석을 생성합니다.
+1. 그런 다음 입력 PDF를 엽니다.
+1. 주석을 'page' 객체의 [주석](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) 컬렉션에 추가합니다.
 
 다음 코드 스니펫은 PDF 페이지에 주석을 추가하는 방법을 보여줍니다.
 
@@ -101,8 +37,8 @@ sitemap:
     textAnnotation = ap.annotations.TextAnnotation(
         document.pages[1], ap.Rectangle(300, 700.664, 320, 720.769, True)
     )
-    textAnnotation.title = "Aspose 사용자"
-    textAnnotation.subject = "삽입된 텍스트 1"
+    textAnnotation.title = "Aspose User"
+    textAnnotation.subject = "Inserted text 1"
     textAnnotation.contents = "qwerty"
     textAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     textAnnotation.color = ap.Color.blue
@@ -128,7 +64,6 @@ sitemap:
         print(ta.rect)
 ```
 
-
 ## PDF 파일에서 텍스트 주석 삭제
 
 ```python
@@ -148,15 +83,16 @@ sitemap:
     document.save(output_file)
 ```
 
+
 ## 새로운 자유 텍스트 주석 추가(또는 생성) 방법
 
-자유 텍스트 주석은 페이지에 직접 텍스트를 표시합니다. [FreeTextAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) 클래스는 이 유형의 주석을 생성할 수 있도록 합니다. 다음 코드 조각에서는 문자열이 처음 발생하는 위치 위에 자유 텍스트 주석을 추가합니다.
+자유 텍스트 주석은 페이지에 직접 텍스트를 표시합니다. [FreeTextAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) 클래스는 이러한 유형의 주석을 생성할 수 있게 합니다. 다음 스니펫에서는 문자열이 처음 등장하는 위치 위에 자유 텍스트 주석을 추가합니다.
 
 ```python
 
     import aspose.pdf as ap
 
-    # PDF 파일 로드
+    # Load the PDF file
     document = ap.Document(input_file)
 
     freeTextAnnotation = ap.annotations.FreeTextAnnotation(
@@ -168,7 +104,6 @@ sitemap:
     document.pages[1].annotations.append(freeTextAnnotation)
     document.save(output_file)
 ```
-
 
 ## PDF 파일에서 자유 텍스트 주석 가져오기
 
@@ -187,13 +122,13 @@ sitemap:
         print(fa.rect)
 ```
 
-## PDF 파일에서 자유 텍스트 주석 삭제하기
+## PDF 파일에서 자유 텍스트 주석 삭제
 
 ```python
 
     import aspose.pdf as ap
 
-    # PDF 파일 불러오기
+    # Load the PDF file
     document = ap.Document(input_file)
     freeTextAnnotations = [
         a
@@ -207,12 +142,12 @@ sitemap:
     document.save(output_file)
 ```
 
-### StrikeOutAnnotation을 사용하여 단어를 취소선으로 표시하기
 
-Aspose.PDF for Python을 사용하면 PDF 문서에서 주석을 추가, 삭제 및 업데이트할 수 있습니다.
- 클래스 중 하나는 주석을 취소선으로 표시할 수도 있습니다. StrikeOutAnnotation이 PDF에 적용되면 지정된 텍스트에 선이 그어지며, 이는 제거되거나 무시되어야 함을 나타냅니다.
+### StrikeOutAnnotation을 사용하여 단어에 취소선 적용
 
-다음 코드 스니펫은 PDF에 [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/)을 추가하는 방법을 보여줍니다.
+Aspose.PDF for Python을 사용하면 PDF 문서에서 주석을 추가, 삭제 및 업데이트할 수 있습니다. 이 중 하나의 클래스는 주석에 취소선을 적용할 수도 있습니다. StrikeOutAnnotation이 PDF에 적용되면 지정된 텍스트에 선이 그어져 해당 텍스트를 제거하거나 무시해야 함을 나타냅니다.
+
+다음 코드 스니펫은 PDF에 [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) 를 추가하는 방법을 보여줍니다.
 
 ```python
 
@@ -224,13 +159,14 @@ Aspose.PDF for Python을 사용하면 PDF 문서에서 주석을 추가, 삭제 
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
     strikeoutAnnotation.title = "Aspose User"
-    strikeoutAnnotation.subject = "삽입된 텍스트 1"
+    strikeoutAnnotation.subject = "Inserted text 1"
     strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     strikeoutAnnotation.color = ap.Color.blue
 
     document.pages[1].annotations.append(strikeoutAnnotation)
     document.save(output_file)
 ```
+
 
 ## PDF에서 StrikeOutAnnotation 가져오기
 
@@ -269,66 +205,4 @@ Aspose.PDF for Python을 사용하면 PDF 문서에서 주석을 추가, 삭제 
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

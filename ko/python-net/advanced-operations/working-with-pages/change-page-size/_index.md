@@ -1,172 +1,138 @@
 ---
-title: Python으로 PDF 페이지 크기 변경
-linktitle: PDF 페이지 크기 변경
+title: Python으로 페이지 크기 변경
+linktitle: 페이지 크기 변경
 type: docs
-weight: 60
+weight: 40
 url: /ko/python-net/change-page-size/
-description: Aspose.PDF for Python via .NET 라이브러리를 사용하여 PDF 문서의 페이지 크기 변경.
-lastmod: "2023-04-17"
-sitemap:
+description: Aspose.PDF for Python via .NET 라이브러리를 사용하여 PDF 문서의 페이지 크기를 변경합니다.
+lastmod: "2025-11-16"
+sitemap: 
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python을 사용한 페이지 크기 변경
+Abstract: 이 문서는 Aspose.PDF를 사용하여 PDF 페이지 크기를 읽고 수정하는 방법을 보여줍니다. Get Page Size 예제는 특정 PDF 페이지의 너비와 높이를 가져와 페이지 레이아웃을 확인하거나 형식을 검증하거나 문서 구조를 분석할 수 있게 합니다. Set Page Size 예제는 페이지의 크기를 변경하는 방법을 보여줍니다—예를 들어 첫 페이지를 A4 크기로 변환하는 등—또한 수정 전후의 박스 속성(CropBox, TrimBox, ArtBox, BleedBox, MediaBox)을 표시합니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Python으로 PDF 페이지 크기 변경",
-    "alternativeHeadline": "Python으로 PDF 페이지 크기 조정",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, pdf 크기 변경, pdf 크기 조정",
-    "wordcount": "302",
-    "proficiencyLevel":"초급",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/change-page-size/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/change-page-size/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Aspose.PDF for Python via .NET 라이브러리를 사용하여 PDF 문서의 페이지 크기 변경."
-}
-</script>
 
+Aspose.PDF for Python via .NET은 간단한 코드 라인으로 PDF 페이지 크기를 변경할 수 있게 합니다. 이 항목에서는 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 및 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) API를 사용하여 페이지 차원을 업데이트하는 방법을 보여줍니다.
 
-## PDF 페이지 크기 변경
+{{% alert color="primary" %}}
 
-Aspose.PDF for Python via .NET을 사용하면 Python 애플리케이션에서 간단한 코드 라인으로 PDF 페이지 크기를 변경할 수 있습니다. 이 주제는 기존 PDF 파일의 페이지 치수(크기)를 업데이트/변경하는 방법을 설명합니다.
+높이와 너비 속성은 기본 단위로 포인트를 사용한다는 점에 유의하십시오. 1인치 = 72포인트이며 1cm = 1/2.54인치 = 0.3937인치 = 28.3포인트입니다.
 
-[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 클래스에는 페이지 크기를 설정할 수 있는 [set_page_size()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) 메서드가 포함되어 있습니다. 아래 코드 스니펫은 몇 가지 간단한 단계로 페이지 치수를 업데이트합니다:
+{{% /alert %}}
 
-1. 소스 PDF 파일을 로드합니다.
-2. [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 객체에 페이지를 가져옵니다.
-3. 주어진 페이지를 가져옵니다.
-4. set_page_size() 메서드를 호출하여 치수를 업데이트합니다.
-5. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 클래스의 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 메서드를 호출하여 업데이트된 페이지 치수로 PDF 파일을 생성합니다.
+### PDF 페이지의 페이지 크기를 A4로 설정
+
+이 예제는 PDF 문서의 첫 페이지 크기를 표준 A4 크기로 업데이트합니다. 또한 크기 조정 전후에 페이지의 박스 차원(CropBox, TrimBox, ArtBox, BleedBox, MediaBox)을 출력하여 변경 사항을 확인할 수 있습니다.
+
+다음 코드 스니펫은 PDF 페이지 차원을 A4 크기로 변경하는 방법을 보여줍니다:
+
+1. [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)의 첫 번째 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)에 액세스합니다.
+1. 수정 전에 페이지의 박스 크기(CropBox, TrimBox, ArtBox, BleedBox, MediaBox)를 표시합니다.
+1. 페이지 API를 사용하여 A4 차원(597.6 × 842.4 포인트)을 적용합니다.
+1. 업데이트된 페이지 박스 크기를 표시합니다.
+1. 수정된 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)을 지정된 출력 경로에 저장합니다.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # 특정 페이지 가져오기
+def set_page_size(input_file_name, output_file_name):
+    """
+    Set the size of the first page in the PDF document to A4 and save the updated document.
+
+    Parameters:
+    - input_file_name (str): Path to the input PDF file.
+    - output_file_name (str): Path to save the output PDF file.
+    """
+    # Open the PDF document using the Document class
+    document = ap.Document(input_file_name)
+    # Get particular page (Page API)
     page = document.pages[1]
 
-    # 페이지 크기를 A4(11.7 x 8.3 인치)로 설정하고 Aspose.Pdf에서는 1인치 = 72포인트
-    # 따라서 A4 치수는 포인트로 (842.4, 597.6)이 됩니다
-    page.set_page_size(597.6, 842.4)
+    # Set the page size as A4 (8.3 x 11.7 in). In Aspose.PDF 1 inch = 72 points.
+    # A4 dimensions in points are (597.6, 842.4) for portrait orientation
+    print("Before set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
 
-    # 업데이트된 문서 저장
-    document.save(output_pdf)
+    # Use the Page API to set page size
+    page.set_page_size(597.6, 842.4)
+    print("After set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
+
+    # Save the updated document
+    document.save(output_file_name)
 ```
 
+## PDF 페이지 크기 가져오기
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "영업",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "영업",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "영업",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python용 PDF 조작 라이브러리",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+이 스니펫은 PDF를 읽고 첫 페이지의 차원(너비와 높이)을 가져옵니다. [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) API를 사용하여 페이지의 경계 [`Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/)을 추출하고 그 크기를 콘솔에 출력합니다. 이는 페이지 레이아웃을 검사하거나 형식을 검증하거나 문서를 추가 처리하기 위해 준비하는 데 유용합니다.
+
+1. PDF를 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)으로 로드합니다.
+1. 첫 번째 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)에 액세스합니다.
+1. `get_page_rect()`를 사용하여 페이지의 경계 사각형을 가져옵니다.
+1. 너비와 높이 값을 추출합니다.
+1. 페이지 차원을 출력합니다.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_size(input_file_name, output_file_name):
+    # Open document (Document API)
+    document = ap.Document(input_file_name)
+
+    # Get particular page (Page API)
+    page = document.pages[1]
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```
+
+### 회전 전후 PDF 페이지 크기 가져오기
+
+90° 회전을 적용하기 전후의 PDF 페이지 차원을 가져옵니다. 이는 회전이 너비와 높이에 어떻게 영향을 미치는지와 `get_page_rect()`를 회전 고려 여부에 따라 사용하는 방법을 보여줍니다.
+
+1. PDF를 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)으로 엽니다.
+1. 첫 번째 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)에 액세스합니다.
+1. `page.rotate = ap.Rotation.ON90` 를 사용하여 90° 회전을 적용합니다(`[`Rotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rotation/) 열거형을 참조).
+1. `get_page_rect(False)`를 사용하여 회전 없이 페이지 사각형을 가져오고 너비와 높이를 출력합니다.
+1. `get_page_rect(True)`를 사용하여 회전을 고려한 페이지 사각형을 가져오고 너비와 높이를 출력합니다.
+1. 회전으로 인해 차원이 어떻게 변하는지 비교합니다.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_size_rotation(input_file_name, output_file_name):
+    # Open document (Document API)
+    document = ap.Document(input_file_name)
+    # Get particular page (Page API)
+    page = document.pages[1]
+    # Apply rotation using Rotation enum
+    page.rotate = ap.Rotation.ON90
+    rectangle = page.get_page_rect(False)
+    print(f"{rectangle.width} : {rectangle.height}")
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```
