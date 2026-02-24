@@ -1,172 +1,138 @@
 ---
-title: Alterar Tamanho da Página do PDF com Python
-linktitle: Alterar Tamanho da Página do PDF
+title: Alterando o Tamanho da Página com Python
+linktitle: Alterando o Tamanho da Página
 type: docs
-weight: 60
+weight: 40
 url: /pt/python-net/change-page-size/
-description: Alterar Tamanho da Página do seu documento PDF usando a biblioteca Aspose.PDF para Python via .NET.
-lastmod: "2023-04-17"
-sitemap:
+description: Altere o tamanho da página do seu documento PDF usando o Aspose.PDF para Python via .NET.
+lastmod: "2025-11-16"
+sitemap: 
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Alterando o Tamanho da Página usando Python
+Abstract: Este artigo demonstra como ler e modificar as dimensões das páginas de PDF usando o Aspose.PDF. O exemplo Obter Tamanho da Página recupera a largura e a altura de uma página PDF específica, permitindo que os usuários inspecionem o layout da página, validem a formatação ou analisem a estrutura do documento. O exemplo Definir Tamanho da Página mostra como alterar as dimensões de uma página — como converter a primeira página para o tamanho A4 — exibindo também as propriedades das caixas (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) antes e depois da modificação.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Alterar Tamanho da Página do PDF com Python",
-    "alternativeHeadline": "Redimensionar Página do PDF com Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, python, alterar tamanho do pdf, redimensionar pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipe de Documentação do Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/change-page-size/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/change-page-size/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Alterar Tamanho da Página do seu documento PDF usando a biblioteca Aspose.PDF para Python via .NET."
-}
-</script>
 
+Aspose.PDF para Python via .NET permite que você altere o tamanho da página PDF com linhas simples de código. Este tópico mostra como atualizar as dimensões da página usando as APIs [`Documento`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) e [`Página`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
 
-## Alterar Tamanho da Página PDF
+{{% alert color="primary" %}}
 
-O Aspose.PDF para Python via .NET permite que você altere o tamanho da página PDF com linhas simples de código em suas aplicações Python. Este tópico explica como atualizar/alterar as dimensões (tamanho) da página de um arquivo PDF existente.
+Observe que as propriedades de altura e largura utilizam pontos como unidade básica, onde 1 polegada = 72 pontos e 1 cm = 1/2.54 polegada = 0.3937 polegada = 28.3 pontos.
 
-A classe [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) contém o método [set_page_size()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) que permite definir o tamanho da página. O trecho de código abaixo atualiza as dimensões da página em alguns passos simples:
+{{% /alert %}}
 
-1. Carregar o arquivo PDF de origem.
-1. Obter as páginas no objeto [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
-1. Obter uma determinada página.
-1. Chamar o método set_page_size() para atualizar suas dimensões.
-1. Chamar o método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) da classe [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) para gerar o arquivo PDF com as dimensões da página atualizadas.
+### Definir o Tamanho da Página de um PDF para A4
+
+O exemplo atualiza o tamanho da primeira página de um documento PDF para as dimensões padrão A4. Ele também exibe as dimensões das caixas da página (CropBox, TrimBox, ArtBox, BleedBox, MediaBox) antes e depois do redimensionamento para que você possa verificar as alterações.
+
+O trecho de código a seguir mostra como alterar as dimensões da página PDF para o tamanho A4:
+
+1. Acesse a primeira [`Página`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) do [`Documento`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Exiba os tamanhos das caixas da página antes da modificação (CropBox, TrimBox, ArtBox, BleedBox, MediaBox).
+1. Aplique as dimensões A4 (597.6 × 842.4 pontos) usando a API da página.
+1. Exiba os tamanhos atualizados das caixas da página.
+1. Salve o [`Documento`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) modificado no caminho de saída especificado.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Obter página específica
+def set_page_size(input_file_name, output_file_name):
+    """
+    Set the size of the first page in the PDF document to A4 and save the updated document.
+
+    Parameters:
+    - input_file_name (str): Path to the input PDF file.
+    - output_file_name (str): Path to save the output PDF file.
+    """
+    # Open the PDF document using the Document class
+    document = ap.Document(input_file_name)
+    # Get particular page (Page API)
     page = document.pages[1]
 
-    # Definir o tamanho da página como A4 (11.7 x 8.3 pol) e no Aspose.Pdf, 1 polegada = 72 pontos
-    # Portanto, as dimensões A4 em pontos serão (842.4, 597.6)
-    page.set_page_size(597.6, 842.4)
+    # Set the page size as A4 (8.3 x 11.7 in). In Aspose.PDF 1 inch = 72 points.
+    # A4 dimensions in points are (597.6, 842.4) for portrait orientation
+    print("Before set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
 
-    # Salvar o documento atualizado
-    document.save(output_pdf)
+    # Use the Page API to set page size
+    page.set_page_size(597.6, 842.4)
+    print("After set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
+
+    # Save the updated document
+    document.save(output_file_name)
 ```
 
+## Obter Tamanho da Página PDF
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para a Biblioteca .NET",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+Este trecho lê um PDF e recupera as dimensões (largura e altura) da primeira página. Ele usa a API [`Página`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) para extrair o [`Retângulo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) delimitador da página e imprime seu tamanho no console. Isso é útil para inspecionar o layout da página, verificar formatos ou preparar documentos para processamento adicional.
+
+1. Carregue o PDF como um [`Documento`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Acesse a primeira [`Página`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Recupere o retângulo delimitador da página usando `get_page_rect()`.
+1. Extraia os valores de largura e altura.
+1. Imprima as dimensões da página.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_size(input_file_name, output_file_name):
+    # Open document (Document API)
+    document = ap.Document(input_file_name)
+
+    # Get particular page (Page API)
+    page = document.pages[1]
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```
+
+### Obter Tamanho da Página PDF Antes e Depois da Rotação
+
+Recupere as dimensões de uma página PDF antes e depois de aplicar uma rotação de 90°. Isso demonstra como a rotação afeta a largura e a altura e como usar `get_page_rect()` com ou sem consideração de rotação.
+
+1. Abra o PDF como um [`Documento`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Acesse a primeira [`Página`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
+1. Aplique uma rotação de 90° usando `page.rotate = ap.Rotation.ON90` (veja o enum [`Rotação`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rotation/)).
+1. Recupere o retângulo da página sem rotação usando `get_page_rect(False)` e imprima sua largura e altura.
+1. Recupere o retângulo da página considerando a rotação usando `get_page_rect(True)` e imprima sua largura e altura.
+1. Compare como as dimensões mudam devido à rotação.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_size_rotation(input_file_name, output_file_name):
+    # Open document (Document API)
+    document = ap.Document(input_file_name)
+    # Get particular page (Page API)
+    page = document.pages[1]
+    # Apply rotation using Rotation enum
+    page.rotate = ap.Rotation.ON90
+    rectangle = page.get_page_rect(False)
+    print(f"{rectangle.width} : {rectangle.height}")
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```

@@ -4,118 +4,54 @@ linktitle: Anotação de Destaques
 type: docs
 weight: 20
 url: /pt/python-net/highlights-annotation/
-description: As anotações de marcação são apresentadas no texto como destaques, sublinhados, tachados ou sublinhados irregulares no texto de um documento.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Aprenda como adicionar anotações de destaques a arquivos PDF em Python usando Aspose.PDF para ênfase de texto.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guia sobre como manipular anotações de Destaques em PDF
+Abstract: O artigo fornece um guia abrangente sobre como usar anotações de marcação de texto em documentos PDF, focando nas funcionalidades fornecidas pela biblioteca Aspose.PDF em Python. Ele explica o propósito e o uso de diferentes tipos de anotações, incluindo anotações de destaque, sublinhado, tachado e ondulado, cada uma projetada para enfatizar ou modificar o texto de várias maneiras. O documento descreve as etapas necessárias para adicionar essas anotações a um PDF, incluindo o carregamento do documento, a criação das anotações com parâmetros específicos como título e cor, e a inserção delas na página desejada. Além disso, o artigo inclui trechos de código para recuperar anotações de um PDF, permitindo que os usuários filtrem e imprimam detalhes das anotações com base no tipo. Por fim, detalha o processo de exclusão de anotações, fornecendo exemplos de código para remover cada tipo de anotação de marcação de texto do documento. Este guia serve como um recurso prático para desenvolvedores que desejam manipular anotações de texto em arquivos PDF programaticamente usando Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Anotação de Destaques em PDF usando Python",
-    "alternativeHeadline": "Como adicionar Anotação de Destaques em PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, python, anotação de destaques, anotação de marcação de texto",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/highlights-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/highlights-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "As anotações de marcação são apresentadas no texto como destaques, sublinhados, tachados ou sublinhados irregulares no texto de um documento."
-}
-</script>
 
+As anotações de marcação de texto em PDF são usadas para destacar, sublinhar, rasurar ou adicionar notas ao texto no documento. Essas anotações têm o objetivo de realçar ou chamar a atenção para partes específicas do texto. Tais anotações permitem que os usuários marquem visualmente ou modifiquem o conteúdo de um arquivo PDF.
 
-Anotações de Marcação de Texto em PDF são usadas para destacar, sublinhar, riscar ou adicionar notas ao texto no documento. Essas anotações têm a intenção de destacar ou chamar a atenção para partes específicas do texto. Tais anotações permitem que os usuários marquem visualmente ou modifiquem o conteúdo de um arquivo PDF.
+A anotação de destaque é usada para marcar o texto com um fundo colorido, geralmente amarelo, para indicar sua importância ou relevância.
 
-Anotação de destaque é usada para marcar o texto com um fundo colorido, geralmente amarelo, para indicar sua importância ou relevância.
+A anotação de sublinhado é uma linha colocada sob o texto selecionado para indicar relevância, ênfase ou sugerir edições.
 
-Anotação de sublinhado é uma linha colocada abaixo do texto selecionado para indicar significância, ênfase, ou indicar edições sugeridas.
+A anotação de tachado inclui riscar ou atravessar um determinado texto para mostrar que ele foi deletado, substituído ou não é mais válido.
 
-Anotação de tachado inclui um risco ou tachado de um texto específico para mostrar que foi deletado, substituído, ou não é mais válido.
-
-Linha ondulada é usada para sublinhar o texto para indicar um tipo diferente de acento, como erros ortográficos, problemas potenciais, ou mudanças propostas.
+A linha ondulada é usada para sublinhar o texto a fim de indicar um tipo diferente de destaque, como erros ortográficos, problemas potenciais ou alterações propostas.
 
 ## Adicionar Anotação de Marcação de Texto
 
-Para adicionar uma Anotação de Marcação de Texto ao documento PDF, precisamos realizar as seguintes ações:
+Para adicionar uma Anotação de Marcação de Texto ao documento PDF, precisamos executar as seguintes ações:
 
-1. Carregar o arquivo PDF - novo objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Carregar o arquivo PDF - novo objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) .
 1. Criar anotações:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) e definir parâmetros (título, cor).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) e definir parâmetros (título, cor).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) e definir parâmetros (título, cor).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) e definir parâmetros (título, cor).
-1. Depois devemos adicionar todas as anotações à página.
+- [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) e definir parâmetros (título, cor).
+- [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) e definir parâmetros (título, cor).
+- [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) e definir parâmetros (título, cor).
+- [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) e definir parâmetros (título, cor).
+1. Em seguida, devemos adicionar todas as anotações à página.
 
-### Adicionar Anotação de Realce
+### Adicionar Anotação de Destaque
 
 ```python
 
     import aspose.pdf as ap
 
-    # Abrir documento
+    # Open document
     document = ap.Document(input_file)
 
-    # Criar Anotação de Círculo
+    # Create Circle Annotation
     highlightAnnotation = ap.annotations.HighlightAnnotation(
         document.pages[1], ap.Rectangle(300, 750, 320, 770, True)
     )
     document.pages[1].annotations.append(highlightAnnotation)
     document.save(output_file)
 ```
-
 
 ### Adicionar Anotação de Tachado
 
@@ -128,8 +64,8 @@ Para adicionar uma Anotação de Marcação de Texto ao documento PDF, precisamo
     strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    strikeoutAnnotation.title = "Usuário Aspose"
-    strikeoutAnnotation.subject = "Texto inserido 1"
+    strikeoutAnnotation.title = "Aspose User"
+    strikeoutAnnotation.subject = "Inserted text 1"
     strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     strikeoutAnnotation.color = ap.Color.blue
 
@@ -137,7 +73,7 @@ Para adicionar uma Anotação de Marcação de Texto ao documento PDF, precisamo
     document.save(output_file)
 ```
 
-### Adicionar Anotação de Ondulação
+### Adicionar Anotação Ondulada
 
 ```python
 
@@ -165,8 +101,8 @@ Para adicionar uma Anotação de Marcação de Texto ao documento PDF, precisamo
     underlineAnnotation = ap.annotations.UnderlineAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    underlineAnnotation.title = "Usuário Aspose"
-    underlineAnnotation.subject = "Sublinhado Inserido 1"
+    underlineAnnotation.title = "Aspose User"
+    underlineAnnotation.subject = "Inserted Underline 1"
     underlineAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     underlineAnnotation.color = ap.Color.blue
 
@@ -174,12 +110,11 @@ Para adicionar uma Anotação de Marcação de Texto ao documento PDF, precisamo
     document.save(output_file)
 ```
 
-
 ## Obter Anotação de Marcação de Texto
 
 Por favor, tente usar o seguinte trecho de código para Obter Anotação de Marcação de Texto do documento PDF.
 
-### Obter Anotação de Realce
+### Obter Anotação de Destaque
 
 ```python
 
@@ -213,7 +148,8 @@ Por favor, tente usar o seguinte trecho de código para Obter Anotação de Marc
         print(pa.rect)
 ```
 
-### Obter Anotação de Ondulado
+
+### Obter Anotação Ondulada
 
 ```python
 
@@ -229,7 +165,6 @@ Por favor, tente usar o seguinte trecho de código para Obter Anotação de Marc
     for pa in squigglyAnnotations:
         print(pa.rect)
 ```
-
 
 ### Obter Anotação de Sublinhado
 
@@ -250,7 +185,7 @@ Por favor, tente usar o seguinte trecho de código para Obter Anotação de Marc
 
 ## Excluir Anotação de Marcação de Texto
 
-O seguinte trecho de código mostra como excluir a anotação de marcação de texto de um arquivo PDF.
+O trecho de código a seguir mostra como Excluir Anotação de Marcação de Texto de um arquivo PDF.
 
 ### Excluir Anotação de Destaque
 
@@ -258,7 +193,7 @@ O seguinte trecho de código mostra como excluir a anotação de marcação de t
 
     import aspose.pdf as ap
 
-    # Carregar o arquivo PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     highlightAnnotations = [
         a
@@ -272,7 +207,7 @@ O seguinte trecho de código mostra como excluir a anotação de marcação de t
     document.save(output_file)
 ```
 
-### Excluir Anotação de Riscar
+### Excluir Anotação de Tachado
 
 ```python
 
@@ -290,7 +225,6 @@ O seguinte trecho de código mostra como excluir a anotação de marcação de t
 
     document.save(output_file)
 ```
-
 
 ### Excluir Anotação Ondulada
 
@@ -311,7 +245,7 @@ O seguinte trecho de código mostra como excluir a anotação de marcação de t
     document.save(output_file)
 ```
 
-### Excluir Anotação Sublinhada
+### Excluir Anotação de Sublinhado
 
 ```python
 
@@ -331,66 +265,4 @@ O seguinte trecho de código mostra como excluir a anotação de marcação de t
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+
