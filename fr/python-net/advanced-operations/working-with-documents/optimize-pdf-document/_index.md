@@ -1,121 +1,56 @@
 ---
-title: Optimiser, Compresser ou Réduire la Taille du PDF en Python
-linktitle: Optimiser PDF
+title: Optimiser, compresser ou réduire la taille d'un PDF en Python
+linktitle: Optimiser le PDF
 type: docs
 weight: 30
 url: /fr/python-net/optimize-pdf/
-description: Optimiser le fichier PDF, réduire toutes les images, réduire la taille du PDF, désintégrer les polices, supprimer les objets inutilisés avec Python.
-lastmod: "2023-04-17"
-sitemap:
+description: Apprenez comment optimiser les documents PDF en Python pour améliorer les performances web et réduire la taille du fichier en utilisant Aspose.PDF.
+lastmod: "2025-02-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Compresser les pages PDF avec Python
+Abstract: Cet article fournit un guide complet sur l'optimisation des fichiers PDF afin de réduire leur taille et d'améliorer les performances sur diverses plateformes, telles que les pages web, les courriels et les systèmes de stockage. Les techniques d'optimisation incluent la réduction de la taille des images, la suppression des ressources inutilisées et le désincorporation des polices. Des méthodes spécifiques pour optimiser les PDF pour le web et réduire la taille globale du fichier sont abordées, utilisant les méthodes `Optimize` et `OptimizeResources` d'Aspose.PDF pour Python. La personnalisation des stratégies d'optimisation est possible via `OptimizationOptions`, permettant des actions ciblées comme la compression des images, la suppression des objets et des flux inutilisés, la liaison des flux en double et le désincorporation des polices. Des stratégies supplémentaires couvrent l'aplatissement des annotations, la suppression des champs de formulaire, et la conversion des fichiers PDF de RVB en niveaux de gris pour réduire davantage la taille. L'article met également en avant l'utilisation de la compression FlateDecode pour l'optimisation des images, assurant une gestion efficace des fichiers PDF tout en maintenant la qualité et les fonctionnalités.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Optimiser PDF avec Python",
-    "alternativeHeadline": "Comment optimiser PDF avec Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, python, optimiser pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Équipe Doc Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/optimize-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/optimize-pdf/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Optimiser le fichier PDF, réduire toutes les images, réduire la taille du PDF, désintégrer les polices, supprimer les objets inutilisés avec Python."
-}
-</script>
 
-
-Un document PDF peut parfois contenir des données supplémentaires. Réduire la taille d'un fichier PDF vous aidera à optimiser le transfert réseau et le stockage. Cela est particulièrement utile pour la publication sur des pages web, le partage sur les réseaux sociaux, l'envoi par e-mail ou l'archivage dans le stockage. Nous pouvons utiliser plusieurs techniques pour optimiser les PDF :
+Un document PDF peut parfois contenir des données supplémentaires. Réduire la taille d'un fichier PDF vous aidera à optimiser le transfert réseau et le stockage. Cela est particulièrement utile pour la publication sur des pages web, le partage sur les réseaux sociaux, l'envoi par e‑mail ou l'archivage. Nous pouvons utiliser plusieurs techniques pour optimiser les PDF :
 
 - Optimiser le contenu des pages pour la navigation en ligne
 - Réduire ou compresser toutes les images
-- Activer la réutilisation du contenu des pages
+- Permettre la réutilisation du contenu des pages
 - Fusionner les flux en double
-- Désembedder les polices
+- Désincorporer les polices
 - Supprimer les objets inutilisés
 - Supprimer les champs de formulaire aplatis
 - Supprimer ou aplatir les annotations
 
 {{% alert color="primary" %}}
 
- Une explication détaillée des méthodes d'optimisation peut être trouvée dans la page Vue d'ensemble des méthodes d'optimisation.
+Une explication détaillée des méthodes d'optimisation peut être trouvée sur la page Aperçu des méthodes d'optimisation.
 
 {{% /alert %}}
 
-## Optimiser un document PDF pour le Web
+## Optimiser le document PDF pour le Web
 
-L'optimisation, ou linéarisation pour le Web, fait référence au processus de rendre un fichier PDF adapté à la navigation en ligne à l'aide d'un navigateur web. Pour optimiser un fichier pour l'affichage sur le web :
+L'optimisation, ou linéarisation pour le Web, désigne le processus qui rend un fichier PDF adapté à la navigation en ligne via un navigateur web. Pour optimiser un fichier pour l'affichage web :
 
 1. Ouvrez le document d'entrée dans un objet [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Utilisez la méthode [Optimize](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 1. Enregistrez le document optimisé en utilisant la méthode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
-Le snippet de code suivant montre comment optimiser un document PDF pour le web.
+Le segment de code suivant montre comment optimiser un document PDF pour le web.
 
-```python 
+```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, outfile)
 
-    # Optimiser pour le web
+    document = apdf.Document(path_infile)
     document.optimize()
-
-    # Enregistrer le document de sortie
-    document.save(output_pdf)
+    document.save(path_outfile)
 ```
 
 ## Réduire la taille du PDF
@@ -123,156 +58,153 @@ Le snippet de code suivant montre comment optimiser un document PDF pour le web.
 La méthode [OptimizeResources()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) vous permet de réduire la taille du document en éliminant les informations inutiles. Par défaut, cette méthode fonctionne comme suit :
 
 - Les ressources qui ne sont pas utilisées sur les pages du document sont supprimées
-- Les ressources égales sont fusionnées en un seul objet
+- Les ressources identiques sont fusionnées en un seul objet
+- Les objets inutilisés sont supprimés
 
-- Les objets non utilisés sont supprimés
-
-Le snippet ci-dessous est un exemple. Notez cependant que cette méthode ne peut pas garantir la réduction du document.
+L'extrait ci‑dessous est un exemple. Notez toutefois que cette méthode ne peut pas garantir la réduction du document.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
+    # Open document
     document = ap.Document(input_pdf)
-    # Optimiser le document PDF. Notez cependant que cette méthode ne peut pas garantir la réduction du document
+    # Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
     document.optimize_resources()
-    # Enregistrer le document mis à jour
+    # Save updated document
     document.save(output_pdf)
 ```
 
-## Gestion de la Stratégie d'Optimisation
+## Gestion de la stratégie d'optimisation
 
 Nous pouvons également personnaliser la stratégie d'optimisation. Actuellement, la méthode [OptimizeResources()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) utilise 5 techniques. Ces techniques peuvent être appliquées en utilisant la méthode OptimizeResources() avec le paramètre [OptimizationOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.optimization/optimizationoptions/).
 
-### Réduire ou Compresser Toutes les Images
+### Réduction ou compression de toutes les images
 
-Nous avons deux façons de travailler avec les images : réduire la qualité de l'image et/ou changer leur résolution.
- Dans tous les cas, [ImageCompressionOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.optimization/imagecompressionoptions/) devrait être appliqué. Dans l'exemple suivant, nous réduisons les images en diminuant la qualité de l'image à 50.
+Nous avons deux façons de travailler avec les images : réduire la qualité de l'image et/ou changer sa résolution. Dans tous les cas, [ImageCompressionOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.optimization/imagecompressionoptions/) doit être appliqué. Dans l'exemple suivant, nous réduisons les images en diminuant ImageQuality à 50.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
+    # Open document
     document = ap.Document(input_pdf)
-    # Initialiser OptimizationOptions
+    # Initialize OptimizationOptions
     optimizeOptions = ap.optimization.OptimizationOptions()
-    # Définir l'option CompressImages
+    # Set CompressImages option
     optimizeOptions.image_compression_options.compress_images = True
-    # Définir l'option ImageQuality
+    # Set ImageQuality option
     optimizeOptions.image_compression_options.image_quality = 50
-    # Optimiser le document PDF en utilisant OptimizationOptions
+    # Optimize PDF document using OptimizationOptions
     document.optimize_resources(optimizeOptions)
-    # Enregistrer le document mis à jour
+    # Save updated document
     document.save(output_pdf)
 ```
 
 ### Suppression des objets inutilisés
 
-Un document PDF contient parfois des objets PDF qui ne sont référencés par aucun autre objet dans le document. Cela peut se produire, par exemple, lorsqu'une page est supprimée de l'arborescence des pages du document mais que l'objet de la page lui-même n'est pas supprimé. Supprimer ces objets ne rend pas le document invalide mais le réduit plutôt.
+Un document PDF contient parfois des objets PDF qui ne sont référencés par aucun autre objet du document. Cela peut se produire, par exemple, lorsqu'une page est supprimée de l'arborescence des pages du document mais que l'objet page lui‑même n’est pas retiré. La suppression de ces objets ne rend pas le document invalide, mais le réduit.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
+    # Open document
     document = ap.Document(input_pdf)
-    # Définir l'option RemoveUsedObject
+    # Set RemoveUsedObject option
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.remove_unused_objects = True
 
-    # Optimiser le document PDF en utilisant OptimizationOptions
+    # Optimize PDF document using OptimizationOptions
     document.optimize_resources(optimizeOptions)
-    # Enregistrer le document mis à jour
+    # Save updated document
     document.save(output_pdf)
 ```
 
 ### Suppression des flux inutilisés
 
-Parfois, le document contient des flux de ressources inutilisés. These streams are not “unused objects” because they are referenced from a page resource dictionary. Thus, they are not removed with a “remove unused objects” method. But these streams are never used with the page contents. This may happen in cases when an image has been removed from the page but not from the page resources. Also, this situation often occurs when pages are extracted from the document and document pages have “common” resources, that is, the same Resources object. Page contents are analyzed in order to determine if a resource stream is used or not. Unused streams are removed. It sometimes decreases the document size. The use of this technique is similar to the previous step:
+Parfois, le document contient des flux de ressources inutilisés. Ces flux ne sont pas des « objets inutilisés » car ils sont référencés depuis le dictionnaire des ressources d’une page. Ainsi, ils ne sont pas supprimés par la méthode « supprimer les objets inutilisés ». Cependant, ces flux ne sont jamais utilisés dans le contenu des pages. Cela peut se produire lorsqu’une image a été retirée de la page mais pas des ressources de la page. De plus, cette situation survient souvent lorsque des pages sont extraites du document et que les pages du document partagent des ressources « communes », c’est‑à‑dire le même objet Resources. Le contenu des pages est analysé afin de déterminer si un flux de ressources est utilisé ou non. Les flux inutilisés sont supprimés. Cela diminue parfois la taille du document. L’utilisation de cette technique est similaire à l’étape précédente :
 
 ```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
+    # Open document
     document = ap.Document(input_pdf)
-    # Définir l'option RemoveUsedStreams
+    # Set RemoveUsedStreams option
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.remove_unused_streams = True
-    # Optimiser le document PDF en utilisant OptimizationOptions
+    # Optimize PDF document using OptimizationOptions
     document.optimize_resources(optimizeOptions)
-    # Enregistrer le document mis à jour
+    # Save updated document
     document.save(output_pdf)
 ```
 
-### Liaison des Flux en Double
+### Liaison des flux en double
 
-Certains documents peuvent contenir plusieurs flux de ressources identiques (comme des images, par exemple). Cela peut se produire, par exemple, lorsqu'un document est concaténé avec lui-même. Le document de sortie contient deux copies indépendantes du même flux de ressources. Nous analysons tous les flux de ressources et les comparons. Si des flux sont dupliqués, ils sont fusionnés, c'est-à-dire qu'une seule copie est conservée. Les références sont modifiées en conséquence, et les copies de l'objet sont supprimées. Dans certains cas, cela permet de réduire la taille du document.
+Certains documents peuvent contenir plusieurs flux de ressources identiques (comme des images, par exemple). Cela peut se produire, par exemple, lorsqu'un document est concaténé avec lui‑même. Le document de sortie contient deux copies indépendantes du même flux de ressources. Nous analysons tous les flux de ressources et les comparons. Si les flux sont dupliqués, ils sont fusionnés, c’est‑à‑dire qu’il ne reste qu’une seule copie. Les références sont modifiées en conséquence et les copies de l’objet sont supprimées. Dans certains cas, cela contribue à diminuer la taille du document.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
+    # Open document
     document = ap.Document(input_pdf)
-    # Définir l'option LinkDuplicateStreams
+    # Set LinkDuplicateStreams option
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.link_duplcate_streams = True
-    # Optimiser le document PDF en utilisant OptimizationOptions
+    # Optimize PDF document using OptimizationOptions
     document.optimize_resources(optimizeOptions)
-    # Enregistrer le document mis à jour
+    # Save updated document
     document.save(output_pdf)
 ```
 
-### Désintégration des Polices
+### Désincorporation des polices
 
-Si le document utilise des polices intégrées, cela signifie que toutes les données de police sont stockées dans le document.
- L'avantage est que le document est consultable, que la police soit installée sur la machine de l'utilisateur ou non. Mais l'incorporation des polices rend le document plus volumineux. La méthode de suppression des polices intégrées supprime toutes les polices intégrées. Ainsi, la taille du document diminue, mais le document lui-même peut devenir illisible si la police correcte n'est pas installée.
+Si le document utilise des polices incorporées, cela signifie que toutes les données de la police sont stockées dans le document. L’avantage est que le document est affichable quel que soit l’état d’installation de la police sur la machine de l’utilisateur. Mais l’incorporation des polices augmente la taille du document. La méthode de désincorporation des polices supprime toutes les polices incorporées. Ainsi, la taille du document diminue, mais le document peut devenir illisible si la police correcte n’est pas installée.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
+    # Open document
     document = ap.Document(input_pdf)
-    # Définir l'option UnembedFonts
+    # Set UnembedFonts  option
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.unembed_fonts = True
-    # Optimiser le document PDF en utilisant OptimizationOptions
+    # Optimize PDF document using OptimizationOptions
     document.optimize_resources(optimizeOptions)
-    # Enregistrer le document mis à jour
+    # Save updated document
     document.save(output_pdf)
     file_stats_1 = os.stat(input_pdf)
     file_stats_2 = os.stat(output_pdf)
     print(
-        "Taille du fichier original : {}. Taille du fichier réduite : {}".format(
+        "Original file size: {}. Reduced file size: {}".format(
             file_stats_1.st_size, file_stats_2.st_size
         )
     )
 ```
 
-Les ressources d'optimisation appliquent ces méthodes au document. Si l'une de ces méthodes est appliquée, la taille du document diminuera probablement. Si aucune de ces méthodes n'est appliquée, la taille du document ne changera pas, ce qui est évident.
+Les ressources d'optimisation appliquent ces méthodes au document. Si l’une de ces méthodes est appliquée, la taille du document diminuera très probablement. Si aucune de ces méthodes n’est appliquée, la taille du document ne changera pas, ce qui est évident.
 
-## Moyens supplémentaires pour réduire la taille du document PDF
+## Moyens supplémentaires de réduire la taille du document PDF
 
-### Suppression ou aplatissement des annotations
+### Supprimer ou aplatir les annotations
 
-Les annotations peuvent être supprimées lorsqu'elles sont inutiles. Lorsqu'elles sont nécessaires mais ne nécessitent pas de modifications supplémentaires, elles peuvent être aplaties. Ces deux techniques réduiront la taille du fichier.
+Les annotations peuvent être supprimées lorsqu'elles ne sont pas nécessaires. Lorsqu'elles sont nécessaires mais ne nécessitent pas d'édition supplémentaire, elles peuvent être aplaties. Ces deux techniques permettront de réduire la taille du fichier.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
+    # Open document
     document = ap.Document(input_pdf)
-    # Aplatir les annotations
+    # Flatten annotations
     for page in document.pages:
         for annotation in page.annotations:
             annotation.flatten()
 
-    # Enregistrer le document mis à jour
+    # Save updated document
     document.save(output_pdf)
 ```
 
@@ -284,118 +216,55 @@ Si le document PDF contient des AcroForms, nous pouvons essayer de réduire la t
 
     import aspose.pdf as ap
 
-    # Charger le formulaire PDF source
+    # Load source PDF form
     doc = ap.Document(input_pdf)
 
-    # Aplatir les formulaires
+    # Flatten Forms
     if len(doc.form.fields) > 0:
         for item in doc.form.fields:
             item.flatten()
 
-    # Enregistrer le document mis à jour
+    # Save the updated document
     doc.save(output_pdf)
 ```
 
 ### Convertir un PDF de l'espace colorimétrique RGB en niveaux de gris
 
-Un fichier PDF comprend du texte, des images, des pièces jointes, des annotations, des graphiques et d'autres objets. Vous pouvez rencontrer le besoin de convertir un PDF de l'espace colorimétrique RGB en niveaux de gris afin qu'il soit plus rapide lors de l'impression de ces fichiers PDF. De plus, lorsque le fichier est converti en niveaux de gris, la taille du document est également réduite, mais cela peut également entraîner une diminution de la qualité du document. Cette fonctionnalité est actuellement prise en charge par la fonctionnalité Pre-Flight d'Adobe Acrobat, mais en ce qui concerne l'automatisation de bureau, Aspose.PDF est une solution ultime pour fournir de tels avantages pour les manipulations de documents. Pour répondre à cette exigence, le code suivant peut être utilisé.
+Un fichier PDF comprend du texte, des images, des pièces jointes, des annotations, des graphiques et d'autres objets. Vous pouvez être amené à convertir un PDF de l'espace colorimétrique RGB en niveaux de gris afin d'accélérer l'impression de ces fichiers PDF. De plus, lorsque le fichier est converti en niveaux de gris, la taille du document est également réduite, mais cela peut également entraîner une diminution de la qualité du document. Cette fonctionnalité est actuellement prise en charge par la fonction Pre‑Flight d'Adobe Acrobat, mais lorsqu'il s'agit d'automatisation Office, Aspose.PDF est une solution ultime pour offrir de telles possibilités de manipulation de documents. Pour répondre à cette exigence, le fragment de code suivant peut être utilisé.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Charger le fichier PDF source
+    # Load source PDF file
     document = ap.Document(input_pdf)
     strategy = ap.RgbToDeviceGrayConversionStrategy()
     for page in document.pages:
-        # Convertir l'image de l'espace colorimétrique RGB en niveaux de gris
+        # Convert the RGB colorspace image to GrayScale colorspace
         strategy.convert(page)
 
-    # Enregistrer le fichier résultant
+    # Save resultant file
     document.save(output_pdf)
 ```
 
-
 ### Compression FlateDecode
 
-Aspose.PDF pour Python via .NET prend en charge la compression FlateDecode pour la fonctionnalité d'optimisation PDF. Le code ci-dessous montre comment utiliser l'option dans l'optimisation pour stocker des images avec la compression **FlateDecode** :
+Aspose.PDF pour Python via .NET prend en charge la compression FlateDecode pour la fonctionnalité d'optimisation PDF. Le fragment de code suivant montre comment utiliser l'option d'optimisation pour stocker les images avec une compression **FlateDecode** :
 
 ```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
+    # Open Document
     doc = ap.Document(input_pdf)
-    # Initialiser les options d'optimisation
+    # Initialize OptimizationOptions
     optimizationOptions = ap.optimization.OptimizationOptions()
-    # Pour optimiser l'image en utilisant la compression FlateDecode, définir les options d'optimisation sur Flate
+    # To optimise image using FlateDecode Compression set optimization options to Flate
     optimizationOptions.image_compression_options.encoding = ap.optimization.ImageEncoding.FLATE
-    # Définir les options d'optimisation
+    # Set Optimization Options
     doc.optimize_resources(optimizationOptions)
-    # Enregistrer le document
+    # Save Document
     doc.save(output_pdf)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+
