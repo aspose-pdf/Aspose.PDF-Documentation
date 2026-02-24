@@ -1,114 +1,51 @@
 ---
-title: تعليق التظليل في PDF باستخدام بايثون
-linktitle: تعليق التظليل
+title: تحديد إضاءات PDF باستخدام بايثون
+linktitle: تحديد الإضاءات
 type: docs
 weight: 20
 url: /ar/python-net/highlights-annotation/
-description: يتم تقديم التعليقات التوضيحية للترميز في النص كتظليل أو خطوط تحتية أو شطب أو خطوط تحتية متعرجة في نص المستند.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: تعرّف على طريقة إضافة تعليقات إضاءة إلى ملفات PDF باستخدام بايثون ومكتبة Aspose.PDF لتأكيد النص.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: دليل حول كيفية تعديل تعليقات الإضاءات في PDF
+Abstract: توفر المقالة دليلًا شاملاً حول كيفية استخدام تعليقات تنسيق النص في مستندات PDF، مع التركيز على الوظائف التي تقدمها مكتبة Aspose.PDF في بايثون. تشرح هدف واستخدام الأنواع المختلفة من التعليقات، بما في ذلك إضاءة النص، تسطير الأسطر، شطب النص، وتعليقات الخط المتعرج، كل منها مصمم لتأكيد أو تعديل النص بطرق مختلفة. يوضح المستند الخطوات اللازمة لإضافة هذه التعليقات إلى ملف PDF، بما في ذلك تحميل المستند، إنشاء التعليقات مع معلمات محددة مثل العنوان واللون، وإلحاقها بالصفحة المطلوبة. بالإضافة إلى ذلك، تتضمن المقالة مقتطفات شفرة لاسترداد التعليقات من PDF، مما يسمح للمستخدمين بفلترة وطباعة تفاصيل التعليقات حسب النوع. أخيرًا، تفصل العملية الخاصة بحذف التعليقات، مع تقديم أمثلة شفرة لإزالة كل نوع من تعليقات تنسيق النص من المستند. يُعتبر هذا الدليل مصدرًا عمليًا للمطورين الذين يهدفون إلى تعديل تعليقات النص في ملفات PDF برمجيًا باستخدام بايثون.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "تعليق التظليل في PDF باستخدام بايثون",
-    "alternativeHeadline": "كيفية إضافة تعليق التظليل في PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات pdf",
-    "keywords": "pdf, python, highlights annotation, text markup annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/highlights-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/highlights-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يتم تقديم التعليقات التوضيحية للترميز في النص كتظليل أو خطوط تحتية أو شطب أو خطوط تحتية متعرجة في نص المستند."
-}
-</script>
 
+تُستخدم تعليقات تنسيق النص في PDF لتسليط الضوء، تسطير، شطب أو إضافة ملاحظات إلى النص في المستند. تهدف هذه التعليقات إلى إبراز أو جذب الانتباه إلى أجزاء محددة من النص. تتيح مثل هذه التعليقات للمستخدمين وضع علامات مرئية أو تعديل محتوى ملف PDF.
 
-الوسوم النصية التوضيحية في ملفات PDF تُستخدم لتسليط الضوء، أو التسطير، أو التخطي، أو إضافة ملاحظات إلى النص في المستند. تهدف هذه التعليقات التوضيحية إلى تسليط الضوء أو جذب الانتباه إلى أجزاء محددة من النص. تتيح مثل هذه التعليقات للمستخدمين وضع علامات بصرية أو تعديل محتوى ملف PDF.
+تُستخدم تعليقات الإضاءة لتلوين خلفية النص بلون، عادةً الأصفر، للدلالة على أهميته أو صلته.
 
-تُستخدم التعليقات التوضيحية للتسليط لتعليم النص بلون خلفية، عادةً ما يكون أصفر، للإشارة إلى أهميته أو صلته بالموضوع.
+تُعد تعليقات التسطير خطًا يُوضع تحت النص المحدد للدلالة على أهميته، أو لتأكيده، أو للإشارة إلى تعديلات مقترحة.
 
-التعليقات التوضيحية للتسطير هي خط يوضع تحت النص المحدد للإشارة إلى الأهمية أو التأكيد أو للإشارة إلى اقتراحات التحرير.
+تتضمن تعليقات الشطب أو الشطب نصًا معينًا لتوضيح أنه قد تم حذفه أو استبداله أو لم يعد صالحًا.
 
-تشمل التعليقات التوضيحية للشطب وضع خط فوق نص محدد للإشارة إلى أنه تم حذفه أو استبداله أو لم يعد صالحًا.
+يُستخدم الخط المتعرج لتسطير النص للدلالة على نوع مختلف من التأكيد، مثل الأخطاء الإملائية، المشكلات المحتملة، أو التغييرات المقترحة.
 
-يستخدم الخط المتعرج لتسطير النص للإشارة إلى نوع مختلف من التأكيد، مثل الأخطاء الإملائية أو المشاكل المحتملة أو التغييرات المقترحة.
+## إضافة تعليقات تنسيق النص
 
-## إضافة وسوم نصية توضيحية
+لإضافة تعليق تنسيق نص إلى مستند PDF، نحتاج إلى تنفيذ الإجراءات التالية:
 
-لإضافة وسم نصي توضيحي إلى مستند PDF، نحتاج إلى تنفيذ الإجراءات التالية:
+1. تحميل ملف PDF - كائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) جديد.
+1. إنشاء التعليقات:
+- [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) وضبط المعلمات (العنوان، اللون).
+- [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) وضبط المعلمات (العنوان، اللون).
+- [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) وضبط المعلمات (العنوان، اللون).
+- [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) وضبط المعلمات (العنوان، اللون).
+1. بعد ذلك، يجب إضافة جميع التعليقات إلى الصفحة.
 
-1. تحميل ملف PDF - كائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) الجديد.
-1. إنشاء التعليقات التوضيحية:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) وتعيين المعلمات (العنوان، اللون).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) وتعيين المعلمات (العنوان، اللون).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) وتعيين المعلمات (العنوان، اللون).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) وتعيين المعلمات (العنوان، اللون).
-1. بعد ذلك يجب أن نضيف جميع التعليقات التوضيحية إلى الصفحة.
-
-### إضافة تعليق توضيحي للتظليل
+### إضافة تعليق إضاءة
 
 ```python
 
     import aspose.pdf as ap
 
-    # فتح المستند
+    # Open document
     document = ap.Document(input_file)
 
-    # إنشاء تعليق توضيحي دائري
+    # Create Circle Annotation
     highlightAnnotation = ap.annotations.HighlightAnnotation(
         document.pages[1], ap.Rectangle(300, 750, 320, 770, True)
     )
@@ -116,8 +53,7 @@ sitemap:
     document.save(output_file)
 ```
 
-
-### إضافة تعليق مائل
+### إضافة تعليق شطب
 
 ```python
 
@@ -129,7 +65,7 @@ sitemap:
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
     strikeoutAnnotation.title = "Aspose User"
-    strikeoutAnnotation.subject = "نص مُدرج 1"
+    strikeoutAnnotation.subject = "Inserted text 1"
     strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     strikeoutAnnotation.color = ap.Color.blue
 
@@ -137,7 +73,7 @@ sitemap:
     document.save(output_file)
 ```
 
-### إضافة تعليق مموج
+### إضافة تعليق خط متعرج
 
 ```python
 
@@ -166,7 +102,7 @@ sitemap:
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
     underlineAnnotation.title = "Aspose User"
-    underlineAnnotation.subject = "تسطير مُدرج 1"
+    underlineAnnotation.subject = "Inserted Underline 1"
     underlineAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     underlineAnnotation.color = ap.Color.blue
 
@@ -174,12 +110,11 @@ sitemap:
     document.save(output_file)
 ```
 
+## الحصول على تعليقات تنسيق النص
 
-## الحصول على تعليق توضيحي لنصوص
+يرجى تجربة استخدام مقتطف الشفرة التالي للحصول على تعليقات تنسيق النص من مستند PDF.
 
-يرجى محاولة استخدام جزء الكود التالي للحصول على تعليق توضيحي لنصوص من مستند PDF.
-
-### الحصول على تعليق توضيحي للتظليل
+### الحصول على تعليق إضاءة
 
 ```python
 
@@ -196,7 +131,7 @@ sitemap:
         print(ha.rect)
 ```
 
-### الحصول على تعليق توضيحي للشطب
+### الحصول على تعليق شطب
 
 ```python
 
@@ -213,7 +148,8 @@ sitemap:
         print(pa.rect)
 ```
 
-### الحصول على تعليق توضيحي للتموج
+
+### الحصول على تعليق خط متعرج
 
 ```python
 
@@ -230,8 +166,7 @@ sitemap:
         print(pa.rect)
 ```
 
-
-### الحصول على توضيح التسطير
+### الحصول على تعليق تسطير
 
 ```python
 
@@ -248,17 +183,17 @@ sitemap:
         print(ta.rect)
 ```
 
-## حذف توضيح علامات النص
+## حذف تعليقات تنسيق النص
 
-يوضح مقطع الكود التالي كيفية حذف توضيح علامات النص من ملف PDF.
+يعرض مقتطف الشفرة التالي كيفية حذف تعليقات تنسيق النص من ملف PDF.
 
-### حذف توضيح التمييز
+### حذف تعليق إضاءة
 
 ```python
 
     import aspose.pdf as ap
 
-    # تحميل ملف PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     highlightAnnotations = [
         a
@@ -272,7 +207,7 @@ sitemap:
     document.save(output_file)
 ```
 
-### حذف توضيح الشطب
+### حذف تعليق شطب
 
 ```python
 
@@ -291,8 +226,7 @@ sitemap:
     document.save(output_file)
 ```
 
-
-### حذف التسطير المتموج
+### حذف تعليق خط متعرج
 
 ```python
 
@@ -311,7 +245,7 @@ sitemap:
     document.save(output_file)
 ```
 
-### حذف التسطير
+### حذف تعليق تسطير
 
 ```python
 
@@ -331,66 +265,4 @@ sitemap:
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

@@ -1,315 +1,378 @@
 ---
-title: تدوير النص داخل PDF باستخدام Python
+title: تدوير النص داخل PDF باستخدام بايثون
 linktitle: تدوير النص داخل PDF
 type: docs
 weight: 50
 url: /ar/python-net/rotate-text-inside-pdf/
-description: تعرف على طرق مختلفة لتدوير النص في PDF. يتيح لك Aspose.PDF تدوير النص إلى أي زاوية، تدوير جزء من النص أو فقرة كاملة.
-lastmod: "2024-02-17"
-sitemap:
-    changefreq: "weekly"
+description: استكشف كيفية تدوير النص داخل مستند PDF باستخدام بايثون لتنسيق المستندات بمرونة مع Aspose.PDF للبايثون.
+lastmod: "2025-11-13"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية تدوير النص في PDF باستخدام بايثون
+Abstract: توفر المقالة دليلًا مفصلاً حول كيفية تدوير النص داخل مستند PDF باستخدام مكتبة Aspose.PDF للبايثون عبر .NET. تصف استخدام خاصية `Rotation` في فئة `TextFragment` لتحقيق تدوير النص بزاويا مختلفة، وهو مفيد في سيناريوهات إنشاء المستندات المتعددة. توضح إنشاء شظايا النص مع زوايا تدوير محددة وإضافتها إلى صفحة PDF باستخدام `TextBuilder'. توضح كيفية إلحاق شظايا النص المدورة إلى `TextParagraph` ثم إضافة الفقرة إلى صفحة PDF. تظهر كيفية إضافة شظايا النص المدورة مباشرة إلى مجموعة فقرات الصفحة. تشرح تدوير فقرة كاملة تحتوي على شظايا نص متعددة.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "تدوير النص داخل PDF باستخدام Python",
-    "alternativeHeadline": "كيفية تدوير النص في ملف PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/rotate-text-inside-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/rotate-text-inside-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "تعرف على طرق مختلفة لتدوير النص في PDF. يتيح لك Aspose.PDF تدوير النص إلى أي زاوية، تدوير جزء من النص أو فقرة كاملة."
-}
-</script>
 
+تدوير شظايا النص في مستند PDF باستخدام Aspose.PDF للبايثون عبر .NET. يوضح كيفية التحكم بدقة في موضع وتدوير عناصر النص الفردية من خلال الجمع بين فئات 'TextFragment' و 'TextState' و 'TextBuilder'. عن طريق تعديل زاوية التدوير لكل شظية نص، يمكنك إنشاء تخطيطات بصرية ديناميكية، مثل رؤوس مائلة، تسميات عمودية، أو تعليقات تدوير.
 
-## تدوير النص داخل ملف PDF باستخدام خاصية التدوير
+## تدوير شظايا النص باستخدام TextBuilder في PDF
 
-باستخدام خاصية التدوير في فئة [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment)، يمكنك تدوير النص بزاويا مختلفة. يمكن استخدام تدوير النص في سيناريوهات مختلفة لتوليد المستندات. يمكنك تحديد زاوية التدوير بالدرجات لتدوير النص حسب متطلباتك. يرجى التحقق من السيناريوهات المختلفة التالية، والتي يمكنك من خلالها تنفيذ تدوير النص.
+إنشاء ملف PDF باسم rotated_fragments.pdf يحتوي على ثلاث شظايا نصية مصفوفة أفقياً:
 
-## تنفيذ التدوير باستخدام TextFragment و TextBuilder
+- النص الأول غير مدور
+- الثاني مدور بزاوية 45°
+- الثالث مدور بزاوية 90°
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// تهيئة كائن المستند
-Document pdfDocument = new Document();
-// الحصول على الصفحة المعينة
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// إنشاء جزء نصي
-TextFragment textFragment1 = new TextFragment("النص الرئيسي");
-textFragment1.Position = new Position(100, 600);
-// تعيين خصائص النص
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// إنشاء جزء نصي مدوّر
-TextFragment textFragment2 = new TextFragment("النص المدور");
-textFragment2.Position = new Position(200, 600);
-// تعيين خصائص النص
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment2.TextState.Rotation = 45;
-// إنشاء جزء نصي مدوّر
-TextFragment textFragment3 = new TextFragment("النص المدور");
-textFragment3.Position = new Position(300, 600);
-// تعيين خصائص النص
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-textFragment3.TextState.Rotation = 90;
-// إنشاء كائن TextBuilder
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// إضافة الجزء النصي إلى صفحة الـ PDF
-textBuilder.AppendText(textFragment1);
-textBuilder.AppendText(textFragment2);
-textBuilder.AppendText(textFragment3);
-// حفظ المستند
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
+1. إنشاء مستند PDF جديد.
+1. إدراج صفحة جديدة لاستضافة النص المدور.
+1. إنشاء شظية النص الأولى - بدون تدوير.
+1. إنشاء شظية النص الثانية - تدوير 45°.
+1. إنشاء شظية النص الثالثة - تدوير 90°.
+1. إضافة شظايا النص باستخدام TextBuilder.
+1. حفظ المستند.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def rotate_text_inside_pdf_1(outfile):
+    """
+    Implement text rotation using TextFragment and TextBuilder.
+
+    Demonstrates basic text rotation techniques by creating multiple text
+    fragments with different rotation angles. Shows how to position and
+    rotate individual text elements using TextBuilder for precise control.
+
+    Args:
+        outfile (str): Path where the PDF with rotated text will be saved.
+
+    Returns:
+        None: The function creates and saves a PDF file with rotated text fragments.
+
+    Note:
+        - Creates three text fragments with 0°, 45°, and 90° rotations
+        - Uses Position class for precise text placement
+        - Applies TimesNewRoman font with 12pt size
+        - TextBuilder provides low-level control over text placement
+        - Demonstrates individual fragment rotation capabilities
+
+    Example:
+        >>> rotate_text_inside_pdf_1("rotated_fragments.pdf")
+        # Creates a PDF with text fragments at different rotation angles
+    """
+
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        # Create text fragment
+        text_fragment_1 = ap.text.TextFragment("main text")
+        text_fragment_1.position = ap.text.Position(100, 600)
+        # Set text properties
+        text_fragment_1.text_state.font_size = 12
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        # Create rotated text fragment
+        text_fragment_2 = ap.text.TextFragment("rotated text")
+        text_fragment_2.position = ap.text.Position(200, 600)
+        # Set text properties
+        text_fragment_2.text_state.font_size = 12
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_2.text_state.rotation = 45
+        # Create rotated text fragment
+        text_fragment_3 = ap.text.TextFragment("rotated text")
+        text_fragment_3.position = ap.text.Position(300, 600)
+        # Set text properties
+        text_fragment_3.text_state.font_size = 12
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment_3.text_state.rotation = 90
+        # create TextBuilder object
+        builder = ap.text.TextBuilder(page)
+        # Append the text fragment to the PDF page
+        builder.append_text(text_fragment_1)
+        builder.append_text(text_fragment_2)
+        builder.append_text(text_fragment_3)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## تدوير شظايا النص الفردية داخل فقرة في PDF
 
-## تنفيذ الدوران باستخدام TextParagraph و TextBuilder (القطع الدوارة)
+تدوير شظايا النص الفردية داخل فقرة. يوضح كيفية بناء فقرة متعددة الأسطر (TextParagraph) تحتوي على عدة شظايا (TextFragment)، كل منها بزاوية تدوير خاصة به. هذه التقنية مفيدة لإنشاء مستندات بصرية غنية تجمع بين النص الأفقي والمائل — على سبيل المثال، رؤوس مزيّنة، مخططات، أو تسميات مع شروح.
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// تهيئة كائن الوثيقة
-Document pdfDocument = new Document();
-// الحصول على صفحة معينة
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-TextParagraph paragraph = new TextParagraph();
-paragraph.Position = new Position(200, 600);
-// إنشاء جزء نصي
-TextFragment textFragment1 = new TextFragment("نص مدور");
-// تعيين خصائص النص
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// تعيين الدوران
-textFragment1.TextState.Rotation = 45;
-// إنشاء جزء نصي
-TextFragment textFragment2 = new TextFragment("النص الرئيسي");
-// تعيين خصائص النص
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// إنشاء جزء نصي
-TextFragment textFragment3 = new TextFragment("نص مدور آخر");
-// تعيين خصائص النص
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// تعيين الدوران
-textFragment3.TextState.Rotation = -45;
-// إضافة الأجزاء النصية إلى الفقرة
-paragraph.AppendLine(textFragment1);
-paragraph.AppendLine(textFragment2);
-paragraph.AppendLine(textFragment3);
-// إنشاء كائن TextBuilder
-TextBuilder textBuilder = new TextBuilder(pdfPage);
-// إضافة الفقرة النصية إلى صفحة PDF
-textBuilder.AppendParagraph(paragraph);
-// حفظ الوثيقة
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
+إنشاء ملف PDF باسم rotated_paragraph_fragments.pdf يحتوي على فقرة بثلاث أسطر نصية، كل سطر مدور بزاوية مختلفة:
+
+- السطر الأول مدور بزاوية 45°
+- السطر الثاني يبقى أفقياً (0°)
+- السطر الثالث مدور بزاوية -45°
+
+1. إنشاء مستند PDF جديد.
+1. إضافة صفحة فارغة حيث سيظهر النص المدور.
+1. إنشاء TextParagraph.
+1. إنشاء وتكوين شظية النص الأولى - تدوير 45°.
+1. إنشاء شظية النص الثانية - بدون تدوير.
+1. إنشاء شظية النص الثالثة - تدوير 45°.
+1. إلحاق شظايا النص بالفقرة.
+1. إضافة الفقرة إلى الصفحة باستخدام TextBuilder.
+1. حفظ المستند.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def rotate_text_inside_pdf_2(outfile):
+    """
+    Implement text rotation using TextParagraph and TextBuilder with rotated fragments.
+
+    Demonstrates how to create multi-line paragraphs containing individually
+    rotated text fragments. Shows the combination of paragraph structure
+    with fragment-level rotation control.
+
+    Args:
+        outfile (str): Path where the PDF with rotated paragraph fragments will be saved.
+
+    Returns:
+        None: The function creates and saves a PDF file with a paragraph containing rotated fragments.
+
+    Note:
+        - Creates a TextParagraph containing multiple text fragments
+        - Individual fragments have different rotations: 45°, 0°, and -45°
+        - Uses append_line to structure fragments within the paragraph
+        - Demonstrates mixed rotation within a single paragraph
+        - TextBuilder handles paragraph-level placement and rendering
+
+    Example:
+        >>> rotate_text_inside_pdf_2("rotated_paragraph_fragments.pdf")
+        # Creates a PDF with a paragraph containing individually rotated text fragments
+    """
+
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        paragraph = ap.text.TextParagraph()
+        paragraph.position = ap.text.Position(200, 600)
+        # Create text fragment
+        text_fragment_1 = ap.text.TextFragment("rotated text")
+        # Set text properties
+        text_fragment_1.text_state.font_size = 12
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        # Set rotation
+        text_fragment_1.text_state.rotation = 45
+        # Create text fragment
+        text_fragment_2 = ap.text.TextFragment("main text")
+        # Set text properties
+        text_fragment_2.text_state.font_size = 12
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        # Create text fragment
+        text_fragment_3 = ap.text.TextFragment("another rotated text")
+        # Set text properties
+        text_fragment_3.text_state.font_size = 12
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        # Set rotation
+        text_fragment_3.text_state.rotation = -45
+        # Append the text fragments to the paragraph
+        paragraph.append_line(text_fragment_1)
+        paragraph.append_line(text_fragment_2)
+        paragraph.append_line(text_fragment_3)
+        # Create TextBuilder object
+        text_builder = ap.text.TextBuilder(page)
+        # Append the text paragraph to the PDF page
+        text_builder.append_paragraph(paragraph)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## تدوير النص باستخدام فقرات الصفحة في PDF
 
-## تنفيذ التدوير باستخدام TextFragment و Page.Paragraphs
+طريقة مبسطة لتدوير النص داخل PDF باستخدام Aspose.PDF للبايثون عبر .NET.
+على عكس الأساليب ذات المستوى الأدنى باستخدام TextBuilder أو TextParagraph، تضيف هذه الطريقة شظايا النص المدورة مباشرة إلى مجموعة فقرات الصفحة (page.paragraphs). إنها مثالية للحالات التي تحتاج فيها إلى تدوير نص بسيط دون الحاجة إلى تحديد موقع دقيق أو هيكلة الفقرات. يبسط هذا النهج إنشاء التخطيط، مع معالجة تلقائية لموضع النص على الصفحة مع الاستمرار في السماح بالتحكم في تدوير النص الفردي.
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// تهيئة كائن الوثيقة
-Document pdfDocument = new Document();
-// الحصول على صفحة معينة
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-// إنشاء جزء نصي
-TextFragment textFragment1 = new TextFragment("main text");
-// تعيين خصائص النص
-textFragment1.TextState.FontSize = 12;
-textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// إنشاء جزء نصي
-TextFragment textFragment2 = new TextFragment("rotated text");
-// تعيين خصائص النص
-textFragment2.TextState.FontSize = 12;
-textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// تعيين التدوير
-textFragment2.TextState.Rotation = 315;
-// إنشاء جزء نصي
-TextFragment textFragment3 = new TextFragment("rotated text");
-// تعيين خصائص النص
-textFragment3.TextState.FontSize = 12;
-textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-// تعيين التدوير
-textFragment3.TextState.Rotation = 270;
-pdfPage.Paragraphs.Add(textFragment1);
-pdfPage.Paragraphs.Add(textFragment2);
-pdfPage.Paragraphs.Add(textFragment3);
-// حفظ الوثيقة
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
+ينشئ ملفًا باسم 'simple_rotated_text.pdf' يحتوي على:
+
+- شظية نصية أفقية رئيسية بتدوير 0°
+- شظية مدورة بزاوية 315°
+- شظية مدورة بزاوية 270°
+
+1. تهيئة مستند PDF جديد.
+1. إنشاء صفحة حيث سيتم وضع النص المدور.
+1. إنشاء أول قطعة نصية - بدون تدوير.
+1. إنشاء القطعة النصية الثانية - تدوير 315°.
+1. إنشاء القطعة النصية الثالثة - تدوير 270°.
+1. إضافة قطع النص مباشرة إلى فقرات الصفحة.
+1. حفظ مستند PDF.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def rotate_text_inside_pdf_3(outfile):
+    """
+    Implement text rotation using TextFragment and Page.Paragraphs.
+
+    Demonstrates a simplified approach to text rotation by adding rotated
+    text fragments directly to the page's paragraph collection. Shows
+    high-level text placement without TextBuilder complexity.
+
+    Args:
+        outfile (str): Path where the PDF with rotated text will be saved.
+
+    Returns:
+        None: The function creates and saves a PDF file with rotated text using page paragraphs.
+
+    Note:
+        - Uses Page.Paragraphs for direct text fragment addition
+        - Creates fragments with 0°, 315°, and 270° rotations
+        - Simpler approach compared to TextBuilder method
+        - Demonstrates automatic layout with rotated text elements
+        - Good for basic rotation without precise positioning needs
+
+    Example:
+        >>> rotate_text_inside_pdf_3("simple_rotated_text.pdf")
+        # Creates a PDF with rotated text using the simplified page paragraphs approach
+    """
+
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        # Create text fragment
+        text_fragment_1 = ap.text.TextFragment("main text")
+        # Set text properties
+        text_fragment_1.text_state.font_size = 12
+        text_fragment_1.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        # Create text fragment
+        text_fragment_2 = ap.text.TextFragment("rotated text")
+        # Set text properties
+        text_fragment_2.text_state.font_size = 12
+        text_fragment_2.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        # Set rotation
+        text_fragment_2.text_state.rotation = 315
+        # Create text fragment
+        text_fragment_3 = ap.text.TextFragment("rotated text")
+        # Set text properties
+        text_fragment_3.text_state.font_size = 12
+        text_fragment_3.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        # Set rotation
+        text_fragment_3.text_state.rotation = 270
+        page.paragraphs.add(text_fragment_1)
+        page.paragraphs.add(text_fragment_2)
+        page.paragraphs.add(text_fragment_3)
+
+        # Save the document
+        document.save(outfile)
 ```
 
+## تدوير الفقرات بالكامل في PDF
 
-## تنفيذ التدوير باستخدام TextParagraph وTextBuilder (تدوير الفقرة بالكامل)
+تُظهر مكتبتنا تدوير النص على مستوى الفقرة المتقدم في PDF. على عكس تدوير المستوى الجزئي (حيث يتم تدوير كل قطعة نصية بشكل فردي)، هذه الطريقة تقوم بتدوير الفقرات بالكامل ككتل موحدة بزوايا مختلفة.
+كل فقرة تحتوي على عدة قطع نصية منسقة، ويتم تدوير الفقرة كاملة بزاويات محددة — مما يتيح تحويلات تخطيطية معقدة ومتسقة.
+هذا مثال مثالي للتصاميم الفنية، العلامات المائية، أو ملفات PDF ذات التصميم المكثف حيث تحتاج أقسام النص بالكامل إلى توجيه في اتجاهات مختلفة.
 
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// تهيئة كائن المستند
-Document pdfDocument = new Document();
-// الحصول على صفحة معينة
-Page pdfPage = (Page)pdfDocument.Pages.Add();
-for (int i = 0; i < 4; i++)
-{
-    TextParagraph paragraph = new TextParagraph();
-    paragraph.Position = new Position(200, 600);
-    // تحديد التدوير
-    paragraph.Rotation = i * 90 + 45;
-    // إنشاء جزء نصي
-    TextFragment textFragment1 = new TextFragment("نص الفقرة");
-    // إنشاء جزء نصي
-    textFragment1.TextState.FontSize = 12;
-    textFragment1.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment1.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment1.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    // إنشاء جزء نصي
-    TextFragment textFragment2 = new TextFragment("السطر الثاني من النص");
-    // تعيين خصائص النص
-    textFragment2.TextState.FontSize = 12;
-    textFragment2.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment2.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment2.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    // إنشاء جزء نصي
-    TextFragment textFragment3 = new TextFragment("والمزيد من النص...");
-    // تعيين خصائص النص
-    textFragment3.TextState.FontSize = 12;
-    textFragment3.TextState.Font = FontRepository.FindFont("TimesNewRoman");
-    textFragment3.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-    textFragment3.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    textFragment3.TextState.Underline = true;
-    paragraph.AppendLine(textFragment1);
-    paragraph.AppendLine(textFragment2);
-    paragraph.AppendLine(textFragment3);
-    // إنشاء كائن TextBuilder
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // إلحاق الجزء النصي بصفحة PDF
-    textBuilder.AppendParagraph(paragraph);
-}
-// حفظ المستند
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
+ينشئ 'rotated_paragraphs.pdf'، يحتوي على أربع فقرات منسقة ومدوّرة بالكامل:
+
+- كل واحدة مدوّرة بزاوية فريدة (45°, 135°, 225°, و315°)
+- كل فقرة تحتوي على ثلاثة أسطر نصية بخلفيات ملونة، وتسطير، وتنسيق متسق
+
+1. إنشاء مستند PDF جديد.
+1. إضافة صفحة فارغة لاحتواء الفقرات المدوّرة.
+1. التكرار لإنشاء فقرات متعددة.
+1. إنشاء الفقرة وتحديد موقعها.
+1. إنشاء قطع النص مع التنسيق.
+1. تطبيق تنسيق النص.
+1. إضافة قطع النص إلى الفقرة.
+1. إلحاق الفقرة بالصفحة باستخدام TextBuilder.
+1. تكرار العملية لجميع الأربع تدويرات.
+1. حفظ مستند PDF.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def rotate_text_inside_pdf_4(outfile):
+    """
+    Implement whole paragraph rotation using TextParagraph and TextBuilder.
+
+    Demonstrates advanced text rotation by rotating entire paragraphs at
+    different angles. Creates multiple styled paragraphs with comprehensive
+    formatting and rotates each paragraph as a complete unit.
+
+    Args:
+        outfile (str): Path where the PDF with rotated paragraphs will be saved.
+
+    Returns:
+        None: The function creates and saves a PDF file with fully rotated paragraphs.
+
+    Note:
+        - Creates 4 paragraphs rotated at 45°, 135°, 225°, and 315°
+        - Each paragraph contains multiple formatted text fragments
+        - Applies comprehensive styling: colors, backgrounds, underlines
+        - Demonstrates paragraph-level rotation vs. fragment-level rotation
+        - Shows complex multi-line content with consistent rotation
+        - Uses loop to create systematic rotation pattern
+
+    Example:
+        >>> rotate_text_inside_pdf_4("rotated_paragraphs.pdf")
+        # Creates a PDF with complete paragraphs rotated at different angles
+    """
+
+    # Create PDF document
+    with ap.Document() as document:
+        # Get particular page
+        page = document.pages.add()
+        for i in range(4):
+            paragraph = ap.text.TextParagraph()
+            paragraph.position = ap.text.Position(200, 600)
+            # Specify rotation
+            paragraph.rotation = i * 90 + 45
+            # Create text fragment
+            text_fragment_1 = ap.text.TextFragment("Paragraph Text")
+            # Create text fragment
+            text_fragment_1.text_state.font_size = 12
+            text_fragment_1.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+            text_fragment_1.text_state.background_color = ap.Color.light_gray
+            text_fragment_1.text_state.foreground_color = ap.Color.blue
+            # Create text fragment
+            text_fragment_2 = ap.text.TextFragment("Second line of text")
+            # Set text properties
+            text_fragment_2.text_state.font_size = 12
+            text_fragment_2.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+            text_fragment_2.text_state.background_color = ap.Color.light_gray
+            text_fragment_2.text_state.foreground_color = ap.Color.blue
+            # Create text fragment
+            text_fragment_3 = ap.text.TextFragment("And some more text...")
+            # Set text properties
+            text_fragment_3.text_state.font_size = 12
+            text_fragment_3.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+            text_fragment_3.text_state.background_color = ap.Color.light_gray
+            text_fragment_3.text_state.foreground_color = ap.Color.blue
+            text_fragment_3.text_state.underline = True
+            paragraph.append_line(text_fragment_1)
+            paragraph.append_line(text_fragment_2)
+            paragraph.append_line(text_fragment_3)
+            # Create TextBuilder object
+            builder = ap.text.TextBuilder(page)
+            # Append the text fragment to the PDF page
+            builder.append_paragraph(paragraph)
+
+        # Save the document
+        document.save(outfile)
 ```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF لمكتبة .NET",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

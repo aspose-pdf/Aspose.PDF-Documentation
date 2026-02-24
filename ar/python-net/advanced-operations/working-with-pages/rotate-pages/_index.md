@@ -4,172 +4,63 @@ linktitle: تدوير صفحات PDF
 type: docs
 weight: 110
 url: /ar/python-net/rotate-pages/
-description: يصف هذا الموضوع كيفية تدوير اتجاه الصفحة في ملف PDF موجود برمجيًا باستخدام بايثون.
-lastmod: "2023-04-17"
-sitemap:
+description: يصف هذا الموضوع كيفية تدوير اتجاه الصفحات في ملف PDF موجود برمجيًا باستخدام بايثون.
+lastmod: "2025-11-16"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية تدوير الصفحات في PDF باستخدام بايثون
+Abstract: توفر هذه المقالة دليلًا حول كيفية تحديث أو تغيير اتجاه صفحات ملف PDF موجود برمجيًا باستخدام بايثون. باستخدام Aspose.PDF لبايثون عبر .NET، يمكن للمستخدمين بسهولة التبديل بين الاتجاهات الأفقية والعمودية عن طريق تعديل خصائص MediaBox الخاصة بالصفحة. تتضمن المقالة مقتطف كود بايثون يُظهر كيفية التكرار عبر صفحات وثيقة PDF، وتعديل أبعاد ومواقع MediaBox الخاصة بها، وضبط CropBox إذا لزم الأمر. بالإضافة إلى ذلك، توضح كيفية ضبط زاوية تدوير الصفحات باستخدام طريقة 'rotate' لتحقيق الاتجاه المطلوب. تُختتم العملية بحفظ ملف PDF المحدث.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "تدوير صفحات PDF باستخدام بايثون",
-    "alternativeHeadline": "كيفية تدوير صفحات PDF باستخدام بايثون",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات pdf",
-    "keywords": "pdf, python, تدوير صفحة pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/rotate-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/rotate-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "يصف هذا الموضوع كيفية تدوير اتجاه الصفحة في ملف PDF موجود برمجيًا باستخدام بايثون."
-}
-</script>
 
-
-هذا الموضوع يوضح كيفية تحديث أو تغيير اتجاه الصفحات في ملف PDF موجود برمجيًا باستخدام Python.
+يصف هذا الموضوع كيفية تحديث أو تغيير اتجاه صفحات ملف PDF موجود برمجيًا باستخدام بايثون.
 
 ## تغيير اتجاه الصفحة
 
-تدعم Aspose.PDF لـ Python عبر .NET ميزات رائعة مثل تغيير اتجاه الصفحة من أفقي إلى عمودي والعكس. لتغيير اتجاه الصفحة، قم بتعيين MediaBox للصفحة باستخدام مقتطف الشيفرة التالي. يمكنك أيضًا تغيير اتجاه الصفحة عن طريق تعيين زاوية الدوران باستخدام طريقة 'rotate'.
+تُدوِّر هذه الدالة كل صفحة من PDF [`مستند`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 90 درجة باتجاه عقارب الساعة باستخدام Aspose.PDF لبايثون.
+تُعَدُّ مفيدة لتصحيح مشكلات اتجاه الصفحات، مثل المستندات الممسوحة ضوئيًا التي تكون مائلة. يظل ملف PDF الأصلي بدون تغيّر، ويتم حفظ النسخة المُدوَّرة كملف جديد.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    for page in doc.pages:
-        r = page.media_box
-        newHeight = r.width
-        newWidth = r.height
-        newLLX = r.llx
-        # يجب علينا تحريك الصفحة لأعلى لتعويض تغيير حجم الصفحة
-        # (الحافة السفلى للصفحة هي 0,0 والمعلومات عادة ما توضع من
-        # أعلى الصفحة. لهذا السبب نحرك الحافة السفلى للأعلى بالفرق بين
-        # الارتفاع القديم والجديد.
-        newLLY = r.lly + (r.height - newHeight)
-        page.media_box = ap.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight, True)
-        # أحيانا نحتاج أيضًا إلى تعيين CropBox (إذا كان مُعَيَّنًا في الملف الأصلي)
-        page.crop_box = ap.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight, True)
+# Global configuration
+DATA_DIR = "your path here"
 
-        # تعيين زاوية دوران الصفحة
+def rotate_page(infile, outfile):
+    """
+    Rotate all pages in a PDF document by 90 degrees clockwise.
+
+    Demonstrates how to rotate PDF pages using the Aspose.PDF library.
+    This function applies a 90-degree clockwise rotation to every page
+    in the input document and saves the result to a new file.
+
+    Args:
+        infile (str): Path to the input PDF file to rotate.
+        outfile (str): Path where the rotated PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF pages and saves to the output path.
+
+    Note:
+        - Applies 90-degree clockwise rotation (ap.Rotation.ON90) to all pages
+        - Rotates every page in the document uniformly
+        - The original document is not modified; a new file is created
+        - Rotation options include: ON90 (90°), ON180 (180°), ON270 (270°)
+        - Useful for correcting page orientation or adjusting layout
+
+    Example:
+        >>> rotate_page("input.pdf", "rotated_output.pdf")
+        # Rotates all pages 90 degrees clockwise and saves to rotated_output.pdf
+    """
+    document = ap.Document(infile)
+    for page in document.pages:
+        # `page` is a `Page` object; `rotate` uses the `Rotation` enum
         page.rotate = ap.Rotation.ON90
 
-    # حفظ الملف الناتج
-    doc.save(output_pdf)
+    document.save(outfile)
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python عبر مكتبة .NET",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "عرض",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "تقييم مجمع",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

@@ -1,112 +1,105 @@
 ---
-title: تحويل PDF إلى PowerPoint في بايثون
+title: تحويل PDF إلى PowerPoint في Python
 linktitle: تحويل PDF إلى PowerPoint
 type: docs
 weight: 30
 url: /ar/python-net/convert-pdf-to-powerpoint/
-description: يسمح Aspose.PDF لك بتحويل PDF إلى تنسيق PPT (PowerPoint) باستخدام بايثون. هناك إمكانية لتحويل PDF إلى PPTX بالشرائح كصور.
-lastmod: "2022-12-23"
-sitemap:
+description: تعرف على كيفية تحويل ملفات PDF بسهولة إلى عروض PowerPoint باستخدام Aspose.PDF لـ Python عبر .NET. دليل خطوة بخطوة للتحويل السلس من PDF إلى PPTX.
+lastmod: "2025-09-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية تحويل PDF إلى PowerPoint باستخدام Python
+Abstract: يوفر هذا المقال دليلًا شاملًا حول تحويل ملفات PDF إلى عروض PowerPoint باستخدام Python، مع التركيز بشكل خاص على تنسيق PPTX. يقدم استخدام Aspose.PDF لـ Python عبر .NET، الذي يسهل عملية التحويل من خلال السماح بتحويل صفحات PDF إلى شرائح فردية في ملف PPTX. يوضح المقال الخطوات اللازمة للتحويل، بما في ذلك إنشاء مثيلات من الفئات Document و PptxSaveOptions واستخدام طريقة Save. بالإضافة إلى ذلك، يسلط الضوء على ميزة تحويل ملفات PDF إلى PPTX مع الشرائح كصور عن طريق تعيين خاصية محددة في PptxSaveOptions. يتم توفير مقتطفات كود لتوضيح عملية التحويل. كما يشير المقال إلى تطبيق онлайн لاختبار ميزة تحويل PDF إلى PPTX، مما يمنح المستخدمين تجربة عملية. علاوة على ذلك، يسرد مجموعة من المواضيع والوظائف ذات الصلة المتاحة في هذا السياق، مؤكدًا على مرونة والنهج البرمجي في التعامل مع تحويل PDF إلى PowerPoint باستخدام Python.
 ---
-## نظرة عامة
 
-هل من الممكن تحويل ملف PDF إلى PowerPoint؟ نعم، يمكنك ذلك! وهو سهل!
-توضح هذه المقالة كيفية **تحويل PDF إلى PowerPoint باستخدام بايثون**. تغطي هذه المواضيع.
-
-_التنسيق_: **PPTX**
-- [Python PDF إلى PPTX](#python-pdf-to-pptx)
-- [Python تحويل PDF إلى PPTX](#python-pdf-to-pptx)
-- [Python كيفية تحويل ملف PDF إلى PPTX](#python-pdf-to-pptx)
-
-_التنسيق_: **PowerPoint**
-- [Python PDF إلى PowerPoint](#python-pdf-to-powerpoint)
-- [Python تحويل PDF إلى PowerPoint](#python-pdf-to-powerpoint)
-- [Python كيفية تحويل ملف PDF إلى PowerPoint](#python-pdf-to-powerpoint)
-
-
-## تحويل بايثون PDF إلى PowerPoint وPPTX
+## تحويل PDF إلى PowerPoint و PPTX باستخدام Python
 
 **Aspose.PDF for Python via .NET** يتيح لك تتبع تقدم تحويل PDF إلى PPTX.
 
-لدينا واجهة برمجة تطبيقات تسمى Aspose.Slides والتي تقدم ميزة إنشاء وكذلك معالجة عروض PPT/PPTX. توفر هذه الواجهة أيضًا ميزة تحويل ملفات PPT/PPTX إلى تنسيق PDF. أثناء هذا التحويل، يتم تحويل الصفحات الفردية لملف PDF إلى شرائح منفصلة في ملف PPTX.
+لدينا واجهة برمجة تطبيقات تسمى Aspose.Slides تقدم ميزة إنشاء وتعديل عروض PPT/PPTX. كما توفر هذه الواجهة ميزة تحويل ملفات <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr> إلى تنسيق PDF. خلال هذا التحويل، يتم تحويل صفحات ملف PDF الفردية إلى شرائح منفصلة في ملف PPTX.
 
-خلال تحويل PDF إلى <abbr title="Microsoft PowerPoint 2007 XML Presentation">PPTX</abbr>، يتم عرض النص كـ Text حيث يمكنك تحديده/تحديثه. يرجى ملاحظة أنه من أجل تحويل ملفات PDF إلى تنسيق PPTX، توفر Aspose.PDF فئة تسمى [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/). يتم تمرير كائن من فئة PptxSaveOptions كحجة ثانية إلى [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods). يوضح مقتطف الكود التالي عملية تحويل ملفات PDF إلى تنسيق PPTX.
+أثناء تحويل PDF إلى PPTX، يتم عرض النص كـ Text حيث يمكنك تحديده/تحديثه. يرجى ملاحظة أنه لتحويل ملفات PDF إلى تنسيق PPTX، توفر Aspose.PDF فئة تسمى [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/). يتم تمرير كائن من فئة PptxSaveOptions كمعامل ثانٍ إلى الدالة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods). يوضح مقتطف الكود التالي عملية تحويل ملفات PDF إلى تنسيق PPTX.
 
-## تحويل بسيط من PDF إلى PowerPoint باستخدام Python و Aspose.PDF for Python
+## تحويل بسيط من PDF إلى PowerPoint باستخدام Python و Aspose.PDF for Python عبر .NET
 
-من أجل تحويل PDF إلى PPTX، توصي Aspose.PDF for Python باستخدام خطوات الكود التالية.
+لتحويل PDF إلى PPTX، توصي Aspose.PDF for Python باستخدام خطوات الشيفرة التالية.
 
-<a name="csharp-pdf-to-powerpoint"><strong>الخطوات: تحويل PDF إلى PowerPoint في Python</strong></a> | <a name="csharp-pdf-to-pptx"><strong>الخطوات: تحويل PDF إلى PPTX في Python</strong></a>
+خطوات: تحويل PDF إلى PowerPoint باستخدام Python
 
-1. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)
-2. إنشاء مثيل من فئة [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/)
-3. استخدام طريقة **Save** لكائن **Document** لحفظ PDF كـ PPTX
+1. إنشاء مثيل من فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. إنشاء مثيل من فئة [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/).
+1. استدعاء طريقة [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_pptx.pptx"
-    # فتح مستند PDF
-    document = ap.Document(input_pdf)
-    # إنشاء مثيل PptxSaveOptions
-    save_option = ap.PptxSaveOptions()
-    # حفظ الملف بتنسيق MS PowerPoint
-    document.save(output_pdf, save_option)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    save_options = apdf.PptxSaveOptions()
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
 ```
 
 ## تحويل PDF إلى PPTX مع الشرائح كصور
 
-
 {{% alert color="success" %}}
-**حاول تحويل PDF إلى PowerPoint عبر الإنترنت**
+**جرّب تحويل PDF إلى PowerPoint عبر الإنترنت**
 
-يقدم لك Aspose.PDF for Python تطبيقًا مجانيًا عبر الإنترنت ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
+تقدم لك Aspose.PDF تطبيقًا مجانيًا عبر الإنترنت ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx)، حيث يمكنك تجربة الوظيفة وجودتها.
 
-[![Aspose.PDF تحويل PDF إلى PPTX باستخدام تطبيق مجاني](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
+
+[![تحويل Aspose.PDF من PDF إلى PPTX مع تطبيق مجاني](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
 {{% /alert %}}
 
-في حال احتجت إلى تحويل مستند PDF قابل للبحث إلى PPTX كصور بدلاً من نص قابل للتحديد، يوفر Aspose.PDF هذه الميزة من خلال فئة [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/). لتحقيق ذلك، قم بتعيين خاصية [slides_as_images](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/#properties) لفئة [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) إلى 'true' كما هو موضح في نموذج الكود التالي.
+في حال كنت بحاجة إلى تحويل PDF قابل للبحث إلى PPTX كصور بدلاً من النص القابل للتحديد، توفر Aspose.PDF هذه الميزة عبر فئة [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/). لتحقيق ذلك، اضبط الخاصية [slides_as_images](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/#properties) في فئة [PptxSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/pptxsaveoptions/) إلى 'true' كما هو موضح في مثال الشيفرة التالي.
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf =  DIR_OUTPUT + "convert_pdf_to_pptx_with_slides_as_images.pptx"
-    # افتح مستند PDF
-    document = ap.Document(input_pdf)
-    # إنشاء مثيل PptxSaveOptions
-    save_option = ap.PptxSaveOptions()
-    save_option.slides_as_images = True
-    # احفظ الملف بتنسيق MS PowerPoint
-    document.save(output_pdf, save_option)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    save_options = apdf.PptxSaveOptions()
+    save_options.slides_as_images = True
+
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
 ```
 
+## تحويل PDF إلى PPTX مع دقة صورة مخصصة
 
-## انظر أيضا
+تحول هذه الطريقة مستند PDF إلى ملف PowerPoint (PPTX) مع ضبط دقة صورة مخصصة (300 DPI) لتحسين الجودة.
 
-تغطي هذه المقالة أيضًا هذه المواضيع. الأكواد هي نفسها كما في الأعلى.
+1. تحميل PDF إلى كائن 'ap.Document'.
+1. إنشاء مثيل من 'PptxSaveOptions'.
+1. ضبط خاصية 'image_resolution' إلى 300 DPI للحصول على عرض عالي الجودة.
+1. حفظ PDF كملف PPTX باستخدام خيارات الحفظ المحددة.
 
-_التنسيق_: **PowerPoint**
-- [كود تحويل PDF إلى PowerPoint باستخدام بايثون](#python-pdf-to-powerpoint)
-- [API لتحويل PDF إلى PowerPoint باستخدام بايثون](#python-pdf-to-powerpoint)
-- [التحويل البرمجي من PDF إلى PowerPoint باستخدام بايثون](#python-pdf-to-powerpoint)
-- [مكتبة بايثون لتحويل PDF إلى PowerPoint](#python-pdf-to-powerpoint)
-- [حفظ PDF كملف PowerPoint باستخدام بايثون](#python-pdf-to-powerpoint)
-- [إنشاء PowerPoint من PDF باستخدام بايثون](#python-pdf-to-powerpoint)
-- [إنشاء PowerPoint من PDF باستخدام بايثون](#python-pdf-to-powerpoint)
-- [محول PDF إلى PowerPoint باستخدام بايثون](#python-pdf-to-powerpoint)
+```python
 
-_التنسيق_: **PPTX**
-- [كود تحويل PDF إلى PPTX باستخدام بايثون](#python-pdf-to-pptx)
-- [API لتحويل PDF إلى PPTX باستخدام بايثون](#python-pdf-to-pptx)
-- [التحويل البرمجي من PDF إلى PPTX باستخدام بايثون](#python-pdf-to-pptx)
-- [مكتبة بايثون لتحويل PDF إلى PPTX](#python-pdf-to-pptx)
-- [حفظ PDF كملف PPTX باستخدام بايثون](#python-pdf-to-pptx)
-- [إنشاء PPTX من PDF باستخدام بايثون](#python-pdf-to-pptx)
-- [إنشاء PPTX من PDF باستخدام بايثون](#python-pdf-to-pptx)
-- [محول PDF إلى PPTX باستخدام بايثون](#python-pdf-to-pptx)
+    from os import path
+    import aspose.pdf as apdf
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = apdf.Document(path_infile)
+    save_options = apdf.PptxSaveOptions()
+    save_options.image_resolution = 300
+
+    document.save(path_outfile, save_options)
+
+    print(infile + " converted into " + outfile)
+```
+

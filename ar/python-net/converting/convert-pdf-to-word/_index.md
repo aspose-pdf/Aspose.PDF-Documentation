@@ -1,176 +1,95 @@
 ---
-title: تحويل ملفات PDF إلى مستندات Microsoft Word باستخدام بايثون
-linktitle: تحويل PDF إلى Word 2003/2019
+title: تحويل PDF إلى مستندات Microsoft Word في بايثون
+linktitle: تحويل PDF إلى Word
 type: docs
 weight: 10
 url: /ar/python-net/convert-pdf-to-word/
-lastmod: "2022-12-23"
-description: تعلم كيفية كتابة كود بايثون لتحويل تنسيقات PDF إلى Microsoft Word باستخدام Aspose.PDF لـ Python عبر .NET. وتحسين تحويل PDF إلى DOC(DOCX).
-sitemap:
+lastmod: "2025-09-27"
+description: تعلم كيفية تحويل مستندات PDF إلى تنسيق Word في بايثون باستخدام Aspose.PDF لتسهيل تحرير المستندات.
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية تحويل PDF إلى Word في بايثون
+Abstract: توفر هذه المقالة دليلًا شاملًا حول تحويل ملفات PDF إلى صيغ Microsoft Word (DOC و DOCX) باستخدام بايثون، مع الاستفادة من مكتبة Aspose.PDF. وتستعرض مزايا تحويل ملفات PDF إلى مستندات Word قابلة للتحرير، مما يسهل تعديل المحتوى مثل النصوص والجداول والصور. تفصل المقالة عملية التحويل إلى DOC (صيغة Word 97-2003) و DOCX، مع مقاطع كود توضح هذه التحويلات عبر بايثون. تشمل العملية إنشاء كائن `Document` من ملف PDF وحفظه بالصيغ المطلوبة باستخدام طريقة `save()` وتعداد `SaveFormat`. بالإضافة إلى ذلك، تُقدم فئة `DocSaveOptions` التي تسمح بمزيد من تخصيص عملية التحويل، مثل تحديد أوضاع التعرف. كما تُسلط المقالة الضوء على التطبيقات الإلكترونية التي توفرها Aspose.PDF لاختبار جودة ووظيفة التحويل. يحتوي المحتوى على نظرة عامة منظمة وروابط للأقسام المقابلة لكل صيغة.
 ---
 
-## نظرة عامة
+## تحويل PDF إلى DOC
 
-تشرح هذه المقالة كيفية **تحويل PDF إلى مستندات Microsoft Word باستخدام بايثون**. وهي تغطي هذه المواضيع.
+إحدى أكثر الميزات شهرة هي تحويل PDF إلى Microsoft Word DOC، مما يجعل إدارة المحتوى أسهل. **Aspose.PDF for Python via .NET** يتيح لك تحويل ملفات PDF ليس فقط إلى DOC بل أيضًا إلى صيغة DOCX بسهولة وكفاءة.
 
-_تنسيق_: **DOC**
-- [بايثون PDF إلى DOC](#python-pdf-to-doc)
-- [بايثون تحويل PDF إلى DOC](#python-pdf-to-doc)
-- [بايثون كيفية تحويل ملف PDF إلى DOC](#python-pdf-to-doc)
+توفر فئة [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) العديد من الخصائص التي تحسن عملية تحويل ملفات PDF إلى صيغة DOC. من بين هذه الخصائص، يتيح لك الوضع (Mode) تحديد وضع التعرف لمحتوى PDF. يمكنك تحديد أي قيمة من تعداد RecognitionMode لهذه الخاصية. كل من هذه القيم لها فوائد وقيود معينة:
 
-_تنسيق_: **DOCX**
-- [بايثون PDF إلى DOCX](#python-pdf-to-docx)
-- [بايثون تحويل PDF إلى DOCX](#python-pdf-to-docx)
-- [بايثون كيفية تحويل ملف PDF إلى DOCX](#python-pdf-to-docx)
+الخطوات: تحويل PDF إلى DOC في بايثون
 
-_تنسيق_: **Word**
-- [بايثون PDF إلى Word](#python-pdf-to-docx)
-- [بايثون تحويل PDF إلى Word](#python-pdf-to-doc)
-
-- [بايثون كيفية تحويل ملف PDF إلى Word](#python-pdf-to-docx)
-
-## تحويل PDF إلى DOC و DOCX باستخدام Python
-
-من أكثر الميزات شهرة هي تحويل PDF إلى Microsoft Word DOC، مما يجعل إدارة المحتوى أسهل. **Aspose.PDF for Python** يتيح لك تحويل ملفات PDF ليس فقط إلى DOC بل أيضًا إلى تنسيق DOCX بسهولة وكفاءة.
-
-## تحويل ملف PDF إلى DOC (Word 97-2003)
-
-قم بتحويل ملف PDF إلى تنسيق DOC بسهولة وتحكم كامل. Aspose.PDF for Python مرن ويدعم مجموعة واسعة من التحويلات. تحويل الصفحات من مستندات PDF إلى صور، على سبيل المثال، هو ميزة شائعة جدًا.
-
-تحويل طلبه العديد من عملائنا هو PDF إلى DOC: تحويل ملف PDF إلى مستند Microsoft Word. العملاء يرغبون في ذلك لأن ملفات PDF لا يمكن تحريرها بسهولة، بينما يمكن تحرير مستندات Word. بعض الشركات ترغب في أن يتمكن مستخدموها من التعامل مع النصوص والجداول والصور في ملفات بدأت بصيغة PDF.
-
-مع الحفاظ على تقليد جعل الأمور بسيطة ومفهومة، يتيح لك Aspose.PDF for Python تحويل ملف PDF المصدر إلى ملف DOC بسطرين من التعليمات البرمجية.
- لإتمام هذه الميزة، قمنا بإدخال تعداد يسمى SaveFormat وقيمته .Doc تتيح لك حفظ الملف المصدر بتنسيق Microsoft Word.
-
-يُظهر مقتطف الكود البايثون التالي عملية تحويل ملف PDF إلى تنسيق DOC.
-
-<a name="csharp-pdf-to-doc"><strong>الخطوات: تحويل PDF إلى DOC في بايثون</strong></a>
-
-1. قم بإنشاء مثيل لكائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع مستند PDF المصدر.
-2. احفظه بتنسيق [SaveFormat](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) عن طريق استدعاء طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. تحميل ملف PDF في كائن 'ap.Document'.
+1. إنشاء مثيل من 'DocSaveOptions'.
+1. تعيين خاصية format إلى 'DocFormat.DOC' لضمان أن يكون الإخراج بصيغة .doc (صيغة Word القديمة).
+1. حفظ PDF كمستند Word باستخدام خيارات الحفظ المحددة.
+1. طباعة رسالة تأكيد.
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_doc.doc"
-    # افتح مستند PDF
-    document = ap.Document(input_pdf)
-    # احفظ الملف بتنسيق مستند MS Word
-    document.save(output_pdf, ap.SaveFormat.DOC)
-```
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-### استخدام فئة DocSaveOptions
+    document = apdf.Document(path_infile)
+    save_options = apdf.DocSaveOptions()
+    save_options.format = apdf.DocSaveOptions.DocFormat.DOC
+    document.save(path_outfile, save_options)
 
-توفر فئة [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) العديد من الخصائص التي تحسن عملية تحويل ملفات PDF إلى تنسيق DOC. بين هذه الخصائص، تُمكنك وضعية Mode من تحديد وضع التعرف على محتوى PDF. يمكنك تحديد أي قيمة من تعداد RecognitionMode لهذه الخاصية. لكل واحدة من هذه القيم فوائد وقيود محددة:
-
-```python
-
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_doc_with_options.doc"
-    # افتح مستند PDF
-    document = ap.Document(input_pdf)
-
-    save_options = ap.DocSaveOptions()
-    save_options.format = ap.DocSaveOptions.DocFormat.DOC
-    # قم بتعيين وضع التعرف كـ Flow
-    save_options.mode = ap.DocSaveOptions.RecognitionMode.FLOW
-    # قم بتعيين القرب الأفقي كـ 2.5
-    save_options.relative_horizontal_proximity = 2.5
-    # قم بتمكين القيمة للتعرف على النقاط أثناء عملية التحويل
-    save_options.recognize_bullets = True
-
-    # حفظ الملف بصيغة مستند MS Word
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
 {{% alert color="success" %}}
-**حاول تحويل PDF إلى DOC عبر الإنترنت**
+**جرّب تحويل PDF إلى DOC عبر الإنترنت**
 
-تقدم Aspose.PDF for Python تطبيقًا مجانيًا عبر الإنترنت ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)، حيث يمكنك محاولة استكشاف الوظيفة والجودة التي يعمل بها.
-[![Convert PDF to DOC](/pdf/ar/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) {{% /alert %}}
+تقدم لك Aspose.PDF for Python تطبيقًا مجانيًا على الإنترنت ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)، حيث يمكنك تجربة الوظيفة وجودتها.
+
+[![تحويل PDF إلى DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+{{% /alert %}}
 
 ## تحويل PDF إلى DOCX
 
-تتيح لك Aspose.PDF لـ Python API قراءة وتحويل مستندات PDF إلى DOCX باستخدام Python عبر .NET. DOCX هو تنسيق معروف لمستندات Microsoft Word الذي تم تغيير هيكله من ثنائي عادي إلى مزيج من ملفات XML وثنائية. يمكن فتح ملفات Docx باستخدام Word 2007 والإصدارات الأحدث ولكن ليس مع الإصدارات السابقة من MS Word التي تدعم امتدادات ملفات DOC.
+تتيح لك Aspose.PDF for Python API قراءة وتحويل مستندات PDF إلى DOCX باستخدام بايثون عبر .NET. DOCX هي صيغة معروفة لمستندات Microsoft Word تم تغيير هيكلها من ثنائي بسيط إلى مزيج من ملفات XML والثنائية. يمكن فتح ملفات DOCX باستخدام Word 2007 والإصدارات اللاحقة لكنها غير مدعومة في الإصدارات الأقدم من MS Word التي تدعم امتدادات ملفات DOC.
 
-يوضح مقطع الكود التالي في Python عملية تحويل ملف PDF إلى تنسيق DOCX.
+تظهر مقطع كود بايثون التالي عملية تحويل ملف PDF إلى صيغة DOCX.
 
-<a name="csharp-pdf-to-docx"><strong>الخطوات: تحويل PDF إلى DOCX في Python</strong></a>
+الخطوات: تحويل PDF إلى DOCX في بايثون
 
-1. قم بإنشاء مثيل لكائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مع مستند PDF المصدر.
-
-2. احفظه بصيغة [SaveFormat](https://reference.aspose.com/pdf/python-net/aspose.pdf/saveformat/) عن طريق استدعاء طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+1. تحميل ملف PDF المصدر باستخدام 'ap.Document'.
+1. إنشاء مثيل من 'DocSaveOptions'.
+1. تعيين خاصية format إلى 'DocFormat.DOC_X' لإنشاء ملف .docx (صيغة Word الحديثة).
+1. حفظ PDF كملف DOCX باستخدام خيارات الحفظ المُكوَّنة.
+1. طباعة رسالة تأكيد بعد التحويل.
 
 ```python
 
-    import aspose.pdf as ap
+    from os import path
+    import aspose.pdf as apdf
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_docx_options.docx"
-    # افتح مستند PDF
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    save_options = ap.DocSaveOptions()
-    save_options.format = ap.DocSaveOptions.DocFormat.DOC_X
-    # عيّن وضع التعرف كـ Flow
-    save_options.mode = ap.DocSaveOptions.RecognitionMode.FLOW
-    # عيّن القرب الأفقي كـ 2.5
-    save_options.relative_horizontal_proximity = 2.5
-    # تمكين القيمة للتعرف على النقاط أثناء عملية التحويل
-    save_options.recognize_bullets = True
+    document = apdf.Document(path_infile)
+    save_options = apdf.DocSaveOptions()
+    save_options.format = apdf.DocSaveOptions.DocFormat.DOC_X
+    document.save(path_outfile, save_options)
 
-    # احفظ الملف بصيغة مستند MS Word
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
-تحتوي فئة [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) على خاصية تسمى Format والتي توفر القدرة على تحديد صيغة المستند الناتج، أي DOC أو DOCX.
- من أجل تحويل ملف PDF إلى تنسيق DOCX، يرجى تمرير قيمة Docx من تعداد DocSaveOptions.DocFormat.
+تحتوي فئة [DocSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/docsaveoptions/) على خاصية تسمى Format توفر القدرة على تحديد صيغة المستند الناتج، إما DOC أو DOCX. لتحويل ملف PDF إلى صيغة DOCX، يرجى تمرير القيمة Docx من تعداد DocSaveOptions.DocFormat.
 
 {{% alert color="warning" %}}
-**حاول تحويل PDF إلى DOCX عبر الإنترنت**
+**جرّب تحويل PDF إلى DOCX عبر الإنترنت**
 
-يقدم Aspose.PDF لـ Python تطبيقًا مجانيًا عبر الإنترنت ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
+تقدم لك Aspose.PDF for Python تطبيقًا مجانيًا على الإنترنت ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)، حيث يمكنك تجربة الوظيفة وجودتها.
 
-[![تطبيق Aspose.PDF لتحويل PDF إلى Word مجانًا](/pdf/ar/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![تطبيق Aspose.PDF للتحويل من PDF إلى Word المجاني](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 
-## انظر أيضًا
-
-تغطي هذه المقالة أيضًا هذه المواضيع. الأكواد هي نفسها كما هو مذكور أعلاه.
-
-_التنسيق_: **Word**
-- [كود Python لتحويل PDF إلى Word](#python-pdf-to-docx)
-- [واجهة برمجة تطبيقات Python لتحويل PDF إلى Word](#python-pdf-to-docx)
-- [تحويل PDF إلى Word بواسطة Python برمجيًا](#python-pdf-to-docx)
-- [مكتبة Python لتحويل PDF إلى Word](#python-pdf-to-docx)
-- [حفظ PDF كملف Word بواسطة Python](#python-pdf-to-docx)
-- [إنشاء Word من PDF بواسطة Python](#python-pdf-to-docx)
-- [إنشاء ملف Word من PDF بواسطة Python](#python-pdf-to-docx)
-
-- [محول PDF إلى Word بواسطة Python](#python-pdf-to-docx)
-_Format_: **DOC**
-- [كود بايثون لتحويل PDF إلى DOC](#python-pdf-to-doc)
-- [واجهة برمجة تطبيقات بايثون لتحويل PDF إلى DOC](#python-pdf-to-doc)
-- [برمجة بايثون لتحويل PDF إلى DOC](#python-pdf-to-doc)
-- [مكتبة بايثون لتحويل PDF إلى DOC](#python-pdf-to-doc)
-- [حفظ PDF كـ DOC باستخدام بايثون](#python-pdf-to-doc)
-- [إنشاء DOC من PDF باستخدام بايثون](#python-pdf-to-doc)
-- [إنشاء مستند DOC من PDF باستخدام بايثون](#python-pdf-to-doc)
-- [محول بايثون من PDF إلى DOC](#python-pdf-to-doc)
-
-_Format_: **DOCX**
-- [كود بايثون لتحويل PDF إلى DOCX](#python-pdf-to-docx)
-- [واجهة برمجة تطبيقات بايثون لتحويل PDF إلى DOCX](#python-pdf-to-docx)
-- [برمجة بايثون لتحويل PDF إلى DOCX](#python-pdf-to-docx)
-- [مكتبة بايثون لتحويل PDF إلى DOCX](#python-pdf-to-docx)
-- [حفظ PDF كـ DOCX باستخدام بايثون](#python-pdf-to-docx)
-- [إنشاء DOCX من PDF باستخدام بايثون](#python-pdf-to-docx)
-- [إنشاء مستند DOCX من PDF باستخدام بايثون](#python-pdf-to-docx)
-- [محول بايثون من PDF إلى DOCX](#python-pdf-to-docx)

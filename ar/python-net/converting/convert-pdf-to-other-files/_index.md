@@ -4,176 +4,191 @@ linktitle: تحويل PDF إلى صيغ أخرى
 type: docs
 weight: 90
 url: /ar/python-net/convert-pdf-to-other-files/
-lastmod: "2022-12-23"
-description: يوضح لك هذا الموضوع كيفية تحويل ملف PDF إلى صيغ ملفات أخرى مثل EPUB، LaTeX، نص، XPS إلخ باستخدام بايثون.
-sitemap:
+lastmod: "2025-09-27"
+description: يظهر هذا الموضوع لك كيفية تحويل ملف PDF إلى صيغ ملفات أخرى مثل EPUB، LaTeX، نص، XPS وغيرها باستخدام بايثون.
+sitemap: 
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: كيفية تحويل PDF إلى صيغ أخرى باستخدام بايثون
+Abstract: توفر المقالة دليلًا شاملاً حول تحويل ملفات PDF إلى صيغ مختلفة باستخدام Aspose.PDF للبايثون. تغطي عملية تحويل ملفات PDF إلى صيغ EPUB، LaTeX/TeX، نص، XPS، وXML. يبدأ كل قسم بدعوة لتجربة التطبيقات المجانية عبر الإنترنت التي تقدمها Aspose لتحويل ملفات PDF إلى الصيغ المعنية، مع إبراز سهولة الاستخدام وجودة هذه الأدوات.
 ---
 
 ## تحويل PDF إلى EPUB
 
 {{% alert color="success" %}}
-**جرب تحويل PDF إلى EPUB عبر الإنترنت**
+**جرّب تحويل PDF إلى EPUB عبر الإنترنت**
 
-تقدم Aspose.PDF لبايثون تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub)، حيث يمكنك تجربة استكشاف الوظيفة والجودة التي يعمل بها.
+تقدم لك Aspose.PDF للبايثون تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub)، حيث يمكنك تجربة الوظيفة والجودة.
 
-[![تحويل Aspose.PDF من PDF إلى EPUB مع تطبيق مجاني](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
+[![تحويل Aspose.PDF PDF إلى EPUB مع التطبيق المجاني](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
 
-**<abbr title="Electronic Publication">EPUB</abbr>** هو معيار مفتوح ومجاني للكتب الإلكترونية من منتدى النشر الرقمي الدولي (IDPF).
- الملفات لها الامتداد .epub.  
-تم تصميم EPUB للمحتوى القابل لإعادة التدفق، مما يعني أن قارئ EPUB يمكنه تحسين النص لجهاز عرض معين. كما يدعم EPUB المحتوى ذو التخطيط الثابت. يهدف التنسيق ليكون تنسيقًا واحدًا يمكن للناشرين وبيوت التحويل استخدامه داخليًا، وكذلك للتوزيع والبيع. يحل محل المعيار Open eBook.
+<abbr title="Electronic Publication">EPUB</abbr> هو معيار مجاني ومفتوح للكتب الإلكترونية من المنتدى الدولي للنشر الرقمي (IDPF). الملفات لها الامتداد .epub.
+تم تصميم EPUB للمحتوى القابل لإعادة التدفق، أي أن قارئ EPUB يمكنه تحسين النص لجهاز عرض معين. يدعم EPUB أيضًا المحتوى ذو التخطيط الثابت. يهدف هذا التنسيق إلى أن يكون تنسيقًا واحدًا يمكن للناشرين ومكاتب التحويل استخدامه داخليًا، وكذلك للتوزيع والبيع. وهو يحل محل معيار Open eBook.
 
-يدعم Aspose.PDF for Python أيضًا إمكانية تحويل مستندات PDF إلى تنسيق EPUB. يحتوي Aspose.PDF for Python على فئة تسمى 'EpubSaveOptions' والتي يمكن استخدامها كالحجة الثانية لطريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)، لإنشاء ملف EPUB.  
-يرجى محاولة استخدام مقطع الشفرة التالي لتحقيق هذا المتطلب باستخدام بايثون.
+يدعم Aspose.PDF للبايثون أيضًا إمكانية تحويل مستندات PDF إلى صيغة EPUB. يحتوي Aspose.PDF للبايثون على فئة تسمى 'EpubSaveOptions' يمكن استخدامها كمعامل ثانٍ لطريقة [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) لإنشاء ملف EPUB.
+يرجى تجربة استخدام مقتطف الشيفرة التالي لتحقيق هذا المتطلب باستخدام بايثون.
 
 ```python
 
+    from os import path
     import aspose.pdf as ap
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_epub.epub"
-    # افتح مستند PDF
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    # إنشاء خيارات حفظ EPUB
+    document = ap.Document(path_infile)
     save_options = ap.EpubSaveOptions()
+    save_options.content_recognition_mode = (
+        ap.EpubSaveOptions.RecognitionMode.FLOW
+    )
+    document.save(path_outfile, save_options)
 
-    # تحديد التخطيط للمحتويات
-    save_options.content_recognition_mode = ap.EpubSaveOptions.RecognitionMode.FLOW
-
-    # احفظ مستند ePUB
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
 ## تحويل PDF إلى LaTeX/TeX
 
-**Aspose.PDF for Python عبر .NET** يدعم تحويل PDF إلى LaTeX/TeX. 
-تنسيق ملف LaTeX هو تنسيق ملف نصي مع ترميز خاص ويُستخدم في نظام إعداد الوثائق المستند إلى TeX لتنسيق عالي الجودة.
+**يدعم Aspose.PDF للبايثون عبر .NET تحويل PDF إلى LaTeX/TeX**
+تنسيق ملف LaTeX هو تنسيق ملف نصي يحتوي على علامات خاصة ويُستخدم في نظام إعداد المستندات القائم على TeX لتحقيق تنضيد عالي الجودة.
 
 {{% alert color="success" %}}
-**حاول تحويل PDF إلى LaTeX/TeX عبر الإنترنت**
+**جرّب تحويل PDF إلى LaTeX/TeX عبر الإنترنت**
 
-يقدم لك Aspose.PDF for Python تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
+تقدم لك Aspose.PDF للبايثون تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex)، حيث يمكنك تجربة الوظيفة والجودة.
 
-[![تحويل Aspose.PDF من PDF إلى LaTeX/TeX باستخدام تطبيق مجاني](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
+[![تحويل Aspose.PDF PDF إلى LaTeX/TeX مع التطبيق المجاني](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-لتحويل ملفات PDF إلى TeX، يحتوي Aspose.PDF على الفئة [LaTeXSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/latexsaveoptions/) التي توفر الخاصية OutDirectoryPath لحفظ الصور المؤقتة أثناء عملية التحويل.
+لتحويل ملفات PDF إلى TeX، يمتلك Aspose.PDF الفئة [LaTeXSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/latexsaveoptions/) التي توفر الخاصية OutDirectoryPath لحفظ الصور المؤقتة أثناء عملية التحويل.
 
-يوضح الجزء التالي من الكود عملية تحويل ملفات PDF إلى تنسيق TEX باستخدام Python.
+يُظهر مقتطف الشيفرة التالي عملية تحويل ملفات PDF إلى تنسيق TEX باستخدام بايثون.
 
 ```python
 
+    from os import path
     import aspose.pdf as ap
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_tex.tex"
-    # فتح مستند PDF
-    document = ap.Document(input_pdf)
-    # إنشاء كائن من LaTeXSaveOptions
-    saveOptions = ap.LaTeXSaveOptions()
-    document.save(output_pdf, saveOptions)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = ap.Document(path_infile)
+    save_options = ap.LaTeXSaveOptions()
+
+    document.save(path_outfile, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
 ## تحويل PDF إلى نص
 
-**Aspose.PDF for Python** يدعم تحويل مستند PDF بالكامل وصفحة واحدة إلى ملف نصي.
-
-### تحويل مستند PDF إلى ملف نص
-
-يمكنك تحويل مستند PDF إلى ملف TXT باستخدام فئة 'TextDevice'.
-
-يوضح مقتطف الشيفرة التالي كيفية استخراج النصوص من كل الصفحات.
+**يدعم Aspose.PDF للبايثون** تحويل مستند PDF كامل أو صفحة واحدة إلى ملف نص. يمكنك تحويل مستند PDF إلى ملف TXT باستخدام الفئة 'TextDevice'. يشرح مقتطف الشيفرة التالي كيفية استخراج النصوص من جميع الصفحات.
 
 ```python
 
+    from os import path
     import aspose.pdf as ap
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf =  DIR_OUTPUT + "convert_pdf_to_txt.txt"
-    # فتح مستند PDF
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    # إنشاء جهاز نصي
-    textDevice = ap.devices.TextDevice()
+    document = ap.Document(path_infile)
+    device = ap.devices.TextDevice()
+    device.process(document.pages[1], path_outfile)
 
-    # تحويل صفحة معينة وحفظها
-    textDevice.process(document.pages[1], output_pdf)
+    print(infile + " converted into " + outfile)
 ```
-**حاول تحويل PDF إلى نص عبر الإنترنت**
+
 {{% alert color="success" %}}
+**جرّب تحويل PDF إلى نص عبر الإنترنت**
 
-يقدم لك Aspose.PDF لـ Python تطبيقًا مجانيًا عبر الإنترنت ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
+تقدم لك Aspose.PDF للبايثون تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى نص"](https://products.aspose.app/pdf/conversion/pdf-to-txt)، حيث يمكنك تجربة الوظيفة والجودة.
 
-[![تحويل Aspose.PDF من PDF إلى نص باستخدام تطبيق مجاني](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
+[![تحويل Aspose.PDF PDF إلى نص مع التطبيق المجاني](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}
 
 ## تحويل PDF إلى XPS
 
-يوفر **Aspose.PDF لـ Python** إمكانية تحويل ملفات PDF إلى تنسيق <abbr title="XML Paper Specification">XPS</abbr>. دعنا نحاول استخدام مقتطف الشفرة المقدم لتحويل ملفات PDF إلى تنسيق XPS باستخدام Python.
+**يمنح Aspose.PDF للبايثون** إمكانية تحويل ملفات PDF إلى صيغة XPS. دعنا نجرب استخدام مقتطف الشيفرة المعروض لتحويل ملفات PDF إلى صيغة XPS باستخدام بايثون.
 
 {{% alert color="success" %}}
-**حاول تحويل PDF إلى XPS عبر الإنترنت**
+**جرّب تحويل PDF إلى XPS عبر الإنترنت**
 
-يقدم لك Aspose.PDF لـ Python تطبيقًا مجانيًا عبر الإنترنت ["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
+تقدم لك Aspose.PDF للبايثون تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps)، حيث يمكنك تجربة الوظيفة والجودة.
 
-[![تحويل Aspose.PDF من PDF إلى XPS باستخدام تطبيق مجاني](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+[![تحويل Aspose.PDF PDF إلى XPS مع التطبيق المجاني](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
 {{% /alert %}}
 
-نوع ملف XPS مرتبط بشكل أساسي بمواصفات ورق XML من قبل شركة Microsoft Corporation. مواصفات ورق XML (XPS)، التي كانت تحمل الاسم الرمزي Metro سابقًا وتشمل مفهوم التسويق Next Generation Print Path (NGPP)، هي مبادرة من Microsoft لدمج إنشاء المستندات وعرضها في نظام التشغيل Windows.
+نوع ملف XPS مرتبط أساسًا بمواصفة الورق XML من شركة مايكروسوفت. مواصفة الورق XML (XPS)، التي كان اسمها الرمزي السابق Metro وتضم مفهوم مسار الطباعة الجيل التالي (NGPP)، هي مبادرة مايكروسوفت لدمج إنشاء المستندات وعرضها في نظام تشغيل Windows.
 
-لتحويل ملفات PDF إلى XPS، يتوافر في Aspose.PDF الفئة [XpsSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/xpssaveoptions/) التي تُستخدم كحجة ثانية لطريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) لتوليد ملف XPS.
+لتحويل ملفات PDF إلى XPS، يمتلك Aspose.PDF الفئة [XpsSaveOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf/xpssaveoptions/) التي تُستخدم كمعامل ثانٍ لطريقة [document.save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) لإنشاء ملف XPS.
 
-يظهر مقطع الشيفرة التالي عملية تحويل ملف PDF إلى تنسيق XPS.
+يُظهر مقتطف الشيفرة التالي عملية تحويل ملف PDF إلى صيغة XPS.
 
 ```python
 
+    from os import path
     import aspose.pdf as ap
 
-    input_pdf = DIR_INPUT + "sample.pdf"
-    output_pdf = DIR_OUTPUT + "convert_pdf_to_xps.xps"
-    # فتح مستند PDF
-    document = ap.Document(input_pdf)
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    # إنشاء خيارات الحفظ لـ XPS
+    document = ap.Document(path_infile)
     save_options = ap.XpsSaveOptions()
+    save_options.use_new_imaging_engine = True
+    document.save(path_outfile, save_options)
 
-    # حفظ مستند XPS
-    document.save(output_pdf, save_options)
+    print(infile + " converted into " + outfile)
 ```
 
-## تحويل PDF إلى XML
+## تحويل PDF إلى MD
 
-{{% alert color="success" %}}
-**حاول تحويل PDF إلى XML عبر الإنترنت**
+تحتوي Aspose.PDF على الفئة 'MarkdownSaveOptions()'، التي تقوم بتحويل مستند PDF إلى تنسيق Markdown (MD) مع الحفاظ على الصور والموارد.
 
-يقدم Aspose.PDF لـ Python تطبيقًا مجانيًا عبر الإنترنت ["PDF to XML"](https://products.aspose.app/pdf/conversion/pdf-to-xml)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
-
-[![Aspose.PDF تحويل PDF إلى XML مع تطبيق مجاني](pdf_to_xml.png)](https://products.aspose.app/pdf/conversion/pdf-to-xml)
-{{% /alert %}}
-
-<abbr title="لغة الترميز الموسعة">XML</abbr> هي لغة ترميز وصيغة ملف لتخزين ونقل وإعادة بناء البيانات العشوائية.
-
-يدعم Aspose.PDF لـ Python أيضًا ميزة تحويل مستندات PDF إلى صيغة XML. يحتوي Aspose.PDF لـ Python على فئة تُسمى 'XmlSaveOptions' والتي يمكن استخدامها كوسيط ثاني لطريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)، لإنشاء ملف XML. يرجى محاولة استخدام الجزء التالي من الشيفرة البرمجية لتحقيق هذا المتطلب باستخدام Python.
+1. احمل ملف PDF المصدر باستخدام 'ap.Document'.
+1. أنشئ مثيلاً من 'MarkdownSaveOptions'.
+1. عين 'resources_directory_name' إلى 'images' – سيتم تخزين الصور المستخرجة في هذا المجلد.
+1. احفظ مستند Markdown المحوَّل باستخدام الخيارات المُكوَّنة.
+1. اطبع رسالة تأكيد بعد التحويل.
 
 ```python
 
+    from os import path
     import aspose.pdf as ap
 
-    def convert_pdf_to_xml(self, infile, outfile):
-        path_infile = self.dataDir + infile
-        path_outfile = self.dataDir + outfile
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-        # فتح مستند PDF
+    document = ap.Document(path_infile)
+    save_options = ap.MarkdownSaveOptions()
+    # save_options.extract_vector_graphics = True
+    save_options.resources_directory_name = "images"
+    save_options.use_image_html_tag = True
+    document.save(path_outfile, save_options)
 
-        document = ap.Document(path_infile)
+    print(infile + " converted into " + outfile)
+```
 
-        # إنشاء خيارات حفظ XML
-        save_options = ap.XmlSaveOptions()
+ملف Markdown يحتوي على نص وصور مرتبطة مخزنة في مجلد الصور المحدد.
 
-        # حفظ مستند XML
-        document.save(path_outfile, save_options)
-        print(infile + " تم تحويله إلى " + outfile)
+## تحويل PDF إلى MobiXML
+
+هذه الطريقة تحوِّل مستند PDF إلى تنسيق MOBI (MobiXML)، والذي يُستخدم عادةً للكتب الإلكترونية على أجهزة Kindle.
+
+1. احمل مستند PDF المصدر باستخدام 'ap.Document'.
+1. احفظ المستند بالتنسيق 'ap.SaveFormat.MOBI_XML'.
+1. اطبع رسالة تأكيد بمجرد اكتمال التحويل.
+
+```python
+
+    from os import path
+    import aspose.pdf as ap
+
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = ap.Document(path_infile)
+    document.save(path_outfile, ap.SaveFormat.MOBI_XML)
+
+    print(infile + " converted into " + outfile)
 ```
