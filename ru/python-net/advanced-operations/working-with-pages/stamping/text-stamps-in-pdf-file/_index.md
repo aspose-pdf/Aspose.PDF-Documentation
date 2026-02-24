@@ -1,259 +1,61 @@
 ---
 title: Добавление текстовых штампов в PDF с помощью Python
-linktitle: Текстовые штампы в PDF файле
+linktitle: Текстовые штампы в PDF-файле
 type: docs
 weight: 20
 url: /ru/python-net/text-stamps-in-the-pdf-file/
-description: Добавьте текстовый штамп в PDF документ с использованием класса TextStamp из библиотеки Aspose.PDF для Python.
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+description: Добавьте текстовый штамп в PDF‑документ, используя класс TextStamp с библиотекой Aspose.PDF для Python.
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как добавить текстовые штампы в PDF с помощью Python
+Abstract: В этой статье представлено полное руководство по добавлению текстовых штампов в PDF‑файлы с использованием библиотеки Aspose.PDF для Python. Описывается использование класса `TextStamp` для создания настраиваемых текстовых штампов со свойствами, такими как размер шрифта, стиль, цвет и выравнивание. Статья включает фрагменты кода, демонстрирующие, как добавить простой текстовый штамп, настроить выравнивание текста и применить продвинутые режимы отрисовки, такие как заполненный контурный текст. В первом разделе объясняется создание объектов `Document` и `TextStamp`, установка свойств текста и добавление штампа на определённую страницу. Во втором разделе вводится свойство `text_alignment` для горизонтального и вертикального выравнивания текста, приводится пример кода центрирования текста на странице PDF. В последнем разделе рассматриваются режимы отрисовки, демонстрируя, как добавить заполненный контурный текст с помощью объекта `TextState`, устанавливая цвет контура и режим отрисовки перед привязкой к штампу. Каждый раздел сопровождается практическими примерами для облегчения понимания и внедрения.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Добавление текстовых штампов в PDF Python",
-    "alternativeHeadline": "Добавление текстовых штампов в PDF Python",
-    "author": {
-        "@type": "Person",
-        "name":"Андрий Андруховский",
-        "givenName": "Андрий",
-        "familyName": "Андруховский",
-        "url":"https://www.linkedin.com/in/andruhovski/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, python, генерация документов",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/text-stamps-in-the-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/text-stamps-in-the-pdf-file/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Добавьте текстовый штамп в PDF документ с использованием класса TextStamp из библиотеки Aspose.PDF для Python."
-}
-</script>
-
 
 ## Добавление текстового штампа с помощью Python
 
-Вы можете использовать класс [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) для добавления текстового штампа в PDF файл. Класс [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) предоставляет свойства, необходимые для создания штампа на основе текста, такие как размер шрифта, стиль шрифта и цвет шрифта и т.д. Для того чтобы добавить текстовый штамп, вам нужно создать объект Document и объект TextStamp с использованием необходимых свойств. После этого вы можете вызвать метод [add_stamp()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) страницы для добавления штампа в PDF. Следующий фрагмент кода показывает, как добавить текстовый штамп в PDF файл.
+Вы можете использовать класс [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) для добавления текстового штампа в PDF‑файл. Класс [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) предоставляет свойства, необходимые для создания штампа на основе текста, такие как размер шрифта, стиль шрифта и цвет шрифта и т.д. Чтобы добавить текстовый штамп, вам нужно создать объект Document и объект TextStamp, задав требуемые свойства. После этого вы можете вызвать метод [add_stamp()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) страницы Page, чтобы добавить штамп в PDF. Следующий фрагмент кода показывает, как добавить текстовый штамп в PDF‑файл. Это полезно для добавления аннотаций, водяных знаков или меток на страницы PDF.
+
+1. Откройте PDF‑документ.
+1. Создайте объект TextStamp.
+1. Задайте поведение фона штампа.
+1. Разместите штамп на странице.
+1. Поверните штамп при необходимости.
+1. Установите свойства текста.
+1. Добавьте штамп на страницу.
+1. Сохраните изменённый PDF‑документ.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Открыть документ
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Создать текстовый штамп
+def add_text_stamp(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
+
+    # Create text stamp
     text_stamp = ap.TextStamp("Sample Stamp")
-    # Установить, является ли штамп фоном
+    # Set whether stamp is background
     text_stamp.background = True
-    # Установить начальную точку
+    # Set origin
     text_stamp.x_indent = 100
     text_stamp.y_indent = 100
-    # Повернуть штамп
+    # Rotate stamp
     text_stamp.rotate = ap.Rotation.ON90
-    # Установить свойства текста
+    # Set text properties
     text_stamp.text_state.font = ap.text.FontRepository.find_font("Arial")
     text_stamp.text_state.font_size = 14.0
     text_stamp.text_state.font_style = ap.text.FontStyles.BOLD
     text_stamp.text_state.font_style = ap.text.FontStyles.ITALIC
-    text_stamp.text_state.foreground_color = ap.Color.aqua
-    # Добавить штамп на конкретную страницу
+    text_stamp.text_state.foreground_color = ap.Color.dark_green
+    # Add stamp to particular page
     document.pages[1].add_stamp(text_stamp)
 
-    # Сохранить выходной документ
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
-
-## Определение выравнивания для объекта TextStamp
-
-Добавление водяных знаков в PDF документы является одной из часто требуемых функций, и Aspose.PDF для Python полностью способен добавлять как изображение, так и текстовые водяные знаки. У нас есть класс под названием [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/), который предоставляет возможность добавлять текстовые штампы в PDF файл. Недавно возникла необходимость поддерживать функцию указания выравнивания текста при использовании объекта TextStamp. Поэтому, чтобы удовлетворить это требование, мы ввели свойство [text_alignment](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) в классе [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/). Используя это свойство, мы можем указать [horizontal_alignment](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) выравнивание текста.
-
-Следующие фрагменты кода показывают пример того, как загрузить существующий PDF документ и добавить в него TextStamp.
-
-```python
-
-    import aspose.pdf as ap
-
-    # Создать объект Document с входным файлом
-    doc = ap.Document(input_pdf)
-    # Создать объект FormattedText с примером строки
-    text = ap.facades.FormattedText("This")
-    # Добавить новую строку текста в FormattedText
-    text.add_new_line_text("is sample")
-    text.add_new_line_text("Center Aligned")
-    text.add_new_line_text("TextStamp")
-    text.add_new_line_text("Object")
-    # Создать объект TextStamp с использованием FormattedText
-    stamp = ap.TextStamp(text)
-    # Указать горизонтальное выравнивание текстового штампа как центрированное
-    stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Указать вертикальное выравнивание текстового штампа как центрированное
-    stamp.vertical_alignment = ap.VerticalAlignment.CENTER
-    # Указать горизонтальное выравнивание текста для TextStamp как центрированное
-    stamp.text_alignment = ap.HorizontalAlignment.CENTER
-    # Установить верхнее поле для объекта штампа
-    stamp.top_margin = 20
-    # Добавить объект штампа на первую страницу документа
-    doc.pages[1].add_stamp(stamp)
-
-    # Сохранить обновленный документ
-    doc.save(output_pdf)
-```
-
-
-## Заливка Обводка Текста как Штамп в PDF Файл
-
-Мы реализовали установку режима рендеринга для сценариев добавления и редактирования текста. Чтобы отобразить текст с обводкой, создайте объект TextState для передачи расширенных свойств. Установите цвет для обводки. Затем установите режим рендеринга текста. Следующим шагом свяжите TextState и добавьте Штамп.
-
-Следующий фрагмент кода демонстрирует добавление Заливки Обводки Текста:
-
-```python
-
-    import aspose.pdf as ap
-
-    # Создайте объект TextState для передачи расширенных свойств
-    ts = ap.text.TextState()
-    # Установите цвет для обводки
-    ts.stroking_color = ap.Color.gray
-    # Установите режим рендеринга текста
-    ts.rendering_mode = ap.text.TextRenderingMode.STROKE_TEXT
-    # Загрузите входной PDF документ
-    file_stamp = ap.facades.PdfFileStamp(ap.Document(input_pdf))
-
-    stamp = ap.facades.Stamp()
-    stamp.bind_logo(
-        ap.facades.FormattedText(
-            "PAID IN FULL",
-            ap.facades.FontColor(100, 100, 100),
-            ap.facades.FontStyle.TIMES_ROMAN,
-            ap.facades.EncodingType.WINANSI,
-            True,
-            78.0,
-        )
-    )
-
-    # Свяжите TextState
-    stamp.bind_text_state(ts)
-    # Установите X,Y координаты
-    stamp.set_origin(100, 100)
-    stamp.opacity = 5
-    stamp.blending_space = ap.facades.BlendingColorSpace.DEVICE_RGB
-    stamp.rotation = 45.0
-    stamp.is_background = False
-    # Добавьте Штамп
-    file_stamp.add_stamp(stamp)
-    file_stamp.save(output_pdf)
-    file_stamp.close()
-```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Библиотека для манипуляции PDF для Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

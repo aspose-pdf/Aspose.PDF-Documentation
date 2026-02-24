@@ -1,155 +1,91 @@
 ---
-title: Форматирование PDF документа с использованием Python
-linktitle: Форматирование PDF документа
+title: Форматирование PDF‑документа с использованием Python
+linktitle: Форматирование PDF‑документа
 type: docs
 weight: 11
 url: /ru/python-net/formatting-pdf-document/
-description: Создание и форматирование PDF документа с помощью Aspose.PDF для Python через .NET. Используйте следующий фрагмент кода для решения ваших задач.
-lastmod: "2023-04-12"
-sitemap:
+description: Создайте и отформатируйте PDF‑документ с помощью Aspose.PDF for Python via .NET. Используйте следующий фрагмент кода для решения ваших задач.
+lastmod: "2025-02-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Форматирование PDF‑документов с использованием Python
+Abstract: Статья предоставляет всестороннее руководство по работе с PDF‑документами и их форматированию с использованием библиотеки Aspose.PDF в Python. В ней рассматриваются различные аспекты настройки PDF, включая установку свойств окна документа и отображения страниц, таких как центрирование окна, направление чтения и скрытие элементов пользовательского интерфейса. В статье объясняется, как программно получать и задавать эти свойства с помощью класса `Document`. Кроме того, рассматривается управление шрифтами, детально описывается встраивание стандартных шрифтов Type 1 и других шрифтов в PDF, обеспечивая переносимость документа и визуальную согласованность на разных системах. Также освещаются приемы установки имени шрифта по умолчанию, получения всех шрифтов из PDF и улучшения встраивания шрифтов с использованием `FontSubsetStrategy`. Далее статья раскрывает настройку коэффициента масштабирования PDF‑документов с помощью класса `GoToAction` и конфигурирование предустановленных свойств диалогового окна печати, включая опции дуплексной печати. Для каждого раздела приведены фрагменты кода, предоставляющие практические примеры реализации этих функций.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Форматирование PDF документа с использованием Python",
-    "alternativeHeadline": "Как форматировать PDF документ в Python через .NET",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, dotnet, python, форматирование PDF документа",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/formatting-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/formatting-pdf-document/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Создание и форматирование PDF документа с помощью Aspose.PDF для Python через .NET. Используйте следующий фрагмент кода для решения ваших задач."
-}
-</script>
 
+## Форматирование PDF‑документа
 
-## Форматирование PDF-документа
+### Получить свойства окна документа и отображения страниц
 
-### Получение свойств окна документа и отображения страниц
+Эта тема поможет вам понять, как получать свойства окна документа, приложения‑просмотрщика и как отображаются страницы. Чтобы установить эти свойства:
 
-Эта тема поможет вам понять, как получить свойства окна документа, приложения просмотра и как отображаются страницы. Чтобы установить эти свойства:
-
-Откройте PDF-файл, используя класс [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Теперь вы можете установить свойства объекта Document, такие как
+Откройте PDF‑файл с помощью класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Теперь вы можете задавать свойства объекта Document, такие как
 
 - CenterWindow – Центрировать окно документа на экране. По умолчанию: false.
-- Direction – Порядок чтения. Это определяет, как страницы располагаются при отображении бок о бок. По умолчанию: слева направо.
+- Direction – Порядок чтения. Определяет, как страницы размещаются при отображении рядом. По умолчанию: слева направо.
 - DisplayDocTitle – Отображать заголовок документа в строке заголовка окна документа. По умолчанию: false (заголовок отображается).
-- HideMenuBar – Скрыть или отобразить строку меню окна документа. По умолчанию: false (строка меню отображается).
-- HideToolBar – Скрыть или отобразить панель инструментов окна документа. По умолчанию: false (панель инструментов отображается).
-- HideWindowUI – Скрыть или отобразить элементы окна документа, такие как полосы прокрутки.
- Default: false (элементы интерфейса отображаются).
+- HideMenuBar – Скрывать или отображать строку меню окна документа. По умолчанию: false (строка меню отображается).
+- HideToolBar – Скрывать или отображать панель инструментов окна документа. По умолчанию: false (панель инструментов отображается).
+- HideWindowUI – Скрывать или отображать элементы пользовательского интерфейса окна документа, такие как полосы прокрутки. По умолчанию: false (элементы UI отображаются).
 - NonFullScreenPageMode – Как документ отображается, когда он не в полноэкранном режиме.
 - PageLayout – Макет страницы.
-- PageMode – Как документ отображается при первом открытии. Опции: отображать эскизы, полноэкранный режим, показывать панель вложений.
+- PageMode – Как документ отображается при первом открытии. Варианты: показать миниатюры, полноэкранный режим, показать панель вложений.
 
-Следующий фрагмент кода показывает, как получить свойства с использованием класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+Следующий фрагмент кода показывает, как получить свойства с помощью класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
 ```python
 
     import aspose.pdf as ap
 
-    # Открыть документ
+    # Open document
     document = ap.Document(input_pdf)
 
-    # Получить различные свойства документа
-    # Позиция окна документа - По умолчанию: false
+    # Get different document properties
+    # Position of document's window - Default: false
     print("CenterWindow :", document.center_window)
 
-    # Преобладающий порядок чтения; определяет позицию страницы
-    # При отображении рядом - По умолчанию: L2R
+    # Predominant reading order; determins the position of page
+    # When displayed side by side - Default: L2R
     print("Direction :", document.direction)
 
-    # Должна ли строка заголовка окна отображать заголовок документа
-    # Если false, строка заголовка отображает имя файла PDF - По умолчанию: false
+    # Whether window's title bar should display document title
+    # If false, title bar displays PDF file name - Default: false
     print("DisplayDocTitle :", document.display_doc_title)
 
-    # Должно ли изменяться размер окна документа, чтобы соответствовать размеру
-    # Первой отображаемой страницы - По умолчанию: false
+    # Whether to resize the document's window to fit the size of
+    # First displayed page - Default: false
     print("FitWindow :", document.fit_window)
 
-    # Должно ли скрываться строка меню приложения просмотра - По умолчанию: false
+    # Whether to hide menu bar of the viewer application - Default: false
     print("HideMenuBar :", document.hide_menubar)
 
-    # Должно ли скрываться панель инструментов приложения просмотра - По умолчанию: false
+    # Whether to hide tool bar of the viewer application - Default: false
     print("HideToolBar :", document.hide_tool_bar)
 
-    # Должны ли скрываться элементы интерфейса, такие как полосы прокрутки
-    # И оставлять только содержимое страницы - По умолчанию: false
+    # Whether to hide UI elements like scroll bars
+    # And leaving only the page contents displayed - Default: false
     print("HideWindowUI :", document.hide_window_ui)
 
-    # Режим страницы документа. Как отображать документ при выходе из полноэкранного режима.
+    # Document's page mode. How to display document on exiting full-screen mode.
     print("NonFullScreenPageMode :", document.non_full_screen_page_mode)
 
-    # Макет страницы, т.е. одиночная страница, одна колонка
+    # The page layout i.e. single page, one column
     print("PageLayout :", document.page_layout)
 
-    # Как документ должен отображаться при открытии
-    # Т.е. отображать эскизы, полноэкранный режим, показывать панель вложений
+    # How the document should display when opened
+    # I.e. show thumbnails, full-screen, show attachment panel
     print("pageMode :", document.page_mode)
 
 ```
 
-### Установите свойства окна документа и отображения страницы
+### Установить свойства окна документа и отображения страниц
 
-Эта тема объясняет, как установить свойства окна документа, программы просмотра и отображения страницы. Чтобы установить эти различные свойства:
+Эта тема объясняет, как задавать свойства окна документа, приложения‑просмотрщика и отображения страниц. Чтобы установить эти различные свойства:
 
-1. Откройте PDF-файл с помощью класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Установите свойства объекта Document.
-1. Сохраните обновленный PDF-файл, используя метод save.
+1. Откройте PDF‑файл с помощью класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Задайте свойства объекта Document.
+1. Сохраните обновлённый PDF‑файл, используя метод save.
 
 Доступные свойства:
 
@@ -164,72 +100,71 @@ sitemap:
 - PageLayout
 - PageMode
 
-Каждое из них используется и описано в коде ниже. Следующий фрагмент кода показывает, как установить свойства с использованием класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+Каждый из них используется и описывается в коде ниже. Следующий фрагмент кода показывает, как задать свойства с помощью класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
 ```python
 
     import aspose.pdf as ap
 
-    # Открыть документ
+    # Open document
     document = ap.Document(input_pdf)
 
-    # Установить различные свойства документа
-    # Указать позиционирование окна документа - По умолчанию: false
+    # Set different document properties
+    # Sepcify to position document's window - Default: false
     document.center_window = True
 
-    # Преобладающий порядок чтения; определяет позицию страницы
-    # При отображении рядом друг с другом - По умолчанию: L2R
+    # Predominant reading order; determins the position of page
+    # When displayed side by side - Default: L2R
     document.direction = ap.Direction.R2L
 
-    # Указать, должна ли строка заголовка окна отображать заголовок документа
-    # Если false, строка заголовка отображает имя PDF-файла - По умолчанию: false
+    # Specify whether window's title bar should display document title
+    # If false, title bar displays PDF file name - Default: false
     document.display_doc_title = True
 
-    # Указать, следует ли изменить размер окна документа по размеру
-    # Первой отображаемой страницы - По умолчанию: false
+    # Specify whether to resize the document's window to fit the size of
+    # First displayed page - Default: false
     document.fit_window = True
 
-    # Указать, следует ли скрыть строку меню программы просмотра - По умолчанию: false
+    # Specify whether to hide menu bar of the viewer application - Default: false
     document.hide_menubar = True
 
-    # Указать, следует ли скрыть панель инструментов программы просмотра - По умолчанию: false
+    # Specify whether to hide tool bar of the viewer application - Default: false
     document.hide_tool_bar = True
 
-    # Указать, следует ли скрыть элементы UI, такие как полосы прокрутки
-    # И оставить отображенными только содержимое страницы - По умолчанию: false
+    # Specify whether to hide UI elements like scroll bars
+    # And leaving only the page contents displayed - Default: false
     document.hide_window_ui = True
 
-    # Режим страницы документа. указать, как отображать документ при выходе из полноэкранного режима.
+    # Document's page mode. specify how to display document on exiting full-screen mode.
     document.non_full_screen_page_mode = ap.PageMode.USE_OC
 
-    # Указать макет страницы, т.е. одна страница, одна колонка
+    # Specify the page layout i.e. single page, one column
     document.page_layout = ap.PageLayout.TWO_COLUMN_LEFT
 
-    # Указать, как документ должен отображаться при открытии
-    # Т.е. показывать миниатюры, полноэкранный режим, показывать панель вложений
+    # Specify how the document should display when opened
+    # I.e. show thumbnails, full-screen, show attachment panel
     document.page_mode = ap.PageMode.USE_THUMBS
 
-    # Сохранить обновленный PDF-файл
+    # Save updated PDF file
     document.save(output_pdf)
 ```
 
+### Встраивание стандартных шрифтов Type 1
 
-### Встраивание стандартных шрифтов Type 1
-
-Некоторые PDF-документы содержат шрифты из специального набора шрифтов Adobe. Шрифты из этого набора называются «Стандартные шрифты Type 1». Этот набор включает 14 шрифтов, и встраивание такого типа шрифтов требует использования специальных флагов, например [embed_standard_fonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). Ниже приведен фрагмент кода, который можно использовать для получения документа со всеми встроенными шрифтами, включая стандартные шрифты Type 1:
+Некоторые PDF‑документы используют шрифты из специального набора шрифтов Adobe. Шрифты из этого набора называются «Standard Type 1 Fonts». Набор включает 14 шрифтов, и встраивание такого типа шрифтов требует использования специальных флагов, например [embed_standard_fonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). Ниже приведён фрагмент кода, который можно использовать для получения документа со всеми шрифтами, включая стандартные шрифты Type 1:
 
 ```python
 
     import aspose.pdf as ap
 
-    # Загрузить существующий PDF-документ
+    # Load an existing PDF Document
     document = ap.Document(input_pdf)
-    # Установить свойство EmbedStandardFonts для документа
+    # Set EmbedStandardFonts property of document
     document.embed_standard_fonts = True
     for page in document.pages:
         if page.resources.fonts != None:
             for page_font in page.resources.fonts:
-                # Проверить, встроен ли шрифт
+                # Check if font is already embedded
                 if not page_font.is_embedded:
                     page_font.is_embedded = True
 
@@ -238,24 +173,24 @@ sitemap:
 
 ### Встраивание шрифтов при создании PDF
 
-Если вам нужно использовать любой шрифт, кроме 14 основных шрифтов, поддерживаемых Adobe Reader, вы должны встроить описание шрифта при создании файла PDF. Если информация о шрифте не встроена, Adobe Reader возьмет её из операционной системы, если она установлена в системе, или создаст заменяющий шрифт в соответствии с дескриптором шрифта в PDF.
+Если вам необходимо использовать любой шрифт, кроме 14 базовых шрифтов, поддерживаемых Adobe Reader, вы должны встроить описание шрифта при генерации PDF‑файла. Если информация о шрифте не встроена, Adobe Reader возьмёт её из операционной системы, если шрифт установлен, либо создаст заменяющий шрифт согласно дескриптору шрифта в PDF.
 
->Обратите внимание, что встроенный шрифт должен быть установлен на хост-машине, т.е. в случае следующего кода шрифт ‘Univers Condensed’ установлен в системе.
+>Обратите внимание, что встроенный шрифт должен быть установлен на хост‑машине, т.е. в случае следующего кода шрифт ‘Univers Condensed’ установлен в системе.
 
-Мы используем свойство 'is_embedded', чтобы встроить информацию о шрифте в файл PDF. Установка значения этого свойства в 'True' встраивает весь файл шрифта в PDF, зная, что это увеличит размер PDF-файла. Ниже приведен фрагмент кода, который можно использовать для встраивания информации о шрифте в PDF.
+Мы используем свойство 'is_embedded' для встраивания информации о шрифте в PDF‑файл. Установка значения этого свойства в 'True' внедрит полностью файл шрифта в PDF, при этом увеличив размер PDF‑файла. Ниже приведён фрагмент кода, который можно использовать для встраивания информации о шрифте в PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Создать объект Pdf, вызвав его пустой конструктор
+    # Instantiate Pdf object by calling its empty constructor
     doc = ap.Document()
 
-    # Создать секцию в объекте Pdf
+    # Create a section in the Pdf object
     page = doc.pages.add()
 
     fragment = ap.text.TextFragment("")
-    segment = ap.text.TextSegment(" Это образец текста с использованием пользовательского шрифта.")
+    segment = ap.text.TextSegment(" This is a sample text using Custom font.")
     ts = ap.text.TextState()
     ts.font = ap.text.FontRepository.find_font("Arial")
     ts.font.is_embedded = True
@@ -263,33 +198,31 @@ sitemap:
     fragment.segments.append(segment)
     page.paragraphs.add(fragment)
 
-    # Сохранить PDF-документ
+    # Save PDF Document
     doc.save(output_pdf)
 ```
 
-
 ### Установить имя шрифта по умолчанию при сохранении PDF
 
-Когда PDF-документ содержит шрифты, которые недоступны в самом документе и на устройстве, API заменяет эти шрифты на шрифт по умолчанию. Если шрифт доступен (установлен на устройстве или встроен в документ), итоговый PDF должен иметь тот же шрифт (не должен быть заменен на шрифт по умолчанию). Значение шрифта по умолчанию должно содержать имя шрифта (не путь к файлам шрифта). Мы реализовали функцию установки имени шрифта по умолчанию при сохранении документа как PDF. Следующий фрагмент кода можно использовать для установки шрифта по умолчанию:
+Когда PDF‑документ содержит шрифты, которые недоступны в самом документе и на устройстве, API заменяет эти шрифты шрифтом по умолчанию. Если шрифт доступен (установлен на устройстве или внедрён в документ), выходной PDF должен содержать тот же шрифт (не должен заменяться шрифтом по умолчанию). Значение шрифта по умолчанию должно содержать имя шрифта (а не путь к файлам шрифта). Мы реализовали функцию установки имени шрифта по умолчанию при сохранении документа в PDF. Ниже приведён фрагмент кода, который можно использовать для установки шрифта по умолчанию:
 
 ```python
 
     import aspose.pdf as ap
 
-    # Загрузить существующий PDF-документ с отсутствующим шрифтом
+    # Load an existing PDF document with missing font
     document = ap.Document(input_pdf)
 
     pdfSaveOptions = ap.PdfSaveOptions()
-    # Указать имя шрифта по умолчанию
+    # Specify Default Font Name
     newName = "Arial"
     pdfSaveOptions.default_font_name = newName
     document.save(output_pdf, pdfSaveOptions)
 ```
 
-### Получить все шрифты из PDF-документа
+### Получить все шрифты из PDF‑документа
 
-Если вы хотите получить все шрифты из PDF-документа, вы можете использовать метод [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties), предоставленный в классе [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
- Пожалуйста, проверьте следующий фрагмент кода, чтобы получить все шрифты из существующего PDF документа:
+Если вы хотите получить все шрифты из PDF‑документа, вы можете использовать метод [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties), предоставленный в классе [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Пожалуйста, посмотрите следующий фрагмент кода, чтобы получить все шрифты из существующего PDF‑документа:
 
 ```python
 
@@ -301,67 +234,66 @@ sitemap:
         print(font.font_name)
 ```
 
-### Улучшение встраивания шрифтов с использованием FontSubsetStrategy
+### Улучшить внедрение шрифтов с помощью FontSubsetStrategy
 
-Следующий фрагмент кода показывает, как установить [FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) использованную в свойстве [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties):
+Следующий фрагмент кода показывает, как установить свойство [FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/), используемое в [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties):
 
 ```python
 
     import aspose.pdf as ap
 
     doc = ap.Document(input_pdf)
-    # Все шрифты будут встроены как подмножество в документ в случае SubsetAllFonts.
+    # All fonts will be embedded as subset into document in case of SubsetAllFonts.
     doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_ALL_FONTS)
-    # Подмножество шрифта будет встроено для полностью встроенных шрифтов, но шрифты, которые не встроены в документ, не будут затронуты.
+    # Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
     doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY)
     doc.save(output_pdf)
 ```
 
-### Установка и получение коэффициента масштабирования PDF-файла
+### Получить/установить коэффициент масштабирования PDF‑файла
 
-Иногда необходимо определить текущий коэффициент масштабирования PDF-документа. С помощью Aspose.Pdf вы можете узнать текущее значение, а также установить его.
+Иногда вам нужно определить текущий коэффициент масштабирования PDF‑документа. С Aspose.Pdf вы можете узнать текущое значение, а также установить его.
 
-Свойство Destination класса [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) позволяет получить значение масштабирования, связанное с PDF-файлом. Аналогично, его можно использовать для установки коэффициента масштабирования файла.
+Свойство Destination класса [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) позволяет получить значение масштабирования, связанное с PDF‑файлом. Аналогично, его можно использовать для установки коэффициента масштабирования файла.
 
-#### Установка коэффициента масштабирования
+#### Установить коэффициент масштабирования
 
-Следующий фрагмент кода показывает, как установить коэффициент масштабирования PDF-файла.
+Следующий фрагмент кода показывает, как установить коэффициент масштабирования PDF‑файла.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Создать новый объект Document
+    # Instantiate new Document object
     doc = ap.Document(input_pdf)
 
     action = ap.annotations.GoToAction(ap.annotations.XYZExplicitDestination(1, 0.0, 0.0, 0.5))
     doc.open_action = action
-    # Сохранить документ
+    # Save the document
     doc.save(output_pdf)
 ```
 
-#### Получение коэффициента масштабирования
+#### Получить коэффициент масштабирования
 
-Следующий фрагмент кода показывает, как получить коэффициент масштабирования PDF-файла.
+Следующий фрагмент кода показывает, как получить коэффициент масштабирования PDF‑файла.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Создать новый объект Document
+    # Instantiate new Document object
     doc = ap.Document(input_pdf)
 
-    # Создать объект GoToAction
+    # Create GoToAction object
     action = doc.open_action
 
-    # Получить коэффициент масштабирования PDF-файла
+    # Get the Zoom factor of PDF file
     print(action.destination.zoom)
 ```
 
+### Настройка предустановленных свойств диалогового окна печати
 
-### Установка свойств предварительной настройки диалогового окна печати
-
-Aspose.PDF позволяет установить [DUPLEX_FLIP_LONG_EDGE](https://reference.aspose.com/pdf/python-net/aspose.pdf/printduplex/#members) для членов PDF-документа. Это позволяет изменить свойство DuplexMode для PDF-документа, которое по умолчанию установлено на simplex. Это можно сделать, используя две разные методологии, как показано ниже.
+Aspose.PDF позволяет задавать члены [DUPLEX_FLIP_LONG_EDGE](https://reference.aspose.com/pdf/python-net/aspose.pdf/printduplex/#members) PDF‑документа. Это позволяет изменить свойство DuplexMode для PDF‑документа, которое по умолчанию установлено в simplex. Это можно выполнить двумя различными методологиями, как показано ниже.
 
 ```python
 
@@ -373,7 +305,7 @@ Aspose.PDF позволяет установить [DUPLEX_FLIP_LONG_EDGE](https
     doc.save(output_pdf)
 ```
 
-### Установка свойств предварительной настройки диалогового окна печати с использованием редактора содержимого PDF
+### Настройка предустановленных свойств диалогового окна печати с помощью PDF Content Editor
 
 ```python
 
@@ -382,8 +314,10 @@ Aspose.PDF позволяет установить [DUPLEX_FLIP_LONG_EDGE](https
     ed = ap.facades.PdfContentEditor()
     ed.bind_pdf(input_pdf)
     if (ed.get_viewer_preference() & ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE) > 0:
-        print("Файл имеет двустороннюю печать с коротким переворотом")
+        print("The file has duplex flip short edge")
 
     ed.change_viewer_preference(ap.facades.ViewerPreference.DUPLEX_FLIP_SHORT_EDGE)
     ed.save(output_pdf)
 ```
+
+

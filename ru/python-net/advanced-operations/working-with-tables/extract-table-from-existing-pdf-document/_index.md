@@ -1,97 +1,48 @@
 ---
-title: Извлечение таблицы из PDF документа
-linktitle: Извлечение таблицы
+title: Извлечь таблицу из PDF‑документа
+linktitle: Извлечь таблицу
 type: docs
 weight: 20
-url: /ru/python-net/extract-table-from-existing-pdf-document/
-description: Aspose.PDF для Python через .NET позволяет выполнять различные манипуляции с таблицами, содержащимися в вашем PDF документе.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+url: /ru/python-net/extracting-table/
+description: Aspose.PDF for Python через .NET позволяет выполнять различные операции с таблицами, содержащимися в вашем PDF‑документе.
+lastmod: "2025-09-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как извлечь таблицу из PDF с помощью Python
+Abstract: В этой статье рассматривается процесс извлечения таблиц из PDF‑документов с использованием Python, в частности с применением библиотеки Aspose.PDF for Python via .NET. Приводится пример кода, демонстрирующий, как загрузить PDF‑документ, пройтись по его страницам и использовать класс `TableAbsorber` для обнаружения и извлечения данных таблицы. Код перебирает каждую таблицу, строку и ячейку, собирает фрагменты текста и выводит извлечённый текст. Этот метод отмечен как мощный инструмент для задач извлечения и анализа данных, связанных с табличными данными в PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Извлечение таблицы из PDF документа",
-    "alternativeHeadline": "Как извлечь таблицу из PDF файла",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация pdf документов",
-    "keywords": "pdf, python, извлечение таблицы",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-table-from-existing-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-table-from-existing-pdf-document/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF для Python через .NET позволяет выполнять различные манипуляции с таблицами, содержащимися в вашем PDF документе."
-}
-</script>
-
 
 ## Извлечение таблицы из PDF
 
-Извлечение таблиц из PDF с помощью Python может быть невероятно полезным для извлечения данных и анализа. С библиотекой Aspose.PDF for Python via .NET вы можете эффективно работать с таблицами, встроенными в PDF-документы, для различных задач, связанных с данными.
+Извлечение таблиц из PDF с помощью Python может быть чрезвычайно полезным для извлечения и анализа данных. С библиотекой Aspose.PDF for Python via .NET вы можете эффективно работать с таблицами, встроенными в PDF‑документы, для различных задач, связанных с данными.
+
+Этот фрагмент кода открывает существующий PDF‑файл, сканирует каждую страницу в поисках таблиц и извлекает текстовое содержимое их ячеек. Он использует `TableAbsorber` для обнаружения таблиц, а затем проходит по строкам и ячейкам, выводя текст внутри.
+
+1. Загружает PDF в объект ap.Document.
+1. Проходит по страницам.
+1. Создаёт объект TableAbsorber.
+1. Перебирает таблицы.
+1. Перебирает строки и ячейки.
+1. Извлекает и выводит текст из ячеек.
+
+В этом примере читается PDF, находятся все таблицы, и их содержимое ячеек выводится построчно.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
 
-    # Загрузить исходный PDF-документ
-    pdf_document = ap.Document(input_file)
-    for page in pdf_document.pages:
+    path_infile = path.join(self.data_dir, infile)
+    document = ap.Document(path_infile)
+    for page in document.pages:
         absorber = ap.text.TableAbsorber()
         absorber.visit(page)
         for table in absorber.table_list:
+            print("Table ----")
             for row in table.row_list:
+                print("Row")
                 for cell in row.cell_list:
                     text_fragment_collection = cell.text_fragments
                     for fragment in text_fragment_collection:
@@ -99,69 +50,6 @@ sitemap:
                         for seg in fragment.segments:
                             txt += seg.text
                         print(txt)
-
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+
