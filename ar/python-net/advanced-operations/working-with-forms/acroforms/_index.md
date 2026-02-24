@@ -1,158 +1,34 @@
 ---
-title: العمل مع AcroForms باستخدام بايثون
+title: العمل مع AcroForms باستخدام Python
 linktitle: AcroForms
 type: docs
 weight: 10
 url: /ar/python-net/acroforms/
-description: مع Aspose.PDF لبايثون يمكنك إنشاء نموذج من البداية، ملء حقل النموذج في مستند PDF، استخراج البيانات من النموذج، إلخ.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: مع Aspose.PDF for Python يمكنك إنشاء نموذج من الصفر، تعبئة حقل النموذج في مستند PDF، استخراج البيانات من النموذج، وغيرها.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية العمل مع AcroForms باستخدام Python
+Abstract: AcroForms، التي قدمتها Adobe في عام 1998، تمثل تقنية نموذج PDF فريدة تُعتمد على الصفحات ومتوافقة مع جميع المنصات. على عكس نماذج XFA الثابتة أو الديناميكية، تسمح AcroForms بإدخال البيانات من خلال صيغتي FDF وxFDF. تدعمها مزودات الطرف الثالث، ويمكن استخدام AcroForms لإضافة صفحات إلى مستندات PDF وتعبئة النماذج بسجلات قاعدة بيانات متعددة، مما يجعلها متعددة الاستخدامات في التطبيقات المختلفة. هذه التقنية، التي تُعد جزءًا من مواصفات تنسيق PDF 1.2 وتدعم حتى PDF 1.7، تقدم طريقتين لدمج البيانات مع نماذج PDF. للتطبيقات العملية ومزيد من التعلم، تتوفر موارد لإنشاء وتعبئة واستخراج AcroForms باستخدام Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "العمل مع AcroForms باستخدام بايثون",
-    "alternativeHeadline": "خيارات العمل مع AcroForms في PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, python, acroforms in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/acroforms/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/acroforms/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "مع Aspose.PDF لبايثون يمكنك إنشاء نموذج من البداية، ملء حقل النموذج في مستند PDF، استخراج البيانات من النموذج، إلخ."
-}
-</script>
-
 
 ## أساسيات AcroForms
 
-**AcroForms** - تكنولوجيا نماذج PDF فريدة من Adobe. AcroForms هو نموذج موجه للصفحات. ظهرت لأول مرة في عام 1998. تقبل المدخلات بصيغة تنسيق البيانات أو FDF وصيغة بيانات نموذج XML أو xFDF. يدعم مزودو الطرف الثالث AcroForms. عندما قدمت Adobe AcroForms، أطلقوا عليها اسم "نموذج PDF، وهو من تأليف Adobe Acrobat Pro/Standard وليس نوعًا خاصًا من نموذج XFA الثابت أو الديناميكي. AcroForms محمولة وتعمل على جميع المنصات.
+**AcroForms** - تقنية نموذج PDF فريدة من Adobe. AcroForms هو نموذج يعتمد على الصفحات. ظهر لأول مرة في عام 1998. يقبل إدخال البيانات بصيغة Data أو FDF وصيغة XML للبيانات أو xFDF. مزودو الطرف الثالث يدعمون AcroForms. عندما قدمت Adobe AcroForms، سمتها "نموذج PDF، وهو من مؤلفي Adobe Acrobat Pro/Standard وليس نوعًا خاصًا من نماذج XFA الثابتة أو الديناميكية." AcroForms محمول ويعمل على جميع المنصات.```
 
 يمكنك استخدام AcroForms لإضافة صفحات إضافية إلى مستند نموذج PDF. بفضل مفهوم القوالب، يمكنك استخدام AcroForms لدعم تعبئة النموذج بسجلات قاعدة بيانات متعددة.
 
-يدعم PDF 1.7 طريقتين مختلفتين لدمج البيانات ونماذج PDF.
+يدعم PDF 1.7 طريقتين مختلفتين لدمج البيانات مع نماذج PDF.
 
-*AcroForms (المعروفة أيضًا بنماذج Acrobat)*، تم تقديمها وتضمينها في مواصفات صيغة PDF 1.2.
+*AcroForms (المعروفة أيضًا باسم نماذج Acrobat)*، تم تقديمها وإدراجها في مواصفات تنسيق PDF 1.2.
 
-لمزيد من التعلم التفصيلي لإمكانيات مكتبة Java، انظر المقالات التالية:
+لمزيد من التعلم التفصيلي حول إمكانيات مكتبة Java، راجع المقالات التالية:
 
-- [إنشاء AcroForm](/pdf/ar/python-net/create-form) - إنشاء نموذج من البداية باستخدام Python.
-- [ملء AcroForm](/pdf/ar/python-net/fill-form) - ملء حقل النموذج في مستند PDF الخاص بك.
-- [استخراج AcroForm](/pdf/ar/python-net/extract-form) - الحصول على قيمة من جميع الحقول أو حقل فردي من مستند PDF.
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [إنشاء AcroForm](/pdf/python-net/create-form) - إنشاء نموذج من الصفر باستخدام Python.
+- [تعبئة AcroForm](/pdf/python-net/fill-form) - تعبئة حقل النموذج في مستند PDF الخاص بك.
+- [استخراج AcroForm](/pdf/python-net/extract-form) - الحصول على القيمة من جميع الحقول أو حقل فردي في مستند PDF.
+- [استيراد وتصدير بيانات النموذج](/pdf/python-net/import-export-form-data/) - كيفية استيراد وتصدير بيانات النموذج.
+- [تعديل AcroForm](/pdf/python-net/modifying-form/) - تعديل حقول نموذج AcroForm PDF.
+- [حذف النماذج من PDF](/pdf/python-net/remove-form/) - حذف النماذج من PDF.

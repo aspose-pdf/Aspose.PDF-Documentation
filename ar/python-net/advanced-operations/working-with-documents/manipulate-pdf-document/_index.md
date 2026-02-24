@@ -1,172 +1,107 @@
 ---
-title: التلاعب بوثيقة PDF في بايثون عبر .NET
-linktitle: التلاعب بوثيقة PDF
+title: معالجة مستند PDF في بايثون عبر .NET
+linktitle: معالجة مستند PDF
 type: docs
 weight: 20
 url: /ar/python-net/manipulate-pdf-document/
-description: تحتوي هذه المقالة على معلومات حول كيفية التحقق من وثيقة PDF لمعيار PDF A باستخدام بايثون، كيفية العمل مع الفهرس، كيفية تحديد تاريخ انتهاء PDF، إلخ.
-lastmod: "2023-04-13"
-sitemap:
+description: تحتوي هذه المقالة على معلومات حول كيفية التحقق من صحة مستند PDF وفقًا لمعيار PDF A باستخدام بايثون، وكيفية العمل مع جدول المحتويات، وكيفية ضبط تاريخ انتهاء صلاحية PDF، وما إلى ذلك.
+lastmod: "2025-02-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: دليل لتعديل مستندات PDF باستخدام بايثون
+Abstract: توفر هذه المقالة دليلًا شاملًا حول تعديل مستندات PDF باستخدام بايثون، وتحديدًا باستخدام مكتبة Aspose.PDF. تغطي المقالة عدة وظائف، بما في ذلك التحقق من صحة مستندات PDF للامتثال لمعياري PDF/A-1a و PDF/A-1b باستخدام طريقة `validate` في فئة `Document`. كما توضح كيفية إضافة وتخصيص وإدارة جدول المحتويات (TOC) في ملفات PDF، مثل ضبط أنواع مختلفة من TabLeaderTypes، وإخفاء أرقام الصفحات، وتخصيص ترقيم الصفحات ببادئة. بالإضافة إلى ذلك، تشرح المقالة كيفية ضبط تاريخ انتهاء صلاحيّة مستند PDF عن طريق تضمين JavaScript للحد من الوصول، وكيفية تسوية النماذج القابلة للملء في PDF لجعلها غير قابلة للتحرير. كل قسم مصحوب بمقاطع شفرة توضح تنفيذ هذه الميزات باستخدام Aspose.PDF في بايثون.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "التلاعب بوثيقة PDF عبر بايثون",
-    "alternativeHeadline": "كيفية التلاعب بملف PDF باستخدام بايثون",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء وثائق pdf",
-    "keywords": "pdf, dotnet, python, التلاعب بملف pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق Aspose.PDF Doc",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/manipulate-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/manipulate-pdf-document/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "تحتوي هذه المقالة على معلومات حول كيفية التحقق من وثيقة PDF لمعيار PDF A باستخدام بايثون، كيفية العمل مع الفهرس، كيفية تحديد تاريخ انتهاء PDF، إلخ."
-}
-</script>
 
+## معالجة مستند PDF في بايثون
 
-## التلاعب بمستند PDF في بايثون
+## التحقق من صحة مستند PDF وفقًا لمعيار PDF A (A 1A و A 1B)
 
-## التحقق من مستند PDF وفقًا لمعيار PDF A (A 1A و A 1B)
+للتحقق من صحة مستند PDF لتوافق PDF/A-1a أو PDF/A-1b، استخدم فئة [المستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) وطريقة [التحقق](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods). تسمح لك هذه الطريقة بتحديد اسم الملف الذي سيتم حفظ النتيجة فيه ونوع التحقق المطلوب من تعداد PdfFormat: PDF_A_1A أو PDF_A_1B.
 
-للتحقق من توافق مستند PDF مع PDF/A-1a أو PDF/A-1b، استخدم طريقة [validate](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) في فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). تتيح لك هذه الطريقة تحديد اسم الملف الذي سيتم حفظ النتيجة فيه ونوع التحقق المطلوب من تعداد PdfFormat: PDF_A_1A أو PDF_A_1B.
-
-يُظهر لك مقطع الشيفرة التالي كيفية التحقق من مستند PDF لـ PDF/A-1A.
+يعرض المقتطف البرمجي التالي كيفية التحقق من صحة مستند PDF لتوافق PDF/A-1A.
 
 ```python
 
     import aspose.pdf as ap
 
-    # فتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # التحقق من PDF لـ PDF/A-1a
+    # Validate PDF for PDF/A-1a
     document.validate(output_xml, ap.PdfFormat.PDF_A_1A)
 ```
 
-يُظهر لك مقطع الشيفرة التالي كيفية التحقق من مستند PDF لـ PDF/A-1b.
+يعرض المقتطف البرمجي التالي كيفية التحقق من صحة مستند PDF لتوافق PDF/A-1b.
 
 ```python
 
     import aspose.pdf as ap
 
-    # فتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # التحقق من PDF لـ PDF/A-1a
+    # Validate PDF for PDF/A-1a
     document.validate(output_xml, ap.PdfFormat.PDF_A_1B)
 ```
 
-
 ## العمل مع جدول المحتويات
 
-### إضافة جدول المحتويات إلى ملف PDF موجود
+### إضافة جدول المحتويات إلى PDF موجود
 
-يمثل جدول المحتويات في PDF "جدول المحتويات". وهو ميزة تتيح للمستخدمين التنقل بسرعة عبر مستند بتوفير نظرة عامة على أقسامه وعناوينه.
+يشير TOC في PDF إلى "جدول المحتويات". وهو ميزة تتيح للمستخدمين التنقل بسرعة عبر المستند من خلال توفير نظرة عامة على أقسامه وعناوينه.
 
-لإضافة جدول المحتويات إلى ملف PDF موجود، استخدم فئة العناوين في مساحة الأسماء [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/). يمكن لمساحة الأسماء [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) إنشاء ملفات PDF جديدة والتعامل مع الملفات الموجودة. لإضافة جدول المحتويات إلى ملف PDF موجود، استخدم مساحة الأسماء Aspose.Pdf. يوضح مقتطف الشيفرة التالي كيفية إنشاء جدول محتويات داخل ملف PDF موجود باستخدام بايثون عبر .NET.
+لإضافة جدول المحتويات إلى ملف PDF موجود، استخدم فئة Heading في مساحة الاسم [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/). يمكن لمساحة الاسم [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) إنشاء ملفات PDF جديدة ومعالجة الملفات الموجودة. لإضافة جدول المحتويات إلى PDF موجود، استخدم مساحة الاسم Aspose.Pdf. يعرض المقتطف البرمجي التالي كيفية إنشاء جدول محتويات داخل ملف PDF موجود باستخدام بايثون عبر .NET.
 
 ```python
 
     import aspose.pdf as ap
 
-    # تحميل ملف PDF موجود
+    # Load an existing PDF files
     doc = ap.Document(input_pdf)
 
-    # الوصول إلى الصفحة الأولى من ملف PDF
+    # Get access to first page of PDF file
     tocPage = doc.pages.insert(1)
 
-    # إنشاء كائن لتمثيل معلومات جدول المحتويات
+    # Create object to represent TOC information
     tocInfo = ap.TocInfo()
-    title = ap.text.TextFragment("جدول المحتويات")
+    title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
 
-    # تعيين العنوان لجدول المحتويات
+    # Set the title for TOC
     tocInfo.title = title
     tocPage.toc_info = tocInfo
 
-    # إنشاء كائنات نصية سيتم استخدامها كعناصر جدول المحتويات
-    titles = ["الصفحة الأولى", "الصفحة الثانية", "الصفحة الثالثة", "الصفحة الرابعة"]
+    # Create string objects which will be used as TOC elements
+    titles = ["First page", "Second page", "Third page", "Fourth page"]
     for i in range(0, 2):
-        # إنشاء كائن عنوان
+        # Create Heading object
         heading2 = ap.Heading(1)
         segment2 = ap.text.TextSegment()
         heading2.toc_page = tocPage
         heading2.segments.append(segment2)
 
-        # تحديد الصفحة الوجهة لكائن العنوان
+        # Specify the destination page for heading object
         heading2.destination_page = doc.pages[i + 2]
 
-        # الصفحة الوجهة
+        # Destination page
         heading2.top = doc.pages[i + 2].rect.height
 
-        # إحداثيات الوجهة
+        # Destination coordinate
         segment2.text = titles[i]
 
-        # إضافة العنوان إلى الصفحة التي تحتوي على جدول المحتويات
+        # Add heading to page containing TOC
         tocPage.paragraphs.add(heading2)
 
-    # حفظ المستند المحدث
+    # Save the updated document
     doc.save(output_pdf)
 ```
 
+### ضبط TabLeaderType مختلفة لمستويات جدول المحتويات المختلفة
 
-### تعيين نوع TabLeaderType مختلف لمستويات TOC المختلفة
-
-تسمح Aspose.PDF لـ Python أيضًا بتعيين نوع TabLeaderType مختلف لمستويات TOC المختلفة. تحتاج إلى تعيين خاصية [line_dash](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) لـ [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/).
+تتيح Aspose.PDF للبايثون أيضًا ضبط TabLeaderType مختلفة لمستويات جدول المحتويات المختلفة. تحتاج إلى تعيين خاصية [line_dash](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) في فئة [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/).
 
 ```python
 
@@ -176,17 +111,17 @@ sitemap:
     tocPage = doc.pages.add()
     toc_info = ap.TocInfo()
 
-    # تعيين LeaderType
+    # set LeaderType
     toc_info.line_dash = ap.text.TabLeaderType.SOLID
-    title = ap.text.TextFragment("جدول المحتويات")
+    title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 30
     toc_info.title = title
 
-    # إضافة قسم القائمة إلى مجموعة الأقسام في مستند Pdf
+    # Add the list section to the sections collection of the Pdf document
     tocPage.toc_info = toc_info
-    # تحديد تنسيق قائمة المستويات الأربعة من خلال تعيين الهوامش اليسرى
-    # و
-    # إعدادات تنسيق النص لكل مستوى
+    # Define the format of the four levels list by setting the left margins
+    # and
+    # text format settings of each level
 
     toc_info.format_array_length = 4
     toc_info.format_array[0].margin.left = 0
@@ -205,31 +140,30 @@ sitemap:
     toc_info.format_array[3].margin.right = 30
     toc_info.format_array[3].text_state.font_style = ap.text.FontStyles.BOLD
 
-    # إنشاء قسم في مستند Pdf
+    # Create a section in the Pdf document
     page = doc.pages.add()
 
-    # إضافة أربعة عناوين في القسم
+    # Add four headings in the section
     for Level in range(1, 5):
         heading2 = ap.Heading(Level)
         segment2 = ap.text.TextSegment()
         heading2.segments.append(segment2)
         heading2.is_auto_sequence = True
         heading2.toc_page = tocPage
-        segment2.text = "عنوان تجريبي" + str(Level)
+        segment2.text = "Sample Heading" + str(Level)
         heading2.text_state.font = ap.text.FontRepository.find_font("Arial")
 
-        # إضافة العنوان إلى جدول المحتويات.
+        # Add the heading into Table Of Contents.
         heading2.is_in_list = True
         page.paragraphs.add(heading2)
 
-    # حفظ ملف Pdf
+    # save the Pdf
     doc.save(output_pdf)
 ```
 
-
 ### إخفاء أرقام الصفحات في جدول المحتويات
 
-في حالة عدم رغبتك في عرض أرقام الصفحات مع العناوين في جدول المحتويات، يمكنك استخدام خاصية [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) من الفئة [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) كقيمة false. يرجى مراجعة مقتطف الشيفرة التالي لإخفاء أرقام الصفحات في جدول المحتويات:
+في حال عدم رغبتك في عرض أرقام الصفحات مع العناوين في جدول المحتويات، يمكنك تعيين خاصية [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) في فئة [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) إلى false. يرجى مراجعة المقتطف البرمجي التالي لإخفاء أرقام الصفحات في جدول المحتويات:
 
 ```python
 
@@ -238,14 +172,14 @@ sitemap:
     doc = ap.Document()
     toc_page = doc.pages.add()
     toc_info = ap.TocInfo()
-    title = ap.text.TextFragment("جدول المحتويات")
+    title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
     toc_info.title = title
-    # أضف قسم القائمة إلى مجموعة الأقسام في مستند Pdf
+    # Add the list section to the sections collection of the Pdf document
     toc_page.toc_info = toc_info
-    # تحديد تنسيق قائمة المستويات الأربعة عن طريق تعيين الهوامش اليسرى
-    # وإعدادات تنسيق النص لكل مستوى
+    # Define the format of the four levels list by setting the left margins and
+    # text format settings of each level
 
     toc_info.is_show_page_numbers = False
     toc_info.format_array_length = 4
@@ -257,78 +191,76 @@ sitemap:
     toc_info.format_array[2].text_state.font_style = ap.text.FontStyles.BOLD
     toc_info.format_array[3].text_state.font_style = ap.text.FontStyles.BOLD
     page = doc.pages.add()
-    # أضف أربعة عناوين في القسم
+    # Add four headings in the section
     for Level in range(1, 5):
         heading2 = ap.Heading(Level)
         segment2 = ap.text.TextSegment()
         heading2.toc_page = toc_page
         heading2.segments.append(segment2)
         heading2.is_auto_sequence = True
-        segment2.text = "هذا عنوان للمستوى " + str(Level)
+        segment2.text = "this is heading of level " + str(Level)
         heading2.is_in_list = True
         page.paragraphs.add(heading2)
     doc.save(output_pdf)
 
 ```
 
+### تخصيص أرقام الصفحات أثناء إضافة جدول المحتويات
 
-### تخصيص أرقام الصفحات عند إضافة جدول المحتويات
-
-من الشائع تخصيص ترقيم الصفحات في جدول المحتويات عند إضافة جدول المحتويات في مستند PDF. على سبيل المثال، قد نحتاج إلى إضافة بعض البادئات قبل رقم الصفحة مثل P1، P2، P3 وهكذا. في مثل هذه الحالة، يوفر Aspose.PDF لـ Python خاصية [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) في فئة [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) والتي يمكن استخدامها لتخصيص أرقام الصفحات كما هو موضح في المثال البرمجي التالي.
+من الشائع تخصيص ترقيم الصفحات في جدول المحتويات أثناء إضافته إلى مستند PDF. على سبيل المثال، قد نحتاج إلى إضافة بادئة قبل رقم الصفحة مثل P1، P2، P3 وما إلى ذلك. في هذه الحالة، توفر Aspose.PDF للبايثون خاصية [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) في فئة [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) التي يمكن استخدامها لتخصيص أرقام الصفحات كما هو موضح في عينة الشفرة التالية.
 
 ```python
 
     import aspose.pdf as ap
 
-    # تحميل ملفات PDF موجودة
+    # Load an existing PDF files
     doc = ap.Document(input_pdf)
-    # الوصول إلى الصفحة الأولى من ملف PDF
+    # Get access to first page of PDF file
     toc_page = doc.pages.insert(1)
-    # إنشاء كائن لتمثيل معلومات جدول المحتويات
+    # Create object to represent TOC information
     toc_info = ap.TocInfo()
-    title = ap.text.TextFragment("جدول المحتويات")
+    title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
-    # تعيين العنوان لجدول المحتويات
+    # Set the title for TOC
     toc_info.title = title
     toc_info.page_numbers_prefix = "P"
     toc_page.toc_info = toc_info
     for i in range(len(doc.pages)):
-        # إنشاء كائن عنوان
+        # Create Heading object
         heading2 = ap.Heading(1)
         segment2 = ap.text.TextSegment()
         heading2.toc_page = toc_page
         heading2.segments.append(segment2)
-        # تحديد الصفحة المقصودة لكائن العنوان
+        # Specify the destination page for heading object
         heading2.destination_page = doc.pages[i + 1]
-        # الصفحة المقصودة
+        # Destination page
         heading2.top = doc.pages[i + 1].rect.height
-        # الإحداثيات المقصودة
-        segment2.text = "صفحة " + str(i)
-        # إضافة العنوان إلى الصفحة التي تحتوي على جدول المحتويات
+        # Destination coordinate
+        segment2.text = "Page " + str(i)
+        # Add heading to page containing TOC
         toc_page.paragraphs.add(heading2)
 
-    # حفظ المستند المحدث
+    # Save the updated document
     doc.save(output_pdf)
 
 ```
 
+## كيفية ضبط تاريخ انتهاء صلاحية PDF
 
-## كيفية تعيين تاريخ انتهاء صلاحية ملف PDF
-
-نقوم بتطبيق امتيازات الوصول على ملفات PDF بحيث يمكن لمجموعة معينة من المستخدمين الوصول إلى ميزات/كائنات معينة من مستندات PDF. من أجل تقييد الوصول إلى ملف PDF، نقوم عادةً بتطبيق التشفير وقد يكون لدينا متطلب لتعيين انتهاء صلاحية ملف PDF، بحيث يحصل المستخدم الذي يصل إلى المستند أو يعرضه على تنبيه صالح بخصوص انتهاء صلاحية ملف PDF.
+نُطبّق صلاحيات الوصول على ملفات PDF بحيث يمكن لمجموعة معينة من المستخدمين الوصول إلى ميزات/كائنات محددة في مستندات PDF. لتقييد الوصول إلى ملف PDF، عادةً ما نُطبق تشفيرًا وقد نحتاج إلى ضبط تاريخ انتهاء صلاحية ملف PDF، بحيث يتلقى المستخدم الذي يفتح/يعرض المستند تنبيهًا صالحًا بشأن انتهاء صلاحية ملف PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # إنشاء كائن Document
+    # Instantiate Document object
     doc = ap.Document()
-    # إضافة صفحة إلى مجموعة الصفحات في ملف PDF
+    # Add page to pages collection of PDF file
     doc.pages.add()
-    # إضافة جزء نصي إلى مجموعة الفقرات في كائن الصفحة
+    # Add text fragment to paragraphs collection of page object
     doc.pages[1].paragraphs.add(ap.text.TextFragment("Hello World..."))
-    # إنشاء كائن JavaScript لتعيين تاريخ انتهاء صلاحية ملف PDF
+    # Create JavaScript object to set PDF expiry date
     javaScript = ap.annotations.JavascriptAction(
         "var year=2017;"
         + "var month=5;"
@@ -337,95 +269,32 @@ sitemap:
         + "if (today.getTime() > expiry.getTime())"
         + "app.alert('The file is expired. You need a new one.');"
     )
-    # تعيين JavaScript كإجراء فتح ملف PDF
+    # Set JavaScript as PDF open action
     doc.open_action = javaScript
 
-    # حفظ مستند PDF
+    # Save PDF Document
     doc.save(output_pdf)
 ```
 
+## تسوية PDF القابل للملء في بايثون
 
-## تسوية استمارة PDF قابلة للتعبئة في بايثون
-
-غالبًا ما تتضمن مستندات PDF نماذج بها عناصر تفاعلية قابلة للتعبئة مثل أزرار الراديو ومربعات الاختيار ومربعات النص والقوائم، إلخ. لجعلها غير قابلة للتحرير لأغراض تطبيقية مختلفة، نحتاج إلى تسوية ملف PDF.
-يوفر Aspose.PDF الوظيفة لتسوية PDF الخاص بك في بايثون ببضع سطور من الكود فقط:
+غالبًا ما تتضمن مستندات PDF نماذجًا ذات عناصر تفاعلية قابلة للملء مثل أزرار الاختيار، مربعات الفحص، مربعات النص، القوائم، إلخ. لجعلها غير قابلة للتحرير لأغراض تطبيقية مختلفة، نحتاج إلى تسوية ملف PDF.
+توفر Aspose.PDF دالة لتسوية ملف PDF الخاص بك في بايثون ببضع أسطر من الشيفرة فقط:
 
 ```python
 
     import aspose.pdf as ap
 
-    # تحميل نموذج PDF المصدر
+    # Load source PDF form
     doc = ap.Document(input_pdf)
 
-    # تسوية استمارة PDF القابلة للتعبئة
+    # Flatten Flatten Fillable PDF
     if len(doc.form.fields) > 0:
         for item in doc.form.fields:
             item.flatten()
 
-    # حفظ المستند المحدث
+    # Save the updated document
     doc.save(output_pdf)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python via .NET",
-    "downloadUrl": "https://releases.aspose.com/pdf/python-net",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

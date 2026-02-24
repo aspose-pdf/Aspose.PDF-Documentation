@@ -1,181 +1,116 @@
 ---
-title: إضافة وحذف إشارة مرجعية باستخدام Python
-linktitle: إضافة وحذف إشارة مرجعية
+title: إضافة وحذف إشارات مرجعية باستخدام بايثون
+linktitle: إضافة وحذف إشارات مرجعية
 type: docs
 weight: 10
 url: /ar/python-net/add-and-delete-bookmark/
-description: يمكنك إضافة إشارة مرجعية إلى مستند PDF باستخدام Python. من الممكن حذف جميع الإشارات المرجعية أو إشارات مرجعية معينة من مستند PDF.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: يمكنك إضافة إشارة مرجعية إلى مستند PDF باستخدام بايثون. من الممكن حذف جميع الإشارات المرجعية أو إشارة مرجعية معينة من مستند PDF.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية إضافة وإزالة الإشارات المرجعية باستخدام بايثون
+Abstract: توفر هذه المقالة تعليمات شاملة حول إدارة الإشارات المرجعية في مستندات PDF باستخدام مكتبة Aspose.PDF للبايثون. توضح عمليات إضافة وتعديل وحذف الإشارات المرجعية داخل ملف PDF. تبدأ المقالة بدليل لإضافة إشارة مرجعية عن طريق إنشاء كائن `OutlineItemCollection` وإضافته إلى `OutlineCollection` الخاص بالمستند. تتضمن أمثلة شفرة توضح إنشاء وإضافة كل من الإشارات المرجعية الأصلية والفرعية، مبرزة العلاقة الهرمية. بالإضافة إلى ذلك، تغطي المقالة طرق حذف جميع الإشارات المرجعية أو إشارة مرجعية معينة حسب العنوان. يحتوي كل قسم على مقتطفات شفرة بايثون لتوضيح العمليات، مما يضمن تمكّن القرّاء من تنفيذ الوظائف الموصوفة بسهولة في مهام تعديل ملفات PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "إضافة وحذف إشارة مرجعية",
-    "alternativeHeadline": "كيفية إضافة وحذف إشارة مرجعية من PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
-    },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf، python، حذف إشارة مرجعية، إضافة إشارة مرجعية",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق Aspose.PDF Doc",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-and-delete-bookmark/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-and-delete-bookmark/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يمكنك إضافة إشارة مرجعية إلى مستند PDF باستخدام Python. من الممكن حذف جميع الإشارات المرجعية أو إشارات مرجعية معينة من مستند PDF."
-}
-</script>
-
 
 ## إضافة إشارة مرجعية إلى مستند PDF
 
-تُحتفظ بالإشارات المرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) للكائن Document، وهي نفسها في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
+تُحفظ الإشارات المرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) الخاصة بكائن Document، والتي بدورها في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
 
-لإضافة إشارة مرجعية إلى PDF:
+لإضافة إشارة مرجعية إلى ملف PDF:
 
 1. افتح مستند PDF باستخدام كائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-2. أنشئ إشارة مرجعية وحدد خصائصها.
-3. أضف مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) إلى مجموعة Outlines.
+1. أنشئ إشارة مرجعية وحدد خصائصها.
+1. أضف مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) إلى مجموعة Outlines.
 
-يظهر لك المقتطف البرمجي التالي كيفية إضافة إشارة مرجعية في مستند PDF.
+يوضح المقتطف البرمجي التالي كيفية إضافة إشارة مرجعية في مستند PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # افتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # أنشئ كائن الإشارة المرجعية
+    # Create a bookmark object
     outline = ap.OutlineItemCollection(document.outlines)
     outline.title = "Test Bookmark"
     outline.italic = True
     outline.bold = True
-    # حدد رقم صفحة الوجهة
+    # Set the destination page number
     outline.action = ap.annotations.GoToAction(document.pages[1])
-    # أضف الإشارة المرجعية إلى مجموعة الإشارات المرجعية في المستند.
+    # Add bookmark in the document's outline collection.
     document.outlines.append(outline)
 
-    # احفظ الناتج
+    # Save output
     document.save(output_pdf)
 ```
 
-
 ## إضافة إشارة مرجعية فرعية إلى مستند PDF
 
-يمكن أن تكون الإشارات المرجعية متداخلة، مما يشير إلى علاقة هرمية مع الإشارات المرجعية الأصلية والفرعية. يشرح هذا المقال كيفية إضافة إشارة مرجعية فرعية، وهي إشارة مرجعية من المستوى الثاني، إلى ملف PDF.
+يمكن تجميع الإشارات المرجعية، مما يدل على علاقة هرمية بين الإشارات الأصلية والفرعية. توضح هذه المقالة كيفية إضافة إشارة مرجعية فرعية، أي إشارة مرجعية من المستوى الثاني، إلى ملف PDF.
 
-لإضافة إشارة مرجعية فرعية إلى ملف PDF، قم أولاً بإضافة إشارة مرجعية رئيسية:
+لإضافة إشارة مرجعية فرعية إلى ملف PDF، أضف أولاً إشارة مرجعية أصلية:
 
 1. افتح مستندًا.
-2. أضف إشارة مرجعية إلى [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/)، مع تحديد خصائصها.
-3. أضف OutlineItemCollection إلى مجموعة كائن [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) الخاصة بالمستند.
+1. أضف إشارة مرجعية إلى [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/)، مع تحديد خصائصها.
+1. أضف مجموعة OutlineItemCollection إلى مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) الخاصة بكائن Document.
 
-يتم إنشاء الإشارة المرجعية الفرعية تمامًا مثل الإشارة المرجعية الرئيسية، كما هو موضح أعلاه، ولكن يتم إضافتها إلى مجموعة الإشارات المرجعية الرئيسية.
+يتم إنشاء الإشارة المرجعية الفرعية بنفس طريقة الإشارة الأصلية المذكورة أعلاه، لكنها تُضاف إلى مجموعة Outlines الخاصة بالإشارة الأصلية.
 
-توضح مقتطفات الكود التالية كيفية إضافة إشارة مرجعية فرعية إلى مستند PDF.
+تُظهر مقتطفات الشفرة التالية كيفية إضافة إشارة مرجعية فرعية إلى مستند PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # افتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # إنشاء كائن إشارة مرجعية رئيسية
+    # Create a parent bookmark object
     outline = ap.OutlineItemCollection(document.outlines)
     outline.title = "Parent Outline"
     outline.italic = True
     outline.bold = True
 
-    # إنشاء كائن إشارة مرجعية فرعية
+    # Create a child bookmark object
     childOutline = ap.OutlineItemCollection(document.outlines)
     childOutline.title = "Child Outline"
     childOutline.italic = True
     childOutline.bold = True
 
-    # إضافة إشارة مرجعية فرعية في مجموعة الإشارات المرجعية الرئيسية
+    # Add child bookmark in parent bookmark's collection
     outline.append(childOutline)
-    # إضافة إشارة مرجعية رئيسية في مجموعة الإشارات المرجعية للمستند.
+    # Add parent bookmark in the document's outline collection.
     document.outlines.append(outline)
 
-    # حفظ المخرج
+    # Save output
     document.save(output_pdf)
 ```
 
-
 ## حذف جميع الإشارات المرجعية من مستند PDF
 
-جميع الإشارات المرجعية في ملف PDF موجودة في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/). يشرح هذا المقال كيفية حذف جميع الإشارات المرجعية من ملف PDF.
+تُحفظ جميع الإشارات المرجعية في ملف PDF ضمن مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/). توضح هذه المقالة كيفية حذف جميع الإشارات المرجعية من ملف PDF.
 
 لحذف جميع الإشارات المرجعية من ملف PDF:
 
-1. قم باستدعاء طريقة الحذف لمجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
-2. احفظ الملف المعدل باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) الخاصة بكائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. استدعِ طريقة Delete الخاصة بمجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
+1. احفظ الملف المعدل باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) لكائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
-توضح مقتطفات الشيفرات التالية كيفية حذف جميع الإشارات المرجعية من مستند PDF.
+تُظهر مقتطفات الشفرة التالية كيفية حذف جميع الإشارات المرجعية من مستند PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # فتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # حذف جميع الإشارات المرجعية
+    # Delete all bookmarks
     document.outlines.delete()
 
-    # حفظ الملف المحدث
+    # Save updated file
     document.save(output_pdf)
 
 ```
@@ -184,22 +119,25 @@ sitemap:
 
 لحذف إشارة مرجعية معينة من ملف PDF:
 
-1. مرر عنوان العلامة المرجعية كمعامل إلى طريقة الحذف في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
-1. ثم احفظ الملف المحدث باستخدام طريقة الحفظ للكائن Document.
+1. مرّر عنوان الإشارة المرجعية كمعامل إلى طريقة Delete الخاصة بمجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
+1. ثم احفظ الملف المحدّث باستخدام طريقة Save لكائن Document.
 
-توفر فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/). تقوم طريقة [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/#methods) بحذف أي علامة مرجعية بعنوان يمرر إلى الطريقة.
+توفر فئة [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/). تزيل طريقة [delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/#methods) أي إشارة مرجعية بالعنوان الممرّر إلى الطريقة.
 
-توضح أجزاء الشيفرة التالية كيفية حذف علامة مرجعية معينة من مستند PDF.
+تُظهر مقتطفات الشفرة التالية كيفية حذف إشارة مرجعية معينة من مستند PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # افتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # حذف العلامة المرجعية المحددة بالعنوان
+    # Delete particular outline by Title
     document.outlines.delete("Child Outline")
 
-    # حفظ الملف المحدث
+    # Save updated file
     document.save(output_pdf)
+```
+
+

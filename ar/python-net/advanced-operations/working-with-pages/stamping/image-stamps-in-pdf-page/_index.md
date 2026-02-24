@@ -1,101 +1,41 @@
 ---
-title: إضافة طوابع الصور في PDF باستخدام Python
-linktitle: طوابع الصور في ملف PDF
+title: إضافة علامات الصورة في PDF باستخدام بايثون
+linktitle: علامات الصورة في ملف PDF
 type: docs
 weight: 10
 url: /ar/python-net/image-stamps-in-pdf-page/
-description: أضف طابع الصورة في مستند PDF الخاص بك باستخدام فئة ImageStamp مع مكتبة Aspose.PDF لـ Python.
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+description: أضف علامة الصورة في مستند PDF الخاص بك باستخدام فئة ImageStamp مع مكتبة Aspose.PDF للغة بايثون.
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية إضافة علامات الصورة في PDF باستخدام بايثون
+Abstract: توفر هذه المقالة دليلًا شاملاً حول إضافة علامات الصور إلى ملفات PDF باستخدام مكتبة Aspose.PDF للبايثون. تشرح استخدام فئة `ImageStamp` التي تسمح بتخصيص العلامات المستندة إلى الصور بما في ذلك الخصائص مثل الارتفاع، العرض، الشفافية، والدوران. تتضمن العملية إنشاء كائن `Document` وكائن `ImageStamp` بالخصائص المطلوبة، ثم إضافة العلامة إلى صفحة محددة من PDF باستخدام طريقة `add_stamp()`. تشمل المقالة مقتطفات شفرة بايثون توضح كيفية تطبيق علامة صورة على PDF والتحكم في جودتها باستخدام الخاصية `quality` التي تضبط جودة الصورة بالنسبة المئوية. بالإضافة إلى ذلك، تشرح المقالة كيفية استخدام علامات الصور كخلفيات في صناديق عائمة باستخدام فئة `FloatingBox`، وتقدم مثالًا آخر للشفرة لبيان كيفية تنفيذ ذلك. هذا الدليل يمثل مصدرًا مفيدًا للمطورين الذين يرغبون في تحسين ملفات PDF باستخدام علامات الصور عبر Aspose.PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "إضافة طوابع الصور في PDF باستخدام Python",
-    "alternativeHeadline": "إضافة طوابع الصور في PDF باستخدام Python",
-    "author": {
-        "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
-    },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, python, إنشاء مستندات",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/image-stamps-in-pdf-page/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/image-stamps-in-pdf-page/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "أضف طابع الصورة في مستند PDF الخاص بك باستخدام فئة ImageStamp مع مكتبة Aspose.PDF لـ Python."
-}
-</script>
 
+## إضافة علامة صورة في ملف PDF
 
-## إضافة ختم صورة في ملف PDF
+يمكنك استخدام الفئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) لإضافة علامة صورة إلى ملف PDF. توفر الفئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) الخصائص اللازمة لإنشاء علامة مستندة إلى صورة، مثل الارتفاع والعرض والشفافية وغيرها. يمكن وضع العلامة، تغيير حجمها، تدويرها، وجعلها شفافة جزئياً، مما يسمح بإضافة علامة مائية أو علامة تجارية أو ملاحظات.
 
-يمكنك استخدام فئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) لإضافة ختم صورة إلى ملف PDF. توفر فئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) الخصائص اللازمة لإنشاء ختم يعتمد على الصورة، مثل الارتفاع، العرض، الشفافية وغيرها.
+تظهر مقتطف الشفرة التالي كيفية إضافة علامة صورة في ملف PDF.
 
-لإضافة ختم صورة:
-
-1. قم بإنشاء كائن Document وكائن ImageStamp باستخدام الخصائص المطلوبة.
-2. استدعِ طريقة [add_stamp()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) لفئة [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) لإضافة الختم إلى ملف PDF.
-
-يوضح مقطع الشيفرة التالي كيفية إضافة ختم صورة في ملف PDF.
+1. تحميل ملف PDF باستخدام 'ap.Document()'.
+1. إنشاء علامة صورة باستخدام 'ImageStamp()'.
+1. ضبط خصائص العلامة.
+1. إضافة العلامة إلى الصفحة المستهدفة.
+1. حفظ ملف PDF المعدل.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # فتح المستند
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # إنشاء ختم الصورة
+def add_image_stamp(infile, input_image_file, outfile):
+    document = ap.Document(infile)
     image_stamp = ap.ImageStamp(input_image_file)
     image_stamp.background = True
     image_stamp.x_indent = 100
@@ -104,133 +44,88 @@ sitemap:
     image_stamp.width = 300
     image_stamp.rotate = ap.Rotation.ON270
     image_stamp.opacity = 0.5
-    # إضافة الختم إلى صفحة معينة
-    document.pages[1].add_stamp(image_stamp)
 
-    # حفظ المستند الناتج
-    document.save(output_pdf)
+    document.pages[1].add_stamp(image_stamp)
+    document.save(outfile)
 ```
 
+## التحكم في جودة الصورة عند إضافة العلامة
 
-## التحكم في جودة الصورة عند إضافة ختم
+عند إضافة صورة كعنصر علامة، يمكنك التحكم في جودة الصورة. تُستخدم خاصية [quality](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/#properties) في فئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) لهذا الغرض. تُشير إلى جودة الصورة بالنسبة المئوية (القيم الصالحة هي 0..100).
+من خلال ضبط خاصية الجودة، يمكنك تقليل دقة الصورة لتحسين حجم PDF أو الحفاظ على وضوح أعلى.
 
-عند إضافة صورة ككائن ختم، يمكنك التحكم في جودة الصورة. تُستخدم خاصية [quality](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/#properties) في فئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) لهذا الغرض. تشير إلى جودة الصورة بالنسبة المئوية (القيم الصالحة هي 0..100).
+1. فتح وثيقة PDF.
+1. إنشاء علامة صورة.
+1. ضبط جودة الصورة.
+1. إضافة العلامة إلى الصفحة المستهدفة.
+1. حفظ ملف PDF المعدل.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # فتح المستند
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # إنشاء ختم صورة
-    image_stamp = ap.ImageStamp(input_jpg)
+def add_image_stamp_image_control_image_quality(infile, input_image_file, outfile):
+    document = ap.Document(infile)
+
+    image_stamp = ap.ImageStamp(input_image_file)
     image_stamp.quality = 10
-    # إضافة الختم إلى صفحة معينة
-    document.pages[1].add_stamp(image_stamp)
 
-    # حفظ المستند الناتج
-    document.save(output_pdf)
+    document.pages[1].add_stamp(image_stamp)
+    document.save(outfile)
 ```
 
-## ختم الصورة كخلفية في صندوق عائم
+## علامة الصورة كخلفية في الصندوق العائم
 
-تتيح لك Aspose.PDF لواجهة برمجة التطبيقات بايثون إضافة ختم صورة كخلفية في صندوق عائم.
- [الخاصية](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/#properties) الخلفية لفئة [FloatingBox](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/) يمكن استخدامها لتعيين ختم صورة الخلفية لصندوق عائم كما هو موضح في نموذج الكود التالي.
+إنشاء [FloatingBox](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/) في ملف PDF وتطبيق صورة كخلفيته. يوضح أيضاً كيفية إضافة نص، ضبط الحدود، لون الخلفية، وتحديد موقع الصندوق بدقة على الصفحة. هذا مفيد لإنشاء محتوى PDF غني بصرياً مثل الملاحظات التوضيحية، اللافتات، أو الأقسام المميزة بنص فوق الصور.
+
+1. فتح أو إنشاء وثيقة PDF.
+1. إنشاء كائن 'FloatingBox'.
+1. إضافة محتوى نصي إلى الصندوق.
+1. ضبط حدود الصندوق ولون الخلفية.
+1. إضافة صورة خلفية.
+1. إضافة الـ FloatingBox إلى الصفحة.
+1. حفظ وثيقة PDF.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # إنشاء كائن المستند
-    document = ap.Document()
-    # إضافة صفحة إلى مستند PDF
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_image_as_background_in_floating_box(infile, input_image_file, outfile):
+
+    document = ap.Document(infile)
+    # Add page to PDF document
     page = document.pages.add()
-    # إنشاء كائن FloatingBox
+    # Create FloatingBox object
     box = ap.FloatingBox(200.0, 100.0)
-    # ضبط الموضع الأيسر لـ FloatingBox
+    # Set left position for FloatingBox
     box.left = 40
-    # ضبط الموضع العلوي لـ FloatingBox
+    # Set Top position for FloatingBox
     box.top = 80
-    # ضبط المحاذاة الأفقية لـ FloatingBox
+    # Set the Horizontal alignment for FloatingBox
     box.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # إضافة مقطع نصي إلى مجموعة الفقرات لـ FloatingBox
-    box.paragraphs.add(ap.text.TextFragment("النص الرئيسي"))
-    # تعيين الحدود لـ FloatingBox
+    # Add text fragment to paragraphs collection of FloatingBox
+    box.paragraphs.add(ap.text.TextFragment("Text in Floating Box"))
+    # Set border for FloatingBox
     box.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
 
     img = ap.Image()
     img.file = input_image_file
-    # إضافة صورة الخلفية
+    # Add background image
     box.background_image = img
-    # تعيين لون الخلفية لـ FloatingBox
+    # Set background color for FloatingBox
     box.background_color = ap.Color.yellow
-    # إضافة FloatingBox إلى مجموعة الفقرات لكائن الصفحة
+    # Add FloatingBox to paragraphs collection of page object
     page.paragraphs.add(box)
-    # حفظ مستند PDF
-    document.save(output_pdf)
+    # Save the PDF document
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لبايثون",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

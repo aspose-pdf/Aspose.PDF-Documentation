@@ -1,295 +1,226 @@
 ---
-title: PDF Tooltip using Python
-linktitle: PDF Tooltip
+title: إنشاء تلميحات في النص
+linktitle: تلميحات PDF
 type: docs
 weight: 20
 url: /ar/python-net/pdf-tooltip/
-description: تعلم كيفية إضافة تلميح الأدوات إلى جزء النص في PDF باستخدام Python وAspose.PDF
-lastmod: "2024-02-17"
-sitemap:
-    changefreq: "weekly"
+description: تعرّف على كيفية إضافة تلميحات إلى شظية النص في PDF باستخدام بايثون و Aspose.PDF
+lastmod: "2025-11-13"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: إضافة تلميح إلى شظية النص في PDF باستخدام بايثون
+Abstract: توفر هذه المقالة مثالين برمجيين بلغة بايثون لتعزيز التفاعل في مستندات PDF باستخدام مكتبة Aspose.PDF. يوضح المثال الأول كيفية إضافة تلميحات إلى شظيات نصية محددة داخل PDF عن طريق إنشاء عناصر ButtonField غير مرئية فوق النص وتعيين الخاصية `alternate_name` كتلميح. يعرض المثال الثاني كيفية إنشاء كتل نصية عائمة تظهر عند التحويم فوق `TextFragment`، حيث يتم إنشاء `TextBoxField` مخفي في موقعه، وتُرفق أحداث `HideAction` إلى `ButtonField` غير مرئي لإظهار أو إخفاء الكتلة العائمة.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF Tooltip using Python",
-    "alternativeHeadline": "Add PDF Tooltip to the Text",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, add pdf tooltip",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/pdf-tooltip/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/pdf-tooltip/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "تعلم كيفية إضافة تلميح الأدوات إلى جزء النص في PDF باستخدام Python وAspose.PDF"
-}
-</script>
 
+## إضافة تلميح إلى النص المستبحث في PDF
 
-## إضافة تلميح إلى النص الذي تم البحث عنه عن طريق إضافة زر غير مرئي
+هذا المقتطف البرمجي يوضح كيفية وضع عناصر [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) غير مرئية فوق كائنات [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) محددة في PDF لعرض تلميحات عندما يمر المستخدم فوقها. يدعم كلًا من رسائل التلميحات القصيرة والطويلة باستخدام الخاصية `alternate_name` في `ButtonField`.
 
-يعرض هذا الكود كيفية إضافة تلميحات إلى أجزاء نصية محددة في مستند PDF باستخدام Aspose.PDF. يتم عرض التلميحات عندما يحوم مؤشر الفأرة فوق النص المقابل.
-
-سيعرض لك مقتطف الكود التالي الطريقة لتحقيق هذه الوظيفة:
+1. إنشاء مستند جديد [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. حفظ المستند الأولي.
+1. إعادة فتح مستند PDF.
+1. البحث عن النص المستهدف باستخدام [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. إضافة [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) غير مرئي مع تلميح قصير.
+1. البحث عن النص المستهدف الثاني.
+1. إضافة [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) غير مرئي مع تلميح طويل فوق الشظية المطابقة.
+1. حفظ المستند النهائي.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("حرك مؤشر الفأرة هنا لعرض تلميح")
-    )
-    document.pages[1].paragraphs.add(
-        ap.text.TextFragment(
-            "حرك مؤشر الفأرة هنا لعرض تلميح طويل جدًا"
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_tool_tip_to_searched_text(outfile):
+    """
+    Add tooltips to searched text in a PDF document.
+
+    Creates a PDF with text fragments and adds invisible button fields over them
+    to display tooltips when users hover with their mouse cursor. Demonstrates
+    both short and long tooltip text implementations.
+
+    Args:
+        outfile (str): Path where the PDF with tooltips will be saved.
+
+    Returns:
+        None: The function creates and saves a PDF file with tooltip functionality.
+
+    Note:
+        - Creates invisible ButtonField elements over text fragments
+        - Uses alternate_name property to define tooltip content
+        - Supports both short and very long tooltip text
+        - TextFragmentAbsorber finds specific text to add tooltips to
+        - Tooltips appear on mouse hover in PDF viewers that support this feature
+        - Long tooltips demonstrate Lorem ipsum text for extensive content
+
+    Example:
+        >>> add_tool_tip_to_searched_text("tooltips.pdf")
+        # Creates a PDF with interactive text tooltips
+    """
+
+    # Create PDF document
+    with ap.Document() as document:
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display a tooltip")
         )
-    )
-    document.save(output_pdf)
-
-    # فتح المستند مع النص
-    document = ap.Document(output_pdf)
-    # إنشاء كائن TextAbsorber للعثور على جميع العبارات المطابقة للتعبير العادي
-    absorber = ap.text.TextFragmentAbsorber(
-        "حرك مؤشر الفأرة هنا لعرض تلميح"
-    )
-    # قبول المستخرج لصفحات المستند
-    document.pages.accept(absorber)
-    # الحصول على الأجزاء النصية المستخرجة
-    text_fragments = absorber.text_fragments
-
-    # حلقة على الأجزاء
-    for fragment in text_fragments:
-        # إنشاء زر غير مرئي على موضع الجزء النصي
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # قيمة alternate_name ستظهر كتلميح بواسطة تطبيق العرض
-        field.alternate_name = "تلميح للنص."
-        # إضافة حقل الزر إلى المستند
-        document.form.add(field)
-
-    # سيكون التالي مثال على تلميح طويل جدًا
-    absorber = ap.text.TextFragmentAbsorber(
-        "حرك مؤشر الفأرة هنا لعرض تلميح طويل جدًا"
-    )
-    document.pages.accept(absorber)
-    text_fragments = absorber.text_fragments
-
-    for fragment in text_fragments:
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # تعيين نص طويل جدًا
-        field.alternate_name = (
-            "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت،"
-            " سيد دو إيوسيمود تيمبور إنسيديدونت أوت لابوري إت دولوري ماجنا"
-            " أليكا. أوت إينيم أد مينيم فينيام، كويز نوسترود إكسرسيتيشن"
-            " ألامكو لابوريس نيسي أوت أليكيوب إكس إي كومودو كونسيكوات."
-            " دويس أوتي إيروري دولور إن ريبريهينديريت إن وولبتات فيليت"
-            " إيسي سيلوم دولور إيو فيوجيات نولا بارياتور. إكسسيبتور سينت"
-            " أوكاكات كيوبيداتات نون برويدنت، سونت إن كيولبا كي أوفيسيا"
-            " ديسيرونت موليت أنيم آيد إست لابوروم."
+        document.pages[1].paragraphs.add(
+            ap.text.TextFragment(
+                "Move the mouse cursor here to display a very long tooltip"
+            )
         )
-        document.form.add(field)
+        document.save(outfile)
 
-    # حفظ المستند
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip")
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the extracted text fragments
+        text_fragments = absorber.text_fragments
+
+        # Loop through the fragments
+        for fragment in text_fragments:
+            # Create invisible button on text fragment position
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # alternate_name value will be displayed as tooltip by a viewer application
+            field.alternate_name = "Tooltip for text."
+            # Add button field to the document
+            document.form.add(field)
+
+        # Next will be sample of very long tooltip
+        absorber = ap.text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip")
+        document.pages.accept(absorber)
+        text_fragments = absorber.text_fragments
+
+        for fragment in text_fragments:
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # Set very long text
+            field.alternate_name = ("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                                    " sed do eiusmod tempor incididunt ut labore et dolore magna"
+                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                    " Duis aute irure dolor in reprehenderit in voluptate velit"
+                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                                    " occaecat cupidatat non proident, sunt in culpa qui officia"
+                                    " deserunt mollit anim id est laborum.")
+            document.form.add(field)
+
+        # Save document
+        document.save(outfile)
 ```
 
+## إنشاء كتلة نص مخفية تظهر عند التحويم في PDF
 
-## إنشاء كتلة نصية مخفية وعرضها عند التمرير بالماوس
+إضافة نص عائم تفاعلي إلى مستند PDF. يضع طبقة فوق عبارة مستهدفة عنصر [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) غير مرئي ويظهر [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) مخفي عندما يمر المستخدم فوقه. هذه التقنية مثالية للمساعدة السياقية، التعليقات التوضيحية، أو عرض المحتوى الديناميكي.
 
-يعرض مقتطف الشيفرة بلغة بايثون كيفية إضافة نص عائم إلى مستند PDF، والذي يظهر عند تمرير مؤشر الماوس فوق منطقة محددة.
-
-أولاً، يتم إنشاء مستند PDF جديد، ويتم إضافة فقرة تحتوي على النص "حرك مؤشر الماوس هنا لعرض النص العائم". ثم يتم حفظ المستند.
-
-بعد ذلك، يُعاد فتح المستند المحفوظ، ويتم إنشاء كائن TextAbsorber للبحث عن جزء النص الذي أضيف مسبقًا. يُستخدم هذا الجزء من النص لتحديد موضع وخصائص حقل النص العائم.
-
-يتم إنشاء كائن TextBoxField لتمثيل حقل النص العائم، وتُضبط خصائصه مثل الموضع، والقيمة، وحالة القراءة فقط، والوضوح وفقًا لذلك. بالإضافة إلى ذلك، يتم تعيين اسم فريد وخصائص المظهر للحقل.
-
-يُضاف حقل النص العائم إلى نموذج المستند، ويتم إنشاء حقل زر غير مرئي في موضع جزء النص الأصلي.
- الأحداث HideAction مخصصة لحقل الزر، مما يحدد أن حقل النص العائم يجب أن يظهر عندما يدخل مؤشر الفأرة في محيطه ويختفي عند خروج المؤشر.
-
-أخيرًا، يتم إضافة حقل الزر إلى نموذج المستند، ويتم حفظ المستند المعدل.
-
-يوفر هذا المقتطف من الكود طريقة لإنشاء عناصر نص عائمة تفاعلية في مستند PDF باستخدام Aspose.PDF لـ Python.
+1. إنشاء مستند PDF جديد.
+1. حفظ PDF بحيث يمكن إعادة فتحه لإعداد التفاعلية.
+1. إعادة فتح مستند PDF.
+1. تحديد موقع النص المستهدف باستخدام [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. إنشاء [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) مخفي.
+1. إضافة الحقل المخفي إلى مجموعة [`Form`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) في المستند.
+1. إنشاء [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) غير مرئي.
+1. تعيين إجراءات الفأرة (`on_enter`, `on_exit`) باستخدام [`HideAction`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/hideaction/) لإظهار/إخفاء الحقل المخفي.
+1. حفظ المستند النهائي.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("انقل مؤشر الفأرة هنا لعرض النص العائم")
-    )
-    document.save(output_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # افتح المستند مع النص
-    document = ap.Document(output_pdf)
-    # إنشاء كائن TextAbsorber للعثور على جميع العبارات التي تطابق التعبير العادي
-    absorber = ap.text.TextFragmentAbsorber(
-        "انقل مؤشر الفأرة هنا لعرض النص العائم"
-    )
-    # قبول الماص للصفحات المستند
-    document.pages.accept(absorber)
-    # احصل على أول جزء نصي مُستخرج
-    text_fragments = absorber.text_fragments
-    fragment = text_fragments[1]
+def create_hidden_text_block(outfile):
+    """
+    Create a hidden text block that appears on mouse hover.
 
-    # إنشاء حقل نص مخفي للنص العائم في المستطيل المحدد للصفحة
-    floating_field = ap.forms.TextBoxField(
-        fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
-    )
-    # تعيين النص ليُعرض كقيمة الحقل
-    floating_field.value = 'هذا هو "حقل النص العائم".'
-    # نوصي بجعل الحقل 'للقراءة فقط' لهذا السيناريو
-    floating_field.read_only = True
-    # تعيين علامة 'مخفي' لجعل الحقل غير مرئي عند فتح المستند
-    floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
+    Demonstrates advanced interactive PDF functionality by creating a hidden
+    text field that becomes visible when users hover over specific text.
+    Uses mouse enter/exit actions to control visibility.
 
-    # تعيين اسم حقل فريد ليس ضروريًا ولكن مسموح به
-    floating_field.partial_name = "FloatingField_1"
+    Args:
+        outfile (str): Path where the PDF with hidden text functionality will be saved.
 
-    # تعيين خصائص مظهر الحقل ليس ضروريًا ولكن يجعله أفضل
-    floating_field.default_appearance = ap.annotations.DefaultAppearance(
-        "Helv", 10, ap.Color.blue.to_rgb()
-    )
-    floating_field.characteristics.background = ap.Color.light_blue.to_rgb()
-    floating_field.characteristics.border = ap.Color.dark_blue.to_rgb()
-    floating_field.border = ap.annotations.Border(floating_field)
-    floating_field.border.width = 1
-    floating_field.multiline = True
+    Returns:
+        None: The function creates and saves a PDF file with floating text capability.
 
-    # إضافة حقل نص إلى المستند
-    document.form.add(floating_field)
-    # إنشاء زر غير مرئي في موقع جزء النص
-    button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-    # إنشاء إجراء إخفاء جديد للحقل المحدد (التعليق) وعلامة عدم الظهور.
-    # (يمكنك أيضًا الإشارة إلى الحقل العائم بالاسم إذا حددته أعلاه.)
-    # إضافة إجراءات عند دخول/خروج الفأرة في حقل الزر غير المرئي
+    Note:
+        - Creates a hidden TextBoxField with floating text content
+        - Uses HideAction to control field visibility on mouse events
+        - ButtonField acts as invisible trigger area over target text
+        - Field is initially hidden and appears on mouse enter
+        - Supports custom styling: colors, borders, fonts
+        - Read-only field prevents user editing of floating text
+        - Demonstrates advanced PDF interactivity features
 
-    button_field.actions.on_enter = ap.annotations.HideAction(
-        floating_field.partial_name, False
-    )
-    button_field.actions.on_exit = ap.annotations.HideAction(
-        floating_field.partial_name
-    )
+    Example:
+        >>> create_hidden_text_block("floating_text.pdf")
+        # Creates a PDF with text that reveals hidden content on hover
+    """
 
-    # إضافة حقل الزر إلى المستند
-    document.form.add(button_field)
+    # Create PDF document
+    with ap.Document() as document:
+        #  Add paragraph with text
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display floating text")
+        )
+        # Save PDF document
+        document.save(outfile)
 
-    # حفظ المستند
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber("Move the mouse cursor here to display floating text")
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the first extracted text fragment
+        text_fragments = absorber.text_fragments
+        fragment = text_fragments[1]
+
+        # Create hidden text field for floating text in the specified rectangle of the page
+        floating_field = ap.forms.TextBoxField(
+            fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
+        )
+        # Set text to be displayed as field value
+        floating_field.value = 'This is the "floating text field".'
+        # We recommend to make field 'readonly' for this scenario
+        floating_field.read_only = True
+        # Set 'hidden' flag to make field invisible on document opening
+        floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
+
+        # Setting a unique field name isn't necessary but allowed
+        floating_field.partial_name = "FloatingField_1"
+
+        # Setting characteristics of field appearance isn't necessary but makes it better
+        floating_field.default_appearance = ap.annotations.DefaultAppearance("Helv", 10, drawing.Color.blue)
+        floating_field.characteristics.background = drawing.Color.light_blue
+        floating_field.characteristics.border = drawing.Color.dark_blue
+        floating_field.border = ap.annotations.Border(floating_field)
+        floating_field.border.width = 1
+        floating_field.multiline = True
+
+        # Add text field to the document
+        document.form.add(floating_field)
+        # Create invisible button on text fragment position
+        button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+        # Create new hide action for specified field (annotation) and invisibility flag.
+        # (You also may refer floating field by the name if you specified it above.)
+        # Add actions on mouse enter/exit at the invisible button field
+
+        button_field.actions.on_enter = ap.annotations.HideAction(floating_field, False)
+        button_field.actions.on_exit = ap.annotations.HideAction(floating_field)
+
+        # Add button field to the document
+        document.form.add(button_field)
+
+        # Save document
+        document.save(outfile)
 ```
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "بريطانيا",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

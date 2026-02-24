@@ -1,96 +1,32 @@
 ---
-title: استخدام التعليقات النصية لملفات PDF عبر بايثون
-linktitle: التعليقات النصية
+title: استخدام التعليقات النصية لملف PDF عبر بايثون
+linktitle: تعليق نصي
 type: docs
 weight: 10
 url: /ar/python-net/text-annotation/
-description: Aspose.PDF لبايثون يتيح لك إضافة، الحصول على، وحذف التعليقات النصية من وثيقة PDF الخاصة بك.
-lastmod: "2023-02-17"
-sitemap:
+description: يتيح لك Aspose.PDF لـ Python إضافة، الحصول على، وحذف التعليقات النصية من ملف PDF الخاص بك.
+lastmod: "2025-02-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true
+AlternativeHeadline: دليل حول كيفية التلاعب بالتعليقات النصية في PDF
+Abstract: توفر هذه المقالة دليلًا شاملاً حول كيفية التلاعب بالتعليقات النصية داخل ملفات PDF باستخدام مكتبة Aspose.PDF لبايثون. تغطي الإضافة، الاسترجاع، والحذف لأنواع مختلفة من التعليقات، بما في ذلك النصية، النص الحر، وتعليقات الشطب. التعليقات النصية هي ملاحظات مرفقة بموقع محدد داخل PDF، تُعرض كأيقونات تُظهر النص في نافذة منبثقة عند فتحها. تعليقات النص الحر تعرض النص مباشرة على الصفحة، بينما تعليقات الشطب تُشير إلى النص بخط لتوضيح أنه يجب إزالته أو تجاهله. العملية تتضمن إضافة التعليقات إلى مجموعة Annotations الخاصة بالصفحة باستخدام طريقة `add()`، وتُقدم أمثلة لكل نوع من التعليقات. تُظهر مقتطفات الشيفرة كيفية تنفيذ هذه المهام، بما في ذلك إنشاء التعليقات بخصائص محددة مثل العنوان، الموضوع، اللون، والعلامات، بالإضافة إلى استرجاع وحذف التعليقات من صفحات PDF. يُعد هذا الدليل مصدرًا عمليًا للمطورين الراغبين في تحسين مستندات PDF من خلال التلاعب بالتعليقات باستخدام Aspose.PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "استخدام التعليقات النصية لملفات PDF عبر بايثون",
-    "alternativeHeadline": "كيفية إضافة التعليقات النصية في PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, python, التعليقات النصية",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/text-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/text-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF لبايثون يتيح لك إضافة، الحصول على، وحذف التعليقات النصية من وثيقة PDF الخاصة بك."
-}
-</script>
-
 
 ## كيفية إضافة تعليق نصي إلى ملف PDF موجود
 
-التعليق النصي هو تعليق مرتبط بموقع محدد في مستند PDF. عند إغلاقه، يظهر التعليق كرمز؛ وعند فتحه، يجب أن يعرض نافذة منبثقة تحتوي على نص الملاحظة بالخط والحجم اللذين يختارهما القارئ.
+التعليق النصي هو تعليق مرفق بموقع محدد في مستند PDF. عندما يكون مغلقًا، يُعرض التعليق كأيقونة؛ وعند الفتح، يجب أن يظهر نافذة منبثقة تحتوي على نص الملاحظة بالخط والحجم الذي يختاره القارئ.
 
-يحتوي [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) على التعليقات الخاصة بصفحة معينة. تحتوي هذه المجموعة على التعليقات لتلك الصفحة الفردية فقط؛ كل صفحة لديها مجموعة التعليقات الخاصة بها.
+التعليقات محصورة في مجموعة [التعليقات](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) لصفحة معينة. تحتوي هذه المجموعة على التعليقات لتلك الصفحة فقط؛ كل صفحة لها مجموعة التعليقات الخاصة بها.
 
-لإضافة تعليق إلى صفحة معينة، أضفه إلى مجموعة التعليقات لتلك الصفحة باستخدام [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods).
+لإضافة تعليق إلى صفحة معينة، أضفه إلى مجموعة التعليقات لتلك الصفحة باستخدام طريقة [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods).
 
-1. أولاً، قم بإنشاء التعليق الذي ترغب في إضافته إلى ملف PDF.
-2. ثم افتح ملف PDF المدخل.
+1. أولاً، أنشئ تعليقًا تريد إضافته إلى ملف PDF.
+1. ثم افتح ملف PDF المدخل.
+1. أضف التعليق إلى مجموعة [التعليقات](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) لكائن 'page'.
 
-1. أضف التعليق إلى مجموعة [التعليقات](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) الخاصة بكائن 'page'.
-
-يظهر لك مقطع الشيفرة التالي كيفية إضافة تعليق في صفحة PDF.
+يظهر مقتطف الشيفرة التالي لك كيفية إضافة تعليق في صفحة PDF.
 
 ```python
 
@@ -111,7 +47,7 @@ sitemap:
     document.save(output_file)
 ```
 
-## احصل على تعليق النص من ملف PDF
+## الحصول على التعليق النصي من ملف PDF
 
 ```python
 
@@ -128,8 +64,7 @@ sitemap:
         print(ta.rect)
 ```
 
-
-## حذف التعليقات النصية من ملف PDF
+## حذف التعليق النصي من ملف PDF
 
 ```python
 
@@ -148,15 +83,16 @@ sitemap:
     document.save(output_file)
 ```
 
-## كيفية إضافة (أو إنشاء) تعليق نصي جديد مجاني
 
-يظهر التعليق النصي المجاني النص مباشرة على الصفحة. تتيح فئة [FreeTextAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) إنشاء هذا النوع من التعليقات. في المقطع التالي، نضيف تعليقًا نصيًا مجانيًا فوق أول ظهور للسلسلة.
+## كيفية إضافة (أو إنشاء) تعليق نص حر جديد
+
+التعليق النص الحر يعرض النص مباشرة على الصفحة. تسمح لك فئة [FreeTextAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) بإنشاء هذا النوع من التعليقات. في المقتطف التالي، نضيف تعليق نص حر فوق أول ظهور للسلسلة.
 
 ```python
 
     import aspose.pdf as ap
 
-    # تحميل ملف PDF
+    # Load the PDF file
     document = ap.Document(input_file)
 
     freeTextAnnotation = ap.annotations.FreeTextAnnotation(
@@ -169,8 +105,7 @@ sitemap:
     document.save(output_file)
 ```
 
-
-## احصل على تعليق نصي مجاني من ملف PDF
+## الحصول على التعليق النص الحر من ملف PDF
 
 ```python
 
@@ -187,13 +122,13 @@ sitemap:
         print(fa.rect)
 ```
 
-## حذف تعليق نصي مجاني من ملف PDF
+## حذف التعليق النص الحر من ملف PDF
 
 ```python
 
     import aspose.pdf as ap
 
-    # تحميل ملف PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     freeTextAnnotations = [
         a
@@ -207,12 +142,12 @@ sitemap:
     document.save(output_file)
 ```
 
+
 ### شطب الكلمات باستخدام StrikeOutAnnotation
 
-Aspose.PDF لـ Python يتيح لك إضافة وحذف وتحديث التعليقات التوضيحية في مستندات PDF.
- إحدى الفئات تسمح لك بشطب التعليقات التوضيحية أيضًا. عندما يتم تطبيق تعليق توضيحي مشطوب على ملف PDF، يتم رسم خط عبر النص المحدد، مما يشير إلى أنه يجب إزالته أو تجاهله.
+يتيح لك Aspose.PDF لـ Python إضافة، حذف وتحديث التعليقات في مستندات PDF. إحدى الفئات تسمح لك أيضًا بشطب التعليقات. عندما يتم تطبيق StrikeOutAnnotation على PDF، يُرسم خط عبر النص المحدد، للدلالة على أنه يجب إزالته أو تجاهله.
 
-يظهر مقتطف الشيفرة التالي كيفية إضافة [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) إلى PDF.
+يُظهر مقتطف الشيفرة التالي كيفية إضافة [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) إلى PDF.
 
 ```python
 
@@ -232,6 +167,7 @@ Aspose.PDF لـ Python يتيح لك إضافة وحذف وتحديث التعل
     document.save(output_file)
 ```
 
+
 ## الحصول على StrikeOutAnnotation من PDF
 
 ```python
@@ -249,7 +185,7 @@ Aspose.PDF لـ Python يتيح لك إضافة وحذف وتحديث التعل
         print(pa.rect)
 ```
 
-## حذف تعليق StrikeOutAnnotation من ملف PDF
+## حذف StrikeOutAnnotation من PDF
 
 ```python
 
@@ -269,66 +205,4 @@ Aspose.PDF لـ Python يتيح لك إضافة وحذف وتحديث التعل
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

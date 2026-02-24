@@ -64,6 +64,10 @@ The PDF standard provides the ability to highlight parts of text in a document. 
 7. Print or otherwise handle the returned text.
 
 ```python
+
+import os
+import aspose.pdf as ap
+
 def extract_highlight_text(infile):
     """
     Extract text from highlight annotations.
