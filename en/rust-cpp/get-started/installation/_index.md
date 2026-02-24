@@ -31,32 +31,38 @@ This package includes a large file which is stored as a bzip2 archive.
    - `M` = month number from `1` to `12`
 
 2. **Extract** the archive to your chosen directory `{path}` using a suitable tool:
+
    - On Linux/macOS:
+
      ```bash
      unzip Aspose.PDF-for-Rust-via-CPP-YY.M.zip -d {path}
      ```
+
    - On Windows, use built-in Explorer extraction or any unzip tool (7-Zip, WinRAR).
 
 3. **Add** the library as a dependency in your Rust project. You can do this in two ways:
 
    - **Using the command line:**
+
      ```bash
      cargo add asposepdf --path {path}/asposepdf
      ```
 
    - **Manually editing `Cargo.toml`:**
      Open your project's `Cargo.toml` and add the following under `[dependencies]`:
+
      ```toml
      [dependencies]
      asposepdf = { path = "{path}/asposepdf" }
      ```
 
-4. **Build** your project (`cargo build`). On the first build, the dynamic library for your platform will be unpacked automatically from the `.bz2` archive in the `lib` folder. This may cause a short delay.
+4. **Build your project** (`cargo build`). On the first build, the appropriate dynamic library for your platform will be automatically extracted from the `.bz2` archive in the `lib` folder and linked to your project.
 
-> **Notes**
-> - The `lib` folder contains all platform-specific `.bz2` archives with corresponding `.sha256` checksum files.
-> - If the checksum file is missing or invalid, the build will fail.
-> - Update the library by replacing the extracted files with a newer archive version.
+**Notes**
+
+- The build script attempts to create a **symbolic link** to the library in your output directory (e.g., `target/debug/`).
+- For **Linux and macOS**, you must also follow the [Runtime Configuration](#runtime-configuration) section below to ensure the executable can find the library at runtime.
+- All `.bz2` archives have corresponding `.sha256` checksum files. If a checksum is missing or invalid, the build will fail.
 
 ### Installation from GitHub
 
@@ -64,109 +70,117 @@ This package includes precompiled native libraries (`.dll`, `.so`, `.dylib`) whi
 
 1. **Add** the library as a dependency in your Rust project. You can do this in two ways:
 
-- **Using the command line:**
+   - **Using the command line:**
 
-```bash
-cargo add asposepdf --git https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git
-```
+     ```bash
+     cargo add asposepdf --git https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git
+     ```
 
-- **Manually editing `Cargo.toml`:**
+   - **Manually editing `Cargo.toml`:**
 
-Open your project's `Cargo.toml` and add the following under `[dependencies]`:
+     Open your project's `Cargo.toml` and add the following under `[dependencies]`:
 
-```toml
-[dependencies]
-asposepdf = { git = "https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git" }
-```
+     ```toml
+     [dependencies]
+     asposepdf = { git = "https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git" }
+     ```
 
-**Note:** To use a specific release version, you can specify a tag:
-  
-```toml
-asposepdf = { git = "https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", tag = "v1.25.7" }
-```
+    > **Note:** To use a specific release version, you can specify a tag:
+    >
+    > ```toml
+    > asposepdf = { git = "https://github.com/aspose-pdf/aspose-pdf-rust-cpp.git", tag = "v1.26.1" }
+    > ```
 
-2. **Build** your project (`cargo build`). On the first build, the appropriate dynamic library for your platform will be automatically unpacked from the `.bz2` archive in the `lib` folder. This may cause a short delay.
+2. **Build your project** (`cargo build`). On the first build, the appropriate dynamic library for your platform will be automatically extracted from the `.bz2` archive in the `lib` folder and linked to your project.
 
 **Notes**
 
-- You do not need to manually download or extract any files — everything is included in the GitHub repository.
+- You do not need to manually download or extract any files - everything is included in the GitHub repository.
+- The build script attempts to create a **symbolic link** to the library in your output directory (e.g., `target/debug/`).
+- For **Linux and macOS**, you must also follow the [Runtime Configuration](#runtime-configuration) section below to ensure the executable can find the library at runtime.
 - All `.bz2` archives have matching `.sha256` checksum files. The checksum is verified before unpacking.
 - If the checksum verification fails or the archive is missing, the build will fail with a detailed error.
-- The build script links the appropriate native library and ensures runtime availability using platform-specific options.
 
 ### Installation from crates.io
 
-This package is available on [crates.io](https://crates.io/crates/asposepdf) and includes a build script that automatically extracts the required native library (`.dll`, `.so`, or `.dylib`) from a compressed `.bz2` archive during the build process.
+This package is available on [crates.io](https://crates.io/crates/asposepdf). 
+Due to size limitations, the published crate does not include the native binary libraries (`.dll`, `.so`, or `.dylib`).
+You can obtain the required native libraries either from the official distribution archive (see [Installation from Aspose website](#installation-from-aspose-website)) or from the GitHub repository (see [Installation from GitHub](#installation-from-github)).
+The build script will locate, verify, and extract the appropriate native library from a compressed .bz2 archive during the build process.
 
 1. **Add** the library as a dependency in your Rust project. You can do this in two ways:
 
-- **Using the command line:**
+   - **Using the command line:**
 
-```bash
-cargo add asposepdf
-```
+     ```bash
+     cargo add asposepdf
+     ```
 
-- **Manually editing `Cargo.toml`:**
+   - **Manually editing `Cargo.toml`:**
 
-Open your project's `Cargo.toml` and add the following under `[dependencies]`:
+     Open your project's `Cargo.toml` and add the following under `[dependencies]`:
 
-```toml
-[dependencies]
-asposepdf = "1.25.7"
-```
-
-**Note:** The crates.io package requires you to provide the native dynamic libraries yourself (the .dll, .so, .dylib files).
+     ```toml
+     [dependencies]
+     asposepdf = "1.26.1"
+     ```
 
 2. **Set the path** to the directory containing the native libraries and download the required files:
 
-- **Set the environment variable `ASPOSE_PDF_LIB_DIR`** to point to the folder where you will place the native `.bz2` archives, their `.sha256` checksum files, and the extracted native libraries (`.dll`, `.so`, `.dylib`, and for Windows also `.lib`):
+   - **Set the environment variable `ASPOSE_PDF_LIB_DIR`** to point to the folder where you will place the native `.bz2` archives, their `.sha256` checksum files, and the extracted native libraries (`.dll`, `.so`, `.dylib`, and for Windows also `.lib`):
 
-- On Linux/macOS:
+     - On Linux/macOS:
 
-```bash
-export ASPOSE_PDF_LIB_DIR=/path/to/lib
-```
+       ```bash
+       export ASPOSE_PDF_LIB_DIR=/path/to/lib
+       ```
 
-- On Windows (Command Prompt):
+     - On Windows (Command Prompt):
 
-```cmd
-set ASPOSE_PDF_LIB_DIR=C:\path\to\lib
-```
+       ```cmd
+       set ASPOSE_PDF_LIB_DIR=C:\path\to\lib
+       ```
 
-- On Windows (PowerShell):
+     - On Windows (PowerShell):
+     
+       ```powershell
+       $env:ASPOSE_PDF_LIB_DIR = "C:\path\to\lib"
+       ```
 
-```powershell
-$env:ASPOSE_PDF_LIB_DIR = "C:\path\to\lib"
-```
+**Note on ASPOSE_PDF_LIB_DIR**
 
-- **Download the required `.bz2` archives** and checksum files from the GitHub repository's [`lib/` folder](https://github.com/aspose-pdf/aspose-pdf-rust-cpp/tree/main/lib) and **place them** into the folder set in `ASPOSE_PDF_LIB_DIR`:
+The `ASPOSE_PDF_LIB_DIR` environment variable defines the working directory for the build script. It is used **only during compilation** to locate, verify, and extract the native library archives. Setting this variable does **not** automatically add the directory to your system's runtime library search path (see [Runtime Configuration](#runtime-configuration)).
 
-- For **Linux x64**, download:
-- `libAsposePDFforRust_linux_amd64.so.bz2`
-- `libAsposePDFforRust_linux_amd64.so.bz2.sha256`
+  - **Download the required `.bz2` archives** and checksum files from the GitHub repository's [`lib/` folder](https://github.com/aspose-pdf/aspose-pdf-rust-cpp/tree/main/lib) and **place them** into the folder set in `ASPOSE_PDF_LIB_DIR`:
 
-- For **macOS x86_64**, download:
-- `libAsposePDFforRust_darwin_amd64.dylib.bz2`
-- `libAsposePDFforRust_darwin_amd64.dylib.bz2.sha256`
+  - For **Linux x64**, download:
+    - `libAsposePDFforRust_linux_amd64.so.bz2`
+    - `libAsposePDFforRust_linux_amd64.so.bz2.sha256`
 
-- For **macOS arm64**, download:
-- `libAsposePDFforRust_darwin_arm64.dylib.bz2`
-- `libAsposePDFforRust_darwin_arm64.dylib.bz2.sha256`
+  - For **macOS x86_64**, download:
+    - `libAsposePDFforRust_darwin_amd64.dylib.bz2`
+    - `libAsposePDFforRust_darwin_amd64.dylib.bz2.sha256`
 
-- For **Windows x64**, download:
-- `AsposePDFforRust_windows_amd64.dll.bz2`
-- `AsposePDFforRust_windows_amd64.dll.bz2.sha256`
-- `AsposePDFforRust_windows_amd64.lib` (native import library, not compressed)
+  - For **macOS arm64**, download:
+    - `libAsposePDFforRust_darwin_arm64.dylib.bz2`
+    - `libAsposePDFforRust_darwin_arm64.dylib.bz2.sha256`
 
-**Note:**
+  - For **Windows x64**, download:
+    - `AsposePDFforRust_windows_amd64.dll.bz2`
+    - `AsposePDFforRust_windows_amd64.dll.bz2.sha256`
+    - `AsposePDFforRust_windows_amd64.lib` (native import library, not compressed)
 
-You need to manually download these files from GitHub and place them into the directory pointed by `ASPOSE_PDF_LIB_DIR`.  
+**Note:** You need to manually download these files from GitHub and place them into the directory pointed by `ASPOSE_PDF_LIB_DIR`.  
 The build script will automatically unpack the native libraries from the `.bz2` archives on first build.
 
-3. **Build** your project (`cargo build`). On the first build, the native library matching your platform will be automatically extracted and linked. This step may take a few seconds.
+3. **Build** your project (`cargo build`). On the first build, the native library matching your platform will be automatically extracted from the `.bz2` archive and linked to your project.
+
+**Important:** For **Linux and macOS**, you must also follow the [Runtime Configuration](#runtime-configuration) section below to ensure the executable can find the library at runtime.
 
 **Notes**
 
+- The `ASPOSE_PDF_LIB_DIR` variable is used **only during the build process** to locate and extract the archives.
+- The build script attempts to create a **symbolic link** to the extracted library in your output directory (e.g., `target/debug/`).
 - You must provide the folder containing the `.bz2` and `.sha256` files separately, as these binary archives are not distributed via crates.io.
 - If the required archive is missing or the checksum fails, the build will fail with a detailed error.
 - The same binary files used for installation via GitHub or the Aspose website can be reused here.
