@@ -1,85 +1,24 @@
 ---
-title: Pythonを使用してPDFのブックマークを操作する
+title: Python を使用した PDF のブックマーク操作
 linktitle: ブックマーク
 type: docs
 weight: 30
 url: /ja/python-net/bookmarks/
-description: このセクションでは、Aspose.PDF for Python via .NETを使用してブックマークを追加、削除、および取得する方法を説明します。
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: このセクションでは、.NET 経由で Python 用 Aspose.PDF を使用してブックマークを追加、削除、取得する方法を説明します。
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用した PDF のブックマークの操作方法
+Abstract: この記事では、PDF 文書におけるブックマークの重要性と有用性について論じます。ブックマークは、PDF ファイルの効率的なナビゲーション、整理、構造化を可能にし、ユーザー体験を向上させ、アクセスしやすくします。ブックマークはインタラクティブなリンクとして機能し、目次のように特定のセクションやページへ迅速に移動できます。この記事では、ブックマークの追加、削除、取得、更新、展開方法など、ブックマークの管理に関するガイドを提供し、ユーザーが PDF コンテンツを効果的に管理・閲覧できるよう支援します。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonを使用してPDFのブックマークを操作する",
-    "alternativeHeadline": "PDFにブックマークを追加する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, bookmarks in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/bookmarks/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/bookmarks/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "このセクションでは、Aspose.PDF for Python via .NETを使用してブックマークを追加、削除、および取得する方法を説明します。"
-}
-</script>
 
+PDF のブックマークは便利な機能です。これにより、文書内のナビゲーションを設定し、PDF ファイルを整理・構造化し、よりアクセスしやすくすることができます。ブックマークは文書内のインタラクティブなリンクとして機能し、ユーザーが特定のセクションやページへ迅速に移動できるようにします。
 
-PDFのブックマークを使用することは非常に便利な機能です。ブックマークを使用すると、ドキュメントのナビゲーションを設定し、PDFファイルを整理および構造化し、そのようなファイルをよりアクセスしやすくすることができます。ブックマークはドキュメント内のインタラクティブなリンクとして機能し、ユーザーが特定のセクションやページにすばやく移動することを可能にします。
+PDF ブックマークは、PDF ファイルを閲覧する際に便利で不可欠なツールです。ユーザーはブックマークを使って PDF 文書内の別の場所へ素早くジャンプし、ページ間をナビゲートし、目次のように PDF の内容を迅速に確認できます。
+このセクションでは、以下を学びます：
 
-PDFブックマークは、PDFファイルを読む際に便利で不可欠なツールです。ユーザーはPDFドキュメント内の他の場所にすばやくジャンプし、ページをナビゲートし、PDFの内容を目次のようにすばやく見ることができます。このセクションでは、以下を学びます。
+- [ブックマークの追加と削除](/pdf/python-net/add-and-delete-bookmark/)
+- [ブックマークの取得、更新、展開](/pdf/python-net/get-update-and-expand-bookmark/)
 
-- [ブックマークを追加および削除する](/pdf/ja/python-net/add-and-delete-bookmark/)
-- [ブックマークを取得、更新、および展開する](/pdf/ja/python-net/get-update-and-expand-bookmark/)

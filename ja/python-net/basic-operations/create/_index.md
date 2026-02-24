@@ -1,36 +1,41 @@
 ---
-title: プログラムでPDFドキュメントを作成する
+title: PDF文書をプログラムで作成する
 linktitle: PDFを作成
 type: docs
 weight: 10
 url: /ja/python-net/create-document/
-description: このページでは、Aspose.PDF for Python via .NETライブラリを使用して、PDFドキュメントをゼロから作成する方法を説明します。
+description: このページでは、Aspose.PDF for Python via .NET ライブラリを使用して、最初から PDF 文書を作成する方法について説明します。
+TechArticle: true
+AlternativeHeadline: Aspose.PDF for Python を使用した PDF ファイルの生成
+Abstract: ソフトウェア開発において、PDF ファイルをプログラムで生成することは一般的な要件であり、特にレポートやその他の文書を作成する際に必要となります。このタスクのためにカスタムコードを書くことは、非効率で時間がかかります。代わりに、開発者は **Aspose.PDF for Python via .NET** を利用でき、Python で PDF ファイルを作成するための堅牢なソリューションです。プロセスは、`Document` オブジェクトを作成し、`Pages` コレクションに `Page` オブジェクトを追加し、ページの `paragraphs` コレクションに `TextFragment` を挿入し、最後に文書を保存することです。サンプルの Python コードスニペットはこれらの手順を示し、Aspose.PDF を使用して PDF ファイルを容易に生成できることを実証します。
 ---
 
-開発者にとって、プログラムでPDFファイルを生成する必要があるシナリオは多く存在します。あなたのソフトウェアでPDFレポートやその他のPDFファイルをプログラムで生成する必要があるかもしれません。一から自分のコードや関数を書くのは非常に長く非効率的です。PythonでPDFファイルを作成するには、より良い解決策があります - **Aspose.PDF for Python via .NET**です。
+開発者にとって、プログラムで PDF ファイルを生成する必要が生じるシナリオは多数あります。ソフトウェア内で PDF レポートやその他の PDF ファイルをプログラムで生成する必要があるかもしれません。最初から自分でコードや関数を作成するのは非常に手間がかかり、非効率です。Python で PDF ファイルを作成するには、より優れたソリューションがあります - **Aspose.PDF for Python via .NET**。
 
-## Pythonを使用してPDFファイルを作成する方法
+## Python を使用して PDF ファイルを作成する方法
 
-Pythonを使用してPDFファイルを作成するには、次の手順を使用できます。
+Python を使用して PDF ファイルを作成するには、以下の手順を使用できます。
 
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスのオブジェクトを作成します。
-
-1. [ページ](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) オブジェクトを Document オブジェクトの [Pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) コレクションに追加します
-1. [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) をページの [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) コレクションに追加します
-1. 結果として得られる PDF ドキュメントを保存します
+1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスのオブジェクトを作成する
+1. Document オブジェクトの [Pages](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) コレクションに [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) オブジェクトを追加する
+1. ページの [paragraphs](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) コレクションに [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) を追加する
+1. 結果の PDF 文書を保存する
 
 ```python
 
     import aspose.pdf as ap
 
-    # ドキュメントオブジェクトを初期化
+    # Initialize document object
     document = ap.Document()
-    # ページを追加
+    # Add page
     page = document.pages.add()
-    # テキストフラグメントオブジェクトを初期化
+    # Initialize textfragment object
     text_fragment = ap.text.TextFragment("Hello,world!")
-    # 新しいページにテキストフラグメントを追加
+    # Add text fragment to new page
     page.paragraphs.add(text_fragment)
-    # 更新されたPDFを保存
+    # Save updated PDF
     document.save("output.pdf")
 ```
+
+
+

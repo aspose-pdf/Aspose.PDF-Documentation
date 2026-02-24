@@ -1,98 +1,50 @@
 ---
-title: AcroFormを埋める - Pythonを使用してPDFフォームを埋める
-linktitle: AcroFormを埋める
+title: Fill AcroForm - Fill PDF Form using Python
+linktitle: Fill AcroForm
 type: docs
 weight: 20
 url: /ja/python-net/fill-form/
-description: Aspose.PDF for Pythonライブラリを使用して、PDFドキュメント内のフォームに記入できます。
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF for Python ライブラリを使用して、PDF ドキュメントのフォームに入力できます。
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF のフォームフィールドに入力する方法
+Abstract: この記事では、Aspose.PDF ライブラリ for Python を使用して PDF ドキュメントのフォームフィールドに入力する方法を案内します。ドキュメントのフォーム コレクションからフォームフィールドにアクセスし、フィールドの value プロパティを介してその値を設定する手順を説明しています。サンプルコードは、PDF ドキュメントを開き、フォームフィールドを反復処理して特定のフィールド（この例では "Field 1"）を部分名で検索し、TextBoxField の値を "777" に変更する方法を示しています。最後に、更新されたドキュメントを出力ファイルに保存します。さらに参考になるよう、関連する Aspose のドキュメントへのリンクも提供しています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "AcroFormを埋める",
-    "alternativeHeadline": "PDFでAcroFormを埋める方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdfドキュメント生成",
-    "keywords": "pdf, python, acroformを埋める",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/fill-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/fill-form/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for Pythonライブラリを使用して、PDFドキュメント内のフォームに記入できます。"
-}
-</script>
-
 
 ## PDF ドキュメントのフォームフィールドに入力する
 
-フォームフィールドに入力するには、Document オブジェクトの [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) コレクションからフィールドを取得します。次に、フィールドの [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#properties) プロパティを使用してフィールド値を設定します。
-
-この例では、[TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) を選択し、Value プロパティを使用してその値を設定します。
+次の例では、Aspose.PDF for Python を .NET 経由で使用して PDF フォームフィールドに新しい値を入力し、更新されたドキュメントを保存します。フィールド名と値の辞書を指定することで、複数のフィールドの更新をサポートします。
 
 ```python
 
     import aspose.pdf as ap
 
-    # ドキュメントを開く
-    pdfDocument = ap.Document(input_file)
-    for formField in pdfDocument.form.fields:
-        if formField.partial_name == "Field 1":
-            # フィールド値を変更
-            formField.value = "777"
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
 
-    # 更新されたドキュメントを保存
-    pdfDocument.save(output_pdf)
+    # Define the new field values
+    new_field_values = {
+        "First Name": "Alexander_New",
+        "Last Name": "Greenfield_New",
+        "City": "Yellowtown_New",
+        "Country": "Redland_New"
+    }
+
+    # Create a Form object from the input PDF file
+    form = ap.facades.Form(path_infile)
+
+    # Fill out the form fields with the new values
+    for formField in form.field_names:
+        if formField in new_field_values:
+            form.fill_field(formField, new_field_values[formField])
+
+    # Save the modified form to the output PDF file
+    form.save(path_outfile)
+```
+
+
+

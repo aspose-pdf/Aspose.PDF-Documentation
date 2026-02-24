@@ -1,205 +1,143 @@
 ---
-title: Pythonを使用してブックマークを追加および削除する
-linktitle: ブックマークを追加および削除する
+title: Python を使用したブックマークの追加と削除
+linktitle: ブックマークの追加と削除
 type: docs
 weight: 10
 url: /ja/python-net/add-and-delete-bookmark/
-description: Pythonを使用してPDFドキュメントにブックマークを追加できます。PDFドキュメントからすべてまたは特定のブックマークを削除することができます。
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Python を使用して PDF ドキュメントにブックマークを追加できます。PDF ドキュメントからすべてのブックマークまたは特定のブックマークを削除することも可能です。
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用してブックマークを追加および削除する方法
+Abstract: 本記事では、Python 用 Aspose.PDF ライブラリを使用して PDF ドキュメントのブックマークを管理するための包括的な手順を提供します。PDF 内でブックマークを追加、変更、削除するプロセスについて概説しています。まず、`OutlineItemCollection` オブジェクトを作成し、ドキュメントの `OutlineCollection` に追加することでブックマークを追加する手順を紹介します。親ブックマークと子ブックマークの作成と追加を示すコード例が含まれ、階層関係を強調しています。さらに、すべてのブックマークまたはタイトルで特定のブックマークを削除する方法も取り上げています。各セクションには操作を示す Python のコードスニペットが含まれており、読者が PDF 操作タスクで記述された機能を容易に実装できるようになっています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "ブックマークを追加および削除する",
-    "alternativeHeadline": "PDFからブックマークを追加および削除する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, ブックマークを削除, ブックマークを追加",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-and-delete-bookmark/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-and-delete-bookmark/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Pythonを使用してPDFドキュメントにブックマークを追加できます。PDFドキュメントからすべてまたは特定のブックマークを削除することができます。"
-}
-</script>
 
+## PDF ドキュメントにブックマークを追加する
 
-## PDFドキュメントにブックマークを追加する
+ブックマークは Document オブジェクトの [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) コレクションに格納され、さらに [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションの中にあります。
 
-ブックマークは、[OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/)コレクション内のDocumentオブジェクトに保持されており、[OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/)コレクションにも含まれています。
+PDF にブックマークを追加するには:
 
-PDFにブックマークを追加するには:
+1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトを使用して PDF ドキュメントを開きます。
+1. ブックマークを作成し、プロパティを定義します。
+1. [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) コレクションを Outlines コレクションに追加します。
 
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)オブジェクトを使用してPDFドキュメントを開きます。
-2. ブックマークを作成し、そのプロパティを定義します。
-3. [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/)コレクションをアウトラインコレクションに追加します。
-
-以下のコードスニペットは、PDFドキュメントにブックマークを追加する方法を示しています。
+以下のコードスニペットは、PDF ドキュメントにブックマークを追加する方法を示しています。
 
 ```python
 
     import aspose.pdf as ap
 
-    # ドキュメントを開く
+    # Open document
     document = ap.Document(input_pdf)
 
-    # ブックマークオブジェクトを作成
+    # Create a bookmark object
     outline = ap.OutlineItemCollection(document.outlines)
-    outline.title = "テストブックマーク"
+    outline.title = "Test Bookmark"
     outline.italic = True
     outline.bold = True
-    # 移動先のページ番号を設定
+    # Set the destination page number
     outline.action = ap.annotations.GoToAction(document.pages[1])
-    # ドキュメントのアウトラインコレクションにブックマークを追加
+    # Add bookmark in the document's outline collection.
     document.outlines.append(outline)
 
-    # 出力を保存
+    # Save output
     document.save(output_pdf)
 ```
 
+## PDF ドキュメントに子ブックマークを追加する
 
-## PDFドキュメントに子ブックマークを追加する
+ブックマークは入れ子にでき、親ブックマークと子ブックマークの階層関係を示します。本記事では、子ブックマーク、すなわち第 2 レベルのブックマークを PDF に追加する方法を説明します。
 
-ブックマークは入れ子にでき、親ブックマークと子ブックマークの階層関係を示します。この記事では、PDFに子ブックマーク、つまり第2レベルのブックマークを追加する方法を説明します。
+PDF ファイルに子ブックマークを追加するには、まず親ブックマークを追加します。
 
-PDFファイルに子ブックマークを追加するには、まず親ブックマークを追加します。
+1. ドキュメントを開きます。
+1. [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) にブックマークを追加し、プロパティを定義します。
+1. Document オブジェクトの [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションに OutlineItemCollection を追加します。
 
-1. ドキュメントを開く。
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) にブックマークを追加し、そのプロパティを定義する。
-1. Documentオブジェクトの [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションに OutlineItemCollection を追加する。
+子ブックマークは上記で説明した親ブックマークと同様に作成されますが、親ブックマークの Outlines コレクションに追加されます。
 
-子ブックマークは上記で説明した親ブックマークと同様に作成されますが、親ブックマークのアウトラインコレクションに追加されます。
-
-以下のコードスニペットは、PDFドキュメントに子ブックマークを追加する方法を示しています。
+以下のコードスニペットは、PDF ドキュメントに子ブックマークを追加する方法を示しています。
 
 ```python
 
     import aspose.pdf as ap
 
-    # ドキュメントを開く
+    # Open document
     document = ap.Document(input_pdf)
 
-    # 親ブックマークオブジェクトを作成する
+    # Create a parent bookmark object
     outline = ap.OutlineItemCollection(document.outlines)
     outline.title = "Parent Outline"
     outline.italic = True
     outline.bold = True
 
-    # 子ブックマークオブジェクトを作成する
+    # Create a child bookmark object
     childOutline = ap.OutlineItemCollection(document.outlines)
     childOutline.title = "Child Outline"
     childOutline.italic = True
     childOutline.bold = True
 
-    # 親ブックマークのコレクションに子ブックマークを追加する
+    # Add child bookmark in parent bookmark's collection
     outline.append(childOutline)
-    # ドキュメントのアウトラインコレクションに親ブックマークを追加する。
+    # Add parent bookmark in the document's outline collection.
     document.outlines.append(outline)
 
-    # 出力を保存する
+    # Save output
     document.save(output_pdf)
 ```
 
+## PDF ドキュメントからすべてのブックマークを削除する
 
-## PDFドキュメントからすべてのブックマークを削除
+PDF のすべてのブックマークは [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションに格納されています。本記事では、PDF ファイルからすべてのブックマークを削除する方法を説明します。
 
-PDF内のすべてのブックマークは、[OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションに保持されています。この記事では、PDFファイルからすべてのブックマークを削除する方法を説明します。
-
-PDFファイルからすべてのブックマークを削除するには:
+PDF ファイルからすべてのブックマークを削除するには:
 
 1. [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションの Delete メソッドを呼び出します。
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトの [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドを使用して、変更されたファイルを保存します。
+1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトの [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) メソッドを使用して変更されたファイルを保存します。
 
-次のコードスニペットは、PDFドキュメントからすべてのブックマークを削除する方法を示しています。
+以下のコードスニペットは、PDF ドキュメントからすべてのブックマークを削除する方法を示しています。
 
 ```python
 
     import aspose.pdf as ap
 
-    # ドキュメントを開く
+    # Open document
     document = ap.Document(input_pdf)
 
-    # すべてのブックマークを削除
+    # Delete all bookmarks
     document.outlines.delete()
 
-    # 更新されたファイルを保存
+    # Save updated file
     document.save(output_pdf)
 
 ```
 
-## PDFドキュメントから特定のブックマークを削除
+## PDF ドキュメントから特定のブックマークを削除する
 
-PDFファイルから特定のブックマークを削除するには:
+PDF ファイルから特定のブックマークを削除するには:
 
-1. ブックマークのタイトルをパラメータとして[OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/)コレクションのDeleteメソッドに渡します。
-1. その後、更新されたファイルをDocumentオブジェクトのSaveメソッドで保存します。
+1. ブックマークのタイトルをパラメータとして [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションの Delete メソッドに渡します。
+1. 次に、Document オブジェクトの Save メソッドで更新されたファイルを保存します。
 
-[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)クラスは[OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/)コレクションを提供します。[delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/#methods)メソッドは、メソッドに渡されたタイトルのブックマークを削除します。
+[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスは [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) コレクションを提供します。[delete()](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/#methods) メソッドは、メソッドに渡されたタイトルを持つブックマークをすべて削除します。
 
-次のコードスニペットは、PDFドキュメントから特定のブックマークを削除する方法を示しています。
+以下のコードスニペットは、PDF ドキュメントから特定のブックマークを削除する方法を示しています。
 
 ```python
 
     import aspose.pdf as ap
 
-    # ドキュメントを開く
+    # Open document
     document = ap.Document(input_pdf)
 
-    # タイトルで特定のアウトラインを削除
+    # Delete particular outline by Title
     document.outlines.delete("Child Outline")
 
-    # 更新されたファイルを保存
+    # Save updated file
     document.save(output_pdf)
+```
+
+

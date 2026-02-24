@@ -1,152 +1,26 @@
 ---
-title: PDFでのテーブル操作をPythonで行う
+title: Python を使用した PDF のテーブル操作
 linktitle: テーブル操作
 type: docs
 weight: 50
 url: /ja/python-net/working-with-tables/
-description: このセクションでは、Pythonライブラリを使用してテーブルを追加および抽出する方法、テーブルを操作および統合する方法について説明します。
-lastmod: "2023-09-17"
-sitemap:
-    changefreq: "weekly"
+description: このセクションでは、Python ライブラリを使用してテーブルを追加および抽出し、テーブルを操作する方法について説明します。
+lastmod: "2025-09-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用した PDF のテーブル操作方法
+Abstract: Aspose.PDF for Python via .NET は、PDF ファイル内のテーブル処理を強化するために設計された多目的ツールです。このライブラリを使用すると、PDF からテーブルを抽出したり、既存の文書にテーブルを作成・追加したり、ページ上でのテーブルの改ページを判定したり、PDF からテーブルを削除したりできます。主な機能として、境界線、余白、パディングなどの要素を管理しながらテーブルを作成・追加する機能や、TableAbsorber 機能を使用したテーブルの抽出・操作があります。また、このツールは PDF 文書から1つまたは複数のテーブルを削除する機能も提供し、PDF におけるテーブル データの包括的な管理を実現します。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDFでのテーブル操作をPythonで行う",
-    "alternativeHeadline": "テーブル操作",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, tables in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-tables/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-tables/"
-    },
-    "dateModified": "2023-09-04",
-    "description": "この記事では、Pythonライブラリを使用してテーブルを追加および抽出する方法、テーブルを操作および統合する方法について説明します。"
-}
-</script>
 
+**Aspose.PDF for Python via .NET** は、PDF ファイル内のテーブルを高度に操作できるようにします。この完璧なツールは、テーブルを抽出することで PDF のシンプルさに立ち向かうのに役立ちます。Python ライブラリを使用すれば、既存の PDF ドキュメントにテーブルを簡単に作成・追加したり、現在のページでテーブルが改ページするかどうかを判定したり、テーブルを抽出したり、既存の PDF からテーブルを削除したりできます。
 
-**Aspose.PDF for Python via .NET**は、PDFファイル内のテーブルを高度に操作することを可能にします。この完璧なツールは、PDFのシンプルさを克服し、テーブルを抽出するのに役立ちます。Pythonライブラリリソースを使用すると、既存のPDFドキュメントにテーブルを簡単に作成または追加したり、テーブルが現在のページで分割されるかどうかを判断したり、テーブルを抽出したり、既存のPDFからテーブルを削除したりすることができます。
+以下のことができます：
 
-以下のことが可能です：
+- [テーブルの追加](/pdf/python-net/adding-tables/) - 列や行を結合し、境界線、余白、パディングを考慮して PDF ファイルにテーブルを作成します。
+- [テーブルの抽出](/pdf/python-net/extracting-table/) - PDF ファイルからテーブルを抽出できます。
+- [データソースとのテーブル統合](/pdf/python-net/integrate-table/) - データベースや Python ライブラリを使用した Pandas DataFrame ソースとテーブルを統合できます。
+- [テーブルの削除](/pdf/python-net/removing-tables/) - PDF 文書からテーブルまたは複数のテーブルを削除します。
+- [既存の PDF のテーブル操作](/pdf/python-net/manipulating-tables/) - TableAbsorber を使用して PDF のテーブルを操作します。
 
-- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/ja/python-net/add-table-in-existing-pdf-document/) - 境界線、余白、およびパディングを考慮して、列や行を結合してPDFファイルにテーブルを作成します。
-- [既存のPDFドキュメントからテーブルを抽出する](/pdf/ja/python-net/extract-table-from-existing-pdf-document/) - PDFファイルからテーブルを抽出することができます。
-- [既存のPDFのテーブルを操作する](/pdf/ja/python-net/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内のテーブルを操作します。
-
-- [既存のPDFからテーブルを削除する](/pdf/ja/python-net/remove-tables-from-existing-pdf/) - PDFドキュメントからテーブルまたは複数のテーブルを削除します。
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python用PDF操作ライブラリ",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

@@ -1,164 +1,47 @@
 ---
-title: AcroFormを抽出 - PythonでPDFからフォームデータを抽出
-linktitle: AcroFormを抽出
+title: AcroFormの抽出 - PythonでPDFのフォームデータを抽出
+linktitle: AcroFormの抽出
 type: docs
 weight: 30
 url: /ja/python-net/extract-form/
-description: Aspose.PDF for Pythonライブラリを使用して、PDFドキュメントからフォームを抽出します。PDFファイルの個々のフィールドから値を取得します。
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF for Python ライブラリを使用して PDF ドキュメントからフォームを抽出します。PDF ファイルの個々のフィールドから値を取得します。
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Pythonを使用してPDFからフォームデータを取得する方法
+Abstract: この記事では、Python を使用して PDF ドキュメント内のフォーム フィールドからデータを抽出する方法を案内します。Aspose.PDF ライブラリを使用してすべてのフィールドをナビゲートする方法を説明し、特に `Form` コレクションにアクセスし、`Field` タイプとその `value` プロパティを利用する方法を示します。サンプルの Python コードスニペットが含まれており、PDF ドキュメントを開き、フォームフィールドを反復処理し、各フィールドの名前と値を出力する方法をデモンストレーションしています。この手法は、PDF ファイルからプログラムでフォームデータを取得する際に便利です。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "AcroFormを抽出",
-    "alternativeHeadline": "PythonでPDFからAcroFormを抽出する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, acroformを抽出",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/@AsposePDF",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-form/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for Pythonライブラリを使用して、PDFドキュメントからフォームを抽出します。PDFファイルの個々のフィールドから値を取得します。"
-}
-</script>
 
+## フォームからデータを抽出
 
-## フォームからデータを抽出する
+### PDF ドキュメントのすべてのフィールドから値を取得
 
-### PDFドキュメントのすべてのフィールドから値を取得する
+PDF ドキュメントのすべてのフィールドから値を取得するには、すべてのフォームフィールドをナビゲートし、Value プロパティを使用して値を取得する必要があります。Form コレクションから各フィールドを取得します。基本フィールドタイプは [フィールド](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/) と呼ばれ、[値](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/#properties) プロパティにアクセスします。
 
-PDFドキュメントのすべてのフィールドから値を取得するには、すべてのフォームフィールドをナビゲートし、Valueプロパティを使用して値を取得する必要があります。フォームコレクションから各フィールドを取得し、[Field](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/)と呼ばれる基本フィールドタイプでその[value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/field/#properties)プロパティにアクセスします。
-
-以下のPythonコードスニペットは、PDFドキュメントからすべてのフィールドの値を取得する方法を示しています。
+以下の Python コードスニペットは、PDF ドキュメントからすべてのフィールドの値を取得する方法を示します。
 
 ```python
 
     import aspose.pdf as ap
 
-    # ドキュメントを開く
-    pdfDocument = ap.Document(input_file)
+    # Construct the full path to the input PDF file
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
 
-    # すべてのフィールドから値を取得する
-    for formField in pdfDocument.form.fields:
-        # 必要に応じて名前と値を分析する
-        print("フィールド名 : " + formField.partial_name)
-        print("値 : " + str(formField.value))
+    # Create a Form object from the PDF file
+    form = ap.facades.Form(path_infile)
+
+    # Initialize an empty dictionary to store form values
+    form_values = {}
+
+    # Iterate through all form fields in the PDF
+    for formField in form.field_names:
+        # Retrieve the value for each form field and store in the dictionary
+        form_values[formField] = form.get_field(formField)
+
+    # Print and return the extracted form values
+    print(form_values)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
