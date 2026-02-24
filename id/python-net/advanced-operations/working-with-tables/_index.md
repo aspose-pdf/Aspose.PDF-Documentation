@@ -1,152 +1,26 @@
 ---
-title: Bekerja dengan Tabel di PDF menggunakan Python
+title: Bekerja dengan Tabel dalam PDF menggunakan Python
 linktitle: Bekerja dengan Tabel
 type: docs
 weight: 50
 url: /id/python-net/working-with-tables/
-description: Bagian ini menjelaskan cara menambahkan dan mengekstrak tabel, cara memanipulasi dan tabel menggunakan pustaka Python.
-lastmod: "2023-09-17"
-sitemap:
-    changefreq: "weekly"
+description: Bagian ini menjelaskan cara menambahkan dan mengekstrak tabel, serta cara memanipulasi tabel menggunakan perpustakaan Python.
+lastmod: "2025-09-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara memanipulasi tabel dalam PDF menggunakan Python
+Abstract: Aspose.PDF untuk Python melalui .NET adalah alat serbaguna yang dirancang untuk meningkatkan penanganan tabel dalam file PDF. Perpustakaan ini memungkinkan pengguna mengekstrak tabel dari PDF, membuat atau menambahkan tabel ke dokumen yang ada, menentukan pemisahan tabel pada halaman, dan menghapus tabel dari PDF. Fungsionalitas utama meliputi kemampuan untuk membuat atau menambahkan tabel sambil mengelola aspek seperti batas, margin, dan padding, serta mengekstrak dan memanipulasi tabel menggunakan fitur TableAbsorber. Selain itu, alat ini menawarkan kemampuan untuk menghapus satu atau beberapa tabel dari dokumen PDF, sehingga menyediakan manajemen data tabel yang komprehensif dalam PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Bekerja dengan Tabel di PDF menggunakan Python",
-    "alternativeHeadline": "Bekerja dengan Tabel",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, tabel dalam pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-tables/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-tables/"
-    },
-    "dateModified": "2023-09-04",
-    "description": "Artikel ini menjelaskan cara menambahkan dan mengekstrak tabel, cara memanipulasi dan mengintegrasikan tabel menggunakan pustaka Python."
-}
-</script>
 
-
-**Aspose.PDF for Python via .NET** memungkinkan Anda untuk bekerja dengan tabel dalam file PDF secara lebih maju. Alat yang sempurna ini membantu mengatasi kesederhanaan PDF dengan mengekstraksi tabel. Dengan sumber daya pustaka Python, Anda dapat dengan mudah membuat atau menambahkan tabel dalam dokumen PDF yang ada, menentukan apakah tabel akan terputus di halaman saat ini, mengekstraksi tabel, dan menghapus tabel dari PDF yang ada.
+**Aspose.PDF for Python via .NET** memungkinkan Anda bekerja dengan tabel dalam file PDF secara lanjutan. Alat yang sempurna ini membantu mengatasi kesederhanaan PDF dengan mengekstrak tabel. Dengan sumber daya perpustakaan Python, Anda dapat dengan mudah membuat atau menambahkan tabel dalam dokumen PDF yang ada, menentukan apakah tabel akan terputus pada halaman saat ini, mengekstrak tabel, dan menghapus tabel dari PDF yang ada.
 
 Anda dapat melakukan hal berikut:
 
-- [Buat atau Tambahkan Tabel dalam Dokumen PDF yang Ada](/pdf/id/python-net/add-table-in-existing-pdf-document/) - buat tabel Anda dalam file pdf dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
-- [Ekstrak Tabel dari Dokumen PDF yang Ada](/pdf/id/python-net/extract-table-from-existing-pdf-document/) - Anda dapat mengekstrak tabel dari file PDF.
-- [Manipulasi Tabel dalam PDF yang Ada](/pdf/id/python-net/manipulate-tables-in-existing-pdf/) - manipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
+- [Menambahkan Tabel](/pdf/python-net/adding-tables/) - buat tabel Anda dalam file PDF dengan menggabungkan kolom atau baris dengan mempertimbangkan batas, margin, dan padding.
+- [Mengekstrak Tabel](/pdf/python-net/extracting-table/) - Anda dapat mengekstrak tabel dari file PDF.
+- [Mengintegrasikan Tabel dengan Sumber Data](/pdf/python-net/integrate-table/) - integrasikan tabel dengan basis data, integrasikan tabel dengan sumber DataFrame Pandas menggunakan perpustakaan Python.
+- [Menghapus Tabel](/pdf/python-net/removing-tables/) - hapus satu atau beberapa tabel dari dokumen PDF.
+- [Memanipulasi Tabel dalam PDF yang ada](/pdf/python-net/manipulating-tables/) - manipulasi tabel dalam PDF Anda menggunakan TableAbsorber.
 
-- [Hapus Tabel dari PDF yang Ada](/pdf/id/python-net/remove-tables-from-existing-pdf/) - hapus tabel atau beberapa tabel dari dokumen PDF.
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Library Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

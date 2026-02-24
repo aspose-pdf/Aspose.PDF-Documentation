@@ -1,94 +1,30 @@
 ---
-title: Menggunakan Anotasi Teks untuk PDF melalui Python
+title: Menggunakan Anotasi Teks untuk PDF via Python
 linktitle: Anotasi Teks
 type: docs
 weight: 10
 url: /id/python-net/text-annotation/
-description: Aspose.PDF untuk Python memungkinkan Anda Menambahkan, Mendapatkan, dan Menghapus Anotasi Teks dari dokumen PDF Anda.
-lastmod: "2023-02-17"
-sitemap:
+description: Aspose.PDF untuk Python memungkinkan Anda menambahkan, mengambil, dan menghapus Anotasi Teks dari dokumen PDF Anda.
+lastmod: "2025-02-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true
+AlternativeHeadline: Panduan cara memanipulasi anotasi teks dalam PDF
+Abstract: Artikel ini menyediakan panduan komprehensif tentang cara memanipulasi anotasi teks dalam file PDF menggunakan pustaka Aspose.PDF untuk Python. Artikel ini mencakup penambahan, pengambilan, dan penghapusan berbagai jenis anotasi, termasuk Text, Free Text, dan StrikeOutAnnotations. Anotasi Teks adalah catatan yang ditempelkan pada lokasi tertentu dalam PDF, ditampilkan sebagai ikon yang menampilkan teks dalam popup ketika dibuka. Anotasi Free Text menampilkan teks langsung pada halaman, sementara StrikeOutAnnotations menandai teks dengan garis untuk menunjukkan penghapusan atau pengabaian. Proses ini melibatkan penambahan anotasi ke koleksi Annotations pada halaman menggunakan metode `add()`, dan contoh disediakan untuk setiap jenis anotasi. Cuplikan kode menggambarkan cara mengimplementasikan tugas-tugas ini, termasuk membuat anotasi dengan properti spesifik seperti judul, subjek, warna, dan flag, serta mengambil dan menghapus anotasi dari halaman PDF. Panduan ini berfungsi sebagai sumber praktis bagi pengembang yang ingin meningkatkan dokumen PDF melalui manipulasi anotasi menggunakan Aspose.PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Menggunakan Anotasi Teks untuk PDF melalui Python",
-    "alternativeHeadline": "Cara menambahkan Anotasi Teks dalam PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, anotasi teks",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/text-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/text-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF untuk Python memungkinkan Anda Menambahkan, Mendapatkan, dan Menghapus Anotasi Teks dari dokumen PDF Anda."
-}
-</script>
 
+## Cara menambahkan Anotasi Teks ke dalam file PDF yang ada
 
-## Cara Menambahkan Anotasi Teks ke dalam File PDF yang Ada
+Anotasi Teks adalah anotasi yang ditempelkan pada lokasi tertentu dalam dokumen PDF. Ketika ditutup, anotasi ditampilkan sebagai ikon; ketika dibuka, akan menampilkan jendela pop-up yang berisi teks catatan dalam font dan ukuran yang dipilih pembaca.
 
-Anotasi Teks adalah anotasi yang terpasang pada lokasi tertentu dalam dokumen PDF. Ketika ditutup, anotasi ditampilkan sebagai ikon; ketika dibuka, seharusnya menampilkan jendela pop-up yang berisi teks catatan dalam font dan ukuran yang dipilih oleh pembaca.
+Anotasi disimpan dalam koleksi [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) dari sebuah Halaman tertentu. Koleksi ini hanya berisi anotasi untuk halaman tersebut; setiap halaman memiliki koleksi Annotations masing-masing.
 
-Anotasi terkandung oleh koleksi [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) dari halaman tertentu. Koleksi ini hanya berisi anotasi untuk halaman individu tersebut; setiap halaman memiliki koleksi Anotasi sendiri.
-
-Untuk menambahkan anotasi ke halaman tertentu, tambahkan ke koleksi Anotasi halaman tersebut dengan metode [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods).
+Untuk menambahkan anotasi ke halaman tertentu, tambahkan ke koleksi Annotations halaman tersebut dengan metode [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/#methods).
 
 1. Pertama, buat anotasi yang ingin Anda tambahkan ke PDF.
 1. Kemudian buka PDF masukan.
-
-1. Tambahkan anotasi ke koleksi [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) objek 'page'.
+1. Tambahkan anotasi ke koleksi [Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/annotationcollection/) dari objek 'page'.
 
 Cuplikan kode berikut menunjukkan cara menambahkan anotasi pada halaman PDF.
 
@@ -101,8 +37,8 @@ Cuplikan kode berikut menunjukkan cara menambahkan anotasi pada halaman PDF.
     textAnnotation = ap.annotations.TextAnnotation(
         document.pages[1], ap.Rectangle(300, 700.664, 320, 720.769, True)
     )
-    textAnnotation.title = "Pengguna Aspose"
-    textAnnotation.subject = "Teks yang disisipkan 1"
+    textAnnotation.title = "Aspose User"
+    textAnnotation.subject = "Inserted text 1"
     textAnnotation.contents = "qwerty"
     textAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     textAnnotation.color = ap.Color.blue
@@ -111,7 +47,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan anotasi pada halaman PDF.
     document.save(output_file)
 ```
 
-## Dapatkan Anotasi Teks dari file PDF
+## Mengambil Anotasi Teks dari file PDF
 
 ```python
 
@@ -128,8 +64,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan anotasi pada halaman PDF.
         print(ta.rect)
 ```
 
-
-## Hapus Anotasi Teks dari file PDF
+## Menghapus Anotasi Teks dari file PDF
 
 ```python
 
@@ -149,29 +84,28 @@ Cuplikan kode berikut menunjukkan cara menambahkan anotasi pada halaman PDF.
 ```
 
 
-## Cara menambahkan (atau Membuat) Anotasi Teks Bebas baru
+## Cara menambahkan (atau Membuat) Anotasi Free Text baru
 
-Anotasi teks bebas menampilkan teks langsung di halaman. Kelas [FreeTextAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) memungkinkan pembuatan jenis anotasi ini. Dalam cuplikan berikut, kita menambahkan anotasi teks bebas di atas kemunculan pertama string.
+Anotasi free text menampilkan teks langsung pada halaman. Kelas [FreeTextAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) memungkinkan pembuatan jenis anotasi ini. Pada cuplikan berikut, kami menambahkan anotasi free text di atas kemunculan pertama string tersebut.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Muat file PDF
+    # Load the PDF file
     document = ap.Document(input_file)
 
     freeTextAnnotation = ap.annotations.FreeTextAnnotation(
         document.pages[1], ap.Rectangle(299, 713, 308, 720, True), ap.annotations.DefaultAppearance()
     )
-    freeTextAnnotation.title = "Pengguna Aspose"
+    freeTextAnnotation.title = "Aspose User"
     freeTextAnnotation.color = ap.Color.light_green
 
     document.pages[1].annotations.append(freeTextAnnotation)
     document.save(output_file)
 ```
 
-
-## Dapatkan Anotasi Teks Gratis dari file PDF
+## Mengambil Anotasi Free Text dari file PDF
 
 ```python
 
@@ -188,13 +122,13 @@ Anotasi teks bebas menampilkan teks langsung di halaman. Kelas [FreeTextAnnotati
         print(fa.rect)
 ```
 
-## Hapus Anotasi Teks Gratis dari file PDF
+## Menghapus Anotasi Free Text dari file PDF
 
 ```python
 
     import aspose.pdf as ap
 
-    # Memuat file PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     freeTextAnnotations = [
         a
@@ -208,10 +142,10 @@ Anotasi teks bebas menampilkan teks langsung di halaman. Kelas [FreeTextAnnotati
     document.save(output_file)
 ```
 
-### Coret Kata menggunakan StrikeOutAnnotation
 
-Aspose.PDF untuk Python memungkinkan Anda menambah, menghapus, dan memperbarui anotasi dalam dokumen PDF.
- Salah satu kelas memungkinkan Anda untuk mencoret anotasi juga. Ketika StrikeOutAnnotation diterapkan pada PDF, sebuah garis ditarik melalui teks yang ditentukan, menunjukkan bahwa itu harus dihapus atau diabaikan.
+### Menyilang Kata menggunakan StrikeOutAnnotation
+
+Aspose.PDF untuk Python memungkinkan Anda menambahkan, menghapus, dan memperbarui anotasi dalam dokumen PDF. Salah satu kelas memungkinkan Anda juga menyilang anotasi. Ketika StrikeOutAnnotation diterapkan pada PDF, sebuah garis digambar melintasi teks yang ditentukan, menunjukkan bahwa teks tersebut harus dihapus atau diabaikan.
 
 Cuplikan kode berikut menunjukkan cara menambahkan [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) ke PDF.
 
@@ -224,8 +158,8 @@ Cuplikan kode berikut menunjukkan cara menambahkan [StrikeOutAnnotation](https:/
     strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    strikeoutAnnotation.title = "Pengguna Aspose"
-    strikeoutAnnotation.subject = "Teks yang disisipkan 1"
+    strikeoutAnnotation.title = "Aspose User"
+    strikeoutAnnotation.subject = "Inserted text 1"
     strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     strikeoutAnnotation.color = ap.Color.blue
 
@@ -234,7 +168,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan [StrikeOutAnnotation](https:/
 ```
 
 
-## Mendapatkan StrikeOutAnnotation dari PDF
+## Mengambil StrikeOutAnnotation dari PDF
 
 ```python
 
@@ -251,7 +185,7 @@ Cuplikan kode berikut menunjukkan cara menambahkan [StrikeOutAnnotation](https:/
         print(pa.rect)
 ```
 
-## Hapus StrikeOutAnnotation dari PDF
+## Menghapus StrikeOutAnnotation dari PDF
 
 ```python
 
@@ -271,66 +205,4 @@ Cuplikan kode berikut menunjukkan cara menambahkan [StrikeOutAnnotation](https:/
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Perpustakaan Python",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

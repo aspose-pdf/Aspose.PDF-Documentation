@@ -1,101 +1,41 @@
 ---
-title: PDF에 이미지 스탬프 추가하기 (Python 사용)
-linktitle: PDF 파일에 이미지 스탬프
+title: Python을 사용한 PDF에 이미지 스탬프 추가
+linktitle: PDF 파일의 이미지 스탬프
 type: docs
 weight: 10
 url: /ko/python-net/image-stamps-in-pdf-page/
 description: Aspose.PDF for Python 라이브러리의 ImageStamp 클래스를 사용하여 PDF 문서에 이미지 스탬프를 추가합니다.
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python을 사용하여 PDF에 이미지 스탬프를 추가하는 방법
+Abstract: 이 문서는 Aspose.PDF for Python 라이브러리를 사용하여 PDF 파일에 이미지 스탬프를 추가하는 포괄적인 가이드를 제공합니다. `ImageStamp` 클래스를 사용하여 높이, 너비, 불투명도, 회전 등 이미지 기반 스탬프의 속성을 커스터마이징하는 방법을 자세히 설명합니다. `Document` 객체와 원하는 속성을 가진 `ImageStamp` 객체를 생성한 뒤, `add_stamp()` 메서드를 이용해 특정 페이지에 스탬프를 추가하는 과정을 다룹니다. 또한, `quality` 속성을 사용하여 이미지 품질을 퍼센트 단위로 조정하는 Python 코드 예제가 포함되어 있습니다. 추가로 `FloatingBox` 클래스를 활용해 이미지 스탬프를 배경으로 사용하는 방법과 구현 예제도 제공됩니다. 이 가이드는 Aspose.PDF를 이용해 이미지 스탬프로 PDF를 향상시키고자 하는 개발자에게 유용한 자료가 됩니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF에 이미지 스탬프 추가하기 (Python 사용)",
-    "alternativeHeadline": "PDF에 이미지 스탬프 추가하기 (Python 사용)",
-    "author": {
-        "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/image-stamps-in-pdf-page/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/image-stamps-in-pdf-page/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Aspose.PDF for Python 라이브러리의 ImageStamp 클래스를 사용하여 PDF 문서에 이미지 스탬프를 추가합니다."
-}
-</script>
 
+## PDF 파일에 이미지 스탬프 추가
 
-## PDF 파일에 이미지 스탬프 추가하기
-
-[ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 클래스를 사용하여 PDF 파일에 이미지 스탬프를 추가할 수 있습니다. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 클래스는 높이, 너비, 불투명도 등 이미지 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다.
-
-이미지 스탬프를 추가하려면:
-
-1. 필요한 속성을 사용하여 Document 객체와 ImageStamp 객체를 생성합니다.
-1. [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 클래스의 [add_stamp()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) 메서드를 호출하여 PDF에 스탬프를 추가합니다.
+PDF 파일에 이미지 스탬프를 추가하려면 [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 클래스를 사용할 수 있습니다. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 클래스는 높이, 너비, 불투명도 등 이미지 기반 스탬프를 만들기 위한 필요한 속성을 제공합니다. 스탬프는 위치를 지정하고, 크기를 조정하고, 회전시키며 부분 투명하게 만들 수 있어 워터마크, 브랜딩 또는 주석으로 활용할 수 있습니다.
 
 다음 코드 스니펫은 PDF 파일에 이미지 스탬프를 추가하는 방법을 보여줍니다.
 
+1. 'ap.Document()'를 사용하여 PDF를 로드합니다.
+1. 'ImageStamp()'로 이미지 스탬프를 생성합니다.
+1. 스탬프 속성을 설정합니다.
+1. 스탬프를 대상 페이지에 추가합니다.
+1. 수정된 PDF를 저장합니다.
+
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # 문서 열기
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # 이미지 스탬프 생성
+def add_image_stamp(infile, input_image_file, outfile):
+    document = ap.Document(infile)
     image_stamp = ap.ImageStamp(input_image_file)
     image_stamp.background = True
     image_stamp.x_indent = 100
@@ -104,133 +44,88 @@ sitemap:
     image_stamp.width = 300
     image_stamp.rotate = ap.Rotation.ON270
     image_stamp.opacity = 0.5
-    # 특정 페이지에 스탬프 추가
+
     document.pages[1].add_stamp(image_stamp)
-
-    # 출력 문서 저장
-    document.save(output_pdf)
+    document.save(outfile)
 ```
-
 
 ## 스탬프 추가 시 이미지 품질 제어
 
-이미지를 스탬프 객체로 추가할 때 이미지의 품질을 제어할 수 있습니다. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 클래스의 [quality](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/#properties) 속성이 이 목적에 사용됩니다. 이는 이미지의 품질을 퍼센트로 나타내며 (유효한 값은 0..100)입니다.
+이미지를 스탬프 객체로 추가할 때 이미지 품질을 제어할 수 있습니다. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) 클래스의 [quality](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/#properties) 속성이 이를 위해 사용됩니다. 이 속성은 이미지 품질을 퍼센트(0~100)로 나타냅니다.
+quality 속성을 설정함으로써 이미지 해상도를 낮춰 PDF 크기를 최적화하거나, 높은 선명도를 유지할 수 있습니다.
+
+1. PDF 문서를 엽니다.
+1. 이미지 스탬프를 생성합니다.
+1. 이미지 품질을 설정합니다.
+1. 스탬프를 대상 페이지에 추가합니다.
+1. 수정된 PDF를 저장합니다.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # 문서 열기
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # 이미지 스탬프 생성
-    image_stamp = ap.ImageStamp(input_jpg)
+def add_image_stamp_image_control_image_quality(infile, input_image_file, outfile):
+    document = ap.Document(infile)
+
+    image_stamp = ap.ImageStamp(input_image_file)
     image_stamp.quality = 10
-    # 특정 페이지에 스탬프 추가
-    document.pages[1].add_stamp(image_stamp)
 
-    # 출력 문서 저장
-    document.save(output_pdf)
+    document.pages[1].add_stamp(image_stamp)
+    document.save(outfile)
 ```
 
-## 플로팅 박스의 배경으로 이미지 스탬프
+## 플로팅 박스 배경으로 이미지 스탬프 사용
 
-Aspose.PDF for Python API를 사용하면 플로팅 박스의 배경으로 이미지 스탬프를 추가할 수 있습니다.
- [background](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/#properties) 속성은 [FloatingBox](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/) 클래스의 배경 이미지 스탬프를 설정하는 데 사용할 수 있으며, 아래의 코드 샘플에 나타나 있습니다.
+[FloatingBox](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/)를 PDF에 생성하고 이미지를 배경으로 적용합니다. 또한 텍스트를 추가하고, 테두리와 배경 색을 설정하며, 박스를 페이지에 정확히 배치하는 방법을 보여줍니다. 이는 이미지 위에 텍스트가 있는 콜아웃, 배너, 강조 섹션 등 시각적으로 풍부한 PDF 콘텐츠를 만들 때 유용합니다.
+
+1. PDF 문서를 열거나 새로 만듭니다.
+1. 'FloatingBox' 객체를 생성합니다.
+1. 박스에 텍스트 콘텐츠를 추가합니다.
+1. 박스 테두리와 배경 색을 설정합니다.
+1. 배경 이미지를 추가합니다.
+1. 페이지에 FloatingBox를 추가합니다.
+1. PDF 문서를 저장합니다.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Document 객체를 인스턴스화합니다.
-    document = ap.Document()
-    # PDF 문서에 페이지를 추가합니다.
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_image_as_background_in_floating_box(infile, input_image_file, outfile):
+
+    document = ap.Document(infile)
+    # Add page to PDF document
     page = document.pages.add()
-    # FloatingBox 객체를 생성합니다.
+    # Create FloatingBox object
     box = ap.FloatingBox(200.0, 100.0)
-    # FloatingBox의 왼쪽 위치를 설정합니다.
+    # Set left position for FloatingBox
     box.left = 40
-    # FloatingBox의 위쪽 위치를 설정합니다.
+    # Set Top position for FloatingBox
     box.top = 80
-    # FloatingBox의 수평 정렬을 설정합니다.
+    # Set the Horizontal alignment for FloatingBox
     box.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # FloatingBox의 단락 컬렉션에 텍스트 조각을 추가합니다.
-    box.paragraphs.add(ap.text.TextFragment("main text"))
-    # FloatingBox에 테두리를 설정합니다.
+    # Add text fragment to paragraphs collection of FloatingBox
+    box.paragraphs.add(ap.text.TextFragment("Text in Floating Box"))
+    # Set border for FloatingBox
     box.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
 
     img = ap.Image()
     img.file = input_image_file
-    # 배경 이미지를 추가합니다.
+    # Add background image
     box.background_image = img
-    # FloatingBox의 배경 색상을 설정합니다.
+    # Set background color for FloatingBox
     box.background_color = ap.Color.yellow
-    # 페이지 객체의 단락 컬렉션에 FloatingBox를 추가합니다.
+    # Add FloatingBox to paragraphs collection of page object
     page.paragraphs.add(box)
-    # PDF 문서를 저장합니다.
-    document.save(output_pdf)
+    # Save the PDF document
+    document.save(outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "파이썬용 PDF 조작 라이브러리",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

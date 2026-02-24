@@ -1,164 +1,50 @@
 ---
-title: AcroForm 채우기 - Python을 사용하여 PDF 양식 채우기
+title: AcroForm 채우기 - Python을 사용한 PDF 양식 채우기
 linktitle: AcroForm 채우기
 type: docs
 weight: 20
 url: /ko/python-net/fill-form/
 description: Aspose.PDF for Python 라이브러리를 사용하여 PDF 문서의 양식을 채울 수 있습니다.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python을 사용하여 PDF에서 양식 필드를 채우는 방법
+Abstract: 이 문서는 Aspose.PDF for Python 라이브러리를 사용하여 PDF 문서에서 양식 필드를 채우는 방법에 대한 가이드를 제공합니다. 문서의 양식 컬렉션에서 양식 필드를 가져와 해당 필드의 value 속성을 통해 값을 설정하는 과정을 설명합니다. 예제 코드는 PDF 문서를 열고, 양식 필드를 반복하면서 부분 이름(예 \"Field 1\")으로 특정 필드를 찾아 TextBoxField의 값을 \"777\"로 수정하는 방법을 보여줍니다. 마지막으로 업데이트된 문서를 출력 파일에 저장합니다. 관련 Aspose 문서에 대한 링크가 추가 참고용으로 제공됩니다.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "AcroForm 채우기",
-    "alternativeHeadline": "PDF에서 AcroForm을 채우는 방법",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, python, acroform 채우기",
-    "wordcount": "302",
-    "proficiencyLevel":"초급",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/fill-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/fill-form/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for Python 라이브러리를 사용하여 PDF 문서의 양식을 채울 수 있습니다."
-}
-</script>
-
 
 ## PDF 문서에서 양식 필드 채우기
 
-양식 필드를 채우기 위해, 문서 객체의 [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) 컬렉션에서 필드를 가져옵니다. 그런 다음 필드의 [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#properties) 속성을 사용하여 필드 값을 설정합니다.
-
-이 예제는 [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/)를 선택하고 Value 속성을 사용하여 값을 설정합니다.
+다음 예제는 Aspose.PDF for Python via .NET를 사용하여 PDF 양식 필드를 새로운 값으로 채우고 업데이트된 문서를 저장합니다. 필드 이름과 값을 사전으로 지정하여 여러 필드를 업데이트하는 것을 지원합니다.
 
 ```python
 
     import aspose.pdf as ap
 
-    # 문서 열기
-    pdfDocument = ap.Document(input_file)
-    for formField in pdfDocument.form.fields:
-        if formField.partial_name == "Field 1":
-            # 필드 값 수정
-            formField.value = "777"
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
 
-    # 업데이트된 문서 저장
-    pdfDocument.save(output_pdf)
+    # Define the new field values
+    new_field_values = {
+        "First Name": "Alexander_New",
+        "Last Name": "Greenfield_New",
+        "City": "Yellowtown_New",
+        "Country": "Redland_New"
+    }
+
+    # Create a Form object from the input PDF file
+    form = ap.facades.Form(path_infile)
+
+    # Fill out the form fields with the new values
+    for formField in form.field_names:
+        if formField in new_field_values:
+            form.fill_field(formField, new_field_values[formField])
+
+    # Save the modified form to the output PDF file
+    form.save(path_outfile)
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

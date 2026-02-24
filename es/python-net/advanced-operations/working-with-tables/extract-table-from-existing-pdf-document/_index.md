@@ -1,97 +1,48 @@
 ---
-title: Extraer Tabla de Documento PDF
-linktitle: Extraer Tabla
+title: Extraer tabla de documento PDF
+linktitle: Extraer tabla
 type: docs
 weight: 20
-url: /es/python-net/extract-table-from-existing-pdf-document/
-description: Aspose.PDF para Python a través de .NET hace posible realizar varias manipulaciones con las tablas contenidas en su documento pdf.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+url: /es/python-net/extracting-table/
+description: Aspose.PDF for Python via .NET permite realizar diversas manipulaciones con las tablas contenidas en su documento PDF.
+lastmod: "2025-09-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cómo extraer una tabla de PDF usando Python
+Abstract: Este artículo analiza el proceso de extracción de tablas de documentos PDF usando Python, aprovechando específicamente la biblioteca Aspose.PDF for Python via .NET. Proporciona un ejemplo de código que muestra cómo cargar un documento PDF, iterar a través de sus páginas y utilizar la clase `TableAbsorber` para identificar y extraer datos de tabla. El código recorre cada tabla, fila y celda, recopilando fragmentos de texto y mostrando el texto extraído. Este método se destaca como una herramienta poderosa para tareas de extracción y análisis de datos que involucran datos tabulares dentro de PDFs.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Extraer Tabla de Documento PDF",
-    "alternativeHeadline": "Cómo extraer Tabla de Archivo PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, extraer tabla",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extract-table-from-existing-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extract-table-from-existing-pdf-document/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF para Python a través de .NET hace posible realizar varias manipulaciones con las tablas contenidas en su documento pdf."
-}
-</script>
 
+## Extraer tabla de PDF
 
-## Extraer Tabla de PDF
+Extraer tablas de PDFs usando Python puede ser increíblemente útil para la extracción y análisis de datos. Con la biblioteca Aspose.PDF for Python via .NET, puedes trabajar de manera eficiente con tablas incrustadas en documentos PDF para diversas tareas relacionadas con datos.
 
-Extraer tablas de PDFs usando Python puede ser increíblemente útil para la extracción y el análisis de datos. Con la biblioteca Aspose.PDF para Python vía .NET, puedes trabajar eficientemente con tablas incrustadas en documentos PDF para diversas tareas relacionadas con datos.
+Este fragmento de código abre un archivo PDF existente, escanea cada página en busca de tablas y extrae el contenido de texto de sus celdas. Utiliza el 'TableAbsorber' para detectar tablas y luego itera a través de filas y celdas para imprimir el texto interno.
+
+1. Carga el PDF en un objeto ap.Document.
+1. Recorre las páginas.
+1. Crea un objeto TableAbsorber.
+1. Itera a través de las tablas.
+1. Itera a través de filas y celdas.
+1. Extrae e imprime el texto de las celdas.
+
+Este ejemplo lee un PDF, encuentra todas las tablas y muestra el contenido de sus celdas fila por fila.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
 
-    # Cargar documento PDF de origen
-    pdf_document = ap.Document(input_file)
-    for page in pdf_document.pages:
+    path_infile = path.join(self.data_dir, infile)
+    document = ap.Document(path_infile)
+    for page in document.pages:
         absorber = ap.text.TableAbsorber()
         absorber.visit(page)
         for table in absorber.table_list:
+            print("Table ----")
             for row in table.row_list:
+                print("Row")
                 for cell in row.cell_list:
                     text_fragment_collection = cell.text_fragments
                     for fragment in text_fragment_collection:
@@ -99,69 +50,6 @@ Extraer tablas de PDFs usando Python puede ser increíblemente útil para la ext
                         for seg in fragment.segments:
                             txt += seg.text
                         print(txt)
-
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulación de PDF para Python vía .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

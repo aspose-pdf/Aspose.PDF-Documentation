@@ -4,108 +4,44 @@ linktitle: Dividir arquivos PDF
 type: docs
 weight: 60
 url: /pt/python-net/split-pdf-document/
-description: Este tópico mostra como dividir páginas de PDF em arquivos PDF individuais em suas aplicações Python.
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+description: Este tópico mostra como dividir páginas PDF em arquivos PDF individuais em suas aplicações Python.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Dividindo páginas PDF usando Python
+Abstract: O artigo discute o processo de dividir páginas PDF em arquivos individuais usando Python, destacando a utilidade de tal recurso para gerenciar documentos PDF grandes. Ele faz referência ao Aspose.PDF Splitter, uma ferramenta online projetada para demonstrar a funcionalidade de divisão de PDFs. O artigo fornece um método detalhado para alcançar isso em aplicações Python, envolvendo a iteração pelas páginas de um documento PDF através da coleção `PageCollection` do objeto `Document`. Para cada página, um novo objeto `Document` é criado, a página é adicionada a ele e o novo arquivo PDF é salvo usando o método `save()`. Um trecho de código Python anexo ilustra esse processo, mostrando as etapas necessárias para dividir um documento PDF em arquivos separados, iterando pelas suas páginas e salvando cada uma como um PDF individual.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Dividir PDF programaticamente",
-    "alternativeHeadline": "Como dividir PDF com Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, python, dividir pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipe Aspose.PDF Doc",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/split-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/split-pdf-document/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Este tópico mostra como dividir páginas de PDF em arquivos PDF individuais em suas aplicações Python."
-}
-</script>
 
+Dividir páginas PDF pode ser um recurso útil para quem deseja dividir um arquivo grande em páginas separadas ou grupos de páginas.
 
-Dividir páginas de PDF pode ser um recurso útil para aqueles que desejam dividir um arquivo grande em páginas separadas ou grupos de páginas.
+## Exemplo ao Vivo
 
-## Exemplo Ao Vivo
+[Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) é uma aplicação web gratuita online que permite investigar como funciona a funcionalidade de divisão de PDFs.
 
-[Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) é uma aplicação web gratuita que permite investigar como a funcionalidade de divisão de apresentação funciona.
+[![Aspose Dividir PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-[![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
-
-Este tópico mostra como dividir páginas de PDF em arquivos PDF individuais em suas aplicações Python. Para dividir páginas de PDF em arquivos PDF de uma única página usando Python, os seguintes passos podem ser seguidos:
+Este tópico mostra como dividir páginas PDF em arquivos PDF individuais em suas aplicações Python. Para dividir páginas PDF em arquivos PDF de página única usando Python, os seguintes passos podem ser seguidos:
 
 1. Percorra as páginas do documento PDF através da coleção [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) do objeto [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)
-1. Para cada iteração, crie um novo objeto Document e adicione o objeto [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) individual no documento vazio
+1. Para cada iteração, crie um novo objeto Document e adicione o objeto [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) individual ao documento vazio
+1. Salve o novo PDF usando o método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
-1. Salve o novo PDF usando o método [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)
+## Dividir PDF em múltiplos arquivos ou PDFs separados em Python
 
-## Dividir PDF em vários arquivos ou pdfs separados em Python
-
-O seguinte trecho de código Python mostra como dividir páginas de PDF em arquivos PDF individuais.
+O trecho de código Python a seguir mostra como dividir páginas PDF em arquivos PDF individuais.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Abrir documento
+    # Open document
     document = ap.Document(input_pdf)
 
     page_count = 1
 
-    # Percorrer todas as páginas
+    # Loop through all the pages
     for pdfPage in document.pages:
         new_document = ap.Document()
         new_document.pages.add(pdfPage)
@@ -113,66 +49,4 @@ O seguinte trecho de código Python mostra como dividir páginas de PDF em arqui
         page_count = page_count + 1
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

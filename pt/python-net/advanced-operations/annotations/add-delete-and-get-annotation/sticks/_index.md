@@ -1,124 +1,60 @@
 ---
-title: Anotações adesivas em PDF usando Python
+title: Anotações adesivas PDF usando Python
 linktitle: Anotação adesiva
 type: docs
 weight: 50
 url: /pt/python-net/sticky-annotations/
-description: Este tópico sobre anotações adesivas, como exemplo mostramos a Anotação de Marca d'água no texto.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Descubra como adicionar anotações adesivas em documentos PDF usando Aspose.PDF em Python via .NET para comentários e feedback.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guia sobre como manipular anotações adesivas em PDF
+Abstract: Este artigo fornece um guia detalhado sobre como gerenciar anotações de marca d'água em documentos PDF usando a biblioteca Aspose.PDF para Python. Ele explica o processo de adicionar, recuperar e excluir anotações de marca d'água para garantir a autenticidade e a marca do documento. A anotação de marca d'água pode ser usada para incorporar gráficos, como logotipos, em um tamanho e posição fixos em uma página. O guia inclui trechos de código que demonstram como adicionar uma anotação de marca d'água em uma posição específica com opacidade ajustável, bem como como recuperar e excluir anotações de marca d'água existentes. Os exemplos de código ilustram o uso da biblioteca Aspose.PDF para manipular documentos PDF programaticamente, oferecendo uma abordagem prática para desenvolvedores integrarem funcionalidades de marca d'água em suas aplicações.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Anotações adesivas em PDF usando Python",
-    "alternativeHeadline": "Como adicionar Anotações Adesivas em PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documentos pdf",
-    "keywords": "pdf, python, anotações adesivas, anotação de marca d'água",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/sticky-annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/sticky-annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Este tópico sobre anotações adesivas, como exemplo mostramos a Anotação de Marca d'água no texto usando a Biblioteca Python."
-}
-</script>
-
 
 ## Adicionar Anotação de Marca d'Água
 
-A anotação de marca d'água é a mais visível e fácil de visualizar e transmitir. Esta é a melhor maneira de colocar em seu documento PDF um logotipo ou qualquer outro sinal que confirme sua originalidade.
+A anotação de marca d'água é a mais visível e fácil de visualizar e transmitir. Esta é a melhor forma de colocar em seu documento PDF um logotipo ou qualquer outro sinal que confirme sua originalidade.
 
-Uma anotação de marca d'água deve ser usada para representar gráficos que devem ser impressos em um tamanho e posição fixos em uma página, independentemente das dimensões da página impressa.
+Uma anotação de marca d'água deve ser usada para representar gráficos que serão impressos em um tamanho e posição fixos em uma página, independentemente das dimensões da página impressa.
 
-Você pode adicionar Texto de Marca d'Água usando [WatermarkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/) em uma posição específica da página PDF. A opacidade da Marca d'Água também pode ser controlada usando a propriedade [opacity](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/#properties).
+Você pode adicionar Texto de Marca d'água usando [WatermarkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/) em uma posição específica da página PDF. A opacidade da Marca d'água também pode ser controlada usando a propriedade [opacity](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/#properties).
 
-Por favor, verifique o trecho de código a seguir para adicionar WatermarkAnnotation.
+Por favor, confira o trecho de código a seguir para adicionar WatermarkAnnotation.
 
 ```python
 
     import aspose.pdf as ap
 
     document = ap.Document(input_file)
-    # Criar Anotação
-    # Carregar objeto Página para adicionar Anotação
+    # Create Annotation
+    # Load Page object to add Annotation
     page = document.pages[1]
 
-    # Criar Anotação
+    # Create Annotation
     wa = ap.annotations.WatermarkAnnotation(page, ap.Rectangle(100, 0, 400, 100, True))
 
-    # Adicionar anotação na coleção de Anotação da Página
+    # Add annotaiton into Annotation collection of Page
     page.annotations.append(wa)
 
-    # Criar TextState para configurações de Fonte
+    # Create TextState for Font settings
     ts = ap.text.TextState()
     ts.foreground_color = ap.Color.blue
     ts.font_size = 25
     ts.font = ap.text.FontRepository.find_font("Arial");
 
-    # Definir nível de opacidade do Texto da Anotação
+    # Set opacity level of Annotaiton Text
     wa.opacity = 0.5
 
-    # Adicionar Texto na Anotação
+    # Add Text in Annotation
     wa.set_text_and_state([ "HELLO", "Line 1", "Line 2" ], ts)
 
     document.save(output_file)
 ```
 
-
-## Obter Anotação de Marca d'água
+## Obter Anotação de Marca d'Água
 
 ```python
 
@@ -135,7 +71,7 @@ Por favor, verifique o trecho de código a seguir para adicionar WatermarkAnnota
         print(ta.rect)
 ```
 
-## Excluir Anotação de Marca d'água
+## Excluir Anotação de Marca d'Água
 
 ```python
 
@@ -154,66 +90,4 @@ Por favor, verifique o trecho de código a seguir para adicionar WatermarkAnnota
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Biblioteca Python",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

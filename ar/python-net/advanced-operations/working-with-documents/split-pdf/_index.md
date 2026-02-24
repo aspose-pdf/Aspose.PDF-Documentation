@@ -1,111 +1,47 @@
 ---
-title: تقسيم ملفات PDF برمجياً باستخدام Python
+title: تقسيم ملفات PDF برمجيًا باستخدام بايثون
 linktitle: تقسيم ملفات PDF
 type: docs
 weight: 60
 url: /ar/python-net/split-pdf-document/
-description: يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات Python الخاصة بك.
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+description: يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF منفصلة في تطبيقات بايثون الخاصة بك.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: تقسيم صفحات PDF باستخدام بايثون
+Abstract: تناقش المقالة عملية تقسيم صفحات PDF إلى ملفات منفصلة باستخدام بايثون، مع إبراز فائدة هذه الميزة لإدارة مستندات PDF الكبيرة. وتشير إلى Aspose.PDF Splitter، وهي أداة عبر الإنترنت صُممت لتوضيح وظيفة تقسيم PDF. تقدم المقالة طريقة مفصلة لتحقيق ذلك في تطبيقات بايثون، تشمل iterating عبر صفحات مستند PDF عبر مجموعة `PageCollection` لكائن `Document`. لكل صفحة، يتم إنشاء كائن `Document` جديد، تُضاف الصفحة إليه، ويتم حفظ ملف PDF الجديد باستخدام طريقة `save()`. يوضح مقطع كود بايثون المرفق هذه العملية، مع عرض الخطوات اللازمة لتقسيم مستند PDF إلى ملفات منفصلة عن طريق iterating عبر صفحاته وحفظ كل واحدة كملف PDF منفصل.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "تقسيم PDF برمجياً",
-    "alternativeHeadline": "كيفية تقسيم PDF باستخدام Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات pdf",
-    "keywords": "pdf, python, تقسيم pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/split-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/split-pdf-document/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات Python الخاصة بك."
-}
-</script>
 
-
-تقسيم صفحات PDF يمكن أن يكون ميزة مفيدة لأولئك الذين يرغبون في تقسيم ملف كبير إلى صفحات منفصلة أو مجموعات من الصفحات.
+يمكن أن تكون ميزة تقسيم صفحات PDF مفيدة لأولئك الذين يرغبون في تقسيم ملف كبير إلى صفحات منفصلة أو مجموعات من الصفحات.
 
 ## مثال حي
 
-[Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) هو تطبيق ويب مجاني عبر الإنترنت يتيح لك استكشاف كيفية عمل وظيفة تقسيم العروض التقديمية.
+[Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) هو تطبيق ويب مجاني على الإنترنت يتيح لك استكشاف كيفية عمل وظيفة تقسيم المستند.
 
-[![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
+[![Aspose تقسيم PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات Python الخاصة بك. لتقسيم صفحات PDF إلى ملفات PDF ذات صفحة واحدة باستخدام Python، يمكن اتباع الخطوات التالية:
+يوضح هذا الموضوع كيفية تقسيم صفحات PDF إلى ملفات PDF منفصلة في تطبيقات بايثون الخاصة بك. لتقسيم صفحات PDF إلى ملفات PDF بصفحة واحدة باستخدام بايثون، يمكن اتباع الخطوات التالية:
 
-1. حلقة عبر صفحات مستند PDF من خلال مجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) الخاصة بكائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)
-1. لكل تكرار، قم بإنشاء كائن مستند جديد وقم بإضافة الكائن [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) الفردي إلى المستند الفارغ
+1. تجول خلال صفحات مستند PDF عبر مجموعة [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) لكائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. في كل تكرار، أنشئ كائن Document جديد وأضف كائن [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) الفردي إلى المستند الفارغ.
+1. احفظ ملف PDF الجديد باستخدام طريقة [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
-1. احفظ ملف PDF الجديد باستخدام [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) الطريقة
+## تقسيم PDF إلى ملفات متعددة أو ملفات PDF منفصلة باستخدام بايثون
 
-## تقسيم ملف PDF إلى ملفات متعددة أو ملفات PDF منفصلة في بايثون
-
-يوضح لك مقتطف الكود التالي في بايثون كيفية تقسيم صفحات PDF إلى ملفات PDF فردية.
+يُظهر مقطع كود بايثون التالي كيفية تقسيم صفحات PDF إلى ملفات PDF منفصلة.
 
 ```python
 
     import aspose.pdf as ap
 
-    # فتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
     page_count = 1
 
-    # تكرار خلال جميع الصفحات
+    # Loop through all the pages
     for pdfPage in document.pages:
         new_document = ap.Document()
         new_document.pages.add(pdfPage)
@@ -113,66 +49,4 @@ sitemap:
         page_count = page_count + 1
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

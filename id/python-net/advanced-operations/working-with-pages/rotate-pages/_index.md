@@ -4,172 +4,63 @@ linktitle: Memutar Halaman PDF
 type: docs
 weight: 110
 url: /id/python-net/rotate-pages/
-description: Topik ini menjelaskan bagaimana memutar orientasi halaman dalam file PDF yang ada secara programatis dengan Python.
-lastmod: "2023-04-17"
-sitemap:
+description: Topik ini menjelaskan cara memutar orientasi halaman dalam file PDF yang ada secara programatis dengan Python.
+lastmod: "2025-11-16"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara memutar Halaman dalam PDF dengan Python
+Abstract: Artikel ini memberikan panduan tentang cara secara programatis memperbarui atau mengubah orientasi halaman dalam file PDF yang ada menggunakan Python. Dengan memanfaatkan Aspose.PDF untuk Python via .NET, pengguna dapat dengan mudah beralih antara orientasi lanskap dan potret dengan menyesuaikan properti MediaBox halaman. Artikel ini menyertakan potongan kode Python yang menunjukkan cara mengulang halaman dalam dokumen PDF, memodifikasi dimensi dan posisi MediaBox mereka, serta menyesuaikan CropBox jika diperlukan. Selain itu, artikel menjelaskan cara mengatur sudut rotasi halaman menggunakan metode 'rotate' untuk mencapai orientasi yang diinginkan. Proses berakhir dengan menyimpan file PDF yang telah diperbarui.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Memutar Halaman PDF Menggunakan Python",
-    "alternativeHeadline": "Cara memutar Halaman PDF dengan Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, memutar halaman pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/rotate-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/rotate-pages/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "Topik ini menjelaskan bagaimana memutar orientasi halaman dalam file PDF yang ada secara programatis dengan Python."
-}
-</script>
 
-
-Topik ini menjelaskan bagaimana memperbarui atau mengubah orientasi halaman dari halaman dalam file PDF yang ada secara programatis dengan Python.
+Topik ini menjelaskan cara memperbarui atau mengubah orientasi halaman dalam file PDF yang ada secara programatis dengan Python.
 
 ## Ubah Orientasi Halaman
 
-Aspose.PDF untuk Python melalui .NET mendukung fitur hebat seperti mengubah orientasi halaman dari lanskap ke potret dan sebaliknya. Untuk mengubah orientasi halaman, atur MediaBox halaman menggunakan potongan kode berikut. Anda juga dapat mengubah orientasi halaman dengan mengatur sudut rotasi menggunakan metode 'rotate'.
+Fungsi ini memutar setiap halaman dari sebuah PDF [`Dokumen`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 90 derajat searah jarum jam menggunakan Aspose.PDF untuk Python.
+Fungsi ini berguna untuk memperbaiki masalah orientasi halaman, seperti dokumen hasil pindai yang berada miring. PDF asli tetap tidak berubah, dan versi yang diputar disimpan sebagai file baru.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    doc = ap.Document(input_pdf)
-    for page in doc.pages:
-        r = page.media_box
-        newHeight = r.width
-        newWidth = r.height
-        newLLX = r.llx
-        # Kita harus memindahkan halaman ke atas untuk mengkompensasi perubahan ukuran halaman
-        # (tepi bawah halaman adalah 0,0 dan informasi biasanya ditempatkan dari
-        # Atas halaman. Itulah mengapa kita memindahkan tepi bawah ke atas pada perbedaan antara
-        # Tinggi lama dan baru.
-        newLLY = r.lly + (r.height - newHeight)
-        page.media_box = ap.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight, True)
-        # Terkadang kita juga perlu mengatur CropBox (jika sudah diatur dalam file asli)
-        page.crop_box = ap.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight, True)
+# Global configuration
+DATA_DIR = "your path here"
 
-        # Mengatur sudut rotasi halaman
+def rotate_page(infile, outfile):
+    """
+    Rotate all pages in a PDF document by 90 degrees clockwise.
+
+    Demonstrates how to rotate PDF pages using the Aspose.PDF library.
+    This function applies a 90-degree clockwise rotation to every page
+    in the input document and saves the result to a new file.
+
+    Args:
+        infile (str): Path to the input PDF file to rotate.
+        outfile (str): Path where the rotated PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF pages and saves to the output path.
+
+    Note:
+        - Applies 90-degree clockwise rotation (ap.Rotation.ON90) to all pages
+        - Rotates every page in the document uniformly
+        - The original document is not modified; a new file is created
+        - Rotation options include: ON90 (90°), ON180 (180°), ON270 (270°)
+        - Useful for correcting page orientation or adjusting layout
+
+    Example:
+        >>> rotate_page("input.pdf", "rotated_output.pdf")
+        # Rotates all pages 90 degrees clockwise and saves to rotated_output.pdf
+    """
+    document = ap.Document(infile)
+    for page in document.pages:
+        # `page` is a `Page` object; `rotate` uses the `Rotation` enum
         page.rotate = ap.Rotation.ON90
 
-    # Simpan file output
-    doc.save(output_pdf)
+    document.save(outfile)
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Python melalui .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Library Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

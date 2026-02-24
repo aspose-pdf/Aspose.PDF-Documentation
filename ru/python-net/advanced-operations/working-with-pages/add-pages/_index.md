@@ -1,133 +1,110 @@
 ---
-title: Добавить страницы в PDF с помощью Python
-linktitle: Добавить страницы
+title: Добавление страниц в PDF с помощью Python
+linktitle: Добавление страниц
 type: docs
 weight: 10
 url: /ru/python-net/add-pages/
-description: Эта статья учит, как вставить (добавить) страницу в нужное место в PDF-файле. Узнайте, как перемещать, удалять (удалять) страницы из PDF-файла с использованием C#.
-lastmod: "2022-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Узнайте, как добавлять страницы в PDF‑документ на Python с помощью Aspose.PDF для гибкого создания и редактирования документов.
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как добавить страницы в PDF с помощью Python
+Abstract: Статья представляет руководство по использованию Aspose.PDF for Python via .NET API для работы со страницами PDF‑документа. Она подчёркивает гибкость, предоставляемую API, особенно через класс `PageCollection`, который управляет всеми страницами в PDF. В документе подробно описаны процедуры добавления или вставки страниц в определённые места PDF‑файла. Рассмотрены две основные операции — вставка пустой страницы в нужное место документа и добавление пустой страницы в конец документа. Для обеих операций процесс включает создание объекта `Document`, использование методов `insert` или `add` класса `PageCollection` и сохранение изменённого документа. В статье содержатся фрагменты кода, демонстрирующие эти задачи, показывающие, насколько просто манипулировать PDF‑документами с помощью Python и этого API.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Добавить страницы в PDF с помощью Python",
-    "alternativeHeadline": "Как добавить страницы в PDF-документ",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF-документов",
-    "keywords": "pdf, python, добавить страницу в pdf, вставить страницу в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-pages/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Эта статья учит, как вставить (добавить) страницу в нужное место в PDF-файле. Узнайте, как перемещать, удалять (удалять) страницы из PDF-файла с использованием Python."
-}
-</script>
 
+Aspose.PDF for Python via .NET API обеспечивает полную гибкость работы со страницами PDF‑документа на Python. Он хранит все страницы PDF‑документа в [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/), которую можно использовать для работы со страницами PDF.
+Aspose.PDF for Python via .NET позволяет вставлять страницу в [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) в любом месте файла, а также добавлять страницы в конец PDF‑файла. В этом разделе показано, как добавлять страницы в PDF с помощью Python.
 
-Aspose.PDF for Python via .NET API предоставляет полную гибкость для работы со страницами в PDF-документе с использованием Python. Он поддерживает все страницы PDF-документа в [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/), который можно использовать для работы со страницами PDF. Aspose.PDF for Python via .NET позволяет вставить страницу в PDF-документ в любое место в файле, а также добавлять страницы в конец PDF-файла. Этот раздел показывает, как добавлять страницы в PDF с использованием Python.
+## Добавление или вставка страницы в PDF‑файл
 
-## Добавить или вставить страницу в PDF-файл
+Aspose.PDF for Python via .NET позволяет вставлять страницу в [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) в любом месте файла, а также добавлять страницы в конец PDF‑файла.
 
-Aspose.PDF for Python via .NET позволяет вставить страницу в PDF-документ в любое место в файле, а также добавлять страницы в конец PDF-файла.
+### Вставка пустой страницы в PDF‑файл
 
-### Вставить пустую страницу в PDF-файл в желаемое место
+Чтобы вставить пустую страницу в PDF‑файл:
 
-Чтобы вставить пустую страницу в PDF-файл:
+1. Откройте существующий [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с помощью подходящих методов.
+1. Вставьте новую пустую страницу в конкретный индекс, используя метод `insert()` класса [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Сохраните изменённый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) в требуемый путь вывода.
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с входным PDF-файлом.
-
-1. Вызовите метод [insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) коллекции [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) с указанным индексом.
-1. Сохраните выходной PDF, используя метод [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-
-Следующий фрагмент кода показывает, как вставить страницу в PDF файл.
+Вставьте пустую страницу в существующий PDF‑файл в указанную позицию:
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Открыть документ
-    document = ap.Document(input_pdf)
-    # Вставить пустую страницу в PDF
+# Global configuration
+DATA_DIR = "your path here"
+
+def insert_empty_page(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
     document.pages.insert(2)
-    # Сохранить выходной файл
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
-### Добавить пустую страницу в конец PDF файла
+### Добавление пустой страницы в конец PDF‑файла
 
-Иногда необходимо, чтобы документ заканчивался пустой страницей. Эта тема объясняет, как вставить пустую страницу в конец PDF документа.
+Иногда необходимо, чтобы документ завершался пустой страницей. Эта тема объясняет, как вставить пустую страницу в конец PDF‑документа.
 
-Чтобы вставить пустую страницу в конец PDF файла:
+Чтобы вставить пустую страницу в конец PDF‑файла:
 
-1. Создайте объект класса [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с входным PDF файлом.
+1. Откройте существующий [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) с помощью подходящих методов.
+1. Добавьте новую пустую страницу в конец документа, используя метод `add()` класса [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Сохраните обновлённый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 
-1. Вызовите метод [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) коллекции [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/), без параметров.
-1. Сохраните выходной PDF, используя метод [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-
-Следующий фрагмент кода показывает, как вставить пустую страницу в конец PDF-файла.
+Следующий фрагмент кода показывает, как вставить пустую страницу в конец PDF‑файла.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Открыть документ
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Вставить пустую страницу в конец PDF-файла
+def add_empty_page_to_end(input_file_name, output_file_name):
+    # Open document
+    document = ap.Document(input_file_name)
+
+    # Insert an empty page at the end of a PDF file
     document.pages.add()
 
-    # Сохранить выходной файл
-    document.save(output_pdf)
+    # Save output file
+    document.save(output_file_name)
+```
+
+### Добавление страницы из другого PDF‑документа
+
+С помощью библиотеки Aspose.PDF for Python вы создаёте новый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), добавляете начальную страницу, а затем импортируете страницу из другого PDF‑файла.
+
+1. Создайте новый [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Добавьте новую пустую [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) и напишите на ней текст, используя [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/).
+1. Откройте другой существующий [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Скопируйте [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) из этого документа.
+1. Вставьте скопированную страницу в основной документ, используя [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Сохраните объединённый файл.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_page_from_another_document(input_file_name, output_file_name):
+    # Open document
+    document = ap.Document()
+    page = document.pages.add()
+    text_fragment = ap.text.TextFragment("This is first page!")
+    page.paragraphs.add(text_fragment)
+
+    another_document = ap.Document(input_file_name)
+    document.pages.add(another_document.pages[1])
+
+    # Save output file
+    document.save(output_file_name)
+```

@@ -1,95 +1,33 @@
 ---
-title: Añadir Anotaciones de Figuras usando Python
+title: Agregar anotaciones de figuras usando Python
 linktitle: Anotaciones de Figuras
 type: docs
 weight: 30
 url: /es/python-net/figures-annotation/
 description: Este artículo describe cómo agregar, obtener y eliminar anotaciones de figuras de su documento PDF con Aspose.PDF para Python a través de .NET
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guía sobre cómo manipular anotaciones de Figuras en PDF
+Abstract: Este artículo proporciona una guía completa sobre cómo agregar, recuperar y eliminar anotaciones de cuadrado, círculo, polígono y polilínea en documentos PDF utilizando Aspose.PDF para Python. Las anotaciones de cuadrado y círculo resaltan visualmente áreas específicas en una página PDF con formas rectangulares y elípticas, respectivamente. El artículo incluye instrucciones paso a paso y fragmentos de código Python para crear estas anotaciones cargando un archivo PDF, configurando propiedades de la anotación como título, color y opacidad, y agregándolas a las páginas del PDF. Además, el artículo detalla métodos para recuperar anotaciones por tipo, imprimiendo sus dimensiones rectangulares, y eliminándolas del documento PDF. También se cubren las anotaciones de polígono y polilínea, donde los polígonos se definen mediante una serie de vértices conectados que forman una forma cerrada, mientras que las polilíneas conectan vértices de manera abierta. El documento proporciona ejemplos de código para ilustrar los procesos de agregar estas anotaciones a un PDF, así como métodos para acceder y eliminarlas.
+
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Añadir Anotaciones de Figuras usando Python",
-    "alternativeHeadline": "Cómo agregar Anotaciones de Figuras en PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, anotaciones de figuras, anotación de polígono, anotación de línea, anotación de cuadrado, anotación de círculo",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/figures-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/figures-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Este artículo describe cómo agregar, obtener y eliminar anotaciones de figuras de su documento PDF con Aspose.PDF para Python"
-}
-</script>
 
+## Agregar anotaciones de Cuadrado y Círculo
 
-## Agregar Anotaciones de Cuadro y Círculo
+En los documentos PDF, una anotación de cuadrado se refiere a un tipo específico de anotación que está representada por una forma cuadrada. Las anotaciones de cuadrado se utilizan para resaltar o llamar la atención sobre un área o sección específica dentro del documento.
 
-En los documentos PDF, una anotación de cuadro se refiere a un tipo específico de anotación que se representa mediante una forma cuadrada. Las anotaciones de cuadro se utilizan para resaltar o llamar la atención sobre un área o sección específica dentro del documento.
+Las anotaciones de [Cuadrado](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) y [Círculo](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) deben mostrar, respectivamente, un rectángulo o una elipse en la página.
 
-Las anotaciones de [Cuadro](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) y [Círculo](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) mostrarán, respectivamente, un rectángulo o una elipse en la página.
+Pasos para crear anotaciones de Cuadrado o Círculo:
 
-Pasos para crear Anotaciones de Cuadro o Círculo:
+1. Cargar el archivo PDF - nuevo [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Crear una nueva [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) y establecer parámetros (new Rectangle, title, color, interior_color, opacity).
+1. Después necesitamos agregar la anotación de Cuadrado a la página.
 
-1. Cargar el archivo PDF - nuevo [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Crear nueva [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) y establecer parámetros (nuevo Rectángulo, título, color, color_interior, opacidad).
-1. Después necesitamos agregar la Anotación de Cuadro a la página.
-
-El siguiente fragmento de código muestra cómo agregar Anotaciones de Cuadro en una página PDF.
+El siguiente fragmento de código muestra cómo agregar anotaciones de Cuadrado en una página PDF.
 
 ```python
 
@@ -108,13 +46,13 @@ El siguiente fragmento de código muestra cómo agregar Anotaciones de Cuadro en
     document.save(output_file)
 ```
 
-El siguiente fragmento de código te muestra cómo añadir anotaciones de círculo en una página PDF.
+El siguiente fragmento de código muestra cómo agregar anotaciones de Círculo en una página PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Abrir documento
+    # Open document
     document = ap.Document(input_file)
 
     circleAnnotation = ap.annotations.CircleAnnotation(
@@ -132,14 +70,13 @@ El siguiente fragmento de código te muestra cómo añadir anotaciones de círcu
     document.save(output_file)
 ```
 
-
 Como ejemplo, veremos el siguiente resultado de agregar anotaciones de Cuadrado y Círculo a un documento PDF:
 
-![Demostración de Anotación de Círculo y Cuadrado](circle_demo.png)
+![Demo de anotación de Círculo y Cuadrado](circle_demo.png)
 
-### Obtener Anotación de Círculo
+### Obtener anotación de Círculo
 
-Por favor, intente usar el siguiente fragmento de código para Obtener Anotación de Círculo del documento PDF.
+Por favor, intente usar el siguiente fragmento de código para obtener la anotación de Círculo del documento PDF.
 
 ```python
 
@@ -156,9 +93,9 @@ Por favor, intente usar el siguiente fragmento de código para Obtener Anotació
         print(ca.rect)
 ```
 
-### Obtener Anotación de Cuadrado
+### Obtener anotación de Cuadrado
 
-Por favor, intente usar el siguiente fragmento de código para Obtener Anotación de Cuadrado del documento PDF.
+Por favor, intente usar el siguiente fragmento de código para obtener la anotación de Cuadrado del documento PDF.
 
 ```python
 
@@ -175,9 +112,10 @@ Por favor, intente usar el siguiente fragmento de código para Obtener Anotació
         print(pa.rect)
 ```
 
-### Eliminar Anotación de Círculo
 
-El siguiente fragmento de código muestra cómo eliminar una anotación de círculo de un archivo PDF.
+### Eliminar anotación de Círculo
+
+El siguiente fragmento de código muestra cómo eliminar la anotación de Círculo de un archivo PDF.
 
 ```python
 
@@ -196,9 +134,9 @@ El siguiente fragmento de código muestra cómo eliminar una anotación de círc
     document.save(output_file)
 ```
 
-### Eliminar anotación de cuadrado
+### Eliminar anotación de Cuadrado
 
-El siguiente fragmento de código muestra cómo eliminar una anotación de cuadrado de un archivo PDF.
+El siguiente fragmento de código muestra cómo eliminar la anotación de Cuadrado de un archivo PDF.
 
 ```python
 
@@ -217,21 +155,21 @@ El siguiente fragmento de código muestra cómo eliminar una anotación de cuadr
     document.save(output_file)
 ```
 
-## Agregar anotaciones de polígono y polilínea
+## Agregar anotaciones de Polígono y Polilínea
 
-La herramienta Polilínea te permite crear formas y contornos con un número arbitrario de lados en el documento.
+La herramienta Polilínea le permite crear formas y contornos con un número arbitrario de lados en el documento.
 
-[Polygon Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) representan polígonos en una página. Pueden tener cualquier número de vértices conectados por líneas rectas.
+[Anotaciones de Polígono](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) representan polígonos en una página. Pueden tener cualquier número de vértices conectados por líneas rectas.
 
-[Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) son también similares a los polígonos, la única diferencia es que los primeros y últimos vértices no están conectados implícitamente.
+[Anotaciones de Polilínea](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) son también similares a los polígonos, la única diferencia es que el primer y último vértice no están implícitamente conectados.
 
 Pasos con los que creamos anotaciones de Polígono:
 
-1. Cargar el archivo PDF - nuevo [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Crear nueva [Polygon Annotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) y establecer parámetros del Polígono (nuevo Rectángulo, nuevos Puntos, título, color, color_interior y opacidad).
-1. Después podemos añadir anotaciones a la página.
+1. Cargar el archivo PDF - nuevo [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Crear una nueva [Polygon Annotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) y establecer los parámetros del Polígono (new Rectangle, new Points, title, color, interior_color y opacity).
+1. Después podemos agregar anotaciones a la página.
 
-El siguiente fragmento de código muestra cómo añadir anotaciones de Polígono a un archivo PDF:
+El siguiente fragmento de código muestra cómo agregar anotaciones de Polígono a un archivo PDF:
 
 ```python
 
@@ -259,12 +197,11 @@ El siguiente fragmento de código muestra cómo añadir anotaciones de Polígono
     document.save(output_file)
 ```
 
+El siguiente fragmento de código muestra cómo agregar anotaciones de Polilínea a un archivo PDF:
 
-El siguiente fragmento de código muestra cómo añadir anotaciones de polilínea a un archivo PDF:
-
-1. Cargar el archivo PDF - nuevo [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Crear nuevas [Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) y configurar los parámetros del polígono (nuevo Rectangle, nuevos Points, título, color, interior_color y opacidad).
-1. Después podemos añadir las anotaciones a la página.
+1. Cargar el archivo PDF - nuevo [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Crear una nueva [Anotaciones de Polilínea](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) y establecer los parámetros del Polígono (new Rectangle, new Points, title, color, interior_color y opacity).
+1. Después podemos agregar anotaciones a la página.
 
 ```python
 
@@ -272,7 +209,6 @@ El siguiente fragmento de código muestra cómo añadir anotaciones de polilíne
 
     document = ap.Document(input_file)
 
-    # Crear una nueva anotación de polilínea
     polylineAnnotation = ap.annotations.PolylineAnnotation(
         document.pages[1],
         ap.Rectangle(270, 193, 571, 383, True),
@@ -290,15 +226,13 @@ El siguiente fragmento de código muestra cómo añadir anotaciones de polilíne
         document.pages[1], ap.Rectangle(842, 196, 1021, 338, True)
     )
 
-    # Añadir la anotación a la página
     document.pages[1].annotations.append(polylineAnnotation)
     document.save(output_file)
 ```
 
+### Obtener anotaciones de Polígono y Polilínea
 
-### Obtener Anotaciones de Polígono y Polilínea
-
-Por favor, intente usar el siguiente fragmento de código para obtener anotaciones de polígono en un documento PDF.
+Por favor, intente usar el siguiente fragmento de código para obtener anotaciones de Polígono en el documento PDF.
 
 ```python
 
@@ -315,7 +249,7 @@ Por favor, intente usar el siguiente fragmento de código para obtener anotacion
         print(pa.rect)
 ```
 
-Por favor, intente usar el siguiente fragmento de código para obtener anotaciones de polilínea en un documento PDF.
+Por favor, intente usar el siguiente fragmento de código para obtener anotaciones de Polilínea en el documento PDF.
 
 ```python
 
@@ -332,9 +266,9 @@ Por favor, intente usar el siguiente fragmento de código para obtener anotacion
         print(pa.rect)
 ```
 
-### Eliminar Anotaciones de Polígono y Polilínea
+### Eliminar anotaciones de Polígono y Polilínea
 
-El siguiente fragmento de código muestra cómo eliminar anotaciones de polígono de un archivo PDF.
+El siguiente fragmento de código muestra cómo eliminar anotaciones de Polígono de un archivo PDF.
 
 ```python
 
@@ -352,7 +286,6 @@ El siguiente fragmento de código muestra cómo eliminar anotaciones de polígon
 
     document.save(output_file)
 ```
-
 
 El siguiente fragmento de código muestra cómo eliminar anotaciones de polilínea de un archivo PDF.
 
@@ -373,66 +306,4 @@ El siguiente fragmento de código muestra cómo eliminar anotaciones de polilín
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

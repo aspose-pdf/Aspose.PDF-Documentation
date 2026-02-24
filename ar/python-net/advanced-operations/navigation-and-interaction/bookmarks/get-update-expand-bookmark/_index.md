@@ -1,96 +1,33 @@
 ---
-title: الحصول على، تحديث وتوسيع إشارة مرجعية باستخدام بايثون
-linktitle: الحصول على، تحديث وتوسيع إشارة مرجعية
+title: إحضار، تحديث وتوسيع علامة مرجعية باستخدام بايثون
+linktitle: إحضار، تحديث وتوسيع علامة مرجعية
 type: docs
 weight: 20
 url: /ar/python-net/get-update-and-expand-bookmark/
-description: تصف هذه المقالة كيفية استخدام الإشارات المرجعية في ملف PDF باستخدام مكتبة Aspose.PDF لبايثون.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: يصف هذا المقال كيفية استخدام العلامات المرجعية في ملف PDF باستخدام مكتبة Aspose.PDF للبايثون الخاصة بنا.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية استخدام العلامات المرجعية في PDF باستخدام بايثون
+Abstract: يوفر هذا المقال دليلًا شاملاً لإدارة العلامات المرجعية داخل مستند PDF باستخدام مكتبة Aspose.PDF في بايثون. يبدأ بشرح كيفية استرجاع العلامات المرجعية من ملف PDF عبر `OutlineCollection`، التي تحتوي على جميع العلامات المرجعية، ويُفصل طريقة الوصول إلى خصائص العلامة المرجعية عبر `OutlineItemCollection`. ثم يصف المقال عملية تحديد رقم الصفحة المرتبط بالعلامة المرجعية باستخدام `PdfBookmarkEditor`. كما يوضح كيفية التعامل مع هياكل العلامات المرجعية الهرمية عن طريق استرجاع العلامات المرجعية الفرعية داخل كل `OutlineItemCollection`. يغطي أيضًا تحديث خصائص العلامة المرجعية، موضحًا كيفية تعديل خصائصها وحفظ التغييرات إلى ملف PDF. أخيرًا، يتناول المقال الحاجة لتوسيع العلامات المرجعية عند عرض المستند، موضحًا كيفية تعيين حالة الفتح لكل علامة مرجعية لضمان توسعتها افتراضيًا. تصاحب كل قسم مقاطع شفرة برمجية تُقدم أمثلة عملية لتطبيق هذه الوظائف.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "الحصول على، تحديث وتوسيع إشارة مرجعية باستخدام بايثون",
-    "alternativeHeadline": "كيفية الحصول على إشارات مرجعية من ملف PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, python, الحصول على إشارات مرجعية",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/get-update-and-expand-bookmark/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/get-update-and-expand-bookmark/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "تصف هذه المقالة كيفية استخدام الإشارات المرجعية في ملف PDF باستخدام مكتبة Aspose.PDF لبايثون."
-}
-</script>
 
+## الحصول على العلامات المرجعية
 
-## الحصول على الإشارات المرجعية
+تحتوي مجموعة [المستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) كائن [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) على جميع علامات مرجعية ملف PDF. يشرح هذا المقال كيفية الحصول على العلامات المرجعية من ملف PDF، وكيفية معرفة الصفحة التي توجد عليها علامة مرجعية معينة.
 
-تحتوي مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) الخاصة بكائن [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) على جميع الإشارات المرجعية لملف PDF. يوضح هذا المقال كيفية الحصول على الإشارات المرجعية من ملف PDF، وكيفية معرفة الصفحة التي توجد بها إشارة مرجعية معينة.
-
-للحصول على الإشارات المرجعية، قم بالتكرار خلال مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) واحصل على كل إشارة مرجعية في OutlineItemCollection. يوفر [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) الوصول إلى جميع سمات الإشارة المرجعية. يُظهر لك مقطع الشيفرة التالي كيفية الحصول على الإشارات المرجعية من ملف PDF.
+للحصول على العلامات المرجعية، قم بالتكرار عبر مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) واحصل على كل علامة مرجعية في OutlineItemCollection. توفر [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) الوصول إلى جميع خصائص العلامة المرجعية. يوضح مقطع الشفرة التالي كيفية الحصول على العلامات المرجعية من ملف PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # افتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # قم بالتكرار خلال جميع الإشارات المرجعية
+    # Loop through all the bookmarks
     for i in range(len(document.outlines)):
         outline_item = document.outlines[i + 1]
         print(outline_item.title)
@@ -99,44 +36,42 @@ sitemap:
         print(outline_item.color)
 ```
 
+## الحصول على رقم صفحة العلامة المرجعية
 
-## الحصول على رقم الصفحة للإشارة المرجعية
-
-بمجرد إضافة إشارة مرجعية، يمكنك معرفة الصفحة التي توجد عليها من خلال الحصول على رقم الصفحة المرتبط بكائن الإشارة المرجعية.
+بعد إضافة علامة مرجعية، يمكنك معرفة الصفحة التي توجد عليها عن طريق الحصول على رقم الصفحة (PageNumber) المرتبط بالهدف في كائن العلامة المرجعية.
 
 ```python
 
     import aspose.pdf as ap
 
-    # إنشاء محرر الإشارات المرجعية
+    # Create PdfBookmarkEditor
     bookmarkEditor = ap.facades.PdfBookmarkEditor()
-    # فتح ملف PDF
+    # Open PDF file
     bookmarkEditor.bind_pdf(input_pdf)
-    # استخراج الإشارات المرجعية
+    # Extract bookmarks
     bookmarks = bookmarkEditor.extract_bookmarks()
     for bookmark in bookmarks:
         str_level_seprator = ""
         for i in range(bookmark.level):
             str_level_seprator += "----"
 
-        print(str_level_seprator, "العنوان:", bookmark.title)
-        print(str_level_seprator, "رقم الصفحة:", bookmark.page_number)
-        print(str_level_seprator, "إجراء الصفحة:", bookmark.action)
+        print(str_level_seprator, "Title:", bookmark.title)
+        print(str_level_seprator, "Page Number:", bookmark.page_number)
+        print(str_level_seprator, "Page Action:", bookmark.action)
 ```
 
-## الحصول على الإشارات المرجعية الفرعية من مستند PDF
+## الحصول على العلامات المرجعية الفرعية من مستند PDF
 
-يمكن تنظيم الإشارات المرجعية في هيكل هرمي، مع الآباء والأطفال.
-  للحصول على جميع العلامات المرجعية، قم بالتكرار من خلال مجموعات الكائن Document الخاصة بعناصر Outlines. ومع ذلك، للحصول على العلامات المرجعية الفرعية أيضًا، قم بالتكرار من خلال جميع العلامات المرجعية في كل كائن [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) يتم الحصول عليه في الحلقة الأولى. تعرض مقتطفات الشيفرة التالية كيفية الحصول على العلامات المرجعية الفرعية من مستند PDF.
+يمكن تنظيم العلامات المرجعية في هيكل هرمي، مع الأبواب والأبناء. للحصول على جميع العلامات المرجعية، قم بالتكرار عبر مجموعات Outlines لكائن المستند. ومع ذلك، للحصول على العلامات المرجعية الفرعية أيضًا، قم بالتكرار عبر جميع العلامات المرجعية في كل كائن [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) الذي تم الحصول عليه في الحلقة الأولى. يوضح مقاطع الشفرة التالية كيفية الحصول على العلامات المرجعية الفرعية من مستند PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # افتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # كرر عبر جميع العلامات المرجعية
+    # Loop through all the bookmarks
     for i in range(len(document.outlines)):
         outline_item = document.outlines[i + 1]
         print(outline_item.title)
@@ -145,8 +80,8 @@ sitemap:
         print(outline_item.color)
         count = len(outline_item)
         if count > 0:
-            print("العلامات المرجعية الفرعية")
-            # هناك علامات مرجعية فرعية، ثم كرر من خلالها أيضًا
+            print("Child Bookmarks")
+            # There are child bookmarks then loop through that as well
             for j in range(len(outline_item)):
                 child_outline_item = outline_item[i + 1]
                 print(child_outline_item.title)
@@ -155,116 +90,53 @@ sitemap:
                 print(child_outline_item.color)
 ```
 
-## تحديث الإشارات المرجعية في مستند PDF
+## تحديث العلامات المرجعية في مستند PDF
 
-لتحديث إشارة مرجعية في ملف PDF، أولاً، احصل على الإشارة المرجعية المحددة من مجموعة OutlineColletion لكائن المستند عن طريق تحديد فهرس الإشارة المرجعية. بمجرد استرجاع الإشارة المرجعية إلى كائن [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/)، يمكنك تحديث خصائصها ثم حفظ ملف PDF المحدث باستخدام طريقة Save. توضح مقتطفات الشيفرة التالية كيفية تحديث الإشارات المرجعية في مستند PDF.
+لتحديث علامة مرجعية في ملف PDF، أولاً احصل على العلامة المرجعية المحددة من مجموعة OutlineColletion لكائن المستند عن طريق تحديد فهرس العلامة. بمجرد استرجاع العلامة المرجعية إلى كائن [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/)، يمكنك تحديث خصائصها ثم حفظ ملف PDF المحدث باستخدام طريقة Save. يوضح مقاطع الشفرة التالية كيفية تحديث العلامات المرجعية في مستند PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # افتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # احصل على كائن الإشارة المرجعية
+    # Get a bookmark object
     outline = document.outlines[1]
 
-    # احصل على كائن الإشارة المرجعية الفرعية
+    # Get child bookmark object
     child_outline = outline[1]
     child_outline.title = "Updated Outline"
     child_outline.italic = True
     child_outline.bold = True
 
-    # احفظ النتيجة
+    # Save output
     document.save(output_pdf)
 ```
 
-## الإشارات المرجعية الموسعة عند عرض المستند
+## توسيع العلامات المرجعية عند عرض المستند
 
-تُحتفظ الإشارات المرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) لكائن المستند، وهي نفسها في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
- ومع ذلك، قد يكون لدينا متطلب بأن تكون جميع العلامات المرجعية موسعة عند عرض ملف PDF.
+تُخزن العلامات المرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) لكائن المستند، والتي هي بدورها في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/). ومع ذلك، قد تكون لدينا حاجة لجعل جميع العلامات المرجعية موسعة عند عرض ملف PDF.
 
-من أجل تحقيق هذا المتطلب، يمكننا تعيين حالة الفتح لكل عنصر مخطط/علامة مرجعية كما هو مفتوح. يوضح لك مقتطف الكود التالي كيفية تعيين حالة الفتح لكل علامة مرجعية كموسع في مستند PDF.
+لتحقيق هذا المتطلب، يمكننا تعيين حالة الفتح لكل عنصر مخطط/علامة مرجعية كـ Open. يوضح مقطع الشفرة التالي كيفية تعيين حالة الفتح لكل علامة مرجعية لتكون موسعة في مستند PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # افتح المستند
+    # Open document
     document = ap.Document(input_pdf)
 
-    # تعيين وضع عرض الصفحة، أي إظهار الصور المصغرة، ملء الشاشة، إظهار لوحة المرفقات
+    # Set page view mode i.e. show thumbnails, full-screen, show attachment panel
     document.page_mode = ap.PageMode.USE_OUTLINES
-    # الانتقال عبر كل عنصر مخطط في مجموعة المخططات في ملف PDF
+    # Traverse through each Ouline item in outlines collection of PDF file
     for i in range(len(document.outlines)):
         item = document.outlines[i + 1]
-        # تعيين حالة الفتح لعنصر المخطط
+        # Set open status for outline item
         item.open = True
 
-    # حفظ الإخراج
+    # Save output
     document.save(output_pdf)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

@@ -1,95 +1,33 @@
 ---
-title: إضافة تعليقات توضيحية على الأشكال باستخدام بايثون
-linktitle: تعليقات توضيحية على الأشكال
+title: إضافة تعليقات توضيحية للأشكال باستخدام Python
+linktitle: تعليقات توضيحية للأشكال
 type: docs
 weight: 30
 url: /ar/python-net/figures-annotation/
-description: يصف هذا المقال كيفية إضافة، الحصول على، وحذف التعليقات التوضيحية للأشكال من مستند PDF الخاص بك باستخدام Aspose.PDF للبايثون عبر .NET
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: تصف هذه المقالة كيفية إضافة واسترجاع وحذف تعليقات توضيحية للأشكال من مستند PDF الخاص بك باستخدام Aspose.PDF for Python عبر .NET
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
----
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "إضافة تعليقات توضيحية على الأشكال باستخدام بايثون",
-    "alternativeHeadline": "كيفية إضافة تعليقات توضيحية على الأشكال في PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, python, تعليقات توضيحية على الأشكال, تعليق متعدد الأضلاع, تعليق خطي, تعليق مربع, تعليق دائري",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/figures-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/figures-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يصف هذا المقال كيفية إضافة، الحصول على، وحذف التعليقات التوضيحية للأشكال من مستند PDF الخاص بك باستخدام Aspose.PDF للبايثون"
-}
-</script>
+TechArticle: true
+AlternativeHeadline: دليل حول كيفية التعامل مع تعليقات توضيحية للأشكال في PDF
+Abstract: توفر هذه المقالة دليلًا شاملًا حول إضافة واسترجاع وحذف تعليقات توضيحية من نوع المربع، الدائرة، المضلع، والخط المتعدد في مستندات PDF باستخدام Aspose.PDF for Python. تُبرز تعليقات المربع والدائرة بصريًا مناطق محددة على صفحة PDF بأشكال مستطيلة وبيضوية على التوالي. تتضمن المقالة تعليمات خطوة بخطوة ومقاطع كود Python لإنشاء هذه التعليقات عن طريق تحميل ملف PDF، وتكوين خصائص التعليق مثل العنوان واللون والشفافية، وإلحاقها بصفحات PDF. بالإضافة إلى ذلك، توضح المقالة طرقًا لاسترجاع التعليقات حسب النوع، وطباعة أبعادها المستطيلة، وحذفها من مستند PDF. كما يتم تغطية تعليقات المضلع والخط المتعدد، حيث يُعرف المضلع بسلسلة من الرؤوس المتصلة التي تشكل شكلًا مغلقًا، بينما يربط الخط المتعدد الرؤوس بطريقة مفتوحة. يوفر المستند أمثلة على الكود لتوضيح عمليات إضافة هذه التعليقات إلى PDF، فضلاً عن طرق الوصول إليها وإزالتها.
 
+---
 
 ## إضافة تعليقات توضيحية للمربع والدائرة
 
-في مستندات PDF، تشير التعليقات التوضيحية للمربع إلى نوع معين من التعليقات التوضيحية التي يتم تمثيلها بشكل مربع. تُستخدم التعليقات التوضيحية للمربع لتسليط الضوء أو جذب الانتباه إلى منطقة أو قسم محدد داخل المستند.
+في مستندات PDF، تشير تعليقة المربع إلى نوع معين من التعليقات يتم تمثيلها بشكل مربع. تُستخدم تعليقات المربع لتسليط الضوء أو لجذب الانتباه إلى منطقة أو قسم معين داخل المستند.
 
-يجب أن تعرض التعليقات التوضيحية [المربع](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) و[الدائرة](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) على التوالي، مستطيلًا أو قطع ناقص على الصفحة.
+[المربع](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) و [الدائرة](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) يجب أن تعرض، على التوالي، مستطيلًا أو إهليلجًا في الصفحة.
 
-خطوات إنشاء تعليقات توضيحية للمربع أو الدائرة:
+خطوات إنشاء تعليقات المربع أو الدائرة:
 
-1. تحميل ملف PDF - [مستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) جديد.
-2. إنشاء [تعليق توضيحي للمربع](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) جديد وتعيين المعلمات (مستطيل جديد، عنوان، لون، لون داخلي، شفافية).
-3. بعد ذلك، نحتاج إلى إضافة تعليق توضيحي للمربع إلى الصفحة.
+1. تحميل ملف PDF - جديد [المستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. إنشاء [تعليق المربع](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) جديد وتعيين المعلمات (مستطيل جديد، العنوان، اللون، اللون الداخلي، الشفافية).
+1. بعد ذلك نحتاج إلى إضافة تعليقة المربع إلى الصفحة.
 
-يظهر مقتطف الشفرة التالي كيفية إضافة تعليقات توضيحية للمربع في صفحة PDF.
+المقتطف البرمجي التالي يوضح لك كيفية إضافة تعليقات المربع في صفحة PDF.
 
 ```python
 
@@ -98,7 +36,7 @@ sitemap:
     document = ap.Document(input_file)
 
     squareAnnotation = ap.annotations.SquareAnnotation(document.pages[1], ap.Rectangle(60, 600, 250, 450, True))
-    squareAnnotation.title = "جون سميث"
+    squareAnnotation.title = "John Smith"
     squareAnnotation.color = ap.Color.blue
     squareAnnotation.interior_color = ap.Color.blue_violet
     squareAnnotation.opacity = 0.25
@@ -108,19 +46,19 @@ sitemap:
     document.save(output_file)
 ```
 
-يظهر لك جزء الشيفرة التالي كيفية إضافة تعليقات دائرية في صفحة PDF.
+المقتطف البرمجي التالي يوضح لك كيفية إضافة تعليقات الدائرة في صفحة PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # افتح المستند
+    # Open document
     document = ap.Document(input_file)
 
     circleAnnotation = ap.annotations.CircleAnnotation(
         document.pages[1], ap.Rectangle(270, 160, 483, 383, True)
     )
-    circleAnnotation.title = "جون سميث"
+    circleAnnotation.title = "John Smith"
     circleAnnotation.color = ap.Color.red
     circleAnnotation.interior_color = ap.Color.misty_rose
     circleAnnotation.opacity = 0.5
@@ -132,14 +70,13 @@ sitemap:
     document.save(output_file)
 ```
 
+كمثال، سنرى النتيجة التالية لإضافة تعليقات المربع والدائرة إلى مستند PDF:
 
-كمثال، سنرى النتيجة التالية لإضافة توضيحات المربع والدائرة إلى مستند PDF:
+![عرض توضيحي لتعليقات الدائرة والمربع](circle_demo.png)
 
-![عرض توضيح الدائرة والمربع](circle_demo.png)
+### الحصول على تعليقة الدائرة
 
-### الحصول على توضيح الدائرة
-
-يرجى محاولة استخدام مقطع الكود التالي للحصول على توضيح الدائرة من مستند PDF.
+يرجى تجربة المقتطف البرمجي التالي للحصول على تعليقة الدائرة من مستند PDF.
 
 ```python
 
@@ -156,9 +93,9 @@ sitemap:
         print(ca.rect)
 ```
 
-### الحصول على توضيح المربع
+### الحصول على تعليقة المربع
 
-يرجى محاولة استخدام مقطع الكود التالي للحصول على توضيح المربع من مستند PDF.
+يرجى تجربة المقتطف البرمجي التالي للحصول على تعليقة المربع من مستند PDF.
 
 ```python
 
@@ -176,10 +113,9 @@ sitemap:
 ```
 
 
+### حذف تعليقة الدائرة
 
-### حذف توضيح الدائرة
-
-يوضح مقطع الشيفرة التالي كيفية حذف التعليق التوضيحي الدائري من ملف PDF.
+المقتطف البرمجي التالي يوضح كيفية حذف تعليقة الدائرة من ملف PDF.
 
 ```python
 
@@ -198,9 +134,9 @@ sitemap:
     document.save(output_file)
 ```
 
-### حذف التعليق التوضيحي المربع
+### حذف تعليقة المربع
 
-يوضح مقطع الشيفرة التالي كيفية حذف التعليق التوضيحي المربع من ملف PDF.
+المقتطف البرمجي التالي يوضح كيفية حذف تعليقة المربع من ملف PDF.
 
 ```python
 
@@ -219,21 +155,21 @@ sitemap:
     document.save(output_file)
 ```
 
-## إضافة تعليقات توضيحية متعددة الأضلاع ومتعددة الخطوط
+## إضافة تعليقات المضلع والخط المتعدد
 
-تتيح لك أداة متعددة الخطوط إنشاء أشكال ومحيطات بعدد تعسفي من الجوانب على المستند.
+تتيح لك أداة الخط المتعدد إنشاء أشكال وتخطيطات بعدد تعسفي من الجوانب على المستند.
 
-[التعليقات التوضيحية متعددة الأضلاع](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) تمثل المضلعات على الصفحة. يمكن أن تحتوي على أي عدد من الرؤوس المتصلة بخطوط مستقيمة.
+[تعليقات المضلع](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) تمثل مضلعات على الصفحة. يمكن أن تحتوي على أي عدد من الرؤوس المرتبطة بخطوط مستقيمة.
 
-[التعليقات التوضيحية متعددة الخطوط](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) تشبه أيضًا المضلعات، والفرق الوحيد هو أن الرؤوس الأولى والأخيرة غير متصلة ضمناً.
+[تعليقات الخط المتعدد](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) مشابهة أيضًا للمضلعات، الفرق الوحيد هو أن الرأسين الأول والأخير لا يربطان بشكل ضمني.
 
-الخطوات التي ننشئ بها التعليقات التوضيحية متعددة الأضلاع:
+خطوات إنشاء تعليقات المضلع:
 
-1. تحميل ملف PDF - [وثيقة جديدة](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-2. إنشاء [تعليق توضيحي متعدد الأضلاع](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) جديد وتعيين معلمات المضلع (مستطيل جديد، نقاط جديدة، عنوان، لون، لون داخلي وشفافية).
-3. بعد ذلك يمكننا إضافة التعليقات التوضيحية إلى الصفحة.
+1. تحميل ملف PDF - جديد [المستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. إنشاء [تعليق مضلع](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) جديد وتعيين معلمات المضلع (مستطيل جديد، نقاط جديدة، العنوان، اللون، اللون الداخلي والشفافية).
+1. بعد ذلك يمكننا إضافة التعليقات إلى الصفحة.
 
-يوضح snippet الكود التالي كيفية إضافة التعليقات التوضيحية متعددة الأضلاع إلى ملف PDF:
+المقتطف البرمجي التالي يوضح كيفية إضافة تعليقات المضلع إلى ملف PDF:
 
 ```python
 
@@ -261,12 +197,11 @@ sitemap:
     document.save(output_file)
 ```
 
+المقتطف البرمجي التالي يوضح كيفية إضافة تعليقات الخط المتعدد إلى ملف PDF:
 
-The following code snippet shows how to add Polyline Annotations to a PDF file:
-
-1. تحميل ملف PDF - [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) جديد.
-1. إنشاء [Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) جديد وتعيين معلمات المضلع (مستطيل جديد، نقاط جديدة، عنوان، لون، لون داخلي وعتامة).
-1. بعد ذلك يمكننا إضافة التعليقات التوضيحية إلى الصفحة.
+1. تحميل ملف PDF - جديد [المستند](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. إنشاء [تعليقات الخط المتعدد](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) جديد وتعيين معلمات المضلع (مستطيل جديد، نقاط جديدة، العنوان، اللون، اللون الداخلي والشفافية).
+1. بعد ذلك يمكننا إضافة التعليقات إلى الصفحة.
 
 ```python
 
@@ -295,10 +230,9 @@ The following code snippet shows how to add Polyline Annotations to a PDF file:
     document.save(output_file)
 ```
 
+### الحصول على تعليقات المضلع والخط المتعدد
 
-### الحصول على التعليقات التوضيحية متعددة الأضلاع والخطوط المتعددة
-
-يرجى تجربة استخدام جزء الكود التالي للحصول على التعليقات التوضيحية متعددة الأضلاع في مستند PDF.
+يرجى تجربة المقتطف البرمجي التالي للحصول على تعليقات المضلع في مستند PDF.
 
 ```python
 
@@ -315,7 +249,7 @@ The following code snippet shows how to add Polyline Annotations to a PDF file:
         print(pa.rect)
 ```
 
-يرجى تجربة استخدام جزء الكود التالي للحصول على التعليقات التوضيحية للخطوط المتعددة في مستند PDF.
+يرجى تجربة المقتطف البرمجي التالي للحصول على تعليقات الخط المتعدد في مستند PDF.
 
 ```python
 
@@ -332,9 +266,9 @@ The following code snippet shows how to add Polyline Annotations to a PDF file:
         print(pa.rect)
 ```
 
-### حذف التعليقات التوضيحية متعددة الأضلاع والخطوط المتعددة
+### حذف تعليقات المضلع والخط المتعدد
 
-يوضح جزء الكود التالي كيفية حذف التعليقات التوضيحية متعددة الأضلاع من ملف PDF.
+المقتطف البرمجي التالي يوضح كيفية حذف تعليقات المضلع من ملف PDF.
 
 ```python
 
@@ -353,8 +287,7 @@ The following code snippet shows how to add Polyline Annotations to a PDF file:
     document.save(output_file)
 ```
 
-
-يعرض مقتطف الشيفرة التالي كيفية حذف تعليقات الخط متعدد الأضلاع من ملف PDF.
+المقتطف البرمجي التالي يوضح كيفية حذف تعليقات Polyline من ملف PDF.
 
 ```python
 
@@ -373,66 +306,4 @@ The following code snippet shows how to add Polyline Annotations to a PDF file:
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

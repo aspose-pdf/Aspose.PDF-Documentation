@@ -1,545 +1,906 @@
 ---
-title: إنشاء أو إضافة جدول في PDF باستخدام Python
-linktitle: إنشاء أو إضافة جدول
+title: إضافة جداول إلى PDF باستخدام بايثون
+linktitle: إضافة جداول
 type: docs
 weight: 10
-url: /ar/python-net/add-table-in-existing-pdf-document/
-description: Aspose.PDF for Python عبر .NET هي مكتبة تستخدم لإنشاء وقراءة وتحرير جداول PDF. تحقق من الوظائف المتقدمة الأخرى في هذا الموضوع.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+url: /ar/python-net/adding-tables/
+description: Aspose.PDF for Python عبر .NET هو مكتبة تُستخدم لإنشاء وجداول PDF وقراءتها وتعديلها. تحقق من الوظائف المتقدمة الأخرى في هذا الموضوع.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية إضافة جدول إلى PDF باستخدام بايثون
+Abstract: توفر هذه المقالة دليلًا شاملاً لإنشاء ومعالجة الجداول في مستندات PDF باستخدام مكتبة Aspose.PDF لـ Python عبر .NET. توضح الخطوات لإضافة جداول إلى ملفات PDF الموجودة، بما في ذلك ضبط حدود الجدول وهوامش الخلايا والمسافات الداخلية. بالإضافة إلى ذلك، تستكشف الوظائف المتقدمة مثل دمج الأعمدة والصفوف باستخدام `col_span` و `row_span`، وتطبيق إعدادات AutoFit المختلفة، والحصول ديناميكيًا على عرض الجدول. كما تُظهر المقالة إدراج صور SVG في خلايا الجداول وفرض فواصل الصفحات أو عرض الجداول في صفحات جديدة. توضح مقتطفات الشيفرة كل وظيفة، مبيّنًا كيفية إدارة تخطيط الجدول والمحتوى بفعالية في مستندات PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "إنشاء أو إضافة جدول في PDF باستخدام Python",
-    "alternativeHeadline": "كيفية إضافة جدول في PDF باستخدام Python عبر .NET",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, python, إنشاء جدول في pdf, إضافة جدول",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-table-in-existing-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-table-in-existing-pdf-document/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Aspose.PDF for Python عبر .NET هي مكتبة تستخدم لإنشاء وقراءة وتحرير جداول PDF. تحقق من الوظائف المتقدمة الأخرى في هذا الموضوع."
-}
-</script>
 
+إضافة جداول إلى مستندات PDF الموجودة هي حاجة شائعة لتحسين عرض البيانات، تنظيم المعلومات، أو إنشاء تقارير. **Aspose.PDF for Python عبر .NET** يقدم حلاً شاملاً لهذه المهمة، مما يتيح للمطورين إدراج جداول في ملفات PDF الحالية بسلاسة.
 
-## إنشاء جدول باستخدام بايثون
+يقدم هذا الدليل نهجًا خطوة بخطوة لإضافة جداول إلى مستندات PDF الموجودة باستخدام Aspose.PDF for Python عبر .NET. يغطي دليلًا تهيئة الجدول، ضبط عرض الأعمدة، تعريف الحدود، تعبئة الصفوف والخلايا، وحفظ المستند المعدل. بالإضافة إلى ذلك، يستكشف الدليل الميزات المتقدمة، مثل معالجة حدود الخلايا، تطبيق الهوامش والمسافات الداخلية، واستخدام إعدادات AutoFit لضبط أبعاد الجدول ديناميكيًا.
 
-الجداول مهمة عند العمل مع مستندات PDF. توفر ميزات رائعة لعرض المعلومات بطريقة منظمة. تحتوي مساحة الأسماء Aspose.PDF على فئات باسم [Table](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/)، و[Cell](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/)، و[Row](https://reference.aspose.com/pdf/python-net/aspose.pdf/row/) التي توفر وظائف لإنشاء الجداول عند إنشاء مستندات PDF من الصفر.
+سواء كنت تسعى لتحسين جاذبية مظهر ملفات PDF الخاصة بك أو تنظيم البيانات بشكل أكثر فعالية، فإن هذا الدليل يُعد مصدرًا قيمًا للاستفادة من قدرات Aspose.PDF for Python القوية في تعديل الجداول.
 
-يمكن إنشاء جدول عن طريق إنشاء كائن من فئة Table.
+## إنشاء جداول أساسية
 
-```python
+## إنشاء جدول
 
-    table = ap.Table()
-```
+يوضح هذا المثال كيفية إنشاء جدول في مستند PDF مع حدود وعدة صفوف.
 
-### إضافة جدول إلى مستند PDF موجود
-
-لإضافة جدول إلى ملف PDF موجود باستخدام Aspose.PDF لبايثون عبر .NET، اتبع الخطوات التالية:
-
-1. قم بتحميل الملف المصدر.
-2. قم بتهيئة جدول واضبط أعمدته وصفوفه.
-3. اضبط إعدادات الجدول (لقد قمنا بتعيين الحدود).
-4. قم بملء الجدول.
-5. أضف الجدول إلى الصفحة.
-6. احفظ الملف.
-
-توضح مقتطفات الشيفرة التالية كيفية إضافة نص في ملف PDF موجود.
+1. إنشاء مستند PDF جديد.
+1. إضافة صفحة فارغة إلى المستند.
+1. تهيئة الجدول.
+1. ضبط حدود الجدول العامة.
+1. ضبط الحدود للخلايا الفردية.
+1. إضافة صفوف وخلايا.
+1. إدراج الجدول في الصفحة.
+1. حفظ ملف PDF إلى المسار المحدد.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
 
-    # تحميل مستند PDF المصدر
-    doc = ap.Document(input_file)
-    # تهيئة مثيل جديد من الجدول
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Load source PDF document
+    document = ap.Document()
+    page = document.pages.add()
+    # Initializes a new instance of the Table
     table = ap.Table()
-    # تعيين لون حدود الجدول كرمادي فاتح
-    table.border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.from_rgb(apd.Color.light_gray))
-    # تعيين الحدود لخلايا الجدول
-    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.from_rgb(apd.Color.light_gray))
-    # إنشاء حلقة لإضافة 10 صفوف
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 5, ap.Color.light_gray)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.ALL, 5, ap.Color.light_gray
+    )
+    # Create a loop to add 10 rows
     for row_count in range(0, 10):
-        # إضافة صف إلى الجدول
+        # Add row to table
         row = table.rows.add()
-        # إضافة خلايا الجدول
-        row.cells.add("عمود (" + str(row_count) + ", 1)")
-        row.cells.add("عمود (" + str(row_count) + ", 2)")
-        row.cells.add("عمود (" + str(row_count) + ", 3)")
-    # إضافة كائن الجدول إلى الصفحة الأولى من المستند المدخل
-    doc.pages[1].paragraphs.add(table)
-    # حفظ المستند المحدث الذي يحتوي على كائن الجدول
-    doc.save(output_file)
+        # Add table cells
+        row.cells.add("Column (" + str(row_count) + ", 1)")
+        row.cells.add("Column (" + str(row_count) + ", 2)")
+        row.cells.add("Column (" + str(row_count) + ", 3)")
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+
+    # Save updated document containing table object
+    document.save(path_outfile)
+```
+
+### إضافة صور إلى خلايا الجدول
+
+توضح مقطع الشيفرة هذا كيفية إدراج صور في خلايا الجدول داخل مستند PDF.
+
+1. إنشاء مستند PDF جديد.
+1. تهيئة الجدول.
+1. ضبط عرض الأعمدة بالنقاط.
+1. يتم إضافة قطعة نص إلى الخلية الأولى.
+1. يتم إضافة كائن 'ap.Image()' إلى الخلية الثانية.
+1. ضبط المسار إلى ملف الصورة باستخدام 'img.file'.
+1. يتحكم 'img.fix_width' و 'img.fix_height' في حجم الصورة داخل الخلية.
+1. إدراج الجدول في صفحة PDF.
+1. حفظ ملف PDF.
+
+```python
+
+    import aspose.pdf as ap
+    from os import path
+
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+    # Set width for table cells
+    table.column_widths = "200 100"
+
+    # Create row object and add it to table instance
+    row = table.rows.add()
+    # Create cell object and add it to row instance
+    cell = row.cells.add()
+    # Add textfragment to paragraphs collection of cell object
+    cell.paragraphs.add(ap.text.TextFragment(image))
+    # Create an image instance
+    img = ap.Image()
+    # Set image type as SVG
+    # Path for source file
+    img.file = path.join(self.data_dir, image)
+    # Set width for image instance
+    img.fix_width = 50
+    # Set height for image instance
+    img.fix_height = 50
+    # Add another cell to row object
+    cell = row.cells.add()
+    # Add SVG image to paragraphs collection of recently added cell instance
+    cell.paragraphs.add(img)
+
+    # Add table to paragraphs collection of page object
+    page.paragraphs.add(table)
+    # Save PDF file
+    document.save(path_outfile)
+```
+
+يمكنك إضافة صور SVG إلى خلايا الجدول في مستند PDF:
+
+```python
+
+    import aspose.pdf as ap
+    from os import path
+
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+    # Set width for table cells
+    table.column_widths = "200 100"
+    for image in images:
+        # Create row object and add it to table instance
+        row = table.rows.add()
+        # Create cell object and add it to row instance
+        cell = row.cells.add()
+        # Add textfragment to paragraphs collection of cell object
+        cell.paragraphs.add(ap.text.TextFragment(image))
+        # Create an image instance
+        img = ap.Image()
+        # Set image type as SVG
+        img.file_type = ap.ImageFileType.SVG
+        # Path for source file
+        img.file = path.join(self.data_dir, image)
+        # Set width for image instance
+        img.fix_width = 50
+        # Set height for image instance
+        img.fix_height = 50
+        # Add another cell to row object
+        cell = row.cells.add()
+        # Add SVG image to paragraphs collection of recently added cell instance
+        cell.paragraphs.add(img)
+
+    # Add table to paragraphs collection of page object
+    page.paragraphs.add(table)
+    # Save PDF file
+    document.save(path_outfile)
 ```
 
 ### دمج الأعمدة والصفوف في الجداول
 
-يوفر Aspose.PDF لـ Python عبر .NET خاصية [col_span](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/#properties) لدمج الأعمدة في الجدول وخاصية [row_span](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/#properties) لدمج الصفوف.
+يوضح هذا المثال كيفية دمج خلايا الجدول عموديًا وأفقيًا لإنشاء تخطيطات جداول معقدة.
 
-نحن نستخدم خاصية `col_span` أو `row_span` على كائن `Cell` الذي ينشئ خلية الجدول. بعد تطبيق الخصائص المطلوبة، يمكن إضافة الخلية التي تم إنشاؤها إلى الجدول.
+1. ضبط حدود الجدول العامة.
+1. ضبط حدود الخلايا الافتراضية.
+1. دمج خليتين أفقيًا في خلية واحدة.
+1. دمج الخلية عموديًا عبر صفين.
+1. يأخذ الصف 5 في الاعتبار امتداد الصفوف عبر تخطي العمود المدمج.
+1. إدراج الجدول في الصفحة.
+1. حفظ ملف PDF.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
 
-    # تهيئة كائن المستند عن طريق استدعاء المُنشئ الفارغ
-    pdf_document = ap.Document()
-    pdf_document.pages.add()
-    # تهيئة مثيل جديد من الجدول
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Load source PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Initializes a new instance of the Table
     table = ap.Table()
-    # تعيين لون حدود الجدول كرمادي فاتح
+    # Set the table border color as LightGray
     table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
-    # تعيين الحدود لخلايا الجدول
-    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
-    # إضافة الصف الأول إلى الجدول
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.ALL, 0.5, ap.Color.black
+    )
+    # Add 1st row to table
     row1 = table.rows.add()
     for cellCount in range(1, 5):
-        # إضافة خلايا الجدول
-        row1.cells.add("اختبار 1" + str(cellCount))
+        # Add table cells
+        row1.cells.add("Test 1" + str(cellCount))
 
-    # إضافة الصف الثاني إلى الجدول
+    # Add 2nd row to table
     row2 = table.rows.add()
-    row2.cells.add("اختبار 2 1")
-    cell = row2.cells.add("اختبار 2 2")
+    row2.cells.add("Test 2 1")
+    cell = row2.cells.add("Test 2 2")
     cell.col_span = 2
-    row2.cells.add("اختبار 2 4")
+    row2.cells.add("Test 2 4")
 
-    # إضافة الصف الثالث إلى الجدول
+    # Add 3rd row to table
     row3 = table.rows.add()
-    row3.cells.add("اختبار 3 1")
-    row3.cells.add("اختبار 3 2")
-    row3.cells.add("اختبار 3 3")
-    row3.cells.add("اختبار 3 4")
+    row3.cells.add("Test 3 1")
+    row3.cells.add("Test 3 2")
+    row3.cells.add("Test 3 3")
+    row3.cells.add("Test 3 4")
 
-    # إضافة الصف الرابع إلى الجدول
+    # Add 4th row to table
     row4 = table.rows.add()
-    row4.cells.add("اختبار 4 1")
-    cell = row4.cells.add("اختبار 4 2")
+    row4.cells.add("Test 4 1")
+    cell = row4.cells.add("Test 4 2")
     cell.row_span = 2
-    row4.cells.add("اختبار 4 3")
-    row4.cells.add("اختبار 4 4")
+    row4.cells.add("Test 4 3")
+    row4.cells.add("Test 4 4")
 
-    # إضافة الصف الخامس إلى الجدول
+    # Add 5th row to table
     row5 = table.rows.add()
-    row5.cells.add("اختبار 5 1")
-    row5.cells.add("اختبار 5 3")
-    row5.cells.add("اختبار 5 4")
+    row5.cells.add("Test 5 1")
+    row5.cells.add("Test 5 3")
+    row5.cells.add("Test 5 4")
 
-    # إضافة كائن الجدول إلى الصفحة الأولى من المستند المدخل
-    pdf_document.pages[1].paragraphs.add(table)
-    # حفظ المستند المحدث الذي يحتوي على كائن الجدول
-    pdf_document.save(output_file)
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(path_outfile)
 ```
 
+![عرض دمج الأعمدة والصفوف](colspan_rowspan.png)
 
-نتيجة تنفيذ الكود أدناه هي الجدول الموضح في الصورة التالية:
+### تطبيق الحدود على الجداول والخلايا
 
-![عرض توضيحي لـ ColSpan وRowSpan](colspan_rowspan.png)
+يوضح هذا المثال كيفية تعيين حشوة الخلايا، وهوامش الجدول، والتحكم في التفاف الكلمات للنص داخل خلايا الجدول.
 
-## العمل مع الحدود والهوامش والتعبئة
-
-يرجى ملاحظة أنه يدعم أيضًا ميزة تعيين نمط الحدود والهوامش والتعبئة للخلايا في الجداول. قبل الدخول في تفاصيل تقنية أكثر، من المهم فهم مفاهيم الحدود والهوامش والتعبئة التي تُعرض أدناه في مخطط:
-
-![الحدود والهوامش والتعبئة](set-border-style-margins-and-padding-of-table_1.png)
-
-في الشكل أعلاه، يمكنك أن ترى أن حدود الجدول والصف والخلايا تتداخل. باستخدام Aspose.PDF، يمكن أن يكون للجدول هوامش وللخلايا تعبئة. لتعيين هوامش الخلايا، علينا تعيين تعبئة الخلايا.
-
-### الحدود
-
-لتعيين حدود كائنات [الجدول](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/)، [الصف](https://reference.aspose.com/pdf/python-net/aspose.pdf/row/) و[الخلايا](https://reference.aspose.com/pdf/python-net/aspose.pdf/cell/)، استخدم خصائص Table.border وRow.border وCell.border.
- يمكن أيضًا تعيين حدود الخلايا باستخدام خاصية [Table](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) أو فئة Row [default_cell_border](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#properties). جميع الخصائص المتعلقة بالحدود التي نوقشت أعلاه تُعين إلى مثيل لفئة Row، التي يتم إنشاؤها عن طريق استدعاء المنشئ الخاص بها. تحتوي فئة Row على العديد من التحميلات الزائدة التي تأخذ تقريبًا جميع المعلمات المطلوبة لتخصيص الحدود.
-
-### الهوامش أو الحشو
-
-يمكن إدارة حشو الخلايا باستخدام خاصية [default_cell_padding](https://reference.aspose.com/pdf/python-net/aspose.pdf/row/#properties) لفئة Table. جميع الخصائص المتعلقة بالحشو تُعين إلى مثيل لفئة [MarginInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) التي تأخذ معلومات عن معلمات `left`، `right`، `top`، و`bottom` لإنشاء هوامش مخصصة.
-في المثال التالي، تم تعيين عرض حد الخلية إلى 0.1 نقطة، وتم تعيين عرض حد الجدول إلى 1 نقطة وتم تعيين حشوة الخلية إلى 5 نقاط.
-
-![الهامش والحد في جدول PDF](margin-border.png)
+1. تعيين عرض الأعمدة.
+1. تعريف حدود الجدول والخلية.
+1. تعيين الحشوة داخل الخلايا لتوفير تباعد ثابت.
+1. تطبيق الحشوة على جميع الخلايا افتراضيًا.
+1. إضافة النص والتحكم في التفافه.
+1. إضافة صفوف وخلايا.
+1. حفظ ملف PDF.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
 
-    # إنشاء كائن Document عن طريق استدعاء المُنشئ الفارغ
-    doc = ap.Document()
-    page = doc.pages.add()
-    # إنشاء كائن جدول
+    path_outfile = path.join(self.data_dir, outfile)
+    # Load source PDF document
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
     tab1 = ap.Table()
-    # إضافة الجدول في مجموعة الفقرات للقسم المطلوب
+    # Add the table in paragraphs collection of the desired section
     page.paragraphs.add(tab1)
-    # تعيين عرض الأعمدة في الجدول
+    # Set with column widths of the table
     tab1.column_widths = "50 50 50"
-    # تعيين حد الخلية الافتراضي باستخدام كائن BorderInfo
+    # Set default cell border using BorderInfo object
     tab1.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
-    # تعيين حد الجدول باستخدام كائن BorderInfo مخصص آخر
+    # Set table border using another customized BorderInfo object
     tab1.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
-    # إنشاء كائن MarginInfo وتعيين هوامشه اليسار والأسفل واليمين والأعلى
+    # Create MarginInfo object and set its left, bottom, right and top margins
     margin = ap.MarginInfo()
     margin.top = 5
     margin.left = 5
     margin.right = 5
     margin.bottom = 5
-    # تعيين حشوة الخلية الافتراضية إلى كائن MarginInfo
+    # Set the default cell padding to the MarginInfo object
     tab1.default_cell_padding = margin
-    # إنشاء صفوف في الجدول ثم خلايا في الصفوف
+    # Create rows in the table and then cells in the rows
     row1 = tab1.rows.add()
     row1.cells.add("col1")
     row1.cells.add("col2")
     row1.cells.add()
-    my_text = ap.text.TextFragment("col3 with large text string")
+    text = ap.text.TextFragment("col3 with large text string")
     # Row1.Cells.Add("col3 with large text string to be placed inside cell")
-    row1.cells[2].paragraphs.add(my_text)
+    row1.cells[2].paragraphs.add(text)
     row1.cells[2].is_word_wrapped = False
     row2 = tab1.rows.add()
     row2.cells.add("item1")
     row2.cells.add("item2")
     row2.cells.add("item3")
-    # حفظ ملف Pdf
-    doc.save(output_file)
+    # Save updated document containing table object
+    document.save(path_outfile)
 ```
 
+![الهامش والحد في جدول PDF](margin-border.png)
 
-لإنشاء جدول بزوايا مستديرة، استخدم قيمة [BorderInfo class](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/) [rounded_border_radius](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/#properties) واضبط نمط زوايا الجدول ليكون مستديرًا.
+## تخطيط الجدول وحجمه
 
-```python
-    
-    import aspose.pdf as ap
-    
-    tab1 = ap.Table()
-    graph = ap.GraphInfo()
-    graph.color = ap.Color.red
-    # إنشاء كائن BorderInfo فارغ
-    b_info = ap.BorderInfo(ap.BorderSide.ALL, graph)
-    # ضبط الحدود لتكون مستديرة حيث نصف قطر الدائرة هو 15
-    b_info.rounded_border_radius = 15
-    # ضبط نمط زوايا الجدول ليكون مستديرًا
-    tab1.corner_style = ap.BorderCornerStyle.ROUND
-    # ضبط معلومات حدود الجدول
-    tab1.border = b_info
-```
+### ضبط الأعمدة والصفوف تلقائيًا
 
-## تطبيق إعدادات AutoFit مختلفة على جدول
+يظهر هذا المقتطف البرمجي كيفية ضبط عرض أعمدة الجدول تلقائيًا لتناسب الصفحة.
+يرجى ملاحظة أن في المتغير table.column_widths = "50 50 50" - القيم بوحدات النقاط. ولكن يمكنك أيضًا تحديد السنتيمترات (cm)، البوصة أو النسبة المئوية.
 
-عند تصميم جدول باستخدام أداة مرئية مثل مايكروسوفت وورد، ستستخدم بشكل متكرر إحدى ميزات AutoFit لضبط حجم الجدول بشكل ملائم إلى العرض المطلوب.
- على سبيل المثال، يمكنك استخدام الخيار "AUTO_FIT_TO_WINDOW" لمطابقة عرض الجدول مع الصفحة أو AUTO_FIT_TO_CONTENT. بشكل افتراضي، عند استخدام Aspose.Pdf لإنشاء جدول جديد، فإنه يستخدم [column_adjustment](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#properties) مع قيمة "مخصص". في مقتطف الشفرة التالي، نقوم بتعيين معلمات الكائن [MarginInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) وكائنات [BorderInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/borderinfo/) في الجدول. اختبر المثال وقيم النتيجة.
-
+1. تعيين عرض الأعمدة الأولية.
+1. ضبط الأعمدة تلقائيًا لتناسب عرض الصفحة.
+1. تعريف حدود الخلية والجدول.
+1. يستخدم 'table.default_cell_padding' الدالة 'MarginInfo()' لتوفير تباعد ثابت داخل الخلايا.
+1. إضافة صفوف باستخدام 'table.rows.add()'، وإضافة خلايا باستخدام 'row.cells.add()'.
+1. حفظ ملف PDF.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
 
-    # إنشاء كائن Pdf باستدعاء منشئه الفارغ
-    doc = ap.Document()
-    # إنشاء القسم في كائن Pdf
-    sec1 = doc.pages.add()
-    # إنشاء كائن جدول
-    tab1 = ap.Table()
-    # إضافة الجدول في مجموعة الفقرات للقسم المطلوب
-    sec1.paragraphs.add(tab1)
-    # تعيين عرض الأعمدة للجدول
-    tab1.column_widths = "50 50 50"
-    tab1.column_adjustment = ap.ColumnAdjustment.AUTO_FIT_TO_WINDOW
-    # تعيين الحدود الافتراضية للخلية باستخدام كائن BorderInfo
-    tab1.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
-    # تعيين حدود الجدول باستخدام كائن BorderInfo مخصص آخر
-    tab1.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
-    # إنشاء كائن MarginInfo وتعيين هوامشه اليسرى والسفلية واليمنى والعلوية
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Load source PDF document
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+
+    page.paragraphs.add(table)
+
+    table.column_widths = "50 50 50"
+    table.column_adjustment = ap.ColumnAdjustment.AUTO_FIT_TO_WINDOW
+
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
+
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
+
     margin = ap.MarginInfo()
     margin.top = 5
     margin.left = 5
     margin.right = 5
     margin.bottom = 5
-    # تعيين الحشو الافتراضي للخلية إلى كائن MarginInfo
-    tab1.default_cell_padding = margin
-    # إنشاء صفوف في الجدول ثم خلايا في الصفوف
-    row1 = tab1.rows.add()
+
+    table.default_cell_padding = margin
+
+    row1 = table.rows.add()
     row1.cells.add("col1")
     row1.cells.add("col2")
     row1.cells.add("col3")
-    row2 = tab1.rows.add()
+    row2 = table.rows.add()
     row2.cells.add("item1")
     row2.cells.add("item2")
     row2.cells.add("item3")
-    # حفظ المستند المحدّث الذي يحتوي على كائن الجدول
-    doc.save(output_file)
+
+    document.save(path_outfile)
 ```
 
-### الحصول على عرض الجدول
+### تعديل التباعد حول المحتوى
 
-في بعض الأحيان، من المطلوب الحصول على عرض الجدول ديناميكيًا. تحتوي فئة Aspose.PDF.Table على طريقة [get_width()](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#methods) لهذا الغرض. على سبيل المثال، لم تقم بتعيين عرض أعمدة الجدول بشكل صريح وقمت بتعيين [column_adjustment](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#properties) إلى 'AUTO_FIT_TO_CONTENT'. في هذه الحالة يمكنك الحصول على عرض الجدول كما يلي.
+يوضح هذا المثال كيفية إنشاء جداول تمتد عبر صفحات متعددة، ومعالجة النص الطويل في الخلايا، وتطبيق الحشوة والحدود.
+
+1. إضافة جدول جديد إلى الصفحة باستخدام 'page.paragraphs.add(table)'.
+1. تعريف عرض الأعمدة باستخدام 'table.column_widths'.
+1. تعيين حدود الخلية الفردية باستخدام 'table.default_cell_border'.
+1. تعيين حد الجدول العام باستخدام 'table.border'.
+1. تعريف الحشوة الافتراضية للخلايا باستخدام 'MarginInfo()'.
+1. إضافة النص باستخدام 'TextFragment'.
+1. إضافة صف آخر.
+1. حفظ ملف PDF.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
 
-    # إنشاء مستند جديد
-    doc = ap.Document()
-    # إضافة صفحة في المستند
-    page = doc.pages.add()
-    # تهيئة جدول جديد
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Create PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Instantiate a table object that will be nested inside outerTable that will break inside the same page
     table = ap.Table()
-    table.column_adjustment = ap.ColumnAdjustment.AUTO_FIT_TO_CONTENT
-    # إضافة صف في الجدول
-    row = table.rows.add()
-    # إضافة خلية في الجدول
-    cell = row.cells.add("Cell 1 text")
-    cell = row.cells.add("Cell 2 text")
-    # الحصول على عرض الجدول
-    print(table.get_width())
-```
+    # Add page
+    page = document.pages.add()
 
-## إضافة صورة SVG إلى خلية الجدول
-
-يوفر Aspose.PDF لـ Python عبر .NET القدرة على إدراج خلايا الجدول في ملف PDF.
- عند إنشاء جدول، يمكنك تضمين النصوص والصور داخل هذه الخلايا. بالإضافة إلى ذلك، توفر واجهة برمجة التطبيقات الوظيفة لتحويل ملفات SVG إلى تنسيق PDF. من خلال الاستفادة من هذه الوظائف معًا، يمكنك تحميل صورة SVG ووضعها داخل خلية جدول.
-
-يعرض المقتطف التالي من الشيفرة عملية إنشاء كائن جدول وتضمين صورة SVG داخل إحدى خلاياه.
-
-```python
-
-    import aspose.pdf as ap
-
-    # إنشاء كائن مستند
-    doc = ap.Document()
-    # إنشاء مثيل صورة
-    img = ap.Image()
-    # ضبط نوع الصورة كـ SVG
-    img.file_type = ap.ImageFileType.SVG
-    # المسار إلى الملف المصدر
-    img.file = DIR_INPUT_TABLE + "SVGToPDF.svg"
-    # ضبط العرض لمثيل الصورة
-    img.fix_width = 50
-    # ضبط الارتفاع لمثيل الصورة
-    img.fix_height = 50
-    # إنشاء مثيل جدول
+    # Instantiate a table object
     table = ap.Table()
-    # ضبط العرض لخلايا الجدول
-    table.column_widths = "100 100"
-    # إنشاء كائن صف وإضافته إلى مثيل الجدول
-    row = table.rows.add()
-    # إنشاء كائن خلية وإضافته إلى مثيل الصف
-    cell = row.cells.add()
-    # إضافة نص إلى مجموعة الفقرات لكائن الخلية
-    cell.paragraphs.add(ap.text.TextFragment("الخليّة الأولى"))
-    # إضافة خلية أخرى إلى كائن الصف
-    cell = row.cells.add()
-    # إضافة صورة SVG إلى مجموعة الفقرات لمثيل الخلية المضاف حديثًا
-    cell.paragraphs.add(img)
-    # إنشاء كائن صفحة وإضافته إلى مجموعة الصفحات لمثيل المستند
-    page = doc.pages.add()
-    # إضافة الجدول إلى مجموعة الفقرات لكائن الصفحة
+
+    # Add the table in paragraphs collection of the desired section
     page.paragraphs.add(table)
-    # حفظ ملف PDF
-    doc.save(output_file)
+
+    # Set column widths of the table
+    table.column_widths = "50 50 50"
+
+    # Set default cell border using BorderInfo object
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.1)
+
+    # Set table border using another customized BorderInfo object
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 1)
+
+    # Create MarginInfo object and set its left, bottom, right and top margins
+    margin = ap.MarginInfo()
+    margin.top = 5
+    margin.left = 5
+    margin.right = 5
+    margin.bottom = 5
+
+    # Set the default cell padding to the MarginInfo object
+    table.default_cell_padding = margin
+
+    # Create rows and cells
+    row1 = table.rows.add()
+    row1.cells.add("col1")
+    row1.cells.add("col2")
+    row1.cells.add()
+
+    # Add a long text fragment into the third cell
+    text = ap.text.TextFragment("col3 with large text string")
+    row1.cells[2].paragraphs.add(text)
+    row1.cells[2].is_word_wrapped = False
+
+    # Add another row
+    row2 = table.rows.add()
+    row2.cells.add("item1")
+    row2.cells.add("item2")
+    row2.cells.add("item3")
+
+    # Save PDF document
+    document.save(path_outfile)
 ```
 
-## إدراج فاصل صفحات بين صفوف الجدول
+![الحدود، الهوامش والحشوة](set-border-style-margins-and-padding-of-table_1.png)
 
-افتراضيًا، عندما تقوم بإنشاء جدول داخل ملف PDF، سيمتد الجدول عبر صفحات متعددة إذا تجاوز الحد السفلي للجدول. ومع ذلك، هناك حالات نحتاج فيها إلى فرض فواصل صفحات بعد إضافة عدد معين من الصفوف إلى الجدول. يوضح المقتطف التالي من الكود عملية إدراج فاصل صفحات عندما يتم تضمين 10 صفوف في الجدول.
+### تنسيق زوايا الجدول
+
+يعرض Aspose.PDF للبايثون عبر .NET كيفية تطبيق زوايا مستديرة على جدول وتخصيص نصف قطر الحد.
+
+1. إنشاء مثال جديد للجدول.
+1. تهيئة حد لجميع الجوانب.
+1. تعيين نصف قطر الزاوية.
+1. تطبيق نمط الزاوية المستديرة.
+1. إضافة صفوف وخلايا.
+1. إدراج الجدول في صفحة PDF باستخدام 'page.paragraphs.add(table)'.
+1. حفظ مستند PDF.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
 
-    # إنشاء مثيل لوثيقة
-    doc = ap.Document()
-    # إضافة صفحة إلى مجموعة صفحات ملف PDF
-    doc.pages.add()
-    # إنشاء مثيل للجدول
-    tab = ap.Table()
-    # تعيين نمط الحدود للجدول
-    tab.border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
-    # تعيين نمط الحدود الافتراضي للجدول بلون الحدود أحمر
-    tab.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, ap.Color.red)
-    # تحديد عرض أعمدة الجدول
-    tab.column_widths = "100 100"
-    # إنشاء حلقة لإضافة 200 صف للجدول
-    for counter in range(0, 201):
-        row = ap.Row()
-        tab.rows.add(row)
-        cell1 = ap.Cell()
-        cell1.paragraphs.add(ap.text.TextFragment("Cell " + str(counter) + ", 0"))
-        row.cells.add(cell1)
-        cell2 = ap.Cell()
-        cell2.paragraphs.add(ap.text.TextFragment("Cell " + str(counter) + ", 1"))
-        row.cells.add(cell2)
-        # عندما يتم إضافة 10 صفوف، يتم عرض صف جديد في صفحة جديدة
-        if counter % 10 == 0 and counter != 0:
-            row.is_in_new_page = True
-    # إضافة الجدول إلى مجموعة الفقرات في ملف PDF
-    doc.pages[1].paragraphs.add(tab)
-    # حفظ وثيقة PDF
-    doc.save(output_file)
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Load source PDF document
+    document = ap.Document()
+    page = document.pages.add()
+    # Initializes a new instance of the Table
+    table = ap.Table()
+
+    # Create a table
+    table = ap.Table()
+
+    # Create a blank BorderInfo object
+    b_info = ap.BorderInfo(ap.BorderSide.ALL)
+
+    # Set the border a rounded border where radius of round is 15
+    b_info.rounded_border_radius = 15
+
+    # Set the table corner style as Round
+    table.corner_style = ap.BorderCornerStyle.ROUND
+
+    # Set the table border information
+    table.border = b_info
+
+    # Create a loop to add 10 rows
+    for row_count in range(0, 10):
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        row.cells.add("Column (" + str(row_count) + ", 1)")
+        row.cells.add("Column (" + str(row_count) + ", 2)")
+        row.cells.add("Column (" + str(row_count) + ", 3)")
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(path_outfile)
 ```
 
+## إضافة محتوى إلى الجداول
 
-## عرض جدول في صفحة جديدة
+### استخدام مقاطع HTML في الخلايا
 
-افتراضيًا، يتم إضافة الفقرات إلى مجموعة الفقرات الخاصة بكائن الصفحة. ومع ذلك، من الممكن عرض جدول في صفحة جديدة بدلاً من مباشرة بعد الكائن الفقري المضاف سابقًا في الصفحة.
+يوضح هذا المثال كيفية إدراج محتوى بتنسيق HTML في خلايا الجدول.
 
-### مثال: كيفية عرض جدول في صفحة جديدة باستخدام بايثون
-
-لعرض جدول في صفحة جديدة، استخدم الخاصية [is_in_new_page](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/#properties) في فئة [BaseParagraph](https://reference.aspose.com/pdf/python-net/aspose.pdf/baseparagraph/). يظهر مقتطف الشيفرة التالي كيفية ذلك.
+1. تعريف حدود الجدول والخلية.
+1. إضافة محتوى HTML.
+1. إضافة صفوف. حلقة تكرار تضيف عدة صفوف مع محتوى HTML في كل خلية.
+1. إدراج الجدول في صفحة PDF باستخدام 'page.paragraphs.add(table)'.
+1. حفظ مستند PDF.
 
 ```python
 
     import aspose.pdf as ap
+    from os import path
 
-    doc = ap.Document()
-    page_info = doc.page_info
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.ALL, 0.5, ap.Color.light_gray
+    )
+    # Create a loop to add 10 rows
+    row_count = 1
+    while row_count < 10:
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.HtmlFragment(f"Column <strong>({row_count}, 1)</strong>")
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.HtmlFragment(
+                f"Column <span style='color:red'>({row_count}, 2)</span>"
+            )
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.HtmlFragment(
+                f"Column <span style='text-decoration: underline'>({row_count}, 3)</span>"
+            )
+        )
+        row_count += 1
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(path_outfile)
+```
+
+### استخدام مقاطع LaTeX في الخلايا
+
+يوضح هذا المثال كيفية إدراج محتوى بتنسيق LaTeX في خلايا الجدول للتعبيرات الرياضية أو المنسقة.
+
+1. تعريف حدود الجدول والخلية.
+1. أضف محتوى LaTeX.
+1. أضف صفوفًا. حلقة تضيف عدة صفوف مع محتوى منسق بـ LaTeX في كل خلية.
+1. أدخل الجدول في صفحة PDF باستخدام 'page.paragraphs.add(table)'.
+1. احفظ مستند PDF.
+
+```python
+
+    import aspose.pdf as ap
+    from os import path
+
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Instantiate Document object
+    document = ap.Document()
+    page = document.pages.add()
+    # Instantiate a table object
+    table = ap.Table()
+
+    # Set the table border color as LightGray
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
+    # Set the border for table cells
+    table.default_cell_border = ap.BorderInfo(
+        ap.BorderSide.ALL, 0.5, ap.Color.light_gray
+    )
+    # Create a loop to add 10 rows
+    row_count = 1
+    while row_count < 10:
+        # Add row to table
+        row = table.rows.add()
+        # Add table cells
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.LatexFragment(f"Column $\\mathbf{{({row_count}, 1)}}$")
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.LatexFragment(
+                f"Column $\\textcolor{{red}}{{({row_count}, 2)}}$"
+            )
+        )
+
+        cell = row.cells.add()
+        cell.paragraphs.add(
+            ap.LatexFragment(
+                f"Column $\\underline{{({row_count}, 3)}}$"
+            )
+        )
+        row_count += 1
+
+    # Add table object to first page of input document
+    page.paragraphs.add(table)
+    # Save updated document containing table object
+    document.save(path_outfile)
+```
+
+## ميزات الجدول المتقدمة
+
+### إدراج جداول عبر الصفحات
+
+يوضح هذا المثال كيفية إنشاء جداول متعددة في ملف PDF، وضبط هوامش الصفحة، وإجبار جدول على البدء في صفحة جديدة.
+
+1. اضبط هوامش الصفحة باستخدام 'page_info.margin'.
+1. اضبط اتجاه الصفحة إلى أفقي باستخدام 'page_info.is_landscape'.
+1. الجدول الأول:
+- عرّف عمودين بعروض محددة.
+- أضف الصفوف في حلقة باستخدام 'row.fixed_row_height'.
+- عَبِّئ الخلايا بقطع نصية.
+1. الجدول الثاني:
+- أنشئ جدولًا جديدًا باستخدام 'table1.column_widths'.
+- إجبر الجدول على البدء في صفحة جديدة.
+1. أضف الجدول الأول.
+1. أضف الجدول الثاني في صفحة جديدة.
+1. احفظ المستند
+
+```python
+
+    import aspose.pdf as ap
+    from os import path
+
+    # The path to the documents directory
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Create PDF document
+    document = ap.Document()
+
+    # Set page and margin information
+    page_info = document.page_info
     margin_info = page_info.margin
 
     margin_info.left = 37
     margin_info.right = 37
     margin_info.top = 37
     margin_info.bottom = 37
-
     page_info.is_landscape = True
 
+    # First table with 120 rows
     table = ap.Table()
     table.column_widths = "50 100"
-    # تمت إضافة الصفحة.
-    cur_page = doc.pages.add()
+
+    cur_page = document.pages.add()
+
     for i in range(1, 121):
         row = table.rows.add()
         row.fixed_row_height = 15
         cell1 = row.cells.add()
         cell1.paragraphs.add(ap.text.TextFragment("Content 1"))
         cell2 = row.cells.add()
-        cell2.paragraphs.add(ap.text.TextFragment("HHHHH"))
-    paragraphs = cur_page.paragraphs
-    paragraphs.add(table)
+        cell2.paragraphs.add(ap.text.TextFragment("Content 2"))
 
+    cur_page.paragraphs.add(table)
+
+    # Second table with 10 rows
     table1 = ap.Table()
     table1.column_widths = "100 100"
+
     for i in range(1, 11):
         row = table1.rows.add()
         cell1 = row.cells.add()
-        cell1.paragraphs.add(ap.text.TextFragment("LAAAAAAA"))
+        cell1.paragraphs.add(ap.text.TextFragment("Content 3"))
         cell2 = row.cells.add()
-        cell2.paragraphs.add(ap.text.TextFragment("LAAGGGGGG"))
-    table1.is_in_new_page = True
-    # أريد الاحتفاظ بالجدول 1 للصفحة التالية من فضلك...
-    paragraphs.add(table1)
-    doc.save(output_file)
+        cell2.paragraphs.add(ap.text.TextFragment("Content 4"))
+
+    table1.is_in_new_page = True  # Force table to new page
+    cur_page.paragraphs.add(table1)
+
+    # Save updated document containing table object
+    document.save(path_outfile)
 ```
 
+### إنشاء جداول بدون حدود
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ Python عبر .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+يوضح هذا المثال كيفية إنشاء جدول كبير يمكنه الانقسام عموديًا عبر الصفحات، وتكرار الأعمدة، وتطبيق ألوان خلفية مختلفة على خلايا العنوان.
+
+1. تهيئة الجدول.
+1. اضبط حدًا افتراضيًا لجميع الخلايا.
+1. خلايا العنوان تستخدم 'col_span' لدمج عدة أعمدة.
+1. اضبط خلفية الخلية لتمييز بصري أفضل باستخدام 'background_color set'
+1. أضف صفوفًا.
+1. أدخل الجدول في صفحة PDF باستخدام 'page.paragraphs.add(table)'.
+1. احفظ مستند PDF.
+
+```python
+
+    import aspose.pdf as ap
+    from os import path
+
+    # The path to the documents directory
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Create PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    table = ap.Table()
+    table.broken = ap.TableBroken.VERTICAL
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL)
+    table.repeating_columns_count = 2
+    page.paragraphs.add(table)
+
+    # Add header Row
+    row = table.rows.add()
+    cell = row.cells.add("header 1")
+    cell.col_span = 2
+    cell.background_color = ap.Color.light_gray
+    row.cells.add("header 3")
+
+    cell2 = row.cells.add("header 4")
+    cell2.col_span = 2
+    cell2.background_color = ap.Color.light_blue
+    row.cells.add("header 6")
+
+    cell3 = row.cells.add("header 7")
+    cell3.col_span = 2
+    cell3.background_color = ap.Color.light_green
+    cell4 = row.cells.add("header 9")
+
+    cell4.col_span = 3
+    cell4.background_color = ap.Color.light_coral
+    row.cells.add("header 12")
+    row.cells.add("header 13")
+    row.cells.add("header 14")
+    row.cells.add("header 15")
+    row.cells.add("header 16")
+    row.cells.add("header 17")
+
+    row_counter = 0
+    while row_counter < 3:
+        # Create rows in the table and then cells in the rows
+        row1 = table.rows.add()
+        row1.cells.add("col " + str(row_counter) + ", 1")
+        row1.cells.add("col " + str(row_counter) + ", 2")
+        row1.cells.add("col " + str(row_counter) + ", 3")
+        row1.cells.add("col " + str(row_counter) + ", 4")
+        row1.cells.add("col " + str(row_counter) + ", 5")
+        row1.cells.add("col " + str(row_counter) + ", 6")
+        row1.cells.add("col " + str(row_counter) + ", 7")
+        row1.cells.add("col " + str(row_counter) + ", 8")
+        row1.cells.add("col " + str(row_counter) + ", 9")
+        row1.cells.add("col " + str(row_counter) + ", 10")
+        row1.cells.add("col " + str(row_counter) + ", 11")
+        row1.cells.add("col " + str(row_counter) + ", 12")
+        row1.cells.add("col " + str(row_counter) + ", 13")
+        row1.cells.add("col " + str(row_counter) + ", 14")
+        row1.cells.add("col " + str(row_counter) + ", 15")
+        row1.cells.add("col " + str(row_counter) + ", 16")
+        row1.cells.add("col " + str(row_counter) + ", 17")
+        row_counter += 1
+
+    document.save(path_outfile)
+```
+
+### تكرار صفوف العنوان على صفحات متعددة
+
+يوضح هذا المثال كيفية إنشاء جدول يمتد على عدة صفحات مع إبقاء صفوف العنوان مرئية في كل صفحة.
+
+1. تهيئة الجدول.
+1. كرر صفوف العنوان بما في ذلك الخط والحجم واللون.
+1. اضبط أعرض الأعمدة وطبق الحدود على الجدول.
+1. أضف صفوف العنوان.
+1. أضف العديد من صفوف البيانات لإجبار الجدول على الامتداد عبر صفحات متعددة.
+1. أدخل الجدول في صفحة PDF باستخدام 'page.paragraphs.add(table)'.
+1. احفظ مستند PDF.
+
+```python
+
+    import aspose.pdf as ap
+    from os import path
+
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Create PDF document
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Instantiate a table object
+    table = ap.Table()
+
+    # Set the table to break across pages
+    table.broken = ap.TableBroken.VERTICAL
+
+    # Set number of repeating header rows
+    table.repeating_rows_count = 2
+
+    text_state = ap.text.TextState()
+    text_state.font_size = 12
+    text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+    text_state.foreground_color = ap.Color.red
+    table.repeating_rows_style =  text_state
+
+    # Set column widths
+    table.column_widths = "100 100 100"
+
+    # Set borders
+    table.default_cell_border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.black)
+    table.border = ap.BorderInfo(ap.BorderSide.ALL, 1, ap.Color.black)
+
+    # Add header rows that will repeat on each page
+    header_row1 = table.rows.add()
+    header_row1.cells.add("Header 1-1")
+    header_row1.cells.add("Header 1-2")
+    header_row1.cells.add("Header 1-3")
+
+    # Set background color for header rows
+    for cell in header_row1.cells:
+        cell.background_color = ap.Color.light_gray
+
+    header_row2 = table.rows.add()
+    header_row2.cells.add("Header 2-1")
+    header_row2.cells.add("Header 2-2")
+    header_row2.cells.add("Header 2-3")
+
+    for cell in header_row2.cells:
+        cell.background_color = ap.Color.light_blue
+
+    # Add many data rows to force table across multiple pages
+    for i in range(1, 101):
+        row = table.rows.add()
+        row.cells.add(f"Data {i}-1")
+        row.cells.add(f"Data {i}-2")
+        row.cells.add(f"Data {i}-3")
+
+    # Add table to page
+    page.paragraphs.add(table)
+
+    # Save document
+    document.save(path_outfile)
+```
+
+### تكرار الأعمدة
+
+الدالة 'add_repeating_columns' تنشئ مستند PDF يحتوي على جدول به أعمدة متكررة. تُعدّ جدولًا بحدود، وتضيف رؤوسًا، وتملأ صفوف البيانات، وتحفظ ملف PDF المُنتج في الموقع المحدد. ضبط هذه الخاصية سيسبّب انقسام الجدول إلى الصفحة التالية حسب الأعمدة وتكرار عدد الأعمدة المحدد في بداية الصفحة التالية.
+
+1. يهيئ مستند PDF جديد.
+1. يضيف صفحة بأبعاد مخصصة.
+1. اضبط نمط حدود الجدول.
+1. ابدأ تهيئة الجدول.
+1. أضف الجدول إلى صفحة PDF.
+1. أضف صف العنوان.
+1. أضف صفوف البيانات.
+1. احفظ مستند PDF.
+
+```python
+
+    import aspose.pdf as ap
+    from os import path
+
+    path_outfile = path.join(self.data_dir, outfile)
+
+    # Create PDF document
+    document = ap.Document()
+
+    # Add page
+    page = document.pages.add()
+    page.set_page_size(ap.PageSize.A5.height, ap.PageSize.A5.width)
+
+    # Define border
+    border = ap.BorderInfo(ap.BorderSide.ALL, 0.5, ap.Color.light_gray)
+
+    # Create table
+    table = ap.Table()
+    table.broken = ap.TableBroken.VERTICAL
+    table.column_adjustment = ap.ColumnAdjustment.AUTO_FIT_TO_CONTENT
+    table.repeating_columns_count = 5
+    table.border = border
+    table.default_cell_border = border
+
+    # Add table to page
+    page.paragraphs.add(table)
+
+    # Add header row
+    row = table.rows.add()
+    for i in range(1, 6):
+        cell = row.cells.add(f"header {i}")
+        cell.background_color = ap.Color.light_gray
+
+    for i in range(6, 18):
+        row.cells.add(f"header {i}")
+
+    # Add data rows
+    for row_counter in range(1, 6):
+        row = table.rows.add()
+        for i in range(1, 6):
+            cell = row.cells.add(f"cell {row_counter},{i}")
+            cell.background_color = ap.Color.light_gray
+        for i in range(6, 18):
+            row.cells.add(f"cell {row_counter},{i}")
+
+    # Save PDF document
+    document.save(path_outfile)
+    print(f"File saved at: {path_outfile}")
+```

@@ -4,161 +4,32 @@ linktitle: ページの操作
 type: docs
 weight: 20
 url: /ja/python-net/working-with-pages/
-description: ページを追加したり、ヘッダーとフッターを追加したり、ウォーターマークを追加したりする方法をこのセクションで知ることができます。Aspose.PDF for Python via .NETがこのトピックに関するすべての詳細を説明します。
-lastmod: "2023-04-19"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF for Python via .NET ライブラリを使用して、PDFドキュメントのページをプログラムで操作する方法。
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Pythonを使用してPDFのページを操作する方法
+Abstract: Aspose.PDF for Python via .NET は、Acrobat Reader を必要とせずに PDF ファイルをプログラムで操作するための包括的なツールを提供します。このライブラリにより、ユーザーは PDF ドキュメント内の任意の場所にページを挿入したり、ファイルの末尾にページを追加したり、必要に応じてページを削除したりできます。ヘッダーやフッターにテキストや画像を追加し、Artifact クラスを使用して透かしを適用することで、ドキュメントを強化できます。その他の機能として、ページサイズの変更、ページ方向の回転、ドキュメントの分割、ファイル間のページ移動、指定されたプロパティによるページのトリミングがあります。また、PageNumberStamp クラスを使用したページ番号の追加や、透かしを利用した背景画像の作成もサポートしています。ImageStamp と TextStamp クラスによるスタンプ機能により、画像スタンプやテキストスタンプを追加できます。さらに、色やその他の属性など、PDF ページのプロパティにアクセスして変更することができ、PDF ドキュメントを詳細にカスタマイズできます。このライブラリは、使いやすいインターフェイスと各機能に対する包括的なドキュメントを提供し、Python での簡単な統合と活用を可能にします。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PythonでPDFページを操作する",
-    "alternativeHeadline": "PDFページを操作する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf ドキュメント生成",
-    "keywords": "pdf, python, pdfページ, pdfページを追加, ページ番号を追加, ページを回転, ページを削除",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-pages/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "ページを追加したり、ヘッダーとフッターを追加したり、ウォーターマークを追加したりする方法をこのセクションで知ることができます。Aspose.PDF for Python via .NETがこのトピックに関するすべての詳細を説明します。"
-}
-</script>
 
+**Aspose.PDF for Python via .NET** は、ファイル内の任意の場所に PDF ドキュメントにページを挿入したり、PDF ファイルの末尾にページを追加したりできます。このセクションでは、Acrobat Reader を使用せずに PDF にページを追加する方法を示します。
+Python 用 Aspose ライブラリを使用して、PDF ファイルのヘッダーやフッターにテキストや画像を追加したり、ドキュメント内で異なるヘッダーを選択したりできます。
+また、Python を使用してプログラムで PDF ドキュメントのページをトリミングしてみてください。
 
-**Aspose.PDF for Python via .NET**を使用すると、PDFドキュメントにページをファイル内の任意の場所に挿入したり、PDFファイルの末尾にページを追加したりできます。このセクションでは、Acrobat Readerを使用せずにPDFにページを追加する方法を示します。AsposeのPythonライブラリを使用して、PDFファイルのヘッダーとフッターにテキストや画像を追加し、ドキュメント内で異なるヘッダーを選択できます。また、Pythonを使用してプログラム的にPDFドキュメントのページをトリミングしてみてください。
+このセクションでは、Artifact クラスを使用して PDF ファイルに透かしを追加する方法を学びます。このタスクのプログラミング例をご確認ください。
+[PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/) クラスを使用してページ番号を追加します。ドキュメントにスタンプを追加するには、[ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) と [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) クラスを使用します。**Aspose.PDF for Python via .NET** を使用して、透かしを追加し、PDF ファイルに背景画像を作成します。
 
-このセクションでは、Artifactクラスを使用してPDFファイルに透かしを追加する方法を学びます。このタスクのプログラミングサンプルを確認します。[PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/)クラスを使用してページ番号を追加します。ドキュメントにスタンプを追加するには、[ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/)および[TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/)クラスを使用します。**Aspose.PDF for Python via .NET**を使用して、PDFファイルに背景画像を作成するための透かしを追加します。
+以下のことができます：
 
-
-You are able to do the following:
-
-- [ページを追加する](/pdf/ja/python-net/add-pages/) - PDFファイルの任意の場所または末尾にページを追加し、ドキュメントからページを削除します。
-- [ページを移動する](/pdf/ja/python-net/move-pages/) - ページを他のドキュメントに移動します。
-- [ページを削除する](/pdf/ja/python-net/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
-- [ページサイズを変更する](/pdf/ja/python-net/change-page-size/) - Aspose.PDFライブラリを使用してコードスニペットでPDFページのサイズを変更できます。
-- [ページを回転する](/pdf/ja/python-net/rotate-pages/) - 既存のPDFファイルのページの向きを変更できます。
-- [ページを分割する](/pdf/ja/python-net/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
-- [ヘッダーやフッターを追加する](/pdf/ja/python-net/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
-- [ページをトリミングする](/pdf/ja/python-net/crop-pages/) - 異なるページプロパティを使用して、プログラムでPDFドキュメントのページをトリミングできます。
-
-- [透かしを追加する](/pdf/ja/python-net/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
-- [PDFファイルにページ番号を追加する](/pdf/ja/python-net/add-page-number/) - PageNumberStampクラスはPDFファイルにページ番号を追加するのに役立ちます。
-- [背景を追加する](/pdf/ja/python-net/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
-- [スタンプ](/pdf/ja/python-net/stamping/) - ImageStampクラスを使用して、PDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
-- [ページプロパティの取得と設定](/pdf/ja/python-net/get-and-set-page-properties/) - このセクションでは、PDFファイルのページ数を取得したり、色などのPDFページプロパティの情報を取得したり、ページプロパティを設定したりする方法を示します。
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [ページの追加](/pdf/python-net/add-pages/) - ページを任意の位置または PDF ファイルの末尾に追加し、ドキュメントからページを削除できます。
+- [ページの移動](/pdf/python-net/move-pages/) - ページをあるドキュメントから別のドキュメントへ移動します。
+- [ページの削除](/pdf/python-net/delete-pages/) - PageCollection を使用して PDF ファイルからページを削除します。
+- [ページの抽出](/pdf/python-net/extract-pages/) - Aspose.PDF for Python を使用して PDF ファイルからページを抽出します。
+- [ページの回転](/pdf/python-net/rotate-pages/) - 既存の PDF ファイル内のページの向きを変更できます。
+- [ページサイズの変更](/pdf/python-net/change-page-size/) - PDF ドキュメントのページサイズを変更します。
+- [ヘッダーとフッターの追加](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - PDF ファイルのヘッダーとフッターにテキストや画像を追加します。
+- [PDF ページのトリミング](/pdf/python-net/crop-pages/) - さまざまなページプロパティを使用して、PDF ドキュメントのページをプログラムでトリミングできます。
+- [ページプロパティの取得と設定](/pdf/python-net/get-and-set-page-properties/) - サイズ、回転、カラー属性など、PDF ページのさまざまなプロパティにアクセスし、変更できます。
+- [スタンプ](/pdf/python-net/stamping/) - Python で PDF ページに画像スタンプ、ページスタンプ、ページ番号スタンプ、テキストスタンプを追加します。

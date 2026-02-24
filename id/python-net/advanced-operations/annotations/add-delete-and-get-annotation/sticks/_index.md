@@ -1,124 +1,60 @@
 ---
-title: Anotasi PDF sticky menggunakan Python
-linktitle: Anotasi sticky
+title: Anotasi Sticky PDF menggunakan Python
+linktitle: Anotasi Sticky
 type: docs
 weight: 50
 url: /id/python-net/sticky-annotations/
-description: Topik ini tentang anotasi sticky, sebagai contoh kami menunjukkan Anotasi Watermark dalam teks.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Temukan cara menambahkan anotasi sticky dalam dokumen PDF menggunakan Aspose.PDF di Python via .NET untuk komentar dan umpan balik.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Panduan cara memanipulasi anotasi sticky dalam PDF
+Abstract: Artikel ini memberikan panduan rinci tentang cara mengelola anotasi watermark dalam dokumen PDF menggunakan pustaka Aspose.PDF untuk Python. Artikel ini menjelaskan proses menambahkan, mengambil, dan menghapus anotasi watermark untuk memastikan keaslian dan merek dokumen. Anotasi watermark dapat digunakan untuk menyisipkan grafik, seperti logo, dengan ukuran dan posisi tetap pada halaman. Panduan ini mencakup cuplikan kode yang menunjukkan cara menambahkan anotasi watermark pada posisi tertentu dengan opasitas yang dapat disesuaikan, serta cara mengambil dan menghapus anotasi watermark yang ada. Contoh kode tersebut menggambarkan penggunaan pustaka Aspose.PDF untuk memanipulasi dokumen PDF secara programatis, menawarkan pendekatan praktis bagi pengembang untuk mengintegrasikan fungsionalitas watermark ke dalam aplikasi mereka.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Anotasi PDF sticky menggunakan Python",
-    "alternativeHeadline": "Cara menambahkan Anotasi Sticky di PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, anotasi sticky, anotasi watermark",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/sticky-annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/sticky-annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Topik ini tentang anotasi sticky, sebagai contoh kami menunjukkan Anotasi Watermark dalam teks menggunakan Perpustakaan Python."
-}
-</script>
 
+## Tambah Anotasi Watermark
 
-## Tambahkan Anotasi Watermark
+Anotasi Watermark adalah yang paling terlihat dan mudah divisualisasikan serta ditransmisikan. Ini merupakan cara terbaik untuk menempatkan logo atau tanda lain dalam dokumen PDF Anda yang menegaskan keasliannya.
 
-Anotasi Watermark adalah yang paling terlihat dan mudah divisualisasikan serta ditransmisikan. Ini adalah cara terbaik untuk menempatkan logo atau tanda lainnya yang mengonfirmasi keasliannya dalam dokumen PDF Anda.
+Anotasi watermark harus digunakan untuk merepresentasikan grafik yang akan dicetak dengan ukuran dan posisi tetap pada halaman, terlepas dari dimensi halaman yang dicetak.
 
-Anotasi watermark harus digunakan untuk merepresentasikan grafik yang akan dicetak pada ukuran dan posisi tetap di halaman, terlepas dari dimensi halaman yang dicetak.
+Anda dapat menambahkan Teks Watermark menggunakan [WatermarkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/) pada posisi tertentu pada halaman PDF. Opasitas Watermark juga dapat dikontrol dengan menggunakan properti [opacity](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/#properties).
 
-Anda dapat menambahkan Teks Watermark menggunakan [WatermarkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/) pada posisi tertentu di halaman PDF. Opasitas dari Watermark juga dapat dikontrol dengan menggunakan properti [opacity](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/#properties).
-
-Silakan periksa potongan kode berikut untuk menambahkan WatermarkAnnotation.
+Silakan periksa cuplikan kode berikut untuk menambahkan WatermarkAnnotation.
 
 ```python
 
     import aspose.pdf as ap
 
     document = ap.Document(input_file)
-    # Buat Anotasi
-    # Muat objek Halaman untuk menambahkan Anotasi
+    # Create Annotation
+    # Load Page object to add Annotation
     page = document.pages[1]
 
-    # Buat Anotasi
+    # Create Annotation
     wa = ap.annotations.WatermarkAnnotation(page, ap.Rectangle(100, 0, 400, 100, True))
 
-    # Tambahkan anotasi ke dalam koleksi Anotasi Halaman
+    # Add annotaiton into Annotation collection of Page
     page.annotations.append(wa)
 
-    # Buat TextState untuk pengaturan Font
+    # Create TextState for Font settings
     ts = ap.text.TextState()
     ts.foreground_color = ap.Color.blue
     ts.font_size = 25
     ts.font = ap.text.FontRepository.find_font("Arial");
 
-    # Atur tingkat opasitas dari Teks Anotasi
+    # Set opacity level of Annotaiton Text
     wa.opacity = 0.5
 
-    # Tambahkan Teks dalam Anotasi
+    # Add Text in Annotation
     wa.set_text_and_state([ "HELLO", "Line 1", "Line 2" ], ts)
 
     document.save(output_file)
 ```
 
-
-## Dapatkan Anotasi Watermark
+## Ambil Anotasi Watermark
 
 ```python
 
@@ -154,66 +90,4 @@ Silakan periksa potongan kode berikut untuk menambahkan WatermarkAnnotation.
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

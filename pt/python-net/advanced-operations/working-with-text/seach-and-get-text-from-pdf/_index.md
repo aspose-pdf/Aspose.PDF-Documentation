@@ -1,556 +1,758 @@
 ---
-title: Pesquisar e Obter Texto de Páginas de PDF
+title: Pesquisar e Obter Texto das Páginas de PDF
 linktitle: Pesquisar e Obter Texto
 type: docs
 weight: 60
 url: /pt/python-net/search-and-get-text-from-pdf/
-description: Este artigo explica como usar várias ferramentas para pesquisar e obter um texto do Aspose.PDF para .NET.
-lastmod: "2024-02-17"
-sitemap:
+description: Aprenda como pesquisar e extrair texto de documentos PDF em Python usando Aspose.PDF para análise de documentos.
+lastmod: "2025-11-13"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Como Pesquisar e Obter Texto das Páginas em PDF
+Abstract: O artigo oferece uma exploração aprofundada das capacidades de extração e manipulação de texto em documentos PDF usando a biblioteca Aspose.PDF for Python via .NET. Ele apresenta a classe TextFragmentAbsorber, que permite aos desenvolvedores pesquisar em todo o documento ou em páginas específicas por frases designadas ou padrões de expressão regular. A página descreve vários cenários práticos — como recuperar o conteúdo do texto, determinar sua posição (incluindo coordenadas e valores de recuo) e extrair propriedades da fonte como nome, tamanho, status de incorporação e cor — dos fragmentos de texto correspondentes. Exemplos de código detalhados demonstram o processo passo a passo, facilitando a integração de recursos de pesquisa de texto nas aplicações dos desenvolvedores.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pesquisar e Obter Texto de Páginas de PDF",
-    "alternativeHeadline": "Ferramentas para pesquisar e obter texto de Páginas de PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documentos pdf",
-    "keywords": "pdf, python, pesquisar texto, obter texto de pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/search-and-get-text-from-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/search-and-get-text-from-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "Este artigo explica como usar várias ferramentas para pesquisar e obter um texto do Aspose.PDF para .NET."
-}
-</script>
 
+## Pesquisar Texto em PDF
 
-## Pesquisar e Obter Texto de Todas as Páginas de um Documento PDF
+Pesquisar e extrair texto de uma área retangular definida em um documento PDF usando a classe TextAbsorber. Ela utiliza o modo de formatação de texto puro para gerar uma saída limpa e não formatada, tornando-a ideal para extrair conteúdo de regiões estruturadas como cabeçalhos, rodapés ou áreas de tabelas. Ao combinar TextExtractionOptions e TextSearchOptions com restrições retangulares, este exemplo oferece controle fino sobre onde e como o texto é extraído do documento.
 
-A classe [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber) permite encontrar texto, correspondendo a uma determinada frase, de todas as páginas de um documento PDF. Para buscar texto em todo o documento, é necessário chamar o método Accept da coleção de Páginas. O método [Accept](https://reference.aspose.com/pdf/python-net/aspose.pdf.page/accept/methods/3) aceita um objeto TextFragmentAbsorber como parâmetro, que retorna uma coleção de objetos TextFragment. Você pode percorrer todos os fragmentos e obter suas propriedades como Texto, Posição (XIndent, YIndent), Nome da Fonte, Tamanho da Fonte, IsAccessible, IsEmbedded, IsSubset, ForegroundColor, etc.
+1. Carregue o arquivo PDF usando 'ap.Document'.
+1. Configure as Opções de Extração de Texto.
+1. Defina a Área de Busca com Restrições Retangulares.
+1. Crie e Configure o TextAbsorber.
+1. Processar Todas as Páginas do Documento.
+1. Recuperar e Exibir o Texto Extraído.
 
-O trecho de código a seguir mostra como buscar texto de todas as páginas.
+```python
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
+# Global configuration
+DATA_DIR = "your path here"
 
-// Criar objeto TextAbsorber para encontrar todas as instâncias da frase de busca de entrada
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
+def text_absorber_search(input_file_path):
+    """
+    Search and extract text from PDF using TextAbsorber with area constraints.
 
-// Aceitar o absorvedor para todas as páginas
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+    Demonstrates basic text extraction from a PDF document using TextAbsorber
+    with pure text formatting mode and rectangular boundary constraints.
+    Extracts text from all pages within the specified rectangular area.
 
-// Obter os fragmentos de texto extraídos
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
 
-// Percorrer os fragmentos
-foreach (TextFragment textFragment in textFragmentCollection)
-{
+    Returns:
+        None: Prints extracted text to console.
 
-    Console.WriteLine("Texto : {0} ", textFragment.Text);
-    Console.WriteLine("Posição : {0} ", textFragment.Position);
-    Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent);
-    Console.WriteLine("YIndent : {0} ", textFragment.Position.YIndent);
-    Console.WriteLine("Fonte - Nome : {0}", textFragment.TextState.Font.FontName);
-    Console.WriteLine("Fonte - IsAccessible : {0} ", textFragment.TextState.Font.IsAccessible);
-    Console.WriteLine("Fonte - IsEmbedded : {0} ", textFragment.TextState.Font.IsEmbedded);
-    Console.WriteLine("Fonte - IsSubset : {0} ", textFragment.TextState.Font.IsSubset);
-    Console.WriteLine("Tamanho da Fonte : {0} ", textFragment.TextState.FontSize);
-    Console.WriteLine("Cor do Primeiro Plano : {0} ", textFragment.TextState.ForegroundColor);
-}
+    Note:
+        - Uses PURE text formatting mode for clean text extraction
+        - Constrains search to rectangle (0, 0, 842, 250)
+        - Processes all pages in the document
+        - TextAbsorber provides high-level text extraction capabilities
+        - Good for extracting text content without detailed positioning
+
+    Example:
+        >>> text_absorber_search("document.pdf")
+        # Prints all text found in the specified rectangular area across all pages
+    """
+    # Open PDF document
+    document = ap.Document(input_file_path)
+
+    text_extraction_options = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
+    text_search_options = ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+
+    absorber = ap.text.TextAbsorber(text_extraction_options, text_search_options)
+
+    # Process all pages
+    document.pages.accept(absorber)
+
+    print(f"Text fragments found: {absorber.text}")
 ```
 
+## Pesquisar Texto de uma Página PDF Específica
 
-Caso você precise pesquisar texto dentro de qualquer página específica de um PDF, especifique o número da página na coleção de páginas da instância do Documento e chame o método Accept para essa página (conforme mostrado na linha de código abaixo).
+Pesquisar e extrair texto de uma página e região específicas em um PDF usando o TextAbsorber da Aspose.PDF. Ele foca na página 2 do documento e extrai apenas o texto encontrado dentro de uma área retangular definida.
+Ao combinar TextExtractionOptions (para controle de formatação) e TextSearchOptions (para limitação de área), você pode realizar extração de texto precisa e específica por página de forma eficiente.
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Aceitar o absorvedor para uma página específica
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+1. Carregue o Documento PDF.
+1. Configure as Opções de Extração de Texto.
+1. Restrinja a extração de texto a uma área retangular específica na página.
+1. Crie e Configure o TextAbsorber.
+1. Processar uma Página Específica.
+1. Recuperar e Exibir o Texto Extraído.
+
+```python
+
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def text_absorber_search_page(input_file_path):
+    """
+    Search and extract text from a specific PDF page using TextAbsorber.
+
+    Demonstrates targeted text extraction from a single page (page 2) using
+    TextAbsorber with area constraints. Shows how to limit search scope to
+    specific pages and rectangular regions.
+
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
+
+    Returns:
+        None: Prints extracted text from page 2 to console.
+
+    Note:
+        - Targets only page 2 of the document (document.pages[2])
+        - Uses PURE text formatting mode for clean extraction
+        - Constrains search to rectangle (0, 0, 842, 250)
+        - Useful for page-specific text extraction
+        - More efficient than processing entire document when targeting specific pages
+
+    Example:
+        >>> text_absorber_search_page("document.pdf")
+        # Prints text found in the specified area on page 2 only
+    """
+    document = ap.Document(input_file_path)
+
+    text_extraction_options = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
+    text_search_options = ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+
+    absorber = ap.text.TextAbsorber(text_extraction_options, text_search_options)
+
+    # Only page 2
+    document.pages[2].accept(absorber)
+
+    print(f"Text fragments found: {absorber.text}")
+
 ```
 
-## Pesquisar e Obter Segmentos de Texto de Todas as Páginas do Documento PDF
+## Analisar e Extrair Propriedades Detalhadas de Fragmentos de Texto de um PDF
 
-Para pesquisar segmentos de texto em todas as páginas, você primeiro precisa obter os objetos TextFragment do documento.
- TextFragmentAbsorber permite que você encontre texto, correspondendo a uma frase específica, em todas as páginas de um documento PDF. Para buscar texto de todo o documento, você precisa chamar o método Accept da coleção Pages. O método Accept recebe um objeto TextFragmentAbsorber como parâmetro, que retorna uma coleção de objetos TextFragment. Uma vez que a TextFragmentCollection é obtida do documento, você precisa percorrer essa coleção e obter a TextSegmentCollection de cada objeto TextFragment. Depois disso, você pode obter todas as propriedades do objeto TextSegment individual. O seguinte trecho de código mostra como buscar segmentos de texto de todas as páginas.
+Ao contrário do TextAbsorber, que extrai texto bruto, o TextFragmentAbsorber fornece informações detalhadas e de baixo nível sobre cada fragmento de texto — como sua posição, atributos da fonte, cor e detalhes de incorporação.
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. Carregue o Documento PDF.
+1. Inicializar o TextFragmentAbsorber.
+1. Processar Todas as Páginas do Documento.
+1. Iterar pelos Fragmentos de Texto Extraídos.
+1. Imprimir Informações Básicas do Texto.
+1. Imprimir Detalhes da Fonte e Formatação.
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextPage.pdf");
+```python
 
-// Criar objeto TextAbsorber para encontrar todas as instâncias da frase de busca de entrada
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("Figure");
-// Aceitar o absorber para todas as páginas
-pdfDocument.Pages.Accept(textFragmentAbsorber);
-// Obter os fragmentos de texto extraídos
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// Percorrer os fragmentos
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    foreach (TextSegment textSegment in textFragment.Segments)
-    {
-        Console.WriteLine("Texto : {0} ", textSegment.Text);
-        Console.WriteLine("Posição : {0} ", textSegment.Position);
-        Console.WriteLine("XIndent : {0} ", textSegment.Position.XIndent);
-        Console.WriteLine("YIndent : {0} ", textSegment.Position.YIndent);
-        Console.WriteLine("Fonte - Nome : {0}", textSegment.TextState.Font.FontName);
-        Console.WriteLine("Fonte - IsAccessible : {0} ", textSegment.TextState.Font.IsAccessible);
-        Console.WriteLine("Fonte - IsEmbedded : {0} ", textSegment.TextState.Font.IsEmbedded);
-        Console.WriteLine("Fonte - IsSubset : {0} ", textSegment.TextState.Font.IsSubset);
-        Console.WriteLine("Tamanho da Fonte : {0} ", textSegment.TextState.FontSize);
-        Console.WriteLine("Cor do Primeiro Plano : {0} ", textSegment.TextState.ForegroundColor);
-    }
-}
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def text_fragment_absorber_search(input_file_path):
+    """
+    Search and analyze all text fragments in a PDF with detailed properties.
+
+    Demonstrates comprehensive text fragment analysis using TextFragmentAbsorber
+    to extract all text with detailed positioning, font, and formatting information.
+    Provides low-level access to text properties for detailed analysis.
+
+    Args:
+        input_file_path (str): Path to the input PDF file to analyze.
+
+    Returns:
+        None: Prints detailed text fragment information to console.
+
+    Note:
+        - Extracts all text fragments from all pages
+        - Provides detailed properties: position, font info, colors, sizes
+        - Shows font accessibility, embedding, and subset information
+        - Useful for detailed text analysis and formatting inspection
+        - TextFragmentAbsorber offers more granular control than TextAbsorber
+
+    Example:
+        >>> text_fragment_absorber_search("document.pdf")
+        # Prints comprehensive details about every text fragment in the document
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber()
+    document.pages.accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
+        print("XIndent:", fragment.position.x_indent)
+        print("YIndent:", fragment.position.y_indent)
+        print("Font - Name:", fragment.text_state.font.font_name)
+        print("Font - IsAccessible:", fragment.text_state.font.is_accessible)
+        print("Font - IsEmbedded:", fragment.text_state.font.is_embedded)
+        print("Font - IsSubset:", fragment.text_state.font.is_subset)
+        print("Font Size:", fragment.text_state.font_size)
+        print("Foreground Color:", fragment.text_state.foreground_color)
 ```
 
-Para buscar e obter TextSegments de uma página específica de um PDF, você precisa especificar o índice da página ao chamar o método Accept(..). Por favor, veja as seguintes linhas de código.
+## Pesquisar por uma Frase de Texto Específica em uma Única Página PDF
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Aceitar o absorvedor para todas as páginas
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+Pesquisar por uma frase de texto específica dentro de uma página de um documento PDF usando o TextFragmentAbsorber. Ao contrário da pesquisa em todo o documento, esta abordagem limita a busca a apenas uma página, tornando-a mais eficiente para confirmar a presença e a localização do texto em áreas direcionadas como cabeçalhos, rodapés ou seções de conteúdo específicas.
+
+1. Carregue o Documento PDF.
+1. Inicializar o TextFragmentAbsorber com a Frase de Busca.
+1. Aplicar o Absorber à Página Específica.
+1. Iterar Sobre os Fragmentos Encontrados.
+
+```python
+
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def text_fragment_absorber_search_page(input_file_path):
+    """
+    Search for specific text phrase on a particular PDF page.
+
+    Demonstrates targeted text search for a specific phrase ("whale") on
+    a single page. Shows how to combine phrase searching with page-specific
+    scope for efficient and focused text location.
+
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
+
+    Returns:
+        None: Prints matching text fragments and their positions to console.
+
+    Note:
+        - Searches for the phrase "whale" on page 2 only
+        - Returns text fragments with position information
+        - More efficient than document-wide search when targeting specific pages
+        - Useful for validating content presence in specific document sections
+        - Provides exact positioning coordinates for found text
+
+    Example:
+        >>> text_fragment_absorber_search_page("document.pdf")
+        # Prints all instances of "whale" found on page 2 with their positions
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber("whale")
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
-## Buscar e Obter Texto de todas as páginas usando Expressão Regular
+## Busca Sequencial de Texto Página a Página com Resultados Cumulativos
 
-TextFragmentAbsorber ajuda você a buscar e recuperar texto, de todas as páginas, baseando-se em uma expressão regular.
- Primeiro, você precisa passar uma expressão regular para o construtor do TextFragmentAbsorber como a frase. Depois disso, você deve definir a propriedade TextSearchOptions do objeto TextFragmentAbsorber. Esta propriedade requer um objeto TextSearchOptions e você precisa passar true como um parâmetro para seu construtor ao criar novos objetos. Como você deseja recuperar o texto correspondente de todas as páginas, é necessário chamar o método Accept da coleção Pages. TextFragmentAbsorber retorna um TextFragmentCollection contendo todos os fragmentos que correspondem aos critérios especificados pela expressão regular. O trecho de código a seguir mostra como procurar e obter texto de todas as páginas com base em uma expressão regular.
+Pesquisar texto incrementalmente em várias páginas de um documento PDF usando o TextFragmentAbsorber da Aspose.PDF.
+Ao contrário de uma busca de página única ou em todo o documento, esta abordagem permite processar as páginas sequencialmente, coletar resultados progressivamente e analisar fragmentos de texto com contexto específico de página. Esse método é ideal para documentos grandes ou fluxos de trabalho de processamento progressivo.
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. Carregue o Documento PDF.
+1. Inicializar o TextFragmentAbsorber e Definir a Frase de Busca.
+1. Processar a Primeira Página. Pesquisar somente a página 1. Imprime texto, número da página e posição. Fornece resultados isolados específicos da página para clareza.
+1. Processar a página seguinte sequencialmente. Mova para a página 2 e, opcionalmente, continue através do restante do documento. O 'absorber.visit()' garante a acumulação de resultados de todas as páginas visitadas. Imprime os resultados de busca cumulativos, mostrando tanto o texto quanto a localização.
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionAll.pdf");
+```python
 
-// Criar objeto TextAbsorber para encontrar todas as frases que correspondem à expressão regular
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Como 1999-2000
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Definir a opção de pesquisa de texto para especificar o uso de expressão regular
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
+# Global configuration
+DATA_DIR = "your path here"
 
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
+def text_fragment_absorber_sequential_search(input_file_path):
+    """
+    Demonstrate sequential page-by-page text search with cumulative results.
 
-// Aceitar o absorvedor para todas as páginas
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+    Shows how to perform incremental text searches across multiple pages,
+    accumulating results from each page. Demonstrates both individual page
+    processing and document-wide search continuation.
 
-// Obter os fragmentos de texto extraídos
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
 
-// Percorrer os fragmentos
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    Console.WriteLine("Texto : {0} ", textFragment.Text);
-    Console.WriteLine("Posição : {0} ", textFragment.Position);
-    Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent);
-    Console.WriteLine("YIndent : {0} ", textFragment.Position.YIndent);
-    Console.WriteLine("Fonte - Nome : {0}", textFragment.TextState.Font.FontName);
-    Console.WriteLine("Fonte - IsAccessible : {0} ", textFragment.TextState.Font.IsAccessible);
-    Console.WriteLine("Fonte - IsEmbedded : {0} ", textFragment.TextState.Font.IsEmbedded);
-    Console.WriteLine("Fonte - IsSubset : {0} ", textFragment.TextState.Font.IsSubset);
-    Console.WriteLine("Tamanho da Fonte : {0} ", textFragment.TextState.FontSize);
-    Console.WriteLine("Cor do Primeiro Plano : {0} ", textFragment.TextState.ForegroundColor);
-}
+    Returns:
+        None: Prints text fragments from sequential page searches to console.
+
+    Note:
+        - Searches for "whale" on page 1, then continues to page 2
+        - Uses absorber.visit(document) to process remaining pages
+        - Demonstrates incremental search accumulation
+        - Shows page numbers for found fragments
+        - Useful for progressive document processing and result accumulation
+
+    Example:
+        >>> text_fragment_absorber_sequential_search("document.pdf")
+        # Prints "whale" instances from page 1, then from all remaining pages
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.phrase = "whale"
+
+    # First page
+    document.pages[1].accept(absorber)
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Page:", fragment.page.number)
+        print("Position:", fragment.position)
+
+    print("--")
+
+    # Continue to next page
+    document.pages[2].accept(absorber)
+    absorber.visit(document)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Page:", fragment.page.number)
+        print("Position:", fragment.position)
 ```
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-TextFragmentAbsorber textFragmentAbsorber;
-// Para buscar uma correspondência exata de uma palavra, você pode considerar usar expressões regulares.
-textFragmentAbsorber = new TextFragmentAbsorber(@"\bWord\b", new TextSearchOptions(true));
+## Busca de Frase Direcionada dentro de uma Área Retangular
 
-// Para buscar uma string em maiúsculas ou minúsculas, você pode considerar usar expressões regulares.
-textFragmentAbsorber = new TextFragmentAbsorber("(?i)Line", new TextSearchOptions(true));
+Buscar uma frase específica dentro de um PDF, restringindo a busca a uma área retangular específica em uma única página.
+Ao combinar a busca de frases com restrições espaciais, você pode localizar conteúdo com precisão em regiões designadas sem analisar toda a página ou documento. Isso é particularmente útil para formulários, cabeçalhos, rodapés ou relatórios estruturados onde o conteúdo aparece em locais previsíveis.
 
-// Para buscar todas as strings (analisar todas as strings) dentro do documento PDF, por favor, tente usar a seguinte expressão regular.
-textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
+1. Carregar o Documento PDF.
+1. Inicializar TextFragmentAbsorber com Frase e Restrições Retangulares
+1. Aplicar o Absorber na Página 2. Restringe o processamento à página 2, reduzindo cálculos desnecessários. Garante que a busca seja específica da página.
+1. Iterar pelos Fragmentos Encontrados e Imprimir
 
-// Encontre a correspondência da string de busca e obtenha qualquer coisa após a string até a quebra de linha.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(?i)the ((.)*)");
+```python
 
-// Por favor, use a seguinte expressão regular para encontrar o texto após a correspondência do regex.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(?<=word).*");
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Para buscar Hyperlink/URL's dentro do documento PDF, por favor, tente usar a seguinte expressão regular.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(http|ftp|https):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?");
+# Global configuration
+DATA_DIR = "your path here"
+
+def text_fragment_absorber_search_phrase(input_file_path):
+    """
+    Search for specific phrase within a rectangular area constraint.
+
+    Demonstrates targeted phrase searching with both text matching and
+    spatial constraints. Combines phrase search with rectangular boundary
+    limitations for precise content location.
+
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
+
+    Returns:
+        None: Prints matching text fragments and positions to console.
+
+    Note:
+        - Searches for "elephant" phrase on page 2
+        - Constrains search to rectangle (0, 0, 842, 250)
+        - Combines text matching with spatial filtering
+        - Useful for finding content in specific document regions
+        - More precise than page-wide or document-wide searches
+
+    Example:
+        >>> text_fragment_absorber_search_phrase("document.pdf")
+        # Prints "elephant" instances found within the specified rectangular area on page 2
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber(
+        "elephant", ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+    )
+
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
+## Busca de Padrões de Texto em PDF Usando Expressões Regulares
 
-## Buscar Texto com base em Regex e Adicionar Hiperlink
+Buscar padrões de texto em um PDF usando expressões regulares. Ao habilitar o modo regex no TextFragmentAbsorber, você pode localizar padrões complexos como números, datas, preços, coordenadas ou formatos de texto personalizados. A função limita a busca a uma página específica, tornando-a eficiente para extração direcionada de dados estruturados.
 
-Se você deseja adicionar um hiperlink sobre uma frase de texto com base em uma expressão regular, primeiro encontre todas as frases que correspondem a essa expressão regular específica usando TextFragmentAbsorber e adicione um hiperlink sobre essas frases.
+1. Carregar o Documento PDF.
+1. Inicializar TextFragmentAbsorber com Padrão Regex.
+1. Aplicar o Absorber na Página 2. Limita a busca à página 2 para eficiência e precisão. Apenas o texto desta página é analisado.
+1. Iterar pelos Fragmentos Encontrados. Imprime os fragmentos de texto correspondentes e suas coordenadas. Fornece informações de localização precisas para os padrões extraídos.
 
-Para encontrar uma frase e adicionar um hiperlink sobre ela:
+```python
 
-1. Passe a expressão regular como um parâmetro para o construtor do TextFragmentAbsorber.
-2. Crie um objeto TextSearchOptions que especifica se a expressão regular é usada ou não.
-3. Obtenha as frases correspondentes em TextFragments.
-4. Percorra as correspondências para obter suas dimensões retangulares, altere a cor do primeiro plano para azul (opcional - para fazê-lo parecer um hiperlink) e crie um link usando o método CreateWebLink(..) da classe PdfContentEditor.
-5. Salve o PDF atualizado usando o método Save do objeto Document.
-O snippet de código a seguir mostra como buscar texto dentro de um arquivo PDF usando uma expressão regular e adicionar hiperlinks sobre as correspondências.
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Crie um objeto absorvedor para encontrar todas as instâncias da frase de pesquisa de entrada
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("\\d{4}-\\d{4}");
-// Habilitar pesquisa por expressão regular
-absorber.TextSearchOptions = new TextSearchOptions(true);
-// Abra o documento
-PdfContentEditor editor = new PdfContentEditor();
-// Vincular arquivo PDF de origem
-editor.BindPdf(dataDir + "SearchRegularExpressionPage.pdf");
-// Aceitar o absorvedor para a página
-editor.Document.Pages[1].Accept(absorber);
+# Global configuration
+DATA_DIR = "your path here"
 
-int[] dashArray = { };
-String[] LEArray = { };
-System.Drawing.Color blue = System.Drawing.Color.Blue;
+def text_fragment_absorber_search_regex(input_file_path):
+    """
+    Search for text patterns using regular expressions.
 
-// Percorrer os fragmentos
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    System.Drawing.Rectangle rect = new System.Drawing.Rectangle((int)textFragment.Rectangle.LLX,
-        (int)Math.Round(textFragment.Rectangle.LLY), (int)Math.Round(textFragment.Rectangle.Width + 2),
-        (int)Math.Round(textFragment.Rectangle.Height + 1));
-    Enum[] actionName = new Enum[2] { Aspose.Pdf.Annotations.PredefinedAction.Document_AttachFile, Aspose.Pdf.Annotations.PredefinedAction.Document_ExtractPages };
-    editor.CreateWebLink(rect, "http:// Www.aspose.com", 1, blue, actionName);
-    editor.CreateLine(rect, "", (float)textFragment.Rectangle.LLX + 1, (float)textFragment.Rectangle.LLY - 1,
-        (float)textFragment.Rectangle.URX, (float)textFragment.Rectangle.LLY - 1, 1, 1, blue, "S", dashArray, LEArray);
-}
+    Demonstrates advanced text searching using regular expression patterns
+    to find complex text structures like numbers, dates, or custom formats.
+    Shows how to enable regex mode in TextFragmentAbsorber.
 
-dataDir = dataDir + "SearchTextAndAddHyperlink_out.pdf";
-editor.Save(dataDir);
-editor.Close();
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
+
+    Returns:
+        None: Prints matching text fragments and positions to console.
+
+    Note:
+        - Uses regex pattern r"\\d+\\.\\d+" to find decimal numbers
+        - Enables regex mode with is_regular_expression_used=True
+        - Searches on page 2 only
+        - Powerful for finding formatted data like prices, coordinates, dates
+        - Regular expressions provide flexible pattern matching capabilities
+
+    Example:
+        >>> text_fragment_absorber_search_regex("document.pdf")
+        # Prints all decimal numbers (e.g., "12.34", "0.99") found on page 2
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber(r"\d+\.\d+", ap.text.TextSearchOptions(is_regular_expression_used=True))
+
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
+## Converter Correspondências de Texto em Hiperligações no PDF Usando TextFragmentAbsorber
 
-## Pesquisar e Desenhar Retângulo ao redor de cada TextFragment
+Buscar frases de texto específicas em um PDF e convertê‑las em hiperligações clicáveis. Usando TextFragmentAbsorber com padrões regex, ele localiza palavras‑alvo e aplica estilo visual (cor e sublinhado) juntamente com links interativos.
 
-Aspose.PDF para .NET suporta a funcionalidade de pesquisar e obter as coordenadas de cada caractere ou fragmento de texto. Portanto, para ter certeza sobre as coordenadas retornadas para cada caractere, podemos considerar destacar (adicionando retângulo) ao redor de cada caractere.
+1. Carregar o Documento PDF.
+1. Inicializar TextFragmentAbsorber com Padrão Regex.
+1. Aplicar o Absorber na Página 1.
+1. Estilizar e Adicionar Hiperligações às Correspondências.
+1. Salvar o PDF Modificado.
 
-No caso de um parágrafo de texto, você pode considerar usar alguma expressão regular para determinar a quebra do parágrafo e desenhar um retângulo ao redor dele. Por favor, veja o seguinte trecho de código. O seguinte trecho de código obtém as coordenadas de cada caractere e cria um retângulo ao redor de cada caractere.
+```python
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Abrir documento
-Document document = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
+# Global configuration
+DATA_DIR = "your path here"
 
-// Criar objeto TextAbsorber para encontrar todas as frases que correspondem à expressão regular
+def text_fragment_absorber_search_and_add_hyperlink(input_file_path):
+    """
+    Search for text and convert matches to hyperlinks with styling.
 
-TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber(@"[\S]+");
+    Demonstrates advanced text processing by finding specific words and
+    converting them into clickable hyperlinks with visual styling. Shows
+    how to combine text search with document modification.
 
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
+    Args:
+        input_file_path (str): Path to the input PDF file to process.
 
-textAbsorber.TextSearchOptions = textSearchOptions;
+    Returns:
+        None: Saves modified PDF with hyperlinks to output file.
 
-document.Pages.Accept(textAbsorber);
+    Note:
+        - Searches for "whale|elephant" using regex pattern on page 1
+        - Converts found text to Wikipedia hyperlinks
+        - Applies blue color and underline styling to hyperlinks
+        - Creates new output file with "_out.pdf" suffix
+        - Demonstrates practical text enhancement and interactivity
+        - Combines search, styling, and hyperlinking in one operation
 
-var editor = new PdfContentEditor(document);
+    Example:
+        >>> text_fragment_absorber_search_and_add_hyperlink("document_in.pdf")
+        # Creates "document_out.pdf" with "whale" and "elephant" as clickable Wikipedia links
+    """
+    document = ap.Document(input_file_path)
 
-foreach (TextFragment textFragment in textAbsorber.TextFragments)
-{
-    foreach (TextSegment textSegment in textFragment.Segments)
-    {
-        DrawBox(editor, textFragment.Page.Number, textSegment, System.Drawing.Color.Red);
-    }
+    absorber = ap.text.TextFragmentAbsorber("whale|elephant")
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
 
-}
-dataDir = dataDir + "SearchTextAndDrawRectangle_out.pdf";
-document.Save(dataDir);
+    absorber.visit(document.pages[1])
+
+    for fragment in absorber.text_fragments:
+        fragment.text_state.foreground_color = ap.Color.blue
+        fragment.text_state.underline = True
+        fragment.hyperlink = ap.WebHyperlink(
+            f"https://en.wikipedia.org/wiki/{fragment.text}"
+        )
+
+    output = input_file_path.replace("in.pdf", "out.pdf")
+    document.save(output)
 ```
 
+## Buscar e Identificar Texto Estilizado em PDF Usando TextFragmentAbsorber
 
-## Destaque cada caractere no documento PDF
+Buscar fragmentos de texto em um PDF com base em suas propriedades de formatação, e não no seu conteúdo. Usando TextFragmentAbsorber, ele identifica texto com estilos específicos, como texto em negrito.
 
-{{% alert color="primary" %}}
+1. Carregar o Documento PDF.
+1. Inicializar TextFragmentAbsorber.
+1. Aplicar o Absorber na Página 1.
+1. Inspecionar Fragmentos de Texto com Base na Formatação. Verifica o estilo da fonte para formatação em negrito.
 
-Você pode tentar buscar texto em um documento usando Aspose.PDF e obter os resultados online neste [link](https://products.aspose.app/pdf/search)
+```python
 
-{{% /alert %}}
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-Aspose.PDF para .NET suporta o recurso de buscar e obter as coordenadas de cada caractere ou fragmentos de texto. Portanto, para ter certeza sobre as coordenadas sendo retornadas para cada caractere, podemos considerar destacá-los (adicionando retângulo) ao redor de cada caractere. O seguinte trecho de código obtém as coordenadas de cada caractere e cria um retângulo ao redor de cada um.
+# Global configuration
+DATA_DIR = "your path here"
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+def text_fragment_absorber_search_styled_text(input_file_path):
+    """
+    Search and identify text based on formatting properties.
 
-int resolution = 150;
+    Demonstrates how to find text fragments based on their formatting
+    characteristics rather than content. Shows detection of bold text
+    and invisible text within the document.
 
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "input.pdf");
+    Args:
+        input_file_path (str): Path to the input PDF file to analyze.
 
-using (MemoryStream ms = new MemoryStream())
-{
-    PdfConverter conv = new PdfConverter(pdfDocument);
-    conv.Resolution = new Resolution(resolution, resolution);
-    conv.GetNextImage(ms, System.Drawing.Imaging.ImageFormat.Png);
+    Returns:
+        None: Prints formatted text findings to console.
 
-    Bitmap bmp = (Bitmap)Bitmap.FromStream(ms);
+    Note:
+        - Searches all text fragments on page 1
+        - Identifies text with FontStyles.BOLD formatting
+        - Detects invisible/hidden text using text_state.invisible
+        - Useful for formatting analysis and hidden content detection
+        - Demonstrates text property-based filtering capabilities
 
-    using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bmp))
-    {
-        float scale = resolution / 72f;
-        gr.Transform = new System.Drawing.Drawing2D.Matrix(scale, 0, 0, -scale, 0, bmp.Height);
+    Example:
+        >>> text_fragment_absorber_search_styled_text("document.pdf")
+        # Prints all bold text and any hidden/invisible text found on page 1
+    """
+    document = ap.Document(input_file_path)
 
-        for (int i = 0; i < pdfDocument.Pages.Count; i++)
-        {
-Page page = pdfDocument.Pages[1];
-// Criar objeto TextAbsorber para encontrar todas as palavras
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
-page.Accept(textFragmentAbsorber);
-// Obter os fragmentos de texto extraídos
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// Loop através dos fragmentos
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    if (i == 0)
-    {
-        gr.DrawRectangle(
-        Pens.Yellow,
-        (float)textFragment.Position.XIndent,
-        (float)textFragment.Position.YIndent,
-        (float)textFragment.Rectangle.Width,
-        (float)textFragment.Rectangle.Height);
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
 
-        for (int segNum = 1; segNum <= textFragment.Segments.Count; segNum++)
-        {
-TextSegment segment = textFragment.Segments[segNum];
+    absorber.visit(document.pages[1])
 
-for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
-{
-    CharInfo characterInfo = segment.Characters[charNum];
-
-    Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
-    Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
-          "   TextFragment URY = " + textFragment.Rectangle.URY);
-
-    gr.DrawRectangle(
-    Pens.Black,
-    (float)characterInfo.Rectangle.LLX,
-    (float)characterInfo.Rectangle.LLY,
-    (float)characterInfo.Rectangle.Width,
-    (float)characterInfo.Rectangle.Height);
-}
-
-gr.DrawRectangle(
-Pens.Green,
-(float)segment.Rectangle.LLX,
-(float)segment.Rectangle.LLY,
-(float)segment.Rectangle.Width,
-(float)segment.Rectangle.Height);
-        }
-    }
-}
-        }
-    }
-    dataDir = dataDir + "HighlightCharacterInPDF_out.png";
-    bmp.Save(dataDir, System.Drawing.Imaging.ImageFormat.Png);
-}
+    for fragment in absorber.text_fragments:
+        if fragment.text_state.font_style == ap.text.FontStyles.BOLD:
+            print(f"Bold: {fragment.text}")
 ```
 
+Detecta texto oculto ou invisível em um documento PDF ao analisar as propriedades de formatação do texto:
 
-## Adicionar e Pesquisar Texto Oculto
+1. Carregar o Documento PDF.
+1. Inicializar TextFragmentAbsorber.
+1. Aplicar o Absorber na Página 1.
+1. Inspecionar Fragmentos de Texto com Base na Formatação. Verifique 'fragment.text_state.invisible' para texto oculto.
 
-Às vezes, queremos adicionar texto oculto em um documento PDF e, em seguida, pesquisar esse texto oculto e usar sua posição para pós-processamento. Para sua conveniência, o Aspose.PDF para .NET fornece essas habilidades. Você pode adicionar texto oculto durante a geração do documento. Além disso, você pode encontrar texto oculto usando o TextFragmentAbsorber. Para adicionar texto oculto, defina TextState.Invisible como 'true' para o texto adicionado. O TextFragmentAbsorber encontra todo o texto que corresponde ao padrão (se especificado). É o comportamento padrão que não pode ser alterado. Para verificar se o texto encontrado é realmente invisível, a propriedade TextState.Invisible pode ser usada. O trecho de código abaixo mostra como usar esse recurso.
+```python
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-//Criar documento com texto oculto
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-Page page = doc.Pages.Add();
-TextFragment frag1 = new TextFragment("Este é um texto comum.");
-TextFragment frag2 = new TextFragment("Este é um texto invisível.");
+# Global configuration
+DATA_DIR = "your path here"
 
-//Definir propriedade de texto - invisível
-frag2.TextState.Invisible = true;
+def text_fragment_absorber_search_styled_text(input_file_path):
+    """
+    Search and identify text based on formatting properties.
 
-page.Paragraphs.Add(frag1);
-page.Paragraphs.Add(frag2);
-doc.Save(dataDir + "39400_out.pdf");
-doc.Dispose();
+    Demonstrates how to find text fragments based on their formatting
+    characteristics rather than content. Shows detection of bold text
+    and invisible text within the document.
 
-//Pesquisar texto no documento
-doc = new Aspose.Pdf.Document(dataDir + "39400_out.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-absorber.Visit(doc.Pages[1]);
+    Args:
+        input_file_path (str): Path to the input PDF file to analyze.
 
-foreach (TextFragment fragment in absorber.TextFragments)
-{
-    //Fazer algo com os fragmentos
-    Console.WriteLine("Texto '{0}' na posição {1} invisibilidade: {2} ",
-    fragment.Text, fragment.Position.ToString(), fragment.TextState.Invisible);
-}
-doc.Dispose();
+    Returns:
+        None: Prints formatted text findings to console.
+
+    Note:
+        - Searches all text fragments on page 1
+        - Identifies text with FontStyles.BOLD formatting
+        - Detects invisible/hidden text using text_state.invisible
+        - Useful for formatting analysis and hidden content detection
+        - Demonstrates text property-based filtering capabilities
+
+    Example:
+        >>> text_fragment_absorber_search_styled_text("document.pdf")
+        # Prints all bold text and any hidden/invisible text found on page 1
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
+
+    absorber.visit(document.pages[1])
+
+    for fragment in absorber.text_fragments:
+        if fragment.text_state.invisible:
+            print(f"Invisible: {fragment.text}")
 ```
 
+## Realce Visual de Texto em Páginas PDF
 
-## Procurando Texto Com .NET Regex
+Esta função combina reconhecimento de texto e renderização em um único fluxo de trabalho. Ela não apenas extrai o texto, mas também o visualiza destacando fragmentos, segmentos e caracteres em retângulos codificados por cores nas imagens PNG de cada página.
 
-Aspose.PDF para .NET fornece a capacidade de pesquisar documentos usando a opção padrão .NET Regex. O TextFragmentAbsorber pode ser usado para este propósito, como mostrado no exemplo de código abaixo.
+Nosso exemplo realiza visualização avançada de texto em um PDF ao:
 
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+- pesquisar todos os fragmentos de texto visíveis usando expressões regulares
+- renderizar cada página do PDF em uma imagem PNG de alta resolução
+- desenhar retângulos coloridos ao redor de fragmentos de texto, segmentos de texto e caracteres individuais
 
-// Criar objeto Regex para encontrar todas as palavras
-System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"[\S]+");
+1. Definir Resolução da Imagem de Saída. Cada página PDF é convertida em uma imagem PNG de 150 DPI.
+1. Abrir o PDF e Inicializar o Text Absorber.
+1. Processar Cada Página. Aplicar o absorber em cada página. Coletar todos os fragmentos de texto detectados e suas posições geométricas.
+1. Converter a Página para um Stream PNG.
+1. Preparar o Objeto Gráfico para Desenho.
+1. Aplicar Transformação de Coordenadas. Converter coordenadas PDF para pixels da imagem.
+1. Desenhar Retângulos para Elementos de Texto.
+1. Salvar o Resultado.
 
-// Abrir documento
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "SearchTextRegex.pdf");
+```python
 
-// Obter uma página específica
-Page page = document.Pages[1];
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Criar objeto TextAbsorber para encontrar todas as instâncias do regex de entrada
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(regex);
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
+# Global configuration
+DATA_DIR = "your path here"
 
-// Aceitar o absorvedor para a página
-page.Accept(textFragmentAbsorber);
+def text_fragment_absorber_search_and_highlight(infile):
+    """
+    Search text and create visual highlighting with PNG output.
 
-// Obter os fragmentos de texto extraídos
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    Advanced function that combines text search with visual highlighting.
+    Converts PDF pages to PNG images and draws colored rectangles around
+    found text fragments, segments, and individual characters.
 
-// Percorrer os fragmentos
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    Console.WriteLine(textFragment.Text);
-}
+    Args:
+        infile (str): Path to the input PDF file to process.
+
+    Returns:
+        None: Saves highlighted PNG images for each page.
+
+    Note:
+        - Uses regex pattern r"[\\S]+" to find all non-whitespace sequences
+        - Converts each page to 150 DPI PNG image using PngDevice
+        - Draws yellow rectangles around text fragments
+        - Draws green rectangles around text segments
+        - Draws black rectangles around individual characters
+        - Creates detailed visual analysis of text structure
+        - Output files named with page numbers: "filename1_out.png", etc.
+        - Complex coordinate transformation for proper overlay positioning
+
+    Example:
+        >>> text_fragment_absorber_search_and_highlight("document_in.pdf")
+        # Creates PNG files with visual highlighting of all text elements
+    """
+    resolution = 150
+    png_device = ap.devices.PngDevice(ap.devices.Resolution(resolution, resolution))
+
+    # Open PDF document
+    document = ap.Document(infile)
+    absorber = ap.text.TextFragmentAbsorber(r"[\S]+")
+    absorber.text_search_options.is_regular_expression_used = True
+
+    for page in document.pages:
+        page.accept(absorber)
+        stream = io.BytesIO()
+        png_device.process(page, stream)
+        with drawing.Bitmap.from_stream(stream) as bmp:
+            with drawing.Graphics.from_image(bmp) as gr:
+                scale = resolution / 72
+                gr.transform = drawing.drawing2d.Matrix(
+                    float(scale),
+                    float(0),
+                    float(0),
+                    float(-scale),
+                    float(0),
+                    float(bmp.height),
+                )
+                text_fragment_collection = absorber.text_fragments
+                # Loop through the fragments
+                for text_fragment in text_fragment_collection:
+                    gr.draw_rectangle(
+                        drawing.Pens.yellow,
+                        float(text_fragment.position.x_indent),
+                        float(text_fragment.position.y_indent),
+                        float(text_fragment.rectangle.width),
+                        float(text_fragment.rectangle.height),
+                    )
+                    for seg_num in range(1, len(text_fragment.segments) + 1):
+                        segment = text_fragment.segments[seg_num]
+                        for char_num in range(1, len(segment.characters) + 1):
+                            character_info = segment.characters[char_num]
+                            rect = page.get_page_rect(True)
+                            print(
+                                f"TextFragment = {text_fragment.text}"
+                                + f" Page URY = {rect.ury}"
+                                + f" TextFragment URY = {text_fragment.rectangle.ury}"
+                            )
+                            gr.draw_rectangle(
+                                drawing.Pens.black,
+                                float(character_info.rectangle.llx),
+                                float(character_info.rectangle.lly),
+                                float(character_info.rectangle.width),
+                                float(character_info.rectangle.height),
+                            )
+                        gr.draw_rectangle(
+                            drawing.Pens.green,
+                            float(segment.rectangle.llx),
+                            float(segment.rectangle.lly),
+                            float(segment.rectangle.width),
+                            float(segment.rectangle.height),
+                        )
+
+                # Save result
+                bmp.save(
+                    infile.replace("_in.pdf", str(page.number) + "_out.png"),
+                    drawing.imaging.ImageFormat.png,
+                )
 ```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Biblioteca .NET",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

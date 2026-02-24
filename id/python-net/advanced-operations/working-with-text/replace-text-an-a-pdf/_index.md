@@ -1,559 +1,883 @@
 ---
-title: Ganti Teks dalam PDF melalui Python
-linktitle: Ganti Teks dalam PDF
+title: Ganti Teks di PDF dengan Python
+linktitle: Ganti Teks di PDF
 type: docs
 weight: 40
 url: /id/python-net/replace-text-in-pdf/
-description: Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari Aspose.PDF untuk Python melalui pustaka .NET.
-lastmod: "2024-02-17"
-sitemap:
+description: Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari pustaka Aspose.PDF untuk Python via .NET.
+lastmod: "2025-10-13"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+aliases: 
+    - /python-net/replace-text-in-a-pdf-document/
+TechArticle: true
+AlternativeHeadline: Cara mengganti Teks di PDF menggunakan Python
+Abstract: Artikel ini menyediakan panduan komprehensif tentang berbagai teknik manipulasi teks dalam dokumen PDF menggunakan Aspose.PDF untuk Python via .NET. Artikel ini mencakup beberapa strategi penggantian teks, termasuk mengganti teks di semua halaman, dalam wilayah halaman tertentu, dan menggunakan ekspresi reguler. Artikel juga menjelaskan cara mengganti font dalam PDF, memastikan font yang tidak terpakai dihapus, serta cara mengelola penggantian teks untuk secara otomatis menyusun ulang konten halaman. Selain itu, artikel membahas render simbol yang dapat diganti selama pembuatan PDF, termasuk penggunaannya di area header/footer, untuk meningkatkan kustomisasi dokumen. Akhirnya, artikel merinci metode untuk menghapus semua teks dari dokumen PDF, mengoptimalkan operasi untuk skenario di mana penghapusan total teks diperlukan. Setiap bagian dilengkapi dengan potongan kode dalam Python dan bahasa lain yang didukung untuk menunjukkan implementasi praktis.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Ganti Teks dalam PDF",
-    "alternativeHeadline": "Mengganti dan Menghapus Teks dalam File PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, ganti teks, hapus teks",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/replace-text-in-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/replace-text-in-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari Aspose.PDF untuk Python melalui pustaka .NET."
-}
-</script>
 
+Contoh-contoh ini menunjukkan cara **memodifikasi atau menghapus teks dalam PDF yang ada**.
 
-## Ganti Teks di semua halaman dokumen PDF
+## Ganti teks yang ada
+
+### Ganti Teks di semua halaman dokumen PDF
 
 {{% alert color="primary" %}}
 
-Anda dapat mencoba menemukan dan mengganti teks dalam dokumen menggunakan Aspose.PDF dan mendapatkan hasilnya secara online di [tautan ini](https://products.aspose.app/pdf/redaction)
+Anda dapat mencoba mencari dan mengganti teks dalam dokumen menggunakan Aspose.PDF dan melihat hasilnya secara online melalui [tautan](https://products.aspose.app/pdf/redaction)
 
 {{% /alert %}}
 
-Untuk mengganti teks di semua halaman dokumen PDF, Anda terlebih dahulu perlu menggunakan [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) untuk menemukan frasa tertentu yang ingin Anda ganti. Setelah itu, Anda perlu melalui semua TextFragments untuk mengganti teks dan mengubah atribut lainnya. Setelah Anda melakukan itu, Anda hanya perlu menyimpan PDF keluaran menggunakan metode Save dari objek Document. Kode berikut menunjukkan bagaimana mengganti teks di semua halaman dokumen PDF.
+Penggantian teks adalah kebutuhan umum saat memperbarui atau memperbaiki konten dalam dokumen PDF yang ada — misalnya, mengubah nama produk, memperbaiki typo, atau memperbarui terminologi di banyak halaman.
+
+Aspose.PDF untuk Python via .NET menawarkan metode yang kuat dan efisien untuk mencari dan mengganti teks secara programatis melalui kelas [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+
+Contoh ini menunjukkan cara menemukan semua kemunculan frasa tertentu (dalam kasus ini, "Black cat") dan menggantinya dengan frasa baru ("White dog") di seluruh dokumen PDF.
+
+1. Tentukan Frasa Pencarian dan Penggantian. Atur teks yang ingin Anda temukan dan teks yang ingin menggantikannya.
+1. Muat Dokumen PDF.
+1. Buat Text Absorber. TextFragmentAbsorber diinisialisasi dengan frasa pencarian. Ia memindai dokumen untuk semua kemunculan frasa tersebut.
+1. Terapkan Absorber ke Semua Halaman. Ini iterasi melalui semua halaman dan mengumpulkan fragmen teks yang cocok dengan frasa.
+1. Ganti setiap fragmen yang ditemukan. Setiap kemunculan "Black cat" harus diubah menjadi "White dog".
+1. Simpan PDF yang Diperbarui.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Buka dokumen
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Buat objek TextAbsorber untuk menemukan semua instance dari frasa pencarian masukan
-    absorber = ap.text.TextFragmentAbsorber("format")
+def replace_text_on_all_pages(infile, outfile):
+    """
+    Replace text on all pages of a PDF document.
 
-    # Terima absorber untuk semua halaman
+    Searches for a specific text phrase throughout all pages of a PDF document
+    and replaces all occurrences with a new phrase. This function demonstrates
+    global text replacement using TextFragmentAbsorber.
+
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Replaces "Black cat" with "White dog" as demonstration
+        - Searches across all pages in the document
+        - Preserves original formatting and layout
+        - Uses TextFragmentAbsorber for efficient text search
+
+    Example:
+        >>> replace_text_on_all_pages("input.pdf", "output.pdf")
+        # Replaces all instances of "Black cat" with "White dog"
+    """
+    search_phrase = "Black cat"
+    replace_phrase = "White dog"
+
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
+        document.pages.accept(absorber)
+
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
+
+        document.save(outfile)
+```
+
+### Ganti Teks di wilayah halaman tertentu
+
+Terkadang, Anda mungkin perlu mengganti teks hanya dalam area tertentu dari halaman PDF alih-alih mencari di seluruh dokumen — misalnya, memperbarui header, footer, atau sel tabel pada posisi yang diketahui.
+
+Pustaka Aspose.PDF untuk Python via .NET memungkinkan fungsi ini dengan memanfaatkan [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) bersamaan dengan pencarian teks berbasis wilayah.
+
+Contoh ini menunjukkan cara menemukan dan mengganti semua kemunculan frasa target dalam wilayah persegi panjang yang ditentukan pada halaman tertentu.
+
+1. Tentukan Frasa Pencarian dan Penggantian.
+1. Muat Dokumen PDF.
+1. Buat Text Absorber untuk Pencarian. Inisialisasi TextFragmentAbsorber untuk menemukan teks yang diinginkan.
+1. Batasi Area Pencarian. Persegi panjang menentukan batas koordinat x dan y pada halaman.
+1. Terapkan Absorber ke Halaman Tertentu. Ini melakukan pencarian dan mengumpulkan fragmen teks yang cocok dalam area yang ditentukan.
+1. Ganti Teks yang Ditemukan. Setiap kemunculan 'doc' dalam wilayah yang ditentukan menjadi 'DOC'.
+1. Simpan PDF yang Diperbarui.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def replace_text_in_particular_page_region(infile, outfile):
+    """
+    Replace text in a particular region of a page.
+
+    Performs targeted text replacement within a specific rectangular region
+    on the first page of a PDF document. This allows for precise control
+    over which text gets replaced based on its location.
+
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Replaces "doc" with "DOC" within the specified region
+        - Only affects text within coordinates (300, 442, 500, 742)
+        - Uses limit_to_page_bounds for precise region control
+        - Only processes the first page (pages[1])
+
+    Example:
+        >>> replace_text_in_particular_page_region("input.pdf", "output.pdf")
+        # Replaces "doc" with "DOC" only in the specified rectangular area
+    """
+    search_phrase = "doc"
+    replace_phrase = "DOC"
+
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(search_phrase)
+        absorber.text_search_options.limit_to_page_bounds = True
+        absorber.text_search_options.rectangle = ap.Rectangle(300, 442, 500, 742, True)
+        document.pages[1].accept(absorber)
+
+        for fragment in absorber.text_fragments:
+            fragment.text = replace_phrase
+
+        document.save(outfile)
+```
+
+### Ubah Ukuran dan Pindahkan Teks Tanpa Mengubah Ukuran Font
+
+Saat mengganti teks dalam PDF, terkadang Anda ingin menyesuaikan atau memposisikan kembali teks baru dalam area tertentu tanpa mengubah ukuran font.
+Aspose.PDF untuk Python via .NET menyediakan opsi untuk mengatur tata letak dan spasi teks sambil mempertahankan ukuran font asli.
+
+1. Muat Dokumen PDF.
+1. Kumpulkan semua fragmen teks pada halaman menggunakan 'TextFragmentAbsorber'.
+1. Pilih Fragmen yang Akan Diubah.
+1. Pindahkan dan ubah ukuran persegi panjang teks.
+1. Sesuaikan Spasi Teks. Aktifkan penyesuaian spasi untuk menyesuaikan teks dalam persegi panjang yang telah diubah.
+1. Ganti teks fragmen.
+1. Simpan PDF yang Diperbarui.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def replace_text_and_resize_and_shift_without_changing_font_size(infile, outfile):
+    """
+    Resize and shift text without changing the font size.
+
+    Demonstrates how to replace text content while adjusting its position
+    and width within a modified rectangular area. The font size remains
+    unchanged, but spacing is adjusted to fit the new content.
+
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Targets the second text fragment on the first page
+        - Narrows the text rectangle by 50 units on each side
+        - Duplicates the original text content
+        - Uses ADJUST_SPACE_WIDTH for proper spacing
+        - Maintains original font size and style
+
+    Example:
+        >>> replace_text_and_resize_and_shift_without_changing_font_size("input.pdf", "output.pdf")
+        # Duplicates text in a narrower space with adjusted spacing
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = fragment.rectangle
+        rect.llx += 50
+        rect.urx -= 50
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### Ubah Ukuran dan Pindahkan Paragraf dalam PDF
+
+Saat bekerja dengan PDF, kadang-kadang Anda perlu mengganti atau memperluas sebuah paragraf sambil menjaga keselarasan visual dengan tata letak halaman. Aspose.PDF memungkinkan Anda mengubah ukuran persegi pembatas paragraf dan menyesuaikan spasi agar cocok dengan teks baru, semuanya tanpa mengubah ukuran font.
+
+1. Muat Dokumen PDF.
+1. Gunakan 'TextFragmentAbsorber' untuk mengumpulkan semua fragmen teks pada halaman.
+1. Pilih Fragmen yang Akan Diubah.
+1. Ubah Ukuran dan Pindahkan Paragraf. Gunakan media box halaman untuk menentukan batas dan menyesuaikan persegi.
+1. Sesuaikan Spasi. Ini mengubah spasi antar kata/huruf alih-alih mengubah ukuran font.
+1. Ganti teks fragmen.
+1. Simpan PDF yang telah Diubah.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def replace_text_and_resize_and_shift_paragraph(infile, outfile):
+    """
+    Resize and shift a paragraph in the document.
+
+    Demonstrates paragraph-level text replacement with automatic resizing
+    to fit within the page's media box boundaries. Adjusts the text area
+    to provide margins while duplicating content.
+
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses page media box as base rectangle
+        - Adds 20-unit margins on left, right, and top
+        - Targets the second text fragment on the first page
+        - Duplicates original text content
+        - Automatically adjusts space width for proper fit
+
+    Example:
+        >>> replace_text_and_resize_and_shift_paragraph("input.pdf", "output.pdf")
+        # Resizes paragraph to fit within page margins with duplicated text
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        rect = document.pages[1].media_box
+        rect.llx += 20
+        rect.urx -= 20
+        rect.ury -= 20
+        fragment.replace_options.rectangle = rect
+        fragment.replace_options.replace_adjustment_action = (
+             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### Ganti Teks dan Secara Otomatis Memperluas Font untuk Mengisi Area Target
+
+Ganti teks dalam PDF sambil secara otomatis mengubah ukuran dan memperluas font untuk mengisi area persegi tertentu. Menggunakan pustaka Aspose.PDF untuk Python via .NET, kode secara dinamis menyesuaikan ukuran font dan spasi sehingga konten teks baru pas secara sempurna dalam kotak pembatas yang ditentukan — tanpa perhitungan font manual.
+
+1. Muat PDF.
+1. Tangkap Fragmen Teks.
+1. Pilih Fragmen Spesifik.
+1. Tentukan Persegi Target.
+1. Aktifkan Opsi Penyesuaian Teks.
+1. Ganti Teks.
+1. Simpan Dokumen.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def replace_text_and_resize_and_expand_font(infile, outfile):
+    """
+    Resize and expand font to fill target area.
+
+    Demonstrates automatic font scaling to fill a specified rectangular area.
+    The font size is dynamically adjusted to make the text content fit
+    perfectly within the defined target rectangle.
+
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Defines target rectangle at coordinates (100, 300, 512, 692)
+        - Uses SCALE_TO_FILL for automatic font size adjustment
+        - Duplicates original text content
+        - Adjusts space width for optimal text distribution
+        - Font size scales up or down to fill the entire rectangle
+
+    Example:
+        >>> replace_text_and_resize_and_expand_font("input.pdf", "output.pdf")
+        # Scales font to completely fill the specified rectangular area
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = ap.Rectangle(100, 300, 512, 692, True)
+        fragment.replace_options.replace_adjustment_action = (
+             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SCALE_TO_FILL
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+
+```
+
+### Ganti Teks dan Sesuaikan ke dalam Persegi
+
+Ganti teks dalam dokumen PDF sambil memastikan konten baru cocok dalam area persegi asli teks dengan secara otomatis mengurangi ukuran font bila diperlukan.
+
+Menggunakan pustaka Aspose.PDF untuk Python via .NET, fungsi ini menyesuaikan tata letak teks dan ukuran font secara dinamis, mempertahankan struktur dokumen sambil mencegah overflow.
+
+1. Buat objek TextFragmentAbsorber untuk mengekstrak semua fragmen teks dari halaman pertama.
+1. Akses Fragmen Teks Spesifik.
+1. Tetapkan Area Pengganti.
+1. Konfigurasikan Opsi Penyesuaian Teks. Atur dua opsi penggantian utama:
+- Penyesuaian ukuran font - 'SHRINK_TO_FIT' secara otomatis mengurangi ukuran font jika teks baru terlalu panjang.
+- Penyesuaian spasi - 'ADJUST_SPACE_WIDTH' menjaga spasi tetap proporsional.
+1. Ganti Teks.
+1. Simpan PDF yang Telah Diubah.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def replace_text_and_fit_text_into_rectangle(infile, outfile):
+    """
+    Fit text into a rectangle by adjusting font size.
+
+    Demonstrates how to ensure text content fits within its original
+    rectangle by automatically shrinking the font size when the new
+    content is longer than the original.
+
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses original text fragment rectangle as target area
+        - Employs SHRINK_TO_FIT to reduce font size if needed
+        - Duplicates original text content (making it longer)
+        - Adjusts space width for proper text distribution
+        - Prevents text overflow by automatic font scaling
+
+    Example:
+        >>> replace_text_and_fit_text_into_rectangle("input.pdf", "output.pdf")
+        # Shrinks font size to fit doubled text content in original space
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.visit(document.pages[1])
+        fragment = absorber.text_fragments[1]
+        text = fragment.text
+        fragment.replace_options.rectangle = fragment.rectangle
+        fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SHRINK_TO_FIT
+        )
+        fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+
+        )
+        fragment.text = f"{text} {text}"
+        document.save(outfile)
+```
+
+### Secara Otomatis Ganti Teks Placeholder dan Atur Ulang Tata Letak PDF
+
+Ganti teks placeholder dalam PDF (misalnya, templat atau formulir) dengan data nyata seperti nama atau informasi perusahaan.
+Ini secara otomatis menyesuaikan tata letak halaman agar cocok dengan teks baru sambil menerapkan pemformatan khusus (font, warna, ukuran).
+
+1. Impor dan Muat PDF.
+1. Buat Text Absorber untuk Placeholder.
+1. Terapkan Absorber ke Semua Halaman.
+1. Loop Melalui Fragmen Teks yang Ditemukan.
+1. Terapkan Pemformatan Teks Kustom.
+1. Simpan Dokumen yang Diperbarui.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def automatically_rearrange_page_contents(input_file, output_file):
+    """
+    Replace placeholder text in PDF with actual content.
+
+    Demonstrates how to replace long placeholder text with actual content
+    and automatically rearrange page layout. Shows dynamic content replacement
+    with custom formatting applied to the new text.
+
+    Args:
+        input_file (str): Path to the input PDF file containing placeholders.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Searches for "[Long_placeholder_Long_placeholder]" placeholders
+        - Replaces with either "John Smith" or extended version with studio info
+        - Applies Calibri font, size 12, navy blue color
+        - Automatically adjusts page layout to accommodate content changes
+        - Demonstrates real-world template filling scenarios
+
+    Example:
+        >>> automatically_rearrange_page_contents("template.pdf", "filled.pdf")
+        # Replaces placeholders with formatted actual content
+    """
+    document = ap.Document(input_file)
+
+    absorber = ap.text.TextFragmentAbsorber("[Long_placeholder_Long_placeholder]")
     document.pages.accept(absorber)
 
-    # Dapatkan fragmen teks yang diekstrak
-    collection = absorber.text_fragments
+    for text_fragment in absorber.text_fragments:
+        # text_fragment.text = "John Smith"
+        text_fragment.text = "John Smith, South Development Studio"
+        text_fragment.text_state.font = ap.text.FontRepository.find_font("Calibri")
+        text_fragment.text_state.font_size = 12
+        text_fragment.text_state.foreground_color = ap.Color.navy
 
-    # Loop melalui fragmen
-    for text_fragment in collection:
-        # Perbarui teks dan properti lainnya
-        text_fragment.text = "FORMAT"
-        text_fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
-        text_fragment.text_state.font_size = 22
-        text_fragment.text_state.foreground_color = ap.Color.blue
-        text_fragment.text_state.background_color = ap.Color.green
-
-    # Simpan dokumen
-    document.save(output_pdf)
+    # Save PDF document
+    document.save(output_file)
 ```
 
+### Ganti Teks Berdasarkan Ekspresi Reguler
 
-## Ganti Teks di Wilayah Halaman Tertentu
+Saat bekerja dengan dokumen PDF, Anda mungkin perlu mengganti teks yang mengikuti pola tertentu bukan frasa spesifik — misalnya, nomor telepon, kode, atau format seperti tanggal.
 
-Untuk mengganti teks di wilayah halaman tertentu, pertama-tama kita perlu membuat objek TextFragmentAbsorber, menentukan wilayah halaman menggunakan properti TextSearchOptions.Rectangle, dan kemudian mengiterasi melalui semua TextFragments untuk mengganti teks. Setelah operasi ini selesai, kita hanya perlu menyimpan PDF keluaran menggunakan metode Save dari objek Document. Cuplikan kode berikut menunjukkan cara mengganti teks di semua halaman dokumen PDF.
+Aspose.PDF untuk Python via .NET memungkinkan Anda melakukan penggantian semacam itu menggunakan ekspresi reguler (regex) dengan kelas TextFragmentAbsorber.
+
+Contoh ini menunjukkan cara menemukan pola teks (dalam kasus ini, teks apa pun yang cocok dengan format ####-####, seperti 1234-5678) dan menggantinya dengan string terformat 'ABC1-2XZY'. Ini juga menunjukkan cara menyesuaikan font, warna, dan ukuran teks yang diganti.
+
+Potongan kode berikut menunjukkan cara mengganti teks berdasarkan ekspresi reguler.
+
+1. Muat Dokumen PDF.
+1. Buat Regex-Based Text Absorber. Inisialisasi TextFragmentAbsorber dengan pola ekspresi reguler.
+1. Aktifkan Mode Ekspresi Reguler. Parameter 'True' mengaktifkan mode pencarian ekspresi reguler.
+1. Terapkan Absorber ke Halaman. Ini memindai halaman untuk semua fragmen teks yang cocok dengan pola regex yang ditentukan.
+1. Ganti setiap kecocokan dengan teks baru dan terapkan styling kustom.
+1. Simpan Dokumen yang Telah Diubah.
 
 ```python
-// muat file PDF
-Aspose.PDF.Document pdf  = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
 
-// buat objek TextFragment Absorber
-Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
+import os
+import aspose.pdf as ap
 
-// mencari teks dalam batas halaman
-TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
+# Global configuration
+DATA_DIR = "your path here"
 
-// tentukan wilayah halaman untuk Opsi Pencarian Teks
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
+def replace_text_based_on_regex(infile, outfile):
+    """
+    Replace text based on a regular expression pattern.
 
-// mencari teks dari halaman pertama file PDF
-pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
+    Demonstrates pattern-based text replacement using regular expressions
+    to find and replace text that matches specific formats. Also shows
+    how to apply formatting changes to the replaced text.
 
-// iterasi melalui setiap TextFragment
-foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
-{
-    // perbarui teks menjadi karakter kosong
-    tf.Text = "";
-}
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
 
-// simpan file PDF yang telah diperbarui setelah penggantian teks
-pdf.Save("c:/pdftest/TextUpdated.pdf");
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses regex pattern r"\\d{4}-\\d{4}" to find 4-digit-4-digit patterns
+        - Replaces matched patterns with "ABC1-2XZY"
+        - Applies custom formatting: Verdana font, size 12, blue text
+        - Sets light green background color for replaced text
+        - Enables regex mode with TextSearchOptions(True)
+
+    Example:
+        >>> replace_text_based_on_regex("input.pdf", "output.pdf")
+        # Replaces patterns like "1234-5678" with formatted "ABC1-2XZY"
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber(r"\d{4}-\d{4}")
+        absorber.text_search_options = ap.text.TextSearchOptions(True)
+        document.pages[1].accept(absorber)
+
+        for fragment in absorber.text_fragments:
+            fragment.text = "ABC1-2XZY"
+            fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
+            fragment.text_state.font_size = 12
+            fragment.text_state.foreground_color = ap.Color.blue
+            fragment.text_state.background_color = ap.Color.light_green
+
+        document.save(outfile)
 ```
 
+## Ganti font atau hapus font yang tidak digunakan
 
-## Mengganti Teks Berdasarkan Ekspresi Reguler
+### Ganti font dalam file PDF yang ada
 
-Jika Anda ingin mengganti beberapa frasa berdasarkan ekspresi reguler, Anda harus terlebih dahulu menemukan semua frasa yang cocok dengan ekspresi reguler tersebut menggunakan TextFragmentAbsorber. Anda harus melewatkan ekspresi reguler sebagai parameter ke konstruktor TextFragmentAbsorber. Anda juga perlu membuat objek TextSearchOptions yang menentukan apakah ekspresi reguler digunakan atau tidak. Setelah Anda mendapatkan frasa yang cocok dalam TextFragments, Anda perlu mengulangi semuanya dan memperbarui sesuai kebutuhan. Akhirnya, Anda perlu menyimpan PDF yang diperbarui menggunakan metode Save dari objek Document. Cuplikan kode berikut menunjukkan cara mengganti teks berdasarkan ekspresi reguler.
+Kadang-kadang, Anda perlu menstandarkan atau memperbarui font di seluruh PDF — misalnya, mengganti font yang usang atau proprietary dengan yang lebih mudah diakses. Perpustakaan Aspose.PDF untuk Python via .NET memungkinkan Anda mendeteksi dan mengganti font secara programatik, memastikan tipografi yang konsisten serta kompatibilitas dokumen.
+
+Contoh ini menunjukkan cara mengganti semua kemunculan font tertentu (misalnya, 'Arial-BoldMT') dengan font lain (misalnya, 'Verdana') di seluruh dokumen PDF.
+
+Potongan kode berikut menunjukkan cara mengganti font di dalam dokumen PDF:
+
+1. Buka Dokumen PDF.
+1. Inisialisasi TextFragmentAbsorber.
+1. Gunakan Absorber untuk mengekstrak fragmen teks dari setiap halaman dalam dokumen.
+1. Identifikasi dan Ganti Font. Skrip memeriksa apakah font saat ini pada fragmen adalah 'Arial-BoldMT'. Jika ya, skrip menggantinya dengan font 'Verdana' menggunakan metode FontRepository.find_font().
+1. Simpan Dokumen yang telah Dimodifikasi.
 
 ```python
-// Untuk contoh lengkap dan file data, silahkan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionPage.pdf");
+import os
+import aspose.pdf as ap
 
-// Buat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Seperti 1999-2000
+# Global configuration
+DATA_DIR = "your path here"
 
-// Atur opsi pencarian teks untuk menentukan penggunaan ekspresi reguler
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
+def replace_fonts(infile, outfile):
+    """
+    Replace specific fonts in a PDF document.
 
-// Terima absorber untuk satu halaman
-pdfDocument.Pages[1].Accept(textFragmentAbsorber);
+    Demonstrates how to find and replace specific fonts throughout a PDF
+    document. Searches for text using a particular font and changes it
+    to a different font while preserving the text content.
 
-// Dapatkan fragmen teks yang diekstraksi
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
 
-// Ulangi fragmen
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    // Perbarui teks dan properti lainnya
-    textFragment.Text = "Frasa Baru";
-    // Atur ke instance dari objek.
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
-dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-pdfDocument.Save(dataDir);
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Searches for text using "Arial-BoldMT" font
+        - Replaces font with "Verdana" while keeping text content
+        - Processes all text fragments across all pages
+        - Maintains original text size and formatting properties
+        - Useful for font standardization across documents
+
+    Example:
+        >>> replace_fonts("input.pdf", "output.pdf")
+        # Changes all Arial-BoldMT text to use Verdana font instead
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        document.pages.accept(absorber)
+
+        for fragment in absorber.text_fragments:
+            if fragment.text_state.font.font_name == "Arial-BoldMT":
+                fragment.text_state.font = ap.text.FontRepository.find_font("Verdana")
+
+        document.save(outfile)
 ```
 
+### Hapus font yang tidak terpakai
 
-## Ganti font dalam file PDF yang sudah ada
+Seiring waktu, dokumen PDF dapat mengumpulkan font yang tidak terpakai atau tertanam yang meningkatkan ukuran file dan memperlambat pemrosesan. Font yang tidak terpakai ini sering tetap ada bahkan setelah penyuntingan atau penggantian teks, terutama saat bekerja dengan PDF yang besar atau kompleks.
 
-Aspose.PDF untuk Python via .NET mendukung kemampuan untuk mengganti teks dalam dokumen PDF. Namun, terkadang Anda memiliki kebutuhan untuk hanya mengganti font yang digunakan di dalam dokumen PDF. Jadi alih-alih mengganti teks, hanya font yang digunakan yang diganti. Salah satu overload dari konstruktor TextFragmentAbsorber menerima objek TextEditOptions sebagai argumen dan kita dapat menggunakan nilai RemoveUnusedFonts dari enumerasi TextEditOptions.FontReplace untuk memenuhi kebutuhan kita. Cuplikan kode berikut menunjukkan cara mengganti font di dalam dokumen PDF.
+Perpustakaan Aspose.PDF untuk Python via .NET menyediakan cara yang efisien untuk menghapus font berlebih tersebut menggunakan kelas TextEditOptions. Ini tidak hanya mengoptimalkan dokumen Anda tetapi juga memastikan hanya font yang benar‑benar diterapkan pada teks yang terlihat yang digunakan.
+
+Metode 'remove_unused_fonts()' adalah cara yang sederhana namun kuat untuk mengoptimalkan file PDF dengan menghapus data font yang berlebih.
+
+Contoh ini menunjukkan cara:
+
+- Memindai PDF untuk font yang tidak terpakai.
+- Menghapusnya dengan aman.
+- Menetapkan kembali fragmen teks aktif ke font yang konsisten (misalnya, Times New Roman).
+
+1. Buka Dokumen PDF.
+1. Konfigurasikan Opsi Penyuntingan Teks. Ini memberi instruksi pada mesin untuk menghilangkan semua font tertanam yang tidak sedang digunakan dalam teks yang terlihat.
+1. Buat Text Absorber dengan Opsi. TextFragmentAbsorber mengekstrak fragmen teks dari dokumen untuk penyuntingan.
+1. Tetapkan kembali Font Standar. Setelah absorber mengumpulkan semua fragmen, iterasi melalui mereka dan terapkan font yang konsisten.
+1. Simpan PDF yang Dibersihkan.
 
 ```python
-// Untuk contoh lengkap dan file data, silakan pergi ke https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Memuat file PDF sumber
-Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
-// Cari fragmen teks dan atur opsi edit sebagai hapus font yang tidak digunakan
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
+import os
+import aspose.pdf as ap
 
-// Terima absorber untuk semua halaman
-pdfDocument.Pages.Accept(absorber);
-// Jelajahi semua TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    // Jika nama font adalah ArialMT, ganti nama font dengan Arial
-    if (textFragment.TextState.Font.FontName == "Arial,Bold")
-    {
-        textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    }
+# Global configuration
+DATA_DIR = "your path here"
 
-}
+def remove_unused_fonts(input_file, output_file):
+    """
+    Remove unused fonts from a PDF document.
 
-dataDir = dataDir + "ReplaceFonts_out.pdf";
-// Simpan dokumen yang diperbarui
-pdfDocument.Save(dataDir);
+    Optimizes PDF file size by removing fonts that are embedded but not
+    actually used in the document. Also demonstrates how to standardize
+    all text to use a specific font family.
+
+    Args:
+        input_file (str): Path to the input PDF file to optimize.
+        output_file (str): Path where the optimized PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses REMOVE_UNUSED_FONTS option for optimization
+        - Changes all text to use TimesNewRoman font
+        - Processes all text fragments across the document
+        - Reduces file size by eliminating unnecessary font data
+        - Useful for PDF optimization and standardization
+
+    Example:
+        >>> remove_unused_fonts("input.pdf", "optimized.pdf")
+        # Removes unused fonts and standardizes text to TimesNewRoman
+    """
+
+    # Open PDF document
+    document = ap.Document(input_file)
+
+    # Initialize text edit options to remove unused fonts
+    options = ap.text.TextEditOptions(ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS)
+
+    # Create a TextFragmentAbsorber with the specified options
+    absorber = ap.text.TextFragmentAbsorber(options)
+    document.pages.accept(absorber)
+
+    # Iterate through all TextFragments
+    for text_fragment in absorber.text_fragments:
+        text_fragment.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+
+    # Save the updated PDF document
+    document.save(output_file)
 ```
 
+## Hapus Semua Teks
 
-## Penggantian Teks harus secara otomatis mengatur ulang Isi Halaman
+### Hapus Teks dari PDF
 
-Aspose.PDF untuk Python via .NET mendukung fitur untuk mencari dan mengganti teks di dalam file PDF. Namun, baru-baru ini beberapa pelanggan mengalami masalah selama penggantian teks ketika TextFragment tertentu diganti dengan konten yang lebih kecil dan beberapa spasi ekstra ditampilkan dalam PDF hasil atau jika TextFragment diganti dengan beberapa string yang lebih panjang, maka kata-kata tumpang tindih dengan konten halaman yang ada. Jadi dibutuhkan mekanisme yang setelah teks di dalam dokumen PDF diganti, konten harus diatur ulang.
+Hapus semua konten teks dari file PDF sambil mempertahankan gambar, bentuk, dan struktur tata letak tetap utuh.
+Dengan menggunakan TextFragmentAbsorber, kode secara efisien memindai seluruh dokumen dan menghapus setiap fragmen teks yang ditemukan pada masing‑masing halaman.
 
-Untuk mengatasi skenario yang disebutkan di atas, Aspose.PDF untuk Python via .NET telah ditingkatkan sehingga tidak ada masalah seperti itu muncul ketika mengganti teks di dalam file PDF. Cuplikan kode berikut menunjukkan cara mengganti teks di dalam file PDF dan isi halaman harus diatur ulang secara otomatis.
+1. Muat Dokumen PDF.
+1. Objek TextFragmentAbsorber dibuat untuk mendeteksi dan menangani fragmen teks dalam PDF.
+1. Hapus Semua Konten Teks. Metode 'absorber.remove_all_text()' menghapus setiap elemen teks dari dokumen yang dimuat, meninggalkan komponen non‑teks tidak tersentuh.
+1. Simpan Dokumen yang Diperbarui.
 
 ```python
-// Untuk contoh lengkap dan file data, silakan pergi ke https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Memuat file PDF sumber
-Document doc = new Document(dataDir + "ExtractTextPage.pdf");
-// Membuat objek TextFragment Absorber dengan ekspresi reguler
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-doc.Pages.Accept(textFragmentAbsorber);
-// Mengganti setiap TextFragment
-foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
-{
-    // Mengatur font dari fragmen teks yang diganti
-    textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    // Mengatur ukuran font
-    textFragment.TextState.FontSize = 12;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
-    // Mengganti teks dengan string yang lebih besar dari placeholder
-    textFragment.Text = "This is a Larger String for the Testing of this issue";
-}
-dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
-// Menyimpan PDF hasil
-doc.Save(dataDir);
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def remove_all_text_using_absorber1(infile, outfile):
+    """
+    Remove all text from a PDF using TextFragmentAbsorber.
+
+    Demonstrates complete text removal from an entire PDF document,
+    leaving only non-text elements like images, shapes, and layout
+    structures intact.
+
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the text-free PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Removes all text content from the entire document
+        - Preserves images, graphics, and page structure
+        - Uses document-level text removal for complete cleanup
+        - Useful for creating templates or removing sensitive text
+        - Maintains page layout and non-text elements
+
+    Example:
+        >>> remove_all_text_using_absorber1("input.pdf", "no_text.pdf")
+        # Creates a PDF with all text removed but graphics preserved
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document)
+        document.save(outfile)
 ```
 
+### Hapus Semua Teks dari Halaman Spesifik
 
-## Merender Simbol yang Dapat Diganti selama Pembuatan PDF
+Hapus semua teks dari satu halaman dokumen PDF menggunakan kelas TextFragmentAbsorber dalam Aspose.PDF.
+Berbeda dengan penghapusan seluruh dokumen, metode ini melakukan pembersihan teks pada tingkat halaman, menghapus teks hanya dari halaman yang dipilih sementara halaman lainnya tetap tidak berubah.
 
-Simbol yang dapat diganti adalah simbol khusus dalam string teks yang dapat diganti dengan konten yang sesuai saat waktu proses. Simbol yang dapat diganti saat ini didukung oleh Model Objek Dokumen baru dari namespace Aspose.PDF adalah `$P`, `$p,` `\n`, `\r`. `$p` dan `$P` digunakan untuk menangani penomoran halaman saat waktu proses. `$p` diganti dengan nomor halaman tempat kelas Paragraf saat ini berada. `$P` diganti dengan jumlah total halaman dalam dokumen. Saat menambahkan `TextFragment` ke koleksi paragraf dokumen PDF, itu tidak mendukung pemisah baris di dalam teks. Namun untuk menambahkan teks dengan pemisah baris, silakan gunakan `TextFragment` dengan `TextParagraph`:
-
-- gunakan "\r\n" atau Environment.NewLine dalam TextFragment alih-alih "\n" tunggal;
-- buat objek TextParagraph. Ini akan menambahkan teks dengan pemisahan baris;
-- tambahkan TextFragment dengan TextParagraph.AppendLine;
-- tambahkan TextParagraph dengan TextBuilder.AppendParagraph.
+1. Muat File PDF.
+1. Buat Instance TextFragmentAbsorber.
+1. Hapus Semua Teks dari Halaman Pertama.
+1. Simpan PDF yang Dimodifikasi.
 
 ```python
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
+import os
+import aspose.pdf as ap
 
-// Inisialisasi TextFragment baru dengan teks yang mengandung penanda baris baru yang diperlukan
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Nama Pelamar: " + Environment.NewLine + " Joe Smoe");
+# Global configuration
+DATA_DIR = "your path here"
 
-// Atur properti text fragment jika diperlukan
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+def remove_all_text_using_absorber2(infile, outfile):
+    """
+    Remove all text from page using TextFragmentAbsorber.
 
-// Buat objek TextParagraph
-TextParagraph par = new TextParagraph();
+    Demonstrates text removal from a specific page while leaving text
+    on other pages intact. Useful for selective text cleanup or
+    creating mixed-content documents.
 
-// Tambah TextFragment baru ke paragraph
-par.AppendLine(textFragment);
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
 
-// Atur posisi paragraph
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
 
-// Buat objek TextBuilder
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// Tambahkan TextParagraph menggunakan TextBuilder
-textBuilder.AppendParagraph(par);
+    Note:
+        - Removes text only from the first page (pages[1])
+        - Preserves text content on all other pages
+        - Maintains page structure and non-text elements
+        - Useful for page-specific text removal operations
+        - Images and graphics on the target page remain intact
 
-dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
-pdfApplicationDoc.Save(dataDir);
+    Example:
+        >>> remove_all_text_using_absorber2("input.pdf", "first_page_clean.pdf")
+        # Removes all text from first page only
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document.pages[1])
+        document.save(outfile)
 ```
 
+### Hapus Semua Teks dari Area Tertentu pada Halaman PDF
 
-## Simbol yang Dapat Diganti di Area Header/Footer
+Hapus semua teks dari area persegi panjang tertentu pada sebuah halaman menggunakan TextFragmentAbsorber dari Aspose.PDF.
+Alih-alih membersihkan seluruh halaman, metode ini melakukan penghapusan teks yang ditargetkan, memungkinkan kontrol presisi atas bagian halaman mana yang terpengaruh.
 
-Simbol yang dapat diganti juga dapat ditempatkan di dalam bagian Header/Footer dari file PDF. Silakan lihat potongan kode berikut untuk detail tentang cara menambahkan simbol yang dapat diganti di bagian footer.
+1. Muat Dokumen PDF.
+1. Buat TextFragmentAbsorber.
+1. Tentukan Area Target (Persegi Panjang).
+1. Hapus Teks dari Wilayah yang Ditetapkan.
+1. Pertahankan Sisanya Dokumen.
+1. Simpan PDF yang Dimodifikasi.
 
 ```python
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
+import os
+import aspose.pdf as ap
 
-MarginInfo marginInfo = new MarginInfo();
-marginInfo.Top = 90;
-marginInfo.Bottom = 50;
-marginInfo.Left = 50;
-marginInfo.Right = 50;
-// Tetapkan instance marginInfo ke properti Margin dari sec1.PageInfo
-page.PageInfo.Margin = marginInfo;
+# Global configuration
+DATA_DIR = "your path here"
 
-HeaderFooter hfFirst = new HeaderFooter();
-page.Header = hfFirst;
-hfFirst.Margin.Left = 50;
-hfFirst.Margin.Right = 50;
+def remove_all_text_using_absorber3(infile, outfile):
+    """
+    Remove all text from particular area on PDF page using TextFragmentAbsorber.
 
-// Instansiasi paragraf Teks yang akan menyimpan konten untuk ditampilkan sebagai header
-TextFragment t1 = new TextFragment("judul laporan");
-t1.TextState.Font = FontRepository.FindFont("Arial");
-t1.TextState.FontSize = 16;
-t1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t1.TextState.FontStyle = FontStyles.Bold;
-t1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t1.TextState.LineSpacing = 5f;
-hfFirst.Paragraphs.Add(t1);
+    Demonstrates precise text removal from a specific rectangular region
+    on a page. Allows for surgical text removal while preserving text
+    outside the target area.
 
-TextFragment t2 = new TextFragment("Nama_Laporan");
-t2.TextState.Font = FontRepository.FindFont("Arial");
-t2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t2.TextState.LineSpacing = 5f;
-t2.TextState.FontSize = 12;
-hfFirst.Paragraphs.Add(t2);
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the modified PDF will be saved.
 
-// Buat objek HeaderFooter untuk bagian tersebut
-HeaderFooter hfFoot = new HeaderFooter();
-// Tetapkan objek HeaderFooter ke footer ganjil & genap
-page.Footer = hfFoot;
-hfFoot.Margin.Left = 50;
-hfFoot.Margin.Right = 50;
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
 
-// Tambahkan paragraf teks yang berisi nomor halaman saat ini dari total jumlah halaman
-TextFragment t3 = new TextFragment("Dibuat pada tanggal uji");
-TextFragment t4 = new TextFragment("nama laporan ");
-TextFragment t5 = new TextFragment("Halaman $p dari $P");
+    Note:
+        - Removes text only within rectangle (10, 200, 120, 600)
+        - Targets the first page only (pages[1])
+        - Preserves text outside the specified rectangle
+        - Maintains all non-text elements in the region
+        - Useful for removing watermarks, headers, or specific sections
 
-// Instansiasi objek tabel
-Table tab2 = new Table();
-
-// Tambahkan tabel dalam koleksi paragraf bagian yang diinginkan
-hfFoot.Paragraphs.Add(tab2);
-
-// Tetapkan lebar kolom tabel
-tab2.ColumnWidths = "165 172 165";
-
-// Buat baris dalam tabel dan kemudian sel dalam baris
-Row row3 = tab2.Rows.Add();
-
-row3.Cells.Add();
-row3.Cells.Add();
-row3.Cells.Add();
-
-// Tetapkan penjajaran vertikal teks sebagai terpusat
-row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
-row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
-row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
-
-row3.Cells[0].Paragraphs.Add(t3);
-row3.Cells[1].Paragraphs.Add(t4);
-row3.Cells[2].Paragraphs.Add(t5);
-
-// Sec1.Paragraphs.Add(New Text("Aspose.Total untuk Java adalah kompilasi dari setiap komponen Java yang ditawarkan oleh Aspose. Ini dikompilasi pada a#$NL" + "dasar harian untuk memastikan bahwa itu berisi versi terbaru dari masing-masing komponen Java kami. #$NL " + "Menggunakan Aspose.Total untuk Java pengembang dapat membuat berbagai macam aplikasi. #$NL #$NL #$NP" + "Aspose.Total untuk Java adalah kompilasi dari setiap komponen Java yang ditawarkan oleh Aspose. Ini dikompilasi pada a#$NL" + "dasar harian untuk memastikan bahwa itu berisi versi terbaru dari masing-masing komponen Java kami. #$NL " + "Menggunakan Aspose.Total untuk Java pengembang dapat membuat berbagai macam aplikasi. #$NL #$NL #$NP" + "Aspose.Total untuk Java adalah kompilasi dari setiap komponen Java yang ditawarkan oleh Aspose. Ini dikompilasi pada a#$NL" + "dasar harian untuk memastikan bahwa itu berisi versi terbaru dari masing-masing komponen Java kami. #$NL " + "Menggunakan Aspose.Total untuk Java pengembang dapat membuat berbagai macam aplikasi. #$NL #$NL"))
-Table table = new Table();
-
-table.ColumnWidths = "33% 33% 34%";
-table.DefaultCellPadding = new MarginInfo();
-table.DefaultCellPadding.Top = 10;
-table.DefaultCellPadding.Bottom = 10;
-
-// Tambahkan tabel dalam koleksi paragraf bagian yang diinginkan
-page.Paragraphs.Add(table);
-
-// Tetapkan batas sel default menggunakan objek BorderInfo
-table.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.1f);
-
-// Tetapkan batas tabel menggunakan objek BorderInfo yang disesuaikan
-table.Border = new BorderInfo(BorderSide.All, 1f);
-
-table.RepeatingRowsCount = 1;
-
-// Buat baris dalam tabel dan kemudian sel dalam baris
-Row row1 = table.Rows.Add();
-
-row1.Cells.Add("kol1");
-row1.Cells.Add("kol2");
-row1.Cells.Add("kol3");
-const string CRLF = "\r\n";
-for (int i = 0; i <= 10; i++)
-{
-    Row row = table.Rows.Add();
-    row.IsRowBroken = true;
-    for (int c = 0; c <= 2; c++)
-    {
-        Cell c1;
-        if (c == 2)
-            c1 = row.Cells.Add("Aspose.Total untuk Java adalah kompilasi dari setiap komponen Java yang ditawarkan oleh Aspose. Ini dikompilasi pada a" + CRLF + "dasar harian untuk memastikan bahwa itu berisi versi terbaru dari masing-masing komponen Java kami. " + CRLF + "dasar harian untuk memastikan bahwa itu berisi versi terbaru dari masing-masing komponen Java kami. " + CRLF + "Menggunakan Aspose.Total untuk Java pengembang dapat membuat berbagai macam aplikasi.");
-        else
-            c1 = row.Cells.Add("item1" + c);
-        c1.Margin = new MarginInfo();
-        c1.Margin.Left = 30;
-        c1.Margin.Top = 10;
-        c1.Margin.Bottom = 10;
-    }
-}
-
-dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
-doc.Save(dataDir);
+    Example:
+        >>> remove_all_text_using_absorber3("input.pdf", "region_clean.pdf")
+        # Removes text only from the specified rectangular area
+    """
+    with ap.Document(infile) as document:
+        absorber = ap.text.TextFragmentAbsorber()
+        absorber.remove_all_text(document.pages[1], ap.Rectangle(10, 200, 120, 600))
+        document.save(outfile)
 ```
 
+### Hapus Semua Teks tersembunyi dari dokumen PDF
 
-## Menghapus Font yang Tidak Digunakan dari File PDF
+Hapus semua teks dari area persegi panjang tertentu pada sebuah halaman menggunakan TextFragmentAbsorber dari Aspose.PDF.
+Alih-alih membersihkan seluruh halaman, metode ini melakukan penghapusan teks yang ditargetkan, memungkinkan kontrol presisi atas bagian halaman mana yang terpengaruh.
 
-Aspose.PDF untuk Python via .NET mendukung fitur untuk menyematkan font saat membuat dokumen PDF, serta kemampuan untuk menyematkan font dalam file PDF yang ada. Mulai Aspose.PDF untuk Python via .NET 7.3.0, juga memungkinkan Anda untuk menghapus font duplikat atau yang tidak digunakan dari dokumen PDF.
-
-Untuk mengganti font, gunakan pendekatan berikut:
-
-1. Panggil kelas [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber).
-1. Panggil parameter TextEditOptions.FontReplace.RemoveUnusedFonts dari kelas TextFragmentAbsorber. (Ini menghapus font yang tidak digunakan selama penggantian font).
-1. Atur font secara individual untuk setiap fragmen teks.
-
-Cuplikan kode berikut mengganti font untuk semua fragmen teks dari semua halaman dokumen dan menghapus font yang tidak digunakan.
+1. Muat Dokumen PDF.
+1. Buat TextFragmentAbsorber.
+1. Tentukan Area Target (Persegi Panjang).
+1. Hapus Teks dari Wilayah yang Ditentukan.
+1. Pertahankan Sisanya Dokumen.
+1. Simpan PDF yang Dimodifikasi.
 
 ```python
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-// Memuat file PDF sumber
-Document doc = new Document(dataDir + "ReplaceTextPage.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-doc.Pages.Accept(absorber);
+import os
+import aspose.pdf as ap
 
-// Iterasi melalui semua TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
-}
+# Global configuration
+DATA_DIR = "your path here"
 
-dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
-// Simpan dokumen yang diperbarui
-doc.Save(dataDir);
+def remove_hidden_text(infile, outfile):
+    """
+    Remove all hidden (invisible) text from a PDF document.
+
+    Identifies and removes text that has been marked as invisible while
+    preserving all visible text content. Useful for cleaning documents
+    that may contain hidden tracking text or metadata.
+
+    Args:
+        infile (str): Path to the input PDF file to process.
+        outfile (str): Path where the cleaned PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Detects text fragments with invisible text state
+        - Replaces hidden text with empty strings
+        - Uses NONE replacement adjustment to prevent layout shifts
+        - Preserves all visible text and document structure
+        - Useful for privacy and security document cleanup
+
+    Example:
+        >>> remove_hidden_text("input.pdf", "no_hidden_text.pdf")
+        # Removes all invisible text while keeping visible content intact
+    """
+    # Open PDF document
+    with ap.Document(infile) as document:
+        text_absorber = ap.text.TextFragmentAbsorber()
+        # This option can be used to prevent other text fragments from moving after hidden text replacement
+        text_absorber.text_replace_options = ap.text.TextReplaceOptions(ap.text.TextReplaceOptions.ReplaceAdjustment.NONE)
+        document.pages.accept(text_absorber)
+        # Remove hidden text
+        for fragment in text_absorber.text_fragments:
+            if fragment.text_state.invisible:
+                fragment.text = ""
+        # Save PDF document
+        document.save(outfile)
 ```
-
-
-## Hapus Semua Teks dari Dokumen PDF
-
-### Hapus Semua Teks Menggunakan Operator
-
-Dalam beberapa operasi teks, Anda perlu menghapus semua teks dari dokumen PDF dan untuk itu, Anda perlu mengatur teks yang ditemukan sebagai nilai string kosong biasanya. Poinnya adalah bahwa mengubah teks untuk banyak fragmen teks memicu sejumlah pemeriksaan dan operasi penyesuaian posisi teks. Mereka penting dalam skenario pengeditan teks. Kesulitannya adalah Anda tidak dapat menentukan berapa banyak fragmen teks yang akan dihapus dalam skenario di mana mereka diproses dalam sebuah loop.
-
-Oleh karena itu, kami merekomendasikan menggunakan pendekatan lain untuk skenario menghapus semua teks dari halaman PDF. Silakan pertimbangkan potongan kode berikut yang bekerja sangat cepat.
-
-```python
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "RemoveAllText.pdf");
-// Loop melalui semua halaman Dokumen PDF
-for (int i = 1; i <= pdfDocument.Pages.Count; i++)
-{
-    Page page = pdfDocument.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
-    // Pilih semua teks pada halaman
-    page.Contents.Accept(operatorSelector);
-    // Hapus semua teks
-    page.Contents.Delete(operatorSelector.Selected);
-}
-// Simpan dokumen
-pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
-```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Python melalui .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Library Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

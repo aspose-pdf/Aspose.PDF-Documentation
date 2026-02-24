@@ -1,96 +1,33 @@
 ---
-title: Dapatkan, Perbarui, dan Perluas Sebuah Penanda Buku menggunakan Python
-linktitle: Dapatkan, Perbarui, dan Perluas Sebuah Penanda Buku
+title: Dapatkan, Perbarui, dan Perluas Bookmark menggunakan Python
+linktitle: Dapatkan, Perbarui, dan Perluas Bookmark
 type: docs
 weight: 20
 url: /id/python-net/get-update-and-expand-bookmark/
-description: Artikel ini menjelaskan cara menggunakan penanda buku dalam file PDF dengan pustaka Aspose.PDF untuk Python kami.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Artikel ini menjelaskan cara menggunakan bookmark dalam file PDF dengan pustaka Aspose.PDF untuk Python kami.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara menggunakan bookmark dalam PDF dengan Python
+Abstract: Artikel ini menyediakan panduan komprehensif tentang mengelola bookmark dalam dokumen PDF menggunakan pustaka Aspose.PDF di Python. Artikel ini dimulai dengan menjelaskan cara mengambil bookmark dari file PDF melalui `OutlineCollection`, yang berisi semua bookmark, dan merinci akses ke atribut bookmark melalui `OutlineItemCollection`. Selanjutnya artikel menggambarkan proses menentukan nomor halaman yang terkait dengan sebuah bookmark menggunakan `PdfBookmarkEditor`. Artikel ini juga menjelaskan cara menangani struktur bookmark hierarkis dengan mengambil bookmark anak dalam setiap `OutlineItemCollection`. Selain itu, dibahas cara memperbarui properti bookmark, memperlihatkan cara memodifikasi atribut bookmark dan menyimpan perubahan ke PDF. Akhirnya, artikel ini membahas kebutuhan memperluas bookmark saat melihat dokumen, menunjukkan cara mengatur status terbuka setiap bookmark agar secara default diperluas. Potongan kode menyertai setiap bagian, memberikan contoh praktis implementasi fungsionalitas ini.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Dapatkan, Perbarui, dan Perluas Sebuah Penanda Buku dengan Python",
-    "alternativeHeadline": "Cara mendapatkan Penanda Buku dari file PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generasi dokumen pdf",
-    "keywords": "pdf, python, mendapatkan penanda buku",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/get-update-and-expand-bookmark/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/get-update-and-expand-bookmark/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Artikel ini menjelaskan cara menggunakan penanda buku dalam file PDF dengan pustaka Aspose.PDF untuk Python kami."
-}
-</script>
 
+## Dapatkan Bookmark
 
-## Dapatkan Penanda Buku
+Koleksi [OutlineCollection] objek [Dokumen] berisi semua bookmark file PDF. Artikel ini menjelaskan cara mendapatkan bookmark dari file PDF, dan cara mengetahui halaman mana bookmark tertentu berada.
 
-Koleksi [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) dari objek [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) berisi semua penanda buku dari file PDF. Artikel ini menjelaskan cara mendapatkan penanda buku dari file PDF, dan bagaimana mengetahui pada halaman mana penanda buku tertentu berada.
-
-Untuk mendapatkan penanda buku, lakukan iterasi melalui koleksi [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) dan dapatkan setiap penanda buku dalam OutlineItemCollection. [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) menyediakan akses ke semua atribut penanda buku. Cuplikan kode berikut menunjukkan cara mendapatkan penanda buku dari file PDF.
+Untuk mendapatkan bookmark, lakukan iterasi melalui koleksi [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/) dan dapatkan setiap bookmark dalam OutlineItemCollection. [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) menyediakan akses ke semua atribut bookmark. Potongan kode berikut menunjukkan cara mendapatkan bookmark dari file PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Buka dokumen
+    # Open document
     document = ap.Document(input_pdf)
 
-    # Iterasi melalui semua penanda buku
+    # Loop through all the bookmarks
     for i in range(len(document.outlines)):
         outline_item = document.outlines[i + 1]
         print(outline_item.title)
@@ -99,44 +36,42 @@ Untuk mendapatkan penanda buku, lakukan iterasi melalui koleksi [OutlineCollecti
         print(outline_item.color)
 ```
 
+## Mendapatkan Nomor Halaman Bookmark
 
-## Mendapatkan Nomor Halaman dari Penanda Buku
-
-Setelah Anda menambahkan penanda buku, Anda dapat mengetahui pada halaman mana penanda tersebut berada dengan mendapatkan PageNumber tujuan yang terkait dengan objek Bookmark.
+Setelah Anda menambahkan bookmark, Anda dapat mengetahui halaman tempatnya berada dengan mengambil PageNumber tujuan yang terkait dengan objek Bookmark.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Buat PdfBookmarkEditor
+    # Create PdfBookmarkEditor
     bookmarkEditor = ap.facades.PdfBookmarkEditor()
-    # Buka file PDF
+    # Open PDF file
     bookmarkEditor.bind_pdf(input_pdf)
-    # Ekstrak penanda buku
+    # Extract bookmarks
     bookmarks = bookmarkEditor.extract_bookmarks()
     for bookmark in bookmarks:
         str_level_seprator = ""
         for i in range(bookmark.level):
             str_level_seprator += "----"
 
-        print(str_level_seprator, "Judul:", bookmark.title)
-        print(str_level_seprator, "Nomor Halaman:", bookmark.page_number)
-        print(str_level_seprator, "Aksi Halaman:", bookmark.action)
+        print(str_level_seprator, "Title:", bookmark.title)
+        print(str_level_seprator, "Page Number:", bookmark.page_number)
+        print(str_level_seprator, "Page Action:", bookmark.action)
 ```
 
-## Mendapatkan Penanda Buku Anak dari Dokumen PDF
+## Dapatkan Bookmark Anak dari Dokumen PDF
 
-Penanda buku dapat diatur dalam struktur hierarki, dengan induk dan anak.
- Untuk mendapatkan semua penanda buku, lakukan perulangan melalui koleksi Outlines dari objek Document. Namun, untuk mendapatkan penanda buku anak juga, lakukan perulangan melalui semua penanda buku dalam setiap objek [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) yang diperoleh dalam perulangan pertama. Cuplikan kode berikut menunjukkan cara mendapatkan penanda buku anak dari dokumen PDF.
+Bookmark dapat diatur dalam struktur hierarkis, dengan induk dan anak. Untuk mendapatkan semua bookmark, lakukan iterasi melalui koleksi Outlines dari objek Document. Namun, untuk juga mendapatkan bookmark anak, lakukan iterasi melalui semua bookmark di setiap objek [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) yang diperoleh pada iterasi pertama. Potongan kode berikut menunjukkan cara mendapatkan bookmark anak dari dokumen PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Buka dokumen
+    # Open document
     document = ap.Document(input_pdf)
 
-    # Lakukan perulangan melalui semua penanda buku
+    # Loop through all the bookmarks
     for i in range(len(document.outlines)):
         outline_item = document.outlines[i + 1]
         print(outline_item.title)
@@ -145,8 +80,8 @@ Penanda buku dapat diatur dalam struktur hierarki, dengan induk dan anak.
         print(outline_item.color)
         count = len(outline_item)
         if count > 0:
-            print("Penanda Buku Anak")
-            # Terdapat penanda buku anak, maka lakukan perulangan melalui itu juga
+            print("Child Bookmarks")
+            # There are child bookmarks then loop through that as well
             for j in range(len(outline_item)):
                 child_outline_item = outline_item[i + 1]
                 print(child_outline_item.title)
@@ -155,116 +90,53 @@ Penanda buku dapat diatur dalam struktur hierarki, dengan induk dan anak.
                 print(child_outline_item.color)
 ```
 
-## Memperbarui Penanda Buku dalam Dokumen PDF
+## Memperbarui Bookmark dalam Dokumen PDF
 
-Untuk memperbarui penanda buku dalam file PDF, pertama, dapatkan penanda buku tertentu dari koleksi OutlineColletion objek Document dengan menentukan indeks penanda buku. Setelah Anda mendapatkan penanda buku ke dalam objek [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/), Anda dapat memperbarui propertinya dan kemudian menyimpan file PDF yang diperbarui menggunakan metode Save. Cuplikan kode berikut menunjukkan cara memperbarui penanda buku dalam dokumen PDF.
+Untuk memperbarui bookmark dalam file PDF, pertama-tama dapatkan bookmark tertentu dari koleksi OutlineColletion objek Document dengan menentukan indeks bookmark. Setelah Anda mengambil bookmark ke dalam objek [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/), Anda dapat memperbarui propertinya dan kemudian menyimpan file PDF yang diperbarui menggunakan metode Save. Potongan kode berikut menunjukkan cara memperbarui bookmark dalam dokumen PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Buka dokumen
+    # Open document
     document = ap.Document(input_pdf)
 
-    # Dapatkan objek penanda buku
+    # Get a bookmark object
     outline = document.outlines[1]
 
-    # Dapatkan objek penanda buku anak
+    # Get child bookmark object
     child_outline = outline[1]
-    child_outline.title = "Outline yang Diperbarui"
+    child_outline.title = "Updated Outline"
     child_outline.italic = True
     child_outline.bold = True
 
-    # Simpan keluaran
+    # Save output
     document.save(output_pdf)
 ```
 
-## Penanda Buku yang Diperluas saat melihat dokumen
+## Bookmark Diperluas saat melihat dokumen
 
-Penanda buku disimpan dalam koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) objek Document, yang berada dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/).
- Namun, kita mungkin memiliki persyaratan untuk memperluas semua penanda buku saat melihat file PDF.
+Bookmark disimpan dalam koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlineitemcollection/) objek Document, yang berada dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/outlinecollection/). Namun, mungkin ada kebutuhan agar semua bookmark diperluas saat melihat file PDF.
 
-Untuk memenuhi persyaratan ini, kita dapat mengatur status terbuka untuk setiap item garis besar/penanda buku sebagai Terbuka. Cuplikan kode berikut menunjukkan cara mengatur status terbuka untuk setiap penanda buku agar diperluas dalam dokumen PDF.
+Untuk memenuhi kebutuhan ini, kita dapat mengatur status terbuka untuk setiap item outline/bookmark menjadi Open. Potongan kode berikut menunjukkan cara mengatur status terbuka setiap bookmark menjadi diperluas dalam dokumen PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Buka dokumen
+    # Open document
     document = ap.Document(input_pdf)
 
-    # Atur mode tampilan halaman yaitu tampilkan thumbnail, layar penuh, tampilkan panel lampiran
+    # Set page view mode i.e. show thumbnails, full-screen, show attachment panel
     document.page_mode = ap.PageMode.USE_OUTLINES
-    # Telusuri setiap item Ouline dalam koleksi outlines dari file PDF
+    # Traverse through each Ouline item in outlines collection of PDF file
     for i in range(len(document.outlines)):
         item = document.outlines[i + 1]
-        # Atur status terbuka untuk item outline
+        # Set open status for outline item
         item.open = True
 
-    # Simpan keluaran
+    # Save output
     document.save(output_pdf)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

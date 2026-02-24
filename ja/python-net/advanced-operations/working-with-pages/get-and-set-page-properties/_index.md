@@ -1,348 +1,217 @@
 ---
-title: Pythonを使用してページプロパティを取得および設定する
+title: Python を使用したページプロパティの取得と設定
 linktitle: ページプロパティの取得と設定
 type: docs
 weight: 90
 url: /ja/python-net/get-and-set-page-properties/
-description: このセクションでは、PDFファイル内のページ数を取得し、色などのPDFページプロパティに関する情報を取得し、ページプロパティを設定する方法を示します。
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+description: このセクションでは、PDF ファイルのページ数を取得し、色などの PDF ページプロパティに関する情報を取得し、ページプロパティを設定する方法を示します。
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用したページプロパティの取得と設定方法
+Abstract: この記事では、Aspose.PDF for Python via .NET の機能について、Python を使用して PDF ファイルのページプロパティの読み取りと設定に焦点を当てて説明します。この記事は、PDF のページ数の決定、ページプロパティへのアクセスと変更、カラー情報の取り扱いなど、さまざまな機能をカバーします。ページ数を取得するには `Document` クラスと `PageCollection` コレクションを使用し、ドキュメントを保存せずにページ数を取得するコードスニペットを示します。この記事では、MediaBox、BleedBox、TrimBox、ArtBox、CropBox などの異なるページプロパティを説明し、これらのプロパティにアクセスするコード例を提供します。さらに、PDF から特定のページを取得して別ドキュメントとして保存する方法や、各ページのカラータイプを判定する方法についても取り上げています。例はすべて Python で実装されており、これらの機能の実用的な応用を示しています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonを使用してページプロパティを取得および設定する",
-    "alternativeHeadline": "PDFページプロパティの取得と設定",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf ドキュメント生成",
-    "keywords": "pdf, python, ページプロパティを取得, ページプロパティを設定",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/get-and-set-page-properties/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/get-and-set-page-properties/"
-    },
-    "dateModified": "2023-04-04",
-    "description": ""
-}
-</script>
 
+Aspose.PDF for Python via .NET を使用すると、Python アプリケーション内で PDF ファイルのページプロパティを読み取りおよび設定できます。このセクションでは、PDF ファイルのページ数を取得し、色などの PDF ページプロパティに関する情報を取得し、ページプロパティを設定する方法を示します。例では [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) と [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) API を使用し、Python で記述されています。
 
-Aspose.PDF for Python via .NETを使用すると、Pythonアプリケーション内でPDFファイルのページのプロパティを読み取り、設定することができます。このセクションでは、PDFファイルのページ数を取得し、色などのPDFページプロパティに関する情報を取得し、ページプロパティを設定する方法を示します。例はPythonで示されています。
+## PDF ファイルのページ数を取得する
 
-## PDFファイルのページ数を取得する
+文書を扱う際、ページ数を知りたいことがよくあります。Aspose.PDF を使用すれば、コードは 2 行以内で済みます。
 
-ドキュメントを扱う際、多くの場合、ページ数を知りたいと思うでしょう。Aspose.PDFを使用すると、これは2行のコードで実現できます。
+PDF ファイルのページ数を取得するには：
 
-PDFファイルのページ数を取得するには：
+1. [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスを使用して PDF ファイルを開きます。
+1. 次に、[`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) コレクションの Count プロパティ（Document オブジェクトから）を使用して、ドキュメントの総ページ数を取得します。
 
-1. [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)クラスを使用してPDFファイルを開きます。
-1. 次に、[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)コレクションのCountプロパティ（Documentオブジェクトから）を使用して、ドキュメント内のページの総数を取得します。
-
-次のコードスニペットは、PDFファイルのページ数を取得する方法を示しています。
+以下のコードスニペットは、PDF ファイルのページ数を取得する方法を示しています。
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # ページ数を取得
+def get_page_count(input_file_name):
+    """
+    Get the total number of pages in a PDF document.
+    Args:
+        input_file_name (str): Path to the input PDF file.
+    Returns:
+        None: Prints the page count to console.
+    Example:
+        get_page_count("example.pdf")
+        # Output: Page Count: 10
+    """
+    # Open document
+    document = ap.Document(input_file_name)
+
+    # Get page count
     print("Page Count:", str(len(document.pages)))
 ```
 
-
 ### ドキュメントを保存せずにページ数を取得する
 
-時々、PDFファイルをその場で生成し、PDFファイルの作成中に（目次の作成など）ファイルをシステムやストリームに保存せずにページ数を取得する必要が生じることがあります。この要件に対応するために、Documentクラスには[process_paragraphs()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドが導入されています。以下のコードスニペットは、ドキュメントを保存せずにページ数を取得する手順を示しています。
+PDF ファイルをオンザフライで生成する際、PDF 作成中に（目次作成など）システムやストリームに保存せずにページ数を取得する必要が生じることがあります。この要件に対応するため、Document クラスにメソッド [process_paragraphs()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) が導入されました。以下のコードスニペットをご覧いただき、ドキュメントを保存せずにページ数を取得する手順を確認してください。
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Documentインスタンスをインスタンス化する
-    document = ap.Document()
-    # PDFファイルのpagesコレクションにページを追加する
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_count_without_saving(input_file_name):
+    """
+    Get the page count of a PDF document after adding content without saving the file.
+
+    This function opens an existing PDF document, adds a new page with 300 text fragments,
+    processes the paragraphs to ensure accurate page counting, and prints the total number
+    of pages in the document. The document is not saved to disk.
+
+    Args:
+        input_file_name (str): Path to the input PDF file to be processed.
+
+    Returns:
+        None: This function prints the page count but does not return a value.
+
+    Example:
+        >>> get_page_count_without_saving("sample.pdf")
+        Number of pages in document = 2
+    """
+    # Instantiate Document instance
+    document = ap.Document(input_file_name)
+    # Add page to pages collection of PDF file
     page = document.pages.add()
-    # ループインスタンスを作成する
-    for i in range(0, 300):
-        # TextFragmentをページオブジェクトのparagraphsコレクションに追加する
-        page.paragraphs.add(ap.text.TextFragment("ページ数テスト"))
-    # 正確なページ数を取得するためにPDFファイル内の段落を処理する
+    # Create loop instance
+    for _ in range(0, 300):
+        # Add TextFragment to paragraphs collection of page object
+        page.paragraphs.add(ap.text.TextFragment("Pages count test"))
+    # Process the paragraphs in PDF file to get accurate page count
     document.process_paragraphs()
-    # ドキュメントのページ数を印刷する
-    print("ドキュメント内のページ数 =", str(len(document.pages)))
+    # Print number of pages in document
+    print("Number of pages in document =", str(len(document.pages)))
 ```
-
 
 ## ページプロパティを取得する
 
-PDFファイルの各ページには、幅、高さ、裁ち落とし、トリムボックスなどの多くのプロパティがあります。Aspose.PDFを使用すると、これらのプロパティにアクセスできます。
+PDF ファイルの各ページには、幅や高さ、BleedBox、CropBox、TrimBox など複数のプロパティがあります。Aspose.PDF を使用すると、これらのプロパティにアクセスできます。
 
-### **ページプロパティの理解: Artbox, BleedBox, CropBox, MediaBox, TrimBoxおよびRectプロパティの違い**
+### ページプロパティの理解：ArtBox、BleedBox、CropBox、MediaBox、TrimBox、Rect プロパティの違い
 
-- **メディアボックス**: メディアボックスは最も大きなページボックスです。これは、ドキュメントがPostScriptまたはPDFに印刷されたときに選択されたページサイズ（例えば、A4、A5、USレターなど）に対応します。言い換えれば、メディアボックスはPDFドキュメントが表示または印刷されるメディアの物理サイズを決定します。
-- **裁ち落としボックス**: ドキュメントに裁ち落としがある場合、PDFにも裁ち落としボックスがあります。
- Bleedは、ページの端を超えて広がる色（またはアートワーク）の量です。これは、ドキュメントが印刷されてサイズにカットされたとき（「トリム」）、インクがページの端まで届くようにするために使用されます。ページが誤ってカットされた場合でも（トリムマークからわずかにずれてカットされた場合でも）、ページに白い端が現れることはありません。
+- **Media box**: メディアボックスは最大のページボックスです。これは、ドキュメントが PostScript や PDF に印刷されたときに選択されたページサイズ（例：A4、A5、US Letter など）に対応します。言い換えれば、メディアボックスは PDF ドキュメントが表示または印刷される媒体の物理的なサイズを決定します。
+- **Bleed box**: ドキュメントにブリードがある場合、PDF にもブリードボックスが設定されます。ブリードはページの端を超えて広がるカラー（またはアートワーク）の量で、印刷後にサイズをカット（「トリム」）したときにインクがページの端まで届くようにするために使用されます。たとえページがトリムラインから少し外れてカットされても、ページに白い縁が現れません。
 - **Trim box**: トリムボックスは、印刷およびトリミング後のドキュメントの最終サイズを示します。
-- **Art box**: アートボックスは、ドキュメント内のページの実際の内容の周りに描かれるボックスです。このページボックスは、他のアプリケーションでPDFドキュメントをインポートするときに使用されます。
-- **Crop box**: クロップボックスは、Adobe AcrobatでPDFドキュメントが表示される「ページ」サイズです。通常のビューでは、Adobe Acrobatに表示されるのはクロップボックスの内容のみです。
-  これらのプロパティの詳細な説明については、Adobe.Pdf仕様書、特に10.10.1ページ境界を参照してください。
-- **Page.Rect**: MediaBoxとDropBoxの交点（通常は可視の長方形）。 下の図は、これらのプロパティを示しています。
+- **Art box**: アートボックスは、ドキュメントのページ内の実際のコンテンツを囲むボックスです。このページボックスは、他のアプリケーションで PDF ドキュメントをインポートする際に使用されます。
+- **Crop box**: クロップボックスは、Adobe Acrobat で PDF ドキュメントが表示される「ページ」サイズです。通常ビューでは、Adobe Acrobat ではクロップボックスの内容のみが表示されます。
+これらのプロパティの詳細な説明については、Adobe.Pdf 仕様書、特に 10.10.1 ページ境界を参照してください。
+-- **Page.Rect**: MediaBox と DropBox（`Page.rect`）の交差部分（一般的に可視矩形）です。矩形プロパティについては [`Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) 型をご覧ください。下の図がこれらのプロパティを示しています。
 
-詳細については、[このページ](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)をご覧ください。
+詳細については、[this page](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html) をご覧ください。
 
-### **ページプロパティへのアクセス**
+### ページプロパティへのアクセス
 
-[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) クラスは、特定のPDFページに関連するすべてのプロパティを提供します。PDFファイルのすべてのページは、[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトの [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) コレクションに含まれています。
+[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) クラスは、特定の PDF ページに関連するすべてのプロパティを提供します。PDF ファイルのすべてのページは、[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) オブジェクトの [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) コレクションに格納されています。
 
-そこから、インデックスを使用して個別のページオブジェクトにアクセスするか、foreachループを使用してコレクション全体をループしてすべてのページを取得することができます。個別のページにアクセスすると、そのプロパティを取得することができます。次のコードスニペットは、ページプロパティを取得する方法を示しています。
+ここから、インデックスを使用して個々の `Page` オブジェクトにアクセスするか、コレクションをループしてすべてのページを取得することができます。個々のページにアクセスすると、そのプロパティを取得できます。以下のコードスニペットは、ページプロパティ（`Page` API）を取得する方法を示しています。
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-    # 特定のページを取得
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_properties(input_file_name):
+    """
+    Retrieves and displays various page properties for the first page of a PDF document.
+
+    Args:
+        input_file_name (str): Path to the PDF file to analyze.
+    """
+    # Open document
+    document = ap.Document(input_file_name)
+    # Get particular page
     page = document.pages[1]
-    # ページプロパティを取得
-    print(
-        "ArtBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.art_box.height,
-            page.art_box.width,
-            page.art_box.llx,
-            page.art_box.lly,
-            page.art_box.urx,
-            page.art_box.ury,
-        )
-    )
-    print(
-        "BleedBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.bleed_box.height,
-            page.bleed_box.width,
-            page.bleed_box.llx,
-            page.bleed_box.lly,
-            page.bleed_box.urx,
-            page.bleed_box.ury,
-        )
-    )
-    print(
-        "CropBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.crop_box.height,
-            page.crop_box.width,
-            page.crop_box.llx,
-            page.crop_box.lly,
-            page.crop_box.urx,
-            page.crop_box.ury,
-        )
-    )
-    print(
-        "MediaBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.media_box.height,
-            page.media_box.width,
-            page.media_box.llx,
-            page.media_box.lly,
-            page.media_box.urx,
-            page.media_box.ury,
-        )
-    )
-    print(
-        "TrimBox : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.trim_box.height,
-            page.trim_box.width,
-            page.trim_box.llx,
-            page.trim_box.lly,
-            page.trim_box.urx,
-            page.trim_box.ury,
-        )
-    )
-    print(
-        "Rect : Height={},Width={},LLX={},LLY={},URX={},URY={}".format(
-            page.rect.height,
-            page.rect.width,
-            page.rect.llx,
-            page.rect.lly,
-            page.rect.urx,
-            page.rect.ury,
-        )
-    )
-    print("Page Number :", page.number)
-    print("Rotate :", page.rotate)
-```
 
-## PDFファイルの特定のページを取得する
-
-Aspose.PDF for Pythonを使用すると、[PDFを個々のページに分割](/pdf/ja/python-net/split-pdf-document/)し、それらをPDFファイルとして保存できます。PDFファイル内の指定したページを取得して新しいPDFとして保存する操作も非常に似ています。ソースドキュメントを開き、ページにアクセスし、新しいドキュメントを作成してそのページを追加します。
-
-[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document)オブジェクトの[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection)には、PDFファイル内のページが含まれています。このコレクションから特定のページを取得するには：
-
-1. Pagesプロパティを使用してページインデックスを指定します。
-1. 新しい[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)オブジェクトを作成します。
-1. [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)オブジェクトを新しいDocumentオブジェクトに追加します。
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドを使用して出力を保存します。
-
-次のコードスニペットは、PDFファイルから特定のページを取得し、新しいファイルとして保存する方法を示しています。
-
-```python
-
-    import aspose.pdf as ap
-
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-
-    # 特定のページを取得
-    page = document.pages[2]
-
-    # ページをPDFファイルとして保存
-    new_document = ap.Document()
-    new_document.pages.add(page)
-    new_document.save(output_pdf)
-```
-
-## ページの色を決定
-
-[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) クラスは、PDFドキュメント内の特定のページに関連するプロパティを提供し、ページが使用する色の種類（RGB、白黒、グレースケールまたは未定義）を含みます。
-
-すべてのPDFファイルのページは、[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) コレクションによって保持されています。
- The [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) プロパティは、ページ上の要素の色を指定します。特定のPDFページの色情報を取得または判断するには、[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) オブジェクトの [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) プロパティを使用します。
-
-次のコードスニペットは、PDFファイルの個々のページを反復して色情報を取得する方法を示しています。
-
-```python
-
-    import aspose.pdf as ap
-
-    # ソースPDFファイルを開く
-    document = ap.Document(input_pdf)
-    # PDFファイルのすべてのページを反復する
-    for page_n in range(0, len(document.pages)):
-        page_number = page_n + 1
-        # 特定のPDFページの色タイプ情報を取得する
-        page_color_type = document.pages[page_number].color_type
-        if page_color_type == ap.ColorType.BLACK_AND_WHITE:
-            print("ページ # " + str(page_number) + " は白黒です。")
-
-        if page_color_type == ap.ColorType.GRAYSCALE:
-            print("ページ # " + str(page_number) + " はグレースケールです。")
-
-        if page_color_type == ap.ColorType.RGB:
-            print("ページ # " + str(page_number) + " はRGBです。")
-
-        if page_color_type == ap.ColorType.UNDEFINED:
-            print("ページ # " + str(page_number) + " の色は未定義です。")
-```
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python用PDF操作ライブラリ",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
+    # Get page properties
+    boxes = {
+        "ArtBox": page.art_box,
+        "BleedBox": page.bleed_box,
+        "CropBox": page.crop_box,
+        "MediaBox": page.media_box,
+        "TrimBox": page.trim_box,
+        "Rect": page.rect
     }
-}
-</script>
+
+    # Print box properties
+    for box_name, box in boxes.items():
+        print(f"{box_name} : Height={box.height},Width={box.width},LLX={box.llx},LLY={box.lly},URX={box.urx},URY={box.ury}")
+
+    # Print other page properties
+    print(f"Page Number : {page.number}")
+    print(f"Rotate : {page.rotate}")
+```
+
+## ページのカラーを判定する
+
+[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) クラスは、PDF ドキュメント内の特定のページに関連するプロパティを提供し、ページが使用するカラータイプ（RGB、白黒、グレースケール、または未定義）を含みます。
+
+PDF ファイルのすべてのページは、[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) コレクションに格納されています。[color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) プロパティはページ上の要素の色を指定します。特定の PDF ページのカラー情報を取得または判定するには、[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) オブジェクトの [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) プロパティを使用します。
+
+以下のコードスニペットは、PDF ファイルの個々のページを反復処理してカラー情報を取得する方法を示しています。
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_color_type(input_file_name):
+    """
+    Analyzes and prints the color type information for each page in a PDF document.
+
+    This function opens a PDF file and iterates through all pages to determine
+    the color type of each page (black and white, grayscale, RGB, or undefined).
+    The results are printed to the console with human-readable descriptions.
+
+    Args:
+        input_file_name (str): Path to the PDF file to analyze.
+
+    Returns:
+        None: This function prints results directly to console and doesn't return a value.
+
+    Example:
+        >>> get_page_color_type("sample.pdf")
+        Page # 1 is RGB.
+        Page # 2 is Gray Scale.
+        Page # 3 is Black and white.
+
+    Note:
+        Requires the aspose.pdf library (imported as ap) to be installed and available.
+        The PDF file must be accessible at the specified path.
+    """
+    # Open source PDF file
+    document = ap.Document(input_file_name)
+    # Iterate through all the page of PDF file
+    for page_number in range(1, len(document.pages) + 1):
+        # Get the color type information for particular PDF page
+        page_color_type = document.pages[page_number].color_type
+        color_type_map = {
+            ap.ColorType.BLACK_AND_WHITE: "Black and white",
+            ap.ColorType.GRAYSCALE: "Gray Scale",
+            ap.ColorType.RGB: "RGB",
+            ap.ColorType.UNDEFINED: "undefined"
+        }
+        color_description = color_type_map.get(page_color_type, "unknown")
+        print(f"Page # {page_number} is {color_description}.")
+```
+
+

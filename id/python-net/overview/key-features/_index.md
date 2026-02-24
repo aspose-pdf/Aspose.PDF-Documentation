@@ -4,31 +4,40 @@ linktitle: Fitur Utama
 type: docs
 weight: 20
 url: /id/python-net/key-features/
-description: Aspose.PDF untuk Python via .NET menunjukkan fitur umumnya. Ini menunjukkan versi PDF yang didukung, dan semua manipulasi yang dapat kita lakukan dengan PDF.
-lastmod: "2022-12-21"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF untuk Python via .NET menyoroti fitur utamanya, termasuk versi PDF yang didukung dan opsi manipulasi PDF yang tersedia.
+lastmod: "2025-02-21"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Fitur Umum Aspose.PDF untuk Python
+Abstract: Aspose.PDF untuk Python via .NET adalah pustaka yang kuat dengan fitur lengkap untuk mengelola dan memanipulasi dokumen PDF. Ia mendukung standar PDF yang telah ditetapkan dan memudahkan pembacaan serta pengeksporan PDF ke berbagai format gambar seperti BMP, GIF, JPEG, dan PNG. Pengguna dapat mengatur properti dokumen, atribut halaman, serta mengelola teks, paragraf, tautan, grafik, dan lampiran. Pustaka ini unggul dalam kemampuan konversi, memungkinkan transformasi PDF ke format Word, Excel, PowerPoint, dan HTML dengan mulus, serta mengonversi berbagai format kembali ke PDF.
 ---
 
 ## Fitur Umum
 
-- Mendukung sebagian besar standar PDF dan spesifikasi PDF yang sudah mapan.
-- Kemampuan untuk membaca & mengekspor PDF dalam berbagai format gambar termasuk BMP, GIF, JPEG & PNG.
-- Mengatur informasi dasar (misalnya penulis, pembuat) dari dokumen PDF.
-- Mengonfigurasi properti Halaman PDF (misalnya lebar, tinggi, cropbox, bleedbox dll.).
-- Mengatur penomoran halaman, tingkat penanda buku, ukuran halaman dll.
-- Kemampuan untuk bekerja dengan teks, paragraf, judul, hyperlink, grafik, lampiran dll.
+- Mendukung sebagian besar standar PDF yang sudah ada dan spesifikasi PDF.
+- Kemampuan untuk membaca & mengekspor PDF dalam berbagai format gambar termasuk BMP, GIF, JPEG, dan PNG.
+- Menetapkan informasi dasar (mis. penulis, pembuat) dari dokumen PDF.
+- Mengkonfigurasi properti Halaman PDF (mis. lebar, tinggi, cropbox, bleedbox, dll.).
+- Menetapkan penomoran halaman, tingkat bookmark, ukuran halaman, dll.
+- Kemampuan untuk bekerja dengan teks, paragraf, judul, hyperlink, grafik, lampiran, dll.
+
+## Standar PDF yang Didukung
+
+- ISO 32000-1 (PDF 1.2, PDF 1.3, PDF 1.4, PDF 1.5, PDF 1.6, PDF 1.7).
+- ISO 32000-2 (PDF 2.0).
+- ISO 19005 (PDF/A), ISO 15930 (PDF/X), ISO 24517 (PDF/E), ISO 14289 (PDF/UA).
 
 ## Fitur Konversi
 
-Perpustakaan Aspose.PDF untuk Python via .NET memungkinkan Anda untuk dengan sukses, cepat, dan mudah mengonversi dokumen PDF Anda ke format paling populer dan sebaliknya.
+Pustaka Aspose.PDF untuk Python via .NET memungkinkan Anda untuk dengan sukses, cepat, dan mudah mengonversi dokumen PDF Anda ke format paling populer dan sebaliknya.
 
-- Konversi PDF ke Word, Excel, dan PowerPoint.
-- Konversi PDF ke format Gambar.
-- Konversi file PDF ke format HTML dan sebaliknya.
-- Konversi PDF ke EPUB, Teks, XPS, dll.
-- Konversi EPUB, Markdown, Teks, XPS, PostScript, XML, LaTex ke PDF.
+- Mengonversi PDF ke Word, Excel, dan PowerPoint.
+- Mengonversi PDF ke format Gambar.
+- Mengonversi file PDF ke format HTML dan sebaliknya.
+- Mengonversi PDF ke EPUB, Teks, XPS, dll.
+- Mengonversi EPUB, Markdown, Teks, XPS, PostScript, XML, LaTex ke PDF.
 
 ## Versi PDF yang Didukung
 
@@ -36,18 +45,27 @@ Aspose.PDF untuk Python mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, dan 2.
 
 ## Teks
 
-- Ekstrak teks dari halaman.
-- Cari teks dari halaman.
-- Ganti teks.
-- Tambahkan teks dalam file PDF.
+- Mengekstrak teks dari halaman.
+- Mencari teks dari halaman.
+- Mengganti teks.
+- Menambahkan teks dalam file PDF.
+
+## Font
+
+- 14 font inti.
+- Font Type 1.
+- Font TrueType.
+- Font Type 3.
+- Font CJK.
+- Dukungan Unicode.
 
 ## Gambar
 
-- Tambahkan gambar dalam file PDF.
-- Hapus gambar.
-- Ganti gambar.
-- Ekstrak gambar.
-- Konversi PDF ke format Gambar.
+- Menambahkan gambar dalam file PDF.
+- Menghapus gambar.
+- Mengganti gambar.
+- Mengekstrak gambar.
+- Konversi format PDF ke gambar.
 
 ## Lampiran
 
@@ -58,40 +76,39 @@ Aspose.PDF untuk Python mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, dan 2.
 
 - Sisipkan halaman PDF.
 - Hapus halaman PDF.
-- Pisahkan PDF menjadi halaman individu.
-- Memindahkan sekelompok Halaman dari satu Dokumen PDF ke Dokumen Lain
-- Memindahkan Halaman ke lokasi baru dalam Dokumen PDF saat ini
-- Ubah Ukuran Halaman PDF
-- Ubah Orientasi Halaman
-- Dapatkan Properti Halaman
-- Dapatkan Jumlah Halaman
+- Bagi PDF menjadi halaman terpisah.
+- Memindahkan sekumpulan halaman dari satu dokumen PDF ke yang lain
+- Memindahkan sebuah halaman ke lokasi baru dalam dokumen PDF saat ini
+- Ubah ukuran halaman PDF
+- Ubah orientasi halaman
+- Dapatkan properti halaman
 - Dapatkan jumlah halaman
-- Dapatkan Halaman Tertentu
+- Dapatkan jumlah halaman
+- Dapatkan halaman tertentu
 
 ## Dokumen
 
-- Buat File PDF
+- Buat file PDF
 - Buka dokumen PDF yang ada dari aliran
 - Buka dokumen PDF yang ada
-
-- Menyetel Properti Dialog Cetak Preset
-- Tambahkan TOC ke PDF yang Ada
-- Tambahkan TOC ke PDF yang Ada
-- Sesuaikan Nomor Halaman saat menambahkan TOC
+- Mengatur properti preset dialog cetak
+- Tambahkan TOC ke PDF yang ada
+- Tambahkan TOC ke PDF yang ada
+- Sesuaikan nomor halaman saat menambahkan TOC
 - Tetapkan tanggal kedaluwarsa PDF
-- Ratakan PDF yang Dapat Diisi
-- Optimalkan Dokumen PDF untuk Web
-- Kurangi Ukuran PDF
-- Mengecilkan atau Memampatkan Semua Gambar
-- Menghapus Objek yang Tidak Digunakan
-- Menghubungkan Stream Duplikat
-- Menghapus Stream yang Tidak Digunakan
-- Menghapus Penyematan Font
+- Ratakan PDF yang dapat diisi
+- Optimalkan dokumen PDF untuk web
+- Kurangi ukuran PDF
+- Mengecilkan atau mengompresi semua gambar
+- Menghapus objek yang tidak terpakai
+- Menautkan aliran duplikat
+- Menghapus aliran yang tidak terpakai
+- Membatalkan embed font
 - Dapatkan properti penampil dokumen.
-- Tetapkan properti penampil dokumen.
+- Atur properti penampil dokumen.
 - Validasi (PDF/A-1a, PDF/A-1b).
-- Menghapus Bidang Formulir
-- Menentukan dan menetapkan metadata dokumen
+- Menghapus bidang formulir
+- Tentukan dan atur metadata dokumen
 
 ## Penanda Buku
 
@@ -100,8 +117,8 @@ Aspose.PDF untuk Python mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, dan 2.
 - Hapus penanda buku.
 - Dapatkan penanda buku.
 - Dapatkan penanda buku anak.
-- Memodifikasi penanda buku.
-- Perluas Penanda Buku saat melihat dokumen.
+- Modifikasi penanda buku.
+- Perluas penanda buku saat melihat dokumen.
 
 ## Anotasi
 
@@ -113,15 +130,259 @@ Aspose.PDF untuk Python mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, dan 2.
 
 - Tambahkan bidang.
 - Hapus bidang.
-- Memodifikasi bidang.
+- Ubah bidang.
 - Isi bidang.
 - Dapatkan nilai bidang.
+- Dukungan untuk XFA (Formulir berbasis XML) dan AcroForms (Formulir Standar).
 
-## Stempel dan Tanda Air
+## Cap dan Tanda Air
 
-- Tambahkan stempel teks.
-- Tambahkan stempel gambar.
-- Tambahkan stempel halaman PDF.
+- Tambahkan cap teks.
+- Tambahkan cap gambar.
+- Tambahkan cap halaman PDF.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1154,3 +1415,6 @@ Buka dokumen PDF terenkripsi
 - Enkripsi PDF.
 - Dekripsi PDF.
 - Ubah kata sandi.
+
+
+

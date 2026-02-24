@@ -1,88 +1,29 @@
 ---
-title: Работа с изображениями в PDF с использованием Python
+title: Работа с изображениями в PDF с помощью Python
 linktitle: Работа с изображениями
 type: docs
 weight: 40
 url: /ru/python-net/working-with-images/
-description: Этот раздел описывает возможности работы с изображениями в PDF файле с использованием библиотеки Python.
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+description: Этот раздел описывает возможности работы с изображениями в PDF‑файле с использованием библиотеки Python.
+lastmod: "2025-09-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как работать с изображениями в PDF с помощью Python
+Abstract: В статье рассматриваются различные методы и инструменты, доступные для редактирования и манипулирования изображениями внутри PDF‑документов, с акцентом на библиотеку Aspose.PDF для Python. Эта библиотека предлагает широкий спектр функций, выходящих за пределы стандартных операций добавления и удаления изображений. В частности, она позволяет пользователям эффективно извлекать изображения из существующих PDF‑файлов. В статье изложены ключевые возможности инструмента Aspose.PDF для Python, включая возможность добавления изображений в существующий PDF‑документ с контролем качества изображения, удаление изображений из PDF‑файла с использованием предоставленных фрагментов кода и извлечение изображений с помощью библиотеки Python. Каждая функция сопровождается ссылками на более подробные руководства по реализации.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Работа с изображениями в PDF с использованием Python",
-    "alternativeHeadline": "Как работать с изображениями в PDF с Python",
-    "author": {
-        "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, python, изображение в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-images/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-images/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Этот раздел описывает возможности работы с изображениями в PDF файле с использованием библиотеки Python."
-}
-</script>
+
+Существует множество методов и инструментов для редактирования и манипулирования изображениями в PDF‑документах.
+Помимо обычных функций добавления и удаления изображений из PDF‑файла, библиотека Aspose.PDF для Python также позволяет извлекать изображения.
+**Aspose.PDF for Python** — умный и эффективный инструмент для работы с изображениями в существующем PDF.
+
+Вы можете выполнить следующее:
+
+- [Add Image to Existing PDF File](/pdf/python-net/add-image-to-existing-pdf-file/) - добавлять изображения и ссылки на отдельное изображение в PDF‑документ, после чего контролировать качество.
+- [Delete Images from PDF File](/pdf/python-net/delete-images-from-pdf-file/) - ознакомьтесь с фрагментом кода для удаления изображений из PDF‑файла.
+- [Extract Images from PDF File](/pdf/python-net/extract-images-from-pdf-file/) - в следующей статье показано, как извлекать изображения из PDF‑файла с помощью библиотеки Python.
+- [Search and Get Images from PDF Document](/pdf/python-net/search-and-get-images-from-pdf-document/) - вы можете получить изображение с отдельной страницы и выполнить поиск среди изображений на всех страницах с помощью Python.
+- [Replace Image in Existing PDF File](/pdf/python-net/replace-image-in-existing-pdf-file/) - проверьте наш фрагмент кода, он покажет, как заменить изображение в PDF‑файле.
 
 
-Существует множество методов и инструментов для редактирования и обработки изображений в PDF документах.  
-В дополнение к обычным функциям добавления и удаления изображений из PDF файла, библиотека Aspose.PDF для Python также позволяет извлекать изображения.  
-**Aspose.PDF для Python** — это умный и эффективный инструмент для работы с изображениями в существующем PDF.  
-
-Вы можете сделать следующее:
-
-- [Добавить изображение в существующий PDF файл](/pdf/ru/python-net/add-image-to-existing-pdf-file/) - добавление изображений и ссылок на одно изображение в PDF документ, после чего контроль качества.
-- [Удалить изображения из PDF файла](/pdf/ru/python-net/delete-images-from-pdf-file/) - проверьте фрагмент кода для удаления изображений из PDF файла.
-- [Извлечь изображения из PDF файла](/pdf/ru/python-net/extract-images-from-pdf-file/) - следующая статья показывает, как извлечь изображения из PDF файла с использованием библиотеки Python.

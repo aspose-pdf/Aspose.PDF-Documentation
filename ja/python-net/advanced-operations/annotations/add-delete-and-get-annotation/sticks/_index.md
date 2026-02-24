@@ -1,124 +1,60 @@
 ---
-title: PDF スティッキー注釈を Python で使用する
+title: Python を使用した PDF スティッキー注釈
 linktitle: スティッキー注釈
 type: docs
 weight: 50
 url: /ja/python-net/sticky-annotations/
-description: このトピックはスティッキー注釈についてであり、例としてテキストにウォーターマーク注釈を示します。
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF for Python を使用して、コメントやフィードバック用に PDF ドキュメントにスティッキー注釈を追加する方法を学びます。
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: PDF のスティッキー注釈を操作する方法ガイド
+Abstract: 本記事では、Aspose.PDF for Python ライブラリを使用して PDF ドキュメントの透かし注釈を管理するための詳細なガイドを提供します。透かし注釈の追加、取得、削除のプロセスを説明し、文書の真正性とブランディングを確保します。透かし注釈は、ロゴなどのグラフィックをページ上の固定サイズと位置に埋め込むために使用できます。ガイドには、特定の位置に透かし注釈を追加し、透明度を調整するコードスニペットや、既存の透かし注釈を取得および削除する方法が含まれています。コード例は、Aspose.PDF ライブラリを使用して PDF ドキュメントをプログラム的に操作する方法を示し、開発者が透かし機能をアプリケーションに統合するための実用的なアプローチを提供します。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF スティッキー注釈を Python で使用する",
-    "alternativeHeadline": "PDF にスティッキー注釈を追加する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf ドキュメント生成",
-    "keywords": "pdf, python, スティッキー注釈, ウォーターマーク注釈",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/sticky-annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/sticky-annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "このトピックはスティッキー注釈についてであり、Python ライブラリを使用してテキストにウォーターマーク注釈を示します。"
-}
-</script>
 
+## 透かし注釈の追加
 
-## ウォーターマーク注釈を追加
+最も目立ち、視覚化と伝達が容易なのは透かし注釈です。これは、PDF ドキュメントにロゴやその他のオリジナリティを確認できるサインを配置する最適な方法です。
 
-最も目に見えて視覚化しやすく伝達しやすいのがウォーターマーク注釈です。これは、PDFドキュメントにロゴやその独自性を確認するための他のサインを配置するための最良の方法です。
+透かし注釈は、印刷ページのサイズに関係なく、ページ上に固定サイズと位置で印刷されるべきグラフィックを表すために使用されます。
 
-ウォーターマーク注釈は、印刷されるページの寸法に関わらず、固定サイズおよび位置でページに印刷されるべきグラフィックスを表現するために使用されます。
+特定の PDF ページ位置に [WatermarkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/) を使用して透かしテキストを追加できます。透かしの不透明度は、[opacity](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/#properties) プロパティを使用して制御することもできます。
 
-[WatermarkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/) を使用して、PDFページの特定の位置にウォーターマークテキストを追加できます。ウォーターマークの不透明度も [opacity](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/#properties) プロパティを使用して制御できます。
-
-ウォーターマーク注釈を追加するには、次のコードスニペットを確認してください。
+以下のコードスニペットを確認して、WatermarkAnnotation を追加してください。
 
 ```python
 
     import aspose.pdf as ap
 
     document = ap.Document(input_file)
-    # 注釈を作成
-    # 注釈を追加するためにページオブジェクトを読み込む
+    # Create Annotation
+    # Load Page object to add Annotation
     page = document.pages[1]
 
-    # 注釈を作成
+    # Create Annotation
     wa = ap.annotations.WatermarkAnnotation(page, ap.Rectangle(100, 0, 400, 100, True))
 
-    # ページの注釈コレクションに注釈を追加
+    # Add annotaiton into Annotation collection of Page
     page.annotations.append(wa)
 
-    # フォント設定のためのTextStateを作成
+    # Create TextState for Font settings
     ts = ap.text.TextState()
     ts.foreground_color = ap.Color.blue
     ts.font_size = 25
     ts.font = ap.text.FontRepository.find_font("Arial");
 
-    # 注釈テキストの不透明度レベルを設定
+    # Set opacity level of Annotaiton Text
     wa.opacity = 0.5
 
-    # 注釈にテキストを追加
+    # Add Text in Annotation
     wa.set_text_and_state([ "HELLO", "Line 1", "Line 2" ], ts)
 
     document.save(output_file)
 ```
 
-
-## ウォーターマーク注釈を取得する
+## 透かし注釈の取得
 
 ```python
 
@@ -135,7 +71,7 @@ sitemap:
         print(ta.rect)
 ```
 
-## ウォーターマーク注釈を削除する
+## 透かし注釈の削除
 
 ```python
 
@@ -154,66 +90,4 @@ sitemap:
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+
