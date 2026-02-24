@@ -21,7 +21,7 @@ Abstract: This guide explains how to digitally sign PDF documents using Aspose.P
     import aspose.pdf as ap
     import aspose.pydrawing as drawing
 
-    ppath_infile = self.data_dir + infile
+    path_infile = self.data_dir + infile
     path_outfile = self.data_dir + outfile
     path_pfxfile = self.data_dir + pfxfile
 

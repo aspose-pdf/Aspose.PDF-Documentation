@@ -23,7 +23,7 @@ Abstract: يوفر المقال إرشادات حول حفظ مستندات PDF 
     import aspose.pdf as ap
 
     document = ap.Document(input_pdf)
-    # make some manipation, i.g add new empty page
+    # make some manipulation, i.g add new empty page
     document.pages.add()
     document.save(output_pdf)
 ```
@@ -37,7 +37,7 @@ Abstract: يوفر المقال إرشادات حول حفظ مستندات PDF 
     import aspose.pdf as ap
 
     document = ap.Document(input_pdf)
-    # make some manipation, i.g add new empty page
+    # make some manipulation, i.g add new empty page
     document.pages.add()
     document.save(io.FileIO(output_pdf, 'w'))
 ```

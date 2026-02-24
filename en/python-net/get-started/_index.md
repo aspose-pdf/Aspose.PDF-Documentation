@@ -32,12 +32,12 @@ Using Aspose.PDF for Python via .NET in your project gives you the following pro
 ## Wide variety of functions
 
 - Supports most established PDF standards and PDF specifications.
-- [Add, search, extract and replace text in PDF files]().
-- [Add/delete, extract and replace images]().
-- [Insert, delete, split PDF pages]().
-- [Set and get XMP metadata]().
-- [Validate (PDF/A-1a, PDF/A-1b)]().
-- Work with [bookmarks](), [annotations](), [PDF forms](), [stamps](), [watermarks]() and more.
+- Add, search, extract and replace text in PDF files
+- Add/delete, extract and replace images
+- Insert, delete, split PDF pages
+- Set and get XMP metadata
+- Validate (PDF/A-1a, PDF/A-1b)
+- Work with bookmarks, annotations, PDF forms, stamps, watermarks and more.
 
 ## Conversion Features
 

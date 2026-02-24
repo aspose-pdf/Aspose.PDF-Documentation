@@ -64,6 +64,10 @@ def extract_text_from_stamp(infile, page_number, annotation_index, outfile):
 7. اطبع النص أو عالجه بأي طريقة أخرى.
 
 ```python
+
+import os
+import aspose.pdf as ap
+
 def extract_highlight_text(infile):
     """
     Extract text from highlight annotations.

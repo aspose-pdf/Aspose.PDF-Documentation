@@ -21,7 +21,7 @@ Abstract: يشرح هذا الدليل كيفية توقيع مستندات PDF 
     import aspose.pdf as ap
     import aspose.pydrawing as drawing
 
-    ppath_infile = self.data_dir + infile
+    path_infile = self.data_dir + infile
     path_outfile = self.data_dir + outfile
     path_pfxfile = self.data_dir + pfxfile
 
@@ -112,7 +112,7 @@ Abstract: يشرح هذا الدليل كيفية توقيع مستندات PDF 
             # Create any of the three signature types
             signature.sign(1, "Signature Reason", "Contact", "Location", True, rect, pkcs)
             # Save PDF document
-                signature.save(path_outfile)
+            signature.save(path_outfile)
 ```
 
 ## توقيع مستندات PDF باستخدام ECDSA
