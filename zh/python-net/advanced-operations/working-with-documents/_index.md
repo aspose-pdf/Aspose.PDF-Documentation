@@ -1,157 +1,31 @@
 ---
-title: 使用Python处理PDF文档
-linktitle: 处理文档
+title: 使用 Python 处理 PDF 文档
+linktitle: 文档处理
 type: docs
 weight: 10
 url: /zh/python-net/working-with-documents/
-description: 本文向您描述了使用Aspose.PDF for Python via .NET库可以对文档进行哪些操作。
-lastmod: "2023-04-12"
-sitemap:
-    changefreq: "weekly"
+description: 本文向您介绍了使用 Aspose.PDF for Python via .NET 库可以对文档进行的各种操作。
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 如何使用 Python 处理 PDF
+Abstract: PDF 文件是一种多功能文档，旨在跨不同软件和操作系统实现安全且高质量的交换。它们可以在各种设备上访问，包括电脑、平板和智能手机，并且可以包含图像、表格和交互式元素。虽然查看和打印 PDF 很简单，但编辑它们可能具有挑战性。**Aspose.PDF for Python Library** 提供了强大的 PDF 管理解决方案，使用户能够创建、格式化、操作、优化、合并和拆分 PDF 文档。关键功能包括创建简单的 PDF、设置文档属性、根据 PDF/A 标准进行验证、优化文件大小、合并多个 PDF、将页面拆分为单独的文件，以及添加带编号的标题。该库为在 Python 应用程序中处理复杂的 PDF 任务提供了广泛的工具包。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "使用Python通过.NET处理PDF文档",
-    "alternativeHeadline": "通过Python操作PDF文档",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf文档生成",
-    "keywords": "pdf, python, pdf documents",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-documents/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-documents/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "本文向您描述了使用Aspose.PDF for Python via .NET库可以对文档进行哪些操作。"
-}
-</script>
 
+PDF 文件旨在在安全且高质量的文档交换中使用，无论使用何种软件或操作系统查看。它们可以在许多设备和操作系统上打开和查看，包括电脑、平板和智能手机。如今，此类文档可能包含图像、表格、各种交互元素等。
 
-PDF 文件旨在安全、高质量地交换文档，无论使用何种软件或操作系统查看它们。它们可以在许多设备和操作系统上打开和查看，包括计算机、平板电脑和智能手机。如今，此类文档可能包含图像、表格、各种交互元素等。
-
-PDF 文档可以查看和打印，但不总是容易编辑。然而，**Aspose.PDF for Python Library** 将帮助您应对处理 PDF 时最困难的任务。
+PDF 文档可以查看和打印，但并不总是可以轻松编辑。然而，**Aspose.PDF for Python Library** 将帮助您应对处理 PDF 时的各种困难任务。
 
 您可以执行以下操作：
 
-- [创建 PDF 文档](/pdf/zh/python-net/create-pdf-document/) - 创建一个简单的 PDF 文档。
-- [格式化 PDF 文档](/pdf/zh/python-net/formatting-pdf-document/) - 创建文档，获取和设置文档属性，嵌入字体以及其他 PDF 文件操作。
+- [创建 PDF 文档](/pdf/python-net/create-pdf-document/) - 创建一个简单的 PDF 文档。
+- [格式化 PDF 文档](/pdf/python-net/formatting-pdf-document/) - 创建文档，获取和设置文档属性，嵌入字体以及对 PDF 文件的其他操作。
+- [操作 PDF 文档](/pdf/python-net/manipulate-pdf-document/) - 根据 PDF/A 标准验证 PDF 文档，处理目录（TOC），设置 PDF 到期日期等。
+- [优化 PDF](/pdf/python-net/optimize-pdf/) - 优化页面内容，优化文件大小，删除未使用的对象，压缩所有图像，以实现成功的文档优化。
+- [合并 PDF](/pdf/python-net/merge-pdf-documents/) - 使用 Python 将多个 PDF 文件合并为一个 PDF 文档。
+- [拆分 PDF](/pdf/python-net/split-document/) - 在您的 Python 应用程序中将 PDF 页面拆分为单独的 PDF 文件。
+- [使用标题](/pdf/python-net/working-with-headings/) - 您可以使用 Python 在 PDF 文档的标题中创建编号。
+- [使用 PDF 图层](/pdf/python-net/working-with-pdf-layers/) - 如何使用 Aspose.PDF for Python via .NET 库管理和操作 PDF 图层。
 
-- [操作 PDF 文档](/pdf/zh/python-net/manipulate-pdf-document/) - 验证 PDF 文档以符合 PDF A 标准，处理目录，设置 PDF 到期日期等。
-- [优化 PDF](/pdf/zh/python-net/optimize-pdf/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
-- [合并 PDF](/pdf/zh/python-net/merge-pdf-documents/) - 使用 Python 将多个 PDF 文件合并为一个 PDF 文档。
-- [拆分 PDF](/pdf/zh/python-net/split-document/) - 在您的 Python 应用程序中将 PDF 页面拆分为单独的 PDF 文件。
-- [处理标题](/pdf/zh/python-net/working-with-headings/) - 您可以使用 Python 在 PDF 文档的标题中创建编号。
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

@@ -4,183 +4,159 @@ linktitle: 添加图像
 type: docs
 weight: 10
 url: /zh/python-net/add-image-to-existing-pdf-file/
-description: 本节介绍如何使用 Python 库向现有 PDF 文件添加图像。
-lastmod: "2022-02-17"
+description: 本节描述如何使用 Python 库向现有 PDF 文件添加图像。
+lastmod: "2025-09-27"
+TechArticle: true
+AlternativeHeadline: 如何使用 Python 向 PDF 添加图像
+Abstract: 本文提供了使用 Python 结合 Aspose.PDF 库向现有 PDF 文件添加图像的指南。文中概述了两种实现方法。第一种方法使用 Aspose.PDF 的 `Document` 类，用户加载 PDF，指定页码，并使用 `Page` 类的 `add_image` 方法定位图像。随后使用 `save()` 方法保存文档。第二种方法利用 Aspose.PDF.Facades 命名空间下的 `PdfFileMend` 类，提供更简洁的接口。在此方法中调用 `add_image()` 将图像添加到指定页面和坐标，然后保存更新后的 PDF 并关闭 `PdfFileMend` 对象。文中提供了两种方法的代码片段以演示整个过程。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "使用 Python 向 PDF 添加图像",
-    "alternativeHeadline": "如何向 PDF 添加图像",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, 向 pdf 添加图像",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-image-to-existing-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-image-to-existing-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "本节介绍如何使用 Python 库向现有 PDF 文件添加图像。"
-}
-</script>
-
 
 ## 在现有 PDF 文件中添加图像
 
-以下代码片段展示了如何在 PDF 文件中添加图像。
+本示例演示如何使用 Aspose.PDF for Python via .NET 在 PDF 页面上的特定位置插入图像。
 
-1. 加载输入 PDF 文件。
-1. 指定将放置图片的页码。
-1. 要在页面上定义图像的位置，请调用 [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 类的 [add_image](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) 方法。
-1. 调用 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 类的 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法。
-
-```python
-
-    import aspose.pdf as ap
-
-    # 打开文档
-    document = ap.Document(input_file)
-
-    document.pages[1].add_image(image_file, ap.Rectangle(20, 730, 120, 830, True))
-
-    document.save(output_pdf)
-```
-
-## 在现有 PDF 文件中添加图像（简化方式）
-
-还有另一种替代的、更简单的方法来向 PDF 文件添加图像。
- 你可以使用 [PdfFileMend](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/) 类的 [AddImage](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法。[add_image()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) 方法需要添加的图像、需要添加图像的页码和坐标信息。之后，保存更新后的 PDF 文件，并使用 [close()](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffilemend/#methods) 方法关闭 PdfFileMend 对象。下面的代码片段展示了如何在现有的 PDF 文件中添加图像。
+1. 使用 'ap.Document' 加载 PDF 文档。
+1. 选择目标页面 '(document.pages[1]' - 第第一页。
+1. 使用 'page.add_image()' 放置图像：
+- 图像的文件路径。
+- 一个 'Rectangle' 对象，定义图像的坐标 (left=20, bottom=730, right=120, top=830)。
+1. 保存更新后的 PDF。
 
 ```python
 
     import aspose.pdf as ap
+    from io import FileIO
+    from os import path
 
-    # 打开文档
-    mender = ap.facades.PdfFileMend()
+    path_infile = path.join(self.data_dir, infile)
+    path_outfile = path.join(self.data_dir, "python", outfile)
 
-    # 创建 PdfFileMend 对象以添加文本
-    mender.bind_pdf(input_file)
-
-    # 在 PDF 文件中添加图像
-    mender.add_image(image_file, 1, 100.0, 600.0, 200.0, 700.0)
-
-    # 保存更改
-    mender.save(output_pdf)
-
-    # 关闭 PdfFileMend 对象
-    mender.close()
-
+    document = ap.Document(path_infile)
+    page = document.pages[1]
+    page.add_image(
+        path.join(self.data_dir, image_file),
+        ap.Rectangle(20, 730, 120, 830, True),
+    )
+    document.save(path_outfile)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "用于 Python 的 PDF 操作库",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## 使用操作符添加图像
+
+下面的代码片段展示了一种低层次的方法，通过手动操作 PDF 操作符而非高级助手方法向 PDF 页面添加图像。
+
+步骤：
+
+1. 创建一个新的空白 'Document'。
+1. 添加一页并设置其尺寸 (842 × 595 - 横向 A4)。
+1. 访问页面的图像资源 (page.resources.images)。
+1. 将图像文件加载到流中并添加到资源。
+- 该方法返回一个 'image_id'。
+- 从资源中检索新添加的图像对象。
+1. 定义一个保持图像纵横比的矩形：
+1. 构建操作符序列：
+- 'GSave()' - 保存当前图形状态。
+- 'ConcatenateMatrix(matrix)' - 应用变换（缩放并在页面上垂直居中图像）。
+- 'Do(image_id)' - 渲染图像。
+- 'GRestore()' - 恢复图形状态。
+1. 将操作符序列添加到 'page.contents'。
+1. 保存生成的 PDF。
+
+```python
+
+    import aspose.pdf as ap
+    from io import FileIO
+    from os import path
+
+    path_infile = path.join(self.data_dir, image_file)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = ap.Document()
+    page = document.pages.add()
+    page.set_page_size(842,595)
+
+    # Get page resources
+    resources_images = page.resources.images
+
+    # Add image to resources
+    image_stream = FileIO(path.join(self.data_dir, path_infile), "rb")
+    image_id = resources_images.add(image_stream)
+
+    x_image = list(resources_images)[-1]
+
+    rectangle = ap.Rectangle(
+        0,
+        0,
+        page.media_box.width,
+        (page.media_box.width * x_image.height) / x_image.width,
+        True,
+    )
+
+    # Create operator sequence for adding image
+    operators = []
+
+    # Save graphics state
+    operators.append(ap.operators.GSave())
+
+    # Set transformation matrix (position and size)
+    matrix = ap.Matrix(
+        rectangle.urx - rectangle.llx,
+        0,
+        0,
+        rectangle.ury - rectangle.lly,
+        rectangle.llx,
+        rectangle.llx + (page.media_box.height - rectangle.height) / 2,
+    )
+    operators.append(ap.operators.ConcatenateMatrix(matrix))
+
+    # Draw the image
+    operators.append(ap.operators.Do(image_id))
+
+    # Restore graphics state
+    operators.append(ap.operators.GRestore())
+
+    # Add operators to page contents
+    page.contents.add(operators)
+
+    document.save(path_outfile)
+```
+
+## 为图像添加备用文字
+
+本示例展示如何向 PDF 页面添加图像并分配备用文字（alt text），以满足无障碍合规性（例如 PDF/UA）。
+
+1. 创建一个新的 'Document' 并添加一页 (842 × 595, 横向 A4)。
+1. 使用 'page.add_image()' 并使用跨越整页的矩形，将图像放置在页面上。
+1. 访问页面的图像资源 ('page.resources.images')。
+1. 定义一段备用文字字符串（例如，'Alternative text for image'）。
+1. 从资源中检索第一个图像对象 ('x_image = resources_images[1]')。
+1. 使用 'try_set_alternative_text(alt_text, page)' 为图像分配备用文字。
+1. 保存生成的 PDF。
+
+```python
+
+    import aspose.pdf as ap
+    from io import FileIO
+    from os import path
+
+    path_image_file = path.join(self.data_dir, image_file)
+    path_outfile = path.join(self.data_dir, "python", outfile)
+
+    document = ap.Document()
+    page = document.pages.add()
+    page.set_page_size(842,595)
+
+    page.add_image(
+        path_image_file,
+        ap.Rectangle(0, 0, 842, 595, True),
+    )
+
+    resources_images = page.resources.images
+    alt_text = "Alternative text for image"
+    x_image = resources_images[1]
+    result = x_image.try_set_alternative_text(alt_text, page)
+
+    # If set is successful, then get the alternative text for the image
+    if (result):
+        print ("Text has been added successfuly")
+    document.save(path_outfile)
+```

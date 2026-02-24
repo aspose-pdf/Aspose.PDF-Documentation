@@ -4,90 +4,32 @@ linktitle: 高级操作
 type: docs
 weight: 90
 url: /zh/python-net/advanced-operations/
-description: Aspose.PDF for Python via .NET 可以执行简单而轻松的任务，也可以应对更复杂的目标。请查看下一节内容，适用于高级用户和开发人员。
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF for Python via .NET 能够执行简单易行的任务，并能够应对更复杂的需求。请查看下一节，适用于高级用户和开发者。
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Python 的高级操作章节
+Abstract: 高级操作章节提供了关于以编程方式处理现有 PDF 文件的全面指南，无论这些文件的来源如何，都可使用各种工具和技术。本章节在《基础操作》中讨论的基础技能之上，进一步探讨高级功能。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "通过 Python 进行 PDF 高级操作",
-    "alternativeHeadline": "使用高级功能通过 Python 操作 PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, pdf 高级操作, 创建 pdf, 删除 pdf, 操作 pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/advanced-operations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/advanced-operations/"
-    },
-    "dateModified": "2023-04-13",
-    "description": "Aspose.PDF 不仅可以执行简单而轻松的任务，也可以应对更复杂的目标。请查看下一节内容，适用于通过 .NET 使用 Python 的高级用户和开发人员。"
-}
-</script>
 
+**高级操作** 是一个关于如何以编程方式处理现有 PDF 文件的章节，无论这些文件是使用 Aspose.PDF（如在[基础操作](/pdf/python-net/basic-operations/)中讨论的）创建的，还是使用 Adobe Acrobat、Google Docs、Microsoft Office、Open Office 或其他任何 PDF 生成器创建的。
 
-**高级操作**是关于如何以编程方式处理现有 PDF 文件的部分，无论是使用 Aspose.PDF 创建的文档（如[基本操作](/pdf/zh/python-net/basic-operations/)中所述），还是使用 Adobe Acrobat、Google Docs、Microsoft Office、Open Office 或任何其他 PDF 制作工具创建的 PDF。
+您将学习不同的方法来：
 
-您将学习不同的方法：
-
-- [处理文档](/pdf/zh/python-net/working-with-documents/) - 压缩、拆分和合并文档，并对整个文档进行其他操作。
-- [处理页面](/pdf/zh/python-net/working-with-pages/) - 添加、移动或删除、裁剪页面，添加水印、印章等。
-- [处理图像](/pdf/zh/python-net/working-with-images/) - 从 PDF 文档中添加、提取或删除图像。
-- [附件](/pdf/zh/python-net/attachments/) - 您将学习如何使用 Python 以编程方式添加和删除 PDF 附件。
-- [导航与交互](/pdf/zh/python-net/navigation-and-interaction/) - 处理动作、书签、导航页面。
-- [注释](/pdf/zh/python-net/annotations/) - 注释允许用户在 PDF 页面上添加自定义内容。
- 你可以添加、删除和修改PDF文档中的注释。
-- [处理表格](/pdf/zh/python-net/working-with-tables/) - 在PDF中插入、装饰表格，提取表格数据。
-- [处理表单](/pdf/zh/python-net/working-with-forms/) - 处理交互式PDF文档，添加表单字段，提取数据。
-- [处理文本](/pdf/zh/python-net/working-with-text/) - 在PDF中添加、格式化、搜索和替换文本。
+- [文档操作](/pdf/python-net/working-with-documents/) - 压缩、拆分、合并文档，并对整个文档进行其他操作。
+- [页面操作](/pdf/python-net/working-with-pages/) - 添加、移动或删除、裁剪页面，添加水印、印章等。
+- [图像操作](/pdf/python-net/working-with-images/) - 在 PDF 文档中添加、提取或删除图像。
+- [附件](/pdf/python-net/attachments/) - 您将学习如何使用 Python 以编程方式向 PDF 添加和删除附件。
+- [导航与交互](/pdf/python-net/navigation-and-interaction/) - 处理操作、书签、页面导航。
+- [批注](/pdf/python-net/annotations/) - 批注允许用户在 PDF 页面上添加自定义内容。您可以添加、删除和修改 PDF 文档中的批注。
+- [表格操作](/pdf/python-net/working-with-tables/) - 在 PDF 中插入、装饰表格，提取表格数据。
+- [表单操作](/pdf/python-net/working-with-forms/) - 处理交互式 PDF 文档，添加表单字段，提取数据。
+- [文本操作](/pdf/python-net/working-with-text/) - 在 PDF 中添加、格式化、搜索和替换文本。
+- [比较 PDF 文档](/pdf/python-net/compare-pdf-documents/) - 可以比较 PDF 文档的内容。
+- [PDF 元数据](/pdf/python-net/pdf-file-metadata/) - 获取或设置文档的元数据，处理 XMP 数据。
+- [图形操作](/pdf/python-net/working-with-graphs/) - 在页面上操作形状。
+- [操作符操作](/pdf/python-net/working-with-operators/) - 在 PDF 中进行低层次操作。
+- [工件](/pdf/python-net/artifacts/) - 处理 PDF 中的水印和其他特殊对象。
+- [PDF 图层操作](/python-net/work-with-pdf-layers/) - 锁定图层，提取元素，扁平化并合并 PDF 图层.

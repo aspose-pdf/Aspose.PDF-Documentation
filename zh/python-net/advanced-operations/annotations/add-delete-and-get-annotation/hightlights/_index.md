@@ -1,103 +1,40 @@
 ---
-title: PDF 高亮注释使用 Python
+title: 使用 Python 的 PDF 高亮注释
 linktitle: 高亮注释
 type: docs
 weight: 20
 url: /zh/python-net/highlights-annotation/
-description: 标记注释以高亮、下划线、删除线或锯齿下划线的形式呈现在文档的文本中。
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: 了解如何使用 Aspose.PDF 在 Python 中为 PDF 文件添加高亮注释，以突出文本。
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 关于如何在 PDF 中操作高亮注释的指南
+Abstract: 本文提供了关于如何在 PDF 文档中使用文本标记注释的全面指南，重点关注 Aspose.PDF 库在 Python 中提供的功能。它解释了不同类型注释的目的和用法，包括高亮、下划线、删除线和波浪线注释，每种注释均用于以不同方式强调或修改文本。文档概述了将这些注释添加到 PDF 的步骤，包括加载文档、使用特定参数（如标题和颜色）创建注释，并将其附加到所需页面。此外，本文还包含了从 PDF 检索注释的代码片段，允许用户根据类型过滤并打印注释详情。最后，详细说明了删除注释的过程，提供了从文档中移除每种文本标记注释的代码示例。本指南是面向希望使用 Python 以编程方式操作 PDF 文件中文本注释的开发者的实用资源。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF 高亮注释使用 Python",
-    "alternativeHeadline": "如何在 PDF 中添加高亮注释",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, 高亮注释, 文本标记注释",
-    "wordcount": "302",
-    "proficiencyLevel":"初级",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/highlights-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/highlights-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "标记注释以高亮、下划线、删除线或锯齿下划线的形式呈现在文档的文本中。"
-}
-</script>
 
+PDF 中的文本标记注释用于高亮、下划线、删除或添加注释到文档中的文本。这些注释旨在突出或引起对文本特定部分的注意。此类注释允许用户以可视方式标记或修改 PDF 文件的内容。
 
-文本标记注释在PDF中用于突出显示、下划线、跳过或在文档中添加文本注释。这些注释旨在突出或引起对文本特定部分的注意。这样的注释允许用户以视觉方式标记或修改PDF文件的内容。
+高亮注释用于使用彩色背景（通常为黄色）标记文本，以指示其重要性或相关性。
 
-高亮注释用于用彩色背景（通常为黄色）标记文本，以指示其重要性或相关性。
+下划线注释是一条放置在所选文本下方的线，用于表示重要性、强调或建议的编辑。
 
-下划线注释是在选定文本下方放置的一条线，以表示重要性、强调或建议的编辑。
+删除线注释对特定文本进行划除，以显示该文本已被删除、替换或不再有效。
 
-删除线注释包括对特定文本的删除线或删除线，以表明它已被删除、替换或不再有效。
-
-波浪线用于在文本下划线以指示不同类型的重音，例如拼写错误、潜在问题或建议的更改。
+波浪线用于在文本下方划线，以表示不同类型的强调，例如拼写错误、潜在问题或建议的更改。
 
 ## 添加文本标记注释
 
-为了向PDF文档添加文本标记注释，我们需要执行以下操作：
+为了向 PDF 文档添加文本标记注释，我们需要执行以下操作：
 
-1. 加载 PDF 文件 - 新的 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象。
+1. 加载 PDF 文件 - 新的 [文档](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象。
 1. 创建注释：
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) 并设置参数（标题，颜色）。
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) 并设置参数（标题，颜色）。
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) 并设置参数（标题，颜色）。
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) 并设置参数（标题，颜色）。
-1. 然后我们应该将所有注释添加到页面中。
+- [高亮注释](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) 并设置参数（标题，颜色）。
+- [删除线注释](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) 并设置参数（标题，颜色）。
+- [波浪线注释](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) 并设置参数（标题，颜色）。
+- [下划线注释](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) 并设置参数（标题，颜色）。
+1. 然后我们应将所有注释添加到页面。
 
 ### 添加高亮注释
 
@@ -105,17 +42,16 @@ sitemap:
 
     import aspose.pdf as ap
 
-    # 打开文档
+    # Open document
     document = ap.Document(input_file)
 
-    # 创建圆形注释
+    # Create Circle Annotation
     highlightAnnotation = ap.annotations.HighlightAnnotation(
         document.pages[1], ap.Rectangle(300, 750, 320, 770, True)
     )
     document.pages[1].annotations.append(highlightAnnotation)
     document.save(output_file)
 ```
-
 
 ### 添加删除线注释
 
@@ -128,8 +64,8 @@ sitemap:
     strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    strikeoutAnnotation.title = "Aspose 用户"
-    strikeoutAnnotation.subject = "插入文本 1"
+    strikeoutAnnotation.title = "Aspose User"
+    strikeoutAnnotation.subject = "Inserted text 1"
     strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     strikeoutAnnotation.color = ap.Color.blue
 
@@ -165,8 +101,8 @@ sitemap:
     underlineAnnotation = ap.annotations.UnderlineAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    underlineAnnotation.title = "Aspose 用户"
-    underlineAnnotation.subject = "插入下划线 1"
+    underlineAnnotation.title = "Aspose User"
+    underlineAnnotation.subject = "Inserted Underline 1"
     underlineAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     underlineAnnotation.color = ap.Color.blue
 
@@ -174,12 +110,11 @@ sitemap:
     document.save(output_file)
 ```
 
+## 获取文本标记注释
 
-## 获取文本标注
+请尝试使用以下代码片段从 PDF 文档获取文本标记注释。
 
-请尝试使用以下代码片段从 PDF 文档中获取文本标注。
-
-### 获取高亮标注
+### 获取高亮注释
 
 ```python
 
@@ -196,7 +131,7 @@ sitemap:
         print(ha.rect)
 ```
 
-### 获取删除线标注
+### 获取删除线注释
 
 ```python
 
@@ -213,7 +148,8 @@ sitemap:
         print(pa.rect)
 ```
 
-### 获取波浪线标注
+
+### 获取波浪线注释
 
 ```python
 
@@ -229,7 +165,6 @@ sitemap:
     for pa in squigglyAnnotations:
         print(pa.rect)
 ```
-
 
 ### 获取下划线注释
 
@@ -250,7 +185,7 @@ sitemap:
 
 ## 删除文本标记注释
 
-以下代码片段演示了如何从PDF文件中删除文本标记注释。
+以下代码片段展示了如何从 PDF 文件中删除文本标记注释。
 
 ### 删除高亮注释
 
@@ -258,7 +193,7 @@ sitemap:
 
     import aspose.pdf as ap
 
-    # 加载PDF文件
+    # Load the PDF file
     document = ap.Document(input_file)
     highlightAnnotations = [
         a
@@ -290,7 +225,6 @@ sitemap:
 
     document.save(output_file)
 ```
-
 
 ### 删除波浪线注释
 
@@ -328,3 +262,7 @@ sitemap:
         document.pages[1].annotations.delete(ta)
 
     document.save(output_file)
+```
+
+
+
