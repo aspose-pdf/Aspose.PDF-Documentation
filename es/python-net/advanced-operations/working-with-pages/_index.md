@@ -1,164 +1,35 @@
 ---
-title: Trabajando con Páginas PDF en Python
-linktitle: Trabajando con Páginas
+title: Trabajando con páginas PDF en Python
+linktitle: Trabajando con páginas
 type: docs
 weight: 20
 url: /es/python-net/working-with-pages/
-description: Cómo agregar páginas, agregar encabezados y pies de página, agregar marcas de agua lo puedes conocer en esta sección. Aspose.PDF para Python a través de .NET te explica todos los detalles sobre este tema.
-lastmod: "2023-04-19"
-sitemap:
-    changefreq: "weekly"
+description: Cómo manipular páginas en documentos PDF de forma programática usando la biblioteca Aspose.PDF for Python via .NET.
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cómo trabajar con páginas en PDF usando Python
+Abstract: Aspose.PDF for Python via .NET proporciona herramientas integrales para manipular archivos PDF de forma programática sin necesidad de Acrobat Reader. La biblioteca permite a los usuarios insertar páginas en cualquier ubicación dentro de un documento PDF, añadir páginas al final de un archivo y eliminar páginas según sea necesario. Los usuarios pueden mejorar sus documentos añadiendo texto o imágenes a encabezados y pies de página y aplicando marcas de agua mediante la clase Artifact. Otras funciones incluyen cambiar el tamaño de las páginas, rotar la orientación de las páginas, dividir documentos, mover páginas entre archivos y recortar páginas con propiedades especificadas. La biblioteca también admite agregar números de página a través de la clase PageNumberStamp y crear imágenes de fondo usando marcas de agua. Las capacidades de estampado se proporcionan mediante las clases ImageStamp y TextStamp, lo que permite la adición de sellos de imagen y texto. Además, los usuarios pueden acceder y modificar las propiedades de las páginas PDF, como el color y otros atributos, garantizando una personalización detallada de los documentos PDF. La biblioteca ofrece una interfaz fácil de usar y una documentación exhaustiva para cada función, facilitando la integración y utilización dentro de Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Trabajando con Páginas PDF en Python",
-    "alternativeHeadline": "Cómo trabajar con Páginas PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, página pdf, agregar página pdf, agregar número de página, rotar página, eliminar página",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-pages/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Cómo agregar páginas, agregar encabezados y pies de página, agregar marcas de agua lo puedes conocer en esta sección. Aspose.PDF para Python a través de .NET te explica todos los detalles sobre este tema."
-}
-</script>
 
+**Aspose.PDF for Python via .NET** le permite insertar una página en un documento PDF en cualquier ubicación del archivo, así como añadir páginas al final de un archivo PDF. Esta sección muestra cómo añadir páginas a un PDF sin Acrobat Reader.
+Puede agregar texto o imágenes en los encabezados y pies de página de su archivo PDF, y elegir diferentes encabezados en su documento con la biblioteca Python de Aspose.
+Además, intente recortar páginas en un documento PDF de forma programática usando Python.
 
-**Aspose.PDF para Python a través de .NET** te permite insertar una página en un documento PDF en cualquier ubicación del archivo, así como agregar páginas al final de un archivo PDF. Esta sección muestra cómo añadir páginas a un PDF sin Acrobat Reader. Puedes agregar texto o imágenes en los encabezados y pies de página de tu archivo PDF, y elegir diferentes encabezados en tu documento con la biblioteca de Python de Aspose. También, intenta recortar páginas en un documento PDF de manera programática usando Python.
+Esta sección le enseña cómo agregar marcas de agua en su archivo PDF usando la clase Artifact. Revisará el ejemplo de programación para esta tarea.
+Agregar número de página usando la clase [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/). Para agregar un sello en su documento use las clases [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) y [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/). Use agregar una marca de agua para crear imágenes de fondo en su archivo PDF con **Aspose.PDF for Python via .NET**.
 
-Esta sección te enseña cómo agregar marcas de agua en tu archivo PDF usando la clase Artifact. Revisarás el ejemplo de programación para esta tarea. Agrega número de página usando la clase [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/). Para agregar un sello en tu documento usa las clases [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) y [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/). Usa la adición de una marca de agua para crear imágenes de fondo en tu archivo PDF con **Aspose.PDF para Python a través de .NET**.
+Puede hacer lo siguiente:
 
-
-You are able to do the following:
-
-- [Add Pages](/pdf/es/python-net/add-pages/) - agregar páginas en la ubicación deseada o al final de un archivo PDF y eliminar una página de su documento.
-- [Move Pages](/pdf/es/python-net/move-pages/) - mover páginas de un documento a otro.
-- [Delete Pages](/pdf/es/python-net/delete-pages/) - eliminar página de su archivo PDF utilizando la colección PageCollection.
-- [Change Page size](/pdf/es/python-net/change-page-size/) - puede cambiar el tamaño de página del PDF con un fragmento de código utilizando la biblioteca Aspose.PDF.
-- [Rotate Pages](/pdf/es/python-net/rotate-pages/) - puede cambiar la orientación de las páginas en un archivo PDF existente.
-- [Split Pages](/pdf/es/python-net/split-document/) - puede dividir archivos PDF en uno o varios PDF.
-- [Add Headers and/or Footers](/pdf/es/python-net/add-headers-and-footers-of-pdf-file/) - agregar texto o imágenes en los encabezados y pies de página de su archivo PDF.
-- [Crop Pages](/pdf/es/python-net/crop-pages/) - puede recortar páginas en un documento PDF programáticamente con diferentes propiedades de página.
-
-- [Add Watermarks](/pdf/es/python-net/add-watermarks/) - agregar marcas de agua en su archivo PDF con la Clase Artifact.
-- [Agregar Numeración de Páginas en Archivo PDF](/pdf/es/python-net/add-page-number/) - La clase PageNumberStamp te ayudará a agregar un número de página en tu archivo PDF.
-- [Agregar Fondos](/pdf/es/python-net/add-backgrounds/) - se pueden usar imágenes de fondo para agregar una marca de agua.
-- [Sellado](/pdf/es/python-net/stamping/) - puedes usar la clase ImageStamp para agregar un sello de imagen a un archivo PDF y la clase TextStamp para agregar un texto.
-- [Obtener y Establecer Propiedades de Página](/pdf/es/python-net/get-and-set-page-properties/) - esta sección muestra cómo obtener el número de páginas en un archivo PDF, obtener información sobre las propiedades de la página PDF como el color y establecer propiedades de página.
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulación de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+- [Adding Pages](/pdf/python-net/add-pages/) - agregue páginas en la ubicación deseada o al final de un archivo PDF y elimine una página de su documento.
+- [Moving Pages](/pdf/python-net/move-pages/) - mueva páginas de un documento a otro.
+- [Deleting Pages](/pdf/python-net/delete-pages/) - elimine páginas de su archivo PDF usando la colección PageCollection.
+- [Extracting Pages](/pdf/python-net/extract-pages/) - extraiga páginas de su archivo PDF usando Aspose.PDF for Python.
+- [Rotating Pages](/pdf/python-net/rotate-pages/) - puede cambiar la orientación de las páginas en un archivo PDF existente.
+- [Changing Page Size](/pdf/python-net/change-page-size/) - cambie el tamaño de página de su documento PDF.
+- [Adding Headers and Footers](/pdf/python-net/add-headers-and-footers-of-pdf-file/) - agregue texto o imágenes en los encabezados y pies de página de su archivo PDF.
+- [Cropping PDF Pages](/pdf/python-net/crop-pages/) - puede recortar páginas en un documento PDF de forma programática con diferentes propiedades de página.
+- [Getting and Setting Page Properties](/pdf/python-net/get-and-set-page-properties/) - acceda y modifique varias propiedades de las páginas PDF, como tamaño, rotación y atributos de color.
+- [Stamping](/pdf/python-net/stamping/) - agregue sellos de imagen, sellos de página, sellos de número de página y sellos de texto a una página PDF mediante Python.
