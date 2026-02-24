@@ -4,118 +4,54 @@ linktitle: Anotasi Sorotan
 type: docs
 weight: 20
 url: /id/python-net/highlights-annotation/
-description: Anotasi Markup disajikan dalam teks sebagai sorotan, garis bawah, coretan, atau garis bawah bergerigi dalam teks dokumen.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Pelajari cara menambahkan anotasi sorotan ke file PDF dalam Python menggunakan Aspose.PDF untuk penekanan teks.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Panduan tentang cara memanipulasi anotasi Sorotan dalam PDF
+Abstract: Artikel ini memberikan panduan komprehensif tentang cara menggunakan anotasi markup teks dalam dokumen PDF, dengan fokus pada fungsionalitas yang disediakan oleh pustaka Aspose.PDF di Python. Artikel ini menjelaskan tujuan dan penggunaan berbagai jenis anotasi, termasuk anotasi sorotan, garis bawah, coret, dan bergelombang, masing‑masing dirancang untuk menekankan atau memodifikasi teks dengan berbagai cara. Dokumen ini merinci langkah‑langkah yang diperlukan untuk menambahkan anotasi tersebut ke PDF, termasuk memuat dokumen, membuat anotasi dengan parameter spesifik seperti judul dan warna, serta menambahkannya ke halaman yang diinginkan. Selain itu, artikel ini menyertakan potongan kode untuk mengambil anotasi dari PDF, memungkinkan pengguna menyaring dan mencetak detail anotasi berdasarkan tipe. Akhirnya, artikel ini menjelaskan proses menghapus anotasi, memberikan contoh kode untuk menghapus setiap jenis anotasi markup teks dari dokumen. Panduan ini berfungsi sebagai sumber praktis bagi pengembang yang ingin memanipulasi anotasi teks dalam file PDF secara programatik menggunakan Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Anotasi Sorotan PDF menggunakan Python",
-    "alternativeHeadline": "Cara menambahkan Anotasi Sorotan dalam PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, anotasi sorotan, anotasi markup teks",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/highlights-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/highlights-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Anotasi Markup disajikan dalam teks sebagai sorotan, garis bawah, coretan, atau garis bawah bergerigi dalam teks dokumen."
-}
-</script>
 
+Anotasi Markup Teks dalam PDF digunakan untuk menyorot, memberi garis bawah, melewati, atau menambahkan catatan pada teks dalam dokumen. Anotasi ini dimaksudkan untuk menyorot atau menarik perhatian pada bagian tertentu dari teks. Anotasi tersebut memungkinkan pengguna secara visual menandai atau memodifikasi konten file PDF.
 
-Text Markup Annotations dalam PDF digunakan untuk menyoroti, menggarisbawahi, melewati, atau menambahkan catatan ke teks dalam dokumen. Anotasi ini dimaksudkan untuk menyoroti atau menarik perhatian pada bagian-bagian tertentu dari teks. Anotasi semacam itu memungkinkan pengguna untuk menandai atau memodifikasi konten file PDF secara visual.
+Anotasi sorotan digunakan untuk menandai teks dengan latar belakang berwarna, biasanya kuning, untuk menunjukkan pentingnya atau relevansinya.
 
-Anotasi sorotan digunakan untuk menandai teks dengan latar belakang berwarna, biasanya kuning, untuk menunjukkan kepentingan atau relevansinya.
+Anotasi garis bawah adalah garis yang ditempatkan di bawah teks yang dipilih untuk menunjukkan pentingnya, penekanan, atau mengindikasikan saran edit.
 
-Anotasi garis bawah adalah garis yang ditempatkan di bawah teks yang dipilih untuk menunjukkan kepentingan, penekanan, atau menunjukkan saran pengeditan.
+Anotasi coret termasuk mencoret atau menandai teks tertentu untuk menunjukkan bahwa teks tersebut telah dihapus, diganti, atau tidak lagi berlaku.
 
-Anotasi coretan mencakup penghapusan atau pencoretan pada teks tertentu untuk menunjukkan bahwa teks tersebut telah dihapus, diganti, atau tidak lagi valid.
+Garis bergelombang digunakan untuk memberi garis bawah pada teks guna menunjukkan jenis aksen yang berbeda, seperti kesalahan ejaan, potensi masalah, atau perubahan yang diusulkan.
 
-Garis bergelombang digunakan untuk menggarisbawahi teks untuk menunjukkan jenis aksen yang berbeda, seperti kesalahan ejaan, potensi masalah, atau perubahan yang diusulkan.
+## Tambahkan Anotasi Markup Teks
 
-## Menambahkan Anotasi Penandaan Teks
-
-Untuk menambahkan Anotasi Penandaan Teks ke dokumen PDF, kita perlu melakukan tindakan berikut:
+Untuk menambahkan Anotasi Markup Teks ke dokumen PDF, kita perlu melakukan tindakan berikut:
 
 1. Muat file PDF - objek [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) baru.
 1. Buat anotasi:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) dan tetapkan parameter (judul, warna).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) dan tetapkan parameter (judul, warna).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) dan tetapkan parameter (judul, warna).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) dan tetapkan parameter (judul, warna).
-1. Setelah itu kita harus menambahkan semua anotasi ke halaman.
+- [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) dan atur parameter (judul, warna).
+- [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) dan atur parameter (judul, warna).
+- [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) dan atur parameter (judul, warna).
+- [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) dan atur parameter (judul, warna).
+1. Setelah itu, kita harus menambahkan semua anotasi ke halaman.
 
-### Tambahkan Highlight Annotation
+### Tambahkan Anotasi Sorotan
 
 ```python
 
     import aspose.pdf as ap
 
-    # Buka dokumen
+    # Open document
     document = ap.Document(input_file)
 
-    # Buat Circle Annotation
+    # Create Circle Annotation
     highlightAnnotation = ap.annotations.HighlightAnnotation(
         document.pages[1], ap.Rectangle(300, 750, 320, 770, True)
     )
     document.pages[1].annotations.append(highlightAnnotation)
     document.save(output_file)
 ```
-
 
 ### Tambahkan Anotasi Coret
 
@@ -128,8 +64,8 @@ Untuk menambahkan Anotasi Penandaan Teks ke dokumen PDF, kita perlu melakukan ti
     strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    strikeoutAnnotation.title = "Pengguna Aspose"
-    strikeoutAnnotation.subject = "Teks yang disisipkan 1"
+    strikeoutAnnotation.title = "Aspose User"
+    strikeoutAnnotation.subject = "Inserted text 1"
     strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     strikeoutAnnotation.color = ap.Color.blue
 
@@ -165,8 +101,8 @@ Untuk menambahkan Anotasi Penandaan Teks ke dokumen PDF, kita perlu melakukan ti
     underlineAnnotation = ap.annotations.UnderlineAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    underlineAnnotation.title = "Pengguna Aspose"
-    underlineAnnotation.subject = "Garis Bawah yang Disisipkan 1"
+    underlineAnnotation.title = "Aspose User"
+    underlineAnnotation.subject = "Inserted Underline 1"
     underlineAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     underlineAnnotation.color = ap.Color.blue
 
@@ -174,10 +110,9 @@ Untuk menambahkan Anotasi Penandaan Teks ke dokumen PDF, kita perlu melakukan ti
     document.save(output_file)
 ```
 
+## Dapatkan Anotasi Markup Teks
 
-## Dapatkan Anotasi Penanda Teks
-
-Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Penanda Teks dari dokumen PDF.
+Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Markup Teks dari dokumen PDF.
 
 ### Dapatkan Anotasi Sorotan
 
@@ -196,7 +131,7 @@ Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Penanda Tek
         print(ha.rect)
 ```
 
-### Dapatkan Anotasi Coretan
+### Dapatkan Anotasi Coret
 
 ```python
 
@@ -213,7 +148,8 @@ Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Penanda Tek
         print(pa.rect)
 ```
 
-### Dapatkan Anotasi Berombak
+
+### Dapatkan Anotasi Bergelombang
 
 ```python
 
@@ -229,7 +165,6 @@ Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Penanda Tek
     for pa in squigglyAnnotations:
         print(pa.rect)
 ```
-
 
 ### Dapatkan Anotasi Garis Bawah
 
@@ -248,9 +183,9 @@ Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Penanda Tek
         print(ta.rect)
 ```
 
-## Hapus Anotasi Tanda Teks
+## Hapus Anotasi Markup Teks
 
-Cuplikan kode berikut menunjukkan cara menghapus Anotasi Tanda Teks dari file PDF.
+Potongan kode berikut menunjukkan cara Menghapus Anotasi Markup Teks dari file PDF.
 
 ### Hapus Anotasi Sorotan
 
@@ -258,7 +193,7 @@ Cuplikan kode berikut menunjukkan cara menghapus Anotasi Tanda Teks dari file PD
 
     import aspose.pdf as ap
 
-    # Muat file PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     highlightAnnotations = [
         a
@@ -272,7 +207,7 @@ Cuplikan kode berikut menunjukkan cara menghapus Anotasi Tanda Teks dari file PD
     document.save(output_file)
 ```
 
-### Hapus Anotasi Coretan
+### Hapus Anotasi Coret
 
 ```python
 
@@ -290,7 +225,6 @@ Cuplikan kode berikut menunjukkan cara menghapus Anotasi Tanda Teks dari file PD
 
     document.save(output_file)
 ```
-
 
 ### Hapus Anotasi Bergelombang
 
@@ -331,66 +265,4 @@ Cuplikan kode berikut menunjukkan cara menghapus Anotasi Tanda Teks dari file PD
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

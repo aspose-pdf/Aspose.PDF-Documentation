@@ -1,133 +1,110 @@
 ---
-title: Tambahkan Halaman dalam PDF dengan Python
-linktitle: Tambahkan Halaman
+title: Menambahkan Halaman dalam PDF dengan Python
+linktitle: Menambahkan Halaman
 type: docs
 weight: 10
 url: /id/python-net/add-pages/
-description: Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghilangkan) halaman dari file PDF menggunakan C#.
-lastmod: "2022-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Temukan cara menambahkan halaman ke dokumen PDF dalam Python menggunakan Aspose.PDF untuk pembuatan dan pengeditan dokumen yang fleksibel.
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara menambahkan Halaman dalam PDF menggunakan Python
+Abstract: Artikel ini menyediakan panduan tentang penggunaan Aspose.PDF untuk Python via .NET API untuk memanipulasi halaman dalam dokumen PDF. Artikel ini menekankan fleksibilitas yang ditawarkan oleh API, terutama melalui kelas `PageCollection`, yang mengelola semua halaman dalam sebuah PDF. Dokumen ini merinci prosedur untuk menambahkan atau menyisipkan halaman pada lokasi tertentu dalam file PDF. Dijelaskan dua operasi utama - menyisipkan halaman kosong pada lokasi yang diinginkan dalam dokumen dan menambahkan halaman kosong di akhir dokumen. Untuk kedua operasi, proses melibatkan pembuatan objek `Document`, menggunakan metode `insert` atau `add` dari `PageCollection`, dan menyimpan dokumen yang dimodifikasi. Artikel ini menyertakan cuplikan kode yang menunjukkan tugas-tugas ini, memperlihatkan betapa mudahnya memanipulasi dokumen PDF menggunakan Python dengan API ini.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Tambahkan Halaman dalam PDF dengan Python",
-    "alternativeHeadline": "Cara menambahkan Halaman dalam dokumen PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, tambahkan halaman pdf, sisipkan halaman pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-pages/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghilangkan) halaman dari file PDF menggunakan Python."
-}
-</script>
 
+Aspose.PDF untuk Python via .NET API menyediakan fleksibilitas penuh untuk bekerja dengan halaman dalam dokumen PDF menggunakan Python. API ini menyimpan semua halaman dokumen PDF dalam [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) yang dapat digunakan untuk bekerja dengan halaman PDF.
+Aspose.PDF untuk Python via .NET memungkinkan Anda menyisipkan halaman ke sebuah [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) di lokasi manapun dalam file serta menambahkan halaman ke akhir file PDF. Bagian ini menunjukkan cara menambahkan halaman ke PDF menggunakan Python.
 
-Aspose.PDF untuk Python melalui .NET API menyediakan fleksibilitas penuh untuk bekerja dengan halaman dalam dokumen PDF menggunakan Python. Ini memelihara semua halaman dari dokumen PDF dalam [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) yang dapat digunakan untuk bekerja dengan halaman PDF. Aspose.PDF untuk Python melalui .NET memungkinkan Anda menyisipkan halaman ke dalam dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF. Bagian ini menunjukkan cara menambahkan halaman ke PDF menggunakan Python.
+## Menambahkan atau Menyisipkan Halaman dalam File PDF
 
-## Menambah atau Menyisipkan Halaman dalam File PDF
+Aspose.PDF untuk Python via .NET memungkinkan Anda menyisipkan halaman ke sebuah [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) di lokasi manapun dalam file serta menambahkan halaman ke akhir file PDF.
 
-Aspose.PDF untuk Python melalui .NET memungkinkan Anda menyisipkan halaman ke dalam dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF.
-
-### Menyisipkan Halaman Kosong dalam File PDF di Lokasi yang Diinginkan
+### Menyisipkan Halaman Kosong dalam File PDF
 
 Untuk menyisipkan halaman kosong dalam file PDF:
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) dengan file PDF masukan.
+1. Buka sebuah [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) yang ada menggunakan metode yang tepat.
+1. Sisipkan halaman kosong baru pada indeks tertentu menggunakan metode `insert()` pada [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Simpan [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) yang telah dimodifikasi ke jalur output yang diinginkan.
 
-1. Panggil metode [insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) dari koleksi [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) dengan indeks yang ditentukan.
-1. Simpan PDF keluaran menggunakan metode [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-
-Cuplikan kode berikut menunjukkan cara menyisipkan halaman dalam file PDF.
+Sisipkan halaman kosong ke dalam file PDF yang ada pada posisi yang ditentukan:
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Buka dokumen
-    document = ap.Document(input_pdf)
-    # Sisipkan halaman kosong dalam PDF
+# Global configuration
+DATA_DIR = "your path here"
+
+def insert_empty_page(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
     document.pages.insert(2)
-    # Simpan file keluaran
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
-### Tambahkan Halaman Kosong di Akhir File PDF
+### Menambahkan Halaman Kosong di Akhir File PDF
 
 Terkadang, Anda ingin memastikan bahwa dokumen berakhir pada halaman kosong. Topik ini menjelaskan cara menyisipkan halaman kosong di akhir dokumen PDF.
 
 Untuk menyisipkan halaman kosong di akhir file PDF:
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) dengan file PDF masukan.
+1. Buka sebuah [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) yang ada menggunakan metode yang tepat.
+1. Tambahkan halaman kosong baru ke akhir dokumen menggunakan metode `add()` pada [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Simpan [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) yang telah diperbarui.
 
-1. Panggil metode [add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods) dari koleksi [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) tanpa parameter apapun.
-1. Simpan PDF keluaran menggunakan metode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
-
-Cuplikan kode berikut menunjukkan kepada Anda bagaimana cara memasukkan halaman kosong di akhir file PDF.
+Cuplikan kode berikut menunjukkan cara menyisipkan halaman kosong di akhir file PDF.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Buka dokumen
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Masukkan halaman kosong di akhir file PDF
+def add_empty_page_to_end(input_file_name, output_file_name):
+    # Open document
+    document = ap.Document(input_file_name)
+
+    # Insert an empty page at the end of a PDF file
     document.pages.add()
 
-    # Simpan file keluaran
-    document.save(output_pdf)
+    # Save output file
+    document.save(output_file_name)
+```
+
+### Menambahkan Halaman dari Dokumen PDF Lain
+
+Dengan pustaka Aspose.PDF untuk Python, Anda membuat sebuah [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) baru, menambahkan halaman awal, dan kemudian mengimpor halaman dari PDF lain ke dalamnya.
+
+1. Buat sebuah [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) baru.
+1. Tambahkan sebuah [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) kosong baru dan tuliskan beberapa teks di atasnya menggunakan [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/).
+1. Buka sebuah [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) lain yang ada.
+1. Salin sebuah [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) dari dokumen tersebut.
+1. Tempelkan halaman yang disalin ke dokumen utama Anda menggunakan [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/).
+1. Simpan file yang digabungkan.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_page_from_another_document(input_file_name, output_file_name):
+    # Open document
+    document = ap.Document()
+    page = document.pages.add()
+    text_fragment = ap.text.TextFragment("This is first page!")
+    page.paragraphs.add(text_fragment)
+
+    another_document = ap.Document(input_file_name)
+    document.pages.add(another_document.pages[1])
+
+    # Save output file
+    document.save(output_file_name)
+```
