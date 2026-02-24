@@ -85,7 +85,7 @@ def extract_paragraphs_from_pdf(infile, outfile):
         absorber = ap.text.ParagraphAbsorber()
         absorber.visit(document)
 
-        with open(outfile, "w", encoding="utf‑8") as tw:
+        with open(outfile, "w", encoding="utf-8") as tw:
             for page_markup in absorber.page_markups:
                 for sec_idx, section in enumerate(page_markup.sections, start=1):
                     for para_idx, paragraph in enumerate(section.paragraphs, start=1):
@@ -136,7 +136,7 @@ def extract_paragraphs_with_geometry(infile, outfile):
         absorber.visit(document.pages[1])  # Visit page 2 (pages are 1-indexed)
 
         page_markup = absorber.page_markups[0]
-        with open(outfile, "w", encoding="utf‑8") as tw:
+        with open(outfile, "w", encoding="utf-8") as tw:
             for sec_idx, section in enumerate(page_markup.sections, start=1):
                 tw.write(f"Section {sec_idx}: rectangle = {section.rectangle}\n")
                 for para_idx, paragraph in enumerate(section.paragraphs, start=1):
