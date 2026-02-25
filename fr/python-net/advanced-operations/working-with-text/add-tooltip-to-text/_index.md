@@ -1,295 +1,226 @@
 ---
-title: PDF Tooltip en utilisant Python
-linktitle: PDF Tooltip
+title: Création d'infobulles dans le texte
+linktitle: Infobulle PDF
 type: docs
 weight: 20
 url: /fr/python-net/pdf-tooltip/
-description: Apprenez à ajouter une info-bulle au fragment de texte dans un PDF en utilisant Python et Aspose.PDF
-lastmod: "2024-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Apprenez comment ajouter une infobulle au fragment de texte dans un PDF en utilisant Python et Aspose.PDF
+lastmod: "2025-11-13"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Ajouter une infobulle au fragment de texte dans un PDF en utilisant Python
+Abstract: Cet article fournit deux exemples de code Python pour améliorer l'interactivité dans les documents PDF à l'aide de la bibliothèque Aspose.PDF. Le premier exemple montre comment ajouter des infobulles à des fragments de texte spécifiques dans un PDF en créant des éléments invisibles ButtonField au-dessus du texte et en définissant la propriété `alternate_name` comme infobulle. Le deuxième exemple montre comment créer des blocs de texte flottants qui deviennent visibles au survol lorsqu'un `TextFragment` est situé, un `TextBoxField` caché est créé à sa position, et des événements `HideAction` sont attachés à un `ButtonField` invisible pour afficher ou masquer le bloc flottant.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PDF Tooltip en utilisant Python",
-    "alternativeHeadline": "Ajouter une info-bulle PDF au texte",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de document pdf",
-    "keywords": "pdf, python, ajouter info-bulle pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vente",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vente",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vente",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/pdf-tooltip/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/pdf-tooltip/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "Apprenez à ajouter une info-bulle au fragment de texte dans un PDF en utilisant Python et Aspose.PDF"
-}
-</script>
 
+## Ajouter une infobulle au texte recherché dans un PDF
 
-## Ajouter une Info-bulle au Texte Recherché en ajoutant un Bouton Invisible
+Cet extrait de code montre comment superposer des éléments invisibles [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) sur des objets [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) spécifiques dans un PDF afin d'afficher des infobulles lorsque l'utilisateur survole ces éléments. Il prend en charge à la fois les messages d'infobulle courts et longs en utilisant la propriété `alternate_name` de `ButtonField`.
 
-Ce code montre comment ajouter des info-bulles à des fragments de texte spécifiques dans un document PDF en utilisant Aspose.PDF. Les info-bulles s'affichent lorsque le curseur de la souris survole le texte correspondant.
-
-Le code suivant vous montrera comment réaliser cette fonctionnalité :
+1. Créez un nouveau [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Enregistrez le document initial.
+1. Rouvrez le document PDF.
+1. Recherchez le texte cible en utilisant [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. Ajoutez un [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) invisible avec une infobulle courte.
+1. Recherchez le deuxième texte cible.
+1. Ajoutez un [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) invisible avec une longue infobulle sur le fragment correspondant.
+1. Enregistrez le document final.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("Déplacez le curseur de la souris ici pour afficher une info-bulle")
-    )
-    document.pages[1].paragraphs.add(
-        ap.text.TextFragment(
-            "Déplacez le curseur de la souris ici pour afficher une info-bulle très longue"
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_tool_tip_to_searched_text(outfile):
+    """
+    Add tooltips to searched text in a PDF document.
+
+    Creates a PDF with text fragments and adds invisible button fields over them
+    to display tooltips when users hover with their mouse cursor. Demonstrates
+    both short and long tooltip text implementations.
+
+    Args:
+        outfile (str): Path where the PDF with tooltips will be saved.
+
+    Returns:
+        None: The function creates and saves a PDF file with tooltip functionality.
+
+    Note:
+        - Creates invisible ButtonField elements over text fragments
+        - Uses alternate_name property to define tooltip content
+        - Supports both short and very long tooltip text
+        - TextFragmentAbsorber finds specific text to add tooltips to
+        - Tooltips appear on mouse hover in PDF viewers that support this feature
+        - Long tooltips demonstrate Lorem ipsum text for extensive content
+
+    Example:
+        >>> add_tool_tip_to_searched_text("tooltips.pdf")
+        # Creates a PDF with interactive text tooltips
+    """
+
+    # Create PDF document
+    with ap.Document() as document:
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display a tooltip")
         )
-    )
-    document.save(output_pdf)
-
-    # Ouvrir le document avec le texte
-    document = ap.Document(output_pdf)
-    # Créer un objet TextAbsorber pour trouver toutes les phrases correspondant à l'expression régulière
-    absorber = ap.text.TextFragmentAbsorber(
-        "Déplacez le curseur de la souris ici pour afficher une info-bulle"
-    )
-    # Accepter l'absorbeur pour les pages du document
-    document.pages.accept(absorber)
-    # Obtenir les fragments de texte extraits
-    text_fragments = absorber.text_fragments
-
-    # Boucler à travers les fragments
-    for fragment in text_fragments:
-        # Créer un bouton invisible à la position du fragment de texte
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # La valeur de alternate_name sera affichée comme info-bulle par une application de visualisation
-        field.alternate_name = "Info-bulle pour le texte."
-        # Ajouter le champ de bouton au document
-        document.form.add(field)
-
-    # Ensuite, un exemple d'info-bulle très longue
-    absorber = ap.text.TextFragmentAbsorber(
-        "Déplacez le curseur de la souris ici pour afficher une info-bulle très longue"
-    )
-    document.pages.accept(absorber)
-    text_fragments = absorber.text_fragments
-
-    for fragment in text_fragments:
-        field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-        # Définir un texte très long
-        field.alternate_name = (
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
-            " sed do eiusmod tempor incididunt ut labore et dolore magna"
-            " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-            " ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            " Duis aute irure dolor in reprehenderit in voluptate velit"
-            " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
-            " occaecat cupidatat non proident, sunt in culpa qui officia"
-            " deserunt mollit anim id est laborum."
+        document.pages[1].paragraphs.add(
+            ap.text.TextFragment(
+                "Move the mouse cursor here to display a very long tooltip"
+            )
         )
-        document.form.add(field)
+        document.save(outfile)
 
-    # Enregistrer le document
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip")
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the extracted text fragments
+        text_fragments = absorber.text_fragments
+
+        # Loop through the fragments
+        for fragment in text_fragments:
+            # Create invisible button on text fragment position
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # alternate_name value will be displayed as tooltip by a viewer application
+            field.alternate_name = "Tooltip for text."
+            # Add button field to the document
+            document.form.add(field)
+
+        # Next will be sample of very long tooltip
+        absorber = ap.text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip")
+        document.pages.accept(absorber)
+        text_fragments = absorber.text_fragments
+
+        for fragment in text_fragments:
+            field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+            # Set very long text
+            field.alternate_name = ("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                                    " sed do eiusmod tempor incididunt ut labore et dolore magna"
+                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                    " Duis aute irure dolor in reprehenderit in voluptate velit"
+                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                                    " occaecat cupidatat non proident, sunt in culpa qui officia"
+                                    " deserunt mollit anim id est laborum.")
+            document.form.add(field)
+
+        # Save document
+        document.save(outfile)
 ```
 
+## Créer un bloc de texte caché qui apparaît au survol dans un PDF
 
-## Créer un bloc de texte caché et l'afficher au survol de la souris
+Ajoutez du texte flottant interactif à un document PDF. Il superpose un [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) invisible sur une phrase cible et révèle un [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) caché lorsque l'utilisateur le survole. Cette technique est idéale pour l'aide contextuelle, les annotations ou la présentation de contenu dynamique.
 
-Ce snippet de code Python montre comment ajouter du texte flottant à un document PDF, qui apparaît lorsque le curseur de la souris survole une zone spécifique.
-
-Tout d'abord, un nouveau document PDF est créé, et un paragraphe contenant le texte "Déplacez le curseur de la souris ici pour afficher le texte flottant" est ajouté. Le document est ensuite enregistré.
-
-Ensuite, le document enregistré est rouvert, et un objet TextAbsorber est créé pour trouver le fragment de texte précédemment ajouté. Ce fragment de texte est ensuite utilisé pour définir la position et les caractéristiques du champ de texte flottant.
-
-Un objet TextBoxField est créé pour représenter le champ de texte flottant, et ses propriétés telles que la position, la valeur, le statut en lecture seule, et la visibilité sont configurées en conséquence. De plus, un nom unique et des caractéristiques d'apparence sont attribués au champ.
-
-Le champ de texte flottant est ajouté au formulaire du document, et un champ de bouton invisible est créé à la position du fragment de texte original.
- Les événements HideAction sont assignés au champ de bouton, spécifiant que le champ de texte flottant doit apparaître lorsque le curseur de la souris entre dans sa proximité et disparaître lorsque le curseur en sort.
-
-Enfin, le champ de bouton est ajouté au formulaire du document, et le document modifié est enregistré.
-
-Cet extrait de code fournit une méthode pour créer des éléments de texte flottants interactifs dans un document PDF en utilisant Aspose.PDF pour Python.
+1. Créez un nouveau document PDF.
+1. Enregistrez le PDF afin de pouvoir le rouvrir pour configurer l'interactivité.
+1. Rouvrez le document PDF.
+1. Localisez le texte cible en utilisant [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
+1. Créez un [`TextBoxField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) caché.
+1. Ajoutez le champ caché à la collection [`Form`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) du document.
+1. Créez un [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) invisible.
+1. Assignez des actions de souris (`on_enter`, `on_exit`) en utilisant [`HideAction`](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/hideaction/) pour afficher/masquer le champ caché.
+1. Enregistrez le document final.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-    document = ap.Document()
-    document.pages.add().paragraphs.add(
-        ap.text.TextFragment("Déplacez le curseur de la souris ici pour afficher le texte flottant")
-    )
-    document.save(output_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Ouvrir le document avec du texte
-    document = ap.Document(output_pdf)
-    # Créer un objet TextAbsorber pour trouver toutes les phrases correspondant à l'expression régulière
-    absorber = ap.text.TextFragmentAbsorber(
-        "Déplacez le curseur de la souris ici pour afficher le texte flottant"
-    )
-    # Accepter l'absorbeur pour les pages du document
-    document.pages.accept(absorber)
-    # Obtenir le premier fragment de texte extrait
-    text_fragments = absorber.text_fragments
-    fragment = text_fragments[1]
+def create_hidden_text_block(outfile):
+    """
+    Create a hidden text block that appears on mouse hover.
 
-    # Créer un champ de texte caché pour le texte flottant dans le rectangle spécifié de la page
-    floating_field = ap.forms.TextBoxField(
-        fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
-    )
-    # Définir le texte à afficher comme valeur du champ
-    floating_field.value = 'Ceci est le "champ de texte flottant".'
-    # Nous recommandons de rendre le champ 'readonly' pour ce scénario
-    floating_field.read_only = True
-    # Définir le drapeau 'hidden' pour rendre le champ invisible à l'ouverture du document
-    floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
+    Demonstrates advanced interactive PDF functionality by creating a hidden
+    text field that becomes visible when users hover over specific text.
+    Uses mouse enter/exit actions to control visibility.
 
-    # Définir un nom de champ unique n'est pas nécessaire mais autorisé
-    floating_field.partial_name = "FloatingField_1"
+    Args:
+        outfile (str): Path where the PDF with hidden text functionality will be saved.
 
-    # Définir les caractéristiques de l'apparence du champ n'est pas nécessaire mais améliore
-    floating_field.default_appearance = ap.annotations.DefaultAppearance(
-        "Helv", 10, ap.Color.blue.to_rgb()
-    )
-    floating_field.characteristics.background = ap.Color.light_blue.to_rgb()
-    floating_field.characteristics.border = ap.Color.dark_blue.to_rgb()
-    floating_field.border = ap.annotations.Border(floating_field)
-    floating_field.border.width = 1
-    floating_field.multiline = True
+    Returns:
+        None: The function creates and saves a PDF file with floating text capability.
 
-    # Ajouter le champ de texte au document
-    document.form.add(floating_field)
-    # Créer un bouton invisible à la position du fragment de texte
-    button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
-    # Créer une nouvelle action de masquage pour le champ spécifié (annotation) et le drapeau d'invisibilité.
-    # (Vous pouvez également référer le champ flottant par le nom si vous l'avez spécifié ci-dessus.)
-    # Ajouter des actions à l'entrée/sortie de la souris sur le champ de bouton invisible
+    Note:
+        - Creates a hidden TextBoxField with floating text content
+        - Uses HideAction to control field visibility on mouse events
+        - ButtonField acts as invisible trigger area over target text
+        - Field is initially hidden and appears on mouse enter
+        - Supports custom styling: colors, borders, fonts
+        - Read-only field prevents user editing of floating text
+        - Demonstrates advanced PDF interactivity features
 
-    button_field.actions.on_enter = ap.annotations.HideAction(
-        floating_field.partial_name, False
-    )
-    button_field.actions.on_exit = ap.annotations.HideAction(
-        floating_field.partial_name
-    )
+    Example:
+        >>> create_hidden_text_block("floating_text.pdf")
+        # Creates a PDF with text that reveals hidden content on hover
+    """
 
-    # Ajouter le champ de bouton au document
-    document.form.add(button_field)
+    # Create PDF document
+    with ap.Document() as document:
+        #  Add paragraph with text
+        document.pages.add().paragraphs.add(
+            ap.text.TextFragment("Move the mouse cursor here to display floating text")
+        )
+        # Save PDF document
+        document.save(outfile)
 
-    # Enregistrer le document
-    document.save(output_pdf)
+    # Open document with text
+    with ap.Document(outfile) as document:
+        # Create TextAbsorber object to find all the phrases matching the regular expression
+        absorber = ap.text.TextFragmentAbsorber("Move the mouse cursor here to display floating text")
+        # Accept the absorber for the document pages
+        document.pages.accept(absorber)
+        # Get the first extracted text fragment
+        text_fragments = absorber.text_fragments
+        fragment = text_fragments[1]
+
+        # Create hidden text field for floating text in the specified rectangle of the page
+        floating_field = ap.forms.TextBoxField(
+            fragment.page, ap.Rectangle(100.0, 700.0, 220.0, 740.0, False)
+        )
+        # Set text to be displayed as field value
+        floating_field.value = 'This is the "floating text field".'
+        # We recommend to make field 'readonly' for this scenario
+        floating_field.read_only = True
+        # Set 'hidden' flag to make field invisible on document opening
+        floating_field.flags |= ap.annotations.AnnotationFlags.HIDDEN
+
+        # Setting a unique field name isn't necessary but allowed
+        floating_field.partial_name = "FloatingField_1"
+
+        # Setting characteristics of field appearance isn't necessary but makes it better
+        floating_field.default_appearance = ap.annotations.DefaultAppearance("Helv", 10, drawing.Color.blue)
+        floating_field.characteristics.background = drawing.Color.light_blue
+        floating_field.characteristics.border = drawing.Color.dark_blue
+        floating_field.border = ap.annotations.Border(floating_field)
+        floating_field.border.width = 1
+        floating_field.multiline = True
+
+        # Add text field to the document
+        document.form.add(floating_field)
+        # Create invisible button on text fragment position
+        button_field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
+        # Create new hide action for specified field (annotation) and invisibility flag.
+        # (You also may refer floating field by the name if you specified it above.)
+        # Add actions on mouse enter/exit at the invisible button field
+
+        button_field.actions.on_enter = ap.annotations.HideAction(floating_field, False)
+        button_field.actions.on_exit = ap.annotations.HideAction(floating_field)
+
+        # Add button field to the document
+        document.form.add(button_field)
+
+        # Save document
+        document.save(outfile)
 ```
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF pour Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Bibliothèque de manipulation PDF pour .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

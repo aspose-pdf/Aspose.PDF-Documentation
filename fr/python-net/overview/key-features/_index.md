@@ -1,38 +1,47 @@
 ---
-title: Caractéristiques clés d'Aspose.PDF pour Python
-linktitle: Caractéristiques clés
+title: Principales fonctionnalités d'Aspose.PDF pour Python
+linktitle: Fonctionnalités clés
 type: docs
 weight: 20
 url: /fr/python-net/key-features/
-description: Aspose.PDF pour Python via .NET démontre ses fonctionnalités générales. Il montre les versions PDF prises en charge et toutes les manipulations que nous pouvons faire avec les PDF.
-lastmod: "2022-12-21"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF pour Python via .NET met en avant ses principales fonctionnalités, y compris les versions PDF prises en charge et les options de manipulation de PDF disponibles.
+lastmod: "2025-02-21"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Fonctionnalités générales d'Aspose.PDF pour Python
+Abstract: Aspose.PDF pour Python via .NET est une bibliothèque robuste offrant de nombreuses fonctionnalités pour gérer et manipuler les documents PDF. Elle prend en charge les normes PDF établies et facilite la lecture et l'exportation des PDF vers divers formats d'image tels que BMP, GIF, JPEG et PNG. Les utilisateurs peuvent configurer les propriétés du document, les attributs des pages, et gérer le texte, les paragraphes, les hyperliens, les graphiques et les pièces jointes. La bibliothèque excelle dans les capacités de conversion, permettant une transformation fluide des PDF en formats Word, Excel, PowerPoint et HTML, entre autres, tout en convertissant également divers formats vers le PDF.
 ---
 
 ## Fonctionnalités générales
 
 - Prend en charge la plupart des normes PDF établies et des spécifications PDF.
-- Capacité à lire et exporter des PDF dans plusieurs formats d'image, y compris BMP, GIF, JPEG et PNG.
-- Définir des informations de base (par exemple, auteur, créateur) du document PDF.
-- Configurer les propriétés de la page PDF (par exemple, largeur, hauteur, cropbox, bleedbox, etc.).
-- Définir la numérotation des pages, le niveau des signets, les tailles de pages, etc.
-- Capacité à travailler avec du texte, des paragraphes, des titres, des hyperliens, des graphiques, des pièces jointes, etc.
+- Possibilité de lire et d'exporter les PDF dans plusieurs formats d'image, notamment BMP, GIF, JPEG et PNG.
+- Définir les informations de base (p. ex. auteur, créateur) du document PDF.
+- Configurer les propriétés des pages PDF (p. ex. largeur, hauteur, zone de rognage, zone de débordement, etc.).
+- Définir la numérotation des pages, le niveau des signets, les tailles de page, etc.
+- Possibilité de travailler avec du texte, des paragraphes, des titres, des hyperliens, des graphiques, des pièces jointes, etc.
+
+## Normes PDF prises en charge
+
+- ISO 32000-1 (PDF 1.2, PDF 1.3, PDF 1.4, PDF 1.5, PDF 1.6, PDF 1.7).
+- ISO 32000-2 (PDF 2.0).
+- ISO 19005 (PDF/A), ISO 15930 (PDF/X), ISO 24517 (PDF/E), ISO 14289 (PDF/UA).
 
 ## Fonctionnalités de conversion
 
-La bibliothèque Aspose.PDF pour Python via .NET vous permet de convertir avec succès, rapidement et facilement vos documents PDF vers les formats les plus populaires et vice versa.
+La bibliothèque Aspose.PDF pour Python via .NET vous permet de convertir rapidement, facilement et avec succès vos documents PDF vers les formats les plus populaires et inversement.
 
-- Convertir PDF en Word, Excel et PowerPoint.
-- Convertir PDF en formats d'images.
-- Convertir un fichier PDF en format HTML et vice versa.
-- Convertir PDF en EPUB, Texte, XPS, etc.
-- Convertir EPUB, Markdown, Texte, XPS, PostScript, XML, LaTex en PDF.
+- Convertir le PDF en Word, Excel et PowerPoint.
+- Convertir le PDF en formats d'images.
+- Convertir le fichier PDF au format HTML et inversement.
+- Convertir le PDF en EPUB, texte, XPS, etc.
+- Convertir EPUB, Markdown, texte, XPS, PostScript, XML, LaTeX en PDF.
 
 ## Versions PDF prises en charge
 
-Aspose.PDF pour Python prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, et 2.0.
+Aspose.PDF pour Python prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6, 1.7 et 2.0.
 
 ## Texte
 
@@ -41,31 +50,40 @@ Aspose.PDF pour Python prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6,
 - Remplacer le texte.
 - Ajouter du texte dans le fichier PDF.
 
+## Polices
+
+- 14 polices de base.
+- Polices Type 1.
+- Polices TrueType.
+- Polices Type 3.
+- Polices CJK.
+- Prise en charge Unicode.
+
 ## Images
 
 - Ajouter une image dans le fichier PDF.
 - Supprimer des images.
 - Remplacer des images.
 - Extraire des images.
-- Conversion du PDF en format d'image.
+- Conversion de PDF vers le format image.
 
 ## Pièces jointes
 
 - Ajouter une pièce jointe.
-- Supprimer des pièces jointes.
+- Supprimer les pièces jointes.
 
 ## Page
 
 - Insérer des pages PDF.
 - Supprimer des pages PDF.
 - Diviser le PDF en pages individuelles.
-- Déplacer un groupe de pages d'un document PDF à un autre
+- Déplacer un lot de pages d'un document PDF à un autre
 - Déplacer une page à un nouvel emplacement dans le document PDF actuel
-- Changer la taille de la page PDF
-- Changer l'orientation de la page
+- Modifier la taille de la page PDF
+- Modifier l'orientation de la page
 - Obtenir les propriétés de la page
 - Obtenir le nombre de pages
-- Obtenir un compte de pages
+- Obtenir le nombre de pages
 - Obtenir une page particulière
 
 ## Document
@@ -73,22 +91,21 @@ Aspose.PDF pour Python prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6,
 - Créer un fichier PDF
 - Ouvrir un document PDF existant depuis un flux
 - Ouvrir un document PDF existant
-
 - Définir les propriétés prédéfinies de la boîte de dialogue d'impression
 - Ajouter une table des matières à un PDF existant
 - Ajouter une table des matières à un PDF existant
-- Personnaliser les numéros de page lors de l'ajout de la table des matières
+- Personnaliser la numérotation des pages lors de l'ajout de la table des matières
 - Définir la date d'expiration du PDF
 - Aplatir le PDF remplissable
 - Optimiser le document PDF pour le Web
 - Réduire la taille du PDF
-- Rétrécir ou compresser toutes les images
+- Réduire ou compresser toutes les images
 - Supprimer les objets inutilisés
-- Lier les flux en double
+- Lier les flux dupliqués
 - Supprimer les flux inutilisés
 - Désintégrer les polices
-- Obtenir les propriétés du visualisateur de documents.
-- Définir les propriétés du visualisateur de documents.
+- Obtenir les propriétés du visualiseur de document.
+- Définir les propriétés du visualiseur de document.
 - Valider (PDF/A-1a, PDF/A-1b).
 - Supprimer les champs de formulaire
 - Déterminer et définir les métadonnées des documents
@@ -96,11 +113,11 @@ Aspose.PDF pour Python prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6,
 ## Signets
 
 - Ajouter des signets.
-- Ajouter des sous-signets.
-- Supprimer des signets.
-- Obtenir des signets.
-- Obtenir des sous-signets.
-- Modifier des signets.
+- Ajouter des signets enfants.
+- Supprimer les signets.
+- Obtenir les signets.
+- Obtenir les signets enfants.
+- Modifier les signets.
 - Signets développés lors de la visualisation du document.
 
 ## Annotations
@@ -114,13 +131,14 @@ Aspose.PDF pour Python prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6,
 - Ajouter des champs.
 - Supprimer des champs.
 - Modifier des champs.
-- Remplir des champs.
+- Remplir les champs.
 - Obtenir les valeurs des champs.
+- Prise en charge des XFA (Formulaires basés sur XML) et des AcroForms (Formulaires standards).
 
-## Tampon et Filigrane
+## Tampon et filigrane
 
-- Ajouter un tampon de texte.
-- Ajouter un tampon d'image.
+- Ajouter un tampon texte.
+- Ajouter un tampon image.
 - Ajouter un tampon de page PDF.
 
 
@@ -1150,7 +1168,253 @@ Aspose.PDF pour Python prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6,
 
 
 
-Open encrypted PDF document  
-- Chiffrer PDF.  
-- Déchiffrer PDF.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ouvrir le document PDF chiffré
+- Chiffrer le PDF.
+- Déchiffrer le PDF.
 - Modifier le mot de passe.
+
+
+

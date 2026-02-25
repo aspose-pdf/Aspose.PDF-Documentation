@@ -1,114 +1,51 @@
 ---
-title: Annotation de surlignage PDF en utilisant Python
+title: Annotation de surlignage PDF avec Python
 linktitle: Annotation de surlignage
 type: docs
 weight: 20
 url: /fr/python-net/highlights-annotation/
-description: Les annotations de balisage sont présentées dans le texte sous forme de surlignages, de soulignements, de barrés ou de soulignements en zigzag dans le texte d'un document.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Apprenez à ajouter des annotations de surlignage aux fichiers PDF en Python en utilisant Aspose.PDF pour mettre en évidence le texte.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guide sur la façon de manipuler les annotations de surlignage dans les PDF
+Abstract: L'article fournit un guide complet sur l'utilisation des annotations de balisage de texte dans les documents PDF, en se concentrant sur les fonctionnalités offertes par la bibliothèque Aspose.PDF en Python. Il explique le but et l'utilisation des différents types d'annotations, y compris les annotations de surlignage, de soulignement, de rayure et ondulées, chacune étant conçue pour mettre en évidence ou modifier le texte de différentes manières. Le document décrit les étapes nécessaires pour ajouter ces annotations à un PDF, incluant le chargement du document, la création des annotations avec des paramètres spécifiques tels que le titre et la couleur, et leur ajout à la page souhaitée. De plus, l'article comprend des extraits de code permettant de récupérer les annotations d'un PDF, offrant aux utilisateurs la possibilité de filtrer et d'imprimer les détails des annotations selon le type. Enfin, il détaille le processus de suppression des annotations, en fournissant des exemples de code pour retirer chaque type d'annotation de balisage de texte du document. Ce guide sert de ressource pratique pour les développeurs souhaitant manipuler les annotations de texte dans les fichiers PDF de manière programmatique en utilisant Python.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Annotation de surlignage PDF en utilisant Python",
-    "alternativeHeadline": "Comment ajouter des annotations de surlignage dans un PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, python, annotation de surlignage, annotation de balisage de texte",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/highlights-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/highlights-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Les annotations de balisage sont présentées dans le texte sous forme de surlignages, de soulignements, de barrés ou de soulignements en zigzag dans le texte d'un document."
-}
-</script>
 
+Les annotations de balisage de texte dans les PDF sont utilisées pour mettre en surbrillance, souligner, rayer ou ajouter des notes au texte du document. Ces annotations sont destinées à mettre en évidence ou attirer l'attention sur des parties spécifiques du texte. Elles permettent aux utilisateurs de marquer visuellement ou de modifier le contenu d'un fichier PDF.
 
-Annotations de balisage de texte dans le PDF sont utilisées pour surligner, souligner, ignorer ou ajouter des notes au texte dans le document. Ces annotations sont destinées à mettre en évidence ou attirer l'attention sur des parties spécifiques du texte. De telles annotations permettent aux utilisateurs de marquer visuellement ou de modifier le contenu d'un fichier PDF.
+L'annotation de surlignage est utilisée pour marquer le texte avec un arrière-plan coloré, généralement jaune, afin d'indiquer son importance ou sa pertinence.
 
-L'annotation de surlignage est utilisée pour marquer le texte avec un fond coloré, généralement jaune, pour indiquer son importance ou sa pertinence.
+L'annotation de soulignement est une ligne placée sous le texte sélectionné pour indiquer son importance, mettre l'accent ou signaler des modifications suggérées.
 
-L'annotation de soulignement est une ligne placée sous le texte sélectionné pour indiquer la signification, l'accentuation ou indiquer des modifications suggérées.
+L'annotation de rayure inclut la suppression ou le barré d'un texte particulier pour montrer qu'il a été supprimé, remplacé ou n'est plus valide.
 
-L'annotation de barré inclut la suppression ou le barré d'un texte particulier pour montrer qu'il a été supprimé, remplacé ou n'est plus valide.
-
-La ligne ondulée est utilisée pour souligner le texte afin d'indiquer un type d'accent différent, tel que des erreurs d'orthographe, des problèmes potentiels ou des modifications proposées.
+La ligne ondulée est utilisée pour souligner le texte afin d'indiquer un type d'accent différent, tel que les fautes d'orthographe, les problèmes potentiels ou les modifications proposées.
 
 ## Ajouter une annotation de balisage de texte
 
-Afin d'ajouter une annotation de balisage de texte au document PDF, nous devons effectuer les actions suivantes :
+Pour ajouter une annotation de balisage de texte au document PDF, nous devons effectuer les actions suivantes :
 
-1. Charger le fichier PDF - nouvel objet [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Charger le fichier PDF - nouvel objet [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) object.
 1. Créer des annotations :
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) et définir les paramètres (titre, couleur).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) et définir les paramètres (titre, couleur).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) et définir les paramètres (titre, couleur).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) et définir les paramètres (titre, couleur).
-1. Ensuite, nous devrions ajouter toutes les annotations à la page.
+- [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation/) et définir les paramètres (titre, couleur).
+- [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) et définir les paramètres (titre, couleur).
+- [SquigglyAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squigglyannotation/) et définir les paramètres (titre, couleur).
+- [UnderlineAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/underlineannotation/) et définir les paramètres (titre, couleur).
+1. Ensuite, nous devons ajouter toutes les annotations à la page.
 
-### Ajouter une Annotation Surlignée
+### Ajouter une annotation de surlignage
 
 ```python
 
     import aspose.pdf as ap
 
-    # Ouvrir le document
+    # Open document
     document = ap.Document(input_file)
 
-    # Créer une Annotation de Cercle
+    # Create Circle Annotation
     highlightAnnotation = ap.annotations.HighlightAnnotation(
         document.pages[1], ap.Rectangle(300, 750, 320, 770, True)
     )
@@ -116,8 +53,7 @@ Afin d'ajouter une annotation de balisage de texte au document PDF, nous devons 
     document.save(output_file)
 ```
 
-
-### Ajouter une Annotation de Barré
+### Ajouter une annotation de rayure
 
 ```python
 
@@ -128,8 +64,8 @@ Afin d'ajouter une annotation de balisage de texte au document PDF, nous devons 
     strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    strikeoutAnnotation.title = "Utilisateur Aspose"
-    strikeoutAnnotation.subject = "Texte inséré 1"
+    strikeoutAnnotation.title = "Aspose User"
+    strikeoutAnnotation.subject = "Inserted text 1"
     strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     strikeoutAnnotation.color = ap.Color.blue
 
@@ -137,7 +73,7 @@ Afin d'ajouter une annotation de balisage de texte au document PDF, nous devons 
     document.save(output_file)
 ```
 
-### Ajouter une Annotation de Zigzag
+### Ajouter une annotation ondulée
 
 ```python
 
@@ -154,7 +90,7 @@ Afin d'ajouter une annotation de balisage de texte au document PDF, nous devons 
     document.save(output_file)
 ```
 
-### Ajouter une Annotation de Soulignement
+### Ajouter une annotation de soulignement
 
 ```python
 
@@ -165,8 +101,8 @@ Afin d'ajouter une annotation de balisage de texte au document PDF, nous devons 
     underlineAnnotation = ap.annotations.UnderlineAnnotation(
         document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
     )
-    underlineAnnotation.title = "Utilisateur Aspose"
-    underlineAnnotation.subject = "Soulignement inséré 1"
+    underlineAnnotation.title = "Aspose User"
+    underlineAnnotation.subject = "Inserted Underline 1"
     underlineAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
     underlineAnnotation.color = ap.Color.blue
 
@@ -174,12 +110,11 @@ Afin d'ajouter une annotation de balisage de texte au document PDF, nous devons 
     document.save(output_file)
 ```
 
+## Récupérer une annotation de balisage de texte
 
-## Obtenir une annotation de balisage de texte
+Veuillez essayer le morceau de code suivant pour récupérer l'annotation de balisage de texte depuis le document PDF.
 
-Veuillez essayer d'utiliser l'extrait de code suivant pour obtenir une annotation de balisage de texte à partir d'un document PDF.
-
-### Obtenir une annotation de surbrillance
+### Récupérer l'annotation de surlignage
 
 ```python
 
@@ -196,7 +131,7 @@ Veuillez essayer d'utiliser l'extrait de code suivant pour obtenir une annotatio
         print(ha.rect)
 ```
 
-### Obtenir une annotation de rature
+### Récupérer l'annotation de rayure
 
 ```python
 
@@ -213,7 +148,8 @@ Veuillez essayer d'utiliser l'extrait de code suivant pour obtenir une annotatio
         print(pa.rect)
 ```
 
-### Obtenir une annotation ondulée
+
+### Récupérer l'annotation ondulée
 
 ```python
 
@@ -230,8 +166,7 @@ Veuillez essayer d'utiliser l'extrait de code suivant pour obtenir une annotatio
         print(pa.rect)
 ```
 
-
-### Obtenir l'Annotation de Soulignement
+### Récupérer l'annotation de soulignement
 
 ```python
 
@@ -248,17 +183,17 @@ Veuillez essayer d'utiliser l'extrait de code suivant pour obtenir une annotatio
         print(ta.rect)
 ```
 
-## Supprimer l'Annotation de Marquage de Texte
+## Supprimer une annotation de balisage de texte
 
-Le code suivant montre comment supprimer l'annotation de marquage de texte d'un fichier PDF.
+Le morceau de code suivant montre comment supprimer une annotation de balisage de texte d'un fichier PDF.
 
-### Supprimer l'Annotation de Surlignage
+### Supprimer l'annotation de surlignage
 
 ```python
 
     import aspose.pdf as ap
 
-    # Charger le fichier PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     highlightAnnotations = [
         a
@@ -272,7 +207,7 @@ Le code suivant montre comment supprimer l'annotation de marquage de texte d'un 
     document.save(output_file)
 ```
 
-### Supprimer l'Annotation de Barré
+### Supprimer l'annotation de rayure
 
 ```python
 
@@ -291,8 +226,7 @@ Le code suivant montre comment supprimer l'annotation de marquage de texte d'un 
     document.save(output_file)
 ```
 
-
-### Supprimer l'Annotation Ondulée
+### Supprimer l'annotation ondulée
 
 ```python
 
@@ -311,7 +245,7 @@ Le code suivant montre comment supprimer l'annotation de marquage de texte d'un 
     document.save(output_file)
 ```
 
-### Supprimer l'Annotation de Soulignement
+### Supprimer l'annotation de soulignement
 
 ```python
 
@@ -330,66 +264,5 @@ Le code suivant montre comment supprimer l'annotation de marquage de texte d'un 
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+
+

@@ -1,345 +1,772 @@
 ---
-title: Quoi de neuf
-linktitle: Quoi de neuf
+title: Nouveautés
+linktitle: Nouveautés
 type: docs
 weight: 10
 url: /fr/python-net/whatsnew/
-description: Cette page présente les nouvelles fonctionnalités les plus populaires dans Aspose.PDF pour Python via .NET qui ont été introduites dans les versions récentes.
-sitemap:
+description: Cette page introduit les nouvelles fonctionnalités les plus populaires d'Aspose.PDF pour Python via .NET qui ont été introduites dans les dernières versions.
+sitemap: 
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2021-12-24"
+lastmod: "2025-02-24"
+TechArticle: false
 ---
 
-## Quoi de neuf dans Aspose.PDF 23.12
+## Nouveautés d'Aspose.PDF 25.9
 
-À partir d'Aspose.PDF 23.12, la prise en charge des nouvelles fonctionnalités de conversion a été ajoutée :
+La version 25.9 introduit une accessibilité améliorée, un support de conformité renforcé et de nouvelles capacités d'API pour travailler avec des images balisées et des normes de documents.
 
-- Implémenter la conversion de PDF en Markdown
+1. Convertir les PDF au format PDF/E-1.
+1. Ajouter des images balisées à partir de flux mémoire.
+
+### Convertir le PDF au format PDF/E-1
+
+Dans la version 25.9 de la bibliothèque Aspose.PDF pour Python, la conversion au format PDF/E-1 est disponible. Vous pouvez trouver plus d'informations sur ce format dans la [(Documentation des formats de fichiers)[https://docs.fileformat.com/pdf/e/].
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    input_pdf_path = DIR_INPUT + "input.pdf"
-    markdown_output_file_path = DIR_OUTPUT + "output_md_file.md"
+def convert_pdf_to_pdf_e(self, infile, outfile):
+    """PDF/E-1 Standard Support: Added the capability to convert PDF files to the PDF/E-1 format and to validate
+        the output files for compliance with the standard."""
 
-    doc = ap.Document(input_pdf_path)
-    save_options = ap.pdftomarkdown.MarkdownSaveOptions()
-    save_options.resources_directory_name = "images"
-    doc.save(markdown_output_file_path, save_options)
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Set up the PDF/E-1 format with PdfFormatConversionOptions
+        options = ap.PdfFormatConversionOptions(ap.PdfFormat.PDF_E_1, ap.ConvertErrorAction.DELETE)
+        # Convert to PDF/E-1 compliant document
+        document.convert(options)
+        # Save PDF document
+        document.save(path_outfile)
 ```
 
-- Implémenter la conversion de OFD en PDF
+### Ajouter des images balisées depuis un flux
+
+Ajouter des images balisées depuis un flux dans un PDF. La version 25.9 prend en charge une accessibilité améliorée des documents PDF en ajoutant une image à partir d'un flux mémoire et en la balisant avec un texte alternatif.
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    input_path = DIR_INPUT + "input.ofd"
-    output_path = DIR_OUTPUT + "output.pdf"
-    document = ap.Document(input_path, ap.OfdLoadOptions())
-    document.save(output_path)
+def add_tagged_image_from_stream(self, image_file, outfile):
+    """Enhanced Accessibility for Tagged Images: possible to add alternative text to images loaded from a memory stream."""
+
+    path_image = self.data_dir + image_file
+    path_outfile = self.data_dir + outfile
+
+    # Create the PDF document
+    with ap.Document() as document:
+
+        page = document.pages.add()
+        # Tag the document for accessibility
+        tagged_content = document.tagged_content
+        tagged_content.set_title("Tagged Image from Stream")
+        tagged_content.set_language("en-US")
+        # Add an image from a stream to the page
+        image_stream = io.FileIO(path_image, "r")
+        page.add_image(image_stream, ap.Rectangle(100, 600, 300, 800, True), None, True)
+        # Get the added image and set its alternative text
+        img = page.resources.images[1]
+        img.try_set_alternative_text("Aspose Logo", page)
+        # Save the document
+        document.save(path_outfile)
 ```
 
+## Nouveautés d'Aspose.PDF 25.8
 
-Le support pour Python 3.6 a été interrompu.
+Cette mise à jour ajoute plus de flexibilité dans la mise en page et la gestion de la sécurité des documents.
 
-## Quoi de neuf dans Aspose.PDF 23.11
+1. Créer des tables des matières balisées (TOC).
+1. Redimensionner les pages PDF avec mise à l'échelle du contenu.
+1. Appliquer des bordures pointillées aux tableaux.
 
-Depuis la version 23.11, il est possible de supprimer le texte caché. Le code suivant peut être utilisé :
+### Créer une table des matières balisée (TOC)
 
-```python
-
-    import aspose.pdf as ap
-
-    document = ap.Document(input_file)
-    text_absorber = ap.text.TextFragmentAbsorber()
-    # Cette option peut être utilisée pour empêcher d'autres fragments de texte de se déplacer après le remplacement du texte caché.
-    text_absorber.text_replace_options = ap.text.TextReplaceOptions(ap.text.TextReplaceOptions.ReplaceAdjustment.NONE)
-    document.pages.accept(text_absorber)
-
-    for fragment in text_absorber.text_fragments:
-        if fragment.text_state.invisible:
-            fragment.text = ''
-
-    document.save(output_file)
-```    
-
-## Quoi de neuf dans Aspose.PDF 23.8
-
-Depuis la version 23.8, le support pour ajouter la détection des mises à jour incrémentielles a été ajouté.
-
-La fonction pour détecter les mises à jour incrémentielles dans un document PDF a été ajoutée.
- Cette fonction renvoie 'true' si un document a été enregistré avec des mises à jour incrémentielles; sinon, elle renvoie 'false'.
+Générer automatiquement des tables des matières accessibles (TOC) dans les PDF balisés. Créer une table des matières entièrement accessible (TOC) dans un PDF permet aux lecteurs de naviguer efficacement dans le document et garantit la conformité PDF/UA-1 pour l'accessibilité.
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    doc = ap.Document(file_path)
-    updated = doc.has_incremental_update()
-    print(updated)
+def create_pdf_with_toc_page(self, outfile):
+    """
+    Supports generating fully accessible Tagged Table of Contents (TOC) pages with proper navigation to
+    corresponding sections, ensuring PDF/UA-1 compliance.
+    """
+
+    path_outfile = self.data_dir + outfile
+
+    # Create the PDF document
+    with ap.Document() as document:
+        # Get tagged content for the PDF structure
+        content = document.tagged_content
+        root_element = content.root_element
+        content.set_language("en-US")
+        # Add the table of contents (TOC) page
+        toc_page = document.pages.add()
+        toc_page.toc_info = ap.TocInfo()
+        # Create a TOC structure element
+        toc_element = content.create_toc_element()
+        # Add the TOC element to the document structure tree
+        root_element.append_child(toc_element, True)
+        # Add a content page
+        document.pages.add()
+        # Create a header element and set its text
+        header = content.create_header_element(1)
+        header.set_text("1. Header")
+        # Add the header to the document structure
+        root_element.append_child(header, True)
+        # Create a TOC item (TOCI) element
+        toci = content.create_toci_element()
+        # Add the TOCI element to the TOC element
+        toc_element.append_child(toci, True)
+        # Add an entry to the TOC page and link it to the TOCI element
+        header.add_entry_to_toc_page(toc_page, toci)
+        # Add a logical reference to the header within the TOCI element
+        toci.add_ref(header)
+        # Save PDF document
+        document.save(path_outfile)
 ```
 
-De plus, 23.8 prend en charge les moyens de travailler avec des champs de case à cocher imbriqués. De nombreux formulaires PDF remplissables ont des champs de case à cocher qui agissent comme des groupes radio:
+### Redimensionner les pages avec mise à l'échelle du contenu
 
-- Créer un champ de case à cocher à valeurs multiples :
+Redimensionner les pages PDF tout en préservant la mise en page et en mettant à l'échelle le contenu proportionnellement. Lorsque vous travaillez avec des PDF, il peut être nécessaire de redimensionner les pages ou de mettre à l'échelle le contenu pour s'adapter à de nouvelles dimensions.
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    document = ap.Document()
-    page = document.pages.add()
-    checkbox = ap.forms.CheckboxField(page, ap.Rectangle(50, 50, 70, 70, True))
-    # Définir la valeur de l'option du premier groupe de cases à cocher
-    checkbox.export_value = "option 1"
-    # Ajouter une nouvelle option juste en dessous des options existantes
-    checkbox.add_option("option 2")
-    # Ajouter une nouvelle option au rectangle donné
-    checkbox.add_option("option 3", ap.Rectangle(100, 100, 120, 120, True))
-    document.form.add(checkbox)
-    # Sélectionner la case à cocher ajoutée
-    checkbox.value = "option 2"
-    document.save(DIR_OUTPUT + "checkbox_group.pdf")
+def resize_page(self, document, page_number, target_width, target_height, width, height, outfile):
+    """
+    Resize and scale page content using PdfFileEditor.ResizeContents.
+
+    A high-level helper that scales and/or resizes the rendered content streams of one or more pages
+    without performing a full content reflow. Use this to make existing page contents larger or smaller,
+    fit content into a different page box, or uniformly scale content for printing or display.
+
+    Parameters (recommended)
+    ------------------------
+    pdf_editor: Aspose.Pdf.Facades.PdfFileEditor
+        The PdfFileEditor instance that exposes the ResizeContents API.
+    page_numbers: int | Iterable[int] | slice, optional
+        Page index (1-based) or collection of page indices to process. If omitted or None, all pages
+        in the document are processed.
+    scale: float, optional
+        Uniform scale factor to apply to content (e.g., 0.5 reduces content to 50%). Mutually exclusive
+        with target_width/target_height unless keep_aspect_ratio is explicitly handled.
+    target_width: float, optional
+        Desired content width in PDF points (1 point = 1/72 inch). When provided, content will be scaled
+        to match this width (subject to keep_aspect_ratio and fit_mode).
+    target_height: float, optional
+        Desired content height in PDF points.
+    keep_aspect_ratio: bool, default True
+        If True, preserve the original aspect ratio when scaling to a target width or height.
+    fit_mode: {'fit', 'fill', 'stretch'}, default 'fit'
+        'fit'   — scale so content fits entirely inside the target box, preserving aspect ratio;
+        'fill'  — scale so the target box is completely covered (may crop content);
+        'stretch' — scale independently in X and Y (may distort).
+    margins: tuple(float, float, float, float), optional
+        (left, top, right, bottom) margins in points to preserve inside the target box.
+    preserve_annotations: bool, default True
+        When True, attempt to preserve annotations/forms/interactive elements; some annotations may
+        require special handling after scaling.
+    preserve_transparency: bool, default True
+        Preserve transparency settings of page contents where possible.
+
+    Returns
+    -------
+    bool
+        True if the operation completed successfully. Some implementations operate in-place and may
+        return a status rather than a new document object.
+
+    Raises
+    ------
+    ValueError
+        If parameters are invalid (e.g., scale <= 0 or both scale and conflicting target dimensions).
+    IOError
+        If input/output streams cannot be read or written.
+    PdfProcessingError
+        If the PDF content streams cannot be interpreted or transformed by the editor.
+
+    Notes
+    -----
+    - All size and margin values are in PDF points (1/72 inch). Convert from inches or millimeters
+      before calling if necessary.
+    - This API scales content streams and their transform matrices; it does not reflow text or rebuild
+      page layout. Text encoded as vectors will scale; text drawn by layout engines may not reflow.
+    - Complex page objects such as XObjects, forms, and annotations may require additional post-processing.
+    - For raster-output use-cases (images/screenshots), consider exporting to an image at a target DPI
+      instead of scaling content streams.
+    - When targeting printing, compute target page size in points from the physical paper size and DPI.
+
+    Example (conceptual)
+    --------------------
+    # Scale pages 1-3 to 50%:
+    editor = PdfFileEditor(input_stream, output_stream)
+    editor.ResizeContents(page_numbers=[1,2,3], scale=0.5)
+    editor.Save()
+
+    # Fit page content into a letter-sized box while preserving aspect ratio:
+    editor.ResizeContents(page_numbers=None, target_width=612, target_height=792, fit_mode='fit')
+
+    See also
+    --------
+    PdfFileEditor.ResizeContents : Low-level API that performs content scaling and transform adjustments.
+    """
+
+    path_outfile = self.data_dir + outfile
+
+    margin_width = (target_width - width) / 2
+    margin_height = (target_height - height) / 2
+
+    # Set the parameters
+    param = ap.facades.PdfFileEditor.ContentsResizeParameters.page_resize(width, height)
+    param.top_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(margin_height)
+    param.bottom_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(margin_height)
+    param.left_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(margin_width)
+    param.right_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(margin_width)
+    param.change_media_box = True
+
+    # Do resize
+    ap.facades.PdfFileEditor().resize_contents(document, [page_number], param)
+
+    document.save(path_outfile)
 ```
 
-- Obtenir et définir la valeur d'une case à cocher à valeurs multiples :
+### Appliquer des bordures pointillées aux tableaux
+
+Ajouter des tableaux avec des styles de bordure personnalisés utilisant des lignes pointillées. Cet exemple montre comment appliquer des styles de bordure personnalisés — comme des lignes pointillées ou en pointillés — aux tableaux d'un document PDF en utilisant Aspose.PDF pour Python via .NET.
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    doc = ap.Document("example.pdf")
-    form = doc.form
-    checkbox = cast(ap.forms.CheckboxField, form.fields[0])
+def create_table_with_dashed_border(self, outfile):
+    """Support style  for table borders, allowing you to set dashed, dotted, or custom border styles for tables."""
 
-    # Les valeurs autorisées peuvent être récupérées à partir de la collection AllowedStates
-    # Définir la valeur de la case à cocher en utilisant la propriété Value
-    checkbox.value = checkbox.allowed_states[0]
-    checkbox_value = checkbox.value  # la valeur précédemment définie, par exemple "option 1"
-    # La valeur doit être un élément de AllowedStates
-    checkbox.value = "option 2"
-    checkbox_value = checkbox.value  # option 2
-    # Décochez les cases en définissant soit Value à "Off", soit Checked à false
-    checkbox.value = "Off"
-    # ou, alternativement :
-    # checkbox.checked = False
-    checkbox_value = checkbox.value  # Off
-```
+    path_outfile = self.data_dir + outfile
 
-- Mettre à jour l'état de la case à cocher lors d'un clic utilisateur :
+    # Create the PDF document
+    with ap.Document() as document:
 
-```python
-
-    import aspose.pdf as ap
-    from aspose.pycore import cast
-
-    input_file = DIR_INPUT + "input.pdf"
-    document = ap.Document(input_file)
-    point = ap.Point(62,462)  # par exemple, les coordonnées d'un clic de souris
-    # Option 1 : parcourir les annotations sur la page
-    page = document.pages[5]
-    for annotation in page.annotations:
-        if(annotation.rect.contains(point)):
-            widget = cast(ap.annotations.WidgetAnnotation, annotation)
-            checkbox = cast(ap.forms.CheckboxField, widget.parent)
-            if(annotation.active_state == "Off"):
-                checkbox.value = widget.get_checked_state_name()
-            else:
-                checkbox.value = "Off"
-        break
-    # Option 2 : parcourir les champs dans l'AcroForm
-    for widget in document.form:
-        field = cast(ap.forms.Field, widget)
-        if(field == None):
-            continue
-        checkBoxFound = False
-        for annotation in field:
-            if(annotation.rect.contains(point)):
-                checkBoxFound = True
-                if(annotation.active_state=="Off"):
-                    annotation.parent.value = annotation.get_checked_state_name()
-                else:
-                    annotation.parent.value = "Off"
-            if(checkBoxFound):
-                break
-```
-
-
-## Quoi de neuf dans Aspose.PDF 23.7
-
-Depuis la version 23.7, il est possible d'ajouter l'extraction de formes :
-
-```python
-
-    import aspose.pdf as ap
-
-    input1_file = DIR_INPUT + "input_1.pdf"
-    input2_file = DIR_INPUT + "input_2.pdf"
-
-    source = ap.Document(input1_file)
-    dest = ap.Document(input2_file)
-
-    graphic_absorber = ap.vector.GraphicsAbsorber()
-    graphic_absorber.visit(source.pages[1])
-    area = ap.Rectangle(90, 250, 300, 400, True)
-    dest.pages[1].add_graphics(graphic_absorber.elements, area)
-```
-
-Il prend également en charge la capacité de détecter le débordement lors de l'ajout de texte :
-
-```python
-
-    import aspose.pdf as ap
-
-    output_file = DIR_OUTPUT + "output.pdf"
-    doc = ap.Document()
-    paragraph_content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisl tortor, efficitur sed cursus in, lobortis vitae nulla. Quisque rhoncus, felis sed dictum semper, est tellus finibus augue, ut feugiat enim risus eget tortor. Nulla finibus velit nec ante gravida sollicitudin. Morbi sollicitudin vehicula facilisis. Vestibulum ac convallis erat. Ut eget varius sem. Nam varius pharetra lorem, id ullamcorper justo auctor ac. Integer quis erat vitae lacus mollis volutpat eget et eros. Donec a efficitur dolor. Maecenas non dapibus nisi, ut pellentesque elit. Sed pellentesque rhoncus ante, a consectetur ligula viverra vel. Integer eget bibendum ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur elementum, sem a auctor vulputate, ante libero iaculis dolor, vitae facilisis dolor lorem at orci. Sed laoreet dui id nisi accumsan, id posuere diam accumsan."
-    fragment = ap.text.TextFragment(paragraph_content)
-    rectangle = ap.Rectangle(100, 600, 500, 700, False)
-    paragraph = ap.text.TextParagraph()
-    paragraph.vertical_alignment = ap.VerticalAlignment.TOP
-    paragraph.formatting_options.wrap_mode = ap.text.TextFormattingOptions.WordWrapMode.BY_WORDS
-    paragraph.rectangle = rectangle
-    is_fit_rectangle = fragment.text_state.is_fit_rectangle(paragraph_content, rectangle)
-
-    while is_fit_rectangle == False:
-        fragment.text_state.font_size -= 0.5
-        is_fit_rectangle = fragment.text_state.is_fit_rectangle(paragraph_content, rectangle)
-
-    paragraph.append_line(fragment)
-    builder = ap.text.TextBuilder(doc.pages.add())
-    builder.append_paragraph(paragraph)
-    doc.save(output_file)
-```
-
-
-## Quoi de neuf dans Aspose.PDF 23.6
-
-Prise en charge de la possibilité de définir le titre de la page HTML, Epub :
-
-```python
-
-    import aspose.pdf as ap
-
-    input_pdf = DIR_INPUT + "input.pdf"
-    output_html = DIR_OUTPUT + "output_title.html"
-    options = ap.HtmlSaveOptions()
-    options.fixed_layout = True
-    options.raster_images_saving_mode = ap.HtmlSaveOptions.RasterImagesSavingModes.AS_EMBEDDED_PARTS_OF_PNG_PAGE_BACKGROUND
-    options.parts_embedding_mode = ap.HtmlSaveOptions.PartsEmbeddingModes.EMBED_ALL_INTO_HTML
-    options.title = "NOUVELLE PAGE & TITRE"  # <-- ceci ajouté
-
-    document = ap.Document(input_pdf)
-    document.save(output_html, options)
-```
-
-## Quoi de neuf dans Aspose.PDF 23.5
-
-Depuis la version 23.5, support pour ajouter l'option RedactionAnnotation FontSize. Utilisez l'extrait de code suivant pour résoudre cette tâche :
-
-```python
-
-    import aspose.pdf as ap
-
-    doc = ap.Document(DIR_INPUT + "input.pdf")
-    # Créer une instance de RedactionAnnotation pour une région spécifique de la page
-    annot = ap.annotations.RedactionAnnotation(doc.pages[1], ap.Rectangle(367, 756.919982910156, 420, 823.919982910156, True))
-    annot.fill_color = ap.Color.black
-    annot.border_color = ap.Color.yellow
-    annot.color = ap.Color.blue
-    # Texte à imprimer sur l'annotation de rédaction
-    annot.overlay_text = "(Inconnu)"
-    annot.text_alignment = ap.HorizontalAlignment.CENTER
-    # Répéter le texte de superposition sur l'annotation de rédaction
-    annot.repeat = False
-    # Nouvelle propriété ici !
-    annot.font_size = 20
-    # Ajouter l'annotation à la collection d'annotations de la première page
-    doc.pages[1].annotations.add(annot, False)
-    # Aplatit l'annotation et rédige le contenu de la page (c'est-à-dire supprime le texte et l'image
-    # sous l'annotation rédigée)
-    annot.redact()
-    out_file = DIR_OUTPUT + "RedactPage_out.pdf"
-    doc.save(out_file)
-```
-
-
-Le support pour Python 3.5 a été interrompu. Le support pour Python 3.11 a été ajouté.
-
-## Quoi de neuf dans Aspose.PDF 23.3
-
-La version 23.3 a introduit la prise en charge de l'ajout d'une résolution à une image. Deux méthodes peuvent être utilisées pour résoudre ce problème :
-
-```python
-
-    import aspose.pdf as ap
-
-    input_file = DIR_INPUT + "input.jpg"
-    table = ap.Table()
-    table.column_widths = "600"
-    image = ap.Image()
-    image.is_apply_resolution = True
-    image.file = input_file
-    for i in range(0, 2):
+        page = document.pages.add()
+        table = ap.Table()
+        graph_info = ap.GraphInfo()
+        graph_info.dash_array = [10, 10]
+        graph_info.dash_phase = 5
+        graph_info.line_width = 3
+        table.border = ap.BorderInfo(ap.BorderSide.BOX, graph_info)
         row = table.rows.add()
-        cell = row.cells.add()
-        cell.paragraphs.add(image)
+        row.cells.add("Dashed border cell")
 
-    page.paragraphs.add(table)
+        page.paragraphs.add(table)
+
+        document.save(path_outfile)
 ```
 
-L'image sera placée avec une résolution mise à l'échelle ou vous pouvez définir les propriétés FixedWidth ou FixedHeight en combinaison avec IsApplyResolution
+## Nouveautés d'Aspose.PDF 25.7
 
-## Quoi de neuf dans Aspose.PDF 23.1
+La version 25.7 se concentre sur un meilleur support des annotations, l'ajustement du texte et la gestion des signatures numériques.
 
-Depuis la version 23.1, il est possible de créer une annotation PrinterMark.
+1. Ajuster le texte à l'intérieur des formes.
+1. Chiffrer les PDF à l'aide d'un certificat public.
+1. Ajouter des annotations cloud et polygonales.
 
-Les marques d'imprimante sont des symboles graphiques ou du texte ajoutés à une page pour aider le personnel de production à identifier les composants d'un travail à plaques multiples et à maintenir une sortie cohérente pendant la production.
- Exemples couramment utilisés dans l'industrie de l'impression incluent :
+### Chiffrer les PDF avec un certificat public
 
-- Cibles d'enregistrement pour aligner les plaques
-- Rampes de gris et barres de couleur pour mesurer les couleurs et les densités d'encre
-- Marques de coupe indiquant où le support de sortie doit être coupé
-
-Nous allons montrer l'exemple de l'option avec des barres de couleur pour mesurer les couleurs et les densités d'encre. Il y a une classe abstraite de base PrinterMarkAnnotation et de celle-ci un enfant ColorBarAnnotation - qui implémente déjà ces bandes. Vérifions l'exemple :
+Sécurisez vos PDF avec un chiffrement basé sur des certificats publics. Le chiffrement avec certificat public permet de chiffrer les PDF pour des destinataires spécifiques, garantissant que seuls les détenteurs des clés privées correspondantes peuvent ouvrir et lire le document.
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
 
-    out_file = DIR_OUTPUT  + "ColorBarTest.pdf"
-    doc = ap.Document()
-    page = doc.pages.add()
-    page.trim_box = ap.Rectangle(20, 20, 580, 820, True)
-    add_annotations(page)
-    doc.save(out_file)
+def pub_sec_encryption(self, outfile, pub_cert, crypto_algorithm):
+    """Support for public certificate encryption, allowing PDFs to be encrypted so that only specified certificate
+        holders can open the document."""
 
+    # The path to the recipient certificate
+    path_outfile = self.data_dir + outfile
+    path_cert = self.data_dir + pub_cert
 
-def add_annotations(page: ap.Page):
-    rect_black = ap.Rectangle(100, 300, 300, 320, True)
-    rect_cyan = ap.Rectangle(200, 600, 260, 690, True)
-    rect_magenta = ap.Rectangle(10, 650, 140, 670, True)
-    color_bar_black = ap.annotations.ColorBarAnnotation(page, rect_black, ap.annotations.ColorsOfCMYK.BLACK)
-    color_bar_cyan = ap.annotations.ColorBarAnnotation(page, rect_cyan, ap.annotations.ColorsOfCMYK.CYAN)
-    color_ba_magenta = ap.annotations.ColorBarAnnotation(page, rect_magenta, ap.annotations.ColorsOfCMYK.BLACK)
-    color_ba_magenta.color_of_cmyk = ap.annotations.ColorsOfCMYK.MAGENTA
-    color_bar_yellow = ap.annotations.ColorBarAnnotation(page, ap.Rectangle(400, 250, 450, 700, True), ap.annotations.ColorsOfCMYK.YELLOW)
-    page.annotations.add(color_bar_black, False)
-    page.annotations.add(color_bar_cyan, False)
-    page.annotations.add(color_ba_magenta, False)
-    page.annotations.add(color_bar_yellow, False)
+    # Create the PDF document
+    with ap.Document() as document:
+        # Add an info
+        document.info.title = "TestTitle"
+        document.info.author = "TestAuthor"
+
+        # Add a page and add some text
+        page = document.pages.add()
+        text = ap.text.TextFragment("Hello World!")
+        page.paragraphs.add(text)
+
+        # Load certificate
+        with open(path_cert, "rb") as f:
+            cert_data = f.read()
+
+        # Encrypt the PDF document
+        document.encrypt(ap.Permissions.PRINT_DOCUMENT, crypto_algorithm, [cert_data])
+
+        # Save the PDF document. A private key certificate must be installed in the storage to open the document
+        # by Adobe Acrobat.
+        document.save(path_outfile)
 ```
-Also supporte l'extraction des images vectorielles. Essayez d'utiliser le code suivant pour détecter et extraire des graphiques vectoriels :
+
+### Ajuster le texte à l'intérieur d'un rectangle
+
+Mettre automatiquement à l'échelle le texte pour qu'il rentre dans un rectangle défini. Lors de la mise à jour ou de l'extension du texte dans un PDF, il peut dépasser les limites du paragraphe original.
 
 ```python
 
-    import aspose.pdf as ap
+import re
+import aspose.pdf as ap
 
-    input_pdf = DIR_INPUT + "input.pdf"
-    output_pdf = DIR_OUTPUT + "output.svg"
-    doc = ap.Document(input_pdf)
-    doc.pages[1].try_save_vector_graphics(output_pdf)
+def fit_text_into_rectangle(self, infile, outfile):
+    """New functionality to fit expanded text content within the bounds of a paragraph’s original rectangle,
+        adjusting font size and spacing automatically."""
+
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Extract the paragraph text (or provide the specific text you want to replace)
+        text_absorber = ap.text.TextAbsorber()
+        text_absorber.visit(document)
+        paragraph_text = text_absorber.text
+        paragraph_text = paragraph_text.replace("\n", " ")
+
+        # Search for the text fragment
+        searchable_content = re.sub(" ", r"\\s+", paragraph_text)
+        text_fragment_absorber = ap.text.TextFragmentAbsorber(searchable_content, ap.text.TextSearchOptions(True))
+        document.pages.accept(text_fragment_absorber)
+        text_fragment = text_fragment_absorber.text_fragments[1]
+        # Use the text fragment’s rectangle as the target replacement area
+        text_fragment.replace_options.rectangle = text_fragment.rectangle
+        # Enable font size reduction to fit the text within the specified area
+        text_fragment.replace_options.font_size_adjustment_action = ap.text.TextReplaceOptions.FontSizeAdjustment.SHRINK_TO_FIT
+        # Optionally adjust spacing to justify the text width
+        text_fragment.replace_options.replace_adjustment_action = ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        # Duplicate the paragraph content and assign it to the text fragment
+        text_fragment.text = paragraph_text + " " + paragraph_text
+        # Save PDF document
+        document.save(path_outfile)
 ```
+
+### Ajouter des annotations cloud polygonales
+
+Améliorez les flux de travail d'examen de PDF avec des annotations cloud ou de type polygone. Les annotations polygonales vous permettent de mettre en évidence ou d'accentuer des zones spécifiques dans un PDF à l'aide de formes géométriques.
+
+```python
+
+import aspose.pdf as ap
+
+def add_cloud_polygon_annotation(self, outfile):
+    """The ability to apply “Cloudy” border effects to polygon annotations for enhanced visual appearance."""
+
+    path_outfile = self.data_dir + outfile
+
+    # Create the PDF document
+    with ap.Document() as document:
+
+        page = document.pages.add()
+        # Add Cloud Polygon (rectangle)
+        left = 100.0
+        top = 270.0
+        right = 420.0
+        bottom = 80.0
+        cloud_polygon = ap.annotations.PolygonAnnotation(page,ap.Rectangle(left, top, right, bottom, True),
+                                                            [ap.Point(left, top),ap.Point(right, top),
+                                                            ap.Point(right, bottom), ap.Point(left, bottom)])
+        cloud_polygon.color = ap.Color.blue
+        border = ap.annotations.Border(cloud_polygon)
+        border.width = 3
+        border.effect = ap.annotations.BorderEffect.CLOUDY
+        cloud_polygon.border = border
+        page.annotations.append(cloud_polygon)
+        # Add another Cloud Polygon
+        cloud_polygon = ap.annotations.PolygonAnnotation(page, ap.Rectangle(400, 400, 580, 600, True),
+                                                            [ap.Point(400, 450), ap.Point(450, 300),
+                                                            ap.Point(520, 300), ap.Point(580, 500),
+                                                            ap.Point(500, 600)])
+        cloud_polygon.color = ap.Color.dark_green
+        cloud_polygon.interior_color = ap.Color.aqua
+        border = ap.annotations.Border(cloud_polygon)
+        border.width = 3
+        border.effect = ap.annotations.BorderEffect.CLOUDY
+        cloud_polygon.border = border
+        page.annotations.append(cloud_polygon)
+        # Save PDF document
+        document.save(path_outfile)
+```
+
+## Nouveautés d'Aspose.PDF 25.6
+
+Les principales fonctionnalités de cette version :
+
+1. Prise en charge du texte alternatif des images.
+1. Accès aux informations de licence.
+1. Annotations de texte libre stylisées.
+1. Apparence personnalisable des signatures numériques.
+
+### Prise en charge du texte alternatif des images
+
+Définissez et récupérez le texte alternatif des images pour améliorer l'accessibilité aux lecteurs d'écran.
+
+```python
+
+import aspose.pdf as ap
+
+def get_set_alternative_text_for_image(self, infile, outfile):
+    """To get and set the alternative text for images"""
+
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Alternative text to be given to the image
+        alt_text = "Alternative text for image"
+        # Image for which alternative text will be set and get
+        x_image = document.pages[1].resources.images[1]
+        # Try to set alternative text for an image
+        result = x_image.try_set_alternative_text(alt_text, document.pages[1])
+        # If set is successful, then get the alternative text for the image
+        if (result):
+            alt_texts = x_image.get_alternative_text(document.pages[1])
+        # Save PDF document
+        document.save(path_outfile)
+```
+
+### Accès aux informations de licence
+
+Récupérez les métadonnées détaillées de la licence (utilisateur licencié, date d’expiration) via LicenseInfo.
+
+```python
+
+import aspose.pdf as ap
+
+def get_license_info_example(self, infile):
+    """A new way to access license information programmatically through the LicenseInfo property of the License class"""
+
+    path_infile = self.data_dir + infile
+
+    # Initialize license object
+    lic = ap.License()
+    # Set license
+    lic.set_license(path_infile)
+    # Get license info.
+    lic_license_info = lic.license_info
+    print(lic_license_info.licensed_to)
+    print(lic_license_info.subscription_expiry)
+```
+
+### Annotations de texte libre stylisées
+
+Utilisez SetTextStyle pour appliquer des styles tels que gras, italique, souligné, ou supprimer le formatage existant du texte d'annotation.
+
+```python
+
+import aspose.pdf as ap
+
+def add_free_annotation_and_set_styles(self, outfile):
+    """Extended formatting capabilities for annotation text through the SetTextStyle method family of the
+        FreeTextAnnotation class"""
+
+    path_outfile = self.data_dir + outfile
+
+    # Open PDF document
+    with ap.Document() as document:
+        # Add new page
+        page = document.pages.add()
+        # Instantiate DefaultAppearance object
+        default_appearance = ap.annotations.DefaultAppearance("Arial", 16, drawing.Color.blue)
+        # Create annotation
+        free_text = ap.annotations.FreeTextAnnotation(page, ap.Rectangle(20, 600, 400, 650, True), default_appearance)
+        # Specify the contents of annotation
+        free_text.contents = "Text of FreeTextAnnotation with different styles"
+        # Add annotation to annotations collection of page
+        page.annotations.append(free_text)
+        # Set styles for annotation text
+        free_text.set_text_style(0, 4, ap.annotations.RichTextFontStyles.ITALIC)
+        free_text.set_text_style(8, 26, ap.annotations.RichTextFontStyles.UNDERLINE | ap.annotations.RichTextFontStyles.BOLD)
+        free_text.set_text_style(27, 86, ap.annotations.RichTextFontStyles.BOLD)
+        free_text.set_text_style(42, 45, ap.annotations.RichTextFontStyles.CLEAR_EXISTING | ap.annotations.RichTextFontStyles.UNDERLINE)
+        # Save PDF document
+        document.save(path_outfile)
+```
+
+### Apparence personnalisable des signatures numériques
+
+Ajoutez des images, modifiez les polices et superposez des graphiques de signature sur le contenu d'arrière-plan pour une meilleure identité de marque ou une cohérence de conception.
+
+```python
+
+import aspose.pdf as ap
+
+def customization_features_for_digital_sign(self, infile, outfile, image_file, pfx_file):
+    """Enhanced digital signature appearance allowing signature images to appear over background text."""
+
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+    path_image = self.data_dir + image_file
+    path_pfx = self.data_dir + pfx_file
+
+    with ap.facades.PdfFileSignature() as pdf_file_signature:
+        # Bind PDF document
+        pdf_file_signature.bind_pdf(path_infile)
+        # Create a rectangle for signature location
+        rect = drawing.Rectangle(10, 10, 300, 50)
+        # Create any of the three signature types
+        signature = ap.forms.PKCS7Detached(path_pfx, "12345")
+        # Create signature appearance
+        signature_custom_appearance = ap.forms.SignatureCustomAppearance()
+        signature_custom_appearance.font_size = 6
+        signature_custom_appearance.font_family_name = "Times New Roman"
+        signature_custom_appearance.digital_signed_label = "Signed by:"
+        signature_custom_appearance.is_foreground_image = True
+        # Set signature appearance
+        signature.custom_appearance = signature_custom_appearance
+        # Set signature appearance
+        pdf_file_signature.signature_appearance = path_image
+        pdf_file_signature.sign(1, True, rect, signature)
+        #  Save PDF document
+        pdf_file_signature.save(path_outfile)
+```
+
+## Nouveautés d'Aspose.PDF 25.5
+
+La dernière mise à jour d'Aspose.PDF introduit plusieurs améliorations puissantes qui améliorent l'accessibilité, la compatibilité et la sécurité des documents. Les développeurs peuvent désormais extraire les certificats numériques directement à partir de fichiers PDF signés, permettant des vérifications avancées et des contrôles de conformité.
+
+1. Extraire les certificats des signatures PDF.
+1. Créer des listes ordonnées structurées dans les PDF balisés.
+1. Vérifier les signatures avec des certificats à clé publique.
+1. Convertir les formulaires XFA dynamiques en PDF AcroForm.
+1. Remplacement de polices dans la conversion PDF - XPS.
+
+### Extraire les certificats des signatures PDF
+
+Récupérez les certificats incorporés en utilisant 'extract_certificate()'.
+
+```python
+
+import aspose.pdf as ap
+
+def extract_certificate(self, infile):
+    path_infile = self.data_dir + infile
+
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        with ap.facades.PdfFileSignature(document) as signature:
+            # Get signature names
+            signature_names = signature.get_signature_names(True)
+            for signature_name in signature_names:
+                # Extract certificate
+                certificate = []
+                if signature.try_extract_certificate(signature_name, certificate):
+                    print(certificate[0] is not None)
+```
+
+### Créer des listes ordonnées structurées dans les PDF balisés
+
+Générez des listes numérotées accessibles (avec des éléments imbriqués) dans les documents balisés.
+
+```python
+
+import aspose.pdf as ap
+
+def create_ordered_list(self, outfile):
+    path_outfile = self.data_dir + outfile
+
+    # Create or open PDF document
+    with ap.Document() as document:
+        content = document.tagged_content
+        root_element = content.root_element
+        content.set_language("en-US")
+        root_list = content.create_list_element()
+        span_for_lbl_1 = content.create_span_element()
+        span_for_lbl_1.set_text("1. ")
+        position_settings = ap.tagged.PositionSettings()
+        position_settings.is_in_line_paragraph = True
+        span_for_lbl_1.adjust_position(position_settings)
+        span_for_body_1 = content.create_span_element()
+        span_for_body_1.set_text("bread")
+        span_for_body_1.adjust_position(position_settings)
+        lbl_1 = content.create_list_lbl_element()
+        lbl_1.append_child(span_for_body_1, True)
+        l_body_1 = content.create_list_l_body_element()
+        l_body_1.append_child(span_for_lbl_1, True)
+        li_1 = content.create_list_li_element()
+        li_1.append_child(lbl_1, True)
+        li_1.append_child(l_body_1, True)
+        root_list.append_child(li_1, True)
+        span_for_lbl_2 = content.create_span_element()
+        span_for_lbl_2.set_text("2. ")
+        span_for_body_2 = content.create_span_element()
+        span_for_body_2.set_text("milk")
+        span_for_body_2.adjust_position(position_settings)
+        lbl_2 = content.create_list_lbl_element()
+        lbl_2.append_child(span_for_lbl_2, True)
+        l_body_2 = content.create_list_l_body_element()
+        l_body_2.append_child(span_for_body_2, True)
+        li_2 = content.create_list_li_element()
+        li_2.append_child(lbl_2, True)
+        li_2.append_child(l_body_2, True)
+        root_list.append_child(li_2, True)
+        nested_list_depth_1 = content.create_list_element()
+        span_for_lbl_3_1 = content.create_span_element()
+        span_for_lbl_3_1.set_text("3.1. ")
+        position_settings_lbl_3_1 = ap.tagged.PositionSettings()
+        position_settings_lbl_3_1.is_in_line_paragraph = False
+        margin_info = ap.MarginInfo()
+        margin_info.left = 50
+        position_settings_lbl_3_1.margin = margin_info
+        span_for_lbl_3_1.adjust_position(position_settings_lbl_3_1)
+        span_for_body_3_1 = content.create_span_element()
+        span_for_body_3_1.set_text("apples")
+        span_for_body_3_1.adjust_position(position_settings)
+        lbl_3_1 = content.create_list_lbl_element()
+        lbl_3_1.append_child(span_for_lbl_3_1, True)
+        l_body_3_1 = content.create_list_l_body_element()
+        l_body_3_1.append_child(span_for_body_3_1, True)
+        li_3_1 = content.create_list_li_element()
+        li_3_1.append_child(lbl_3_1, True)
+        li_3_1.append_child(l_body_3_1, True)
+        nested_list_depth_1.append_child(li_3_1, True)
+        span_for_lbl_3_2 = content.create_span_element()
+        span_for_lbl_3_2.set_text("3.2. ")
+        span_for_lbl_3_2.adjust_position(position_settings_lbl_3_1)
+        span_for_body_3_2 = content.create_span_element()
+        span_for_body_3_2.set_text("banana")
+        span_for_body_3_2.adjust_position(position_settings)
+        lbl_3_2 = content.create_list_lbl_element()
+        lbl_3_2.append_child(span_for_lbl_3_2, True)
+        l_body_3_2 = content.create_list_l_body_element()
+        l_body_3_2.append_child(span_for_body_3_2, True)
+        li_3_2 = content.create_list_li_element()
+        li_3_2.append_child(lbl_3_2, True)
+        li_3_2.append_child(l_body_3_2, True)
+        nested_list_depth_1.append_child(li_3_2, True)
+        span_for_lbl_3 = content.create_span_element()
+        span_for_lbl_3.set_text("3. ")
+        span_for_body_3 = content.create_span_element()
+        span_for_body_3.set_text("fruits")
+        span_for_body_3.adjust_position(position_settings)
+        lbl_3 = content.create_list_lbl_element()
+        lbl_3.append_child(span_for_lbl_3, True)
+        l_body_3 = content.create_list_l_body_element()
+        l_body_3.append_child(span_for_body_3, True)
+        li_3 = content.create_list_li_element()
+        li_3.append_child(lbl_3, True)
+        li_3.append_child(l_body_3, True)
+        l_body_3.append_child(nested_list_depth_1, True)
+        root_list.append_child(li_3, True)
+        root_element.append_child(root_list, True)
+        # Save Tagged PDF Document
+        document.save(path_outfile)
+```
+
+### Vérifier les signatures avec des certificats à clé publique
+
+Validez les signatures numériques en utilisant des certificats à clé publique externes.
+
+```python
+
+import aspose.pdf as ap
+
+def verify_with_public_key_certificate1(self, certificate, infile):
+    path_infile = self.data_dir + infile
+
+    # Create an instance of PdfFileSignature for working with signatures in the document
+    with ap.facades.PdfFileSignature(path_infile) as file_sign:
+        # Get a list of signatures
+        signature_names = file_sign.get_signature_names(True)
+        # Verify the signature with the given name.
+        return file_sign.verify_signature(signature_names[0], certificate)
+```
+
+### Convertir les formulaires XFA dynamiques en PDF AcroForm
+
+Standardisez les formulaires XFA avec 'ignore_needs_rendering'.
+
+```python
+
+import aspose.pdf as ap
+
+def convert_xfa_form_with_ignore_needs_rendering(self, infile, outfile):
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+
+    # Load dynamic XFA form
+    with ap.Document(path_infile) as document:
+        # check if XFA is present & if rendering should be overwritten
+        if not document.form.needs_rendering and document.form.has_xfa:
+            document.form.ignore_needs_rendering = True
+        # Set the form fields type as standard AcroForm
+        document.form.type = ap.forms.FormType.STANDARD
+        # Save the resultant PDF
+        document.save(path_outfile)
+```
+
+### Remplacement de polices dans la conversion PDF - XPS
+
+Remplacez les polices manquantes par une police de secours par défaut (par ex., « Courier New »).
+
+```python
+
+import aspose.pdf as ap
+
+def replace_font_when_converting_pdf_to_xps(self, infile, outfile):
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+
+    # Create XpsSaveOptions instance
+    xps_save_options = ap.XpsSaveOptions()
+    # use_embedded_true_type_fonts option specifies whether to use embedded TrueType fonts
+    xps_save_options.use_embedded_true_type_fonts = False
+    # The specified default font will be used if the embedded font name cannot be found in the system
+    xps_save_options.default_font = "Courier New"
+    # Open PDF document
+    doc = ap.Document(path_infile)
+    # Save the resultant XPS
+    doc.save(path_outfile, xps_save_options)
+```
+
+## Nouveautés d'Aspose.PDF 25.4
+
+### Auto-étiquetage lors de la conversion PDF/A
+
+Convertissez les PDF en PDF/A-1b avec création automatique de structure logique pour améliorer l'accessibilité.
+
+```python
+
+import aspose.pdf as ap
+
+def convert_to_pdfa_with_automatic_tagging(self, infile, outfile, outlogfile):
+    path_infile = self.data_dir + infile
+    path_outfile = self.data_dir + outfile
+    path_outlogfile = self.data_dir + outlogfile
+
+    # Open PDF document
+    with ap.Document(path_infile) as document:
+        # Create conversion options
+        options = ap.PdfFormatConversionOptions(path_outlogfile, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE)
+        # Create auto-tagging settings
+        # aspose.pdf.AutoTaggingSettings.default may be used to set the same settings as given below
+        auto_tagging_settings = ap.AutoTaggingSettings()
+        # Enable auto-tagging during the conversion process
+        auto_tagging_settings.enable_auto_tagging = True
+        # Use the heading recognition strategy that's optimal for the given document structure
+        auto_tagging_settings.heading_recognition_strategy = ap.HeadingRecognitionStrategy.AUTO
+        # Assign auto-tagging settings to be used during the conversion process
+        options.auto_tagging_settings = auto_tagging_settings
+        # During the conversion, the document logical structure will be automatically created
+        document.convert(options)
+        # Save PDF document
+        document.save(path_outfile)
+```
+
+
