@@ -1,162 +1,27 @@
 ---
-title: التعليقات التوضيحية في PDF
-linktitle: التعليقات التوضيحية في PDF
+title: تعليقات PDF
+linktitle: تعليقات PDF
 type: docs
 weight: 100
 url: /ar/python-net/annotations/
-description: يوضح هذا القسم كيفية استخدام جميع أنواع التعليقات التوضيحية في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: استكشف كيفية إضافة وتعديل واستخراج التعليقات التوضيحية من ملفات PDF باستخدام Aspose.PDF في Python و .NET.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية إضافة التعليقات التوضيحية إلى ملف PDF باستخدام Python
+Abstract: تناقش المقالة استخدام التعليقات التوضيحية في ملفات PDF كعناصر تفاعلية تعزز تفاعل المستند ومشاركة المستخدم. وتسلط الضوء على قدرات مكتبة Aspose.PDF for Python في دعم أنواع مختلفة من التعليقات التوضيحية، بما في ذلك التعليقات النصية، وتعليقات التحديد، وتعليقات الأشكال، وتعليقات الوسائط المتعددة. تخدم التعليقات التوضيحية عدة أغراض مثل التعليق، والمراجعة، ووضع العلامات على المستندات، وتقديم الملاحظات، مما يسهّل التعاون والتواصل وفهماً أعمق لمحتوى المستند. كما تشير المقالة إلى قسم يوضح كيفية إضافة وحذف واسترجاع التعليقات التوضيحية، مقدمًا إرشادات لإدارة هذه العناصر بفعالية داخل مستندات PDF.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "التعليقات التوضيحية في PDF باستخدام بايثون",
-    "alternativeHeadline": "العمل مع التعليقات التوضيحية في ملفات PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, python, annotations",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يوضح هذا القسم كيفية استخدام جميع أنواع التعليقات التوضيحية في ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لبايثون."
-}
-</script>
 
+التعليقات التوضيحية في ملفات PDF هي عناصر تفاعلية تتيح لك إضافة ملاحظات، وتحديد نصوص، ورسم أشكال، وإرفاق ملفات، والقيام بإجراءات أخرى تُحسّن التصفح، والتفاعل، والتعامل.
 
-Annotations in PDFs are interactive elements that allow you to add notes, highlight text, draw shapes, attach files, and perform other actions that improve browsing, interactivity, and interaction.
+تدعم مكتبة Aspose.PDF for Python أنواعًا مختلفة من التعليقات التوضيحية، بما في ذلك التعليقات النصية (مثل النص وتعليق المنبثق)، وتعليقات التحديد (مثل تمييز النص)، وتعليقات الأشكال (مثل الدائرة، والخط المتعدد، والمضلع، والخط، والحبر)، وتعليقات الوسائط المتعددة (مثل الشاشة، والصوت، والودجت، و3D) وأكثر.
 
-التعليقات التوضيحية في ملفات PDF هي عناصر تفاعلية تتيح لك إضافة ملاحظات، وتظليل النص، ورسم الأشكال، وإرفاق الملفات، وأداء إجراءات أخرى تحسن من التصفح والتفاعل والتفاعل.
-
-The Aspose.PDF for Python Library supports various types of annotations, including text annotations (such as text, and popup annotation), highlights annotations (such as text markup), figures annotations( such as circle, polyline, polygon, line, and ink), multimedia annotations ( there are screen, sound, widget, and 3D) and more.
-
-تدعم مكتبة Aspose.PDF لـ Python أنواعًا مختلفة من التعليقات التوضيحية، بما في ذلك التعليقات التوضيحية النصية (مثل النص، والتعليق المنبثق)، وتعليقات التظليل (مثل تعليم النص)، وتعليقات الأشكال (مثل الدائرة، والخط المتعدد، والمضلع، والخط، والحبر)، والتعليقات التوضيحية المتعددة الوسائط (يوجد شاشة، وصوت، وودجيت، وثلاثية الأبعاد) والمزيد.
-
-Annotations can be used to comment, review, mark documents, provide feedback, or add additional information. Annotations allow to establish cooperation, facilitate communication, and improve understanding of the content of documents. They enhance collaboration, improve communication, and make PDF documents more dynamic and engaging for users.
-
-يمكن استخدام التعليقات التوضيحية للتعليق، أو المراجعة، أو وضع علامات على المستندات، أو تقديم ملاحظات، أو إضافة معلومات إضافية. تتيح التعليقات التوضيحية إقامة تعاون، وتسهيل التواصل، وتحسين فهم محتوى المستندات. إنها تعزز التعاون، وتحسن التواصل، وتجعل مستندات PDF أكثر ديناميكية وجاذبية للمستخدمين.
-
-You are able to do the following:
+يمكن استخدام التعليقات التوضيحية للتعليق، والمراجعة، ووضع علامات على المستندات، وتقديم الملاحظات، أو إضافة معلومات إضافية. تتيح التعليقات التوضيحية إنشاء التعاون، وتسهيل التواصل، وتحسين فهم محتوى المستندات. إنها تعزز التعاون، وتحسن التواصل، وتجعل مستندات PDF أكثر ديناميكية وجاذبية للمستخدمين.
 
 يمكنك القيام بما يلي:
 
-- [Add, Delete and Get Annotation](/pdf/ar/python-net/add-delete-and-get-annotation/) - this section explains how to work with all types of allowed annotations.
+- [إضافة وحذف واسترجاع التعليق](/pdf/python-net/add-delete-and-get-annotation/) - يشرح هذا القسم كيفية العمل مع جميع أنواع التعليقات المسموح بها.
 
-- [إضافة وحذف والحصول على التعليقات التوضيحية](/pdf/ar/python-net/add-delete-and-get-annotation/) - يشرح هذا القسم كيفية العمل مع جميع أنواع التعليقات التوضيحية المسموح بها.
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لبايثون",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

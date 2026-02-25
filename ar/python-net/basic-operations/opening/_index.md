@@ -1,30 +1,33 @@
 ---
-title: فتح مستند PDF برمجيًا
+title: فتح مستند PDF برمجياً
 linktitle: فتح PDF
 type: docs
 weight: 20
 url: /ar/python-net/open-pdf-document/
-description: تعلم كيفية فتح ملف PDF في مكتبة Aspose.PDF لـ Python عبر .NET. يمكنك فتح ملف PDF موجود، مستند من دفق، ومستند PDF مشفر.
-lastmod: "2022-12-22"
-sitemap:
-    changefreq: "weekly"
+description: تعلم كيفية فتح ملف PDF في بايثون باستخدام مكتبة Aspose.PDF لبايثون عبر .NET. يمكنك فتح PDF موجود، أو مستند من تدفق، ومستند PDF مشفر.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: فتح مستندات PDF باستخدام مكتبة Aspose.PDF في بايثون
+Abstract: توفر هذه المقالة دليلًا لفتح مستندات PDF الموجودة باستخدام مكتبة Aspose.PDF في بايثون. توضح ثلاث طرق لتحقيق ذلك - فتح PDF بتحديد اسم الملف، فتح PDF من تدفق، وفتح PDF مشفر بتوفير كلمة مرور. يتضمن كل طريقة مقطع شفرة يوضح كيفية استخدام مكتبة Aspose.PDF للوصول إلى PDF وطباعة عدد الصفحات التي يحتويها. توضح هذه الأمثلة مرونة ووظائف Aspose.PDF للتعامل مع سيناريوهات مختلفة للوصول إلى ملفات PDF.
 ---
 
 ## فتح مستند PDF موجود
 
-هناك عدة طرق لفتح مستند. الأسهل هو تحديد اسم الملف.
+هناك عدة طرق لفتح مستند. أسهلها هو تحديد اسم الملف.
 
 ```python
 
     import aspose.pdf as ap
 
-    # فتح المستند
+    # Open document
     document = ap.Document(input_pdf)
-    print("الصفحات: " + str(len(document.pages)))
+    print("Pages: " + str(len(document.pages)))
 ```
 
-## فتح مستند PDF موجود من دفق
+## فتح مستند PDF موجود من تدفق
 
 ```python
 
@@ -32,9 +35,9 @@ sitemap:
 
     input_pdf = DIR_INPUT + "sample.pdf"
     stream = io.FileIO(input_pdf, 'r')
-    # فتح المستند
+    # Open document
     document = ap.Document(stream)
-    print("الصفحات: " + str(len(document.pages)))
+    print("Pages: " + str(len(document.pages)))
 ```
 
 ## فتح مستند PDF مشفر
@@ -43,7 +46,8 @@ sitemap:
 
     import aspose.pdf as ap
 
-    # فتح المستند
+    # Open document
     document = ap.Document(input_pdf, password)
-    print("الصفحات: " + str(len(document.pages)))
+    print("Pages: " + str(len(document.pages)))
 ```
+

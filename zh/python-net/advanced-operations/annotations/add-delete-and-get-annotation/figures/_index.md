@@ -1,93 +1,31 @@
 ---
-title: 用Python添加图形注释
+title: 使用 Python 添加图形注释
 linktitle: 图形注释
 type: docs
 weight: 30
 url: /zh/python-net/figures-annotation/
-description: 本文描述了如何使用Aspose.PDF for Python通过.NET添加、获取和删除PDF文档中的图形注释
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: 本文描述如何使用 Aspose.PDF for Python via .NET 在 PDF 文档中添加、获取和删除图形注释
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
----
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "用Python添加图形注释",
-    "alternativeHeadline": "如何在PDF中添加图形注释",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, 图形注释, 多边形注释, 线条注释, 方形注释, 圆形注释",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/figures-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/figures-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "本文描述了如何使用Aspose.PDF for Python添加、获取和删除PDF文档中的图形注释"
-}
-</script>
+TechArticle: true
+AlternativeHeadline: 关于如何在 PDF 中操作图形注释的指南
+Abstract: 本文提供了使用 Aspose.PDF for Python 在 PDF 文档中添加、检索和删除方形、圆形、多边形和折线注释的完整指南。方形和圆形注释分别使用矩形和椭圆形状在 PDF 页面上直观地突出显示特定区域。文章包含逐步说明和 Python 代码片段，演示通过加载 PDF 文件、配置注释属性（如标题、颜色和不透明度）并将其附加到 PDF 页面来创建这些注释。此外，文章还详细介绍了按类型检索注释、打印其矩形尺寸以及从 PDF 文档中删除注释的方法。还覆盖了多边形和折线注释，其中多边形由一系列相连的顶点构成闭合形状，而折线则以开放方式连接顶点。文档提供了代码示例，阐明向 PDF 添加这些注释的过程，以及访问和移除它们的方法。
 
+---
 
 ## 添加方形和圆形注释
 
-在 PDF 文档中，方形注释指的是一种特定类型的注释，它以方形形状表示。方形注释用于突出显示或引起文档中特定区域或部分的注意。
+在 PDF 文档中，方形注释指的是一种以正方形形状表示的特定类型注释。方形注释用于突出或引起对文档中特定区域或章节的注意。
 
-[方形](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/)和[圆形](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/)注释分别在页面上显示一个矩形或椭圆。
+[方形](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) 和 [圆形](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) 注释应分别在页面上显示矩形或椭圆。
 
 创建方形或圆形注释的步骤：
 
 1. 加载 PDF 文件 - 新建 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)。
-1. 创建新的 [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) 并设置参数（新的矩形、标题、颜色、内部颜色、不透明度）。
-1. 然后我们需要将方形注释添加到页面中。
+1. 创建新的 [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) 并设置参数（new Rectangle、title、color、interior_color、opacity）。
+1. 然后需要将方形注释添加到页面。
 
 以下代码片段展示了如何在 PDF 页面中添加方形注释。
 
@@ -98,7 +36,7 @@ sitemap:
     document = ap.Document(input_file)
 
     squareAnnotation = ap.annotations.SquareAnnotation(document.pages[1], ap.Rectangle(60, 600, 250, 450, True))
-    squareAnnotation.title = "约翰·史密斯"
+    squareAnnotation.title = "John Smith"
     squareAnnotation.color = ap.Color.blue
     squareAnnotation.interior_color = ap.Color.blue_violet
     squareAnnotation.opacity = 0.25
@@ -108,19 +46,19 @@ sitemap:
     document.save(output_file)
 ```
 
-以下代码片段向您展示了如何在 PDF 页面中添加圆形注释。
+以下代码片段展示了如何在 PDF 页面中添加圆形注释。
 
 ```python
 
     import aspose.pdf as ap
 
-    # 打开文档
+    # Open document
     document = ap.Document(input_file)
 
     circleAnnotation = ap.annotations.CircleAnnotation(
         document.pages[1], ap.Rectangle(270, 160, 483, 383, True)
     )
-    circleAnnotation.title = "约翰·史密斯"
+    circleAnnotation.title = "John Smith"
     circleAnnotation.color = ap.Color.red
     circleAnnotation.interior_color = ap.Color.misty_rose
     circleAnnotation.opacity = 0.5
@@ -132,10 +70,9 @@ sitemap:
     document.save(output_file)
 ```
 
+例如，我们将看到将方形和圆形注释添加到 PDF 文档后的以下结果：
 
-例如，我们将看到在 PDF 文档中添加方形和圆形注释的以下结果：
-
-![Circle and Square Annotation demo](circle_demo.png)
+![圆形和方形注释示例](circle_demo.png)
 
 ### 获取圆形注释
 
@@ -175,9 +112,10 @@ sitemap:
         print(pa.rect)
 ```
 
+
 ### 删除圆形注释
 
-以下代码片段展示了如何从PDF文件中删除圆形注释。
+以下代码片段展示了如何从 PDF 文件中删除圆形注释。
 
 ```python
 
@@ -198,7 +136,7 @@ sitemap:
 
 ### 删除方形注释
 
-以下代码片段展示了如何从PDF文件中删除方形注释。
+以下代码片段展示了如何从 PDF 文件中删除方形注释。
 
 ```python
 
@@ -219,19 +157,19 @@ sitemap:
 
 ## 添加多边形和折线注释
 
-折线工具允许您在文档上创建具有任意边数的形状和轮廓。
+Polyline 工具允许您在文档上创建具有任意边数的形状和轮廓。
 
-[Polygon Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) 表示页面上的多边形。它们可以具有任意数量的由直线连接的顶点。
+[Polygon Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) 表示页面上的多边形。它们可以有任意数量的顶点，由直线连接。
 
-[Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) 也类似于多边形，唯一的区别是第一个和最后一个顶点没有隐式连接。
+[Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) 也类似于多边形，唯一的区别是首尾顶点不隐式相连。
 
-我们创建多边形注释的步骤：
+创建多边形注释的步骤：
 
-1. 加载 PDF 文件 - 新的 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)。
-1. 创建新的 [Polygon Annotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) 并设置多边形参数（新的矩形、新的点、标题、颜色、内部颜色和不透明度）。
-1. 之后我们可以将注释添加到页面。
+1. 加载 PDF 文件 - 新建 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)。
+1. 创建新的 [Polygon Annotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) 并设置多边形参数（new Rectangle、new Points、title、color、interior_color 和 opacity）。
+1. 然后我们可以将注释添加到页面。
 
-以下代码片段显示了如何向 PDF 文件添加多边形注释：
+以下代码片段展示了如何向 PDF 文件添加多边形注释：
 
 ```python
 
@@ -259,12 +197,11 @@ sitemap:
     document.save(output_file)
 ```
 
-
-以下代码片段显示了如何向 PDF 文件添加折线注释：
+以下代码片段展示了如何向 PDF 文件添加折线注释：
 
 1. 加载 PDF 文件 - 新建 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)。
-1. 创建新的 [Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) 并设置多边形参数（新建矩形、新建点、标题、颜色、内颜色和不透明度）。
-1. 之后我们可以将注释添加到页面。
+1. 创建新的 [Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) 并设置多边形参数（new Rectangle、new Points、title、color、interior_color 和 opacity）。
+1. 然后我们可以将注释添加到页面。
 
 ```python
 
@@ -292,7 +229,6 @@ sitemap:
     document.pages[1].annotations.append(polylineAnnotation)
     document.save(output_file)
 ```
-
 
 ### 获取多边形和折线注释
 
@@ -351,7 +287,6 @@ sitemap:
     document.save(output_file)
 ```
 
-
 以下代码片段展示了如何从 PDF 文件中删除折线注释。
 
 ```python
@@ -371,66 +306,4 @@ sitemap:
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

@@ -1,91 +1,28 @@
 ---
-title: 在 PDF 中使用 Python 处理文本
+title: 使用 Python 在 PDF 中处理文本
 linktitle: 处理文本
 type: docs
 weight: 30
 url: /zh/python-net/working-with-text/
 description: 本节解释了各种文本处理技术。了解如何使用 Aspose.PDF for Python 添加、替换、旋转、搜索文本。
-lastmod: "2024-01-17"
-sitemap:
+lastmod: "2025-09-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 如何使用 Python 在 PDF 中处理文本
+Abstract: 本文讨论了在 PDF 文件中添加和操控文本的必要性及方法，这在插入翻译、字幕或填写表单等任务中是常见需求。文章强调 Aspose.PDF for Python via .NET 是与 PDF 内容交互的综合解决方案。文中概述了该库的多种功能，包括使用可自定义字体和超链接向 PDF 添加文本、实现工具提示以及使用行缩进和边框等特性进行文本格式化。此外，本文还说明了如何使用特定类进行文本替换和旋转，例如使用 'TextFragmentAbsorber' 进行文本替换，使用 'TextFragment' 类进行文本旋转。文章亦涵盖了在 PDF 页面中搜索和检索文本，以及确定多行文本片段的换行方式，并提供了每个功能的详细指南链接。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "在 PDF 中使用 Python 处理文本",
-    "alternativeHeadline": "在 PDF 文件中添加、旋转、搜索和删除文本",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, 添加文本, 搜索文本, 删除文本, 操作 pdf 中的文本",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-text/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-text/"
-    },
-    "dateModified": "2024-01-04",
-    "description": "本节解释了各种文本处理技术。了解如何使用 Aspose.PDF for Python 添加、替换、旋转、搜索文本。"
-}
-</script>
 
-
-我们有时需要在 PDF 文件中添加文本。例如，当您想在主文本下添加翻译，在图像旁边放置标题，或只是填写申请表。 如果所有文本元素都能以您自己想要的样式进行格式化，这也会很有帮助。 在您的 PDF 文件中最常见的文本操作是：向 PDF 添加文本，格式化 PDF 文件中的文本，替换和旋转文档中的文本。**Aspose.PDF for Python via .NET** 是最佳解决方案，具备与 PDF 内容交互所需的一切。
+我们有时需要向 PDF 文件添加文本。例如，当你想在主文本下方添加翻译、在图像旁放置字幕，或仅仅填写申请表时。若所有文本元素都能按你希望的样式进行格式化，将更加便利。PDF 文件中最常用的文本操作包括：向 PDF 添加文本、在 PDF 文件内格式化文本、在文档中替换和旋转文本。**Aspose.PDF for Python via .NET** 是满足所有 PDF 内容交互需求的最佳解决方案。
 
 您可以执行以下操作：
 
-- [向 PDF 文件添加文本](/pdf/zh/python-net/add-text-to-pdf-file/) - 将文本添加到您的 PDF 中，使用流和文件中的字体，添加 HTML 字符串，添加超链接等。
-- [PDF 工具提示](/pdf/zh/python-net/pdf-tooltip/) - 您可以通过使用 Python 添加不可见按钮来为搜索文本添加工具提示。
-- [PDF 内部的文本格式](/pdf/zh/python-net/text-formatting-inside-pdf/) - 在格式化文本时，您可以为文档添加许多功能。
- 增加行缩进，添加文本边框，添加下划线文本，使用 Aspose.PDF 库添加换行符。
-- [替换 PDF 中的文本](/pdf/zh/python-net/replace-text-in-pdf/) - 替换 PDF 文档所有页面中的文本。您首先需要使用 TextFragmentAbsorber。
-- [旋转 PDF 内部文本](/pdf/zh/python-net/rotate-text-inside-pdf/) - 使用 TextFragment 类的旋转属性旋转 PDF 内的文本。
-- [搜索并从 PDF 文档的页面中获取文本](/pdf/zh/python-net/search-and-get-text-from-pdf/) - 您可以使用 TextFragmentAbsorber 类来搜索和获取页面中的文本。
-- [确定换行](/pdf/zh/python-net/determine-line-break/) - 本主题解释如何跟踪多行文本片段的换行。
+- [向 PDF 文件添加文本](/pdf/python-net/add-text-to-pdf-file/) - 向您的 PDF 添加文本，使用来自 stream 和文件的字体，添加 HTML 字符串，添加超链接等。
+- [PDF 工具提示](/pdf/python-net/pdf-tooltip/) - 您可以通过使用 Python 添加不可见按钮，为搜索到的文本添加工具提示。
+- [PDF 内部文本格式化](/pdf/python-net/text-formatting-inside-pdf/) - 在对文档内部文本进行格式化时，您可以添加许多功能。添加行缩进、文本边框、下划线文本、使用 Aspose.PDF 库添加换行等。
+- [在 PDF 中替换文本](/pdf/python-net/replace-text-in-pdf/) - 替换 PDF 文档所有页面中的文本。首先需要使用 TextFragmentAbsorber。
+- [在 PDF 中旋转文本](/pdf/python-net/rotate-text-inside-pdf/) - 使用 TextFragment 类的 rotation 属性在 PDF 中旋转文本。
+- [搜索并获取 PDF 文档页面中的文本](/pdf/python-net/search-and-get-text-from-pdf/) - 您可以使用 TextFragmentAbsorber 类来搜索并获取页面中的文本。
+- [使用 FloatingBox](/pdf/python-net/floating-box/) - 本页解释如何在浮动框内格式化文本。
+

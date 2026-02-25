@@ -1,164 +1,50 @@
 ---
-title: ملء AcroForm - ملء نموذج PDF باستخدام Python
+title: ملء AcroForm - ملء نموذج PDF باستخدام بايثون
 linktitle: ملء AcroForm
 type: docs
 weight: 20
 url: /ar/python-net/fill-form/
-description: يمكنك ملء النماذج في مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ Python.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: يمكنك ملء النماذج في مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF للبايثون.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية ملء حقل النموذج في PDF باستخدام بايثون
+Abstract: توفر المقالة دليلًا حول كيفية ملء حقل نموذج في مستند PDF باستخدام مكتبة Aspose.PDF للبايثون. تشرح العملية كيفية الوصول إلى حقل نموذج من مجموعة نماذج المستند وتعيين قيمته عبر خاصية قيمة الحقل. يوضح كود المثال كيفية فتح مستند PDF، والتنقُّل عبر حقول النموذج للعثور على حقل معين باستخدام اسمه الجزئي (في هذه الحالة، "Field 1")، وتعديل قيمة حقل TextBoxField إلى "777". أخيرًا، يتم حفظ المستند المحدث إلى ملف إخراج. يتم توفير روابط إلى وثائق Aspose ذات الصلة لمزيد من المرجعية.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "ملء AcroForm",
-    "alternativeHeadline": "كيفية ملء AcroForm في PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "إنشاء مستند pdf",
-    "keywords": "pdf, python, ملء acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/fill-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/fill-form/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "يمكنك ملء النماذج في مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ Python."
-}
-</script>
 
+## ملء حقل النموذج في مستند PDF
 
-## ملء حقل نموذج في وثيقة PDF
-
-لملء حقل نموذج، احصل على الحقل من مجموعة [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) الخاصة بكائن Document. ثم قم بتعيين قيمة الحقل باستخدام خاصية [value](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#properties).
-
-يختار هذا المثال [TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) ويعين قيمته باستخدام خاصية Value.
+المثال التالي يملأ حقول نموذج PDF بقيم جديدة باستخدام Aspose.PDF للبايثون عبر .NET ويحفظ المستند المحدث. يدعم تحديث حقول متعددة عن طريق تحديد قاموس بأسماء الحقول والقيم.
 
 ```python
 
     import aspose.pdf as ap
 
-    # فتح الوثيقة
-    pdfDocument = ap.Document(input_file)
-    for formField in pdfDocument.form.fields:
-        if formField.partial_name == "Field 1":
-            # تعديل قيمة الحقل
-            formField.value = "777"
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
 
-    # حفظ الوثيقة المحدثة
-    pdfDocument.save(output_pdf)
+    # Define the new field values
+    new_field_values = {
+        "First Name": "Alexander_New",
+        "Last Name": "Greenfield_New",
+        "City": "Yellowtown_New",
+        "Country": "Redland_New"
+    }
+
+    # Create a Form object from the input PDF file
+    form = ap.facades.Form(path_infile)
+
+    # Fill out the form fields with the new values
+    for formField in form.field_names:
+        if formField in new_field_values:
+            form.fill_field(formField, new_field_values[formField])
+
+    # Save the modified form to the output PDF file
+    form.save(path_outfile)
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

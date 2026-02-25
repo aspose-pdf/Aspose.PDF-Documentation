@@ -1,172 +1,138 @@
 ---
-title: 使用 Python 更改 PDF 页面大小
-linktitle: 更改 PDF 页面大小
+title: 使用 Python 更改页面大小
+linktitle: 更改页面大小
 type: docs
-weight: 60
+weight: 40
 url: /zh/python-net/change-page-size/
 description: 使用 Aspose.PDF for Python via .NET 库更改 PDF 文档的页面大小。
-lastmod: "2023-04-17"
-sitemap:
+lastmod: "2025-11-16"
+sitemap: 
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Python 更改页面大小
+Abstract: 本文演示了如何使用 Aspose.PDF 读取和修改 PDF 页面尺寸。Get Page Size 示例检索特定 PDF 页面的宽度和高度，帮助用户检查页面布局、验证格式或分析文档结构。Set Page Size 示例展示了如何更改页面尺寸，例如将首页转换为 A4 大小，同时在修改前后显示框属性（CropBox、TrimBox、ArtBox、BleedBox、MediaBox）。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "使用 Python 更改 PDF 页面大小",
-    "alternativeHeadline": "使用 Python 调整 PDF 页面大小",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, 更改 pdf 大小, 调整 pdf 大小",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/change-page-size/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/change-page-size/"
-    },
-    "dateModified": "2023-04-04",
-    "description": "使用 Aspose.PDF for Python via .NET 库更改 PDF 文档的页面大小。"
-}
-</script>
 
+Aspose.PDF for Python via .NET 让您只需几行代码即可更改 PDF 页面大小。本章节展示如何使用 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 和 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) API 更新页面尺寸。
 
-## 更改 PDF 页面大小
+{{% alert color="primary" %}}
 
-通过 .NET 的 Aspose.PDF for Python 允许您在 Python 应用程序中使用简单的代码行更改 PDF 页面大小。本主题解释如何更新/更改现有 PDF 文件的页面尺寸（大小）。
+请注意，高度和宽度属性使用点（point）作为基本单位，其中 1 英寸 = 72 点，1 厘米 = 1/2.54 英寸 = 0.3937 英寸 = 28.3 点。
 
-[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 类包含 [set_page_size()](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) 方法，允许您设置页面大小。下面的代码片段通过几个简单的步骤更新页面尺寸：
+{{% /alert %}}
 
-1. 加载源 PDF 文件。
-1. 将页面获取到 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 对象中。
-1. 获取指定页面。
-1. 调用 set_page_size() 方法更新其尺寸。
-1. 调用 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 类的 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法以生成更新页面尺寸的 PDF 文件。
+### 将 PDF 页面尺寸设置为 A4
+
+该示例将 PDF 文档的首页尺寸更新为标准 A4 大小。同时在调整前后打印页面的框尺寸（CropBox、TrimBox、ArtBox、BleedBox、MediaBox），以便您验证更改。
+
+以下代码片段展示了如何将 PDF 页面尺寸更改为 A4 大小：
+
+1. 访问 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 的第一个 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)。
+1. 在修改前显示页面的框尺寸（CropBox、TrimBox、ArtBox、BleedBox、MediaBox）。
+1. 使用页面 API 应用 A4 尺寸（597.6 × 842.4 点）。
+1. 显示更新后的页面框尺寸。
+1. 将修改后的 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 保存到指定的输出路径。
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # 获取特定页面
+def set_page_size(input_file_name, output_file_name):
+    """
+    Set the size of the first page in the PDF document to A4 and save the updated document.
+
+    Parameters:
+    - input_file_name (str): Path to the input PDF file.
+    - output_file_name (str): Path to save the output PDF file.
+    """
+    # Open the PDF document using the Document class
+    document = ap.Document(input_file_name)
+    # Get particular page (Page API)
     page = document.pages[1]
 
-    # 设置页面大小为 A4 (11.7 x 8.3 英寸)，在 Aspose.Pdf 中，1 英寸 = 72 点
-    # 因此 A4 尺寸为 (842.4, 597.6) 点
-    page.set_page_size(597.6, 842.4)
+    # Set the page size as A4 (8.3 x 11.7 in). In Aspose.PDF 1 inch = 72 points.
+    # A4 dimensions in points are (597.6, 842.4) for portrait orientation
+    print("Before set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
 
-    # 保存更新的文档
-    document.save(output_pdf)
+    # Use the Page API to set page size
+    page.set_page_size(597.6, 842.4)
+    print("After set")
+    print(f"CropBox: {page.crop_box.width} x {page.crop_box.height}")
+    print(f"TrimBox: {page.trim_box.width} x {page.trim_box.height}")
+    print(f"ArtBox: {page.art_box.width} x {page.art_box.height}")
+    print(f"BleedBox: {page.bleed_box.width} x {page.bleed_box.height}")
+    print(f"MediaBox: {page.media_box.width} x {page.media_box.height}")
+
+    # Save the updated document
+    document.save(output_file_name)
 ```
 
+## 获取 PDF 页面大小
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET 库",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "用于 Python 的 PDF 操作库",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+此代码片段读取 PDF 并获取首页的尺寸（宽度和高度）。它使用 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) API 提取页面的边界 [`Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/)，并将其大小打印到控制台。这对于检查页面布局、验证格式或为后续处理准备文档非常有用。
+
+1. 将 PDF 加载为 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)。
+1. 访问第一个 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)。
+1. 使用 `get_page_rect()` 获取页面的边界矩形。
+1. 提取宽度和高度值。
+1. 打印页面尺寸。
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_size(input_file_name, output_file_name):
+    # Open document (Document API)
+    document = ap.Document(input_file_name)
+
+    # Get particular page (Page API)
+    page = document.pages[1]
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```
+
+### 获取 PDF 页面尺寸（旋转前后）
+
+获取 PDF 页面在应用 90° 旋转前后的尺寸。这演示了旋转如何影响宽度和高度，以及如何在考虑或不考虑旋转的情况下使用 `get_page_rect()`。
+
+1. 将 PDF 打开为 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)。
+1. 访问第一个 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)。
+1. 使用 `page.rotate = ap.Rotation.ON90` 应用 90° 旋转（参见 [`Rotation`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rotation/) 枚举）。
+1. 使用 `get_page_rect(False)` 获取未旋转的页面矩形并打印其宽度和高度。
+1. 使用 `get_page_rect(True)` 获取考虑旋转的页面矩形并打印其宽度和高度。
+1. 比较因旋转导致的尺寸变化。
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_size_rotation(input_file_name, output_file_name):
+    # Open document (Document API)
+    document = ap.Document(input_file_name)
+    # Get particular page (Page API)
+    page = document.pages[1]
+    # Apply rotation using Rotation enum
+    page.rotate = ap.Rotation.ON90
+    rectangle = page.get_page_rect(False)
+    print(f"{rectangle.width} : {rectangle.height}")
+    rectangle = page.get_page_rect(True)
+    print(f"{rectangle.width} : {rectangle.height}")
+```

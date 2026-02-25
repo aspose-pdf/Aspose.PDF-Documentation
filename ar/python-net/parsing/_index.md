@@ -1,15 +1,28 @@
 ---
-
-title: استخراج مستندات PDF  
-linktitle: استخراج مستندات PDF  
-type: docs  
-weight: 80  
-url: /ar/python-net/parsing/  
-description: هل تريد استخراج مستندات PDF؟ اكتشف طرقًا مختلفة لاستخراج بيانات PDF باستخدام Aspose.PDF لـ Python عبر .NET.  
-lastmod: "2021-06-05"  
-sitemap:  
-    changefreq: "monthly"  
-    priority: 0.7  
+title: تحليل مستندات PDF
+linktitle: تحليل مستندات PDF
+type: docs
+weight: 80
+url: /ar/python-net/parsing/
+description: هل تريد تحليل مستندات PDF؟ اكتشف طرق استخراج بيانات PDF المتنوعة باستخدام Aspose.PDF للغة بايثون عبر .NET.
+lastmod: "2025-02-05"
+sitemap: 
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: تحليل ملفات PDF باستخدام Aspose.PDF للغة بايثون
+Abstract: تتناول مقالة تحليل PDF مختلف المنهجيات لاستخراج أنواع مختلفة من المعلومات من ملفات PDF. وتسلط الضوء على عدة عمليات رئيسية وتقدم إرشادات.
 ---
 
-**استخراج مستندات PDF** هو مصطلح يتعلق باستخراج أنواع مختلفة من المعلومات من ملف PDF. تغطي هذه القسم كيفية:
+**تحليل PDF** مستندات هو مصطلح يتعلق باستخراج أنواع مختلفة من المعلومات من ملف PDF. يغطي هذا القسم كيفية:
+
+- [استخراج النص من PDF](/pdf/python-net/extract-text-from-pdf/). تحليل النص أو استخراجه هو العملية الأكثر شيوعًا مع ملفات PDF الجاهزة. ستتعلم عن تحليل النص من مستند كامل، أو صفحة معينة، أو منطقة محددة في الصفحة.
+- [استخراج الصور من PDF](/pdf/python-net/extract-images-from-the-pdf-file/). استخراج الصور يقوم بنفس ما تفعله العملية أعلاه للنص بالنسبة للصور.
+- [استخراج الخطوط من PDF](/pdf/python-net/extract-fonts-from-pdf/). استخراج الخطوط هو عملية محددة تتعلق بالخطوط في ملفات PDF.
+- [استخراج البيانات من النموذج](/pdf/python-net/extract-data-from-acroform/). إذا كان لديك مجموعة من مستندات PDF تحتوي على نماذج، ربما تحتاج إلى استخراج البيانات من تلك النماذج. سيساعدك هذا المقال على فهم كيفية استخراج بيانات AcroForms باستخدام Aspose.PDF للغة بايثون عبر .NET.
+- [استخراج البيانات من الجدول](/pdf/python-net/extract-data-from-table-in-pdf/). احصل على البيانات من جدول في مستند PDF.
+- [استخراج البيانات المتجهة من PDF](/pdf/python-net/extract-vector-data-from-pdf/). يمكنك الحصول على البيانات المتجهة (المسار، المضلع، الخط المتعدد)، مثل الموقع، اللون، سمك الخط، إلخ.
+
+
+
+

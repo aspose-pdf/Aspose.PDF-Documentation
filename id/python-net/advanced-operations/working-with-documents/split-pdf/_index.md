@@ -1,113 +1,52 @@
 ---
-title: Memisahkan PDF secara program di Python
+title: Memisahkan PDF secara programatis dengan Python
 linktitle: Memisahkan file PDF
 type: docs
 weight: 60
 url: /id/python-net/split-pdf-document/
-description: Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individual dalam aplikasi Python Anda.
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+description: Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF terpisah dalam aplikasi Python Anda.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Memisahkan halaman PDF menggunakan Python
+Abstract: Artikel ini membahas proses memisahkan halaman PDF menjadi file terpisah menggunakan Python, menyoroti kegunaan fitur tersebut untuk mengelola dokumen PDF besar. Artikel ini merujuk pada Aspose.PDF Splitter, sebuah alat daring yang dirancang untuk menunjukkan fungsi pemisahan PDF. Artikel ini menyediakan metode terperinci untuk mencapainya dalam aplikasi Python, melibatkan iterasi melalui halaman dokumen PDF melalui koleksi `PageCollection` objek `Document`. Untuk setiap halaman, dibuat objek `Document` baru, halaman tersebut ditambahkan ke dalamnya, dan file PDF baru disimpan menggunakan metode `save()`. Potongan kode Python yang menyertainya menggambarkan proses ini, menampilkan langkah-langkah yang diperlukan untuk memisahkan dokumen PDF menjadi file terpisah dengan mengiterasi halaman-halamannya dan menyimpan masing-masing sebagai PDF terpisah.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Memisahkan PDF secara program",
-    "alternativeHeadline": "Cara memisahkan PDF dengan Python",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, membagi pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/split-pdf-document/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/split-pdf-document/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individual dalam aplikasi Python Anda."
-}
-</script>
 
-
-Memisahkan halaman PDF bisa menjadi fitur yang berguna bagi mereka yang ingin membagi file besar menjadi halaman atau kelompok halaman terpisah.
+Memisahkan halaman PDF dapat menjadi fitur berguna bagi mereka yang ingin membagi file besar menjadi halaman terpisah atau kelompok halaman.
 
 ## Contoh Langsung
 
-[Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) adalah aplikasi web gratis yang memungkinkan Anda menyelidiki bagaimana fungsi pemisahan presentasi bekerja.
+[Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) adalah aplikasi web gratis daring yang memungkinkan Anda menyelidiki cara kerja fungsi pemisahan PDF.
 
 [![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individu dalam aplikasi Python Anda. Untuk memisahkan halaman PDF menjadi file PDF satu halaman menggunakan Python, langkah-langkah berikut dapat diikuti:
+Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF terpisah dalam aplikasi Python Anda. Untuk memisahkan halaman PDF menjadi file PDF satu halaman menggunakan Python, langkah-langkah berikut dapat diikuti:
 
-1. Loop melalui halaman dokumen PDF melalui koleksi [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) dari objek [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)
+1. Loop melalui halaman dokumen PDF melalui koleksi objek [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) milik [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)
 1. Untuk setiap iterasi, buat objek Document baru dan tambahkan objek [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) individu ke dalam dokumen kosong
-
 1. Simpan PDF baru menggunakan metode [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)
 
-## Pisahkan PDF menjadi beberapa file atau pdf terpisah di Python
+## Memisahkan PDF menjadi beberapa file atau PDF terpisah di Python
 
-Cuplikan kode Python berikut menunjukkan cara membagi halaman PDF menjadi file PDF individual.
+Potongan kode Python berikut menunjukkan cara memisahkan halaman PDF menjadi file PDF terpisah.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Buka dokumen
+    # Open document
     document = ap.Document(input_pdf)
 
     page_count = 1
 
-    # Lakukan loop melalui semua halaman
+    # Loop through all the pages
     for pdfPage in document.pages:
         new_document = ap.Document()
         new_document.pages.add(pdfPage)
         new_document.save(output_path + "_page_" + str(page_count) + ".pdf")
         page_count = page_count + 1
+```
+
+

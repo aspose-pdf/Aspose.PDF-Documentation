@@ -4,553 +4,755 @@ linktitle: Cari dan Dapatkan Teks
 type: docs
 weight: 60
 url: /id/python-net/search-and-get-text-from-pdf/
-description: Artikel ini menjelaskan cara menggunakan berbagai alat untuk mencari dan mendapatkan teks dari Aspose.PDF untuk .NET.
-lastmod: "2024-02-17"
-sitemap:
+description: Pelajari cara mencari dan mengekstrak teks dari dokumen PDF dalam Python menggunakan Aspose.PDF untuk analisis dokumen.
+lastmod: "2025-11-13"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara Mencari dan Mendapatkan Teks dari Halaman dalam PDF
+Abstract: Artikel ini memberikan eksplorasi mendalam tentang kemampuan ekstraksi dan manipulasi teks dalam dokumen PDF menggunakan Aspose.PDF untuk Python via .NET library. Artikel ini memperkenalkan kelas TextFragmentAbsorber, yang memungkinkan pengembang mencari melalui seluruh dokumen atau halaman tertentu untuk frasa yang ditentukan atau pola ekspresi reguler. Halaman ini memaparkan berbagai skenario praktis—seperti mengambil konten teks, menentukan posisinya (termasuk koordinat dan nilai indent), dan mengekstrak properti font seperti nama, ukuran, status embed, dan warna—dari fragmen teks yang cocok. Contoh kode terperinci menunjukkan proses langkah demi langkah, memudahkan pengembang untuk mengintegrasikan kemampuan pencarian teks ke dalam aplikasi mereka.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Cari dan Dapatkan Teks dari Halaman PDF",
-    "alternativeHeadline": "Alat untuk mencari dan mendapatkan teks dari Halaman PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, cari teks, dapatkan teks dari pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/search-and-get-text-from-pdf/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/search-and-get-text-from-pdf/"
-    },
-    "dateModified": "2024-02-04",
-    "description": "Artikel ini menjelaskan cara menggunakan berbagai alat untuk mencari dan mendapatkan teks dari Aspose.PDF untuk .NET."
-}
-</script>
 
+## Cari Teks dari PDF
 
-## Cari dan Dapatkan Teks dari Semua Halaman Dokumen PDF
+Cari dan ekstrak teks dari area persegi panjang yang ditentukan dalam dokumen PDF menggunakan kelas TextAbsorber. Ini menggunakan mode pemformatan teks murni untuk output teks bersih dan tidak terformat, menjadikannya ideal untuk mengekstrak konten dari wilayah terstruktur seperti header, footer, atau area tabel. Dengan menggabungkan TextExtractionOptions dan TextSearchOptions dengan batas persegi panjang, contoh ini memberi Anda kontrol yang tepat tentang di mana dan bagaimana teks diekstrak dari dokumen.
 
-Kelas [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber) memungkinkan Anda untuk menemukan teks, yang cocok dengan frasa tertentu, dari semua halaman dokumen PDF. Untuk mencari teks dari seluruh dokumen, Anda perlu memanggil metode Accept dari koleksi Pages. Metode [Accept](https://reference.aspose.com/pdf/python-net/aspose.pdf.page/accept/methods/3) mengambil objek TextFragmentAbsorber sebagai parameter, yang mengembalikan koleksi objek TextFragment. Anda dapat melakukan loop melalui semua fragmen dan mendapatkan properti mereka seperti Text, Position (XIndent, YIndent), FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor, dll.
+1. Muat file PDF menggunakan 'ap.Document'.
+1. Konfigurasikan Opsi Ekstraksi Teks.
+1. Tentukan Area Pencarian dengan Batas Persegi Panjang.
+1. Buat dan Konfigurasikan TextAbsorber.
+1. Proses Semua Halaman dalam Dokumen.
+1. Ambil dan Tampilkan Teks yang Diekstrak.
 
-Cuplikan kode berikut menunjukkan cara mencari teks dari semua halaman.
+```python
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan pergi ke https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
+# Global configuration
+DATA_DIR = "your path here"
 
-// Buat objek TextAbsorber untuk menemukan semua instance dari frasa pencarian input
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
+def text_absorber_search(input_file_path):
+    """
+    Search and extract text from PDF using TextAbsorber with area constraints.
 
-// Terima absorber untuk semua halaman
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+    Demonstrates basic text extraction from a PDF document using TextAbsorber
+    with pure text formatting mode and rectangular boundary constraints.
+    Extracts text from all pages within the specified rectangular area.
 
-// Dapatkan fragmen teks yang diekstraksi
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
 
-// Loop melalui fragmen
-foreach (TextFragment textFragment in textFragmentCollection)
-{
+    Returns:
+        None: Prints extracted text to console.
 
-    Console.WriteLine("Teks : {0} ", textFragment.Text);
-    Console.WriteLine("Posisi : {0} ", textFragment.Position);
-    Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent);
-    Console.WriteLine("YIndent : {0} ", textFragment.Position.YIndent);
-    Console.WriteLine("Font - Nama : {0}", textFragment.TextState.Font.FontName);
-    Console.WriteLine("Font - IsAccessible : {0} ", textFragment.TextState.Font.IsAccessible);
-    Console.WriteLine("Font - IsEmbedded : {0} ", textFragment.TextState.Font.IsEmbedded);
-    Console.WriteLine("Font - IsSubset : {0} ", textFragment.TextState.Font.IsSubset);
-    Console.WriteLine("Ukuran Font : {0} ", textFragment.TextState.FontSize);
-    Console.WriteLine("Warna Depan : {0} ", textFragment.TextState.ForegroundColor);
-}
+    Note:
+        - Uses PURE text formatting mode for clean text extraction
+        - Constrains search to rectangle (0, 0, 842, 250)
+        - Processes all pages in the document
+        - TextAbsorber provides high-level text extraction capabilities
+        - Good for extracting text content without detailed positioning
+
+    Example:
+        >>> text_absorber_search("document.pdf")
+        # Prints all text found in the specified rectangular area across all pages
+    """
+    # Open PDF document
+    document = ap.Document(input_file_path)
+
+    text_extraction_options = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
+    text_search_options = ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+
+    absorber = ap.text.TextAbsorber(text_extraction_options, text_search_options)
+
+    # Process all pages
+    document.pages.accept(absorber)
+
+    print(f"Text fragments found: {absorber.text}")
 ```
 
+## Cari Teks dari Halaman PDF Tertentu
 
-Dalam hal Anda perlu mencari teks di dalam halaman PDF tertentu, silakan tentukan nomor halaman dari koleksi halaman dari instans Dokumen dan panggil metode Accept terhadap halaman tersebut (seperti yang ditunjukkan pada baris kode di bawah).
+Cari dan ekstrak teks dari halaman dan wilayah tertentu dalam PDF menggunakan TextAbsorber dari Aspose.PDF. Ini menargetkan halaman 2 dokumen dan hanya mengekstrak teks yang ditemukan dalam area persegi panjang yang ditentukan.
+Dengan menggabungkan TextExtractionOptions (untuk kontrol pemformatan) dan TextSearchOptions (untuk pembatasan area), Anda dapat melakukan ekstraksi teks yang tepat dan spesifik halaman secara efisien.
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Menerima absorber untuk halaman tertentu
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+1. Muat Dokumen PDF.
+1. Siapkan Opsi Ekstraksi Teks.
+1. Batasi ekstraksi teks ke area persegi panjang tertentu pada halaman.
+1. Buat dan Konfigurasikan TextAbsorber.
+1. Proses Halaman Tertentu.
+1. Ambil dan Tampilkan Teks yang Diekstrak.
+
+```python
+
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def text_absorber_search_page(input_file_path):
+    """
+    Search and extract text from a specific PDF page using TextAbsorber.
+
+    Demonstrates targeted text extraction from a single page (page 2) using
+    TextAbsorber with area constraints. Shows how to limit search scope to
+    specific pages and rectangular regions.
+
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
+
+    Returns:
+        None: Prints extracted text from page 2 to console.
+
+    Note:
+        - Targets only page 2 of the document (document.pages[2])
+        - Uses PURE text formatting mode for clean extraction
+        - Constrains search to rectangle (0, 0, 842, 250)
+        - Useful for page-specific text extraction
+        - More efficient than processing entire document when targeting specific pages
+
+    Example:
+        >>> text_absorber_search_page("document.pdf")
+        # Prints text found in the specified area on page 2 only
+    """
+    document = ap.Document(input_file_path)
+
+    text_extraction_options = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
+    text_search_options = ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+
+    absorber = ap.text.TextAbsorber(text_extraction_options, text_search_options)
+
+    # Only page 2
+    document.pages[2].accept(absorber)
+
+    print(f"Text fragments found: {absorber.text}")
+
 ```
 
-## Mencari dan Mendapatkan Segmen Teks dari Semua Halaman Dokumen PDF
+## Analisis dan Ekstrak Properti Fragmen Teks Detail dari PDF
 
-Untuk mencari segmen teks dari semua halaman, Anda pertama-tama perlu mendapatkan objek TextFragment dari dokumen tersebut.
- TextFragmentAbsorber memungkinkan Anda untuk menemukan teks, yang cocok dengan frasa tertentu, dari semua halaman dokumen PDF. Untuk mencari teks dari seluruh dokumen, Anda perlu memanggil metode Accept dari koleksi Pages. Metode Accept mengambil objek TextFragmentAbsorber sebagai parameter, yang mengembalikan koleksi objek TextFragment. Setelah TextFragmentCollection diambil dari dokumen, Anda perlu melakukan iterasi melalui koleksi ini dan mendapatkan TextSegmentCollection dari setiap objek TextFragment. Setelah itu, Anda dapat mendapatkan semua properti dari objek TextSegment individual. Cuplikan kode berikut menunjukkan cara mencari segmen teks dari semua halaman.
+Berbeda dengan TextAbsorber, yang mengekstrak teks mentah, TextFragmentAbsorber menyediakan informasi terperinci dan tingkat rendah tentang setiap fragmen teks—seperti posisinya, atribut font, warna, dan detail embedding.
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. Muat Dokumen PDF.
+1. Inisialisasi TextFragmentAbsorber.
+1. Proses Semua Halaman dalam Dokumen.
+1. Iterasi Melalui Fragmen Teks yang Diekstrak.
+1. Cetak Informasi Teks Dasar.
+1. Cetak Detail Font dan Pemformatan.
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextPage.pdf");
+```python
 
-// Buat objek TextAbsorber untuk menemukan semua instance dari frasa pencarian input
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("Figure");
-// Terima absorber untuk semua halaman
-pdfDocument.Pages.Accept(textFragmentAbsorber);
-// Dapatkan fragmen teks yang diekstraksi
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// Iterasi melalui fragmen
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    foreach (TextSegment textSegment in textFragment.Segments)
-    {
-        Console.WriteLine("Teks : {0} ", textSegment.Text);
-        Console.WriteLine("Posisi : {0} ", textSegment.Position);
-        Console.WriteLine("XIndent : {0} ", textSegment.Position.XIndent);
-        Console.WriteLine("YIndent : {0} ", textSegment.Position.YIndent);
-        Console.WriteLine("Font - Nama : {0}", textSegment.TextState.Font.FontName);
-        Console.WriteLine("Font - IsAccessible : {0} ", textSegment.TextState.Font.IsAccessible);
-        Console.WriteLine("Font - IsEmbedded : {0} ", textSegment.TextState.Font.IsEmbedded);
-        Console.WriteLine("Font - IsSubset : {0} ", textSegment.TextState.Font.IsSubset);
-        Console.WriteLine("Ukuran Font : {0} ", textSegment.TextState.FontSize);
-        Console.WriteLine("Warna Latar Depan : {0} ", textSegment.TextState.ForegroundColor);
-    }
-}
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def text_fragment_absorber_search(input_file_path):
+    """
+    Search and analyze all text fragments in a PDF with detailed properties.
+
+    Demonstrates comprehensive text fragment analysis using TextFragmentAbsorber
+    to extract all text with detailed positioning, font, and formatting information.
+    Provides low-level access to text properties for detailed analysis.
+
+    Args:
+        input_file_path (str): Path to the input PDF file to analyze.
+
+    Returns:
+        None: Prints detailed text fragment information to console.
+
+    Note:
+        - Extracts all text fragments from all pages
+        - Provides detailed properties: position, font info, colors, sizes
+        - Shows font accessibility, embedding, and subset information
+        - Useful for detailed text analysis and formatting inspection
+        - TextFragmentAbsorber offers more granular control than TextAbsorber
+
+    Example:
+        >>> text_fragment_absorber_search("document.pdf")
+        # Prints comprehensive details about every text fragment in the document
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber()
+    document.pages.accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
+        print("XIndent:", fragment.position.x_indent)
+        print("YIndent:", fragment.position.y_indent)
+        print("Font - Name:", fragment.text_state.font.font_name)
+        print("Font - IsAccessible:", fragment.text_state.font.is_accessible)
+        print("Font - IsEmbedded:", fragment.text_state.font.is_embedded)
+        print("Font - IsSubset:", fragment.text_state.font.is_subset)
+        print("Font Size:", fragment.text_state.font_size)
+        print("Foreground Color:", fragment.text_state.foreground_color)
 ```
 
-Untuk mencari dan mendapatkan TextSegments dari halaman tertentu pada PDF, Anda perlu menentukan indeks halaman tertentu saat memanggil metode Accept(..). Silakan lihat baris kode berikut.
+## Cari Frasa Teks Spesifik pada Satu Halaman PDF
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan pergi ke https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Terima absorber untuk semua halaman
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+Cari frasa teks spesifik dalam satu halaman dokumen PDF menggunakan TextFragmentAbsorber. Berbeda dengan pencarian seluruh dokumen, pendekatan ini membatasi pencarian hanya pada satu halaman, sehingga lebih efisien untuk memastikan keberadaan dan lokasi teks di area target seperti header, footer, atau bagian konten tertentu.
+
+1. Muat Dokumen PDF.
+1. Inisialisasi TextFragmentAbsorber dengan Frasa Pencarian.
+1. Terapkan Absorber ke Halaman Tertentu.
+1. Iterasi Melalui Fragmen yang Ditemukan.
+
+```python
+
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def text_fragment_absorber_search_page(input_file_path):
+    """
+    Search for specific text phrase on a particular PDF page.
+
+    Demonstrates targeted text search for a specific phrase ("whale") on
+    a single page. Shows how to combine phrase searching with page-specific
+    scope for efficient and focused text location.
+
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
+
+    Returns:
+        None: Prints matching text fragments and their positions to console.
+
+    Note:
+        - Searches for the phrase "whale" on page 2 only
+        - Returns text fragments with position information
+        - More efficient than document-wide search when targeting specific pages
+        - Useful for validating content presence in specific document sections
+        - Provides exact positioning coordinates for found text
+
+    Example:
+        >>> text_fragment_absorber_search_page("document.pdf")
+        # Prints all instances of "whale" found on page 2 with their positions
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber("whale")
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
-## Mencari dan Mendapatkan Teks dari semua halaman menggunakan Ekspresi Reguler
+## Pencarian Teks Berurutan Halaman-per-Halaman dengan Hasil Kumulatif
 
-TextFragmentAbsorber membantu Anda mencari dan mengambil teks, dari semua halaman, berdasarkan ekspresi reguler.
- First, Anda perlu melewatkan ekspresi reguler ke konstruktor TextFragmentAbsorber sebagai frasa. Setelah itu, Anda harus mengatur properti TextSearchOptions dari objek TextFragmentAbsorber. Properti ini memerlukan objek TextSearchOptions dan Anda perlu melewatkan nilai true sebagai parameter ke konstruktornya saat membuat objek baru. Karena Anda ingin mengambil teks yang cocok dari semua halaman, Anda perlu memanggil metode Accept dari koleksi Pages. TextFragmentAbsorber mengembalikan TextFragmentCollection yang berisi semua fragmen yang sesuai dengan kriteria yang ditentukan oleh ekspresi reguler. Cuplikan kode berikut menunjukkan cara mencari dan mendapatkan teks dari semua halaman berdasarkan ekspresi reguler.
+Cari teks secara bertahap melintasi beberapa halaman dokumen PDF menggunakan TextFragmentAbsorber dari Aspose.PDF.
+Berbeda dengan pencarian satu halaman atau seluruh dokumen, pendekatan ini memungkinkan Anda memproses halaman secara berurutan, mengumpulkan hasil secara progresif, dan menganalisis fragmen teks dengan konteks spesifik halaman. Metode ini ideal untuk dokumen besar atau alur kerja pemrosesan progresif.
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan pergi ke https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+1. Muat Dokumen PDF.
+1. Inisialisasi TextFragmentAbsorber dan Tetapkan Frasa Pencarian.
+1. Proses Halaman Pertama. Cari hanya halaman 1. Mencetak teks, nomor halaman, dan posisi. Menyediakan hasil terisolasi spesifik halaman untuk kejelasan.
+1. Proses Halaman Berikutnya Secara Berurutan. Pindah ke halaman 2 dan secara opsional lanjutkan melalui sisa dokumen. 'absorber.visit()' memastikan akumulasi hasil dari semua halaman yang dikunjungi. Mencetak hasil pencarian kumulatif, menampilkan baik teks maupun lokasi.
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionAll.pdf");
+```python
 
-// Buat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Seperti 1999-2000
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Atur opsi pencarian teks untuk menentukan penggunaan ekspresi reguler
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
+# Global configuration
+DATA_DIR = "your path here"
 
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
+def text_fragment_absorber_sequential_search(input_file_path):
+    """
+    Demonstrate sequential page-by-page text search with cumulative results.
 
-// Terima absorber untuk semua halaman
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+    Shows how to perform incremental text searches across multiple pages,
+    accumulating results from each page. Demonstrates both individual page
+    processing and document-wide search continuation.
 
-// Dapatkan fragmen teks yang diekstraksi
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
 
-// Loop melalui fragmen
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    Console.WriteLine("Teks : {0} ", textFragment.Text);
-    Console.WriteLine("Posisi : {0} ", textFragment.Position);
-    Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent);
-    Console.WriteLine("YIndent : {0} ", textFragment.Position.YIndent);
-    Console.WriteLine("Font - Nama : {0}", textFragment.TextState.Font.FontName);
-    Console.WriteLine("Font - IsAccessible : {0} ", textFragment.TextState.Font.IsAccessible);
-    Console.WriteLine("Font - IsEmbedded : {0} ", textFragment.TextState.Font.IsEmbedded);
-    Console.WriteLine("Font - IsSubset : {0} ", textFragment.TextState.Font.IsSubset);
-    Console.WriteLine("Ukuran Font : {0} ", textFragment.TextState.FontSize);
-    Console.WriteLine("Warna Latar Depan : {0} ", textFragment.TextState.ForegroundColor);
-}
+    Returns:
+        None: Prints text fragments from sequential page searches to console.
+
+    Note:
+        - Searches for "whale" on page 1, then continues to page 2
+        - Uses absorber.visit(document) to process remaining pages
+        - Demonstrates incremental search accumulation
+        - Shows page numbers for found fragments
+        - Useful for progressive document processing and result accumulation
+
+    Example:
+        >>> text_fragment_absorber_sequential_search("document.pdf")
+        # Prints "whale" instances from page 1, then from all remaining pages
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.phrase = "whale"
+
+    # First page
+    document.pages[1].accept(absorber)
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Page:", fragment.page.number)
+        print("Position:", fragment.position)
+
+    print("--")
+
+    # Continue to next page
+    document.pages[2].accept(absorber)
+    absorber.visit(document)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Page:", fragment.page.number)
+        print("Position:", fragment.position)
 ```
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan pergi ke https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-TextFragmentAbsorber textFragmentAbsorber;
-// Untuk mencari kecocokan tepat dari sebuah kata, Anda dapat mempertimbangkan menggunakan ekspresi reguler.
-textFragmentAbsorber = new TextFragmentAbsorber(@"\bWord\b", new TextSearchOptions(true));
+## Pencarian Frasa Terarah dalam Area Persegi Panjang
 
-// Untuk mencari string dalam huruf besar atau huruf kecil, Anda dapat mempertimbangkan menggunakan ekspresi reguler.
-textFragmentAbsorber = new TextFragmentAbsorber("(?i)Line", new TextSearchOptions(true));
+Cari frasa tertentu dalam PDF sambil membatasi pencarian ke area persegi panjang tertentu pada satu halaman.
+Dengan menggabungkan pencarian frasa dengan batasan spasial, Anda dapat menemukan konten secara tepat di wilayah yang ditentukan tanpa memindai seluruh halaman atau dokumen. Ini sangat berguna untuk formulir, header, footer, atau laporan terstruktur di mana konten muncul di lokasi yang dapat diprediksi.
 
-// Untuk mencari semua string (mem-parsing semua string) di dalam dokumen PDF, silakan coba menggunakan ekspresi reguler berikut.
-textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
+1. Muat Dokumen PDF.
+1. Inisialisasi TextFragmentAbsorber dengan Frasa dan Batasan Persegi Panjang
+1. Terapkan Absorber ke Halaman 2. Membatasi pemrosesan ke halaman 2, mengurangi perhitungan yang tidak perlu. Memastikan pencarian spesifik per halaman.
+1. Iterasi Melalui Fragmen yang Ditemukan dan Cetak
 
-// Temukan kecocokan string pencarian dan dapatkan apa pun setelah string tersebut hingga jeda baris.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(?i)the ((.)*)");
+```python
 
-// Silakan gunakan ekspresi reguler berikut untuk menemukan teks setelah kecocokan regex.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(?<=word).*");
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Untuk mencari Hyperlink/URL di dalam dokumen PDF, silakan coba menggunakan ekspresi reguler berikut.
-textFragmentAbsorber = new TextFragmentAbsorber(@"(http|ftp|https):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?");
+# Global configuration
+DATA_DIR = "your path here"
+
+def text_fragment_absorber_search_phrase(input_file_path):
+    """
+    Search for specific phrase within a rectangular area constraint.
+
+    Demonstrates targeted phrase searching with both text matching and
+    spatial constraints. Combines phrase search with rectangular boundary
+    limitations for precise content location.
+
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
+
+    Returns:
+        None: Prints matching text fragments and positions to console.
+
+    Note:
+        - Searches for "elephant" phrase on page 2
+        - Constrains search to rectangle (0, 0, 842, 250)
+        - Combines text matching with spatial filtering
+        - Useful for finding content in specific document regions
+        - More precise than page-wide or document-wide searches
+
+    Example:
+        >>> text_fragment_absorber_search_phrase("document.pdf")
+        # Prints "elephant" instances found within the specified rectangular area on page 2
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber(
+        "elephant", ap.text.TextSearchOptions(ap.Rectangle(0, 0, 842, 250, True))
+    )
+
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
+## Pencarian Pola Teks dalam PDF Menggunakan Ekspresi Reguler
 
-## Cari Teks berdasarkan Regex dan Tambahkan Hyperlink
+Cari pola teks dalam PDF menggunakan ekspresi reguler. Dengan mengaktifkan mode regex pada TextFragmentAbsorber, Anda dapat menemukan pola kompleks seperti angka, tanggal, harga, koordinat, atau format teks khusus. Fungsi ini membatasi pencarian ke halaman tertentu, menjadikannya efisien untuk ekstraksi terarah data terstruktur.
 
-Jika Anda ingin menambahkan hyperlink pada frasa teks berdasarkan ekspresi reguler, pertama temukan semua frasa yang cocok dengan ekspresi reguler tersebut menggunakan TextFragmentAbsorber dan tambahkan hyperlink pada frasa-frasa tersebut.
+1. Muat Dokumen PDF.
+1. Inisialisasi TextFragmentAbsorber dengan Pola Regex.
+1. Terapkan Absorber ke Halaman 2. Membatasi pencarian ke halaman 2 untuk efisiensi dan presisi. Hanya teks pada halaman ini yang dianalisis.
+1. Iterasi Melalui Fragmen yang Ditemukan. Mencetak fragmen teks yang cocok beserta koordinatnya. Menyediakan informasi lokasi yang tepat untuk pola yang diekstrak.
 
-Untuk menemukan frasa dan menambahkan hyperlink padanya:
+```python
 
-1. Berikan ekspresi reguler sebagai parameter ke konstruktor TextFragmentAbsorber.
-2. Buat objek TextSearchOptions yang menentukan apakah ekspresi reguler digunakan atau tidak.
-3. Dapatkan frasa yang cocok ke dalam TextFragments.
-4. Loop melalui kecocokan untuk mendapatkan dimensi persegi panjang mereka, ubah warna latar depan menjadi biru (opsional - untuk membuatnya terlihat seperti hyperlink) dan buat tautan menggunakan metode CreateWebLink(..) dari kelas PdfContentEditor.
-5. Simpan PDF yang diperbarui menggunakan metode Save dari objek Document.
-Cuplikan kode berikut menunjukkan cara mencari teks dalam file PDF menggunakan ekspresi reguler dan menambahkan hyperlink pada kecocokan.
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-```csharp
-// Untuk contoh lengkap dan berkas data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Buat objek absorber untuk menemukan semua instance dari frasa pencarian input
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("\\d{4}-\\d{4}");
-// Aktifkan pencarian ekspresi reguler
-absorber.TextSearchOptions = new TextSearchOptions(true);
-// Buka dokumen
-PdfContentEditor editor = new PdfContentEditor();
-// Bind file PDF sumber
-editor.BindPdf(dataDir + "SearchRegularExpressionPage.pdf");
-// Terima absorber untuk halaman
-editor.Document.Pages[1].Accept(absorber);
+# Global configuration
+DATA_DIR = "your path here"
 
-int[] dashArray = { };
-String[] LEArray = { };
-System.Drawing.Color blue = System.Drawing.Color.Blue;
+def text_fragment_absorber_search_regex(input_file_path):
+    """
+    Search for text patterns using regular expressions.
 
-// Loop melalui fragmen
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Blue;
-    System.Drawing.Rectangle rect = new System.Drawing.Rectangle((int)textFragment.Rectangle.LLX,
-        (int)Math.Round(textFragment.Rectangle.LLY), (int)Math.Round(textFragment.Rectangle.Width + 2),
-        (int)Math.Round(textFragment.Rectangle.Height + 1));
-    Enum[] actionName = new Enum[2] { Aspose.Pdf.Annotations.PredefinedAction.Document_AttachFile, Aspose.Pdf.Annotations.PredefinedAction.Document_ExtractPages };
-    editor.CreateWebLink(rect, "http:// Www.aspose.com", 1, blue, actionName);
-    editor.CreateLine(rect, "", (float)textFragment.Rectangle.LLX + 1, (float)textFragment.Rectangle.LLY - 1,
-        (float)textFragment.Rectangle.URX, (float)textFragment.Rectangle.LLY - 1, 1, 1, blue, "S", dashArray, LEArray);
-}
+    Demonstrates advanced text searching using regular expression patterns
+    to find complex text structures like numbers, dates, or custom formats.
+    Shows how to enable regex mode in TextFragmentAbsorber.
 
-dataDir = dataDir + "SearchTextAndAddHyperlink_out.pdf";
-editor.Save(dataDir);
-editor.Close();
+    Args:
+        input_file_path (str): Path to the input PDF file to search.
+
+    Returns:
+        None: Prints matching text fragments and positions to console.
+
+    Note:
+        - Uses regex pattern r"\\d+\\.\\d+" to find decimal numbers
+        - Enables regex mode with is_regular_expression_used=True
+        - Searches on page 2 only
+        - Powerful for finding formatted data like prices, coordinates, dates
+        - Regular expressions provide flexible pattern matching capabilities
+
+    Example:
+        >>> text_fragment_absorber_search_regex("document.pdf")
+        # Prints all decimal numbers (e.g., "12.34", "0.99") found on page 2
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber(r"\d+\.\d+", ap.text.TextSearchOptions(is_regular_expression_used=True))
+
+    document.pages[2].accept(absorber)
+
+    for fragment in absorber.text_fragments:
+        print("Text:", fragment.text)
+        print("Position:", fragment.position)
 ```
 
+## Mengonversi Kecocokan Teks menjadi Tautan Hipertaut di PDF Menggunakan TextFragmentAbsorber
 
-## Cari dan Gambar Persegi Panjang di sekitar setiap TextFragment
+Cari frasa teks tertentu dalam PDF dan konversi menjadi tautan yang dapat diklik. Dengan menggunakan TextFragmentAbsorber bersama pola regex, ia menemukan kata target dan menerapkan gaya visual (warna dan garis bawah) bersama tautan interaktif.
 
-Aspose.PDF untuk .NET mendukung fitur untuk mencari dan mendapatkan koordinat dari setiap karakter atau fragmen teks. Jadi untuk memastikan tentang koordinat yang dikembalikan untuk setiap karakter, kita dapat mempertimbangkan untuk menyoroti (menambahkan persegi panjang) di sekitar setiap karakter.
+1. Muat Dokumen PDF.
+1. Inisialisasi TextFragmentAbsorber dengan Pola Regex.
+1. Terapkan Absorber ke Halaman 1.
+1. Gaya dan Tambahkan Tautan Hipertaut ke Kecocokan.
+1. Simpan PDF yang Dimodifikasi.
 
-Dalam kasus paragraf teks, Anda dapat mempertimbangkan menggunakan beberapa ekspresi reguler untuk menentukan jeda paragraf dan menggambar persegi panjang di sekitarnya. Silakan lihat cuplikan kode berikut. Cuplikan kode berikut mendapatkan koordinat dari setiap karakter dan membuat persegi panjang di sekitar setiap karakter.
+```python
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan pergi ke https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Buka dokumen
-Document document = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
+# Global configuration
+DATA_DIR = "your path here"
 
-// Buat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
+def text_fragment_absorber_search_and_add_hyperlink(input_file_path):
+    """
+    Search for text and convert matches to hyperlinks with styling.
 
-TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber(@"[\S]+");
+    Demonstrates advanced text processing by finding specific words and
+    converting them into clickable hyperlinks with visual styling. Shows
+    how to combine text search with document modification.
 
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
+    Args:
+        input_file_path (str): Path to the input PDF file to process.
 
-textAbsorber.TextSearchOptions = textSearchOptions;
+    Returns:
+        None: Saves modified PDF with hyperlinks to output file.
 
-document.Pages.Accept(textAbsorber);
+    Note:
+        - Searches for "whale|elephant" using regex pattern on page 1
+        - Converts found text to Wikipedia hyperlinks
+        - Applies blue color and underline styling to hyperlinks
+        - Creates new output file with "_out.pdf" suffix
+        - Demonstrates practical text enhancement and interactivity
+        - Combines search, styling, and hyperlinking in one operation
 
-var editor = new PdfContentEditor(document);
+    Example:
+        >>> text_fragment_absorber_search_and_add_hyperlink("document_in.pdf")
+        # Creates "document_out.pdf" with "whale" and "elephant" as clickable Wikipedia links
+    """
+    document = ap.Document(input_file_path)
 
-foreach (TextFragment textFragment in textAbsorber.TextFragments)
-{
-    foreach (TextSegment textSegment in textFragment.Segments)
-    {
-        DrawBox(editor, textFragment.Page.Number, textSegment, System.Drawing.Color.Red);
-    }
+    absorber = ap.text.TextFragmentAbsorber("whale|elephant")
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
 
-}
-dataDir = dataDir + "SearchTextAndDrawRectangle_out.pdf";
-document.Save(dataDir);
+    absorber.visit(document.pages[1])
+
+    for fragment in absorber.text_fragments:
+        fragment.text_state.foreground_color = ap.Color.blue
+        fragment.text_state.underline = True
+        fragment.hyperlink = ap.WebHyperlink(
+            f"https://en.wikipedia.org/wiki/{fragment.text}"
+        )
+
+    output = input_file_path.replace("in.pdf", "out.pdf")
+    document.save(output)
 ```
 
+## Cari dan Identifikasi Teks Bergaya dalam PDF Menggunakan TextFragmentAbsorber
 
-## Sorot setiap karakter dalam dokumen PDF
+Cari fragmen teks dalam PDF berdasarkan properti pemformatannya, bukan kontennya. Dengan menggunakan TextFragmentAbsorber, ia mengidentifikasi teks dengan gaya tertentu, seperti teks tebal.
 
-{{% alert color="primary" %}}
+1. Muat Dokumen PDF.
+1. Inisialisasi TextFragmentAbsorber.
+1. Terapkan Absorber ke Halaman 1.
+1. Periksa Fragmen Teks Berdasarkan Pemformatan. Memeriksa gaya font untuk pemformatan tebal.
 
-Anda dapat mencoba mencari teks dalam dokumen menggunakan Aspose.PDF dan mendapatkan hasilnya secara online di [tautan ini](https://products.aspose.app/pdf/search)
+```python
 
-{{% /alert %}}
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-Aspose.PDF untuk .NET mendukung fitur untuk mencari dan mendapatkan koordinat dari setiap karakter atau fragmen teks. Jadi untuk memastikan tentang koordinat yang dikembalikan untuk setiap karakter, kita dapat mempertimbangkan untuk menyorot (menambahkan persegi panjang) di sekitar setiap karakter. Cuplikan kode berikut mendapatkan koordinat setiap karakter dan membuat persegi panjang di sekitar setiap karakter.
+# Global configuration
+DATA_DIR = "your path here"
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+def text_fragment_absorber_search_styled_text(input_file_path):
+    """
+    Search and identify text based on formatting properties.
 
-int resolution = 150;
+    Demonstrates how to find text fragments based on their formatting
+    characteristics rather than content. Shows detection of bold text
+    and invisible text within the document.
 
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "input.pdf");
+    Args:
+        input_file_path (str): Path to the input PDF file to analyze.
 
-using (MemoryStream ms = new MemoryStream())
-{
-    PdfConverter conv = new PdfConverter(pdfDocument);
-    conv.Resolution = new Resolution(resolution, resolution);
-    conv.GetNextImage(ms, System.Drawing.Imaging.ImageFormat.Png);
+    Returns:
+        None: Prints formatted text findings to console.
 
-    Bitmap bmp = (Bitmap)Bitmap.FromStream(ms);
+    Note:
+        - Searches all text fragments on page 1
+        - Identifies text with FontStyles.BOLD formatting
+        - Detects invisible/hidden text using text_state.invisible
+        - Useful for formatting analysis and hidden content detection
+        - Demonstrates text property-based filtering capabilities
 
-    using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bmp))
-    {
-        float scale = resolution / 72f;
-        gr.Transform = new System.Drawing.Drawing2D.Matrix(scale, 0, 0, -scale, 0, bmp.Height);
+    Example:
+        >>> text_fragment_absorber_search_styled_text("document.pdf")
+        # Prints all bold text and any hidden/invisible text found on page 1
+    """
+    document = ap.Document(input_file_path)
 
-        for (int i = 0; i < pdfDocument.Pages.Count; i++)
-        {
-Page page = pdfDocument.Pages[1];
-// Buat objek TextAbsorber untuk menemukan semua kata
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
-page.Accept(textFragmentAbsorber);
-// Dapatkan fragmen teks yang diekstraksi
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// Loop melalui fragmen
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    if (i == 0)
-    {
-        gr.DrawRectangle(
-        Pens.Yellow,
-        (float)textFragment.Position.XIndent,
-        (float)textFragment.Position.YIndent,
-        (float)textFragment.Rectangle.Width,
-        (float)textFragment.Rectangle.Height);
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
 
-        for (int segNum = 1; segNum <= textFragment.Segments.Count; segNum++)
-        {
-TextSegment segment = textFragment.Segments[segNum];
+    absorber.visit(document.pages[1])
 
-for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
-{
-    CharInfo characterInfo = segment.Characters[charNum];
-
-    Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
-    Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
-          "   TextFragment URY = " + textFragment.Rectangle.URY);
-
-    gr.DrawRectangle(
-    Pens.Black,
-    (float)characterInfo.Rectangle.LLX,
-    (float)characterInfo.Rectangle.LLY,
-    (float)characterInfo.Rectangle.Width,
-    (float)characterInfo.Rectangle.Height);
-}
-
-gr.DrawRectangle(
-Pens.Green,
-(float)segment.Rectangle.LLX,
-(float)segment.Rectangle.LLY,
-(float)segment.Rectangle.Width,
-(float)segment.Rectangle.Height);
-        }
-    }
-}
-        }
-    }
-    dataDir = dataDir + "HighlightCharacterInPDF_out.png";
-    bmp.Save(dataDir, System.Drawing.Imaging.ImageFormat.Png);
-}
+    for fragment in absorber.text_fragments:
+        if fragment.text_state.font_style == ap.text.FontStyles.BOLD:
+            print(f"Bold: {fragment.text}")
 ```
 
+Mendeteksi teks tersembunyi atau tidak terlihat dalam dokumen PDF dengan menganalisis properti pemformatan teks:
 
-## Menambahkan dan Mencari Teks Tersembunyi
+1. Muat Dokumen PDF.
+1. Inisialisasi TextFragmentAbsorber.
+1. Terapkan Absorber ke Halaman 1.
+1. Periksa Fragmen Teks Berdasarkan Pemformatan. Periksa 'fragment.text_state.invisible' untuk teks tersembunyi.
 
-Terkadang kita ingin menambahkan teks tersembunyi dalam dokumen PDF dan kemudian mencari teks tersembunyi tersebut serta menggunakan posisinya untuk pemrosesan lebih lanjut. Untuk kenyamanan Anda, Aspose.PDF untuk .NET menyediakan kemampuan ini. Anda dapat menambahkan teks tersembunyi selama pembuatan dokumen. Selain itu, Anda dapat menemukan teks tersembunyi menggunakan TextFragmentAbsorber. Untuk menambahkan teks tersembunyi, atur TextState.Invisible menjadi 'true' untuk teks yang ditambahkan. TextFragmentAbsorber menemukan semua teks yang cocok dengan pola (jika ditentukan). Ini adalah perilaku default yang tidak dapat diubah. Untuk memverifikasi apakah teks yang ditemukan benar-benar tidak terlihat, properti TextState.Invisible dapat digunakan. Cuplikan kode di bawah ini menunjukkan cara menggunakan fitur ini.
+```python
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-//Buat dokumen dengan teks tersembunyi
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-Page page = doc.Pages.Add();
-TextFragment frag1 = new TextFragment("Ini adalah teks umum.");
-TextFragment frag2 = new TextFragment("Ini adalah teks tidak terlihat.");
+# Global configuration
+DATA_DIR = "your path here"
 
-//Atur properti teks - tidak terlihat
-frag2.TextState.Invisible = true;
+def text_fragment_absorber_search_styled_text(input_file_path):
+    """
+    Search and identify text based on formatting properties.
 
-page.Paragraphs.Add(frag1);
-page.Paragraphs.Add(frag2);
-doc.Save(dataDir + "39400_out.pdf");
-doc.Dispose();
+    Demonstrates how to find text fragments based on their formatting
+    characteristics rather than content. Shows detection of bold text
+    and invisible text within the document.
 
-//Cari teks dalam dokumen
-doc = new Aspose.Pdf.Document(dataDir + "39400_out.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-absorber.Visit(doc.Pages[1]);
+    Args:
+        input_file_path (str): Path to the input PDF file to analyze.
 
-foreach (TextFragment fragment in absorber.TextFragments)
-{
-    //Lakukan sesuatu dengan fragmen
-    Console.WriteLine("Teks '{0}' pada posisi {1} ketidaknampakan: {2} ",
-    fragment.Text, fragment.Position.ToString(), fragment.TextState.Invisible);
-}
-doc.Dispose();
+    Returns:
+        None: Prints formatted text findings to console.
+
+    Note:
+        - Searches all text fragments on page 1
+        - Identifies text with FontStyles.BOLD formatting
+        - Detects invisible/hidden text using text_state.invisible
+        - Useful for formatting analysis and hidden content detection
+        - Demonstrates text property-based filtering capabilities
+
+    Example:
+        >>> text_fragment_absorber_search_styled_text("document.pdf")
+        # Prints all bold text and any hidden/invisible text found on page 1
+    """
+    document = ap.Document(input_file_path)
+
+    absorber = ap.text.TextFragmentAbsorber()
+    absorber.text_search_options = ap.text.TextSearchOptions(True)
+
+    absorber.visit(document.pages[1])
+
+    for fragment in absorber.text_fragments:
+        if fragment.text_state.invisible:
+            print(f"Invisible: {fragment.text}")
 ```
 
+## Penyorotan Teks Visual di Halaman PDF
 
-## Mencari Teks Dengan .NET Regex
+Fungsi ini menggabungkan pengenalan teks dan rendering menjadi satu alur kerja. Tidak hanya mengekstrak teks tetapi juga memvisualisasikannya dengan menyorot fragmen, segmen, dan karakter dalam kotak berwarna pada gambar PNG setiap halaman.
 
-Aspose.PDF untuk .NET menyediakan kemampuan untuk mencari dokumen menggunakan opsi Regex standar .NET. TextFragmentAbsorber dapat digunakan untuk tujuan ini seperti yang ditunjukkan dalam contoh kode di bawah ini.
+Contoh kami melakukan visualisasi teks tingkat lanjut pada PDF dengan:
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+- mencari semua fragmen teks yang terlihat menggunakan ekspresi reguler
+- merender setiap halaman PDF menjadi gambar PNG resolusi tinggi
+- menggambar kotak berwarna di sekitar fragmen teks, segmen teks, dan karakter individual
 
-// Membuat objek Regex untuk menemukan semua kata
-System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"[\S]+");
+1. Atur Resolusi Gambar Output. Setiap halaman PDF dikonversi menjadi gambar PNG 150 DPI.
+1. Buka PDF dan Inisialisasi Text Absorber.
+1. Proses Setiap Halaman. Terapkan absorber ke setiap halaman. Kumpulkan semua fragmen teks yang terdeteksi dan posisi geometrisnya.
+1. Konversi Halaman ke Aliran PNG.
+1. Siapkan Objek Grafik untuk Menggambar.
+1. Terapkan Transformasi Koordinat. Konversi koordinat PDF ke piksel gambar.
+1. Gambar Kotak untuk Elemen Teks.
+1. Simpan Hasil.
 
-// Membuka dokumen
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "SearchTextRegex.pdf");
+```python
 
-// Mendapatkan halaman tertentu
-Page page = document.Pages[1];
+import io
+import os
+import re
+import shutil
+import aspose.pdf as ap
+import aspose.pydrawing as drawing
 
-// Membuat objek TextAbsorber untuk menemukan semua instance dari regex input
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(regex);
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
+# Global configuration
+DATA_DIR = "your path here"
 
-// Menerima absorber untuk halaman tersebut
-page.Accept(textFragmentAbsorber);
+def text_fragment_absorber_search_and_highlight(infile):
+    """
+    Search text and create visual highlighting with PNG output.
 
-// Mendapatkan fragmen teks yang diekstraksi
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+    Advanced function that combines text search with visual highlighting.
+    Converts PDF pages to PNG images and draws colored rectangles around
+    found text fragments, segments, and individual characters.
 
-// Melakukan perulangan melalui fragmen
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    Console.WriteLine(textFragment.Text);
-}
+    Args:
+        infile (str): Path to the input PDF file to process.
+
+    Returns:
+        None: Saves highlighted PNG images for each page.
+
+    Note:
+        - Uses regex pattern r"[\\S]+" to find all non-whitespace sequences
+        - Converts each page to 150 DPI PNG image using PngDevice
+        - Draws yellow rectangles around text fragments
+        - Draws green rectangles around text segments
+        - Draws black rectangles around individual characters
+        - Creates detailed visual analysis of text structure
+        - Output files named with page numbers: "filename1_out.png", etc.
+        - Complex coordinate transformation for proper overlay positioning
+
+    Example:
+        >>> text_fragment_absorber_search_and_highlight("document_in.pdf")
+        # Creates PNG files with visual highlighting of all text elements
+    """
+    resolution = 150
+    png_device = ap.devices.PngDevice(ap.devices.Resolution(resolution, resolution))
+
+    # Open PDF document
+    document = ap.Document(infile)
+    absorber = ap.text.TextFragmentAbsorber(r"[\S]+")
+    absorber.text_search_options.is_regular_expression_used = True
+
+    for page in document.pages:
+        page.accept(absorber)
+        stream = io.BytesIO()
+        png_device.process(page, stream)
+        with drawing.Bitmap.from_stream(stream) as bmp:
+            with drawing.Graphics.from_image(bmp) as gr:
+                scale = resolution / 72
+                gr.transform = drawing.drawing2d.Matrix(
+                    float(scale),
+                    float(0),
+                    float(0),
+                    float(-scale),
+                    float(0),
+                    float(bmp.height),
+                )
+                text_fragment_collection = absorber.text_fragments
+                # Loop through the fragments
+                for text_fragment in text_fragment_collection:
+                    gr.draw_rectangle(
+                        drawing.Pens.yellow,
+                        float(text_fragment.position.x_indent),
+                        float(text_fragment.position.y_indent),
+                        float(text_fragment.rectangle.width),
+                        float(text_fragment.rectangle.height),
+                    )
+                    for seg_num in range(1, len(text_fragment.segments) + 1):
+                        segment = text_fragment.segments[seg_num]
+                        for char_num in range(1, len(segment.characters) + 1):
+                            character_info = segment.characters[char_num]
+                            rect = page.get_page_rect(True)
+                            print(
+                                f"TextFragment = {text_fragment.text}"
+                                + f" Page URY = {rect.ury}"
+                                + f" TextFragment URY = {text_fragment.rectangle.ury}"
+                            )
+                            gr.draw_rectangle(
+                                drawing.Pens.black,
+                                float(character_info.rectangle.llx),
+                                float(character_info.rectangle.lly),
+                                float(character_info.rectangle.width),
+                                float(character_info.rectangle.height),
+                            )
+                        gr.draw_rectangle(
+                            drawing.Pens.green,
+                            float(segment.rectangle.llx),
+                            float(segment.rectangle.lly),
+                            float(segment.rectangle.width),
+                            float(segment.rectangle.height),
+                        )
+
+                # Save result
+                bmp.save(
+                    infile.replace("_in.pdf", str(page.number) + "_out.png"),
+                    drawing.imaging.ImageFormat.png,
+                )
 ```
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Library Manipulasi PDF untuk .NET",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2024.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

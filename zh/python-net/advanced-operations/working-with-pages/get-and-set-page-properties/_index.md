@@ -4,345 +4,214 @@ linktitle: 获取和设置页面属性
 type: docs
 weight: 90
 url: /zh/python-net/get-and-set-page-properties/
-description: 本节展示如何获取 PDF 文件中的页数，获取有关 PDF 页面属性（如颜色）的信息，并设置页面属性。
-lastmod: "2023-04-17"
-sitemap:
-    changefreq: "weekly"
+description: 本节展示了如何获取 PDF 文件的页数，获取 PDF 页面属性（如颜色）信息以及设置页面属性。
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 如何使用 Python 获取和设置页面属性
+Abstract: 本文讨论了 Aspose.PDF for Python via .NET 的功能，重点在于使用 Python 读取和设置 PDF 文件的页面属性。文章涵盖了多种功能，包括确定 PDF 的页数、访问和修改页面属性以及处理颜色信息。为了获取页数，使用 `Document` 类和 `PageCollection` 集合，并提供代码片段演示如何检索页数，即使在未保存文档的情况下。文章解释了不同的页面属性，如 MediaBox、BleedBox、TrimBox、ArtBox 和 CropBox，并提供了访问这些属性的代码示例。此外，还介绍了如何从 PDF 中提取特定页面并将其保存为单独的文档，以及如何确定每页的颜色类型。全文示例均使用 Python 实现，展示了这些特性的实际应用。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "使用 Python 获取和设置页面属性",
-    "alternativeHeadline": "获取和设置 PDF 页面属性",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, python, 获取页面属性, 设置页面属性",
-    "wordcount": "302",
-    "proficiencyLevel":"初学者",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/get-and-set-page-properties/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/get-and-set-page-properties/"
-    },
-    "dateModified": "2023-04-04",
-    "description": ""
-}
-</script>
 
+Aspose.PDF for Python via .NET 让您在 Python 应用程序中读取和设置 PDF 文件页面的属性。本节展示了如何获取 PDF 文件的页数，获取 PDF 页面属性（如颜色）信息以及设置页面属性。示例使用 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 和 [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) API，并以 Python 编写。
 
-Aspose.PDF for Python via .NET 允许您在 Python 应用程序中读取和设置 PDF 文件中页面的属性。本节展示了如何获取 PDF 文件的页数，获取有关 PDF 页面属性（例如颜色）的信息，并设置页面属性。给出的示例是用 Python 编写的。
+## 获取 PDF 文件的页数
 
-## 获取 PDF 文件中的页数
+在处理文档时，您通常想知道它们包含多少页。使用 Aspose.PDF 这只需两行代码即可实现。
 
-在处理文档时，您通常想知道它们包含多少页。使用 Aspose.PDF，这不需要超过两行代码。
-
-要获取 PDF 文件中的页数：
+获取 PDF 文件页数的方法如下：
 
 1. 使用 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 类打开 PDF 文件。
-1. 然后使用 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合的 Count 属性（来自 Document 对象）来获取文档中的总页数。
+1. 然后使用 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合的 Count 属性（来自 Document 对象），获取文档的总页数。
 
 以下代码片段展示了如何获取 PDF 文件的页数。
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # 打开文档
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # 获取页数
-    print("页数:", str(len(document.pages)))
+def get_page_count(input_file_name):
+    """
+    Get the total number of pages in a PDF document.
+    Args:
+        input_file_name (str): Path to the input PDF file.
+    Returns:
+        None: Prints the page count to console.
+    Example:
+        get_page_count("example.pdf")
+        # Output: Page Count: 10
+    """
+    # Open document
+    document = ap.Document(input_file_name)
+
+    # Get page count
+    print("Page Count:", str(len(document.pages)))
 ```
 
+### 在未保存文档的情况下获取页数
 
-### 获取页面数量而不保存文档
-
-有时我们会动态生成PDF文件，在创建PDF文件时，可能会遇到获取PDF文件页面数量的需求（例如创建目录等），而不在系统或流上保存文件。为了满足这一需求，Document类中引入了一个方法[process_paragraphs()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)。请看下面的代码片段，展示了在不保存文档的情况下获取页面数量的步骤。
+有时我们即时生成 PDF 文件，在创建 PDF 文件的过程中，可能会遇到（创建目录等）需要在不将文件保存到系统或流中的情况下获取 PDF 的页数。因此，为满足此需求，Document 类引入了一个方法 [process_paragraphs()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)。请查看以下代码片段，了解在未保存文档的情况下获取页数的步骤。
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # 实例化Document实例
-    document = ap.Document()
-    # 向PDF文件的页面集合中添加页面
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_count_without_saving(input_file_name):
+    """
+    Get the page count of a PDF document after adding content without saving the file.
+
+    This function opens an existing PDF document, adds a new page with 300 text fragments,
+    processes the paragraphs to ensure accurate page counting, and prints the total number
+    of pages in the document. The document is not saved to disk.
+
+    Args:
+        input_file_name (str): Path to the input PDF file to be processed.
+
+    Returns:
+        None: This function prints the page count but does not return a value.
+
+    Example:
+        >>> get_page_count_without_saving("sample.pdf")
+        Number of pages in document = 2
+    """
+    # Instantiate Document instance
+    document = ap.Document(input_file_name)
+    # Add page to pages collection of PDF file
     page = document.pages.add()
-    # 创建循环实例
-    for i in range(0, 300):
-        # 向页面对象的段落集合中添加TextFragment
-        page.paragraphs.add(ap.text.TextFragment("页面数量测试"))
-    # 处理PDF文件中的段落以获取准确的页面数量
+    # Create loop instance
+    for _ in range(0, 300):
+        # Add TextFragment to paragraphs collection of page object
+        page.paragraphs.add(ap.text.TextFragment("Pages count test"))
+    # Process the paragraphs in PDF file to get accurate page count
     document.process_paragraphs()
-    # 打印文档中的页面数量
-    print("文档中的页面数量 =", str(len(document.pages)))
+    # Print number of pages in document
+    print("Number of pages in document =", str(len(document.pages)))
 ```
-
 
 ## 获取页面属性
 
-PDF 文件中的每个页面都有许多属性，例如宽度、高度、出血框、裁剪框和切割框。Aspose.PDF 允许您访问这些属性。
+PDF 文件的每一页都有多个属性，例如宽度、高度、出血框、裁剪框和修剪框。Aspose.PDF 允许您访问这些属性。
 
-### **理解页面属性：Artbox、BleedBox、CropBox、MediaBox、TrimBox 和 Rect 属性之间的区别**
+### 理解页面属性：ArtBox、BleedBox、CropBox、MediaBox、TrimBox 和 Rect 属性之间的区别
 
-- **媒体框**：媒体框是最大的页面框。它对应于打印为 PostScript 或 PDF 时选择的页面大小（例如 A4、A5、美国信纸等）。换句话说，媒体框确定了显示或打印 PDF 文档的媒介的物理大小。
-- **出血框**：如果文档有出血，PDF 也会有一个出血框。
- 出血是指超出页面边缘的颜色（或艺术作品）的量。它用于确保当文档被打印和裁剪到尺寸（“修边”）时，油墨将一直延伸到页面的边缘。即使页面被误裁——稍微偏离修边标记切割——页面上也不会出现白色边缘。
-- **修边框**: 修边框表示文档在打印和修边后的最终尺寸。
-- **艺术框**: 艺术框是在文档页面的实际内容周围绘制的框。当在其他应用程序中导入PDF文档时，使用此页面框。
-- **裁剪框**: 裁剪框是您的PDF文档在Adobe Acrobat中显示的“页面”尺寸。在正常视图中，Adobe Acrobat中仅显示裁剪框的内容。
-  有关这些属性的详细描述，请阅读Adobe.Pdf规范，特别是10.10.1页面边界。
-- **Page.Rect**: MediaBox和DropBox的交集（通常为可见矩形）。 下图说明了这些属性。
+- **Media box**：Media box 是最大的页面框。它对应于文档打印为 PostScript 或 PDF 时选择的页面尺寸（例如 A4、A5、美国信纸等）。换句话说，Media box 决定了 PDF 文档显示或打印时介质的物理尺寸。
+- **Bleed box**：如果文档有出血，PDF 也会有出血框。出血是指超出页面边缘的颜色（或艺术作品）的面积。它用于确保在文档打印并裁切至尺寸（“修剪”）时，墨水能够覆盖到页面的边缘。即使页面裁剪不准确——稍微偏离修剪线——也不会在页面出现白边。
+- **Trim box**：Trim box 表示文档打印并裁切后得到的最终尺寸。
+- **Art box**：Art box 是围绕文档页面实际内容绘制的框。在其他应用程序导入 PDF 文档时会使用此页面框。
+- **Crop box**：Crop box 是在 Adobe Acrobat 中显示 PDF 文档的“页面”尺寸。在普通视图下，仅显示 Crop box 的内容。
+欲了解这些属性的详细描述，请阅读 Adobe.Pdf 规范，特别是 10.10.1 页面边界章节。
+-- **Page.Rect**：MediaBox 和 DropBox（`Page.rect`）的交集（通常可见的矩形）。请参阅 [`Rectangle`](https://reference.aspose.com/pdf/python-net/aspose.pdf/rectangle/) 类型了解矩形属性。下图演示了这些属性。
 
-有关更多详细信息，请访问[此页面](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)。
+欲获取更多细节，请访问 [此页面](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)。
 
-### **访问页面属性**
+### 访问页面属性
 
-[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)类提供了与特定PDF页面相关的所有属性。PDF文件的所有页面都包含在[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)对象的[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)集合中。
+The [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 类提供了特定 PDF 页面相关的所有属性。PDF 文件的所有页面都包含在 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象的 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合中。
 
-从那里，可以使用它们的索引访问单个Page对象，或者使用foreach循环遍历集合以获取所有页面。一旦访问了单个页面，我们就可以获取其属性。以下代码片段展示了如何获取页面属性。
+从中，您可以通过索引访问单个 `Page` 对象，或遍历集合获取所有页面。访问到单个页面后，就可以获取其属性。以下代码片段展示了如何获取页面属性（`Page` API）。
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # 打开文件
-    document = ap.Document(input_pdf)
-    # 获取特定页面
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_properties(input_file_name):
+    """
+    Retrieves and displays various page properties for the first page of a PDF document.
+
+    Args:
+        input_file_name (str): Path to the PDF file to analyze.
+    """
+    # Open document
+    document = ap.Document(input_file_name)
+    # Get particular page
     page = document.pages[1]
-    # 获取页面属性
-    print(
-        "ArtBox : 高度={},宽度={},LLX={},LLY={},URX={},URY={}".format(
-            page.art_box.height,
-            page.art_box.width,
-            page.art_box.llx,
-            page.art_box.lly,
-            page.art_box.urx,
-            page.art_box.ury,
-        )
-    )
-    print(
-        "BleedBox : 高度={},宽度={},LLX={},LLY={},URX={},URY={}".format(
-            page.bleed_box.height,
-            page.bleed_box.width,
-            page.bleed_box.llx,
-            page.bleed_box.lly,
-            page.bleed_box.urx,
-            page.bleed_box.ury,
-        )
-    )
-    print(
-        "CropBox : 高度={},宽度={},LLX={},LLY={},URX={},URY={}".format(
-            page.crop_box.height,
-            page.crop_box.width,
-            page.crop_box.llx,
-            page.crop_box.lly,
-            page.crop_box.urx,
-            page.crop_box.ury,
-        )
-    )
-    print(
-        "MediaBox : 高度={},宽度={},LLX={},LLY={},URX={},URY={}".format(
-            page.media_box.height,
-            page.media_box.width,
-            page.media_box.llx,
-            page.media_box.lly,
-            page.media_box.urx,
-            page.media_box.ury,
-        )
-    )
-    print(
-        "TrimBox : 高度={},宽度={},LLX={},LLY={},URX={},URY={}".format(
-            page.trim_box.height,
-            page.trim_box.width,
-            page.trim_box.llx,
-            page.trim_box.lly,
-            page.trim_box.urx,
-            page.trim_box.ury,
-        )
-    )
-    print(
-        "Rect : 高度={},宽度={},LLX={},LLY={},URX={},URY={}".format(
-            page.rect.height,
-            page.rect.width,
-            page.rect.llx,
-            page.rect.lly,
-            page.rect.urx,
-            page.rect.ury,
-        )
-    )
-    print("页面编号 :", page.number)
-    print("旋转 :", page.rotate)
-```
 
-## 获取 PDF 文件的特定页面
+    # Get page properties
+    boxes = {
+        "ArtBox": page.art_box,
+        "BleedBox": page.bleed_box,
+        "CropBox": page.crop_box,
+        "MediaBox": page.media_box,
+        "TrimBox": page.trim_box,
+        "Rect": page.rect
+    }
 
-Aspose.PDF for Python 允许您[将 PDF 拆分为单独的页面](/pdf/zh/python-net/split-pdf-document/)并将其另存为 PDF 文件。在 PDF 文件中获取指定页面并将其另存为新的 PDF 是一个非常类似的操作：打开源文档，访问页面，创建一个新文档并将页面添加到该文档中。
+    # Print box properties
+    for box_name, box in boxes.items():
+        print(f"{box_name} : Height={box.height},Width={box.width},LLX={box.llx},LLY={box.lly},URX={box.urx},URY={box.ury}")
 
-[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) 对象的 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection) 包含 PDF 文件中的页面。要从此集合中获取特定页面：
-
-1. 使用 Pages 属性指定页面索引。
-2. 创建一个新的 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 对象。
-3. 将 [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 对象添加到新的 Document 对象中。
-4. 使用 [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) 方法保存输出。
-
-以下代码片段演示了如何从 PDF 文件中获取特定页面并将其另存为新文件。
-
-```python
-
-    import aspose.pdf as ap
-
-    # 打开文档
-    document = ap.Document(input_pdf)
-
-    # 获取特定页面
-    page = document.pages[2]
-
-    # 将页面保存为PDF文件
-    new_document = ap.Document()
-    new_document.pages.add(page)
-    new_document.save(output_pdf)
+    # Print other page properties
+    print(f"Page Number : {page.number}")
+    print(f"Rotate : {page.rotate}")
 ```
 
 ## 确定页面颜色
 
-[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 类提供了与PDF文档中特定页面相关的属性，包括页面使用的颜色类型 - RGB、黑白、灰度或未定义。
+[Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 类提供了 PDF 文档中特定页面的属性，包括页面使用的颜色类型——RGB、黑白、灰度或未定义。
 
-PDF文件的所有页面都包含在 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合中。
- The [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) 属性指定页面元素的颜色。要获取或确定特定 PDF 页面的颜色信息，请使用 [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 对象的 [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) 属性。
+PDF 文件的所有页面都包含在 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) 集合中。[color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) 属性指定页面上元素的颜色。要获取或确定特定 PDF 页面的颜色信息，请使用 [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 对象的 [color_type](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) 属性。
 
 以下代码片段展示了如何遍历 PDF 文件的各个页面以获取颜色信息。
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # 打开源 PDF 文件
-    document = ap.Document(input_pdf)
-    # 遍历 PDF 文件的所有页面
-    for page_n in range(0, len(document.pages)):
-        page_number = page_n + 1
-        # 获取特定 PDF 页面的颜色类型信息
+# Global configuration
+DATA_DIR = "your path here"
+
+def get_page_color_type(input_file_name):
+    """
+    Analyzes and prints the color type information for each page in a PDF document.
+
+    This function opens a PDF file and iterates through all pages to determine
+    the color type of each page (black and white, grayscale, RGB, or undefined).
+    The results are printed to the console with human-readable descriptions.
+
+    Args:
+        input_file_name (str): Path to the PDF file to analyze.
+
+    Returns:
+        None: This function prints results directly to console and doesn't return a value.
+
+    Example:
+        >>> get_page_color_type("sample.pdf")
+        Page # 1 is RGB.
+        Page # 2 is Gray Scale.
+        Page # 3 is Black and white.
+
+    Note:
+        Requires the aspose.pdf library (imported as ap) to be installed and available.
+        The PDF file must be accessible at the specified path.
+    """
+    # Open source PDF file
+    document = ap.Document(input_file_name)
+    # Iterate through all the page of PDF file
+    for page_number in range(1, len(document.pages) + 1):
+        # Get the color type information for particular PDF page
         page_color_type = document.pages[page_number].color_type
-        if page_color_type == ap.ColorType.BLACK_AND_WHITE:
-            print("Page # " + str(page_number) + " is Black and white.")
-
-        if page_color_type == ap.ColorType.GRAYSCALE:
-            print("Page # " + str(page_number) + " is Gray Scale.")
-
-        if page_color_type == ap.ColorType.RGB:
-            print("Page # " + str(page_number) + " is RGB.")
-
-        if page_color_type == ap.ColorType.UNDEFINED:
-            print("Page # " + str(page_number) + " Color is undefined.")
+        color_type_map = {
+            ap.ColorType.BLACK_AND_WHITE: "Black and white",
+            ap.ColorType.GRAYSCALE: "Gray Scale",
+            ap.ColorType.RGB: "RGB",
+            ap.ColorType.UNDEFINED: "undefined"
+        }
+        color_description = color_type_map.get(page_color_type, "unknown")
+        print(f"Page # {page_number} is {color_description}.")
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF 操作库用于 Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

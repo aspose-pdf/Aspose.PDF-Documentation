@@ -1,184 +1,58 @@
 ---
-title: Pythonを使用してPDFをマージする方法
-linktitle: PDFファイルをマージ
+title: PythonでPDFを結合する方法
+linktitle: PDFファイルを結合
 type: docs
 weight: 50
 url: /ja/python-net/merge-pdf-documents/
-description: このページでは、Pythonを使用してPDFドキュメントを単一のPDFファイルにマージする方法を説明します。
-lastmod: "2023-04-14"
-sitemap:
+description: このページでは、Python を使用して PDF ドキュメントを単一の PDF ファイルに結合する方法を説明します。
+lastmod: "2025-02-27"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: PythonでPDFページを結合
+Abstract: 本稿では、複数の PDF ファイルを単一のドキュメントに結合するという一般的なニーズに対処し、PDF コンテンツの整理、ストレージの最適化、共有に役立つプロセスについて説明します。サードパーティライブラリなしでは Python での PDF 結合が困難であることを踏まえ、.NET 経由の Python 用 Aspose.PDF を使用して PDF ファイルを効率的に結合する方法を検討します。この記事では、PDF ファイルの連結手順として、新規ドキュメントの作成、ファイルの結合、結合されたドキュメントの保存というステップバイステップのガイドを提供します。コードスニペットは Aspose.PDF を使用した実装例を示し、ライブラリが結合プロセスを簡素化できる能力を強調しています。さらに、PDF を結合するオンラインツールである Aspose.PDF Merger を紹介し、ユーザーがウェブベースの環境で機能を体験できるようにします。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Pythonを使用してPDFをマージする方法",
-    "alternativeHeadline": "Pythonを介してPDFドキュメントを結合",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document manipulation",
-    "keywords": "pdf, python, merge pdf, concatenate, combine pdf",
-    "wordcount": "212",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "https://docs.aspose.com/pdf/python-net/merge-pdf-documents/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://docs.aspose.com/pdf/python-net/merge-pdf-documents/"
-    },
-    "dateModified": "2023-04-14",
-    "description": "このページでは、.NETを介してPythonでPDFドキュメントを単一のPDFファイルにマージする方法を説明します。"
-}
-</script>
 
+## Pythonで複数のPDFを単一のPDFに結合または統合する
 
-## 複数のPDFをPythonで単一のPDFに結合または統合する
+PDF ファイルを結合することはユーザーの間で非常に人気のある検索です。複数の PDF ファイルを 1 つのドキュメントとして共有したり保存したりしたい場合に便利です。
 
-PDFファイルを結合することは、ユーザーの間で非常に人気のあるクエリです。これは、共有したいまたは一緒に保存したい複数のPDFファイルがある場合に便利です。
+PDF ファイルを結合すると、ドキュメントを整理したり、PC のストレージ領域を確保したり、複数の PDF ファイルを 1 つのドキュメントにまとめて他者と共有したりできます。
 
-PDFファイルを結合することで、文書を整理し、PC上の保存スペースを確保し、複数のPDFファイルを1つの文書に結合して他の人と共有することができます。
+.NET 経由で Python で PDF を結合することは、サードパーティライブラリを使用しない限り簡単な作業ではありません。
+この記事では、.NET 経由の Python 用 Aspose.PDF を使用して、複数の PDF ファイルを単一の PDF ドキュメントに結合する方法を示します。
 
-.NET経由でPythonでPDFを結合することは、サードパーティライブラリを使用せずに行うのは簡単ではありません。この記事では、Aspose.PDF for Python via .NETを使用して複数のPDFファイルを単一のPDF文書に結合する方法を示します。
+## Python と DOM を使用した PDF ファイルの結合
 
-## PythonとDOMを使用してPDFファイルを結合
+2 つの PDF ファイルを連結するには:
 
-2つのPDFファイルを連結するには：
+1. 新しいドキュメントを作成します。
+1. PDF ファイルを結合します
+1. 結合されたドキュメントを保存します
 
-1. 各入力PDFファイルを含む2つの[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)オブジェクトを作成します。
-
-1. 次に、他のPDFファイルを追加したいDocumentオブジェクトの[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)コレクションの[add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods)メソッドを呼び出します。
-1. 2つ目のDocumentオブジェクトのPageCollectionコレクションを、最初のPageCollectionコレクションの[add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods)メソッドに渡します。
-1. 最後に、[save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドを使用して出力PDFファイルを保存します。
-
-次のコードスニペットは、PDFファイルを連結する方法を示しています。
+複数の PDF ドキュメントを単一のファイルに結合する:
 
 ```python
 
-    import aspose.pdf as ap
+    import aspose.pdf as apdf
+    import aspose.pydrawing as asdrw
+    from io import FileIO
+    from os import path
 
-    # 最初のドキュメントを開く
-    document1 = ap.Document(input_pdf_1)
-    # 2番目のドキュメントを開く
-    document2 = ap.Document(input_pdf_2)
+    path_infile1 = path.join(self.dataDir, infile1)
+    path_infile2 = path.join(self.dataDir, infile2)
+    path_outfile = path.join(self.dataDir, outfile)
 
-    # 2番目のドキュメントのページを最初に追加
-    document1.pages.add(document2.pages)
-
-    # 連結された出力ファイルを保存
-    document1.save(output_pdf)
+    document = apdf.Document()
+    document.merge(files=[path_infile1, path_infile2])
+    document.save(path_outfile)
 ```
 
 ## ライブ例
 
-[Aspose.PDF Merger](https://products.aspose.app/pdf/merger) は、プレゼンテーションのマージ機能がどのように機能するかを調査することができるオンラインの無料ウェブアプリケーションです。
+[Aspose.PDF Merger](https://products.aspose.app/pdf/merger) は、プレゼンテーション結合機能の動作を調査できるオンラインの無料ウェブアプリケーションです。
 
 [![Aspose.PDF Merger](merger.png)](https://products.aspose.app/pdf/merger)
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF 操作ライブラリ for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

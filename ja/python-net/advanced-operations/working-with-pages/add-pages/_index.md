@@ -1,134 +1,110 @@
 ---
-title: PythonでPDFにページを追加
-linktitle: ページを追加
+title: PythonでPDFにページを追加する
+linktitle: ページの追加
 type: docs
 weight: 10
 url: /ja/python-net/add-pages/
-description: この記事では、PDFファイルの希望の場所にページを挿入（追加）する方法を教えます。C#を使用して、PDFファイルからページを移動、削除（削除）する方法を学びます。
-lastmod: "2022-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF を使用して、柔軟な文書作成と編集が可能な Python で PDF ドキュメントにページを追加する方法を紹介します。
+lastmod: "2025-11-16"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF にページを追加する方法
+Abstract: この記事では、Aspose.PDF for Python via .NET API を使用して PDF ドキュメントのページを操作する方法についてガイドしています。特に PDF 内のすべてのページを管理する `PageCollection` クラスを通じて提供される API の柔軟性を強調しています。ドキュメントでは、PDF ファイルの特定の場所にページを追加または挿入する手順を詳述しています。主に 2 つの操作、すなわちドキュメント内の任意の場所に空白ページを挿入することと、ドキュメントの末尾に空白ページを追加することが説明されています。両方の操作では、`Document` オブジェクトを作成し、`PageCollection` の `insert` または `add` メソッドを使用し、変更されたドキュメントを保存するプロセスが含まれます。この記事には、これらのタスクを示すコードスニペットが含まれており、Python とこの API を使用して PDF ドキュメントを簡単に操作できることを示しています。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PythonでPDFにページを追加",
-    "alternativeHeadline": "PDFドキュメントにページを追加する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdf document generation",
-    "keywords": "pdf, python, add pdf page, insert pdf page",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-pages/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-pages/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "この記事では、PDFファイルの希望の場所にページを挿入（追加）する方法を教えます。Pythonを使用して、PDFファイルからページを移動、削除（削除）する方法を学びます。"
-}
-</script>
 
+Aspose.PDF for Python via .NET API は、Python を使用して PDF ドキュメントのページを操作するための完全な柔軟性を提供します。PDF ドキュメントのすべてのページは、PDF ページの操作に使用できる [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) に保持されます。
+Aspose.PDF for Python via .NET は、ファイル内の任意の場所にページを挿入できるだけでなく、PDF ファイルの末尾にページを追加することも可能です。[`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) にページを挿入できます。このセクションでは、Python を使用して PDF にページを追加する方法を示します。
 
-Aspose.PDF for Python via .NET APIは、Pythonを使用してPDFドキュメント内のページを操作するための完全な柔軟性を提供します。PDFドキュメントのすべてのページを[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)で管理し、PDFページを操作するために使用できます。  
-Aspose.PDF for Python via .NETを使用すると、ファイル内の任意の場所にページを挿入したり、PDFファイルの末尾にページを追加したりできます。このセクションでは、Pythonを使用してPDFにページを追加する方法を示します。
+## PDF ファイルにページを追加または挿入する
 
-## PDFファイルにページを追加または挿入する
+Aspose.PDF for Python via .NET は、ファイル内の任意の場所にページを挿入でき、PDF ファイルの末尾にページを追加することも可能です。[`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) を使用します。
 
-Aspose.PDF for Python via .NETを使用すると、ファイル内の任意の場所にページを挿入したり、PDFファイルの末尾にページを追加したりできます。
+### PDF ファイルに空白ページを挿入する
 
-### 希望の場所に空のページをPDFファイルに挿入する
+PDF ファイルに空白ページを挿入するには:
 
-PDFファイルに空のページを挿入するには：
+1. 適切な方法で既存の [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) を開きます。
+1. [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) の `insert()` メソッドを使用して、特定のインデックスに新しい空白ページを挿入します。
+1. 変更された [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) を目的の出力パスに保存します。
 
-1. 入力PDFファイルを使用して[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)クラスオブジェクトを作成します。
-
-1. 指定されたインデックスで[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)コレクションの[insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert)メソッドを呼び出します。
-1. [save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して出力PDFを保存します。
-
-次のコードスニペットは、PDFファイルにページを挿入する方法を示しています。
+既存の PDF ファイルに指定された位置で空白ページを挿入します:
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
-    # PDFに空白ページを挿入する
+# Global configuration
+DATA_DIR = "your path here"
+
+def insert_empty_page(input_file_name, output_file_name):
+    document = ap.Document(input_file_name)
     document.pages.insert(2)
-    # 出力ファイルを保存する
-    document.save(output_pdf)
+    document.save(output_file_name)
 ```
 
-### PDFファイルの末尾に空白ページを追加する
+### PDF ファイルの末尾に空白ページを追加する
 
-時々、ドキュメントが空白ページで終わることを確認したいことがあります。このトピックでは、PDFドキュメントの末尾に空白ページを挿入する方法を説明します。
+場合によっては、文書が空白ページで終わるようにしたいことがあります。このトピックでは、PDF 文書の末尾に空白ページを挿入する方法を説明します。
 
-PDFファイルの末尾に空白ページを挿入するには:
+PDF ファイルの末尾に空白ページを挿入するには:
 
-1. 入力PDFファイルで[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)クラスオブジェクトを作成します。
+1. 適切な方法で既存の [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) を開きます。
+1. [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) の `add()` メソッドを使用して、文書の末尾に新しい空白ページを追加します。
+1. 更新された [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) を保存します。
 
-1. パラメーターなしで[PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)コレクションの[add()](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/#methods)メソッドを呼び出します。
-1. [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods)メソッドを使用して出力PDFを保存します。
-
-次のコードスニペットは、PDFファイルの末尾に空のページを挿入する方法を示しています。
+以下のコードスニペットは、PDF ファイルの末尾に空白ページを挿入する方法を示しています。
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # ドキュメントを開く
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # PDFファイルの末尾に空のページを挿入
+def add_empty_page_to_end(input_file_name, output_file_name):
+    # Open document
+    document = ap.Document(input_file_name)
+
+    # Insert an empty page at the end of a PDF file
     document.pages.add()
 
-    # 出力ファイルを保存
-    document.save(output_pdf)
+    # Save output file
+    document.save(output_file_name)
+```
+
+### 別の PDF ドキュメントからページを追加する
+
+Aspose.PDF for Python ライブラリを使用すると、新しい [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) を作成し、最初のページを追加した後、別の PDF からページをインポートできます。
+
+1. 新しい [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) を作成します。
+1. 新しい空白の [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) を追加し、[`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) を使用してテキストを書き込みます。
+1. 別の既存の [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) を開きます。
+1. そのドキュメントから [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) をコピーします。
+1. コピーしたページを [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) を使用してメインドキュメントに貼り付けます。
+1. 結合されたファイルを保存します。
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_page_from_another_document(input_file_name, output_file_name):
+    # Open document
+    document = ap.Document()
+    page = document.pages.add()
+    text_fragment = ap.text.TextFragment("This is first page!")
+    page.paragraphs.add(text_fragment)
+
+    another_document = ap.Document(input_file_name)
+    document.pages.add(another_document.pages[1])
+
+    # Save output file
+    document.save(output_file_name)
+```

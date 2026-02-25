@@ -4,81 +4,19 @@ linktitle: Работа с формами
 type: docs
 weight: 60
 url: /ru/python-net/working-with-forms/
-description: Этот раздел описывает, как работать с AcroForms в PDF документах с помощью Aspose.PDF для Python через .NET.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: В этом разделе описывается, как работать с AcroForms в PDF‑документах с помощью Aspose.PDF для Python через .NET.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как работать с формами с помощью Python
+Abstract: В этой статье изложен простой метод программного заполнения PDF‑документов с использованием библиотеки Aspose.PDF for Python via .NET. Она подчеркивает процесс использования библиотеки для идентификации и сопоставления полей в существующих PDF‑файлах, использующих AcroForms. AcroForms — это электронные формы, позволяющие пользователям заполнять, отправлять и сохранять информацию эффективно, служащие удобным инструментом сбора данных. Кроме того, статья предоставляет сведения о создании форм, заполнении полей формы, извлечении данных и управлении полями в PDF с помощью Python‑библиотеки.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Работа с формами с использованием Python",
-    "alternativeHeadline": "Как работать с AcroForms в PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, python, acroforms",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда Aspose.PDF Doc",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/working-with-forms/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/working-with-forms/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Этот раздел объясняет, как работать с AcroForms в ваших PDF документах с помощью Aspose.PDF для Python."
-}
-</script>
 
+В этом разделе описывается быстрый и простой подход к программному заполнению PDF‑документа с использованием библиотеки Aspose.PDF for Python via .NET. Также рассматривается, как использовать Aspose.PDF for Python для обнаружения и сопоставления полей, доступных в существующем PDF с AcroForms.
 
-Этот раздел описывает быстрый и простой подход к программному заполнению PDF-документа с использованием библиотеки Aspose.PDF для Python через .NET. Раздел также обсуждает, как можно использовать Aspose.PDF для Python для обнаружения и отображения доступных полей в существующем PDF с AcroForms.
+AcroForms позволяет пользователям заполнять, отправлять и сохранять формы в электронном виде, делая их удобным и эффективным способом сбора информации.
 
-AcroForms позволяет пользователям заполнять, отправлять и хранить формы в электронном виде, что делает их удобным и эффективным способом сбора информации.
-
-- [AcroForms](/pdf/ru/python-net/acroforms/) - создавайте формы, заполняйте поля формы, извлекайте данные из формы, добавляйте и удаляйте поля в вашем PDF с помощью библиотеки Python.
+- [AcroForms](/pdf/python-net/acroforms/) - создавать формы, заполнять поля формы, извлекать данные из формы, добавлять и удалять поля в вашем PDF с помощью библиотеки Python.
+- [XFA Forms](/pdf/python-net/xfa-forms/) - конвертировать XFA, использование IgnoreNeedsRendering.

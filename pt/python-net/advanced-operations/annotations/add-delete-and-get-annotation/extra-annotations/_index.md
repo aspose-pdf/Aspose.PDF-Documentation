@@ -4,103 +4,41 @@ linktitle: Anotações Extras
 type: docs
 weight: 60
 url: /pt/python-net/extra-annotations/
-description: Esta seção descreve como adicionar, obter e deletar tipos extras de anotações do seu documento PDF.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Aprenda como adicionar anotações extras, como destaques ou notas, a PDFs em Python com Aspose.PDF para aprimorar o conteúdo PDF.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guia sobre como manipular anotações extras em PDF
+Abstract: O artigo fornece um guia abrangente sobre como adicionar, recuperar e excluir diferentes tipos de anotações em um arquivo PDF usando Python, especificamente com a biblioteca Aspose.PDF. Ele cobre três tipos de anotações – Caret, Link e Redaction. O artigo explica que as anotações Caret são usadas para sugestões de edição de texto. Descreve o processo de carregar um arquivo PDF, criar uma anotação Caret com parâmetros específicos (como retângulo, título, assunto, flags e cor), anexá‑la ao documento e salvar as alterações. Trechos de código são fornecidos para adicionar, recuperar e excluir anotações Caret. As anotações Link são usadas para criar áreas clicáveis que redirecionam para URLs ou posições específicas do documento. O guia inclui instruções e código para adicionar uma anotação Link identificando um fragmento de texto (ex., um número de telefone), definindo uma ação e gerenciando essas anotações.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Anotações Extras usando Python",
-    "alternativeHeadline": "Como adicionar Anotações Extras em PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, python, anotação de link, anotação de acento",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipe Aspose.PDF Doc",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extra-annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extra-annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Esta seção descreve como adicionar, obter e deletar tipos extras de anotações do seu documento PDF com Python."
-}
-</script>
 
+## Como adicionar Anotação Caret a um arquivo PDF existente via Python
 
-## Como adicionar Anotação de Plica em um arquivo PDF existente via Python
+Anotação Caret é um símbolo que indica edição de texto. Anotação Caret também é uma anotação de marcação, portanto a classe Caret herda da classe Markup e também fornece funções para obter ou definir propriedades da Anotação Caret e redefinir o fluxo da aparência da Anotação Caret.
+Anotações Caret são frequentemente usadas para sugerir alterações, adições ou modificações no texto.
 
-A Anotação de Plica é um símbolo que indica a edição de texto. A Anotação de Plica também é uma anotação de marcação, então a classe Caret deriva da classe Markup e também fornece funções para obter ou definir propriedades da Anotação de Plica e redefinir o fluxo da aparência da Anotação de Plica. As anotações de plica são frequentemente usadas para sugerir alterações, adições ou modificações no texto.
+Etapas para criar a anotação Caret:
 
-Passos com os quais criamos anotação de plica:
+1. Carregue o arquivo PDF - novo [Documento](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Crie uma nova [CaretAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/caretannotation/) e defina os parâmetros Caret (novo Rectangle, título, assunto, flags, cor). Esta anotação é usada para indicar a inserção de texto.
+1. Depois que pudermos anexar anotações à página.
 
-1. Carregar o arquivo PDF - novo [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-2. Criar nova [CaretAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/caretannotation/) e definir parâmetros de Plica (novo Retângulo, título, assunto, bandeiras, cor). Esta anotação é usada para indicar a inserção de texto.
-3. Uma vez que somos capazes de anexar anotações à página.
-
-O trecho de código a seguir mostra como adicionar Anotação de Plica a um arquivo PDF:
+O trecho de código a seguir mostra como adicionar Anotação Caret a um arquivo PDF:
 
 ```python
 
     import aspose.pdf as ap
 
-    # Abrir documento
+    # Open document
     document = ap.Document(input_file)
 
     caretAnnotation1 = ap.annotations.CaretAnnotation(
         document.pages[1], ap.Rectangle(200, 700.664, 308.708, 740.769, True)
     )
-    caretAnnotation1.title = "Usuário Aspose"
-    caretAnnotation1.subject = "Texto inserido 1"
+    caretAnnotation1.title = "Aspose User"
+    caretAnnotation1.subject = "Inserted text 1"
     caretAnnotation1.flags = ap.annotations.AnnotationFlags.PRINT
     caretAnnotation1.color = ap.Color.blue
 
@@ -108,10 +46,9 @@ O trecho de código a seguir mostra como adicionar Anotação de Plica a um arqu
     document.save(output_file)
 ```
 
+### Obter Anotação Caret
 
-### Obter Anotação de Posição
-
-Por favor, tente usar o seguinte trecho de código para Obter Anotação de Posição em um documento PDF
+Por favor, experimente usar o trecho de código a seguir para obter a Anotação Caret em um documento PDF
 
 ```python
 
@@ -128,15 +65,15 @@ Por favor, tente usar o seguinte trecho de código para Obter Anotação de Posi
         print(ca.rect)
 ```
 
-### Excluir Anotação de Posição
+### Excluir Anotação Caret
 
-O trecho de código a seguir mostra como Excluir Anotação de Posição de um arquivo PDF usando Python.
+O trecho de código a seguir mostra como excluir a Anotação Caret de um arquivo PDF usando Python.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Carregar o arquivo PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     caretAnnotations = [
         a
@@ -150,81 +87,9 @@ O trecho de código a seguir mostra como Excluir Anotação de Posição de um a
     document.save(output_file)
 ```
 
-## Adicionar Anotação de Link
+## Redigir determinada região da página com Anotação de Redação usando Aspose.PDF para Python
 
-[Links](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/linkannotation/) são anotações que abrem URLs ou se movem para certas posições dentro do mesmo ou de um documento externo quando você clica.
-
-Uma Anotação de Link é uma área retangular que pode ser colocada em qualquer lugar da página. Cada link tem uma ação PDF correspondente associada a ele. Esta ação é executada quando o usuário clica na área deste link.
-
-O trecho de código a seguir mostra como adicionar uma Anotação de Link a um arquivo PDF usando um exemplo de número de telefone:
-
-```python
-
-    import aspose.pdf as ap
-
-    document = ap.Document(input_file)
-    # Criar objeto TextFragmentAbsorber para encontrar um número de telefone
-    textFragmentAbsorber = ap.text.TextFragmentAbsorber("file")
-
-    # Aceitar o absorvedor apenas para a 1ª página
-    document.pages[1].accept(textFragmentAbsorber)
-
-    phoneNumberFragment = textFragmentAbsorber.text_fragments[1]
-
-    # Criar Anotação de Link e definir a ação para chamar um número de telefone
-    linkAnnotation = ap.annotations.LinkAnnotation(document.pages[1], phoneNumberFragment.rectangle)
-    linkAnnotation.action = ap.annotations.GoToURIAction("www.aspose.com")
-
-    # Adicionar anotação à página
-    document.pages[1].annotations.append(linkAnnotation)
-    document.save(output_file)
-```
-
-
-### Obter Anotação de Link
-
-Por favor, tente usar o seguinte trecho de código para Obter [LinkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/linkannotation/) do documento PDF.
-
-```python
-
-    import aspose.pdf as ap
-
-    document = ap.Document(input_file)
-    linkAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.LINK)
-    ]
-
-    for la in linkAnnotations:
-        print(la.rect)
-```
-
-### Excluir Anotação de Link
-
-O seguinte trecho de código mostra como Excluir Anotação de Link do arquivo PDF. Para isso, precisamos encontrar e remover todas as anotações de link na 1ª página. Após isso, salvaremos o documento com a anotação removida.
-
-```python
-
-    import aspose.pdf as ap
-
-    document = ap.Document(input_file)
-    highlightAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.LINK)
-    ]
-
-    for hs in highlightAnnotations:
-        document.pages[1].annotations.delete(hs)
-
-    document.save(output_file)
-```
-
-
-## Redigir certa região da página com Anotação de Redação usando Aspose.PDF para Python
-
-Aspose.PDF para Python via .NET suporta o recurso de adicionar e manipular Anotações em um arquivo PDF existente. Anotações de Redação em documentos PDF servem para o propósito de remover ou ocultar permanentemente informações confidenciais do documento. O processo de edição das informações envolve cobrir ou sombrear conteúdo específico, como texto, imagens ou gráficos, de maneira que restrinja sua visibilidade e acessibilidade para outras pessoas. Isso garante que as informações sensíveis permaneçam ocultas e protegidas dentro do documento. Para atender a este requisito, é fornecida uma classe chamada [RedactionAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/redactionannotation/), que pode ser usada para redigir certas regiões da página ou pode ser usada para manipular RedactionAnnotations existentes e redigi-las (ou seja, achatar a anotação e remover o texto sob ela).
+O Aspose.PDF para Python via .NET oferece o recurso de adicionar e manipular Anotações em um arquivo PDF existente. As Anotações de Redação em documentos PDF têm a finalidade de remover ou ocultar permanentemente informações confidenciais do documento. O processo de edição dessas informações envolve cobrir ou sombrear conteúdo específico, como texto, imagens ou gráficos, de forma a restringir sua visibilidade e acessibilidade a terceiros. Isso garante que as informações sensíveis permanecam escondidas e protegidas dentro do documento. Para atender a essa necessidade, uma classe chamada [RedactionAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/redactionannotation/) é fornecida, que pode ser usada para redigir determinadas regiões da página ou para manipular RedactionAnnotations existentes e redigi‑las (ou seja, achatar a anotação e remover o texto subjacente).
 
 ```python
 
@@ -242,7 +107,6 @@ Aspose.PDF para Python via .NET suporta o recurso de adicionar e manipular Anota
     document.save(output_file)
 ```
 
-
 ### Obter Anotação de Redação
 
 ```python
@@ -258,7 +122,7 @@ Aspose.PDF para Python via .NET suporta o recurso de adicionar e manipular Anota
 
     for pa in redactionAnnotations:
         print(pa.rect)
-```    
+```
 
 ### Excluir Anotação de Redação
 
@@ -277,68 +141,7 @@ Aspose.PDF para Python via .NET suporta o recurso de adicionar e manipular Anota
         document.pages[1].annotations.delete(pa)
 
     document.save(output_file)
-```  
+```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+
+

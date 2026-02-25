@@ -4,92 +4,30 @@ linktitle: Anotasi Gambar
 type: docs
 weight: 30
 url: /id/python-net/figures-annotation/
-description: Artikel ini menjelaskan bagaimana cara menambahkan, mendapatkan, dan menghapus anotasi gambar dari dokumen PDF Anda dengan Aspose.PDF untuk Python melalui .NET
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Artikel ini menjelaskan cara menambahkan, mengambil, dan menghapus anotasi gambar dari dokumen PDF Anda dengan Aspose.PDF untuk Python via .NET
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
----
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Tambahkan Anotasi Gambar menggunakan Python",
-    "alternativeHeadline": "Cara menambahkan Anotasi Gambar dalam PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, python, anotasi gambar, anotasi poligon, anotasi garis, anotasi persegi, anotasi lingkaran",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Tim Dokumentasi Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/figures-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/figures-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Artikel ini menjelaskan bagaimana cara menambahkan, mendapatkan, dan menghapus anotasi gambar dari dokumen PDF Anda dengan Aspose.PDF untuk Python"
-}
-</script>
+TechArticle: true
+AlternativeHeadline: Panduan cara memanipulasi anotasi Gambar dalam PDF
+Abstract: Artikel ini menyediakan panduan komprehensif tentang menambahkan, mengambil, dan menghapus anotasi persegi, lingkaran, poligon, dan polyline dalam dokumen PDF menggunakan Aspose.PDF untuk Python. Anotasi persegi dan lingkaran secara visual menyoroti area spesifik pada halaman PDF dengan bentuk persegi panjang dan elips, masing-masing. Artikel ini menyertakan instruksi langkah demi langkah serta potongan kode Python untuk membuat anotasi ini dengan memuat file PDF, mengonfigurasi properti anotasi seperti judul, warna, dan opasitas, dan menambahkannya ke halaman PDF. Selain itu, artikel ini menjelaskan metode untuk mengambil anotasi berdasarkan tipe, mencetak dimensi persegi panjangnya, dan menghapusnya dari dokumen PDF. Anotasi poligon dan polyline juga dibahas, di mana poligon didefinisikan oleh serangkaian titik yang terhubung membentuk bentuk tertutup, sementara polyline menghubungkan titik secara terbuka. Dokumen ini menyediakan contoh kode untuk mengilustrasikan proses penambahan anotasi ini ke PDF, serta metode untuk mengakses dan menghapusnya.
 
+---
 
 ## Tambahkan Anotasi Persegi dan Lingkaran
 
-Dalam dokumen PDF, anotasi persegi mengacu pada jenis anotasi tertentu yang diwakili oleh bentuk persegi. Anotasi persegi digunakan untuk menyoroti atau menarik perhatian ke area atau bagian tertentu dalam dokumen.
+Dalam dokumen PDF, anotasi persegi mengacu pada jenis anotasi tertentu yang direpresentasikan dengan bentuk persegi. Anotasi persegi digunakan untuk menyoroti atau menarik perhatian ke area atau bagian tertentu dalam dokumen.
 
-Anotasi [Persegi](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) dan [Lingkaran](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) akan menampilkan, masing-masing, sebuah persegi panjang atau elips pada halaman.
+[Persegi](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) dan [Lingkaran](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) anotasi akan menampilkan, masing-masing, sebuah persegi panjang atau elips pada halaman.
 
 Langkah-langkah untuk membuat Anotasi Persegi atau Lingkaran:
 
 1. Muat file PDF - baru [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-2. Buat [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) baru dan atur parameter (Rectangle baru, judul, warna, warna_interior, opasitas).
-3. Setelah itu kita perlu menambahkan Anotasi Persegi ke halaman.
+1. Buat [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) baru dan atur parameter (Rectangle baru, judul, warna, interior_color, opacity).
+1. Setelah itu kita perlu Menambahkan Anotasi Persegi ke halaman.
 
-Cuplikan kode berikut menunjukkan bagaimana menambahkan Anotasi Persegi pada halaman PDF.
+Potongan kode berikut menunjukkan cara menambahkan Anotasi Persegi dalam halaman PDF.
 
 ```python
 
@@ -108,13 +46,13 @@ Cuplikan kode berikut menunjukkan bagaimana menambahkan Anotasi Persegi pada hal
     document.save(output_file)
 ```
 
-Cuplikan kode berikut menunjukkan kepada Anda cara menambahkan Anotasi Lingkaran di halaman PDF.
+Potongan kode berikut menunjukkan cara menambahkan Anotasi Lingkaran dalam halaman PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Buka dokumen
+    # Open document
     document = ap.Document(input_file)
 
     circleAnnotation = ap.annotations.CircleAnnotation(
@@ -132,14 +70,13 @@ Cuplikan kode berikut menunjukkan kepada Anda cara menambahkan Anotasi Lingkaran
     document.save(output_file)
 ```
 
-
-Sebagai contoh, kita akan melihat hasil menambahkan anotasi Persegi dan Lingkaran ke dokumen PDF berikut ini:
+Sebagai contoh, kita akan melihat hasil berikut dari penambahan anotasi Persegi dan Lingkaran ke dokumen PDF:
 
 ![Demo Anotasi Lingkaran dan Persegi](circle_demo.png)
 
 ### Dapatkan Anotasi Lingkaran
 
-Silakan coba gunakan potongan kode berikut untuk mendapatkan Anotasi Lingkaran dari dokumen PDF.
+Silakan coba menggunakan potongan kode berikut untuk Mendapatkan Anotasi Lingkaran dari dokumen PDF.
 
 ```python
 
@@ -158,7 +95,7 @@ Silakan coba gunakan potongan kode berikut untuk mendapatkan Anotasi Lingkaran d
 
 ### Dapatkan Anotasi Persegi
 
-Silakan coba gunakan potongan kode berikut untuk mendapatkan Anotasi Persegi dari dokumen PDF.
+Silakan coba menggunakan potongan kode berikut untuk Mendapatkan Anotasi Persegi dari dokumen PDF.
 
 ```python
 
@@ -175,9 +112,10 @@ Silakan coba gunakan potongan kode berikut untuk mendapatkan Anotasi Persegi dar
         print(pa.rect)
 ```
 
+
 ### Hapus Anotasi Lingkaran
 
-The following code snippet shows how to Delete Circle Annotation from PDF file.
+Potongan kode berikut menunjukkan cara menghapus Anotasi Lingkaran dari file PDF.
 
 ```python
 
@@ -196,9 +134,9 @@ The following code snippet shows how to Delete Circle Annotation from PDF file.
     document.save(output_file)
 ```
 
-### Hapus Anotasi Kotak
+### Hapus Anotasi Persegi
 
-Cuplikan kode berikut menunjukkan cara Menghapus Anotasi Kotak dari file PDF.
+Potongan kode berikut menunjukkan cara menghapus Anotasi Persegi dari file PDF.
 
 ```python
 
@@ -217,21 +155,21 @@ Cuplikan kode berikut menunjukkan cara Menghapus Anotasi Kotak dari file PDF.
     document.save(output_file)
 ```
 
-## Tambahkan Anotasi Poligon dan Polilinier
+## Tambahkan Anotasi Poligon dan Polyline
 
-Alat Polilinier memungkinkan Anda membuat bentuk dan garis dengan jumlah sisi sembarang pada dokumen.
+Alat Polyline memungkinkan Anda membuat bentuk dan kontur dengan jumlah sisi yang arbitrer pada dokumen.
 
-[Polygon Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) mewakili poligon pada halaman. Mereka dapat memiliki sejumlah titik yang dihubungkan oleh garis lurus.
+[Anotasi Poligon](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) merepresentasikan poligon pada halaman. Mereka dapat memiliki jumlah titik apa saja yang terhubung dengan garis lurus.
 
-[Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) juga mirip dengan poligon, perbedaannya hanya pada titik pertama dan terakhir yang tidak terhubung secara implisit.
+[Anotasi Polyline](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) juga mirip dengan poligon, satu-satunya perbedaan adalah bahwa titik pertama dan terakhir tidak terhubung secara implisit.
 
-Langkah-langkah dengan mana kita membuat anotasi Poligon:
+Langkah-langkah kami membuat anotasi Poligon:
 
 1. Muat file PDF - baru [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-2. Buat [Polygon Annotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) baru dan atur parameter Poligon (Rectangle baru, Points baru, judul, warna, warna interior, dan opasitas).
-3. Setelah itu kita bisa menambahkan anotasi ke halaman.
+1. Buat [Polygon Annotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) baru dan atur parameter Poligon (Rectangle baru, Points baru, judul, warna, interior_color dan opacity).
+1. Setelah itu kita dapat Menambahkan anotasi ke halaman.
 
-Cuplikan kode berikut menunjukkan cara menambahkan Anotasi Poligon ke file PDF:
+Potongan kode berikut menunjukkan cara menambahkan Anotasi Poligon ke file PDF:
 
 ```python
 
@@ -259,12 +197,11 @@ Cuplikan kode berikut menunjukkan cara menambahkan Anotasi Poligon ke file PDF:
     document.save(output_file)
 ```
 
-
-Berikut adalah cuplikan kode yang menunjukkan cara menambahkan Anotasi Polyline ke file PDF:
+Potongan kode berikut menunjukkan cara menambahkan Anotasi Polyline ke file PDF:
 
 1. Muat file PDF - baru [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-2. Buat [Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) baru dan atur parameter Poligon (Rectangle baru, Points baru, judul, warna, interior_color, dan opacity).
-3. Setelah itu kita bisa menambahkan anotasi ke halaman.
+1. Buat [Anotasi Polyline](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) baru dan atur parameter Poligon (Rectangle baru, Points baru, judul, warna, interior_color dan opacity).
+1. Setelah itu kita dapat Menambahkan anotasi ke halaman.
 
 ```python
 
@@ -293,10 +230,9 @@ Berikut adalah cuplikan kode yang menunjukkan cara menambahkan Anotasi Polyline 
     document.save(output_file)
 ```
 
+### Dapatkan Anotasi Poligon dan Polyline
 
-### Dapatkan Anotasi Poligon dan Garis Poligon
-
-Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Poligon dalam dokumen PDF.
+Silakan coba menggunakan potongan kode berikut untuk Mendapatkan Anotasi Poligon dalam dokumen PDF.
 
 ```python
 
@@ -313,7 +249,7 @@ Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Poligon dal
         print(pa.rect)
 ```
 
-Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Garis Poligon dalam dokumen PDF.
+Silakan coba menggunakan potongan kode berikut untuk Mendapatkan Anotasi Polyline dalam dokumen PDF.
 
 ```python
 
@@ -330,9 +266,9 @@ Silakan coba gunakan potongan kode berikut untuk Mendapatkan Anotasi Garis Polig
         print(pa.rect)
 ```
 
-### Hapus Anotasi Poligon dan Garis Poligon
+### Hapus Anotasi Poligon dan Polyline
 
-Potongan kode berikut menunjukkan cara Menghapus Anotasi Poligon dari file PDF.
+Potongan kode berikut menunjukkan cara menghapus Anotasi Poligon dari file PDF.
 
 ```python
 
@@ -351,8 +287,7 @@ Potongan kode berikut menunjukkan cara Menghapus Anotasi Poligon dari file PDF.
     document.save(output_file)
 ```
 
-
-Potongan kode berikut menunjukkan cara Menghapus Anotasi Polyline dari file PDF.
+Potongan kode berikut menunjukkan cara menghapus anotasi Polyline dari file PDF.
 
 ```python
 
@@ -371,66 +306,4 @@ Potongan kode berikut menunjukkan cara Menghapus Anotasi Polyline dari file PDF.
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Pustaka Python",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Pustaka Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

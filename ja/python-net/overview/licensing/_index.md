@@ -4,27 +4,29 @@ linktitle: ライセンスと制限
 type: docs
 weight: 50
 url: /ja/python-net/licensing/
-description: Aspose. PDF for Pythonは、クラシックライセンスを取得することを顧客に提案します。また、製品をよりよく探索するために、限定ライセンスを使用することも可能です。
-lastmod: "2022-12-21"
-sitemap:
+description: Aspose.PDF for Python は顧客にクラシック ライセンスの取得を促しています。また、製品をよりよく探索するために制限付きライセンスを使用することもできます。
+lastmod: "2025-02-21"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Aspose.PDF for Python のライセンス情報
+Abstract: この記事では、Aspose.PDF for Python の制限とライセンス オプションについて説明します。評価版はフル機能のテストが可能ですが、生成された PDF に「Evaluation Only」と著作権情報が含まれる透かしが追加されることを強調しています。これらの制限なしでテストしたいユーザーには、30 日間の一時ライセンスが利用できます。記事では、ファイルまたはストリームから読み込むことでクラシック ライセンスを実装する方法をさらに解説し、ライセンス ファイルを Aspose.PDF.dll と同じディレクトリに配置し、`Aspose.Pdf.License` クラスを使用してライセンスを設定することを推奨しています。ライセンス プロセスを示すコード スニペットが提供されています。
 ---
 
 ## 評価版の制限
 
-私たちはお客様に購入前にコンポーネントを十分にテストしていただきたいと考えています。そのため、評価版では通常のように使用することができます。
+お客様が購入前にコンポーネントを十分にテストできるように、評価版では通常通り使用できるようにしています。
 
-- **評価用透かしが付いたPDF。** Aspose.PDF for Pythonの評価版は、製品の全機能を提供しますが、生成されたPDFドキュメントのすべてのページには、上部に「Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd」という透かしが入ります。
+- **評価用透かし付き PDF**。Aspose.PDF for Python の評価版は製品の全機能を提供しますが、生成された PDF ドキュメントのすべてのページの上部に「Evaluation Only. Created with Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd」という透かしが付けられます。
 
->評価版の制限なしでAspose.PDFをテストしたい場合は、30日間の一時ライセンスもリクエストできます。
- Please refer to [一時ライセンスの取得方法](https://purchase.aspose.com/temporary-license)
+>評価版の制限なしで Aspose.PDF をテストしたい場合は、30 日間の一時ライセンスをリクエストすることもできます。詳細は[一時ライセンスの取得方法？](https://purchase.aspose.com/temporary-license)をご参照ください
 
-## クラシックライセンス
+## クラシック ライセンス
 
-ライセンスはファイルまたはストリームオブジェクトから読み込むことができます。ライセンスを設定する最も簡単な方法は、ライセンスファイルをAspose.PDF.dllファイルと同じフォルダに置き、パスを指定せずにファイル名を指定することです。以下の例に示されています。
+ライセンスはファイルまたはストリームオブジェクトから読み込むことができます。最も簡単な設定方法は、ライセンス ファイルを Aspose.PDF.dll と同じフォルダーに置き、パスなしでファイル名だけを指定することです。以下の例に示すように行います。
 
-Aspose.PDF for Pythonと一緒に他のAspose for Pythonコンポーネントを使用する場合は、[Aspose.Pdf.Licenseクラス]()のようにライセンスの名前空間を指定してください。
+Aspose.PDF for Python と他の Aspose for Python コンポーネントを併用する場合は、[Aspose.Pdf.License クラス]() のようにライセンスの名前空間を指定してください。
 
 ```python
 
@@ -32,3 +34,4 @@ Aspose.PDF for Pythonと一緒に他のAspose for Pythonコンポーネントを
     license = ap.License()
     license.set_license(license_file)
 ```
+

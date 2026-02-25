@@ -1,308 +1,511 @@
 ---
-title: إضافة رأس وتذييل إلى PDF باستخدام بايثون
+title: إضافة رأس وتذييل إلى ملف PDF باستخدام بايثون
 linktitle: إضافة رأس وتذييل إلى PDF
 type: docs
 weight: 50
 url: /ar/python-net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF لبايثون عبر .NET يتيح لك إضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام فئة TextStamp.
-lastmod: "2023-04-17"
-sitemap:
+description: Aspose.PDF للبايثون عبر .NET يتيح لك إضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام فئة TextStamp.
+lastmod: "2025-11-16"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية إضافة رأس وتذييل إلى PDF باستخدام بايثون
+Abstract: المقالة توفر دليلًا شاملاً حول استخدام **Aspose.PDF للبايثون عبر .NET** لإضافة رؤوس وتذييلات إلى ملفات PDF، مع القدرة على دمج النص أو الصور. يبدأ بتفصيل استخدام فئة `TextStamp` لإدراج النص في رأس مستند PDF. الخصائص الرئيسية مثل حجم الخط، والنمط، واللون قابلة للتعديل، ويتم توضيح طريقة إضافة النص إلى الرأس باستخدام مقتطف كود بايثون. يشرح المقال بنفس الطريقة كيفية إضافة النص إلى التذييل، متبعًا نفس الخطوات الإجرائية. لإضافة الصور، تُستخدم فئة `ImageStamp`، ويتم وصف العملية لكل من الرؤوس والتذييلات، مدعومة بأمثلة كود بايثون. بالإضافة إلى ذلك، يناقش المقال إضافة عدة رؤوس في ملف PDF واحد. يشمل ذلك إنشاء عدة كائنات `TextStamp`، كل منها بتنسيق مميز، وتطبيقها على صفحات مختلفة. يُكمل الشرح مقتطف كود مفصل يوضح هذه الوظيفة.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "إضافة رأس وتذييل إلى PDF باستخدام بايثون",
-    "alternativeHeadline": "كيفية إضافة رأس وتذييل إلى ملف PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "توليد مستندات pdf",
-    "keywords": "pdf, python, إضافة رأس, إضافة تذييل في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
-    "publisher": {
-        "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-headers-and-footers-of-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-headers-and-footers-of-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF لبايثون عبر .NET يتيح لك إضافة رؤوس وتذييلات إلى ملف PDF الخاص بك باستخدام فئة TextStamp."
-}
-</script>
 
+توفر هذه الصفحة نظرة موجزة على إضافة الرؤوس والتذييلات إلى مستندات PDF باستخدام Aspose.PDF للبايثون عبر .NET، مع تغطية نهج النص، HTML، LaTeX، الصور، والجداول بالإضافة إلى ترقيم الصفحات الديناميكي والعديد من الرؤوس لكل صفحة؛ تشرح كيفية إنشاء وتنسيق كائنات [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) (باستخدام [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/)، [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/)، [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/)، [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/)، [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/)، إلخ)، ضبط [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) و [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) للحصول على وضعية دقيقة، وإرفاق النتائج بالصفحات باستخدام أمثلة عملية لكود بايثون.
 
-**Aspose.PDF لـ Python عبر .NET** يتيح لك إضافة رأس وتذييل في ملف PDF الحالي الخاص بك. يمكنك إضافة صور أو نص إلى مستند PDF. أيضًا، حاول إضافة رؤوس مختلفة في ملف PDF واحد باستخدام Python.
+**Aspose.PDF للبايثون عبر .NET** يتيح لك إضافة رأس وتذييل في الـ[`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). يمكنك إضافة صور أو نص إلى مستند PDF. كما يمكنك تجربة إضافة رؤوس مختلفة في ملف PDF واحد باستخدام بايثون.
 
-## إضافة نص في رأس ملف PDF
+## إضافة رؤوس وتذييلات كقطع نصية
 
-يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) لإضافة نص في رأس ملف PDF. توفر فئة TextStamp خصائص ضرورية لإنشاء ختم نصي مثل حجم الخط، ونمط الخط، ولون الخط وغيرها. من أجل إضافة نص في الرأس، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة 'add_stamp' للصفحة لإضافة النص في رأس ملف PDF.
+إضافة رؤوس وتذييلات نصية بسيطة إلى جميع صفحات PDF. تقوم بإنشاء كائنات [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/)، وتُدرج عناصر [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) فيها، وتضبط [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) لضمان التموضع الصحيح، وتُرفقها بكل صفحة في المستند. النتيجة هي PDF حيث تعرض كل صفحة نص رأس وتذييل موحد.
 
-تحتاج إلى ضبط خاصية [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) بطريقة تضمن ضبط النص في منطقة الرأس من ملف PDF الخاص بك. تحتاج أيضًا إلى ضبط 'horizontal_alignment' إلى Center و'vertical_alignment' إلى Top.
+المقتطف البرمجي التالي يوضح كيفية إضافة الرؤوس والتذييلات كقطع نصية في ملف PDF باستخدام بايثون:
 
-يوضح لك مقتطف الشيفرة التالي كيفية إضافة نص في رأس ملف PDF باستخدام Python:
+1. إنشاء قطع نصية للرأس والتذييل.
+1. إنشاء كائنات HeaderFooter وإضافة قطع النص إليها.
+1. تحديد إعدادات الهوامش للتحكم في موضع الرأس والتذييل.
+1. تحميل مستند PDF من ملف الإدخال.
+1. التجول عبر جميع الصفحات في المستند.
+1. تعيين الرأس والتذييل لكل صفحة.
+1. حفظ PDF المعدل إلى ملف الإخراج.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # افتح المستند
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # إنشاء رأس
-    textStamp = ap.TextStamp("Header Text")
-    # تعيين خصائص الختم
-    textStamp.top_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # إضافة رأس على جميع الصفحات
-    for page in document.pages:
-        page.add_stamp(textStamp)
+def add_header_and_footer_as_text(input_file, output_file):
+    """
+    Add simple text headers and footers to all pages of a PDF document.
 
-    # حفظ المستند المحدث
-    document.save(output_pdf)
+    Creates basic text-based headers and footers that appear on every page
+    of the PDF document. Headers show "header" text and footers show "footer" text.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Adds identical headers and footers to all pages
+        - Sets margins of 50 units left and 20 units top
+        - Uses simple TextFragment elements for content
+        - Headers and footers are created separately for each page
+
+    Example:
+        >>> add_header_and_footer_as_text("input.pdf", "output.pdf")
+        # Adds text headers and footers to all pages
+    """
+    # Create header text
+    header_text = ap.text.TextFragment("Demo header")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
+
+    # Create footer text
+    footer_text = ap.text.TextFragment("Demo footer")
+
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
+
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## إضافة نص في تذييل ملف PDF
+هذه الطريقة مفيدة لإضافة عناوين موحدة، مؤشرات صفحات، أو إخلاءات مسؤولية قانونية في أعلى وأسفل كل صفحة. يمكنك أيضًا توسيعها لتشمل الصور أو المحتوى الديناميكي مثل أرقام الصفحات.
 
-يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) لإضافة نص في تذييل ملف PDF.
- توفر فئة TextStamp الخصائص اللازمة لإنشاء ختم نصي مثل حجم الخط، نمط الخط، ولون الخط إلخ. لإضافة نص في التذييل، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة 'add_stamp' الخاصة بالصفحة لإضافة النص في تذييل ملف PDF.
+## إضافة رؤوس وتذييلات لترقيم الصفحات
 
-يُظهر لك جزء الشفرة التالي كيفية إضافة نص في تذييل ملف PDF باستخدام Python:
+إضافة ترقيم صفحات تلقائي إلى رؤوس وتذييلات مستند PDF باستخدام Aspose.PDF للبايثون. باستخدام المتغيرات المدمجة $p (رقم الصفحة الحالي) و $P (إجمالي عدد الصفحات)، يقوم السكريبت بإدراج ترقيم الصفحات ديناميكيًا في كل صفحة. تعرض الرؤوس الصيغة 'Page X from Y'، بينما تُظهر التذييلات 'Page X / Y'. يضمن [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) التموضع الصحيح في كل صفحة.
+
+1. إنشاء TextFragment للرأس باستخدام "Page $p from $P" لعرض الصفحة الحالية والإجمالية.
+1. إنشاء كائن HeaderFooter وإضافة نص الرأس إليه.
+1. إنشاء TextFragment للتذييل باستخدام "Page $p / $P" لنمط ترقيم بديل.
+1. إنشاء كائن Footer وإضافة نص التذييل.
+1. تحديد إعدادات الهوامش (اليسار = 50، الأعلى = 20) وتطبيقها على كل من الرأس والتذييل.
+1. فتح مستند PDF من ملف الإدخال.
+1. التكرار عبر جميع الصفحات وتعيين الرأس والتذييل لكل صفحة.
+1. حفظ PDF المحدث إلى مسار الإخراج.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # افتح المستند
-    document = ap.Document(input_pdf)
-    # أنشئ تذييل
-    textStamp = ap.TextStamp("Footer Text")
-    # ضبط خصائص الختم
-    textStamp.bottom_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # أضف التذييل على جميع الصفحات
-    for page in document.pages:
-        page.add_stamp(textStamp)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # احفظ ملف PDF المحدث
-    document.save(output_pdf)
+def using_header_and_footer_for_page_numbering(input_file, output_file):
+    """
+    Add page numbering headers and footers to all pages of a PDF document.
+
+    Creates headers and footers with dynamic page numbering using special variables.
+    The $p variable represents the current page number and $P represents the total
+    number of pages in the document.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses $p for current page number and $P for total pages
+        - Header shows "Page X from Y" format
+        - Footer shows "Page X / Y" format
+        - Variables are automatically replaced by Aspose.PDF
+        - Sets margins of 50 units left and 20 units top
+        - Page numbering updates dynamically for each page
+
+    Example:
+        >>> using_header_and_footer_for_page_numbering("input.pdf", "output.pdf")
+        # Adds page numbering headers and footers to all pages
+    """
+    # Create header text
+    header_text = ap.text.TextFragment("Page $p from $P")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
+
+    # Create footer text
+    footer_text = ap.text.TextFragment("Page $p / $P")
+
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
+
+    # Create margins
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+
+    # Set header margin
+    header.margin = margin
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## إضافة صورة في رأس ملف PDF
+## إضافة رؤوس وتذييلات كقطع HTML
 
-يمكنك استخدام فئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) لإضافة صورة في رأس ملف PDF. فئة Image Stamp توفر الخصائص اللازمة لإنشاء ختم يعتمد على الصورة مثل حجم الخط، نمط الخط، ولون الخط وما إلى ذلك. لإضافة صورة في الرأس، تحتاج إلى إنشاء كائن Document وكائن Image Stamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة 'add_stamp' من الصفحة لإضافة الصورة في رأس ملف PDF.
+تطبيق رؤوس وتذييلات مهيأة بـ HTML على كل صفحة من مستند PDF باستخدام Aspose.PDF للبايثون. باستخدام [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/)، يسمح السكريبت بتنسيق نص غني—مثل الغامق والمائل—للعرض في الرأس والتذييل. يتم تطبيق [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) للتموضع الصحيح، وتُرفق العناصر المُنسقة نفسها بكل صفحة في المستند.
 
-يُظهر لك مقتطف الكود التالي كيفية إضافة صورة في رأس ملف PDF باستخدام Python:
+المقتطف البرمجي التالي يوضح كيفية إضافة الرؤوس والتذييلات كقطع HTML إلى PDF باستخدام بايثون:
 
-```python 
-
-    import aspose.pdf as ap
-
-    # فتح المستند
-    document = ap.Document(input_pdf)
-
-    # إنشاء الرأس
-    image_stamp = ap.ImageStamp(input_image)
-    # تعيين خصائص الختم
-    image_stamp.top_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # إضافة الرأس في جميع الصفحات
-    for page in document.pages:
-        page.add_stamp(image_stamp)
-
-    # حفظ المستند المحدث
-    document.save(output_pdf)
-```
-
-## إضافة صورة في تذييل ملف PDF
-
-يمكنك استخدام فئة [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) لإضافة صورة في تذييل ملف PDF. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) توفر الفئة الخصائص اللازمة لإنشاء ختم قائم على الصور مثل حجم الخط، ونمط الخط، ولون الخط وما إلى ذلك. لإضافة صورة في التذييل، تحتاج إلى إنشاء كائن Document وكائن Image Stamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة 'add_stamp' للصفحة لإضافة الصورة في تذييل ملف PDF.
-
-يوضح لك مقتطف الشيفرة التالي كيفية إضافة صورة في تذييل ملف PDF باستخدام Python:
+1. إنشاء مقطع رأس HTML باستخدام HtmlFragment—متضمنًا نصًا منسقًا مثل '<strong>' للغميق.
+1. إنشاء كائن HeaderFooter وإضافة رأس HTML إليه.
+1. إنشاء مقطع تذييل HTML باستخدام '<i>' لتنسيق مائل.
+1. إنشاء كائن Footer وإضافة HTML التذييل إليه.
+1. ضبط الهوامش (اليسار = 50، الأعلى = 20) وتعيينها لكل من الرأس والتذييل.
+1. تحميل مستند PDF باستخدام 'ap.Document()'.
+1. التكرار عبر جميع الصفحات وتعيين الرأس والتذييل لكل منها.
+1. حفظ PDF المعدل إلى مسار الإخراج المحدد.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # فتح الوثيقة
-    document = ap.Document(input_pdf)
-    # إنشاء تذييل
-    image_stamp = ap.ImageStamp(input_image)
-    # تعيين خصائص الختم
-    image_stamp.bottom_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # إضافة تذييل على جميع الصفحات
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # حفظ ملف PDF المحدث
-    document.save(output_pdf)
+def add_header_and_footer_as_html(input_file, output_file):
+    """
+    Add HTML-formatted headers and footers to all pages of a PDF document.
+
+    Creates rich HTML-based headers and footers with formatting like bold
+    and italic text. Demonstrates how to use HtmlFragment for styled content.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses HtmlFragment for rich text formatting
+        - Header includes HTML with <strong> tag for bold text
+        - Footer includes HTML with <i> tag for italic text
+        - Sets margins of 50 units left and 20 units top
+        - HTML tags are rendered properly in the PDF
+
+    Example:
+        >>> add_header_and_footer_as_html("input.pdf", "output.pdf")
+        # Adds HTML-formatted headers and footers to all pages
+    """
+    # Create header HTML
+    header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_html)
+
+    # Create footer HTML
+    footer_html = ap.HtmlFragment("Powered by <i>Aspose.PDF</i>")
+
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_html)
+
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## إضافة رؤوس مختلفة في ملف PDF واحد
+استخدام HtmlFragment يتيح تنسيقًا غنيًا مع الأنماط المضمنة أو العلامات HTML، مما يمنحك مرونة تصميم أكبر مقارنة بالنص العادي.
 
-نعلم أنه يمكننا إضافة نص مختوم في قسم الرأس/التذييل من المستند باستخدام خصائص [الهامش العلوي](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) أو [الهامش السفلي](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties)، ولكن في بعض الأحيان قد يكون لدينا حاجة لإضافة رؤوس/تذييلات متعددة في مستند PDF واحد. يوضح **Aspose.PDF for Python via .NET** كيفية القيام بذلك.
+## إضافة رؤوس وتذييلات كصور
 
-من أجل تحقيق هذا المتطلب، سنقوم بإنشاء كائنات نص مختوم فردية (يعتمد عدد الكائنات على عدد الرؤوس/التذييلات المطلوبة) وسنضيفها إلى مستند PDF.
- نحن قد نحدد أيضًا معلومات تنسيق مختلفة لكل كائن ختم فردي. في المثال التالي، قمنا بإنشاء كائن Document وثلاثة كائنات TextStamp ثم استخدمنا طريقة 'add_stamp' للصفحة لإضافة النص في قسم الرأس لملف PDF. يظهر لك مقطع الكود التالي كيفية إضافة صورة في تذييل ملف PDF باستخدام Aspose.PDF لـ Python:
+إضافة رؤوس وتذييلات تعتمد على الصور إلى كل صفحة من مستند PDF باستخدام Aspose.PDF للبايثون. يتم استخدام نفس ملف الصورة لكل من الرأس والتذييل في كل صفحة. يقوم [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) بتموضع الصور، وتضبط الصورة تلقائيًا لتناسب مساحة الرأس/التذييل.
+
+يظهر مقتطف الشيفرة التالي كيفية إضافة رؤوس وتذييلات كصور إلى ملف PDF باستخدام بايثون:
+
+1. قم بتحميل الصورة إلى كائن 'ap.Image' وتحضيرها للاستخدام كرأس.
+1. إنشاء كائن HeaderFooter وإرفاق صورة الرأس به.
+1. تحميل نفس الصورة مرة أخرى لاستخدامها كتذييل.
+1. إنشاء كائن Footer وإضافة صورة التذييل إليه.
+1. تحميل مستند PDF المدخل باستخدام 'ap.Document()'.
+1. التكرار عبر جميع صفحات المستند.
+1. تطبيق الهوامش (اليسار = 50) لتحديد موضع كل من الرأس والتذييل.
+1. إسناد الرأس والتذييل إلى كل صفحة في ملف PDF.
+1. حفظ ملف PDF المحدث إلى ملف الإخراج المحدد.
+
+هذه التقنية مثالية لتوسيم المستندات بشعارات أو علامات مائية في منطقة الرأس/التذييل.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # إنشاء ثلاثة طوابع
-    stamp1 = ap.TextStamp("Header 1")
-    stamp2 = ap.TextStamp("Header 2")
-    stamp3 = ap.TextStamp("Header 3")
+# Global configuration
+DATA_DIR = "your path here"
 
-    # ضبط محاذاة الطابع (وضع الطابع في أعلى الصفحة، متمركز أفقيًا)
-    stamp1.vertical_alignment = ap.VerticalAlignment.TOP
-    stamp1.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # تحديد نمط الخط كعريض
-    stamp1.text_state.font_style = ap.text.FontStyles.BOLD
-    # ضبط معلومات لون النص الأمامي كالأحمر
-    stamp1.text_state.foreground_color = ap.Color.red
-    # تحديد حجم الخط كـ 14
-    stamp1.text_state.font_size = 14
+def add_header_and_footer_as_image(input_file, image_file, output_file):
+    """
+    Add image-based headers and footers to all pages of a PDF document.
 
-    # الآن نحتاج إلى ضبط المحاذاة الرأسية لكائن الطابع الثاني كأعلى
-    stamp2.vertical_alignment = ap.VerticalAlignment.TOP
-    # ضبط معلومات المحاذاة الأفقية للطابع كمحاذاة الوسط
-    stamp2.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # ضبط عامل التكبير لكائن الطابع
-    stamp2.zoom = 10
+    Creates headers and footers using image files. The same image is used
+    for both header and footer positioning on each page.
 
-    # ضبط تنسيق كائن الطابع الثالث
-    # تحديد معلومات المحاذاة الرأسية لكائن الطابع كأعلى
-    stamp3.vertical_alignment = ap.VerticalAlignment.TOP
-    # ضبط معلومات المحاذاة الأفقية لكائن الطابع كمحاذاة الوسط
-    stamp3.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # ضبط زاوية الدوران لكائن الطابع
-    stamp3.rotate_angle = 35
-    # ضبط اللون الوردي كلون خلفية للطابع
-    stamp3.text_state.background_color = ap.Color.pink
-    # تغيير معلومات نوع الخط للطابع إلى Verdana
-    stamp3.text_state.font = ap.text.FontRepository.find_font("Verdana")
-    # يتم إضافة الطابع الأول على الصفحة الأولى;
-    document.pages[1].add_stamp(stamp1)
-    # يتم إضافة الطابع الثاني على الصفحة الثانية;
-    document.pages[2].add_stamp(stamp2)
-    # يتم إضافة الطابع الثالث على الصفحة الثالثة.
-    document.pages[3].add_stamp(stamp3)
+    Args:
+        input_file (str): Path to the input PDF file.
+        image_file (str): Path to the image file to use for headers and footers.
+        output_file (str): Path where the modified PDF will be saved.
 
-    # حفظ المستند المحدث
-    document.save(output_pdf)
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses the same image file for both header and footer
+        - Creates separate Image objects for header and footer
+        - Sets margin of 50 units left for positioning
+        - Image files should be in supported formats (PNG, JPG, etc.)
+        - Images are automatically sized to fit header/footer areas
+
+    Example:
+        >>> add_header_and_footer_as_image("input.pdf", "logo.png", "output.pdf")
+        # Adds image headers and footers using logo.png
+    """
+
+    # Create header image
+    header_image = ap.Image()
+    header_image.file = image_file
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_image)
+
+    # Create footer image
+    footer_image = ap.Image()
+    footer_image.file = image_file
+
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_image)
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Set header margin
+            margin = ap.MarginInfo()
+            margin.left = 50
+            header.margin = margin
+
+            # Set footer margin
+            footer.margin = margin
+
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python via .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "بريطانيا",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "عرض",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "مكتبة معالجة PDF لـ Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "تقييم مجمع",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## إضافة رؤوس وتذييلات كجدول
+
+أضف رؤوس وتذييلات منظمة على شكل جدول إلى جميع صفحات مستند PDF باستخدام Aspose.PDF للبايثون. كائنات [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) توفر تحكمًا أفضل في التخطيط، والمحاذاة، وتنسيقًا ثابتًا للرؤوس والتذييلات المعقدة. نص الرأس مُوسَّط بينما نص التذييل مُحاذى إلى اليسار، وكلاهما يستخدم خط Arial بحجم 12 نقطة. تُحسب عرض الأعمدة بصورة ديناميكية بناءً على أبعاد الصفحة لضمان وضع صحيح.
+
+يضيف هذا مقتطف الشيفرة رؤوس وتذييلات (باستخدام الجداول) إلى كل صفحة من مستند PDF باستخدام Aspose.PDF للبايثون عبر .NET.
+
+1. تعريف أنماط النص باستخدام [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) للرأس والتذييل (الخط، الحجم، المحاذاة).
+1. إنشاء كائنات [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) للرأس والتذييل.
+1. بناء رأس الـ[`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) بصف واحد وخلية تحتوي على نص الرأس.
+1. بناء تذييل الـ[`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) بصف واحد وخلية تحتوي على نص التذييل.
+1. إضافة الجداول إلى كائنات [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) المقابلة.
+1. تعيين [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) للتذييل لضبط التموضع الأفقي بشكل صحيح.
+1. فتح الـ[`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) باستخدام الأساليب المناسبة.
+1. التكرار عبر جميع الصفحات وإسناد الرأس والتذييل القائمين على الجدول إلى كل صفحة.
+1. حفظ الـ[`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) المعدل إلى ملف الإخراج.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_header_and_footer_as_table(input_file, output_file):
+    """
+    Add table-based headers and footers to all pages of a PDF document.
+
+    Creates headers and footers using table structures for better layout
+    control and alignment. Demonstrates advanced formatting with text states.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses Table objects for structured layout
+        - Header table has centered Arial 12pt text
+        - Footer table has left-aligned Arial 12pt text
+        - Column width calculated based on page width minus margins
+        - Provides more precise control over text positioning
+
+    Example:
+        >>> add_header_and_footer_as_table("input.pdf", "output.pdf")
+        # Adds table-structured headers and footers to all pages
+    """
+    text_state_header = ap.text.TextState()
+    text_state_header.font = ap.text.FontRepository.find_font("Arial")
+    text_state_header.font_size = 12
+    text_state_header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+    text_state_footer = ap.text.TextState()
+    text_state_footer.font = ap.text.FontRepository.find_font("Arial")
+    text_state_footer.font_size = 12
+    text_state_footer.horizontal_alignment = ap.HorizontalAlignment.LEFT
+    # Create header
+    header = ap.HeaderFooter()
+    # Create footer
+    footer = ap.HeaderFooter()
+    # Create header Table
+    table_header = ap.Table()
+    table_header.column_widths = str(594 - header.margin.left - header.margin.right)
+    header_row = table_header.rows.add()
+    header_row.cells.add("This is a Table Header", text_state_header)
+    # Create footer Table
+    table = ap.Table()
+    table.column_widths = str(594 - footer.margin.left - footer.margin.right)
+    table.rows.add().cells.add("Powered by Aspose.PDF", text_state_footer)
+    header.paragraphs.add(table_header)
+    footer.paragraphs.add(table)
+    # Set footer margin
+    footer.margin.left = 150
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## إضافة رؤوس وتذييلات بصيغة LaTeX
+
+أضف رؤوس وتذييلات تحتوي على محتوى مُنسَّق بـ LaTeX إلى جميع صفحات مستند PDF باستخدام Aspose.PDF للبايثون. يتيح LaTeX عرض الرموز الرياضية، والتواريخ، وعلامات حقوق النشر، وغيرها من التنسيقات المتقدمة. يتضمن الرأس تاريخًا ديناميكيًا، بينما يعرض التذييل رمز حقوق النشر إلى جانب رقم الصفحة الحالي وإجمالي عدد الصفحات.
+
+يعرض مقتطف الشيفرة التالي كيفية استخدام [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) في الرؤوس والتذييلات لملف PDF باستخدام Aspose.PDF للبايثون عبر .NET.
+
+1. فتح الـ[`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) باستخدام الأساليب المناسبة.
+1. تحديد إجمالي عدد الصفحات لاستخدامه في التذييلات الديناميكية.
+1. التكرار عبر جميع صفحات المستند.
+1. إنشاء كائن [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) للرأس.
+1. إنشاء [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) لنص الرأس يحتوي على أوامر LaTeX (مثال: `\\today\\`).
+1. إنشاء كائن [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) للتذييل.
+1. إنشاء [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) لنص التذييل يتضمن رموز LaTeX وترقيم الصفحات.
+1. إضافة [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) إلى كائن الرأس/التذييل المقابل.
+1. ربط الرأس والتذييل بالصفحة الحالية.
+1. حفظ الـ[`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) المعدل إلى ملف الإخراج.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_header_and_footer_as_latex(input_file, output_file):
+    """
+    Add LaTeX-formatted headers and footers to all pages of a PDF document.
+
+    Creates headers and footers using LaTeX markup for mathematical expressions,
+    symbols, and advanced formatting. Demonstrates TeXFragment usage.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses TeXFragment for LaTeX rendering
+        - Header includes LaTeX date command (\\today\\)
+        - Footer includes copyright symbol and page numbering
+        - LaTeX commands are processed and rendered properly
+        - Page count is dynamically calculated and inserted
+
+    Example:
+        >>> add_header_and_footer_as_latex("input.pdf", "output.pdf")
+        # Adds LaTeX-formatted headers and footers with symbols and page numbers
+    """
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        page_count = len(document.pages)
+        for i in range(1, page_count + 1):
+            # Create header
+            header = ap.HeaderFooter()
+            h_latex_text = "This is a LaTex Header. \\today\\"
+            h_l_text = ap.TeXFragment(h_latex_text, True)
+            # Create footer
+            footer = ap.HeaderFooter()
+            f_latex_text = f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            f_l_text = ap.TeXFragment(f_latex_text, True)
+
+            header.paragraphs.add(h_l_text)
+            footer.paragraphs.add(f_l_text)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```

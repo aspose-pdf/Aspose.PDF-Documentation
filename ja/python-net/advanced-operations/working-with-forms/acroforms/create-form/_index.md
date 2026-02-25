@@ -1,94 +1,31 @@
 ---
-title: AcroFormを作成 - Pythonで記入可能なPDFを作成
-linktitle: AcroFormを作成
+title: AcroForm を作成 - Python で入力可能な PDF を作成
+linktitle: AcroForm を作成
 type: docs
 weight: 10
 url: /ja/python-net/create-form/
-description: Aspose.PDF for Pythonを使用して、PDFファイルでフォームをゼロから作成できます
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Aspose.PDF for Python を使用すると、PDF ファイル内に最初からフォームを作成できます
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Python を使用して PDF で AcroForm を作成する方法
+Abstract: この記事では、Aspose.PDF for Python ライブラリを使用して PDF ドキュメントにフォームフィールドを作成する方法について解説します。`Document` クラスを紹介し、フォームフィールドの管理に使用できる `Form` コレクションが含まれています。フォームフィールドを追加する手順は、目的のフィールドを作成し、`Form` コレクションの `add` メソッドを使用することです。具体例として、`TextBoxField` を PDF ドキュメントに追加する方法を示します。例では、`TextBoxField` の作成、位置、名前、値、枠線、色などのプロパティ設定、そしてドキュメントへの追加を詳細なコードで示しています。変更された PDF は、新しく追加されたフォームフィールドとともに保存されます。
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "PythonでAcroFormを作成",
-    "alternativeHeadline": "PDFでAcroFormを作成する方法",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "pdfドキュメント生成",
-    "keywords": "pdf, python, acroformを作成",
-    "wordcount": "302",
-    "proficiencyLevel":"初級",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/create-form/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/create-form/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for Pythonを使用して、PDFファイルでフォームをゼロから作成できます"
-}
-</script>
 
+## 最初からフォームを作成
 
-## フォームをゼロから作成する
+### PDF ドキュメントにフォームフィールドを追加
 
-### PDFドキュメントにフォームフィールドを追加
-
-[Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスは、PDFドキュメントでフォームフィールドを管理するのに役立つ [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) というコレクションを提供します。
+この [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) クラスは、PDF ドキュメントのフォームフィールドを管理するのに役立つ [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/) というコレクションを提供します。
 
 フォームフィールドを追加するには：
 
 1. 追加したいフォームフィールドを作成します。
-1. Formコレクションの [add](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#methods) メソッドを呼び出します。
+1. Form コレクションの [add](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/form/#methods) メソッドを呼び出します。
 
-### TextBoxFieldの追加
+### TextBoxField の追加
 
 以下の例は、[TextBoxField](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/textboxfield/) を追加する方法を示しています。
 
@@ -96,13 +33,17 @@ sitemap:
 
     import aspose.pdf as ap
 
-    # ドキュメントを開く
-    pdfDocument = ap.Document(input_file)
+    data_dir = "/path/to/your/pdf/files/"
+    path_infile = os.path.join(work_dir, infile)
+    path_outfile = os.path.join(work_dir, outfile)
 
-    # フィールドを作成
+    # Open document
+    pdfDocument = ap.Document(path_infile)
+
+    # Create a field
     textBoxField = ap.forms.TextBoxField(pdfDocument.pages[1], ap.Rectangle(100, 200, 300, 300, True))
     textBoxField.partial_name = "textbox1"
-    textBoxField.value = "テキストボックス"
+    textBoxField.value = "Text Box"
 
     border = ap.annotations.Border(textBoxField)
     border.width = 5
@@ -111,74 +52,11 @@ sitemap:
 
     textBoxField.color = ap.Color.green
 
-    # フィールドをドキュメントに追加
+    # Add field to the document
     pdfDocument.form.add(textBoxField, 1)
 
-    # 変更されたPDFを保存
-    pdfDocument.save(output_pdf)
+    # Save modified PDF
+    pdfDocument.save(path_outfile)
 ```
 
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python ライブラリ",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "販売",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "販売",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Python 用 PDF 操作ライブラリ",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>

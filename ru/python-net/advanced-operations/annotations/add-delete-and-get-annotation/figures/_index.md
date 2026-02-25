@@ -1,93 +1,31 @@
 ---
-title: Добавление Аннотаций Фигур с использованием Python
-linktitle: Аннотации Фигур
+title: Добавление аннотаций фигур с использованием Python
+linktitle: Аннотации фигур
 type: docs
 weight: 30
 url: /ru/python-net/figures-annotation/
-description: Эта статья описывает, как добавлять, получать и удалять аннотации фигур из вашего PDF-документа с помощью Aspose.PDF для Python через .NET
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Эта статья описывает, как добавить, получить и удалить аннотации фигур из вашего PDF‑документа с помощью Aspose.PDF for Python via .NET
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Руководство по работе с аннотациями фигур в PDF
+Abstract: Эта статья предоставляет всестороннее руководство по добавлению, получению и удалению квадратных, круглых, полигональных и полилинейных аннотаций в PDF‑документах с использованием Aspose.PDF for Python. Квадратные и круглые аннотации визуально выделяют определённые области на странице PDF прямоугольными и эллиптическими формами соответственно. В статье содержатся пошаговые инструкции и фрагменты кода на Python для создания этих аннотаций путём загрузки PDF‑файла, настройки свойств аннотации, таких как заголовок, цвет и непрозрачность, и добавления их на страницы PDF. Кроме того, статья описывает методы получения аннотаций по типу, вывода их прямоугольных размеров и удаления их из PDF‑документа. Также рассматриваются аннотации полигонов и полилиний, где полигоны определяются серией соединённых вершин, образующих замкнутую форму, а полилинии соединяют вершины в открытом виде. Документ содержит примеры кода, иллюстрирующие процессы добавления этих аннотаций в PDF, а также методы доступа к ним и их удаления.
+
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Добавление Аннотаций Фигур с использованием Python",
-    "alternativeHeadline": "Как добавить Аннотации Фигур в PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "генерация pdf документов",
-    "keywords": "pdf, python, аннотации фигур, аннотация многоугольника, аннотация линии, аннотация квадрата, аннотация круга",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Команда Документации Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/figures-annotation/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/figures-annotation/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Эта статья описывает, как добавлять, получать и удалять аннотации фигур из вашего PDF-документа с помощью Aspose.PDF для Python"
-}
-</script>
 
+## Добавить квадратные и круглые аннотации
 
-## Добавление квадратных и круглых аннотаций
+В PDF‑документах аннотация квадрат представляет собой специфический тип аннотации, отображаемой в виде квадратной формы. Квадратные аннотации используются для выделения или привлечения внимания к определённой области или разделу документа.
 
-В PDF документах квадратная аннотация относится к специфическому типу аннотаций, которые представлены квадратной формой. Квадратные аннотации используются для выделения или привлечения внимания к определенной области или разделу в документе.
-
-[Квадратные](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) и [Круглые](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) аннотации отображают, соответственно, прямоугольник или эллипс на странице.
+[Квадрат](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation/) и [Круг](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/circleannotation/) аннотации отображают соответственно прямоугольник или эллипс на странице.
 
 Шаги для создания квадратных или круглых аннотаций:
 
-1. Загрузите PDF файл - новый [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-2. Создайте новую [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) и установите параметры (новый Rectangle, заголовок, цвет, внутренний_цвет, непрозрачность).
-3. После этого необходимо добавить квадратную аннотацию на страницу.
+1. Загрузите PDF‑файл — новый [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Создайте новую [SquareAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/squareannotation) и задайте параметры (new Rectangle, title, color, interior_color, opacity).
+1. Затем добавьте квадратную аннотацию на страницу.
 
 Следующий фрагмент кода показывает, как добавить квадратные аннотации на страницу PDF.
 
@@ -98,7 +36,7 @@ sitemap:
     document = ap.Document(input_file)
 
     squareAnnotation = ap.annotations.SquareAnnotation(document.pages[1], ap.Rectangle(60, 600, 250, 450, True))
-    squareAnnotation.title = "Джон Смит"
+    squareAnnotation.title = "John Smith"
     squareAnnotation.color = ap.Color.blue
     squareAnnotation.interior_color = ap.Color.blue_violet
     squareAnnotation.opacity = 0.25
@@ -108,19 +46,19 @@ sitemap:
     document.save(output_file)
 ```
 
-Следующий фрагмент кода показывает, как добавить круговые аннотации на страницу PDF.
+Следующий фрагмент кода показывает, как добавить круглые аннотации на страницу PDF.
 
 ```python
 
     import aspose.pdf as ap
 
-    # Открыть документ
+    # Open document
     document = ap.Document(input_file)
 
     circleAnnotation = ap.annotations.CircleAnnotation(
         document.pages[1], ap.Rectangle(270, 160, 483, 383, True)
     )
-    circleAnnotation.title = "Джон Смит"
+    circleAnnotation.title = "John Smith"
     circleAnnotation.color = ap.Color.red
     circleAnnotation.interior_color = ap.Color.misty_rose
     circleAnnotation.opacity = 0.5
@@ -132,14 +70,13 @@ sitemap:
     document.save(output_file)
 ```
 
+В качестве примера мы увидим следующий результат добавления квадратных и круглых аннотаций в PDF‑документ:
 
-Как пример, мы увидим следующий результат добавления аннотаций Квадрат и Круг в PDF документ:
+![Демонстрация аннотаций круга и квадрата](circle_demo.png)
 
-![Демонстрация аннотаций Круг и Квадрат](circle_demo.png)
+### Получить аннотацию круга
 
-### Получить аннотацию Круга
-
-Пожалуйста, попробуйте использовать следующий фрагмент кода для получения аннотации Круга из PDF документа.
+Пожалуйста, попробуйте использовать следующий фрагмент кода, чтобы получить аннотацию круга из PDF‑документа.
 
 ```python
 
@@ -156,9 +93,9 @@ sitemap:
         print(ca.rect)
 ```
 
-### Получить аннотацию Квадрата
+### Получить квадратную аннотацию
 
-Пожалуйста, попробуйте использовать следующий фрагмент кода для получения аннотации Квадрата из PDF документа.
+Пожалуйста, попробуйте использовать следующий фрагмент кода, чтобы получить квадратную аннотацию из PDF‑документа.
 
 ```python
 
@@ -175,9 +112,10 @@ sitemap:
         print(pa.rect)
 ```
 
-### Удалить аннотацию Круга
 
-Следующий фрагмент кода показывает, как удалить аннотацию круга из PDF файла.
+### Удалить аннотацию круга
+
+Следующий фрагмент кода показывает, как удалить аннотацию круга из PDF‑файла.
 
 ```python
 
@@ -196,9 +134,9 @@ sitemap:
     document.save(output_file)
 ```
 
-### Удалить аннотацию квадрата
+### Удалить квадратную аннотацию
 
-Следующий фрагмент кода показывает, как удалить аннотацию квадрата из PDF файла.
+Следующий фрагмент кода показывает, как удалить квадратную аннотацию из PDF‑файла.
 
 ```python
 
@@ -217,21 +155,21 @@ sitemap:
     document.save(output_file)
 ```
 
-## Добавление аннотаций многоугольника и полилинии
+## Добавить полигональные и полилинейные аннотации
 
-Инструмент Polyline позволяет создавать формы и контуры с произвольным количеством сторон на документе.
+Инструмент Polyline позволяет создавать формы и контуры с произвольным числом сторон в документе.
 
-[Аннотации Полигонов](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) представляют собой многоугольники на странице. Они могут иметь любое количество вершин, соединенных прямыми линиями.
+[Полигональные аннотации](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation/) представляют полигоны на странице. Они могут иметь любое количество вершин, соединённых прямыми линиями.
 
-[Аннотации Полилиний](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) также похожи на многоугольники, единственное отличие - это то, что первая и последняя вершины не соединены неявно.
+[Полилинейные аннотации](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) также похожи на полигоны, единственное отличие — первые и последние вершины не соединяются автоматически.
 
-Шаги, с помощью которых мы создаем аннотации Полигонов:
+Шаги, с помощью которых мы создаём полигональные аннотации:
 
-1. Загрузите PDF файл - новый [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Создайте новую [Аннотацию Полигона](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) и установите параметры Полигона (новый Прямоугольник, новые Точки, заголовок, цвет, внутренний_цвет и непрозрачность).
-1. После этого мы можем добавить аннотации на страницу.
+1. Загрузите PDF‑файл — новый [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Создайте новую [Polygon Annotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polygonannotation) и задайте параметры полигона (new Rectangle, new Points, title, color, interior_color и opacity).
+1. Затем добавьте аннотации на страницу.
 
-Следующий фрагмент кода показывает, как добавить Аннотации Полигонов в PDF файл:
+Следующий фрагмент кода показывает, как добавить полигональные аннотации в PDF‑файл:
 
 ```python
 
@@ -259,12 +197,11 @@ sitemap:
     document.save(output_file)
 ```
 
+Следующий фрагмент кода показывает, как добавить полилинейные аннотации в PDF‑файл:
 
-Следующий фрагмент кода показывает, как добавить аннотации полилинии в PDF-файл:
-
-1. Загрузите PDF-файл - новый [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Создайте новые [Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) и установите параметры многоугольника (новый Rectangle, новые Points, title, color, interior_color и opacity).
-1. После этого мы можем добавить аннотации на страницу.
+1. Загрузите PDF‑файл — новый [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Создайте новые [Polyline Annotations](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/polylineannotation/) и задайте параметры полигона (new Rectangle, new Points, title, color, interior_color и opacity).
+1. Затем добавьте аннотации на страницу.
 
 ```python
 
@@ -293,10 +230,9 @@ sitemap:
     document.save(output_file)
 ```
 
+### Получить полигональные и полилинейные аннотации
 
-### Получить аннотации полигонов и полилиний
-
-Пожалуйста, попробуйте использовать следующий фрагмент кода, чтобы получить аннотации полигонов в PDF-документе.
+Пожалуйста, попробуйте использовать следующий фрагмент кода, чтобы получить полигональные аннотации в PDF‑документе.
 
 ```python
 
@@ -313,7 +249,7 @@ sitemap:
         print(pa.rect)
 ```
 
-Пожалуйста, попробуйте использовать следующий фрагмент кода, чтобы получить аннотации полилиний в PDF-документе.
+Пожалуйста, попробуйте использовать следующий фрагмент кода, чтобы получить полилинейные аннотации в PDF‑документе.
 
 ```python
 
@@ -330,9 +266,9 @@ sitemap:
         print(pa.rect)
 ```
 
-### Удалить аннотации полигонов и полилиний
+### Удалить полигональные и полилинейные аннотации
 
-Следующий фрагмент кода показывает, как удалить аннотации полигонов из PDF-файла.
+Следующий фрагмент кода показывает, как удалить полигональные аннотации из PDF‑файла.
 
 ```python
 
@@ -351,8 +287,7 @@ sitemap:
     document.save(output_file)
 ```
 
-
-Следующий фрагмент кода показывает, как удалить аннотации полилинии из PDF файла.
+В следующем фрагменте кода показано, как удалить аннотации полилиний из PDF‑файла.
 
 ```python
 
@@ -371,66 +306,4 @@ sitemap:
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+

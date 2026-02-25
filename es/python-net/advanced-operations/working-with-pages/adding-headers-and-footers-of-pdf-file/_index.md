@@ -1,308 +1,511 @@
 ---
-title: Añadir encabezado y pie de página al PDF usando Python
-linktitle: Añadir encabezado y pie de página al PDF
+title: Agregar encabezado y pie de página a PDF usando Python
+linktitle: Agregar encabezado y pie de página a PDF
 type: docs
 weight: 50
 url: /es/python-net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF para Python a través de .NET te permite añadir encabezados y pies de página a tu archivo PDF usando la clase TextStamp.
-lastmod: "2023-04-17"
-sitemap:
+description: Aspose.PDF para Python a través de .NET le permite agregar encabezados y pies de página a su archivo PDF usando la clase TextStamp.
+lastmod: "2025-11-16"
+sitemap: 
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cómo agregar encabezado y pie de página a PDF usando Python
+Abstract: El artículo ofrece una guía completa sobre cómo usar **Aspose.PDF for Python via .NET** para agregar encabezados y pies de página a archivos PDF, con la capacidad de incorporar texto o imágenes. Comienza detallando el uso de la clase `TextStamp` para insertar texto en el encabezado de un documento PDF. Propiedades clave como el tamaño de fuente, estilo y color son ajustables, y el método para agregar texto al encabezado se muestra con un fragmento de código Python. El artículo explica de manera similar cómo agregar texto al pie de página, siguiendo los mismos pasos procedimentales. Para agregar imágenes, se utiliza la clase `ImageStamp`, y el proceso se describe tanto para encabezados como para pies de página, nuevamente respaldado por ejemplos de código Python. Además, el artículo discute la adición de múltiples encabezados en un solo archivo PDF. Esto incluye crear varios objetos `TextStamp`, cada uno con un formato distinto, y aplicarlos a diferentes páginas. La explicación se complementa con un fragmento de código detallado que demuestra esta funcionalidad.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Añadir encabezado y pie de página al PDF usando Python",
-    "alternativeHeadline": "Cómo añadir encabezado y pie de página al archivo PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, python, añadir encabezado, añadir pie de página en pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/add-headers-and-footers-of-pdf-file/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/add-headers-and-footers-of-pdf-file/"
-    },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF para Python a través de .NET te permite añadir encabezados y pies de página a tu archivo PDF usando la clase TextStamp."
-}
-</script>
 
+Esta página ofrece una visión concisa de cómo agregar encabezados y pies de página a documentos PDF usando Aspose.PDF for Python via .NET, abarcando enfoques basados en texto, HTML, LaTeX, imagen y tabla, así como numeración de páginas dinámica y múltiples encabezados por página; explica cómo crear y dar estilo a objetos [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) (usando [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/), [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/), [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/), [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/), etc.), ajustar [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) y [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) para una colocación precisa, y adjuntar los resultados a las páginas con ejemplos prácticos de código Python.
 
-**Aspose.PDF for Python via .NET** le permite agregar encabezados y pies de página en su archivo PDF existente. Puede agregar imágenes o texto a un documento PDF. Además, intente agregar diferentes encabezados en un archivo PDF con Python.
+**Aspose.PDF for Python via .NET** le permite agregar encabezado y pie de página en su existente [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). Puede agregar imágenes o texto a un documento PDF. También, intente agregar diferentes encabezados en un archivo PDF con Python.
 
-## Agregar texto en el encabezado del archivo PDF
+## Agregar encabezados y pies de página como fragmentos de texto
 
-Puede usar la clase [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) para agregar texto en el encabezado de un archivo PDF. La clase TextStamp proporciona propiedades necesarias para crear un sello basado en texto como tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar texto en el encabezado, necesita crear un objeto Document y un objeto TextStamp utilizando las propiedades requeridas. Después de eso, puede llamar al método 'add_stamp' de la Página para agregar el texto en el encabezado del PDF.
+Agregue encabezados y pies de página de texto simples a todas las páginas de un PDF. Crea objetos [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/), inserta elementos [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/) en ellos, establece [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) para un posicionamiento adecuado y los adjunta a cada página del documento. El resultado es un PDF donde cada página muestra texto de encabezado y pie de página consistente.
 
-Necesita configurar la propiedad [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) de tal manera que ajuste el texto en el área del encabezado de su PDF. También necesita configurar 'horizontal_alignment' a Center y 'vertical_alignment' a Top.
+El siguiente fragmento de código muestra cómo agregar encabezados y pies de página como fragmentos de texto en un PDF usando Python:
 
-El siguiente fragmento de código le muestra cómo agregar texto en el encabezado de un archivo PDF con Python:
+1. Crear fragmentos de texto para el encabezado y el pie de página.
+1. Crear objetos HeaderFooter y agregarles los fragmentos de texto.
+1. Definir la configuración de márgenes para controlar la ubicación del encabezado y el pie de página.
+1. Cargar el documento PDF desde el archivo de entrada.
+1. Recorrer todas las páginas del documento.
+1. Asignar el encabezado y el pie de página a cada página.
+1. Guardar el PDF modificado en el archivo de salida.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Crear encabezado
-    textStamp = ap.TextStamp("Header Text")
-    # Establecer propiedades del sello
-    textStamp.top_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # Agregar encabezado en todas las páginas
-    for page in document.pages:
-        page.add_stamp(textStamp)
+def add_header_and_footer_as_text(input_file, output_file):
+    """
+    Add simple text headers and footers to all pages of a PDF document.
 
-    # Guardar documento actualizado
-    document.save(output_pdf)
+    Creates basic text-based headers and footers that appear on every page
+    of the PDF document. Headers show "header" text and footers show "footer" text.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Adds identical headers and footers to all pages
+        - Sets margins of 50 units left and 20 units top
+        - Uses simple TextFragment elements for content
+        - Headers and footers are created separately for each page
+
+    Example:
+        >>> add_header_and_footer_as_text("input.pdf", "output.pdf")
+        # Adds text headers and footers to all pages
+    """
+    # Create header text
+    header_text = ap.text.TextFragment("Demo header")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
+
+    # Create footer text
+    footer_text = ap.text.TextFragment("Demo footer")
+
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
+
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Agregar Texto en el Pie de Página del Archivo PDF
+Este método es útil para agregar títulos consistentes, indicadores de página o avisos legales en la parte superior e inferior de cada página. También puede ampliarlo para incluir imágenes o contenido dinámico, como números de página.
 
-Puede usar la clase [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/) para agregar texto en el pie de página de un archivo PDF.
- Clase TextStamp proporciona propiedades necesarias para crear un sello basado en texto como tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar texto en el pie de página, necesitas crear un objeto Document y un objeto TextStamp usando las propiedades requeridas. Después de eso, puedes llamar al método 'add_stamp' de la Página para agregar el texto en el pie de página del PDF.
+## Agregar encabezados y pies de página para numeración de páginas
 
-El siguiente fragmento de código te muestra cómo agregar texto en el pie de página de un archivo PDF con Python:
+Agregar numeración automática de páginas a los encabezados y pies de página de un documento PDF usando Aspose.PDF para Python. Usando las variables incorporadas $p (número de página actual) y $P (número total de páginas), el script inserta dinámicamente la numeración en cada página. Los encabezados muestran el formato 'Página $p de $P', mientras que los pies de página muestran 'Página $p / $P'. El [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) garantiza una colocación adecuada en cada página.
+
+1. Crear un TextFragment para el encabezado usando "Página $p de $P" para mostrar la página actual y el total.
+1. Crear un objeto HeaderFooter y agregarle el texto del encabezado.
+1. Crear un TextFragment para el pie de página usando "Página $p / $P" como estilo de numeración alternativo.
+1. Crear un objeto Footer y agregarle el texto del pie de página.
+1. Definir la configuración de márgenes (izquierda = 50, arriba = 20) y aplicarla tanto al encabezado como al pie de página.
+1. Abrir el documento PDF desde el archivo de entrada.
+1. Recorrer todas las páginas y asignar el encabezado y el pie de página a cada una.
+1. Guardar el PDF actualizado en la ruta de salida.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
-    # Crear pie de página
-    textStamp = ap.TextStamp("Texto del Pie de Página")
-    # Establecer propiedades del sello
-    textStamp.bottom_margin = 10
-    textStamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    textStamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # Agregar pie de página en todas las páginas
-    for page in document.pages:
-        page.add_stamp(textStamp)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Guardar archivo PDF actualizado
-    document.save(output_pdf)
+def using_header_and_footer_for_page_numbering(input_file, output_file):
+    """
+    Add page numbering headers and footers to all pages of a PDF document.
+
+    Creates headers and footers with dynamic page numbering using special variables.
+    The $p variable represents the current page number and $P represents the total
+    number of pages in the document.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses $p for current page number and $P for total pages
+        - Header shows "Page X from Y" format
+        - Footer shows "Page X / Y" format
+        - Variables are automatically replaced by Aspose.PDF
+        - Sets margins of 50 units left and 20 units top
+        - Page numbering updates dynamically for each page
+
+    Example:
+        >>> using_header_and_footer_for_page_numbering("input.pdf", "output.pdf")
+        # Adds page numbering headers and footers to all pages
+    """
+    # Create header text
+    header_text = ap.text.TextFragment("Page $p from $P")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_text)
+
+    # Create footer text
+    footer_text = ap.text.TextFragment("Page $p / $P")
+
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_text)
+
+    # Create margins
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+
+    # Set header margin
+    header.margin = margin
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Añadir Imagen en el Encabezado de un Archivo PDF
+## Agregar encabezados y pies de página como fragmentos HTML
 
-Puedes usar la clase [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) para añadir una imagen en el encabezado de un archivo PDF. La clase Image Stamp proporciona las propiedades necesarias para crear un sello basado en imagen, como el tamaño de fuente, el estilo de fuente y el color de fuente, etc. Para agregar una imagen en el encabezado, necesitas crear un objeto Document y un objeto Image Stamp utilizando las propiedades necesarias. Después de eso, puedes llamar al método 'add_stamp' de la Page para agregar la imagen en el encabezado del PDF.
+Aplicar encabezados y pies de página con formato HTML a cada página de un documento PDF usando Aspose.PDF para Python. Mediante el uso de [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), el script permite estilos de texto enriquecido—como negrita e itálica—para aparecer en el encabezado y el pie de página. Se aplica [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) para una colocación adecuada, y los mismos elementos formateados se adjuntan a cada página del documento.
 
-El siguiente fragmento de código te muestra cómo agregar una imagen en el encabezado de un archivo PDF con Python:
+El siguiente fragmento de código muestra cómo agregar encabezados y pies de página como fragmentos HTML a un PDF usando Python:
 
-```python 
-
-    import aspose.pdf as ap
-
-    # Abrir documento
-    document = ap.Document(input_pdf)
-
-    # Crear encabezado
-    image_stamp = ap.ImageStamp(input_image)
-    # Establecer propiedades del sello
-    image_stamp.top_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.TOP
-    # Agregar encabezado en todas las páginas
-    for page in document.pages:
-        page.add_stamp(image_stamp)
-
-    # Guardar documento actualizado
-    document.save(output_pdf)
-```
-
-## Agregar Imagen en el Pie de Página del Archivo PDF
-
-Puedes usar la clase [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) para agregar una imagen en el pie de página de un archivo PDF. [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) class proporciona propiedades necesarias para crear un sello basado en imagen como tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar una imagen en el pie de página, necesitas crear un objeto Document y un objeto Image Stamp utilizando las propiedades requeridas. Después de eso, puedes llamar al método 'add_stamp' de la Página para agregar la imagen en el pie de página del PDF.
-
-El siguiente fragmento de código te muestra cómo agregar una imagen en el pie de página de un archivo PDF con Python:
+1. Crear un fragmento de encabezado HTML usando HtmlFragment—incluyendo texto con estilo como '<strong>' para negrita.
+1. Crear un objeto HeaderFooter y agregarle el encabezado HTML.
+1. Crear un fragmento de pie de página HTML usando '<i>' para estilo itálico.
+1. Crear un objeto Footer y agregarle el HTML del pie de página.
+1. Configurar los márgenes (izquierda = 50, arriba = 20) y asignarlos tanto al encabezado como al pie de página.
+1. Cargar el documento PDF usando 'ap.Document()'.
+1. Recorrer todas las páginas y asignar el encabezado y el pie de página a cada una.
+1. Guardar el PDF modificado en la ruta de salida especificada.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Abrir documento
-    document = ap.Document(input_pdf)
-    # Crear pie de página
-    image_stamp = ap.ImageStamp(input_image)
-    # Establecer propiedades del sello
-    image_stamp.bottom_margin = 10
-    image_stamp.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    image_stamp.vertical_alignment = ap.VerticalAlignment.BOTTOM
-    # Agregar pie de página en todas las páginas
-    for page in document.pages:
-        page.add_stamp(image_stamp)
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Guardar archivo PDF actualizado
-    document.save(output_pdf)
+def add_header_and_footer_as_html(input_file, output_file):
+    """
+    Add HTML-formatted headers and footers to all pages of a PDF document.
+
+    Creates rich HTML-based headers and footers with formatting like bold
+    and italic text. Demonstrates how to use HtmlFragment for styled content.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses HtmlFragment for rich text formatting
+        - Header includes HTML with <strong> tag for bold text
+        - Footer includes HTML with <i> tag for italic text
+        - Sets margins of 50 units left and 20 units top
+        - HTML tags are rendered properly in the PDF
+
+    Example:
+        >>> add_header_and_footer_as_html("input.pdf", "output.pdf")
+        # Adds HTML-formatted headers and footers to all pages
+    """
+    # Create header HTML
+    header_html = ap.HtmlFragment("This is an HTML <strong>Header</strong>")
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_html)
+
+    # Create footer HTML
+    footer_html = ap.HtmlFragment("Powered by <i>Aspose.PDF</i>")
+
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_html)
+
+    # Set header margin
+    margin = ap.MarginInfo()
+    margin.left = 50
+    margin.top = 20
+    header.margin = margin
+
+    # Set footer margin
+    footer.margin = margin
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-## Añadir diferentes encabezados en un archivo PDF
+Usar HtmlFragment permite un formato rico con estilos en línea o marcado HTML, brindándole mayor flexibilidad de diseño comparado con texto plano.
 
-Sabemos que podemos añadir TextStamp en la sección de Encabezado/Pie de página del documento utilizando las propiedades [top_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties) o [bottom_margin](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstamp/#properties), pero a veces podemos tener el requisito de añadir múltiples encabezados/pies de página en un único documento PDF. **Aspose.PDF para Python a través de .NET** explica cómo hacer esto.
+## Agregar encabezados y pies de página como imágenes
 
-Para cumplir con este requisito, crearemos objetos individuales de TextStamp (el número de objetos depende del número de encabezados/pies de página requeridos) y los añadiremos al documento PDF.
- Podemos especificar también diferente información de formato para cada objeto sello individual. En el siguiente ejemplo, hemos creado un objeto Document y tres objetos TextStamp y luego hemos utilizado el método 'add_stamp' de Page para añadir el texto en la sección del encabezado del PDF. El siguiente fragmento de código te muestra cómo añadir una imagen en el pie de página de un archivo PDF con Aspose.PDF para Python:
+Agregar encabezados y pies de página basados en imágenes a cada página de un documento PDF usando Aspose.PDF para Python. El mismo archivo de imagen se utiliza tanto para el encabezado como para el pie de página en cada página. [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) posiciona las imágenes, y la imagen se ajusta automáticamente para encajar dentro del área del encabezado/pie de página.
+
+El siguiente fragmento de código muestra cómo agregar encabezados y pies de página como imágenes a un PDF usando Python:
+
+1. Cargue la imagen en un objeto 'ap.Image' y prepárela para usarla como encabezado.
+1. Cree un objeto HeaderFooter y adjunte la imagen del encabezado a él.
+1. Cargue la misma imagen nuevamente para usarla como pie de página.
+1. Cree un objeto Footer y añada la imagen del pie de página a él.
+1. Cargue el documento PDF de entrada usando 'ap.Document()'.
+1. Itere a través de todas las páginas del documento.
+1. Aplique márgenes (izquierda = 50) para posicionar tanto el encabezado como el pie de página.
+1. Asigne el encabezado y el pie de página a cada página del PDF.
+1. Guarde el PDF actualizado en el archivo de salida especificado.
+
+Esta técnica es ideal para marcar documentos con logotipos o marcas de agua en el área de encabezado/pie de página.
 
 ```python
 
-    import aspose.pdf as ap
+import os
+import aspose.pdf as ap
 
-    # Crear tres sellos
-    stamp1 = ap.TextStamp("Encabezado 1")
-    stamp2 = ap.TextStamp("Encabezado 2")
-    stamp3 = ap.TextStamp("Encabezado 3")
+# Global configuration
+DATA_DIR = "your path here"
 
-    # Establecer la alineación del sello (colocar el sello en la parte superior de la página, centrado horizontalmente)
-    stamp1.vertical_alignment = ap.VerticalAlignment.TOP
-    stamp1.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Especificar el estilo de fuente como Negrita
-    stamp1.text_state.font_style = ap.text.FontStyles.BOLD
-    # Establecer la información del color del texto de primer plano como rojo
-    stamp1.text_state.foreground_color = ap.Color.red
-    # Especificar el tamaño de fuente como 14
-    stamp1.text_state.font_size = 14
+def add_header_and_footer_as_image(input_file, image_file, output_file):
+    """
+    Add image-based headers and footers to all pages of a PDF document.
 
-    # Ahora necesitamos establecer la alineación vertical del segundo objeto sello como Superior
-    stamp2.vertical_alignment = ap.VerticalAlignment.TOP
-    # Establecer la información de alineación horizontal para el sello como Centrado
-    stamp2.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Establecer el factor de zoom para el objeto sello
-    stamp2.zoom = 10
+    Creates headers and footers using image files. The same image is used
+    for both header and footer positioning on each page.
 
-    # Establecer el formato del tercer objeto sello
-    # Especificar la información de alineación vertical para el objeto sello como SUPERIOR
-    stamp3.vertical_alignment = ap.VerticalAlignment.TOP
-    # Establecer la información de alineación horizontal para el objeto sello como Centrado
-    stamp3.horizontal_alignment = ap.HorizontalAlignment.CENTER
-    # Establecer el ángulo de rotación para el objeto sello
-    stamp3.rotate_angle = 35
-    # Establecer el color de fondo del sello como rosa
-    stamp3.text_state.background_color = ap.Color.pink
-    # Cambiar la información de la fuente del sello a Verdana
-    stamp3.text_state.font = ap.text.FontRepository.find_font("Verdana")
-    # El primer sello se añade en la primera página;
-    document.pages[1].add_stamp(stamp1)
-    # El segundo sello se añade en la segunda página;
-    document.pages[2].add_stamp(stamp2)
-    # El tercer sello se añade en la tercera página.
-    document.pages[3].add_stamp(stamp3)
+    Args:
+        input_file (str): Path to the input PDF file.
+        image_file (str): Path to the image file to use for headers and footers.
+        output_file (str): Path where the modified PDF will be saved.
 
-    # Guardar el documento actualizado
-    document.save(output_pdf)
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses the same image file for both header and footer
+        - Creates separate Image objects for header and footer
+        - Sets margin of 50 units left for positioning
+        - Image files should be in supported formats (PNG, JPG, etc.)
+        - Images are automatically sized to fit header/footer areas
+
+    Example:
+        >>> add_header_and_footer_as_image("input.pdf", "logo.png", "output.pdf")
+        # Adds image headers and footers using logo.png
+    """
+
+    # Create header image
+    header_image = ap.Image()
+    header_image.file = image_file
+    # Create header
+    header = ap.HeaderFooter()
+    header.paragraphs.add(header_image)
+
+    # Create footer image
+    footer_image = ap.Image()
+    footer_image.file = image_file
+
+    # Create footer
+    footer = ap.HeaderFooter()
+    footer.paragraphs.add(footer_image)
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Set header margin
+            margin = ap.MarginInfo()
+            margin.left = 50
+            header.margin = margin
+
+            # Set footer margin
+            footer.margin = margin
+
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para Python a través de .NET Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Biblioteca de Manipulación de PDF para Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/example.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+## Agregar encabezados y pies de página como tabla
+
+Agregue encabezados y pies de página estructurados, basados en tablas, a todas las páginas de un documento PDF usando Aspose.PDF para Python. Los objetos [`Tabla`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) ofrecen un mejor control de diseño, alineación y formato coherente para encabezados y pies de página complejos. El texto del encabezado está centrado mientras que el del pie de página está alineado a la izquierda, ambos usando fuente Arial 12pt. Los anchos de columna se calculan dinámicamente en función de las dimensiones de la página para asegurar una colocación adecuada.
+
+Este fragmento de código agrega encabezados y pies de página (usando tablas) a cada página de un documento PDF con Aspose.PDF para Python a través de .NET.
+
+1. Defina estilos de texto usando [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) para el encabezado y el pie de página (fuente, tamaño, alineación).
+1. Cree objetos [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) para el encabezado y el pie de página.
+1. Construya la [`Tabla`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) del encabezado con una sola fila y una celda que contenga el texto del encabezado.
+1. Construya la [`Tabla`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/) del pie de página con una sola fila y una celda que contenga el texto del pie de página.
+1. Añada las tablas a los objetos [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) correspondientes.
+1. Establezca la [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) del pie de página para una correcta posición horizontal.
+1. Abra el [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) usando los métodos apropiados.
+1. Itere a través de todas las páginas y asigne el encabezado y pie de página basados en tabla a cada página.
+1. Guarde el [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) modificado en el archivo de salida.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_header_and_footer_as_table(input_file, output_file):
+    """
+    Add table-based headers and footers to all pages of a PDF document.
+
+    Creates headers and footers using table structures for better layout
+    control and alignment. Demonstrates advanced formatting with text states.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses Table objects for structured layout
+        - Header table has centered Arial 12pt text
+        - Footer table has left-aligned Arial 12pt text
+        - Column width calculated based on page width minus margins
+        - Provides more precise control over text positioning
+
+    Example:
+        >>> add_header_and_footer_as_table("input.pdf", "output.pdf")
+        # Adds table-structured headers and footers to all pages
+    """
+    text_state_header = ap.text.TextState()
+    text_state_header.font = ap.text.FontRepository.find_font("Arial")
+    text_state_header.font_size = 12
+    text_state_header.horizontal_alignment = ap.HorizontalAlignment.CENTER
+    text_state_footer = ap.text.TextState()
+    text_state_footer.font = ap.text.FontRepository.find_font("Arial")
+    text_state_footer.font_size = 12
+    text_state_footer.horizontal_alignment = ap.HorizontalAlignment.LEFT
+    # Create header
+    header = ap.HeaderFooter()
+    # Create footer
+    footer = ap.HeaderFooter()
+    # Create header Table
+    table_header = ap.Table()
+    table_header.column_widths = str(594 - header.margin.left - header.margin.right)
+    header_row = table_header.rows.add()
+    header_row.cells.add("This is a Table Header", text_state_header)
+    # Create footer Table
+    table = ap.Table()
+    table.column_widths = str(594 - footer.margin.left - footer.margin.right)
+    table.rows.add().cells.add("Powered by Aspose.PDF", text_state_footer)
+    header.paragraphs.add(table_header)
+    footer.paragraphs.add(table)
+    # Set footer margin
+    footer.margin.left = 150
+
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        for i in range(1, len(document.pages) + 1):
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```
+
+## Agregar encabezados y pies de página como LaTeX
+
+Agregue encabezados y pies de página que contengan contenido formateado en LaTeX a todas las páginas de un documento PDF usando Aspose.PDF para Python. LaTeX permite renderizar símbolos matemáticos, fechas, marcas de derechos de autor y otros formatos avanzados. El encabezado incluye una fecha dinámica, mientras que el pie de página muestra un símbolo de derechos de autor junto con el número de página actual y el recuento total de páginas.
+
+El siguiente fragmento de código muestra cómo usar [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) en encabezados y pies de página para un PDF usando Aspose.PDF para Python a través de .NET.
+
+1. Abra el [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) usando los métodos apropiados.
+1. Determine el recuento total de páginas para usar en los pies de página dinámicos.
+1. Itere a través de todas las páginas del documento.
+1. Cree un objeto [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) para el encabezado.
+1. Cree un [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) para el texto del encabezado que contenga comandos LaTeX (p.ej., `\\today\\`).
+1. Cree un objeto [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) para el pie de página.
+1. Cree un [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) para el texto del pie de página que incluya símbolos LaTeX y numeración de páginas.
+1. Añada el [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) al objeto de encabezado/pie de página correspondiente.
+1. Vincule el encabezado y el pie de página a la página actual.
+1. Guarde el [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) modificado en el archivo de salida.
+
+```python
+
+import os
+import aspose.pdf as ap
+
+# Global configuration
+DATA_DIR = "your path here"
+
+def add_header_and_footer_as_latex(input_file, output_file):
+    """
+    Add LaTeX-formatted headers and footers to all pages of a PDF document.
+
+    Creates headers and footers using LaTeX markup for mathematical expressions,
+    symbols, and advanced formatting. Demonstrates TeXFragment usage.
+
+    Args:
+        input_file (str): Path to the input PDF file.
+        output_file (str): Path where the modified PDF will be saved.
+
+    Returns:
+        None: The function modifies the PDF and saves it to the output path.
+
+    Note:
+        - Uses TeXFragment for LaTeX rendering
+        - Header includes LaTeX date command (\\today\\)
+        - Footer includes copyright symbol and page numbering
+        - LaTeX commands are processed and rendered properly
+        - Page count is dynamically calculated and inserted
+
+    Example:
+        >>> add_header_and_footer_as_latex("input.pdf", "output.pdf")
+        # Adds LaTeX-formatted headers and footers with symbols and page numbers
+    """
+    # Open PDF document
+    with ap.Document(input_file) as document:
+        page_count = len(document.pages)
+        for i in range(1, page_count + 1):
+            # Create header
+            header = ap.HeaderFooter()
+            h_latex_text = "This is a LaTex Header. \\today\\"
+            h_l_text = ap.TeXFragment(h_latex_text, True)
+            # Create footer
+            footer = ap.HeaderFooter()
+            f_latex_text = f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            f_l_text = ap.TeXFragment(f_latex_text, True)
+
+            header.paragraphs.add(h_l_text)
+            footer.paragraphs.add(f_l_text)
+            # Bind the header and footer to the page
+            document.pages[i].header = header
+            document.pages[i].footer = footer
+
+        # Save PDF document
+        document.save(output_file)
+```

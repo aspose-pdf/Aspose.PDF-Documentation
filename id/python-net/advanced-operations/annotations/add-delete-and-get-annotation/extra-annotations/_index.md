@@ -1,113 +1,50 @@
 ---
-title: Anotasi Ekstra menggunakan Python
-linktitle: Anotasi Ekstra
+title: Anotasi Tambahan menggunakan Python
+linktitle: Anotasi Tambahan
 type: docs
 weight: 60
 url: /id/python-net/extra-annotations/
-description: Bagian ini menjelaskan cara menambah, mendapatkan, dan menghapus jenis anotasi ekstra dari dokumen PDF Anda.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Pelajari cara menambahkan anotasi tambahan seperti penyorotan atau catatan ke PDF menggunakan Python dengan Aspose.PDF untuk meningkatkan konten PDF.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Panduan tentang cara memanipulasi anotasi tambahan dalam PDF
+Abstract: Artikel ini menyediakan panduan komprehensif tentang cara menambahkan, mengambil, dan menghapus berbagai jenis anotasi dalam file PDF menggunakan Python, khususnya dengan pustaka Aspose.PDF. Artikel ini mencakup tiga jenis anotasi - Caret, Link, dan Redaction. Artikel menjelaskan bahwa anotasi Caret digunakan untuk saran penyuntingan teks. Dijelaskan proses memuat file PDF, membuat anotasi Caret dengan parameter spesifik (seperti rectangle, title, subject, flags, dan color), menambahkannya ke dokumen, dan menyimpan perubahan. Potongan kode disediakan untuk menambahkan, mengambil, dan menghapus anotasi Caret. Anotasi Link digunakan untuk membuat area yang dapat diklik yang mengarah ke URL atau posisi dokumen tertentu. Panduan mencakup instruksi dan kode untuk menambahkan anotasi Link dengan mengidentifikasi fragmen teks (mis., nomor telepon), mengatur aksi, dan mengelola anotasi tersebut.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Anotasi Ekstra menggunakan Python",
-    "alternativeHeadline": "Cara menambah Anotasi Ekstra dalam PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "generasi dokumen pdf",
-    "keywords": "pdf, python, anotasi tautan, anotasi caret",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/extra-annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/extra-annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Bagian ini menjelaskan cara menambah, mendapatkan, dan menghapus jenis anotasi ekstra dari dokumen PDF Anda dengan Python."
-}
-</script>
 
+## Cara menambahkan Anotasi Caret ke file PDF yang ada via Python
 
-## Cara menambahkan Anotasi Caret ke dalam file PDF yang sudah ada melalui Python
-
-Anotasi Caret adalah simbol yang menunjukkan pengeditan teks. Anotasi Caret juga merupakan anotasi markup, sehingga kelas Caret diturunkan dari kelas Markup dan juga menyediakan fungsi untuk mendapatkan atau mengatur properti Anotasi Caret dan mengatur ulang alur tampilan Anotasi Caret. Anotasi caret sering digunakan untuk menyarankan perubahan, penambahan, atau perubahan pada teks.
+Anotasi Caret adalah simbol yang menunjukkan penyuntingan teks. Anotasi Caret juga merupakan anotasi markup, sehingga kelas Caret diturunkan dari kelas Markup dan juga menyediakan fungsi untuk mendapatkan atau mengatur properti Anotasi Caret serta mengatur ulang alur tampilan Anotasi Caret.
+Anotasi Caret sering digunakan untuk menyarankan perubahan, penambahan, atau revisi pada teks.
 
 Langkah-langkah untuk membuat anotasi Caret:
 
-1. Muat file PDF - baru [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. Buat baru [CaretAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/caretannotation/) dan atur parameter Caret (new Rectangle, title, subject, flags, color). Anotasi ini digunakan untuk menunjukkan penyisipan teks.
+1. Muat file PDF - baru [Dokumen](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
+1. Buat baru [CaretAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/caretannotation/) dan atur parameter Caret (Rectangle baru, title, subject, flags, color). Anotasi ini digunakan untuk menunjukkan penyisipan teks.
 1. Setelah kami dapat menambahkan anotasi ke halaman.
 
-Cuplikan kode berikut menunjukkan cara menambahkan Anotasi Caret ke file PDF:
+Potongan kode berikut menunjukkan cara menambahkan Anotasi Caret ke file PDF:
 
 ```python
 
     import aspose.pdf as ap
 
-    # Buka dokumen
+    # Open document
     document = ap.Document(input_file)
 
     caretAnnotation1 = ap.annotations.CaretAnnotation(
         document.pages[1], ap.Rectangle(200, 700.664, 308.708, 740.769, True)
     )
-    caretAnnotation1.title = "Pengguna Aspose"
-    caretAnnotation1.subject = "Teks yang dimasukkan 1"
+    caretAnnotation1.title = "Aspose User"
+    caretAnnotation1.subject = "Inserted text 1"
     caretAnnotation1.flags = ap.annotations.AnnotationFlags.PRINT
     caretAnnotation1.color = ap.Color.blue
 
     document.pages[1].annotations.append(caretAnnotation1)
     document.save(output_file)
 ```
-
 
 ### Dapatkan Anotasi Caret
 
@@ -136,7 +73,7 @@ Potongan kode berikut menunjukkan cara Menghapus Anotasi Caret dari file PDF men
 
     import aspose.pdf as ap
 
-    # Muat file PDF
+    # Load the PDF file
     document = ap.Document(input_file)
     caretAnnotations = [
         a
@@ -150,81 +87,9 @@ Potongan kode berikut menunjukkan cara Menghapus Anotasi Caret dari file PDF men
     document.save(output_file)
 ```
 
-## Tambahkan Anotasi Tautan
+## Redaksi wilayah halaman tertentu dengan Anotasi Redaction menggunakan Aspose.PDF untuk Python
 
-[Tautan](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/linkannotation/) adalah anotasi yang membuka URL atau berpindah ke posisi tertentu di dalam dokumen yang sama atau dokumen eksternal saat Anda mengklik.
-
-A Link Annotations adalah area persegi panjang yang dapat ditempatkan di mana saja pada halaman. Setiap tautan memiliki tindakan PDF yang sesuai yang terkait dengannya. Tindakan ini dilakukan ketika pengguna mengklik area tautan ini.
-
-Cuplikan kode berikut menunjukkan cara menambahkan Link Annotation ke file PDF menggunakan contoh nomor telepon:
-
-```python
-
-    import aspose.pdf as ap
-
-    document = ap.Document(input_file)
-    # Buat objek TextFragmentAbsorber untuk menemukan nomor telepon
-    textFragmentAbsorber = ap.text.TextFragmentAbsorber("file")
-
-    # Terima penyerap hanya untuk halaman pertama
-    document.pages[1].accept(textFragmentAbsorber)
-
-    phoneNumberFragment = textFragmentAbsorber.text_fragments[1]
-
-    # Buat Link Annotation dan atur tindakan untuk memanggil nomor telepon
-    linkAnnotation = ap.annotations.LinkAnnotation(document.pages[1], phoneNumberFragment.rectangle)
-    linkAnnotation.action = ap.annotations.GoToURIAction("www.aspose.com")
-
-    # Tambahkan anotasi ke halaman
-    document.pages[1].annotations.append(linkAnnotation)
-    document.save(output_file)
-```
-
-
-### Dapatkan Anotasi Tautan
-
-Silakan coba gunakan cuplikan kode berikut untuk Mendapatkan [LinkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations.linkannotation/) dari dokumen PDF.
-
-```python
-
-    import aspose.pdf as ap
-
-    document = ap.Document(input_file)
-    linkAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.LINK)
-    ]
-
-    for la in linkAnnotations:
-        print(la.rect)
-```
-
-### Hapus Anotasi Tautan
-
-Cuplikan kode berikut menunjukkan cara Menghapus Anotasi Tautan dari file PDF. Untuk ini kita perlu menemukan dan menghapus semua anotasi tautan pada halaman pertama. Setelah ini kita akan menyimpan dokumen dengan anotasi yang telah dihapus.
-
-```python
-
-    import aspose.pdf as ap
-
-    document = ap.Document(input_file)
-    highlightAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.LINK)
-    ]
-
-    for hs in highlightAnnotations:
-        document.pages[1].annotations.delete(hs)
-
-    document.save(output_file)
-```
-
-
-## Menyunting Wilayah Halaman Tertentu dengan Anotasi Redaksi menggunakan Aspose.PDF untuk Python
-
-Aspose.PDF untuk Python via .NET mendukung fitur untuk menambah serta memanipulasi Anotasi dalam file PDF yang ada. Anotasi Redaksi dalam dokumen PDF berfungsi untuk secara permanen menghapus atau menyembunyikan informasi rahasia dari dokumen. Proses pengeditan informasi melibatkan penutupan atau pengarsiran konten tertentu, seperti teks, gambar, atau grafik, dengan cara yang membatasi visibilitas dan aksesibilitasnya kepada orang lain. Ini memastikan bahwa informasi sensitif tetap tersembunyi dan terlindungi dalam dokumen. Untuk memenuhi kebutuhan ini, sebuah kelas bernama [RedactionAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/redactionannotation/) disediakan, yang dapat digunakan untuk menyunting wilayah halaman tertentu atau dapat digunakan untuk memanipulasi Redaksi Anotasi yang ada dan menyuntingnya (yaitu, memipihkan anotasi dan menghapus teks di bawahnya).
+Aspose.PDF untuk Python via .NET mendukung fitur untuk menambahkan serta memanipulasi Anotasi dalam file PDF yang ada. Anotasi Redaction dalam dokumen PDF berfungsi untuk secara permanen menghapus atau menyembunyikan informasi rahasia dari dokumen. Proses penyuntingan informasi melibatkan menutupi atau memberi bayangan pada konten tertentu, seperti teks, gambar, atau grafis, dengan cara yang membatasi visibilitas dan aksesibilitasnya bagi orang lain. Hal ini memastikan bahwa informasi sensitif tetap tersembunyi dan terlindungi dalam dokumen. Untuk memenuhi kebutuhan ini, disediakan kelas bernama [RedactionAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/redactionannotation/), yang dapat digunakan untuk meredaksi wilayah halaman tertentu atau dapat digunakan untuk memanipulasi RedactionAnnotations yang ada dan meredaksinya (mis. meratakan anotasi dan menghapus teks di bawahnya).
 
 ```python
 
@@ -242,8 +107,7 @@ Aspose.PDF untuk Python via .NET mendukung fitur untuk menambah serta memanipula
     document.save(output_file)
 ```
 
-
-### Dapatkan Anotasi Redaksi
+### Dapatkan Anotasi Redaction
 
 ```python
 
@@ -258,9 +122,9 @@ Aspose.PDF untuk Python via .NET mendukung fitur untuk menambah serta memanipula
 
     for pa in redactionAnnotations:
         print(pa.rect)
-```    
+```
 
-### Hapus Anotasi Redaksi
+### Hapus Anotasi Redaction
 
 ```python
 
@@ -277,68 +141,7 @@ Aspose.PDF untuk Python via .NET mendukung fitur untuk menambah serta memanipula
         document.pages[1].annotations.delete(pa)
 
     document.save(output_file)
-```  
+```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Perpustakaan Python",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+
+

@@ -1,124 +1,60 @@
 ---
-title: Annotations collantes PDF utilisant Python
-linktitle: Annotation collante
+title: Annotations autocollantes PDF avec Python
+linktitle: Annotation autocollante
 type: docs
 weight: 50
 url: /fr/python-net/sticky-annotations/
-description: Ce sujet concerne les annotations collantes, en tant qu'exemple nous montrons l'Annotation Filigrane dans le texte.
-lastmod: "2023-02-17"
-sitemap:
-    changefreq: "weekly"
+description: Découvrez comment ajouter des annotations autocollantes dans les documents PDF en utilisant Aspose.PDF avec Python via .NET pour les commentaires et les retours.
+lastmod: "2025-02-27"
+sitemap: 
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Guide sur la façon de manipuler les annotations autocollantes dans un PDF
+Abstract: Cet article fournit un guide détaillé sur la façon de gérer les annotations filigrane dans les documents PDF en utilisant la bibliothèque Aspose.PDF pour Python. Il explique le processus d'ajout, de récupération et de suppression des annotations filigrane afin d'assurer l'authenticité et le branding du document. L'annotation filigrane peut être utilisée pour intégrer des graphiques, tels que des logos, à une taille et une position fixes sur une page. Le guide comprend des extraits de code montrant comment ajouter une annotation filigrane à une position spécifique avec une opacité réglable, ainsi que comment récupérer et supprimer les annotations filigrane existantes. Les exemples de code illustrent l'utilisation de la bibliothèque Aspose.PDF pour manipuler les documents PDF de manière programmatique, offrant une approche pratique aux développeurs pour intégrer les fonctionnalités de filigrane dans leurs applications.
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Annotations collantes PDF utilisant Python",
-    "alternativeHeadline": "Comment ajouter des Annotations Collantes dans un PDF",
-    "author": {
-        "@type": "Person",
-        "name":"Anastasiia Holub",
-        "givenName": "Anastasiia",
-        "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
-    },
-    "genre": "génération de documents pdf",
-    "keywords": "pdf, python, annotations collantes, annotation filigrane",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Équipe de Doc Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "url": "/python-net/sticky-annotations/",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/python-net/sticky-annotations/"
-    },
-    "dateModified": "2023-02-04",
-    "description": "Ce sujet concerne les annotations collantes, en tant qu'exemple nous montrons l'Annotation Filigrane dans le texte utilisant la bibliothèque Python."
-}
-</script>
 
+## Ajouter une annotation filigrane
 
-## Ajouter une Annotation de Filigrane
+L'annotation filigrane est la plus visible et la plus facile à visualiser et à transmettre. C'est le meilleur moyen de placer dans votre document PDF un logo ou tout autre signe qui confirme son originalité.
 
-L'annotation de filigrane est la plus visible et la plus facile à visualiser et à transmettre. C'est le meilleur moyen d'insérer dans votre document PDF un logo ou tout autre signe qui confirme son originalité.
+Une annotation filigrane doit être utilisée pour représenter des graphiques qui seront imprimés à une taille et à une position fixes sur une page, indépendamment des dimensions de la page imprimée.
 
-Une annotation de filigrane doit être utilisée pour représenter des graphiques qui doivent être imprimés à une taille et à une position fixes sur une page, quelles que soient les dimensions de la page imprimée.
+Vous pouvez ajouter du texte filigrane en utilisant [WatermarkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/) à une position spécifique de la page PDF. L'opacité du filigrane peut également être contrôlée en utilisant la propriété [opacity](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/#properties).
 
-Vous pouvez ajouter du texte en filigrane en utilisant [WatermarkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/) à une position spécifique de la page PDF. L'opacité du filigrane peut également être contrôlée en utilisant la propriété [opacity](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/watermarkannotation/#properties).
-
-Veuillez consulter l'extrait de code suivant pour ajouter une WatermarkAnnotation.
+Veuillez consulter l'extrait de code suivant pour ajouter WatermarkAnnotation.
 
 ```python
 
     import aspose.pdf as ap
 
     document = ap.Document(input_file)
-    # Créer une Annotation
-    # Charger l'objet Page pour ajouter l'Annotation
+    # Create Annotation
+    # Load Page object to add Annotation
     page = document.pages[1]
 
-    # Créer une Annotation
+    # Create Annotation
     wa = ap.annotations.WatermarkAnnotation(page, ap.Rectangle(100, 0, 400, 100, True))
 
-    # Ajouter l'annotation dans la collection d'Annotations de la page
+    # Add annotaiton into Annotation collection of Page
     page.annotations.append(wa)
 
-    # Créer TextState pour les paramètres de la police
+    # Create TextState for Font settings
     ts = ap.text.TextState()
     ts.foreground_color = ap.Color.blue
     ts.font_size = 25
     ts.font = ap.text.FontRepository.find_font("Arial");
 
-    # Définir le niveau d'opacité du texte de l'annotation
+    # Set opacity level of Annotaiton Text
     wa.opacity = 0.5
 
-    # Ajouter du texte dans l'annotation
+    # Add Text in Annotation
     wa.set_text_and_state([ "HELLO", "Line 1", "Line 2" ], ts)
 
     document.save(output_file)
 ```
 
-
-## Obtenir une Annotation de Filigrane
+## Récupérer l'annotation filigrane
 
 ```python
 
@@ -135,7 +71,7 @@ Veuillez consulter l'extrait de code suivant pour ajouter une WatermarkAnnotatio
         print(ta.rect)
 ```
 
-## Supprimer une Annotation de Filigrane
+## Supprimer l'annotation filigrane
 
 ```python
 
@@ -154,66 +90,4 @@ Veuillez consulter l'extrait de code suivant pour ajouter une WatermarkAnnotatio
     document.save(output_file)
 ```
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for Python Library",
-    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-    "url": "https://www.aspose.com/",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Aspose.PDF",
-        "url": "https://products.aspose.com/pdf",
-        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-python-net.svg",
-        "alternateName": "Aspose",
-        "sameAs": [
-            "https://facebook.com/aspose.pdf/",
-            "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
-            "https://www.linkedin.com/company/aspose",
-            "https://stackoverflow.com/questions/tagged/aspose",
-            "https://aspose.quora.com/",
-            "https://aspose.github.io/"
-        ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
-                "contactType": "sales",
-                "areaServed": "US",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
-                "contactType": "sales",
-                "areaServed": "GB",
-                "availableLanguage": "en"
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
-                "contactType": "sales",
-                "areaServed": "AU",
-                "availableLanguage": "en"
-            }
-        ]
-    },
-    "offers": {
-        "@type": "Offer",
-        "price": "1199",
-        "priceCurrency": "USD"
-    },
-    "applicationCategory": "PDF Manipulation Library for Python",
-    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/python-net/create-pdf-document/screenshot.png",
-    "softwareVersion": "2022.1",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "16"
-    }
-}
-</script>
+
