@@ -1,5 +1,5 @@
 ---
-title: Diviser un PDF programmément en Python
+title: Diviser un PDF programmatiquement en Python
 linktitle: Diviser des fichiers PDF
 type: docs
 weight: 60
