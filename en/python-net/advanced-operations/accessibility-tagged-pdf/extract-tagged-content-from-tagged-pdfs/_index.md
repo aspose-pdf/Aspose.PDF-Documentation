@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /python-net/extract-tagged-content-from-tagged-pdfs/
 description: This article explains how to extract tagged content PDF document using Aspose.PDF for Python via .NET
-lastmod: "2025-06-17"
+lastmod: "2026-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,62 +17,114 @@ In this article you will learn how to to extract tagged content PDF document usi
 
 In order to get content of PDF Document with Tagged Text, Aspose.PDF offers [tagged_content](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) property of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 
-Following code snippet shows how to get content of a PDF document with Tagged Text:
+Create an advanced, fully tagged PDF document with a structured and hierarchical Table of Contents (TOC):
+
+1. Create the document and enable tagged content.
+1. Add and configure the TOC page.
+1. Create the /TOC structure element.
+1. Link the TOC page title to a header element.
+1. Add Main content page and first header.
+1. Create a TOC entry for the header.
+1. Create nested subsections with list structure.
+1. Add a second Top-Level section.
+1. Save the document.
 
 ```python
 
     import aspose.pdf as ap
+    from aspose.pycore import cast
+    import sys
+    from os import path
 
-    # Create PDF Document
-    with ap.Document() as document:
-        # Get Content for work with Tagged PDF
-        tagged_content = document.tagged_content
+    sys.path.append(path.join(path.dirname(__file__), '..'))
 
-        # Work with Tagged PDF content
-        # Set Title and Language for Document
-        tagged_content.set_title("Simple Tagged Pdf Document")
-        tagged_content.set_language("en-US")
+    from config import initialize_data_dir, set_license
 
-        # Save Tagged PDF Document
-        document.save(path_outfile)
+
+    # region Extract Tagged Content from PDF
+    def get_tagged_content(outfile):
+        # Create PDF Document
+        with ap.Document() as document:
+            # Get Content for work with Tagged PDF
+            tagged_content = document.tagged_content
+
+            # Work with Tagged PDF content
+            # Set Title and Language for Document
+            tagged_content.set_title("Simple Tagged Pdf Document")
+            tagged_content.set_language("en-US")
+
+            # Save Tagged PDF Document
+            document.save(outfile)
 ```
 
 ## Getting Root Structure
 
-In order to get the root structure of Tagged PDF Document, Aspose.PDF offers [struct_tree_root_element](https://reference.aspose.com/pdf/python-net/aspose.pdf.tagged/itaggedcontent/#properties) property of [ITaggedContent](https://reference.aspose.com/pdf/python-net/aspose.pdf.tagged/itaggedcontent/) interface and [root_element](https://reference.aspose.com/pdf/python-net/aspose.pdf.tagged/itaggedcontent/#properties).
+Tagged PDFs contain a logical structure tree that defines the semantic structure of the document. The StructTreeRoot represents the root of this logical tree, while the RootElement provides an interface to interact with the top-level structure element of the document.
 
 Following code snippet shows how to get the root structure of Tagged PDF Document:
+
+1. Create a new tagged PDF document.
+1. Access tagged content and set metadata.
+1. Access StructTreeRoot and RootElement.
+1. Save the tagged PDF.
 
 ```python
 
     import aspose.pdf as ap
+    from aspose.pycore import cast
+    import sys
+    from os import path
 
-    # Create PDF Document
-    with ap.Document() as document:
-        # Get Content for work with Tagged PDF
-        tagged_content = document.tagged_content
+    sys.path.append(path.join(path.dirname(__file__), '..'))
 
-        # Set Title and Language for Document
-        tagged_content.set_title("Tagged Pdf Document")
-        tagged_content.set_language("en-US")
+    from config import initialize_data_dir, set_license
 
-        # Properties StructTreeRootElement and RootElement are used for access to
-        # StructTreeRoot object of pdf document and to root structure element (Document structure element).
-        struct_tree_root_element = tagged_content.struct_tree_root_element
-        root_element = tagged_content.root_element
+    def get_root_structure(outfile):
+
+        # Create PDF Document
+        with ap.Document() as document:
+            # Get Content for work with Tagged PDF
+            tagged_content = document.tagged_content
+
+            # Set Title and Language for Document
+            tagged_content.set_title("Tagged Pdf Document")
+            tagged_content.set_language("en-US")
+
+            # Properties StructTreeRootElement and RootElement are used for access to
+            # StructTreeRoot object of pdf document and to root structure element (Document structure element).
+            struct_tree_root_element = tagged_content.struct_tree_root_element
+            root_element = tagged_content.root_element
+
+            print(f"StructTreeRootElement: {struct_tree_root_element}")
+            print(f"RootElement: {root_element}")
+
+            # Save Tagged PDF Document
+            document.save(outfile)
 ```
 
 ## Accessing Child Elements
 
-In order to access child elements of a Tagged PDF Document, Aspose.PDF offers [ElementList](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/elementlist/) class. Following code snippet shows how to access child elements of a Tagged PDF Document:
+Tagged PDFs contain a logical structure tree that defines the semantic hierarchy of the document (headings, paragraphs, forms, lists, etc.). Accessing and modifying these structure elements allows you to:
+
+ - Inspect metadata such as title, language, actual_text, and accessibility-related properties
+ - Update properties for improved accessibility or localization
+ - Programmatically adjust the logical document structure for PDF/UA compliance
+
+ Following code snippet shows how to access child elements of a Tagged PDF Document:
 
 ```python
 
     import aspose.pdf as ap
-    from aspose.pycore import *
+    from aspose.pycore import cast
+    import sys
+    from os import path
+
+    sys.path.append(path.join(path.dirname(__file__), '..'))
+
+    from config import initialize_data_dir, set_license
 
     # Open PDF Document
-    with ap.Document(path_infile) as document:
+    with ap.Document(infile) as document:
         # Get Content for work with Tagged PDF
         tagged_content = document.tagged_content
 
@@ -81,14 +133,16 @@ In order to access child elements of a Tagged PDF Document, Aspose.PDF offers [E
 
         for element in element_list:
             if isinstance(element, ap.logicalstructure.StructureElement):
-                structure_element = cast(ap.logical_structure.StructureElement, element)
-
+                structure_element = cast(ap.logicalstructure.StructureElement, element)
                 # Get properties
-                title = structure_element.title
-                language = structure_element.language
-                actual_text = structure_element.actual_text
-                expansion_text = structure_element.expansion_text
-                alternative_text = structure_element.alternative_text
+                print(
+                    "StructureElement properties - "
+                    f"title: {structure_element.title}, "
+                    f"language: {structure_element.language}, "
+                    f"actual_text: {structure_element.actual_text}, "
+                    f"expansion_text: {structure_element.expansion_text}, "
+                    f"alternative_text: {structure_element.alternative_text}"
+                )
 
         # Access to child elements of first element in root element
         element_list = tagged_content.root_element.child_elements[1].child_elements
@@ -104,5 +158,5 @@ In order to access child elements of a Tagged PDF Document, Aspose.PDF offers [E
                 structure_element.alternative_text = "alt"
 
         # Save Tagged PDF Document
-        document.save(path_outfile)
+        document.save(outfile)
 ```

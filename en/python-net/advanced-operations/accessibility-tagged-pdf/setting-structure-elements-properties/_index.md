@@ -5,43 +5,79 @@ type: docs
 weight: 30
 url: /python-net/setting-structure-elements-properties/
 description: You may set different structure elements properties in PDF document with Aspose.PDF for Python via .NET.
-lastmod: "2025-06-17"
+lastmod: "2026-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-In order to set structure elements properties in a Tagged PDF Document, Aspose.PDF offers [create_sect_element()](https://reference.aspose.com/pdf/python-net/aspose.pdf.tagged/itaggedcontent/#methods) and [create_header_element()](https://reference.aspose.com/pdf/python-net/aspose.pdf.tagged/itaggedcontent/#methods) methods of [ITaggedContent](https://reference.aspose.com/pdf/python-net/aspose.pdf.tagged/itaggedcontent/) interface.
+Structure elements define the semantic hierarchy of a PDF document, such as sections, headers, paragraphs, or tables. By setting properties like title, language, alternative_text, actual_text, and expansion_text, you improve the accessibility and semantic meaning of the PDF for assistive technologies like screen readers.
 
 Following code snippet shows how to set structure elements properties of a Tagged PDF Document:
+
+1. Create a new tagged PDF document.
+1. Set document metadata.
+1. Create structure elements.
+1. Set accessibility properties.
+1. Save the tagged PDF.
 
 ```python
 
     import aspose.pdf as ap
+    import sys
+    from os import path
 
-    # Create PDF Document
-    with ap.Document() as document:
-        # Get Content for work with Tagged PDF
-        tagged_content = document.tagged_content
+    sys.path.append(path.join(path.dirname(__file__), '..'))
 
-        # Set Title and Language for Document
-        tagged_content.set_title("Tagged Pdf Document")
-        tagged_content.set_language("en-US")
+    from config import initialize_data_dir, set_license
 
-        # Properties StructTreeRootElement and RootElement are used for access to
-        # StructTreeRoot object of pdf document and to root structure element (Document structure element).
-        struct_tree_root_element = tagged_content.struct_tree_root_element
-        root_element = tagged_content.root_element
+
+    # region Setting Structure Elements Properties
+    def set_properties(outfile):
+        # Create PDF Document
+        with ap.Document() as document:
+            # Get Content for work with Tagged PDF
+            tagged_content = document.tagged_content
+
+            # Set Title and Language for Document
+            tagged_content.set_title("Tagged Pdf Document")
+            tagged_content.set_language("en-US")
+
+            # Create Structure Elements
+            root_element = tagged_content.root_element
+
+            section_element = tagged_content.create_sect_element()
+            root_element.append_child(section_element, True)
+
+            header_element = tagged_content.create_header_element(1)
+            section_element.append_child(header_element, True)
+            header_element.set_text("The Header")
+
+            header_element.title = "Title"
+            header_element.language = "en-US"
+            header_element.alternative_text = "Alternative Text"
+            header_element.expansion_text = "Expansion Text"
+            header_element.actual_text = "Actual Text"
+
+            # Save Tagged PDF Document
+            document.save(outfile)
 ```
 
 ## Setting Text Structure Elements
 
-In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers [ParagraphElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/paragraphelement/) class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
+In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers [paragraph_elementt](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/paragraphelement/) class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
 
 ```python
 
     import aspose.pdf as ap
+    import sys
+    from os import path
 
+    sys.path.append(path.join(path.dirname(__file__), '..'))
+
+    from config import initialize_data_dir, set_license
+
+    def set_text_elements(outfile):
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with Tagged PDF
@@ -61,73 +97,99 @@ In order to set text structure elements of a Tagged PDF Document, Aspose.PDF off
         root_element.append_child(paragraph_element, True)
 
         # Save Tagged PDF Document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
 
 ## Setting Text Block Structure Elements
 
 This Python example uses Aspose.PDF to create a Tagged PDF that includes a structured hierarchy of headers and a paragraph, enhancing the document's semantic and accessibility features.
 
-In order to set text block structure elements of a Tagged PDF Document, Aspose.PDF offers [HeaderElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/headerelement/) and [ParagraphElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/paragraphelement/) classes. You can append objects of these classes as a child of [StructureElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/structureelement/) object.
+1. Create a new tagged PDF document.
+1. Set document metadata.
+1. Access the root structure element.
+1. Create multi-level headers.
+1. Append headers to the root structure.
+1. Create a paragraph element.
+1. Append paragraph to the root structure.
+1. Save the tagged PDF.
+
 Following code snippet shows how to set text block structure elements of a Tagged PDF Document:
 
 ```python
 
     import aspose.pdf as ap
+    import sys
+    from os import path
 
-    # Create PDF Document
-    with ap.Document() as document:
-        # Get Content for work with Tagged PDF
-        tagged_content = document.tagged_content
-        # Set Title and Language for Document
-        tagged_content.set_title("Tagged Pdf Document")
-        tagged_content.set_language("en-US")
-        # Get Root Structure Element
-        root_element = tagged_content.root_element
-        h1 = tagged_content.create_header_element(1)
-        h2 = tagged_content.create_header_element(2)
-        h3 = tagged_content.create_header_element(3)
-        h4 = tagged_content.create_header_element(4)
-        h5 = tagged_content.create_header_element(5)
-        h6 = tagged_content.create_header_element(6)
-        h1.set_text("H1. Header of Level 1")
-        h2.set_text("H2. Header of Level 2")
-        h3.set_text("H3. Header of Level 3")
-        h4.set_text("H4. Header of Level 4")
-        h5.set_text("H5. Header of Level 5")
-        h6.set_text("H6. Header of Level 6")
-        root_element.append_child(h1, True)
-        root_element.append_child(h2, True)
-        root_element.append_child(h3, True)
-        root_element.append_child(h4, True)
-        root_element.append_child(h5, True)
-        root_element.append_child(h6, True)
-        p = tagged_content.create_paragraph_element()
-        p.set_text("P. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-                    "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit."
-                    " Cras pellentesque libero semper, gravida magna sed, luctus leo. "
-                    "Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. "
-                    "Interdum et malesuada fames ac ante ipsum primis in faucibus. "
-                    "Aliquam lacinia sit amet elit ac consectetur. "
-                    "Donec cursus condimentum ligula, vitae volutpat sem tristique eget. "
-                    "Nulla in consectetur massa. Vestibulum vitae lobortis ante. "
-                    "Nulla ullamcorper pellentesque justo rhoncus accumsan. "
-                    "Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. "
-                    "Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, "
-                    "vitae posuere risus odio id massa. Cras sed venenatis lacus.")
-        root_element.append_child(p, True)
-        # Save Tagged PDF Document
-        document.save(path_outfile)
+    sys.path.append(path.join(path.dirname(__file__), '..'))
+
+    from config import initialize_data_dir, set_license
+
+    def set_text_block_elements(outfile):
+        # Create PDF Document
+        with ap.Document() as document:
+            # Get Content for work with Tagged PDF
+            tagged_content = document.tagged_content
+            # Set Title and Language for Document
+            tagged_content.set_title("Tagged Pdf Document")
+            tagged_content.set_language("en-US")
+            # Get Root Structure Element
+            root_element = tagged_content.root_element
+            h1 = tagged_content.create_header_element(1)
+            h2 = tagged_content.create_header_element(2)
+            h3 = tagged_content.create_header_element(3)
+            h4 = tagged_content.create_header_element(4)
+            h5 = tagged_content.create_header_element(5)
+            h6 = tagged_content.create_header_element(6)
+            h1.set_text("H1. Header of Level 1")
+            h2.set_text("H2. Header of Level 2")
+            h3.set_text("H3. Header of Level 3")
+            h4.set_text("H4. Header of Level 4")
+            h5.set_text("H5. Header of Level 5")
+            h6.set_text("H6. Header of Level 6")
+            root_element.append_child(h1, True)
+            root_element.append_child(h2, True)
+            root_element.append_child(h3, True)
+            root_element.append_child(h4, True)
+            root_element.append_child(h5, True)
+            root_element.append_child(h6, True)
+            p = tagged_content.create_paragraph_element()
+            p.set_text(
+                "P. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit."
+                " Cras pellentesque libero semper, gravida magna sed, luctus leo. "
+                "Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. "
+                "Interdum et malesuada fames ac ante ipsum primis in faucibus. "
+                "Aliquam lacinia sit amet elit ac consectetur. "
+                "Donec cursus condimentum ligula, vitae volutpat sem tristique eget. "
+                "Nulla in consectetur massa. Vestibulum vitae lobortis ante. "
+                "Nulla ullamcorper pellentesque justo rhoncus accumsan. "
+                "Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. "
+                "Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, "
+                "vitae posuere risus odio id massa. Cras sed venenatis lacus."
+            )
+            root_element.append_child(p, True)
+            # Save Tagged PDF Document
+            document.save(outfile)
 ```
 
 ## Setting Inline Structure Elements
 
-In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF offers [SpanElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/spanelement/) and [ParagraphElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/paragraphelement/) classes. You can append objects of these classes as a child of [StructureElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/structureelement/) object. Following code snippet shows how to set inline structure elements of a Tagged PDF Document:
+Create inline text elements (/Span) within headers and paragraphs in a tagged PDF using Aspose.PDF for Python via .NET.
+
+Following code snippet shows how to set inline structure elements of a Tagged PDF Document:
 
 ```python
 
     import aspose.pdf as ap
+    import sys
+    from os import path
 
+    sys.path.append(path.join(path.dirname(__file__), '..'))
+
+    from config import initialize_data_dir, set_license
+
+    def set_inline_elements(outfile):
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with Tagged PDF
@@ -199,7 +261,9 @@ In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF o
         paragraph_element.set_text("P. ")
         root_element.append_child(paragraph_element, True)
         span_element_1 = tagged_content.create_span_element()
-        span_element_1.set_text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. ")
+        span_element_1.set_text(
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+        )
         paragraph_element.append_child(span_element_1, True)
         span_element_2 = tagged_content.create_span_element()
         span_element_2.set_text("Aenean nec lectus ac sem faucibus imperdiet. ")
@@ -208,45 +272,69 @@ In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF o
         span_element_3.set_text("Sed ut erat ac magna ullamcorper hendrerit. ")
         paragraph_element.append_child(span_element_3, True)
         span_element_4 = tagged_content.create_span_element()
-        span_element_4.set_text("Cras pellentesque libero semper, gravida magna sed, luctus leo. ")
+        span_element_4.set_text(
+            "Cras pellentesque libero semper, gravida magna sed, luctus leo. "
+        )
         paragraph_element.append_child(span_element_4, True)
         span_element_5 = tagged_content.create_span_element()
-        span_element_5.set_text("Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. ")
+        span_element_5.set_text(
+            "Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. "
+        )
         paragraph_element.append_child(span_element_5, True)
         span_element_6 = tagged_content.create_span_element()
-        span_element_6.set_text("Interdum et malesuada fames ac ante ipsum primis in faucibus. ")
+        span_element_6.set_text(
+            "Interdum et malesuada fames ac ante ipsum primis in faucibus. "
+        )
         paragraph_element.append_child(span_element_6, True)
         span_element_7 = tagged_content.create_span_element()
         span_element_7.set_text(
-            "Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. ")
+            "Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. "
+        )
         paragraph_element.append_child(span_element_7, True)
         span_element_8 = tagged_content.create_span_element()
         span_element_8.set_text(
-            "Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. ")
+            "Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. "
+        )
         paragraph_element.append_child(span_element_8, True)
         span_element_9 = tagged_content.create_span_element()
         span_element_9.set_text(
-            "Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. ")
+            "Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. "
+        )
         paragraph_element.append_child(span_element_9, True)
         span_element_10 = tagged_content.create_span_element()
         span_element_10.set_text(
-            "Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.")
+            "Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus."
+        )
         paragraph_element.append_child(span_element_10, True)
 
         # Save Tagged PDF Document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
 
 ## Setting Custom Tag Name
 
-In order to set a custom tag name of the elements of a Tagged PDF Document, Aspose.PDF offers [set_tag](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/structureelement/#methods) method of [StructureElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/structureelement/) class for elements.
+Set Custom Tag Names for Structure and Inline Elements in a Tagged PDF Using Aspose.PDF for Python.
 
 Following code snippet shows how to set custom tag name:
+
+1. Create a new tagged PDF document.
+1. Set document metadata.
+1. Create a section element.
+1. Create paragraph elements with custom tags.
+1. Create inline span elements with custom tags.
+1. Save the tagged PDF.
 
 ```python
 
     import aspose.pdf as ap
+    import sys
+    from os import path
 
+    sys.path.append(path.join(path.dirname(__file__), '..'))
+
+    from config import initialize_data_dir, set_license
+
+    def set_tag_name(outfile):
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with Tagged PDF
@@ -301,19 +389,28 @@ Following code snippet shows how to set custom tag name:
         paragraph_element4.append_child(span_element4, True)
 
         # Save Tagged PDF Document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
 
 ## Adding Structure Element into Elements
 
 **This feature is supported by version 19.4 or greater.**
 
-In order to set link structure elements in a Tagged PDF Document, Aspose.PDF offers [LinkElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/linkelement/) method of [ITaggedContent](https://reference.aspose.com/pdf/python-net/aspose.pdf.tagged/itaggedcontent/) interface. Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
+Create links and image elements in a tagged PDF using Aspose.PDF for Python via .NET.
+
+Following code snippet shows how to set structure elements in paragraph with text of Tagged PDF Document:
 
 ```python
 
     import aspose.pdf as ap
+    import sys
+    from os import path
 
+    sys.path.append(path.join(path.dirname(__file__), '..'))
+
+    from config import initialize_data_dir, set_license
+
+    def set_elements(imagefile, outfile):
     # Create PDF document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -363,7 +460,8 @@ In order to set link structure elements in a Tagged PDF Document, Aspose.PDF off
         paragraph_element_4.append_child(link_element_4, True)
         link_element_4.hyperlink = ap.WebHyperlink("http://google.com")
         link_element_4.set_text(
-            "The multiline link: Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google")
+            "The multiline link: Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google"
+        )
         link_element_4.alternate_descriptions = "Link to Google (multiline)"
 
         paragraph_element_5 = tagged_content.create_paragraph_element()
@@ -372,22 +470,23 @@ In order to set link structure elements in a Tagged PDF Document, Aspose.PDF off
         paragraph_element_5.append_child(link_element_5, True)
         link_element_5.hyperlink = ap.WebHyperlink("http://google.com")
         figure_element_5 = tagged_content.create_figure_element()
-        figure_element_5.set_image(path_imagefile, 1200)
+        figure_element_5.set_image(imagefile, 1200)
         figure_element_5.alternative_text = "Google icon"
-        link_layout_attributes = link_element_5.attributes.get_attributes(ap.logicalstructure.AttributeOwnerStandard.LAYOUT)
-        placement_attribute = ap.logicalstructure.StructureAttribute(ap.logicalstructure.AttributeKey.PLACEMENT)
-        placement_attribute.set_name_value(ap.logicalstructure.AttributeName.PLACEMENT_BLOCK)
+        link_layout_attributes = link_element_5.attributes.get_attributes(
+            ap.logicalstructure.AttributeOwnerStandard.LAYOUT
+        )
+        placement_attribute = ap.logicalstructure.StructureAttribute(
+            ap.logicalstructure.AttributeKey.PLACEMENT
+        )
+        placement_attribute.set_name_value(
+            ap.logicalstructure.AttributeName.PLACEMENT_BLOCK
+        )
         link_layout_attributes.set_attribute(placement_attribute)
         link_element_5.append_child(figure_element_5, True)
         link_element_5.alternate_descriptions = "Link to Google"
 
         # Save Tagged PDF Document
-        document.save(path_outfile)
-
-    # Check PDF/UA compliance
-    with ap.Document(path_outfile) as document:
-        is_pdf_ua_compliance = document.validate(path_logfile, ap.PdfFormat.PDF_UA_1)
-        print(f"PDF/UA compliance: {is_pdf_ua_compliance}")
+        document.save(outfile)
 ```
 
 ## Setting Link Structure Element
@@ -399,7 +498,14 @@ Following code snippet shows how to add link structure element into Tagged PDF D
 ```python
 
     import aspose.pdf as ap
+    import sys
+    from os import path
 
+    sys.path.append(path.join(path.dirname(__file__), '..'))
+
+    from config import initialize_data_dir, set_license
+
+    def add_link_element(outfile):
     # Create PDF document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -458,22 +564,24 @@ Following code snippet shows how to add link structure element into Tagged PDF D
         paragraph_element_4.set_text(".")
 
         # Save Tagged PDF Document
-        document.save(path_outfile)
-
-    # Check PDF/UA compliance
-    with ap.Document(path_outfile) as document:
-        is_pdf_ua_compliance = document.validate(path_logfile, ap.PdfFormat.PDF_UA_1)
-        print(f"PDF/UA compliance: {is_pdf_ua_compliance}")
+        document.save(outfile)
 ```
 
 ## Setting Note Structure Element
 
-Aspose.PDF for Python via .NET API also allows you to add [NoteElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/noteelement/) in a tagged PDF document. Following code snippet shows how to add note element in Tagged PDF Document:
+Aspose.PDF for Python via .NET API also allows you to add [note_element](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/noteelement/) in a tagged PDF document. Following code snippet shows how to add note element in Tagged PDF Document:
 
 ```python
 
     import aspose.pdf as ap
+    import sys
+    from os import path
 
+    sys.path.append(path.join(path.dirname(__file__), '..'))
+
+    from config import initialize_data_dir, set_license
+
+    def set_note_element(outfile):
     # Create PDF Document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -509,21 +617,30 @@ Aspose.PDF for Python via .NET API also allows you to add [NoteElement](https://
         # note_element_3.clear_id()
 
         # Save Tagged PDF Document
-        document.save(path_outfile)
-
-    # Check PDF/UA compliance
-    with ap.Document(path_outfile) as document:
-        is_pdf_ua_compliance = document.validate(path_logfile, ap.PdfFormat.PDF_UA_1)
-        print(f"PDF/UA compliance: {is_pdf_ua_compliance}")
+        document.save(outfile)
 ```
 
 ## Setting Language and Title
 
 Aspose.PDF for Python via .NET API also allows you to set language and title for a document according to specification PDF/UA. The language can be set up as for whole document as for its separate structural elements. Following code snippet shows how to et language and title in Tagged PDF Document:
 
+1. Create a new tagged PDF document.
+1. Set document title and language.
+1. Create a header element.
+1. Add paragraphs with specific languages.
+1. Save the tagged PDF.
+
 ```python
 
     import aspose.pdf as ap
+    import sys
+    from os import path
+
+    sys.path.append(path.join(path.dirname(__file__), '..'))
+
+    from config import initialize_data_dir, set_license
+
+    def set_language_and_title(outfile):
 
     # Create PDF Document
     with ap.Document() as document:
@@ -564,5 +681,5 @@ Aspose.PDF for Python via .NET API also allows you to set language and title for
         tagged_content.root_element.append_child(paragraph_element_sp, True)
 
         # Save Tagged PDF Document
-        document.save(path_outfile)
+        document.save(outfile)
 ```
