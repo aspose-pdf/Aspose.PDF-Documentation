@@ -19,14 +19,10 @@ In order to get content of PDF Document with Tagged Text, Aspose.PDF offers [tag
 
 Create an advanced, fully tagged PDF document with a structured and hierarchical Table of Contents (TOC):
 
-1. Create the document and enable tagged content.
-1. Add and configure the TOC page.
-1. Create the /TOC structure element.
-1. Link the TOC page title to a header element.
-1. Add Main content page and first header.
-1. Create a TOC entry for the header.
-1. Create nested subsections with list structure.
-1. Add a second Top-Level section.
+1. Create a new Document object.
+1. Access the tagged_content property.
+1. Set the document title using 'set_title()'.
+1. Set the document language using 'set_language()'.
 1. Save the document.
 
 ```python
