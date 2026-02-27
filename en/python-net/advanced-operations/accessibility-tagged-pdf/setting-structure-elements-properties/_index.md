@@ -65,7 +65,7 @@ Following code snippet shows how to set structure elements properties of a Tagge
 
 ## Setting Text Structure Elements
 
-In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers [paragraph_elementt](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/paragraphelement/) class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
+In order to set text structure elements of a Tagged PDF Document, Aspose.PDF offers [ParagraphElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/paragraphelement/) class. Following code snippet shows how to set text structure elements of a Tagged PDF Document:
 
 ```python
 
