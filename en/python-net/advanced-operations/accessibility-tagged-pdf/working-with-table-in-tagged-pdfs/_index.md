@@ -24,7 +24,7 @@ The following code snippet shows, how to create a table in the Tagged PDF docume
 1. Create table body rows with cells.
 1. Create table footer row.
 1. Set table summary attribute.
-1. Save the Ttgged PDF.
+1. Save the Tagged PDF.
 
 ```python
 
