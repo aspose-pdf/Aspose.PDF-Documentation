@@ -15,7 +15,7 @@ Creating a Tagged PDF means adding (or creating) certain elements to the documen
 
 ## Creating Tagged PDF (Simple Scenario)
 
-In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure elements using the [tagged_contentt](https://reference.aspose.com/pdf/python-net/aspose.pdf.tagged/itaggedcontent/) interface. This example creates a Tagged PDF document — a PDF with semantic structure, making it more accessible and compliant with standards like PDF/UA.
+In order to create structure elements in a Tagged PDF Document, Aspose.PDF offers methods to create structure elements using the [ITaggedContent](https://reference.aspose.com/pdf/python-net/aspose.pdf.tagged/itaggedcontent/) interface. This example creates a Tagged PDF document — a PDF with semantic structure, making it more accessible and compliant with standards like PDF/UA.
 Following code snippet shows how to create Tagged PDF which contains 2 elements: header and paragraph.
 
 ```python
