@@ -28,13 +28,8 @@ The following code snippet shows, how to create a table in the Tagged PDF docume
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     # region Working with Table in Tagged PDFs
     def create_table(outfile):
@@ -152,13 +147,8 @@ The following code snippet shows how to style a table in Tagged PDF document:
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def style_table(outfile):
 
@@ -253,13 +243,8 @@ The following code snippet shows how to style a table row in the Tagged PDF docu
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def style_table_row(outfile):
     # Create PDF document
@@ -339,13 +324,8 @@ The following code snippet shows how to style a table cell in the Tagged PDF doc
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def style_table_cell(outfile):
     # Create PDF document
@@ -440,13 +420,8 @@ The following code snippet shows how to adjust table position in the Tagged PDF 
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def adjust_table_position(outfile):
     # Create PDF document

@@ -23,14 +23,8 @@ Following code snippet shows how to set structure elements properties of a Tagge
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
-
 
     # region Setting Structure Elements Properties
     def set_properties(outfile):
@@ -69,13 +63,8 @@ In order to set text structure elements of a Tagged PDF Document, Aspose.PDF off
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def set_text_elements(outfile):
     # Create PDF Document
@@ -117,13 +106,8 @@ Following code snippet shows how to set text block structure elements of a Tagge
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def set_text_block_elements(outfile):
         # Create PDF Document
@@ -181,13 +165,8 @@ Following code snippet shows how to set inline structure elements of a Tagged PD
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def set_inline_elements(outfile):
     # Create PDF Document
@@ -326,13 +305,8 @@ Following code snippet shows how to set custom tag name:
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def set_tag_name(outfile):
     # Create PDF Document
@@ -402,13 +376,8 @@ Following code snippet shows how to set structure elements in paragraph with tex
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def set_elements(imagefile, outfile):
     # Create PDF document
@@ -497,13 +466,8 @@ Following code snippet shows how to add link structure element into Tagged PDF D
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def add_link_element(outfile):
     # Create PDF document
@@ -573,13 +537,8 @@ Aspose.PDF for Python via .NET API also allows you to add [note_element](https:/
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def set_note_element(outfile):
     # Create PDF Document
@@ -632,13 +591,8 @@ Aspose.PDF for Python via .NET API also allows you to set language and title for
 
 ```python
 
+    import os
     import aspose.pdf as ap
-    import sys
-    from os import path
-
-    sys.path.append(path.join(path.dirname(__file__), '..'))
-
-    from config import initialize_data_dir, set_license
 
     def set_language_and_title(outfile):
 
