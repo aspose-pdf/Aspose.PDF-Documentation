@@ -64,6 +64,7 @@ Following code snippet shows how to create Tagged PDF which contains 2 elements:
     import aspose.pdf as ap
 
     def create_tagged_pdf_document_adv(outfile):
+
         # Create PDF Document
         with ap.Document() as document:
             # Get Content for working with TaggedPdf
@@ -142,26 +143,26 @@ The example creates a PDF document with accessibility features by using a tagged
 
     def add_style(outfile):
 
-    # Create PDF Document
-    with ap.Document() as document:
-        # Get Content for work with TaggedPdf
-        tagged_content = document.tagged_content
+        # Create PDF Document
+        with ap.Document() as document:
+            # Get Content for work with TaggedPdf
+            tagged_content = document.tagged_content
 
-        # Set Title and Language for Document
-        tagged_content.set_title("Tagged Pdf Document")
-        tagged_content.set_language("en-US")
+            # Set Title and Language for Document
+            tagged_content.set_title("Tagged Pdf Document")
+            tagged_content.set_language("en-US")
 
-        paragraph_element = tagged_content.create_paragraph_element()
-        tagged_content.root_element.append_child(paragraph_element, True)
+            paragraph_element = tagged_content.create_paragraph_element()
+            tagged_content.root_element.append_child(paragraph_element, True)
 
-        paragraph_element.structure_text_state.font_size = 18.0
-        paragraph_element.structure_text_state.foreground_color = ap.Color.red
-        paragraph_element.structure_text_state.font_style = ap.text.FontStyles.ITALIC
+            paragraph_element.structure_text_state.font_size = 18.0
+            paragraph_element.structure_text_state.foreground_color = ap.Color.red
+            paragraph_element.structure_text_state.font_style = ap.text.FontStyles.ITALIC
 
-        paragraph_element.set_text("Red italic text.")
+            paragraph_element.set_text("Red italic text.")
 
-        # Save Tagged PDF Document
-        document.save(outfile)
+            # Save Tagged PDF Document
+            document.save(outfile)
 ```
 
 ## Illustrating Structure Elements
@@ -180,30 +181,31 @@ Tagged PDFs are essential for accessibility compliance and provide structured co
     import aspose.pdf as ap
 
     def illustrate_structure_elements(imagefile, outfile):
-    # Create PDF Document
-    with ap.Document() as document:
-        # Get Content for work with TaggedPdf
-        tagged_content = document.tagged_content
 
-        # Set Title and Language for Document
-        tagged_content.set_title("Tagged Pdf Document")
-        tagged_content.set_language("en-US")
-        figure1 = tagged_content.create_figure_element()
-        tagged_content.root_element.append_child(figure1, True)
-        figure1.alternative_text = "Figure One"
-        figure1.title = "Image 1"
-        figure1.set_tag("Fig1")
-        figure1.set_image(imagefile, 300)
-        # Adjust position
-        position_settings = ap.tagged.PositionSettings()
-        margin_info = ap.MarginInfo()
-        margin_info.left = 50
-        margin_info.top = 20
-        position_settings.margin = margin_info
-        figure1.adjust_position(position_settings)
+        # Create PDF Document
+        with ap.Document() as document:
+            # Get Content for work with TaggedPdf
+            tagged_content = document.tagged_content
 
-        # Save Tagged PDF Document
-        document.save(outfile)
+            # Set Title and Language for Document
+            tagged_content.set_title("Tagged Pdf Document")
+            tagged_content.set_language("en-US")
+            figure1 = tagged_content.create_figure_element()
+            tagged_content.root_element.append_child(figure1, True)
+            figure1.alternative_text = "Figure One"
+            figure1.title = "Image 1"
+            figure1.set_tag("Fig1")
+            figure1.set_image(imagefile, 300)
+            # Adjust position
+            position_settings = ap.tagged.PositionSettings()
+            margin_info = ap.MarginInfo()
+            margin_info.left = 50
+            margin_info.top = 20
+            position_settings.margin = margin_info
+            figure1.adjust_position(position_settings)
+
+            # Save Tagged PDF Document
+            document.save(outfile)
 ```
 
 ## Validate Tagged PDF
@@ -223,6 +225,7 @@ Aspose.PDF for Python via .NET provides the ability to validate a PDF/UA Tagged 
     import aspose.pdf as ap
 
     def validate_tagged_pdf(infile, logfile):
+
         # Open PDF document
         with ap.Document(infile) as document:
             is_valid = document.validate(logfile, ap.PdfFormat.PDF_UA_1)
@@ -239,6 +242,7 @@ The following code snippet shows how to adjust Text Structure position in the Ta
     import aspose.pdf as ap
 
     def adjust_position(outfile):
+
         # Create PDF Document
         with ap.Document() as document:
             # Get Content for work with TaggedPdf
@@ -295,6 +299,7 @@ By configuring PdfFormatConversionOptions and enabling AutoTaggingSettings, you 
     import aspose.pdf as ap
 
     def convert_to_pdf_ua_with_automatic_tagging(infile, outfile, logfile):
+
         # Create PDF Document
         with ap.Document(infile) as document:
             # Create conversion options
@@ -335,6 +340,7 @@ By configuring PdfFormatConversionOptions and enabling AutoTaggingSettings, you 
     import aspose.pdf as ap
 
     def create_pdf_with_tagged_form_field(outfile):
+
         # Create PDF document
         with ap.Document() as document:
             document.pages.add()
@@ -382,6 +388,7 @@ This example shows how to create a tagged PDF document with a structured Table o
     import aspose.pdf as ap
 
     def create_pdf_with_toc_page(outfile):
+
         # Create PDF document
         with ap.Document() as document:
             # Get tagged content for the PDF structure
@@ -434,6 +441,7 @@ Using Aspose.PDF for Python via .NET, you can create an advanced, fully tagged P
     import aspose.pdf as ap
 
     def create_pdf_with_toc_page_advanced(outfile):
+        
         # Create PDF document
         with ap.Document() as document:
             # Get tagged content for the PDF structure
