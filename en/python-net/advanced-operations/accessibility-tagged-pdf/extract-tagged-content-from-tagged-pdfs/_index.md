@@ -62,6 +62,7 @@ Following code snippet shows how to get the root structure of Tagged PDF Documen
 
     import os
     import aspose.pdf as ap
+    from aspose.pycore import cast
 
     def get_root_structure(outfile):
 
@@ -90,9 +91,9 @@ Following code snippet shows how to get the root structure of Tagged PDF Documen
 
 Tagged PDFs contain a logical structure tree that defines the semantic hierarchy of the document (headings, paragraphs, forms, lists, etc.). Accessing and modifying these structure elements allows you to:
 
- - Inspect metadata such as title, language, actual_text, and accessibility-related properties
- - Update properties for improved accessibility or localization
- - Programmatically adjust the logical document structure for PDF/UA compliance
+- Inspect metadata such as title, language, actual_text, and accessibility-related properties
+- Update properties for improved accessibility or localization
+- Programmatically adjust the logical document structure for PDF/UA compliance
 
  Following code snippet shows how to access child elements of a Tagged PDF Document:
 
