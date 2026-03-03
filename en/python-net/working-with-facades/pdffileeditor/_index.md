@@ -8,6 +8,9 @@ lastmod: "2026-01-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline:
+Abstract:    
 ---
 
 Working with PDF documents includes various functions. Managing the pages of a PDF file is an important part of this job. Aspose.Pdf.Facaded provide the `PdfFileEditor` class for this purpose.
@@ -16,3 +19,8 @@ PdfFileEditor class contains the methods which help manipulate individual pages;
 
 The features provided by this class can be divided into three main categories i.e. File Editing, PDF Imposition, and Splitting. We're going to discuss these sections in detail below:
 
+- [](/pdf/python-net/)
+- [](/pdf/python-net/)
+- [](/pdf/python-net/)
+- [](/pdf/python-net/)
+- [](/pdf/python-net/)
