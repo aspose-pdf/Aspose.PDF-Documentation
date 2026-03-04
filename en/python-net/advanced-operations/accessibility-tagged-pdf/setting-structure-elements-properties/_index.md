@@ -23,7 +23,6 @@ Following code snippet shows how to set structure elements properties of a Tagge
 
 ```python
 
-    import os
     import aspose.pdf as ap
 
     # region Setting Structure Elements Properties
@@ -64,7 +63,6 @@ In order to set text structure elements of a Tagged PDF Document, Aspose.PDF off
 
 ```python
 
-    import os
     import aspose.pdf as ap
 
     def set_text_elements(outfile):
@@ -108,7 +106,6 @@ Following code snippet shows how to set text block structure elements of a Tagge
 
 ```python
 
-    import os
     import aspose.pdf as ap
 
     def set_text_block_elements(outfile):
@@ -168,7 +165,6 @@ Following code snippet shows how to set inline structure elements of a Tagged PD
 
 ```python
 
-    import os
     import aspose.pdf as ap
 
     def set_inline_elements(outfile):
@@ -309,7 +305,6 @@ Following code snippet shows how to set custom tag name:
 
 ```python
 
-    import os
     import aspose.pdf as ap
 
     def set_tag_name(outfile):
@@ -381,7 +376,6 @@ Following code snippet shows how to set structure elements in paragraph with tex
 
 ```python
 
-    import os
     import aspose.pdf as ap
 
     def set_elements(imagefile, outfile):
@@ -472,7 +466,6 @@ Following code snippet shows how to add link structure element into Tagged PDF D
 
 ```python
 
-    import os
     import aspose.pdf as ap
 
     def add_link_element(outfile):
@@ -540,11 +533,10 @@ Following code snippet shows how to add link structure element into Tagged PDF D
 
 ## Setting Note Structure Element
 
-Aspose.PDF for Python via .NET API also allows you to add [note_element](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/noteelement/) in a tagged PDF document. Following code snippet shows how to add note element in Tagged PDF Document:
+Aspose.PDF for Python via .NET API also allows you to add [NoteElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/noteelement/) in a tagged PDF document. Following code snippet shows how to add note element in Tagged PDF Document:
 
 ```python
 
-    import os
     import aspose.pdf as ap
 
     def set_note_element(outfile):
@@ -587,7 +579,7 @@ Aspose.PDF for Python via .NET API also allows you to add [note_element](https:/
             document.save(outfile)
 ```
 
-## Setting Language and Title
+## How to set Language and Title
 
 Aspose.PDF for Python via .NET API also allows you to set language and title for a document according to specification PDF/UA. The language can be set up as for whole document as for its separate structural elements. Following code snippet shows how to et language and title in Tagged PDF Document:
 
@@ -599,7 +591,6 @@ Aspose.PDF for Python via .NET API also allows you to set language and title for
 
 ```python
 
-    import os
     import aspose.pdf as ap
 
     def set_language_and_title(outfile):
