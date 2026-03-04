@@ -540,7 +540,7 @@ Following code snippet shows how to add link structure element into Tagged PDF D
 
 ## Setting Note Structure Element
 
-Aspose.PDF for Python via .NET API also allows you to add [note_element](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/noteelement/) in a tagged PDF document. Following code snippet shows how to add note element in Tagged PDF Document:
+Aspose.PDF for Python via .NET API also allows you to add [NoteElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/noteelement/) in a tagged PDF document. Following code snippet shows how to add note element in Tagged PDF Document:
 
 ```python
 
