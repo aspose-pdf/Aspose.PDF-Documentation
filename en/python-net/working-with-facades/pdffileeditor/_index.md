@@ -19,8 +19,8 @@ PdfFileEditor class contains the methods which help manipulate individual pages;
 
 The features provided by this class can be divided into three main categories i.e. File Editing, PDF Imposition, and Splitting. We're going to discuss these sections in detail below:
 
-- [](/pdf/python-net/)
-- [](/pdf/python-net/)
-- [](/pdf/python-net/)
-- [](/pdf/python-net/)
-- [](/pdf/python-net/)
+- [Page Layout and Margins](/pdf/python-net/page-layout-and-margins/)
+- [Page Management](/pdf/python-net/page-managment/)
+- [Concatenate or Merge PDF Files](/pdf/python-net/page-merging/)
+- [Split PDF Documents](/pdf/python-net/splitting-pdf-documents/)
+- [Booklet and N-Up Layout](/pdf/python-net/booklet-and-nup-layout/)
