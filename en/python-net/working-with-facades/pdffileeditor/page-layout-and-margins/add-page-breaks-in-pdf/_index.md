@@ -3,7 +3,7 @@ title: Add Page Breaks in PDF
 type: docs
 weight: 20
 url: /python-net/add-page-breaks-in-pdf/
-description: 
+description: Insert page breaks into a PDF document using Aspose.PDF for Python.
 lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"
