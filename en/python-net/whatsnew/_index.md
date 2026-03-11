@@ -75,9 +75,6 @@ Detect and remove invisible text from a PDF document using Aspose.PDF for Python
 import aspose.pdf as ap
 
 def remove_invisible_text(infile, outfile):
-    pdf_doc = ap.Document(infile)
-    for page in pdf_doc.pages:
-        absorber = ap.text.TextFragmentAbsorber()
     with ap.Document(infile) as pdf_doc:
         for page in pdf_doc.pages:
             absorber = ap.text.TextFragmentAbsorber()
