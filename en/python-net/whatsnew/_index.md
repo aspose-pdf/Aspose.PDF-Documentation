@@ -12,6 +12,91 @@ lastmod: "2025-02-24"
 TechArticle: false 
 ---
 
+## What's new in Aspose.PDF 26.2
+
+Aspose.PDF 26.2 introduces support for RTF to PDF conversion. This feature allows developers to directly convert Rich Text Format (RTF) documents into PDF files.
+
+RTF is a widely supported, cross-platform document format originally developed by Microsoft. It is designed to enable document exchange between different word processing applications while preserving basic formatting such as fonts, colors, bold and italic text, as well as embedded images.
+
+```python
+
+import aspose.pdf as ap
+
+def convert_rtf_to_pdf(infile, outfile):
+    # Initialize RTF load options
+    options = ap.RtfLoadOptions()
+    # Open RTF document
+    with ap.Document(infile, options) as document:
+        # Save PDF document
+        document.save(outfile)
+```
+
+This code snippet shows how to insert a table after the existing content on a PDF page using Aspose.PDF for Python.
+
+The script opens an existing PDF document and calculates the bounding box of the current content on the first page. Using this information, it finds where the existing content ends and positions a new table below the last element, leaving a specified margin before the table starts.
+
+A table is then created and filled with multiple rows and columns using a loop. After setting up the table structure and content, the table is added to the page’s paragraph collection. Finally, the updated document is saved as a new PDF file.
+
+```python
+
+import aspose.pdf as ap
+
+def add_table_after_last_element(infile, outfile):
+    # Load source PDF document
+    with ap.Document(infile) as document:
+        # Initializes a new instance of the Table
+        table = ap.Table()
+        # Determine the existing content area on the page
+        content_area_lly = document.pages[1].calculate_content_b_box().lly
+        top_margin = 20
+        # Add the table after the existing content, with the 20pt margin before the table.
+        table.top = document.pages[1].rect.height - (content_area_lly - top_margin)
+        # Set the top margin for the new pages added.
+        document.page_info.margin.top = top_margin
+        # Create a loop to add 10 rows
+        for row_count in range(1, 11):
+            # Add row to table
+            row = table.rows.add()
+            # Add table cells
+            row.cells.add("Column (" + str(row_count) + ", 1)")
+            row.cells.add("Column (" + str(row_count) + ", 2)")
+            row.cells.add("Column (" + str(row_count) + ", 3)")
+
+        # Add table object to first page of input document
+        document.pages[1].paragraphs.add(table)
+        # Save updated document containing table object
+        document.save(outfile)
+```
+
+Detect and remove invisible text from a PDF document using Aspose.PDF for Python:
+
+```python
+
+import aspose.pdf as ap
+
+def remove_invisible_text(infile, outfile):
+    pdf_doc = ap.Document(infile)
+    for page in pdf_doc.pages:
+        absorber = ap.text.TextFragmentAbsorber()
+    with ap.Document(infile) as pdf_doc:
+        for page in pdf_doc.pages:
+            absorber = ap.text.TextFragmentAbsorber()
+            page.accept(absorber)
+            fragments_to_remove = [ x for x in absorber.text_fragments
+                if (
+                    x.text_state.invisible
+                    or x.text_state.rendering_mode == ap.text.TextRenderingMode.INVISIBLE
+                    or (
+                        x.text_state.foreground_color is not None
+                        and x.text_state.foreground_color.a == 0
+                    )
+                )]
+            for fragment in fragments_to_remove:
+                absorber.text_fragments.remove(fragment) # Now properly removes text from document
+        pdf_doc.save(outfile)
+```
+
+
 ## What's new in Aspose.PDF 26.1
 
 In **Aspose.PDF for Python via .NET** 26.1, we have added:
