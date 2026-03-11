@@ -77,19 +77,22 @@ import aspose.pdf as ap
 def remove_invisible_text(infile, outfile):
     pdf_doc = ap.Document(infile)
     for page in pdf_doc.pages:
-       absorber = ap.text.TextFragmentAbsorber()
-       page.accept(absorber)
-       fragments_to_remove = [ x for x in absorber.text_fragments
-        if (
-            x.text_state.invisible
-            or x.text_state.rendering_mode == ap.text.TextRenderingMode.INVISIBLE
-            or (
-                x.text_state.foreground_color is not None
-                and x.text_state.foreground_color.a == 0
+        absorber = ap.text.TextFragmentAbsorber()
+        page.accept(absorber)
+        fragments_to_remove = [
+            x
+            for x in absorber.text_fragments
+            if (
+                x.text_state.invisible
+                or x.text_state.rendering_mode == ap.text.TextRenderingMode.INVISIBLE
+                or (
+                    x.text_state.foreground_color is not None
+                    and x.text_state.foreground_color.a == 0
+                )
             )
-        )]
-       for fragment in fragments_to_remove:
-           absorber.text_fragments.remove(fragment) # Now properly removes text from document
+        ]
+        for fragment in fragments_to_remove:
+            absorber.text_fragments.remove(fragment) # Now properly removes text from document
     pdf_doc.save(outfile)
 ```
 
