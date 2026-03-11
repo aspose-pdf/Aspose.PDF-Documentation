@@ -1,7 +1,7 @@
 ---
 title: PdfFileInfo Class
 type: docs
-weight: 110
+weight: 30
 url: /python-net/pdffileinfo-class/
 description: Discover how to manage PDF file information like properties and metadata using the PDFFileInfo class in Python.
 lastmod: "2021-06-05"
@@ -26,25 +26,3 @@ sitemap:
 │  ├─ Save Updated Metadata
 
 │  └─ Save Metadata with XMP
-
-
-├─ Document Properties
-
-│  ├─ Get PDF Version
-
-│  └─ Get Document Privileges
-
-
-
-├─ Page Information
-
-│  ├─ Get Page Width
-
-│  ├─ Get Page Height
-
-│  ├─ Get Page Rotation
-
-│  ├─ Get Page X Offset
-
-│  └─ Get Page Y Offset
- 
