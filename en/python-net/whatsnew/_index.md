@@ -55,12 +55,12 @@ def add_table_after_last_element(infile, outfile):
         document.page_info.margin.top = top_margin
         # Create a loop to add 10 rows
         for row_count in range(1, 11):
-           # Add row to table
-           row = table.rows.add()
-           # Add table cells
-           row.cells.add("Column (" + str(row_count) + ", 1)")
-           row.cells.add("Column (" + str(row_count) + ", 2)")
-           row.cells.add("Column (" + str(row_count) + ", 3)")
+            # Add row to table
+            row = table.rows.add()
+            # Add table cells
+            row.cells.add("Column (" + str(row_count) + ", 1)")
+            row.cells.add("Column (" + str(row_count) + ", 2)")
+            row.cells.add("Column (" + str(row_count) + ", 3)")
 
         # Add table object to first page of input document
         document.pages[1].paragraphs.add(table)
