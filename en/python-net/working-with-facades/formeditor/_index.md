@@ -16,5 +16,6 @@ Abstract: The FormEditor class in Aspose.PDF for Python provides comprehensive t
 - [Adding Scripts and Submit Actions](/pdf/python-net/adding-scripts-and-submit-actions/)
 - [Customizing Field Appearance](/pdf/python-net/customizing-field-appearance/)
 - [Modifying Form Fields](/pdf/python-net/modifying-form-fields/)
+- [](/pdf/python-net/creating-form-field)
 
 
