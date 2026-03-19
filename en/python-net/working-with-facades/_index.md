@@ -14,7 +14,7 @@ Aspose.PDF Facades is a set of classes that allows you to perform various operat
 
 In this section you will learn how to:
 
-- [Using PdfFileEditor](/pdf/python-net/pdffileeditor-class/) - tool, which allow to perform operartions with PDF file (split, merge, etc).
+- [Using PdfFileEditor](/pdf/python-net/pdffileeditor-class/) - a tool that allows you to perform operations on PDF files (split, merge, etc.).
 - [Using PdfFileMend](/pdf/python-net/pdffilemend-class/) -  tool for adding texts and images on the pages of existing PDF document.
 - [Using PdfContentEditor](/pdf/python-net/pdfcontenteditor-class/) - tool  to edit PDF file's content.
 - [Using PdfAnnotationEditor](/pdf/python-net/pdfannotationeditor-class/) - tool for work with PDF document annotations (comments).
