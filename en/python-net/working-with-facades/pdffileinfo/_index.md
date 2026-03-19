@@ -4,7 +4,7 @@ type: docs
 weight: 110
 url: /python-net/pdffileinfo-class/
 description: Discover how to manage PDF file information like properties and metadata using the PDFFileInfo class in Python.
-lastmod: "2021-06-05"
+lastmod: "2026-03-19"
 draft: false
 sitemap:
     changefreq: "weekly"

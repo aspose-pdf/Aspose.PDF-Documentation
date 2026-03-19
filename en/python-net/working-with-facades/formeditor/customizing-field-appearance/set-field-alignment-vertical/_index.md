@@ -43,7 +43,7 @@ Using the [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.fa
         # Create FormEditor object
         form_editor = pdf_facades.FormEditor(doc)
 
-        # Set field vertical alignment to top
+        # Attempt to set vertical alignment of the "First Name" field to bottom
         if form_editor.set_field_alignment_v(
             "First Name", pdf_facades.FormFieldFacade.ALIGN_BOTTOM
         ):

@@ -14,9 +14,9 @@ AlternativeHeadline: Get PDF Page Information Using Aspose.PDF for Python
 Abstract: The function extracts the width, height, rotation, and horizontal (X) and vertical (Y) offsets of a PDF page. These properties are returned in points and reflect the page’s physical size and content positioning within the PDF. The function prints the retrieved values, allowing developers to understand page layout and orientation for further PDF manipulation. 
 ---
 
-The 'get_page_information' is a utility function for developers who need to understand the structure and layout of PDF pages. Every PDF page may have different dimensions, rotation, and internal offsets, which can impact content placement or automation tasks.
+The 'get_page_information' utility function helps developers understand the structure and layout of PDF pages. Every PDF page may have different dimensions, rotation, and internal offsets, which can impact content placement or automation tasks.
 
-It feature retrieves key metadata and layout information for a specific page in a PDF file. Using the Aspose.PDF Facades API, it provides details such as page width, height, rotation, and X/Y offsets. This information is essential for tasks like page layout analysis, annotation placement, or automated PDF processing.
+It features retrieving key metadata and layout information for a specific page in a PDF file. The Aspose.PDF Facades API provides details such as page width, height, rotation, and X/Y offsets. This information is essential for tasks like page layout analysis, annotation placement, or automated PDF processing.
 
 1. Create a PDF facade object.
 1. Retrieve page dimensions and layout.

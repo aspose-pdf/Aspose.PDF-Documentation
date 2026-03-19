@@ -3,7 +3,7 @@ title: Remove Field
 type: docs
 weight: 60
 url: /python-net/remove-field/
-description: This example shows how to delete the 'Country' field from a PDF form using the r'emove_field' method of the 'FormEditor' class.
+description: This example shows how to delete the 'Country' field from a PDF form using the 'remove_field' method of the 'FormEditor' class.
 lastmod: "2026-03-05"
 sitemap:
     changefreq: "weekly"

@@ -53,7 +53,7 @@ The 'copy_inner_field' method signature looks like this:
 
 ```python
 
-copy_inner_field(original_field_name, new_field_name, page_number, x, y)
+    copy_inner_field(original_field_name, new_field_name, page_number, x, y)
 ```
 
 - 'original_field_name' – the field you want to duplicate.
@@ -67,7 +67,7 @@ If you pass a negative parameter, e.g.:
 
 ```python
 
-form_editor.copy_inner_field("First Name", "First Name Copy", -1, 200, 600)
+    form_editor.copy_inner_field("First Name", "First Name Copy", -1, 200, 600)
 ```
 
 The program will then reset to the previous parameters.

@@ -17,7 +17,6 @@ Abstract: Learn how to customize the appearance and behavior of PDF form fields 
 - [Set Field Alignment](/pdf/python-net/set-field-alignment/)
 - [Set Field Alignment Vertical](/pdf/python-net/set-field-alignment-vertical/)
 - [Set Field Appearance](/pdf/python-net/set-field-appearance/)
-- [Set Field Attribute](/pdf/python-net/set-field-attribute/)
 - [Set Field Comb Number](/pdf/python-net/set-field-comb-number/)
 - [Set Field Limit](/pdf/python-net/set-field-limit/)
 - [Get Field Appearance](/pdf/python-net/get-field-appearance/)

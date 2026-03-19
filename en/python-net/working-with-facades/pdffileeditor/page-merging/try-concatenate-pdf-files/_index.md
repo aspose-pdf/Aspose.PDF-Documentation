@@ -34,4 +34,4 @@ Merging PDF files can sometimes fail due to corrupted files, incompatible format
         pdf_editor = pdf_facades.PdfFileEditor()
         if not pdf_editor.try_concatenate(files_to_merge, output_file):
             print("Concatenation failed for the provided files.")
-```        
+```

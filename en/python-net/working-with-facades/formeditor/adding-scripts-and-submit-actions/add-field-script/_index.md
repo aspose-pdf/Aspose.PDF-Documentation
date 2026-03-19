@@ -16,7 +16,7 @@ Abstract: This article explains how to open a PDF form, assign JavaScript code t
 ## Add JavaScript Actions to PDF Form Fields Using Python
 
 This code snippet enables you to add JavaScript actions to an existing PDF form field using the Aspose.PDF for Python library. It opens a PDF document, assigns a JavaScript action to a form field, and adds a script that runs when the field is triggered. Finally, the updated PDF is saved as a new file.
-Using the [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) class from the [aspose.pdf.facades]([aspose.pdf.facades](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/)) module, you can programmatically attach JavaScript to existing form fields:
+Using the [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/formeditor/) class from the [aspose.pdf.facades](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/) module, you can programmatically attach JavaScript to existing form fields:
 
 1. Open an existing PDF form.
 1. Set a JavaScript action for a specific field.
