@@ -42,9 +42,6 @@ Using the [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.fa
         # Set license
         set_license()
 
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor()
-
         # Open input PDF file
         form_editor.bind_pdf(input_file_name)
 

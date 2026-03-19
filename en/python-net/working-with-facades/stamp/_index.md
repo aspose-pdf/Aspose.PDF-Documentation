@@ -10,5 +10,3 @@ sitemap:
     priority: 0.7
 ---
 
-- [Adding multi line watermark to existing PDF](/pdf/python-net/adding-multi-line-watermark-to-existing-pdf/)
-- [Rotating stamp about the center point](/pdf/python-net/rotating-stamp-about-the-center-point/)

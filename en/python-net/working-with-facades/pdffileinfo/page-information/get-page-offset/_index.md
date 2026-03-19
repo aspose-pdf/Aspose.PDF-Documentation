@@ -3,7 +3,7 @@ title: Get Page Offset
 type: docs
 weight: 20
 url: /python-net/get-page-offset/
-description: This function retrieves the X and Y offsets (origin positions) of each page in a PDF file using the Aspose.PDF Facades API. Offsets are returned in inches for easier interpretation and are useful for positioning annotations, images, or text accurately on PDF pages.
+description: This example demonstrates how to use PdfFileInfo to get the X and Y offsets of a specific page and convert them into inches for precise layout and positioning analysis.
 lastmod: "2026-03-05"
 draft: false
 sitemap:

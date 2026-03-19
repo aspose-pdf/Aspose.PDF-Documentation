@@ -45,6 +45,6 @@ Filling form fields using a name–value collection allows developers to create 
         for field_name, value in fields.items():
             pdf_form.fill_field(field_name, value)
 
-        # Save updated PDF
-        pdf_form.save()  
+        # Save updated PDF using outfile
+        pdf_form.save(outfile)
 ```

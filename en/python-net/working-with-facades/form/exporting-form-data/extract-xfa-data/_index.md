@@ -36,6 +36,6 @@ XFA (XML Forms Architecture) forms differ from traditional AcroForms because the
         form.bind_pdf(infile)
         
         with FileIO(outfile, 'w') as stream:
-            # Export form field values to JSON
+            # Export embedded XFA XML data to the output stream
             form.extract_xfa_data(stream)
 ```

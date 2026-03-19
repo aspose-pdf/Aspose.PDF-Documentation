@@ -9,5 +9,3 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
-- [Working with PDF printing - Facades](/pdf/python-net/working-with-pdf-printing-facades/)
