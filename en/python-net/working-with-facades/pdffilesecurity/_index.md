@@ -17,6 +17,3 @@ Abstract: This article provides a comprehensive overview of PDF security operati
 - [Decrypt PDF File](/pdf/python-net/decrypt-pdf-file/)
 - [Change Password of PDF File](/pdf/python-net/change-password/)
 - [Set Privileges on an Existing PDF File](/pdf/python-net/set-privileges/)
-
-
-
