@@ -15,4 +15,4 @@ sitemap:
 - [Filling Form Fields](/pdf/python-net/filling-form-fields/)
 - [Button Fields and Images](/pdf/python-net/button-fields-and-images/)
 - [Managing Form Fields](/pdf/python-net/managing-form-fields/)
-- [Reading Form Values](/pdf/python-net/reading-form-values//)
+- [Reading Form Values](/pdf/python-net/reading-form-values/)
