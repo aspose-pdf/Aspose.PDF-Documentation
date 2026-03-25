@@ -7,10 +7,7 @@ description: Explore how to edit and manipulate PDF files using the PDFFileEdito
 lastmod: "2026-01-05"
 sitemap:
     changefreq: "weekly"
-    priority: 0.7
-TechArticle: true 
-AlternativeHeadline:
-Abstract:    
+    priority: 0.7 
 ---
 
 Working with PDF documents includes various functions. Managing the pages of a PDF file is an important part of this job. 'aspose.pdf.facades' provides the `PdfFileEditor` class for this purpose.
