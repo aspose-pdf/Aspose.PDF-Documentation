@@ -1,9 +1,9 @@
 ---
 title: Add Text Annotations
 type: docs
-weight: 10
+weight: 50
 url: /python-net/add-text-annotation/
-description: 
+description: Add text annotations to a PDF document using the PdfContentEditor class in Aspose.PDF for Python via .NET.
 lastmod: "2026-03-20"
 sitemap:
     changefreq: "weekly"
