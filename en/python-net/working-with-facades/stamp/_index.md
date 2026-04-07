@@ -13,18 +13,10 @@ sitemap:
 
 ## Add PDF Page as Stamp 
 
-
-
 ## Add Image Stamp 
-
-
 
 ## Add Text Stamp 
 
-
-
 ## Position Stamp on Page 
-
-
 
 ## Resize Image Stamp
