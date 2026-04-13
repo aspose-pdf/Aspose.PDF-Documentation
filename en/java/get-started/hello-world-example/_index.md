@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World using Aspose.PDF for Java.
-lastmod: "2025-02-17"
+lastmod: "2026-04-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -23,9 +23,9 @@ Aspose.PDF for Java API empowers Java application developers to create, read, ed
 
 Below code snippet follows these steps:
 
-1. Instantiate a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) object
-1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) to document object
-1. Create a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) object
+1. Instantiate a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) object
+1. Add a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) to document object
+1. Create a [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment) object
 1. Add TextFragment to [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) collection of the page
 1. Save the resultant PDF document
 
