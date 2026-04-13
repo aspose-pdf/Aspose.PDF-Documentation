@@ -141,6 +141,12 @@ Use them when relevant:
 - `python-style-reviewer` for Python formatting in `.py` files and fenced Python code blocks in Markdown
 - `python-formatter-bootstrap` when a required Python formatter is missing from the environment
 
+For root section pages:
+
+- do not default to `frontmatter-seo-enricher` just because the page is SEO-related
+- treat root `_index.md` pages as section landing pages first, and prioritize title quality, description quality, intro copy, internal link clarity, and section-level search intent
+- add structured SEO fields on root pages only when the existing local section pattern clearly calls for them
+
 ## Preferred Agent Behavior
 
 Before editing:
@@ -171,4 +177,3 @@ After editing:
 - `.github/workflows/pdf-prod.yml`
 - `.github/workflows/pdf-stage.yml`
 - `en/_index.md`
-
