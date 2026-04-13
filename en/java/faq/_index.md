@@ -1,5 +1,5 @@
 ---
-title: FAQ 
+title: FAQ
 linktitle: FAQ
 type: docs
 weight: 120
@@ -10,5 +10,41 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+## What formats does Aspose.PDF for Java support?
 
-<div class="schema-faq-code" itemscope="" itemtype="https://schema.org/FAQPage"><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">What formats does Aspose.PDF for Java support?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Aspose.PDF for Java supports popular file formats such as PDF, TXT, HTML, PCL, XML, XPS, EPUB, TEX, and image formats. For more details, please visit the page <a href="/pdf/java/supported-file-formats/">Supported File Formats</a></p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How to convert files to and from PDFs?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Converting PDFs document with Aspose.PDF for Java is very easy. Our company provides many features for converting various file formats into PDF documents and converting PDF files into various output formats.You can see the full list in the <a href="/pdf/java/converting/">Converting</a> section.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How many files can I combine to PDF at once?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">You can merge an unlimited number of files into PDF at once.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How to Insert Image into PDF?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">We have two solutions to this problem for you. First and simple way: you can use AddImage method of the PdfFileMend class. <a href="/pdf/java/add-image-to-existing-pdf-file/#add-image-in-an-existing-pdf-file-facades/">Check this</a> And the second option is adding Image to Existing PDF File with the Page method <a href="/pdf/java/add-image-to-existing-pdf-file/">link</a> and you will see a code snippet that shows how to add an image to a PDF file.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How to edit the text in PDF?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Aspose.PDF for Java offers the ability to add line indent, add text border, add underline text, apply gradient shading to the text, and other useful features. You can check all of them <a href="/pdf/java/text-formatting-inside-pdf/">here</a>.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">Add page numbers to PDF file</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">You can use the PageNumber Stamp class to add a page number stamp in a PDF file. PageNumber Stamp class provides properties necessary to create a page number based stamp like format, margins, alignments, starting number, etc. All details you can see <a href="/pdf/java/add-page-number/">here</a>.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">How to Create a Background for PDF Documents?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Background images can be used to add a watermark, or other subtle design, to documents. In Aspose.PDF for Java, each PDF document is a collection of pages and each page contains a collection of artifacts. The BackgroundArtifact class can be used to add a background image to a page object. Follow the <a href="/pdf/java/add-backgrounds/">link</a> to show an example of code for adding a background.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">PDF File Security: How to Secure PDF File or a Document?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">Aspose.PDF for Java allows you to set privileges on an existing PDF file. You can use the Encrypt method of the Document object to encrypt a PDF file. Also, you can decrypt PDF files using the owner's password or change the password of a PDF file. For more details visit the documentation <a href="/pdf/java/digitally-sign-pdf-file/">page</a>.</p></div></div><div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question"><h3 itemprop="name" class="faq-q">Where are your Java Examples?</h3><div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" class="faq-a">You can check all of them on <a href="https://github.com/aspose-pdf">GitHub</a>.</p></div></div></div>
+Aspose.PDF for Java supports popular file formats such as PDF, TXT, HTML, PCL, XML, XPS, EPUB, TEX, and image formats. For more details, see [Supported File Formats](/pdf/java/supported-file-formats/).
+
+## How do I convert files to and from PDFs?
+
+Converting PDF documents with Aspose.PDF for Java is straightforward. The library includes many features for converting various file formats into PDF documents and converting PDF files into different output formats. See the [Converting](/pdf/java/converting/) section for the full list.
+
+## How many files can I combine into PDF at once?
+
+You can merge an unlimited number of files into PDF at once.
+
+## How do I insert an image into PDF?
+
+There are two common approaches:
+
+- Use the `AddImage` method of the `PdfFileMend` class. See [Add image in an existing PDF file facades](/pdf/java/add-image-to-existing-pdf-file/#add-image-in-an-existing-pdf-file-facades/).
+- Add an image to an existing PDF file with the `Page` method. See [Add image to existing PDF file](/pdf/java/add-image-to-existing-pdf-file/).
+
+## How do I edit text in PDF?
+
+Aspose.PDF for Java supports features such as line indents, text borders, underlines, gradient shading, and more. See [Text Formatting inside PDF](/pdf/java/text-formatting-inside-pdf/).
+
+## How do I add page numbers to a PDF file?
+
+You can use the `PageNumberStamp` class to add a page number stamp to a PDF file. It provides properties for format, margins, alignment, starting number, and more. See [Add page number](/pdf/java/add-page-number/).
+
+## How do I create a background for PDF documents?
+
+Background images can be used to add a watermark or another subtle design to documents. In Aspose.PDF for Java, each PDF document is a collection of pages, and each page contains a collection of artifacts. The `BackgroundArtifact` class can be used to add a background image to a page object. See [Add backgrounds](/pdf/java/add-backgrounds/) for an example.
+
+## How do I secure a PDF file or document?
+
+Aspose.PDF for Java lets you set privileges on an existing PDF file. You can use the `Encrypt` method of the `Document` object to encrypt a PDF file. You can also decrypt PDF files using the owner's password or change the password of a PDF file. For more details, see [Digitally sign PDF file](/pdf/java/digitally-sign-pdf-file/).
+
+## Where are the Java examples?
+
+You can find them on [GitHub](https://github.com/aspose-pdf).
