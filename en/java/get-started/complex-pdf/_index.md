@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/complex-pdf-example/
 description: Aspose.PDF for Java allows you to create more complex documents that contain images, text fragments, and tables in one document.
-lastmod: "2025-02-17"
+lastmod: "2026-04-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -45,13 +45,28 @@ package com.aspose.pdf.examples;
  * Complex Example
  */
 
-import java.io.FileNotFoundException;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
 import java.time.LocalTime;
 
-import com.aspose.pdf.*;
+import com.aspose.pdf.BorderInfo;
+import com.aspose.pdf.BorderSide;
+import com.aspose.pdf.Cell;
+import com.aspose.pdf.Color;
+import com.aspose.pdf.Document;
+import com.aspose.pdf.FontRepository;
+import com.aspose.pdf.HorizontalAlignment;
+import com.aspose.pdf.Matrix;
+import com.aspose.pdf.Page;
+import com.aspose.pdf.Position;
+import com.aspose.pdf.Rectangle;
+import com.aspose.pdf.Row;
+import com.aspose.pdf.Table;
+import com.aspose.pdf.TextFragment;
+import com.aspose.pdf.XImage;
 import com.aspose.pdf.operators.ConcatenateMatrix;
 import com.aspose.pdf.operators.Do;
 import com.aspose.pdf.operators.GRestore;
@@ -59,48 +74,54 @@ import com.aspose.pdf.operators.GSave;
 
 public final class ComplexExample {
 
+    private static final Path DATA_DIR = Paths.get("/home/admin1/pdf-examples/");
+
     private ComplexExample() {
     }
 
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/");
-
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         // Initialize document object
         Document document = new Document();
+
         // Add page
         Page page = document.getPages().add();
 
         // -------------------------------------------------------------
         // Add image
-        Path imageFileName = Paths.get(_dataDir.toString(),"logo.png");
-        java.io.FileInputStream imageStream = new java.io.FileInputStream(new java.io.File(imageFileName.toString()));
-        // Add image to Images collection of Page Resources
-        page.getResources().getImages().add(imageStream);
+        Path imageFilePath = DATA_DIR.resolve("logo.png");
+        try (FileInputStream imageStream = new FileInputStream(imageFilePath.toFile())) {
+            // Add image to Images collection of Page Resources
+            page.getResources().getImages().add(imageStream);
+        }
 
         // Using GSave operator: this operator saves current graphics state
         page.getContents().add(new GSave());
-        Rectangle _logoPlaceHolder = new Rectangle(20, 730, 120, 830);
+        Rectangle logoPlaceholder = new Rectangle(20, 730, 120, 830);
 
         // Create Matrix object
-        Matrix matrix = new Matrix(new double[] {
-            _logoPlaceHolder.getURX() - _logoPlaceHolder.getLLX(), 0, 0,
-            _logoPlaceHolder.getURY() - _logoPlaceHolder.getLLY(),
-            _logoPlaceHolder.getLLX(), _logoPlaceHolder.getLLY() });
+        Matrix matrix = new Matrix(
+                new double[] {
+                        logoPlaceholder.getURX() - logoPlaceholder.getLLX(), 0, 0,
+                        logoPlaceholder.getURY() - logoPlaceholder.getLLY(),
+                        logoPlaceholder.getLLX(), logoPlaceholder.getLLY()
+                });
 
         // Using ConcatenateMatrix (concatenate matrix) operator: defines how image must be placed
         page.getContents().add(new ConcatenateMatrix(matrix));
-        XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
+        XImage xImage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
+
         // Using Do operator: this operator draws image
-        page.getContents().add(new Do(ximage.getName()));
+        page.getContents().add(new Do(xImage.getName()));
+
         // Using GRestore operator: this operator restores graphics state
         page.getContents().add(new GRestore());
 
         // -------------------------------------------------------------
-        // Add Header
+        // Add header
         TextFragment header = new TextFragment("New ferry routes in Fall 2020");
         header.getTextState().setFont(FontRepository.findFont("Arial"));
         header.getTextState().setFontSize(24);
-        header.setHorizontalAlignment (HorizontalAlignment.Center);
+        header.setHorizontalAlignment(HorizontalAlignment.Center);
         header.setPosition(new Position(130, 720));
         page.getParagraphs().add(header);
 
@@ -112,10 +133,9 @@ public final class ComplexExample {
         description.setHorizontalAlignment(HorizontalAlignment.Left);
         page.getParagraphs().add(description);
 
-
         // Add table
         Table table = new Table();
-        table.setColumnWidths("200");
+        table.setColumnWidths("200 200");
         table.setBorder(new BorderInfo(BorderSide.Box, 1f, Color.getDarkSlateGray()));
         table.setDefaultCellBorder(new BorderInfo(BorderSide.Box, 0.5f, Color.getBlack()));
         table.getMargin().setBottom(10);
@@ -125,26 +145,24 @@ public final class ComplexExample {
         headerRow.getCells().add("Departs City");
         headerRow.getCells().add("Departs Island");
 
-        for (Cell headerRowCell : headerRow.getCells())
-        {
+        for (Cell headerRowCell : headerRow.getCells()) {
             headerRowCell.setBackgroundColor(Color.getGray());
             headerRowCell.getDefaultCellTextState().setForegroundColor(Color.getWhiteSmoke());
         }
 
-        LocalTime time = LocalTime.of(6,0);
+        LocalTime time = LocalTime.of(6, 0);
         Duration incTime = Duration.ofMinutes(30);
 
-        for (int i = 0; i < 10; i++)
-        {
+        for (int i = 0; i < 10; i++) {
             Row dataRow = table.getRows().add();
             dataRow.getCells().add(time.toString());
-            time=time.plus(incTime);
+            time = time.plus(incTime);
             dataRow.getCells().add(time.toString());
         }
 
         page.getParagraphs().add(table);
 
-        document.save(Paths.get(_dataDir.toString(), "Complex.pdf").toString());
+        document.save(DATA_DIR.resolve("Complex.pdf").toString());
     }
 
 }
