@@ -24,22 +24,22 @@ By using Aspose.PDF Facades, this function extracts these offsets in points and 
 1. Print or store the offsets.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def get_page_offsets(infile):    
-        # Get and display PDF information
-        pdf_info = pdf_facades.PdfFileInfo(infile)
-        page_x_offset = pdf_info.get_page_x_offset(1)/72.0
-        page_y_offset = pdf_info.get_page_y_offset(1)/72.0
-        print(f"Page X Offset: {page_x_offset} inches")
-        print(f"Page Y Offset: {page_y_offset} inches")
+def get_page_offsets(infile):
+    # Get and display PDF information
+    pdf_info = pdf_facades.PdfFileInfo(infile)
+    page_x_offset = pdf_info.get_page_x_offset(1) / 72.0
+    page_y_offset = pdf_info.get_page_y_offset(1) / 72.0
+    print(f"Page X Offset: {page_x_offset} inches")
+    print(f"Page Y Offset: {page_y_offset} inches")
 ```

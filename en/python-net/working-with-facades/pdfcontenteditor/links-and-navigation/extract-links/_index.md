@@ -36,6 +36,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def extract_links(infile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
@@ -52,7 +53,7 @@ def extract_links(infile):
             annotation = cast(ap.annotations.LinkAnnotation, link)
             if is_assignable(annotation.action, ap.annotations.GoToURIAction):
                 action = cast(ap.annotations.GoToURIAction, annotation.action)
-                print(f"  URI: {action.uri}")                
+                print(f"  URI: {action.uri}")
 
     if count == 0:
         print("No links found")

@@ -29,6 +29,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def check_signature_coverage(infile):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -47,6 +48,7 @@ Use `verify_signed()` to confirm that the signed document content has not been a
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def validate_document_integrity(infile):
     pdf_signature = create_pdf_file_signature(infile)

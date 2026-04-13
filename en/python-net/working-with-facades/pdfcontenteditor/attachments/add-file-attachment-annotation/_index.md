@@ -32,6 +32,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_file_attachment_annotation(infile, attachment_file, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()

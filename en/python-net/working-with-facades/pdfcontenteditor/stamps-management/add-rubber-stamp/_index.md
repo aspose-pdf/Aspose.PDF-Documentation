@@ -32,20 +32,21 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_rubber_stamp(infile, outfile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
-	
-	for i in range(1, 5):
-		content_editor.create_rubber_stamp(
-			i,
-			apd.Rectangle(120, 450, 180, 60),
-			"Approved",
-			"Approved by reviewer",
-			apd.Color.green,
-		)
-	# Save updated document
-	content_editor.save(outfile)
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
+
+    for i in range(1, 5):
+        content_editor.create_rubber_stamp(
+            i,
+            apd.Rectangle(120, 450, 180, 60),
+            "Approved",
+            "Approved by reviewer",
+            apd.Color.green,
+        )
+    # Save updated document
+    content_editor.save(outfile)
 ```

@@ -31,13 +31,16 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def replace_text_regex(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
     # Bind document to PdfContentEditor
     content_editor.bind_pdf(infile)
-    # Replace text in the whole document        
-    content_editor.replace_text_strategy.replace_scope = pdf_facades.ReplaceTextStrategy.Scope.REPLACE_ALL
+    # Replace text in the whole document
+    content_editor.replace_text_strategy.replace_scope = (
+        pdf_facades.ReplaceTextStrategy.Scope.REPLACE_ALL
+    )
     content_editor.replace_text_strategy.is_regular_expression_used = True
     content_editor.replace_text(r"\d{4}", "[NUMBER]")
     # Save updated document

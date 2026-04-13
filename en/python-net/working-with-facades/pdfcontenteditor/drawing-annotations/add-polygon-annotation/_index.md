@@ -32,6 +32,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_polygon_annotation(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
@@ -39,7 +40,7 @@ def add_polygon_annotation(infile, outfile):
     content_editor.bind_pdf(infile)
 
     line_info = pdf_facades.LineInfo()
-    line_info.border_style = 0 # 0 - Solid
+    line_info.border_style = 0  # 0 - Solid
     line_info.vertice_coordinate = [100, 200, 150, 260, 220, 220, 200, 160]
     content_editor.create_polygon(
         line_info,

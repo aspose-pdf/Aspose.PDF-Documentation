@@ -15,28 +15,27 @@ In PDF forms, fields can be organized hierarchically, especially when subforms a
 1. Each field's fully qualified name is resolved using get_full_field_name().
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
+# Resolve full field names
+def resolve_full_field_names(infile):
+    """Resolve full field names in a PDF document."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
+
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
     # Resolve full field names
-    def resolve_full_field_names(infile):
-        """Resolve full field names in a PDF document."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
-
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
-
-        # Resolve full field names
-        for field in pdf_form.field_names:
-            name= pdf_form.get_full_field_name(field)
-            print(f"Full field name: {name}")
+    for field in pdf_form.field_names:
+        name = pdf_form.get_full_field_name(field)
+        print(f"Full field name: {name}")
 ```

@@ -27,24 +27,25 @@ In the example shown, the layout uses 2 rows and 2 columns, producing four pages
 1. Generate a new PDF with combined pages.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+from io import FileIO
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    from io import FileIO
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
-
-    # Create N-Up PDF Document
-    def create_nup_pdf_document(infile, outfile):
-        # Create NUpMaker object
-        nup_maker = pdf_facades.PdfFileEditor()
-        # Make N-Up layout from input PDF file and save to output PDF file
-        nup_maker.make_n_up(FileIO(infile), FileIO(outfile, "w"), 2, 2)  # 2 rows and 2 columns for N-Up layout
+# Create N-Up PDF Document
+def create_nup_pdf_document(infile, outfile):
+    # Create NUpMaker object
+    nup_maker = pdf_facades.PdfFileEditor()
+    # Make N-Up layout from input PDF file and save to output PDF file
+    nup_maker.make_n_up(
+        FileIO(infile), FileIO(outfile, "w"), 2, 2
+    )  # 2 rows and 2 columns for N-Up layout
 ```
 
 Aspose.PDF for Python via .NET allows you to generate N-Up layouts with the PdfFileEditor class. The 'try_make_n_up' method works similarly to make_n_up, but instead of raising an exception when an operation fails, it returns a boolean value indicating whether the process succeeded.
@@ -60,23 +61,22 @@ The 'try_make_n_up' method provides a safer way to perform this operation becaus
 In the example below, the document is arranged using a 2 × 2 grid, which places four original pages on each output page.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+from io import FileIO
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    from io import FileIO
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
-
-    # Create N-Up PDF Document
-    def try_create_nup_pdf_document(infile, outfile):
-        # Create NUpMaker object
-        nup_maker = pdf_facades.PdfFileEditor()
-        # Make N-Up layout from input PDF file and save to output PDF file
-        if not nup_maker.try_make_n_up(FileIO(infile), FileIO(outfile, "w"), 2, 2):
-            print("Failed to create N-Up PDF document.")
+# Create N-Up PDF Document
+def try_create_nup_pdf_document(infile, outfile):
+    # Create NUpMaker object
+    nup_maker = pdf_facades.PdfFileEditor()
+    # Make N-Up layout from input PDF file and save to output PDF file
+    if not nup_maker.try_make_n_up(FileIO(infile), FileIO(outfile, "w"), 2, 2):
+        print("Failed to create N-Up PDF document.")
 ```

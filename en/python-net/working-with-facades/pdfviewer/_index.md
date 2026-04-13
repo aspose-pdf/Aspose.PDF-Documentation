@@ -17,7 +17,6 @@ Aspose.PDF for Python via .NET provides the [PdfViewer](https://reference.aspose
 Use `decode_all_pages()` when you want to convert every page in the PDF into a separate image. The returned page images can then be saved one by one to an output directory.
 
 ```python
-
 import sys
 from os import path
 
@@ -25,6 +24,7 @@ import aspose.pdf as ap
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def decode_all_pages(infile: str, output_dir: str) -> None:
     """Decode all pages of a PDF document into image files."""
@@ -45,7 +45,6 @@ def decode_all_pages(infile: str, output_dir: str) -> None:
 Use `decode_page()` when you need only one page from the document. This is useful when generating previews, thumbnails, or page-specific exports.
 
 ```python
-
 import sys
 from os import path
 
@@ -53,6 +52,7 @@ import aspose.pdf as ap
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def decode_specific_page(infile: str, outfile: str, page_number: int = 1) -> None:
     """Decode a specific PDF page into an image file."""
@@ -71,7 +71,6 @@ def decode_specific_page(infile: str, outfile: str, page_number: int = 1) -> Non
 The `inspect_pdf_metadata` function demonstrates how to open a PDF document and retrieve basic viewer-related metadata using Aspose.PDF. It focuses on extracting information that describes how the document is interpreted and displayed rather than its content.
 
 ```python
-
 import sys
 from os import path
 
@@ -79,6 +78,7 @@ import aspose.pdf as ap
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def inspect_pdf_metadata(infile: str) -> None:
     """Open a PDF and print page-count related viewer metadata."""

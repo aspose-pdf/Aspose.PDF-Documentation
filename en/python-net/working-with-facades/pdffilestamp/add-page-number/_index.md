@@ -17,7 +17,6 @@ Aspose.PDF for Python via .NET provides the [PdfFileStamp](https://reference.asp
 Use `add_page_number()` without extra position arguments when you want page numbers to be added in the default location. This is the simplest way to number every page in the document.
 
 ```python
-
 import sys
 from os import path
 
@@ -25,6 +24,7 @@ import aspose.pdf as ap
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_page_numbers_default(infile: str, outfile: str) -> None:
     """Add centered page numbers to the bottom of each page."""
@@ -42,7 +42,6 @@ def add_page_numbers_default(infile: str, outfile: str) -> None:
 Use the coordinate-based overload when you need page numbers to appear at a specific X and Y position on each page. This approach is useful when the document layout requires a custom placement.
 
 ```python
-
 import sys
 from os import path
 
@@ -50,6 +49,7 @@ import aspose.pdf as ap
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_page_numbers_at_coordinates(infile: str, outfile: str) -> None:
     """Add page numbers at explicit X/Y coordinates."""
@@ -67,7 +67,6 @@ def add_page_numbers_at_coordinates(infile: str, outfile: str) -> None:
 Use the overload with position and margin arguments when you need more control over where page numbers appear. In this example, the numbers are aligned to the upper-right area of the page with explicit margins.
 
 ```python
-
 import sys
 from os import path
 
@@ -75,6 +74,7 @@ import aspose.pdf as ap
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_page_numbers_with_position_and_margins(infile: str, outfile: str) -> None:
     """Add page numbers using a predefined position and page margins."""
@@ -99,7 +99,6 @@ def add_page_numbers_with_position_and_margins(infile: str, outfile: str) -> Non
 The 'add_page_numbers_with_roman_style' function shows how to enhance a PDF document by adding page numbers using uppercase Roman numerals. It leverages the PdfFileStamp class from Aspose.PDF to apply consistent numbering across all pages.
 
 ```python
-
 import sys
 from os import path
 
@@ -107,6 +106,7 @@ import aspose.pdf as ap
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_page_numbers_with_roman_style(infile: str, outfile: str) -> None:
     """Add page numbers with a custom start value and Roman numbering."""

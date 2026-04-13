@@ -24,27 +24,27 @@ Using the [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.fa
 1. Save the updated PDF document.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def remove_field_script(input_file_name, output_file_name):
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor()
+def remove_field_script(input_file_name, output_file_name):
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor()
 
-        # Open input PDF file
-        form_editor.bind_pdf(input_file_name)
+    # Open input PDF file
+    form_editor.bind_pdf(input_file_name)
 
-        # Remove JavaScript action from the field
-        if not form_editor.remove_field_action("Script_Demo_Button"):
-            raise Exception("Failed to remove field script")        
+    # Remove JavaScript action from the field
+    if not form_editor.remove_field_action("Script_Demo_Button"):
+        raise Exception("Failed to remove field script")
 
-        # Save output PDF file
-        form_editor.save(output_file_name)
+    # Save output PDF file
+    form_editor.save(output_file_name)
 ```

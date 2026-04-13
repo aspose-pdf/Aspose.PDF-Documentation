@@ -20,26 +20,26 @@ Form fields in PDF documents have visual properties such as background color, te
 1. Retrieve the appearance information of a specific field.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pydrawing as ap_pydrawing
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pydrawing as ap_pydrawing
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def get_field_appearance(infile, outfile):
-        # Open document
-        doc = ap.Document(infile)
+def get_field_appearance(infile, outfile):
+    # Open document
+    doc = ap.Document(infile)
 
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor(doc)
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor(doc)
 
-        # Get field appearance
-        appearance = form_editor.get_field_appearance("Last Name")
-        print("Field Appearance: " + str(appearance))
+    # Get field appearance
+    appearance = form_editor.get_field_appearance("Last Name")
+    print("Field Appearance: " + str(appearance))
 ```

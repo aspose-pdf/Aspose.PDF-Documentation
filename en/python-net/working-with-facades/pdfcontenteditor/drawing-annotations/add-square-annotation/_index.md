@@ -32,17 +32,18 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_square_annotation(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
     # Bind input PDF file
     content_editor.bind_pdf(infile)
-    
+
     # Create SquareAnnotation object
     rect = apd.Rectangle(100, 300, 200, 400)
     contents = "This is square annotation"
     content_editor.create_square_circle(rect, contents, apd.Color.blue, True, 1, 3)
-    
+
     # Save output PDF file
     content_editor.save(outfile)
 ```

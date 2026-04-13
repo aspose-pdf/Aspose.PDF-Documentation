@@ -23,21 +23,21 @@ Using Aspose.PDF for Python, you can easily inspect the PDF version with the [Pd
 1. Display the version in the console.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+from io import FileIO
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    from io import FileIO
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def get_pdf_version(input_file_name):
-        
-        pdf_metadata = pdf_facades.PdfFileInfo(input_file_name)
-        version = pdf_metadata.get_pdf_version()
-        print(f"\nPDF Version: {version}")
+def get_pdf_version(input_file_name):
+
+    pdf_metadata = pdf_facades.PdfFileInfo(input_file_name)
+    version = pdf_metadata.get_pdf_version()
+    print(f"\nPDF Version: {version}")
 ```

@@ -31,14 +31,15 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def get_viewer_preferences(infile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
-	# Read current viewer preference flags
-	viewer_preference = ViewerPreference(content_editor.get_viewer_preference())
-	if viewer_preference & ViewerPreference.PAGE_MODE_USE_OUTLINES:
-		print("PageModeUseOutlines is enabled")
-	print(f"Current viewer preference: {viewer_preference}")
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
+    # Read current viewer preference flags
+    viewer_preference = ViewerPreference(content_editor.get_viewer_preference())
+    if viewer_preference & ViewerPreference.PAGE_MODE_USE_OUTLINES:
+        print("PageModeUseOutlines is enabled")
+    print(f"Current viewer preference: {viewer_preference}")
 ```

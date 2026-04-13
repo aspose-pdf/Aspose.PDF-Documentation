@@ -19,19 +19,19 @@ Merging PDF files can sometimes fail due to corrupted files, incompatible format
 1. Attempt to Concatenate PDF Files.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
-    from config import set_license, initialize_data_dir
 
-    def try_concatenate_pdf_files(files_to_merge, output_file):
-        # Create a PdfFileEditor object
-        pdf_editor = pdf_facades.PdfFileEditor()
-        if not pdf_editor.try_concatenate(files_to_merge, output_file):
-            print("Concatenation failed for the provided files.")
+def try_concatenate_pdf_files(files_to_merge, output_file):
+    # Create a PdfFileEditor object
+    pdf_editor = pdf_facades.PdfFileEditor()
+    if not pdf_editor.try_concatenate(files_to_merge, output_file):
+        print("Concatenation failed for the provided files.")
 ```

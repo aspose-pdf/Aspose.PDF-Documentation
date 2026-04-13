@@ -23,24 +23,23 @@ Using Aspose.PDF for Python, developers can easily convert a standard PDF into a
 1. Save the output as a booklet-ready PDF file.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+from io import FileIO
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    from io import FileIO
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
-
-    # Create PDF Booklet
-    def create_pdf_booklet(infile, outfile):
-        # Create BookletMaker object
-        booklet_maker = pdf_facades.PdfFileEditor()
-        # Make booklet from input PDF file and save to output PDF file
-        booklet_maker.make_booklet(FileIO(infile), FileIO(outfile, "w"))
+# Create PDF Booklet
+def create_pdf_booklet(infile, outfile):
+    # Create BookletMaker object
+    booklet_maker = pdf_facades.PdfFileEditor()
+    # Make booklet from input PDF file and save to output PDF file
+    booklet_maker.make_booklet(FileIO(infile), FileIO(outfile, "w"))
 ```
 
 This code snippet shows how to use the 'try_make_booklet' method of the [PdfFileEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdffileeditor/) class to rearrange pages for booklet printing without throwing exceptions if the operation fails.
@@ -58,24 +57,24 @@ The 'try_make_booklet' method works similarly to 'make_booklet', but with an imp
 1. Handle the Result.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+from io import FileIO
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    from io import FileIO
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def try_create_pdf_booklet(infile, outfile):
-        # Create BookletMaker object
-        booklet_maker = pdf_facades.PdfFileEditor()
-        # Make booklet from input PDF file and save to output PDF file
-        # The try_make_booklet method is like the make_booklet method, 
-        # except the try_make_booklet method does not throw an exception if the operation fails.
-        if not booklet_maker.try_make_booklet(FileIO(infile), FileIO(outfile, "w")):
-            print("Failed to create booklet.")
+def try_create_pdf_booklet(infile, outfile):
+    # Create BookletMaker object
+    booklet_maker = pdf_facades.PdfFileEditor()
+    # Make booklet from input PDF file and save to output PDF file
+    # The try_make_booklet method is like the make_booklet method,
+    # except the try_make_booklet method does not throw an exception if the operation fails.
+    if not booklet_maker.try_make_booklet(FileIO(infile), FileIO(outfile, "w")):
+        print("Failed to create booklet.")
 ```

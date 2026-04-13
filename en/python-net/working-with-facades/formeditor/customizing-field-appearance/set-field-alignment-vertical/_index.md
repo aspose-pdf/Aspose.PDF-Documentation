@@ -24,31 +24,33 @@ Using the [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.fa
 1. Save the modified document.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pydrawing as ap_pydrawing
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pydrawing as ap_pydrawing
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def set_field_alignment_vertical(infile, outfile):
-        # Open document
-        doc = ap.Document(infile)
+def set_field_alignment_vertical(infile, outfile):
+    # Open document
+    doc = ap.Document(infile)
 
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor(doc)
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor(doc)
 
-        # Attempt to set vertical alignment of the "First Name" field to bottom
-        if form_editor.set_field_alignment_v(
-            "First Name", pdf_facades.FormFieldFacade.ALIGN_BOTTOM
-        ):
-            # Save updated document
-            form_editor.save(outfile)
-        else:
-            raise Exception("Failed to set field vertical alignment. Field may not support vertical alignment.")
+    # Attempt to set vertical alignment of the "First Name" field to bottom
+    if form_editor.set_field_alignment_v(
+        "First Name", pdf_facades.FormFieldFacade.ALIGN_BOTTOM
+    ):
+        # Save updated document
+        form_editor.save(outfile)
+    else:
+        raise Exception(
+            "Failed to set field vertical alignment. Field may not support vertical alignment."
+        )
 ```

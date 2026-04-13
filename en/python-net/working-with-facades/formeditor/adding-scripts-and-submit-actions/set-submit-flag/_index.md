@@ -21,26 +21,26 @@ PDF forms often include Submit Buttons to send user input to a server. The submi
 1. Save the updated PDF document.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def set_submit_flag(input_file_name, output_file_name):    
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor()
+def set_submit_flag(input_file_name, output_file_name):
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor()
 
-        # Open input PDF file
-        form_editor.bind_pdf(input_file_name)
+    # Open input PDF file
+    form_editor.bind_pdf(input_file_name)
 
-        # Set submit flag for the form
-        form_editor.set_submit_flag("Script_Demo_Button", ap.facades.SubmitFormFlag.XFDF)
+    # Set submit flag for the form
+    form_editor.set_submit_flag("Script_Demo_Button", ap.facades.SubmitFormFlag.XFDF)
 
-        # Save output PDF file
-        form_editor.save(output_file_name)
+    # Save output PDF file
+    form_editor.save(output_file_name)
 ```

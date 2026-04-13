@@ -24,40 +24,36 @@ Securing PDF documents is essential when sharing sensitive or restricted content
 1. Save the Encrypted PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
+# Encrypt PDF with User and Owner Password
+def encrypt_pdf_with_user_owner_password(infile, outfile):
+    """Encrypt a PDF document using user and owner passwords."""
+    # Create PdfFileSecurity object
+    file_security = pdf_facades.PdfFileSecurity()
 
-    # Encrypt PDF with User and Owner Password
-    def encrypt_pdf_with_user_owner_password(infile, outfile):
-        """Encrypt a PDF document using user and owner passwords."""
-        # Create PdfFileSecurity object
-        file_security = pdf_facades.PdfFileSecurity()
+    # Bind PDF document
+    file_security.bind_pdf(infile)
 
-        # Bind PDF document
-        file_security.bind_pdf(infile)
+    # Define document privileges
+    privilege = pdf_facades.DocumentPrivilege.forbid_all
+    privilege.allow_print = True
 
-        # Define document privileges
-        privilege = pdf_facades.DocumentPrivilege.forbid_all
-        privilege.allow_print = True
+    # Encrypt the PDF
+    file_security.encrypt_file(
+        "user_password", "owner_password", privilege, pdf_facades.KeySize.X128
+    )
 
-        # Encrypt the PDF
-        file_security.encrypt_file(
-            "user_password",
-            "owner_password",
-            privilege,
-            pdf_facades.KeySize.X128
-        )
-
-        # Save encrypted PDF
-        file_security.save(outfile)
+    # Save encrypted PDF
+    file_security.save(outfile)
 ```
 
 ## Encrypt PDF with Permissions
@@ -71,41 +67,37 @@ Next code snippet explain how to allow selected actions like printing and copyin
 1. Save the Encrypted PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
+# Encrypt PDF with Permissions
+def encrypt_pdf_with_permissions(infile, outfile):
+    """Encrypt a PDF document and configure specific permissions."""
+    # Create PdfFileSecurity object
+    file_security = pdf_facades.PdfFileSecurity()
 
-    # Encrypt PDF with Permissions
-    def encrypt_pdf_with_permissions(infile, outfile):
-        """Encrypt a PDF document and configure specific permissions."""
-        # Create PdfFileSecurity object
-        file_security = pdf_facades.PdfFileSecurity()
+    # Bind PDF document
+    file_security.bind_pdf(infile)
 
-        # Bind PDF document
-        file_security.bind_pdf(infile)
+    # Configure privileges
+    privilege = pdf_facades.DocumentPrivilege.forbid_all
+    privilege.allow_print = True
+    privilege.allow_copy = True
 
-        # Configure privileges
-        privilege = pdf_facades.DocumentPrivilege.forbid_all
-        privilege.allow_print = True
-        privilege.allow_copy = True
+    # Encrypt the PDF
+    file_security.encrypt_file(
+        "user_password", "owner_password", privilege, pdf_facades.KeySize.X128
+    )
 
-        # Encrypt the PDF
-        file_security.encrypt_file(
-            "user_password",
-            "owner_password",
-            privilege,
-            pdf_facades.KeySize.X128
-        )
-
-        # Save encrypted PDF
-        file_security.save(outfile)
+    # Save encrypted PDF
+    file_security.save(outfile)
 ```
 
 ## Encrypt PDF with Encryption Algorithm
@@ -119,39 +111,38 @@ PDF encryption not only protects documents with passwords but also allows you to
 1. Save the Encrypted PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
+# Encrypt PDF with Encryption Algorithm
+def encrypt_pdf_with_encryption_algorithm(infile, outfile):
+    """Encrypt a PDF document using a specific encryption algorithm."""
+    # Create PdfFileSecurity object
+    file_security = pdf_facades.PdfFileSecurity()
 
-    # Encrypt PDF with Encryption Algorithm
-    def encrypt_pdf_with_encryption_algorithm(infile, outfile):
-        """Encrypt a PDF document using a specific encryption algorithm."""
-        # Create PdfFileSecurity object
-        file_security = pdf_facades.PdfFileSecurity()
+    # Bind PDF document
+    file_security.bind_pdf(infile)
 
-        # Bind PDF document
-        file_security.bind_pdf(infile)
+    # Define privileges
+    privilege = pdf_facades.DocumentPrivilege.forbid_all
+    privilege.allow_print = True
 
-        # Define privileges
-        privilege = pdf_facades.DocumentPrivilege.forbid_all
-        privilege.allow_print = True
+    # Encrypt the PDF using AES algorithm
+    file_security.encrypt_file(
+        "user_password",
+        "owner_password",
+        privilege,
+        pdf_facades.KeySize.X256,
+        pdf_facades.Algorithm.AES,
+    )
 
-        # Encrypt the PDF using AES algorithm
-        file_security.encrypt_file(
-            "user_password",
-            "owner_password",
-            privilege,
-            pdf_facades.KeySize.X256,
-            pdf_facades.Algorithm.AES
-        )
-
-        # Save encrypted PDF
-        file_security.save(outfile)
+    # Save encrypted PDF
+    file_security.save(outfile)
 ```

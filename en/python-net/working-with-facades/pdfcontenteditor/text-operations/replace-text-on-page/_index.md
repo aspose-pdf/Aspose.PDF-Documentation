@@ -31,13 +31,16 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def replace_text_on_page(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
     # Bind document to PdfContentEditor
     content_editor.bind_pdf(infile)
-    # Replace text on page 1    
-    content_editor.replace_text_strategy.replace_scope = pdf_facades.ReplaceTextStrategy.Scope.REPLACE_FIRST
+    # Replace text on page 1
+    content_editor.replace_text_strategy.replace_scope = (
+        pdf_facades.ReplaceTextStrategy.Scope.REPLACE_FIRST
+    )
     content_editor.replace_text("PDF", "Page 1 Replaced Text", 14)
     # Save updated document
     content_editor.save(outfile)

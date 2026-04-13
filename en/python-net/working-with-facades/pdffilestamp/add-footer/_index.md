@@ -17,12 +17,12 @@ Aspose.PDF for Python via .NET provides the [PdfFileStamp](https://reference.asp
 Use `add_footer()` with a `FormattedText` object when you want to place the same text footer on every page of the PDF. The second argument sets the bottom margin used for footer placement.
 
 ```python
-
 import sys
 from os import path
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_text_footer(infile: str, outfile: str) -> None:
     """Add a text footer with a bottom margin."""
@@ -41,12 +41,12 @@ def add_text_footer(infile: str, outfile: str) -> None:
 Use `add_footer()` with an image stream when the footer should display a logo or another image instead of text. The example opens the image file as a binary stream and places it at the bottom of each page.
 
 ```python
-
 import sys
 from os import path
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_image_footer(infile: str, image_file: str, outfile: str) -> None:
     """Add an image footer with a bottom margin."""
@@ -64,12 +64,12 @@ def add_image_footer(infile: str, image_file: str, outfile: str) -> None:
 Use the overload with three margin values when you need more control over footer placement. In this example, the footer is added with custom bottom, left, and right margins.
 
 ```python
-
 import sys
 from os import path
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_footer_with_margins(infile: str, outfile: str) -> None:
     """Add a text footer with bottom, left, and right margins."""

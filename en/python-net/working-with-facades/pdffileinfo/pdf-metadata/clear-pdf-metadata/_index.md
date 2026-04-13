@@ -21,26 +21,26 @@ PDF often contain metadata such as title, author, keywords, creation dates, and 
 1. Save the clean PDF.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+from io import FileIO
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    from io import FileIO
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def clear_pdf_metadata(infile, outfile):
-    
-        # Get PDF information
-        pdf_info = pdf_facades.PdfFileInfo(infile)
+def clear_pdf_metadata(infile, outfile):
 
-        # Clear PDF metadata
-        pdf_info.clear_info()
+    # Get PDF information
+    pdf_info = pdf_facades.PdfFileInfo(infile)
 
-        # Save updated metadata
-        pdf_info.save(outfile)
+    # Clear PDF metadata
+    pdf_info.clear_info()
+
+    # Save updated metadata
+    pdf_info.save(outfile)
 ```

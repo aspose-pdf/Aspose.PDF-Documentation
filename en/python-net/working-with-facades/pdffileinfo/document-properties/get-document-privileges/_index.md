@@ -30,30 +30,30 @@ With Aspose.PDF for Python, you can inspect these settings programmatically usin
 1. Display which actions are allowed for the document.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+from io import FileIO
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    from io import FileIO
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def get_document_privileges(input_file_name):
-        pdf_metadata = pdf_facades.PdfFileInfo(input_file_name)
+def get_document_privileges(input_file_name):
+    pdf_metadata = pdf_facades.PdfFileInfo(input_file_name)
 
-        privileges = pdf_metadata.get_document_privilege()
+    privileges = pdf_metadata.get_document_privilege()
 
-        print("Document Privileges:")
-        print(f"  Can Print: {privileges.allow_print}")
-        print(f"  Can Degraded Print: {privileges.allow_degraded_printing}")
-        print(f"  Can Copy: {privileges.allow_copy}")
-        print(f"  Can Modify Contents: {privileges.allow_modify_contents}")
-        print(f"  Can Modify Annotations: {privileges.allow_modify_annotations}")
-        print(f"  Can Fill In: {privileges.allow_fill_in}")
-        print(f"  Can Screen Readers: {privileges.allow_screen_readers}")
-        print(f"  Can Assembly: {privileges.allow_assembly}")
+    print("Document Privileges:")
+    print(f"  Can Print: {privileges.allow_print}")
+    print(f"  Can Degraded Print: {privileges.allow_degraded_printing}")
+    print(f"  Can Copy: {privileges.allow_copy}")
+    print(f"  Can Modify Contents: {privileges.allow_modify_contents}")
+    print(f"  Can Modify Annotations: {privileges.allow_modify_annotations}")
+    print(f"  Can Fill In: {privileges.allow_fill_in}")
+    print(f"  Can Screen Readers: {privileges.allow_screen_readers}")
+    print(f"  Can Assembly: {privileges.allow_assembly}")
 ```

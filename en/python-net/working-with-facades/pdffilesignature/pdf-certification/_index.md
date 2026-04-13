@@ -29,6 +29,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def certify_pdf_with_mdp_signature(infile, outfile, certificate_path):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -59,6 +60,7 @@ Use this mode when the certified document must remain unchanged after certificat
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def apply_document_level_certification(infile, outfile, certificate_path):
     pdf_signature = create_pdf_file_signature(infile)

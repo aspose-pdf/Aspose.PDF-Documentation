@@ -29,12 +29,13 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def replace_image(infile, image_file, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
     # Bind document to PdfContentEditor
     content_editor.bind_pdf(infile)
-    # Replace image on page 1    
+    # Replace image on page 1
     content_editor.replace_image(1, 1, image_file)
     # Save updated document
     content_editor.save(outfile)

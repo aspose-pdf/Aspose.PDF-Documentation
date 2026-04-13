@@ -32,13 +32,16 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_free_text_annotation(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
     # Bind document to PdfContentEditor
     content_editor.bind_pdf(infile)
     # Add free text annotation to page 1
-    content_editor.create_free_text(apd.Rectangle(200, 480, 150, 25), "This is a free text annotation", 1)
+    content_editor.create_free_text(
+        apd.Rectangle(200, 480, 150, 25), "This is a free text annotation", 1
+    )
     # Save updated document
     content_editor.save(outfile)
 ```

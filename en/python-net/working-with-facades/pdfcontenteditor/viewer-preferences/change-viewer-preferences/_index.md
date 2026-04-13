@@ -57,6 +57,7 @@ class ViewerPreference(IntFlag):
     PAGE_LAYOUT_TWO_PAGE_LEFT = 65536
     PAGE_LAYOUT_TWO_PAGE_RIGHT = 131072
 
+
 def change_viewer_preferences(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()

@@ -15,27 +15,26 @@ XFA (XML Forms Architecture) forms differ from traditional AcroForms because the
 1. Call 'extract_xfa_data()' to export the embedded XFA XML data.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
+# Extract XFA Data
+def export_xfa_data(infile, outfile):
+    """Export XFA form data."""
+    # Create Form object
+    form = pdf_facades.Form()
 
-    # Extract XFA Data
-    def export_xfa_data(infile, outfile):
-        """Export XFA form data."""
-        # Create Form object
-        form = pdf_facades.Form()
+    # Bind PDF document
+    form.bind_pdf(infile)
 
-        # Bind PDF document
-        form.bind_pdf(infile)
-        
-        with FileIO(outfile, 'w') as stream:
-            # Export embedded XFA XML data to the output stream
-            form.extract_xfa_data(stream)
+    with FileIO(outfile, "w") as stream:
+        # Export embedded XFA XML data to the output stream
+        form.extract_xfa_data(stream)
 ```

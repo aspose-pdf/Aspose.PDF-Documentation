@@ -24,24 +24,24 @@ This example shows how to reposition the "Country" field by specifying new coord
 1. Save the modified document.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def move_field(infile, outfile):
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor()
-        # Bind document to FormEditor
-        form_editor.bind_pdf(infile)
-        # Move field to new page
-        form_editor.move_field("Country", 200, 600, 280, 620)
-        # Save updated document
-        form_editor.save(outfile)
+def move_field(infile, outfile):
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor()
+    # Bind document to FormEditor
+    form_editor.bind_pdf(infile)
+    # Move field to new page
+    form_editor.move_field("Country", 200, 600, 280, 620)
+    # Save updated document
+    form_editor.save(outfile)
 ```

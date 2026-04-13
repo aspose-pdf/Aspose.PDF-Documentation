@@ -33,19 +33,20 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def list_stamps(infile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
-	# List all stamps on page 1
-	stamps = content_editor.get_stamps(1)
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
+    # List all stamps on page 1
+    stamps = content_editor.get_stamps(1)
 
-	count = 0
-	for stamp in stamps:
-		count += 1
-		print(f"Stamp {count}: {stamp}")
+    count = 0
+    for stamp in stamps:
+        count += 1
+        print(f"Stamp {count}: {stamp}")
 
-	if count == 0:
-		print("No stamps found")
+    if count == 0:
+        print("No stamps found")
 ```

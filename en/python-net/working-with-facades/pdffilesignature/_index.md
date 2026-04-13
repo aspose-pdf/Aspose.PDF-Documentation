@@ -54,11 +54,15 @@ def create_signature_rectangle():
     return apd.Rectangle(10, 10, 200, 60)
 
 
-def configure_signature_certificate(pdf_signature, certificate_path, certificate_password=DEFAULT_CERTIFICATE_PASSWORD):
+def configure_signature_certificate(
+    pdf_signature, certificate_path, certificate_password=DEFAULT_CERTIFICATE_PASSWORD
+):
     pdf_signature.set_certificate(certificate_path, certificate_password)
 
 
-def create_pkcs7_signature(certificate_path, certificate_password=DEFAULT_CERTIFICATE_PASSWORD):
+def create_pkcs7_signature(
+    certificate_path, certificate_password=DEFAULT_CERTIFICATE_PASSWORD
+):
     signature = ap.forms.PKCS7(certificate_path, certificate_password)
     signature.reason = "Document approval"
     signature.contact_info = "qa@example.com"

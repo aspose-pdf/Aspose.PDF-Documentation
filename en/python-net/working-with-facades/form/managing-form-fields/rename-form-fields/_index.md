@@ -16,34 +16,30 @@ Renaming form fields is useful when aligning PDF forms with internal naming conv
 1. Save the updated Document.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
+# Rename form fields
+def rename_form_fields(infile, outfile):
+    """Rename form fields in a PDF document."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-    # Rename form fields
-    def rename_form_fields(infile, outfile):
-        """Rename form fields in a PDF document."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Rename form fields by providing a mapping of old names to new names
+    field_renaming_map = [("First Name", "NewFirstName"), ("Last Name", "NewLastName")]
+    for old_name, new_name in field_renaming_map:
+        pdf_form.rename_field(old_name, new_name)
 
-        # Rename form fields by providing a mapping of old names to new names
-        field_renaming_map = [
-            ("First Name", "NewFirstName"),
-            ("Last Name", "NewLastName")
-        ]
-        for old_name, new_name in field_renaming_map:
-            pdf_form.rename_field(old_name, new_name)
-
-        # Save updated PDF
-        pdf_form.save(outfile)
+    # Save updated PDF
+    pdf_form.save(outfile)
 ```

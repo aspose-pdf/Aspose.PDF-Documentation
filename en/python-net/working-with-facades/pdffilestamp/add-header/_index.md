@@ -17,7 +17,6 @@ Aspose.PDF for Python via .NET provides the [PdfFileStamp](https://reference.asp
 Use `add_header()` with a `FormattedText` object when you want to place the same header text on every page of the PDF. The second argument defines the top margin for the header.
 
 ```python
-
 import sys
 from os import path
 
@@ -25,6 +24,7 @@ import aspose.pydrawing as ap_pydrawing
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_text_header(infile: str, outfile: str) -> None:
     """Add a text header with a top margin."""
@@ -36,7 +36,6 @@ def add_text_header(infile: str, outfile: str) -> None:
         pdf_stamper.save(outfile)
     finally:
         pdf_stamper.close()
-
 ```
 
 ## Add an image header
@@ -44,7 +43,6 @@ def add_text_header(infile: str, outfile: str) -> None:
 Use `add_header()` with an image file or image stream when the header should display a logo or another graphic. This is useful for branded document layouts.
 
 ```python
-
 import sys
 from os import path
 
@@ -52,6 +50,7 @@ import aspose.pydrawing as ap_pydrawing
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_image_header(infile: str, image_file: str, outfile: str) -> None:
     """Add an image header with a top margin."""
@@ -69,7 +68,6 @@ def add_image_header(infile: str, image_file: str, outfile: str) -> None:
 Use the overload with three margin values when you need more control over header placement. In this example, the header is added with custom top, left, and right margins.
 
 ```python
-
 import sys
 from os import path
 
@@ -77,6 +75,7 @@ import aspose.pydrawing as ap_pydrawing
 import aspose.pdf.facades as pdf_facades
 
 from config import initialize_data_dir, set_license
+
 
 def add_header_with_margins(infile: str, outfile: str) -> None:
     """Add a text header with top, left, and right margins."""

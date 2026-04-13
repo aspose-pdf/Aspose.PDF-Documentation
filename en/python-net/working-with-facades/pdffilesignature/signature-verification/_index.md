@@ -29,6 +29,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def verify_pdf_signature(infile):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -47,6 +48,7 @@ Use `contains_signature()` when you only need to know whether the PDF includes a
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def check_if_pdf_contains_signatures(infile):
     pdf_signature = create_pdf_file_signature(infile)

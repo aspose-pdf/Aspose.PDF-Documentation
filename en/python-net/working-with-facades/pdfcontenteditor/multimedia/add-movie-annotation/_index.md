@@ -32,13 +32,14 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_movie_annotation(infile, movie_file, outfile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
-	# Add movie annotation to page 1
-	content_editor.create_movie(apd.Rectangle(80, 500, 220, 120), movie_file, 1)
-	# Save updated document
-	content_editor.save(outfile)
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
+    # Add movie annotation to page 1
+    content_editor.create_movie(apd.Rectangle(80, 500, 220, 120), movie_file, 1)
+    # Save updated document
+    content_editor.save(outfile)
 ```

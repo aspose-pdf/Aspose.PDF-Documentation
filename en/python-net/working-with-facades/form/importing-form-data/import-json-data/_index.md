@@ -16,31 +16,30 @@ JSON is widely used for storing and transferring structured data between systems
 1. Save the updated PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
+# Import from JSON
+def import_json_to_pdf_form(infile, datafile, outfile):
+    """Import form data from JSON file into PDF form fields."""
+    # Create Form object
+    form = pdf_facades.Form()
 
-    # Import from JSON
-    def import_json_to_pdf_form(infile, datafile, outfile):
-        """Import form data from JSON file into PDF form fields."""
-        # Create Form object
-        form = pdf_facades.Form()
+    # Bind PDF document
+    form.bind_pdf(infile)
 
-        # Bind PDF document
-        form.bind_pdf(infile)
+    # Open JSON file as stream
+    with FileIO(datafile, "r") as json_stream:
+        # Import data from JSON into PDF form fields
+        form.import_json(json_stream)
 
-        # Open JSON file as stream
-        with FileIO(datafile, 'r') as json_stream:
-            # Import data from JSON into PDF form fields
-            form.import_json(json_stream)
-
-        # Save updated PDF
-        form.save(outfile)
+    # Save updated PDF
+    form.save(outfile)
 ```

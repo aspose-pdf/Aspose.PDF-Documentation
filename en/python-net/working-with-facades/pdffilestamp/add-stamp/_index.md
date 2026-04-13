@@ -17,7 +17,6 @@ Aspose.PDF for Python via .NET provides the [PdfFileStamp](https://reference.asp
 After the stamp is configured, bind the input PDF to `PdfFileStamp`, add the stamp, and save the output file. This applies the configured stamp across the document.
 
 ```python
-
 import sys
 from os import path
 
@@ -29,6 +28,7 @@ if EXAMPLES_DIR not in sys.path:
     sys.path.insert(0, EXAMPLES_DIR)
 
 from config import initialize_data_dir, set_license
+
 
 def add_stamp_to_pdf(infile: str, image_file: str, outfile: str) -> None:
     """Add an image stamp to a PDF file."""
