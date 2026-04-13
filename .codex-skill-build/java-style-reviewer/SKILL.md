@@ -1,5 +1,5 @@
 ---
-name: java-markdown-style-reviewer
+name: java-style-reviewer
 description: Audit Markdown documentation in the en/java section for style and formatting issues, then apply safe fixes to Markdown structure and Java fenced code blocks. Use this skill when a user wants Codex to review Java documentation pages, normalize Markdown layout, or clean up Java examples without rewriting the article content.
 ---
 

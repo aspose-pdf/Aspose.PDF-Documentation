@@ -1,5 +1,5 @@
 ---
-name: python-format-fixer
+name: python-style-reviewer
 description: Check Python source formatting and fix formatting issues automatically in both Python files and Markdown pages that contain Python fenced code blocks. Use this skill when a user wants Codex to audit Python files, normalize Python code snippets inside documentation pages, or apply the project-preferred formatter to either kind of content.
 ---
 

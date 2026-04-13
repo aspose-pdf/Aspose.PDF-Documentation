@@ -1,4 +1,0 @@
-interface:
-  display_name: "Java Docs Style Reviewer"
-  short_description: "Audit en/java Markdown pages and apply safe formatting fixes"
-  default_prompt: "Use $java-markdown-style-reviewer to review Markdown style in en/java and fix safe formatting issues in article layout and Java code fences."
