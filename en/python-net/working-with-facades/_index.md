@@ -1,28 +1,29 @@
 ---
-title: Working with Facades
+title: Working with PDF Facades in Python via .NET
 type: docs
 weight: 100
 url: /python-net/working-with-facades/
-description: Learn how to work with PDF facades in Python via .NET using Aspose.PDF for easier manipulation and viewing of PDF content.
-lastmod: "2025-11-05"
+description: Learn how to use Aspose.PDF Facades in Python via .NET to edit, secure, sign, print, stamp, and manage PDF documents with facade classes.
+lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-Aspose.PDF Facades is a set of classes that allows you to perform various operations on PDF documents without delving into their structure.
+Aspose.PDF Facades is a collection of classes in Aspose.PDF for Python via .NET that helps you perform common PDF operations without working directly with the low-level document structure.
 
-In this section you will learn how to:
+This section covers the main facade classes you can use to edit PDF content, manage forms, add annotations, apply security, sign files, work with stamps, print documents, and retrieve PDF file information.
 
-- [Using PdfFileEditor](/pdf/python-net/pdffileeditor-class/) - tool, which allow to perform operartions with PDF file (split, merge, etc).
-- [Using PdfContentEditor](/pdf/python-net/pdfcontenteditor-class/) - tool  to edit PDF file's content.
-- [Using PdfAnnotationEditor](/pdf/python-net/pdfannotationeditor-class/) - tool for work with PDF document annotations (comments).
-- [Using PdfFileSignature](/pdf/python-net/pdffilesignature-class/) - tool to sign a pdf file with a certificate.
-- [Using FormEditor](/pdf/python-net/formeditor-class/) - tool for editing forms (ading/deleting field etc).
-- [Using PdfFileInfo](/pdf/python-net/pdffileinfo-class/) - tool for accessing meta information of PDF document.
-- [Using PdfFileSecurity](/pdf/python-net/pdffilesecurity-class/) - tool for manipulation with Encrypt, Decrypt and Set Privileges on PDF File.
-- [Using PdfFileStamp](/pdf/python-net/pdffilestamp-class/) - tool for manipulation with page, image stamp.
-- [Using PdfViewer](/pdf/python-net/pdfviewer-class/) - tool for working with PDF printing.
-- [Using Form](/pdf/python-net/form-class/) - tool for manipulation with Acro Forms.
-- [Using Stamp](/pdf/python-net/stamp-class/) - tool stamping in PDF.
+In this section, you will learn how to:
 
+- [Using PdfFileEditor](/pdf/python-net/pdffileeditor-class/) to split, merge, and process PDF files.
+- [Using PdfContentEditor](/pdf/python-net/pdfcontenteditor-class/) to edit PDF content.
+- [Using PdfAnnotationEditor](/pdf/python-net/pdfannotationeditor-class/) to work with PDF annotations and comments.
+- [Using PdfFileSignature](/pdf/python-net/pdffilesignature-class/) to sign PDF files with certificates.
+- [Using FormEditor](/pdf/python-net/formeditor-class/) to add, update, and delete form fields.
+- [Using PdfFileInfo](/pdf/python-net/pdffileinfo-class/) to access PDF document metadata and file information.
+- [Using PdfFileSecurity](/pdf/python-net/pdffilesecurity-class/) to encrypt, decrypt, and set PDF document privileges.
+- [Using PdfFileStamp](/pdf/python-net/pdffilestamp-class/) to add page and image stamps to PDF files.
+- [Using PdfViewer](/pdf/python-net/pdfviewer-class/) to print PDF documents.
+- [Using Form](/pdf/python-net/form-class/) to work with AcroForm data.
+- [Using Stamp](/pdf/python-net/stamp-class/) to apply stamps in PDF documents.
