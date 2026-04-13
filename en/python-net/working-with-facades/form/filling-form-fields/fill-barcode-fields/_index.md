@@ -41,4 +41,3 @@ def fill_barcode_fields(infile, outfile):
     # Save updated PDF
     pdf_form.save(outfile)
 ```
-
