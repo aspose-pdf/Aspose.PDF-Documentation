@@ -12,6 +12,107 @@ lastmod: "2025-02-24"
 TechArticle: false 
 ---
 
+## What's new in Aspose.PDF 26.3
+
+In **Aspose.PDF for Python via .NET** 26.3, we have added:
+
+Lossless image stream recompression during PDF optimization. The OptimizationOptions.CompressAllContentStreams property now also compresses eligible image XObject streams with FlateDecode, helping reduce file size while keeping image quality intact.
+
+```python
+
+import aspose.pdf as ap
+
+def  optimize_pdf_with_loss_less_image_stream_recompression(infile, outfile):
+    with ap.Document(infile) as document:
+        optimize_options = ap.optimization.OptimizationOptions()
+        optimize_options.subset_fonts = True
+        optimize_options.allow_reuse_page_content = True
+        optimize_options.compress_objects = True
+        optimize_options.link_duplicate_streams = True
+        optimize_options.remove_unused_objects = True
+        optimize_options.remove_unused_streams = True
+        # Compress content streams and eligible image streams
+        optimize_options.compress_all_content_streams = True
+        # Optimize PDF document
+        document.optimize_resources(optimize_options)
+        # Save optimized PDF document
+        document.save(outfile)
+```
+
+Image recompression now matches the selected ImageCompressionOptions.Encoding setting during optimization, ensuring more consistent results when using Jpeg2000 or Flate, along with image resizing, resolution limits, and quality controls.
+
+```python
+
+import aspose.pdf as ap
+
+def optimize_pdf_images_with_selected_encoding(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as pdf:
+        # Configure optimization options
+        optimize_options = ap.optimization.OptimizationOptions()
+        optimize_options.allow_reuse_page_content = False
+        optimize_options.compress_objects = True
+        optimize_options.link_duplicate_streams = False
+        optimize_options.remove_unused_objects = True
+        optimize_options.remove_unused_streams = True
+        optimize_options.image_compression_options.compress_images = True
+        optimize_options.image_compression_options.resize_images = True
+        optimize_options.image_compression_options.max_resolution = 130
+        optimize_options.image_compression_options.image_quality = 100
+        optimize_options.image_compression_options.encoding = ap.optimization.ImageEncoding.FLATE
+        optimize_options.image_compression_options.version = ap.optimization.ImageCompressionVersion.MIXED
+
+        # Optimize PDF document resources
+        pdf.optimize_resources(optimize_options)
+        # Save optimized PDF document
+        pdf.save(outfile)
+```
+
+Support for rendering comments when saving PDF documents as images or HTML, helping to preserve visible review markup when exporting annotated documents for sharing outside PDF viewers.
+
+```python
+
+import aspose.pdf as ap
+
+def render_comments_to_image_and_html(infile, outfile, output_png):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        # Save the first page to PNG with comments rendered
+        device = ap.devices.PngDevice()
+        device.process(document.pages[1], output_png)
+        # Save the first page to HTML with comments rendered
+        options = ap.HtmlSaveOptions()
+        options.explicit_list_of_saved_pages = [1]
+        options.use_z_order = True
+        document.save(outfile, options)
+```
+
+Improved PDF-to-TIFF rendering performance for high-volume rasterization scenarios, especially when exporting pages to bitonal TIFF images.
+
+```python
+
+import aspose.pdf as ap
+
+def convert_pdf_to_tiff(infile, data_dir):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        # Create Resolution object
+        resolution = ap.devices.Resolution(300)
+
+        # Create TiffSettings object
+        tiff_settings = ap.devices.TiffSettings()
+        tiff_settings.compression = ap.devices.CompressionType.CCITT4
+        tiff_settings.shape = ap.devices.ShapeType.NONE
+        tiff_settings.skip_blank_pages = False
+        tiff_settings.depth = ap.devices.ColorDepth.FORMAT_1BPP
+
+        # Create TIFF device
+        tiff_device = ap.devices.TiffDevice(resolution, tiff_settings)
+        for i in range(1, len(document.pages) + 1):
+            target_file_name = data_dir + "Asposeout-" + str(i) + ".tif"
+            tiff_device.process(document, i, i, target_file_name)
+```
+
 ## What's new in Aspose.PDF 26.2
 
 Aspose.PDF 26.2 introduces support for RTF to PDF conversion. This feature allows developers to directly convert Rich Text Format (RTF) documents into PDF files.
