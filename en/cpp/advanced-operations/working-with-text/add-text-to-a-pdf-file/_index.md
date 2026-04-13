@@ -476,7 +476,7 @@ void CustomFootNote_Line() {
 
 We can set Footnote Label (note identifier) formatting using TextState object as following:
 
-```csharp
+```cpp
 void AddCustomFootNoteLabel() {
     
     String _dataDir("C:\\Samples\\");

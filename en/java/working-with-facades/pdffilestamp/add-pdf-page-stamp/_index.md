@@ -12,7 +12,7 @@ draft: false
 
 [PdfFileStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp) class allows you to add PDF page stamp on all the pages of a PDF file. In order to add PDF page stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp) and [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Stamp) classes. You also need to create the PDF page stamp using [PdfFileStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp)  method of [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Stamp) class. You can set other attributes like origin, rotation, background etc. using [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Stamp) object as well. Then you can add the stamp in the PDF file using [addStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp#addStamp-com.aspose.pdf.facades.Stamp-) method of [PdfFileStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp) class. Finally, save the output PDF file using [close](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp#close--) method of [PdfFileStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp) class. The following code snippet shows you how to add PDF page stamp on all pages in a PDF file.
 
-```csharp
+```java
 public static void AddPageStampOnAllPages()
         {
             // Create PdfFileStamp object
@@ -43,37 +43,37 @@ public static void AddPageStampOnAllPages()
 
 [PdfFileStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp) class allows you to add PDF page stamp on particular pages of a PDF file. In order to add PDF page stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp) and [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Stamp) classes. You also need to create the PDF page stamp using [bindPdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Stamp#bindPdf-java.lang.String-int-) method of [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Stamp) class. You can set other attributes like origin, rotation, background etc. using [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Stamp) object as well. As you want to add PDF page stamp on particular pages of the PDF file, you also need to set the [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Stamp#setPages-int:A-) property of the [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Stamp) class. This property requires an integer array containing numbers of the pages on which you want to add the stamp. Then you can add the stamp in the PDF file using [addStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp#addStamp-com.aspose.pdf.facades.Stamp-) method of [PdfFileStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp) class. Finally, save the output PDF file using [close](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp#close--) method of [PdfFileStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileStamp) class. The following code snippet shows you how to add PDF page stamp on particular pages in a PDF file.
 
-```csharp
+```java
 public static void AddPageStampOnCertainPages()
-        {
-            // Create PdfFileStamp object
-            PdfFileStamp fileStamp = new PdfFileStamp();
+{
+    // Create PdfFileStamp object
+    PdfFileStamp fileStamp = new PdfFileStamp();
 
-            // Open Document
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Open Document
+    fileStamp.BindPdf(_dataDir + "sample.pdf");
 
-            // Create stamp
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
-            stamp.SetOrigin(20, 20);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
-            stamp.Pages = new[] { 1, 3 };
-            // Add stamp to PDF file
-            fileStamp.AddStamp(stamp);
+    // Create stamp
+    Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
+    stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
+    stamp.SetOrigin(20, 20);
+    stamp.Rotation = 90.0F;
+    stamp.IsBackground = true;
+    stamp.Pages = new[] { 1, 3 };
+    // Add stamp to PDF file
+    fileStamp.AddStamp(stamp);
 
-            // Save updated PDF file
-            fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
+    // Save updated PDF file
+    fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
 
-            // Close fileStamp
-            fileStamp.Close();
-        }
+    // Close fileStamp
+    fileStamp.Close();
+}
 
-        // Add PDF Page Numbers
-        public enum PageNumPosition
-        {
-            PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
-        }
+// Add PDF Page Numbers
+public enum PageNumPosition
+{
+    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
+}
 ```
 
 ## Add Page Number in a PDF File (facades)
