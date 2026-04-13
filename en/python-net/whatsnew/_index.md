@@ -12,6 +12,189 @@ lastmod: "2025-02-24"
 TechArticle: false 
 ---
 
+## What's new in Aspose.PDF 26.3
+
+In **Aspose.PDF for Python via .NET** 26.3, we have added:
+
+Lossless image stream recompression during PDF optimization. The OptimizationOptions.CompressAllContentStreams property now also compresses eligible image XObject streams with FlateDecode, helping reduce file size while keeping image quality intact.
+
+```python
+
+import aspose.pdf as ap
+
+def  optimize_pdf_with_loss_less_image_stream_recompression(infile, outfile):
+    with ap.Document(infile) as document:
+        optimize_options = ap.optimization.OptimizationOptions()
+        optimize_options.subset_fonts = True
+        optimize_options.allow_reuse_page_content = True
+        optimize_options.compress_objects = True
+        optimize_options.link_duplicate_streams = True
+        optimize_options.remove_unused_objects = True
+        optimize_options.remove_unused_streams = True
+        # Compress content streams and eligible image streams
+        optimize_options.compress_all_content_streams = True
+        # Optimize PDF document
+        document.optimize_resources(optimize_options)
+        # Save optimized PDF document
+        document.save(outfile)
+```
+
+Image recompression now matches the selected ImageCompressionOptions.Encoding setting during optimization, ensuring more consistent results when using Jpeg2000 or Flate, along with image resizing, resolution limits, and quality controls.
+
+```python
+
+import aspose.pdf as ap
+
+def optimize_pdf_images_with_selected_encoding(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as pdf:
+        # Configure optimization options
+        optimize_options = ap.optimization.OptimizationOptions()
+        optimize_options.allow_reuse_page_content = False
+        optimize_options.compress_objects = True
+        optimize_options.link_duplicate_streams = False
+        optimize_options.remove_unused_objects = True
+        optimize_options.remove_unused_streams = True
+        optimize_options.image_compression_options.compress_images = True
+        optimize_options.image_compression_options.resize_images = True
+        optimize_options.image_compression_options.max_resolution = 130
+        optimize_options.image_compression_options.image_quality = 100
+        optimize_options.image_compression_options.encoding = ap.optimization.ImageEncoding.FLATE
+        optimize_options.image_compression_options.version = ap.optimization.ImageCompressionVersion.MIXED
+
+        # Optimize PDF document resources
+        pdf.optimize_resources(optimize_options)
+        # Save optimized PDF document
+        pdf.save(outfile)
+```
+
+Support for rendering comments when saving PDF documents as images or HTML, helping to preserve visible review markup when exporting annotated documents for sharing outside PDF viewers.
+
+```python
+
+import aspose.pdf as ap
+
+def render_comments_to_image_and_html(infile, outfile, output_png):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        # Save the first page to PNG with comments rendered
+        device = ap.devices.PngDevice()
+        device.process(document.pages[1], output_png)
+        # Save the first page to HTML with comments rendered
+        options = ap.HtmlSaveOptions()
+        options.explicit_list_of_saved_pages = [1]
+        options.use_z_order = True
+        document.save(outfile, options)
+```
+
+Improved PDF-to-TIFF rendering performance for high-volume rasterization scenarios, especially when exporting pages to bitonal TIFF images.
+
+```python
+
+import aspose.pdf as ap
+
+def convert_pdf_to_tiff(infile, data_dir):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        # Create Resolution object
+        resolution = ap.devices.Resolution(300)
+
+        # Create TiffSettings object
+        tiff_settings = ap.devices.TiffSettings()
+        tiff_settings.compression = ap.devices.CompressionType.CCITT4
+        tiff_settings.shape = ap.devices.ShapeType.NONE
+        tiff_settings.skip_blank_pages = False
+        tiff_settings.depth = ap.devices.ColorDepth.FORMAT_1BPP
+
+        # Create TIFF device
+        tiff_device = ap.devices.TiffDevice(resolution, tiff_settings)
+        for i in range(1, len(document.pages) + 1):
+            target_file_name = data_dir + "Asposeout-" + str(i) + ".tif"
+            tiff_device.process(document, i, i, target_file_name)
+```
+
+## What's new in Aspose.PDF 26.2
+
+Aspose.PDF 26.2 introduces support for RTF to PDF conversion. This feature allows developers to directly convert Rich Text Format (RTF) documents into PDF files.
+
+RTF is a widely supported, cross-platform document format originally developed by Microsoft. It is designed to enable document exchange between different word processing applications while preserving basic formatting such as fonts, colors, bold and italic text, as well as embedded images.
+
+```python
+
+import aspose.pdf as ap
+
+def convert_rtf_to_pdf(infile, outfile):
+    # Initialize RTF load options
+    options = ap.RtfLoadOptions()
+    # Open RTF document
+    with ap.Document(infile, options) as document:
+        # Save PDF document
+        document.save(outfile)
+```
+
+This code snippet shows how to insert a table after the existing content on a PDF page using Aspose.PDF for Python.
+
+The script opens an existing PDF document and calculates the bounding box of the current content on the first page. Using this information, it finds where the existing content ends and positions a new table below the last element, leaving a specified margin before the table starts.
+
+A table is then created and filled with multiple rows and columns using a loop. After setting up the table structure and content, the table is added to the page’s paragraph collection. Finally, the updated document is saved as a new PDF file.
+
+```python
+
+import aspose.pdf as ap
+
+def add_table_after_last_element(infile, outfile):
+    # Load source PDF document
+    with ap.Document(infile) as document:
+        # Initializes a new instance of the Table
+        table = ap.Table()
+        # Determine the existing content area on the page
+        content_area_lly = document.pages[1].calculate_content_b_box().lly
+        top_margin = 20
+        # Add the table after the existing content, with the 20pt margin before the table.
+        table.top = document.pages[1].rect.height - (content_area_lly - top_margin)
+        # Set the top margin for the new pages added.
+        document.page_info.margin.top = top_margin
+        # Create a loop to add 10 rows
+        for row_count in range(1, 11):
+            # Add row to table
+            row = table.rows.add()
+            # Add table cells
+            row.cells.add("Column (" + str(row_count) + ", 1)")
+            row.cells.add("Column (" + str(row_count) + ", 2)")
+            row.cells.add("Column (" + str(row_count) + ", 3)")
+
+        # Add table object to first page of input document
+        document.pages[1].paragraphs.add(table)
+        # Save updated document containing table object
+        document.save(outfile)
+```
+
+Detect and remove invisible text from a PDF document using Aspose.PDF for Python:
+
+```python
+
+import aspose.pdf as ap
+
+def remove_invisible_text(infile, outfile):
+    with ap.Document(infile) as pdf_doc:
+        for page in pdf_doc.pages:
+            absorber = ap.text.TextFragmentAbsorber()
+            page.accept(absorber)
+            fragments_to_remove = [ x for x in absorber.text_fragments
+                if (
+                    x.text_state.invisible
+                    or x.text_state.rendering_mode == ap.text.TextRenderingMode.INVISIBLE
+                    or (
+                        x.text_state.foreground_color is not None
+                        and x.text_state.foreground_color.a == 0
+                    )
+                )]
+            for fragment in fragments_to_remove:
+                absorber.text_fragments.remove(fragment) # Now properly removes text from document
+        pdf_doc.save(outfile)
+```
+
+
 ## What's new in Aspose.PDF 26.1
 
 In **Aspose.PDF for Python via .NET** 26.1, we have added:
