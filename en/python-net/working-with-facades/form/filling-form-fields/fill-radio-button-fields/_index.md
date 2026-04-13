@@ -25,6 +25,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Fill Radio Button Fields
 def fill_radio_button_fields(infile, outfile):
     """Fill radio button fields in PDF form."""

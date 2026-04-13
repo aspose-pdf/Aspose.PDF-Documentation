@@ -39,6 +39,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Change User and Owner Password
 def change_user_and_owner_password(infile, outfile):
     """Change user and owner passwords while keeping existing security settings."""
@@ -79,6 +80,7 @@ import aspose.pdf.facades as pdf_facades
 sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
+
 
 # Change Password and Reset Security
 def change_password_and_reset_security(infile, outfile):
@@ -128,6 +130,7 @@ import aspose.pdf.facades as pdf_facades
 sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
+
 
 # Try Change Password Without Exception
 def try_change_password_without_exception(infile, outfile):

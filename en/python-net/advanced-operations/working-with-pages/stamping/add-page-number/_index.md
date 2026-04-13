@@ -30,12 +30,12 @@ Add dynamic page number stamps to a PDF [`Document`](https://reference.aspose.co
 1. Save the modified PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_page_num_stamp(input_file_name, output_file_name):
     # Open document
@@ -75,12 +75,12 @@ Add page numbers in Roman numeral format to all pages of a PDF document. The pag
 1. Save the modified PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_page_num_stamp_roman(input_file_name, output_file_name):
     # Open document

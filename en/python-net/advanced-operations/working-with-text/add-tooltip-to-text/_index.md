@@ -28,13 +28,13 @@ This code snippet shows how to overlay invisible [`ButtonField`](https://referen
 1. Save the final document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_tool_tip_to_searched_text(outfile):
     """
@@ -78,7 +78,9 @@ def add_tool_tip_to_searched_text(outfile):
     # Open document with text
     with ap.Document(outfile) as document:
         # Create TextAbsorber object to find all the phrases matching the regular expression
-        absorber = ap.text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip")
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display a tooltip"
+        )
         # Accept the absorber for the document pages
         document.pages.accept(absorber)
         # Get the extracted text fragments
@@ -94,21 +96,25 @@ def add_tool_tip_to_searched_text(outfile):
             document.form.add(field)
 
         # Next will be sample of very long tooltip
-        absorber = ap.text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip")
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display a very long tooltip"
+        )
         document.pages.accept(absorber)
         text_fragments = absorber.text_fragments
 
         for fragment in text_fragments:
             field = ap.forms.ButtonField(fragment.page, fragment.rectangle)
             # Set very long text
-            field.alternate_name = ("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
-                                    " sed do eiusmod tempor incididunt ut labore et dolore magna"
-                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                                    " Duis aute irure dolor in reprehenderit in voluptate velit"
-                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
-                                    " occaecat cupidatat non proident, sunt in culpa qui officia"
-                                    " deserunt mollit anim id est laborum.")
+            field.alternate_name = (
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                " sed do eiusmod tempor incididunt ut labore et dolore magna"
+                " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                " ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                " Duis aute irure dolor in reprehenderit in voluptate velit"
+                " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                " occaecat cupidatat non proident, sunt in culpa qui officia"
+                " deserunt mollit anim id est laborum."
+            )
             document.form.add(field)
 
         # Save document
@@ -130,13 +136,13 @@ Add interactive floating text to a PDF document. It overlays an invisible [`Butt
 1. Save the Final Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 import aspose.pydrawing as drawing
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_hidden_text_block(outfile):
     """
@@ -178,7 +184,9 @@ def create_hidden_text_block(outfile):
     # Open document with text
     with ap.Document(outfile) as document:
         # Create TextAbsorber object to find all the phrases matching the regular expression
-        absorber = ap.text.TextFragmentAbsorber("Move the mouse cursor here to display floating text")
+        absorber = ap.text.TextFragmentAbsorber(
+            "Move the mouse cursor here to display floating text"
+        )
         # Accept the absorber for the document pages
         document.pages.accept(absorber)
         # Get the first extracted text fragment
@@ -200,7 +208,9 @@ def create_hidden_text_block(outfile):
         floating_field.partial_name = "FloatingField_1"
 
         # Setting characteristics of field appearance isn't necessary but makes it better
-        floating_field.default_appearance = ap.annotations.DefaultAppearance("Helv", 10, drawing.Color.blue)
+        floating_field.default_appearance = ap.annotations.DefaultAppearance(
+            "Helv", 10, drawing.Color.blue
+        )
         floating_field.characteristics.background = drawing.Color.light_blue
         floating_field.characteristics.border = drawing.Color.dark_blue
         floating_field.border = ap.annotations.Border(floating_field)

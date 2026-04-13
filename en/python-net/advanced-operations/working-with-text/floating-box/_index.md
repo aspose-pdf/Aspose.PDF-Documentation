@@ -28,13 +28,13 @@ The [`FloatingBox`](https://reference.aspose.com/pdf/python-net/aspose.pdf/float
 1. Save the final PDF document using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_and_add_floating_box(outfile):
     """
@@ -102,13 +102,13 @@ If we set this property to `True` the text will reflow to subsequent pages in th
 * `column_count` is a number of columns.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def multi_column_layout(outfile):
     """
@@ -184,13 +184,13 @@ We used the additional library LoremNET in the above example and created 20 para
 We will do the same with the following example as the previous one. The difference is that we created 3 paragraphs. We can force FloatingBox to render each paragraph in the new column. To do that we need to set `is_first_paragraph_in_column` when we adding text to the FloatingBox object.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def multi_column_layout_2(outfile):
     """
@@ -270,13 +270,13 @@ A `FloatingBox` is a container for text or other elements, and by assigning a [`
 This code snippet shows how to create a simple light green text box with sample content.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def background_support(outfile):
     """
@@ -333,13 +333,13 @@ The location is determined by previously placed elements; adding an element affe
 The location is specified by the `Left` and `Top` values; it does not depend on previous elements and does not affect the location of subsequent ones.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def offset_support(outfile):
     """
@@ -397,13 +397,13 @@ Align `FloatingBox` elements within a PDF page using different [`VerticalAlignme
 1. Save the Document.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def align_text_to_float(outfile):
     """

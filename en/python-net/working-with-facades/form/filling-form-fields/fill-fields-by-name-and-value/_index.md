@@ -26,6 +26,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Fill Fields by Name and Value
 def fill_fields_by_name_and_value(infile, outfile):
     """Fill PDF form fields by name and value."""

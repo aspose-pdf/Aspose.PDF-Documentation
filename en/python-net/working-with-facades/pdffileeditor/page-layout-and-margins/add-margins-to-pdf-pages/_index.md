@@ -24,28 +24,28 @@ In this code snippet, the [PdfFileEditor](https://reference.aspose.com/pdf/pytho
 1. Save the updated PDF to the output file.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Add Margins to PDF Pages
-    def add_margins_to_pdf_pages(infile, outfile):
-        # Create a PdfFileEditor object
-        pdf_editor = pdf_facades.PdfFileEditor()
-        # Define the margins to be added (in points)
-        left_margin = 36  # 0.5 inch
-        right_margin = 36  # 0.5 inch
-        top_margin = 36  # 0.5 inch
-        bottom_margin = 36  # 0.5 inch
+# Add Margins to PDF Pages
+def add_margins_to_pdf_pages(infile, outfile):
+    # Create a PdfFileEditor object
+    pdf_editor = pdf_facades.PdfFileEditor()
+    # Define the margins to be added (in points)
+    left_margin = 36  # 0.5 inch
+    right_margin = 36  # 0.5 inch
+    top_margin = 36  # 0.5 inch
+    bottom_margin = 36  # 0.5 inch
 
-        pdf_editor.add_margins(
-            infile, outfile, [1, 3], left_margin, right_margin, top_margin, bottom_margin
-        )
+    pdf_editor.add_margins(
+        infile, outfile, [1, 3], left_margin, right_margin, top_margin, bottom_margin
+    )
 ```

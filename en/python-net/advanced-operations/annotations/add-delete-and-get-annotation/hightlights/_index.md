@@ -39,75 +39,73 @@ In order to add an Text Markup Annotation to the PDF document, we need to perfor
 ### Add Highlight Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+# Open document
+document = ap.Document(input_file)
 
-    # Open document
-    document = ap.Document(input_file)
-
-    # Create Circle Annotation
-    highlightAnnotation = ap.annotations.HighlightAnnotation(
-        document.pages[1], ap.Rectangle(300, 750, 320, 770, True)
-    )
-    document.pages[1].annotations.append(highlightAnnotation)
-    document.save(output_file)
+# Create Circle Annotation
+highlightAnnotation = ap.annotations.HighlightAnnotation(
+    document.pages[1], ap.Rectangle(300, 750, 320, 770, True)
+)
+document.pages[1].annotations.append(highlightAnnotation)
+document.save(output_file)
 ```
 
 ### Add StrikeOut Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
 
-    document = ap.Document(input_file)
+strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
+    document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
+)
+strikeoutAnnotation.title = "Aspose User"
+strikeoutAnnotation.subject = "Inserted text 1"
+strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
+strikeoutAnnotation.color = ap.Color.blue
 
-    strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
-        document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
-    )
-    strikeoutAnnotation.title = "Aspose User"
-    strikeoutAnnotation.subject = "Inserted text 1"
-    strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
-    strikeoutAnnotation.color = ap.Color.blue
-
-    document.pages[1].annotations.append(strikeoutAnnotation)
-    document.save(output_file)
+document.pages[1].annotations.append(strikeoutAnnotation)
+document.save(output_file)
 ```
 
 ### Add Squiggly Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+page = document.pages[1]
+squigglyAnnotation = ap.annotations.SquigglyAnnotation(
+    page, ap.Rectangle(67, 317, 261, 459, True)
+)
+squigglyAnnotation.title = "John Smith"
+squigglyAnnotation.color = ap.Color.blue
 
-    document = ap.Document(input_file)
-    page = document.pages[1]
-    squigglyAnnotation = ap.annotations.SquigglyAnnotation(page, ap.Rectangle(67, 317, 261, 459, True))
-    squigglyAnnotation.title = "John Smith"
-    squigglyAnnotation.color = ap.Color.blue
+page.annotations.append(squigglyAnnotation)
 
-    page.annotations.append(squigglyAnnotation)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 ### Add Underline Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
 
-    document = ap.Document(input_file)
+underlineAnnotation = ap.annotations.UnderlineAnnotation(
+    document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
+)
+underlineAnnotation.title = "Aspose User"
+underlineAnnotation.subject = "Inserted Underline 1"
+underlineAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
+underlineAnnotation.color = ap.Color.blue
 
-    underlineAnnotation = ap.annotations.UnderlineAnnotation(
-        document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
-    )
-    underlineAnnotation.title = "Aspose User"
-    underlineAnnotation.subject = "Inserted Underline 1"
-    underlineAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
-    underlineAnnotation.color = ap.Color.blue
-
-    document.pages[1].annotations.append(underlineAnnotation)
-    document.save(output_file)
+document.pages[1].annotations.append(underlineAnnotation)
+document.save(output_file)
 ```
 
 ## Get Text Markup Annotation
@@ -117,70 +115,66 @@ Please try using the following code snippet to Get Text Markup Annotation from P
 ### Get Highlight Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+highlightAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.HIGHLIGHT)
+]
 
-    document = ap.Document(input_file)
-    highlightAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.HIGHLIGHT)
-    ]
-
-    for ha in highlightAnnotations:
-        print(ha.rect)
+for ha in highlightAnnotations:
+    print(ha.rect)
 ```
 
 ### Get StrikeOut Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+StrikeoutAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.STRIKE_OUT)
+]
 
-    document = ap.Document(input_file)
-    StrikeoutAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.STRIKE_OUT)
-    ]
-
-    for pa in StrikeoutAnnotations:
-        print(pa.rect)
+for pa in StrikeoutAnnotations:
+    print(pa.rect)
 ```
 
 
 ### Get Squiggly Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+squigglyAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.SQUIGGLY)
+]
 
-    document = ap.Document(input_file)
-    squigglyAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.SQUIGGLY)
-    ]
-
-    for pa in squigglyAnnotations:
-        print(pa.rect)
+for pa in squigglyAnnotations:
+    print(pa.rect)
 ```
 
 ### Get Underline Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+UnderlineAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.UNDERLINE)
+]
 
-    document = ap.Document(input_file)
-    UnderlineAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.UNDERLINE)
-    ]
-
-    for ta in UnderlineAnnotations:
-        print(ta.rect)
+for ta in UnderlineAnnotations:
+    print(ta.rect)
 ```
 
 ## Delete Text Markup Annotation
@@ -190,78 +184,74 @@ The following code snippet shows how to Delete Text Markup Annotation from PDF f
 ### Delete Highlight Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+# Load the PDF file
+document = ap.Document(input_file)
+highlightAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.HIGHLIGHT)
+]
 
-    # Load the PDF file
-    document = ap.Document(input_file)
-    highlightAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.HIGHLIGHT)
-    ]
+for hs in highlightAnnotations:
+    document.pages[1].annotations.delete(hs)
 
-    for hs in highlightAnnotations:
-        document.pages[1].annotations.delete(hs)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 ### Delete Strikeout Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+StrikeoutAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.STRIKE_OUT)
+]
 
-    document = ap.Document(input_file)
-    StrikeoutAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.STRIKE_OUT)
-    ]
+for pa in StrikeoutAnnotations:
+    document.pages[1].annotations.delete(pa)
 
-    for pa in StrikeoutAnnotations:
-        document.pages[1].annotations.delete(pa)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 ### Delete Squiggly Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+squigglyAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.SQUIGGLY)
+]
 
-    document = ap.Document(input_file)
-    squigglyAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.SQUIGGLY)
-    ]
+for pa in squigglyAnnotations:
+    document.pages[1].annotations.delete(pa)
 
-    for pa in squigglyAnnotations:
-        document.pages[1].annotations.delete(pa)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 ### Delete Underline Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+underlineAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.UNDERLINE)
+]
 
-    document = ap.Document(input_file)
-    underlineAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.UNDERLINE)
-    ]
+for ta in underlineAnnotations:
+    document.pages[1].annotations.delete(ta)
 
-    for ta in underlineAnnotations:
-        document.pages[1].annotations.delete(ta)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 

@@ -34,6 +34,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Set PDF Privileges Without Passwords
 def set_pdf_privileges_without_passwords(infile, outfile):
     """Set PDF privileges without specifying user and owner passwords."""
@@ -76,6 +77,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Set PDF Privileges with User and Owner Passwords
 def set_pdf_privileges_with_passwords(infile, outfile):
     """Set PDF privileges using user and owner passwords."""
@@ -117,6 +119,7 @@ import aspose.pdf.facades as pdf_facades
 sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
+
 
 # Try Set PDF Privileges Without Exception
 def try_set_pdf_privileges_without_exception(infile, outfile):

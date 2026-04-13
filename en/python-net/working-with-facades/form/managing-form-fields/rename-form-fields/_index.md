@@ -26,6 +26,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Rename form fields
 def rename_form_fields(infile, outfile):
     """Rename form fields in a PDF document."""

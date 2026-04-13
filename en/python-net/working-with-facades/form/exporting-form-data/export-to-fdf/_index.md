@@ -25,6 +25,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Export Data to FDF
 def export_form_data_to_fdf(infile, outfile):
     """Export PDF form data to FDF file."""

@@ -34,6 +34,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Encrypt PDF with User and Owner Password
 def encrypt_pdf_with_user_owner_password(infile, outfile):
     """Encrypt a PDF document using user and owner passwords."""
@@ -76,6 +77,7 @@ import aspose.pdf.facades as pdf_facades
 sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
+
 
 # Encrypt PDF with Permissions
 def encrypt_pdf_with_permissions(infile, outfile):
@@ -120,6 +122,7 @@ import aspose.pdf.facades as pdf_facades
 sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
+
 
 # Encrypt PDF with Encryption Algorithm
 def encrypt_pdf_with_encryption_algorithm(infile, outfile):

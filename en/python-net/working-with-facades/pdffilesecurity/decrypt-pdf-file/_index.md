@@ -23,31 +23,31 @@ Decrypt a password-protected PDF document using the owner password with Aspose.P
 1. Save the decrypted PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Decrypt PDF with Owner Password
-    def decrypt_pdf_with_owner_password(infile, outfile):
-        """Decrypt a PDF document using the owner password."""
-        # Create PdfFileSecurity object
-        file_security = pdf_facades.PdfFileSecurity()
+# Decrypt PDF with Owner Password
+def decrypt_pdf_with_owner_password(infile, outfile):
+    """Decrypt a PDF document using the owner password."""
+    # Create PdfFileSecurity object
+    file_security = pdf_facades.PdfFileSecurity()
 
-        # Bind PDF document
-        file_security.bind_pdf(infile)
+    # Bind PDF document
+    file_security.bind_pdf(infile)
 
-        # Decrypt the PDF
-        file_security.decrypt_file("owner_password")
+    # Decrypt the PDF
+    file_security.decrypt_file("owner_password")
 
-        # Save decrypted PDF
-        file_security.save(outfile)
+    # Save decrypted PDF
+    file_security.save(outfile)
 ```
 
 ## Try Decrypt PDF Without Exception
@@ -60,32 +60,32 @@ PDF documents are often protected with passwords to restrict access and usage. T
 1. Save the Output PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Try Decrypt PDF Without Exception
-    def try_decrypt_pdf_without_exception(infile, outfile):
-        """Attempt to decrypt a PDF without throwing an exception on failure."""
-        # Create PdfFileSecurity object
-        file_security = pdf_facades.PdfFileSecurity()
+# Try Decrypt PDF Without Exception
+def try_decrypt_pdf_without_exception(infile, outfile):
+    """Attempt to decrypt a PDF without throwing an exception on failure."""
+    # Create PdfFileSecurity object
+    file_security = pdf_facades.PdfFileSecurity()
 
-        # Bind PDF document
-        file_security.bind_pdf(infile)
+    # Bind PDF document
+    file_security.bind_pdf(infile)
 
-        # Attempt to decrypt the PDF
-        result = file_security.try_decrypt_file("owner_password")
+    # Attempt to decrypt the PDF
+    result = file_security.try_decrypt_file("owner_password")
 
-        # Save only if decryption was successful
-        if result:
-            file_security.save(outfile)
-        else:
-            print("Decryption failed. Check password or document security.")
+    # Save only if decryption was successful
+    if result:
+        file_security.save(outfile)
+    else:
+        print("Decryption failed. Check password or document security.")
 ```

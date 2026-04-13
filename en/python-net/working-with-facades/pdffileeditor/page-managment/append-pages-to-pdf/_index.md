@@ -32,6 +32,7 @@ from os import path
 sys.path.append(path.join(path.dirname(__file__), ".."))
 from config import set_license, initialize_data_dir
 
+
 # Append Pages to PDF
 def append_pages_to_pdf(infile, sample_file, outfile):
     # Create a PdfFileEditor object

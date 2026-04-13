@@ -25,6 +25,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Extract XFA Data
 def export_xfa_data(infile, outfile):
     """Export XFA form data."""

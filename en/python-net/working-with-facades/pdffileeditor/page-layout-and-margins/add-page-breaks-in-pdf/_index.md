@@ -32,6 +32,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Add Page Breaks in PDF
 def add_page_breaks_in_pdf(infile, outfile):
     # Create a PdfFileEditor object

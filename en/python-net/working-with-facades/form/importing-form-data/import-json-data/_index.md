@@ -26,6 +26,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Import from JSON
 def import_json_to_pdf_form(infile, datafile, outfile):
     """Import form data from JSON file into PDF form fields."""

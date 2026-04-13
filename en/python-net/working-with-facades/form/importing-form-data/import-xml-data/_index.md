@@ -26,6 +26,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Import data from XML
 def import_xml_to_pdf_fields(infile, datafile, outfile):
     """Import form data from XML file into PDF form fields."""

@@ -22,9 +22,9 @@ It helps for extracting text from complex layouts—such as magazines, academic 
 1. Write out the extracted text.
 
 ```python
-
 import io
 import aspose.pdf as ap
+
 
 def extract_text_reduce_font(infile, outfile, reduce_ratio=0.7):
     """
@@ -50,7 +50,6 @@ def extract_text_reduce_font(infile, outfile, reduce_ratio=0.7):
     extracted_text = text_absorber.text
     with open(outfile, "w", encoding="utf-8") as tw:
         tw.write(extracted_text)
-
 ```
 
 ## Extract text with scale factor
@@ -64,8 +63,8 @@ It's useful for PDFs with columns, tables, or dense layouts, where scaling helps
 1. Write out the extracted text.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def extract_text_scale_factor(infile, outfile, scale_factor=0.5):
     """
@@ -77,7 +76,9 @@ def extract_text_scale_factor(infile, outfile, scale_factor=0.5):
     """
     doc = ap.Document(infile)
     text_absorber = ap.text.TextAbsorber()
-    ext_opts = ap.text.TextExtractionOptions(ap.text.TextExtractionOptions.TextFormattingMode.PURE)
+    ext_opts = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
     ext_opts.scale_factor = scale_factor
     text_absorber.extraction_options = ext_opts
     doc.pages.accept(text_absorber)

@@ -15,30 +15,30 @@ The check box is commonly used in PDF forms to represent binary choices such as 
 1. Save the updated Document.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Fill Check Box Fields
-    def fill_check_box_fields(infile, outfile):
-        """Fill check box fields in PDF form."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Fill Check Box Fields
+def fill_check_box_fields(infile, outfile):
+    """Fill check box fields in PDF form."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Fill check box fields by name
-        pdf_form.fill_field("subscribe_newsletter", "Yes")
-        pdf_form.fill_field("accept_terms", "Yes")
+    # Fill check box fields by name
+    pdf_form.fill_field("subscribe_newsletter", "Yes")
+    pdf_form.fill_field("accept_terms", "Yes")
 
-        # Save updated PDF
-        pdf_form.save(outfile)
+    # Save updated PDF
+    pdf_form.save(outfile)
 ```

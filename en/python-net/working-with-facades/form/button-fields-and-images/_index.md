@@ -33,6 +33,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Add image appearance to button fields
 def add_image_appearance_to_button_fields(infile, outfile):
     """Add image appearance to button fields in a PDF document."""

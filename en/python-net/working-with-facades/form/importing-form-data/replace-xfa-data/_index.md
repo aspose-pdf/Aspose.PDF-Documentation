@@ -26,6 +26,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Replace from XFA data
 def replace_xfa_data(infile, datafile, outfile):
     """Import form data from XFA file into PDF form fields."""

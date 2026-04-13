@@ -22,23 +22,23 @@ This article shows how to use the insert method of the [PdfFileEditor](https://r
 1. Insert Pages.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
-    from config import set_license, initialize_data_dir
 
-    # Insert Pages into PDF
-    def insert_pages_into_pdf(infile, sample_file, outfile):
-        # Create a PdfFileEditor object
-        pdf_editor = pdf_facades.PdfFileEditor()
+# Insert Pages into PDF
+def insert_pages_into_pdf(infile, sample_file, outfile):
+    # Create a PdfFileEditor object
+    pdf_editor = pdf_facades.PdfFileEditor()
 
-        # Define the page number where new pages will be inserted (1-based index)
-        insert_page_number = 2
+    # Define the page number where new pages will be inserted (1-based index)
+    insert_page_number = 2
 
-        pdf_editor.insert(infile, insert_page_number, sample_file, [1, 2], outfile)
+    pdf_editor.insert(infile, insert_page_number, sample_file, [1, 2], outfile)
 ```

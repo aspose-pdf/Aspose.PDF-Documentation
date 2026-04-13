@@ -27,24 +27,24 @@ Parameters:
 - 750 – the new height of the page content (in points).
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Resize PDF Page Contents
-    def resize_pdf_page_contents(infile, outfile):
-        # Create a PdfFileEditor object
-        pdf_editor = pdf_facades.PdfFileEditor()
+# Resize PDF Page Contents
+def resize_pdf_page_contents(infile, outfile):
+    # Create a PdfFileEditor object
+    pdf_editor = pdf_facades.PdfFileEditor()
 
-        if not pdf_editor.resize_contents(
-            FileIO(infile), FileIO(outfile, "w"), [1, 3], 400, 750
-        ):
-            raise Exception("Failed to resize PDF page contents.")
+    if not pdf_editor.resize_contents(
+        FileIO(infile), FileIO(outfile, "w"), [1, 3], 400, 750
+    ):
+        raise Exception("Failed to resize PDF page contents.")
 ```

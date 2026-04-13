@@ -38,6 +38,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Create N-Up PDF Document
 def create_nup_pdf_document(infile, outfile):
     # Create NUpMaker object
@@ -71,6 +72,7 @@ from os import path
 sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
+
 
 # Create N-Up PDF Document
 def try_create_nup_pdf_document(infile, outfile):

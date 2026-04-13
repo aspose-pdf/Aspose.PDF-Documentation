@@ -36,6 +36,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Define ViewerPreference flags
 class ViewerPreference(IntFlag):
     HIDE_TOOLBAR = 1

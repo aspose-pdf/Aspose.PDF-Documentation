@@ -22,24 +22,24 @@ Learn how to use the extract method of the [PdfFileEditor](https://reference.asp
 1. Extract the Pages.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
-    from config import set_license, initialize_data_dir
 
-    # Extract Pages from PDF
-    def extract_pages_from_pdf(infile, outfile):
-        # Create a PdfFileEditor object
-        pdf_editor = pdf_facades.PdfFileEditor()
+# Extract Pages from PDF
+def extract_pages_from_pdf(infile, outfile):
+    # Create a PdfFileEditor object
+    pdf_editor = pdf_facades.PdfFileEditor()
 
-        # Define the page numbers to be extracted (1-based index)
-        pages_to_extract = [1, 4, 3]
+    # Define the page numbers to be extracted (1-based index)
+    pages_to_extract = [1, 4, 3]
 
-        # Extract the specified pages from the PDF document and save to a new PDF document
-        pdf_editor.extract(infile, pages_to_extract, outfile)
+    # Extract the specified pages from the PDF document and save to a new PDF document
+    pdf_editor.extract(infile, pages_to_extract, outfile)
 ```

@@ -19,9 +19,9 @@ Background images can be used to add a watermark, or other subtle design, to doc
 The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object with Python.
 
 ```python
-
 import aspose.pdf as ap
 import io
+
 
 def add_background_image(input_image_file, output_pdf):
     # Create a new PDF document

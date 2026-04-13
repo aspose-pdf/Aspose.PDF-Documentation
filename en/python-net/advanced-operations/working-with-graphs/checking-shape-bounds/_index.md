@@ -21,31 +21,32 @@ This article provides a detailed guide on using the bounds-checking feature in t
 1. Add the [Rectangle](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/rectangle/) to the Graph
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.drawing as drawing
+import datetime
 
-    import aspose.pdf as ap
-    import aspose.pdf.drawing as drawing
-    import datetime
+# Create Document instance
+document = ap.Document()
 
-    # Create Document instance
-    document = ap.Document()
+# Add page to pages collection of PDF file
+page = document.pages.add()
 
-    # Add page to pages collection of PDF file
-    page = document.pages.add()
+# Create a Graph object with specified dimensions
+graph = ap.drawing.Graph(100, 100)
+graph.top = 10
+graph.left = 15
+graph.border = ap.BorderInfo(ap.BorderSide.BOX, 1, ap.Color.black)
+page.paragraphs.add(graph)
 
-    # Create a Graph object with specified dimensions
-    graph = ap.drawing.Graph(100, 100)
-    graph.top = 10
-    graph.left = 15
-    graph.border = ap.BorderInfo(ap.BorderSide.BOX, 1, ap.Color.black)
-    page.paragraphs.add(graph)
+# Create a shape object(for example, Rectangle) with specified dimensions
+rect = drawing.Rectangle(-1, 0, 50, 50)
+rect.graph_info.fill_color = ap.Color.tomato
 
-    # Create a shape object(for example, Rectangle) with specified dimensions
-    rect = drawing.Rectangle(-1, 0, 50, 50)
-    rect.graph_info.fill_color = ap.Color.tomato
+# Set the BoundsCheck mode to THROW_EXCEPTION_IF_DOES_NOT_FIT
+graph.shapes.update_bounds_check_mode(
+    ap.BoundsCheckMode.THROW_EXCEPTION_IF_DOES_NOT_FIT
+)
 
-    # Set the BoundsCheck mode to THROW_EXCEPTION_IF_DOES_NOT_FIT
-    graph.shapes.update_bounds_check_mode(ap.BoundsCheckMode.THROW_EXCEPTION_IF_DOES_NOT_FIT)
-
-    # Add the rectangle to the graph
-    graph.shapes.add(rect)
+# Add the rectangle to the graph
+graph.shapes.add(rect)
 ```            

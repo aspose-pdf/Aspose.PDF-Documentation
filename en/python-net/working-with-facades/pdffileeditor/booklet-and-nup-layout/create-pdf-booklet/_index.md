@@ -34,6 +34,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Create PDF Booklet
 def create_pdf_booklet(infile, outfile):
     # Create BookletMaker object

@@ -15,28 +15,28 @@ XFDF is an XML representation of PDF form data that allows developers to transfe
 1. Export Form Data. Call 'export_xfdf()' to extract and save form field values in XFDF format.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Export Data to XFDF
-    def export_pdf_form_to_xfdf(infile, outfile):
-        """Export PDF form data to XFDF file."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Export Data to XFDF
+def export_pdf_form_to_xfdf(infile, outfile):
+    """Export PDF form data to XFDF file."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Create XFDF file stream
-        with open(outfile, "wb") as xfdf_output_stream:
-            # Export form data to XFDF file
-            pdf_form.export_xfdf(xfdf_output_stream)
+    # Create XFDF file stream
+    with open(outfile, "wb") as xfdf_output_stream:
+        # Export form data to XFDF file
+        pdf_form.export_xfdf(xfdf_output_stream)
 ```

@@ -26,6 +26,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Import Data from XFDF
 def import_data_from_xfdf(infile, datafile, outfile):
     """Import form data from XFDF file into PDF form fields."""
