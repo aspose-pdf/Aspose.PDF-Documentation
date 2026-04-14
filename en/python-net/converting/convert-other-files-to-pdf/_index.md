@@ -1,11 +1,11 @@
 ---
-title: Convert other file formats to PDF in Python
+title: Convert Other File Formats to PDF in Python
 linktitle: Convert other file formats to PDF
 type: docs
 weight: 80
 url: /python-net/convert-other-files-to-pdf/
-lastmod: "2025-09-01"
-description: This topic show you how to Aspose.PDF allows to convert other file formats such as EPUB, MD, PCL, XPS, PS, XML and LaTeX to PDF document.
+lastmod: "2026-04-14"
+description: Learn how to convert EPUB, Markdown, PCL, XPS, PostScript, XML, and LaTeX files to PDF in Python with Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -73,6 +73,7 @@ document.save(path_outfile)
 
 print(infile + " converted into " + outfile)
 ```
+
 ## Convert OFD to PDF
 
 OFD stands for Open Fixed-layout Document (sometimes called Open Fixed Document format). It is a Chinese national standard (GB/T 33190-2016) for electronic documents, introduced as an alternative to PDF.
@@ -424,3 +425,9 @@ def convert_XML_to_PDF(template, infile, outfile):
 
     print(infile + " converted into " + outfile)
 ```
+
+## Related conversions
+
+- [Convert HTML to PDF](/pdf/python-net/convert-html-to-pdf/) for HTML and MHTML conversion scenarios.
+- [Convert image formats to PDF](/pdf/python-net/convert-images-format-to-pdf/) when your inputs are PNG, JPEG, TIFF, SVG, or other images.
+- [Convert PDF to other formats](/pdf/python-net/convert-pdf-to-other-files/) if you also need reverse conversions such as PDF to EPUB, Markdown, or text.
