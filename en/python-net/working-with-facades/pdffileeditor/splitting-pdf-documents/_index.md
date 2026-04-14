@@ -13,6 +13,10 @@ AlternativeHeadline: Split PDF Documents in Python - From Beginning, to End, or 
 Abstract: Learn how to split PDF documents programmatically using Aspose.PDF for Python. This guide demonstrates methods to extract pages from the beginning or end, divide a PDF into multiple documents, or split it into single-page PDFs for flexible document management.   
 ---
 
+Splitting PDF documents is useful when you need to extract selected sections, distribute individual pages, or break large files into smaller units for storage and processing. Aspose.PDF for Python provides several `PdfFileEditor` methods to handle these scenarios efficiently.
+
+## PDF splitting tutorials
+
 - [Split PDF from Beginning](/pdf/python-net/split-pdf-from-beginning/)
 - [Split PDF to End](/pdf/python-net/split-pdf-to-end/)
 - [Split PDF into Single Pages](/pdf/python-net/split-pdf-into-single-pages/)
