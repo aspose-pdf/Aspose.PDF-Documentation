@@ -32,6 +32,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def sign_pdf_with_basic_parameters(infile, outfile, certificate_path):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -58,6 +59,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def sign_pdf_with_certificate_object(infile, outfile, certificate_path):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -76,6 +78,7 @@ If your document workflow relies on a predefined signature field name, pass that
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def sign_pdf_with_named_signature(infile, outfile, certificate_path):
     pdf_signature = create_pdf_file_signature(infile)
@@ -105,6 +108,7 @@ You can make the signature visible on the PDF page by assigning a custom appeara
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def apply_visible_signature(infile, outfile, certificate_path):
     pdf_signature = create_pdf_file_signature(infile)

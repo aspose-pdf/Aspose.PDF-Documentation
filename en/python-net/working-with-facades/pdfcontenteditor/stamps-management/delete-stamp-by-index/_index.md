@@ -32,31 +32,32 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def move_stamp_by_index(infile, outfile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
 
-	content_editor.create_rubber_stamp(
-		2,
-		apd.Rectangle(200, 380, 180, 60),
-		"Draft",
-		"Draft stamp for ID-based operations",
-		apd.Color.orange,
-	)
+    content_editor.create_rubber_stamp(
+        2,
+        apd.Rectangle(200, 380, 180, 60),
+        "Draft",
+        "Draft stamp for ID-based operations",
+        apd.Color.orange,
+    )
 
-	content_editor.create_rubber_stamp(
-		2,
-		apd.Rectangle(200, 480, 180, 60),
-		"Draft",
-		"Draft stamp for ID-based operations",
-		apd.Color.orange,
-	)
-	content_editor.save(outfile)
+    content_editor.create_rubber_stamp(
+        2,
+        apd.Rectangle(200, 480, 180, 60),
+        "Draft",
+        "Draft stamp for ID-based operations",
+        apd.Color.orange,
+    )
+    content_editor.save(outfile)
 
-	# Move first stamp on page 1 by index
-	# content_editor.move_stamp(1, 1, 10, 10)
-	# Save updated document
-	content_editor.save(outfile)
+    # Move first stamp on page 1 by index
+    # content_editor.move_stamp(1, 1, 10, 10)
+    # Save updated document
+    content_editor.save(outfile)
 ```

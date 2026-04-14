@@ -25,30 +25,32 @@ Using the [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.fa
 1. Save the updated PDF document.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def set_submit_url(input_file_name, output_file_name):
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor()
+def set_submit_url(input_file_name, output_file_name):
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor()
 
-        # Set license
-        set_license()
+    # Set license
+    set_license()
 
-        # Open input PDF file
-        form_editor.bind_pdf(input_file_name)
+    # Open input PDF file
+    form_editor.bind_pdf(input_file_name)
 
-        # Set submit URL for the button
-        if not form_editor.set_submit_url("Script_Demo_Button", "http://www.example.com/submit"):
-            raise Exception("Failed to set submit URL")
+    # Set submit URL for the button
+    if not form_editor.set_submit_url(
+        "Script_Demo_Button", "http://www.example.com/submit"
+    ):
+        raise Exception("Failed to set submit URL")
 
-        # Save output PDF file
-        form_editor.save(output_file_name)
+    # Save output PDF file
+    form_editor.save(output_file_name)
 ```

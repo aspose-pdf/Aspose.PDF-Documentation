@@ -26,8 +26,8 @@ Add a watermark artifact to a PDF [`Document`](https://reference.aspose.com/pdf/
 1. Save the updated [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
-
 import aspose.pdf as ap
+
 
 def add_watermark(input_pdf, output_pdf):
     # Load the existing PDF document

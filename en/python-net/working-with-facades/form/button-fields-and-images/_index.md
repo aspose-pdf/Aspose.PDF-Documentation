@@ -23,33 +23,33 @@ This code snippet explains how to add an image appearance to an existing button 
 1. Save the Updated PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Add image appearance to button fields
-    def add_image_appearance_to_button_fields(infile, outfile):
-        """Add image appearance to button fields in a PDF document."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Add image appearance to button fields
+def add_image_appearance_to_button_fields(infile, outfile):
+    """Add image appearance to button fields in a PDF document."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Add image appearance to button fields by providing the field name and image stream
-        image_path = infile.replace(".pdf", ".jpg")
-        with open(image_path, "rb") as image_stream:
-            pdf_form.fill_image_field("Image1_af_image", image_stream)
+    # Add image appearance to button fields by providing the field name and image stream
+    image_path = infile.replace(".pdf", ".jpg")
+    with open(image_path, "rb") as image_stream:
+        pdf_form.fill_image_field("Image1_af_image", image_stream)
 
-        # Save updated PDF
-        pdf_form.save(outfile)
+    # Save updated PDF
+    pdf_form.save(outfile)
 ```
 
 ## Get Submit Flags
@@ -60,24 +60,24 @@ Python library helps you to retrieve the submit flags of a submit button in a PD
 1. Call get_submit_flags() on the form object using the fully qualified submit button name.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def get_submit_flags(infile, outfile):
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+def get_submit_flags(infile, outfile):
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)    
-        flags=pdf_form.get_submit_flags("Submit1_af_submit")
-        
-        print(f"Submit flags: {flags}")
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
+    flags = pdf_form.get_submit_flags("Submit1_af_submit")
+
+    print(f"Submit flags: {flags}")
 ```

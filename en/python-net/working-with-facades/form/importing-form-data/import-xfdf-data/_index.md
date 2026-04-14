@@ -16,31 +16,31 @@ XFDF (XML Forms Data Format) is an XML representation of PDF form data designed 
 1. Save the updated Document.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Import Data from XFDF
-    def import_data_from_xfdf(infile, datafile, outfile):
-        """Import form data from XFDF file into PDF form fields."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Import Data from XFDF
+def import_data_from_xfdf(infile, datafile, outfile):
+    """Import form data from XFDF file into PDF form fields."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Open XFDF file as stream
-        with open(datafile, 'rb') as xfdf_input_stream:
-            # Import data from XFDF into PDF form fields
-            pdf_form.import_xfdf(xfdf_input_stream)
+    # Open XFDF file as stream
+    with open(datafile, "rb") as xfdf_input_stream:
+        # Import data from XFDF into PDF form fields
+        pdf_form.import_xfdf(xfdf_input_stream)
 
-        # Save updated PDF
-        pdf_form.save(outfile)
+    # Save updated PDF
+    pdf_form.save(outfile)
 ```

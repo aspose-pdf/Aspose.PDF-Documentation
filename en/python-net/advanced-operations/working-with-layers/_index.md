@@ -33,8 +33,8 @@ Available methods and property on the [`Layer`](https://reference.aspose.com/pdf
 1. Save the updated document using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
-
 import aspose.pdf as ap
+
 
 def lock_layer(path_infile, path_outfile):
     with ap.Document(path_infile) as document:
@@ -55,8 +55,8 @@ Aspose.PDF allows you to extract each [`Layer`](https://reference.aspose.com/pdf
 To create a new PDF from a layer, the following code snippet can be used (the `layers` collection is accessed via `Page.layers`):
 
 ```python
-
 import aspose.pdf as ap
+
 
 def save_layers(path_infile, path_outfile):
     with ap.Document(path_infile) as document:
@@ -70,9 +70,9 @@ def save_layers(path_infile, path_outfile):
 You can also save layers into a stream:
 
 ```python
-
 import aspose.pdf as ap
 import io
+
 
 def save_layers_to_stream(path_infile):
     with ap.Document(path_infile) as document:
@@ -91,8 +91,8 @@ def save_layers_to_stream(path_infile):
 Flattening makes a [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) permanent on the page, removing its toggle functionality.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def flatten_layers(path_infile, path_outfile):
     with ap.Document(path_infile) as document:
@@ -117,8 +117,8 @@ Methods on the [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/p
  - `page.merge_layers(new_layer_name, new_optional_content_group_id)` — merge using a custom optional content group ID (see [`Page.MergeLayers()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods)).
 
 ```python
-
 import aspose.pdf as ap
+
 
 def merge_layers(path_infile, path_outfile, new_layer_name, optional_group_id=None):
     with ap.Document(path_infile) as document:

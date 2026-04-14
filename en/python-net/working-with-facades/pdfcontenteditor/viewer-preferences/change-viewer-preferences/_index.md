@@ -36,6 +36,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 # Define ViewerPreference flags
 class ViewerPreference(IntFlag):
     HIDE_TOOLBAR = 1
@@ -56,6 +57,7 @@ class ViewerPreference(IntFlag):
     PAGE_LAYOUT_TWO_COLUMN_RIGHT = 32768
     PAGE_LAYOUT_TWO_PAGE_LEFT = 65536
     PAGE_LAYOUT_TWO_PAGE_RIGHT = 131072
+
 
 def change_viewer_preferences(infile, outfile):
     # Create PdfContentEditor object

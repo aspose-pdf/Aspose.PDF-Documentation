@@ -29,6 +29,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def extract_signature_image(infile, outfile):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -47,6 +48,7 @@ Use `extract_certificate()` when you need the certificate data attached to a sig
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def extract_signature_certificate(infile, outfile):
     pdf_signature = create_pdf_file_signature(infile)

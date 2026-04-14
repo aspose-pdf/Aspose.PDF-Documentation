@@ -23,20 +23,20 @@ This code snippet shows how to use the append method of the [PdfFileEditor](http
 The specified pages from the secondary PDF document are appended to the end of the original PDF, creating a combined output file.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
-    from config import set_license, initialize_data_dir
 
-    # Append Pages to PDF
-    def append_pages_to_pdf(infile, sample_file, outfile):
-        # Create a PdfFileEditor object
-        pdf_editor = pdf_facades.PdfFileEditor()
-        # Append pages from the specified PDF document to the end of the source PDF document
-        pdf_editor.append(infile, [sample_file], 1, 2, outfile)    
+# Append Pages to PDF
+def append_pages_to_pdf(infile, sample_file, outfile):
+    # Create a PdfFileEditor object
+    pdf_editor = pdf_facades.PdfFileEditor()
+    # Append pages from the specified PDF document to the end of the source PDF document
+    pdf_editor.append(infile, [sample_file], 1, 2, outfile)
 ```

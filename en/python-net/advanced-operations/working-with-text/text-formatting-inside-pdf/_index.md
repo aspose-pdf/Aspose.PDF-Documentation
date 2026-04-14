@@ -34,7 +34,6 @@ Our code snippet shows how to control line spacing in a PDF document. It reads t
 1. Save the document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -42,6 +41,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def specify_line_spacing_simple_case(outfile):
     """
@@ -107,7 +107,6 @@ The example shows how line spacing behavior can vary depending on the selected m
 1. Save the finished document to the specified output location.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -115,6 +114,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def specify_line_spacing_specific_case(outfile):
     """
@@ -185,7 +185,6 @@ Character spacing determines the distance between individual characters in a lin
 1. Save the Document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -193,6 +192,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def character_spacing_using_text_fragment(outfile):
     """
@@ -259,7 +259,6 @@ Using TextParagraph is ideal when you need precise control over text placement a
 1. Save the PDF document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -267,6 +266,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def character_spacing_using_text_paragraph(outfile):
     """
@@ -345,7 +345,6 @@ Each list item is prefixed with a bullet character (•) and added as a separate
 1. Save the PDF document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -353,6 +352,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_bullet_list(outfile):
     """
@@ -408,7 +408,6 @@ Each list item is prefixed with its number (e.g., 1., 2.) and added as a separat
 1. Save the PDF document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -416,6 +415,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_numbered_list(outfile):
     """
@@ -476,7 +476,6 @@ Our library shows how to create a bulleted (unordered) list in a PDF document us
 1. Save the PDF document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -484,6 +483,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_bullet_list_html_version(outfile):
     """
@@ -544,7 +544,6 @@ Using HTML fragments enables you to incorporate HTML-based formatting features, 
 1. Save the PDF document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -552,6 +551,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_numbered_list_html_version(outfile):
     """
@@ -610,7 +610,6 @@ Create a bulleted (unordered) list in a PDF using LaTeX fragments (TeXFragment).
 1. Save the PDF document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -618,6 +617,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_bullet_list_latex_version(outfile):
     """
@@ -678,7 +678,6 @@ Create a numbered (ordered) list in a PDF using LaTeX fragments (TeXFragment). I
 1. Save the PDF document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -686,6 +685,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_numbered_list_latex_version(outfile):
     """Create a numbered list using LaTeX."""
@@ -724,7 +724,6 @@ Add a footnote to a text fragment in a PDF document using Aspose.PDF for Python 
 1. Save the Document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -732,6 +731,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_footnote(outfile):
     """Add footnote to a PDF document."""
@@ -766,7 +766,6 @@ def add_footnote(outfile):
 1. Save the Document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -774,6 +773,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_footnote_custom_text_style(outfile):
     """Add footnote with custom text style."""
@@ -814,7 +814,6 @@ Add footnotes to text fragments in a PDF document using Aspose.PDF for Python vi
 1. Save the Document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -822,6 +821,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_footnote_custom_text(outfile):
     """
@@ -878,7 +878,6 @@ Customize the visual appearance of footnote lines in a PDF document with Python 
 1. Save the final document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -886,6 +885,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_footnote_with_custom_line_style(outfile):
     """
@@ -936,7 +936,6 @@ How to enrich footnotes in a PDF document by embedding images, styled text, and 
 1. Save the Document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -944,6 +943,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_footnote_with_image_and_table(outfile):
     """
@@ -1007,7 +1007,6 @@ This code snippet demonstrates how to add an endnote to a text fragment in a PDF
 1. Save the Document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -1015,6 +1014,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_endnote(outfile):
     """Add endnote to a PDF document.
@@ -1070,7 +1070,6 @@ Add an endnote to a text fragment in a PDF document, with a custom marker symbol
 1. Save the PDF document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -1078,6 +1077,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_endnote_custom_text(outfile):
     """
@@ -1137,7 +1137,6 @@ By setting the property 'is_in_new_page', you can precisely control page layout 
 1. Save the document.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -1145,6 +1144,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def force_new_page(output_file_name):
     """
@@ -1214,7 +1214,6 @@ The third text fragment starts a new paragraph, demonstrating the default line-b
 1. Save the PDF.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -1222,6 +1221,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def using_inline_paragraph_property(output_file_name):
     """
@@ -1300,7 +1300,6 @@ It showcases how to combine text, HTML formatting, and graphics within a Floatin
 1. Save the final PDF.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -1308,6 +1307,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_multi_column_pdf(output_file_name):
     """
@@ -1425,7 +1425,6 @@ By defining tab stop positions, alignments, and leader styles, you can align tex
 1. Save the PDF.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Color
 from aspose.pdf.drawing import Graph, Line
@@ -1433,6 +1432,7 @@ import os
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def custom_tab_stops(output_file_name):
     """

@@ -32,23 +32,24 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def move_stamp_by_id_example(infile, outfile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
 
-	content_editor.create_rubber_stamp(
-		1,
-		apd.Rectangle(300, 420, 180, 60),
-		"Approved",
-		"Move this stamp by ID",
-		apd.Color.green,
-	)
+    content_editor.create_rubber_stamp(
+        1,
+        apd.Rectangle(300, 420, 180, 60),
+        "Approved",
+        "Move this stamp by ID",
+        apd.Color.green,
+    )
 
-	# Move stamp by ID overload
-	content_editor.move_stamp_by_id(1, 1, 240, 360)
+    # Move stamp by ID overload
+    content_editor.move_stamp_by_id(1, 1, 240, 360)
 
-	# Save updated document
-	content_editor.save(outfile)
+    # Save updated document
+    content_editor.save(outfile)
 ```    

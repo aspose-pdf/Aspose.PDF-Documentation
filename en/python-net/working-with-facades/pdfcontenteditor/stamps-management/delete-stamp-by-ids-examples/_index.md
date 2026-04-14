@@ -35,33 +35,34 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def delete_stamp_by_ids_examples(infile, outfile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
 
-	# Create two stamps on page 1 so they can be deleted by ID
-	content_editor.create_rubber_stamp(
-		1,
-		apd.Rectangle(120, 320, 180, 60),
-		"Draft",
-		"Delete by single ID",
-		apd.Color.orange,
-	)
-	content_editor.create_rubber_stamp(
-		1,
-		apd.Rectangle(120, 250, 180, 60),
-		"Draft",
-		"Delete by multiple IDs",
-		apd.Color.orange,
-	)
+    # Create two stamps on page 1 so they can be deleted by ID
+    content_editor.create_rubber_stamp(
+        1,
+        apd.Rectangle(120, 320, 180, 60),
+        "Draft",
+        "Delete by single ID",
+        apd.Color.orange,
+    )
+    content_editor.create_rubber_stamp(
+        1,
+        apd.Rectangle(120, 250, 180, 60),
+        "Draft",
+        "Delete by multiple IDs",
+        apd.Color.orange,
+    )
 
-	# Delete by single ID overload and by IDs overload
-	content_editor.delete_stamp_by_id(1, 1)
-	content_editor.delete_stamp_by_ids(1, [2])
+    # Delete by single ID overload and by IDs overload
+    content_editor.delete_stamp_by_id(1, 1)
+    content_editor.delete_stamp_by_ids(1, [2])
 
-	# Save updated document
-	content_editor.save(outfile)
+    # Save updated document
+    content_editor.save(outfile)
 ```
 

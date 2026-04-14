@@ -15,31 +15,31 @@ Programmatically filling text fields allows applications to reuse PDF templates 
 1. Save the updated PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Fill Text Fields
-    def fill_text_fields(infile, outfile):
-        """Fill text fields in PDF form."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Fill Text Fields
+def fill_text_fields(infile, outfile):
+    """Fill text fields in PDF form."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Fill text fields by name
-        pdf_form.fill_field("name", "John Doe")
-        pdf_form.fill_field("address", "123 Main St, Anytown, USA")
-        pdf_form.fill_field("email", "john.doe@example.com")
+    # Fill text fields by name
+    pdf_form.fill_field("name", "John Doe")
+    pdf_form.fill_field("address", "123 Main St, Anytown, USA")
+    pdf_form.fill_field("email", "john.doe@example.com")
 
-        # Save updated PDF
-        pdf_form.save(outfile)
+    # Save updated PDF
+    pdf_form.save(outfile)
 ```

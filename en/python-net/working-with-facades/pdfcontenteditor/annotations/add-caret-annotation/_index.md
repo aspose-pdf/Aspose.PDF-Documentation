@@ -38,17 +38,21 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_caret_annotation(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
     # Bind document to PdfContentEditor
     content_editor.bind_pdf(infile)
     # Add caret annotation to page 1
-    content_editor.create_caret(1, 
-                                apd.Rectangle(350, 400, 10, 10), 
-                                apd.Rectangle(300, 380, 115, 15), 
-                                "P", "This is a caret annotation",
-                                apd.Color.red)
+    content_editor.create_caret(
+        1,
+        apd.Rectangle(350, 400, 10, 10),
+        apd.Rectangle(300, 380, 115, 15),
+        "P",
+        "This is a caret annotation",
+        apd.Color.red,
+    )
     # Save updated document
     content_editor.save(outfile)
 ```

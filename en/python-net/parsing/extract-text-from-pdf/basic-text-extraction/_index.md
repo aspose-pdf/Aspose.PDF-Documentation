@@ -26,6 +26,7 @@ Ideal for converting PDFs into searchable text, performing content analysis, or 
 import os
 import aspose.pdf as ap
 
+
 def extract_text_from_all_pages(infile, outfile):
     """
     Extract all text from every page of the PDF and write to an output text file.
@@ -58,9 +59,9 @@ Useful when you only need content from one page — for instance, extracting tex
 1. Extract text and write to file.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_text_from_page(infile, outfile, page_number):
     """

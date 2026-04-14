@@ -24,27 +24,27 @@ This article explains how to copy a field named 'First Name' to a new field call
 1. Save the updated document.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def copy_inner_field(infile, outfile):
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor()
-        # Bind document to FormEditor
-        form_editor.bind_pdf(infile)
-        # Copies an existing field to a new position specified by both page number and ordinates. 
-        # A new document will be produced, which contains everything the source document has except for the newly copied field.        
-        form_editor.copy_inner_field("First Name", "First Name Copy", 2, 200, 600)
-        # Save updated document
-        form_editor.save(outfile)
+def copy_inner_field(infile, outfile):
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor()
+    # Bind document to FormEditor
+    form_editor.bind_pdf(infile)
+    # Copies an existing field to a new position specified by both page number and ordinates.
+    # A new document will be produced, which contains everything the source document has except for the newly copied field.
+    form_editor.copy_inner_field("First Name", "First Name Copy", 2, 200, 600)
+    # Save updated document
+    form_editor.save(outfile)
 ```
 
 **Please note:**
@@ -52,8 +52,7 @@ This article explains how to copy a field named 'First Name' to a new field call
 The 'copy_inner_field' method signature looks like this:
 
 ```python
-
-    copy_inner_field(original_field_name, new_field_name, page_number, x, y)
+copy_inner_field(original_field_name, new_field_name, page_number, x, y)
 ```
 
 - 'original_field_name' – the field you want to duplicate.
@@ -66,8 +65,7 @@ The page_number is expected to be a positive integer corresponding to an existin
 If you pass a negative parameter, e.g.:
 
 ```python
-
-    form_editor.copy_inner_field("First Name", "First Name Copy", -1, 200, 600)
+form_editor.copy_inner_field("First Name", "First Name Copy", -1, 200, 600)
 ```
 
 The program will then reset to the previous parameters.

@@ -28,12 +28,12 @@ You can use [TextStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/t
 1. Save the modified PDF document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_text_stamp(input_file_name, output_file_name):
     document = ap.Document(input_file_name)

@@ -16,30 +16,30 @@ FDF (Forms Data Format) is a lightweight format used to store and transfer PDF f
 1. Save the updated PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Import Data from FDF
-    def import_fdf_to_pdf_form(infile, datafile, outfile):
-        """Import form data from FDF file into PDF form fields."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Import Data from FDF
+def import_fdf_to_pdf_form(infile, datafile, outfile):
+    """Import form data from FDF file into PDF form fields."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Open FDF file as stream
-        with open(datafile, 'rb') as fdf_input_stream:
-            pdf_form.import_fdf(fdf_input_stream)
+    # Open FDF file as stream
+    with open(datafile, "rb") as fdf_input_stream:
+        pdf_form.import_fdf(fdf_input_stream)
 
-        # Save updated PDF
-        pdf_form.save(outfile)
+    # Save updated PDF
+    pdf_form.save(outfile)
 ```

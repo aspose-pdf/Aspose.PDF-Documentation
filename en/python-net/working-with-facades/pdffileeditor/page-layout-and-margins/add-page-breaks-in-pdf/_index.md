@@ -22,26 +22,26 @@ This article shows how to use the 'add_page_break' method of the [PdfFileEditor]
 1. Insert the Page Break.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Add Page Breaks in PDF
-    def add_page_breaks_in_pdf(infile, outfile):
-        # Create a PdfFileEditor object
-        pdf_editor = pdf_facades.PdfFileEditor()
-        pdf_editor.add_page_break(
-            infile,
-            outfile,
-            [
-                pdf_facades.PdfFileEditor.PageBreak(1, 400),            
-            ],
-        )
+# Add Page Breaks in PDF
+def add_page_breaks_in_pdf(infile, outfile):
+    # Create a PdfFileEditor object
+    pdf_editor = pdf_facades.PdfFileEditor()
+    pdf_editor.add_page_break(
+        infile,
+        outfile,
+        [
+            pdf_facades.PdfFileEditor.PageBreak(1, 400),
+        ],
+    )
 ```

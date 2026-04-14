@@ -26,24 +26,24 @@ Create an advanced, fully tagged PDF document with a structured and hierarchical
 1. Save the document.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
 
-    # region Extract Tagged Content from PDF
-    def get_tagged_content(outfile):
+# region Extract Tagged Content from PDF
+def get_tagged_content(outfile):
 
-        # Create PDF Document
-        with ap.Document() as document:
-            # Get Content for work with Tagged PDF
-            tagged_content = document.tagged_content
+    # Create PDF Document
+    with ap.Document() as document:
+        # Get Content for work with Tagged PDF
+        tagged_content = document.tagged_content
 
-            # Work with Tagged PDF content
-            # Set Title and Language for Document
-            tagged_content.set_title("Simple Tagged Pdf Document")
-            tagged_content.set_language("en-US")
+        # Work with Tagged PDF content
+        # Set Title and Language for Document
+        tagged_content.set_title("Simple Tagged Pdf Document")
+        tagged_content.set_language("en-US")
 
-            # Save Tagged PDF Document
-            document.save(outfile)
+        # Save Tagged PDF Document
+        document.save(outfile)
 ```
 
 ## Getting Root Structure
@@ -58,31 +58,31 @@ Following code snippet shows how to get the root structure of Tagged PDF Documen
 1. Save the tagged PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pycore import cast
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast
 
-    def get_root_structure(outfile):
+def get_root_structure(outfile):
 
-        # Create PDF Document
-        with ap.Document() as document:
-            # Get Content for work with Tagged PDF
-            tagged_content = document.tagged_content
+    # Create PDF Document
+    with ap.Document() as document:
+        # Get Content for work with Tagged PDF
+        tagged_content = document.tagged_content
 
-            # Set Title and Language for Document
-            tagged_content.set_title("Tagged Pdf Document")
-            tagged_content.set_language("en-US")
+        # Set Title and Language for Document
+        tagged_content.set_title("Tagged Pdf Document")
+        tagged_content.set_language("en-US")
 
-            # Properties StructTreeRootElement and RootElement are used for access to
-            # StructTreeRoot object of pdf document and to root structure element (Document structure element).
-            struct_tree_root_element = tagged_content.struct_tree_root_element
-            root_element = tagged_content.root_element
+        # Properties StructTreeRootElement and RootElement are used for access to
+        # StructTreeRoot object of pdf document and to root structure element (Document structure element).
+        struct_tree_root_element = tagged_content.struct_tree_root_element
+        root_element = tagged_content.root_element
 
-            print(f"StructTreeRootElement: {struct_tree_root_element}")
-            print(f"RootElement: {root_element}")
+        print(f"StructTreeRootElement: {struct_tree_root_element}")
+        print(f"RootElement: {root_element}")
 
-            # Save Tagged PDF Document
-            document.save(outfile)
+        # Save Tagged PDF Document
+        document.save(outfile)
 ```
 
 ## Accessing Child Elements
@@ -96,46 +96,46 @@ Tagged PDFs contain a logical structure tree that defines the semantic hierarchy
  Following code snippet shows how to access child elements of a Tagged PDF Document:
 
 ```python
+import aspose.pdf as ap
+from aspose.pycore import cast
 
-    import aspose.pdf as ap
-    from aspose.pycore import
 
-    def access_child_elements(infile, outfile):
+def access_child_elements(infile, outfile):
 
-        # Open PDF Document
-        with ap.Document(infile) as document:
-            # Get Content for work with Tagged PDF
-            tagged_content = document.tagged_content
+    # Open PDF Document
+    with ap.Document(infile) as document:
+        # Get Content for work with Tagged PDF
+        tagged_content = document.tagged_content
 
-            # Access to root element(s)
-            element_list = tagged_content.struct_tree_root_element.child_elements
+        # Access to root element(s)
+        element_list = tagged_content.struct_tree_root_element.child_elements
 
-            for element in element_list:
-                if isinstance(element, ap.logicalstructure.StructureElement):
-                    structure_element = cast(ap.logicalstructure.StructureElement, element)
-                    # Get properties
-                    print(
-                        "StructureElement properties - "
-                        f"title: {structure_element.title}, "
-                        f"language: {structure_element.language}, "
-                        f"actual_text: {structure_element.actual_text}, "
-                        f"expansion_text: {structure_element.expansion_text}, "
-                        f"alternative_text: {structure_element.alternative_text}"
-                    )
+        for element in element_list:
+            if isinstance(element, ap.logicalstructure.StructureElement):
+                structure_element = cast(ap.logicalstructure.StructureElement, element)
+                # Get properties
+                print(
+                    "StructureElement properties - "
+                    f"title: {structure_element.title}, "
+                    f"language: {structure_element.language}, "
+                    f"actual_text: {structure_element.actual_text}, "
+                    f"expansion_text: {structure_element.expansion_text}, "
+                    f"alternative_text: {structure_element.alternative_text}"
+                )
 
-            # Access to child elements of first element in root element
-            element_list = tagged_content.root_element.child_elements[1].child_elements
-            for element in element_list:
-                if isinstance(element, ap.logicalstructure.StructureElement):
-                    structure_element = element
+        # Access to child elements of first element in root element
+        element_list = tagged_content.root_element.child_elements[1].child_elements
+        for element in element_list:
+            if isinstance(element, ap.logicalstructure.StructureElement):
+                structure_element = element
 
-                    # Set properties
-                    structure_element.title = "title"
-                    structure_element.language = "fr-FR"
-                    structure_element.actual_text = "actual text"
-                    structure_element.expansion_text = "exp"
-                    structure_element.alternative_text = "alt"
+                # Set properties
+                structure_element.title = "title"
+                structure_element.language = "fr-FR"
+                structure_element.actual_text = "actual text"
+                structure_element.expansion_text = "exp"
+                structure_element.alternative_text = "alt"
 
-            # Save Tagged PDF Document
-            document.save(outfile)
+        # Save Tagged PDF Document
+        document.save(outfile)
 ```

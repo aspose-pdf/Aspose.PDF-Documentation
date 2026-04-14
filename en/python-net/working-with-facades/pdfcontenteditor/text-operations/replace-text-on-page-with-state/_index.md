@@ -32,6 +32,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def replace_text_on_page_with_state(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
@@ -43,7 +44,9 @@ def replace_text_on_page_with_state(infile, outfile):
     text_state.font_size = 12
 
     # Replace text on a specific page with explicit text formatting
-    content_editor.replace_text_strategy.replace_scope = pdf_facades.ReplaceTextStrategy.Scope.REPLACE_ALL
+    content_editor.replace_text_strategy.replace_scope = (
+        pdf_facades.ReplaceTextStrategy.Scope.REPLACE_ALL
+    )
     content_editor.replace_text("software", 1, "SOFTWARE PAGE 1", text_state)
     # Save updated document
     content_editor.save(outfile)

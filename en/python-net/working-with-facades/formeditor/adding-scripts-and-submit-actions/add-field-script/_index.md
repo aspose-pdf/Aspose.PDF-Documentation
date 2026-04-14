@@ -33,6 +33,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_field_script(input_file_name, output_file_name):
     # Create FormEditor object
     form_editor = pdf_facades.FormEditor()
@@ -41,10 +42,14 @@ def add_field_script(input_file_name, output_file_name):
     form_editor.bind_pdf(input_file_name)
 
     # Set JavaScript action for the field
-    form_editor.set_field_script("Script_Demo_Button", "app.alert('Script 1 has been executed');")
+    form_editor.set_field_script(
+        "Script_Demo_Button", "app.alert('Script 1 has been executed');"
+    )
 
     # Add JavaScript action to the field
-    form_editor.add_field_script("Script_Demo_Button", "app.alert('Script 2 has been executed');")
+    form_editor.add_field_script(
+        "Script_Demo_Button", "app.alert('Script 2 has been executed');"
+    )
 
     # Save output PDF file
     form_editor.save(output_file_name)

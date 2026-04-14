@@ -17,31 +17,31 @@ Managing form fields is an important part of PDF processing workflows. Flattenin
 1. Save the updated PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Flatten specific fields
-    def flatten_specific_fields(infile, outfile):
-        """Flatten specific fields in a PDF document."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Flatten specific fields
+def flatten_specific_fields(infile, outfile):
+    """Flatten specific fields in a PDF document."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Flatten specific fields by their names
-        fields_to_flatten = ["First Name", "Last Name"]
-        for field_name in fields_to_flatten:
-            pdf_form.flatten_field(field_name)
+    # Flatten specific fields by their names
+    fields_to_flatten = ["First Name", "Last Name"]
+    for field_name in fields_to_flatten:
+        pdf_form.flatten_field(field_name)
 
-        # Save updated PDF
-        pdf_form.save(outfile)
+    # Save updated PDF
+    pdf_form.save(outfile)
 ```

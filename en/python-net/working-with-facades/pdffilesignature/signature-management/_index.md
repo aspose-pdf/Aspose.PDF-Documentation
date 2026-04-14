@@ -29,6 +29,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def remove_signature_from_pdf(infile, outfile):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -47,6 +48,7 @@ Use the overload with the additional `True` flag when you want to remove the sig
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def remove_signature_with_field_cleanup(infile, outfile):
     pdf_signature = create_pdf_file_signature(infile)

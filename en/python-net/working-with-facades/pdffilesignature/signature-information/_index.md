@@ -31,6 +31,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def get_signature_names(infile):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -48,6 +49,7 @@ Once you know the signature name, you can retrieve signer-specific metadata. Thi
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def get_signer_details(infile):
     pdf_signature = create_pdf_file_signature(infile)
@@ -72,6 +74,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def get_signature_date_and_time(infile):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -90,6 +93,7 @@ Digital signatures can also store descriptive metadata such as the signing reaso
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def get_signature_reason_and_location(infile):
     pdf_signature = create_pdf_file_signature(infile)

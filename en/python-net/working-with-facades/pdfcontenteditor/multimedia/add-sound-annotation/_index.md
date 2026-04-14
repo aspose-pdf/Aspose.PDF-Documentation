@@ -31,13 +31,16 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_sound_annotation(infile, sound_file, outfile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
-	# Add sound annotation to page 1
-	content_editor.create_sound(apd.Rectangle(80, 450, 30, 30), sound_file, "Speaker", 1, "8000")
-	# Save updated document
-	content_editor.save(outfile)
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
+    # Add sound annotation to page 1
+    content_editor.create_sound(
+        apd.Rectangle(80, 450, 30, 30), sound_file, "Speaker", 1, "8000"
+    )
+    # Save updated document
+    content_editor.save(outfile)
 ```

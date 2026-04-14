@@ -23,28 +23,28 @@ It features retrieving key metadata and layout information for a specific page i
 1. Print or store the retrieved values.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def get_page_information(infile):
-        
-        # Get and display PDF information
-        pdf_info = pdf_facades.PdfFileInfo(infile)
-        page_width = pdf_info.get_page_width(1)
-        page_height = pdf_info.get_page_height(1)
-        page_rotation = pdf_info.get_page_rotation(1)
-        page_x_offset = pdf_info.get_page_x_offset(1)
-        page_y_offset = pdf_info.get_page_y_offset(1)
+def get_page_information(infile):
 
-        print(f"Page Width: {page_width}")
-        print(f"Page Height: {page_height}")
-        print(f"Page Rotation: {page_rotation}")
+    # Get and display PDF information
+    pdf_info = pdf_facades.PdfFileInfo(infile)
+    page_width = pdf_info.get_page_width(1)
+    page_height = pdf_info.get_page_height(1)
+    page_rotation = pdf_info.get_page_rotation(1)
+    page_x_offset = pdf_info.get_page_x_offset(1)
+    page_y_offset = pdf_info.get_page_y_offset(1)
+
+    print(f"Page Width: {page_width}")
+    print(f"Page Height: {page_height}")
+    print(f"Page Rotation: {page_rotation}")
 ```

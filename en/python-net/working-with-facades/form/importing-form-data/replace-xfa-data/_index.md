@@ -16,31 +16,31 @@ XFA (XML Forms Architecture) forms store their data in XML format within the PDF
 1. Save the updated Document.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Replace from XFA data
-    def replace_xfa_data(infile, datafile, outfile):
-        """Import form data from XFA file into PDF form fields."""
-        # Create Form object
-        form = pdf_facades.Form()
+# Replace from XFA data
+def replace_xfa_data(infile, datafile, outfile):
+    """Import form data from XFA file into PDF form fields."""
+    # Create Form object
+    form = pdf_facades.Form()
 
-        # Bind PDF document
-        form.bind_pdf(infile)
+    # Bind PDF document
+    form.bind_pdf(infile)
 
-        # Open XFA file as stream
-        with FileIO(datafile, 'r') as xfa_stream:
-            # Import data from XFA into PDF form fields
-            form.set_xfa_data(xfa_stream)
+    # Open XFA file as stream
+    with FileIO(datafile, "r") as xfa_stream:
+        # Import data from XFA into PDF form fields
+        form.set_xfa_data(xfa_stream)
 
-        # Save updated PDF
-        form.save(outfile)
+    # Save updated PDF
+    form.save(outfile)
 ```

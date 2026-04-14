@@ -44,6 +44,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def constructor_with_document_and_save_stream(infile, outfile):
     # Initialize PdfContentEditor using constructor overload that accepts Document
     document = ap.Document(infile)
@@ -72,6 +73,7 @@ from os import path
 sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
+
 
 def bind_from_stream_and_save_stream(infile, outfile):
     # Create editor and bind PDF from in-memory stream
@@ -103,6 +105,7 @@ from os import path
 sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
+
 
 def bind_from_document_and_save_file(infile, outfile):
     # Create editor and bind from Document overload

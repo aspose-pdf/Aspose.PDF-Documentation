@@ -27,32 +27,32 @@ The code creates a new PDF (target), adds a page, and then copies a field from a
 1. Save the updated target PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def copy_outer_field(infile, outfile):
-        # Since copy_outer_field() method needs to copy field from source document to target document, we need to create a new document as target document first.
-        doc = ap.Document()
-        doc.pages.add()
-        doc.save(outfile)
+def copy_outer_field(infile, outfile):
+    # Since copy_outer_field() method needs to copy field from source document to target document, we need to create a new document as target document first.
+    doc = ap.Document()
+    doc.pages.add()
+    doc.save(outfile)
 
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor()
-        # Bind document to FormEditor
-        form_editor.bind_pdf(outfile)
-        # Copies an existing field to a new position specified by both page number and ordinates. 
-        # A new document will be produced, which contains everything the source document has except for the newly copied field.
-        form_editor.copy_outer_field(infile, "First Name", 1, 200, 600)
-        # Save updated document
-        form_editor.save(outfile)
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor()
+    # Bind document to FormEditor
+    form_editor.bind_pdf(outfile)
+    # Copies an existing field to a new position specified by both page number and ordinates.
+    # A new document will be produced, which contains everything the source document has except for the newly copied field.
+    form_editor.copy_outer_field(infile, "First Name", 1, 200, 600)
+    # Save updated document
+    form_editor.save(outfile)
 ```
 
 **Please note:**
@@ -60,8 +60,7 @@ The code creates a new PDF (target), adds a page, and then copies a field from a
 The 'copy_outer_field' method signature looks like this:
 
 ```python
-
-    copy_outer_field(original_field_name, new_field_name, page_number, x, y)
+copy_outer_field(original_field_name, new_field_name, page_number, x, y)
 ```
 
 - 'original_field_name' – the field you want to duplicate.
@@ -74,8 +73,7 @@ The page_number is expected to be a positive integer corresponding to an existin
 If you pass a negative parameter, e.g.:
 
 ```python
-
-    form_editor.copy_outer_field("First Name", "First Name Copy", 1, -200, 600)
+form_editor.copy_outer_field("First Name", "First Name Copy", 1, -200, 600)
 ```
 
 The program will then reset to the previous parameters.

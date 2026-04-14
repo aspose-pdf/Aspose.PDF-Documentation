@@ -32,17 +32,31 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_line_annotation(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
     # Bind input PDF file
     content_editor.bind_pdf(infile)
-    
+
     # Create LineAnnotation object
     rect = apd.Rectangle(100, 100, 200, 200)
     contents = "This is line annotation"
-    content_editor.create_line(rect, contents, 100, 100, 200, 200, 1, 1, apd.Color.red, "Solid", [3,2], ["Square"])
-    
+    content_editor.create_line(
+        rect,
+        contents,
+        100,
+        100,
+        200,
+        200,
+        1,
+        1,
+        apd.Color.red,
+        "Solid",
+        [3, 2],
+        ["Square"],
+    )
+
     # Save output PDF file
     content_editor.save(outfile)
 ```

@@ -30,6 +30,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def check_usage_rights(infile):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -47,6 +48,7 @@ Use `remove_usage_rights()` when the document should no longer retain its existi
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def remove_usage_rights(infile, outfile):
     pdf_signature = create_pdf_file_signature(infile)

@@ -1,5 +1,5 @@
 ---
-name: python-format-fixer
+name: python-style-reviewer
 description: Check Python source formatting and fix formatting issues automatically in both Python files and Markdown pages that contain Python fenced code blocks. Use this skill when a user wants Codex to audit Python files, normalize Python code snippets inside documentation pages, or apply the project-preferred formatter to either kind of content.
 ---
 
@@ -68,3 +68,4 @@ python scripts/python_format_fixer.py path/to/file_or_dir --write --tool black
 - If the project has formatter config, follow it rather than personal preference.
 - This skill is for formatting only. Do not mix in non-formatting lint fixes unless the user explicitly asks.
 - For Markdown pages, only fenced Python blocks are reformatted.
+

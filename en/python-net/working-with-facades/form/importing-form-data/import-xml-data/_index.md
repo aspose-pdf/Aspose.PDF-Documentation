@@ -16,31 +16,31 @@ XML is commonly used to store structured form data, making it a practical format
 1. Save the updated PDF.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Import data from XML
-    def import_xml_to_pdf_fields(infile, datafile, outfile):
-        """Import form data from XML file into PDF form fields."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Import data from XML
+def import_xml_to_pdf_fields(infile, datafile, outfile):
+    """Import form data from XML file into PDF form fields."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Open XML file as stream
-        with FileIO(datafile, 'r') as xml_input_stream:
-            # Import data from XML into PDF form fields
-            pdf_form.import_xml(xml_input_stream)
+    # Open XML file as stream
+    with FileIO(datafile, "r") as xml_input_stream:
+        # Import data from XML into PDF form fields
+        pdf_form.import_xml(xml_input_stream)
 
-        # Save updated PDF
-        pdf_form.save(outfile)
+    # Save updated PDF
+    pdf_form.save(outfile)
 ```

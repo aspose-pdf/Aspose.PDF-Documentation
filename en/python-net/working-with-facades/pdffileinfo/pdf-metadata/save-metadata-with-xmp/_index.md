@@ -21,29 +21,29 @@ PDF metadata can be stored in multiple ways, and XMP is the modern, standardized
 1. Save metadata in XMP format.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+from io import FileIO
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    from io import FileIO
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def save_info_with_xmp(infile, outfile):
-        
-        # Get PDF information
-        pdf_info = pdf_facades.PdfFileInfo(infile)
+def save_info_with_xmp(infile, outfile):
 
-        # Set PDF metadata
-        pdf_info.subject = "Aspose PDF for Python via .NET"
-        pdf_info.title = "Aspose PDF for Python via .NET"
-        pdf_info.keywords = "Aspose, PDF, Python, .NET"
-        pdf_info.creator = "Aspose Team"
+    # Get PDF information
+    pdf_info = pdf_facades.PdfFileInfo(infile)
 
-        # Save updated metadata
-        pdf_info.save_new_info_with_xmp(outfile)
+    # Set PDF metadata
+    pdf_info.subject = "Aspose PDF for Python via .NET"
+    pdf_info.title = "Aspose PDF for Python via .NET"
+    pdf_info.keywords = "Aspose, PDF, Python, .NET"
+    pdf_info.creator = "Aspose Team"
+
+    # Save updated metadata
+    pdf_info.save_new_info_with_xmp(outfile)
 ```

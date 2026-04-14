@@ -32,6 +32,7 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_curve_annotation(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
@@ -39,7 +40,7 @@ def add_curve_annotation(infile, outfile):
     content_editor.bind_pdf(infile)
 
     line_info = pdf_facades.LineInfo()
-    line_info.border_style = 1 # 1 - Dashed
+    line_info.border_style = 1  # 1 - Dashed
     line_info.vertice_coordinate = [120, 520, 160, 560, 220, 540, 280, 580]
     line_info.visibility = True
     content_editor.draw_curve(

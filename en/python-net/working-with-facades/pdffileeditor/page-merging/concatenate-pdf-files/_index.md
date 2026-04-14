@@ -19,18 +19,18 @@ Merging PDF files is a common task in document management, reporting, and automa
 1. Merge Multiple PDF Files.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
-    from config import set_license, initialize_data_dir
 
-    def concatenate_pdf_files(files_to_merge, output_file):
-        # Create a PdfFileEditor object
-        pdf_editor = pdf_facades.PdfFileEditor()
-        pdf_editor.concatenate(files_to_merge, output_file)
+def concatenate_pdf_files(files_to_merge, output_file):
+    # Create a PdfFileEditor object
+    pdf_editor = pdf_facades.PdfFileEditor()
+    pdf_editor.concatenate(files_to_merge, output_file)
 ```

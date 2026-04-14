@@ -30,6 +30,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def get_signature_revision(infile):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -49,6 +50,7 @@ import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
 
+
 def get_total_document_revisions(infile):
     pdf_signature = create_pdf_file_signature(infile)
     try:
@@ -66,6 +68,7 @@ Certified documents can define what changes are allowed after certification. Use
 import aspose.pdf.facades as pdf_facades
 import sys
 from os import path
+
 
 def get_access_permissions(infile):
     pdf_signature = create_pdf_file_signature(infile)

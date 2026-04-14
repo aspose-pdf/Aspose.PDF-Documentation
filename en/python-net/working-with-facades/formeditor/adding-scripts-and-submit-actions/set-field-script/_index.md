@@ -27,29 +27,33 @@ Using the [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.fa
 1. Save the modified PDF document.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def set_field_script(input_file_name, output_file_name):
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor()
+def set_field_script(input_file_name, output_file_name):
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor()
 
-        # Open input PDF file
-        form_editor.bind_pdf(input_file_name)
+    # Open input PDF file
+    form_editor.bind_pdf(input_file_name)
 
-        # Add JavaScript action to the field
-        form_editor.add_field_script("Script_Demo_Button", "app.alert('Script 1 has been executed');")
+    # Add JavaScript action to the field
+    form_editor.add_field_script(
+        "Script_Demo_Button", "app.alert('Script 1 has been executed');"
+    )
 
-        # Set JavaScript action for the field
-        form_editor.set_field_script("Script_Demo_Button", "app.alert('Script 2 has been executed');")
+    # Set JavaScript action for the field
+    form_editor.set_field_script(
+        "Script_Demo_Button", "app.alert('Script 2 has been executed');"
+    )
 
-        # Save output PDF file
-        form_editor.save(output_file_name)
+    # Save output PDF file
+    form_editor.save(output_file_name)
 ```

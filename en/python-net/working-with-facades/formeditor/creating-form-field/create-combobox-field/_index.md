@@ -23,25 +23,27 @@ The [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/
 1. Save the updated PDF document.
 
 ```python
+import sys
+from os import path
+import aspose.pdf.facades as pdf_facades
 
-    import sys
-    from os import path
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def create_combobox_field(infile, outfile):
-        """Create ComboBox field in PDF document."""
-        pdf_form_editor = pdf_facades.FormEditor()
-        pdf_form_editor.bind_pdf(infile)
+def create_combobox_field(infile, outfile):
+    """Create ComboBox field in PDF document."""
+    pdf_form_editor = pdf_facades.FormEditor()
+    pdf_form_editor.bind_pdf(infile)
 
-        # Add ComboBox field to PDF form
-        pdf_form_editor.add_field(pdf_facades.FieldType.COMBO_BOX, "combobox1", "Australia", 1, 230, 498, 350, 514)
-        pdf_form_editor.add_list_item("combobox1", ["Australia","Australia"])
-        pdf_form_editor.add_list_item("combobox1", ["New Zealand","New Zealand"])
+    # Add ComboBox field to PDF form
+    pdf_form_editor.add_field(
+        pdf_facades.FieldType.COMBO_BOX, "combobox1", "Australia", 1, 230, 498, 350, 514
+    )
+    pdf_form_editor.add_list_item("combobox1", ["Australia", "Australia"])
+    pdf_form_editor.add_list_item("combobox1", ["New Zealand", "New Zealand"])
 
-        # Save updated PDF document with form fields
-        pdf_form_editor.save(outfile)
+    # Save updated PDF document with form fields
+    pdf_form_editor.save(outfile)
 ```

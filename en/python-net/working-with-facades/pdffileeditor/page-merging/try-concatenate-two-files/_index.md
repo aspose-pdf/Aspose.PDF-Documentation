@@ -19,19 +19,21 @@ Merging two PDF files can sometimes fail due to file corruption, incompatible fo
 1. Attempt to Merge Two PDF Files.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
-    from config import set_license, initialize_data_dir
 
-    def try_concatenate_two_files(files_to_merge, output_file):
-        # Create a PdfFileEditor object
-        pdf_editor = pdf_facades.PdfFileEditor()
-        if not pdf_editor.try_concatenate(files_to_merge[0], files_to_merge[1], output_file):
-            print("Concatenation failed for the provided files.")
+def try_concatenate_two_files(files_to_merge, output_file):
+    # Create a PdfFileEditor object
+    pdf_editor = pdf_facades.PdfFileEditor()
+    if not pdf_editor.try_concatenate(
+        files_to_merge[0], files_to_merge[1], output_file
+    ):
+        print("Concatenation failed for the provided files.")
 ```

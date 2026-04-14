@@ -23,28 +23,28 @@ The [FormEditor](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/
 1. Save the updated document.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pydrawing as ap_pydrawing
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pydrawing as ap_pydrawing
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def set_field_comb_number(infile, outfile):
-        # Open document
-        doc = ap.Document(infile)
+def set_field_comb_number(infile, outfile):
+    # Open document
+    doc = ap.Document(infile)
 
-        # Create FormEditor object
-        form_editor = pdf_facades.FormEditor(doc)
+    # Create FormEditor object
+    form_editor = pdf_facades.FormEditor(doc)
 
-        # Set field comb number to 5
-        form_editor.set_field_comb_number("PIN", 5)
-        
-        # Save updated document
-        form_editor.save(outfile)
+    # Set field comb number to 5
+    form_editor.set_field_comb_number("PIN", 5)
+
+    # Save updated document
+    form_editor.save(outfile)
 ```

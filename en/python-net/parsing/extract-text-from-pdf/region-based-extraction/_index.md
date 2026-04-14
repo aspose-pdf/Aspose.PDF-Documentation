@@ -24,9 +24,9 @@ Ideal for zone-based text extraction, such as pulling data from headers, footers
 1. Write the extracted text.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_text_from_region(infile, page_number, rect_coords, outfile):
     """
@@ -69,9 +69,9 @@ Aspose.PDF library allows you to read a PDF file and extract all paragraph text 
 1. Close the document when done.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_paragraphs_from_pdf(infile, outfile):
     """
@@ -96,7 +96,9 @@ def extract_paragraphs_from_pdf(infile, outfile):
                                 parts.append(fragment.text)
                             parts.append("\r\n")
                         paragraph_text = "".join(parts)
-                        tw.write(f"Page {page_markup.number}, Section {sec_idx}, Paragraph {para_idx}:\n")
+                        tw.write(
+                            f"Page {page_markup.number}, Section {sec_idx}, Paragraph {para_idx}:\n"
+                        )
                         tw.write(paragraph_text + "\n")
     finally:
         document.close()
@@ -119,9 +121,9 @@ This code snippet extracts paragraph-level text and layout information from a sp
 1. Close the document.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_paragraphs_with_geometry(infile, outfile):
     """

@@ -23,23 +23,32 @@ Using Aspose.PDF for Python, developers can manipulate PDF forms programmaticall
 1. Save the updated PDF document.
 
 ```python
+import sys
+from os import path
+import aspose.pdf.facades as pdf_facades
 
-    import sys
-    from os import path
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def create_checkbox_field(infile, outfile):
-        """Create CheckBox field in PDF document."""
-        pdf_form_editor = pdf_facades.FormEditor()
-        pdf_form_editor.bind_pdf(infile)
+def create_checkbox_field(infile, outfile):
+    """Create CheckBox field in PDF document."""
+    pdf_form_editor = pdf_facades.FormEditor()
+    pdf_form_editor.bind_pdf(infile)
 
-        # Add CheckBox field to PDF form
-        pdf_form_editor.add_field(pdf_facades.FieldType.CHECK_BOX, "checkbox1", "Check Box 1", 1, 240, 498, 256, 514)
-        
-        # Save updated PDF document with form fields
-        pdf_form_editor.save(outfile)
+    # Add CheckBox field to PDF form
+    pdf_form_editor.add_field(
+        pdf_facades.FieldType.CHECK_BOX,
+        "checkbox1",
+        "Check Box 1",
+        1,
+        240,
+        498,
+        256,
+        514,
+    )
+
+    # Save updated PDF document with form fields
+    pdf_form_editor.save(outfile)
 ```

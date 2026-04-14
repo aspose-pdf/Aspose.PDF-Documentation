@@ -32,16 +32,41 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def add_markup_annotation(infile, outfile):
     # Create PdfContentEditor object
     content_editor = pdf_facades.PdfContentEditor()
     # Bind document to PdfContentEditor
     content_editor.bind_pdf(infile)
     # Add markup annotation to page 1
-    content_editor.create_markup(apd.Rectangle(120, 440, 200, 20), "This is a highlight annotation", 0, 1, apd.Color.yellow)
-    content_editor.create_markup(apd.Rectangle(110, 542, 200, 20), "This is a underline annotation", 1, 1, apd.Color.yellow)
-    content_editor.create_markup(apd.Rectangle(120, 568, 200, 20), "This is a strikeout annotation", 2, 1, apd.Color.orange_red)
-    content_editor.create_markup(apd.Rectangle(110, 598, 200, 20), "This is a squiggly annotation", 3, 1, apd.Color.dark_blue)
+    content_editor.create_markup(
+        apd.Rectangle(120, 440, 200, 20),
+        "This is a highlight annotation",
+        0,
+        1,
+        apd.Color.yellow,
+    )
+    content_editor.create_markup(
+        apd.Rectangle(110, 542, 200, 20),
+        "This is a underline annotation",
+        1,
+        1,
+        apd.Color.yellow,
+    )
+    content_editor.create_markup(
+        apd.Rectangle(120, 568, 200, 20),
+        "This is a strikeout annotation",
+        2,
+        1,
+        apd.Color.orange_red,
+    )
+    content_editor.create_markup(
+        apd.Rectangle(110, 598, 200, 20),
+        "This is a squiggly annotation",
+        3,
+        1,
+        apd.Color.dark_blue,
+    )
     # Save updated document
     content_editor.save(outfile)
 ```

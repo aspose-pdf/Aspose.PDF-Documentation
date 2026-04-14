@@ -32,27 +32,28 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def delete_stamps_globally(infile, outfile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
 
-	# Add stamps across multiple pages so global deletion is meaningful
-	for page in range(1, 5):
-		content_editor.create_rubber_stamp(
-			page,
-			apd.Rectangle(120, 500, 180, 60),
-			"Draft",
-			"Stamp for global deletion",
-			apd.Color.gray,
-		)
+    # Add stamps across multiple pages so global deletion is meaningful
+    for page in range(1, 5):
+        content_editor.create_rubber_stamp(
+            page,
+            apd.Rectangle(120, 500, 180, 60),
+            "Draft",
+            "Stamp for global deletion",
+            apd.Color.gray,
+        )
 
-	# delete_stamp_by_id without page number removes stamp ID from all pages
-	content_editor.delete_stamp_by_id(1)
-	# delete_stamp_by_ids without page number removes a list of IDs from all pages
-	content_editor.delete_stamp_by_ids([2, 3])
+    # delete_stamp_by_id without page number removes stamp ID from all pages
+    content_editor.delete_stamp_by_id(1)
+    # delete_stamp_by_ids without page number removes a list of IDs from all pages
+    content_editor.delete_stamp_by_ids([2, 3])
 
-	# Save updated document
-	content_editor.save(outfile)
+    # Save updated document
+    content_editor.save(outfile)
 ```

@@ -33,19 +33,20 @@ sys.path.append(path.join(path.dirname(__file__), ".."))
 
 from config import set_license, initialize_data_dir
 
+
 def create_rubber_stamp_with_appearance_file(infile, image_file, outfile):
-	# Create PdfContentEditor object
-	content_editor = pdf_facades.PdfContentEditor()
-	# Bind document to PdfContentEditor
-	content_editor.bind_pdf(infile)
-	# Create rubber stamp using appearance_file overload (image path)
-	content_editor.create_rubber_stamp(
-		1,
-		apd.Rectangle(100, 400, 200, 60),
-		"Stamp with custom appearance",
-		apd.Color.dark_green,
-		image_file,
-	)
-	# Save updated document
-	content_editor.save(outfile)
+    # Create PdfContentEditor object
+    content_editor = pdf_facades.PdfContentEditor()
+    # Bind document to PdfContentEditor
+    content_editor.bind_pdf(infile)
+    # Create rubber stamp using appearance_file overload (image path)
+    content_editor.create_rubber_stamp(
+        1,
+        apd.Rectangle(100, 400, 200, 60),
+        "Stamp with custom appearance",
+        apd.Color.dark_green,
+        image_file,
+    )
+    # Save updated document
+    content_editor.save(outfile)
 ```    

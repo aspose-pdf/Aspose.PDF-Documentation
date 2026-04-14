@@ -22,34 +22,34 @@ PDF documents can contain both standard metadata (Title, Subject, Keywords, Crea
 1. Save updated metadata.
 
 ```python
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
+from io import FileIO
 
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
-    from io import FileIO
+import sys
+from os import path
 
-    import sys
-    from os import path
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    def set_pdf_metadata(infile, outfile):
-        
-        # Get PDF information
-        pdf_info = pdf_facades.PdfFileInfo(infile)
+def set_pdf_metadata(infile, outfile):
 
-        # Set PDF metadata
-        pdf_info.subject = "Aspose PDF for Python via .NET"
-        pdf_info.title = "Aspose PDF for Python via .NET"
-        pdf_info.keywords = "Aspose, PDF, Python, .NET"
-        pdf_info.creator = "Aspose Team"
+    # Get PDF information
+    pdf_info = pdf_facades.PdfFileInfo(infile)
 
-        pdf_info.set_meta_info("CustomKey", "CustomValue")
+    # Set PDF metadata
+    pdf_info.subject = "Aspose PDF for Python via .NET"
+    pdf_info.title = "Aspose PDF for Python via .NET"
+    pdf_info.keywords = "Aspose, PDF, Python, .NET"
+    pdf_info.creator = "Aspose Team"
 
-        # pdf_info.save_new_info(outfile)
-        # Is obsolete, use save() method instead
+    pdf_info.set_meta_info("CustomKey", "CustomValue")
 
-        # Save updated metadata
-        pdf_info.save(outfile)
+    # pdf_info.save_new_info(outfile)
+    # Is obsolete, use save() method instead
+
+    # Save updated metadata
+    pdf_info.save(outfile)
 ```

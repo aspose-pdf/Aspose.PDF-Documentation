@@ -42,12 +42,12 @@ This example demonstrates how to find all occurrences of a specific phrase (in t
 1. Save the Updated PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def replace_text_on_all_pages(infile, outfile):
     """
@@ -104,12 +104,12 @@ This example demonstrates how to find and replace all occurrences of a target ph
 1. Save the Updated PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def replace_text_in_particular_page_region(infile, outfile):
     """
@@ -165,12 +165,12 @@ Aspose.PDF for Python via .NET provides options to adjust text layout and spacin
 1. Save the Updated PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def replace_text_and_resize_and_shift_without_changing_font_size(infile, outfile):
     """
@@ -208,7 +208,7 @@ def replace_text_and_resize_and_shift_without_changing_font_size(infile, outfile
         rect.urx -= 50
         fragment.replace_options.rectangle = rect
         fragment.replace_options.replace_adjustment_action = (
-             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
         )
         fragment.text = f"{text} {text}"
         document.save(outfile)
@@ -227,12 +227,12 @@ When working with PDFs, sometimes you need to replace or expand a paragraph whil
 1. Save the Modified PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def replace_text_and_resize_and_shift_paragraph(infile, outfile):
     """
@@ -271,7 +271,7 @@ def replace_text_and_resize_and_shift_paragraph(infile, outfile):
         rect.ury -= 20
         fragment.replace_options.rectangle = rect
         fragment.replace_options.replace_adjustment_action = (
-             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
         )
         fragment.text = f"{text} {text}"
         document.save(outfile)
@@ -290,12 +290,12 @@ Replace text in a PDF while automatically resizing and expanding the font to fil
 1. Save the Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def replace_text_and_resize_and_expand_font(infile, outfile):
     """
@@ -330,14 +330,13 @@ def replace_text_and_resize_and_expand_font(infile, outfile):
         text = fragment.text
         fragment.replace_options.rectangle = ap.Rectangle(100, 300, 512, 692, True)
         fragment.replace_options.replace_adjustment_action = (
-             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
         )
         fragment.replace_options.font_size_adjustment_action = (
             ap.text.TextReplaceOptions.FontSizeAdjustment.SCALE_TO_FILL
         )
         fragment.text = f"{text} {text}"
         document.save(outfile)
-
 ```
 
 ### Replace Text and Fit It into a Rectangle
@@ -356,12 +355,12 @@ Using the Aspose.PDF for Python via .NET library, this function adjusts both the
 1. Save the Modified PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def replace_text_and_fit_text_into_rectangle(infile, outfile):
     """
@@ -400,7 +399,6 @@ def replace_text_and_fit_text_into_rectangle(infile, outfile):
         )
         fragment.replace_options.replace_adjustment_action = (
             ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
-
         )
         fragment.text = f"{text} {text}"
         document.save(outfile)
@@ -419,12 +417,12 @@ It automatically adjusts the page layout to fit new text while applying custom f
 1. Save the Updated Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def automatically_rearrange_page_contents(input_file, output_file):
     """
@@ -486,12 +484,12 @@ The following code snippet shows you how to replace text based on a regular expr
 1. Save the Modified Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def replace_text_based_on_regex(infile, outfile):
     """
@@ -551,12 +549,12 @@ The following code snippet shows how to replace the font inside PDF document:
 1. Save the Modified Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def replace_fonts(infile, outfile):
     """
@@ -616,12 +614,12 @@ This example demonstrates how to:
 1. Save the Cleaned PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def remove_unused_fonts(input_file, output_file):
     """
@@ -654,7 +652,9 @@ def remove_unused_fonts(input_file, output_file):
     document = ap.Document(input_file)
 
     # Initialize text edit options to remove unused fonts
-    options = ap.text.TextEditOptions(ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS)
+    options = ap.text.TextEditOptions(
+        ap.text.TextEditOptions.FontReplace.REMOVE_UNUSED_FONTS
+    )
 
     # Create a TextFragmentAbsorber with the specified options
     absorber = ap.text.TextFragmentAbsorber(options)
@@ -662,7 +662,9 @@ def remove_unused_fonts(input_file, output_file):
 
     # Iterate through all TextFragments
     for text_fragment in absorber.text_fragments:
-        text_fragment.text_state.font = ap.text.FontRepository.find_font("TimesNewRoman")
+        text_fragment.text_state.font = ap.text.FontRepository.find_font(
+            "TimesNewRoman"
+        )
 
     # Save the updated PDF document
     document.save(output_file)
@@ -681,12 +683,12 @@ By using TextFragmentAbsorber, the code efficiently scans the entire document an
 1. Save the Updated Document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def remove_all_text_using_absorber1(infile, outfile):
     """
@@ -731,12 +733,12 @@ Unlike full-document removal, this method performs page-level text cleanup, dele
 1. Save the Modified PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def remove_all_text_using_absorber2(infile, outfile):
     """
@@ -783,12 +785,12 @@ Instead of clearing an entire page, this method performs targeted text removal, 
 1. Save the Modified PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def remove_all_text_using_absorber3(infile, outfile):
     """
@@ -835,12 +837,12 @@ Instead of clearing an entire page, this method performs targeted text removal, 
 1. Save the Modified PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def remove_hidden_text(infile, outfile):
     """
@@ -872,7 +874,9 @@ def remove_hidden_text(infile, outfile):
     with ap.Document(infile) as document:
         text_absorber = ap.text.TextFragmentAbsorber()
         # This option can be used to prevent other text fragments from moving after hidden text replacement
-        text_absorber.text_replace_options = ap.text.TextReplaceOptions(ap.text.TextReplaceOptions.ReplaceAdjustment.NONE)
+        text_absorber.text_replace_options = ap.text.TextReplaceOptions(
+            ap.text.TextReplaceOptions.ReplaceAdjustment.NONE
+        )
         document.pages.accept(text_absorber)
         # Remove hidden text
         for fragment in text_absorber.text_fragments:

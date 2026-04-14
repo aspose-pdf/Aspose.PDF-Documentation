@@ -14,29 +14,29 @@ Radio button fields in PDF forms are grouped controls where only one option can 
 1. Retrieve the Selected Radio Button Option.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Get radio button options
-    def get_radio_button_options(infile):
-        """Get radio button options from a PDF document."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Get radio button options
+def get_radio_button_options(infile):
+    """Get radio button options from a PDF document."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Get radio button options by their names
-        field_names = ["WorkType"]
-        for field_name in field_names:
-            options = pdf_form.get_button_option_current_value(field_name)
-            print(f"Options for '{field_name}': {options}")
+    # Get radio button options by their names
+    field_names = ["WorkType"]
+    for field_name in field_names:
+        options = pdf_form.get_button_option_current_value(field_name)
+        print(f"Options for '{field_name}': {options}")
 ```

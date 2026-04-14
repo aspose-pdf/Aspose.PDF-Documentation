@@ -15,28 +15,28 @@ Exporting form data allows developers to reuse information stored in PDF AcroFor
 1. Call 'export_xml()' to extract all form field values and write them into the XML file.
 
 ```python
+from io import FileIO
+import sys
+from os import path
+import aspose.pdf as ap
+import aspose.pdf.facades as pdf_facades
 
-    from io import FileIO
-    import sys
-    from os import path
-    import aspose.pdf as ap
-    import aspose.pdf.facades as pdf_facades
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    sys.path.append(path.join(path.dirname(__file__), ".."))
+from config import set_license, initialize_data_dir
 
-    from config import set_license, initialize_data_dir
 
-    # Export Data to XML
-    def export_pdf_form_data_to_xml(infile, datafile):
-        """Export PDF form data to XML file."""
-        # Create Form object
-        pdf_form = pdf_facades.Form()
+# Export Data to XML
+def export_pdf_form_data_to_xml(infile, datafile):
+    """Export PDF form data to XML file."""
+    # Create Form object
+    pdf_form = pdf_facades.Form()
 
-        # Bind PDF document
-        pdf_form.bind_pdf(infile)
+    # Bind PDF document
+    pdf_form.bind_pdf(infile)
 
-        # Open XML file as stream
-        with FileIO(datafile, 'w') as xml_output_stream:
-            # Export data from PDF form fields to XML
-            pdf_form.export_xml(xml_output_stream)
+    # Open XML file as stream
+    with FileIO(datafile, "w") as xml_output_stream:
+        # Export data from PDF form fields to XML
+        pdf_form.export_xml(xml_output_stream)
 ```

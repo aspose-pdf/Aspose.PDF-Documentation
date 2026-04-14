@@ -35,7 +35,6 @@ PDF documents support several document-level actions, including code that runs o
 Let’s consider how to use `open_action.`
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Rectangle
 from aspose.pdf.forms import ButtonField
@@ -54,7 +53,6 @@ In this example we call `launchURL` method from `app` obejct and open web site (
 Other actions can be added in the same way, but with minor changes:
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Rectangle
 from aspose.pdf.forms import ButtonField
@@ -81,7 +79,6 @@ Next, two additional JavaScript actions are assigned to the document's `before_s
 To clean (or remove) actions just set handler to `None`.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Rectangle
 from aspose.pdf.forms import ButtonField
@@ -102,7 +99,6 @@ document.save(path_outfile)
 The similar triggers are provided for pages: `on_open`, `on_close`.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Rectangle
 from aspose.pdf.forms import ButtonField
@@ -110,6 +106,7 @@ from aspose.pdf.annotations import NamedAction, PredefinedAction
 from os import path
 
 # ...
+
 
 def add_page_actions(self, infile, outfile):
     """
@@ -152,7 +149,6 @@ def add_page_actions(self, infile, outfile):
     )
 
     document.save(path_outfile)
-
 ```
 
 We add two actions to this page. First, it creates a "GoTo" action that triggers when the page is opened. This action uses an explicit destination to jump to the top-left corner of the page at a specific zoom level. Second, it attaches a JavaScript action that runs when the page is closed, instructing the PDF viewer to open a specific URL in the browser. Finally, the modified document is saved to the specified output path.
@@ -164,7 +160,6 @@ A subtle point to watch for is the page indexing, as using the wrong index could
 Use `remove_actions` to remove action on page.
 
 ```python
-
 import aspose.pdf as ap
 from os import path
 
@@ -178,7 +173,6 @@ page = document.pages[3]
 page.actions.remove_actions()
 
 document.save(path_outfile)
-
 ```
 
 ## Actions in AcroForms
@@ -189,7 +183,6 @@ The PDF standard provides for a certain set of named actions. The meaning of suc
 In the following code we will use actions for navigations.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Rectangle
 from aspose.pdf.forms import ButtonField
@@ -197,6 +190,7 @@ from aspose.pdf.annotations import NamedAction, PredefinedAction
 from os import path
 
 # ...
+
 
 def add_navigation_buttons(self, infile, outfile):
     """
@@ -252,7 +246,6 @@ def add_navigation_buttons(self, infile, outfile):
 
     except Exception as e:
         print(f"Error adding navigation buttons: {e}")
-
 ```
 
 This code adds navigation buttons to every page of a PDF document, making it easier for users to move between pages. It starts by determining the full file paths for the input and output files using a helper method. The button_config list defines four types of navigation buttons—First Page, Previous Page, Next Page, and Last Page—along with their horizontal positions, the predefined navigation actions they trigger, and a lambda function that determines if each button should be read-only on a given page (for example, the "First Page" and "Previous Page" buttons are read-only on the first page).
@@ -268,7 +261,6 @@ When using PDF forms, there is often a need to print such PDF documents. This ac
 In fact, this is yet another example of how to use named actions. We will use `PredefinedAction.FILE_PRINT` (simulating the use of the File->Print menu item), but you can also use `PredefinedAction.PRINT` or `PredefinedAction.PRINT_DIALOG`, depending on your own purposes.
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Rectangle
 from aspose.pdf.forms import ButtonField
@@ -276,6 +268,7 @@ from aspose.pdf.annotations import NamedAction, PredefinedAction
 from os import path
 
 # ...
+
 
 def add_named_action_print(self, infile, outfile):
     """
@@ -312,7 +305,6 @@ def add_named_action_print(self, infile, outfile):
     # Add button to the form on page 1
     document.form.add(print_button, 1)
     document.save(path_outfile)
-
 ```
 
 This code snippet demonstrates how to add a "Print" button to the first page of a PDF document. It begins by loading the PDF from the specified input file path and selecting the first page (document.pages[1]).
@@ -324,7 +316,6 @@ To enhance the button's appearance, a border is created and assigned to the butt
 ### Using Hide action
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Rectangle
 from aspose.pdf.forms import ButtonField
@@ -332,6 +323,7 @@ from aspose.pdf.annotations import NamedAction, PredefinedAction
 from os import path
 
 # ...
+
 
 def add_named_action_hide(self, infile, outfile):
     """
@@ -353,7 +345,9 @@ def add_named_action_hide(self, infile, outfile):
     try:
         document = ap.Document(path_infile)
         # Collect all checkbox fields in the document
-        checkboxes = [field for field in document.form if isinstance(field, ap.CheckboxField)]
+        checkboxes = [
+            field for field in document.form if isinstance(field, ap.CheckboxField)
+        ]
 
         # Create the hide button
         rect = Rectangle(10, 510, 100, 540)
@@ -372,7 +366,6 @@ def add_named_action_hide(self, infile, outfile):
 
     except Exception as e:
         print(f"Error adding hide button: {e}")
-
 ```
 
 This code snippet adds a button to the first page of a PDF that, when clicked, hides all checkbox fields in the document. It starts by resolving the full input and output file paths using a helper method. The PDF is loaded, and all checkbox fields are collected by filtering the form fields for instances of `ap.CheckboxField`.
@@ -384,7 +377,6 @@ The button is then added to the form fields on the first page, and the modified 
 ### Applying Submit Action
 
 ```python
-
 import aspose.pdf as ap
 from aspose.pdf import Rectangle
 from aspose.pdf.forms import ButtonField
@@ -392,6 +384,7 @@ from aspose.pdf.annotations import NamedAction, PredefinedAction
 from os import path
 
 # ...
+
 
 def add_submit_action(self, infile, outfile):
     """
@@ -429,7 +422,6 @@ def add_submit_action(self, infile, outfile):
 
     except Exception as e:
         print(f"Error adding submit button: {e}")
-
 ```
 
 This function adds a "Submit" button to the first page of a PDF form, allowing users to submit the form data to a specified web endpoint. It begins by constructing the full paths for the input and output PDF files, then loads the input PDF using the Aspose.PDF library.

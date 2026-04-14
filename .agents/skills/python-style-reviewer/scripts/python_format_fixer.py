@@ -172,10 +172,11 @@ def format_snippet(tool: str, code: str) -> str:
         return tmp_file.read_text(encoding="utf-8").rstrip("\n")
 
 
-def process_markdown(path: Path, tool: str, write: bool) -> tuple[int, bool]:
+def process_markdown(path: Path, tool: str, write: bool) -> tuple[int, bool, int]:
     lines = path.read_text(encoding="utf-8").splitlines()
     output: list[str] = []
     changes = 0
+    failures = 0
     index = 0
 
     while index < len(lines):
@@ -195,7 +196,16 @@ def process_markdown(path: Path, tool: str, write: bool) -> tuple[int, bool]:
 
             closing = lines[index]
             original = "\n".join(block)
-            formatted = format_snippet(tool, original)
+            try:
+                formatted = format_snippet(tool, original)
+            except RuntimeError as exc:
+                failures += 1
+                print(f"Invalid Python snippet in {path}: {exc}")
+                output.append(fence)
+                output.extend(block)
+                output.append(closing)
+                index += 1
+                continue
             normalized_original = normalize_snippet(original)
             if formatted != normalized_original:
                 changes += 1
@@ -216,7 +226,7 @@ def process_markdown(path: Path, tool: str, write: bool) -> tuple[int, bool]:
     changed = changes > 0
     if write and changed:
         path.write_text("\n".join(output) + "\n", encoding="utf-8")
-    return changes, changed
+    return changes, changed, failures
 
 
 def process_python_file(path: Path, tool: str, write: bool) -> int:
@@ -243,27 +253,31 @@ def main() -> int:
     files = gather_targets(target)
     total_snippet_changes = 0
     markdown_changed = 0
+    markdown_failures = 0
     py_failures = 0
 
     for path in files:
         suffix = path.suffix.lower()
         if suffix in MARKDOWN_EXTENSIONS:
-            changes, changed = process_markdown(path, tool, write=args.write)
+            changes, changed, failures = process_markdown(path, tool, write=args.write)
             total_snippet_changes += changes
             markdown_changed += int(changed)
+            markdown_failures += failures
         elif suffix in PYTHON_EXTENSIONS:
             py_failures += int(process_python_file(path, tool, write=args.write) != 0)
 
     if args.check:
-        if py_failures or total_snippet_changes:
+        if py_failures or total_snippet_changes or markdown_failures:
             return 1
         print("All Python files and Markdown Python snippets are already formatted")
         return 0
 
     print(
-        f"Updated Markdown files: {markdown_changed}; reformatted snippets: {total_snippet_changes}; Python file failures: {py_failures}"
+        "Updated Markdown files: "
+        f"{markdown_changed}; reformatted snippets: {total_snippet_changes}; "
+        f"invalid snippets: {markdown_failures}; Python file failures: {py_failures}"
     )
-    return 1 if py_failures else 0
+    return 1 if py_failures or markdown_failures else 0
 
 
 if __name__ == "__main__":

@@ -12,6 +12,199 @@ lastmod: "2025-02-24"
 TechArticle: false 
 ---
 
+## What's new in Aspose.PDF 26.3
+
+In **Aspose.PDF for Python via .NET** 26.3, we have added:
+
+Lossless image stream recompression during PDF optimization. The OptimizationOptions.CompressAllContentStreams property now also compresses eligible image XObject streams with FlateDecode, helping reduce file size while keeping image quality intact.
+
+```python
+import aspose.pdf as ap
+
+
+def optimize_pdf_with_loss_less_image_stream_recompression(infile, outfile):
+    with ap.Document(infile) as document:
+        optimize_options = ap.optimization.OptimizationOptions()
+        optimize_options.subset_fonts = True
+        optimize_options.allow_reuse_page_content = True
+        optimize_options.compress_objects = True
+        optimize_options.link_duplicate_streams = True
+        optimize_options.remove_unused_objects = True
+        optimize_options.remove_unused_streams = True
+        # Compress content streams and eligible image streams
+        optimize_options.compress_all_content_streams = True
+        # Optimize PDF document
+        document.optimize_resources(optimize_options)
+        # Save optimized PDF document
+        document.save(outfile)
+```
+
+Image recompression now matches the selected ImageCompressionOptions.Encoding setting during optimization, ensuring more consistent results when using Jpeg2000 or Flate, along with image resizing, resolution limits, and quality controls.
+
+```python
+import aspose.pdf as ap
+
+
+def optimize_pdf_images_with_selected_encoding(infile, outfile):
+    # Open PDF document
+    with ap.Document(infile) as pdf:
+        # Configure optimization options
+        optimize_options = ap.optimization.OptimizationOptions()
+        optimize_options.allow_reuse_page_content = False
+        optimize_options.compress_objects = True
+        optimize_options.link_duplicate_streams = False
+        optimize_options.remove_unused_objects = True
+        optimize_options.remove_unused_streams = True
+        optimize_options.image_compression_options.compress_images = True
+        optimize_options.image_compression_options.resize_images = True
+        optimize_options.image_compression_options.max_resolution = 130
+        optimize_options.image_compression_options.image_quality = 100
+        optimize_options.image_compression_options.encoding = (
+            ap.optimization.ImageEncoding.FLATE
+        )
+        optimize_options.image_compression_options.version = (
+            ap.optimization.ImageCompressionVersion.MIXED
+        )
+
+        # Optimize PDF document resources
+        pdf.optimize_resources(optimize_options)
+        # Save optimized PDF document
+        pdf.save(outfile)
+```
+
+Support for rendering comments when saving PDF documents as images or HTML, helping to preserve visible review markup when exporting annotated documents for sharing outside PDF viewers.
+
+```python
+import aspose.pdf as ap
+
+
+def render_comments_to_image_and_html(infile, outfile, output_png):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        # Save the first page to PNG with comments rendered
+        device = ap.devices.PngDevice()
+        device.process(document.pages[1], output_png)
+        # Save the first page to HTML with comments rendered
+        options = ap.HtmlSaveOptions()
+        options.explicit_list_of_saved_pages = [1]
+        options.use_z_order = True
+        document.save(outfile, options)
+```
+
+Improved PDF-to-TIFF rendering performance for high-volume rasterization scenarios, especially when exporting pages to bitonal TIFF images.
+
+```python
+import aspose.pdf as ap
+
+
+def convert_pdf_to_tiff(infile, data_dir):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        # Create Resolution object
+        resolution = ap.devices.Resolution(300)
+
+        # Create TiffSettings object
+        tiff_settings = ap.devices.TiffSettings()
+        tiff_settings.compression = ap.devices.CompressionType.CCITT4
+        tiff_settings.shape = ap.devices.ShapeType.NONE
+        tiff_settings.skip_blank_pages = False
+        tiff_settings.depth = ap.devices.ColorDepth.FORMAT_1BPP
+
+        # Create TIFF device
+        tiff_device = ap.devices.TiffDevice(resolution, tiff_settings)
+        for i in range(1, len(document.pages) + 1):
+            target_file_name = data_dir + "Asposeout-" + str(i) + ".tif"
+            tiff_device.process(document, i, i, target_file_name)
+```
+
+## What's new in Aspose.PDF 26.2
+
+Aspose.PDF 26.2 introduces support for RTF to PDF conversion. This feature allows developers to directly convert Rich Text Format (RTF) documents into PDF files.
+
+RTF is a widely supported, cross-platform document format originally developed by Microsoft. It is designed to enable document exchange between different word processing applications while preserving basic formatting such as fonts, colors, bold and italic text, as well as embedded images.
+
+```python
+import aspose.pdf as ap
+
+
+def convert_rtf_to_pdf(infile, outfile):
+    # Initialize RTF load options
+    options = ap.RtfLoadOptions()
+    # Open RTF document
+    with ap.Document(infile, options) as document:
+        # Save PDF document
+        document.save(outfile)
+```
+
+This code snippet shows how to insert a table after the existing content on a PDF page using Aspose.PDF for Python.
+
+The script opens an existing PDF document and calculates the bounding box of the current content on the first page. Using this information, it finds where the existing content ends and positions a new table below the last element, leaving a specified margin before the table starts.
+
+A table is then created and filled with multiple rows and columns using a loop. After setting up the table structure and content, the table is added to the page’s paragraph collection. Finally, the updated document is saved as a new PDF file.
+
+```python
+import aspose.pdf as ap
+
+
+def add_table_after_last_element(infile, outfile):
+    # Load source PDF document
+    with ap.Document(infile) as document:
+        # Initializes a new instance of the Table
+        table = ap.Table()
+        # Determine the existing content area on the page
+        content_area_lly = document.pages[1].calculate_content_b_box().lly
+        top_margin = 20
+        # Add the table after the existing content, with the 20pt margin before the table.
+        table.top = document.pages[1].rect.height - (content_area_lly - top_margin)
+        # Set the top margin for the new pages added.
+        document.page_info.margin.top = top_margin
+        # Create a loop to add 10 rows
+        for row_count in range(1, 11):
+            # Add row to table
+            row = table.rows.add()
+            # Add table cells
+            row.cells.add("Column (" + str(row_count) + ", 1)")
+            row.cells.add("Column (" + str(row_count) + ", 2)")
+            row.cells.add("Column (" + str(row_count) + ", 3)")
+
+        # Add table object to first page of input document
+        document.pages[1].paragraphs.add(table)
+        # Save updated document containing table object
+        document.save(outfile)
+```
+
+Detect and remove invisible text from a PDF document using Aspose.PDF for Python:
+
+```python
+import aspose.pdf as ap
+
+
+def remove_invisible_text(infile, outfile):
+    with ap.Document(infile) as pdf_doc:
+        for page in pdf_doc.pages:
+            absorber = ap.text.TextFragmentAbsorber()
+            page.accept(absorber)
+            fragments_to_remove = [
+                x
+                for x in absorber.text_fragments
+                if (
+                    x.text_state.invisible
+                    or x.text_state.rendering_mode
+                    == ap.text.TextRenderingMode.INVISIBLE
+                    or (
+                        x.text_state.foreground_color is not None
+                        and x.text_state.foreground_color.a == 0
+                    )
+                )
+            ]
+            for fragment in fragments_to_remove:
+                absorber.text_fragments.remove(
+                    fragment
+                )  # Now properly removes text from document
+        pdf_doc.save(outfile)
+```
+
+
 ## What's new in Aspose.PDF 26.1
 
 In **Aspose.PDF for Python via .NET** 26.1, we have added:
@@ -26,8 +219,8 @@ In **Aspose.PDF for Python via .NET** 26.1, we have added:
 Convert an HTML document into a PDF while preserving logical structure information. The resulting PDF is better suited for accessibility, tagging, and downstream processing that relies on structured document content.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def convert_html_to_pdf_with_logical_structure(self, infile, outfile):
     # Initialize HtmlLoadOptions
@@ -43,8 +236,8 @@ def convert_html_to_pdf_with_logical_structure(self, infile, outfile):
 Analyze a digitally signed PDF to identify and report content that is not covered by signatures. Use it to validate document integrity, audit signed PDFs, and detect post-signature modifications.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def extract_unsigned_content(self, infile):
     # Open PDF document
@@ -67,8 +260,8 @@ def extract_unsigned_content(self, infile):
 This function compares a specific page from two PDF documents and produces a side-by-side visual diff. By customizing comparison options and colors, it highlights meaningful changes while ignoring insignificant differences such as whitespace.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def comparing_specific_pages(self, infile1, infile2, outfile):
     # Open PDF documents
@@ -80,14 +273,16 @@ def comparing_specific_pages(self, infile1, infile2, outfile):
             options.delete_color = ap.Color.dark_gray
             options.insert_color = ap.Color.light_yellow
             # Compare
-            ap.comparison.SideBySidePdfComparer.compare(document1.pages[1], document2.pages[1], outfile, options)
+            ap.comparison.SideBySidePdfComparer.compare(
+                document1.pages[1], document2.pages[1], outfile, options
+            )
 ```
 
 Removing hidden data and rasterizing pages in 25.11 version.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def clear_hidden_data(self, infile, outfile):
     # Open PDF document
@@ -108,8 +303,8 @@ def clear_hidden_data(self, infile, outfile):
 Optimizing resources with font subsetting and content stream compression 25.11 version.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def optimize_resources_with_font_subsetting(self, infile, outfile):
     # Open PDF document
@@ -130,7 +325,9 @@ def optimize_resources_with_font_subsetting(self, infile, outfile):
     # Display file size reduction
     original_file = os.path.getsize(infile)
     optimized_file = os.path.getsize(outfile)
-    print(f"Original file size: {original_file} bytes. Optimized file size: {optimized_file} bytes.")
+    print(
+        f"Original file size: {original_file} bytes. Optimized file size: {optimized_file} bytes."
+    )
 ```
 
 ## What's new in Aspose.PDF 25.10
@@ -140,8 +337,8 @@ Enhanced PDF Layer Visibility Control – this release introduces the ability to
 A new 'layer.default_state' property allows setting a layer's default visibility to visible or hidden using the DefaultState property. This provides fine-grained control for managing complex layered PDF documents with predictable user visibility behavior.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def manage_layer_visibility(self, infile, outfile):
     # Create a new PDF document
@@ -150,7 +347,7 @@ def manage_layer_visibility(self, infile, outfile):
         page = document.pages.add()
         page.set_page_size(500, 500)
         # Load an image from a file stream
-        with io.FileIO(infile, 'r') as stream:
+        with io.FileIO(infile, "r") as stream:
             # Create a new layer with an ID and a name
             layer = ap.Layer("1", "testlayer")
             # Set the initial visibility state of the layer to hidden
@@ -182,12 +379,12 @@ The 25.9 release introduces improved accessibility, enhanced compliance support,
 In the 25.9 version of the Aspose.PDF for Python library, PDF/E-1 format conversion is available. You can find more information about this format on the [File Formats Docs](https://docs.fileformat.com/pdf/e/).
 
 ```python
-
 import aspose.pdf as ap
+
 
 def convert_pdf_to_pdf_e(self, infile, outfile):
     """PDF/E-1 Standard Support: Added the capability to convert PDF files to the PDF/E-1 format and to validate
-        the output files for compliance with the standard."""
+    the output files for compliance with the standard."""
 
     path_infile = self.data_dir + infile
     path_outfile = self.data_dir + outfile
@@ -195,7 +392,9 @@ def convert_pdf_to_pdf_e(self, infile, outfile):
     # Open PDF document
     with ap.Document(path_infile) as document:
         # Set up the PDF/E-1 format with PdfFormatConversionOptions
-        options = ap.PdfFormatConversionOptions(ap.PdfFormat.PDF_E_1, ap.ConvertErrorAction.DELETE)
+        options = ap.PdfFormatConversionOptions(
+            ap.PdfFormat.PDF_E_1, ap.ConvertErrorAction.DELETE
+        )
         # Convert to PDF/E-1 compliant document
         document.convert(options)
         # Save PDF document
@@ -207,8 +406,8 @@ def convert_pdf_to_pdf_e(self, infile, outfile):
 Add Tagged Images from a Stream in PDF. 25.9 version supports enhanced accessibility in PDF documents by adding an image from a memory stream and tagging it with alternative text.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def add_tagged_image_from_stream(self, image_file, outfile):
     """Enhanced Accessibility for Tagged Images: possible to add alternative text to images loaded from a memory stream."""
@@ -218,7 +417,6 @@ def add_tagged_image_from_stream(self, image_file, outfile):
 
     # Create the PDF document
     with ap.Document() as document:
-
         page = document.pages.add()
         # Tag the document for accessibility
         tagged_content = document.tagged_content
@@ -247,8 +445,8 @@ This update adds more flexibility in layout and document security management.
 Automatically generate accessible tables of contents (TOC) in tagged PDFs. Creating a fully accessible Table of Contents (TOC) in a PDF allows readers to navigate the document efficiently and ensures PDF/UA-1 compliance for accessibility.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def create_pdf_with_toc_page(self, outfile):
     """
@@ -295,10 +493,12 @@ def create_pdf_with_toc_page(self, outfile):
 Resize PDF pages while preserving layout and proportionally scaling content. When working with PDFs, you may need to resize pages or scale content to fit new dimensions.
 
 ```python
-
 import aspose.pdf as ap
 
-def resize_page(self, document, page_number, target_width, target_height, width, height, outfile):
+
+def resize_page(
+    self, document, page_number, target_width, target_height, width, height, outfile
+):
     """
     Resize and scale page content using PdfFileEditor.ResizeContents.
 
@@ -384,9 +584,13 @@ def resize_page(self, document, page_number, target_width, target_height, width,
     # Set the parameters
     param = ap.facades.PdfFileEditor.ContentsResizeParameters.page_resize(width, height)
     param.top_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(margin_height)
-    param.bottom_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(margin_height)
+    param.bottom_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(
+        margin_height
+    )
     param.left_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(margin_width)
-    param.right_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(margin_width)
+    param.right_margin = ap.facades.PdfFileEditor.ContentsResizeValue.units(
+        margin_width
+    )
     param.change_media_box = True
 
     # Do resize
@@ -400,8 +604,8 @@ def resize_page(self, document, page_number, target_width, target_height, width,
 Add tables with custom border styles using dashed lines. This example demonstrates how to apply custom border styles—such as dashed or dotted lines—to tables in a PDF document using Aspose.PDF for Python via .NET.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def create_table_with_dashed_border(self, outfile):
     """Support style  for table borders, allowing you to set dashed, dotted, or custom border styles for tables."""
@@ -410,7 +614,6 @@ def create_table_with_dashed_border(self, outfile):
 
     # Create the PDF document
     with ap.Document() as document:
-
         page = document.pages.add()
         table = ap.Table()
         graph_info = ap.GraphInfo()
@@ -439,12 +642,12 @@ The 25.7 release focuses on better annotation support, text fitting, and digital
 Secure your PDFs with encryption based on public certificates. Public certificate encryption allows PDFs to be encrypted for specific recipients, ensuring that only holders of the corresponding private keys can open and read the document.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def pub_sec_encryption(self, outfile, pub_cert, crypto_algorithm):
     """Support for public certificate encryption, allowing PDFs to be encrypted so that only specified certificate
-        holders can open the document."""
+    holders can open the document."""
 
     # The path to the recipient certificate
     path_outfile = self.data_dir + outfile
@@ -478,13 +681,13 @@ def pub_sec_encryption(self, outfile, pub_cert, crypto_algorithm):
 Automatically scale text to fit inside a defined rectangle. When updating or expanding text in a PDF, it may exceed the original paragraph bounds.
 
 ```python
-
 import re
 import aspose.pdf as ap
 
+
 def fit_text_into_rectangle(self, infile, outfile):
     """New functionality to fit expanded text content within the bounds of a paragraph’s original rectangle,
-        adjusting font size and spacing automatically."""
+    adjusting font size and spacing automatically."""
 
     path_infile = self.data_dir + infile
     path_outfile = self.data_dir + outfile
@@ -499,15 +702,21 @@ def fit_text_into_rectangle(self, infile, outfile):
 
         # Search for the text fragment
         searchable_content = re.sub(" ", r"\\s+", paragraph_text)
-        text_fragment_absorber = ap.text.TextFragmentAbsorber(searchable_content, ap.text.TextSearchOptions(True))
+        text_fragment_absorber = ap.text.TextFragmentAbsorber(
+            searchable_content, ap.text.TextSearchOptions(True)
+        )
         document.pages.accept(text_fragment_absorber)
         text_fragment = text_fragment_absorber.text_fragments[1]
         # Use the text fragment’s rectangle as the target replacement area
         text_fragment.replace_options.rectangle = text_fragment.rectangle
         # Enable font size reduction to fit the text within the specified area
-        text_fragment.replace_options.font_size_adjustment_action = ap.text.TextReplaceOptions.FontSizeAdjustment.SHRINK_TO_FIT
+        text_fragment.replace_options.font_size_adjustment_action = (
+            ap.text.TextReplaceOptions.FontSizeAdjustment.SHRINK_TO_FIT
+        )
         # Optionally adjust spacing to justify the text width
-        text_fragment.replace_options.replace_adjustment_action = ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        text_fragment.replace_options.replace_adjustment_action = (
+            ap.text.TextReplaceOptions.ReplaceAdjustment.ADJUST_SPACE_WIDTH
+        )
         # Duplicate the paragraph content and assign it to the text fragment
         text_fragment.text = paragraph_text + " " + paragraph_text
         # Save PDF document
@@ -519,8 +728,8 @@ def fit_text_into_rectangle(self, infile, outfile):
 Enhance PDF review workflows with cloud or polygon-style annotations. Polygon annotations allow you to highlight or emphasize specific areas in a PDF using geometric shapes.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def add_cloud_polygon_annotation(self, outfile):
     """The ability to apply “Cloudy” border effects to polygon annotations for enhanced visual appearance."""
@@ -529,16 +738,22 @@ def add_cloud_polygon_annotation(self, outfile):
 
     # Create the PDF document
     with ap.Document() as document:
-
         page = document.pages.add()
         # Add Cloud Polygon (rectangle)
         left = 100.0
         top = 270.0
         right = 420.0
         bottom = 80.0
-        cloud_polygon = ap.annotations.PolygonAnnotation(page,ap.Rectangle(left, top, right, bottom, True),
-                                                            [ap.Point(left, top),ap.Point(right, top),
-                                                            ap.Point(right, bottom), ap.Point(left, bottom)])
+        cloud_polygon = ap.annotations.PolygonAnnotation(
+            page,
+            ap.Rectangle(left, top, right, bottom, True),
+            [
+                ap.Point(left, top),
+                ap.Point(right, top),
+                ap.Point(right, bottom),
+                ap.Point(left, bottom),
+            ],
+        )
         cloud_polygon.color = ap.Color.blue
         border = ap.annotations.Border(cloud_polygon)
         border.width = 3
@@ -546,10 +761,17 @@ def add_cloud_polygon_annotation(self, outfile):
         cloud_polygon.border = border
         page.annotations.append(cloud_polygon)
         # Add another Cloud Polygon
-        cloud_polygon = ap.annotations.PolygonAnnotation(page, ap.Rectangle(400, 400, 580, 600, True),
-                                                            [ap.Point(400, 450), ap.Point(450, 300),
-                                                            ap.Point(520, 300), ap.Point(580, 500),
-                                                            ap.Point(500, 600)])
+        cloud_polygon = ap.annotations.PolygonAnnotation(
+            page,
+            ap.Rectangle(400, 400, 580, 600, True),
+            [
+                ap.Point(400, 450),
+                ap.Point(450, 300),
+                ap.Point(520, 300),
+                ap.Point(580, 500),
+                ap.Point(500, 600),
+            ],
+        )
         cloud_polygon.color = ap.Color.dark_green
         cloud_polygon.interior_color = ap.Color.aqua
         border = ap.annotations.Border(cloud_polygon)
@@ -575,8 +797,8 @@ The main features of this release:
 Set and retrieve alternative text for images to improve accessibility for screen readers.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def get_set_alternative_text_for_image(self, infile, outfile):
     """To get and set the alternative text for images"""
@@ -593,7 +815,7 @@ def get_set_alternative_text_for_image(self, infile, outfile):
         # Try to set alternative text for an image
         result = x_image.try_set_alternative_text(alt_text, document.pages[1])
         # If set is successful, then get the alternative text for the image
-        if (result):
+        if result:
             alt_texts = x_image.get_alternative_text(document.pages[1])
         # Save PDF document
         document.save(path_outfile)
@@ -604,8 +826,8 @@ def get_set_alternative_text_for_image(self, infile, outfile):
 Retrieve detailed license metadata (licensed user, expiry date) via LicenseInfo.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def get_license_info_example(self, infile):
     """A new way to access license information programmatically through the LicenseInfo property of the License class"""
@@ -627,12 +849,12 @@ def get_license_info_example(self, infile):
 Use SetTextStyle to apply styles like bold, italic, underline, or clear existing formatting to annotation text.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def add_free_annotation_and_set_styles(self, outfile):
     """Extended formatting capabilities for annotation text through the SetTextStyle method family of the
-        FreeTextAnnotation class"""
+    FreeTextAnnotation class"""
 
     path_outfile = self.data_dir + outfile
 
@@ -641,18 +863,32 @@ def add_free_annotation_and_set_styles(self, outfile):
         # Add new page
         page = document.pages.add()
         # Instantiate DefaultAppearance object
-        default_appearance = ap.annotations.DefaultAppearance("Arial", 16, drawing.Color.blue)
+        default_appearance = ap.annotations.DefaultAppearance(
+            "Arial", 16, drawing.Color.blue
+        )
         # Create annotation
-        free_text = ap.annotations.FreeTextAnnotation(page, ap.Rectangle(20, 600, 400, 650, True), default_appearance)
+        free_text = ap.annotations.FreeTextAnnotation(
+            page, ap.Rectangle(20, 600, 400, 650, True), default_appearance
+        )
         # Specify the contents of annotation
         free_text.contents = "Text of FreeTextAnnotation with different styles"
         # Add annotation to annotations collection of page
         page.annotations.append(free_text)
         # Set styles for annotation text
         free_text.set_text_style(0, 4, ap.annotations.RichTextFontStyles.ITALIC)
-        free_text.set_text_style(8, 26, ap.annotations.RichTextFontStyles.UNDERLINE | ap.annotations.RichTextFontStyles.BOLD)
+        free_text.set_text_style(
+            8,
+            26,
+            ap.annotations.RichTextFontStyles.UNDERLINE
+            | ap.annotations.RichTextFontStyles.BOLD,
+        )
         free_text.set_text_style(27, 86, ap.annotations.RichTextFontStyles.BOLD)
-        free_text.set_text_style(42, 45, ap.annotations.RichTextFontStyles.CLEAR_EXISTING | ap.annotations.RichTextFontStyles.UNDERLINE)
+        free_text.set_text_style(
+            42,
+            45,
+            ap.annotations.RichTextFontStyles.CLEAR_EXISTING
+            | ap.annotations.RichTextFontStyles.UNDERLINE,
+        )
         # Save PDF document
         document.save(path_outfile)
 ```
@@ -662,10 +898,12 @@ def add_free_annotation_and_set_styles(self, outfile):
 Add images, change fonts, and layer signature graphics over background content for better branding or design consistency.
 
 ```python
-
 import aspose.pdf as ap
 
-def customization_features_for_digital_sign(self, infile, outfile, image_file, pfx_file):
+
+def customization_features_for_digital_sign(
+    self, infile, outfile, image_file, pfx_file
+):
     """Enhanced digital signature appearance allowing signature images to appear over background text."""
 
     path_infile = self.data_dir + infile
@@ -710,8 +948,8 @@ The latest Aspose.PDF update introduces several powerful enhancements that impro
 Retrieve embedded certificates using 'extract_certificate()'.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def extract_certificate(self, infile):
     path_infile = self.data_dir + infile
@@ -733,8 +971,8 @@ def extract_certificate(self, infile):
 Generate accessible numbered lists (with nested items) inside tagged documents.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def create_ordered_list(self, outfile):
     path_outfile = self.data_dir + outfile
@@ -832,8 +1070,8 @@ def create_ordered_list(self, outfile):
 Validate digital signatures using external public key certs.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def verify_with_public_key_certificate1(self, certificate, infile):
     path_infile = self.data_dir + infile
@@ -851,8 +1089,8 @@ def verify_with_public_key_certificate1(self, certificate, infile):
 Standardize XFA forms with 'ignore_needs_rendering'.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def convert_xfa_form_with_ignore_needs_rendering(self, infile, outfile):
     path_infile = self.data_dir + infile
@@ -874,8 +1112,8 @@ def convert_xfa_form_with_ignore_needs_rendering(self, infile, outfile):
 Substitute missing fonts with a default fallback (e.g., “Courier New”).
 
 ```python
-
 import aspose.pdf as ap
+
 
 def replace_font_when_converting_pdf_to_xps(self, infile, outfile):
     path_infile = self.data_dir + infile
@@ -900,8 +1138,8 @@ def replace_font_when_converting_pdf_to_xps(self, infile, outfile):
 Convert PDFs to PDF/A-1b with automatic logical structure creation for improved accessibility.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def convert_to_pdfa_with_automatic_tagging(self, infile, outfile, outlogfile):
     path_infile = self.data_dir + infile
@@ -911,14 +1149,18 @@ def convert_to_pdfa_with_automatic_tagging(self, infile, outfile, outlogfile):
     # Open PDF document
     with ap.Document(path_infile) as document:
         # Create conversion options
-        options = ap.PdfFormatConversionOptions(path_outlogfile, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE)
+        options = ap.PdfFormatConversionOptions(
+            path_outlogfile, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE
+        )
         # Create auto-tagging settings
         # aspose.pdf.AutoTaggingSettings.default may be used to set the same settings as given below
         auto_tagging_settings = ap.AutoTaggingSettings()
         # Enable auto-tagging during the conversion process
         auto_tagging_settings.enable_auto_tagging = True
         # Use the heading recognition strategy that's optimal for the given document structure
-        auto_tagging_settings.heading_recognition_strategy = ap.HeadingRecognitionStrategy.AUTO
+        auto_tagging_settings.heading_recognition_strategy = (
+            ap.HeadingRecognitionStrategy.AUTO
+        )
         # Assign auto-tagging settings to be used during the conversion process
         options.auto_tagging_settings = auto_tagging_settings
         # During the conversion, the document logical structure will be automatically created
