@@ -3,14 +3,35 @@ title: PdfViewer Class
 type: docs
 weight: 135
 url: /python-net/pdfviewer-class/
-description: Explore how to integrate PDF viewing capabilities in Python applications using the PDFViewer class from Aspose.PDF.
-lastmod: "2026-04-13"
+description: Learn how to use the PdfViewer class in Aspose.PDF for Python via .NET to decode all PDF pages, decode a specific page, and inspect viewer-related PDF metadata.
+lastmod: "2026-04-14"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Decode PDF pages and inspect viewer data in Python with PdfViewer
+Abstract: This article explains how to use the PdfViewer facade in Aspose.PDF for Python via .NET for page decoding and viewer-related inspection tasks. Learn how to decode all PDF pages, render a specific page, and inspect properties such as page count, coordinate type, and resolution.
 ---
 
 Aspose.PDF for Python via .NET provides the [PdfViewer](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/pdfviewer/) facade for working with PDF viewing and page-decoding scenarios. One common use case is converting PDF pages into image objects that can then be saved to disk.
+
+## Create a reusable PdfViewer helper
+
+Before decoding pages or reading viewer-related properties, create a small helper that initializes and returns a `PdfViewer` instance. This keeps the examples below self-contained and makes it clear how the viewer object is created before it is bound to a PDF document.
+
+```python
+import aspose.pdf.facades as pdf_facades
+
+
+def _create_viewer() -> pdf_facades.PdfViewer:
+    """Create a PdfViewer configured for decoding examples."""
+    viewer = pdf_facades.PdfViewer()
+    viewer.coordinate_type = ap.PageCoordinateType.MEDIA_BOX
+    viewer.resolution = 150
+    viewer.scale_factor = 1.0
+    viewer.show_hidden_areas = False
+    return viewer
+```
 
 ## Decode all PDF pages
 

@@ -1,21 +1,16 @@
 ---
-title: Add PDF Stamps in Python
+title: Stamp Class
 type: docs
 weight: 150
 url: /python-net/stamp-class/
-description: Learn how to add image, PDF, and text stamps to PDF files in Python with Aspose.PDF for Python via .NET using the Stamp class.
-lastmod: "2026-04-14"
+description: Learn how to work with the Stamp class to add image, PDF, and text-based stamps to PDF documents in Python.
+lastmod: "2026-04-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-TechArticle: true
-AlternativeHeadline: Work with image, text, and PDF page stamps in Python
-Abstract: This article explains how to use the Stamp class in Aspose.PDF for Python via .NET to apply reusable image, text, and PDF-based stamps to PDF documents. Learn how to position stamps, style text-based stamps, apply stamps to selected pages, and create background watermark-style effects.
 ---
 
 Aspose.PDF for Python via .NET provides the [Stamp](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/stamp/) class for placing reusable visual content on PDF pages. A stamp can be based on text, an image, or even a page from another PDF, and it can be positioned, rotated, styled, and limited to specific pages.
-
-Use `Stamp` when you need to define the visual content and placement of a reusable stamp. In typical workflows, you create and configure a `Stamp` object first, then apply it to a document with [PdfFileStamp](/pdf/python-net/pdffilestamp-class/) or navigate back to the broader [PDF Facades overview](/pdf/python-net/working-with-facades/) for related facade classes.
 
 This article demonstrates several common stamp workflows:
 
