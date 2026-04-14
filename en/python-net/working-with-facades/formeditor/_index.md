@@ -14,5 +14,3 @@ sitemap:
 - [Customizing Field Appearance](/pdf/python-net/customizing-field-appearance/)
 - [Modifying Form Fields](/pdf/python-net/modifying-form-fields/)
 - [Creating Form Field](/pdf/python-net/creating-form-field)
-
-
