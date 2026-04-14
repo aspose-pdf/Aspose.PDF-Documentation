@@ -19,10 +19,10 @@ In **Aspose.PDF for Python via .NET** 26.3, we have added:
 Lossless image stream recompression during PDF optimization. The OptimizationOptions.CompressAllContentStreams property now also compresses eligible image XObject streams with FlateDecode, helping reduce file size while keeping image quality intact.
 
 ```python
+
 import aspose.pdf as ap
 
-
-def optimize_pdf_with_loss_less_image_stream_recompression(infile, outfile):
+def  optimize_pdf_with_loss_less_image_stream_recompression(infile, outfile):
     with ap.Document(infile) as document:
         optimize_options = ap.optimization.OptimizationOptions()
         optimize_options.subset_fonts = True
@@ -42,8 +42,8 @@ def optimize_pdf_with_loss_less_image_stream_recompression(infile, outfile):
 Image recompression now matches the selected ImageCompressionOptions.Encoding setting during optimization, ensuring more consistent results when using Jpeg2000 or Flate, along with image resizing, resolution limits, and quality controls.
 
 ```python
-import aspose.pdf as ap
 
+import aspose.pdf as ap
 
 def optimize_pdf_images_with_selected_encoding(infile, outfile):
     # Open PDF document
@@ -59,12 +59,8 @@ def optimize_pdf_images_with_selected_encoding(infile, outfile):
         optimize_options.image_compression_options.resize_images = True
         optimize_options.image_compression_options.max_resolution = 130
         optimize_options.image_compression_options.image_quality = 100
-        optimize_options.image_compression_options.encoding = (
-            ap.optimization.ImageEncoding.FLATE
-        )
-        optimize_options.image_compression_options.version = (
-            ap.optimization.ImageCompressionVersion.MIXED
-        )
+        optimize_options.image_compression_options.encoding = ap.optimization.ImageEncoding.FLATE
+        optimize_options.image_compression_options.version = ap.optimization.ImageCompressionVersion.MIXED
 
         # Optimize PDF document resources
         pdf.optimize_resources(optimize_options)
@@ -75,8 +71,8 @@ def optimize_pdf_images_with_selected_encoding(infile, outfile):
 Support for rendering comments when saving PDF documents as images or HTML, helping to preserve visible review markup when exporting annotated documents for sharing outside PDF viewers.
 
 ```python
-import aspose.pdf as ap
 
+import aspose.pdf as ap
 
 def render_comments_to_image_and_html(infile, outfile, output_png):
     # Open PDF document
@@ -94,8 +90,8 @@ def render_comments_to_image_and_html(infile, outfile, output_png):
 Improved PDF-to-TIFF rendering performance for high-volume rasterization scenarios, especially when exporting pages to bitonal TIFF images.
 
 ```python
-import aspose.pdf as ap
 
+import aspose.pdf as ap
 
 def convert_pdf_to_tiff(infile, data_dir):
     # Open PDF document
@@ -124,8 +120,8 @@ Aspose.PDF 26.2 introduces support for RTF to PDF conversion. This feature allow
 RTF is a widely supported, cross-platform document format originally developed by Microsoft. It is designed to enable document exchange between different word processing applications while preserving basic formatting such as fonts, colors, bold and italic text, as well as embedded images.
 
 ```python
-import aspose.pdf as ap
 
+import aspose.pdf as ap
 
 def convert_rtf_to_pdf(infile, outfile):
     # Initialize RTF load options
@@ -143,8 +139,8 @@ The script opens an existing PDF document and calculates the bounding box of the
 A table is then created and filled with multiple rows and columns using a loop. After setting up the table structure and content, the table is added to the page’s paragraph collection. Finally, the updated document is saved as a new PDF file.
 
 ```python
-import aspose.pdf as ap
 
+import aspose.pdf as ap
 
 def add_table_after_last_element(infile, outfile):
     # Load source PDF document
@@ -176,34 +172,27 @@ def add_table_after_last_element(infile, outfile):
 Detect and remove invisible text from a PDF document using Aspose.PDF for Python:
 
 ```python
-import aspose.pdf as ap
 
+import aspose.pdf as ap
 
 def remove_invisible_text(infile, outfile):
     with ap.Document(infile) as pdf_doc:
         for page in pdf_doc.pages:
             absorber = ap.text.TextFragmentAbsorber()
             page.accept(absorber)
-            fragments_to_remove = [
-                x
-                for x in absorber.text_fragments
+            fragments_to_remove = [ x for x in absorber.text_fragments
                 if (
                     x.text_state.invisible
-                    or x.text_state.rendering_mode
-                    == ap.text.TextRenderingMode.INVISIBLE
+                    or x.text_state.rendering_mode == ap.text.TextRenderingMode.INVISIBLE
                     or (
                         x.text_state.foreground_color is not None
                         and x.text_state.foreground_color.a == 0
                     )
-                )
-            ]
+                )]
             for fragment in fragments_to_remove:
-                absorber.text_fragments.remove(
-                    fragment
-                )  # Now properly removes text from document
+                absorber.text_fragments.remove(fragment) # Now properly removes text from document
         pdf_doc.save(outfile)
 ```
-
 
 ## What's new in Aspose.PDF 26.1
 
@@ -1168,4 +1157,3 @@ def convert_to_pdfa_with_automatic_tagging(self, infile, outfile, outlogfile):
         # Save PDF document
         document.save(path_outfile)
 ```
-
