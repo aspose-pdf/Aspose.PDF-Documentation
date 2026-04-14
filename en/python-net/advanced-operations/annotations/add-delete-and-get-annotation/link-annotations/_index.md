@@ -1,11 +1,11 @@
 ---
-title: Using Link Annotations in PDF
+title: Link Annotations in PDF using Python
 linktitle: Link Annotations
 type: docs
 weight: 70
 url: /python-net/link-annotations/
-description: Aspose.PDF for Python via .NET allows you to Add, Get, and Delete Link Annotation from your PDF document.
-lastmod: "2025-07-28"
+description: Learn how to add, retrieve, and delete link annotations in PDF files using Python with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -41,6 +41,12 @@ linkAnnotation.action = ap.annotations.GoToURIAction("www.aspose.com")
 document.pages[1].annotations.append(linkAnnotation)
 document.save(output_file)
 ```
+
+## Related Annotation Topics
+
+- [PDF Annotations overview](/pdf/python-net/annotations/) for the parent annotation section.
+- [Add, Delete and Get Annotation](/pdf/python-net/add-delete-and-get-annotation/) for the grouped annotation index.
+- [Extra Annotations](/pdf/python-net/extra-annotations/) if you also need caret, redaction, or other specialized annotation workflows.
 
 ### Get Link Annotation
 
