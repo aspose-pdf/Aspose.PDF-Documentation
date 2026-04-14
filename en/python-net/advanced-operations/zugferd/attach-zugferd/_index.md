@@ -48,7 +48,7 @@ fileSpecification.mime_type = "text/xml"
 fileSpecification.af_relationship = ap.AFRelationship.ALTERNATIVE
 
 # Add the embedded file to the PDF document's embedded files collection
-document.embedded_files.add("factur",fileSpecification)
+document.embedded_files.add("factur", fileSpecification)
 
 # Convert the PDF document to the PDF/A-3A format
 path = _dataDir + "ZUGFeRD/log.xml"

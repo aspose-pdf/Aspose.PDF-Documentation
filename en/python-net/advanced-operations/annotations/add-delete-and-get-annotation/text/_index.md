@@ -29,58 +29,55 @@ To add an annotation to a particular page, add it to that page's Annotations col
 The following code snippet shows you how to add an annotation in a PDF page.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
 
-    document = ap.Document(input_file)
+textAnnotation = ap.annotations.TextAnnotation(
+    document.pages[1], ap.Rectangle(300, 700.664, 320, 720.769, True)
+)
+textAnnotation.title = "Aspose User"
+textAnnotation.subject = "Inserted text 1"
+textAnnotation.contents = "qwerty"
+textAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
+textAnnotation.color = ap.Color.blue
 
-    textAnnotation = ap.annotations.TextAnnotation(
-        document.pages[1], ap.Rectangle(300, 700.664, 320, 720.769, True)
-    )
-    textAnnotation.title = "Aspose User"
-    textAnnotation.subject = "Inserted text 1"
-    textAnnotation.contents = "qwerty"
-    textAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
-    textAnnotation.color = ap.Color.blue
-
-    document.pages[1].annotations.append(textAnnotation)
-    document.save(output_file)
+document.pages[1].annotations.append(textAnnotation)
+document.save(output_file)
 ```
 
 ## Get Text Annotation from PDF file
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+textAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.TEXT)
+]
 
-    document = ap.Document(input_file)
-    textAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.TEXT)
-    ]
-
-    for ta in textAnnotations:
-        print(ta.rect)
+for ta in textAnnotations:
+    print(ta.rect)
 ```
 
 ## Delete Text Annotation from PDF file
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+textAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.TEXT)
+]
 
-    document = ap.Document(input_file)
-    textAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.TEXT)
-    ]
+for ta in textAnnotations:
+    document.pages[1].annotations.delete(ta)
 
-    for ta in textAnnotations:
-        document.pages[1].annotations.delete(ta)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 
@@ -89,57 +86,56 @@ The following code snippet shows you how to add an annotation in a PDF page.
 A free text annotation displays text directly on the page. The [FreeTextAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/freetextannotation/) class allows creating this type of annotation. In the following snippet, we add free text annotation above the first occurrence of the string.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+# Load the PDF file
+document = ap.Document(input_file)
 
-    # Load the PDF file
-    document = ap.Document(input_file)
+freeTextAnnotation = ap.annotations.FreeTextAnnotation(
+    document.pages[1],
+    ap.Rectangle(299, 713, 308, 720, True),
+    ap.annotations.DefaultAppearance(),
+)
+freeTextAnnotation.title = "Aspose User"
+freeTextAnnotation.color = ap.Color.light_green
 
-    freeTextAnnotation = ap.annotations.FreeTextAnnotation(
-        document.pages[1], ap.Rectangle(299, 713, 308, 720, True), ap.annotations.DefaultAppearance()
-    )
-    freeTextAnnotation.title = "Aspose User"
-    freeTextAnnotation.color = ap.Color.light_green
-
-    document.pages[1].annotations.append(freeTextAnnotation)
-    document.save(output_file)
+document.pages[1].annotations.append(freeTextAnnotation)
+document.save(output_file)
 ```
 
 ## Get Free Text Annotation from PDF file
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+freeTextAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.FREE_TEXT)
+]
 
-    document = ap.Document(input_file)
-    freeTextAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.FREE_TEXT)
-    ]
-
-    for fa in freeTextAnnotations:
-        print(fa.rect)
+for fa in freeTextAnnotations:
+    print(fa.rect)
 ```
 
 ## Delete Free Text Annotation from PDF file
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+# Load the PDF file
+document = ap.Document(input_file)
+freeTextAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.FREE_TEXT)
+]
 
-    # Load the PDF file
-    document = ap.Document(input_file)
-    freeTextAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.FREE_TEXT)
-    ]
+for fa in freeTextAnnotations:
+    document.pages[1].annotations.delete(fa)
 
-    for fa in freeTextAnnotations:
-        document.pages[1].annotations.delete(fa)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 
@@ -150,58 +146,55 @@ Aspose.PDF for Python allows you to add, delete and update annotations in PDF do
 The following code snippet shows how to add a [StrikeOutAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/strikeoutannotation/) to PDF.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
 
-    document = ap.Document(input_file)
+strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
+    document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
+)
+strikeoutAnnotation.title = "Aspose User"
+strikeoutAnnotation.subject = "Inserted text 1"
+strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
+strikeoutAnnotation.color = ap.Color.blue
 
-    strikeoutAnnotation = ap.annotations.StrikeOutAnnotation(
-        document.pages[1], ap.Rectangle(299.988, 713.664, 308.708, 720.769, True)
-    )
-    strikeoutAnnotation.title = "Aspose User"
-    strikeoutAnnotation.subject = "Inserted text 1"
-    strikeoutAnnotation.flags = ap.annotations.AnnotationFlags.PRINT
-    strikeoutAnnotation.color = ap.Color.blue
-
-    document.pages[1].annotations.append(strikeoutAnnotation)
-    document.save(output_file)
+document.pages[1].annotations.append(strikeoutAnnotation)
+document.save(output_file)
 ```
 
 
 ## Get StrikeOutAnnotation from PDF
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+StrikeoutAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.STRIKE_OUT)
+]
 
-    document = ap.Document(input_file)
-    StrikeoutAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.STRIKE_OUT)
-    ]
-
-    for pa in StrikeoutAnnotations:
-        print(pa.rect)
+for pa in StrikeoutAnnotations:
+    print(pa.rect)
 ```
 
 ## Delete StrikeOutAnnotation from PDF
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+StrikeoutAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.STRIKE_OUT)
+]
 
-    document = ap.Document(input_file)
-    StrikeoutAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.STRIKE_OUT)
-    ]
+for pa in StrikeoutAnnotations:
+    document.pages[1].annotations.delete(pa)
 
-    for pa in StrikeoutAnnotations:
-        document.pages[1].annotations.delete(pa)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 

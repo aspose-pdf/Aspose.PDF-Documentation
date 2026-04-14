@@ -36,14 +36,14 @@ This example shows how to create and add multiple layers  to a PDF document usin
 The resulting PDF will contain three separate layers: a red line, a green line, and a blue line. Each can be toggled on or off in PDF readers that support layered content.
 
 ```python
-
 import aspose.pdf as ap
 from os import path
+
 
 def add_colored_layers(outfile: str, data_dir: str) -> None:
     """
     Creates a PDF with three layers (Red, Green, Blue lines).
-    
+
     Args:
         outfile (str): Name of the output PDF file.
         data_dir (str): Directory path to save the file.
@@ -98,9 +98,9 @@ Available methods and property:
 If the PDF contains layers, the first layer will be locked, ensuring its visibility state cannot be changed by the user. If no layers are found, a message is printed instead.
 
 ```python
-
 import aspose.pdf as ap
 from os import path
+
 
 def lock_layer(path_infile, path_outfile):
     with ap.Document(path_infile) as document:
@@ -126,9 +126,9 @@ To create a new PDF from a layer, the following code snippet can be used:
 1. Iterate and Save Each Layer.
 
 ```python
-
 import aspose.pdf as ap
 from os import path
+
 
 def save_layers(path_infile, path_outfile):
     with ap.Document(path_infile) as document:
@@ -142,9 +142,9 @@ def save_layers(path_infile, path_outfile):
 It is possible to extract PDF layer elements and save them into a new PDF file stream:
 
 ```python
-
 import aspose.pdf as ap
 from os import path
+
 
 def save_layers_to_stream(path_infile, output_stream):
     with ap.Document(path_infile) as document:
@@ -164,9 +164,9 @@ This script uses Aspose.PDF for Python via .NET to flatten all layers on the fir
 1. Save the Modified Document.
 
 ```python
-
 import aspose.pdf as ap
 from os import path
+
 
 def flatten_layers(path_infile, path_outfile):
     with ap.Document(path_infile) as document:
@@ -194,9 +194,9 @@ This code snippet uses Aspose.PDF to merge all layers on the first page of a PDF
 1. Save the Document
 
 ```python
-
 import aspose.pdf as ap
 from os import path
+
 
 def merge_layers(path_infile, path_outfile, new_layer_name, optional_group_id=None):
     with ap.Document(path_infile) as document:

@@ -23,21 +23,20 @@ This example demonstrates how to insert an image into a specific position on a P
 1. Save the updated PDF.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-
-    document = ap.Document(path_infile)
-    page = document.pages[1]
-    page.add_image(
-        path.join(self.data_dir, image_file),
-        ap.Rectangle(20, 730, 120, 830, True),
-    )
-    document.save(path_outfile)
+document = ap.Document(path_infile)
+page = document.pages[1]
+page.add_image(
+    path.join(self.data_dir, image_file),
+    ap.Rectangle(20, 730, 120, 830, True),
+)
+document.save(path_outfile)
 ```
 
 ## Add an Image Using Operators
@@ -62,62 +61,61 @@ Steps:
 1. Save the resulting PDF.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
+path_infile = path.join(self.data_dir, image_file)
+path_outfile = path.join(self.data_dir, "python", outfile)
 
-    path_infile = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, "python", outfile)
+document = ap.Document()
+page = document.pages.add()
+page.set_page_size(842, 595)
 
-    document = ap.Document()
-    page = document.pages.add()
-    page.set_page_size(842,595)
+# Get page resources
+resources_images = page.resources.images
 
-    # Get page resources
-    resources_images = page.resources.images
+# Add image to resources
+image_stream = FileIO(path.join(self.data_dir, path_infile), "rb")
+image_id = resources_images.add(image_stream)
 
-    # Add image to resources
-    image_stream = FileIO(path.join(self.data_dir, path_infile), "rb")
-    image_id = resources_images.add(image_stream)
+x_image = list(resources_images)[-1]
 
-    x_image = list(resources_images)[-1]
+rectangle = ap.Rectangle(
+    0,
+    0,
+    page.media_box.width,
+    (page.media_box.width * x_image.height) / x_image.width,
+    True,
+)
 
-    rectangle = ap.Rectangle(
-        0,
-        0,
-        page.media_box.width,
-        (page.media_box.width * x_image.height) / x_image.width,
-        True,
-    )
+# Create operator sequence for adding image
+operators = []
 
-    # Create operator sequence for adding image
-    operators = []
+# Save graphics state
+operators.append(ap.operators.GSave())
 
-    # Save graphics state
-    operators.append(ap.operators.GSave())
+# Set transformation matrix (position and size)
+matrix = ap.Matrix(
+    rectangle.urx - rectangle.llx,
+    0,
+    0,
+    rectangle.ury - rectangle.lly,
+    rectangle.llx,
+    rectangle.llx + (page.media_box.height - rectangle.height) / 2,
+)
+operators.append(ap.operators.ConcatenateMatrix(matrix))
 
-    # Set transformation matrix (position and size)
-    matrix = ap.Matrix(
-        rectangle.urx - rectangle.llx,
-        0,
-        0,
-        rectangle.ury - rectangle.lly,
-        rectangle.llx,
-        rectangle.llx + (page.media_box.height - rectangle.height) / 2,
-    )
-    operators.append(ap.operators.ConcatenateMatrix(matrix))
+# Draw the image
+operators.append(ap.operators.Do(image_id))
 
-    # Draw the image
-    operators.append(ap.operators.Do(image_id))
+# Restore graphics state
+operators.append(ap.operators.GRestore())
 
-    # Restore graphics state
-    operators.append(ap.operators.GRestore())
+# Add operators to page contents
+page.contents.add(operators)
 
-    # Add operators to page contents
-    page.contents.add(operators)
-
-    document.save(path_outfile)
+document.save(path_outfile)
 ```
 
 ## Add Image with Alternative Text
@@ -133,30 +131,29 @@ This example shows how to add an image to a PDF page and assign alternative text
 1. Save the resulting PDF.
 
 ```python
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
+path_image_file = path.join(self.data_dir, image_file)
+path_outfile = path.join(self.data_dir, "python", outfile)
 
-    path_image_file = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, "python", outfile)
+document = ap.Document()
+page = document.pages.add()
+page.set_page_size(842, 595)
 
-    document = ap.Document()
-    page = document.pages.add()
-    page.set_page_size(842,595)
+page.add_image(
+    path_image_file,
+    ap.Rectangle(0, 0, 842, 595, True),
+)
 
-    page.add_image(
-        path_image_file,
-        ap.Rectangle(0, 0, 842, 595, True),
-    )
+resources_images = page.resources.images
+alt_text = "Alternative text for image"
+x_image = resources_images[1]
+result = x_image.try_set_alternative_text(alt_text, page)
 
-    resources_images = page.resources.images
-    alt_text = "Alternative text for image"
-    x_image = resources_images[1]
-    result = x_image.try_set_alternative_text(alt_text, page)
-
-    # If set is successful, then get the alternative text for the image
-    if (result):
-        print ("Text has been added successfuly")
-    document.save(path_outfile)
+# If set is successful, then get the alternative text for the image
+if result:
+    print("Text has been added successfuly")
+document.save(path_outfile)
 ```

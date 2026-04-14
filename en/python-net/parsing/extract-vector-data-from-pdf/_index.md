@@ -24,9 +24,9 @@ The following code snippet uses the GraphicsAbsorber class to show how to extrac
 1. Close the document to free resources.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_graphics_elements(infile, outfile):
     """
@@ -40,7 +40,7 @@ def extract_graphics_elements(infile, outfile):
         gr_absorber = ap.vector.GraphicsAbsorber()
         # Visit page 2 (pages collection is 1-indexed; document.pages[1] is the second page)
         gr_absorber.visit(document.pages[1])
-        
+
         elements = gr_absorber.elements
         with open(outfile, "w", encoding="utf-8") as f:
             for idx, elem in enumerate(elements, start=1):
@@ -48,7 +48,9 @@ def extract_graphics_elements(infile, outfile):
                 rect = elem.rectangle
                 pos = elem.position
                 ops_count = len(elem.operators)
-                f.write(f"Element {idx}: Rectangle = {rect}, Position = {pos}, Operators = {ops_count}\n")
+                f.write(
+                    f"Element {idx}: Rectangle = {rect}, Position = {pos}, Operators = {ops_count}\n"
+                )
     finally:
         document.close()
 ```
@@ -63,9 +65,9 @@ Export vector graphics from a PDF page into an SVG file, preserving vector shape
 1. Close the document.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def save_vector_graphics_to_svg(infile, svg_outfile):
     """
@@ -95,9 +97,9 @@ Extract every sub-path (component) of vector graphics into separate SVG files by
 1. Close the document.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_subpaths_to_svgs(infile, output_dir):
     """
@@ -110,7 +112,7 @@ def extract_subpaths_to_svgs(infile, output_dir):
     try:
         options = ap.vector.SvgExtractionOptions()
         options.extract_every_subpath_to_svg = True
-        
+
         page = document.pages[1]
         extractor = ap.vector.SvgExtractor(options)
         extractor.extract(page, output_dir)
@@ -129,9 +131,9 @@ This is useful when you want to preserve the visual structure of grouped shapes 
 1. Save the output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_list_of_elements_to_single_image(infile, outfile):
     """
@@ -161,9 +163,9 @@ It is beneficial for isolating and exporting logos, icons, or standalone shapes 
 1. Save that single element to an SVG file.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_single_vector_element(infile, outfile):
     """

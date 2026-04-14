@@ -22,12 +22,12 @@ This function rotates every page of a PDF [`Document`](https://reference.aspose.
 It is useful for correcting page orientation issues, such as scanned documents that are sideways. The original PDF remains unchanged, and the rotated version is saved as a new file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def rotate_page(infile, outfile):
     """

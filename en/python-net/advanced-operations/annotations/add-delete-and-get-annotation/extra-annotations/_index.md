@@ -28,22 +28,21 @@ Steps with which we create Caret annotation:
 The following code snippet shows how to add Caret Annotation to a PDF file:
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+# Open document
+document = ap.Document(input_file)
 
-    # Open document
-    document = ap.Document(input_file)
+caretAnnotation1 = ap.annotations.CaretAnnotation(
+    document.pages[1], ap.Rectangle(200, 700.664, 308.708, 740.769, True)
+)
+caretAnnotation1.title = "Aspose User"
+caretAnnotation1.subject = "Inserted text 1"
+caretAnnotation1.flags = ap.annotations.AnnotationFlags.PRINT
+caretAnnotation1.color = ap.Color.blue
 
-    caretAnnotation1 = ap.annotations.CaretAnnotation(
-        document.pages[1], ap.Rectangle(200, 700.664, 308.708, 740.769, True)
-    )
-    caretAnnotation1.title = "Aspose User"
-    caretAnnotation1.subject = "Inserted text 1"
-    caretAnnotation1.flags = ap.annotations.AnnotationFlags.PRINT
-    caretAnnotation1.color = ap.Color.blue
-
-    document.pages[1].annotations.append(caretAnnotation1)
-    document.save(output_file)
+document.pages[1].annotations.append(caretAnnotation1)
+document.save(output_file)
 ```
 
 ### Get Caret Annotation
@@ -51,18 +50,17 @@ The following code snippet shows how to add Caret Annotation to a PDF file:
 Please try using the following code snippet to Get Caret Annotation in PDF document
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+caretAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.CARET)
+]
 
-    document = ap.Document(input_file)
-    caretAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.CARET)
-    ]
-
-    for ca in caretAnnotations:
-        print(ca.rect)
+for ca in caretAnnotations:
+    print(ca.rect)
 ```
 
 ### Delete Caret Annotation
@@ -70,21 +68,20 @@ Please try using the following code snippet to Get Caret Annotation in PDF docum
 The following code snippet shows how Delete Caret Annotation from a PDF file using Python.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+# Load the PDF file
+document = ap.Document(input_file)
+caretAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.CARET)
+]
 
-    # Load the PDF file
-    document = ap.Document(input_file)
-    caretAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.CARET)
-    ]
+for ca in caretAnnotations:
+    document.pages[1].annotations.delete(ca)
 
-    for ca in caretAnnotations:
-        document.pages[1].annotations.delete(ca)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 ## Redact certain page region with Redaction Annotation using Aspose.PDF for Python
@@ -92,55 +89,54 @@ The following code snippet shows how Delete Caret Annotation from a PDF file usi
 Aspose.PDF for Python via .NET supports the feature to add as well as manipulate Annotations in an existing PDF file. Redaction Annotations in PDF documents serve the purpose of permanently removing or concealing confidential information from the document. The process of editing the information involves covering or shading specific content, such as text, images, or graphics, in a way that restricts its visibility and accessibility to others. This ensures that the sensitive information remains hidden and protected within the document. In order to fulfill this requirement, a class named [RedactionAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/redactionannotation/) is provided, which can be used to redact certain page regions or it can be used to manipulate existing RedactionAnnotations and redact them (i.e. flatten annotation and remove the text under it).
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+page = document.pages[1]
+redactionAnnotation = ap.annotations.RedactionAnnotation(
+    page, ap.Rectangle(270, 190, 371, 250, True)
+)
+redactionAnnotation.title = "John Smith"
+redactionAnnotation.fill_color = ap.Color.light_gray
+redactionAnnotation.color = ap.Color.red
+redactionAnnotation.redact()
 
-    document = ap.Document(input_file)
-    page = document.pages[1]
-    redactionAnnotation = ap.annotations.RedactionAnnotation(page, ap.Rectangle(270, 190, 371, 250, True))
-    redactionAnnotation.title = "John Smith"
-    redactionAnnotation.fill_color = ap.Color.light_gray
-    redactionAnnotation.color = ap.Color.red
-    redactionAnnotation.redact()
-
-    page.annotations.append(redactionAnnotation)
-    document.save(output_file)
+page.annotations.append(redactionAnnotation)
+document.save(output_file)
 ```
 
 ### Get Redaction Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+redactionAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.REDACTION)
+]
 
-    document = ap.Document(input_file)
-    redactionAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.REDACTION)
-    ]
-
-    for pa in redactionAnnotations:
-        print(pa.rect)
+for pa in redactionAnnotations:
+    print(pa.rect)
 ```
 
 ### Delete Redaction Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+redactionAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.REDACTION)
+]
 
-    document = ap.Document(input_file)
-    redactionAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.REDACTION)
-    ]
+for pa in redactionAnnotations:
+    document.pages[1].annotations.delete(pa)
 
-    for pa in redactionAnnotations:
-        document.pages[1].annotations.delete(pa)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 

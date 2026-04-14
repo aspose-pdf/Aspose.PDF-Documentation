@@ -33,12 +33,12 @@ The following code snippet demonstrates how to add headers and footers as text f
 1. Save the modified PDF to the output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_header_and_footer_as_text(input_file, output_file):
     """
@@ -113,12 +113,12 @@ Add automatic page numbering to the headers and footers of a PDF document using 
 1. Save the updated PDF to the output path.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def using_header_and_footer_for_page_numbering(input_file, output_file):
     """
@@ -197,12 +197,12 @@ The following code snippet demonstrates how to add headers and footers as HTML f
 1. Save the modified PDF to the specified output path.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_header_and_footer_as_html(input_file, output_file):
     """
@@ -283,12 +283,12 @@ The following code snippet demonstrates how to add headers and footers as images
 This technique is ideal for branding documents with logos or watermarks in the header/footer area.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_header_and_footer_as_image(input_file, image_file, output_file):
     """
@@ -368,12 +368,12 @@ This code snippet adds headers and footers (using tables) to each page of a PDF 
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_header_and_footer_as_table(input_file, output_file):
     """
@@ -455,12 +455,12 @@ The following code snippet shows how to use [`TeXFragment`](https://reference.as
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_header_and_footer_as_latex(input_file, output_file):
     """
@@ -497,7 +497,9 @@ def add_header_and_footer_as_latex(input_file, output_file):
             h_l_text = ap.TeXFragment(h_latex_text, True)
             # Create footer
             footer = ap.HeaderFooter()
-            f_latex_text = f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            f_latex_text = (
+                f"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {page_count}"
+            )
             f_l_text = ap.TeXFragment(f_latex_text, True)
 
             header.paragraphs.add(h_l_text)

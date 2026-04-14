@@ -21,9 +21,9 @@ Aspose.PDF for Python library allows you to extract text from a stamp annotation
 1. Use a 'TextAbsorber' to extract the embedded text from that appearance.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_text_from_stamp(infile, page_number, annotation_index, outfile):
     """
@@ -102,9 +102,9 @@ In one of the latest releases, the **Aspose.PDF for Python via .NET** library ad
 1. Close the document to release resources.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_super_sub_text(infile, outfile, page_number=1):
     """
@@ -140,9 +140,9 @@ Loop through each text fragment in a page, check whether it is superscript or su
 1. Close the file and document.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_super_sub_details(infile, outfile, page_number=1):
     """
@@ -161,8 +161,10 @@ def extract_super_sub_details(infile, outfile, page_number=1):
             for fragment in absorber.text_fragments:
                 text = fragment.text
                 is_sup = fragment.text_state.superscript  # True if superscript
-                is_sub = fragment.text_state.subscript    # True if subscript
-                f.write(f"Text: '{text}' | Superscript: {is_sup} | Subscript: {is_sub}\n")
+                is_sub = fragment.text_state.subscript  # True if subscript
+                f.write(
+                    f"Text: '{text}' | Superscript: {is_sup} | Subscript: {is_sub}\n"
+                )
     finally:
         document.close()
 ```

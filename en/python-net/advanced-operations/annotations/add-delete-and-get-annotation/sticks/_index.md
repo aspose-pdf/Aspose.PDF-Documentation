@@ -25,68 +25,64 @@ You can add Watermark Text using [WatermarkAnnotation](https://reference.aspose.
 Please check the following code snippet to add WatermarkAnnotation.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+# Create Annotation
+# Load Page object to add Annotation
+page = document.pages[1]
 
-    document = ap.Document(input_file)
-    # Create Annotation
-    # Load Page object to add Annotation
-    page = document.pages[1]
+# Create Annotation
+wa = ap.annotations.WatermarkAnnotation(page, ap.Rectangle(100, 0, 400, 100, True))
 
-    # Create Annotation
-    wa = ap.annotations.WatermarkAnnotation(page, ap.Rectangle(100, 0, 400, 100, True))
+# Add annotaiton into Annotation collection of Page
+page.annotations.append(wa)
 
-    # Add annotaiton into Annotation collection of Page
-    page.annotations.append(wa)
+# Create TextState for Font settings
+ts = ap.text.TextState()
+ts.foreground_color = ap.Color.blue
+ts.font_size = 25
+ts.font = ap.text.FontRepository.find_font("Arial")
+# Set opacity level of Annotaiton Text
+wa.opacity = 0.5
 
-    # Create TextState for Font settings
-    ts = ap.text.TextState()
-    ts.foreground_color = ap.Color.blue
-    ts.font_size = 25
-    ts.font = ap.text.FontRepository.find_font("Arial");
+# Add Text in Annotation
+wa.set_text_and_state(["HELLO", "Line 1", "Line 2"], ts)
 
-    # Set opacity level of Annotaiton Text
-    wa.opacity = 0.5
-
-    # Add Text in Annotation
-    wa.set_text_and_state([ "HELLO", "Line 1", "Line 2" ], ts)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 
 ## Get Watermark Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+watermarkAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.WATERMARK)
+]
 
-    document = ap.Document(input_file)
-    watermarkAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.WATERMARK)
-    ]
-
-    for ta in watermarkAnnotations:
-        print(ta.rect)
+for ta in watermarkAnnotations:
+    print(ta.rect)
 ```
 
 ## Delete Watermark Annotation
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
+document = ap.Document(input_file)
+watermarkAnnotations = [
+    a
+    for a in document.pages[1].annotations
+    if (a.annotation_type == ap.annotations.AnnotationType.WATERMARK)
+]
 
-    document = ap.Document(input_file)
-    watermarkAnnotations = [
-        a
-        for a in document.pages[1].annotations
-        if (a.annotation_type == ap.annotations.AnnotationType.WATERMARK)
-    ]
+for ta in watermarkAnnotations:
+    document.pages[1].annotations.delete(ta)
 
-    for ta in watermarkAnnotations:
-        document.pages[1].annotations.delete(ta)
-
-    document.save(output_file)
+document.save(output_file)
 ```
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Format Fixer"
+  short_description: "Check Python formatting and fix issues automatically"
+  default_prompt: "Use $python-style-reviewer to check Python file formatting and fix any issues it finds."

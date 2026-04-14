@@ -27,12 +27,12 @@ The following code snippet shows how to add image stamp in the PDF file.
 1. Save the modified PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_image_stamp(infile, input_image_file, outfile):
     document = ap.Document(infile)
@@ -61,12 +61,12 @@ By setting the quality property, you can reduce the image resolution to optimize
 1. Save the modified PDF.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_image_stamp_image_control_image_quality(infile, input_image_file, outfile):
     document = ap.Document(infile)
@@ -91,12 +91,12 @@ Create a [FloatingBox](https://reference.aspose.com/pdf/python-net/aspose.pdf/fl
 1. Save the PDF document.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def add_image_as_background_in_floating_box(infile, input_image_file, outfile):
 

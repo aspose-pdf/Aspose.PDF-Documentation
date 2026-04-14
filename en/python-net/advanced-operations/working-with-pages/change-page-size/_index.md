@@ -35,12 +35,12 @@ The following code snippet shows how to change the PDF page dimensions to A4 siz
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the specified output path.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def set_page_size(input_file_name, output_file_name):
     """
@@ -88,12 +88,12 @@ This snippet reads a PDF and retrieves the dimensions (width and height) of the 
 1. Print the page dimensions.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def get_page_size(input_file_name, output_file_name):
     # Open document (Document API)
@@ -117,12 +117,12 @@ Retrieve the dimensions of a PDF page before and after applying a 90° rotation.
 1. Compare how the dimensions change due to rotation.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def get_page_size_rotation(input_file_name, output_file_name):
     # Open document (Document API)

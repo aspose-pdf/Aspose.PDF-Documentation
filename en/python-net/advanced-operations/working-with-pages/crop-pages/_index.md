@@ -32,12 +32,12 @@ Crop the first [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/p
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to a new output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def crop_page(input_file_name, output_file_name):
     """
@@ -84,12 +84,12 @@ Crop the first [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/p
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the specified output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def crop_page_by_content(input_file_name, output_file_name):
     """
