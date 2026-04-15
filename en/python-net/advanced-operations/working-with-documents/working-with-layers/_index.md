@@ -1,16 +1,16 @@
 ---
-title: Work with PDF layers using Python
+title: Work with PDF Layers in Python
 linktitle: Work with PDF layers
 type: docs
 weight: 50
 url: /python-net/working-with-pdf-layers/
-description: The next task explains how to lock a PDF layer, extract PDF layer elements, flatten a layered PDF, and merge all layers inside PDF into one.
-lastmod: "2025-11-17"
+description: Learn how to add, lock, extract, flatten, and merge PDF layers in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Manipulate the PDF Layers
+AlternativeHeadline: Add and manage optional content layers in PDF files with Python
 Abstract: This guide provides a comprehensive overview of how to manage and manipulate PDF layers using the Aspose.PDF for Python via .NET library. PDF layers—also known as Optional Content Groups (OCGs)—enable the organization of content into separate visual components that can be toggled on or off.  
 ---
 
@@ -22,6 +22,8 @@ With **Aspose.PDF for Python via .NET**, you can:
  - Extract layers into separate files or streams.
  - Flatten layers to make them permanent.
  - Merge layers into a single unified layer.
+
+Use these examples when you need to manage optional content groups, preserve layered viewing behavior, or simplify layered PDFs for print and archival workflows.
 
 ## Add layers to PDF
 
@@ -209,3 +211,10 @@ def merge_layers(path_infile, path_outfile, new_layer_name, optional_group_id=No
 
         document.save(path_outfile)
 ```
+
+## Related Document Topics
+
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Manipulate PDF documents in Python](/pdf/python-net/manipulate-pdf-document/)
+- [Format PDF documents in Python](/pdf/python-net/formatting-pdf-document/)
+- [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)

@@ -1,11 +1,11 @@
 ---
-title: Manipulate PDF Document in Python via .NET
+title: Manipulate PDF Documents in Python
 linktitle: Manipulate PDF Document
 type: docs
 weight: 20
 url: /python-net/manipulate-pdf-document/
-description: This article contains information on how to validate PDF Document for PDF A Standard using Python, how to work with TOC, how to set PDF expiry date, and etc.
-lastmod: "2025-02-27"
+description: Learn how to validate, structure, and modify PDF documents in Python, including TOC management and PDF/A checks.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,6 +13,8 @@ TechArticle: true
 AlternativeHeadline: Guide on manipulating PDF documents using Python
 Abstract: This article provides a comprehensive guide on manipulating PDF documents using Python, specifically with the Aspose.PDF library. It covers several functionalities, including validating PDF documents for PDF/A-1a and PDF/A-1b compliance using the `validate` method of the `Document` class. It also details how to add, customize, and manage a Table of Contents (TOC) in PDF files, such as setting different TabLeaderTypes, hiding page numbers, and customizing page numbering with a prefix. Additionally, the article explains how to set an expiration date for a PDF document by embedding JavaScript for access restriction and how to flatten fillable forms in a PDF to make them uneditable. Each section is accompanied by code snippets demonstrating the implementation of these features using Aspose.PDF in Python.
 ---
+
+This page is useful when you need to validate PDF compliance, build or customize a table of contents, set document expiration behavior, or flatten fillable PDFs in Python workflows.
 
 ## Manipulate PDF Document in Python
 
@@ -95,6 +97,13 @@ for i in range(0, 2):
 # Save the updated document
 doc.save(output_pdf)
 ```
+
+## Related Document Topics
+
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Format PDF documents in Python](/pdf/python-net/formatting-pdf-document/)
+- [Create PDF files in Python](/pdf/python-net/create-pdf-document/)
+- [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)
 
 ### Set different TabLeaderType for different TOC Levels
 
