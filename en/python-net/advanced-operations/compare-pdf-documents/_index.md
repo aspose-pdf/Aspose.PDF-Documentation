@@ -205,7 +205,7 @@ This example demonstrates how to perform a graphical comparison of two entire PD
 - Differences are marked in blue by setting the color property to ap.Color.blue, allowing for clear visual distinction.
 - The comparison is performed at a resolution of 300 DPI by setting the resolution property, ensuring detailed and clear output.
 
-The `compare_documents_to_pdf` method compares all pages of both documents and outputs the result to a new PDF file, compareDocumentsToPdf_out.pdf, with differences visually highlighted. 
+The `compare_documents_to_pdf` method compares all pages of both documents and outputs the result to a new PDF file, compareDocumentsToPdf_out.pdf, with differences visually highlighted.
 
 ## Related Topics
 

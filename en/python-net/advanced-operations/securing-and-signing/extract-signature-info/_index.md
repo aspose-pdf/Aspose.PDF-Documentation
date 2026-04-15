@@ -1,22 +1,24 @@
 ---
-title: Extract details from Signature
+title: Extract Signature Information from PDF in Python
 linktitle: Extract details from Signature
 type: docs
 weight: 20
 url: /python-net/extract-image-and-signature-information/
-description: How to extract image from digital signature in PDF documents using Aspose.PDF for Python.
-lastmod: "2025-06-22"
+description: Learn how to extract signature images, certificates, and digital signature details from PDF files in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Get Signature details in PDFs using Python
-Abstract: This article demonstrates how to extract image and digital signature information from PDF documents using Aspose.PDF for Python. It provides step-by-step instructions and code samples for identifying, accessing, and saving embedded images, as well as retrieving metadata and validation status of digital signatures. 
+AlternativeHeadline: Extract signature images and certificate details from PDFs in Python
+Abstract: This article explains how to extract image and digital signature information from PDF documents using Aspose.PDF for Python. Learn how to retrieve signature images, extract certificate data, inspect signature algorithms, and detect compromised signatures in signed PDF files.
 ---
 
 ## Extracting Image from Signature Field
 
 Aspose.PDF for Python via .NET supports the feature to digitally sign the PDF files using the [signature_field](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/signaturefield/) class.
+
+Use these examples when you need to inspect signed PDF documents, export signature visuals, or audit signature integrity in validation workflows.
 
 This code snippet demonstrates how to extract digital signature images from a PDF document using Aspose.PDF for Python.
 
@@ -143,3 +145,10 @@ with ap.Document(path_infile) as document:
     # Get info about signatures coverage
     print(result[0].signatures_coverage)
 ```
+
+## Related Security Topics
+
+- [Secure and sign PDF files in Python](/pdf/python-net/securing-and-signing/)
+- [Digitally sign PDF files in Python](/pdf/python-net/digitally-sign-pdf-file/)
+- [Sign PDF documents from a smart card in Python](/pdf/python-net/sign-pdf-document-from-smart-card/)
+- [Encrypt and decrypt PDF files in Python](/pdf/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)
