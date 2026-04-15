@@ -1,11 +1,11 @@
 ---
-title: Getting and Setting Page Properties using Python
+title: Get and Set PDF Page Properties in Python
 linktitle: Getting and Setting Page Properties
 type: docs
 weight: 90
 url: /python-net/get-and-set-page-properties/
-description: This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties.
-lastmod: "2025-11-16"
+description: Learn how to inspect and update PDF page properties such as size, count, and color information in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,16 @@ Abstract: This article discusses the capabilities of Aspose.PDF for Python via .
 
 Aspose.PDF for Python via .NET lets you read and set properties of pages in a PDF file in your Python applications. This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties. The examples use the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) and [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) APIs and are written in Python.
 
+Use this guide when you need to inspect page metadata, determine page counts, or update page-level characteristics as part of document analysis or normalization tasks.
+
 ## Get Number of Pages in a PDF File
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Change PDF page size in Python](/pdf/python-net/change-page-size/)
+- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
+- [Rotate PDF pages in Python](/pdf/python-net/rotate-pages/)
 
 When working with documents, you often want to know how many pages they contain. With Aspose.PDF this takes no more than two lines of code.
 

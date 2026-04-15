@@ -1,11 +1,11 @@
 ---
-title: Adding Image stamps in PDF using Python
+title: Add Image Stamps to PDF in Python
 linktitle: Image stamps in PDF File
 type: docs
 weight: 10
 url: /python-net/image-stamps-in-pdf-page/
-description: Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF for Python library.
-lastmod: "2025-11-16"
+description: Learn how to add image stamps to PDF pages in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,6 +17,13 @@ Abstract: This article provides a comprehensive guide on adding image stamps to 
 ## Adding Image Stamp in PDF File
 
 You can use the [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) class to add an image stamp to a PDF file. The [ImageStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/imagestamp/) class provides the properties necessary for creating an image-based stamp, such as height, width, opacity and so on. The stamp can be positioned, resized, rotated, and made partially transparent, allowing for watermarking, branding, or annotations.
+
+## Related Stamping Topics
+
+- [Stamp PDF pages in Python](/pdf/python-net/stamping/)
+- [Add page stamps to PDF in Python](/pdf/python-net/page-stamps-in-the-pdf-file/)
+- [Add text stamps to PDF in Python](/pdf/python-net/text-stamps-in-the-pdf-file/)
+- [Add page numbers to PDF in Python](/pdf/python-net/add-page-number/)
 
 The following code snippet shows how to add image stamp in the PDF file.
 

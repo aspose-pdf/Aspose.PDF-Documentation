@@ -1,11 +1,11 @@
 ---
-title: Changing Page Size with Python
+title: Change PDF Page Size in Python
 linktitle: Changing Page Size
 type: docs
 weight: 40
 url: /python-net/change-page-size/
-description: Change Page Size from your PDF document using Aspose.PDF for Python via .NET library.
-lastmod: "2025-11-16"
+description: Learn how to read and change PDF page dimensions in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -16,7 +16,16 @@ Abstract: This article demonstrates how to read and modify PDF page dimensions u
 
 Aspose.PDF for Python via .NET lets you change PDF page size with simple lines of code. This topic shows how to update page dimensions using the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) and [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) APIs.
 
+Use this guide when you need to resize existing PDF pages, normalize document dimensions, or inspect page box settings in Python.
+
 {{% alert color="primary" %}}
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
+- [Get and set PDF page properties in Python](/pdf/python-net/get-and-set-page-properties/)
+- [Rotate PDF pages in Python](/pdf/python-net/rotate-pages/)
 
 Please note that the height and width properties use points as basic unit, where 1 inch = 72 points and 1 cm = 1/2.54 inch = 0.3937 inch = 28.3 points.
 
