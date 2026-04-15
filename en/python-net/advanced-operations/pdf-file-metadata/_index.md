@@ -137,9 +137,9 @@ def set_prefix_metadata():
     document.metadata.register_namespace_uri("xmp", "http://ns.adobe.com/xap/1.0/")
 
     # Set the metadata property using the registered prefix
-    document.metadata["xmp:ModifyDate"] = (
-        datetime.datetime.now().isoformat()
-    )  # ISO 8601 format
+    document.metadata[
+        "xmp:ModifyDate"
+    ] = datetime.datetime.now().isoformat()  # ISO 8601 format
 
     # Save the updated PDF document
     document.save(data_dir + "SetPrefixMetadata_out.pdf")

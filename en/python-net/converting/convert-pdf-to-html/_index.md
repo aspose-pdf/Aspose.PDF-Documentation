@@ -160,7 +160,9 @@ path_infile = path.join(self.data_dir, infile)
 path_outfile = path.join(self.data_dir, "python", outfile)
 document = apdf.Document(path_infile)
 save_options = apdf.HtmlSaveOptions()
-save_options.raster_images_saving_mode = apdf.HtmlSaveOptions.RasterImagesSavingModes.AS_EMBEDDED_PARTS_OF_PNG_PAGE_BACKGROUND
+save_options.raster_images_saving_mode = (
+    apdf.HtmlSaveOptions.RasterImagesSavingModes.AS_EMBEDDED_PARTS_OF_PNG_PAGE_BACKGROUND
+)
 document.save(path_outfile, save_options)
 
 print(infile + " converted into " + outfile)
