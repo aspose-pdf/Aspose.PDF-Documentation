@@ -1,16 +1,16 @@
 ---
-title: Working with Actions in PDF document
+title: Work with PDF Actions in Python
 linktitle: Actions
 type: docs
 weight: 20
 url: /python-net/actions/
-description: Explore how to extract and manage PDF metadata, such as author and title, in Python using Aspose.PDF.
-lastmod: "2025-07-10"
+description: Learn how to add, update, and remove document, page, and form actions in PDF files using Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Dealing with Actions in PDF document using Python
+AlternativeHeadline: Add document, page, and form actions to PDF files in Python
 Abstract: This article explores how to work with actions in PDF documents using the Aspose.PDF library, covering document-level, page-level, and form-level interactions. PDF actions are predefined or customizable triggers that respond to user events, enabling navigation, JavaScript execution, multimedia playback, form submission, and more. The guide demonstrates how to add, customize, and remove actions, such as opening URLs on document events, creating page-specific navigation or zoom effects, adding interactive buttons for printing and navigation, hiding form elements dynamically, and submitting form data to web endpoints. Through detailed Python code examples, readers learn to enhance PDF interactivity, streamline workflows, and integrate PDFs with external systems while understanding viewer compatibility considerations.
 ---
 
@@ -25,6 +25,8 @@ Actions in a PDF are predefined tasks that get triggered by user interaction or 
 - Change zoom level or view mode
 
 Almost all actions use built-in parameters but there are some that can be customized. For example - JavaScript Actions.
+
+This guide is useful when you need to trigger navigation, printing, form submission, or JavaScript from document events, page events, or interactive PDF form controls.
 
 ## Document-Level Actions
 
@@ -431,3 +433,9 @@ A `SubmitFormAction` is created to define the behavior when the button is clicke
 A rectangular area is defined for the button's position and size on the page. A ButtonField is created at this location on the first page, given the name "SubmitButton," and its display value is set to "Submit." The submit action is assigned to the button's mouse release event, so the action triggers when the user clicks the button.
 
 Finally, the button is added to the form fields on the first page, and the modified PDF is saved to the output file. If any errors occur during this process, they are caught and printed. This approach provides a user-friendly way for PDF users to submit form data directly to a server endpoint.
+
+## Related Navigation Topics
+
+- [Navigation and interaction in PDF using Python](/pdf/python-net/navigation-and-interaction/)
+- [Work with bookmarks in PDF using Python](/pdf/python-net/bookmarks/)
+- [Work with links in PDF using Python](/pdf/python-net/links/)
