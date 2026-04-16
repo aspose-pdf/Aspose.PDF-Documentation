@@ -1,11 +1,11 @@
 ---
-title: Add Rectangle Object to PDF file
+title: Add Rectangle Shapes to PDF in Python
 linktitle: Add Rectangle
 type: docs
 weight: 50
 url: /python-net/add-rectangle/
-description: This article explains how to create a Rectangle object to your PDF using Aspose.PDF for Python via .NET.
-lastmod: "2025-05-14"
+description: Learn how to draw and fill rectangle shapes in PDF files in Python.
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -21,6 +21,13 @@ Aspose.PDF for Python via .NET supports the feature to add graph objects (for ex
 First, let's look at the possibility of creating a Rectangle object.
 
 Follow the steps below:
+
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Check shape bounds in PDF graphs with Python](/pdf/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
+- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)
 
 1. Create a new PDF [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Add [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) to pages collection of PDF file.

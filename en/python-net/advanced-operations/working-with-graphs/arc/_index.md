@@ -1,11 +1,11 @@
 ---
-title: Add Arc Object to PDF file
+title: Add Arc Shapes to PDF in Python
 linktitle: Add Arc
 type: docs
 weight: 10
 url: /python-net/add-arc/
-description: This article explains how to create a arc object to your PDF using Aspose.PDF for Python via .NET.
-lastmod: "2025-05-14"
+description: Learn how to draw and fill arc shapes in PDF files in Python.
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -21,6 +21,13 @@ Aspose.PDF for Python via .NET supports the feature to add graph objects (for ex
 This example illustrates how to programmatically draw arcs within a PDF document using Aspose.PDF for Python via .NET. By leveraging the drawing module, developers can create complex graphical elements, such as arcs, with precise control over their appearance and positioning. This capability is essential for applications that require dynamic generation of graphical content within PDFs, such as technical diagrams, charts, or custom illustrations.
 
 Follow the steps below:
+
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add circle shapes to PDF in Python](/pdf/python-net/add-circle/)
+- [Add curve shapes to PDF in Python](/pdf/python-net/add-curve/)
+- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
 
 1. Create [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) instance.
 1. Create [Drawing object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) with certain dimensions.
