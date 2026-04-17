@@ -1,22 +1,29 @@
 ---
-title: Using FloatingBox for text generation with Python
+title: Use FloatingBox for PDF Text Layout in Python
 linktitle: Using FloatingBox
 type: docs
 weight: 30
 url: /python-net/floating-box/
-description: This page explains how to format text inside floating box. 
-lastmod: "2025-11-13"
+description: Learn how to use FloatingBox for text layout and styled content containers in PDF documents in Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: The FloatingBox tool for text generation
-Abstract: This article provides a comprehensive guide to using the FloatingBox tool in Aspose.PDF for Python, which allows developers to place text and other content in movable, styled containers on PDF pages. It covers both basic and advanced usage, demonstrating how to create floating boxes, apply borders and background colors, control multi-column layouts, manage paragraph positioning, and align boxes vertically and horizontally. The article also highlights key features such as text clipping, repeated content across pages, absolute positioning, and enhanced layout control, enabling precise customization of PDF content. Through practical code examples, readers learn how to create visually appealing and well-structured PDFs that leverage the full capabilities of the FloatingBox container.      
+AlternativeHeadline: Create styled floating text containers in PDF files with Python
+Abstract: This article explains how to use FloatingBox in Aspose.PDF for Python via .NET. Learn how to place text and other content in styled floating containers, control layout, borders, alignment, and clipping, and build more structured PDF page designs in Python.
 ---
 
 ## Basics of using the FloatingBox tool
 
 The [`FloatingBox`](https://reference.aspose.com/pdf/python-net/aspose.pdf/floatingbox/) tool is a specialized container for placing text and other content on a PDF page. Its main feature is text clipping when content exceeds the box bounds. Create and add a `FloatingBox` to a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using Aspose.PDF for Python. A `FloatingBox` acts as a movable text container, allowing more control over layout positioning, borders, and styling compared to regular text paragraphs.
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
+- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
+- [Add tooltips to PDF text in Python](/pdf/python-net/pdf-tooltip/)
 
 1. Create a new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Add a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) to the document.

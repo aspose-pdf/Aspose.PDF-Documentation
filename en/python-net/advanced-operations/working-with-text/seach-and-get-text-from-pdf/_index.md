@@ -1,11 +1,11 @@
 ---
-title: Search and Get Text from Pages of PDF
+title: Search and Extract PDF Text in Python
 linktitle: Search and Get Text
 type: docs
 weight: 60
 url: /python-net/search-and-get-text-from-pdf/
-description: Learn how to search and extract text from PDF documents in Python using Aspose.PDF for document analysis.
-lastmod: "2025-11-13"
+description: Learn how to search, inspect, and extract text from PDF documents in Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,8 +18,17 @@ Abstract: The article provides an in-depth exploration of text extraction and ma
 
 Search and extract text from a defined rectangular area in a PDF document using the TextAbsorber class. It employs pure text formatting mode for clean, unformatted text output, making it ideal for extracting content from structured regions like headers, footers, or table areas. By combining TextExtractionOptions and TextSearchOptions with rectangular constraints, this example gives you fine control over where and how text is extracted from the document.
 
+Use this page when you need to audit PDF text content, extract text for analysis, or inspect positions and formatting of matched text fragments.
+
 1. Load the PDF file using 'ap.Document'.
 1. Configure Text Extraction Options.
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
+- [Add tooltips to PDF text in Python](/pdf/python-net/pdf-tooltip/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
 1. Define Search Area with Rectangle Constraints.
 1. Create and Configure TextAbsorber.
 1. Process All Pages in the Document.
