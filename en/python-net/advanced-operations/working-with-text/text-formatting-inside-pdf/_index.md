@@ -20,13 +20,6 @@ Abstract: This article explains how to format text in PDF documents using Aspose
 
 #### How to Format Text with Custom Line Spacing in Python - Simple case
 
-## Related Text Topics
-
-- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
-- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
-- [Rotate text inside PDF using Python](/pdf/python-net/rotate-text-inside-pdf/)
-- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
-
 Aspose.PDF for Python illustrates a straightforward approach to controlling text layout and readability through line spacing adjustments.
 
 Our code snippet shows how to control line spacing in a PDF document. It reads text from a file (or uses a fallback message), applies custom font size and line spacing, and adds the formatted text to a new page in a PDF.
@@ -177,6 +170,13 @@ def specify_line_spacing_specific_case(outfile):
 ```
 
 ![PDF document displaying text with custom line spacing demonstrating 16-point spacing between lines for improved readability and text layout formatting](line_spacing.png)
+
+### Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
+- [Rotate text inside PDF using Python](/pdf/python-net/rotate-text-inside-pdf/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
 
 ### Using Character Spacing
 

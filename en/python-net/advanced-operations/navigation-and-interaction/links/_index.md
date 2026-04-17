@@ -20,4 +20,4 @@ Use this section when you need to create clickable links, inspect existing link 
 
 - [Create Links](/pdf/python-net/create-links/) - learn simply a way to create links in your PDF file using Python.
 - [Update Links](/pdf/python-net/update-links/) - try to set target to PDF, try to set link destination to web address, try to set link target to another PDF file, update link text color.
-- [Extract Links](/pdf/python-net/extract-links) - extract links from the PDF file using Python.
+- [Extract Links](/pdf/python-net/extract-links/) - extract links from the PDF file using Python.

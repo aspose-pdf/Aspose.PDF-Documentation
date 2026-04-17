@@ -20,6 +20,7 @@ Aspose.PDF for Python via .NET provides the [PdfViewer](https://reference.aspose
 Before decoding pages or reading viewer-related properties, create a small helper that initializes and returns a `PdfViewer` instance. This keeps the examples below self-contained and makes it clear how the viewer object is created before it is bound to a PDF document.
 
 ```python
+import aspose.pdf as ap
 import aspose.pdf.facades as pdf_facades
 
 

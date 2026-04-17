@@ -22,13 +22,6 @@ Use this page when you need to audit PDF text content, extract text for analysis
 
 1. Load the PDF file using 'ap.Document'.
 1. Configure Text Extraction Options.
-
-## Related Text Topics
-
-- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
-- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
-- [Add tooltips to PDF text in Python](/pdf/python-net/pdf-tooltip/)
-- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
 1. Define Search Area with Rectangle Constraints.
 1. Create and Configure TextAbsorber.
 1. Process All Pages in the Document.
@@ -86,6 +79,13 @@ def text_absorber_search(input_file_path):
 
     print(f"Text fragments found: {absorber.text}")
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
+- [Add tooltips to PDF text in Python](/pdf/python-net/pdf-tooltip/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
 
 ## Search Text from a Specific PDF page
 

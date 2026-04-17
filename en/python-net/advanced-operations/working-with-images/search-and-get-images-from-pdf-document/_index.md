@@ -24,15 +24,15 @@ Use this page when you need to audit image placement, inspect image resolution, 
     - Lower-left X (LLX) and Lower-left Y (LLY) coordinates.
     - Horizontal (X) and Vertical (Y) resolution (DPI).
 
-```python
-import math
-
 ## Related Image Topics
 
 - [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
 - [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)
 - [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
 - [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
+
+```python
+import math
 import aspose.pdf as ap
 from aspose.pycore import cast, is_assignable
 from os import path
