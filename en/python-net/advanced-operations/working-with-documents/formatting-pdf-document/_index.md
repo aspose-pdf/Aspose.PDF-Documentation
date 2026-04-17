@@ -16,9 +16,7 @@ Abstract: The article provides a comprehensive guide on manipulating and formatt
 
 This guide is useful when you need to control PDF viewer behavior, font embedding, default display settings, or print preferences in Python-generated documents.
 
-## Formatting PDF Document
-
-### Get Document Window and Page Display Properties
+## Get Document Window and Page Display Properties
 
 This topic helps you understand how to get properties of the document window, viewer application, and how pages are displayed. To set these properties:
 
@@ -79,7 +77,7 @@ print("PageLayout :", document.page_layout)
 print("pageMode :", document.page_mode)
 ```
 
-### Set Document Window and Page Display Properties
+## Set Document Window and Page Display Properties
 
 This topic explains how to set the properties of the document window, viewer application, and page display. To set these different properties:
 
@@ -148,7 +146,7 @@ document.page_mode = ap.PageMode.USE_THUMBS
 document.save(output_pdf)
 ```
 
-### Embedding Standard Type 1 Fonts
+## Embedding Standard Type 1 Fonts
 
 Some PDF documents have fonts from a special Adobe font set. Fonts from this set are called “Standard Type 1 Fonts”. This set includes 14 fonts and embedding this type of fonts requires using of special flags i.e [embed_standard_fonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). Following is the code snippet which can be used to get a document with all fonts embedded including Standard Type 1 Fonts:
 
@@ -169,7 +167,7 @@ for page in document.pages:
 document.save(output_pdf)
 ```
 
-### Embedding Fonts while creating PDF
+## Embedding Fonts while creating PDF
 
 If you need to use any font other than the 14 core fonts supported by Adobe Reader, you must embed the font description while generating the PDF file. If font information is not embedded, Adobe Reader will take it from the Operating System if it's installed over the system, or it will construct a substitute font according to the font descriptor in the PDF.
 
@@ -199,7 +197,7 @@ page.paragraphs.add(fragment)
 doc.save(output_pdf)
 ```
 
-### Set Default Font Name while Saving PDF
+## Set Default Font Name while Saving PDF
 
 When a PDF document contains fonts, which are not available in the document itself and on the device, API replaces these fonts with the default font. If the font is available (installed on the device or embedded into the document), the output PDF should have the same font (should not be replaced with the default font). The value of the default font should contain the name of the font (not the path to the font files). We have implemented a feature to set default font name while saving a document as PDF. Following code snippet can be used to set default font:
 
@@ -216,7 +214,7 @@ pdfSaveOptions.default_font_name = newName
 document.save(output_pdf, pdfSaveOptions)
 ```
 
-### Get All Fonts from PDF Document
+## Get All Fonts from PDF Document
 
 In case you want to get all fonts from a PDF document, you can use [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) method provided in [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class. Please check following code snippet in order to get all fonts from an existing PDF document:
 
@@ -229,7 +227,7 @@ for font in fonts:
     print(font.font_name)
 ```
 
-### Improve Fonts Embedding using FontSubsetStrategy
+## Improve Fonts Embedding using FontSubsetStrategy
 
 Following code snippet shows how to set [FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) used [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) property:
 
@@ -244,13 +242,13 @@ doc.font_utilities.subset_fonts(ap.FontSubsetStrategy.SUBSET_EMBEDDED_FONTS_ONLY
 doc.save(output_pdf)
 ```
 
-### Get-Set Zoom Factor of PDF File
+## Get-Set Zoom Factor of PDF File
 
 Sometimes, you want to determine what a PDF document's current zoom factor is. With Aspose.Pdf, you can find out the current value as well as set one.
 
 The [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/gotoaction/) class Destination property allows you to get the zoom value associated with a PDF file. Similarly, it can be used to set a file's zoom factor.
 
-#### Set Zoom factor
+### Set Zoom factor
 
 The following code snippet shows how to set the zoom factor of a PDF file.
 
@@ -268,7 +266,7 @@ doc.open_action = action
 doc.save(output_pdf)
 ```
 
-#### Get Zoom Factor
+### Get Zoom Factor
 
 The following code snippet shows how to get a PDF file's zoom factor.
 
@@ -285,7 +283,7 @@ action = doc.open_action
 print(action.destination.zoom)
 ```
 
-### Setting Print Dialog Preset Properties
+## Setting Print Dialog Preset Properties
 
 Aspoose.PDF allows setting the [DUPLEX_FLIP_LONG_EDGE](https://reference.aspose.com/pdf/python-net/aspose.pdf/printduplex/#members) members of a PDF document. It allows you to change the DuplexMode property for a PDF document which is set to simplex by default. This can be achieved using two different methodologies as shown below.
 
@@ -298,7 +296,7 @@ doc.duplex = ap.PrintDuplex.DUPLEX_FLIP_LONG_EDGE
 doc.save(output_pdf)
 ```
 
-### Setting Print Dialog Preset Properties using PDF Content Editor
+## Setting Print Dialog Preset Properties using PDF Content Editor
 
 ```python
 import aspose.pdf as ap
@@ -320,4 +318,3 @@ ed.save(output_pdf)
 - [Create PDF files in Python](/pdf/python-net/create-pdf-document/)
 - [Manipulate PDF documents in Python](/pdf/python-net/manipulate-pdf-document/)
 - [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)
-
