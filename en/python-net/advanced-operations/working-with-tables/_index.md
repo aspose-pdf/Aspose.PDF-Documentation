@@ -27,4 +27,3 @@ You are able to do the following:
 - [Integrating Tables with Data Sources](/pdf/python-net/integrate-table/) - integrate table with Database, integrate table with Pandas DataFrame source using Python library.
 - [Manipulating Tables](/pdf/python-net/manipulating-tables/) - inspect and update existing tables inside PDF documents.
 - [Removing Tables](/pdf/python-net/removing-tables/) - remove table or multiple tables from PDF document.
-- [Manipulating Tables in existing PDF](/pdf/python-net/manipulating-tables/) - manipulate tables in your PDF using TableAbsorber.

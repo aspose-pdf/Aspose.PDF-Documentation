@@ -24,15 +24,15 @@ Use this page when you need to place logos, photos, or other graphics at fixed c
     - A 'Rectangle' object defining the image’s coordinates (left=20, bottom=730, right=120, top=830).
 1. Save the updated PDF.
 
-```python
-import aspose.pdf as ap
-
 ## Related Image Topics
 
 - [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
 - [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
 - [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
 - [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)
+
+```python
+import aspose.pdf as ap
 from io import FileIO
 from os import path
 
