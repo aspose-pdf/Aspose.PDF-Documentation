@@ -4,16 +4,18 @@ linktitle: Get and Search Images
 type: docs
 weight: 40
 url: /python-net/search-and-get-images-from-pdf-document/
-description: Learn how to search and get images from the PDF document in Python using Aspose.PDF.
-lastmod: "2025-09-17"
+description: Learn how to search for and inspect images in PDF documents in Python.
+lastmod: "2026-04-17"
 TechArticle: true
-AlternativeHeadline: Searching and Extracting Images from PDF
-Abstract: The Aspose.PDF for Python via .NET library offers robust capabilities for searching and extracting images from PDF documents. Utilizing the 'ImagePlacementAbsorber' class, developers can efficiently locate and access images embedded across all pages of a PDF.
+AlternativeHeadline: Search for embedded images and inspect image placement in PDF files with Python
+Abstract: This article explains how to find and inspect images in PDF documents using Aspose.PDF for Python via .NET. Learn how to use ImagePlacementAbsorber to analyze image placement, size, and resolution on PDF pages and retrieve image information programmatically in Python.
 ---
 
 ## Inspect Image Placement Properties in a PDF Page
 
 This example demonstrates how to analyze and display properties of all images on a specific PDF page using Aspose.PDF for Python via .NET.
+
+Use this page when you need to audit image placement, inspect image resolution, or identify embedded image objects across PDF pages.
 
 1. Create an 'ImagePlacementAbsorber' to collect all images on the page.
 1. Call 'document.pages[1].accept(absorber)' to analyze image placements on the first page.
@@ -24,6 +26,13 @@ This example demonstrates how to analyze and display properties of all images on
 
 ```python
 import math
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)
+- [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
+- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
 import aspose.pdf as ap
 from aspose.pycore import cast, is_assignable
 from os import path
