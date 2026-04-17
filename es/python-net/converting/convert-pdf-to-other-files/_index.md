@@ -3,15 +3,16 @@ title: Convertir PDF a EPUB, LaTeX, Texto, XPS en Python
 linktitle: Convertir PDF a otros formatos
 type: docs
 weight: 90
-url: /python-net/convert-pdf-to-other-files/
+url: /es/python-net/convert-pdf-to-other-files/
 lastmod: "2025-09-27"
 description: Este tema le muestra cómo convertir archivos PDF a otros formatos de archivo como EPUB, LaTeX, Texto, XPS, etc., usando Python.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true 
-AlternativeHeadline: Cómo convertir PDF a otros formatos en Python.
-Abstract: El artículo ofrece una guía completa sobre la conversión de archivos PDF a varios formatos usando Aspose.PDF for Python. Cubre la conversión de PDFs a formatos EPUB, LaTeX/TeX, Texto, XPS y XML. Cada sección comienza con una invitación a probar aplicaciones gratuitas en línea proporcionadas por Aspose para convertir PDFs a los formatos respectivos, resaltando la facilidad de uso y la calidad de estas herramientas.
+AlternativeHeadline: Convertir PDF a EPUB, texto, XPS y más
+Abstract: >
+    Esta guía explica cómo convertir archivos PDF a EPUB, LaTeX/TeX, texto, XPS y XML con Aspose.PDF for Python via .NET. Reúne ejemplos de código y opciones de guardado para exportar contenido PDF a otros formatos reutilizables.
 ---
 
 ## Convertir PDF a EPUB

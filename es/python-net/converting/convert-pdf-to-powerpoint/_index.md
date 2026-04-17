@@ -3,15 +3,16 @@ title: Convertir PDF a PowerPoint en Python
 linktitle: Convertir PDF a PowerPoint
 type: docs
 weight: 30
-url: /python-net/convert-pdf-to-powerpoint/
+url: /es/python-net/convert-pdf-to-powerpoint/
 description: Aprenda cómo convertir fácilmente PDFs a presentaciones de PowerPoint usando Aspose.PDF for Python via .NET. Guía paso a paso para una transformación sin problemas de PDF a PPTX.
 lastmod: "2025-09-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Cómo convertir PDF a PowerPoint en Python
-Abstract: Este artículo ofrece una guía completa sobre la conversión de archivos PDF a presentaciones de PowerPoint usando Python, centrándose específicamente en el formato PPTX. Introduce el uso de Aspose.PDF for Python via .NET, que facilita el proceso de conversión al permitir que las páginas PDF se transformen en diapositivas individuales en un archivo PPTX. El artículo describe los pasos necesarios para la conversión, incluyendo la creación de instancias de las clases Document y PptxSaveOptions y la utilización del método Save. Además, destaca una función para convertir PDFs a PPTX con diapositivas como imágenes estableciendo una propiedad específica en PptxSaveOptions. Se proporcionan fragmentos de código para ilustrar el proceso de conversión. El artículo también hace referencia a una aplicación en línea para probar la función de conversión de PDF a PPTX, ofreciendo a los usuarios una experiencia práctica. Asimismo, enumera varios temas y funcionalidades relacionadas disponibles en este contexto, enfatizando la versatilidad y el enfoque programático para manejar conversiones de PDF a PowerPoint usando Python.
+AlternativeHeadline: Convertir PDF a PPTX con Python
+Abstract: >
+    Esta guía explica cómo convertir archivos PDF a presentaciones PowerPoint PPTX con Aspose.PDF for Python via .NET. También muestra cómo exportar páginas como diapositivas de imagen y cómo ajustar la resolución de salida durante la conversión.
 ---
 
 ## Conversión de PDF a PowerPoint y PPTX con Python

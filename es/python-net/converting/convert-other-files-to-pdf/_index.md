@@ -3,15 +3,16 @@ title: Convertir otros formatos de archivo a PDF en Python
 linktitle: Convertir otros formatos de archivo a PDF
 type: docs
 weight: 80
-url: /python-net/convert-other-files-to-pdf/
+url: /es/python-net/convert-other-files-to-pdf/
 lastmod: "2025-09-01"
 description: Este tema le muestra cómo Aspose.PDF permite convertir otros formatos de archivo, como EPUB, MD, PCL, XPS, PS, XML y LaTeX, a un documento PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true 
-AlternativeHeadline: Cómo convertir otros formatos de archivo a PDF en Python
-Abstract: Este artículo ofrece una guía completa sobre la conversión de varios formatos de archivo a PDF usando Python, aprovechando las capacidades de Aspose.PDF for Python via .NET. El documento describe los procesos de conversión para varios formatos, incluidos EPUB, Markdown, PCL, Text, XPS, PostScript, XML, XSL-FO y LaTeX/TeX. Cada sección proporciona fragmentos de código específicos e instrucciones para implementar estas conversiones. El artículo enfatiza la utilidad de las funciones de Aspose.PDF, como las opciones de carga adaptadas a cada tipo de archivo, para garantizar una conversión precisa y eficiente. Además, destaca la disponibilidad de aplicaciones gratuitas de conversión en línea para que los usuarios exploren la funcionalidad de primera mano. La guía sirve como un recurso práctico para los desarrolladores que desean integrar capacidades de conversión a PDF en sus aplicaciones Python.
+AlternativeHeadline: Convertir otros archivos a PDF con Python
+Abstract: >
+    Esta guía muestra cómo convertir EPUB, Markdown, PCL, texto, XPS, PostScript, XML, XSL-FO y LaTeX/TeX a PDF con Aspose.PDF for Python via .NET. Cada sección incluye las opciones de carga necesarias y ejemplos de código para implementar la conversión.
 ---
 
 Este artículo explica cómo **convertir varios tipos de formatos de archivo a PDF usando Python**. Cubre los siguientes temas.

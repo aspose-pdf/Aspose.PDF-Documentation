@@ -3,15 +3,16 @@ title: Convertir PDF a formatos PDF/x en Python
 linktitle: Convertir PDF a formatos PDF/x
 type: docs
 weight: 120
-url: /python-net/convert-pdf-to-pdf_x/
+url: /es/python-net/convert-pdf-to-pdf_x/
 lastmod: "2025-09-27"
 description: Este tema le muestra cómo convertir PDF a formatos PDF/x utilizando Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true 
-AlternativeHeadline: Cómo convertir PDF a formatos PDF/x
-Abstract: El artículo ofrece una guía completa sobre cómo convertir PDF a los formatos PDF/A, PDF/E y PDF/X usando Aspose.PDF for Python.
+AlternativeHeadline: Convertir PDF a PDF/A, PDF/E y PDF/X
+Abstract: >
+    Esta página muestra cómo convertir documentos PDF a estándares PDF/A, PDF/E y PDF/X con Aspose.PDF for Python via .NET. Incluye ejemplos para validación, archivado y preparación de archivos PDF para flujos de impresión y conformidad.
 ---
 
 **PDF a formato PDF/x significa la capacidad de convertir PDF a formatos adicionales, a saber PDF/A, PDF/E y PDF/X.**

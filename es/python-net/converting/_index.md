@@ -3,15 +3,16 @@ title: Convertir documentos PDF usando Python
 linktitle: Convertir documento PDF
 type: docs
 weight: 70
-url: /python-net/converting/
+url: /es/python-net/converting/
 lastmod: "2025-02-27"
 description: Aprenda cómo convertir PDFs a otros formatos en Python (NET) con Aspose.PDF para un procesamiento de documentos simplificado.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true 
-AlternativeHeadline: Cómo convertir documentos PDF usando Python
-Abstract: Este artículo presenta **Aspose.PDF for Python**, una solución robusta para convertir documentos PDF a varios formatos usando Python. Python, un versátil lenguaje de programación orientado a objetos, se emplea ampliamente para desarrollar prototipos de software y aplicaciones de procesamiento de datos. El artículo enfatiza la capacidad de Aspose.PDF para convertir PDFs con fines de edición, abarcando una amplia gama de documentos que incluyen texto, imágenes, hipervínculos y más. La biblioteca soporta la conversión hacia y desde formatos populares como Microsoft Word, Excel y PowerPoint, así como HTML y varios formatos de imagen. También permite la conversión a formatos especializados como EPUB, Markdown y PDF/A para archivado a largo plazo. El artículo proporciona enlaces a guías detalladas sobre cómo realizar estas conversiones programáticamente con Python, presentando fragmentos de código para mayor claridad. Además, los usuarios pueden explorar opciones de conversión en línea usando las Aspose PDF Apps. Esta visión general integral demuestra la versatilidad y facilidad de uso de Aspose.PDF para manejar tareas de conversión de documentos en Python.
+AlternativeHeadline: Convertir PDF y otros formatos con Python
+Abstract: >
+    Esta sección muestra cómo convertir documentos PDF a Word, Excel, PowerPoint, HTML, imágenes y otros formatos con Aspose.PDF for Python via .NET. También reúne guías para convertir HTML, imágenes y otros tipos de archivo a PDF con ejemplos de código y opciones de conversión.
 ---
 
 ¿Quieres convertir PDF a otros formatos usando Python? **Aspose.PDF for Python** es la mejor solución para convertir documentos PDF. Recuerda que Python es un lenguaje de programación orientado a objetos que se utiliza para desarrollar prototipos de software para aplicaciones web y procesamiento de datos. Ahora aprendamos cómo puedes convertir PDF a texto usando Python.

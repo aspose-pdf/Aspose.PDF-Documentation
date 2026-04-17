@@ -3,15 +3,16 @@ title: Convertir PDF a documentos Microsoft Word en Python
 linktitle: Convertir PDF a Word
 type: docs
 weight: 10
-url: /python-net/convert-pdf-to-word/
+url: /es/python-net/convert-pdf-to-word/
 lastmod: "2025-09-27"
 description: Aprenda cómo convertir documentos PDF al formato Word en Python usando Aspose.PDF para una edición de documentos sencilla.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Cómo convertir PDF a Word en Python
-Abstract: Este artículo proporciona una guía completa sobre cómo convertir archivos PDF a formatos de Microsoft Word (DOC y DOCX) usando Python, específicamente utilizando la biblioteca Aspose.PDF. Describe las ventajas de convertir PDFs a documentos Word editables, lo que permite una manipulación de contenido más fácil, como texto, tablas e imágenes. El artículo detalla el proceso de conversión de PDF a DOC (formato Word 97-2003) y DOCX, con fragmentos de código que demuestran estas conversiones mediante Python. El proceso implica crear un `Document` objeto a partir del PDF y guardarlo en el formato deseado usando el método `save()` y la enumeración `SaveFormat`. Además, introduce la clase `DocSaveOptions`, que permite una mayor personalización del proceso de conversión, como especificar modos de reconocimiento. El artículo también destaca aplicaciones en línea proporcionadas por Aspose.PDF para probar la calidad y funcionalidad de la conversión. El contenido incluye una visión estructurada y enlaces a las secciones correspondientes para cada formato.
+AlternativeHeadline: Convertir PDF a Word DOC y DOCX
+Abstract: >
+    Esta página muestra cómo convertir documentos PDF a formatos Word DOC y DOCX con Aspose.PDF for Python via .NET. También explica cómo usar DocSaveOptions para ajustar el reconocimiento y obtener documentos editables con mejor estructura.
 ---
 
 ## Convertir PDF a DOC

@@ -3,15 +3,16 @@ title: Convertir PDF a HTML en Python
 linktitle: Convertir PDF a formato HTML
 type: docs
 weight: 50
-url: /python-net/convert-pdf-to-html/
+url: /es/python-net/convert-pdf-to-html/
 lastmod: "2025-09-27"
 description: Este tema le muestra cómo convertir un archivo PDF al formato HTML con la biblioteca Aspose.PDF for Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true 
-AlternativeHeadline: Cómo convertir PDF a HTML en Python
-Abstract: Este artículo ofrece una guía completa sobre cómo convertir archivos PDF a HTML usando Python, específicamente a través de la librería Aspose.PDF for Python via .NET. Describe los pasos necesarios para lograr esta conversión programáticamente, destacando la creación de un objeto `Document` a partir del PDF de origen y el uso de `HtmlSaveOptions` para guardar el documento en formato HTML. El artículo incluye un fragmento de código Python conciso que demuestra el proceso de conversión. Además, presenta una herramienta en línea, la aplicación "PDF to HTML" de Aspose.PDF, para que los usuarios exploren la funcionalidad y la calidad de la conversión. El artículo está estructurado para abordar diversos temas relacionados, garantizando una comprensión profunda del uso de Python para la conversión de PDF a HTML.
+AlternativeHeadline: Convertir PDF a HTML con Python
+Abstract: >
+    Esta guía muestra cómo convertir documentos PDF a HTML con Aspose.PDF for Python via .NET. Incluye el flujo básico de conversión, el uso de HtmlSaveOptions y ejemplos para generar salida HTML reutilizable a partir de un PDF.
 ---
 
 ## Convertir PDF a HTML
