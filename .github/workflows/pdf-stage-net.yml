@@ -1,9 +1,9 @@
-name: Hugo-CI-stage
+name: Hugo-CI-stage-net
 on:
   workflow_dispatch: null
   push:
     branches:
-      - develop
+      - net
 
 jobs:
   job-one:
