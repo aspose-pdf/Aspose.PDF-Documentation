@@ -68,12 +68,6 @@ page.annotations.append(link)
 document.save(path_outfile)
 ```
 
-## Related Link Topics
-
-- [Work with PDF links in Python](/pdf/python-net/links/)
-- [Extract links from PDF in Python](/pdf/python-net/extract-links/)
-- [Update links in PDF using Python](/pdf/python-net/update-links/)
-
 ## Create PDF Document Link in a PDF File
 
 ### Using GoToRemoteAction
@@ -211,3 +205,9 @@ page.annotations.append(link)
 # Save the modified PDF to the output path
 document.save(path_outfile)
 ```
+
+## Related Link Topics
+
+- [Work with PDF links in Python](/pdf/python-net/links/)
+- [Extract links from PDF in Python](/pdf/python-net/extract-links/)
+- [Update links in PDF using Python](/pdf/python-net/update-links/)

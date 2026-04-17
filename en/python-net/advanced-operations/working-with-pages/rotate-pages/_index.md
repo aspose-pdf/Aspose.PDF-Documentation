@@ -20,13 +20,6 @@ Use this page when you need to switch pages between portrait and landscape orien
 
 ## Change Page Orientation
 
-## Related Page Topics
-
-- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
-- [Change PDF page size in Python](/pdf/python-net/change-page-size/)
-- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
-- [Get and set PDF page properties in Python](/pdf/python-net/get-and-set-page-properties/)
-
 This function rotates every page of a PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 90 degrees clockwise using Aspose.PDF for Python.
 It is useful for correcting page orientation issues, such as scanned documents that are sideways. The original PDF remains unchanged, and the rotated version is saved as a new file.
 
@@ -72,3 +65,9 @@ def rotate_page(infile, outfile):
     document.save(outfile)
 ```
 
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Change PDF page size in Python](/pdf/python-net/change-page-size/)
+- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
+- [Get and set PDF page properties in Python](/pdf/python-net/get-and-set-page-properties/)

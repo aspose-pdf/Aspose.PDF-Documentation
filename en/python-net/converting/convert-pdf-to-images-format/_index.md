@@ -14,12 +14,6 @@ AlternativeHeadline: How to Convert PDF to Image Formats in Python
 Abstract: This article provides a comprehensive guide on converting PDF files into various image formats using Python, specifically leveraging the Aspose.PDF for Python library. The document outlines methods for converting PDFs to image formats including TIFF, BMP, EMF, JPG, PNG, GIF, and SVG. Two primary conversion approaches are discussed - using the Device approach and SaveOption. The Device approach involves utilizing classes like `DocumentDevice` and `ImageDevice` for whole document or page-specific conversions. Detailed steps and Python code examples are provided for converting PDF pages to different formats such as TIFF using `TiffDevice`, and BMP, EMF, JPEG, PNG, and GIF using respective device classes (`BmpDevice`, `EmfDevice`, `JpegDevice`, `PngDevice`, `GifDevice`). For SVG conversion, the `SvgSaveOptions` class is introduced. The article also highlights online tools for trying these conversions.
 ---
 
-## Related conversions
-
-- [Convert image formats to PDF](/pdf/python-net/convert-images-format-to-pdf/) when you need to rebuild PDFs from JPG, PNG, TIFF, SVG, or other image sources.
-- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) for browser-friendly output instead of raster images.
-- [Convert PDF to other formats](/pdf/python-net/convert-pdf-to-other-files/) for EPUB, Markdown, text, and XPS export workflows.
-
 ## Python Convert PDF to Image
 
 **Aspose.PDF for Python** uses several approaches to convert PDF to image. Generally speaking, we use two approaches: conversion using the Device approach and conversion using SaveOption. This section will show you how to convert PDF documents to image formats such as BMP, JPEG, GIF, PNG, EMF, TIFF, and SVG formats using one of those approaches.
@@ -319,3 +313,9 @@ Steps: Convert PDF to SVG in Python
     document.save(path_outfile, save_options)
     print(infile + " converted into " + outfile)
 ```
+
+## Related conversions
+
+- [Convert image formats to PDF](/pdf/python-net/convert-images-format-to-pdf/) when you need to rebuild PDFs from JPG, PNG, TIFF, SVG, or other image sources.
+- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) for browser-friendly output instead of raster images.
+- [Convert PDF to other formats](/pdf/python-net/convert-pdf-to-other-files/) for EPUB, Markdown, text, and XPS export workflows.

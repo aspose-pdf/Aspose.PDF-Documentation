@@ -22,13 +22,6 @@ This article provides a detailed guide on using the bounds-checking feature in t
 
 ```python
 import aspose.pdf as ap
-
-## Related Graph Topics
-
-- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
-- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)
-- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
-- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)
 import aspose.pdf.drawing as drawing
 import datetime
 
@@ -56,4 +49,11 @@ graph.shapes.update_bounds_check_mode(
 
 # Add the rectangle to the graph
 graph.shapes.add(rect)
-```            
+```
+
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)
+- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
+- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)

@@ -20,13 +20,6 @@ Use this guide when you need to resize existing PDF pages, normalize document di
 
 {{% alert color="primary" %}}
 
-## Related Page Topics
-
-- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
-- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
-- [Get and set PDF page properties in Python](/pdf/python-net/get-and-set-page-properties/)
-- [Rotate PDF pages in Python](/pdf/python-net/rotate-pages/)
-
 Please note that the height and width properties use points as basic unit, where 1 inch = 72 points and 1 cm = 1/2.54 inch = 0.3937 inch = 28.3 points.
 
 {{% /alert %}}
@@ -145,3 +138,10 @@ def get_page_size_rotation(input_file_name, output_file_name):
     rectangle = page.get_page_rect(True)
     print(f"{rectangle.width} : {rectangle.height}")
 ```
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
+- [Get and set PDF page properties in Python](/pdf/python-net/get-and-set-page-properties/)
+- [Rotate PDF pages in Python](/pdf/python-net/rotate-pages/)

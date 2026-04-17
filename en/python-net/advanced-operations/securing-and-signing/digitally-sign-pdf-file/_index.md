@@ -118,13 +118,6 @@ with ap.Document(path_infile) as document:
         signature.save(path_outfile)
 ```
 
-## Related Security Topics
-
-- [Secure and sign PDF files in Python](/pdf/python-net/securing-and-signing/)
-- [Extract image and signature information in Python](/pdf/python-net/extract-image-and-signature-information/)
-- [Sign PDF documents from a smart card in Python](/pdf/python-net/sign-pdf-document-from-smart-card/)
-- [Encrypt and decrypt PDF files in Python](/pdf/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)
-
 ## Signing PDF documents using ECDSA
 
 Signing PDF documents using ECDSA (Elliptic Curve Digital Signature Algorithm) involves utilizing elliptic curve cryptography to generate digital signatures.
@@ -156,3 +149,10 @@ with ap.Document(path_infile) as document:
         # Save PDF document
         signature.save(path_outfile)
 ```
+
+## Related Security Topics
+
+- [Secure and sign PDF files in Python](/pdf/python-net/securing-and-signing/)
+- [Extract image and signature information in Python](/pdf/python-net/extract-image-and-signature-information/)
+- [Sign PDF documents from a smart card in Python](/pdf/python-net/sign-pdf-document-from-smart-card/)
+- [Encrypt and decrypt PDF files in Python](/pdf/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)

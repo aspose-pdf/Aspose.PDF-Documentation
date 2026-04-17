@@ -18,13 +18,6 @@ Aspose.PDF for Python via .NET shows how to apply a page stamp (watermark or ove
 
 1. Open the PDF document using `ap.Document()` (see [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
 1. Create a `PdfPageStamp` object using the PDF page or file to use as the stamp (see [`PdfPageStamp`](https://reference.aspose.com/pdf/python-net/aspose.pdf.pdfpagestamp/)).
-
-## Related Stamping Topics
-
-- [Stamp PDF pages in Python](/pdf/python-net/stamping/)
-- [Add page numbers to PDF in Python](/pdf/python-net/add-page-number/)
-- [Add image stamps to PDF in Python](/pdf/python-net/image-stamps-in-pdf-page/)
-- [Add text stamps to PDF in Python](/pdf/python-net/text-stamps-in-the-pdf-file/)
 1. Set the stamp properties, e.g., `background = True` to place it behind the content.
 1. Add the stamp to a specific page using `document.pages[page_number].add_stamp(page_stamp)` (see [`Page.add_stamp()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) and [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/)).
 1. Save the modified PDF to the specified output file using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
@@ -49,3 +42,10 @@ def add_page_stamp(input_file_name, page_stamp_name, output_file_name):
 
     document.save(output_file_name)
 ```
+
+## Related Stamping Topics
+
+- [Stamp PDF pages in Python](/pdf/python-net/stamping/)
+- [Add page numbers to PDF in Python](/pdf/python-net/add-page-number/)
+- [Add image stamps to PDF in Python](/pdf/python-net/image-stamps-in-pdf-page/)
+- [Add text stamps to PDF in Python](/pdf/python-net/text-stamps-in-the-pdf-file/)

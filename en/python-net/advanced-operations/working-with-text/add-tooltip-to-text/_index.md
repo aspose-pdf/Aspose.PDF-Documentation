@@ -22,13 +22,6 @@ Use this page when you need to make PDF text more interactive by adding hover he
 
 1. Create a new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Save the initial document.
-
-## Related Text Topics
-
-- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
-- [Use FloatingBox for PDF text layout in Python](/pdf/python-net/floating-box/)
-- [Search and extract PDF text in Python](/pdf/python-net/search-and-get-text-from-pdf/)
-- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
 1. Reopen the PDF document.
 1. Search for target text using [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/).
 1. Add an invisible [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) with a short tooltip.
@@ -243,3 +236,10 @@ def create_hidden_text_block(outfile):
         # Save document
         document.save(outfile)
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Use FloatingBox for PDF text layout in Python](/pdf/python-net/floating-box/)
+- [Search and extract PDF text in Python](/pdf/python-net/search-and-get-text-from-pdf/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)

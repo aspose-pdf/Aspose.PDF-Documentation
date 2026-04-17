@@ -26,13 +26,6 @@ Use this page when you need to update logos, diagrams, or other embedded graphic
 1. Open the new image file in binary read mode.
 1. Replace the first image on the first page:
     - 'document.pages[1].resources.images.replace(1, image_stream)'
-
-## Related Image Topics
-
-- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
-- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
-- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
-- [Search and inspect PDF images](/pdf/python-net/search-and-get-images-from-pdf-document/)
 1. Save the updated PDF to 'path_outfile'.
 
 ```python
@@ -90,3 +83,10 @@ This example demonstrates how to replace a specific image on a PDF page by locat
 
     document.save(path_outfile)
 ```
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
+- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
+- [Search and inspect PDF images](/pdf/python-net/search-and-get-images-from-pdf-document/)

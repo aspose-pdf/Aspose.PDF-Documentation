@@ -42,12 +42,6 @@ document.pages[1].annotations.append(linkAnnotation)
 document.save(output_file)
 ```
 
-## Related Annotation Topics
-
-- [PDF Annotations overview](/pdf/python-net/annotations/) for the parent annotation section.
-- [Add, Delete and Get Annotation](/pdf/python-net/add-delete-and-get-annotation/) for the grouped annotation index.
-- [Extra Annotations](/pdf/python-net/extra-annotations/) if you also need caret, redaction, or other specialized annotation workflows.
-
 ### Get Link Annotation
 
 Please try using the following code snippet to Get [LinkAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/linkannotation/) from PDF document.

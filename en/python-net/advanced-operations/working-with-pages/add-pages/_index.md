@@ -21,13 +21,6 @@ Use this page when you need to insert new blank pages into an existing PDF or ap
 
 ## Add or Insert Page in a PDF File
 
-## Related Page Topics
-
-- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
-- [Move PDF pages in Python](/pdf/python-net/move-pages/)
-- [Delete PDF pages in Python](/pdf/python-net/delete-pages/)
-- [Extract PDF pages in Python](/pdf/python-net/extract-pages/)
-
 Aspose.PDF for Python via .NET lets you insert a page to a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) at any location in the file as well as add pages to the end of a PDF file.
 
 ### Insert Empty Page in a PDF File
@@ -117,3 +110,10 @@ def add_page_from_another_document(input_file_name, output_file_name):
     # Save output file
     document.save(output_file_name)
 ```
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Move PDF pages in Python](/pdf/python-net/move-pages/)
+- [Delete PDF pages in Python](/pdf/python-net/delete-pages/)
+- [Extract PDF pages in Python](/pdf/python-net/extract-pages/)

@@ -18,13 +18,6 @@ This guide explains how to add text content to PDF documents using Aspose.PDF fo
 
 Whether you're building simple annotations or rich typographic layouts, this resource equips you with the fundamental building blocks for working with text in PDFs using Aspose.PDF.
 
-## Related Text Topics
-
-- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
-- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
-- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
-- [Search and extract PDF text in Python](/pdf/python-net/search-and-get-text-from-pdf/)
-
 ## Basic text insertion
 
 Aspose.PDF for Python via .NET provides a powerful and flexible API for handling text inside PDF files.
@@ -1347,3 +1340,10 @@ def use_custom_font_from_stream(outfile):
 ```
 
 Embedding fonts ensures consistent rendering across platforms, making this approach ideal for branding, design fidelity, and multilingual support.
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
+- [Search and extract PDF text in Python](/pdf/python-net/search-and-get-text-from-pdf/)

@@ -49,12 +49,6 @@ Steps: Convert PDF to PowerPoint in Python
     print(infile + " converted into " + outfile)
 ```
 
-## Related conversions
-
-- [Convert PDF to Word](/pdf/python-net/convert-pdf-to-word/) for editable document output instead of slides.
-- [Convert PDF to Excel](/pdf/python-net/convert-pdf-to-excel/) when the source PDF contains table-heavy business data.
-- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) for browser-ready publishing workflows.
-
 ## Convert PDF to PPTX with Slides as Images
 
 {{% alert color="success" %}}
@@ -110,3 +104,9 @@ This method converts a PDF document into a PowerPoint (PPTX) file while setting 
 
     print(infile + " converted into " + outfile)
 ```
+
+## Related conversions
+
+- [Convert PDF to Word](/pdf/python-net/convert-pdf-to-word/) for editable document output instead of slides.
+- [Convert PDF to Excel](/pdf/python-net/convert-pdf-to-excel/) when the source PDF contains table-heavy business data.
+- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) for browser-ready publishing workflows.

@@ -171,13 +171,6 @@ def specify_line_spacing_specific_case(outfile):
 
 ![PDF document displaying text with custom line spacing demonstrating 16-point spacing between lines for improved readability and text layout formatting](line_spacing.png)
 
-### Related Text Topics
-
-- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
-- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
-- [Rotate text inside PDF using Python](/pdf/python-net/rotate-text-inside-pdf/)
-- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
-
 ### Using Character Spacing
 
 #### How to control character spacing in PDF text using the TextFragment class
@@ -1510,3 +1503,10 @@ def custom_tab_stops(output_file_name):
     # Save PDF document
     document.save(output_file_name)
 ```
+
+### Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
+- [Rotate text inside PDF using Python](/pdf/python-net/rotate-text-inside-pdf/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)

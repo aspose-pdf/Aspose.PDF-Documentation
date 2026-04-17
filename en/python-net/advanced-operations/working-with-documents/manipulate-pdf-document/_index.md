@@ -98,13 +98,6 @@ for i in range(0, 2):
 doc.save(output_pdf)
 ```
 
-## Related Document Topics
-
-- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
-- [Format PDF documents in Python](/pdf/python-net/formatting-pdf-document/)
-- [Create PDF files in Python](/pdf/python-net/create-pdf-document/)
-- [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)
-
 ### Set different TabLeaderType for different TOC Levels
 
 Aspose.PDF for Python also allows setting different TabLeaderType for different TOC levels. You need to set [line_dash](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) property of [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/).
@@ -300,3 +293,9 @@ if len(doc.form.fields) > 0:
 doc.save(output_pdf)
 ```
 
+## Related Document Topics
+
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Format PDF documents in Python](/pdf/python-net/formatting-pdf-document/)
+- [Create PDF files in Python](/pdf/python-net/create-pdf-document/)
+- [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)

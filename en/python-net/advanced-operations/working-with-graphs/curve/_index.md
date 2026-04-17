@@ -22,13 +22,6 @@ In this article, we will investigate  simply graph curves, and filled curves, th
 
 This example illustrates how to draw a Bézier curve programmatically within a PDF document using Aspose.PDF for Python via .NET. By leveraging the drawing module, developers can create complex graphical elements with precise control over their appearance and positioning. This capability is essential for applications that require dynamic generation of graphical content within PDFs, such as technical diagrams, charts, or custom illustrations.
 
-## Related Graph Topics
-
-- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
-- [Add arc shapes to PDF in Python](/pdf/python-net/add-arc/)
-- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
-- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)
-
 Follow the steps below:
 
 1. Create [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) instance.
@@ -116,3 +109,10 @@ This example shows how to add a Curve object that is filled with color.
 Look at the result of adding a filled Curve:
 
 ![Filled Curve](filled_curve.png)
+
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add arc shapes to PDF in Python](/pdf/python-net/add-arc/)
+- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
+- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)

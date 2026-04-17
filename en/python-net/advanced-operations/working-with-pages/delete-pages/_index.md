@@ -20,13 +20,6 @@ Use this workflow when you need to remove unwanted pages from a PDF before shari
 
 ## Delete Page from PDF File
 
-## Related Page Topics
-
-- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
-- [Add PDF pages in Python](/pdf/python-net/add-pages/)
-- [Move PDF pages in Python](/pdf/python-net/move-pages/)
-- [Extract PDF pages in Python](/pdf/python-net/extract-pages/)
-
 Aspose.PDF for Python via .NET deletes page 2 from the input PDF and saves the updated document to a new file. This feature is helpful for removing unwanted or sensitive pages without altering the rest of the document.
 
 1. Load the input PDF as a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
@@ -128,3 +121,10 @@ def delete_bunch_pages(input_file_name, output_file_name):
     # Save updated Document
     document.save(output_file_name)
 ```
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Add PDF pages in Python](/pdf/python-net/add-pages/)
+- [Move PDF pages in Python](/pdf/python-net/move-pages/)
+- [Extract PDF pages in Python](/pdf/python-net/extract-pages/)

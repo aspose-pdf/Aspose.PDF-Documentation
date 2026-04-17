@@ -22,13 +22,6 @@ This example illustrates how to programmatically draw arcs within a PDF document
 
 Follow the steps below:
 
-## Related Graph Topics
-
-- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
-- [Add circle shapes to PDF in Python](/pdf/python-net/add-circle/)
-- [Add curve shapes to PDF in Python](/pdf/python-net/add-curve/)
-- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
-
 1. Create [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) instance.
 1. Create [Drawing object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) with certain dimensions.
 1. Set [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) for Drawing object.
@@ -124,3 +117,10 @@ Next example shows how to add a Arc object that is filled with color and certain
 Let's see the result of adding a filled Arс:
 
 ![Filled Arc](filled_arc.png)
+
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add circle shapes to PDF in Python](/pdf/python-net/add-circle/)
+- [Add curve shapes to PDF in Python](/pdf/python-net/add-curve/)
+- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)

@@ -21,13 +21,6 @@ This workflow is useful when you need to reuse embedded graphics, archive image 
 1. Create an output stream (FileIO) for the target file.
 1. Save the extracted image using 'xImage.save(output_image)'.
 
-## Related Image Topics
-
-- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
-- [Search and inspect PDF images](/pdf/python-net/search-and-get-images-from-pdf-document/)
-- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
-- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
-
 ```python
 import aspose.pdf as ap
 from io import FileIO
@@ -158,3 +151,10 @@ for op in document.pages[1].contents:
                 f"res {res_horizontal:.2f} x {res_vertical:.2f}"
             )
 ```
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Search and inspect PDF images](/pdf/python-net/search-and-get-images-from-pdf-document/)
+- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
+- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)

@@ -16,20 +16,13 @@ Abstract: The article provides a detailed guide on how to rotate text within a P
 
 Rotate text fragments in a PDF document using Aspose.PDF for Python via .NET. It shows how to precisely control the position and rotation of individual text elements by combining the 'TextFragment', 'TextState', and 'TextBuilder' classes. By adjusting the rotation angle for each text fragment, you can create visually dynamic layouts, such as diagonal headers, vertical labels, or rotated annotations.
 
-## Related Text Topics
-
-- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
-- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
-- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
-- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
-
 ## Rotate Text Fragments Using TextBuilder in PDF
 
 Creates a PDF file named rotated_fragments.pdf containing three text fragments aligned horizontally:
 
- - the first text is unrotated
- - the second is rotated 45°
- - the third is rotated 90°
+- the first text is unrotated
+- the second is rotated 45°
+- the third is rotated 90°
 
 1. Create a New PDF Document.
 1. Insert a new page to host the rotated text.
@@ -407,3 +400,10 @@ def rotate_text_inside_pdf_4(outfile):
         # Save the document
         document.save(outfile)
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
+- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)

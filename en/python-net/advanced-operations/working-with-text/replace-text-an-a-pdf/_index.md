@@ -22,13 +22,6 @@ Use this page when you need to update text values, remove unwanted content, or a
 
 ## Replace existing text
 
-## Related Text Topics
-
-- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
-- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
-- [Search and extract PDF text in Python](/pdf/python-net/search-and-get-text-from-pdf/)
-- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
-
 ### Replace Text in all pages of PDF document
 
 {{% alert color="primary" %}}
@@ -894,3 +887,10 @@ def remove_hidden_text(infile, outfile):
         # Save PDF document
         document.save(outfile)
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
+- [Search and extract PDF text in Python](/pdf/python-net/search-and-get-text-from-pdf/)
+- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)

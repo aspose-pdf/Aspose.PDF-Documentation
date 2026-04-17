@@ -20,13 +20,6 @@ Use this guide when you need to inspect page metadata, determine page counts, or
 
 ## Get Number of Pages in a PDF File
 
-## Related Page Topics
-
-- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
-- [Change PDF page size in Python](/pdf/python-net/change-page-size/)
-- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
-- [Rotate PDF pages in Python](/pdf/python-net/rotate-pages/)
-
 When working with documents, you often want to know how many pages they contain. With Aspose.PDF this takes no more than two lines of code.
 
 To get the number of pages in a PDF file:
@@ -225,3 +218,9 @@ def get_page_color_type(input_file_name):
         print(f"Page # {page_number} is {color_description}.")
 ```
 
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Change PDF page size in Python](/pdf/python-net/change-page-size/)
+- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
+- [Rotate PDF pages in Python](/pdf/python-net/rotate-pages/)

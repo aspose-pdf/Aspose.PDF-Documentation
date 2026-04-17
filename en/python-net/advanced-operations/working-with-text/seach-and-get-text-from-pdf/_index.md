@@ -80,13 +80,6 @@ def text_absorber_search(input_file_path):
     print(f"Text fragments found: {absorber.text}")
 ```
 
-## Related Text Topics
-
-- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
-- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
-- [Add tooltips to PDF text in Python](/pdf/python-net/pdf-tooltip/)
-- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
-
 ## Search Text from a Specific PDF page
 
 Search and extract text from a specific page and region in a PDF using Aspose.PDF’s TextAbsorber. It targets page 2 of the document and extracts only the text found within a defined rectangular area.
@@ -766,3 +759,10 @@ def text_fragment_absorber_search_and_highlight(infile):
                     drawing.imaging.ImageFormat.png,
                 )
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Replace text in PDF via Python](/pdf/python-net/replace-text-in-pdf/)
+- [Add tooltips to PDF text in Python](/pdf/python-net/pdf-tooltip/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)

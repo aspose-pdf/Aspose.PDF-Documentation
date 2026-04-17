@@ -26,13 +26,6 @@ Use this page when you need to remove unnecessary graphics, reduce PDF size, or 
 
 To delete an image from a PDF file:
 
-## Related Image Topics
-
-- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
-- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
-- [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
-- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)
-
 1. Open existing PDF Document.
 1. Delete a particular image.
 1. Save updated PDF file.
@@ -51,3 +44,10 @@ The following code snippet shows how to delete an image from a PDF file.
     document.pages[1].resources.images.delete(1)
     document.save(path_outfile)
 ```
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
+- [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
+- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)

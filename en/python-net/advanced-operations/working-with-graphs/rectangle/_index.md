@@ -22,13 +22,6 @@ First, let's look at the possibility of creating a Rectangle object.
 
 Follow the steps below:
 
-## Related Graph Topics
-
-- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
-- [Check shape bounds in PDF graphs with Python](/pdf/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
-- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
-- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)
-
 1. Create a new PDF [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Add [Page](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) to pages collection of PDF file.
 1. Add [Text fragment](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/) to paragraphs collection of page instance.
@@ -248,3 +241,10 @@ The following code snippet shows the steps to render [Rectangle](https://referen
 ```
 
 ![Controlling Z Order](control.png)
+
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Check shape bounds in PDF graphs with Python](/pdf/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
+- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)

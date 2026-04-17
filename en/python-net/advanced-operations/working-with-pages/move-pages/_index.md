@@ -18,13 +18,6 @@ Abstract: The article provides a comprehensive guide on moving pages between PDF
 
 Aspose.PDF for Python lets you move a page (not just copy it) from one PDF to another. It removes the selected page from the original document and then adds it to a new PDF file.
 
-## Related Page Topics
-
-- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
-- [Add PDF pages in Python](/pdf/python-net/add-pages/)
-- [Delete PDF pages in Python](/pdf/python-net/delete-pages/)
-- [Extract PDF pages in Python](/pdf/python-net/extract-pages/)
-
 Think of it as cutting out a page from one book and gluing it into another — the page no longer exists in the original file after the move.
 
 1. Open the source PDF document using the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
@@ -138,3 +131,9 @@ def moving_page_in_new_location_in_same_document(input_file_name, output_file_na
     srcDocument.save(output_file_name)
 ```
 
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Add PDF pages in Python](/pdf/python-net/add-pages/)
+- [Delete PDF pages in Python](/pdf/python-net/delete-pages/)
+- [Extract PDF pages in Python](/pdf/python-net/extract-pages/)

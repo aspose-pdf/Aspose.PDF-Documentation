@@ -48,12 +48,6 @@ def get_tagged_content(outfile):
         document.save(outfile)
 ```
 
-## Related Tagged PDF Topics
-
-- [Create Tagged PDF](/pdf/python-net/create-tagged-pdf/) to build accessible tagged documents before inspecting their structure.
-- [Setting Structure Elements Properties](/pdf/python-net/setting-structure-elements-properties/) to update semantic properties after extracting structure elements.
-- [Working with Table in Tagged PDFs](/pdf/python-net/working-with-table-in-tagged-pdfs/) for tagged-table accessibility workflows.
-
 ## Getting Root Structure
 
 Tagged PDFs contain a logical structure tree that defines the semantic structure of the document. The StructTreeRoot represents the root of this logical tree, while the RootElement provides an interface to interact with the top-level structure element of the document.
@@ -147,3 +141,9 @@ def access_child_elements(infile, outfile):
         # Save Tagged PDF Document
         document.save(outfile)
 ```
+
+## Related Tagged PDF Topics
+
+- [Create Tagged PDF](/pdf/python-net/create-tagged-pdf/) to build accessible tagged documents before inspecting their structure.
+- [Setting Structure Elements Properties](/pdf/python-net/setting-structure-elements-properties/) to update semantic properties after extracting structure elements.
+- [Working with Table in Tagged PDFs](/pdf/python-net/working-with-table-in-tagged-pdfs/) for tagged-table accessibility workflows.

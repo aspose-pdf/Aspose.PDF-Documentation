@@ -224,12 +224,6 @@ def style_table(outfile):
         document.save(outfile)
 ```
 
-## Related Tagged PDF Topics
-
-- [Create Tagged PDF](/pdf/python-net/create-tagged-pdf/) to build the overall accessible document structure around your table content.
-- [Extract Tagged Content from Tagged PDFs](/pdf/python-net/extract-tagged-content-from-tagged-pdfs/) to inspect table-related structure elements after generation.
-- [Setting Structure Elements Properties](/pdf/python-net/setting-structure-elements-properties/) to refine accessible metadata on table cells and other structure elements.
-
 ## Style Table Row
 
 Aspose.PDF for Python via .NET allows styling a table row in Tagged PDF document. In order to style a table row, you can use the properties of [TableTRElement](https://reference.aspose.com/pdf/python-net/aspose.pdf.logicalstructure/tabletrelement/) class. The following is the list properties you can use to style a table row:
@@ -530,3 +524,9 @@ def adjust_table_position(outfile):
         # Save Tagged PDF Document
         document.save(outfile)
 ```
+
+## Related Tagged PDF Topics
+
+- [Create Tagged PDF](/pdf/python-net/create-tagged-pdf/) to build the overall accessible document structure around your table content.
+- [Extract Tagged Content from Tagged PDFs](/pdf/python-net/extract-tagged-content-from-tagged-pdfs/) to inspect table-related structure elements after generation.
+- [Setting Structure Elements Properties](/pdf/python-net/setting-structure-elements-properties/) to refine accessible metadata on table cells and other structure elements.

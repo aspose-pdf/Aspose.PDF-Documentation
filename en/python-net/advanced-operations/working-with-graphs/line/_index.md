@@ -22,13 +22,6 @@ Follow the steps below:
 
 1. Create [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) instance.
 1. Create a Graph Object
-
-## Related Graph Topics
-
-- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
-- [Add curve shapes to PDF in Python](/pdf/python-net/add-curve/)
-- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)
-- [Check shape bounds in PDF graphs with Python](/pdf/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
 1. Add [Graph](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/) object to paragraphs collection of page.
 1. Create and Configure the Line
 1. Add the [Line](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/line/) to the Graph
@@ -157,3 +150,9 @@ Please take a look over following code snippet to accomplish this requirement.
 
 ![Drawing Line](draw_line.png)
 
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add curve shapes to PDF in Python](/pdf/python-net/add-curve/)
+- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)
+- [Check shape bounds in PDF graphs with Python](/pdf/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)

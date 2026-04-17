@@ -52,12 +52,6 @@ wa.set_text_and_state(["HELLO", "Line 1", "Line 2"], ts)
 document.save(output_file)
 ```
 
-## Related Annotation Topics
-
-- [PDF Annotations overview](/pdf/python-net/annotations/) for the parent annotation section.
-- [Add, Delete and Get Annotation](/pdf/python-net/add-delete-and-get-annotation/) for the grouped annotation index.
-- [Text Annotation](/pdf/python-net/text-annotation/) if you need note-style or text-based annotations instead of watermark overlays.
-
 ## Get Watermark Annotation
 
 ```python

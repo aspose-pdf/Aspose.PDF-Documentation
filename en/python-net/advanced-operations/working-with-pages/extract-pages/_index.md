@@ -18,13 +18,6 @@ Abstract: This article demonstrates how to extract pages from a PDF document usi
 
 Extract a specific page from a PDF document and save it as a new file. Using the Aspose.PDF library, the script copies the desired page to a new PDF, leaving the original document unchanged. This is useful for splitting PDFs or isolating important pages for distribution.
 
-## Related Page Topics
-
-- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
-- [Delete PDF pages in Python](/pdf/python-net/delete-pages/)
-- [Move PDF pages in Python](/pdf/python-net/move-pages/)
-- [Split PDF files in Python](/pdf/python-net/split-document/)
-
 1. Load the source PDF using the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) API (`ap.Document()`).
 1. Create a new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to hold the extracted page.
 1. Add the desired [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) from the source document to the new PDF using the destination document's [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) (`dst_document.pages.add(...)`).
@@ -121,3 +114,10 @@ def extract_bunch_pages(input_file_name, output_file_name):
     # Save destination Document
     another_document.save(output_file_name)
 ```
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Delete PDF pages in Python](/pdf/python-net/delete-pages/)
+- [Move PDF pages in Python](/pdf/python-net/move-pages/)
+- [Split PDF files in Python](/pdf/python-net/split-document/)

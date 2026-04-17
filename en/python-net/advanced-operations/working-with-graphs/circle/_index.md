@@ -22,13 +22,6 @@ This example illustrates how to programmatically draw a circle within a PDF docu
 
 Follow the steps below:
 
-## Related Graph Topics
-
-- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
-- [Add arc shapes to PDF in Python](/pdf/python-net/add-arc/)
-- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)
-- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)
-
 1. Create [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) instance.
 1. Create [Drawing object](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/) with certain dimensions.
 1. Set [border](https://reference.aspose.com/pdf/python-net/aspose.pdf.drawing/graph/#properties) for Drawing object.
@@ -119,3 +112,9 @@ Let's see the result of adding a filled Circle:
 
 ![Filled Circle](filled_circle.png)
 
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add arc shapes to PDF in Python](/pdf/python-net/add-arc/)
+- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)
+- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)

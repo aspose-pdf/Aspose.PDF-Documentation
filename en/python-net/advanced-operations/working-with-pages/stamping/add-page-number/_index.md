@@ -18,13 +18,6 @@ All the documents must have page numbers in it. The page number makes it easier 
 
 **Aspose.PDF for Python via .NET** allows you to add page numbers with [PageNumberStamp](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/).
 
-## Related Stamping Topics
-
-- [Stamp PDF pages in Python](/pdf/python-net/stamping/)
-- [Add page stamps to PDF in Python](/pdf/python-net/page-stamps-in-the-pdf-file/)
-- [Add image stamps to PDF in Python](/pdf/python-net/image-stamps-in-pdf-page/)
-- [Add text stamps to PDF in Python](/pdf/python-net/text-stamps-in-the-pdf-file/)
-
 ## Adding Page Number Stamp to a PDF
 
 Add dynamic page number stamps to a PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using Aspose.PDF for Python. The [`PageNumberStamp`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagenumberstamp/) object allows you to automatically display the current page number along with the total number of pages. The example shows how to create a page number stamp, customize its appearance (font, size, style, color, alignment, and margins) using [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/), and apply it to a specific [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) in the PDF via the [`Page.add_stamp()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) method. Alignment values come from the [`HorizontalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/horizontalalignment/) enum, and color/font/style are available through [`Color`](https://reference.aspose.com/pdf/python-net/aspose.pdf/color/) and [`FontStyles`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/fontstyles/) (fonts discovered via [`FontRepository.find_font()`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/fontrepository/#methods)). This functionality is useful for generating professional, numbered documents and automating pagination in PDF workflows.
@@ -122,3 +115,9 @@ def add_page_num_stamp_roman(input_file_name, output_file_name):
 
 [![How to add page number in pdf using Python](page_number.png)](https://products.aspose.app/pdf/page-number)
 
+## Related Stamping Topics
+
+- [Stamp PDF pages in Python](/pdf/python-net/stamping/)
+- [Add page stamps to PDF in Python](/pdf/python-net/page-stamps-in-the-pdf-file/)
+- [Add image stamps to PDF in Python](/pdf/python-net/image-stamps-in-pdf-page/)
+- [Add text stamps to PDF in Python](/pdf/python-net/text-stamps-in-the-pdf-file/)
