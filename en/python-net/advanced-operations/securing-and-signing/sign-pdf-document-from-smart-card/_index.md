@@ -1,11 +1,11 @@
 ---
-title: How to add Smart Card signature to PDF
+title: Sign PDF Documents from a Smart Card in Python
 linktitle: PDF Signing with Smart Card
 type: docs
 weight: 30
 url: /python-net/sign-pdf-document-from-smart-card/
-description: Aspose.PDF for Python via .NET allows you to sign PDF documents from a smart card using signature field.
-lastmod: "2025-06-22"
+description: Learn how to sign PDF documents with smart cards and external certificates in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,6 +15,8 @@ Abstract: This guide explains how to digitally sign PDF documents using a smart 
 ---
 
 Aspose.PDF provides robust capabilities for integrating visual and cryptographic signature components, ensuring both authenticity and professional presentation in digitally signed PDF documents.
+
+Use this workflow when your signing process depends on certificates stored in hardware-backed devices such as smart cards, USB tokens, or managed certificate stores.
 
 ## Sign With Smart Card Using Signature Field
 
@@ -135,4 +137,11 @@ with open(path_infile, "rb+") as file_stream:
     # Save PDF document
     document.save(path_outfile)
 ```
+
+## Related Security Topics
+
+- [Secure and sign PDF files in Python](/pdf/python-net/securing-and-signing/)
+- [Digitally sign PDF files in Python](/pdf/python-net/digitally-sign-pdf-file/)
+- [Extract signature information from PDF in Python](/pdf/python-net/extract-image-and-signature-information/)
+- [Encrypt and decrypt PDF files in Python](/pdf/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)
 

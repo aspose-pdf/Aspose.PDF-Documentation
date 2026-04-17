@@ -4,8 +4,8 @@ linktitle: Digitally sign PDF
 type: docs
 weight: 10
 url: /python-net/digitally-sign-pdf-file/
-description: Digitally sign PDF documents, verify, or validate the digitally sign PDFs using Python.
-lastmod: "2025-06-07"
+description: Learn how to digitally sign PDF documents, add timestamps, and validate signatures in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -37,6 +37,8 @@ with ap.Document(path_infile) as document:
 ```
 
 A **PKCS#7 detached signature** adds a digital signature to a document without embedding the content into the signature block.
+
+Use these examples when you need to apply certificate-based signatures to PDF files, verify signature validity, or add trusted timestamps to signed documents.
 
 The next example signs a PDF document using a PKCS#7 detached digital signature, applying the signature to the first page in a specified rectangular area.
 
@@ -147,3 +149,10 @@ with ap.Document(path_infile) as document:
         # Save PDF document
         signature.save(path_outfile)
 ```
+
+## Related Security Topics
+
+- [Secure and sign PDF files in Python](/pdf/python-net/securing-and-signing/)
+- [Extract image and signature information in Python](/pdf/python-net/extract-image-and-signature-information/)
+- [Sign PDF documents from a smart card in Python](/pdf/python-net/sign-pdf-document-from-smart-card/)
+- [Encrypt and decrypt PDF files in Python](/pdf/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)

@@ -1,11 +1,11 @@
 ---
-title: How to Create PDF using Python
+title: Create PDF Files in Python
 linktitle: Create PDF Document
 type: docs
 weight: 10
 url: /python-net/create-pdf-document/
-description: Create and format the PDF Document with Aspose.PDF for Python via .NET.
-lastmod: "2025-02-27"
+description: Learn how to create PDF files and build searchable PDFs in Python using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,6 +15,8 @@ Abstract: Aspose.PDF for Python via .NET is a versatile API designed for develop
 ---
 
 **Aspose.PDF for Python via .NET** is a PDF manipulation API that allows developers to create, load, modify, and convert PDF files directly from Python for .NET applications with just a few lines of code.
+
+Use these examples when you need to generate new PDF files from scratch or convert OCR output into searchable PDF documents in Python.
 
 ## How to Create Simple PDF File
 
@@ -82,4 +84,11 @@ finally:
     image_file = Path(temp_image_path)
     image_file.unlink(missing_ok=True)
 ```
+
+## Related Document Topics
+
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Format PDF documents in Python](/pdf/python-net/formatting-pdf-document/)
+- [Manipulate PDF documents in Python](/pdf/python-net/manipulate-pdf-document/)
+- [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)
 

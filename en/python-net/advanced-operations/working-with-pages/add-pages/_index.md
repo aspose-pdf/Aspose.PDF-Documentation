@@ -1,11 +1,11 @@
 ---
-title: Adding Pages in PDF with Python
+title: Add PDF Pages in Python
 linktitle: Adding Pages
 type: docs
 weight: 10
 url: /python-net/add-pages/
-description: Discover how to add pages to a PDF document in Python using Aspose.PDF for flexible document creation and editing.
-lastmod: "2025-11-16"
+description: Learn how to add or insert pages into PDF documents in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,6 +16,8 @@ Abstract: The article provides a guide on using the Aspose.PDF for Python via .N
 
 Aspose.PDF for Python via .NET API provides full flexibility to work with pages in a PDF document using Python. It maintains all the pages of a PDF document in [`PageCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection/) that can be used to work with PDF pages.
 Aspose.PDF for Python via .NET lets you insert a page to a [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) at any location in the file as well as add pages to the end of a PDF file. This section shows how to add pages to a PDF using Python.
+
+Use this page when you need to insert new blank pages into an existing PDF or append pages to the end of a document during generation workflows.
 
 ## Add or Insert Page in a PDF File
 
@@ -108,3 +110,10 @@ def add_page_from_another_document(input_file_name, output_file_name):
     # Save output file
     document.save(output_file_name)
 ```
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Move PDF pages in Python](/pdf/python-net/move-pages/)
+- [Delete PDF pages in Python](/pdf/python-net/delete-pages/)
+- [Extract PDF pages in Python](/pdf/python-net/extract-pages/)

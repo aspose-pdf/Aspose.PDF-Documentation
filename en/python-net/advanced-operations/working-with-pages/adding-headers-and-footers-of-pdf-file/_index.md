@@ -1,11 +1,11 @@
 ---
-title: Adding Header and Footer to PDF using Python
+title: Add PDF Headers and Footers in Python
 linktitle: Adding Header and Footer to PDF
 type: docs
 weight: 50
 url: /python-net/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF for Python via .NET allows you to add headers and footers to your PDF file using TextStamp class.
-lastmod: "2025-11-16"
+description: Learn how to add headers and footers to PDF files in Python using text, images, and structured content.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,6 +17,8 @@ Abstract: The article provides a comprehensive guide on using **Aspose.PDF for P
 This page provides a concise overview of adding headers and footers to PDF documents using Aspose.PDF for Python via .NET, covering text, HTML, LaTeX, image, and table-based approaches as well as dynamic page numbering and multiple per‑page headers; it explains how to create and style [`HeaderFooter`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerfooter/) objects (using [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textfragment/), [`HtmlFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/htmlfragment/), [`TeXFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/texfragment/), [`Image`](https://reference.aspose.com/pdf/python-net/aspose.pdf/image/), [`Table`](https://reference.aspose.com/pdf/python-net/aspose.pdf/table/), etc.), adjust [`MarginInfo`](https://reference.aspose.com/pdf/python-net/aspose.pdf/margininfo/) and [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) for precise placement, and attach the results to pages with practical Python code examples.
 
 **Aspose.PDF for Python via .NET** allows you to add header and footer in your existing [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/). You may add images or text to a PDF document. Also, try to add different headers in one PDF File with Python.
+
+Use this page when you need to add repeating branding, page labels, document titles, or footer content across PDF pages in Python.
 
 ## Adding Headers and Footers as Text Fragments
 
@@ -511,3 +513,10 @@ def add_header_and_footer_as_latex(input_file, output_file):
         # Save PDF document
         document.save(output_file)
 ```
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Add page numbers to PDF in Python](/pdf/python-net/add-page-number/)
+- [Stamp PDF pages in Python](/pdf/python-net/stamping/)
+- [Format PDF documents in Python](/pdf/python-net/formatting-pdf-document/)

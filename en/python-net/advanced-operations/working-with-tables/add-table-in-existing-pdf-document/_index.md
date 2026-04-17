@@ -4,8 +4,8 @@ linktitle: Adding Tables
 type: docs
 weight: 10
 url: /python-net/adding-tables/
-description: Aspose.PDF for Python via .NET is a library used to create, read, and edit PDF Tables. Check other advanced functions in this topic.
-lastmod: "2025-02-27"
+description: Learn how to add and configure tables in existing PDF documents in Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -870,3 +870,10 @@ for row_counter in range(1, 6):
 document.save(path_outfile)
 print(f"File saved at: {path_outfile}")
 ```
+
+## Related Table Topics
+
+- [Work with tables in PDF using Python](/pdf/python-net/working-with-tables/)
+- [Extract tables from PDF documents](/pdf/python-net/extracting-table/)
+- [Integrate PDF tables with data sources](/pdf/python-net/integrate-table/)
+- [Manipulate tables in existing PDFs](/pdf/python-net/manipulating-tables/)

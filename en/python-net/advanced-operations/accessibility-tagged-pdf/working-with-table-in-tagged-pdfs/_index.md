@@ -1,14 +1,14 @@
 ---
-title: Working with Table in Tagged PDFs using Python
+title: Work with Tables in Tagged PDFs in Python
 linktitle: Working with Table in Tagged PDFs
 type: docs
 weight: 40
 url: /python-net/working-with-table-in-tagged-pdfs/
-description: This article explains how to works with table in Tagged PDF document with Aspose.PDF for Python via .NET.
-lastmod: "2026-02-17"
+description: Learn how to work with accessible tables in tagged PDFs in Python with Aspose.PDF for Python via .NET, including structure, spans, alignment, and PDF/UA-friendly table markup.
+lastmod: "2026-04-14"
 sitemap:
-changefreq: "monthly"
-priority: 0.7
+    changefreq: "monthly"
+    priority: 0.7
 ---
 
 ## Create Table in Tagged PDF
@@ -524,3 +524,9 @@ def adjust_table_position(outfile):
         # Save Tagged PDF Document
         document.save(outfile)
 ```
+
+## Related Tagged PDF Topics
+
+- [Create Tagged PDF](/pdf/python-net/create-tagged-pdf/) to build the overall accessible document structure around your table content.
+- [Extract Tagged Content from Tagged PDFs](/pdf/python-net/extract-tagged-content-from-tagged-pdfs/) to inspect table-related structure elements after generation.
+- [Setting Structure Elements Properties](/pdf/python-net/setting-structure-elements-properties/) to refine accessible metadata on table cells and other structure elements.

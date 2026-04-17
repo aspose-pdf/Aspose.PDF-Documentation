@@ -1,11 +1,11 @@
 ---
-title: Create Tagged PDF using Python
+title: Create Tagged PDF in Python
 linktitle: Create Tagged PDF
 type: docs
 weight: 10
 url: /python-net/create-tagged-pdf/
-description: This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for Python via .NET.
-lastmod: "2026-02-17"
+description: Learn how to create tagged PDF documents in Python with Aspose.PDF for Python via .NET, including PDF/UA structure elements, accessible forms, TOC pages, and automatic tagging.
+lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -509,3 +509,9 @@ def create_pdf_with_toc_page_advanced(outfile):
         # Save the PDF document
         document.save(outfile)
 ```
+
+## Related Tagged PDF Topics
+
+- [Extract Tagged Content from Tagged PDFs](/pdf/python-net/extract-tagged-content-from-tagged-pdfs/) to inspect the logical structure tree after creation.
+- [Setting Structure Elements Properties](/pdf/python-net/setting-structure-elements-properties/) to refine titles, language, alt text, and expansion text.
+- [Working with Table in Tagged PDFs](/pdf/python-net/working-with-table-in-tagged-pdfs/) when your accessible document includes structured tables.

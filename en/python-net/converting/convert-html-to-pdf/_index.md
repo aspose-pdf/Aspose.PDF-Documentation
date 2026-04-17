@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /python-net/convert-html-to-pdf/
 lastmod: "2026-04-14"
-description: Learn how to convert HTML and MHTML content to PDF in Python with Aspose.PDF for Python via .NET, including media settings, CSS rules, embedded fonts, and logical structure.
+description: Learn how to convert HTML and MHTML to PDF in Python with Aspose.PDF for Python via .NET, including CSS media settings, embedded fonts, and tagged PDF output.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -39,6 +39,12 @@ document = ap.Document(path_infile, load_options)
 document.save(path_outfile)
 print(infile + " converted into " + outfile)
 ```
+
+## Related conversions
+
+- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) when you need web-ready output from existing PDF files.
+- [Convert other file formats to PDF](/pdf/python-net/convert-other-files-to-pdf/) for EPUB, XPS, text, and PostScript conversion workflows.
+- [Convert images to PDF](/pdf/python-net/convert-images-format-to-pdf/) when your source content is image-based instead of HTML markup.
 
 {{% alert color="success" %}}
 **Try to convert HTML to PDF online**

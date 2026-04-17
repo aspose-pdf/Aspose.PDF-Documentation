@@ -1,21 +1,25 @@
 ---
-title: Working with Vector Graphics using Python
+title: Work with Vector Graphics in Python
 linktitle: Working with Vector Graphics
 type: docs
 weight: 100
 url: /python-net/working-with-vector-graphics/
-description: This article describes the features of working with GraphicsAbsorber tool using Python.
-lastmod: "2025-05-17"
+description: Learn how to extract, move, remove, and reuse vector graphics in PDF files using Python.
+lastmod: "2026-04-17"
 TechArticle: true 
-AlternativeHeadline: Use the GraphicsAbsorber tool in PDF with Python
-Abstract: The Aspose.PDF for Python via .NET documentation on Working with Vector Graphics article  provides a comprehensive guide for developers aiming to manipulate vector graphics within PDF documents using the GraphicsAbsorber class. This class facilitates the extraction, movement, removal, and duplication of vector graphic elements across PDF pages.
+AlternativeHeadline: Use GraphicsAbsorber to inspect and manipulate PDF vector graphics in Python
+Abstract: This article explains how to work with vector graphics in Aspose.PDF for Python via .NET using the GraphicsAbsorber class. Learn how to extract vector elements from PDF pages, move or remove them, and copy graphics between pages with low-level control in Python workflows.
 ---
 
 In this chapter, we'll explore how to use the powerful `GraphicsAbsorber` class to interact with vector graphics within PDF documents. Whether you need to move, remove, or add graphics, this guide will show you how to perform these tasks effectively.
 
+Use this page when you need to inspect or manipulate vector drawing elements already present in a PDF page, such as paths, shapes, and reusable graphical objects.
+
 ## Introduction
 
 Vector graphics are a crucial component of many PDF documents, used to represent images, shapes, and other graphical elements. Aspose.PDF provides the `GraphicsAbsorber` class, which allows developers to programmatically access and manipulate these graphics. By using the `Visit` method of `GraphicsAbsorber`, you can extract vector graphics from a specified page and perform various operations, such as moving, removing, or copying them to other pages.
+
+## Common Vector Graphics Tasks
 
 ## Extracting Graphics
 
@@ -266,3 +270,10 @@ with ap.Document(path_infile) as document:
     # Save PDF document
     document.save(path_outfile)
 ```
+
+## Related Topics
+
+- [Advanced PDF operations in Python](/pdf/python-net/advanced-operations/)
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Work with PDF operators in Python](/pdf/python-net/working-with-operators/)
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)

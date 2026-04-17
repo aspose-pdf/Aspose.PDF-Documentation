@@ -1,22 +1,24 @@
 ---
-title: Compare PDF documents
+title: Compare PDF Documents in Python
 linktitle: Compare PDF 
 type: docs
 weight: 130
 url: /python-net/compare-pdf-documents/
-description: It's possible to compare PDF documents content with annotation marks and side-by-side output.
-lastmod: "2025-05-12"
+description: Learn how to compare PDF documents in Python using side-by-side and graphical difference output with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
-Abstract:   
+AlternativeHeadline: Compare PDF pages and full documents with visual difference output in Python
+Abstract: This article explains how to compare PDF documents in Aspose.PDF for Python via .NET. Learn how to compare specific pages or entire PDF files with side-by-side output, and how to use graphical comparison methods to generate image-based or PDF-based difference reports.
 ---
 
 ## Ways to Compare PDF Documents
 
 When working with PDF documents, there are times when you need to compare the content of two documents to identify differences. The Aspose.PDF for Python via .NET library provides a powerful toolset for this purpose. In this article, we'll explore how to compare PDF documents using a couple of simple code snippets.
+
+Use side-by-side comparison when you want a PDF output that highlights text and layout changes across pages. Use graphical comparison when you need image-based difference detection for visual review workflows, regression checks, or PDF comparison reports.
 
 The comparison functionality in Aspose.PDF allows you to compare two PDF documents page by page. You can choose to compare either specific pages or entire documents. The resulting comparison document highlights differences, making it easier to identify changes between the two files.
 
@@ -203,4 +205,11 @@ This example demonstrates how to perform a graphical comparison of two entire PD
 - Differences are marked in blue by setting the color property to ap.Color.blue, allowing for clear visual distinction.
 - The comparison is performed at a resolution of 300 DPI by setting the resolution property, ensuring detailed and clear output.
 
-The `compare_documents_to_pdf` method compares all pages of both documents and outputs the result to a new PDF file, compareDocumentsToPdf_out.pdf, with differences visually highlighted. 
+The `compare_documents_to_pdf` method compares all pages of both documents and outputs the result to a new PDF file, compareDocumentsToPdf_out.pdf, with differences visually highlighted.
+
+## Related Topics
+
+- [Advanced PDF operations in Python](/pdf/python-net/advanced-operations/)
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Work with PDF text in Python](/pdf/python-net/working-with-text/)

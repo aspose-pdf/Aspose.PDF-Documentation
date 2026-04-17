@@ -17,9 +17,11 @@ This code snippet explains how to add an image appearance to an existing button 
 1. Create a Form object.
 1. Bind the PDF file to the form object.
 1. Add Image to Button Field.
-  - Determine the path to the image file associated with the PDF
-  - Open the image in binary mode as image_stream.
-  - Call fill_image_field() with the fully qualified button field name.
+
+    - Determine the path to the image file associated with the PDF
+    - Open the image in binary mode as image_stream.
+    - Call fill_image_field() with the fully qualified button field name.
+
 1. Save the Updated PDF.
 
 ```python

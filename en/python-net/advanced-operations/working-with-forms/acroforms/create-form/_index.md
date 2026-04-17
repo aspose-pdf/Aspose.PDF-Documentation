@@ -59,4 +59,3 @@ pdfDocument.form.add(textBoxField, 1)
 # Save modified PDF
 pdfDocument.save(path_outfile)
 ```
-

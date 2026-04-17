@@ -1,11 +1,11 @@
 ---
-title: Setting Structure Elements Properties
+title: Set Tagged PDF Structure Element Properties in Python
 linktitle: Setting Structure Elements Properties
 type: docs
 weight: 30
 url: /python-net/setting-structure-elements-properties/
-description: You may set different structure elements properties in PDF document with Aspose.PDF for Python via .NET.
-lastmod: "2026-02-17"
+description: Learn how to set tagged PDF structure element properties in Python with Aspose.PDF for Python via .NET, including title, language, actual text, alternative text, and expansion text.
+lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -636,3 +636,9 @@ def set_language_and_title(outfile):
         # Save Tagged PDF Document
         document.save(outfile)
 ```
+
+## Related Tagged PDF Topics
+
+- [Create Tagged PDF](/pdf/python-net/create-tagged-pdf/) to generate the structure elements before updating their properties.
+- [Extract Tagged Content from Tagged PDFs](/pdf/python-net/extract-tagged-content-from-tagged-pdfs/) to inspect existing structure nodes and metadata.
+- [Working with Table in Tagged PDFs](/pdf/python-net/working-with-table-in-tagged-pdfs/) if you need to apply accessible properties to table structures.

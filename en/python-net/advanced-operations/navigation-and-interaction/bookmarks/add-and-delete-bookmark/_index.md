@@ -1,11 +1,11 @@
 ---
-title: Add and Delete a Bookmark using Python
+title: Add and Delete PDF Bookmarks in Python
 linktitle: Add and Delete a Bookmark
 type: docs
 weight: 10
 url: /python-net/add-and-delete-bookmark/
-description: You can add a bookmark to a PDF document with Python. It is possible to delete all or particular bookmarks from a PDF document.
-lastmod: "2025-02-27"
+description: Learn how to add and delete bookmarks in PDF documents using Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -139,4 +139,10 @@ The following code snippets show how to delete a particular bookmark from the PD
     # Save updated file
     document.save(output_pdf)
 ```
+
+## Related Bookmark Topics
+
+- [Work with PDF bookmarks in Python](/pdf/python-net/bookmarks/)
+- [Get, update, and expand PDF bookmarks in Python](/pdf/python-net/get-update-and-expand-bookmark/)
+- [Navigation and interaction in PDF using Python](/pdf/python-net/navigation-and-interaction/)
 
