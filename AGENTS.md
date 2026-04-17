@@ -69,6 +69,7 @@ Additional guidance:
 - treat `weight` changes as navigation changes, not formatting changes
 - prefer `aliases` for redirects instead of changing established URLs
 - preserve existing schema-related metadata such as `TechArticle`, `FAQPage`, `ai_search_scope`, and similar fields when present
+- meta-tag `<title>` is created using a template `<frontmatter-title> | <product-name>`. Example: "Get Started | Aspose.PDF for .NET"
 
 ## Content Editing Rules
 
@@ -79,6 +80,7 @@ When editing Markdown:
 - use fenced code blocks with explicit language identifiers
 - keep headings, lists, and spacing consistent with nearby pages
 - prefer linking to canonical pages instead of duplicating long guidance
+- do not add brand or product name to `title`
 
 For code examples:
 

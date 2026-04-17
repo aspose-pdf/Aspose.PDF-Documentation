@@ -1,11 +1,11 @@
 ---
-title: Creating tooltips in Text
+title: Add Tooltips to PDF Text in Python
 linktitle: PDF Tooltip
 type: docs
 weight: 20
 url: /python-net/pdf-tooltip/
-description: Learn how to add tooltip to the text fragment in PDF using Python and Aspose.PDF
-lastmod: "2025-11-13"
+description: Learn how to add tooltips to text fragments in PDF documents in Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,6 +17,8 @@ Abstract: This article provides two Python code examples for enhancing interacti
 ## Add Tooltip to Searched Text in a PDF
 
 This code snippet shows how to overlay invisible [`ButtonField`](https://reference.aspose.com/pdf/python-net/aspose.pdf.forms/buttonfield/) elements on specific [`TextFragment`](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment/) objects in a PDF to display tooltips when the user hovers over them. It supports both short and long tooltip messages using the `alternate_name` property of `ButtonField`.
+
+Use this page when you need to make PDF text more interactive by adding hover help, inline explanations, or contextual notes.
 
 1. Create a new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
 1. Save the initial document.
@@ -234,3 +236,10 @@ def create_hidden_text_block(outfile):
         # Save document
         document.save(outfile)
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Use FloatingBox for PDF text layout in Python](/pdf/python-net/floating-box/)
+- [Search and extract PDF text in Python](/pdf/python-net/search-and-get-text-from-pdf/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)

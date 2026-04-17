@@ -1,19 +1,24 @@
 ---
-title: Manipulate Tables in existing PDF
+title: Manipulate Tables in Existing PDF
 linktitle: Manipulate Tables
 type: docs
 weight: 40
 url: /python-net/manipulating-tables/
-description: Learn how to work with tables in existing PDFs using Aspose.PDF for Python via .NET, providing flexibility in document modification.
-lastmod: "2025-09-27"
+description: Learn how to inspect and modify tables in existing PDF documents using Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Modify existing PDF tables with Python
+Abstract: This article explains how to manipulate tables already present in PDF documents using Aspose.PDF for Python via .NET. Learn how to locate tables with TableAbsorber, access specific rows and cells, update table text content, and save the modified PDF in Python.
 ---
 
 ## Manipulate Tables in existing PDF
 
 Aspose.PDF for Python shows how to modify the content of a specific cell within a table in a PDF document. It uses the TableAbsorber class to locate tables on the first page, accesses a particular text fragment within the first cell of the first table, updates its text, and saves the modified PDF to a new file.
+
+Use this page when you need to update existing table content in PDFs without recreating the whole document layout.
 
 1. Open the PDF file using 'ap.Document()'.
 1. Create a TableAbsorber object to detect tables in the PDF.
@@ -103,3 +108,10 @@ absorber.replace(document.pages[1], table, new_table)
 document.save(path_outfile)
 print(f"File saved at: {path_outfile}")
 ```
+
+## Related Table Topics
+
+- [Work with tables in PDF using Python](/pdf/python-net/working-with-tables/)
+- [Add tables to PDF using Python](/pdf/python-net/adding-tables/)
+- [Extract tables from PDF documents](/pdf/python-net/extracting-table/)
+- [Remove tables from existing PDFs](/pdf/python-net/removing-tables/)

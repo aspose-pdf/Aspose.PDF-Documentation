@@ -4,14 +4,16 @@ linktitle: Extract Images
 type: docs
 weight: 30
 url: /python-net/extract-images-from-pdf-file/
-description: This section shows how to extract images from PDF file using Python library.
-lastmod: "2025-09-27"
+description: Learn how to extract embedded images from PDF files in Python.
+lastmod: "2026-04-17"
 TechArticle: true 
 AlternativeHeadline: Extract images from PDF with Python
 Abstract: This article discusses the process of extracting images from PDF files using Aspose.PDF for Python. It highlights the utility of separating images for purposes such as management, archiving, analysis, or sharing. The article explains that images within a PDF are stored in each page's resources collection, specifically within the XImage collection. To extract an image, users can access a particular page and retrieve the image using its index from the Images collection. The XImage object returned by the index provides a `save()` method to save the extracted image. A code snippet is provided to demonstrate the steps required to open a PDF document, extract a specific image from the second page using its index, and save it to a file.
 ---
 
 Do you need to separate images from your PDF files? For simplified management, archiving, analysis, or sharing images of your documents, use **Aspose.PDF for Python** and extract images from PDF files.
+
+This workflow is useful when you need to reuse embedded graphics, archive image assets separately, or inspect PDF contents for downstream processing.
 
 1. Load the PDF document with 'ap.Document()'.
 1. Access the desired page of the document (document.pages[1]).
@@ -149,3 +151,10 @@ for op in document.pages[1].contents:
                 f"res {res_horizontal:.2f} x {res_vertical:.2f}"
             )
 ```
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Search and inspect PDF images](/pdf/python-net/search-and-get-images-from-pdf-document/)
+- [Add images to existing PDF files](/pdf/python-net/add-image-to-existing-pdf-file/)
+- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)

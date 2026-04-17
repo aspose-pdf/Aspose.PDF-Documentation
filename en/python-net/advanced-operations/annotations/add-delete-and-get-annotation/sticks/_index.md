@@ -1,17 +1,17 @@
 ---
-title: PDF sticky Annotations using Python
-linktitle: sticky Annotation
+title: Watermark Annotations in PDF using Python
+linktitle: Watermark Annotation
 type: docs
 weight: 50
 url: /python-net/sticky-annotations/
-description: Discover how to add sticky annotations in PDF documents using Aspose.PDF in Python via .NET for comments and feedback.
-lastmod: "2025-02-27"
+description: Learn how to add, retrieve, and delete watermark annotations in PDF documents using Python with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Guide on how to manipulate sticky annotations in PDF
-Abstract: This article provides a detailed guide on how to manage watermark annotations in PDF documents using the Aspose.PDF for Python library. It explains the process of adding, retrieving, and deleting watermark annotations to ensure document authenticity and branding. The watermark annotation can be used to embed graphics, such as logos, at a fixed size and position on a page. The guide includes code snippets demonstrating how to add a watermark annotation at a specific position with adjustable opacity, as well as how to retrieve and delete existing watermark annotations. The code examples illustrate the use of the Aspose.PDF library to manipulate PDF documents programmatically, offering a practical approach for developers to integrate watermark functionalities into their applications.
+AlternativeHeadline: Guide on how to manipulate watermark annotations in PDF
+Abstract: This article provides a detailed guide on how to manage watermark annotations in PDF documents using Aspose.PDF for Python via .NET. It explains how to add, retrieve, and delete watermark annotations for branding, document marking, and visual overlays. The code examples show how to create watermark annotations at fixed positions, apply text styling and opacity, and remove existing watermark annotations programmatically.
 ---
 
 ## Add Watermark Annotation

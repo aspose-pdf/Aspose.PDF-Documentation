@@ -1,10 +1,10 @@
 ---
-title: Check shape bounds in Shapes collection using Python
+title: Check Shape Bounds in PDF Graphs with Python
 type: docs
 weight: 70
 url: /python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Learn how to check the bounds of an shape when inserted into the Shapes collection to ensure it fits within its parent container.
-lastmod: "2025-05-14"
+description: Learn how to validate shape bounds in PDF graph collections in Python.
+lastmod: "2026-04-16"
 draft: false
 TechArticle: true 
 AlternativeHeadline: Guide on checking shape bounds in Shapes
@@ -49,4 +49,11 @@ graph.shapes.update_bounds_check_mode(
 
 # Add the rectangle to the graph
 graph.shapes.add(rect)
-```            
+```
+
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)
+- [Add line shapes to PDF in Python](/pdf/python-net/add-line/)
+- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)

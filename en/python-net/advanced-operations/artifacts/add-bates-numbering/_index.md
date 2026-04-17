@@ -1,11 +1,11 @@
 ---
-title: Adding Bates Numbering Artifact in Python via .NET
+title: Add Bates Numbering to PDF in Python
 linktitle: Adding Bates Numbering
 type: docs
 weight: 10
 url: /python-net/add-bates-numbering/
-description: Aspose.PDF for Python via .NET allows you to add Bates Numbering to PDF.
-lastmod: "2025-11-13"
+description: Learn how to add and remove Bates numbering in PDF documents using Python with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -151,3 +151,10 @@ def delete_bates_numbering(path_infile, path_outfile):
         # Save updated document
         document.save(path_outfile)
 ```
+
+## Related Artifact Topics
+
+- [Work with PDF artifacts in Python](/pdf/python-net/artifacts/)
+- [Add watermarks to PDF in Python](/pdf/python-net/add-watermarks/)
+- [Add PDF backgrounds in Python](/pdf/python-net/add-backgrounds/)
+- [Count artifact types in PDF files](/pdf/python-net/counting-artifacts/)

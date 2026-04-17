@@ -4,8 +4,8 @@ linktitle: Replace Text in PDF
 type: docs
 weight: 40
 url: /python-net/replace-text-in-pdf/
-description: Learn more about various ways of replacing and removing text from Aspose.PDF for Python via .NET library.
-lastmod: "2025-10-13"
+description: Learn how to replace, rearrange, and remove text in PDF documents using Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,6 +17,8 @@ Abstract: The article provides a comprehensive guide on various text manipulatio
 ---
 
 These examples demonstrate how to **modify or remove text in an existing PDF**.
+
+Use this page when you need to update text values, remove unwanted content, or apply text replacement rules across PDF pages.
 
 ## Replace existing text
 
@@ -885,3 +887,10 @@ def remove_hidden_text(infile, outfile):
         # Save PDF document
         document.save(outfile)
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
+- [Search and extract PDF text in Python](/pdf/python-net/search-and-get-text-from-pdf/)
+- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)

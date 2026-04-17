@@ -1,16 +1,16 @@
 ---
-title: Set Privileges, Encrypt and Decrypt PDF
+title: Encrypt and Decrypt PDF Files in Python
 linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 70
 url: /python-net/set-privileges-encrypt-and-decrypt-pdf-file/
-description: Encrypt PDF File with Python using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.
-lastmod: "2025-06-22"
+description: Learn how to set PDF privileges, encrypt files, decrypt protected PDFs, and change passwords in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Encrypt or Decrypt PDF File with Python
+AlternativeHeadline: Set PDF permissions and manage encryption in Python
 Abstract: This documentation page explains how to set document privileges, apply encryption, and decrypt PDF files using Aspose.PDF for Python. It guides developers through configuring user and owner passwords, defining access restrictions (such as printing, copying, or editing). Code examples illustrate how to protect sensitive content and manage PDF security effectively within Python applications, ensuring controlled access and data confidentiality.     
 ---
 
@@ -25,6 +25,8 @@ Aspose.PDF for Python via .NET gives developers full control over PDF security:
 **Decrypt File** - Remove security using the owner password.
 **Change Passwords** - Rotate or update credentials without altering content.
 **Inspect Security** - Detect encryption status or required password types.
+
+Use this page when you need to protect PDF documents with passwords, restrict printing or copying, rotate credentials, or inspect whether a document is encrypted.
 
 ## Set Privileges on an Existing PDF File
 
@@ -165,4 +167,11 @@ with ap.facades.PdfFileInfo() as pdf_file_info:
             print("Password = " + passwords[password_index] + " is not correct")
             password_index = password_index + 1
 ```
+
+## Related Security Topics
+
+- [Secure and sign PDF files in Python](/pdf/python-net/securing-and-signing/)
+- [Digitally sign PDF files in Python](/pdf/python-net/digitally-sign-pdf-file/)
+- [Extract signature information from PDF in Python](/pdf/python-net/extract-image-and-signature-information/)
+- [Sign PDF documents from a smart card in Python](/pdf/python-net/sign-pdf-document-from-smart-card/)
 

@@ -1,11 +1,11 @@
 ---
-title: Using Text Annotation for PDF via Python
+title: Text Annotations in PDF using Python
 linktitle: Text Annotation
 type: docs
 weight: 10
 url: /python-net/text-annotation/
-description: Aspose.PDF for Python allows you to Add, Get, and Delete Text Annotation from your PDF document.
-lastmod: "2025-02-27"
+description: Learn how to add, retrieve, and delete text annotations in PDF documents using Python with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -15,6 +15,8 @@ Abstract: This article provides a comprehensive guide on how to manipulate text 
 ---
 
 ## How to add Text Annotation into existing PDF file
+
+Use text annotations when you need to attach notes, free text, or text-based comments directly to a PDF page for review or collaboration.
 
 A Text Annotation is an annotation attached to a specific location in a PDF document. When closed, the annotation is displayed as an icon; when opened, it should display a pop-up window containing the note text in the font and size chosen by the reader.
 
@@ -196,5 +198,3 @@ for pa in StrikeoutAnnotations:
 
 document.save(output_file)
 ```
-
-

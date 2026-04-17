@@ -220,3 +220,9 @@ def add_background_image_stamp(infile: str, image_file: str, outfile: str) -> No
     finally:
         pdf_stamper.close()
 ```
+
+## Related Facades Topics
+
+- [Working with PDF Facades in Python](/pdf/python-net/working-with-facades/)
+- [Add headers, footers, and stamps with PdfFileStamp](/pdf/python-net/pdffilestamp-class/)
+- [Add a page stamp to PDF files in Python](/pdf/python-net/add-stamp/)

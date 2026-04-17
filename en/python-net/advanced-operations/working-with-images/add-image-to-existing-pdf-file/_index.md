@@ -4,8 +4,8 @@ linktitle: Add Image
 type: docs
 weight: 10
 url: /python-net/add-image-to-existing-pdf-file/
-description: This section describes how to add image to existing PDF file using Python library.
-lastmod: "2025-09-27"
+description: Learn how to add images to existing PDF files in Python.
+lastmod: "2026-04-17"
 TechArticle: true 
 AlternativeHeadline: How to add images into PDF using Python
 Abstract: This article provides guidance on adding images to existing PDF files using Python with the Aspose.PDF library. Two methods are outlined for achieving this. The first method involves using the `Document` class from Aspose.PDF, where the user loads the PDF, specifies the page number, and uses the `add_image` method of the `Page` class to position the image. The document is then saved using the `save()` method. The second method utilizes the `PdfFileMend` class from the Aspose.PDF.Facades namespace, which offers a simpler interface. Here, the `add_image()` method is invoked to add the image to the specified page and coordinates, followed by saving the updated PDF and closing the `PdfFileMend` object. Code snippets are provided for both methods to demonstrate the process.
@@ -14,6 +14,8 @@ Abstract: This article provides guidance on adding images to existing PDF files 
 ## Add Image in an Existing PDF File
 
 This example demonstrates how to insert an image into a specific position on a PDF page using Aspose.PDF for Python via .NET.
+
+Use this page when you need to place logos, photos, or other graphics at fixed coordinates inside an existing PDF layout.
 
 1. Load the PDF document with 'ap.Document'.
 1. Select the target page '(document.pages[1]' - the first page).
@@ -157,3 +159,10 @@ if result:
     print("Text has been added successfuly")
 document.save(path_outfile)
 ```
+
+## Related Image Topics
+
+- [Work with images in PDF using Python](/pdf/python-net/working-with-images/)
+- [Replace images in existing PDF files](/pdf/python-net/replace-image-in-existing-pdf-file/)
+- [Delete images from PDF files](/pdf/python-net/delete-images-from-pdf-file/)
+- [Extract images from PDF files](/pdf/python-net/extract-images-from-pdf-file/)
