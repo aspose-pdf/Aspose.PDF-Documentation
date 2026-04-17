@@ -1,6 +1,6 @@
 ---
 title: Convert PDF to PDF/A, PDF/E, and PDF/X in Python
-linktitle: Convert PDF/A/UA/E/X to PDF in Python
+linktitle: Convert PDF to PDF/A, PDF/E, and PDF/X
 type: docs
 weight: 120
 url: /python-net/convert-pdf-to-pdf_x/

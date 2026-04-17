@@ -29,14 +29,7 @@ We recommend following steps to attach ZUGFeRD to PDF:
 1. Save the PDF document with the attached ZUGFeRD.
 
 ```python
-import sys
-import os
 import aspose.pdf as ap
-
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir
-
 
 def attach_invoice_zugferd_format(infile, invoice, outfile):
     """

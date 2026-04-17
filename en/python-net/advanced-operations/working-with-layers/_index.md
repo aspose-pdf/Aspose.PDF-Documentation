@@ -4,6 +4,8 @@ linktitle: Working with PDF layers
 type: docs
 weight: 50
 url: /python-net/work-with-pdf-layers/
+aliases:
+  - /python-net/working-with-pdf-layers/
 description: Learn how to lock, extract, flatten, and merge PDF layers in Python using Aspose.PDF for Python via .NET.
 lastmod: "2026-04-17"
 sitemap:
