@@ -1,20 +1,22 @@
 ---
-title: Working with PDF layers using Python
+title: Work with PDF Layers in Python
 linktitle: Working with PDF layers
 type: docs
 weight: 50
 url: /python-net/work-with-pdf-layers/
-description: This article explains how to lock a PDF layer, extract PDF layer elements, flatten a layered PDF, and merge all layers inside a PDF into one.
-lastmod: "2025-11-16"
+description: Learn how to lock, extract, flatten, and merge PDF layers in Python using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to manage, lock, extract, flatten, and merge PDF layers in Python
-Abstract: This article explains how to work with PDF layers in Python using Aspose.PDF for .NET, including locking layers, extracting layer elements, flattening layered PDFs, and merging layers.
+Abstract: This article explains how to work with PDF layers in Aspose.PDF for Python via .NET. Learn how to lock optional content layers, extract layer content, flatten layered PDFs, and merge layers into a single result in Python workflows.
 ---
 
 PDF layers allow a document to contain multiple sets of content that can be selectively shown or hidden. Each layer may include text, images, or graphics, and users can toggle them on or off as needed. Layers are especially useful in complex documents where content must be organized or separated. The examples below use the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) and [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) APIs and manipulate [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) objects via the page's `layers` collection.
+
+Use this page when you need to manage optional content groups in PDF files, preserve layer-based viewing behavior, or simplify layered documents for print, sharing, or archival workflows.
 
 ## Lock a PDF layer
 
@@ -131,3 +133,10 @@ def merge_layers(path_infile, path_outfile, new_layer_name, optional_group_id=No
 
         document.save(path_outfile)
 ```
+
+## Related Topics
+
+- [Advanced PDF operations in Python](/pdf/python-net/advanced-operations/)
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
