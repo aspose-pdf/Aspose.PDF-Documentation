@@ -11,7 +11,8 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Abrir documentos PDF usando la biblioteca Aspose.PDF en Python
-Abstract: Este artículo proporciona una guía sobre cómo abrir documentos PDF existentes usando la biblioteca Aspose.PDF en Python. Describe tres métodos para lograrlo: abrir un PDF especificando el nombre del archivo, abrir un PDF desde un flujo y abrir un PDF cifrado proporcionando una contraseña. Cada método incluye un fragmento de código que demuestra cómo utilizar la biblioteca Aspose.PDF para acceder al PDF y mostrar el número de páginas que contiene. Estos ejemplos ilustran la flexibilidad y funcionalidad de Aspose.PDF para manejar diferentes escenarios de acceso a archivos PDF.
+Abstract: >
+    Este artículo proporciona una guía sobre cómo abrir documentos PDF existentes usando la biblioteca Aspose.PDF en Python. Describe tres métodos para lograrlo: abrir un PDF especificando el nombre del archivo, abrir un PDF desde un flujo y abrir un PDF cifrado proporcionando una contraseña. Cada método incluye un fragmento de código que demuestra cómo utilizar la biblioteca Aspose.PDF para acceder al PDF y mostrar el número de páginas que contiene. Estos ejemplos ilustran la flexibilidad y funcionalidad de Aspose.PDF para manejar diferentes escenarios de acceso a archivos PDF.
 ---
 
 ## Abrir documento PDF existente
