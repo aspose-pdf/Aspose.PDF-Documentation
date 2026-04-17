@@ -29,32 +29,49 @@ We recommend following steps to attach ZUGFeRD to PDF:
 1. Save the PDF document with the attached ZUGFeRD.
 
 ```python
+import sys
+import os
 import aspose.pdf as ap
 
-# Define the path to the directory where the input and output PDF files are located
-_dataDir = "./"
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
-# Load the PDF file that will be processed
-path = _dataDir + "ZUGFeRD/ZUGFeRD-test.pdf"
-document = ap.Document(path)
+from config import set_license, initialize_data_dir
 
-# Create a FileSpecification object for the XML file that contains the invoice metadata
-description = "Invoice metadata conforming to ZUGFeRD standard"
-path = _dataDir + "ZUGFeRD/factur-x.xml"
-fileSpecification = ap.FileSpecification(path, description)
 
-# Set the MIME type and the AFRelationship properties of the embedded file
-fileSpecification.mime_type = "text/xml"
-fileSpecification.af_relationship = ap.AFRelationship.ALTERNATIVE
+def attach_invoice_zugferd_format(infile, invoice, outfile):
+    """
+    Attach Factur-X/ZUGFeRD invoice XML to PDF and convert to PDF/A-3A format.
 
-# Add the embedded file to the PDF document's embedded files collection
-document.embedded_files.add("factur", fileSpecification)
+    Args:
+        infile (str): Input PDF filename
+        invoice (str): Invoice XML filename (Factur-X/ZUGFeRD compliant)
+        outfile (str): Output PDF filename
 
-# Convert the PDF document to the PDF/A-3A format
-path = _dataDir + "ZUGFeRD/log.xml"
-document.convert(path, ap.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
+    Returns:
+        None
 
-# Save the PDF document with the attached ZUGFeRD
-path = _dataDir + "ZUGFeRD/ZUGFeRD-res.pdf"
-document.save(path)
+    Example:
+        attach_invoice_zugferd_format("input.pdf", "factur-x.xml", "output.pdf")
+
+    Note:
+        Embeds invoice XML as alternative file conforming to ZUGFeRD standard.
+        Converts PDF to PDF/A-3A format to ensure long-term archival compliance.
+    """
+    document = ap.Document(infile)
+
+    # Create a FileSpecification object for the XML file that contains the invoice metadata
+    description = "Invoice metadata conforming to ZUGFeRD standard"
+    file_specification = ap.FileSpecification(invoice, description)
+
+    # Set the MIME type and the AFRelationship properties of the embedded file
+    file_specification.mime_type = "text/xml"
+    file_specification.af_relationship = ap.AFRelationship.ALTERNATIVE
+
+    # Add the embedded file to the PDF document's embedded files collection
+    document.embedded_files.add("factur", file_specification)
+
+    # Convert the PDF document to the PDF/A-3A format
+    log_path = outfile.replace(".pdf", "_log.xml")
+    document.convert(log_path, ap.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
+    document.save(outfile)
 ```
