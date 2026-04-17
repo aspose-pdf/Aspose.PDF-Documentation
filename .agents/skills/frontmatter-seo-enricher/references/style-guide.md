@@ -49,6 +49,7 @@ Good patterns:
 - Start with what the page teaches
 - Mention the core API or feature
 - Mention the main operations performed
+- Use scalar syntax
 
 Preferred shape:
 
