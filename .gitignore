@@ -224,7 +224,6 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-scripts/
 src/
 logs/
 reports/
