@@ -1,5 +1,6 @@
 ---
-title: Working with PDF Facades in Python via .NET
+title: Working with PDF Facades
+linktitele: Working with PDF Facades 
 type: docs
 weight: 100
 url: /python-net/working-with-facades/
