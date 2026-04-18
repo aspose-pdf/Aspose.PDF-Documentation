@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This repository contains the multilingual Hugo content for Aspose.PDF documentation.
+This repository contains multilingual Hugo content for Aspose.PDF documentation.
 
 - Primary subject: Aspose.PDF documentation
 - Site type: Hugo content repository
-- Content is organized language-first, then product/platform
+- Content is organized by language first, then product/platform
 - Common page type: `_index.md` with YAML front matter
 
 Examples:
@@ -26,7 +26,7 @@ When making changes:
 - follow nearby pages before introducing a new pattern
 - prefer small, localized edits over broad restructuring
 
-Do not assume there is a local app or test suite to run. The main validation surface is content correctness, formatting consistency, front matter integrity, and link safety.
+Do not assume a local app or test suite exists. Primary validation is content correctness, formatting consistency, front matter integrity, and link safety.
 
 ## Repository Structure
 
@@ -53,7 +53,7 @@ Language folders currently include:
 
 Most pages are Hugo Markdown pages with YAML front matter.
 
-Preserve front matter structure and keep it aligned with sibling pages in the same section. For new or updated pages, the common required fields are:
+Preserve front matter structure and align it with sibling pages in the same section. For new or updated pages, common required fields are:
 
 - `title`
 - `linktitle`
@@ -69,7 +69,7 @@ Additional guidance:
 - treat `weight` changes as navigation changes, not formatting changes
 - prefer `aliases` for redirects instead of changing established URLs
 - preserve existing schema-related metadata such as `TechArticle`, `FAQPage`, `ai_search_scope`, and similar fields when present
-- meta-tag `<title>` is created using a template `<frontmatter-title> | <product-name>`. Example: "Get Started | Aspose.PDF for .NET"
+- meta tag `<title>` follows the template `<frontmatter-title> | <product-name>`. Example: "Get Started | Aspose.PDF for .NET"
 
 ## Content Editing Rules
 
@@ -90,7 +90,7 @@ For code examples:
 
 ## Hugo-Specific Guidance
 
-This repo is content-only. Deployment builds happen in CI by cloning an external Hugo template repository and copying this repository into its `content/` folder.
+This repository is content-only. Deployment builds run in CI by cloning an external Hugo template repository and copying this repository into its `content/` folder.
 
 Current workflow facts from `.github/workflows`:
 
@@ -179,3 +179,29 @@ After editing:
 - `.github/workflows/pdf-prod.yml`
 - `.github/workflows/pdf-stage.yml`
 - `en/_index.md`
+
+## Project rules
+
+- Source language content lives under `content/en`.
+- Target language content should be written under the matching path in `content/<lang>`.
+- Preserve Hugo front matter structure and keys.
+- Never translate fenced code blocks, inline code, URLs, file paths, shortcode names, or shortcode parameters unless explicitly requested.
+- Keep headings, lists, tables, reference links, and Markdown structure intact.
+- Preserve product names and technical terms from the glossary in `.doctranslate/config.json`.
+- Prefer the installed `translate-hugo-docs` Skill from your personal Codex skills folder for documentation translation tasks.
+- The repository copy at `.codex/skills/translate-hugo-docs/SKILL.md` is the source template that should stay aligned with the personal installed copy.
+
+## Review rules
+
+- Validate that front matter still parses.
+- Validate that shortcode count and code fence count remain unchanged.
+- If validation fails, do not silently overwrite a file with broken Markdown.
+- Flag terminology drift when a glossary term is changed.
+
+## Expected outputs
+
+- Write translated output to the target language folder.
+- Keep line endings and formatting stable where practical.
+- Report any protected spans that could not be restored.
+- Prefer the published CLI binary from your personal tools folder for repeated or batch translation runs when available.
+- Default personal install locations are `$CODEX_HOME/skills/translate-hugo-docs` and `$CODEX_HOME/tools/hugo-doc-translate`; if `CODEX_HOME` is unset, use `%USERPROFILE%\\.codex\\...`.
