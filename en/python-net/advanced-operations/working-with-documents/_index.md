@@ -16,7 +16,7 @@ Abstract: This section explains how to work with PDF documents using Aspose.PDF 
 
 PDF files are designed for the safe and high-quality exchange of documents, regardless of which software or operating system is used to view them. They can be opened and viewed on many devices and operating systems, including computers, tablets, and smartphones. For today, such documents may contain images, tables, various interactive elements, etc.
 
-PDF documents can be viewed and printed, but not always easily edited. However, the **Aspose.PDF for Python Library** will help you cope with even the most difficult task in working with PDF.
+PDF documents can be viewed and printed, but not always easily edited. However, the **Aspose.PDF for Python via .NET** will help you cope with even the most difficult task in working with PDF.
 
 Use this section when you need to work with whole-document PDF workflows in Python, such as creating files, validating standards, optimizing size, combining multiple PDFs, or splitting large documents into smaller ones.
 
