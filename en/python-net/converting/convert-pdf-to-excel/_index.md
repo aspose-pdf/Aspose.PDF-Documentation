@@ -53,12 +53,6 @@ document.save(path_outfile, save_options)
 print(infile + " converted into " + outfile)
 ```
 
-## Related conversions
-
-- [Convert PDF to Word](/pdf/python-net/convert-pdf-to-word/) if your priority is editable text flow rather than spreadsheet structure.
-- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) when you need browser-friendly output.
-- [Convert PDF to other formats](/pdf/python-net/convert-pdf-to-other-files/) for EPUB, Markdown, text, XPS, and related export workflows.
-
 Steps: Convert a PDF file to an XLSX format (Excel 2007+)
 
 1. Load the PDF document.
@@ -198,3 +192,9 @@ document.save(path_outfile, save_options)
 
 print(infile + " converted into " + outfile)
 ```
+
+## Related conversions
+
+- [Convert PDF to Word](/pdf/python-net/convert-pdf-to-word/) if your priority is editable text flow rather than spreadsheet structure.
+- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) when you need browser-friendly output.
+- [Convert PDF to other formats](/pdf/python-net/convert-pdf-to-other-files/) for EPUB, Markdown, text, XPS, and related export workflows.

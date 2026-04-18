@@ -40,12 +40,6 @@ document.save(path_outfile)
 print(infile + " converted into " + outfile)
 ```
 
-## Related conversions
-
-- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) when you need web-ready output from existing PDF files.
-- [Convert other file formats to PDF](/pdf/python-net/convert-other-files-to-pdf/) for EPUB, XPS, text, and PostScript conversion workflows.
-- [Convert images to PDF](/pdf/python-net/convert-images-format-to-pdf/) when your source content is image-based instead of HTML markup.
-
 {{% alert color="success" %}}
 **Try to convert HTML to PDF online**
 
@@ -200,3 +194,9 @@ document = ap.Document(path_infile, load_options)
 document.save(path_outfile)
 print(infile + " converted into " + outfile)
 ```
+
+## Related conversions
+
+- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) when you need web-ready output from existing PDF files.
+- [Convert other file formats to PDF](/pdf/python-net/convert-other-files-to-pdf/) for EPUB, XPS, text, and PostScript conversion workflows.
+- [Convert images to PDF](/pdf/python-net/convert-images-format-to-pdf/) when your source content is image-based instead of HTML markup.

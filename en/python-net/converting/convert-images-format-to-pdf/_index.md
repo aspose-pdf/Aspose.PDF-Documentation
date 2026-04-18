@@ -14,12 +14,6 @@ AlternativeHeadline: How to Convert Images to PDF in Python
 Abstract: This article provides a comprehensive guide on converting various image formats to PDF using Python, specifically leveraging the Aspose.PDF library for Python via .NET. The article covers a range of image formats including BMP, CGM, DICOM, EMF, GIF, PNG, SVG, and TIFF. Each section details the steps required to perform the conversion, providing code snippets to illustrate the process. For example, converting BMP to PDF involves creating a new PDF document, defining image placement, inserting the image, and saving the document. Similarly, for formats like CGM, DICOM, and others, specific load options and processing steps are outlined. The article also highlights the advantages of using Aspose.PDF for such tasks, such as its support for different encoding methods and the ability to process both single-frame and multi-frame images. 
 ---
 
-## Related conversions
-
-- [Convert PDF to image formats](/pdf/python-net/convert-pdf-to-images-format/) when you need the reverse workflow.
-- [Convert HTML to PDF](/pdf/python-net/convert-html-to-pdf/) for web content and MHTML sources.
-- [Convert other file formats to PDF](/pdf/python-net/convert-other-files-to-pdf/) for EPUB, XPS, text, and other non-image inputs.
-
 ## Python Images to PDF Conversions
 
 **Aspose.PDF for Python via .NET**  allows you to convert different formats of images to PDF files. Our library demonstrates code snippets for converting the most popular image formats, such as - BMP, CGM, DICOM, EMF, JPG, PNG, SVG and TIFF formats.
@@ -428,3 +422,9 @@ This example shows how to convert JPEG to PDF file using Aspose.PDF for Python v
     document.save(path_outfile)
     print(infile + " converted into " + outfile)
 ```
+
+## Related conversions
+
+- [Convert PDF to image formats](/pdf/python-net/convert-pdf-to-images-format/) when you need the reverse workflow.
+- [Convert HTML to PDF](/pdf/python-net/convert-html-to-pdf/) for web content and MHTML sources.
+- [Convert other file formats to PDF](/pdf/python-net/convert-other-files-to-pdf/) for EPUB, XPS, text, and other non-image inputs.

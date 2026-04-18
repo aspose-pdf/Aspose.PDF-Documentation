@@ -44,12 +44,6 @@ document.save(path_outfile, save_options)
 print(infile + " converted into " + outfile)
 ```
 
-## Related conversions
-
-- [Convert HTML to PDF](/pdf/python-net/convert-html-to-pdf/) when you need the reverse web-to-document workflow.
-- [Convert PDF to Word](/pdf/python-net/convert-pdf-to-word/) if editable document output is more useful than HTML.
-- [Convert PDF to image formats](/pdf/python-net/convert-pdf-to-images-format/) for raster export scenarios.
-
 ### Convert PDF to HTML with saving images in the specified folder
 
 This function converts a PDF file into HTML format using Aspose.PDF for Python via .NET. All extracted images are stored in a specified folder instead of being embedded in the HTML file.
@@ -245,3 +239,8 @@ document.save(path_outfile, save_options)
 print(infile + " converted into " + outfile)
 ```
 
+## Related conversions
+
+- [Convert HTML to PDF](/pdf/python-net/convert-html-to-pdf/) when you need the reverse web-to-document workflow.
+- [Convert PDF to Word](/pdf/python-net/convert-pdf-to-word/) if editable document output is more useful than HTML.
+- [Convert PDF to image formats](/pdf/python-net/convert-pdf-to-images-format/) for raster export scenarios.
