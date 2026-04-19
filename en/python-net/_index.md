@@ -37,7 +37,7 @@ Aspose.PDF is a .NET component built to allow developers to create PDF documents
 - [Advanced operations](/pdf/python-net/advanced-operations/)
 - [Release Notes](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 
-<h2>Aspose.PDF for Python via .NET Resources</h2>
+## Aspose.PDF for Python via .NET Resources
 
 The following are the links to some useful resources you may need to accomplish your tasks.
 
@@ -46,6 +46,6 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.PDF for Python via .NET Product Page](https://products.aspose.com/pdf/python-net/)
 - [Download Aspose.PDF for Python via .NET](https://releases.aspose.com/pdf/pythonnet/)
 - [Install Aspose.PDF for Python via .NET NuGet Package](https://www.nuget.org/packages/Aspose.PDF/)
-- [Aspose.PDF for Python via .NET API Reference Guide](https://reference.aspose.com/pdf/net)!
+- [Aspose.PDF for Python via .NET API Reference Guide](https://reference.aspose.com/pdf/net)
 - [Aspose.PDF for Python via .NET Free Support Forum](https://forum.aspose.com/c/pdf/10)
 - [Aspose.PDF for Python via .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
