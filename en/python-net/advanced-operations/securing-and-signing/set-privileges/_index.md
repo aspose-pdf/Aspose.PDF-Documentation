@@ -62,9 +62,7 @@ Encrypting a PDF ensures only users with valid credentials can open or modify th
 >Key Terms:
 
 - User Password. Required to open the document.
-
 - Owner Password. Required to change permissions or remove encryption.
-
 - KeySize. Use AE_SX128 for maximum security in modern workflows.
 
 The following code snippet shows you how to encrypt PDF files.
