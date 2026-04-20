@@ -35,18 +35,50 @@ Combining multiple PDF documents into a single file:
 
 ```python
 
-    import aspose.pdf as apdf
-    import aspose.pydrawing as asdrw
-    from io import FileIO
-    from os import path
+import sys
+import aspose.pdf as ap
+from os import path
 
-    path_infile1 = path.join(self.dataDir, infile1)
-    path_infile2 = path.join(self.dataDir, infile2)
-    path_outfile = path.join(self.dataDir, outfile)
+sys.path.append(path.join(path.dirname(__file__), '..'))
 
-    document = apdf.Document()
-    document.merge(files=[path_infile1, path_infile2])
-    document.save(path_outfile)
+from config import set_license, initialize_data_dir
+
+def merge_two_documents(infile1, infile2, outfile):
+    """Merge two PDF documents into a single output document.
+
+    This operation opens two input PDF files, appends all pages from the
+    second document to the first, and saves the merged result to the
+    specified output file.
+
+    Args:
+        infile1 (str): Path to the first input PDF document. Pages from
+            this document will appear first in the merged output.
+        infile2 (str): Path to the second input PDF document. All pages
+            from this document are appended to ``infile1``.
+        outfile (str): Path where the merged PDF document will be saved.
+
+    Returns:
+        None
+
+    Examples:
+        Merge two sample documents and save the result::
+
+            from os import path
+            from working_with_documents.example_merge_pdf_document import merge_two_documents
+
+            input_dir = "sample_data/input"
+            output_dir = "sample_data/output"
+
+            infile1 = path.join(input_dir, "sample1.pdf")
+            infile2 = path.join(input_dir, "sample3.pdf")
+            outfile = path.join(output_dir, "sample_merge.pdf")
+
+            merge_two_documents(infile1, infile2, outfile)
+    """
+    document1 = ap.Document(infile1)
+    document2 = ap.Document(infile2)
+    document1.pages.add(document2.pages)
+    document1.save(outfile)
 ```
 
 ## Live Example

@@ -43,14 +43,41 @@ The following code snippet shows how to optimize a PDF document for the web.
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
-    path_infile = path.join(self.dataDir, infile)
-    path_outfile = path.join(self.dataDir, outfile)
+sys.path.append(path.join(path.dirname(__file__), '..'))
 
-    document = apdf.Document(path_infile)
+from config import set_license, initialize_data_dir
+
+def optimize_pdf(infile, outfile):
+    """
+    Optimize and compress a PDF file.
+
+    Args:
+        infile (str): Input PDF filename
+        outfile (str): Output PDF filename
+
+    Returns:
+        None
+
+    Example:
+        optimize_pdf("sample.pdf", "sample_out.pdf")
+
+    Note:
+        Reduces PDF file size using Aspose.PDF optimization.
+    """
+    document = ap.Document(infile)
     document.optimize()
-    document.save(path_outfile)
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
 ```
 
 ## Reduce Size PDF
@@ -65,14 +92,28 @@ The snippet below is an example. Note, though, that this method cannot guarantee
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def reduce_size_pdf(infile, outfile):
     # Open document
-    document = ap.Document(input_pdf)
+    document = ap.Document(infile)
     # Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
     document.optimize_resources()
     # Save updated document
-    document.save(output_pdf)
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
 ```
 
 ## Optimization Strategy Management
@@ -85,10 +126,17 @@ We have two ways to work with images: reduce image quality and/or change their r
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def shrinking_or_compressing_all_images(infile, outfile):
     # Open document
-    document = ap.Document(input_pdf)
+    document = ap.Document(infile)
     # Initialize OptimizationOptions
     optimizeOptions = ap.optimization.OptimizationOptions()
     # Set CompressImages option
@@ -98,7 +146,14 @@ We have two ways to work with images: reduce image quality and/or change their r
     # Optimize PDF document using OptimizationOptions
     document.optimize_resources(optimizeOptions)
     # Save updated document
-    document.save(output_pdf)
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
 ```
 
 ### Removing Unused Objects
@@ -107,18 +162,32 @@ A PDF document sometimes contains the PDF objects that are not referenced from a
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def removing_unused_objects(infile, outfile):
     # Open document
-    document = ap.Document(input_pdf)
-    # Set RemoveUsedObject option
+    document = ap.Document(infile)
+    # Set RemoveUnusedObjects option
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.remove_unused_objects = True
 
     # Optimize PDF document using OptimizationOptions
     document.optimize_resources(optimizeOptions)
     # Save updated document
-    document.save(output_pdf)
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
 ```
 
 ### Removing Unused Streams
@@ -127,17 +196,31 @@ Sometimes the document contains the unused resource streams. These streams are n
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def removing_unused_streams(infile, outfile):
     # Open document
-    document = ap.Document(input_pdf)
-    # Set RemoveUsedStreams option
+    document = ap.Document(infile)
+    # Set RemoveUnusedStreams option
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.remove_unused_streams = True
     # Optimize PDF document using OptimizationOptions
     document.optimize_resources(optimizeOptions)
     # Save updated document
-    document.save(output_pdf)
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
 ```
 
 ### Linking Duplicate Streams
@@ -146,17 +229,31 @@ Some documents can contain several identical resource streams (like images, for 
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def linking_duplicate_streams(infile, outfile):
     # Open document
-    document = ap.Document(input_pdf)
-    # Set LinkDuplicateStreams option
+    document = ap.Document(infile)
+    # Set link_duplicate_streams option
     optimizeOptions = ap.optimization.OptimizationOptions()
-    optimizeOptions.link_duplcate_streams = True
+    optimizeOptions.link_duplicate_streams = True
     # Optimize PDF document using OptimizationOptions
     document.optimize_resources(optimizeOptions)
     # Save updated document
-    document.save(output_pdf)
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
 ```
 
 ### Unembedding Fonts
@@ -165,19 +262,26 @@ If the document uses embedded fonts, it means that all font data is stored in th
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def unembed_fonts(infile, outfile):
     # Open document
-    document = ap.Document(input_pdf)
-    # Set UnembedFonts  option
-    optimizeOptions = ap.optimization.OptimizationOptions()
-    optimizeOptions.unembed_fonts = True
+    document = ap.Document(infile)
+    # Set unembed_fonts option
+    optimize_options = ap.optimization.OptimizationOptions()
+    optimize_options.unembed_fonts = True
     # Optimize PDF document using OptimizationOptions
-    document.optimize_resources(optimizeOptions)
+    document.optimize_resources(optimize_options)
     # Save updated document
-    document.save(output_pdf)
-    file_stats_1 = os.stat(input_pdf)
-    file_stats_2 = os.stat(output_pdf)
+    document.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
     print(
         "Original file size: {}. Reduced file size: {}".format(
             file_stats_1.st_size, file_stats_2.st_size
@@ -195,17 +299,24 @@ Annotations can be deleted when they are unnecessary. When they are needed but d
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def flatten_annotations(infile, outfile):
     # Open document
-    document = ap.Document(input_pdf)
+    document = ap.Document(infile)
     # Flatten annotations
     for page in document.pages:
         for annotation in page.annotations:
             annotation.flatten()
 
     # Save updated document
-    document.save(output_pdf)
+    document.save(outfile)
 ```
 
 ### Removing Form Fields
@@ -214,10 +325,17 @@ If the PDF document contains AcroForms, we can try to reduce the file size by fl
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def flatten_forms(infile, outfile):
     # Load source PDF form
-    doc = ap.Document(input_pdf)
+    doc = ap.Document(infile)
 
     # Flatten Forms
     if len(doc.form.fields) > 0:
@@ -225,7 +343,14 @@ If the PDF document contains AcroForms, we can try to reduce the file size by fl
             item.flatten()
 
     # Save the updated document
-    doc.save(output_pdf)
+    doc.save(outfile)
+    file_stats_1 = stat(infile)
+    file_stats_2 = stat(outfile)
+    print(
+        "Original file size: {}. Reduced file size: {}".format(
+            file_stats_1.st_size, file_stats_2.st_size
+        )
+    )
 ```
 
 ### Convert a PDF from RGB colorspace to grayscale
@@ -234,17 +359,23 @@ A PDF file comprises Text, Image, Attachment, Annotations, Graphs, and other obj
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
 
-    # Load source PDF file
-    document = ap.Document(input_pdf)
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def сonvert_PDF_from_RGB_colorspace_to_grayscale(infile, outfile):
+    document = ap.Document(infile)
     strategy = ap.RgbToDeviceGrayConversionStrategy()
     for page in document.pages:
         # Convert the RGB colorspace image to GrayScale colorspace
         strategy.convert(page)
 
     # Save resultant file
-    document.save(output_pdf)
+    document.save(outfile)
 ```
 
 ### FlateDecode Compression
@@ -253,17 +384,27 @@ Aspose.PDF for Python via .NET provides support of FlateDecode compression for P
 
 ```python
 
-    import aspose.pdf as ap
+import aspose.pdf as ap
+from os import path, stat
+import sys
+
+sys.path.append(path.join(path.dirname(__file__), '..'))
+
+from config import set_license, initialize_data_dir
+
+def using_flatedecode_compression(infile, outfile):
 
     # Open Document
-    doc = ap.Document(input_pdf)
+    doc = ap.Document(infile)
     # Initialize OptimizationOptions
     optimizationOptions = ap.optimization.OptimizationOptions()
     # To optimise image using FlateDecode Compression set optimization options to Flate
-    optimizationOptions.image_compression_options.encoding = ap.optimization.ImageEncoding.FLATE
+    optimizationOptions.image_compression_options.encoding = (
+        ap.optimization.ImageEncoding.FLATE
+    )
     # Set Optimization Options
     doc.optimize_resources(optimizationOptions)
     # Save Document
-    doc.save(output_pdf)
+    doc.save(outfile)
 ```
 

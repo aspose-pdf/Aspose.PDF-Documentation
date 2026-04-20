@@ -24,26 +24,34 @@ The following code snippet shows you how to validate PDF document for PDF/A-1A.
 
 ```python
 
-    import aspose.pdf as ap
+import sys
+from os import path
 
-    # Open document
-    document = ap.Document(input_pdf)
+import aspose.pdf as ap
 
-    # Validate PDF for PDF/A-1a
-    document.validate(output_xml, ap.PdfFormat.PDF_A_1A)
+sys.path.append(path.join(path.dirname(__file__), ".."))
+
+from config import set_license, initialize_data_dir  # noqa: E402
+
+def validate_pdfa_standard_a1a(input_pdf, output_pdf):
+    _validate_pdfa_standard(input_pdf, output_pdf, ap.PdfFormat.PDF_A_1A)
 ```
 
 The following code snippet shows you how to validate PDF document for PDF/A-1b.
 
 ```python
 
-    import aspose.pdf as ap
+import sys
+from os import path
 
-    # Open document
-    document = ap.Document(input_pdf)
+import aspose.pdf as ap
 
-    # Validate PDF for PDF/A-1a
-    document.validate(output_xml, ap.PdfFormat.PDF_A_1B)
+sys.path.append(path.join(path.dirname(__file__), ".."))
+
+from config import set_license, initialize_data_dir  # noqa: E402
+
+def validate_pdfa_standard_a1b(input_pdf, output_pdf):
+    _validate_pdfa_standard(input_pdf, output_pdf, ap.PdfFormat.PDF_A_1B)
 ```
 
 ## Working with TOC
@@ -56,47 +64,37 @@ To add a TOC to an existing PDF file, use the Heading class in the [aspose.pdf](
 
 ```python
 
-    import aspose.pdf as ap
+import sys
+from os import path
 
-    # Load an existing PDF files
-    doc = ap.Document(input_pdf)
+import aspose.pdf as ap
 
-    # Get access to first page of PDF file
-    tocPage = doc.pages.insert(1)
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    # Create object to represent TOC information
-    tocInfo = ap.TocInfo()
+from config import set_license, initialize_data_dir  # noqa: E402
+
+def add_table_of_contents(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.insert(1)
+    toc_info = ap.TocInfo()
     title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
+    toc_info.title = title
+    toc_page.toc_info = toc_info
 
-    # Set the title for TOC
-    tocInfo.title = title
-    tocPage.toc_info = tocInfo
+    titles = ["First page", "Second page"]
+    for index, title_text in enumerate(titles[:2]):
+        heading = ap.Heading(1)
+        segment = ap.text.TextSegment(title_text)
+        heading.toc_page = toc_page
+        heading.segments.append(segment)
+        destination_page = document.pages[index + 2]
+        heading.destination_page = destination_page
+        heading.top = destination_page.rect.height
+        toc_page.paragraphs.add(heading)
 
-    # Create string objects which will be used as TOC elements
-    titles = ["First page", "Second page", "Third page", "Fourth page"]
-    for i in range(0, 2):
-        # Create Heading object
-        heading2 = ap.Heading(1)
-        segment2 = ap.text.TextSegment()
-        heading2.toc_page = tocPage
-        heading2.segments.append(segment2)
-
-        # Specify the destination page for heading object
-        heading2.destination_page = doc.pages[i + 2]
-
-        # Destination page
-        heading2.top = doc.pages[i + 2].rect.height
-
-        # Destination coordinate
-        segment2.text = titles[i]
-
-        # Add heading to page containing TOC
-        tocPage.paragraphs.add(heading2)
-
-    # Save the updated document
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
 
 ### Set different TabLeaderType for different TOC Levels
@@ -105,23 +103,24 @@ Aspose.PDF for Python also allows setting different TabLeaderType for different 
 
 ```python
 
-    import aspose.pdf as ap
+import sys
+from os import path
 
-    doc = ap.Document()
-    tocPage = doc.pages.add()
+import aspose.pdf as ap
+
+sys.path.append(path.join(path.dirname(__file__), ".."))
+
+from config import set_license, initialize_data_dir  # noqa: E402
+
+def set_toc_levels(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.add()
     toc_info = ap.TocInfo()
-
-    # set LeaderType
     toc_info.line_dash = ap.text.TabLeaderType.SOLID
     title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 30
     toc_info.title = title
-
-    # Add the list section to the sections collection of the Pdf document
-    tocPage.toc_info = toc_info
-    # Define the format of the four levels list by setting the left margins
-    # and
-    # text format settings of each level
+    toc_page.toc_info = toc_info
 
     toc_info.format_array_length = 4
     toc_info.format_array[0].margin.left = 0
@@ -140,25 +139,18 @@ Aspose.PDF for Python also allows setting different TabLeaderType for different 
     toc_info.format_array[3].margin.right = 30
     toc_info.format_array[3].text_state.font_style = ap.text.FontStyles.BOLD
 
-    # Create a section in the Pdf document
-    page = doc.pages.add()
+    page = document.pages.add()
+    for level in range(1, 5):
+        heading = ap.Heading(level)
+        heading.is_auto_sequence = True
+        heading.toc_page = toc_page
+        heading.text_state.font = ap.text.FontRepository.find_font("Arial")
+        segment = ap.text.TextSegment(f"Sample Heading{level}")
+        heading.segments.append(segment)
+        heading.is_in_list = True
+        page.paragraphs.add(heading)
 
-    # Add four headings in the section
-    for Level in range(1, 5):
-        heading2 = ap.Heading(Level)
-        segment2 = ap.text.TextSegment()
-        heading2.segments.append(segment2)
-        heading2.is_auto_sequence = True
-        heading2.toc_page = tocPage
-        segment2.text = "Sample Heading" + str(Level)
-        heading2.text_state.font = ap.text.FontRepository.find_font("Arial")
-
-        # Add the heading into Table Of Contents.
-        heading2.is_in_list = True
-        page.paragraphs.add(heading2)
-
-    # save the Pdf
-    doc.save(output_pdf)
+    document.save(output_pdf)
 ```
 
 ### Hide Page Numbers in TOC
@@ -167,21 +159,26 @@ In case if you do not want to display page numbers, along with the headings in T
 
 ```python
 
-    import aspose.pdf as ap
+import sys
+from os import path
 
-    doc = ap.Document()
-    toc_page = doc.pages.add()
+import aspose.pdf as ap
+
+sys.path.append(path.join(path.dirname(__file__), ".."))
+
+from config import set_license, initialize_data_dir  # noqa: E402
+
+def hide_page_numbers_in_toc(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.add()
     toc_info = ap.TocInfo()
     title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
     toc_info.title = title
-    # Add the list section to the sections collection of the Pdf document
-    toc_page.toc_info = toc_info
-    # Define the format of the four levels list by setting the left margins and
-    # text format settings of each level
-
     toc_info.is_show_page_numbers = False
+    toc_page.toc_info = toc_info
+
     toc_info.format_array_length = 4
     toc_info.format_array[0].margin.right = 0
     toc_info.format_array[0].text_state.font_style = ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
@@ -190,19 +187,18 @@ In case if you do not want to display page numbers, along with the headings in T
     toc_info.format_array[1].text_state.font_size = 10
     toc_info.format_array[2].text_state.font_style = ap.text.FontStyles.BOLD
     toc_info.format_array[3].text_state.font_style = ap.text.FontStyles.BOLD
-    page = doc.pages.add()
-    # Add four headings in the section
-    for Level in range(1, 5):
-        heading2 = ap.Heading(Level)
-        segment2 = ap.text.TextSegment()
-        heading2.toc_page = toc_page
-        heading2.segments.append(segment2)
-        heading2.is_auto_sequence = True
-        segment2.text = "this is heading of level " + str(Level)
-        heading2.is_in_list = True
-        page.paragraphs.add(heading2)
-    doc.save(output_pdf)
 
+    page = document.pages.add()
+    for level in range(1, 2):
+        heading = ap.Heading(level)
+        heading.toc_page = toc_page
+        heading.is_auto_sequence = True
+        heading.is_in_list = True
+        segment = ap.text.TextSegment(f"this is heading of level {level}")
+        heading.segments.append(segment)
+        page.paragraphs.add(heading)
+
+    document.save(output_pdf)
 ```
 
 ### Customize Page Numbers while adding TOC
@@ -211,39 +207,36 @@ It is common to customize the page numbering in the TOC while adding TOC in a PD
 
 ```python
 
-    import aspose.pdf as ap
+import sys
+from os import path
 
-    # Load an existing PDF files
-    doc = ap.Document(input_pdf)
-    # Get access to first page of PDF file
-    toc_page = doc.pages.insert(1)
-    # Create object to represent TOC information
+import aspose.pdf as ap
+
+sys.path.append(path.join(path.dirname(__file__), ".."))
+
+from config import set_license, initialize_data_dir  # noqa: E402
+
+def customize_page_numbers_in_toc(input_pdf, output_pdf):  
+    document = ap.Document(input_pdf)
+    toc_page = document.pages.insert(1)
     toc_info = ap.TocInfo()
     title = ap.text.TextFragment("Table Of Contents")
     title.text_state.font_size = 20
     title.text_state.font_style = ap.text.FontStyles.BOLD
-    # Set the title for TOC
     toc_info.title = title
     toc_info.page_numbers_prefix = "P"
     toc_page.toc_info = toc_info
-    for i in range(len(doc.pages)):
-        # Create Heading object
-        heading2 = ap.Heading(1)
-        segment2 = ap.text.TextSegment()
-        heading2.toc_page = toc_page
-        heading2.segments.append(segment2)
-        # Specify the destination page for heading object
-        heading2.destination_page = doc.pages[i + 1]
-        # Destination page
-        heading2.top = doc.pages[i + 1].rect.height
-        # Destination coordinate
-        segment2.text = "Page " + str(i)
-        # Add heading to page containing TOC
-        toc_page.paragraphs.add(heading2)
 
-    # Save the updated document
-    doc.save(output_pdf)
+    for index, page in enumerate(document.pages, start=1):
+        heading = ap.Heading(1)
+        heading.toc_page = toc_page
+        heading.destination_page = page
+        heading.top = page.rect.height
+        segment = ap.text.TextSegment(f"Page {index}")
+        heading.segments.append(segment)
+        toc_page.paragraphs.add(heading)
 
+    document.save(output_pdf)
 ```
 
 ## How to set PDF expiry date
@@ -252,28 +245,30 @@ We apply access privileges on PDF files so that a certain group of users can acc
 
 ```python
 
-    import aspose.pdf as ap
+import sys
+from os import path
 
-    # Instantiate Document object
-    doc = ap.Document()
-    # Add page to pages collection of PDF file
-    doc.pages.add()
-    # Add text fragment to paragraphs collection of page object
-    doc.pages[1].paragraphs.add(ap.text.TextFragment("Hello World..."))
-    # Create JavaScript object to set PDF expiry date
-    javaScript = ap.annotations.JavascriptAction(
+import aspose.pdf as ap
+
+sys.path.append(path.join(path.dirname(__file__), ".."))
+
+from config import set_license, initialize_data_dir  # noqa: E402
+
+def set_pdf_expiry_date(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    document.pages.add()
+    document.pages[1].paragraphs.add(ap.text.TextFragment("Hello World..."))
+    script = ap.annotations.JavascriptAction(
         "var year=2017;"
-        + "var month=5;"
-        + "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());"
-        + "expiry = new Date(year, month);"
-        + "if (today.getTime() > expiry.getTime())"
-        + "app.alert('The file is expired. You need a new one.');"
+        "var month=5;"
+        "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());"
+        "expiry = new Date(year, month);"
+        "if (today.getTime() > expiry.getTime())"
+        "app.alert('The file is expired. You need a new one.');"
     )
-    # Set JavaScript as PDF open action
-    doc.open_action = javaScript
+    document.open_action = script
+    document.save(output_pdf)
 
-    # Save PDF Document
-    doc.save(output_pdf)
 ```
 
 ## Flatten Fillable PDF in Python
@@ -283,17 +278,20 @@ Aspose.PDF provides the function to flatten your PDF in Python with just few lin
 
 ```python
 
-    import aspose.pdf as ap
+import sys
+from os import path
 
-    # Load source PDF form
-    doc = ap.Document(input_pdf)
+import aspose.pdf as ap
 
-    # Flatten Flatten Fillable PDF
-    if len(doc.form.fields) > 0:
-        for item in doc.form.fields:
-            item.flatten()
+sys.path.append(path.join(path.dirname(__file__), ".."))
 
-    # Save the updated document
-    doc.save(output_pdf)
+from config import set_license, initialize_data_dir  # noqa: E402
+
+def flatten_fillable_pdf(input_pdf, output_pdf):
+    document = ap.Document(input_pdf)
+    if document.form and document.form.fields:
+        for field in document.form.fields:
+            field.flatten()
+    document.save(output_pdf)
 ```
 
