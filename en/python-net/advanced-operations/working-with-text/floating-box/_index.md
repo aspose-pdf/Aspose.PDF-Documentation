@@ -1,17 +1,17 @@
 ---
-title: Using FloatingBox for text generation with Python
+title: Use FloatingBox for PDF Text Layout in Python
 linktitle: Using FloatingBox
 type: docs
 weight: 30
 url: /python-net/floating-box/
-description: This page explains how to format text inside floating box. 
-lastmod: "2025-11-13"
+description: Learn how to use FloatingBox for text layout and styled content containers in PDF documents in Python.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: The FloatingBox tool for text generation
-Abstract: This article provides a comprehensive guide to using the FloatingBox tool in Aspose.PDF for Python, which allows developers to place text and other content in movable, styled containers on PDF pages. It covers both basic and advanced usage, demonstrating how to create floating boxes, apply borders and background colors, control multi-column layouts, manage paragraph positioning, and align boxes vertically and horizontally. The article also highlights key features such as text clipping, repeated content across pages, absolute positioning, and enhanced layout control, enabling precise customization of PDF content. Through practical code examples, readers learn how to create visually appealing and well-structured PDFs that leverage the full capabilities of the FloatingBox container.      
+AlternativeHeadline: Create styled floating text containers in PDF files with Python
+Abstract: This article explains how to use FloatingBox in Aspose.PDF for Python via .NET. Learn how to place text and other content in styled floating containers, control layout, borders, alignment, and clipping, and build more structured PDF page designs in Python.
 ---
 
 ## Basics of using the FloatingBox tool
@@ -28,13 +28,13 @@ The [`FloatingBox`](https://reference.aspose.com/pdf/python-net/aspose.pdf/float
 1. Save the final PDF document using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def create_and_add_floating_box(outfile):
     """
@@ -102,13 +102,13 @@ If we set this property to `True` the text will reflow to subsequent pages in th
 * `column_count` is a number of columns.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def multi_column_layout(outfile):
     """
@@ -184,13 +184,13 @@ We used the additional library LoremNET in the above example and created 20 para
 We will do the same with the following example as the previous one. The difference is that we created 3 paragraphs. We can force FloatingBox to render each paragraph in the new column. To do that we need to set `is_first_paragraph_in_column` when we adding text to the FloatingBox object.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def multi_column_layout_2(outfile):
     """
@@ -270,13 +270,13 @@ A `FloatingBox` is a container for text or other elements, and by assigning a [`
 This code snippet shows how to create a simple light green text box with sample content.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def background_support(outfile):
     """
@@ -333,13 +333,13 @@ The location is determined by previously placed elements; adding an element affe
 The location is specified by the `Left` and `Top` values; it does not depend on previous elements and does not affect the location of subsequent ones.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def offset_support(outfile):
     """
@@ -397,13 +397,13 @@ Align `FloatingBox` elements within a PDF page using different [`VerticalAlignme
 1. Save the Document.
 
 ```python
-
 import math
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def align_text_to_float(outfile):
     """
@@ -469,3 +469,10 @@ def align_text_to_float(outfile):
         # Save the document
         document.save(outfile)
 ```
+
+## Related Text Topics
+
+- [Work with text in PDF using Python](/pdf/python-net/working-with-text/)
+- [Adding text to PDF](/pdf/python-net/add-text-to-pdf-file/)
+- [Format PDF text in Python](/pdf/python-net/text-formatting-inside-pdf/)
+- [Add tooltips to PDF text in Python](/pdf/python-net/pdf-tooltip/)

@@ -1,5 +1,5 @@
 ---
-title: Add, Delete and Get Annotation using Python
+title: Add, Delete, and Get PDF Annotations in Python
 linktitle: Add, Delete and Get Annotation
 type: docs
 weight: 20
@@ -16,6 +16,8 @@ Abstract: Annotations in PDF documents enhance user interaction by allowing the 
 
 Annotations in PDF documents are elements that allow users to allocate content in a certain way in the document. Annotations can be used to add different types of notes, highlight text, draw shapes, attach files, and perform other actions that improve viewing, interactivity, and interaction within a document.
 
+This page groups the main annotation types supported in this part of the documentation so you can quickly jump to the workflow you need.
+
 We have combined the different kinds of annotation available for the Aspose.PDF for Python  library into groups:
 
 - [Import and Export Annotations](/pdf/python-net/import-export-annotations/)
@@ -26,4 +28,10 @@ We have combined the different kinds of annotation available for the Aspose.PDF 
 - [Shape Annotations](/pdf/python-net/shape-annotations/)
 - [Text Annotations](/pdf/python-net/text-based-Annotations/)
 - [Watermark Annotations](/pdf/python-net/watermark-annotations/)
+
+## Related Annotation Topics
+
+- [PDF Annotations overview](/pdf/python-net/annotations/) for the parent section and annotation concepts.
+- [PDF Text Annotation](/pdf/python-net/text-annotation/) for note-style and text-based annotation workflows.
+- [PDF Figures Annotation](/pdf/python-net/figures-annotation/) for shape-based annotations such as circles, polygons, and lines.
 

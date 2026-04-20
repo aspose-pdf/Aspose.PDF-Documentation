@@ -1,11 +1,11 @@
 ---
-title: Adding Watermark to PDF using Python
+title: Add Watermarks to PDF in Python
 linktitle: Adding Watermark
 type: docs
 weight: 30
 url: /python-net/add-watermarks/
-description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the Python.
-lastmod: "2025-11-21"
+description: Learn how to add watermark artifacts to PDF files in Python using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,6 +13,8 @@ TechArticle: true
 AlternativeHeadline: How to add watermark to PDF with Python
 Abstract: The article discusses the use of Aspose.PDF for Python via .NET to add watermarks to PDF documents through the management of artifacts. It introduces the key classes for handling artifacts - `Artifact` and `ArtifactCollection`, and describes how to access them via the `Artifacts` property of the `Page` class. The article details the properties of the `Artifact` class, including attributes such as `contents`, `form`, `image`, `text`, `rectangle`, `rotation`, and `opacity`, which enable comprehensive manipulation of artifacts within PDF files. Additionally, a practical example is provided, demonstrating how to programmatically add a watermark to the first page of a PDF using Python. The code snippet illustrates the creation and configuration of a `WatermarkArtifact`, setting its text, alignment, rotation, and opacity, before appending it to a PDF document and saving the changes.
 ---
+
+Watermark artifacts are useful for branding, ownership marks, draft labels, and other visual overlays that should remain separate from the main PDF content stream.
 
 ## Programming Samples: How To Add Watermark On PDF Files
 
@@ -26,8 +28,8 @@ Add a watermark artifact to a PDF [`Document`](https://reference.aspose.com/pdf/
 1. Save the updated [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
 
 ```python
-
 import aspose.pdf as ap
+
 
 def add_watermark(input_pdf, output_pdf):
     # Load the existing PDF document
@@ -58,4 +60,11 @@ def add_watermark(input_pdf, output_pdf):
     # Save the updated PDF
     document.save(output_pdf)
 ```
+
+## Related Artifact Topics
+
+- [Work with PDF artifacts in Python](/pdf/python-net/artifacts/)
+- [Add PDF backgrounds in Python](/pdf/python-net/add-backgrounds/)
+- [Add Bates numbering to PDF in Python](/pdf/python-net/add-bates-numbering/)
+- [Count artifact types in PDF files](/pdf/python-net/counting-artifacts/)
 

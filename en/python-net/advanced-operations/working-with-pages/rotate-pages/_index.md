@@ -1,11 +1,11 @@
 ---
-title: Rotating PDF Pages Using Python
+title: Rotate PDF Pages in Python
 linktitle: Rotating PDF Pages
 type: docs
 weight: 110
 url: /python-net/rotate-pages/
-description: This topic describes how to rotate the page orientation in an existing PDF file programmatically with Python.
-lastmod: "2025-11-16"
+description: Learn how to rotate PDF pages and change page orientation in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,18 +16,20 @@ Abstract: This article provides a guide on how to programmatically update or cha
 
 This topic describes how to update or change the page orientation of pages in an existing PDF file programmatically with Python.
 
+Use this page when you need to switch pages between portrait and landscape orientation or apply rotation angles to existing PDF content.
+
 ## Change Page Orientation
 
 This function rotates every page of a PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 90 degrees clockwise using Aspose.PDF for Python.
 It is useful for correcting page orientation issues, such as scanned documents that are sideways. The original PDF remains unchanged, and the rotated version is saved as a new file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def rotate_page(infile, outfile):
     """
@@ -63,3 +65,9 @@ def rotate_page(infile, outfile):
     document.save(outfile)
 ```
 
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Change PDF page size in Python](/pdf/python-net/change-page-size/)
+- [Crop PDF pages in Python](/pdf/python-net/crop-pages/)
+- [Get and set PDF page properties in Python](/pdf/python-net/get-and-set-page-properties/)

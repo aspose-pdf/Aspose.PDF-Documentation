@@ -1,11 +1,11 @@
 ---
-title: Cropping PDF Pages using Python
+title: Crop PDF Pages in Python
 linktitle: Cropping PDF Pages
 type: docs
 weight: 70
 url: /python-net/crop-pages/
-description: You may change page properties, such as the width, height, Bleed-, Crop- and Trimbox using Aspose.PDF for Python via .NET.
-lastmod: "2025-11-16"
+description: Learn how to crop PDF pages and adjust crop, trim, bleed, and media boxes in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,6 +17,8 @@ Abstract: The article provides an overview of how to access and modify page prop
 ## Get Page Properties
 
 Each page in a PDF file has a number of properties, such as the width, height, bleed-, crop- and trimbox. Aspose.PDF for Python allows you to access these properties.
+
+Use this page when you need to reduce the visible page area, prepare files for print workflows, or inspect page box geometry in PDF documents.
 
 - **media_box**: The media box is the largest page box. It corresponds to the page size (for example A4, A5, US Letter, etc.) selected when the document was printed to PostScript or PDF. In other words, the media box determines the physical size of the media on which the PDF document is displayed or printed.
 - **bleed_box**: If the document has bleed, the PDF will also have a bleed box. Bleed is the amount of color (or artwork) that extends beyond the edge of a page. It is used to make sure that when the document is printed and cut to size ("trimmed"), the ink will go all the way to the edge of the page. Even if the page is mistrimmed - cut slightly off the trim marks - no white edges will appear on the page.
@@ -32,12 +34,12 @@ Crop the first [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/p
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to a new output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def crop_page(input_file_name, output_file_name):
     """
@@ -84,12 +86,12 @@ Crop the first [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/p
 1. Save the modified [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to the specified output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def crop_page_by_content(input_file_name, output_file_name):
     """
@@ -123,3 +125,10 @@ def crop_page_by_content(input_file_name, output_file_name):
         print("No images found on the first page")
     document.save(output_file_name)
 ```
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Change PDF page size in Python](/pdf/python-net/change-page-size/)
+- [Get and set PDF page properties in Python](/pdf/python-net/get-and-set-page-properties/)
+- [Rotate PDF pages in Python](/pdf/python-net/rotate-pages/)
