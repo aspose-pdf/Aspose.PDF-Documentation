@@ -1,11 +1,11 @@
 ---
-title: Add Line Object to PDF file
+title: Add Line Shapes to PDF in Python
 linktitle: Add Line
 type: docs
 weight: 40
 url: /python-net/add-line/
-description: This article explains how to create a line object to your PDF using Aspose.PDF for Python via .NET.
-lastmod: "2025-05-14"
+description: Learn how to draw line shapes and styled lines in PDF files in Python.
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -150,3 +150,9 @@ Please take a look over following code snippet to accomplish this requirement.
 
 ![Drawing Line](draw_line.png)
 
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add curve shapes to PDF in Python](/pdf/python-net/add-curve/)
+- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)
+- [Check shape bounds in PDF graphs with Python](/pdf/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)

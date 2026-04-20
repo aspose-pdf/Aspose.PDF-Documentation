@@ -1,11 +1,11 @@
 ---
-title: Improving of the Text Extraction from Multi‑Column PDFs
+title: Improving Text Extraction from Multi‑Column PDFs
 linktitle: Text Extraction from Multi‑Column PDFs
 type: docs
 weight: 30
 url: /python-net/text-extraction-from-multi-column-pdf/
-description: This section contains articles on Text formatting and scaling using Aspose.PDF in Python.
-lastmod: "2025-11-05"
+description: Learn techniques for improving text extraction from multi-column PDF layouts with Aspose.PDF for Python.
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,18 +13,18 @@ sitemap:
 
 ## Reduce font size manually and then extract
 
-Extraction accuracy in multi-column PDFs is achieved by first reducing the font size of all text fragments before extraction. The process helps prevent overlapping text issues that can occur in tightly formatted or multi-column layouts.
-It helps for extracting text from complex layouts—such as magazines, academic papers, or brochures—where resizing text improves layout clarity and extraction results.
+In some multi-column layouts, reducing the font size of text fragments before extraction can improve reading order and reduce overlap issues. This technique can help with tightly formatted documents such as magazines, research papers, brochures, or reports with dense text columns.
 
 1. Load the PDF.
-1. Reduce font size of existing text fragments, save and reopen document.
-1. Use 'TextAbsorber' to extract text from pages.
-1. Write out the extracted text.
+1. Use [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/) to collect the text fragments.
+1. Reduce the font size of each fragment, then save and reopen the document.
+1. Use [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) to extract the text.
+1. Write the extracted text to an output file.
 
 ```python
-
 import io
 import aspose.pdf as ap
+
 
 def extract_text_reduce_font(infile, outfile, reduce_ratio=0.7):
     """
@@ -50,22 +50,21 @@ def extract_text_reduce_font(infile, outfile, reduce_ratio=0.7):
     extracted_text = text_absorber.text
     with open(outfile, "w", encoding="utf-8") as tw:
         tw.write(extracted_text)
-
 ```
 
 ## Extract text with scale factor
 
-Extract text from PDFs with multi-column layouts by applying a scale factor to the document. Adjusting the scale factor ensures that the text fragments are interpreted correctly, reducing overlap or misalignment during extraction.
-It's useful for PDFs with columns, tables, or dense layouts, where scaling helps maintain proper reading order and structure in the extracted text.
+Another option for multi-column extraction is to configure [TextExtractionOptions](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textextractionoptions/) with a scale factor. Adjusting the scale factor can improve interpretation of tightly packed fragments and help preserve a more accurate reading order in dense layouts, tables, or column-based documents.
 
 1. Load the PDF.
-1. Configure 'TextExtractionOptions.ScaleFactor'.
-1. Use 'TextAbsorber' to extract text from pages.
-1. Write out the extracted text.
+1. Create a [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/).
+1. Configure `TextExtractionOptions.scale_factor`.
+1. Assign the extraction options to the absorber.
+1. Extract the page text and write the result to an output file.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def extract_text_scale_factor(infile, outfile, scale_factor=0.5):
     """
@@ -77,7 +76,9 @@ def extract_text_scale_factor(infile, outfile, scale_factor=0.5):
     """
     doc = ap.Document(infile)
     text_absorber = ap.text.TextAbsorber()
-    ext_opts = ap.text.TextExtractionOptions(ap.text.TextExtractionOptions.TextFormattingMode.PURE)
+    ext_opts = ap.text.TextExtractionOptions(
+        ap.text.TextExtractionOptions.TextFormattingMode.PURE
+    )
     ext_opts.scale_factor = scale_factor
     text_absorber.extraction_options = ext_opts
     doc.pages.accept(text_absorber)

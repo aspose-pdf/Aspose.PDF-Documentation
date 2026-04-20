@@ -1,11 +1,11 @@
 ---
-title: How to Create PDF using Python
+title: Create PDF Files in Python
 linktitle: Create PDF Document
 type: docs
 weight: 10
 url: /python-net/create-pdf-document/
-description: Create and format the PDF Document with Aspose.PDF for Python via .NET.
-lastmod: "2025-02-27"
+description: Learn how to create PDF files and build searchable PDFs in Python using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,6 +15,8 @@ Abstract: Aspose.PDF for Python via .NET is a versatile API designed for develop
 ---
 
 **Aspose.PDF for Python via .NET** is a PDF manipulation API that allows developers to create, load, modify, and convert PDF files directly from Python for .NET applications with just a few lines of code.
+
+Use these examples when you need to generate new PDF files from scratch or convert OCR output into searchable PDF documents in Python.
 
 ## How to Create Simple PDF File
 
@@ -26,6 +28,7 @@ To create a PDF using Python via .NET with Aspose.PDF, you can follow these step
 1. Save the resultant PDF document
 
 ```python
+import aspose.pdf as ap
 
 import sys
 from os import path
@@ -57,34 +60,41 @@ The following is the complete code to accomplish this requirement:
 1. Save the searchable PDF.
 
 ```python
+import aspose.pdf as ap
+import io
 
-    import aspose.pdf as ap
-    import io
-    # Requires: pip install pytesseract
-    # Also ensure the Tesseract OCR engine is installed and available on your system PATH.
-    import pytesseract
-    from pathlib import Path
+# Requires: pip install pytesseract
+# Also ensure the Tesseract OCR engine is installed and available on your system PATH.
+import pytesseract
+from pathlib import Path
 
 
-    # Path to the source PDF
-    input_pdf_path = "input.pdf"
-    # Path for the temporary image               
-    temp_image_path = "temp_image.png" 
-    # Path for the searchable PDF        
-    output_pdf_path = "output_searchable.pdf"  
-    page_number = 1
-    image_stream = io.FileIO(temp_image_path, 'w')
-    try:
-        document = ap.Document(input_pdf_path)
-        resolution = ap.devices.Resolution(300)
-        png_device = ap.devices.PngDevice(resolution)
-        png_device.process(document.pages[page_number], image_stream)
-        image_stream.close()
-        pdf = pytesseract.image_to_pdf_or_hocr(temp_image_path, extension='pdf')
-        document = ap.Document(io.BytesIO(pdf))
-        document.save(output_pdf_path)
-    finally:
-        image_file = Path(temp_image_path)
-        image_file.unlink(missing_ok=True)
+# Path to the source PDF
+input_pdf_path = "input.pdf"
+# Path for the temporary image
+temp_image_path = "temp_image.png"
+# Path for the searchable PDF
+output_pdf_path = "output_searchable.pdf"
+page_number = 1
+image_stream = io.FileIO(temp_image_path, "w")
+try:
+    document = ap.Document(input_pdf_path)
+    resolution = ap.devices.Resolution(300)
+    png_device = ap.devices.PngDevice(resolution)
+    png_device.process(document.pages[page_number], image_stream)
+    image_stream.close()
+    pdf = pytesseract.image_to_pdf_or_hocr(temp_image_path, extension="pdf")
+    document = ap.Document(io.BytesIO(pdf))
+    document.save(output_pdf_path)
+finally:
+    image_file = Path(temp_image_path)
+    image_file.unlink(missing_ok=True)
 ```
+
+## Related Document Topics
+
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Format PDF documents in Python](/pdf/python-net/formatting-pdf-document/)
+- [Manipulate PDF documents in Python](/pdf/python-net/manipulate-pdf-document/)
+- [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)
 
