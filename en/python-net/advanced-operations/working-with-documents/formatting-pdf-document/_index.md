@@ -43,10 +43,6 @@ import sys
 from os import path
 import aspose.pdf as ap
 
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
-
 def get_document_window(input_pdf, output_pdf):
     """Print document window metadata for inspection."""
     document = ap.Document(input_pdf)
@@ -93,10 +89,6 @@ import sys
 from os import path
 import aspose.pdf as ap
 
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
-
 def set_document_window(input_pdf, output_pdf):
     """Set document window properties and save the result."""
     document = ap.Document(input_pdf)
@@ -125,10 +117,6 @@ import aspose.pdf as ap
 import sys
 from os import path
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def embedded_fonts(input_pdf, output_pdf):
     """Ensure fonts in an existing PDF are embedded."""
@@ -159,10 +147,6 @@ import sys
 from os import path
 import aspose.pdf as ap
 
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
-
 def embedded_fonts_in_new_document(input_pdf, output_pdf):
     """Embed fonts while generating a document from scratch."""
     document = ap.Document()
@@ -191,10 +175,6 @@ import sys
 from os import path
 import aspose.pdf as ap
 
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
-
 def set_default_font(input_pdf, output_pdf):
     """Assign a fallback font when saving a PDF."""
     document = ap.Document(input_pdf)
@@ -215,10 +195,6 @@ import sys
 from os import path
 import aspose.pdf as ap
 
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
-
 def get_all_fonts(input_pdf, output_pdf):
     """Print all fonts referenced by a document."""
     document = ap.Document(input_pdf)
@@ -236,10 +212,6 @@ import aspose.pdf as ap
 import sys
 from os import path
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def improve_fonts_embedding(input_pdf, output_pdf):
     """Apply different font subset strategies to reduce file size."""
@@ -268,10 +240,6 @@ import sys
 from os import path
 import aspose.pdf as ap
 
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
-
 def set_zoom_factor(input_pdf, output_pdf):
     """Set an initial zoom level via document open action."""
     document = ap.Document(input_pdf)
@@ -291,10 +259,6 @@ import aspose.pdf as ap
 import sys
 from os import path
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def get_zoom_factor(input_pdf, output_pdf):
     """Print the zoom level configured in the document open action."""
