@@ -18,10 +18,12 @@ Annotations in PDF documents are elements that allow users to allocate content i
 
 We have combined the different kinds of annotation available for the Aspose.PDF for Python  library into groups:
 
-- [PDF Text Annotation](/pdf/python-net/text-annotation/)
-- [PDF Highlights Annotation](/pdf/python-net/highlights-annotation/)
-- [PDF Figures Annotation](/pdf/python-net/figures-annotation/)
-- [PDF sticky Annotations](/pdf/python-net/sticky-annotations/)
-- [Link Annotations](/pdf/python-net/link-annotations/)
-- [Extra Annotations](/pdf/python-net/extra-annotations/)
+- [Import and Export Annotations](/pdf/python-net/import-export-annotations/)
+- [Interactive Annotations](/pdf/python-net/interactive-annotations/)
+- [Markup Annotations](/pdf/python-net/markup-annotations/)
+- [Media Annotations](/pdf/python-net/media-annotations/)
+- [Security Annotations](/pdf/python-net/security-annotations/)
+- [Shape Annotations](/pdf/python-net/shape-annotations/)
+- [Text Annotations](/pdf/python-net/text-based-Annotations/)
+- [Watermark Annotations](/pdf/python-net/watermark-annotations/)
 
