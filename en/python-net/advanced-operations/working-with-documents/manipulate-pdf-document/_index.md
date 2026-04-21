@@ -25,16 +25,10 @@ To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Docu
 The following code snippet shows you how to validate PDF document for PDF/A-1A.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def validate_pdfa_standard_a1a(input_pdf, output_pdf):
     _validate_pdfa_standard(input_pdf, output_pdf, ap.PdfFormat.PDF_A_1A)
@@ -43,16 +37,10 @@ def validate_pdfa_standard_a1a(input_pdf, output_pdf):
 The following code snippet shows you how to validate PDF document for PDF/A-1b.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def validate_pdfa_standard_a1b(input_pdf, output_pdf):
     _validate_pdfa_standard(input_pdf, output_pdf, ap.PdfFormat.PDF_A_1B)
@@ -67,16 +55,10 @@ TOC in PDF stands for "Table of Contents." It is a feature that allows users to 
 To add a TOC to an existing PDF file, use the Heading class in the [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) namespace. The [aspose.pdf](https://reference.aspose.com/pdf/python-net/aspose.pdf/) namespace can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace. The following code snippet shows how to create a table of contents inside an existing PDF file using Python via .NET.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def add_table_of_contents(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
@@ -107,16 +89,10 @@ def add_table_of_contents(input_pdf, output_pdf):
 Aspose.PDF for Python also allows setting different TabLeaderType for different TOC levels. You need to set [line_dash](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) property of [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/).
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def set_toc_levels(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
@@ -128,8 +104,22 @@ def set_toc_levels(input_pdf, output_pdf):
     toc_info.title = title
     toc_page.toc_info = toc_info
 
-# Create a section in the Pdf document
-page = doc.pages.add()
+    toc_info.format_array_length = 4
+    toc_info.format_array[0].margin.left = 0
+    toc_info.format_array[0].margin.right = 30
+    toc_info.format_array[0].line_dash = ap.text.TabLeaderType.DOT
+    toc_info.format_array[0].text_state.font_style = ap.text.FontStyles.BOLD | ap.text.FontStyles.ITALIC
+    toc_info.format_array[1].margin.left = 10
+    toc_info.format_array[1].margin.right = 30
+    toc_info.format_array[1].line_dash = 3
+    toc_info.format_array[1].text_state.font_size = 10
+    toc_info.format_array[2].margin.left = 20
+    toc_info.format_array[2].margin.right = 30
+    toc_info.format_array[2].text_state.font_style = ap.text.FontStyles.BOLD
+    toc_info.format_array[3].line_dash = ap.text.TabLeaderType.SOLID
+    toc_info.format_array[3].margin.left = 30
+    toc_info.format_array[3].margin.right = 30
+    toc_info.format_array[3].text_state.font_style = ap.text.FontStyles.BOLD
 
     page = document.pages.add()
     for level in range(1, 5):
@@ -150,16 +140,10 @@ page = doc.pages.add()
 In case if you do not want to display page numbers, along with the headings in TOC, you can use [is_show_page_numbers](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) property of [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) Class as false. Please check following code snippet to hide page numbers in the table of contents:
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def hide_page_numbers_in_toc(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
@@ -199,16 +183,10 @@ def hide_page_numbers_in_toc(input_pdf, output_pdf):
 It is common to customize the page numbering in the TOC while adding TOC in a PDF document. For example, we may need to add some prefix before page number like P1, P2, P3 and so on. In such a case, Aspose.PDF for Python provides [page_numbers_prefix](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/#properties) property of [TocInfo](https://reference.aspose.com/pdf/python-net/aspose.pdf/tocinfo/) class that can be used to customize page numbers as shown in the following code sample.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def customize_page_numbers_in_toc(input_pdf, output_pdf):  
     document = ap.Document(input_pdf)
@@ -238,16 +216,10 @@ def customize_page_numbers_in_toc(input_pdf, output_pdf):
 We apply access privileges on PDF files so that a certain group of users can access particular features/objects of PDF documents. In order to restrict the PDF file access, we usually apply encryption and we may have a requirement to set PDF file expiration, so that the user accessing/viewing the document gets a valid prompt regarding PDF file expiry.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def set_pdf_expiry_date(input_pdf, output_pdf):
     document = ap.Document(input_pdf)
@@ -263,7 +235,6 @@ def set_pdf_expiry_date(input_pdf, output_pdf):
     )
     document.open_action = script
     document.save(output_pdf)
-
 ```
 
 ## Flatten Fillable PDF in Python
@@ -272,16 +243,10 @@ PDF documents often include forms with interactive fillable widgets such as radi
 Aspose.PDF provides the function to flatten your PDF in Python with just few line of code:
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 
 import aspose.pdf as ap
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir  # noqa: E402
 
 def flatten_fillable_pdf(input_pdf, output_pdf):
     document = ap.Document(input_pdf)

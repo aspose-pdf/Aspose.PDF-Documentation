@@ -39,10 +39,6 @@ import sys
 import aspose.pdf as ap
 from os import path
 
-sys.path.append(path.join(path.dirname(__file__), '..'))
-
-from config import set_license, initialize_data_dir
-
 def merge_two_documents(infile1, infile2, outfile):
     """Merge two PDF documents into a single output document.
 

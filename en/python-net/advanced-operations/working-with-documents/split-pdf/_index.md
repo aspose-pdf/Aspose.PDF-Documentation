@@ -35,14 +35,9 @@ This topic shows how to split PDF pages into individual PDF files in your Python
 The following Python code snippet shows you how to split PDF pages into individual PDF files.
 
 ```python
-
 import sys
 import aspose.pdf as ap
 from os import path
-
-sys.path.append(path.join(path.dirname(__file__), '..'))
-
-from config import set_license, initialize_data_dir
 
 def split_documents(infile, outdir):
     """Split a multi-page PDF document into separate single-page documents.

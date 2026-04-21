@@ -36,15 +36,10 @@ This example shows how to create and add multiple layers  to a PDF document usin
 The resulting PDF will contain three separate layers: a red line, a green line, and a blue line. Each can be toggled on or off in PDF readers that support layered content.
 
 ```python
-
 from io import FileIO
 import aspose.pdf as ap
 import sys
 from os import path
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir
 
 def add_layers(outfile):
     """
@@ -122,15 +117,10 @@ Available methods and property:
 If the PDF contains layers, the first layer will be locked, ensuring its visibility state cannot be changed by the user. If no layers are found, a message is printed instead.
 
 ```python
-
 from io import FileIO
 import aspose.pdf as ap
 import sys
 from os import path
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir
 
 def lock_layer(infile, outfile):
     """
@@ -174,15 +164,10 @@ To create a new PDF from a layer, the following code snippet can be used:
 1. Iterate and Save Each Layer.
 
 ```python
-
 from io import FileIO
 import aspose.pdf as ap
 import sys
 from os import path
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir
 
 def extract_layers(infile, outfile):
     """
@@ -220,15 +205,10 @@ def extract_layers(infile, outfile):
 It is possible to extract PDF layer elements and save them into a new PDF file stream:
 
 ```python
-
 from io import FileIO
 import aspose.pdf as ap
 import sys
 from os import path
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir
 
 def extract_layers_stream(infile, outfile):
     """
@@ -273,15 +253,10 @@ This script uses Aspose.PDF for Python via .NET to flatten all layers on the fir
 1. Save the Modified Document.
 
 ```python
-
 from io import FileIO
 import aspose.pdf as ap
 import sys
 from os import path
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir
 
 def flatten_layers(infile, outfile):
     """
@@ -327,15 +302,10 @@ This code snippet uses Aspose.PDF to merge all layers on the first page of a PDF
 1. Save the Document
 
 ```python
-
 from io import FileIO
 import aspose.pdf as ap
 import sys
 from os import path
-
-sys.path.append(path.join(path.dirname(__file__), ".."))
-
-from config import set_license, initialize_data_dir
 
 def merge_layers(infile, outfile):
     """
