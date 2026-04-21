@@ -20,5 +20,5 @@ Abstract: The article provides an overview of basic operations for handling PDF 
 - [Open PDF Document](/pdf/python-net/open-pdf-document/) - this article describes a various ways how to open a PDF document in  Python application.
 - [Save PDF Document](/pdf/python-net/save-pdf-document/) - this article describes a various ways how to save a PDF document.
 - [Merge PDF](/pdf/python-net/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using Python.
-- [Split PDF](/pdf/python-net/split-document/) - split PDF pages into individual PDF files in your Python applications.
-- [Set Privileges, Encrypt and Decrypt PDF File](/pdf/python-net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Split PDF](/pdf/python-net/split-pdf-document/) - split PDF pages into individual PDF files in your Python applications.
+- [Set Privileges, Encrypt and Decrypt PDF File](/pdf/python-net/set-privileges-encrypt-and-decrypt-pdf-file/) - set document privileges and encrypt or decrypt PDF files using Python.

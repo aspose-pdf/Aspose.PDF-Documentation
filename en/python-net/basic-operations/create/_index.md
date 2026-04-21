@@ -31,5 +31,6 @@ page = document.pages.add()
 # Add text to new page
 page.paragraphs.add(ap.text.TextFragment("Hello World!"))
 # Save updated PDF
+output_pdf = "output.pdf"
 document.save(output_pdf)
 ```
