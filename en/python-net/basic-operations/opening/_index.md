@@ -36,8 +36,6 @@ def open_document_from_file(infile):
 ```python
 import aspose.pdf as ap
 import io
-import sys
-from os import path
 
 def open_document_from_stream(infile):
     with io.FileIO(infile, "r") as stream:
