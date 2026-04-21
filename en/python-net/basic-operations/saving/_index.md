@@ -20,11 +20,15 @@ You can save the created or manipulated PDF document to file system using [save(
 
 ```python
 import aspose.pdf as ap
+import io
+import sys
+from os import path
 
-document = ap.Document(input_pdf)
-# make some manipation, i.g add new empty page
-document.pages.add()
-document.save(output_pdf)
+def save_document_to_file(infile, outfile):
+    document = ap.Document(infile)
+    # make some manipulation, e.g. add new empty page
+    document.pages.add()
+    document.save(outfile)
 ```
 
 ## Save PDF document to stream
@@ -33,11 +37,16 @@ You can also save the created or manipulated PDF document to stream by using ove
 
 ```python
 import aspose.pdf as ap
+import io
+import sys
+from os import path
 
-document = ap.Document(input_pdf)
-# make some manipation, i.g add new empty page
-document.pages.add()
-document.save(io.FileIO(output_pdf, "w"))
+def save_document_to_stream(infile, outfile):
+    document = ap.Document(infile)
+    # make some manipulation, e.g. add new empty page
+    document.pages.add()
+    with io.FileIO(outfile, 'w') as stream:
+        document.save(stream)
 ```
 
 ## Save PDF/A or PDF/X format
@@ -57,3 +66,4 @@ document.pages.add()
 document.convert(output_log, ap.PdfFormat.PDF_X_3, ap.ConvertErrorAction.DELETE)
 document.save(output_pdf)
 ```
+
