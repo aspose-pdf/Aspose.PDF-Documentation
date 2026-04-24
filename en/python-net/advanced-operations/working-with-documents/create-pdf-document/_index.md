@@ -28,16 +28,16 @@ To create a PDF using Python via .NET with Aspose.PDF, you can follow these step
 1. Save the resultant PDF document
 
 ```python
+import sys
+from os import path
 import aspose.pdf as ap
 
-# Initialize document object
-document = ap.Document()
-# Add page
-page = document.pages.add()
-# Add text to new page
-page.paragraphs.add(ap.text.TextFragment("Hello World!"))
-# Save updated PDF
-document.save(output_pdf)
+def create_new_document(input_pdf, output_pdf):
+    """Create a simple PDF with a single “Hello World!” page."""
+    document = ap.Document()
+    page = document.pages.add()
+    page.paragraphs.add(ap.text.TextFragment("Hello World!"))
+    document.save(output_pdf)
 ```
 
 ## How to Create a Searchable PDF document

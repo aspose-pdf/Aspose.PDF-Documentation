@@ -49,7 +49,7 @@ def save_document_to_stream(infile, outfile):
         document.save(stream)
 ```
 
-## Save PDF/A or PDF/X format
+## Save document as PDF/X-3 standard
 
 PDF/A is an ISO-standardized version of the Portable Document Format (PDF) for use in archiving and long-term preservation of electronic documents.
 PDF/A differs from PDF in that it prohibits features not suitable for long-term archiving, such as font linking (as opposed to font embedding) and encryption. ISO requirements for PDF/A viewers include color management guidelines, embedded font support, and a user interface for reading embedded annotations.
@@ -60,10 +60,14 @@ In both cases, the [save()](https://reference.aspose.com/pdf/python-net/aspose.p
 
 ```python
 import aspose.pdf as ap
+import io
+import sys
+from os import path
 
-document = ap.Document(input_pdf)
-document.pages.add()
-document.convert(output_log, ap.PdfFormat.PDF_X_3, ap.ConvertErrorAction.DELETE)
-document.save(output_pdf)
+def save_document_as_standard(infile, outfile, logfile):
+    document = ap.Document(infile)
+    document.pages.add()
+    document.convert(logfile, ap.PdfFormat.PDF_X_3, ap.ConvertErrorAction.DELETE)
+    document.save(outfile)
 ```
 
