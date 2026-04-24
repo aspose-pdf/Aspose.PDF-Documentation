@@ -30,6 +30,9 @@ document = ap.Document()
 page = document.pages.add()
 # Add text to new page
 page.paragraphs.add(ap.text.TextFragment("Hello World!"))
+# Define output file path
+output_pdf = "output.pdf"
 # Save updated PDF
+output_pdf = "output.pdf"
 document.save(output_pdf)
 ```

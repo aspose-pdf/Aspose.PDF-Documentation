@@ -20,9 +20,6 @@ You can save the created or manipulated PDF document to file system using [save(
 
 ```python
 import aspose.pdf as ap
-import io
-import sys
-from os import path
 
 def save_document_to_file(infile, outfile):
     document = ap.Document(infile)
@@ -38,8 +35,6 @@ You can also save the created or manipulated PDF document to stream by using ove
 ```python
 import aspose.pdf as ap
 import io
-import sys
-from os import path
 
 def save_document_to_stream(infile, outfile):
     document = ap.Document(infile)
@@ -70,4 +65,3 @@ def save_document_as_standard(infile, outfile, logfile):
     document.convert(logfile, ap.PdfFormat.PDF_X_3, ap.ConvertErrorAction.DELETE)
     document.save(outfile)
 ```
-

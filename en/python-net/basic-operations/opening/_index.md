@@ -20,9 +20,6 @@ There are several ways to open a document. The easiest is to specify a file name
 
 ```python
 import aspose.pdf as ap
-import io
-import sys
-from os import path
 
 def open_document_from_file(infile):
 
@@ -36,8 +33,6 @@ def open_document_from_file(infile):
 ```python
 import aspose.pdf as ap
 import io
-import sys
-from os import path
 
 def open_document_from_stream(infile):
     with io.FileIO(infile, "r") as stream:
@@ -50,9 +45,6 @@ def open_document_from_stream(infile):
 
 ```python
 import aspose.pdf as ap
-import io
-import sys
-from os import path
 
 def open_document_encrypted(infile):
     password = "P@ssw0rd"
