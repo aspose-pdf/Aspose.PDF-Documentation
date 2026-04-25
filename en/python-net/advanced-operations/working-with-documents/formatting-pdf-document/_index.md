@@ -37,8 +37,6 @@ Open the PDF file using the [Document](https://reference.aspose.com/pdf/python-n
 The following code snippet shows you how to get the properties using [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 import aspose.pdf as ap
@@ -83,8 +81,6 @@ Properties available are:
 Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 import aspose.pdf as ap
@@ -112,8 +108,6 @@ def set_document_window(input_pdf, output_pdf):
 Some PDF documents have fonts from a special Adobe font set. Fonts from this set are called “Standard Type 1 Fonts”. This set includes 14 fonts and embedding this type of fonts requires using of special flags i.e [embed_standard_fonts](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties). Following is the code snippet which can be used to get a document with all fonts embedded including Standard Type 1 Fonts:
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 import aspose.pdf as ap
@@ -141,8 +135,6 @@ If you need to use any font other than the 14 core fonts supported by Adobe Read
 We use the property 'is_embedded' to embed the font information into PDF file. Setting the value of this property to 'True' will embed the complete font file into the PDF, knowing the fact that it will increase the PDF file size. Following is the code snippet that can be used to embed the font information into PDF.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 import aspose.pdf as ap
@@ -169,8 +161,6 @@ def embedded_fonts_in_new_document(input_pdf, output_pdf):
 When a PDF document contains fonts, which are not available in the document itself and on the device, API replaces these fonts with the default font. If the font is available (installed on the device or embedded into the document), the output PDF should have the same font (should not be replaced with the default font). The value of the default font should contain the name of the font (not the path to the font files). We have implemented a feature to set default font name while saving a document as PDF. Following code snippet can be used to set default font:
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 import aspose.pdf as ap
@@ -189,8 +179,6 @@ def set_default_font(input_pdf, output_pdf):
 In case you want to get all fonts from a PDF document, you can use [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) method provided in [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class. Please check following code snippet in order to get all fonts from an existing PDF document:
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 import aspose.pdf as ap
@@ -207,8 +195,6 @@ def get_all_fonts(input_pdf, output_pdf):
 Following code snippet shows how to set [FontSubsetStrategy](https://reference.aspose.com/pdf/python-net/aspose.pdf/fontsubsetstrategy/) used [font_utilities](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) property:
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 import aspose.pdf as ap
@@ -234,8 +220,6 @@ The [GoToAction](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotati
 The following code snippet shows how to set the zoom factor of a PDF file.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 import aspose.pdf as ap
@@ -254,8 +238,6 @@ def set_zoom_factor(input_pdf, output_pdf):
 The following code snippet shows how to get a PDF file's zoom factor.
 
 ```python
-import aspose.pdf as ap
-
 import sys
 from os import path
 import aspose.pdf as ap

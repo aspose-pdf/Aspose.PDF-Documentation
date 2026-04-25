@@ -49,22 +49,6 @@ from os import path, stat
 import sys
 
 def optimize_pdf(infile, outfile):
-    """
-    Optimize and compress a PDF file.
-
-    Args:
-        infile (str): Input PDF filename
-        outfile (str): Output PDF filename
-
-    Returns:
-        None
-
-    Example:
-        optimize_pdf("sample.pdf", "sample_out.pdf")
-
-    Note:
-        Reduces PDF file size using Aspose.PDF optimization.
-    """
     document = ap.Document(infile)
     document.optimize()
     document.save(outfile)

@@ -30,7 +30,6 @@ To create a PDF using Python via .NET with Aspose.PDF, you can follow these step
 ```python
 import sys
 from os import path
-
 import aspose.pdf as ap
 
 def create_new_document(input_pdf, output_pdf):

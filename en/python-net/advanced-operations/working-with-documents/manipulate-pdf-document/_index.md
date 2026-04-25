@@ -27,7 +27,6 @@ The following code snippet shows you how to validate PDF document for PDF/A-1A.
 ```python
 import sys
 from os import path
-
 import aspose.pdf as ap
 
 def validate_pdfa_standard_a1a(input_pdf, output_pdf):
@@ -39,7 +38,6 @@ The following code snippet shows you how to validate PDF document for PDF/A-1b.
 ```python
 import sys
 from os import path
-
 import aspose.pdf as ap
 
 def validate_pdfa_standard_a1b(input_pdf, output_pdf):
@@ -57,7 +55,6 @@ To add a TOC to an existing PDF file, use the Heading class in the [aspose.pdf](
 ```python
 import sys
 from os import path
-
 import aspose.pdf as ap
 
 def add_table_of_contents(input_pdf, output_pdf):
@@ -91,7 +88,6 @@ Aspose.PDF for Python also allows setting different TabLeaderType for different 
 ```python
 import sys
 from os import path
-
 import aspose.pdf as ap
 
 def set_toc_levels(input_pdf, output_pdf):
@@ -142,7 +138,6 @@ In case if you do not want to display page numbers, along with the headings in T
 ```python
 import sys
 from os import path
-
 import aspose.pdf as ap
 
 def hide_page_numbers_in_toc(input_pdf, output_pdf):
@@ -185,7 +180,6 @@ It is common to customize the page numbering in the TOC while adding TOC in a PD
 ```python
 import sys
 from os import path
-
 import aspose.pdf as ap
 
 def customize_page_numbers_in_toc(input_pdf, output_pdf):  
@@ -218,7 +212,6 @@ We apply access privileges on PDF files so that a certain group of users can acc
 ```python
 import sys
 from os import path
-
 import aspose.pdf as ap
 
 def set_pdf_expiry_date(input_pdf, output_pdf):
@@ -245,7 +238,6 @@ Aspose.PDF provides the function to flatten your PDF in Python with just few lin
 ```python
 import sys
 from os import path
-
 import aspose.pdf as ap
 
 def flatten_fillable_pdf(input_pdf, output_pdf):
