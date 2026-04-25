@@ -23,11 +23,10 @@ Following code snippet shows how to set structure elements properties of a Tagge
 
 ```python
 import aspose.pdf as ap
+import sys
+from os import path
 
-
-# region Setting Structure Elements Properties
 def set_properties(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with Tagged PDF
@@ -63,10 +62,10 @@ In order to set text structure elements of a Tagged PDF Document, Aspose.PDF off
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def set_text_elements(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with Tagged PDF
@@ -87,6 +86,7 @@ def set_text_elements(outfile):
 
         # Save Tagged PDF Document
         document.save(outfile)
+
 ```
 
 ## Setting Text Block Structure Elements
@@ -106,10 +106,10 @@ Following code snippet shows how to set text block structure elements of a Tagge
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def set_text_block_elements(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with Tagged PDF
@@ -165,10 +165,10 @@ Following code snippet shows how to set inline structure elements of a Tagged PD
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def set_inline_elements(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with Tagged PDF
@@ -305,10 +305,10 @@ Following code snippet shows how to set custom tag name:
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def set_tag_name(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get Content for work with Tagged PDF
@@ -376,10 +376,10 @@ Following code snippet shows how to set structure elements in paragraph with tex
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def set_elements(imagefile, outfile):
-
     # Create PDF document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -466,10 +466,10 @@ Following code snippet shows how to add link structure element into Tagged PDF D
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def add_link_element(outfile):
-
     # Create PDF document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -537,10 +537,10 @@ Aspose.PDF for Python via .NET API also allows you to add [NoteElement](https://
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def set_note_element(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         tagged_content = document.tagged_content
@@ -591,10 +591,10 @@ Aspose.PDF for Python via .NET API also allows you to set language and title for
 
 ```python
 import aspose.pdf as ap
-
+import sys
+from os import path
 
 def set_language_and_title(outfile):
-
     # Create PDF Document
     with ap.Document() as document:
         # Get TaggedContent
