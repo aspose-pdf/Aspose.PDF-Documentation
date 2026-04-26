@@ -68,8 +68,6 @@ This code snippet shows how to extract all embedded files from a PDF document us
 ```python
 from os import path
 import aspose.pdf as ap
-import sys
-from aspose.pycore import cast
 
 def extract_attachments(infile, output_dir):
     with ap.Document(infile) as document:
