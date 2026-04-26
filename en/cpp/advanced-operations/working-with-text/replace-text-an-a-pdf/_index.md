@@ -304,7 +304,7 @@ void RenderingReplaceableSymbols() {
 
 The replaceable symbol can also be placed inside the header/footer section of the PDF file. Review the following code snippet to see how to add a replaceable symbol to a footer section.
 
-```csharp
+```cpp
 void ReplaceableSymbolsInHeaderFooterArea() {
 
     auto document = MakeObject<Document>();

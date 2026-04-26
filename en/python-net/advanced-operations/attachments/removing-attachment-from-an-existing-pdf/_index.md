@@ -1,5 +1,5 @@
 ---
-title: Removing attachment from PDF using Python
+title: Remove Attachments from PDF in Python
 linktitle: Removing attachment from an existing PDF
 type: docs
 weight: 30
@@ -15,6 +15,8 @@ Abstract: This article discusses how to remove attachments from PDF files using 
 ---
 
 Aspose.PDF for Python can remove attachments from PDF files. A PDF document's attachments are held in the Document object's [EmbeddedFiles](https://reference.aspose.com/pdf/python-net/aspose.pdf/embeddedfilecollection/) collection.
+
+This workflow is useful when you need to clean up outdated embedded files, reduce package size, or prepare a PDF for redistribution without attached source materials.
 
 To delete all attachments associated with a PDF file:
 
@@ -56,4 +58,10 @@ def remove_attachment(infile, attachment_name, outfile):
         document.embedded_files.delete_by_key(attachment_name)
         document.save(outfile)
 ```
+
+## Related Attachment Topics
+
+- [Work with PDF attachments in Python](/pdf/python-net/attachments/)
+- [Add attachments to PDF in Python](/pdf/python-net/add-attachment-to-pdf-document/)
+- [Create and manage PDF portfolios in Python](/pdf/python-net/portfolio/)
 

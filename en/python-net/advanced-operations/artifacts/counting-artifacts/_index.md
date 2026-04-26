@@ -1,11 +1,11 @@
 ---
-title: Counting Artifacts of a Particular Type in Python via .NET
+title: Count PDF Artifacts in Python
 linktitle: Counting Artifacts
 type: docs
 weight: 40
 url: /python-net/counting-artifacts/
-description: This article illustrates how to inspect pagination artifacts in a PDF document using Aspose.PDF for Python via .NET.
-lastmod: "2025-11-13"
+description: Learn how to inspect and count pagination artifacts in PDF documents using Python with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -26,28 +26,40 @@ To calculate the total count of artifacts of a particular type (for example, the
 1. Print results.
 
 ```python
-
 import aspose.pdf as ap
+
 
 def count_pagination_artifacts(path_infile):
     # Open the PDF document
     with ap.Document(path_infile) as document:
-        
         # Extract pagination artifacts from the first page
         pagination_artifacts = [
-            artifact for artifact in document.pages[1].artifacts
+            artifact
+            for artifact in document.pages[1].artifacts
             if artifact.type == ap.Artifact.ArtifactType.PAGINATION
         ]
 
         # Count artifacts by subtype
-        watermarks = sum(1 for artifact in pagination_artifacts 
-                         if artifact.subtype == ap.Artifact.ArtifactSubtype.WATERMARK)
-        backgrounds = sum(1 for artifact in pagination_artifacts 
-                          if artifact.subtype == ap.Artifact.ArtifactSubtype.BACKGROUND)
-        headers = sum(1 for artifact in pagination_artifacts 
-                      if artifact.subtype == ap.Artifact.ArtifactSubtype.HEADER)
-        footers = sum(1 for artifact in pagination_artifacts 
-                      if artifact.subtype == ap.Artifact.ArtifactSubtype.FOOTER)
+        watermarks = sum(
+            1
+            for artifact in pagination_artifacts
+            if artifact.subtype == ap.Artifact.ArtifactSubtype.WATERMARK
+        )
+        backgrounds = sum(
+            1
+            for artifact in pagination_artifacts
+            if artifact.subtype == ap.Artifact.ArtifactSubtype.BACKGROUND
+        )
+        headers = sum(
+            1
+            for artifact in pagination_artifacts
+            if artifact.subtype == ap.Artifact.ArtifactSubtype.HEADER
+        )
+        footers = sum(
+            1
+            for artifact in pagination_artifacts
+            if artifact.subtype == ap.Artifact.ArtifactSubtype.FOOTER
+        )
 
         # Display results
         print(f"Watermarks: {watermarks}")
@@ -55,3 +67,10 @@ def count_pagination_artifacts(path_infile):
         print(f"Headers: {headers}")
         print(f"Footers: {footers}")
 ```
+
+## Related Artifact Topics
+
+- [Work with PDF artifacts in Python](/pdf/python-net/artifacts/)
+- [Add watermarks to PDF in Python](/pdf/python-net/add-watermarks/)
+- [Add PDF backgrounds in Python](/pdf/python-net/add-backgrounds/)
+- [Add Bates numbering to PDF in Python](/pdf/python-net/add-bates-numbering/)

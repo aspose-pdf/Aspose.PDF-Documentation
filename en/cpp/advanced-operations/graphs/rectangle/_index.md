@@ -39,7 +39,7 @@ Follow the steps below:
 
 1. And save your PDF file
 
-```csharp
+```cpp
  private static void AddRectangle(Page page, float x, float y, float width, float height, Color color, int zindex)
         {
             // Create graph object with dimensions same as specified for Rectangle object
@@ -75,7 +75,7 @@ Aspose.PDF for C++ also offers the feature to fill rectangle object with a certa
 
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object that is filled with color.
 
-```csharp
+```cpp
     {
         private const string _dataDir = "C:\\Samples\\";
         public static void RectangleFilled()
@@ -115,7 +115,7 @@ Aspose.PDF for C++ supports the feature to add graph objects to PDF documents an
 
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) object that is filled with Gradient Color.
 
-```csharp
+```cpp
  public static void CreateFilledRectangletGradientFill()
         {
             // Create Document instance
@@ -157,7 +157,7 @@ Pixels of the image can store information about their opacity along with color v
 
 Instead of making a color transparent, each pixel stores information on how opaque it is. This opacity data is called alpha channel and is typically stored after the color channels of the pixel.
 
-```csharp
+```cpp
      public static void RectangleFilled_AlphaChannel()
         {
             // Create Document instance
@@ -198,7 +198,7 @@ Aspose.PDF for C++ supports the feature to add graph objects (for example graph,
 
 The following code snippet shows the steps to render [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.drawing.rectangle/) objects on top of each other.
 
-```csharp
+```cpp
  public static void AddRectangleZOrder()
         {
             // Instantiate Document class object

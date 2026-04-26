@@ -1,11 +1,11 @@
 ---
-title: Split PDF programmatically in Python
+title: Split PDF Files in Python
 linktitle: Split PDF files
 type: docs
 weight: 60
 url: /python-net/split-pdf-document/
-description: This topic shows how to split PDF pages into individual PDF files in your Python applications.
-lastmod: "2025-02-27"
+description: Learn how to split PDF pages into separate PDF files in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,6 +15,8 @@ Abstract: The article discusses the process of splitting PDF pages into individu
 ---
 
 Splitting PDF pages can be a useful feature for those who want to split a large file into separate pages or groups of pages.
+
+Use this workflow when you need to break large PDFs into single-page files or smaller document sets for distribution, review, or downstream processing.
 
 ## Live Example
 
@@ -48,4 +50,11 @@ The following Python code snippet shows you how to split PDF pages into individu
         new_document.save(output_path + "_page_" + str(page_count) + ".pdf")
         page_count = page_count + 1
 ```
+
+## Related Document Topics
+
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Merge PDF files in Python](/pdf/python-net/merge-pdf-documents/)
+- [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)
+- [Manipulate PDF documents in Python](/pdf/python-net/manipulate-pdf-document/)
 

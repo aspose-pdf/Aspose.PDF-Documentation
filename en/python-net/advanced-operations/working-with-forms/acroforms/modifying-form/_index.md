@@ -26,31 +26,30 @@ This example demonstrates how to clear text from Typewriter form fields in a PDF
 1. Save the modified PDF to the output file.
 
 ```python
+import aspose.pdf as ap
+from aspose.pycore import cast, is_assignable
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
+dataDir = "path/to/your/data/dir/"
+path_infile = dataDir + infile
+path_outfile = dataDir + outfile
+document = ap.Document(path_infile)
 
-    dataDir = "path/to/your/data/dir/"
-    path_infile = dataDir + infile
-    path_outfile = dataDir + outfile
-    document = ap.Document(path_infile)
+# Get the forms from the first page
+forms = document.pages[1].resources.forms
 
-    # Get the forms from the first page
-    forms = document.pages[1].resources.forms
+for form in forms:
+    # Check if the form is of type "Typewriter" and subtype "Form"
+    if form.it == "Typewriter" and form.subtype == "Form":
+        # Create a TextFragmentAbsorber to find text fragments
+        absorber = ap.Text.TextFragmentAbsorber()
+        absorber.visit(form)
 
-    for form in forms:
-        # Check if the form is of type "Typewriter" and subtype "Form"
-        if (form.it == "Typewriter" and form.subtype == "Form"):
-            # Create a TextFragmentAbsorber to find text fragments
-            absorber = ap.Text.TextFragmentAbsorber()
-            absorber.visit(form)
+        # Clear the text in each fragment
+        for fragment in absorber.text_fragments:
+            fragment.Text = ""
 
-            # Clear the text in each fragment
-            for fragment in absorber.text_fragments:
-                fragment.Text = ""
-
-    # Save PDF document
-    document.save(path_outfile)
+# Save PDF document
+document.save(path_outfile)
 ```
 
 ## Get or Set Field Limit
@@ -58,43 +57,41 @@ This example demonstrates how to clear text from Typewriter form fields in a PDF
 The FormEditor class set_field_limit(field, limit) method allows you to set a field limit, the maximum number of characters that can be entered into a field.
 
 ```python
+import aspose.pdf as ap
+from aspose.pycore import cast, is_assignable
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
+# The path to the documents directory
+data_dir = "/path/to/your/pdf/files/"
+path_infile = os.path.join(work_dir, infile)
+path_outfile = os.path.join(work_dir, outfile)
 
-    # The path to the documents directory
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-    path_outfile = os.path.join(work_dir, outfile)
+# Create FormEditor instance
+form = ap.facades.FormEditor()
 
-    # Create FormEditor instance
-    form = ap.facades.FormEditor()
+# Bind PDF document
+form.bind_pdf(path_infile)
 
-    # Bind PDF document
-    form.bind_pdf(path_infile)
+# Set field limit for "First Name"
+form.set_field_limit("First Name", 15)
 
-    # Set field limit for "First Name"
-    form.set_field_limit("First Name", 15)
-
-    # Save PDF document
-    form.save(path_outfile)
+# Save PDF document
+form.save(path_outfile)
 ```
 
 Similarly, Aspose.PDF has a method that gets the field limit.
 
 ```python
+import aspose.pdf as ap
+from aspose.pycore import cast, is_assignable
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
+# The path to the documents directory
+data_dir = "/path/to/your/pdf/files/"
+path_infile = os.path.join(work_dir, infile)
 
-    # The path to the documents directory
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-
-    document = ap.Document(path_infile)
-    if is_assignable(document.form[1], ap.forms.TextBoxField):
-        textBoxField = cast(ap.forms.TextBoxField, document.form[1])
-        print(f"Limit: {textBoxField.max_len}")
+document = ap.Document(path_infile)
+if is_assignable(document.form[1], ap.forms.TextBoxField):
+    textBoxField = cast(ap.forms.TextBoxField, document.form[1])
+    print(f"Limit: {textBoxField.max_len}")
 ```
 
 ## Set Custom Font for the Form Field
@@ -106,21 +103,22 @@ This code updates the appearance of a text box field in a PDF form by setting a 
 The following code snippet shows how to set the default font for PDF form fields.
 
 ```python
+import aspose.pdf as ap
+from aspose.pycore import cast, is_assignable
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
+data_dir = "/path/to/your/pdf/files/"
+path_infile = os.path.join(work_dir, infile)
+path_outfile = os.path.join(work_dir, outfile)
 
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-    path_outfile = os.path.join(work_dir, outfile)
+document = ap.Document(path_infile)
+if is_assignable(document.form[1], ap.forms.TextBoxField):
+    textBoxField = cast(ap.forms.TextBoxField, document.form[1])
+    font = ap.text.FontRepository.find_font("Calibri")
+    textBoxField.default_appearance = ap.annotations.DefaultAppearance(
+        font, 10, ap.Color.black.to_rgb()
+    )
 
-    document = ap.Document(path_infile)
-    if is_assignable(document.form[1], ap.forms.TextBoxField):
-        textBoxField = cast(ap.forms.TextBoxField, document.form[1])
-        font = ap.text.FontRepository.find_font("Calibri")
-        textBoxField.default_appearance = ap.annotations.DefaultAppearance(font, 10, ap.Color.black.to_rgb())
-
-    document.save(path_outfile)
+document.save(path_outfile)
 ```
 
 ## Remove fields in existing form
@@ -132,17 +130,16 @@ This code removes a specific form field (by its name) from a PDF document and sa
 1. Save the updated PDF.
 
 ```python
+import aspose.pdf as ap
+from aspose.pycore import cast, is_assignable
 
-    import aspose.pdf as ap
-    from aspose.pycore import cast, is_assignable
+data_dir = "/path/to/your/pdf/files/"
+path_infile = os.path.join(work_dir, infile)
+path_outfile = os.path.join(work_dir, outfile)
 
-    data_dir = "/path/to/your/pdf/files/"
-    path_infile = os.path.join(work_dir, infile)
-    path_outfile = os.path.join(work_dir, outfile)
-
-    document = ap.Document(path_infile)
-    # Delete a particular field by name
-    document.form.delete("First Name")
-    # Save PDF document
-    document.save(path_outfile)
+document = ap.Document(path_infile)
+# Delete a particular field by name
+document.form.delete("First Name")
+# Save PDF document
+document.save(path_outfile)
 ```

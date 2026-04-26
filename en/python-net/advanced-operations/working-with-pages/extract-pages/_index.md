@@ -1,11 +1,11 @@
 ---
-title: Extracting Pages programmatically Python
+title: Extract PDF Pages in Python
 linktitle: Extracting PDF Pages
 type: docs
 weight: 80
 url: /python-net/extract-pages/
-description: You can extract pages from your PDF file using Aspose.PDF for Python via .NET library.
-lastmod: "2025-11-16"
+description: Learn how to extract single or multiple PDF pages into new files in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -25,12 +25,12 @@ Extract a specific page from a PDF document and save it as a new file. Using the
 1. Save the new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) with the extracted page to the specified output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def extract_page(input_file_name, output_file_name):
     """
@@ -78,12 +78,12 @@ Extract multiple specific pages from a PDF document and save them into a new fil
 1. Save the new [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) with the extracted pages to the specified output file.
 
 ```python
-
 import os
 import aspose.pdf as ap
 
 # Global configuration
 DATA_DIR = "your path here"
+
 
 def extract_bunch_pages(input_file_name, output_file_name):
     """
@@ -105,7 +105,7 @@ def extract_bunch_pages(input_file_name, output_file_name):
     """
     # Open source Document
     document = ap.Document(input_file_name)
-    pages = [2,3]
+    pages = [2, 3]
     # Create destination Document
     another_document = ap.Document()
     # Copy selected Page objects via PageCollection API
@@ -114,3 +114,10 @@ def extract_bunch_pages(input_file_name, output_file_name):
     # Save destination Document
     another_document.save(output_file_name)
 ```
+
+## Related Page Topics
+
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Delete PDF pages in Python](/pdf/python-net/delete-pages/)
+- [Move PDF pages in Python](/pdf/python-net/move-pages/)
+- [Split PDF files in Python](/pdf/python-net/split-document/)
