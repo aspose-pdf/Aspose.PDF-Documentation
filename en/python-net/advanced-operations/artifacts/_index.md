@@ -58,3 +58,4 @@ Please review the following sections of the article:
 - [Adding Bates Numbering](/pdf/python-net/add-bates-numbering/) - add Bates Numbering to PDF.
 - [Adding Watermark](/pdf/python-net/add-watermarks/) - how to add watermark to PDF with Python.
 - [Counting Artifacts](/pdf/python-net/counting-artifacts/) - counting Artifacts in PDF using Python.
+- [Manage PDF Headers and Footers](/pdf/python-net/artifacts-header-footer/) - manage headers and footers in PDF documents.
