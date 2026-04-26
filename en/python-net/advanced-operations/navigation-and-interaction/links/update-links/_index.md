@@ -82,7 +82,7 @@ def link_annotation_update_border(infile, outfile):
 
 ## Update Web Destination
 
-Once the paths are in place, the original document is loaded using the Aspose.PDF library, making its content accessible for modification. The script then focuses on the first page of the document, filtering out all annotations and selecting only those that are link-type, typically representing clickable areas or hyperlinks. To avoid type errors and ensure safe handling, each annotation is checked with is_assignable and then cast to the appropriate LinkAnnotation type. If the link is associated with a GoToURIAction, meaning it points to a web address, the script updates that URI to redirect users to "https://www.google.com". Finally, after all desired changes have been applied, the modified document is saved to the specified output path.
+Once the paths are in place, the original document is loaded using the Aspose.PDF library, making its content accessible for modification. The script then focuses on the first page of the document, filtering out all annotations and selecting only those that are link-type, typically representing clickable areas or hyperlinks. To avoid type errors and ensure safe handling, each annotation is checked with is_assignable and then cast to the appropriate LinkAnnotation type. If the link is associated with a GoToURIAction, meaning it points to a web address, the script updates that URI to redirect users to "https://www.aspose.com". Finally, after all desired changes have been applied, the modified document is saved to the specified output path.
 
 ```python
 import aspose.pdf as ap
@@ -103,6 +103,12 @@ def link_annotation_update_web_destination(infile, outfile):
             annotation = cast(ap.annotations.LinkAnnotation, la)
             if is_assignable(annotation.action, ap.annotations.GoToURIAction):
                 action = cast(ap.annotations.GoToURIAction, annotation.action)
-                action.uri = "https://www.google.com"
+                action.uri = "https://www.aspose.com"
     document.save(outfile)
 ```
+
+## Related Link Topics
+
+- [Work with PDF links in Python](/pdf/python-net/links/)
+- [Create PDF links in Python](/pdf/python-net/create-links/)
+- [Extract PDF links in Python](/pdf/python-net/extract-links/)
