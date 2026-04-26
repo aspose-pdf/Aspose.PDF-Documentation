@@ -140,3 +140,9 @@ def remove_background(infile, outfile):
         document.save(outfile)
 ```
 
+## Related Artifact Topics
+
+- [Work with PDF artifacts in Python](/pdf/python-net/artifacts/)
+- [Add watermarks to PDF in Python](/pdf/python-net/add-watermarks/)
+- [Add Bates numbering to PDF in Python](/pdf/python-net/add-bates-numbering/)
+- [Count artifact types in PDF files](/pdf/python-net/counting-artifacts/)
