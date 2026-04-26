@@ -4,7 +4,7 @@ linktitle: Annotations and Special Text
 type: docs
 weight: 40
 url: /python-net/annotation-and-special-text/
-description: This section contains articles on annotation and special Text extraction from PDF documents using Aspose.PDF in Python.
+description: Learn how to extract text from stamp annotations, highlighted text, and superscript/subscript content in PDF documents using Aspose.PDF for Python.
 lastmod: "2025-11-05"
 sitemap:
     changefreq: "monthly"
@@ -13,17 +13,17 @@ sitemap:
 
 ## Extract Text from Stamp Annotations
 
-Aspose.PDF for Python library allows you to extract text from a stamp annotation (specifically a StampAnnotation) on a PDF page.
+Use [TextAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber) to extract text embedded in a [StampAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/stampannotation) appearance stream. This is useful when stamp content is rendered as a form XObject rather than stored as plain text.
 
-1. Open the document.
-1. Access the stamp annotation from the page's annotations collection.
-1. Get the appearance stream of the stamp (XForm).
-1. Use a 'TextAbsorber' to extract the embedded text from that appearance.
+1. Open the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
+1. Access the target annotation from `page.annotations`.
+1. Verify it is a `StampAnnotation`, then retrieve its normal appearance XForm.
+1. Pass the XForm to `TextAbsorber.visit()` to extract the embedded text.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_text_from_stamp(infile, page_number, annotation_index, outfile):
     """
@@ -53,15 +53,12 @@ def extract_text_from_stamp(infile, page_number, annotation_index, outfile):
 
 ## Extract Highlighted Text
 
-The PDF standard provides the ability to highlight parts of text in a document. To extract such highlighted content, follow these steps:
+Iterate over a page's annotations and use [HighlightAnnotation.get_marked_text()](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation) to read the text spans covered by each highlight. The page annotation collection is 1-based.
 
-1. Import `aspose.pdf as ap` and any helpers you use (`is_assignable`, `cast`).
-2. Call `ap.Document(infile)` to open the PDF.
-3. Select the desired page with `document.pages` (page collection is 1-based).
-4. Loop through `page.annotations` to examine each annotation on that page.
-5. Filter annotations so only highlight annotations are processed.
-6. Cast annotation to `HighlightAnnotation` and call `get_marked_text()` to read the highlighted text.
-7. Print or otherwise handle the returned text.
+1. Open the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) and select the target page.
+1. Loop through `page.annotations`.
+1. Use `is_assignable` to filter for [HighlightAnnotation](https://reference.aspose.com/pdf/python-net/aspose.pdf.annotations/highlightannotation) instances.
+1. Cast the annotation and call `get_marked_text()` to retrieve the highlighted content.
 
 ```python
 def extract_highlight_text(infile):
@@ -89,22 +86,20 @@ def extract_highlight_text(infile):
             print(highlight_annotation.get_marked_text())
 ```
 
-## Extract SuperScripts and SubScripts Text
+## Extract Superscript and Subscript Text
 
-**SubScripts and SuperScripts** are most often used in formulas, mathematical expressions, and specifications of chemical compounds. It is tough to edit them when there can be many of them in the same passage of text.
-In one of the latest releases, the **Aspose.PDF for Python via .NET** library added support for extracting SuperScripts and SubScripts text from PDF. Extract all text (including superscripts and subscripts) from a specific page of a PDF document using 'TextFragmentAbsorber'.
+Superscripts and subscripts appear frequently in formulas, mathematical expressions, and chemical compound names. Aspose.PDF for Python via .NET supports extracting this content through [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber), which detects character-level positioning metadata.
 
-1. Load the PDF document.
-1. Instantiate a 'TextFragmentAbsorber()', which supports detection of superscript/subscript text as per version capabilities.
-1. Call 'document.pages[page_number].accept(absorber)' to scan only the given page.
-1. Retrieve the extracted text via 'absorber.text'.
-1. Write the text into the output file using standard file I/O.
-1. Close the document to release resources.
+1. Open the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document).
+1. Create a `TextFragmentAbsorber` instance.
+1. Call `document.pages[page_number].accept(absorber)` to scan the target page.
+1. Retrieve the full extracted text from `absorber.text`.
+1. Write the result to a file and close the document.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_super_sub_text(infile, outfile, page_number=1):
     """
@@ -126,23 +121,19 @@ def extract_super_sub_text(infile, outfile, page_number=1):
         document.close()
 ```
 
-## Iterate through TextFragments to Detect Superscript/Subscript
+## Iterate through Text Fragments to Detect Superscript/Subscript
 
-Loop through each text fragment in a page, check whether it is superscript or subscript, and process accordingly.
+For per-fragment inspection, iterate over `absorber.text_fragments` and read the `text_state.superscript` and `text_state.subscript` boolean flags on each [TextFragment](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragment).
 
-1. Load the PDF document.
-1. Create 'TextFragmentAbsorber()' and accept it on the chosen page.
-1. Access 'absorber.text_fragments', which returns a collection of fragments found on that page.
-1. For each fragment:
-    - Retrieve 'fragment.text'.
-    - Check 'fragment.text_state.superscript' and 'fragment.text_state.subscript'.
-    - Write a line to the output file with fragment text and flags.
-1. Close the file and document.
+1. Open the [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) and create a [TextFragmentAbsorber](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber).
+1. Accept the absorber on the target page to populate `absorber.text_fragments`.
+1. For each fragment, read `fragment.text`, `fragment.text_state.superscript`, and `fragment.text_state.subscript`.
+1. Write the results to the output file and close the document.
 
 ```python
-
 import os
 import aspose.pdf as ap
+
 
 def extract_super_sub_details(infile, outfile, page_number=1):
     """
@@ -161,8 +152,10 @@ def extract_super_sub_details(infile, outfile, page_number=1):
             for fragment in absorber.text_fragments:
                 text = fragment.text
                 is_sup = fragment.text_state.superscript  # True if superscript
-                is_sub = fragment.text_state.subscript    # True if subscript
-                f.write(f"Text: '{text}' | Superscript: {is_sup} | Subscript: {is_sub}\n")
+                is_sub = fragment.text_state.subscript  # True if subscript
+                f.write(
+                    f"Text: '{text}' | Superscript: {is_sup} | Subscript: {is_sub}\n"
+                )
     finally:
         document.close()
 ```

@@ -1,11 +1,11 @@
 ---
-title: Adding Watermark to PDF using Python
+title: Add Watermarks to PDF in Python
 linktitle: Adding Watermark
 type: docs
 weight: 30
 url: /python-net/add-watermarks/
-description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the Python.
-lastmod: "2025-11-21"
+description: Learn how to add watermark artifacts to PDF files in Python using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -16,9 +16,11 @@ Abstract: The article provides a comprehensive guide on using Aspose.PDF for Pyt
 
 ## Extract form fields from PDF document
 
-As well as enabling you to generate form fields and fill form fields, Aspose.PDF for Python makes it easy to extract form field data or information about form fields from PDF files.
+[Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) from the `aspose.pdf.facades` namespace provides a straightforward way to read AcroForm field data without opening the full document object model. Iterate over `form.field_names` to get every field name present in the form, then call `form.get_field(name)` to retrieve its current value.
 
-The code snippet creates a dictionary to store the values of all fields in the PDF form. It iterates through the form's field names, retrieves their values, and populates the dictionary with this data. Finally, it prints the collected form values.
+1. Construct a `Form` object by passing the input file path.
+1. Iterate over `form.field_names` to enumerate all field names.
+1. Call `form.get_field(name)` for each name and store the result in a dictionary.
 
 ```python
 
@@ -42,15 +44,36 @@ The code snippet creates a dictionary to store the values of all fields in the P
 
 ## Retrieve form field value by title
 
+When you know the exact field name (title) defined in the PDF form, you can retrieve its value directly with `form.get_field(name)` without iterating over the entire field collection. This is the fastest approach when only specific fields are needed.
+
+1. Construct a [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) object with the input file path.
+1. Call `form.get_field("FieldName")` using the exact field title as it appears in the PDF.
+1. Use the returned string value as needed in your application.
+
+```python
+
+    import aspose.pdf as apdf
+
+    form = apdf.facades.Form(path_infile)
+
+    # Retrieve a single field value by its name
+    value = form.get_field("FirstName")
+    print(value)
+```
+
 ## Extract form fields from PDF document to JSON
+
+There are two ways to export AcroForm data to JSON. The first uses the built-in `export_json` method on [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form), which serializes all field data directly to a file stream in a single call.
+
+1. Construct a `Form` object with the input file path.
+1. Open the output file as a binary stream using `FileIO`.
+1. Call `form.export_json(stream, True)` to write the JSON output.
 
 ```python
 
     import aspose.pdf as apdf
     from io import FileIO
     from os import path
-    import json
-    from aspose.pycore import cast, is_assignable
 
     path_infile = path.join(self.dataDir, infile)
     path_outfile = path.join(self.dataDir, outfile)
@@ -60,15 +83,17 @@ The code snippet creates a dictionary to store the values of all fields in the P
         form.export_json(json_file, True)
 ```
 
-The provided Python code snippet extracts the values of its fields and serializes this data into a JSON format. It imports necessary modules, constructs input and output file paths, retrieves field names and values from the PDF form, and writes the serialized JSON string to a specified output file.
+The second approach builds a Python dictionary from `field_names` and `get_field`, then serializes it with `json.dumps`. Use this when you need to transform or filter the data before writing it.
+
+1. Iterate over `form.field_names` and populate a dictionary with field values.
+1. Serialize the dictionary with `json.dumps(form_data, indent=4)`.
+1. Write the resulting JSON string to the output file.
 
 ```python
 
     import aspose.pdf as apdf
-    from io import FileIO
     from os import path
     import json
-    from aspose.pycore import cast, is_assignable
 
     path_infile = path.join(self.dataDir, infile)
     path_outfile = path.join(self.dataDir, outfile)
@@ -77,13 +102,10 @@ The provided Python code snippet extracts the values of its fields and serialize
     form_data = {}
     # Get values from all fields
     for formField in form.field_names:
-        # Analyze names and values if need
         form_data[formField] = form.get_field(formField)
 
     # Serialize to JSON
     json_string = json.dumps(form_data, indent=4)
-
-    # Output the JSON string
     print(json_string)
 
     with open(path_outfile, "w", encoding="utf-8") as json_file:
@@ -92,15 +114,17 @@ The provided Python code snippet extracts the values of its fields and serialize
 
 ## Extract Data to XML from a PDF File
 
-The next Python code snippet creates a form object, binds a PDF document to that object, and exports the form data to an XML file. The code automatically extracts data from a PDF form and saves it in a structured XML format.
+XML export is useful for integrating PDF form data with systems that consume structured XML feeds or schemas. The [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) class provides `export_xml` to handle the conversion in one step.
+
+1. Create a `Form` instance and bind the PDF with `form.bind_pdf(path)`.
+1. Open the output file as a binary stream.
+1. Call `form.export_xml(stream)` to write all field data as XML.
 
 ```python
 
     import aspose.pdf as apdf
     from io import FileIO
     from os import path
-    import json
-    from aspose.pycore import cast, is_assignable
 
     path_infile = path.join(self.dataDir, infile)
     path_outfile = path.join(self.dataDir, outfile)
@@ -118,15 +142,17 @@ The next Python code snippet creates a form object, binds a PDF document to that
 
 ## Export Data to FDF from a PDF File
 
-The following code snippet creates a form object, binds a PDF document to that form, and then exports the form data to an FDF (Forms Data Format) file. The FDF file is a format used to store form data from PDF documents, allowing for easy data interchange.
+FDF (Forms Data Format) is the standard interchange format for AcroForm data and is widely supported by PDF viewers and processing tools. Use `export_fdf` on the [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) class to produce a standalone FDF file that can be imported back into the original PDF or another compatible form.
+
+1. Create a `Form` instance and bind the source PDF with `form.bind_pdf(path)`.
+1. Open the output file as a binary stream.
+1. Call `form.export_fdf(stream)` to write the FDF data.
 
 ```python
 
     import aspose.pdf as apdf
     from io import FileIO
     from os import path
-    import json
-    from aspose.pycore import cast, is_assignable
 
     path_infile = path.join(self.dataDir, infile)
     path_outfile = path.join(self.dataDir, outfile)
@@ -144,13 +170,17 @@ The following code snippet creates a form object, binds a PDF document to that f
 
 ## Export Data to XFDF from a PDF File
 
+XFDF (XML Forms Data Format) is the XML-based successor to FDF and is better suited for use in web services and modern data pipelines. Like FDF, an XFDF file can be imported back into a compatible PDF form. Use `export_xfdf` on the [Form](https://reference.aspose.com/pdf/python-net/aspose.pdf.facades/form) class to generate the output.
+
+1. Create a `Form` instance and bind the source PDF with `form.bind_pdf(path)`.
+1. Open the output file as a binary stream.
+1. Call `form.export_xfdf(stream)` to write the XFDF data.
+
 ```python
 
     import aspose.pdf as apdf
     from io import FileIO
     from os import path
-    import json
-    from aspose.pycore import cast, is_assignable
 
     path_infile = path.join(self.dataDir, infile)
     path_outfile = path.join(self.dataDir, outfile)

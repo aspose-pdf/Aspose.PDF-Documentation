@@ -19,13 +19,12 @@ Abstract: The article provides guidance on saving PDF documents using the Aspose
 You can save the created or manipulated PDF document to file system using [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method of [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) class.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    document = ap.Document(input_pdf)
-    # make some manipation, i.g add new empty page
-    document.pages.add()
-    document.save(output_pdf)
+document = ap.Document(input_pdf)
+# make some manipation, i.g add new empty page
+document.pages.add()
+document.save(output_pdf)
 ```
 
 ## Save PDF document to stream
@@ -33,13 +32,12 @@ You can save the created or manipulated PDF document to file system using [save(
 You can also save the created or manipulated PDF document to stream by using overloads of `Save` methods.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    document = ap.Document(input_pdf)
-    # make some manipation, i.g add new empty page
-    document.pages.add()
-    document.save(io.FileIO(output_pdf, 'w'))
+document = ap.Document(input_pdf)
+# make some manipation, i.g add new empty page
+document.pages.add()
+document.save(io.FileIO(output_pdf, "w"))
 ```
 
 ## Save PDF/A or PDF/X format
@@ -52,11 +50,10 @@ PDF/X is a subset of the PDF ISO standard. The purpose of PDF/X is to facilitate
 In both cases, the [save()](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method is used to store the documents, while the documents must be prepared using the [convert](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods) method.
 
 ```python
+import aspose.pdf as ap
 
-    import aspose.pdf as ap
-
-    document = ap.Document(input_pdf)
-    document.pages.add()
-    document.convert(output_log, ap.PdfFormat.PDF_X_3, ap.ConvertErrorAction.DELETE)
-    document.save(output_pdf)
+document = ap.Document(input_pdf)
+document.pages.add()
+document.convert(output_log, ap.PdfFormat.PDF_X_3, ap.ConvertErrorAction.DELETE)
+document.save(output_pdf)
 ```

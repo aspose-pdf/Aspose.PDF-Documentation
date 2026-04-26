@@ -1,11 +1,11 @@
 ---
-title: Working with Backgrounds as Artifacts with Python
+title: Add PDF Backgrounds in Python
 linktitle: Adding backgrounds
 type: docs
 weight: 20
 url: /python-net/add-backgrounds/
-description: Add background image to the your PDF file with Python. Use the BackgroundArtifact class.
-lastmod: "2025-02-27"
+description: Learn how to add a background image to PDF pages in Python using the BackgroundArtifact class in Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,6 +17,8 @@ Abstract: This article discusses the use of background images in PDF documents u
 ## Add a Background Image to a PDF
 
 Background images can be used to add a watermark, or other subtle design, to documents. In Aspose.PDF for Python via .NET, each PDF document is a collection of pages and each page contains a collection of artifacts. The [BackgroundArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/backgroundartifact/) class can be used to add a background image to a page object.
+
+This approach is useful when you need to place a decorative image behind the main PDF content without turning it into searchable document text.
 
 The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object with Python.
 
@@ -137,3 +139,4 @@ def remove_background(infile, outfile):
 
         document.save(outfile)
 ```
+

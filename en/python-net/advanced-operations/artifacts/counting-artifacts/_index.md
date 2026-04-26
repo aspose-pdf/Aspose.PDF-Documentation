@@ -1,11 +1,11 @@
 ---
-title: Counting Artifacts of a Particular Type in Python via .NET
+title: Count PDF Artifacts in Python
 linktitle: Counting Artifacts
 type: docs
 weight: 40
 url: /python-net/counting-artifacts/
-description: This article illustrates how to inspect pagination artifacts in a PDF document using Aspose.PDF for Python via .NET.
-lastmod: "2025-11-13"
+description: Learn how to inspect and count pagination artifacts in PDF documents using Python with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -49,3 +49,10 @@ def count_pdf_artifacts(infile):
         print(f"Headers: {counts.get(ap.Artifact.ArtifactSubtype.HEADER, 0)}")
         print(f"Footers: {counts.get(ap.Artifact.ArtifactSubtype.FOOTER, 0)}")
 ```
+
+## Related Artifact Topics
+
+- [Work with PDF artifacts in Python](/pdf/python-net/artifacts/)
+- [Add watermarks to PDF in Python](/pdf/python-net/add-watermarks/)
+- [Add PDF backgrounds in Python](/pdf/python-net/add-backgrounds/)
+- [Add Bates numbering to PDF in Python](/pdf/python-net/add-bates-numbering/)
