@@ -1,11 +1,11 @@
 ---
-title: Convert PDF to PDF/x formats in Python
-linktitle: Convert PDF to PDF/x formats
+title: Convert PDF to PDF/A, PDF/E, and PDF/X in Python
+linktitle: Convert PDF to PDF/A, PDF/E, and PDF/X
 type: docs
 weight: 120
 url: /python-net/convert-pdf-to-pdf_x/
-lastmod: "2025-09-27"
-description: This topic shows you how to convert PDF to PDF/x formats using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-14"
+description: Learn how to convert PDF files to PDF/A, PDF/E, and PDF/X in Python with Aspose.PDF for Python via .NET for archival, accessibility, and print workflows.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -43,12 +43,11 @@ The 'document.validate()' method validates whether a PDF file conforms to the PD
 1. The results of the validation are written into the specified log file.
 
 ```python
+path_infile = path.join(self.data_dir, infile)
+path_logfile = path.join(self.data_dir, "python", outfile)
 
-    path_infile = path.join(self.data_dir, infile)
-    path_logfile = path.join(self.data_dir, "python", outfile)
-
-    document = ap.Document(path_infile)
-    document.validate(path_logfile, ap.PdfFormat.PDF_A_1B)
+document = ap.Document(path_infile)
+document.validate(path_logfile, ap.PdfFormat.PDF_A_1B)
 ```
 
 ### Convert PDF to PDF/A-1B
@@ -63,22 +62,21 @@ The following code snippet shows how to convert PDF files to PDF/A-1B format:
 1. Save the converted PDF/A-compliant file to the output path.
 
 ```python
+from os import path
+import aspose.pdf as ap
 
-    from os import path
-    import aspose.pdf as ap
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
+document = ap.Document(path_infile)
+document.convert(
+    self.data_dir + "pdf_pdfa.log",
+    ap.PdfFormat.PDF_A_1B,
+    ap.ConvertErrorAction.DELETE,
+)
+document.save(path_outfile)
 
-    document = ap.Document(path_infile)
-    document.convert(
-        self.data_dir + "pdf_pdfa.log",
-        ap.PdfFormat.PDF_A_1B,
-        ap.ConvertErrorAction.DELETE,
-    )
-    document.save(path_outfile)
-
-    print(infile + " converted into " + outfile)
+print(infile + " converted into " + outfile)
 ```
 
 ### Convert PDF to PDF 2.0 and PDF/A-4
@@ -95,21 +93,20 @@ Both conversions help ensure compliance with modern specifications and archival 
 1. Save the resulting document in the specified output path.
 
 ```python
+from os import path
+import aspose.pdf as ap
 
-    from os import path
-    import aspose.pdf as ap
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+path_logfile = path_outfile.replace(".pdf", "_log.xml")
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-    path_logfile = path_outfile.replace(".pdf","_log.xml")
+document = ap.Document(path_infile)
+document.convert(path_logfile, ap.PdfFormat.V_2_0, ap.ConvertErrorAction.DELETE)
 
-    document = ap.Document(path_infile)
-    document.convert(path_logfile, ap.PdfFormat.V_2_0, ap.ConvertErrorAction.DELETE)
+document.convert(path_logfile, ap.PdfFormat.PDF_A_4, ap.ConvertErrorAction.DELETE)
+document.save(path_outfile)
 
-    document.convert(path_logfile, ap.PdfFormat.PDF_A_4, ap.ConvertErrorAction.DELETE)
-    document.save(path_outfile)
-
-    print(infile + " converted into " + outfile)
+print(infile + " converted into " + outfile)
 ```
 
 ### Convert PDF to PDF/A-3A with Embedded Files
@@ -127,21 +124,22 @@ Next code snippet demonstrates how to embed external files into a PDF and then c
 1. Print a confirmation message.
 
 ```python
+from os import path
+import aspose.pdf as ap
 
-    from os import path
-    import aspose.pdf as ap
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+path_logfile = path_outfile.replace(".pdf", "_log.xml")
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-    path_logfile = path_outfile.replace(".pdf","_log.xml")
+document = ap.Document(path_infile)
 
-    document = ap.Document(path_infile)
-
-    fileSpecification = ap.FileSpecification(self.data_dir + "aspose-logo.jpg", "Large Image file")
-    document.embedded_files.add(fileSpecification)
-    document.convert(path_logfile, ap.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
-    document.save(path_outfile)
-    print(infile + " converted into " + outfile)
+fileSpecification = ap.FileSpecification(
+    self.data_dir + "aspose-logo.jpg", "Large Image file"
+)
+document.embedded_files.add(fileSpecification)
+document.convert(path_logfile, ap.PdfFormat.PDF_A_3A, ap.ConvertErrorAction.DELETE)
+document.save(path_outfile)
+print(infile + " converted into " + outfile)
 ```
 
 ### Convert PDF to PDF/A-1B with Font Substitution
@@ -157,25 +155,24 @@ This function converts a PDF into PDF/A-1B format while handling missing fonts b
 1. Print a confirmation message.
 
 ```python
+from os import path
+import aspose.pdf as ap
 
-    from os import path
-    import aspose.pdf as ap 
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+path_logfile = path_outfile.replace(".pdf", "_log.xml")
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-    path_logfile = path_outfile.replace(".pdf","_log.xml")
+try:
+    ap.text.FontRepository.find_font("AgencyFB")
 
-    try:
-        ap.text.FontRepository.find_font("AgencyFB")
+except ap.FontNotFoundException:
+    font_substitution = ap.text.SimpleFontSubstitution("AgencyFB", "Arial")
+    ap.text.FontRepository.Substitutions.append(font_substitution)
 
-    except ap.FontNotFoundException:
-        font_substitution = ap.text.SimpleFontSubstitution("AgencyFB", "Arial")
-        ap.text.FontRepository.Substitutions.append(font_substitution)
-
-    document = ap.Document(path_infile)
-    document.convert(path_logfile, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE)
-    document.save(path_outfile)
-    print(infile + " converted into " + outfile)
+document = ap.Document(path_infile)
+document.convert(path_logfile, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE)
+document.save(path_outfile)
+print(infile + " converted into " + outfile)
 ```
 
 ### Convert PDF to PDF/A-1B with Automatic Tagging
@@ -196,26 +193,27 @@ This function converts a PDF document into PDF/A-1B format while automatically t
 1. Print a confirmation message.
 
 ```python
+from os import path
+import aspose.pdf as ap
 
-    from os import path
-    import aspose.pdf as ap
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+path_logfile = path_outfile.replace(".pdf", "_log.xml")
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-    path_logfile = path_outfile.replace(".pdf","_log.xml")
+document = ap.Document(path_infile)
+options = ap.PdfFormatConversionOptions(
+    path_logfile, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE
+)
 
-    document = ap.Document(path_infile)
-    options =  ap.PdfFormatConversionOptions(path_logfile, ap.PdfFormat.PDF_A_1B, ap.ConvertErrorAction.DELETE)
+auto_tagging_settings = ap.AutoTaggingSettings()
+auto_tagging_settings.enable_auto_tagging = True
 
-    auto_tagging_settings = ap.AutoTaggingSettings()
-    auto_tagging_settings.enable_auto_tagging = True
+auto_tagging_settings.heading_recognition_strategy = ap.HeadingRecognitionStrategy.AUTO
 
-    auto_tagging_settings.heading_recognition_strategy = ap.HeadingRecognitionStrategy.AUTO
-
-    options.auto_tagging_settings = auto_tagging_settings
-    document.convert(options)
-    document.save(path_outfile)
-    print(infile + " converted into " + outfile)
+options.auto_tagging_settings = auto_tagging_settings
+document.convert(options)
+document.save(path_outfile)
+print(infile + " converted into " + outfile)
 ```
 
 ## Convert PDF to PDF/E
@@ -229,12 +227,11 @@ This snippet validates whether a PDF document conforms to the PDF/E-1 standard, 
 1. The validation results are saved in the log file for review.
 
 ```python
+path_infile = path.join(self.data_dir, infile)
+path_logfile = path.join(self.data_dir, "python", outfile)
 
-    path_infile = path.join(self.data_dir, infile)
-    path_logfile = path.join(self.data_dir, "python", outfile)
-
-    document = ap.Document(path_infile)
-    document.validate(path_logfile, ap.PdfFormat.PDF_E_1)
+document = ap.Document(path_infile)
+document.validate(path_logfile, ap.PdfFormat.PDF_E_1)
 ```
 
 Next example demonstrates how to convert a PDF into PDF/E-1 format, which is an ISO standard tailored for engineering and technical documentation. This format preserves precise layout, graphics, and metadata required for engineering workflows.
@@ -249,22 +246,23 @@ Next example demonstrates how to convert a PDF into PDF/E-1 format, which is an 
 1. Print a confirmation message.
 
 ```python
+from os import path
+import aspose.pdf as ap
 
-    from os import path
-    import aspose.pdf as ap
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+path_logfile = path_outfile.replace(".pdf", "_log.xml")
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-    path_logfile = path_outfile.replace(".pdf","_log.xml")
+document = ap.Document(path_infile)
+options = ap.PdfFormatConversionOptions(
+    path_logfile, ap.PdfFormat.PDF_E_1, ap.ConvertErrorAction.DELETE
+)
 
-    document = ap.Document(path_infile)
-    options =  ap.PdfFormatConversionOptions(path_logfile, ap.PdfFormat.PDF_E_1, ap.ConvertErrorAction.DELETE)
+document.convert(options)
 
-    document.convert(options)
-
-    # Save PDF document
-    document.save(path_outfile)
-    print(infile + " converted into " + outfile)
+# Save PDF document
+document.save(path_outfile)
+print(infile + " converted into " + outfile)
 ```
 
 ## Convert PDF to PDF/X
@@ -283,25 +281,31 @@ Next code snippet converts a PDF document into PDF/X-4 format, which is an ISO s
 1. Print a confirmation message.
 
 ```python
+from os import path
+import aspose.pdf as ap
 
-    from os import path
-    import aspose.pdf as ap
+path_infile = path.join(self.data_dir, infile)
+path_outfile = path.join(self.data_dir, "python", outfile)
+path_logfile = path_outfile.replace(".pdf", "_log.xml")
 
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-    path_logfile = path_outfile.replace(".pdf","_log.xml")
+document = ap.Document(path_infile)
+options = ap.PdfFormatConversionOptions(
+    path_logfile, ap.PdfFormat.PDF_X_4, ap.ConvertErrorAction.DELETE
+)
 
-    document = ap.Document(path_infile)
-    options =  ap.PdfFormatConversionOptions(path_logfile, ap.PdfFormat.PDF_X_4, ap.ConvertErrorAction.DELETE)
+# Provide the name of the external ICC profile file (optional)
+options.icc_profile_file_name = path.join(self.data_dir, "ISOcoated_v2_eci.icc")
+# Provide an output condition identifier and other necessary OutputIntent properties (optional)
+options.output_intent = ap.OutputIntent("FOGRA39")
 
-    # Provide the name of the external ICC profile file (optional)
-    options.icc_profile_file_name = path.join(self.data_dir,"ISOcoated_v2_eci.icc")
-    # Provide an output condition identifier and other necessary OutputIntent properties (optional)
-    options.output_intent = ap.OutputIntent("FOGRA39")
+document.convert(options)
 
-    document.convert(options)
-
-    # Save PDF document
-    document.save(path_outfile)
-    print(infile + " converted into " + outfile)
+# Save PDF document
+document.save(path_outfile)
+print(infile + " converted into " + outfile)
 ```
+
+## Related conversions
+
+- [Convert PDF to Word](/pdf/python-net/convert-pdf-to-word/) for editable content workflows after standards validation.
+- [Convert PDF to HTML](/pdf/python-net/convert-pdf-to-html/) when your target output is web-ready rather than standards-based PDF.

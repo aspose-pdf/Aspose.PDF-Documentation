@@ -1,11 +1,11 @@
 ---
-title: Create Links in PDF file with Python
+title: Create PDF Links in Python
 linktitle: Create Links
 type: docs
 weight: 10
 url: /python-net/create-links/
-description: This section explains how to create links in your PDF document with Python.
-lastmod: "2025-07-17"
+description: Learn how to create internal, external, and remote PDF links in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -139,3 +139,9 @@ def create_link_annotation_go_to_URI_action(infile, outfile):
     page.annotations.append(link)
     document.save(outfile)
 ```
+
+## Related Link Topics
+
+- [Work with PDF links in Python](/pdf/python-net/links/)
+- [Extract links from PDF in Python](/pdf/python-net/extract-links/)
+- [Update links in PDF using Python](/pdf/python-net/update-links/)

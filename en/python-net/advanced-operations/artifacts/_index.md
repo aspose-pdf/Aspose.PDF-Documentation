@@ -1,22 +1,24 @@
 ---
-title: Working with Artifacts in Python via .NET
+title: Work with PDF Artifacts in Python
 linktitle: Working with Artifacts
 type: docs
 weight: 170
 url: /python-net/artifacts/
-description: Aspose.PDF for Python via .NET allows you to add a background image to PDF pages, and get each watermark using Artifact class.
-lastmod: "2025-11-13"
+description: Learn how to work with PDF artifacts in Python to add backgrounds, watermarks, and Bates numbering and count artifact types with Aspose.PDF for Python via .NET.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: Add Artifacts to PDF using Python
-Abstract: This article explores the concept and application of artifacts in PDF documents, particularly focusing on their role in enhancing accessibility and performance. Artifacts are non-content elements, such as decorative or layout components, that do not convey document meaning. The article highlights the use of the `Artifact` class in the Aspose.PDF for Python via .NET library to manage these elements, offering properties like `custom_type`, `contents`, and `opacity` for detailed customization. It also introduces related classes for handling specific artifact types. Practical examples demonstrate operations such as retrieving watermarks, adding background images, counting artifact types, and implementing Bates numbering.
+AlternativeHeadline: Add backgrounds, watermarks, and Bates numbering artifacts in Python
+Abstract: This article explains how to work with PDF artifacts in Aspose.PDF for Python via .NET. Learn what artifacts are, why they matter for accessibility and document layout, and how to add background images, apply watermarks, add Bates numbering, and inspect artifact types in PDF files with Python.
 ---
 
 Artifacts in PDF are graphics objects or other elements that are not part of the actual content of the document. They are usually used for decoration, layout, or background purposes. Examples of artifacts include page headers, footers, separators, or images that do not convey any meaning.
 
 The purpose of artifacts in PDF is to allow the distinction between content and non-content elements. This is important for accessibility, as screen readers and other assistive technologies can ignore artifacts and focus on the relevant content. Artifacts can also improve the performance and quality of PDF documents, as they can be omitted from printing, searching, or copying.
+
+Use this section when you need to create or inspect non-content PDF elements in Python, such as document backgrounds, page watermarks, and Bates numbering marks. The following guides show the main artifact workflows supported by Aspose.PDF for Python via .NET.
 
 To create an element as an artifact in PDF, you need to use the [Artifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) class.
 It contains following useful properties:
@@ -50,7 +52,9 @@ The following classes may also be useful for work with artifacts:
 - [HeaderArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerartifact/)
 - [FooterArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/footerartifact/)
 - [WatermarkArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/watermarkartifact/)
-- [Bates Numbering](https://reference.aspose.com/pdf/python-net/aspose.pdf/)
+- [BatesNArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/)
+
+## Artifact Workflows Covered in This Section
 
 Please review the following sections of the article:
 
@@ -58,3 +62,5 @@ Please review the following sections of the article:
 - [Adding Bates Numbering](/pdf/python-net/add-bates-numbering/) - add Bates Numbering to PDF.
 - [Adding Watermark](/pdf/python-net/add-watermarks/) - how to add watermark to PDF with Python.
 - [Counting Artifacts](/pdf/python-net/counting-artifacts/) - counting Artifacts in PDF using Python.
+
+These tutorials are useful when you need to manage decorative or structural PDF elements without changing the main document content stream.

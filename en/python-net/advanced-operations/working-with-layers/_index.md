@@ -1,126 +1,154 @@
 ---
-title: Working with PDF layers using Python
+title: Work with PDF Layers in Python
 linktitle: Working with PDF layers
 type: docs
 weight: 50
 url: /python-net/work-with-pdf-layers/
-description: This article explains how to lock a PDF layer, extract PDF layer elements, flatten a layered PDF, and merge all layers inside a PDF into one.
-lastmod: "2025-11-16"
+aliases:
+  - /python-net/working-with-pdf-layers/
+description: Learn how to lock, extract, flatten, and merge PDF layers in Python using Aspose.PDF for Python via .NET.
+lastmod: "2026-04-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to manage, lock, extract, flatten, and merge PDF layers in Python
-Abstract: This article explains how to work with PDF layers in Python using Aspose.PDF for .NET, including locking layers, extracting layer elements, flattening layered PDFs, and merging layers.
+Abstract: This article explains how to work with PDF layers in Aspose.PDF for Python via .NET. Learn how to lock optional content layers, extract layer content, flatten layered PDFs, and merge layers into a single result in Python workflows.
 ---
 
-PDF layers allow a document to contain multiple sets of content that can be selectively shown or hidden. Each layer may include text, images, or graphics, and users can toggle them on or off as needed. Layers are especially useful in complex documents where content must be organized or separated. The examples below use the [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) and [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) APIs and manipulate [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) objects via the page's `layers` collection.
+PDF layers (optional content groups) allow a document to contain multiple sets of content that can be shown or hidden. They are useful for maps, technical drawings, and documents that need alternate views.
+
+The examples in this article use [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/), [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/), and [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) APIs in Aspose.PDF for Python via .NET.
+
+Use this page when you need to:
+
+- Create layers in a PDF.
+- Lock or unlock layers.
+- Extract layer content.
+- Flatten layers for fixed output.
+- Merge layers into one.
+
+## Add layers to PDF
+
+This example creates a new PDF and adds three layers (red, green, blue), each with its own line drawing.
+
+```python
+import aspose.pdf as ap
+from os import path
+
+
+def add_colored_layers(outfile: str, data_dir: str) -> None:
+    path_outfile = path.join(data_dir, outfile)
+
+    document = ap.Document()
+    page = document.pages.add()
+
+    def add_layer(layer_id: str, layer_name: str, color: tuple, y_position: int):
+        layer = ap.Layer(layer_id, layer_name)
+        layer.contents.append(ap.operators.SetRGBColorStroke(*color))
+        layer.contents.append(ap.operators.MoveTo(500, y_position))
+        layer.contents.append(ap.operators.LineTo(400, y_position))
+        layer.contents.append(ap.operators.Stroke())
+        page.layers.append(layer)
+
+    add_layer("oc1", "Red Line", (1, 0, 0), 700)
+    add_layer("oc2", "Green Line", (0, 1, 0), 750)
+    add_layer("oc3", "Blue Line", (0, 0, 1), 800)
+
+    document.save(path_outfile)
+```
 
 ## Lock a PDF layer
 
-With Aspose.PDF for Python via .NET you can open a PDF (see [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)), lock a specific [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) on the first [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/), and save the document with the changes.
+Locking a layer prevents users from changing its visibility in compatible PDF viewers.
 
-Available methods and property on the [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) object:
+Layer members:
 
- - `layer.lock()` – Locks the layer. (see [`Layer.lock()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/#methods))
- - `layer.unlock()` – Unlocks the layer. (see [`Layer.unlock()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/#methods))
- - `layer.locked` – Returns the current lock state. (see [`Layer.locked`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/#properties))
-
-1. Open the PDF document (see [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
-1. Retrieve the first page using the document's [`Pages`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#properties) collection (see [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/)).
-1. Select the [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) to lock from `page.layers`.
-1. Call `layer.lock()` to prevent users from toggling the layer’s visibility.
-1. Save the updated document using [`Document.save()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/#methods).
+- `layer.lock()` - Lock the layer.
+- `layer.unlock()` - Unlock the layer.
+- `layer.locked` - Check whether the layer is currently locked.
 
 ```python
-
 import aspose.pdf as ap
 
-def lock_layer(path_infile, path_outfile):
+
+def lock_layer(path_infile: str, path_outfile: str) -> None:
     with ap.Document(path_infile) as document:
         page = document.pages[1]
+        if not page.layers:
+            return
+
         layer = page.layers[0]
-
-        # Lock the layer
         layer.lock()
-
-        # Save updated PDF
         document.save(path_outfile)
 ```
 
 ## Extract PDF layer elements
 
-Aspose.PDF allows you to extract each [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) from a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) and save it as a separate PDF file.
-
-To create a new PDF from a layer, the following code snippet can be used (the `layers` collection is accessed via `Page.layers`):
+You can save each layer from a page to a separate PDF file:
 
 ```python
-
 import aspose.pdf as ap
 
-def save_layers(path_infile, path_outfile):
+
+def save_layers(path_infile: str, path_out_prefix: str) -> None:
     with ap.Document(path_infile) as document:
         layers = document.pages[1].layers
-
-        # Save each layer to a new PDF with a unique filename
         for i, layer in enumerate(layers):
-            layer.save(f"{path_outfile}_layer_{i}.pdf")
+            layer.save(f"{path_out_prefix}_layer_{i}.pdf")
 ```
 
-You can also save layers into a stream:
+You can also save layer content into memory streams:
 
 ```python
-
-import aspose.pdf as ap
 import io
+import aspose.pdf as ap
 
-def save_layers_to_stream(path_infile):
+
+def save_layers_to_stream(path_infile: str):
     with ap.Document(path_infile) as document:
-        layers = document.pages[1].layers
         streams = []
-        for layer in layers:
-            layer_stream = io.BytesIO()
-            layer.save(layer_stream)
-            layer_stream.seek(0)
-            streams.append(layer_stream)
+        for layer in document.pages[1].layers:
+            stream = io.BytesIO()
+            layer.save(stream)
+            stream.seek(0)
+            streams.append(stream)
         return streams
 ```
 
 ## Flatten a layered PDF
 
-Flattening makes a [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) permanent on the page, removing its toggle functionality.
+Flattening turns layer content into regular page content and removes layer toggle behavior.
 
 ```python
-
 import aspose.pdf as ap
 
-def flatten_layers(path_infile, path_outfile):
+
+def flatten_layers(path_infile: str, path_outfile: str) -> None:
     with ap.Document(path_infile) as document:
         page = document.pages[1]
-
-        # Flatten each layer
         for layer in page.layers:
             layer.flatten(cleanup_content_stream=True)
 
         document.save(path_outfile)
 ```
 
-The `cleanup_content_stream` parameter controls whether optional content group markers (OCG markers) are removed. Setting it to `False` speeds up flattening. See the [`Layer.flatten()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/#methods) method for details.
+The `cleanup_content_stream` parameter controls whether optional content markers are removed. See [`Layer.flatten()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/#methods) for details.
 
-## Merge All Layers inside the PDF into one
+## Merge all PDF layers into one
 
-You can merge all layers (or specific ones) into a single new [`Layer`](https://reference.aspose.com/pdf/python-net/aspose.pdf/layer/) (the merge API is on the [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) object).
-
-Methods on the [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) object:
-
- - `page.merge_layers(new_layer_name)` — merge all layers into a new layer name (see [`Page.MergeLayers()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods)).
- - `page.merge_layers(new_layer_name, new_optional_content_group_id)` — merge using a custom optional content group ID (see [`Page.MergeLayers()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods)).
+Use [`Page.merge_layers()`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#methods) to merge all page layers into one new layer.
 
 ```python
-
 import aspose.pdf as ap
 
-def merge_layers(path_infile, path_outfile, new_layer_name, optional_group_id=None):
+
+def merge_layers(
+    path_infile: str,
+    path_outfile: str,
+    new_layer_name: str,
+    optional_group_id: str = None,
+) -> None:
     with ap.Document(path_infile) as document:
         page = document.pages[1]
 
@@ -131,3 +159,10 @@ def merge_layers(path_infile, path_outfile, new_layer_name, optional_group_id=No
 
         document.save(path_outfile)
 ```
+
+## Related Topics
+
+- [Advanced PDF operations in Python](/pdf/python-net/advanced-operations/)
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Work with PDF pages in Python](/pdf/python-net/working-with-pages/)
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
