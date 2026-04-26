@@ -111,3 +111,10 @@ def delete_bates_numbering(infile, outfile):
         ap.PageCollectionExtensions.delete_bates_numbering(document.pages)
         document.save(outfile)
 ```
+
+## Related Artifact Topics
+
+- [Work with PDF artifacts in Python](/pdf/python-net/artifacts/)
+- [Add watermarks to PDF in Python](/pdf/python-net/add-watermarks/)
+- [Add PDF backgrounds in Python](/pdf/python-net/add-backgrounds/)
+- [Count artifact types in PDF files](/pdf/python-net/counting-artifacts/)

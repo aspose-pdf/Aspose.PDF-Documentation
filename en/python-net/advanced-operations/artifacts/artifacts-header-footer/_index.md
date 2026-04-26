@@ -110,3 +110,10 @@ def delete_header_footer_artifact(infile, outfile):
 
         document.save(outfile)
 ```
+
+## Related Artifact Topics
+
+- [Work with PDF artifacts in Python](/pdf/python-net/artifacts/)
+- [Add PDF backgrounds in Python](/pdf/python-net/add-backgrounds/)
+- [Add Bates numbering to PDF in Python](/pdf/python-net/add-bates-numbering/)
+- [Count artifact types in PDF files](/pdf/python-net/counting-artifacts/)

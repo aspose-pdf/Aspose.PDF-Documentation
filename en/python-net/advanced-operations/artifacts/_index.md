@@ -63,3 +63,5 @@ Please review the following sections of the article:
 - [Adding Watermark](/pdf/python-net/add-watermarks/) - how to add watermark to PDF with Python.
 - [Counting Artifacts](/pdf/python-net/counting-artifacts/) - counting Artifacts in PDF using Python.
 - [Manage PDF Headers and Footers](/pdf/python-net/artifacts-header-footer/) - manage headers and footers in PDF documents.
+
+These tutorials are useful when you need to manage decorative or structural PDF elements without changing the main document content stream.
