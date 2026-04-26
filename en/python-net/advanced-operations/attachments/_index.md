@@ -21,4 +21,4 @@ You will learn how to add attachments to pdf, get the information of an attachme
 - [Adding attachment to a PDF document](/pdf/python-net/add-attachment-to-pdf-document/)
 - [Removing attachment from an existing PDF](/pdf/python-net/removing-attachment-from-an-existing-pdf/)
 - [Portfolio](/pdf/python-net/portfolio/)
-
+- [Extract Attachments](/pdf/python-net/extract-attachment/)

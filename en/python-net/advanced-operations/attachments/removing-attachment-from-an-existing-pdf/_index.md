@@ -25,15 +25,14 @@ The following code snippet shows how to remove attachments from a PDF document.
 
 ```python
 
-    import aspose.pdf as ap
+from os import path
+import aspose.pdf as ap
+import sys
 
-    # Open document
-    document = ap.Document(input_pdf)
-
-    # Delete all attachments
-    document.embedded_files.delete()
-
-    # Save updated file
-    document.save(output_pdf)
+def remove_attachment(infile, attachment_name, outfile):
+    # Open PDF document
+    with ap.Document(infile) as document:
+        document.embedded_files.delete_by_key(attachment_name)
+        document.save(outfile)
 ```
 

@@ -31,9 +31,11 @@ The code below results in the following portfolio.
 ![A PDF Portfolio created with Aspose.PDF for Python](working-with-pdf-portfolio_1.jpg)
 
 ```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-    import aspose.pdf as ap
-
+def create_pdf_portfolio(input_files, outfile):
     # Instantiate Document Object
     document = ap.Document()
 
@@ -41,9 +43,9 @@ The code below results in the following portfolio.
     document.collection = ap.Collection()
 
     # Get Files to add to Portfolio
-    excel = ap.FileSpecification(input_excel)
-    word = ap.FileSpecification(input_doc)
-    image = ap.FileSpecification(input_jpg)
+    excel = ap.FileSpecification(input_files[0])
+    word = ap.FileSpecification(input_files[1])
+    image = ap.FileSpecification(input_files[2])
 
     # Provide description of the files
     excel.description = "Excel File"
@@ -56,7 +58,7 @@ The code below results in the following portfolio.
     document.collection.append(image)
 
     # Save Portfolio document
-    document.save(output_pdf)
+    document.save(outfile)
 ```
 
 ## Remove Files from PDF Portfolio
@@ -64,14 +66,16 @@ The code below results in the following portfolio.
 In order to delete/remove files from PDF portfolio, try using the following code lines.
 
 ```python
+from os import path
+import aspose.pdf as ap
+import sys
 
-    import aspose.pdf as ap
-
+def remove_files_from_PDF_Portfolio(infile, outfile):
     # Open document
-    document = ap.Document(input_pdf)
+    document = ap.Document(infile)
     document.collection.delete()
 
     # Save updated file
-    document.save(output_pdf)
+    document.save(outfile)
 ```
 
