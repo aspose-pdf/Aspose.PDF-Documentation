@@ -25,4 +25,4 @@ Use these articles when you need to embed supporting files inside a PDF, remove 
 - [Adding attachment to a PDF document](/pdf/python-net/add-attachment-to-pdf-document/)
 - [Removing attachment from an existing PDF](/pdf/python-net/removing-attachment-from-an-existing-pdf/)
 - [Portfolio](/pdf/python-net/portfolio/)
-
+- [Extract Attachments](/pdf/python-net/extract-attachment/)
