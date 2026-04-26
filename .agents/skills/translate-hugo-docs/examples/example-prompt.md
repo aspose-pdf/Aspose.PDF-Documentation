@@ -1,0 +1,1 @@
+Translate `en/python-net/basic-operations` into Spanish using the `translate-hugo-docs` skill. Preserve Hugo front matter, code, links, reference links, and shortcodes. Write the result to `en\python-net\basic-operations`. Report any validation errors instead of silently writing broken Markdown.

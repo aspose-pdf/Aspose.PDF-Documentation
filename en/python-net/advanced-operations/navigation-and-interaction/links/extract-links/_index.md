@@ -1,11 +1,11 @@
 ---
-title: Extract Links from the PDF File using Python
+title: Extract PDF Links in Python
 linktitle: Extract Links
 type: docs
 weight: 30
 url: /python-net/extract-links/
-description: Discover how to extract hyperlinks from PDF documents in Python using Aspose.PDF for content management and link analysis.
-lastmod: "2025-07-17"
+description: Learn how to extract link annotations and hyperlinks from PDF documents in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -111,3 +111,9 @@ This is useful for tasks like:
                 # Print the page number and the link's URI
                 print(f"Page {annotation.page_index}, URI: {action.uri}")
 ```
+
+## Related Link Topics
+
+- [Work with PDF links in Python](/pdf/python-net/links/)
+- [Create PDF links in Python](/pdf/python-net/create-links/)
+- [Update links in PDF using Python](/pdf/python-net/update-links/)

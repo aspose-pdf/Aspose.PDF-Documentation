@@ -1,11 +1,11 @@
 ---
-title: Add Circle Object to PDF file
+title: Add Circle Shapes to PDF in Python
 linktitle: Add Circle
 type: docs
 weight: 20
 url: /python-net/add-circle/
-description: This article explains how to create a circle object to your PDF using Aspose.PDF for Python via .NET.
-lastmod: "2025-05-14"
+description: Learn how to draw and fill circle shapes in PDF files in Python.
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -112,3 +112,9 @@ Let's see the result of adding a filled Circle:
 
 ![Filled Circle](filled_circle.png)
 
+## Related Graph Topics
+
+- [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
+- [Add arc shapes to PDF in Python](/pdf/python-net/add-arc/)
+- [Add ellipse shapes to PDF in Python](/pdf/python-net/add-ellipse/)
+- [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)

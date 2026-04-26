@@ -1,11 +1,11 @@
 ---
-title: Update Links in PDF using Python
+title: Update PDF Links in Python
 linktitle: Update Links
 type: docs
 weight: 20
 url: /python-net/update-links/
-description: Update links in PDF programmatically. This guide is about how to update links in PDF in Python language.
-lastmod: "2025-07-17"
+description: Learn how to update PDF link appearance and destinations in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -30,6 +30,7 @@ For each of these link annotations, the script retrieves its rectangular boundar
 
     import aspose.pdf as ap
     from os import path
+    from aspose.pycore import cast, is_assignable
 
     path_infile = path.join(self.dataDir, infile)
     path_outfile = path.join(self.dataDir, outfile)
@@ -111,33 +112,40 @@ Once the paths are in place, the original document is loaded using the Aspose.PD
 
     import aspose.pdf as ap
     from os import path
+    from aspose.pycore import cast, is_assignable
 
-path_infile = path.join(self.dataDir, infile)
-path_outfile = path.join(self.dataDir, outfile)
+    path_infile = path.join(self.dataDir, infile)
+    path_outfile = path.join(self.dataDir, outfile)
 
-# Load the PDF document
-document = ap.Document(path_infile)
+    # Load the PDF document
+    document = ap.Document(path_infile)
 
-# Find all LINK annotations on the first page
-link_annotations = [
-    a
-    for a in document.pages[1].annotations
-    if (a.annotation_type == ap.annotations.AnnotationType.LINK)
-]
+    # Find all LINK annotations on the first page
+    link_annotations = [
+        a
+        for a in document.pages[1].annotations
+        if (a.annotation_type == ap.annotations.AnnotationType.LINK)
+    ]
 
-# Loop through annotations and replace target URI
-for la in link_annotations:
-    # Ensure the annotation is a LinkAnnotation
-    if is_assignable(la, ap.annotations.LinkAnnotation):
-        annotation = cast(ap.annotations.LinkAnnotation, la)
-        
-        # Check if the action is of type GoToURIAction
-        if is_assignable(annotation.action, ap.annotations.GoToURIAction):
-            action = cast(ap.annotations.GoToURIAction, annotation.action)
-            
-            # Replace the existing URI with Google
-            action.uri = "https://www.google.com"
+    # Loop through annotations and replace target URI
+    for la in link_annotations:
+        # Ensure the annotation is a LinkAnnotation
+        if is_assignable(la, ap.annotations.LinkAnnotation):
+            annotation = cast(ap.annotations.LinkAnnotation, la)
 
-# Save the modified document to output path
-document.save(path_outfile)
+            # Check if the action is of type GoToURIAction
+            if is_assignable(annotation.action, ap.annotations.GoToURIAction):
+                action = cast(ap.annotations.GoToURIAction, annotation.action)
+
+                # Replace the existing URI with Google
+                action.uri = "https://www.google.com"
+
+    # Save the modified document to output path
+    document.save(path_outfile)
 ```
+
+## Related Link Topics
+
+- [Work with PDF links in Python](/pdf/python-net/links/)
+- [Create PDF links in Python](/pdf/python-net/create-links/)
+- [Extract PDF links in Python](/pdf/python-net/extract-links/)

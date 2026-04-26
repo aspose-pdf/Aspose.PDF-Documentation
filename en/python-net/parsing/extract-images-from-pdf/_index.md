@@ -4,29 +4,28 @@ linktitle: Extract Images from PDF
 type: docs
 weight: 20
 url: /python-net/extract-images-from-the-pdf-file/
-description: How to extract a part of the image from PDF using Aspose.PDF for Python
-lastmod: "2023-03-13"
+description: Learn how to extract embedded images from PDF files with Aspose.PDF for Python.
+lastmod: "2026-04-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: How to Extract Images from PDF via Python
-Abstract: This article provides a concise guide on extracting embedded images from a PDF document using Python. The process involves three main steps - loading the PDF document, accessing the image resource, and saving the image to a file. The code snippet utilizes the Aspose.PDF library to facilitate these operations. Initially, the PDF document is loaded from a specified path, and the desired image is accessed from the resources of the first page. Finally, the image is saved to a specified output file using a file I/O operation, allowing for further analysis, editing, or reuse in other documents.
+Abstract: This article explains how to extract embedded images from a PDF document with Aspose.PDF for Python. It covers opening the source PDF with the Document class, accessing an image from the page resources collection, and saving the extracted XImage to an external file for reuse, inspection, or downstream processing.
 ---
 
-This code snippets extracts embedded images from a PDF document for separate analysis, editing, or reuse in other documents:
+Use [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) to open the PDF, then access the page resources to retrieve an [XImage](https://reference.aspose.com/pdf/python-net/aspose.pdf/ximage/) object and save it as a separate file. This approach is useful when you need to reuse images, inspect extracted assets, or build image-processing workflows from PDF content.
 
-1. Load the PDF Document
-1. Access the Image Resource
-1. Save the Image to a File
+1. Open the PDF as a `Document`.
+1. Access the image resource from the target page.
+1. Retrieve the required `XImage` from the page image collection.
+1. Save the extracted image to an output file.
 
 ```python
 
     import aspose.pdf as apdf
     from io import FileIO
     from os import path
-    import json
-    from aspose.pycore import cast, is_assignable
 
     path_infile = path.join(self.dataDir, infile)
     path_outfile = path.join(self.dataDir, outfile)

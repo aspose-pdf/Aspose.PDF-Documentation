@@ -1,11 +1,11 @@
 ---
-title: How to Merge PDF using Python
+title: Merge PDF Files in Python
 linktitle: Merge PDF files
 type: docs
 weight: 50
 url: /python-net/merge-pdf-documents/
-description: This page explain how to merge PDF documents into a single PDF file with Python.
-lastmod: "2025-02-27"
+description: Learn how to merge multiple PDF files into a single document in Python.
+lastmod: "2026-04-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -54,4 +54,11 @@ Combining multiple PDF documents into a single file:
 [Aspose.PDF Merger](https://products.aspose.app/pdf/merger) is an online free web application that allows you to investigate how presentation merging functionality works.
 
 [![Aspose.PDF Merger](merger.png)](https://products.aspose.app/pdf/merger)
+
+## Related Document Topics
+
+- [Work with PDF documents in Python](/pdf/python-net/working-with-documents/)
+- [Split PDF files in Python](/pdf/python-net/split-document/)
+- [Optimize PDF files in Python](/pdf/python-net/optimize-pdf/)
+- [Manipulate PDF documents in Python](/pdf/python-net/manipulate-pdf-document/)
 
