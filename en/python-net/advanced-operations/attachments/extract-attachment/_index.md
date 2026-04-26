@@ -25,10 +25,7 @@ Extract a single embedded file from a PDF document using Python and Aspose.PDF. 
 1. Extract Attachment Content.
 
 ```python
-from os import path
 import aspose.pdf as ap
-import sys
-from aspose.pycore import cast
 
 def extract_single_attachment(infile, attachment_name, outfile):
     with ap.Document(infile) as document:
