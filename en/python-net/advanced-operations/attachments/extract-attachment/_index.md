@@ -18,7 +18,6 @@ Abstract: PDF attachments are widely used to store supporting documents, reports
 
 Extract a single embedded file from a PDF document using Python and Aspose.PDF. It searches for an attachment by name, retrieves its content, and saves it as a separate file. This is useful for accessing embedded documents such as reports, logs, or supporting files stored inside PDF.
 
-1. Load Configuration Module.
 1. Define Function 'extract_single_attachment()'.
 1. Open PDF Document.
 1. Search for Attachment.
@@ -88,7 +87,6 @@ Extract an embedded file from a FileAttachment annotation in a PDF using Python 
 ```python
 from os import path
 import aspose.pdf as ap
-import sys
 from aspose.pycore import cast
 
 def extract_file_attachment_annotation(infile, output_dir):
@@ -100,10 +98,17 @@ def extract_file_attachment_annotation(infile, output_dir):
 
         # Find first FileAttachment annotation
         file_attachment = next(
-            annot
-            for annot in page.annotations
-            if annot.annotation_type == ap.annotations.AnnotationType.FILE_ATTACHMENT
+            (
+                annot
+                for annot in page.annotations
+                if annot.annotation_type == ap.annotations.AnnotationType.FILE_ATTACHMENT
+            ),
+            None,
         )
+
+        if file_attachment is None:
+            print("No FileAttachment annotation found on the first page.")
+            return
 
         # Cast to FileAttachmentAnnotation
         faa = cast(ap.annotations.FileAttachmentAnnotation, file_attachment)

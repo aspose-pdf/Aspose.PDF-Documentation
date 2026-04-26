@@ -27,7 +27,6 @@ The [EmbeddedFileCollection](https://reference.aspose.com/pdf/python-net/aspose.
 ```python
 from os import path
 import aspose.pdf as ap
-import sys
 
 def add_attachments(infile, attachment_path, outfile):
     with ap.Document(infile) as document:

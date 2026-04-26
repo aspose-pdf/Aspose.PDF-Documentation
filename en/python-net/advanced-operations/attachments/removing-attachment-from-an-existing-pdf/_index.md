@@ -27,10 +27,10 @@ The following code snippet shows how to remove attachments from a PDF document.
 
 import aspose.pdf as ap
 
-def remove_attachment(infile, attachment_name, outfile):
+def remove_attachment(infile, outfile):
     # Open PDF document
     with ap.Document(infile) as document:
-        document.embedded_files.delete_by_key(attachment_name)
+        document.embedded_files.delete()
         document.save(outfile)
 ```
 

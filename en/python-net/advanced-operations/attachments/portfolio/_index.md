@@ -31,9 +31,7 @@ The code below results in the following portfolio.
 ![A PDF Portfolio created with Aspose.PDF for Python](working-with-pdf-portfolio_1.jpg)
 
 ```python
-from os import path
 import aspose.pdf as ap
-import sys
 
 def create_pdf_portfolio(input_files, outfile):
     # Instantiate Document Object
@@ -66,9 +64,7 @@ def create_pdf_portfolio(input_files, outfile):
 In order to delete/remove files from PDF portfolio, try using the following code lines.
 
 ```python
-from os import path
 import aspose.pdf as ap
-import sys
 
 def remove_files_from_pdf_portfolio(infile, outfile):
     # Open document
