@@ -93,29 +93,29 @@ from aspose.pycore import cast
 
 def extract_file_attachment_annotation(infile, output_dir):
     # Open PDF document
-    document = ap.Document(infile)
+    with ap.Document(infile) as document:
 
-    # Get first page
-    page = document.pages[1]
+        # Get first page
+        page = document.pages[1]
 
-    # Find first FileAttachment annotation
-    file_attachment = next(
-        annot
-        for annot in page.annotations
-        if annot.annotation_type == ap.annotations.AnnotationType.FILE_ATTACHMENT
-    )
+        # Find first FileAttachment annotation
+        file_attachment = next(
+            annot
+            for annot in page.annotations
+            if annot.annotation_type == ap.annotations.AnnotationType.FILE_ATTACHMENT
+        )
 
-    # Cast to FileAttachmentAnnotation
-    faa = cast(ap.annotations.FileAttachmentAnnotation, file_attachment)
+        # Cast to FileAttachmentAnnotation
+        faa = cast(ap.annotations.FileAttachmentAnnotation, file_attachment)
 
-    # Access embedded file
-    file_spec = faa.file
-    print(f"File name: {file_spec.name}")
+        # Access embedded file
+        file_spec = faa.file
+        print(f"File name: {file_spec.name}")
 
-    # Save embedded file to disk
-    output_path = path.join(output_dir, f"extracted-{file_spec.name}")
-    with open(output_path, "wb") as f:
-        f.write(file_spec.contents.read())
+        # Save embedded file to disk
+        output_path = path.join(output_dir, f"extracted-{file_spec.name}")
+        with open(output_path, "wb") as f:
+            f.write(file_spec.contents.read())
 
-    print(f"Extracted to: {output_path}")
+        print(f"Extracted to: {output_path}")
 ```
