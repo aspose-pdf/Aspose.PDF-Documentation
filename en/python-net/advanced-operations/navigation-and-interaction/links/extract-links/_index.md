@@ -27,36 +27,24 @@ This can be used for debugging, analytics, or automated updates to existing link
 1. Print annotation details. Output the page index and rectangle (location) of each link.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
+from aspose.pycore import cast, is_assignable
 
-    import aspose.pdf as ap
-    from os import path
+def extract_link_annotation(infile):
 
-    # Construct full path for the input PDF file
-    path_infile = path.join(self.dataDir, infile)
-
-    # (Optional) You can construct the output file path if needed later
-    # path_outfile = path.join(self.dataDir, outfile)
-
-    # Load the PDF document
-    document = ap.Document(path_infile)
-
-    # Retrieve all annotations from the first page and filter only LinkAnnotations
+    document = ap.Document(infile)
     link_annotations = [
         a
         for a in document.pages[1].annotations
         if (a.annotation_type == ap.annotations.AnnotationType.LINK)
     ]
 
-    # Iterate over each link annotation
     for la in link_annotations:
-        # Check if the annotation is a LinkAnnotation (type-safe check)
         if is_assignable(la, ap.annotations.LinkAnnotation):
-            # Safely cast the annotation to LinkAnnotation type
             annotation = cast(ap.annotations.LinkAnnotation, la)
-            
-            # Print annotation location and page index
             print(f"Page: {annotation.page_index}, location: {annotation.rect}")
-            print(annotation.page_index)
 ```
 
 ## Extract HyperLinks from the PDF File
@@ -76,38 +64,23 @@ This is useful for tasks like:
 1. Extract and print the URI and page index. Use .uri to get the external link and .page_index for context.
 
 ```python
+import aspose.pdf as ap
+import sys
+from os import path
+from aspose.pycore import cast, is_assignable
 
-    import aspose.pdf as ap
-    from os import path
-
-    # Construct the full path for the input PDF file
-    path_infile = path.join(self.dataDir, infile)
-
-    # Optional: construct output file path if needed
-    # path_outfile = path.join(self.dataDir, outfile)
-
-    # Load the input PDF document
-    document = ap.Document(path_infile)
-
-    # Retrieve all annotations from the first page and filter only link annotations
+def extract_hyperlinks(infile):
+    document = ap.Document(infile)
     link_annotations = [
         a
         for a in document.pages[1].annotations
-        if a.annotation_type == ap.annotations.AnnotationType.LINK
+        if (a.annotation_type == ap.annotations.AnnotationType.LINK)
     ]
 
-    # Iterate through filtered link annotations
     for la in link_annotations:
-        # Check if the annotation is a LinkAnnotation (safe type check)
         if is_assignable(la, ap.annotations.LinkAnnotation):
-            # Cast the annotation to LinkAnnotation to access link-specific properties
             annotation = cast(ap.annotations.LinkAnnotation, la)
-
-            # Check if the link's action is of type GoToURIAction (external web link)
             if is_assignable(annotation.action, ap.annotations.GoToURIAction):
-                # Cast the action to GoToURIAction to access the URI property
                 action = cast(ap.annotations.GoToURIAction, annotation.action)
-
-                # Print the page number and the link's URI
-                print(f"Page {annotation.page_index}, URI: {action.uri}")
+                print(f"Page {annotation.page_index}, URI:{action.uri}")
 ```
