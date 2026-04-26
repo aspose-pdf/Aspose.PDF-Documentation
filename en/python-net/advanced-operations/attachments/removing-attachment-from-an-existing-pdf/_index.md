@@ -25,9 +25,7 @@ The following code snippet shows how to remove attachments from a PDF document.
 
 ```python
 
-from os import path
 import aspose.pdf as ap
-import sys
 
 def remove_attachment(infile, attachment_name, outfile):
     # Open PDF document
