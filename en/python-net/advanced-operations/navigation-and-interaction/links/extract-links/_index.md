@@ -84,3 +84,9 @@ def extract_hyperlinks(infile):
                 action = cast(ap.annotations.GoToURIAction, annotation.action)
                 print(f"Page {annotation.page_index}, URI:{action.uri}")
 ```
+
+## Related Link Topics
+
+- [Work with PDF links in Python](/pdf/python-net/links/)
+- [Create PDF links in Python](/pdf/python-net/create-links/)
+- [Update links in PDF using Python](/pdf/python-net/update-links/)
