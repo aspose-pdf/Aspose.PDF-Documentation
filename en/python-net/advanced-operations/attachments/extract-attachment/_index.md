@@ -52,11 +52,6 @@ def extract_single_attachment(infile, attachment_name, outfile):
 This helper function prints metadata information from a file specification object. It is typically used when working with embedded file attachments in PDFs using Aspose.PDF, allowing developers to inspect details such as checksum, creation date, modification date, and file size.
 
 ```python
-from os import path
-import aspose.pdf as ap
-import sys
-from aspose.pycore import cast
-
 def _print_file_params(params):
     """Helper to print file specification parameters."""
     if params:
