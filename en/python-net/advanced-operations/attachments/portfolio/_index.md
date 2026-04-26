@@ -70,7 +70,7 @@ from os import path
 import aspose.pdf as ap
 import sys
 
-def remove_files_from_PDF_Portfolio(infile, outfile):
+def remove_files_from_pdf_portfolio(infile, outfile):
     # Open document
     document = ap.Document(infile)
     document.collection.delete()
