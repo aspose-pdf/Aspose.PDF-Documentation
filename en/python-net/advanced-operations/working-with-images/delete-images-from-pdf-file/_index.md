@@ -31,14 +31,12 @@ To delete an image from a PDF file:
 The following code snippet shows how to delete an image from a PDF file.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
 
-    import aspose.pdf as ap
-    from os import path
-
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, outfile)
-
-    document = ap.Document(path_infile)
+def delete_image(infile, outfile):
+    document = ap.Document(infile)
     document.pages[1].resources.images.delete(1)
-    document.save(path_outfile)
+    document.save(outfile)
 ```

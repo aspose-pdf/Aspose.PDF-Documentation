@@ -23,21 +23,16 @@ This example demonstrates how to insert an image into a specific position on a P
 1. Save the updated PDF.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
+from io import FileIO
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
-
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-
-    document = ap.Document(path_infile)
-    page = document.pages[1]
-    page.add_image(
-        path.join(self.data_dir, image_file),
-        ap.Rectangle(20, 730, 120, 830, True),
-    )
-    document.save(path_outfile)
+def add_image(image_file, outfile):
+    document = ap.Document()
+    page = document.pages.add()
+    page.add_image(image_file, ap.Rectangle(20, 730, 120, 830, True))
+    document.save(outfile)
 ```
 
 ## Add an Image Using Operators
@@ -62,23 +57,21 @@ Steps:
 1. Save the resulting PDF.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
+from io import FileIO
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
-
-    path_infile = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-
+def add_image_using_operators(image_file, outfile):
     document = ap.Document()
     page = document.pages.add()
-    page.set_page_size(842,595)
+    page.set_page_size(842, 595)
 
     # Get page resources
     resources_images = page.resources.images
 
     # Add image to resources
-    image_stream = FileIO(path.join(self.data_dir, path_infile), "rb")
+    image_stream = FileIO(image_file, "rb")
     image_id = resources_images.add(image_stream)
 
     x_image = list(resources_images)[-1]
@@ -117,7 +110,7 @@ Steps:
     # Add operators to page contents
     page.contents.add(operators)
 
-    document.save(path_outfile)
+    document.save(outfile)
 ```
 
 ## Add Image with Alternative Text
@@ -133,22 +126,17 @@ This example shows how to add an image to a PDF page and assign alternative text
 1. Save the resulting PDF.
 
 ```python
+import sys
+import aspose.pdf as ap
+from os import path
+from io import FileIO
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
-
-    path_image_file = path.join(self.data_dir, image_file)
-    path_outfile = path.join(self.data_dir, "python", outfile)
-
+def add_image_set_alternative_text_for_image(image_file, outfile):
     document = ap.Document()
     page = document.pages.add()
-    page.set_page_size(842,595)
+    page.set_page_size(842, 595)
 
-    page.add_image(
-        path_image_file,
-        ap.Rectangle(0, 0, 842, 595, True),
-    )
+    page.add_image(image_file, ap.Rectangle(0, 0, 842, 595, True))
 
     resources_images = page.resources.images
     alt_text = "Alternative text for image"
@@ -156,7 +144,73 @@ This example shows how to add an image to a PDF page and assign alternative text
     result = x_image.try_set_alternative_text(alt_text, page)
 
     # If set is successful, then get the alternative text for the image
-    if (result):
-        print ("Text has been added successfuly")
-    document.save(path_outfile)
+    if result:
+        print("Text has been added successfuly")
+    document.save(outfile)
+```
+
+## Add an Image to a PDF with Flate Compression
+
+Insert an image into a PDF document using Python and Aspose.PDF while applying Flate compression. The script adds the image to page resources, positions it with a transformation matrix, and draws it onto the page for efficient PDF image embedding.
+
+1. Create New PDF Document.
+1. Access Page Image Resources.
+1. Load Image File.
+1. Add Image with Flate Compression.
+1. Save Graphics State.
+1. Define Placement Coordinates.
+1. Create Placement Rectangle.
+1. Build Transformation Matrix.
+1. Apply Matrix to Page.
+1. Draw Image.
+1. Restore Graphics State.
+1. Save PDF.
+
+```python
+import sys
+import aspose.pdf as ap
+from os import path
+from io import FileIO
+
+def add_image_to_pdf_with_flate_compression(image_file, outfile):
+    document = ap.Document()
+    page = document.pages.add()
+
+    # Get page resources
+    resources_images = page.resources.images
+
+    # Add image to resources
+    image_stream = FileIO(image_file, "rb")
+    image_id = resources_images.add(image_stream, ap.ImageFilterType.FLATE)
+
+    # Save the current graphics state
+    page.contents.add([ap.operators.GSave()])
+
+    # Set coordinates for the image placement
+    lowerLeftX = 0
+    lowerLeftY = 0
+    upperRightX = 600
+    upperRightY = 600
+
+    rectangle = ap.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY, True)
+
+    # Set transformation matrix (position and size)
+    matrix = ap.Matrix(
+        rectangle.urx - rectangle.llx,
+        0,
+        0,
+        rectangle.ury - rectangle.lly,
+        rectangle.llx,
+        rectangle.lly,
+    )
+
+    # Use ConcatenateMatrix operator to define how the image must be placed
+    page.contents.add([ap.operators.ConcatenateMatrix(matrix)])
+    page.contents.add([ap.operators.Do(image_id)])
+
+    # Restore the graphics state
+    page.contents.add([ap.operators.GRestore()])
+
+    # Save the document
+    document.save(outfile)
 ```

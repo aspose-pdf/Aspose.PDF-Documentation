@@ -20,17 +20,15 @@ Do you need to separate images from your PDF files? For simplified management, a
 1. Save the extracted image using 'xImage.save(output_image)'.
 
 ```python
+import sys
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
-
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, outfile)
-
-    document = ap.Document(path_infile)
+def extract_image(infile, outfile):
+    document = ap.Document(infile)
     xImage = document.pages[1].resources.images[1]
-    with FileIO(path_outfile, "w") as output_image:
+    with FileIO(outfile, "w") as output_image:
         xImage.save(output_image)
 ```
 
@@ -48,29 +46,23 @@ This example extracts images located within a specified rectangular region on a 
 1. Increment the index for each saved image.
 
 ```python
+import sys
+import aspose.pdf as ap
+from io import FileIO
+from os import path
 
-    import aspose.pdf as ap
-    from io import FileIO
-    from os import path
-
-    path_infile = path.join(self.data_dir, infile)
-    path_outfile = path.join(self.data_dir, outfile)
-
+def extract_image_from_specific_region(infile, outfile):
     rectangle = ap.Rectangle(0, 0, 590, 590, True)
 
-    document = ap.Document(path_infile)
+    document = ap.Document(infile)
     absorber = ap.ImagePlacementAbsorber()
     document.pages[1].accept(absorber)
     index = 1
     for image_placement in absorber.image_placements:
-        point1 = ap.Point(
-            image_placement.rectangle.llx, image_placement.rectangle.lly
-        )
-        point2 = ap.Point(
-            image_placement.rectangle.urx, image_placement.rectangle.urx
-        )
+        point1 = ap.Point(image_placement.rectangle.llx, image_placement.rectangle.lly)
+        point2 = ap.Point(image_placement.rectangle.urx, image_placement.rectangle.urx)
         if rectangle.contains(point1, True) and rectangle.contains(point2, True):
-            with FileIO(path_outfile.replace("index", str(index)), "w") as output_image:
+            with FileIO(outfile.replace("index", str(index)), "w") as output_image:
                 image_placement.image.save(output_image)
             index = index + 1
 ```
